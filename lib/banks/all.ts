@@ -269,3 +269,5 @@ import "./cadc";
 import "./nzham";
 import "./aufirearmsnsw";
 import "./ascpmlt";
+import "./cbspd";
+import "./cmaa";

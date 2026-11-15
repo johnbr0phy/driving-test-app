@@ -4875,6 +4875,32 @@
     --brand-gradient-to: 166 50% 95%;
   }
 
+  [data-theme="cbspd"] {
+    --brand: 161 75% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 161 50% 95%;
+    --brand-hover: 161 75% 13%;
+    --brand-dark: 161 75% 11%;
+    --brand-darker: 161 70% 6%;
+    --brand-muted: 161 25% 70%;
+    --brand-border: 161 30% 78%;
+    --brand-border-light: 161 30% 88%;
+    --brand-gradient-to: 176 50% 95%;
+  }
+
+  [data-theme="cmaa"] {
+    --brand: 330 45% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 50% 95%;
+    --brand-hover: 330 45% 17%;
+    --brand-dark: 330 45% 15%;
+    --brand-darker: 330 40% 10%;
+    --brand-muted: 330 25% 70%;
+    --brand-border: 330 30% 78%;
+    --brand-border-light: 330 30% 88%;
+    --brand-gradient-to: 345 50% 95%;
+  }
+
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
     --brand-foreground: 0 0% 100%;
@@ -9610,6 +9636,30 @@
     --brand-muted: 151 25% 45%;
     --brand-dark: 151 25% 65%;
     --brand-darker: 151 20% 78%;
+  }
+
+  .dark [data-theme="cbspd"] {
+    --brand: 161 75% 29.8%;
+    --brand-hover: 161 75% 21.8%;
+    --brand-light: 161 45% 13%;
+    --brand-gradient-to: 176 40% 11%;
+    --brand-border-light: 161 30% 24%;
+    --brand-border: 161 30% 34%;
+    --brand-muted: 161 25% 45%;
+    --brand-dark: 161 75% 65%;
+    --brand-darker: 161 70% 78%;
+  }
+
+  .dark [data-theme="cmaa"] {
+    --brand: 330 45% 50%;
+    --brand-hover: 330 45% 42%;
+    --brand-light: 330 45% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 330 30% 24%;
+    --brand-border: 330 30% 34%;
+    --brand-muted: 330 25% 45%;
+    --brand-dark: 330 45% 65%;
+    --brand-darker: 330 40% 78%;
   }
 
   .dark [data-theme="hspachl"] {

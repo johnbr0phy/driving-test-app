@@ -1,0 +1,15 @@
+{
+  "id": "ncma", "stateCode": "NCMA", "idBase": 30600, "prefix": "NCMA-",
+  "slug": "/ncma", "landingPath": "/ncma-practice-test", "dataFile": "data/ncma-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "ncmaPharm", "perTest": 7, "pool": 28, "segment": "PHM"},
+    {"key": "ncmaInfection", "perTest": 6, "pool": 24, "segment": "INF"},
+    {"key": "ncmaIntake", "perTest": 13, "pool": 52, "segment": "INT"},
+    {"key": "ncmaPhleb", "perTest": 6, "pool": 24, "segment": "PHL"},
+    {"key": "ncmaEcg", "perTest": 4, "pool": 16, "segment": "ECG"},
+    {"key": "ncmaAdmin", "perTest": 6, "pool": 24, "segment": "ADM"},
+    {"key": "ncmaLaw", "perTest": 8, "pool": 32, "segment": "LAW"}
+  ],
+  "notes": "NCCT NCMA Detailed Test Plan, Effective January 2024 (EX-0508), still the plan NCCT links in November 2026: 125 scored items, categories 18 / 2A 15 / 2B 32 / 2C 15 / 2D 10 / 15 / 20. Scaled to 50: 7/6/13/6/4/6/8; Tigertest's rounding."
+}

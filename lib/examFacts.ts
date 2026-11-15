@@ -44,6 +44,37 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cmaa: {
+    answer:
+      "The Certified Medical Administrative Assistant (CMAA) exam is the National Healthcareer Association's (NHA) certification exam for front office and administrative medical assistants. NHA's test plan gives it 110 scored questions plus 25 unscored pretest questions, with 2 hours 15 minutes to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2021 job analysis, has seven domains: Communication and Professionalism 21 items, Patient Encounter 21, Medical Law, Ethics, and Compliance 17, Scheduling 16, Medical Practice Administrative Procedures and Logistics 14, Billing and Revenue Cycle 11, and Foundational Knowledge 10. It is taken at a school, a PSI test center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "135 (110 scored, 25 pretest)" },
+      { label: "Time", value: "2 hours 15 minutes" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Largest domains", value: "Communication and Professionalism 21, Patient Encounter 21, Law and Compliance 17" },
+      { label: "Eligibility", value: "Training program within 5 years, or diploma plus 1 year of supervised work in the last 3 years (or 2 in the last 5)" },
+      { label: "Where", value: "School, PSI test center or live remote proctoring" },
+      { label: "Retakes", value: "After 30 days; three attempts, then one year between attempts" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's CMAA test plan (2021 job analysis), CMAA certification page and Candidate Handbook (updated October 2026), checked November 2026",
+    source: { name: "NHA: Medical Administrative Assistant (CMAA)", url: "https://www.nhanow.com/certifications/medical-administrative-assistant" },
+  },
+  cbspd: {
+    answer:
+      "The Certified Sterile Processing and Distribution Technician (CSPDT) exam is the Certification Board for Sterile Processing and Distribution's (CBSPD) certification exam for sterile processing and central service technicians. CBSPD's 2026 candidate bulletin gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a PSI test center in 3 hours, four times a year in a one-week window. The passing scaled score is 70, which is not the same as 70 percent correct; candidates testing in the U.S. get an official pass or fail at the end, and only failing candidates receive a numeric score. Certification is valid for five years and is renewed with 100 points of continuing education and related activity over that time.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Scaled score of 70 (not a percent correct)" },
+      { label: "Largest areas", value: "Decontamination and disinfection 19%, sterilization 18%" },
+      { label: "Where", value: "Computer based at PSI test centers, four windows a year" },
+      { label: "Renewal", value: "Every 5 years, with 100 recertification points" },
+      { label: "Run by", value: "Certification Board for Sterile Processing and Distribution (CBSPD)" },
+    ],
+    basedOn: "CBSPD's Technician Candidate Bulletin (2026 version) and 2020 technician test specifications, checked November 2026",
+    source: { name: "CBSPD: Technician certification", url: "https://www.cbspd.net/tech/" },
+  },
   ascpmlt: {
     answer:
       "The MLT(ASCP) exam is the medical laboratory technician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the MLT(ASCP) credential (MLT(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 100 multiple-choice questions with one best answer in 2 hours 30 minutes, delivered as computer adaptive testing. Content areas are Chemistry 20 to 25%, Hematology 20 to 25%, Blood Banking 15 to 20%, Microbiology 15 to 20%, and Urinalysis and Other Body Fluids, Immunology and Laboratory Operations 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score from 100 to 999, with 400 to pass.",

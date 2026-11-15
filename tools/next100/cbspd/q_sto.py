@@ -52,7 +52,7 @@ Q = [
  "A cart for one urgent need", ["A cart for one surgeon's cases", "A cart that restocks a unit", "A cart for a routine procedure"],
  "Specialty carts hold everything for a specific clinical event. They are tracked so their location and readiness are always known."),
 ("Why must the location of each specialty cart be tracked?",
- "Staff must find it fast", ["So use is charged to a unit", "So its par level can be set", "So vendors are paid on time"],
+ "So staff can find it fast", ["So use is charged to a unit", "So its par level can be set", "So vendors are paid on time"],
  "When an emergency happens, staff need to know where the cart is and that it is complete and in date, so carts are logged out and back."),
 ("A code cart comes back to the department with its seal broken. What should happen?",
  "Check, restock, reseal", ["Reseal it and send it back", "Restock what looks missing", "Send it to the unit to check"],

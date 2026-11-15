@@ -1142,6 +1142,23 @@ export const en = {
     mltImmuno: "Immunology",
     mltMicro: "Microbiology",
     mltOps: "Laboratory Operations",
+    // cbspd
+    cbspdRoles: "Roles & Responsibilities",
+    cbspdLife: "Life Science",
+    cbspdDecon: "Decontamination & Disinfection",
+    cbspdPrep: "Preparation & Handling",
+    cbspdSteril: "Sterilization",
+    cbspdStorage: "Sterile Storage, Inventory & Distribution",
+    cbspdPce: "Patient Care Equipment",
+    cbspdEthics: "Ethics",
+    // cmaa
+    cmaaFoundations: "Foundational Knowledge",
+    cmaaComm: "Communication & Professionalism",
+    cmaaLaw: "Medical Law, Ethics & Compliance",
+    cmaaScheduling: "Scheduling",
+    cmaaEncounter: "Patient Encounter",
+    cmaaBilling: "Billing & Revenue Cycle",
+    cmaaOffice: "Office Procedures & Logistics",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

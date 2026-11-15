@@ -16,15 +16,15 @@ const siteUrl = SITE_URL;
 
 const title = "Free CRCST Practice Test 2026 - Sterile Processing";
 const metaDescription =
-  "Free CRCST practice tests: 200 questions on the HSPA outline, covering decontamination, packaging, sterilization and storage. Also covers the CBSPD CSPDT exam.";
+  "Free CRCST practice tests: 200 questions on the HSPA outline, covering decontamination, packaging, sterilization and storage.";
 const description =
-  "Free HSPA CRCST practice tests with 200 questions weighted to the official exam content outline. Decontamination, preparation and packaging, sterilization, storage, and patient care equipment with instant feedback. Also covers the CBSPD CSPDT.";
+  "Free HSPA CRCST practice tests with 200 questions weighted to the official exam content outline. Decontamination, preparation and packaging, sterilization, storage, and patient care equipment with instant feedback.";
 
 export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "CRCST practice test, HSPA CRCST exam, sterile processing practice questions, sterile processing technician exam prep, CSPDT practice test, CBSPD exam, central service technician certification",
+    "CRCST practice test, HSPA CRCST exam, sterile processing practice questions, sterile processing technician exam prep, central service technician certification",
   alternates: {
     canonical: `${siteUrl}/crcst-practice-test`,
   },
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "Does this work for the CBSPD CSPDT exam too?",
-    a: "Yes. The CBSPD Certified Sterile Processing and Distribution Technician (CSPDT) exam covers the same decontamination, packaging, sterilization, storage, and equipment material as the CRCST, so this bank prepares you for either credential.",
+    a: "The CBSPD Certified Sterile Processing and Distribution Technician (CSPDT) exam covers much of the same material but has its own outline and weights, set by a different board. Tigertest has a separate CSPDT practice test written to the CBSPD outline.",
   },
   {
     q: "Is the Tigertest CRCST practice test free?",

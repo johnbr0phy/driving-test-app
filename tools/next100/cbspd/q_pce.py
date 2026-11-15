@@ -25,7 +25,7 @@ Q = [
  "Covered, away from soiled items", ["Uncovered in the clean workroom", "Covered, in soiled holding", "In the hallway, ready to go"],
  "Clean equipment is kept covered and separate from soiled items so it is not recontaminated before use."),
 ("A pump's power cord shows exposed wires during reassembly. What should the technician do?",
- "Tag it for repair", ["Tape the damaged section", "Send it out, then report it", "Swap the cord yourself"],
+ "Tag it for repair", ["Tape the damaged section", "Use it until biomed can look", "Swap the cord yourself"],
  "Damaged electrical parts are a shock hazard. The device is taken out of use and sent to biomedical engineering."),
 ("What is a hypothermia blanket unit used for?",
  "Warming or cooling", ["Measuring blood pressure", "Pumping IV fluid", "Suctioning airways"],

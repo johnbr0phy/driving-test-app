@@ -116,6 +116,7 @@ export function regionInfo(r: Region) {
 export type TestRegion = Region | "GLOBAL";
 
 const TEST_REGIONS: Record<string, TestRegion> = {
+  aufirearmswa: "AU",
   aufirearmsvic: "AU",
   aufirearmsnsw: "AU",
   nzham: "NZ",

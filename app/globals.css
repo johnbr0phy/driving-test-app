@@ -4953,6 +4953,19 @@
     --brand-gradient-to: 146 50% 95%;
   }
 
+  [data-theme="aufirearmswa"] {
+    --brand: 49 55% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 49 50% 95%;
+    --brand-hover: 49 55% 15%;
+    --brand-dark: 49 55% 13%;
+    --brand-darker: 49 50% 8%;
+    --brand-muted: 49 25% 70%;
+    --brand-border: 49 30% 78%;
+    --brand-border-light: 49 30% 88%;
+    --brand-gradient-to: 64 50% 95%;
+  }
+
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
     --brand-foreground: 0 0% 100%;
@@ -9760,6 +9773,18 @@
     --brand-muted: 131 25% 45%;
     --brand-dark: 131 25% 65%;
     --brand-darker: 131 20% 78%;
+  }
+
+  .dark [data-theme="aufirearmswa"] {
+    --brand: 49 55% 33.8%;
+    --brand-hover: 49 55% 25.8%;
+    --brand-light: 49 45% 13%;
+    --brand-gradient-to: 64 40% 11%;
+    --brand-border-light: 49 30% 24%;
+    --brand-border: 49 30% 34%;
+    --brand-muted: 49 25% 45%;
+    --brand-dark: 49 55% 65%;
+    --brand-darker: 49 50% 78%;
   }
 
   .dark [data-theme="hspachl"] {

@@ -275,3 +275,4 @@ import "./aufirearmsvic";
 import "./ncma";
 import "./mace";
 import "./hspacis";
+import "./aufirearmswa";

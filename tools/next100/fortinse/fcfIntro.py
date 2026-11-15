@@ -64,6 +64,6 @@ ITEMS = [
       ["Verify every request, wherever it comes from", "Trust any device inside the office network", "Trust a user for the whole day after login", "Verify only connections from the internet"],
       "Zero trust removes implicit trust based on network location. Each access request is checked on identity, device and context, even inside the office."),
     S(0, "Security awareness", "Why do most security programs include regular staff training?",
-      ["People are a common target for attacks", "Training replaces technical controls", "It removes the need for patching", "Laws ban security that relies on software"],
+      ["People are a common target for attacks", "Firewalls cannot block any phishing", "Most attacks need physical access", "Staff run the company's firewalls"],
       "Many attacks, such as phishing, target people rather than technology. Training adds a human layer but does not replace technical controls."),
 ]

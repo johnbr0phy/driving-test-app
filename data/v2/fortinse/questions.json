@@ -179,9 +179,9 @@
     "stem": "Why does a company label its data as public, internal, confidential or restricted?",
     "explanation": "Classification tells staff and tools how sensitive data is, so the strongest controls, such as encryption and tight access, go where they matter most.",
     "options": [
-      "To make files smaller to store",
-      "To speed up searches on the drive",
-      "To decide which files to print",
+      "To encrypt all of it the same way",
+      "To decide how long backups take",
+      "To replace file access controls",
       "To protect each kind as needed"
     ],
     "correct": [
@@ -369,9 +369,9 @@
     "explanation": "Once a patch is public, attackers can study it and target systems that have not installed it. Prompt patching closes that window.",
     "options": [
       "Attackers target known flaws fast",
-      "Old software cannot be connected",
-      "Patches make devices run faster",
-      "Patches replace the need for backups"
+      "Patched devices skip the firewall",
+      "Patches reset weak user passwords",
+      "Vendors end support the next day"
     ],
     "correct": [
       0
@@ -579,9 +579,9 @@
     "explanation": "EDR monitors activity on the endpoint, detects suspicious behavior and lets responders investigate and isolate the device, not just remove known files.",
     "options": [
       "Recording behavior to respond",
-      "Backing up the device every hour",
-      "Encrypting all email messages",
-      "Blocking all websites by default"
+      "Encrypting the drive at rest",
+      "Filtering web traffic by category",
+      "Matching files to known signatures"
     ],
     "correct": [
       0
@@ -830,8 +830,8 @@
     "stem": "A storage bucket holding customer files is set to allow anyone on the internet to read it. What is the most common cause of exposures like this?",
     "explanation": "Most cloud data exposures come from settings the customer controls, such as public access on storage, not from failures in the provider's infrastructure.",
     "options": [
-      "A power cut at the data center",
-      "Encryption that was too strong",
+      "A provider staff member's mistake",
+      "A zero-day in the storage service",
       "A flaw in the provider's hardware",
       "Misconfiguration by the customer"
     ],
@@ -956,10 +956,10 @@
     "stem": "What does a next generation firewall add to a traditional stateful firewall?",
     "explanation": "A next generation firewall identifies applications and users and adds features such as intrusion prevention and malware inspection, not just port and address rules.",
     "options": [
-      "Automatic backups of servers",
-      "Physical locks and cameras for the server room",
+      "Tracking the state of each session",
+      "Routing traffic between VLANs",
       "App awareness and threat inspection",
-      "A faster internet connection"
+      "Filtering by IP address and port"
     ],
     "correct": [
       2
@@ -1187,9 +1187,9 @@
     "stem": "Why do many systems lock an account after several wrong password attempts in a row?",
     "explanation": "Lockout or throttling limits how many guesses an attacker can make, which defeats online brute force attacks.",
     "options": [
-      "To log users out of all their other devices",
-      "To remind users to change passwords",
-      "To free up memory on the server",
+      "To make users pick stronger passwords",
+      "To stop phishing emails reaching the user",
+      "To protect the password file from theft",
       "To slow down password guessing attacks"
     ],
     "correct": [
@@ -1208,9 +1208,9 @@
     "stem": "A new network camera arrives with the login admin and password admin. What should be done first?",
     "explanation": "Default credentials are published online and are among the first things attackers try. Change them before the device goes into use.",
     "options": [
-      "Post the login on the intranet",
-      "Leave it as it is until it fails",
-      "Connect it straight to the internet",
+      "Reset it to its factory settings",
+      "Register it with the vendor's app",
+      "Note the login in the asset list",
       "Change the default password"
     ],
     "correct": [
@@ -1250,10 +1250,10 @@
     "stem": "What does a cloud access security broker (CASB) do?",
     "explanation": "A CASB sits between users and cloud services to show which apps are used and to enforce policies such as blocking uploads of sensitive data.",
     "options": [
-      "Replaces the company's email system",
+      "Balances load across cloud regions",
       "Applies policy to cloud app use",
-      "Builds the provider's data centers",
-      "Sells cloud storage at lower prices"
+      "Encrypts disks in the data center",
+      "Hosts the company's cloud servers"
     ],
     "correct": [
       1
@@ -1419,9 +1419,9 @@
     "explanation": "Central logging lets the security team see events from many devices together, so patterns such as one account failing on many machines stand out.",
     "options": [
       "To correlate events and spot attacks",
-      "To save space on the laptops' disks",
-      "To share files with customers and suppliers",
-      "To make laptops start faster"
+      "To back up the laptops' user files",
+      "To push patches to every laptop",
+      "To replace antivirus on each laptop"
     ],
     "correct": [
       0
@@ -1439,10 +1439,10 @@
     "stem": "Why is it cheaper to build security into an application during design than to add it after release?",
     "explanation": "A design flaw found in production may need rework, emergency patches and incident costs. Security in each phase of development finds problems early.",
     "options": [
-      "Released apps cannot be changed",
+      "Users reject apps that update",
       "Flaws cost more to fix later",
-      "Designers never make mistakes",
-      "Testing is not allowed after release"
+      "Laws require it for every app",
+      "Design reviews replace testing"
     ],
     "correct": [
       1
@@ -1461,9 +1461,9 @@
     "explanation": "SASE joins SD-WAN networking with cloud-delivered security such as secure web gateway, CASB, ZTNA and firewall as a service, so users get the same protection anywhere.",
     "options": [
       "Cloud-delivered network security",
-      "Backups and printers in one office device",
-      "Cables and switches in one rack",
-      "Email and calendars in one app"
+      "Branch firewalls and on-site VPNs",
+      "Email filtering and archiving only",
+      "Endpoint antivirus and disk backups"
     ],
     "correct": [
       0
@@ -1586,9 +1586,9 @@
     "stem": "What does a secure email gateway do?",
     "explanation": "A secure email gateway checks messages for spam, phishing, malicious links and attachments before they reach users' inboxes.",
     "options": [
-      "Translates incoming email into other languages",
-      "Stores every user's mailbox password",
-      "Sends company newsletters on a schedule",
+      "Checks that passwords meet the policy",
+      "Encrypts every mailbox on the server",
+      "Blocks staff from visiting risky websites",
       "Filters incoming mail for spam and malware"
     ],
     "correct": [
@@ -1607,9 +1607,9 @@
     "stem": "Why should an administrator use a separate account for admin work instead of her everyday account?",
     "explanation": "Keeping admin rights off the account used for email and browsing means a phishing attack on that account does not hand over admin access.",
     "options": [
-      "It lets her skip multifactor sign-in",
-      "It makes her daily account faster",
-      "It is needed to read company email",
+      "It stops phishing emails reaching her",
+      "It keeps her admin password the same",
+      "It removes the need to log admin work",
       "A hacked daily account is less harmful"
     ],
     "correct": [
@@ -1628,8 +1628,8 @@
     "stem": "Why run a firewall on each laptop when the office network already has one?",
     "explanation": "A host firewall travels with the device, so it still filters traffic at home or in a hotel, and it limits spread between machines on the same network.",
     "options": [
-      "It makes the network firewall faster",
-      "It stops the laptop being stolen from a bag",
+      "It encrypts traffic on public Wi-Fi",
+      "It backs up the network firewall's rules",
       "It replaces the need for antivirus",
       "It protects the laptop on other networks"
     ],
@@ -1943,10 +1943,10 @@
     "stem": "What is the main goal of most phishing emails?",
     "explanation": "Phishing tricks the reader into an action, such as clicking a link, opening an attachment or entering a password, that helps the attacker.",
     "options": [
-      "To test the company's spam filter",
+      "To spread a worm by itself",
       "To get the reader to act",
-      "To slow down the email server",
-      "To sell real products cheaply"
+      "To fill inboxes with adverts",
+      "To slow the company's mail server"
     ],
     "correct": [
       1
@@ -2071,8 +2071,8 @@
     "options": [
       "Longer database passwords",
       "Parameterized queries",
-      "Hiding the database server name",
-      "Bigger database servers"
+      "Encrypting the database",
+      "Hiding the database server name"
     ],
     "correct": [
       1
@@ -2216,10 +2216,10 @@
     "stem": "Why does a company put its point-of-sale terminals on a separate network segment from office PCs?",
     "explanation": "Segmentation contains a breach. If an office PC is infected, controls between segments stop the attacker reaching the payment systems.",
     "options": [
-      "To make printing faster for staff",
+      "To give the terminals faster connections",
       "To limit how far an attacker can move",
-      "To avoid needing any firewall between them",
-      "To use fewer network cables"
+      "To avoid patching the terminals",
+      "To remove the need for card encryption"
     ],
     "correct": [
       1
@@ -2258,9 +2258,9 @@
     "stem": "What does extended detection and response (XDR) do?",
     "explanation": "XDR brings together detection data from several layers so one attack seen in email, on an endpoint and on the network can be linked and handled together.",
     "options": [
-      "Replaces every firewall in the network",
-      "Backs up servers to tape",
-      "Protects only email inboxes",
+      "Protects only endpoints, like EDR",
+      "Filters web traffic for each user",
+      "Replaces antivirus with signature checks",
       "Links detections across many layers"
     ],
     "correct": [
@@ -2301,9 +2301,9 @@
     "explanation": "NIST SP 800-145 lists on-demand self-service, broad network access, resource pooling, rapid elasticity and measured service.",
     "options": [
       "Rapid elasticity",
-      "Manual setup by phone",
-      "Single tenant only",
-      "Fixed monthly hardware"
+      "Fixed capacity",
+      "Single tenancy",
+      "Dedicated hardware"
     ],
     "correct": [
       0
@@ -2468,10 +2468,10 @@
     "stem": "Which practice helps a company make sure every device actually gets its patches?",
     "explanation": "You cannot patch what you do not know about. An up-to-date asset inventory shows which devices exist and which are missing updates.",
     "options": [
-      "Patching only servers, never laptops",
+      "Requiring a reboot every Friday",
       "Keeping an inventory of all devices",
-      "Waiting a year before any update",
-      "Letting each user decide when to patch"
+      "Sending staff a monthly reminder",
+      "Running a full antivirus scan weekly"
     ],
     "correct": [
       1
@@ -2573,9 +2573,9 @@
     "stem": "An employee realizes she typed her work password into a fake login page a few minutes ago. What should she do first?",
     "explanation": "Reporting quickly lets the security team act before the password is used, and changing it makes the stolen copy useless.",
     "options": [
-      "Delete the email and say nothing",
-      "Restart her computer and clear the browser",
-      "Wait to see if anything happens",
+      "Close the page and clear the browser",
+      "Delete the email and block the sender",
+      "Run an antivirus scan and carry on",
       "Report it and change her password"
     ],
     "correct": [
@@ -2678,9 +2678,9 @@
     "stem": "Why should users work from standard accounts rather than administrator accounts?",
     "explanation": "Malware runs with the rights of the user who started it. Without admin rights it has a harder time installing itself or changing the system.",
     "options": [
-      "Admin accounts cannot read email",
-      "It removes the need for passwords",
-      "Standard accounts get faster internet",
+      "Standard accounts need no patches",
+      "It hides the laptop from attackers",
+      "Standard accounts cannot be phished",
       "Malware they run gets fewer rights"
     ],
     "correct": [
@@ -2867,9 +2867,9 @@
     "stem": "Why is a password manager recommended?",
     "explanation": "A password manager makes it practical to use long, unique passwords everywhere, so one breached site does not expose other accounts.",
     "options": [
-      "It shares passwords with coworkers",
-      "It removes the need for any password",
-      "It writes passwords on sticky notes",
+      "It changes every password each day",
+      "It removes the need for MFA",
+      "It makes one password for all sites",
       "It keeps a unique password per site"
     ],
     "correct": [
@@ -2888,10 +2888,10 @@
     "stem": "A company blocks USB storage devices on its laptops. What risks does this mainly reduce?",
     "explanation": "USB drives can carry malware in and copy data out. Device control policies can block storage while allowing keyboards and mice.",
     "options": [
-      "Expired certificates and DNS errors",
+      "Network floods and DDoS attacks",
       "Malware infection and data theft",
-      "Slow Wi-Fi and dropped calls",
-      "Printer jams and paper waste"
+      "Phishing and fake login pages",
+      "Weak passwords and account sharing"
     ],
     "correct": [
       1
@@ -2909,10 +2909,10 @@
     "stem": "Where can data loss prevention tools inspect data?",
     "explanation": "DLP can watch data on devices, in network traffic such as email and web uploads, and in cloud services, applying the same rules in each place.",
     "options": [
-      "Only on paper documents",
-      "Only on the company's printers",
+      "On servers, but never in the cloud",
+      "On networks, but never on laptops",
       "On devices, networks and clouds",
-      "Only inside the database server"
+      "In email, but never on devices"
     ],
     "correct": [
       2
@@ -3098,9 +3098,9 @@
     "stem": "Why is full disk encryption especially important on laptops?",
     "explanation": "If an encrypted laptop is lost, the data on the drive cannot be read without the key, so a lost device is not a data breach.",
     "options": [
-      "Laptops always use public Wi-Fi",
-      "Laptops cannot run antivirus",
-      "Laptops have no login passwords",
+      "Laptops connect to public Wi-Fi",
+      "Laptops are hard to patch on time",
+      "Laptops are targeted by phishing",
       "Laptops are often lost or stolen"
     ],
     "correct": [
@@ -3119,10 +3119,10 @@
     "stem": "Why should a company encrypt the database that holds customer records, not just the network link to it?",
     "explanation": "Encryption at rest protects the data if the storage or a backup copy is stolen. Link encryption protects only data in transit.",
     "options": [
-      "It removes the need for passwords",
+      "SQL injection is then impossible",
       "Stolen files stay unreadable",
-      "Encryption makes queries run faster",
-      "It lets anyone read the data"
+      "Admins no longer need passwords",
+      "Backups are no longer needed"
     ],
     "correct": [
       1
@@ -3141,9 +3141,9 @@
     "explanation": "Public clouds are multi-tenant: different customers' workloads run side by side, so the provider must keep each one separate from the others.",
     "options": [
       "Many customers share the same hardware",
-      "Public clouds never use encryption",
-      "Each customer has its own building",
-      "Customers share one admin password for all"
+      "Public clouds cannot use encryption",
+      "Data centers have weak physical locks",
+      "Customers manage the hypervisor"
     ],
     "correct": [
       0
@@ -3393,9 +3393,9 @@
     "explanation": "Many IoT devices ship with weak or default logins and are rarely updated, which is how large IoT botnets are built.",
     "options": [
       "They often keep default passwords",
-      "They use no network protocols",
-      "They always run antivirus software",
-      "They cannot connect to the internet"
+      "They store no user data at all",
+      "Their chips are easy to copy",
+      "They are too slow to run a firewall"
     ],
     "correct": [
       0
@@ -3435,7 +3435,7 @@
     "explanation": "A drive-by download exploits a flaw in the browser or a plug-in just by loading the page. Keeping software patched removes the flaw.",
     "options": [
       "Tailgating",
-      "A watering hole infection",
+      "Clickjacking",
       "A drive-by download",
       "A logic bomb"
     ],
@@ -3602,9 +3602,9 @@
     "stem": "Why do security teams use threat intelligence feeds?",
     "explanation": "Threat intelligence shares information such as malicious addresses, file hashes and attacker methods, so defenders can block known threats sooner.",
     "options": [
-      "To speed up their internet connection",
-      "To find new customers for their products",
-      "To replace their firewalls and antivirus",
+      "To scan their own network for holes",
+      "To get patches from vendors faster",
+      "To track each employee's web use",
       "To learn about current threats"
     ],
     "correct": [
@@ -3644,10 +3644,10 @@
     "stem": "Which step does most to let a company recover from ransomware without paying?",
     "explanation": "Backups kept offline or immutable cannot be encrypted by the ransomware, and testing proves they can be restored.",
     "options": [
-      "Buying a faster file server",
-      "Turning off the email spam filter",
+      "Keeping a synced copy in the cloud",
+      "Running a full antivirus scan",
       "Keeping offline, tested backups",
-      "Giving every user admin rights"
+      "Changing every user's password"
     ],
     "correct": [
       2
@@ -3687,9 +3687,9 @@
     "explanation": "Visitors bring unmanaged devices that may be infected. Isolating guest Wi-Fi keeps them away from internal servers and data.",
     "options": [
       "Guest devices are not managed",
-      "It saves money on internet service",
-      "Guest Wi-Fi is always faster",
-      "Internal systems cannot use Wi-Fi"
+      "Guests use more of the bandwidth",
+      "Guests need faster internet speeds",
+      "Guest Wi-Fi cannot be encrypted"
     ],
     "correct": [
       0
@@ -3728,9 +3728,9 @@
     "stem": "EDR flags a laptop that is encrypting files on a shared drive. What is a common first response?",
     "explanation": "Isolating the endpoint stops the spread while keeping it available for investigation. Most EDR tools can do this remotely in one action.",
     "options": [
-      "Turn off the EDR agent to save power",
-      "Delete the shared drive at once",
-      "Ask the user to restart it later",
+      "Run a full scan before acting",
+      "Ask the user to log off and wait",
+      "Restore the shared drive from backup",
       "Isolate the laptop from the network"
     ],
     "correct": [
@@ -3749,10 +3749,10 @@
     "stem": "Why should backups be tested by restoring them from time to time?",
     "explanation": "A backup that fails to restore is worthless in an emergency. Regular test restores catch corrupt or incomplete copies early.",
     "options": [
-      "To change the backup password each time",
-      "To prove they restore",
-      "To make the backups smaller",
-      "To delete old copies faster"
+      "To refresh the backup password",
+      "To prove they can be restored",
+      "To reset the backup schedule",
+      "To free space on the backup disk"
     ],
     "correct": [
       1
@@ -3770,10 +3770,10 @@
     "stem": "Which control best protects a company's cloud administrator console from stolen passwords?",
     "explanation": "Cloud consoles are reachable from anywhere, so a stolen admin password alone should never be enough to log in.",
     "options": [
-      "A public link to the console for staff",
+      "A monthly password change",
       "MFA for every admin",
-      "Sharing one admin login",
-      "A longer session timeout"
+      "A shorter session timeout",
+      "A longer admin password"
     ],
     "correct": [
       1
@@ -3897,9 +3897,9 @@
     "explanation": "A site-to-site VPN, often using IPsec, joins whole networks over the internet. A remote access VPN connects one user's device.",
     "options": [
       "Two networks, such as offices",
-      "One user's browser to one website",
-      "A printer to a laptop",
-      "A phone to a smartwatch"
+      "One user's laptop to the office",
+      "Two apps on the same server",
+      "One browser to one website"
     ],
     "correct": [
       0
@@ -3938,10 +3938,10 @@
     "stem": "Which backup approach best protects against losing data to a failed drive, fire or ransomware?",
     "explanation": "Keeping more than one copy on different media with one offsite, often called the 3-2-1 rule, means one event cannot destroy every copy.",
     "options": [
-      "A copy on the user's desktop",
+      "A copy on a second internal drive",
       "Several copies, one offsite",
-      "No backups, only antivirus",
-      "One copy on the same drive"
+      "A synced folder on the same PC",
+      "A mirrored RAID array"
     ],
     "correct": [
       1
@@ -3980,10 +3980,10 @@
     "stem": "Why do companies run virtual or cloud-native firewalls inside their cloud networks?",
     "explanation": "Traffic between cloud workloads never passes the office firewall, so virtual or cloud-native firewalls apply segmentation and inspection inside the cloud.",
     "options": [
-      "To cool the provider's servers",
+      "To manage users' cloud logins",
       "To inspect traffic between workloads",
-      "To replace identity management",
-      "To speed up software updates on servers"
+      "To encrypt data stored in buckets",
+      "To patch the virtual machines"
     ],
     "correct": [
       1
@@ -4001,10 +4001,10 @@
     "stem": "Why do most security programs include regular staff training?",
     "explanation": "Many attacks, such as phishing, target people rather than technology. Training adds a human layer but does not replace technical controls.",
     "options": [
-      "It removes the need for patching",
+      "Most attacks need physical access",
       "People are a common target for attacks",
-      "Training replaces technical controls",
-      "Laws ban security that relies on software"
+      "Firewalls cannot block any phishing",
+      "Staff run the company's firewalls"
     ],
     "correct": [
       1
@@ -4043,10 +4043,10 @@
     "stem": "Which control best reduces the harm when a staff member's password is stolen in a phishing attack?",
     "explanation": "With multifactor authentication a stolen password alone is not enough to log in, though phishing-resistant methods are stronger still.",
     "options": [
-      "A shared team password",
-      "A bigger email inbox quota",
+      "Monthly password changes",
+      "A shorter screen lock timeout",
       "Multifactor authentication",
-      "A longer screen lock timeout"
+      "A stronger password policy"
     ],
     "correct": [
       2
@@ -4064,10 +4064,10 @@
     "stem": "Which of these is a common sign that a computer may be infected with malware?",
     "explanation": "Unknown programs, unusual pop-ups, security tools that turn off and sudden slowness can all point to malware.",
     "options": [
-      "A screen saver that starts on time",
-      "An update offered by the vendor",
+      "A full disk after a big download",
+      "A reminder to restart for updates",
       "New programs no one installed",
-      "A newer version of the browser"
+      "A security update notification"
     ],
     "correct": [
       2
@@ -4107,9 +4107,9 @@
     "explanation": "A forward proxy sits between users and the internet, so it can filter, log and cache web traffic. A reverse proxy sits in front of servers instead.",
     "options": [
       "Makes and filters their web requests",
-      "Stores the users' passwords",
+      "Gives users addresses on the network",
       "Hosts the company's public website",
-      "Repairs damaged network cables in the building"
+      "Encrypts the users' hard drives"
     ],
     "correct": [
       0
@@ -4128,8 +4128,8 @@
     "explanation": "ZTNA checks the user and device for each application and connects them only to that app. A traditional VPN often gives broad access to the whole network.",
     "options": [
       "Gives full network access after one login",
-      "Removes the need for user identities",
-      "Works only inside the office building",
+      "Encrypts traffic, which a VPN cannot do",
+      "Lets users skip multifactor sign-in",
       "Grants access per app after checks"
     ],
     "correct": [
@@ -4149,9 +4149,9 @@
     "explanation": "A vulnerability scanner checks devices for known weaknesses, such as missing patches and unsafe configurations, so they can be fixed by priority.",
     "options": [
       "Missing patches and weak settings",
-      "Who sent each email",
-      "The resale value of each device in use",
-      "The users' browsing history"
+      "Which users fell for phishing tests",
+      "Data each user has copied out",
+      "Malware already running on each one"
     ],
     "correct": [
       0
@@ -4170,9 +4170,9 @@
     "explanation": "Checking the vendor's signature proves the update came from the vendor and was not changed on the way, which blocks fake update attacks.",
     "options": [
       "To reject tampered or fake updates",
-      "To make updates download faster",
-      "To make the updates smaller",
-      "To let users skip updates they do not want"
+      "To encrypt updates while they download",
+      "To check the update is the newest one",
+      "To make sure the device has space"
     ],
     "correct": [
       0

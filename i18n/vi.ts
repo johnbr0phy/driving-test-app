@@ -1195,6 +1195,15 @@ export const vi: TranslationKeys = {
     cisSterile: "Disinfection & Sterilization",
     cisQuality: "Training, Teamwork & Audits",
     cisSystems: "Tracking, Loaners & Water Quality",
+    // aufirearmswa
+    fwaLicences: "Licence Types & Purposes",
+    fwaHunting: "Hunting Permissions & Land",
+    fwaEligibility: "Eligibility, Disqualification & Renewal",
+    fwaCategories: "Firearm Categories, Accessories & Ammunition",
+    fwaStorage: "Storage & Transit",
+    fwaConduct: "Conduct, Reporting & Permits",
+    fwaHandling: "Possession, Care & Firearm Actions",
+    fwaField: "Ranges, Field & Young Shooters",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

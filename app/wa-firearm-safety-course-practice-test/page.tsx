@@ -18,12 +18,12 @@ const title = "Free WA Firearm Safety Training Practice Test 2026 - WA Gun Licen
 const metaDescription =
   "Free-to-start WA firearm safety practice test: 200 original questions on the Firearms Act 2024 and Firearms Regulations 2024, licences, hunting permissions, storage levels and safe handling, five 40-question tests, every answer explained.";
 const description =
-  "Practice for the WA Firearm Safety Training Course theory assessment that replaced the old Firearm Awareness Test: 200 original questions written from the Firearms Act 2024 (WA), the Firearms Regulations 2024, WA Police Force information sheets and the National Firearms Safety Code. Five 40-question practice tests and four training sets covering licences and hunting permissions, eligibility and firearm categories, storage, transport and conduct, and handling, ranges and young shooters.";
+  "Practice for the WA Firearm Safety Training Course theory assessment: 200 original questions written from the Firearms Act 2024 (WA), the Firearms Regulations 2024, WA Police Force information sheets and the National Firearms Safety Code. Five 40-question practice tests and four training sets covering licences and hunting permissions, eligibility and firearm categories, storage, transport and conduct, and handling, ranges and young shooters.";
 
 const faqs = [
   {
     q: "Is there still a Firearm Awareness Test in WA?",
-    a: "No. The Firearm Awareness Test belonged to the old Firearms Act 1973 and Firearms Regulations 1974. Since the Firearms Act 2024 and Firearms Regulations 2024 commenced on 31 March 2025, every first-time applicant for a firearm authority, and every authorised person without their own authority, must complete the Firearm Safety Training Course instead. It has two parts: an online theory course and assessment delivered by Central Regional TAFE, and an in-person practical course run by a licensed firearms dealer or another approved firearms trainer.",
+    a: "No. The Firearm Awareness Test belonged to the old Firearms Act 1973 and Firearms Regulations 1974. Since the Firearms Act 2024 and Firearms Regulations 2024 commenced on 31 March 2025, anyone applying for a firearm authority (a licence, permit or approval, including approval as an authorised person) who has not held a licence or been an authorised person in the last 3 years must complete the Firearm Safety Training Course instead. It has two parts: an online theory course and assessment delivered by Central Regional TAFE, and an in-person practical course run by a licensed firearms dealer or another approved firearms trainer.",
   },
   {
     q: "What is the theory assessment like?",
@@ -123,7 +123,7 @@ export default function WaFirearmsLandingPage() {
           <ExamLandingHero
             dashboardHref="/wa-firearms-licence/dashboard"
             shortName="WA Firearm Safety"
-            subtitle="200 original questions for the WA Firearm Safety Training Course that replaced the Firearm Awareness Test: the Firearms Act 2024, licence types, hunting permissions, storage levels, transport and safe handling. Five 40-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 original questions for the WA Firearm Safety Training Course theory assessment: the Firearms Act 2024, licence types, hunting permissions, storage levels, transport and safe handling. Five 40-question practice tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aufirearmswa-mobile.png", desktop: "/landing/aufirearmswa-desktop.png" }}
           />
         </div>
@@ -229,13 +229,13 @@ export default function WaFirearmsLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Understand hunting permissions</h3>
               <p>
-                Learn how land is registered, how standard and temporary hunting permissions work, the 28 days you have to replace a lost permission, and why you still need the landholder&apos;s consent each time you hunt.
+                Learn how land is registered, how standard and temporary hunting permissions work, the 28 days you have to replace a permission that expires or is revoked, and why you still need the landholder&apos;s consent each time you hunt.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Get storage and transit exactly right</h3>
               <p>
-                Know the thickness of level 1 and level 2 cabinets, when a Grade V safe or an alarm is needed, how to anchor a cabinet, and how to make a firearm inoperable and keep ammunition separate on the road.
+                Know the thickness of level 1 and level 2 cabinets, when level 3 storage or an alarm is needed, how to anchor a cabinet, and how to make a firearm inoperable and keep ammunition separate on the road.
               </p>
             </div>
             <div>

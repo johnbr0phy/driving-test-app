@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  aufirearmswa: {
+    answer:
+      "In Western Australia, anyone applying for a firearm authority (a licence, permit or approval, including approval as an authorised person) who has not held a licence or been an authorised person in the last 3 years must complete the Firearm Safety Training Course (Firearms Act 2024, s 166; Firearms Regulations 2024, r 224). Part 1 is an online theory course and assessment delivered by Central Regional TAFE: 40 questions drawn at random from a question bank, with at least 80% needed overall across three sections and 3 attempts. Part 2 is in-person practical training and assessment with a licensed firearms dealer or another approved firearms trainer. Licences are issued by the WA Police Force; a first licence cannot be granted until 42 days after applying.",
+    rows: [
+      { label: "Course", value: "Firearm Safety Training Course: Part 1 theory (online, CRTAFE) and Part 2 practical (approved firearms trainer)" },
+      { label: "Theory assessment", value: "40 questions drawn at random, at least 80% overall across three sections" },
+      { label: "Attempts", value: "3, then wait at least 30 days and re-enrol" },
+      { label: "Certificate", value: "Valid 12 months for a licence application" },
+      { label: "Licence age", value: "18 for a licence or permit; 15 for an authorised person approval" },
+      { label: "First licence", value: "Not granted until at least 42 days after applying; terms of 1, 3 or 5 years" },
+      { label: "Licensing body", value: "Western Australia Police Force, Licensing Services" },
+    ],
+    basedOn: "The Firearms Act 2024 and Firearms Regulations 2024 on legislation.wa.gov.au and WA Police Force information sheets on the Firearm Safety Training Course and the CRTAFE theory course, checked November 2026",
+    source: { name: "WA Police Force: Firearm Safety Training Course information sheet", url: "https://www.wa.gov.au/media/159424/download" },
+  },
   hspacis: {
     answer:
       "The Certified Instrument Specialist (CIS) exam is the Healthcare Sterile Processing Association's (HSPA) advanced certification for sterile processing technicians who identify, inspect, test, assemble and track surgical instruments. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. To apply, candidates must hold a current CRCST and document 200 hours of hands-on sterile processing experience, separate from their CRCST hours, and the certification is renewed every year with continuing education.",

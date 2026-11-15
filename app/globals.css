@@ -2158,6 +2158,20 @@
     --brand-gradient-to: 352 40% 96%;
   }
 
+  /* CAT (IIM Common Admission Test) theme (v2 exam; matches lib/v2/exams/iimcat.ts theme): deep olive gold */
+  [data-theme="iimcat"] {
+    --brand: 64 100% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 64 70% 95%;
+    --brand-hover: 64 100% 21%;
+    --brand-dark: 64 100% 18%;
+    --brand-darker: 64 90% 12%;
+    --brand-muted: 64 30% 66%;
+    --brand-border: 64 40% 76%;
+    --brand-border-light: 64 40% 87%;
+    --brand-gradient-to: 52 70% 94%;
+  }
+
   /* CompTIA Network+ theme (v2 exam; matches lib/v2/exams/netplus.ts theme) */
   [data-theme="netplus"] {
     --brand: 252 40% 40%;
@@ -6813,6 +6827,18 @@
     --brand-muted: 342 25% 45%;
     --brand-dark: 342 30% 65%;
     --brand-darker: 342 25% 78%;
+  }
+
+  .dark [data-theme="iimcat"] {
+    --brand: 64 100% 24.1%;
+    --brand-hover: 64 100% 21%;
+    --brand-light: 64 45% 13%;
+    --brand-gradient-to: 52 40% 11%;
+    --brand-border-light: 64 35% 24%;
+    --brand-border: 64 40% 34%;
+    --brand-muted: 64 30% 45%;
+    --brand-dark: 64 100% 65%;
+    --brand-darker: 64 90% 78%;
   }
 
   .dark [data-theme="netplus"] {

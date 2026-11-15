@@ -3614,6 +3614,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "SBI's Recruitment of Junior Associates (Customer Support & Sales) advertisement CRPD/CR/2026-27/17 (registration 11 to 31 August 2026), section 4, Selection Procedure",
     source: { name: "State Bank of India Careers", url: "https://sbi.bank.in/web/careers/current-openings" },
   },
+  iimcat: {
+    answer:
+      "CAT 2026, the Common Admission Test of the Indian Institutes of Management, is a 120-minute computer-based test held on Sunday, 29 November 2026 in three sessions, convened this year by IIM Indore. It has three sections in a fixed order, Verbal Ability and Reading Comprehension, Data Interpretation and Logical Reasoning, and Quantitative Ability, with exactly 40 minutes for each and no switching between sections. A correct answer earns 3 marks; a wrong multiple-choice answer loses 1 mark, while non-MCQ questions, where you type the answer, carry no penalty. An on-screen calculator is available, CAT has no defined syllabus, and the IIMs do not publish the number of questions. The score is valid until 31 December 2027, and each IIM sets its own cut-offs and selection process.",
+    rows: [
+      { label: "Duration", value: "120 minutes" },
+      { label: "Sections", value: "VARC, DILR and QA, in a fixed order, 40 minutes each" },
+      { label: "Question types", value: "Multiple choice, and non-MCQ items where you type the answer" },
+      { label: "Marking", value: "+3 correct; -1 for a wrong MCQ; 0 for a wrong non-MCQ or a skipped question" },
+      { label: "Calculator", value: "On-screen calculator only" },
+      { label: "Test date", value: "29 November 2026, three sessions, about 170 cities" },
+      { label: "Fee", value: "Rs 2,700; Rs 1,350 for SC, ST and PwBD candidates" },
+      { label: "Score valid", value: "Until 31 December 2027" },
+    ],
+    basedOn: "the CAT 2026 press release of IIM Indore (26 July 2026), the CAT 2026 Information Bulletin and the CAT 2026 FAQs on iimcat.ac.in",
+    source: { name: "CAT 2026 official website", url: "https://iimcat.ac.in" },
+  },
   ibpsrrb: {
     answer:
       "The IBPS RRB Office Assistant (Multipurpose) Preliminary Examination, often called IBPS RRB Clerk, is one online objective paper of 80 questions in 45 minutes, with each test timed separately: Reasoning 40 questions in 25 minutes and Numerical Ability 40 questions in 20 minutes. Each question carries one mark and a quarter of a mark is deducted for every wrong answer. Candidates must clear a minimum cutoff set by IBPS in both tests; Prelims is qualifying for the Main examination, and only Main marks count for the final merit list and provisional allotment to a Regional Rural Bank. Under the CRP RRBs-XV notification of 1 September 2026, the Prelims is scheduled for November or December 2026.",

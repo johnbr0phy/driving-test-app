@@ -51,8 +51,8 @@ directly). All fetched 2026-11-15.
 - Number of options in an MCQ: not stated in the official documents. The bank uses four, and the
   landing says so.
 - Scaled score and percentile method: the 2026 bulletin says only that scorecards will be on the
-  website. The copy says the IIMs report a scaled score and percentile and that Tigertest's percent
-  score is not a percentile estimate.
+  website. The copy says "guides describe" a scaled score and percentile, and that Tigertest's
+  percent score is not a percentile estimate.
 - Para-jumble and odd-sentence items are written as typed (TITA) answers because the official FAQ
   says non-MCQ answers are typed; their share in the real paper is not published.
 

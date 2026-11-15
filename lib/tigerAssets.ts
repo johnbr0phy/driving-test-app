@@ -123,6 +123,8 @@ const BORROWED_SETS: Record<string, string> = {
   // Next-100 batch 4: the college entrance exams the college-entrance (SAT) tiger, the teacher eligibility tests
   // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
   jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
+  // CAT (IIM) the GMAT tiger, the MBA entrance exam.
+  iimcat: "gmat",
   reet: "ctet", uptet: "ctet", ugcnet: "ctet", aissee: "asvab",
   // Next-100 batch 5: the JAMB UTME subjects (Use of English too) the college-entrance (SAT) tiger; the Nigeria
   // recruitment tests the police, firefighter, military-entrance and security-guard tigers; the TRCN PQE the Praxis tiger.

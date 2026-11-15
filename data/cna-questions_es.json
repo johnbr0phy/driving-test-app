@@ -148,10 +148,10 @@
     "optionA": "El brazo derecho primero",
     "optionB": "El brazo izquierdo primero",
     "optionC": "Ambos brazos al mismo tiempo",
-    "optionD": "El brazo derecho al final",
+    "optionD": "El brazo más fuerte primero, para que ayude",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Se viste primero el lado débil o afectado y se desviste al final, porque el brazo débil necesita más espacio para entrar en la manga. Aquí el lado débil es el derecho, así que entra primero, no al final; el lado fuerte izquierdo puede doblarse y meterse en la manga después."
+    "explanation": "Se viste primero el lado débil o afectado y se desviste al final, porque el brazo débil necesita más espacio para entrar en la manga. Aquí el lado débil es el derecho, así que entra primero, aunque el brazo fuerte pueda ayudar más; el lado fuerte izquierdo puede doblarse y meterse en la manga después."
   },
   {
     "type": "CNA",

@@ -148,10 +148,10 @@
     "optionA": "The right arm first",
     "optionB": "The left arm first",
     "optionC": "Both arms at the same time",
-    "optionD": "The right arm last",
+    "optionD": "The stronger arm first, so she can help",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Dress the weak or affected side first and undress it last, because the weak arm needs the most room to move into the sleeve. Here the weak side is the right, so it goes in first, not last; the strong left side can bend and reach into the sleeve afterward."
+    "explanation": "Dress the weak or affected side first and undress it last, because the weak arm needs the most room to move into the sleeve. Here the weak side is the right, so it goes in first, even though the stronger arm could help more; the strong left side can bend and reach into the sleeve afterward."
   },
   {
     "type": "CNA",

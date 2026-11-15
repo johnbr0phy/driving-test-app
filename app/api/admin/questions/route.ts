@@ -46,13 +46,19 @@ export async function PATCH(request: NextRequest) {
     return NextResponse.json({ ok: true, updated: ids.length });
   }
 
-  // "Key is right" on a statistical flag: ids are "<examId>|<questionId>", n the answers it has now.
+  // "Key is right" on a flag: ids are "<examId>|<questionId>", n the answers it has now.
+  // Also dismisses the question's open reports, which otherwise keep it listed.
   if (body.kind === "flag") {
     if (!ids.length) return NextResponse.json({ error: "invalid" }, { status: 400 });
     for (const id of ids) {
       const [examId, questionId] = id.split("|");
       if (!EXAM_KEY_RE.test(examId) || !QUESTION_ID_RE.test(questionId || "")) continue;
       await clearQuestionReview(db, examId, questionId, "Checked by a person: the key is right.", typeof body.n === "number" ? body.n : undefined);
+      // A reported question stays flagged while any report is open, so close those too.
+      const open = await db.collection("questionReports").where("questionId", "==", questionId).where("status", "==", "open").get();
+      const batch = db.batch();
+      for (const r of open.docs) batch.update(r.ref, { status: "dismissed", closedAt: now, closedReason: "Key checked by a person." });
+      if (!open.empty) await batch.commit();
     }
     return NextResponse.json({ ok: true, updated: ids.length });
   }

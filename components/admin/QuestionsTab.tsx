@@ -177,7 +177,8 @@ function QuestionsView({ data, setData, user, busy, setBusy, reload, refreshing,
         if (kind === "finding") return { ...d, findings: d.findings.filter((f) => !gone.has(f.id)) };
         if (kind === "flag") {
           const hit = d.flags.filter((f) => gone.has(`${f.examId}|${f.questionId}`) && !f.cleared).length;
-          return { ...d, totalFlags: d.totalFlags - hit, clearedFlags: d.clearedFlags + hit, flags: d.flags.map((f) => (gone.has(`${f.examId}|${f.questionId}`) ? { ...f, cleared: true } : f)) };
+          const qids = new Set(d.flags.filter((f) => gone.has(`${f.examId}|${f.questionId}`)).map((f) => f.questionId));
+          return { ...d, reports: d.reports.filter((r) => !qids.has(r.questionId)), totalFlags: d.totalFlags - hit, clearedFlags: d.clearedFlags + hit, flags: d.flags.map((f) => (gone.has(`${f.examId}|${f.questionId}`) ? { ...f, cleared: true } : f)) };
         }
         return { ...d, sources: d.sources.filter((s) => !gone.has(s.id)) };
       });
@@ -201,7 +202,7 @@ function QuestionsView({ data, setData, user, busy, setBusy, reload, refreshing,
           {f.topWrong !== null && ` · top wrong ${"ABCDEF"[f.topWrong]} ${f.topWrongPct}%`}
           {f.reports > 0 && ` · ${f.reports} reports`}
         </span>
-        {!f.cleared && !f.kinds.includes("reported") && (
+        {!f.cleared && (
           <span className="ml-auto">
             <ActionButton busy={busy === `${f.examId}|${f.questionId}`} onClick={() => act("flag", [`${f.examId}|${f.questionId}`], undefined, f.n)}>Key is right</ActionButton>
           </span>

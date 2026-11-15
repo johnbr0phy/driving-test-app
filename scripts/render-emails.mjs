@@ -35,7 +35,6 @@ const SUBJECTS = {
   firstTestReminder: 'Quick check-in from Tigertest',
   secondTestNudge: 'Nice work on test #1!',
   paywallAbandon: 'Safety & Emergencies is still waiting',
-  upgradePitch: "You're doing the work 💪",
   purchaseWelcome: "You're in - here's what just unlocked",
   reengagement: 'Test coming up soon?',
   superAmazingUnlocked: 'You unlocked Super Amazing Mode 🎉',

@@ -118,12 +118,6 @@ const CAMPAIGNS = [
     const idle = now - u.lastUpdated.getTime();
     return idle >= 6 * 3600000 && idle <= 3 * DAY;
   }],
-  ['upgradePitch', DAY, (u) => {
-    if (!active3d(u)) return false;
-    if (u.creationTime.getTime() > now - DAY) return false;
-    if (u.subscription?.isPremium) return false;
-    return u.questionsAnswered >= 50 || u.completedTests.length >= 1;
-  }],
   ['secondTestNudge', DAY, (u) => {
     if (!active3d(u)) return false;
     if (u.completedTests.length !== 1) return false;

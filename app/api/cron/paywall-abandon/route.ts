@@ -13,6 +13,14 @@
  * - Haven't received this email yet
  * - Haven't received any other cron email in the last 4 hours
  *
+ * Every exam that sells Premium (Nov 15 2026): the DMV's own paywalls, a v1
+ * exam's locked steps and stats (lib/examLocks.ts, "<exam>_stats") and the
+ * paid v2 exams' locked drills, tests and stats. The email is about the exam
+ * whose paywall was opened, never the account's current one, and lists what
+ * Premium adds on that exam. It is the only Premium email: there is no
+ * unprompted upgrade pitch (retired Nov 15 2026), so Premium is only ever
+ * mentioned because the person opened something locked.
+ *
  * The upper bound matters: it stops the first deployment from mailing the
  * entire back catalogue of people who bounced off a paywall weeks ago.
  */
@@ -31,9 +39,7 @@ import {
 import { voiceFor } from "@/lib/email-voice";
 import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
-import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
-import { studyContexts, hasClassStatsAccess } from "@/lib/email-lifecycle";
-import { EXAM_PAYWALL_PREFIX } from "@/lib/examLocks";
+import { paywallExam, answersOn, classUnlocks } from "@/lib/paywallAbandon";
 
 const EMAIL_KEY = "paywallAbandon";
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
@@ -80,28 +86,20 @@ export async function GET(req: NextRequest) {
     const authMap = await buildAuthMap();
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
-    const eligible = users.map(u => ({ ...u, examId: "dmv", voice: voiceFor("dmv"),
-      questionsAnswered: studyContexts(u.raw, now).find(context => context.examId === "dmv")?.answersObserved ?? 0,
-    })).filter((u) => {
+    const eligible = users.flatMap((u) => {
+      const hit = u.lastPaywallHit;
+      const examId = hit ? paywallExam(hit) : null;
+      if (!hit || !examId) return [];
+      return [{ ...u, examId, voice: voiceFor(examId), questionsAnswered: answersOn(u.raw, examId, now) }];
+    }).filter((u) => {
       if (now - u.lastActiveAt.getTime() > maxInactiveMs(u.voice)) return false;
-      if (!u.voice.hasPremium) return false;                 // only the DMV has paywalls
+      if (!u.voice.hasPremium || u.voice.premiumBenefits.length === 0) return false;
       if (u.subscription?.isPremium) return false;
       if (u.emailsSent.includes(EMAIL_KEY)) return false;
       if (emailedRecently(u, now, GAP_MS)) return false;
       if (u.questionsAnswered < MIN_QUESTIONS) return false;
-
-      const hit = u.lastPaywallHit;
-      if (!hit) return false;
-      // Event identity is location + feature, not the account's mutable exam.
-      const dashboardItem = /^(set_[34]|test_[34]|drill_test_[1-4])$/.test(hit.itemId);
-      const statsItem = ["full_stats", "stats_question_list", "community_wrong_questions"].includes(hit.itemId);
-      if (statsItem && hasClassStatsAccess(u.raw, "dmv")) return false;
-      if (!((hit.location === "dashboard" && dashboardItem) || (hit.location === "stats_page" && statsItem))) return false;
-      // This email is about the DMV paywalls. An SAT or ACT paywall would be
-      // quoted back with DMV copy and a DMV link, so skip those.
-      if (hit.itemId.startsWith(V2_PAYWALL_PREFIX) || hit.itemId.startsWith(EXAM_PAYWALL_PREFIX)) return false;
-
-      const age = now - hit.at.getTime();
+      if (classUnlocks(u.raw, u.examId, u.lastPaywallHit!)) return false;
+      const age = now - u.lastPaywallHit!.at.getTime();
       return age >= MIN_AGE_MS && age <= MAX_AGE_MS;
     });
 
@@ -115,10 +113,11 @@ export async function GET(req: NextRequest) {
       gapMs: GAP_MS,
       eligible: (fresh, user) => {
         const latest = latestPaywallHit(fresh.paywallHits);
-        if (latest?.location === "stats_page" && hasClassStatsAccess(fresh, "dmv")) return false;
         const now = Date.now();
-        if (!latest || now - latest.at.getTime() < MIN_AGE_MS || now - latest.at.getTime() > MAX_AGE_MS) return false;
-        if ((studyContexts(fresh, now).find(context => context.examId === "dmv")?.answersObserved ?? 0) < MIN_QUESTIONS) return false;
+        if (!latest || paywallExam(latest) !== user.examId) return false;
+        if (classUnlocks(fresh, user.examId, latest)) return false;
+        if (now - latest.at.getTime() < MIN_AGE_MS || now - latest.at.getTime() > MAX_AGE_MS) return false;
+        if (answersOn(fresh, user.examId, now) < MIN_QUESTIONS) return false;
         return fresh.subscription?.isPremium !== true && !!latest &&
           latest.key === user.lastPaywallHit?.key && latest.at.getTime() === user.lastPaywallHit.at.getTime() &&
           latest.location === user.lastPaywallHit.location && latest.itemId === user.lastPaywallHit.itemId;

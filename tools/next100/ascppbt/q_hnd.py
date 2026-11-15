@@ -56,7 +56,7 @@ Q = [
  "WHO describes a watertight primary receptacle, a second leakproof container around it, and a rigid outer package."),
 ("How does WHO say an arterial blood gas syringe should be sent to the lab?",
  "Capped, on ice, promptly", ["Uncapped at room temperature", "In a warm water bath", "Frozen in a freezer"],
- "WHO lists a container with crushed ice for transport and says to take the sample to the lab immediately."),
+ "WHO lists a container with crushed ice for transport and says to take the sample to the lab immediately. Many labs now keep plastic syringes at room temperature and test them within about 30 minutes, so follow the lab's procedure."),
 ("Two tubes with different patients' labels arrive in one bag with one requisition. What should the lab do?",
  "Investigate, likely recollect", ["Test both with that order", "Relabel them to match", "Discard the requisition"],
  "A mix of patients in one bag raises the risk that a tube is mislabeled, so the lab follows its procedure, which usually means recollection."),

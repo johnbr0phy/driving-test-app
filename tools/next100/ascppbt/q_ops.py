@@ -87,7 +87,7 @@ Q = [
 ("What should a phlebotomist bring into a contact precautions room?",
  "Only what the draw needs", ["The whole phlebotomy tray", "Extra supplies for later", "Their personal phone"],
  "Bringing only needed supplies, and dedicated or disposable equipment, limits what can carry organisms out of the room."),
-("What does the trefoil symbol on a yellow sign warn of?",
+("A yellow sign shows a three-bladed propeller symbol around a central dot. What does it warn of?",
  "A radiation hazard", ["A biohazard", "A fire exit route", "A chemical spill area"],
  "The radiation trefoil, often magenta or black on yellow, marks areas or materials with radioactive hazards."),
 ("A coworker's clothing catches fire. What should the coworker be told to do?",

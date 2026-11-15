@@ -1719,7 +1719,7 @@
     "optionD": "Frozen in a freezer",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "WHO lists a container with crushed ice for transport and says to take the sample to the lab immediately."
+    "explanation": "WHO lists a container with crushed ice for transport and says to take the sample to the lab immediately. Many labs now keep plastic syringes at room temperature and test them within about 30 minutes, so follow the lab's procedure."
   },
   {
     "type": "ASCPPBT",
@@ -2762,7 +2762,7 @@
     "state": "ALL",
     "questionId": "PBT-OPS-030",
     "category": "pbtOps",
-    "question": "What does the trefoil symbol on a yellow sign warn of?",
+    "question": "A yellow sign shows a three-bladed propeller symbol around a central dot. What does it warn of?",
     "optionA": "A biohazard",
     "optionB": "A radiation hazard",
     "optionC": "A fire exit route",

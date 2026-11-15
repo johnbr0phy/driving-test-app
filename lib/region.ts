@@ -149,6 +149,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "wonderlic",
   "espolicia", "esguardia", "esvigilante",
   "ptvigil",
   "mttaxi", "mtguard",

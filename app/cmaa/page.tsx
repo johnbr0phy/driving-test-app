@@ -1,5 +1,5 @@
-import { pecmaanentRedirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 
 export default function RootRedirect() {
-  pecmaanentRedirect("/cmaa/dashboard");
+  permanentRedirect("/cmaa/dashboard");
 }

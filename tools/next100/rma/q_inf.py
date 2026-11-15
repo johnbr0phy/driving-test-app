@@ -41,7 +41,7 @@ Q = [
  "Sterile gloved hands stay in front of the body, above the waist and below the shoulders, where they can be seen."),
 ("Which virus is a bloodborne pathogen covered by OSHA's standard?",
  "Hepatitis C virus", ["Influenza virus", "Respiratory syncytial virus", "Norovirus"],
- "The standard names HIV and hepatitis B and C as bloodborne pathogens. Influenza and rhinovirus spread by respiratory droplets, norovirus by the fecal-oral route."),
+ "The standard names HIV and hepatitis B and C as bloodborne pathogens. Influenza and respiratory syncytial virus spread by respiratory droplets and contact, and norovirus by the fecal-oral route."),
 ("Which disinfectant is commonly diluted 1 part to 10 parts water to clean a blood spill?",
  "Household bleach", ["Rubbing alcohol", "Hydrogen peroxide", "Liquid hand soap"],
  "A fresh 1:10 bleach solution is a common choice for blood spills after the visible blood is absorbed, or an EPA-registered disinfectant can be used as labeled."),

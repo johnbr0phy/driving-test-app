@@ -874,7 +874,7 @@
     "category": "rmaInsurance",
     "question": "What is a deductible?",
     "optionA": "Fixed fee at each visit",
-    "optionB": "Percent shared after that",
+    "optionB": "Percent of each bill shared",
     "optionC": "Amount paid before plan pays",
     "optionD": "Monthly cost of coverage",
     "correctAnswer": "C",
@@ -1425,7 +1425,7 @@
     "optionD": "Norovirus",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The standard names HIV and hepatitis B and C as bloodborne pathogens. Influenza and rhinovirus spread by respiratory droplets, norovirus by the fecal-oral route."
+    "explanation": "The standard names HIV and hepatitis B and C as bloodborne pathogens. Influenza and respiratory syncytial virus spread by respiratory droplets and contact, and norovirus by the fecal-oral route."
   },
   {
     "type": "RMA",
@@ -1999,21 +1999,21 @@
     "optionD": "Painful breathing",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Tachypnea is a breathing rate above normal. Bradypnea is slow breathing, apnea is no breathing, and dyspnea is difficult breathing."
+    "explanation": "Tachypnea is a breathing rate above normal. Bradypnea is slow breathing and apnea is no breathing."
   },
   {
     "type": "RMA",
     "state": "ALL",
     "questionId": "RMA-VIT-008",
     "category": "rmaVitals",
-    "question": "Which term describes difficult or labored breathing?",
-    "optionA": "Apnea",
-    "optionB": "Eupnea",
-    "optionC": "Bradypnea",
-    "optionD": "Dyspnea",
+    "question": "A patient can breathe comfortably only when sitting or standing upright. What is this called?",
+    "optionA": "Eupnea",
+    "optionB": "Hyperpnea",
+    "optionC": "Hypopnea",
+    "optionD": "Orthopnea",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Dyspnea is difficult or labored breathing. Eupnea is normal, easy breathing, apnea is no breathing and bradypnea is slow breathing."
+    "explanation": "Orthopnea is difficulty breathing when lying flat, eased by sitting up; it is common in heart failure. Eupnea is normal breathing, hyperpnea is deep breathing and hypopnea is shallow breathing."
   },
   {
     "type": "RMA",

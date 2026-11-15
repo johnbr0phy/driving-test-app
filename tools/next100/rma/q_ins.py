@@ -7,7 +7,7 @@ Q = [
  "7", ["5", "3", "9"],
  "ICD-10-CM codes are 3 to 7 characters, starting with a letter. Coding to the highest number of characters available is required."),
 ("What is a deductible?",
- "Amount paid before plan pays", ["Fixed fee at each visit", "Percent shared after that", "Monthly cost of coverage"],
+ "Amount paid before plan pays", ["Fixed fee at each visit", "Percent of each bill shared", "Monthly cost of coverage"],
  "The deductible is what the patient pays each year before the plan begins to pay. A copay is a fixed fee per visit, and the premium is the cost of the coverage."),
 ("Which type of plan lets members see providers outside the network at a higher cost?",
  "PPO", ["HMO", "Medicaid", "Workers' compensation"],

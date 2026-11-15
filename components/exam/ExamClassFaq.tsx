@@ -85,6 +85,7 @@ export const TEACHES: Record<string, string> = {
   sat: "SAT prep",
   act: "ACT prep",
   asvab: "ASVAB prep",
+  afoqt: "AFOQT prep",
   secplus: "a Security+ course",
   aplus: "a CompTIA A+ course",
   aws: "a cloud computing course",

@@ -77,6 +77,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   act: { title: "ACT Practice Tests", description: "Review English, math, reading and science with timed tests, passages and skill drills." },
   teas: { title: "ATI TEAS Nursing Entrance Exam", description: "Build reading, math, science and English skills for nursing and allied health admissions." },
   hesi: { title: "HESI A2 Nursing Entrance Exam", description: "Review math, reading, vocabulary, grammar, biology, chemistry and anatomy for nursing admissions." },
+  afoqt: { title: "AFOQT Practice Tests", description: "Eight Air Force Officer Qualifying Test subtests at the real pace, from verbal analogies to table reading and aviation." },
   asvab: { title: "ASVAB Practice Tests", description: "Build military aptitude skills in math, verbal reasoning, science and technical subjects." },
   accuplacer: { title: "ACCUPLACER Placement Practice", description: "Build college placement skills in reading, writing, arithmetic, algebra and quantitative reasoning." },
   nclex: { title: "NCLEX-RN Practice", description: "Review clinical judgment, prioritization, delegation, pharmacology and safe nursing care." },

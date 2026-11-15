@@ -636,7 +636,6 @@
       "skill": "Closest meaning",
       "difficulty": 1,
       "format": "single",
-      "basics": "synonyms",
       "stem": "ABATE most nearly means:",
       "options": [
         "lessen",
@@ -659,7 +658,6 @@
       "skill": "Closest meaning",
       "difficulty": 2,
       "format": "single",
-      "basics": "synonyms",
       "stem": "CANDOR most nearly means:",
       "options": [
         "grief",
@@ -726,7 +724,6 @@
       "skill": "Closest meaning",
       "difficulty": 2,
       "format": "single",
-      "basics": "wordParts",
       "stem": "FORTITUDE most nearly means:",
       "options": [
         "courage",
@@ -771,7 +768,6 @@
       "skill": "Closest meaning",
       "difficulty": 1,
       "format": "single",
-      "basics": "synonyms",
       "stem": "IMPEDE most nearly means:",
       "options": [
         "explain",
@@ -838,7 +834,6 @@
       "skill": "Closest meaning",
       "difficulty": 1,
       "format": "single",
-      "basics": "wordParts",
       "stem": "NOVICE most nearly means:",
       "options": [
         "expert",
@@ -883,7 +878,6 @@
       "skill": "Closest meaning",
       "difficulty": 1,
       "format": "single",
-      "basics": "wordParts",
       "stem": "VERBOSE most nearly means:",
       "options": [
         "active",
@@ -1181,7 +1175,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-T1-R1",
       "stem": "Which statement best expresses the main idea of the passage?",
       "options": [
@@ -1205,7 +1198,6 @@
       "skill": "Detail",
       "difficulty": 2,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-T1-R1",
       "stem": "According to the passage, the best checklists:",
       "options": [
@@ -1229,7 +1221,6 @@
       "skill": "Inference",
       "difficulty": 3,
       "format": "single",
-      "basics": "inference",
       "stimulusId": "AFOQT-T1-R1",
       "stem": "The author would most likely agree that a very long checklist:",
       "options": [
@@ -1253,7 +1244,6 @@
       "skill": "Detail",
       "difficulty": 1,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-T1-R2",
       "stem": "Why did the housing office divide each plot in half?",
       "options": [
@@ -1277,7 +1267,6 @@
       "skill": "Inference",
       "difficulty": 2,
       "format": "single",
-      "basics": "inference",
       "stimulusId": "AFOQT-T1-R2",
       "stem": "The office's report about fewer complaints suggests that it:",
       "options": [
@@ -1301,7 +1290,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-T1-R2",
       "stem": "Which title best fits the passage?",
       "options": [
@@ -1325,7 +1313,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-T1-R3",
       "stem": "The passage is mainly concerned with:",
       "options": [
@@ -1349,7 +1336,6 @@
       "skill": "Detail",
       "difficulty": 2,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-T1-R3",
       "stem": "According to the passage, caffeine:",
       "options": [
@@ -1373,7 +1359,6 @@
       "skill": "Author's purpose",
       "difficulty": 3,
       "format": "single",
-      "basics": "authorPurpose",
       "stimulusId": "AFOQT-T1-R3",
       "stem": "The author mentions how people rate their own tiredness in order to:",
       "options": [
@@ -1397,7 +1382,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-T1-R4",
       "stem": "The central point of the passage is that:",
       "options": [
@@ -1421,7 +1405,6 @@
       "skill": "Detail",
       "difficulty": 2,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-T1-R4",
       "stem": "According to the passage, a projection that keeps compass directions accurate:",
       "options": [
@@ -1445,7 +1428,6 @@
       "skill": "Inference",
       "difficulty": 3,
       "format": "single",
-      "basics": "inference",
       "stimulusId": "AFOQT-T1-R4",
       "stem": "The student described in the second paragraph most likely:",
       "options": [
@@ -2990,7 +2972,6 @@
       "skill": "Closest meaning",
       "difficulty": 1,
       "format": "single",
-      "basics": "synonyms",
       "stem": "CONCUR most nearly means:",
       "options": [
         "agree",
@@ -3057,7 +3038,6 @@
       "skill": "Closest meaning",
       "difficulty": 2,
       "format": "single",
-      "basics": "wordsInContext",
       "stem": "FEASIBLE most nearly means:",
       "options": [
         "costly",
@@ -3080,7 +3060,6 @@
       "skill": "Closest meaning",
       "difficulty": 2,
       "format": "single",
-      "basics": "wordsInContext",
       "stem": "HAMPER most nearly means:",
       "options": [
         "accompany",
@@ -3491,7 +3470,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-T2-R1",
       "stem": "The passage mainly argues that good night maintenance crews:",
       "options": [
@@ -3515,7 +3493,6 @@
       "skill": "Detail",
       "difficulty": 2,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-T2-R1",
       "stem": "According to the passage, a delay during the night:",
       "options": [
@@ -3539,7 +3516,6 @@
       "skill": "Inference",
       "difficulty": 3,
       "format": "single",
-      "basics": "inference",
       "stimulusId": "AFOQT-T2-R1",
       "stem": "The last sentence suggests that aircraft from the best night crews:",
       "options": [
@@ -3563,7 +3539,6 @@
       "skill": "Detail",
       "difficulty": 2,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-T2-R2",
       "stem": "According to the passage, the skin may feel dry in desert heat because:",
       "options": [
@@ -3587,7 +3562,6 @@
       "skill": "Inference",
       "difficulty": 2,
       "format": "single",
-      "basics": "inference",
       "stimulusId": "AFOQT-T2-R2",
       "stem": "Guides plan drinking on a schedule mainly because:",
       "options": [
@@ -3611,7 +3585,6 @@
       "skill": "Main idea",
       "difficulty": 1,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-T2-R2",
       "stem": "Which title best fits the passage?",
       "options": [
@@ -3635,7 +3608,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-T2-R3",
       "stem": "The author's main point is that adults learning a language:",
       "options": [
@@ -3659,7 +3631,6 @@
       "skill": "Detail",
       "difficulty": 2,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-T2-R3",
       "stem": "According to the passage, adults tend to learn faster than children in the first months because they:",
       "options": [
@@ -3683,7 +3654,6 @@
       "skill": "Author's purpose",
       "difficulty": 3,
       "format": "single",
-      "basics": "authorPurpose",
       "stimulusId": "AFOQT-T2-R3",
       "stem": "The author contrasts the learner who speaks with neighbors and the one who studies from a book in order to:",
       "options": [
@@ -3707,7 +3677,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-T2-R4",
       "stem": "The passage is mainly about:",
       "options": [
@@ -3731,7 +3700,6 @@
       "skill": "Detail",
       "difficulty": 2,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-T2-R4",
       "stem": "According to the passage, openings in some bridge decks:",
       "options": [
@@ -3755,7 +3723,6 @@
       "skill": "Inference",
       "difficulty": 3,
       "format": "single",
-      "basics": "inference",
       "stimulusId": "AFOQT-T2-R4",
       "stem": "It can be inferred that the bridges that failed in the last century:",
       "options": [
@@ -5045,7 +5012,6 @@
       "skill": "Closest meaning",
       "difficulty": 2,
       "format": "single",
-      "basics": "wordParts",
       "stem": "INNATE most nearly means:",
       "options": [
         "learned",
@@ -5068,7 +5034,6 @@
       "skill": "Closest meaning",
       "difficulty": 3,
       "format": "single",
-      "basics": "synonyms",
       "stem": "RETICENT most nearly means:",
       "options": [
         "eager",
@@ -5091,7 +5056,6 @@
       "skill": "Closest meaning",
       "difficulty": 1,
       "format": "single",
-      "basics": "wordsInContext",
       "stem": "VIGILANT most nearly means:",
       "options": [
         "sleepy",
@@ -5254,7 +5218,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-D-R1",
       "stem": "The passage mainly describes:",
       "options": [
@@ -5278,7 +5241,6 @@
       "skill": "Detail",
       "difficulty": 1,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-D-R1",
       "stem": "According to the passage, one reason recruiting is harder is that young people:",
       "options": [
@@ -5302,7 +5264,6 @@
       "skill": "Inference",
       "difficulty": 3,
       "format": "single",
-      "basics": "inference",
       "stimulusId": "AFOQT-D-R1",
       "stem": "The chiefs' report about shared crews suggests that sharing:",
       "options": [
@@ -5326,7 +5287,6 @@
       "skill": "Main idea",
       "difficulty": 2,
       "format": "single",
-      "basics": "mainIdea",
       "stimulusId": "AFOQT-D-R2",
       "stem": "The author's main point is that some old weather sayings:",
       "options": [
@@ -5350,7 +5310,6 @@
       "skill": "Detail",
       "difficulty": 2,
       "format": "single",
-      "basics": "findingDetail",
       "stimulusId": "AFOQT-D-R2",
       "stem": "According to the passage, a red evening sky often meant fair weather because:",
       "options": [
@@ -5374,7 +5333,6 @@
       "skill": "Author's purpose",
       "difficulty": 3,
       "format": "single",
-      "basics": "authorPurpose",
       "stimulusId": "AFOQT-D-R2",
       "stem": "The author mentions the belief about animals predicting a hard winter in order to:",
       "options": [

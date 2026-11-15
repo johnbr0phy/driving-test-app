@@ -43,9 +43,7 @@ SECTION_OF = {d: s for s, d, _, _ in SECTIONS}
 # name a skill of its own drill, or its brush-up card can never show.
 DRILL_BASICS = {
     "afoqtArithmetic": ["wordProblems", "percents", "ratios", "rateProblems"],
-    "afoqtWord": ["synonyms", "wordParts", "wordsInContext", "commonlyConfused"],
     "afoqtMath": ["solveX", "exponentRules", "factoring", "pythagorean", "inequalities"],
-    "afoqtReading": ["mainIdea", "findingDetail", "inference", "authorPurpose"],
 }
 
 

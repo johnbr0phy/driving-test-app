@@ -197,6 +197,18 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        // The /admin A/B tests tab shows each variation in an iframe on
+        // our own page: the paywall previews and the landing hero pinned
+        // with ?tryq=. Same origin only, so no other site can frame them.
+        source: "/admin/preview/:path*",
+        headers: [{ key: "X-Frame-Options", value: "SAMEORIGIN" }],
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "query", key: "tryq" }],
+        headers: [{ key: "X-Frame-Options", value: "SAMEORIGIN" }],
+      },
       // Pages written in another language say so (lib/urlLanguage.ts).
       ...urlLanguageHeaders(),
       ...seoPaths.map((source) => ({

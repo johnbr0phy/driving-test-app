@@ -912,16 +912,16 @@
 
   /* AFOQT theme: muted flight-suit olive (84 30% 38%: the assigned 40% saturation gave white text 4.1:1) (v2 exam; matches lib/v2/exams/afoqt.ts theme) */
   [data-theme="afoqt"] {
-    --brand: 84 30% 38%;
+    --brand: 109 20% 30%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 84 30% 96%;
-    --brand-hover: 84 30% 33%;
-    --brand-dark: 84 30% 26%;
-    --brand-darker: 84 28% 17%;
-    --brand-muted: 84 22% 72%;
-    --brand-border: 84 22% 80%;
-    --brand-border-light: 84 22% 90%;
-    --brand-gradient-to: 74 30% 95%;
+    --brand-light: 109 30% 96%;
+    --brand-hover: 109 20% 25%;
+    --brand-dark: 109 20% 23%;
+    --brand-darker: 109 15% 18%;
+    --brand-muted: 109 22% 72%;
+    --brand-border: 109 22% 80%;
+    --brand-border-light: 109 22% 90%;
+    --brand-gradient-to: 99 30% 95%;
   }
 
   /* CBEST theme: muted clay brown (v2 exam; matches lib/v2/exams/cbest.ts theme) */
@@ -5847,15 +5847,16 @@
     --brand-dark: 102 90% 65%;
     --brand-darker: 102 85% 78%;
   }
-
   .dark [data-theme="afoqt"] {
-    --brand-light: 84 30% 13%;
-    --brand-gradient-to: 74 30% 11%;
-    --brand-border-light: 84 22% 24%;
-    --brand-border: 84 22% 34%;
-    --brand-muted: 84 22% 45%;
-    --brand-dark: 84 30% 65%;
-    --brand-darker: 84 28% 78%;
+    --brand: 109 20% 41.1%;
+    --brand-hover: 109 20% 33.1%;
+    --brand-light: 109 30% 13%;
+    --brand-gradient-to: 99 30% 11%;
+    --brand-border-light: 109 22% 24%;
+    --brand-border: 109 22% 34%;
+    --brand-muted: 109 22% 45%;
+    --brand-dark: 109 20% 65%;
+    --brand-darker: 109 15% 78%;
   }
 
   .dark [data-theme="tabe"] {

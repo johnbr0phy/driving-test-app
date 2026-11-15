@@ -21,8 +21,8 @@ const COPY: Record<Language, ExamPaywallCopy> = {
       "One payment, yours forever",
     ],
     stats: (n, s) => [
-      `See your accuracy on all ${n} ${s} questions`,
-      "See what you keep getting wrong, worst first",
+      `Your accuracy on all ${n} ${s} questions, worst first`,
+      `See if you are ready for ${s}, area by area`,
       "Full stats on every exam, the DMV included",
       "One payment, yours forever",
     ],
@@ -255,4 +255,15 @@ const COPY: Record<Language, ExamPaywallCopy> = {
 
 export function examPaywallCopy(lang: Language): ExamPaywallCopy {
   return COPY[lang] ?? COPY.en;
+}
+
+/**
+ * The locked step's paywall bullets for one exam. An exam with its own
+ * `premiumBenefits` (English only) lists them, then the generic last line
+ * ("One payment, yours forever").
+ */
+export function examPremiumBullets(exam: { shortName: string; premiumBenefits?: string[] }, lang: Language): string[] {
+  const bullets = examPaywallCopy(lang).premium(exam.shortName);
+  if (lang === "en" && exam.premiumBenefits?.length) return [...exam.premiumBenefits, bullets[bullets.length - 1]];
+  return bullets;
 }

@@ -58,6 +58,6 @@ Q = [
  'The play condition', ['The attention condition', 'The demand condition', 'The alone condition'],
  'In the play (control) condition the client has toys, attention and no demands, so problem behavior should be low if it is socially maintained.'),
 ('During a functional analysis run by the supervisor, the technician should:',
- 'Follow each condition exactly', ['Add praise to every condition', 'Stop if behavior occurs', 'Pick the conditions to run'],
- 'An analysis only works if each condition is run as designed. The supervisor designs it and sets the safety rules for stopping.'),
+ 'Follow each condition exactly', ["Follow the client's lead", 'Stop if behavior occurs', 'Pick the conditions to run'],
+ "An analysis only works if each condition is run as designed. The supervisor designs it and sets the safety rules for stopping; following the client's lead changes the conditions."),
 ]

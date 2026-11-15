@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, ReactNode } from "react";
-import { EXAMS, examLandingPath } from "@/lib/exams";
+import { EXAMS, examLandingPath, examTestTotal } from "@/lib/exams";
 import { getTigerAsset, hasTigerSet } from "@/lib/tigerAssets";
 
 export interface TestTheme {
@@ -57,7 +57,7 @@ export const themes: Record<string, TestTheme> = {
         logoHome: examLandingPath(exam),
         logoIcon: hasTigerSet(exam.id) ? getTigerAsset(exam.id) : null,
         testsPerSet: exam.questionsPerTest,
-        totalTests: exam.testCount,
+        totalTests: examTestTotal(exam),
         totalTrainingSets: exam.trainingSets.length,
         questionsPerTest: exam.questionsPerTest,
         passPercentage: exam.passPct,

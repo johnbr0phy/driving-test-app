@@ -33,6 +33,30 @@ export interface ExamUi {
   dateLocale: string;
 }
 
+/** Strings for full-length timed mocks and the readiness card (Nov 2026).
+ *  Languages without them read English (examUi() merges over en). */
+export interface ExamUiMock {
+  mockN: (n: number) => string;
+  mockSub: (questions: number, minutes: number) => string;
+  mockStartTitle: (shortName: string, n: number) => string;
+  mockStartBody: (questions: number, minutes: number) => string;
+  mockStart: string;
+  timeLeft: (clock: string) => string;
+  timeUp: string;
+  readinessTitle: string;
+  readinessSub: (shortName: string) => string;
+  readinessLevel: { ready: string; almost: string; notYet: string; unknown: string };
+  readinessVerdict: { ready: string; almost: string; notYet: string; unknown: string };
+  readinessEstimate: (pct: number, pass: number) => string;
+  readinessAnswered: (n: number, min: number) => string;
+  readinessFastest: (area: string) => string;
+  readinessNote: string;
+  readinessLock: string;
+  readinessTeaser: string;
+}
+
+export type ExamUiFull = ExamUi & ExamUiMock;
+
 const en: ExamUi = {
   heroTitle: (done, total) => {
     if (done === 0) return `Complete all ${total} steps`;
@@ -66,6 +90,59 @@ const en: ExamUi = {
     `${seen} of ${total} ${shortName} questions seen. Tap any row to answer it again.`,
   dateLocale: "en-US",
 };
+
+const enMock: ExamUiMock = {
+  mockN: (n) => `⏱️ Full-length mock ${n}`,
+  mockSub: (q, min) => `${q} questions · ${min} min, timed`,
+  mockStartTitle: (shortName, n) => `${shortName} full-length mock ${n}`,
+  mockStartBody: (q, min) =>
+    `${q} questions in ${min} minutes, like the real exam. The clock starts when you begin and keeps running if you leave. When time runs out, the test is scored and unanswered questions count as wrong.`,
+  mockStart: "Start the clock",
+  timeLeft: (clock) => `${clock} left`,
+  timeUp: "Time's up. Scoring your test.",
+  readinessTitle: "Are you ready?",
+  readinessSub: (shortName) => `Your ${shortName} readiness by content area, from every question you have answered`,
+  readinessLevel: { ready: "Ready", almost: "Almost", notYet: "Not yet", unknown: "Keep practicing" },
+  readinessVerdict: {
+    ready: "You look ready. Take a full-length mock to be sure.",
+    almost: "Close. Work on the areas marked Almost or Not yet first.",
+    notYet: "Not yet. Start with the area that has the most points to gain.",
+    unknown: "Answer a few more questions in every area to see your estimate.",
+  },
+  readinessEstimate: (pct, pass) => `Estimated score ${pct}% (pass mark ${pass}%)`,
+  readinessAnswered: (n, min) => `${n} of ${min} questions answered`,
+  readinessFastest: (area) => `Fastest points: ${area}`,
+  readinessNote: "An estimate from your practice, weighted like the real exam's outline. Not an official score.",
+  readinessLock: "See your readiness in every area with Premium",
+  readinessTeaser: "Am I ready? See your readiness by area",
+};
+
+const esMock: ExamUiMock = {
+  mockN: (n) => `⏱️ Simulacro completo ${n}`,
+  mockSub: (q, min) => `${q} preguntas · ${min} min, cronometrado`,
+  mockStartTitle: (shortName, n) => `${shortName}: simulacro completo ${n}`,
+  mockStartBody: (q, min) =>
+    `${q} preguntas en ${min} minutos, como el examen real. El reloj empieza cuando comienzas y sigue corriendo si sales. Al acabarse el tiempo, se califica el examen y las preguntas sin responder cuentan como incorrectas.`,
+  mockStart: "Empezar el reloj",
+  timeLeft: (clock) => `Quedan ${clock}`,
+  timeUp: "Se acabó el tiempo. Calificando tu examen.",
+  readinessTitle: "¿Estás listo?",
+  readinessSub: (shortName) => `Tu preparación para ${shortName} por área, según cada pregunta que has respondido`,
+  readinessLevel: { ready: "Listo", almost: "Casi", notYet: "Todavía no", unknown: "Sigue practicando" },
+  readinessVerdict: {
+    ready: "Pareces listo. Haz un simulacro completo para confirmarlo.",
+    almost: "Cerca. Trabaja primero las áreas marcadas Casi o Todavía no.",
+    notYet: "Todavía no. Empieza por el área con más puntos por ganar.",
+    unknown: "Responde algunas preguntas más en cada área para ver tu estimación.",
+  },
+  readinessEstimate: (pct, pass) => `Puntuación estimada ${pct} % (aprobado ${pass} %)`,
+  readinessAnswered: (n, min) => `${n} de ${min} preguntas respondidas`,
+  readinessFastest: (area) => `Puntos más rápidos: ${area}`,
+  readinessNote: "Una estimación a partir de tu práctica, ponderada como el temario del examen real. No es una puntuación oficial.",
+  readinessLock: "Ve tu preparación en cada área con Premium",
+  readinessTeaser: "¿Estoy listo? Ve tu preparación por área",
+};
+
 
 const es: ExamUi = {
   heroTitle: (done, total) => {
@@ -603,8 +680,10 @@ const el: ExamUi = {
 };
 
 const EXAM_UI: Partial<Record<Language, ExamUi>> = { en, es, vi, ko, zh, de, fr, it, pl, nl, pt, sv, da, fi, hu, ro, el };
+const EXAM_UI_MOCK: Partial<Record<Language, ExamUiMock>> = { en: enMock, es: esMock };
 
-export function examUi(lang: Language, englishLocale: "en-US" | "en-GB" = "en-US"): ExamUi {
-  if (lang === "en" && englishLocale === "en-GB") return { ...en, dateLocale: "en-GB" };
-  return EXAM_UI[lang] ?? en;
+export function examUi(lang: Language, englishLocale: "en-US" | "en-GB" = "en-US"): ExamUiFull {
+  const mock = EXAM_UI_MOCK[lang] ?? enMock;
+  if (lang === "en" && englishLocale === "en-GB") return { ...en, ...enMock, dateLocale: "en-GB" };
+  return { ...(EXAM_UI[lang] ?? en), ...mock };
 }

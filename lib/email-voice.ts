@@ -21,6 +21,7 @@ import {
   getExamByStateCode,
   examFamilyId,
   examSetBase,
+  examTestTotal,
 } from "@/lib/exams";
 
 export interface EmailVoice {
@@ -93,7 +94,7 @@ function voiceForExam(exam: ExamConfig): EmailVoice {
     fullName: exam.fullName,
     questionsPerTest: exam.questionsPerTest,
     testCount: exam.testCount,
-    stepCount: examTrainingParts(exam).length + exam.testCount,
+    stepCount: examTrainingParts(exam).length + examTestTotal(exam),
     passPct: exam.passPct,
     dashboardPath: `${exam.slug}/dashboard`,
     statsPath: `${exam.slug}/stats`,

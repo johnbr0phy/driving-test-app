@@ -5154,6 +5154,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The CDR Registered Dietitian Examination Test Specifications (2022 to 2026 and 2027 to 2031) and the CDR RD and DTR Exam FAQ (2025), checked November 2026",
     source: { name: "CDR: Registration Examination for Dietitians", url: "https://www.cdrnet.org/rdexamoverview" },
   },
+  ccrn: {
+    answer:
+      "CCRN (Adult) is the acute and critical care nursing certification of AACN Certification Corporation, for RNs and APRNs who care for acutely or critically ill adults. The exam has 150 multiple-choice questions in 3 hours; 125 are scored and 25 are unscored pretest items. It is taken by computer at a PSI testing center or by live remote proctoring. The passing point is a raw number of correct answers set by a modified Angoff study, not a percentage. Under the Adult test plan for exams taken on and after November 12, 2025, 80% is Clinical Judgment (Cardiovascular 13%, Respiratory 12%, Endocrine, Hematology/Immunology, GI, Renal/GU and Integumentary 21%, Musculoskeletal, Neurological and Behavioral/Psychosocial 18%, Multisystem 16%) and 20% is Professional Caring and Ethical Practice. Certification lasts 3 years.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 unscored)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "A raw cut score set by modified Angoff, not a percentage" },
+      { label: "Content", value: "Clinical Judgment 80% (CV 13, respiratory 12, endocrine/heme/GI/renal/skin 21, neuro/MSK/behavioral 18, multisystem 16), Professional Caring and Ethical Practice 20%" },
+      { label: "Eligibility", value: "U.S. RN or APRN license; 1,750 direct care hours in 2 years or 2,000 in 5 years" },
+      { label: "Where", value: "PSI testing centers or live remote proctoring" },
+      { label: "Retakes", value: "Up to 4 attempts in a rolling 12 months" },
+      { label: "Run by", value: "AACN Certification Corporation" },
+    ],
+    basedOn: "The AACN CCRN Exam Handbook (Direct Care pathway, July 2026) with the Adult test plan for exams on and after November 12, 2025, and the AACN Certification Exam Policy Handbook (September 2026), checked November 2026",
+    source: { name: "AACN: CCRN (Adult) certification", url: "https://www.aacn.org/certification/get-certified/ccrn-adult" },
+  },
   praxis5001: {
     answer:
       "Praxis Elementary Education: Multiple Subjects (test code 5001) is an ETS content knowledge test that many states require for a generalist elementary teaching license. It has 245 questions in 4 hours 35 minutes, split into four separately timed subtests: Reading and Language Arts (5002) 80 questions in 90 minutes, Mathematics (5003) 50 in 65 minutes, Social Studies (5004) 60 in 60 minutes and Science (5005) 55 in 60 minutes. Questions are selected response and numeric entry, with an on-screen scientific calculator for math and science. ETS does not set a passing score: each state sets a qualifying score for each subtest. ETS plans to replace 5001 with the Elementary Education Fundamentals tests, with 5001 targeted to retire in August 2028.",

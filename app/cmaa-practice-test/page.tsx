@@ -24,7 +24,7 @@ const description =
 const faqs = [
   {
     q: "What is the CMAA exam?",
-    a: "It is the certification exam for the Certified Medical Administrative Assistant credential from the National Healthcareer Association (NHA). It covers front office work: communication, scheduling, check-in and insurance, billing, health records and compliance. You can sit for it after a medical administrative assistant training program within the last five years, or with a high school diploma and one year of supervised work in the field.",
+    a: "It is the certification exam for the Certified Medical Administrative Assistant credential from the National Healthcareer Association (NHA). It covers front office work: communication, scheduling, check-in and insurance, billing, health records and compliance. You can sit for it after a medical administrative assistant training program within the last five years, or with a high school diploma and supervised work in the field: one year within the last three years, or two years within the last five.",
   },
   {
     q: "How many questions are on the CMAA exam?",

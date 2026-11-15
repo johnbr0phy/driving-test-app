@@ -44,6 +44,20 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  ascpmlt: {
+    answer:
+      "The MLT(ASCP) exam is the medical laboratory technician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the MLT(ASCP) credential (MLT(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 100 multiple-choice questions with one best answer in 2 hours 30 minutes, delivered as computer adaptive testing. Content areas are Chemistry 20 to 25%, Hematology 20 to 25%, Blood Banking 15 to 20%, Microbiology 15 to 20%, and Urinalysis and Other Body Fluids, Immunology and Laboratory Operations 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score from 100 to 999, with 400 to pass.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one best answer" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Format", value: "Computer adaptive testing (CAT)" },
+      { label: "Largest areas", value: "Chemistry and Hematology, 20 to 25% each" },
+      { label: "Pass mark", value: "Scaled score of 400 on a 100 to 999 scale" },
+      { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+    ],
+    basedOn: "The ASCP BOC Medical Laboratory Technician MLT(ASCP) and MLT(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
+    source: { name: "ASCP BOC: MLT(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mlt_content_guideline.pdf" },
+  },
   aufirearmsnsw: {
       answer:
         "In New South Wales, a person who has never held a firearms licence must complete the firearms training and safety course prescribed for the licence before it can be issued (Firearms Act 1996, s 11(3)(b)). The NSW Police users guide calls the longarm course the Firearms Licence Qualification course, run by approved clubs, organisations or trainers, with theory and a practical component. Licences are issued by the NSW Police Force Firearms Registry. An applicant must be 18 or over, an NSW resident, have a genuine reason such as approved club membership or permission to shoot on rural land, and be able to meet the storage rules. A first licence cannot be issued until 28 days after applying, and since 1 July 2026 a licence lasts up to 2 years.",

@@ -6,7 +6,7 @@
       { label: "Time", value: "2 hours 15 minutes" },
       { label: "Passing score", value: "390 on a 200 to 500 scale" },
       { label: "Largest domains", value: "Communication and Professionalism 21, Patient Encounter 21, Law and Compliance 17" },
-      { label: "Eligibility", value: "Training program within 5 years, or diploma plus 1 year of supervised work in the field" },
+      { label: "Eligibility", value: "Training program within 5 years, or diploma plus 1 year of supervised work in the last 3 years (or 2 in the last 5)" },
       { label: "Where", value: "School, PSI test center or live remote proctoring" },
       { label: "Retakes", value: "After 30 days; three attempts, then one year between attempts" },
       { label: "Given by", value: "NHA" },

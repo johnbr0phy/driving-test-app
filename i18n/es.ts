@@ -1129,6 +1129,17 @@ export const es: TranslationKeys = {
     rptSafety: "Safety Standards & Procedures",
     rptLegal: "Legal, Ethical & Professional",
     rptAnatomy: "Terminology, Anatomy & Physiology",
+    // ascpmlt
+    mltBbProd: "Blood Products & Transfusion Practice",
+    mltBbSero: "Blood Groups & Serologic Testing",
+    mltUa: "Urinalysis & Other Body Fluids",
+    mltChemGen: "Carbohydrates, Lipids, Proteins & Enzymes",
+    mltChemSpec: "Acid-Base, Electrolytes, Hormones & Drugs",
+    mltHeme: "Hematology Physiology, Disease & Testing",
+    mltHemost: "Hemostasis",
+    mltImmuno: "Immunology",
+    mltMicro: "Microbiology",
+    mltOps: "Laboratory Operations",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

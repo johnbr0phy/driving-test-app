@@ -73,6 +73,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   hiset: { title: "HiSET Practice Test", description: "Practice all five HiSET subtests, Reading, Writing, Math, Science and Social Studies, at the real pace, with an estimated score for each." },
   ged: { title: "GED Practice Tests", description: "Build skills in language arts, math, science and social studies with tests and topic drills." },
   isee: { title: "ISEE Middle Level Practice Test", description: "Practice Verbal, Quantitative, Reading and Math for the ISEE Middle Level, timed like the real test." },
+  cogat: { title: "CogAT Practice Test", description: "Practice the CogAT Verbal and Quantitative Batteries for grades 3 to 6, free." },
   mapgrowth: { title: "MAP Growth Practice Test", description: "Practice math, reading and language usage for the MAP Growth test in grades 2 to 5." },
   ssat: { title: "SSAT Practice Test", description: "Practice quantitative, reading and verbal questions for the Middle Level SSAT, grades 5 to 7." },
   sat: { title: "Digital SAT Practice Tests", description: "Build reading, writing and math skills with timed practice tests and focused topic drills." },

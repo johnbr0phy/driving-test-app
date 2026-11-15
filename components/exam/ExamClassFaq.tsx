@@ -83,6 +83,7 @@ export const TEACHES: Record<string, string> = {
   mapgrowth: "a grade 2 to 5 class",
   isee: "an ISEE prep class or a grade 6 or 7 class",
   ssat: "an SSAT prep class",
+  cogat: "a grade 3 to 6 gifted and talented or enrichment class",
   hscmaths: "a Year 12 Mathematics Standard class",
   sat: "SAT prep",
   act: "ACT prep",

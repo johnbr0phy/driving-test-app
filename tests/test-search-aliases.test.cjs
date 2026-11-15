@@ -68,6 +68,11 @@ const CASES = [
   ["secondary school admission test", "US", "ssat"],
   ["private school entrance exam", "US", "ssat"],
   ["ssat middle level", "US", "ssat"],
+  ["cogat", "US", "cogat"],
+  ["cogat practice test", "US", "cogat"],
+  ["cognitive abilities test", "US", "cogat"],
+  ["gifted and talented test", "US", "cogat"],
+  ["cogat 3rd grade", "US", "cogat"],
 ];
 
 for (const [q, region, id] of CASES) {

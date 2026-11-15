@@ -2335,6 +2335,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full Academic Reading tests and seven drills by question type, with a band score estimate. Only Reading is covered; Listening, Writing and Speaking are not.",
   },
+  toeflread: {
+    answer:
+      "Since January 21, 2026, the TOEFL iBT Reading section comes first and has 50 items in about 30 minutes, some of them unscored. It is two-stage adaptive: a first stage, then an easier or harder second stage of about 9 minutes, with no going back. There are three task types: Complete the Words (about 30 items: short academic paragraphs where you type the missing second half of every second word), Read in Daily Life (notices, emails, messages and menus of 15 to 150 words with two or three questions each) and Read an Academic Passage (about 200 words with five questions). Reading is scored on a 1 to 6 scale in half bands, like the other three sections.",
+    rows: [
+      { label: "Items", value: "50 (including unscored items), 1 point each" },
+      { label: "Time", value: "About 30 minutes" },
+      { label: "Task types", value: "Complete the Words, Read in Daily Life, Read an Academic Passage" },
+      { label: "Design", value: "Two-stage adaptive, no going back between stages" },
+      { label: "Score", value: "1 to 6 in half bands (a 0 to 120 total too, for two years from January 2026)" },
+      { label: "Order", value: "First section, then Listening, Writing, Speaking" },
+      { label: "Run by", value: "ETS" },
+    ],
+    basedOn: "the ETS TOEFL iBT 2026 test blueprint and specifications and the updated test overview (as of November 2026)",
+    source: { name: "ETS", url: "https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html" },
+    tigertest:
+      "Tigertest has two full Reading sections in the 2026 format with an adaptive second stage, and seven drills by task type, free to start. Only Reading is covered; Listening, Writing and Speaking are not.",
+  },
   netplus: {
     answer:
       "The CompTIA Network+ exam (N10-009) has a maximum of 90 questions in 90 minutes, multiple choice and performance-based, and you need 720 on a 100 to 900 scale to pass. It covers Networking Concepts 23%, Network Implementation 20%, Network Operations 19%, Network Security 14% and Network Troubleshooting 24%. N10-009 launched in June 2024; CompTIA estimates it will retire in 2027.",

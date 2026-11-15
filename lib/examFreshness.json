@@ -396,6 +396,14 @@
       "what": "House Bill 8: STAAR is replaced by a new assessment program (possibly called the Student Success Tool) beginning in the 2027-28 school year; TEA has posted draft SST Biology blueprints.",
       "action": "Re-check TEA's Biology blueprint for the new program; rebuild or retire the STAAR Biology bank and landing.",
       "source": "https://tea.texas.gov/data-reports/student-assessment-overview/house-bill-8-student-assessment"
+    },
+    {
+      "exam": "toeflread",
+      "date": "2028-01-21",
+      "kind": "notice",
+      "what": "ETS's two-year transition after the January 2026 update ends: the comparable 0 to 120 total may stop appearing on TOEFL iBT score reports.",
+      "action": "Check the ETS score pages; update the examFacts score row and the landing scoring FAQ.",
+      "source": "https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html"
     }
   ]
 }

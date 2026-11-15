@@ -65,6 +65,7 @@ const BORROWED_SETS: Record<string, string> = {
   // Texas Biology EOC wears the AP Biology tiger.
   staarbio: "apbio",
   wonderlic: "asvab",
+  toeflread: "ieltsread",
   ukwater: "caplumb",
   ukg3: "caplumb",
   ukplumb: "caplumb",

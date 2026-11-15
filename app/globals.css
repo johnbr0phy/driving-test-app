@@ -2156,6 +2156,20 @@
     --brand-gradient-to: 6 60% 96%;
   }
 
+  /* TOEFL Reading theme: muted olive green (v2 exam; matches lib/v2/exams/toeflread.ts theme) */
+  [data-theme="toeflread"] {
+    --brand: 84 25% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 84 25% 95%;
+    --brand-hover: 84 25% 33%;
+    --brand-dark: 84 25% 28%;
+    --brand-darker: 84 22% 19%;
+    --brand-muted: 84 18% 70%;
+    --brand-border: 84 20% 80%;
+    --brand-border-light: 84 20% 90%;
+    --brand-gradient-to: 94 30% 96%;
+  }
+
   /* MCAT theme (v2 exam; matches lib/v2/exams/mcat.ts theme) */
   [data-theme="mcat"] {
     --brand: 256 75% 40%;
@@ -6880,6 +6894,18 @@
     --brand-muted: 356 40% 45%;
     --brand-dark: 356 85% 65%;
     --brand-darker: 356 75% 78%;
+  }
+
+  .dark [data-theme="toeflread"] {
+    --brand: 84 25% 38.8%;
+    --brand-hover: 84 25% 33%;
+    --brand-light: 84 25% 13%;
+    --brand-gradient-to: 94 30% 11%;
+    --brand-border-light: 84 20% 24%;
+    --brand-border: 84 20% 34%;
+    --brand-muted: 84 18% 45%;
+    --brand-dark: 84 25% 65%;
+    --brand-darker: 84 22% 78%;
   }
 
   .dark [data-theme="mcat"] {

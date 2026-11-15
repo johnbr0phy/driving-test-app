@@ -151,6 +151,7 @@
   "gre": ["#753479","#f8f1f9","#331d35","#ebd9ec"],
   "gmat": ["#8f3d58","#f9f1f3","#492732","#ecd9e0"],
   "ieltsread": ["#68080f","#fdeced","#31070a","#f1dadc"],
+  "toeflread": ["#667949","#f3f5ef","#333b26","#e7ebe0"],
   "mcat": ["#4219b3","#f1eefc","#251452","#ded8ee"],
   "lsat": ["#502b36","#f8f2f4","#29191e","#eadce0"],
   "wonderlic": ["#427e07","#f2fbe9","#213c07","#e0ebd6"],

@@ -10,6 +10,8 @@ export const TIGER_EXAM_IDS = [
   "cosmetology", "vtne", "paramedic", "nclexpn", "ged", "timestables",
   // Dedicated admissions and English-reading mascots: eight reviewed expressions each.
   "mcat", "lsat", "ieltsread",
+  // Air Force officer and calculator-free NYC school admissions: eight reviewed expressions.
+  "afoqt", "shsat",
   // UK: reviewed school, workplace and trade artwork.
   "ks2", "gcsemaths", "uksia", "uk18ed", "gcsehigher", "gcsescience",
   "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh",
@@ -78,7 +80,7 @@ const BORROWED_SETS: Record<string, string> = {
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
-  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", shsat: "sat",
+  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables",
   pkdrive: "driving",
   // EU driving theory tests (Nov 2026) wear the car tiger.
   esdgt: "driving", ptimt: "driving", bedriving: "driving", dkteori: "driving", setrafik: "driving", fitheory: "driving", grdriving: "driving", rodrpciv: "driving", hukresz: "driving", mttheory: "driving", detheorie: "driving",
@@ -122,8 +124,6 @@ const BORROWED_SETS: Record<string, string> = {
   // the defence exams the military-entrance (ASVAB) tiger, the Philippine LET the teacher-licensing (Praxis) tiger.
   upscse: "ssccgl", ssccpo: "ssccgl", rrbalp: "rrbntpc", rpfconst: "police",
   nda: "asvab", agniveer: "asvab", agniveervayu: "asvab", phlet: "praxis",
-  // The AFOQT borrows the military-entrance (ASVAB) tiger.
-  afoqt: "asvab",
   // Next-100 batch 4: the college entrance exams the college-entrance (SAT) tiger, the teacher eligibility tests
   // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
   jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
@@ -179,3 +179,4 @@ export function getTigerAsset(examId = "dmv", expression?: TigerExpression): str
   }
   return getSiteTigerAsset(expression);
 }
+

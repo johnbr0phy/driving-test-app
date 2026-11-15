@@ -1,0 +1,4346 @@
+{
+  "stimuli": [
+    {
+      "id": "STAARBIO-T1-S1",
+      "title": "Enzyme investigation",
+      "text": "Catalase is an enzyme in liver cells that breaks down hydrogen peroxide into water and oxygen gas. A student placed equal pieces of fresh liver into equal volumes of hydrogen peroxide at different temperatures and measured the oxygen produced in 2 minutes.\n\n| Temperature (C) | Oxygen produced (mL) |\n|---|---|\n| 10 | 6 |\n| 20 | 11 |\n| 30 | 17 |\n| 40 | 19 |\n| 50 | 8 |\n| 60 | 1 |"
+    },
+    {
+      "id": "STAARBIO-T2-S1",
+      "title": "A short gene and three mutations",
+      "text": "The mRNA made from a short gene is shown below, split into codons. A scientist found three mutant versions of the gene and wrote out the mRNA each one makes.\n\n| Version | mRNA |\n|---|---|\n| Normal | AUG GAA CCA UUU GGC UAA |\n| Mutant 1 | AUG GUA CCA UUU GGC UAA |\n| Mutant 2 | AUG GAA UCC AUU UGG CUA A |\n| Mutant 3 | AUG GAG CCA UUU GGC UAA |\n\nPart of the genetic code: AUG = methionine (start), GAA = glutamic acid, GAG = glutamic acid, GUA = valine, CCA = proline, UUU = phenylalanine, GGC = glycine, UAA = stop."
+    },
+    {
+      "id": "STAARBIO-T1-S2",
+      "title": "Flower color cross",
+      "text": "In a garden plant, the allele for red flowers (R) and the allele for white flowers (W) show incomplete dominance: RR plants have red flowers, RW plants have pink flowers and WW plants have white flowers. A student crossed two pink-flowered plants and grew 200 of their seeds.\n\n| Flower color | Number of offspring |\n|---|---|\n| Red | 52 |\n| Pink | 97 |\n| White | 51 |"
+    },
+    {
+      "id": "STAARBIO-T2-S2",
+      "title": "Beetles on dark soil",
+      "text": "A population of beetles lives on light brown soil. Beetle color is inherited, and birds eat the beetles they can see easily. A fire darkened the soil. A scientist counted beetles of each color in the same area every two years.\n\n| Year | Light beetles | Dark beetles |\n|---|---|---|\n| 0 (fire) | 450 | 50 |\n| 2 | 310 | 90 |\n| 4 | 180 | 170 |\n| 6 | 70 | 260 |\n\nEach beetle lays many more eggs than can survive to adulthood."
+    },
+    {
+      "id": "STAARBIO-T1-S3",
+      "title": "A grassland food chain",
+      "text": "A student modeled the energy in one grassland food chain. The numbers show the energy stored in each trophic level each year.\n\n| Organism | Trophic level | Energy (kilocalories per square meter) |\n|---|---|---|\n| Grasses | Producer | 20,000 |\n| Grasshoppers | Primary consumer | 2,000 |\n| Mice | Secondary consumer | 200 |\n| Hawks | Tertiary consumer | ? |"
+    },
+    {
+      "id": "STAARBIO-T2-S3",
+      "title": "Wolves and elk",
+      "text": "Wolves were returned to a large park where elk had grazed with no wolves for many years. Scientists recorded the elk population and the number of young willow trees growing along streams.\n\n| Year | Wolves | Elk | Young willows per 100 m of stream |\n|---|---|---|---|\n| 1 | 0 | 16,000 | 4 |\n| 5 | 40 | 12,000 | 9 |\n| 10 | 90 | 8,000 | 21 |\n| 15 | 100 | 7,000 | 30 |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "STAARBIO-T1-001",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5A Biomolecules",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which biomolecule makes up most of the cell membrane and forms a barrier that water-soluble substances cannot easily cross?",
+      "options": [
+        "Starches",
+        "Amino acids",
+        "Phospholipids",
+        "Nucleic acids"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A membrane is a bilayer of phospholipids whose fatty acid tails are nonpolar, so ions and other water-soluble substances do not pass through easily. Starch is a storage carbohydrate, not a membrane material."
+    },
+    {
+      "id": "STAARBIO-T1-002",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A scientist finds a single-celled organism with ribosomes, a cell membrane and a cell wall, but no nucleus and no membrane-bound organelles. The organism is best classified as:",
+      "options": [
+        "a fungus",
+        "a prokaryote",
+        "a plant cell",
+        "a protist"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Lacking a nucleus and membrane-bound organelles is what defines a prokaryote such as a bacterium. Plants, fungi and protists are eukaryotes, which all have a nucleus, even though some of them also have cell walls."
+    },
+    {
+      "id": "STAARBIO-T1-003",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 2,
+      "format": "multi",
+      "stem": "Which two observations support the idea that mitochondria were once free-living prokaryotes? Choose two.",
+      "options": [
+        "They divide by splitting in two",
+        "They have their own circular DNA",
+        "They use oxygen to release energy",
+        "They are found in animal cells",
+        "They are smaller than the nucleus"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "select": 2,
+      "explanation": "Endosymbiotic theory points to features mitochondria share with bacteria: their own circular DNA and division by splitting, separate from the cell cycle. Using oxygen or being found in animal cells does not link them to prokaryotes."
+    },
+    {
+      "id": "STAARBIO-T1-004",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5D Viruses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Why are antibiotics not used to treat the common cold, which is caused by a virus?",
+      "options": [
+        "Viruses lack the cell parts antibiotics target",
+        "Viruses have cell walls that block antibiotics",
+        "Viruses only infect cells of plants",
+        "Viruses are too large for antibiotics to enter"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Antibiotics act on structures and processes of bacterial cells, such as cell walls and bacterial ribosomes. A virus is a protein coat around genetic material with no cell parts of its own, so there is nothing for an antibiotic to act on."
+    },
+    {
+      "id": "STAARBIO-T1-005",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6A Cell cycle and DNA replication",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During which stage of the cell cycle is DNA copied?",
+      "options": [
+        "S phase",
+        "Cytokinesis",
+        "Prophase",
+        "Anaphase"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The cell replicates its DNA during the S (synthesis) phase of interphase, before mitosis begins. In anaphase the copies are already made and are pulled apart."
+    },
+    {
+      "id": "STAARBIO-T1-006",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6B Cell differentiation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Nerve cells and skin cells in one person contain the same DNA, yet they look and work very differently. This is because:",
+      "options": [
+        "nerve cells lost most of their genes",
+        "they use different genes",
+        "skin cells copy their DNA incorrectly",
+        "each cell type has different DNA"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Cell differentiation happens when cells switch on different sets of genes, so they make different proteins. The DNA itself is the same in almost every body cell."
+    },
+    {
+      "id": "STAARBIO-T1-007",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6C Cell cycle disruptions and cancer",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A mutation stops a protein that normally halts the cell cycle when DNA is damaged. Which outcome is most likely?",
+      "options": [
+        "The cell stops making DNA",
+        "Damaged cells keep dividing",
+        "The cell becomes a stem cell",
+        "Cells divide more slowly"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Checkpoint proteins pause the cycle so damage can be repaired or the cell can die. Without that brake, cells with damaged DNA divide and pass errors on, which can lead to a tumor."
+    },
+    {
+      "id": "STAARBIO-T1-008",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S1",
+      "stem": "At which temperature did catalase work fastest in this investigation?",
+      "options": [
+        "30 C",
+        "40 C",
+        "50 C",
+        "60 C"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The most oxygen, 19 mL, was produced at 40 C, so the reaction ran fastest there. Production fell sharply at 50 C and 60 C."
+    },
+    {
+      "id": "STAARBIO-T1-009",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S1",
+      "stem": "Which explanation best accounts for the result at 60 C?",
+      "options": [
+        "Cold slowed the molecules down",
+        "The liver made more catalase",
+        "The peroxide became a new enzyme",
+        "Heat changed the enzyme's shape"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Too much heat denatures the enzyme, changing the shape of its active site so hydrogen peroxide no longer fits. Slow-moving molecules explain the low rate at 10 C, not at 60 C."
+    },
+    {
+      "id": "STAARBIO-T1-010",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S1",
+      "stem": "How did catalase affect the breakdown of hydrogen peroxide?",
+      "options": [
+        "It lowered the activation energy",
+        "It added heat energy to the reaction",
+        "It became oxygen gas",
+        "It was used up in the reaction"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Enzymes speed up reactions by lowering the activation energy. They are not used up, so the same enzyme molecule can act again and again."
+    },
+    {
+      "id": "STAARBIO-T1-011",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After a meal, nutrients absorbed in the small intestine reach the body's cells. Which two systems work together most directly to do this?",
+      "options": [
+        "Muscular and integumentary",
+        "Nervous and skeletal",
+        "Digestive and circulatory",
+        "Respiratory and excretory"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The digestive system breaks food down and absorbs nutrients through the intestine wall, and the circulatory system carries those nutrients in the blood to every cell."
+    },
+    {
+      "id": "STAARBIO-T1-012",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "When blood glucose rises, the pancreas releases insulin, and cells take up more glucose. This interaction between the endocrine system and body cells is an example of:",
+      "options": [
+        "regulation of body conditions",
+        "defense against a pathogen",
+        "reproduction of new cells",
+        "absorption of water by the skin"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Insulin lowers blood glucose back toward its normal level, a feedback loop that maintains homeostasis. Regulation is one of the functions animal systems share."
+    },
+    {
+      "id": "STAARBIO-T1-013",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Water absorbed by the roots of a tall tree reaches the leaves through:",
+      "options": [
+        "the flowers",
+        "xylem tissue",
+        "phloem tissue",
+        "the stomata"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Xylem is the vascular tissue that carries water and minerals up from the roots. Phloem carries sugars made in the leaves to other parts of the plant."
+    },
+    {
+      "id": "STAARBIO-T1-014",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7A Components of DNA",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Each nucleotide in a DNA molecule is made of a phosphate group, a nitrogen base and:",
+      "options": [
+        "ribose",
+        "a fatty acid",
+        "an amino acid",
+        "deoxyribose"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "DNA nucleotides contain the sugar deoxyribose, which gives deoxyribonucleic acid its name. Ribose is the sugar in RNA."
+    },
+    {
+      "id": "STAARBIO-T1-015",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7A Components of DNA",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "One strand of DNA has the base sequence ATG CCA. What is the sequence of the matching strand?",
+      "options": [
+        "GCA TTG",
+        "UAC GGU",
+        "ATG CCA",
+        "TAC GGT"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In DNA, A pairs with T and C pairs with G, so ATG CCA pairs with TAC GGT. U appears only in RNA."
+    },
+    {
+      "id": "STAARBIO-T1-016",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7B Gene expression and protein synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During transcription, the information in a gene is copied into:",
+      "options": [
+        "messenger RNA",
+        "a protein chain",
+        "a new DNA strand",
+        "transfer RNA only"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In transcription, RNA polymerase reads one strand of a gene and builds a matching mRNA molecule. Ribosomes later translate that mRNA into a protein."
+    },
+    {
+      "id": "STAARBIO-T1-017",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7C Changes in DNA",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A substitution changes one base in a gene, but the protein made from the gene is unchanged. Which explanation is most likely?",
+      "options": [
+        "The cell stopped making the protein",
+        "Substitutions never affect proteins",
+        "Both codons code for one amino acid",
+        "The base was replaced in an RNA molecule"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Most amino acids have more than one codon, so some substitutions are silent. Other substitutions do change an amino acid or create a stop codon."
+    },
+    {
+      "id": "STAARBIO-T1-018",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S2",
+      "stem": "Which ratio of red to pink to white offspring does a Punnett square predict for this cross?",
+      "options": [
+        "1 : 1 : 1",
+        "1 : 2 : 1",
+        "3 : 1 : 0",
+        "9 : 3 : 4"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "RW x RW gives 1/4 RR, 1/2 RW and 1/4 WW, a 1 : 2 : 1 ratio of red to pink to white. The student's 52 : 97 : 51 is close to that."
+    },
+    {
+      "id": "STAARBIO-T1-019",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S2",
+      "stem": "Why do these results show incomplete dominance rather than complete dominance?",
+      "options": [
+        "Only white plants survive the cross",
+        "Heterozygotes show a blended color",
+        "The red allele hides the white allele",
+        "Both colors appear as patches on one flower"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "With complete dominance, RW plants would look like one parent. Here they are pink, in between red and white. Patches of both colors on one flower would be codominance."
+    },
+    {
+      "id": "STAARBIO-T1-020",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S2",
+      "stem": "The student crosses a pink plant with a white plant. What percent of the offspring are expected to be pink?",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "RW x WW gives RW and WW in equal numbers, so half the offspring are pink and half are white. No red offspring are possible."
+    },
+    {
+      "id": "STAARBIO-T1-021",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8A Meiosis and genetic diversity",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S2",
+      "stem": "The pink parent plants each made gametes by meiosis. Each gamete carried:",
+      "options": [
+        "no alleles for flower color",
+        "both copies of every chromosome",
+        "two alleles for flower color",
+        "one allele for flower color"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Meiosis halves the chromosome number, so each gamete gets one chromosome of each pair and one allele of each gene. Fertilization restores two alleles."
+    },
+    {
+      "id": "STAARBIO-T1-022",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The forelimbs of a human, a bat and a whale have the same arrangement of bones but are used for different tasks. These structures are evidence of common ancestry because they are:",
+      "options": [
+        "vestigial structures",
+        "acquired traits",
+        "homologous structures",
+        "analogous structures"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Homologous structures share an underlying pattern inherited from a common ancestor, even when their uses differ. Analogous structures, such as bird and insect wings, do similar jobs but have different origins."
+    },
+    {
+      "id": "STAARBIO-T1-023",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The amino acid sequence of a protein is compared across species. Which result suggests two species share the most recent common ancestor?",
+      "options": [
+        "Their sequences are most alike",
+        "They are the same size",
+        "They live in the same habitat",
+        "Their sequences are the longest"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Differences in DNA and protein sequences build up over time after species split, so species with the fewest differences most likely shared an ancestor more recently."
+    },
+    {
+      "id": "STAARBIO-T1-024",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9B Rates of change in the fossil record",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Fossils of a group of marine animals show almost no change in body form over millions of years, then several new forms appear in a short span of rock layers. Which two patterns does this record show?",
+      "options": [
+        "Steady change in every layer",
+        "Abrupt appearance followed by gradualism",
+        "Gradualism followed by extinction",
+        "Stasis followed by abrupt appearance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Long periods with little change are called stasis, and new forms showing up quickly in the record are called abrupt appearance. Gradualism would show slow, steady change through many layers."
+    },
+    {
+      "id": "STAARBIO-T1-025",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10A Natural selection acts on populations",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A student says, \"A rabbit grew thicker fur during a cold winter, so its babies will have thicker fur.\" Why is this not an example of natural selection?",
+      "options": [
+        "Rabbits cannot grow thicker fur in winter",
+        "Traits gained in life are not inherited",
+        "Cold weather changes the rabbit's DNA",
+        "Natural selection only affects plants"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Natural selection changes the frequency of inherited traits in a population over generations. A trait an individual develops during its life is not passed on in its genes."
+    },
+    {
+      "id": "STAARBIO-T1-026",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10B Elements of natural selection",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which condition is necessary for natural selection to change a population?",
+      "options": [
+        "Resources never run out",
+        "All offspring survive to reproduce",
+        "Inherited traits vary",
+        "Every individual has the same traits"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Selection needs inherited variation to act on. If every individual were the same, or every offspring survived, no trait would be favored."
+    },
+    {
+      "id": "STAARBIO-T1-027",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10B Elements of natural selection",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In a forest, only a few seeds of each tree grow into adult trees. How does this fact contribute to natural selection?",
+      "options": [
+        "It stops trees from making seeds",
+        "It lets all trees reproduce equally",
+        "Some trees outcompete others",
+        "It keeps every tree identical"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Organisms make more offspring than resources can support, so they compete. Those with helpful inherited traits survive and reproduce more, passing those traits on."
+    },
+    {
+      "id": "STAARBIO-T1-028",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10C Natural selection and speciation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A river changes course and splits a population of mice into two groups. Over many generations, the groups can no longer interbreed. What process has occurred?",
+      "options": [
+        "Stasis",
+        "Genetic drift only",
+        "Artificial selection",
+        "Speciation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Separation prevents gene flow, and each group changes as natural selection acts in its own environment. When they can no longer produce fertile offspring together, a new species has formed."
+    },
+    {
+      "id": "STAARBIO-T1-029",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10D Other evolutionary mechanisms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A storm kills most of a small population of lizards at random, and the survivors happen to have mostly one tail color. Which mechanism changed the population's gene pool?",
+      "options": [
+        "Genetic drift",
+        "Recombination",
+        "Gene flow",
+        "Natural selection"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A random event that changes allele frequencies, especially in a small population, is genetic drift. Tail color did not affect who survived, so it was not selection."
+    },
+    {
+      "id": "STAARBIO-T1-030",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13B Matter and energy through trophic levels",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S3",
+      "stem": "About how much energy is most likely stored in the hawks each year?",
+      "options": [
+        "2",
+        "20",
+        "100",
+        "200"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Each level in this model holds about 10% of the level below it: 20,000, 2,000, 200. So the hawks hold about 10% of 200, or 20 kilocalories per square meter."
+    },
+    {
+      "id": "STAARBIO-T1-031",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13B Matter and energy through trophic levels",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S3",
+      "stem": "What happens to most of the energy that is not passed from the grasshoppers to the mice?",
+      "options": [
+        "It is stored in the soil forever",
+        "It is passed straight to the hawks",
+        "It is turned back into sunlight",
+        "It is lost as heat"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Organisms use most of the energy they take in for movement, growth and keeping warm, and it leaves as heat during respiration. Energy flows one way and is not recycled."
+    },
+    {
+      "id": "STAARBIO-T1-032",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13B Matter and energy through trophic levels",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "STAARBIO-T1-S3",
+      "stem": "A disease kills most of the grasshoppers. What is the most likely effect on the food chain?",
+      "options": [
+        "The hawks increase",
+        "The grasses decline",
+        "Nothing else in the chain changes",
+        "Mice and hawks decline"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "With fewer grasshoppers, less energy reaches the mice, so their numbers fall, and so do the hawks that eat them. The grasses would likely increase with fewer grazers."
+    },
+    {
+      "id": "STAARBIO-T1-033",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13A Ecological relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Clownfish live among the stinging tentacles of sea anemones, which protect them from predators. The clownfish clean the anemone and drive away fish that eat it. This relationship is:",
+      "options": [
+        "predation",
+        "parasitism",
+        "mutualism",
+        "commensalism"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Both species benefit, so the relationship is mutualism. In commensalism one benefits and the other is unaffected, and in parasitism one is harmed."
+    },
+    {
+      "id": "STAARBIO-T1-034",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13C Carbon and nitrogen cycles",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Bacteria in the roots of bean plants change nitrogen gas from the air into a form plants can use. Why is this important to ecosystems?",
+      "options": [
+        "Plants need nitrogen gas to photosynthesize",
+        "Plants cannot use nitrogen gas directly",
+        "It makes carbon dioxide for plants",
+        "It removes all nitrogen from the soil"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Nitrogen gas makes up most of the air, but plants can absorb only fixed forms such as ammonium and nitrate. Nitrogen-fixing bacteria make nitrogen available to food webs."
+    },
+    {
+      "id": "STAARBIO-T1-035",
+      "section": "bio",
+      "test": 1,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13D Environmental change and biodiversity",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A forest with many tree species is compared with a farm planted with one crop. A new plant disease arrives. Why is the forest more likely to stay stable?",
+      "options": [
+        "One species does all the work there",
+        "It has fewer kinds of organisms",
+        "Disease cannot spread among trees",
+        "Its many species limit the spread"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "When many species fill similar roles, losing one does not collapse the system, and a disease that attacks one species cannot spread to all. A field of one crop can be wiped out."
+    },
+    {
+      "id": "STAARBIO-T2-001",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5A Biomolecules",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A protein's function depends most directly on its:",
+      "options": [
+        "fatty acid chain length",
+        "number of glucose units",
+        "three-dimensional shape",
+        "amount of stored energy"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The sequence of amino acids folds into a specific shape, and that shape lets a protein bind the molecules it acts on. Glucose units build carbohydrates and fatty acids build lipids."
+    },
+    {
+      "id": "STAARBIO-T2-002",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5A Biomolecules",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which biomolecule stores the instructions a cell uses to build its proteins?",
+      "options": [
+        "Cellulose",
+        "Glycogen",
+        "DNA",
+        "Cholesterol"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "DNA is a nucleic acid whose sequence of bases codes for proteins. Glycogen and cellulose are carbohydrates, and cholesterol is a lipid found in membranes."
+    },
+    {
+      "id": "STAARBIO-T2-003",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which structure is found in both prokaryotic and eukaryotic cells?",
+      "options": [
+        "Golgi apparatus",
+        "Ribosomes",
+        "A nucleus",
+        "Mitochondria"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Every cell makes proteins, so both cell types have ribosomes, though prokaryotic ribosomes are smaller. A nucleus, mitochondria and a Golgi apparatus are membrane-bound structures found only in eukaryotes."
+    },
+    {
+      "id": "STAARBIO-T2-004",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5D Viruses",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "HIV infects helper T cells, a type of white blood cell. Over time this makes a person more likely to develop other infections because:",
+      "options": [
+        "red blood cells stop carrying oxygen",
+        "the virus turns T cells into bacteria",
+        "the body loses immune cells",
+        "the virus attacks the skin directly"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each new virus made inside a helper T cell destroys it, and helper T cells coordinate the immune response. As their number falls, the body cannot fight off infections it would normally control."
+    },
+    {
+      "id": "STAARBIO-T2-005",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6A Cell cycle and DNA replication",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Each new DNA molecule made in replication contains one strand from the original molecule and one new strand. This model is called:",
+      "options": [
+        "conservative replication",
+        "dispersive replication",
+        "semiconservative replication",
+        "random replication"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In the semiconservative model each parent strand serves as a template, so each daughter molecule keeps one old strand. The conservative model would keep the original double helix whole."
+    },
+    {
+      "id": "STAARBIO-T2-006",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6B Cell differentiation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Some turtle eggs develop into males at cooler temperatures and females at warmer temperatures. This shows that:",
+      "options": [
+        "temperature changes the DNA sequence",
+        "egg cells cannot differentiate",
+        "only females have differentiated cells",
+        "the environment affects development"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Temperature during development changes which genes are expressed, so the same genetic makeup can become either sex. The DNA sequence of the eggs is not changed."
+    },
+    {
+      "id": "STAARBIO-T2-007",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6C Cell cycle disruptions and cancer",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which statement best describes cancer cells?",
+      "options": [
+        "They divide without control",
+        "They stop dividing entirely",
+        "They contain no DNA at all",
+        "They divide only by meiosis"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Cancer cells have mutations that let them ignore the signals and checkpoints that normally regulate the cell cycle, so they divide again and again and can form tumors."
+    },
+    {
+      "id": "STAARBIO-T2-008",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which equation summarizes photosynthesis?",
+      "options": [
+        "6CO2 + 6H2O + light -> C6H12O6 + 6O2",
+        "6O2 + 6H2O + light -> C6H12O6 + 6CO2",
+        "C6H12O6 + 6O2 -> 6CO2 + 6H2O + energy",
+        "C6H12O6 -> 2C2H5OH + 2CO2 + energy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Photosynthesis uses light energy to turn carbon dioxide and water into glucose and oxygen. The reverse equation is cellular respiration, and the last one is fermentation."
+    },
+    {
+      "id": "STAARBIO-T2-009",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 2,
+      "format": "multi",
+      "stem": "Which two substances are products of cellular respiration? Choose two.",
+      "options": [
+        "Glucose",
+        "Oxygen",
+        "Chlorophyll",
+        "Water",
+        "Carbon dioxide"
+      ],
+      "correct": [
+        3,
+        4
+      ],
+      "select": 2,
+      "explanation": "Cellular respiration breaks down glucose using oxygen and releases carbon dioxide, water and energy stored in ATP. Glucose and oxygen are the reactants."
+    },
+    {
+      "id": "STAARBIO-T2-010",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "An enzyme from the human stomach works best at pH 2. If it is moved to a solution at pH 8, it will most likely:",
+      "options": [
+        "make new active sites",
+        "turn into a different enzyme",
+        "work much more slowly",
+        "work much faster"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each enzyme has a pH range where its shape fits its substrate best. Far from that range its shape changes and the reaction slows or stops."
+    },
+    {
+      "id": "STAARBIO-T2-011",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "When a person gets a cut, white blood cells travel to the wound in the blood. This shows the circulatory system working with the:",
+      "options": [
+        "skeletal system",
+        "immune system",
+        "digestive system",
+        "reproductive system"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The immune system defends against pathogens that enter through the wound, and the circulatory system carries its white blood cells there. Defense from injury and illness depends on both."
+    },
+    {
+      "id": "STAARBIO-T2-012",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A plant's stem bends toward light coming from a window. Which statement best explains this response?",
+      "options": [
+        "The leaves pull the stem toward the light",
+        "Water leaves the stem through the flowers",
+        "A hormone lengthens cells on the shaded side",
+        "Light pulls water into the stem's lit side"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Plant hormones called auxins collect on the shaded side of the stem and make those cells elongate, so the stem curves toward the light. This response is called phototropism."
+    },
+    {
+      "id": "STAARBIO-T2-013",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Some flowers are brightly colored and make nectar. These structures help the plant reproduce mainly by:",
+      "options": [
+        "making sugar from sunlight",
+        "attracting pollinators",
+        "protecting seeds from cold",
+        "absorbing water from the soil"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Pollinators such as bees visit flowers for nectar and carry pollen from one flower to another, which allows fertilization. Absorbing water is a job of the roots."
+    },
+    {
+      "id": "STAARBIO-T2-014",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7C Changes in DNA",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S1",
+      "stem": "Which mutant version makes a protein identical to the normal protein?",
+      "options": [
+        "Mutant 2",
+        "Mutant 1",
+        "None of the mutants",
+        "Mutant 3"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In Mutant 3, GAA became GAG, and both codons code for glutamic acid, so the protein is unchanged. Mutant 1 swaps glutamic acid for valine."
+    },
+    {
+      "id": "STAARBIO-T2-015",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7B Gene expression and protein synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S1",
+      "stem": "How many amino acids are in the protein made from the normal gene?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Methionine, glutamic acid, proline, phenylalanine and glycine make 5 amino acids. UAA is a stop codon, which ends translation without adding an amino acid."
+    },
+    {
+      "id": "STAARBIO-T2-016",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7C Changes in DNA",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S1",
+      "stem": "Which change best describes Mutant 2?",
+      "options": [
+        "An insertion causing a frameshift",
+        "A silent change in one codon",
+        "A deletion of a whole codon",
+        "A substitution of a single amino acid"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "An extra U after the second codon shifts every codon after it, so every amino acid from that point is likely to change. A frameshift usually changes a protein more than a substitution does."
+    },
+    {
+      "id": "STAARBIO-T2-017",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7A Components of DNA",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Some scientists propose that early life stored its genetic information in RNA before DNA. Which observation supports this idea?",
+      "options": [
+        "RNA is always double stranded",
+        "RNA contains the base thymine",
+        "RNA is found only in viruses",
+        "Some RNA can act as an enzyme"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Because some RNA molecules act as catalysts as well as carrying information, RNA could have done both jobs before DNA and proteins took them over. RNA is usually single stranded and contains uracil, not thymine."
+    },
+    {
+      "id": "STAARBIO-T2-018",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8A Meiosis and genetic diversity",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During meiosis, homologous chromosomes exchange segments. How does this crossing-over affect a population?",
+      "options": [
+        "It increases genetic variation",
+        "It doubles the chromosome number",
+        "It prevents any new traits",
+        "It makes offspring identical to parents"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Crossing-over creates chromosomes with new combinations of alleles, so offspring differ from each other and from their parents. More variation in a population helps it survive change."
+    },
+    {
+      "id": "STAARBIO-T2-019",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Blood type is controlled by three alleles, A, B and O, with A and B codominant and O recessive. A parent with type AB blood and a parent with type O blood can have children with which blood types?",
+      "options": [
+        "A, B, AB or O",
+        "O only",
+        "A or B only",
+        "AB or O only"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The AB parent passes A or B, and the OO parent passes O, so children are AO (type A) or BO (type B). No child can be AB or O."
+    },
+    {
+      "id": "STAARBIO-T2-020",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Color blindness is caused by a recessive allele on the X chromosome. A woman who carries the allele has children with a man who has normal vision. What fraction of their sons are expected to be color blind?",
+      "options": [
+        "0",
+        "1/4",
+        "1/2",
+        "1"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Sons get their X chromosome from their mother, and a carrier mother passes the allele half the time. The father gives sons a Y, which does not carry the gene."
+    },
+    {
+      "id": "STAARBIO-T2-021",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In pea plants, yellow seeds (Y) are dominant to green (y), and round seeds (R) are dominant to wrinkled (r). Two plants that are YyRr are crossed. What fraction of the offspring are expected to have green, wrinkled seeds?",
+      "options": [
+        "1/16",
+        "3/16",
+        "1/4",
+        "9/16"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Green needs yy (1/4) and wrinkled needs rr (1/4). The genes sort independently, so 1/4 x 1/4 = 1/16. Yellow, round is 9/16."
+    },
+    {
+      "id": "STAARBIO-T2-022",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Australia has many marsupial species found nowhere else, even though other continents have similar habitats. This pattern is best explained by:",
+      "options": [
+        "evolution after Australia was isolated",
+        "marsupials being unable to live elsewhere",
+        "all habitats producing the same species",
+        "marsupials arriving very recently"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Biogeography, the study of where species live, shows that isolated regions develop their own groups of related species descended from shared ancestors in that region."
+    },
+    {
+      "id": "STAARBIO-T2-023",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Early embryos of fish, chickens and humans all have similar structures, including pharyngeal pouches and a tail. This developmental homology suggests that these animals:",
+      "options": [
+        "will develop the same adult form",
+        "live in the same environment",
+        "eat the same kinds of food",
+        "share a common ancestor"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Shared patterns in early development are evidence that the species inherited the same developmental genes from a common ancestor. Their adult forms are very different."
+    },
+    {
+      "id": "STAARBIO-T2-024",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9B Rates of change in the fossil record",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A series of fossils shows a horse-like animal's leg bones changing slowly and steadily through many rock layers. This pattern supports the explanation of:",
+      "options": [
+        "abrupt appearance",
+        "mass extinction",
+        "stasis",
+        "gradualism"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Gradualism describes slow, continuous change over long periods, seen as small steps between layers. Stasis would show little change."
+    },
+    {
+      "id": "STAARBIO-T2-025",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10A Natural selection acts on populations",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S2",
+      "stem": "What happened to the share of dark beetles in the population from year 0 to year 6?",
+      "options": [
+        "It rose from 10% to about 79%",
+        "It fell from 90% to about 21%",
+        "It rose from 50% to 100%",
+        "It stayed near 50% the whole time"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Dark beetles were 50 of 500 at year 0 (10%) and 260 of 330 at year 6 (about 79%). The population changed, not individual beetles."
+    },
+    {
+      "id": "STAARBIO-T2-026",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10B Elements of natural selection",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S2",
+      "stem": "Which explanation best accounts for the change in beetle colors?",
+      "options": [
+        "Dark beetles laid all the eggs",
+        "Light beetles turned dark to hide",
+        "Birds ate more of the light beetles",
+        "Dark soil caused mutations in the beetles"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "On darkened soil, light beetles were easier for birds to see. Dark beetles survived and reproduced more, so the inherited dark color became more common."
+    },
+    {
+      "id": "STAARBIO-T2-027",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10B Elements of natural selection",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S2",
+      "stem": "Which part of the scenario shows that the population produces more offspring than can survive?",
+      "options": [
+        "Beetle color is inherited",
+        "Birds eat beetles they can see easily",
+        "The soil changed color after a fire",
+        "More eggs are laid than survive"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Overproduction is the statement that more eggs are laid than survive to adulthood. Inheritance and predation are other parts of the explanation."
+    },
+    {
+      "id": "STAARBIO-T2-028",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10D Other evolutionary mechanisms",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S2",
+      "stem": "Dark beetles from a nearby burned area begin moving into this population. Which mechanism does this add?",
+      "options": [
+        "Stasis",
+        "Gene flow",
+        "Genetic drift",
+        "Speciation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Gene flow is the movement of alleles into or out of a population when individuals migrate. Here it would add more dark-color alleles."
+    },
+    {
+      "id": "STAARBIO-T2-029",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10C Natural selection and speciation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Two populations of frogs live in the same pond, but one mates in early spring and the other in late spring. Over time they become separate species. What kept them from interbreeding?",
+      "options": [
+        "Living in the same pond",
+        "A mountain between them",
+        "Identical mating calls",
+        "Different breeding times"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Mating at different times is a reproductive barrier even without a physical barrier. With no gene flow, the populations can change separately until they become separate species."
+    },
+    {
+      "id": "STAARBIO-T2-030",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13A Ecological relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S3",
+      "stem": "Which relationship between wolves and elk is shown in the data?",
+      "options": [
+        "Predation",
+        "Parasitism",
+        "Commensalism",
+        "Mutualism"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Wolves hunt and eat elk, so this is predation. As the wolf population grew, the elk population fell from 16,000 to 7,000."
+    },
+    {
+      "id": "STAARBIO-T2-031",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13D Environmental change and biodiversity",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S3",
+      "stem": "Why did the number of young willows rise after wolves returned?",
+      "options": [
+        "Elk began to protect the willows",
+        "Fewer elk ate the young trees",
+        "Willows grew better in cold years",
+        "Wolves planted willow seeds"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Elk eat young willows. With fewer elk grazing along streams, more young trees survived. A change at one trophic level affected the producers below it."
+    },
+    {
+      "id": "STAARBIO-T2-032",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13D Environmental change and biodiversity",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "STAARBIO-T2-S3",
+      "stem": "Willows shade streams and provide food for beavers. What is the most likely long-term effect of the willows' recovery?",
+      "options": [
+        "Fewer species can live along the streams",
+        "The elk will become extinct",
+        "More species can live along the streams",
+        "The wolves will start eating willows"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Restored plants provide food and habitat, so more kinds of organisms can live there. Higher biodiversity makes the ecosystem more stable."
+    },
+    {
+      "id": "STAARBIO-T2-033",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13A Ecological relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Barnacles attach to the skin of a whale and are carried to places with food. The whale is neither helped nor harmed. This is an example of:",
+      "options": [
+        "parasitism",
+        "mutualism",
+        "competition",
+        "commensalism"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "One species benefits and the other is unaffected, which is commensalism. If the barnacles harmed the whale, it would be parasitism."
+    },
+    {
+      "id": "STAARBIO-T2-034",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13C Carbon and nitrogen cycles",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Burning large amounts of coal, oil and gas affects the carbon cycle mainly by:",
+      "options": [
+        "turning carbon into nitrogen",
+        "adding carbon dioxide to the air",
+        "storing more carbon in the ground",
+        "removing carbon dioxide from the air"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fossil fuels hold carbon stored over millions of years. Burning them releases it as carbon dioxide faster than photosynthesis and the oceans can take it up."
+    },
+    {
+      "id": "STAARBIO-T2-035",
+      "section": "bio",
+      "test": 2,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13B Matter and energy through trophic levels",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Why are there usually far fewer top predators than producers in an ecosystem?",
+      "options": [
+        "Energy increases up the food chain",
+        "Top predators need less energy",
+        "Energy drops at each level",
+        "Producers eat the top predators"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Only about a tenth of the energy at one level is passed to the next, so the top of a food chain has very little energy to support a population."
+    },
+    {
+      "id": "STAARBIO-D-001",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5A Biomolecules",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which biomolecule do cells use as their main short-term source of energy?",
+      "options": [
+        "Waxes",
+        "Carbohydrates",
+        "Proteins",
+        "Nucleic acids"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sugars such as glucose are broken down quickly in cellular respiration to make ATP. Proteins can supply energy but are mainly used for structure and function, and nucleic acids carry information."
+    },
+    {
+      "id": "STAARBIO-D-002",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5A Biomolecules",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Enzymes, antibodies and the channels that move ions across membranes are all made of:",
+      "options": [
+        "nucleic acids",
+        "carbohydrates",
+        "lipids",
+        "proteins"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Each of these jobs depends on a molecule with a precise shape, and proteins are the biomolecules folded into specific shapes from chains of amino acids."
+    },
+    {
+      "id": "STAARBIO-D-003",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5A Biomolecules",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Plant cell walls stay rigid largely because they contain:",
+      "options": [
+        "phospholipids",
+        "RNA",
+        "cellulose",
+        "glycogen"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Cellulose is a carbohydrate made of long glucose chains that form strong fibers. Glycogen is the storage carbohydrate of animals and fungi, not a structural one."
+    },
+    {
+      "id": "STAARBIO-D-004",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5A Biomolecules",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A seal has a thick layer of fat under its skin. Besides storing energy, this lipid layer helps the seal:",
+      "options": [
+        "stay warm in cold water",
+        "copy its genetic information",
+        "speed up chemical reactions",
+        "carry oxygen in its blood"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Fat is a poor conductor of heat, so it insulates the body as well as storing a large amount of energy. Hemoglobin, a protein, carries oxygen, and enzymes speed up reactions."
+    },
+    {
+      "id": "STAARBIO-D-005",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5A Biomolecules",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Heating an enzyme to a high temperature changes its shape but not its sequence of amino acids. Which level of structure was disrupted?",
+      "options": [
+        "Its genetic code",
+        "Its sugar units",
+        "Its peptide bonds",
+        "Its folding"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Heat breaks the weak bonds that hold the chain in its folded shape, a change called denaturation. The peptide bonds linking amino acids stay intact, which is why the sequence is unchanged."
+    },
+    {
+      "id": "STAARBIO-D-006",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A cell with a nucleus, mitochondria and an endoplasmic reticulum is a:",
+      "options": [
+        "prokaryotic cell",
+        "virus particle",
+        "eukaryotic cell",
+        "bacterial cell"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Membrane-bound organelles such as the nucleus and mitochondria are found only in eukaryotic cells. Bacteria are prokaryotes, and a virus is not a cell."
+    },
+    {
+      "id": "STAARBIO-D-007",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In a prokaryotic cell, where is most of the DNA found?",
+      "options": [
+        "Inside the mitochondria",
+        "In the cytoplasm",
+        "In the cell wall",
+        "Inside a membrane-bound nucleus"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Prokaryotes have no nucleus, so their circular chromosome sits in a region of the cytoplasm called the nucleoid. A nucleus surrounded by a membrane is a eukaryotic feature."
+    },
+    {
+      "id": "STAARBIO-D-008",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which statement best compares prokaryotic and eukaryotic cells?",
+      "options": [
+        "Prokaryotic cells have more organelles",
+        "Eukaryotic cells are usually larger",
+        "Only eukaryotic cells have DNA",
+        "Only prokaryotic cells have membranes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Eukaryotic cells are typically about 10 times larger across and divide their work among membrane-bound organelles. Both cell types have DNA and a cell membrane."
+    },
+    {
+      "id": "STAARBIO-D-009",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Chloroplasts have two membranes, their own DNA and ribosomes like those of bacteria. These facts are best explained by the idea that chloroplasts:",
+      "options": [
+        "are viruses living inside plant cells",
+        "were made by the cell's nucleus",
+        "came from engulfed bacteria",
+        "formed from folds of the cell membrane"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Endosymbiotic theory explains a double membrane, separate DNA and bacteria-like ribosomes as signs that an ancestral cell took in a photosynthetic prokaryote. The infolding explanation accounts for organelles such as the endoplasmic reticulum, which have no DNA of their own."
+    },
+    {
+      "id": "STAARBIO-D-010",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which structure would you find in a plant cell but not in a bacterium?",
+      "options": [
+        "Ribosome",
+        "Cell membrane",
+        "Chloroplast",
+        "Cell wall"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bacteria also have a cell wall, ribosomes and a cell membrane. Chloroplasts are membrane-bound organelles, so only eukaryotes such as plants and algae have them."
+    },
+    {
+      "id": "STAARBIO-D-011",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5B Prokaryotic and eukaryotic cells",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A eukaryotic cell can carry out many different reactions at the same time without them interfering. This is mainly because:",
+      "options": [
+        "its DNA floats freely in the cell",
+        "its cytoplasm has no enzymes",
+        "membranes separate its parts",
+        "it makes no proteins at all"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Organelles surrounded by membranes keep different conditions and enzymes in separate spaces, such as digestive enzymes inside lysosomes. This compartmentalization is one reason eukaryotic cells can be large and complex."
+    },
+    {
+      "id": "STAARBIO-D-012",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5D Viruses",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A virus is made of genetic material surrounded by:",
+      "options": [
+        "a cell wall",
+        "a cytoplasm",
+        "a protein coat",
+        "a nuclear envelope"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A virus particle has DNA or RNA inside a protein coat called a capsid, and some also have an outer envelope. It has no cytoplasm, nucleus or cell wall."
+    },
+    {
+      "id": "STAARBIO-D-013",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5D Viruses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Why are viruses not considered living cells?",
+      "options": [
+        "They are made of cellulose",
+        "They contain no genetic material",
+        "They copy only inside a host cell",
+        "They are larger than most bacteria"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A virus has no ribosomes or metabolism of its own, so it can only be copied by taking over a host cell. Viruses do carry DNA or RNA, and most are far smaller than bacteria."
+    },
+    {
+      "id": "STAARBIO-D-014",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5D Viruses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A flu virus attaches only to cells lining the airways. What explains why it infects those cells and not others?",
+      "options": [
+        "Its proteins fit their receptors",
+        "Only those cells contain DNA",
+        "Other cells have cell walls",
+        "It is too large to enter other cells"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A virus enters a cell when its surface proteins bind specific receptor molecules on the host cell. Cells without the matching receptors are not infected."
+    },
+    {
+      "id": "STAARBIO-D-015",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5D Viruses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Washing hands often during flu season reduces the spread of the virus mainly because it:",
+      "options": [
+        "removes virus particles from the skin",
+        "changes the virus into a harmless cell",
+        "makes the body produce more antibiotics",
+        "kills the bacteria that carry the virus"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Many viruses spread when hands pick up particles from surfaces or coughs and then touch the face. Washing removes those particles. Viruses are not carried by bacteria, and the body does not make antibiotics."
+    },
+    {
+      "id": "STAARBIO-D-016",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCells",
+      "skill": "B.5D Viruses",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two features do viruses and cells share? Choose two.",
+      "options": [
+        "Both carry genetic material",
+        "Both have ribosomes",
+        "Both divide by mitosis",
+        "Both make their own ATP",
+        "Both contain proteins"
+      ],
+      "correct": [
+        0,
+        4
+      ],
+      "select": 2,
+      "explanation": "Viruses have DNA or RNA and a protein coat, so they share genetic material and proteins with cells. They make no ATP, have no ribosomes and are copied inside a host, not divided by mitosis."
+    },
+    {
+      "id": "STAARBIO-D-017",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6A Cell cycle and DNA replication",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the main role of mitosis in a multicellular organism?",
+      "options": [
+        "Changing the DNA sequence",
+        "Breaking down food for energy",
+        "Growth and repair of the body",
+        "Making egg and sperm cells"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Mitosis produces two daughter cells with the same chromosomes as the parent, which lets an organism grow and replace damaged cells. Gametes are made by meiosis."
+    },
+    {
+      "id": "STAARBIO-D-018",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6A Cell cycle and DNA replication",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In which phase of mitosis do the sister chromatids separate and move to opposite ends of the cell?",
+      "options": [
+        "Anaphase",
+        "Prophase",
+        "Telophase",
+        "Metaphase"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In anaphase the sister chromatids are pulled apart toward opposite poles. In metaphase they line up across the middle of the cell, and in telophase new nuclei form."
+    },
+    {
+      "id": "STAARBIO-D-019",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6A Cell cycle and DNA replication",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A cell with 46 chromosomes completes mitosis. How many chromosomes does each daughter cell have?",
+      "options": [
+        "23",
+        "46",
+        "69",
+        "92"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Mitosis keeps the chromosome number the same, so each daughter cell gets 46. Halving to 23 happens in meiosis."
+    },
+    {
+      "id": "STAARBIO-D-020",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6A Cell cycle and DNA replication",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The longest part of the cell cycle for most cells, when the cell grows and carries out its normal work, is:",
+      "options": [
+        "metaphase",
+        "interphase",
+        "cytokinesis",
+        "anaphase"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A cell spends most of its life in interphase, which includes growth and the copying of DNA. Mitosis and cytokinesis are short by comparison."
+    },
+    {
+      "id": "STAARBIO-D-021",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6A Cell cycle and DNA replication",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Before replication, a DNA molecule is labeled so both strands are heavy. It then copies once in a medium with only light nucleotides. If replication is semiconservative, each new molecule will be:",
+      "options": [
+        "fully light",
+        "a heavy-light hybrid",
+        "a random mix of pieces",
+        "fully heavy"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each new molecule keeps one heavy parent strand and builds one light strand, so every molecule is a hybrid. A fully heavy molecule would only appear under the conservative model."
+    },
+    {
+      "id": "STAARBIO-D-022",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6A Cell cycle and DNA replication",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Why must a cell copy its DNA before it divides by mitosis?",
+      "options": [
+        "So the new cells have half the DNA",
+        "So each new cell gets all the genes",
+        "So the cell can make more mitochondria",
+        "So the DNA can change its sequence"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Replication makes two identical copies of each chromosome, and mitosis gives one copy to each daughter cell, so both have complete genetic information."
+    },
+    {
+      "id": "STAARBIO-D-023",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6B Cell differentiation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The process by which an unspecialized cell becomes a specific type of cell, such as a muscle cell, is called:",
+      "options": [
+        "differentiation",
+        "replication",
+        "mutation",
+        "fertilization"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Differentiation is the change from a general cell to a specialized one with a particular structure and job. Replication is the copying of DNA."
+    },
+    {
+      "id": "STAARBIO-D-024",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6B Cell differentiation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Why are stem cells useful to scientists studying how to repair damaged tissue?",
+      "options": [
+        "They never divide",
+        "They are already fully specialized",
+        "They can become many cell types",
+        "They have more DNA than other cells"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Stem cells are unspecialized and can differentiate into different kinds of cells, so they could replace cells lost to injury or disease."
+    },
+    {
+      "id": "STAARBIO-D-025",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6B Cell differentiation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Hydrangea plants with the same genes grow blue flowers in acidic soil and pink flowers in less acidic soil. The difference is caused by:",
+      "options": [
+        "cell division",
+        "a mutation",
+        "different DNA",
+        "the environment"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The plants share their genes, so the color difference comes from soil conditions that affect how flower cells develop and which pigments they show."
+    },
+    {
+      "id": "STAARBIO-D-026",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6B Cell differentiation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In a developing embryo, cells on one side receive a chemical signal that cells on the other side do not. The signal most likely causes the cells that receive it to:",
+      "options": [
+        "turn on a different set of genes",
+        "lose some of their chromosomes",
+        "become identical to the other cells",
+        "stop copying their DNA forever"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Signals from neighboring cells are one of the environmental factors that direct differentiation by turning certain genes on or off. They do not remove chromosomes."
+    },
+    {
+      "id": "STAARBIO-D-027",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6C Cell cycle disruptions and cancer",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A mass of cells that forms when cells divide uncontrollably is called a:",
+      "options": [
+        "organ",
+        "tumor",
+        "tissue",
+        "gamete"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Uncontrolled division makes an abnormal mass called a tumor, which may be benign or cancerous. Tissues and organs form from normal, regulated division and differentiation."
+    },
+    {
+      "id": "STAARBIO-D-028",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6C Cell cycle disruptions and cancer",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which factor increases the risk of cancer by damaging DNA in skin cells?",
+      "options": [
+        "Normal body temperature",
+        "Getting enough sleep",
+        "Drinking clean water",
+        "Ultraviolet light"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "UV radiation can damage DNA. If the damage hits genes that control the cell cycle and is not repaired, cells may begin dividing without control."
+    },
+    {
+      "id": "STAARBIO-D-029",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6C Cell cycle disruptions and cancer",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Many cancer drugs work by stopping cells from completing mitosis. Why do these drugs also cause side effects such as hair loss?",
+      "options": [
+        "Hair cells contain no DNA",
+        "The drugs change hair cells' genes",
+        "Hair is made by cancer cells",
+        "Hair cells also divide rapidly"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "These drugs target any rapidly dividing cell, and cells in hair follicles divide often. The drugs cannot tell those normal dividing cells from cancer cells."
+    },
+    {
+      "id": "STAARBIO-D-030",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioCellCycle",
+      "skill": "B.6C Cell cycle disruptions and cancer",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two changes could lead to uncontrolled cell division? Choose two.",
+      "options": [
+        "A checkpoint protein that stops working",
+        "A growth signal that stays switched on",
+        "A cell that dies after DNA damage",
+        "A cell that pauses to repair its DNA",
+        "A cell that stops at its normal size"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "select": 2,
+      "explanation": "Cancer can result when signals that tell a cell to divide are always active or when the checks that stop division are lost. Pausing to repair, cell death after damage and stopping at a normal size are all normal controls."
+    },
+    {
+      "id": "STAARBIO-D-031",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In which organelle does photosynthesis take place?",
+      "options": [
+        "Ribosome",
+        "Mitochondrion",
+        "Nucleus",
+        "Chloroplast"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Chloroplasts contain chlorophyll, which absorbs light energy for photosynthesis. Mitochondria are where most of cellular respiration happens."
+    },
+    {
+      "id": "STAARBIO-D-032",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Most of the ATP made in cellular respiration is produced in the:",
+      "options": [
+        "mitochondria",
+        "vacuole",
+        "chloroplasts",
+        "cell wall"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The later stages of aerobic respiration take place in the mitochondria and produce most of the ATP. Chloroplasts carry out photosynthesis."
+    },
+    {
+      "id": "STAARBIO-D-033",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The energy stored in glucose made by a plant originally came from:",
+      "options": [
+        "oxygen",
+        "the soil",
+        "water",
+        "sunlight"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Photosynthesis converts light energy into chemical energy held in the bonds of glucose. Water and carbon dioxide supply the atoms, not the energy."
+    },
+    {
+      "id": "STAARBIO-D-034",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The oxygen gas that plants release during photosynthesis comes from:",
+      "options": [
+        "the plant's cell walls",
+        "carbon dioxide in the soil",
+        "split water molecules",
+        "glucose that is broken down"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "During the light-dependent reactions, water is split, and its oxygen is released as oxygen gas. The carbon dioxide is used to build glucose."
+    },
+    {
+      "id": "STAARBIO-D-035",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Why do plant cells need mitochondria even though they have chloroplasts?",
+      "options": [
+        "To make glucose from carbon dioxide",
+        "To store water for the cell",
+        "To release energy from glucose as ATP",
+        "To absorb sunlight for photosynthesis"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Chloroplasts make glucose, but plant cells, like animal cells, must break glucose down in cellular respiration to make the ATP that powers their work."
+    },
+    {
+      "id": "STAARBIO-D-036",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A plant takes in 6 molecules of carbon dioxide and 6 of water to make glucose. How many carbon atoms are in the glucose made?",
+      "options": [
+        "6",
+        "12",
+        "18",
+        "24"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Matter is conserved: the 6 carbon atoms from 6 CO2 end up in one glucose molecule, C6H12O6."
+    },
+    {
+      "id": "STAARBIO-D-037",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A sealed jar holds a plant in the dark. Over a day, the carbon dioxide level in the jar rises. This happens because the plant:",
+      "options": [
+        "carries out respiration but not photosynthesis",
+        "turns carbon dioxide into water",
+        "stops all chemical reactions",
+        "carries out photosynthesis but not respiration"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Without light the plant cannot photosynthesize, but it keeps respiring, which releases carbon dioxide. In light, photosynthesis would use carbon dioxide faster than respiration releases it."
+    },
+    {
+      "id": "STAARBIO-D-038",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11A Photosynthesis and cellular respiration",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "How are photosynthesis and cellular respiration related?",
+      "options": [
+        "Both release oxygen into the air",
+        "Both take place only in animals",
+        "Each uses the other's products",
+        "Both store energy as sunlight"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Photosynthesis makes glucose and oxygen from carbon dioxide and water, and respiration uses glucose and oxygen to make carbon dioxide and water. Matter cycles between the two processes."
+    },
+    {
+      "id": "STAARBIO-D-039",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Enzymes are biomolecules that:",
+      "options": [
+        "supply long-term stored energy",
+        "speed up chemical reactions",
+        "store genetic information",
+        "make up cell membranes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Enzymes are proteins that act as catalysts, speeding up reactions in cells. DNA stores information and lipids form membranes."
+    },
+    {
+      "id": "STAARBIO-D-040",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The part of an enzyme where the substrate binds is called the:",
+      "options": [
+        "cell membrane",
+        "nucleus",
+        "product",
+        "active site"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The substrate fits into the active site, a pocket with a specific shape. A change to that shape stops the substrate from binding."
+    },
+    {
+      "id": "STAARBIO-D-041",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Lactase breaks down the sugar lactose but has no effect on starch. The best explanation is that:",
+      "options": [
+        "starch is not a carbohydrate",
+        "only lactose fits its active site",
+        "starch molecules are too small to bind",
+        "lactase is used up by lactose"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An enzyme is specific because its active site fits the shape of one substrate. Starch is a carbohydrate, but its shape does not match lactase's active site."
+    },
+    {
+      "id": "STAARBIO-D-042",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After an enzyme helps one reaction, what happens to the enzyme?",
+      "options": [
+        "It joins the substrate",
+        "It becomes the product",
+        "It can be used again",
+        "It is broken down"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Catalysts are not consumed, so the enzyme releases the products unchanged and can bind another substrate molecule."
+    },
+    {
+      "id": "STAARBIO-D-043",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A student adds more and more substrate to a fixed amount of enzyme. The reaction rate rises, then levels off. Why does it level off?",
+      "options": [
+        "The enzyme has been used up",
+        "The substrate changed its shape",
+        "The products became enzymes",
+        "All the active sites are in use"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Once every enzyme molecule is working, adding more substrate cannot speed the reaction. The enzyme is not used up; it is simply saturated."
+    },
+    {
+      "id": "STAARBIO-D-044",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Without enzymes, most reactions in cells would:",
+      "options": [
+        "be far too slow for life",
+        "happen too fast to control",
+        "make no products ever",
+        "release no energy at all"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Many cell reactions have a high activation energy and would take far too long at body temperature without enzymes lowering that barrier."
+    },
+    {
+      "id": "STAARBIO-D-045",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEnergy",
+      "skill": "B.11B Enzymes",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two conditions can change the shape of an enzyme and slow its reaction? Choose two.",
+      "options": [
+        "Keeping it at its best temperature",
+        "Using the enzyme twice",
+        "A very high temperature",
+        "Adding more substrate",
+        "A pH far from its best level"
+      ],
+      "correct": [
+        2,
+        4
+      ],
+      "select": 2,
+      "explanation": "Extreme temperature and pH disrupt the bonds that hold an enzyme's shape, which changes the active site. More substrate or reuse does not change the enzyme."
+    },
+    {
+      "id": "STAARBIO-D-046",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Oxygen enters the blood in the lungs and is carried to body cells. Which two systems are involved?",
+      "options": [
+        "Nervous and muscular",
+        "Digestive and integumentary",
+        "Excretory and reproductive",
+        "Respiratory and circulatory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The respiratory system takes in oxygen at the lungs, and the circulatory system moves oxygen-rich blood to cells throughout the body."
+    },
+    {
+      "id": "STAARBIO-D-047",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "When you touch a hot pan, you pull your hand away before you feel pain. Which systems work together in this response?",
+      "options": [
+        "Respiratory and skeletal",
+        "Nervous and muscular",
+        "Immune and excretory",
+        "Digestive and endocrine"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sensory nerves send a signal to the spinal cord, which signals muscles in the arm to contract and pull the hand away. This is a reflex."
+    },
+    {
+      "id": "STAARBIO-D-048",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "On a hot day, a person sweats and blood vessels near the skin widen. These responses help the body:",
+      "options": [
+        "grow new bone tissue",
+        "fight off bacteria in the skin",
+        "keep a stable temperature",
+        "digest food more quickly"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Sweating cools the skin as water evaporates, and wider vessels near the skin release heat. Both are regulation that keeps the internal temperature stable."
+    },
+    {
+      "id": "STAARBIO-D-049",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The hormone FSH from the pituitary gland causes eggs to mature in the ovaries. This is an example of the endocrine system working with the:",
+      "options": [
+        "respiratory system",
+        "digestive system",
+        "skeletal system",
+        "reproductive system"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hormones from the pituitary gland regulate the reproductive organs, so reproduction depends on both systems."
+    },
+    {
+      "id": "STAARBIO-D-050",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Villi are tiny folds lining the small intestine, each with many blood vessels. How do villi help the body?",
+      "options": [
+        "They push food back to the stomach",
+        "They add surface area for absorption",
+        "They make digestive enzymes for the liver",
+        "They store water for the kidneys"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Villi greatly increase the surface area of the intestine wall, and the nearby blood vessels carry the absorbed nutrients away quickly."
+    },
+    {
+      "id": "STAARBIO-D-051",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which body system first blocks most pathogens from entering the body?",
+      "options": [
+        "The muscular system",
+        "The excretory system",
+        "The skeletal system",
+        "The integumentary system"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Unbroken skin, part of the integumentary system, is a physical barrier that keeps most pathogens out. The immune system responds when pathogens get past it."
+    },
+    {
+      "id": "STAARBIO-D-052",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A vaccine contains a weakened or inactive form of a virus. It protects a person because it:",
+      "options": [
+        "prepares the immune system to respond",
+        "kills bacteria already in the body",
+        "replaces the person's white blood cells",
+        "stops the heart from pumping the virus"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The immune system makes antibodies and memory cells against the vaccine, so it can respond quickly if the real virus enters later."
+    },
+    {
+      "id": "STAARBIO-D-053",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12A Interactions of animal systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The kidneys filter wastes from the blood. Which system brings that blood to the kidneys?",
+      "options": [
+        "Digestive system",
+        "Circulatory system",
+        "Skeletal system",
+        "Nervous system"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The circulatory system carries blood through the kidneys, where the excretory system removes wastes and makes urine."
+    },
+    {
+      "id": "STAARBIO-D-054",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Sugars made in the leaves are carried to the roots through:",
+      "options": [
+        "root hairs",
+        "xylem",
+        "phloem",
+        "stomata"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Phloem transports sugars from where they are made to where they are used or stored. Xylem carries water up from the roots."
+    },
+    {
+      "id": "STAARBIO-D-055",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Stomata are small openings on leaves. Guard cells close the stomata on a hot, dry day. This helps the plant:",
+      "options": [
+        "take in more carbon dioxide",
+        "make more pollen",
+        "grow toward the light",
+        "lose less water"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Closing the stomata reduces water loss by evaporation. The trade-off is that less carbon dioxide can enter for photosynthesis."
+    },
+    {
+      "id": "STAARBIO-D-056",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Root hairs are thin extensions of root cells. Their main function is to:",
+      "options": [
+        "make sugar from sunlight",
+        "release seeds into the soil",
+        "attract pollinators to the plant",
+        "increase surface area for water"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Root hairs add a large amount of surface area, so the roots can absorb more water and minerals from the soil."
+    },
+    {
+      "id": "STAARBIO-D-057",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A seedling's roots grow downward even when the seed is planted upside down. This response to gravity is called:",
+      "options": [
+        "phototropism",
+        "transpiration",
+        "pollination",
+        "gravitropism"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Gravitropism is growth in response to gravity: roots grow down and shoots grow up. Phototropism is growth toward light."
+    },
+    {
+      "id": "STAARBIO-D-058",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Water evaporating from leaves pulls more water up through the xylem from the roots. Which pair of plant systems does this connect?",
+      "options": [
+        "The phloem and the pollen",
+        "The stomata and the fruit",
+        "The shoots and the roots",
+        "The flowers and the seeds"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Transpiration from the leaves of the shoot system creates a pull that draws water absorbed by the root system up the xylem."
+    },
+    {
+      "id": "STAARBIO-D-059",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After pollination, the ovary of a flower develops into a fruit. How does a fruit help a plant reproduce?",
+      "options": [
+        "It helps spread the seeds",
+        "It carries water to the roots",
+        "It makes pollen for other flowers",
+        "It absorbs sunlight for the seeds"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Animals eat fruits and drop or pass the seeds away from the parent plant, and some fruits are carried by wind or water. Spreading seeds reduces crowding and competition."
+    },
+    {
+      "id": "STAARBIO-D-060",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSystems",
+      "skill": "B.12B Interactions of plant systems",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two structures does a flowering plant use for sexual reproduction? Choose two.",
+      "options": [
+        "Stamens",
+        "Xylem vessels",
+        "Root hairs",
+        "Pistils",
+        "Guard cells"
+      ],
+      "correct": [
+        0,
+        3
+      ],
+      "select": 2,
+      "explanation": "Stamens make pollen and pistils hold the ovules, so both take part in fertilization. Root hairs absorb water, guard cells control the stomata and xylem carries water."
+    },
+    {
+      "id": "STAARBIO-D-061",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7A Components of DNA",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which base pairs with guanine in a DNA molecule?",
+      "options": [
+        "Uracil",
+        "Thymine",
+        "Adenine",
+        "Cytosine"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Guanine always pairs with cytosine, and adenine pairs with thymine. Uracil is found in RNA, not DNA."
+    },
+    {
+      "id": "STAARBIO-D-062",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7A Components of DNA",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The order of bases in a gene determines a trait mainly by determining the:",
+      "options": [
+        "number of chromosomes in a cell",
+        "size of the cell membrane",
+        "amino acid order in a protein",
+        "amount of sugar in the DNA"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each set of three bases codes for an amino acid, so the base sequence sets the amino acid sequence, which shapes the protein that produces the trait."
+    },
+    {
+      "id": "STAARBIO-D-063",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7A Components of DNA",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The two strands of a DNA double helix are held together by bonds between:",
+      "options": [
+        "amino acids",
+        "sugar and phosphate groups",
+        "fatty acids",
+        "paired nitrogen bases"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Weak hydrogen bonds between complementary bases join the two strands. The sugar and phosphate groups form the backbone of each strand."
+    },
+    {
+      "id": "STAARBIO-D-064",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7A Components of DNA",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A sample of DNA is 30% adenine. What percent of the sample is thymine?",
+      "options": [
+        "20%",
+        "30%",
+        "40%",
+        "70%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Adenine pairs with thymine, so they are present in equal amounts: 30% thymine. That leaves 40% for guanine and cytosine together, 20% each."
+    },
+    {
+      "id": "STAARBIO-D-065",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7B Gene expression and protein synthesis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Where in a eukaryotic cell does translation take place?",
+      "options": [
+        "In the nucleus only",
+        "In the vacuole",
+        "At ribosomes",
+        "In the cell wall"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Ribosomes in the cytoplasm and on the endoplasmic reticulum read mRNA and join amino acids into proteins. Transcription happens in the nucleus."
+    },
+    {
+      "id": "STAARBIO-D-066",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7B Gene expression and protein synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A DNA template strand reads TAC GGA. What mRNA is transcribed from it?",
+      "options": [
+        "UAC GGA",
+        "TAC GGA",
+        "AUG CCU",
+        "ATG CCT"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "RNA pairs with the template: T pairs with A, A with U, C with G and G with C, giving AUG CCU. RNA uses U in place of T."
+    },
+    {
+      "id": "STAARBIO-D-067",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7B Gene expression and protein synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the job of transfer RNA during protein synthesis?",
+      "options": [
+        "It brings amino acids to the ribosome",
+        "It carries the protein out of the cell",
+        "It joins the two DNA strands",
+        "It copies the gene in the nucleus"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each tRNA carries a specific amino acid and has an anticodon that pairs with a codon on the mRNA, placing amino acids in the right order."
+    },
+    {
+      "id": "STAARBIO-D-068",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7B Gene expression and protein synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An mRNA molecule has 300 bases from its start codon to just before its stop codon. How many amino acids does it code for?",
+      "options": [
+        "100",
+        "150",
+        "300",
+        "900"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A codon is three bases, so 300 bases are 100 codons, each adding one amino acid."
+    },
+    {
+      "id": "STAARBIO-D-069",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7B Gene expression and protein synthesis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Pancreas cells make large amounts of insulin, but skin cells make none, even though both have the insulin gene. This is because:",
+      "options": [
+        "insulin is made from fat, not protein",
+        "skin cells have a mutated insulin gene",
+        "only some cells express the gene",
+        "only pancreas cells have DNA"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Gene expression is controlled, so a gene is transcribed and translated only in cells that need its protein. The gene is present in both cell types."
+    },
+    {
+      "id": "STAARBIO-D-070",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7C Changes in DNA",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A permanent change in the sequence of DNA is called a:",
+      "options": [
+        "chromosome",
+        "nucleotide",
+        "mutation",
+        "codon"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A mutation is any change in the DNA base sequence. A codon is a group of three bases, and a nucleotide is one unit of DNA."
+    },
+    {
+      "id": "STAARBIO-D-071",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7C Changes in DNA",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In sickle cell disease, one base change in the hemoglobin gene replaces one amino acid. Which kind of mutation is this?",
+      "options": [
+        "A substitution",
+        "An extra chromosome",
+        "A deletion of a gene",
+        "A frameshift"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Replacing one base with another is a substitution. Here it changes one amino acid, which alters the shape of hemoglobin and of red blood cells."
+    },
+    {
+      "id": "STAARBIO-D-072",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7C Changes in DNA",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Why does deleting one base near the start of a gene usually harm the protein more than deleting one base near the end?",
+      "options": [
+        "It shifts every later codon",
+        "It adds a new start codon",
+        "It changes only the stop codon",
+        "It removes the whole chromosome"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A single-base deletion is a frameshift, so every codon after it is read wrongly. Near the start, almost the whole protein is changed."
+    },
+    {
+      "id": "STAARBIO-D-073",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7C Changes in DNA",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A mutation occurs in a skin cell on a person's arm. Can the mutation be passed on to the person's children?",
+      "options": [
+        "No, because it is not in a sex cell",
+        "Yes, because all cells make gametes",
+        "No, because skin cells have no DNA",
+        "Yes, because skin cells become eggs"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Only mutations in cells that make eggs or sperm can be inherited. A mutation in a body cell affects that cell and the cells it divides into."
+    },
+    {
+      "id": "STAARBIO-D-074",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioDNA",
+      "skill": "B.7C Changes in DNA",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two changes are frameshift mutations? Choose two.",
+      "options": [
+        "Inserting one base",
+        "Deleting three bases",
+        "Swapping one codon",
+        "Replacing one base",
+        "Deleting two bases"
+      ],
+      "correct": [
+        0,
+        4
+      ],
+      "select": 2,
+      "explanation": "Adding or removing a number of bases that is not a multiple of three shifts the reading frame. Deleting three bases removes one codon and keeps the frame, and a replacement keeps it too."
+    },
+    {
+      "id": "STAARBIO-D-075",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8A Meiosis and genetic diversity",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A human body cell has 46 chromosomes. How many chromosomes are in a human egg cell?",
+      "options": [
+        "12",
+        "23",
+        "46",
+        "92"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Meiosis reduces the chromosome number by half, so eggs and sperm have 23. Fertilization joins two gametes to restore 46."
+    },
+    {
+      "id": "STAARBIO-D-076",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8A Meiosis and genetic diversity",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Why is it important that gametes have half the number of chromosomes of body cells?",
+      "options": [
+        "So the zygote has the normal number",
+        "So the parent loses no genes",
+        "So all offspring are identical",
+        "So the gamete can divide by mitosis"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "When an egg and sperm join, their chromosomes combine. If each had a full set, the number would double every generation."
+    },
+    {
+      "id": "STAARBIO-D-077",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8A Meiosis and genetic diversity",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Independent assortment during meiosis means that:",
+      "options": [
+        "every gamete gets the same chromosomes",
+        "chromosome pairs separate randomly",
+        "sister chromatids never separate",
+        "DNA is copied twice before meiosis"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each pair of homologous chromosomes lines up independently of the others, so gametes get many different mixes of maternal and paternal chromosomes."
+    },
+    {
+      "id": "STAARBIO-D-078",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8A Meiosis and genetic diversity",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "An organism has 3 pairs of chromosomes. Counting independent assortment alone, how many different combinations of chromosomes can its gametes have?",
+      "options": [
+        "3",
+        "6",
+        "8",
+        "9"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Each pair can go two ways, so 2 x 2 x 2 = 8 combinations. Crossing-over adds even more variety."
+    },
+    {
+      "id": "STAARBIO-D-079",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8A Meiosis and genetic diversity",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which outcome of sexual reproduction is a direct result of meiosis and fertilization?",
+      "options": [
+        "Offspring that are clones of one parent",
+        "Offspring that differ from their parents",
+        "Offspring with twice the parents' chromosomes",
+        "Offspring that have no alleles"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Meiosis shuffles alleles and fertilization combines them from two parents, so each offspring has a new combination. Clones come from asexual reproduction."
+    },
+    {
+      "id": "STAARBIO-D-080",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "An organism with two different alleles for a gene, such as Tt, is called:",
+      "options": [
+        "homozygous",
+        "recessive",
+        "a gamete",
+        "heterozygous"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Heterozygous means the two alleles differ. TT or tt would be homozygous."
+    },
+    {
+      "id": "STAARBIO-D-081",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In guinea pigs, black fur (B) is dominant to white fur (b). Two heterozygous black guinea pigs are crossed. What fraction of their offspring are expected to have white fur?",
+      "options": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Bb x Bb gives BB, Bb, Bb and bb, so 1/4 are bb and white."
+    },
+    {
+      "id": "STAARBIO-D-082",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A tall plant (T, dominant) is crossed with a short plant (tt). All 40 offspring are tall. What is the most likely genotype of the tall parent?",
+      "options": [
+        "Tt or tt",
+        "tt",
+        "TT",
+        "Tt"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "If the tall parent were Tt, about half the offspring would be short. Getting no short offspring among 40 points to TT."
+    },
+    {
+      "id": "STAARBIO-D-083",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In some cattle, a red bull crossed with a white cow gives a calf with both red and white hairs. This is an example of:",
+      "options": [
+        "incomplete dominance",
+        "sex-linked inheritance",
+        "complete dominance",
+        "codominance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Both alleles are fully expressed, as separate red and white hairs, so this is codominance. Incomplete dominance would give one blended color."
+    },
+    {
+      "id": "STAARBIO-D-084",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Hemophilia is an X-linked recessive disorder. Why is it more common in males than in females?",
+      "options": [
+        "Males have two X chromosomes",
+        "Females cannot inherit X alleles",
+        "The allele is on the Y chromosome",
+        "Males have only one X chromosome"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A male with one recessive allele on his only X shows the disorder. A female needs the allele on both X chromosomes."
+    },
+    {
+      "id": "STAARBIO-D-085",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A person with type A blood and a person with type B blood have a child with type O blood. What are the parents' genotypes?",
+      "options": [
+        "AA and BB",
+        "AB and OO",
+        "AA and BO",
+        "AO and BO"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A type O child is OO, so each parent must carry an O allele. A type A parent with O is AO and a type B parent with O is BO."
+    },
+    {
+      "id": "STAARBIO-D-086",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Two plants that are both heterozygous for two genes on different chromosomes are crossed. What phenotype ratio is expected?",
+      "options": [
+        "1:1:1:1",
+        "9:3:3:1",
+        "3:1",
+        "1:2:1"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A dihybrid cross of two heterozygotes gives 9 with both dominant traits, 3 and 3 with one of each, and 1 with both recessive traits."
+    },
+    {
+      "id": "STAARBIO-D-087",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioInheritance",
+      "skill": "B.8B Genetic crosses",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two crosses can produce offspring with a recessive phenotype? Choose two.",
+      "options": [
+        "AA x AA",
+        "AA x aa",
+        "Aa x aa",
+        "AA x Aa",
+        "Aa x Aa"
+      ],
+      "correct": [
+        2,
+        4
+      ],
+      "select": 2,
+      "explanation": "A recessive phenotype needs aa, so both parents must carry at least one a. AA x aa gives only Aa, and the crosses with an AA parent always give at least one A."
+    },
+    {
+      "id": "STAARBIO-D-088",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Fossils found in lower rock layers are generally:",
+      "options": [
+        "younger than those in higher layers",
+        "the same age as those above",
+        "older than those in higher layers",
+        "always from extinct plants"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Sedimentary rock forms in layers, with newer layers laid on top, so in undisturbed rock the deeper fossils are older."
+    },
+    {
+      "id": "STAARBIO-D-089",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Whales have small hip bones that are not connected to the backbone and are not used for walking. Scientists use such structures as evidence that whales:",
+      "options": [
+        "use the bones to swim faster",
+        "are closely related to fish",
+        "will grow legs in the future",
+        "had four-legged ancestors"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Reduced structures with little or no function are vestigial structures. Whale hip bones match the hip bones of land mammals, pointing to shared ancestry."
+    },
+    {
+      "id": "STAARBIO-D-090",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Humans and chimpanzees share about 98% of their DNA sequence. This is an example of which kind of evidence?",
+      "options": [
+        "Molecular homology",
+        "Biogeography",
+        "Fossil record",
+        "Anatomical analogy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Similar DNA and protein sequences are molecular evidence of common ancestry. The more similar the sequences, the more closely related the species."
+    },
+    {
+      "id": "STAARBIO-D-091",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Bird wings and butterfly wings both help the animals fly, but they are built very differently. These wings are:",
+      "options": [
+        "identical structures",
+        "homologous structures",
+        "vestigial structures",
+        "analogous structures"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Analogous structures do a similar job but come from different ancestral structures, so they are not evidence of close common ancestry."
+    },
+    {
+      "id": "STAARBIO-D-092",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Islands near a continent often have species that are similar to, but different from, species on the nearby mainland. This pattern suggests that:",
+      "options": [
+        "the islands created identical species",
+        "island species were never related to mainland ones",
+        "mainland species descended from island ones only",
+        "island species descended from mainland ancestors"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Biogeography shows that organisms that reached the islands from the mainland changed over time in their new environment, so island species resemble their mainland relatives."
+    },
+    {
+      "id": "STAARBIO-D-093",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A fossil has features of both fish and four-legged land animals, including fins with wrist-like bones. Fossils like this are called:",
+      "options": [
+        "index fossils",
+        "transitional fossils",
+        "modern fossils",
+        "trace fossils"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Transitional fossils show a mix of features of an ancestral group and a descendant group, filling in steps of the fossil record."
+    },
+    {
+      "id": "STAARBIO-D-094",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Four species are compared using the number of differences in one protein from species W: X has 2, Y has 9 and Z has 15. Which species is most closely related to W?",
+      "options": [
+        "Species X",
+        "Species Y",
+        "Species Z",
+        "Y and Z equally"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The fewest differences, 2, means species X shares the most recent common ancestor with W."
+    },
+    {
+      "id": "STAARBIO-D-095",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Many very different organisms use the same genetic code to make proteins. This is evidence that:",
+      "options": [
+        "all organisms live in water",
+        "proteins never change",
+        "all organisms once were plants",
+        "living things share ancestry"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The same codons stand for the same amino acids in bacteria, plants and animals, which is best explained by inheritance from a shared ancestor."
+    },
+    {
+      "id": "STAARBIO-D-096",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9B Rates of change in the fossil record",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Little or no change in a species over a long period of the fossil record is called:",
+      "options": [
+        "stasis",
+        "gradualism",
+        "extinction",
+        "speciation"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Stasis describes long stretches when a species' form stays nearly the same in the fossil record."
+    },
+    {
+      "id": "STAARBIO-D-097",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9B Rates of change in the fossil record",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which observation in the fossil record would support gradualism?",
+      "options": [
+        "New groups appearing all at once",
+        "No change for millions of years",
+        "Small changes in many layers",
+        "Fossils only in the top layer"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Gradualism predicts slow, steady change, so fossils would show many in-between forms through many layers."
+    },
+    {
+      "id": "STAARBIO-D-098",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9B Rates of change in the fossil record",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Many new animal groups appear in rock layers formed over a geologically short time in the Cambrian period. This is an example of:",
+      "options": [
+        "gradualism",
+        "stasis",
+        "vestigial change",
+        "abrupt appearance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The sudden showing of many new forms in a short span of the record is called abrupt appearance. Scientists examine several explanations for it, including fast change and gaps in preservation."
+    },
+    {
+      "id": "STAARBIO-D-099",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9B Rates of change in the fossil record",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Why might the fossil record show a group appearing abruptly even if its change was not sudden?",
+      "options": [
+        "Rock layers never form on land",
+        "Few organisms become fossils",
+        "Fossils show only living species",
+        "Every organism becomes a fossil"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fossils form only under special conditions, so many steps may never be preserved. Gaps in preservation are one explanation scientists examine for abrupt appearance."
+    },
+    {
+      "id": "STAARBIO-D-100",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9B Rates of change in the fossil record",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A species of crab has looked almost the same for millions of years. Which explanation could account for this stasis?",
+      "options": [
+        "It reproduced much faster than others",
+        "Its DNA cannot mutate at all",
+        "Its environment stayed stable",
+        "It never had any predators"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "When conditions stay much the same, the traits that already work well keep being favored, so little change builds up. All species' DNA can mutate."
+    },
+    {
+      "id": "STAARBIO-D-101",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEvidence",
+      "skill": "B.9A Evidence of common ancestry",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two observations are anatomical evidence of common ancestry? Choose two.",
+      "options": [
+        "Similar DNA sequences in two species",
+        "Similar bone patterns in different limbs",
+        "Fossils found in the same rock layer",
+        "Reduced structures that resemble working ones",
+        "Similar species on nearby islands"
+      ],
+      "correct": [
+        1,
+        3
+      ],
+      "select": 2,
+      "explanation": "Homologous and vestigial structures are both anatomical evidence. DNA sequences are molecular evidence, island species are biogeography and rock layers are the fossil record."
+    },
+    {
+      "id": "STAARBIO-D-102",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10A Natural selection acts on populations",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Natural selection produces evolutionary change in:",
+      "options": [
+        "one individual during its life",
+        "a single cell in a day",
+        "populations over generations",
+        "rocks over time"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Individuals do not evolve. Over generations, inherited traits that help survival and reproduction become more common in the population."
+    },
+    {
+      "id": "STAARBIO-D-103",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10A Natural selection acts on populations",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "When an antibiotic is used, a few bacteria survive because they already carry a resistance gene. Later, most of the population is resistant. This happened because:",
+      "options": [
+        "resistant bacteria reproduced more",
+        "each bacterium chose to change its genes",
+        "the antibiotic created the resistance gene",
+        "the antibiotic taught bacteria to resist"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The resistance gene was already present. The antibiotic killed susceptible bacteria, so the resistant ones left more offspring and the population changed."
+    },
+    {
+      "id": "STAARBIO-D-104",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10A Natural selection acts on populations",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A giraffe stretches its neck to reach high leaves all its life. According to natural selection, this stretching will:",
+      "options": [
+        "not affect its offspring's necks",
+        "make its offspring's necks longer",
+        "change the giraffe's DNA",
+        "cause a new species at once"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Effects of use during an individual's life are not inherited. Neck length changes in a population only when giraffes with genes for longer necks leave more offspring."
+    },
+    {
+      "id": "STAARBIO-D-105",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10A Natural selection acts on populations",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Moths in a city were mostly light. After factories coated trees with soot, dark moths became more common over many generations. What changed in the moth population?",
+      "options": [
+        "How common the dark allele is",
+        "The number of moth species",
+        "The birds' ability to fly",
+        "Each moth's color during its life"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Selection by birds favored dark moths on dark trees, so the dark allele became more frequent in the population. Individual moths kept their colors."
+    },
+    {
+      "id": "STAARBIO-D-106",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10B Elements of natural selection",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In natural selection, organisms best suited to their environment tend to:",
+      "options": [
+        "live alone without competition",
+        "survive and reproduce more",
+        "stop producing offspring",
+        "change their traits on purpose"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Individuals with helpful inherited traits survive and leave more offspring, which is called differential reproductive success."
+    },
+    {
+      "id": "STAARBIO-D-107",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10B Elements of natural selection",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A finite supply of food in an environment leads to:",
+      "options": [
+        "competition",
+        "identical offspring",
+        "no change in a population",
+        "unlimited population growth"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Because resources are limited, not every individual can survive, so organisms compete. This is one element of natural selection."
+    },
+    {
+      "id": "STAARBIO-D-108",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10B Elements of natural selection",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "During a drought, only finches with large, deep beaks can crack the hard seeds left. What is the most likely result in the next generation?",
+      "options": [
+        "No change in beak size",
+        "A lower average beak depth",
+        "A higher average beak depth",
+        "Every finch with a small beak"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Large-beaked finches survive and reproduce more, and beak size is inherited, so the next generation's average beak depth rises."
+    },
+    {
+      "id": "STAARBIO-D-109",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10B Elements of natural selection",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Where does the inherited variation that natural selection acts on come from?",
+      "options": [
+        "Changes made during an organism's life",
+        "Mutation and sexual reproduction",
+        "The environment choosing new genes",
+        "Organisms trying to adapt"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "New alleles come from mutations, and meiosis and fertilization create new combinations. Selection sorts that variation but does not create it."
+    },
+    {
+      "id": "STAARBIO-D-110",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10C Natural selection and speciation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A new species has formed when two populations:",
+      "options": [
+        "can no longer interbreed",
+        "eat different foods",
+        "look slightly different",
+        "live in different places"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The usual test is reproductive isolation: members of the two groups cannot interbreed and produce fertile offspring."
+    },
+    {
+      "id": "STAARBIO-D-111",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10C Natural selection and speciation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Squirrels on the north and south rims of a deep canyon have been separated for a very long time and look different. What first led to their differences?",
+      "options": [
+        "They chose to look different",
+        "The canyon blocked gene flow",
+        "They had identical environments",
+        "They interbred more often"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A geographic barrier keeps the populations apart, so mutations, selection and drift change each group separately over time."
+    },
+    {
+      "id": "STAARBIO-D-112",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10C Natural selection and speciation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "On an island chain, one ancestral bird species gave rise to many species with different beaks suited to different foods. This is best explained by:",
+      "options": [
+        "every bird having the same beak",
+        "birds stretching their beaks",
+        "a single random mutation in one bird",
+        "selection for different foods"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Groups that reached different islands faced different food sources, so different beak shapes were favored. Over time the isolated groups became separate species."
+    },
+    {
+      "id": "STAARBIO-D-113",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10D Other evolutionary mechanisms",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The movement of alleles between populations when individuals migrate is called:",
+      "options": [
+        "genetic drift",
+        "gene flow",
+        "mutation",
+        "natural selection"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Gene flow moves alleles from one population to another and tends to make the populations more alike."
+    },
+    {
+      "id": "STAARBIO-D-114",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10D Other evolutionary mechanisms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Genetic drift has a larger effect on:",
+      "options": [
+        "populations with no mutations",
+        "populations of plants only",
+        "small populations",
+        "large populations"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Random chance changes allele frequencies more in small populations, where a few individuals make up a large share of the gene pool."
+    },
+    {
+      "id": "STAARBIO-D-115",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10D Other evolutionary mechanisms",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A few birds fly to a new island and start a population. The new population has different allele frequencies from the mainland just by chance. This is an example of:",
+      "options": [
+        "gene flow",
+        "natural selection",
+        "genetic drift",
+        "stasis"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "When a small group starts a new population, its alleles may not match the original population by chance. This founder effect is a kind of genetic drift."
+    },
+    {
+      "id": "STAARBIO-D-116",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioSelection",
+      "skill": "B.10D Other evolutionary mechanisms",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two mechanisms can change a gene pool without natural selection? Choose two.",
+      "options": [
+        "Overproduction of offspring",
+        "Limited resources",
+        "Inherited variation",
+        "Genetic drift",
+        "Gene flow"
+      ],
+      "correct": [
+        3,
+        4
+      ],
+      "select": 2,
+      "explanation": "Drift and gene flow change allele frequencies through chance and migration. Variation, overproduction and limited resources are the elements of natural selection itself."
+    },
+    {
+      "id": "STAARBIO-D-117",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13A Ecological relationships",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A tick feeds on the blood of a deer and can spread disease to it. This relationship is:",
+      "options": [
+        "mutualism",
+        "commensalism",
+        "predation",
+        "parasitism"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The tick benefits and the deer is harmed but not usually killed, which is parasitism. A predator kills and eats its prey."
+    },
+    {
+      "id": "STAARBIO-D-118",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13A Ecological relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two species of birds eat the same kind of seeds in a meadow where seeds are limited. This interaction is:",
+      "options": [
+        "mutualism",
+        "competition",
+        "parasitism",
+        "commensalism"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "When two species need the same limited resource, they compete, and each has less to use."
+    },
+    {
+      "id": "STAARBIO-D-119",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13A Ecological relationships",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Bees collect nectar from flowers and carry pollen between them. How does this relationship affect the ecosystem?",
+      "options": [
+        "It reduces the number of seeds",
+        "It harms the flowering plants",
+        "It helps plants and bees",
+        "It removes nectar from the food web"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "This mutualism feeds the bees and pollinates the plants, which make seeds and fruit that other organisms eat. Losing pollinators would hurt many species."
+    },
+    {
+      "id": "STAARBIO-D-120",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13A Ecological relationships",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Sea otters eat sea urchins, which eat kelp. If the sea otters are removed, what is the most likely result?",
+      "options": [
+        "Nothing changes in the kelp forest",
+        "Urchins increase and kelp decreases",
+        "Both urchins and kelp increase",
+        "Urchins decrease and kelp increases"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Without the predator, the urchin population grows and overgrazes the kelp, which many other species depend on. A predator can help keep an ecosystem stable."
+    },
+    {
+      "id": "STAARBIO-D-121",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13B Matter and energy through trophic levels",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Organisms that make their own food from sunlight are called:",
+      "options": [
+        "decomposers",
+        "predators",
+        "consumers",
+        "producers"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Producers such as plants and algae capture light energy in photosynthesis and form the base of food chains."
+    },
+    {
+      "id": "STAARBIO-D-122",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13B Matter and energy through trophic levels",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the role of decomposers such as fungi and bacteria in an ecosystem?",
+      "options": [
+        "They make food from sunlight",
+        "They are always top predators",
+        "They create new energy",
+        "They recycle nutrients"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Decomposers break down dead organisms and wastes, releasing matter such as nitrogen and carbon back into the soil and air for producers to use."
+    },
+    {
+      "id": "STAARBIO-D-123",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13B Matter and energy through trophic levels",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A pond's producers store 50,000 units of energy. About how much energy can reach the secondary consumers?",
+      "options": [
+        "50",
+        "500",
+        "5,000",
+        "25,000"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "About 10% passes to each level: 5,000 reach the primary consumers and about 500 reach the secondary consumers."
+    },
+    {
+      "id": "STAARBIO-D-124",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13B Matter and energy through trophic levels",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In an energy pyramid, why is the producer level the widest?",
+      "options": [
+        "It holds the most energy",
+        "It has the fewest organisms",
+        "It contains only animals",
+        "It loses no energy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Producers capture energy from the sun, and every level above gets a smaller share, so the base holds the most."
+    },
+    {
+      "id": "STAARBIO-D-125",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13C Carbon and nitrogen cycles",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which process removes carbon dioxide from the atmosphere?",
+      "options": [
+        "Cellular respiration",
+        "Burning wood",
+        "Decomposition",
+        "Photosynthesis"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Plants and algae take in carbon dioxide and build it into sugars. Respiration, burning and decomposition all release carbon dioxide."
+    },
+    {
+      "id": "STAARBIO-D-126",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13C Carbon and nitrogen cycles",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Fertilizer from farms washes into a lake and causes algae to grow very quickly. When the algae die and decompose, fish die. Why?",
+      "options": [
+        "Algae release poison into all lakes",
+        "The fertilizer turns into carbon dioxide gas",
+        "Decomposers use up the oxygen in the water",
+        "Fish eat too much of the algae"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Extra nitrogen and phosphorus feed an algal bloom, and bacteria decomposing the dead algae use up dissolved oxygen, so fish suffocate. This disrupts the nitrogen cycle."
+    },
+    {
+      "id": "STAARBIO-D-127",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13C Carbon and nitrogen cycles",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Where is carbon stored in a forest ecosystem?",
+      "options": [
+        "Only in the air",
+        "Only in the rocks",
+        "In living things",
+        "Only in nitrogen gas"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Carbon is part of every organic molecule, so trees, animals and soil organisms store large amounts. It also cycles through the air and oceans."
+    },
+    {
+      "id": "STAARBIO-D-128",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13C Carbon and nitrogen cycles",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A large area of forest is cut down and burned. How does this affect the carbon cycle?",
+      "options": [
+        "The carbon cycle stops completely",
+        "More carbon dioxide enters the air",
+        "Carbon is turned into nitrogen",
+        "Less carbon dioxide enters the air"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Burning releases the carbon stored in the trees, and fewer trees remain to take carbon dioxide back out of the air by photosynthesis."
+    },
+    {
+      "id": "STAARBIO-D-129",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13D Environmental change and biodiversity",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which human activity most directly reduces biodiversity in an area?",
+      "options": [
+        "Clearing habitat for roads",
+        "Planting native trees",
+        "Cleaning up a polluted river",
+        "Protecting a wetland"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Habitat loss is a leading cause of lost species, because organisms lose the food and shelter they need. The other actions help biodiversity."
+    },
+    {
+      "id": "STAARBIO-D-130",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13D Environmental change and biodiversity",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An invasive plant spreads quickly in a wetland and crowds out native plants. What is the likely effect on the wetland's biodiversity?",
+      "options": [
+        "It stays exactly the same",
+        "It doubles each year",
+        "It increases",
+        "It decreases"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "With no natural enemies, an invasive species can take over resources, so native species and the animals that depend on them decline."
+    },
+    {
+      "id": "STAARBIO-D-131",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13D Environmental change and biodiversity",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Rising ocean temperatures cause many corals to die. Coral reefs shelter thousands of species. What is the most likely result?",
+      "options": [
+        "Fish populations grow larger",
+        "Many reef species decline",
+        "Only the corals are affected",
+        "Reef species become more diverse"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Corals build the habitat that reef fish and invertebrates need, so losing them lowers biodiversity and makes the whole ecosystem less stable."
+    },
+    {
+      "id": "STAARBIO-D-132",
+      "section": "bio",
+      "test": 0,
+      "module": 1,
+      "domain": "staarbioEcology",
+      "skill": "B.13D Environmental change and biodiversity",
+      "difficulty": 3,
+      "format": "multi",
+      "stem": "Which two actions help keep an ecosystem's biodiversity high? Choose two.",
+      "options": [
+        "Draining wetlands for farms",
+        "Removing invasive species",
+        "Adding extra fertilizer to lakes",
+        "Protecting large areas of habitat",
+        "Clearing forests for roads"
+      ],
+      "correct": [
+        1,
+        3
+      ],
+      "select": 2,
+      "explanation": "Protecting habitat and removing invaders let native species survive. Draining wetlands, clearing forests and fertilizer runoff all reduce biodiversity."
+    }
+  ]
+}

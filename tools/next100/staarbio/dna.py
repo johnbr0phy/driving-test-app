@@ -1,0 +1,115 @@
+# Mechanisms of Genetics: B.7A, B.7B, B.7C. Original items.
+# Practice Test 2 opens this strand with a cluster on one gene and three mutations.
+DNA = "B.7A Components of DNA"
+EXP = "B.7B Gene expression and protein synthesis"
+MUT = "B.7C Changes in DNA"
+
+STIMULI = [
+    {"id": "STAARBIO-T2-S1", "title": "A short gene and three mutations", "text": (
+        "The mRNA made from a short gene is shown below, split into codons. A scientist found three mutant versions of the gene "
+        "and wrote out the mRNA each one makes.\n\n"
+        "| Version | mRNA |\n|---|---|\n| Normal | AUG GAA CCA UUU GGC UAA |\n| Mutant 1 | AUG GUA CCA UUU GGC UAA |\n"
+        "| Mutant 2 | AUG GAA UCC AUU UGG CUA A |\n| Mutant 3 | AUG GAG CCA UUU GGC UAA |\n\n"
+        "Part of the genetic code: AUG = methionine (start), GAA = glutamic acid, GAG = glutamic acid, GUA = valine, "
+        "CCA = proline, UUU = phenylalanine, GGC = glycine, UAA = stop.")},
+]
+
+ITEMS = [
+    # ---------------- Practice Test 1 ----------------
+    Q(1, 1, DNA,
+      "Each nucleotide in a DNA molecule is made of a phosphate group, a nitrogen base and:",
+      ["deoxyribose", "ribose", "an amino acid", "a fatty acid"],
+      "DNA nucleotides contain the sugar deoxyribose, which gives deoxyribonucleic acid its name. Ribose is the sugar in RNA."),
+    Q(1, 2, DNA,
+      "One strand of DNA has the base sequence ATG CCA. What is the sequence of the matching strand?",
+      ["TAC GGT", "ATG CCA", "UAC GGU", "GCA TTG"],
+      "In DNA, A pairs with T and C pairs with G, so ATG CCA pairs with TAC GGT. U appears only in RNA."),
+    Q(1, 2, EXP,
+      "During transcription, the information in a gene is copied into:",
+      ["messenger RNA", "a new DNA strand", "a protein chain", "transfer RNA only"],
+      "In transcription, RNA polymerase reads one strand of a gene and builds a matching mRNA molecule. Ribosomes later translate that mRNA into a protein."),
+    Q(1, 3, MUT,
+      "A substitution changes one base in a gene, but the protein made from the gene is unchanged. Which explanation is most likely?",
+      ["Both codons code for one amino acid", "The cell stopped making the protein", "The base was replaced in an RNA molecule", "Substitutions never affect proteins"],
+      "Most amino acids have more than one codon, so some substitutions are silent. Other substitutions do change an amino acid or create a stop codon."),
+
+    # ---------------- Practice Test 2 (cluster first) ----------------
+    Q(2, 2, MUT,
+      "Which mutant version makes a protein identical to the normal protein?",
+      ["Mutant 3", "Mutant 1", "Mutant 2", "None of the mutants"],
+      "In Mutant 3, GAA became GAG, and both codons code for glutamic acid, so the protein is unchanged. Mutant 1 swaps glutamic acid for valine.",
+      stim="STAARBIO-T2-S1"),
+    Q(2, 2, EXP,
+      "How many amino acids are in the protein made from the normal gene?",
+      ["4", "5", "6", "7"],
+      "Methionine, glutamic acid, proline, phenylalanine and glycine make 5 amino acids. UAA is a stop codon, which ends translation without adding an amino acid.",
+      stim="STAARBIO-T2-S1"),
+    Q(2, 3, MUT,
+      "Which change best describes Mutant 2?",
+      ["An insertion causing a frameshift", "A substitution of a single amino acid", "A deletion of a whole codon", "A silent change in one codon"],
+      "An extra U after the second codon shifts every codon after it, so every amino acid from that point is likely to change. A frameshift usually changes a protein more than a substitution does.",
+      stim="STAARBIO-T2-S1"),
+    Q(2, 3, DNA,
+      "Some scientists propose that early life stored its genetic information in RNA before DNA. Which observation supports this idea?",
+      ["Some RNA can act as an enzyme", "RNA is always double stranded", "RNA contains the base thymine", "RNA is found only in viruses"],
+      "Because some RNA molecules act as catalysts as well as carrying information, RNA could have done both jobs before DNA and proteins took them over. RNA is usually single stranded and contains uracil, not thymine."),
+
+    # ---------------- Drill only ----------------
+    Q(0, 1, DNA,
+      "Which base pairs with guanine in a DNA molecule?",
+      ["Cytosine", "Adenine", "Thymine", "Uracil"],
+      "Guanine always pairs with cytosine, and adenine pairs with thymine. Uracil is found in RNA, not DNA."),
+    Q(0, 2, DNA,
+      "The order of bases in a gene determines a trait mainly by determining the:",
+      ["amino acid order in a protein", "number of chromosomes in a cell", "amount of sugar in the DNA", "size of the cell membrane"],
+      "Each set of three bases codes for an amino acid, so the base sequence sets the amino acid sequence, which shapes the protein that produces the trait."),
+    Q(0, 2, DNA,
+      "The two strands of a DNA double helix are held together by bonds between:",
+      ["paired nitrogen bases", "sugar and phosphate groups", "amino acids", "fatty acids"],
+      "Weak hydrogen bonds between complementary bases join the two strands. The sugar and phosphate groups form the backbone of each strand."),
+    Q(0, 2, DNA,
+      "A sample of DNA is 30% adenine. What percent of the sample is thymine?",
+      ["20%", "30%", "40%", "70%"],
+      "Adenine pairs with thymine, so they are present in equal amounts: 30% thymine. That leaves 40% for guanine and cytosine together, 20% each."),
+    Q(0, 1, EXP,
+      "Where in a eukaryotic cell does translation take place?",
+      ["At ribosomes", "In the nucleus only", "In the cell wall", "In the vacuole"],
+      "Ribosomes in the cytoplasm and on the endoplasmic reticulum read mRNA and join amino acids into proteins. Transcription happens in the nucleus."),
+    Q(0, 2, EXP,
+      "A DNA template strand reads TAC GGA. What mRNA is transcribed from it?",
+      ["AUG CCU", "ATG CCT", "TAC GGA", "UAC GGA"],
+      "RNA pairs with the template: T pairs with A, A with U, C with G and G with C, giving AUG CCU. RNA uses U in place of T."),
+    Q(0, 2, EXP,
+      "What is the job of transfer RNA during protein synthesis?",
+      ["It brings amino acids to the ribosome", "It copies the gene in the nucleus", "It joins the two DNA strands", "It carries the protein out of the cell"],
+      "Each tRNA carries a specific amino acid and has an anticodon that pairs with a codon on the mRNA, placing amino acids in the right order."),
+    Q(0, 2, EXP,
+      "An mRNA molecule has 300 bases from its start codon to just before its stop codon. How many amino acids does it code for?",
+      ["100", "150", "300", "900"],
+      "A codon is three bases, so 300 bases are 100 codons, each adding one amino acid."),
+    Q(0, 3, EXP,
+      "Pancreas cells make large amounts of insulin, but skin cells make none, even though both have the insulin gene. This is because:",
+      ["only some cells express the gene", "skin cells have a mutated insulin gene", "only pancreas cells have DNA", "insulin is made from fat, not protein"],
+      "Gene expression is controlled, so a gene is transcribed and translated only in cells that need its protein. The gene is present in both cell types."),
+    Q(0, 1, MUT,
+      "A permanent change in the sequence of DNA is called a:",
+      ["mutation", "codon", "nucleotide", "chromosome"],
+      "A mutation is any change in the DNA base sequence. A codon is a group of three bases, and a nucleotide is one unit of DNA."),
+    Q(0, 2, MUT,
+      "In sickle cell disease, one base change in the hemoglobin gene replaces one amino acid. Which kind of mutation is this?",
+      ["A substitution", "A frameshift", "A deletion of a gene", "An extra chromosome"],
+      "Replacing one base with another is a substitution. Here it changes one amino acid, which alters the shape of hemoglobin and of red blood cells."),
+    Q(0, 3, MUT,
+      "Why does deleting one base near the start of a gene usually harm the protein more than deleting one base near the end?",
+      ["It shifts every later codon", "It changes only the stop codon", "It removes the whole chromosome", "It adds a new start codon"],
+      "A single-base deletion is a frameshift, so every codon after it is read wrongly. Near the start, almost the whole protein is changed."),
+    Q(0, 2, MUT,
+      "A mutation occurs in a skin cell on a person's arm. Can the mutation be passed on to the person's children?",
+      ["No, because it is not in a sex cell", "Yes, because all cells make gametes", "Yes, because skin cells become eggs", "No, because skin cells have no DNA"],
+      "Only mutations in cells that make eggs or sperm can be inherited. A mutation in a body cell affects that cell and the cells it divides into."),
+    M(0, 3, MUT,
+      "Which two changes are frameshift mutations? Choose two.",
+      ["Inserting one base", "Deleting two bases"],
+      ["Replacing one base", "Deleting three bases", "Swapping one codon"],
+      "Adding or removing a number of bases that is not a multiple of three shifts the reading frame. Deleting three bases removes one codon and keeps the frame, and a replacement keeps it too."),
+]

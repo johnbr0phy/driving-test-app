@@ -470,10 +470,10 @@
     "optionA": "Serve them because of the owner",
     "optionB": "Refuse, like any other customer",
     "optionC": "Serve them a half measure",
-    "optionD": "Let the owner decide later",
+    "optionD": "Refuse only if the owner agrees",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The law applies to everyone. Serving an intoxicated person is an offence whoever they know, and staff can be penalised personally."
+    "explanation": "The law applies to everyone. Serving an intoxicated person is an offence whoever they know, so the refusal does not need the owner's approval, and staff can be penalised personally."
   },
   {
     "type": "AURSA",
@@ -553,11 +553,11 @@
     "question": "Today is 14 March 2026. A customer's licence shows a birth date of 15 March 2008. What should staff do?",
     "optionA": "Serve; they are 18",
     "optionB": "Serve; it is close enough",
-    "optionC": "Serve if a friend vouches",
+    "optionC": "Refuse only if they look young",
     "optionD": "Refuse; they are still 17",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The customer turns 18 on 15 March 2026, which is tomorrow. Until then they are a minor, so the sale must be refused."
+    "explanation": "The customer turns 18 on 15 March 2026, which is tomorrow. Until then they are a minor, so the sale must be refused however old they look; the ID has already shown they are 17."
   },
   {
     "type": "AURSA",
@@ -664,12 +664,12 @@
     "category": "aursaAge",
     "question": "A customer's ID looks genuine, but the photo does not seem to be them. What should staff do?",
     "optionA": "Serve them if it is current",
-    "optionB": "Ask the customer's friend",
+    "optionB": "Refuse only if the ID is expired",
     "optionC": "Serve a low-alcohol drink",
     "optionD": "Refuse the sale or service",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Using someone else's ID is an offence. If staff are not satisfied the ID belongs to the person, they should refuse service."
+    "explanation": "Using someone else's ID is an offence. If staff are not satisfied the ID belongs to the person, they should refuse service, even when the ID itself is current."
   },
   {
     "type": "AURSA",
@@ -736,10 +736,10 @@
     "optionA": "Check the young member's ID",
     "optionB": "Pour all five glasses as asked",
     "optionC": "Bring only four glasses",
-    "optionD": "Ask the group to vouch for them",
+    "optionD": "Check IDs after pouring the glasses",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Staff must be satisfied that everyone who drinks is 18 or over. Checking ID before handing over the glasses prevents supply to a minor."
+    "explanation": "Staff must be satisfied that everyone who drinks is 18 or over. Checking ID before handing over the glasses prevents supply to a minor; checking once the beer is poured and shared is too late."
   },
   {
     "type": "AURSA",
@@ -764,10 +764,10 @@
     "optionA": "Serve both, the friend vouched",
     "optionB": "Serve the customer a light beer",
     "optionC": "Refuse the customer without ID",
-    "optionD": "Serve them if they sign a form",
+    "optionD": "Refuse both customers",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A friend's word or ID proves nothing about another person's age. If staff are not satisfied someone is 18, that person must be refused."
+    "explanation": "A friend's word or ID proves nothing about another person's age. If staff are not satisfied someone is 18, that person must be refused, but the friend has proved their own age and can be served."
   },
   {
     "type": "AURSA",
@@ -791,11 +791,11 @@
     "question": "A regular who always shows ID left it at home today. What should staff do?",
     "optionA": "Refuse until ID is shown",
     "optionB": "Serve them as a regular",
-    "optionC": "Serve them half a drink",
+    "optionC": "Refuse and ban them for good",
     "optionD": "Ask a staff member to vouch",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "If staff need ID to be sure a customer is 18, the rule applies every visit. Without it, the safe and lawful choice is to refuse."
+    "explanation": "If staff need ID to be sure a customer is 18, the rule applies every visit. Without it, the safe and lawful choice is to refuse for now; once they bring ID they can be served, so a ban is not called for."
   },
   {
     "type": "AURSA",
@@ -903,11 +903,11 @@
     "question": "How should an online liquor seller confirm age at the point of delivery?",
     "optionA": "Check ID at handover",
     "optionB": "Rely on the website's age box",
-    "optionC": "Rely on the payment card",
+    "optionC": "Check ID only at website signup",
     "optionD": "Accept a text from the buyer",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Website age declarations can be false. Checking the recipient's ID on delivery is the reliable step the unit calls for."
+    "explanation": "Website age declarations and signup checks can be false or be for a different person. Checking the recipient's ID on delivery is the reliable step the unit calls for."
   },
   {
     "type": "AURSA",
@@ -932,10 +932,10 @@
     "optionA": "Serve them, as the ID is valid",
     "optionB": "Serve one standard drink only",
     "optionC": "Refuse due to intoxication",
-    "optionD": "Ask them for a second ID",
+    "optionD": "Refuse until they show a second ID",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Proof of age only settles the age question. An intoxicated adult must still be refused service."
+    "explanation": "Proof of age only settles the age question. An intoxicated adult must still be refused service, and no second ID changes that."
   },
   {
     "type": "AURSA",
@@ -1688,10 +1688,10 @@
     "optionA": "Refuse entry and service",
     "optionB": "Serve one drink and watch",
     "optionC": "Serve water then alcohol",
-    "optionD": "Seat them away from others",
+    "optionD": "Let them in but refuse alcohol",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An intoxicated person must not be served, and in most states must not be allowed to enter or remain. Staff should refuse politely and offer help to leave safely."
+    "explanation": "An intoxicated person must not be served, and in most states must not be allowed to enter or remain, so refusing alcohol while letting them in is not enough. Staff should refuse politely and offer help to leave safely."
   },
   {
     "type": "AURSA",
@@ -1840,12 +1840,12 @@
     "category": "aursaIntox",
     "question": "A quiet customer has been drinking steadily alone for hours with no food. What should staff do?",
     "optionA": "Keep serving while they are quiet",
-    "optionB": "Serve doubles to save trips",
+    "optionB": "Check on them at closing time",
     "optionC": "Ask them to buy a round",
     "optionD": "Check on them and offer food",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A customer drinking for a long time with no food is at risk of intoxication even if quiet. The unit lists them as a group staff must monitor and assist."
+    "explanation": "A customer drinking for a long time with no food is at risk of intoxication even if quiet. The unit lists them as a group staff must monitor and assist now, not hours later at closing time."
   },
   {
     "type": "AURSA",
@@ -2388,10 +2388,10 @@
     "optionA": "Ask them to leave the area at once",
     "optionB": "Serve them while they wait",
     "optionC": "Help them find a safe way home",
-    "optionD": "Tell them to walk home",
+    "optionD": "Help them start walking home alone",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The unit expects staff to assist refused customers, especially those in distress, by arranging transport or contacting someone they trust."
+    "explanation": "The unit expects staff to assist refused customers, especially those in distress, by arranging transport or contacting someone they trust. Sending an upset, refused customer off on foot alone is not safe help."
   },
   {
     "type": "AURSA",
@@ -2609,13 +2609,13 @@
     "questionId": "AURSA-CAR-011",
     "category": "aursaCare",
     "question": "A customer is crying and says they have had terrible news, and they want to keep drinking. What should staff do?",
-    "optionA": "Serve faster to cheer them up",
+    "optionA": "Keep serving and check on them later",
     "optionB": "Ask them to leave at once",
     "optionC": "Slow service and check on them",
     "optionD": "Serve shots on the house",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Customers in emotional distress are at greater risk. Staff should slow or stop service, offer water or food and help connect them with friends or support."
+    "explanation": "Customers in emotional distress are at greater risk. Staff should slow or stop service, offer water or food and help connect them with friends or support; carrying on serving and checking later leaves them at risk."
   },
   {
     "type": "AURSA",
@@ -2780,10 +2780,10 @@
     "optionA": "Leave them outside alone",
     "optionB": "Serve them until a friend arrives",
     "optionC": "Help them reach someone or a ride",
-    "optionD": "Ask a stranger to drive them home",
+    "optionD": "Get a stranger to help them home",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "An intoxicated person alone is vulnerable. Staff should help them contact friends or family or arrange safe transport."
+    "explanation": "An intoxicated person alone is vulnerable. Staff should help them contact friends or family or arrange safe transport, not hand them to a stranger."
   },
   {
     "type": "AURSA",

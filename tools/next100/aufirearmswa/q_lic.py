@@ -12,7 +12,7 @@ Q = [
      "Section 29 says a multi-purpose licence must specify, for each firearm, the licence purpose for which it is authorised, and must specify each firearm's category."),
     ("A rifle on your multi-purpose Individual Licence is authorised for hunting only. May you use it in a club shooting competition?",
      "Not until it is licensed for that",
-     ["Yes, any purpose on the licence counts", "Yes, if the club agrees to it", "Yes, at any licensed range"],
+     ["Yes, any purpose on the licence counts", "Yes, if the club agrees to it", "No, rifles are hunting only"],
      "Each firearm on an Individual Licence is authorised for stated purposes (s 29), and WA Police says a hunting firearm cannot be used in competition unless it is also licensed for competition. Using a firearm outside its authorised purpose is unlawful use under s 219."),
     ("What is the most firearms a Competition Licence can apply to, before any extra allowance in the regulations?",
      "10",

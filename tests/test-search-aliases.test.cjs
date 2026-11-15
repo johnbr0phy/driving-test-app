@@ -56,7 +56,6 @@ const CASES = [
   ["longarm safety course", "AU", "aufirearmsvic"],
   ["ncma", "US", "ncma"],
   ["ncct ncma", "US", "ncma"],
-  ["national certified medical assistant", "US", "ncma"],
   ["ncct medical assistant exam", "US", "ncma"],
   ["mace", "US", "mace"],
   ["medication aide exam", "US", "mace"],

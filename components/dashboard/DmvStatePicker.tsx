@@ -18,29 +18,32 @@ import { trackFunnelStep } from "@/lib/funnel";
 import type { Language } from "@/i18n";
 import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
 
-// The visitor's state from IP geolocation (/api/geo), shown already filled
-// in the dropdown. It is only a suggestion until the person taps a step (the
-// dashboard then chooses it) or picks a state, since VPNs and travel guess
-// wrong and switching later deletes progress.
-export function useSuggestedState(active: boolean) {
-  const [code, setCode] = useState<string | null>(null);
+// The visitor's state from IP geolocation (/api/geo). The DMV dashboard sets
+// it for anyone with no state yet, as if they had chosen it; Change switches
+// it (free until they have progress). `done` once the lookup has answered,
+// so the picker only shows when there is no guess.
+export function useSuggestedState(active: boolean): { state: string | null; done: boolean } {
+  const [result, setResult] = useState<{ state: string | null; done: boolean }>({ state: null, done: false });
   useEffect(() => {
     if (!active) return;
     let cancelled = false;
     fetch("/api/geo")
       .then((r) => (r.ok ? r.json() : null))
       .then((d: { state?: string } | null) => {
-        if (!cancelled && d?.state && states.some((s) => s.code === d.state)) setCode(d.state);
+        const code = d?.state && states.some((s) => s.code === d.state) ? d.state : null;
+        if (!cancelled) setResult({ state: code, done: true });
       })
-      .catch(() => {});
+      .catch(() => {
+        if (!cancelled) setResult({ state: null, done: true });
+      });
     return () => {
       cancelled = true;
     };
   }, [active]);
-  return code;
+  return result;
 }
 
-export function useDmvStateChoice() {
+function useDmvStateChoice() {
   const { t } = useTranslation();
   const selectedState = useStore((state) => state.selectedState);
   const setSelectedState = useStore((state) => state.setSelectedState);
@@ -61,7 +64,7 @@ export function useDmvStateChoice() {
  * `nudge` goes up each time someone taps a step that is still locked: the card
  * scrolls into view, flashes and opens its dropdown, so the tap is never dead.
  */
-export function DmvStatePrompt({ nudge = 0, suggested = null }: { nudge?: number; suggested?: string | null }) {
+export function DmvStatePrompt({ nudge = 0 }: { nudge?: number }) {
   const { t } = useTranslation();
   const { selectedState, choose } = useDmvStateChoice();
   const cardRef = useRef<HTMLDivElement>(null);
@@ -94,7 +97,7 @@ export function DmvStatePrompt({ nudge = 0, suggested = null }: { nudge?: number
     >
       <div className="flex flex-wrap items-center gap-x-1.5 text-lg font-medium text-gray-800 dark:text-gray-100">
         {t("onboarding.takingTestIn") && <span>{t("onboarding.takingTestIn")}</span>}
-        <Select onValueChange={choose} open={open} onOpenChange={setOpen} value={suggested ?? undefined}>
+        <Select onValueChange={choose} open={open} onOpenChange={setOpen}>
           <SelectTrigger
             aria-label={t("signup.selectLocation")}
             className="w-auto inline-flex text-lg font-semibold text-brand-dark border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto"

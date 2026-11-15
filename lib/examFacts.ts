@@ -2836,6 +2836,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category A test, and the teaching plan for categories AM, A1, A2 and A (undervisningsplan, version 1.0 2026, in use from 1 July 2026), checked November 2026",
     source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
   },
+  dktruck: {
+    answer:
+      "The Danish theory test (teoriprøve) for a lorry licence, category C, is run by Færdselsstyrelsen, the Danish Road Traffic Authority. You may make at most five errors; an unanswered question counts as an error. On the digital test each question shows a picture or video of a traffic situation and you pick the correct answer or answers. Questions are drawn at random from the teaching plan for categories C and D, weighted by Færdselsstyrelsen's published key: about a third on the lorry itself (brakes, steering, lights, mirrors, tachograph), with driving and rest times, weights, widths and loads, and driving a lorry in traffic. Digital theory tests in English are offered for category C at every digital test site, as well as in Danish. You take it after lessons with an approved driving instructor; a category C licence can normally be issued from 21. Category CE has its own theory test with its own key.",
+    rows: [
+      { label: "Run by", value: "Færdselsstyrelsen (Danish Road Traffic Authority)" },
+      { label: "Pass rule", value: "At most 5 errors (guides: 25 questions, so 20 right)" },
+      { label: "Format", value: "Picture or video based, one or more correct answers" },
+      { label: "Languages", value: "Danish and English at every digital site; German in Aabenraa" },
+      { label: "Weighting", value: "Vehicle 32%, traffic 28%, rules 16%, others 4 to 8%" },
+      { label: "Tigertest mock tests", value: "8 x 25 questions, 20 to pass" },
+      { label: "Licence age", value: "Category C normally from 21" },
+    ],
+    basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category C test, and the teaching plans for categories C and D and for CE (version 1.0 2026, FS 16.01.2026), checked November 2026",
+    source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
+  },
   itcils: {
     answer:
       "CILS B1 Cittadinanza is the Italian language certificate of the Centro CILS at the Università per Stranieri di Siena for people applying for Italian citizenship by marriage or residence, who must show Italian at B1 of the CEFR under article 9.1 of Law 91/1992. It tests four skills, each scored out of 12: listening (two tasks, about 30 minutes), reading comprehension and grammar (two tasks, 40 minutes), writing (one email of 80 to 120 words, 40 minutes) and speaking (about 10 minutes with an examiner). Every skill must be passed, the certificate is valid only for the citizenship application, and a failed skill cannot be carried over: the whole exam is taken again.",

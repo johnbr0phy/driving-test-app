@@ -100,7 +100,7 @@ const BORROWED_SETS: Record<string, string> = {
   semoto: "moto", sejakt: "hunter", sehp: "sat",
   // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger.
   // Citizenship and residence share the reviewed Danish flag and civic-study set.
-  dkmoto: "moto", dkjagt: "hunter", dkmedborger: "dkindfoed",
+  dkmoto: "moto", dktruck: "cdl", dkjagt: "hunter", dkmedborger: "dkindfoed",
   // Italy: CILS and CELI share Italian language-study art, never US civics.
   itpatente: "driving", itcils: "itlanguage", itceli: "itlanguage",
   // France (Nov 2026): code de la route the car tiger.

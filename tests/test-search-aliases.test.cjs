@@ -91,6 +91,10 @@ const CASES = [
   ["staar english i", "US", "staareng1"],
   ["english 1 eoc", "US", "staareng1"],
   ["english i eoc", "US", "staareng1"],
+  ["lastbil teori", "DK", "dktruck"],
+  ["teoriprøve lastbil", "DK", "dktruck"],
+  ["denmark truck theory test", "DK", "dktruck"],
+  ["kørekort lastbil", "DK", "dktruck"],
 ];
 
 for (const [q, region, id] of CASES) {

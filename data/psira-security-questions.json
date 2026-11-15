@@ -343,11 +343,11 @@
     "question": "What is the main task of a security officer on a guarding post?",
     "optionA": "Protect people and property",
     "optionB": "Investigate and prosecute crime",
-    "optionC": "Enforce traffic law",
+    "optionC": "Arrest people for SAPS",
     "optionD": "Collect debts for the client",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A security officer's job is to protect and safeguard persons and property at the post. Investigation and prosecution are for SAPS and the NPA."
+    "explanation": "A security officer's job is to protect and safeguard persons and property at the post. Investigation and prosecution are for SAPS and the NPA, and arresting people is not the main task."
   },
   {
     "type": "ZAPSIRA",
@@ -455,11 +455,11 @@
     "question": "A colleague arrives for night shift smelling strongly of alcohol. What should you do?",
     "optionA": "Report it to the supervisor",
     "optionB": "Cover for the colleague",
-    "optionC": "Share the post quietly",
+    "optionC": "Report it at the end of shift",
     "optionD": "Send the colleague to sleep in the guardhouse",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An officer under the influence cannot do the job safely. Report it so the supervisor can remove the officer and arrange a relief."
+    "explanation": "An officer under the influence cannot do the job safely. Report it now so the supervisor can remove the officer and arrange a relief; waiting until the shift ends leaves an unfit officer on duty all night."
   },
   {
     "type": "ZAPSIRA",
@@ -497,11 +497,11 @@
     "question": "While on duty a security officer sees a crime being committed off site. What is the usual priority?",
     "optionA": "Chase the suspect alone",
     "optionB": "Ignore it, it is off site",
-    "optionC": "Leave the post to film it",
+    "optionC": "Leave the post to help SAPS",
     "optionD": "Call SAPS and stay at post",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The officer's duty is to the post. Calling SAPS on 10111 and noting the details helps without leaving the site unprotected."
+    "explanation": "The officer's duty is to the post. Calling SAPS on 10111 and noting the details helps without leaving the site unprotected; leaving the post to help SAPS leaves it exposed."
   },
   {
     "type": "ZAPSIRA",
@@ -551,13 +551,13 @@
     "questionId": "ZAPSIRA-ROL-016",
     "category": "zapsiraRole",
     "question": "A security officer notices a broken window in the client's building. What should be done first?",
-    "optionA": "Ignore it until morning",
+    "optionA": "Report it in the morning",
     "optionB": "Fix it with your own tools",
     "optionC": "Tell the tenants on social media",
     "optionD": "Record and report it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Defects that weaken security are noted in the occurrence book and reported to the supervisor or client contact so they can be fixed."
+    "explanation": "Defects that weaken security are noted in the occurrence book and reported to the supervisor or client contact straight away so they can be fixed. Leaving the report until morning leaves the building open overnight."
   },
   {
     "type": "ZAPSIRA",
@@ -761,13 +761,13 @@
     "questionId": "ZAPSIRA-POW-007",
     "category": "zapsiraPowers",
     "question": "After arresting a suspect, what must the guard do with the suspect?",
-    "optionA": "Hold them overnight",
+    "optionA": "Hold them overnight for SAPS",
     "optionB": "Release them after a warning",
     "optionC": "Hand over to SAPS promptly",
     "optionD": "Take them home to their family",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Section 50 requires an arrested person to be brought to a police station as soon as possible. A guard calls SAPS and hands the suspect over without delay."
+    "explanation": "Section 50 requires an arrested person to be brought to a police station as soon as possible. A guard calls SAPS and hands the suspect over without delay, never holding them overnight."
   },
   {
     "type": "ZAPSIRA",
@@ -848,10 +848,10 @@
     "optionA": "Seize it and give it to SAPS",
     "optionB": "Search the suspect's home for more",
     "optionC": "Return it to the shop's shelf",
-    "optionD": "Keep it for the client's insurance",
+    "optionD": "Give it to SAPS the next day",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Section 23(1)(b) lets a private arrestor seize such an article and requires it to be delivered to a police official forthwith."
+    "explanation": "Section 23(1)(b) lets a private arrestor seize such an article and requires it to be delivered to a police official forthwith, not the next day."
   },
   {
     "type": "ZAPSIRA",
@@ -904,10 +904,10 @@
     "optionA": "Refuse entry",
     "optionB": "Search the bag by force",
     "optionC": "Arrest the visitor",
-    "optionD": "Confiscate the bag",
+    "optionD": "Refuse entry and hold the bag",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A search at the entrance is a condition of entry the visitor may decline. Without consent or a lawful arrest the guard may not search by force, but may refuse entry."
+    "explanation": "A search at the entrance is a condition of entry the visitor may decline. Without consent or a lawful arrest the guard may not search by force or keep the bag, but may refuse entry."
   },
   {
     "type": "ZAPSIRA",
@@ -1013,13 +1013,13 @@
     "questionId": "ZAPSIRA-POW-025",
     "category": "zapsiraPowers",
     "question": "A person loiters at the estate gate and refuses to leave, but commits no offence. What is the guard's best action?",
-    "optionA": "Observe, record, call SAPS",
+    "optionA": "Observe and record details",
     "optionB": "Arrest them for loitering",
-    "optionC": "Push them down the road",
+    "optionC": "Call SAPS to remove them",
     "optionD": "Take their ID book away",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Without an offence there are no arrest grounds. The guard keeps watch, records details and calls SAPS if the person becomes a threat."
+    "explanation": "Without an offence there are no arrest grounds, and SAPS is not called to remove someone who is breaking no law. The guard keeps watch, records details and calls SAPS only if the person becomes a threat."
   },
   {
     "type": "ZAPSIRA",
@@ -1044,10 +1044,10 @@
     "optionA": "Puncture the tyres",
     "optionB": "Smash a window to look",
     "optionC": "Note details, inform SAPS",
-    "optionD": "Block the driver in for hours",
+    "optionD": "Block him in until SAPS come",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Without consent or a lawful arrest, a guard may not force a search. Recording the registration, description and direction and calling SAPS is the lawful route."
+    "explanation": "Without consent or a lawful arrest, a guard may not force a search or hold the driver, so blocking him in is unlawful detention even while waiting for SAPS. Recording the registration, description and direction and calling SAPS is the lawful route."
   },
   {
     "type": "ZAPSIRA",
@@ -1156,10 +1156,10 @@
     "optionA": "Let him in, the card works",
     "optionB": "Keep quiet to avoid trouble",
     "optionC": "Refuse entry and report it",
-    "optionD": "Take a photo and wave him in",
+    "optionD": "Allow entry, report it later",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A card in the wrong hands is a security breach. Deny access, keep the card if site rules say so and report it to the supervisor."
+    "explanation": "A card in the wrong hands is a security breach. Deny access, keep the card if site rules say so and report it to the supervisor. Letting him in and reporting afterwards still lets an unverified person onto the site."
   },
   {
     "type": "ZAPSIRA",
@@ -1240,10 +1240,10 @@
     "optionA": "Report it at once",
     "optionB": "Wait to see if it comes back",
     "optionC": "Cut a copy quietly",
-    "optionD": "Write it off as lost",
+    "optionD": "Report it if not back by morning",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A missing master key compromises the whole site. Report it immediately so the supervisor can trace it or change locks."
+    "explanation": "A missing master key compromises the whole site. Report it immediately so the supervisor can trace it or change locks; waiting until morning leaves every lock it opens at risk overnight."
   },
   {
     "type": "ZAPSIRA",
@@ -1254,10 +1254,10 @@
     "optionA": "Hand it over to be helpful",
     "optionB": "Check authority, sign it out",
     "optionC": "Give him a spare copy",
-    "optionD": "Tell him where it hangs",
+    "optionD": "Sign it out without checking",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Keys to sensitive areas are issued only to authorised people, signed out in the key register and signed back in."
+    "explanation": "Keys to sensitive areas are issued only to authorised people, so authority is checked before the key is signed out in the register and signed back in."
   },
   {
     "type": "ZAPSIRA",
@@ -1268,10 +1268,10 @@
     "optionA": "Let him in, he is official",
     "optionB": "Refuse all officials",
     "optionC": "Check his ID and call the host",
-    "optionD": "Ask him to wait in the car park forever",
+    "optionD": "Let him in, call the host after",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Officials still identify themselves. Check the identification card, record it and contact the responsible person before granting access."
+    "explanation": "Officials still identify themselves. Check the identification card, record it and contact the responsible person before granting access, not after he is inside."
   },
   {
     "type": "ZAPSIRA",
@@ -1337,11 +1337,11 @@
     "question": "At closing time the register shows two visitors still signed in. What should the officer do?",
     "optionA": "Assume they have left",
     "optionB": "Delete the open entries",
-    "optionC": "Lock all doors at once",
+    "optionC": "Check the book, then lock up",
     "optionD": "Check if they are still in",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Unclosed entries may mean people are still inside. Confirm with the hosts or search the area so nobody is locked in and no intruder is hiding."
+    "explanation": "Unclosed entries may mean people are still inside. Confirm with the hosts or search the area so nobody is locked in and no intruder is hiding; looking at the book again does not tell you who is still in."
   },
   {
     "type": "ZAPSIRA",
@@ -1422,7 +1422,7 @@
     "optionA": "Wedge the door open",
     "optionB": "Check entry by hand, report it",
     "optionC": "Close the entrance for the day",
-    "optionD": "Let anyone through until it is fixed",
+    "optionD": "Allow free entry until fixed",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "The officer checks each person by hand against cards or lists, records entries and reports the fault so it can be repaired."
@@ -1434,12 +1434,12 @@
     "category": "zapsiraAccess",
     "question": "A person in overalls carries a ladder toward the roof saying he is fixing an aerial. Nobody told you. What should you do?",
     "optionA": "Hold the ladder for him",
-    "optionB": "Assume he is genuine",
+    "optionB": "Let him up, check later",
     "optionC": "Stop him and check first",
     "optionD": "Ignore it, it is daytime",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Uniforms and tools are easy to fake. Unexpected work is confirmed with the client or facilities manager before access is given."
+    "explanation": "Uniforms and tools are easy to fake. Unexpected work is confirmed with the client or facilities manager before access is given, not after he is on the roof."
   },
   {
     "type": "ZAPSIRA",
@@ -1448,12 +1448,12 @@
     "category": "zapsiraAccess",
     "question": "A visitor refuses to give any identification at a site where it is required. What should the officer do?",
     "optionA": "Take the ID by force",
-    "optionB": "Let them in this once",
+    "optionB": "Allow entry, report it later",
     "optionC": "Arrest the visitor",
     "optionD": "Politely refuse entry",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Giving identification is a condition of entry. A visitor who will not comply is refused entry politely and the refusal is recorded."
+    "explanation": "Giving identification is a condition of entry. A visitor who will not comply is refused entry politely and the refusal is recorded; letting him in and reporting it afterwards breaks the site's rule."
   },
   {
     "type": "ZAPSIRA",
@@ -1588,7 +1588,7 @@
     "category": "zapsiraPatrol",
     "question": "Before speaking on the radio, what should an officer do?",
     "optionA": "Press the button and shout",
-    "optionB": "Check the channel is clear",
+    "optionB": "Listen first for a clear channel",
     "optionC": "Turn the volume to zero",
     "optionD": "Change to any channel",
     "correctAnswer": "B",
@@ -1630,12 +1630,12 @@
     "category": "zapsiraPatrol",
     "question": "An intruder alarm sounds at a warehouse during a patrol. What should the officer do first?",
     "optionA": "Report, check from safety",
-    "optionB": "Rush inside alone",
+    "optionB": "Rush in alone to check",
     "optionC": "Switch the alarm off and leave",
     "optionD": "Wait to see if it stops",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Inform the control room, then observe from a safe position for signs of entry. Enter only with back-up or as site procedure says."
+    "explanation": "Inform the control room, then observe from a safe position for signs of entry. Enter only with back-up or as site procedure says; rushing in alone to check puts the officer at risk."
   },
   {
     "type": "ZAPSIRA",
@@ -1643,13 +1643,13 @@
     "questionId": "ZAPSIRA-PAT-014",
     "category": "zapsiraPatrol",
     "question": "An alarm keeps going off in the same zone with no cause found. What should the officer do?",
-    "optionA": "Disconnect the sensor",
+    "optionA": "Disconnect it and report it",
     "optionB": "Log each one and report it",
     "optionC": "Ignore it from now on",
     "optionD": "Tape over the detector",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Repeated false alarms are logged and reported so the system can be serviced. Disabling a sensor leaves that zone unprotected."
+    "explanation": "Repeated false alarms are logged and reported so the system can be serviced. Disabling a sensor, even when it is reported, leaves that zone unprotected."
   },
   {
     "type": "ZAPSIRA",
@@ -1716,10 +1716,10 @@
     "optionA": "Take over without telling anyone",
     "optionB": "Assume the colleague went home",
     "optionC": "Report it to the control room",
-    "optionD": "Do nothing, it is not your post",
+    "optionD": "Report it at the end of shift",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "An empty post may mean the colleague is hurt or the site is exposed. The control room can check on them and arrange cover."
+    "explanation": "An empty post may mean the colleague is hurt or the site is exposed. The control room can check on them and arrange cover, which is why it is told now rather than at the end of the shift."
   },
   {
     "type": "ZAPSIRA",
@@ -1744,10 +1744,10 @@
     "optionA": "Record details and report it",
     "optionB": "Puncture its tyres",
     "optionC": "Ignore it, it is a public road",
-    "optionD": "Ask a passer-by about it",
+    "optionD": "Report it once a crime happens",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Repeated presence can mean someone is watching the site before a crime. Record the registration and times and report the pattern."
+    "explanation": "Repeated presence can mean someone is watching the site before a crime. Record the registration and times and report the pattern now; waiting for a crime wastes the warning."
   },
   {
     "type": "ZAPSIRA",
@@ -1783,13 +1783,13 @@
     "questionId": "ZAPSIRA-PAT-024",
     "category": "zapsiraPatrol",
     "question": "A patrolling officer finds a door forced open and hears movement inside. What should the officer do?",
-    "optionA": "Go in shouting loudly",
+    "optionA": "Go in to look, then report",
     "optionB": "Lock the intruder inside",
     "optionC": "Leave and say nothing",
     "optionD": "Stay out, report, wait",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "An intruder may be armed. The officer keeps a safe position, reports to the control room and SAPS, observes exits and waits for back-up."
+    "explanation": "An intruder may be armed. The officer keeps a safe position, reports to the control room and SAPS, observes exits and waits for back-up; going in first to look is the danger to avoid."
   },
   {
     "type": "ZAPSIRA",
@@ -1827,7 +1827,7 @@
     "question": "Why should occurrence book pages be numbered and never torn out?",
     "optionA": "To make the book look neat",
     "optionB": "To count the officer's words",
-    "optionC": "So no entry can go missing",
+    "optionC": "So nothing is removed unseen",
     "optionD": "To save on paper",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1912,7 +1912,7 @@
     "optionA": "Keep people out of it",
     "optionB": "Tidy it up for customers",
     "optionC": "Move items to a safe place",
-    "optionD": "Let staff look around",
+    "optionD": "Let people help search it",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "Protecting the scene preserves fingerprints, footprints and other evidence. Only people helping the injured should enter."
@@ -2108,10 +2108,10 @@
     "optionA": "Any visitor who asks",
     "optionB": "Anyone in the street",
     "optionC": "Authorised people only",
-    "optionD": "Only the night cleaner",
+    "optionD": "People who work on site",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The OB holds sensitive information about the site and people. Only supervisors, the client's authorised staff, inspectors and SAPS when needed may read it."
+    "explanation": "The OB holds sensitive information about the site and people. Only supervisors, the client's authorised staff, inspectors and SAPS when needed may read it, not everyone who works there."
   },
   {
     "type": "ZAPSIRA",
@@ -2176,7 +2176,7 @@
     "category": "zapsiraEmergency",
     "question": "A guard is first on the scene of an armed robbery that has just ended. What comes first?",
     "optionA": "Chase the robbers' car",
-    "optionB": "Count the stolen money",
+    "optionB": "Call SAPS, then help the injured",
     "optionC": "Clean up the broken glass",
     "optionD": "Help the injured, call help",
     "correctAnswer": "D",
@@ -2205,11 +2205,11 @@
     "question": "A suspicious unattended bag is found in a mall corridor. What should the guard do?",
     "optionA": "Open it to check inside",
     "optionB": "Keep people back, report it",
-    "optionC": "Carry it outside",
+    "optionC": "Carry it out, then report it",
     "optionD": "Kick it to see what happens",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Do not touch or move it. Clear the area, keep people back, report to the control room and SAPS, and follow the site's procedure."
+    "explanation": "Do not touch or move it. Clear the area, keep people back, report to the control room and SAPS, and follow the site's procedure. Carrying it outside before reporting is the handling to avoid."
   },
   {
     "type": "ZAPSIRA",
@@ -2288,7 +2288,7 @@
     "category": "zapsiraEmergency",
     "question": "A minibus taxi crashes outside the mall entrance and fuel is leaking onto the road. What should the guard do?",
     "optionA": "Push the taxi to the side",
-    "optionB": "Let shoppers film it up close",
+    "optionB": "Let people film from close by",
     "optionC": "Start the engine to move it",
     "optionD": "Keep people and flames away",
     "correctAnswer": "D",
@@ -2385,13 +2385,13 @@
     "questionId": "ZAPSIRA-EMG-019",
     "category": "zapsiraEmergency",
     "question": "A visitor is clutching the chest, sweating and short of breath. What should the guard do first?",
-    "optionA": "Make them walk it off",
+    "optionA": "Call 10177 if it gets worse",
     "optionB": "Give them a cold drink",
     "optionC": "Call 10177 and keep them at rest",
-    "optionD": "Drive them home",
+    "optionD": "Report it to the client first",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "These are warning signs of a heart attack. Call for an ambulance at once, keep the person resting in a comfortable position and watch their breathing."
+    "explanation": "These are warning signs of a heart attack. Call for an ambulance at once, not after it gets worse or after telling the client, keep the person resting in a comfortable position and watch their breathing."
   },
   {
     "type": "ZAPSIRA",
@@ -2428,7 +2428,7 @@
     "category": "zapsiraEmergency",
     "question": "A worker falls on the stairs and may have a broken leg. What should the guard do?",
     "optionA": "Straighten the leg",
-    "optionB": "Keep the leg still, call help",
+    "optionB": "Keep the leg still, get aid",
     "optionC": "Help them walk it off",
     "optionD": "Massage the limb",
     "correctAnswer": "B",
@@ -2499,7 +2499,7 @@
     "question": "Why should fire escape routes and fire doors never be blocked or locked during trading hours?",
     "optionA": "It looks untidy",
     "optionB": "Cleaners need access",
-    "optionC": "People must escape",
+    "optionC": "Everyone must be able to escape",
     "optionD": "Deliveries use them",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2654,10 +2654,10 @@
     "optionA": "Ignore it until it is bad",
     "optionB": "Vary posture, report it",
     "optionC": "Sit on the boom gate",
-    "optionD": "Leave the post to rest",
+    "optionD": "Leave the post, then report it",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Changing position and reporting ongoing discomfort lets the employer adjust the post, for example with a chair or mat."
+    "explanation": "Changing position and reporting ongoing discomfort lets the employer adjust the post, for example with a chair or mat. The post is never left unguarded, even to report a problem."
   },
   {
     "type": "ZAPSIRA",
@@ -2750,12 +2750,12 @@
     "category": "zapsiraSafety",
     "question": "A dog on the client's site is aggressive and not under control. What should the guard do?",
     "optionA": "Avoid it and report it",
-    "optionB": "Chase it off with a stick",
+    "optionB": "Chase it off, then report it",
     "optionC": "Feed it to calm it",
     "optionD": "Ignore the danger",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An uncontrolled animal is a hazard. Keep a safe distance and report it so the owner or the right service can deal with it."
+    "explanation": "An uncontrolled animal is a hazard. Keep a safe distance and report it so the owner or the right service can deal with it; chasing it first invites a bite."
   },
   {
     "type": "ZAPSIRA",
@@ -2765,11 +2765,11 @@
     "question": "What should a guard do with a first aid box that is missing items?",
     "optionA": "Leave it as it is",
     "optionB": "Report it for restocking",
-    "optionC": "Take items home",
-    "optionD": "Throw the box away",
+    "optionC": "Report it at the yearly check",
+    "optionD": "Take items home",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "First aid boxes must be kept stocked. Report shortages so the employer can replace them before they are needed."
+    "explanation": "First aid boxes must be kept stocked. Report shortages now so the employer can replace them before they are needed, not at a yearly check."
   },
   {
     "type": "ZAPSIRA",

@@ -2232,6 +2232,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
   },
+  wonderlic: {
+    answer:
+      "The Wonderlic cognitive ability test is the 12-minute timed section of Wonderlic's pre-employment assessments, the Wonderlic Personnel Test (WPT-R) and Wonderlic Select (WonScore), which employers use in hiring. Wonderlic describes it as 50 questions in 12 minutes covering simple math, basic logic, language comprehension, spatial reasoning and pattern identification, getting harder as the test goes on; its test-taker pages name word problems, number series, logic puzzles, vocabulary and analogies. The score is estimated from the whole response pattern, with each question weighted by its difficulty and the effect of guessing. There is no universal pass or fail: each employer compares results with the profile for the role, and Wonderlic says the classic 50-question test averages a score of about 20.",
+    rows: [
+      { label: "Questions", value: "50" },
+      { label: "Time", value: "12 minutes, about 14 seconds a question" },
+      { label: "Question types", value: "Simple math, word problems, number series, vocabulary, analogies, logic and spatial reasoning" },
+      { label: "Difficulty", value: "Gets harder as the test goes on" },
+      { label: "Scoring", value: "Weighted by each question's difficulty and the effect of guessing" },
+      { label: "Pass mark", value: "None: employers compare results with the profile for the role" },
+      { label: "Average", value: "About 20 out of 50 on the classic test" },
+      { label: "Given by", value: "Wonderlic, for employers, usually online" },
+    ],
+    basedOn: "Wonderlic's cognitive ability science page, Wonderlic Select product page, WPT-R product sheet and test-taker hub (checked November 2026)",
+    source: { name: "Wonderlic", url: "https://wonderlic.com/science/cognitive-ability/" },
+    tigertest:
+      "Tigertest has two timed Wonderlic-style practice tests of 50 original questions in 12 minutes, ordered from easier to harder, and seven drills: vocabulary, verbal reasoning, arithmetic, word problems, number and letter series, logic and spatial reasoning. Start for free, no account required; the Spatial Reasoning drill and Practice Test 2 are part of Premium. Scores are percent correct, not a Wonderlic score.",
+  },
   lsat: {
     answer:
       "The LSAT has four 35-minute multiple-choice sections: two scored Logical Reasoning sections, one scored Reading Comprehension section and one unscored variable section of either type that LSAC uses to try out new questions, with a 10-minute intermission between the second and third sections. Analytical Reasoning (logic games) was dropped in August 2024. The score runs from 120 to 180, based on the number of questions answered correctly, with no deduction for wrong answers. LSAT Argumentative Writing, a 50-minute unscored essay taken online, must be on file before a score is released. From August 2027 the unscored questions move inside the three sections, which LSAC says will test the same skills.",

@@ -1418,6 +1418,11 @@
   "https://selectiveentry.acer.org/vic/prepare",
   "https://selectiveentry.acer.org/vic/exam-day"
  ],
+ "wonderlic": [
+  "https://wonderlic.com/science/cognitive-ability/",
+  "https://wonderlic.com/select-hiring-assessment/cognitive/",
+  "https://wonderlic.com/wp-content/uploads/2017/06/WPT-R_Description_MSP.pdf"
+ ],
  "zak53": [
   "https://www.gov.za/services/driving-licence/apply-learners-licence",
   "https://www.arrivealive.co.za/speed-limits-and-the-law",

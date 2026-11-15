@@ -69,7 +69,7 @@ export const DIMENSIONS: Record<Dimension, { label: string; unit: string; steps:
   answers: { label: "Questions answered", unit: "questions", steps: [0, 10, 25, 50, 100, 200, 400, 800] },
   tests: { label: "Practice tests finished", unit: "tests", steps: [0, 1, 2, 3, 5, 8] },
   activeDays: { label: "Days active", unit: "days", steps: [1, 2, 3, 5, 8, 15] },
-  paywallViews: { label: "Paywall views", unit: "views", steps: [0, 1, 2, 3, 5, 10] },
+  paywallViews: { label: "Paywalls seen", unit: "paywalls", steps: [0, 1, 2, 3, 5, 10] },
 };
 
 export interface LadderStep {
@@ -129,7 +129,7 @@ export function quantile(values: number[], q: number): number | null {
   return s[Math.min(s.length - 1, Math.floor(q * s.length))];
 }
 
-// ─── Questions x paywall views ─────────────────────────────────────────────
+// ─── Questions x paywalls seen ─────────────────────────────────────────────
 export const GRID_ANSWERS = [0, 25, 100, 200, 400];
 export const GRID_VIEWS = [0, 1, 2, 3, 5];
 
@@ -139,7 +139,7 @@ export interface GridCell {
   rate: number;
 }
 
-/** cells[a][v]: accounts with at least GRID_ANSWERS[a] questions AND GRID_VIEWS[v] paywall views. */
+/** cells[a][v]: accounts with at least GRID_ANSWERS[a] questions AND GRID_VIEWS[v] different paywalls seen. */
 export function grid(rows: ConvRow[]): GridCell[][] {
   return GRID_ANSWERS.map((minA) =>
     GRID_VIEWS.map((minV) => {
@@ -308,8 +308,8 @@ export function insights(rows: ConvRow[], today: number): string[] {
   if (one && three && three.reached >= 30 && one.rate > 0) {
     out.push(
       three.rate > one.rate * 1.2
-        ? `Seeing the paywall again helps: ${pct(three.rate)} of accounts with 3 or more views paid, against ${pct(one.rate)} of everyone who saw one.`
-        : `Repeat paywall views do not add much: ${pct(three.rate)} of accounts with 3 or more views paid, against ${pct(one.rate)} of everyone who saw one. ${pct(s.firstViewBuyers / s.buyers)} of buyers paid on their first view.`,
+        ? `Seeing more paywalls helps: ${pct(three.rate)} of accounts that saw 3 or more different paywalls paid, against ${pct(one.rate)} of everyone who saw one.`
+        : `More paywalls do not add much: ${pct(three.rate)} of accounts that saw 3 or more different paywalls paid, against ${pct(one.rate)} of everyone who saw one. ${pct(s.firstViewBuyers / s.buyers)} of buyers paid having seen just one.`,
     );
   }
 

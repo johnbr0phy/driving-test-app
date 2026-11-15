@@ -133,11 +133,65 @@ export function beforePurchase(
   return { share: before + after > 0 ? before / (before + after) : 1, testsBefore, answersAfter: after };
 }
 
+/**
+ * Answers and finished tests on v2 exams (users/{uid}.v2), which `_stats`
+ * never counts: drill tallies, older drill progress with no tally (once
+ * each), and every answered item of a finished practice test. Drill answers
+ * carry no time, so for a buyer they count as before the purchase, like v1
+ * answers with no time. Exported for tests.
+ */
+export function v2Activity(
+  v2: unknown,
+  purchasedAt: number | null,
+): { answers: number; tests: number; answersBefore: number; testsBefore: number } {
+  const d = (v2 && typeof v2 === 'object' ? v2 : {}) as {
+    questionStats?: Record<string, Record<string, { n?: unknown }>>;
+    drills?: Record<string, { masteredIds?: unknown; wrongQueue?: unknown }>;
+    results?: { examId?: unknown; completedAt?: unknown; items?: unknown }[];
+  };
+  let drill = 0;
+  const tallied = new Set<string>();
+  for (const [examId, byQ] of Object.entries(d.questionStats || {})) {
+    for (const [id, t] of Object.entries(byQ || {})) {
+      const n = Math.max(0, Math.floor(num(t?.n)));
+      if (n > 0) tallied.add(`${examId}:${id}`);
+      drill += n;
+    }
+  }
+  const legacy = new Set<string>();
+  for (const [key, st] of Object.entries(d.drills || {})) {
+    const examId = key.split(':')[0];
+    for (const list of [st?.masteredIds, st?.wrongQueue]) {
+      for (const id of Array.isArray(list) ? list : []) {
+        if (typeof id === 'string' && !tallied.has(`${examId}:${id}`)) legacy.add(`${examId}:${id}`);
+      }
+    }
+  }
+  drill += legacy.size;
+  let tests = 0;
+  let testsBefore = 0;
+  let testAnswers = 0;
+  let testAnswersBefore = 0;
+  for (const r of Array.isArray(d.results) ? d.results : []) {
+    const items = Array.isArray(r?.items) ? (r.items as { answer?: unknown }[]) : [];
+    const answered = items.filter((it) => it && it.answer !== undefined && it.answer !== null && it.answer !== '' && !(Array.isArray(it.answer) && it.answer.length === 0)).length;
+    const at = ms(r?.completedAt);
+    const before = purchasedAt === null || at === null || at <= purchasedAt;
+    tests++;
+    testAnswers += answered;
+    if (before) {
+      testsBefore++;
+      testAnswersBefore += answered;
+    }
+  }
+  return { answers: drill + testAnswers, tests, answersBefore: drill + testAnswersBefore, testsBefore };
+}
+
 export async function buildConversion(): Promise<ConversionPayload> {
   const db = getAdminDb();
   const [usersSnap, paymentsSnap, paywallsDoc, originsSnap, internalUids] = await Promise.all([
     db.collection('users')
-      .select('createdAt', 'activeDates', 'lastUpdated', 'subscription', 'paywallHits', '_stats', 'primaryExam', 'selectedState', 'paywallCountry', 'region', 'topPrepper')
+      .select('createdAt', 'activeDates', 'lastUpdated', 'subscription', 'paywallHits', '_stats', 'primaryExam', 'selectedState', 'paywallCountry', 'region', 'topPrepper', 'v2.questionStats', 'v2.drills', 'v2.results')
       .get(),
     db.collection('payments').get(),
     db.doc('analytics/paywalls').get(),
@@ -234,6 +288,7 @@ export async function buildConversion(): Promise<ConversionPayload> {
     purchaseDay: string | null;
     dates: string[];
     statsAnswers: number;
+    v2: ReturnType<typeof v2Activity>;
     lastActive: string | null;
     soldFeature: string | null;
     market: string;
@@ -249,6 +304,9 @@ export async function buildConversion(): Promise<ConversionPayload> {
     const paid = sub.isPremium === true || paidAt.has(doc.id);
     const stats = (d._stats || {}) as Record<string, unknown>;
     const statsAnswers = num(stats.trainingQuestionsAnswered) + num(stats.testQuestionsAnswered);
+    // v2 exams (SAT, ITIL, PSM...) never write _stats; their progress is in users/{uid}.v2.
+    const purchasedAt = paid ? ms(sub.purchasedAt) ?? paidAt.get(doc.id) ?? null : null;
+    const v2 = v2Activity(d.v2, purchasedAt);
     const hits: Hit[] = Object.entries((d.paywallHits || {}) as Record<string, Record<string, unknown>>).map(([key, rec]) => ({
       key,
       feature: paywallHitFeature(key),
@@ -256,14 +314,13 @@ export async function buildConversion(): Promise<ConversionPayload> {
       lastAt: ms(rec?.lastAt),
       label: typeof rec?.label === 'string' ? rec.label : key,
     }));
-    if (!paid && statsAnswers === 0 && hits.length === 0) continue;
+    if (!paid && statsAnswers === 0 && v2.answers === 0 && hits.length === 0) continue;
 
     const dates = (Array.isArray(d.activeDates) ? (d.activeDates as unknown[]) : [])
       .filter((x): x is string => typeof x === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x))
       .sort();
     const signupDay = dayKey(d.createdAt) ?? dates[0] ?? dayKey(d.lastUpdated);
     const lastActive = dates[dates.length - 1] ?? dayKey(d.lastUpdated);
-    const purchasedAt = paid ? ms(sub.purchasedAt) ?? paidAt.get(doc.id) ?? null : null;
     const purchaseDay = purchasedAt !== null ? new Date(purchasedAt).toISOString().slice(0, 10) : null;
     const tp = d.topPrepper as { group?: unknown; at?: unknown } | undefined;
     const tpAt = ms(tp?.at);
@@ -324,15 +381,18 @@ export async function buildConversion(): Promise<ConversionPayload> {
       purchaseDay,
       dates,
       statsAnswers,
+      v2,
       lastActive,
       soldFeature,
       market,
       row: {
         paid,
-        answers: statsAnswers,
-        tests: num(stats.testsCompleted),
+        answers: statsAnswers + v2.answers,
+        tests: num(stats.testsCompleted) + v2.tests,
         activeDays: Math.max(1, daysBefore),
-        paywallViews: hits.reduce((n, h) => n + h.count, 0),
+        // Distinct paywalls seen (location and item), not taps: someone
+        // tapping the same locked card three times saw one paywall.
+        paywallViews: hits.length,
         paywalls: features.size,
         exam: 0,
         signupDay: dayNumber(signupDay),
@@ -357,9 +417,10 @@ export async function buildConversion(): Promise<ConversionPayload> {
     docs.forEach((snap, j) => {
       const a = chunk[j];
       const b = beforePurchase((snap.data() || {}) as Record<string, unknown>, a.purchasedAt);
-      a.row.answers = Math.round(a.statsAnswers * b.share);
-      a.row.answersAfter = Math.max(a.statsAnswers - a.row.answers, 0);
-      a.row.tests = Math.min(a.row.tests, b.testsBefore);
+      const v1Before = Math.round(a.statsAnswers * b.share);
+      a.row.answers = v1Before + a.v2.answersBefore;
+      a.row.answersAfter = Math.max(a.statsAnswers - v1Before, 0) + (a.v2.answers - a.v2.answersBefore);
+      a.row.tests = Math.min(a.row.tests - a.v2.tests, b.testsBefore) + a.v2.testsBefore;
     });
   }
 

@@ -56,7 +56,7 @@ def Q(test, d, domain, skill, stem, opts, expl, stim=None, locked=False, chk=Non
             "explanation": expl, "stim": stim, "locked": locked, "chk": chk, "key": key}
 
 
-NUM = re.compile(r"^(\\\$)?-?[\d,]*\.?\d+(\s?(x|×)\s?10\^?[-⁻]?[\d⁰¹²³⁴⁵⁶⁷⁸⁹]+)?(\s?[A-Za-zµ°%/^²³⁻¹·\-]+[A-Za-z0-9µ°%/^²³⁻¹·\-]*)*$")
+NUM = re.compile(r"^(\\\$)?-?[\d,]*\.?\d+(\s?(x|×)\s?10\^?[-⁻]?[\d⁰¹²³⁴⁵⁶⁷⁸⁹]+)?(?:\s?[A-Za-zµ°%/^²³⁻¹·\-][A-Za-z0-9µ°%/^²³⁻¹·\-]*(?:\s[A-Za-zµ°%/^²³⁻¹·\-][A-Za-z0-9µ°%/^²³⁻¹·\-]*)*)?$")
 FIRST = re.compile(r"-?\d[\d,]*\.?\d*(?:\s?(?:x|×)\s?10\^?(-?\d+))?")
 
 

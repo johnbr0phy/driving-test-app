@@ -58,6 +58,6 @@ Q = [
  'It is seated and locked', ['It sits loose for steam', 'It is removed for steam', 'It is left unlatched'],
  'If the plate holding the filter is loose, the filter can shift and leave an open path into the container.'),
 ('A peel pouch with a heavy instrument has a pinhole in the plastic after sterilization. What is its status?',
- 'Contaminated and repackaged', ['Sterile if the indicator changed', 'Usable for minor cases', 'Sterile if used today'],
+ 'Not sterile, so repackaged', ['Sterile if the indicator changed', 'Usable for minor cases', 'Sterile if used today'],
  'Any breach of the barrier means the contents are no longer sterile. Heavy or pointed items in pouches should be protected to prevent holes.'),
 ]

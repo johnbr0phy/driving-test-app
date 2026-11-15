@@ -16,7 +16,7 @@ Q = [
  'As nonsterile and recalled', ['As sterile if the CI passed', 'As sterile once retested', 'As sterile for minor cases'],
  'CDC says that after a single positive BI with a method other than steam, all items processed since the last acceptable BI are treated as nonsterile and retrieved, if possible, for reprocessing.'),
 ("A technician opens the sterilizer and finds a set with visible water droplets on the wrapper. What is the set's status?",
- 'A wet pack, so not usable', ['Sterile once it dries', 'Sterile if the BI is negative', 'Usable for the next case'],
+ 'A wet pack, not sterile', ['Sterile once it dries', 'Sterile if the BI is negative', 'Usable for the next case'],
  'Moisture can wick microbes through the barrier, so a wet pack is considered contaminated and is reprocessed. The cause is then investigated.'),
 ('Which is a common cause of wet packs?',
  'Dense, heavy metal loads', ['Labels written in ink', 'Pouches placed on edge', 'Sets wrapped the day before'],

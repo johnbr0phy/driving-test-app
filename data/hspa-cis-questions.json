@@ -2066,7 +2066,7 @@
     "optionA": "Sterile if the indicator changed",
     "optionB": "Usable for minor cases",
     "optionC": "Sterile if used today",
-    "optionD": "Contaminated and repackaged",
+    "optionD": "Not sterile, so repackaged",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Any breach of the barrier means the contents are no longer sterile. Heavy or pointed items in pouches should be protected to prevent holes."
@@ -2148,7 +2148,7 @@
     "category": "cisSterile",
     "question": "A technician opens the sterilizer and finds a set with visible water droplets on the wrapper. What is the set's status?",
     "optionA": "Sterile once it dries",
-    "optionB": "A wet pack, so not usable",
+    "optionB": "A wet pack, not sterile",
     "optionC": "Sterile if the BI is negative",
     "optionD": "Usable for the next case",
     "correctAnswer": "B",

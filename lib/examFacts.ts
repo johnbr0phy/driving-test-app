@@ -4495,6 +4495,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Nursing Council of New Zealand: Register as a nurse, Registered nurse scope of practice (January 2025) and Standards of competence for registered nurses (2025), checked November 2026",
     source: { name: "Nursing Council of New Zealand: Register as a nurse", url: "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Register_as_a_nurse.aspx" },
   },
+  nzensf: {
+    answer:
+      "The State Final Examination for enrolled nurses is the examination the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) sets for graduates of the 18-month Diploma in Enrolled Nursing before it registers them in the enrolled nurse scope. The Council's handbook for nursing programmes describes it as 90 multiple-choice questions in 90 minutes, held in March, July and November, with an overall pass of 70% across the whole exam; the Council's FAQ adds that there is no pass mark for each category and that candidates have three attempts. The 2025 sample paper has two parts, Part A Medicine Calculations and Part B Nursing Knowledge, with four options a question, answered as an enrolled nurse would act. Part B is linked to the five pou of the Standards of competence for enrolled nurses (February 2025).",
+    rows: [
+      { label: "Run by", value: "Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa)" },
+      { label: "Who sits it", value: "Diploma in Enrolled Nursing graduates, before registration" },
+      { label: "Questions", value: "90 multiple choice, four options each" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Parts", value: "Part A Medicine Calculations, Part B Nursing Knowledge" },
+      { label: "Pass mark", value: "70% overall, no pass mark for each category" },
+      { label: "Attempts", value: "Three" },
+      { label: "Sittings", value: "March, July and November" },
+      { label: "Standards", value: "Enrolled nurse scope and standards of competence, 2025 (five pou)" },
+    ],
+    basedOn: "Nursing Council of New Zealand: Handbook for pre-registration nursing programmes (May 2022), State Final Examination FAQ (October 2024), EN sample questions 2025, Enrolled nurse scope of practice (January 2025) and Standards of competence for enrolled nurses (February 2025), checked November 2026",
+    source: { name: "Nursing Council of New Zealand: Enrolled nurse", url: "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Enrolled_nurse.aspx" },
+  },
   sgrtt: {
     answer:
       "The Riding Theory Test (RTT) is the second theory test for a class 2B motorcycle licence in Singapore, taken after the Basic Theory Test and before the Practical Riding Test. The Traffic Police say it tests riding safety, proper riding techniques and your interaction with other road users, based on their Riding Theory Booklet. After passing it you must pass the Practical Riding Test within one year, or take the RTT again. The Traffic Police do not publish the question count or pass mark; Tigertest's mock tests use 50 questions with a target of 45, the format guides quote for the BTT and FTT.",

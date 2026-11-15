@@ -107,6 +107,10 @@ const CASES = [
   ["teoriprøve lastbil", "DK", "dktruck"],
   ["denmark truck theory test", "DK", "dktruck"],
   ["kørekort lastbil", "DK", "dktruck"],
+  ["enrolled nurse state final", "NZ", "nzensf"],
+  ["en state final", "NZ", "nzensf"],
+  ["enrolled nurse exam nz", "NZ", "nzensf"],
+  ["diploma in enrolled nursing", "NZ", "nzensf"],
 ];
 
 for (const [q, region, id] of CASES) {

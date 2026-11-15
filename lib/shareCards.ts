@@ -1128,6 +1128,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(180, 85%, 34%)",
     "tint": "hsl(180, 60%, 95%)"
   },
+  "nzensf": {
+    "color": "hsl(331, 70%, 38%)",
+    "tint": "hsl(331, 60%, 96%)"
+  },
   "sgrtt": {
     "color": "hsl(105, 60%, 22%)",
     "tint": "hsl(105, 40%, 95%)"

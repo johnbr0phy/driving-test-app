@@ -116,4 +116,5 @@ export const BANK_SIZES: Record<string, number> = {
   toeflread: 194,
   iimcat: 193,
   nziqn: 200,
+  nzensf: 212,
 };

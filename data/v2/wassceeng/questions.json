@@ -606,7 +606,7 @@
     "correct": [
       0
     ],
-    "explanation": "An optimistic person expects things to go well; a pessimistic one expects them to go badly. Hopeful and confident are close in meaning."
+    "explanation": "An optimistic person expects things to go well; a pessimistic one expects them to go badly. Hopeful and enthusiastic are close in meaning, and an anxious person is worried rather than sure of failure."
   },
   {
     "id": "WASSCEENG-T1-030",
@@ -2581,7 +2581,7 @@
     "correct": [
       1
     ],
-    "explanation": "A satellite orbits the earth and sends back signals, such as weather images. An antenna only receives or sends signals on the ground."
+    "explanation": "A satellite orbits the earth and sends back signals, such as weather images. An antenna is only the part that sends or picks up signals, not the craft in orbit."
   },
   {
     "id": "WASSCEENG-T2-014",
@@ -3306,15 +3306,15 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Number",
-    "stem": "Choose the option that best completes the sentence.\n\nThe bride's two ...... sat at the high table.",
+    "stem": "Choose the option that best completes the sentence.\n\nThe two ...... met for the first time at the wedding.",
     "options": [
-      "mothers-in-law",
-      "mother-in-law",
       "mother-in-laws",
+      "mother-in-law",
+      "mothers-in-law",
       "mothers-in-laws"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "In a compound like mother-in-law, the main noun takes the plural: mothers-in-law."
   },
@@ -3768,17 +3768,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Prepositions",
-    "stem": "Choose the option that best completes the sentence.\n\nThe teacher shared the sweets ...... the three pupils.",
+    "stem": "Choose the option that best completes the sentence.\n\nThe teacher shared the sweets ...... the whole class.",
     "options": [
+      "along",
       "within",
-      "among",
       "between",
-      "along"
+      "among"
     ],
     "correct": [
-      1
+      3
     ],
-    "explanation": "Among is used for three or more, between for two."
+    "explanation": "Among is used for a group of three or more, such as a class; between is mainly used for two."
   },
   {
     "id": "WASSCEENG-T2-071",

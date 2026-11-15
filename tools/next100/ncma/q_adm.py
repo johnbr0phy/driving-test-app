@@ -2,7 +2,7 @@ CAT = "ncmaAdmin"; SEG = "ADM"
 # NCMA content category 3: Medical Administrative Duties (tasks 1 to 9).
 Q = [
 ("A patient walks up to the desk while the medical assistant is on a phone call. What should the medical assistant do?",
- "Make eye contact and nod", ["Put the caller on hold at once", "Finish the call before looking up", "Wait until she speaks first"],
+ "Make eye contact and nod", ["Stop the call to greet her aloud", "Finish the call before looking up", "Wait until she speaks first"],
  "A quick nod or smile tells the patient she has been seen. The call is then finished or put on hold properly before helping her."),
 ("A walk-in patient at the front desk has a swollen face and is struggling to breathe. What should the medical assistant do?",
  "Get clinical staff at once", ["Have her sign in, then alert staff", "Book a same-day sick visit", "Seat her by the desk to watch"],

@@ -1,4 +1,5 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  ncma: { title: "Free NCMA Practice Test", description: "200 original questions on the NCCT NCMA detailed test plan for medical assistants. Free to start." },
   aufirearmsvic: { title: "Victoria Firearms Safety Practice Test", description: "Review Victorian firearms law, licence categories, permits, storage and the ten safety rules before your course." },
   cmaa: { title: "Free CMAA Practice Test", description: "200 original questions on the NHA CMAA test plan for medical administrative assistants. Free to start." },
   cbspd: { title: "Free CBSPD CSPDT Practice Test", description: "200 original questions on CBSPD's technician exam outline, from decontamination to sterilization and storage. Free to start." },

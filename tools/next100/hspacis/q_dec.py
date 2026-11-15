@@ -1,6 +1,6 @@
 CAT = "cisDecon"; SEG = "DEC"
 Q = [
-("Before the day's cases start, the decontamination lead checks detergent stock, brush sizes and which trays come back first. Which outline task is this?",
+("Before the day's cases start, the decontamination lead checks detergent stock, brush sizes and which trays come back first. What part of the cleaning process is this?",
  "Planning for the cleaning", ["Verifying the cleaning results", "Auditing sterile storage", "Testing water for endotoxins"],
  "Gathering supplies and deciding which instrumentation to clean first is planning and preparation for the cleaning process. Verification comes after cleaning is done."),
 ("A protein residue swab is run on a cleaned set of ring-handled instruments. What does it check?",
@@ -33,9 +33,9 @@ Q = [
 ("Which tool lets a technician see the inside of a cannulated instrument's lumen after cleaning?",
  "A borescope", ["A continuity tester", "A pH meter", "A heat sealer"],
  "A borescope is a thin camera or optical probe passed into a lumen to show retained soil or damage. A continuity tester checks electrical cords, not lumens."),
-("What is the correct order for taking off PPE after leaving the decontamination area?",
+("In CDC's first example sequence for removing PPE, in what order is it taken off?",
  "Gloves, eyewear, gown, mask", ["Mask, gloves, gown, eyewear", "Eyewear, gloves, mask, gown", "Gown, gloves, mask, eyewear"],
- "CDC's sequence takes gloves off first because they are the most contaminated, then goggles or face shield, then gown, then mask, with hand hygiene at the end. Touching the face with dirty gloves risks exposure."),
+ "CDC's Example 1 removes gloves first because they are the most contaminated, then goggles or face shield, then gown, then mask, with hand hygiene at the end. Touching the face with dirty gloves risks exposure."),
 ("Under OSHA's bloodborne pathogens standard, who pays for the PPE a decontamination technician needs?",
  "The employer", ["The technician", "The instrument vendor", "The surgeon's office"],
  "OSHA 1910.1030 requires the employer to provide appropriate personal protective equipment at no cost to the employee."),

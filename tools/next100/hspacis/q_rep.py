@@ -28,7 +28,7 @@ Q = [
  "Have it serviced first", ["Use it only on short lumens", "Turn up the room lights", "Clean it with steel wool"],
  "A faulty borescope cannot show residual soil, so inspection results become unreliable. It is serviced under the PM program."),
 ("A vendor sharpens scissors on site. What should the department keep from the visit?",
- "A record of each item", ["Only the invoice total", "A photo of the vendor", "Nothing, if no damage is seen"],
+ "A record of each item", ["Only the invoice total", "Only a list of failed items", "Nothing, if no damage is seen"],
  "Records of what was serviced, by whom and when show that PM was done and help trace an instrument that later fails."),
 ("Why should an instrument that failed inspection be tagged before it goes to repair?",
  "So it stays out of sets", ["So the vendor charges less", "So it can skip cleaning", "So it is sterilized first"],

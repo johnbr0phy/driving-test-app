@@ -272,3 +272,4 @@ import "./ascpmlt";
 import "./cbspd";
 import "./cmaa";
 import "./aufirearmsvic";
+import "./ncma";

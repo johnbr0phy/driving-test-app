@@ -6,7 +6,7 @@
       { label: "Time", value: "3 hours" },
       { label: "Passing score", value: "575 on a 200 to 720 scale" },
       { label: "Largest areas", value: "Patient Intake and Care 32, Law and Ethics 20, Pharmacology and General Medical Knowledge 18" },
-      { label: "Eligibility", value: "NCCT-authorized medical assistant program (student or graduate within 5 years), or 1 year of full-time work as a medical assistant" },
+      { label: "Eligibility", value: "NCCT-authorized medical assistant program (student or graduate within 5 years), 1 year of full-time work as a medical assistant within the past 5 years, or military training" },
       { label: "Where", value: "Computer based, at a test site or by remote proctoring; English only" },
       { label: "Retakes", value: "After 30 days for a 2nd and 3rd try, 90 days for a 4th, then 180 days with an appeal" },
       { label: "Given by", value: "NCCT" },

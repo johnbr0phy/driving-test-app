@@ -24,7 +24,7 @@ const description =
 const faqs = [
   {
     q: "What is the NCMA exam?",
-    a: "It is the certification exam for the National Certified Medical Assistant credential from the National Center for Competency Testing (NCCT). It covers clinical and front office work: pharmacology and medical knowledge, infection control, patient intake and care, phlebotomy, ECG, administrative duties, and law and ethics. Candidates qualify through an NCCT-authorized medical assistant program or verified work experience.",
+    a: "It is the certification exam for the National Certified Medical Assistant credential from the National Center for Competency Testing (NCCT). It covers clinical and front office work: pharmacology and medical knowledge, infection control, patient intake and care, phlebotomy, ECG, administrative duties, and law and ethics. Candidates qualify through an NCCT-authorized medical assistant program, formal military medical training, or a year of verified full-time work as a medical assistant within the past five years.",
   },
   {
     q: "How many questions are on the NCMA exam?",

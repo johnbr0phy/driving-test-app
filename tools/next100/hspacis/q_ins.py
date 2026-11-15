@@ -75,7 +75,7 @@ Q = [
 ("A technician finds a cracked tooth on the jaw of a tissue forceps. What is the right step?",
  "Pull it for repair or replacement", ["File the crack smooth and reuse it", "Tape over the crack", "Put it in the next set as a spare"],
  "Cracked or broken teeth can tear tissue or break off in the patient. The instrument goes out of service until repaired or replaced."),
-("What does the outline mean by checking instrument integrity and functionality?",
+("When an instrument is checked for integrity and functionality, what is confirmed?",
  "It is intact and works", ["It is clean enough to pack", "It is listed on a count sheet", "It is still under warranty"],
  "Integrity means no cracks, missing parts or damage; functionality means it opens, closes, cuts or holds as intended. Cleanliness is a separate check."),
 ("Why is the full count of a set checked against the count sheet before wrapping?",

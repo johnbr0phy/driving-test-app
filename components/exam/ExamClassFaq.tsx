@@ -9,6 +9,7 @@ import { teachPathFor } from "@/lib/teachPages";
 // page's FAQPage graph; keep the two in step.
 
 export const TEACHES: Record<string, string> = {
+  ncma: "a medical assistant program",
   cmaa: "a medical administrative assistant program",
   cbspd: "a sterile processing program",
   ascpmlt: "an MLT program",

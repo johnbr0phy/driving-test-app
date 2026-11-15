@@ -2022,7 +2022,7 @@
     "category": "ncmaAdmin",
     "question": "A patient walks up to the desk while the medical assistant is on a phone call. What should the medical assistant do?",
     "optionA": "Make eye contact and nod",
-    "optionB": "Put the caller on hold at once",
+    "optionB": "Stop the call to greet her aloud",
     "optionC": "Finish the call before looking up",
     "optionD": "Wait until she speaks first",
     "correctAnswer": "A",

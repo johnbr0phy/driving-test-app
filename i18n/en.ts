@@ -1168,6 +1168,14 @@ export const en = {
     fvicRules: "The Ten Safety Rules",
     fvicField: "In the Field",
     fvicParts: "Firearm Types, Actions & Ammunition",
+    // ncma
+    ncmaPharm: "Pharmacology & Medical Knowledge",
+    ncmaInfection: "Infection Control & Safety",
+    ncmaIntake: "Patient Intake & Care",
+    ncmaPhleb: "Phlebotomy",
+    ncmaEcg: "ECG",
+    ncmaAdmin: "Medical Administrative Duties",
+    ncmaLaw: "Law & Ethics",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

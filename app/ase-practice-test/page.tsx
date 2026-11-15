@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "ASE Practice Test 2026 - A1 to A8 Automobile Certification Tests";
+const title = "Free ASE Practice Test 2026 - A1 to A8 Automobile Certification Tests";
 const metaDescription =
   "ASE practice for the A1 to A8 Automobile tests: 320 original questions written from ASE's 2026 task lists, one training set per A-test and four mixed 50-question practice tests, every answer explained. Start for free.";
 const description =
@@ -125,7 +125,7 @@ export default function AseLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            ASE Practice Test 2026: A1 to A8
+            Free ASE Practice Test 2026: A1 to A8
           </h1>
           <ExamLandingHero
             dashboardHref="/ase/dashboard"

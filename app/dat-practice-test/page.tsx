@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "DAT Practice Test 2026 - Sciences, Reading and Quantitative";
+const title = "Free DAT Practice Test 2026 - Sciences, Reading and Quantitative";
 const metaDescription =
   "DAT practice test: 214 original questions in biology, general chemistry, organic chemistry, reading comprehension and quantitative reasoning, with explanations on every answer.";
 const description =
@@ -127,7 +127,7 @@ export default function DatLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            DAT Practice Test 2026
+            Free DAT Practice Test 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/dat/dashboard"

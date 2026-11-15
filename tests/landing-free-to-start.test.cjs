@@ -65,3 +65,23 @@ test('the facts of a paid exam never say all of it is free', () => {
     assert.ok(!/all free with no account|all of it is free/i.test(line), `lib/examFacts.ts (${id}): a paid exam must not say all of it is free`);
   }
 });
+
+// Every English exam landing's headline starts with "Free" and its page title says "Free"
+// (CLAUDE.md copy rule: titles keep "Free ... Practice Test"). Six landings shipped without
+// it in Nov 2026 because their <h1> is written by hand in each page.
+test('an English exam landing headline starts with "Free" and its title says Free', () => {
+  let checked = 0;
+  for (const file of pages(path.join(root, 'app'))) {
+    const source = fs.readFileSync(file, 'utf8');
+    if (!source.includes('ExamLandingHero')) continue;
+    const h1 = source.match(/<h1[^>]*>\s*([^<{]+?)\s*<\/h1>/);
+    if (!h1) continue;
+    const where = path.relative(root, file);
+    if (/^app\/(es|pt|de|fr|nl|it|pl|sv|da|fi|hu|ro|el|vi|ko|zh)\//.test(where)) continue;
+    assert.ok(h1[1].startsWith('Free '), `${where}: the headline must start with "Free" (it reads "${h1[1]}")`);
+    const title = source.match(/const title = "([^"]*)"/);
+    if (title) assert.ok(/\bfree\b/i.test(title[1]), `${where}: the page title must say Free`);
+    checked++;
+  }
+  assert.ok(checked > 200, `only ${checked} landings checked`);
+});

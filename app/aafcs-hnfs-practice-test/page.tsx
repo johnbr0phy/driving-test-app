@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "AAFCS HNFS Practice Test 2026 - Hospitality, Nutrition, and Food Science Exam";
+const title = "Free AAFCS HNFS Practice Test 2026 - Hospitality, Nutrition, and Food Science Exam";
 const metaDescription =
   "Free AAFCS HNFS practice: 200 original questions on the Hospitality, Nutrition, and Food Science exam specifications, four 50-question practice tests weighted like the real exam, every answer explained.";
 const description =

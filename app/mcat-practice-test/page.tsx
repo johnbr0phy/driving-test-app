@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "MCAT Practice Test 2026 - All Four Sections";
+const title = "Free MCAT Practice Test 2026 - All Four Sections";
 const metaDescription =
   "MCAT practice test: 234 original passage-based and discrete questions across Chem/Phys, CARS, Bio/Biochem and Psych/Soc, with explanations and a 472 to 528 score estimate.";
 const description =
@@ -126,7 +126,7 @@ export default function McatLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            MCAT Practice Test 2026
+            Free MCAT Practice Test 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/mcat/dashboard"

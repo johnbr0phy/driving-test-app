@@ -16,7 +16,7 @@ import { examOffers } from "@/lib/examSeo";
 const siteUrl = SITE_URL;
 const path = "/red-seal-automotive-service-technician-practice-test";
 
-const title = "Red Seal Automotive Service Technician Practice Test 2026";
+const title = "Free Red Seal Automotive Service Technician Practice Test 2026";
 const metaDescription =
   "Free Red Seal auto service technician practice: 200 original questions on engines, networks, driveline, HVAC, brakes, restraints and EVs. 70% to pass.";
 const description =

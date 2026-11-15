@@ -4523,6 +4523,20 @@
     --brand-gradient-to: 345 40% 96%;
   }
 
+  /* RMA (AMT) theme */
+  [data-theme="rma"] {
+    --brand: 72 85% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 72 50% 95%;
+    --brand-hover: 72 85% 21%;
+    --brand-dark: 72 85% 18%;
+    --brand-darker: 72 85% 12%;
+    --brand-muted: 72 25% 70%;
+    --brand-border: 72 30% 78%;
+    --brand-border-light: 72 30% 88%;
+    --brand-gradient-to: 87 50% 95%;
+  }
+
   /* National Home Inspector Examination theme */
   [data-theme="nhie"] {
     --brand: 30 35% 28%;
@@ -8809,6 +8823,18 @@
     --brand-muted: 330 20% 45%;
     --brand-dark: 330 35% 65%;
     --brand-darker: 330 35% 78%;
+  }
+
+  .dark [data-theme="rma"] {
+    --brand: 72 85% 26.7%;
+    --brand-hover: 72 85% 21%;
+    --brand-light: 72 45% 13%;
+    --brand-gradient-to: 87 40% 11%;
+    --brand-border-light: 72 30% 24%;
+    --brand-border: 72 30% 34%;
+    --brand-muted: 72 25% 45%;
+    --brand-dark: 72 85% 65%;
+    --brand-darker: 72 85% 78%;
   }
 
   .dark [data-theme="nhie"] {

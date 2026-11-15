@@ -100,6 +100,7 @@ export const TEACHES: Record<string, string> = {
   cpc: "a medical coding program",
   cca: "a medical coding or HIM program",
   cma: "a medical assisting program",
+  rma: "a medical assisting program",
   nbdhe: "a dental hygiene program",
   nptepta: "a PTA program",
   aatl2: "an AAT Level 2 accounting course",

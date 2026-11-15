@@ -194,6 +194,7 @@ import "./nce";
 import "./texesppr";
 import "./praxisplt";
 import "./cma";
+import "./rma";
 import "./nhie";
 import "./txadjuster";
 import "./ccaf";

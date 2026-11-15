@@ -321,6 +321,7 @@
   "texesppr": ["#883a44","#f9f0f1","#401c20","#ecdfe1"],
   "praxisplt": ["#6f6b25","#faf9f0","#343214","#ebeadb"],
   "cma": ["#6e3552","#f9f1f5","#371b29","#eadce3"],
+  "rma": ["#647b0a","#f6f9ec","#2e3905","#e6ead7"],
   "nhie": ["#60472e","#f8f5f1","#2e2419","#e8e3de"],
   "txadjuster": ["#6e3545","#f8f1f3","#351d23","#e8dee1"],
   "ccaf": ["#9b3e27","#fbf1ef","#4f2217","#ecddda"],

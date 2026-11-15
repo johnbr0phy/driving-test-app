@@ -190,6 +190,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   nce: { title: "National Counselor Exam (NCE)", description: "Study counseling ethics, assessment and diagnosis, clinical focus areas, theories and group work." },
   texesppr: { title: "TExES PPR (160)", description: "Practice all 13 PPR competencies, from planning and classroom management to Texas ethics and law." },
   praxisplt: { title: "Praxis PLT K-6 (5622)", description: "Review students as learners, instruction, assessment and professional responsibilities." },
+  rma: { title: "RMA (AMT) Exam", description: "Review body systems, terminology, law, insurance, lab work, vital signs, exams and pharmacology." },
   cma: { title: "CMA (AAMA) Exam", description: "Review patient intake, infection control, procedures, pharmacology, law and ethics, and billing." },
   nhie: { title: "National Home Inspector Exam", description: "Review roofing, structure, electrical, HVAC, plumbing, fireplaces, reporting and ethics." },
   txadjuster: { title: "Texas All-Lines Adjuster", description: "Review property, auto, liability and workers' comp claims, loss settlement and Texas law." },

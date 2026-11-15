@@ -1,5 +1,6 @@
 // The Premium locks on v1 exams (lib/examLocks.ts): the last quarter of the
-// dashboard's steps, with a state version's single test left free.
+// dashboard's steps, with a state version's single test left free, or an
+// exam's own Premium content block (premiumFrom, RBT).
 const test = require('node:test');
 const assert = require('node:assert/strict');
 require('tsx/cjs');
@@ -58,6 +59,7 @@ test('a state version locks training steps only: its one test stays free', () =>
 
 test('every national exam locks the tail of its dashboard, about a quarter, and ends on a test', () => {
   for (const exam of EXAMS) {
+    if (exam.premiumFrom) continue; // a Premium content block, tested below
     const steps = examSteps(exam);
     assert.equal(steps.length, examTrainingParts(exam).length + examTestIds(exam).length, exam.id);
     const locked = lockedStepNumbers(exam);
@@ -69,6 +71,28 @@ test('every national exam locks the tail of its dashboard, about a quarter, and 
     assert.ok(lockedTestIds(exam).includes(ids[ids.length - 1]), exam.id);
     assert.ok(lockedTestIds(exam).length < ids.length, `${exam.id} has a free test`);
     assert.ok(lockedTrainingParts(exam).length < examTrainingParts(exam).length, `${exam.id} has a free training step`);
+  }
+});
+
+test('RBT: the original 200 questions are free and come first; Premium is Tests 5 to 8 and every scenario part', () => {
+  const exam = getExamById('rbt');
+  assert.deepEqual(exam.premiumFrom, { test: 5, part: 2 });
+  const steps = examSteps(exam);
+  assert.equal(steps.length, 16);
+  assert.deepEqual(lockedStepNumbers(exam), [9, 10, 11, 12, 13, 14, 15, 16]);
+  assert.deepEqual(lockedTestIds(exam), examTestIds(exam).slice(4));
+  assert.deepEqual(lockedTrainingParts(exam).map((p) => [p.set.setNumber, p.part]), [[1, 2], [2, 2], [3, 2], [4, 2]]);
+  // Every scenario question (RBT-S...) is in a locked part and in no free test.
+  require('../lib/banks/rbt.ts');
+  const { examTestQuestions } = require('../lib/examTestGenerator.ts');
+  const { trainingPartOf } = require('../lib/exams.ts');
+  for (let n = 1; n <= 8; n++) {
+    const scenario = examTestQuestions(exam, n).filter((q) => q.questionId.startsWith('RBT-S')).length;
+    assert.equal(scenario, n <= 4 ? 0 : 50, `test ${n}`);
+  }
+  for (const def of exam.trainingSets) {
+    assert.equal(trainingPartOf(def.id, def.setNumber === 3 ? 'RBT-SRED-001' : def.setNumber === 2 ? 'RBT-SACQ-001' : def.setNumber === 1 ? 'RBT-SASM-001' : 'RBT-SDOC-001'), 2, `set ${def.setNumber}`);
+    assert.equal(trainingPartOf(def.id, def.setNumber === 4 ? 'RBT-ETH-028' : def.setNumber === 3 ? 'RBT-RED-036' : def.setNumber === 2 ? 'RBT-ACQ-052' : 'RBT-DAT-036'), 1, `set ${def.setNumber}`);
   }
 });
 

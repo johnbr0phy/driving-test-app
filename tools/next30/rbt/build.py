@@ -2,14 +2,22 @@
 import importlib.util, json, sys, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
-ORDER = ["data", "assess", "acq", "reduce", "doc", "ethics"]
+# The original 200 (free), then the 200 scenario questions added Nov 2026
+# (Premium: Tests 5 to 8 and part 2 of every set). The scenario segments
+# (SDAT, SASM...) sort after the originals inside every set and category pool,
+# so Tests 1 to 4 and saved progress are unchanged.
+ORDER = ["data", "sdata", "assess", "sassess", "acq", "sacq",
+         "reduce", "sreduce", "doc", "sdoc", "ethics", "sethics"]
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "rbt-questions.json")
 rows = []
+seen = set()
 for m in ORDER:
     p = os.path.join(HERE, "q_" + m + ".py")
     spec = importlib.util.spec_from_file_location(m, p); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
     for i, (q, key, wrong, expl) in enumerate(mod.Q):
         assert len(wrong) == 3, (m, i)
+        assert len(set([key, *wrong])) == 4, (m, i, "duplicate option")
+        assert q not in seen, (m, i, "duplicate stem"); seen.add(q)
         k = i % 4
         opts = list(wrong); opts.insert(k, key)
         rows.append({"type": "RBT", "state": "ALL", "questionId": f"RBT-{mod.SEG}-{i+1:03d}",

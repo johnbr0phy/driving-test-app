@@ -1,0 +1,16 @@
+{
+  "id": "aufirearmsqld", "stateCode": "AUFAQLD", "idBase": 29400, "prefix": "AUFAQLD-",
+  "slug": "/qld-firearms-licence", "landingPath": "/qld-firearms-safety-test-practice-test", "dataFile": "data/qld-firearms-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 80,
+  "categories": [
+    {"key": "fqLaw", "perTest": 7, "pool": 28, "segment": "LAW"},
+    {"key": "fqCategories", "perTest": 5, "pool": 20, "segment": "CAT"},
+    {"key": "fqStorage", "perTest": 6, "pool": 24, "segment": "STO"},
+    {"key": "fqTransport", "perTest": 6, "pool": 24, "segment": "TRA"},
+    {"key": "fqConduct", "perTest": 6, "pool": 24, "segment": "CON"},
+    {"key": "fqCode", "perTest": 8, "pool": 32, "segment": "COD"},
+    {"key": "fqField", "perTest": 7, "pool": 28, "segment": "FLD"},
+    {"key": "fqActions", "perTest": 5, "pool": 20, "segment": "ACT"}
+  ],
+  "notes": "11029NAT Course in Firearms and Weapons Safety (QPS, current to 30 April 2027): core unit NAT11029001 (legislation, weapons and community safety) and NAT11029002 (use category A and B firearms lawfully, safely and responsibly). No published weights or pass mark; split is Tigertest's: law and licensing 30, safe handling and use 20 of 50."
+}

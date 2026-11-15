@@ -526,10 +526,10 @@
     "optionA": "Fix it himself with tape",
     "optionB": "Report it promptly",
     "optionC": "Ignore it, it is not security",
-    "optionD": "Mention it next week",
+    "optionD": "Report it next week",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Section 13(1)(h) requires an employee to report any defect in the place of work that might endanger anyone to the employer or another appropriate person as soon as practicable."
+    "explanation": "Section 13(1)(h) requires an employee to report any defect in the place of work that might endanger anyone to the employer or another appropriate person as soon as practicable. A report next week is not as soon as practicable."
   },
   {
     "type": "IEPSA",
@@ -566,12 +566,12 @@
     "category": "iepsaRole",
     "question": "A colleague on the same shift is struggling with a queue of visitors. What should you do?",
     "optionA": "Help if your post allows",
-    "optionB": "Leave your post at once",
+    "optionB": "Leave your post to help",
     "optionC": "Report him for being slow",
     "optionD": "Ignore it, it is his job",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Good teamwork means supporting colleagues without abandoning your own post. If your post must stay covered, call the supervisor."
+    "explanation": "Good teamwork means supporting colleagues without abandoning your own post. If your post must stay covered, call the supervisor rather than leaving it to help."
   },
   {
     "type": "IEPSA",
@@ -706,12 +706,12 @@
     "category": "iepsaPowers",
     "question": "Is theft an arrestable offence?",
     "optionA": "No, it is a minor offence",
-    "optionB": "Only above a certain value",
+    "optionB": "Yes, but only above a set value",
     "optionC": "Yes, up to 10 years' jail",
     "optionD": "Only on a second offence",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Section 4(6) of the Criminal Justice (Theft and Fraud Offences) Act 2001 sets a maximum of 10 years' imprisonment for theft, above the five years that makes an offence arrestable."
+    "explanation": "Section 4(6) of the Criminal Justice (Theft and Fraud Offences) Act 2001 sets a maximum of 10 years' imprisonment for theft, whatever the value, above the five years that makes an offence arrestable."
   },
   {
     "type": "IEPSA",
@@ -721,11 +721,11 @@
     "question": "Is an attempt to commit an arrestable offence itself arrestable?",
     "optionA": "No, only completed offences",
     "optionB": "Only if property is taken",
-    "optionC": "Only with a Garda present",
+    "optionC": "Yes, but only with a Garda there",
     "optionD": "Yes, it is included",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Section 2 of the Criminal Law Act 1997 says an arrestable offence includes an attempt to commit any such offence."
+    "explanation": "Section 2 of the Criminal Law Act 1997 says an arrestable offence includes an attempt to commit any such offence. Nothing in it requires a Garda to be present."
   },
   {
     "type": "IEPSA",
@@ -848,10 +848,10 @@
     "optionA": "Yes, a threat counts as force",
     "optionB": "No, threats are always lawful",
     "optionC": "Only if written down",
-    "optionD": "Only if a weapon is shown",
+    "optionD": "Yes, but only with a weapon",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Section 20(1)(b)(i) treats a threat to use force as a use of force, so a threat must also be reasonable. Section 20(3) adds that a threat may be reasonable where actual force would not be."
+    "explanation": "Section 20(1)(b)(i) treats a threat to use force as a use of force, with or without a weapon, so a threat must also be reasonable. Section 20(3) adds that a threat may be reasonable where actual force would not be."
   },
   {
     "type": "IEPSA",
@@ -998,14 +998,14 @@
     "state": "ALL",
     "questionId": "IEPSA-POW-024",
     "category": "iepsaPowers",
-    "question": "A shopper refuses a bag search requested at the exit. What should the guard do?",
+    "question": "A shopper refuses a bag search requested at the exit, with no other sign of theft. What should the guard do?",
     "optionA": "Take the bag by force",
     "optionB": "Lock her in the shop",
-    "optionC": "Search it when she looks away",
-    "optionD": "Accept it and report it",
+    "optionC": "Accept it, call the Gardaí",
+    "optionD": "Accept it and note it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A bag search is by consent. Without an arrestable offence and the section 4 conditions, the guard records the refusal and informs the supervisor or Gardaí if there is real suspicion."
+    "explanation": "A bag search is by consent. Without an arrestable offence and the section 4 conditions, the guard accepts the refusal and records it. A refusal alone is not a crime, so the Gardaí are called only if there is real suspicion of an offence."
   },
   {
     "type": "IEPSA",
@@ -1042,12 +1042,12 @@
     "category": "iepsaPowers",
     "question": "A man starts punching a shop assistant. May a guard use reasonable force to protect her?",
     "optionA": "No, only to protect himself",
-    "optionB": "Only if she is his family",
+    "optionB": "Yes, but only if she is family",
     "optionC": "Yes, to protect another",
     "optionD": "Only once the Gardaí arrive",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Section 18(1)(a) of the 1997 Act covers reasonable force to protect yourself, a family member or another person from injury, assault or detention caused by a criminal act."
+    "explanation": "Section 18(1)(a) of the 1997 Act covers reasonable force to protect yourself, a family member or another person from injury, assault or detention caused by a criminal act. The other person does not have to be family."
   },
   {
     "type": "IEPSA",
@@ -1057,11 +1057,11 @@
     "question": "While waiting for the Gardaí after an arrest, the suspect says he feels unwell and has chest pain. What do you do?",
     "optionA": "Ignore it as a trick",
     "optionB": "Let him go home",
-    "optionC": "Make him sign a statement",
+    "optionC": "Get help once Gardaí arrive",
     "optionD": "Get medical help at once",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A guard who detains someone is responsible for their welfare. Chest pain needs emergency help; tell the Gardaí and record what happened."
+    "explanation": "A guard who detains someone is responsible for their welfare. Chest pain needs emergency help at once, not when the Gardaí arrive; tell the Gardaí and record what happened."
   },
   {
     "type": "IEPSA",
@@ -1098,12 +1098,12 @@
     "category": "iepsaPowers",
     "question": "A guard sees a man smashing a car window in the car park. Can he arrest him?",
     "optionA": "No, cars are not property",
-    "optionB": "Only if he owns the car",
+    "optionB": "Yes, whenever he sees damage",
     "optionC": "Yes, if he'd evade the Gardaí",
     "optionD": "Only after sending a warning letter",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Criminal damage under section 2 of the Criminal Damage Act 1991 can carry up to 10 years' imprisonment on indictment, so it is arrestable. The section 4(4) condition still applies: reasonable cause to suspect he would otherwise avoid Garda arrest."
+    "explanation": "Criminal damage under section 2 of the Criminal Damage Act 1991 can carry up to 10 years' imprisonment on indictment, so it is arrestable. The section 4(4) condition still applies, so seeing damage is not enough on its own: he needs reasonable cause to suspect the man would otherwise avoid Garda arrest."
   },
   {
     "type": "IEPSA",
@@ -1239,11 +1239,11 @@
     "question": "At the end of a shift, a key in the register is shown as signed out but not returned. What do you do?",
     "optionA": "Report it, follow it up",
     "optionB": "Sign it back in yourself",
-    "optionC": "Ignore it until tomorrow",
+    "optionC": "Report it tomorrow",
     "optionD": "Remove that page from it",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An unreturned key is a risk to the site. Contact the holder or the supervisor, record the action and never falsify the register."
+    "explanation": "An unreturned key is a risk to the site. Contact the holder or the supervisor now, record the action and never falsify the register; leaving the report until tomorrow leaves the key out overnight."
   },
   {
     "type": "IEPSA",
@@ -1350,12 +1350,12 @@
     "category": "iepsaAccess",
     "question": "Which is a good way to handle a confidential document left on a desk during a night patrol?",
     "optionA": "Secure it and report it",
-    "optionB": "Read it carefully",
+    "optionB": "Read it, then report it",
     "optionC": "Take it home to keep safe",
     "optionD": "Throw it in the bin",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Securing the document, for example in a locked drawer or by handing it to the supervisor, and recording it in the report protects the client without the guard reading it."
+    "explanation": "Securing the document, for example in a locked drawer or by handing it to the supervisor, and recording it in the report protects the client without the guard reading it. Reading it first breaks confidentiality even if it is reported afterwards."
   },
   {
     "type": "IEPSA",
@@ -1408,10 +1408,10 @@
     "optionA": "Close it and report it",
     "optionB": "Leave it open for airflow",
     "optionC": "Lock it with a chain",
-    "optionD": "Put a warning sign on it",
+    "optionD": "Leave it, report at shift end",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A propped fire door lets intruders in and lets fire and smoke spread. Close it, report it and never chain or lock a fire exit, which must stay usable."
+    "explanation": "A propped fire door lets intruders in and lets fire and smoke spread. Close it now, report it and never chain or lock a fire exit, which must stay usable. Reporting it at the end of the shift leaves it open for hours."
   },
   {
     "type": "IEPSA",
@@ -1517,7 +1517,7 @@
     "questionId": "IEPSA-PAT-005",
     "category": "iepsaPatrol",
     "question": "What is a lone worker check-call system for?",
-    "optionA": "Raising help if a call is missed",
+    "optionA": "Raising the alarm if a call is missed",
     "optionB": "Timing the guards' coffee breaks",
     "optionC": "Counting site visitors",
     "optionD": "Monitoring the weather",
@@ -1575,11 +1575,11 @@
     "question": "The same alarm sensor keeps going off with no sign of entry. What should the guard do?",
     "optionA": "Report the fault",
     "optionB": "Tape over the sensor",
-    "optionC": "Disconnect the alarm",
+    "optionC": "Disconnect it, report the fault",
     "optionD": "Stop checking that area",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Repeated false activations are a fault to report, not a reason to disable equipment. Disabling a sensor leaves a gap that an intruder could use."
+    "explanation": "Repeated false activations are a fault to report, not a reason to disable equipment. Disabling a sensor, even while reporting it, leaves a gap that an intruder could use."
   },
   {
     "type": "IEPSA",
@@ -1756,7 +1756,7 @@
     "category": "iepsaPatrol",
     "question": "Why should a patrol guard report a broken security light?",
     "optionA": "It wastes power",
-    "optionB": "Dark areas help intruders",
+    "optionB": "Dark areas hide intruders",
     "optionC": "It annoys the neighbours",
     "optionD": "It breaks the CCTV law",
     "correctAnswer": "B",
@@ -2147,13 +2147,13 @@
     "questionId": "IEPSA-EMG-002",
     "category": "iepsaEmergency",
     "question": "The fire alarm sounds in an office block. What is a guard's main job?",
-    "optionA": "Find and fight the fire",
+    "optionA": "Help staff fight the fire",
     "optionB": "Help everyone get out",
-    "optionC": "Collect the cash first",
+    "optionC": "Stay at the desk to report",
     "optionD": "Reset the alarm panel",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A guard follows the site's fire plan: help people out by the nearest safe exit, check areas if it is safe, and meet the fire service. Fighting a fire is only for a small fire you are trained for."
+    "explanation": "A guard follows the site's fire plan: help people out by the nearest safe exit, check areas if it is safe, and meet the fire service. Fighting a fire is only for a small fire you are trained for, and staying at the desk leaves people without help to get out."
   },
   {
     "type": "IEPSA",
@@ -2261,11 +2261,11 @@
     "question": "A bomb threat arrives by email instead of by phone. What should the guard do?",
     "optionA": "Delete it straight away",
     "optionB": "Keep it and report it",
-    "optionC": "Reply to the sender",
+    "optionC": "Reply, then report it",
     "optionD": "Forward it to all staff",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The message is evidence. Do not reply to, forward or delete it; report it at once under the site's bomb threat procedure and let the Gardaí and the client decide on next steps."
+    "explanation": "The message is evidence. Do not reply to, forward or delete it; report it at once under the site's bomb threat procedure and let the Gardaí and the client decide on next steps. Replying first can alert the sender and change the evidence."
   },
   {
     "type": "IEPSA",
@@ -2274,12 +2274,12 @@
     "category": "iepsaEmergency",
     "question": "A guard finds an unattended bag with wires showing in a lobby. What should he do?",
     "optionA": "Open it to check it",
-    "optionB": "Carry it outside",
+    "optionB": "Carry it out, then report",
     "optionC": "Clear the area and report",
     "optionD": "Kick it to test it",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Do not touch or move it. Clear the area, keep people back, report it from a safe distance and follow the site's suspicious item procedure."
+    "explanation": "Do not touch or move it. Clear the area, keep people back, report it from a safe distance and follow the site's suspicious item procedure. Carrying it outside before reporting is exactly the handling to avoid."
   },
   {
     "type": "IEPSA",
@@ -2371,13 +2371,13 @@
     "questionId": "IEPSA-EMG-018",
     "category": "iepsaEmergency",
     "question": "A guard is not trained in first aid and a person is hurt. What should he do?",
-    "optionA": "Leave and finish patrol",
+    "optionA": "Get help, then finish patrol",
     "optionB": "Get help, stay with them",
     "optionC": "Move them to a car",
     "optionD": "Give them painkillers",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Summon the site's first aider or emergency services, keep the person comfortable and reassured, and record the incident."
+    "explanation": "Summon the site's first aider or emergency services, keep the person comfortable and reassured, and record the incident. Going back to the patrol leaves the injured person alone."
   },
   {
     "type": "IEPSA",
@@ -2763,13 +2763,13 @@
     "questionId": "IEPSA-EVT-022",
     "category": "iepsaEvents",
     "question": "At an event, what should a steward do if a child is reported missing?",
-    "optionA": "Wait an hour first",
+    "optionA": "Report it if not found in an hour",
     "optionB": "Report it to control at once",
     "optionC": "Search alone off site",
     "optionD": "Tell the parent to wait",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Report a missing child immediately so the control point can alert all stewards and secure exits. Take a description and stay with the parent or guardian."
+    "explanation": "Report a missing child immediately so the control point can alert all stewards and secure exits. Take a description and stay with the parent or guardian. Waiting an hour before reporting loses the time that matters most."
   },
   {
     "type": "IEPSA",

@@ -1,0 +1,17 @@
+{
+  "id": "ascppbt", "stateCode": "ASCPPBT", "idBase": 29800, "prefix": "PBT-",
+  "slug": "/ascp-phlebotomy", "landingPath": "/ascp-pbt-practice-test", "dataFile": "data/ascp-pbt-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "pbtCirc", "perTest": 3, "pool": 12, "segment": "CIR"},
+    {"key": "pbtOrders", "perTest": 6, "pool": 24, "segment": "ORD"},
+    {"key": "pbtSite", "perTest": 6, "pool": 24, "segment": "SIT"},
+    {"key": "pbtDraw", "perTest": 6, "pool": 24, "segment": "DRW"},
+    {"key": "pbtComp", "perTest": 5, "pool": 20, "segment": "CMP"},
+    {"key": "pbtHandling", "perTest": 8, "pool": 32, "segment": "HND"},
+    {"key": "pbtPoct", "perTest": 4, "pool": 16, "segment": "PCT"},
+    {"key": "pbtNonblood", "perTest": 4, "pool": 16, "segment": "NBL"},
+    {"key": "pbtOps", "perTest": 8, "pool": 32, "segment": "OPS"}
+  ],
+  "notes": "ASCP BOC PBT content guideline (rev. Sept 25 2025): circ 5-10, collection 45-50, handling 15-20, POCT 5-10, non-blood 5-10, lab operations 15-20%. Per 50: 3/23/8/4/4/8; collection split 6/6/6/5 is Tigertest's. Real exam is 80-item CAT; modelled as fixed 50-question forms."
+}

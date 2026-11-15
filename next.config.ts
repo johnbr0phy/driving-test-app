@@ -10,9 +10,12 @@ const nextConfig: NextConfig = {
   // The webpack compile of every page and question bank sits right at the
   // build machine's memory limit: on Nov 4 2026 a one-file change (#700) tipped
   // it into an out-of-memory kill on Vercel. Trade a little build time for a
-  // much lower peak.
+  // much lower peak. On Nov 15 2026 static page generation (about 2,900 pages)
+  // ran out of memory too (#822), with one worker per CPU each loading banks:
+  // two workers keep that peak down at the cost of a slower build.
   experimental: {
     webpackMemoryOptimizations: true,
+    cpus: 2,
   },
   // The question banks are about 47 MB of JSON, compiled for the server and
   // as client chunks. In production webpack tracks every nested field of an

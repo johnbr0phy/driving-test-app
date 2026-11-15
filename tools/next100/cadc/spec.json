@@ -1,0 +1,19 @@
+{
+  "id": "cadc", "stateCode": "CADC", "idBase": 29500, "prefix": "CADC-",
+  "slug": "/adc", "landingPath": "/adc-alcohol-drug-counselor-practice-test", "dataFile": "data/adc-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "cadcBrain", "perTest": 4, "pool": 16, "segment": "BRN"},
+    {"key": "cadcPharm", "perTest": 6, "pool": 24, "segment": "PHA"},
+    {"key": "cadcCooccur", "perTest": 3, "pool": 12, "segment": "COC"},
+    {"key": "cadcScreen", "perTest": 4, "pool": 16, "segment": "SCR"},
+    {"key": "cadcAssess", "perTest": 6, "pool": 24, "segment": "ASM"},
+    {"key": "cadcCounsel", "perTest": 5, "pool": 20, "segment": "CNS"},
+    {"key": "cadcPlan", "perTest": 4, "pool": 16, "segment": "PLN"},
+    {"key": "cadcGroup", "perTest": 2, "pool": 8, "segment": "GRP"},
+    {"key": "cadcCase", "perTest": 4, "pool": 16, "segment": "CAS"},
+    {"key": "cadcEthics", "perTest": 6, "pool": 24, "segment": "ETH"},
+    {"key": "cadcLaw", "perTest": 6, "pool": 24, "segment": "LAW"}
+  ],
+  "notes": "IC&RC ADC Exam Candidate Guide (effective November 2022): Domain I 25%, II 20%, III 30%, IV 25% of 125 scored. Scaled to 50: I 13 (4/6/3), II 10 (4/6), III 15 (5/4/2/4), IV 12 (6/6); the split inside each domain is Tigertest's."
+}

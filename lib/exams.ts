@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
+export type ExamId = "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -56,6 +56,10 @@ export interface ExamTrainingSetDef {
    *  part order, so the dashboard says what each part covers instead of
    *  "part 2 of 3". scripts/build-training-parts.ts checks the count. */
   partNames?: string[];
+  /** Hand-set part sizes (in part order, summing to `size`) instead of the
+   *  even split, for a set whose parts must start at a set question, e.g.
+   *  where an exam's Premium questions begin (`premiumFrom`). */
+  partSizes?: number[];
   /** Set on a DMV-style set (see testSets): it holds exactly practice test
    *  N's questions, and `categories` is empty. */
   test?: number;
@@ -94,6 +98,24 @@ export interface ExamConfig {
   /** Icon key for the catalog, menus and TestIcon. */
   icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator" | "car" | "bus";
   testCount: number;
+  /** Premium as a block of content instead of the last quarter of the
+   *  dashboard (lib/examLocks.ts): practice tests from `test` on and, in
+   *  every split set, parts from `part` on. Used where an exam's bank was
+   *  extended with questions that only Premium opens (RBT, Nov 2026). The
+   *  free steps come first on the dashboard. */
+  premiumFrom?: { test: number; part: number };
+  /** Full-length timed mock exams after the practice tests (store IDs
+   *  idBase + testCount + 1...): the real exam's length and clock, drawn
+   *  from the whole bank in `blueprint` proportions (a spread across each
+   *  pool, so they reuse practice-test questions). A dress rehearsal, not new
+   *  content. They are the dashboard's last tests and count as tests
+   *  everywhere a test ID is read. */
+  mockExams?: { count: number; minutes: number; blueprint: Record<string, number> };
+  /** English paywall bullets saying what Premium adds, in place of the
+   *  generic ones (lib/examPaywallCopy.ts examPremiumBullets). Say plainly
+   *  what Premium adds (more questions, more tests, timed mocks); never
+   *  promise a pass or a readiness verdict. Other languages keep the generic bullets. */
+  premiumBenefits?: string[];
   questionsPerTest: number;
   passPct: number;
   /** Questions per content area in each practice test (sums to questionsPerTest). */
@@ -6073,6 +6095,772 @@ const ase: ExamConfig = {
   },
 };
 
+const aufirearmsqld: ExamConfig = {
+  id: "aufirearmsqld",
+  stateCode: "AUFAQLD",
+  idBase: 29400,
+  slug: "/qld-firearms-licence",
+  landingPath: "/qld-firearms-safety-test-practice-test",
+  name: "QLD Firearms Safety Practice Test",
+  shortName: "QLD Firearms Safety",
+  examLabel: "firearms safety course",
+  fullName: "Queensland Firearms Safety Course (11029NAT) for a Weapons Licence",
+  questionIdPrefix: "AUFAQLD-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Queensland Police Service accredited course 11029NAT Course in Firearms and Weapons Safety
+  // (Approved for Firearms Licensing in Queensland), current 1 May 2022 to 30 April 2027, read on
+  // training.gov.au November 2026: core unit NAT11029001 (weapons legislation, weapons and community
+  // safety) and NAT11029002 (use category A and B firearms lawfully, safely and responsibly). The
+  // course document is not public and no weights exist, so the split is Tigertest's: law and
+  // licensing 30 (law 7, categories 5, storage 6, transport and public places 6, private land,
+  // acquisition and ranges 6) and safe use 20 (National Firearms Safety Code 8, field and firing
+  // zone 7, parts, actions and ammunition 5). Law from the Weapons Act 1990, Weapons Regulation
+  // 2016 and Weapons Categories Regulation 1997 as in force November 2026; handling from the
+  // Commonwealth's National Firearms Safety Code and the QPS storage brochure. No pass mark is
+  // published; 80% is a readiness target. All items original.
+  blueprint: {
+    fqLaw: 7,
+    fqCategories: 5,
+    fqStorage: 6,
+    fqTransport: 6,
+    fqConduct: 6,
+    fqCode: 8,
+    fqField: 7,
+    fqActions: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29401, name: "Weapons Law & Categories", categories: ["fqLaw", "fqCategories"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 29402, name: "Storage & Transport", categories: ["fqStorage", "fqTransport"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 29403, name: "Safe Handling & Firearm Actions", categories: ["fqCode", "fqActions"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 29404, name: "In the Field, Ranges & Private Land", categories: ["fqField", "fqConduct"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fqLaw: "Weapons Act & Licensing",
+    fqCategories: "Weapon Categories",
+    fqStorage: "Secure Storage",
+    fqTransport: "Transport & Public Places",
+    fqConduct: "Private Land, Buying & Ranges",
+    fqCode: "National Firearms Safety Code",
+    fqField: "Target, Firing Zone & Field Safety",
+    fqActions: "Parts, Actions & Ammunition",
+  },
+  copy: {
+    guestPrompt: "to save your QLD firearms safety progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering Queensland weapons law and categories, storage and transport, safe handling and firearm actions, and field safety, ranges and private land. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Weapons Law & Categories.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your firearms safety course.",
+    ],
+    sourceLine: "Based on the Weapons Act 1990, the Weapons Regulation 2016, the Weapons Categories Regulation 1997 and the National Firearms Safety Code. Original questions. Not affiliated with the Queensland Police Service.",
+    analyticsKey: "aufirearmsqld",
+  },
+};
+
+const bcba: ExamConfig = {
+  id: "bcba",
+  stateCode: "BCBA",
+  idBase: 28700,
+  slug: "/bcba",
+  landingPath: "/bcba-practice-test",
+  name: "BCBA Practice Test",
+  shortName: "BCBA",
+  examLabel: "BCBA exam",
+  fullName: "Board Certified Behavior Analyst (BCBA) Certification Exam",
+  questionIdPrefix: "BCBA-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // BACB BCBA Test Content Outline (6th ed.), document updated 09/2024, in use from 2025 and still
+  // the current edition in the BCBA Handbook updated 11/2026 (checked November 2026): 185 questions
+  // (175 scored, 10 unscored) in 4 hours, scored counts A Behaviorism and Philosophical
+  // Foundations 8, B Concepts and Principles 24, C Measurement, Data Display, and Interpretation
+  // 21, D Experimental Design 13, E Ethical and Professional Issues 22, F Behavior Assessment 23,
+  // G Behavior-Change Procedures 25, H Selecting and Implementing Interventions 20, I Personnel
+  // Supervision and Management 19; scaled here to 50 per test (2/7/6/4/6/7/7/6/5). The BACB
+  // reports pass/fail against a modified-Angoff passing score and publishes no percentage; 70% is
+  // a readiness marker. Ethics items follow the Ethics Code for Behavior Analysts. All items original.
+  blueprint: {
+    bcbaPhil: 2,
+    bcbaConcepts: 7,
+    bcbaMeasure: 6,
+    bcbaDesign: 4,
+    bcbaEthics: 6,
+    bcbaAssess: 7,
+    bcbaChange: 7,
+    bcbaInterv: 6,
+    bcbaSuper: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28701, name: "Philosophy, Concepts & Principles", categories: ["bcbaPhil", "bcbaConcepts"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 28702, name: "Measurement & Experimental Design", categories: ["bcbaMeasure", "bcbaDesign"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 28703, name: "Ethics & Behavior Assessment", categories: ["bcbaEthics", "bcbaAssess"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 28704, name: "Behavior Change & Interventions", categories: ["bcbaChange", "bcbaInterv"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 28705, name: "Supervision & Management", categories: ["bcbaSuper"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bcbaPhil: "Behaviorism & Philosophical Foundations",
+    bcbaConcepts: "Concepts & Principles",
+    bcbaMeasure: "Measurement, Data Display & Interpretation",
+    bcbaDesign: "Experimental Design",
+    bcbaEthics: "Ethical & Professional Issues",
+    bcbaAssess: "Behavior Assessment",
+    bcbaChange: "Behavior-Change Procedures",
+    bcbaInterv: "Selecting & Implementing Interventions",
+    bcbaSuper: "Personnel Supervision & Management",
+  },
+  copy: {
+    guestPrompt: "to save your BCBA progress and track every question you miss",
+    trainingHeading: "Train by BCBA domain",
+    trainingSub: "Five sets covering all nine domains of the BCBA Test Content Outline (6th ed.). Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real 175 scored",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Philosophy, Concepts & Principles.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the BCBA exam.",
+    ],
+    sourceLine: "Based on the BACB BCBA Test Content Outline (6th ed.) and the Ethics Code for Behavior Analysts. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Behavior Analyst Certification Board.",
+    analyticsKey: "bcba",
+  },
+};
+
+const bcaba: ExamConfig = {
+  id: "bcaba",
+  stateCode: "BCABA",
+  idBase: 28800,
+  slug: "/bcaba",
+  landingPath: "/bcaba-practice-test",
+  name: "BCaBA Practice Test",
+  shortName: "BCaBA",
+  examLabel: "BCaBA exam",
+  fullName: "Board Certified Assistant Behavior Analyst (BCaBA) Certification Exam",
+  questionIdPrefix: "BCABA-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // BACB BCaBA Test Content Outline (6th ed.), document updated 09/2024, in use from 2025 and still
+  // the current edition in the BCaBA Handbook updated 10/2026 (checked November 2026): 175
+  // questions (150 scored, 25 unscored) in 4 hours, scored counts A Behaviorism and Philosophical
+  // Foundations 10, B Concepts and Principles 18, C Measurement, Data Display, and Interpretation
+  // 20, D Experimental Design 10, E Ethical and Professional Issues 18, F Behavior Assessment 17,
+  // G Behavior-Change Procedures 22, H Intervention Development and Monitoring 20, I Supervisory
+  // Relationships 15; scaled here to 50 per test (one third: 3/6/7/3/6/6/7/7/5). The BACB reports
+  // pass/fail against a modified-Angoff passing score and publishes no percentage; 70% is a
+  // readiness marker. Ethics items follow the Ethics Code for Behavior Analysts. All items original.
+  blueprint: {
+    bcabaPhil: 3,
+    bcabaConcepts: 6,
+    bcabaMeasure: 7,
+    bcabaDesign: 3,
+    bcabaEthics: 6,
+    bcabaAssess: 6,
+    bcabaChange: 7,
+    bcabaInterv: 7,
+    bcabaSuper: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28801, name: "Philosophy, Concepts & Principles", categories: ["bcabaPhil", "bcabaConcepts"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 28802, name: "Measurement & Experimental Design", categories: ["bcabaMeasure", "bcabaDesign"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 28803, name: "Ethics & Behavior Assessment", categories: ["bcabaEthics", "bcabaAssess"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 28804, name: "Behavior Change & Monitoring", categories: ["bcabaChange", "bcabaInterv"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 5, id: 28805, name: "Supervisory Relationships", categories: ["bcabaSuper"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bcabaPhil: "Behaviorism & Philosophical Foundations",
+    bcabaConcepts: "Concepts & Principles",
+    bcabaMeasure: "Measurement, Data Display & Interpretation",
+    bcabaDesign: "Experimental Design",
+    bcabaEthics: "Ethical & Professional Issues",
+    bcabaAssess: "Behavior Assessment",
+    bcabaChange: "Behavior-Change Procedures",
+    bcabaInterv: "Intervention Development & Monitoring",
+    bcabaSuper: "Supervisory Relationships",
+  },
+  copy: {
+    guestPrompt: "to save your BCaBA progress and track every question you miss",
+    trainingHeading: "Train by BCaBA domain",
+    trainingSub: "Five sets covering all nine domains of the BCaBA Test Content Outline (6th ed.). Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real 150 scored",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Philosophy, Concepts & Principles.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the BCaBA exam.",
+    ],
+    sourceLine: "Based on the BACB BCaBA Test Content Outline (6th ed.) and the Ethics Code for Behavior Analysts. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Behavior Analyst Certification Board.",
+    analyticsKey: "bcaba",
+  },
+};
+
+const hspacer: ExamConfig = {
+  id: "hspacer",
+  stateCode: "HSPACER",
+  idBase: 29000,
+  slug: "/cer",
+  landingPath: "/cer-endoscope-reprocessor-practice-test",
+  name: "CER Endoscope Reprocessor Practice Test",
+  shortName: "CER (HSPA)",
+  examLabel: "CER exam",
+  fullName: "Certified Endoscope Reprocessor (CER) Exam",
+  questionIdPrefix: "CER-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // HSPA Certified Endoscope Reprocessor (CER) Exam Content Outline, Revised May 2022 (2021-2022
+  // job task analysis; still the current outline November 2026): 1 Microbiology and Infection
+  // Control 12%, 2 Endoscope Purpose, Design and Structure 10%, 3 Work Area Design 12%,
+  // 4 Endoscope Processing Steps 32%, 5 Handling, Transport and Storage 16%, 6 Tracking, Repair
+  // and System Maintenance 10%, 7 Human Factors 8%. Scaled to 50: 6/5/6/16/8/5/4, with section 4
+  // split by Tigertest into cleaning (items A-I) 7 and disinfection, sterilization and
+  // documentation (items J-U) 9. HSPA's real exam is 150 questions (125 scored) in 3 hours,
+  // pass/fail by number correct against an Angoff-set cut that is not published as a percent;
+  // 70% here is a readiness marker. All items original.
+  blueprint: {
+    cerMicro: 6,
+    cerDesign: 5,
+    cerWorkArea: 6,
+    cerCleaning: 7,
+    cerDisinfect: 9,
+    cerStorage: 8,
+    cerTracking: 5,
+    cerHuman: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29001, name: "Microbiology & Endoscope Design", categories: ["cerMicro", "cerDesign"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 29002, name: "Work Area & Manual Cleaning", categories: ["cerWorkArea", "cerCleaning"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 29003, name: "Disinfection & Sterilization", categories: ["cerDisinfect"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 29004, name: "Handling, Transport & Storage", categories: ["cerStorage"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 29005, name: "Tracking, Repair & Human Factors", categories: ["cerTracking", "cerHuman"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cerMicro: "Microbiology & Infection Control",
+    cerDesign: "Endoscope Purpose, Design & Structure",
+    cerWorkArea: "Work Area Design",
+    cerCleaning: "Pre-cleaning, Leak Testing & Manual Cleaning",
+    cerDisinfect: "HLD, Sterilization & Documentation",
+    cerStorage: "Handling, Transport & Storage",
+    cerTracking: "Tracking, Repair & Maintenance",
+    cerHuman: "Human Factors",
+  },
+  copy: {
+    guestPrompt: "to save your CER progress and track every question you miss",
+    trainingHeading: "Train by HSPA outline section",
+    trainingSub: "Five sets covering the seven sections of the HSPA CER content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Microbiology & Endoscope Design.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CER.",
+    ],
+    sourceLine: "Based on the HSPA Certified Endoscope Reprocessor (CER) Exam Content Outline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Healthcare Sterile Processing Association.",
+    analyticsKey: "hspacer",
+  },
+};
+
+const hspachl: ExamConfig = {
+  id: "hspachl",
+  stateCode: "HSPACHL",
+  idBase: 29100,
+  slug: "/chl",
+  landingPath: "/chl-healthcare-leader-practice-test",
+  name: "CHL Healthcare Leader Practice Test",
+  shortName: "CHL (HSPA)",
+  examLabel: "CHL exam",
+  fullName: "Certified Healthcare Leader (CHL) Exam",
+  questionIdPrefix: "CHL-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // HSPA Certified Healthcare Leader (CHL) Exam Content Outline, Revised August 2025; Updated
+  // January 2026 (2024-2025 job task analysis; the outline for the October 2026 pilot and the
+  // new exam): 1 Planning and Decision Making 25%, 2 Organizing 23%, 3 Leading 29%,
+  // 4 Governing and Compliance 23% (the handbook still calls it Controlling). Scaled to 50:
+  // 13/11/15/11; Tigertest's split inside sections: planning 6 processes and equipment (I-II)
+  // + 7 safety, workforce, finance and risk (III-VI); leading 8 staff (I-II) + 7 communication
+  // and leadership (III-IV); governing 4 inventory and finance + 3 infection prevention + 4
+  // quality. HSPA's real exam is 150 questions (125 scored) in 3 hours, pass/fail by number
+  // correct against an Angoff-set cut that is not published as a percent; 70% here is a
+  // readiness marker. All items original.
+  blueprint: {
+    chlProcesses: 6,
+    chlPlanning: 7,
+    chlOrganizing: 11,
+    chlStaff: 8,
+    chlComm: 7,
+    chlInventory: 4,
+    chlInfection: 3,
+    chlQuality: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29101, name: "Planning & Decision Making", categories: ["chlProcesses", "chlPlanning"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 29102, name: "Organizing", categories: ["chlOrganizing"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 29103, name: "Leading", categories: ["chlStaff", "chlComm"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 29104, name: "Governing & Compliance", categories: ["chlInventory", "chlInfection", "chlQuality"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    chlProcesses: "Quality Control, Workplace & Equipment",
+    chlPlanning: "Safety, Workforce & Financial Planning",
+    chlOrganizing: "Organizing Staff & Processes",
+    chlStaff: "Leading, Mentoring & Training Staff",
+    chlComm: "Communication & Leadership Skills",
+    chlInventory: "Inventory & Financial Management",
+    chlInfection: "Infection Prevention",
+    chlQuality: "Quality Management & Risk",
+  },
+  copy: {
+    guestPrompt: "to save your CHL progress and track every question you miss",
+    trainingHeading: "Train by HSPA outline section",
+    trainingSub: "Four sets, one for each section of the HSPA CHL content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Planning & Decision Making.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CHL.",
+    ],
+    sourceLine: "Based on the HSPA Certified Healthcare Leader (CHL) Exam Content Outline (2026). Original questions; 50 per test, weighted like the real exam. Not affiliated with the Healthcare Sterile Processing Association.",
+    analyticsKey: "hspachl",
+  },
+};
+
+const rpt: ExamConfig = {
+  id: "rpt",
+  stateCode: "RPT",
+  idBase: 28900,
+  slug: "/rpt",
+  landingPath: "/rpt-practice-test",
+  name: "RPT (AMT) Practice Test",
+  shortName: "RPT (AMT)",
+  examLabel: "RPT exam",
+  fullName: "Registered Phlebotomy Technician (RPT) Certification Exam",
+  questionIdPrefix: "RPT-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AMT Registered Phlebotomy Technician (RPT) Certification Competencies and Examination
+  // Specifications (©2025, checked November 2026): 200 questions. I. Obtaining Blood Samples 68
+  // (34%), II. Specimen Collection and Processing 30 (15%), III. Time Management and Assignment
+  // Organization 20 (10%), IV. Professional Communications 11 (5.5%), V. Clerical Skills and
+  // Duties 11 (5.5%), VI. Safety Standards and Procedures 30 (15%), VII. Legal, Ethical, and
+  // Professional Considerations 20 (10%), VIII. Terminology, Anatomy, and Physiology 10 (5%).
+  // Scaled to 50 per test: 17/8/5/3/3/7/5/2; work area I is split 6/7/4 (patient and site,
+  // venipuncture and tubes, capillary and labeling), Tigertest's split. AMT reports a scaled
+  // score (0 to 100, 70 to pass, not a percent); 70% here is a readiness marker. All items original.
+  blueprint: {
+    rptPatient: 6,
+    rptVenipuncture: 7,
+    rptCapillary: 4,
+    rptSpecimen: 8,
+    rptWorkflow: 5,
+    rptComm: 3,
+    rptClerical: 3,
+    rptSafety: 7,
+    rptLegal: 5,
+    rptAnatomy: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28901, name: "Patient ID & Venipuncture", categories: ["rptPatient", "rptVenipuncture"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 28902, name: "Capillary & Specimen Processing", categories: ["rptCapillary", "rptSpecimen"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 28903, name: "Workflow, Communication & Clerical", categories: ["rptWorkflow", "rptComm", "rptClerical"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 28904, name: "Safety, Legal & Anatomy", categories: ["rptSafety", "rptLegal", "rptAnatomy"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rptPatient: "Patient ID, Preparation & Sites",
+    rptVenipuncture: "Venipuncture, Tubes & Equipment",
+    rptCapillary: "Capillary Punctures & Labeling",
+    rptSpecimen: "Specimen Collection & Processing",
+    rptWorkflow: "Time Management & Workflow",
+    rptComm: "Professional Communications",
+    rptClerical: "Clerical Skills & Duties",
+    rptSafety: "Safety Standards & Procedures",
+    rptLegal: "Legal, Ethical & Professional",
+    rptAnatomy: "Terminology, Anatomy & Physiology",
+  },
+  copy: {
+    guestPrompt: "to save your RPT progress and track every question you miss",
+    trainingHeading: "Train by AMT work area",
+    trainingSub: "Four sets covering the eight work areas of the AMT RPT specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Patient ID & Venipuncture.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the RPT.",
+    ],
+    sourceLine: "Based on the AMT RPT Certification Competencies and Examination Specifications. Original questions; 50 per test, weighted like the real exam. Not affiliated with American Medical Technologists.",
+    analyticsKey: "rpt",
+  },
+};
+
+const ascppbt: ExamConfig = {
+  id: "ascppbt",
+  stateCode: "ASCPPBT",
+  idBase: 29800,
+  slug: "/ascp-phlebotomy",
+  landingPath: "/ascp-pbt-practice-test",
+  name: "PBT(ASCP) Practice Test",
+  shortName: "PBT(ASCP)",
+  examLabel: "PBT exam",
+  fullName: "ASCP Phlebotomy Technician PBT(ASCP) Certification Exam",
+  questionIdPrefix: "PBT-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASCP BOC Phlebotomy Technician PBT(ASCP) and PBT(ASCPi) Examination Content Guideline
+  // (revised September 25, 2025, checked November 2026): 80 questions in 2 hours, computer
+  // adaptive. I. Circulatory System 5-10%, II. Specimen Collection 45-50%, III. Specimen
+  // Handling, Transport, and Processing 15-20%, IV. Waived and Point-of-Care Testing 5-10%,
+  // V. Non-Blood Specimens 5-10%, VI. Laboratory Operations 15-20%. Per 50-question fixed form:
+  // 3/23/8/4/4/8, all inside the ranges; Specimen Collection is split 6/6/6/5 (orders and
+  // patient, sites and tests, order of draw and equipment, complications), Tigertest's split.
+  // The real exam is CAT and scaled; 70% here is a readiness marker. All items original.
+  blueprint: {
+    pbtCirc: 3,
+    pbtOrders: 6,
+    pbtSite: 6,
+    pbtDraw: 6,
+    pbtComp: 5,
+    pbtHandling: 8,
+    pbtPoct: 4,
+    pbtNonblood: 4,
+    pbtOps: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29801, name: "Circulatory System, Orders & Sites", categories: ["pbtCirc", "pbtOrders", "pbtSite"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 29802, name: "Order of Draw & Complications", categories: ["pbtDraw", "pbtComp"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 29803, name: "Specimen Handling & POCT", categories: ["pbtHandling", "pbtPoct"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 29804, name: "Non-Blood Specimens & Lab Operations", categories: ["pbtNonblood", "pbtOps"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pbtCirc: "Circulatory System",
+    pbtOrders: "Orders, Identification & Patient Prep",
+    pbtSite: "Site Selection, Technique & Common Tests",
+    pbtDraw: "Order of Draw & Equipment",
+    pbtComp: "Complications & Considerations",
+    pbtHandling: "Specimen Handling, Transport & Processing",
+    pbtPoct: "Waived & Point-of-Care Testing",
+    pbtNonblood: "Non-Blood Specimens",
+    pbtOps: "Laboratory Operations",
+  },
+  copy: {
+    guestPrompt: "to save your PBT(ASCP) progress and track every question you miss",
+    trainingHeading: "Train by BOC content area",
+    trainingSub: "Four sets covering the six content areas of the ASCP BOC phlebotomy guideline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Circulatory System, Orders & Sites.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the PBT(ASCP).",
+    ],
+    sourceLine: "Based on the ASCP BOC PBT(ASCP) Examination Content Guideline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the American Society for Clinical Pathology.",
+    analyticsKey: "ascppbt",
+  },
+};
+
+const crfsc: ExamConfig = {
+  id: "crfsc",
+  stateCode: "CRFSC",
+  idBase: 29200,
+  slug: "/canadian-restricted-firearms",
+  landingPath: "/canadian-restricted-firearms-safety-course-practice-test",
+  name: "Canadian Restricted Firearms Safety Course (CRFSC) Practice Test",
+  shortName: "CRFSC",
+  examLabel: "CRFSC written test",
+  fullName: "Canadian Restricted Firearms Safety Course (CRFSC) Written Test",
+  questionIdPrefix: "CRFSC-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // RCMP Canadian Firearms Program, Safety courses page (checked November 2026): the CRFSC topic
+  // list, in order: evolution of firearms, major parts, types and actions; basic firearms safety;
+  // ammunition; operating handgun actions; firing techniques and procedures for handguns; care of
+  // restricted firearms; responsibilities of the owner/user; safe storage, display, transportation
+  // and handling of restricted firearms. The RCMP publishes no item count or weights, so the
+  // per-test split is Tigertest's. Law items follow the Firearms Act, Criminal Code s.84,
+  // SOR/98-209, SOR/98-206 and SOR/98-207 as current to 2026-10-19. 80% is the pass mark course
+  // providers give for each CRFSC test. All items original.
+  blueprint: {
+    crfscParts: 6,
+    crfscSafety: 6,
+    crfscAmmo: 6,
+    crfscActions: 8,
+    crfscFiring: 7,
+    crfscCare: 4,
+    crfscLaw: 7,
+    crfscStorage: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29201, name: "Handgun Parts & Basic Safety", categories: ["crfscParts", "crfscSafety"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 29202, name: "Ammunition & Handgun Actions", categories: ["crfscAmmo", "crfscActions"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 29203, name: "Firing Techniques & Care", categories: ["crfscFiring", "crfscCare"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 29204, name: "Owner Duties, Storage & Transport", categories: ["crfscLaw", "crfscStorage"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    crfscParts: "Parts, Types & Actions",
+    crfscSafety: "Basic Firearms Safety",
+    crfscAmmo: "Ammunition",
+    crfscActions: "Operating Handgun Actions",
+    crfscFiring: "Firing Techniques & Range Procedures",
+    crfscCare: "Care of Restricted Firearms",
+    crfscLaw: "Owner Responsibilities & the Law",
+    crfscStorage: "Storage, Display & Transport",
+  },
+  copy: {
+    guestPrompt: "to save your CRFSC progress and track every question you miss",
+    trainingHeading: "Train by course topic",
+    trainingSub: "Four sets in the order of the RCMP restricted course topics. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Handgun Parts & Basic Safety.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CRFSC.",
+    ],
+    sourceLine: "Based on the RCMP Canadian Restricted Firearms Safety Course topics and the federal Firearms Act and regulations. Original questions; 50 per test. Not affiliated with the RCMP.",
+    analyticsKey: "crfsc",
+  },
+};
+
+const nzdrone: ExamConfig = {
+  id: "nzdrone",
+  stateCode: "NZDRONE",
+  idBase: 29600,
+  slug: "/nz-drone-part-101",
+  landingPath: "/nz-drone-part-101-practice-test",
+  name: "NZ Drone Rules (Part 101) Practice Test",
+  shortName: "NZ Drone (Part 101)",
+  examLabel: "Part 101 drone rules",
+  fullName: "New Zealand Drone Pilot Knowledge (Civil Aviation Rule Part 101)",
+  questionIdPrefix: "NZDRONE-",
+  icon: "plane",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // CAA NZ Civil Aviation Rule Part 101 (CAA consolidation 22 December 2025, Amendment 1) and
+  // Civil Aviation Transport Instrument CATI 101-1 (initial issue, in force 22 December 2025),
+  // with AC101-1 Revision 2 (22 December 2025), checked November 2026. There is no single
+  // official exam: approved persons or organisations under rule 101.202 issue pilot
+  // qualifications with their own assessments, and no question count or pass mark is published.
+  // Weights are Tigertest's, following Subparts A and E and CATI 101-1 Subpart B: scope, Part 102
+  // and approvals 6, aerodromes (CATI 2.3) 7, airspace (101.7 to 101.12) 8, shielded operations 4,
+  // consent and height (CATI 2.5) 7, line of sight and night (CATI 2.9, 2.11) 7, right of way,
+  // hazards and airworthiness 7, planning and reporting 4. 80% is a readiness target. All items
+  // original; aerial spraying (pending reform) not asked.
+  blueprint: {
+    dronScope: 6,
+    dronAerodrome: 7,
+    dronAirspace: 8,
+    dronShielded: 4,
+    dronConsent: 7,
+    dronSight: 7,
+    dronSafety: 7,
+    dronPlan: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29601, name: "Part 101 Basics & Shielded Flights", categories: ["dronScope", "dronShielded"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 29602, name: "Aerodromes & Airspace", categories: ["dronAerodrome", "dronAirspace"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 29603, name: "Consent, Height, Sight & Night", categories: ["dronConsent", "dronSight"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 29604, name: "Safety, Planning & Reporting", categories: ["dronSafety", "dronPlan"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    dronScope: "Part 101 Scope & Approvals",
+    dronAerodrome: "Aerodromes",
+    dronAirspace: "Airspace",
+    dronShielded: "Shielded Operations",
+    dronConsent: "Consent & Height Limits",
+    dronSight: "Line of Sight & Night",
+    dronSafety: "Right of Way & Safety",
+    dronPlan: "Planning & Reporting",
+  },
+  copy: {
+    guestPrompt: "to save your drone rules progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering Part 101 and CATI 101-1: scope and shielded flights, aerodromes and airspace, consent, height, sight and night, and safety and reporting. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across the rules",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Part 101 Basics & Shielded Flights.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You know New Zealand's drone rules.",
+    ],
+    sourceLine: "Based on Civil Aviation Rule Part 101, CATI 101-1 and AC101-1 (CAA of New Zealand). Original questions; 50 per test. Not affiliated with the Civil Aviation Authority of New Zealand or Airways.",
+    analyticsKey: "nzdrone",
+  },
+};
+
+const cadc: ExamConfig = {
+  id: "cadc",
+  stateCode: "CADC",
+  idBase: 29500,
+  slug: "/adc",
+  landingPath: "/adc-alcohol-drug-counselor-practice-test",
+  name: "ADC (IC&RC) Practice Test",
+  shortName: "ADC (IC&RC)",
+  examLabel: "ADC exam",
+  fullName: "IC&RC Alcohol and Drug Counselor (ADC) Exam",
+  questionIdPrefix: "CADC-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // IC&RC Alcohol and Drug Counselor (ADC) Exam Candidate Guide (effective November 2022, still
+  // the current guide in November 2026): 150 questions (125 scored, 25 pretest) in 3 hours.
+  // Domain I Scientific Principles of Substance Use and Co-Occurring Disorders 25%; II
+  // Evidence-Based Screening and Assessment 20%; III Evidence-Based Treatment, Counseling, and
+  // Referral 30%; IV Professional, Ethical and Legal Responsibilities 25%. Scaled to 50 per test:
+  // I 13 (brain 4, pharmacology 6, co-occurring 3), II 10 (screening 4, assessment 6), III 15
+  // (counseling 5, planning 4, groups 2, crisis and referral 4), IV 12 (ethics 6, law 6); the
+  // split inside each domain is Tigertest's. IC&RC scales scores 200 to 800 with 500 to pass;
+  // 70% here is a readiness marker. Confidentiality items follow 42 CFR Part 2 as amended in
+  // 2024. All items original; state credential rules are never asked.
+  blueprint: {
+    cadcBrain: 4,
+    cadcPharm: 6,
+    cadcCooccur: 3,
+    cadcScreen: 4,
+    cadcAssess: 6,
+    cadcCounsel: 5,
+    cadcPlan: 4,
+    cadcGroup: 2,
+    cadcCase: 4,
+    cadcEthics: 6,
+    cadcLaw: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29501, name: "Addiction Science & Co-Occurring", categories: ["cadcBrain", "cadcPharm", "cadcCooccur"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 29502, name: "Screening & Assessment", categories: ["cadcScreen", "cadcAssess"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 29503, name: "Counseling & Treatment Planning", categories: ["cadcCounsel", "cadcPlan", "cadcGroup"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 29504, name: "Crisis, Referral & Ethics", categories: ["cadcCase", "cadcEthics"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 29505, name: "Confidentiality & Client Rights", categories: ["cadcLaw"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cadcBrain: "Addiction & the Brain",
+    cadcPharm: "Substances & Pharmacology",
+    cadcCooccur: "Co-Occurring Conditions",
+    cadcScreen: "Interviewing, Screening & Testing",
+    cadcAssess: "Diagnosis & Level of Care",
+    cadcCounsel: "Counseling Skills & Motivation",
+    cadcPlan: "Treatment Planning & Recovery",
+    cadcGroup: "Group Counseling",
+    cadcCase: "Crisis, Referral & Special Populations",
+    cadcEthics: "Professional Ethics & Culture",
+    cadcLaw: "Confidentiality, Records & Rights",
+  },
+  copy: {
+    guestPrompt: "to save your ADC progress and track every question you miss",
+    trainingHeading: "Train by ADC domain",
+    trainingSub: "Five sets covering the four IC&RC ADC domains, from addiction science to confidentiality. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Addiction Science & Co-Occurring.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the ADC exam.",
+    ],
+    sourceLine: "Based on the IC&RC Alcohol and Drug Counselor (ADC) Exam Candidate Guide. Original questions; 50 per test, weighted like the real exam. Not affiliated with IC&RC or any state certification board.",
+    analyticsKey: "cadc",
+  },
+};
+
+const nzham: ExamConfig = {
+  id: "nzham",
+  stateCode: "NZHAM",
+  idBase: 29700,
+  slug: "/nz-amateur-radio",
+  landingPath: "/nz-amateur-radio-exam-practice-test",
+  name: "NZ Amateur Radio Practice Test",
+  shortName: "NZ Amateur Radio",
+  examLabel: "amateur radio exam",
+  fullName: "New Zealand Amateur Radio Examination (General Amateur Operator's Certificate)",
+  questionIdPrefix: "NZHAM-",
+  icon: "radio",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 67,
+  // NZART Study Guide (NZ Amateur Radio Certificate Block Course Study Notes, 19/10/2025, checked
+  // November 2026): each 60-question paper draws one question from every ten in 30 topics, with
+  // the per-topic counts in the guide (Regulations 7, Frequencies 2, Electronics 2, Units 1,
+  // Ohm's law 2, Resistance 3, Power 2, AC 1, LC and resonance 2, Safety 1, Semiconductors 2,
+  // Devices 1, Meters 1, Decibels 1, HF station 1, Receiver blocks 2, Receiver operation 3,
+  // Transmitter blocks 2, Transmitter theory 1, Harmonics 2, Power supplies 1, Regulated supplies
+  // 1, General operating 1, Practical operating 2, Q signals 1, Transmission lines 2, Antennas 4,
+  // Propagation 5, Interference 3, Digital 1). Grouped into ten categories (9/4/10/6/5/6/5/6/5/4
+  // of 60) and scaled to 50: 8/4/8/5/4/5/4/5/4/3. The real pass is 40 of 60 (2025 NZART
+  // Examination Procedure); passPct 67 matches it. Rules from the GURL Notice 2025 (in force 1
+  // July 2025) and RSM PIB 46 Issue 19.1. All items original; the NZART question bank is never used.
+  blueprint: {
+    nzhamRegs: 8,
+    nzhamOperating: 4,
+    nzhamFundamentals: 8,
+    nzhamComponents: 5,
+    nzhamSafetyPower: 4,
+    nzhamReceivers: 5,
+    nzhamTransmitters: 4,
+    nzhamAntennas: 5,
+    nzhamPropagation: 4,
+    nzhamInterference: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29701, name: "Regulations & Operating", categories: ["nzhamRegs", "nzhamOperating"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 29702, name: "Electronics Fundamentals", categories: ["nzhamFundamentals", "nzhamComponents"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 29703, name: "Safety, Receivers & Transmitters", categories: ["nzhamSafetyPower", "nzhamReceivers", "nzhamTransmitters"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 29704, name: "Antennas, Propagation & EMC", categories: ["nzhamAntennas", "nzhamPropagation", "nzhamInterference"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nzhamRegs: "Regulations & Frequencies",
+    nzhamOperating: "Operating Practice & Q Signals",
+    nzhamFundamentals: "Ohm's Law, Resistance & Power",
+    nzhamComponents: "AC, Resonance & Semiconductors",
+    nzhamSafetyPower: "Safety, Meters, Decibels & Power Supplies",
+    nzhamReceivers: "Station & Receivers",
+    nzhamTransmitters: "Transmitters & Harmonics",
+    nzhamAntennas: "Feed Lines & Antennas",
+    nzhamPropagation: "Propagation",
+    nzhamInterference: "Interference & Digital Systems",
+  },
+  copy: {
+    guestPrompt: "to save your amateur radio progress and track every question you miss",
+    trainingHeading: "Train by syllabus topic",
+    trainingSub: "Four sets covering the 30 topics of the New Zealand amateur radio syllabus. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real paper",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Regulations & Operating.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your amateur radio exam.",
+    ],
+    sourceLine: "Based on the NZART syllabus, the General User Radio Licence for Amateur Radio Operators and RSM's PIB 46. Original questions; 50 per test, weighted like the real paper. Not affiliated with NZART or Radio Spectrum Management.",
+    analyticsKey: "nzham",
+  },
+};
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -8308,14 +9096,29 @@ const rbt: ExamConfig = {
   fullName: "Registered Behavior Technician (RBT) exam",
   questionIdPrefix: "RBT-",
   icon: "target",
-  testCount: 4,
+  testCount: 8,
+  // Nov 2026: the bank grew from 200 to 400 with 200 scenario questions
+  // (segments SDAT, SASM, SACQ, SRED, SDOC, SETH), which sort after the
+  // originals, so Tests 1 to 4 and saved progress are unchanged. The
+  // originals are free; Premium is Tests 5 to 8 and part 2 of every set.
+  premiumFrom: { test: 5, part: 2 },
+  // Two full-length mocks (Premium, Tests 9 and 10 by number): 85 questions in
+  // 90 minutes like the real exam, which has 75 scored + 10 unscored pilot
+  // items; every question counts here. The 13/8/19/14/10/11 scored split,
+  // scaled to 85.
+  mockExams: { count: 2, minutes: 90, blueprint: { rbtData: 15, rbtAssess: 9, rbtAcq: 21, rbtReduce: 16, rbtDoc: 11, rbtEthics: 13 } },
+  premiumBenefits: [
+    "200 work-scenario questions and Practice Tests 5 to 8",
+    "2 full-length timed RBT mocks: 85 questions in 90 minutes",
+    "Full stats on every question you miss, on every Tigertest exam",
+  ],
   questionsPerTest: 50,
   passPct: 80,
   // BACB RBT Test Content Outline (3rd ed.), in effect for exams from January 1, 2026 (document
   // updated 09/2024, checked October 2026): 75 scored + 10 unscored pilot questions in 90 minutes,
   // scored counts A Data Collection and Graphing 13, B Behavior Assessment 8, C Behavior
   // Acquisition 19, D Behavior Reduction 14, E Documentation and Reporting 10, F Ethics 11,
-  // scaled here to 50 per test (9/5/13/9/7/7). The BACB reports pass/fail against a modified-Angoff passing score and
+  // scaled here to 50 per test (9/5/13/9/7/7), pools 72/40/104/72/56/56 for eight tests. The BACB reports pass/fail against a modified-Angoff passing score and
   // publishes no percentage; 80% is a readiness marker. All items original.
   blueprint: {
     rbtData: 9,
@@ -8326,10 +9129,10 @@ const rbt: ExamConfig = {
     rbtEthics: 7,
   },
   trainingSets: [
-    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 56, weightLabel: "14 of 50 test questions" },
-    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 52, weightLabel: "13 of 50 test questions" },
-    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 36, weightLabel: "9 of 50 test questions" },
-    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 112, partSizes: [56, 56], partNames: ["Data Collection & Assessment", "Data & Assessment Scenarios"], weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 104, partSizes: [52, 52], partNames: ["Behavior Acquisition", "Acquisition Scenarios"], weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 72, partSizes: [36, 36], partNames: ["Behavior Reduction", "Reduction Scenarios"], weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 112, partSizes: [56, 56], partNames: ["Documentation, Reporting & Ethics", "Reporting & Ethics Scenarios"], weightLabel: "14 of 50 test questions" },
   ],
   categoryLabels: {
     rbtData: "Data Collection & Graphing",
@@ -8342,16 +9145,16 @@ const rbt: ExamConfig = {
   copy: {
     guestPrompt: "to save your RBT progress and track every question you miss",
     trainingHeading: "Train by RBT domain",
-    trainingSub: "Four sets covering all six domains of the RBT Test Content Outline (3rd ed.). Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Mock exams · 50 questions weighted like the real 75 scored",
+    trainingSub: "Four sets covering all six domains of the RBT Test Content Outline (3rd ed.), each with a scenario part. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real 75 scored, then full-length timed mocks",
     heroSubs: [
-      "Four sets, four mock exams. Start with Data Collection & Assessment.",
+      "Four sets, eight practice tests and two timed mocks. Start with Data Collection & Assessment.",
       "Master each set, then take a mock exam.",
       "Keep going. Take a mock exam to see where you stand.",
       "Review your mistakes, then retake any mock exam you haven't passed.",
       "All done. Book your RBT exam.",
     ],
-    sourceLine: "Based on the BACB RBT Test Content Outline (3rd ed.) and the RBT Ethics Code (2.0). Original questions; 50 per test, weighted like the real exam.",
+    sourceLine: "Based on the BACB RBT Test Content Outline (3rd ed.) and the RBT Ethics Code (2.0). Original questions, 200 of them work scenarios; 50 per test, weighted like the real exam.",
     analyticsKey: "rbt",
   },
 };
@@ -19535,7 +20338,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];
@@ -19557,8 +20360,21 @@ export const examSetId = (exam: ExamConfig, setNumber: number) => examSetBase(ex
 /** Landing page URL (the SEO page the switcher, hub and footer link to). */
 export const examLandingPath = (exam: ExamConfig) => exam.landingPath ?? exam.slug;
 
+/** Practice tests plus any full-length mocks. */
+export const examTestTotal = (exam: ExamConfig) => exam.testCount + (exam.mockExams?.count ?? 0);
+
 export const examTestIds = (exam: ExamConfig) =>
-  Array.from({ length: exam.testCount }, (_, i) => exam.idBase + 1 + i);
+  Array.from({ length: examTestTotal(exam) }, (_, i) => exam.idBase + 1 + i);
+
+/** Is test N (1-based, config order) a full-length mock? */
+export const isMockTest = (exam: ExamConfig, testNumber: number) =>
+  !!exam.mockExams && testNumber > exam.testCount && testNumber <= examTestTotal(exam);
+
+/** Questions in test N: a mock's own length, else questionsPerTest. */
+export const examTestLength = (exam: ExamConfig, testNumber: number) =>
+  isMockTest(exam, testNumber)
+    ? Object.values(exam.mockExams!.blueprint).reduce((a, b) => a + b, 0)
+    : exam.questionsPerTest;
 
 export function getExamById(id: string): ExamConfig | undefined {
   return ALL_EXAMS.find((e) => e.id === id);
@@ -19571,7 +20387,7 @@ export function getExamByStateCode(code: string | null | undefined): ExamConfig 
 
 /** Exam owning a practice-test store ID, if any. */
 export function getExamForTestId(testId: number): ExamConfig | undefined {
-  return ALL_EXAMS.find((e) => testId > e.idBase && testId <= e.idBase + e.testCount);
+  return ALL_EXAMS.find((e) => testId > e.idBase && testId <= e.idBase + examTestTotal(e));
 }
 
 /** Exam owning a training-set store ID, if any. */

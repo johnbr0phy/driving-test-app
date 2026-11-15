@@ -5,7 +5,7 @@
     "questionId": "CPR-BAS-001",
     "category": "cprBasics",
     "question": "You arrive at a scene where a person has collapsed in a parking lot. What should you do first?",
-    "optionA": "Start chest compressions",
+    "optionA": "Start CPR before checking anything",
     "optionB": "Check the scene for hazards",
     "optionC": "Call 911 right away",
     "optionD": "Check for a pulse and breathing",
@@ -215,7 +215,7 @@
     "questionId": "CPR-BAS-016",
     "category": "cprBasics",
     "question": "What does a 911 telecommunicator (dispatcher) do during a suspected cardiac arrest?",
-    "optionA": "Coaches CPR step by step by phone",
+    "optionA": "Coaches you through compressions by phone",
     "optionB": "Asks you to hang up to free the line",
     "optionC": "Tells you to wait for paramedics",
     "optionD": "Transfers you to a doctor",
@@ -300,12 +300,12 @@
     "category": "cprBasics",
     "question": "An unresponsive adult is breathing normally and has no signs of spinal injury. How should you position the person while waiting for EMS?",
     "optionA": "On the side in the recovery position",
-    "optionB": "Flat on the back with the chin lifted",
+    "optionB": "Flat on the back, ready for CPR",
     "optionC": "Sitting upright against a wall",
     "optionD": "Face down with the head turned",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The recovery position lets fluids drain and keeps the tongue from blocking the airway if the person vomits. Flat on the back risks aspiration, and sitting up is not possible for someone who is unresponsive."
+    "explanation": "A person who is breathing normally does not need CPR. The recovery position lets fluids drain and keeps the tongue from blocking the airway if the person vomits. Flat on the back risks aspiration, and sitting up is not possible for someone who is unresponsive."
   },
   {
     "type": "CPR",
@@ -719,13 +719,13 @@
     "questionId": "CPR-ADU-020",
     "category": "cprAdult",
     "question": "Immediately after the AED delivers a shock, what should you do?",
-    "optionA": "Check for a pulse for 10 seconds",
+    "optionA": "Resume CPR after a 10-second pulse check",
     "optionB": "Give two breaths, then check breathing",
     "optionC": "Resume CPR, starting with compressions",
     "optionD": "Wait quietly for the next analysis",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Even a successful shock leaves the heart too weak to pump well, so compressions restart right away for 2 minutes until the next analysis. Pulse checks after a shock waste time and are not recommended."
+    "explanation": "Even a successful shock leaves the heart too weak to pump well, so compressions restart right away for 2 minutes until the next analysis. A pulse check before resuming wastes time and is not recommended."
   },
   {
     "type": "CPR",
@@ -734,12 +734,12 @@
     "category": "cprAdult",
     "question": "The AED announces \"No shock advised.\" What should you do?",
     "optionA": "Remove the pads because the AED is finished",
-    "optionB": "Check for a pulse for 30 seconds",
+    "optionB": "Resume CPR only if there is no pulse in 30 seconds",
     "optionC": "Resume CPR, starting with compressions",
     "optionD": "Turn the AED off and on to recheck",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "No shock advised means the rhythm is not shockable, not that the heart has recovered, so continue CPR with the pads in place. The AED will reanalyze in 2 minutes."
+    "explanation": "No shock advised means the rhythm is not shockable, not that the heart has recovered, so continue CPR at once with the pads in place, without a long pulse check. The AED will reanalyze in 2 minutes."
   },
   {
     "type": "CPR",
@@ -971,7 +971,7 @@
     "questionId": "CPR-ADU-038",
     "category": "cprAdult",
     "question": "A trained rescuer is willing to give breaths to an adult in cardiac arrest from a sudden collapse. What should the rescuer do?",
-    "optionA": "Conventional CPR at 30:2",
+    "optionA": "Compressions and breaths at 30:2",
     "optionB": "Compressions only; breaths are outdated",
     "optionC": "Breaths only until EMS arrives",
     "optionD": "One minute of compressions, then one of breaths",
@@ -999,13 +999,13 @@
     "questionId": "CPR-ADU-040",
     "category": "cprAdult",
     "question": "How should a lay rescuer perform CPR on a woman who is obviously pregnant?",
-    "optionA": "Compress only on the upper chest",
+    "optionA": "Give CPR higher up on the chest",
     "optionB": "Give standard CPR and use the AED",
     "optionC": "Do not use an AED near the fetus",
     "optionD": "Position the woman face down first",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Standard compressions and defibrillation are safe and necessary; the best chance for the fetus is resuscitating the mother. Advanced providers add manual displacement of the uterus to the left, but lay rescuers give usual CPR."
+    "explanation": "Standard compressions in the usual place and defibrillation are safe and necessary; the best chance for the fetus is resuscitating the mother. Advanced providers add manual displacement of the uterus to the left, but lay rescuers give usual CPR."
   },
   {
     "type": "CPR",
@@ -1013,7 +1013,7 @@
     "questionId": "CPR-ADU-041",
     "category": "cprAdult",
     "question": "What is the primary role of the team leader during a resuscitation?",
-    "optionA": "Assign roles and monitor CPR quality",
+    "optionA": "Assign roles and watch compression quality",
     "optionB": "Do all the chest compressions personally",
     "optionC": "Fill out the written report",
     "optionD": "Leave to meet the ambulance",
@@ -1461,7 +1461,7 @@
     "questionId": "CPR-CHI-025",
     "category": "cprChildInfant",
     "question": "Which type of CPR is preferred for a child in cardiac arrest?",
-    "optionA": "Conventional CPR with breaths",
+    "optionA": "Compressions with rescue breaths",
     "optionB": "Compression-only CPR without breaths",
     "optionC": "Rescue breaths only, no compressions",
     "optionD": "Abdominal thrusts, then breaths",
@@ -1546,12 +1546,12 @@
     "category": "cprChildInfant",
     "question": "A healthy teenage athlete suddenly collapses during practice and is unresponsive and not breathing. What is the most likely problem and the most important intervention?",
     "optionA": "Dehydration; give sports drink by mouth",
-    "optionB": "An asthma attack; use an inhaler",
+    "optionB": "An asthma attack; CPR but no AED",
     "optionC": "Cardiac rhythm problem; AED and CPR",
     "optionD": "A seizure; wait for it to pass",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Sudden collapse in a young athlete is often caused by an undiagnosed heart condition producing ventricular fibrillation, which an AED can correct. Fluids or inhalers do nothing for a victim in cardiac arrest."
+    "explanation": "Sudden collapse in a young athlete is often caused by an undiagnosed heart condition producing ventricular fibrillation, which an AED can correct, so the AED must not be left out. Fluids or inhalers do nothing for a victim in cardiac arrest."
   },
   {
     "type": "CPR",
@@ -1702,10 +1702,10 @@
     "optionA": "Give abdominal thrusts immediately",
     "optionB": "Slap the person firmly on the back",
     "optionC": "Encourage coughing and stay close",
-    "optionD": "Have the person drink water",
+    "optionD": "Start CPR if the coughing slows",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A forceful cough moves air and is more effective than anything you can do, so do not interfere with a mild obstruction. Thrusts or back slaps could lodge the object more deeply, and drinking water adds a second obstruction risk."
+    "explanation": "A forceful cough moves air and is more effective than anything you can do, so do not interfere with a mild obstruction. Thrusts or back slaps could lodge the object more deeply. CPR is only for a choking person who becomes unresponsive; if coughing weakens in a responsive person, abdominal thrusts are next."
   },
   {
     "type": "CPR",
@@ -1758,10 +1758,10 @@
     "optionA": "Continue thrusts with the person lying down",
     "optionB": "Lower the person, call 911 and start CPR",
     "optionC": "Give rescue breaths until the chest rises",
-    "optionD": "Wait for EMS; nothing more can be done",
+    "optionD": "Call 911, then wait without CPR",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Chest compressions generate pressure that may dislodge the object, so CPR begins immediately. Each time you open the airway to give breaths, look in the mouth and remove any object you can see."
+    "explanation": "Call 911 and begin CPR immediately: chest compressions generate pressure that may dislodge the object, so waiting for EMS wastes that chance. Each time you open the airway to give breaths, look in the mouth and remove any object you can see."
   },
   {
     "type": "CPR",
@@ -2217,13 +2217,13 @@
     "questionId": "CPR-FA-015",
     "category": "cprFirstAid",
     "question": "A person has been shocked by a household electrical current and is now responsive. What is a priority concern?",
-    "optionA": "Applying ice to the contact point",
+    "optionA": "Starting CPR as a precaution",
     "optionB": "Having the person walk to test the legs",
     "optionC": "Turning off the power and calling 911",
     "optionD": "Giving the person a sweet drink",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Electrical injuries can disrupt the heart hours later and cause deep tissue damage between entry and exit points, so every electrical shock victim should be evaluated. Never touch the victim until the power source is off."
+    "explanation": "Electrical injuries can disrupt the heart hours later and cause deep tissue damage between entry and exit points, so every electrical shock victim should be evaluated. A responsive person does not need CPR. Never touch the victim until the power source is off."
   },
   {
     "type": "CPR",
@@ -2276,7 +2276,7 @@
     "optionA": "Cover the wound, splint and call 911",
     "optionB": "Push the bone back and bandage tightly",
     "optionC": "Rinse the bone and wrap it in a wet cloth",
-    "optionD": "Pull the arm straight to realign the bone",
+    "optionD": "Pull the arm straight, then call 911",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "An open fracture needs the wound covered with a sterile dressing and the limb immobilized; never push the bone back in, because manipulating it causes bleeding, infection and nerve damage. Realignment is a hospital procedure."
@@ -2430,10 +2430,10 @@
     "optionA": "Sit the person upright immediately",
     "optionB": "Keep them flat and check for injuries",
     "optionC": "Give a sugary drink right away while groggy",
-    "optionD": "Slap the face to wake them faster",
+    "optionD": "Start CPR until the person wakes",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Check breathing, keep the person lying flat for a few minutes and look for injuries from the fall; fainting is a brief drop in blood flow to the brain that resolves when the person is horizontal. Sitting up too soon can cause another faint, and giving drinks to a groggy person risks choking."
+    "explanation": "Check breathing, keep the person lying flat for a few minutes and look for injuries from the fall; fainting is a brief drop in blood flow to the brain that resolves when the person is horizontal. A person who fainted and is breathing does not need CPR, and sitting up too soon can cause another faint."
   },
   {
     "type": "CPR",
@@ -2456,12 +2456,12 @@
     "category": "cprFirstAid",
     "question": "A marathon runner collapses with hot skin and confusion on a hot day. What is the most important treatment?",
     "optionA": "Call 911 and cool the body rapidly",
-    "optionB": "Give a sports drink and rest in the shade",
+    "optionB": "Call 911 and rest in the shade",
     "optionC": "Cover the runner with a blanket",
     "optionD": "Have the runner walk slowly to cool down",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Heat stroke is a life-threatening failure of temperature regulation; rapid cooling within 30 minutes saves lives, and cold water immersion is the fastest method. Fluids by mouth are unsafe in a confused victim."
+    "explanation": "Heat stroke is a life-threatening failure of temperature regulation; call 911 and start rapid cooling at once, since cooling within 30 minutes saves lives and cold water immersion is the fastest method. Resting in the shade does not cool fast enough, and fluids by mouth are unsafe in a confused victim."
   },
   {
     "type": "CPR",
@@ -2526,12 +2526,12 @@
     "category": "cprFirstAid",
     "question": "A responsive person with diabetes is shaky, sweaty and confused but can swallow. What should you do?",
     "optionA": "Give an insulin injection",
-    "optionB": "Have them lie down and avoid all food",
+    "optionB": "Call 911 and give nothing by mouth",
     "optionC": "Give 15 to 20 grams of sugar",
     "optionD": "Give sugar-free diet soda",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "These are signs of low blood sugar, which fast-acting sugar such as glucose tablets or juice corrects; recheck in 10 to 15 minutes and repeat if needed. Insulin would lower sugar further, and diet drinks contain no sugar."
+    "explanation": "These are signs of low blood sugar, which fast-acting sugar such as glucose tablets or juice corrects; recheck in 10 to 15 minutes and repeat if needed. A person who can swallow should get sugar now rather than wait with nothing by mouth, which is the rule only for an unresponsive person. Insulin would lower sugar further."
   },
   {
     "type": "CPR",
@@ -2542,10 +2542,10 @@
     "optionA": "Call 911 and give nothing by mouth",
     "optionB": "Pour juice into the mouth slowly",
     "optionC": "Rub honey on the gums and wait 30 minutes",
-    "optionD": "Give insulin from their supplies",
+    "optionD": "Give insulin, then call 911",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An unresponsive person cannot swallow safely, so anything by mouth risks choking and aspiration; place the person in the recovery position if breathing. EMS can give glucose by injection or IV."
+    "explanation": "An unresponsive person cannot swallow safely, so anything by mouth risks choking and aspiration; place the person in the recovery position if breathing. Insulin could lower blood sugar further even if 911 is called after. EMS can give glucose by injection or IV."
   },
   {
     "type": "CPR",

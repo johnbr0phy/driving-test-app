@@ -232,10 +232,10 @@
     "optionA": "Report it to your supervisor",
     "optionB": "Ignore it, it is not your area",
     "optionC": "Fix it yourself whatever it is",
-    "optionD": "Mention it at the end of the week",
+    "optionD": "Report it at the end of the week",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Everyone on site has a duty to report hazards. Make the area safe only if you are competent to do so, and tell your supervisor straight away."
+    "explanation": "Everyone on site has a duty to report hazards. Make the area safe only if you are competent to do so, and tell your supervisor straight away, not days later when someone may already be hurt."
   },
   {
     "type": "CSCS",
@@ -246,10 +246,10 @@
     "optionA": "Carry on because you were told",
     "optionB": "Stop and raise your concern",
     "optionC": "Finish the task as fast as possible",
-    "optionD": "Walk off site without telling anyone",
+    "optionD": "Stop, then walk off without telling anyone",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "You have the right to stop work you believe is unsafe. Explain your concern; if it is not resolved, take it higher, for example to the site manager or a safety representative."
+    "explanation": "You have the right to stop work you believe is unsafe. Explain your concern; if it is not resolved, take it higher, for example to the site manager or a safety representative. Stopping and leaving without a word means the danger is never dealt with."
   },
   {
     "type": "CSCS",
@@ -441,11 +441,11 @@
     "question": "What should you do if you are injured at work, however minor?",
     "optionA": "Treat it yourself and say nothing",
     "optionB": "Wait to see if it gets worse",
-    "optionC": "Tell only your workmates about it",
+    "optionC": "Report it only if you need time off",
     "optionD": "Report it so it is recorded",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "All injuries should be reported and recorded. The record helps the employer decide whether RIDDOR applies and supports any later claim."
+    "explanation": "All injuries should be reported and recorded, however minor and whether or not you need time off. The record helps the employer decide whether RIDDOR applies and supports any later claim."
   },
   {
     "type": "CSCS",
@@ -497,11 +497,11 @@
     "question": "A worker on site is clearly under the influence of drugs or alcohol. What should you do?",
     "optionA": "Let them carry on if they seem fine",
     "optionB": "Send them home in their own car",
-    "optionC": "Cover for them until the end of shift",
+    "optionC": "Tell your supervisor at the end of the shift",
     "optionD": "Tell your supervisor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Someone impaired by drink or drugs is a danger to themselves and others. Report it to your supervisor so they can be removed from work safely."
+    "explanation": "Someone impaired by drink or drugs is a danger to themselves and others. Report it to your supervisor straight away so they can be removed from work safely; waiting until the shift ends leaves them working impaired."
   },
   {
     "type": "CSCS",
@@ -567,7 +567,7 @@
     "question": "What should you do when the fire alarm sounds on site?",
     "optionA": "Stop work and go to the assembly point",
     "optionB": "Finish your task, then leave the site",
-    "optionC": "Collect your tools, then go outside",
+    "optionC": "Stop work, then collect your tools first",
     "optionD": "Wait to see if it is only a fire drill",
     "correctAnswer": "A",
     "correctIndex": 0,
@@ -805,11 +805,11 @@
     "question": "You uncover material you think may contain asbestos. What should you do?",
     "optionA": "Wet it and carry on carefully",
     "optionB": "Stop work and tell your supervisor",
-    "optionC": "Bag it up and put it in the skip",
+    "optionC": "Stop, then bag it up for the skip",
     "optionD": "Sweep it up with a dry brush first",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Stop work at once, keep others away and report it. Asbestos must be identified and dealt with by trained people under the Control of Asbestos Regulations 2012."
+    "explanation": "Stop work at once, keep others away and report it. Asbestos must be identified and dealt with by trained people under the Control of Asbestos Regulations 2012, so you must not bag it up or move it yourself."
   },
   {
     "type": "CSCS",
@@ -1435,7 +1435,7 @@
     "question": "What should you do if a safety sign on site is damaged or missing?",
     "optionA": "Make your own sign to replace it",
     "optionB": "Ignore it, signs are optional",
-    "optionC": "Report it to your supervisor",
+    "optionC": "Report it so it can be replaced",
     "optionD": "Remove the rest of the signs",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1604,10 +1604,10 @@
     "optionA": "Wrap the damage in insulating tape",
     "optionB": "Use it only for small hand tools",
     "optionC": "Stop using it and report it",
-    "optionD": "Keep it for emergencies only",
+    "optionD": "Report it, then keep using it carefully",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Damaged leads can cause shocks and fires. Remove it from use, label it as faulty and tell your supervisor."
+    "explanation": "Damaged leads can cause shocks and fires. Remove it from use, label it as faulty and tell your supervisor; reporting it while still using it leaves the danger in place."
   },
   {
     "type": "CSCS",
@@ -1715,7 +1715,7 @@
     "question": "Why must guards be kept in place on cutting tools?",
     "optionA": "They make the tool cut faster",
     "optionB": "They stop the tool overheating",
-    "optionC": "They stop contact with the blade",
+    "optionC": "They prevent contact with the blade",
     "optionD": "They keep the tool clean and dry",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1742,12 +1742,12 @@
     "category": "cscsSafety",
     "question": "What should you do with a hand tool that has a loose or split handle?",
     "optionA": "Stop using it and report it",
-    "optionB": "Use it only for light jobs",
+    "optionB": "Report it, but finish today's job with it",
     "optionC": "Hold it nearer to the head end",
     "optionD": "Bind the handle with tape",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Loose heads and split handles cause injuries. Take the tool out of use until it is repaired or replaced."
+    "explanation": "Loose heads and split handles cause injuries. Take the tool out of use straight away until it is repaired or replaced; reporting it but carrying on is not enough."
   },
   {
     "type": "CSCS",
@@ -1827,7 +1827,7 @@
     "question": "Why are pedestrians and vehicles kept apart on site?",
     "optionA": "To make deliveries quicker",
     "optionB": "To save fuel on short trips",
-    "optionC": "To stop people being struck",
+    "optionC": "To prevent people being struck",
     "optionD": "To stop dust spreading so far",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1883,7 +1883,7 @@
     "question": "Why should plant engines be switched off and keys removed when left unattended?",
     "optionA": "To keep the engine warm",
     "optionB": "To let the battery charge",
-    "optionC": "To stop unauthorised use",
+    "optionC": "To prevent unauthorised use",
     "optionD": "To clear the exhaust fumes",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1965,7 +1965,7 @@
     "questionId": "CSCS-HGT-005",
     "category": "cscsHeights",
     "question": "What is the main purpose of a toe board?",
-    "optionA": "To stop things falling off the edge",
+    "optionA": "To keep things from falling off the edge",
     "optionB": "To stop the scaffold from moving",
     "optionC": "To give workers something to stand on",
     "optionD": "To mark the edge of a walkway",
@@ -1993,13 +1993,13 @@
     "questionId": "CSCS-HGT-007",
     "category": "cscsHeights",
     "question": "A scaffold you need to use has a missing guard rail. What should you do?",
-    "optionA": "Use it but stay away from that side",
+    "optionA": "Report it, then use it away from that side",
     "optionB": "Fix it with timber yourself",
     "optionC": "Do not use it and report it",
     "optionD": "Use it if your job is quick",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Only competent scaffolders may alter a scaffold. Do not use it until it is made safe and report the problem."
+    "explanation": "Only competent scaffolders may alter a scaffold. Do not use it at all until it is made safe and report the problem; keeping away from the open side is no protection."
   },
   {
     "type": "CSCS",
@@ -2401,11 +2401,11 @@
     "question": "While digging, you uncover a pipe or cable not shown on the plans. What should you do?",
     "optionA": "Dig round it quickly",
     "optionB": "Cut it to see if it is live",
-    "optionC": "Cover it and carry on",
+    "optionC": "Report it at the end of the shift",
     "optionD": "Stop and report it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Treat unknown services as live. Stop work and tell your supervisor so the service can be identified."
+    "explanation": "Treat unknown services as live. Stop work and tell your supervisor straight away so the service can be identified; waiting until the end of the shift means digging on beside it."
   },
   {
     "type": "CSCS",
@@ -2498,12 +2498,12 @@
     "category": "cscsExcav",
     "question": "Excavation supports have moved overnight. What should you do?",
     "optionA": "Push them back by hand",
-    "optionB": "Work at the other end",
+    "optionB": "Report it but work at the other end",
     "optionC": "Stay out and report it",
     "optionD": "Work quickly then leave",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Movement shows the sides may be unstable. Keep out until a competent person has inspected and made the excavation safe."
+    "explanation": "Movement shows the sides may be unstable. Keep out of the whole excavation, not just one end, until a competent person has inspected and made it safe."
   },
   {
     "type": "CSCS",
@@ -2528,10 +2528,10 @@
     "optionA": "Stop the leak if safe and contain it",
     "optionB": "Hose it into the nearest drain",
     "optionC": "Cover it with soil and leave it",
-    "optionD": "Wait until the end of the day to act",
+    "optionD": "Report it at the end of the day",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Stop the source if it is safe to do so, contain the spill with a spill kit and report it. Never wash spills into drains."
+    "explanation": "Stop the source if it is safe to do so, contain the spill with a spill kit and report it straight away. Leaving it until the end of the day lets it spread, and never wash spills into drains."
   },
   {
     "type": "CSCS",
@@ -2570,7 +2570,7 @@
     "optionA": "To keep the plant clean and dry",
     "optionB": "To reduce noise for neighbours",
     "optionC": "To make refuelling faster",
-    "optionD": "To stop spills reaching water",
+    "optionD": "To keep spills out of the water",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Refuel at a set point with a drip tray and spill kit, away from drains and water, so any spill can be contained."
@@ -2665,13 +2665,13 @@
     "questionId": "CSCS-ENV-011",
     "category": "cscsEnv",
     "question": "You find a bat roosting in a roof you are stripping. What should you do?",
-    "optionA": "Move the bat to a tree",
+    "optionA": "Stop, then move the bat somewhere safe",
     "optionB": "Carry on carefully around it",
     "optionC": "Stop and tell your supervisor",
     "optionD": "Seal the gap so it cannot return",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "All bats and their roosts are protected by law. Stop work in that area and report it so a licensed ecologist can advise."
+    "explanation": "All bats and their roosts are protected by law, so you must not handle or move the bat. Stop work in that area and report it so a licensed ecologist can advise."
   },
   {
     "type": "CSCS",
@@ -2735,13 +2735,13 @@
     "questionId": "CSCS-ENV-016",
     "category": "cscsEnv",
     "question": "While digging, you find what looks like old pottery and bones. What should you do?",
-    "optionA": "Bag it up and keep it safe",
+    "optionA": "Bag it up, then report it",
     "optionB": "Throw it in the skip",
     "optionC": "Dig deeper to see more",
     "optionD": "Stop work and report it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "There may be archaeological remains, or human remains that the police must be told about. Stop work and tell your supervisor."
+    "explanation": "There may be archaeological remains, or human remains that the police must be told about. Stop work, leave everything where it is and tell your supervisor; moving the finds spoils the evidence even if you report them."
   },
   {
     "type": "CSCS",

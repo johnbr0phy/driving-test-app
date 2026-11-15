@@ -707,7 +707,7 @@
     "question": "What is the first link in the chain of survival?",
     "optionA": "Early CPR to buy some time",
     "optionB": "Early defibrillation with an AED",
-    "optionC": "Early recognition, call for help",
+    "optionC": "Early recognition, get help",
     "optionD": "Good care after resuscitation",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1601,13 +1601,13 @@
     "questionId": "UKFAW-BON-027",
     "category": "ukfawBones",
     "question": "A worker was struck on the head and seemed fine but is now drowsy and vomiting. What should you do?",
-    "optionA": "Let them sleep it off",
+    "optionA": "Call 111, let them sleep",
     "optionB": "Give them pain relief",
     "optionC": "Call 999",
     "optionD": "Send them home alone",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Drowsiness and repeated vomiting after a head injury are warning signs of a worsening injury. They need emergency assessment, not rest at home."
+    "explanation": "Drowsiness and repeated vomiting after a head injury are warning signs of a worsening injury. They need an ambulance and emergency assessment, not a call to 111 and rest."
   },
   {
     "type": "UKFAW",
@@ -1716,10 +1716,10 @@
     "optionA": "Keep giving back blows",
     "optionB": "Keep giving abdominal thrusts",
     "optionC": "Call 999 and start CPR",
-    "optionD": "Put them in recovery position",
+    "optionD": "Call 999, recovery position",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Lower them carefully to the ground, call 999 and start CPR with chest compressions. Compressions can help dislodge the blockage."
+    "explanation": "Lower them carefully to the ground, call 999 and start CPR with chest compressions; the recovery position is for someone who is breathing normally. Compressions can help dislodge the blockage."
   },
   {
     "type": "UKFAW",
@@ -1811,13 +1811,13 @@
     "questionId": "UKFAW-CHS-014",
     "category": "ukfawChest",
     "question": "A casualty is no better after 10 puffs of their reliever inhaler. What should you do?",
-    "optionA": "Wait another hour",
+    "optionA": "Call 999 if no better in an hour",
     "optionB": "Call 999",
     "optionC": "Give them a warm drink",
     "optionD": "Lie them down to rest",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Call 999 if the attack does not ease after 10 puffs or the casualty is getting worse. If the ambulance takes more than 10 minutes, repeat the puffs."
+    "explanation": "Call 999 now if the attack does not ease after 10 puffs or the casualty is getting worse; do not wait to see. If the ambulance takes more than 10 minutes, repeat the puffs."
   },
   {
     "type": "UKFAW",
@@ -2415,11 +2415,11 @@
     "question": "A colleague's face droops and their speech is slurred, but it clears after 10 minutes. What should you do?",
     "optionA": "Call 999 anyway",
     "optionB": "Let them get back to work",
-    "optionC": "Book them a GP visit",
+    "optionC": "Call 999 only if it returns",
     "optionD": "Give them an aspirin",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Stroke symptoms that pass may be a transient ischaemic attack, which is a warning of a possible stroke. NHS advice is to call 999 even if the symptoms go away."
+    "explanation": "Stroke symptoms that pass may be a transient ischaemic attack, which is a warning of a possible stroke. NHS advice is to call 999 even if the symptoms go away, not to wait for them to come back."
   },
   {
     "type": "UKFAW",
@@ -2765,11 +2765,11 @@
     "question": "A casualty with known allergies says their lips feel tight after eating. What should you do first?",
     "optionA": "Wait to see if it settles",
     "optionB": "Call 999, use their pen",
-    "optionC": "Give them a big glass of water",
+    "optionC": "Call 999, keep the pen for later",
     "optionD": "Make them lie face down",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Tightness of the lips or throat may be the start of anaphylaxis. Call 999 and help them use their own adrenaline auto-injector straight away."
+    "explanation": "Tightness of the lips or throat may be the start of anaphylaxis. Call 999 and help them use their own adrenaline auto-injector straight away; holding the pen back until things get worse loses time."
   },
   {
     "type": "UKFAW",

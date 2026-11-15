@@ -1,0 +1,16 @@
+  hspachl: {
+    answer:
+      "The Certified Healthcare Leader (CHL) exam is the Healthcare Sterile Processing Association's (HSPA) certification exam for sterile processing managers and supervisors. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. The content outline revised August 2025 and updated January 2026 has four sections: Planning and Decision Making 25%, Organizing 23%, Leading 29%, and Governing and Compliance 23%. A current CRCST is required, and from October 2026 HSPA also asks for 12 months of sterile processing or leadership experience or an associate degree.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Set number of scored questions correct (Angoff method); no percentage published" },
+      { label: "Content", value: "Leading 29%, Planning 25%, Organizing 23%, Governing and Compliance 23%" },
+      { label: "Eligibility", value: "Current CRCST, plus (from Oct 2026) 12 months of SP or leadership experience or an associate degree" },
+      { label: "Where", value: "Computer based at Prometric test centers" },
+      { label: "Renewal", value: "Every year, with continuing education; CRCST must stay current" },
+      { label: "Run by", value: "Healthcare Sterile Processing Association (HSPA)" },
+    ],
+    basedOn: "HSPA's CHL Exam Content Outline (revised August 2025, updated January 2026), CHL eligibility update page and Certification Handbook (revised January 2026), checked November 2026",
+    source: { name: "HSPA: Certified Healthcare Leader (CHL)", url: "https://myhspa.org/certification/certification-overview/certified-healthcare-leader-chl/" },
+  },

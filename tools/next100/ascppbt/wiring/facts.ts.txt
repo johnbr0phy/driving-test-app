@@ -1,0 +1,14 @@
+  ascppbt: {
+    answer:
+      "The PBT(ASCP) exam is the phlebotomy technician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the PBT(ASCP) credential (PBT(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 80 multiple-choice questions with one best answer in 2 hours, delivered as computer adaptive testing. Content areas are Specimen Collection 45 to 50%, Specimen Handling, Transport, and Processing 15 to 20%, Laboratory Operations 15 to 20%, and the Circulatory System, Waived and Point-of-Care Testing and Non-Blood Specimens 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score; guides say the scale is 100 to 999 with 400 to pass.",
+    rows: [
+      { label: "Questions", value: "80 multiple choice, one best answer" },
+      { label: "Time", value: "2 hours" },
+      { label: "Format", value: "Computer adaptive testing (CAT)" },
+      { label: "Largest area", value: "Specimen Collection, 45 to 50%" },
+      { label: "Pass mark", value: "Scaled score; guides say 400 on a 100 to 999 scale" },
+      { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+    ],
+    basedOn: "The ASCP BOC Phlebotomy Technician PBT(ASCP) and PBT(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
+    source: { name: "ASCP BOC: PBT(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_pbt_content_guideline.pdf?sfvrsn=aa1319c7_1" },
+  },

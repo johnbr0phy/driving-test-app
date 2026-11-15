@@ -34,6 +34,8 @@ const TH = "text-right font-medium pb-2 pl-4 whitespace-nowrap";
 const THL = "text-left font-medium pb-2 pl-4 whitespace-nowrap";
 const TD = "py-2 pl-4 text-right tabular-nums whitespace-nowrap";
 const TDL = "py-2 pl-4 whitespace-nowrap";
+/** A left column whose text wraps: the width is fixed on the cell so the table cannot squeeze it into the next column. */
+const TDW = "py-2 pl-4 whitespace-normal break-words";
 const DOT = <span className="text-gray-400">·</span>;
 
 const SOURCE_NAMES: Record<string, string> = {
@@ -279,10 +281,10 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
                   <tr key={l.email + l.lastPaywallAt} className={`${ROW} text-gray-900 dark:text-gray-50 align-top`}>
                     <td className={`py-2 pr-2 max-w-[180px] truncate ${STICKY_COL}`} title={l.email}>{l.email}</td>
                     <td className={`${TD} font-semibold`} style={{ color: PAID }}>{fmtPct(l.chance)}</td>
-                    <td className={`${TDL} max-w-[220px] whitespace-normal`}>
+                    <td className={`${TDW} min-w-[200px] max-w-[240px]`}>
                       <span className={l.emailStatus === "ok" ? "" : "text-gray-500 dark:text-gray-400"}>{l.nextEmail}</span>
                     </td>
-                    <td className={`${TDL} max-w-[220px] whitespace-normal text-gray-600 dark:text-gray-300`}>
+                    <td className={`${TDW} min-w-[180px] max-w-[240px] text-gray-600 dark:text-gray-300`}>
                       {l.emailsHad.length > 0 ? l.emailsHad.join(", ") : DOT}
                       {l.lastEmailAt && <span className="block text-[11px] text-gray-500 dark:text-gray-400">last {fmtDay(l.lastEmailAt)}</span>}
                     </td>
@@ -291,7 +293,7 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
                     <td className={TD}>{fmtInt(l.answers)}</td>
                     <td className={TD}>{fmtInt(l.tests)}</td>
                     <td className={TD}>{fmtInt(l.paywallViews)}</td>
-                    <td className={TDL}>{l.lastPaywall}{l.lastPaywallAt ? `, ${fmtDay(l.lastPaywallAt)}` : ""}</td>
+                    <td className={`${TDW} min-w-[160px] max-w-[220px]`}>{l.lastPaywall}{l.lastPaywallAt ? `, ${fmtDay(l.lastPaywallAt)}` : ""}</td>
                     <td className={TD}>{fmtDay(l.lastActive)}</td>
                   </tr>
                 ))}

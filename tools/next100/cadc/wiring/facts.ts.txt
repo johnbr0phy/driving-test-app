@@ -1,0 +1,15 @@
+  cadc: {
+    answer:
+      "The IC&RC Alcohol and Drug Counselor (ADC) exam is the certification exam of the International Certification & Reciprocity Consortium, used by many US state boards for their alcohol and drug counselor credential (called CADC, LADC, CAC or another name depending on the state). IC&RC's candidate guide (effective November 2022) lists 150 multiple-choice questions, 125 scored and 25 unscored pretest, in 3 hours, each with three or four choices and one best answer. It covers Scientific Principles of Substance Use and Co-Occurring Disorders (25%), Evidence-Based Screening and Assessment (20%), Evidence-Based Treatment, Counseling, and Referral (30%) and Professional, Ethical, and Legal Responsibilities (25%). Prometric delivers it on computer at a test center or by remote proctoring where the board allows it. Scores are scaled from 200 to 800 and 500 passes; a candidate who fails waits at least 90 days to retest.",
+    rows: [
+      { label: "Questions", value: "150 (125 scored, 25 pretest), three or four choices each" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Scaled score of 500 (scale 200 to 800)" },
+      { label: "Largest domain", value: "Treatment, Counseling, and Referral, 30%" },
+      { label: "Where", value: "Prometric test centers, or remote proctoring if your board allows it" },
+      { label: "Retakes", value: "At least 90 days after the previous attempt" },
+      { label: "Run by", value: "IC&RC, through its member state boards" },
+    ],
+    basedOn: "IC&RC's ADC Exam Candidate Guide (effective November 2022) and the IC&RC General Candidate Guide (2025), checked November 2026",
+    source: { name: "IC&RC: credentials and candidate guides", url: "https://internationalcredentialing.org/icrc-credentials/credentials/" },
+  },

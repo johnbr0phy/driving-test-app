@@ -33,6 +33,20 @@ export interface ExamUi {
   dateLocale: string;
 }
 
+/** Strings for full-length timed mocks (Nov 2026).
+ *  Languages without them read English (examUi() merges over en). */
+export interface ExamUiMock {
+  mockN: (n: number) => string;
+  mockSub: (questions: number, minutes: number) => string;
+  mockStartTitle: (shortName: string, n: number) => string;
+  mockStartBody: (questions: number, minutes: number) => string;
+  mockStart: string;
+  timeLeft: (clock: string) => string;
+  timeUp: string;
+}
+
+export type ExamUiFull = ExamUi & ExamUiMock;
+
 const en: ExamUi = {
   heroTitle: (done, total) => {
     if (done === 0) return `Complete all ${total} steps`;
@@ -66,6 +80,29 @@ const en: ExamUi = {
     `${seen} of ${total} ${shortName} questions seen. Tap any row to answer it again.`,
   dateLocale: "en-US",
 };
+
+const enMock: ExamUiMock = {
+  mockN: (n) => `⏱️ Full-length mock ${n}`,
+  mockSub: (q, min) => `${q} questions · ${min} min, timed`,
+  mockStartTitle: (shortName, n) => `${shortName} full-length mock ${n}`,
+  mockStartBody: (q, min) =>
+    `${q} questions in ${min} minutes, like the real exam. The clock starts when you begin and keeps running if you leave. When time runs out, the test is scored and unanswered questions count as wrong.`,
+  mockStart: "Start the clock",
+  timeLeft: (clock) => `${clock} left`,
+  timeUp: "Time's up. Scoring your test.",
+};
+
+const esMock: ExamUiMock = {
+  mockN: (n) => `⏱️ Simulacro completo ${n}`,
+  mockSub: (q, min) => `${q} preguntas · ${min} min, cronometrado`,
+  mockStartTitle: (shortName, n) => `${shortName}: simulacro completo ${n}`,
+  mockStartBody: (q, min) =>
+    `${q} preguntas en ${min} minutos, como el examen real. El reloj empieza cuando comienzas y sigue corriendo si sales. Al acabarse el tiempo, se califica el examen y las preguntas sin responder cuentan como incorrectas.`,
+  mockStart: "Empezar el reloj",
+  timeLeft: (clock) => `Quedan ${clock}`,
+  timeUp: "Se acabó el tiempo. Calificando tu examen.",
+};
+
 
 const es: ExamUi = {
   heroTitle: (done, total) => {
@@ -603,8 +640,10 @@ const el: ExamUi = {
 };
 
 const EXAM_UI: Partial<Record<Language, ExamUi>> = { en, es, vi, ko, zh, de, fr, it, pl, nl, pt, sv, da, fi, hu, ro, el };
+const EXAM_UI_MOCK: Partial<Record<Language, ExamUiMock>> = { en: enMock, es: esMock };
 
-export function examUi(lang: Language, englishLocale: "en-US" | "en-GB" = "en-US"): ExamUi {
-  if (lang === "en" && englishLocale === "en-GB") return { ...en, dateLocale: "en-GB" };
-  return EXAM_UI[lang] ?? en;
+export function examUi(lang: Language, englishLocale: "en-US" | "en-GB" = "en-US"): ExamUiFull {
+  const mock = EXAM_UI_MOCK[lang] ?? enMock;
+  if (lang === "en" && englishLocale === "en-GB") return { ...en, ...enMock, dateLocale: "en-GB" };
+  return { ...(EXAM_UI[lang] ?? en), ...mock };
 }

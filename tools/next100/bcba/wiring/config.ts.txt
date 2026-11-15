@@ -1,0 +1,69 @@
+const bcba: ExamConfig = {
+  id: "bcba",
+  stateCode: "BCBA",
+  idBase: 28700,
+  slug: "/bcba",
+  landingPath: "/bcba-practice-test",
+  name: "BCBA Practice Test",
+  shortName: "BCBA",
+  examLabel: "BCBA exam",
+  fullName: "Board Certified Behavior Analyst (BCBA) Certification Exam",
+  questionIdPrefix: "BCBA-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // BACB BCBA Test Content Outline (6th ed.), document updated 09/2024, in use from 2025 and still
+  // the current edition in the BCBA Handbook updated 11/2026 (checked November 2026): 185 questions
+  // (175 scored, 10 unscored) in 4 hours, scored counts A Behaviorism and Philosophical
+  // Foundations 8, B Concepts and Principles 24, C Measurement, Data Display, and Interpretation
+  // 21, D Experimental Design 13, E Ethical and Professional Issues 22, F Behavior Assessment 23,
+  // G Behavior-Change Procedures 25, H Selecting and Implementing Interventions 20, I Personnel
+  // Supervision and Management 19; scaled here to 50 per test (2/7/6/4/6/7/7/6/5). The BACB
+  // reports pass/fail against a modified-Angoff passing score and publishes no percentage; 70% is
+  // a readiness marker. Ethics items follow the Ethics Code for Behavior Analysts. All items original.
+  blueprint: {
+    bcbaPhil: 2,
+    bcbaConcepts: 7,
+    bcbaMeasure: 6,
+    bcbaDesign: 4,
+    bcbaEthics: 6,
+    bcbaAssess: 7,
+    bcbaChange: 7,
+    bcbaInterv: 6,
+    bcbaSuper: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28701, name: "Philosophy, Concepts & Principles", categories: ["bcbaPhil", "bcbaConcepts"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 28702, name: "Measurement & Experimental Design", categories: ["bcbaMeasure", "bcbaDesign"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 28703, name: "Ethics & Behavior Assessment", categories: ["bcbaEthics", "bcbaAssess"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 28704, name: "Behavior Change & Interventions", categories: ["bcbaChange", "bcbaInterv"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 28705, name: "Supervision & Management", categories: ["bcbaSuper"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bcbaPhil: "Behaviorism & Philosophical Foundations",
+    bcbaConcepts: "Concepts & Principles",
+    bcbaMeasure: "Measurement, Data Display & Interpretation",
+    bcbaDesign: "Experimental Design",
+    bcbaEthics: "Ethical & Professional Issues",
+    bcbaAssess: "Behavior Assessment",
+    bcbaChange: "Behavior-Change Procedures",
+    bcbaInterv: "Selecting & Implementing Interventions",
+    bcbaSuper: "Personnel Supervision & Management",
+  },
+  copy: {
+    guestPrompt: "to save your BCBA progress and track every question you miss",
+    trainingHeading: "Train by BCBA domain",
+    trainingSub: "Five sets covering all nine domains of the BCBA Test Content Outline (6th ed.). Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real 175 scored",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Philosophy, Concepts & Principles.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the BCBA exam.",
+    ],
+    sourceLine: "Based on the BACB BCBA Test Content Outline (6th ed.) and the Ethics Code for Behavior Analysts. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Behavior Analyst Certification Board.",
+    analyticsKey: "bcba",
+  },
+};

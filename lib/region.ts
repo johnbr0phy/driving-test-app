@@ -116,6 +116,10 @@ export function regionInfo(r: Region) {
 export type TestRegion = Region | "GLOBAL";
 
 const TEST_REGIONS: Record<string, TestRegion> = {
+  nzham: "NZ",
+  nzdrone: "NZ",
+  crfsc: "CA",
+  aufirearmsqld: "AU",
   ukcar: "UK", ukmoto: "UK", uklgv: "UK", ukpcv: "UK", ukadi: "UK", timestables: "UK", ks2: "UK", gcsemaths: "UK", uksia: "UK", uk18ed: "UK", ukgas: "UK", ukbregs: "UK", ukrbi: "UK", ukplumb: "UK", ukg3: "UK", ukwater: "UK",
   gcsehigher: "UK", gcsescience: "UK", gcsecs: "UK", elevenplus: "UK", fsmaths: "UK", cscs: "UK", ukfood: "UK", ukaplh: "UK", ukfaw: "UK", ukcare: "UK",
   uklitu: "UK", uknmc: "UK", ukseru: "UK", aatl2: "UK", cemap: "UK",

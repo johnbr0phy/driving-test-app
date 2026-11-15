@@ -47,13 +47,13 @@
     "questionId": "UKCARE-ROL-004",
     "category": "ukcareRole",
     "question": "A person you support asks you to do a task you have not been trained to do. What should you do?",
-    "optionA": "Do it carefully this once",
+    "optionA": "Do it, then tell your manager",
     "optionB": "Ask the person to show you how",
     "optionC": "Ask a visitor to do it instead",
     "optionD": "Explain and ask your manager",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "You must work within your competence. Explain kindly that you cannot do it yet and report to your manager so it is done safely and you can be trained."
+    "explanation": "You must work within your competence. Explain kindly that you cannot do it yet and report to your manager before it is done, so it is done safely and you can be trained."
   },
   {
     "type": "UKCARE",
@@ -358,10 +358,10 @@
     "optionA": "Say nothing as no harm was done",
     "optionB": "Report and record it at once",
     "optionC": "Tell only the person's family",
-    "optionD": "Wait to see if symptoms appear",
+    "optionD": "Report it if symptoms appear",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Errors must be reported promptly even when no harm is seen, so the person can be checked and lessons learnt. Hiding mistakes breaks your duty of care and the duty of candour."
+    "explanation": "Errors must be reported promptly even when no harm is seen, so the person can be checked and lessons learnt; waiting for symptoms first delays that check. Hiding mistakes breaks your duty of care and the duty of candour."
   },
   {
     "type": "UKCARE",
@@ -609,11 +609,11 @@
     "question": "What should you do if you see a colleague refusing to support a resident because of their sexual orientation?",
     "optionA": "Leave it, as it is their view",
     "optionB": "Swap residents to avoid conflict",
-    "optionC": "Raise it only if it happens again",
+    "optionC": "Report it only if it happens again",
     "optionD": "Report it to your manager",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Refusing care because of sexual orientation is discrimination. Report it through agreed ways of working so the person is protected and the behaviour is addressed."
+    "explanation": "Refusing care because of sexual orientation is discrimination. Report it the first time, through agreed ways of working, so the person is protected and the behaviour is addressed."
   },
   {
     "type": "UKCARE",
@@ -833,11 +833,11 @@
     "question": "A person seems withdrawn and tearful. What should you do?",
     "optionA": "Leave them alone until it passes",
     "optionB": "Tell them to try to cheer up",
-    "optionC": "Record it only if it lasts a month",
+    "optionC": "Report it only if it lasts a month",
     "optionD": "Comfort them and report it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Emotional distress matters as much as physical pain. Offer comfort, listen and report changes so their wellbeing can be supported."
+    "explanation": "Emotional distress matters as much as physical pain. Offer comfort, listen and report changes when you notice them, not weeks later, so their wellbeing can be supported."
   },
   {
     "type": "UKCARE",
@@ -1015,11 +1015,11 @@
     "question": "What should you do if you see a colleague leave a person exposed during personal care?",
     "optionA": "Cover the person and report it",
     "optionB": "Say nothing to avoid upset",
-    "optionC": "Wait until the end of the shift",
+    "optionC": "Leave them and report it later",
     "optionD": "Mention it to the person's visitor",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Protect the person straight away, then report it through agreed ways of working. Ignoring poor practice can allow it to continue."
+    "explanation": "Protect the person straight away, then report it through agreed ways of working. Reporting later while the person is still exposed leaves their dignity unprotected, and ignoring poor practice can allow it to continue."
   },
   {
     "type": "UKCARE",
@@ -1307,7 +1307,7 @@
     "questionId": "UKCARE-COM-018",
     "category": "ukcareComms",
     "question": "You think a care record may have been seen by someone who should not have seen it. What should you do?",
-    "optionA": "Wait to see if anyone complains",
+    "optionA": "Report it only if anyone complains",
     "optionB": "Report it to your manager",
     "optionC": "Tell the person it was nothing",
     "optionD": "Delete the record to be safe",
@@ -1462,12 +1462,12 @@
     "category": "ukcareNutrition",
     "question": "A person's food and fluid chart shows they have drunk much less than usual for two days. What should you do?",
     "optionA": "Report it to a senior",
-    "optionB": "Wait until the weekly review",
+    "optionB": "Report it at the weekly review",
     "optionC": "Cut back their meals too",
     "optionD": "Remove the chart as unhelpful",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Changes in intake must be reported promptly so the person can be assessed. Standard 8 asks workers to identify and report changes in nutrition and hydration needs."
+    "explanation": "Changes in intake must be reported promptly so the person can be assessed; two days of low fluids cannot wait for a weekly review. Standard 8 asks workers to identify and report changes in nutrition and hydration needs."
   },
   {
     "type": "UKCARE",
@@ -2164,10 +2164,10 @@
     "optionA": "Promise to keep it a secret",
     "optionB": "Ask the staff member about it",
     "optionC": "Listen, reassure and report it",
-    "optionD": "Wait until you have proof",
+    "optionD": "Report it once you have proof",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Listen calmly, take it seriously, do not promise secrecy, do not investigate yourself, and report straight away following your safeguarding policy."
+    "explanation": "Listen calmly, take it seriously, do not promise secrecy, do not investigate yourself, and report straight away following your safeguarding policy. You do not need proof first; finding it is not your job."
   },
   {
     "type": "UKCARE",
@@ -2304,10 +2304,10 @@
     "optionA": "Report it straight away",
     "optionB": "Leave it, you only support adults",
     "optionC": "Ask the child to show you",
-    "optionD": "Wait for the next visit",
+    "optionD": "Report it at the next visit",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Everyone who works with adults or children has a responsibility to safeguard children. Report concerns about a child promptly using agreed procedures."
+    "explanation": "Everyone who works with adults or children has a responsibility to safeguard children. Report concerns about a child straight away using agreed procedures, not at the next visit."
   },
   {
     "type": "UKCARE",
@@ -2513,11 +2513,11 @@
     "question": "You find a chemical in an unlabelled bottle. What should you do?",
     "optionA": "Smell it to identify it",
     "optionB": "Pour it down the sink",
-    "optionC": "Use it if it looks clean",
+    "optionC": "Use it, then report it",
     "optionD": "Do not use it and report it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Unlabelled substances could be dangerous. Do not use or sniff them; report to your manager so they can be identified and disposed of safely."
+    "explanation": "Unlabelled substances could be dangerous. Do not use or sniff them; report to your manager before anyone uses them so they can be identified and disposed of safely."
   },
   {
     "type": "UKCARE",
@@ -2777,13 +2777,13 @@
     "questionId": "UKCARE-HSI-027",
     "category": "ukcareSafety",
     "question": "You have diarrhoea and vomiting before a shift. What should you do?",
-    "optionA": "Work but wear gloves all day",
+    "optionA": "Work, then tell your manager after",
     "optionB": "Work if you feel well enough",
     "optionC": "Stay off and tell your manager",
     "optionD": "Take medicine and go in anyway",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Staff with diarrhoea or vomiting should stay away from work until symptom free for 48 hours, as set out in infection control guidance, to avoid spreading illness."
+    "explanation": "Staff with diarrhoea or vomiting should stay away from work and tell their manager until symptom free for 48 hours, as set out in infection control guidance, to avoid spreading illness. Working the shift first spreads it, whatever you report afterward."
   },
   {
     "type": "UKCARE",

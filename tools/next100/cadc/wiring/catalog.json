@@ -1,0 +1,12 @@
+{
+  "blurb": "IC&RC Alcohol and Drug Counselor exam, used by many state boards for the CADC, LADC or CAC credential: addiction science, screening and assessment, counseling and treatment, and ethics and confidentiality.",
+  "org": "IC&RC (International Certification & Reciprocity Consortium)",
+  "group": "Social work and counseling exams",
+  "aliases": ["adc", "cadc", "ladc", "cac", "icrc", "ic&rc", "icrc adc", "alcohol and drug counselor", "addiction counselor", "substance abuse counselor", "drug and alcohol counselor", "cadc exam", "substance use counselor"],
+  "teacherLed": true,
+  "teaches": "an addiction counseling program",
+  "borrowTiger": "nce",
+  "shareTitle": "Free ADC (IC&RC) Practice Test",
+  "shareDescription": "200 original questions on the four IC&RC Alcohol and Drug Counselor domains, with every answer explained.",
+  "searchTests": [["cadc exam", "US", "cadc"], ["ic&rc adc practice test", "US", "cadc"], ["alcohol and drug counselor", "US", "cadc"], ["ladc practice test", "US", "cadc"], ["substance abuse counselor exam", "US", "cadc"]]
+}

@@ -53,7 +53,7 @@ Q = [
  "Locked away securely", ["On the lounge table", "In your car overnight", "In the person's doorway"],
  "Records containing personal information must be stored securely so only authorised people can see them."),
 ("You think a care record may have been seen by someone who should not have seen it. What should you do?",
- "Report it to your manager", ["Wait to see if anyone complains", "Tell the person it was nothing", "Delete the record to be safe"],
+ "Report it to your manager", ["Report it only if anyone complains", "Tell the person it was nothing", "Delete the record to be safe"],
  "A possible data breach must be reported straight away so the organisation can assess it. Breaches that put people's rights at risk must be reported to the Information Commissioner's Office within 72 hours of the organisation becoming aware."),
 ("Who has the right to ask to see the information held about them?",
  "The person it is about", ["Any visitor to the home", "Any member of staff", "Only the person's own GP"],

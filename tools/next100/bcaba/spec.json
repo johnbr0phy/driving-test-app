@@ -1,0 +1,17 @@
+{
+  "id": "bcaba", "stateCode": "BCABA", "idBase": 28800, "prefix": "BCABA-",
+  "slug": "/bcaba", "landingPath": "/bcaba-practice-test", "dataFile": "data/bcaba-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "bcabaPhil", "file": "phil", "perTest": 3, "pool": 12, "segment": "PHI"},
+    {"key": "bcabaConcepts", "file": "concepts", "perTest": 6, "pool": 24, "segment": "CON"},
+    {"key": "bcabaMeasure", "file": "measure", "perTest": 7, "pool": 28, "segment": "MEA"},
+    {"key": "bcabaDesign", "file": "design", "perTest": 3, "pool": 12, "segment": "DES"},
+    {"key": "bcabaEthics", "file": "ethics", "perTest": 6, "pool": 24, "segment": "ETH"},
+    {"key": "bcabaAssess", "file": "assess", "perTest": 6, "pool": 24, "segment": "ASM"},
+    {"key": "bcabaChange", "file": "change", "perTest": 7, "pool": 28, "segment": "BCP"},
+    {"key": "bcabaInterv", "file": "interv", "perTest": 7, "pool": 28, "segment": "INT"},
+    {"key": "bcabaSuper", "file": "super", "perTest": 5, "pool": 20, "segment": "SUP"}
+  ],
+  "notes": "BACB BCaBA Test Content Outline (6th ed., updated 09/2024), in use from 2025 and still the current edition in the BCaBA Handbook updated 10/2026: 150 scored questions, A 10, B 18, C 20, D 10, E 18, F 17, G 22, H 20, I 15. Scaled to 50 per test (one third): 3/6/7/3/6/6/7/7/5."
+}

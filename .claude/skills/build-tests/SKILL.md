@@ -64,7 +64,9 @@ routes, landing, facts, catalog entry, theme, search aliases, CLAUDE.md entry.
 ## 3. Second review
 
 Every bank gets a blind review by a reviewer that did not write it: it answers every question
-without the key, recomputes every number, and lists disagreements. Check each finding against the
+without the key, recomputes every number, and lists disagreements. It also does an options-only
+pass (see the exam-bank skill): reading only the options, category by category, a guess
+that beats 40% means the options carry a cue, and those items are rewritten. Check each finding against the
 official source, fix real ones in the bank's source files and rebuild. Then fact-check the landing
 and `examFacts` against the owner's pages.
 

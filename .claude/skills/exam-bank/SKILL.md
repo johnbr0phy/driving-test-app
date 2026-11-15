@@ -115,6 +115,32 @@ candidate who half-learned the material would pick: the adjacent number, the rul
 standard, the step done in the wrong order. "Ignore it and go home" teaches nothing and flags the
 key by tone.
 
+**No answer patterns.** Every question can be right on its own and the bank still be passable
+without the content. In Nov 2026 the 200 RBT scenario questions keyed "tell the supervisor" in 43
+of the 51 that offered it, CNA keyed "report" 19 of 27 times, and the blind review, which reads one
+question at a time, passed them all. Scope-of-practice, safety and ethics banks are where this
+happens: the writer anchors on one principle (escalate, report, stop, call 911, decline, follow the
+plan, give way) and every scenario becomes "the safe move". So before writing a category:
+- Write down the principle's edges: when the safe move is right, and when it is wrong (the written
+  plan already covers it, the situation is within the person's own role, waiting is unsafe, it is
+  the right move at the wrong time or to the wrong person). Write both kinds, and make the "safe
+  move is wrong" kind at least a third of the items where that move is an option.
+- When the safe move is the key, give at least one wrong option the same move with the wrong
+  timing, person or scope ("tell the supervisor at next week's visit", "report it once it
+  repeats", "use it, then tell the supervisor"). The student must know when and how, not just what.
+- Vary the wording of keys that do the same thing ("use the plan's backup", "carry out the crisis
+  plan"), and put the giveaway verb in wrong options too ("follow the parent's request").
+- Never reuse one key word for word in a category, and do not write near-duplicate scenarios
+  with the same answer (six "a caregiver raises a concern, tell the supervisor" items teach one
+  fact six times).
+- Order matters as well as rate: training sets show questions in ID order, so 4 or more in a row
+  whose answers share a word read as one answer to everyone. Interleave them.
+`tools/check_answer_patterns.py` runs inside the validator and fails a bank where picking the option
+with one word beats guessing by a clear margin, a key repeats, or 4+ keys in a row share a word. It
+reports the result as marks a test-wise student gains per 50-question test, measured on what one
+student meets (a DMV state's 200, not all 2,200); RBT's scenarios gained about 5 before the fix; run it on the bank as a whole
+(`python3 -I tools/check_answer_patterns.py data/<file>.json`) while writing, not only at the end.
+
 **Stems are self-contained.** One question, ending in a question mark or a colon-completion.
 Reading and paragraph items embed the passage in the stem (60 to 120 words). Math items have one
 numeric answer with the key step in the explanation; describe graphs and tables in words. Quote
@@ -206,6 +232,12 @@ problems: spawn a reviewer agent with the bank and the source outline and ask fo
 do the read yourself in a separate step after a break from writing, recomputing every number and
 asking of each item "could a well-prepared candidate defend a different option?". Apply the fixes
 and validate again.
+
+Ask the reviewer for an **options-only pass** too: for one category at a time it reads only the four
+options of each item, never the stem, and picks the one a test-wise guesser would pick. If it beats
+40% in a category, the options carry a cue (a word, a tone, the "safe" choice, the most complete
+answer); it names the cue and the items, and those get rewritten. This catches what the word
+counter cannot, such as "the most cautious option is always right".
 
 ## 4. Wire it in
 

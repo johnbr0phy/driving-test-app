@@ -2,10 +2,17 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { requireAdmin } from '@/lib/server/adminAuth';
 import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
-import { buildSearchGroups as build, readSearchTriage as readTriage, searchTriageId as triageId, type SearchTriageStatus as Status } from '@/lib/server/searchGroups';
+import { buildTestRequests } from '@/lib/server/testRequestsAdmin';
+import { buildSearchGroups, readSearchTriage as readTriage, searchTriageId as triageId, type SearchTriageStatus as Status } from '@/lib/server/searchGroups';
 
 // Admin read of test searches (the Searches tab on /admin). The grouping lives
-// in lib/server/searchGroups.ts, shared with scripts/search-gaps.ts.
+// in lib/server/searchGroups.ts, shared with scripts/search-gaps.ts. The
+// "what should we build next?" answers ride along (lib/server/testRequestsAdmin).
+
+const build = async () => {
+  const [groups, testRequests] = await Promise.all([buildSearchGroups(), buildTestRequests()]);
+  return { ...groups, testRequests };
+};
 
 export async function GET(request: NextRequest) {
   const denied = await requireAdmin(request);

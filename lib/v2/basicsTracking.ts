@@ -17,7 +17,7 @@ import { isInternalBrowser } from "@/lib/internal";
 //   play_start      first move on a walkthrough's drag board (components/v2/play)
 //   play_done       ...and solved it
 //
-// Counted since BASICS_TRACKING_SINCE (lib/server/v2Progress). Internal
+// Counted since Oct 20, 2026. Internal
 // browsers never send.
 
 export type BasicsEvent = "skill_open" | "skill_learned" | "brushup_shown" | "brushup" | "exam_start" | "drill_mastered" | "play_start" | "play_done";

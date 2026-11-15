@@ -35,6 +35,12 @@ interface Payload {
   recent: Row[];
   triage: Record<string, Status>;
   builtAt: string;
+  /** "What should we build next?" answers (lib/server/testRequestsAdmin); absent from older cached copies. */
+  testRequests?: {
+    total: number;
+    byPick: { id: string; label: string; clicks: number; withDetails: number }[];
+    details: { pick: string; details: string; examId: string | null; source: string; email: string | null; at: string }[];
+  };
 }
 
 type Range = "7" | "30" | "all";
@@ -291,6 +297,16 @@ export function SearchesView() {
       <Section title="Latest" count={view.recent.length} note="The most recent searches, as typed (any period)." collapsed>
         <RecentTable rows={view.recent} />
       </Section>
+      {data.testRequests && (
+        <Section
+          title="Asked for by name"
+          count={data.testRequests.details.length}
+          note={`People who answered "what should we build next?" (from the new-tests email, the unsubscribe page and searches that found nothing) and named a test. ${data.testRequests.total} answers in all: ${data.testRequests.byPick.filter((p) => p.clicks > 0).map((p) => `${p.label} ${p.clicks}`).join(", ") || "none yet"}.`}
+          collapsed
+        >
+          <TestRequestList requests={data.testRequests} />
+        </Section>
+      )}
       <Section title="Ignored" count={view.ignored.length} note="Hidden from the lists above." collapsed>
         <GroupTable groups={view.ignored} range={range} actions={(g) => btn(g, null, "Undo")} />
       </Section>
@@ -327,6 +343,30 @@ function RecentTable({ rows }: { rows: Row[] }) {
         </table>
       </TableScroll>
       <More shown={limit} total={rows.length} onMore={() => setLimit(limit + PAGE * 2)} />
+    </>
+  );
+}
+
+function TestRequestList({ requests }: { requests: NonNullable<Payload["testRequests"]> }) {
+  const [limit, setLimit] = useState(10);
+  const label = (id: string) => requests.byPick.find((p) => p.id === id)?.label ?? id;
+  return (
+    <>
+      <ul className="space-y-2">
+        {requests.details.slice(0, limit).map((d, i) => (
+          <li key={i} className="text-sm border-t border-gray-100 dark:border-gray-800 pt-2 first:border-0 first:pt-0">
+            <p className="text-gray-900 dark:text-gray-50">{d.details}</p>
+            <p className="text-[11px] text-gray-500 dark:text-gray-400">
+              {label(d.pick)}
+              {d.examId ? ` · was studying ${d.examId}` : ""}
+              {` · via ${d.source}`}
+              {d.email ? ` · tell ${d.email} when it ships` : ""}
+              {d.at ? ` · ${d.at.slice(0, 10)}` : ""}
+            </p>
+          </li>
+        ))}
+      </ul>
+      <More shown={limit} total={requests.details.length} onMore={() => setLimit(limit + PAGE * 2)} />
     </>
   );
 }

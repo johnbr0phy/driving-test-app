@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from "react";
 import Link from "next/link";
-import { CARD, ROW, STICKY_COL, TabHeader, TableScroll, fmtUpdated } from "@/components/admin/AdminTabParts";
+import { CARD, ROW, STICKY_COL, ShowAllButton, TabHeader, TableScroll, fmtUpdated, useTopN } from "@/components/admin/AdminTabParts";
 import { ExternalLink, ChevronDown } from "lucide-react";
 import type { TeachAdminPayload, TeachAdminClass } from "@/lib/server/teachAdmin";
 
@@ -124,6 +124,7 @@ function Funnel({ data }: { data: TeachAdminPayload }) {
 function Nudge({ nudge }: { nudge: TeachAdminPayload["nudge"] }) {
   const [range, setRange] = useState<"total" | "last30">("total");
   const n = range === "total" ? nudge : nudge.last30;
+  const byExam = useTopN([...nudge.byExam].sort((a, b) => b.shown - a.shown || b.tapped - a.tapped));
   return (
     <Card
       title="Dashboard nudge"
@@ -159,7 +160,7 @@ function Nudge({ nudge }: { nudge: TeachAdminPayload["nudge"] }) {
               </tr>
             </thead>
             <tbody>
-              {nudge.byExam.map((e) => (
+              {byExam.shown.map((e) => (
                 <tr key={e.examId} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
                   <td className={`py-1.5 pr-3 ${STICKY_COL}`}>{e.examName}</td>
                   <td className="py-1.5 px-3 text-right tabular-nums">{fmtInt(e.shown)}</td>
@@ -171,6 +172,7 @@ function Nudge({ nudge }: { nudge: TeachAdminPayload["nudge"] }) {
           </table>
         </TableScroll>
       )}
+      <ShowAllButton hidden={byExam.hidden} all={byExam.all} onToggle={byExam.toggle} noun="more tests" />
       <p className="text-[11px] text-gray-500 dark:text-gray-400 mt-4">
         The &ldquo;Teachers can use it free&rdquo; row at the top of exam dashboards, after a step turns green. Counted since {fmtDay(nudge.since)}, once per browser
         per action, internal browsers excluded; by test is the dashboard it happened on (all time).
@@ -181,6 +183,7 @@ function Nudge({ nudge }: { nudge: TeachAdminPayload["nudge"] }) {
 
 function Weeks({ weeks }: { weeks: TeachAdminPayload["weeks"] }) {
   const max = Math.max(1, ...weeks.map((w) => w.joins));
+  const rows = useTopN([...weeks].reverse());
   return (
     <Card title="By week" subtitle="Weeks start Monday (UTC)">
       <TableScroll>
@@ -195,7 +198,7 @@ function Weeks({ weeks }: { weeks: TeachAdminPayload["weeks"] }) {
             </tr>
           </thead>
           <tbody>
-            {[...weeks].reverse().map((w) => (
+            {rows.shown.map((w) => (
               <tr key={w.start} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
                 <td className={`py-1.5 pr-3 whitespace-nowrap ${STICKY_COL}`}>{fmtDay(w.start)}</td>
                 <td className="py-1.5 px-3 text-right tabular-nums">{fmtInt(w.landingViews)}</td>
@@ -212,16 +215,19 @@ function Weeks({ weeks }: { weeks: TeachAdminPayload["weeks"] }) {
           </tbody>
         </table>
       </TableScroll>
+      <ShowAllButton hidden={rows.hidden} all={rows.all} onToggle={rows.toggle} noun="older weeks" />
     </Card>
   );
 }
 
 function CountList({ rows, label, empty }: { rows: { key: string; count: number }[]; label: (k: string) => string; empty: string }) {
+  const top = useTopN(rows);
   if (!rows.length) return <p className="text-sm text-gray-500 dark:text-gray-400">{empty}</p>;
   const total = rows.reduce((n, r) => n + r.count, 0);
   return (
+    <>
     <ul className="space-y-1.5">
-      {rows.map((r) => (
+      {top.shown.map((r) => (
         <li key={r.key} className="flex items-center justify-between gap-3 text-sm">
           <span className="truncate">{label(r.key)}</span>
           <span className="tabular-nums text-gray-600 dark:text-gray-300">
@@ -230,6 +236,8 @@ function CountList({ rows, label, empty }: { rows: { key: string; count: number 
         </li>
       ))}
     </ul>
+    <ShowAllButton hidden={top.hidden} all={top.all} onToggle={top.toggle} />
+    </>
   );
 }
 
@@ -309,6 +317,8 @@ export function TeachAdminView({ data, onRefresh, refreshing, updating = false }
   updating?: boolean;
 }) {
   const t = data.totals;
+  const classes = useTopN(data.classes);
+  const referrals = useTopN(data.schoolReferrals);
   return (
     <>
       <TabHeader
@@ -356,13 +366,14 @@ export function TeachAdminView({ data, onRefresh, refreshing, updating = false }
                   </tr>
                 </thead>
                 <tbody>
-                  {data.classes.map((c) => (
+                  {classes.shown.map((c) => (
                     <ClassRow key={c.code} c={c} />
                   ))}
                 </tbody>
               </table>
             </TableScroll>
           )}
+          <ShowAllButton hidden={classes.hidden} all={classes.all} onToggle={classes.toggle} noun="more classes" />
         </Card>
 
         <Card title="Links posted in a school LMS" subtitle="Visits referred by Canvas, Blackboard, .edu and other school sites, once per browser">
@@ -382,7 +393,7 @@ export function TeachAdminView({ data, onRefresh, refreshing, updating = false }
                   </tr>
                 </thead>
                 <tbody>
-                  {data.schoolReferrals.map((r) => (
+                  {referrals.shown.map((r) => (
                     <tr key={r.host} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
                       <td className={`py-1.5 pr-3 ${STICKY_COL}`}>
                         {r.host}
@@ -399,6 +410,7 @@ export function TeachAdminView({ data, onRefresh, refreshing, updating = false }
               </table>
             </TableScroll>
           )}
+          <ShowAllButton hidden={referrals.hidden} all={referrals.all} onToggle={referrals.toggle} noun="more school sites" />
         </Card>
 
         <Weeks weeks={data.weeks} />
@@ -406,7 +418,7 @@ export function TeachAdminView({ data, onRefresh, refreshing, updating = false }
         <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
           <Card title="Classes by test">
             <CountList
-              rows={data.exams.map((e) => ({ key: e.examName, count: e.students }))}
+              rows={[...data.exams].sort((a, b) => b.students - a.students).map((e) => ({ key: e.examName, count: e.students }))}
               label={(k) => {
                 const e = data.exams.find((x) => x.examName === k)!;
                 return `${k} (${e.classes} ${e.classes === 1 ? "class" : "classes"})`;

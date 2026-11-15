@@ -3,9 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { deleteDoc, doc } from "firebase/firestore";
-import { ChevronLeft, ChevronRight, GraduationCap, RefreshCw, Search, Sparkles, Trash2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, RefreshCw, Search, Sparkles, Trash2 } from "lucide-react";
 import { db } from "@/lib/firebase";
-import { states } from "@/data/states";
 import { Button } from "@/components/ui/button";
 import { CARD, TabError, TabHeader, TabLoading, useAdminFetch } from "@/components/admin/AdminTabParts";
 
@@ -18,6 +17,10 @@ interface UserData {
   uid: string;
   email: string;
   selectedState: string | null;
+  /** ISO country from the signup's IP, else the last paywall view's; older payloads lack it. */
+  country?: string | null;
+  /** The country they picked on the site (lib/region), a fallback. */
+  region?: string | null;
   /** The test they signed up for: their first visit's test landing, else their current test. */
   test: { id: string; name: string; source: "landing" | "current" };
   lastUpdated: string | null;
@@ -35,15 +38,34 @@ interface UsersPayload {
   users: UserData[];
   totalUsers: number;
   superAmazing: { eligibleUsers: number; enabledUsers: number; everEnabledUsers: number };
-  passRateByState: { code: string; attempts: number; passed: number; passRate: number }[];
 }
 
 const PAGE_SIZE = 20;
 
-const getStateName = (code: string | null): string => {
-  if (!code) return "Not selected";
-  return states.find((s) => s.code === code)?.name || code;
-};
+const REGION_NAMES = (() => {
+  try {
+    return new Intl.DisplayNames(["en"], { type: "region" });
+  } catch {
+    return null;
+  }
+})();
+const flagOf = (iso: string) => (/^[A-Z]{2}$/.test(iso) ? String.fromCodePoint(...[...iso].map((c) => 0x1f1a5 + c.charCodeAt(0))) : "");
+/** "🇬🇧 United Kingdom" from the account's country, else its picked region. */
+function countryOf(u: UserData): { flag: string; name: string } | null {
+  const raw = u.country || (u.region ? (u.region === "UK" ? "GB" : u.region) : null);
+  if (!raw || raw === "ZZ" || raw === "GLOBAL") return null;
+  const iso = raw.toUpperCase();
+  return { flag: flagOf(iso), name: REGION_NAMES?.of(iso) ?? iso };
+}
+function Country({ u }: { u: UserData }) {
+  const c = countryOf(u);
+  if (!c) return <span className="text-gray-400">·</span>;
+  return (
+    <span className="whitespace-nowrap" title={u.country ? "From their signup or paywall view" : "The country they picked"}>
+      {c.flag} {c.name}
+    </span>
+  );
+}
 
 const formatDate = (dateString: string) =>
   new Date(dateString).toLocaleDateString("en-US", {
@@ -135,7 +157,7 @@ export function UsersTab() {
   if (loading) return <TabLoading />;
   if (error || !data) return <TabError message={error || "Failed to load users"} />;
 
-  const { users, superAmazing, passRateByState } = data;
+  const { users, superAmazing } = data;
 
   const deleteUser = async (uid: string) => {
     if (!confirm(`Delete user ${uid}? This cannot be undone.`)) return;
@@ -190,40 +212,6 @@ export function UsersTab() {
             on now · {superAmazing.eligibleUsers} earned it · {superAmazing.everEnabledUsers} ever turned it on
           </p>
         </div>
-
-        {/* Pass Rate by State */}
-        <div className={`${cardClass} mb-0 lg:col-span-2`}>
-          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-3">
-            <GraduationCap className="h-4 w-4 text-emerald-500 dark:text-emerald-400" />
-            <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">DMV pass rate by state</h2>
-            <span className="text-xs text-gray-500 dark:text-gray-400">top 100 active users</span>
-          </div>
-          {passRateByState.length === 0 ? (
-            <p className="text-sm text-gray-500 dark:text-gray-400">No completed tests yet.</p>
-          ) : (
-            <div className="space-y-2 max-h-56 overflow-y-auto pr-1">
-              {passRateByState.slice(0, 12).map((s) => {
-                const pct = s.passRate * 100;
-                const color = pct >= 80 ? "bg-emerald-500" : pct >= 60 ? "bg-amber-500" : "bg-red-500";
-                return (
-                  <div key={s.code}>
-                    <div className="flex items-center justify-between text-sm mb-1">
-                      <span className="font-medium">
-                        {getStateName(s.code)} <span className="text-gray-500 dark:text-gray-400 text-xs">({s.code})</span>
-                      </span>
-                      <span className="text-gray-600 dark:text-gray-300 tabular-nums">
-                        {pct.toFixed(0)}% <span className="text-gray-500 dark:text-gray-400 text-xs">({s.passed}/{s.attempts})</span>
-                      </span>
-                    </div>
-                    <div className="h-2 w-full bg-gray-100 dark:bg-gray-800 rounded overflow-hidden">
-                      <div className={`${color} h-full`} style={{ width: `${pct}%` }} />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
       </div>
 
       {/* User List */}
@@ -276,6 +264,7 @@ export function UsersTab() {
                   <TestBadge u={u} />
                   {(u.convertedPaywall || u.isPremium) && <ConvertedVia u={u} />}
                 </div>
+                <p className="mt-1.5 text-xs text-gray-600 dark:text-gray-300"><Country u={u} /></p>
                 <p className="mt-1.5 text-xs text-gray-600 dark:text-gray-300">
                   <span className="font-medium">{u.trainingQuestionsAnswered}</span> training ·{" "}
                   <span className="font-medium">{u.testQuestionsAnswered}</span> test Qs ({u.testsCompleted} tests)
@@ -297,6 +286,7 @@ export function UsersTab() {
               <tr className="border-b border-gray-200 dark:border-gray-800">
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">ID</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Test</th>
+                <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Country</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Last Active</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Training Qs</th>
                 <th className="text-left py-3 px-4 font-medium text-gray-500 dark:text-gray-400">Test Qs</th>
@@ -312,6 +302,9 @@ export function UsersTab() {
                   </td>
                   <td className="py-3 px-4">
                     <TestBadge u={u} />
+                  </td>
+                  <td className="py-3 px-4 text-gray-600 dark:text-gray-300">
+                    <Country u={u} />
                   </td>
                   <td className="py-3 px-4 text-gray-600 dark:text-gray-300 whitespace-nowrap">
                     {u.lastUpdated ? formatDate(u.lastUpdated) : <span className="text-gray-500 dark:text-gray-400">Never</span>}

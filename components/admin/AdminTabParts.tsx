@@ -153,3 +153,36 @@ export function TableScroll({ children, className = "" }: { children: React.Reac
 
 // A white card with the same padding on every tab, tighter on a phone.
 export const CARD = "bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-4 sm:p-5";
+
+// ─── Top 10, expand for the rest ────────────────────────────────────────────
+// Long lists on every tab show their first TOP_N rows; a button under the list
+// opens the rest. Sort before passing rows in: the top is what stays visible.
+export const TOP_N = 10;
+
+export function useTopN<T>(rows: T[], n = TOP_N) {
+  const [all, setAll] = useState(false);
+  return {
+    shown: all || rows.length <= n ? rows : rows.slice(0, n),
+    all,
+    hidden: Math.max(0, rows.length - n),
+    toggle: () => setAll((v) => !v),
+  };
+}
+
+export function ShowAllButton({ hidden, all, onToggle, noun = "more" }: {
+  hidden: number;
+  all: boolean;
+  onToggle: () => void;
+  noun?: string;
+}) {
+  if (hidden <= 0) return null;
+  return (
+    <button
+      type="button"
+      onClick={onToggle}
+      className="mt-3 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-50 underline underline-offset-2"
+    >
+      {all ? `Show the top ${TOP_N}` : `Show ${hidden} ${noun}`}
+    </button>
+  );
+}

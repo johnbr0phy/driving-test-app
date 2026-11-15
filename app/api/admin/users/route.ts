@@ -3,19 +3,10 @@ import { getAdminDb } from '@/lib/firebase-admin';
 import { requireAdmin } from '@/lib/server/adminAuth';
 import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 import { getInternalUids } from '@/lib/server/internalUsers';
-import { states } from '@/data/states';
 import { resolveCurrentExamId } from '@/lib/email-voice';
 import { getCatalogEntry, getCatalogEntryByPath } from '@/lib/testCatalog';
 import { isAnswered } from '@/lib/v2/grading';
 import type { AnswerValue } from '@/lib/v2/types';
-
-const STATE_PASS_PCT: Record<string, number> = states.reduce(
-  (acc, s) => {
-    acc[s.code] = s.passingScore;
-    return acc;
-  },
-  {} as Record<string, number>,
-);
 
 // The payload is kept in lib/server/adminCache: fresh for two minutes, and
 // an older copy is served at once while a rebuild runs after the response.
@@ -118,27 +109,6 @@ function processFullDoc(data: Record<string, unknown>) {
     }
   }
 
-  // Per-state pass/fail tally across this user's completed tests
-  const stateResults: Record<string, { passed: number; failed: number }> = {};
-  for (const test of completedTests) {
-    const stateCode = test.state as string | undefined;
-    if (!stateCode) continue;
-    const passPct = STATE_PASS_PCT[stateCode];
-    if (passPct == null) continue; // skip CDL / unknown
-    const total = (test.totalQuestions as number) || 50;
-    let score = test.score as number | undefined;
-    if (score == null) {
-      // Fall back to counting correct answers
-      const answers = (test.answers || []) as Record<string, unknown>[];
-      score = answers.filter((a) => a.isCorrect === true).length;
-    }
-    if (total <= 0) continue;
-    const pct = (score / total) * 100;
-    const bucket = (stateResults[stateCode] ||= { passed: 0, failed: 0 });
-    if (pct >= passPct) bucket.passed++;
-    else bucket.failed++;
-  }
-
   // Super Amazing Mode: `enabled` comes from the synced toggle; eligibility
   // (8/8: 4 training sets mastered + 4 tests at 80%+) is recomputed from full
   // progress so it's correct even for users who haven't saved since the
@@ -167,15 +137,14 @@ function processFullDoc(data: Record<string, unknown>) {
     testQuestionsAnswered,
     isPremium: (data.subscription as Record<string, unknown>)?.isPremium === true,
     convertedPaywall: deriveConvertedPaywall(data),
-    stateResults,
     superAmazingEligible,
     superAmazingEnabled: ((data.superAmazing || {}) as Record<string, unknown>).enabled === true,
   };
 }
 
 // ─── Route handler ──────────────────────────────────────────────────────────
-// The Users tab on /admin: the 100 most recently active accounts, DMV pass
-// rate by state from those accounts, and Super Amazing adoption. Everything
+// The Users tab on /admin: the 100 most recently active accounts, with their
+// country, and Super Amazing adoption. Everything
 // trend- or revenue-shaped lives on the Growth and Opportunities tabs.
 export async function GET(request: NextRequest) {
   const denied = await requireAdmin(request);
@@ -231,20 +200,21 @@ async function buildUsers() {
   const landingByUid = new Map(
     originSnaps.map((s) => [s.id, typeof s.get('landing') === 'string' ? (s.get('landing') as string) : null]),
   );
+  // Country: the signup's IP country, else where they last saw a paywall, else the country they picked.
+  const countryByUid = new Map(
+    originSnaps.map((s) => [s.id, typeof s.get('country') === 'string' && s.get('country') ? (s.get('country') as string) : null]),
+  );
 
-  const passByStateAgg: Record<string, { passed: number; failed: number }> = {};
   const users = fullDocs.map((doc) => {
     const data = doc.data() as Record<string, unknown>;
     const stats = processFullDoc(data);
-    for (const [code, r] of Object.entries(stats.stateResults)) {
-      const bucket = (passByStateAgg[code] ||= { passed: 0, failed: 0 });
-      bucket.passed += r.passed;
-      bucket.failed += r.failed;
-    }
+    const iso = countryByUid.get(doc.id) ?? (typeof data.paywallCountry === 'string' && data.paywallCountry ? data.paywallCountry : null);
     return {
       uid: doc.id,
       email: (data.email as string) || '',
       selectedState: (data.selectedState as string) || null,
+      country: iso ? iso.toUpperCase() : null,
+      region: typeof data.region === 'string' ? data.region : null,
       test: signupTest(data, landingByUid.get(doc.id) ?? null),
       lastUpdated: (data.lastUpdated as string) || null,
       createdAt: (data.createdAt as string) || null,
@@ -258,14 +228,7 @@ async function buildUsers() {
     };
   });
 
-  const passRateByState = Object.entries(passByStateAgg)
-    .map(([code, r]) => {
-      const attempts = r.passed + r.failed;
-      return { code, attempts, passed: r.passed, passRate: attempts > 0 ? r.passed / attempts : 0 };
-    })
-    .sort((a, b) => b.attempts - a.attempts);
-
-  const payload = { users, totalUsers: lightDocs.length, superAmazing, passRateByState };
+  const payload = { users, totalUsers: lightDocs.length, superAmazing };
 
   return payload;
 }

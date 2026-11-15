@@ -1,6 +1,7 @@
 "use client";
 
 import { CARD, ROW, STICKY_COL, TableScroll, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { Variations, VariationFrame } from "@/components/admin/Variations";
 import { twoProportionP } from "@/lib/guestPromptTest";
 import {
   LANDING_TRY_ENGAGED,
@@ -143,6 +144,10 @@ export function LandingTryTestCard() {
         a 5-point lift). Check it at most weekly: reading it every day and stopping on the first good day overstates the win. Purchases are too few to
         decide on and are only watched.
       </p>
+      <Variations>
+        <VariationFrame name="Card" note="A playable question in the hero; the screenshots are hidden." src="/cdl-practice-test?tryq=card" height={640} />
+        <VariationFrame name="Control" note="The hero as it was: no question, screenshots shown." src="/cdl-practice-test?tryq=control" height={640} />
+      </Variations>
     </div>
   );
 }

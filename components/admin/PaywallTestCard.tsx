@@ -1,6 +1,7 @@
 "use client";
 
 import { CARD, ROW, STICKY_COL, TableScroll } from "@/components/admin/AdminTabParts";
+import { Variations, VariationFrame } from "@/components/admin/Variations";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 
 // The English paywall test (lib/paywallTest.ts): John's chip-in paywall
@@ -111,6 +112,14 @@ export function PaywallTestCard({ t }: { t: PaywallTest }) {
                 ? `New against first again: unlikely to be chance (p = ${t.returnPValue.toFixed(3)}).`
                 : `New against first again: too close to call (p = ${t.returnPValue.toFixed(2)}).`}
           </p>
+          <Variations>
+          <VariationFrame name="John, first visit" src="/admin/preview/paywall?paywall=john&paywallHit=1" />
+          <VariationFrame name="Classic, first visit" src="/admin/preview/paywall?paywall=classic&paywallHit=1" />
+          <VariationFrame name="John, second visit" src="/admin/preview/paywall?paywall=john&paywallHit=2" />
+          <VariationFrame name="Classic, second visit" src="/admin/preview/paywall?paywall=classic&paywallHit=2" />
+          <VariationFrame name="John, third visit on" src="/admin/preview/paywall?paywall=john&paywallHit=3" />
+          <VariationFrame name="Classic, third visit on" src="/admin/preview/paywall?paywall=classic&paywallHit=3" />
+          </Variations>
         </Card>
   );
 }

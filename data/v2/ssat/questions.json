@@ -729,7 +729,7 @@
       "skill": "Detail",
       "difficulty": 1,
       "format": "single",
-      "stem": "In the first stanza, the boxes are compared to:",
+      "stem": "In the first line of the poem, the boxes are compared to:",
       "options": [
         "squares",
         "towers",
@@ -832,7 +832,7 @@
       "correct": [
         3
       ],
-      "explanation": "The last stanza imagines marking \"a brand-new wall\" and starting \"the climbing once again,\" a new set of height lines in the new house.",
+      "explanation": "The last lines imagine marking \"a brand-new wall\" and starting \"the climbing once again,\" a new set of height lines in the new house.",
       "stimulusId": "SSAT-N2"
     },
     {
@@ -1419,7 +1419,7 @@
       "stem": "Coward is to courage as liar is to:",
       "options": [
         "honesty",
-        "truth",
+        "story",
         "judge",
         "friend",
         "promise"
@@ -1427,7 +1427,7 @@
       "correct": [
         0
       ],
-      "explanation": "A coward lacks courage, and a liar lacks honesty. A liar does not tell the truth, but truth is a statement, while honesty is the quality the liar is missing, just as courage is."
+      "explanation": "A coward lacks courage, and a liar lacks honesty. Both pairs name a person and the quality that person is missing."
     },
     {
       "id": "SSAT-T1-061",
@@ -4337,18 +4337,18 @@
       "difficulty": 2,
       "lockedOrder": true,
       "format": "single",
-      "stem": "Sam is 3 years older than Lee, and their ages add up to 27. How old is Sam?",
+      "stem": "Sam is twice as old as Lee, and their ages add up to 27. How old is Sam?",
       "options": [
+        "9",
         "12",
-        "13",
-        "15",
-        "24",
-        "30"
+        "18",
+        "21",
+        "27"
       ],
       "correct": [
         2
       ],
-      "explanation": "Take away the 3-year difference: 27 − 3 = 24, split evenly is 12 for Lee, so Sam is 15. 12 is Lee's age, not Sam's."
+      "explanation": "Lee's age is 1 part and Sam's is 2 parts, so 3 parts make 27 and one part is 27 ÷ 3 = 9. Sam is 2 × 9 = 18. 9 is Lee's age, not Sam's."
     },
     {
       "id": "SSAT-D-038",

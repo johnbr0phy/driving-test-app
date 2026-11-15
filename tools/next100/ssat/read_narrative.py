@@ -127,7 +127,7 @@ ITEMS = [
       ["the light should be kept secret", "fishermen dislike lighthouses", "Mara should tell the boat's crew", "lighthouses no longer matter"],
       "Mara notices the sailors will never know who lit the lamp, and her grandfather agrees that this is the point: the work keeps people safe whether or not anyone thanks the keeper."),
     # ---- N2 (Practice Test 1)
-    R(1, "N2", "Detail", 1, "In the first stanza, the boxes are compared to:",
+    R(1, "N2", "Detail", 1, "In the first line of the poem, the boxes are compared to:",
       "towers",
       ["squares", "soldiers", "mountains", "walls"],
       "The first line says the boxes stand \"like silent towers.\" Squares appear in the next line, but they describe the folded house, not what the boxes are compared to."),
@@ -146,7 +146,7 @@ ITEMS = [
     R(1, "N2", "Prediction", 3, "At the end of the poem, the speaker expects to:",
       "begin a new record of growing",
       ["move back to the old house", "stop measuring height at all", "paint over the old closet", "stay the same height for years"],
-      "The last stanza imagines marking \"a brand-new wall\" and starting \"the climbing once again,\" a new set of height lines in the new house."),
+      "The last lines imagine marking \"a brand-new wall\" and starting \"the climbing once again,\" a new set of height lines in the new house."),
     # ---- N3 (Practice Test 2)
     R(2, "N3", "Main idea", 1, "Which of these best tells what the passage is about?",
       "A boy learns to be patient.",

@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "Is there a passing score on the SSAT?",
-    a: "No. Each school decides how to read the scores alongside grades, recommendations and interviews. Your child's percentiles are compared only with other students applying in the same grade.",
+    a: "No. Each school decides how to read the scores alongside grades, recommendations and interviews. Your child's percentiles are compared only with other students in the same grade.",
   },
   {
     q: "Is the Tigertest SSAT practice free?",

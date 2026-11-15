@@ -1,0 +1,4266 @@
+[
+  {
+    "id": "NZIQN-T1-001",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Oral doses",
+    "calculator": true,
+    "stem": "Charted: metoprolol tartrate 25 mg orally. Stock: 50 mg tablets. How many tablets are given?",
+    "options": [
+      "0.5 tablet",
+      "1 tablet",
+      "1.5 tablets",
+      "2 tablets"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Dose wanted divided by the strength of one tablet: 25 mg / 50 mg = 0.5 tablet. Dividing the wrong way round gives 2."
+  },
+  {
+    "id": "NZIQN-T1-002",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oral liquids",
+    "calculator": true,
+    "stem": "Charted: amoxicillin 400 mg orally. Stock: suspension 250 mg in 5 mL. What volume is given?",
+    "options": [
+      "1.6 mL",
+      "3.1 mL",
+      "5 mL",
+      "8 mL"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "(Want / have) x volume: (400 / 250) x 5 mL = 1.6 x 5 = 8 mL. Stopping at 1.6 forgets that each 250 mg is in 5 mL, not 1 mL."
+  },
+  {
+    "id": "NZIQN-T1-003",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Weight-based doses",
+    "calculator": true,
+    "stem": "An antibiotic is prescribed at 4 mg/kg for a woman who weighs 72 kg. What dose is given?",
+    "options": [
+      "18 mg",
+      "68 mg",
+      "76 mg",
+      "288 mg"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Dose per kg x weight: 4 mg x 72 kg = 288 mg. Dividing the weight by the dose gives 18, which is not a dose at all."
+  },
+  {
+    "id": "NZIQN-T1-004",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Injections",
+    "calculator": true,
+    "stem": "Charted: morphine 4 mg IV. Stock: ampoules of 10 mg/mL. What volume is drawn up for the dose?",
+    "options": [
+      "0.4 mL",
+      "2.5 mL",
+      "4 mL",
+      "40 mL"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "(4 mg / 10 mg) x 1 mL = 0.4 mL. 2.5 mL comes from dividing the stock by the dose, which would give more than six times the dose."
+  },
+  {
+    "id": "NZIQN-T1-005",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Infusion rates",
+    "calculator": true,
+    "stem": "Sodium chloride 0.9%, 1,000 mL over 10 hours, is to run by volumetric pump. What rate is set?",
+    "options": [
+      "10 mL/h",
+      "42 mL/h",
+      "100 mL/h",
+      "167 mL/h"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume / hours: 1,000 mL / 10 h = 100 mL/h. 42 mL/h would run the bag over 24 hours and 167 mL/h over 6."
+  },
+  {
+    "id": "NZIQN-T1-006",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drip rates",
+    "calculator": true,
+    "stem": "750 mL is to run over 5 hours by gravity through a giving set that delivers 20 drops/mL. What is the drip rate?",
+    "options": [
+      "2.5 drops/min",
+      "38 drops/min",
+      "50 drops/min",
+      "150 drops/min"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "(Volume x drop factor) / minutes: (750 x 20) / 300 = 50 drops/min. 150 is the hourly rate in mL, and 38 comes from using 15 drops/mL."
+  },
+  {
+    "id": "NZIQN-T1-007",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Unit conversion",
+    "calculator": true,
+    "stem": "A dose of 0.25 mg is prescribed. How many micrograms is this?",
+    "options": [
+      "2.5 micrograms",
+      "25 micrograms",
+      "250 micrograms",
+      "2,500 micrograms"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "1 mg = 1,000 micrograms, so 0.25 x 1,000 = 250 micrograms. Moving the decimal point the wrong number of places is a common cause of tenfold errors."
+  },
+  {
+    "id": "NZIQN-T1-008",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Paediatric doses",
+    "calculator": true,
+    "stem": "A child who weighs 12 kg is prescribed amoxicillin 25 mg/kg per dose. The suspension contains 250 mg in 5 mL. What volume is given?",
+    "options": [
+      "1.2 mL",
+      "3 mL",
+      "4.2 mL",
+      "6 mL"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Dose: 25 mg x 12 kg = 300 mg. Volume: (300 / 250) x 5 mL = 6 mL. 1.2 mL is the ratio without the 5 mL volume."
+  },
+  {
+    "id": "NZIQN-T1-009",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Checking medicines",
+    "calculator": true,
+    "stem": "Hospital policy requires a second nurse to check an IV antibiotic dose. What must the second nurse do with the calculation?",
+    "options": [
+      "Sign once the patient is identified",
+      "Accept it if the label matches",
+      "Work it out independently",
+      "Read over the first nurse's working"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The NZNO medicines guideline says the second person must do any calculations independently of the first, witness administration where needed and document the check. Reading over someone else's working repeats their error."
+  },
+  {
+    "id": "NZIQN-T1-010",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verbal orders",
+    "calculator": true,
+    "stem": "In an emergency a doctor gives a verbal medicine order, which the nurse records as policy allows. By when should the prescriber sign it?",
+    "options": [
+      "Within 48 hours",
+      "Within 7 days",
+      "At the next ward round",
+      "Within 72 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ministry of Health guidance, as the NZNO guideline sets out, accepts a recorded verbal order when the prescriber signs it within 48 hours. Local policy on verbal orders must also be followed."
+  },
+  {
+    "id": "NZIQN-T1-011",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Expiry dates",
+    "calculator": true,
+    "stem": "A vial is labelled \"Expiry 03/2027\". Until when may it be used?",
+    "options": [
+      "Until 30 April 2027",
+      "Until 1 March 2027",
+      "Until 31 March 2027",
+      "Until 28 February 2027"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An expiry date given as month and year expires at the end of that month. A use-by date given the same way expires on the first day of the month, which is a different rule."
+  },
+  {
+    "id": "NZIQN-T1-012",
+    "section": "iqnA",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medicines reconciliation",
+    "calculator": true,
+    "stem": "Within what time of admission should medicines reconciliation be done?",
+    "options": [
+      "Within 4 hours",
+      "Within 24 hours",
+      "Only before discharge",
+      "Within 72 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Medicines reconciliation is done within 24 hours of admission, transfer or discharge. It builds the most accurate list from at least two sources, the patient being the primary one."
+  },
+  {
+    "id": "NZIQN-T1-013",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "CPR",
+    "stem": "At what rate are chest compressions given in adult CPR?",
+    "options": [
+      "100 to 120 a minute",
+      "60 to 80 a minute",
+      "80 to 100 a minute",
+      "130 to 150 a minute"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ANZCOR Guideline 6 sets 100 to 120 compressions per minute for all ages, with 30 compressions to 2 breaths."
+  },
+  {
+    "id": "NZIQN-T1-014",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early warning score",
+    "stem": "All of a patient's vital signs are in the normal band, but the nurse is worried he looks unwell. What does the national vital signs chart say?",
+    "options": [
+      "Escalate for the concern anyway",
+      "Recheck in four hours",
+      "Record it in the notes only",
+      "Wait until a vital sign scores"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The New Zealand chart gives a clear instruction to escalate for any clinical concern regardless of the vital signs, including new confusion."
+  },
+  {
+    "id": "NZIQN-T1-015",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health literacy",
+    "stem": "After teaching Sela to use her inhaler, how does the nurse best evaluate her understanding?",
+    "options": [
+      "Ask if she has any questions",
+      "Give her a printed leaflet",
+      "Have her show and explain it",
+      "Note that teaching was done"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 3.5: the nurse assesses health-related knowledge, provides information and evaluates understanding to promote health literacy. Seeing her do it and explain it shows understanding; a yes to \"any questions?\" does not."
+  },
+  {
+    "id": "NZIQN-T1-016",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Therapeutic relationships",
+    "stem": "Descriptor 5.4 asks the registered nurse to do what with therapeutic relationships?",
+    "options": [
+      "Leave them to the medical team",
+      "Begin, keep and end them safely",
+      "Keep them going after discharge",
+      "Let them become friendships"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Descriptor 5.4: the nurse establishes, maintains and concludes safe therapeutic relationships. Ending well is part of the nurse's role, as is keeping the boundary."
+  },
+  {
+    "id": "NZIQN-T1-017",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Competence notifications",
+    "stem": "A nurse resigns while under review for competence concerns. What must the employer do?",
+    "options": [
+      "Notify only if she is rehired",
+      "Notify the Nursing Council",
+      "Tell her next employer only",
+      "Keep it on her personnel file"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Council says employers must promptly notify it if a nurse resigns or is dismissed for reasons relating to competence, in writing to the Registrar."
+  },
+  {
+    "id": "NZIQN-T1-018",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pou one",
+    "stem": "Under pou one, what do nurses demonstrate by addressing power imbalances and working collaboratively with Māori?",
+    "options": [
+      "Manaakitanga Māori",
+      "Whanaungatanga",
+      "Rangatiratanga",
+      "Kawa whakaruruhau"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pou one asks nurses to demonstrate kawa whakaruruhau by addressing power imbalances and working collaboratively with Māori. Manaakitanga is pou five and rangatiratanga is pou six."
+  },
+  {
+    "id": "NZIQN-T1-019",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Challenging racism",
+    "stem": "A colleague makes a racist remark about a patient at handover. What does descriptor 2.2 expect of the nurse?",
+    "options": [
+      "Mention it at appraisal time",
+      "Ignore it to keep the peace",
+      "Laugh it off with the team",
+      "Challenge the remark"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 2.2: the nurse challenges racism and discrimination in the delivery of nursing and health care. Letting it pass leaves the patient's care exposed to it."
+  },
+  {
+    "id": "NZIQN-T1-020",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPR",
+    "stem": "How deep are chest compressions in an adult, according to ANZCOR?",
+    "options": [
+      "About 3 cm",
+      "About 2 cm",
+      "More than 5 cm",
+      "No more than 4 cm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adults: more than 5 cm, with full recoil after each compression. ANZCOR sets no upper limit because too-shallow compressions are the bigger risk."
+  },
+  {
+    "id": "NZIQN-T1-021",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early warning score",
+    "stem": "Which change did New Zealand add to its early warning score as a marker of deterioration?",
+    "options": [
+      "Raised pain score",
+      "Low urine output",
+      "Weight loss",
+      "New confusion"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The New Zealand Early Warning Score added new confusion as a deterioration marker. Pain is recorded on the chart but not scored, and urine output is not part of the score."
+  },
+  {
+    "id": "NZIQN-T1-022",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documentation",
+    "stem": "The Code of Conduct says records cover the talks you have, your assessments, and the care and medicines you give. What else?",
+    "options": [
+      "How effective they have been",
+      "Only abnormal findings",
+      "Your opinion of the patient",
+      "Only what the doctor ordered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Code's documentation guidance: keep clear and accurate records of the discussions you have, the assessments you make, the care and medicines you give, and how effective these have been."
+  },
+  {
+    "id": "NZIQN-T1-023",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anaphylaxis",
+    "stem": "A woman in anaphylaxis wants to get up and walk to the toilet. What does ASCIA advise?",
+    "options": [
+      "Let her stand by the bed",
+      "Let her walk with help",
+      "Sit her on a chair",
+      "Keep her lying flat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Do not let a person with anaphylaxis stand or walk, even if they seem better: lay them flat, or with legs slightly raised."
+  },
+  {
+    "id": "NZIQN-T1-024",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Written consent",
+    "stem": "Under Right 7 of the Code of Rights, which procedure needs written consent?",
+    "options": [
+      "A general anaesthetic",
+      "A bed bath",
+      "Oral paracetamol",
+      "A blood pressure check"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Right 7(6) requires written consent for research, experimental procedures, a general anaesthetic, or a procedure with a significant risk of adverse effects."
+  },
+  {
+    "id": "NZIQN-T1-025",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unsafe practice",
+    "stem": "A nurse sees a colleague skip the identity check before a blood transfusion. What does the Code of Conduct ask?",
+    "options": [
+      "Say nothing to avoid conflict",
+      "Tell only the patient's family",
+      "Intervene, then report it",
+      "Report it at the next audit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code standard 6.9: intervene to stop unsafe, incompetent, unethical or unlawful practice, discuss it with those involved and report it to an appropriate person at the earliest opportunity."
+  },
+  {
+    "id": "NZIQN-T1-026",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Oxygen",
+    "stem": "A patient with pneumonia and no chronic lung disease has an SpO2 of 89% on room air. What target range is oxygen titrated to?",
+    "options": [
+      "98 to 100%",
+      "94 to 98%",
+      "92 to 96%",
+      "88 to 92%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For general acute medical conditions the TSANZ guideline gives oxygen when SpO2 is below 92% and titrates to 92 to 96%. 88 to 92% is for COPD and other chronic respiratory failure."
+  },
+  {
+    "id": "NZIQN-T1-027",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoglycaemia",
+    "stem": "A woman with diabetes has a blood glucose of 3.1 mmol/L and is alert. What is the first treatment?",
+    "options": [
+      "A slice of buttered toast",
+      "Her next insulin dose early",
+      "A glass of milk with dinner",
+      "15 g of fast-acting sugar"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under the rule of 15, give 15 g of fast-acting carbohydrate straight away, such as 150 mL of fruit juice or 3 teaspoons of sugar in water, then retest. Slower foods come after the level is above 4 mmol/L."
+  },
+  {
+    "id": "NZIQN-T1-028",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social determinants",
+    "stem": "Descriptor 1.3 asks nurses to understand the impact of social determinants on Māori health. Which one does it name?",
+    "options": [
+      "Rural distance",
+      "Genetic risk",
+      "Colonisation",
+      "Personal lifestyle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 1.3: the nurse understands the impact of social determinants, such as colonisation, on health and wellbeing. It frames inequity as shaped by history and systems, not individual choices."
+  },
+  {
+    "id": "NZIQN-T1-029",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unsafe cultural practice",
+    "stem": "How does the Council's cultural safety guidance describe unsafe cultural practice?",
+    "options": [
+      "Care given in another language",
+      "Any departure from hospital routine",
+      "Any act that demeans cultural identity",
+      "Care given by a nurse of another culture"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unsafe cultural practice is any action which diminishes, demeans or disempowers the cultural identity and wellbeing of an individual. A nurse of a different culture can give culturally safe care."
+  },
+  {
+    "id": "NZIQN-T1-030",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Communication needs",
+    "stem": "A patient nods along but seems not to follow. Which descriptor asks the nurse to determine his communication needs?",
+    "options": [
+      "Determines communication needs",
+      "Engages in quality improvement",
+      "Applies infection control rules",
+      "Develops differential diagnoses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 3.2: the nurse determines the language and communication needs, verbal and non-verbal, of people, whānau and communities. Nodding is not proof of understanding."
+  },
+  {
+    "id": "NZIQN-T1-031",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen",
+    "stem": "Why does the TSANZ guideline advise against a simple face mask at flows below 5 L/min?",
+    "options": [
+      "Oxygen dries the airway",
+      "Carbon dioxide is rebreathed",
+      "The mask cannot be sealed",
+      "Saturations read falsely high"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At low flows a simple face mask does not flush out exhaled air, so carbon dioxide is rebreathed. Nasal cannulae suit low flows."
+  },
+  {
+    "id": "NZIQN-T1-032",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Diminished competence",
+    "stem": "Mrs Ng has moderate dementia. She cannot weigh up surgery but can choose what to wear and eat. What does Right 7 say?",
+    "options": [
+      "She still makes choices she can",
+      "She can make no choices at all",
+      "Her family decides everything",
+      "The nurse chooses for her"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Right 7(3): a consumer with diminished competence keeps the right to make informed choices and give informed consent to the extent appropriate to their level of competence."
+  },
+  {
+    "id": "NZIQN-T1-033",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "After harm",
+    "stem": "A patient is harmed by a wrong dose. What does Code standard 7.4 say the nurse does first?",
+    "options": [
+      "Act at once to limit harm",
+      "Write it up at the shift end",
+      "Wait for the incident review",
+      "Ask the patient not to complain"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Standard 7.4: act immediately if a health consumer has suffered harm, minimise further harm and follow incident management policy. A full, prompt explanation is then given by the appropriate person."
+  },
+  {
+    "id": "NZIQN-T1-034",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart failure",
+    "stem": "When should a person with heart failure weigh themselves each day?",
+    "options": [
+      "Once a week, fully dressed",
+      "Each morning after the toilet",
+      "After the evening meal",
+      "Whenever they feel breathless"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Weigh every morning after using the toilet, before eating or drinking and before dressing, and keep a record of it."
+  },
+  {
+    "id": "NZIQN-T1-035",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Right 5",
+    "stem": "A doctor plans to give a patient bad news at the bedside in a busy six-bed room. Which part of Right 5 is at risk?",
+    "options": [
+      "A written summary of the talk",
+      "A setting for open, honest talk",
+      "A choice of which provider",
+      "A support person being there"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Right 5(2) gives a right to an environment that enables open, honest and effective communication. A private room protects that. A support person is Right 8."
+  },
+  {
+    "id": "NZIQN-T1-036",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sepsis",
+    "stem": "Which finding is a warning sign of sepsis in an adult with an infection?",
+    "options": [
+      "A mild sore throat",
+      "Mottled or bluish skin",
+      "A slow, steady pulse",
+      "Warm, pink hands and feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Healthify's sepsis warning signs include mottled, bluish or pale skin, slurred speech or confusion, extreme shivering or muscle pain, no urine for a day and severe breathlessness."
+  },
+  {
+    "id": "NZIQN-T1-037",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Warfarin",
+    "stem": "For most people taking warfarin for atrial fibrillation, what is the usual INR target range?",
+    "options": [
+      "2 to 3",
+      "4 to 5",
+      "1 to 1.5",
+      "3.5 to 4.5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The usual target for atrial fibrillation is 2 to 3. People with mechanical heart valves may have a higher range, 2.5 to 3.5. A high INR raises bleeding risk."
+  },
+  {
+    "id": "NZIQN-T1-038",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Te Tiriti in the Code",
+    "stem": "Which three principles of Te Tiriti does the Council's Code of Conduct call integral to nursing services for Māori?",
+    "options": [
+      "Equity, options and active protection",
+      "Respect, trust, partnership, integrity",
+      "Partnership, protection, participation",
+      "Access, choice and continuity of care"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Code of Conduct (2012) names partnership, protection and participation as integral to appropriate nursing services for Māori. Respect, trust, partnership and integrity are the Code's values, a different list."
+  },
+  {
+    "id": "NZIQN-T1-039",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Judging behaviour",
+    "stem": "A man with lung disease still smokes. A nurse says he does not deserve the same effort as other patients. What does the Code say?",
+    "options": [
+      "Care must not be prejudiced",
+      "Refer him to another nurse",
+      "Care can be rationed by blame",
+      "Smokers may wait longer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code standard 1.7: do not prejudice the care you give because you believe a health consumer's behaviour contributed to their condition."
+  },
+  {
+    "id": "NZIQN-T1-040",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complaints",
+    "stem": "Under Right 10, within how many working days must a provider acknowledge a complaint in writing?",
+    "options": [
+      "30 working days",
+      "5 working days",
+      "20 working days",
+      "1 working day"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The complaints process must acknowledge a complaint in writing within 5 working days of receiving it, unless it was resolved to the person's satisfaction in that time."
+  },
+  {
+    "id": "NZIQN-T1-041",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delegation",
+    "stem": "Before delegating a task to an enrolled nurse, what does the Code of Conduct ask the registered nurse to check?",
+    "options": [
+      "They agree to sign for it",
+      "They are on the same pay band",
+      "They have worked there longest",
+      "They have the skills for it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Code standard 6.8: when delegating, make sure the person has the knowledge and skills and knows when to report findings and ask for help. The registered nurse stays accountable for directing and delegating."
+  },
+  {
+    "id": "NZIQN-T1-042",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Insulin",
+    "stem": "How is unopened insulin stored?",
+    "options": [
+      "On a sunny windowsill",
+      "In a warm cupboard",
+      "In a fridge at 2 to 8 °C",
+      "In the freezer compartment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unused insulin is kept in the fridge at 2 to 8 °C and never frozen; insulin that has frozen is thrown away. Check the expiry date too."
+  },
+  {
+    "id": "NZIQN-T1-043",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart failure",
+    "stem": "Which symptom points to worsening heart failure?",
+    "options": [
+      "Hunger in the night",
+      "Itchy skin on the arms",
+      "Pain on passing urine",
+      "Breathless lying flat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Breathlessness lying flat, or waking suddenly at night breathless, is a heart failure symptom, as are swollen ankles and sudden weight gain from fluid."
+  },
+  {
+    "id": "NZIQN-T1-044",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Right 6",
+    "stem": "Under Right 6 of the Code of Rights, which information is a consumer entitled to?",
+    "options": [
+      "Other patients' outcomes",
+      "The results of their tests",
+      "Staff rosters and pay rates",
+      "The hospital's annual budget"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Right 6(1) lists what a reasonable consumer would expect to receive, including an explanation of their condition, the options with risks and benefits, estimated waiting times and the results of tests and procedures."
+  },
+  {
+    "id": "NZIQN-T1-045",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opioids",
+    "stem": "A patient is prescribed slow-release morphine capsules. What must he be told?",
+    "options": [
+      "Take them every 4 hours",
+      "Open them into hot drinks",
+      "Swallow them whole",
+      "Chew them for faster relief"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Slow-release morphine works over several hours and is taken once or twice a day. Breaking or chewing it releases the dose too fast."
+  },
+  {
+    "id": "NZIQN-T1-046",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boundaries",
+    "stem": "A grateful patient offers to lend a nurse money for a car repair. What does the Code of Conduct say?",
+    "options": [
+      "Accept after discharge",
+      "Do not accept loans",
+      "Accept if repaid quickly",
+      "Accept if a manager agrees"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Code standard 7.7: do not ask for or accept loans or bequests from a health consumer or anyone close to them."
+  },
+  {
+    "id": "NZIQN-T1-047",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Practising certificate",
+    "stem": "A nurse's annual practising certificate has lapsed. What does the Code of Conduct say?",
+    "options": [
+      "Work only on night shifts",
+      "Work under another nurse's name",
+      "Work on until it is renewed",
+      "Stop working as a nurse"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Code standard 8.3: do not claim to be a practising nurse if you do not hold a current practising certificate. The Council requires a valid certificate, renewed each year."
+  },
+  {
+    "id": "NZIQN-T1-048",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart attack",
+    "stem": "How do heart attacks in women often differ from those in men?",
+    "options": [
+      "Always cause severe chest pain",
+      "More often occur without chest pain",
+      "They never cause any breathlessness",
+      "They only happen when at rest"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Heart Foundation says women are more likely than men to have a heart attack without chest pain, and pain may spread to the stomach or upper back. Any suspected heart attack needs 111."
+  },
+  {
+    "id": "NZIQN-T1-049",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Access to information",
+    "stem": "Under the Health Information Privacy Code 2020, what is a patient entitled to on request?",
+    "options": [
+      "Access to their health information",
+      "Copies of other patients' notes",
+      "A copy of staff notes about others",
+      "Removal of all their records"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rule 6 entitles an individual, on request, to confirmation of whether health information about them is held and access to it, subject to the code's limited grounds for refusing."
+  },
+  {
+    "id": "NZIQN-T1-050",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Te Whare Tapa Whā",
+    "stem": "Hine's whānau visit every day and she says they keep her going. Which wall of Te Whare Tapa Whā does this support?",
+    "options": [
+      "Taha hinengaro",
+      "Taha whānau",
+      "Taha tinana",
+      "Taha wairua"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Taha whānau is family and social wellbeing: the people who give a sense of belonging. Taha tinana is physical wellbeing."
+  },
+  {
+    "id": "NZIQN-T1-051",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conscientious objection",
+    "stem": "A nurse objects on grounds of conscience to taking part in a reproductive health service. What must she do?",
+    "options": [
+      "Refuse without explaining why",
+      "Say it can be had elsewhere",
+      "Persuade the person to decline it",
+      "Give the care regardless"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Under section 174 of the HPCA Act a nurse may decline to take part in reproductive health services on grounds of conscience, but Code standard 1.9 says she must tell the person they can get the service from another practitioner."
+  },
+  {
+    "id": "NZIQN-T1-052",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Paracetamol",
+    "stem": "An older woman who weighs 45 kg needs paracetamol. What does Healthify advise?",
+    "options": [
+      "No paracetamol at all",
+      "The usual adult dose",
+      "A lower than usual dose",
+      "A double first dose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adults under 50 kg should take less than the usual dose, as the standard dose may harm the liver. Liver disease, heavy alcohol use and dehydration also call for lower doses."
+  },
+  {
+    "id": "NZIQN-T1-053",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delirium",
+    "stem": "Which pattern of onset points to delirium?",
+    "options": [
+      "Steady and never changing",
+      "Sudden and comes and goes",
+      "Slow, over several years",
+      "Present since childhood"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Delirium often comes on suddenly and can come and go, with poor attention and reduced awareness of surroundings. It is easily mistaken for long-term dementia."
+  },
+  {
+    "id": "NZIQN-T1-054",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Assisted dying",
+    "stem": "Under the End of Life Choice Act, until when must a person be competent to have assisted dying?",
+    "options": [
+      "Only at the first request",
+      "Until the medicine is given",
+      "Only at the second assessment",
+      "Until the forms are signed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The person must be competent up to the point the medication is given. An advance care plan, an enduring power of attorney or a welfare guardian cannot make the request for them."
+  },
+  {
+    "id": "NZIQN-T1-055",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality improvement",
+    "stem": "A nurse joins a ward audit to cut falls. Which descriptor does this meet?",
+    "options": [
+      "Concludes therapeutic relationships",
+      "Determines communication needs",
+      "Engages in quality improvement",
+      "Uses te reo where appropriate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 6.4: the nurse engages in quality improvement activities. The others are descriptors from pou one, three and five."
+  },
+  {
+    "id": "NZIQN-T1-056",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "COPD",
+    "stem": "What does pulmonary rehabilitation for COPD usually involve?",
+    "options": [
+      "Bed rest for a month",
+      "Weeks of exercise and education",
+      "Daily oxygen at the clinic",
+      "A single physio visit at home"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pulmonary rehabilitation is an exercise and education programme, usually 6 to 12 weeks at a local hospital, recommended for everyone with COPD to improve symptoms and exercise tolerance."
+  },
+  {
+    "id": "NZIQN-T1-057",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sharing with the team",
+    "stem": "On admission, what should the nurse tell a patient about sharing her information?",
+    "options": [
+      "It is never shared with anyone",
+      "It is shared within the team",
+      "Only her GP will ever see it",
+      "It is shared with her employer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Code standard 5.4: inform health consumers that it will be necessary to disclose information to others in the health care team. Telling them at the start is part of being open."
+  },
+  {
+    "id": "NZIQN-T1-058",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Starting CPR",
+    "stem": "An adult on the ward is unresponsive and takes only occasional gasps. What does ANZCOR advise?",
+    "options": [
+      "Start CPR now",
+      "Recheck in two minutes",
+      "Give oxygen and observe",
+      "Wait for normal breathing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ANZCOR: start CPR if the person is unresponsive and not breathing normally. Occasional gasps are not normal breathing and must not delay CPR."
+  },
+  {
+    "id": "NZIQN-T1-059",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sepsis",
+    "stem": "The Sepsis Six is a bundle done within an hour of recognising sepsis. Which step belongs to it?",
+    "options": [
+      "Giving a sedative",
+      "Arranging a CT scan",
+      "Starting a fluid restriction",
+      "Measuring blood lactate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Sepsis Six: give antibiotics, give fluids, give oxygen if needed, take blood cultures, measure blood lactate and monitor urine output, all within an hour."
+  },
+  {
+    "id": "NZIQN-T1-060",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rheumatic fever",
+    "stem": "After rheumatic fever, how often are secondary prevention penicillin injections usually given?",
+    "options": [
+      "Every 6 months",
+      "Every 7 days",
+      "Every 3 months",
+      "Every 28 days"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Secondary prevention is usually an intramuscular penicillin injection every 28 days, often by a community or public health nurse, to stop further strep infections damaging the heart valves."
+  },
+  {
+    "id": "NZIQN-T1-061",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Right 1",
+    "stem": "Right 1 of the Code of Rights asks services to take into account the needs, values and beliefs of whom?",
+    "options": [
+      "Cultural and ethnic groups",
+      "Only the patient's next of kin",
+      "Only people born overseas",
+      "Only the treating team"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Right 1 includes having services provided in a way that takes into account the needs, values and beliefs of different cultural, religious, social and ethnic groups, including Māori."
+  },
+  {
+    "id": "NZIQN-T1-062",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dignity",
+    "stem": "A nurse does everything for a man who can wash his own face and hands, to save time. Which right is most at risk?",
+    "options": [
+      "Right 6, being fully informed",
+      "Right 9, teaching and research",
+      "Right 3, dignity and independence",
+      "Right 10, the right to complain"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Right 3 is to have services provided in a way that respects the dignity and independence of the individual."
+  },
+  {
+    "id": "NZIQN-T1-063",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Enrolled nurses",
+    "stem": "According to the registered nurse scope of practice, what do registered nurses provide to enrolled nurses?",
+    "options": [
+      "Their prescribing rights",
+      "Support and guidance",
+      "Their performance pay",
+      "Their annual practising certificate"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The scope says registered nurses are responsible and accountable for directing and delegating to members of the healthcare team and provide support and guidance to enrolled nurses."
+  },
+  {
+    "id": "NZIQN-T1-064",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Feedback",
+    "stem": "A senior nurse gives a new graduate some constructive feedback on her handover. What does descriptor 3.8 expect?",
+    "options": [
+      "Ask for it in writing first",
+      "Receive it and respond to it",
+      "Report it to the manager",
+      "Defend each point made"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Descriptor 3.8: the nurse provides, receives and responds appropriately to constructive feedback. It is part of communicating professionally in the team."
+  },
+  {
+    "id": "NZIQN-T1-065",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Limits of expertise",
+    "stem": "A nurse is asked to manage a central line she has never used. What does descriptor 4.11 expect?",
+    "options": [
+      "Ask the patient to explain it",
+      "Refuse all care for the patient",
+      "Learn by trying it alone",
+      "Seek guidance before acting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 4.11: the nurse understands and works within the limits of their expertise and seeks guidance to ensure safe practice."
+  },
+  {
+    "id": "NZIQN-T1-066",
+    "section": "iqnB",
+    "test": 1,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safe sleep",
+    "stem": "Until at least what age should a baby sleep in the same room as a caregiver at night?",
+    "options": [
+      "3 months",
+      "2 years",
+      "6 months",
+      "6 weeks"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Healthify's safe sleep advice: keep baby in their own bed in the same room as a caregiver at night until at least 6 months. The risk of sudden unexpected death in infancy lasts until about 12 months."
+  },
+  {
+    "id": "NZIQN-T2-001",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Oral doses",
+    "calculator": true,
+    "stem": "Charted: prednisone 15 mg orally. Stock: 5 mg tablets. How many tablets are given?",
+    "options": [
+      "0.33 tablet",
+      "1.5 tablets",
+      "2 tablets",
+      "3 tablets"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "15 mg / 5 mg = 3 tablets. 0.33 comes from dividing the tablet strength by the dose."
+  },
+  {
+    "id": "NZIQN-T2-002",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oral liquids",
+    "calculator": true,
+    "stem": "Charted: oxycodone 7.5 mg orally. Stock: oral liquid 5 mg in 5 mL. What volume is given?",
+    "options": [
+      "7.5 mL",
+      "15 mL",
+      "37.5 mL",
+      "75 mL"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "(7.5 / 5) x 5 mL = 7.5 mL. This liquid is 1 mg in each mL, so the volume in mL equals the dose in mg. 37.5 mL multiplies by the 5 mL without dividing by the 5 mg."
+  },
+  {
+    "id": "NZIQN-T2-003",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Injections",
+    "calculator": true,
+    "stem": "Charted: enoxaparin 60 mg subcutaneously. Stock: 100 mg/mL. What volume is given?",
+    "options": [
+      "0.06 mL",
+      "0.6 mL",
+      "1.67 mL",
+      "6 mL"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "(60 / 100) x 1 mL = 0.6 mL. 1.67 mL comes from dividing the stock by the dose; a misplaced decimal point gives 0.06 or 6."
+  },
+  {
+    "id": "NZIQN-T2-004",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Infusion rates",
+    "calculator": true,
+    "stem": "250 mL of an IV antibiotic is to run over 30 minutes by pump. What rate in mL/h is set?",
+    "options": [
+      "8.3 mL/h",
+      "125 mL/h",
+      "250 mL/h",
+      "500 mL/h"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Pumps run in mL per hour. 250 mL in half an hour is 250 / 0.5 = 500 mL/h. 250 mL/h would take a full hour."
+  },
+  {
+    "id": "NZIQN-T2-005",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drip rates",
+    "calculator": true,
+    "stem": "By gravity, 1,000 mL is to run over 12 hours with a set of 20 drops/mL. What is the drip rate?",
+    "options": [
+      "1.4 drops/min",
+      "21 drops/min",
+      "28 drops/min",
+      "83 drops/min"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "(1,000 x 20) / 720 minutes = 27.8, so 28 drops/min. 83 is the rate in mL/h, and 21 uses 15 drops/mL."
+  },
+  {
+    "id": "NZIQN-T2-006",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Infusion time",
+    "calculator": true,
+    "stem": "A 1 litre bag is running by pump at 80 mL/h. How long will it take to finish?",
+    "options": [
+      "1.25 hours",
+      "8 hours",
+      "12.5 hours",
+      "125 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Time = volume / rate: 1,000 mL / 80 mL/h = 12.5 hours. Working in litres without converting gives 1.25."
+  },
+  {
+    "id": "NZIQN-T2-007",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Paediatric doses",
+    "calculator": true,
+    "stem": "A child who weighs 23 kg has anaphylaxis. Adrenaline 0.01 mg/kg IM is ordered using 1 mg/mL (1:1,000). What volume is given?",
+    "options": [
+      "0.023 mL",
+      "0.23 mL",
+      "2.3 mL",
+      "23 mL"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "0.01 mg x 23 kg = 0.23 mg. At 1 mg/mL that is 0.23 mL. ASCIA guidance caps each IM dose at 0.5 mg."
+  },
+  {
+    "id": "NZIQN-T2-008",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unit conversion",
+    "calculator": true,
+    "stem": "A dose of 62.5 micrograms is prescribed. How many mg is this?",
+    "options": [
+      "0.0625 mg",
+      "0.625 mg",
+      "6.25 mg",
+      "62,500 mg"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Divide micrograms by 1,000 to get mg: 62.5 / 1,000 = 0.0625 mg. 0.625 mg would be a tenfold overdose, and 62,500 multiplies when it should divide."
+  },
+  {
+    "id": "NZIQN-T2-009",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication charts",
+    "calculator": true,
+    "stem": "In a hospital using the National Medication Chart, where is a warfarin order usually written?",
+    "options": [
+      "In the nursing progress notes",
+      "On a supplementary warfarin chart",
+      "In the fluids and oxygen section",
+      "In the general medicines section"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The National Medication Chart records general medicines, IV and subcutaneous fluids and oxygen. Specialised orders such as warfarin, insulin and specialised analgesia go on supplementary charts used alongside it."
+  },
+  {
+    "id": "NZIQN-T2-010",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Crushing medicines",
+    "calculator": true,
+    "stem": "A patient finds tablets hard to swallow. When may the nurse crush one?",
+    "options": [
+      "Whenever the patient asks for it",
+      "When a pharmacist says it is safe",
+      "If it is then mixed with food",
+      "If the dose is under 10 mg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crushing can change how a medicine works or make it ineffective. The NZNO guideline says not to crush routinely unless a pharmacist advises the medicine is not compromised and it is in the person's best interest."
+  },
+  {
+    "id": "NZIQN-T2-011",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adverse reactions",
+    "calculator": true,
+    "stem": "A patient has an unexpected reaction to a new medicine. Where in New Zealand are adverse reactions reported?",
+    "options": [
+      "The Nursing Council",
+      "The HDC",
+      "Pharmac, in Wellington",
+      "CARM, in Dunedin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Centre for Adverse Reactions Monitoring (CARM) in Dunedin is New Zealand's national monitoring centre, and anyone can report to it. Pharmac decides funding, not safety reporting."
+  },
+  {
+    "id": "NZIQN-T2-012",
+    "section": "iqnA",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Paediatric safety",
+    "calculator": true,
+    "stem": "How should a child's weight be recorded for medicine doses?",
+    "options": [
+      "Estimated from the child's age",
+      "Estimated in pounds by a parent",
+      "Taken from the last clinic visit",
+      "Weighed in kg on admission"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Children are weighed on admission so doses use their current weight, and kilograms are the standard unit on prescriptions and records. Old or estimated weights cause calculation errors."
+  },
+  {
+    "id": "NZIQN-T2-013",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPR",
+    "stem": "During CPR with several rescuers, how often should the person doing compressions swap, if feasible?",
+    "options": [
+      "Every 30 seconds",
+      "At least every 2 minutes",
+      "Every 10 minutes",
+      "Only when they are exhausted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ANZCOR advises changing compressors at least every two minutes, with minimal interruption, to prevent fatigue and shallow compressions."
+  },
+  {
+    "id": "NZIQN-T2-014",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early warning score",
+    "stem": "On the New Zealand Early Warning Score, why does a patient who is hypoxaemic on supplemental oxygen need more senior review?",
+    "options": [
+      "Oxygen use itself is never scored",
+      "Low SpO2 is ignored once on oxygen",
+      "The low SpO2 and the oxygen both score",
+      "Only the oxygen flow rate is scored"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A patient who is hypoxaemic despite supplemental oxygen scores twice, once for the hypoxaemia and once for the oxygen, and HQSC says such patients need more senior review."
+  },
+  {
+    "id": "NZIQN-T2-015",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Timely records",
+    "stem": "Which describes documentation that meets descriptor 3.6?",
+    "options": [
+      "Legible, accurate and timely",
+      "Brief and written at shift end",
+      "Detailed only when there is harm",
+      "Written by whoever has time"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 3.6: documentation is legible, relevant, accurate, professional and timely. The Code adds that records are completed as soon as possible after an event."
+  },
+  {
+    "id": "NZIQN-T2-016",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared decisions",
+    "stem": "Descriptor 5.3 asks nurses to give people and whānau opportunities to do what?",
+    "options": [
+      "Review other patients",
+      "Approve the ward budget",
+      "Choose staff rosters",
+      "Share views and plan care"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 5.3: the nurse facilitates opportunities for people and whānau to share their views and actively contribute to care planning, decision-making and the choice of interventions."
+  },
+  {
+    "id": "NZIQN-T2-017",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health notifications",
+    "stem": "Besides health practitioners, who else must notify the Council if they believe a nurse cannot practise safely because of a health condition?",
+    "options": [
+      "Employers of health practitioners",
+      "The local Member of Parliament",
+      "The patients' families",
+      "The nurse's professional union"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mandatory notifiers include people in charge of health service organisations, health practitioners, employers of health practitioners and medical officers of health. Anyone else may notify too."
+  },
+  {
+    "id": "NZIQN-T2-018",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Te reo and tikanga",
+    "stem": "Which descriptor of pou one fits a nurse who greets Māori patients in te reo and follows tikanga where appropriate?",
+    "options": [
+      "Develops differential diagnoses",
+      "Engages in quality improvement",
+      "Uses te reo and tikanga",
+      "Promotes health literacy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 1.4: the nurse uses te reo and incorporates tikanga Māori into practice where appropriate. The others are descriptors from pou four, six and three."
+  },
+  {
+    "id": "NZIQN-T2-019",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "What culture includes",
+    "stem": "A nurse thinks cultural safety applies only to patients of another ethnicity. What does the Council's definition of culture also include?",
+    "options": [
+      "Age, gender and disability",
+      "Only iwi affiliation",
+      "Only language and religion",
+      "Only country of birth"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Council's guidance says culture includes age or generation, gender, sexual orientation, occupation and socio-economic status, ethnic origin or migrant experience, religious or spiritual beliefs, and disability."
+  },
+  {
+    "id": "NZIQN-T2-020",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPR",
+    "stem": "How deep are chest compressions in an infant?",
+    "options": [
+      "About 6 cm",
+      "More than 7 cm",
+      "About 4 cm",
+      "About 2 cm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ANZCOR: about 4 cm for infants and about 5 cm for children, using the two-finger technique for infants when given by a lay rescuer."
+  },
+  {
+    "id": "NZIQN-T2-021",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early warning score",
+    "stem": "Which patients is the adult New Zealand Early Warning Score not designed for?",
+    "options": [
+      "Children and pregnant women",
+      "Adults over 80 years old",
+      "Adults just after surgery",
+      "Adults receiving oxygen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The adult chart covers non-pregnant adult inpatients. Children and obstetric patients are outside its scope."
+  },
+  {
+    "id": "NZIQN-T2-022",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electronic records",
+    "stem": "A colleague offers her login so a nurse can chart quickly. What does the Code say about electronic entries?",
+    "options": [
+      "The charge nurse signs for all",
+      "Shared logins are fine if busy",
+      "They must be attributable to you",
+      "Any team login may be used"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Code's documentation guidance says entries in electronic records must be clearly attributable to the nurse who made them, so each nurse uses their own login."
+  },
+  {
+    "id": "NZIQN-T2-023",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anaphylaxis",
+    "stem": "After a single dose of adrenaline settles an anaphylactic reaction, how long should the patient be observed at least?",
+    "options": [
+      "30 minutes after the dose",
+      "4 hours after the last dose",
+      "Until the rash has faded",
+      "1 hour after arrival"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ASCIA advises observing for at least 4 hours after the last adrenaline dose, and overnight for severe or refractory reactions, a past biphasic reaction or other risk factors."
+  },
+  {
+    "id": "NZIQN-T2-024",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "No one to consent",
+    "stem": "An unconscious man needs care, is not competent and no one is entitled to consent for him. What does Right 7(4) allow?",
+    "options": [
+      "Any care the team wants",
+      "Care only with police consent",
+      "Care in his best interests",
+      "No care until he wakes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Right 7(4): services may be given if they are in the person's best interests, reasonable steps have been taken to find out his views, and they fit the choice he would make if competent or, if his views are unknown, the views of suitable people interested in his welfare are taken into account."
+  },
+  {
+    "id": "NZIQN-T2-025",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unsafe environment",
+    "stem": "A nurse believes chronic understaffing on her ward is putting patients at risk. What does Code standard 8.4 ask?",
+    "options": [
+      "Leave the job without notice",
+      "Document and report the concern",
+      "Wait for an accident to prove it",
+      "Post about it on social media"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Standard 8.4: document and report your concerns if you believe the practice environment is compromising the health and safety of health consumers."
+  },
+  {
+    "id": "NZIQN-T2-026",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen",
+    "stem": "A man with COPD has become drowsy on oxygen and oxygen-induced hypercapnia is suspected. What does the TSANZ guideline advise?",
+    "options": [
+      "Change to an oxygen-driven nebuliser",
+      "Increase the flow to 15 L/min",
+      "Titrate to 88 to 92%, not stop it",
+      "Stop the oxygen at once"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Titrate to 88 to 92% and do not stop oxygen abruptly, because rebound hypoxaemia can follow. Bronchodilators in COPD are given by air-driven nebuliser."
+  },
+  {
+    "id": "NZIQN-T2-027",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anaphylaxis",
+    "stem": "Why are antihistamines not used in place of adrenaline in anaphylaxis?",
+    "options": [
+      "They do not treat breathing or BP",
+      "They work too fast to be safe",
+      "They raise blood glucose levels",
+      "They cause a slow heart rate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ASCIA: antihistamines do not treat the respiratory or cardiovascular effects of anaphylaxis. Adrenaline is first-line; adjuncts never replace it."
+  },
+  {
+    "id": "NZIQN-T2-028",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diversity within Māori",
+    "stem": "A nurse plans the same care for every Māori patient, assuming shared preferences. What does the Code of Conduct say?",
+    "options": [
+      "Follow the ward's standard plan",
+      "Ask only the kaumātua",
+      "One plan suits all Māori patients",
+      "Māori are a diverse population"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Standard 2.7 says care must be culturally appropriate and acceptable to Māori and whānau, underpinned by recognising that Māori are a diverse population. Each person's preferences are asked, not assumed."
+  },
+  {
+    "id": "NZIQN-T2-029",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holistic advocacy",
+    "stem": "Descriptor 2.4 asks nurses to advocate by including which aspects of a person's health when giving care?",
+    "options": [
+      "Physical health on its own, first",
+      "Only what the doctor has ordered",
+      "Cultural, spiritual, physical, mental",
+      "Only the presenting complaint"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 2.4: the nurse advocates for individuals and whānau by including their cultural, spiritual, physical and mental health when providing care."
+  },
+  {
+    "id": "NZIQN-T2-030",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social media",
+    "stem": "A nurse posts about \"a funny patient on my ward today\" without a name. What does the Code say?",
+    "options": [
+      "The patient may still be identified",
+      "It is fine once they are discharged",
+      "It is fine on a private account",
+      "It is fine with no name used"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code standard 5.8: do not discuss health consumers or practice issues in public places, including social media. Even when no names are used, a health consumer could be identified."
+  },
+  {
+    "id": "NZIQN-T2-031",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Oxygen",
+    "stem": "A patient needs about 8 L/min by simple mask, an FiO2 of about 0.5, to reach target. Whose review does TSANZ suggest?",
+    "options": [
+      "Intensive care review",
+      "A dietitian review",
+      "Review at the next ward round",
+      "No review if on target"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "TSANZ suggests senior clinician review at an FiO2 of 0.40 or more and ICU review at 0.50 or more. Needing that much oxygen means serious illness, even when SpO2 is on target."
+  },
+  {
+    "id": "NZIQN-T2-032",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Teaching",
+    "stem": "A nursing student wants to give a patient an injection under supervision. What does Right 9 mean for this?",
+    "options": [
+      "Only the tutor needs to agree",
+      "Consent is not needed",
+      "The patient cannot refuse",
+      "All Code rights still apply"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Right 9: every right in the Code applies when a consumer is, or may be, involved in teaching or research, so the patient's informed choice still applies."
+  },
+  {
+    "id": "NZIQN-T2-033",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fitness to practise",
+    "stem": "A nurse has a few drinks before a night shift and says she feels fine. What does the Code of Conduct say?",
+    "options": [
+      "It is fine after a large meal",
+      "It is fine on quiet shifts",
+      "No alcohol may affect practice",
+      "It is fine if she feels well"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code standard 8.6: your practice must not be compromised by the use of alcohol or drugs. Standard 8.7 adds seeking help if your health threatens safe practice."
+  },
+  {
+    "id": "NZIQN-T2-034",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoglycaemia",
+    "stem": "After treating a hypo with fast-acting carbohydrate, when is blood glucose retested?",
+    "options": [
+      "After 1 hour",
+      "At the next meal",
+      "The next morning",
+      "After 15 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Retest after 15 minutes. If still below 4 mmol/L, repeat the 15 g; once above 4, have a carbohydrate snack or meal if due and retest after 30 minutes."
+  },
+  {
+    "id": "NZIQN-T2-035",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Correction",
+    "stem": "A patient says his record lists the wrong allergy. Which right does the Health Information Privacy Code give him?",
+    "options": [
+      "To have the record destroyed",
+      "To edit the record himself",
+      "To see other patients' records",
+      "To ask for it to be corrected"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rule 7 entitles a person to request correction of health information held about them. If the agency does not make the correction, he can ask for his statement of correction to be attached so it is always read with the record."
+  },
+  {
+    "id": "NZIQN-T2-036",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opioid toxicity",
+    "stem": "On the vital signs chart, how is opioid toxicity usually picked up first?",
+    "options": [
+      "A raised body temperature first",
+      "Low hourly urine output first",
+      "Abnormal breathing, pulse or BP",
+      "A change in the pain score"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "HQSC: opioid toxicity shows first as an abnormal respiratory rate, heart rate and systolic blood pressure, then an altered conscious state or hypoxaemia. A separate opioid observation chart is preferred."
+  },
+  {
+    "id": "NZIQN-T2-037",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hypoglycaemia",
+    "stem": "A man with type 2 diabetes who weighs 92 kg has a hypo. How much fast-acting carbohydrate does Healthify advise?",
+    "options": [
+      "15 g",
+      "5 g",
+      "30 g",
+      "60 g"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The rule of 15 uses 15 g, but people with type 2 diabetes who weigh more than 70 kg need 30 g. Children, pregnant women and pump users follow their own team's plan."
+  },
+  {
+    "id": "NZIQN-T2-038",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rongoā",
+    "stem": "Tamati wants to keep using rongoā Māori while in hospital. What do the standards ask of the nurse?",
+    "options": [
+      "Record it as a refusal of care",
+      "Remove it until discharge",
+      "Support its integration into care",
+      "Tell him it is not evidence-based"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 4.7 asks nurses to understand cultural preferences such as rongoā and support their integration into care. Descriptor 4.6 adds making sure the person has enough information to decide, which includes checking with the team about interactions."
+  },
+  {
+    "id": "NZIQN-T2-039",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Imposing beliefs",
+    "stem": "A nurse urges a patient to adopt the nurse's own religious view of his illness. What does the Code say?",
+    "options": [
+      "Only chaplains may discuss faith",
+      "Do not impose your beliefs",
+      "It is fine if he does not object",
+      "Sharing faith is part of care"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Code standard 1.8: do not impose your political, religious and cultural beliefs on health consumers, and intervene if you see other team members doing this."
+  },
+  {
+    "id": "NZIQN-T2-040",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complaints",
+    "stem": "Within what time of acknowledging a complaint must a provider decide if it is justified, or say more time is needed?",
+    "options": [
+      "6 months",
+      "2 working days",
+      "10 working days",
+      "3 months"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Within 10 working days of acknowledging it, the provider decides whether the complaint is justified or how much more time is needed. If more than 20 working days are needed, the person is told why."
+  },
+  {
+    "id": "NZIQN-T2-041",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sustainability",
+    "stem": "Which descriptor covers a nurse cutting waste of single-use supplies on the ward?",
+    "options": [
+      "Supports sustainability",
+      "Manages medicines safely",
+      "Advocates for health equity",
+      "Promotes health literacy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 6.6: the nurse understands the impact of healthcare on global and local resources and supports the constant assessment and improvement of sustainability practices."
+  },
+  {
+    "id": "NZIQN-T2-042",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart failure",
+    "stem": "A man with heart failure has gained 2 kg over three days. What does this most likely mean?",
+    "options": [
+      "Scale error only",
+      "Fluid retention",
+      "Muscle gain",
+      "Weight from body fat"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Healthify: putting on more than 1 to 2 kg over a few days means the body is retaining fluid, not fat."
+  },
+  {
+    "id": "NZIQN-T2-043",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sepsis",
+    "stem": "Which patient has a higher risk of sepsis?",
+    "options": [
+      "A fit adult after a sprain",
+      "An adult with a healed scar",
+      "One with a urinary catheter",
+      "A teenager with hay fever"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Healthify lists drips and catheters, recent surgery, wounds, chemotherapy or immunosuppressants, chronic disease and the very young or very old among those at higher risk."
+  },
+  {
+    "id": "NZIQN-T2-044",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Collecting information",
+    "stem": "Under rule 2 of the Health Information Privacy Code, from whom should health information usually be collected?",
+    "options": [
+      "From any family member",
+      "From a previous employer",
+      "From an online search engine",
+      "From the person it is about"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rule 2: health information must be collected from the individual concerned, with set exceptions, such as when the person authorises collection from someone else."
+  },
+  {
+    "id": "NZIQN-T2-045",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Warfarin",
+    "stem": "A patient on warfarin forgot last night's dose and remembers the next day. What is the usual advice?",
+    "options": [
+      "Take two doses today",
+      "Stop warfarin for a week",
+      "Skip it, take today's dose",
+      "Take an extra dose tonight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If remembered the same day, take it; if not, skip it and carry on as normal. Never take two doses on the same day, and tell the provider. Contact them if two or more doses are missed in a row."
+  },
+  {
+    "id": "NZIQN-T2-046",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boundaries",
+    "stem": "A long-term patient asks a nurse to be her attorney for money matters. What does the Code of Conduct say?",
+    "options": [
+      "Accept with a lawyer present",
+      "Accept after she is discharged",
+      "Decline the role",
+      "Accept if no family exists"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code standard 7.9: do not act for health consumers in your care through representation agreements, or accept power of attorney responsibilities for their legal and financial decisions."
+  },
+  {
+    "id": "NZIQN-T2-047",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk to self and others",
+    "stem": "Exhausted after a double shift, a nurse is asked to stay on. Which descriptor applies most?",
+    "options": [
+      "Uses digital communication well",
+      "Develops differential diagnoses",
+      "Responds to risk to self and others",
+      "Supports complementary therapies"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 6.5: the nurse identifies and responds appropriately to risk impacting the health, safety and wellbeing of self and others to practise safely. Fatigue is such a risk."
+  },
+  {
+    "id": "NZIQN-T2-048",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart failure",
+    "stem": "Checking for oedema, the nurse presses on the shin for 5 to 10 seconds. What sign suggests fluid retention?",
+    "options": [
+      "A dent that stays",
+      "Skin that goes pale",
+      "Skin that feels warm",
+      "Skin that springs back"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A dent that stays after pressing the skin of the ankle, shin or knee for 5 to 10 seconds is a sign of fluid retention in heart failure."
+  },
+  {
+    "id": "NZIQN-T2-049",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transfer of care",
+    "stem": "A patient is transferred to another ward. What does Code standard 6.3 ask of the nurse handing over?",
+    "options": [
+      "A brief note on the chart only",
+      "Handover only if asked",
+      "Verbal handover to the patient",
+      "Clear, prompt communication"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Standard 6.3: communicate clearly, effectively, respectfully and promptly with other nurses and health care professionals, including when referring or transferring care."
+  },
+  {
+    "id": "NZIQN-T2-050",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Te Whare Tapa Whā",
+    "stem": "In Te Whare Tapa Whā, how is health and wellbeing pictured?",
+    "options": [
+      "A wheel with eight spokes",
+      "A canoe with two hulls",
+      "A tree with deep roots",
+      "A wharenui with four walls"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Te Whare Tapa Whā pictures wellbeing as a wharenui, a meeting house, with four walls (wairua, hinengaro, tinana, whānau) standing on whenua. If one wall is weak the house is unbalanced."
+  },
+  {
+    "id": "NZIQN-T2-051",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Freedom from discrimination",
+    "stem": "Which right in the Code of Rights protects consumers from coercion, harassment and exploitation?",
+    "options": [
+      "Right 9",
+      "Right 2",
+      "Right 5",
+      "Right 8"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Right 2 is freedom from discrimination, coercion, harassment, and sexual, financial or other exploitation. Right 5 is effective communication and Right 8 is support."
+  },
+  {
+    "id": "NZIQN-T2-052",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Insulin",
+    "stem": "Once an insulin pen is in use and kept at room temperature, when is it thrown away?",
+    "options": [
+      "1 week after opening",
+      "6 months after opening",
+      "4 weeks after opening",
+      "On its printed expiry date"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Insulin in use can be kept at room temperature and is discarded 4 weeks after opening. Write the opening and discard dates on the pen."
+  },
+  {
+    "id": "NZIQN-T2-053",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Angina",
+    "stem": "How does angina pain usually differ from heart attack pain?",
+    "options": [
+      "It eases with rest or medicine",
+      "It is always more severe",
+      "It only happens at night",
+      "It lasts many hours at a time"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Angina can feel similar but usually eases with rest or medication; heart attack pain does not. People with angina follow their angina action plan."
+  },
+  {
+    "id": "NZIQN-T2-054",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Assisted dying",
+    "stem": "A doctor conscientiously objects to assisted dying when a patient asks about it. What must the doctor do?",
+    "options": [
+      "Refuse to discuss it any further",
+      "Refer him on to the hospital chaplain",
+      "Document it as a refusal of care",
+      "Tell him of the Assisted Dying Service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A provider may conscientiously object, but must tell the person they can contact the Assisted Dying Service."
+  },
+  {
+    "id": "NZIQN-T2-055",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conflicts of interest",
+    "stem": "A nurse sells a supplement range on the side and wants to tell her patients about it. What does the Code of Conduct say?",
+    "options": [
+      "Promote it if it is natural",
+      "Promote it after hours only",
+      "Do not promote it to patients",
+      "Promote it to willing patients"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code standard 7.11: do not misuse your professional position to promote or sell products or services for personal gain. Standard 7.10 asks nurses to declare interests that could compromise judgement."
+  },
+  {
+    "id": "NZIQN-T2-056",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart failure",
+    "stem": "Which over-the-counter medicine can make heart failure worse?",
+    "options": [
+      "Simple moisturiser",
+      "Ibuprofen",
+      "Saline nose spray",
+      "Paracetamol"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Healthify lists NSAIDs such as ibuprofen and diclofenac among medicines that can contribute to heart failure, along with corticosteroids and some others."
+  },
+  {
+    "id": "NZIQN-T2-057",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Right 6",
+    "stem": "A patient asks the nurse what her qualifications are. What does Right 6 entitle him to?",
+    "options": [
+      "No answer, as it is private",
+      "An honest answer",
+      "An answer only from a doctor",
+      "A referral to the manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Right 6(3) gives a consumer the right to honest and accurate answers to questions about services, including the identity and qualifications of the provider."
+  },
+  {
+    "id": "NZIQN-T2-058",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoglycaemia",
+    "stem": "A man with diabetes on insulin is sweaty and has tingling around his mouth, but no meter is to hand. What should the nurse do?",
+    "options": [
+      "Treat it as a hypo",
+      "Wait for a meter reading",
+      "Give his usual insulin",
+      "Encourage a walk"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sweating, shakiness and tingling around the mouth are hypoglycaemia symptoms. Healthify's advice is that if in doubt, treat."
+  },
+  {
+    "id": "NZIQN-T2-059",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "COPD",
+    "stem": "A woman with COPD uses a salbutamol reliever inhaler. What device is recommended with it?",
+    "options": [
+      "A spacer",
+      "A nebuliser mask at home",
+      "An oxygen concentrator",
+      "A peak flow meter only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inhalers work poorly if not used correctly, and spacers are recommended with reliever inhalers such as salbutamol."
+  },
+  {
+    "id": "NZIQN-T2-060",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stroke equity",
+    "stem": "Compared with European and Pākehā New Zealanders, at what stage do Māori and Pacific peoples tend to have strokes?",
+    "options": [
+      "About 10 to 15 years later",
+      "Only after age 75",
+      "About 10 to 15 years earlier",
+      "At about the same age"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Healthify reports that Māori and Pacific peoples have strokes about 10 to 15 years earlier than Europeans and Pākehā. Earlier risk factor checks are one response to that gap."
+  },
+  {
+    "id": "NZIQN-T2-061",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Team culture",
+    "stem": "Descriptor 2.5 asks nurses to contribute to a team culture that does what?",
+    "options": [
+      "Follows the most senior view",
+      "Respects diversity",
+      "Keeps one shared worldview",
+      "Avoids discussing culture"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Descriptor 2.5: the nurse contributes to a collaborative team culture which respects diversity, including intersectional identities, and protects cultural identity by acknowledging differing worldviews, values and practices."
+  },
+  {
+    "id": "NZIQN-T2-062",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Reasonable actions",
+    "stem": "Under clause 3 of the Code of Rights, when is a provider not in breach?",
+    "options": [
+      "When the patient did not complain",
+      "When it took reasonable actions",
+      "When the outcome was good",
+      "When staff were busy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Clause 3: a provider is not in breach if it took reasonable actions in the circumstances to give effect to the rights. The provider must prove it, and the circumstances include the clinical situation and resource limits."
+  },
+  {
+    "id": "NZIQN-T2-063",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complaints routes",
+    "stem": "A patient complains to the Health and Disability Commissioner about a nurse. What may the HDC do?",
+    "options": [
+      "Close it without reading it",
+      "Cancel the nurse's registration",
+      "Fine the nurse directly",
+      "Investigate or refer it on"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Patients may complain to the HDC, which may investigate the complaint or refer it to the Nursing Council. The Council can impose conditions or, in serious cases, suspend a nurse."
+  },
+  {
+    "id": "NZIQN-T2-064",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Digital communication",
+    "stem": "Which descriptor covers a nurse using a secure messaging app to contact the team?",
+    "options": [
+      "Advocates for health equity",
+      "Concludes therapeutic relationships",
+      "Uses digital communication well",
+      "Engages in quality improvement"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 3.7: the nurse uses appropriate digital and online communication. It sits in pou three alongside information-sharing rules in descriptor 3.1."
+  },
+  {
+    "id": "NZIQN-T2-065",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Escalation",
+    "stem": "Two patients deteriorate at once on a busy shift. What does descriptor 4.10 ask of the nurse?",
+    "options": [
+      "Reprioritise and escalate",
+      "Wait for the next shift",
+      "Document it and carry on",
+      "Finish the current task first"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 4.10: the nurse identifies, assesses and responds to emerging risks and challenging situations by adjusting priorities and escalating to the appropriate person."
+  },
+  {
+    "id": "NZIQN-T2-066",
+    "section": "iqnB",
+    "test": 2,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safe sleep",
+    "stem": "How should a baby be dressed for sleep, according to New Zealand safe sleep advice?",
+    "options": [
+      "With two extra blankets on top",
+      "One more layer than an adult",
+      "As warm as possible",
+      "In a hat at all times"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dress baby in one more layer than you would wear to stay warm, rather than adding blankets, and keep the room cool in summer."
+  },
+  {
+    "id": "NZIQN-D-001",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Injections",
+    "calculator": true,
+    "stem": "Charted: cefazolin 1.5 g IV. Once mixed, the vial holds 1 g in 10 mL. What volume holds the dose?",
+    "options": [
+      "1.5 mL",
+      "6.7 mL",
+      "10 mL",
+      "15 mL"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "(1.5 g / 1 g) x 10 mL = 15 mL. 6.7 mL comes from dividing the stock by the dose."
+  },
+  {
+    "id": "NZIQN-D-002",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Oral doses",
+    "calculator": true,
+    "stem": "Charted: gliclazide 120 mg orally. Stock: 80 mg scored tablets. How many tablets are given?",
+    "options": [
+      "0.67 tablet",
+      "1.5 tablets",
+      "2 tablets",
+      "3 tablets"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "120 mg / 80 mg = 1.5 tablets, using the score line to halve one. 0.67 comes from dividing the tablet strength by the dose."
+  },
+  {
+    "id": "NZIQN-D-003",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oral liquids",
+    "calculator": true,
+    "stem": "Charted for a child: paracetamol 180 mg orally. Stock: oral liquid 120 mg in 5 mL. What volume is given?",
+    "options": [
+      "1.5 mL",
+      "3.3 mL",
+      "5 mL",
+      "7.5 mL"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "(180 / 120) x 5 mL = 1.5 x 5 = 7.5 mL. Use an oral syringe to measure it."
+  },
+  {
+    "id": "NZIQN-D-004",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Divided doses",
+    "calculator": true,
+    "stem": "A child who weighs 16 kg is prescribed 30 mg/kg/day in three equal doses. How much is each dose?",
+    "options": [
+      "53 mg",
+      "160 mg",
+      "240 mg",
+      "480 mg"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Daily dose: 30 x 16 = 480 mg. Each of three doses: 480 / 3 = 160 mg. Giving 480 mg at once would be the whole day's amount."
+  },
+  {
+    "id": "NZIQN-D-005",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Infusion rates",
+    "calculator": true,
+    "stem": "500 mL is to run over 3 hours by pump. What rate is set?",
+    "options": [
+      "17 mL/h",
+      "100 mL/h",
+      "167 mL/h",
+      "1,500 mL/h"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "500 / 3 = 166.7, set as 167 mL/h. Multiplying instead of dividing gives 1,500."
+  },
+  {
+    "id": "NZIQN-D-006",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drip rates",
+    "calculator": true,
+    "stem": "100 mL is to run over 30 minutes through a giving set that delivers 20 drops/mL. What is the drip rate?",
+    "options": [
+      "3.3 drops/min",
+      "33 drops/min",
+      "50 drops/min",
+      "67 drops/min"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "(100 x 20) / 30 = 66.7, so 67 drops/min. 33 is the rate for the same volume over an hour, and 50 uses 15 drops/mL."
+  },
+  {
+    "id": "NZIQN-D-007",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Insulin",
+    "calculator": true,
+    "stem": "A patient is to have 14 units of insulin. The insulin contains 100 units/mL. What volume is this?",
+    "options": [
+      "0.014 mL",
+      "0.14 mL",
+      "1.4 mL",
+      "14 mL"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "14 / 100 = 0.14 mL. Insulin is measured in units with an insulin syringe or pen, which avoids this conversion; a tenfold slip is a known cause of serious harm."
+  },
+  {
+    "id": "NZIQN-D-008",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concentrations",
+    "calculator": true,
+    "stem": "How many mg are in each mL of lidocaine 1%?",
+    "options": [
+      "0.1 mg/mL",
+      "1 mg/mL",
+      "10 mg/mL",
+      "100 mg/mL"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A 1% solution has 1 g in 100 mL, which is 1,000 mg / 100 mL = 10 mg/mL. Reading 1% as 1 mg/mL undercounts tenfold."
+  },
+  {
+    "id": "NZIQN-D-009",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fluid balance",
+    "calculator": true,
+    "stem": "Over 24 hours a patient's intake is 1,850 mL and output is 2,300 mL. What is the fluid balance?",
+    "options": [
+      "-450 mL",
+      "-350 mL",
+      "350 mL",
+      "450 mL"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Balance = intake minus output: 1,850 - 2,300 = -450 mL, a negative balance. 450 mL with no sign would hide that more fluid went out than came in."
+  },
+  {
+    "id": "NZIQN-D-010",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Concentrations",
+    "calculator": true,
+    "stem": "An infusion contains 4 mg of a medicine in 250 mL. How many micrograms are in each mL?",
+    "options": [
+      "1.6 micrograms/mL",
+      "16 micrograms/mL",
+      "62.5 micrograms/mL",
+      "160 micrograms/mL"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "4 mg = 4,000 micrograms. 4,000 / 250 mL = 16 micrograms/mL. 62.5 comes from dividing 250 by 4."
+  },
+  {
+    "id": "NZIQN-D-011",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Telephone orders",
+    "calculator": true,
+    "stem": "What should a nurse do when taking a telephone medicine order?",
+    "options": [
+      "Give it, then document it",
+      "Read it back to the prescriber",
+      "Ask a pharmacist to sign it",
+      "Write it up after the call ends"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The NZNO guideline advises writing the order as it is to be given, reading it back, and having a colleague hear it too, resolving any doubt before the call ends."
+  },
+  {
+    "id": "NZIQN-D-012",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dispensing cabinets",
+    "calculator": true,
+    "stem": "Which task with an automated dispensing cabinet is outside a nurse's scope?",
+    "options": [
+      "Returning an unused dose",
+      "Logging in with own password",
+      "Removing a charted dose",
+      "Refilling it with stock"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Refilling an automated dispensing machine counts as dispensing, which is outside nursing practice. Nurses may return unused medicines and must use their own identifier and password."
+  },
+  {
+    "id": "NZIQN-D-013",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nurse-initiated medicines",
+    "calculator": true,
+    "stem": "A registered nurse gives a nurse-initiated medicine from the facility's approved list. What must the record say?",
+    "options": [
+      "\"Standing order\"",
+      "\"As required (PRN)\"",
+      "\"Telephone order\"",
+      "\"Nurse-initiated medicine\""
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The record of a nurse-initiated medicine includes the date and time, generic name, route, dose, the nurse's signature and printed name, and the words \"nurse-initiated medicine\". It is not a standing order."
+  },
+  {
+    "id": "NZIQN-D-014",
+    "section": "iqnA",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlled drugs",
+    "calculator": true,
+    "stem": "Under the Misuse of Drugs Regulations, how must a controlled drug in a nurse's possession be stored?",
+    "options": [
+      "On the medicine trolley if watched",
+      "A locked metal or concrete cupboard",
+      "In the patient's bedside locker",
+      "A locked drawer at the station"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Misuse of Drugs Regulations 1977 require a person holding controlled drugs in the course of their profession to keep them in a locked cupboard or compartment made of metal or concrete or both."
+  },
+  {
+    "id": "NZIQN-D-015",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPR",
+    "stem": "During CPR, should compressions stop to check for breathing?",
+    "options": [
+      "Yes, every 30 compressions",
+      "Yes, every minute",
+      "Only after each breath",
+      "No, keep pauses to a minimum"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ANZCOR Guideline 8: CPR should not be interrupted to check for response or breathing. Continue until the person responds or breathes normally, or a health professional takes over."
+  },
+  {
+    "id": "NZIQN-D-016",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early warning score",
+    "stem": "Which UK score is the New Zealand Early Warning Score based on?",
+    "options": [
+      "APACHE II",
+      "Glasgow-Blatchford",
+      "qSOFA",
+      "NEWS2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The NZEWS tracks NEWS2, released by the Royal College of Physicians in December 2017, with changes such as separate SpO2 scales for known COPD and new confusion as a marker."
+  },
+  {
+    "id": "NZIQN-D-017",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Keeping information secure",
+    "stem": "Rule 5 of the Health Information Privacy Code requires health information to be:",
+    "options": [
+      "Kept with reasonable safeguards",
+      "Shared with all staff to be safe",
+      "Kept on paper only, never online",
+      "Stored with the patient at all times"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rule 5 requires security safeguards that are reasonable in the circumstances against loss, misuse and unauthorised access or disclosure."
+  },
+  {
+    "id": "NZIQN-D-018",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Upholding mana",
+    "stem": "Descriptor 5.2 asks nurses to uphold the mana of people and whānau by showing what?",
+    "options": [
+      "Strict adherence to routine",
+      "Speed and efficiency",
+      "Respect, kindness and honesty",
+      "Clinical detachment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 5.2: the nurse upholds the mana of individuals, whānau and the profession by demonstrating respect, kindness, honesty and transparency of decision-making."
+  },
+  {
+    "id": "NZIQN-D-019",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Declaring health conditions",
+    "stem": "When applying for an annual practising certificate, which health condition must a nurse declare?",
+    "options": [
+      "A condition that is fully treated",
+      "A temporary sprained wrist",
+      "Any cold in the past year",
+      "One that may affect her practice"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nurses must declare health conditions on the application if they may affect their ability to practise. Temporary conditions, or ones that do not affect practice, need not be declared."
+  },
+  {
+    "id": "NZIQN-D-020",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pou one",
+    "stem": "Descriptor 1.1 asks nurses to engage in ongoing professional development about what?",
+    "options": [
+      "Infection control audits",
+      "Leadership theory",
+      "Digital health records",
+      "Māori health and te Tiriti"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 1.1: the nurse engages in ongoing professional development related to Māori health and the relevance of te Tiriti o Waitangi articles and principles."
+  },
+  {
+    "id": "NZIQN-D-021",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cultural support",
+    "stem": "A patient wants support from someone who understands her first-language culture. What does the Code ask of the nurse?",
+    "options": [
+      "Help her get that support",
+      "Ask her to bring a relative",
+      "Note it for after discharge",
+      "Explain that staff are enough"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code standard 2.2: assist the health consumer to gain appropriate support and representation from those who understand their first-language culture, needs and preferences."
+  },
+  {
+    "id": "NZIQN-D-022",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "CPR",
+    "stem": "When should an AED be attached during a cardiac arrest?",
+    "options": [
+      "After the doctor arrives",
+      "Only if the pulse returns",
+      "As soon as one is available",
+      "After 10 minutes of CPR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ANZCOR: attach an AED as soon as one is available and follow its prompts."
+  },
+  {
+    "id": "NZIQN-D-023",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early warning score",
+    "stem": "In what order are the parameters laid out on the New Zealand vital signs chart?",
+    "options": [
+      "By the doctor's preference",
+      "By how often they change",
+      "Alphabetically",
+      "By an ABCDE approach"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The chart orders its parameters by an ABCDE approach, so breathing and oxygen come before circulation and consciousness."
+  },
+  {
+    "id": "NZIQN-D-024",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Retention",
+    "stem": "Under rule 9 of the Health Information Privacy Code, how long may health information be kept?",
+    "options": [
+      "For as long as staff like",
+      "No longer than required",
+      "Only until discharge",
+      "Always for life"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rule 9: an agency must not keep health information longer than required for the purposes for which it may lawfully be used."
+  },
+  {
+    "id": "NZIQN-D-025",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anaphylaxis",
+    "stem": "A woman who is 30 weeks pregnant has anaphylaxis. How is she positioned?",
+    "options": [
+      "Standing, leaning forward",
+      "On her left side",
+      "Sitting upright on a chair",
+      "Flat on her back"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ASCIA: use the left lateral (recovery) position if the person is pregnant, unconscious or vomiting. Others lie flat or with legs slightly raised."
+  },
+  {
+    "id": "NZIQN-D-026",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complaints",
+    "stem": "A patient tells the nurse in person that he is unhappy with his care. Must he put the complaint in writing?",
+    "options": [
+      "Only if it is serious",
+      "Yes, it must be written",
+      "Yes, on the hospital's form",
+      "No, any suitable form will do"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Right 10(1): every consumer may complain about a provider in any form appropriate to them, and Right 10(2) lets them complain to the provider, an advocate or the Health and Disability Commissioner."
+  },
+  {
+    "id": "NZIQN-D-027",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Honest claims",
+    "stem": "A nurse is asked to record overtime she did not work. What does the Code of Conduct say?",
+    "options": [
+      "Claim it if the team agrees",
+      "Claim half of it",
+      "Claim it if she is owed leave",
+      "Claim only time actually worked"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Code standard 8.8: ensure you only claim benefits or remuneration for the time you were employed or provided nursing services."
+  },
+  {
+    "id": "NZIQN-D-028",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early warning score",
+    "stem": "A low-risk patient is asleep at 0200 when observations are due. What does HQSC guidance say?",
+    "options": [
+      "Skip them until breakfast",
+      "Never wake a sleeping patient",
+      "Record the last set again",
+      "Wake them, unless exempted"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Patients are woken for a full set of vital signs, and not waking normally is scored. For low-risk patients a night-time exemption can be documented in the monitoring plan."
+  },
+  {
+    "id": "NZIQN-D-029",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Anaphylaxis",
+    "stem": "In anaphylaxis with upper airway obstruction, which adjunct does ASCIA suggest alongside IM adrenaline?",
+    "options": [
+      "Injectable promethazine",
+      "Oral prednisone alone",
+      "A sedating antihistamine",
+      "Nebulised adrenaline"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For upper airway obstruction, ASCIA suggests considering nebulised adrenaline (5 mL of 1:1,000) as an adjunct. It advises avoiding sedating antihistamines and injectable promethazine."
+  },
+  {
+    "id": "NZIQN-D-030",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health equity",
+    "stem": "Descriptor 1.2 asks nurses to advocate for health equity for Māori in which situations?",
+    "options": [
+      "Only in community settings",
+      "Only when a patient asks",
+      "Only in Māori health services",
+      "In all situations and contexts"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 1.2: the nurse advocates for health equity for Māori in all situations and contexts, not only in services designed for Māori."
+  },
+  {
+    "id": "NZIQN-D-031",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consulting cultural groups",
+    "stem": "A nurse wants to contact a patient's church leader about his care. When does the Code allow this?",
+    "options": [
+      "If the family agrees",
+      "Only after discharge",
+      "When the patient asks or approves",
+      "Whenever the nurse thinks it helps"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code standard 2.3: consult with members of cultural and other groups as requested and approved by the health consumer. The patient decides, not the nurse or the family."
+  },
+  {
+    "id": "NZIQN-D-032",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consent to disclose",
+    "stem": "A patient's friend asks how he is doing. He has not agreed to share anything. What does the Code say?",
+    "options": [
+      "Share once he is stable",
+      "Share if the friend is close",
+      "Get his consent first",
+      "Share basic details only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code standard 5.5: gain consent from the health consumer to disclose information. Without consent, a judgement about risk to the person or public safety must be made."
+  },
+  {
+    "id": "NZIQN-D-033",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Early warning score",
+    "stem": "Is pain a scored part of the New Zealand Early Warning Score?",
+    "options": [
+      "Yes, only after surgery",
+      "Yes, it scores up to three",
+      "No, and it is not recorded",
+      "No, but it is still recorded"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pain is not a scored component, but it should still be recorded on the chart."
+  },
+  {
+    "id": "NZIQN-D-034",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complaints",
+    "stem": "While a complaint is being dealt with, how often must the provider keep the person informed?",
+    "options": [
+      "Only if asked",
+      "At least every 6 months",
+      "At least monthly",
+      "Only at the end"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Right 10(4): the provider must tell the consumer about progress at intervals of not more than 1 month."
+  },
+  {
+    "id": "NZIQN-D-035",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Continuous learning",
+    "stem": "Descriptor 6.3 asks registered nurses to do what about professional development?",
+    "options": [
+      "Seek out learning opportunities",
+      "Learn only at orientation",
+      "Leave it until a review",
+      "Wait for the employer to arrange it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 6.3: the nurse understands continuous learning and proactively seeks opportunities for professional development."
+  },
+  {
+    "id": "NZIQN-D-036",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoglycaemia",
+    "stem": "Tama is found unresponsive and his glucose reads 2.6 mmol/L. Which action is unsafe?",
+    "options": [
+      "Give a sugary drink by mouth",
+      "Call for help",
+      "Give glucagon if ordered",
+      "Place him in recovery position"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Do not give an unconscious person anything by mouth, as they may choke. Place them in the recovery position, get help and give glucagon if available and you know how."
+  },
+  {
+    "id": "NZIQN-D-037",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Information rules",
+    "stem": "Descriptor 3.1 asks the nurse to comply with policies for which information tasks?",
+    "options": [
+      "Getting, recording, sharing, keeping",
+      "Only recording and then printing",
+      "Only sharing it with the family",
+      "Only storing the paper notes safely"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 3.1: the nurse understands and complies with professional, ethical, legal and organisational policies for obtaining, recording, sharing and retaining information acquired in practice."
+  },
+  {
+    "id": "NZIQN-D-038",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen",
+    "stem": "A patient with chest pain has an SpO2 of 97% on room air and no lung disease. What does the TSANZ guideline say about oxygen?",
+    "options": [
+      "Give 15 L/min at once",
+      "Give it by simple mask at 2 L/min",
+      "It is not routinely needed",
+      "Give 2 L/min as routine"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Oxygen is not routinely required in conditions other than COPD when SpO2 is 92% or higher on room air. It is prescribed only when needed, within a target range."
+  },
+  {
+    "id": "NZIQN-D-039",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoglycaemia",
+    "stem": "About how long does glucagon take to work after it is given for a severe hypo?",
+    "options": [
+      "About 1 hour",
+      "About 10 minutes",
+      "About 1 minute",
+      "About 4 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Healthify says glucagon takes about 10 minutes to work."
+  },
+  {
+    "id": "NZIQN-D-040",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Māori models of health",
+    "stem": "The Code of Conduct asks nurses to integrate Māori models of health into what?",
+    "options": [
+      "Staff training records",
+      "Only discharge summaries",
+      "Only mental health care",
+      "Everyday care plans"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Standard 2.9 says to integrate Māori models of health, such as Te Whare Tapa Whā, into everyday practice and when developing care plans."
+  },
+  {
+    "id": "NZIQN-D-041",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Non-discrimination",
+    "stem": "Code standard 1.6 says a nurse must not discriminate on which grounds, among others?",
+    "options": [
+      "Diagnosis and ward",
+      "Ethnicity, religion and age",
+      "Length of stay in hospital",
+      "Health insurance status"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Standard 1.6 lists ethnicity, religion, gender, sexual orientation, political or other opinion, disability or age."
+  },
+  {
+    "id": "NZIQN-D-042",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boundaries",
+    "stem": "A patient's adult son asks a nurse out while his father is in her care. What does the Code of Conduct say?",
+    "options": [
+      "No intimate relationship with him",
+      "It is allowed if the patient agrees",
+      "It is allowed outside work",
+      "It is allowed after one week"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code standard 7.14: do not engage in sexual or intimate behaviour or relationships with health consumers in your care or with those close to them."
+  },
+  {
+    "id": "NZIQN-D-043",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergencies",
+    "stem": "Off duty, a nurse sees a car crash. What does Code standard 4.12 ask of her?",
+    "options": [
+      "Help, given safety and skill",
+      "Leave it all to the ambulance",
+      "Help only if she is paid",
+      "Help only at a hospital"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Standard 4.12: offer assistance in an emergency that takes into account your own safety, your skill and the availability of other options."
+  },
+  {
+    "id": "NZIQN-D-044",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Warfarin",
+    "stem": "A patient on warfarin has a cut that is still bleeding after 10 minutes of firm pressure. What is the advice?",
+    "options": [
+      "Call 111 or go to ED",
+      "Wait until the next INR test",
+      "Apply heat to the cut",
+      "Take an extra warfarin dose"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bleeding that does not stop after 10 minutes of pressure, blood in urine or stool, or a serious fall or head injury on warfarin needs 111 or the emergency department."
+  },
+  {
+    "id": "NZIQN-D-045",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen",
+    "stem": "What does the TSANZ guideline say should be documented when oxygen is prescribed?",
+    "options": [
+      "Only the flow rate",
+      "Only the device",
+      "The target SpO2 range",
+      "Only the start time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An oxygen prescription records the target SpO2 range in the notes and on the drug chart, and SpO2 is documented with the delivery system and flow."
+  },
+  {
+    "id": "NZIQN-D-046",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Written summary",
+    "stem": "After a long explanation of a procedure, a patient asks for it in writing. What does Right 6 allow?",
+    "options": [
+      "A written summary on request",
+      "Only verbal information",
+      "A summary for a fee",
+      "Only a copy of the consent form"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Right 6(4) gives every consumer the right to receive, on request, a written summary of the information provided."
+  },
+  {
+    "id": "NZIQN-D-047",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Warfarin",
+    "stem": "What dietary advice about vitamin K goes with warfarin?",
+    "options": [
+      "Avoid all green vegetables",
+      "Keep intake steady each day",
+      "Double it before INR tests",
+      "Take vitamin K tablets daily"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vitamin K counteracts warfarin, so large changes alter the INR. The advice is consistent intake, not avoiding vitamin K foods."
+  },
+  {
+    "id": "NZIQN-D-048",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gifts",
+    "stem": "Why may accepting a gift of more than token value from a patient be a problem?",
+    "options": [
+      "It must be shared with all staff",
+      "It delays discharge",
+      "It breaks tax rules",
+      "It may look like personal gain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Code standard 7.6: gifts of more than token value could be seen as the nurse gaining personal benefit from their position or taking advantage of a vulnerable person."
+  },
+  {
+    "id": "NZIQN-D-049",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speaking up",
+    "stem": "Under pou six, what is fundamental to leadership for every registered nurse?",
+    "options": [
+      "Speaking out to escalate concerns",
+      "Holding a formal management title",
+      "Avoiding changes to practice",
+      "Working within one team only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pou six says leadership requires all nurses to act as change agents, and that intervening, speaking out and advocating to escalate concerns on behalf of colleagues or recipients of care is fundamental."
+  },
+  {
+    "id": "NZIQN-D-050",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delirium",
+    "stem": "Which of these is a common cause of delirium in an older person?",
+    "options": [
+      "Regular light exercise",
+      "Eating spicy food",
+      "Mild short-sightedness",
+      "Constipation or dehydration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Healthify lists infections, some medicines, surgery, alcohol withdrawal, stroke, organ failure, dehydration, lack of sleep, constipation and unrelieved pain among causes."
+  },
+  {
+    "id": "NZIQN-D-051",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy and care planning",
+    "stem": "A nurse is so worried about privacy that she leaves the patient out of care planning talks. What does the Code say?",
+    "options": [
+      "Plan only with the doctor",
+      "Keep planning away from her",
+      "Still involve her in planning",
+      "Plan only with the whānau"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code standard 5.3: use professional judgement so that concerns about privacy do not compromise the information given to health consumers or their involvement in care planning."
+  },
+  {
+    "id": "NZIQN-D-052",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Te Whare Tapa Whā",
+    "stem": "A nurse asks Wiremu how his body is coping with the new medicine and his sleep. Which wall is this?",
+    "options": [
+      "Taha tinana",
+      "Whenua",
+      "Taha whānau",
+      "Taha wairua"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Taha tinana is physical wellbeing: how the body feels and is cared for. Whenua is the foundation, connection to land, not one of the walls."
+  },
+  {
+    "id": "NZIQN-D-053",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "Descriptor 2.3 asks nurses to engage in partnership for the provision of health care with whom?",
+    "options": [
+      "Only the treating doctor",
+      "People, whānau and communities",
+      "Only the patient's employer",
+      "Only the hospital's managers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Descriptor 2.3: the nurse engages in partnership with individuals, whānau and communities for the provision of health care."
+  },
+  {
+    "id": "NZIQN-D-054",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Warfarin",
+    "stem": "A patient with a mechanical heart valve takes warfarin. What INR range might be set for him?",
+    "options": [
+      "2.5 to 3.5",
+      "1 to 1.5",
+      "1.5 to 2",
+      "4.5 to 5.5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "People with mechanical heart valves may have a higher target, 2.5 to 3.5, than the 2 to 3 usual for atrial fibrillation."
+  },
+  {
+    "id": "NZIQN-D-055",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delirium",
+    "stem": "What is PINCHES ME Kindly used for?",
+    "options": [
+      "Checking a wound",
+      "Scoring pressure risk",
+      "Preventing delirium",
+      "Grading heart failure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PINCHES ME Kindly is a delirium prevention prompt: pain, infection, nutrition, constipation, hydration, exercise, sleep, medication review and environment, done kindly."
+  },
+  {
+    "id": "NZIQN-D-056",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Assisted dying",
+    "stem": "Which person may be eligible for assisted dying under the End of Life Choice Act?",
+    "options": [
+      "Any person aged over 85 years",
+      "Any adult who has dementia",
+      "An adult with a disability alone",
+      "Terminal, likely to die in 6 months"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eligibility needs all of: 18 or over, a citizen or permanent resident, terminal illness likely to end life within 6 months, serious irreversible decline, unbearable suffering and competence. Age, dementia, mental illness or disability alone do not qualify."
+  },
+  {
+    "id": "NZIQN-D-057",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Scope conditions",
+    "stem": "What does the registered nurse scope say may be placed on some nurses' scope of practice?",
+    "options": [
+      "Conditions limiting their area",
+      "A ban on working night shifts",
+      "A cap on their working hours",
+      "A limit on patients' ages"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The scope says conditions may be placed on the scope of practice of some registered nurses, depending on their qualifications or experience, limiting them to a specific area of practice."
+  },
+  {
+    "id": "NZIQN-D-058",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Insulin",
+    "stem": "Why are insulin injection sites rotated?",
+    "options": [
+      "It hurts less in the same spot",
+      "Lumps alter absorption",
+      "It lowers the dose needed",
+      "It keeps the pen sterile"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rotating sites stops the skin becoming lumpy, since lumps change how insulin is absorbed. Scar tissue is avoided too."
+  },
+  {
+    "id": "NZIQN-D-059",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Professional communication",
+    "stem": "Descriptor 3.4 asks the nurse to communicate professionally to build what with people and whānau?",
+    "options": [
+      "Shared understanding",
+      "A complaint record",
+      "A quicker discharge",
+      "Clinical authority"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 3.4: the nurse communicates professionally to build shared understanding with people, their whānau and communities."
+  },
+  {
+    "id": "NZIQN-D-060",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Differential diagnosis",
+    "stem": "Under descriptor 4.2, what informs a registered nurse's differential diagnoses?",
+    "options": [
+      "The patient's last admission only",
+      "A colleague's first impression",
+      "The ward's usual diagnoses",
+      "Assessment, expertise and evidence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 4.2: differential diagnoses are based on a comprehensive assessment, clinical expertise and current evidence, and they inform the plan of care."
+  },
+  {
+    "id": "NZIQN-D-061",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Paracetamol",
+    "stem": "A patient takes regular paracetamol and a cold and flu product. What is the risk?",
+    "options": [
+      "Needing a higher dose",
+      "A slower pain response",
+      "Low blood glucose",
+      "Over 4 g in 24 hours"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Many cold and flu and combination pain products contain paracetamol, and the total from all products must not exceed 4 g in 24 hours. Too much can seriously damage the liver."
+  },
+  {
+    "id": "NZIQN-D-062",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnMaori",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rheumatic fever",
+    "stem": "For how long do most children need secondary prevention injections after rheumatic fever?",
+    "options": [
+      "At least 10 years or to age 21",
+      "Until they start school",
+      "For 12 months only",
+      "Until the sore throat settles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Most children need the injections for at least 10 years or until age 21, whichever is longer, and longer if a heart valve is damaged. A missed dose is rearranged as soon as possible."
+  },
+  {
+    "id": "NZIQN-D-063",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCultural",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Personal beliefs",
+    "stem": "A patient follows a vegetarian diet for religious reasons. What does Code standard 2.1 expect?",
+    "options": [
+      "Encourage meat for recovery",
+      "Offer it only if stock allows",
+      "Ask the dietitian to overrule it",
+      "Respect it in her care plan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Standard 2.1: practise in a way that respects each health consumer's identity and right to hold personal beliefs, values and goals. A diet chosen for religious reasons is planned for, with dietitian advice if needed."
+  },
+  {
+    "id": "NZIQN-D-064",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnCare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Enduring power of attorney",
+    "stem": "When can an enduring power of attorney for property start?",
+    "options": [
+      "While they still have capacity",
+      "Only after the person's death",
+      "Only after a court order",
+      "Only on admission to hospital"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A property EPA can start at a time the person chooses while they still have capacity and carry on if they lose it, or start only once loss of capacity is certified. A personal care and welfare EPA starts only when capacity is lost."
+  },
+  {
+    "id": "NZIQN-D-065",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnLead",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Online conduct",
+    "stem": "Does the Code of Conduct hold nurses to the same standard on social media as in person?",
+    "options": [
+      "No, private accounts are exempt",
+      "Yes, the same standards apply",
+      "Only when in uniform",
+      "Only during work hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Code standard 8.1: maintain a high standard of professional and personal behaviour, and the same standards of conduct are expected when using social media and electronic communication."
+  },
+  {
+    "id": "NZIQN-D-066",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnComms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Talking about colleagues",
+    "stem": "A nurse vents about a named colleague in a public online group. What does the Code say?",
+    "options": [
+      "It is fine with no hospital named",
+      "Do not discuss colleagues online",
+      "It is fine outside work hours",
+      "It is fine if it is true"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Code standard 6.4: do not discuss colleagues in public places or on social media, and keep behaviour towards colleagues respectful."
+  },
+  {
+    "id": "NZIQN-D-067",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stroke",
+    "stem": "Which type of stroke is most common?",
+    "options": [
+      "Ischaemic stroke, from a clot",
+      "Stroke from an infection",
+      "Stroke from low blood sugar",
+      "Haemorrhagic stroke, from a bleed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ischaemic strokes, caused by a clot blocking a brain artery, are the most common type. Haemorrhagic strokes happen when an artery in the brain bursts."
+  },
+  {
+    "id": "NZIQN-D-068",
+    "section": "iqnB",
+    "test": 0,
+    "module": 1,
+    "domain": "iqnClinical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Safe sleep",
+    "stem": "Where in the cot should a baby be placed to sleep?",
+    "options": [
+      "In the middle with pillows",
+      "Against a bumper pad",
+      "Feet to the foot of the cot",
+      "Diagonally across it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Place baby on their back near the end of the cot, bassinet or pēpi-pod so they cannot wriggle down, with no pillows, bumper pads or toys."
+  }
+]

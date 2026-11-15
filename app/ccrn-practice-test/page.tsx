@@ -129,7 +129,7 @@ export default function CcrnLandingPage() {
           <ExamLandingHero
             dashboardHref="/ccrn/dashboard"
             shortName="CCRN"
-            subtitle="200 original questions on the AACN Adult CCRN test plan: cardiovascular, respiratory, multisystem, neuro and renal critical care, plus professional caring and ethics. Four 50-question mock exams. Start for free, no account needed."
+            subtitle="200 original questions on the AACN Adult CCRN test plan: cardiovascular, respiratory, multisystem, neuro and renal critical care, plus professional caring and ethics. Four 50-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/ccrn-mobile.png", desktop: "/landing/ccrn-desktop.png" }}
           />
         </div>

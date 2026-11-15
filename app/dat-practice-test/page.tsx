@@ -132,7 +132,7 @@ export default function DatLandingPage() {
           <ExamLandingHero
             dashboardHref="/dat/dashboard"
             shortName="DAT"
-            subtitle="214 original questions in biology, general and organic chemistry, reading comprehension and quantitative reasoning. Tuned for mobile. No account needed."
+            subtitle="214 original questions in biology, general and organic chemistry, reading comprehension and quantitative reasoning. Free to start, no account needed."
             shots={{ mobile: "/landing/dat-mobile.png", desktop: "/landing/dat-desktop.png" }}
           />
         </div>

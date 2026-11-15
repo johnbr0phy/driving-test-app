@@ -131,7 +131,7 @@ export default function AfoqtLandingPage() {
           <ExamLandingHero
             dashboardHref="/afoqt/dashboard"
             shortName="AFOQT"
-            subtitle="250 original questions across eight Air Force Officer Qualifying Test subtests, at the real pace. Tuned for mobile. No account needed."
+            subtitle="250 original questions across eight Air Force Officer Qualifying Test subtests, at the real pace. Free to start, no account needed."
             shots={{ mobile: "/landing/afoqt-mobile.png", desktop: "/landing/afoqt-desktop.png" }}
           />
         </div>

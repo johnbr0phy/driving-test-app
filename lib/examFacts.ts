@@ -2176,7 +2176,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Sections", value: "Verbal Reasoning, Quantitative Reasoning, Reading Comprehension, Mathematics Achievement, plus an unscored essay" },
       { label: "Questions", value: "160 multiple-choice questions (40, 37, 36 and 47) and 1 essay prompt" },
       { label: "Time", value: "2 hours 40 minutes plus two 10-minute breaks" },
-      { label: "Format", value: "Online or on paper, same questions and timing; no calculator" },
+      { label: "Format", value: "Online or on paper where available, with the same number of questions and timing; no calculator" },
       { label: "Score", value: "Scaled scores, percentile ranks and stanines against same-grade applicants; no penalty for wrong answers" },
       { label: "How often", value: "Once per testing season: fall, winter and spring/summer" },
       { label: "Pass mark", value: "None: each school decides how to use the scores" },

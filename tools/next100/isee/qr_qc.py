@@ -56,8 +56,8 @@ ITEMS = [
       "Squaring a number between 0 and 1 makes it smaller: for example, (1/2)² = 1/4. So Column B is greater for every such m.",
       given="0 < m < 1"),
     # ---------------- Drill only ----------------
-    Q(0, 1, "Percents", "15% of 60", "60% of 15", "C",
-      "15% of 60 is 9 and 60% of 15 is also 9. Swapping the percent and the number does not change the product."),
+    Q(0, 1, "Percents", "20% of 45", "1/4 of 36", "C",
+      "20% of 45 is 45 ÷ 5 = 9, and 1/4 of 36 is 36 ÷ 4 = 9, so the quantities are equal."),
     Q(0, 1, "Units of time", "The number of minutes in 2 hours", "The number of seconds in 2 minutes", "C",
       "2 hours is 120 minutes and 2 minutes is 120 seconds, so they are equal."),
     Q(0, 1, "Integers", "-5 + 8", "-8 + 5", "A",

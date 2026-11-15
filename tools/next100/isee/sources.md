@@ -12,7 +12,7 @@ or reworded. The reading passages are original.
   Middle Level is for students applying to Grades 7 and 8: Verbal Reasoning 40 questions in 20
   minutes, Quantitative Reasoning 37 in 35, Reading Comprehension 36 in 35, Mathematics Achievement
   47 in 40, Essay 1 prompt in 30 (unscored, sent to the schools); 2 hours 40 minutes plus two
-  10-minute breaks. Online and paper formats have the same questions, timing and chance to change
+  10-minute breaks. Online and paper formats (as available) have the same number of questions, timing and chance to change
   answers. Scores are based only on correct answers ("Incorrect answers are not deducted"); you may
   return to skipped questions within the current section only; no calculators, rulers or books
   unless an approved accommodation; performance is compared only with students at the same grade

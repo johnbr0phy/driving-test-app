@@ -1,4 +1,4 @@
-import { EXAMS, ExamConfig, examBaseLanguage, examEnglishName, examLandingPath, examLanguages } from "./exams";
+import { EXAMS, ExamConfig, examBaseLanguage, examEnglishName, examLandingPath, examLanguages, examTestTotal } from "./exams";
 import type { Language } from "@/i18n";
 import { EXAMS_V2 } from "./v2/registry";
 import { lockedTestIds } from "./examLocks";
@@ -468,7 +468,7 @@ const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   theme: exam.id,
   languages: examLanguages(exam),
   // The last quarter of the dashboard is Premium (lib/examLocks.ts).
-  pricing: `${exam.testCount - lockedTestIds(exam).length} free, ${lockedTestIds(exam).length} premium`,
+  pricing: `${examTestTotal(exam) - lockedTestIds(exam).length} free, ${lockedTestIds(exam).length} premium`,
   ...(examBaseLanguage(exam) !== "en"
     ? { language: examBaseLanguage(exam), nativeName: exam.name, nativeShortName: exam.shortName }
     : {}),

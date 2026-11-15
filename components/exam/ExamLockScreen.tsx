@@ -15,12 +15,12 @@ import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 import { PaywallModal } from "@/components/PaywallModal";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { examPaywallCopy } from "@/lib/examPaywallCopy";
+import { examPremiumBullets } from "@/lib/examPaywallCopy";
 import type { Language } from "@/i18n";
 
 /** What the paywall lists for a v1 exam's Premium steps, in the page's language. */
 export function examPremiumBenefits(exam: ExamConfig, lang: Language = "en"): string[] {
-  return examPaywallCopy(lang).premium(exam.shortName);
+  return examPremiumBullets(exam, lang);
 }
 
 /**

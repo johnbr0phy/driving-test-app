@@ -2,6 +2,9 @@
 
 // Shared practice-test page for registry exams, driven by an ExamConfig.
 // The final test is Premium (lib/examLocks.ts) and shows ExamLockScreen.
+// A full-length mock (ExamConfig.mockExams) opens on a start screen and runs
+// on a clock from the session's saved start time, so a reload keeps it; at
+// zero the test is scored with unanswered questions wrong.
 
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
@@ -12,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { FocusBar } from "@/components/FocusBar";
 import { generateExamTest, shuffleQuestionOptions } from "@/lib/examTestGenerator";
-import { ExamConfig } from "@/lib/exams";
+import { ExamConfig, examTestLength, isMockTest } from "@/lib/exams";
 import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
@@ -41,6 +44,14 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [loading, setLoading] = useState(true);
+  const mock = isMockTest(exam, testNumber);
+  const mockMinutes = exam.mockExams?.minutes ?? 0;
+  const [started, setStarted] = useState(false);
+  const [startedAt, setStartedAt] = useState<number | null>(null);
+  const [now, setNow] = useState(() => Date.now());
+  const finished = useRef(false);
+  const answersRef = useRef(answers);
+  answersRef.current = answers;
 
   // Premium gate: decided once the account has loaded, and before a session
   // is started (a started or finished test is never locked).
@@ -65,6 +76,12 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
 
     try {
       const savedTest = getCurrentTest(testId);
+      if (savedTest?.startedAt) setStartedAt(new Date(savedTest.startedAt).getTime());
+      if (mock && !(savedTest && savedTest.questions.length > 0) && !started) {
+        // A mock waits on its start screen until the person starts the clock.
+        setLoading(false);
+        return;
+      }
       if (savedTest && savedTest.questions.length > 0) {
         // Resume from saved state at the first unanswered question
         setQuestions(savedTest.questions);
@@ -79,6 +96,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
         const testQuestions = generateExamTest(exam, testNumber, lang).map(shuffleQuestionOptions);
         setQuestions(testQuestions);
         startTest(testId, testQuestions);
+        setStartedAt(Date.now());
       }
 
       initialized.current = true;
@@ -87,7 +105,31 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
       console.error(`Error loading ${exam.shortName} questions:`, error);
       setLoading(false);
     }
-  }, [hydrated, locks.settled, locked, testId, testNumber, exam, lang, routes, getCurrentTest, startTest, router]);
+  }, [hydrated, locks.settled, locked, testId, testNumber, exam, lang, routes, getCurrentTest, startTest, router, mock, started]);
+
+  const finish = (finalAnswers: { [key: number]: string }) => {
+    if (finished.current) return;
+    finished.current = true;
+    let correctCount = 0;
+    questions.forEach((question, index) => {
+      if (finalAnswers[index] === question.correctAnswer) correctCount++;
+    });
+    completeTest(testId, correctCount, questions, finalAnswers);
+    recordClassTest(exam.id, testNumber, correctCount, questions.length);
+    router.push(routes.results(testId));
+  };
+
+  // The mock's clock.
+  const remaining = mock && startedAt !== null ? Math.max(0, mockMinutes * 60 - Math.floor((now - startedAt) / 1000)) : null;
+  useEffect(() => {
+    if (!mock || startedAt === null || questions.length === 0) return;
+    const timer = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(timer);
+  }, [mock, startedAt, questions.length]);
+  useEffect(() => {
+    if (remaining === 0 && questions.length > 0) finish(answersRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [remaining, questions.length]);
 
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;
@@ -106,13 +148,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
       if (currentQuestionIndex < totalQuestions - 1) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
       } else {
-        let correctCount = 0;
-        questions.forEach((question, index) => {
-          if (updatedAnswers[index] === question.correctAnswer) correctCount++;
-        });
-        completeTest(testId, correctCount, questions, updatedAnswers);
-        recordClassTest(exam.id, testNumber, correctCount, questions.length);
-        router.push(routes.results(testId));
+        finish(updatedAnswers);
       }
     }, 300);
   };
@@ -141,6 +177,38 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
     );
   }
 
+  if (mock && questions.length === 0 && !started) {
+    const len = examTestLength(exam, testNumber);
+    return (
+      <div className="flex-1 bg-gray-50 dark:bg-gray-950">
+        <FocusBar exitHref={routes.dashboard} title={ui.mockN(testNumber - exam.testCount)} />
+        <div className="container mx-auto px-4 py-10 max-w-lg">
+          <Card>
+            <CardContent className="p-8 text-center">
+              <div className="text-4xl mb-3" aria-hidden="true">⏱️</div>
+              <h1 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-3">{ui.mockStartTitle(exam.shortName, testNumber - exam.testCount)}</h1>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">{ui.mockStartBody(len, mockMinutes)}</p>
+              <Button
+                className="w-full h-12 bg-brand hover:bg-brand-dark text-white font-semibold"
+                onClick={() => { initialized.current = false; setLoading(true); setStarted(true); }}
+              >
+                {ui.mockStart}
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    );
+  }
+
+  if (remaining === 0) {
+    return (
+      <div className="flex-1 bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
+        <div className="text-xl font-semibold">{ui.timeUp}</div>
+      </div>
+    );
+  }
+
   if (questions.length === 0) {
     return (
       <div className="flex-1 bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
@@ -161,12 +229,16 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <FocusBar
         exitHref={routes.dashboard}
-        title={ui.examTestN(exam.shortName, testNumber)}
+        title={mock ? ui.mockN(testNumber - exam.testCount) : ui.examTestN(exam.shortName, testNumber)}
         subtitle={`${t("questionCard.questionOf")} ${currentQuestionIndex + 1} ${t("questionCard.of")} ${questions.length}`}
         progress={Object.keys(answers).length / questions.length}
         confirmExit
         right={
-          !isGuest ? (
+          remaining !== null ? (
+            <span className={`text-sm font-semibold tabular-nums ${remaining < 300 ? "text-red-600 dark:text-red-400" : "text-gray-700 dark:text-gray-200"}`} aria-live="off">
+              {ui.timeLeft(`${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, "0")}`)}
+            </span>
+          ) : !isGuest ? (
             <Link
               href={routes.stats}
               className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"

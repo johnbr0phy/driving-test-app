@@ -66,7 +66,16 @@ for (const exam of ALL_EXAMS) {
     if (ids.length !== def.size) problems.push(`${exam.id} set ${def.setNumber}: size ${def.size}, bank has ${ids.length}`);
     if (ids.length <= TRAINING_PART_MAX) continue;
     const category = new Map(bank.map((q) => [q.questionId, q.category]));
-    const bounds = splitPoints(ids.map((id) => category.get(id)!));
+    let bounds: number[];
+    if (def.partSizes) {
+      // Hand-set sizes (ExamTrainingSetDef.partSizes), e.g. a part that must
+      // start where the exam's Premium questions begin.
+      bounds = def.partSizes.reduce((b, n) => [...b, b[b.length - 1] + n], [0]);
+      if (bounds[bounds.length - 1] !== ids.length) problems.push(`${exam.id} set ${def.setNumber}: partSizes sum to ${bounds[bounds.length - 1]}, set has ${ids.length}`);
+      if (def.partSizes.some((n) => n > TRAINING_PART_MAX || n < PART_MIN)) problems.push(`${exam.id} set ${def.setNumber}: partSizes must each be ${PART_MIN} to ${TRAINING_PART_MAX}`);
+    } else {
+      bounds = splitPoints(ids.map((id) => category.get(id)!));
+    }
     if (def.partNames && def.partNames.length !== bounds.length - 1) {
       problems.push(`${exam.id} set ${def.setNumber}: ${def.partNames.length} partNames for ${bounds.length - 1} parts`);
     }

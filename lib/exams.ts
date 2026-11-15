@@ -56,6 +56,10 @@ export interface ExamTrainingSetDef {
    *  part order, so the dashboard says what each part covers instead of
    *  "part 2 of 3". scripts/build-training-parts.ts checks the count. */
   partNames?: string[];
+  /** Hand-set part sizes (in part order, summing to `size`) instead of the
+   *  even split, for a set whose parts must start at a set question, e.g.
+   *  where an exam's Premium questions begin (`premiumFrom`). */
+  partSizes?: number[];
   /** Set on a DMV-style set (see testSets): it holds exactly practice test
    *  N's questions, and `categories` is empty. */
   test?: number;
@@ -94,6 +98,24 @@ export interface ExamConfig {
   /** Icon key for the catalog, menus and TestIcon. */
   icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator" | "car" | "bus";
   testCount: number;
+  /** Premium as a block of content instead of the last quarter of the
+   *  dashboard (lib/examLocks.ts): practice tests from `test` on and, in
+   *  every split set, parts from `part` on. Used where an exam's bank was
+   *  extended with questions that only Premium opens (RBT, Nov 2026). The
+   *  free steps come first on the dashboard. */
+  premiumFrom?: { test: number; part: number };
+  /** Full-length timed mock exams after the practice tests (store IDs
+   *  idBase + testCount + 1...): the real exam's length and clock, drawn
+   *  from the whole bank in `blueprint` proportions (a spread across each
+   *  pool, so they reuse practice-test questions). A dress rehearsal, not new
+   *  content. They are the dashboard's last tests and count as tests
+   *  everywhere a test ID is read. */
+  mockExams?: { count: number; minutes: number; blueprint: Record<string, number> };
+  /** English paywall bullets saying what Premium adds, in place of the
+   *  generic ones (lib/examPaywallCopy.ts examPremiumBullets). Sell what
+   *  Premium does for the person (a dress rehearsal, readiness), not a
+   *  count of steps. Other languages keep the generic bullets. */
+  premiumBenefits?: string[];
   questionsPerTest: number;
   passPct: number;
   /** Questions per content area in each practice test (sums to questionsPerTest). */
@@ -9074,14 +9096,30 @@ const rbt: ExamConfig = {
   fullName: "Registered Behavior Technician (RBT) exam",
   questionIdPrefix: "RBT-",
   icon: "target",
-  testCount: 4,
+  testCount: 8,
+  // Nov 2026: the bank grew from 200 to 400 with 200 scenario questions
+  // (segments SDAT, SASM, SACQ, SRED, SDOC, SETH), which sort after the
+  // originals, so Tests 1 to 4 and saved progress are unchanged. The
+  // originals are free; Premium is Tests 5 to 8 and part 2 of every set.
+  premiumFrom: { test: 5, part: 2 },
+  // Two full-length mocks (Premium, Tests 9 and 10 by number): 85 questions in
+  // 90 minutes like the real exam, which has 75 scored + 10 unscored pilot
+  // items; every question counts here. The 13/8/19/14/10/11 scored split,
+  // scaled to 85.
+  mockExams: { count: 2, minutes: 90, blueprint: { rbtData: 15, rbtAssess: 9, rbtAcq: 21, rbtReduce: 16, rbtDoc: 11, rbtEthics: 13 } },
+  premiumBenefits: [
+    "2 full-length timed RBT mocks: 85 questions in 90 minutes",
+    "Your readiness in every RBT area, and where to gain points",
+    "200 work-scenario questions and Practice Tests 5 to 8",
+    "Full stats on every question you miss, on every Tigertest exam",
+  ],
   questionsPerTest: 50,
   passPct: 80,
   // BACB RBT Test Content Outline (3rd ed.), in effect for exams from January 1, 2026 (document
   // updated 09/2024, checked October 2026): 75 scored + 10 unscored pilot questions in 90 minutes,
   // scored counts A Data Collection and Graphing 13, B Behavior Assessment 8, C Behavior
   // Acquisition 19, D Behavior Reduction 14, E Documentation and Reporting 10, F Ethics 11,
-  // scaled here to 50 per test (9/5/13/9/7/7). The BACB reports pass/fail against a modified-Angoff passing score and
+  // scaled here to 50 per test (9/5/13/9/7/7), pools 72/40/104/72/56/56 for eight tests. The BACB reports pass/fail against a modified-Angoff passing score and
   // publishes no percentage; 80% is a readiness marker. All items original.
   blueprint: {
     rbtData: 9,
@@ -9092,10 +9130,10 @@ const rbt: ExamConfig = {
     rbtEthics: 7,
   },
   trainingSets: [
-    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 56, weightLabel: "14 of 50 test questions" },
-    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 52, weightLabel: "13 of 50 test questions" },
-    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 36, weightLabel: "9 of 50 test questions" },
-    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 112, partSizes: [56, 56], partNames: ["Data Collection & Assessment", "Data & Assessment Scenarios"], weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 104, partSizes: [52, 52], partNames: ["Behavior Acquisition", "Acquisition Scenarios"], weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 72, partSizes: [36, 36], partNames: ["Behavior Reduction", "Reduction Scenarios"], weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 112, partSizes: [56, 56], partNames: ["Documentation, Reporting & Ethics", "Reporting & Ethics Scenarios"], weightLabel: "14 of 50 test questions" },
   ],
   categoryLabels: {
     rbtData: "Data Collection & Graphing",
@@ -9108,16 +9146,16 @@ const rbt: ExamConfig = {
   copy: {
     guestPrompt: "to save your RBT progress and track every question you miss",
     trainingHeading: "Train by RBT domain",
-    trainingSub: "Four sets covering all six domains of the RBT Test Content Outline (3rd ed.). Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Mock exams · 50 questions weighted like the real 75 scored",
+    trainingSub: "Four sets covering all six domains of the RBT Test Content Outline (3rd ed.), each with a scenario part. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real 75 scored, then full-length timed mocks",
     heroSubs: [
-      "Four sets, four mock exams. Start with Data Collection & Assessment.",
+      "Four sets, eight practice tests and two timed mocks. Start with Data Collection & Assessment.",
       "Master each set, then take a mock exam.",
       "Keep going. Take a mock exam to see where you stand.",
       "Review your mistakes, then retake any mock exam you haven't passed.",
       "All done. Book your RBT exam.",
     ],
-    sourceLine: "Based on the BACB RBT Test Content Outline (3rd ed.) and the RBT Ethics Code (2.0). Original questions; 50 per test, weighted like the real exam.",
+    sourceLine: "Based on the BACB RBT Test Content Outline (3rd ed.) and the RBT Ethics Code (2.0). Original questions, 200 of them work scenarios; 50 per test, weighted like the real exam.",
     analyticsKey: "rbt",
   },
 };
@@ -20323,8 +20361,21 @@ export const examSetId = (exam: ExamConfig, setNumber: number) => examSetBase(ex
 /** Landing page URL (the SEO page the switcher, hub and footer link to). */
 export const examLandingPath = (exam: ExamConfig) => exam.landingPath ?? exam.slug;
 
+/** Practice tests plus any full-length mocks. */
+export const examTestTotal = (exam: ExamConfig) => exam.testCount + (exam.mockExams?.count ?? 0);
+
 export const examTestIds = (exam: ExamConfig) =>
-  Array.from({ length: exam.testCount }, (_, i) => exam.idBase + 1 + i);
+  Array.from({ length: examTestTotal(exam) }, (_, i) => exam.idBase + 1 + i);
+
+/** Is test N (1-based, config order) a full-length mock? */
+export const isMockTest = (exam: ExamConfig, testNumber: number) =>
+  !!exam.mockExams && testNumber > exam.testCount && testNumber <= examTestTotal(exam);
+
+/** Questions in test N: a mock's own length, else questionsPerTest. */
+export const examTestLength = (exam: ExamConfig, testNumber: number) =>
+  isMockTest(exam, testNumber)
+    ? Object.values(exam.mockExams!.blueprint).reduce((a, b) => a + b, 0)
+    : exam.questionsPerTest;
 
 export function getExamById(id: string): ExamConfig | undefined {
   return ALL_EXAMS.find((e) => e.id === id);
@@ -20337,7 +20388,7 @@ export function getExamByStateCode(code: string | null | undefined): ExamConfig 
 
 /** Exam owning a practice-test store ID, if any. */
 export function getExamForTestId(testId: number): ExamConfig | undefined {
-  return ALL_EXAMS.find((e) => testId > e.idBase && testId <= e.idBase + e.testCount);
+  return ALL_EXAMS.find((e) => testId > e.idBase && testId <= e.idBase + examTestTotal(e));
 }
 
 /** Exam owning a training-set store ID, if any. */

@@ -38,6 +38,13 @@ shared one (and check the other exams) or add a field to `ExamConfig`. The share
   about 35 characters or fewer ("Safety & Compliance", "Special Collections & Processing"). Every
   category belongs to exactly one set. A single topic over 60 questions splits into parts and needs
   hand-written `partNames`. Do not use `testSets()`.
+  Training asks a set's fresh questions in a mixed order (`examTrainingAskOrder()` in
+  `lib/examTestGenerator.ts`, from `lib/trainingOrder.ts`), never in ID order, so nothing to wire for
+  it. The set and part contents themselves stay in ID order: parts are contiguous ID runs cut by
+  `scripts/build-training-parts.ts`, so keep a split set's categories in contiguous ID blocks and
+  never sort `getExamTrainingSetQuestions()` any other way. Code that needs the order a student
+  meets questions in (a server tool picking the next question, a test that asserts the first one)
+  goes through `examTrainingAskOrder()`.
   The five heroSubs are the line under the dashboard hero title, by progress: 0 nothing done, 1 under
   40%, 2 from 40 to 70%, 3 from 70% up, 4 all done. Write them for someone who has never seen the
   outline: name only what is on the dashboard (line 0: "Four training sets, four practice tests. Start

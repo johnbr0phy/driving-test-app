@@ -1,14 +1,14 @@
 require('tsx/cjs');
 const {test}=require('node:test');const assert=require('node:assert/strict');
 const {startedCatalogExams,catalogProgress,nextCatalogPractice,answerCatalogPractice}=require('../lib/server/mcpCatalogPractice.ts');
-const {getExamById}=require('../lib/exams.ts');const {getExamTrainingSetQuestions}=require('../lib/examTestGenerator.ts');
+const {getExamById}=require('../lib/exams.ts');const {getExamTrainingSetQuestions,examTrainingAskOrder}=require('../lib/examTestGenerator.ts');
 function database(data){const writes=[];const ref={id:'alice'};return {data,writes,collection(name){assert.equal(name,'users');return{doc(uid){assert.equal(uid,'alice');return ref}}},async runTransaction(fn){return fn({get:async()=>({exists:true,data:()=>data}),update(_,patch){writes.push(patch);for(const [path,value]of Object.entries(patch)){const keys=path.split('.');let o=data;for(const key of keys.slice(0,-1))o=o[key]??=( {} );const key=keys.at(-1);if(value?.constructor?.name==='DeleteTransform')delete o[key];else o[key]=value;}}})}}}
 test('catalog discovery follows saved progress and retains exact jurisdiction',()=>{
  const ids=startedCatalogExams({startedExams:['sat','realestate'],examStates:{realestate:'CA'},currentTests:{201:{}},trainingSets:{601:{masteredIds:[],wrongQueue:[]}}}).map(e=>e.id);
  assert.ok(ids.includes('realestate-ca'));assert.ok(!ids.includes('realestate'));assert.ok(!ids.includes('sat'));assert.ok(ids.includes('htl'));
 });
 test('catalog practice resumes web mastery, hides answers, rejects replay and preserves other fields',async()=>{
- const exam=getExamById('cna'),qs=getExamTrainingSetQuestions(exam,1);const first=qs[0],second=qs[1];const id=exam.trainingSets[0].id;
+ const exam=getExamById('cna'),qs=examTrainingAskOrder(getExamTrainingSetQuestions(exam,1));const first=qs[0],second=qs[1];const id=exam.trainingSets[0].id;
  const db=database({trainingSets:{[id]:{masteredIds:[first.questionId],wrongQueue:[]},9999:{masteredIds:['other'],wrongQueue:[]}},currentTests:{[exam.idBase+1]:{answers:{0:'A'}}},v2:{sentinel:true},quizProgress:{sentinel:true}});
  const r=await nextCatalogPractice('alice','cna',db,1);assert.equal(r.ok,true);assert.equal(r.data.question.questionId,second.questionId);assert.equal(r.data.question.correctAnswer,undefined);assert.equal(r.data.question.explanation,undefined);
  const same=await nextCatalogPractice('alice','cna',db,1);assert.equal(same.data.attemptId,r.data.attemptId);

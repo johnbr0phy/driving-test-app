@@ -19,8 +19,12 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 const TEACHER_LED = new Set([
   // US: FCS teacher preparation and FCS programs (AAFCS HNFS)
   "aafcs",
+  // US: massage therapy schools (FSMTB MBLEx)
+  "mblex",
   // US: automotive technology programs (ASE A1-A8)
   "ase",
+  // US: emergency nursing CEN review courses
+  "cen",
   // Spain: academias de oposiciones and accredited security training centres
   "espolicia", "esguardia", "esvigilante",
   // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen
@@ -52,12 +56,12 @@ const TEACHER_LED = new Set([
   "aufirstaid",
   "gulfrn",
   // High school, military and college classes
-  "ged", "hiset", "sat", "act", "asvab", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
+  "ged", "hiset", "tabe", "cbest", "sat", "act", "asvab", "afoqt", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
   "gcsehigher", "gcsescience", "gcsecs", "fsmaths",
   "eqao9", "staareng1",
   "naplan7", "vicsel", "hscmaths",
   // Primary school classes
-  "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth", "staarbio",
+  "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth", "staarbio","shsat","hspt", "cogat", "ssat", "isee",
   // Texas high school end-of-course classes
   "staaralg1",
   // Trade schools, pre-licensing courses and instructor-led certifications
@@ -70,7 +74,7 @@ const TEACHER_LED = new Set([
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "lsat", "ieltsread", "toeflread", "mcat", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)
@@ -82,14 +86,16 @@ const TEACHER_LED = new Set([
   // Next-100 batch 5 (November 2026)
   "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng", "apgov", "ngpolice", "trcnpqe",
   // Next-20 batch B (November 2026)
-  "cma", "nbdhe", "nptepta", "aatl2", "accafa",
+  "cma", "rma", "nbdhe", "nptepta", "aatl2", "accafa",
   // Next-20 batch C (November 2026)
   "aswbclin", "phr", "ccs", "rdexam", "cemap",
+  // Next-20 batch (November 2026)
+  "ccrn",
   // International batch 1 (November 2026)
   "nzlcq", "aesira", "kenck",
   "pknle", "pkpnmc", "zapsira", "punjabpolice",
   // International batch 4 (November 2026)
-  "iesafepass", "iepsa", "nzsfe", "sgvl",
+  "iesafepass", "iepsa", "nzsfe", "nzensf", "nziqn", "sgvl",
   // International batch 2 (November 2026): the PRC board exams and the criminology board exam
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
 ]);

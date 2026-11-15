@@ -1,0 +1,47 @@
+# Domain 4: professional practice (ADE and error reporting, public health and
+# risk-prevention programs, social determinants of health, ethics). 5 per
+# test, 3 drill-only.
+ITEMS = [
+    # ---- Test 1 ----
+    ("S", 1, 1, "Adverse event reporting", "Where should a pharmacist report a serious adverse reaction to a prescription drug?",
+     ["FDA MedWatch", "VAERS", "The state board of pharmacy", "The DEA"],
+     "MedWatch is the FDA's program for reporting serious adverse events and product problems with drugs and devices. VAERS is for vaccines."),
+    ("S", 1, 2, "Tobacco cessation", "When should a patient start varenicline in relation to the quit date?",
+     ["About 1 week before it", "On the quit date itself", "One month after it", "Only after relapsing"],
+     "Varenicline is usually started a week before the target quit date so the dose is titrated and at effect when smoking stops. Flexible quit approaches are also in the labeling."),
+    ("S", 1, 2, "Antimicrobial stewardship", "Which pharmacist action best fits antimicrobial stewardship?",
+     ["Switching IV to oral when appropriate", "Adding coverage for every pathogen", "Extending every course by an extra 7 days", "Using broad agents for viral illness"],
+     "Stewardship aims for the right drug, dose, route and duration: IV-to-oral conversion, de-escalation on culture results and shorter evidence-based courses."),
+    ("S", 1, 1, "Social determinants of health", "Which of these is a social determinant of health?",
+     ["Access to transportation", "A family history of diabetes", "The patient's blood type", "A drug's half-life"],
+     "Social determinants are the conditions where people live, work and age, such as transportation, housing, income and food access. Genetics and blood type are biological factors."),
+    ("S", 1, 2, "Ethics", "An adult patient's daughter calls and asks what her mother's new prescription is for. The patient has not given permission. What should the pharmacist do?",
+     ["Not share it without the patient's OK", "Share it because she is family", "Share it if she knows the birthdate", "Share it but write a note in the profile"],
+     "Patient health information is confidential, and HIPAA lets the pharmacist share it with family only when the patient agrees, does not object or, in limited cases, when it is in the patient's best interest."),
+    # ---- Test 2 ----
+    ("S", 2, 1, "Adverse event reporting", "Where is an adverse event after a vaccine reported?",
+     ["VAERS", "MedWatch", "The local health department", "The vaccine's wholesaler"],
+     "The Vaccine Adverse Event Reporting System, run by the CDC and FDA, collects reports of adverse events after vaccination."),
+    ("S", 2, 2, "Opioid stewardship", "Which patient should be offered naloxone under the 2022 CDC opioid guideline?",
+     ["One on oxycodone and a benzodiazepine", "One on a 3-day course of ibuprofen 400 mg", "One on low-dose aspirin daily", "One on a statin for cholesterol"],
+     "The guideline advises offering naloxone when overdose risk is raised, such as with higher opioid doses or a benzodiazepine taken at the same time."),
+    ("S", 2, 2, "Tobacco cessation", "Which nicotine patch strength is the usual starting dose for someone who smokes more than 10 cigarettes a day?",
+     ["21 mg per day", "7 mg per day", "14 mg per day", "42 mg per day"],
+     "Patch labeling starts heavier smokers, more than 10 cigarettes a day, at 21 mg, stepping down to 14 mg and 7 mg. Lighter smokers start at 14 mg."),
+    ("S", 2, 1, "Ethics", "Which ethical principle concerns the fair distribution of scarce resources?",
+     ["Justice", "Beneficence", "Autonomy", "Nonmaleficence"],
+     "Justice is about fairness in who receives care and resources. Beneficence is doing good, nonmaleficence avoiding harm and autonomy respecting the patient's choices."),
+    ("S", 2, 2, "Error reporting", "A wrong-strength prescription is caught at final check before it reaches the patient. What should happen?",
+     ["Report it as a near miss", "Fix it and tell no one", "Report it only if it recurs", "Blame the technician involved"],
+     "Near misses show weak points in the system before anyone is harmed, so they are documented and reported in a just-culture system, internally and, where appropriate, to external programs."),
+    # ---- Drill only ----
+    ("S", 0, 1, "Antimicrobial stewardship", "A patient with a cold asks for an antibiotic. What counseling best supports stewardship?",
+     ["Antibiotics do not treat viral colds", "Take any leftover antibiotic you have", "Ask for a stronger antibiotic", "Stop antibiotics once you feel better"],
+     "Colds are viral, so antibiotics add side effects and resistance without benefit. Symptom relief and when to seek care are the useful advice."),
+    ("S", 0, 2, "Ethics", "A pharmacist has a moral objection to dispensing a lawful prescription. What is the professional duty?",
+     ["Make sure the patient can still get it", "Refuse and keep the prescription", "Lecture the patient about that decision first", "Contact the patient's employer"],
+     "Professional ethics let a pharmacist step away from a service but not obstruct the patient. Arrangements for timely access, such as another pharmacist, are made in advance, within state law."),
+    ("S", 0, 1, "Social determinants of health", "A patient says she skips doses to make her inhaler last because of cost. What is the best first step?",
+     ["Look for a lower-cost option", "Tell her to cut doses in half", "Report her to the prescriber", "Advise her to stop the inhaler"],
+     "Cost is a common cause of nonadherence. A covered or cheaper equivalent, an assistance program or a 90-day supply can solve it without compromising therapy."),
+]

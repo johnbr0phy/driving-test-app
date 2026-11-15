@@ -76,6 +76,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
   },
+  tabe: {
+    answer:
+      "TABE (Tests of Adult Basic Education) is a placement and progress test published by Data Recognition Corporation (DRC) and used by adult education, workforce and correctional programs. TABE 13&14, the current forms, has three subtests: Reading, Mathematics and Language, each at Levels E, M, D and A, with a short Locator test that decides which level to take. At Level D, Reading is 39 questions in two 50-minute parts, Mathematics 40 questions in parts of 45 and 15 minutes, and Language 33 questions in 50 minutes. There is no pass mark: DRC reports scale scores, and each program sets the score it needs.",
+    rows: [
+      { label: "Subtests", value: "Reading, Mathematics, Language (any can be given alone)" },
+      { label: "Levels", value: "E, M, D and A, chosen per subject by the Locator test" },
+      { label: "Level D questions", value: "Reading 39, Mathematics 40, Language 33" },
+      { label: "Level D time", value: "Reading 50 + 50 min, Math 45 + 15 min, Language 50 min" },
+      { label: "Question types", value: "Multiple choice; evidence-based items in Reading; gridded response in Math" },
+      { label: "Passing", value: "No pass mark from DRC; programs set their own cut scores" },
+      { label: "Delivery", value: "Online (DRC INSIGHT) or on paper, through an adult education program" },
+      { label: "Published by", value: "Data Recognition Corporation (DRC)" },
+    ],
+    basedOn: "DRC's TABE 13&14 Level D blueprints and TABE 13&14 Maximum Allowable Testing Times",
+    source: { name: "TABE 13&14 blueprints (DRC)", url: "https://tabetest.com/resources-2/testing-information/blue-prints-1314/" },
+    tigertest:
+      "Tigertest has two TABE practice tests at Level D covering Reading, Mathematics and Language at the real pace, each scored as a percent correct per subject, plus seven drills (three open with the basics). All of it is free with no account required. Levels E, M and A and DRC's scale scores are not modeled.",
+  },
   hiset: {
     answer:
       "The HiSET is a high school equivalency test owned and run by PSI. It has five subtests, each taken and scored on its own: Language Arts - Reading (50 multiple-choice questions in 65 minutes), Language Arts - Writing (60 multiple-choice questions and one essay in 120 minutes), Mathematics (55 questions in 90 minutes), Science (60 questions in 80 minutes) and Social Studies (60 questions in 70 minutes). Each subtest is scored 1 to 20. To pass, you need at least 8 on every subtest, at least 2 out of 6 on the essay and a total of at least 45 across all five. It can be taken on a computer or on paper, at a test center or at home with a remote proctor, and the fee includes two free retests within 12 months.",
@@ -2150,6 +2168,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the FAA Private Pilot for Airplane Category ACS (FAA-S-ACS-6C) and the FAA ACS knowledge test table",
     source: { name: "FAA", url: "https://www.faa.gov/training_testing/testing/acs" },
   },
+  shsat: {
+    answer:
+      "The SHSAT (Specialized High Schools Admissions Test) is the NYC Public Schools test that decides admission to eight of New York City's nine Specialized High Schools, including Stuyvesant, Bronx Science and Brooklyn Tech (LaGuardia uses an audition). NYC residents in 8th grade, or in 9th grade for the first time, can take it in the fall before the school year they want to enter. From fall 2026 it is a computer-adaptive test on DOE computers: 50 English Language Arts questions (Revising/Editing and Reading Comprehension) and 50 Math questions in 180 minutes, with the student choosing which subject to start with and how to split the time. Each subject includes 10 unscored field-test items. There is no calculator and no formula sheet. Scaled scores in the two subjects are added into a composite that ranks students for offers; there is no pass mark.",
+    rows: [
+      { label: "Who takes it", value: "NYC residents in grade 8, or in grade 9 for the first time" },
+      { label: "Questions", value: "50 ELA and 50 Math, including 10 unscored field-test items in each" },
+      { label: "Time", value: "180 minutes in all, split between the subjects as the student chooses" },
+      { label: "Format", value: "Computer adaptive from fall 2026; multiple choice, fill-in-the-blank and technology-enhanced items" },
+      { label: "ELA", value: "Revising/Editing Parts A and B, Reading Comprehension" },
+      { label: "Math", value: "NYS standards through Grade 7 on Grade 8 forms; no calculator, no formulas given" },
+      { label: "Score", value: "Two scaled subtest scores added into a composite used to rank students" },
+      { label: "Pass mark", value: "None: the composite ranks students for offers" },
+    ],
+    basedOn: "NYC Public Schools' NYC Guide to the SHSAT for 2027 Admissions and its SHSAT test page",
+    source: { name: "NYC Public Schools: Specialized High Schools Admissions Test", url: "https://www.schools.nyc.gov/learning/testing/specialized-high-school-admissions-test/" },
+    tigertest:
+      "Tigertest has two full SHSAT practice tests of 50 ELA and 50 Math questions in 3 hours, with Revising/Editing Parts A and B, informational and literary reading passages and math without a calculator, scored as percent correct, plus eight drills, two of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no scaled score.",
+  },
   mapgrowth: {
     answer:
       "MAP Growth is NWEA's computer adaptive test that many US schools give in the fall, winter and spring (and sometimes summer) to measure what a student knows and how much they grow. Students in grades 2 to 5 take Math 2-5, Reading 2-5 and Language Usage 2+. Each test is untimed, usually takes about 45 to 60 minutes, and has at most 43 questions, a few of them unscored field-test items. Questions get harder or easier as the student answers, and the result is a RIT score, compared with national norms updated in 2025. Math covers Operations and Algebraic Thinking, Number and Operations, Measurement and Data, and Geometry; Reading covers Literary Text, Informational Text and Vocabulary; Language Usage covers writing, grammar and usage, and mechanics.",
@@ -2167,6 +2203,76 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "NWEA: MAP Growth Technical Report 2025", url: "https://www.nwea.org/uploads/MAP-Growth-Technical-Report-2025.pdf" },
     tigertest:
       "Tigertest has two full practice tests in Math, Reading and Language Usage at NWEA's own blueprint, untimed like the real test, with a percent score per subject, and ten drills, one per instructional area, most of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no RIT score.",
+  },
+  isee: {
+    answer:
+      "The ISEE (Independent School Entrance Exam) is the admission test many US and international independent schools use, run by E3n, the nonprofit formed by the merger of ERB and EMA. The Middle Level is for students applying to grades 7 and 8. It has four scored multiple-choice sections, Verbal Reasoning (40 questions, 20 minutes: synonyms and sentence completions), Quantitative Reasoning (37 questions, 35 minutes: word problems and quantitative comparisons), Reading Comprehension (36 questions, 35 minutes: six passages) and Mathematics Achievement (47 questions, 40 minutes), plus a 30-minute essay that is not scored but is sent to the schools. The whole test takes 2 hours 40 minutes with two 10-minute breaks, online or on paper. No calculator is allowed, wrong answers are not deducted, and scores are reported as scaled scores, percentile ranks and stanines compared only with students applying to the same grade.",
+    rows: [
+      { label: "Who takes it", value: "Students applying to grades 7 and 8 (Lower Level for grades 5 and 6, Upper Level for grades 9 to 12)" },
+      { label: "Sections", value: "Verbal Reasoning, Quantitative Reasoning, Reading Comprehension, Mathematics Achievement, plus an unscored essay" },
+      { label: "Questions", value: "160 multiple-choice questions (40, 37, 36 and 47) and 1 essay prompt" },
+      { label: "Time", value: "2 hours 40 minutes plus two 10-minute breaks" },
+      { label: "Format", value: "Online or on paper where available, with the same number of questions and timing; no calculator" },
+      { label: "Score", value: "Scaled scores, percentile ranks and stanines against same-grade applicants; no penalty for wrong answers" },
+      { label: "How often", value: "Once per testing season: fall, winter and spring/summer" },
+      { label: "Pass mark", value: "None: each school decides how to use the scores" },
+    ],
+    basedOn: "E3n's ISEE Quick Facts Guide 2026-2027 and ERB's What to Expect on the ISEE, Middle Level",
+    source: { name: "E3n: ISEE Quick Facts Guide 2026-2027", url: "https://cdn.erblearn.org/www/20260801_E3n_ISEE_QuickFacts_DIGITAL.pdf" },
+    tigertest:
+      "Tigertest has two timed ISEE Middle Level practice tests covering all four scored sections at about half length and the real pace, with a percent score per section, and eight drills on synonyms, sentence completion, word problems, quantitative comparisons, reading and math, two of which teach the basics first. All of it is free with no account required. It does not include the essay and does not give a stanine.",
+  },
+  ssat: {
+    answer:
+      "The SSAT (Secondary School Admission Test) is the admission test many US and international independent schools ask for, run by E3n (admission.org). The Middle Level is for students in grades 5 to 7 applying for grades 6 to 8; the Upper Level, with the same format, is for grades 8 to 11. The Middle Level has an unscored 25-minute writing sample, then five multiple-choice sections: Quantitative (25 questions, 30 minutes), Reading (40 questions, 40 minutes), Verbal (60 questions: 30 synonyms and 30 analogies, 30 minutes), a second Quantitative section (25 questions, 30 minutes) and an unscored 15-minute experimental section, with two 10-minute breaks, 3 hours 10 minutes in all. Each question has five answer choices, calculators are not allowed, and a right answer earns 1 point, a wrong answer loses a quarter point and a blank earns nothing.",
+    rows: [
+      { label: "Who takes it", value: "Middle Level: students in grades 5 to 7 applying for grades 6 to 8" },
+      { label: "Scored sections", value: "Quantitative (2 x 25), Reading (40), Verbal (30 synonyms, 30 analogies)" },
+      { label: "Unscored parts", value: "25-minute writing sample and a 15-minute experimental section" },
+      { label: "Time", value: "3 hours 10 minutes, with two 10-minute breaks" },
+      { label: "Answer choices", value: "Five per question; no calculator" },
+      { label: "Scoring", value: "1 point right, minus 1/4 point wrong, 0 for a blank; scaled scores and percentiles" },
+      { label: "Pass mark", value: "None: each school reads the scores in its own way" },
+    ],
+    basedOn: "E3n's \"What's on the Middle Level SSAT?\" and Score Reports pages and the SSAT Candidate Handbook for testing year 2026-2027",
+    source: { name: "E3n: What's on the Middle Level SSAT?", url: "https://www.admission.org/help/whats-on-the-middle-level-ssat" },
+    tigertest:
+      "Tigertest has two timed Middle Level practice tests with the four scored sections in the real order, each about half the real length at the real pace, five choices per question, and seven drills, three of which teach the basics first. All of it is free with no account required. Scores are percent correct, not SSAT scaled scores, and the writing sample and experimental section are not included.",
+  },
+  cogat: {
+    answer:
+      "CogAT, the Cognitive Abilities Test from Riverside Insights, is a reasoning test that many US schools use to screen students for gifted and talented programs and to plan instruction. It measures how well a student reasons with words, numbers and shapes, not how much of the curriculum they have learned. It has three batteries: Verbal (Verbal Analogies, Sentence Completion, Verbal Classification), Quantitative (Number Analogies, Number Puzzles, Number Series) and Nonverbal (Figure Matrices, Paper Folding, Figure Classification). There is a separate test level for each grade from K to 6; from Level 9 (grade 3) the Verbal and Quantitative questions are written in words and numbers, and each of the nine tests takes about 10 minutes. Scores compare a student with others of the same age.",
+    rows: [
+      { label: "Who takes it", value: "Students in grades K to 12; Levels 9 to 12 are for grades 3 to 6" },
+      { label: "Batteries", value: "Verbal, Quantitative and Nonverbal, three tests each" },
+      { label: "Time", value: "About 10 minutes per test at Level 9 and up, nine tests in all" },
+      { label: "Forms", value: "Forms 7 and 8, two equivalent forms; Screening Forms of the three analogies tests take about 30 minutes" },
+      { label: "Delivery", value: "Paper or online, set by the school" },
+      { label: "Score", value: "Standard Age Score and age percentile rank from national age norms, age stanines and an Ability Profile" },
+      { label: "Pass mark", value: "None: schools set their own cut scores for gifted programs" },
+    ],
+    basedOn: "Riverside Insights' CogAT Overview Brochure (Forms 7 and 8 testing times and descriptions) and Overview of CogAT for Parents",
+    source: { name: "Riverside Insights: CogAT Overview Brochure", url: "https://riversideinsights.com/hubfs/CogAT/CogAT%20Overview%20Brochure.pdf" },
+    tigertest:
+      "Tigertest has two timed practice tests of the Verbal and Quantitative Batteries at Levels 9 to 12, 36 questions a battery with 12 for each CogAT test, and six drills, one per test. The Nonverbal Battery is picture puzzles and is not included. All of it is free with no account required. Scores are percent correct, never age scores or percentiles.",
+  },
+  hspt: {
+    answer:
+      "The HSPT (High School Placement Test) is Scholastic Testing Service's test for eighth graders entering high school, used by high schools, often through a Catholic diocese's education department, for admissions, scholarships and placement into ninth grade. It has five multiple-choice subtests: Verbal Skills (60 questions: synonyms, antonyms, analogies, verbal classification and logic), Quantitative Skills (52: number series, number manipulation and comparisons), Reading (62: comprehension and vocabulary), Mathematics (64) and Language (60: punctuation, capitalization, usage, spelling and composition), 298 questions in a working time of 2 hours 30 minutes. Calculators are not allowed and there is no penalty for guessing. Scores are standard scores and national and local percentiles, and each school sets its own cut-offs. A school may give one optional test, science or Catholic religion, which does not count in the composite.",
+    rows: [
+      { label: "Who takes it", value: "Eighth graders entering high school (the Pre-HSPT is a grade 7 edition)" },
+      { label: "Subtests", value: "Verbal Skills, Quantitative Skills, Reading, Mathematics, Language" },
+      { label: "Questions", value: "298: 60 verbal, 52 quantitative, 62 reading, 64 math, 60 language" },
+      { label: "Time", value: "2 hours 30 minutes of working time" },
+      { label: "Format", value: "Paper test booklets and answer sheets, multiple choice; no calculators" },
+      { label: "Score", value: "Standard scores (200 to 800), national and local percentiles, cognitive skills quotient" },
+      { label: "Pass mark", value: "None: each high school sets its own cut-offs" },
+      { label: "Optional tests", value: "Science or Catholic religion, not counted in the composite" },
+    ],
+    basedOn: "Scholastic Testing Service's HSPT Interpretive Manual, HSPT overview and parent pages, and 2026-27 catalog",
+    source: { name: "Scholastic Testing Service: High School Placement Test", url: "https://www.ststesting.com/hsp/index.html" },
+    tigertest:
+      "Tigertest has two timed practice tests, each about a third of the real HSPT in the same mix of question types, with a percent score per subtest, and ten drills from synonyms and number series to usage and composition. All of it is free with no account required. It is a practice test, so it gives no STS standard score or percentile.",
   },
   staaralg1: {
     answer:
@@ -2235,6 +2341,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ETS Praxis Study Companions for Core Reading (5713), Writing (5723) and Mathematics (5733)",
     source: { name: "ETS Praxis", url: "https://praxis.ets.org/scores" },
   },
+  cbest: {
+    answer:
+      "The CBEST (California Basic Educational Skills Test) is one way to meet California's basic skills requirement for teaching and substitute credentials. It is owned by the California Commission on Teacher Credentialing and given by Pearson as three separately registered sections, all in English. Reading is 50 multiple-choice questions in 1 hour 30 minutes, about 40 percent critical analysis and evaluation and 60 percent comprehension and research skills. Mathematics is 50 multiple-choice questions in 2 hours with no calculator: estimation, measurement and statistics about 30 percent, computation and problem solving about 35 percent, and numerical and graphic relationships about 35 percent. Writing is two essays in 1 hour 30 minutes. Each section is scored 20 to 80; you pass with 41 on each section, or with a total of 123 if no section is below 37.",
+    rows: [
+      { label: "Reading", value: "50 multiple-choice questions, 1 hour 30 minutes" },
+      { label: "Mathematics", value: "50 multiple-choice questions, 2 hours, no calculator" },
+      { label: "Writing", value: "2 essays, 1 hour 30 minutes" },
+      { label: "Scores", value: "20 to 80 per section" },
+      { label: "Passing", value: "41 per section, or a 123 total with no section below 37" },
+      { label: "Given by", value: "Pearson for the CTC, at test centers or online proctored" },
+    ],
+    basedOn: "the CBEST Test Specifications for Reading and Mathematics (California Commission on Teacher Credentialing)",
+    source: { name: "CTC Exams: CBEST", url: "https://www.ctcexams.nesinc.com/TestView.aspx?f=HTML_FRAG/CA_CBEST_TestPage.html" },
+  },
   gre: {
     answer:
       "The GRE General Test takes about 1 hour 58 minutes since its September 2023 update. It has one Analytical Writing task (30 minutes), two Verbal Reasoning sections (12 questions in 18 minutes and 15 in 23 minutes) and two Quantitative Reasoning sections (12 questions in 21 minutes and 15 in 26 minutes). Verbal and Quant are section-level adaptive and each scored 130 to 170; Analytical Writing is scored 0 to 6. There is no pass mark: graduate programs set their own expectations.",
@@ -2250,6 +2370,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "ETS", url: "https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html" },
     tigertest:
       "Tigertest has two full adaptive GRE practice tests with Verbal and Quant score estimates and seven drills, free to start with no account required. The essay is not included.",
+  },
+  naplex: {
+    answer:
+      "The NAPLEX is NABP's North American Pharmacist Licensure Examination, which every US board of pharmacy uses to assess a new pharmacist's competence. It is a 6-hour computerized fixed-form exam of 225 questions, 200 scored and 25 unscored pretest questions, mostly scenario-based with a patient profile. Questions are answered in order: none can be skipped and an answer cannot be changed after moving on. Formats are multiple choice, multiple response, constructed response (a typed number), ordered response and hot spot, with an on-screen scientific calculator. The content outline in force since May 1, 2025 weights five domains: Foundational Knowledge 25%, Medication Use Process 25%, Person-Centered Assessment and Treatment Planning 40%, Professional Practice 5% and Pharmacy Management and Leadership 5%. Results are pass or fail; on NABP's 0 to 150 scale a scaled score of 75 passes.",
+    rows: [
+      { label: "Questions", value: "225: 200 scored, 25 unscored pretest" },
+      { label: "Time", value: "6 hours, two optional 10-minute breaks" },
+      { label: "Navigation", value: "In order, no skipping, no going back" },
+      { label: "Formats", value: "Multiple choice, multiple response, numeric, ordered response, hot spot" },
+      { label: "Domains", value: "25% / 25% / 40% / 5% / 5%" },
+      { label: "Result", value: "Pass or fail; scaled 75 of 150 passes" },
+      { label: "Retakes", value: "45-day wait, 3 attempts in 12 months, 5 in all" },
+      { label: "Given by", value: "NABP" },
+    ],
+    basedOn: "NABP's NAPLEX Content Outline effective May 1, 2025 and the NAPLEX/MPJE Candidate Application Bulletin (March 2026)",
+    source: { name: "NABP", url: "https://nabp.pharmacy/wp-content/uploads/NAPLEX-Content-Outline.pdf" },
+    tigertest:
+      "Tigertest has two 100-question NAPLEX practice tests at the real pace, in order with no going back, weighted like the 2025 content outline, with typed calculations, select all that apply and ordered questions, plus eight drills by content area. It is free to start, with no account required.",
   },
   mcat: {
     answer:
@@ -2267,6 +2405,40 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "AAMC", url: "https://students-residents.aamc.org/prepare-mcat-exam/whats-mcat-exam" },
     tigertest:
       "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
+  },
+  afoqt: {
+    answer:
+      "The AFOQT (Air Force Officer Qualifying Test) is the Air Force's aptitude test for officer commissioning programs such as Officer Training School and Air Force ROTC, and for selection into training such as pilot and navigator training. Form T has 12 timed multiple-choice subtests, 516 questions in about five hours with breaks: Verbal Analogies, Arithmetic Reasoning, Word Knowledge, Math Knowledge, Reading Comprehension, Situational Judgment, the ungraded Self-Description Inventory, Physical Science, Table Reading, Instrument Comprehension, Block Counting and Aviation Information. Subtests combine into composites reported as 1 to 99 percentiles, not percent correct. Air Force ROTC, citing DAFMAN 36-2664, gives the minimums as the 15th percentile on Verbal and the 10th on Quantitative; rated programs set higher bars. It is free, taken with a voucher from a recruiter or test control officer, and limited to two attempts (three with a waiver).",
+    rows: [
+      { label: "Questions", value: "516 multiple choice across 12 subtests (Form T)" },
+      { label: "Time", value: "About 5 hours including breaks" },
+      { label: "Scores", value: "1 to 99 percentiles on composites" },
+      { label: "Minimums", value: "Verbal 15 and Quantitative 10 (AFROTC, citing DAFMAN 36-2664)" },
+      { label: "Attempts", value: "Two, or three with an approved waiver" },
+      { label: "Cost", value: "Free, voucher from a recruiter or test control officer" },
+      { label: "Given by", value: "U.S. Air Force, delivered by Pearson VUE" },
+    ],
+    basedOn: "The Air Force's AFOQT page at Pearson VUE and AFROTC Detachment 485's AFOQT page (checked November 2026)",
+    source: { name: "Pearson VUE (U.S. Air Force)", url: "https://www.pearsonvue.com/us/en/afoqt.html" },
+    tigertest:
+      "Tigertest has two AFOQT practice tests with eight subtests at about half length and the real pace, and a drill for each subtest. Start for free, no account required; the last two drills and Practice Test 2 are part of Premium. Situational Judgment, Instrument Comprehension, Block Counting and the Self-Description Inventory are not included, and scores are percent correct, not AFOQT percentiles.",
+  },
+  dat: {
+    answer:
+      "The DAT is the American Dental Association's computer-based Dental Admission Test, with four multiple-choice sections in this order: the Survey of the Natural Sciences (100 questions in 90 minutes: 40 biology, 30 general chemistry and 30 organic chemistry), the Perceptual Ability Test (90 questions in 60 minutes in six picture subtests), an optional 30-minute break, Reading Comprehension (50 questions on three scientific passages in 60 minutes) and Quantitative Reasoning (40 questions in 45 minutes, with an on-screen calculator). Since March 1, 2025 scores are reported from 200 to 600 in 10-point steps; there is no official passing score, each dental program decides what it accepts, and there is no penalty for guessing.",
+    rows: [
+      { label: "Sections", value: "Natural Sciences, Perceptual Ability, Reading, Quantitative" },
+      { label: "Questions", value: "280: 100, 90, 50 and 40" },
+      { label: "Time", value: "4 hr 15 min of testing; 5 hr 15 min with tutorial, break and survey" },
+      { label: "Score", value: "200 to 600 in 10-point steps; no official passing score" },
+      { label: "Calculator", value: "On-screen, Quantitative Reasoning only; periodic table in General Chemistry" },
+      { label: "Retakes", value: "60 days apart, at most four in 12 months" },
+      { label: "Given by", value: "ADA Department of Testing Services, at Prometric test centers" },
+    ],
+    basedOn: "the ADA's DAT 2026 Candidate Guide (updated August 4, 2026) and the Organic Chemistry specifications in force since April 2026",
+    source: { name: "ADA", url: "https://www.ada.org/en/education-careers/dental-admission-test" },
+    tigertest:
+      "Tigertest has two DAT practice tests with the Survey of the Natural Sciences, Reading Comprehension and Quantitative Reasoning at half length and the real pace, and seven drills by topic. The picture-based Perceptual Ability Test is not included. It is free to start, with no account required.",
   },
   wonderlic: {
     answer:
@@ -2834,6 +3006,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Licence ages", value: "A1 from 18, A2 from 20, A from 24 (22 after 2 years of A2)" },
     ],
     basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category A test, and the teaching plan for categories AM, A1, A2 and A (undervisningsplan, version 1.0 2026, in use from 1 July 2026), checked November 2026",
+    source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
+  },
+  dktruck: {
+    answer:
+      "The Danish theory test (teoriprøve) for a lorry licence, category C, is run by Færdselsstyrelsen, the Danish Road Traffic Authority. You may make at most five errors; an unanswered question counts as an error. On the digital test each question shows a picture or video of a traffic situation and you pick the correct answer or answers. Questions are drawn at random from the teaching plan for categories C and D, weighted by Færdselsstyrelsen's published key: about a third on the lorry itself (brakes, steering, lights, mirrors, tachograph), with driving and rest times, weights, widths and loads, and driving a lorry in traffic. Digital theory tests in English are offered for category C at every digital test site, as well as in Danish. You take it after lessons with an approved driving instructor; a category C licence can normally be issued from 21. Category CE has its own theory test with its own key.",
+    rows: [
+      { label: "Run by", value: "Færdselsstyrelsen (Danish Road Traffic Authority)" },
+      { label: "Pass rule", value: "At most 5 errors (guides: 25 questions, so 20 right)" },
+      { label: "Format", value: "Picture or video based, one or more correct answers" },
+      { label: "Languages", value: "Danish and English at every digital site; German in Aabenraa" },
+      { label: "Weighting", value: "Vehicle 32%, traffic 28%, rules 16%, others 4 to 8%" },
+      { label: "Tigertest mock tests", value: "8 x 25 questions, 20 to pass" },
+      { label: "Licence age", value: "Category C normally from 21" },
+    ],
+    basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category C test, and the teaching plans for categories C and D and for CE (version 1.0 2026, FS 16.01.2026), checked November 2026",
     source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
   },
   itcils: {
@@ -3685,6 +3872,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "SBI's Recruitment of Junior Associates (Customer Support & Sales) advertisement CRPD/CR/2026-27/17 (registration 11 to 31 August 2026), section 4, Selection Procedure",
     source: { name: "State Bank of India Careers", url: "https://sbi.bank.in/web/careers/current-openings" },
   },
+  iimcat: {
+    answer:
+      "CAT 2026, the Common Admission Test of the Indian Institutes of Management, is a 120-minute computer-based test held on Sunday, 29 November 2026 in three sessions, convened this year by IIM Indore. It has three sections in a fixed order, Verbal Ability and Reading Comprehension, Data Interpretation and Logical Reasoning, and Quantitative Ability, with exactly 40 minutes for each and no switching between sections. A correct answer earns 3 marks; a wrong multiple-choice answer loses 1 mark, while non-MCQ questions, where you type the answer, carry no penalty. An on-screen calculator is available, CAT has no defined syllabus, and the IIMs do not publish the number of questions. The score is valid until 31 December 2027, and each IIM sets its own cut-offs and selection process.",
+    rows: [
+      { label: "Duration", value: "120 minutes" },
+      { label: "Sections", value: "VARC, DILR and QA, in a fixed order, 40 minutes each" },
+      { label: "Question types", value: "Multiple choice, and non-MCQ items where you type the answer" },
+      { label: "Marking", value: "+3 correct; -1 for a wrong MCQ; 0 for a wrong non-MCQ or a skipped question" },
+      { label: "Calculator", value: "On-screen calculator only" },
+      { label: "Test date", value: "29 November 2026, three sessions, about 170 cities" },
+      { label: "Fee", value: "Rs 2,700; Rs 1,350 for SC, ST and PwBD candidates" },
+      { label: "Score valid", value: "Until 31 December 2027" },
+    ],
+    basedOn: "the CAT 2026 press release of IIM Indore (26 July 2026), the CAT 2026 Information Bulletin and the CAT 2026 FAQs on iimcat.ac.in",
+    source: { name: "CAT 2026 official website", url: "https://iimcat.ac.in" },
+  },
   ibpsrrb: {
     answer:
       "The IBPS RRB Office Assistant (Multipurpose) Preliminary Examination, often called IBPS RRB Clerk, is one online objective paper of 80 questions in 45 minutes, with each test timed separately: Reasoning 40 questions in 25 minutes and Numerical Ability 40 questions in 20 minutes. Each question carries one mark and a quarter of a mark is deducted for every wrong answer. Candidates must clear a minimum cutoff set by IBPS in both tests; Prelims is qualifying for the Main examination, and only Main marks count for the final merit list and provisional allotment to a Regional Rural Bank. Under the CRP RRBs-XV notification of 1 September 2026, the Prelims is scheduled for November or December 2026.",
@@ -4435,6 +4638,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "New Zealand heavy vehicle rules as in force November 2026; NZTA's test page could not be read",
     source: { name: "NZTA Waka Kotahi heavy vehicle licences", url: "https://www.nzta.govt.nz/driver-licences/getting-a-licence/" },
   },
+  nziqn: {
+    answer:
+      "The IQN theoretical examination is the first test of competence the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) asks of internationally qualified nurses who need one before registration; the clinical competence assessment (OSCE) follows. The registered nurse exam is 120 computer-based multiple-choice questions, each with one correct answer, in 165 minutes at a Pearson test centre in New Zealand or overseas: Part A, Medication safety, 12 questions in 30 minutes including medicine calculations with an on-screen calculator, and Part B, Nursing knowledge, 108 questions in 135 minutes linked to the Council's standards of competence. Results come within 24 hours as Pass or Fail for each part; no pass mark is published. You have six months from the invitation and three attempts, and a failed part is re-sat on its own.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice: 12 in Part A, 108 in Part B (registered nurse)" },
+      { label: "Time", value: "165 minutes: 30 for Part A, 135 for Part B, no scheduled breaks" },
+      { label: "Pass mark", value: "Not published; each part is reported Pass or Fail" },
+      { label: "Calculator", value: "Provided in the software for calculation questions" },
+      { label: "Attempts", value: "3, within 6 months of the invitation; re-sit only a failed part" },
+      { label: "Where", value: "Pearson test centres in New Zealand and many other countries" },
+      { label: "Enrolled nurse exam", value: "90 questions in 135 minutes (9 in Part A, 81 in Part B)" },
+    ],
+    basedOn: "the Nursing Council's IQN theoretical examination handbook (version 1.5, October 2026) and the 2025 standards of competence for registered nurses",
+    source: { name: "Nursing Council of New Zealand", url: "https://nursingcouncil.org.nz/IQN/IQN/Competence-assessment-process.aspx" },
+  },
   nzsfe: {
     answer:
       "The State Final Examination is the examination the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) sets for graduates of approved nursing programmes before it registers them as registered or enrolled nurses. A New Zealand graduate applying for registration as a registered nurse supplies their State Final Examination results, support from the head of their school of nursing and two referees, and the Council registers successful applicants as soon as practicable after they pass. The Council's public website does not set out the number of questions, time or pass standard; candidates should ask their school of nursing or the Council for the current exam details.",
@@ -4448,6 +4666,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Nursing Council of New Zealand: Register as a nurse, Registered nurse scope of practice (January 2025) and Standards of competence for registered nurses (2025), checked November 2026",
     source: { name: "Nursing Council of New Zealand: Register as a nurse", url: "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Register_as_a_nurse.aspx" },
+  },
+  nzensf: {
+    answer:
+      "The State Final Examination for enrolled nurses is the examination the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) sets for graduates of the 18-month Diploma in Enrolled Nursing before it registers them in the enrolled nurse scope. The Council's handbook for nursing programmes describes it as 90 multiple-choice questions in 90 minutes, held in March, July and November, with an overall pass of 70% across the whole exam; the Council's FAQ adds that there is no pass mark for each category and that candidates have three attempts. The 2025 sample paper has two parts, Part A Medicine Calculations and Part B Nursing Knowledge, with four options a question, answered as an enrolled nurse would act. Part B is linked to the five pou of the Standards of competence for enrolled nurses (February 2025).",
+    rows: [
+      { label: "Run by", value: "Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa)" },
+      { label: "Who sits it", value: "Diploma in Enrolled Nursing graduates, before registration" },
+      { label: "Questions", value: "90 multiple choice, four options each" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Parts", value: "Part A Medicine Calculations, Part B Nursing Knowledge" },
+      { label: "Pass mark", value: "70% overall, no pass mark for each category" },
+      { label: "Attempts", value: "Three" },
+      { label: "Sittings", value: "March, July and November" },
+      { label: "Standards", value: "Enrolled nurse scope and standards of competence, 2025 (five pou)" },
+    ],
+    basedOn: "Nursing Council of New Zealand: Handbook for pre-registration nursing programmes (May 2022), State Final Examination FAQ (October 2024), EN sample questions 2025, Enrolled nurse scope of practice (January 2025) and Standards of competence for enrolled nurses (February 2025), checked November 2026",
+    source: { name: "Nursing Council of New Zealand: Enrolled nurse", url: "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Enrolled_nurse.aspx" },
   },
   sgrtt: {
     answer:
@@ -5017,6 +5252,38 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The AAMA Content Outline for the CMA (AAMA) Certification Exam (Rev 1/26) and the AAMA certification FAQ, checked November 2026",
     source: { name: "AAMA: CMA (AAMA) Certification", url: "https://www.aama-ntl.org/certification" },
   },
+  cen: {
+    answer:
+      "The Certified Emergency Nurse (CEN) exam is the Board of Certification for Emergency Nursing's (BCEN) exam for registered nurses in emergency care. It has 175 multiple-choice items, 150 scored and 25 unscored pretest items, with 180 minutes of seat time, taken by computer at a PSI test center or at home by live remote proctoring. Under the content outline in effect from July 2026 the 150 scored items cover eleven areas, led by cardiovascular (18), respiratory (17) and neurological (17) emergencies. A pass needs 99 of the 150 scored items right, a raw count with no curve. After a failed attempt you wait 90 days to retest, and the CEN is renewed every four years.",
+    rows: [
+      { label: "Questions", value: "175 multiple choice (150 scored, 25 pretest)" },
+      { label: "Time", value: "180 minutes of seat time" },
+      { label: "Pass mark", value: "99 of 150 scored items (66%)" },
+      { label: "Content", value: "11 areas: cardiovascular 18, respiratory 17, neurological 17, medical 15, GI 14, mental health 13, environment and toxicology 13, professional issues 12, musculoskeletal and wound 11, GU/OB 10, HEENT 10" },
+      { label: "Where", value: "PSI test center or live remote proctoring" },
+      { label: "Retake", value: "Wait 90 days after a failed attempt" },
+      { label: "Renewal", value: "Every four years" },
+      { label: "Run by", value: "Board of Certification for Emergency Nursing (BCEN)" },
+    ],
+    basedOn: "The BCEN CEN Examination Content Outline effective July 2026 and the BCEN CEN exam FAQ, checked November 2026",
+    source: { name: "BCEN: Certified Emergency Nurse (CEN)", url: "https://bcen.org/cen/" },
+  },
+
+  rma: {
+    answer:
+      "The Registered Medical Assistant (RMA) exam is the certification exam of American Medical Technologists (AMT) for medical assistants, which earns the RMA (AMT) credential. AMT's examination specifications list 210 four-option multiple-choice questions: General Medical Assisting 65 (31%), Administrative Medical Assisting 30 (14%) and Clinical Medical Assisting 115 (55%). The exam is taken on a computer in 2 hours, scheduled through Pearson VUE or by a candidate's school, and may include unscored pretest items. Scores are scaled from 0 to 100, and 70 is the minimum passing score; it is not a percentage. A candidate who fails retakes the whole exam and may test up to four times in all.",
+    rows: [
+      { label: "Questions", value: "210 multiple choice, four options, single best answer" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "Scaled score of 70 (scale 0 to 100, not a percentage)" },
+      { label: "Content", value: "Clinical 115 (55%), General 65 (31%), Administrative 30 (14%)" },
+      { label: "Where", value: "Computer based, scheduled through Pearson VUE or your school" },
+      { label: "Retakes", value: "Whole exam, up to four attempts in all, with a retest fee" },
+      { label: "Run by", value: "American Medical Technologists (AMT)" },
+    ],
+    basedOn: "AMT's RMA Certification Examination Competencies and Examination Specifications (2026) and the AMT Candidate Handbook (revised April 2026), checked November 2026",
+    source: { name: "AMT: Registered Medical Assistant exam", url: "https://americanmedtech.org/medical-assistant/rma-exam" },
+  },
   nhie: {
     answer:
       "The National Home Inspector Examination (NHIE) is the home inspector competency exam written by the Examination Board of Professional Home Inspectors (EBPHI) and used for licensing in 35 states and several Canadian provinces. It has 200 multiple-choice questions, 25 of them unscored pretest items, in four hours. Scores are scaled from 200 to 800 and 500 passes. It covers property and building inspection (70%), analysis of findings and reporting (20%) and professional responsibilities (10%), and is delivered by PSI in most states and Pearson VUE in a few.",
@@ -5270,6 +5537,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The CDR Registered Dietitian Examination Test Specifications (2022 to 2026 and 2027 to 2031) and the CDR RD and DTR Exam FAQ (2025), checked November 2026",
     source: { name: "CDR: Registration Examination for Dietitians", url: "https://www.cdrnet.org/rdexamoverview" },
   },
+  ccrn: {
+    answer:
+      "CCRN (Adult) is the acute and critical care nursing certification of AACN Certification Corporation, for RNs and APRNs who care for acutely or critically ill adults. The exam has 150 multiple-choice questions in 3 hours; 125 are scored and 25 are unscored pretest items. It is taken by computer at a PSI testing center or by live remote proctoring. The passing point is a raw number of correct answers set by a modified Angoff study, not a percentage. Under the Adult test plan for exams taken on and after November 12, 2025, 80% is Clinical Judgment (Cardiovascular 13%, Respiratory 12%, Endocrine, Hematology/Immunology, GI, Renal/GU and Integumentary 21%, Musculoskeletal, Neurological and Behavioral/Psychosocial 18%, Multisystem 16%) and 20% is Professional Caring and Ethical Practice. Certification lasts 3 years.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 unscored)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "A raw cut score set by modified Angoff, not a percentage" },
+      { label: "Content", value: "Clinical Judgment 80% (CV 13, respiratory 12, endocrine/heme/GI/renal/skin 21, neuro/MSK/behavioral 18, multisystem 16), Professional Caring and Ethical Practice 20%" },
+      { label: "Eligibility", value: "U.S. RN or APRN license; 1,750 direct care hours in 2 years or 2,000 in 5 years" },
+      { label: "Where", value: "PSI testing centers or live remote proctoring" },
+      { label: "Retakes", value: "Up to 4 attempts in a rolling 12 months" },
+      { label: "Run by", value: "AACN Certification Corporation" },
+    ],
+    basedOn: "The AACN CCRN Exam Handbook (Direct Care pathway, July 2026) with the Adult test plan for exams on and after November 12, 2025, and the AACN Certification Exam Policy Handbook (September 2026), checked November 2026",
+    source: { name: "AACN: CCRN (Adult) certification", url: "https://www.aacn.org/certification/get-certified/ccrn-adult" },
+  },
   praxis5001: {
     answer:
       "Praxis Elementary Education: Multiple Subjects (test code 5001) is an ETS content knowledge test that many states require for a generalist elementary teaching license. It has 245 questions in 4 hours 35 minutes, split into four separately timed subtests: Reading and Language Arts (5002) 80 questions in 90 minutes, Mathematics (5003) 50 in 65 minutes, Social Studies (5004) 60 in 60 minutes and Science (5005) 55 in 60 minutes. Questions are selected response and numeric entry, with an on-screen scientific calculator for math and science. ETS does not set a passing score: each state sets a qualifying score for each subtest. ETS plans to replace 5001 with the Elementary Education Fundamentals tests, with 5001 targeted to retire in August 2028.",
@@ -5314,6 +5597,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "AAFCS HNFS exam specifications and the Pearson Texas test 201 page, checked November 2026",
     source: { name: "AAFCS: Testing - HNFS", url: "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs" },
+  },
+  mblex: {
+    answer:
+      "The MBLEx (Massage & Bodywork Licensing Examination) is the Federation of State Massage Therapy Boards' entry-level licensing exam for massage therapists; state boards and agencies decide which licensing exam they require. It is 100 multiple-choice questions in 110 minutes at a Pearson VUE center, a fixed-length computer-adaptive test answered in order, and results are reported only as pass or fail on a criterion-referenced standard. Passing it is not a license: the state board or agency issues the license, and state requirements vary.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "110 minutes (2-hour appointment)" },
+      { label: "Format", value: "Fixed-length computer-adaptive test, answered in order" },
+      { label: "Result", value: "Pass or fail; no percent published" },
+      { label: "Largest area", value: "Client Assessment, Reassessment & Treatment Planning, 17%" },
+      { label: "Languages", value: "English and Spanish" },
+    ],
+    basedOn: "FSMTB MBLEx Content Outline and the MBLEx Candidate Handbook effective August 2026, checked November 2026",
+    source: { name: "FSMTB: MBLEx", url: "https://www.fsmtb.org/mblex/" },
   },
   ase: {
     answer:

@@ -3,14 +3,6 @@
   "reviewAfterDays": 365,
   "events": [
     {
-      "exam": "staareng1",
-      "date": "2027-08-01",
-      "kind": "sunset",
-      "what": "TEA plans to bring in the Student Success Tool, the state test that follows STAAR, from fall 2027; the draft SST English I summative blueprint (30 to 31 questions, 38 points, a 6-point extended constructed response) starts with the spring 2028 test.",
-      "action": "Check TEA's final SST English I blueprint and assessed curriculum; re-weight the reading and writing counts and update the landing, facts and score note.",
-      "source": "https://tea.texas.gov/data-reports/staar/sst-english-i-summative-blueprint.pdf"
-    },
-    {
       "exam": "ccna",
       "date": "2027-02-03",
       "kind": "outline",
@@ -382,6 +374,22 @@
       "source": "https://www.legislation.gov.uk/uksi/1999/1148/contents/made"
     },
     {
+      "exam": "ssat",
+      "date": "2027-07-20",
+      "kind": "notice",
+      "what": "SSAT testing year 2026-2027 ends; E3n publishes a new Candidate Handbook for 2027-2028.",
+      "action": "Re-read the new handbook and the Middle Level format page; update section counts, timing, scoring and facts if they change.",
+      "source": "https://www.admission.org/help/whats-on-the-middle-level-ssat"
+    },
+    {
+      "exam": "staareng1",
+      "date": "2027-08-01",
+      "kind": "sunset",
+      "what": "TEA plans to bring in the Student Success Tool, the state test that follows STAAR, from fall 2027; the draft SST English I summative blueprint (30 to 31 questions, 38 points, a 6-point extended constructed response) starts with the spring 2028 test.",
+      "action": "Check TEA's final SST English I blueprint and assessed curriculum; re-weight the reading and writing counts and update the landing, facts and score note.",
+      "source": "https://tea.texas.gov/data-reports/staar/sst-english-i-summative-blueprint.pdf"
+    },
+    {
       "exam": "staaralg1",
       "date": "2027-08-01",
       "kind": "format",
@@ -404,6 +412,14 @@
       "what": "ETS's two-year transition after the January 2026 update ends: the comparable 0 to 120 total may stop appearing on TOEFL iBT score reports.",
       "action": "Check the ETS score pages; update the examFacts score row and the landing scoring FAQ.",
       "source": "https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html"
+    },
+    {
+      "exam": "nziqn",
+      "date": "2027-09-01",
+      "kind": "review",
+      "what": "The Nursing Council's IQN theoretical examination handbook (version 1.5, October 2026) is due for review in September 2027.",
+      "action": "Read the new handbook: check question counts, times, the Part A and Part B scope and any published pass rules, then update the config, examFacts and landing.",
+      "source": "https://www.nursingcouncil.org.nz/common/Uploaded%20files/Public/Nursing/IQN/Handbook-IQN-Theoretical-Exam-October2026.pdf"
     }
   ]
 }

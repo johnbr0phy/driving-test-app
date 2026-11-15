@@ -1,0 +1,4126 @@
+{
+  "stimuli": [
+    {
+      "id": "IIMCAT-T1-RC1",
+      "title": "Passage 1: the village pond",
+      "text": "Read the passage and answer the questions that follow.\n\nFor a long time the standard story about shared resources was a gloomy one. A pasture, a fishery or a village pond that everyone may use, the argument ran, will be used by everyone until it is ruined, because each user gains the whole benefit of taking a little more while the cost of the damage is spread across all. The cure, on this view, had to come from outside: either the state takes charge and rations the resource, or the resource is divided into private plots whose owners have a reason to look after them.\n\nThe trouble with the story is that it describes a situation that is rarer than it sounds. It assumes users who cannot talk to one another, cannot watch one another and will never meet again. Real villages are nothing like this. The families who draw water from a pond have usually done so for generations; they know who takes what, and they will have to live beside each other next year. Under those conditions people have repeatedly worked out their own rules: turns for irrigation, closed seasons for fishing, fines for the household that grazes too many goats, and a council to settle quarrels.\n\nSuch arrangements are not romantic. They work only when certain conditions hold. The boundaries of the resource and the list of rightful users must be clear. The people who bear the rules must have a hand in making them, or the rules will be resented and evaded. Breaches must be noticed cheaply, often by the users themselves rather than by a paid guard, and punishments should start small and grow, so that a first offence is a warning rather than a disaster. Above all, outside authorities must leave the arrangement room to breathe.\n\nThat last condition is where well-meant reform has often done harm. When a distant department declares a forest or a lake to be state property and posts a single officer to guard it, the old rules lose their force overnight, while the officer cannot possibly watch every path. What was a commons governed by its users becomes, in practice, a resource open to anyone. The lesson is not that the state has no role, but that it should strengthen the local institutions that already exist instead of replacing them with a fence it cannot maintain."
+    },
+    {
+      "id": "IIMCAT-T1-RC2",
+      "title": "Passage 2: what a measurement is",
+      "text": "Read the passage and answer the questions that follow.\n\nWe tend to think of a measurement as a window: the instrument shows us a number that was sitting in the world, waiting to be read. A thermometer reports the temperature; a scale reports the weight. On this picture, better instruments simply give us clearer windows, and the history of science is the history of polishing the glass.\n\nThe picture is not wrong so much as incomplete. Consider what had to be settled before anyone could measure temperature at all. Early instrument makers built tubes of coloured spirit that rose and fell with warmth, but two such tubes made in different workshops would disagree, and there was no obvious way to decide which was right. To calibrate a thermometer one needs fixed points, conditions that always produce the same degree of heat, and one needs to know that the liquid expands evenly between them. Yet the only way to check that the liquid expands evenly is to compare it with a thermometer one already trusts. The makers were caught in a circle.\n\nThey escaped it not by proof but by a slow process of mutual adjustment. Fixed points were proposed, tested against one another and discarded when they proved unreliable. Different liquids were compared, and instruments that agreed with many others were preferred to those that agreed with few. No single step was justified from outside the system; the system as a whole became trustworthy because it hung together better and better.\n\nThis matters beyond the history of thermometers. If measurement rests on a web of agreed procedures, then a number is never merely read off the world. It is the product of choices that a community has made and could, in principle, make differently. That is not a reason for doubt. A web that has been tested from many directions is far stronger than any single strand. But it does mean that when two instruments disagree, the question of which one is right cannot always be settled by looking harder at the world. Sometimes it has to be settled by asking which procedures we have the best reasons to keep."
+    },
+    {
+      "id": "IIMCAT-T1-RC3",
+      "title": "Passage 3: the translator's choices",
+      "text": "Read the passage and answer the questions that follow.\n\nEvery translator of poetry eventually meets the same complaint: the translation is not the poem. The complaint is true and useless. Of course a poem written in one language cannot be reproduced in another; its sounds belong to its words, and its words belong to a way of speaking that has its own history. The interesting question is not whether something is lost but what the translator chooses to keep.\n\nBroadly, there are two loyalties. The first is to the sense of the original, line by line, so that a reader who knows both languages could lay the versions side by side and find nothing added and nothing left out. Translations made this way are honest and often dull. They report what the poem says while losing what it does, much as a summary of a joke reports the joke without being funny.\n\nThe second loyalty is to the effect. A translator of this school asks what the poem did to its first readers, how it surprised, consoled or disturbed them, and then tries to produce that experience in the new language, even if this means changing images, rearranging lines or replacing a reference that a foreign reader would not catch. Translations made this way can be alive in a way the first kind rarely are, but they carry a risk. The more freely the translator works, the more the result reflects the translator's own taste, and the reader cannot easily tell where the poet ends and the translator begins.\n\nMost good translators move between these loyalties from line to line rather than choosing one for good. A pun may be impossible to keep and must be sacrificed for sense; a rhythm may matter more than any single word and must be kept at the cost of a word. What readers should ask of a translation, then, is not fidelity in the abstract but candour: a willingness to tell the reader, in a note or a preface, which losses were accepted and why. A reader who knows the bargain can trust the work even where it departs from the original."
+    },
+    {
+      "id": "IIMCAT-T1-RC4",
+      "title": "Passage 4: why animals sleep",
+      "text": "Read the passage and answer the questions that follow.\n\nSleep is a strange thing for an animal to do. For hours at a time the sleeper stops eating, stops watching for danger and stops looking for a mate. Any trait that costs so much should, one might think, have been trimmed away by natural selection unless it pays for itself handsomely. Yet nearly every animal that biologists have looked at closely shows some form of sleep or a resting state much like it, from mammals and birds to fish and insects.\n\nThe breadth of the habit has encouraged a search for a single purpose. Some researchers stress the brain: sleep, they argue, is when connections made during the day are sorted, the useful strengthened and the trivial weakened. Others point to the body as a whole, suggesting that sleep is a time of repair, when energy that would otherwise go to movement and alertness can be spent on maintenance. Still others treat sleep chiefly as a way of keeping an animal still and quiet during the hours when it would gain little and risk much by being active.\n\nThese explanations are usually presented as rivals, but there is little reason why they must be. A trait that has existed for a very long time can pick up new uses along the way, just as a building put up for one purpose may later house several. Sleep may have begun as a cheap way of lying low and acquired other jobs because a resting brain and body made those jobs easier to do.\n\nIf that is right, the search for the purpose of sleep may be partly misdirected. Different animals could rely on sleep for different things, and the balance could shift with age, so that what sleep does for a growing young animal is not what it does for an adult. The more useful question may be not why sleep exists but what each particular animal would lose if it went without."
+    },
+    {
+      "id": "IIMCAT-T2-RC1",
+      "title": "Passage 1: who the street is for",
+      "text": "Read the passage and answer the questions that follow.\n\nAsk a city planner how a street is performing and you will often be shown a count of vehicles: how many pass a junction each hour and how long they wait at the lights. These numbers are easy to collect and easy to compare, and a road that moves more vehicles faster is said to be working better. The trouble is not that the numbers are wrong but that they quietly decide whom the street is for.\n\nA street is also where people walk to the bus stop, where children cross on their way to school, where a vendor sets up a cart and where neighbours stop to talk. None of these activities shows up in a traffic count, and several of them are made harder by the measures that improve it. Widening a road to move cars faster lengthens the crossing for a pedestrian. Removing a cart to clear a lane removes a reason to walk there at all.\n\nPlanners are not villains for relying on vehicle counts. What gets measured gets attention, and walking has long been treated as something people do anyway, needing no help. In many growing cities, however, most trips are still made on foot or by public transport, at least for part of the way. A street designed around the minority who drive serves the majority poorly, and the cost falls hardest on those with the fewest alternatives.\n\nSome cities have begun to count differently, measuring how long it takes to cross a road on foot, how far apart safe crossings are, and how many people use a street rather than how many vehicles pass through it. These measures are harder to gather and they produce awkward conclusions, such as that a slower road can be a better one. But a street judged only by its throughput will keep being rebuilt for throughput, and the people it was never counting will keep finding it harder to use."
+    },
+    {
+      "id": "IIMCAT-T2-RC2",
+      "title": "Passage 2: rules and improvisation",
+      "text": "Read the passage and answer the questions that follow.\n\nTo a listener hearing it for the first time, improvised music can sound like freedom itself: the performer simply plays whatever comes to mind. Musicians who improvise tell a different story. The freedom they value is not the absence of rules but the ability to move fluently within them, and that fluency is built through years of disciplined practice.\n\nIn many traditions an improviser works inside a frame that the listener may not notice. A melodic mode supplies the notes that may be used and suggests which of them carry weight. A rhythmic cycle sets how long a phrase may run before it must return to its starting point. Within such a frame the performer has enormous room to invent, but the invention is heard against the frame, and much of its pleasure comes from the way it stretches the frame without breaking it. A phrase that seems to wander away and then lands exactly on the first beat of the cycle delights the audience precisely because they knew where it had to land.\n\nThis is why improvisation is so hard to teach by explanation alone. A student can learn the rules of a mode in an afternoon, but knowing the rules is not the same as being able to think in them at speed. The teacher's task is to make the rules so familiar that the student stops consulting them, much as a fluent speaker no longer consults grammar while talking.\n\nSeen this way, the contrast between composed and improvised music is less sharp than it appears. A composer chooses notes slowly and can revise; an improviser chooses quickly and cannot. Both, however, are making choices against a background of expectations they share with their listeners. What differs is the time available for the choice, not whether the choice is constrained."
+    },
+    {
+      "id": "IIMCAT-T2-RC3",
+      "title": "Passage 3: maps and their makers",
+      "text": "Read the passage and answer the questions that follow.\n\nA map is often praised for its accuracy, as if the best map were simply the one that matched the ground most closely. But a map that matched the ground in every detail would be as large as the ground and just as hard to use. Every useful map leaves things out, and what it leaves out reflects the purposes of the person who drew it.\n\nA sailor's chart marks depths, rocks and lighthouses and pays little attention to towns a mile inland. A tax surveyor's map records boundaries between fields with great care and may ignore the paths people actually walk. Neither is wrong; each answers a different question. The danger arises when a map made for one purpose is taken as a neutral picture of the world and used for another.\n\nHistory offers many examples of this danger. Maps drawn by administrators to count land and collect revenue sometimes recorded a single owner for land that in practice was used by many families under shared customs. When later officials read these maps as statements of fact, the shared uses vanished from the record, and with them the claims of the people who depended on them. The map did not merely describe a situation; it helped to create one.\n\nNone of this means that maps cannot be trusted. It means that a reader should ask of any map who made it, for what, and what it would have been easy or convenient for its maker to leave out. Those questions do not make a map less useful. They make it possible to use it for what it is good at without mistaking it for a picture of everything."
+    },
+    {
+      "id": "IIMCAT-T2-RC4",
+      "title": "Passage 4: the reading room",
+      "text": "Read the passage and answer the questions that follow.\n\nWhen information became cheap to reach, many people predicted that libraries would fade away. Why travel to a building to consult a book when the same text, or something like it, can be found on a phone in seconds? The prediction has proved only half right. Libraries have lent fewer of some kinds of books, yet in many towns their reading rooms are fuller than ever.\n\nThe explanation lies in what was actually scarce. A generation ago the scarce thing was access: the book you needed might exist only on a particular shelf. Today access is plentiful and attention is scarce. A phone offers every text at once, along with a stream of messages, alerts and invitations to look at something else. The value of a reading room now lies less in what it holds than in what it keeps out.\n\nStudents preparing for examinations understand this well. Many of them have the same material at home, yet they queue for a seat in a public library because a quiet room full of other people working makes it easier to keep working. The room supplies a kind of shared discipline that is hard to produce alone.\n\nIf this account is right, libraries that measure their success only by the number of books lent are counting the wrong thing. A library that lends fewer books but gives hundreds of people a few hours of undistracted work each day may be doing more good than ever. The building, it turns out, was never only a container for books. It was also a place that made a certain kind of attention possible, and that has become rarer and more precious."
+    },
+    {
+      "id": "IIMCAT-D-RC1",
+      "title": "Passage: notes and memory",
+      "text": "Read the passage and answer the questions that follow.\n\nStudents are often told that taking notes helps them remember, and the advice is usually right, but not always for the reason given. Notes are commonly thought of as a store: you write things down so that you can look them up later. That is one use, and a valuable one. The less obvious use is that the act of writing a note, if done well, forces the writer to decide what matters.\n\nA student who copies a lecture word for word, as some do when they type quickly, gains a complete record and very little understanding. Nothing has been chosen, compressed or connected; the words have passed from ear to fingers without much stopping in between. A student who writes slowly cannot copy everything and must summarise, and summarising is a form of thinking. To put an idea in fewer words, you have to know what the idea is.\n\nThis is why some teachers warn against laptops in lectures, though the warning can be overstated. The problem is not the machine but the habit it encourages. A student with a laptop who deliberately writes in their own words, and only the points worth keeping, gains the same benefit as one with a pen. A student with a pen who copies the slides gains nothing.\n\nThe deeper point is that memory is not mainly a matter of storage. We remember what we have worked on. Notes help when they are a record of that work, and harm when they let us believe the work has been done because the words are safely on the page."
+    },
+    {
+      "id": "IIMCAT-D-RC2",
+      "title": "Passage: the craftsman and the machine",
+      "text": "Read the passage and answer the questions that follow.\n\nWhenever a machine learns to do a task that people used to do by hand, two predictions follow. One says the craft will disappear, as the hand weaver gave way to the power loom. The other says that the craft will survive as a luxury, prized because it is made by hand. Both predictions contain some truth, but they share a mistaken assumption: that the craft is the same thing as the task the machine has taken over.\n\nA craft is rarely a single task. A carpenter cuts and joins wood, but she also judges which piece of timber will warp, talks a customer out of a design that will not last, and repairs work that a careless builder left behind. When a machine takes over the cutting, the cutting becomes cheap, but the judgement becomes, if anything, more important, because there is now more cut wood in the world and more ways for it to be badly used.\n\nThis is why the effect of automation on a trade is so hard to forecast from a list of its tasks. The tasks that machines take over are usually the ones that are easiest to describe, and those are often not the ones that made the worker valuable. The parts of a craft that resist description, knowing when something is about to go wrong, or what a client really wants, tend to remain.\n\nNone of this guarantees that every worker will be better off. A trade whose valuable judgement can be exercised by a few people while machines do the rest may need far fewer hands. But it suggests that the question to ask of any new machine is not only what it can do, but what doing that cheaply will make more necessary."
+    },
+    {
+      "id": "IIMCAT-T1-DI1",
+      "title": "Set 1: quarterly sales",
+      "text": "The table shows a company's sales of four products in each quarter of a year, in Rs lakh.\n\n| Product | Q1 | Q2 | Q3 | Q4 |\n|---|---|---|---|---|\n| Alpha | 48 | 52 | 60 | 64 |\n| Beta | 36 | 45 | 42 | 51 |\n| Gamma | 30 | 33 | 48 | 39 |\n| Delta | 46 | 50 | 50 | 56 |"
+    },
+    {
+      "id": "IIMCAT-T1-DI2",
+      "title": "Set 2: app survey",
+      "text": "A company surveyed all 300 of its employees about three apps it provides: Mail, Chat and Video. The survey found that:\n\n- 160 employees use Mail, 140 use Chat and 100 use Video.\n- 70 use both Mail and Chat, 50 use both Mail and Video, and 40 use both Chat and Video.\n- 20 use all three apps.\n\nThe remaining employees use none of the three."
+    },
+    {
+      "id": "IIMCAT-T1-LR1",
+      "title": "Set 3: the round table",
+      "text": "Six colleagues, Arjun, Bela, Chirag, Divya, Esha and Farhan, sit at a round table with six evenly spaced seats, all facing the centre. \"Opposite\" means the seat directly across the table.\n\n- Arjun sits opposite Bela.\n- Chirag sits in the seat next to Arjun in the clockwise direction.\n- Divya does not sit next to Chirag.\n- Esha sits next to Bela.\n- Farhan does not sit next to Arjun.\n- Esha does not sit next to Divya."
+    },
+    {
+      "id": "IIMCAT-T1-LR2",
+      "title": "Set 4: the training week",
+      "text": "A training week has five talks, Finance, HR, Marketing, Operations and Strategy, one on each day from Monday to Friday.\n\n- Finance is held on the day before Strategy.\n- HR is held on a later day than Marketing.\n- Operations is held on an earlier day than Finance.\n- Marketing is held on neither Monday nor Wednesday.\n- Strategy is held on neither Thursday nor Friday."
+    },
+    {
+      "id": "IIMCAT-T1-LR3",
+      "title": "Set 5: the league table",
+      "text": "Four teams, Kestrels, Larks, Mynas and Orioles, played a league in which every team played every other team once. A win earned 2 points, a draw 1 point each and a loss 0.\n\n- No two teams finished with the same number of points.\n- Orioles lost every match.\n- Kestrels did not lose a match and finished with the most points.\n- Exactly one match in the league was drawn.\n- Larks beat Mynas."
+    },
+    {
+      "id": "IIMCAT-T2-DI1",
+      "title": "Set 1: factory output",
+      "text": "The table shows the output of four factories in three months, in thousand units, and the percentage of each factory's June output that was found defective.\n\n| Factory | April | May | June | Defective in June |\n|---|---|---|---|---|\n| North | 40 | 45 | 50 | 6% |\n| South | 32 | 36 | 40 | 5% |\n| East | 20 | 24 | 30 | 10% |\n| West | 52 | 55 | 60 | 5% |"
+    },
+    {
+      "id": "IIMCAT-T2-DI2",
+      "title": "Set 2: test scores",
+      "text": "The table shows the marks, each out of 100, of five students in three tests.\n\n| Student | Maths | Reading | Science |\n|---|---|---|---|\n| Asha | 72 | 80 | 64 |\n| Bhanu | 85 | 70 | 76 |\n| Charu | 60 | 88 | 80 |\n| Dev | 90 | 64 | 86 |\n| Ela | 68 | 78 | 82 |"
+    },
+    {
+      "id": "IIMCAT-T2-LR1",
+      "title": "Set 3: the apartment block",
+      "text": "Six people, Gita, Harsh, Isha, Jai, Kavya and Lal, live on the six floors of a building, numbered 1 (lowest) to 6 (highest), one person to a floor.\n\n- Lal lives on an odd-numbered floor.\n- Gita lives on the floor directly above Lal.\n- Kavya lives on the floor directly above Gita.\n- Harsh lives on a higher floor than Kavya.\n- Isha lives on an even-numbered floor below Lal's floor."
+    },
+    {
+      "id": "IIMCAT-T2-LR2",
+      "title": "Set 4: four friends",
+      "text": "Four friends, Mohan, Nisha, Omkar and Pallavi, live in four different cities (Agra, Kochi, Pune and Surat) and have four different jobs (chef, doctor, lawyer and pilot).\n\n- The doctor lives in Surat.\n- The person who lives in Pune is the lawyer.\n- The pilot lives in Agra.\n- Nisha is neither the doctor nor the lawyer, and she does not live in Kochi.\n- Mohan lives in neither Pune nor Agra, and he is not the doctor.\n- Pallavi is not the doctor, and Omkar is not the chef."
+    },
+    {
+      "id": "IIMCAT-T2-LR3",
+      "title": "Set 5: three rounds of giving",
+      "text": "Kiran, Leela and Manav each start with some money. They play three rounds. In each round one player gives each of the other two an amount equal to what that person holds at that moment, so that each of them doubles their money. Kiran gives in round 1, Leela in round 2 and Manav in round 3. At the end of round 3, each of the three holds Rs 48."
+    },
+    {
+      "id": "IIMCAT-D-DI1",
+      "title": "Set: exports",
+      "text": "The table shows a state's exports of three commodities over four years, in Rs crore.\n\n| Commodity | 2021 | 2022 | 2023 | 2024 |\n|---|---|---|---|---|\n| Tea | 120 | 132 | 150 | 165 |\n| Coffee | 80 | 88 | 96 | 120 |\n| Spices | 100 | 90 | 108 | 135 |"
+    },
+    {
+      "id": "IIMCAT-D-DI2",
+      "title": "Set: hotel night",
+      "text": "The table shows a hotel's four room types on one night: the number of rooms, the percentage occupied and the room rate per night.\n\n| Room type | Rooms | Occupied | Rate (Rs per night) |\n|---|---|---|---|\n| Standard | 80 | 75% | 3,000 |\n| Deluxe | 50 | 80% | 4,500 |\n| Suite | 20 | 60% | 9,000 |\n| Family | 30 | 90% | 5,000 |"
+    },
+    {
+      "id": "IIMCAT-D-LR1",
+      "title": "Set: the stack of boxes",
+      "text": "Five boxes, coloured red, blue, green, yellow and white, are stacked one on top of another in positions 1 (bottom) to 5 (top).\n\n- The blue box is directly on top of the red box.\n- The yellow box is somewhere above the blue box.\n- The white box is directly on top of the green box.\n- The green box is somewhere below the red box."
+    }
+  ],
+  "questions": [
+    {
+      "id": "IIMCAT-T1-001",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-T1-RC1",
+      "stem": "Which of the following best expresses the main point of the passage?",
+      "options": [
+        "Village councils are usually more corrupt than the government departments above them",
+        "Shared resources are always ruined unless the state takes direct control of them",
+        "Dividing a commons into private plots is the most reliable way to protect it",
+        "Users of a shared resource can often govern it themselves under the right conditions"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage rejects the gloomy standard story and argues that users who know one another have repeatedly made their own rules, provided certain conditions hold. It never says private plots are best or that councils are corrupt."
+    },
+    {
+      "id": "IIMCAT-T1-002",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-T1-RC1",
+      "stem": "According to the passage, the standard story about shared resources assumes that users:",
+      "options": [
+        "always prefer private ownership to any form of shared use",
+        "cannot talk to, watch or meet one another again",
+        "know exactly how much of the resource each family has taken",
+        "are willing to pay a guard to watch over the resource for them"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The second paragraph says the story \"assumes users who cannot talk to one another, cannot watch one another and will never meet again.\" Knowing what each family takes is the opposite, a feature of real villages."
+    },
+    {
+      "id": "IIMCAT-T1-003",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "IIMCAT-T1-RC1",
+      "stem": "The author would most likely agree that a fine of the full value of a season's catch for a first breach of a fishing rule would be:",
+      "options": [
+        "unnecessary, because breaches are never noticed by users",
+        "acceptable only if the state rather than the users set it",
+        "a poor design, because penalties should start small and rise",
+        "a sound design, because it deters every user equally"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The third paragraph says punishments \"should start small and grow, so that a first offence is a warning rather than a disaster.\" A ruinous first fine breaks that condition."
+    },
+    {
+      "id": "IIMCAT-T1-004",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Author's view",
+      "stimulusId": "IIMCAT-T1-RC1",
+      "stem": "What does the author suggest the role of the state should be in managing a commons?",
+      "options": [
+        "Support the local institutions that already govern it",
+        "Withdraw entirely and leave all disputes to the courts",
+        "Take ownership and post officers to guard the resource",
+        "Divide the resource among the families who use it"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The last paragraph says the lesson \"is not that the state has no role, but that it should strengthen the local institutions that already exist\". Withdrawing entirely goes further than the author does."
+    },
+    {
+      "id": "IIMCAT-T1-005",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-T1-RC2",
+      "stem": "The author's main purpose in the passage is to:",
+      "options": [
+        "argue that early thermometers were too unreliable to be of any scientific use",
+        "explain the chemistry that makes some liquids expand more evenly than others",
+        "prove that every measurement is a matter of opinion and cannot be trusted",
+        "show that measurement depends on agreed procedures, not just on instruments"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage uses the history of the thermometer to argue that a number is \"the product of choices that a community has made\". The author explicitly says this is \"not a reason for doubt\", which rules out the claim that measurement cannot be trusted."
+    },
+    {
+      "id": "IIMCAT-T1-006",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-T1-RC2",
+      "stem": "The \"circle\" in which the early thermometer makers were caught was that:",
+      "options": [
+        "fixed points could only be found by using a calibrated scale",
+        "each workshop refused to compare its tubes with another's",
+        "checking even expansion needed a trusted thermometer",
+        "coloured spirit froze at the very points they wished to test"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The second paragraph says the only way to check that the liquid expands evenly \"is to compare it with a thermometer one already trusts\". That is the circle."
+    },
+    {
+      "id": "IIMCAT-T1-007",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Analogy",
+      "stimulusId": "IIMCAT-T1-RC2",
+      "stem": "The way the makers escaped the circle is most similar to:",
+      "options": [
+        "a judge who settles a dispute by appealing to a written law",
+        "a crossword trusted because its answers fit together",
+        "a map maker who copies the boundaries from an older map",
+        "a student who checks a sum by looking at the answer key"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The makers escaped through mutual adjustment: the system \"became trustworthy because it hung together better and better\", with no single step justified from outside. A crossword's answers support each other the same way; an answer key or a written law is an outside authority."
+    },
+    {
+      "id": "IIMCAT-T1-008",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Implication",
+      "stimulusId": "IIMCAT-T1-RC2",
+      "stem": "Which statement about two disagreeing instruments is supported by the passage?",
+      "options": [
+        "Deciding between them may require judging which procedures to keep",
+        "The newer of the two instruments should always be preferred",
+        "Looking more closely at the world will always reveal the right one",
+        "Disagreement shows that both instruments are badly made"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The final sentences say the question \"cannot always be settled by looking harder at the world\" and sometimes means \"asking which procedures we have the best reasons to keep\"."
+    },
+    {
+      "id": "IIMCAT-T1-009",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-T1-RC3",
+      "stem": "The passage is chiefly concerned with:",
+      "options": [
+        "what a translator chooses to keep from a poem",
+        "the history of how translation became a profession",
+        "a comparison of two well-known translations of one poem",
+        "the reasons poetry should never be translated at all"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After dismissing the complaint that a translation is not the poem, the author says the interesting question is \"what the translator chooses to keep\" and examines the two loyalties."
+    },
+    {
+      "id": "IIMCAT-T1-010",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Tone",
+      "stimulusId": "IIMCAT-T1-RC3",
+      "stem": "The author calls the complaint that \"the translation is not the poem\" true and useless because:",
+      "options": [
+        "most readers cannot read the original language anyway",
+        "the complaint is made only by poets about their own work",
+        "the loss is unavoidable, so the real issue is what is kept",
+        "translators have already answered it in their prefaces"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The complaint is true because sounds and words cannot be carried over, and useless because loss is certain; the author turns at once to \"what the translator chooses to keep.\""
+    },
+    {
+      "id": "IIMCAT-T1-011",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Analogy",
+      "stimulusId": "IIMCAT-T1-RC3",
+      "stem": "The comparison with a summary of a joke is used to show that a sense-for-sense translation can:",
+      "options": [
+        "make a serious poem sound light-hearted to the reader",
+        "add jokes and puns that the original poet never wrote",
+        "be funnier than the poem it sets out to translate",
+        "report what a poem says while losing what it does"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says such translations \"report what the poem says while losing what it does, much as a summary of a joke reports the joke without being funny.\""
+    },
+    {
+      "id": "IIMCAT-T1-012",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Author's view",
+      "stimulusId": "IIMCAT-T1-RC3",
+      "stem": "Which quality does the author most want readers to look for in a translation?",
+      "options": [
+        "Strict fidelity to the sense of each original line",
+        "Openness about which losses were accepted and why",
+        "Preservation of the poet's rhyme and metre at any cost",
+        "Freedom to reshape the poem to suit modern taste"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The last paragraph asks not for \"fidelity in the abstract but candour: a willingness to tell the reader ... which losses were accepted and why.\""
+    },
+    {
+      "id": "IIMCAT-T1-013",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-T1-RC4",
+      "stem": "Why does the author call sleep \"a strange thing for an animal to do\"?",
+      "options": [
+        "Sleeping animals use more energy than waking ones",
+        "It is hard to tell when an insect is actually asleep",
+        "It gives up feeding, vigilance and mating for hours",
+        "Only a small number of animal groups sleep at all"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first paragraph says the sleeper \"stops eating, stops watching for danger and stops looking for a mate\", a large cost. The passage says nearly every animal studied sleeps, so sleep is not rare."
+    },
+    {
+      "id": "IIMCAT-T1-014",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-T1-RC4",
+      "stem": "The central claim of the third paragraph is that:",
+      "options": [
+        "buildings are a better model for evolution than animals",
+        "sleep began as a way of repairing the body after effort",
+        "the brain-sorting theory of sleep has been disproved",
+        "the proposed functions of sleep need not exclude one another"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The paragraph says the explanations \"are usually presented as rivals, but there is little reason why they must be\", since a long-lived trait can pick up new uses."
+    },
+    {
+      "id": "IIMCAT-T1-015",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "IIMCAT-T1-RC4",
+      "stem": "The comparison with a building is meant to suggest that sleep:",
+      "options": [
+        "may have gained new functions after it first evolved",
+        "is too complex for any one scientist to understand",
+        "will eventually be abandoned once it stops being useful",
+        "was designed for a single purpose that it still serves"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A building \"put up for one purpose may later house several\"; likewise sleep \"may have begun as a cheap way of lying low and acquired other jobs\"."
+    },
+    {
+      "id": "IIMCAT-T1-016",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Author's view",
+      "stimulusId": "IIMCAT-T1-RC4",
+      "stem": "Which question does the author consider more useful than asking for the purpose of sleep?",
+      "options": [
+        "Whether sleep evolved before or after animals had brains",
+        "What a particular animal would lose by not sleeping",
+        "How many hours of sleep each species needs per day",
+        "Which animal group was the first to begin sleeping"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The last sentence says the more useful question may be \"what each particular animal would lose if it went without.\""
+    },
+    {
+      "id": "IIMCAT-T1-017",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. Much of the work, however, is done by a large crew whose names appear only in the closing credits.\n\n2. Audiences tend to credit a film's success to its director and its stars.\n\n3. Without these specialists the director's vision would remain an idea on paper.\n\n4. This crew includes editors, sound designers and set builders, who shape much of what we finally see and hear.",
+      "numeric": {
+        "answers": [
+          "2143"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentence 2 opens with the common view. Sentence 1 turns against it with \"however\" and introduces the crew. Sentence 4 names the crew's specialists, and sentence 3 refers back to them as \"these specialists\". Order: 2143."
+    },
+    {
+      "id": "IIMCAT-T1-018",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. Once the moisture has gone, the leaves are rolled to break their cells and release their juices.\n\n2. Fresh tea leaves are first spread out in a warm room and allowed to wilt.\n\n3. Finally they are heated to stop the oxidation at the point the maker wants.\n\n4. The released juices react with the air, darkening the leaves and deepening the flavour.",
+      "numeric": {
+        "answers": [
+          "2143"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The process runs in sequence: wilting (2), rolling once the moisture has gone (1), the released juices reacting with air (4), and heating \"finally\" to stop the reaction (3). Order: 2143."
+    },
+    {
+      "id": "IIMCAT-T1-019",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. This is why a sudden fall in prices worries policymakers more than a mild rise.\n\n2. When prices are expected to fall, people delay their purchases in the hope of paying less later.\n\n3. Firms that sell less then cut wages or jobs, which lowers spending further.\n\n4. The delay itself reduces sales today.",
+      "numeric": {
+        "answers": [
+          "2431"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentence 2 sets up the expectation, 4 gives its first effect (\"the delay itself\"), 3 continues the chain (firms that sell less), and 1 draws the conclusion with \"This is why\". Order: 2431."
+    },
+    {
+      "id": "IIMCAT-T1-020",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Odd sentence out",
+      "stem": "Five sentences about a topic are given below, labelled 1 to 5. Four of them can be put together to form a coherent paragraph. Identify the sentence that does not fit and type its number.\n\n1. Coral reefs cover a very small share of the ocean floor.\n\n2. Yet they shelter a remarkably large share of the sea's species.\n\n3. Many fish breed in reefs before moving to open water as adults.\n\n4. Deep-sea trenches are among the least explored places on Earth.\n\n5. Damage to a reef can therefore be felt far beyond the reef itself.",
+      "numeric": {
+        "answers": [
+          "4"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentences 1, 2, 3 and 5 build one argument about reefs: small in area, rich in species, nurseries for open-water fish, so their damage spreads. Sentence 4 about deep-sea trenches does not belong."
+    },
+    {
+      "id": "IIMCAT-T1-021",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Odd sentence out",
+      "stem": "Five sentences about a topic are given below, labelled 1 to 5. Four of them can be put together to form a coherent paragraph. Identify the sentence that does not fit and type its number.\n\n1. A good apprenticeship teaches more than the skills of a trade.\n\n2. The apprentice also learns how experienced workers judge quality and solve problems.\n\n3. Many of these judgements are never written down in any manual.\n\n4. Some trades now require a written examination before a licence is granted.\n\n5. They are passed on through years of working side by side.",
+      "numeric": {
+        "answers": [
+          "4"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentences 1, 2, 3 and 5 explain how unwritten judgement passes from master to apprentice; \"they\" in sentence 5 refers to the judgements in sentence 3. Sentence 4 about licensing examinations is off the point."
+    },
+    {
+      "id": "IIMCAT-T1-022",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"Many people assume that a forest left alone will always return to what it was before it was disturbed. In practice, the forest that grows back depends on what is left behind. If the soil has washed away, or if the seeds of the original trees are no longer nearby, a different kind of forest, or no forest at all, may take its place.\"",
+      "options": [
+        "Soil erosion is the main reason forests fail to recover after logging.",
+        "Forests left alone always return to their original state after a disturbance.",
+        "Whether a forest recovers depends on what survives the disturbance.",
+        "Seeds of the original trees can travel long distances to restart a forest."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage corrects the assumption that a forest always returns: what grows back depends on the soil and seeds left behind. Soil erosion is one example, not \"the main reason\"."
+    },
+    {
+      "id": "IIMCAT-T1-023",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"A rule that is never enforced does more than fail to achieve its purpose. It teaches people that rules in general need not be taken seriously, and that lesson spreads to rules that are enforced. An organisation with many dead rules on its books may therefore find it harder to secure obedience to the few that matter.\"",
+      "options": [
+        "Unenforced rules weaken respect for every rule, including important ones.",
+        "People obey rules only when they fear the penalty for breaking them.",
+        "Rules that are never enforced simply fail to achieve their purpose.",
+        "Organisations should enforce every rule strictly, however minor it is."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage's point is that a dead rule teaches disrespect for rules in general, which spreads to the rules that matter. Simple failure of purpose is what it says the harm goes beyond."
+    },
+    {
+      "id": "IIMCAT-T1-024",
+      "section": "varc",
+      "test": 1,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"Early photographs often show empty streets in busy cities. This was not because the streets were empty but because exposures took so long that anyone moving did not register. Only a person who stood still, such as a man having his boots polished, might appear. The pictures are accurate records of what the camera could see, not of what was there.\"",
+      "options": [
+        "Photographers posed people in the street to make their pictures livelier.",
+        "City streets were much quieter in the early days of photography.",
+        "Early cameras were more accurate than the painters they replaced.",
+        "Early photographs record only what slow exposures could catch."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage explains that long exposures erased moving people, so the photographs record what the camera could see. It denies that the streets were actually empty."
+    },
+    {
+      "id": "IIMCAT-T1-025",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Table totals",
+      "stimulusId": "IIMCAT-T1-DI1",
+      "stem": "What were the total sales of Gamma for the whole year, in Rs lakh?",
+      "numeric": {
+        "answers": [
+          "150"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "30 + 33 + 48 + 39 = 150."
+    },
+    {
+      "id": "IIMCAT-T1-026",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage change",
+      "stimulusId": "IIMCAT-T1-DI1",
+      "stem": "In which quarter did the company's total sales grow by the highest percentage over the previous quarter?",
+      "options": [
+        "Q4",
+        "Q2",
+        "Q3 and Q4 equally",
+        "Q3"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Quarterly totals are 160, 180, 200 and 210. Growth is 20/160 = 12.5% in Q2, 20/180 = 11.1% in Q3 and 10/200 = 5% in Q4. The same rise of 20 is a bigger share of the smaller base, so Q2 leads."
+    },
+    {
+      "id": "IIMCAT-T1-027",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Share of total",
+      "stimulusId": "IIMCAT-T1-DI1",
+      "stem": "What percentage of the company's total sales in Q3 came from Gamma?",
+      "numeric": {
+        "answers": [
+          "24"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Q3 total = 60 + 42 + 48 + 50 = 200. Gamma's 48 is 48/200 = 24%."
+    },
+    {
+      "id": "IIMCAT-T1-028",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Percentage change",
+      "stimulusId": "IIMCAT-T1-DI1",
+      "stem": "Which product's sales rose by the greatest percentage from Q1 to Q4?",
+      "options": [
+        "Delta",
+        "Alpha",
+        "Beta",
+        "Gamma"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Beta 36 to 51 is +41.7%, Alpha 48 to 64 is +33.3%, Gamma 30 to 39 is +30% and Delta 46 to 56 is +21.7%. Alpha has the largest rise in lakh (16) but not in percentage."
+    },
+    {
+      "id": "IIMCAT-T1-029",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Venn diagram",
+      "stimulusId": "IIMCAT-T1-DI2",
+      "stem": "How many employees use exactly one of the three apps?",
+      "numeric": {
+        "answers": [
+          "140"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Mail and Chat only = 70 - 20 = 50, Mail and Video only = 30, Chat and Video only = 20. Mail only = 160 - 50 - 30 - 20 = 60, Chat only = 140 - 50 - 20 - 20 = 50, Video only = 100 - 30 - 20 - 20 = 30. Exactly one = 60 + 50 + 30 = 140."
+    },
+    {
+      "id": "IIMCAT-T1-030",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Venn diagram",
+      "stimulusId": "IIMCAT-T1-DI2",
+      "stem": "How many employees use none of the three apps?",
+      "numeric": {
+        "answers": [
+          "40"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Those using at least one app = 60 + 50 + 30 (one app) + 50 + 30 + 20 (two apps) + 20 (all three) = 260, so 300 - 260 = 40 use none."
+    },
+    {
+      "id": "IIMCAT-T1-031",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Venn diagram",
+      "stimulusId": "IIMCAT-T1-DI2",
+      "stem": "How many employees use exactly two of the apps?",
+      "options": [
+        "90",
+        "100",
+        "130",
+        "160"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Subtract those using all three from each pair: (70 - 20) + (50 - 20) + (40 - 20) = 50 + 30 + 20 = 100. Adding the pair totals without removing the 20 who use all three gives 160, which counts those 20 three times over."
+    },
+    {
+      "id": "IIMCAT-T1-032",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Venn diagram",
+      "stimulusId": "IIMCAT-T1-DI2",
+      "stem": "How many employees use Chat but not Mail?",
+      "options": [
+        "50",
+        "70",
+        "90",
+        "120"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Chat users who do not use Mail are Chat only (50) plus Chat and Video only (20) = 70. Equivalently, 140 Chat users minus the 70 who also use Mail."
+    },
+    {
+      "id": "IIMCAT-T1-033",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular arrangement",
+      "stimulusId": "IIMCAT-T1-LR1",
+      "stem": "Who sits opposite Chirag?",
+      "options": [
+        "Bela",
+        "Divya",
+        "Esha",
+        "Farhan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Seat 4, opposite Chirag's seat 1, is Farhan's."
+    },
+    {
+      "id": "IIMCAT-T1-034",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular arrangement",
+      "stimulusId": "IIMCAT-T1-LR1",
+      "stem": "Who are Divya's two neighbours?",
+      "options": [
+        "Arjun and Farhan",
+        "Arjun and Chirag",
+        "Bela and Farhan",
+        "Esha and Bela"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Divya in seat 5 sits between Farhan (seat 4) and Arjun (seat 0)."
+    },
+    {
+      "id": "IIMCAT-T1-035",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Circular arrangement",
+      "stimulusId": "IIMCAT-T1-LR1",
+      "stem": "Counting clockwise from Arjun, how many people sit between Arjun and Esha?",
+      "numeric": {
+        "answers": [
+          "1"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Going clockwise from Arjun (seat 0) to Esha (seat 2), only Chirag (seat 1) is passed."
+    },
+    {
+      "id": "IIMCAT-T1-036",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Circular arrangement",
+      "stimulusId": "IIMCAT-T1-LR1",
+      "stem": "Who sits between Esha and Farhan?",
+      "options": [
+        "Arjun",
+        "Divya",
+        "Bela",
+        "Chirag"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Esha is in seat 2 and Farhan in seat 4, so Bela in seat 3 sits between them."
+    },
+    {
+      "id": "IIMCAT-T1-037",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling",
+      "stimulusId": "IIMCAT-T1-LR2",
+      "stem": "On which day is the Strategy talk held?",
+      "options": [
+        "Wednesday",
+        "Tuesday",
+        "Monday",
+        "Thursday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Strategy follows Finance and is on neither Thursday nor Friday, so the pair is Monday-Tuesday or Tuesday-Wednesday; Operations comes before Finance, so it is Operations Monday, Finance Tuesday, Strategy Wednesday. Marketing cannot be Wednesday and must come before HR, so Marketing is Thursday and HR Friday. Strategy is on Wednesday."
+    },
+    {
+      "id": "IIMCAT-T1-038",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Scheduling",
+      "stimulusId": "IIMCAT-T1-LR2",
+      "stem": "How many talks are held between the Operations talk and the HR talk?",
+      "numeric": {
+        "answers": [
+          "3"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Strategy follows Finance and is on neither Thursday nor Friday, so the pair is Monday-Tuesday or Tuesday-Wednesday; Operations comes before Finance, so it is Operations Monday, Finance Tuesday, Strategy Wednesday. Marketing cannot be Wednesday and must come before HR, so Marketing is Thursday and HR Friday. Operations is Monday and HR Friday; Finance, Strategy and Marketing fall between them."
+    },
+    {
+      "id": "IIMCAT-T1-039",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling",
+      "stimulusId": "IIMCAT-T1-LR2",
+      "stem": "Which talk is held on Thursday?",
+      "options": [
+        "HR",
+        "Finance",
+        "Strategy",
+        "Marketing"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Strategy follows Finance and is on neither Thursday nor Friday, so the pair is Monday-Tuesday or Tuesday-Wednesday; Operations comes before Finance, so it is Operations Monday, Finance Tuesday, Strategy Wednesday. Marketing cannot be Wednesday and must come before HR, so Marketing is Thursday and HR Friday. Thursday is Marketing."
+    },
+    {
+      "id": "IIMCAT-T1-040",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Scheduling",
+      "stimulusId": "IIMCAT-T1-LR2",
+      "stem": "Which of the following must be true?",
+      "options": [
+        "Finance is held on Thursday",
+        "Operations is held on Wednesday",
+        "HR is the last talk of the week",
+        "Marketing is held on Tuesday"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Strategy follows Finance and is on neither Thursday nor Friday, so the pair is Monday-Tuesday or Tuesday-Wednesday; Operations comes before Finance, so it is Operations Monday, Finance Tuesday, Strategy Wednesday. Marketing cannot be Wednesday and must come before HR, so Marketing is Thursday and HR Friday. HR on Friday is the last talk; the other three statements contradict the schedule."
+    },
+    {
+      "id": "IIMCAT-T1-041",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Tournaments",
+      "stimulusId": "IIMCAT-T1-LR3",
+      "stem": "How many points did Mynas finish with?",
+      "numeric": {
+        "answers": [
+          "3"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Orioles lost all three matches, so each other team beat them. Larks beat Mynas, so the single draw was Kestrels against Larks or Kestrels against Mynas. If Kestrels drew with Larks, both would have 5 points, which the no-tie rule forbids. So Kestrels drew with Mynas and beat Larks: Kestrels 5, Larks 4, Mynas 3, Orioles 0. Mynas drew with Kestrels (1) and beat Orioles (2): 3 points."
+    },
+    {
+      "id": "IIMCAT-T1-042",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Tournaments",
+      "stimulusId": "IIMCAT-T1-LR3",
+      "stem": "Which match was drawn?",
+      "options": [
+        "Kestrels v Larks",
+        "Kestrels v Mynas",
+        "Mynas v Orioles",
+        "Larks v Mynas"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Orioles lost all three matches, so each other team beat them. Larks beat Mynas, so the single draw was Kestrels against Larks or Kestrels against Mynas. If Kestrels drew with Larks, both would have 5 points, which the no-tie rule forbids. So Kestrels drew with Mynas and beat Larks: Kestrels 5, Larks 4, Mynas 3, Orioles 0. "
+    },
+    {
+      "id": "IIMCAT-T1-043",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Tournaments",
+      "stimulusId": "IIMCAT-T1-LR3",
+      "stem": "How many matches did Larks win?",
+      "numeric": {
+        "answers": [
+          "2"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Orioles lost all three matches, so each other team beat them. Larks beat Mynas, so the single draw was Kestrels against Larks or Kestrels against Mynas. If Kestrels drew with Larks, both would have 5 points, which the no-tie rule forbids. So Kestrels drew with Mynas and beat Larks: Kestrels 5, Larks 4, Mynas 3, Orioles 0. Larks beat Mynas and Orioles and lost to Kestrels: two wins."
+    },
+    {
+      "id": "IIMCAT-T1-044",
+      "section": "dilr",
+      "test": 1,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Tournaments",
+      "stimulusId": "IIMCAT-T1-LR3",
+      "stem": "What was the result of the match between Kestrels and Larks?",
+      "options": [
+        "It was drawn",
+        "It cannot be determined",
+        "Larks won",
+        "Kestrels won"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Orioles lost all three matches, so each other team beat them. Larks beat Mynas, so the single draw was Kestrels against Larks or Kestrels against Mynas. If Kestrels drew with Larks, both would have 5 points, which the no-tie rule forbids. So Kestrels drew with Mynas and beat Larks: Kestrels 5, Larks 4, Mynas 3, Orioles 0. A draw between them would leave Kestrels and Larks level on 5 points, so Kestrels must have won."
+    },
+    {
+      "id": "IIMCAT-T1-045",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Profit and discount",
+      "stem": "A shopkeeper marks an article 40% above its cost price and then gives a discount of 15% on the marked price. What is his profit as a percentage of the cost price?",
+      "numeric": {
+        "answers": [
+          "19"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "If the cost is 100, the marked price is 140 and the selling price is 85% of 140 = 119, a profit of 19%. Subtracting 15 from 40 (25%) ignores that the discount is taken on the higher marked price."
+    },
+    {
+      "id": "IIMCAT-T1-046",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Mixtures",
+      "stem": "A 60-litre mixture contains milk and water in the ratio 3 : 1. How many litres of water must be added to make the ratio 3 : 2?",
+      "numeric": {
+        "answers": [
+          "15"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The mixture has 45 litres of milk and 15 of water. For milk : water = 3 : 2 the water must be 30 litres, so 15 litres are added."
+    },
+    {
+      "id": "IIMCAT-T1-047",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "A can finish a job in 18 days and B in 27 days. They work together for 6 days, then A leaves and B finishes the job alone. How many days does the job take in all?",
+      "options": [
+        "15",
+        "16",
+        "18",
+        "20"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Together they do 1/18 + 1/27 = 5/54 of the job a day, so 6 days complete 30/54 = 5/9. B does the remaining 4/9 at 1/27 a day in 12 days, so the job takes 6 + 12 = 18 days."
+    },
+    {
+      "id": "IIMCAT-T1-048",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed and distance",
+      "stem": "A 240-metre train passes completely over a 360-metre platform in 30 seconds. What is its speed in km/h?",
+      "options": [
+        "60",
+        "64",
+        "72",
+        "80"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The train covers its own length plus the platform, 600 m, in 30 s: 20 m/s. Multiply by 18/5 to get 72 km/h. Using only the platform's length gives 12 m/s, about 43 km/h."
+    },
+    {
+      "id": "IIMCAT-T1-049",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Compound interest",
+      "stem": "What is the compound interest, in rupees, on Rs 20,000 for 2 years at 9% a year, compounded annually?",
+      "numeric": {
+        "answers": [
+          "3762"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Amount = 20,000 x 1.09 x 1.09 = 23,762, so the interest is 23,762 - 20,000 = 3,762. Simple interest would be only 3,600; the extra 162 is interest on the first year's interest."
+    },
+    {
+      "id": "IIMCAT-T1-050",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Averages",
+      "stem": "The average age of 30 students is 15 years. When the teacher's age is included, the average rises to 16 years. What is the teacher's age in years?",
+      "numeric": {
+        "answers": [
+          "46"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The 31 ages total 31 x 16 = 496 and the students' ages total 30 x 15 = 450, so the teacher is 496 - 450 = 46."
+    },
+    {
+      "id": "IIMCAT-T1-051",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Percentages",
+      "stem": "The price of sugar rises by 25%. By what percentage must a family cut its consumption to keep its spending on sugar unchanged?",
+      "options": [
+        "16%",
+        "20%",
+        "24%",
+        "25%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Spending = price x quantity. If the price becomes 5/4 of the old price, quantity must become 4/5, a cut of 1/5 = 20%. Cutting by 25% would reduce spending."
+    },
+    {
+      "id": "IIMCAT-T1-052",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Partnership",
+      "stem": "A invests Rs 40,000 for 12 months and B invests Rs 60,000 for 8 months in a business. Out of a profit of Rs 36,000, what is A's share?",
+      "options": [
+        "Rs 14,400",
+        "Rs 18,000",
+        "Rs 21,600",
+        "Rs 24,000"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Shares follow money x time: 40,000 x 12 = 4,80,000 and 60,000 x 8 = 4,80,000, a ratio of 1 : 1, so A gets half, Rs 18,000. Splitting by the amounts alone (2 : 3) gives Rs 14,400."
+    },
+    {
+      "id": "IIMCAT-T1-053",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Quadratic equations",
+      "stem": "If $a$ and $b$ are the roots of $x^2 - 7x + 10 = 0$, what is the value of $a^2 + b^2$?",
+      "numeric": {
+        "answers": [
+          "29"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The roots sum to 7 and multiply to 10, so $a^2 + b^2 = (a + b)^2 - 2ab = 49 - 20 = 29$. Directly, the roots are 2 and 5, and 4 + 25 = 29."
+    },
+    {
+      "id": "IIMCAT-T1-054",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Functions",
+      "stem": "If $f(x) = 3x + 2$ and $g(x) = x^2 + 1$, what is $f(g(2))$?",
+      "options": [
+        "15",
+        "17",
+        "19",
+        "65"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$g(2) = 4 + 1 = 5$, and $f(5) = 15 + 2 = 17$. Applying the functions in the other order, $g(f(2)) = g(8) = 65$."
+    },
+    {
+      "id": "IIMCAT-T1-055",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Linear equations",
+      "stem": "If $3x + 2y = 24$ and $x - y = 3$, what is the value of $xy$?",
+      "numeric": {
+        "answers": [
+          "18"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "From the second equation $x = y + 3$. Substituting, $3y + 9 + 2y = 24$, so $y = 3$ and $x = 6$. Then $xy = 18$."
+    },
+    {
+      "id": "IIMCAT-T1-056",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Arithmetic progressions",
+      "stem": "The 5th term of an arithmetic progression is 17 and its 12th term is 38. What is the sum of its first 20 terms?",
+      "numeric": {
+        "answers": [
+          "670"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Seven steps raise the term by 21, so the common difference is 3 and the first term is 17 - 12 = 5. The 20th term is 5 + 57 = 62, and the sum is 20/2 x (5 + 62) = 670."
+    },
+    {
+      "id": "IIMCAT-T1-057",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geometric progressions",
+      "stem": "What is the sum to infinity of the series 18 + 6 + 2 + ... ?",
+      "options": [
+        "24",
+        "27",
+        "30",
+        "36"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The common ratio is 1/3, so the sum is 18 / (1 - 1/3) = 18 x 3/2 = 27."
+    },
+    {
+      "id": "IIMCAT-T1-058",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Inequalities",
+      "stem": "How many integers $x$ satisfy $|x - 4| < 6$?",
+      "numeric": {
+        "answers": [
+          "11"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "$|x - 4| < 6$ means $-6 < x - 4 < 6$, that is $-2 < x < 10$. The integers from -1 to 9 number 11. The end points -2 and 10 are excluded because the inequality is strict."
+    },
+    {
+      "id": "IIMCAT-T1-059",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Logarithms",
+      "stem": "What is the value of $\\log_2 8 + \\log_3 81 - \\log_5 25$?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\log_2 8 = 3$, $\\log_3 81 = 4$ and $\\log_5 25 = 2$, so the value is 3 + 4 - 2 = 5."
+    },
+    {
+      "id": "IIMCAT-T1-060",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Triangles",
+      "stem": "A right-angled triangle has legs of 9 cm and 12 cm. What is the length, in cm, of the perpendicular from the right angle to the hypotenuse?",
+      "options": [
+        "6",
+        "7.2",
+        "7.5",
+        "8"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The hypotenuse is 15 cm. The area is 9 x 12 / 2 = 54, and also hypotenuse x height / 2, so the height is 108/15 = 7.2 cm."
+    },
+    {
+      "id": "IIMCAT-T1-061",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Circles",
+      "stem": "A circle has an area of 616 sq cm. Taking $\\pi = \\frac{22}{7}$, what is its circumference in cm?",
+      "numeric": {
+        "answers": [
+          "88"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "$\\frac{22}{7} r^2 = 616$ gives $r^2 = 196$ and $r = 14$. The circumference is $2 \\times \\frac{22}{7} \\times 14 = 88$ cm."
+    },
+    {
+      "id": "IIMCAT-T1-062",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "A cube has a volume of 216 cubic cm. What is its total surface area in sq cm?",
+      "options": [
+        "144",
+        "196",
+        "216",
+        "256"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The side is the cube root of 216, which is 6 cm. Total surface area = 6 x 6^2 = 216 sq cm. Four faces only (the lateral area) give 144."
+    },
+    {
+      "id": "IIMCAT-T1-063",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Coordinate geometry",
+      "stem": "What is the distance between the points (-1, 4) and (11, -1)?",
+      "numeric": {
+        "answers": [
+          "13"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The differences are 12 and 5, so the distance is the square root of 144 + 25 = 169, which is 13."
+    },
+    {
+      "id": "IIMCAT-T1-064",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Remainders",
+      "stem": "What is the remainder when $2^{100}$ is divided by 7?",
+      "numeric": {
+        "answers": [
+          "2"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "$2^3 = 8$ leaves remainder 1 on division by 7. Since $2^{100} = (2^3)^{33} \\times 2$, the remainder is $1 \\times 2 = 2$."
+    },
+    {
+      "id": "IIMCAT-T1-065",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Factors",
+      "stem": "How many positive factors does 360 have?",
+      "numeric": {
+        "answers": [
+          "24"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "$360 = 2^3 \\times 3^2 \\times 5$, so the number of factors is (3 + 1)(2 + 1)(1 + 1) = 24."
+    },
+    {
+      "id": "IIMCAT-T1-066",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Combinations",
+      "stem": "A committee of 3 is to be chosen from 6 men and 4 women. In how many ways can it be formed with exactly 2 women?",
+      "options": [
+        "24",
+        "36",
+        "48",
+        "60"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Choose 2 of the 4 women in 6 ways and 1 of the 6 men in 6 ways: 6 x 6 = 36."
+    },
+    {
+      "id": "IIMCAT-T2-001",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-T2-RC1",
+      "stem": "The main argument of the passage is that:",
+      "options": [
+        "vehicle counts make streets serve drivers over others",
+        "traffic counts are too inaccurate to guide road design",
+        "planners deliberately ignore pedestrians to please car owners",
+        "street vendors are the main cause of congestion in cities"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says vehicle counts \"quietly decide whom the street is for\" and that a street designed around drivers serves the walking majority poorly. It says planners \"are not villains\", so deliberate neglect is wrong."
+    },
+    {
+      "id": "IIMCAT-T2-002",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-T2-RC1",
+      "stem": "According to the passage, widening a road to move cars faster:",
+      "options": [
+        "makes the crossing longer for a person on foot",
+        "reduces the number of buses that use the street",
+        "attracts more vendors to set up carts on the street",
+        "shortens the waiting time for pedestrians at lights"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second paragraph: \"Widening a road to move cars faster lengthens the crossing for a pedestrian.\""
+    },
+    {
+      "id": "IIMCAT-T2-003",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "IIMCAT-T2-RC1",
+      "stem": "Why, according to the author, has walking received little attention from planners?",
+      "options": [
+        "Pedestrians rarely complain about the streets they use",
+        "Most planners do not themselves walk in the city",
+        "Walking trips are too short to be worth measuring",
+        "It was assumed people would walk anyway without help"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The third paragraph says walking \"has long been treated as something people do anyway, needing no help\"."
+    },
+    {
+      "id": "IIMCAT-T2-004",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Author's view",
+      "stimulusId": "IIMCAT-T2-RC1",
+      "stem": "The author mentions that the new measures \"produce awkward conclusions\" in order to:",
+      "options": [
+        "suggest that cities should return to vehicle counts",
+        "argue that slower roads always cause more accidents",
+        "show that the new measures are as flawed as the old",
+        "admit their difficulty while still recommending them"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The author concedes the measures are harder and lead to conclusions like \"a slower road can be a better one\", then argues that a street judged only by throughput will keep failing the people it does not count."
+    },
+    {
+      "id": "IIMCAT-T2-005",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-T2-RC2",
+      "stem": "Which statement best captures the passage's view of improvisation?",
+      "options": [
+        "It is invention within shared constraints, learned by practice",
+        "It is an older form of music than composition is",
+        "It is the free expression of whatever a performer feels",
+        "It is easier to master than composing music on paper"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Musicians value \"the ability to move fluently within\" rules built through practice, not the absence of rules."
+    },
+    {
+      "id": "IIMCAT-T2-006",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-T2-RC2",
+      "stem": "Why does a phrase that lands on the first beat of the cycle delight listeners?",
+      "options": [
+        "It surprises them by breaking the rules of the mode",
+        "It shows that the performer had composed it in advance",
+        "It signals that the performance is about to end",
+        "They knew where it had to land and heard it get there"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says it delights \"precisely because they knew where it had to land\": the pleasure comes from stretching the frame without breaking it."
+    },
+    {
+      "id": "IIMCAT-T2-007",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Analogy",
+      "stimulusId": "IIMCAT-T2-RC2",
+      "stem": "The author compares learning improvisation to:",
+      "options": [
+        "speaking fluently without consulting grammar",
+        "learning the rules of a game by reading its rule book",
+        "copying a teacher's performance note for note",
+        "memorising a written score before a concert"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The third paragraph says the teacher makes the rules so familiar that the student stops consulting them, \"much as a fluent speaker no longer consults grammar while talking.\""
+    },
+    {
+      "id": "IIMCAT-T2-008",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "IIMCAT-T2-RC2",
+      "stem": "According to the last paragraph, composed and improvised music differ mainly in:",
+      "options": [
+        "whether the choices are constrained by rules",
+        "the number of notes each performer may use",
+        "the time available for each musical choice",
+        "the expectations they share with listeners"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage ends: \"What differs is the time available for the choice, not whether the choice is constrained.\" Both share expectations with listeners."
+    },
+    {
+      "id": "IIMCAT-T2-009",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-T2-RC3",
+      "stem": "The passage is mainly about:",
+      "options": [
+        "how a map's purpose shapes what it shows",
+        "the techniques surveyors use to measure land",
+        "why modern maps are more accurate than older ones",
+        "the history of sea charts and lighthouses"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage argues that every useful map omits things, that what it omits reflects its maker's purpose, and that readers should ask who made a map and for what."
+    },
+    {
+      "id": "IIMCAT-T2-010",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-T2-RC3",
+      "stem": "Why does the author say a map that matched the ground in every detail would be useless?",
+      "options": [
+        "It would contain errors that no one could correct",
+        "It would take too long for any surveyor to draw",
+        "It would show only the features a sailor needs",
+        "It would be as large and as hard to use as the ground"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The first paragraph: such a map \"would be as large as the ground and just as hard to use.\""
+    },
+    {
+      "id": "IIMCAT-T2-011",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "IIMCAT-T2-RC3",
+      "stem": "In the example of revenue maps, the author implies that the maps:",
+      "options": [
+        "helped erase customary rights by recording a single owner",
+        "were more accurate than the shared customs they replaced",
+        "were drawn mainly to help sailors find their way inland",
+        "were deliberately falsified by the families who used the land"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Revenue maps recorded \"a single owner for land that in practice was used by many families\", and when read as fact \"the shared uses vanished from the record\". The map \"helped to create\" the situation."
+    },
+    {
+      "id": "IIMCAT-T2-012",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Author's view",
+      "stimulusId": "IIMCAT-T2-RC3",
+      "stem": "What is the author's attitude to maps by the end of the passage?",
+      "options": [
+        "They are less useful now than satellite images",
+        "They should not be trusted for any serious purpose",
+        "They are useful if read with their purpose in mind",
+        "They are neutral pictures of the world as it is"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The last paragraph says the questions about who made a map \"do not make a map less useful\"; they let it be used for what it is good at."
+    },
+    {
+      "id": "IIMCAT-T2-013",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-T2-RC4",
+      "stem": "The author's main claim is that libraries now matter chiefly because they:",
+      "options": [
+        "lend more books than they did a generation ago",
+        "offer cheaper internet access than a phone does",
+        "hold rare books that cannot be found anywhere online",
+        "provide protection for attention, which has become scarce"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The second paragraph says access is plentiful and attention scarce, so a reading room's value lies \"less in what it holds than in what it keeps out.\""
+    },
+    {
+      "id": "IIMCAT-T2-014",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-T2-RC4",
+      "stem": "According to the passage, the prediction that libraries would fade away has proved:",
+      "options": [
+        "impossible to judge, since libraries keep no records",
+        "entirely wrong, since lending of every kind has risen",
+        "only half right, since lending fell but reading rooms filled",
+        "entirely right, since few people now visit libraries"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first paragraph: \"The prediction has proved only half right. Libraries have lent fewer of some kinds of books, yet ... their reading rooms are fuller than ever.\""
+    },
+    {
+      "id": "IIMCAT-T2-015",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "IIMCAT-T2-RC4",
+      "stem": "Students queue for library seats even though they have the material at home because:",
+      "options": [
+        "a quiet room of people working makes focus easier",
+        "librarians help them prepare for their examinations",
+        "the library's copies are more up to date than theirs",
+        "studying at home is forbidden before examinations"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The third paragraph says the room \"supplies a kind of shared discipline that is hard to produce alone.\""
+    },
+    {
+      "id": "IIMCAT-T2-016",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Implication",
+      "stimulusId": "IIMCAT-T2-RC4",
+      "stem": "The author would most likely criticise a library that judges its success only by:",
+      "options": [
+        "the hours of quiet work it makes possible",
+        "the number of students who study there",
+        "the number of seats occupied each day",
+        "the number of books it lends each year"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The last paragraph says libraries \"that measure their success only by the number of books lent are counting the wrong thing.\""
+    },
+    {
+      "id": "IIMCAT-T2-017",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. The second is to remove the fear that a wrong answer will be punished.\n\n2. Teachers who want students to ask questions must do two things.\n\n3. Only then will students take the risk of admitting what they do not know.\n\n4. The first is to leave silence after asking, so that students have time to think.",
+      "numeric": {
+        "answers": [
+          "2413"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentence 2 announces two things, 4 gives the first, 1 gives the second, and 3 concludes with \"Only then\". Order: 2413."
+    },
+    {
+      "id": "IIMCAT-T2-018",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. Over time, that small difference adds up to a large one.\n\n2. A stone dropped in a stream changes the water's path only slightly.\n\n3. The bank on one side is worn away a little faster than the other.\n\n4. Rivers often owe their bends to accidents of this kind.",
+      "numeric": {
+        "answers": [
+          "2314"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentence 2 starts the story, 3 states the slight difference, 1 says it adds up over time, and 4 generalises \"accidents of this kind\". Order: 2314."
+    },
+    {
+      "id": "IIMCAT-T2-019",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. A shop that lowers its prices may win customers from its rivals.\n\n2. In the end every shop sells as much as before, but at lower prices.\n\n3. But its rivals are unlikely to stand still for long.\n\n4. They cut their own prices, and the customers drift back.",
+      "numeric": {
+        "answers": [
+          "1342"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentence 1 states the first move, 3 turns with \"But its rivals\", 4 gives their response (\"They cut\"), and 2 concludes \"In the end\". Order: 1342."
+    },
+    {
+      "id": "IIMCAT-T2-020",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Odd sentence out",
+      "stem": "Five sentences about a topic are given below, labelled 1 to 5. Four of them can be put together to form a coherent paragraph. Identify the sentence that does not fit and type its number.\n\n1. Bamboo grows faster than almost any other plant.\n\n2. Some kinds can add many centimetres to their height in a single day.\n\n3. This speed makes bamboo a renewable material for building.\n\n4. Pandas eat little else in the wild.\n\n5. A grove cut for timber can be harvested again within a few years.",
+      "numeric": {
+        "answers": [
+          "4"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentences 1, 2, 3 and 5 argue that bamboo's speed of growth makes it a renewable building material. Sentence 4 about pandas' diet is off the topic."
+    },
+    {
+      "id": "IIMCAT-T2-021",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Odd sentence out",
+      "stem": "Five sentences about a topic are given below, labelled 1 to 5. Four of them can be put together to form a coherent paragraph. Identify the sentence that does not fit and type its number.\n\n1. Proverbs survive because they are easy to remember.\n\n2. Their rhythm and rhyme help them stick in the mind.\n\n3. Many languages have proverbs that contradict each other.\n\n4. Short and vivid, they can be passed on without being written down.\n\n5. This made them useful in societies where few people could read.",
+      "numeric": {
+        "answers": [
+          "3"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentences 1, 2, 4 and 5 explain why proverbs are memorable and so spread orally. Sentence 3 about contradictory proverbs raises a different point."
+    },
+    {
+      "id": "IIMCAT-T2-022",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"A city that builds more roads to ease congestion often finds the roads filling up again within a few years. Faster travel encourages people to make trips they would not have made, to live farther from work, and to drive rather than take the bus. The new capacity is used up by the traffic it creates.\"",
+      "options": [
+        "Faster travel always reduces the total amount of traffic.",
+        "Congestion is caused mainly by people living far from work.",
+        "New roads invite extra traffic that soon uses up the space they add.",
+        "Cities should stop building roads and invest only in buses."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says new capacity is \"used up by the traffic it creates\". It does not prescribe buses only, and long commutes are one of several effects."
+    },
+    {
+      "id": "IIMCAT-T2-023",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"Museums once displayed objects with little more than a name and a date, trusting visitors to look closely. Today many exhibits surround each object with screens, sounds and explanations. These help visitors who know little, but they can also crowd out the object itself, so that people read about a painting more than they look at it.\"",
+      "options": [
+        "Museums should go back to showing only names and dates beside objects.",
+        "Visitors today know less about art than visitors did in the past.",
+        "Screens and sounds have made museums more popular than ever before.",
+        "Modern displays inform but can pull attention from the objects."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage weighs the benefit of explanations for beginners against the risk of crowding out the object. It does not call for a return to labels only."
+    },
+    {
+      "id": "IIMCAT-T2-024",
+      "section": "varc",
+      "test": 2,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"A company that rewards its sales staff only for the number of contracts they sign should not be surprised if many of those contracts are later cancelled. People pursue what is measured and paid for. If the quality of a sale matters, it has to be part of what is rewarded.\"",
+      "options": [
+        "Rewards shape behaviour, so they must cover everything that matters.",
+        "Sales staff are dishonest whenever they are paid by commission.",
+        "Companies should stop measuring the work of their sales staff.",
+        "Contracts are cancelled mainly because customers change their minds."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage argues that people chase what is rewarded, so quality must be rewarded too. It blames the incentive, not dishonest staff."
+    },
+    {
+      "id": "IIMCAT-T2-025",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Percentages",
+      "stimulusId": "IIMCAT-T2-DI1",
+      "stem": "How many thousand units of the four factories' June output were defective in all?",
+      "numeric": {
+        "answers": [
+          "11"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "North 6% of 50 = 3, South 5% of 40 = 2, East 10% of 30 = 3, West 5% of 60 = 3. Total 3 + 2 + 3 + 3 = 11 thousand."
+    },
+    {
+      "id": "IIMCAT-T2-026",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage change",
+      "stimulusId": "IIMCAT-T2-DI1",
+      "stem": "Which factory's output grew by the highest percentage from April to June?",
+      "options": [
+        "West",
+        "South",
+        "East",
+        "North"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "East 20 to 30 is +50%; North 40 to 50 and South 32 to 40 are each +25%; West 52 to 60 is about +15%. West has the biggest output but the smallest growth rate."
+    },
+    {
+      "id": "IIMCAT-T2-027",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Averages",
+      "stimulusId": "IIMCAT-T2-DI1",
+      "stem": "What was South's average monthly output over the three months, in thousand units?",
+      "numeric": {
+        "answers": [
+          "36"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "(32 + 36 + 40) / 3 = 108 / 3 = 36."
+    },
+    {
+      "id": "IIMCAT-T2-028",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Share of total",
+      "stimulusId": "IIMCAT-T2-DI1",
+      "stem": "West's share of the four factories' total output in June is closest to:",
+      "options": [
+        "30%",
+        "33%",
+        "36%",
+        "40%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "June total = 50 + 40 + 30 + 60 = 180. West's 60 is 60/180 = one third, about 33%."
+    },
+    {
+      "id": "IIMCAT-T2-029",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Table totals",
+      "stimulusId": "IIMCAT-T2-DI2",
+      "stem": "Which student has the highest total across the three tests?",
+      "options": [
+        "Charu",
+        "Ela",
+        "Bhanu",
+        "Dev"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Totals: Asha 216, Bhanu 231, Charu 228, Dev 240, Ela 228. Dev's 240 is highest, even though his Reading mark is the lowest in the class."
+    },
+    {
+      "id": "IIMCAT-T2-030",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Averages",
+      "stimulusId": "IIMCAT-T2-DI2",
+      "stem": "What is the class average in Maths?",
+      "numeric": {
+        "answers": [
+          "75"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "(72 + 85 + 60 + 90 + 68) / 5 = 375 / 5 = 75."
+    },
+    {
+      "id": "IIMCAT-T2-031",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Comparisons",
+      "stimulusId": "IIMCAT-T2-DI2",
+      "stem": "How many students scored more in Science than their own average across the three tests?",
+      "numeric": {
+        "answers": [
+          "3"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Compare each Science mark with the student's average: Asha 64 vs 72 (no), Bhanu 76 vs 77 (no), Charu 80 vs 76 (yes), Dev 86 vs 80 (yes), Ela 82 vs 76 (yes). Three students."
+    },
+    {
+      "id": "IIMCAT-T2-032",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparisons",
+      "stimulusId": "IIMCAT-T2-DI2",
+      "stem": "A prize goes to every student whose total is at least 228. How many students win it?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Totals of 231 (Bhanu), 228 (Charu), 240 (Dev) and 228 (Ela) qualify; Asha's 216 does not. The two totals of exactly 228 count, since the rule says at least 228."
+    },
+    {
+      "id": "IIMCAT-T2-033",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor arrangement",
+      "stimulusId": "IIMCAT-T2-LR1",
+      "stem": "Who lives on floor 1?",
+      "options": [
+        "Jai",
+        "Kavya",
+        "Lal",
+        "Isha"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lal, Gita and Kavya are on three consecutive floors starting on an odd floor, and Harsh is higher still, so Lal must be on 3 (Lal on 1 leaves no lower floor for Isha; Lal on 5 leaves no room above). Then Gita is on 4, Kavya on 5 and Harsh on 6. Isha's even floor below 3 is floor 2, and Jai takes floor 1. Jai is on floor 1."
+    },
+    {
+      "id": "IIMCAT-T2-034",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Floor arrangement",
+      "stimulusId": "IIMCAT-T2-LR1",
+      "stem": "On which floor does Gita live?",
+      "numeric": {
+        "answers": [
+          "4"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Lal, Gita and Kavya are on three consecutive floors starting on an odd floor, and Harsh is higher still, so Lal must be on 3 (Lal on 1 leaves no lower floor for Isha; Lal on 5 leaves no room above). Then Gita is on 4, Kavya on 5 and Harsh on 6. Isha's even floor below 3 is floor 2, and Jai takes floor 1. Gita is on floor 4."
+    },
+    {
+      "id": "IIMCAT-T2-035",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor arrangement",
+      "stimulusId": "IIMCAT-T2-LR1",
+      "stem": "How many people live on the floors between Isha's floor and Harsh's floor?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Lal, Gita and Kavya are on three consecutive floors starting on an odd floor, and Harsh is higher still, so Lal must be on 3 (Lal on 1 leaves no lower floor for Isha; Lal on 5 leaves no room above). Then Gita is on 4, Kavya on 5 and Harsh on 6. Isha's even floor below 3 is floor 2, and Jai takes floor 1. Isha is on 2 and Harsh on 6, so Lal, Gita and Kavya (floors 3, 4 and 5) are between them."
+    },
+    {
+      "id": "IIMCAT-T2-036",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Floor arrangement",
+      "stimulusId": "IIMCAT-T2-LR1",
+      "stem": "Who lives on the floor directly below Kavya?",
+      "options": [
+        "Harsh",
+        "Isha",
+        "Lal",
+        "Gita"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lal, Gita and Kavya are on three consecutive floors starting on an odd floor, and Harsh is higher still, so Lal must be on 3 (Lal on 1 leaves no lower floor for Isha; Lal on 5 leaves no room above). Then Gita is on 4, Kavya on 5 and Harsh on 6. Isha's even floor below 3 is floor 2, and Jai takes floor 1. Kavya is on floor 5 and Gita on floor 4."
+    },
+    {
+      "id": "IIMCAT-T2-037",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Matching",
+      "stimulusId": "IIMCAT-T2-LR2",
+      "stem": "Who is the doctor?",
+      "options": [
+        "Omkar",
+        "Mohan",
+        "Nisha",
+        "Pallavi"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Pune is the lawyer, Surat the doctor and Agra the pilot, so Kochi is the chef. Nisha is not the doctor or lawyer and not in Kochi, so she is the pilot in Agra. Mohan is not in Pune or Agra and not the doctor, so he is the chef in Kochi. Pallavi is not the doctor, so she is the lawyer in Pune and Omkar the doctor in Surat. "
+    },
+    {
+      "id": "IIMCAT-T2-038",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Matching",
+      "stimulusId": "IIMCAT-T2-LR2",
+      "stem": "In which city does Mohan live?",
+      "options": [
+        "Pune",
+        "Agra",
+        "Kochi",
+        "Surat"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Pune is the lawyer, Surat the doctor and Agra the pilot, so Kochi is the chef. Nisha is not the doctor or lawyer and not in Kochi, so she is the pilot in Agra. Mohan is not in Pune or Agra and not the doctor, so he is the chef in Kochi. Pallavi is not the doctor, so she is the lawyer in Pune and Omkar the doctor in Surat. "
+    },
+    {
+      "id": "IIMCAT-T2-039",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Matching",
+      "stimulusId": "IIMCAT-T2-LR2",
+      "stem": "What is Pallavi's job?",
+      "options": [
+        "Pilot",
+        "Lawyer",
+        "Doctor",
+        "Chef"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Pune is the lawyer, Surat the doctor and Agra the pilot, so Kochi is the chef. Nisha is not the doctor or lawyer and not in Kochi, so she is the pilot in Agra. Mohan is not in Pune or Agra and not the doctor, so he is the chef in Kochi. Pallavi is not the doctor, so she is the lawyer in Pune and Omkar the doctor in Surat. "
+    },
+    {
+      "id": "IIMCAT-T2-040",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Matching",
+      "stimulusId": "IIMCAT-T2-LR2",
+      "stem": "Which person is correctly matched with their job?",
+      "options": [
+        "Mohan, lawyer",
+        "Omkar, chef",
+        "Pallavi, doctor",
+        "Nisha, pilot"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Pune is the lawyer, Surat the doctor and Agra the pilot, so Kochi is the chef. Nisha is not the doctor or lawyer and not in Kochi, so she is the pilot in Agra. Mohan is not in Pune or Agra and not the doctor, so he is the chef in Kochi. Pallavi is not the doctor, so she is the lawyer in Pune and Omkar the doctor in Surat. "
+    },
+    {
+      "id": "IIMCAT-T2-041",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Working backwards",
+      "stimulusId": "IIMCAT-T2-LR3",
+      "stem": "How many rupees did Kiran have at the start?",
+      "numeric": {
+        "answers": [
+          "78"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Work backwards. Before round 3, Kiran and Leela had half of 48, that is 24 each, and Manav had 48 + 24 + 24 = 96. Before round 2, Kiran had 12 and Manav 48, and Leela had 24 + 12 + 48 = 84. Before round 1, Leela had 42 and Manav 24, and Kiran had 12 + 42 + 24 = 78. Kiran started with Rs 78."
+    },
+    {
+      "id": "IIMCAT-T2-042",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Working backwards",
+      "stimulusId": "IIMCAT-T2-LR3",
+      "stem": "How many rupees did Leela have at the start?",
+      "numeric": {
+        "answers": [
+          "42"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Work backwards. Before round 3, Kiran and Leela had half of 48, that is 24 each, and Manav had 48 + 24 + 24 = 96. Before round 2, Kiran had 12 and Manav 48, and Leela had 24 + 12 + 48 = 84. Before round 1, Leela had 42 and Manav 24, and Kiran had 12 + 42 + 24 = 78. Leela started with Rs 42."
+    },
+    {
+      "id": "IIMCAT-T2-043",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Working backwards",
+      "stimulusId": "IIMCAT-T2-LR3",
+      "stem": "How many rupees did Manav have at the end of round 2?",
+      "numeric": {
+        "answers": [
+          "96"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Work backwards. Before round 3, Kiran and Leela had half of 48, that is 24 each, and Manav had 48 + 24 + 24 = 96. Before round 2, Kiran had 12 and Manav 48, and Leela had 24 + 12 + 48 = 84. Before round 1, Leela had 42 and Manav 24, and Kiran had 12 + 42 + 24 = 78. At the end of round 2 (just before round 3) Manav had Rs 96."
+    },
+    {
+      "id": "IIMCAT-T2-044",
+      "section": "dilr",
+      "test": 2,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Working backwards",
+      "stimulusId": "IIMCAT-T2-LR3",
+      "stem": "Who held the most money at the end of round 1?",
+      "options": [
+        "Leela",
+        "Kiran",
+        "Manav",
+        "Kiran and Manav equally"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Work backwards. Before round 3, Kiran and Leela had half of 48, that is 24 each, and Manav had 48 + 24 + 24 = 96. Before round 2, Kiran had 12 and Manav 48, and Leela had 24 + 12 + 48 = 84. Before round 1, Leela had 42 and Manav 24, and Kiran had 12 + 42 + 24 = 78. After round 1 the holdings were Kiran 12, Leela 84 and Manav 48, so Leela held the most."
+    },
+    {
+      "id": "IIMCAT-T2-045",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Successive discounts",
+      "stem": "Two successive discounts of 20% and 10% are equal to a single discount of what percentage?",
+      "numeric": {
+        "answers": [
+          "28"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "After 20% off, 80 remains of 100; 10% off that leaves 72. The single discount is 28%, not 30%, because the second discount is taken on a smaller price."
+    },
+    {
+      "id": "IIMCAT-T2-046",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Pipes and cisterns",
+      "stem": "Pipe A fills a tank in 12 hours and pipe B in 20 hours, while pipe C empties the full tank in 30 hours. If all three are opened together on an empty tank, how many hours does it take to fill?",
+      "options": [
+        "7.5",
+        "9",
+        "10",
+        "12"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Net rate = 1/12 + 1/20 - 1/30 = (5 + 3 - 2)/60 = 6/60 of the tank an hour, so it fills in 10 hours. Ignoring C gives 7.5 hours."
+    },
+    {
+      "id": "IIMCAT-T2-047",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Boats and streams",
+      "stem": "A boat's speed in still water is 18 km/h and the stream flows at 2 km/h. How many hours does the boat take to go 40 km downstream and come back?",
+      "numeric": {
+        "answers": [
+          "4.5"
+        ],
+        "tolerance": 0
+      },
+      "explanation": "Downstream speed is 20 km/h and upstream 16 km/h, so the trip takes 40/20 + 40/16 = 2 + 2.5 = 4.5 hours."
+    },
+    {
+      "id": "IIMCAT-T2-048",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Interest",
+      "stem": "The difference between the compound interest and the simple interest on a sum for 2 years at 10% a year is Rs 150. What is the sum, in rupees?",
+      "numeric": {
+        "answers": [
+          "15000"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "For 2 years the difference is the interest on the first year's interest: P x (10/100)^2 = P/100. So P/100 = 150 and P = 15,000."
+    },
+    {
+      "id": "IIMCAT-T2-049",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Weighted average",
+      "stem": "Section A has 30 students with an average mark of 62 and section B has 50 students with an average of 70. What is the average mark of all 80 students?",
+      "options": [
+        "66",
+        "67",
+        "68",
+        "69"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Total marks = 30 x 62 + 50 x 70 = 1,860 + 3,500 = 5,360, and 5,360/80 = 67. The simple average of 62 and 70 is 66, which ignores that B is larger."
+    },
+    {
+      "id": "IIMCAT-T2-050",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Alligation",
+      "stem": "How many kilograms of rice costing Rs 42 per kg must be mixed with 30 kg of rice costing Rs 54 per kg so that the mixture costs Rs 50 per kg?",
+      "numeric": {
+        "answers": [
+          "15"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The cheaper rice is 8 below the mixture price and the dearer 4 above it, so the quantities are in the ratio 4 : 8 = 1 : 2. With 30 kg of the dearer rice, 15 kg of the cheaper one is needed."
+    },
+    {
+      "id": "IIMCAT-T2-051",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Relative speed",
+      "stem": "Two cars 300 km apart set off towards each other at 9:00 a.m., one at 55 km/h and the other at 45 km/h. At what time do they meet?",
+      "options": [
+        "12:00 noon",
+        "1:00 p.m.",
+        "11:30 a.m.",
+        "12:30 p.m."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Moving towards each other, they close the gap at 55 + 45 = 100 km/h, so they meet after 300/100 = 3 hours, at noon."
+    },
+    {
+      "id": "IIMCAT-T2-052",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage change",
+      "stem": "A town's population rises by 10% in one year and falls by 10% the next. Compared with the start, the population:",
+      "options": [
+        "is unchanged",
+        "rises by 1%",
+        "falls by 2%",
+        "falls by 1%"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "100 becomes 110, then 110 - 11 = 99: a net fall of 1%. The 10% fall is taken on the larger figure, so it outweighs the rise."
+    },
+    {
+      "id": "IIMCAT-T2-053",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Quadratic equations",
+      "stem": "The equation $x^2 + kx + 16 = 0$ has two equal roots, and $k$ is positive. What is $k$?",
+      "numeric": {
+        "answers": [
+          "8"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Equal roots need a zero discriminant: $k^2 - 4 \\times 16 = 0$, so $k^2 = 64$ and, since $k$ is positive, $k = 8$."
+    },
+    {
+      "id": "IIMCAT-T2-054",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Functions",
+      "stem": "What is the minimum value of $f(x) = x^2 - 4x$?",
+      "options": [
+        "-8",
+        "-4",
+        "0",
+        "4"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Completing the square, $x^2 - 4x = (x - 2)^2 - 4$, which is smallest, -4, when $x = 2$."
+    },
+    {
+      "id": "IIMCAT-T2-055",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Linear equations",
+      "stem": "The sum of two numbers is 52 and their difference is 14. What is the larger number?",
+      "numeric": {
+        "answers": [
+          "33"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Adding the two equations gives twice the larger number: 52 + 14 = 66, so the larger is 33 and the smaller 19."
+    },
+    {
+      "id": "IIMCAT-T2-056",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Series",
+      "stem": "The sum of the first $n$ odd natural numbers is 400. What is $n$?",
+      "numeric": {
+        "answers": [
+          "20"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The first $n$ odd numbers add up to $n^2$, so $n^2 = 400$ and $n = 20$."
+    },
+    {
+      "id": "IIMCAT-T2-057",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Exponents",
+      "stem": "If $2^{x + 1} = 64$, what is the value of $3^{x - 1}$?",
+      "options": [
+        "9",
+        "27",
+        "81",
+        "243"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$64 = 2^6$, so $x + 1 = 6$ and $x = 5$. Then $3^{x - 1} = 3^4 = 81$."
+    },
+    {
+      "id": "IIMCAT-T2-058",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic inequalities",
+      "stem": "Which values of $x$ satisfy $x^2 - 7x + 12 < 0$?",
+      "options": [
+        "$3 < x < 4$",
+        "$x < 3$ or $x > 4$",
+        "$-4 < x < -3$",
+        "$x > 4$ only"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "$x^2 - 7x + 12 = (x - 3)(x - 4)$, which is negative only between its roots, so $3 < x < 4$. Outside the roots the product is positive."
+    },
+    {
+      "id": "IIMCAT-T2-059",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Logarithms",
+      "stem": "Given that $\\log_{10} 2 = 0.301$, how many digits does $2^{50}$ have?",
+      "numeric": {
+        "answers": [
+          "16"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "$\\log_{10} 2^{50} = 50 \\times 0.301 = 15.05$, so $2^{50}$ lies between $10^{15}$ and $10^{16}$ and has 15 + 1 = 16 digits."
+    },
+    {
+      "id": "IIMCAT-T2-060",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Triangles",
+      "stem": "What is the area of an equilateral triangle with sides of 12 cm, in sq cm?",
+      "options": [
+        "48√3",
+        "72√3",
+        "24√3",
+        "36√3"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Area = (√3/4) x side^2 = (√3/4) x 144 = 36√3. Its height is 6√3, and half of 12 x 6√3 is again 36√3."
+    },
+    {
+      "id": "IIMCAT-T2-061",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Polygons",
+      "stem": "Each interior angle of a regular polygon is 150 degrees. How many sides does it have?",
+      "numeric": {
+        "answers": [
+          "12"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Each exterior angle is 180 - 150 = 30 degrees, and the exterior angles of any polygon add up to 360, so there are 360/30 = 12 sides."
+    },
+    {
+      "id": "IIMCAT-T2-062",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Mensuration",
+      "stem": "A cylinder has a radius of 7 cm and a height of 15 cm. Taking $\\pi = \\frac{22}{7}$, what is its volume in cubic cm?",
+      "numeric": {
+        "answers": [
+          "2310"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Volume = $\\pi r^2 h = \\frac{22}{7} \\times 49 \\times 15 = 2310$ cubic cm."
+    },
+    {
+      "id": "IIMCAT-T2-063",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "Which is the equation of the straight line through the points (1, 2) and (3, 8)?",
+      "options": [
+        "y = 3x - 2",
+        "y = 3x + 1",
+        "y = 3x - 1",
+        "y = 2x"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The slope is (8 - 2)/(3 - 1) = 3. Putting (1, 2) into y = 3x + c gives c = -1. Check with (3, 8): 9 - 1 = 8."
+    },
+    {
+      "id": "IIMCAT-T2-064",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "HCF and LCM",
+      "stem": "The HCF of two numbers is 15 and their LCM is 450. If one of them is 90, what is the other?",
+      "numeric": {
+        "answers": [
+          "75"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "For two numbers, HCF x LCM = product, so the other is 15 x 450 / 90 = 75. Check: HCF(90, 75) = 15 and LCM = 450."
+    },
+    {
+      "id": "IIMCAT-T2-065",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Unit digits",
+      "stem": "What is the units digit of $3^{47}$?",
+      "numeric": {
+        "answers": [
+          "7"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Units digits of powers of 3 repeat 3, 9, 7, 1. Since 47 leaves remainder 3 on division by 4, the units digit is the third in the cycle, 7."
+    },
+    {
+      "id": "IIMCAT-T2-066",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "Two fair dice are thrown. What is the probability that the numbers shown add up to 8?",
+      "options": [
+        "7/36",
+        "5/36",
+        "1/6",
+        "1/9"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The pairs (2, 6), (3, 5), (4, 4), (5, 3) and (6, 2) give 8: 5 of the 36 equally likely outcomes. A total of 7 would have 6 ways, 1/6."
+    },
+    {
+      "id": "IIMCAT-D-001",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-D-RC1",
+      "stem": "The passage argues that note-taking helps memory mainly because it:",
+      "options": [
+        "forces the writer to decide what matters",
+        "lets the writer copy a lecture word for word",
+        "gives the writer a record to look up later",
+        "keeps the writer's hands busy during a lecture"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The author calls the record \"one use\" and says \"the less obvious use\" is that writing a good note \"forces the writer to decide what matters.\""
+    },
+    {
+      "id": "IIMCAT-D-002",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-D-RC1",
+      "stem": "What does the author say about students who copy a lecture word for word?",
+      "options": [
+        "They cannot keep up with a fast speaker",
+        "They are usually the ones who use a pen",
+        "They remember more than students who summarise",
+        "They gain a full record but little understanding"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The second paragraph: such a student \"gains a complete record and very little understanding.\""
+    },
+    {
+      "id": "IIMCAT-D-003",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Author's view",
+      "stimulusId": "IIMCAT-D-RC1",
+      "stem": "The author's position on laptops in lectures is that:",
+      "options": [
+        "the habit of copying is the problem, not the device",
+        "laptops should be banned because they prevent learning",
+        "teachers should decide which students may use them",
+        "laptops are always better than pens for taking notes"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The third paragraph says \"the problem is not the machine but the habit it encourages\"; a laptop user who writes in their own words gains the same benefit."
+    },
+    {
+      "id": "IIMCAT-D-004",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "IIMCAT-D-RC1",
+      "stem": "According to the last paragraph, notes can harm learning when they:",
+      "options": [
+        "contain too many summaries and too few quotations",
+        "are kept too long after the examination is over",
+        "make us believe work is done because words are on the page",
+        "are written by hand rather than typed on a keyboard"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage ends: notes harm \"when they let us believe the work has been done because the words are safely on the page.\""
+    },
+    {
+      "id": "IIMCAT-D-005",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "IIMCAT-D-RC2",
+      "stem": "According to the passage, both common predictions about automated crafts share the assumption that:",
+      "options": [
+        "crafts that survive will become luxuries for the rich",
+        "customers prefer handmade goods to machine-made ones",
+        "machines will always do a task better than people do",
+        "the craft is the same as the task the machine takes over"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The first paragraph says both predictions \"share a mistaken assumption: that the craft is the same thing as the task the machine has taken over.\""
+    },
+    {
+      "id": "IIMCAT-D-006",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "IIMCAT-D-RC2",
+      "stem": "In the carpenter example, why does judgement become more important when cutting is automated?",
+      "options": [
+        "Customers trust machines less than they trust people",
+        "More cut wood exists and more of it can be misused",
+        "Machines make more mistakes than skilled carpenters",
+        "Cutting by machine takes longer than cutting by hand"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The second paragraph: judgement grows in importance \"because there is now more cut wood in the world and more ways for it to be badly used.\""
+    },
+    {
+      "id": "IIMCAT-D-007",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "IIMCAT-D-RC2",
+      "stem": "The author suggests that the tasks machines take over first are usually those that:",
+      "options": [
+        "customers value most when they buy a finished product",
+        "are easiest to describe, not those that made workers valuable",
+        "require the most physical strength and endurance",
+        "involve talking to clients about what they want"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The third paragraph says the tasks machines take over \"are usually the ones that are easiest to describe, and those are often not the ones that made the worker valuable.\""
+    },
+    {
+      "id": "IIMCAT-D-008",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catRC",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Author's view",
+      "stimulusId": "IIMCAT-D-RC2",
+      "stem": "Which statement would the author most likely accept?",
+      "options": [
+        "Every worker in an automated trade will be better off",
+        "Automation always destroys a craft within a generation",
+        "A trade may still need fewer workers after automation",
+        "Judgement can always be written down as a set of rules"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The last paragraph says the argument does not guarantee every worker is better off, since a trade \"may need far fewer hands.\""
+    },
+    {
+      "id": "IIMCAT-D-009",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. It also gives the cook time to prepare the rest of the meal.\n\n2. Many recipes ask for meat to rest for a few minutes after cooking.\n\n3. If it is cut at once, those juices run out onto the plate.\n\n4. Resting lets the juices settle back through the meat.",
+      "numeric": {
+        "answers": [
+          "2431"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentence 2 states the advice, 4 gives the reason, 3 shows what happens otherwise (\"those juices\"), and 1 adds a further benefit with \"also\". Order: 2431."
+    },
+    {
+      "id": "IIMCAT-D-010",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. A rumour, in this sense, is less a piece of news than a sign of what people fear.\n\n2. Rumours spread fastest when official information is scarce.\n\n3. People fill the gap with whatever story fits their worries.\n\n4. The stories that travel furthest are those that confirm what listeners already suspect.",
+      "numeric": {
+        "answers": [
+          "2341"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentence 2 states when rumours spread, 3 explains how people fill the gap, 4 says which stories travel furthest, and 1 draws the conclusion \"in this sense\". Order: 2341."
+    },
+    {
+      "id": "IIMCAT-D-011",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Para-jumble",
+      "stem": "The four sentences below, labelled 1, 2, 3 and 4, form a coherent paragraph when put in the right order. Decide the order and type it as a sequence of four numbers (for example, 2143).\n\n1. The cheaper machine, it turned out, was the more expensive choice.\n\n2. A factory replaced its old pumps with cheaper ones to cut costs.\n\n3. Within a year the new pumps had broken down several times.\n\n4. Each breakdown halted production for a day and cost far more than the savings.",
+      "numeric": {
+        "answers": [
+          "2341"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentence 2 describes the decision, 3 the breakdowns, 4 their cost, and 1 gives the ironic conclusion. Order: 2341."
+    },
+    {
+      "id": "IIMCAT-D-012",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Odd sentence out",
+      "stem": "Five sentences about a topic are given below, labelled 1 to 5. Four of them can be put together to form a coherent paragraph. Identify the sentence that does not fit and type its number.\n\n1. Desert plants have many ways of saving water.\n\n2. Some store water in thick stems or leaves.\n\n3. Others open their pores only at night, when the air is cooler.\n\n4. Camels can go without drinking for long periods.\n\n5. Many have roots that spread wide to catch rare rainfall.",
+      "numeric": {
+        "answers": [
+          "4"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentences 1, 2, 3 and 5 list ways desert plants save water. Sentence 4 is about camels, an animal."
+    },
+    {
+      "id": "IIMCAT-D-013",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Odd sentence out",
+      "stem": "Five sentences about a topic are given below, labelled 1 to 5. Four of them can be put together to form a coherent paragraph. Identify the sentence that does not fit and type its number.\n\n1. A good map legend is short.\n\n2. It explains only the symbols that actually appear on the map.\n\n3. Readers should be able to understand it at a glance.\n\n4. Old maps were often decorated with sea monsters.\n\n5. A long legend sends the reader back and forth and defeats its purpose.",
+      "numeric": {
+        "answers": [
+          "4"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Sentences 1, 2, 3 and 5 argue that a legend should be short and clear. Sentence 4 about decorated old maps is unrelated."
+    },
+    {
+      "id": "IIMCAT-D-014",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"Children who are praised for being clever often avoid hard tasks, because failing would threaten the label. Children praised for effort are more willing to try difficult problems, since a failure says only that they need to work harder. The kind of praise shapes the kind of risks a child will take.\"",
+      "options": [
+        "Children should never be told that they are clever.",
+        "Clever children usually work less hard than others do.",
+        "Failure is the best teacher a child can ever have.",
+        "Praise shapes whether children attempt hard tasks."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage contrasts praise for cleverness and for effort and concludes that \"the kind of praise shapes the kind of risks a child will take.\""
+    },
+    {
+      "id": "IIMCAT-D-015",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"A language with no written form is not a language without rules. Its speakers follow patterns of sound and grammar as consistent as those of any written language. Writing records a language; it does not create its structure.\"",
+      "options": [
+        "Unwritten languages are fully structured; writing only records them.",
+        "Most of the world's languages have never been written down.",
+        "Spoken languages change faster than written languages do.",
+        "Writing a language down makes its grammar more consistent."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says unwritten languages have consistent rules and that writing \"records a language; it does not create its structure.\""
+    },
+    {
+      "id": "IIMCAT-D-016",
+      "section": "varc",
+      "test": 0,
+      "module": 1,
+      "domain": "catVA",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Para summary",
+      "stem": "The passage below is followed by four summaries. Choose the one that best captures the essence of the passage.\n\n\"A team that never disagrees is not necessarily a team that agrees. Its members may simply have learned that raising doubts is unwelcome. Silence of this kind hides problems until they are too large to ignore.\"",
+      "options": [
+        "Silence can hide problems instead of showing agreement.",
+        "Teams should argue constantly so that every idea is tested.",
+        "Teams that agree on everything always make poor decisions.",
+        "Members who raise doubts are usually ignored by their leaders."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage warns that silence may come from fear of raising doubts and so hides problems. It does not call for constant argument."
+    },
+    {
+      "id": "IIMCAT-D-017",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Percentage change",
+      "stimulusId": "IIMCAT-D-DI1",
+      "stem": "By what percentage did coffee exports grow from 2021 to 2024?",
+      "numeric": {
+        "answers": [
+          "50"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Coffee rose from 80 to 120, an increase of 40, and 40/80 = 50%."
+    },
+    {
+      "id": "IIMCAT-D-018",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Year-on-year change",
+      "stimulusId": "IIMCAT-D-DI1",
+      "stem": "In which year did total exports rise by the most over the previous year?",
+      "options": [
+        "2022",
+        "2024",
+        "The rise was equal every year",
+        "2023"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Totals are 300, 310, 354 and 420, so the rises are 10 in 2022, 44 in 2023 and 66 in 2024."
+    },
+    {
+      "id": "IIMCAT-D-019",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Table totals",
+      "stimulusId": "IIMCAT-D-DI1",
+      "stem": "By how many crore rupees did total exports rise from 2021 to 2024?",
+      "numeric": {
+        "answers": [
+          "120"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Total exports were 300 in 2021 and 420 in 2024, a rise of 120."
+    },
+    {
+      "id": "IIMCAT-D-020",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratios",
+      "stimulusId": "IIMCAT-D-DI1",
+      "stem": "What was the ratio of coffee exports to tea exports in 2023?",
+      "options": [
+        "8 : 15",
+        "25 : 16",
+        "2 : 3",
+        "16 : 25"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Coffee 96 to tea 150 is 96 : 150; dividing both by 6 gives 16 : 25."
+    },
+    {
+      "id": "IIMCAT-D-021",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Percentages",
+      "stimulusId": "IIMCAT-D-DI2",
+      "stem": "How many rooms in all were occupied that night?",
+      "numeric": {
+        "answers": [
+          "139"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Standard 75% of 80 = 60, Deluxe 80% of 50 = 40, Suite 60% of 20 = 12, Family 90% of 30 = 27. Total 139."
+    },
+    {
+      "id": "IIMCAT-D-022",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Percentages",
+      "stimulusId": "IIMCAT-D-DI2",
+      "stem": "How many rooms in the hotel were empty that night?",
+      "numeric": {
+        "answers": [
+          "41"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The hotel has 80 + 50 + 20 + 30 = 180 rooms, of which 139 were occupied, leaving 41 empty."
+    },
+    {
+      "id": "IIMCAT-D-023",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Revenue",
+      "stimulusId": "IIMCAT-D-DI2",
+      "stem": "Which two room types earned exactly the same room revenue that night?",
+      "options": [
+        "Suite and Family",
+        "Standard and Family",
+        "Standard and Deluxe",
+        "Deluxe and Family"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Revenue = occupied rooms x rate: Standard 60 x 3,000 = 1,80,000; Deluxe 40 x 4,500 = 1,80,000; Suite 12 x 9,000 = 1,08,000; Family 27 x 5,000 = 1,35,000."
+    },
+    {
+      "id": "IIMCAT-D-024",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catDI",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Revenue",
+      "stimulusId": "IIMCAT-D-DI2",
+      "stem": "What was the room revenue from suites that night, in thousand rupees?",
+      "numeric": {
+        "answers": [
+          "108"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "12 occupied suites x Rs 9,000 = Rs 1,08,000, which is 108 thousand."
+    },
+    {
+      "id": "IIMCAT-D-025",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Stacking",
+      "stimulusId": "IIMCAT-D-LR1",
+      "stem": "Which box is at the top of the stack?",
+      "options": [
+        "Yellow",
+        "White",
+        "Red",
+        "Blue"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Red and blue are a pair (blue directly on red) and green and white are a pair (white directly on green). Green is below red and yellow is above blue, so from the bottom the order is green, white, red, blue, yellow. Yellow is at the top."
+    },
+    {
+      "id": "IIMCAT-D-026",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Stacking",
+      "stimulusId": "IIMCAT-D-LR1",
+      "stem": "In which position (1 to 5) is the red box?",
+      "numeric": {
+        "answers": [
+          "3"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Red and blue are a pair (blue directly on red) and green and white are a pair (white directly on green). Green is below red and yellow is above blue, so from the bottom the order is green, white, red, blue, yellow. Red is third from the bottom."
+    },
+    {
+      "id": "IIMCAT-D-027",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Stacking",
+      "stimulusId": "IIMCAT-D-LR1",
+      "stem": "Which box is directly below the red box?",
+      "options": [
+        "Yellow",
+        "Blue",
+        "Green",
+        "White"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Red and blue are a pair (blue directly on red) and green and white are a pair (white directly on green). Green is below red and yellow is above blue, so from the bottom the order is green, white, red, blue, yellow. White is in position 2, directly below red."
+    },
+    {
+      "id": "IIMCAT-D-028",
+      "section": "dilr",
+      "test": 0,
+      "module": 1,
+      "domain": "catLR",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Stacking",
+      "stimulusId": "IIMCAT-D-LR1",
+      "stem": "How many boxes are above the white box?",
+      "numeric": {
+        "answers": [
+          "3"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Red and blue are a pair (blue directly on red) and green and white are a pair (white directly on green). Green is below red and yellow is above blue, so from the bottom the order is green, white, red, blue, yellow. Red, blue and yellow are above white."
+    },
+    {
+      "id": "IIMCAT-D-029",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Profit and loss",
+      "stem": "The cost price of 15 articles equals the selling price of 12 of them. What is the profit percentage?",
+      "numeric": {
+        "answers": [
+          "25"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Let each article cost 1. Twelve articles sell for 15, so each sells for 15/12 = 1.25, a profit of 25%. 3/15 = 20% is the wrong base."
+    },
+    {
+      "id": "IIMCAT-D-030",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Time and work",
+      "stem": "A is 20% more efficient than B. If B alone finishes a job in 30 days, how many days does A take alone?",
+      "numeric": {
+        "answers": [
+          "25"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "A does 1.2 times B's work each day, so A needs 30/1.2 = 25 days. Taking 20% off 30 gives 24, which is wrong because time varies inversely with efficiency."
+    },
+    {
+      "id": "IIMCAT-D-031",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Relative speed",
+      "stem": "A 150-metre train running at 54 km/h overtakes a man walking at 6 km/h in the same direction. In how many seconds does it pass him?",
+      "options": [
+        "9",
+        "10",
+        "11.25",
+        "12.5"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Relative speed = 54 - 6 = 48 km/h = 48 x 5/18 = 40/3 m/s. Time = 150 / (40/3) = 11.25 s. Adding the speeds (60 km/h) gives 9 s, the time for a man walking towards the train."
+    },
+    {
+      "id": "IIMCAT-D-032",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Simple interest",
+      "stem": "A sum doubles itself in 5 years at simple interest. What is the rate of interest per year, in percent?",
+      "numeric": {
+        "answers": [
+          "20"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Doubling means the interest equals the principal, 100% in 5 years, so the rate is 100/5 = 20% a year."
+    },
+    {
+      "id": "IIMCAT-D-033",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Average speed",
+      "stem": "A cyclist rides from home to a market at 40 km/h and returns along the same road at 60 km/h. What is the average speed for the whole trip, in km/h?",
+      "options": [
+        "45",
+        "48",
+        "50",
+        "52"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "For equal distances the average speed is 2 x 40 x 60 / (40 + 60) = 48 km/h. The simple average, 50, is wrong because more time is spent at the slower speed."
+    },
+    {
+      "id": "IIMCAT-D-034",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Ratios",
+      "stem": "The incomes of A and B are in the ratio 4 : 5 and their expenses in the ratio 3 : 4. If each saves Rs 6,000, what is A's income in rupees?",
+      "numeric": {
+        "answers": [
+          "24000"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Let the incomes be 4x and 5x and the expenses 3y and 4y. Then 4x - 3y = 6,000 and 5x - 4y = 6,000. Subtracting gives x = y, so 4x - 3x = 6,000 and x = 6,000. A's income is 24,000."
+    },
+    {
+      "id": "IIMCAT-D-035",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Percentages",
+      "stem": "A student needs 40% of the maximum marks to pass. She scores 178 marks and fails by 22 marks. What are the maximum marks?",
+      "numeric": {
+        "answers": [
+          "500"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The pass mark is 178 + 22 = 200, which is 40% of the maximum, so the maximum is 200/0.4 = 500."
+    },
+    {
+      "id": "IIMCAT-D-036",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "A and B together can finish a job in 8 days, and A alone in 12 days. How many days would B alone take?",
+      "options": [
+        "16",
+        "20",
+        "24",
+        "30"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "B's rate = 1/8 - 1/12 = 1/24 of the job a day, so B takes 24 days. Subtracting the days, 12 - 8 = 4, has no meaning for rates."
+    },
+    {
+      "id": "IIMCAT-D-037",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Algebraic identities",
+      "stem": "If $x + \\frac{1}{x} = 5$, what is $x^2 + \\frac{1}{x^2}$?",
+      "numeric": {
+        "answers": [
+          "23"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Squaring, $x^2 + 2 + \\frac{1}{x^2} = 25$, so $x^2 + \\frac{1}{x^2} = 23$."
+    },
+    {
+      "id": "IIMCAT-D-038",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Quadratic equations",
+      "stem": "If $p$ and $q$ are the roots of $x^2 - 6x + 4 = 0$, what is $\\frac{1}{p} + \\frac{1}{q}$?",
+      "options": [
+        "0.75",
+        "1.5",
+        "2",
+        "2.5"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$\\frac{1}{p} + \\frac{1}{q} = \\frac{p + q}{pq} = \\frac{6}{4} = 1.5$."
+    },
+    {
+      "id": "IIMCAT-D-039",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Functions",
+      "stem": "If $f(x) = 4x - 7$, for what value of $x$ is $f(x) = 21$?",
+      "numeric": {
+        "answers": [
+          "7"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "$4x - 7 = 21$ gives $4x = 28$ and $x = 7$."
+    },
+    {
+      "id": "IIMCAT-D-040",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Geometric progressions",
+      "stem": "The 3rd term of a geometric progression is 12 and its 6th term is 96. What is the sum of its first 6 terms?",
+      "numeric": {
+        "answers": [
+          "189"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Three steps multiply the term by 8, so the ratio is 2 and the first term is 12/4 = 3. The sum is 3 x (2^6 - 1)/(2 - 1) = 3 x 63 = 189."
+    },
+    {
+      "id": "IIMCAT-D-041",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Maxima and minima",
+      "stem": "What is the greatest value of $-x^2 + 6x + 7$?",
+      "options": [
+        "7",
+        "9",
+        "16",
+        "25"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$-x^2 + 6x + 7 = 16 - (x - 3)^2$, so the greatest value is 16, at $x = 3$."
+    },
+    {
+      "id": "IIMCAT-D-042",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Integer solutions",
+      "stem": "How many ordered pairs of positive integers $(x, y)$ satisfy $3x + 4y = 48$?",
+      "numeric": {
+        "answers": [
+          "3"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "$4y = 48 - 3x$, so $3x$ and therefore $x$ must be a multiple of 4: $x = 4, 8, 12$ give $y = 9, 6, 3$. $x = 16$ gives $y = 0$, which is not positive. Three pairs."
+    },
+    {
+      "id": "IIMCAT-D-043",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Word problems",
+      "stem": "A father is three times as old as his son. In 12 years he will be twice as old as his son. How old is the son now, in years?",
+      "numeric": {
+        "answers": [
+          "12"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Let the son be $s$: $3s + 12 = 2(s + 12)$, so $s = 12$ and the father is 36."
+    },
+    {
+      "id": "IIMCAT-D-044",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catAlgebra",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modulus equations",
+      "stem": "What is the sum of all values of $x$ that satisfy $|2x - 5| = 9$?",
+      "options": [
+        "2",
+        "5",
+        "7",
+        "9"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "$2x - 5 = 9$ gives $x = 7$ and $2x - 5 = -9$ gives $x = -2$. Their sum is 5; 7 is only the larger value."
+    },
+    {
+      "id": "IIMCAT-D-045",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Mensuration",
+      "stem": "A rectangle has a perimeter of 46 cm and a diagonal of 17 cm. What is its area in sq cm?",
+      "numeric": {
+        "answers": [
+          "120"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Length + width = 23 and length^2 + width^2 = 289. Since (l + w)^2 = l^2 + w^2 + 2lw, 529 = 289 + 2lw, so lw = 120. The sides are 15 and 8."
+    },
+    {
+      "id": "IIMCAT-D-046",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Triangles",
+      "stem": "The angles of a triangle are in the ratio 5 : 6 : 7. What is the largest angle, in degrees?",
+      "numeric": {
+        "answers": [
+          "70"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The parts total 18, and the angles add up to 180 degrees, so one part is 10 degrees and the largest angle is 7 x 10 = 70."
+    },
+    {
+      "id": "IIMCAT-D-047",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the volume of a sphere of radius 3 cm, in cubic cm?",
+      "options": [
+        "108π",
+        "27π",
+        "12π",
+        "36π"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Volume = (4/3)πr^3 = (4/3) x 27 x π = 36π. Forgetting the 1/3 gives 108π."
+    },
+    {
+      "id": "IIMCAT-D-048",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Circles",
+      "stem": "A chord 16 cm long is drawn in a circle of radius 10 cm. How far is the chord from the centre, in cm?",
+      "numeric": {
+        "answers": [
+          "6"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The perpendicular from the centre bisects the chord, giving a right triangle with hypotenuse 10 and one side 8. The distance is the square root of 100 - 64 = 36, which is 6."
+    },
+    {
+      "id": "IIMCAT-D-049",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Similar triangles",
+      "stem": "Two similar triangles have corresponding sides in the ratio 2 : 3. What is the ratio of their areas?",
+      "options": [
+        "4 : 9",
+        "9 : 4",
+        "8 : 27",
+        "2 : 3"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Areas of similar figures are in the ratio of the squares of their sides: 2^2 : 3^2 = 4 : 9. The cube ratio, 8 : 27, applies to volumes."
+    },
+    {
+      "id": "IIMCAT-D-050",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "Mensuration",
+      "stem": "A trapezium has parallel sides of 10 cm and 16 cm and a height of 7 cm. What is its area in sq cm?",
+      "numeric": {
+        "answers": [
+          "91"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Area = half the sum of the parallel sides x height = (10 + 16)/2 x 7 = 13 x 7 = 91 sq cm."
+    },
+    {
+      "id": "IIMCAT-D-051",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coordinate geometry",
+      "stem": "What is the midpoint of the segment joining (-6, 9) and (10, -3)?",
+      "options": [
+        "(8, -6)",
+        "(8, 6)",
+        "(2, 6)",
+        "(2, 3)"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Average the coordinates: x = (-6 + 10)/2 = 2 and y = (9 - 3)/2 = 3. Halving the differences instead gives (8, -6)."
+    },
+    {
+      "id": "IIMCAT-D-052",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catGeometry",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Circles",
+      "stem": "A square is drawn inside a circle of radius 5 cm so that all four corners touch the circle. What is the area of the square, in sq cm?",
+      "numeric": {
+        "answers": [
+          "50"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The square's diagonal is the circle's diameter, 10 cm. The area of a square is half the square of its diagonal: 100/2 = 50 sq cm."
+    },
+    {
+      "id": "IIMCAT-D-053",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Factorials",
+      "stem": "How many zeros are there at the end of 100! (100 factorial)?",
+      "numeric": {
+        "answers": [
+          "24"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Each trailing zero needs a factor 5. 100/5 = 20 multiples of 5 and 100/25 = 4 multiples of 25 give 20 + 4 = 24."
+    },
+    {
+      "id": "IIMCAT-D-054",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 1,
+      "format": "numeric",
+      "skill": "LCM",
+      "stem": "What is the smallest positive number divisible by 16, 24 and 40?",
+      "numeric": {
+        "answers": [
+          "240"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "$16 = 2^4$, $24 = 2^3 \\times 3$ and $40 = 2^3 \\times 5$, so the LCM takes the highest power of each prime: $2^4 \\times 3 \\times 5 = 240$."
+    },
+    {
+      "id": "IIMCAT-D-055",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Permutations",
+      "stem": "In how many different ways can the letters of the word LEVEL be arranged?",
+      "numeric": {
+        "answers": [
+          "30"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "Five letters with L twice and E twice give 5!/(2! x 2!) = 120/4 = 30 arrangements."
+    },
+    {
+      "id": "IIMCAT-D-056",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Remainders",
+      "stem": "What is the remainder when $17^{23}$ is divided by 16?",
+      "numeric": {
+        "answers": [
+          "1"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "17 leaves remainder 1 on division by 16, so every power of 17 does too."
+    },
+    {
+      "id": "IIMCAT-D-057",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Factors",
+      "stem": "What is the sum of all the positive factors of 36?",
+      "numeric": {
+        "answers": [
+          "91"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The factors are 1, 2, 3, 4, 6, 9, 12, 18 and 36, which add up to 91. By formula, (1 + 2 + 4)(1 + 3 + 9) = 7 x 13 = 91."
+    },
+    {
+      "id": "IIMCAT-D-058",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A fair coin is tossed four times. What is the probability of getting at least one head?",
+      "options": [
+        "15/16",
+        "1/16",
+        "1/2",
+        "3/4"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The only outcome with no head is four tails, probability 1/16, so at least one head has probability 1 - 1/16 = 15/16."
+    },
+    {
+      "id": "IIMCAT-D-059",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Permutations",
+      "stem": "In how many ways can 5 people stand in a row if two particular people must stand next to each other?",
+      "options": [
+        "24",
+        "48",
+        "60",
+        "120"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Treat the pair as one unit: 4 units can be arranged in 4! = 24 ways, and the pair can stand in 2 orders, giving 48."
+    },
+    {
+      "id": "IIMCAT-D-060",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Series",
+      "stem": "What is the sum of all the multiples of 3 between 1 and 100?",
+      "numeric": {
+        "answers": [
+          "1683"
+        ],
+        "tolerance": 0,
+        "wholeNumber": true
+      },
+      "explanation": "The multiples are 3, 6, ..., 99, which is 33 terms. Their sum is 3 x (1 + 2 + ... + 33) = 3 x 561 = 1683."
+    },
+    {
+      "id": "IIMCAT-D-061",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "catNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "HCF",
+      "stem": "What is the HCF of 144 and 252?",
+      "options": [
+        "12",
+        "18",
+        "36",
+        "72"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "$144 = 2^4 \\times 3^2$ and $252 = 2^2 \\times 3^2 \\times 7$, so the HCF is $2^2 \\times 3^2 = 36$."
+    }
+  ]
+}

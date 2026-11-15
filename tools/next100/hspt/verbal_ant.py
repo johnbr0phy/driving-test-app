@@ -1,0 +1,48 @@
+# HSPT Verbal Skills: antonyms. Original items.
+ITEMS = [
+  # ---------------- Practice Test 1 ----------------
+  dict(test=1, skill="Antonyms", diff=1,
+       stem="Which word means the opposite of **generous**?",
+       key="stingy", wrong=["thankful", "honest", "wealthy"],
+       expl="A generous person gives freely; a stingy person hates to give anything away. Wealthy describes how much someone has, not how they share it."),
+  dict(test=1, skill="Antonyms", diff=2,
+       stem="**Expand** is the opposite of:",
+       key="shrink", wrong=["stretch", "divide", "repeat"],
+       expl="To expand is to grow larger, so the opposite is to shrink. Stretch is close to expand in meaning, not opposite."),
+  dict(test=1, skill="Antonyms", diff=2,
+       stem="Which word means the opposite of **conceal**?",
+       key="reveal", wrong=["protect", "examine", "disguise"],
+       expl="To conceal is to hide, so the opposite is to reveal, or show. Disguise is another way of hiding, so it is a near synonym."),
+
+  # ---------------- Practice Test 2 ----------------
+  dict(test=2, skill="Antonyms", diff=1,
+       stem="Which word means the opposite of **temporary**?",
+       key="permanent", wrong=["brief", "recent", "sudden"],
+       expl="Something temporary lasts only for a while; something permanent lasts for good. Brief means nearly the same as temporary."),
+  dict(test=2, skill="Antonyms", diff=1,
+       stem="**Fragile** is the opposite of:",
+       key="sturdy", wrong=["delicate", "heavy", "costly"],
+       expl="Something fragile breaks easily; something sturdy is strong and hard to break. Delicate means nearly the same as fragile."),
+  dict(test=2, skill="Antonyms", diff=2,
+       stem="Which word means the opposite of **gloomy**?",
+       key="cheerful", wrong=["cloudy", "quiet", "tired"],
+       expl="A gloomy person or mood is dark and sad; a cheerful one is bright and happy. Cloudy can describe gloomy weather, but it is not an opposite."),
+
+  # ---------------- Drill only ----------------
+  dict(test=0, skill="Antonyms", diff=3,
+       stem="Which word means the opposite of **opaque**?",
+       key="transparent", wrong=["glittering", "dark-tinted", "unpainted"],
+       expl="Light cannot pass through something opaque; it passes straight through something transparent, like clear glass. Dark-tinted glass is closer to opaque."),
+  dict(test=0, skill="Antonyms", diff=2,
+       stem="**Praise** is the opposite of:",
+       key="criticize", wrong=["celebrate", "encourage", "recognize"],
+       expl="To praise is to say good things about someone; to criticize is to point out faults. Celebrate and encourage are both close to praise."),
+  dict(test=0, skill="Antonyms", diff=2,
+       stem="Which word means the opposite of **rigid**?",
+       key="flexible", wrong=["breakable", "unbending", "polished"],
+       expl="Something rigid does not bend; something flexible bends easily. Unbending means the same as rigid."),
+  dict(test=0, skill="Antonyms", diff=2,
+       stem="**Hinder** is the opposite of:",
+       key="help", wrong=["delay", "block", "warn"],
+       expl="To hinder is to get in the way of something, so the opposite is to help. Delay and block are ways of hindering."),
+]

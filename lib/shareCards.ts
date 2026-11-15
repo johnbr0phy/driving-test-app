@@ -680,6 +680,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(330, 35%, 32%)",
     "tint": "hsl(330, 35%, 96%)"
   },
+  "rma": {
+    "color": "hsl(72, 85%, 26%)",
+    "tint": "hsl(72, 50%, 95%)"
+  },
   "nhie": {
     "color": "hsl(30, 35%, 28%)",
     "tint": "hsl(30, 35%, 96%)"
@@ -747,6 +751,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "rdexam": {
     "color": "hsl(91, 20%, 26%)",
     "tint": "hsl(91, 20%, 96%)"
+  },
+  "ccrn": {
+    "color": "hsl(252, 25%, 46%)",
+    "tint": "hsl(252, 25%, 96%)"
   },
   "praxis5001": {
     "color": "hsl(39, 40%, 26%)",
@@ -891,6 +899,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "dkmoto": {
     "color": "hsl(12, 85%, 24%)",
     "tint": "hsl(12, 85%, 96%)"
+  },
+  "dktruck": {
+    "color": "hsl(331, 85%, 30%)",
+    "tint": "hsl(331, 70%, 96%)"
   },
   "setrafik": {
     "color": "hsl(203, 85%, 25%)",
@@ -1115,6 +1127,14 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "nzsfe": {
     "color": "hsl(305, 30%, 22%)",
     "tint": "hsl(305, 25%, 95%)"
+  },
+  "nziqn": {
+    "color": "hsl(180, 85%, 34%)",
+    "tint": "hsl(180, 60%, 95%)"
+  },
+  "nzensf": {
+    "color": "hsl(331, 70%, 38%)",
+    "tint": "hsl(331, 60%, 96%)"
   },
   "sgrtt": {
     "color": "hsl(105, 60%, 22%)",

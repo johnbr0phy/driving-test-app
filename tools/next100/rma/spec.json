@@ -1,0 +1,21 @@
+{
+  "id": "rma", "stateCode": "RMA", "idBase": 28500, "prefix": "RMA-",
+  "slug": "/rma", "landingPath": "/rma-practice-test", "dataFile": "data/rma-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "rmaAnatomy", "perTest": 6, "pool": 24, "segment": "ANA"},
+    {"key": "rmaTerms", "perTest": 4, "pool": 16, "segment": "TER"},
+    {"key": "rmaLaw", "perTest": 3, "pool": 12, "segment": "LAW"},
+    {"key": "rmaHuman", "perTest": 2, "pool": 8, "segment": "HUM"},
+    {"key": "rmaInsurance", "perTest": 3, "pool": 12, "segment": "INS"},
+    {"key": "rmaClerical", "perTest": 4, "pool": 16, "segment": "CLE"},
+    {"key": "rmaInfection", "perTest": 4, "pool": 16, "segment": "INF"},
+    {"key": "rmaInstruments", "perTest": 3, "pool": 12, "segment": "SUR"},
+    {"key": "rmaLab", "perTest": 5, "pool": 20, "segment": "LAB"},
+    {"key": "rmaVitals", "perTest": 4, "pool": 16, "segment": "VIT"},
+    {"key": "rmaExams", "perTest": 5, "pool": 20, "segment": "EXM"},
+    {"key": "rmaPharm", "perTest": 5, "pool": 20, "segment": "PHA"},
+    {"key": "rmaTherapy", "perTest": 2, "pool": 8, "segment": "THR"}
+  ],
+  "notes": "AMT RMA Examination Specifications (2026): General 65, Administrative 30, Clinical 115 of 210. Scaled to 50: General 15, Administrative 7, Clinical 28; split inside each work area is Tigertest's."
+}

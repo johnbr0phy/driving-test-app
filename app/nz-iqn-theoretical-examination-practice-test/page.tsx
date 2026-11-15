@@ -17,9 +17,9 @@ const path = "/nz-iqn-theoretical-examination-practice-test";
 
 const title = "Free NZ IQN Theoretical Examination Practice Test 2026";
 const metaDescription =
-  "Free practice for the Nursing Council of New Zealand IQN theoretical exam: Part A medication safety calculations and Part B nursing knowledge on the 2025 standards, with rationales.";
+  "Start for free: practice for the Nursing Council of New Zealand IQN theoretical exam, Part A medication safety calculations and Part B nursing knowledge on the 2025 standards, with rationales.";
 const description =
-  "Free practice for overseas-trained registered nurses sitting the Nursing Council of New Zealand IQN theoretical examination. Two practice tests: Part A medication safety in full, 12 questions in 30 minutes with a calculator, and Part B nursing knowledge at half length and the real pace, 54 questions in 68 minutes, plus drills for medication safety and every pou of the 2025 standards of competence, all written for New Zealand practice.";
+  "Free-to-start practice for overseas-trained registered nurses sitting the Nursing Council of New Zealand IQN theoretical examination. Two practice tests: Part A medication safety in full, 12 questions in 30 minutes with a calculator, and Part B nursing knowledge at half length and the real pace, 54 questions in 68 minutes, plus drills for medication safety and every pou of the 2025 standards of competence, all written for New Zealand practice.";
 
 const faqs = [
   {

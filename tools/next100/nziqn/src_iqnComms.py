@@ -14,7 +14,7 @@ ITEMS = [
      ["How effective they have been", "Your opinion of the patient", "Only what the doctor ordered", "Only abnormal findings"],
      "The Code's documentation guidance: keep clear and accurate records of the discussions you have, the assessments you make, the care and medicines you give, and how effective these have been."),
     ("S", 1, 2, "Communication needs",
-     "A patient nods along but seems not to follow. Which descriptor asks the nurse to determine his communication needs?",
+     "A patient nods along but seems not to follow what the nurse explains. Which competence descriptor applies most?",
      ["Determines communication needs", "Engages in quality improvement", "Applies infection control rules", "Develops differential diagnoses"],
      "Descriptor 3.2: the nurse determines the language and communication needs, verbal and non-verbal, of people, whānau and communities. Nodding is not proof of understanding."),
     ("S", 1, 2, "Right 5",

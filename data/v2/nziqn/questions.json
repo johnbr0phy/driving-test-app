@@ -448,17 +448,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Early warning score",
-    "stem": "Which change did New Zealand add to its early warning score as a marker of deterioration?",
+    "stem": "Which marker of deterioration does the New Zealand Early Warning Score include, following the UK NEWS2 update?",
     "options": [
-      "Raised pain score",
+      "New confusion",
       "Low urine output",
       "Weight loss",
-      "New confusion"
+      "Raised pain score"
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "The New Zealand Early Warning Score added new confusion as a deterioration marker. Pain is recorded on the chart but not scored, and urine output is not part of the score."
+    "explanation": "Following NEWS2, the NZEWS includes new confusion as a marker of deterioration. Pain is recorded on the chart but not scored, and urine output is not part of the score."
   },
   {
     "id": "NZIQN-T1-022",
@@ -637,15 +637,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Communication needs",
-    "stem": "A patient nods along but seems not to follow. Which descriptor asks the nurse to determine his communication needs?",
+    "stem": "A patient nods along but seems not to follow what the nurse explains. Which competence descriptor applies most?",
     "options": [
+      "Develops differential diagnoses",
       "Determines communication needs",
-      "Engages in quality improvement",
       "Applies infection control rules",
-      "Develops differential diagnoses"
+      "Engages in quality improvement"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Descriptor 3.2: the nurse determines the language and communication needs, verbal and non-verbal, of people, whānau and communities. Nodding is not proof of understanding."
   },

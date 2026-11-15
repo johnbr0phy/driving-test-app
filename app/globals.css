@@ -1465,6 +1465,19 @@
     --brand-border-light: 159 40% 88%;
     --brand-gradient-to: 174 60% 94%;
   }
+  /* SHSAT theme: deep olive gold (v2 exam; matches lib/v2/exams/shsat.ts theme) */
+  [data-theme="shsat"] {
+    --brand: 63 100% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 63 80% 95%;
+    --brand-hover: 63 100% 20%;
+    --brand-dark: 63 100% 17%;
+    --brand-darker: 63 95% 11%;
+    --brand-muted: 63 40% 68%;
+    --brand-border: 63 45% 76%;
+    --brand-border-light: 63 45% 87%;
+    --brand-gradient-to: 50 80% 94%;
+  }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
     --brand: 256 90% 37%;
@@ -6197,6 +6210,17 @@
     --brand-dark: 159 95% 65%;
     --brand-darker: 159 90% 78%;
   }
+
+  .dark [data-theme="shsat"] {
+    --brand-light: 63 45% 13%;
+    --brand-gradient-to: 50 40% 11%;
+    --brand-border-light: 63 35% 24%;
+    --brand-border: 63 40% 34%;
+    --brand-muted: 63 40% 45%;
+    --brand-dark: 63 100% 65%;
+    --brand-darker: 63 95% 78%;
+  }
+
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;
     --brand-hover: 256 90% 42%;

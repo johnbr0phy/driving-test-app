@@ -2150,6 +2150,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the FAA Private Pilot for Airplane Category ACS (FAA-S-ACS-6C) and the FAA ACS knowledge test table",
     source: { name: "FAA", url: "https://www.faa.gov/training_testing/testing/acs" },
   },
+  shsat: {
+    answer:
+      "The SHSAT (Specialized High Schools Admissions Test) is the NYC Public Schools test that decides admission to eight of New York City's nine Specialized High Schools, including Stuyvesant, Bronx Science and Brooklyn Tech (LaGuardia uses an audition). NYC residents in 8th grade, or in 9th grade for the first time, can take it in the fall before the school year they want to enter. From fall 2026 it is a computer-adaptive test on DOE computers: 50 English Language Arts questions (Revising/Editing and Reading Comprehension) and 50 Math questions in 180 minutes, with the student choosing which subject to start with and how to split the time. Each subject includes 10 unscored field-test items. There is no calculator and no formula sheet. Scaled scores in the two subjects are added into a composite that ranks students for offers; there is no pass mark.",
+    rows: [
+      { label: "Who takes it", value: "NYC residents in grade 8, or in grade 9 for the first time" },
+      { label: "Questions", value: "50 ELA and 50 Math, including 10 unscored field-test items in each" },
+      { label: "Time", value: "180 minutes in all, split between the subjects as the student chooses" },
+      { label: "Format", value: "Computer adaptive from fall 2026; multiple choice, fill-in-the-blank and technology-enhanced items" },
+      { label: "ELA", value: "Revising/Editing Parts A and B, Reading Comprehension" },
+      { label: "Math", value: "NYS standards through Grade 7 on Grade 8 forms; no calculator, no formulas given" },
+      { label: "Score", value: "Two scaled subtest scores added into a composite used to rank students" },
+      { label: "Pass mark", value: "None: the composite ranks students for offers" },
+    ],
+    basedOn: "NYC Public Schools' NYC Guide to the SHSAT for 2027 Admissions and its SHSAT test page",
+    source: { name: "NYC Public Schools: Specialized High Schools Admissions Test", url: "https://www.schools.nyc.gov/learning/testing/specialized-high-school-admissions-test/" },
+    tigertest:
+      "Tigertest has two full SHSAT practice tests of 50 ELA and 50 Math questions in 3 hours, with Revising/Editing Parts A and B, informational and literary reading passages and math without a calculator, scored as percent correct, plus eight drills, two of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no scaled score.",
+  },
   mapgrowth: {
     answer:
       "MAP Growth is NWEA's computer adaptive test that many US schools give in the fall, winter and spring (and sometimes summer) to measure what a student knows and how much they grow. Students in grades 2 to 5 take Math 2-5, Reading 2-5 and Language Usage 2+. Each test is untimed, usually takes about 45 to 60 minutes, and has at most 43 questions, a few of them unscored field-test items. Questions get harder or easier as the student answers, and the result is a RIT score, compared with national norms updated in 2025. Math covers Operations and Algebraic Thinking, Number and Operations, Measurement and Data, and Geometry; Reading covers Literary Text, Informational Text and Vocabulary; Language Usage covers writing, grammar and usage, and mechanics.",

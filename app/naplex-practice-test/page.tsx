@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "NAPLEX Practice Test 2026 - Pharmacist Licensure Exam Questions";
+const title = "Free NAPLEX Practice Test 2026 - Pharmacist Licensure Exam Questions";
 const metaDescription =
   "NAPLEX practice test: 236 original pharmacist licensure questions on NABP's 2025 content outline, with typed calculations, select all that apply, ordered questions and explanations.";
 const description =
@@ -127,7 +127,7 @@ export default function NaplexLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            NAPLEX Practice Test 2026
+            Free NAPLEX Practice Test 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/naplex/dashboard"

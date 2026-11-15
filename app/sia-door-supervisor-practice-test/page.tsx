@@ -15,7 +15,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "SIA Door Supervisor Practice Test 2026 - Free Mock Exams";
+const title = "Free SIA Door Supervisor Practice Test 2026 - Mock Exams";
 const metaDescription =
   "Free SIA door supervisor mock exams: 200 original questions on the law, arrest, searching, licensing, drugs, terrorism, conflict and physical intervention. All explained.";
 const description =
@@ -126,7 +126,7 @@ export default function UksiaLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            SIA Door Supervisor Practice Test 2026
+            Free SIA Door Supervisor Practice Test 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/sia-door-supervisor/dashboard"

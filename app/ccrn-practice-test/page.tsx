@@ -15,7 +15,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "CCRN Practice Test 2026 - Free Adult CCRN Exam Questions";
+const title = "Free CCRN Practice Test 2026 - Adult CCRN Exam Questions";
 const metaDescription =
   "Free CCRN practice test: 200 original questions on the AACN Adult CCRN test plan, four 50-question mock exams and five training sets, every answer explained.";
 const description =
@@ -124,7 +124,7 @@ export default function CcrnLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            CCRN Practice Test 2026
+            Free CCRN Practice Test 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/ccrn/dashboard"

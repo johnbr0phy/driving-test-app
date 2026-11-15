@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "SGI Learner's Practice Test 2026 - Saskatchewan Class 7";
+const title = "Free SGI Learner's Practice Test 2026 - Saskatchewan Class 7";
 const metaDescription =
   "Free Saskatchewan Class 7 learner's practice test: 200 original questions from the SGI Driver's Handbook on signs, rules of the road and GDL rules, all explained.";
 const description =

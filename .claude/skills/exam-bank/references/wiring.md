@@ -96,7 +96,8 @@ Then run `npx tsx scripts/build-training-parts.ts` (it writes the exam's practic
 `lib/trainingParts.json`).
 
 ## 9. `app/<landing>/page.tsx`
-Model on `app/vtne-practice-test/page.tsx`. Keep the structure: metadata (title with the
+Model on `app/vtne-practice-test/page.tsx`. Keep the structure: the `<h1>` reads "Free <Name> Practice
+Test <year>" and the metadata title says Free too (`tests/landing-free-to-start.test.cjs`), metadata (title with the
 year, description, keywords, canonical, OG image `/og/<id>`), `WebApplication` + `Organization`
 + `FAQPage` JSON-LD, `<ExamLandingHero>` with `shots` at
 `/landing/<id>-mobile.png` and `/landing/<id>-desktop.png` (it shows the dark twins and turns the

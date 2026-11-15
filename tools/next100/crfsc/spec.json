@@ -1,0 +1,17 @@
+{
+  "id": "crfsc", "stateCode": "CRFSC", "idBase": 29200, "prefix": "CRFSC-",
+  "slug": "/canadian-restricted-firearms", "landingPath": "/canadian-restricted-firearms-safety-course-practice-test",
+  "dataFile": "data/canadian-restricted-firearms-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 80,
+  "categories": [
+    {"key": "crfscParts", "perTest": 6, "pool": 24, "segment": "PRT"},
+    {"key": "crfscSafety", "perTest": 6, "pool": 24, "segment": "SAF"},
+    {"key": "crfscAmmo", "perTest": 6, "pool": 24, "segment": "AMM"},
+    {"key": "crfscActions", "perTest": 8, "pool": 32, "segment": "ACT"},
+    {"key": "crfscFiring", "perTest": 7, "pool": 28, "segment": "FIR"},
+    {"key": "crfscCare", "perTest": 4, "pool": 16, "segment": "CAR"},
+    {"key": "crfscLaw", "perTest": 7, "pool": 28, "segment": "LAW"},
+    {"key": "crfscStorage", "perTest": 6, "pool": 24, "segment": "STO"}
+  ],
+  "notes": "RCMP CRFSC topic list (rcmp.ca safety courses page, fetched 2026-11-15), in its order. RCMP publishes no weights; per-test counts are Tigertest's."
+}

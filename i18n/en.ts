@@ -1060,6 +1060,15 @@ export const en = {
     rmaExams: "Physical Examinations",
     rmaPharm: "Clinical Pharmacology",
     rmaTherapy: "Therapeutic Modalities & First Aid",
+    // crfsc
+    crfscParts: "Parts, Types & Actions",
+    crfscSafety: "Basic Firearms Safety",
+    crfscAmmo: "Ammunition",
+    crfscActions: "Operating Handgun Actions",
+    crfscFiring: "Firing Techniques & Range Procedures",
+    crfscCare: "Care of Restricted Firearms",
+    crfscLaw: "Owner Responsibilities & the Law",
+    crfscStorage: "Storage, Display & Transport",
     // ascppbt
     pbtCirc: "Circulatory System",
     pbtOrders: "Orders, Identification & Patient Prep",

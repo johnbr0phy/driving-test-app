@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  crfsc: {
+      answer:
+        "The Canadian Restricted Firearms Safety Course (CRFSC) is the RCMP Canadian Firearms Program course for anyone who wants to acquire restricted firearms, such as most handguns. To apply for a Possession and Acquisition Licence for restricted firearms you must have passed both the CFSC and the CRFSC; a CFSC passed before February 1, 1999 counts for both. The course ends with a written test and a practical test. The RCMP does not publish the length or pass mark; course providers say the written test is multiple choice and the pass mark is 80% on each test. Since October 21, 2022 most individuals cannot acquire handguns under the national handgun freeze, but the course still covers all restricted firearms.",
+      rows: [
+        { label: "Tests", value: "A written test and a practical test" },
+        { label: "Pass mark", value: "Not published by the RCMP; course providers say 80% on each test" },
+        { label: "Who it is for", value: "Anyone who wants to acquire restricted firearms (RCMP: over 18)" },
+        { label: "Licence", value: "A restricted PAL needs both the CFSC and the CRFSC" },
+        { label: "Taught by", value: "Qualified instructors designated through the Chief Firearms Officer" },
+        { label: "Topics", value: "Handgun parts and actions, ammunition, firing, care, the law, storage and transport" },
+        { label: "Handgun freeze", value: "Most individuals cannot acquire handguns since October 21, 2022" },
+      ],
+      basedOn: "the RCMP Canadian Firearms Program safety course pages and PAL application notes (form RCMP 5592), the Firearms Act and its storage and transport regulations as current to 2026-10-19, and Public Safety Canada's handgun freeze page, checked November 2026",
+      source: { name: "RCMP: Firearms safety courses", url: "https://rcmp.ca/en/firearms/firearms-safety-training-transport-and-storage/safety-courses" },
+    },
   ascppbt: {
       answer:
         "The PBT(ASCP) exam is the phlebotomy technician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the PBT(ASCP) credential (PBT(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 80 multiple-choice questions with one best answer in 2 hours, delivered as computer adaptive testing. Content areas are Specimen Collection 45 to 50%, Specimen Handling, Transport, and Processing 15 to 20%, Laboratory Operations 15 to 20%, and the Circulatory System, Waived and Point-of-Care Testing and Non-Blood Specimens 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score; guides say the scale is 100 to 999 with 400 to pass.",

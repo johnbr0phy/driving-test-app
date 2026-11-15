@@ -1,4 +1,5 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  crfsc: { title: "Free CRFSC Practice Test", description: "200 original questions for the Canadian Restricted Firearms Safety Course: handguns, ammunition, firing, care and the restricted storage and transport rules." },
   ascppbt: { title: "Free PBT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC phlebotomy content guideline, four 50-question practice tests." },
   rpt: { title: "Free RPT (AMT) Practice Test", description: "200 original questions on the AMT RPT exam specifications, four 50-question practice tests." },
   hspachl: { title: "Free CHL Healthcare Leader Practice Test", description: "200 original questions on the 2026 HSPA CHL outline for sterile processing leaders. Free to start." },

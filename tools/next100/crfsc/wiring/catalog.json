@@ -1,0 +1,46 @@
+{
+  "blurb": "Free practice for the Canadian Restricted Firearms Safety Course (CRFSC) written test for a restricted PAL: handgun parts and actions, ammunition, firing techniques, care, and the federal rules for storing, displaying and transporting restricted firearms.",
+  "org": "RCMP Canadian Firearms Program",
+  "group": "Canada trades and workplace certificates",
+  "aliases": [
+    "rpal",
+    "rpal test",
+    "rpal exam",
+    "restricted pal",
+    "restricted firearms licence",
+    "crfsc",
+    "canadian restricted firearms safety course",
+    "restricted firearms course",
+    "handgun course canada",
+    "handgun licence canada",
+    "pistol licence canada",
+    "authorization to transport"
+  ],
+  "teacherLed": false,
+  "borrowTiger": "capal",
+  "shareTitle": "Free CRFSC Practice Test",
+  "shareDescription": "200 original questions for the Canadian Restricted Firearms Safety Course: handguns, ammunition, firing, care and the restricted storage and transport rules.",
+  "searchTests": [
+    [
+      "rpal test",
+      "CA",
+      "crfsc"
+    ],
+    [
+      "crfsc",
+      "CA",
+      "crfsc"
+    ],
+    [
+      "restricted firearms safety course",
+      "CA",
+      "crfsc"
+    ],
+    [
+      "canada handgun licence test",
+      "CA",
+      "crfsc"
+    ]
+  ],
+  "region": "CA"
+}

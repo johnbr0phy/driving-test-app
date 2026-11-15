@@ -4,6 +4,7 @@ import { EXAM_KEY_RE, QUESTION_ID_RE } from "@/lib/questionQuality";
 import { requireAdmin } from "@/lib/server/adminAuth";
 import { buildQuestionHealth } from "@/lib/server/questionHealth";
 import { clearQuestionReview, resetQuestionSignals } from "@/lib/server/questionFlagReviews";
+import { emailReporter } from "@/lib/server/reportReply";
 
 // The /admin Questions tab: GET the payload (lib/server/questionHealth.ts),
 // PATCH to close reports and audit findings, clear a statistical flag or
@@ -30,6 +31,15 @@ export async function PATCH(request: NextRequest) {
   if (body.kind === "report" || body.kind === "finding") {
     if (!STATUSES.has(body.status) || !ids.length) return NextResponse.json({ error: "invalid" }, { status: 400 });
     const col = body.kind === "report" ? "questionReports" : "questionAuditFindings";
+    // "+ email" on a report: tell the student how it ended (fixed, or the key is right) before closing it.
+    let emailed = 0;
+    if (body.kind === "report" && body.email === true && body.status !== "open") {
+      for (const id of ids) {
+        const res = await emailReporter(await db.collection(col).doc(id).get(), body.status === "fixed" ? "fixed" : "right");
+        if (res === "failed") return NextResponse.json({ error: "email_failed", emailed }, { status: 502 });
+        if (res === "sent") emailed++;
+      }
+    }
     const batch = db.batch();
     for (const id of ids) batch.update(db.collection(col).doc(id), { status: body.status, closedAt: now });
     await batch.commit();
@@ -43,24 +53,26 @@ export async function PATCH(request: NextRequest) {
         else await clearQuestionReview(db, f.signalExamId || f.examId, f.questionId, "Checked by a person: not a problem.");
       }
     }
-    return NextResponse.json({ ok: true, updated: ids.length });
+    return NextResponse.json({ ok: true, updated: ids.length, emailed });
   }
 
   // "Key is right" on a flag: ids are "<examId>|<questionId>", n the answers it has now.
   // Also dismisses the question's open reports, which otherwise keep it listed.
   if (body.kind === "flag") {
     if (!ids.length) return NextResponse.json({ error: "invalid" }, { status: 400 });
+    let emailed = 0;
     for (const id of ids) {
       const [examId, questionId] = id.split("|");
       if (!EXAM_KEY_RE.test(examId) || !QUESTION_ID_RE.test(questionId || "")) continue;
       await clearQuestionReview(db, examId, questionId, "Checked by a person: the key is right.", typeof body.n === "number" ? body.n : undefined);
       // A reported question stays flagged while any report is open, so close those too.
       const open = await db.collection("questionReports").where("questionId", "==", questionId).where("status", "==", "open").get();
+      if (body.email === true) for (const r of open.docs) if ((await emailReporter(r, "right")) === "sent") emailed++;
       const batch = db.batch();
       for (const r of open.docs) batch.update(r.ref, { status: "dismissed", closedAt: now, closedReason: "Key checked by a person." });
       if (!open.empty) await batch.commit();
     }
-    return NextResponse.json({ ok: true, updated: ids.length });
+    return NextResponse.json({ ok: true, updated: ids.length, emailed });
   }
 
   if (body.kind === "source") {

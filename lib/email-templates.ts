@@ -536,3 +536,45 @@ export function topPrepperEmail(v: EmailVoice, c: TopPrepperContent): string {
     ].join("\n"),
   });
 }
+
+// ── Reply to a "Report this question" report ─────────────────────────────────
+// Sent from the /admin Questions tab once a report is settled, either way:
+// fixed (thanks, you were right) or the key is right (here is why).
+
+export interface ReportReplyContent {
+  outcome: "fixed" | "right";
+  question: string;
+  answer: string;
+  explanation: string;
+}
+
+export function reportReplySubject(c: ReportReplyContent): string {
+  return c.outcome === "fixed" ? "You were right: we fixed that question" : "We checked the question you reported";
+}
+
+/** Transactional: they asked us something, so no unsubscribe link. */
+export function reportReplyEmail(v: EmailVoice, c: ReportReplyContent): string {
+  const fixed = c.outcome === "fixed";
+  const quote = `              <p style="margin: 0 0 17px; padding: 14px 16px; background-color: #f5f7f7; border-radius: 10px; color: #1a1a1a; font-size: 15px; line-height: 1.6;">${esc(c.question)}${c.answer ? `<br><strong style="font-weight: 700;">Answer: ${esc(c.answer)}</strong>` : ""}</p>`;
+  return emailShell({
+    voice: v,
+    expression: fixed ? 1 : 3,
+    eyebrow: "ABOUT YOUR REPORT",
+    title: reportReplySubject(c),
+    preheader: fixed ? "Thanks for flagging it. The question is fixed for everyone." : "Thanks for flagging it. Here is why the answer stands.",
+    heading: fixed ? "Thanks, you were right." : "Thanks for checking us.",
+    unsubscribe: false,
+    body: [
+      p(fixed
+        ? "You reported a question on Tigertest. We checked it, you were right, and it is now fixed for everyone who practices it:"
+        : "You reported a question on Tigertest. We checked it against the official material, and the answer stands:"),
+      quote,
+      c.explanation ? p(`${fixed ? "" : "<strong style=\"font-weight: 700;\">Why:</strong> "}${esc(c.explanation)}`) : "",
+      p(fixed
+        ? "Reports like yours are how the questions get better. Thank you."
+        : "If you still think it is wrong, just reply to this email with what your handbook or course says and I will look again."),
+      cta(DASH(v, "report_reply"), v.id === "unknown" ? "Keep Practicing" : `Keep Practicing ${v.shortName}`),
+      signoff("Thanks again,"),
+    ].filter(Boolean).join("\n"),
+  });
+}

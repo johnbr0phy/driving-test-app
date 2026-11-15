@@ -160,14 +160,14 @@ function QuestionsView({ data, setData, user, busy, setBusy, reload, refreshing,
   const sources = useTopN(changedSources);
   const changeList = useTopN(changes);
 
-  const act = async (kind: "report" | "finding" | "source" | "flag", ids: string[], status?: string, n?: number) => {
+  const act = async (kind: "report" | "finding" | "source" | "flag", ids: string[], status?: string, n?: number, email?: boolean) => {
     setBusy(ids[0]);
     try {
       const token = await user?.getIdToken();
       const res = await fetch("/api/admin/questions", {
         method: "PATCH",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
-        body: JSON.stringify({ kind, ids, status, n }),
+        body: JSON.stringify({ kind, ids, status, n, email }),
       });
       if (!res.ok) throw new Error(String(res.status));
       setData((d) => {
@@ -182,8 +182,8 @@ function QuestionsView({ data, setData, user, busy, setBusy, reload, refreshing,
         }
         return { ...d, sources: d.sources.filter((s) => !gone.has(s.id)) };
       });
-    } catch {
-      alert("Could not save. Try again.");
+    } catch (e) {
+      alert(e instanceof Error && e.message === "502" ? "The email did not send, so nothing was closed. Try again." : "Could not save. Try again.");
     } finally {
       setBusy(null);
     }
@@ -203,8 +203,11 @@ function QuestionsView({ data, setData, user, busy, setBusy, reload, refreshing,
           {f.reports > 0 && ` · ${f.reports} reports`}
         </span>
         {!f.cleared && (
-          <span className="ml-auto">
+          <span className="ml-auto flex gap-2">
             <ActionButton busy={busy === `${f.examId}|${f.questionId}`} onClick={() => act("flag", [`${f.examId}|${f.questionId}`], undefined, f.n)}>Key is right</ActionButton>
+            {data.reports.some((r) => r.questionId === f.questionId && r.email) && (
+              <ActionButton busy={busy === `${f.examId}|${f.questionId}`} onClick={() => act("flag", [`${f.examId}|${f.questionId}`], undefined, f.n, true)}>Key is right + email</ActionButton>
+            )}
           </span>
         )}
       </div>
@@ -289,6 +292,12 @@ function QuestionsView({ data, setData, user, busy, setBusy, reload, refreshing,
                 <span className="ml-auto flex gap-2">
                   <ActionButton busy={busy === r.id} onClick={() => act("report", [r.id], "fixed")}>Fixed</ActionButton>
                   <ActionButton busy={busy === r.id} onClick={() => act("report", [r.id], "dismissed")}>Dismiss</ActionButton>
+                  {r.email && (
+                    <>
+                      <ActionButton busy={busy === r.id} onClick={() => act("report", [r.id], "fixed", undefined, true)}>Fixed + email</ActionButton>
+                      <ActionButton busy={busy === r.id} onClick={() => act("report", [r.id], "dismissed", undefined, true)}>Key is right + email</ActionButton>
+                    </>
+                  )}
                 </span>
               </div>
               <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">

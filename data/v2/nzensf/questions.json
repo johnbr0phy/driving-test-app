@@ -1,0 +1,4424 @@
+[
+  {
+    "id": "NZENSF-T1-001",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Tablets",
+    "calculator": true,
+    "stem": "Paracetamol 1 g orally is prescribed. The tablets in stock are 500 mg each. How many tablets should be given? Type the number only.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Change to the same unit first: 1 g is 1000 mg. 1000 mg / 500 mg = 2 tablets."
+  },
+  {
+    "id": "NZENSF-T1-002",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Tablets",
+    "calculator": true,
+    "stem": "Furosemide 60 mg orally is prescribed. The tablets in stock are 40 mg each and are scored. How many tablets should be given? Give your answer to one decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "1.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Dose wanted / dose in each tablet: 60 mg / 40 mg = 1.5 tablets."
+  },
+  {
+    "id": "NZENSF-T1-003",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Tablets",
+    "calculator": true,
+    "stem": "Levothyroxine 75 micrograms orally is prescribed. The tablets in stock are 0.025 mg each. How many tablets should be given? Type the number only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "0.025 mg is 25 micrograms (multiply mg by 1000). 75 micrograms / 25 micrograms = 3 tablets."
+  },
+  {
+    "id": "NZENSF-T1-004",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Oral liquids",
+    "calculator": true,
+    "stem": "Amoxicillin 500 mg orally is prescribed. The oral suspension contains 250 mg in 5 mL. How many mL should be given? Type the number only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "(What you want / what you have) x volume: (500 / 250) x 5 mL = 10 mL."
+  },
+  {
+    "id": "NZENSF-T1-005",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Oral liquids",
+    "calculator": true,
+    "stem": "Oxycodone oral liquid 2.5 mg is prescribed. The liquid contains 5 mg in 5 mL. How many mL should be given? Give your answer to one decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "2.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "5 mg in 5 mL is 1 mg per mL, so 2.5 mg is 2.5 mL."
+  },
+  {
+    "id": "NZENSF-T1-006",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Doses by weight",
+    "calculator": true,
+    "stem": "Enoxaparin 1 mg/kg is prescribed for a patient who weighs 72 kg. What dose should be given, in mg? Type the number only.",
+    "numeric": {
+      "answers": [
+        "72"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "1 mg x 72 kg = 72 mg."
+  },
+  {
+    "id": "NZENSF-T1-007",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Infusion rates",
+    "calculator": true,
+    "stem": "1000 mL of sodium chloride 0.9% is to run over 8 hours on an infusion pump. What rate should be set, in mL per hour? Type the number only.",
+    "numeric": {
+      "answers": [
+        "125"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Volume / time: 1000 mL / 8 hours = 125 mL per hour."
+  },
+  {
+    "id": "NZENSF-T1-008",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Drip rates",
+    "calculator": true,
+    "stem": "500 mL of fluid is to run over 4 hours by gravity. The giving set delivers 20 drops/mL. What is the drip rate in drops per minute, to the nearest whole number? Type the number only.",
+    "numeric": {
+      "answers": [
+        "42"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "(Volume x drop factor) / minutes: (500 x 20) / 240 = 41.67, so 42 drops per minute."
+  },
+  {
+    "id": "NZENSF-T1-009",
+    "section": "enA",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Fluid balance",
+    "calculator": true,
+    "stem": "Over a shift a patient drinks 250 mL and 200 mL and receives 1000 mL of IV fluid. Output is 600 mL and 350 mL of urine and 150 mL of vomit. By how many mL is the patient's balance positive? Type the number only.",
+    "numeric": {
+      "answers": [
+        "350"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Intake 250 + 200 + 1000 = 1450 mL. Output 600 + 350 + 150 = 1100 mL. 1450 - 1100 = 350 mL positive."
+  },
+  {
+    "id": "NZENSF-T1-010",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Post-operative care",
+    "stem": "Why is early mobilisation encouraged after surgery?",
+    "options": [
+      "It stops the need for any pain relief",
+      "It shortens the anaesthetic's effect",
+      "It makes the wound heal without stitches",
+      "It lowers clot and chest infection risk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Moving early improves circulation and lung expansion, which reduces deep vein thrombosis, pneumonia and constipation."
+  },
+  {
+    "id": "NZENSF-T1-011",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vital signs",
+    "stem": "What is a normal resting respiratory rate for an adult?",
+    "options": [
+      "6 to 10 breaths a minute",
+      "30 to 40 breaths a minute",
+      "12 to 20 breaths a minute",
+      "22 to 30 breaths a minute"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An adult at rest normally breathes 12 to 20 times a minute. A rising respiratory rate is often the earliest sign that a patient is getting worse."
+  },
+  {
+    "id": "NZENSF-T1-012",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Practising certificates",
+    "stem": "How often must an enrolled nurse renew their annual practising certificate?",
+    "options": [
+      "Once, at registration",
+      "Every year",
+      "Every two years",
+      "Every three years"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Council says a nurse practising in Aotearoa New Zealand must hold a valid practising certificate, renewed each year, and must meet continuing competence requirements to renew."
+  },
+  {
+    "id": "NZENSF-T1-013",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medication safety",
+    "stem": "Before giving any medicine, how should the enrolled nurse confirm the patient's identity?",
+    "options": [
+      "Check two identifiers against the chart",
+      "Ask the patient's visitor who they are",
+      "Ask the patient if they are the one in bed 3",
+      "Look at the name above the bed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Two identifiers, such as name and date of birth or NHI, checked against the wristband and the medicine chart, prevent giving a medicine to the wrong person."
+  },
+  {
+    "id": "NZENSF-T1-014",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cultural safety",
+    "stem": "Under the enrolled nurse standards of competence, who determines whether care is culturally safe?",
+    "options": [
+      "The person receiving the care",
+      "The Nursing Council's advisers",
+      "The nurse giving the care",
+      "The charge nurse on the ward"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 2.1: the enrolled nurse practises culturally safe care which is determined by the recipient. The nurse's own view of their care is not the test."
+  },
+  {
+    "id": "NZENSF-T1-015",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seeking guidance",
+    "stem": "Under the 2025 enrolled nurse scope, from whom must an enrolled nurse have access to guidance?",
+    "options": [
+      "A senior healthcare assistant on the same shift",
+      "The patient's next of kin or their support person",
+      "The Nursing Council's professional advisers",
+      "An RN or other registered health practitioner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The scope says enrolled nurses must work with access to, and seek when appropriate, guidance from a registered nurse or other registered health practitioner, such as a nurse practitioner, midwife or doctor."
+  },
+  {
+    "id": "NZENSF-T1-016",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dementia",
+    "stem": "A resident with dementia becomes distressed every evening and asks to go home. What is the best first approach?",
+    "options": [
+      "Ask the doctor for a sedative straight away",
+      "Look for the cause and reassure her calmly",
+      "Lock her door so she cannot wander",
+      "Correct her firmly that she lives here now"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Distress often has a cause, such as pain, hunger, the toilet or tiredness. Calm reassurance and meeting the need come before medicines."
+  },
+  {
+    "id": "NZENSF-T1-017",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hand hygiene",
+    "stem": "When is washing with soap and water needed rather than alcohol hand rub?",
+    "options": [
+      "Before every patient contact",
+      "Before writing in the notes",
+      "When hands are visibly soiled",
+      "After touching the patient's bed rail"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Alcohol rub suits most moments of hand hygiene, but it does not remove visible dirt or body fluids, and it works poorly against some organisms such as norovirus and C. difficile spores."
+  },
+  {
+    "id": "NZENSF-T1-018",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deep vein thrombosis",
+    "stem": "Which finding most suggests a deep vein thrombosis?",
+    "options": [
+      "Bruising after a fall",
+      "One calf swollen, warm and tender",
+      "Both ankles slightly puffy at night",
+      "Cold pale toes on both feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A DVT usually affects one leg, with swelling, warmth, tenderness and redness. It should be reported promptly because a clot can travel to the lungs."
+  },
+  {
+    "id": "NZENSF-T1-019",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Suicide risk",
+    "stem": "A patient tells the enrolled nurse he has been thinking of ending his life. What should she do first?",
+    "options": [
+      "Ask directly about his thoughts and plans",
+      "Change the subject to cheer him up",
+      "Promise to keep what he said a secret",
+      "Tell him things will get better soon"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Asking directly about suicide does not increase risk; it shows the nurse takes him seriously and helps judge urgency. She stays with him and escalates at once."
+  },
+  {
+    "id": "NZENSF-T1-020",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deterioration",
+    "stem": "Which change is often the earliest sign that an adult patient is deteriorating?",
+    "options": [
+      "A slight fall in temperature",
+      "A rising respiratory rate",
+      "A dry mouth after meals",
+      "A change in appetite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Respiratory rate often rises before other signs change, which is why it should be counted for a full minute rather than guessed."
+  },
+  {
+    "id": "NZENSF-T1-021",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Code of Rights",
+    "stem": "Under the Code of Rights, what must a provider presume about a patient's competence to consent?",
+    "options": [
+      "That they are competent unless there is doubt",
+      "That they need a family member present to consent",
+      "That they cannot consent while in hospital",
+      "That they are not competent if they are over 80"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Right 7(2): every consumer must be presumed competent to make an informed choice and give informed consent, unless there are reasonable grounds to believe otherwise."
+  },
+  {
+    "id": "NZENSF-T1-022",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opioids",
+    "stem": "Which is the most serious adverse effect of morphine to watch for?",
+    "options": [
+      "Respiratory depression",
+      "A dry mouth and thirst",
+      "Itchy, flushed skin",
+      "Nausea in the first few days"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Opioids can slow breathing. Respiratory rate and sedation are checked after doses, and constipation is managed, but slowed breathing can be fatal."
+  },
+  {
+    "id": "NZENSF-T1-023",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Oxygen therapy",
+    "stem": "A patient with COPD who retains carbon dioxide is on oxygen. What target saturation range is usually prescribed?",
+    "options": [
+      "94 to 98%",
+      "88 to 92%",
+      "98 to 100%",
+      "80 to 84%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For people at risk of hypercapnic respiratory failure, a target of 88 to 92% avoids pushing carbon dioxide higher. Others usually aim for 92 to 96%."
+  },
+  {
+    "id": "NZENSF-T1-024",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kawa whakaruruhau",
+    "stem": "What does kawa whakaruruhau ask an enrolled nurse to address in their practice?",
+    "options": [
+      "The cost of care for Māori whānau",
+      "Delays in hospital discharge planning",
+      "Gaps in their knowledge of te reo grammar",
+      "Power imbalances between nurse and Māori"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pou one asks nurses to demonstrate kawa whakaruruhau by addressing power imbalances and working collaboratively with Māori. It is cultural safety in a Māori context."
+  },
+  {
+    "id": "NZENSF-T1-025",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Direction and coordination",
+    "stem": "Since the 2025 changes, what may an enrolled nurse provide to other health workers?",
+    "options": [
+      "Nothing, as only RNs lead care",
+      "Performance appraisals and discipline",
+      "Formal delegation, with full accountability",
+      "Direction and coordination, as appropriate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The direction and delegation FAQs say enrolled nurses can provide direction and coordination, as appropriate, to other health workers. Registered nurses remain accountable for directing and delegating."
+  },
+  {
+    "id": "NZENSF-T1-026",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delirium",
+    "stem": "How does delirium usually differ from dementia?",
+    "options": [
+      "It gets worse slowly over years",
+      "It comes on suddenly and fluctuates",
+      "It cannot be treated or reversed",
+      "It never affects the person's attention"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Delirium develops over hours or days, comes and goes, and affects attention. It often has a treatable cause such as infection or medicines."
+  },
+  {
+    "id": "NZENSF-T1-027",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sepsis",
+    "stem": "A patient with a urinary infection has a temperature of 38.6 °C, a pulse of 122, a respiratory rate of 26 and is newly drowsy. What is most likely?",
+    "options": [
+      "Sepsis",
+      "Dehydration only",
+      "Anxiety",
+      "A normal fever"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Infection with a fast pulse, fast breathing and altered mental state points to sepsis, which needs urgent escalation and review."
+  },
+  {
+    "id": "NZENSF-T1-028",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Refusing care",
+    "stem": "A competent patient refuses her evening medicines after they have been explained. What should the enrolled nurse do?",
+    "options": [
+      "Give them anyway as they are prescribed",
+      "Ask her family to make her take them",
+      "Hide the tablets in her dessert",
+      "Respect it, document it and tell the RN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Right 7(7) gives every consumer the right to refuse services and withdraw consent. The nurse respects the choice, records it and lets the team know."
+  },
+  {
+    "id": "NZENSF-T1-029",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anticoagulants",
+    "stem": "A patient on warfarin has bleeding gums and new bruising. What should the enrolled nurse do?",
+    "options": [
+      "Give it and advise a softer toothbrush",
+      "Withhold it and tell the RN or prescriber",
+      "Give the dose and recheck tomorrow",
+      "Give the dose with extra vitamin C"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bleeding and bruising on warfarin suggest the INR may be too high. The dose should be held and the prescriber told so the INR can be checked."
+  },
+  {
+    "id": "NZENSF-T1-030",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Isolation",
+    "stem": "A patient has diarrhoea caused by norovirus. Which precautions are needed?",
+    "options": [
+      "Airborne precautions with an N95",
+      "Contact precautions in a single room",
+      "No precautions once fluids are given",
+      "Standard precautions only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Norovirus spreads by contact with faeces, vomit and surfaces. A single room, gloves, gown and handwashing reduce spread."
+  },
+  {
+    "id": "NZENSF-T1-031",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart failure",
+    "stem": "A patient with heart failure has gained 2 kg in two days. What does this most likely mean?",
+    "options": [
+      "Her diuretic is too strong",
+      "Her heart failure has resolved",
+      "Fluid is building up",
+      "She is eating more"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rapid weight gain in heart failure usually means fluid retention. Daily weights at the same time each day help spot it early."
+  },
+  {
+    "id": "NZENSF-T1-032",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenFamily",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Child dehydration",
+    "stem": "Which sign most suggests a toddler with gastroenteritis is dehydrated?",
+    "options": [
+      "Crying with plenty of tears",
+      "Fewer wet nappies than usual",
+      "Playing and chatting normally",
+      "Moist lips and a wet tongue"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fewer wet nappies, a dry mouth, no tears and drowsiness are signs of dehydration in young children. They need prompt assessment."
+  },
+  {
+    "id": "NZENSF-T1-033",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Te Tiriti principles",
+    "stem": "Which three principles of Te Tiriti o Waitangi does the Nursing Council's Code of Conduct name as integral to nursing services for Māori?",
+    "options": [
+      "Equity, access, affordability and choice",
+      "Partnership, protection and participation",
+      "Safety, quality, efficiency and value",
+      "Honesty, respect and confidentiality"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Code of Conduct says the principles of partnership, protection and participation are integral to providing appropriate nursing services for Māori."
+  },
+  {
+    "id": "NZENSF-T1-034",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Escalation",
+    "stem": "An enrolled nurse finds a post-operative patient newly confused, with a pulse that has risen from 84 to 118. What should she do first?",
+    "options": [
+      "Write it up at the end of the shift",
+      "Give paracetamol and observe",
+      "Recheck the observations in an hour",
+      "Escalate to the RN in charge now"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 4.3 asks the nurse to identify deterioration and escalate findings, and 3.5 to escalate emerging risks appropriately. New confusion with a rising pulse needs prompt review, not a later recheck."
+  },
+  {
+    "id": "NZENSF-T1-035",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diabetes",
+    "stem": "What does an HbA1c test show?",
+    "options": [
+      "The amount of insulin in the blood",
+      "Average glucose over about three months",
+      "Whether the patient has eaten today",
+      "The blood glucose level at this moment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "HbA1c reflects average blood glucose over about the past two to three months, so it shows how well diabetes is controlled over time."
+  },
+  {
+    "id": "NZENSF-T1-036",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pain assessment",
+    "stem": "Which tool suits pain assessment in a person with advanced dementia who cannot rate their pain?",
+    "options": [
+      "An observational behaviour scale",
+      "A pain diary kept by the person",
+      "A 0 to 10 numerical rating scale",
+      "A visual analogue line to mark"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "People who cannot self-report need an observational tool that scores behaviours such as facial expression, sounds and body movement."
+  },
+  {
+    "id": "NZENSF-T1-037",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Catheter care",
+    "stem": "How should a urinary drainage bag be positioned?",
+    "options": [
+      "Below the level of the bladder",
+      "On the bed beside the patient",
+      "Above the level of the bladder",
+      "Clamped when the patient walks"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Keeping the bag below the bladder lets urine drain and stops backflow, which lowers the risk of infection. It should not touch the floor."
+  },
+  {
+    "id": "NZENSF-T1-038",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documentation",
+    "stem": "An enrolled nurse notices an error in an entry she wrote earlier in the shift. How should she correct it?",
+    "options": [
+      "Cover it with correction fluid and rewrite",
+      "Strike it through once, then sign and date",
+      "Tear out the page and write it again",
+      "Leave it, as other staff have already read it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Records must stay legible, accurate and honest (descriptor 5.3, Code of Conduct 4.8). The original must still be readable, with the correction signed and dated."
+  },
+  {
+    "id": "NZENSF-T1-039",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Allergies",
+    "stem": "A patient says he 'came up in a rash' with penicillin. Amoxicillin is charted. What should the enrolled nurse do?",
+    "options": [
+      "Give it, as a rash is a mild reaction",
+      "Withhold it and tell the prescriber",
+      "Give it with an antihistamine",
+      "Give half the dose and observe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amoxicillin is a penicillin. A reported allergy must be clarified with the prescriber before any dose, and recorded."
+  },
+  {
+    "id": "NZENSF-T1-040",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anxiety",
+    "stem": "A patient is having a panic attack and is breathing fast. What is the best first response?",
+    "options": [
+      "Stay calm and guide slow breathing",
+      "Leave her alone to settle",
+      "Give her a paper bag to breathe into",
+      "Tell her to stop overreacting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A calm presence and slow breathing help a panic attack pass. Paper bag breathing is no longer advised."
+  },
+  {
+    "id": "NZENSF-T1-041",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Blood transfusion",
+    "stem": "Fifteen minutes into a blood transfusion, the patient has a fever, back pain and feels anxious. What should the enrolled nurse do first?",
+    "options": [
+      "Finish the unit, then report it",
+      "Slow the rate and give paracetamol",
+      "Recheck the temperature in an hour",
+      "Stop the transfusion and get help"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "These are signs of a transfusion reaction, which can be life threatening. Stop the transfusion, keep the line open as policy says, and call for urgent help."
+  },
+  {
+    "id": "NZENSF-T1-042",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood glucose",
+    "stem": "A patient with diabetes has a blood glucose of 3.2 mmol/L. How is this described?",
+    "options": [
+      "Hyperglycaemia",
+      "Normal range",
+      "Hypoglycaemia",
+      "Ketoacidosis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A blood glucose below 4 mmol/L is treated as hypoglycaemia. The enrolled nurse treats it by the local protocol and escalates."
+  },
+  {
+    "id": "NZENSF-T1-043",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sharps",
+    "stem": "After giving a subcutaneous injection, what should the enrolled nurse do with the needle?",
+    "options": [
+      "Put it straight into a sharps bin",
+      "Put it on the tray to dispose of later",
+      "Bend it so it cannot be used again",
+      "Recap it carefully with both hands"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disposing of sharps at the point of use without recapping is the main way to prevent needlestick injuries."
+  },
+  {
+    "id": "NZENSF-T1-044",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social determinants",
+    "stem": "Pou one asks an enrolled nurse to understand how social determinants affect health. Which of these is the standard's own example?",
+    "options": [
+      "Eye colour",
+      "Left-handedness",
+      "Colonisation",
+      "Blood group"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Descriptor 1.3: the enrolled nurse understands the impact of social determinants, such as colonisation, on health and wellbeing. The others are not social circumstances."
+  },
+  {
+    "id": "NZENSF-T1-045",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "ISBAR",
+    "stem": "In an ISBAR handover by phone, what goes in the 'R'?",
+    "options": [
+      "The latest set of vital signs",
+      "What you want the listener to do",
+      "Who you are and where you are",
+      "The patient's past medical history"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ISBAR is identify, situation, background, assessment, recommendation. The recommendation states what you are asking for, such as a review within 30 minutes."
+  },
+  {
+    "id": "NZENSF-T1-046",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "COPD",
+    "stem": "Which advice best helps a person with COPD avoid flare-ups?",
+    "options": [
+      "Use the reliever only once a week",
+      "Avoid all physical activity and exercise",
+      "Stop the preventer when feeling well",
+      "Stop smoking and keep vaccines current"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stopping smoking slows the disease, and influenza and pneumococcal vaccines reduce chest infections that cause flare-ups."
+  },
+  {
+    "id": "NZENSF-T1-047",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gifts and bequests",
+    "stem": "A resident tells the enrolled nurse he has put her in his will. What does the Code of Conduct require?",
+    "options": [
+      "She may accept it after he has died",
+      "She must ask his family's permission",
+      "She must not accept the bequest",
+      "She may accept it if it is small"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code of Conduct standard 7.7: do not ask for or accept loans or bequests from health consumers or anyone close to them. She should tell her manager."
+  },
+  {
+    "id": "NZENSF-T1-048",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Insulin",
+    "stem": "When is rapid-acting mealtime insulin usually given?",
+    "options": [
+      "Just before or with a meal",
+      "At bedtime without food",
+      "Only when the glucose is low",
+      "Two hours after a meal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rapid-acting insulin works within about 15 minutes, so it is given just before or with a meal to cover it. Giving it without food risks hypoglycaemia."
+  },
+  {
+    "id": "NZENSF-T1-049",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Neurovascular checks",
+    "stem": "A patient has a new plaster cast on his forearm and says his fingers are numb and cold. What should the enrolled nurse do?",
+    "options": [
+      "Raise the arm and check tomorrow",
+      "Escalate it at once",
+      "Tell him it is normal at first",
+      "Give pain relief and observe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Numbness and coldness can mean the cast is too tight and is cutting off blood supply or pressing a nerve. It needs urgent review."
+  },
+  {
+    "id": "NZENSF-T1-050",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Neurological observations",
+    "stem": "On the Glasgow Coma Scale, a patient opens his eyes only when spoken to. What is his eye opening score?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "GCS eye opening: 4 spontaneous, 3 to sound (voice), 2 to pressure (pain), 1 none.",
+    "lockedOrder": true
+  },
+  {
+    "id": "NZENSF-T1-051",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wound care",
+    "stem": "Which technique is used to prevent contamination when dressing a surgical wound?",
+    "options": [
+      "Aseptic non-touch technique",
+      "Clean hands without gloves",
+      "Reusing the old dressing pad",
+      "Wiping from the outside in"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Aseptic non-touch technique protects key parts and key sites from contamination. Cleaning works from the cleanest area outwards."
+  },
+  {
+    "id": "NZENSF-T1-052",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social media",
+    "stem": "A patient sends the enrolled nurse a friend request on social media after discharge. What is the best response?",
+    "options": [
+      "Accept, as he has been discharged",
+      "Accept, but do not talk about care",
+      "Accept, then delete him later",
+      "Decline the request"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Council's social media guidance says accepting health consumers as friends on personal social media can breach professional boundaries (Code of Conduct 7.13)."
+  },
+  {
+    "id": "NZENSF-T1-053",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Crushing medicines",
+    "stem": "A patient cannot swallow tablets. One of his medicines is a modified-release tablet. What should the enrolled nurse do?",
+    "options": [
+      "Crush it and mix it with yoghurt",
+      "Not crush it and ask the pharmacist",
+      "Cut it in half to make it smaller",
+      "Dissolve it in warm water first"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Crushing a modified-release tablet can release the whole dose at once. A pharmacist or prescriber can advise on another form."
+  },
+  {
+    "id": "NZENSF-T1-054",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tikanga in care",
+    "stem": "An older Māori man asks that his pillow not be used to rest the meal tray. What is the best response?",
+    "options": [
+      "Move the tray to the bedside table",
+      "Explain the tray is clean so it is fine",
+      "Ask him to hold the tray on his lap",
+      "Leave the tray and note his request"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The head is tapu for many Māori, and items linked with food are kept away from it. Respecting the request at once supports culturally safe care, as descriptor 1.4 asks (tikanga incorporated into practice)."
+  },
+  {
+    "id": "NZENSF-T1-055",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Therapeutic communication",
+    "stem": "A patient says, 'I'm scared about tomorrow's surgery.' Which reply is the most therapeutic?",
+    "options": [
+      "Everyone feels that way, you'll be fine",
+      "Tell me what worries you most",
+      "Let's talk about something happier",
+      "Don't worry, the surgeon is very good"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An open question invites the patient to share the fear so it can be addressed. False reassurance and changing the subject close the conversation down."
+  },
+  {
+    "id": "NZENSF-T1-056",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Palliative care",
+    "stem": "What is the main aim of palliative care?",
+    "options": [
+      "Curing the underlying illness",
+      "Stopping all medicines",
+      "Quality of life and comfort",
+      "Moving the person to hospital"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Palliative care aims to relieve symptoms and support the best quality of life for the person and their whānau, whatever the stage of illness."
+  },
+  {
+    "id": "NZENSF-T1-057",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health promotion",
+    "stem": "A patient who smokes says he might be ready to stop. What is the most useful thing the enrolled nurse can do?",
+    "options": [
+      "Offer help and refer to a stop smoking service",
+      "Tell him to cut down slowly on his own",
+      "Tell him it is too late to make a difference",
+      "Give him a leaflet and leave it up to him"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 4.1 asks the nurse to give health education and support people to reach their goals. Offering help and referral makes quitting more likely."
+  },
+  {
+    "id": "NZENSF-T1-058",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fluid status",
+    "stem": "Which finding most suggests a patient is dehydrated?",
+    "options": [
+      "Moist mucous membranes",
+      "A slow, steady pulse",
+      "Swollen ankles and feet",
+      "Dark, concentrated urine"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dehydration causes dark, small volumes of urine, a dry mouth, a fast pulse and low blood pressure. Swollen ankles suggest fluid overload."
+  },
+  {
+    "id": "NZENSF-T1-059",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hip replacement",
+    "stem": "After a posterior approach hip replacement, which movement should the patient usually avoid?",
+    "options": [
+      "Tightening the thigh muscles",
+      "Lying flat on their back in bed",
+      "Bending the hip past 90 degrees",
+      "Pointing the toes up and down"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bending past 90 degrees, crossing the legs and turning the foot in can dislocate a posterior approach hip. The surgeon's precautions apply."
+  },
+  {
+    "id": "NZENSF-T1-060",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alcohol withdrawal",
+    "stem": "A patient admitted two days ago, who drinks heavily, is now shaking, sweating and anxious. What could this be?",
+    "options": [
+      "Low blood pressure",
+      "An allergic reaction",
+      "A normal reaction to hospital",
+      "Alcohol withdrawal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tremor, sweating, anxiety and a fast pulse one to three days after the last drink suggest alcohol withdrawal, which can progress to seizures. Escalate."
+  },
+  {
+    "id": "NZENSF-T1-061",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Notifying concerns",
+    "stem": "An enrolled nurse believes a colleague is coming to work affected by alcohol and is not safe to practise. What is the best first step?",
+    "options": [
+      "Post an anonymous warning online",
+      "Report it to the nurse in charge",
+      "Talk about it with other staff first",
+      "Wait to see if it happens again"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Code of Conduct 6.9 asks nurses to intervene to stop unsafe practice, and 8.4 to document and report concerns. Health practitioners and employers must notify the Council if a nurse is unable to perform nursing functions because of a health condition."
+  },
+  {
+    "id": "NZENSF-T1-062",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diuretics",
+    "stem": "Which blood test result is most important to check for a patient on furosemide?",
+    "options": [
+      "Haemoglobin",
+      "Platelets",
+      "Potassium",
+      "Cholesterol"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Loop diuretics such as furosemide cause potassium loss. Low potassium can cause weakness and heart rhythm problems."
+  },
+  {
+    "id": "NZENSF-T1-063",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Respiratory care",
+    "stem": "Which position usually helps a breathless patient breathe more easily?",
+    "options": [
+      "Sitting upright and leaning forward",
+      "Lying face down on their front",
+      "Lying flat on their back in bed",
+      "Lying with the head lower than the feet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sitting upright lets the diaphragm move more freely, and leaning forward with arms supported helps the accessory muscles."
+  },
+  {
+    "id": "NZENSF-T1-064",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressure injury",
+    "stem": "Over a patient's heel the skin is intact but red and does not blanch when pressed. What is this?",
+    "options": [
+      "A stage 1 pressure injury",
+      "A stage 3 pressure injury",
+      "Normal reactive redness",
+      "A superficial skin tear"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Non-blanching redness of intact skin is a stage 1 pressure injury. Pressure should be relieved at once and the RN told."
+  },
+  {
+    "id": "NZENSF-T1-065",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Whānau involvement",
+    "stem": "A Māori woman's whānau want to stay with her overnight in a shared room. Ward policy limits visitors after 8 pm. What should the enrolled nurse do first?",
+    "options": [
+      "Tell the whānau policy means they must go",
+      "Let everyone stay without telling anyone",
+      "Ask security to explain the visiting rules",
+      "Ask the woman and whānau what they need"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pou two asks the nurse to work in partnership with individuals and whānau. Finding out what they need lets the nurse look for a safe arrangement with the team rather than apply a rule without asking."
+  },
+  {
+    "id": "NZENSF-T1-066",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Working within limits",
+    "stem": "An enrolled nurse is asked to care for a patient with a tracheostomy, which she has never managed. What should she do?",
+    "options": [
+      "Ask the patient how to look after it",
+      "Take the patient and learn as she goes",
+      "Refuse and leave the patient unassigned",
+      "Tell the RN and ask for support"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 4.7: the enrolled nurse understands and works within the limits of their expertise and seeks guidance. Saying so and asking for support keeps the patient safe."
+  },
+  {
+    "id": "NZENSF-T1-067",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "End of life",
+    "stem": "A dying patient has noisy, rattly breathing and seems settled. Her whānau are worried. What should the enrolled nurse do?",
+    "options": [
+      "Give her large drinks of water",
+      "Suction her deeply every hour",
+      "Reposition her and explain it to them",
+      "Sit her bolt upright for the whole night"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Noisy breathing near death is common and usually does not distress the person. Repositioning, mouth care and explaining it to whānau help."
+  },
+  {
+    "id": "NZENSF-T1-068",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complaints",
+    "stem": "A patient's husband wants to complain about his wife's care. What is the enrolled nurse's best response?",
+    "options": [
+      "Say complaints can only be in writing",
+      "Tell him the nurse will deal with it",
+      "Help him to make the complaint",
+      "Tell him to wait until she is home"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Right 10 gives consumers the right to complain in any form appropriate to them, and Code of Conduct 3.6 asks nurses to respect that right and help with it."
+  },
+  {
+    "id": "NZENSF-T1-069",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Medication errors",
+    "stem": "An enrolled nurse realises she has given a patient another patient's tablets. What should she do first?",
+    "options": [
+      "Wait to see if any symptoms develop",
+      "Check the patient and tell the RN now",
+      "Give the patient's own tablets as well",
+      "Fill in the form before telling anyone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The patient's safety comes first: assess them and escalate at once so the prescriber can decide on treatment. The incident is reported afterwards."
+  },
+  {
+    "id": "NZENSF-T1-070",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Standard precautions",
+    "stem": "Which situation calls for eye protection under standard precautions?",
+    "options": [
+      "Taking a pulse on the wrist",
+      "Emptying a urinary catheter bag",
+      "Helping a patient to walk to the toilet",
+      "Giving a patient an oral tablet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Eye protection is used when splashes of blood or body fluids are likely, such as emptying drainage bags or suctioning."
+  },
+  {
+    "id": "NZENSF-T1-071",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stoma care",
+    "stem": "What colour should a healthy new stoma be?",
+    "options": [
+      "Pale and almost white",
+      "Moist and red or pink",
+      "Dry and black in colour",
+      "Dusky and purple"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A healthy stoma is moist and red or pink. A dark, dusky or black stoma suggests poor blood supply and must be escalated."
+  },
+  {
+    "id": "NZENSF-T1-072",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenFamily",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safe sleep",
+    "stem": "How should a baby be placed to sleep to lower the risk of sudden unexpected death in infancy?",
+    "options": [
+      "On their front, in a parent's bed",
+      "On a couch, with a parent",
+      "On their side, propped with pillows",
+      "On their back, in their own bed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Babies should sleep on their back, face clear, in their own safe sleep space, in a smokefree environment."
+  },
+  {
+    "id": "NZENSF-T1-073",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Oxygen saturation",
+    "stem": "Which factor can give a falsely low pulse oximeter reading?",
+    "options": [
+      "Lying flat in bed for an hour",
+      "A recent cup of warm tea",
+      "Cold hands with poor circulation",
+      "A full stomach after lunch"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Poor peripheral circulation, nail polish and movement can affect the reading. Warm the hand or try another site before acting on a low reading alone."
+  },
+  {
+    "id": "NZENSF-T1-074",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health equity",
+    "stem": "What does health equity mean in the Council's standards?",
+    "options": [
+      "Care is shared out on a first-come basis",
+      "Some people need different resources",
+      "Every patient gets exactly the same care",
+      "Services are free to everyone who asks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The glossary defines equity as recognising that people with different levels of advantage need different approaches and resources to get equitable health outcomes."
+  },
+  {
+    "id": "NZENSF-T1-075",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Digital communication",
+    "stem": "A patient's daughter asks the enrolled nurse to text her updates on her personal phone. What is the best response?",
+    "options": [
+      "Give her the nurse's own email address",
+      "Use the service's approved channels",
+      "Agree, as the patient is happy with it",
+      "Agree, but only send short messages"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Descriptor 3.2 asks for appropriate digital communication, and the Code of Conduct warns that texts and messages may be seen by others. Personal phones blur professional boundaries."
+  },
+  {
+    "id": "NZENSF-T1-076",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stroke rehabilitation",
+    "stem": "A patient has had a stroke with weakness on his left side. How should the enrolled nurse help him into a shirt?",
+    "options": [
+      "Dress the weak left arm first",
+      "Leave the shirt off to save effort",
+      "Dress both arms at the same time",
+      "Dress the strong right arm first"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dressing the weaker limb first, and undressing it last, makes it easier and keeps strain off the weak arm."
+  },
+  {
+    "id": "NZENSF-T1-077",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nasogastric tubes",
+    "stem": "How should the position of a nasogastric tube be checked before a feed?",
+    "options": [
+      "Test the aspirate pH as per policy",
+      "Ask the patient if it feels right",
+      "Push in air and listen over the stomach",
+      "Look at the colour of the tube"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Testing gastric aspirate pH, with X-ray if needed, is the accepted check. Listening for air ('whoosh' test) is unreliable and no longer used."
+  },
+  {
+    "id": "NZENSF-T1-078",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Confidentiality",
+    "stem": "A caller says she is a patient's sister and asks about his test results. What should the enrolled nurse do?",
+    "options": [
+      "Ask her two questions to prove who she is",
+      "Give only the good news over the phone",
+      "Give the results as she is close family",
+      "Check consent before giving details"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Code of Conduct principle 5 asks nurses to treat information as confidential and get consent before sharing it. The nurse should check what the patient has agreed to share and with whom."
+  },
+  {
+    "id": "NZENSF-T1-079",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "PRN medicines",
+    "stem": "What should be recorded when a 'when required' medicine is given?",
+    "options": [
+      "Nothing extra beyond the regular chart",
+      "The time, dose, reason and its effect",
+      "Only the time and the nurse's name",
+      "The dose, unless it was given at night"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Recording why a PRN medicine was given and whether it worked lets the team judge whether it is helping and avoid giving doses too close together."
+  },
+  {
+    "id": "NZENSF-T1-080",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Urine output",
+    "stem": "For a 70 kg adult, what is the usual minimum acceptable urine output?",
+    "options": [
+      "About 15 mL an hour",
+      "About 35 mL an hour",
+      "About 10 mL an hour",
+      "About 5 mL an hour"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A common minimum is 0.5 mL/kg/hour, about 35 mL an hour for a 70 kg adult. Less than this should be escalated."
+  },
+  {
+    "id": "NZENSF-T1-081",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Depression",
+    "stem": "Which is a common sign of depression?",
+    "options": [
+      "Needing much less sleep than usual",
+      "Loss of interest in usual things",
+      "A sudden burst of energy",
+      "Talking very quickly and loudly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Low mood, loss of interest or pleasure, poor sleep and low energy are common in depression. Racing speech and little need for sleep suggest mania."
+  },
+  {
+    "id": "NZENSF-T1-082",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pneumonia",
+    "stem": "Which nursing action best helps a patient with pneumonia clear secretions?",
+    "options": [
+      "Limiting fluids to dry the chest",
+      "Giving cough suppressants regularly",
+      "Deep breathing, coughing and fluids",
+      "Lying flat and resting all day"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Deep breathing, coughing, moving and enough fluids loosen secretions and help clear them. Suppressing a productive cough keeps them in."
+  },
+  {
+    "id": "NZENSF-T1-083",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sustainability",
+    "stem": "Which practice best supports sustainable health care, as descriptor 4.9 asks?",
+    "options": [
+      "Leaving equipment switched on overnight",
+      "Using a new pack for every short visit",
+      "Throwing out unused items after discharge",
+      "Opening only the supplies that are needed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 4.9 asks nurses to understand the effect of healthcare on resources and support sustainability. Opening only what is needed cuts waste without risking safety."
+  },
+  {
+    "id": "NZENSF-T1-084",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Challenging racism",
+    "stem": "A colleague says a Māori patient is 'probably not taking his pills like the rest of them'. What should the enrolled nurse do?",
+    "options": [
+      "Agree and plan to check his pill count",
+      "Record the comment in the patient's notes",
+      "Ignore it, as the colleague is senior",
+      "Challenge the comment and the assumption"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 2.2 asks the enrolled nurse to challenge racism and discrimination in the delivery of nursing and health care. Assumptions about a group can lead to poorer care."
+  },
+  {
+    "id": "NZENSF-T1-085",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conflict",
+    "stem": "A healthcare assistant the enrolled nurse is coordinating refuses to help with a patient's shower. What should the enrolled nurse do first?",
+    "options": [
+      "Tell the patient the shower is cancelled",
+      "Ask the assistant privately why",
+      "Report the assistant to the manager at once",
+      "Do the shower herself and say nothing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Clear, respectful communication with colleagues (Code of Conduct principle 6) starts with understanding the reason. There may be a safety concern, such as a back injury, that changes the plan."
+  },
+  {
+    "id": "NZENSF-T1-086",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Continence",
+    "stem": "Which approach best supports continence for a resident who is sometimes incontinent?",
+    "options": [
+      "Using pads instead of toileting",
+      "Waiting until she asks to go",
+      "Regular, prompted toileting",
+      "Restricting drinks after breakfast"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Prompted toileting at regular times helps many people stay continent. Restricting fluids can cause dehydration and urinary infections."
+  },
+  {
+    "id": "NZENSF-T1-087",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Continuing competence",
+    "stem": "What does descriptor 5.5 ask an enrolled nurse to do?",
+    "options": [
+      "Reflect on practice and keep learning",
+      "Supervise one student each year",
+      "Work at least one night shift a month",
+      "Pass a written exam every year"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 5.5: the enrolled nurse reflects on their own practice and engages in ongoing professional development and learning to meet continuing competence requirements."
+  },
+  {
+    "id": "NZENSF-T1-088",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Explaining medicines",
+    "stem": "A patient asks why he must take his new antibiotic until the course is finished. What is the best answer?",
+    "options": [
+      "Stopping early can leave infection behind",
+      "It does not matter once he feels better",
+      "Finishing the course stops all side effects",
+      "Stopping early makes the tablets toxic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 4.6 asks the nurse to explain the effects of treatment. Stopping antibiotics early can leave bacteria that cause the infection to return."
+  },
+  {
+    "id": "NZENSF-T1-089",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stroke signs",
+    "stem": "A resident suddenly cannot lift her right arm and her speech is slurred. What should the enrolled nurse do?",
+    "options": [
+      "Give her water to help her speak",
+      "Lie her down and recheck in an hour",
+      "Book a doctor's visit for tomorrow",
+      "Call 111 or the emergency team now"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sudden arm weakness and slurred speech are signs of stroke (FAST). Treatment depends on time, so it is an emergency."
+  },
+  {
+    "id": "NZENSF-T1-090",
+    "section": "enB",
+    "test": 1,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constipation",
+    "stem": "Which is the most likely cause of constipation in an older patient after hip surgery?",
+    "options": [
+      "Walking a little every day",
+      "Too much dietary fibre",
+      "Drinking plenty of water",
+      "Opioids and reduced mobility"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Opioid pain relief and lying in bed both slow the bowel. Fluids, fibre, moving and laxatives as prescribed help prevent it."
+  },
+  {
+    "id": "NZENSF-T2-001",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Tablets",
+    "calculator": true,
+    "stem": "Prednisone 25 mg orally is prescribed. The tablets in stock are 5 mg each. How many tablets should be given? Type the number only.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "25 mg / 5 mg = 5 tablets."
+  },
+  {
+    "id": "NZENSF-T2-002",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Tablets",
+    "calculator": true,
+    "stem": "Metoprolol 23.75 mg orally is prescribed. The modified-release tablets in stock are 47.5 mg each and may be halved. How many tablets should be given? Give your answer to one decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "23.75 mg / 47.5 mg = 0.5 tablets."
+  },
+  {
+    "id": "NZENSF-T2-003",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Oral liquids",
+    "calculator": true,
+    "stem": "Morphine oral solution 7.5 mg is prescribed. The solution contains 10 mg in 5 mL. How many mL should be given? Give your answer to two decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "3.75"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "(7.5 / 10) x 5 mL = 3.75 mL."
+  },
+  {
+    "id": "NZENSF-T2-004",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Oral liquids",
+    "calculator": true,
+    "stem": "Cefalexin 375 mg orally is prescribed. The suspension contains 250 mg in 5 mL. How many mL should be given? Give your answer to one decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "7.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "(375 / 250) x 5 mL = 1.5 x 5 = 7.5 mL."
+  },
+  {
+    "id": "NZENSF-T2-005",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Doses by weight",
+    "calculator": true,
+    "stem": "Paracetamol 15 mg/kg is prescribed for a child who weighs 18 kg. What dose should be given, in mg? Type the number only.",
+    "numeric": {
+      "answers": [
+        "270"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "15 mg x 18 kg = 270 mg."
+  },
+  {
+    "id": "NZENSF-T2-006",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Infusion rates",
+    "calculator": true,
+    "stem": "1 litre of compound sodium lactate is to run over 12 hours on a pump. What rate should be set, in mL per hour, to the nearest whole number? Type the number only.",
+    "numeric": {
+      "answers": [
+        "83"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "1 litre is 1000 mL. 1000 / 12 = 83.3, so 83 mL per hour."
+  },
+  {
+    "id": "NZENSF-T2-007",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Drip rates",
+    "calculator": true,
+    "stem": "1000 mL of fluid is to run over 10 hours by gravity. The giving set delivers 20 drops/mL. What is the drip rate in drops per minute, to the nearest whole number? Type the number only.",
+    "numeric": {
+      "answers": [
+        "33"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "(1000 x 20) / 600 minutes = 33.3, so 33 drops per minute."
+  },
+  {
+    "id": "NZENSF-T2-008",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Infusion times",
+    "calculator": true,
+    "stem": "An infusion of 1000 mL is running at 80 mL per hour. How many hours will it take to finish? Give your answer to one decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "12.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "Time = volume / rate: 1000 / 80 = 12.5 hours."
+  },
+  {
+    "id": "NZENSF-T2-009",
+    "section": "enA",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Insulin",
+    "calculator": true,
+    "stem": "A patient is to have 14 units of insulin. The insulin contains 100 units/mL. How many mL is this? Give your answer to two decimal places. Type the number only.",
+    "numeric": {
+      "answers": [
+        "0.14"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "14 / 100 x 1 mL = 0.14 mL. In practice insulin is drawn up in an insulin syringe marked in units, which avoids this conversion."
+  },
+  {
+    "id": "NZENSF-T2-010",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Post-operative care",
+    "stem": "A patient back from surgery has not passed urine for 8 hours and has lower abdominal swelling. What is most likely?",
+    "options": [
+      "Urinary retention",
+      "Kidney stones",
+      "A wound infection",
+      "Post-op dehydration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Anaesthesia and opioids can cause urinary retention. A full, swollen bladder should be assessed, for example with a bladder scan, and reported."
+  },
+  {
+    "id": "NZENSF-T2-011",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vital signs",
+    "stem": "What is a normal resting pulse for an adult?",
+    "options": [
+      "150 to 180 beats a minute",
+      "110 to 140 beats a minute",
+      "30 to 50 beats a minute",
+      "60 to 100 beats a minute"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An adult resting pulse is usually 60 to 100 beats a minute. Count for a full minute when it is irregular."
+  },
+  {
+    "id": "NZENSF-T2-012",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Practising certificates",
+    "stem": "What may happen to an enrolled nurse who practises without a current practising certificate?",
+    "options": [
+      "Nothing, if the work is safe",
+      "Disciplinary action",
+      "A small fine from the employer",
+      "A verbal warning only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Council says practising without a current certificate is not permitted under the Health Practitioners Competence Assurance Act 2003 and may lead to disciplinary action."
+  },
+  {
+    "id": "NZENSF-T2-013",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication safety",
+    "stem": "Which check is part of the 'rights' of medicine administration?",
+    "options": [
+      "The right ward",
+      "The right route",
+      "The right nurse",
+      "The right visitor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The rights include the right patient, medicine, dose, route, time and documentation. Checking the route stops, for example, an oral liquid being given by injection."
+  },
+  {
+    "id": "NZENSF-T2-014",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Te reo and tikanga",
+    "stem": "Descriptor 1.4 asks an enrolled nurse to use te reo and tikanga Māori in practice. When should this happen?",
+    "options": [
+      "Only when asked in writing",
+      "Only on Waitangi Day",
+      "Only with Māori staff",
+      "Where appropriate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 1.4: the nurse uses te reo and incorporates tikanga Māori into practice where appropriate. It is part of everyday care, not a special occasion."
+  },
+  {
+    "id": "NZENSF-T2-015",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accountability",
+    "stem": "Since January 2025, who is accountable for an enrolled nurse's own nursing practice?",
+    "options": [
+      "The enrolled nurse",
+      "The registered nurse in charge",
+      "The patient's doctor",
+      "The employing organisation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The scope says enrolled nurses are accountable and responsible for their nursing practice, consistent with their education, assessed competence and the law."
+  },
+  {
+    "id": "NZENSF-T2-016",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dementia",
+    "stem": "Which communication approach suits a person with moderate dementia?",
+    "options": [
+      "Several questions asked together",
+      "Long explanations with all the detail",
+      "Short sentences, one idea at a time",
+      "Talking about them to others nearby"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Short, simple sentences and one choice at a time help the person follow. Talking over them removes their dignity."
+  },
+  {
+    "id": "NZENSF-T2-017",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hand hygiene",
+    "stem": "Which is one of the five moments for hand hygiene?",
+    "options": [
+      "Before going into the staff room for lunch",
+      "After touching a patient's surroundings",
+      "Before reading the patient's notes",
+      "After answering the ward phone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The five moments are before patient contact, before a clean or aseptic procedure, after body fluid exposure risk, after patient contact and after touching patient surroundings."
+  },
+  {
+    "id": "NZENSF-T2-018",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pulmonary embolism",
+    "stem": "Two days after knee surgery, a patient suddenly becomes short of breath with sharp chest pain. What should the enrolled nurse suspect?",
+    "options": [
+      "Muscle strain",
+      "Indigestion from food",
+      "A panic attack",
+      "Pulmonary embolism"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sudden breathlessness and chest pain after surgery may be a pulmonary embolism from a leg clot. Call for urgent help and give oxygen as per protocol."
+  },
+  {
+    "id": "NZENSF-T2-019",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "De-escalation",
+    "stem": "A patient is shouting and pacing in the corridor. What should the enrolled nurse do first?",
+    "options": [
+      "Warn him that he will be restrained",
+      "Stand close and block his way",
+      "Speak calmly and give him space",
+      "Raise her voice to be heard"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Calm, low voice, open posture and space help de-escalate. Crowding or threatening a person increases the risk of harm."
+  },
+  {
+    "id": "NZENSF-T2-020",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood pressure",
+    "stem": "A post-operative patient's blood pressure falls from 128/80 to 92/58 and his pulse rises to 112. What could this mean?",
+    "options": [
+      "A normal effect of sleep",
+      "Bleeding or low blood volume",
+      "Recovery from the anaesthetic",
+      "Pain that is now well controlled"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Falling blood pressure with a rising pulse after surgery suggests hypovolaemia, such as bleeding. Check the wound and drains and escalate."
+  },
+  {
+    "id": "NZENSF-T2-021",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Informed consent",
+    "stem": "Before a procedure, a patient says she does not understand what the doctor told her. What should the enrolled nurse do?",
+    "options": [
+      "Get her to sign as she already said yes",
+      "Explain the risks herself from memory",
+      "Tell the doctor before it goes ahead",
+      "Tell her the procedure is routine"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Right 6 is the right to be fully informed and right 7 to give informed consent. Consent is not informed if she does not understand, so the person doing the procedure must explain again."
+  },
+  {
+    "id": "NZENSF-T2-022",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opioids",
+    "stem": "Which advice suits a patient starting regular oral morphine at home?",
+    "options": [
+      "Drink alcohol to help with sleep",
+      "Take a laxative to prevent constipation",
+      "Stop it as soon as the pain eases off",
+      "Double the dose if it seems too weak"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Constipation is almost certain with regular opioids, so a laxative is usually started at the same time. Alcohol adds to sedation."
+  },
+  {
+    "id": "NZENSF-T2-023",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diabetes",
+    "stem": "Which foot care advice suits a person with diabetes?",
+    "options": [
+      "Soak the feet in hot water every night",
+      "Cut the toenails as short as possible",
+      "Walk barefoot to toughen the skin",
+      "Check the feet daily for cuts"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Diabetes can reduce feeling and blood flow in the feet, so small injuries go unnoticed. Daily checks catch them before they become ulcers."
+  },
+  {
+    "id": "NZENSF-T2-024",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cultural safety",
+    "stem": "Cultural safety asks the nurse to reflect on which of these?",
+    "options": [
+      "The hospital's annual budget and staffing",
+      "The patient's family income and job",
+      "The cultural rules of each ethnic group",
+      "Their own cultural identity and biases"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The standards say cultural safety requires nurses to reflect on their practice and understand their cultural identity and the power imbalance with the recipient. Learning a list of rules about groups is cultural awareness, not safety."
+  },
+  {
+    "id": "NZENSF-T2-025",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Escalation",
+    "stem": "An enrolled nurse escalates a patient's low blood pressure to the RN, who says to keep watching. An hour later it is lower still. What should the enrolled nurse do?",
+    "options": [
+      "Ask a healthcare assistant for advice",
+      "Escalate again, and go higher if needed",
+      "Keep watching, as the RN has decided",
+      "Wait until the doctor's next ward round"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Descriptor 3.5 asks the nurse to escalate appropriately when risk is emerging. A continuing fall is new information, so the nurse escalates again and follows the escalation pathway if the response is not enough."
+  },
+  {
+    "id": "NZENSF-T2-026",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Falls prevention",
+    "stem": "Which action best reduces a resident's risk of falling at night?",
+    "options": [
+      "Bed rails raised on both sides",
+      "Sleeping tablets every night",
+      "A night light and the bell in reach",
+      "Removing her walking frame at night"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Good lighting and a call bell within reach reduce night falls. Bed rails can cause falls from a greater height, and sedatives raise the risk."
+  },
+  {
+    "id": "NZENSF-T2-027",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Temperature",
+    "stem": "Which temperature is a fever in an adult?",
+    "options": [
+      "35.9 °C",
+      "36.8 °C",
+      "37.2 °C",
+      "38.3 °C"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A temperature of 38 °C or more is a fever. 36.8 °C and 37.2 °C are within the usual range, and 35.9 °C is slightly low.",
+    "lockedOrder": true
+  },
+  {
+    "id": "NZENSF-T2-028",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Code of Rights",
+    "stem": "A patient asks for her friend to stay with her while a wound is dressed. Under the Code of Rights, what is the general rule?",
+    "options": [
+      "Visitors must always leave for cares",
+      "The nurse decides who may stay in the room",
+      "Only family may be present for care",
+      "She may have a support person present"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Right 8: every consumer has the right to have one or more support persons of their choice present, unless safety may be compromised or another consumer's rights unreasonably infringed."
+  },
+  {
+    "id": "NZENSF-T2-029",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Digital records",
+    "stem": "An electronic medicine chart says a dose was given, but the blister pack shows it is still there. What should the enrolled nurse do?",
+    "options": [
+      "Give the dose as the pack is full",
+      "Give half the dose to be safe",
+      "Check with the team before giving it",
+      "Leave it, as the chart says it is done"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The records do not match, so the nurse finds out what happened before acting. Giving it could be a double dose; not giving it could be a missed dose."
+  },
+  {
+    "id": "NZENSF-T2-030",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Isolation",
+    "stem": "A patient has suspected pulmonary tuberculosis. What precautions are needed?",
+    "options": [
+      "Standard precautions only",
+      "Airborne precautions with an N95",
+      "Contact precautions with gloves only",
+      "Droplet precautions with a surgical mask"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tuberculosis spreads by fine airborne particles. A negative pressure room where available and a fitted N95 or P2 respirator are used."
+  },
+  {
+    "id": "NZENSF-T2-031",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart failure",
+    "stem": "Which position helps a patient with heart failure who is breathless at night?",
+    "options": [
+      "Prone with arms by the side",
+      "Lying flat on the left side all night",
+      "Sitting up supported by pillows",
+      "Lying flat with legs raised"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sitting up reduces fluid returning to the heart and lungs and eases breathing. Raising the legs increases the return and can worsen breathlessness."
+  },
+  {
+    "id": "NZENSF-T2-032",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenFamily",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Child fever",
+    "stem": "A febrile child is very drowsy and has a rash that does not fade when a glass is pressed on it. What should the enrolled nurse do?",
+    "options": [
+      "Give paracetamol and wait",
+      "Seek emergency help at once",
+      "Book a doctor for tomorrow",
+      "Cool the child with a cold bath"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A non-blanching rash with fever and drowsiness may be meningococcal disease, which can kill within hours. It is an emergency."
+  },
+  {
+    "id": "NZENSF-T2-033",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Te Tiriti",
+    "stem": "How does the Council's glossary describe Te Tiriti o Waitangi?",
+    "options": [
+      "A historic treaty with no current role",
+      "A list of hospital visiting rules",
+      "A guideline for Māori health staff only",
+      "A living partnership agreement"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The glossary calls Te Tiriti a living partnership agreement between Māori and the Crown, with enduring rights, responsibilities and obligations on both partners."
+  },
+  {
+    "id": "NZENSF-T2-034",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Handover",
+    "stem": "Where is the safest place for a bedside handover of a patient's sensitive history?",
+    "options": [
+      "At the busy nurses' station desk",
+      "Quietly, away from other patients",
+      "In the corridor by the lifts",
+      "Loudly so the patient can hear"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Code of Conduct (principle 5) asks nurses to protect patients' privacy. Bedside handover involves the patient, but sensitive details should be shared quietly or away from others."
+  },
+  {
+    "id": "NZENSF-T2-035",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Diabetes",
+    "stem": "Which sign of hyperglycaemia should the enrolled nurse look for?",
+    "options": [
+      "A very slow, weak pulse",
+      "A sudden craving for sugar",
+      "Shaking and sweating",
+      "Thirst and passing more urine"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "High glucose draws water into the urine, causing frequent urination and thirst. Shaking and sweating are signs of low glucose."
+  },
+  {
+    "id": "NZENSF-T2-036",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deterioration",
+    "stem": "A patient has had shallow breathing at 28 a minute for two hours and is now sleepy and hard to wake. What should the enrolled nurse do?",
+    "options": [
+      "Escalate urgently and stay with him",
+      "Sit him up and offer a drink",
+      "Record it at the next routine round",
+      "Let him sleep and check again later"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rising drowsiness with fast shallow breathing can mean rising carbon dioxide or worsening illness. It needs urgent escalation (descriptor 4.3)."
+  },
+  {
+    "id": "NZENSF-T2-037",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Burns",
+    "stem": "What is the first aid for a minor burn to the hand?",
+    "options": [
+      "Pop any blisters straight away",
+      "Cool it under running water",
+      "Wrap it tightly in a dry towel",
+      "Apply butter to soothe the skin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cool running water for 20 minutes reduces tissue damage. Butter and other substances trap heat and raise infection risk."
+  },
+  {
+    "id": "NZENSF-T2-038",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documentation",
+    "stem": "When should care be documented?",
+    "options": [
+      "As soon as possible after it is given",
+      "At the end of the shift for all patients",
+      "Before the care is actually given",
+      "Only if something goes wrong"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 5.3 asks that documentation be legible, relevant, accurate, professional and timely. Writing care before it is done, or hours later, risks errors."
+  },
+  {
+    "id": "NZENSF-T2-039",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inhalers",
+    "stem": "After using a corticosteroid preventer inhaler, what should the patient do?",
+    "options": [
+      "Lie down for ten minutes",
+      "Hold their breath for a minute",
+      "Rinse their mouth and spit",
+      "Use the reliever straight after"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rinsing after an inhaled corticosteroid reduces the risk of oral thrush and a hoarse voice."
+  },
+  {
+    "id": "NZENSF-T2-040",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Psychosis",
+    "stem": "A patient says he hears voices telling him he is in danger. What is the best response?",
+    "options": [
+      "Tell him firmly the voices are not real",
+      "Ignore it and carry on with cares",
+      "Pretend to hear the voices too",
+      "Acknowledge his fear without arguing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Acknowledging how frightening it is, without agreeing or arguing, builds trust. The nurse then checks for risk and tells the team."
+  },
+  {
+    "id": "NZENSF-T2-041",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chest drains",
+    "stem": "A patient's chest drain tubing has become disconnected. What should the enrolled nurse do first?",
+    "options": [
+      "Leave it and wait for the doctor",
+      "Lift the drain bottle onto the bed",
+      "Pull the drain out of the chest",
+      "Follow the drain emergency protocol"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A disconnection can let air into the chest. The nurse follows the organisation's emergency procedure for the drain and gets help at once. The bottle must stay below chest level."
+  },
+  {
+    "id": "NZENSF-T2-042",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nursing assessment",
+    "stem": "What is the first step of the nursing process?",
+    "options": [
+      "Implementation",
+      "Evaluation",
+      "Planning",
+      "Assessment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The scope describes enrolled nurses initiating and monitoring care through nursing assessment, care planning, implementation and evaluation, in that order."
+  },
+  {
+    "id": "NZENSF-T2-043",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "PPE",
+    "stem": "In which order is personal protective equipment usually removed?",
+    "options": [
+      "Mask first, then gloves, then gown",
+      "Gloves first, then gown, then mask",
+      "Any order, if hands are washed after",
+      "Gown first, then mask, then gloves"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gloves are the most contaminated, so they come off first. The mask, touched by the straps only, comes off last, followed by hand hygiene."
+  },
+  {
+    "id": "NZENSF-T2-044",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Whakapapa-centred care",
+    "stem": "What does whakapapa-centred care add to person-centred care?",
+    "options": [
+      "Care planned around the hospital routine",
+      "The effect of care on future generations",
+      "A focus on the person's medical history",
+      "Care given only by Māori health workers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The glossary says whakapapa-centred care acknowledges the longer term, multi-generational impacts and outcomes of nursing care and support, for individuals, whānau and future generations."
+  },
+  {
+    "id": "NZENSF-T2-045",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Active listening",
+    "stem": "Which behaviour best shows active listening?",
+    "options": [
+      "Summarising what the person has said",
+      "Planning your reply while they speak",
+      "Finishing the person's sentences",
+      "Writing notes without looking up"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Summarising, or paraphrasing, checks that the nurse has understood and shows the person they have been heard."
+  },
+  {
+    "id": "NZENSF-T2-046",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chronic kidney disease",
+    "stem": "Which dietary advice is often given in later chronic kidney disease?",
+    "options": [
+      "Drink as much fluid as he can manage",
+      "Take extra potassium supplements",
+      "Limit salt and follow potassium advice",
+      "Eat as much protein as possible"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Damaged kidneys cannot clear salt, potassium and fluid well, so dietary limits are often set by the team and dietitian."
+  },
+  {
+    "id": "NZENSF-T2-047",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Boundaries",
+    "stem": "A resident's son offers the enrolled nurse a business deal selling his products to staff. What does the Code of Conduct say?",
+    "options": [
+      "It is fine if it is outside work hours",
+      "It is fine if no money changes hands",
+      "She must not enter a deal with them",
+      "It is fine if the manager agrees"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code of Conduct standard 7.8: do not enter into a business agreement with a health consumer or their family. It can compromise the professional relationship."
+  },
+  {
+    "id": "NZENSF-T2-048",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlled drugs",
+    "stem": "How are controlled drugs usually checked out of the cupboard on a ward?",
+    "options": [
+      "By one nurse, at the end of the shift",
+      "By two staff, with a register entry",
+      "By the patient, before each dose",
+      "By the pharmacist, once a week"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Controlled drugs are counted, checked by two staff and recorded in the controlled drug register, following organisational policy."
+  },
+  {
+    "id": "NZENSF-T2-049",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Urinary infection",
+    "stem": "Which finding is common in an older person with a urinary tract infection?",
+    "options": [
+      "New confusion",
+      "Increased appetite",
+      "A slow, steady pulse",
+      "Better sleep"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Older people may not have burning or frequency; new or worse confusion can be the main sign of infection."
+  },
+  {
+    "id": "NZENSF-T2-050",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Neurological observations",
+    "stem": "Which pupil finding should be escalated straight away after a head injury?",
+    "options": [
+      "Both pupils smaller in bright light",
+      "Both pupils equal and reacting",
+      "Both pupils larger in a dim room",
+      "One pupil larger and slow to react"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Unequal pupils with a sluggish reaction can mean rising pressure in the skull. Equal pupils that react to light are normal."
+  },
+  {
+    "id": "NZENSF-T2-051",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wound care",
+    "stem": "A wound has a heavy amount of exudate. Which dressing feature matters most?",
+    "options": [
+      "It absorbs fluid well",
+      "It is clear to see through",
+      "It sticks firmly to the wound",
+      "It stays dry and hard"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Heavy exudate needs an absorbent dressing to protect the skin around the wound from soaking and breakdown."
+  },
+  {
+    "id": "NZENSF-T2-052",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scope",
+    "stem": "Who decides whether a particular task is within an enrolled nurse's scope of practice?",
+    "options": [
+      "The doctor who wrote the medical order",
+      "The nurse, guided by employer policy",
+      "The patient receiving the care",
+      "The Nursing Council, task by task"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Council's FAQs say it does not give advice on individual tasks: each nurse, supported by their employer and its policies, decides whether a task is within their scope and competence."
+  },
+  {
+    "id": "NZENSF-T2-053",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Paracetamol",
+    "stem": "A patient is charted regular paracetamol 1 g four times a day and asks for a cold and flu powder. What is the main concern?",
+    "options": [
+      "They contain antibiotics",
+      "They interfere with sleep",
+      "Many contain paracetamol too",
+      "They make paracetamol work less"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Many cold and flu products contain paracetamol, so taking both can exceed the safe daily dose and harm the liver."
+  },
+  {
+    "id": "NZENSF-T2-054",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interpreters",
+    "stem": "A patient who speaks Samoan and little English is about to have a procedure explained. Her teenage son offers to interpret. What is the best option?",
+    "options": [
+      "Speak slowly in English instead",
+      "Arrange a professional interpreter",
+      "Give her a leaflet in English",
+      "Let the son interpret to save time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Right 5 of the Code of Rights includes a competent interpreter where necessary and reasonably practicable. A family member, especially a young one, may not translate accurately and may be put in a hard position."
+  },
+  {
+    "id": "NZENSF-T2-055",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Interprofessional team",
+    "stem": "A physiotherapist says a patient should not walk without a frame, but the care plan still says independent. What should the enrolled nurse do?",
+    "options": [
+      "Wait for the weekly team meeting",
+      "Leave the plan as the doctor wrote it",
+      "Ask the patient which they prefer",
+      "Update the plan and tell the team"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Enrolled nurses initiate and document plans of care with the healthcare team (descriptor 4.2). A falls risk change should be acted on and shared now."
+  },
+  {
+    "id": "NZENSF-T2-056",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parkinson's disease",
+    "stem": "Why is it important to give Parkinson's disease medicines on time?",
+    "options": [
+      "Late doses can cause stiffness and falls",
+      "One missed dose does not matter much",
+      "They are only effective at night",
+      "They work better when given a bit early"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Levodopa and similar medicines wear off quickly. Late doses can cause stiffness, tremor, swallowing problems and falls."
+  },
+  {
+    "id": "NZENSF-T2-057",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spills",
+    "stem": "Blood has been spilled on the floor of a patient's room. What should be done first?",
+    "options": [
+      "Cover it with a towel and leave it",
+      "Ask the patient to avoid that area",
+      "Mop it up with the ward's usual floor mop",
+      "Put on gloves and contain the spill"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Blood spills are handled with gloves and a spill kit as organisational policy sets out, so no one is exposed to blood."
+  },
+  {
+    "id": "NZENSF-T2-058",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Falls risk",
+    "stem": "Which patient is at highest risk of falling?",
+    "options": [
+      "An 84-year-old with new delirium",
+      "A 45-year-old with a sprained wrist",
+      "A 30-year-old after a dental extraction",
+      "A 25-year-old awaiting an X-ray"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Older age, delirium and attachments such as catheters all raise falls risk. A falls assessment should lead to a plan such as a low bed and close observation."
+  },
+  {
+    "id": "NZENSF-T2-059",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fluid overload",
+    "stem": "During an IV infusion, an older patient becomes breathless with crackles in the lungs and raised blood pressure. What should the enrolled nurse do first?",
+    "options": [
+      "Lie him flat and give him water",
+      "Slow the infusion, sit him up, escalate",
+      "Speed up the infusion to flush the line",
+      "Stop his oxygen and observe closely"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "These are signs of fluid overload. Slowing the fluid, sitting him up to ease breathing and getting urgent review protect him."
+  },
+  {
+    "id": "NZENSF-T2-060",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antipsychotics",
+    "stem": "Which side effect of many antipsychotic medicines should be monitored over time?",
+    "options": [
+      "Weight gain",
+      "Sharper eyesight",
+      "Hair growth",
+      "Lower appetite"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Many antipsychotics cause weight gain and metabolic changes such as raised glucose and lipids, so weight and bloods are monitored."
+  },
+  {
+    "id": "NZENSF-T2-061",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social media",
+    "stem": "An enrolled nurse posts about 'a funny patient in bed 4' without a name. What is the main problem?",
+    "options": [
+      "Posts are only a problem if photos are used",
+      "It should have been a private message",
+      "There is no problem without a name",
+      "The patient may still be identifiable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Council's social media guidance says patients do not have to be named to be identifiable, and content can be shared widely even with strict privacy settings."
+  },
+  {
+    "id": "NZENSF-T2-062",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metformin",
+    "stem": "What is a common side effect of metformin?",
+    "options": [
+      "A dry, tickly cough at night",
+      "Diarrhoea and stomach upset",
+      "Weight gain and fluid retention",
+      "Bleeding gums when brushing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gastrointestinal upset is the most common side effect of metformin, and taking it with food helps. It rarely causes hypoglycaemia on its own."
+  },
+  {
+    "id": "NZENSF-T2-063",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractures",
+    "stem": "An older woman has fallen. Her right leg is shortened and turned outwards and she cannot stand. What is most likely?",
+    "options": [
+      "Muscle cramp",
+      "A hip fracture",
+      "A sprained ankle",
+      "A knee dislocation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Shortening and outward rotation of the leg after a fall in an older person are classic signs of a fractured neck of femur."
+  },
+  {
+    "id": "NZENSF-T2-064",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wounds",
+    "stem": "Which sign around a surgical wound most suggests infection?",
+    "options": [
+      "Mild itching after a week",
+      "A small scab at one end of the wound",
+      "Spreading redness, heat and pus",
+      "Pink, dry and joined edges"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Spreading redness, heat, swelling, pus and increasing pain are signs of wound infection. Pink, joined edges show normal healing."
+  },
+  {
+    "id": "NZENSF-T2-065",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tūpāpaku",
+    "stem": "A Māori patient has died and the whānau wish to stay with the tūpāpaku and say karakia. What should the enrolled nurse do?",
+    "options": [
+      "Remove the body quickly to free the bed",
+      "Limit them to two people at a time only",
+      "Support them and give them time",
+      "Ask them to wait until the body is moved"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Supporting whānau to follow their tikanga around death is culturally safe care. Rushing the tūpāpaku away or limiting whānau can cause lasting harm and distress."
+  },
+  {
+    "id": "NZENSF-T2-066",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Leadership",
+    "stem": "An enrolled nurse is coordinating care for a small team in a rest home. Which task best fits that coordination role?",
+    "options": [
+      "Prescribing new medicines for residents",
+      "Allocating cares and checking them",
+      "Deciding a resident is safe for discharge",
+      "Diagnosing the cause of a resident's fall"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The scope says an enrolled nurse's practice may include a leadership or coordination role. Prescribing, diagnosing and discharge decisions belong to authorised prescribers and other practitioners."
+  },
+  {
+    "id": "NZENSF-T2-067",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Palliative care",
+    "stem": "A palliative patient has a dry mouth and is no longer drinking. What should the enrolled nurse do?",
+    "options": [
+      "Insert a nasogastric tube for fluids",
+      "Leave the mouth alone to avoid upset",
+      "Give regular mouth care and lip balm",
+      "Encourage large drinks every hour"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Regular mouth care keeps a dying person comfortable. Forcing fluids is not appropriate and can cause choking."
+  },
+  {
+    "id": "NZENSF-T2-068",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Incident reporting",
+    "stem": "An enrolled nurse realises she gave a patient's 8 am medicine two hours late. After checking the patient, what should she do?",
+    "options": [
+      "Say nothing, as no harm was done",
+      "Change the time on the chart to 8 am",
+      "Give the next dose early to catch up",
+      "Tell the RN and report the incident"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descriptor 5.6 asks nurses to promote safety and take part in quality improvement, and Code of Conduct 7.1 to be open and honest. Reporting lets the team check for harm and learn."
+  },
+  {
+    "id": "NZENSF-T2-069",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Anaphylaxis",
+    "stem": "Minutes after an IV antibiotic starts, a patient has a swollen tongue and wheeze. What should the enrolled nurse do first?",
+    "options": [
+      "Stop the infusion and call for help",
+      "Give him a drink of cold water",
+      "Sit him up and recheck in 15 minutes",
+      "Slow the infusion and observe"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "These are signs of anaphylaxis. Stop the drug at once and call for urgent help; adrenaline is given intramuscularly under the emergency protocol."
+  },
+  {
+    "id": "NZENSF-T2-070",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Digital health",
+    "stem": "A whānau member wants to help their grandmother use the patient portal to see her blood results. What fits descriptor 4.4?",
+    "options": [
+      "Show them how to use it, with her consent",
+      "Tell them to ask the hospital IT department",
+      "Log in for them with a staff account",
+      "Tell them portals are only for staff"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 4.4 asks nurses to support individuals and whānau to use technology to manage health. Her consent is needed before whānau see her information."
+  },
+  {
+    "id": "NZENSF-T2-071",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gastroenteritis",
+    "stem": "An adult with vomiting and diarrhoea is mildly dehydrated. What is usually given first?",
+    "options": [
+      "Strong coffee to settle the stomach",
+      "Large glasses of fizzy drink",
+      "Oral rehydration in small sips",
+      "Nothing by mouth for 24 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Small, frequent sips of an oral rehydration solution replace water and salts without triggering more vomiting."
+  },
+  {
+    "id": "NZENSF-T2-072",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenFamily",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Breastfeeding",
+    "stem": "Which sign shows a baby is attached well at the breast?",
+    "options": [
+      "Cheeks drawn in with each suck",
+      "Nipple pain throughout the feed",
+      "Wide mouth, chin touching the breast",
+      "Clicking noises while feeding"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Good attachment shows a wide-open mouth, chin touching the breast and rhythmic sucking. Clicking, sucked-in cheeks and ongoing pain suggest poor attachment."
+  },
+  {
+    "id": "NZENSF-T2-073",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "A resident has lost 6 kg in two months without trying. What should the enrolled nurse do?",
+    "options": [
+      "Screen her and tell the team",
+      "Encourage her to skip snacks",
+      "Weigh her again next month",
+      "Wait to see if her weight settles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Unplanned weight loss is a sign of malnutrition. Screening and referral, for example to a dietitian, should happen now."
+  },
+  {
+    "id": "NZENSF-T2-074",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diversity",
+    "stem": "What does intersectionality describe in the Council's standards?",
+    "options": [
+      "How a disease affects several body systems",
+      "How identities combine to shape disadvantage",
+      "How a hospital links its different services",
+      "How nurses and doctors share the workload"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The glossary says intersectionality is how characteristics such as gender, ethnicity, sexual orientation and disability interact to create unique experiences of privilege or disadvantage."
+  },
+  {
+    "id": "NZENSF-T2-075",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Breaking down barriers",
+    "stem": "A patient with a hearing impairment is not responding to questions. What should the enrolled nurse try first?",
+    "options": [
+      "Ask his visitor to answer for him",
+      "Face him, check his aids, speak clearly",
+      "Record that he refuses to answer",
+      "Shout so that he can hear the questions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Right 5 of the Code of Rights is effective communication in a form the person can understand. Facing him, checking aids and speaking clearly come before anything else."
+  },
+  {
+    "id": "NZENSF-T2-076",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Advance care planning",
+    "stem": "What is an advance care plan?",
+    "options": [
+      "A record of wishes for future care",
+      "A plan for the nurse's next shift",
+      "A form for transferring to hospital",
+      "A list of the person's current medicines"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Advance care planning helps a person think about, talk about and record their wishes for future care, so the team and whānau can follow them."
+  },
+  {
+    "id": "NZENSF-T2-077",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Bowel obstruction",
+    "stem": "A patient has colicky abdominal pain, a swollen abdomen, vomiting and has not passed wind for a day. What should the enrolled nurse do?",
+    "options": [
+      "Keep him nil by mouth and escalate",
+      "Give a large meal to get things moving",
+      "Give a laxative and check tomorrow",
+      "Encourage him to walk it off"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "These are signs of bowel obstruction, which needs urgent medical review. Food and laxatives can make it worse."
+  },
+  {
+    "id": "NZENSF-T2-078",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Respect",
+    "stem": "Which action best respects a patient's dignity during personal cares?",
+    "options": [
+      "Closing curtains and covering her",
+      "Leaving the door open for fresh air",
+      "Calling her 'dear' to sound friendly",
+      "Talking to a colleague across the bed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Right 3 of the Code of Rights and Code of Conduct principle 1 ask nurses to respect dignity and privacy, including the physical environment (standard 1.2)."
+  },
+  {
+    "id": "NZENSF-T2-079",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medicine storage",
+    "stem": "How should most vaccines and insulin vials not yet in use be stored?",
+    "options": [
+      "In the freezer to keep them longest",
+      "In the patient's bedside drawer",
+      "On a sunny windowsill",
+      "In a medicine fridge at 2 to 8 °C"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Unopened insulin and vaccines are kept refrigerated at 2 to 8 °C. Freezing or heat can damage them."
+  },
+  {
+    "id": "NZENSF-T2-080",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chest pain",
+    "stem": "A patient says he has central chest tightness spreading to his left arm and he is sweaty. What should the enrolled nurse do first?",
+    "options": [
+      "Tell him to rest and press the bell later",
+      "Give him a glass of water and wait",
+      "Ask him to walk to the treatment room",
+      "Call for urgent help and stay with him"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Central chest pain spreading to the arm with sweating may be a heart attack. Call for urgent help, keep him at rest and stay with him."
+  },
+  {
+    "id": "NZENSF-T2-081",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Recovery",
+    "stem": "What does a recovery approach in mental health focus on?",
+    "options": [
+      "A meaningful life, with or without symptoms",
+      "Keeping people in hospital until cured",
+      "Staff deciding treatment for the person",
+      "Removing every symptom before discharge"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A recovery approach supports the person's own goals and a meaningful life, with the person and whānau as partners in care."
+  },
+  {
+    "id": "NZENSF-T2-082",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Asthma",
+    "stem": "A patient with asthma has a peak flow much lower than her usual. What does this show?",
+    "options": [
+      "Her airways are narrowing",
+      "Her inhaler is too strong",
+      "Her lungs are working better",
+      "She is breathing normally"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A falling peak flow means the airways are narrowing. Her asthma action plan says what to take and when to get help."
+  },
+  {
+    "id": "NZENSF-T2-083",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health promotion",
+    "stem": "Which advice best helps prevent pressure injuries at home?",
+    "options": [
+      "Rub red areas firmly to help them",
+      "Stay in the same position to rest",
+      "Use talcum powder on the skin each day",
+      "Move often and check the skin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Regular position changes and skin checks prevent pressure injuries. Massaging red areas can damage the tissue further."
+  },
+  {
+    "id": "NZENSF-T2-084",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Advocacy",
+    "stem": "A Pacific family say they missed clinic appointments because they could not get transport. What is the best response from the enrolled nurse?",
+    "options": [
+      "Record that they did not attend and move on",
+      "Help them find transport and tell the team",
+      "Remind them that missed visits delay treatment",
+      "Tell them the clinic cannot change for them"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Descriptor 2.4 asks the nurse to advocate for individuals and whānau, and descriptor 1.3 to understand social determinants. Removing a barrier to access is advocacy; recording a failure to attend is not."
+  },
+  {
+    "id": "NZENSF-T2-085",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preceptorship",
+    "stem": "A student nurse asks the enrolled nurse to sign for a medicine the student gave without supervision. What should the enrolled nurse do?",
+    "options": [
+      "Decline and talk with the student and RN",
+      "Ask another student to co-sign instead",
+      "Sign, but add a note in pencil beside it",
+      "Sign, as the student is nearly qualified"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Signing for a medicine you did not see given is false documentation (descriptor 5.3). Descriptor 5.7 asks nurses to be effective role models, which includes raising the concern."
+  },
+  {
+    "id": "NZENSF-T2-086",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Osteoarthritis",
+    "stem": "Which advice suits a person with osteoarthritis of the knee?",
+    "options": [
+      "Rest the knee completely for months",
+      "Avoid all walking until the pain stops",
+      "Keep active and manage weight",
+      "Wear high heels to support the knee"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Regular gentle exercise and a healthy weight reduce pain and keep joints moving. Long rest weakens the muscles that support the joint."
+  },
+  {
+    "id": "NZENSF-T2-087",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fitness to practise",
+    "stem": "What does descriptor 5.4 ask an enrolled nurse to watch for?",
+    "options": [
+      "Risks to their own ability to practise",
+      "Other wards' staffing numbers each day",
+      "How much colleagues are paid for overtime",
+      "Patients' private matters outside hospital"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 5.4: identifies and responds appropriately to risk that could impact the health, safety and wellbeing of self and others and affect the ability to practise safely, such as fatigue or illness."
+  },
+  {
+    "id": "NZENSF-T2-088",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Explaining medicines",
+    "stem": "A patient asks the enrolled nurse whether he can stop his blood pressure tablets because he feels well. What is the best response?",
+    "options": [
+      "Explain why they matter, involve prescriber",
+      "Say it is not the nurse's job to talk about it",
+      "Tell him to halve the dose for a while",
+      "Tell him he can stop them if he feels well"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 4.6 asks the nurse to explain effects and refer to the team as required. Feeling well usually means the tablets are working."
+  },
+  {
+    "id": "NZENSF-T2-089",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Circulation",
+    "stem": "What is a normal capillary refill time in an adult?",
+    "options": [
+      "10 seconds or more",
+      "2 seconds or less",
+      "6 to 8 seconds",
+      "4 to 5 seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pressing a fingertip for 5 seconds and releasing it, colour should return within about 2 seconds. A longer refill time suggests poor perfusion, as in shock or dehydration."
+  },
+  {
+    "id": "NZENSF-T2-090",
+    "section": "enB",
+    "test": 2,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pre-operative care",
+    "stem": "Why is a patient usually fasted before a general anaesthetic?",
+    "options": [
+      "To make the operation quicker",
+      "To lower the risk of aspiration",
+      "To lower the blood pressure",
+      "To reduce pain after surgery"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fasting reduces the stomach contents that could be vomited and breathed into the lungs while protective reflexes are lost."
+  },
+  {
+    "id": "NZENSF-D-001",
+    "section": "enA",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Oral liquids",
+    "calculator": true,
+    "stem": "Sodium valproate 300 mg orally is prescribed. The oral liquid contains 200 mg in 5 mL. How many mL should be given? Give your answer to one decimal place. Type the number only.",
+    "numeric": {
+      "answers": [
+        "7.5"
+      ],
+      "tolerance": 0
+    },
+    "explanation": "(300 / 200) x 5 mL = 7.5 mL."
+  },
+  {
+    "id": "NZENSF-D-002",
+    "section": "enA",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Doses by weight",
+    "calculator": true,
+    "stem": "Ibuprofen 10 mg/kg is prescribed for a child who weighs 22 kg. What dose should be given, in mg? Type the number only.",
+    "numeric": {
+      "answers": [
+        "220"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "10 mg x 22 kg = 220 mg."
+  },
+  {
+    "id": "NZENSF-D-003",
+    "section": "enA",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Units",
+    "calculator": true,
+    "stem": "How many mg are in 1.5 g? Type the number only.",
+    "numeric": {
+      "answers": [
+        "1500"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "1 g is 1000 mg, so 1.5 x 1000 = 1500 mg."
+  },
+  {
+    "id": "NZENSF-D-004",
+    "section": "enA",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Infusion rates",
+    "calculator": true,
+    "stem": "600 mL of fluid is to run over 5 hours on a pump. What rate should be set, in mL per hour? Type the number only.",
+    "numeric": {
+      "answers": [
+        "120"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "600 mL / 5 hours = 120 mL per hour."
+  },
+  {
+    "id": "NZENSF-D-005",
+    "section": "enA",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Drip rates",
+    "calculator": true,
+    "stem": "1000 mL of fluid is to run over 8 hours by gravity. The giving set delivers 15 drops/mL. What is the drip rate in drops per minute, to the nearest whole number? Type the number only.",
+    "numeric": {
+      "answers": [
+        "31"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "(1000 x 15) / 480 minutes = 31.25, so 31 drops per minute."
+  },
+  {
+    "id": "NZENSF-D-006",
+    "section": "enA",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Infusion volumes",
+    "calculator": true,
+    "stem": "An infusion is running at 100 mL per hour. How many mL will have been given after 6.5 hours? Type the number only.",
+    "numeric": {
+      "answers": [
+        "650"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Volume = rate x time: 100 x 6.5 = 650 mL."
+  },
+  {
+    "id": "NZENSF-D-007",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Māori health",
+    "stem": "Pou one asks an enrolled nurse to advocate for equity for Māori in which situations?",
+    "options": [
+      "All situations and contexts",
+      "Only during discharge planning",
+      "Only when the patient asks",
+      "Only in Māori health services"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 1.2: advocates for health equity for Māori in all situations and contexts."
+  },
+  {
+    "id": "NZENSF-D-008",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seeking guidance",
+    "stem": "When should an enrolled nurse seek guidance from a registered nurse?",
+    "options": [
+      "Before every task they carry out",
+      "When it is beyond their expertise",
+      "Only when a doctor asks them to",
+      "Never, since the 2025 scope change"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The scope says guidance is sought when appropriate, and descriptor 3.3 asks the nurse to understand when to seek guidance. It is a judgement, not a rule for every task."
+  },
+  {
+    "id": "NZENSF-D-009",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complaints",
+    "stem": "Under the Code of Rights, how soon must a provider acknowledge a complaint in writing, unless it is resolved sooner?",
+    "options": [
+      "Within 5 working days",
+      "Within 20 working days",
+      "Within 3 calendar months",
+      "Within 24 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Right 10(6)(a): a provider must acknowledge a complaint in writing within 5 working days of receipt, unless it has been resolved to the consumer's satisfaction within that time."
+  },
+  {
+    "id": "NZENSF-D-010",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vital signs",
+    "stem": "Why should a respiratory rate be counted for a full minute?",
+    "options": [
+      "Short counts often miss changes",
+      "It warms the patient's chest up",
+      "It is only needed for children",
+      "It is quicker than counting for 15 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Counting for 15 or 30 seconds and multiplying can miss a raised or irregular rate, which is one of the first signs of deterioration."
+  },
+  {
+    "id": "NZENSF-D-011",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication safety",
+    "stem": "A charted dose seems far higher than usual. What should the enrolled nurse do?",
+    "options": [
+      "Give the usual dose instead",
+      "Give it, as the doctor wrote it",
+      "Give it and watch closely",
+      "Check with the prescriber first"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Every nurse is accountable for the medicines they give (descriptor 5.1). Querying an unusual dose before giving it prevents harm."
+  },
+  {
+    "id": "NZENSF-D-012",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Post-operative care",
+    "stem": "Which finding in a drain after abdominal surgery should be reported at once?",
+    "options": [
+      "Clear yellow fluid in small amounts",
+      "A small amount of pink fluid",
+      "A drain that has stayed empty",
+      "Bright red blood filling quickly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rapid filling with bright red blood suggests active bleeding and needs urgent escalation."
+  },
+  {
+    "id": "NZENSF-D-013",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sharps",
+    "stem": "An enrolled nurse has a needlestick injury from a used needle. What should she do first?",
+    "options": [
+      "Wait until the end of the shift",
+      "Cover it and carry on working",
+      "Let it bleed and wash with water",
+      "Suck the wound to clean it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "First aid is to let the wound bleed and wash it with soap and running water, then report it at once so testing and follow-up can start."
+  },
+  {
+    "id": "NZENSF-D-014",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Elder abuse",
+    "stem": "A resident has unexplained bruises and seems afraid of a family visitor. What should the enrolled nurse do?",
+    "options": [
+      "Keep it quiet to avoid upset",
+      "Record what she sees and report it",
+      "Ask the visitor directly about it",
+      "Wait to see if more bruises appear"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Possible abuse must be documented factually and reported through the organisation's process. Code of Conduct 7.2 asks nurses to protect vulnerable health consumers."
+  },
+  {
+    "id": "NZENSF-D-015",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lithium",
+    "stem": "A patient on lithium has vomiting, diarrhoea and a coarse tremor. What could this be?",
+    "options": [
+      "Lithium toxicity",
+      "A normal side effect",
+      "A panic attack",
+      "Alcohol withdrawal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vomiting, diarrhoea, coarse tremor and confusion can mean the lithium level is too high. It is withheld and escalated urgently."
+  },
+  {
+    "id": "NZENSF-D-016",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenFamily",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Child development",
+    "stem": "At about what age do most babies start to sit without support?",
+    "options": [
+      "Around 3 to 4 months",
+      "Around 6 to 8 months",
+      "Around 15 to 18 months",
+      "Around 1 to 2 months"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Most babies sit without support between about 6 and 8 months. A baby who is not sitting by about 9 months should be checked."
+  },
+  {
+    "id": "NZENSF-D-017",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Professional development",
+    "stem": "Descriptor 1.1 asks enrolled nurses to keep learning about which subject?",
+    "options": [
+      "Māori health and Te Tiriti",
+      "Hospital funding and budgets",
+      "Private health insurance rules",
+      "Overseas nursing registration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Descriptor 1.1: the enrolled nurse engages in ongoing professional development related to Māori health and the relevance of Te Tiriti o Waitangi articles and principles."
+  },
+  {
+    "id": "NZENSF-D-018",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Closed questions",
+    "stem": "When is a closed question most useful?",
+    "options": [
+      "To explore how a person feels",
+      "To start a counselling session",
+      "To check a specific fact quickly",
+      "To build trust at a first meeting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Closed questions, answered yes or no or with a fact, suit checking details such as allergies. Open questions suit feelings and concerns."
+  },
+  {
+    "id": "NZENSF-D-019",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Legislation",
+    "stem": "Which Act sets out the Nursing Council's role in registering nurses and setting scopes of practice?",
+    "options": [
+      "Pae Ora (Healthy Futures) Act 2022",
+      "Health and Disability Services (Safety) Act 2001",
+      "Health and Disability Commissioner Act 1994",
+      "Health Practitioners Competence Assurance Act 2003"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The standards say the Council is required under the Health Practitioners Competence Assurance Act 2003 to set standards of competence for scopes of practice."
+  },
+  {
+    "id": "NZENSF-D-020",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood glucose",
+    "stem": "A patient with type 1 diabetes has a blood glucose of 18 mmol/L, is vomiting and has rapid deep breathing. What could this be?",
+    "options": [
+      "Diabetic ketoacidosis",
+      "Hypoglycaemia",
+      "A normal blood glucose",
+      "A panic attack"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "High blood glucose with vomiting and rapid deep breathing in type 1 diabetes suggests diabetic ketoacidosis, a medical emergency."
+  },
+  {
+    "id": "NZENSF-D-021",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Anticoagulants",
+    "stem": "Which blood test is used to monitor warfarin?",
+    "options": [
+      "CRP",
+      "INR",
+      "HbA1c",
+      "eGFR"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The INR measures how long blood takes to clot and guides the warfarin dose. HbA1c is for diabetes, eGFR for kidneys and CRP for inflammation."
+  },
+  {
+    "id": "NZENSF-D-022",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Diabetes",
+    "stem": "A patient with diabetes who is nil by mouth before surgery is due her usual insulin. What should the enrolled nurse do?",
+    "options": [
+      "Give the full usual dose as charted",
+      "Leave all insulin off until tomorrow",
+      "Give the insulin with a sweet drink",
+      "Check the plan with the RN first"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Insulin with no food risks hypoglycaemia, and stopping it altogether risks hyperglycaemia. The plan for fasting must be confirmed."
+  },
+  {
+    "id": "NZENSF-D-023",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenIpc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Immunisation",
+    "stem": "Why are healthcare workers encouraged to have the influenza vaccine each year?",
+    "options": [
+      "To protect patients and themselves",
+      "To prevent the common cold",
+      "Because it is needed for registration",
+      "Because it lasts only one month"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Influenza vaccination reduces the chance that staff catch flu and pass it to vulnerable patients. The vaccine is updated each year for the strains expected."
+  },
+  {
+    "id": "NZENSF-D-024",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenChronic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rehabilitation",
+    "stem": "What is the aim of rehabilitation after a stroke?",
+    "options": [
+      "Avoid any contact with therapists",
+      "Staff do all daily tasks for the person",
+      "Regain as much independence as possible",
+      "Keep the person in bed to recover"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rehabilitation helps the person relearn skills and regain as much independence as possible, with the team, the person and whānau working together."
+  },
+  {
+    "id": "NZENSF-D-025",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Self-harm",
+    "stem": "A patient has cut her arms. Which response from the enrolled nurse is most helpful?",
+    "options": [
+      "Lecture her about scarring",
+      "Ignore the cuts so as not to reward them",
+      "Tell her she is wasting the team's time",
+      "Treat the wounds and listen calmly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A non-judgemental response, wound care and listening help engagement. The nurse also tells the team so risk can be assessed."
+  },
+  {
+    "id": "NZENSF-D-026",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenFamily",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Postnatal care",
+    "stem": "A woman two days after birth is soaking a pad every 30 minutes with bright red blood. What should the enrolled nurse do?",
+    "options": [
+      "Check again at the next round",
+      "Reassure her that this is normal",
+      "Escalate urgently to the midwife",
+      "Ask her to lie flat and rest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Soaking a pad in 30 minutes is heavy bleeding and may be a postpartum haemorrhage. A midwife or doctor must review her urgently."
+  },
+  {
+    "id": "NZENSF-D-027",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenTiriti",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cultural safety",
+    "stem": "A patient asks for a female nurse for personal cares. What does culturally safe practice require?",
+    "options": [
+      "Arrange a female nurse if at all possible",
+      "Note the request only if it happens again",
+      "Explain that all nurses are trained the same",
+      "Ask the patient to accept whoever is free"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Culturally safe care is determined by the recipient. Meeting a reasonable request about who gives intimate care respects dignity and cultural values (Code of Conduct principles 1 and 2)."
+  },
+  {
+    "id": "NZENSF-D-028",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenComm",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Escalation",
+    "stem": "A resident's oxygen saturation falls from 95% to 89% and she is breathless. The RN is at lunch. What should the enrolled nurse do?",
+    "options": [
+      "Ask the resident to rest and drink water",
+      "Record it and recheck at the next round",
+      "Wait for the RN to return from lunch",
+      "Use the escalation pathway now"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A sudden fall in oxygen saturation with breathlessness needs urgent escalation. If the usual person is not available, the nurse uses the escalation pathway rather than waiting (descriptor 3.5)."
+  },
+  {
+    "id": "NZENSF-D-029",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenProf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Code of Conduct",
+    "stem": "What is the Council's Code of Conduct for nurses?",
+    "options": [
+      "Standards of behaviour nurses must uphold",
+      "A list of tasks each scope may do",
+      "A code of ethics for nursing decisions",
+      "A guide to hospital employment law and pay"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Code describes the conduct nurses are expected to uphold; it says it is not a code of ethics. Failure to uphold it could lead to a disciplinary investigation."
+  },
+  {
+    "id": "NZENSF-D-030",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenAssess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pain assessment",
+    "stem": "A patient rates his pain 8 out of 10 an hour after an oral analgesic. What should the enrolled nurse do?",
+    "options": [
+      "Record the score and do nothing more",
+      "Reassess him and tell the RN",
+      "Give a second dose straight away",
+      "Tell him it takes a day to work"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Reassessment after an analgesic checks that it worked. Pain that is still severe needs review, not a repeat dose outside the prescription."
+  },
+  {
+    "id": "NZENSF-D-031",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenMeds",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoglycaemia",
+    "stem": "A conscious patient with a blood glucose of 3.1 mmol/L can swallow. What should be given first?",
+    "options": [
+      "A long-acting insulin dose",
+      "Nothing until the doctor arrives",
+      "A slice of buttered toast",
+      "Fast-acting carbohydrate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fast-acting carbohydrate raises glucose quickly. A longer-acting snack follows once it has risen, as the local protocol sets out."
+  },
+  {
+    "id": "NZENSF-D-032",
+    "section": "enB",
+    "test": 0,
+    "module": 1,
+    "domain": "nzenAcute",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Respiratory care",
+    "stem": "How long should a patient hold their breath after inhaling from a metered dose inhaler, if they can?",
+    "options": [
+      "About 60 seconds",
+      "About 10 seconds",
+      "About 1 second",
+      "About 30 seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Holding the breath for about 10 seconds lets the medicine settle in the airways."
+  }
+]

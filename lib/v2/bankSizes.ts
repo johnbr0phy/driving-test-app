@@ -114,4 +114,9 @@ export const BANK_SIZES: Record<string, number> = {
   cbest: 170,
   tabe: 200,
   dat: 214,
+  staaralg1: 190,
+  staareng1: 204,
+  staarbio: 202,
+  wonderlic: 200,
+  toeflread: 194,
 };

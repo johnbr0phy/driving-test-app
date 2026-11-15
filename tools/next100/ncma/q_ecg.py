@@ -5,7 +5,7 @@ Q = [
  "Lie still and breathe normally", ["Hold your breath until it ends", "Talk so we can check the leads", "Tense your arms slightly"],
  "Movement, talking and tense muscles add artifact, so the patient is told to lie still, relax and breathe normally."),
 ("A patient has a below-the-elbow amputation of the left arm. Where does the left arm electrode go?",
- "On the stump", ["On the left chest", "On the left leg", "It is left off"],
+ "On the stump", ["On the right wrist", "On the left leg", "It is left off"],
  "The limb electrode goes on the remaining part of the limb, and the other limb's electrode is placed at the same level so the leads stay balanced."),
 ("The provider orders a right-sided ECG. How are the chest leads placed?",
  "Mirror image on the right", ["The same as a standard ECG", "All across the back", "Only on the arms and legs"],

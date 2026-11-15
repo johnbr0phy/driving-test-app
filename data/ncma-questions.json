@@ -1811,7 +1811,7 @@
     "questionId": "NCMA-ECG-002",
     "category": "ncmaEcg",
     "question": "A patient has a below-the-elbow amputation of the left arm. Where does the left arm electrode go?",
-    "optionA": "On the left chest",
+    "optionA": "On the right wrist",
     "optionB": "On the stump",
     "optionC": "On the left leg",
     "optionD": "It is left off",

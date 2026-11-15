@@ -49,6 +49,7 @@ import '@/lib/v2/banks/mapgrowth';
 import '@/lib/v2/banks/isee';
 import '@/lib/v2/banks/ssat';
 import '@/lib/v2/banks/cogat';
+import '@/lib/v2/banks/hspt';
 import '@/lib/v2/banks/faapvt';
 import '@/lib/v2/banks/psat';
 import '@/lib/v2/banks/praxis';

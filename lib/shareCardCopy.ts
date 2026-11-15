@@ -76,6 +76,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cogat: { title: "CogAT Practice Test", description: "Practice the CogAT Verbal and Quantitative Batteries for grades 3 to 6, free." },
   mapgrowth: { title: "MAP Growth Practice Test", description: "Practice math, reading and language usage for the MAP Growth test in grades 2 to 5." },
   ssat: { title: "SSAT Practice Test", description: "Practice quantitative, reading and verbal questions for the Middle Level SSAT, grades 5 to 7." },
+  hspt: { title: "HSPT Practice Test", description: "Practice the five HSPT subtests for high school admission and placement." },
   sat: { title: "Digital SAT Practice Tests", description: "Build reading, writing and math skills with timed practice tests and focused topic drills." },
   act: { title: "ACT Practice Tests", description: "Review English, math, reading and science with timed tests, passages and skill drills." },
   teas: { title: "ATI TEAS Nursing Entrance Exam", description: "Build reading, math, science and English skills for nursing and allied health admissions." },

@@ -249,9 +249,6 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
             {!next.topPrepperLive && " (campaign paused)"}
             {next.topPrepperHoldout > 0 && `, ${fmtInt(next.topPrepperHoldout)} held out`}
           </span>
-          <span className="rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-1 text-gray-700 dark:text-gray-200">
-            Paywall follow-up next: <span className="font-semibold">{fmtInt(next.paywallFollowUp)}</span>
-          </span>
         </div>
         {data.leads.length === 0 ? (
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">Nobody yet.</p>

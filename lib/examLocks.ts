@@ -73,7 +73,7 @@ export function lockedTrainingParts(exam: ExamConfig): TrainingPart[] {
 }
 
 /**
- * Paywall item ids from v1 exam locks start with this, so the
- * paywall follow-up email (lib/paywallAbandon.ts) knows which exam it was.
+ * Paywall item ids from v1 exam locks start with this, so analytics can
+ * tell a v1 exam's paywall from the DMV's.
  */
 export const EXAM_PAYWALL_PREFIX = "exam_";

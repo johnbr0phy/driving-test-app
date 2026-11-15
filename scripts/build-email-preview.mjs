@@ -18,13 +18,6 @@ const EMAILS = [
     note: 'Untouched. The only email that was already live and working, so it keeps its original wording and renders byte-for-byte identical to what production sends today.',
   },
   {
-    key: 'paywallAbandon', stage: 2, name: 'Paywall abandon', status: 'new',
-    subject: 'Safety & Emergencies is still waiting',
-    trigger: 'Hit a paywall 1–24h ago · not premium · 10+ questions answered',
-    timing: 'Hourly', volume: '209 / mo', words: [101, 80],
-    note: 'The highest-intent moment in the product and previously the only one with no email at all. Buyers purchase within minutes of a paywall view; the ones who leave return 9% of the time.',
-  },
-  {
     key: 'firstTestReminder', stage: 3, name: 'Stalled study', status: 'changed',
     subject: 'Quick check-in from Tigertest',
     trigger: '25+ questions answered · 0 tests · idle 6h–3d',

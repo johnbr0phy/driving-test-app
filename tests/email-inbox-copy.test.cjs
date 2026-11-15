@@ -75,7 +75,6 @@ test('no generic study message implies a test date, a failed answer, or an offic
     const inbox = EMAIL_INBOX[key](voiceFor('ccma'));
     assert.doesNotMatch(inbox.subject + inbox.preheader, /Did you pass|coming up|soon|you failed|your mistakes|full-length|50 questions/i);
   }
-  assert.doesNotMatch(EMAIL_INBOX.paywallAbandon(voiceFor('dmv'), 'State Laws').subject, /waiting|unlocked|free/);
 });
 
 test('service copy identifies the action without unsupported timing or a school dashboard promise', () => {

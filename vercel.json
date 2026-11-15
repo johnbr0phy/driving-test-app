@@ -9,10 +9,6 @@
       "schedule": "0 9 * * *"
     },
     {
-      "path": "/api/cron/paywall-abandon",
-      "schedule": "0 12 * * *"
-    },
-    {
       "path": "/api/cron/super-amazing",
       "schedule": "0 17 * * *"
     },

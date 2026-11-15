@@ -101,15 +101,6 @@ const capped = (u, gap = DAY) => !!u.lastEmailSent && now - u.lastEmailSent.getT
 const active3d = (u) => now - u.lastActiveAt.getTime() <= 3 * DAY;
 
 const CAMPAIGNS = [
-  ['paywallAbandon', 4 * 3600000, (u) => {
-    if (!active3d(u)) return false;
-    if (u.subscription?.isPremium) return false;
-    if (u.questionsAnswered < 10) return false;
-    const h = u.lastPaywallHit;
-    if (!h) return false;
-    const age = now - h.at.getTime();
-    return age >= 3600000 && age <= DAY;
-  }],
   ['firstTestReminder', DAY, (u) => {
     if (!active3d(u)) return false;
     if (u.completedTests.length > 0) return false;

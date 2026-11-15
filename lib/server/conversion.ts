@@ -87,7 +87,7 @@ export interface ConversionPayload {
   /** The top prepper email against its holdout (lib/topPrepper.ts). */
   topPrepper: TopPrepperResult;
   /** Who the email crons would pick next, a best guess from the same rules. */
-  nextEmails: { topPrepper: number; topPrepperHoldout: number; topPrepperLive: boolean; paywallFollowUp: number };
+  nextEmails: { topPrepper: number; topPrepperHoldout: number; topPrepperLive: boolean };
   /** Unpaid accounts most like buyers, active in the last 14 days. */
   leads: {
     email: string;
@@ -543,20 +543,16 @@ export async function buildConversion(): Promise<ConversionPayload> {
   };
 
   // ── Who the email crons would pick next ────────────────────────────────
-  // The same rules as /api/cron/top-prepper and /api/cron/paywall-abandon,
-  // minus the class and exam checks: a best guess, said so on the page.
+  // The same rules as /api/cron/top-prepper, minus the class and exam
+  // checks: a best guess, said so on the page.
   const topPrepperLive = process.env.TOP_PREPPER_CAMPAIGN === 'send';
   const lastHitOf = (a: Account) => a.hits.reduce((m, h) => Math.max(m, h.lastAt ?? 0), 0);
-  const nextEmailFor = (a: Account): { label: string; kind: 'topPrepper' | 'topPrepperHoldout' | 'paywall' | null } => {
+  const nextEmailFor = (a: Account): { label: string; kind: 'topPrepper' | 'topPrepperHoldout' | null } => {
     if (a.row.paid) return { label: 'Paid', kind: null };
     if (a.email.status === 'unsubscribed') return { label: 'None: unsubscribed', kind: null };
     if (a.email.status === 'no_consent') return { label: 'None: no marketing consent', kind: null };
     const last = lastHitOf(a);
     const age = last ? now - last : Infinity;
-    const recent = a.email.lastAt !== null && now - a.email.lastAt < 86_400_000;
-    if (age <= 36 * 3_600_000 && a.statsAnswers >= 10 && !a.email.sent.includes('paywallAbandon')) {
-      return { label: recent ? 'Paywall follow-up, after a day since their last email' : 'Paywall follow-up, next 12:00 UTC run', kind: 'paywall' };
-    }
     if (
       !a.email.topPrepper &&
       !a.email.sent.includes('topPrepper') &&
@@ -570,12 +566,11 @@ export async function buildConversion(): Promise<ConversionPayload> {
     }
     return { label: 'Nothing due', kind: null };
   };
-  const nextEmails = { topPrepper: 0, topPrepperHoldout: 0, topPrepperLive, paywallFollowUp: 0 };
+  const nextEmails = { topPrepper: 0, topPrepperHoldout: 0, topPrepperLive };
   for (const a of accounts) {
     const k = nextEmailFor(a).kind;
     if (k === 'topPrepper') nextEmails.topPrepper++;
     else if (k === 'topPrepperHoldout') nextEmails.topPrepperHoldout++;
-    else if (k === 'paywall') nextEmails.paywallFollowUp++;
   }
 
   // ── Warm leads: unpaid, seen a paywall, active lately, most like buyers ─

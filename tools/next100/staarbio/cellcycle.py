@@ -20,9 +20,9 @@ ITEMS = [
 
     # ---------------- Practice Test 2 ----------------
     Q(2, 2, CYC,
-      "Each new DNA molecule made in replication contains one strand from the original molecule and one new strand. This model is called:",
-      ["semiconservative replication", "conservative replication", "dispersive replication", "random replication"],
-      "In the semiconservative model each parent strand serves as a template, so each daughter molecule keeps one old strand. The conservative model would keep the original double helix whole."),
+      "During DNA replication, a parent strand that reads ATTGC is used as a template. Which sequence does the new strand have?",
+      ["TAACG", "UAACG", "ATTGC", "GCCAT"],
+      "In DNA, adenine pairs with thymine and guanine pairs with cytosine, so ATTGC is matched by TAACG. Uracil is found in RNA, not DNA."),
     Q(2, 2, DIF,
       "Some turtle eggs develop into males at cooler temperatures and females at warmer temperatures. This shows that:",
       ["the environment affects development", "temperature changes the DNA sequence", "only females have differentiated cells", "egg cells cannot differentiate"],
@@ -43,7 +43,7 @@ ITEMS = [
       "In anaphase the sister chromatids are pulled apart toward opposite poles. In metaphase they line up across the middle of the cell, and in telophase new nuclei form."),
     Q(0, 2, CYC,
       "A cell with 46 chromosomes completes mitosis. How many chromosomes does each daughter cell have?",
-      ["23", "46", "69", "92"],
+      ["46", "23", "69", "92"],
       "Mitosis keeps the chromosome number the same, so each daughter cell gets 46. Halving to 23 happens in meiosis."),
     Q(0, 2, CYC,
       "The longest part of the cell cycle for most cells, when the cell grows and carries out its normal work, is:",

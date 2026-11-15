@@ -876,17 +876,17 @@
       "skill": "B.6A Cell cycle and DNA replication",
       "difficulty": 2,
       "format": "single",
-      "stem": "Each new DNA molecule made in replication contains one strand from the original molecule and one new strand. This model is called:",
+      "stem": "During DNA replication, a parent strand that reads ATTGC is used as a template. Which sequence does the new strand have?",
       "options": [
-        "conservative replication",
-        "dispersive replication",
-        "semiconservative replication",
-        "random replication"
+        "ATTGC",
+        "UAACG",
+        "TAACG",
+        "GCCAT"
       ],
       "correct": [
         2
       ],
-      "explanation": "In the semiconservative model each parent strand serves as a template, so each daughter molecule keeps one old strand. The conservative model would keep the original double helix whole."
+      "explanation": "In DNA, adenine pairs with thymine and guanine pairs with cytosine, so ATTGC is matched by TAACG. Uracil is found in RNA, not DNA."
     },
     {
       "id": "STAARBIO-T2-006",
@@ -1099,7 +1099,7 @@
         "7"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
       "explanation": "Methionine, glutamic acid, proline, phenylalanine and glycine make 5 amino acids. UAA is a stop codon, which ends translation without adding an amino acid."
@@ -1372,17 +1372,17 @@
       "difficulty": 3,
       "format": "single",
       "stimulusId": "STAARBIO-T2-S2",
-      "stem": "Dark beetles from a nearby burned area begin moving into this population. Which mechanism does this add?",
+      "stem": "Dark beetles from a nearby burned area begin moving into this population and breeding with it. How will this most likely change the population?",
       "options": [
-        "Stasis",
-        "Gene flow",
-        "Genetic drift",
-        "Speciation"
+        "No allele frequencies change",
+        "The dark-color allele disappears",
+        "The dark-color allele becomes more common",
+        "The light-color allele becomes more common"
       ],
       "correct": [
-        1
+        2
       ],
-      "explanation": "Gene flow is the movement of alleles into or out of a population when individuals migrate. Here it would add more dark-color alleles."
+      "explanation": "The newcomers bring dark-color alleles with them. This movement of alleles with migrating individuals is gene flow, and here it adds to the change selection is already causing."
     },
     {
       "id": "STAARBIO-T2-029",
@@ -1932,7 +1932,7 @@
         "92"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
       "explanation": "Mitosis keeps the chromosome number the same, so each daughter cell gets 46. Halving to 23 happens in meiosis."
@@ -2888,7 +2888,7 @@
         "70%"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
       "explanation": "Adenine pairs with thymine, so they are present in equal amounts: 30% thymine. That leaves 40% for guanine and cytosine together, 20% each."
@@ -3188,7 +3188,7 @@
         "9"
       ],
       "correct": [
-        0
+        2
       ],
       "lockedOrder": true,
       "explanation": "Each pair can go two ways, so 2 x 2 x 2 = 8 combinations. Crossing-over adds even more variety."
@@ -3585,17 +3585,17 @@
       "skill": "B.9B Rates of change in the fossil record",
       "difficulty": 2,
       "format": "single",
-      "stem": "Which observation in the fossil record would support gradualism?",
+      "stem": "Two scientists disagree about whether a group of fossil snails changed gradually or appeared abruptly. Which new evidence would best help them decide?",
       "options": [
-        "New groups appearing all at once",
-        "No change for millions of years",
-        "Small changes in many layers",
-        "Fossils only in the top layer"
+        "Fossils from only the top rock layer",
+        "Fossils from many closely spaced rock layers",
+        "The color of a single shell",
+        "One very well preserved fossil"
       ],
       "correct": [
-        2
+        1
       ],
-      "explanation": "Gradualism predicts slow, steady change, so fossils would show many in-between forms through many layers."
+      "explanation": "Telling a slow, steady change from a sudden one needs a detailed sequence through time. Many closely spaced layers show whether in-between forms are present."
     },
     {
       "id": "STAARBIO-D-098",
@@ -3735,17 +3735,17 @@
       "skill": "B.10A Natural selection acts on populations",
       "difficulty": 2,
       "format": "single",
-      "stem": "A giraffe stretches its neck to reach high leaves all its life. According to natural selection, this stretching will:",
+      "stem": "In one region, light-colored mice are most common on pale sand, and dark-colored mice are most common on nearby dark lava rock. Owls hunt in both places. What does this pattern show about natural selection?",
       "options": [
-        "not affect its offspring's necks",
-        "make its offspring's necks longer",
-        "change the giraffe's DNA",
-        "cause a new species at once"
+        "Mice change their fur color to match the ground",
+        "Owls cause new fur colors to appear",
+        "Which trait is favored depends on the environment",
+        "Dark fur is always better than light fur"
       ],
       "correct": [
-        0
+        2
       ],
-      "explanation": "Effects of use during an individual's life are not inherited. Neck length changes in a population only when giraffes with genes for longer necks leave more offspring."
+      "explanation": "Owls catch the mice that stand out most, so the favored color differs between habitats. Fur color is inherited; the mice do not change color, and the owls do not create new alleles."
     },
     {
       "id": "STAARBIO-D-105",

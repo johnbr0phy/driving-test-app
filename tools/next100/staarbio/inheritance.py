@@ -67,7 +67,7 @@ ITEMS = [
       "Each pair of homologous chromosomes lines up independently of the others, so gametes get many different mixes of maternal and paternal chromosomes."),
     Q(0, 3, MEI,
       "An organism has 3 pairs of chromosomes. Counting independent assortment alone, how many different combinations of chromosomes can its gametes have?",
-      ["3", "6", "8", "9"],
+      ["8", "3", "6", "9"],
       "Each pair can go two ways, so 2 x 2 x 2 = 8 combinations. Crossing-over adds even more variety."),
     Q(0, 2, MEI,
       "Which outcome of sexual reproduction is a direct result of meiosis and fertilization?",

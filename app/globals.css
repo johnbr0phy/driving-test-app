@@ -3458,6 +3458,20 @@
     --brand-gradient-to: 124 58% 96%;
   }
 
+  /* STAAR Biology theme: deep magenta (v2 exam; matches lib/v2/exams/staarbio.ts theme) */
+  [data-theme="staarbio"] {
+    --brand: 322 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 322 70% 96%;
+    --brand-hover: 322 85% 26%;
+    --brand-dark: 322 85% 22%;
+    --brand-darker: 322 80% 13%;
+    --brand-muted: 322 35% 72%;
+    --brand-border: 322 45% 80%;
+    --brand-border-light: 322 45% 90%;
+    --brand-gradient-to: 332 60% 96%;
+  }
+
   /* Philippine Civil Service Exam theme: deep government blue (v2 exam; matches lib/v2/exams/phcse.ts theme) */
   [data-theme="phcse"] {
     --brand: 221 50% 30%;
@@ -7878,6 +7892,18 @@
     --brand-muted: 112 30% 45%;
     --brand-dark: 112 58% 65%;
     --brand-darker: 112 53% 78%;
+  }
+
+  .dark [data-theme="staarbio"] {
+    --brand: 322 85% 46.7%;
+    --brand-hover: 322 85% 38.7%;
+    --brand-light: 322 45% 13%;
+    --brand-gradient-to: 332 40% 11%;
+    --brand-border-light: 322 35% 24%;
+    --brand-border: 322 40% 34%;
+    --brand-muted: 322 35% 45%;
+    --brand-dark: 322 85% 65%;
+    --brand-darker: 322 80% 78%;
   }
 
   .dark [data-theme="phcse"] {

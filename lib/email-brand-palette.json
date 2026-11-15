@@ -245,6 +245,7 @@
   "apush": ["#794949","#f7f2f2","#3d2929","#ecdfdf"],
   "apitalian": ["#8b1865","#fceef7","#411031","#f1dae9"],
   "apbio": ["#2f8122","#f0fbef","#163711","#def0db"],
+  "staarbio": ["#8e0b5e","#fceef7","#3c0728","#f1dae9"],
   "phcse": ["#263e73","#f0f3fa","#111a2c","#dbe2f0"],
   "upscse": ["#7e491b","#fbf4ee","#311d0c","#eee5dd"],
   "nda": ["#546d8c","#f2f5f7","#222d39","#e0e5eb"],

@@ -3,6 +3,14 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "staarbio",
+      "date": "2027-08-01",
+      "kind": "sunset",
+      "what": "House Bill 8: STAAR is replaced by a new assessment program (possibly called the Student Success Tool) beginning in the 2027-28 school year; TEA has posted draft SST Biology blueprints.",
+      "action": "Re-check TEA's Biology blueprint for the new program; rebuild or retire the STAAR Biology bank and landing.",
+      "source": "https://tea.texas.gov/data-reports/student-assessment-overview/house-bill-8-student-assessment"
+    },
+    {
       "exam": "ccna",
       "date": "2027-02-03",
       "kind": "outline",

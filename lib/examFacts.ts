@@ -5034,6 +5034,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "BCEN: Certified Emergency Nurse (CEN)", url: "https://bcen.org/cen/" },
   },
 
+  rma: {
+    answer:
+      "The Registered Medical Assistant (RMA) exam is the certification exam of American Medical Technologists (AMT) for medical assistants, which earns the RMA (AMT) credential. AMT's examination specifications list 210 four-option multiple-choice questions: General Medical Assisting 65 (31%), Administrative Medical Assisting 30 (14%) and Clinical Medical Assisting 115 (55%). The exam is taken on a computer in 2 hours, scheduled through Pearson VUE or by a candidate's school, and may include unscored pretest items. Scores are scaled from 0 to 100, and 70 is the minimum passing score; it is not a percentage. A candidate who fails retakes the whole exam and may test up to four times in all.",
+    rows: [
+      { label: "Questions", value: "210 multiple choice, four options, single best answer" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "Scaled score of 70 (scale 0 to 100, not a percentage)" },
+      { label: "Content", value: "Clinical 115 (55%), General 65 (31%), Administrative 30 (14%)" },
+      { label: "Where", value: "Computer based, scheduled through Pearson VUE or your school" },
+      { label: "Retakes", value: "Whole exam, up to four attempts in all, with a retest fee" },
+      { label: "Run by", value: "American Medical Technologists (AMT)" },
+    ],
+    basedOn: "AMT's RMA Certification Examination Competencies and Examination Specifications (2026) and the AMT Candidate Handbook (revised April 2026), checked November 2026",
+    source: { name: "AMT: Registered Medical Assistant exam", url: "https://americanmedtech.org/medical-assistant/rma-exam" },
+  },
   nhie: {
     answer:
       "The National Home Inspector Examination (NHIE) is the home inspector competency exam written by the Examination Board of Professional Home Inspectors (EBPHI) and used for licensing in 35 states and several Canadian provinces. It has 200 multiple-choice questions, 25 of them unscored pretest items, in four hours. Scores are scaled from 200 to 800 and 500 passes. It covers property and building inspection (70%), analysis of findings and reporting (20%) and professional responsibilities (10%), and is delivered by PSI in most states and Pearson VUE in a few.",

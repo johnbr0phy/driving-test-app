@@ -218,10 +218,10 @@
     "optionA": "Reportarlo después de terminar el viaje",
     "optionB": "Seguir manejando pero vigilar el problema",
     "optionC": "No operar el vehículo hasta que se repare",
-    "optionD": "Anotarlo para el próximo mantenimiento programado",
+    "optionD": "Seguir manejando y repararlo en el próximo servicio",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Cualquier defecto de seguridad descubierto durante la inspección previa al viaje requiere sacar el vehículo de servicio hasta que personal calificado repare el defecto correctamente."
+    "explanation": "Cualquier defecto de seguridad descubierto durante la inspección previa al viaje requiere sacar el vehículo de servicio hasta que personal calificado repare el defecto correctamente. Esperar al próximo servicio significa manejar con un defecto de seguridad conocido."
   },
   {
     "questionId": "CDL-GK-017",
@@ -243,13 +243,13 @@
     "state": "ALL",
     "category": "vehicleInspection",
     "question": "¿Cómo debe inspeccionar las bandas en el compartimiento del motor?",
-    "optionA": "Revisar solo que tengan la tensión correcta",
+    "optionA": "Fijarse solo en la tensión correcta",
     "optionB": "Buscar grietas, deshilachado o vidriado",
     "optionC": "Asegurarse de que las bandas estén completamente rígidas",
     "optionD": "Verificar que las bandas estén perfectamente rectas",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las bandas del motor se deben inspeccionar en busca de grietas, deshilachado, vidriado u otros daños que puedan causar que la banda falle y se pierdan accesorios críticos del motor."
+    "explanation": "Las bandas del motor se deben inspeccionar en busca de grietas, deshilachado, vidriado u otros daños que puedan causar que la banda falle y se pierdan accesorios críticos del motor. La tensión por sí sola no basta; una banda tensa puede estar agrietada o deshilachada."
   },
   {
     "questionId": "CDL-GK-019",
@@ -314,12 +314,12 @@
     "category": "vehicleInspection",
     "question": "¿Qué debe hacer si encuentra amortiguadores dañados durante la inspección?",
     "optionA": "Mandarlos reparar antes de manejar",
-    "optionB": "Manejar con cuidado hasta el próximo servicio",
+    "optionB": "Repararlos en su próximo servicio programado",
     "optionC": "Vigilar su funcionamiento durante el viaje",
     "optionD": "Reemplazarlos solo si tienen una fuga grave",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los amortiguadores dañados afectan la estabilidad y el manejo del vehículo, lo que crea condiciones inseguras que requieren repararlos antes de poder operar el vehículo."
+    "explanation": "Los amortiguadores dañados afectan la estabilidad y el manejo del vehículo, lo que crea condiciones inseguras que requieren repararlos antes de poder operar el vehículo. Dejar la reparación para el próximo servicio programado significa manejar con amortiguadores dañados."
   },
   {
     "questionId": "CDL-GK-024",
@@ -400,10 +400,10 @@
     "optionA": "El pedal del freno baja hasta el piso",
     "optionB": "Se necesita la fuerza máxima para detenerse",
     "optionC": "El recorrido de la varilla de empuje está dentro de las especificaciones",
-    "optionD": "Los frenos responden por completo solo cuando están calientes",
+    "optionD": "El pedal se detiene a menos de una pulgada del piso",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El ajuste correcto de los frenos se indica cuando la medida del recorrido de la varilla de empuje está dentro de las especificaciones del fabricante para frenar de manera segura y eficaz."
+    "explanation": "El ajuste correcto de los frenos se indica cuando la medida del recorrido de la varilla de empuje está dentro de las especificaciones del fabricante para frenar de manera segura y eficaz. Un pedal que llega casi al piso indica un problema de frenos, no un buen ajuste."
   },
   {
     "questionId": "CDL-GK-030",
@@ -720,12 +720,12 @@
     "category": "vehicleInspection",
     "question": "¿Qué debe hacer si la bocina de su vehículo no funciona durante la inspección previa al viaje?",
     "optionA": "Usar señales con la mano en lugar de la bocina",
-    "optionB": "Manejar solo durante el día",
+    "optionB": "Manejar hoy y repararla esta noche",
     "optionC": "Depender de las luces para toda la comunicación",
     "optionD": "No manejar hasta que se repare la bocina",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La ley exige una bocina que funcione para operar con seguridad, por lo que no se puede manejar el vehículo hasta que la bocina se repare y funcione correctamente."
+    "explanation": "La ley exige una bocina que funcione para operar con seguridad, por lo que no se puede manejar el vehículo hasta que la bocina se repare y funcione correctamente. Una bocina que funcione es equipo obligatorio, así que debe repararse antes del viaje, no después."
   },
   {
     "questionId": "CDL-GK-053",
@@ -764,10 +764,10 @@
     "optionA": "Solo con una revisión visual desde fuera del remolque",
     "optionB": "Revisar solo las puertas traseras de carga",
     "optionC": "Inspeccionar los amarres y los dispositivos de sujeción",
-    "optionD": "Verificar solo la distribución del peso de la carga",
+    "optionD": "Revisar la sujeción solo en la última fila",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Para la sujeción de la carga se deben inspeccionar todos los amarres y dispositivos de sujeción para asegurar que la carga no se mueva durante el transporte, lo que podría afectar la estabilidad del vehículo."
+    "explanation": "Para la sujeción de la carga se deben inspeccionar todos los amarres y dispositivos de sujeción para asegurar que la carga no se mueva durante el transporte, lo que podría afectar la estabilidad del vehículo. Revisar solo la última fila hace que no vea amarres flojos en el resto de la carga."
   },
   {
     "questionId": "CDL-GK-056",
@@ -778,10 +778,10 @@
     "optionA": "Agregar más líquido de frenos y continuar",
     "optionB": "Mandar reparar el sistema de frenos de inmediato",
     "optionC": "Vigilar la fuga durante el viaje",
-    "optionD": "Revisar el nivel del líquido de frenos con más frecuencia",
+    "optionD": "Rellenarlo ahora y repararlo después",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las fugas de líquido de frenos indican problemas graves en el sistema de frenos que podrían causar una falla de los frenos, por lo que requieren una reparación profesional inmediata antes de poder operar el vehículo con seguridad."
+    "explanation": "Las fugas de líquido de frenos indican problemas graves en el sistema de frenos que podrían causar una falla de los frenos, por lo que requieren una reparación profesional inmediata antes de poder operar el vehículo con seguridad. Rellenar el líquido no detiene la fuga, así que la reparación no puede esperar."
   },
   {
     "questionId": "CDL-GK-057",
@@ -945,11 +945,11 @@
     "question": "¿Qué debe hacer cuando siente sueño mientras maneja?",
     "optionA": "Detenerse en un lugar seguro y descansar",
     "optionB": "Abrir las ventanas y subir el volumen del radio",
-    "optionC": "Tomar café y seguir manejando",
+    "optionC": "Orillarse en un lugar seguro por un café y seguir manejando",
     "optionD": "Manejar más rápido para llegar antes a su destino",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "La única respuesta segura ante el sueño es detenerse en un lugar seguro y descansar lo suficiente antes de continuar."
+    "explanation": "La única respuesta segura ante el sueño es detenerse en un lugar seguro y descansar lo suficiente antes de continuar. El café solo oculta la somnolencia por poco tiempo, así que orillarse solo por un café no basta."
   },
   {
     "questionId": "CDL-GK-069",
@@ -986,12 +986,12 @@
     "category": "safeDriving",
     "question": "¿Cuál es el peligro principal de usar un teléfono celular mientras maneja?",
     "optionA": "Infringe las normas federales, pero afecta poco su manejo",
-    "optionB": "Puede descargar la batería de su vehículo",
-    "optionC": "Causa distracción mental y reduce el tiempo de reacción",
+    "optionB": "Hace más lentas sus reacciones solo mientras envía mensajes",
+    "optionC": "Causa distracción mental y hace más lentas sus reacciones",
     "optionD": "Interfiere con su radio CB y las comunicaciones con el despachador",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Usar el teléfono celular causa una distracción mental peligrosa que reduce mucho el tiempo de reacción y la atención a las tareas de manejo."
+    "explanation": "Usar el teléfono celular causa una distracción mental peligrosa que reduce mucho el tiempo de reacción y la atención a las tareas de manejo. Hablar por teléfono también le distrae, no solo enviar mensajes."
   },
   {
     "questionId": "CDL-GK-072",
@@ -1056,12 +1056,12 @@
     "category": "safeDriving",
     "question": "Al bajar una pendiente pronunciada, ¿qué debe hacer con su velocidad?",
     "optionA": "Dejar que la gravedad aumente su velocidad de forma natural",
-    "optionB": "Usar los frenos continuamente cuesta abajo",
+    "optionB": "Frenar todo el tiempo para mantener una velocidad segura",
     "optionC": "Cambiar a neutral para ahorrar combustible",
     "optionD": "Usar el freno de motor y mantener una velocidad segura",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "En pendientes pronunciadas, use el freno de motor junto con los frenos de servicio según sea necesario para mantener una velocidad segura y evitar que los frenos se sobrecalienten."
+    "explanation": "En pendientes pronunciadas, use el freno de motor junto con los frenos de servicio según sea necesario para mantener una velocidad segura y evitar que los frenos se sobrecalienten. Frenar todo el tiempo para mantener una velocidad segura los sobrecalienta y hace que pierdan eficacia."
   },
   {
     "questionId": "CDL-GK-077",
@@ -1113,11 +1113,11 @@
     "question": "¿Cuándo es aceptable exceder el límite de velocidad?",
     "optionA": "Al rebasar a otro vehículo en un camino de dos carriles",
     "optionB": "Nunca: los límites de velocidad son las velocidades máximas seguras",
-    "optionC": "Cuando el tráfico va más rápido que el límite",
+    "optionC": "Cuando la carretera está seca y parece seguro",
     "optionD": "Cuando usted conoce bien el camino",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los límites de velocidad representan las velocidades máximas seguras en condiciones ideales y nunca se deben exceder, sin importar las circunstancias."
+    "explanation": "Los límites de velocidad representan las velocidades máximas seguras en condiciones ideales y nunca se deben exceder, sin importar las circunstancias. Una carretera seca que parece segura no es motivo para pasar el máximo indicado."
   },
   {
     "questionId": "CDL-GK-081",
@@ -1125,13 +1125,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "¿Qué debe hacer al acercarse a un cruce de ferrocarril?",
-    "optionA": "Acelerar para cruzar rápido antes de que pueda llegar un tren",
+    "optionA": "Reducir la velocidad solo si las luces de advertencia parpadean",
     "optionB": "Detenerse solo si ve que se acerca un tren",
     "optionC": "Reducir la velocidad, mirar a ambos lados y escuchar si viene un tren",
     "optionD": "Cruzar a velocidad normal si las barreras están arriba",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Siempre reduzca la velocidad en los cruces de ferrocarril, mire en ambas direcciones y escuche si se acercan trenes, aunque los dispositivos de advertencia no estén activos."
+    "explanation": "Siempre reduzca la velocidad en los cruces de ferrocarril, mire en ambas direcciones y escuche si se acercan trenes, aunque los dispositivos de advertencia no estén activos. Reducir la velocidad solo cuando parpadean las luces no basta, porque los dispositivos de advertencia pueden fallar o no existir."
   },
   {
     "questionId": "CDL-GK-082",
@@ -1310,10 +1310,10 @@
     "optionA": "Hacer cambio de luces y tocar la bocina para mostrar su enojo",
     "optionB": "Reducir la velocidad para recuperar la distancia de seguimiento adecuada",
     "optionC": "Acelerar para mantenerse cerca detrás de él y no perder su lugar",
-    "optionD": "Cambiar de carril para rebasarlo",
+    "optionD": "Reducir la velocidad un momento y luego volver a acercarse",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Cuando alguien se le mete adelante, reduzca la velocidad para recuperar la distancia de seguimiento adecuada en lugar de reaccionar de forma agresiva."
+    "explanation": "Cuando alguien se le mete adelante, reduzca la velocidad para recuperar la distancia de seguimiento adecuada en lugar de reaccionar de forma agresiva. Reducir la velocidad un momento y luego volver a acercarse le deja sin un espacio de seguridad."
   },
   {
     "questionId": "CDL-GK-095",
@@ -1378,12 +1378,12 @@
     "category": "safeDriving",
     "question": "¿Cuál es la forma más segura de cambiar de carril?",
     "optionA": "Señalar y cambiarse rápido para pasar menos tiempo entre carriles",
-    "optionB": "Revisar los espejos una vez y luego cambiarse sin señalar",
+    "optionB": "Revisar los puntos ciegos una vez y cambiarse sin señalar",
     "optionC": "Señalar, revisar espejos y puntos ciegos, y luego cambiarse poco a poco",
     "optionD": "Cambiarse primero y luego señalar para mostrar sus intenciones",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los cambios de carril seguros requieren señalar con anticipación, revisar a fondo los espejos y los puntos ciegos, y luego pasarse poco a poco al nuevo carril."
+    "explanation": "Los cambios de carril seguros requieren señalar con anticipación, revisar a fondo los espejos y los puntos ciegos, y luego pasarse poco a poco al nuevo carril. Revisar los puntos ciegos no sustituye señalar primero."
   },
   {
     "questionId": "CDL-GK-100",
@@ -1393,11 +1393,11 @@
     "question": "¿Qué efecto tiene el alcohol en la capacidad de manejar?",
     "optionA": "Solo afecta la coordinación, no el juicio",
     "optionB": "Afecta el juicio, el tiempo de reacción y la coordinación",
-    "optionC": "Solo afecta la visión nocturna",
+    "optionC": "Hace más lentas las reacciones pero no afecta el juicio",
     "optionD": "Mejora la confianza pero reduce la precaución",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El alcohol afecta todos los aspectos del manejo seguro, incluidos el juicio, el tiempo de reacción, la coordinación y la visión, lo que hace que manejar sea extremadamente peligroso."
+    "explanation": "El alcohol afecta todos los aspectos del manejo seguro, incluidos el juicio, el tiempo de reacción, la coordinación y la visión, lo que hace que manejar sea extremadamente peligroso. El alcohol afecta el juicio además de las reacciones."
   },
   {
     "questionId": "CDL-GK-101",
@@ -1407,11 +1407,11 @@
     "question": "¿Cómo puede reducir la probabilidad de un choque en las intersecciones?",
     "optionA": "Acérquese despacio, mire a ambos lados y tenga el pie listo sobre el freno",
     "optionB": "Acelere para cruzar la intersección rápidamente",
-    "optionC": "Concéntrese solo en los semáforos y las señales",
+    "optionC": "Mirar solo los semáforos y las señales",
     "optionD": "Toque la bocina al entrar para anunciar su presencia",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Reduzca el riesgo de choque en las intersecciones acercándose despacio, mirando en todas direcciones en busca de peligros y estando listo para frenar si es necesario."
+    "explanation": "Reduzca el riesgo de choque en las intersecciones acercándose despacio, mirando en todas direcciones en busca de peligros y estando listo para frenar si es necesario. Mirar solo los semáforos y las señales hace que no vea a vehículos y personas que entran al cruce."
   },
   {
     "questionId": "CDL-GK-102",
@@ -1450,10 +1450,10 @@
     "optionA": "Otros vehículos lo rebasan con frecuencia",
     "optionB": "No puede detenerse dentro de la distancia que ve con claridad",
     "optionC": "Su motor trabaja más de lo normal",
-    "optionD": "El tráfico avanza por debajo del límite de velocidad",
+    "optionD": "El resto del tráfico circula dentro del límite de velocidad",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Está conduciendo demasiado rápido si no puede detenerse dentro de la distancia que ve con claridad hacia adelante. Esta es la regla básica de la velocidad segura."
+    "explanation": "Está conduciendo demasiado rápido si no puede detenerse dentro de la distancia que ve con claridad hacia adelante. Esta es la regla básica de la velocidad segura. Lo que hace el resto del tráfico no indica si usted puede detenerse en la distancia que alcanza a ver."
   },
   {
     "questionId": "CDL-GK-105",
@@ -1461,13 +1461,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "¿Qué debe hacer al cruzarse de noche con un vehículo que viene en sentido contrario?",
-    "optionA": "Hacer cambio de luces altas para ver mejor y comunicarse",
+    "optionA": "Reducir la velocidad y cambiar a las luces altas",
     "optionB": "Mirar directamente sus faros para calcular su distancia",
     "optionC": "Mirar hacia el borde derecho del camino y reducir la velocidad",
     "optionD": "Encender las luces intermitentes de emergencia para que lo vean mejor",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Al cruzarse de noche con vehículos en sentido contrario, mire hacia el borde derecho del camino para no quedar deslumbrado y reduzca la velocidad si es necesario."
+    "explanation": "Al cruzarse de noche con vehículos en sentido contrario, mire hacia el borde derecho del camino para no quedar deslumbrado y reduzca la velocidad si es necesario. Cambiar a las luces altas deslumbra al conductor que viene de frente, aunque usted también reduzca la velocidad."
   },
   {
     "questionId": "CDL-GK-106",
@@ -1477,11 +1477,11 @@
     "question": "¿Por qué es importante señalar sus intenciones con anticipación?",
     "optionA": "Lo exigen las normas federales para todos los vehículos comerciales",
     "optionB": "Da a los demás conductores tiempo para verlo y reaccionar con seguridad",
-    "optionC": "Reduce el consumo de combustible y mejora la eficiencia del vehículo",
+    "optionC": "Le permite girar con seguridad sin revisar los espejos",
     "optionD": "Evita el desgaste de los focos direccionales y del sistema eléctrico",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Señalar con anticipación da a los demás conductores tiempo suficiente para ver sus intenciones y ajustar su manejo, por la seguridad de todos."
+    "explanation": "Señalar con anticipación da a los demás conductores tiempo suficiente para ver sus intenciones y ajustar su manejo, por la seguridad de todos. Señalar nunca sustituye revisar los espejos antes de girar."
   },
   {
     "questionId": "CDL-GK-107",
@@ -1574,12 +1574,12 @@
     "category": "safeDriving",
     "question": "¿Cómo debe tomar una curva o una vuelta?",
     "optionA": "Mantener una velocidad constante durante toda la maniobra",
-    "optionB": "Acelerar un poco a la mitad para conservar el impulso",
+    "optionB": "Reducir la velocidad cuando ya está a mitad de la curva",
     "optionC": "Reducir la velocidad antes de la curva y luego acelerar suavemente en ella",
     "optionD": "Frenar dentro de la curva para mantener el control y la estabilidad",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La técnica más segura es reducir la velocidad antes de entrar en la curva y luego acelerar suavemente al completar la vuelta."
+    "explanation": "La técnica más segura es reducir la velocidad antes de entrar en la curva y luego acelerar suavemente al completar la vuelta. Esperar a estar a mitad de la curva para reducir la velocidad significa frenar mientras gira, lo que puede provocar un derrape."
   },
   {
     "questionId": "CDL-GK-114",
@@ -1587,13 +1587,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "¿Qué debe hacer al conducir con neblina?",
-    "optionA": "Usar las luces altas para ver mejor",
+    "optionA": "Reducir la velocidad y usar las luces altas para ver más lejos",
     "optionB": "Seguir las luces traseras del vehículo de adelante para no salirse del camino",
     "optionC": "Reducir la velocidad, usar luces bajas y aumentar la distancia de seguimiento",
     "optionD": "Conducir por el acotamiento para salir del tráfico",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Con neblina, reduzca bastante la velocidad, use las luces bajas y aumente la distancia de seguimiento. Las luces altas se reflejan y reducen la visibilidad."
+    "explanation": "Con neblina, reduzca bastante la velocidad, use las luces bajas y aumente la distancia de seguimiento. Las luces altas se reflejan y reducen la visibilidad. Las luces altas se reflejan en la niebla y reducen la visibilidad, aun a menor velocidad."
   },
   {
     "questionId": "CDL-GK-115",
@@ -1617,11 +1617,11 @@
     "question": "¿Qué debe hacer al conducir por agua estancada?",
     "optionA": "Pasar rápido para no quedarse atascado",
     "optionB": "Mantener la velocidad y la distancia de seguimiento normales",
-    "optionC": "Usar el control de crucero para una velocidad constante",
+    "optionC": "Reducir la velocidad y mantener el control de crucero",
     "optionD": "Reducir la velocidad y probar los frenos después",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Al pasar por agua, reduzca bastante la velocidad y pruebe los frenos después, porque el agua puede disminuir la eficacia del frenado."
+    "explanation": "Al pasar por agua, reduzca bastante la velocidad y pruebe los frenos después, porque el agua puede disminuir la eficacia del frenado. No se debe usar el control de crucero en caminos mojados, así que reducir la velocidad con él encendido sigue siendo un error."
   },
   {
     "questionId": "CDL-GK-117",
@@ -1702,10 +1702,10 @@
     "optionA": "Confiar solo en los espejos para todas las revisiones",
     "optionB": "Voltear la cabeza para mirar sobre el hombro con frecuencia",
     "optionC": "Usar los espejos con frecuencia y no quedarse en los puntos ciegos de otros",
-    "optionD": "Instalar espejos convexos adicionales en todo el vehículo",
+    "optionD": "Revisar los puntos ciegos solo cuando piensa girar",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los espejos bien ajustados reducen mucho los puntos ciegos, pero también debe evitar quedarse en los puntos ciegos de otros vehículos, donde no pueden verlo."
+    "explanation": "Los espejos bien ajustados reducen mucho los puntos ciegos, pero también debe evitar quedarse en los puntos ciegos de otros vehículos, donde no pueden verlo. Los puntos ciegos deben revisarse todo el tiempo, no solo antes de girar."
   },
   {
     "questionId": "CDL-GK-123",
@@ -1715,11 +1715,11 @@
     "question": "¿Cuándo es seguro sostener y marcar un teléfono celular de mano mientras conduce?",
     "optionA": "En tramos rectos y largos de carretera con poco tráfico",
     "optionB": "Nunca; oríllese en un lugar seguro si necesita usarlo",
-    "optionC": "Mientras está detenido brevemente en un semáforo o en el tráfico",
+    "optionC": "Mientras está detenido con seguridad en un semáforo en rojo",
     "optionD": "Cuando hay poco tráfico y el camino está en condiciones ideales",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las normas federales prohíben sostener, marcar o enviar mensajes con un teléfono de mano mientras conduce un vehículo comercial, incluso cuando está detenido brevemente en el tráfico o en un semáforo. Primero oríllese en un lugar seguro; mientras conduce solo se permite el uso de manos libres con un solo toque."
+    "explanation": "Las normas federales prohíben sostener, marcar o enviar mensajes con un teléfono de mano mientras conduce un vehículo comercial, incluso cuando está detenido brevemente en el tráfico o en un semáforo. Primero oríllese en un lugar seguro; mientras conduce solo se permite el uso de manos libres con un solo toque. Las normas federales también prohíben usar el teléfono en la mano mientras está detenido en un semáforo o en el tráfico."
   },
   {
     "questionId": "CDL-GK-124",
@@ -1769,13 +1769,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "¿Qué causa los accidentes por efecto tijera (navaja)?",
-    "optionA": "Una falla mecánica de las mordazas de seguro de la quinta rueda",
+    "optionA": "Aceleración repentina en pavimento seco",
     "optionB": "Frenar o girar de golpe en superficies resbalosas",
     "optionC": "Solo una carga mal acomodada, nunca el frenado ni el giro",
     "optionD": "Vientos fuertes que afectan al remolque",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los accidentes por efecto tijera suelen ocurrir cuando un frenado o un giro brusco hace que el remolque se deslice y gire hacia la cabina."
+    "explanation": "Los accidentes por efecto tijera suelen ocurrir cuando un frenado o un giro brusco hace que el remolque se deslice y gire hacia la cabina. Las navajas se producen al frenar o girar de modo que las ruedas se bloqueen o derrapen, sobre todo en caminos resbalosos, no al acelerar en pavimento seco."
   },
   {
     "questionId": "CDL-GK-128",
@@ -1825,13 +1825,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "¿Qué debe hacer si siente que su vehículo se jala hacia un lado?",
-    "optionA": "Seguir conduciendo y revisarlo después",
+    "optionA": "Seguir manejando con cuidado y revisarlo en su próxima parada",
     "optionB": "Aumentar la velocidad para contrarrestar el jalón",
     "optionC": "Girar el volante con más fuerza en sentido contrario",
     "optionD": "Orillarse con seguridad y revisar si hay problemas mecánicos",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Que el vehículo se jale hacia un lado indica un posible problema mecánico que puede ser peligroso. Oríllese con seguridad y revíselo de inmediato."
+    "explanation": "Que el vehículo se jale hacia un lado indica un posible problema mecánico que puede ser peligroso. Oríllese con seguridad y revíselo de inmediato. Seguir hasta su próxima parada con un jalón que no tiene explicación arriesga una falla o perder el control."
   },
   {
     "questionId": "CDL-GK-132",
@@ -1967,11 +1967,11 @@
     "question": "Al retroceder un vehículo comercial, ¿cuál es la práctica más segura?",
     "optionA": "Retroceder lo más rápido posible para ahorrar tiempo",
     "optionB": "Bajarse y revisar el trayecto con frecuencia",
-    "optionC": "Confiar solo en los espejos para ver",
+    "optionC": "Revisar su trayecto una vez y retroceder sin detenerse",
     "optionD": "Retroceder sin detenerse una vez que empieza",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Bajarse a revisar el trayecto con frecuencia al retroceder es la práctica más segura, porque le permite detectar obstáculos y peligros que los espejos no muestran."
+    "explanation": "Bajarse a revisar el trayecto con frecuencia al retroceder es la práctica más segura, porque le permite detectar obstáculos y peligros que los espejos no muestran. Una sola revisión antes de empezar no basta; bájese y vuelva a mirar tantas veces como sea necesario."
   },
   {
     "questionId": "CDL-GK-142",
@@ -2192,10 +2192,10 @@
     "optionA": "Mantener la velocidad de carretera todo el tiempo",
     "optionB": "Acelerar dentro de la curva",
     "optionC": "Reducir la velocidad antes de entrar en la curva",
-    "optionD": "Usar solo el frenado con motor",
+    "optionD": "Reducir la velocidad después de entrar en la curva",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Reducir la velocidad antes de entrar en las curvas permite controlar mejor el vehículo y reduce el riesgo de volcadura o de perder tracción."
+    "explanation": "Reducir la velocidad antes de entrar en las curvas permite controlar mejor el vehículo y reduce el riesgo de volcadura o de perder tracción. Reducir la velocidad cuando ya está en la curva significa frenar mientras gira, lo que aumenta el riesgo de volcadura."
   },
   {
     "questionId": "CDL-GK-158",
@@ -2275,11 +2275,11 @@
     "question": "¿Cuál es la forma más eficaz de comprobar el espacio libre para su radio de giro?",
     "optionA": "Caminar alrededor y revisar el trayecto a simple vista",
     "optionB": "Usar solo los espejos para calcular el espacio libre",
-    "optionC": "Calcularlo según su experiencia previa",
+    "optionC": "Calcular el trayecto desde la cabina con los espejos",
     "optionD": "Confiar solo en los sensores del vehículo",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Caminar alrededor y revisar a simple vista el trayecto de la vuelta es la forma más precisa de evaluar el espacio libre necesario."
+    "explanation": "Caminar alrededor y revisar a simple vista el trayecto de la vuelta es la forma más precisa de evaluar el espacio libre necesario. Los espejos desde la cabina dejan puntos ciegos, así que camine alrededor y mire."
   },
   {
     "questionId": "CDL-GK-164",
@@ -2457,11 +2457,11 @@
     "question": "¿Cuál es la práctica de seguridad más importante en cualquier maniobra en reversa?",
     "optionA": "Bajarse a mirar antes y durante la maniobra",
     "optionB": "Tocar la bocina sin parar durante toda la maniobra",
-    "optionC": "Usar las luces de emergencia y revisar los espejos cada pocos segundos",
+    "optionC": "Mirar solo los espejos, sin bajarse",
     "optionD": "Retroceder lo más rápido posible para no estorbar el tráfico",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Bajarse a mirar antes y durante la maniobra en reversa es la práctica de seguridad más importante para detectar peligros y obstáculos que no se ven desde el asiento del conductor."
+    "explanation": "Bajarse a mirar antes y durante la maniobra en reversa es la práctica de seguridad más importante para detectar peligros y obstáculos que no se ven desde el asiento del conductor. Los espejos dejan puntos ciegos, así que debe bajarse y mirar."
   },
   {
     "questionId": "CDL-GK-177",
@@ -2486,10 +2486,10 @@
     "optionA": "Acelerar el motor para calentarlo y probar su respuesta",
     "optionB": "Encender todas las luces y las cuatro intermitentes",
     "optionC": "Recorrer a pie el trayecto y planear la maniobra",
-    "optionD": "Solo ajustar los espejos y comprobar la visibilidad trasera",
+    "optionD": "Empezar a retroceder y luego revisar el trayecto desde la cabina",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Recorrer a pie el trayecto y planear la maniobra antes de empezar ayuda a identificar posibles problemas y a elegir la forma más segura de hacerla."
+    "explanation": "Recorrer a pie el trayecto y planear la maniobra antes de empezar ayuda a identificar posibles problemas y a elegir la forma más segura de hacerla. Revisar el trayecto solo después de empezar no deja tiempo para planear."
   },
   {
     "questionId": "CDL-GK-179",
@@ -2497,13 +2497,13 @@
     "state": "ALL",
     "category": "basicControl",
     "question": "¿Por qué los vehículos comerciales deben evitar los movimientos bruscos del volante?",
-    "optionA": "Desperdician combustible y reducen la eficiencia del vehículo",
+    "optionA": "Puede hacer que el motor se apague",
     "optionB": "Desgastan las llantas en exceso y aumentan el mantenimiento",
     "optionC": "Pueden causar la pérdida de control o una volcadura",
     "optionD": "Dañan el sistema de dirección y la bomba de la dirección hidráulica",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los movimientos bruscos del volante pueden hacer que un vehículo comercial pierda el control o se vuelque, debido a su centro de gravedad alto y a la distribución de su peso."
+    "explanation": "Los movimientos bruscos del volante pueden hacer que un vehículo comercial pierda el control o se vuelque, debido a su centro de gravedad alto y a la distribución de su peso. Los movimientos del volante no apagan el motor."
   },
   {
     "questionId": "CDL-GK-180",
@@ -2609,13 +2609,13 @@
     "state": "ALL",
     "category": "basicControl",
     "question": "¿Cuál es la principal ventaja de usar un ayudante al retroceder?",
-    "optionA": "Retroceder más rápido y maniobrar mejor en espacios reducidos",
+    "optionA": "Le permite no revisar usted mismo los puntos ciegos",
     "optionB": "Consumir menos combustible en maniobras de reversa largas",
     "optionC": "Tener otro par de ojos para los puntos ciegos",
     "optionD": "Comunicarse mejor por radio con el despachador y otros conductores",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un ayudante es otro par de ojos que vigila los puntos ciegos y las áreas que no se ven desde el asiento del conductor."
+    "explanation": "Un ayudante es otro par de ojos que vigila los puntos ciegos y las áreas que no se ven desde el asiento del conductor. Un ayudante agrega ojos; usted sigue revisando sus propios espejos y puntos ciegos."
   },
   {
     "questionId": "CDL-GK-188",
@@ -2680,12 +2680,12 @@
     "category": "cargoHandling",
     "question": "¿Con qué frecuencia debe inspeccionar la sujeción de la carga durante un viaje?",
     "optionA": "Solo al inicio del viaje y al llegar al destino",
-    "optionB": "Cada 100 millas o cada 2 horas de manejo",
+    "optionB": "En las primeras 100 millas y luego cada 200 millas",
     "optionC": "Dentro de las primeras 50 millas y luego cada 150 millas o 3 horas",
     "optionD": "Solo al parar a cargar combustible o en los descansos obligatorios",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las normas federales exigen inspeccionarla dentro de las primeras 50 millas y luego cada 150 millas o cada 3 horas de manejo, lo que ocurra primero."
+    "explanation": "Las normas federales exigen inspeccionarla dentro de las primeras 50 millas y luego cada 150 millas o cada 3 horas de manejo, lo que ocurra primero. La primera revisión es en las primeras 50 millas, no 100, y luego cada 150 millas."
   },
   {
     "questionId": "CDL-GK-193",
@@ -2932,12 +2932,12 @@
     "category": "cargoHandling",
     "question": "¿Cómo debe distribuir el peso al cargar un remolque?",
     "optionA": "Poner todos los artículos pesados atrás para tener mejor tracción",
-    "optionB": "Concentrar el peso solo sobre los ejes motrices",
+    "optionB": "Mantener solo el peso bruto dentro del límite legal",
     "optionC": "Equilibrar la carga para no exceder los límites de peso por eje",
     "optionD": "Colocar los artículos más pesados lo más alto posible",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El peso debe distribuirse para no exceder los límites legales de peso por eje y mantener un equilibrio adecuado que permita un manejo seguro y estable."
+    "explanation": "El peso debe distribuirse para no exceder los límites legales de peso por eje y mantener un equilibrio adecuado que permita un manejo seguro y estable. Que el peso bruto esté dentro del límite no basta; cada eje también debe estar dentro de su límite."
   },
   {
     "questionId": "CDL-GK-211",
@@ -2959,13 +2959,13 @@
     "state": "ALL",
     "category": "cargoHandling",
     "question": "¿Qué debe hacer si su carga se desplaza durante el transporte?",
-    "optionA": "Continuar hasta el destino si el desplazamiento es mínimo",
+    "optionA": "Seguir con cuidado y volver a asegurarla en su próxima parada",
     "optionB": "Ajustar su manera de manejar para compensar el desplazamiento",
     "optionC": "Anotar el desplazamiento en su bitácora para referencia futura",
     "optionD": "Detenerse en cuanto sea seguro y volver a sujetar la carga",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Cualquier desplazamiento de la carga indica una posible falla de la sujeción y crea un peligro que debe atenderse de inmediato deteniéndose y volviendo a sujetar la carga."
+    "explanation": "Cualquier desplazamiento de la carga indica una posible falla de la sujeción y crea un peligro que debe atenderse de inmediato deteniéndose y volviendo a sujetar la carga. Seguir hasta su próxima parada con la carga desplazada arriesga una volcadura o perder carga en el camino."
   },
   {
     "questionId": "CDL-GK-213",
@@ -2987,13 +2987,13 @@
     "state": "ALL",
     "category": "cargoHandling",
     "question": "Al cargar mercancía en tarimas, ¿cuál debe ser su principal preocupación?",
-    "optionA": "Llevar el mayor número posible de tarimas por carga para bajar el costo del viaje",
+    "optionA": "Usar menos dispositivos de sujeción para ahorrar tiempo",
     "optionB": "Acomodar las tarimas en orden de entrega para facilitar la descarga",
     "optionC": "Apilar las tarimas más pesadas arriba para que sujeten las más ligeras",
     "optionD": "Evitar que la carga se desplace con una buena distribución del peso y sujeción",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La principal preocupación de seguridad al cargar mercancía en tarimas es evitar que la carga se desplace mediante una distribución correcta del peso y métodos de sujeción adecuados."
+    "explanation": "La principal preocupación de seguridad al cargar mercancía en tarimas es evitar que la carga se desplace mediante una distribución correcta del peso y métodos de sujeción adecuados. Reducir la sujeción para ahorrar tiempo hace más probable que la carga se desplace."
   },
   {
     "questionId": "CDL-GK-215",
@@ -3018,10 +3018,10 @@
     "optionA": "No tiene un efecto importante en el frenado",
     "optionB": "Una mala distribución del peso puede reducir la eficacia del frenado",
     "optionC": "Más peso siempre mejora el frenado al aumentar la tracción",
-    "optionD": "Solo afecta el frenado cuando la carga excede los límites legales",
+    "optionD": "Solo reduce la eficacia del frenado si hay sobrepeso",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Una carga mal colocada y una mala distribución del peso pueden reducir mucho la eficacia del frenado, porque afectan la transferencia de peso, la tracción y la estabilidad del vehículo al frenar."
+    "explanation": "Una carga mal colocada y una mala distribución del peso pueden reducir mucho la eficacia del frenado, porque afectan la transferencia de peso, la tracción y la estabilidad del vehículo al frenar. Un mal balance afecta el frenado aunque el vehículo no pase el peso legal."
   },
   {
     "questionId": "CDL-GK-217",
@@ -3087,11 +3087,11 @@
     "question": "¿Cuál es la causa principal de los choques relacionados con la carga?",
     "optionA": "Vehículos con sobrepeso que exceden los límites legales",
     "optionB": "Una sujeción de la carga inadecuada o que falla",
-    "optionC": "Conductores sin los endosos necesarios",
+    "optionC": "Demasiada sujeción en cargas ligeras",
     "optionD": "Mal clima durante el transporte",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La mayoría de los choques relacionados con la carga se deben a una sujeción inadecuada o que falla, lo que provoca que la carga se desplace, se derrame o se caiga del vehículo."
+    "explanation": "La mayoría de los choques relacionados con la carga se deben a una sujeción inadecuada o que falla, lo que provoca que la carga se desplace, se derrame o se caiga del vehículo. Una sujeción extra no causa accidentes; la falta de sujeción sí."
   },
   {
     "questionId": "CDL-GK-222",
@@ -3183,13 +3183,13 @@
     "state": "ALL",
     "category": "cargoHandling",
     "question": "¿Qué debe hacer al manejar con una carga de centro de gravedad alto?",
-    "optionA": "Mantener velocidades normales de carretera en todos los caminos",
+    "optionA": "Evitar maniobras bruscas pero mantener la velocidad normal en las curvas",
     "optionB": "Usar el control de crucero para mantener una velocidad constante",
     "optionC": "Aumentar la distancia de seguimiento y evitar maniobras repentinas",
     "optionD": "Tomar las vueltas y curvas a mayor velocidad para tener estabilidad",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las cargas con centro de gravedad alto requieren menor velocidad en las curvas, mayor distancia de seguimiento y evitar maniobras repentinas para prevenir volcaduras."
+    "explanation": "Las cargas con centro de gravedad alto requieren menor velocidad en las curvas, mayor distancia de seguimiento y evitar maniobras repentinas para prevenir volcaduras. Una carga alta necesita menor velocidad en las curvas además de maniobras suaves."
   },
   {
     "questionId": "CDL-GK-229",
@@ -3911,13 +3911,13 @@
     "state": "ALL",
     "category": "emergencyProcedures",
     "question": "¿Qué debe hacer si sospecha que su vehículo estuvo involucrado en un choque en el que alguien se dio a la fuga?",
-    "optionA": "Seguir hasta su destino",
+    "optionA": "Seguir con cuidado e inspeccionarlo en su destino",
     "optionB": "Detenerse solo si hay daños visibles",
     "optionC": "Reportarlo a la policía aunque el daño parezca menor",
     "optionD": "Detenerse e inspeccionar su vehículo con seguridad",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Si sospecha que estuvo involucrado en un choque con fuga, deténgase en cuanto sea seguro para inspeccionar su vehículo y determinar si hubo un choque. Reporte cualquier daño a las autoridades."
+    "explanation": "Si sospecha que estuvo involucrado en un choque con fuga, deténgase en cuanto sea seguro para inspeccionar su vehículo y determinar si hubo un choque. Reporte cualquier daño a las autoridades. Esperar a llegar a su destino no basta; deténgase y revise ahora."
   },
   {
     "questionId": "CDL-GK-281",
@@ -4109,11 +4109,11 @@
     "question": "¿Cómo afecta principalmente el alcohol su capacidad para manejar?",
     "optionA": "Mejora la visión nocturna y reduce la sensibilidad al deslumbramiento",
     "optionB": "Hace más lentos los reflejos y afecta el juicio",
-    "optionC": "Aumenta el estado de alerta y la concentración en viajes largos",
+    "optionC": "Acelera las reacciones en pequeñas cantidades",
     "optionD": "Mejora la coordinación y la motricidad fina",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El alcohol hace más lentos los reflejos, afecta el juicio, reduce la coordinación y afecta la vista, todo lo cual es fundamental para manejar con seguridad."
+    "explanation": "El alcohol hace más lentos los reflejos, afecta el juicio, reduce la coordinación y afecta la vista, todo lo cual es fundamental para manejar con seguridad. Ninguna cantidad de alcohol hace más rápidas sus reacciones."
   },
   {
     "questionId": "CDL-GK-295",
@@ -4208,10 +4208,10 @@
     "optionA": "Seguir manejando con cuidado",
     "optionB": "Abrir las ventanas para tomar aire fresco",
     "optionC": "Dejar de manejar y descansar hasta estar alerta",
-    "optionD": "Encender la radio para mantenerse estimulado",
+    "optionD": "Dejar de manejar solo al llegar a su destino",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Si se siente somnoliento o afectado por cualquier medicamento, debe dejar de manejar de inmediato y no reanudar hasta estar completamente alerta y en condiciones."
+    "explanation": "Si se siente somnoliento o afectado por cualquier medicamento, debe dejar de manejar de inmediato y no reanudar hasta estar completamente alerta y en condiciones. Esperar a llegar a su destino significa manejar con las facultades disminuidas todo el camino."
   },
   {
     "questionId": "CDL-GK-302",
@@ -4376,10 +4376,10 @@
     "optionA": "Siempre mejoran el estado de alerta de forma segura en viajes largos",
     "optionB": "No tienen ningún efecto en el manejo en dosis normales",
     "optionC": "Pueden causar agresividad y mal juicio",
-    "optionD": "Solo afectan la visión, sobre todo de noche",
+    "optionD": "Causan solo una leve somnolencia a dosis normales",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los estimulantes pueden causar exceso de confianza, agresividad, mal juicio y comportamiento errático que hacen peligroso manejar, a pesar de aumentar el estado de alerta."
+    "explanation": "Los estimulantes pueden causar exceso de confianza, agresividad, mal juicio y comportamiento errático que hacen peligroso manejar, a pesar de aumentar el estado de alerta. La somnolencia es efecto de los depresores; los estimulantes causan fatiga cuando pasa su efecto."
   },
   {
     "questionId": "CDL-GK-314",
@@ -4485,13 +4485,13 @@
     "state": "ALL",
     "category": "alcoholDrugs",
     "question": "¿Cómo suelen afectar las drogas depresoras al manejo?",
-    "optionA": "Mejoran la concentración y aumentan mucho el enfoque mental",
+    "optionA": "Causan más alerta y reacciones más rápidas",
     "optionB": "Mejoran los reflejos y la capacidad de reacción",
     "optionC": "Aumentan la energía y prolongan el estado de alerta",
     "optionD": "Causan somnolencia y reacciones lentas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los depresores, como el alcohol, los tranquilizantes y algunos medicamentos, hacen más lento el tiempo de reacción, causan somnolencia y afectan la coordinación necesaria para manejar con seguridad."
+    "explanation": "Los depresores, como el alcohol, los tranquilizantes y algunos medicamentos, hacen más lento el tiempo de reacción, causan somnolencia y afectan la coordinación necesaria para manejar con seguridad. Los depresores nunca le hacen estar más alerta ni reaccionar más rápido."
   },
   {
     "questionId": "CDL-GK-322",
@@ -4597,13 +4597,13 @@
     "state": "ALL",
     "category": "alcoholDrugs",
     "question": "Si toma analgésicos recetados después de una cirugía, ¿cuándo puede volver a manejar?",
-    "optionA": "De inmediato si se siente mentalmente alerta y físicamente capaz",
+    "optionA": "En cuanto usted sienta que es seguro manejar",
     "optionB": "Cuando su médico lo autorice como apto para manejar",
     "optionC": "Después de reducir la dosis recetada para minimizar los efectos secundarios",
     "optionD": "Exactamente veinticuatro horas después de tomar la última dosis recetada",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Debe contar con la autorización médica de su doctor que confirme que puede operar un vehículo comercial con seguridad antes de volver a manejar mientras toma cualquier medicamento recetado que pueda afectar su capacidad de manejo."
+    "explanation": "Debe contar con la autorización médica de su doctor que confirme que puede operar un vehículo comercial con seguridad antes de volver a manejar mientras toma cualquier medicamento recetado que pueda afectar su capacidad de manejo. Sentirse bien no basta, porque estos medicamentos pueden afectarle antes de que usted lo note."
   },
   {
     "questionId": "CDL-GK-330",
@@ -4655,11 +4655,11 @@
     "question": "¿Cuándo debe bajar las luces altas de sus faros?",
     "optionA": "Nunca, porque ofrecen la mejor visibilidad posible",
     "optionB": "A menos de 500 pies del tráfico de frente o del vehículo que sigue",
-    "optionC": "Solo con tráfico pesado y varios vehículos muy cerca",
+    "optionC": "Solo cuando el tráfico de frente está a menos de 100 pies",
     "optionD": "Solo al manejar dentro de la ciudad con alumbrado público adecuado",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El manual de CDL indica bajar las luces altas a menos de 500 pies de un vehículo que viene de frente y cuando sigue a otro vehículo a menos de 500 pies, para no deslumbrar a otros conductores."
+    "explanation": "El manual de CDL indica bajar las luces altas a menos de 500 pies de un vehículo que viene de frente y cuando sigue a otro vehículo a menos de 500 pies, para no deslumbrar a otros conductores. Esperar a los 100 pies es demasiado tarde para no deslumbrar al otro conductor."
   },
   {
     "questionId": "CDL-GK-334",
@@ -4751,13 +4751,13 @@
     "state": "ALL",
     "category": "nightDriving",
     "question": "Si siente somnolencia mientras maneja, ¿qué debe hacer?",
-    "optionA": "Abrir las ventanas para tomar aire fresco",
+    "optionA": "Parar en un lugar seguro por un café y seguir manejando",
     "optionB": "Tomar café y seguir manejando",
     "optionC": "Subir el volumen de la radio",
     "optionD": "Detenerse en un lugar seguro y descansar",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La única solución segura para la somnolencia es descansar lo suficiente; las medidas temporales como el café o el aire fresco no son soluciones confiables."
+    "explanation": "La única solución segura para la somnolencia es descansar lo suficiente; las medidas temporales como el café o el aire fresco no son soluciones confiables. El café no quita la somnolencia; la única cura es dormir, así que parar solo por un café no basta."
   },
   {
     "questionId": "CDL-GK-341",
@@ -5005,11 +5005,11 @@
     "question": "Al manejar de noche, ¿qué velocidad nunca debe superar su vehículo?",
     "optionA": "El límite de velocidad indicado para manejar de día",
     "optionB": "La velocidad del resto del tráfico",
-    "optionC": "65 mph sin importar las condiciones",
+    "optionC": "A menos de 5 mph del límite de velocidad diurno",
     "optionD": "La que le permite detenerse dentro del alcance de los faros",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "De noche, su velocidad debe permitirle detenerse dentro de la distancia que iluminan sus faros para evitar peligros que no se ven."
+    "explanation": "De noche, su velocidad debe permitirle detenerse dentro de la distancia que iluminan sus faros para evitar peligros que no se ven. Un margen fijo bajo el límite diurno puede seguir siendo demasiado rápido para detenerse dentro del alcance de sus faros."
   },
   {
     "questionId": "CDL-GK-359",
@@ -5019,11 +5019,11 @@
     "question": "Si no puede ver con claridad mientras maneja de noche, ¿qué debe hacer?",
     "optionA": "Manejar más rápido para salir de la zona",
     "optionB": "Seguir de cerca a otro vehículo para guiarse",
-    "optionC": "Encender las luces de emergencia y continuar",
+    "optionC": "Reducir la velocidad solo al llegar a una zona iluminada",
     "optionD": "Reducir la velocidad o detenerse hasta que mejoren las condiciones",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Cuando la visibilidad está muy limitada de noche, lo más seguro es reducir mucho la velocidad o detenerse hasta que pueda ver con claridad."
+    "explanation": "Cuando la visibilidad está muy limitada de noche, lo más seguro es reducir mucho la velocidad o detenerse hasta que pueda ver con claridad. Esperar a llegar a una zona iluminada significa manejar sin ver hasta llegar ahí."
   },
   {
     "questionId": "CDL-GK-360",
@@ -5087,13 +5087,13 @@
     "state": "ALL",
     "category": "weatherDriving",
     "question": "Si su vehículo empieza a hidroplanear, ¿qué debe hacer?",
-    "optionA": "Frenar con firmeza para recuperar el control",
+    "optionA": "Frenar de forma brusca y firme para reducir la velocidad",
     "optionB": "Soltar el acelerador y evitar movimientos bruscos",
     "optionC": "Girar el volante bruscamente en la dirección opuesta",
     "optionD": "Acelerar para salir rápido del agua",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Al hidroplanear, la clave son los movimientos suaves: suelte el acelerador y mantenga el volante recto hasta que vuelva la tracción."
+    "explanation": "Al hidroplanear, la clave son los movimientos suaves: suelte el acelerador y mantenga el volante recto hasta que vuelva la tracción. Frenar bruscamente al hidroplanear puede bloquear las ruedas y provocar un derrape."
   },
   {
     "questionId": "CDL-GK-365",
@@ -5104,10 +5104,10 @@
     "optionA": "Frenar fuerte y rápido",
     "optionB": "Usar solo el freno de motor",
     "optionC": "Frenar de manera suave y gradual",
-    "optionD": "Bombear los frenos rápidamente con toda la fuerza",
+    "optionD": "Frenar suavemente y luego más fuerte si empieza a patinar",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Frenar de manera suave y gradual evita que las ruedas se bloqueen en el hielo y mantiene el control de la dirección al detenerse."
+    "explanation": "Frenar de manera suave y gradual evita que las ruedas se bloqueen en el hielo y mantiene el control de la dirección al detenerse. Frenar más fuerte cuando patina bloquea las ruedas; mejor suelte el freno."
   },
   {
     "questionId": "CDL-GK-366",
@@ -5131,11 +5131,11 @@
     "question": "Al manejar en la nieve, ¿qué debe hacer?",
     "optionA": "Usar el control de crucero para mantener una velocidad constante",
     "optionB": "Arrancar con suavidad y acelerar gradualmente",
-    "optionC": "Hacer patinar las llantas para lograr mejor tracción",
+    "optionC": "Arrancar con suavidad y luego encender el control de crucero",
     "optionD": "Apagar los sistemas de control de tracción",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Arrancar con suavidad y acelerar gradualmente evita que las ruedas patinen y mantiene la tracción en la nieve."
+    "explanation": "Arrancar con suavidad y acelerar gradualmente evita que las ruedas patinen y mantiene la tracción en la nieve. No se debe usar el control de crucero en caminos con nieve, aun después de arrancar con suavidad."
   },
   {
     "questionId": "CDL-GK-368",
@@ -5200,12 +5200,12 @@
     "category": "weatherDriving",
     "question": "Con clima muy caluroso, ¿qué le pasa a la presión de las llantas?",
     "optionA": "Aumenta y puede causar que la llanta falle",
-    "optionB": "Disminuye mucho por la expansión y los efectos del calor",
+    "optionB": "Bajar y puede causar una llanta desinflada",
     "optionC": "No cambia, sin importar la temperatura ambiente",
     "optionD": "Varía de forma impredecible, lo que hace muy difícil medirla",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El clima caluroso aumenta la presión de las llantas, y las llantas sobreinfladas son más propensas a reventarse y a perder tracción."
+    "explanation": "El clima caluroso aumenta la presión de las llantas, y las llantas sobreinfladas son más propensas a reventarse y a perder tracción. El calor sube la presión de las llantas; no la baja."
   },
   {
     "questionId": "CDL-GK-373",
@@ -5228,12 +5228,12 @@
     "category": "weatherDriving",
     "question": "¿Qué debe hacer si el motor se sobrecalienta con clima caluroso?",
     "optionA": "Detenerse de inmediato y apagar el motor",
-    "optionB": "Seguir manejando hasta encontrar un taller",
+    "optionB": "Parar y quitar de inmediato el tapón del radiador",
     "optionC": "Agregar agua fría al radiador de inmediato",
     "optionD": "Acelerar el motor para mejorar el enfriamiento",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Seguir operando un motor sobrecalentado puede causarle daños graves; deténgase de inmediato y deje que se enfríe antes de continuar."
+    "explanation": "Seguir operando un motor sobrecalentado puede causarle daños graves; deténgase de inmediato y deje que se enfríe antes de continuar. Nunca quite el tapón del radiador con el motor caliente, porque el refrigerante caliente y el vapor pueden causar quemaduras graves."
   },
   {
     "questionId": "CDL-GK-375",
@@ -5271,11 +5271,11 @@
     "question": "Cuando el clima reduce la visibilidad, ¿qué debe hacer?",
     "optionA": "Manejar más rápido para salir pronto de la zona",
     "optionB": "Seguir más de cerca a otros vehículos para guiarse",
-    "optionC": "Usar las luces de emergencia mientras maneja",
+    "optionC": "Reducir la velocidad pero mantener la misma distancia de seguimiento",
     "optionD": "Reducir la velocidad y aumentar la distancia de seguimiento",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La visibilidad reducida exige velocidades más bajas y mayores distancias de seguimiento para tener suficiente tiempo de reaccionar ante los peligros."
+    "explanation": "La visibilidad reducida exige velocidades más bajas y mayores distancias de seguimiento para tener suficiente tiempo de reaccionar ante los peligros. Necesita ambas cosas: reducir la velocidad sin aumentar la distancia de seguimiento sigue dejando muy poco tiempo para reaccionar."
   },
   {
     "questionId": "CDL-GK-378",
@@ -5314,10 +5314,10 @@
     "optionA": "Mantener su velocidad actual",
     "optionB": "Reducir la velocidad antes de entrar a la curva",
     "optionC": "Acelerar durante la curva",
-    "optionD": "Frenar mientras da la vuelta",
+    "optionD": "Reducir la velocidad frenando mientras gira",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Reducir la velocidad antes de la curva le permite mantener el control durante toda la vuelta sin tener que frenar mientras gira el volante."
+    "explanation": "Reducir la velocidad antes de la curva le permite mantener el control durante toda la vuelta sin tener que frenar mientras gira el volante. Frenar mientras gira en un camino resbaloso puede bloquear las ruedas y provocar un derrape."
   },
   {
     "questionId": "CDL-GK-381",
@@ -5395,13 +5395,13 @@
     "state": "ALL",
     "category": "weatherDriving",
     "question": "Si lo sorprende una tormenta eléctrica fuerte mientras maneja, ¿qué debe hacer?",
-    "optionA": "Manejar más rápido para salir de ella",
+    "optionA": "Seguir manejando a una velocidad segura hasta que pase",
     "optionB": "Orillarse con las luces de emergencia",
     "optionC": "Buscar un refugio seguro y esperar a que pase",
     "optionD": "Seguir a velocidad normal",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las tormentas eléctricas fuertes crean condiciones peligrosas para manejar, como viento, granizo y poca visibilidad, que exigen buscar un refugio seguro."
+    "explanation": "Las tormentas eléctricas fuertes crean condiciones peligrosas para manejar, como viento, granizo y poca visibilidad, que exigen buscar un refugio seguro. En una tormenta fuerte ninguna velocidad es realmente segura, así que seguir manejando hasta que pase es un error."
   },
   {
     "questionId": "CDL-GK-387",
@@ -5496,10 +5496,10 @@
     "optionA": "Reducir a una velocidad segura antes de la curva",
     "optionB": "Frenar con suavidad durante la curva para mantener el control",
     "optionC": "Acelerar un poco en la curva para mantener el impulso",
-    "optionD": "Mantener una velocidad constante durante toda la curva sin cambios",
+    "optionD": "Reducir a una velocidad segura frenando en la curva",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Reducir la velocidad antes de entrar a una curva le permite tomarla con seguridad sin tener que frenar mientras gira el volante en caminos resbalosos."
+    "explanation": "Reducir la velocidad antes de entrar a una curva le permite tomarla con seguridad sin tener que frenar mientras gira el volante en caminos resbalosos. Llegar a una velocidad segura frenando dentro de la curva es el error, porque frenar mientras gira puede provocar un derrape."
   },
   {
     "questionId": "CDL-GK-394",
@@ -5580,10 +5580,10 @@
     "optionA": "Seguir manejando normalmente",
     "optionB": "Probar sus frenos con suavidad",
     "optionC": "Detenerse de inmediato para revisar daños",
-    "optionD": "Aumentar la velocidad para secar los frenos",
+    "optionD": "Probarlos con suavidad solo en su próxima parada",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Después de pasar por agua profunda, pruebe sus frenos con suavidad para asegurarse de que funcionan bien y séquelos si es necesario."
+    "explanation": "Después de pasar por agua profunda, pruebe sus frenos con suavidad para asegurarse de que funcionan bien y séquelos si es necesario. Esperar a su próxima parada le deja manejando con los frenos mojados."
   },
   {
     "questionId": "CDL-GK-400",
@@ -5844,12 +5844,12 @@
     "category": "mountainDriving",
     "question": "¿Los indicadores de temperatura del agua son especialmente importantes en la montaña porque?",
     "optionA": "El aire de montaña es más frío y espesa el refrigerante",
-    "optionB": "La altitud afecta la precisión del indicador",
+    "optionB": "El aire delgado puede hacer que el medidor marque alto",
     "optionC": "Las pendientes aumentan el calor del motor",
     "optionD": "Los caminos de montaña son más largos",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Subir pendientes somete al motor a una carga adicional, lo que genera más calor y hace que vigilar la temperatura sea esencial para evitar el sobrecalentamiento."
+    "explanation": "Subir pendientes somete al motor a una carga adicional, lo que genera más calor y hace que vigilar la temperatura sea esencial para evitar el sobrecalentamiento. La altitud no hace que el medidor marque alto; el motor de verdad se calienta más en las pendientes."
   },
   {
     "questionId": "CDL-GK-419",
@@ -5873,11 +5873,11 @@
     "question": "¿Al descender una pendiente larga, debe revisar los frenos?",
     "optionA": "Aplicándolos con fuerza un momento para probar su máxima capacidad",
     "optionB": "Bombeándolos rápidamente para comprobar que respondan bien",
-    "optionC": "Aplicándolos levemente todo el tiempo para mantener contacto y control",
+    "optionC": "Aplicándolos levemente todo el tiempo para que sigan eficaces",
     "optionD": "Aplicándolos levemente para sentir su eficacia",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Aplicar los frenos levemente le permite comprobar su eficacia sin sobrecalentarlos antes de necesitarlos para controlar la velocidad."
+    "explanation": "Aplicar los frenos levemente le permite comprobar su eficacia sin sobrecalentarlos antes de necesitarlos para controlar la velocidad. Mantener los frenos aplicados levemente los sobrecalienta y los hace menos eficaces."
   },
   {
     "questionId": "CDL-GK-421",
@@ -5971,11 +5971,11 @@
     "question": "¿Cuál es la velocidad más segura al bajar una pendiente pronunciada?",
     "optionA": "Una velocidad que le permita detenerse dentro de su distancia de visibilidad",
     "optionB": "El límite de velocidad indicado, sin importar las condiciones del camino",
-    "optionC": "La velocidad a la que circulen la mayoría de los demás vehículos",
+    "optionC": "La que le mantenga dentro del flujo del tráfico",
     "optionD": "Cinco mph por debajo del límite de velocidad máximo indicado",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "La velocidad segura en una bajada debe permitirle detenerse dentro de su distancia de visibilidad, considerando la mayor distancia de detención en las bajadas."
+    "explanation": "La velocidad segura en una bajada debe permitirle detenerse dentro de su distancia de visibilidad, considerando la mayor distancia de detención en las bajadas. Seguir el ritmo del tráfico puede ser demasiado rápido para su carga y la pendiente."
   },
   {
     "questionId": "CDL-GK-428",
@@ -6011,13 +6011,13 @@
     "state": "ALL",
     "category": "mountainDriving",
     "question": "¿Si huele los frenos calientes mientras baja una cuesta, usted debe?",
-    "optionA": "Continuar hasta el final de la cuesta",
+    "optionA": "Parar al pie de la colina para enfriarlos",
     "optionB": "Acelerar para enfriarlos con el flujo de aire",
     "optionC": "Echarles agua de inmediato",
     "optionD": "Detenerse y dejar que se enfríen antes de continuar",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El olor a frenos calientes indica un peligroso desvanecimiento de los frenos; detenerse y dejar que se enfríen evita una falla de frenos y posibles accidentes."
+    "explanation": "El olor a frenos calientes indica un peligroso desvanecimiento de los frenos; detenerse y dejar que se enfríen evita una falla de frenos y posibles accidentes. Esperar a llegar al pie de la colina arriesga que los frenos pierdan eficacia y que el vehículo se descontrole al bajar."
   },
   {
     "questionId": "CDL-GK-431",
@@ -6461,11 +6461,11 @@
     "question": "¿Qué indica un posible peligro en la superficie del camino que requiere atención inmediata?",
     "optionA": "Reflejos del pavimento mojado por una lluvia ligera reciente",
     "optionB": "Un cambio repentino en el color o la textura del pavimento",
-    "optionC": "Marcas de carril recién pintadas que todavía brillan",
+    "optionC": "Una zona repentina de sol sobre pavimento seco",
     "optionD": "Asfalto limpio y seco sin defectos visibles",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los cambios en el aspecto del pavimento suelen indicar derrames de aceite, hielo, grava suelta u otras condiciones peligrosas en la superficie."
+    "explanation": "Los cambios en el aspecto del pavimento suelen indicar derrames de aceite, hielo, grava suelta u otras condiciones peligrosas en la superficie. El sol sobre pavimento seco no cambia la tracción; un cambio en la superficie misma sí."
   },
   {
     "questionId": "CDL-GK-463",
@@ -6473,13 +6473,13 @@
     "state": "ALL",
     "category": "hazardPerception",
     "question": "¿Ve adelante un vehículo detenido en el acotamiento con las luces de emergencia encendidas. Cuál es la reacción más segura?",
-    "optionA": "Mantener la velocidad en su carril",
+    "optionA": "Reducir la velocidad solo después de pasarlo",
     "optionB": "Hacer señales con las luces para indicar que lo vio",
     "optionC": "Cambiarse de carril o reducir mucho la velocidad",
     "optionD": "Acelerar para rebasar rápidamente al vehículo detenido",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las leyes Move Over exigen que los conductores cambien de carril o reduzcan la velocidad al acercarse a vehículos de emergencia o averiados que están detenidos."
+    "explanation": "Las leyes Move Over exigen que los conductores cambien de carril o reduzcan la velocidad al acercarse a vehículos de emergencia o averiados que están detenidos. Reducir la velocidad después de pasarlo no protege a las personas que están junto al vehículo detenido."
   },
   {
     "questionId": "CDL-GK-464",
@@ -6573,11 +6573,11 @@
     "question": "¿Al llegar a la cima de una colina con visibilidad limitada, cuál debe ser su principal preocupación?",
     "optionA": "Mantener una velocidad segura para condiciones desconocidas",
     "optionB": "Revisar los espejos con frecuencia por si vienen vehículos atrás",
-    "optionC": "Usar las luces altas",
+    "optionC": "Mantener una velocidad segura para el tráfico de atrás",
     "optionD": "Acelerar para pasar la cima antes de que aparezca el tráfico",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Debe poder detenerse dentro de su distancia de visibilidad, ya que puede haber peligros más allá de la cima que todavía no puede ver."
+    "explanation": "Debe poder detenerse dentro de su distancia de visibilidad, ya que puede haber peligros más allá de la cima que todavía no puede ver. Su velocidad al subir una colina debe ajustarse a lo que pueda haber adelante, no al tráfico de atrás."
   },
   {
     "questionId": "CDL-GK-471",
@@ -6587,11 +6587,11 @@
     "question": "¿Un vehículo que viene en sentido contrario parece estar invadiendo su carril. Qué debe hacer primero?",
     "optionA": "Hacer señales con los faros",
     "optionB": "Tocar la bocina con fuerza",
-    "optionC": "Acelerar para pasar el peligro",
+    "optionC": "Reducir la velocidad y moverse a la izquierda hacia la línea central",
     "optionD": "Moverse a la derecha y reducir la velocidad",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Su primera prioridad es crear espacio y reducir la gravedad del impacto alejándose de la amenaza y reduciendo la velocidad."
+    "explanation": "Su primera prioridad es crear espacio y reducir la gravedad del impacto alejándose de la amenaza y reduciendo la velocidad. Moverse a la izquierda hacia la línea central le acerca al vehículo que se desvía; gire a la derecha."
   },
   {
     "questionId": "CDL-GK-472",
@@ -6627,13 +6627,13 @@
     "state": "ALL",
     "category": "hazardPerception",
     "question": "¿Cuando ve que se acercan por detrás las luces de un vehículo de emergencia, cuál es su obligación legal?",
-    "optionA": "Continuar a la velocidad actual",
+    "optionA": "Orillarse con seguridad después de que le hayan pasado",
     "optionB": "Acelerar para despejarle el camino",
     "optionC": "Orillarse y detenerse con seguridad",
     "optionD": "Encender las luces de emergencia",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las leyes federales y estatales exigen que todos los vehículos cedan el paso orillándose y deteniéndose ante vehículos de emergencia con luces y sirenas activadas."
+    "explanation": "Las leyes federales y estatales exigen que todos los vehículos cedan el paso orillándose y deteniéndose ante vehículos de emergencia con luces y sirenas activadas. Orillarse solo después de que le pasen es demasiado tarde; debe ceder el paso cuando se acercan."
   },
   {
     "questionId": "CDL-GK-475",
@@ -6782,12 +6782,12 @@
     "category": "hazardPerception",
     "question": "¿Qué técnica de observación ayuda a identificar peligros en los cruces de ferrocarril?",
     "optionA": "Mirar y escuchar antes de cruzar",
-    "optionB": "Revisar solo las señales del cruce",
+    "optionB": "Buscar las señales del cruce y nada más",
     "optionC": "Confiar en el resto del tráfico",
     "optionD": "Acelerar para cruzar rápidamente",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los cruces de ferrocarril exigen mirar activamente en ambas direcciones y escuchar si vienen trenes, ya que las señales pueden fallar o no activarse a tiempo."
+    "explanation": "Los cruces de ferrocarril exigen mirar activamente en ambas direcciones y escuchar si vienen trenes, ya que las señales pueden fallar o no activarse a tiempo. Las señales pueden fallar, así que también debe mirar y escuchar si viene un tren."
   },
   {
     "questionId": "CDL-GK-486",
@@ -6964,12 +6964,12 @@
     "category": "hazardPerception",
     "question": "¿Qué debe hacer si nota que se forma hielo en sus espejos o en el parabrisas mientras maneja?",
     "optionA": "Seguir manejando normalmente e ignorar el hielo",
-    "optionB": "Acelerar para generar calor y derretir el hielo",
+    "optionB": "Parar en un lugar seguro solo si el hielo empeora",
     "optionC": "Usar el líquido limpiaparabrisas para quitar el hielo",
     "optionD": "Buscar un lugar seguro para detenerse y resolver el problema",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La formación de hielo indica condiciones peligrosas en el camino que requieren atención inmediata para evitar perder la visibilidad o el control del vehículo."
+    "explanation": "La formación de hielo indica condiciones peligrosas en el camino que requieren atención inmediata para evitar perder la visibilidad o el control del vehículo. Esperar a que el hielo empeore le deja manejando con poca visibilidad mientras tanto."
   },
   {
     "questionId": "CDL-GK-499",
@@ -7106,10 +7106,10 @@
     "optionA": "Funcionan con más eficiencia por la presión del líquido",
     "optionB": "No cambia nada en el funcionamiento de los frenos",
     "optionC": "El agua puede congelarse y causar una falla de los frenos",
-    "optionD": "El compresor trabaja más, pero los frenos mejoran",
+    "optionD": "El agua puede hacer que los frenos agarren más fuerte",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El agua en los sistemas de frenos de aire puede congelarse en clima frío, bloquear las líneas de aire e impedir que los frenos funcionen bien, lo que podría causar una falla total de los frenos."
+    "explanation": "El agua en los sistemas de frenos de aire puede congelarse en clima frío, bloquear las líneas de aire e impedir que los frenos funcionen bien, lo que podría causar una falla total de los frenos. El agua en el sistema de aire nunca hace que los frenos agarren más fuerte."
   },
   {
     "questionId": "CDL-GK-509",
@@ -7426,12 +7426,12 @@
     "category": "brakingSystems",
     "question": "¿Qué debe revisar en las mangueras de freno durante la inspección?",
     "optionA": "Buscar grietas, abultamientos y conexiones correctas",
-    "optionB": "Revisar solo el color y la fecha de fabricación",
+    "optionB": "Mirar solo el color y la fecha de fabricación",
     "optionC": "Medir con cuidado su largo y su diámetro",
     "optionD": "Contar las mangueras y revisar por dónde pasan",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Las mangueras de freno deben revisarse en busca de grietas, abultamientos, fugas y conexiones firmes, ya que una manguera dañada puede causar una falla repentina de los frenos."
+    "explanation": "Las mangueras de freno deben revisarse en busca de grietas, abultamientos, fugas y conexiones firmes, ya que una manguera dañada puede causar una falla repentina de los frenos. El color y la fecha no dicen nada sobre grietas, abultamientos o conexiones flojas."
   },
   {
     "questionId": "CDL-GK-532",
@@ -7440,12 +7440,12 @@
     "category": "brakingSystems",
     "question": "¿Por qué debe evitar conducir con el pie sobre el freno?",
     "optionA": "Causa sobrecalentamiento y reduce la eficacia",
-    "optionB": "Mantiene las balatas calientes y listas para agarrar",
+    "optionB": "Mantiene las balatas calientes y más eficaces",
     "optionC": "Es la técnica de manejo correcta",
     "optionD": "Ahorra desgaste en los tambores y las balatas del freno",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Conducir con el pie sobre el freno genera una acumulación continua de calor que puede causar pérdida de eficacia, menor rendimiento y desgaste prematuro de los componentes del freno."
+    "explanation": "Conducir con el pie sobre el freno genera una acumulación continua de calor que puede causar pérdida de eficacia, menor rendimiento y desgaste prematuro de los componentes del freno. Las balatas calientes por frenar todo el tiempo agarran peor, no mejor."
   },
   {
     "questionId": "CDL-GK-533",
@@ -7621,13 +7621,13 @@
     "state": "ALL",
     "category": "brakingSystems",
     "question": "¿Qué debe hacer si los frenos de resorte no se liberan cuando se acumula la presión de aire?",
-    "optionA": "Seguir conduciendo despacio",
+    "optionA": "Manejar despacio hasta un taller para repararlos",
     "optionB": "Liberarlos a la fuerza manualmente",
     "optionC": "No hacer caso del problema",
     "optionD": "No conducir hasta que se reparen",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Unos frenos de resorte que no se liberan indican un problema grave de seguridad que debe repararse antes de operar el vehículo."
+    "explanation": "Unos frenos de resorte que no se liberan indican un problema grave de seguridad que debe repararse antes de operar el vehículo. Incluso manejar despacio hasta un taller con los frenos de resorte aplicados es inseguro; hágalo reparar donde está el camión."
   },
   {
     "questionId": "CDL-GK-546",
@@ -7664,12 +7664,12 @@
     "category": "brakingSystems",
     "question": "¿Qué sucede si los tambores de freno se sobrecalientan?",
     "optionA": "Se expanden y los frenos pierden eficacia",
-    "optionB": "Se encogen y hacen mejor contacto con las zapatas",
+    "optionB": "Se encogen y se vuelven más eficaces",
     "optionC": "No cambia nada en el rendimiento del frenado",
     "optionD": "Se vuelven más resistentes y duran mucho más",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los tambores sobrecalentados se expanden y aumentan la separación entre las zapatas y el tambor, lo que reduce la eficacia del frenado y puede causar la pérdida de eficacia de los frenos."
+    "explanation": "Los tambores sobrecalentados se expanden y aumentan la separación entre las zapatas y el tambor, lo que reduce la eficacia del frenado y puede causar la pérdida de eficacia de los frenos. El calor hace que los tambores se expandan, nunca que se encojan."
   },
   {
     "questionId": "CDL-GK-549",
@@ -7705,13 +7705,13 @@
     "state": "ALL",
     "category": "vehicleSystems",
     "question": "¿Qué debe hacer si el indicador de temperatura muestra que el motor se está sobrecalentando?",
-    "optionA": "Seguir conduciendo, pero reducir la velocidad para evitar más daños",
+    "optionA": "Seguir manejando con cuidado hasta la próxima área de servicio",
     "optionB": "Dejar de conducir en cuanto sea seguro y apagar el motor",
     "optionC": "Poner la calefacción al máximo y seguir conduciendo para enfriar el motor",
     "optionD": "Quitar de inmediato el tapón del radiador y agregar agua fría",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Un motor sobrecalentado puede sufrir daños graves y debe apagarse de inmediato en cuanto sea seguro detenerse."
+    "explanation": "Un motor sobrecalentado puede sufrir daños graves y debe apagarse de inmediato en cuanto sea seguro detenerse. Seguir manejando hasta un área de servicio con el motor sobrecalentado puede causar daños graves."
   },
   {
     "questionId": "CDL-GK-552",
@@ -8084,12 +8084,12 @@
     "category": "vehicleSystems",
     "question": "¿Cuál es la forma correcta de inspeccionar el desgaste de la quinta rueda?",
     "optionA": "Buscar zonas desgastadas y grietas, y verificar la lubricación",
-    "optionB": "Revisar solo las conexiones eléctricas y el arnés de cables",
+    "optionB": "Mirar solo las conexiones eléctricas y el cableado",
     "optionC": "Medir la altura desde el suelo con las herramientas adecuadas",
     "optionD": "Probar solo las conexiones de aire y verificar el sellado",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los puntos de desgaste, las grietas y la lubricación de la quinta rueda son fundamentales para un acoplamiento seguro y deben inspeccionarse con regularidad."
+    "explanation": "Los puntos de desgaste, las grietas y la lubricación de la quinta rueda son fundamentales para un acoplamiento seguro y deben inspeccionarse con regularidad. Las conexiones eléctricas no forman parte del desgaste de la quinta rueda."
   },
   {
     "questionId": "CDL-GK-579",
@@ -8365,11 +8365,11 @@
     "question": "¿Qué debe hacer si sospecha que hay problemas en el sistema de escape?",
     "optionA": "Seguir conduciendo, pero abrir un poco las ventanas para ventilar",
     "optionB": "Hacer inspeccionar y reparar el sistema de inmediato",
-    "optionC": "Conducir solo de día",
+    "optionC": "Repararlo cuando el olor empeore",
     "optionD": "Agregar sellador para el sistema de escape",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las fugas en el escape pueden dejar entrar monóxido de carbono peligroso a la cabina e indicar otros problemas graves que requieren atención inmediata."
+    "explanation": "Las fugas en el escape pueden dejar entrar monóxido de carbono peligroso a la cabina e indicar otros problemas graves que requieren atención inmediata. Esperar a que el olor empeore significa respirar gases de escape mientras tanto."
   },
   {
     "questionId": "CDL-GK-599",

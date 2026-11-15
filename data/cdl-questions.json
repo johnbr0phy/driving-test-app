@@ -218,10 +218,10 @@
     "optionA": "Report it after completing the trip",
     "optionB": "Continue driving but monitor the problem",
     "optionC": "Do not operate the vehicle until repaired",
-    "optionD": "Note it for the next scheduled maintenance",
+    "optionD": "Drive on and have it repaired at the next service",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Any safety defect discovered during pre-trip inspection requires the vehicle to be taken out of service until the defect is properly repaired by qualified personnel."
+    "explanation": "Any safety defect discovered during pre-trip inspection requires the vehicle to be taken out of service until the defect is properly repaired by qualified personnel. Waiting for the next service means driving with a known safety defect."
   },
   {
     "questionId": "CDL-GK-017",
@@ -243,13 +243,13 @@
     "state": "ALL",
     "category": "vehicleInspection",
     "question": "How should you inspect belts in the engine compartment?",
-    "optionA": "Check only for proper tightness",
+    "optionA": "Look only for proper tightness",
     "optionB": "Look for cracks, fraying, or glazing",
     "optionC": "Ensure belts are completely rigid",
     "optionD": "Verify belts are perfectly straight",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Engine belts should be inspected for cracks, fraying, glazing, or other damage that could cause belt failure and loss of critical engine accessories."
+    "explanation": "Engine belts should be inspected for cracks, fraying, glazing, or other damage that could cause belt failure and loss of critical engine accessories. Tightness alone is not enough; a tight belt can still be cracked or frayed."
   },
   {
     "questionId": "CDL-GK-019",
@@ -314,12 +314,12 @@
     "category": "vehicleInspection",
     "question": "What should you do if you find damaged shock absorbers during inspection?",
     "optionA": "Have them repaired before driving",
-    "optionB": "Drive carefully until next service",
+    "optionB": "Have them repaired at your next scheduled service",
     "optionC": "Monitor their performance during trip",
     "optionD": "Replace only if leaking severely",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Damaged shock absorbers affect vehicle stability and handling, creating unsafe driving conditions that require repair before the vehicle can be operated."
+    "explanation": "Damaged shock absorbers affect vehicle stability and handling, creating unsafe driving conditions that require repair before the vehicle can be operated. Putting the repair off to the next scheduled service means driving on damaged shocks."
   },
   {
     "questionId": "CDL-GK-024",
@@ -400,10 +400,10 @@
     "optionA": "Brake pedal travels all the way to the floor",
     "optionB": "Maximum force is needed to stop",
     "optionC": "Pushrod travel stays within specifications",
-    "optionD": "Brakes engage fully only once they are hot",
+    "optionD": "Pedal stops within an inch of the floor",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Proper brake adjustment is indicated when the pushrod travel measurement stays within the manufacturer's specifications for safe and effective braking."
+    "explanation": "Proper brake adjustment is indicated when the pushrod travel measurement stays within the manufacturer's specifications for safe and effective braking. A pedal that goes nearly to the floor points to a brake problem, not good adjustment."
   },
   {
     "questionId": "CDL-GK-030",
@@ -720,12 +720,12 @@
     "category": "vehicleInspection",
     "question": "What should you do if your vehicle's horn fails to work during pre-trip inspection?",
     "optionA": "Use hand signals instead of the horn",
-    "optionB": "Drive only during daylight hours",
+    "optionB": "Drive today and get it repaired tonight",
     "optionC": "Rely on lights for all communication",
     "optionD": "Do not drive until the horn is repaired",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A working horn is required by law for safe operation, so the vehicle cannot be driven until the horn is properly repaired and functioning."
+    "explanation": "A working horn is required by law for safe operation, so the vehicle cannot be driven until the horn is properly repaired and functioning. A working horn is required equipment, so it must be repaired before the trip, not after."
   },
   {
     "questionId": "CDL-GK-053",
@@ -764,10 +764,10 @@
     "optionA": "Visual inspection from outside the trailer only",
     "optionB": "Check only the rear cargo doors",
     "optionC": "Inspect tie-downs and securement devices",
-    "optionD": "Verify cargo weight distribution only",
+    "optionD": "Check the securement on the rear row only",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Cargo securement requires inspecting all tie-downs and securement devices to ensure cargo cannot shift during transport, which could affect vehicle stability."
+    "explanation": "Cargo securement requires inspecting all tie-downs and securement devices to ensure cargo cannot shift during transport, which could affect vehicle stability. Checking only the rear row misses loose tie-downs on the rest of the load."
   },
   {
     "questionId": "CDL-GK-056",
@@ -778,10 +778,10 @@
     "optionA": "Add more brake fluid and continue",
     "optionB": "Have the brake system repaired immediately",
     "optionC": "Monitor the leak during the trip",
-    "optionD": "Check brake fluid level more frequently",
+    "optionD": "Top it up now and get it repaired later",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Brake fluid leaks indicate serious brake system problems that could lead to brake failure, requiring immediate professional repair before the vehicle can be safely operated."
+    "explanation": "Brake fluid leaks indicate serious brake system problems that could lead to brake failure, requiring immediate professional repair before the vehicle can be safely operated. Topping up the fluid does not stop the leak, so the repair cannot wait."
   },
   {
     "questionId": "CDL-GK-057",
@@ -945,11 +945,11 @@
     "question": "What should you do when you feel drowsy while driving?",
     "optionA": "Pull over in a safe place and rest",
     "optionB": "Open the windows and turn up the radio",
-    "optionC": "Drink coffee and continue driving",
+    "optionC": "Pull over in a safe spot for coffee, then drive on",
     "optionD": "Drive faster to reach your destination sooner",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The only safe response to drowsiness is to pull over in a safe location and get adequate rest before continuing."
+    "explanation": "The only safe response to drowsiness is to pull over in a safe location and get adequate rest before continuing. Coffee only masks drowsiness for a short time, so pulling over just for coffee is not enough."
   },
   {
     "questionId": "CDL-GK-069",
@@ -986,12 +986,12 @@
     "category": "safeDriving",
     "question": "What is the primary danger of using a cell phone while driving?",
     "optionA": "It breaks federal rules but has little effect on your driving",
-    "optionB": "It may drain your vehicle's battery",
-    "optionC": "It creates mental distraction and reduces reaction time",
+    "optionB": "It slows your reactions only while you text",
+    "optionC": "It creates mental distraction and slows your reactions",
     "optionD": "It interferes with your CB radio and dispatch communications",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Cell phone use creates dangerous mental distraction that significantly reduces reaction time and attention to driving tasks."
+    "explanation": "Cell phone use creates dangerous mental distraction that significantly reduces reaction time and attention to driving tasks. Talking on the phone also distracts you, not only texting."
   },
   {
     "questionId": "CDL-GK-072",
@@ -1056,12 +1056,12 @@
     "category": "safeDriving",
     "question": "When driving down a steep grade, what should you do with your speed?",
     "optionA": "Let gravity increase your speed naturally",
-    "optionB": "Use your brakes continuously down the hill",
+    "optionB": "Ride the brakes to hold a safe speed",
     "optionC": "Shift to neutral to save fuel",
     "optionD": "Use engine braking and maintain safe speed",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "On steep grades, use engine braking along with service brakes as needed to maintain a safe speed and prevent brake overheating."
+    "explanation": "On steep grades, use engine braking along with service brakes as needed to maintain a safe speed and prevent brake overheating. Riding the brakes to hold a safe speed overheats them and causes brake fade."
   },
   {
     "questionId": "CDL-GK-077",
@@ -1113,11 +1113,11 @@
     "question": "When is it acceptable to exceed the speed limit?",
     "optionA": "When passing another vehicle on a two-lane road",
     "optionB": "Never - speed limits are maximum safe speeds",
-    "optionC": "When traffic is moving faster than the limit",
+    "optionC": "When the road is dry and it feels safe",
     "optionD": "When you are familiar with the road",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Speed limits represent maximum safe speeds under ideal conditions and should never be exceeded regardless of circumstances."
+    "explanation": "Speed limits represent maximum safe speeds under ideal conditions and should never be exceeded regardless of circumstances. A dry road that feels safe is no reason to go over the posted maximum."
   },
   {
     "questionId": "CDL-GK-081",
@@ -1125,13 +1125,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "What should you do when approaching a railroad crossing?",
-    "optionA": "Speed up to cross quickly before a train can arrive",
+    "optionA": "Slow down only if the warning lights are flashing",
     "optionB": "Stop only if you see a train approaching",
     "optionC": "Slow down, look both ways, and listen for trains",
     "optionD": "Cross at normal speed if gates are up",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Always slow down at railroad crossings, look both directions, and listen for approaching trains even if warning devices aren't active."
+    "explanation": "Always slow down at railroad crossings, look both directions, and listen for approaching trains even if warning devices aren't active. Slowing only when lights flash is not enough, because warning devices can fail or be missing."
   },
   {
     "questionId": "CDL-GK-082",
@@ -1310,10 +1310,10 @@
     "optionA": "Flash your lights and honk to show displeasure",
     "optionB": "Slow down to reestablish proper following distance",
     "optionC": "Speed up to stay close behind them and keep your place",
-    "optionD": "Change lanes to get around them",
+    "optionD": "Slow down briefly, then close up behind them again",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "When someone cuts in front of you, slow down to reestablish proper following distance rather than reacting aggressively."
+    "explanation": "When someone cuts in front of you, slow down to reestablish proper following distance rather than reacting aggressively. Slowing for a moment and then closing the gap again leaves you without a safe space cushion."
   },
   {
     "questionId": "CDL-GK-095",
@@ -1378,12 +1378,12 @@
     "category": "safeDriving",
     "question": "What is the safest way to change lanes?",
     "optionA": "Signal and move over quickly so you spend less time between lanes",
-    "optionB": "Check your mirrors once, then move over without signaling",
+    "optionB": "Check blind spots once, then move over without signaling",
     "optionC": "Signal, check mirrors and blind spots, then move gradually",
     "optionD": "Move over first, then signal to show your intentions",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Safe lane changes require signaling early, thoroughly checking mirrors and blind spots, then moving gradually into the new lane."
+    "explanation": "Safe lane changes require signaling early, thoroughly checking mirrors and blind spots, then moving gradually into the new lane. Checking blind spots does not replace signaling first."
   },
   {
     "questionId": "CDL-GK-100",
@@ -1393,11 +1393,11 @@
     "question": "What effect does alcohol have on driving ability?",
     "optionA": "It only affects coordination, not judgment",
     "optionB": "It impairs judgment, reaction time, and coordination",
-    "optionC": "It affects only night vision capabilities",
+    "optionC": "It slows reactions but leaves judgment intact",
     "optionD": "It improves confidence but reduces caution",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Alcohol impairs all aspects of safe driving including judgment, reaction time, coordination, and vision making driving extremely dangerous."
+    "explanation": "Alcohol impairs all aspects of safe driving including judgment, reaction time, coordination, and vision making driving extremely dangerous. Alcohol affects judgment as well as reactions."
   },
   {
     "questionId": "CDL-GK-101",
@@ -1407,11 +1407,11 @@
     "question": "How can you reduce the chance of a collision at intersections?",
     "optionA": "Approach slowly, look both ways, and cover the brake",
     "optionB": "Speed up to clear the intersection quickly",
-    "optionC": "Focus only on traffic signals and signs",
+    "optionC": "Look only at the traffic signals and signs",
     "optionD": "Sound your horn as you enter to announce your presence",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Reduce intersection collision risk by approaching slowly, looking in all directions for hazards, and being ready to brake if needed."
+    "explanation": "Reduce intersection collision risk by approaching slowly, looking in all directions for hazards, and being ready to brake if needed. Watching only signals and signs misses vehicles and people entering the intersection."
   },
   {
     "questionId": "CDL-GK-102",
@@ -1450,10 +1450,10 @@
     "optionA": "Other vehicles are passing you frequently",
     "optionB": "You can't stop within the distance you can see clearly",
     "optionC": "Your engine is working harder than normal",
-    "optionD": "Traffic is moving slower than the speed limit",
+    "optionD": "Other traffic is moving within the speed limit",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "You're driving too fast if you can't stop within the distance you can see clearly ahead - this is the basic rule for safe speed."
+    "explanation": "You're driving too fast if you can't stop within the distance you can see clearly ahead - this is the basic rule for safe speed. What other traffic does says nothing about whether you can stop in the distance you can see."
   },
   {
     "questionId": "CDL-GK-105",
@@ -1461,13 +1461,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "What should you do when meeting an oncoming vehicle at night?",
-    "optionA": "Flash your high beams to see better and communicate",
+    "optionA": "Slow down and switch to your high beams",
     "optionB": "Look directly at their headlights to judge their distance",
     "optionC": "Look toward the right edge of the road and slow down",
     "optionD": "Turn on your emergency flashers to increase your visibility",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "When meeting oncoming vehicles at night, look toward the right edge of the road to avoid being blinded and slow down if necessary."
+    "explanation": "When meeting oncoming vehicles at night, look toward the right edge of the road to avoid being blinded and slow down if necessary. Switching to high beams blinds the oncoming driver, even if you also slow down."
   },
   {
     "questionId": "CDL-GK-106",
@@ -1477,11 +1477,11 @@
     "question": "Why is it important to signal your intentions early?",
     "optionA": "It's required by federal regulations for all commercial vehicles",
     "optionB": "It gives other drivers time to see and react safely",
-    "optionC": "It reduces fuel consumption and improves overall vehicle efficiency",
+    "optionC": "It lets you turn safely without checking mirrors",
     "optionD": "It prevents wear on your turn signal bulbs and electrical systems",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Early signaling gives other drivers adequate time to see your intentions and adjust their driving accordingly for everyone's safety."
+    "explanation": "Early signaling gives other drivers adequate time to see your intentions and adjust their driving accordingly for everyone's safety. Signaling never replaces checking your mirrors before you turn."
   },
   {
     "questionId": "CDL-GK-107",
@@ -1574,12 +1574,12 @@
     "category": "safeDriving",
     "question": "How should you approach a curve or turn?",
     "optionA": "Maintain steady speed throughout the entire turning maneuver",
-    "optionB": "Accelerate slightly in the middle to maintain momentum",
+    "optionB": "Slow down once you are in the middle of the curve",
     "optionC": "Slow before the curve, then accelerate gently through it",
     "optionD": "Brake while in the curve to maintain control and stability",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The safest technique is to slow down before entering a curve, then accelerate gently as you complete the turn."
+    "explanation": "The safest technique is to slow down before entering a curve, then accelerate gently as you complete the turn. Waiting until the middle of the curve to slow down means braking while turning, which can cause a skid."
   },
   {
     "questionId": "CDL-GK-114",
@@ -1587,13 +1587,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "What should you do when driving in fog?",
-    "optionA": "Use high beam headlights for better visibility",
+    "optionA": "Slow down and use high beams to see farther",
     "optionB": "Follow the taillights of the vehicle ahead to stay on the road",
     "optionC": "Slow down, use low beams, and increase following distance",
     "optionD": "Drive on the shoulder to stay out of traffic",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "In fog, reduce speed significantly, use low beam headlights, and increase following distance - high beams reflect back and reduce visibility."
+    "explanation": "In fog, reduce speed significantly, use low beam headlights, and increase following distance - high beams reflect back and reduce visibility. High beams reflect off the fog and cut visibility, even at a lower speed."
   },
   {
     "questionId": "CDL-GK-115",
@@ -1617,11 +1617,11 @@
     "question": "What should you do when driving through standing water?",
     "optionA": "Drive through quickly to avoid getting stuck",
     "optionB": "Maintain normal speed and following distance",
-    "optionC": "Use cruise control for consistent speed",
+    "optionC": "Slow down and keep cruise control on",
     "optionD": "Slow down and test brakes afterward",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When driving through water, slow down significantly and test your brakes afterward as water can reduce braking effectiveness."
+    "explanation": "When driving through water, slow down significantly and test your brakes afterward as water can reduce braking effectiveness. Cruise control should not be used on wet roads, so slowing down with it on is still wrong."
   },
   {
     "questionId": "CDL-GK-117",
@@ -1702,10 +1702,10 @@
     "optionA": "Rely only on your mirrors for all visibility checks",
     "optionB": "Turn your head to look over your shoulder frequently",
     "optionC": "Use mirrors frequently and avoid lingering in others' blind spots",
-    "optionD": "Install additional convex mirrors on all vehicle surfaces",
+    "optionD": "Check blind spots only when you plan to turn",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Properly adjusted mirrors reduce blind spots significantly, but you should also avoid staying in other vehicles' blind spots where they can't see you."
+    "explanation": "Properly adjusted mirrors reduce blind spots significantly, but you should also avoid staying in other vehicles' blind spots where they can't see you. Blind spots need checking all the time, not just before a turn."
   },
   {
     "questionId": "CDL-GK-123",
@@ -1715,11 +1715,11 @@
     "question": "When is it safe to hold and dial a hand-held cell phone while driving?",
     "optionA": "During long straight stretches of highway with light traffic",
     "optionB": "Never - pull over safely if you must use it",
-    "optionC": "While briefly stopped at a red light or in traffic",
+    "optionC": "While stopped safely at a red light",
     "optionD": "When traffic is light and road conditions are ideal",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Federal rules ban holding, dialing or texting on a hand-held phone while driving a commercial vehicle, including while briefly stopped in traffic or at a light. Pull off the road to a safe place first; only hands-free, single-touch use is allowed while driving."
+    "explanation": "Federal rules ban holding, dialing or texting on a hand-held phone while driving a commercial vehicle, including while briefly stopped in traffic or at a light. Pull off the road to a safe place first; only hands-free, single-touch use is allowed while driving. Federal rules also ban hand-held phone use while you are stopped at a light or in traffic."
   },
   {
     "questionId": "CDL-GK-124",
@@ -1769,13 +1769,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "What causes jackknife accidents?",
-    "optionA": "Mechanical failure of the fifth wheel locking jaws",
+    "optionA": "Sudden acceleration on dry pavement",
     "optionB": "Sudden braking or turning on slippery surfaces",
     "optionC": "Improper trailer loading only, never braking or steering",
     "optionD": "High winds affecting the trailer",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Jackknife accidents typically occur when sudden braking or sharp turning causes the trailer to slide and swing around toward the cab."
+    "explanation": "Jackknife accidents typically occur when sudden braking or sharp turning causes the trailer to slide and swing around toward the cab. Jackknifes come from braking or turning that locks or skids the wheels, mostly on slippery roads, not from accelerating on dry pavement."
   },
   {
     "questionId": "CDL-GK-128",
@@ -1825,13 +1825,13 @@
     "state": "ALL",
     "category": "safeDriving",
     "question": "What should you do if you feel your vehicle pulling to one side?",
-    "optionA": "Continue driving and check it later",
+    "optionA": "Keep driving safely and check it at your next stop",
     "optionB": "Increase speed to counteract the pulling",
     "optionC": "Turn the steering wheel harder opposite direction",
     "optionD": "Pull over safely and check for mechanical problems",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Vehicle pulling to one side indicates a potential mechanical problem that could be dangerous - pull over safely and investigate immediately."
+    "explanation": "Vehicle pulling to one side indicates a potential mechanical problem that could be dangerous - pull over safely and investigate immediately. Driving on to your next stop with a pull you cannot explain risks a breakdown or loss of control."
   },
   {
     "questionId": "CDL-GK-132",
@@ -1967,11 +1967,11 @@
     "question": "When backing a commercial vehicle, what is the safest practice?",
     "optionA": "Back as quickly as possible to minimize time",
     "optionB": "Get out and check your path frequently",
-    "optionC": "Rely only on mirrors for visibility",
+    "optionC": "Check your path once, then back without stopping",
     "optionD": "Back without stopping once you start",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Getting out to check your path frequently while backing is the safest practice, as it allows you to identify obstacles and hazards that mirrors cannot show."
+    "explanation": "Getting out to check your path frequently while backing is the safest practice, as it allows you to identify obstacles and hazards that mirrors cannot show. One check before you start is not enough; get out and look again as often as you need."
   },
   {
     "questionId": "CDL-GK-142",
@@ -2192,10 +2192,10 @@
     "optionA": "Maintain highway speed throughout",
     "optionB": "Accelerate through the curve",
     "optionC": "Slow down before entering the curve",
-    "optionD": "Use engine braking only",
+    "optionD": "Slow down after you enter the curve",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Slowing down before entering curves allows for better vehicle control and reduces the risk of rollover or loss of traction."
+    "explanation": "Slowing down before entering curves allows for better vehicle control and reduces the risk of rollover or loss of traction. Slowing after you are already in the curve means braking while turning, which raises the risk of a rollover."
   },
   {
     "questionId": "CDL-GK-158",
@@ -2275,11 +2275,11 @@
     "question": "What is the most effective way to check your turning radius clearance?",
     "optionA": "Walk around and visually inspect the path",
     "optionB": "Use only your mirrors to judge the clearance",
-    "optionC": "Estimate it based on your past experience",
+    "optionC": "Judge the path from the cab using the mirrors",
     "optionD": "Rely on vehicle sensors only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Physically walking around and visually inspecting the turning path provides the most accurate assessment of clearance requirements."
+    "explanation": "Physically walking around and visually inspecting the turning path provides the most accurate assessment of clearance requirements. Mirrors from the cab leave blind spots, so walk around and look."
   },
   {
     "questionId": "CDL-GK-164",
@@ -2457,11 +2457,11 @@
     "question": "What is the most important safety practice when performing any backing maneuver?",
     "optionA": "Get out and look before and during backing",
     "optionB": "Sound the horn continuously throughout the backing maneuver",
-    "optionC": "Use hazard lights and check mirrors every few seconds",
+    "optionC": "Look in the mirrors only, without getting out",
     "optionD": "Back as quickly as possible to minimize traffic disruption",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Getting out and looking before and during backing is the most critical safety practice to identify hazards and obstacles not visible from the driver's seat."
+    "explanation": "Getting out and looking before and during backing is the most critical safety practice to identify hazards and obstacles not visible from the driver's seat. Mirrors leave blind spots, so you need to get out and look."
   },
   {
     "questionId": "CDL-GK-177",
@@ -2486,10 +2486,10 @@
     "optionA": "Rev the engine to warm it up and check responsiveness",
     "optionB": "Turn on all lights and activate the four-way flashers",
     "optionC": "Walk the intended path and plan the maneuver",
-    "optionD": "Adjust mirrors only and check for proper rear visibility",
+    "optionD": "Start backing, then check the path from the cab",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Walking the intended path and planning the maneuver before beginning helps identify potential problems and plan the safest approach."
+    "explanation": "Walking the intended path and planning the maneuver before beginning helps identify potential problems and plan the safest approach. Checking the path only after you start leaves no time to plan."
   },
   {
     "questionId": "CDL-GK-179",
@@ -2497,13 +2497,13 @@
     "state": "ALL",
     "category": "basicControl",
     "question": "Why should commercial vehicles avoid sudden steering inputs?",
-    "optionA": "It wastes fuel and reduces overall vehicle efficiency",
+    "optionA": "It can cause the engine to stall",
     "optionB": "It causes excessive tire wear and increased maintenance costs",
     "optionC": "It can cause loss of control or rollover",
     "optionD": "It damages the steering system and power steering pump",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Sudden steering inputs can cause commercial vehicles to lose control or roll over due to their high center of gravity and weight distribution."
+    "explanation": "Sudden steering inputs can cause commercial vehicles to lose control or roll over due to their high center of gravity and weight distribution. Steering inputs do not stall the engine."
   },
   {
     "questionId": "CDL-GK-180",
@@ -2609,13 +2609,13 @@
     "state": "ALL",
     "category": "basicControl",
     "question": "What is the main advantage of using a spotter when backing?",
-    "optionA": "Faster backing speeds and improved maneuverability in tight spaces",
+    "optionA": "Lets you skip checking blind spots yourself",
     "optionB": "Reduced fuel consumption during extended backing maneuvers and operations",
     "optionC": "Additional set of eyes for blind spots",
     "optionD": "Better radio communication with dispatch and other drivers nearby",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A spotter provides an additional set of eyes to monitor blind spots and areas that cannot be seen from the driver's seat."
+    "explanation": "A spotter provides an additional set of eyes to monitor blind spots and areas that cannot be seen from the driver's seat. A spotter adds eyes; you still check your own mirrors and blind spots."
   },
   {
     "questionId": "CDL-GK-188",
@@ -2680,12 +2680,12 @@
     "category": "cargoHandling",
     "question": "How often must cargo securement be inspected during a trip?",
     "optionA": "Only at the beginning of the trip and destination",
-    "optionB": "Every 100 miles or 2 hours of driving time",
+    "optionB": "Within the first 100 miles, then every 200 miles",
     "optionC": "Within the first 50 miles, then every 150 miles or 3 hours",
     "optionD": "Only when stopping for fuel or mandatory rest breaks",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Federal regulations require inspection within the first 50 miles, then every 150 miles or 3 hours of driving, whichever comes first."
+    "explanation": "Federal regulations require inspection within the first 50 miles, then every 150 miles or 3 hours of driving, whichever comes first. The first check comes within 50 miles, not 100, and then every 150 miles."
   },
   {
     "questionId": "CDL-GK-193",
@@ -2932,12 +2932,12 @@
     "category": "cargoHandling",
     "question": "How should you distribute weight when loading a trailer?",
     "optionA": "Put all heavy items in the rear for better traction",
-    "optionB": "Concentrate weight over the drive axles only",
+    "optionB": "Keep only the gross weight within the legal limit",
     "optionC": "Balance the load to stay within axle weight limits",
     "optionD": "Load the heaviest items as high as possible",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Weight should be distributed to stay within legal axle weight limits while maintaining proper weight balance for safe handling and stability."
+    "explanation": "Weight should be distributed to stay within legal axle weight limits while maintaining proper weight balance for safe handling and stability. Gross weight within the limit is not enough; each axle must also stay within its limit."
   },
   {
     "questionId": "CDL-GK-211",
@@ -2959,13 +2959,13 @@
     "state": "ALL",
     "category": "cargoHandling",
     "question": "What should you do if your cargo shifts during transport?",
-    "optionA": "Continue to destination if shift is minimal",
+    "optionA": "Keep going safely and re-secure it at your next stop",
     "optionB": "Adjust your driving to compensate for the shift",
     "optionC": "Note the shift in your logbook for future reference",
     "optionD": "Stop as soon as safely possible and re-secure the load",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Any cargo shift indicates potential securement failure and creates a safety hazard that must be addressed immediately by stopping and re-securing the load."
+    "explanation": "Any cargo shift indicates potential securement failure and creates a safety hazard that must be addressed immediately by stopping and re-securing the load. Driving on to your next stop with a shifted load risks a rollover or losing cargo on the way."
   },
   {
     "questionId": "CDL-GK-213",
@@ -2987,13 +2987,13 @@
     "state": "ALL",
     "category": "cargoHandling",
     "question": "When loading palletized freight, what should be your primary concern?",
-    "optionA": "Maximizing the number of pallets per load to cut trip costs",
+    "optionA": "Using fewer securement devices to save time",
     "optionB": "Arranging pallets in delivery order for easy unloading access",
     "optionC": "Stacking the heaviest pallets on top so they hold lighter ones down",
     "optionD": "Preventing load shift by proper weight distribution and securement",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The primary safety concern when loading palletized freight is preventing load shift through proper weight distribution and adequate securement methods."
+    "explanation": "The primary safety concern when loading palletized freight is preventing load shift through proper weight distribution and adequate securement methods. Cutting securement to save time makes a load shift more likely."
   },
   {
     "questionId": "CDL-GK-215",
@@ -3018,10 +3018,10 @@
     "optionA": "It has no significant effect on braking performance",
     "optionB": "Poor weight distribution can reduce braking effectiveness",
     "optionC": "Increased weight always improves braking by adding traction",
-    "optionD": "Only affects braking when cargo exceeds legal limits",
+    "optionD": "It only reduces braking effectiveness when overweight",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Improper cargo loading and weight distribution can significantly reduce braking effectiveness by affecting weight transfer, traction, and vehicle stability during braking."
+    "explanation": "Improper cargo loading and weight distribution can significantly reduce braking effectiveness by affecting weight transfer, traction, and vehicle stability during braking. Poor balance hurts braking even when the vehicle is under the legal weight."
   },
   {
     "questionId": "CDL-GK-217",
@@ -3087,11 +3087,11 @@
     "question": "What is the primary cause of cargo-related accidents?",
     "optionA": "Overweight vehicles exceeding legal limits",
     "optionB": "Inadequate or failed cargo securement",
-    "optionC": "Drivers lacking proper endorsements",
+    "optionC": "Too much securement on light loads",
     "optionD": "Poor weather conditions during transport",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The majority of cargo-related accidents are caused by inadequate or failed cargo securement, resulting in load shift, spillage, or cargo falling from vehicles."
+    "explanation": "The majority of cargo-related accidents are caused by inadequate or failed cargo securement, resulting in load shift, spillage, or cargo falling from vehicles. Extra securement does not cause accidents; too little does."
   },
   {
     "questionId": "CDL-GK-222",
@@ -3183,13 +3183,13 @@
     "state": "ALL",
     "category": "cargoHandling",
     "question": "What should you do when driving with a high center of gravity load?",
-    "optionA": "Maintain normal highway speeds on all roads",
+    "optionA": "Avoid sudden moves but keep normal speed in curves",
     "optionB": "Use cruise control to maintain steady speed",
     "optionC": "Increase following distance and avoid sudden maneuvers",
     "optionD": "Take turns and curves at higher speeds for stability",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "High center of gravity loads require reduced speeds in turns, increased following distance, and avoiding sudden maneuvers to prevent rollover."
+    "explanation": "High center of gravity loads require reduced speeds in turns, increased following distance, and avoiding sudden maneuvers to prevent rollover. A high load needs slower speeds in curves as well as smooth moves."
   },
   {
     "questionId": "CDL-GK-229",
@@ -3911,13 +3911,13 @@
     "state": "ALL",
     "category": "emergencyProcedures",
     "question": "What should you do if you suspect your vehicle has been involved in a hit-and-run?",
-    "optionA": "Continue to your destination",
+    "optionA": "Drive on safely and inspect it at your destination",
     "optionB": "Stop only if there's visible damage",
     "optionC": "Report to police even if damage seems minor",
     "optionD": "Stop and inspect your vehicle safely",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "If you suspect you've been involved in a hit-and-run, stop as soon as it's safe to inspect your vehicle and determine if an accident occurred. Report any damage to authorities."
+    "explanation": "If you suspect you've been involved in a hit-and-run, stop as soon as it's safe to inspect your vehicle and determine if an accident occurred. Report any damage to authorities. Waiting until your destination is not enough; stop and check now."
   },
   {
     "questionId": "CDL-GK-281",
@@ -4108,12 +4108,12 @@
     "category": "alcoholDrugs",
     "question": "How does alcohol primarily affect your driving ability?",
     "optionA": "Improves night vision and reduces glare sensitivity",
-    "optionB": "Reduces reaction time and impairs judgment",
-    "optionC": "Increases alertness and concentration during long drives",
+    "optionB": "Slows reactions and impairs judgment",
+    "optionC": "Speeds up reactions in small amounts",
     "optionD": "Enhances coordination and fine motor control skills",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Alcohol slows reaction time, impairs judgment, reduces coordination, and affects vision, all of which are critical for safe driving."
+    "explanation": "Alcohol slows reaction time, impairs judgment, reduces coordination, and affects vision, all of which are critical for safe driving. No amount of alcohol makes your reactions faster."
   },
   {
     "questionId": "CDL-GK-295",
@@ -4208,10 +4208,10 @@
     "optionA": "Continue driving carefully",
     "optionB": "Open windows for fresh air",
     "optionC": "Stop driving and rest until alert",
-    "optionD": "Switch to the radio for stimulation",
+    "optionD": "Stop driving only once you reach your destination",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "If you feel drowsy or impaired from any medication, you must stop driving immediately and not resume until you are fully alert and capable."
+    "explanation": "If you feel drowsy or impaired from any medication, you must stop driving immediately and not resume until you are fully alert and capable. Waiting until you reach your destination means driving while impaired the whole way."
   },
   {
     "questionId": "CDL-GK-302",
@@ -4376,10 +4376,10 @@
     "optionA": "Always improve alertness safely on long trips",
     "optionB": "Have no effect on driving at normal doses",
     "optionC": "Can cause aggressiveness and poor judgment",
-    "optionD": "Only affect vision, mainly at night",
+    "optionD": "Cause only mild drowsiness at normal doses",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Stimulants can cause over-confidence, aggressiveness, poor judgment, and erratic behavior that make driving dangerous despite increased alertness."
+    "explanation": "Stimulants can cause over-confidence, aggressiveness, poor judgment, and erratic behavior that make driving dangerous despite increased alertness. Drowsiness is the effect of depressants; stimulants cause fatigue when they wear off."
   },
   {
     "questionId": "CDL-GK-314",
@@ -4485,13 +4485,13 @@
     "state": "ALL",
     "category": "alcoholDrugs",
     "question": "How do depressant drugs typically affect driving?",
-    "optionA": "Improve concentration and enhance mental focus significantly",
+    "optionA": "Cause alertness and faster reactions",
     "optionB": "Enhance reflexes and increase reaction time capabilities",
     "optionC": "Increase energy levels and promote extended alertness periods",
     "optionD": "Cause drowsiness and slow reactions",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Depressants like alcohol, tranquilizers, and some medications slow reaction time, cause drowsiness, and impair coordination necessary for safe driving."
+    "explanation": "Depressants like alcohol, tranquilizers, and some medications slow reaction time, cause drowsiness, and impair coordination necessary for safe driving. Depressants never make you more alert or quicker to react."
   },
   {
     "questionId": "CDL-GK-322",
@@ -4597,13 +4597,13 @@
     "state": "ALL",
     "category": "alcoholDrugs",
     "question": "If you are taking prescription pain medication after surgery, when can you return to driving?",
-    "optionA": "Immediately if you feel mentally alert and physically capable",
+    "optionA": "As soon as you feel it is safe to drive",
     "optionB": "When cleared by your doctor as safe to drive",
     "optionC": "After reducing the prescribed dosage to minimize side effects",
     "optionD": "Exactly twenty-four hours after taking the last prescribed dose",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "You must be medically cleared by your doctor as safe to operate a commercial vehicle before returning to driving while taking any prescription medication that could affect driving ability."
+    "explanation": "You must be medically cleared by your doctor as safe to operate a commercial vehicle before returning to driving while taking any prescription medication that could affect driving ability. Feeling safe is not enough, because these drugs can impair you before you notice it."
   },
   {
     "questionId": "CDL-GK-330",
@@ -4655,11 +4655,11 @@
     "question": "When should you dim your high beam headlights?",
     "optionA": "Never dim them as they provide the best visibility available",
     "optionB": "Within 500 feet of oncoming traffic or a vehicle you follow",
-    "optionC": "Only in heavy traffic with multiple vehicles in close proximity",
+    "optionC": "Only once oncoming traffic is within 100 feet",
     "optionD": "When driving in city limits only with adequate street lighting",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The CDL manual says to dim your high beams within 500 feet of an oncoming vehicle and when following another vehicle within 500 feet, so you do not blind other drivers."
+    "explanation": "The CDL manual says to dim your high beams within 500 feet of an oncoming vehicle and when following another vehicle within 500 feet, so you do not blind other drivers. Waiting until 100 feet is far too late to keep from blinding the other driver."
   },
   {
     "questionId": "CDL-GK-334",
@@ -4751,13 +4751,13 @@
     "state": "ALL",
     "category": "nightDriving",
     "question": "If you become drowsy while driving, you should?",
-    "optionA": "Open windows for fresh air",
+    "optionA": "Stop at a safe place for coffee, then drive on",
     "optionB": "Drink coffee and continue driving",
     "optionC": "Turn up the radio volume",
     "optionD": "Stop in a safe place and rest",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The only safe solution for drowsiness is adequate rest; temporary measures like coffee or fresh air are not reliable solutions."
+    "explanation": "The only safe solution for drowsiness is adequate rest; temporary measures like coffee or fresh air are not reliable solutions. Coffee does not cure drowsiness; the only cure is sleep, so stopping just for coffee is not enough."
   },
   {
     "questionId": "CDL-GK-341",
@@ -5005,11 +5005,11 @@
     "question": "When driving at night, your vehicle's speed should never be faster than?",
     "optionA": "The posted speed limit for daytime driving",
     "optionB": "What other traffic is doing",
-    "optionC": "65 mph regardless of conditions",
+    "optionC": "Within 5 mph of the daytime speed limit",
     "optionD": "Allows stopping within headlight range",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Your speed at night must allow you to stop within the distance illuminated by your headlights to avoid unseen hazards."
+    "explanation": "Your speed at night must allow you to stop within the distance illuminated by your headlights to avoid unseen hazards. A set margin under the day limit can still be too fast to stop in your headlights."
   },
   {
     "questionId": "CDL-GK-359",
@@ -5019,11 +5019,11 @@
     "question": "If you can't see clearly while driving at night, you should?",
     "optionA": "Drive faster to get through the area",
     "optionB": "Follow another vehicle closely for guidance",
-    "optionC": "Turn on hazard lights and continue",
+    "optionC": "Slow down only once you reach a lit area",
     "optionD": "Slow down or stop until conditions improve",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When visibility is severely limited at night, the safest action is to slow down significantly or stop until you can see clearly."
+    "explanation": "When visibility is severely limited at night, the safest action is to slow down significantly or stop until you can see clearly. Waiting for a lit area means driving blind until you get there."
   },
   {
     "questionId": "CDL-GK-360",
@@ -5087,13 +5087,13 @@
     "state": "ALL",
     "category": "weatherDriving",
     "question": "If your vehicle starts to hydroplane, you should?",
-    "optionA": "Apply brakes firmly to regain control",
+    "optionA": "Use sudden, firm braking to slow down",
     "optionB": "Ease off the accelerator and avoid sudden movements",
     "optionC": "Turn the steering wheel sharply in the opposite direction",
     "optionD": "Accelerate to get through the water quickly",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "When hydroplaning, gentle inputs are key - ease off the accelerator and maintain straight steering until traction returns."
+    "explanation": "When hydroplaning, gentle inputs are key - ease off the accelerator and maintain straight steering until traction returns. Sudden braking while hydroplaning can lock the wheels and cause a skid."
   },
   {
     "questionId": "CDL-GK-365",
@@ -5104,10 +5104,10 @@
     "optionA": "Apply brakes hard and quickly",
     "optionB": "Use engine braking only",
     "optionC": "Apply brakes gently and gradually",
-    "optionD": "Pump the brakes rapidly with full force",
+    "optionD": "Brake gently, then harder once you start to slide",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Gentle, gradual brake application prevents wheel lockup on ice and maintains steering control while stopping."
+    "explanation": "Gentle, gradual brake application prevents wheel lockup on ice and maintains steering control while stopping. Braking harder once you slide locks the wheels; ease off instead."
   },
   {
     "questionId": "CDL-GK-366",
@@ -5131,11 +5131,11 @@
     "question": "When driving in snow, you should?",
     "optionA": "Use cruise control to maintain steady speed",
     "optionB": "Start gently and accelerate gradually",
-    "optionC": "Spin the tires to get better traction",
+    "optionC": "Start gently, then switch on cruise control",
     "optionD": "Turn off traction control systems",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Gentle starts and gradual acceleration prevent wheel spin and maintain traction in snow conditions."
+    "explanation": "Gentle starts and gradual acceleration prevent wheel spin and maintain traction in snow conditions. Cruise control should not be used on snowy roads, even after a gentle start."
   },
   {
     "questionId": "CDL-GK-368",
@@ -5200,12 +5200,12 @@
     "category": "weatherDriving",
     "question": "In very hot weather, tire pressure will?",
     "optionA": "Increase and may cause tire failure",
-    "optionB": "Decrease significantly due to heat expansion and thermal effects",
+    "optionB": "Drop and may cause a flat tire",
     "optionC": "Remain unchanged regardless of ambient temperature conditions",
     "optionD": "Fluctuate unpredictably making accurate measurements extremely difficult",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Hot weather increases tire pressure, and overinflated tires are more prone to blowouts and reduced traction."
+    "explanation": "Hot weather increases tire pressure, and overinflated tires are more prone to blowouts and reduced traction. Heat raises tire pressure; it does not lower it."
   },
   {
     "questionId": "CDL-GK-373",
@@ -5228,12 +5228,12 @@
     "category": "weatherDriving",
     "question": "What should you do if your engine overheats in hot weather?",
     "optionA": "Stop immediately and turn off the engine",
-    "optionB": "Continue driving to find a service station",
+    "optionB": "Stop, then remove the radiator cap at once",
     "optionC": "Add cold water to the radiator immediately",
     "optionD": "Increase engine speed to improve cooling",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Continuing to operate an overheated engine can cause severe damage; stop immediately and allow it to cool before proceeding."
+    "explanation": "Continuing to operate an overheated engine can cause severe damage; stop immediately and allow it to cool before proceeding. Never remove the radiator cap on a hot engine, because hot coolant and steam can cause severe burns."
   },
   {
     "questionId": "CDL-GK-375",
@@ -5271,11 +5271,11 @@
     "question": "When visibility is reduced due to weather, you should?",
     "optionA": "Drive faster to get through the area quickly",
     "optionB": "Follow other vehicles more closely for guidance",
-    "optionC": "Use hazard lights while driving",
+    "optionC": "Slow down but keep the same following distance",
     "optionD": "Slow down and increase following distance",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Reduced visibility requires slower speeds and greater following distances to allow adequate time to react to hazards."
+    "explanation": "Reduced visibility requires slower speeds and greater following distances to allow adequate time to react to hazards. You need both: slowing down while keeping the same following distance still leaves too little time to react."
   },
   {
     "questionId": "CDL-GK-378",
@@ -5314,10 +5314,10 @@
     "optionA": "Maintain your current speed",
     "optionB": "Slow down before entering the curve",
     "optionC": "Accelerate through the curve",
-    "optionD": "Use the brakes while turning",
+    "optionD": "Slow down by braking while you turn",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Slowing down before the curve allows you to maintain control throughout the turn without needing to brake while steering."
+    "explanation": "Slowing down before the curve allows you to maintain control throughout the turn without needing to brake while steering. Braking while turning on a slippery road can lock the wheels and cause a skid."
   },
   {
     "questionId": "CDL-GK-381",
@@ -5395,13 +5395,13 @@
     "state": "ALL",
     "category": "weatherDriving",
     "question": "If you're caught in a severe thunderstorm while driving, you should?",
-    "optionA": "Drive faster to get through it",
+    "optionA": "Drive on at a safe speed until it passes",
     "optionB": "Pull over using hazard lights",
     "optionC": "Find safe shelter and wait it out",
     "optionD": "Continue at normal speed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Severe thunderstorms create dangerous driving conditions including wind, hail, and poor visibility that require finding safe shelter."
+    "explanation": "Severe thunderstorms create dangerous driving conditions including wind, hail, and poor visibility that require finding safe shelter. In a severe storm no speed is reliably safe, so driving on until it passes is the wrong choice."
   },
   {
     "questionId": "CDL-GK-387",
@@ -5496,10 +5496,10 @@
     "optionA": "Slow down to a safe speed before the curve",
     "optionB": "Apply brakes gently while going through the curve for control",
     "optionC": "Speed up slightly through the curve to maintain momentum",
-    "optionD": "Maintain constant speed throughout the entire curve without changes",
+    "optionD": "Slow to a safe speed by braking in the curve",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Reducing speed before entering a curve allows you to navigate it safely without needing to brake while steering on slippery roads."
+    "explanation": "Reducing speed before entering a curve allows you to navigate it safely without needing to brake while steering on slippery roads. Getting to a safe speed by braking inside the curve is the mistake, because braking while steering can cause a skid."
   },
   {
     "questionId": "CDL-GK-394",
@@ -5580,10 +5580,10 @@
     "optionA": "Continue driving normally",
     "optionB": "Test your brakes gently",
     "optionC": "Stop immediately to check for damage",
-    "optionD": "Increase speed to dry out the brakes",
+    "optionD": "Test them gently only at your next stop",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "After driving through deep water, gently test your brakes to ensure they're working properly and dry them out if necessary."
+    "explanation": "After driving through deep water, gently test your brakes to ensure they're working properly and dry them out if necessary. Waiting for your next stop leaves you driving with wet brakes."
   },
   {
     "questionId": "CDL-GK-400",
@@ -5844,12 +5844,12 @@
     "category": "mountainDriving",
     "question": "Water temperature gauges are especially important in mountains because?",
     "optionA": "Mountain air is colder and thickens the coolant",
-    "optionB": "Altitude affects gauge accuracy",
+    "optionB": "Thin air can cause the gauge to read high",
     "optionC": "Grades cause increased engine heat",
     "optionD": "Mountain roads are longer",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Climbing grades puts extra load on engines, generating more heat and making temperature monitoring critical to prevent overheating."
+    "explanation": "Climbing grades puts extra load on engines, generating more heat and making temperature monitoring critical to prevent overheating. Altitude does not make the gauge read high; the engine really does run hotter on grades."
   },
   {
     "questionId": "CDL-GK-419",
@@ -5873,11 +5873,11 @@
     "question": "When descending a long grade, you should check your brakes by?",
     "optionA": "Applying them hard briefly to test maximum stopping power",
     "optionB": "Pumping them rapidly to check for proper response",
-    "optionC": "Riding them lightly to maintain constant contact and control",
+    "optionC": "Riding them lightly to keep them effective",
     "optionD": "Applying them lightly to feel for effectiveness",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Light brake application allows you to check brake effectiveness without overheating them before they're needed for speed control."
+    "explanation": "Light brake application allows you to check brake effectiveness without overheating them before they're needed for speed control. Riding the brakes lightly overheats them and makes them less effective."
   },
   {
     "questionId": "CDL-GK-421",
@@ -5971,11 +5971,11 @@
     "question": "What is the safest speed when going down a steep grade?",
     "optionA": "A speed that allows stopping within your sight distance",
     "optionB": "The posted speed limit regardless of road conditions",
-    "optionC": "Whatever speed most other vehicles are currently traveling",
+    "optionC": "Whatever keeps you within the flow of traffic",
     "optionD": "Five mph below the posted speed limit maximum",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Safe downgrade speed must allow stopping within sight distance, considering the increased stopping distance on downgrades."
+    "explanation": "Safe downgrade speed must allow stopping within sight distance, considering the increased stopping distance on downgrades. Keeping up with traffic can be too fast for your load and the grade."
   },
   {
     "questionId": "CDL-GK-428",
@@ -6011,13 +6011,13 @@
     "state": "ALL",
     "category": "mountainDriving",
     "question": "If you smell hot brakes while driving downhill, you should?",
-    "optionA": "Continue to the bottom of the hill",
+    "optionA": "Stop at the bottom of the hill to cool them",
     "optionB": "Speed up to cool them with air flow",
     "optionC": "Pour water on them immediately",
     "optionD": "Stop and let them cool before continuing",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Hot brake smell indicates dangerous brake fade; stopping and allowing cooling prevents brake failure and potential accidents."
+    "explanation": "Hot brake smell indicates dangerous brake fade; stopping and allowing cooling prevents brake failure and potential accidents. Waiting until the bottom of the hill risks brake fade and a runaway on the way down."
   },
   {
     "questionId": "CDL-GK-431",
@@ -6461,11 +6461,11 @@
     "question": "What indicates a potential road surface hazard that requires immediate attention?",
     "optionA": "Wet pavement reflections from recent light rainfall",
     "optionB": "Sudden change in pavement color or texture",
-    "optionC": "Recently painted lane markings that are still bright",
+    "optionC": "A sudden patch of sunlight on dry pavement",
     "optionD": "Clean, dry asphalt with no visible defects",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Changes in pavement appearance often indicate oil spills, ice, loose gravel, or other hazardous surface conditions."
+    "explanation": "Changes in pavement appearance often indicate oil spills, ice, loose gravel, or other hazardous surface conditions. Sunlight on dry pavement does not change traction; a change in the surface itself does."
   },
   {
     "questionId": "CDL-GK-463",
@@ -6473,13 +6473,13 @@
     "state": "ALL",
     "category": "hazardPerception",
     "question": "You see a vehicle stopped on the shoulder ahead with hazard lights flashing. What is your safest response?",
-    "optionA": "Maintain speed in your lane",
+    "optionA": "Slow down only after you have passed it",
     "optionB": "Flash your lights to acknowledge",
     "optionC": "Move over or slow down significantly",
     "optionD": "Speed up to pass the stopped vehicle quickly",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Move Over laws require drivers to change lanes or reduce speed when approaching stopped emergency or disabled vehicles."
+    "explanation": "Move Over laws require drivers to change lanes or reduce speed when approaching stopped emergency or disabled vehicles. Slowing down after you pass does nothing to protect the people at the stopped vehicle."
   },
   {
     "questionId": "CDL-GK-464",
@@ -6573,11 +6573,11 @@
     "question": "When cresting a hill with limited visibility, what should be your primary concern?",
     "optionA": "Maintaining safe speed for unknown conditions",
     "optionB": "Checking mirrors frequently for vehicles behind you",
-    "optionC": "Using high beam headlights",
+    "optionC": "Keeping a safe speed for the traffic behind you",
     "optionD": "Accelerating to clear the crest before traffic appears",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "You must be able to stop within your sight distance, as there may be hazards beyond the hill crest that you cannot yet see."
+    "explanation": "You must be able to stop within your sight distance, as there may be hazards beyond the hill crest that you cannot yet see. Your speed over a hill should suit what may be ahead, not the traffic behind you."
   },
   {
     "questionId": "CDL-GK-471",
@@ -6587,11 +6587,11 @@
     "question": "A vehicle in oncoming traffic appears to be drifting into your lane. What should you do first?",
     "optionA": "Flash your headlights",
     "optionB": "Sound your horn loudly",
-    "optionC": "Accelerate past the hazard",
+    "optionC": "Slow down and move left toward the center line",
     "optionD": "Move right and slow down",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Your first priority is creating space and reducing impact severity by moving away from the threat and reducing speed."
+    "explanation": "Your first priority is creating space and reducing impact severity by moving away from the threat and reducing speed. Moving left toward the center line takes you toward the drifting vehicle; steer right instead."
   },
   {
     "questionId": "CDL-GK-472",
@@ -6627,13 +6627,13 @@
     "state": "ALL",
     "category": "hazardPerception",
     "question": "When you see emergency vehicle lights approaching from behind, what is your legal obligation?",
-    "optionA": "Continue at current speed",
+    "optionA": "Pull over safely once they have passed you",
     "optionB": "Speed up to clear their path",
     "optionC": "Pull over and stop safely",
     "optionD": "Flash hazard lights",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Federal and state laws require all vehicles to yield right-of-way by pulling over and stopping for emergency vehicles with activated lights and sirens."
+    "explanation": "Federal and state laws require all vehicles to yield right-of-way by pulling over and stopping for emergency vehicles with activated lights and sirens. Pulling over only after they pass is too late; you must yield as they approach."
   },
   {
     "questionId": "CDL-GK-475",
@@ -6782,12 +6782,12 @@
     "category": "hazardPerception",
     "question": "What scanning technique helps identify hazards at railroad crossings?",
     "optionA": "Look and listen before crossing",
-    "optionB": "Only check for crossing signals",
+    "optionB": "Look for crossing signals and nothing else",
     "optionC": "Rely on other traffic",
     "optionD": "Speed up to cross quickly",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Railroad crossings require active looking both directions and listening for trains, as signals may malfunction or trains may not activate them in time."
+    "explanation": "Railroad crossings require active looking both directions and listening for trains, as signals may malfunction or trains may not activate them in time. Signals can fail, so you must also look and listen for trains."
   },
   {
     "questionId": "CDL-GK-486",
@@ -6964,12 +6964,12 @@
     "category": "hazardPerception",
     "question": "What should you do when you notice ice forming on your mirrors or windshield while driving?",
     "optionA": "Continue driving normally and ignore the ice formation",
-    "optionB": "Speed up to generate heat and melt ice",
+    "optionB": "Stop at a safe place only if the ice gets worse",
     "optionC": "Use windshield washer fluid to remove the ice",
     "optionD": "Find safe place to stop and address the problem",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Ice formation indicates dangerous road conditions that require immediate attention to prevent loss of visibility or vehicle control."
+    "explanation": "Ice formation indicates dangerous road conditions that require immediate attention to prevent loss of visibility or vehicle control. Waiting for the ice to get worse leaves you driving with poor visibility in the meantime."
   },
   {
     "questionId": "CDL-GK-499",
@@ -7106,10 +7106,10 @@
     "optionA": "They work more efficiently due to liquid pressure",
     "optionB": "Nothing changes in the brake system operation",
     "optionC": "Water can freeze and cause brake failure",
-    "optionD": "The air compressor works harder but brakes improve",
+    "optionD": "Water can cause the brakes to grip harder",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Water in air brake systems can freeze in cold weather, blocking air lines and preventing proper brake operation, potentially causing complete brake failure."
+    "explanation": "Water in air brake systems can freeze in cold weather, blocking air lines and preventing proper brake operation, potentially causing complete brake failure. Water in the air system never makes the brakes grip harder."
   },
   {
     "questionId": "CDL-GK-509",
@@ -7426,12 +7426,12 @@
     "category": "brakingSystems",
     "question": "What should you check about brake hoses during inspection?",
     "optionA": "Look for cracks, bulges, and proper connections",
-    "optionB": "Only check the color and manufacturing date stamps",
+    "optionB": "Look only at the color and date stamps",
     "optionC": "Measure the length and diameter specifications carefully",
     "optionD": "Count the number of hoses and their routing paths",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Brake hoses should be inspected for cracks, bulges, leaks, and secure connections, as damaged hoses can cause sudden brake failure."
+    "explanation": "Brake hoses should be inspected for cracks, bulges, leaks, and secure connections, as damaged hoses can cause sudden brake failure. Color and date stamps say nothing about cracks, bulges or loose connections."
   },
   {
     "questionId": "CDL-GK-532",
@@ -7440,12 +7440,12 @@
     "category": "brakingSystems",
     "question": "Why should you avoid riding the brakes?",
     "optionA": "It causes overheating and reduces effectiveness",
-    "optionB": "It keeps the brake linings warm and ready to grip",
+    "optionB": "It keeps the linings warm and more effective",
     "optionC": "It's the proper driving technique",
     "optionD": "It saves wear on the brake drums and linings",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Riding the brakes creates continuous heat buildup that can cause brake fade, reduced effectiveness, and premature wear of brake components."
+    "explanation": "Riding the brakes creates continuous heat buildup that can cause brake fade, reduced effectiveness, and premature wear of brake components. Warm linings from riding the brakes grip worse, not better."
   },
   {
     "questionId": "CDL-GK-533",
@@ -7621,13 +7621,13 @@
     "state": "ALL",
     "category": "brakingSystems",
     "question": "What should you do if spring brakes don't release when air pressure builds?",
-    "optionA": "Continue driving slowly",
+    "optionA": "Drive slowly to a shop to get them repaired",
     "optionB": "Force them off manually",
     "optionC": "Ignore the problem",
     "optionD": "Don't drive until repaired",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Spring brakes that don't release indicate a serious safety problem that must be repaired before operating the vehicle."
+    "explanation": "Spring brakes that don't release indicate a serious safety problem that must be repaired before operating the vehicle. Even driving slowly to a shop with dragging spring brakes is unsafe; have it fixed where the truck is."
   },
   {
     "questionId": "CDL-GK-546",
@@ -7664,12 +7664,12 @@
     "category": "brakingSystems",
     "question": "What happens if brake drums become overheated?",
     "optionA": "They expand and brakes become less effective",
-    "optionB": "They shrink and create better contact with brake shoes",
+    "optionB": "They shrink and become more effective",
     "optionC": "Nothing changes in the braking system performance",
     "optionD": "They become more durable and last much longer",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Overheated brake drums expand, creating more clearance between shoes and drums, reducing braking effectiveness and potentially causing brake fade."
+    "explanation": "Overheated brake drums expand, creating more clearance between shoes and drums, reducing braking effectiveness and potentially causing brake fade. Heat makes drums expand, never shrink."
   },
   {
     "questionId": "CDL-GK-549",
@@ -7705,13 +7705,13 @@
     "state": "ALL",
     "category": "vehicleSystems",
     "question": "What should you do if your engine temperature gauge shows the engine is overheating?",
-    "optionA": "Continue driving but reduce speed to avoid further damage",
+    "optionA": "Keep driving safely to the next service area",
     "optionB": "Stop driving as soon as safely possible and shut off the engine",
     "optionC": "Turn the heater on full and keep driving to help cool the engine",
     "optionD": "Remove the radiator cap at once and add cold water",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An overheating engine can cause severe damage and should be shut off immediately when it's safe to stop."
+    "explanation": "An overheating engine can cause severe damage and should be shut off immediately when it's safe to stop. Driving on to a service area with an overheating engine can cause serious damage."
   },
   {
     "questionId": "CDL-GK-552",
@@ -8084,12 +8084,12 @@
     "category": "vehicleSystems",
     "question": "What is the proper way to inspect the fifth wheel for wear?",
     "optionA": "Look for worn areas, cracks, and ensure proper lubrication",
-    "optionB": "Check only the electrical connections and wiring harness integrity",
+    "optionB": "Look at the electrical connections and wiring alone",
     "optionC": "Measure the height from the ground using proper tools",
     "optionD": "Test the air connections only and verify proper sealing",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Fifth wheel wear points, cracks, and lubrication are critical for safe coupling and must be regularly inspected."
+    "explanation": "Fifth wheel wear points, cracks, and lubrication are critical for safe coupling and must be regularly inspected. Electrical connections are not part of fifth wheel wear."
   },
   {
     "questionId": "CDL-GK-579",
@@ -8365,11 +8365,11 @@
     "question": "What should you do if you suspect exhaust system problems?",
     "optionA": "Continue driving but crack windows for ventilation",
     "optionB": "Have the system inspected and repaired immediately",
-    "optionC": "Drive only during daylight hours",
+    "optionC": "Have it repaired once the smell gets worse",
     "optionD": "Add exhaust system sealer",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Exhaust leaks can allow dangerous carbon monoxide into the cab and indicate other serious problems requiring immediate attention."
+    "explanation": "Exhaust leaks can allow dangerous carbon monoxide into the cab and indicate other serious problems requiring immediate attention. Waiting for the smell to get worse means breathing exhaust fumes in the meantime."
   },
   {
     "questionId": "CDL-GK-599",

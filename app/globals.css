@@ -1465,6 +1465,19 @@
     --brand-border-light: 159 40% 88%;
     --brand-gradient-to: 174 60% 94%;
   }
+  /* HSPT theme: muted olive (v2 exam; matches lib/v2/exams/hspt.ts theme). 84 55% 38% failed white-text contrast (3.5:1). */
+  [data-theme="hspt"] {
+    --brand: 84 25% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 84 30% 95%;
+    --brand-hover: 84 25% 33%;
+    --brand-dark: 84 25% 29%;
+    --brand-darker: 84 25% 20%;
+    --brand-muted: 84 20% 70%;
+    --brand-border: 84 20% 78%;
+    --brand-border-light: 84 20% 88%;
+    --brand-gradient-to: 99 25% 94%;
+  }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
     --brand: 256 90% 37%;
@@ -6224,6 +6237,17 @@
     --brand-muted: 159 40% 45%;
     --brand-dark: 159 95% 65%;
     --brand-darker: 159 90% 78%;
+  }
+  .dark [data-theme="hspt"] {
+    --brand: 84 25% 38.8%;
+    --brand-hover: 84 25% 33%;
+    --brand-light: 84 30% 13%;
+    --brand-gradient-to: 99 25% 11%;
+    --brand-border-light: 84 20% 24%;
+    --brand-border: 84 20% 34%;
+    --brand-muted: 84 20% 45%;
+    --brand-dark: 84 25% 65%;
+    --brand-darker: 84 25% 78%;
   }
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;

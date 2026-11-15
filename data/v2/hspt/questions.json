@@ -1980,7 +1980,7 @@
       "domain": "hsptLangComp",
       "skill": "Topic sentences",
       "difficulty": 2,
-      "passage": "______. Aluminum cans can be melted down and made into new cans. Old newspapers can be turned into fresh paper, which saves trees. Plastic bottles can even become fleece jackets.",
+      "passage": "___ Aluminum cans can be melted down and made into new cans. Old newspapers can be turned into fresh paper, which saves trees. Plastic bottles can even become fleece jackets.",
       "format": "single",
       "stem": "Which sentence would be the best topic sentence for this paragraph?",
       "options": [
@@ -4723,7 +4723,7 @@
       "skill": "Non-geometric comparison",
       "difficulty": 2,
       "format": "single",
-      "stem": "Compare (I) the square root of 49, (II) the square root of 64 minus 1 and (III) 2 × 4. Which is true?",
+      "stem": "Compare (I) the square root of 49, (II) 1 less than the square root of 64 and (III) 2 × 4. Which is true?",
       "options": [
         "I = II > III",
         "I > II > III",
@@ -4733,7 +4733,7 @@
       "correct": [
         2
       ],
-      "explanation": "The square root of 49 is 7, the square root of 64 is 8 and 8 - 1 = 7, and 2 × 4 = 8. So III is greatest and I equals II."
+      "explanation": "The square root of 49 is 7, the square root of 64 is 8, so 1 less is 7, and 2 × 4 = 8. So III is greatest and I equals II."
     },
     {
       "id": "HSPT-D-020",

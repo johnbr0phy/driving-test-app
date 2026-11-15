@@ -73,6 +73,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   hiset: { title: "HiSET Practice Test", description: "Practice all five HiSET subtests, Reading, Writing, Math, Science and Social Studies, at the real pace, with an estimated score for each." },
   ged: { title: "GED Practice Tests", description: "Build skills in language arts, math, science and social studies with tests and topic drills." },
   mapgrowth: { title: "MAP Growth Practice Test", description: "Practice math, reading and language usage for the MAP Growth test in grades 2 to 5." },
+  hspt: { title: "HSPT Practice Test", description: "Practice the five HSPT subtests for Catholic and private high school admission." },
   sat: { title: "Digital SAT Practice Tests", description: "Build reading, writing and math skills with timed practice tests and focused topic drills." },
   act: { title: "ACT Practice Tests", description: "Review English, math, reading and science with timed tests, passages and skill drills." },
   teas: { title: "ATI TEAS Nursing Entrance Exam", description: "Build reading, math, science and English skills for nursing and allied health admissions." },

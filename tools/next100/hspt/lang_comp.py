@@ -19,7 +19,7 @@ ITEMS = [
        expl="The paragraph is about sea otters. Sentence 3 is about people at the beach, so it does not belong."),
   dict(test=1, skill="Topic sentences", diff=2,
        stem="Which sentence would be the best topic sentence for this paragraph?",
-       passage="______. Aluminum cans can be melted down and made into new cans. Old newspapers can be turned into fresh paper, which saves trees. Plastic bottles can even become fleece jackets.",
+       passage="___ Aluminum cans can be melted down and made into new cans. Old newspapers can be turned into fresh paper, which saves trees. Plastic bottles can even become fleece jackets.",
        key="Recycling turns old things into new ones.", wrong=["Aluminum is a very light metal to use.", "Fleece jackets keep people warm in winter.", "Trees grow slowly in cold places."],
        expl="Every detail shows something old being made into something new, so a sentence about recycling covers them all. The other sentences each fit only one detail, or none."),
   dict(test=1, skill="Combining sentences", diff=2,

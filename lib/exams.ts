@@ -5953,7 +5953,7 @@ const mblex: ExamConfig = {
   questionsPerTest: 50,
   passPct: 70,
   // FSMTB MBLEx Content Outline ((c) FSMTB 2023, read 2026-11-14 with the Candidate Handbook
-  // effective September 17, 2026): Anatomy & Physiology 11%, Kinesiology 12%, Pathology,
+  // effective August 2026): Anatomy & Physiology 11%, Kinesiology 12%, Pathology,
   // Contraindications, Areas of Caution, Special Populations 14%, Benefits and Effects of Soft
   // Tissue Manipulation 15%, Client Assessment, Reassessment & Treatment Planning 17%, Ethics,
   // Boundaries, Laws, Regulations 16%, Guidelines for Professional Practice 15%. The real exam is

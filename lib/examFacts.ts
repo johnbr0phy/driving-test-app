@@ -5230,7 +5230,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   mblex: {
     answer:
-      "The MBLEx (Massage & Bodywork Licensing Examination) is the Federation of State Massage Therapy Boards' entry-level licensing exam, used by most US states that regulate massage therapy. It is 100 multiple-choice questions in 110 minutes at a Pearson VUE center, a fixed-length computer-adaptive test answered in order, and results are reported only as pass or fail on a criterion-referenced standard. Passing it is not a license: the state board or agency issues the license, and state requirements vary.",
+      "The MBLEx (Massage & Bodywork Licensing Examination) is the Federation of State Massage Therapy Boards' entry-level licensing exam for massage therapists; state boards and agencies decide which licensing exam they require. It is 100 multiple-choice questions in 110 minutes at a Pearson VUE center, a fixed-length computer-adaptive test answered in order, and results are reported only as pass or fail on a criterion-referenced standard. Passing it is not a license: the state board or agency issues the license, and state requirements vary.",
     rows: [
       { label: "Questions", value: "100 multiple choice" },
       { label: "Time", value: "110 minutes (2-hour appointment)" },
@@ -5239,7 +5239,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Largest area", value: "Client Assessment, Reassessment & Treatment Planning, 17%" },
       { label: "Languages", value: "English and Spanish" },
     ],
-    basedOn: "FSMTB MBLEx Content Outline and the MBLEx Candidate Handbook effective September 17, 2026, checked November 2026",
+    basedOn: "FSMTB MBLEx Content Outline and the MBLEx Candidate Handbook effective August 2026, checked November 2026",
     source: { name: "FSMTB: MBLEx", url: "https://www.fsmtb.org/mblex/" },
   },
   llqp: {

@@ -18,7 +18,7 @@ const title = "Free MBLEx Practice Test 2026 - Massage & Bodywork Licensing Exam
 const metaDescription =
   "MBLEx practice, free to start: 200 original questions on the FSMTB content outline, four 50-question practice tests weighted like the real exam, every answer explained.";
 const description =
-  "Practice for the FSMTB Massage & Bodywork Licensing Examination (MBLEx), the exam most US states use to license massage therapists, free to start: 200 original questions written from the FSMTB MBLEx Content Outline. Four 50-question practice tests weighted like the real exam, and four training sets covering anatomy, physiology and kinesiology; pathology, contraindications and the benefits and effects of massage; client assessment and treatment planning; and ethics, laws and professional practice.";
+  "Practice for the FSMTB Massage & Bodywork Licensing Examination (MBLEx), the FSMTB's entry-level massage therapy licensing exam, free to start: 200 original questions written from the FSMTB MBLEx Content Outline. Four 50-question practice tests weighted like the real exam, and four training sets covering anatomy, physiology and kinesiology; pathology, contraindications and the benefits and effects of massage; client assessment and treatment planning; and ethics, laws and professional practice.";
 
 export const metadata: Metadata = {
   title,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the MBLEx?",
-    a: "The Massage & Bodywork Licensing Examination (MBLEx) is the entry-level licensing exam of the Federation of State Massage Therapy Boards (FSMTB). Most US states and territories that regulate massage therapy use it. Passing it is not a license: you then apply to your state board or agency and meet its own requirements, which vary widely between states.",
+    a: "The Massage & Bodywork Licensing Examination (MBLEx) is the entry-level licensing exam of the Federation of State Massage Therapy Boards (FSMTB). Most US states and territories regulate massage therapy, and state boards and agencies set the licensing exam they require, so check that yours accepts the MBLEx. Passing it is not a license: you then apply to your state board or agency and meet its own requirements, which vary widely between states.",
   },
   {
     q: "How many questions are on the MBLEx and how long do you get?",

@@ -186,14 +186,14 @@
     "state": "ALL",
     "questionId": "MBLEX-AP-014",
     "category": "mblexAnatomy",
-    "question": "Which group lists the classic signs of acute inflammation?",
-    "optionA": "Pallor, cold, numbness, itch",
-    "optionB": "Redness, heat, swelling, pain",
-    "optionC": "Bruising, cramps, fever, rash",
-    "optionD": "Stiffness, tingling, cold, pallor",
+    "question": "Which white blood cells are usually the first to arrive at a site of acute inflammation?",
+    "optionA": "B lymphocytes",
+    "optionB": "Neutrophils",
+    "optionC": "Eosinophils",
+    "optionD": "Plasma cells",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Acute inflammation shows redness, heat, swelling and pain, often with loss of function, as blood flow and fluid to the area rise."
+    "explanation": "Neutrophils arrive within hours and engulf bacteria and debris; monocytes, which become macrophages, follow and clean up later in the inflammatory phase."
   },
   {
     "type": "MBLEX",
@@ -1026,28 +1026,28 @@
     "state": "ALL",
     "questionId": "MBLEX-PATH-026",
     "category": "mblexPathology",
-    "question": "A client in chemotherapy has a low platelet count. What change is needed?",
-    "optionA": "Deep cross-fiber friction",
-    "optionB": "Very light pressure",
-    "optionC": "Vigorous percussion strokes",
-    "optionD": "Strong joint mobilization",
+    "question": "A client in chemotherapy has an implanted port in the upper chest. What should the therapist do?",
+    "optionA": "Massage firmly around the port",
+    "optionB": "Avoid pressure over the port",
+    "optionC": "Apply heat over the port",
+    "optionD": "Ask the client to remove it",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Low platelets mean the blood clots poorly, so deep or percussive work can cause bruising and bleeding."
+    "explanation": "An implanted port or IV line is an area of caution: pressure or friction over it can irritate the site or dislodge the device, so the therapist works around it."
   },
   {
     "type": "MBLEX",
     "state": "ALL",
     "questionId": "MBLEX-PATH-027",
     "category": "mblexPathology",
-    "question": "Which clients most need a careful temperature check before hot or cold packs?",
-    "optionA": "Clients with allergies",
-    "optionB": "Clients with back tension",
-    "optionC": "Clients with neuropathy",
-    "optionD": "Clients with headaches",
+    "question": "A client has Raynaud's phenomenon in the hands. Which application should be avoided there?",
+    "optionA": "Gentle effleurage to the forearms",
+    "optionB": "A warm towel over the hands",
+    "optionC": "Cold packs on the fingers",
+    "optionD": "Light kneading of the palms",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Peripheral neuropathy reduces sensation, so the client may not feel a burn or cold injury in time to report it."
+    "explanation": "In Raynaud's, cold triggers spasm of the small arteries in the fingers and toes, so cold applications on the hands are avoided; gentle warmth is usually welcome."
   },
   {
     "type": "MBLEX",
@@ -1868,12 +1868,12 @@
     "category": "mblexAssessment",
     "question": "Which finding is objective data?",
     "optionA": "Pain rated 6 of 10 by the client",
-    "optionB": "Forty degrees of neck rotation",
+    "optionB": "Left upper trapezius hypertonic on palpation",
     "optionC": "Client feels stressed at work",
     "optionD": "Client says sleep is poor",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A measured range of motion is objective. A pain rating, stress and sleep quality are reported by the client, so they are subjective."
+    "explanation": "What the therapist feels on palpation is objective. A pain rating, stress and sleep quality are reported by the client, so they are subjective."
   },
   {
     "type": "MBLEX",
@@ -2051,11 +2051,11 @@
     "question": "Which counts as sexual misconduct, even if the client seems to welcome it?",
     "optionA": "Giving a home-care stretch",
     "optionB": "Asking for client feedback",
-    "optionC": "Dating a current client",
+    "optionC": "Sexual comments about the client's body",
     "optionD": "Ending at the agreed time",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Any sexual or romantic relationship with a client is misconduct; the client's apparent consent does not change the therapist's duty."
+    "explanation": "Sexual remarks, jokes or touch during a session are misconduct; the client's apparent welcome does not change the therapist's duty."
   },
   {
     "type": "MBLEX",
@@ -2209,7 +2209,7 @@
     "optionD": "Repeat their school courses",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A license is valid only in the state that issued it, so the therapist must meet the new state's requirements first."
+    "explanation": "A massage license is issued by one state, so the therapist must meet the new state's requirements (or any interstate compact rules that state has adopted) before practicing there."
   },
   {
     "type": "MBLEX",
@@ -2384,14 +2384,14 @@
     "state": "ALL",
     "questionId": "MBLEX-ETH-031",
     "category": "mblexEthics",
-    "question": "Which is a sign of a healthy therapeutic relationship?",
-    "optionA": "Texting the client late at night",
-    "optionB": "Daily chats on social media",
-    "optionC": "Clear, agreed limits on contact",
-    "optionD": "Sessions at the client's party",
+    "question": "A client often asks to run past the booked hour. What keeps a healthy time boundary?",
+    "optionA": "Add the extra time for free",
+    "optionB": "Cut the next client's session",
+    "optionC": "End at the scheduled time",
+    "optionD": "Let the client choose the end",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Healthy relationships have clear professional limits on time, place and contact that both sides understand."
+    "explanation": "Starting and ending on time is a professional time boundary; extra time is offered only by agreement and on the same terms as any session."
   },
   {
     "type": "MBLEX",

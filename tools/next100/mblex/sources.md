@@ -29,7 +29,7 @@ below, in Tigertest's own words.
 
 ## Format (landing, FAQ, examFacts only; never in the bank)
 
-- FSMTB, MBLEx Candidate Handbook, "Effective September 17, 2026", fetched 2026-11-14:
+- FSMTB, MBLEx Candidate Handbook, "Effective August 2026" (2026 edition, PDF dated by its URL folder 2026/09), fetched 2026-11-14 and re-read 2026-11-15:
   https://fsmtb.org/wp-content/uploads/2026/09/MBLEx-Candidate-Handbook-2026.pdf
   100 multiple-choice questions in 110 minutes (2-hour appointment with a 5-minute security
   agreement and a 5-minute survey); fixed-length computer-adaptive test, questions answered in

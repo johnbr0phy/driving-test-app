@@ -32,6 +32,7 @@ import '@/lib/v2/banks/teas';
 import '@/lib/v2/banks/timestables';
 import '@/lib/v2/banks/vicsel';
 import '@/lib/v2/banks/mapgrowth';
+import '@/lib/v2/banks/ssat';
 
 // How far students get through the v2 exams that have Basics (every bank
 // imported above: an exam with Basics and no import here breaks the card), for the "Basics" card on the /admin Growth

@@ -19,6 +19,8 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 const TEACHER_LED = new Set([
   // US: FCS teacher preparation and FCS programs (AAFCS HNFS)
   "aafcs",
+  // US: emergency nursing CEN review courses
+  "cen",
   // Spain: academias de oposiciones and accredited security training centres
   "espolicia", "esguardia", "esvigilante",
   // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen

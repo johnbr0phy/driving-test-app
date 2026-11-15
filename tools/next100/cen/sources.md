@@ -18,8 +18,6 @@ manuals, question books or any prep site.
   evidence, federal regulations, consent, continuity of care, cultural humility, abuse and neglect,
   impaired nurse and drug diversion, workplace violence). Every subtopic listed there was used to
   plan its category.
-- The older outline (effective January 2022, eight areas, used by some guides) is superseded:
-  https://bcen.org/wp-content/uploads/2026/02/CEN-Content-Outline-Effective-01-2022.pdf
 
 ## Format (BCEN)
 
@@ -30,6 +28,11 @@ manuals, question books or any prep site.
   "candidates must answer 99 of the 150 scored items correctly to achieve a passing score"
   (raw count, not curved); delivered by computer at PSI test centers or at home by live remote
   proctoring; 90-day testing window; after a failed attempt, 90 days before retesting.
+
+## Superseded outline
+
+- The older outline (effective January 2022, eight areas, used by some guides) is superseded:
+  https://bcen.org/wp-content/uploads/2026/02/CEN-Content-Outline-Effective-01-2022.pdf
 
 ## Law and clinical guidance
 

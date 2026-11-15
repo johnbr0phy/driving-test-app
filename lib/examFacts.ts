@@ -4930,6 +4930,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The AAMA Content Outline for the CMA (AAMA) Certification Exam (Rev 1/26) and the AAMA certification FAQ, checked November 2026",
     source: { name: "AAMA: CMA (AAMA) Certification", url: "https://www.aama-ntl.org/certification" },
   },
+  cen: {
+    answer:
+      "The Certified Emergency Nurse (CEN) exam is the Board of Certification for Emergency Nursing's (BCEN) exam for registered nurses in emergency care. It has 175 multiple-choice items, 150 scored and 25 unscored pretest items, with 180 minutes of seat time, taken by computer at a PSI test center or at home by live remote proctoring. Under the content outline in effect from July 2026 the 150 scored items cover eleven areas, led by cardiovascular (18), respiratory (17) and neurological (17) emergencies. A pass needs 99 of the 150 scored items right, a raw count with no curve. After a failed attempt you wait 90 days to retest, and the CEN is renewed every four years.",
+    rows: [
+      { label: "Questions", value: "175 multiple choice (150 scored, 25 pretest)" },
+      { label: "Time", value: "180 minutes of seat time" },
+      { label: "Pass mark", value: "99 of 150 scored items (66%)" },
+      { label: "Content", value: "11 areas: cardiovascular 18, respiratory 17, neurological 17, medical 15, GI 14, mental health 13, environment and toxicology 13, professional issues 12, musculoskeletal and wound 11, GU/OB 10, HEENT 10" },
+      { label: "Where", value: "PSI test center or live remote proctoring" },
+      { label: "Retake", value: "Wait 90 days after a failed attempt" },
+      { label: "Renewal", value: "Every four years" },
+      { label: "Run by", value: "Board of Certification for Emergency Nursing (BCEN)" },
+    ],
+    basedOn: "The BCEN CEN Examination Content Outline effective July 2026 and the BCEN CEN exam FAQ, checked November 2026",
+    source: { name: "BCEN: Certified Emergency Nurse (CEN)", url: "https://bcen.org/cen/" },
+  },
+
   nhie: {
     answer:
       "The National Home Inspector Examination (NHIE) is the home inspector competency exam written by the Examination Board of Professional Home Inspectors (EBPHI) and used for licensing in 35 states and several Canadian provinces. It has 200 multiple-choice questions, 25 of them unscored pretest items, in four hours. Scores are scaled from 200 to 800 and 500 passes. It covers property and building inspection (70%), analysis of findings and reporting (20%) and professional responsibilities (10%), and is delivered by PSI in most states and Pearson VUE in a few.",

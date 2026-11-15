@@ -19,6 +19,8 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 const TEACHER_LED = new Set([
   // US: FCS teacher preparation and FCS programs (AAFCS HNFS)
   "aafcs",
+  // US: automotive technology programs (ASE A1-A8)
+  "ase",
   // Spain: academias de oposiciones and accredited security training centres
   "espolicia", "esguardia", "esvigilante",
   // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen

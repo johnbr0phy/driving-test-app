@@ -116,6 +116,7 @@ export const TEACHES: Record<string, string> = {
   arrt: "a radiography program",
   nce: "a counselor education course or supervise counselors preparing for licensure",
   jelec: "an electrical apprenticeship or NEC code class",
+  ase: "an automotive technology program or ASE prep class",
   barber: "at a barber school",
   ffi: "a fire academy",
   police: "a criminal justice or police exam prep course",

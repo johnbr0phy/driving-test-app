@@ -145,6 +145,8 @@ const BORROWED_SETS: Record<string, string> = {
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",
+  // ASE A1-A8 (US automobile technicians) borrows the Red Seal automotive mechanic tiger (no flag).
+  ase: "caauto",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
   // licence, security guard and NCLEX families.
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",

@@ -128,7 +128,7 @@ export default function CfaLevel1LandingPage() {
           <ExamLandingHero
             dashboardHref="/cfa-level-1/dashboard"
             shortName="CFA Level I"
-            subtitle="200 original questions across all ten Level I topics, from ethics and quant to fixed income, derivatives and portfolio construction. Four 50-question tests weighted like the 2027 outline, every calculation explained. Tuned for mobile. No account needed."
+            subtitle="200 original questions across all ten Level I topics, from ethics and quant to fixed income, derivatives and portfolio construction. Four 50-question tests weighted like the 2027 outline, every calculation explained. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cfal1-mobile.png", desktop: "/landing/cfal1-desktop.png" }}
           />
         </div>

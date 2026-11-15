@@ -127,7 +127,7 @@ export default function AwsSaaLandingPage() {
           <ExamLandingHero
             dashboardHref="/aws-solutions-architect/dashboard"
             shortName="AWS SAA"
-            subtitle="200 scenario questions weighted to the SAA-C03 exam guide. Tuned for mobile. No account needed."
+            subtitle="200 scenario questions weighted to the SAA-C03 exam guide. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/awssaa-mobile.png", desktop: "/landing/awssaa-desktop.png" }}
           />
         </div>

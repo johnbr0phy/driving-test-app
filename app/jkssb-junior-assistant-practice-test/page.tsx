@@ -127,7 +127,7 @@ export default function JkssbJuniorAssistantLandingPage() {
           <ExamLandingHero
             dashboardHref="/jkssb-junior-assistant/dashboard"
             shortName="JKSSB JA"
-            subtitle="200 original questions on English, GA with J&K, reasoning and computers. Tuned for mobile. No account needed."
+            subtitle="200 original questions on English, GA with J&K, reasoning and computers. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/jkssbja-mobile.png", desktop: "/landing/jkssbja-desktop.png" }}
           />
         </div>

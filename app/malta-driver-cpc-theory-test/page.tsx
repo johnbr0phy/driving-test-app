@@ -130,7 +130,7 @@ export default function MaltaDriverCpcLandingPage() {
           <ExamLandingHero
             dashboardHref="/malta-driver-cpc/dashboard"
             shortName="Driver CPC (Malta)"
-            subtitle="200 original questions for the Driver CPC initial qualification theory test, for bus, coach and truck drivers in Malta: drivers' hours, tachographs, brakes, loads, passengers and safety. Four 50-question tests, 60% to pass. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the Driver CPC initial qualification theory test, for bus, coach and truck drivers in Malta: drivers' hours, tachographs, brakes, loads, passengers and safety. Four 50-question tests, 60% to pass. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/mtcpc-mobile.png", desktop: "/landing/mtcpc-desktop.png" }}
           />
         </div>

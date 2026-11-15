@@ -129,7 +129,7 @@ export default function GcdlLandingPage() {
           <ExamLandingHero
             dashboardHref="/google-cloud-digital-leader/dashboard"
             shortName="Google CDL"
-            subtitle="200 questions weighted to the 2026 Cloud Digital Leader exam guide. Tuned for mobile. No account needed."
+            subtitle="200 questions weighted to the 2026 Cloud Digital Leader exam guide. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/gcdl-mobile.png", desktop: "/landing/gcdl-desktop.png" }}
           />
         </div>

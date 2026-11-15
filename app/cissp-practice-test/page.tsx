@@ -131,7 +131,7 @@ export default function CisspLandingPage() {
           <ExamLandingHero
             dashboardHref="/cissp/dashboard"
             shortName="CISSP"
-            subtitle="224 manager-level questions weighted to the eight ISC2 domains. Tuned for mobile. No account needed."
+            subtitle="224 manager-level questions weighted to the eight ISC2 domains. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cissp-mobile.png", desktop: "/landing/cissp-desktop.png" }}
           />
         </div>

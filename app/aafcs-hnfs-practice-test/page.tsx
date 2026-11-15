@@ -126,7 +126,7 @@ export default function AafcsHnfsLandingPage() {
           <ExamLandingHero
             dashboardHref="/aafcs-hnfs/dashboard"
             shortName="AAFCS HNFS"
-            subtitle="200 original questions on the AAFCS Hospitality, Nutrition, and Food Science exam: the FCS profession and careers, nutrients and the Dietary Guidelines, food science, the FDA Food Code, and kitchen and hotel operations. Four 50-question practice tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the AAFCS Hospitality, Nutrition, and Food Science exam: the FCS profession and careers, nutrients and the Dietary Guidelines, food science, the FDA Food Code, and kitchen and hotel operations. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aafcs-mobile.png", desktop: "/landing/aafcs-desktop.png" }}
           />
         </div>

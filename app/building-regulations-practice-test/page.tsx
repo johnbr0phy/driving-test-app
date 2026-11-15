@@ -126,7 +126,7 @@ export default function UkbregsLandingPage() {
           <ExamLandingHero
             dashboardHref="/building-regulations/dashboard"
             shortName="Building Regs"
-            subtitle="200 questions on the Approved Documents A to T for England: foundations, fire escape, sound, ventilation, drainage, stairs, access and Part L. Tuned for mobile. No account needed."
+            subtitle="200 questions on the Approved Documents A to T for England: foundations, fire escape, sound, ventilation, drainage, stairs, access and Part L. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukbregs-mobile.png", desktop: "/landing/ukbregs-desktop.png" }}
           />
         </div>

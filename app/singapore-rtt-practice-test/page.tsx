@@ -125,7 +125,7 @@ export default function SingaporeRttLandingPage() {
           <ExamLandingHero
             dashboardHref="/singapore-rtt/dashboard"
             shortName="RTT"
-            subtitle="200 original questions from the 2026 Riding Theory handbook for a class 2B licence: protective gear, pre-riding checks, clutch, gears and braking, turns and junctions, bends and rain, defensive riding and pillions. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions from the 2026 Riding Theory handbook for a class 2B licence: protective gear, pre-riding checks, clutch, gears and braking, turns and junctions, bends and rain, defensive riding and pillions. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/sgrtt-mobile.png", desktop: "/landing/sgrtt-desktop.png" }}
           />
         </div>

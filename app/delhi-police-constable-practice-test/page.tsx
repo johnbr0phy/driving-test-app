@@ -127,7 +127,7 @@ export default function DelhiPoliceLandingPage() {
           <ExamLandingHero
             dashboardHref="/delhi-police-constable/dashboard"
             shortName="Delhi Police"
-            subtitle="234 original CBE questions on GK, reasoning, maths and computer. Tuned for mobile. No account needed."
+            subtitle="234 original CBE questions on GK, reasoning, maths and computer. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/delhipolice-mobile.png", desktop: "/landing/delhipolice-desktop.png" }}
           />
         </div>

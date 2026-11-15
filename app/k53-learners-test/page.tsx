@@ -121,7 +121,7 @@ export default function K53LearnersLandingPage() {
           <ExamLandingHero
             dashboardHref="/k53-learners/dashboard"
             shortName="K53 learner's"
-            subtitle="200 original questions for the South African Code 2 learner's test: rules of the road, road signs and markings, and vehicle controls. Four 50-question mock tests in the real test's mix. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the South African Code 2 learner's test: rules of the road, road signs and markings, and vehicle controls. Four 50-question mock tests in the real test's mix. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/zak53-mobile.png", desktop: "/landing/zak53-desktop.png" }}
           />
         </div>

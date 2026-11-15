@@ -127,7 +127,7 @@ export default function CivilServiceExamLandingPage() {
           <ExamLandingHero
             dashboardHref="/civil-service-exam/dashboard"
             shortName="Civil Service Exam"
-            subtitle="245 original CSE-PPT questions for the Professional and Subprofessional levels. Tuned for mobile. No account needed."
+            subtitle="245 original CSE-PPT questions for the Professional and Subprofessional levels. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/phcse-mobile.png", desktop: "/landing/phcse-desktop.png" }}
           />
         </div>

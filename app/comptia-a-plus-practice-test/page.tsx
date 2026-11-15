@@ -144,7 +144,7 @@ export default function AplusLandingPage() {
           <ExamLandingHero
             dashboardHref="/comptia-a-plus/dashboard"
             shortName="CompTIA A+"
-            subtitle="200 questions weighted to the 220-1201 and 220-1202 objectives. Tuned for mobile. No account needed."
+            subtitle="200 questions weighted to the 220-1201 and 220-1202 objectives. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aplus-mobile.png", desktop: "/landing/aplus-desktop.png" }}
           />
         </div>

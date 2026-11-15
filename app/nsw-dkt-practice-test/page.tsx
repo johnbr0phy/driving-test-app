@@ -140,7 +140,7 @@ export default function NswDktLandingPage() {
           <ExamLandingHero
             dashboardHref="/nsw-dkt/dashboard"
             shortName="NSW DKT"
-            subtitle="200 questions from the Road User Handbook on L and P plate rules, demerit points, speed limits, BAC, fatigue, mobile phones, giving way, roundabouts, lanes, parking and hazards. Tuned for mobile. No account needed."
+            subtitle="200 questions from the Road User Handbook on L and P plate rules, demerit points, speed limits, BAC, fatigue, mobile phones, giving way, roundabouts, lanes, parking and hazards. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aunsw-mobile.png", desktop: "/landing/aunsw-desktop.png" }}
           />
         </div>

@@ -152,7 +152,7 @@ export default function CosmetologyLandingPage() {
           <ExamLandingHero
             dashboardHref="/cosmetology/dashboard"
             shortName="Cosmetology"
-            subtitle="200 state board theory questions on infection control, anatomy, chemistry, haircutting and styling, perms and relaxers, haircolor, skin and nails. Tuned for mobile. No account needed."
+            subtitle="200 state board theory questions on infection control, anatomy, chemistry, haircutting and styling, perms and relaxers, haircolor, skin and nails. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cosmetology-mobile.png", desktop: "/landing/cosmetology-desktop.png" }}
           />
         </div>

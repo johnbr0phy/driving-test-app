@@ -121,7 +121,7 @@ export default function TxAdjusterLandingPage() {
           <ExamLandingHero
             dashboardHref="/texas-adjuster/dashboard"
             shortName="TX Adjuster"
-            subtitle="200 original questions on the Pearson VUE all-lines adjuster outline: the Standard Fire Policy, homeowners, auto, commercial and marine lines, loss settlement math, contracts and liability, and Texas claims law and workers' comp. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the Pearson VUE all-lines adjuster outline: the Standard Fire Policy, homeowners, auto, commercial and marine lines, loss settlement math, contracts and liability, and Texas claims law and workers' comp. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/txadjuster-mobile.png", desktop: "/landing/txadjuster-desktop.png" }}
           />
         </div>

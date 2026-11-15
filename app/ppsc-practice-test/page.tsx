@@ -127,7 +127,7 @@ export default function PpscLandingPage() {
           <ExamLandingHero
             dashboardHref="/ppsc/dashboard"
             shortName="PPSC test"
-            subtitle="200 original MCQs for the general ability part of Punjab Public Service Commission tests: English, mathematics, reasoning, Pakistan Studies, the 1973 Constitution, geography, Islamiat and computers. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original MCQs for the general ability part of Punjab Public Service Commission tests: English, mathematics, reasoning, Pakistan Studies, the 1973 Constitution, geography, Islamiat and computers. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ppsc-mobile.png", desktop: "/landing/ppsc-desktop.png" }}
           />
         </div>

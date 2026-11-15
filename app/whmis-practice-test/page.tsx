@@ -141,7 +141,7 @@ export default function WhmisLandingPage() {
           <ExamLandingHero
             dashboardHref="/whmis/dashboard"
             shortName="WHMIS"
-            subtitle="200 questions on WHMIS 2015 pictograms, supplier and workplace labels, the 16-section safety data sheet, hazard classes and the 2022 amendments. Tuned for mobile. No account needed."
+            subtitle="200 questions on WHMIS 2015 pictograms, supplier and workplace labels, the 16-section safety data sheet, hazard classes and the 2022 amendments. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cawhmis-mobile.png", desktop: "/landing/cawhmis-desktop.png" }}
           />
         </div>

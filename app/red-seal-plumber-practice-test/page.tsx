@@ -131,7 +131,7 @@ export default function RedSealPlumberLandingPage() {
           <ExamLandingHero
             dashboardHref="/red-seal-plumber/dashboard"
             shortName="Red Seal Plumber"
-            subtitle="200 questions across all seven Major Work Activities, from trap seals, venting and septic systems to backflow, water heaters and hydronic heating, with the real 70% pass mark. Tuned for mobile. No account needed."
+            subtitle="200 questions across all seven Major Work Activities, from trap seals, venting and septic systems to backflow, water heaters and hydronic heating, with the real 70% pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/caplumb-mobile.png", desktop: "/landing/caplumb-desktop.png" }}
           />
         </div>

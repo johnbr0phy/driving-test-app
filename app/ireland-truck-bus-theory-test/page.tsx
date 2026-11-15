@@ -141,7 +141,7 @@ export default function IrelandTruckBusTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/ireland-truck-bus-theory/dashboard"
             shortName="Truck & Bus Theory"
-            subtitle="200 original questions for the category C and D Driver Theory Test: drivers' hours, tachographs, air brakes, loads, passengers and heavy vehicle rules on Irish roads. Four 50-question tests at the real pace, 74% to pass. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the category C and D Driver Theory Test: drivers' hours, tachographs, air brakes, loads, passengers and heavy vehicle rules on Irish roads. Four 50-question tests at the real pace, 74% to pass. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/iedttcv-mobile.png", desktop: "/landing/iedttcv-desktop.png" }}
           />
         </div>

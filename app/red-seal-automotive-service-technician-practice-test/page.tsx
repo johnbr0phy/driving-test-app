@@ -144,7 +144,7 @@ export default function RedSealAutomotiveLandingPage() {
           <ExamLandingHero
             dashboardHref="/red-seal-automotive/dashboard"
             shortName="Red Seal Auto"
-            subtitle="200 questions across all eight Major Work Activities, from engines and CAN networks to brakes, HVAC and hybrid and EV safety, with the real 70% pass mark. Tuned for mobile. No account needed."
+            subtitle="200 questions across all eight Major Work Activities, from engines and CAN networks to brakes, HVAC and hybrid and EV safety, with the real 70% pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/caauto-mobile.png", desktop: "/landing/caauto-desktop.png" }}
           />
         </div>

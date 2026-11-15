@@ -125,7 +125,7 @@ export default function NzMotorcycleLearnerLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-motorcycle-learner/dashboard"
             shortName="Motorcycle learner"
-            subtitle="200 original Class 6 questions for riders: learner and restricted conditions, helmets and gear, giving way, road position, braking and cornering, and road surface hazards. Five 35-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original Class 6 questions for riders: learner and restricted conditions, helmets and gear, giving way, road position, braking and cornering, and road surface hazards. Five 35-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/nzmoto-mobile.png", desktop: "/landing/nzmoto-desktop.png" }}
           />
         </div>

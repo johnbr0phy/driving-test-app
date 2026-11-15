@@ -145,7 +145,7 @@ export default function VtneLandingPage() {
           <ExamLandingHero
             dashboardHref="/vtne/dashboard"
             shortName="VTNE"
-            subtitle="200 questions on animal nursing, pharmacology, surgical nursing, anesthesia, lab work, imaging, dentistry, emergency care, pain management and client communication, in the AAVSB proportions. Tuned for mobile. No account needed."
+            subtitle="200 questions on animal nursing, pharmacology, surgical nursing, anesthesia, lab work, imaging, dentistry, emergency care, pain management and client communication, in the AAVSB proportions. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/vtne-mobile.png", desktop: "/landing/vtne-desktop.png" }}
           />
         </div>

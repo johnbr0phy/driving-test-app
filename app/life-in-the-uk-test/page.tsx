@@ -141,7 +141,7 @@ export default function LifeInTheUkLandingPage() {
           <ExamLandingHero
             dashboardHref="/life-in-the-uk/dashboard"
             shortName="Life in the UK"
-            subtitle="200 questions from the official handbook: British values, history, culture, government and the law. Eight 24-question mock tests with the real pass mark. Tuned for mobile. No account needed."
+            subtitle="200 questions from the official handbook: British values, history, culture, government and the law. Eight 24-question mock tests with the real pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/uklitu-mobile.png", desktop: "/landing/uklitu-desktop.png" }}
           />
         </div>

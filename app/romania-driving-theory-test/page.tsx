@@ -128,7 +128,7 @@ export default function RomaniaDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/romania-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions in English on the Romanian traffic code for the category B theory exam: signs, priority to the right, trams, level crossings, speed limits, overtaking and parking. Seven 26-question mock tests with 22 to pass, like the real one. Tuned for mobile. No account needed."
+            subtitle="200 original questions in English on the Romanian traffic code for the category B theory exam: signs, priority to the right, trams, level crossings, speed limits, overtaking and parking. Seven 26-question mock tests with 22 to pass, like the real one. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/rodrpciv-mobile.png", desktop: "/landing/rodrpciv-desktop.png" }}
           />
         </div>

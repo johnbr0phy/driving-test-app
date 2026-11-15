@@ -130,7 +130,7 @@ export default function CscsTestPracticeLandingPage() {
           <ExamLandingHero
             dashboardHref="/cscs/dashboard"
             shortName="CSCS Test"
-            subtitle="200 questions for the CITB Health, Safety and Environment test for operatives: site law, health hazards, working at height, plant, fire and the environment, with the real 45 of 50 pass mark. Tuned for mobile. No account needed."
+            subtitle="200 questions for the CITB Health, Safety and Environment test for operatives: site law, health hazards, working at height, plant, fire and the environment, with the real 45 of 50 pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cscs-mobile.png", desktop: "/landing/cscs-desktop.png" }}
           />
         </div>

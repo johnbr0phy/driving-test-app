@@ -139,7 +139,7 @@ export default function UkMotoLandingPage() {
           <ExamLandingHero
             dashboardHref="/uk-motorcycle-theory/dashboard"
             shortName="UK Moto"
-            subtitle="200 questions on hazards, your motorcycle, safety margins, vulnerable road users, rules of the road, signs and documents, for the multiple-choice part of the DVSA test. Tuned for mobile. No account needed."
+            subtitle="200 questions on hazards, your motorcycle, safety margins, vulnerable road users, rules of the road, signs and documents, for the multiple-choice part of the DVSA test. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukmoto-mobile.png", desktop: "/landing/ukmoto-desktop.png" }}
           />
         </div>

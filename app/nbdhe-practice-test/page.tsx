@@ -127,7 +127,7 @@ export default function NbdheLandingPage() {
           <ExamLandingHero
             dashboardHref="/nbdhe/dashboard"
             shortName="NBDHE"
-            subtitle="200 original dental hygiene board questions on the JCNDE test specifications, with written patient cases: periodontics, radiography, pharmacology, prevention and more. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original dental hygiene board questions on the JCNDE test specifications, with written patient cases: periodontics, radiography, pharmacology, prevention and more. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/nbdhe-mobile.png", desktop: "/landing/nbdhe-desktop.png" }}
           />
         </div>

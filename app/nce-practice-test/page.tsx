@@ -141,7 +141,7 @@ export default function NceLandingPage() {
           <ExamLandingHero
             dashboardHref="/nce/dashboard"
             shortName="NCE"
-            subtitle="200 original questions on the NBCC content outline: ethics, assessment and diagnosis, clinical concerns, treatment planning, counseling skills and theory, and core attributes. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the NBCC content outline: ethics, assessment and diagnosis, clinical concerns, treatment planning, counseling skills and theory, and core attributes. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/nce-mobile.png", desktop: "/landing/nce-desktop.png" }}
           />
         </div>

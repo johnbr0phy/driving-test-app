@@ -129,7 +129,7 @@ export default function HamLandingPage() {
           <ExamLandingHero
             dashboardHref="/ham-radio/dashboard"
             shortName="Technician"
-            subtitle="The official 2026-2030 question pool with an explanation for every answer. Tuned for mobile. No account needed."
+            subtitle="The official 2026-2030 question pool with an explanation for every answer. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ham-mobile.png", desktop: "/landing/ham-desktop.png" }}
           />
         </div>

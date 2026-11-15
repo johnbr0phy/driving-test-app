@@ -129,7 +129,7 @@ export default function IeltsReadingLandingPage() {
           <ExamLandingHero
             dashboardHref="/ielts-reading/dashboard"
             shortName="IELTS Reading"
-            subtitle="Two full Academic Reading tests and 212 original questions, with a band score estimate. Reading only. No account needed."
+            subtitle="Two full Academic Reading tests and 212 original questions, with a band score estimate. Reading only. Free to start, no account needed."
             shots={{ mobile: "/landing/ieltsread-mobile.png", desktop: "/landing/ieltsread-desktop.png" }}
           />
         </div>

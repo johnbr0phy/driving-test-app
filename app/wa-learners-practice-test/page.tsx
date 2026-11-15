@@ -140,7 +140,7 @@ export default function WaLearnersLandingPage() {
           <ExamLandingHero
             dashboardHref="/wa-learners/dashboard"
             shortName="WA Learners"
-            subtitle="200 questions from the Drive Safe handbook on give way, roundabouts, signs and signals, speed limits, BAC, seat belts, overtaking, parking, P plates and demerit points. Tuned for mobile. No account needed."
+            subtitle="200 questions from the Drive Safe handbook on give way, roundabouts, signs and signals, speed limits, BAC, seat belts, overtaking, parking, P plates and demerit points. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/auwa-mobile.png", desktop: "/landing/auwa-desktop.png" }}
           />
         </div>

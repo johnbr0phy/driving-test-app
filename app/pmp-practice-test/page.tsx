@@ -126,7 +126,7 @@ export default function PmpLandingPage() {
           <ExamLandingHero
             dashboardHref="/pmp/dashboard"
             shortName="PMP"
-            subtitle="210 original situational questions on the July 2026 exam outline. Tuned for mobile. No account needed."
+            subtitle="210 original situational questions on the July 2026 exam outline. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/pmp-mobile.png", desktop: "/landing/pmp-desktop.png" }}
           />
         </div>

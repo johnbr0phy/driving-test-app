@@ -128,7 +128,7 @@ export default function SeruLandingPage() {
           <ExamLandingHero
             dashboardHref="/seru/dashboard"
             shortName="SERU"
-            subtitle="200 original practice questions based on the published SERU guide, the PHV Driver's Handbook: licensing, red routes and bus lanes, passenger safety, equality and safeguarding. Five 36-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original practice questions based on the published SERU guide, the PHV Driver's Handbook: licensing, red routes and bus lanes, passenger safety, equality and safeguarding. Five 36-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukseru-mobile.png", desktop: "/landing/ukseru-desktop.png" }}
           />
         </div>

@@ -132,7 +132,7 @@ export default function RtoLearnersLicenceLandingPage() {
           <ExamLandingHero
             dashboardHref="/india-learners-licence/dashboard"
             shortName="LL Test"
-            subtitle="200 LL test questions on road signs, traffic rules, helmets, seat belts and documents, written from the Motor Vehicles Act and the Rules of the Road. Tuned for mobile. No account needed."
+            subtitle="200 LL test questions on road signs, traffic rules, helmets, seat belts and documents, written from the Motor Vehicles Act and the Rules of the Road. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/inrto-mobile.png", desktop: "/landing/inrto-desktop.png" }}
           />
         </div>

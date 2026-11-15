@@ -139,7 +139,7 @@ export default function LifeguardLandingPage() {
           <ExamLandingHero
             dashboardHref="/lifeguard/dashboard"
             shortName="Lifeguard"
-            subtitle="200 questions on surveillance, drowning recognition, rescue tube skills, spinal injuries, CPR and AED, first aid and facility safety. Tuned for mobile. No account needed."
+            subtitle="200 questions on surveillance, drowning recognition, rescue tube skills, spinal injuries, CPR and AED, first aid and facility safety. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/lifeguard-mobile.png", desktop: "/landing/lifeguard-desktop.png" }}
           />
         </div>

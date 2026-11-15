@@ -125,7 +125,7 @@ export default function IbpsRrbLandingPage() {
           <ExamLandingHero
             dashboardHref="/ibps-rrb-clerk/dashboard"
             shortName="IBPS RRB Clerk"
-            subtitle="200 original questions in Reasoning and Numerical Ability, with sectional timing like the real Prelims. Tuned for mobile. No account needed."
+            subtitle="200 original questions in Reasoning and Numerical Ability, with sectional timing like the real Prelims. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ibpsrrb-mobile.png", desktop: "/landing/ibpsrrb-desktop.png" }}
           />
         </div>

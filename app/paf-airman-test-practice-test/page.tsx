@@ -126,7 +126,7 @@ export default function PafAirmanTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/paf-airman-test/dashboard"
             shortName="PAF test"
-            subtitle="200 original questions for the airman academic and intelligence tests: English, mathematics, physics, electricity, verbal and non-verbal intelligence, aviation and the Air Force. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the airman academic and intelligence tests: English, mathematics, physics, electricity, verbal and non-verbal intelligence, aviation and the Air Force. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/pkpaf-mobile.png", desktop: "/landing/pkpaf-desktop.png" }}
           />
         </div>

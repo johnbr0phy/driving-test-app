@@ -123,7 +123,7 @@ export default function CpaRegLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpa-reg/dashboard"
             shortName="CPA REG"
-            subtitle="200 original multiple-choice questions on the AICPA's 2026 REG blueprint: tax procedures and Circular 230, business law, basis and depreciation, individual and entity taxation. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original multiple-choice questions on the AICPA's 2026 REG blueprint: tax procedures and Circular 230, business law, basis and depreciation, individual and entity taxation. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cpareg-mobile.png", desktop: "/landing/cpareg-desktop.png" }}
           />
         </div>

@@ -137,7 +137,7 @@ export default function NotaryLandingPage() {
           <ExamLandingHero
             dashboardHref="/notary/dashboard"
             shortName="Notary"
-            subtitle="200 questions on the notary law every state's exam tests. Tuned for mobile. No account needed."
+            subtitle="200 questions on the notary law every state's exam tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/notary-mobile.png", desktop: "/landing/notary-desktop.png" }}
           />
         </div>

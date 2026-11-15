@@ -128,7 +128,7 @@ export default function UptetLandingPage() {
           <ExamLandingHero
             dashboardHref="/uptet/dashboard"
             shortName="UPTET"
-            subtitle="200 original questions on CDP, Hindi, English, Maths and EVS, content and pedagogy. Tuned for mobile. No account needed."
+            subtitle="200 original questions on CDP, Hindi, English, Maths and EVS, content and pedagogy. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/uptet-mobile.png", desktop: "/landing/uptet-desktop.png" }}
           />
         </div>

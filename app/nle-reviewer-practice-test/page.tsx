@@ -128,7 +128,7 @@ export default function NleReviewerLandingPage() {
           <ExamLandingHero
             dashboardHref="/nurse-licensure-exam/dashboard"
             shortName="NLE"
-            subtitle="200 original questions across Nursing Practice I to V of the Philippine Nurse Licensure Examination. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions across Nursing Practice I to V of the Philippine Nurse Licensure Examination. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/phnle-mobile.png", desktop: "/landing/phnle-desktop.png" }}
           />
         </div>

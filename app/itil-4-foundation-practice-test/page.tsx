@@ -127,7 +127,7 @@ export default function ItilLandingPage() {
           <ExamLandingHero
             dashboardHref="/itil-4-foundation/dashboard"
             shortName="ITIL 4"
-            subtitle="160 original questions and two full 40-question mock exams. Tuned for mobile. No account needed."
+            subtitle="160 original questions and two full 40-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/itil-mobile.png", desktop: "/landing/itil-desktop.png" }}
           />
         </div>

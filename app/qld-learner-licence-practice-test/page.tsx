@@ -137,7 +137,7 @@ export default function QldLearnerLicenceLandingPage() {
           <ExamLandingHero
             dashboardHref="/qld-learner-licence/dashboard"
             shortName="QLD Learner"
-            subtitle="200 questions on Queensland road rules for PrepL and the written road rules test: giving way, L and P plate rules, demerit points, signs, lanes, speed limits and alcohol limits. Tuned for mobile. No account needed."
+            subtitle="200 questions on Queensland road rules for PrepL and the written road rules test: giving way, L and P plate rules, demerit points, signs, lanes, speed limits and alcohol limits. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/auqld-mobile.png", desktop: "/landing/auqld-desktop.png" }}
           />
         </div>

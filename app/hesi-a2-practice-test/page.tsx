@@ -144,7 +144,7 @@ export default function HesiLandingPage() {
           <ExamLandingHero
             dashboardHref="/hesi/dashboard"
             shortName="HESI A2"
-            subtitle="200 questions across math, reading, vocabulary, grammar, biology, chemistry and A&P. Tuned for mobile. No account needed."
+            subtitle="200 questions across math, reading, vocabulary, grammar, biology, chemistry and A&P. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/hesi-mobile.png", desktop: "/landing/hesi-desktop.png" }}
           />
         </div>

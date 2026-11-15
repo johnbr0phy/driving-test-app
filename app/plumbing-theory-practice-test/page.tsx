@@ -124,7 +124,7 @@ export default function UkplumbLandingPage() {
           <ExamLandingHero
             dashboardHref="/plumbing-theory/dashboard"
             shortName="Plumbing Theory"
-            subtitle="200 questions for City & Guilds 6035 and the Level 3 plumbing apprenticeship: cold and hot water, central heating, drainage, pipework, safety and science. Tuned for mobile. No account needed."
+            subtitle="200 questions for City & Guilds 6035 and the Level 3 plumbing apprenticeship: cold and hot water, central heating, drainage, pipework, safety and science. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukplumb-mobile.png", desktop: "/landing/ukplumb-desktop.png" }}
           />
         </div>

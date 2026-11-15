@@ -2299,6 +2299,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two AFOQT practice tests with eight subtests at about half length and the real pace, and a drill for each subtest. Start for free, no account required; the last two drills and Practice Test 2 are part of Premium. Situational Judgment, Instrument Comprehension, Block Counting and the Self-Description Inventory are not included, and scores are percent correct, not AFOQT percentiles.",
   },
+  dat: {
+    answer:
+      "The DAT is the American Dental Association's computer-based Dental Admission Test, with four multiple-choice sections in this order: the Survey of the Natural Sciences (100 questions in 90 minutes: 40 biology, 30 general chemistry and 30 organic chemistry), the Perceptual Ability Test (90 questions in 60 minutes in six picture subtests), an optional 30-minute break, Reading Comprehension (50 questions on three scientific passages in 60 minutes) and Quantitative Reasoning (40 questions in 45 minutes, with an on-screen calculator). Since March 1, 2025 scores are reported from 200 to 600 in 10-point steps; there is no official passing score, each dental program decides what it accepts, and there is no penalty for guessing.",
+    rows: [
+      { label: "Sections", value: "Natural Sciences, Perceptual Ability, Reading, Quantitative" },
+      { label: "Questions", value: "280: 100, 90, 50 and 40" },
+      { label: "Time", value: "4 hr 15 min of testing; 5 hr 15 min with tutorial, break and survey" },
+      { label: "Score", value: "200 to 600 in 10-point steps; no official passing score" },
+      { label: "Calculator", value: "On-screen, Quantitative Reasoning only; periodic table in General Chemistry" },
+      { label: "Retakes", value: "60 days apart, at most four in 12 months" },
+      { label: "Given by", value: "ADA Department of Testing Services, at Prometric test centers" },
+    ],
+    basedOn: "the ADA's DAT 2026 Candidate Guide (updated August 4, 2026) and the Organic Chemistry specifications in force since April 2026",
+    source: { name: "ADA", url: "https://www.ada.org/en/education-careers/dental-admission-test" },
+    tigertest:
+      "Tigertest has two DAT practice tests with the Survey of the Natural Sciences, Reading Comprehension and Quantitative Reasoning at half length and the real pace, and seven drills by topic. The picture-based Perceptual Ability Test is not included. It is free to start, with no account required.",
+  },
   lsat: {
     answer:
       "The LSAT has four 35-minute multiple-choice sections: two scored Logical Reasoning sections, one scored Reading Comprehension section and one unscored variable section of either type that LSAC uses to try out new questions, with a 10-minute intermission between the second and third sections. Analytical Reasoning (logic games) was dropped in August 2024. The score runs from 120 to 180, based on the number of questions answered correctly, with no deduction for wrong answers. LSAT Argumentative Writing, a 50-minute unscored essay taken online, must be on file before a score is released. From August 2027 the unscored questions move inside the three sections, which LSAC says will test the same skills.",

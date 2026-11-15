@@ -113,4 +113,5 @@ export const BANK_SIZES: Record<string, number> = {
   shsat: 240,
   cbest: 170,
   tabe: 200,
+  dat: 214,
 };

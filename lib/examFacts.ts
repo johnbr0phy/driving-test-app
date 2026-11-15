@@ -2204,6 +2204,76 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full practice tests in Math, Reading and Language Usage at NWEA's own blueprint, untimed like the real test, with a percent score per subject, and ten drills, one per instructional area, most of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no RIT score.",
   },
+  isee: {
+    answer:
+      "The ISEE (Independent School Entrance Exam) is the admission test many US and international independent schools use, run by E3n, the nonprofit formed by the merger of ERB and EMA. The Middle Level is for students applying to grades 7 and 8. It has four scored multiple-choice sections, Verbal Reasoning (40 questions, 20 minutes: synonyms and sentence completions), Quantitative Reasoning (37 questions, 35 minutes: word problems and quantitative comparisons), Reading Comprehension (36 questions, 35 minutes: six passages) and Mathematics Achievement (47 questions, 40 minutes), plus a 30-minute essay that is not scored but is sent to the schools. The whole test takes 2 hours 40 minutes with two 10-minute breaks, online or on paper. No calculator is allowed, wrong answers are not deducted, and scores are reported as scaled scores, percentile ranks and stanines compared only with students applying to the same grade.",
+    rows: [
+      { label: "Who takes it", value: "Students applying to grades 7 and 8 (Lower Level for grades 5 and 6, Upper Level for grades 9 to 12)" },
+      { label: "Sections", value: "Verbal Reasoning, Quantitative Reasoning, Reading Comprehension, Mathematics Achievement, plus an unscored essay" },
+      { label: "Questions", value: "160 multiple-choice questions (40, 37, 36 and 47) and 1 essay prompt" },
+      { label: "Time", value: "2 hours 40 minutes plus two 10-minute breaks" },
+      { label: "Format", value: "Online or on paper where available, with the same number of questions and timing; no calculator" },
+      { label: "Score", value: "Scaled scores, percentile ranks and stanines against same-grade applicants; no penalty for wrong answers" },
+      { label: "How often", value: "Once per testing season: fall, winter and spring/summer" },
+      { label: "Pass mark", value: "None: each school decides how to use the scores" },
+    ],
+    basedOn: "E3n's ISEE Quick Facts Guide 2026-2027 and ERB's What to Expect on the ISEE, Middle Level",
+    source: { name: "E3n: ISEE Quick Facts Guide 2026-2027", url: "https://cdn.erblearn.org/www/20260801_E3n_ISEE_QuickFacts_DIGITAL.pdf" },
+    tigertest:
+      "Tigertest has two timed ISEE Middle Level practice tests covering all four scored sections at about half length and the real pace, with a percent score per section, and eight drills on synonyms, sentence completion, word problems, quantitative comparisons, reading and math, two of which teach the basics first. All of it is free with no account required. It does not include the essay and does not give a stanine.",
+  },
+  ssat: {
+    answer:
+      "The SSAT (Secondary School Admission Test) is the admission test many US and international independent schools ask for, run by E3n (admission.org). The Middle Level is for students in grades 5 to 7 applying for grades 6 to 8; the Upper Level, with the same format, is for grades 8 to 11. The Middle Level has an unscored 25-minute writing sample, then five multiple-choice sections: Quantitative (25 questions, 30 minutes), Reading (40 questions, 40 minutes), Verbal (60 questions: 30 synonyms and 30 analogies, 30 minutes), a second Quantitative section (25 questions, 30 minutes) and an unscored 15-minute experimental section, with two 10-minute breaks, 3 hours 10 minutes in all. Each question has five answer choices, calculators are not allowed, and a right answer earns 1 point, a wrong answer loses a quarter point and a blank earns nothing.",
+    rows: [
+      { label: "Who takes it", value: "Middle Level: students in grades 5 to 7 applying for grades 6 to 8" },
+      { label: "Scored sections", value: "Quantitative (2 x 25), Reading (40), Verbal (30 synonyms, 30 analogies)" },
+      { label: "Unscored parts", value: "25-minute writing sample and a 15-minute experimental section" },
+      { label: "Time", value: "3 hours 10 minutes, with two 10-minute breaks" },
+      { label: "Answer choices", value: "Five per question; no calculator" },
+      { label: "Scoring", value: "1 point right, minus 1/4 point wrong, 0 for a blank; scaled scores and percentiles" },
+      { label: "Pass mark", value: "None: each school reads the scores in its own way" },
+    ],
+    basedOn: "E3n's \"What's on the Middle Level SSAT?\" and Score Reports pages and the SSAT Candidate Handbook for testing year 2026-2027",
+    source: { name: "E3n: What's on the Middle Level SSAT?", url: "https://www.admission.org/help/whats-on-the-middle-level-ssat" },
+    tigertest:
+      "Tigertest has two timed Middle Level practice tests with the four scored sections in the real order, each about half the real length at the real pace, five choices per question, and seven drills, three of which teach the basics first. All of it is free with no account required. Scores are percent correct, not SSAT scaled scores, and the writing sample and experimental section are not included.",
+  },
+  cogat: {
+    answer:
+      "CogAT, the Cognitive Abilities Test from Riverside Insights, is a reasoning test that many US schools use to screen students for gifted and talented programs and to plan instruction. It measures how well a student reasons with words, numbers and shapes, not how much of the curriculum they have learned. It has three batteries: Verbal (Verbal Analogies, Sentence Completion, Verbal Classification), Quantitative (Number Analogies, Number Puzzles, Number Series) and Nonverbal (Figure Matrices, Paper Folding, Figure Classification). There is a separate test level for each grade from K to 6; from Level 9 (grade 3) the Verbal and Quantitative questions are written in words and numbers, and each of the nine tests takes about 10 minutes. Scores compare a student with others of the same age.",
+    rows: [
+      { label: "Who takes it", value: "Students in grades K to 12; Levels 9 to 12 are for grades 3 to 6" },
+      { label: "Batteries", value: "Verbal, Quantitative and Nonverbal, three tests each" },
+      { label: "Time", value: "About 10 minutes per test at Level 9 and up, nine tests in all" },
+      { label: "Forms", value: "Forms 7 and 8, two equivalent forms; Screening Forms of the three analogies tests take about 30 minutes" },
+      { label: "Delivery", value: "Paper or online, set by the school" },
+      { label: "Score", value: "Standard Age Score and age percentile rank from national age norms, age stanines and an Ability Profile" },
+      { label: "Pass mark", value: "None: schools set their own cut scores for gifted programs" },
+    ],
+    basedOn: "Riverside Insights' CogAT Overview Brochure (Forms 7 and 8 testing times and descriptions) and Overview of CogAT for Parents",
+    source: { name: "Riverside Insights: CogAT Overview Brochure", url: "https://riversideinsights.com/hubfs/CogAT/CogAT%20Overview%20Brochure.pdf" },
+    tigertest:
+      "Tigertest has two timed practice tests of the Verbal and Quantitative Batteries at Levels 9 to 12, 36 questions a battery with 12 for each CogAT test, and six drills, one per test. The Nonverbal Battery is picture puzzles and is not included. All of it is free with no account required. Scores are percent correct, never age scores or percentiles.",
+  },
+  hspt: {
+    answer:
+      "The HSPT (High School Placement Test) is Scholastic Testing Service's test for eighth graders entering high school, used by high schools, often through a Catholic diocese's education department, for admissions, scholarships and placement into ninth grade. It has five multiple-choice subtests: Verbal Skills (60 questions: synonyms, antonyms, analogies, verbal classification and logic), Quantitative Skills (52: number series, number manipulation and comparisons), Reading (62: comprehension and vocabulary), Mathematics (64) and Language (60: punctuation, capitalization, usage, spelling and composition), 298 questions in a working time of 2 hours 30 minutes. Calculators are not allowed and there is no penalty for guessing. Scores are standard scores and national and local percentiles, and each school sets its own cut-offs. A school may give one optional test, science or Catholic religion, which does not count in the composite.",
+    rows: [
+      { label: "Who takes it", value: "Eighth graders entering high school (the Pre-HSPT is a grade 7 edition)" },
+      { label: "Subtests", value: "Verbal Skills, Quantitative Skills, Reading, Mathematics, Language" },
+      { label: "Questions", value: "298: 60 verbal, 52 quantitative, 62 reading, 64 math, 60 language" },
+      { label: "Time", value: "2 hours 30 minutes of working time" },
+      { label: "Format", value: "Paper test booklets and answer sheets, multiple choice; no calculators" },
+      { label: "Score", value: "Standard scores (200 to 800), national and local percentiles, cognitive skills quotient" },
+      { label: "Pass mark", value: "None: each high school sets its own cut-offs" },
+      { label: "Optional tests", value: "Science or Catholic religion, not counted in the composite" },
+    ],
+    basedOn: "Scholastic Testing Service's HSPT Interpretive Manual, HSPT overview and parent pages, and 2026-27 catalog",
+    source: { name: "Scholastic Testing Service: High School Placement Test", url: "https://www.ststesting.com/hsp/index.html" },
+    tigertest:
+      "Tigertest has two timed practice tests, each about a third of the real HSPT in the same mix of question types, with a percent score per subtest, and ten drills from synonyms and number series to usage and composition. All of it is free with no account required. It is a practice test, so it gives no STS standard score or percentile.",
+  },
   staaralg1: {
     answer:
       "The STAAR Algebra I end-of-course assessment is the Texas Education Agency's state test for students who finish Algebra I, whether in high school or in middle school. It has 50 questions worth 59 points: 41 one-point questions and 9 two-point questions that can earn partial credit, and since the 2022-23 redesign at most 75% are multiple choice, the rest being typed answers, graphing, number lines, drop-down menus, hot spots, drag and drop, match tables and multiselect. It covers five reporting categories: Number and Algebraic Methods, Describing and Graphing Linear Functions, Equations and Inequalities, Writing and Solving Linear Functions, Equations and Inequalities, Quadratic Functions and Equations, and Exponential Functions and Equations. TEA expects three to four hours; the test must be finished the same school day, with at most seven hours of working time. A graphing calculator and the Algebra I reference materials are provided. Passing is Approaches Grade Level, a scale score of 3550 (19 of 59 points on the Spring 2026 test).",
@@ -2300,6 +2370,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "ETS", url: "https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html" },
     tigertest:
       "Tigertest has two full adaptive GRE practice tests with Verbal and Quant score estimates and seven drills, free to start with no account required. The essay is not included.",
+  },
+  naplex: {
+    answer:
+      "The NAPLEX is NABP's North American Pharmacist Licensure Examination, which every US board of pharmacy uses to assess a new pharmacist's competence. It is a 6-hour computerized fixed-form exam of 225 questions, 200 scored and 25 unscored pretest questions, mostly scenario-based with a patient profile. Questions are answered in order: none can be skipped and an answer cannot be changed after moving on. Formats are multiple choice, multiple response, constructed response (a typed number), ordered response and hot spot, with an on-screen scientific calculator. The content outline in force since May 1, 2025 weights five domains: Foundational Knowledge 25%, Medication Use Process 25%, Person-Centered Assessment and Treatment Planning 40%, Professional Practice 5% and Pharmacy Management and Leadership 5%. Results are pass or fail; on NABP's 0 to 150 scale a scaled score of 75 passes.",
+    rows: [
+      { label: "Questions", value: "225: 200 scored, 25 unscored pretest" },
+      { label: "Time", value: "6 hours, two optional 10-minute breaks" },
+      { label: "Navigation", value: "In order, no skipping, no going back" },
+      { label: "Formats", value: "Multiple choice, multiple response, numeric, ordered response, hot spot" },
+      { label: "Domains", value: "25% / 25% / 40% / 5% / 5%" },
+      { label: "Result", value: "Pass or fail; scaled 75 of 150 passes" },
+      { label: "Retakes", value: "45-day wait, 3 attempts in 12 months, 5 in all" },
+      { label: "Given by", value: "NABP" },
+    ],
+    basedOn: "NABP's NAPLEX Content Outline effective May 1, 2025 and the NAPLEX/MPJE Candidate Application Bulletin (March 2026)",
+    source: { name: "NABP", url: "https://nabp.pharmacy/wp-content/uploads/NAPLEX-Content-Outline.pdf" },
+    tigertest:
+      "Tigertest has two 100-question NAPLEX practice tests at the real pace, in order with no going back, weighted like the 2025 content outline, with typed calculations, select all that apply and ordered questions, plus eight drills by content area. It is free to start, with no account required.",
   },
   mcat: {
     answer:
@@ -5509,6 +5597,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "AAFCS HNFS exam specifications and the Pearson Texas test 201 page, checked November 2026",
     source: { name: "AAFCS: Testing - HNFS", url: "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs" },
+  },
+  mblex: {
+    answer:
+      "The MBLEx (Massage & Bodywork Licensing Examination) is the Federation of State Massage Therapy Boards' entry-level licensing exam for massage therapists; state boards and agencies decide which licensing exam they require. It is 100 multiple-choice questions in 110 minutes at a Pearson VUE center, a fixed-length computer-adaptive test answered in order, and results are reported only as pass or fail on a criterion-referenced standard. Passing it is not a license: the state board or agency issues the license, and state requirements vary.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "110 minutes (2-hour appointment)" },
+      { label: "Format", value: "Fixed-length computer-adaptive test, answered in order" },
+      { label: "Result", value: "Pass or fail; no percent published" },
+      { label: "Largest area", value: "Client Assessment, Reassessment & Treatment Planning, 17%" },
+      { label: "Languages", value: "English and Spanish" },
+    ],
+    basedOn: "FSMTB MBLEx Content Outline and the MBLEx Candidate Handbook effective August 2026, checked November 2026",
+    source: { name: "FSMTB: MBLEx", url: "https://www.fsmtb.org/mblex/" },
   },
   ase: {
     answer:

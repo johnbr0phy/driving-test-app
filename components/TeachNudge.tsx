@@ -19,6 +19,8 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 const TEACHER_LED = new Set([
   // US: FCS teacher preparation and FCS programs (AAFCS HNFS)
   "aafcs",
+  // US: massage therapy schools (FSMTB MBLEx)
+  "mblex",
   // US: automotive technology programs (ASE A1-A8)
   "ase",
   // US: emergency nursing CEN review courses
@@ -59,7 +61,7 @@ const TEACHER_LED = new Set([
   "eqao9", "staareng1",
   "naplan7", "vicsel", "hscmaths",
   // Primary school classes
-  "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth", "staarbio","shsat",
+  "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth", "staarbio","shsat","hspt", "cogat", "ssat", "isee",
   // Texas high school end-of-course classes
   "staaralg1",
   // Trade schools, pre-licensing courses and instructor-led certifications
@@ -72,7 +74,7 @@ const TEACHER_LED = new Set([
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)

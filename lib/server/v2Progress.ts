@@ -36,6 +36,10 @@ import '@/lib/v2/banks/teas';
 import '@/lib/v2/banks/timestables';
 import '@/lib/v2/banks/vicsel';
 import '@/lib/v2/banks/mapgrowth';
+import '@/lib/v2/banks/isee';
+import '@/lib/v2/banks/ssat';
+import '@/lib/v2/banks/cogat';
+import '@/lib/v2/banks/hspt';
 import '@/lib/v2/banks/staaralg1';
 
 // How far students get through the v2 exams that have Basics (every bank

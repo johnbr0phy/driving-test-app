@@ -1646,7 +1646,7 @@
     "optionA": "It must be wrapped",
     "optionB": "It must be decontaminated",
     "optionC": "It must be lubricated",
-    "optionD": "It must be tagged only",
+    "optionD": "It must be tagged and bagged only",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "The outline lists cleaning and inspection of instruments before and after repair. Sending soiled items exposes the vendor's staff to bloodborne pathogens."
@@ -1758,7 +1758,7 @@
     "optionA": "The invoice total",
     "optionB": "A record of each item",
     "optionC": "A list of failures",
-    "optionD": "Only the visit date",
+    "optionD": "The vendor's visit date and hours",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "Records of what was serviced, by whom and when show that PM was done and help trace an instrument that later fails."
@@ -1785,7 +1785,7 @@
     "question": "An instrument has been repaired so often that its jaws no longer line up after servicing. What is the best decision?",
     "optionA": "Repair it again",
     "optionB": "Keep it as a spare",
-    "optionC": "Use it in minor sets",
+    "optionC": "Move it to a minor procedure set",
     "optionD": "Replace the instrument",
     "correctAnswer": "D",
     "correctIndex": 3,

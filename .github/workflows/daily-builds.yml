@@ -1,6 +1,12 @@
-name: Daily builds
+name: Build tests
 
-# Every day: rank the backlog of tests we do not have yet from yesterday's live
+# Started by hand, never on a schedule (Actions tab, "Build tests", Run workflow; or
+# gh workflow run daily-builds.yml -f count=10). Stop it by cancelling the run
+# once: builds still going stop and stay in the backlog for next time, and the
+# integrate job (if: always()) still opens a PR with the tests already finished.
+# Cancelling a second time stops that too and nothing is kept.
+#
+# Each run: rank the backlog of tests we do not have yet from live
 # data (scripts/build-queue.ts over tools/queue/backlog.json: a candidate scores
 # what its live sibling tests score in practice, paywall views and purchases),
 # build the top N in parallel with Claude Code, one runner per test, then put
@@ -17,8 +23,7 @@ name: Daily builds
 # The PR waits for a person: merging it publishes the tests. To let a run merge
 # its own PR when every check passes, set the repository variable
 # DAILY_BUILD_AUTOMERGE to "true".
-# How many a day: repository variable DAILY_BUILD_COUNT (default 10), or the
-# "count" input on a manual run. Claude Code signs in with John's Claude
+# How many: the "count" input (default 10). Claude Code signs in with John's Claude
 # subscription (CLAUDE_CODE_OAUTH_TOKEN, made with `claude setup-token`), not the
 # API key, so a run costs nothing extra but shares the subscription's usage
 # limits with his own sessions: four tests build at a time.
@@ -26,13 +31,11 @@ name: Daily builds
 # Needs repository secrets CLAUDE_CODE_OAUTH_TOKEN and FIREBASE_SERVICE_ACCOUNT_KEY.
 
 on:
-  schedule:
-    - cron: "17 8 * * *" # 08:17 UTC, after search-gaps (07:41); PR ready by US morning
   workflow_dispatch:
     inputs:
       count:
-        description: "How many tests to build"
-        default: "2"
+        description: "How many tests to build (up to 25)"
+        default: "10"
       only:
         description: "Build exactly these backlog ids (comma separated). Empty: take the top of the ranking."
         default: ""
@@ -66,10 +69,9 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
           COUNT_INPUT: ${{ github.event.inputs.count }}
-          COUNT_VAR: ${{ vars.DAILY_BUILD_COUNT }}
           ONLY_INPUT: ${{ github.event.inputs.only }}
         run: |
-          count="${COUNT_INPUT:-${COUNT_VAR:-10}}"
+          count="${COUNT_INPUT:-10}"
           case "$count" in ''|*[!0-9]*) echo "count must be a whole number"; exit 1 ;; esac
           [ "$count" -le 25 ] || { echo "count is capped at 25 a run"; exit 1; }
           only=()

@@ -137,7 +137,7 @@ export default function PraxisElementaryLandingPage() {
           <ExamLandingHero
             dashboardHref="/praxis-elementary/dashboard"
             shortName="Praxis 5001"
-            subtitle="200 original questions for Praxis Elementary Education: Multiple Subjects (5001): reading and language arts, math, social studies and science. Four 50-question practice tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions for Praxis Elementary Education: Multiple Subjects (5001): reading and language arts, math, social studies and science. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/praxis5001-mobile.png", desktop: "/landing/praxis5001-desktop.png" }}
           />
         </div>

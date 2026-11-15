@@ -141,7 +141,7 @@ export default function PoliceExamLandingPage() {
           <ExamLandingHero
             dashboardHref="/police-exam/dashboard"
             shortName="Police Exam"
-            subtitle="200 questions on reading, grammar, report writing, math and judgment, the skills every police written exam tests. Four 50-question practice tests. Tuned for mobile. No account needed."
+            subtitle="200 questions on reading, grammar, report writing, math and judgment, the skills every police written exam tests. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/police-mobile.png", desktop: "/landing/police-desktop.png" }}
           />
         </div>

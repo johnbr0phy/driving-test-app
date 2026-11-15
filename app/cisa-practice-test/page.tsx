@@ -123,7 +123,7 @@ export default function CisaLandingPage() {
           <ExamLandingHero
             dashboardHref="/cisa/dashboard"
             shortName="CISA"
-            subtitle="200 original questions on ISACA's five CISA domains: the audit process, IT governance, acquisition and development, operations and resilience, and protecting information assets. Four 50-question tests weighted like the real exam. Tuned for mobile. No account needed."
+            subtitle="200 original questions on ISACA's five CISA domains: the audit process, IT governance, acquisition and development, operations and resilience, and protecting information assets. Four 50-question tests weighted like the real exam. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cisa-mobile.png", desktop: "/landing/cisa-desktop.png" }}
           />
         </div>

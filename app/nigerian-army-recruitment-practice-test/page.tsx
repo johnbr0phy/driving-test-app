@@ -126,7 +126,7 @@ export default function NigerianArmyRecruitmentLandingPage() {
           <ExamLandingHero
             dashboardHref="/nigerian-army-recruitment/dashboard"
             shortName="Army test"
-            subtitle="200 original aptitude questions in English, mathematics, reasoning and general knowledge: Nigerian history, the armed forces, ECOWAS and the African Union. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original aptitude questions in English, mathematics, reasoning and general knowledge: Nigerian history, the armed forces, ECOWAS and the African Union. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ngarmy-mobile.png", desktop: "/landing/ngarmy-desktop.png" }}
           />
         </div>

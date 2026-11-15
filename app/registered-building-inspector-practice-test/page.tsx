@@ -122,7 +122,7 @@ export default function UkrbiLandingPage() {
           <ExamLandingHero
             dashboardHref="/building-inspector/dashboard"
             shortName="Building Inspector"
-            subtitle="200 questions on the Building Safety Act, the competence framework and the RBI code of conduct: classes, procedure, dutyholders, notices, gateways and higher-risk buildings. Tuned for mobile. No account needed."
+            subtitle="200 questions on the Building Safety Act, the competence framework and the RBI code of conduct: classes, procedure, dutyholders, notices, gateways and higher-risk buildings. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukrbi-mobile.png", desktop: "/landing/ukrbi-desktop.png" }}
           />
         </div>

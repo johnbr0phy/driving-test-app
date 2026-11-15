@@ -127,7 +127,7 @@ export default function GreeceMotorcycleTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/greece-motorcycle-theory/dashboard"
             shortName="Motorcycle theory"
-            subtitle="200 original questions in English for categories A1, A2 and A: helmets and gear, braking and cornering, filtering under the 2025 Highway Code, junctions, passengers and road hazards. Six 30-question mock tests where one mistake is all you can afford. Tuned for mobile. No account needed."
+            subtitle="200 original questions in English for categories A1, A2 and A: helmets and gear, braking and cornering, filtering under the 2025 Highway Code, junctions, passengers and road hazards. Six 30-question mock tests where one mistake is all you can afford. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/grmoto-mobile.png", desktop: "/landing/grmoto-desktop.png" }}
           />
         </div>

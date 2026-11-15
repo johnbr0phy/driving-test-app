@@ -142,7 +142,7 @@ export default function RedSealCarpenterLandingPage() {
           <ExamLandingHero
             dashboardHref="/red-seal-carpenter/dashboard"
             shortName="Red Seal Carpenter"
-            subtitle="200 questions on layout, formwork, framing, exterior and interior finish, stairs and renovations, weighted like the real exam with its 70% pass mark. Tuned for mobile. No account needed."
+            subtitle="200 questions on layout, formwork, framing, exterior and interior finish, stairs and renovations, weighted like the real exam with its 70% pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cacarp-mobile.png", desktop: "/landing/cacarp-desktop.png" }}
           />
         </div>

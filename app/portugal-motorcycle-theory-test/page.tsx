@@ -129,7 +129,7 @@ export default function PortugalMotorcycleTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/portugal-motorcycle-theory/dashboard"
             shortName="Motorcycle test"
-            subtitle="Practise in English for the IMT theory exam for categories A1, A2 and A: 200 original questions on the Código da Estrada and the motorcycle programme, from priority and overtaking to helmets, braking and road surfaces. Five 40-question mock tests with the real 36-to-pass mark. Tuned for mobile. No account needed."
+            subtitle="Practise in English for the IMT theory exam for categories A1, A2 and A: 200 original questions on the Código da Estrada and the motorcycle programme, from priority and overtaking to helmets, braking and road surfaces. Five 40-question mock tests with the real 36-to-pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ptmoto-mobile.png", desktop: "/landing/ptmoto-desktop.png" }}
           />
         </div>

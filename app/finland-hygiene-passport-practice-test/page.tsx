@@ -130,7 +130,7 @@ export default function FinlandHygienePassportLandingPage() {
           <ExamLandingHero
             dashboardHref="/finland-hygiene-passport/dashboard"
             shortName="Hygiene Passport"
-            subtitle="200 original questions in English for the Finnish Hygiene Passport test (hygieniapassi): microbes, food poisoning, Finland's 6 °C and 60 °C rules, cooling in 4 hours, hand hygiene, cleaning, self-monitoring and the Food Act. Five 40-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions in English for the Finnish Hygiene Passport test (hygieniapassi): microbes, food poisoning, Finland's 6 °C and 60 °C rules, cooling in 4 hours, hand hygiene, cleaning, self-monitoring and the Food Act. Five 40-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/fihygiene-mobile.png", desktop: "/landing/fihygiene-desktop.png" }}
           />
         </div>

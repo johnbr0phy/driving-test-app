@@ -125,7 +125,7 @@ export default function FlAdjusterLandingPage() {
           <ExamLandingHero
             dashboardHref="/florida-adjuster/dashboard"
             shortName="FL 6-20 Adjuster"
-            subtitle="200 original questions on the Florida all-lines adjuster outline: PIP and auto, liability and workers' comp, homeowners, hurricane deductibles and flood, commercial and marine lines, Citizens, and Florida claims law and ethics. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the Florida all-lines adjuster outline: PIP and auto, liability and workers' comp, homeowners, hurricane deductibles and flood, commercial and marine lines, Citizens, and Florida claims law and ethics. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/fladjuster-mobile.png", desktop: "/landing/fladjuster-desktop.png" }}
           />
         </div>

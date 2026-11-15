@@ -211,7 +211,7 @@ export default function PncLandingPage() {
           <ExamLandingHero
             dashboardHref="/property-casualty-insurance/dashboard"
             shortName="P&C"
-            subtitle="200 questions on the general portion of the P&C producer exam: homeowners, auto, commercial lines, liability and workers comp. Tuned for mobile. No account needed."
+            subtitle="200 questions on the general portion of the P&C producer exam: homeowners, auto, commercial lines, liability and workers comp. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/pnc-mobile.png", desktop: "/landing/pnc-desktop.png" }}
           />
         </div>

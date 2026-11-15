@@ -129,7 +129,7 @@ export default function EkgLandingPage() {
           <ExamLandingHero
             dashboardHref="/ekg/dashboard"
             shortName="EKG"
-            subtitle="200 questions weighted to the NHA CET test plan. Tuned for mobile. No account needed."
+            subtitle="200 questions weighted to the NHA CET test plan. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cet-mobile.png", desktop: "/landing/cet-desktop.png" }}
           />
         </div>

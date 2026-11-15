@@ -142,7 +142,7 @@ export default function RcgPracticeTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/rcg/dashboard"
             shortName="RCG"
-            subtitle="200 questions for SITHGAM022 Provide responsible gambling services, the national unit behind the RCG and RSG: gambling harm, odds, self-exclusion and helping customers. Tuned for mobile. No account needed."
+            subtitle="200 questions for SITHGAM022 Provide responsible gambling services, the national unit behind the RCG and RSG: gambling harm, odds, self-exclusion and helping customers. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aurcg-mobile.png", desktop: "/landing/aurcg-desktop.png" }}
           />
         </div>

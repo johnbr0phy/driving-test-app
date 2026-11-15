@@ -127,7 +127,7 @@ export default function NapolcomExamLandingPage() {
           <ExamLandingHero
             dashboardHref="/napolcom-exam/dashboard"
             shortName="NAPOLCOM exam"
-            subtitle="200 original questions for the PNP Entrance Examination: the Constitution, the PNP laws, values, verbal, quantitative and logical reasoning. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the PNP Entrance Examination: the Constitution, the PNP laws, values, verbal, quantitative and logical reasoning. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/phnapolcom-mobile.png", desktop: "/landing/phnapolcom-desktop.png" }}
           />
         </div>

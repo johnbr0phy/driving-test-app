@@ -136,7 +136,7 @@ export default function TexesPprLandingPage() {
           <ExamLandingHero
             dashboardHref="/texes-ppr/dashboard"
             shortName="PPR"
-            subtitle="200 original scenario questions on all 13 competencies of the Pedagogy and Professional Responsibilities EC-12 (160) exam. Four 50-question practice tests. Tuned for mobile. No account needed."
+            subtitle="200 original scenario questions on all 13 competencies of the Pedagogy and Professional Responsibilities EC-12 (160) exam. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/texesppr-mobile.png", desktop: "/landing/texesppr-desktop.png" }}
           />
         </div>

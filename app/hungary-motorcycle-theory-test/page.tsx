@@ -127,7 +127,7 @@ export default function HungaryMotorcycleTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/hungary-motorcycle-theory/dashboard"
             shortName="motorcycle theory test"
-            subtitle="200 original questions in English for categories AM, A1, A2 and A: licence limits, helmets and gear, braking and cornering, filtering and bus lanes, mopeds, passengers and riding hazards. Three full 55-question tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions in English for categories AM, A1, A2 and A: licence limits, helmets and gear, braking and cornering, filtering and bus lanes, mopeds, passengers and riding hazards. Three full 55-question tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/hukreszmoto-mobile.png", desktop: "/landing/hukreszmoto-desktop.png" }}
           />
         </div>

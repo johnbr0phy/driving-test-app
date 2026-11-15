@@ -143,7 +143,7 @@ export default function AuFirstAidLandingPage() {
           <ExamLandingHero
             dashboardHref="/au-first-aid/dashboard"
             shortName="First Aid (HLTAID011)"
-            subtitle="200 questions on DRSABCD, CPR and AEDs, choking, asthma, anaphylaxis, bleeding, snake bite and more, written to current Australian Resuscitation Council guidelines. Tuned for mobile. No account needed."
+            subtitle="200 questions on DRSABCD, CPR and AEDs, choking, asthma, anaphylaxis, bleeding, snake bite and more, written to current Australian Resuscitation Council guidelines. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aufirstaid-mobile.png", desktop: "/landing/aufirstaid-desktop.png" }}
           />
         </div>

@@ -126,7 +126,7 @@ export default function RrbNtpcLandingPage() {
           <ExamLandingHero
             dashboardHref="/rrb-ntpc/dashboard"
             shortName="RRB NTPC"
-            subtitle="232 original CBT 1 questions on General Awareness, Maths and Reasoning. Tuned for mobile. No account needed."
+            subtitle="232 original CBT 1 questions on General Awareness, Maths and Reasoning. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/rrbntpc-mobile.png", desktop: "/landing/rrbntpc-desktop.png" }}
           />
         </div>

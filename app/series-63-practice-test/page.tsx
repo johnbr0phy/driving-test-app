@@ -126,7 +126,7 @@ export default function Series63LandingPage() {
           <ExamLandingHero
             dashboardHref="/series-63/dashboard"
             shortName="Series 63"
-            subtitle="200 original questions on NASAA's outline: the Uniform Securities Act, agent and broker-dealer registration, ethics, customer communications, remedies and the Administrator's powers. Three full-length 60-question mock tests with the real 43-of-60 pass line. Tuned for mobile. No account needed."
+            subtitle="200 original questions on NASAA's outline: the Uniform Securities Act, agent and broker-dealer registration, ethics, customer communications, remedies and the Administrator's powers. Three full-length 60-question mock tests with the real 43-of-60 pass line. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/series63-mobile.png", desktop: "/landing/series63-desktop.png" }}
           />
         </div>

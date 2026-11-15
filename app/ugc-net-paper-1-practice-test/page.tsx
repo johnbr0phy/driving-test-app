@@ -133,7 +133,7 @@ export default function UgcNetLandingPage() {
           <ExamLandingHero
             dashboardHref="/ugc-net-paper-1/dashboard"
             shortName="UGC-NET"
-            subtitle="216 original questions across all ten units of Teaching and Research Aptitude. Tuned for mobile. No account needed."
+            subtitle="216 original questions across all ten units of Teaching and Research Aptitude. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ugcnet-mobile.png", desktop: "/landing/ugcnet-desktop.png" }}
           />
         </div>

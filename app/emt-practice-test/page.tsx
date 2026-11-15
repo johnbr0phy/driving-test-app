@@ -142,7 +142,7 @@ export default function EmtLandingPage() {
           <ExamLandingHero
             dashboardHref="/emt/dashboard"
             shortName="EMT"
-            subtitle="200 questions weighted to the 2025 NREMT EMT test plan. Tuned for mobile. No account needed."
+            subtitle="200 questions weighted to the 2025 NREMT EMT test plan. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/emt-mobile.png", desktop: "/landing/emt-desktop.png" }}
           />
         </div>

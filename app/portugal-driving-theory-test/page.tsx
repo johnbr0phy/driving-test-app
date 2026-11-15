@@ -127,7 +127,7 @@ export default function PortugalDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/portugal-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="Practise in English for the exame de código: 200 original questions on the Código da Estrada, from signs and roundabouts to speed limits, parking and alcohol. Six 30-question mock tests with the real 27-to-pass mark. Tuned for mobile. No account needed."
+            subtitle="Practise in English for the exame de código: 200 original questions on the Código da Estrada, from signs and roundabouts to speed limits, parking and alcohol. Six 30-question mock tests with the real 27-to-pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ptimt-mobile.png", desktop: "/landing/ptimt-desktop.png" }}
           />
         </div>

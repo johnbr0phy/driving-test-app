@@ -140,7 +140,7 @@ export default function UkDrivingTheoryTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/uk-theory/dashboard"
             shortName="Theory Test"
-            subtitle="200 questions on the Highway Code, road signs, motorways, safety margins, hazards and vulnerable road users, with the real 43 of 50 pass mark. Tuned for mobile. No account needed."
+            subtitle="200 questions on the Highway Code, road signs, motorways, safety margins, hazards and vulnerable road users, with the real 43 of 50 pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukcar-mobile.png", desktop: "/landing/ukcar-desktop.png" }}
           />
         </div>

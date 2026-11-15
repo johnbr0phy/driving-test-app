@@ -141,7 +141,7 @@ export default function MedtechBoardExamLandingPage() {
           <ExamLandingHero
             dashboardHref="/medtech-board-exam/dashboard"
             shortName="MTLE"
-            subtitle="200 original questions across all six subjects of the Medical Technologist Licensure Examination, written from the PRC tables of specifications. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions across all six subjects of the Medical Technologist Licensure Examination, written from the PRC tables of specifications. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/phmedtech-mobile.png", desktop: "/landing/phmedtech-desktop.png" }}
           />
         </div>

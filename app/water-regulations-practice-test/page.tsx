@@ -122,7 +122,7 @@ export default function UkwaterLandingPage() {
           <ExamLandingHero
             dashboardHref="/water-regulations/dashboard"
             shortName="Water Regulations"
-            subtitle="200 questions on the Water Supply (Water Fittings) Regulations 1999 for the City & Guilds 3345 and BPEC tests: fluid categories, backflow devices, notification and the Schedule 2 rules. Tuned for mobile. No account needed."
+            subtitle="200 questions on the Water Supply (Water Fittings) Regulations 1999 for the City & Guilds 3345 and BPEC tests: fluid categories, backflow devices, notification and the Schedule 2 rules. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukwater-mobile.png", desktop: "/landing/ukwater-desktop.png" }}
           />
         </div>

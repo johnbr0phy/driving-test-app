@@ -126,7 +126,7 @@ export default function IbpsPoLandingPage() {
           <ExamLandingHero
             dashboardHref="/ibps-po/dashboard"
             shortName="IBPS PO"
-            subtitle="225 original questions in English, Quant and Reasoning, with 20-minute sectional timing. Tuned for mobile. No account needed."
+            subtitle="225 original questions in English, Quant and Reasoning, with 20-minute sectional timing. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ibpspo-mobile.png", desktop: "/landing/ibpspo-desktop.png" }}
           />
         </div>

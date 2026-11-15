@@ -141,7 +141,7 @@ export default function CriminologyReviewerLandingPage() {
           <ExamLandingHero
             dashboardHref="/criminologist-licensure-exam/dashboard"
             shortName="CLE"
-            subtitle="200 original questions on all six subjects of the Licensure Examination for Criminologists, from the Board of Criminology table of specifications. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions on all six subjects of the Licensure Examination for Criminologists, from the Board of Criminology table of specifications. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/phcle-mobile.png", desktop: "/landing/phcle-desktop.png" }}
           />
         </div>

@@ -2249,7 +2249,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ETS description of the GRE General Test structure",
     source: { name: "ETS", url: "https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html" },
     tigertest:
-      "Tigertest has two full adaptive GRE practice tests with Verbal and Quant score estimates and seven drills, all free with no account required. The essay is not included.",
+      "Tigertest has two full adaptive GRE practice tests with Verbal and Quant score estimates and seven drills, free to start with no account required. The essay is not included.",
   },
   mcat: {
     answer:
@@ -2562,7 +2562,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the SSC Constable (GD) in CAPFs and SSF, and Rifleman (GD) in Assam Rifles Examination notice (2026 cycle, 1 December 2025)",
     source: { name: "Staff Selection Commission", url: "https://ssc.gov.in" },
     tigertest:
-      "Tigertest has two full SSC GD mock tests of 80 questions in 60 minutes and eight topic drills, two for each part. All of it is free with no account required; scores are percent correct, with negative marking explained rather than applied. Part D is practised in English.",
+      "Tigertest has two full SSC GD mock tests of 80 questions in 60 minutes and eight topic drills, two for each part. It is free to start with no account required; scores are percent correct, with negative marking explained rather than applied. Part D is practised in English.",
   },
 
   sscchsl: {
@@ -3718,7 +3718,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the SSC notice for the Constable (Executive) Male and Female in Delhi Police Examination, 2025 (22 September 2025)",
     source: { name: "Staff Selection Commission", url: "https://ssc.gov.in" },
     tigertest:
-      "Tigertest has two full Delhi Police Constable mock tests of 100 questions in 90 minutes and eight topic drills: four for general knowledge, two for reasoning, one for numerical ability and one for computer. All of it is free with no account required; scores are percent correct, with negative marking explained rather than applied.",
+      "Tigertest has two full Delhi Police Constable mock tests of 100 questions in 90 minutes and eight topic drills: four for general knowledge, two for reasoning, one for numerical ability and one for computer. It is free to start with no account required; scores are percent correct, with negative marking explained rather than applied.",
   },
   biharpolice: {
     answer:

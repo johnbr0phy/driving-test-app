@@ -126,7 +126,7 @@ export default function CRCSTLandingPage() {
           <ExamLandingHero
             dashboardHref="/crcst/dashboard"
             shortName="CRCST"
-            subtitle="200 questions weighted to the HSPA content outline. Tuned for mobile. No account needed."
+            subtitle="200 questions weighted to the HSPA content outline. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/crcst-mobile.png", desktop: "/landing/crcst-desktop.png" }}
           />
         </div>

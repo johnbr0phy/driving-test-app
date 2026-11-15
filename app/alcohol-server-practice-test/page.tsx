@@ -137,7 +137,7 @@ export default function AlcoholServerLandingPage() {
           <ExamLandingHero
             dashboardHref="/alcohol-server/dashboard"
             shortName="Alcohol Server"
-            subtitle="200 questions on alcohol and the body, spotting intoxication, checking IDs, refusing service and server liability. Prep for any state or provider exam. Tuned for mobile. No account needed."
+            subtitle="200 questions on alcohol and the body, spotting intoxication, checking IDs, refusing service and server liability. Prep for any state or provider exam. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/alcohol-mobile.png", desktop: "/landing/alcohol-desktop.png" }}
           />
         </div>

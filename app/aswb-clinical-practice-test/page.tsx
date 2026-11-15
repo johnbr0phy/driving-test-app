@@ -126,7 +126,7 @@ export default function AswbClinicalLandingPage() {
           <ExamLandingHero
             dashboardHref="/aswb-clinical/dashboard"
             shortName="ASWB Clinical"
-            subtitle="200 original questions on the 2026 Clinical content outline: clinical ethics, DSM-5-TR diagnosis, treatment planning and evidence-based interventions. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the 2026 Clinical content outline: clinical ethics, DSM-5-TR diagnosis, treatment planning and evidence-based interventions. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aswbclin-mobile.png", desktop: "/landing/aswbclin-desktop.png" }}
           />
         </div>

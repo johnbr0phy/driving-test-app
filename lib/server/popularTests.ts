@@ -1,5 +1,7 @@
+import { FieldPath } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { getCatalogEntry, TestCatalogEntry } from "@/lib/testCatalog";
+import { sharedRead } from "@/lib/server/sharedRead";
 
 // The homepage's "Popular this week": catalog tests ranked by questions
 // answered over the last 7 UTC days, today included so a busy test shows
@@ -21,8 +23,12 @@ function lastSevenDays(now = new Date()): string[] {
 
 export async function getPopularTests(limit = 6): Promise<{ tests: PopularTest[]; totalAnswered: number | null }> {
   try {
-    const snap = await getAdminDb().doc("analytics/questions").get();
-    const byExam = (snap.data()?.byExam ?? {}) as Record<string, { daily?: Record<string, number> }>;
+    // Only byExam, read once for every homepage this process renders.
+    const byExam = await sharedRead("analytics/questions.byExam", async () => {
+      // A query, not a doc get, so only byExam is downloaded.
+      const snap = await getAdminDb().collection("analytics").where(FieldPath.documentId(), "==", "questions").select("byExam").get();
+      return (snap.docs[0]?.get("byExam") ?? {}) as Record<string, { daily?: Record<string, number> }>;
+    });
     const days = lastSevenDays();
     let totalAnswered = 0;
     const ranked = Object.entries(byExam)

@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cadc: {
+      answer:
+        "The IC&RC Alcohol and Drug Counselor (ADC) exam is the certification exam of the International Certification & Reciprocity Consortium, used by many US state boards for their alcohol and drug counselor credential (called CADC, LADC, CAC or another name depending on the state). IC&RC's candidate guide (effective November 2022) lists 150 multiple-choice questions, 125 scored and 25 unscored pretest, in 3 hours, each with three or four choices and one best answer. It covers Scientific Principles of Substance Use and Co-Occurring Disorders (25%), Evidence-Based Screening and Assessment (20%), Evidence-Based Treatment, Counseling, and Referral (30%) and Professional, Ethical, and Legal Responsibilities (25%). Prometric delivers it on computer at a test center or by remote proctoring where the board allows it. Scores are scaled from 200 to 800 and 500 passes; a candidate who fails waits at least 90 days to retest.",
+      rows: [
+        { label: "Questions", value: "150 (125 scored, 25 pretest), three or four choices each" },
+        { label: "Time", value: "3 hours" },
+        { label: "Pass mark", value: "Scaled score of 500 (scale 200 to 800)" },
+        { label: "Largest domain", value: "Treatment, Counseling, and Referral, 30%" },
+        { label: "Where", value: "Prometric test centers, or remote proctoring if your board allows it" },
+        { label: "Retakes", value: "At least 90 days after the previous attempt" },
+        { label: "Run by", value: "IC&RC, through its member state boards" },
+      ],
+      basedOn: "IC&RC's ADC Exam Candidate Guide (effective November 2022) and the IC&RC General Candidate Guide (2025), checked November 2026",
+      source: { name: "IC&RC: credentials and candidate guides", url: "https://internationalcredentialing.org/icrc-credentials/credentials/" },
+    },
   nzdrone: {
       answer:
         "New Zealand drones and model aircraft are flown under Civil Aviation Rule Part 101, made by the Civil Aviation Authority of New Zealand (CAA); since 22 December 2025 most of the detail for remotely piloted aircraft sits in the transport instrument CATI 101-1. A drone must weigh 25 kg or less (15 to 25 kg needs an approved person or organisation), stay in visual line of sight, below the cloud base and below 400 ft above ground level, give way to all manned aircraft, and fly over people or property only with their consent. Flying unshielded within 4 km of an aerodrome needs a pilot qualification from an approved person or organisation (or supervision, or a Part 61 or Part 149 licence) plus ATC authorisation or the aerodrome operator's agreement, and controlled airspace needs prior ATC authorisation, applied for through Airshare, unless the flight is shielded. There is no single official exam: approved organisations under rule 101.202 issue pilot qualifications with their own assessments. Operations outside Part 101 need a Part 102 operator certificate.",

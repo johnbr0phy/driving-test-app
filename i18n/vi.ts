@@ -1058,6 +1058,18 @@ export const vi: TranslationKeys = {
     rmaExams: "Physical Examinations",
     rmaPharm: "Clinical Pharmacology",
     rmaTherapy: "Therapeutic Modalities & First Aid",
+    // cadc
+    cadcBrain: "Addiction & the Brain",
+    cadcPharm: "Substances & Pharmacology",
+    cadcCooccur: "Co-Occurring Conditions",
+    cadcScreen: "Interviewing, Screening & Testing",
+    cadcAssess: "Diagnosis & Level of Care",
+    cadcCounsel: "Counseling Skills & Motivation",
+    cadcPlan: "Treatment Planning & Recovery",
+    cadcGroup: "Group Counseling",
+    cadcCase: "Crisis, Referral & Special Populations",
+    cadcEthics: "Professional Ethics & Culture",
+    cadcLaw: "Confidentiality, Records & Rights",
     // nzdrone
     dronScope: "Part 101 Scope & Approvals",
     dronAerodrome: "Aerodromes",

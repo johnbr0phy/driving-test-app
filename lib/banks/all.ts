@@ -265,3 +265,4 @@ import "./rpt";
 import "./ascppbt";
 import "./crfsc";
 import "./nzdrone";
+import "./cadc";

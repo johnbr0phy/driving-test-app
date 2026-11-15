@@ -132,7 +132,9 @@ def analyse(items):
 
 
 def all_banks():
-    v1 = [p for p in glob.glob(os.path.join(ROOT, "data", "*questions*.json")) if not re.search(r"_[a-z]{2}\.json$", p)]
+    # questions_proof.json is the DMV proofreading copy, not a bank a student answers (as in check_banks.py).
+    v1 = [p for p in glob.glob(os.path.join(ROOT, "data", "*questions*.json"))
+          if not re.search(r"_[a-z]{2}\.json$", p) and os.path.basename(p) != "questions_proof.json"]
     v2 = glob.glob(os.path.join(ROOT, "data", "v2", "*", "questions.json"))
     v2 += [p for p in glob.glob(os.path.join(ROOT, "data", "v2", "*", "*.json")) if not p.endswith("questions.json")]
     return sorted(set(v1 + v2))

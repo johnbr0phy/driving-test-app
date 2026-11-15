@@ -103,6 +103,8 @@
   "ocnsw": ["#d50b81","#fceef6","#710946","#eed8e5"],
   "mapgrowth": ["#049562","#e9fbf5","#04442d","#d4ede4"],
   "ssat": ["#408103","#f2fbe9","#1e3a03","#e0edd4"],
+  "cogat": ["#1c403d","#eef7f6","#0c1d1b","#d9e8e7"],
+  "hspt": ["#667949","#f3f6ee","#364026","#e2e7da"],
   "vicsel": ["#3709b3","#f1eefc","#1a0750","#ded8ee"],
   "hscmaths": ["#2f6a5e","#f0faf8","#152925","#d8eee9"],
   "aursa": ["#6b2e36","#faf0f1","#291417","#eed8db"],

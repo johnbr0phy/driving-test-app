@@ -30,7 +30,7 @@ export const IIMCAT: ExamV2Config = {
   fullName: "CAT (IIM Common Admission Test)",
   tagline: "Three sections of 40 minutes each in a fixed order: Verbal Ability and Reading Comprehension, Data Interpretation and Logical Reasoning, and Quantitative Ability.",
   icon: "graduation",
-  theme: { brand: "64 100% 24%", brandDark: "64 100% 18%", brandLight: "64 70% 95%" },
+  theme: { brand: "296 30% 26%", brandDark: "296 30% 19%", brandLight: "296 70% 95%" },
   breakSeconds: 0,
   sections: [
     {

@@ -2214,16 +2214,16 @@
 
   /* CAT (IIM Common Admission Test) theme (v2 exam; matches lib/v2/exams/iimcat.ts theme): deep olive gold */
   [data-theme="iimcat"] {
-    --brand: 64 100% 24%;
+    --brand: 296 30% 26%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 64 70% 95%;
-    --brand-hover: 64 100% 21%;
-    --brand-dark: 64 100% 18%;
-    --brand-darker: 64 90% 12%;
-    --brand-muted: 64 30% 66%;
-    --brand-border: 64 40% 76%;
-    --brand-border-light: 64 40% 87%;
-    --brand-gradient-to: 52 70% 94%;
+    --brand-light: 296 70% 95%;
+    --brand-hover: 296 30% 21%;
+    --brand-dark: 296 30% 19%;
+    --brand-darker: 296 25% 14%;
+    --brand-muted: 296 30% 66%;
+    --brand-border: 296 40% 76%;
+    --brand-border-light: 296 40% 87%;
+    --brand-gradient-to: 284 70% 94%;
   }
 
   /* CompTIA Network+ theme (v2 exam; matches lib/v2/exams/netplus.ts theme) */
@@ -2662,16 +2662,16 @@
 
   /* Denmark truck theory test theme */
   [data-theme="dktruck"] {
-    --brand: 331 85% 30%;
+    --brand: 72 90% 26%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 331 70% 96%;
-    --brand-hover: 331 85% 25%;
-    --brand-dark: 331 85% 22%;
-    --brand-darker: 331 80% 16%;
-    --brand-muted: 331 35% 70%;
-    --brand-border: 331 40% 82%;
-    --brand-border-light: 331 40% 90%;
-    --brand-gradient-to: 341 60% 96%;
+    --brand-light: 72 70% 96%;
+    --brand-hover: 72 90% 21%;
+    --brand-dark: 72 90% 19%;
+    --brand-darker: 72 85% 14%;
+    --brand-muted: 72 35% 70%;
+    --brand-border: 72 40% 82%;
+    --brand-border-light: 72 40% 90%;
+    --brand-gradient-to: 82 60% 96%;
   }
 
   /* CILS B1 Cittadinanza (Italian B1 test for citizenship) theme */
@@ -4635,16 +4635,16 @@
 
   /* RMA (AMT) theme */
   [data-theme="rma"] {
-    --brand: 72 85% 26%;
+    --brand: 311 60% 22%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 72 50% 95%;
-    --brand-hover: 72 85% 21%;
-    --brand-dark: 72 85% 18%;
-    --brand-darker: 72 85% 12%;
-    --brand-muted: 72 25% 70%;
-    --brand-border: 72 30% 78%;
-    --brand-border-light: 72 30% 88%;
-    --brand-gradient-to: 87 50% 95%;
+    --brand-light: 311 50% 95%;
+    --brand-hover: 311 60% 17%;
+    --brand-dark: 311 60% 15%;
+    --brand-darker: 311 55% 10%;
+    --brand-muted: 311 25% 70%;
+    --brand-border: 311 30% 78%;
+    --brand-border-light: 311 30% 88%;
+    --brand-gradient-to: 326 50% 95%;
   }
 
   /* National Home Inspector Examination theme */
@@ -7029,17 +7029,16 @@
     --brand-dark: 90 90% 65%;
     --brand-darker: 90 80% 78%;
   }
-
   .dark [data-theme="iimcat"] {
-    --brand: 64 100% 24.1%;
-    --brand-hover: 64 100% 21%;
-    --brand-light: 64 45% 13%;
-    --brand-gradient-to: 52 40% 11%;
-    --brand-border-light: 64 35% 24%;
-    --brand-border: 64 40% 34%;
-    --brand-muted: 64 30% 45%;
-    --brand-dark: 64 100% 65%;
-    --brand-darker: 64 90% 78%;
+    --brand: 296 30% 50%;
+    --brand-hover: 296 30% 42%;
+    --brand-light: 296 45% 13%;
+    --brand-gradient-to: 284 40% 11%;
+    --brand-border-light: 296 35% 24%;
+    --brand-border: 296 40% 34%;
+    --brand-muted: 296 30% 45%;
+    --brand-dark: 296 30% 65%;
+    --brand-darker: 296 25% 78%;
   }
 
   .dark [data-theme="netplus"] {
@@ -7411,15 +7410,13 @@
     --brand-darker: 12 80% 78%;
   }
   .dark [data-theme="dktruck"] {
-    --brand: 331 85% 47.7%;
-    --brand-hover: 331 85% 39.7%;
-    --brand-light: 331 45% 13%;
-    --brand-gradient-to: 341 40% 11%;
-    --brand-border-light: 331 35% 24%;
-    --brand-border: 331 40% 34%;
-    --brand-muted: 331 35% 45%;
-    --brand-dark: 331 85% 65%;
-    --brand-darker: 331 80% 78%;
+    --brand-light: 72 45% 13%;
+    --brand-gradient-to: 82 40% 11%;
+    --brand-border-light: 72 35% 24%;
+    --brand-border: 72 40% 34%;
+    --brand-muted: 72 35% 45%;
+    --brand-dark: 72 90% 65%;
+    --brand-darker: 72 85% 78%;
   }
   .dark [data-theme="frcode"] {
     --brand: 234 100% 50%;
@@ -9070,17 +9067,16 @@
     --brand-dark: 330 35% 65%;
     --brand-darker: 330 35% 78%;
   }
-
   .dark [data-theme="rma"] {
-    --brand: 72 85% 26.7%;
-    --brand-hover: 72 85% 21%;
-    --brand-light: 72 45% 13%;
-    --brand-gradient-to: 87 40% 11%;
-    --brand-border-light: 72 30% 24%;
-    --brand-border: 72 30% 34%;
-    --brand-muted: 72 25% 45%;
-    --brand-dark: 72 85% 65%;
-    --brand-darker: 72 85% 78%;
+    --brand: 311 60% 49.3%;
+    --brand-hover: 311 60% 41.3%;
+    --brand-light: 311 45% 13%;
+    --brand-gradient-to: 326 40% 11%;
+    --brand-border-light: 311 30% 24%;
+    --brand-border: 311 30% 34%;
+    --brand-muted: 311 25% 45%;
+    --brand-dark: 311 60% 65%;
+    --brand-darker: 311 55% 78%;
   }
 
   .dark [data-theme="nhie"] {

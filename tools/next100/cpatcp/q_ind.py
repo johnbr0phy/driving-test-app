@@ -53,7 +53,7 @@ Q = [
  "Unused balances carry over", ["Contributions are pretax", "Medical draws are tax-free", "It covers dental costs"],
  "Both accounts are funded pretax and pay qualified medical costs tax-free. An HSA belongs to the employee and its balance rolls over every year; an FSA is generally use it or lose it."),
 ("An employee in the 22% bracket, who also pays 7.65% FICA on the salary, puts $2,400 into a health FSA and spends it all on qualified expenses. His tax savings are about:",
- "$711.60", ["$528.00", "$183.60", "$2,400.00"],
+ "$711.60", ["$528.00", "$183.60", "$676.80"],
  "Salary-reduction contributions escape both income tax and FICA: $2,400 x (22% + 7.65%) = $711.60.", 711.60),
 ("A 50-year-old takes $3,000 from her health savings account to pay for a vacation. The distribution is:",
  "Taxable plus a 20% additional tax", ["Tax-free as a return of savings", "Taxable with no additional tax", "Taxable plus a 10% additional tax"],

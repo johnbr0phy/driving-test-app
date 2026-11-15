@@ -6,7 +6,7 @@ Q = [
 ("In 2026 a husband gives his daughter $60,000, and he and his wife elect to split gifts. With the 2026 annual exclusion of $19,000, the couple's total taxable gifts are:",
  "$22,000", ["$41,000", "$11,000", "$0"],
  "Gift splitting treats each spouse as giving $30,000 (section 2513). Each gets a $19,000 exclusion, leaving $11,000 each, $22,000 in total.", 22000),
-("A donor gives $500,000 of stock to her spouse, who is a U.S. citizen. With a $19,000 annual exclusion, the taxable gift is:",
+("A donor gives $500,000 of stock to her spouse, who is a U.S. citizen. With the 2026 annual exclusion of $19,000, the taxable gift is:",
  "$0", ["$481,000", "$250,000", "$500,000"],
  "Gifts to a spouse who is a U.S. citizen qualify for the unlimited marital deduction (section 2523), so no part is a taxable gift."),
 ("Which gift does NOT qualify for the gift tax annual exclusion?",

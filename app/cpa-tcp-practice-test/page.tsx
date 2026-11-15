@@ -238,7 +238,7 @@ export default function CpaTcpLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Practise the multiple choice, then the simulations</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Practice the multiple choice, then the simulations</h3>
               <p>
                 Multiple choice is half the score, and the task-based simulations build on the same rules. Aim for 80% or better on every mock test here, then work through simulations with the AICPA&apos;s sample tests before you sit the section.
               </p>

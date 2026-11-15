@@ -4,7 +4,7 @@ Q = [
  "$50,000", ["$200,000", "$0", "$150,000"],
  "Realized gain is $200,000, but in a like-kind exchange gain is recognized only up to boot received (section 1031(b)): $50,000.", 50000),
 ("Joan exchanges a rental building with a basis of $300,000 and a value of $500,000 for a like-kind building worth $450,000 plus $50,000 of cash, recognizing $50,000 of gain. Her basis in the new building is:",
- "$300,000", ["$450,000", "$350,000", "$250,000"],
+ "$300,000", ["$450,000", "$350,000", "$400,000"],
  "Basis is the old basis less cash received plus gain recognized: $300,000 - $50,000 + $50,000. Equivalently, $450,000 value less the $150,000 deferred gain.", 300000),
 ("Tim exchanges land with a basis of $200,000 and a value of $600,000, subject to a $100,000 mortgage the other party assumes, for like-kind land worth $520,000 subject to a $20,000 mortgage he assumes. His recognized gain is:",
  "$80,000", ["$100,000", "$0", "$20,000"],

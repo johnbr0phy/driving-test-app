@@ -125,7 +125,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   cask: "CA", cans: "CA", pcoc: "CA",
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
-  nzroad: "NZ", nzfirearms: "NZ", nzlcq: "NZ", nzmoto: "NZ", nzheavy: "NZ", nzsfe: "NZ",
+  nzroad: "NZ", nzfirearms: "NZ", nzlcq: "NZ", nzmoto: "NZ", nzheavy: "NZ", nzsfe: "NZ", nziqn: "NZ",
   phlto: "PH", phcse: "PH", phlet: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", zak53c3: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
   ppsc: "PK", punjabpolice: "PK", pakarmy: "PK", pkpaf: "PK", pknle: "PK", pkpnmc: "PK",
   zak53moto: "ZA", zare5: "ZA", zasaps: "ZA", zapsira: "ZA",
@@ -181,7 +181,7 @@ export const NON_DRIVING_TESTS = new Set([
   "jambeng", "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng",
   "ngpolice", "cdcfib", "ngarmy", "ngcustoms", "trcnpqe",
   "sgres", "hkiiqe1", "hklesfi1", "nzfirearms", "nzlcq", "aesira", "mypce", "kenck",
-  "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "sgm5", "sgvl",
+  "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "nziqn", "sgm5", "sgvl",
 ]);
 
 /** Every test not listed above is a US exam. */

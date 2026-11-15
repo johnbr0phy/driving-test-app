@@ -404,6 +404,14 @@
       "what": "ETS's two-year transition after the January 2026 update ends: the comparable 0 to 120 total may stop appearing on TOEFL iBT score reports.",
       "action": "Check the ETS score pages; update the examFacts score row and the landing scoring FAQ.",
       "source": "https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html"
+    },
+    {
+      "exam": "nziqn",
+      "date": "2027-09-01",
+      "kind": "review",
+      "what": "The Nursing Council's IQN theoretical examination handbook (version 1.5, October 2026) is due for review in September 2027.",
+      "action": "Read the new handbook: check question counts, times, the Part A and Part B scope and any published pass rules, then update the config, examFacts and landing.",
+      "source": "https://www.nursingcouncil.org.nz/common/Uploaded%20files/Public/Nursing/IQN/Handbook-IQN-Theoretical-Exam-October2026.pdf"
     }
   ]
 }

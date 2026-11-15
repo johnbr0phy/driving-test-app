@@ -256,6 +256,7 @@ export const TEACHES: Record<string, string> = {
   iesafepass: "a Safe Pass course or construction safety training",
   iepsa: "a QQI Level 4 Security Guarding Skills course",
   nzsfe: "a nursing school class",
+  nziqn: "a competence assessment preparation class",
   sgvl: "the taxi or private hire car vocational licence course",
 };
 

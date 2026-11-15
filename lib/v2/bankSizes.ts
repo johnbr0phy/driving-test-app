@@ -115,4 +115,5 @@ export const BANK_SIZES: Record<string, number> = {
   wonderlic: 200,
   toeflread: 194,
   iimcat: 193,
+  nziqn: 200,
 };

@@ -515,7 +515,7 @@
     "optionD": "The first problem is done",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Latency runs from the end of the instruction to the start of the response. Starting when the client picks up the pencil would time nothing, since that is the response itself."
+    "explanation": "Latency runs from the instruction (the SD) to the start of the response; with a one-word cue like \"Begin\" the timer starts as the cue is given. Starting when the client picks up the pencil would time nothing, since that is the response itself."
   },
   {
     "type": "RBT",
@@ -921,7 +921,7 @@
     "optionD": "The trend is going down",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A rising baseline means the skill is improving without the intervention, so later gains could not be credited to teaching. The data are steady, not variable."
+    "explanation": "A rising baseline means the skill is improving without the intervention, so later gains could not be credited to teaching. The points rise evenly, so the problem is the trend, not variability."
   },
   {
     "type": "RBT",
@@ -1061,7 +1061,7 @@
     "optionD": "Put back in the array",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "With replacement, the chosen item returns to the array and the unchosen items are replaced. The top item may be picked again and again."
+    "explanation": "With replacement, the chosen item is returned to the array after the client briefly uses it, so the same items are offered on every trial and the top item may be picked again and again."
   },
   {
     "type": "RBT",
@@ -2538,14 +2538,14 @@
     "state": "ALL",
     "questionId": "RBT-SACQ-018",
     "category": "rbtAcq",
-    "question": "The RBT places a client's favorite car inside a clear box that she cannot open, then waits near her. What is the RBT setting up?",
-    "optionA": "A discrimination trial",
-    "optionB": "An opportunity to mand",
-    "optionC": "A noncontingent break",
-    "optionD": "A tolerance program",
+    "question": "Which arrangement best sets up an opportunity for a client to request \"more\" at snack time?",
+    "optionA": "Leaving a full bowl in reach",
+    "optionB": "Giving one small piece of snack",
+    "optionC": "Giving snack every 2 minutes",
+    "optionD": "Naming the snack as she eats",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Putting a preferred item in view but out of reach creates motivation and an opportunity for the client to request help or the item. The RBT then prompts and reinforces the request."
+    "explanation": "A small portion of a preferred item leaves the client wanting more, which sets up a mand for \"more.\" A full bowl in reach or snack on a timer removes the reason to ask, and naming the snack models a tact, not a mand."
   },
   {
     "type": "RBT",
@@ -2832,14 +2832,14 @@
     "state": "ALL",
     "questionId": "RBT-SACQ-039",
     "category": "rbtAcq",
-    "question": "A client was taught to answer \"I'm fine\" when asked \"How are you?\" She now also says \"I'm good\" and \"Great, thanks.\" This is:",
+    "question": "A client was taught to wipe a table with a sponge. Without teaching, she starts wiping it with a paper towel and with a cloth. This is:",
     "optionA": "Stimulus generalization",
     "optionB": "Skill maintenance",
     "optionC": "Response generalization",
     "optionD": "Stimulus control",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "New, untaught responses that serve the same purpose for the same stimulus show response generalization. Stimulus generalization would be the same response to new stimuli."
+    "explanation": "New, untaught forms of a response that do the same job show response generalization. Stimulus generalization would be the same response (sponge wiping) to new stimuli, such as a different table."
   },
   {
     "type": "RBT",
@@ -3492,12 +3492,12 @@
     "category": "rbtReduce",
     "question": "If restraint is ever used, an RBT may use:",
     "optionA": "Any hold that stops the behavior",
-    "optionB": "Only trained, approved methods",
+    "optionB": "Only trained holds in the plan",
     "optionC": "Holds chosen as a punisher",
     "optionD": "Holds for any refusal to work",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Restraint, if used at all, is an emergency safety measure under the plan, agency policy and law, by trained staff. It is never a punisher."
+    "explanation": "Restraint, if used at all, is an emergency safety measure written into the client's plan and allowed by agency policy and law, used only by staff trained in it (RBT Ethics Code 2.05). Training in a hold does not add it to a client's plan, and restraint is never a punisher."
   },
   {
     "type": "RBT",
@@ -4610,28 +4610,28 @@
     "state": "ALL",
     "questionId": "RBT-SDOC-014",
     "category": "rbtDoc",
-    "question": "An RBT notices that her interval data and her coworker's for the same session agree only about half the time. The best response is to:",
-    "optionA": "Average the two sets of data together",
-    "optionB": "Bring the mismatch to the supervisor",
-    "optionC": "Keep whichever data set looks more stable",
-    "optionD": "Rewrite the behavior definition together",
+    "question": "An RBT notices that her interval data and her coworker's for the same session agree only about half the time. Their supervisor's next visit is in two weeks. The best step is to:",
+    "optionA": "Raise it at the visit in two weeks",
+    "optionB": "Contact the supervisor about it now",
+    "optionC": "Keep whichever data set looks steadier",
+    "optionD": "Rewrite the definition together",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Low agreement between observers is a data irregularity that needs the supervisor's direction. Rewriting the definition together changes the plan without the supervisor."
+    "explanation": "Low agreement means the data may not be reliable, and decisions are being made from them now, so the RBT seeks direction promptly. Waiting two weeks, picking one set or rewriting the definition without the supervisor leaves the problem in place."
   },
   {
     "type": "RBT",
     "state": "ALL",
     "questionId": "RBT-SDOC-015",
     "category": "rbtDoc",
-    "question": "A client's mother mentions that his ADHD medication dose was doubled two days ago. When should the RBT tell the supervisor?",
-    "optionA": "At the next supervision meeting",
-    "optionB": "Only if behavior changes",
-    "optionC": "Today, as soon as possible",
-    "optionD": "After two weeks of data",
+    "question": "A client's mother mentions that his ADHD medication dose was doubled two days ago and asks the RBT to keep it off the record until they see how it goes. The RBT should:",
+    "optionA": "Keep it private as she asked",
+    "optionB": "Note it only if behavior changes",
+    "optionC": "Explain it must go to the supervisor",
+    "optionD": "Tell her to ask the doctor first",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Medication changes can affect behavior and should be reported in a timely manner. Waiting for a change in behavior or a meeting delays information the supervisor needs."
+    "explanation": "A medication change can affect behavior and the data, so it is reported to the supervisor in a timely manner. Keeping it private or waiting for a change in behavior delays information the supervisor needs."
   },
   {
     "type": "RBT",
@@ -4722,14 +4722,14 @@
     "state": "ALL",
     "questionId": "RBT-SDOC-022",
     "category": "rbtDoc",
-    "question": "An RBT is writing up a session in which a client threw toys after being told to clean up. Which sentence belongs in her note?",
-    "optionA": "Got angry at cleanup and threw blocks",
-    "optionB": "Threw 3 blocks at the wall at cleanup",
-    "optionC": "Threw blocks to escape the cleanup task",
-    "optionD": "Had a rough day and threw some blocks",
+    "question": "An RBT is writing up a session in which a client screamed after a peer took his train. Which sentence belongs in her note?",
+    "optionA": "Got jealous and screamed at peer",
+    "optionB": "Screamed 2 min after peer took train",
+    "optionC": "Screamed to get the train back",
+    "optionD": "Had a meltdown over sharing",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An objective note describes what was seen and counted. Saying he was angry or wanted to escape is an interpretation, not an observation."
+    "explanation": "An objective note describes what was seen and timed. Jealousy, a meltdown or wanting the train back are interpretations of feelings or function, not observations."
   },
   {
     "type": "RBT",
@@ -4750,28 +4750,28 @@
     "state": "ALL",
     "questionId": "RBT-SDOC-024",
     "category": "rbtDoc",
-    "question": "An RBT forgot to start the timer for one 10-minute interval block. What should her note show for that block?",
-    "optionA": "An estimate of the block from memory",
-    "optionB": "Yesterday's data copied for that block",
-    "optionC": "Nothing, the block is simply left out",
+    "question": "An RBT forgot to start the timer for one 10-minute interval block. She is fairly sure the client was on task the whole time. What should her note show for that block?",
+    "optionA": "On task for the whole block",
+    "optionB": "Yesterday's data for that block",
+    "optionC": "An average of the other blocks",
     "optionD": "That the block was not recorded",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Notes must be accurate and complete, so the gap is stated plainly. Estimating or leaving it out silently misrepresents the session."
+    "explanation": "Data come from observation recorded at the time; a confident memory is still an estimate. The note states the gap plainly so the supervisor does not read an estimate as data."
   },
   {
     "type": "RBT",
     "state": "ALL",
     "questionId": "RBT-SDOC-025",
     "category": "rbtDoc",
-    "question": "A session ended 20 minutes early because the client's parent arrived to pick him up. What should the session note show?",
-    "optionA": "The actual start and end times",
-    "optionB": "The scheduled start and end times",
-    "optionC": "The scheduled times with a comment",
-    "optionD": "Only the time spent on programs",
+    "question": "A session ended 20 minutes early because the parent picked the client up. The parent asks the RBT to write the full scheduled time so the family's hours are not cut. The RBT should:",
+    "optionA": "Record the actual times",
+    "optionB": "Write the scheduled times once",
+    "optionC": "Split the difference in the note",
+    "optionD": "Leave the times off the note",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Documentation must match what actually occurred, as legal and workplace rules require. Listing the scheduled times would be inaccurate even with a comment."
+    "explanation": "Documentation must match what actually occurred, as legal, funder and workplace rules require, whoever asks. She can pass the parent's concern about hours to the supervisor."
   },
   {
     "type": "RBT",
@@ -5002,14 +5002,14 @@
     "state": "ALL",
     "questionId": "RBT-ETH-014",
     "category": "rbtEthics",
-    "question": "A family asks the RBT to post an online review praising her. The RBT should:",
-    "optionA": "Write the review for them",
-    "optionB": "Not solicit testimonials",
-    "optionC": "Agree and share it",
-    "optionD": "Offer a discount for it",
+    "question": "An RBT's agency asks her to post on its page that her clients \"always reach their goals within six months.\" The RBT should:",
+    "optionA": "Post it since the agency asked",
+    "optionB": "Decline to make the claim",
+    "optionC": "Post it without her name",
+    "optionD": "Post it if one client did",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "RBTs should not solicit testimonials from current clients or stakeholders, which is part of the code's public statements rules."
+    "explanation": "RBT Ethics Code 1.05 says RBTs do not make false, misleading or exaggerated statements about their services. Outcomes vary by client, so a promise like this misrepresents service outcomes, whoever asks for it."
   },
   {
     "type": "RBT",

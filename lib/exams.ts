@@ -99,11 +99,11 @@ export interface ExamConfig {
   icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator" | "car" | "bus";
   testCount: number;
   /** Premium as a block of content instead of the last quarter of the
-   *  dashboard (lib/examLocks.ts): practice tests from `test` on and, in
-   *  every split set, parts from `part` on. Used where an exam's bank was
+   *  dashboard (lib/examLocks.ts): practice tests from `test` on, training
+   *  sets from `set` on and, in every split set, parts from `part` on. Used where an exam's bank was
    *  extended with questions that only Premium opens (RBT, Nov 2026). The
    *  free steps come first on the dashboard. */
-  premiumFrom?: { test: number; part: number };
+  premiumFrom?: { test: number; set?: number; part?: number };
   /** Full-length timed mock exams after the practice tests (store IDs
    *  idBase + testCount + 1...): the real exam's length and clock, drawn
    *  from the whole bank in `blueprint` proportions (a spread across each
@@ -9170,18 +9170,20 @@ const rbt: ExamConfig = {
   questionIdPrefix: "RBT-",
   icon: "target",
   testCount: 5,
-  // The original 200 questions, the four training sets and Tests 1 to 4 are
-  // free. Premium is two steps at the end: Practice Test 5, 50 work-scenario
+  // Training sets 1 to 3 and Tests 1 to 3 are free. Premium is the last four
+  // steps (Nov 15 2026, was the last two): Training Set 4, Practice Test 4,
+  // Practice Test 5, 50 work-scenario
   // questions (segments SDAT, SASM, SACQ, SRED, SDOC, SETH, which sort after
   // the originals and stay out of the training sets), and one full-length
   // timed mock (test 6 by number): 85 questions in 90 minutes like the real
   // exam (75 scored + 10 unscored pilot items; every question counts here),
   // the 13/8/19/14/10/11 scored split scaled to 85, spread over the whole bank.
-  premiumFrom: { test: 5, part: 2 },
+  premiumFrom: { test: 4, set: 4 },
   trainingExcludePrefix: "RBT-S",
   mockExams: { count: 1, minutes: 90, blueprint: { rbtData: 15, rbtAssess: 9, rbtAcq: 21, rbtReduce: 16, rbtDoc: 11, rbtEthics: 13 } },
   premiumBenefits: [
     "Practice Test 5: 50 work-scenario questions",
+    "Training Set 4 (Documentation, Reporting & Ethics) and Practice Test 4",
     "A full-length timed RBT mock: 85 questions in 90 minutes",
     "Full stats on every question you miss, on every Tigertest exam",
   ],

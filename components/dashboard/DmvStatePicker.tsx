@@ -18,18 +18,11 @@ import { trackFunnelStep } from "@/lib/funnel";
 import type { Language } from "@/i18n";
 import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
 
-// "Use Texas": the visitor's state from IP geolocation (/api/geo), offered
-// as one tap beside the dropdown. A suggestion only, since VPNs and travel
-// guess wrong and switching later deletes progress.
-const SUGGEST: Partial<Record<Language, (state: string) => string>> = {
-  en: (s) => `Use ${s}`,
-  es: (s) => `Usar ${s}`,
-  vi: (s) => `Chọn ${s}`,
-  ko: (s) => `${s} 선택`,
-  zh: (s) => `选择 ${s}`,
-};
-
-function useSuggestedState(active: boolean) {
+// The visitor's state from IP geolocation (/api/geo), shown already filled
+// in the dropdown. It is only a suggestion until the person taps a step (the
+// dashboard then chooses it) or picks a state, since VPNs and travel guess
+// wrong and switching later deletes progress.
+export function useSuggestedState(active: boolean) {
   const [code, setCode] = useState<string | null>(null);
   useEffect(() => {
     if (!active) return;
@@ -47,7 +40,7 @@ function useSuggestedState(active: boolean) {
   return code;
 }
 
-function useDmvStateChoice() {
+export function useDmvStateChoice() {
   const { t } = useTranslation();
   const selectedState = useStore((state) => state.selectedState);
   const setSelectedState = useStore((state) => state.setSelectedState);
@@ -68,11 +61,9 @@ function useDmvStateChoice() {
  * `nudge` goes up each time someone taps a step that is still locked: the card
  * scrolls into view, flashes and opens its dropdown, so the tap is never dead.
  */
-export function DmvStatePrompt({ nudge = 0 }: { nudge?: number }) {
-  const { t, language } = useTranslation();
+export function DmvStatePrompt({ nudge = 0, suggested = null }: { nudge?: number; suggested?: string | null }) {
+  const { t } = useTranslation();
   const { selectedState, choose } = useDmvStateChoice();
-  const suggested = useSuggestedState(!selectedState);
-  const suggestedName = states.find((s) => s.code === suggested)?.name;
   const cardRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
   const [flash, setFlash] = useState(false);
@@ -103,7 +94,7 @@ export function DmvStatePrompt({ nudge = 0 }: { nudge?: number }) {
     >
       <div className="flex flex-wrap items-center gap-x-1.5 text-lg font-medium text-gray-800 dark:text-gray-100">
         {t("onboarding.takingTestIn") && <span>{t("onboarding.takingTestIn")}</span>}
-        <Select onValueChange={choose} open={open} onOpenChange={setOpen}>
+        <Select onValueChange={choose} open={open} onOpenChange={setOpen} value={suggested ?? undefined}>
           <SelectTrigger
             aria-label={t("signup.selectLocation")}
             className="w-auto inline-flex text-lg font-semibold text-brand-dark border-none shadow-none focus:ring-0 focus:ring-offset-0 px-1 underline decoration-brand-border decoration-2 underline-offset-4 hover:decoration-brand h-auto"
@@ -120,16 +111,7 @@ export function DmvStatePrompt({ nudge = 0 }: { nudge?: number }) {
         </Select>
         {t("onboarding.takingTestInSuffix") && <span>{t("onboarding.takingTestInSuffix")}</span>}
       </div>
-      {suggested && suggestedName && (
-        <button
-          type="button"
-          onClick={() => choose(suggested)}
-          className="mt-3 inline-flex items-center rounded-full bg-brand px-5 py-2.5 text-base font-semibold text-brand-foreground hover:bg-brand-hover"
-        >
-          {(SUGGEST[language] ?? SUGGEST.en!)(suggestedName)}
-        </button>
-      )}
-      <p className="text-xs text-gray-600 dark:text-gray-300 mt-2">{t("onboarding.stateNote")}</p>
+      <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">{t("onboarding.stateNote")}</p>
     </div>
   );
 }

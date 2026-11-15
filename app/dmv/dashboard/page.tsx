@@ -19,7 +19,7 @@ import { states } from "@/data/states";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
 import { computeMissSummary, isDrillFree } from "@/lib/missedQuestions";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
-import { DmvStatePrompt, DmvStateLine } from "@/components/dashboard/DmvStatePicker";
+import { DmvStatePrompt, DmvStateLine, useDmvStateChoice, useSuggestedState } from "@/components/dashboard/DmvStatePicker";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
@@ -122,6 +122,11 @@ function DashboardContent() {
   // A ?state= link is about to set it, so the picker would only flash (and
   // count as shown to someone who never had to choose).
   const needsState = noState && (!user || firestoreLoaded) && !linkState;
+  // The visitor's IP state, filled into the picker. The steps stay usable and
+  // a tap on one chooses it before the tap goes through.
+  const suggestedState = useSuggestedState(needsState);
+  const { choose: chooseState } = useDmvStateChoice();
+  const stepsLocked = noState && !(needsState && suggestedState);
 
   // Opening this dashboard makes the DMV the current test (the logo's home
   // and the emails' subject), state chosen or not.
@@ -433,7 +438,7 @@ function DashboardContent() {
           />
         )}
 
-        {needsState && <DmvStatePrompt nudge={stateNudge} />}
+        {needsState && <DmvStatePrompt nudge={stateNudge} suggested={suggestedState} />}
 
         {/* Hero section - card with progress */}
         <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
@@ -470,10 +475,14 @@ function DashboardContent() {
 
         {/* Interleaved Training + Tests */}
         <div
-          className={`mb-6 ${noState ? "opacity-50 select-none cursor-pointer" : ""}`}
-          // Locked until a state is chosen: a tap anywhere here points at the picker instead.
+          className={`mb-6 ${stepsLocked ? "opacity-50 select-none cursor-pointer" : ""}`}
+          // Locked until a state is chosen: a tap anywhere here points at the
+          // picker instead. With a suggested state filled in, a tap chooses it
+          // and carries on to the step.
           onClickCapture={
-            noState
+            noState && !stepsLocked && suggestedState
+              ? () => chooseState(suggestedState)
+              : stepsLocked
               ? (e) => {
                   e.preventDefault();
                   e.stopPropagation();
@@ -485,7 +494,7 @@ function DashboardContent() {
         >
           {/* inert, not aria-hidden: the steps leave the tab order and the
               accessibility tree, while a tap still reaches the nudge above. */}
-          <div className="space-y-2" inert={noState || undefined}>
+          <div className="space-y-2" inert={stepsLocked || undefined}>
           {[1, 2, 3, 4].map((id) => {
             const trainingProgress = hydrated ? getTrainingSetProgress(id) : { correct: 0, total: 50, complete: false };
             const trainingComplete = trainingProgress.complete;

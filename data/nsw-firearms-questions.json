@@ -319,7 +319,7 @@
     "optionD": "Single shot shotguns",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Section 8 excludes post-1946 pistols from the collector licence, except as the Act provides, for example under s 17C for long-standing collectors' society members."
+    "explanation": "Section 8 excludes post-1946 pistols from the collector licence, except as the Act provides, for example under s 17C for members of an approved collectors' society."
   },
   {
     "type": "AUFANSW",
@@ -746,14 +746,14 @@
     "state": "ALL",
     "questionId": "AUFANSW-PER-002",
     "category": "fnswPermits",
-    "question": "How often is a permit to acquire required?",
-    "optionA": "Once per licence term",
-    "optionB": "For each firearm acquired",
-    "optionC": "Only for the first firearm",
-    "optionD": "Only for pistols",
+    "question": "A category H (sport/target shooting) licence holder applies for a permit to acquire a pistol. The application must be supported by a written statement from:",
+    "optionA": "A licensed firearms dealer",
+    "optionB": "Their pistol club's secretary",
+    "optionC": "Their local council",
+    "optionD": "A medical practitioner",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Section 31(2) says a separate permit to acquire is required for each firearm the licence or permit holder acquires."
+    "explanation": "Section 31(3A) requires a statement from the secretary or other office holder of the pistol club, confirming adequate storage and naming the shooting activities the pistol is for."
   },
   {
     "type": "AUFANSW",
@@ -1573,7 +1573,7 @@
     "questionId": "AUFANSW-STO-009",
     "category": "fnswStorage",
     "question": "A police officer reasonably believes your rifle is not kept as Part 4 requires. Under s 42 the officer must:",
-    "optionA": "Seize it unless it is fixed now",
+    "optionA": "Seize it unless fixed without delay",
     "optionB": "Issue you a written warning only",
     "optionC": "Notify your club",
     "optionD": "Book a later inspection",

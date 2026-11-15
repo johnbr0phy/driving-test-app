@@ -69,7 +69,7 @@ Q = [
      "Section 8 puts shotguns in category A except pump action, lever action and self-loading shotguns, which fall in categories B, C or D depending on type and magazine size."),
     ("Unless the Act provides otherwise, a firearms collector licence excludes:",
      "Pistols made after 1946", ["Rifles made before 1900", "Muzzle-loading rifles", "Single shot shotguns"],
-     "Section 8 excludes post-1946 pistols from the collector licence, except as the Act provides, for example under s 17C for long-standing collectors' society members."),
+     "Section 8 excludes post-1946 pistols from the collector licence, except as the Act provides, for example under s 17C for members of an approved collectors' society."),
     ("A firearms dealer licence (other than for an armourer) authorises dealing only at:",
      "The premises in the licence", ["Any licensed gun show in NSW", "The dealer's own home", "Any approved range"],
      "Section 8 says a firearms dealer licence authorises its activities only at the premises specified in the licence, and s 18 requires those premises to be named on it."),

@@ -26,7 +26,7 @@ Q = [
      "Is not lost or stolen", ["Is cleaned every month", "Is kept at the club", "Is insured for theft"],
      "Section 39(1) requires all reasonable precautions for the firearm's safe keeping, that it is not stolen or lost and that it does not come into the possession of an unauthorised person."),
     ("A police officer reasonably believes your rifle is not kept as Part 4 requires. Under s 42 the officer must:",
-     "Seize it unless it is fixed now", ["Issue you a written warning only", "Notify your club", "Book a later inspection"],
+     "Seize it unless fixed without delay", ["Issue you a written warning only", "Notify your club", "Book a later inspection"],
      "Section 42 requires seizure of a firearm or ammunition not kept as required, unless the officer is satisfied the failure has been, or will without delay be, rectified."),
     ("Police leave your rifle with you because a storage failure was fixed on the spot. You:",
      "Can still be prosecuted", ["Can no longer be fined for it", "Must sell the rifle", "Lose your licence"],

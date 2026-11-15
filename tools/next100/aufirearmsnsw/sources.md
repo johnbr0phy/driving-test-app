@@ -34,7 +34,8 @@ No archive, cache or proxy service was used.
   the landing says so.
 - Firearms Act 1996 s 11(3)(b) (a person who has never held a licence must complete the
   prescribed firearms training and safety courses) and s 10(3) (applicants are given information
-  about the required course and storage rules). Landing and facts only; never a question.
+  about the required course and storage rules). s 11(3)(b) is asked once (LIC-015); s 10(3) is used on the
+  landing and facts only.
 
 ## Law and safety documents used in questions
 

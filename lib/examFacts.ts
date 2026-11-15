@@ -2217,6 +2217,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ETS Praxis Study Companions for Core Reading (5713), Writing (5723) and Mathematics (5733)",
     source: { name: "ETS Praxis", url: "https://praxis.ets.org/scores" },
   },
+  cbest: {
+    answer:
+      "The CBEST (California Basic Educational Skills Test) is one way to meet California's basic skills requirement for teaching and substitute credentials. It is owned by the California Commission on Teacher Credentialing and given by Pearson as three separately registered sections, all in English. Reading is 50 multiple-choice questions in 1 hour 30 minutes, about 40 percent critical analysis and evaluation and 60 percent comprehension and research skills. Mathematics is 50 multiple-choice questions in 2 hours with no calculator: estimation, measurement and statistics about 30 percent, computation and problem solving about 35 percent, and numerical and graphic relationships about 35 percent. Writing is two essays in 1 hour 30 minutes. Each section is scored 20 to 80; you pass with 41 on each section, or with a total of 123 if no section is below 37.",
+    rows: [
+      { label: "Reading", value: "50 multiple-choice questions, 1 hour 30 minutes" },
+      { label: "Mathematics", value: "50 multiple-choice questions, 2 hours, no calculator" },
+      { label: "Writing", value: "2 essays, 1 hour 30 minutes" },
+      { label: "Scores", value: "20 to 80 per section" },
+      { label: "Passing", value: "41 per section, or a 123 total with no section below 37" },
+      { label: "Given by", value: "Pearson for the CTC, at test centers or online proctored" },
+    ],
+    basedOn: "the CBEST Test Specifications for Reading and Mathematics (California Commission on Teacher Credentialing)",
+    source: { name: "CTC Exams: CBEST", url: "https://www.ctcexams.nesinc.com/TestView.aspx?f=HTML_FRAG/CA_CBEST_TestPage.html" },
+  },
   gre: {
     answer:
       "The GRE General Test takes about 1 hour 58 minutes since its September 2023 update. It has one Analytical Writing task (30 minutes), two Verbal Reasoning sections (12 questions in 18 minutes and 15 in 23 minutes) and two Quantitative Reasoning sections (12 questions in 21 minutes and 15 in 26 minutes). Verbal and Quant are section-level adaptive and each scored 130 to 170; Analytical Writing is scored 0 to 6. There is no pass mark: graduate programs set their own expectations.",

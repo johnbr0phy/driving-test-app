@@ -160,6 +160,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   faapvt: { title: "FAA Private Pilot Written Test", description: "Practice regulations, airspace, weather, aerodynamics, performance, navigation and human factors." },
   psat: { title: "Digital PSAT Practice Test", description: "A full adaptive PSAT/NMSQT with a 320 to 1520 score estimate, plus reading, writing and math drills for your phone." },
   praxis: { title: "Praxis Core for future teachers", description: "Practice Reading, Writing and Math for the Praxis Core Academic Skills for Educators tests, timed at the real pace." },
+  cbest: { title: "CBEST for California teachers", description: "Practice CBEST Reading and Math, timed at the real pace, with the basics taught first." },
   gre: { title: "GRE General Test Practice", description: "Practice adaptive Verbal and Quant sections in the shorter GRE format, with a 130 to 170 score estimate." },
   sehp: { title: "Högskoleprovet övningsprov", description: "Öva ORD, LÄS, MEK, ELF, XYZ, KVA, NOG och DTK med två övningsprov och ett uppskattat resultat från 0,0 till 2,0." },
   mcat: { title: "MCAT Practice Tests", description: "All four MCAT sections with passage sets, a 472 to 528 score estimate and drills by foundational concept and CARS skill." },

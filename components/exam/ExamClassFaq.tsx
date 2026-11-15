@@ -122,6 +122,7 @@ export const TEACHES: Record<string, string> = {
   faapvt: "a private pilot ground school",
   psat: "PSAT prep",
   praxis: "a teacher preparation program",
+  cbest: "a teacher preparation or substitute teaching program",
   gre: "GRE prep",
   gmat: "GMAT prep",
   ieltsread: "an IELTS preparation course",

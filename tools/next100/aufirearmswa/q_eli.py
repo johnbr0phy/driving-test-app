@@ -98,7 +98,7 @@ Q = [
      ["Is under 18 years of age", "Holds no firearm licence at all", "Is on a good behaviour bond"],
      "A prohibited person is a person against whom a firearms prohibition order is in force (s 5). The Commissioner must not grant a firearm authority to a prohibited or disqualified person (s 140)."),
     ("Besides a genuine reason, the Commissioner must be satisfied that the firearm itself is:",
-     "Suitable for its authorised use",
+     "Suitable for the use sought",
      ["Made in Australia, not imported", "Bought new, not second-hand", "No more than 20 years old"],
      "Section 22 requires the firearm to be suitable and appropriate for the use the licence will authorise, having regard to the purposes and circumstances of its use."),
 ]

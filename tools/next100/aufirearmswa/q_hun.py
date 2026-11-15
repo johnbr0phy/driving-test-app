@@ -11,7 +11,7 @@ Q = [
      "WA Police says standard hunting permissions are issued by a registered landowner or occupier through the WA Police Force Firearms Portal. They replaced the old property letter."),
     ("Who may give a hunting permission for a piece of land?",
      "An authorised person for the land",
-     ["Any licensed hunter who visits", "A ranger from the local shire", "Any licensed firearms dealer"],
+     ["Any licensed hunter who visits", "A ranger from the local shire", "Any authorised firearms dealer"],
      "Under s 39 an authorised person for land is the occupier, someone entitled to give permission on the occupier's behalf, or a person prescribed by the regulations."),
     ("Before anyone can hunt on private land, the land must be:",
      "Registered and approved",

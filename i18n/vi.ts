@@ -1243,6 +1243,13 @@ export const vi: TranslationKeys = {
     aafcsSafety: "Food Safety & Sanitation",
     aafcsPrep: "Food Preparation & Kitchen Safety",
     aafcsOps: "Hospitality, Lodging & Food Service Operations",
+    mblexAnatomy: "Anatomy & Physiology",
+    mblexKinesiology: "Kinesiology",
+    mblexPathology: "Pathology, Contraindications & Special Populations",
+    mblexBenefits: "Benefits & Effects of Soft Tissue Manipulation",
+    mblexAssessment: "Client Assessment & Treatment Planning",
+    mblexEthics: "Ethics, Boundaries, Laws & Regulations",
+    mblexPractice: "Guidelines for Professional Practice",
     // llqp
     llqpLifeProducts: "Life Insurance Products & Riders",
     llqpLifeContract: "Life Contracts, Underwriting & Beneficiaries",

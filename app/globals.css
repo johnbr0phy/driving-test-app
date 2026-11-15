@@ -10237,3 +10237,17 @@ html[data-ltq="control"] .landing-try {
 html:not([data-ltq="control"]) .landing-shots {
   display: none;
 }
+
+/* The landing's playable question (components/exam/LandingTryQuestion.tsx):
+   the answer letters pulse twice when the card comes into view, so it reads
+   as tappable rather than a screenshot. */
+@keyframes try-pulse {
+  0% { box-shadow: 0 0 0 0 hsl(var(--brand) / 0.55); }
+  100% { box-shadow: 0 0 0 10px hsl(var(--brand) / 0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .try-play .try-badge {
+    animation: try-pulse 1.1s ease-out 2;
+    animation-delay: calc(300ms + var(--i, 0) * 120ms);
+  }
+}

@@ -23,7 +23,7 @@ const description =
 const faqs = [
   {
     q: "What is on the Wonderlic test?",
-    a: "The Wonderlic cognitive ability test has 50 questions in 12 minutes. Wonderlic says the questions cover simple math, basic logic, language comprehension, spatial reasoning and pattern identification, and its test-taker pages name word problems, number series, logic puzzles, vocabulary and analogies, with no single topic dominating. The questions get harder as the test goes on. Employers may also give Wonderlic's personality and motivation sections, which are not timed ability questions and are not covered here.",
+    a: "The Wonderlic cognitive ability test has 50 questions in 12 minutes. Wonderlic says the questions cover simple math, basic logic, language comprehension, spatial reasoning and pattern identification, and its test-taker pages name word problems, number series, logic puzzles, vocabulary and analogies, with no single topic dominating. The questions get harder as the test goes on. Employers may also give Wonderlic's personality and motivation sections, which are not covered here.",
   },
   {
     q: "How is the Wonderlic scored, and what is a good score?",

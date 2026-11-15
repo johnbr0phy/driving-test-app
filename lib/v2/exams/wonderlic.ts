@@ -37,7 +37,7 @@ export const WONDERLIC: ExamV2Config = {
       shortName: "Cognitive",
       modules: [{ module: 1, questionCount: 50, timeLimit: minutes(12) }],
       directions:
-        "50 questions in 12 minutes, about 14 seconds each, getting harder as you go. Most people do not finish, so do not get stuck: make your best guess and move on. Work without a calculator. Move freely and flag questions to come back to.",
+        "50 questions in 12 minutes, about 14 seconds each, getting harder as you go. Do not get stuck: if a question takes too long, make your best guess and move on. Work without a calculator. Move freely and flag questions to come back to.",
       scale: percentScale(50),
       domains: ["wonderVocab", "wonderVerbal", "wonderArith", "wonderWord", "wonderSeries", "wonderLogic", "wonderSpatial"],
     },
@@ -70,9 +70,9 @@ export const WONDERLIC: ExamV2Config = {
   goalNotes: {
     40: "About the classic test's average of 20 out of 50",
     50: "Above average: 25 out of 50",
-    60: "A strong result for most roles",
-    70: "For roles that ask for a high score",
-    80: "Very few finish this many in 12 minutes",
+    60: "Well above the classic test's average: 30 out of 50",
+    70: "35 out of 50",
+    80: "40 out of 50",
   },
   testLength: "12 min",
   copy: {

@@ -671,17 +671,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Odd one out",
-    "stem": "Which word does not belong with the others: Gram, Inch, Ounce, Pound?",
+    "stem": "Which word does not belong with the others: Ton, Inch, Ounce, Pound?",
     "options": [
+      "Ounce",
       "Inch",
       "Pound",
-      "Gram",
-      "Ounce"
+      "Ton"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Ounce, gram and pound measure weight. An inch measures length."
+    "explanation": "Ounce, ton and pound measure weight. An inch measures length."
   },
   {
     "id": "WONDERLIC-T1-033",
@@ -2706,18 +2706,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Clock hands",
-    "stem": "What is the smaller angle between the clock hands at 4:00?",
+    "stem": "What is the smaller angle between the clock hands at 8:30?",
     "options": [
+      "60 degrees",
+      "75 degrees",
       "90 degrees",
-      "100 degrees",
-      "120 degrees",
-      "150 degrees"
+      "105 degrees"
     ],
     "correct": [
-      2
+      1
     ],
     "lockedOrder": true,
-    "explanation": "The hands point at 12 and 4, four hour marks apart: 4 x 30 = 120 degrees."
+    "explanation": "The minute hand is at 6 (180 degrees from 12). The hour hand is halfway between 8 and 9: 240 + 15 = 255 degrees. The angle is 255 - 180 = 75 degrees."
   },
   {
     "id": "WONDERLIC-D-028",
@@ -3029,17 +3029,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Odd one out",
-    "stem": "Which word does not belong with the others: Journal, Magazine, Newspaper, Novel?",
+    "stem": "Which word does not belong with the others: Newsletter, Magazine, Newspaper, Novel?",
     "options": [
-      "Novel",
+      "Magazine",
       "Newspaper",
-      "Journal",
-      "Magazine"
+      "Novel",
+      "Newsletter"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Magazine, newspaper and journal are periodicals, published in regular issues. A novel is a single book-length story."
+    "explanation": "Magazine, newspaper and newsletter are periodicals, published in regular issues. A novel is a single book-length story."
   },
   {
     "id": "WONDERLIC-D-043",
@@ -3760,18 +3760,18 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Cubes",
-    "stem": "A cube is painted on every face and cut into 27 equal small cubes. How many small cubes have no paint at all?",
+    "stem": "A 4 by 4 by 4 cube is painted on every face and cut into 64 equal small cubes. How many small cubes have no paint at all?",
     "options": [
       "0",
-      "1",
-      "6",
-      "8"
+      "4",
+      "8",
+      "16"
     ],
     "correct": [
-      1
+      2
     ],
     "lockedOrder": true,
-    "explanation": "Only the single cube at the very center touches no outer face."
+    "explanation": "Strip off the outer layer and an inner 2 by 2 by 2 block is left, which touches no outer face: 2 x 2 x 2 = 8."
   },
   {
     "id": "WONDERLIC-D-077",
@@ -3931,18 +3931,18 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Folding paper",
-    "stem": "A square sheet is folded in half three times and one hole is punched through every layer. How many holes are in the opened sheet?",
+    "stem": "A long strip of paper is folded into three equal panels, like a letter, and one hole is punched through all the layers. How many holes are in the opened strip?",
     "options": [
+      "1",
+      "2",
       "3",
-      "6",
-      "8",
-      "9"
+      "6"
     ],
     "correct": [
       2
     ],
     "lockedOrder": true,
-    "explanation": "Each fold doubles the layers: 2, 4, 8. One punch through 8 layers leaves 8 holes."
+    "explanation": "Folding into thirds stacks 3 layers. One punch through 3 layers leaves 3 holes."
   },
   {
     "id": "WONDERLIC-D-085",

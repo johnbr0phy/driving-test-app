@@ -364,6 +364,8 @@ def main() -> int:
                     f'against {t["n"] / 4:g} by guessing ({", ".join(t["ids"][:5])}...)')
     for rep in pat["repeats"]:
         errs.append(f'answer pattern: the key "{rep["key"]}" is used {len(rep["ids"])} times in {rep["category"]} ({", ".join(rep["ids"])})')
+    for run in pat["runs"]:
+        errs.append(f'answer pattern: {len(run["ids"])} keys in a row share "{run["term"]}" ({", ".join(run["ids"])}); training shows them in this order')
     for t in pat["antiTells"][:5]:
         warns.append(f'"{t["term"]}" is almost never the key ({t["key"]} of {t["n"]}, chance {t["chance"]}): make it right sometimes')
 

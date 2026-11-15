@@ -664,12 +664,12 @@
     "category": "forkStability",
     "question": "Un operador debe mover una carga uniforme de 60 pulgadas de fondo. ¿Qué debe hacer antes de levantarla?",
     "optionA": "Suponer capacidad completa porque la carga cabe en las horquillas",
-    "optionB": "Inclinar el mástil totalmente hacia adelante para compensar",
+    "optionB": "Usar las 60 pulgadas completas como centro de carga",
     "optionC": "Revisar la tabla de carga a un centro de carga de 30 pulgadas",
     "optionD": "Levantar rápido para que la carga no se mueva",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Una carga uniforme de 60 pulgadas tiene un centro de carga de 30 pulgadas, que está más allá del punto de 24 pulgadas de la capacidad nominal y reduce la capacidad. La inclinación hacia adelante hace al vehículo menos estable, y la velocidad no ayuda en nada a la estabilidad."
+    "explanation": "Una carga uniforme de 60 pulgadas tiene un centro de carga de 30 pulgadas, la mitad de su fondo, que está más allá del punto de 24 pulgadas de la capacidad nominal y reduce la capacidad. El centro de carga no es el fondo completo, y la velocidad no ayuda en nada a la estabilidad."
   },
   {
     "type": "FORKLIFT",
@@ -876,10 +876,10 @@
     "optionA": "Mejora el desempeño al girar",
     "optionB": "Desplaza el centro de gravedad hacia un lado",
     "optionC": "Importa solo al ir en reversa",
-    "optionD": "Está bien siempre que no exceda la capacidad",
+    "optionD": "Mueve el centro de gravedad hacia atrás",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Una carga descentrada mueve el centro de gravedad combinado hacia un lado del triángulo de estabilidad antes de que el vehículo se mueva, así que un giro o un piso disparejo puede completar la volcadura lateral. Centre la carga sobre ambas horquillas."
+    "explanation": "Una carga descentrada mueve el centro de gravedad combinado hacia un lado del triángulo de estabilidad, no hacia atrás, antes de que el vehículo se mueva, así que un giro o un piso disparejo puede completar la volcadura lateral. Centre la carga sobre ambas horquillas."
   },
   {
     "type": "FORKLIFT",
@@ -1072,10 +1072,10 @@
     "optionA": "Alarga el centro de carga y reduce la capacidad",
     "optionB": "Aumenta la estabilidad al alejar la carga del mástil",
     "optionC": "Facilita ver por encima de la carga",
-    "optionD": "No afecta la estabilidad",
+    "optionD": "Acorta el centro de carga y aumenta la capacidad",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Una carga apoyada en las puntas de las horquillas tiene su centro de gravedad lejos de la cara de las horquillas, lo que aumenta el momento de carga y puede volcar el vehículo o hacer que la carga se deslice. Meta las horquillas por completo."
+    "explanation": "Una carga apoyada en las puntas de las horquillas tiene su centro de gravedad lejos de la cara de las horquillas, lo que alarga el centro de carga, aumenta el momento de carga y puede volcar el vehículo o hacer que la carga se deslice. Nunca acorta el centro de carga. Meta las horquillas por completo."
   },
   {
     "type": "FORKLIFT",
@@ -1112,12 +1112,12 @@
     "category": "forkStability",
     "question": "¿Por qué las horquillas deben ir solo de 4 a 6 pulgadas sobre el piso al desplazarse con una carga?",
     "optionA": "Mantiene bajo el centro de gravedad",
-    "optionB": "Permite al operador ver las puntas de las horquillas",
+    "optionB": "Acorta el centro de carga",
     "optionC": "Mantiene caliente el fluido hidráulico",
     "optionD": "Evita que las horquillas se oxiden",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Desplazarse a poca altura mantiene el centro de gravedad combinado cerca del piso y dentro del triángulo de estabilidad, y aun así libra golpes, grietas y placas de andén. Ir más alto aumenta el riesgo de volcadura sin ningún beneficio."
+    "explanation": "Desplazarse a poca altura mantiene el centro de gravedad combinado cerca del piso y dentro del triángulo de estabilidad, y aun así libra golpes, grietas y placas de andén. La altura de las horquillas no cambia el centro de carga, que se mide en horizontal. Ir más alto aumenta el riesgo de volcadura sin ningún beneficio."
   },
   {
     "type": "FORKLIFT",
@@ -1785,11 +1785,11 @@
     "question": "Llevar un pasajero en un montacargas:",
     "optionA": "Está bien en traslados cortos sobre las horquillas",
     "optionB": "Está prohibido, salvo que haya un asiento seguro",
-    "optionC": "Está bien a menos de 10 millas por hora",
+    "optionC": "Está prohibido solo a más de 10 millas por hora",
     "optionD": "Está bien si el pasajero va parado en el escalón lateral",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "OSHA 1910.178 prohíbe que personas no autorizadas viajen en vehículos industriales motorizados, salvo que se haya provisto un lugar seguro para viajar. Las horquillas y los escalones laterales no son lugares seguros para viajar."
+    "explanation": "OSHA 1910.178 prohíbe que personas no autorizadas viajen en vehículos industriales motorizados, salvo que se haya provisto un lugar seguro para viajar, a cualquier velocidad. Las horquillas y los escalones laterales no son lugares seguros para viajar."
   },
   {
     "type": "FORKLIFT",
@@ -1827,11 +1827,11 @@
     "question": "Permitir que una persona se pare o camine debajo de las horquillas elevadas de un montacargas:",
     "optionA": "Está prohibido, con o sin carga",
     "optionB": "Está bien por unos segundos para recoger algo",
-    "optionC": "Está bien si las horquillas están vacías",
+    "optionC": "Está prohibido solo si las horquillas llevan carga",
     "optionD": "Está bien si la persona usa casco",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "OSHA 1910.178 prohíbe que cualquier persona se pare o pase debajo de la parte elevada de cualquier vehículo, con o sin carga. Una falla hidráulica o un toque a los controles puede dejar caer el carro sin aviso."
+    "explanation": "OSHA 1910.178 prohíbe que cualquier persona se pare o pase debajo de la parte elevada de cualquier vehículo, con o sin carga, no solo cuando lleva carga. Una falla hidráulica o un toque a los controles puede dejar caer el carro sin aviso."
   },
   {
     "type": "FORKLIFT",
@@ -1912,7 +1912,7 @@
     "optionA": "Son aceptables si las horquillas están abajo",
     "optionB": "Son aceptables en los descansos sin mover cargas",
     "optionC": "Son aceptables en un estacionamiento vacío",
-    "optionD": "Están prohibidos en todo momento",
+    "optionD": "Nunca se permiten",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "OSHA 1910.178 establece que no se permiten las maniobras temerarias ni los juegos bruscos. Los montacargas se vuelcan con facilidad y pesan miles de libras, así que lucirse ha matado a muchos operadores."
@@ -2134,12 +2134,12 @@
     "category": "forkOperation",
     "question": "Usar el teléfono celular mientras se maneja un montacargas:",
     "optionA": "Es aceptable con un dispositivo de manos libres",
-    "optionB": "Es aceptable en áreas sin peatones",
+    "optionB": "Está prohibido solo si hay peatones cerca",
     "optionC": "Está prohibido; estacione y asegure el vehículo",
     "optionD": "Es aceptable cuando las horquillas están vacías",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Operar un montacargas requiere atención total a los peatones, al giro de la parte trasera, a la altura libre y a la carga. Las distracciones causan choques, y los empleadores prohíben usar el teléfono mientras se opera."
+    "explanation": "Operar un montacargas requiere atención total a los peatones, al giro de la parte trasera, a la altura libre y a la carga, haya o no gente cerca. Las distracciones causan choques, y los empleadores prohíben usar el teléfono mientras se opera."
   },
   {
     "type": "FORKLIFT",
@@ -2301,13 +2301,13 @@
     "questionId": "FORK-OPR-045",
     "category": "forkOperation",
     "question": "Bajarse de un montacargas mientras todavía está en movimiento:",
-    "optionA": "Es aceptable a paso lento",
+    "optionA": "Está prohibido solo a más del paso de una persona",
     "optionB": "Es aceptable una vez que las horquillas están abajo",
     "optionC": "Está prohibido; detenga y asegure el vehículo",
     "optionD": "Es aceptable si el vehículo está en neutral",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Bajarse de un vehículo en movimiento provoca caídas y que los vehículos rueden contra racks o personas. El vehículo debe estar totalmente detenido, con las horquillas abajo y el freno puesto, antes de que el operador deje el asiento."
+    "explanation": "Bajarse de un vehículo en movimiento, aunque vaya despacio, provoca caídas y que los vehículos rueden contra racks o personas. El vehículo debe estar totalmente detenido, con las horquillas abajo y el freno puesto, antes de que el operador deje el asiento."
   },
   {
     "type": "FORKLIFT",
@@ -2401,11 +2401,11 @@
     "question": "Girar un montacargas en una rampa:",
     "optionA": "Está prohibido; gire solo en suelo nivelado",
     "optionB": "Se permite si primero se baja la carga",
-    "optionC": "Se permite cuando el vehículo va sin carga",
+    "optionC": "Está prohibido solo cuando lleva carga",
     "optionD": "Se permite en rampas de menos del 5 por ciento",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Girar agrega una fuerza lateral al desplazamiento hacia adelante o hacia atrás que ya causó la pendiente, y así ocurren muchas volcaduras en rampas. Suba y baje en línea recta y gire solo en lo plano."
+    "explanation": "Girar agrega una fuerza lateral al desplazamiento hacia adelante o hacia atrás que ya causó la pendiente, y así ocurren muchas volcaduras en rampas, con o sin carga. Suba y baje en línea recta y gire solo en lo plano."
   },
   {
     "type": "FORKLIFT",
@@ -2570,7 +2570,7 @@
     "optionA": "Es aceptable si se hace despacio y con cuidado",
     "optionB": "Es aceptable solo con cargas ligeras",
     "optionC": "Es la forma estándar de juntar una fila de tarimas",
-    "optionD": "Está prohibido; daña la tarima y la carga",
+    "optionD": "No se permite; daña la tarima y la carga",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Empujar concentra la fuerza en las puntas de las horquillas, parte las tablas de la tarima, hace inestable la carga y puede tirar productos por el otro lado. Las cargas se llevan, no se empujan, y una tarima se reacomoda levantándola."
@@ -2609,7 +2609,7 @@
     "questionId": "FORK-LOD-019",
     "category": "forkLoads",
     "question": "Elevar a una persona sobre las horquillas solas o sobre una tarima:",
-    "optionA": "Está prohibido",
+    "optionA": "No se permite en ningún caso",
     "optionB": "Es aceptable para elevaciones de menos de 6 pies",
     "optionC": "Es aceptable si la persona se agarra del mástil",
     "optionD": "Es aceptable si la persona es un operador certificado",
@@ -2654,7 +2654,7 @@
     "optionA": "Llevarla elevada para librar obstáculos",
     "optionB": "Levantarla con las puntas, lejos del mástil",
     "optionC": "Llevarla descentrada para librar el rack",
-    "optionD": "Centrarla, asegurarla y tomar en cuenta el ancho",
+    "optionD": "Equilibrarla, asegurarla y tomar en cuenta el ancho",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Centrarla mantiene el centro de gravedad combinado en medio del triángulo de estabilidad, y el operador debe prever el recorrido más amplio al girar y al entrar a los pasillos. Llevarla descentrada o elevada mueve el centro de gravedad hacia el borde."

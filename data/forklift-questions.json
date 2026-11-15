@@ -664,12 +664,12 @@
     "category": "forkStability",
     "question": "An operator must move a uniform load that is 60 inches deep. What should the operator do before lifting it?",
     "optionA": "Assume full capacity because the load fits the forks",
-    "optionB": "Tilt the mast fully forward to compensate",
+    "optionB": "Use the full 60 inches as the load center",
     "optionC": "Check the load chart at a 30-inch load center",
     "optionD": "Lift quickly so the load cannot shift",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A 60-inch uniform load has a 30-inch load center, which is beyond the 24-inch rating point and lowers capacity. Forward tilt makes the truck less stable, and speed does nothing for stability."
+    "explanation": "A 60-inch uniform load has a 30-inch load center, half its depth, which is beyond the 24-inch rating point and lowers capacity. The load center is not the full depth, and speed does nothing for stability."
   },
   {
     "type": "FORKLIFT",
@@ -876,10 +876,10 @@
     "optionA": "Improves turning performance",
     "optionB": "Shifts the center of gravity sideways",
     "optionC": "Matters only when traveling in reverse",
-    "optionD": "Is fine as long as it is under capacity",
+    "optionD": "Moves the center of gravity rearward",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An off-center load moves the combined center of gravity toward one side of the stability triangle before the truck even moves, so a turn or uneven floor can finish the lateral tip-over. Center the load across both forks."
+    "explanation": "An off-center load moves the combined center of gravity toward one side of the stability triangle, not backward, before the truck even moves, so a turn or uneven floor can finish the lateral tip-over. Center the load across both forks."
   },
   {
     "type": "FORKLIFT",
@@ -1072,10 +1072,10 @@
     "optionA": "Lengthens the load center and cuts capacity",
     "optionB": "Increases stability by keeping the load away from the mast",
     "optionC": "Makes the load easier to see over",
-    "optionD": "Has no effect on stability",
+    "optionD": "Shortens the load center and adds capacity",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A load resting on the fork tips has its center of gravity far from the fork face, which increases the load moment and can tip the truck or let the load slide off. Insert the forks fully."
+    "explanation": "A load resting on the fork tips has its center of gravity far from the fork face, which lengthens the load center, increases the load moment and can tip the truck or let the load slide off. It never shortens the load center. Insert the forks fully."
   },
   {
     "type": "FORKLIFT",
@@ -1112,12 +1112,12 @@
     "category": "forkStability",
     "question": "Why should forks be kept only 4 to 6 inches off the floor while traveling with a load?",
     "optionA": "It keeps the center of gravity low",
-    "optionB": "It allows the operator to see the fork tips",
+    "optionB": "It shortens the load center",
     "optionC": "It keeps the hydraulic fluid warm",
     "optionD": "It keeps the forks from rusting",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Low travel height keeps the combined center of gravity close to the floor and inside the stability triangle while still clearing bumps, cracks and dock plates. Any higher increases tip-over risk without benefit."
+    "explanation": "Low travel height keeps the combined center of gravity close to the floor and inside the stability triangle while still clearing bumps, cracks and dock plates. Fork height does not change the load center, which is measured horizontally. Any higher increases tip-over risk without benefit."
   },
   {
     "type": "FORKLIFT",
@@ -1785,11 +1785,11 @@
     "question": "Carrying a passenger on a forklift is:",
     "optionA": "Fine for short trips on the forks",
     "optionB": "Prohibited unless a safe seat is provided",
-    "optionC": "Fine at speeds under 10 miles per hour",
+    "optionC": "Prohibited only above 10 miles per hour",
     "optionD": "Fine if the passenger stands on the side step",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "OSHA 1910.178 bars unauthorized personnel from riding on powered industrial trucks unless a safe place to ride has been provided. Forks and side steps are not safe places to ride."
+    "explanation": "OSHA 1910.178 bars unauthorized personnel from riding on powered industrial trucks unless a safe place to ride has been provided, at any speed. Forks and side steps are not safe places to ride."
   },
   {
     "type": "FORKLIFT",
@@ -1827,11 +1827,11 @@
     "question": "Allowing a person to stand or walk under the elevated forks of a forklift is:",
     "optionA": "Prohibited, loaded or empty",
     "optionB": "Fine for a few seconds to retrieve an item",
-    "optionC": "Fine if the forks are empty",
+    "optionC": "Prohibited only while the forks are loaded",
     "optionD": "Fine if the person wears a hard hat",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "OSHA 1910.178 prohibits anyone from standing or passing under the elevated portion of any truck, loaded or empty. A hydraulic failure or control bump can drop the carriage without warning."
+    "explanation": "OSHA 1910.178 prohibits anyone from standing or passing under the elevated portion of any truck, loaded or empty, not only when it is loaded. A hydraulic failure or control bump can drop the carriage without warning."
   },
   {
     "type": "FORKLIFT",
@@ -1912,7 +1912,7 @@
     "optionA": "Acceptable if the forks are lowered",
     "optionB": "Acceptable on breaks with no loads moving",
     "optionC": "Acceptable in an empty parking lot",
-    "optionD": "Prohibited at all times",
+    "optionD": "Never allowed",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "OSHA 1910.178 states that stunt driving and horseplay are not permitted. Forklifts tip easily and weigh thousands of pounds, so showing off has killed many operators."
@@ -2134,12 +2134,12 @@
     "category": "forkOperation",
     "question": "Using a cell phone while driving a forklift is:",
     "optionA": "Acceptable with a hands-free device",
-    "optionB": "Acceptable in areas with no pedestrians",
+    "optionB": "Prohibited only where pedestrians are near",
     "optionC": "Prohibited; park and secure the truck",
     "optionD": "Acceptable when the forks are empty",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Operating a forklift requires full attention to pedestrians, tail swing, overhead clearance and the load. Distraction causes collisions, and employers prohibit phone use while operating."
+    "explanation": "Operating a forklift requires full attention to pedestrians, tail swing, overhead clearance and the load, whether or not people are nearby. Distraction causes collisions, and employers prohibit phone use while operating."
   },
   {
     "type": "FORKLIFT",
@@ -2301,13 +2301,13 @@
     "questionId": "FORK-OPR-045",
     "category": "forkOperation",
     "question": "Getting off a forklift while it is still moving is:",
-    "optionA": "Acceptable at a slow walking speed",
+    "optionA": "Prohibited only above walking speed",
     "optionB": "Acceptable once the forks are lowered",
     "optionC": "Prohibited; stop and secure the truck",
     "optionD": "Acceptable if the truck is in neutral",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Dismounting a moving truck leads to falls and to trucks rolling into racks or people. The truck must be fully stopped, the forks lowered and the brake set before the operator leaves the seat."
+    "explanation": "Dismounting a moving truck, even a slow one, leads to falls and to trucks rolling into racks or people. The truck must be fully stopped, the forks lowered and the brake set before the operator leaves the seat."
   },
   {
     "type": "FORKLIFT",
@@ -2401,11 +2401,11 @@
     "question": "Turning a forklift on a ramp is:",
     "optionA": "Prohibited; turn only on level ground",
     "optionB": "Allowed if the load is lowered first",
-    "optionC": "Allowed when the truck is unloaded",
+    "optionC": "Prohibited only when carrying a load",
     "optionD": "Allowed on ramps under a 5 percent grade",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Turning adds sideways force to the forward or rearward shift the slope has already caused, which is how many ramp tip-overs happen. Travel straight up and down and turn only on the flat."
+    "explanation": "Turning adds sideways force to the forward or rearward shift the slope has already caused, which is how many ramp tip-overs happen, loaded or empty. Travel straight up and down and turn only on the flat."
   },
   {
     "type": "FORKLIFT",
@@ -2570,7 +2570,7 @@
     "optionA": "Acceptable if done slowly and carefully",
     "optionB": "Acceptable for light loads only",
     "optionC": "The standard way to tighten a row of pallets",
-    "optionD": "Prohibited; it damages the pallet and load",
+    "optionD": "Not allowed; it damages the pallet and load",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Pushing concentrates force on the fork tips, splits pallet boards, makes the load unstable and can shove products off the far side. Loads are carried, not pushed, and a pallet is repositioned by picking it up."
@@ -2609,7 +2609,7 @@
     "questionId": "FORK-LOD-019",
     "category": "forkLoads",
     "question": "Lifting a person on the bare forks or on a pallet is:",
-    "optionA": "Prohibited",
+    "optionA": "Not allowed at all",
     "optionB": "Acceptable for lifts under 6 feet",
     "optionC": "Acceptable if the person holds the mast",
     "optionD": "Acceptable if the person is a certified operator",
@@ -2654,7 +2654,7 @@
     "optionA": "Carry it raised to clear obstacles",
     "optionB": "Lift it on the fork tips, away from the mast",
     "optionC": "Carry it off-center to clear the rack",
-    "optionD": "Center it, secure it and allow for the width",
+    "optionD": "Balance it, secure it and allow for the width",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Centering keeps the combined center of gravity in the middle of the stability triangle, and the operator must plan for the wider swing path when turning and entering aisles. Off-center or raised carrying moves the center of gravity toward the edge."

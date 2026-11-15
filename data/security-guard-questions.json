@@ -7,11 +7,11 @@
     "question": "What is the primary role of an unarmed security guard at a typical post?",
     "optionA": "Investigate crimes for prosecution",
     "optionB": "Enforce criminal law like police",
-    "optionC": "Remove anyone who seems out of place",
+    "optionC": "Observe and arrest suspects",
     "optionD": "Observe, deter and report",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Unarmed guards are hired to be a visible deterrent, to watch for problems and to report them accurately. Investigating and prosecuting crimes and enforcing the law with police powers belong to law enforcement, not private security."
+    "explanation": "Unarmed guards are hired to be a visible deterrent, to watch for problems and to report them accurately. Arresting suspects, investigating and prosecuting crimes and enforcing the law with police powers belong to law enforcement, not private security."
   },
   {
     "type": "SECGUARD",
@@ -134,10 +134,10 @@
     "optionA": "Refuse and report the request",
     "optionB": "Agree once; the coworker has helped before",
     "optionC": "Sign only if the client is unlikely to check",
-    "optionD": "Agree if the coworker returns the favor",
+    "optionD": "Sign it, then report it",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Falsifying time records is fraud against the employer and the client. Loyalty to a coworker never justifies dishonesty, and the request itself should be reported."
+    "explanation": "Falsifying time records is fraud against the employer and the client. Loyalty to a coworker never justifies dishonesty, and the request itself should be reported; signing first and reporting afterwards still means the guard falsified the record."
   },
   {
     "type": "SECGUARD",
@@ -204,10 +204,10 @@
     "optionA": "Wake the coworker and report it",
     "optionB": "Cover for the coworker; nights are tiring",
     "optionC": "Photograph it for the team group chat",
-    "optionD": "Say nothing unless the client notices",
+    "optionD": "Report it, let the coworker sleep",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Sleeping on duty leaves the site unprotected and is a serious violation that supervisors must know about. Covering it up makes the guard a party to the misconduct, and sharing photos is unprofessional."
+    "explanation": "Sleeping on duty leaves the site unprotected and is a serious violation that supervisors must know about. The coworker is woken at once, since reporting it while they sleep leaves the post unwatched; covering it up makes the guard a party to the misconduct, and sharing photos is unprofessional."
   },
   {
     "type": "SECGUARD",
@@ -245,11 +245,11 @@
     "question": "A guard is offered a cash tip by a tenant to let an unregistered visitor in after hours. The guard should:",
     "optionA": "Accept; tenants may invite visitors",
     "optionB": "Decline, follow procedure and report it",
-    "optionC": "Accept, but log the visitor's name",
+    "optionC": "Accept, admit them, then report it",
     "optionD": "Decline the tip but admit the visitor anyway",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Payment to bypass procedure is a bribe, and allowing the entry defeats the access control the client pays for. The offer itself is a security concern that should be documented and reported."
+    "explanation": "Payment to bypass procedure is a bribe, and allowing the entry defeats the access control the client pays for. The offer itself is a security concern that should be documented and reported, and reporting it after taking the money and admitting the visitor does not undo either."
   },
   {
     "type": "SECGUARD",
@@ -299,13 +299,13 @@
     "questionId": "SG-ROL-022",
     "category": "sgRole",
     "question": "A guard sees a tenant's employee taking office supplies home in a bag. The guard has no authority from post orders to search bags. What should the guard do?",
-    "optionA": "Take the bag and search it on the spot",
+    "optionA": "Search the bag, then report it",
     "optionB": "Confront the employee in front of coworkers",
     "optionC": "Note the details and report them",
     "optionD": "Do nothing; supplies are low value",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A guard's job is to observe and report; the client decides how to handle its employee. Searching without authority and public confrontation can create liability, and ignoring possible theft because it seems minor is not an option."
+    "explanation": "A guard's job is to observe and report; the client decides how to handle its employee. Searching without authority is not fixed by reporting it afterwards, public confrontation can create liability, and ignoring possible theft because it seems minor is not an option."
   },
   {
     "type": "SECGUARD",
@@ -358,7 +358,7 @@
     "optionA": "Procedures are copyrighted by the company",
     "optionB": "The public is not interested in security",
     "optionC": "Online posts are forwarded to the client",
-    "optionD": "Details help offenders plan around them",
+    "optionD": "Details let offenders plan around them",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Operational details are confidential because they reveal weaknesses. The risk is practical, not about copyright or audience interest."
@@ -540,10 +540,10 @@
     "optionA": "None; talk, and call police if needed",
     "optionB": "Pepper spray to end it quickly",
     "optionC": "A takedown so the trespasser cannot flee",
-    "optionD": "Pushing the trespasser toward the exit",
+    "optionD": "Push them out, then call police",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Words alone do not justify physical force. The guard directs the person to leave and summons police; using force on a non-threatening person exposes the guard to assault charges."
+    "explanation": "Words alone do not justify physical force. The guard directs the person to leave and summons police; using force on a non-threatening person exposes the guard to assault charges, whether or not police are called afterwards."
   },
   {
     "type": "SECGUARD",
@@ -649,13 +649,13 @@
     "questionId": "SG-LEG-015",
     "category": "sgLegal",
     "question": "A person refuses to leave the property after a clear request. What is the guard's correct next step?",
-    "optionA": "Physically remove the person from the site",
-    "optionB": "Lock the person inside until morning",
+    "optionA": "Observe, then remove them by force",
+    "optionB": "Call police and lock them inside",
     "optionC": "Notify police and observe from a distance",
     "optionD": "Use pepper spray to gain compliance",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Once a person refuses, the matter becomes a police issue; the guard observes, documents and waits. Force or confinement for simple trespass exposes the guard to liability."
+    "explanation": "Once a person refuses, the matter becomes a police issue; the guard observes, documents and waits. Force or confinement for simple trespass exposes the guard to liability, even when police have been called."
   },
   {
     "type": "SECGUARD",
@@ -862,7 +862,7 @@
     "optionA": "Within one hour, once the manager approves",
     "optionB": "At the end of the shift, with the daily report",
     "optionC": "Immediately, to keep the detention short",
-    "optionD": "Only if the suspect refuses to pay",
+    "optionD": "Call only if they refuse to pay",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "The reasonableness of a detention depends heavily on its length, so police are called right away. Delays to negotiate payment or wait for approval push the detention into false imprisonment territory."
@@ -887,13 +887,13 @@
     "questionId": "SG-LEG-032",
     "category": "sgLegal",
     "question": "A guard has witnessed a theft and the suspect is running toward a busy street. What is the safest and most appropriate action?",
-    "optionA": "Pursue on foot through traffic to arrest",
+    "optionA": "Chase on foot while calling police",
     "optionB": "Throw an object to trip the suspect",
     "optionC": "Block the suspect with the patrol vehicle",
     "optionD": "Do not chase; describe and call police",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Pursuits endanger the guard, the suspect and the public, and most companies prohibit them. A good description and immediate police call recover more property with far less risk."
+    "explanation": "Pursuits endanger the guard, the suspect and the public, and most companies prohibit them, even while the guard is on the phone to police. A good description and immediate police call recover more property with far less risk."
   },
   {
     "type": "SECGUARD",
@@ -932,10 +932,10 @@
     "optionA": "Retreat, call police, observe from a distance",
     "optionB": "Confront the suspect and demand surrender",
     "optionC": "Make a citizen's arrest for the felony",
-    "optionD": "Wait until the suspect leaves, then search for evidence",
+    "optionD": "Wait till they leave, then call police",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Having the legal right to arrest does not make it wise or safe; personal safety and good information to police matter most. Confronting an armed suspect unarmed risks lives, including the guard's own."
+    "explanation": "Having the legal right to arrest does not make it wise or safe; personal safety and good information to police matter most, and police are called at once, not after the suspect has gone. Confronting an armed suspect unarmed risks lives, including the guard's own."
   },
   {
     "type": "SECGUARD",
@@ -957,7 +957,7 @@
     "questionId": "SG-LEG-037",
     "category": "sgLegal",
     "question": "A guard is accused of discrimination for stopping a shopper. Which practice protects against this?",
-    "optionA": "Base every stop on observed behavior",
+    "optionA": "Base every stop on what they do",
     "optionB": "Stop only people shopping alone",
     "optionC": "Stop every tenth customer at random",
     "optionD": "Avoid stops so no one can complain",
@@ -986,12 +986,12 @@
     "category": "sgLegal",
     "question": "What should a guard do if a person being lawfully detained complains of chest pain?",
     "optionA": "Ignore it as a common escape trick",
-    "optionB": "Tell the person to wait for police",
+    "optionB": "Call medical help once police arrive",
     "optionC": "Have the person sign a liability waiver first",
     "optionD": "Call for medical help; loosen restraints",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A detained person's health is the guard's responsibility, and a medical emergency outweighs holding a suspect. Dismissing symptoms can lead to serious harm and liability."
+    "explanation": "A detained person's health is the guard's responsibility, and a medical emergency outweighs holding a suspect, so help is called at once rather than when police arrive. Dismissing symptoms can lead to serious harm and liability."
   },
   {
     "type": "SECGUARD",
@@ -1070,7 +1070,7 @@
     "category": "sgObservation",
     "question": "Why should foot patrol routes and times be varied?",
     "optionA": "Variety keeps the guard from getting bored",
-    "optionB": "Predictable patterns help offenders plan",
+    "optionB": "Offenders can plan around patterns",
     "optionC": "The client is billed per unique route",
     "optionD": "Random routes let the guard skip areas",
     "correctAnswer": "B",
@@ -1266,12 +1266,12 @@
     "category": "sgObservation",
     "question": "A master key goes missing. What is the appropriate response?",
     "optionA": "Report it at once so locks can be rekeyed",
-    "optionB": "Wait a few days to see if it turns up first",
+    "optionB": "Report it if not found in a few days",
     "optionC": "Cut a new copy from the backup quietly",
     "optionD": "Adjust the key log so the loss is hidden",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A missing master key compromises every lock it opens, and only prompt reporting lets the client manage the risk. Delay and concealment put the site at risk and are dishonest."
+    "explanation": "A missing master key compromises every lock it opens, and only prompt reporting lets the client manage the risk. Waiting a few days before reporting, or hiding the loss, puts the site at risk and is dishonest."
   },
   {
     "type": "SECGUARD",
@@ -1294,12 +1294,12 @@
     "category": "sgObservation",
     "question": "A guard notices a camera has a dark screen on the monitor. The correct action is to:",
     "optionA": "Ignore it; the other cameras still work",
-    "optionB": "Open the housing and try to repair it",
+    "optionB": "Open it to fix it, then report it",
     "optionC": "Report the outage and patrol that area more",
     "optionD": "Turn off the monitor so the screen is not distracting",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A camera outage creates a blind spot that may be accidental or deliberate, so it is reported and compensated for with patrols. Guards are not technicians and should not open equipment."
+    "explanation": "A camera outage creates a blind spot that may be accidental or deliberate, so it is reported and compensated for with patrols. Guards are not technicians and should not open equipment, even if they report it afterwards."
   },
   {
     "type": "SECGUARD",
@@ -1477,11 +1477,11 @@
     "question": "How should a guard handle an employee who holds a secured door open for a group behind them?",
     "optionA": "Ignore it; employees may have guests",
     "optionB": "Remind them politely; report repeat cases",
-    "optionC": "Lock the door so it cannot be held open",
+    "optionC": "Report every case to the police",
     "optionD": "Reprimand the employee in front of the group",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Guards educate courteously and let management handle discipline. Public reprimands damage relationships, and permanent locking would block legitimate use and emergency exit."
+    "explanation": "Guards educate courteously and let management handle discipline. Holding a door is a policy breach, not a crime, so it is not a police matter, and public reprimands damage relationships."
   },
   {
     "type": "SECGUARD",
@@ -1506,7 +1506,7 @@
     "optionA": "Checkpoint scans get logged out of sequence",
     "optionB": "The route takes longer to complete",
     "optionC": "Fewer points get checked each round",
-    "optionD": "Observers can predict where the guard is",
+    "optionD": "Anyone watching can predict it",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Fixed, timed patrols can be clocked by anyone watching the site for a few nights, so an offender knows exactly when an area is unwatched. Varying routes and times within the post orders defeats this; checkpoint sequence and patrol length are not the risk."
@@ -1519,11 +1519,11 @@
     "question": "What should a guard do if they find a window broken from the outside with glass on the floor inside?",
     "optionA": "Stay out, call police and secure the area",
     "optionB": "Sweep up the glass so no one is cut",
-    "optionC": "Enter at once to check for missing property",
+    "optionC": "Go in to check, then call police",
     "optionD": "Tape the window and resume patrol",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Glass inside means the window was broken from outside and someone may be in the building. Cleaning up destroys evidence, and entering alone is unsafe."
+    "explanation": "Glass inside means the window was broken from outside and someone may be in the building. Cleaning up destroys evidence, and entering alone to check before calling police is unsafe."
   },
   {
     "type": "SECGUARD",
@@ -1575,11 +1575,11 @@
     "question": "What is the correct action when a guard sees a person photographing the loading dock and security cameras?",
     "optionA": "Take the camera and delete the photos",
     "optionB": "Ignore it; photography is always legal",
-    "optionC": "Chase the person off the property with threats",
+    "optionC": "Chase the person off, then report it",
     "optionD": "Note a description, ask if safe, and report",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Photographing security features is a recognized pre-operational surveillance indicator and should be documented and reported. Seizing property is unlawful, and ignoring it misses a key warning sign."
+    "explanation": "Photographing security features is a recognized pre-operational surveillance indicator and should be documented and reported. Seizing property is unlawful, chasing the person off loses the description the report needs, and ignoring it misses a key warning sign."
   },
   {
     "type": "SECGUARD",
@@ -1603,11 +1603,11 @@
     "question": "A guard monitoring an access control system sees an employee's badge used at two distant doors within a minute. This most likely indicates:",
     "optionA": "A cloned or shared badge; report it",
     "optionB": "The employee is simply a fast walker",
-    "optionC": "A normal time error that can be ignored",
+    "optionC": "A clock error to report next week",
     "optionD": "The employee was given wider access",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Impossible travel times are a classic sign of badge sharing or cloning. It is a security concern to report, not a harmless glitch."
+    "explanation": "Impossible travel times are a classic sign of badge sharing or cloning. It is a security concern to report now, not a harmless glitch to deal with later."
   },
   {
     "type": "SECGUARD",
@@ -1814,7 +1814,7 @@
     "optionA": "Start talking at once so airtime is not wasted",
     "optionB": "Say the entire message as fast as possible",
     "optionC": "Use a first name and a casual greeting",
-    "optionD": "Call the unit, identify yourself, then wait",
+    "optionD": "Name the unit, identify yourself, then wait",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Identifying the called unit and yourself, then waiting, ensures the right person is listening before the message is sent. Rushing or chatting wastes the channel and causes missed messages."
@@ -1910,12 +1910,12 @@
     "category": "sgReports",
     "question": "What should a guard do if a supervisor asks them to change facts in a report to make the company look better?",
     "optionA": "Change them; the supervisor owns the report",
-    "optionB": "Change them but keep a copy of the original",
+    "optionB": "Change them, then report the request",
     "optionC": "Delete the report so no one has to decide",
     "optionD": "Refuse and report the request upward",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A report is a factual record, and altering facts is falsification that can be criminal if the report is used in court. The guard's integrity is the only protection."
+    "explanation": "A report is a factual record, and altering facts is falsification that can be criminal if the report is used in court. Reporting the request after making the change still leaves a falsified report; the guard refuses first."
   },
   {
     "type": "SECGUARD",
@@ -2164,10 +2164,10 @@
     "optionA": "Activate the alarm or call for help first",
     "optionB": "Try to put the fire out before anyone notices",
     "optionC": "Open windows to let the smoke out",
-    "optionD": "Search for the person who started it",
+    "optionD": "Fight it, call for help if it grows",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Alerting others and summoning the fire department comes first, because a small fire can grow faster than expected. Only then, if trained and the fire is small and an exit is at the guard's back, does the guard use an extinguisher."
+    "explanation": "Alerting others and summoning the fire department comes first, because a small fire can grow faster than expected; waiting until it grows is too late. Only then, if trained and the fire is small and an exit is at the guard's back, does the guard use an extinguisher."
   },
   {
     "type": "SECGUARD",
@@ -2247,11 +2247,11 @@
     "question": "A person with a mobility impairment cannot use the stairs during an evacuation. What should the guard do?",
     "optionA": "Carry the person down the stairs alone, whatever the risk",
     "optionB": "Take them to the area of refuge and report it",
-    "optionC": "Tell the person to wait at their desk for help",
+    "optionC": "Report it and leave them at their desk",
     "optionD": "Use the elevator since it is the only option",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Areas of refuge are designed for this, and responders need the precise location. Solo carries can injure both people, waiting at a desk leaves the person unaccounted for, and elevators are unsafe during fire."
+    "explanation": "Areas of refuge are designed for this, and responders need the precise location. Solo carries can injure both people, leaving the person at a desk puts them away from the protected area even if it is reported, and elevators are unsafe during fire."
   },
   {
     "type": "SECGUARD",
@@ -2260,12 +2260,12 @@
     "category": "sgEmergency",
     "question": "What is the purpose of the assembly point after an evacuation?",
     "optionA": "To wait for permission to get belongings",
-    "optionB": "To hold a meeting about the alarm's cause",
+    "optionB": "To report on what caused the alarm",
     "optionC": "To count heads and report anyone missing",
     "optionD": "To keep people away from news cameras",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The head count at the assembly point tells responders whether anyone may still be inside. Re-entry happens only when the fire department declares the building safe."
+    "explanation": "The head count at the assembly point tells responders whether anyone may still be inside. Finding the cause is for the fire department, and re-entry happens only when it declares the building safe."
   },
   {
     "type": "SECGUARD",
@@ -2274,7 +2274,7 @@
     "category": "sgEmergency",
     "question": "A guard finds an employee unconscious and not breathing normally. What is the first step?",
     "optionA": "Give the person sips of water",
-    "optionB": "Call 911 and start CPR if trained",
+    "optionB": "Dial 911 and start CPR if trained",
     "optionC": "Move the person to a comfortable chair",
     "optionD": "Wait a few minutes to see if the person wakes",
     "correctAnswer": "B",
@@ -2289,7 +2289,7 @@
     "question": "What is the general rule for a guard who is not trained in first aid when someone is seriously injured?",
     "optionA": "Attempt any procedure seen on television",
     "optionB": "Call for help and stay within your training",
-    "optionC": "Move the person to the lobby for paramedics",
+    "optionC": "Move them, then call for help",
     "optionD": "Leave the person alone to avoid liability",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -2301,7 +2301,7 @@
     "questionId": "SG-EMR-017",
     "category": "sgEmergency",
     "question": "Which first aid step is correct for severe external bleeding?",
-    "optionA": "Apply firm direct pressure until help comes",
+    "optionA": "Press firmly on the wound and hold",
     "optionB": "Rinse the wound under water for ten minutes",
     "optionC": "Apply a loose bandage and elevate the head",
     "optionD": "Give the person aspirin to thin the blood",
@@ -2429,11 +2429,11 @@
     "question": "A guard notices a strong chemical odor and several people coughing near a storage area. What is the correct response?",
     "optionA": "Enter the area to close the leaking container",
     "optionB": "Move upwind, evacuate and call for help",
-    "optionC": "Spray water on the area to dilute it",
+    "optionC": "Stay to watch it, call for help",
     "optionD": "Open the container to identify it by smell",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Unknown chemical releases require distance, isolation and trained responders. Entering, spraying or smelling the chemical exposes the guard to the hazard."
+    "explanation": "Unknown chemical releases require distance, isolation and trained responders. Entering, staying near it or smelling the chemical exposes the guard to the hazard."
   },
   {
     "type": "SECGUARD",
@@ -2470,12 +2470,12 @@
     "category": "sgEmergency",
     "question": "A guard is first to arrive at a vehicle accident in the parking lot with an injured driver. Which is the correct priority?",
     "optionA": "Move the victim out of the car for medics",
-    "optionB": "Collect insurance information first",
+    "optionB": "Collect insurance details, then call",
     "optionC": "Make the scene safe, call for help, then care",
     "optionD": "Direct traffic and leave the victim for medics",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Scene safety, summoning help and care within training follow the standard order. Moving a victim can worsen spinal injuries unless fire or traffic makes it necessary."
+    "explanation": "Scene safety, summoning help and care within training follow the standard order; insurance details can wait. Moving a victim can worsen spinal injuries unless fire or traffic makes it necessary."
   },
   {
     "type": "SECGUARD",
@@ -2542,7 +2542,7 @@
     "optionA": "Turn on the exhaust fans to clear the smell",
     "optionB": "Light a match to locate the source of the leak",
     "optionC": "Open the electrical panel to shut off power",
-    "optionD": "Avoid switches, get out and call from outside",
+    "optionD": "Avoid switches, get out and phone from outside",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Any spark, including a light switch or fan motor, can ignite gas. The guard gets people out and makes calls from a safe distance."
@@ -2567,7 +2567,7 @@
     "questionId": "SG-EMR-036",
     "category": "sgEmergency",
     "question": "Which is the correct action for a guard who sees a person collapse on the floor and the person is responsive but complains of chest pressure, sweating and nausea?",
-    "optionA": "Call 911, keep the person calm and seated, bring the AED",
+    "optionA": "Dial 911, keep the person calm and seated, bring the AED",
     "optionB": "Have the person lie flat with legs raised and wait 15 minutes",
     "optionC": "Give the person water and monitor until symptoms ease",
     "optionD": "Walk the person to the parking lot to drive to a hospital",
@@ -2595,13 +2595,13 @@
     "questionId": "SG-SAF-002",
     "category": "sgSafety",
     "question": "A guard notices frayed wiring on an extension cord in the lobby. What should the guard do?",
-    "optionA": "Wrap the cord in electrical tape and move on",
+    "optionA": "Tape the cord, then report the hazard",
     "optionB": "Ignore it; electrical work is not security",
     "optionC": "Unplug it and discard it without telling anyone",
     "optionD": "Report the hazard and keep people away",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Guards are often the first to notice hazards, and reporting is part of protecting the site. Patching or quietly discarding the cord leaves management uninformed."
+    "explanation": "Guards are often the first to notice hazards, and reporting is part of protecting the site. A taped repair is not a safe fix even if it is reported, and quietly discarding the cord leaves management uninformed."
   },
   {
     "type": "SECGUARD",
@@ -2693,13 +2693,13 @@
     "questionId": "SG-SAF-009",
     "category": "sgSafety",
     "question": "A person asks a guard detailed questions about which days the facility has the most people and when the alarm system is tested. The guard should:",
-    "optionA": "Answer truthfully; the facts are not classified",
+    "optionA": "Answer, then report the conversation",
     "optionB": "Decline politely and report the conversation",
     "optionC": "Make up false numbers to confuse them",
     "optionD": "Threaten the person with arrest for asking",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Questions about occupancy and security systems are elicitation indicators. The guard protects the information and reports; lying or threatening is unprofessional and may tip off a hostile party."
+    "explanation": "Questions about occupancy and security systems are elicitation indicators. The guard protects the information and reports; answering first gives away what the report is meant to protect, and lying or threatening is unprofessional and may tip off a hostile party."
   },
   {
     "type": "SECGUARD",
@@ -2710,10 +2710,10 @@
     "optionA": "Report suspicious activity through channels",
     "optionB": "Confront every suspicious person directly",
     "optionC": "Post observations on social media for others",
-    "optionD": "Wait until the end of the shift to mention it",
+    "optionD": "Report it at the end of the shift",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Timely reporting through proper channels lets trained people evaluate the activity. Confrontation, public posting and delay all defeat the purpose."
+    "explanation": "Timely reporting through proper channels lets trained people evaluate the activity. Confrontation, public posting and a report held until the end of the shift all defeat the purpose."
   },
   {
     "type": "SECGUARD",
@@ -2764,12 +2764,12 @@
     "category": "sgSafety",
     "question": "What is the best general advice for a guard who suspects a terrorism-related activity?",
     "optionA": "Detain the suspect until police arrive",
-    "optionB": "Search the suspect's vehicle for weapons",
-    "optionC": "Confront the suspect to see how they react",
+    "optionB": "Observe, then search their vehicle",
+    "optionC": "Confront them, then report it",
     "optionD": "Observe and report; do not intervene",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Guards gather information and alert authorities; intervention against a potential attacker is dangerous and beyond a guard's role. Detention and searches also exceed legal authority."
+    "explanation": "Guards gather information and alert authorities; intervention against a potential attacker is dangerous and beyond a guard's role, even if it is reported afterwards. Detention and searches also exceed legal authority."
   },
   {
     "type": "SECGUARD",

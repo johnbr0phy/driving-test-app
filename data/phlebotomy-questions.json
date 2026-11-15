@@ -6,12 +6,12 @@
     "category": "patientPreparation",
     "question": "Which set of information must appear on a laboratory requisition before a phlebotomist collects the specimen?",
     "optionA": "Patient's employer, emergency contact, and pharmacy name",
-    "optionB": "Patient's copay amount and preferred appointment time",
+    "optionB": "Provider's office hours and the copay amount",
     "optionC": "Patient identifiers, ordering provider, and tests",
     "optionD": "Phlebotomist's badge number and the tube lot numbers",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A requisition must identify the patient, the ordering provider and the tests (plus details such as priority and date). Billing or contact details like the copay or employer do not authorize or define the collection."
+    "explanation": "A requisition must identify the patient, the ordering provider and the tests (plus details such as priority and date). Billing or contact details like the copay, office hours or employer do not authorize or define the collection."
   },
   {
     "type": "PHLEB",
@@ -131,13 +131,13 @@
     "questionId": "PHL-PREP-010",
     "category": "patientPreparation",
     "question": "An inpatient's wristband shows a medical record number that differs from the number on the requisition. What should the phlebotomist do?",
-    "optionA": "Draw and note the difference on the tube label",
+    "optionA": "Draw, then tell the nurse about the mismatch",
     "optionB": "Trust the requisition because the lab printed it",
     "optionC": "Hold the draw until the nurse resolves it",
     "optionD": "Use the room number to decide which is correct",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Any mismatch between the wristband and the requisition stops the draw until it is corrected through the nurse or registration. Collecting anyway risks a misidentified specimen, which is a leading cause of transfusion and treatment errors."
+    "explanation": "Any mismatch between the wristband and the requisition stops the draw until it is corrected through the nurse or registration. Collecting first and reporting afterward still risks a misidentified specimen, which is a leading cause of transfusion and treatment errors."
   },
   {
     "type": "PHLEB",
@@ -147,11 +147,11 @@
     "question": "A phlebotomist must draw blood from an unconscious inpatient who cannot state a name. How is identity confirmed?",
     "optionA": "Read the name from the door sign outside the room",
     "optionB": "Check the wristband against the requisition and have the nurse confirm",
-    "optionC": "Accept the identity printed on the bedside chart",
+    "optionC": "Have the nurse state the name; skip the wristband",
     "optionD": "Wait until the patient wakes and can answer",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "When the patient cannot respond, the identification band is compared with the requisition and a caregiver such as the nurse verifies identity, then that is documented. Door signs and charts identify locations, not the patient."
+    "explanation": "When the patient cannot respond, the identification band is compared with the requisition and a caregiver such as the nurse verifies identity, then that is documented. The nurse's word does not replace the wristband check, and door signs and charts identify locations, not the patient."
   },
   {
     "type": "PHLEB",
@@ -216,12 +216,12 @@
     "category": "patientPreparation",
     "question": "An alert adult inpatient refuses a scheduled blood draw after the procedure is explained. What should the phlebotomist do?",
     "optionA": "Respect it, document it, and notify the nurse",
-    "optionB": "Ask a coworker to hold the arm still",
+    "optionB": "Have the nurse hold the arm still and draw",
     "optionC": "Draw anyway because the physician ordered it",
     "optionD": "Return in five minutes and draw without asking",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A competent adult has the right to refuse, so the phlebotomist documents the refusal and informs the nurse or provider. Drawing without consent can be considered assault and battery, even with a valid order."
+    "explanation": "A competent adult has the right to refuse, so the phlebotomist documents the refusal and informs the nurse or provider. Drawing without consent can be considered assault and battery, even with a valid order and even if a nurse helps hold the arm."
   },
   {
     "type": "PHLEB",
@@ -356,12 +356,12 @@
     "category": "patientPreparation",
     "question": "A patient scheduled for a fasting glucose admits eating breakfast an hour ago. What should the phlebotomist do?",
     "optionA": "Draw it and label it fasting anyway",
-    "optionB": "Send the patient home without telling anyone",
+    "optionB": "Label it fasting and tell the nurse later",
     "optionC": "Notify the nurse or provider and note nonfasting status",
     "optionD": "Give the patient water and wait 30 minutes",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The provider decides whether to proceed; if the specimen is collected, it is labeled or documented as nonfasting. Labeling it fasting would make the result misleading, and a short wait does not restore a fasting state."
+    "explanation": "The provider decides whether to proceed; if the specimen is collected, it is labeled or documented as nonfasting. Labeling it fasting makes the result misleading even if the nurse is told later, and a short wait does not restore a fasting state."
   },
   {
     "type": "PHLEB",
@@ -468,12 +468,12 @@
     "category": "patientPreparation",
     "question": "A patient has had a left mastectomy and has a dialysis fistula in the right forearm. What is the best approach?",
     "optionA": "Draw just above the fistula in the right arm",
-    "optionB": "Use the left arm without asking anyone",
+    "optionB": "Use the left arm, then tell the nurse or provider",
     "optionC": "Draw from the fistula, since flow is strong",
     "optionD": "Consult the nurse or provider before choosing any site",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The fistula arm must never be used, and the mastectomy side requires provider permission, so the nurse or provider must be consulted. Drawing near a fistula can damage the dialysis access."
+    "explanation": "The fistula arm must never be used, and the mastectomy side requires provider permission before the draw, so the nurse or provider must be consulted first, not told afterward. Drawing near a fistula can damage the dialysis access."
   },
   {
     "type": "PHLEB",
@@ -931,11 +931,11 @@
     "question": "A phlebotomist working in processing must phone a critical potassium result to a patient's nurse. Which step is required during the call?",
     "optionA": "Leave the result on the unit voicemail",
     "optionB": "Have the nurse read the result back",
-    "optionC": "Wait for the routine report to print",
+    "optionC": "Tell the nurse and skip the read-back",
     "optionD": "Tell the patient the result first",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Joint Commission patient safety goals require critical values to be reported promptly to a responsible caregiver who reads the result back, with the call documented. Voicemail is not acceptable because no one confirms receipt."
+    "explanation": "Joint Commission patient safety goals require critical values to be reported promptly to a responsible caregiver who reads the result back, with the call documented. Telling the nurse without a read-back, or leaving voicemail, means no one confirms the value was heard correctly."
   },
   {
     "type": "PHLEB",
@@ -1394,10 +1394,10 @@
     "optionA": "Nurse stops IV; draw below it",
     "optionB": "Draw above the IV in the same arm",
     "optionC": "Draw from the IV catheter",
-    "optionD": "Stop the IV yourself and draw above it",
+    "optionD": "Nurse stops IV; draw above it",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Blood drawn above an IV is diluted with IV fluid. The nurse turns off the IV for at least 2 minutes, the draw is made below the site, and the IV is documented; phlebotomists do not adjust IVs themselves."
+    "explanation": "Blood drawn above an IV is diluted with IV fluid, even when the IV is off. The nurse turns off the IV for at least 2 minutes, the draw is made below the site, and the IV is documented; phlebotomists do not adjust IVs themselves."
   },
   {
     "type": "PHLEB",
@@ -1559,13 +1559,13 @@
     "questionId": "PHL-RBC-044",
     "category": "routineCollections",
     "question": "A patient taking warfarin is still bleeding from the puncture site after 5 minutes of pressure. What should the phlebotomist do?",
-    "optionA": "Apply a bandage and leave the patient room",
+    "optionA": "Bandage it and tell the nurse on the way out",
     "optionB": "Have the patient bend the arm up",
     "optionC": "Apply a tourniquet above the site",
     "optionD": "Keep pressure and notify the nurse",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Anticoagulated patients need 3 to 5 minutes of pressure, and bleeding that continues beyond that is reported while pressure continues. Bending the arm up does not stop the bleeding and can reopen the puncture or cause a bruise."
+    "explanation": "Anticoagulated patients need 3 to 5 minutes of pressure, and bleeding that continues beyond that is reported while pressure continues; the phlebotomist does not bandage and leave a site that is still bleeding. Bending the arm up does not stop the bleeding and can reopen the puncture or cause a bruise."
   },
   {
     "type": "PHLEB",
@@ -1575,11 +1575,11 @@
     "question": "Midway through a draw, an alert adult patient says, \"Stop, I do not want this anymore.\" What should the phlebotomist do?",
     "optionA": "Finish quickly since the needle is already in",
     "optionB": "Ask a coworker to hold the arm still",
-    "optionC": "Fill only the tube already started",
+    "optionC": "Fill this tube, then tell the nurse",
     "optionD": "Stop, remove the needle, notify the nurse",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A patient may withdraw consent at any time, so the draw stops immediately and the refusal is reported and documented. Continuing or restraining a competent adult could be considered assault or battery."
+    "explanation": "A patient may withdraw consent at any time, so the draw stops immediately and the refusal is reported and documented. Filling even one more tube first, or restraining a competent adult, could be considered assault or battery."
   },
   {
     "type": "PHLEB",
@@ -1938,12 +1938,12 @@
     "category": "safetyCompliance",
     "question": "After a fingerstick glucose, a patient sees a reading of 210 mg/dL and asks the phlebotomist whether she has diabetes. The phlebotomist should:",
     "optionA": "Tell her the reading confirms diabetes",
-    "optionB": "Reassure her the value is normal",
+    "optionB": "Tell her it is diabetes and to see her provider",
     "optionC": "Refer her to her provider to discuss the result",
     "optionD": "Advise her to cut sugar and carbohydrates from her diet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Interpreting results, diagnosing and giving medical advice are outside the phlebotomist's scope. Reassuring her that the value is normal is both inaccurate and an interpretation."
+    "explanation": "Interpreting results, diagnosing and giving medical advice are outside the phlebotomist's scope, so she is referred to her provider without being told what the value means. Calling it diabetes, or reassuring her that it is normal, is an interpretation."
   },
   {
     "type": "PHLEB",
@@ -1952,12 +1952,12 @@
     "category": "safetyCompliance",
     "question": "A patient asks whether he should skip his blood pressure medication before tomorrow's fasting blood test. What is the best response?",
     "optionA": "Skip all your medications until after the draw",
-    "optionB": "Take a double dose after the draw",
+    "optionB": "Skip it now and tell your provider afterward",
     "optionC": "Medicines never affect fasting blood tests",
     "optionD": "Ask your provider about your medications",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Medication instructions are medical advice that must come from the provider. Telling him to skip medicine could harm him and is outside the phlebotomist's scope."
+    "explanation": "Medication instructions are medical advice that must come from the provider before the test. Telling him to skip medicine, even with a report to the provider afterward, could harm him and is outside the phlebotomist's scope."
   },
   {
     "type": "PHLEB",
@@ -1993,13 +1993,13 @@
     "questionId": "PHL-SAF-019",
     "category": "safetyCompliance",
     "question": "A phlebotomist receives an order to draw from the arm with a dialysis fistula. The best action is to:",
-    "optionA": "Follow the order exactly as written",
+    "optionA": "Draw as ordered, then tell the nurse or provider",
     "optionB": "Draw from the fistula arm using a smaller butterfly needle",
     "optionC": "Clarify the order with the nurse or provider",
     "optionD": "Cancel the order without telling anyone",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A fistula arm must not be used, so an unsafe order is questioned before collecting rather than followed. Cancelling silently leaves the provider without the needed test or an explanation."
+    "explanation": "A fistula arm must not be used, so an unsafe order is questioned before collecting rather than followed and reported afterward. Cancelling silently leaves the provider without the needed test or an explanation."
   },
   {
     "type": "PHLEB",

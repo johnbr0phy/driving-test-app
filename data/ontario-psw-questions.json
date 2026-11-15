@@ -92,10 +92,10 @@
     "optionA": "Do it carefully as best you can",
     "optionB": "Ask the client to talk you through it",
     "optionC": "Tell the supervisor and ask for help",
-    "optionD": "Skip it and chart it as done",
+    "optionD": "Try it, then tell the supervisor",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "PSWs are accountable for working within their training and role. Telling the supervisor lets the task be reassigned or taught; guessing puts the client at risk, and charting it as done is falsification."
+    "explanation": "PSWs are accountable for working within their training and role. Telling the supervisor before starting lets the task be reassigned or taught; trying it first and reporting afterward puts the client at risk."
   },
   {
     "type": "CAPSW",
@@ -160,12 +160,12 @@
     "category": "capswRole",
     "question": "You arrive for a home visit and find the client's son drunk and shouting threats. What should you do first?",
     "optionA": "Calm him with a firm lecture",
-    "optionB": "Finish care as fast as you can",
+    "optionB": "Finish care, then call your supervisor",
     "optionC": "Lock yourself in the bathroom",
     "optionD": "Leave and call your supervisor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Your safety comes first: leave the home, get to a safe place and report to your supervisor, who will arrange care another way. Employers must have workplace violence policies under the OHSA."
+    "explanation": "Your safety comes first: leave the home, get to a safe place and report to your supervisor, who will arrange care another way. Staying to finish care keeps you in danger, and employers must have workplace violence policies under the OHSA."
   },
   {
     "type": "CAPSW",
@@ -231,11 +231,11 @@
     "question": "You made a mistake giving care and the client was not hurt. What should you do?",
     "optionA": "Report it to your supervisor now",
     "optionB": "Say nothing since there was no harm",
-    "optionC": "Fix it quietly next shift",
+    "optionC": "Report it to the supervisor next week",
     "optionD": "Ask a coworker to cover it",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Being accountable means reporting errors promptly, even when no harm is seen, so the client can be checked and the cause addressed. Hiding an error can let harm develop unnoticed."
+    "explanation": "Being accountable means reporting errors promptly, even when no harm is seen, so the client can be checked and the cause addressed. Waiting a week or hiding an error can let harm develop unnoticed."
   },
   {
     "type": "CAPSW",
@@ -288,10 +288,10 @@
     "optionA": "Report it to your supervisor",
     "optionB": "Do the mouth care for them yourself",
     "optionC": "Warn the coworker once more",
-    "optionD": "Tell the clients' families",
+    "optionD": "Report it to the clients' families",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Charting care that was not given is falsification and puts clients at risk, so it must go to the supervisor. Quietly covering for the coworker hides the problem."
+    "explanation": "Charting care that was not given is falsification and puts clients at risk, so it must go to the supervisor, who can act on it. Families cannot correct staff practice, and quietly covering for the coworker hides the problem."
   },
   {
     "type": "CAPSW",
@@ -313,7 +313,7 @@
     "questionId": "CAPSW-ROL-023",
     "category": "capswRole",
     "question": "You find a client's care plan says to walk with a walker, but today they seem unsteady even with it. What should you do?",
-    "optionA": "Walk them anyway as planned",
+    "optionA": "Keep walking them as planned",
     "optionB": "Swap the walker for a cane",
     "optionC": "Keep them safe and report",
     "optionD": "Skip walking from now on",
@@ -369,13 +369,13 @@
     "questionId": "CAPSW-ROL-027",
     "category": "capswRole",
     "question": "A client in their home asks you to drive them to the bank in your own car. Agency policy forbids it. What do you do?",
-    "optionA": "Drive them there just this once",
+    "optionA": "Drive them, then tell your supervisor",
     "optionB": "Lend them your own money for a taxi",
     "optionC": "Decline and tell your supervisor",
     "optionD": "Call their bank for them",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Employer policies and job descriptions set the limits of a PSW's work. Decline politely and let the supervisor arrange another option; lending money breaks boundaries."
+    "explanation": "Employer policies and job descriptions set the limits of a PSW's work. Decline politely and let the supervisor arrange another option; telling the supervisor after the drive does not undo breaking policy, and lending money breaks boundaries."
   },
   {
     "type": "CAPSW",
@@ -568,10 +568,10 @@
     "optionA": "Close it and report the breach",
     "optionB": "Close it and say nothing about it",
     "optionC": "Leave it for the next nurse",
-    "optionD": "Wait to see if anyone used it",
+    "optionD": "Report it only if someone used it",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Secure the information right away and report the possible privacy breach to your supervisor, who follows PHIPA breach procedures. Hiding it prevents the custodian from meeting its duties."
+    "explanation": "Secure the information right away and report the possible privacy breach to your supervisor, who follows PHIPA breach procedures; you cannot know whether anyone saw it, so it is reported either way. Hiding it prevents the custodian from meeting its duties."
   },
   {
     "type": "CAPSW",
@@ -691,7 +691,7 @@
     "questionId": "CAPSW-COM-022",
     "category": "capswComm",
     "question": "What is the main purpose of a shift report between PSWs and nurses?",
-    "optionA": "To rate speed",
+    "optionA": "To keep staff on time",
     "optionB": "To keep care safe",
     "optionC": "To plan overtime",
     "optionD": "To share gossip",
@@ -805,11 +805,11 @@
     "question": "A capable client refuses a shower today. What should you do?",
     "optionA": "Give the shower anyway",
     "optionB": "Respect it and report it",
-    "optionC": "Ask the family to insist on it",
+    "optionC": "Report it, then give it anyway",
     "optionD": "Skip it and chart it as given",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A capable person may refuse care. Find out why, offer another time or a different option, and report and record the refusal. Forcing care can be abuse."
+    "explanation": "A capable person may refuse care. Find out why, offer another time or a different option, and report and record the refusal. Forcing care can be abuse, even if the refusal was reported first."
   },
   {
     "type": "CAPSW",
@@ -873,7 +873,7 @@
     "questionId": "CAPSW-RIG-011",
     "category": "capswRights",
     "question": "Which action best protects a client's dignity during personal care?",
-    "optionA": "Leave the door open in case of a fall",
+    "optionA": "Keep the door open in case of a fall",
     "optionB": "Talk with coworkers over them",
     "optionC": "Knock and keep them covered",
     "optionD": "Hurry to finish quickly",
@@ -932,7 +932,7 @@
     "optionA": "Wait until you have proof",
     "optionB": "Confront the staff member first",
     "optionC": "Report it at once to the Director",
-    "optionD": "Tell only the resident's family members",
+    "optionD": "Report it only to the resident's family",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Anyone with reasonable grounds to suspect abuse or neglect of a resident that caused or risks harm must immediately report it to the Director at the Ministry of Long-Term Care, as well as follow the home's policy. Proof is not required."
@@ -1393,7 +1393,7 @@
     "question": "What is the safest way to lift a box from the floor?",
     "optionA": "Bend at the waist, legs straight",
     "optionB": "Twist at the waist to set it down",
-    "optionC": "Hold it at arm's length",
+    "optionC": "Keep your legs straight and bend",
     "optionD": "Bend your knees, keep it close",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1518,12 +1518,12 @@
     "category": "capswSafety",
     "question": "During a pandemic, what is a PSW's key duty if they develop symptoms?",
     "optionA": "Stay home and report it",
-    "optionB": "Work but wear two masks all shift",
+    "optionB": "Work the shift, then report it",
     "optionC": "Work only with healthy clients",
     "optionD": "Hide it to avoid missing pay",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Staying off work when ill and reporting symptoms protects clients, who are often vulnerable. Follow employer and public health screening and testing rules."
+    "explanation": "Staying off work when ill and reporting symptoms protects clients, who are often vulnerable. Working the shift first exposes them, so follow employer and public health screening and testing rules."
   },
   {
     "type": "CAPSW",
@@ -1660,10 +1660,10 @@
     "optionA": "Massage it firmly to restore blood flow",
     "optionB": "Cover it with a heating pad",
     "optionC": "Report it, keep pressure off",
-    "optionD": "Ignore it until it blisters",
+    "optionD": "Report it once it blisters",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Redness that does not blanch is an early pressure injury. Keep pressure off the area and report it. Massaging reddened skin can cause more damage."
+    "explanation": "Redness that does not blanch is an early pressure injury. Keep pressure off the area and report it now; waiting for a blister lets the injury get worse. Massaging reddened skin can cause more damage."
   },
   {
     "type": "CAPSW",
@@ -1825,13 +1825,13 @@
     "questionId": "CAPSW-ADL-019",
     "category": "capswAdl",
     "question": "A client has swelling in both ankles that is new today. What should you do?",
-    "optionA": "Raise the legs and say nothing",
+    "optionA": "Report it at the end of the week",
     "optionB": "Give extra fluids",
     "optionC": "Report it to the nurse",
     "optionD": "Massage it away",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "New swelling can signal heart, kidney or circulation problems. Report it so the nurse can assess; comfort measures follow the plan."
+    "explanation": "New swelling can signal heart, kidney or circulation problems. Report it today so the nurse can assess; waiting days delays care, and comfort measures follow the plan."
   },
   {
     "type": "CAPSW",
@@ -2022,7 +2022,7 @@
     "category": "capswAdl",
     "question": "What is the purpose of range-of-motion exercises?",
     "optionA": "To keep joints moving",
-    "optionB": "To build big muscles quickly",
+    "optionB": "To keep the joint resting",
     "optionC": "To treat a broken bone",
     "optionD": "To replace walking",
     "correctAnswer": "A",
@@ -2161,13 +2161,13 @@
     "questionId": "CAPSW-HOM-007",
     "category": "capswHome",
     "question": "A client tells you a new pill makes her dizzy. What should you do?",
-    "optionA": "Tell her to stop taking it",
+    "optionA": "Tell her to stop it, then report",
     "optionB": "Halve the dose yourself",
     "optionC": "Report it to the nurse",
     "optionD": "Swap it for an old pill",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Possible side effects must be reported to the nurse or responsible person. Stopping or changing medication is not within the PSW role."
+    "explanation": "Possible side effects must be reported to the nurse or responsible person. Stopping or changing medication is not within the PSW role, even if you report it afterward."
   },
   {
     "type": "CAPSW",
@@ -2275,11 +2275,11 @@
     "question": "A client is the main caregiver for her husband with dementia and seems exhausted. What might help?",
     "optionA": "Tell her to try harder",
     "optionB": "Take over all of her husband's care",
-    "optionC": "Report it so help can be arranged",
+    "optionC": "Tell the team so help is arranged",
     "optionD": "Advise moving him at once",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Caregiver burnout is common. Report your observations so the team can arrange supports such as respite care or day programs."
+    "explanation": "Caregiver burnout is common. Tell the team what you see so they can arrange supports such as respite care or day programs."
   },
   {
     "type": "CAPSW",
@@ -2332,10 +2332,10 @@
     "optionA": "Guess from the pill colour",
     "optionB": "Ask the client what it is",
     "optionC": "Hold it and report to the nurse",
-    "optionD": "Give the usual dose for that time",
+    "optionD": "Give the usual dose, then report it",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "If you cannot confirm the right drug and dose, do not assist with it. Report it so the nurse or pharmacist can sort it out."
+    "explanation": "If you cannot confirm the right drug and dose, do not assist with it. Hold it and report it so the nurse or pharmacist can sort it out; giving it first and reporting after is still a medication error."
   },
   {
     "type": "CAPSW",
@@ -2371,7 +2371,7 @@
     "questionId": "CAPSW-PAL-002",
     "category": "capswPal",
     "question": "A dying client no longer responds. How should you talk during care?",
-    "optionA": "Stay silent to avoid disturbing",
+    "optionA": "Keep silent to avoid disturbing",
     "optionB": "Keep speaking and explain care",
     "optionC": "Talk with coworkers instead",
     "optionD": "Speak only to the family",
@@ -2668,10 +2668,10 @@
     "optionA": "Tell him the voices are not real",
     "optionB": "Agree that the voices are right",
     "optionC": "Acknowledge distress and report",
-    "optionD": "Ignore him until he stops",
+    "optionD": "Ignore him now and report it later",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Do not argue about or agree with the hallucination. Acknowledge how upsetting it is, keep him safe and report it."
+    "explanation": "Do not argue about or agree with the hallucination. Acknowledge how upsetting it is, keep him safe and report it; ignoring his distress leaves him alone with it."
   },
   {
     "type": "CAPSW",
@@ -2681,7 +2681,7 @@
     "question": "A client says, \"I won't be around much longer, so it doesn't matter.\" What should you do?",
     "optionA": "Change the subject kindly",
     "optionB": "Tell him to cheer up",
-    "optionC": "Mention it at next week's meeting",
+    "optionC": "Report it at next week's meeting",
     "optionD": "Ask directly and report at once",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -2764,12 +2764,12 @@
     "category": "capswMental",
     "question": "A client who uses substances is withdrawn and shaky after you arrive. What should you do?",
     "optionA": "Lecture him about his choices",
-    "optionB": "Observe and report it",
+    "optionB": "Watch closely and tell the team",
     "optionC": "Search his room for drugs right away",
     "optionD": "Refuse to give care",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Shaking and agitation may be withdrawal, which can be dangerous. Report observations without judgement and follow the plan of care."
+    "explanation": "Shaking and agitation may be withdrawal, which can be dangerous. Pass your observations to the team without judgement and follow the plan of care."
   },
   {
     "type": "CAPSW",

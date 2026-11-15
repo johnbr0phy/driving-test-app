@@ -441,11 +441,11 @@
     "question": "What is 'potentially hazardous food'?",
     "optionA": "Any food past its use-by date",
     "optionB": "Food that contains an allergen",
-    "optionC": "Any food that is sold hot",
+    "optionC": "Any food kept at room temperature",
     "optionD": "Food needing temperature control",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Potentially hazardous food needs temperature control (5°C or below, or 60°C or above) to stop pathogens growing or toxins forming. Examples are cooked meat, dairy, cooked rice and prepared salads."
+    "explanation": "Potentially hazardous food needs temperature control (5°C or below, or 60°C or above) to stop pathogens growing or toxins forming. Food that is safe at room temperature, such as bread or dry pasta, is not in this group. Examples are cooked meat, dairy, cooked rice and prepared salads."
   },
   {
     "type": "AUFSS",
@@ -904,10 +904,10 @@
     "optionA": "Shared towels spread bacteria",
     "optionB": "Paper is cheaper than cloth",
     "optionC": "Air dryers are not allowed",
-    "optionD": "Hands should stay slightly wet",
+    "optionD": "Paper kills bacteria on hands",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Damp hands transfer bacteria more easily, and shared cloth towels collect them. Single-use towels dry hands well and are thrown away."
+    "explanation": "Damp hands transfer bacteria more easily, and shared cloth towels collect them. Single-use towels dry hands well and are thrown away; the paper itself does not kill bacteria."
   },
   {
     "type": "AUFSS",
@@ -960,10 +960,10 @@
     "optionA": "Use a waterproof dressing",
     "optionB": "Leave it open to dry out",
     "optionC": "Wrap it in a paper towel",
-    "optionD": "Cover it with a cloth bandage",
+    "optionD": "Use a cloth bandage",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Cuts can carry Staphylococcus aureus. Cover them with a waterproof, brightly coloured dressing and wear a glove over it for food work."
+    "explanation": "Cuts can carry Staphylococcus aureus. Cover them with a waterproof, brightly coloured dressing and wear a glove over it for food work. A cloth bandage soaks up moisture and germs."
   },
   {
     "type": "AUFSS",
@@ -1380,10 +1380,10 @@
     "optionA": "Food loses flavour faster",
     "optionB": "Fridges cannot take hot food",
     "optionC": "Bacteria grow fastest there",
-    "optionD": "Spores die below 21°C",
+    "optionD": "Bacteria die below 21°C",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Bacteria grow fastest in the warmer middle of the danger zone, so food must pass through it quickly. Spores survive and germinate in slowly cooling food."
+    "explanation": "Bacteria grow fastest in the warmer middle of the danger zone, so food must pass through it quickly. Bacteria do not die below 21°C, they only grow more slowly, and spores survive and germinate in slowly cooling food."
   },
   {
     "type": "AUFSS",
@@ -1686,12 +1686,12 @@
     "category": "aufssTemp",
     "question": "Which information should a cooling record show?",
     "optionA": "Food, times and temperatures",
-    "optionB": "Food and its cost price",
+    "optionB": "Fridge temperatures only",
     "optionC": "Staff wages and hours",
     "optionD": "The supplier's bank details",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Records should name the food, the date and the times and temperatures at each stage, and who checked, so you can show the 2-hour and 4-hour limits were met."
+    "explanation": "Records should name the food, the date and the times and temperatures at each stage, and who checked, not just the fridge temperature, so you can show the 2-hour and 4-hour limits were met."
   },
   {
     "type": "AUFSS",
@@ -1940,10 +1940,10 @@
     "optionA": "On the shelf above food",
     "optionB": "In old drink bottles",
     "optionC": "Away from food, labelled",
-    "optionD": "In the cool room",
+    "optionD": "Away from food, unlabelled",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Keep chemicals in their original, labelled containers in a separate area away from food. Never decant them into food or drink containers."
+    "explanation": "Keep chemicals in their original, labelled containers in a separate area away from food. Storing them away from food is not enough if the containers are unlabelled. Never decant them into food or drink containers."
   },
   {
     "type": "AUFSS",
@@ -1996,10 +1996,10 @@
     "optionA": "Yes, if not bitten",
     "optionB": "Yes, in breadcrumbs",
     "optionC": "No, throw them away",
-    "optionD": "Yes, after toasting",
+    "optionD": "Yes, put away for later",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Food that has been served to a customer and returned must not be re-served or reused, except whole items still sealed in packaging."
+    "explanation": "Food that has been served to a customer and returned must not be re-served, reused or put away for later, except whole items still sealed in packaging."
   },
   {
     "type": "AUFSS",
@@ -2022,12 +2022,12 @@
     "category": "aufssHandling",
     "question": "What should you do with single-use items such as paper cups?",
     "optionA": "Use once, then discard",
-    "optionB": "Wash and reuse them",
+    "optionB": "Use twice, then discard",
     "optionC": "Reuse for staff drinks",
     "optionD": "Rinse and reuse that day",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Standard 3.2.2 says single-use items must not be reused. Store them so they are protected from damage and contamination."
+    "explanation": "Standard 3.2.2 says single-use items must not be reused, not even a second time. Store them so they are protected from damage and contamination."
   },
   {
     "type": "AUFSS",
@@ -2093,11 +2093,11 @@
     "question": "What should you check when receiving goods?",
     "optionA": "Only the price on the invoice",
     "optionB": "Temperature, packaging, dates",
-    "optionC": "Only the supplier's logo",
+    "optionC": "Only the temperature",
     "optionD": "Only the box weight",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Check temperatures of chilled and frozen food, packaging for damage or pests, and use-by dates. Record the checks and reject unsuitable goods."
+    "explanation": "Check temperatures of chilled and frozen food, packaging for damage or pests, and use-by dates; temperature alone is not enough. Record the checks and reject unsuitable goods."
   },
   {
     "type": "AUFSS",

@@ -677,13 +677,13 @@
     "questionId": "ALC-INT-005",
     "category": "alcIntoxication",
     "question": "Which of the following is the best way to judge whether a guest is becoming intoxicated?",
-    "optionA": "Rely on the single most obvious sign",
+    "optionA": "Rely on one strong cue and skip the count",
     "optionB": "Ask the guest how many drinks they have had",
     "optionC": "Match several cues against the drink count",
     "optionD": "Wait until the guest can no longer stand",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "No single cue is reliable on its own, so trained servers look for a combination of behavioral changes together with how much the guest has been served. Waiting for severe signs means the guest has been over-served."
+    "explanation": "No single cue is reliable on its own, so trained servers look for a combination of behavioral changes together with how much the guest has been served. One strong cue without the count can mislead, and waiting for severe signs means the guest has been over-served."
   },
   {
     "type": "ALCOHOL",
@@ -778,10 +778,10 @@
     "optionA": "It is required only for accurate billing records",
     "optionB": "Cues can be masked by tolerance or personality",
     "optionC": "The count proves the guest is still sober",
-    "optionD": "It replaces the need to watch behavior",
+    "optionD": "It replaces the need to watch for cues",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Tolerance, personality, or a loud environment can hide behavioral cues, so the drink count is a second, objective check. The count does not prove sobriety either; both tools are used together."
+    "explanation": "Tolerance, personality, or a loud environment can hide behavioral cues, so the drink count is a second, objective check. The count does not replace watching for cues and does not prove sobriety either; both tools are used together."
   },
   {
     "type": "ALCOHOL",
@@ -875,11 +875,11 @@
     "question": "A guest spills a drink. Before deciding whether this is a sign of intoxication, what should the server consider?",
     "optionA": "Whether the guest apologized for the spill",
     "optionB": "Whether it fits other cues and the count",
-    "optionC": "Whether the glass was full when spilled",
+    "optionC": "The drink count alone, ignoring cues",
     "optionD": "Whether the guest is a regular here",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "One spill can be an accident; a spill plus slurred speech, slow responses, and several drinks is a pattern. Servers should avoid judging on a single incident in either direction."
+    "explanation": "One spill can be an accident; a spill plus slurred speech, slow responses, and several drinks is a pattern. Servers should avoid judging on a single incident in either direction, and the drink count is weighed with the cues, not instead of them."
   },
   {
     "type": "ALCOHOL",
@@ -957,13 +957,13 @@
     "questionId": "ALC-INT-025",
     "category": "alcIntoxication",
     "question": "A server notices a guest's eyes are red and watery and the guest is having trouble focusing on the menu. Which category is this?",
-    "optionA": "Lowered inhibitions",
-    "optionB": "Impaired judgment",
-    "optionC": "Slowed reactions",
-    "optionD": "Loss of coordination",
+    "optionA": "Inhibition cues",
+    "optionB": "Judgment cues",
+    "optionC": "Reaction cues",
+    "optionD": "Coordination cues",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Red, watery, or glassy eyes and difficulty focusing are physical signs grouped with slowed reactions. They are easy to spot up close, which is one reason servers should make eye contact with each guest."
+    "explanation": "Red, watery, or glassy eyes and difficulty focusing are physical signs grouped with slowed reactions, the reaction cues. They are easy to spot up close, which is one reason servers should make eye contact with each guest."
   },
   {
     "type": "ALCOHOL",
@@ -986,12 +986,12 @@
     "category": "alcIntoxication",
     "question": "Why might a guest with a high tolerance be especially risky to serve?",
     "optionA": "Tolerance hides cues while BAC stays high",
-    "optionB": "Tolerance makes alcohol less harmful",
+    "optionB": "Tolerant guests show cues earlier",
     "optionC": "Tolerance lowers BAC after each drink",
     "optionD": "Tolerant guests rarely drive themselves home",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Tolerance suppresses outward signs but not BAC or crash risk, so an experienced drinker can appear sober at 0.15. The drink count is the server's best defense with these guests."
+    "explanation": "Tolerance suppresses outward signs but not BAC or crash risk, so an experienced drinker can appear sober at 0.15. Tolerant guests show fewer cues, not earlier ones, so the drink count is the server's best defense with these guests."
   },
   {
     "type": "ALCOHOL",
@@ -1042,12 +1042,12 @@
     "category": "alcIntoxication",
     "question": "A guest who has been sitting for hours seems fine until they stand up and immediately stagger. Why can standing reveal intoxication?",
     "optionA": "Standing up raises BAC suddenly",
-    "optionB": "Staggering is unrelated to drinking",
+    "optionB": "Standing causes cues unrelated to alcohol",
     "optionC": "The guest was pretending to be sober all along",
     "optionD": "Balance cues are hidden while seated",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Seated guests can hide coordination problems, and standing exposes the loss of balance that had already developed. This is a reason to observe guests as they move, not just at the table."
+    "explanation": "Seated guests can hide coordination problems, and standing exposes the loss of balance that had already developed. The stagger is a real sign of the drinking, not something standing creates, which is a reason to observe guests as they move, not just at the table."
   },
   {
     "type": "ALCOHOL",
@@ -1083,13 +1083,13 @@
     "questionId": "ALC-INT-034",
     "category": "alcIntoxication",
     "question": "A guest's speech has become slurred, but the guest says they always talk that way. How should the server respond internally?",
-    "optionA": "Accept the explanation and keep serving",
+    "optionA": "Accept it if the count is still low",
     "optionB": "Ask other guests to confirm the claim",
     "optionC": "Ignore the explanation and call security over",
     "optionD": "Weigh it against the count and other cues",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Explanations may be true, which is why no cue is judged alone; the server compares it with the baseline, the count, and other signs. Simply accepting the excuse is how over-service happens."
+    "explanation": "Explanations may be true, which is why no cue is judged alone; the server compares it with the baseline, the count, and other signs. Accepting the excuse because the count seems low ignores a visible cue, and that is how over-service happens."
   },
   {
     "type": "ALCOHOL",
@@ -1112,12 +1112,12 @@
     "category": "alcIntoxication",
     "question": "A server notices a guest annoying other patrons with loud, repetitive jokes. Other guests look uncomfortable. What should the server do first?",
     "optionA": "Serve another drink to keep the peace",
-    "optionB": "Turn up the music to drown the jokes",
+    "optionB": "Ignore the cues until the count hits five",
     "optionC": "Ask the uncomfortable guests to move tables",
     "optionD": "Check for other cues and the drink count",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Loud, repetitive behavior is an inhibition cue, so the server should assess the guest more fully before deciding whether to slow or stop service. Serving more alcohol will worsen the problem."
+    "explanation": "Loud, repetitive behavior is an inhibition cue, so the server should assess the guest more fully before deciding whether to slow or stop service. No fixed drink number makes cues safe to ignore, and serving more alcohol will worsen the problem."
   },
   {
     "type": "ALCOHOL",
@@ -1153,8 +1153,8 @@
     "questionId": "ALC-INT-039",
     "category": "alcIntoxication",
     "question": "A guest who has had several drinks begins fumbling with a phone and cannot unlock it after several tries. Which category of cue is this?",
-    "optionA": "Loss of coordination",
-    "optionB": "Lowered inhibitions",
+    "optionA": "A coordination cue",
+    "optionB": "An inhibition cue",
     "optionC": "Improved concentration",
     "optionD": "Impaired hearing or vision",
     "correctAnswer": "A",
@@ -1168,12 +1168,12 @@
     "category": "alcIntoxication",
     "question": "A guest showing early cues says, 'I am fine, I have only had two.' The server counted four. What should the server trust?",
     "optionA": "The guest, because guests know their own limit",
-    "optionB": "The guest's friends",
+    "optionB": "The guest's own count of drinks",
     "optionC": "Neither; serve one more to test",
     "optionD": "The server's own count and observations",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Intoxicated guests often undercount or minimize, and impaired judgment makes self-assessment unreliable. The server's count and observations are the basis for service decisions."
+    "explanation": "Intoxicated guests often undercount or minimize, and impaired judgment makes self-assessment unreliable, so the guest's own count is not the one to trust. The server's count and observations are the basis for service decisions."
   },
   {
     "type": "ALCOHOL",
@@ -1981,11 +1981,11 @@
     "question": "Which of the following belongs in an incident report after refusing service?",
     "optionA": "The server's opinion of the guest's personality",
     "optionB": "The amount of the tab and the tip left",
-    "optionC": "Only the guest's name and phone number",
+    "optionC": "Only the cues observed, nothing else",
     "optionD": "Time, cues observed, actions taken, witnesses",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A useful report records the facts: who, what, when, where, which cues were observed, what the staff did, and who witnessed it. Opinions and irrelevant details weaken the record."
+    "explanation": "A useful report records the facts: who, what, when, where, which cues were observed, what the staff did, and who witnessed it. Cues alone leave out the time, actions and witnesses, and opinions or irrelevant details weaken the record."
   },
   {
     "type": "ALCOHOL",

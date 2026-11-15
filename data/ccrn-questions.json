@@ -1883,7 +1883,7 @@
     "question": "When does the 2021 Surviving Sepsis guideline suggest adding IV corticosteroids in septic shock?",
     "optionA": "At the very first vasopressor dose",
     "optionB": "Only if a cortisol level is low",
-    "optionC": "Norepinephrine 0.25 or more for 4 h",
+    "optionC": "Norepinephrine 0.25 mcg/kg/min for 4 h",
     "optionD": "Before the first fluid bolus is given",
     "correctAnswer": "C",
     "correctIndex": 2,

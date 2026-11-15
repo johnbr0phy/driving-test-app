@@ -1,16 +1,16 @@
 CAT = "dktrDriver"; SEG = "DRV"
 # Afsnit 4 and 5 (repetition of category B plan 4 and 5): the driver, other road users, road conditions.
 Q = [
-("A hazard appears suddenly. What does the teaching plan say matters most?",
+("A hazard appears suddenly. What matters most?",
  "The right, safe reaction", ["The fastest possible reaction", "Braking before you think", "Sounding the horn at once"],
  "The right and safe reaction is more important than a lightning-fast reaction that may be wrong."),
 ("You leave a long motorway stretch and enter a 50 km/h zone. What trap should you watch for?",
  "Underestimating your speed", ["Overestimating your own speed", "Losing air pressure", "Dazzling oncoming traffic"],
  "After driving fast for some time, most drivers tend to underestimate their speed when they must slow down (speed blindness). Check the speedometer."),
-("The screens in your cab keep showing new information while you drive. What does the plan advise?",
+("The screens in your cab keep showing new information while you drive. What should you do?",
  "Show less or switch them off", ["Read each update at once", "Turn the brightness up", "Glance at them every few seconds"],
  "Information screens can draw attention away from the road, especially when new information keeps appearing. Limit what is shown or switch the screen off."),
-("An elderly woman waits at a zebra crossing. What does the plan say many older pedestrians do?",
+("An elderly woman waits at a zebra crossing. What do many older pedestrians do?",
  "Cross without looking", ["Wait for every car to pass", "Wave drivers on first", "Cross only at the lights"],
  "Many older people see zebra crossings as especially safe places and often cross without looking at all."),
 ("What is the typical problem of young, inexperienced drivers?",
@@ -22,7 +22,7 @@ Q = [
 ("An emergency vehicle with sirens comes up behind you on a road with two lanes your way. You are in the left lane. What should you do?",
  "Move towards the left", ["Move into the right lane", "Stop where you are", "Speed up to clear the way"],
  "To keep the road open, drivers in lane 1 pull to the right and drivers in lane 2 pull to the left, leaving a gap in the middle."),
-("You have driven for hours on a dull, straight road. What does the plan warn about?",
+("You have driven for hours on a dull, straight road. What is the risk?",
  "Your attention level drops", ["Your brakes wear much faster", "Your mirrors misalign", "Your fuel use rises"],
  "Long periods of monotonous driving can lower your level of attention. Plan breaks and keep checking the road around you."),
 ("It rains for the first time after a long dry spell. How does the road surface change?",

@@ -15,9 +15,9 @@ const siteUrl = SITE_URL;
 
 const title = "Denmark Truck Theory Test 2026 in English - Free Practice";
 const metaDescription =
-  "Free Danish truck theory test (teoriprøve, categories C and CE) practice in English: 200 original questions, eight 25-question mock tests and every answer explained.";
+  "Start free: Danish truck theory test (teoriprøve, categories C and CE) practice in English: 200 original questions, eight 25-question mock tests and every answer explained.";
 const description =
-  "Free practice in English for the Danish truck theory test (teoriprøve) for category C, with CE coupling and length rules: 200 original questions written from Færdselsstyrelsen's teaching plan for lorries, on steering and air brakes, lights, tyres and the engine, bodywork, mirrors and the tachograph, licence rules, widths, weights and load marking, EU driving and rest times, how other vehicles handle, the driver and the road, driving a lorry in traffic, junctions, motorways and parking, alcohol, drugs, speed and seat belts. Eight 25-question mock tests with 20 to pass, like the real test, and four training sets.";
+  "Practice in English, free to start, for the Danish truck theory test (teoriprøve) for category C, with CE coupling and length rules: 200 original questions written from Færdselsstyrelsen's teaching plan for lorries, on steering and air brakes, lights, tyres and the engine, bodywork, mirrors and the tachograph, licence rules, widths, weights and load marking, EU driving and rest times, how other vehicles handle, the driver and the road, driving a lorry in traffic, junctions, motorways and parking, alcohol, drugs, speed and seat belts. Eight 25-question mock tests with 20 to pass (guides say the real test has 25 questions; at most five errors pass), and four training sets.";
 
 export const metadata: Metadata = {
   title,
@@ -129,7 +129,7 @@ export default function DenmarkTruckTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/denmark-truck-theory/dashboard"
             shortName="Truck theory"
-            subtitle="200 original questions in English for the Danish lorry teoriprøve (category C, with CE coupling rules): air brakes and steering, mirrors and the tachograph, driving and rest times, widths, weights and loads, right turns with cyclists, roundabouts and motorways. Eight 25-question mock tests with 20 to pass, like the real test. Free to start, no account needed."
+            subtitle="200 original questions in English for the Danish lorry teoriprøve (category C, with CE coupling rules): air brakes and steering, mirrors and the tachograph, driving and rest times, widths, weights and loads, right turns with cyclists, roundabouts and motorways. Eight 25-question mock tests with 20 to pass (guides say the real test has 25; at most five errors pass). Free to start, no account needed."
             shots={{ mobile: "/landing/dktruck-mobile.png", desktop: "/landing/dktruck-desktop.png" }}
           />
         </div>
@@ -159,9 +159,9 @@ export default function DenmarkTruckTheoryLandingPage() {
               <Monitor className="w-7 h-7 text-gray-500 dark:text-gray-400" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Real-Length Mock Tests</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">25-Question Mock Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Eight 25-question tests that together cover all 200 questions. You need 20 right, the same as at most five errors on the real test. No question repeats across tests, and every answer explains the rule.
+                Eight 25-question tests that together cover all 200 questions. You need 20 right: at most five errors, the real pass rule, on the 25 questions guides say the real test has. No question repeats across tests, and every answer explains the rule.
               </p>
             </div>
           </div>

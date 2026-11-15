@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cpatcp: {
+    answer:
+      "TCP, Tax Compliance and Planning, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. TCP runs 4 hours with 68 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, unchanged for 2027, it covers tax compliance and planning for individuals and personal financial planning (30 to 40%), entity tax compliance (30 to 40%), entity tax planning (10 to 20%) and property transactions (10 to 20%). Candidates are not tested on tax amounts indexed to inflation.",
+    rows: [
+      { label: "Section time", value: "4 hours" },
+      { label: "Multiple-choice questions", value: "68, in two testlets of 34" },
+      { label: "Task-based simulations", value: "7" },
+      { label: "Score weighting", value: "50% MCQ, 50% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Largest areas", value: "Individuals and personal financial planning, and entity compliance, 30 to 40% each" },
+      { label: "Run by", value: "AICPA, with NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
+    source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
   fortinse: {
     answer:
       "Fortinet NSE 1 in Cybersecurity is Fortinet's entry-level certification, and since July 15, 2026 it replaces Fortinet Certified Fundamentals (FCF) in Cybersecurity; people with an active FCF were awarded NSE 1 and NSE 2. To earn it you pass the online exam presented at the end of the free self-paced course Cybersecurity and Cloud Fundamentals on the Fortinet Training Institute, which Fortinet estimates at about 11 hours. The course has ten modules: Intro to Cybersecurity, Threat Landscape, Social Engineering, Malware, Cryptography and the Public Key Infrastructure, Secure Networking, Authentication and Access Control, Endpoint Security, Secure Data and Applications, and Cloud Security and Virtualization. Fortinet does not publish a question count, time limit or pass mark. The certification is active for two years.",

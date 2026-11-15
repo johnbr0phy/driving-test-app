@@ -1504,6 +1504,32 @@
     --brand-border-light: 48 20% 88%;
     --brand-gradient-to: 63 25% 94%;
   }
+  /* STAAR Algebra I theme: muted olive (v2 exam; matches lib/v2/exams/staaralg1.ts theme) */
+  [data-theme="staaralg1"] {
+    --brand: 70 25% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 70 30% 94%;
+    --brand-hover: 70 25% 25%;
+    --brand-dark: 70 25% 21%;
+    --brand-darker: 70 25% 14%;
+    --brand-muted: 70 15% 68%;
+    --brand-border: 70 15% 78%;
+    --brand-border-light: 70 15% 88%;
+    --brand-gradient-to: 85 25% 94%;
+  }
+  /* STAAR English I theme: deep magenta (v2 exam; matches lib/v2/exams/staareng1.ts theme) */
+  [data-theme="staareng1"] {
+    --brand: 308 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 308 80% 96%;
+    --brand-hover: 308 85% 25%;
+    --brand-dark: 308 85% 21%;
+    --brand-darker: 308 80% 14%;
+    --brand-muted: 308 40% 72%;
+    --brand-border: 308 40% 80%;
+    --brand-border-light: 308 40% 90%;
+    --brand-gradient-to: 322 60% 96%;
+  }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
     --brand: 256 90% 37%;
@@ -2169,6 +2195,20 @@
     --brand-gradient-to: 6 60% 96%;
   }
 
+  /* TOEFL Reading theme: muted olive green (v2 exam; matches lib/v2/exams/toeflread.ts theme) */
+  [data-theme="toeflread"] {
+    --brand: 84 25% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 84 25% 95%;
+    --brand-hover: 84 25% 33%;
+    --brand-dark: 84 25% 28%;
+    --brand-darker: 84 22% 19%;
+    --brand-muted: 84 18% 70%;
+    --brand-border: 84 20% 80%;
+    --brand-border-light: 84 20% 90%;
+    --brand-gradient-to: 94 30% 96%;
+  }
+
   /* MCAT theme (v2 exam; matches lib/v2/exams/mcat.ts theme) */
   [data-theme="mcat"] {
     --brand: 256 75% 40%;
@@ -2195,6 +2235,20 @@
     --brand-border: 342 28% 80%;
     --brand-border-light: 342 25% 89%;
     --brand-gradient-to: 352 40% 96%;
+  }
+
+  /* Wonderlic cognitive ability theme: deep lime green (v2 exam; matches lib/v2/exams/wonderlic.ts theme) */
+  [data-theme="wonderlic"] {
+    --brand: 90 90% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 90 70% 95%;
+    --brand-hover: 90 90% 22%;
+    --brand-dark: 90 90% 19%;
+    --brand-darker: 90 80% 13%;
+    --brand-muted: 90 30% 66%;
+    --brand-border: 90 35% 78%;
+    --brand-border-light: 90 35% 88%;
+    --brand-gradient-to: 100 50% 95%;
   }
 
   /* CompTIA Network+ theme (v2 exam; matches lib/v2/exams/netplus.ts theme) */
@@ -3495,6 +3549,20 @@
     --brand-border: 112 40% 80%;
     --brand-border-light: 112 40% 90%;
     --brand-gradient-to: 124 58% 96%;
+  }
+
+  /* STAAR Biology theme: deep magenta (v2 exam; matches lib/v2/exams/staarbio.ts theme) */
+  [data-theme="staarbio"] {
+    --brand: 322 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 322 70% 96%;
+    --brand-hover: 322 85% 26%;
+    --brand-dark: 322 85% 22%;
+    --brand-darker: 322 80% 13%;
+    --brand-muted: 322 35% 72%;
+    --brand-border: 322 45% 80%;
+    --brand-border-light: 322 45% 90%;
+    --brand-gradient-to: 332 60% 96%;
   }
 
   /* Philippine Civil Service Exam theme: deep government blue (v2 exam; matches lib/v2/exams/phcse.ts theme) */
@@ -4867,6 +4935,20 @@
     --brand-border: 280 16% 80%;
     --brand-border-light: 280 14% 89%;
     --brand-gradient-to: 30 60% 95%;
+  }
+
+  /* ASE Automobile and Light Truck tests A1-A8 theme */
+  [data-theme="ase"] {
+    --brand: 70 25% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 70 30% 95%;
+    --brand-hover: 70 25% 33%;
+    --brand-dark: 70 25% 27%;
+    --brand-darker: 70 22% 16%;
+    --brand-muted: 70 18% 66%;
+    --brand-border: 70 18% 78%;
+    --brand-border-light: 70 15% 88%;
+    --brand-gradient-to: 35 50% 95%;
   }
 
   /* LLQP (Canada life licence) theme */
@@ -6338,6 +6420,29 @@
     --brand-dark: 48 20% 65%;
     --brand-darker: 48 15% 78%;
   }
+  .dark [data-theme="staaralg1"] {
+    --brand: 70 25% 38.1%;
+    --brand-hover: 70 25% 30.1%;
+    --brand-light: 70 30% 13%;
+    --brand-gradient-to: 85 25% 11%;
+    --brand-border-light: 70 15% 24%;
+    --brand-border: 70 15% 34%;
+    --brand-muted: 70 15% 45%;
+    --brand-dark: 70 25% 65%;
+    --brand-darker: 70 25% 78%;
+  }
+
+  .dark [data-theme="staareng1"] {
+    --brand: 308 85% 44.7%;
+    --brand-hover: 308 85% 36.7%;
+    --brand-light: 308 45% 13%;
+    --brand-gradient-to: 322 40% 11%;
+    --brand-border-light: 308 35% 24%;
+    --brand-border: 308 40% 34%;
+    --brand-muted: 308 40% 45%;
+    --brand-dark: 308 85% 65%;
+    --brand-darker: 308 80% 78%;
+  }
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;
     --brand-hover: 256 90% 42%;
@@ -6904,6 +7009,18 @@
     --brand-darker: 356 75% 78%;
   }
 
+  .dark [data-theme="toeflread"] {
+    --brand: 84 25% 38.8%;
+    --brand-hover: 84 25% 33%;
+    --brand-light: 84 25% 13%;
+    --brand-gradient-to: 94 30% 11%;
+    --brand-border-light: 84 20% 24%;
+    --brand-border: 84 20% 34%;
+    --brand-muted: 84 18% 45%;
+    --brand-dark: 84 25% 65%;
+    --brand-darker: 84 22% 78%;
+  }
+
   .dark [data-theme="mcat"] {
     --brand: 256 75% 50%;
     --brand-hover: 256 75% 42%;
@@ -6926,6 +7043,18 @@
     --brand-muted: 342 25% 45%;
     --brand-dark: 342 30% 65%;
     --brand-darker: 342 25% 78%;
+  }
+
+  .dark [data-theme="wonderlic"] {
+    --brand: 90 90% 27.2%;
+    --brand-hover: 90 90% 22%;
+    --brand-light: 90 45% 13%;
+    --brand-gradient-to: 100 40% 11%;
+    --brand-border-light: 90 35% 24%;
+    --brand-border: 90 35% 34%;
+    --brand-muted: 90 30% 45%;
+    --brand-dark: 90 90% 65%;
+    --brand-darker: 90 80% 78%;
   }
 
   .dark [data-theme="netplus"] {
@@ -8019,6 +8148,18 @@
     --brand-muted: 112 30% 45%;
     --brand-dark: 112 58% 65%;
     --brand-darker: 112 53% 78%;
+  }
+
+  .dark [data-theme="staarbio"] {
+    --brand: 322 85% 46.7%;
+    --brand-hover: 322 85% 38.7%;
+    --brand-light: 322 45% 13%;
+    --brand-gradient-to: 332 40% 11%;
+    --brand-border-light: 322 35% 24%;
+    --brand-border: 322 40% 34%;
+    --brand-muted: 322 35% 45%;
+    --brand-dark: 322 85% 65%;
+    --brand-darker: 322 80% 78%;
   }
 
   .dark [data-theme="phcse"] {
@@ -9184,6 +9325,18 @@
     --brand-muted: 280 16% 45%;
     --brand-dark: 280 25% 65%;
     --brand-darker: 280 22% 78%;
+  }
+
+  .dark [data-theme="ase"] {
+    --brand: 70 25% 38.1%;
+    --brand-hover: 70 25% 33%;
+    --brand-light: 70 30% 13%;
+    --brand-gradient-to: 35 40% 11%;
+    --brand-border-light: 70 15% 24%;
+    --brand-border: 70 18% 34%;
+    --brand-muted: 70 18% 45%;
+    --brand-dark: 70 25% 65%;
+    --brand-darker: 70 22% 78%;
   }
 
   .dark [data-theme="llqp"] {

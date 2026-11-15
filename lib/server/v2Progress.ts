@@ -36,6 +36,7 @@ import '@/lib/v2/banks/isee';
 import '@/lib/v2/banks/ssat';
 import '@/lib/v2/banks/cogat';
 import '@/lib/v2/banks/hspt';
+import '@/lib/v2/banks/staaralg1';
 
 // How far students get through the v2 exams that have Basics (every bank
 // imported above: an exam with Basics and no import here breaks the card), for the "Basics" card on the /admin Growth

@@ -62,6 +62,10 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
 const BORROWED_SETS: Record<string, string> = {
   dmv: "driving",
   hiset: "ged",
+  // Texas Biology EOC wears the AP Biology tiger.
+  staarbio: "apbio",
+  wonderlic: "asvab",
+  toeflread: "ieltsread",
   ukwater: "caplumb",
   ukg3: "caplumb",
   ukplumb: "caplumb",
@@ -77,7 +81,9 @@ const BORROWED_SETS: Record<string, string> = {
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
-  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", hspt: "sat",cogat: "timestables",ssat: "sat",isee: "sat",
+  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "sat", cogat: "timestables",ssat: "sat",isee: "sat",
+  // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
+  staareng1: "aplang",
   pkdrive: "driving",
   // EU driving theory tests (Nov 2026) wear the car tiger.
   esdgt: "driving", ptimt: "driving", bedriving: "driving", dkteori: "driving", setrafik: "driving", fitheory: "driving", grdriving: "driving", rodrpciv: "driving", hukresz: "driving", mttheory: "driving", detheorie: "driving",
@@ -143,6 +149,8 @@ const BORROWED_SETS: Record<string, string> = {
   aafcs: "foodhandler",
   // MBLEx (massage therapy licensing) borrows the NASM personal trainer tiger.
   mblex: "nasm",
+  // ASE A1-A8 (US automobile technicians) borrows the Red Seal automotive mechanic tiger (no flag).
+  ase: "caauto",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
   // licence, security guard and NCLEX families.
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",

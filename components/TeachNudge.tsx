@@ -21,6 +21,8 @@ const TEACHER_LED = new Set([
   "aafcs",
   // US: massage therapy schools (FSMTB MBLEx)
   "mblex",
+  // US: automotive technology programs (ASE A1-A8)
+  "ase",
   // Spain: academias de oposiciones and accredited security training centres
   "espolicia", "esguardia", "esvigilante",
   // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen
@@ -54,10 +56,12 @@ const TEACHER_LED = new Set([
   // High school, military and college classes
   "ged", "hiset", "sat", "act", "asvab", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
   "gcsehigher", "gcsescience", "gcsecs", "fsmaths",
-  "eqao9",
+  "eqao9", "staareng1",
   "naplan7", "vicsel", "hscmaths",
   // Primary school classes
-  "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth", "hspt", "cogat", "ssat", "isee",
+  "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth", "staarbio","hspt", "cogat", "ssat", "isee",
+  // Texas high school end-of-course classes
+  "staaralg1",
   // Trade schools, pre-licensing courses and instructor-led certifications
   "cdl", "cdlx", "moto", "osha", "forklift", "epa608", "foodmgr", "security", "lifeguard", "hunter", "cosmetology",
   "realestate", "insurance", "pnc", "ham", "civics",
@@ -68,7 +72,7 @@ const TEACHER_LED = new Set([
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "lsat", "ieltsread", "mcat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "lsat", "ieltsread", "toeflread", "mcat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)

@@ -380,6 +380,38 @@
       "what": "SSAT testing year 2026-2027 ends; E3n publishes a new Candidate Handbook for 2027-2028.",
       "action": "Re-read the new handbook and the Middle Level format page; update section counts, timing, scoring and facts if they change.",
       "source": "https://www.admission.org/help/whats-on-the-middle-level-ssat"
+    },
+    {
+      "exam": "staareng1",
+      "date": "2027-08-01",
+      "kind": "sunset",
+      "what": "TEA plans to bring in the Student Success Tool, the state test that follows STAAR, from fall 2027; the draft SST English I summative blueprint (30 to 31 questions, 38 points, a 6-point extended constructed response) starts with the spring 2028 test.",
+      "action": "Check TEA's final SST English I blueprint and assessed curriculum; re-weight the reading and writing counts and update the landing, facts and score note.",
+      "source": "https://tea.texas.gov/data-reports/staar/sst-english-i-summative-blueprint.pdf"
+    },
+    {
+      "exam": "staaralg1",
+      "date": "2027-08-01",
+      "kind": "format",
+      "what": "HB 8 replaces STAAR with the Student Success Tool from the 2027-28 school year; the Algebra I end-of-course test stays required, with optional beginning- and middle-of-year tests.",
+      "action": "Check TEA's SST Algebra I blueprint and question types; re-weight the bank and update the landing, facts and names.",
+      "source": "https://tea.texas.gov/data-reports/staar/hb-8-faq-update.pdf"
+    },
+    {
+      "exam": "staarbio",
+      "date": "2027-08-01",
+      "kind": "sunset",
+      "what": "House Bill 8: STAAR is replaced by a new assessment program (possibly called the Student Success Tool) beginning in the 2027-28 school year; TEA has posted draft SST Biology blueprints.",
+      "action": "Re-check TEA's Biology blueprint for the new program; rebuild or retire the STAAR Biology bank and landing.",
+      "source": "https://tea.texas.gov/data-reports/student-assessment-overview/house-bill-8-student-assessment"
+    },
+    {
+      "exam": "toeflread",
+      "date": "2028-01-21",
+      "kind": "notice",
+      "what": "ETS's two-year transition after the January 2026 update ends: the comparable 0 to 120 total may stop appearing on TOEFL iBT score reports.",
+      "action": "Check the ETS score pages; update the examFacts score row and the landing scoring FAQ.",
+      "source": "https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html"
     }
   ]
 }

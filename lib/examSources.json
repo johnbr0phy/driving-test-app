@@ -97,6 +97,11 @@
   "https://assets-us-01.kc-usercontent.com:443/406ac8c6-58e8-00b3-e3c1-0c312965deb2/99c55d51-15bb-4a87-89f3-d6e7013d8a74/Radiography_Content_Specifications_2027.pdf",
   "https://www.arrt.org/pages/arrt-reference-documents/by-document-type/examination-content-specifications"
  ],
+ "ase": [
+  "https://ase.com/wp-content/uploads/ASE_Automobile_Study_Guide.pdf",
+  "https://ase.com/tests/a1-a9/",
+  "https://ase.com/wp-content/uploads/ASE_CertificationNeedtoKnow.pdf"
+ ],
  "aswb": [
   "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf",
   "https://www.aswb.org/2026-blueprints/"
@@ -1316,6 +1321,24 @@
   "https://store.pw.live/blogs/ssc-exams/ssc-mts-syllabus-2025-and-exam-pattern",
   "https://www.oliveboard.in/blog/ssc-mts-selection-process"
  ],
+ "staaralg1": [
+  "https://tea.texas.gov/data-reports/staar/2022-staar-algebra-i-blueprint-0.pdf",
+  "https://tea.texas.gov/data-reports/staar/2014-algebra-i-assessed-curriculum.pdf",
+  "https://tea.texas.gov/data-reports/staar/staar-mathematics-resources",
+  "https://tea.texas.gov/data-reports/staar/hb-8-faq-update.pdf"
+ ],
+ "staarbio": [
+  "https://tea.texas.gov/data-reports/staar/biology-blueprint-2026.pdf",
+  "https://tea.texas.gov/data-reports/staar/2026-staar-bio-assessed-curriculum.pdf",
+  "https://tea.texas.gov/laws-and-rules/sboe-rules-tac/sboe-tac-currently-effect/ch112c.pdf",
+  "https://tea.texas.gov/data-reports/student-assessment-overview/house-bill-8-student-assessment"
+ ],
+ "staareng1": [
+  "https://tea.texas.gov/data-reports/staar/staar-english-i-blueprint-schematic-pdf.pdf",
+  "https://tea.texas.gov/student-assessment/assessment-initiatives/staar-redesign",
+  "https://tea2.tea.texas.gov/data-reports/staar/sst-english-i-assessed-curriculum.pdf",
+  "https://tea.texas.gov/data-reports/staar/sst-english-i-summative-blueprint.pdf"
+ ],
  "texesppr": [
   "https://www.tx.nesinc.com/TestView.aspx?f=HTML_FRAG/TX160_TestPage.html",
   "https://www.tx.nesinc.com/Content/StudyGuide/TX_SG_obj_160.htm",
@@ -1325,6 +1348,12 @@
   "https://www.tgprb.in",
   "https://doc.tgprb.in/SI+(Civil+et+al",
   "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf"
+ ],
+ "toeflread": [
+  "https://www.eu.ets.org/pdfs/toefl/toefl-ibt-test-specifications-2026.pdf",
+  "https://www.kr.ets.org/pdfs/toefl/toefl-ibt-test-overview.pdf",
+  "https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html",
+  "https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html"
  ],
  "trcnpqe": [
   "https://trcn.gov.ng/pqe-curriculum",
@@ -1457,6 +1486,11 @@
   "https://www.waecnigeria.org/index.php/node/9?page=0",
   "https://waecsyllabus.com/mathematics/",
   "https://waecsyllabus.com/files/ssce/GENERAL%20MATHEMATICS%20OR%20MATHEMATICS%20%28CORE%29.pdf"
+ ],
+ "wonderlic": [
+  "https://wonderlic.com/science/cognitive-ability/",
+  "https://wonderlic.com/select-hiring-assessment/cognitive/",
+  "https://wonderlic.com/wp-content/uploads/2017/06/WPT-R_Description_MSP.pdf"
  ],
  "zak53": [
   "https://www.gov.za/services/driving-licence/apply-learners-licence",

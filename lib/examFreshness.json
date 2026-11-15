@@ -372,6 +372,14 @@
       "what": "Defra's Specification on the Prevention of Backflow (6 May 2026) takes effect on 6 May 2027, adding the Type AUK4 air gap.",
       "action": "Re-check the backflow device items and decide whether to add Type AUK4.",
       "source": "https://www.legislation.gov.uk/uksi/1999/1148/contents/made"
+    },
+    {
+      "exam": "ssat",
+      "date": "2027-07-20",
+      "kind": "notice",
+      "what": "SSAT testing year 2026-2027 ends; E3n publishes a new Candidate Handbook for 2027-2028.",
+      "action": "Re-read the new handbook and the Middle Level format page; update section counts, timing, scoring and facts if they change.",
+      "source": "https://www.admission.org/help/whats-on-the-middle-level-ssat"
     }
   ]
 }

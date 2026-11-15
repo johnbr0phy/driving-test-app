@@ -2186,6 +2186,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two timed ISEE Middle Level practice tests covering all four scored sections at about half length and the real pace, with a percent score per section, and eight drills on synonyms, sentence completion, word problems, quantitative comparisons, reading and math, two of which teach the basics first. All of it is free with no account required. It does not include the essay and does not give a stanine.",
   },
+  ssat: {
+    answer:
+      "The SSAT (Secondary School Admission Test) is the admission test many US and international independent schools ask for, run by E3n (admission.org). The Middle Level is for students in grades 5 to 7 applying for grades 6 to 8; the Upper Level, with the same format, is for grades 8 to 11. The Middle Level has an unscored 25-minute writing sample, then five multiple-choice sections: Quantitative (25 questions, 30 minutes), Reading (40 questions, 40 minutes), Verbal (60 questions: 30 synonyms and 30 analogies, 30 minutes), a second Quantitative section (25 questions, 30 minutes) and an unscored 15-minute experimental section, with two 10-minute breaks, 3 hours 10 minutes in all. Each question has five answer choices, calculators are not allowed, and a right answer earns 1 point, a wrong answer loses a quarter point and a blank earns nothing.",
+    rows: [
+      { label: "Who takes it", value: "Middle Level: students in grades 5 to 7 applying for grades 6 to 8" },
+      { label: "Scored sections", value: "Quantitative (2 x 25), Reading (40), Verbal (30 synonyms, 30 analogies)" },
+      { label: "Unscored parts", value: "25-minute writing sample and a 15-minute experimental section" },
+      { label: "Time", value: "3 hours 10 minutes, with two 10-minute breaks" },
+      { label: "Answer choices", value: "Five per question; no calculator" },
+      { label: "Scoring", value: "1 point right, minus 1/4 point wrong, 0 for a blank; scaled scores and percentiles" },
+      { label: "Pass mark", value: "None: each school reads the scores in its own way" },
+    ],
+    basedOn: "E3n's \"What's on the Middle Level SSAT?\" and Score Reports pages and the SSAT Candidate Handbook for testing year 2026-2027",
+    source: { name: "E3n: What's on the Middle Level SSAT?", url: "https://www.admission.org/help/whats-on-the-middle-level-ssat" },
+    tigertest:
+      "Tigertest has two timed Middle Level practice tests with the four scored sections in the real order, each about half the real length at the real pace, five choices per question, and seven drills, three of which teach the basics first. All of it is free with no account required. Scores are percent correct, not SSAT scaled scores, and the writing sample and experimental section are not included.",
+  },
   psat: {
     answer:
       "The digital PSAT/NMSQT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules), with a calculator allowed on all of Math. It is adaptive by module and scored 320 to 1520, with each section scored 160 to 760. It is given to 10th and 11th graders in the fall (the PSAT 10 is the same test in the spring), and juniors' scores are used for the National Merit Scholarship Program through a Selection Index of 48 to 228.",

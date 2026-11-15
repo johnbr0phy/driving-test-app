@@ -1465,6 +1465,19 @@
     --brand-border-light: 159 40% 88%;
     --brand-gradient-to: 174 60% 94%;
   }
+  /* SSAT theme: deep lime green (v2 exam; matches lib/v2/exams/ssat.ts theme) */
+  [data-theme="ssat"] {
+    --brand: 91 95% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 91 70% 95%;
+    --brand-hover: 91 95% 22%;
+    --brand-dark: 91 95% 18%;
+    --brand-darker: 91 90% 12%;
+    --brand-muted: 91 40% 70%;
+    --brand-border: 91 40% 78%;
+    --brand-border-light: 91 40% 88%;
+    --brand-gradient-to: 106 60% 94%;
+  }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
     --brand: 256 90% 37%;
@@ -6237,6 +6250,17 @@
     --brand-muted: 159 40% 45%;
     --brand-dark: 159 95% 65%;
     --brand-darker: 159 90% 78%;
+  }
+  .dark [data-theme="ssat"] {
+    --brand: 91 95% 26.6%;
+    --brand-hover: 91 95% 22%;
+    --brand-light: 91 45% 13%;
+    --brand-gradient-to: 106 40% 11%;
+    --brand-border-light: 91 35% 24%;
+    --brand-border: 91 40% 34%;
+    --brand-muted: 91 40% 45%;
+    --brand-dark: 91 95% 65%;
+    --brand-darker: 91 90% 78%;
   }
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;

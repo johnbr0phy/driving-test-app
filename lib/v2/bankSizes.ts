@@ -110,4 +110,5 @@ export const BANK_SIZES: Record<string, number> = {
   wassceeng: 270,
   wasscemath: 200,
   isee: 243,
+  ssat: 227,
 };

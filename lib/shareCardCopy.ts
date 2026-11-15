@@ -74,6 +74,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ged: { title: "GED Practice Tests", description: "Build skills in language arts, math, science and social studies with tests and topic drills." },
   isee: { title: "ISEE Middle Level Practice Test", description: "Practice Verbal, Quantitative, Reading and Math for the ISEE Middle Level, timed like the real test." },
   mapgrowth: { title: "MAP Growth Practice Test", description: "Practice math, reading and language usage for the MAP Growth test in grades 2 to 5." },
+  ssat: { title: "SSAT Practice Test", description: "Practice quantitative, reading and verbal questions for the Middle Level SSAT, grades 5 to 7." },
   sat: { title: "Digital SAT Practice Tests", description: "Build reading, writing and math skills with timed practice tests and focused topic drills." },
   act: { title: "ACT Practice Tests", description: "Review English, math, reading and science with timed tests, passages and skill drills." },
   teas: { title: "ATI TEAS Nursing Entrance Exam", description: "Build reading, math, science and English skills for nursing and allied health admissions." },

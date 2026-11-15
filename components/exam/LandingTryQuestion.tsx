@@ -73,7 +73,7 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
   };
 
   return (
-    <div className="mx-auto mt-10 w-full max-w-xl text-left rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-lg p-5 sm:p-6">
+    <div className="mx-auto mt-10 w-full max-w-xl text-left rounded-2xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-lg dark:shadow-black/40 dark:ring-1 dark:ring-white/5 p-5 sm:p-6">
       <p className="text-xs font-semibold uppercase tracking-wide text-brand">{copy.label}</p>
       <p className="mt-2 text-base sm:text-lg font-medium text-gray-900 dark:text-gray-50">{q.stem}</p>
       <div className="mt-4 grid gap-2">
@@ -89,12 +89,12 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
               aria-pressed={picked === i}
               className={`flex w-full items-start gap-3 rounded-xl border px-4 py-3 text-left text-sm sm:text-base transition-colors ${
                 state === "idle"
-                  ? "border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800"
+                  ? "border-gray-200 dark:border-gray-600 dark:bg-gray-900/40 hover:border-gray-400 dark:hover:border-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700"
                   : state === "right"
                     ? "border-green-500 bg-green-50 dark:bg-green-950 text-green-900 dark:text-green-100"
                     : state === "wrong"
                       ? "border-red-500 bg-red-50 dark:bg-red-950 text-red-900 dark:text-red-100"
-                      : "border-gray-200 dark:border-gray-800 text-gray-400"
+                      : "border-gray-200 dark:border-gray-700 text-gray-400"
               }`}
             >
               <span className="font-semibold">{LETTERS[i]}</span>

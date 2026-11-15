@@ -133,8 +133,13 @@ plan, give way) and every scenario becomes "the safe move". So before writing a 
 - Never reuse one key word for word in a category, and do not write near-duplicate scenarios
   with the same answer (six "a caregiver raises a concern, tell the supervisor" items teach one
   fact six times).
-- Order matters as well as rate: training sets show questions in ID order, so 4 or more in a row
-  whose answers share a word read as one answer to everyone. Interleave them.
+- Order matters as well as rate. Since Nov 2026 training sets do not ask in ID order: they mix it
+  (`lib/trainingOrder.ts`, a golden-ratio stride inside each category, categories spread evenly
+  through the set), so a run of one subtopic in ID order (ten roundabout questions written in a
+  row) is spread through the set by itself. Write subtopics in whatever order is natural; do not
+  hand-shuffle IDs to break up a topic. Still interleave keys that share a word: the answer-pattern
+  check reads ID order, and practice tests and sources are read that way too, so 4 or more in a row
+  whose answers share a word still fail it.
 `tools/check_answer_patterns.py` runs inside the validator and fails a bank where picking the option
 with one word beats guessing by a clear margin, a key repeats, or 4+ keys in a row share a word. It
 reports the result as marks a test-wise student gains per 50-question test, measured on what one

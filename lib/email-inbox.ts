@@ -38,10 +38,6 @@ export const EMAIL_INBOX = {
     subject: feature ? `Revisit ${inboxLabel(feature, "your practice")}` : `Explore ${exam(v)}Premium features`,
     preheader: "Review the Premium features and current price before you decide.",
   }),
-  upgradePitch: (): InboxCopy => ({
-    subject: "What DMV Premium includes",
-    preheader: "See the extra training sets, practice tests, and full stats.",
-  }),
   purchaseWelcome: (v: EmailVoice): InboxCopy => ({
     subject: "Tigertest Premium: purchase confirmed",
     preheader: v.id !== "unknown" && !EXAMS_V2.some(e => e.id === v.id)

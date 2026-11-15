@@ -37,3 +37,33 @@ test('DMV test-only learners retain their existing minimum-answer eligibility',a
  u.raw.completedTests=[{state:'CA',completedAt:new Date(now-3*hour).toISOString(),answers:Array.from({length:10},(_,i)=>({questionId:`U-${i+1}`,userAnswer:'A',isCorrect:true}))}];
  users=[u];await GET({});assert.equal(batch.users.length,1);assert.equal(batch.users[0].questionsAnswered,10);
 });
+test('every exam that sells Premium gets the follow-up, about the exam of the paywall', async()=>{
+ const {paywallExam}=require('../lib/paywallAbandon.ts');
+ // DMV keeps its two paywall places.
+ assert.equal(paywallExam({location:'dashboard',itemId:'set_3'}),'dmv');
+ assert.equal(paywallExam({location:'stats_page',itemId:'full_stats'}),'dmv');
+ assert.equal(paywallExam({location:'results_page',itemId:'test_4'}),null);
+ // v1 locked steps and stats, v2 locked drills.
+ assert.equal(paywallExam({location:'cdl_dashboard',itemId:'exam_cdl_test_6'}),'cdl');
+ assert.equal(paywallExam({location:'ccma_stats',itemId:'full_stats'}),'ccma');
+ assert.equal(paywallExam({location:'nclex_dashboard',itemId:'v2_nclex_test_2'}),'nclex');
+ // A free v2 exam sells nothing, so it never gets the email.
+ assert.equal(paywallExam({location:'sat_dashboard',itemId:'v2_sat_test_2'}),null);
+ const cdl={...user('cdl_dashboard'),raw:{...user().raw,paywallHits:{h:{location:'cdl_dashboard',itemId:'exam_cdl_test_6',label:'CDL Practice Test 6',lastAt:new Date(now-2*hour).toISOString()}},
+   trainingAnswerHistory:Array.from({length:12},(_,i)=>({questionId:`CDL-GK-${String(i+1).padStart(3,'0')}`,isCorrect:true,answeredAt:new Date(now-24*hour).toISOString()}))}};
+ cdl.lastPaywallHit=cron.latestPaywallHit(cdl.raw.paywallHits);
+ users=[cdl];await GET({});
+ assert.equal(batch.users.length,1);assert.equal(batch.users[0].examId,'cdl');assert.equal(batch.users[0].questionsAnswered,12);
+ assert.ok(batch.users[0].voice.premiumBenefits.length>0);
+ // A class student of that exam already has every step.
+ users=[{...cdl,raw:{...cdl.raw,classMemberships:[{code:'c',memberId:'m',examId:'cdl'}]}}];await GET({});assert.equal(batch.users.length,0);
+});
+test('paywall email lists the exam\'s own Premium steps, never the DMV\'s', ()=>{
+ const {EMAIL_TEMPLATES}=require('../lib/email-templates.ts');
+ const html=EMAIL_TEMPLATES.paywallAbandon(voiceFor('cdl'));
+ assert.match(html,/Open CDL Practice/);
+ assert.doesNotMatch(html,/State Laws|Practice tests C and D|DMV/);
+ assert.match(EMAIL_TEMPLATES.paywallAbandon(voiceFor('dmv')),/State Laws/);
+ for (const id of ['cdl','ccma','nclex','moto']) assert.ok(voiceFor(id).premiumBenefits.length>0, id);
+ assert.equal(voiceFor('sat').hasPremium,false);
+});

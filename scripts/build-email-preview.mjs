@@ -32,13 +32,6 @@ const EMAILS = [
     note: 'Was "24h after signup with 0 tests", which fired a day after most people had already left and ignored whether they had ever answered a question.',
   },
   {
-    key: 'upgradePitch', stage: 4, name: 'Upgrade pitch', status: 'changed',
-    subject: "You're doing the work 💪",
-    trigger: '24h+ old · 50+ questions or 1+ test · active within 14 days',
-    timing: 'Daily 11:00 UTC', volume: '~330 / mo', words: [158, 82],
-    note: 'Was "3+ days old and 2+ completed tests". That excluded 569 users who answered 25+ questions and never finished a test, and questions answered is what separates buyers (median 400) from everyone else (median 12).',
-  },
-  {
     key: 'secondTestNudge', stage: 5, name: 'Second test nudge', status: 'live',
     subject: 'Nice work on test #1!',
     trigger: 'Exactly 1 test completed in the last 48h',

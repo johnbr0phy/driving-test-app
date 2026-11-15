@@ -214,8 +214,9 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       ].join("\n"),
     }),
 
-  // Hit a paywall 1-24h ago and walked away. The highest-intent moment there
-  // is. DMV only: no other exam has a paywall.
+  // Hit a paywall 1-36h ago and walked away: the one Premium email, sent only
+  // because the person opened a locked step. Any exam that sells Premium
+  // (the DMV, every v1 exam, the paid v2 exams); the list is that exam's own.
   paywallAbandon: (v) =>
     emailShell({
       voice: v,
@@ -227,41 +228,10 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "You recently opened {{paywallName}}. You can return to your practice when you are ready.",
         ),
         p(
-          `<strong style="font-weight: 600;">Premium unlocks more practice:</strong>`,
+          `<strong style="font-weight: 600;">On ${esc(v.shortName)}, Premium adds:</strong>`,
         ),
-        ul([
-          "Safety &amp; Emergencies and State Laws, 100 questions",
-          "Practice tests C and D",
-          "Every question you miss, on repeat",
-          "Full stats on exams where these require Premium",
-        ]),
-        cta(DASH(v, "paywall_abandon"), "Open DMV Practice"),
-        p("Check the current price and payment details at checkout."),
-        signoff(),
-      ].join("\n"),
-    }),
-
-  // 24h+ old, 50+ questions or 1+ test, active in the last 14 days. DMV only.
-  upgradePitch: (v) =>
-    emailShell({
-      voice: v,
-      title: EMAIL_INBOX.upgradePitch().subject,
-      preheader: EMAIL_INBOX.upgradePitch().preheader,
-      heading: "You're doing the work 💪",
-      body: [
-        p(
-          "You have been working on your practice questions.",
-        ),
-        p(
-          `The free tier is 2 training sets and 2 practice tests, with more available through Premium. <strong style="font-weight: 600;">Premium unlocks the rest:</strong>`,
-        ),
-        ul([
-          "Safety &amp; Emergencies and State Laws, 100 more questions",
-          "Practice tests C and D",
-          "Your stats page, showing what you always get wrong",
-          "Full stats on other exams where Premium is required",
-        ]),
-        cta(DASH(v, "upgrade_pitch"), "Open DMV Practice"),
+        ul(v.premiumBenefits),
+        cta(DASH(v, "paywall_abandon"), `Open ${esc(v.shortName)} Practice`),
         p("Check the current price and payment details at checkout."),
         signoff(),
       ].join("\n"),

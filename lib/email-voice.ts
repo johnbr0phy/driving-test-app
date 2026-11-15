@@ -21,8 +21,11 @@ import {
   getExamByStateCode,
   examFamilyId,
   examSetBase,
+  examTestIds,
   examTestTotal,
+  trainingPartName,
 } from "@/lib/exams";
+import { lockedTestIds, lockedTrainingParts } from "@/lib/examLocks";
 
 export interface EmailVoice {
   /** "dmv" or an exam id from lib/exams. */
@@ -41,8 +44,14 @@ export interface EmailVoice {
   /** App paths, without the host. */
   dashboardPath: string;
   statsPath: string;
-  /** The DMV flow's own Premium copy (sets and tests 3 and 4). Registry exams lock the last quarter of their steps (lib/examLocks.ts) but have no paywall emails. */
+  /** True when Tigertest Premium unlocks something on this exam (the paywall follow-up email can be sent). */
   hasPremium: boolean;
+  /**
+   * What Premium unlocks on this exam, in English, for the paywall follow-up
+   * email: the DMV's sets and tests 3 and 4, a v1 exam's locked steps
+   * (lib/examLocks.ts), a v2 exam's locked drills and test. Empty when free.
+   */
+  premiumBenefits: string[];
   /**
    * Days of silence after which lifecycle emails stop. Someone who stopped
    * studying for the DMV has almost always sat the test within days; a
@@ -67,6 +76,11 @@ const DMV_VOICE: EmailVoice = {
   dashboardPath: "/dmv/dashboard",
   statsPath: "/stats",
   hasPremium: true,
+  premiumBenefits: [
+    "Safety &amp; Emergencies and State Laws, 100 more questions",
+    "Practice tests C and D",
+    "Your stats page, showing what you always get wrong",
+  ],
   inactiveDays: 3,
   sourceLine: null,
 };
@@ -86,6 +100,42 @@ function examTestName(exam: ExamConfig): string {
   return testNameFor(exam.shortName, exam.fullName);
 }
 
+const andList = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`);
+const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+/**
+ * A v1 exam's Premium steps by name (the last quarter of its dashboard),
+ * plus its full stats. Set names of an exam written in another language are
+ * not English, so those exams get a plain description instead.
+ */
+function v1PremiumBenefits(exam: ExamConfig): string[] {
+  // An exam that lists its own Premium (mocks and all) says it best.
+  if (exam.premiumBenefits?.length) return exam.premiumBenefits.map(esc);
+  const english = !exam.language || exam.language === "en";
+  const parts = lockedTrainingParts(exam);
+  const ids = examTestIds(exam);
+  const tests = lockedTestIds(exam).map((id) => ids.indexOf(id) + 1).filter((n) => n > 0);
+  const out: string[] = [];
+  if (parts.length > 0) {
+    const names = parts.map((p) => esc(trainingPartName(p)));
+    out.push(english
+      ? `The ${andList(names)} training ${parts.length === 1 ? "set" : "sets"}`
+      : `The last ${parts.length === 1 ? "training set" : `${parts.length} training sets`}`);
+  }
+  if (tests.length > 0) {
+    out.push(`Practice ${tests.length === 1 ? "Test" : "Tests"} ${andList(tests.map(String))}`);
+  }
+  out.push(`Your full ${esc(exam.english?.shortName ?? exam.shortName)} stats, showing what you keep getting wrong`);
+  return out;
+}
+
+/** A v2 exam's locked drills and test, from its config (empty when free). */
+function v2PremiumBenefits(exam: ExamV2Config): string[] {
+  return (exam.premium?.benefits ?? [])
+    .filter((b) => !/every other exam|one payment|subscription/i.test(b))
+    .map(esc);
+}
+
 function voiceForExam(exam: ExamConfig): EmailVoice {
   return {
     id: exam.id,
@@ -98,7 +148,8 @@ function voiceForExam(exam: ExamConfig): EmailVoice {
     passPct: exam.passPct,
     dashboardPath: `${exam.slug}/dashboard`,
     statsPath: `${exam.slug}/stats`,
-    hasPremium: false,
+    hasPremium: true,
+    premiumBenefits: v1PremiumBenefits(exam),
     inactiveDays: 14,
     sourceLine: exam.copy.sourceLine || null,
   };
@@ -118,7 +169,8 @@ function voiceForV2(exam: ExamV2Config): EmailVoice {
     passPct: exam.defaultGoal,
     dashboardPath: `${exam.slug}/dashboard`,
     statsPath: `${exam.slug}/stats`,
-    hasPremium: false,
+    hasPremium: v2PremiumBenefits(exam).length > 0,
+    premiumBenefits: v2PremiumBenefits(exam),
     inactiveDays: 14,
     sourceLine: exam.copy.sourceLine,
   };
@@ -129,7 +181,7 @@ const NEUTRAL_VOICE: EmailVoice = {
   id: "unknown", shortName: "Tigertest", testName: "practice test",
   fullName: "practice test", questionsPerTest: 0, testCount: 0, stepCount: 0,
   passPct: 0, dashboardPath: "/tests", statsPath: "/tests", hasPremium: false,
-  inactiveDays: 14, sourceLine: null,
+  premiumBenefits: [], inactiveDays: 14, sourceLine: null,
 };
 
 /** Voice for a validated event or immutable signup exam. */

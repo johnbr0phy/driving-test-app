@@ -19,7 +19,7 @@ const title = "Free HSPT Practice Test 2026 - Verbal, Quantitative, Reading, Mat
 const metaDescription =
   "Free HSPT practice for eighth graders: all five High School Placement Test subtests in STS's own mix of question types, timed practice tests and an explanation for every question.";
 const description =
-  "A free practice test for the HSPT (High School Placement Test) from Scholastic Testing Service, taken by eighth graders applying to Catholic and private high schools: Verbal Skills, Quantitative Skills, Reading, Mathematics and Language, in the skill mix STS reports, with a percent score per subtest. Two timed practice tests, ten drills from synonyms to number series, and an explanation for every question. Teachers can set it for a class.";
+  "A free practice test for the HSPT (High School Placement Test) from Scholastic Testing Service, which high schools use to admit and place eighth graders: Verbal Skills, Quantitative Skills, Reading, Mathematics and Language, in the skill mix STS reports, with a percent score per subtest. Two timed practice tests, ten drills from synonyms to number series, and an explanation for every question. Teachers can set it for a class.";
 
 export const metadata: Metadata = {
   title,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the HSPT?",
-    a: "The HSPT, or High School Placement Test, is a test from Scholastic Testing Service (STS) that many Catholic and private high schools give to eighth graders. Schools use it for admission, scholarships and placing students in the right classes. It has five multiple-choice subtests: Verbal Skills, Quantitative Skills, Reading, Mathematics and Language.",
+    a: "The HSPT, or High School Placement Test, is a test from Scholastic Testing Service (STS) that high schools give to eighth graders, often through a Catholic diocese's education department. Schools use it for admission, scholarships and placing students in ninth grade classes. It has five multiple-choice subtests: Verbal Skills, Quantitative Skills, Reading, Mathematics and Language.",
   },
   {
     q: "How many questions are on the HSPT, and how long is it?",
@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "What are the optional HSPT tests?",
-    a: "A school may add one optional test after the five main subtests, usually science or Catholic religion. Those scores are not part of the overall composite score. Tigertest covers only the five main subtests, so check with your school whether it gives an optional test.",
+    a: "STS offers optional tests in science and Catholic religion, and a school may give one of them with the HSPT. Those scores are not part of the overall composite score. Tigertest covers only the five main subtests, so check with your school whether it gives an optional test.",
   },
   {
     q: "Is the Tigertest HSPT practice free?",

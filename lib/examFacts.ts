@@ -2170,13 +2170,13 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   hspt: {
     answer:
-      "The HSPT (High School Placement Test) is Scholastic Testing Service's test for eighth graders entering high school, used by many Catholic and private high schools for admissions, scholarships and course placement. It has five multiple-choice subtests: Verbal Skills (60 questions: synonyms, antonyms, analogies, verbal classification and logic), Quantitative Skills (52: number series, number manipulation and comparisons), Reading (62: comprehension and vocabulary), Mathematics (64) and Language (60: punctuation, capitalization, usage, spelling and composition), 298 questions in a working time of 2 hours 30 minutes. Calculators are not allowed and there is no penalty for guessing. Scores are standard scores and national and local percentiles, and each school sets its own cut-offs. Schools may add one optional test, science or Catholic religion, which does not count in the composite.",
+      "The HSPT (High School Placement Test) is Scholastic Testing Service's test for eighth graders entering high school, used by high schools, often through a Catholic diocese's education department, for admissions, scholarships and placement into ninth grade. It has five multiple-choice subtests: Verbal Skills (60 questions: synonyms, antonyms, analogies, verbal classification and logic), Quantitative Skills (52: number series, number manipulation and comparisons), Reading (62: comprehension and vocabulary), Mathematics (64) and Language (60: punctuation, capitalization, usage, spelling and composition), 298 questions in a working time of 2 hours 30 minutes. Calculators are not allowed and there is no penalty for guessing. Scores are standard scores and national and local percentiles, and each school sets its own cut-offs. A school may give one optional test, science or Catholic religion, which does not count in the composite.",
     rows: [
-      { label: "Who takes it", value: "Eighth graders applying to Catholic and other private high schools (the Pre-HSPT is for grade 7)" },
+      { label: "Who takes it", value: "Eighth graders entering high school (the Pre-HSPT is a grade 7 edition)" },
       { label: "Subtests", value: "Verbal Skills, Quantitative Skills, Reading, Mathematics, Language" },
       { label: "Questions", value: "298: 60 verbal, 52 quantitative, 62 reading, 64 math, 60 language" },
       { label: "Time", value: "2 hours 30 minutes of working time" },
-      { label: "Format", value: "Paper, multiple choice; no calculators" },
+      { label: "Format", value: "Paper test booklets and answer sheets, multiple choice; no calculators" },
       { label: "Score", value: "Standard scores (200 to 800), national and local percentiles, cognitive skills quotient" },
       { label: "Pass mark", value: "None: each high school sets its own cut-offs" },
       { label: "Optional tests", value: "Science or Catholic religion, not counted in the composite" },

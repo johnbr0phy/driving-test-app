@@ -16,17 +16,17 @@ ITEMS = [
 
   # ---------------- Practice Test 2 ----------------
   dict(test=2, skill="Antonyms", diff=1,
-       stem="Which word means the opposite of **ancient**?",
-       key="modern", wrong=["famous", "ruined", "distant"],
-       expl="Ancient means very old, from long ago, so the opposite is modern. A ruin may be ancient, but ruined is not an opposite."),
+       stem="Which word means the opposite of **temporary**?",
+       key="permanent", wrong=["brief", "recent", "sudden"],
+       expl="Something temporary lasts only for a while; something permanent lasts for good. Brief means nearly the same as temporary."),
   dict(test=2, skill="Antonyms", diff=1,
-       stem="**Timid** is the opposite of:",
-       key="bold", wrong=["shy", "calm", "weak"],
-       expl="A timid person is easily frightened; a bold person is daring. Shy means nearly the same as timid."),
+       stem="**Fragile** is the opposite of:",
+       key="sturdy", wrong=["delicate", "heavy", "costly"],
+       expl="Something fragile breaks easily; something sturdy is strong and hard to break. Delicate means nearly the same as fragile."),
   dict(test=2, skill="Antonyms", diff=2,
-       stem="Which word means the opposite of **scarce**?",
-       key="plentiful", wrong=["valuable", "rare", "expensive"],
-       expl="Scarce means there is very little of something, so the opposite is plentiful. Rare means nearly the same as scarce."),
+       stem="Which word means the opposite of **gloomy**?",
+       key="cheerful", wrong=["cloudy", "quiet", "tired"],
+       expl="A gloomy person or mood is dark and sad; a cheerful one is bright and happy. Cloudy can describe gloomy weather, but it is not an opposite."),
 
   # ---------------- Drill only ----------------
   dict(test=0, skill="Antonyms", diff=3,

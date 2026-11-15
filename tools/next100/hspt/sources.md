@@ -65,6 +65,6 @@ subtest); it was not used.
 
 ## Deliberately left out
 
-- The optional science, Catholic religion and mechanical aptitude tests, and any local test.
+- The optional science and Catholic religion tests, and any local test.
 - Full length: each practice test is about a third of the real 298 items, at the same mix.
 - Questions about the test itself (length, timing, scoring).

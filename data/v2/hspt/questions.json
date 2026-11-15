@@ -2256,17 +2256,17 @@
       "skill": "Antonyms",
       "difficulty": 1,
       "format": "single",
-      "stem": "Which word means the opposite of **ancient**?",
+      "stem": "Which word means the opposite of **temporary**?",
       "options": [
-        "famous",
-        "ruined",
-        "distant",
-        "modern"
+        "brief",
+        "recent",
+        "sudden",
+        "permanent"
       ],
       "correct": [
         3
       ],
-      "explanation": "Ancient means very old, from long ago, so the opposite is modern. A ruin may be ancient, but ruined is not an opposite."
+      "explanation": "Something temporary lasts only for a while; something permanent lasts for good. Brief means nearly the same as temporary."
     },
     {
       "id": "HSPT-T2-005",
@@ -2382,17 +2382,17 @@
       "skill": "Antonyms",
       "difficulty": 1,
       "format": "single",
-      "stem": "**Timid** is the opposite of:",
+      "stem": "**Fragile** is the opposite of:",
       "options": [
-        "shy",
-        "calm",
-        "bold",
-        "weak"
+        "delicate",
+        "heavy",
+        "sturdy",
+        "costly"
       ],
       "correct": [
         2
       ],
-      "explanation": "A timid person is easily frightened; a bold person is daring. Shy means nearly the same as timid."
+      "explanation": "Something fragile breaks easily; something sturdy is strong and hard to break. Delicate means nearly the same as fragile."
     },
     {
       "id": "HSPT-T2-011",
@@ -2508,17 +2508,17 @@
       "skill": "Antonyms",
       "difficulty": 2,
       "format": "single",
-      "stem": "Which word means the opposite of **scarce**?",
+      "stem": "Which word means the opposite of **gloomy**?",
       "options": [
-        "plentiful",
-        "valuable",
-        "rare",
-        "expensive"
+        "cheerful",
+        "cloudy",
+        "quiet",
+        "tired"
       ],
       "correct": [
         0
       ],
-      "explanation": "Scarce means there is very little of something, so the opposite is plentiful. Rare means nearly the same as scarce."
+      "explanation": "A gloomy person or mood is dark and sad; a cheerful one is bright and happy. Cloudy can describe gloomy weather, but it is not an opposite."
     },
     {
       "id": "HSPT-T2-017",

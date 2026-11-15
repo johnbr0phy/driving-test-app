@@ -2,7 +2,7 @@ import { ExamV2Config } from "../types";
 import { percentScale, overallPercent } from "../scales";
 
 // STS High School Placement Test (Scholastic Testing Service), the grade 8
-// placement and admissions test many Catholic and private high schools give.
+// placement and admissions test high schools give to eighth graders, often through a Catholic diocese.
 // Five multiple-choice subtests (HSPT Interpretive Manual, Closed HSPT and
 // Pre-HSPT): Verbal Skills 60 items, Quantitative Skills 52, Reading 62,
 // Mathematics 64, Language 60, 298 in all; working time 2 hours 30 minutes

@@ -1176,6 +1176,16 @@ export const en = {
     ncmaEcg: "ECG",
     ncmaAdmin: "Medical Administrative Duties",
     ncmaLaw: "Law & Ethics",
+    // mace
+    maceRole: "Role of the MA-C & Delegation",
+    maceEthics: "Relationships, Legal & Resources",
+    maceOrders: "Orders, Charting, Storage & Disposal",
+    maceSafety: "Safety Checks & Client Rights",
+    maceRoutes: "Routes & How the Body Uses Drugs",
+    maceClasses: "Medication Classes",
+    maceReport: "Errors & Reporting Changes",
+    maceConcepts: "Medication Concepts & Terms",
+    maceForms: "Forms & Measurements",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

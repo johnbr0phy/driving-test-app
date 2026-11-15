@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  mace: {
+    answer:
+      "The Medication Aide Certification Examination (MACE) is the national written exam that many states use to certify medication aides, also called medication assistants or MA-Cs: nurse aides with extra training who give selected medications under a licensed nurse's supervision. NCSBN created it and now says it no longer develops or owns it; Credentia develops and runs it for the states that use it. The exam has 60 multiple-choice questions in two hours, 50 of them scored, in three content areas: Authorized Duties 16% (8 questions), Medication Administration, Observation and Reporting 60% (30 questions) and Medication Concepts and Measurements 24% (12 questions). It is taken online, and results appear in the candidate's Credentia account. Who is eligible, how many attempts are allowed and what a certified aide may do are set by each state.",
+    rows: [
+      { label: "Questions", value: "60 multiple choice, 50 scored" },
+      { label: "Time", value: "2 hours" },
+      { label: "Largest area", value: "Medication Administration, Observation and Reporting, 60% (30 questions)" },
+      { label: "Other areas", value: "Medication Concepts and Measurements 24%, Authorized Duties 16%" },
+      { label: "Pass mark", value: "Not published by Credentia" },
+      { label: "Attempts and scope", value: "Set by each state" },
+      { label: "Run by", value: "Credentia (developed by NCSBN, which no longer owns it)" },
+    ],
+    basedOn: "The national MACE content outline in Credentia's state handbooks (2025 and 2026) and NCSBN's MA-C Model Curriculum, checked November 2026",
+    source: { name: "Credentia: national MACE content outline", url: "https://kb.wamace.credentia.com/en/article/national-medication-aide-certification-examination-mace-content-outline" },
+  },
   ncma: {
     answer:
       "The National Certified Medical Assistant (NCMA) exam is the National Center for Competency Testing's (NCCT) certification exam for medical assistants. NCCT's detailed test plan, effective January 2024, gives it 125 scored questions plus 25 unscored pretest questions, with three hours to finish; about 92% are four-option multiple choice and 8% are alternative items such as drag and drop, multi-select and hotspot. Scores run from 200 to 720 and a scaled 575 passes, which is not a fixed percentage. The plan has four content categories: Pharmacology and General Medical Knowledge 18 items, Clinical Medical Procedures 72 (Infection Control and Safety 15, Patient Intake and Care 32, Phlebotomy 15, ECG 10), Medical Administrative Duties 15, and Law and Ethics 20. It is taken on a computer at a test site or by remote proctoring, in English only.",

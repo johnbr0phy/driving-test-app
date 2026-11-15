@@ -1,0 +1,35 @@
+{
+  "blurb": "Practice for the WA Firearm Safety Training Course theory assessment that replaced the Firearm Awareness Test: the Firearms Act 2024, licence types, hunting permissions, firearm categories, storage levels, transit and safe handling, in five 40-question tests.",
+  "org": "Western Australia Police Force · Firearm Safety Training Course for a first firearm authority (Firearms Act 2024)",
+  "region": "AU",
+  "group": "Australia firearms licences",
+  "groupAfter": "aufirearmsvic",
+  "aliases": [
+    "wa firearm awareness test",
+    "firearm awareness test",
+    "wa firearms licence",
+    "wa gun licence",
+    "western australia firearms licence",
+    "western australia gun licence",
+    "wa firearm safety training course",
+    "wa firearms safety course",
+    "crtafe firearm safety",
+    "crtafe firearms theory",
+    "firearms act 2024 wa",
+    "wa gun licence test",
+    "gun licence perth",
+    "wa police firearms licensing",
+    "wa hunting licence firearms"
+  ],
+  "related": ["aufirearmsnsw", "aufirearmsvic", "aufirearmsqld"],
+  "teacherLed": false,
+  "borrowTiger": "hunter",
+  "shareTitle": "WA Firearm Safety Training Practice Test",
+  "shareDescription": "Review WA firearms law, licence types, hunting permissions, storage levels and safe handling before your course.",
+  "searchTests": [
+    ["wa firearm awareness test", "AU", "aufirearmswa"],
+    ["wa gun licence test", "AU", "aufirearmswa"],
+    ["crtafe firearm safety", "AU", "aufirearmswa"],
+    ["firearms licence western australia", "AU", "aufirearmswa"]
+  ]
+}

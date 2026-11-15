@@ -32,11 +32,11 @@ const faqs = [
   },
   {
     q: "What score do you need to pass the MACE?",
-    a: "Credentia does not publish a passing score or percentage for the MACE. Results appear in your Credentia account, and a failing score report gives diagnostic information by area. The 70 percent line on these practice tests is a readiness target, not the official standard. How many attempts you get and how long you have to pass are set by your state.",
+    a: "Credentia does not publish a passing score or percentage for the MACE. Results appear in your Credentia account, and a failing score report gives diagnostic information on the general parts of the exam. The 70 percent line on these practice tests is a readiness target, not the official standard. How many attempts you get and how long you have to pass are set by your state.",
   },
   {
     q: "What does a medication aide do, and does it vary by state?",
-    a: "Under NCSBN's model curriculum, a medication aide gives medications such as tablets, eye drops, inhalers, patches and suppositories under a licensed nurse's supervision, and does not give injections or tube feedings, convert or calculate doses, assess a client's need for a drug, or decide when a PRN dose is needed. States adopt or adapt that model, so what an aide may do where you work is set by your state's rules and your facility's policy.",
+    a: "Under NCSBN's model curriculum, a medication aide gives medications such as tablets, eye drops, inhalers, patches and suppositories under a licensed nurse's supervision, and does not give injections or medications through feeding tubes, convert or calculate doses, assess a client's need for a drug, or decide when a PRN dose is needed. States adopt or adapt that model, so what an aide may do where you work is set by your state's rules and your facility's policy.",
   },
   {
     q: "Are these the real MACE questions?",
@@ -249,6 +249,7 @@ export default function MaceLandingPage() {
                 Tigertest tracks your accuracy by category. Aim for 70% or better on every practice test before your exam date. After each test, drill the questions you missed and retrain the weakest category.
               </p>
             </div>
+          </div>
         </div>
       </div>
 

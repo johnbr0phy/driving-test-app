@@ -1,0 +1,15 @@
+  aufirearmswa: {
+    answer:
+      "In Western Australia, every first-time applicant for a firearm authority, and every authorised person without their own authority, must complete the Firearm Safety Training Course (Firearms Act 2024, s 166; Firearms Regulations 2024, r 224). It replaced the Firearm Awareness Test when the Firearms Act 2024 commenced on 31 March 2025. Part 1 is an online theory course and assessment delivered by Central Regional TAFE: 40 questions drawn at random from a question bank, with at least 80% needed overall across three sections and 3 attempts. Part 2 is in-person practical training and assessment with a licensed firearms dealer or another approved firearms trainer. Licences are issued by the WA Police Force; a first licence cannot be granted until 42 days after applying.",
+    rows: [
+      { label: "Course", value: "Firearm Safety Training Course: Part 1 theory (online, CRTAFE) and Part 2 practical (approved firearms trainer)" },
+      { label: "Theory assessment", value: "40 questions drawn at random, at least 80% overall across three sections" },
+      { label: "Attempts", value: "3, then wait at least 30 days and re-enrol" },
+      { label: "Certificate", value: "Valid 12 months for a licence application" },
+      { label: "Licence age", value: "18 for a licence or permit; 15 for an authorised person approval" },
+      { label: "First licence", value: "Not granted until at least 42 days after applying; terms of 1, 3 or 5 years" },
+      { label: "Licensing body", value: "Western Australia Police Force, Licensing Services" },
+    ],
+    basedOn: "The Firearms Act 2024 and Firearms Regulations 2024 on legislation.wa.gov.au and WA Police Force information sheets on the Firearm Safety Training Course and the CRTAFE theory course, checked November 2026",
+    source: { name: "WA Police Force: Firearm Safety Training Course information sheet", url: "https://www.wa.gov.au/media/159424/download" },
+  },

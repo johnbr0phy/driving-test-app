@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "FCF-T1-001",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "CIA triad",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hospital's patient records are changed by mistake and the wrong drug dose is shown to a nurse. Which security goal failed?",
+    "explanation": "Integrity means data is not changed in an unauthorized or accidental way. Nobody unauthorized read the record, so confidentiality was not the problem.",
+    "options": [
+      "Confidentiality",
+      "Non-repudiation",
+      "Integrity",
+      "Availability"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-002",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Bad actors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A group defaces a government website to protest a new law and posts its political message on the home page. Which type of bad actor is this most likely to be?",
+    "explanation": "Hacktivists attack to promote a political or social cause. Cybercriminals are mainly after money, which a defacement does not bring.",
+    "options": [
+      "Script kiddies",
+      "Hacktivists",
+      "Cybercriminals",
+      "Insiders"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-003",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Phishing types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker researches one finance manager on social media and sends her a personal email that seems to come from her real auditor. What is this called?",
+    "explanation": "Spear phishing targets a chosen person with a message built from research about them. Mass phishing sends the same lure to many people.",
+    "options": [
+      "Mass phishing",
+      "Smishing",
+      "Spear phishing",
+      "Pharming"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-004",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of malware spreads across a network by itself, without a user opening a file?",
+    "explanation": "A worm copies itself to other systems by exploiting weaknesses, with no user action. A trojan needs the user to run what looks like a useful program.",
+    "options": [
+      "Logic bomb",
+      "Worm",
+      "Trojan",
+      "Adware"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-005",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Symmetric encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What defines symmetric encryption?",
+    "explanation": "Symmetric ciphers such as AES use one shared secret key for both steps. They are fast, but the key must be shared safely.",
+    "options": [
+      "A public key encrypts and a private key decrypts",
+      "Each message uses a new algorithm",
+      "The same key encrypts and decrypts",
+      "No key is used at all"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-006",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Firewall generations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What can a stateful firewall do that a simple packet filter cannot?",
+    "explanation": "A stateful firewall remembers active sessions, so replies to an allowed outbound connection are let in. A packet filter judges each packet alone by its header.",
+    "options": [
+      "Scan email for phishing links",
+      "Track connections and allow return traffic",
+      "Block users based on their job role",
+      "Read every file inside the traffic"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-007",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A login asks for a password and then a code from an app on the user's phone. Which two factor types are these?",
+    "explanation": "The password is something you know and the phone app is something you have. Using two different factor types is what makes it multifactor.",
+    "options": [
+      "Something you have and somewhere you are",
+      "Something you know and something you are",
+      "Something you know and something you have",
+      "Something you are and something you have"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-008",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Hardening",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which action is part of hardening a new laptop before it is given to a user?",
+    "explanation": "Hardening reduces the attack surface: remove or disable unused services and software, apply patches and use secure settings.",
+    "options": [
+      "Give the user administrator rights",
+      "Turn off automatic updates",
+      "Turn off services it does not need",
+      "Install every free tool available"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-009",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Data classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a company label its data as public, internal, confidential or restricted?",
+    "explanation": "Classification tells staff and tools how sensitive data is, so the strongest controls, such as encryption and tight access, go where they matter most.",
+    "options": [
+      "To make files smaller to store",
+      "To speed up searches on the drive",
+      "To decide which files to print",
+      "To apply the right protection to each kind"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-010",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Service models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company rents virtual servers in the cloud and installs and patches its own operating systems on them. Which service model is this?",
+    "explanation": "In IaaS the provider supplies compute, storage and networking, and the customer manages the operating system and everything above it.",
+    "options": [
+      "Function as a service",
+      "Infrastructure as a service",
+      "Software as a service",
+      "Platform as a service"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-011",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Risk terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In security terms, what is a vulnerability?",
+    "explanation": "A vulnerability is a weakness in a system, process or control. The person or event that could use it is the threat, and code that uses it is an exploit.",
+    "options": [
+      "A person who wants to cause harm",
+      "A weakness that a threat could exploit",
+      "The chance that an attack succeeds",
+      "Code written to take over a system"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-012",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Bad actors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of threat actor is most likely to run a long, well-funded campaign to steal another country's defense secrets?",
+    "explanation": "Nation-state groups have the funding and patience for long espionage campaigns, often called advanced persistent threats. Script kiddies use ready-made tools for quick wins.",
+    "options": [
+      "A careless employee",
+      "A script kiddie",
+      "A nation-state group",
+      "A hacktivist"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-013",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Phishing types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A text message says a parcel is held at customs and asks the reader to pay a small fee through a link. What kind of attack is this?",
+    "explanation": "Smishing is phishing by SMS or text message. Vishing uses voice calls.",
+    "options": [
+      "Smishing",
+      "Vishing",
+      "Baiting",
+      "Whaling"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T1-014",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A free game downloaded from an unofficial site works as promised but also opens a hidden backdoor for an attacker. What is it?",
+    "explanation": "A trojan hides malicious functions inside software that seems useful. The user installs it willingly, which is how it gets past many defenses.",
+    "options": [
+      "A rootkit",
+      "Spam",
+      "A worm",
+      "A trojan"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-015",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Hashing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is a hash function used to check that a downloaded file has not been changed?",
+    "explanation": "A hash is a fixed-length fingerprint of the data. Changing even one bit produces a different value, so a match with the published hash shows integrity.",
+    "options": [
+      "It shrinks the file before download",
+      "It encrypts the file for later use",
+      "It hides the file from malware",
+      "Any change gives a different hash"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-016",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Segmentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a company place its public web server in a DMZ rather than on the internal network?",
+    "explanation": "A DMZ is a separate zone between the internet and the internal network. If the exposed server is compromised, firewall rules still keep the attacker away from internal systems.",
+    "options": [
+      "A breach there does not open the internal network",
+      "It lets staff browse without a proxy",
+      "It removes the need for a firewall",
+      "It makes the website load much faster"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T1-017",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice does current NIST guidance recommend for user passwords?",
+    "explanation": "NIST SP 800-63B favors length and screening against known compromised passwords, and advises against forced periodic changes and composition rules.",
+    "options": [
+      "Require a symbol in every password",
+      "Give hints to help users remember",
+      "Force a password change every 30 days",
+      "Check new passwords against breached lists"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-018",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Patching",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is applying security patches quickly important?",
+    "explanation": "Once a patch is public, attackers can study it and target systems that have not installed it. Prompt patching closes that window.",
+    "options": [
+      "Attackers exploit known flaws soon after release",
+      "Old software cannot be connected",
+      "Patches make devices run faster",
+      "Patches replace the need for backups"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T1-019",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "DLP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool can stop an employee emailing a file of customer ID numbers outside the company?",
+    "explanation": "Data loss prevention looks for sensitive data, such as ID or card numbers, in email, uploads and copies to USB, and can block or flag the transfer.",
+    "options": [
+      "Data loss prevention",
+      "A load balancer",
+      "A vulnerability scanner",
+      "A DNS server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T1-020",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Shared responsibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In software as a service, such as a cloud email suite, what does the customer still have to secure?",
+    "explanation": "Under the shared responsibility model the SaaS provider runs the whole application, but the customer still controls who has access and how accounts are protected.",
+    "options": [
+      "The provider's data center doors",
+      "The provider's hypervisors",
+      "The physical servers' power",
+      "Its users' accounts and access"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-021",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Least privilege",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new payroll clerk is given administrator rights on every company server just in case. Which principle does this break?",
+    "explanation": "Least privilege gives each user only the access the job needs. Separation of duties is about splitting a task between people so one person cannot commit fraud alone.",
+    "options": [
+      "Defense in depth",
+      "Least privilege",
+      "Security through obscurity",
+      "Separation of duties"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-022",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Zero day",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a zero-day vulnerability?",
+    "explanation": "A zero day is a weakness that attackers can use before the vendor has released a fix, so defenders have had zero days to patch it.",
+    "options": [
+      "A flaw found during a code review",
+      "A flaw that is fixed the same day",
+      "A flaw with no patch available yet",
+      "A flaw that only crashes a system"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-023",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Tailgating",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Someone carrying two coffees asks an employee to hold the secure door open, and the employee lets him in without a badge check. What has happened?",
+    "explanation": "Tailgating, also called piggybacking, is following an authorized person through a secured door. Politeness is exactly what the attacker counts on.",
+    "options": [
+      "Quid pro quo",
+      "Dumpster diving",
+      "Shoulder surfing",
+      "Tailgating"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-024",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Ransomware",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does ransomware do?",
+    "explanation": "Ransomware locks or encrypts files and asks for payment to release them. Offline backups that are tested make recovery possible without paying.",
+    "options": [
+      "Shows unwanted adverts in the browser",
+      "Records keystrokes for later use",
+      "Encrypts data and demands payment",
+      "Uses the CPU to mine cryptocurrency"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-025",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Digital signatures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When Alice digitally signs a document, which key does she use to create the signature?",
+    "explanation": "A signature is created with the signer's private key and checked by anyone with her public key. Only Alice holds the private key, which ties the signature to her.",
+    "options": [
+      "A key shared with the recipient",
+      "Her own public key",
+      "The recipient's public key",
+      "Her own private key"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-026",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "IDS and IPS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main difference between an IDS and an IPS?",
+    "explanation": "An intrusion detection system watches and alerts. An intrusion prevention system sits in the traffic path and can drop malicious packets.",
+    "options": [
+      "An IDS sits outside the network edge only",
+      "An IPS can block traffic, an IDS only alerts",
+      "An IPS only works on wireless networks",
+      "An IDS encrypts traffic, an IPS does not"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-027",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Single sign-on",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main benefit of single sign-on for users?",
+    "explanation": "Single sign-on lets a user authenticate once to an identity provider and then reach many connected applications without logging in again.",
+    "options": [
+      "Every app gets its own password",
+      "Passwords are shared with the team",
+      "No authentication is needed at all",
+      "One login gives access to many apps"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-028",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "EDR",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does endpoint detection and response (EDR) add beyond traditional antivirus?",
+    "explanation": "EDR monitors activity on the endpoint, detects suspicious behavior and lets responders investigate and isolate the device, not just remove known files.",
+    "options": [
+      "Recording behavior and helping respond",
+      "Backing up the device every hour",
+      "Encrypting all email messages",
+      "Blocking all websites by default"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T1-029",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Injection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A login form passes what the user types straight into a database query, and an attacker types query code to log in without a password. What is this attack?",
+    "explanation": "SQL injection inserts database commands through unchecked input. Parameterized queries keep input as data so it cannot change the query.",
+    "options": [
+      "SQL injection",
+      "Credential stuffing",
+      "Cross-site scripting",
+      "Clickjacking"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T1-030",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Virtualization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What software lets several virtual machines run on one physical server?",
+    "explanation": "A hypervisor shares the server's CPU, memory and storage between virtual machines and keeps them separated from each other.",
+    "options": [
+      "A router",
+      "A compiler",
+      "A web browser",
+      "A hypervisor"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-031",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Control types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company puts up a sign warning that the server room is under video surveillance. Which type of control is the sign?",
+    "explanation": "A deterrent control discourages someone from trying an attack. A corrective control fixes things after an incident has happened.",
+    "options": [
+      "Corrective",
+      "Deterrent",
+      "Recovery",
+      "Compensating"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-032",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Cybercrime economy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In ransomware as a service, what does the ransomware developer usually provide to affiliates?",
+    "explanation": "Ransomware as a service lets affiliates rent the malware, leak sites and payment infrastructure, and the developer takes a share of each ransom.",
+    "options": [
+      "Stolen goods to resell",
+      "The victims' backup copies",
+      "The malware and payment tools",
+      "Fake job adverts for victims"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-033",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Warning signs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which feature of an email is a common sign of a phishing attempt?",
+    "explanation": "Phishing often creates urgency, such as an account closing today, so the reader acts before thinking. Logos and titles are easy to copy and prove nothing.",
+    "options": [
+      "A greeting that uses your title",
+      "A logo in the email header",
+      "Pressure to act right away",
+      "A message sent during work hours"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-034",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Detection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why can signature-based antivirus miss brand-new malware?",
+    "explanation": "Signatures describe malware that has already been analyzed. New or changed samples have no signature yet, which is why behavior analysis and sandboxing are added.",
+    "options": [
+      "It scans only the system memory",
+      "It only matches known patterns",
+      "It needs a user to approve each scan",
+      "It works only on email attachments"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-035",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Certificates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a certificate authority do?",
+    "explanation": "A certificate authority checks an identity and signs a certificate linking it to a public key. Browsers trust the certificate because they trust the CA's signature.",
+    "options": [
+      "Stores every user's private key",
+      "Issues passwords for websites",
+      "Signs certificates that bind a key to an identity",
+      "Encrypts all traffic on the internet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-036",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "WAF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which device is built to protect a web application from attacks such as SQL injection in HTTP requests?",
+    "explanation": "A web application firewall inspects HTTP and HTTPS traffic to a web application and blocks attacks against it, such as injection and cross-site scripting.",
+    "options": [
+      "A network access control system",
+      "A Wi-Fi access point",
+      "A web application firewall",
+      "A secure email gateway"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T1-037",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Access control models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In role-based access control, how are permissions usually given?",
+    "explanation": "RBAC ties permissions to job roles. When someone changes jobs, changing their role changes their access in one step.",
+    "options": [
+      "By labels like Secret and Top Secret",
+      "To roles, which users are assigned to",
+      "By the time of day only",
+      "To each file by its owner"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T1-038",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Mobile devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company lets staff read work email on their own phones. Which tool lets it enforce a screen lock and wipe company data if a phone is lost?",
+    "explanation": "Mobile device management enforces policies such as passcodes and encryption and can remotely wipe a lost device or just its work data.",
+    "options": [
+      "Mobile device management",
+      "A web application firewall",
+      "A network tap",
+      "A load balancer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T1-039",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Sanitization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company is giving away old hard drives that held customer data. What should be done to them first?",
+    "explanation": "Deleting or quick formatting leaves data recoverable. NIST SP 800-88 describes clearing, purging or destroying media according to how sensitive the data is.",
+    "options": [
+      "Reformat them with a quick format",
+      "Rename every folder on the drives",
+      "Delete the files and empty the recycle bin",
+      "Sanitize them so the data cannot be recovered"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T1-040",
+    "section": "fcf",
+    "test": 1,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Misconfiguration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage bucket holding customer files is set to allow anyone on the internet to read it. What is the most common cause of exposures like this?",
+    "explanation": "Most cloud data exposures come from settings the customer controls, such as public access on storage, not from failures in the provider's infrastructure.",
+    "options": [
+      "A power cut at the data center",
+      "Encryption that was too strong",
+      "A flaw in the provider's hardware",
+      "Misconfiguration by the customer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-001",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "CIA triad",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flood of traffic keeps an online store's website down for six hours. Which security goal was affected?",
+    "explanation": "Availability means authorized users can reach systems and data when they need them. A denial of service attack targets availability without reading or changing any data.",
+    "options": [
+      "Availability",
+      "Confidentiality",
+      "Integrity",
+      "Authenticity"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-002",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Insider threat",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee who was just told she will be laid off copies the customer list to a USB drive. What kind of threat is this?",
+    "explanation": "An insider already has legitimate access, so she can take data without breaking in. A careless insider causes harm by mistake; this one acted on purpose.",
+    "options": [
+      "A nation-state actor",
+      "A hacktivist",
+      "A malicious insider",
+      "A script kiddie"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-003",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Phishing types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An email that appears to come from the board chair is sent only to the chief executive and asks for an urgent wire transfer. What is this type of attack called?",
+    "explanation": "Whaling is spear phishing aimed at senior executives, whose authority can move large sums of money.",
+    "options": [
+      "Pharming",
+      "Vishing",
+      "Whaling",
+      "Smishing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-004",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which malware is designed to hide its presence and keep privileged access, often by changing parts of the operating system?",
+    "explanation": "A rootkit conceals itself and other malware, for example by hiding files and processes from the operating system. It can be very hard to remove without reinstalling.",
+    "options": [
+      "A dropper",
+      "A worm",
+      "A rootkit",
+      "Adware"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-005",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Asymmetric encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Bob wants to send Alice a message that only she can read. Which key should he encrypt it with?",
+    "explanation": "Data encrypted with Alice's public key can only be decrypted with her private key, which only she holds.",
+    "options": [
+      "Bob's private key",
+      "Bob's public key",
+      "Alice's private key",
+      "Alice's public key"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-006",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "NGFW",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a next generation firewall add to a traditional stateful firewall?",
+    "explanation": "A next generation firewall identifies applications and users and adds features such as intrusion prevention and malware inspection, not just port and address rules.",
+    "options": [
+      "Automatic backups of servers",
+      "Physical locks for the server room",
+      "Application awareness and threat inspection",
+      "A faster internet connection"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-007",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fingerprint scan is which type of authentication factor?",
+    "explanation": "Biometrics such as fingerprints and faces are inherence factors, something you are. A PIN is something you know.",
+    "options": [
+      "Somewhere you are",
+      "Something you are",
+      "Something you have",
+      "Something you know"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T2-008",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Allow listing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company sets its point-of-sale terminals to run only a short list of approved programs. What is this control?",
+    "explanation": "Allow listing blocks every program that is not approved, which stops most malware on fixed-purpose devices. Deny listing blocks only known bad programs.",
+    "options": [
+      "Load balancing",
+      "Port forwarding",
+      "Application allow listing",
+      "Content caching"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-009",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Data states",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Customer data moving from a web browser to a company server is in which state?",
+    "explanation": "Data moving across a network is in transit and is protected with encryption such as TLS. Stored data is at rest.",
+    "options": [
+      "In use",
+      "In transit",
+      "At rest",
+      "Archived"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T2-010",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Deployment models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company keeps sensitive workloads in its own private cloud and runs its public website in a public cloud, with the two connected. Which deployment model is this?",
+    "explanation": "NIST defines a hybrid cloud as two or more distinct cloud infrastructures bound together so data and apps can move between them.",
+    "options": [
+      "Hybrid cloud",
+      "Community cloud",
+      "Public cloud",
+      "Private cloud"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-011",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Defense in depth",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company protects its data with a perimeter firewall, endpoint protection, encryption and staff training, so that one failed control does not expose everything. What is this approach called?",
+    "explanation": "Defense in depth layers several independent controls. If one layer is bypassed, the others still stand between the attacker and the data.",
+    "options": [
+      "Single sign-on",
+      "Data minimization",
+      "Least privilege",
+      "Defense in depth"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-012",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "DDoS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A botnet of thousands of infected cameras sends traffic at a bank's website until it stops responding. What is this attack?",
+    "explanation": "A distributed denial of service uses many machines at once to overwhelm a target. The traffic coming from thousands of sources makes it hard to block by address.",
+    "options": [
+      "A distributed denial of service",
+      "A SQL injection attack",
+      "A man-in-the-middle attack",
+      "A watering hole attack"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-013",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Pretexting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A caller says he is from the IT help desk and needs an employee's password to fix her mailbox before it is deleted. What technique is he using?",
+    "explanation": "Pretexting is inventing a believable story and role to get information. A real help desk does not need a user's password.",
+    "options": [
+      "Typosquatting",
+      "Baiting",
+      "Pretexting",
+      "Tailgating"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-014",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Delivery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee opens a Word attachment and is asked to enable macros to see the content. Why is this risky?",
+    "explanation": "Malicious macros download or run malware once enabled, which is why many organizations block macros in files from the internet.",
+    "options": [
+      "Macros can run code that installs malware",
+      "Macros delete the original attachment",
+      "Macros make the file read-only",
+      "Macros slow down the email server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-015",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "TLS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does TLS usually combine asymmetric and symmetric encryption in a web session?",
+    "explanation": "Asymmetric methods are slow, so TLS uses them to authenticate the server and agree session keys, then encrypts the traffic with a fast symmetric cipher.",
+    "options": [
+      "Symmetric to agree a key, asymmetric for data",
+      "Asymmetric to agree a key, symmetric for data",
+      "Asymmetric for everything in the session",
+      "Neither: TLS only uses hashing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T2-016",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "NAC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants to check that a laptop has current antivirus and patches before it may join the network. Which technology does this?",
+    "explanation": "Network access control checks a device's identity and health when it connects and can block it or move it to a quarantine network.",
+    "options": [
+      "A secure email gateway",
+      "A load balancer",
+      "Network access control",
+      "A content delivery network"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-017",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Account lockout",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do many systems lock an account after several wrong password attempts in a row?",
+    "explanation": "Lockout or throttling limits how many guesses an attacker can make, which defeats online brute force attacks.",
+    "options": [
+      "To log users out of other devices",
+      "To remind users to change passwords",
+      "To free up memory on the server",
+      "To slow down password guessing attacks"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-018",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "IoT",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new network camera arrives with the login admin and password admin. What should be done first?",
+    "explanation": "Default credentials are published online and are among the first things attackers try. Change them before the device goes into use.",
+    "options": [
+      "Post the login on the intranet",
+      "Leave it as it is until it fails",
+      "Connect it straight to the internet",
+      "Change the default password"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-019",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "XSS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker posts a comment containing a script, and every visitor's browser runs it when the page loads. What is this attack?",
+    "explanation": "Cross-site scripting injects script into pages other users view. Encoding output and validating input stop the browser from treating it as code.",
+    "options": [
+      "Tailgating",
+      "A buffer overflow",
+      "Cross-site scripting",
+      "SQL injection"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-020",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "CASB",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a cloud access security broker (CASB) do?",
+    "explanation": "A CASB sits between users and cloud services to show which apps are used and to enforce policies such as blocking uploads of sensitive data.",
+    "options": [
+      "Replaces the company's email system",
+      "Applies security policy to use of cloud apps",
+      "Builds the provider's data centers",
+      "Sells cloud storage at lower prices"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T2-021",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Non-repudiation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manager approves a payment with a digital signature and later says she never approved it. Which security property lets the company show that she did?",
+    "explanation": "Non-repudiation means a person cannot credibly deny an action they took, because proof such as a digital signature ties the action to them.",
+    "options": [
+      "Obfuscation",
+      "Confidentiality",
+      "Availability",
+      "Non-repudiation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-022",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Motives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the most common motive behind cybercrime aimed at businesses?",
+    "explanation": "Most attacks on businesses are run by criminals who want money, through ransom, fraud or selling stolen data.",
+    "options": [
+      "Military advantage",
+      "Political protest",
+      "Proving technical skill",
+      "Financial gain"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-023",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Business email compromise",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A supplier's real email account is hacked and used to tell a customer that the supplier's bank details have changed. What should the customer do before paying?",
+    "explanation": "In business email compromise the message comes from a real account, so replying reaches the attacker. Checking by phone on a number you already have is the safe step.",
+    "options": [
+      "Ask for the new details in a PDF",
+      "Pay a small amount first as a test",
+      "Call the supplier on a known number",
+      "Reply to the email to confirm it"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-024",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which malware secretly records what a user types to capture passwords?",
+    "explanation": "A keylogger captures keystrokes and sends them to the attacker. Multifactor authentication limits the value of a captured password.",
+    "options": [
+      "A keylogger",
+      "A wiper",
+      "A worm",
+      "Adware"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-025",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Hashing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why are passwords stored as salted hashes rather than in plain text?",
+    "explanation": "A hash cannot be reversed, and a unique salt per user stops attackers using precomputed tables or spotting users with the same password.",
+    "options": [
+      "It lets users share one password safely",
+      "Salting makes logins faster for users",
+      "Hashes can be decrypted by the help desk",
+      "A stolen database does not reveal the passwords"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-026",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "VPN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee working from a cafe connects to the office through a VPN. What does the VPN mainly protect?",
+    "explanation": "A VPN creates an encrypted tunnel over the untrusted network, so people on the cafe Wi-Fi cannot read or change her traffic.",
+    "options": [
+      "Traffic between her laptop and the office",
+      "Her laptop from all malware",
+      "Files stored on the office servers",
+      "The cafe's own Wi-Fi network"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-027",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "AAA servers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants its Wi-Fi and VPN to check users against one central server for authentication. Which protocol is commonly used for this?",
+    "explanation": "RADIUS is a common protocol for central authentication, authorization and accounting of network access. SMTP sends email.",
+    "options": [
+      "RADIUS",
+      "SMTP",
+      "FTP",
+      "SNMP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-028",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Endpoint monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do companies send endpoint logs to a central system such as a SIEM?",
+    "explanation": "Central logging lets the security team see events from many devices together, so patterns such as one account failing on many machines stand out.",
+    "options": [
+      "To correlate events and spot attacks",
+      "To save space on the laptops' disks",
+      "To share files with customers",
+      "To make laptops start faster"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-029",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Secure development",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is it cheaper to build security into an application during design than to add it after release?",
+    "explanation": "A design flaw found in production may need rework, emergency patches and incident costs. Security in each phase of development finds problems early.",
+    "options": [
+      "Released apps cannot be changed",
+      "Flaws cost more to fix later",
+      "Designers never make mistakes",
+      "Testing is not allowed after release"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T2-030",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "SASE",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does secure access service edge (SASE) combine?",
+    "explanation": "SASE joins SD-WAN networking with cloud-delivered security such as secure web gateway, CASB, ZTNA and firewall as a service, so users get the same protection anywhere.",
+    "options": [
+      "Networking and security delivered from the cloud",
+      "Backups and printers in one device",
+      "Cables and switches in one rack",
+      "Email and calendars in one app"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-T2-031",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Risk terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security team lists every way an outsider could reach its systems: exposed ports, web forms, email and remote access. What is this list describing?",
+    "explanation": "The attack surface is the sum of all the points where an attacker could try to get in. Shrinking it, for example by closing unused ports, reduces risk.",
+    "options": [
+      "The audit trail",
+      "The recovery point",
+      "The attack surface",
+      "The risk appetite"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-T2-032",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Supply chain",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers break into a software vendor and add malicious code to its update, which thousands of customers then install. What kind of attack is this?",
+    "explanation": "A supply chain attack compromises a trusted supplier so the attack reaches the supplier's customers through normal channels such as updates.",
+    "options": [
+      "A dictionary attack",
+      "A supply chain attack",
+      "A brute force attack",
+      "A shoulder surfing attack"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T2-033",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Baiting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "USB drives labeled Salary Review are left in a company's parking lot. What social engineering technique is this?",
+    "explanation": "Baiting leaves something tempting for a victim to pick up. Plugging in the drive can run malware on the work computer.",
+    "options": [
+      "Pretexting",
+      "Baiting",
+      "Vishing",
+      "Whaling"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T2-034",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Sandboxing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do security products send unknown files to a sandbox?",
+    "explanation": "A sandbox is an isolated environment where a file can run without risk. If it tries something malicious, such as encrypting files, it can be blocked everywhere.",
+    "options": [
+      "To sign them with a trusted certificate",
+      "To run them safely and watch what they do",
+      "To store them until the user returns",
+      "To compress them for faster delivery"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-T2-035",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Certificate revocation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web server's private key is stolen before its certificate expires. What should happen to the certificate?",
+    "explanation": "Revocation tells clients, through CRLs or OCSP, that the certificate must no longer be trusted, even though it has not expired.",
+    "options": [
+      "It should be renewed with the same key",
+      "It should be copied to a backup server",
+      "Nothing until it expires",
+      "It should be revoked by the CA"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-036",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Secure email gateway",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a secure email gateway do?",
+    "explanation": "A secure email gateway checks messages for spam, phishing, malicious links and attachments before they reach users' inboxes.",
+    "options": [
+      "Translates email into other languages",
+      "Stores every user's mailbox password",
+      "Sends company newsletters on a schedule",
+      "Filters incoming mail for spam and malware"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-037",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Privileged access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should an administrator use a separate account for admin work instead of her everyday account?",
+    "explanation": "Keeping admin rights off the account used for email and browsing means a phishing attack on that account does not hand over admin access.",
+    "options": [
+      "It lets her skip multifactor sign-in",
+      "It makes her daily account faster",
+      "It is needed to read email",
+      "It limits damage if the daily account is hacked"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-038",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Host firewall",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why run a firewall on each laptop when the office network already has one?",
+    "explanation": "A host firewall travels with the device, so it still filters traffic at home or in a hotel, and it limits spread between machines on the same network.",
+    "options": [
+      "It makes the network firewall faster",
+      "It stops the laptop being stolen",
+      "It replaces the need for antivirus",
+      "It protects the laptop on other networks"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-039",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Tokenization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A payment system replaces card numbers with random values that map to the real numbers only in a secure vault. What is this called?",
+    "explanation": "Tokenization swaps sensitive data for meaningless tokens, so systems that store only tokens hold nothing useful to an attacker.",
+    "options": [
+      "Compression",
+      "Obfuscation",
+      "Hashing",
+      "Tokenization"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-T2-040",
+    "section": "fcf",
+    "test": 2,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a container differ from a virtual machine?",
+    "explanation": "Containers package an app with its dependencies but share the host kernel, so they are lighter than VMs, which each run a full guest operating system.",
+    "options": [
+      "It always runs its own full operating system",
+      "It shares the host's operating system kernel",
+      "It needs a separate physical server",
+      "It cannot run on cloud platforms"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-001",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "CIA triad",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee emails a spreadsheet of customer card numbers to a personal account by mistake. Which security goal was broken?",
+    "explanation": "Confidentiality means only authorized people can see data. The data was not changed or made unavailable, it was exposed.",
+    "options": [
+      "Confidentiality",
+      "Availability",
+      "Accountability",
+      "Integrity"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-002",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Bad actors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A teenager downloads a ready-made attack tool and runs it against school websites without really knowing how it works. Which term describes this person?",
+    "explanation": "A script kiddie uses tools and scripts written by others, with little skill of their own. The damage can still be real.",
+    "options": [
+      "Cyberterrorist",
+      "Nation-state actor",
+      "Hacktivist",
+      "Script kiddie"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-003",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Phishing types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A caller pretending to be from the bank's fraud team asks a customer to read out a code just sent to her phone. What attack is this?",
+    "explanation": "Vishing is voice phishing. The code is usually a one-time password the attacker needs to get into the account.",
+    "options": [
+      "Spam",
+      "Smishing",
+      "Pharming",
+      "Vishing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-004",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a computer virus need in order to spread?",
+    "explanation": "A virus attaches itself to a host, such as a program or document, and spreads when that host is shared and opened. A worm needs no host.",
+    "options": [
+      "Administrator access to a router",
+      "A physical connection to a printer",
+      "No help from users or files",
+      "A host file or program to attach to"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-005",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Encryption basics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is ciphertext?",
+    "explanation": "Plaintext is readable data; encrypting it with a key produces ciphertext, which is unreadable without the right key.",
+    "options": [
+      "A list of approved algorithms",
+      "Data before it is encrypted",
+      "Data after it has been encrypted",
+      "The key used to encrypt data"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-006",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Firewall basics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a firewall do at its most basic level?",
+    "explanation": "A firewall enforces a policy: traffic matching an allow rule passes and everything else is blocked. Assigning addresses is the job of DHCP.",
+    "options": [
+      "Stores copies of all network traffic",
+      "Allows or blocks traffic based on rules",
+      "Speeds up the network connection",
+      "Assigns IP addresses to devices"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-007",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Authentication basics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is authentication?",
+    "explanation": "Authentication checks identity, for example with a password and a second factor. Deciding what the user may do afterward is authorization.",
+    "options": [
+      "Deciding which files a user may open",
+      "Recording what a user did",
+      "Proving that a user is who they claim to be",
+      "Encrypting a user's network traffic"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-008",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Endpoints",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these counts as an endpoint in cybersecurity?",
+    "explanation": "An endpoint is any device that connects to the network and runs software, from laptops and phones to IoT sensors and point-of-sale terminals.",
+    "options": [
+      "A laptop, phone or smart sensor",
+      "Only a network firewall",
+      "The internet provider's cables",
+      "Only a company's main server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-009",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Input validation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is input validation in an application?",
+    "explanation": "Validating input rejects data that does not fit, such as letters in a phone number field, and helps prevent injection attacks.",
+    "options": [
+      "Saving all input to a backup",
+      "Showing input back to the user",
+      "Checking that input is the expected type and size",
+      "Encrypting every input with a key"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-010",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Service models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team writes its own code and deploys it to a cloud service that handles the operating system, runtime and scaling. Which model is this?",
+    "explanation": "In PaaS the provider manages the platform and runtime, and the customer manages its own application code and data.",
+    "options": [
+      "Platform as a service",
+      "Infrastructure as a service",
+      "On-premises hosting",
+      "Software as a service"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-011",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which step of the AAA framework records what a user did after logging in?",
+    "explanation": "Accounting logs a user's actions for auditing. Authentication proves who the user is, and authorization decides what they may do.",
+    "options": [
+      "Administration",
+      "Authentication",
+      "Accounting",
+      "Authorization"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-012",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Bad actors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of bad actor aims to cause fear or physical harm by attacking systems such as power grids or water plants?",
+    "explanation": "Cyberterrorists want to cause disruption and fear, often by targeting critical infrastructure. Spammers are after clicks and money.",
+    "options": [
+      "Spammers",
+      "Bug bounty hunters",
+      "Cyberterrorists",
+      "Script kiddies"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-013",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Phishing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main goal of most phishing emails?",
+    "explanation": "Phishing tricks the reader into an action, such as clicking a link, opening an attachment or entering a password, that helps the attacker.",
+    "options": [
+      "To test the company's spam filter",
+      "To get the reader to click, open or share",
+      "To slow down the email server",
+      "To sell real products cheaply"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-014",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A computer suddenly shows pop-up adverts on every website, and the browser home page has changed. What is the most likely cause?",
+    "explanation": "Adware pushes unwanted adverts and often changes browser settings. It is often bundled with free software.",
+    "options": [
+      "A logic bomb",
+      "Ransomware",
+      "Adware",
+      "A rootkit"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-015",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Symmetric encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is a symmetric encryption algorithm?",
+    "explanation": "AES, the Advanced Encryption Standard in FIPS 197, is a symmetric block cipher. RSA and the elliptic curve schemes are asymmetric.",
+    "options": [
+      "AES",
+      "RSA",
+      "Elliptic curve DSA",
+      "Diffie-Hellman"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-016",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Firewall basics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall rule set ends with a rule that blocks everything not already allowed. What is this rule called?",
+    "explanation": "Default deny means only traffic that is explicitly allowed gets through, which is the safer starting point for any firewall policy.",
+    "options": [
+      "A port forwarding rule",
+      "A failover rule",
+      "A permit any rule",
+      "An implicit or default deny rule"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-017",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bank allows a login only from the customer's usual country, based on the device's location. Which factor type is this?",
+    "explanation": "Location is often called somewhere you are. It is usually combined with other factors rather than used on its own.",
+    "options": [
+      "Something you know",
+      "Something you are",
+      "Somewhere you are",
+      "Something you have"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-018",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Antivirus",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does traditional antivirus mainly rely on to find malware?",
+    "explanation": "Classic antivirus compares files with a database of known malware signatures, so it must be updated often and may miss new samples.",
+    "options": [
+      "User reports of slow devices",
+      "The age of each file",
+      "Signatures of known malware",
+      "Firewall logs from the router"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-019",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Injection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which coding practice is the main defense against SQL injection?",
+    "explanation": "Parameterized queries, also called prepared statements, send user input separately from the query so it cannot change the command.",
+    "options": [
+      "Longer database passwords",
+      "Parameterized queries",
+      "Hiding the database server name",
+      "Bigger database servers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-020",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Service models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company uses a web-based customer management app and only configures users and settings. Which service model is this?",
+    "explanation": "In SaaS the provider delivers a complete application. The customer manages its data, users and settings.",
+    "options": [
+      "Software as a service",
+      "Infrastructure as a service",
+      "Platform as a service",
+      "Private hosting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-021",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user logs in successfully but cannot open the finance share because her role does not allow it. Which AAA step blocked her?",
+    "explanation": "Authentication already succeeded. Authorization decides which resources an authenticated user may use, and her role did not include the finance share.",
+    "options": [
+      "Authentication",
+      "Accounting",
+      "Auditing",
+      "Authorization"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-022",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Insider threat",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A help desk worker accidentally emails a file of staff home addresses to the wrong outside contact. How is this person best described?",
+    "explanation": "A careless or negligent insider causes harm through a mistake rather than intent. Training and data loss prevention help with this kind of risk.",
+    "options": [
+      "A malicious insider",
+      "A careless insider",
+      "A hacktivist",
+      "An external attacker"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-023",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Warning signs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A link in an email reads paypa1-security.com instead of paypal.com. What is this trick called?",
+    "explanation": "Typosquatting registers a domain that looks almost like a real one, such as a digit 1 in place of the letter l, to fool people who do not read closely.",
+    "options": [
+      "Typosquatting",
+      "Tailgating",
+      "Baiting",
+      "Pretexting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-024",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Code planted by a programmer deletes the payroll database on a set date unless he is still on the payroll. What is it?",
+    "explanation": "A logic bomb waits for a condition, such as a date or an event, before it runs its harmful action.",
+    "options": [
+      "A logic bomb",
+      "A worm",
+      "A keylogger",
+      "Adware"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-025",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Symmetric encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which key sizes does the AES standard support?",
+    "explanation": "FIPS 197 defines AES with 128, 192 and 256-bit keys. Key sizes in the thousands of bits are typical of RSA, not AES.",
+    "options": [
+      "512, 1024 and 2048 bits",
+      "128, 192 and 256 bits",
+      "8, 16 and 32 bits",
+      "56, 64 and 112 bits"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-026",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Segmentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a company put its point-of-sale terminals on a separate network segment from office PCs?",
+    "explanation": "Segmentation contains a breach. If an office PC is infected, controls between segments stop the attacker reaching the payment systems.",
+    "options": [
+      "To make printing faster for staff",
+      "To limit how far an attacker can move",
+      "To avoid needing any firewall",
+      "To use fewer network cables"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-027",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "MFA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is not multifactor authentication?",
+    "explanation": "A password and a security question are both something you know, so this is one factor used twice. The others combine two different factor types.",
+    "options": [
+      "A PIN and a fingerprint",
+      "A password and a security question",
+      "A password and a hardware key",
+      "A smart card and a PIN"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-028",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "XDR",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does extended detection and response (XDR) do?",
+    "explanation": "XDR brings together detection data from several layers so one attack seen in email, on an endpoint and on the network can be linked and handled together.",
+    "options": [
+      "Replaces every firewall in the network",
+      "Backs up servers to tape",
+      "Protects only email inboxes",
+      "Combines data from endpoints, network, email and cloud"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-029",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "OWASP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the OWASP Top 10?",
+    "explanation": "The OWASP Top 10 is an awareness document listing the most critical security risks to web applications, such as broken access control and injection.",
+    "options": [
+      "A list of the most critical web app risks",
+      "A ranking of antivirus products",
+      "A list of the safest websites",
+      "A law that sets data fines"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-030",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Cloud characteristics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is one of NIST's essential characteristics of cloud computing?",
+    "explanation": "NIST SP 800-145 lists on-demand self-service, broad network access, resource pooling, rapid elasticity and measured service.",
+    "options": [
+      "Rapid elasticity",
+      "Manual setup by phone",
+      "Single tenant only",
+      "Fixed monthly hardware"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-031",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Risk terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cybercriminal group that wants to steal card data from retailers is best described as which of these?",
+    "explanation": "A threat is anything that could cause harm by exploiting a weakness, including a person or group. The retailer's weakness would be the vulnerability.",
+    "options": [
+      "A threat",
+      "A control",
+      "An asset",
+      "A vulnerability"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-032",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "APT",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What makes an attack an advanced persistent threat?",
+    "explanation": "An advanced persistent threat gains access and stays quietly for months to collect data. Many APTs never encrypt anything, because staying unnoticed is the goal.",
+    "options": [
+      "It always encrypts the victim's files",
+      "It is launched from many infected devices",
+      "It is carried out by a single teenager",
+      "It stays hidden in a network for a long time"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-033",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Warning signs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before clicking a link in an email on a computer, what is a quick way to see where it really goes?",
+    "explanation": "Hovering shows the real destination, which may differ from the text of the link. Replying may reach the attacker.",
+    "options": [
+      "Reply and ask the sender about it",
+      "Forward the email to a coworker",
+      "Check that the email has a logo",
+      "Hover over the link to see the address"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-034",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of malware lets an attacker control an infected computer from far away, for example to use its webcam?",
+    "explanation": "A remote access trojan, or RAT, gives the attacker remote control of the device, including files, camera and microphone.",
+    "options": [
+      "A polymorphic virus",
+      "Adware",
+      "A logic bomb",
+      "A remote access trojan"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-035",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Asymmetric encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main drawback of symmetric encryption that asymmetric encryption solves?",
+    "explanation": "With a symmetric cipher both sides need the same secret. Public key cryptography lets parties set up a shared secret without sending it in the open.",
+    "options": [
+      "Encrypting large files quickly",
+      "Using keys of a fixed length",
+      "Working on mobile devices",
+      "Sharing the secret key safely"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-036",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Segmentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which technology splits one physical switch into several separate logical networks?",
+    "explanation": "Virtual LANs group switch ports into separate broadcast domains, so traffic between them must pass a router or firewall that can apply rules.",
+    "options": [
+      "DNS",
+      "VLANs",
+      "NAT",
+      "VPNs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-037",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "MFA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of second factor resists phishing best?",
+    "explanation": "FIDO2 keys and passkeys check the real website's address, so a fake site cannot capture and replay them. Codes can be typed into a phishing page.",
+    "options": [
+      "A code sent by text message",
+      "A code sent by email",
+      "A FIDO2 security key or passkey",
+      "A security question"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-038",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Patching",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice helps a company make sure every device actually gets its patches?",
+    "explanation": "You cannot patch what you do not know about. An up-to-date asset inventory shows which devices exist and which are missing updates.",
+    "options": [
+      "Patching only servers, never laptops",
+      "Keeping an inventory of all devices",
+      "Waiting a year before any update",
+      "Letting each user decide when to patch"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-039",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Access control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user changes the account number in a web address and sees another customer's statement. Which kind of flaw is this?",
+    "explanation": "The app does not check that the logged-in user owns the record they ask for. Broken access control tops the OWASP Top 10.",
+    "options": [
+      "Broken access control",
+      "Weak encryption",
+      "A phishing site",
+      "A denial of service"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-040",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Cloud characteristics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shop's website automatically gets more servers during a holiday sale and gives them back afterward. Which cloud characteristic is this?",
+    "explanation": "Rapid elasticity means capacity scales out and back in with demand, often automatically, so the customer pays for what it uses.",
+    "options": [
+      "Broad network access",
+      "Rapid elasticity",
+      "Data sovereignty",
+      "Physical isolation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-041",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Risk terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is an exploit?",
+    "explanation": "An exploit is the tool or technique that takes advantage of a vulnerability. The weakness itself is the vulnerability.",
+    "options": [
+      "A log of failed sign-in attempts",
+      "A plan to recover after an attack",
+      "A weakness in software or settings",
+      "Code or a method that uses a vulnerability"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-042",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Botnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a botnet?",
+    "explanation": "Bots are infected computers, phones or IoT devices that wait for commands from a command and control server. Botnets are used for DDoS, spam and fraud.",
+    "options": [
+      "A group of firewalls that share threat data",
+      "A network of infected devices under one controller",
+      "A set of honeypots run by researchers",
+      "A list of websites known to host malware"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-043",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Response",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee realizes she typed her work password into a fake login page a few minutes ago. What should she do first?",
+    "explanation": "Reporting quickly lets the security team act before the password is used, and changing it makes the stolen copy useless.",
+    "options": [
+      "Delete the email and say nothing",
+      "Restart her computer twice",
+      "Wait to see if anything happens",
+      "Report it and change her password"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-044",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Office computers are running slowly and fans are loud because hidden software is using their processors for an attacker's benefit. What is this?",
+    "explanation": "Cryptojacking uses a victim's computing power to mine cryptocurrency for the attacker. Slow performance and high CPU use are common signs.",
+    "options": [
+      "Cryptojacking",
+      "Adware",
+      "Spyware",
+      "A wiper"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-045",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Key exchange",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the Diffie-Hellman method used for?",
+    "explanation": "Diffie-Hellman lets two parties derive the same secret key without ever sending it, even if someone is watching the exchange.",
+    "options": [
+      "Agreeing a shared secret over an open network",
+      "Signing software updates",
+      "Storing passwords on a server",
+      "Compressing files before encryption"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-046",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "IDS and IPS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IPS raises an alert on normal traffic that is not an attack. What is this called?",
+    "explanation": "A false positive is a harmless event flagged as malicious. A false negative is a real attack that goes unnoticed, which is usually worse.",
+    "options": [
+      "A true positive",
+      "A zero day",
+      "A false negative",
+      "A false positive"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-047",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "According to NIST guidance, what matters most for a strong memorized password?",
+    "explanation": "Longer passwords and passphrases are much harder to guess or crack. NIST SP 800-63B sets minimum lengths and drops complexity and expiry rules.",
+    "options": [
+      "Reuse across sites",
+      "Frequent changes",
+      "A capital first letter",
+      "Length"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-048",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Hardening",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should users work from standard accounts rather than administrator accounts?",
+    "explanation": "Malware runs with the rights of the user who started it. Without admin rights it has a harder time installing itself or changing the system.",
+    "options": [
+      "Admin accounts cannot read email",
+      "It removes the need for passwords",
+      "Standard accounts get faster internet",
+      "Malware they run gets fewer rights"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-049",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why must an API check every request even when only the company's own mobile app calls it?",
+    "explanation": "Anyone can send requests to an exposed API without using the official app, so authentication, authorization and input checks must live in the API itself.",
+    "options": [
+      "APIs cannot use encryption",
+      "Attackers can call the API directly",
+      "The app always sends errors",
+      "Mobile apps have no login"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-050",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Deployment models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several hospitals share a cloud built for their common security and compliance needs. Which deployment model is this?",
+    "explanation": "A community cloud serves a group of organizations with shared concerns, such as the same regulations.",
+    "options": [
+      "Public cloud",
+      "Private cloud",
+      "Hybrid cloud",
+      "Community cloud"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-051",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Security risk is often described as a combination of which two factors?",
+    "explanation": "Risk weighs how likely a threat event is against how much harm it would do. A likely event with a small impact can still rank below a rare but serious one.",
+    "options": [
+      "Users and devices",
+      "Age and size",
+      "Cost and speed",
+      "Likelihood and impact"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-052",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Cybercrime economy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On criminal markets, what does an initial access broker sell?",
+    "explanation": "Initial access brokers break into organizations and sell that access, such as stolen VPN logins, to other criminals like ransomware gangs.",
+    "options": [
+      "Advertising space on fake websites",
+      "Encryption keys for ransomed files",
+      "Ways into already breached networks",
+      "Zero trust software licenses"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-053",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Shoulder surfing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Someone on a train watches a passenger type her banking PIN on her phone. What is this called?",
+    "explanation": "Shoulder surfing is watching someone enter information. Privacy screens and covering the keypad reduce the risk.",
+    "options": [
+      "Shoulder surfing",
+      "Tailgating",
+      "Dumpster diving",
+      "Eavesdropping malware"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-054",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which malware is built to destroy data permanently rather than hold it for ransom?",
+    "explanation": "A wiper overwrites or destroys data so it cannot be recovered. Some wipers pretend to be ransomware but offer no way back.",
+    "options": [
+      "A wiper",
+      "Adware",
+      "Spyware",
+      "A keylogger"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-055",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Hashing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement about a cryptographic hash is true?",
+    "explanation": "A hash is one-way and has a fixed output length whatever the input size. Encryption is reversible with the right key.",
+    "options": [
+      "Its length grows with the input",
+      "It is the same as encryption",
+      "It cannot be reversed to get the input",
+      "It needs a key to create it"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-056",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "IDS and IPS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does anomaly-based detection find attacks?",
+    "explanation": "Anomaly detection learns what normal looks like and flags departures from it, which can catch new attacks but may raise more false positives.",
+    "options": [
+      "It flags traffic that differs from a normal baseline",
+      "It matches traffic to known attack signatures",
+      "It blocks every encrypted connection",
+      "It asks users to report odd behavior"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-057",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is a password manager recommended?",
+    "explanation": "A password manager makes it practical to use long, unique passwords everywhere, so one breached site does not expose other accounts.",
+    "options": [
+      "It shares passwords with coworkers",
+      "It removes the need for any password",
+      "It writes passwords on sticky notes",
+      "It stores a unique strong password per site"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-058",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Device control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company blocks USB storage devices on its laptops. What risks does this mainly reduce?",
+    "explanation": "USB drives can carry malware in and copy data out. Device control policies can block storage while allowing keyboards and mice.",
+    "options": [
+      "Expired certificates and DNS errors",
+      "Malware infection and data theft",
+      "Slow Wi-Fi and dropped calls",
+      "Printer jams and paper waste"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-059",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "DLP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where can data loss prevention tools inspect data?",
+    "explanation": "DLP can watch data on devices, in network traffic such as email and web uploads, and in cloud services, applying the same rules in each place.",
+    "options": [
+      "Only on paper documents",
+      "Only on the company's printers",
+      "On endpoints, the network and cloud apps",
+      "Only inside the database server"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-060",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Shared responsibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which task is always the cloud provider's responsibility in IaaS?",
+    "explanation": "The provider secures the physical facilities, hardware and hypervisor. The customer is responsible for its guest systems, settings and identities.",
+    "options": [
+      "Physical security of the data center",
+      "Setting the customer's firewall rules",
+      "Managing the customer's user accounts",
+      "Patching the customer's guest OS"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-061",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Separation of duties",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At a small firm, one employee can create a new supplier and also approve payments to it. Which principle would reduce the fraud risk?",
+    "explanation": "Separation of duties splits sensitive steps between people, so one person cannot set up and pay a fake supplier alone.",
+    "options": [
+      "Implicit trust",
+      "Separation of duties",
+      "Data retention",
+      "Single sign-on"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-062",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Double extortion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A ransomware group encrypts a company's files and also threatens to publish stolen data unless it is paid. What is this tactic called?",
+    "explanation": "Double extortion adds a data leak threat to encryption, so good backups alone do not remove the pressure to pay.",
+    "options": [
+      "Cryptojacking",
+      "Double extortion",
+      "Typosquatting",
+      "Credential stuffing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-063",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Dumpster diving",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker searches a company's recycling bins for printed staff lists and old invoices. What is this technique called?",
+    "explanation": "Dumpster diving finds useful information in discarded paper or devices. Shredding sensitive documents is the usual defense.",
+    "options": [
+      "Baiting",
+      "Dumpster diving",
+      "Watering hole",
+      "Shoulder surfing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-064",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Malware that runs only in memory and uses built-in system tools, leaving few files on disk, is called what?",
+    "explanation": "Fileless malware lives in memory and abuses trusted tools such as scripting engines, which makes file scanning less effective.",
+    "options": [
+      "Fileless malware",
+      "A macro virus",
+      "Adware",
+      "A boot sector virus"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-065",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Hashing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is a current, widely used hash algorithm?",
+    "explanation": "SHA-256 belongs to the SHA-2 family in the Secure Hash Standard. DES and RC4 are old ciphers, and AES is a cipher, not a hash.",
+    "options": [
+      "AES-128",
+      "DES",
+      "SHA-256",
+      "RC4"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-066",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Web filtering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A school wants to stop students reaching gambling and adult websites. Which security feature is built for this?",
+    "explanation": "Web filtering blocks or allows sites by category or address. It is often run on the firewall or a secure web gateway.",
+    "options": [
+      "Data backup",
+      "Web content filtering",
+      "Full disk encryption",
+      "A sandbox"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-067",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Federation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which standard is often used to pass a user's login from an identity provider to a cloud app in single sign-on?",
+    "explanation": "SAML carries signed assertions about a user from the identity provider to the service provider. OpenID Connect is a common alternative.",
+    "options": [
+      "ARP",
+      "DHCP",
+      "SMTP",
+      "SAML"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-068",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is full disk encryption especially important on laptops?",
+    "explanation": "If an encrypted laptop is lost, the data on the drive cannot be read without the key, so a lost device is not a data breach.",
+    "options": [
+      "Laptops always use public Wi-Fi",
+      "Laptops cannot run antivirus",
+      "Laptops have no passwords",
+      "Laptops are often lost or stolen"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-069",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should a company encrypt the database that holds customer records, not just the network link to it?",
+    "explanation": "Encryption at rest protects the data if the storage or a backup copy is stolen. Link encryption protects only data in transit.",
+    "options": [
+      "It removes the need for passwords",
+      "Stolen database files stay unreadable",
+      "Encryption makes queries run faster",
+      "It lets anyone read the data"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-070",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Multi-tenancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is strong isolation between customers important in a public cloud?",
+    "explanation": "Public clouds are multi-tenant: different customers' workloads run side by side, so the provider must keep each one separate from the others.",
+    "options": [
+      "Many customers share the same hardware",
+      "Public clouds never use encryption",
+      "Each customer has its own building",
+      "Customers share one admin password"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-071",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Control types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Restoring a deleted file from last night's backup is an example of which type of control?",
+    "explanation": "A recovery control brings systems or data back after an incident. A detective control, such as a log alert, only spots the problem.",
+    "options": [
+      "Deterrent",
+      "Preventive",
+      "Recovery",
+      "Detective"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-072",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Credential stuffing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers take usernames and passwords leaked from one website and try them on many other sites. What is this attack called?",
+    "explanation": "Credential stuffing works because people reuse passwords. Password spraying tries a few common passwords against many accounts instead.",
+    "options": [
+      "Pass the hash",
+      "Password spraying",
+      "Credential stuffing",
+      "Rainbow table"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-073",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Quid pro quo",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A caller offers employees a free gift card if they install a survey tool from a link he sends. Which technique is this?",
+    "explanation": "Quid pro quo offers something in return for an action or information. The survey tool is the real payload.",
+    "options": [
+      "Tailgating",
+      "Shoulder surfing",
+      "Dumpster diving",
+      "Quid pro quo"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-074",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Malware types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is polymorphic malware hard for signature-based antivirus to catch?",
+    "explanation": "Polymorphic malware alters its code or encryption with each copy, so a fixed signature does not match the next sample.",
+    "options": [
+      "It changes its code each time it spreads",
+      "It deletes antivirus programs on sight",
+      "It only runs when the device is offline",
+      "It is always sent inside encrypted email"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-075",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Digital signatures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which two security goals does a digital signature provide for a message?",
+    "explanation": "A valid signature shows the message came from the key holder and was not changed. It does not hide the content, so it gives no confidentiality.",
+    "options": [
+      "Confidentiality and availability",
+      "Integrity and authenticity",
+      "Availability and integrity",
+      "Confidentiality and anonymity"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-076",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Sandboxing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where is a network sandbox usually placed in the flow of traffic?",
+    "explanation": "Firewalls and email gateways send suspicious files to the sandbox for analysis, then block the file everywhere if it turns out to be malicious.",
+    "options": [
+      "Inside the DNS server",
+      "Between the keyboard and the PC",
+      "On every printer in the office",
+      "Beside the firewall or mail gateway, for unknown files"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-077",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Directories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does LDAP give an organization?",
+    "explanation": "LDAP is a protocol for reading and updating directory services, such as user accounts and groups, which many systems use for authentication.",
+    "options": [
+      "A way to assign IP addresses",
+      "A way to block spam email",
+      "A way to encrypt hard drives",
+      "A way to query a directory of users and groups"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-078",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Secure boot",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does secure boot check when a computer starts?",
+    "explanation": "Secure boot only lets signed, trusted boot code run, which blocks bootkits and rootkits that try to load before the operating system.",
+    "options": [
+      "That the antivirus database is current",
+      "That the start-up software is trusted and signed",
+      "That the user's password is long enough",
+      "That the network cable is plugged in"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-079",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Masking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A support agent's screen shows a customer's card number as XXXX XXXX XXXX 4417. What is this technique?",
+    "explanation": "Masking hides most of a value so staff see only what the task needs. The full number is not displayed even though the system holds it.",
+    "options": [
+      "Data masking",
+      "Data mirroring",
+      "Data encryption",
+      "Data compression"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-080",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Virtualization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker breaks out of a virtual machine and reaches the hypervisor or other VMs on the host. What is this called?",
+    "explanation": "VM escape is a serious flaw because it breaks the isolation virtualization depends on. Patching the hypervisor is the main defense.",
+    "options": [
+      "Snapshot rollback",
+      "Live migration",
+      "VM escape",
+      "VM sprawl"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-081",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Control types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An intrusion detection system raises an alert when it sees a known attack pattern but does not block it. Which type of control is it?",
+    "explanation": "A detective control identifies an event while it is happening or afterward. A preventive control would stop the traffic.",
+    "options": [
+      "Detective",
+      "Corrective",
+      "Deterrent",
+      "Preventive"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-082",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "IoT threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why are many smart cameras and home routers easy for attackers to take over?",
+    "explanation": "Many IoT devices ship with weak or default logins and are rarely updated, which is how large IoT botnets are built.",
+    "options": [
+      "They often keep default passwords",
+      "They use no network protocols",
+      "They always run antivirus software",
+      "They cannot connect to the internet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-083",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Watering hole",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers infect a trade association's website because they know engineers at one target company visit it often. What is this called?",
+    "explanation": "A watering hole attack compromises a site the targets already trust and visit, instead of contacting them directly.",
+    "options": [
+      "A whaling attack",
+      "A vishing attack",
+      "A tailgating attack",
+      "A watering hole attack"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-084",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Delivery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user visits a compromised website and malware installs through an old browser plug-in without any click. What is this called?",
+    "explanation": "A drive-by download exploits a flaw in the browser or a plug-in just by loading the page. Keeping software patched removes the flaw.",
+    "options": [
+      "Tailgating",
+      "A watering hole",
+      "A drive-by download",
+      "A logic bomb"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-085",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "PKI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which item in a digital certificate lets anyone encrypt data for the certificate's owner?",
+    "explanation": "A certificate carries the subject's public key and the CA's signature. The private key never appears in a certificate.",
+    "options": [
+      "The owner's private key",
+      "The owner's password",
+      "The CA's private key",
+      "The owner's public key"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-086",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Wi-Fi security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Wi-Fi security protocol is the current standard for protecting wireless networks?",
+    "explanation": "WPA3 replaced WPA2 as the current standard and adds stronger protection against password guessing. WEP is broken and should never be used.",
+    "options": [
+      "WPA",
+      "Open with no password",
+      "WEP",
+      "WPA3"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-087",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Access control models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In discretionary access control, who decides who may open a file?",
+    "explanation": "In DAC the data owner grants access at their discretion, as with sharing settings on a file. Mandatory access control uses labels set by the system.",
+    "options": [
+      "The internet provider",
+      "The network router",
+      "A central security label",
+      "The owner of the file"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-088",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "BYOD",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a bring your own device program, what is a common way to keep company data separate on a personal phone?",
+    "explanation": "A managed work profile keeps company apps and data in their own area that the company can control and wipe, without touching personal photos.",
+    "options": [
+      "A managed work profile or container",
+      "A brighter screen for work apps",
+      "A second SIM card for work calls",
+      "A rule to never install apps"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-089",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Data minimization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sign-up form asks for date of birth, address and ID number, though the service needs only an email address. Which principle does this break?",
+    "explanation": "Data minimization means collecting only the data you need. Data never collected cannot be leaked.",
+    "options": [
+      "Load balancing",
+      "Defense in depth",
+      "Non-repudiation",
+      "Data minimization"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-090",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Virtualization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Many forgotten virtual machines are left running, unpatched and unmonitored. What is this problem called?",
+    "explanation": "VM sprawl happens because VMs are easy to create. Unmanaged VMs miss patches and can become an easy way in.",
+    "options": [
+      "Hyperthreading",
+      "VM escape",
+      "Load balancing",
+      "VM sprawl"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-091",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Control categories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A written policy that requires staff to lock their screens when they leave their desks is which category of control?",
+    "explanation": "Administrative controls are policies, procedures and training. A screen lock timeout set by software would be a technical control.",
+    "options": [
+      "Administrative",
+      "Environmental",
+      "Technical",
+      "Physical"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-092",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Threat intelligence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do security teams use threat intelligence feeds?",
+    "explanation": "Threat intelligence shares information such as malicious addresses, file hashes and attacker methods, so defenders can block known threats sooner.",
+    "options": [
+      "To speed up their internet connection",
+      "To find new customers for their products",
+      "To replace their firewalls and antivirus",
+      "To learn about current threats and indicators"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-093",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Deepfakes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee joins a video call in which what looks and sounds like the finance director asks for an urgent payment. What risk should she consider?",
+    "explanation": "Attackers now use AI-generated voice and video to impersonate leaders. Payment requests should be confirmed through a separate, known channel.",
+    "options": [
+      "The video and voice may be AI fakes",
+      "The meeting link may expire soon",
+      "The call quality may hide a virus",
+      "The camera may be recording her"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-094",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Defense",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which step does most to let a company recover from ransomware without paying?",
+    "explanation": "Backups kept offline or immutable cannot be encrypted by the ransomware, and testing proves they can be restored.",
+    "options": [
+      "Buying a faster file server",
+      "Turning off the email spam filter",
+      "Keeping offline, tested backups",
+      "Giving every user admin rights"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-095",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "PKI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a browser trust a website certificate issued by an intermediate CA it has never seen?",
+    "explanation": "The browser follows the chain of signatures up to a root certificate in its trust store. If any link fails, it warns the user.",
+    "options": [
+      "The chain leads to a trusted root CA",
+      "The certificate has a long expiry date",
+      "The website owner says it is safe",
+      "The site uses a padlock image"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-096",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Wi-Fi security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should guest Wi-Fi be on a different network from the company's internal systems?",
+    "explanation": "Visitors bring unmanaged devices that may be infected. Isolating guest Wi-Fi keeps them away from internal servers and data.",
+    "options": [
+      "Guests' devices are not managed or trusted",
+      "It saves money on internet service",
+      "Guest Wi-Fi is always faster",
+      "Internal systems cannot use Wi-Fi"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-097",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Access control models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system grants access only if the user is a nurse, on shift and on the ward's own device. Which model uses attributes like these?",
+    "explanation": "ABAC decides access from attributes of the user, the resource and the context, such as role, time and device.",
+    "options": [
+      "Attribute-based access control",
+      "Role-based access control",
+      "Mandatory access control",
+      "Discretionary access control"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-098",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Endpoint isolation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "EDR flags a laptop that is encrypting files on a shared drive. What is a common first response?",
+    "explanation": "Isolating the endpoint stops the spread while keeping it available for investigation. Most EDR tools can do this remotely in one action.",
+    "options": [
+      "Turn off the EDR agent",
+      "Delete the shared drive at once",
+      "Ask the user to restart it later",
+      "Isolate the laptop from the network"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-099",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Backups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should backups be tested by restoring them from time to time?",
+    "explanation": "A backup that fails to restore is worthless in an emergency. Regular test restores catch corrupt or incomplete copies early.",
+    "options": [
+      "To change the backup password",
+      "To prove they can actually be restored",
+      "To make the backups smaller",
+      "To delete old copies faster"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-100",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Cloud identity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which control best protects a company's cloud administrator console from stolen passwords?",
+    "explanation": "Cloud consoles are reachable from anywhere, so a stolen admin password alone should never be enough to log in.",
+    "options": [
+      "A public link to the console",
+      "Multifactor authentication for admins",
+      "Sharing one admin login",
+      "A longer session timeout"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-101",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Zero trust",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement best describes the zero trust principle?",
+    "explanation": "Zero trust removes implicit trust based on network location. Each access request is checked on identity, device and context, even inside the office.",
+    "options": [
+      "Verify only connections from the internet",
+      "Verify every request, wherever it comes from",
+      "Trust any device inside the office network",
+      "Trust a user for the whole working day"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-102",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Attack vectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is an attack vector?",
+    "explanation": "An attack vector is the route or method of entry, such as a phishing email, an exposed remote desktop port or an infected USB drive.",
+    "options": [
+      "The time an attack takes to finish",
+      "The value of the data that is stolen",
+      "The country an attacker comes from",
+      "The path an attacker uses to get in"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-103",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Pharming",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users type a bank's correct web address but end up on a fake copy of the site because the address lookup was tampered with. What is this called?",
+    "explanation": "Pharming redirects traffic, for example by poisoning DNS, so even a correctly typed address leads to a fake site.",
+    "options": [
+      "Pharming",
+      "Smishing",
+      "Whaling",
+      "Baiting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-104",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Spyware",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Hidden software on a phone collects location, messages and browsing history and sends them to a third party. What is it?",
+    "explanation": "Spyware gathers information about a user without consent. Installing apps only from trusted stores and keeping the phone updated reduce the risk.",
+    "options": [
+      "A worm",
+      "Spyware",
+      "Adware",
+      "A wiper"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-105",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Certificate revocation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does OCSP let a client do?",
+    "explanation": "The Online Certificate Status Protocol answers whether one certificate is still valid, an alternative to downloading a full revocation list.",
+    "options": [
+      "Encrypt a file with a password",
+      "Create a new private key",
+      "Check whether a certificate is revoked",
+      "Renew a certificate early"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-106",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "VPN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a site-to-site VPN connect?",
+    "explanation": "A site-to-site VPN, often using IPsec, joins whole networks over the internet. A remote access VPN connects one user's device.",
+    "options": [
+      "Two networks, such as two offices",
+      "One user to one website",
+      "A printer to a laptop",
+      "A phone to a smartwatch"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-107",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Biometrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fingerprint reader lets in someone who is not enrolled. What is this error called?",
+    "explanation": "A false acceptance lets the wrong person in, which is a security failure. A false rejection turns away a real user, which is an inconvenience.",
+    "options": [
+      "A false rejection",
+      "A false acceptance",
+      "A crossover error",
+      "A true negative"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-108",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Backups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which backup approach best protects against losing data to a failed drive, fire or ransomware?",
+    "explanation": "Keeping more than one copy on different media with one offsite, often called the 3-2-1 rule, means one event cannot destroy every copy.",
+    "options": [
+      "A copy on the user's desktop",
+      "Several copies, one of them offsite",
+      "No backups, only antivirus",
+      "One copy on the same drive"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-109",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Buffer overflow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A program writes more data into a memory area than it can hold, and an attacker uses this to run code. What is this flaw?",
+    "explanation": "A buffer overflow overwrites nearby memory. Bounds checking and memory-safe languages prevent it.",
+    "options": [
+      "Pharming",
+      "A buffer overflow",
+      "Clickjacking",
+      "Cross-site scripting"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-110",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Cloud firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do companies run virtual or cloud-native firewalls inside their cloud networks?",
+    "explanation": "Traffic between cloud workloads never passes the office firewall, so virtual or cloud-native firewalls apply segmentation and inspection inside the cloud.",
+    "options": [
+      "To cool the provider's servers",
+      "To inspect traffic between cloud workloads",
+      "To replace identity management",
+      "To speed up software updates"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-111",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfIntro",
+    "skill": "Security awareness",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do most security programs include regular staff training?",
+    "explanation": "Many attacks, such as phishing, target people rather than technology. Training adds a human layer but does not replace technical controls.",
+    "options": [
+      "It removes the need for patching",
+      "People are a common target for attacks",
+      "Training replaces technical controls",
+      "Laws ban software-only security"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "FCF-D-112",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfThreat",
+    "skill": "Cyber kill chain",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the stages of an attack, what happens during reconnaissance?",
+    "explanation": "Reconnaissance comes first: the attacker studies the target, for example staff names, exposed services and software versions, before choosing a way in.",
+    "options": [
+      "The attacker removes logs to hide tracks",
+      "The attacker sends data out of the network",
+      "The attacker gathers information on the target",
+      "The attacker encrypts the victim's files"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-113",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfSocial",
+    "skill": "Defense",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which control best reduces the harm when a staff member's password is stolen in a phishing attack?",
+    "explanation": "With multifactor authentication a stolen password alone is not enough to log in, though phishing-resistant methods are stronger still.",
+    "options": [
+      "A shared team password",
+      "A bigger email inbox quota",
+      "Multifactor authentication",
+      "A longer screen lock timeout"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-114",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfMalware",
+    "skill": "Infection signs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is a common sign that a computer may be infected with malware?",
+    "explanation": "Unknown programs, unusual pop-ups, security tools that turn off and sudden slowness can all point to malware.",
+    "options": [
+      "A screen saver that starts on time",
+      "An update offered by the vendor",
+      "New programs no one installed",
+      "A newer version of the browser"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-115",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCrypto",
+    "skill": "Encryption uses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop with full disk encryption is stolen while switched off. What does the encryption protect?",
+    "explanation": "Full disk encryption protects stored data, called data at rest. TLS protects data in transit.",
+    "options": [
+      "The laptop from being sold",
+      "Data in use in memory",
+      "Data at rest on the disk",
+      "Data in transit on the network"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "FCF-D-116",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfNetwork",
+    "skill": "Proxy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a forward web proxy do for a company's users?",
+    "explanation": "A forward proxy sits between users and the internet, so it can filter, log and cache web traffic. A reverse proxy sits in front of servers instead.",
+    "options": [
+      "Makes web requests on their behalf and filters them",
+      "Stores the users' passwords",
+      "Hosts the company's public website",
+      "Repairs damaged network cables"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-117",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfAuth",
+    "skill": "Zero trust access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does zero trust network access (ZTNA) do that a traditional VPN does not?",
+    "explanation": "ZTNA checks the user and device for each application and connects them only to that app. A traditional VPN often gives broad access to the whole network.",
+    "options": [
+      "Gives full network access after one login",
+      "Removes the need for user identities",
+      "Works only inside the office building",
+      "Grants access to one app at a time after checks"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "FCF-D-118",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfEndpoint",
+    "skill": "Vulnerability scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a vulnerability scan of company endpoints report?",
+    "explanation": "A vulnerability scanner checks devices for known weaknesses, such as missing patches and unsafe configurations, so they can be fixed by priority.",
+    "options": [
+      "Missing patches and weak settings",
+      "Who sent each email",
+      "The value of each device",
+      "The users' browsing history"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-119",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfData",
+    "skill": "Software updates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should applications only accept updates that are digitally signed by the vendor?",
+    "explanation": "Checking the vendor's signature proves the update came from the vendor and was not changed on the way, which blocks fake update attacks.",
+    "options": [
+      "To reject tampered or fake updates",
+      "To make updates download faster",
+      "To make the updates smaller",
+      "To let users skip updates"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "FCF-D-120",
+    "section": "fcf",
+    "test": 0,
+    "module": 1,
+    "domain": "fcfCloud",
+    "skill": "Serverless",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In serverless computing, what does the customer mainly manage?",
+    "explanation": "With serverless functions the provider runs and scales the servers and operating system. The customer is responsible for its code, permissions and data.",
+    "options": [
+      "The host operating system",
+      "The data center network",
+      "The physical servers",
+      "Its function code and settings"
+    ],
+    "correct": [
+      3
+    ]
+  }
+]

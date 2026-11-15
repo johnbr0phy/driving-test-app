@@ -70,6 +70,6 @@ Q = [
  'Increases urine', ['Slows bowel movements', 'Raises blood pressure', 'Thickens the blood'],
  'Diuretics are urinary drugs that increase water loss through the kidneys. Morning dosing avoids waking at night to urinate.'),
 ('Vitamins and mineral supplements fall into which group in the model curriculum?',
- 'Replacing low nutrients', ['Stopping infection', 'Relaxing muscle', 'Drying the skin out'],
+ 'Replacing low nutrients', ['Treating infection', 'Balancing hormones', 'Easing digestion'],
  'The model curriculum lists nutrients, vitamins and minerals as replacing chemicals that are missing or low in the body.'),
 ]

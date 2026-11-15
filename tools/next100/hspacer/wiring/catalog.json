@@ -1,0 +1,12 @@
+{
+  "blurb": "Endoscope reprocessing practice on HSPA's Certified Endoscope Reprocessor outline: pre-cleaning, leak testing, manual cleaning, high-level disinfection, drying, storage and tracking.",
+  "org": "Healthcare Sterile Processing Association (HSPA)",
+  "group": "Healthcare certification exams",
+  "aliases": ["cer", "hspa cer", "certified endoscope reprocessor", "endoscope reprocessing", "endoscope reprocessor", "scope reprocessing", "flexible endoscope", "gi tech"],
+  "teacherLed": true,
+  "teaches": "a sterile processing program",
+  "borrowTiger": "crcst",
+  "shareTitle": "Free CER Endoscope Reprocessor Practice Test",
+  "shareDescription": "200 original questions on the HSPA CER outline, from leak testing to high-level disinfection and storage. Free to start.",
+  "searchTests": [["cer exam", "US", "hspacer"], ["certified endoscope reprocessor", "US", "hspacer"], ["hspa cer", "US", "hspacer"], ["endoscope reprocessing", "US", "hspacer"]]
+}

@@ -1,0 +1,11 @@
+{
+  "pbtCirc": "Circulatory System",
+  "pbtOrders": "Orders, Identification & Patient Prep",
+  "pbtSite": "Site Selection, Technique & Common Tests",
+  "pbtDraw": "Order of Draw & Equipment",
+  "pbtComp": "Complications & Considerations",
+  "pbtHandling": "Specimen Handling, Transport & Processing",
+  "pbtPoct": "Waived & Point-of-Care Testing",
+  "pbtNonblood": "Non-Blood Specimens",
+  "pbtOps": "Laboratory Operations"
+}

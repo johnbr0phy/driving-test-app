@@ -1,0 +1,16 @@
+  bcba: {
+    answer:
+      "The BCBA exam is the Behavior Analyst Certification Board's certification exam for Board Certified Behavior Analysts, the graduate-level credential in behavior analysis. It has 185 multiple-choice questions in 4 hours, 175 scored and 10 unscored, each with 4 options and 1 correct answer, taken in English on a computer at Pearson VUE testing centers. It follows the BCBA Test Content Outline (6th ed.): 104 tasks in 9 domains, from concepts and principles and behavior-change procedures (14% each) to behaviorism and philosophical foundations (5%). The result is pass or fail against a passing score set by the modified Angoff method, not published as a percentage. Candidates may test up to 8 times in the 2-year authorization period, 30 days apart.",
+    rows: [
+      { label: "Questions", value: "185 multiple choice (175 scored, 10 unscored), 4 options each" },
+      { label: "Time", value: "4 hours" },
+      { label: "Pass mark", value: "Pass/fail; passing score set by modified Angoff, no published percentage" },
+      { label: "Content", value: "9 domains, 104 tasks (6th ed. outline)" },
+      { label: "Biggest domains", value: "Behavior-Change Procedures 25 and Concepts and Principles 24 of 175" },
+      { label: "Retakes", value: "Up to 8 attempts in 2 years, 30 days apart" },
+      { label: "Where", value: "Pearson VUE testing centers, English only" },
+      { label: "Run by", value: "Behavior Analyst Certification Board (BACB)" },
+    ],
+    basedOn: "The BACB BCBA Test Content Outline (6th ed.) and the BCBA Handbook (updated November 2026), checked November 2026",
+    source: { name: "BACB: BCBA certification", url: "https://www.bacb.com/bcba/" },
+  },

@@ -1,0 +1,16 @@
+{
+  "id": "hspachl", "stateCode": "HSPACHL", "idBase": 29100, "prefix": "CHL-",
+  "slug": "/chl", "landingPath": "/chl-healthcare-leader-practice-test", "dataFile": "data/hspa-chl-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "chlProcesses", "perTest": 6, "pool": 24, "segment": "PRC"},
+    {"key": "chlPlanning", "perTest": 7, "pool": 28, "segment": "PLN"},
+    {"key": "chlOrganizing", "perTest": 11, "pool": 44, "segment": "ORG"},
+    {"key": "chlStaff", "perTest": 8, "pool": 32, "segment": "STF"},
+    {"key": "chlComm", "perTest": 7, "pool": 28, "segment": "COM"},
+    {"key": "chlInventory", "perTest": 4, "pool": 16, "segment": "INV"},
+    {"key": "chlInfection", "perTest": 3, "pool": 12, "segment": "INF"},
+    {"key": "chlQuality", "perTest": 4, "pool": 16, "segment": "QMS"}
+  ],
+  "notes": "HSPA CHL Exam Content Outline (Revised August 2025; Updated January 2026): 25/23/29/23. Scaled to 50: 13/11/15/11; splits inside each section are Tigertest's."
+}

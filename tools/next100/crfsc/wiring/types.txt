@@ -1,0 +1,9 @@
+CRFSC
+crfscParts
+crfscSafety
+crfscAmmo
+crfscActions
+crfscFiring
+crfscCare
+crfscLaw
+crfscStorage

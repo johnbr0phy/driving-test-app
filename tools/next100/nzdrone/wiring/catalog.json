@@ -1,0 +1,13 @@
+{
+  "region": "NZ",
+  "blurb": "Practice New Zealand's drone rules under CAA Part 101 and CATI 101-1: the 4 km aerodrome rule, controlled and special use airspace, shielded flights, consent and the 400 ft limit, line of sight and night flying, in four 50-question tests.",
+  "org": "Civil Aviation Authority of New Zealand · Part 101 and CATI 101-1 (pilot qualifications from approved organisations)",
+  "group": "New Zealand licences",
+  "aliases": ["nz drone test", "part 101", "part 101 test", "part 101 drone", "drone licence nz", "drone license nz", "new zealand drone rules", "nz drone rules", "caa drone rules", "cati 101-1", "airshare", "airshare pilot certificate", "drone pilot certificate nz", "rpas nz", "rpa pilot qualification", "uav nz", "drone test new zealand"],
+  "related": ["part107", "nzfirearms", "nzroad"],
+  "teacherLed": false,
+  "borrowTiger": "part107",
+  "shareTitle": "Free NZ Drone Rules (Part 101) Practice Test",
+  "shareDescription": "200 original questions on New Zealand's Part 101 drone rules and CATI 101-1, with every answer explained.",
+  "searchTests": [["part 101", "NZ", "nzdrone"], ["nz drone test", "NZ", "nzdrone"], ["drone licence nz", "NZ", "nzdrone"], ["airshare pilot certificate", "NZ", "nzdrone"], ["new zealand drone rules", "NZ", "nzdrone"]]
+}

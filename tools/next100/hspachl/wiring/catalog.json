@@ -1,0 +1,12 @@
+{
+  "blurb": "Sterile processing leadership practice on HSPA's 2026 Certified Healthcare Leader outline: planning, staffing, budgets, quality tools, communication, inventory and infection prevention.",
+  "org": "Healthcare Sterile Processing Association (HSPA)",
+  "group": "Healthcare certification exams",
+  "aliases": ["chl", "hspa chl", "certified healthcare leader", "sterile processing leadership", "sterile processing manager", "sterile processing supervisor", "central service leadership", "spd manager"],
+  "teacherLed": true,
+  "teaches": "a sterile processing leadership course",
+  "borrowTiger": "crcst",
+  "shareTitle": "Free CHL Healthcare Leader Practice Test",
+  "shareDescription": "200 original questions on the 2026 HSPA CHL outline for sterile processing leaders. Free to start.",
+  "searchTests": [["chl exam", "US", "hspachl"], ["certified healthcare leader", "US", "hspachl"], ["hspa chl", "US", "hspachl"], ["sterile processing leadership", "US", "hspachl"]]
+}

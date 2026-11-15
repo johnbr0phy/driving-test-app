@@ -102,6 +102,11 @@
   "https://assets-us-01.kc-usercontent.com:443/406ac8c6-58e8-00b3-e3c1-0c312965deb2/99c55d51-15bb-4a87-89f3-d6e7013d8a74/Radiography_Content_Specifications_2027.pdf",
   "https://www.arrt.org/pages/arrt-reference-documents/by-document-type/examination-content-specifications"
  ],
+ "ascppbt": [
+  "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_pbt_content_guideline.pdf?sfvrsn=aa1319c7_1",
+  "https://www.who.int/publications/i/item/9789241599221",
+  "https://www.who.int/publications/i/item/9789240120822"
+ ],
  "ase": [
   "https://ase.com/wp-content/uploads/ASE_Automobile_Study_Guide.pdf",
   "https://ase.com/tests/a1-a9/",
@@ -120,6 +125,11 @@
   "https://immi.homeaffairs.gov.au/citizenship-subsite/files/our-common-bond-testable.pdf",
   "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test",
   "https://citizenshippracticetest.homeaffairs.gov.au/"
+ ],
+ "aufirearmsqld": [
+  "https://training.gov.au/api/training/11029NAT",
+  "https://training.gov.au/api/training/NAT11029001",
+  "https://training.gov.au/api/training/NAT11029002"
  ],
  "aufirstaid": [
   "https://training.gov.au/assets/HLT/HLTAID011_AssessmentRequirements_R1.pdf",
@@ -192,6 +202,16 @@
  "barber": [
   "https://prov-testing.github.io/nic_cib/barber_national_theory_english.html"
  ],
+ "bcaba": [
+  "https://www.bacb.com/wp-content/bcaba-outline-6thEd/",
+  "https://www.bacb.com/wp-content/uploads/2022/01/BCaBA-6th-Edition-Test-Content-Outline-240903-a.pdf",
+  "https://www.bacb.com/test-content-outlines-for-bacb-certifications/"
+ ],
+ "bcba": [
+  "https://www.bacb.com/wp-content/bcba-outline-6thEd/",
+  "https://www.bacb.com/wp-content/uploads/2022/01/BCBA-6th-Edition-Test-Content-Outline-240903-a.pdf",
+  "https://www.bacb.com/test-content-outlines-for-bacb-certifications/"
+ ],
  "bedriving": [
   "https://www.vlaanderen.be/rijbewijs-b/theorie-examen-voor-rijbewijs-b",
   "https://www.wallonie.be/fr/demarches/passer-le-permis-de-conduire-theorique-categorie-b",
@@ -249,6 +269,11 @@
   "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada.html",
   "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study",
   "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/results.html"
+ ],
+ "cadc": [
+  "https://internationalcredentialing.org/wp-content/uploads/2025/07/ADC-Candidate-Guide-2022.pdf",
+  "https://internationalcredentialing.org/icrc-credentials/credentials/",
+  "https://internationalcredentialing.org/prep-and-study-materials/"
  ],
  "caelec": [
   "https://red-seal.ca/eng/trades/constelectric/exam-information.shtml",
@@ -403,6 +428,11 @@
  ],
  "cpc": [
   "https://aapc.com/certifications/cpc/taking-the-cpc-exam"
+ ],
+ "crfsc": [
+  "https://rcmp.ca/en/firearms/firearms-safety-training-transport-and-storage/safety-courses",
+  "https://www.rcmp.ca/sites/default/files/doc/5592e.pdf",
+  "https://rcmp.ca/en/firearms/firearms-safety-training-transport-and-storage/safety-course-exceptions"
  ],
  "cscs": [
   "https://www.citb.co.uk/courses-tests/health-safety-and-environment-hse-test/operatives-test",
@@ -662,6 +692,16 @@
  "hscmaths": [
   "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/assessment",
   "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/assessment/hsc-examinations"
+ ],
+ "hspacer": [
+  "https://myhspa.org/wp-content/uploads/2023/07/CER_Exam_Content_Outline.pdf",
+  "https://myhspa.org/certification/certification-overview/certified-endoscope-reprocessor-cer/",
+  "https://myhspa.org/wp-content/uploads/2024/01/2024-Certification-Handbook.pdf"
+ ],
+ "hspachl": [
+  "https://myhspa.org/wp-content/uploads/2026/03/HSPA_CHL_Content_Outline_2026.pdf",
+  "https://myhspa.org/certified-healthcare-leader-chl-pilot-exam/",
+  "https://myhspa.org/certification/certification-overview/certified-healthcare-leader-chl/"
  ],
  "hspt": [
   "https://www.ststesting.com/hsp/index.html",
@@ -974,6 +1014,11 @@
   "https://education.nsw.gov.au/schooling/students/oc-and-shs/going-to-a-selective-high-school/get-ready-for-the-selective-high-school-placement-test",
   "https://education.nsw.gov.au/schooling/parents-and-carers/choosing-a-school-setting/selective-high-schools/placement-test/selective-high-school-practice-tests"
  ],
+ "nzdrone": [
+  "https://www.aviation.govt.nz/assets/rules/consolidations/Part_101_Consolidation.pdf",
+  "https://www.aviation.govt.nz/assets/rules/transport-instruments/CATI-101-1.pdf",
+  "https://www.aviation.govt.nz/assets/rules/consolidations/Part_102_Consolidation.pdf"
+ ],
  "nzensf": [
   "https://www.nursingcouncil.org.nz/common/Uploaded%20files/Public/Education/Exam%20and%20Candidate%20info/Handbook%20for%20pre-registration%20nursing%20programmes%20May22.pdf",
   "https://nursingcouncil.org.nz/common/Uploaded%20files/State%20Final%20Examination%20Frequently%20Asked%20Questions%20%28FAQ%29.pdf",
@@ -983,6 +1028,11 @@
   "https://www.firearmssafety.govt.nz/individual-licence/courses-and-education/firearms-safety-course-options",
   "https://www.firearmssafety.govt.nz/individual-licence/courses-and-education/firearms-safety-course",
   "https://www.firearmssafety.govt.nz/sites/default/files/2025-09/Firearms%20Safety%20Code_0.pdf"
+ ],
+ "nzham": [
+  "https://nzart.org.nz/wp-content/uploads/2025/10/NZART-Study-Guide-2025.pdf",
+  "https://nzart.org.nz/wp-content/uploads/2026/03/2025-NZART-Examination-Procedure.pdf",
+  "https://www.rsm.govt.nz/assets/Uploads/documents/pibs/radio-operator-certificate-and-callsign-rules-pib-46.pdf"
  ],
  "nzheavy": [
   "https://en.wikipedia.org/wiki/Driving_licence_in_New_Zealand"
@@ -1243,6 +1293,11 @@
   "https://rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN%202024-02%20RPF-Const.pdf",
   "https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN%20RPF02-2024%20(Constable",
   "https://www.careerindia.com/news/rpf-constable-result-2025-declared-42-143-candidates-qualified-check-pet-pmt-details-051155.html"
+ ],
+ "rpt": [
+  "https://americanmedtech.org/Portals/0/PDF/Get%20Cert/Prepare%20for%20Exam/RPT-Content.pdf",
+  "https://americanmedtech.org/phlebotomy-technician/rpt-exam",
+  "https://americanmedtech.org/Portals/0/PDF/Get%20Cert/Prepare%20for%20Exam/RPT-REF.pdf"
  ],
  "rrbalp": [
   "https://www.rrbcdg.gov.in/uploads/2026/01-ALP/012026ALP-CEN.pdf",

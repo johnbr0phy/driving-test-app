@@ -1,0 +1,67 @@
+const hspachl: ExamConfig = {
+  id: "hspachl",
+  stateCode: "HSPACHL",
+  idBase: 29100,
+  slug: "/chl",
+  landingPath: "/chl-healthcare-leader-practice-test",
+  name: "CHL Healthcare Leader Practice Test",
+  shortName: "CHL (HSPA)",
+  examLabel: "CHL exam",
+  fullName: "Certified Healthcare Leader (CHL) Exam",
+  questionIdPrefix: "CHL-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // HSPA Certified Healthcare Leader (CHL) Exam Content Outline, Revised August 2025; Updated
+  // January 2026 (2024-2025 job task analysis; the outline for the October 2026 pilot and the
+  // new exam): 1 Planning and Decision Making 25%, 2 Organizing 23%, 3 Leading 29%,
+  // 4 Governing and Compliance 23% (the handbook still calls it Controlling). Scaled to 50:
+  // 13/11/15/11; Tigertest's split inside sections: planning 6 processes and equipment (I-II)
+  // + 7 safety, workforce, finance and risk (III-VI); leading 8 staff (I-II) + 7 communication
+  // and leadership (III-IV); governing 4 inventory and finance + 3 infection prevention + 4
+  // quality. HSPA's real exam is 150 questions (125 scored) in 3 hours, pass/fail by number
+  // correct against an Angoff-set cut that is not published as a percent; 70% here is a
+  // readiness marker. All items original.
+  blueprint: {
+    chlProcesses: 6,
+    chlPlanning: 7,
+    chlOrganizing: 11,
+    chlStaff: 8,
+    chlComm: 7,
+    chlInventory: 4,
+    chlInfection: 3,
+    chlQuality: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29101, name: "Planning & Decision Making", categories: ["chlProcesses", "chlPlanning"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 29102, name: "Organizing", categories: ["chlOrganizing"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 29103, name: "Leading", categories: ["chlStaff", "chlComm"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 29104, name: "Governing & Compliance", categories: ["chlInventory", "chlInfection", "chlQuality"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    chlProcesses: "Quality Control, Workplace & Equipment",
+    chlPlanning: "Safety, Workforce & Financial Planning",
+    chlOrganizing: "Organizing Staff & Processes",
+    chlStaff: "Leading, Mentoring & Training Staff",
+    chlComm: "Communication & Leadership Skills",
+    chlInventory: "Inventory & Financial Management",
+    chlInfection: "Infection Prevention",
+    chlQuality: "Quality Management & Risk",
+  },
+  copy: {
+    guestPrompt: "to save your CHL progress and track every question you miss",
+    trainingHeading: "Train by HSPA outline section",
+    trainingSub: "Four sets, one for each section of the HSPA CHL content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Planning & Decision Making.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CHL.",
+    ],
+    sourceLine: "Based on the HSPA Certified Healthcare Leader (CHL) Exam Content Outline (2026). Original questions; 50 per test, weighted like the real exam. Not affiliated with the Healthcare Sterile Processing Association.",
+    analyticsKey: "hspachl",
+  },
+};

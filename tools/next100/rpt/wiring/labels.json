@@ -1,0 +1,12 @@
+{
+  "rptPatient": "Patient ID, Preparation & Sites",
+  "rptVenipuncture": "Venipuncture, Tubes & Equipment",
+  "rptCapillary": "Capillary Punctures & Labeling",
+  "rptSpecimen": "Specimen Collection & Processing",
+  "rptWorkflow": "Time Management & Workflow",
+  "rptComm": "Professional Communications",
+  "rptClerical": "Clerical Skills & Duties",
+  "rptSafety": "Safety Standards & Procedures",
+  "rptLegal": "Legal, Ethical & Professional",
+  "rptAnatomy": "Terminology, Anatomy & Physiology"
+}

@@ -1,0 +1,11 @@
+NZHAM
+nzhamRegs
+nzhamOperating
+nzhamFundamentals
+nzhamComponents
+nzhamSafetyPower
+nzhamReceivers
+nzhamTransmitters
+nzhamAntennas
+nzhamPropagation
+nzhamInterference

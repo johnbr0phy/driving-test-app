@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Check, X } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
@@ -39,7 +39,7 @@ const COPY: Partial<Record<Language, { label: string; right: string; wrong: stri
   el: { label: "Δοκίμασε μία ερώτηση", right: "Σωστά!", wrong: "Όχι ακριβώς.", next: "Συνέχισε", saved: "Μετράει στο πρώτο σου σετ εξάσκησης." },
 };
 
-export function LandingTryQuestion({ q, lang }: { q: TryQuestion; lang?: Language }) {
+export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang?: Language; onAnswer?: () => void }) {
   const { user, loading } = useAuth();
   const { setLanguage } = useTranslation();
   const isGuest = useStore((s) => s.isGuest);
@@ -50,6 +50,14 @@ export function LandingTryQuestion({ q, lang }: { q: TryQuestion; lang?: Languag
   const copy = COPY[lang ?? "en"] ?? COPY.en!;
   const answered = picked !== null;
   const correct = picked === q.correctIndex;
+  const feedbackRef = useRef<HTMLDivElement>(null);
+
+  // Bring the explanation and Keep going into view without a jump.
+  useEffect(() => {
+    if (!answered) return;
+    const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    feedbackRef.current?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "nearest" });
+  }, [answered]);
 
   const choose = (i: number) => {
     if (answered) return;
@@ -57,7 +65,8 @@ export function LandingTryQuestion({ q, lang }: { q: TryQuestion; lang?: Languag
     const ok = i === q.correctIndex;
     if (ok) playCorrectSound();
     else playIncorrectSound();
-    if (lang) setLanguage(lang);
+    // Lets the hero hold its Start button text, so nothing above the card moves.
+    onAnswer?.();
     if (!loading && !user && !isGuest) startGuestSession();
     answerTrainingSetQuestion(q.setId, q.questionId, ok);
     recordClassAnswer(q.examId, { questionId: q.questionId, category: q.category as Question["category"], optionOrder: q.optionOrder }, ok, LETTERS[i]);
@@ -97,7 +106,7 @@ export function LandingTryQuestion({ q, lang }: { q: TryQuestion; lang?: Languag
         })}
       </div>
       {answered && (
-        <div className="mt-4" aria-live="polite">
+        <div ref={feedbackRef} className="mt-4 scroll-mb-6" aria-live="polite">
           <p className={`font-semibold ${correct ? "text-green-700 dark:text-green-300" : "text-red-700 dark:text-red-300"}`}>
             {correct ? copy.right : copy.wrong}
           </p>
@@ -105,6 +114,8 @@ export function LandingTryQuestion({ q, lang }: { q: TryQuestion; lang?: Languag
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <Link
               href={q.practiceHref}
+              // Switching language refreshes the page, so it waits for this tap.
+              onClick={() => lang && setLanguage(lang)}
               className="inline-flex items-center rounded-full bg-gray-900 dark:bg-white px-6 py-3 text-base font-medium text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
             >
               {copy.next}

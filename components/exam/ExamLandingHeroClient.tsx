@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { LandingIntro } from "@/components/exam/LandingIntro";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
@@ -200,16 +201,21 @@ export function ExamLandingHeroClient({
   tryQuestion?: TryQuestion | null;
 }) {
   const { hasSession, onStart, copy } = useStartCta(dashboardHref, lang);
+  // Answering the try card starts a guest session, which would turn
+  // "Start practicing" into "Go to Dashboard" and shift the page while the
+  // visitor reads. Hold the label it had when they answered.
+  const [heldLabel, setHeldLabel] = useState<string | null>(null);
+  const label = heldLabel ?? (hasSession ? copy.dashboard : copy.start);
 
   return (
     <LandingIntro subtitle={subtitle} action={
         <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
           <Link href={dashboardHref} onClick={onStart}>
-            {hasSession ? copy.dashboard : copy.start}
+            {label}
           </Link>
         </Button>
       }>
-      {tryQuestion && <LandingTryQuestion q={tryQuestion} lang={lang} />}
+      {tryQuestion && <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={() => setHeldLabel((h) => h ?? label)} />}
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">

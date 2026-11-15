@@ -1,0 +1,14 @@
+{
+  "blurb": "Practice for Fortinet NSE 1 Cybersecurity and Cloud Fundamentals, the entry-level course exam that replaced Fortinet Certified Fundamentals (FCF) in July 2026: the threat landscape, social engineering, malware, cryptography and PKI, secure networking, authentication, endpoint security, secure data and apps, and cloud security.",
+  "org": "Fortinet Training Institute · NSE 1 Cybersecurity and Cloud Fundamentals (formerly FCF)",
+  "group": "IT certifications",
+  "groupBefore": "fortigate",
+  "aliases": ["fortinet fcf", "fcf", "fortinet certified fundamentals", "fcf cybersecurity", "fortinet fundamentals", "nse 1", "nse1", "fortinet nse 1", "cybersecurity and cloud fundamentals", "introduction to the threat landscape", "technical introduction to cybersecurity", "getting started in cybersecurity", "nse 2"],
+  "teacherLed": false,
+  "borrowTiger": "secplus",
+  "shareTitle": "Free Fortinet NSE 1 (FCF) Practice Test",
+  "shareDescription": "200 original questions on all ten modules of Fortinet's NSE 1 course, the course that replaced FCF. Free to start.",
+  "searchTests": [["fortinet fcf", "US", "fortinse"], ["nse 1", "US", "fortinse"], ["fortinet certified fundamentals", "US", "fortinse"]],
+  "region": "TEST_REGIONS: fortinse is GLOBAL",
+  "premium": "PREMIUM_V2_IDS: add \"fortinse\""
+}

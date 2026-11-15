@@ -746,14 +746,14 @@
     "state": "ALL",
     "questionId": "CPATCP-PFP-006",
     "category": "cpatcpPlanning",
-    "question": "An investor in the 32% bracket compares a municipal bond yielding 3.2% with taxable bonds. The muni's taxable-equivalent yield is about:",
-    "optionA": "4.22%",
-    "optionB": "4.71%",
-    "optionC": "3.20%",
-    "optionD": "2.18%",
+    "question": "A client in the 35% bracket is offered a municipal bond yielding 2.6%. Its taxable-equivalent yield is:",
+    "optionA": "3.51%",
+    "optionB": "4.00%",
+    "optionC": "2.60%",
+    "optionD": "1.69%",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Taxable-equivalent yield = tax-exempt yield / (1 - rate): 3.2% / 0.68 = 4.71%."
+    "explanation": "Taxable-equivalent yield = tax-exempt yield / (1 - rate): 2.6% / 0.65 = 4.00%. Multiplying by 1.35 understates it."
   },
   {
     "type": "CPATCP",
@@ -774,14 +774,14 @@
     "state": "ALL",
     "questionId": "CPATCP-PFP-008",
     "category": "cpatcpPlanning",
-    "question": "When market interest rates rise, the price of an existing long-term fixed-rate bond:",
-    "optionA": "Rises more than a short bond's",
-    "optionB": "Stays at its face value",
-    "optionC": "Falls less than a short bond's",
-    "optionD": "Falls more than a short bond's",
+    "question": "Two bonds from the same issuer pay the same coupon, one maturing in 3 years and one in 25. If market rates rise, the price that drops more is:",
+    "optionA": "The 3-year bond's",
+    "optionB": "Neither; both stay at par",
+    "optionC": "Both drop by the same amount",
+    "optionD": "The 25-year bond's",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Bond prices move opposite to rates, and the longer the maturity the larger the price change, so long bonds carry more interest rate risk."
+    "explanation": "The longer the maturity, the more future payments are discounted at the higher rate, so long bonds carry more interest rate risk."
   },
   {
     "type": "CPATCP",

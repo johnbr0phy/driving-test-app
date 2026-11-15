@@ -23,8 +23,8 @@ const DOMAINS = [
 
 export const FORTINSE: ExamV2Config = {
   id: "fortinse",
-  slug: "/fortinet-fcf",
-  landingPath: "/fortinet-fcf-practice-test",
+  slug: "/fortinet-nse-1",
+  landingPath: "/fortinet-nse-1-practice-test",
   name: "Fortinet NSE 1 (FCF) Practice Test",
   shortName: "NSE 1 (FCF)",
   fullName: "Fortinet NSE 1 - Cybersecurity and Cloud Fundamentals exam (formerly FCF)",

@@ -24,8 +24,8 @@ ITEMS = [
       "You need two numbers that multiply to −24 and add to −2: −6 and 4. (x + 6)(x − 4) multiplies back to x² + 2x − 24, with the wrong middle sign.",
       basics="factoring"),
     M("1", 3, "Difference of two squares", "Which two binomials can be written as a difference of two squares? Choose two.",
-      ["9x² − 49", "x² − 64", "x² + 25", "4x² − 18", "x³ − 1"], 2,
-      "9x² − 49 = (3x)² − 7² and x² − 64 = x² − 8², so both factor as (a − b)(a + b). x² + 25 is a sum, 18 is not a perfect square, and x³ is not a square."),
+      ["9x² − 49", "x² − 64", "x² + 25", "x² − 8x", "x³ − 1"], 2,
+      "9x² − 49 = (3x)² − 7² and x² − 64 = x² − 8², so both factor as (a − b)(a + b). x² + 25 is a sum, x² − 8x has no constant square to subtract, and x³ is not a square."),
 
     # ---------------- Practice Test 2
     S("2", 1, "Subtracting polynomials", "What is (6x² + 2x − 5) − (4x² − 3x + 1)?",
@@ -98,8 +98,8 @@ ITEMS = [
       ["(5x − 4)(5x + 4)", "(5x − 4)²", "(25x − 4)(x + 4)", "(5x − 8)(5x + 2)"],
       "25x² = (5x)² and 16 = 4², so 25x² − 16 = (5x − 4)(5x + 4). (5x − 4)² would have a middle term of −40x."),
     MX("0", 2, "Difference of two squares", "Can each binomial be written as a difference of two squares?",
-       ["x² − 81", "x² + 36", "16x² − 1", "2x² − 9"], ["Yes", "No"], [0, 1, 0, 1],
-       "x² − 81 = x² − 9² and 16x² − 1 = (4x)² − 1², so both can. x² + 36 is a sum, and 2x² is not a perfect square."),
+       ["x² − 81", "x² + 36", "16x² − 1", "x² − 9x"], ["Yes", "No"], [0, 1, 0, 1],
+       "x² − 81 = x² − 9² and 16x² − 1 = (4x)² − 1², so both can. x² + 36 is a sum, and in x² − 9x the second term 9x is not a square."),
     N("0", 3, "Multiplying binomials", "The product (3x − 2)(2x + 5) is written as ax² + bx + c. What is the value of b?",
       ["11"],
       "(3x − 2)(2x + 5) = 6x² + 15x − 4x − 10 = 6x² + 11x − 10, so b = 11. Using only 3x · 5 gives 15.",

@@ -56,6 +56,8 @@ const TEACHER_LED = new Set([
   "naplan7", "vicsel", "hscmaths",
   // Primary school classes
   "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth",
+  // Texas high school end-of-course classes
+  "staaralg1",
   // Trade schools, pre-licensing courses and instructor-led certifications
   "cdl", "cdlx", "moto", "osha", "forklift", "epa608", "foodmgr", "security", "lifeguard", "hunter", "cosmetology",
   "realestate", "insurance", "pnc", "ham", "civics",

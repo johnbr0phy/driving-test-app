@@ -969,7 +969,7 @@
     "stem": "Which two binomials can be written as a difference of two squares? Choose two.",
     "options": [
       "x² + 25",
-      "4x² − 18",
+      "x² − 8x",
       "x³ − 1",
       "9x² − 49",
       "x² − 64"
@@ -980,7 +980,7 @@
     ],
     "select": 2,
     "calculator": true,
-    "explanation": "9x² − 49 = (3x)² − 7² and x² − 64 = x² − 8², so both factor as (a − b)(a + b). x² + 25 is a sum, 18 is not a perfect square, and x³ is not a square."
+    "explanation": "9x² − 49 = (3x)² − 7² and x² − 64 = x² − 8², so both factor as (a − b)(a + b). x² + 25 is a sum, x² − 8x has no constant square to subtract, and x³ is not a square."
   },
   {
     "id": "STAARA1-T1-045",
@@ -3922,7 +3922,7 @@
       "x² − 81",
       "x² + 36",
       "16x² − 1",
-      "2x² − 9"
+      "x² − 9x"
     ],
     "columns": [
       "Yes",
@@ -3935,7 +3935,7 @@
       1
     ],
     "calculator": true,
-    "explanation": "x² − 81 = x² − 9² and 16x² − 1 = (4x)² − 1², so both can. x² + 36 is a sum, and 2x² is not a perfect square."
+    "explanation": "x² − 81 = x² − 9² and 16x² − 1 = (4x)² − 1², so both can. x² + 36 is a sum, and in x² − 9x the second term 9x is not a square."
   },
   {
     "id": "STAARA1-D-076",

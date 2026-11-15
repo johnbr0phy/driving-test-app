@@ -81,6 +81,7 @@ export const TEACHES: Record<string, string> = {
   ocnsw: "a Year 4 OC test coaching class",
   vicsel: "a selective entry coaching class",
   mapgrowth: "a grade 2 to 5 class",
+  staaralg1: "an Algebra I class",
   hscmaths: "a Year 12 Mathematics Standard class",
   sat: "SAT prep",
   act: "ACT prep",

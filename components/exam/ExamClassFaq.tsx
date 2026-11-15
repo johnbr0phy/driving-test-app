@@ -111,6 +111,7 @@ export const TEACHES: Record<string, string> = {
   ccs: "a medical coding or HIM program",
   rdexam: "a dietetics program",
   aafcs: "a family and consumer sciences program",
+  cen: "a CEN review course",
   cemap: "a CeMAP course",
   aswb: "in an MSW program or run ASWB licensure prep",
   arrt: "a radiography program",

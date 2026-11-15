@@ -113,6 +113,16 @@
     "url": "https://aama-ntl.org/certification/eligibility"
    }
   },
+  "cen": {
+   "fee": {
+    "value": "$285 for ENA members, $380 for non-members",
+    "url": "https://bcen.org/cen/"
+   },
+   "retake": {
+    "value": "90 days after a failed attempt; a discounted retest fee applies for one year",
+    "url": "https://bcen.org/?p=12439"
+   }
+  },
   "cpc": {
    "fee": {
     "value": "$425 for one attempt, or $499 for two attempts",

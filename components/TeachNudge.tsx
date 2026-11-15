@@ -21,6 +21,8 @@ const TEACHER_LED = new Set([
   "aafcs",
   // US: automotive technology programs (ASE A1-A8)
   "ase",
+  // US: emergency nursing CEN review courses
+  "cen",
   // Spain: academias de oposiciones and accredited security training centres
   "espolicia", "esguardia", "esvigilante",
   // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen

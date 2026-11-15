@@ -4884,6 +4884,22 @@
     --brand-gradient-to: 35 50% 95%;
   }
 
+  /* CEN (BCEN Certified Emergency Nurse) theme: dark olive yellow.
+     59 85% 34% failed white-text contrast (2.9:1); 18% clears it and stays 8 points
+     darker than rotaxi and caelec. */
+  [data-theme="cen"] {
+    --brand: 59 85% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 59 50% 95%;
+    --brand-hover: 59 85% 14%;
+    --brand-dark: 59 85% 12%;
+    --brand-darker: 59 70% 8%;
+    --brand-muted: 59 30% 66%;
+    --brand-border: 59 30% 78%;
+    --brand-border-light: 59 25% 88%;
+    --brand-gradient-to: 35 70% 95%;
+  }
+
   /* LLQP (Canada life licence) theme */
   [data-theme="llqp"] {
     --brand: 5 45% 28%;
@@ -9200,6 +9216,18 @@
     --brand-muted: 70 18% 45%;
     --brand-dark: 70 25% 65%;
     --brand-darker: 70 22% 78%;
+  }
+
+  .dark [data-theme="cen"] {
+    --brand: 59 85% 25.9%;
+    --brand-hover: 59 85% 17.9%;
+    --brand-light: 59 45% 13%;
+    --brand-gradient-to: 35 40% 11%;
+    --brand-border-light: 59 25% 24%;
+    --brand-border: 59 30% 34%;
+    --brand-muted: 59 30% 45%;
+    --brand-dark: 59 85% 65%;
+    --brand-darker: 59 70% 78%;
   }
 
   .dark [data-theme="llqp"] {

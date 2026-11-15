@@ -148,6 +148,8 @@ const BORROWED_SETS: Record<string, string> = {
   aafcs: "foodhandler",
   // ASE A1-A8 (US automobile technicians) borrows the Red Seal automotive mechanic tiger (no flag).
   ase: "caauto",
+  // CEN (BCEN Certified Emergency Nurse) borrows the NCLEX tiger.
+  cen: "nclex",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
   // licence, security guard and NCLEX families.
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",

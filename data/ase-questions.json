@@ -88,14 +88,14 @@
     "state": "ALL",
     "questionId": "ASE-A1-007",
     "category": "aseEngine",
-    "question": "A low compression reading does not change when oil is added to the cylinder. Which fault is most likely?",
-    "optionA": "Worn piston rings",
-    "optionB": "A clogged PCV valve",
-    "optionC": "A valve not seating",
-    "optionD": "A worn oil pump",
+    "question": "During a cylinder leakage test, air is heard hissing at the throttle body. Where is the leak?",
+    "optionA": "Past the exhaust valve",
+    "optionB": "Past the piston rings",
+    "optionC": "Past the intake valve",
+    "optionD": "Through the head gasket",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "When a wet test does not raise the reading, the leak is above the rings, usually a valve that is burned, bent or held off its seat."
+    "explanation": "With the piston at top dead center on the compression stroke, air that escapes into the intake manifold and out at the throttle body has leaked past the intake valve."
   },
   {
     "type": "ASE",
@@ -137,7 +137,7 @@
     "optionD": "Through the head gasket",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "With the piston at top dead center on the compression stroke, air escaping to the tailpipe has leaked past the exhaust valve. Air at the throttle body means the intake valve."
+    "explanation": "With the piston at top dead center on the compression stroke, air escaping to the tailpipe has leaked past the exhaust valve."
   },
   {
     "type": "ASE",
@@ -172,14 +172,14 @@
     "state": "ALL",
     "questionId": "ASE-A1-013",
     "category": "aseEngine",
-    "question": "A vacuum leak downstream of the mass airflow sensor most often causes:",
-    "optionA": "A lean condition at idle",
-    "optionB": "A rich condition at cruise",
-    "optionC": "Higher manifold vacuum",
-    "optionD": "Lower fuel pump pressure",
+    "question": "Raw fuel is found in the vacuum hose to a vacuum-referenced fuel pressure regulator. What is the likely fault?",
+    "optionA": "A ruptured regulator diaphragm",
+    "optionB": "A weak fuel pump",
+    "optionC": "A clogged fuel filter",
+    "optionD": "A restricted fuel return line",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Air that enters after the MAF sensor is not measured, so the PCM adds too little fuel. The effect is largest at idle, when the leak is a big share of total airflow."
+    "explanation": "The diaphragm separates fuel from the vacuum chamber. Once it ruptures, fuel is drawn through the vacuum hose into the intake, so the engine runs rich. A weak pump, clogged filter or restricted return changes pressure but cannot put fuel in the vacuum hose."
   },
   {
     "type": "ASE",
@@ -2496,7 +2496,7 @@
     "state": "ALL",
     "questionId": "ASE-A5-019",
     "category": "aseBrakes",
-    "question": "The vehicle pulls to the left when braking. Which caliper, if its piston were seized and not applying, could cause this?",
+    "question": "The vehicle pulls to the left when braking. Which component, if it failed to apply, could cause this?",
     "optionA": "The left front caliper",
     "optionB": "The master cylinder",
     "optionC": "The right front caliper",
@@ -2553,10 +2553,10 @@
     "questionId": "ASE-A5-023",
     "category": "aseBrakes",
     "question": "What does a metering valve do on a disc and drum system?",
-    "optionA": "Limits rear drum pressure",
-    "optionB": "Warns of a lost circuit",
+    "optionA": "Holds residual drum pressure",
+    "optionB": "Boosts front pressure on ABS stops",
     "optionC": "Delays front disc apply",
-    "optionD": "Adjusts the rear shoes",
+    "optionD": "Equalizes left and right pressure",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "The metering valve holds off front disc pressure until the rear drum return springs are overcome, so front and rear brakes start working together."
@@ -4148,14 +4148,14 @@
     "state": "ALL",
     "questionId": "ASE-A8-017",
     "category": "asePerformance",
-    "question": "A very low firing line on one cylinder most often indicates:",
-    "optionA": "A fouled spark plug",
-    "optionB": "A wide spark plug gap",
-    "optionC": "An open plug wire",
+    "question": "On a distributor ignition with one coil, the scope shows no coil oscillations after the spark line on any cylinder. What is a likely cause?",
+    "optionA": "A shorted ignition coil winding",
+    "optionB": "A fouled spark plug",
+    "optionC": "A wide spark plug gap",
     "optionD": "A lean cylinder mixture",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A plug fouled with carbon or oil, or a cracked insulator, gives the spark an easy path, so little voltage is needed and the firing line drops."
+    "explanation": "After the spark ends, the energy left in a healthy coil rings down as several oscillations. Shorted turns in the coil absorb that energy, so the oscillations shrink or disappear. A plug or mixture fault would show on one cylinder, not all."
   },
   {
     "type": "ASE",

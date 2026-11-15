@@ -102,5 +102,7 @@ same study guide but is not required for Master status and is not modelled.
 - Fees, registration windows, retake waits and any question about the test itself.
 - A9 Light Vehicle Diesel Engines, G1, L1 to L4 and the other ASE series.
 - Manufacturer-specific numbers (torque values, clearances, pressures) stated as universal.
-- The Technician A / Technician B and "Both A and B" format the real tests use: Tigertest items
-  are single-answer, because options are shuffled on screen.
+- Technician A / Technician B and "Both A and B" style items (common in study materials; not
+  confirmed in a readable ASE page): Tigertest items are single-answer, because options are
+  shuffled on screen. ASE's Need to Know guide says every question is multiple choice with one
+  correct answer.

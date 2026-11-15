@@ -63,7 +63,7 @@ const faqs = [
   },
   {
     q: "Are these the real ASE test questions?",
-    a: "No. Every question is original, written by Tigertest from the task lists in the Official ASE Study Guide and from primary rules such as FMVSS 116, 126 and 138 and the EPA's Section 609 servicing requirements. The real tests use a Technician A and Technician B format for some items; these are single-answer questions. Tigertest is not affiliated with ASE.",
+    a: "No. Every question is original, written by Tigertest from the task lists in the Official ASE Study Guide and from primary rules such as FMVSS 116, 126 and 138 and the EPA's Section 609 servicing requirements. Like the real tests, every question is multiple choice with one correct answer. Tigertest is not affiliated with ASE.",
   },
 ];
 

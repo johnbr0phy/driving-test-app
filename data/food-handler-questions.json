@@ -525,11 +525,11 @@
     "question": "A dishwasher notices the walk-in cooler thermometer reads 50 F during a shift. What should the dishwasher do?",
     "optionA": "Unplug the cooler and plug it back in",
     "optionB": "Tell the person in charge immediately",
-    "optionC": "Wait for the next scheduled temperature log",
+    "optionC": "Tell the person in charge at shift end",
     "optionD": "Ignore it unless the food smells bad",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Any food safety problem, like a cooler above 41 F, should be reported to the person in charge right away. Food can be unsafe even if it smells normal."
+    "explanation": "Any food safety problem, like a cooler above 41 F, should be reported to the person in charge right away, while there is still time to save the food. Waiting until the end of the shift leaves food in the danger zone, and food can be unsafe even if it smells normal."
   },
   {
     "type": "FOODHANDLER",
@@ -1000,12 +1000,12 @@
     "category": "fhCleaning",
     "question": "Sewage starts backing up through a kitchen floor drain during dinner service. What should the staff do?",
     "optionA": "Mop it up and keep cooking",
-    "optionB": "Cover the drain with a sheet pan",
+    "optionB": "Keep cooking and tell the manager after service",
     "optionC": "Pour sanitizer in the drain and continue",
     "optionD": "Stop service and tell the manager",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A sewage backup is an imminent health hazard, so service stops and the manager contacts the health department. Mopping or sanitizing while cooking continues can spread sewage onto food and equipment."
+    "explanation": "A sewage backup is an imminent health hazard, so service stops at once and the manager contacts the health department. Waiting until after service, or mopping or sanitizing while cooking continues, can spread sewage onto food and equipment."
   },
   {
     "type": "FOODHANDLER",
@@ -1016,10 +1016,10 @@
     "optionA": "Wipe the board with a dry towel",
     "optionB": "Wash, rinse, and sanitize the board",
     "optionC": "Flip the board over and use the other side",
-    "optionD": "Rinse the board under hot water",
+    "optionD": "Wash the board with soap only",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Raw chicken leaves pathogens on the board, so it must be washed, rinsed, and sanitized before ready-to-eat food touches it. Rinsing or flipping the board does not remove or kill the germs left behind."
+    "explanation": "Raw chicken leaves pathogens on the board, so it must be washed, rinsed, and sanitized before ready-to-eat food touches it. Washing with soap alone skips the sanitizing step, and wiping or flipping the board leaves the germs behind."
   },
   {
     "type": "FOODHANDLER",
@@ -1449,11 +1449,11 @@
     "question": "A cook has been making peanut butter sandwiches and must now make one for a guest with a peanut allergy. What must the cook do first?",
     "optionA": "Wash hands and put on new gloves",
     "optionB": "Wipe the gloves on a towel",
-    "optionC": "Rinse the gloves under running water",
+    "optionC": "Wash the gloves and keep them on",
     "optionD": "Use the same gloves but a new knife",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Peanut protein stays on gloves and hands, so the cook must wash hands and change gloves before making the allergen-free order. Wiping or rinsing gloves does not remove the allergen."
+    "explanation": "Peanut protein stays on gloves and hands, so the cook must wash hands and change gloves before making the allergen-free order. Washing or wiping the used gloves does not remove the allergen, and single-use gloves are never washed and reused."
   },
   {
     "type": "FOODHANDLER",
@@ -1534,10 +1534,10 @@
     "optionA": "Ignore it, since it is probably a vendor",
     "optionB": "Tell the manager right away",
     "optionC": "Ask them to help unload the delivery",
-    "optionD": "Wait until the end of the shift to mention it",
+    "optionD": "Tell the manager at the end of the shift",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Food defense means keeping unauthorized people away from food and storage to prevent deliberate contamination. Assuming it is a vendor or waiting lets a possible threat go unchecked."
+    "explanation": "Food defense means keeping unauthorized people away from food and storage to prevent deliberate contamination, so the manager must hear about it right away. Assuming it is a vendor or waiting until the shift ends lets a possible threat go unchecked."
   },
   {
     "type": "FOODHANDLER",
@@ -1562,10 +1562,10 @@
     "optionA": "Stop prepping there and tell the manager",
     "optionB": "Cover the table with plastic and keep working",
     "optionC": "Wipe the drips every few minutes",
-    "optionD": "Move only the raw meat away",
+    "optionD": "Keep prepping and tell the manager later",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Leaks and condensation from overhead pipes can carry dirt and germs into food, so prep must stop there until the leak is fixed. Covering or wiping does not stop the contamination source."
+    "explanation": "Leaks and condensation from overhead pipes can carry dirt and germs into food, so prep must stop there and the manager must hear about it now. Covering, wiping or reporting it later does not stop the contamination source."
   },
   {
     "type": "FOODHANDLER",
@@ -1576,10 +1576,10 @@
     "optionA": "Wash hands at the handwashing sink",
     "optionB": "Put on a fresh pair of gloves",
     "optionC": "Use hand antiseptic, then start plating",
-    "optionD": "Rinse hands quickly in the dish sink",
+    "optionD": "Wash hands quickly in the dish sink",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Taking out trash contaminates hands, so they must be washed at a handwashing sink before touching food. Putting on gloves over dirty hands just moves the germs onto the gloves."
+    "explanation": "Taking out trash contaminates hands, so they must be washed at a handwashing sink before touching food. A dish sink is not for handwashing, even for a quick wash, and putting on gloves over dirty hands just moves the germs onto the gloves."
   },
   {
     "type": "FOODHANDLER",
@@ -1590,10 +1590,10 @@
     "optionA": "Wipe her hands on her apron",
     "optionB": "Wash her hands",
     "optionC": "Keep working if her hands look clean",
-    "optionD": "Spray her hands with sanitizer solution",
+    "optionD": "Wash her hands after finishing the salad",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Touching hair, face or body can move germs to the hands, so hands must be washed before going back to food. Wiping hands on an apron does not remove germs and dirties the apron."
+    "explanation": "Touching hair, face or body can move germs to the hands, so hands must be washed before going back to food, not after the salad is made. Wiping hands on an apron does not remove germs and dirties the apron."
   },
   {
     "type": "FOODHANDLER",
@@ -1604,10 +1604,10 @@
     "optionA": "Use tongs so his hands never touch the rolls",
     "optionB": "Put on gloves and pick up the rolls",
     "optionC": "Wash his hands before touching the bread",
-    "optionD": "Wipe his hands with a clean napkin",
+    "optionD": "Wash his hands after serving the table",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Sneezing or coughing into the hands means the hands must be washed right away. Tongs or gloves do not fix contaminated hands, which still touch the basket, the tongs and other surfaces."
+    "explanation": "Sneezing or coughing into the hands means the hands must be washed right away, before touching the bread, not after serving it. Tongs or gloves do not fix contaminated hands, which still touch the basket, the tongs and other surfaces."
   },
   {
     "type": "FOODHANDLER",
@@ -1631,11 +1631,11 @@
     "question": "A cook is about to put on single-use gloves to assemble chicken wraps for lunch. What should she do right before putting them on?",
     "optionA": "Wash her hands",
     "optionB": "Blow into the gloves to open them",
-    "optionC": "Rinse the gloves under hot water",
+    "optionC": "Glove up, then wash the gloved hands",
     "optionD": "Dip her hands in sanitizer solution",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Hands must be washed before putting on gloves, because germs on the hands get onto the outside of the gloves while putting them on. Dipping hands in sanitizer solution is not a substitute for washing."
+    "explanation": "Hands must be washed before putting on gloves, because germs on the hands get onto the outside of the gloves while putting them on. Single-use gloves are not washed once they are on, and dipping hands in sanitizer solution is not a substitute for washing."
   },
   {
     "type": "FOODHANDLER",
@@ -1798,12 +1798,12 @@
     "category": "fhHygiene",
     "question": "A cook notices a small tear in her glove while shaping raw hamburger patties. What should she do?",
     "optionA": "Wash hands and put on new gloves",
-    "optionB": "Finish the batch, then change gloves",
+    "optionB": "Finish the batch, then wash and change gloves",
     "optionC": "Put a second glove over the torn one",
     "optionD": "Tape over the tear and keep working",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Gloves must be changed as soon as they tear, with handwashing before the new pair goes on. A second glove over a torn one still leaves germs from the hand inside."
+    "explanation": "Gloves must be changed as soon as they tear, with handwashing before the new pair goes on. Waiting until the batch is done lets germs reach the meat in the meantime, and a second glove over a torn one still leaves germs from the hand inside."
   },
   {
     "type": "FOODHANDLER",
@@ -1828,10 +1828,10 @@
     "optionA": "Wipe the gloves on a sanitizer-soaked cloth",
     "optionB": "Keep the same gloves since the chicken gets cooked",
     "optionC": "Remove gloves, wash hands, put on new gloves",
-    "optionD": "Rinse his gloved hands at the handwashing sink",
+    "optionD": "Wash his gloved hands at the hand sink",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Gloves must be changed after handling raw meat and before touching ready-to-eat food, with handwashing in between. Wiping or rinsing gloves does not remove raw-chicken germs."
+    "explanation": "Gloves must be changed after handling raw meat and before touching ready-to-eat food, with handwashing in between. Washing or wiping the same gloves does not make them safe for ready-to-eat food."
   },
   {
     "type": "FOODHANDLER",
@@ -1898,7 +1898,7 @@
     "optionA": "Put on gloves right away",
     "optionB": "Wipe her station with a dry towel",
     "optionC": "Use hand antiseptic only",
-    "optionD": "Wash her hands",
+    "optionD": "Wash her hands at the hand sink",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Hands must be washed when starting work, even if the uniform and hair net are clean. Hand antiseptic alone does not replace handwashing."
@@ -1952,12 +1952,12 @@
     "category": "fhHygiene",
     "question": "A busser has just cleared dirty plates from several tables. The cook asks him to help portion side salads. What must he do first?",
     "optionA": "Put on gloves over his hands",
-    "optionB": "Wipe his hands on a sanitizer cloth",
+    "optionB": "Wash his hands after portioning",
     "optionC": "Use a fork instead of gloves",
     "optionD": "Wash his hands",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Touching dirty dishes or equipment contaminates the hands, so they must be washed before handling food. Gloves put on over dirty hands pick up those germs."
+    "explanation": "Touching dirty dishes or equipment contaminates the hands, so they must be washed before handling food, not after the salads are portioned. Gloves put on over dirty hands pick up those germs."
   },
   {
     "type": "FOODHANDLER",
@@ -2008,12 +2008,12 @@
     "category": "fhHygiene",
     "question": "A server vomited twice at home this morning but now feels better. What should she do before her shift?",
     "optionA": "Work, but avoid touching food",
-    "optionB": "Work if she wears gloves",
+    "optionB": "Tell the manager, then work in gloves",
     "optionC": "Take cold medicine and come in to work",
     "optionD": "Tell the manager and not work",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Vomiting must be reported, and the food handler must not work until at least 24 hours after it stops. Feeling better does not mean she has stopped spreading the illness."
+    "explanation": "Vomiting must be reported, and the food handler must not work until at least 24 hours after it stops. Telling the manager is not enough if she then works, even in gloves, and feeling better does not mean she has stopped spreading the illness."
   },
   {
     "type": "FOODHANDLER",
@@ -2402,7 +2402,7 @@
     "optionA": "145 F",
     "optionB": "155 F",
     "optionC": "Until they look bright green",
-    "optionD": "135 F",
+    "optionD": "135 F or above",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Fruits, vegetables, grains and legumes cooked for hot holding must reach 135 F. 145 F and 155 F are meat and egg temperatures, not vegetable temperatures."
@@ -2596,7 +2596,7 @@
     "category": "fhTimeTemp",
     "question": "A cook opens a bag of commercially processed, ready-to-eat chili to hot hold. What reheating temperature is required?",
     "optionA": "165 F for 15 seconds",
-    "optionB": "135 F",
+    "optionB": "135 F or above",
     "optionC": "155 F",
     "optionD": "145 F",
     "correctAnswer": "B",

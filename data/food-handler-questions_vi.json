@@ -525,11 +525,11 @@
     "question": "Một nhân viên rửa chén thấy nhiệt kế của tủ lạnh walk-in (walk-in cooler) chỉ 50 F trong ca làm. Nhân viên đó nên làm gì?",
     "optionA": "Rút điện tủ lạnh rồi cắm lại",
     "optionB": "Báo ngay cho người phụ trách",
-    "optionC": "Chờ lần ghi nhiệt độ theo lịch kế tiếp",
+    "optionC": "Báo cho người phụ trách vào cuối ca",
     "optionD": "Bỏ qua trừ khi thực phẩm có mùi hôi",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Mọi vấn đề an toàn thực phẩm, như tủ lạnh trên 41 F, đều phải được báo ngay cho người phụ trách. Thực phẩm có thể không an toàn dù mùi vẫn bình thường."
+    "explanation": "Mọi vấn đề an toàn thực phẩm, như tủ lạnh trên 41 F, đều phải được báo ngay cho người phụ trách, khi vẫn còn kịp cứu thực phẩm. Chờ đến cuối ca sẽ để thực phẩm nằm trong vùng nguy hiểm, và thực phẩm có thể không an toàn dù mùi vẫn bình thường."
   },
   {
     "type": "FOODHANDLER",
@@ -1000,12 +1000,12 @@
     "category": "fhCleaning",
     "question": "Nước thải bắt đầu trào ngược qua cống sàn trong bếp vào giờ phục vụ bữa tối. Nhân viên nên làm gì?",
     "optionA": "Lau sạch và tiếp tục nấu",
-    "optionB": "Đậy cống bằng một khay nướng",
+    "optionB": "Tiếp tục nấu và báo quản lý sau giờ phục vụ",
     "optionC": "Đổ chất khử trùng vào cống rồi làm tiếp",
     "optionD": "Ngừng phục vụ và báo cho quản lý",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Nước thải trào ngược là mối nguy sức khỏe khẩn cấp (imminent health hazard), nên phải ngừng phục vụ và quản lý liên hệ sở y tế. Lau hoặc khử trùng trong khi vẫn nấu có thể làm nước thải lan ra thực phẩm và dụng cụ."
+    "explanation": "Nước thải trào ngược là mối nguy sức khỏe khẩn cấp (imminent health hazard), nên phải ngừng phục vụ ngay và quản lý liên hệ sở y tế. Chờ hết giờ phục vụ, hoặc lau hay khử trùng trong khi vẫn nấu, có thể làm nước thải lan ra thực phẩm và dụng cụ."
   },
   {
     "type": "FOODHANDLER",
@@ -1016,10 +1016,10 @@
     "optionA": "Lau thớt bằng khăn khô",
     "optionB": "Rửa, xả và khử trùng thớt",
     "optionC": "Lật thớt lại và dùng mặt bên kia",
-    "optionD": "Xả thớt dưới nước nóng",
+    "optionD": "Chỉ rửa thớt bằng xà phòng",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Gà sống để lại mầm bệnh trên thớt, nên thớt phải được rửa, xả và khử trùng trước khi thực phẩm ăn liền chạm vào. Xả nước hoặc lật thớt không loại bỏ hay diệt được vi trùng còn sót lại."
+    "explanation": "Gà sống để lại mầm bệnh trên thớt, nên thớt phải được rửa, xả và khử trùng trước khi thực phẩm ăn liền chạm vào. Chỉ rửa bằng xà phòng thì bỏ qua bước khử trùng, còn lau hoặc lật thớt vẫn để lại vi trùng."
   },
   {
     "type": "FOODHANDLER",
@@ -1449,11 +1449,11 @@
     "question": "Một đầu bếp đang làm bánh mì kẹp bơ đậu phộng và giờ phải làm một phần cho khách dị ứng đậu phộng. Đầu bếp phải làm gì trước?",
     "optionA": "Rửa tay và đeo găng tay mới",
     "optionB": "Lau găng tay vào khăn",
-    "optionC": "Xả găng tay dưới vòi nước chảy",
+    "optionC": "Rửa găng tay và tiếp tục đeo",
     "optionD": "Dùng găng tay cũ nhưng dùng dao mới",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Protein đậu phộng còn dính trên găng tay và tay, nên đầu bếp phải rửa tay và thay găng trước khi làm món không có chất gây dị ứng. Lau hay xả găng tay không loại bỏ được chất gây dị ứng."
+    "explanation": "Protein đậu phộng còn dính trên găng tay và tay, nên đầu bếp phải rửa tay và thay găng trước khi làm món không có chất gây dị ứng. Rửa hay lau găng đã dùng không loại bỏ được chất gây dị ứng, và găng dùng một lần không bao giờ được rửa để dùng lại."
   },
   {
     "type": "FOODHANDLER",
@@ -1534,10 +1534,10 @@
     "optionA": "Bỏ qua, vì có lẽ đó là người giao hàng",
     "optionB": "Báo ngay cho quản lý",
     "optionC": "Nhờ họ giúp dỡ hàng",
-    "optionD": "Chờ đến cuối ca mới nói",
+    "optionD": "Báo cho quản lý vào cuối ca",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Phòng vệ thực phẩm nghĩa là không để người không có phận sự đến gần thực phẩm và kho để ngăn việc cố ý làm nhiễm bẩn. Cho rằng đó là người giao hàng hoặc chờ đợi sẽ để một mối đe dọa có thể xảy ra mà không được kiểm tra."
+    "explanation": "Phòng vệ thực phẩm nghĩa là không để người không có phận sự đến gần thực phẩm và kho để ngăn việc cố ý làm nhiễm bẩn, nên phải báo cho quản lý ngay. Cho rằng đó là người giao hàng hoặc chờ đến cuối ca sẽ để một mối đe dọa có thể xảy ra mà không được kiểm tra."
   },
   {
     "type": "FOODHANDLER",
@@ -1562,10 +1562,10 @@
     "optionA": "Ngừng sơ chế ở đó và báo cho quản lý",
     "optionB": "Phủ bàn bằng ni lông và tiếp tục làm",
     "optionC": "Lau nước nhỏ giọt vài phút một lần",
-    "optionD": "Chỉ dời thịt sống đi chỗ khác",
+    "optionD": "Tiếp tục sơ chế và báo quản lý sau",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Nước rò rỉ và nước ngưng tụ từ đường ống phía trên có thể mang bụi bẩn và vi trùng vào thực phẩm, nên phải ngừng sơ chế ở đó cho đến khi sửa xong chỗ rò. Phủ hay lau không chặn được nguồn gây nhiễm bẩn."
+    "explanation": "Nước rò rỉ và nước ngưng tụ từ đường ống phía trên có thể mang bụi bẩn và vi trùng vào thực phẩm, nên phải ngừng sơ chế ở đó và báo ngay cho quản lý. Phủ, lau hoặc để sau mới báo đều không chặn được nguồn gây nhiễm bẩn."
   },
   {
     "type": "FOODHANDLER",
@@ -1576,10 +1576,10 @@
     "optionA": "Rửa tay ở bồn rửa tay",
     "optionB": "Đeo một đôi găng tay mới",
     "optionC": "Dùng chất sát khuẩn tay, rồi bắt đầu bày món",
-    "optionD": "Xả nhanh tay ở bồn rửa chén",
+    "optionD": "Rửa nhanh tay ở bồn rửa chén",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Đổ rác làm bẩn tay, nên phải rửa tay ở bồn rửa tay trước khi chạm vào thực phẩm. Đeo găng tay lên tay bẩn chỉ chuyển vi trùng sang găng tay."
+    "explanation": "Đổ rác làm bẩn tay, nên phải rửa tay ở bồn rửa tay trước khi chạm vào thực phẩm. Bồn rửa chén không dùng để rửa tay, dù chỉ rửa nhanh, và đeo găng tay lên tay bẩn chỉ chuyển vi trùng sang găng tay."
   },
   {
     "type": "FOODHANDLER",
@@ -1590,10 +1590,10 @@
     "optionA": "Lau tay vào tạp dề",
     "optionB": "Rửa tay",
     "optionC": "Tiếp tục làm nếu tay trông sạch",
-    "optionD": "Xịt dung dịch khử trùng lên tay",
+    "optionD": "Rửa tay sau khi làm xong salad",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Chạm vào tóc, mặt hoặc cơ thể có thể chuyển vi trùng sang tay, nên phải rửa tay trước khi quay lại với thực phẩm. Lau tay vào tạp dề không loại bỏ được vi trùng và làm bẩn tạp dề."
+    "explanation": "Chạm vào tóc, mặt hoặc cơ thể có thể chuyển vi trùng sang tay, nên phải rửa tay trước khi quay lại với thực phẩm, không phải sau khi làm xong salad. Lau tay vào tạp dề không loại bỏ được vi trùng và làm bẩn tạp dề."
   },
   {
     "type": "FOODHANDLER",
@@ -1604,10 +1604,10 @@
     "optionA": "Dùng kẹp để tay không chạm vào bánh",
     "optionB": "Đeo găng tay rồi lấy bánh",
     "optionC": "Rửa tay trước khi chạm vào bánh mì",
-    "optionD": "Lau tay bằng khăn ăn sạch",
+    "optionD": "Rửa tay sau khi phục vụ bàn đó",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Hắt hơi hoặc ho vào tay nghĩa là phải rửa tay ngay. Kẹp hay găng tay không khắc phục được bàn tay đã nhiễm bẩn, vốn vẫn chạm vào giỏ, kẹp và các bề mặt khác."
+    "explanation": "Hắt hơi hoặc ho vào tay nghĩa là phải rửa tay ngay, trước khi chạm vào bánh mì chứ không phải sau khi phục vụ. Kẹp hay găng tay không khắc phục được bàn tay đã nhiễm bẩn, vốn vẫn chạm vào giỏ, kẹp và các bề mặt khác."
   },
   {
     "type": "FOODHANDLER",
@@ -1631,11 +1631,11 @@
     "question": "Một đầu bếp sắp đeo găng tay dùng một lần để cuốn bánh wrap gà cho bữa trưa. Cô ấy nên làm gì ngay trước khi đeo?",
     "optionA": "Rửa tay",
     "optionB": "Thổi vào găng tay cho mở ra",
-    "optionC": "Xả găng tay dưới nước nóng",
+    "optionC": "Đeo găng rồi rửa tay đang đeo găng",
     "optionD": "Nhúng tay vào dung dịch khử trùng",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Phải rửa tay trước khi đeo găng, vì vi trùng trên tay sẽ dính ra mặt ngoài găng trong lúc đeo. Nhúng tay vào dung dịch khử trùng không thay thế được việc rửa tay."
+    "explanation": "Phải rửa tay trước khi đeo găng, vì vi trùng trên tay sẽ dính ra mặt ngoài găng trong lúc đeo. Găng dùng một lần không được rửa khi đã đeo, và nhúng tay vào dung dịch khử trùng không thay thế được việc rửa tay."
   },
   {
     "type": "FOODHANDLER",
@@ -1798,12 +1798,12 @@
     "category": "fhHygiene",
     "question": "Một đầu bếp thấy găng tay bị rách nhỏ trong lúc nặn miếng thịt hamburger sống. Cô ấy nên làm gì?",
     "optionA": "Rửa tay và đeo găng tay mới",
-    "optionB": "Làm xong mẻ này rồi mới thay găng",
+    "optionB": "Làm xong mẻ này rồi mới rửa tay và thay găng",
     "optionC": "Đeo thêm một chiếc găng bên ngoài găng bị rách",
     "optionD": "Dán băng keo lên chỗ rách và làm tiếp",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Phải thay găng ngay khi bị rách, và rửa tay trước khi đeo đôi mới. Đeo thêm găng bên ngoài găng rách vẫn để vi trùng từ tay ở bên trong."
+    "explanation": "Phải thay găng ngay khi bị rách, và rửa tay trước khi đeo đôi mới. Chờ làm xong mẻ thì vi trùng đã kịp dính vào thịt, còn đeo thêm găng bên ngoài găng rách vẫn để vi trùng từ tay ở bên trong."
   },
   {
     "type": "FOODHANDLER",
@@ -1828,10 +1828,10 @@
     "optionA": "Lau găng lên khăn tẩm chất khử trùng",
     "optionB": "Giữ nguyên găng vì gà sẽ được nấu chín",
     "optionC": "Tháo găng, rửa tay, đeo găng mới",
-    "optionD": "Xả tay đang đeo găng ở bồn rửa tay",
+    "optionD": "Rửa tay đang đeo găng ở bồn rửa tay",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Phải thay găng sau khi cầm thịt sống và trước khi chạm vào thực phẩm ăn liền, có rửa tay ở giữa. Lau hoặc xả găng không loại bỏ được vi trùng từ gà sống."
+    "explanation": "Phải thay găng sau khi cầm thịt sống và trước khi chạm vào thực phẩm ăn liền, có rửa tay ở giữa. Rửa hay lau đôi găng cũ không làm chúng an toàn cho thực phẩm ăn liền."
   },
   {
     "type": "FOODHANDLER",
@@ -1898,7 +1898,7 @@
     "optionA": "Đeo găng tay ngay",
     "optionB": "Lau khu làm việc bằng khăn khô",
     "optionC": "Chỉ dùng chất sát khuẩn tay",
-    "optionD": "Rửa tay",
+    "optionD": "Rửa tay ở bồn rửa tay",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Phải rửa tay khi bắt đầu làm việc, dù đồng phục và lưới trùm tóc đã sạch. Chỉ dùng chất sát khuẩn tay không thay thế được việc rửa tay."
@@ -1952,12 +1952,12 @@
     "category": "fhHygiene",
     "question": "Một nhân viên dọn bàn vừa dọn đĩa bẩn ở nhiều bàn. Đầu bếp nhờ anh ấy giúp chia phần salad ăn kèm. Anh ấy phải làm gì trước?",
     "optionA": "Đeo găng tay vào",
-    "optionB": "Lau tay bằng khăn tẩm chất khử trùng",
+    "optionB": "Rửa tay sau khi chia phần salad",
     "optionC": "Dùng nĩa thay cho găng tay",
     "optionD": "Rửa tay",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Chạm vào chén đĩa hoặc dụng cụ bẩn làm tay bị nhiễm bẩn, nên phải rửa tay trước khi làm việc với thực phẩm. Găng đeo lên tay bẩn sẽ dính những vi trùng đó."
+    "explanation": "Chạm vào chén đĩa hoặc dụng cụ bẩn làm tay bị nhiễm bẩn, nên phải rửa tay trước khi làm việc với thực phẩm, không phải sau khi chia phần salad. Găng đeo lên tay bẩn sẽ dính những vi trùng đó."
   },
   {
     "type": "FOODHANDLER",
@@ -2008,12 +2008,12 @@
     "category": "fhHygiene",
     "question": "Một nhân viên phục vụ ói hai lần ở nhà sáng nay nhưng giờ đã thấy khỏe hơn. Cô ấy nên làm gì trước ca làm?",
     "optionA": "Đi làm nhưng tránh chạm vào thực phẩm",
-    "optionB": "Đi làm nếu đeo găng tay",
+    "optionB": "Báo cho quản lý rồi đeo găng đi làm",
     "optionC": "Uống thuốc cảm rồi đi làm",
     "optionD": "Báo cho quản lý và không đi làm",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Ói mửa phải được báo cáo, và nhân viên thực phẩm không được làm việc cho đến ít nhất 24 giờ sau khi hết ói. Cảm thấy khỏe hơn không có nghĩa là cô ấy đã hết lây bệnh."
+    "explanation": "Ói mửa phải được báo cáo, và nhân viên thực phẩm không được làm việc cho đến ít nhất 24 giờ sau khi hết ói. Báo cho quản lý rồi vẫn đi làm, dù đeo găng, là không đủ, và cảm thấy khỏe hơn không có nghĩa là cô ấy đã hết lây bệnh."
   },
   {
     "type": "FOODHANDLER",
@@ -2402,7 +2402,7 @@
     "optionA": "145 F",
     "optionB": "155 F",
     "optionC": "Cho đến khi có màu xanh tươi",
-    "optionD": "135 F",
+    "optionD": "135 F trở lên",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Trái cây, rau, ngũ cốc và các loại đậu được nấu để giữ nóng phải đạt 135 F (57°C). 145 F và 155 F là nhiệt độ cho thịt và trứng, không phải rau."
@@ -2596,7 +2596,7 @@
     "category": "fhTimeTemp",
     "question": "Một đầu bếp mở một túi chili ăn liền chế biến sẵn công nghiệp để giữ nóng. Nhiệt độ hâm lại bắt buộc là bao nhiêu?",
     "optionA": "165 F trong 15 giây",
-    "optionB": "135 F",
+    "optionB": "135 F trở lên",
     "optionC": "155 F",
     "optionD": "145 F",
     "correctAnswer": "B",

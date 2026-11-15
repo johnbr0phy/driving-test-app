@@ -117,13 +117,13 @@
     "questionId": "CNA-ADL-009",
     "category": "activitiesDailyLiving",
     "question": "A resident with diabetes asks the nurse aide to trim her long, thick toenails. The nurse aide should:",
-    "optionA": "Trim them straight across with clippers",
+    "optionA": "Trim them straight across, then tell the nurse",
     "optionB": "Soak her feet, then cut them short",
     "optionC": "Cut the corners to prevent ingrown nails",
     "optionD": "Tell the nurse, who arranges trimming",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Diabetes causes poor circulation and slow healing, so a small cut can become a serious infection or ulcer. Nurse aides do not cut diabetic residents' toenails; a nurse or podiatrist does."
+    "explanation": "Diabetes causes poor circulation and slow healing, so a small cut can become a serious infection or ulcer. Nurse aides do not cut diabetic residents' toenails at all, even straight across; a nurse or podiatrist does."
   },
   {
     "type": "CNA",
@@ -148,10 +148,10 @@
     "optionA": "The right arm first",
     "optionB": "The left arm first",
     "optionC": "Both arms at the same time",
-    "optionD": "The arm closest to the aide",
+    "optionD": "The right arm last",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Dress the weak or affected side first and undress it last, because the weak arm needs the most room to move into the sleeve. The strong side can bend and reach into the sleeve afterward."
+    "explanation": "Dress the weak or affected side first and undress it last, because the weak arm needs the most room to move into the sleeve. Here the weak side is the right, so it goes in first, not last; the strong left side can bend and reach into the sleeve afterward."
   },
   {
     "type": "CNA",
@@ -176,10 +176,10 @@
     "optionA": "Sit at eye level and offer small bites",
     "optionB": "Stand by the bed to finish faster",
     "optionC": "Give large spoonfuls to save time",
-    "optionD": "Give all liquids after the solids are gone",
+    "optionD": "Stand over him and offer large bites",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Sitting at eye level, offering small bites, and alternating solids with liquids lets the resident swallow safely and promotes dignity. Standing over the resident and rushing with large bites increases the risk of choking."
+    "explanation": "Sitting at eye level, offering small bites, and alternating solids with liquids lets the resident swallow safely and promotes dignity. Standing over the resident and offering large bites increases the risk of choking."
   },
   {
     "type": "CNA",
@@ -216,12 +216,12 @@
     "category": "activitiesDailyLiving",
     "question": "A resident on nectar-thick liquids asks the nurse aide for a glass of regular water. The aide should:",
     "optionA": "Give regular water because it is safer",
-    "optionB": "Give a small sip of regular water through a straw",
+    "optionB": "Give regular water, then inform the nurse",
     "optionC": "Offer thickened water and inform the nurse",
     "optionD": "Refuse to give her any fluids at all",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Thickened liquids are ordered because thin liquids are easily aspirated by residents with swallowing problems. The aide follows the diet order, offers the thickened form, and reports the request; a straw does not make thin liquids safe."
+    "explanation": "Thickened liquids are ordered because thin liquids are easily aspirated by residents with swallowing problems. The aide follows the diet order, offers the thickened form, and reports the request; giving thin water first, even with a report afterward, risks aspiration."
   },
   {
     "type": "CNA",
@@ -274,10 +274,10 @@
     "optionA": "Explain the limit and notify the nurse",
     "optionB": "Bring the water because residents have rights",
     "optionC": "Hide the water pitcher from the resident",
-    "optionD": "Give ice chips without measuring them",
+    "optionD": "Give the water and tell the nurse the amount",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A fluid restriction is a doctor's order, often for heart or kidney problems, so the aide explains it kindly and reports the request. Ice chips count as fluid intake and must be measured; for residents who need more fluids, the aide instead offers drinks often."
+    "explanation": "A fluid restriction is a doctor's order, often for heart or kidney problems, so the aide explains it kindly and reports the request. Giving the extra water breaks the order even if the amount is reported afterward."
   },
   {
     "type": "CNA",
@@ -316,10 +316,10 @@
     "optionA": "Restrict all fluids after breakfast",
     "optionB": "Offer toileting on a regular schedule",
     "optionC": "Keep her in an adult brief all day",
-    "optionD": "Wait until she asks to be taken to the bathroom",
+    "optionD": "Offer the toilet only when she asks",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A regular toileting schedule (for example, every 2 hours and after meals) helps prevent incontinence and preserves dignity. Restricting fluids causes dehydration and concentrated urine that irritates the bladder."
+    "explanation": "A regular toileting schedule (for example, every 2 hours and after meals) helps prevent incontinence and preserves dignity; waiting until she asks misses the pattern. Restricting fluids causes dehydration and concentrated urine that irritates the bladder."
   },
   {
     "type": "CNA",
@@ -369,13 +369,13 @@
     "questionId": "CNA-ADL-027",
     "category": "activitiesDailyLiving",
     "question": "A resident says it burns when she urinates, and her urine is cloudy and foul smelling. The nurse aide should:",
-    "optionA": "Give cranberry juice and recheck tomorrow",
+    "optionA": "Give cranberry juice and tell the nurse tomorrow",
     "optionB": "Collect a sterile urine specimen herself",
     "optionC": "Give her an over-the-counter pain reliever",
     "optionD": "Report these observations to the nurse",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Burning, cloudy or foul-smelling urine, frequency, and new confusion are signs of urinary tract infection that must be reported promptly. Giving medication or doing sterile procedures is outside the aide's scope."
+    "explanation": "Burning, cloudy or foul-smelling urine, frequency, and new confusion are signs of urinary tract infection that must be reported promptly, not saved for the next day. Giving juice or medication or doing sterile procedures is outside the aide's scope."
   },
   {
     "type": "CNA",
@@ -400,10 +400,10 @@
     "optionA": "Turn on the overhead light and the TV",
     "optionB": "Give a sleeping pill from the med cart",
     "optionC": "Offer a back rub and dim the lights",
-    "optionD": "Wake her each hour to make sure she is fine",
+    "optionD": "Offer coffee and leave the TV on",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A back rub, a quiet and dim room, and a comfortable position promote relaxation and sleep. Giving medication is outside the aide's scope, and frequent waking disrupts rest."
+    "explanation": "A back rub, a quiet and dim room, and a comfortable position promote relaxation and sleep. Caffeine and a lit, noisy room keep her awake, and giving medication is outside the aide's scope."
   },
   {
     "type": "CNA",
@@ -411,13 +411,13 @@
     "questionId": "CNA-ADL-030",
     "category": "activitiesDailyLiving",
     "question": "A resident grimaces and guards his left hip when turned, but says he is fine. The nurse aide should:",
-    "optionA": "Accept his answer and chart that he has no pain",
+    "optionA": "Report to the nurse that he has no pain",
     "optionB": "Give him acetaminophen from his drawer",
     "optionC": "Tell him to be brave during turning",
     "optionD": "Report the nonverbal pain signs to the nurse",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Facial grimacing and guarding are nonverbal signs of pain that should be reported even when the resident denies pain. The aide never gives medication, and dismissing pain is disrespectful."
+    "explanation": "Facial grimacing and guarding are nonverbal signs of pain that should be reported even when the resident denies pain. Reporting only his words would pass on wrong information, the aide never gives medication, and dismissing pain is disrespectful."
   },
   {
     "type": "CNA",
@@ -733,7 +733,7 @@
     "questionId": "CNA-BNS-021",
     "category": "basicNursingSkills",
     "question": "A resident wants to walk to the bathroom wearing only socks. The nurse aide should:",
-    "optionA": "Let the resident walk in socks carefully",
+    "optionA": "Help the resident walk in socks carefully",
     "optionB": "Have the resident walk barefoot instead",
     "optionC": "Tell the resident walking is not allowed",
     "optionD": "Help the resident put on non-skid shoes",
@@ -845,7 +845,7 @@
     "questionId": "CNA-BNS-029",
     "category": "basicNursingSkills",
     "question": "A resident standing at the sink says she feels faint and dizzy. The nurse aide should first:",
-    "optionA": "Walk her quickly back to bed",
+    "optionA": "Help her walk quickly back to bed",
     "optionB": "Help her sit or lie down",
     "optionC": "Give her a cup of hot coffee",
     "optionD": "Leave her to find the nurse",
@@ -875,11 +875,11 @@
     "question": "A resident's face suddenly droops on one side and her speech is slurred. The nurse aide should:",
     "optionA": "Let her rest and recheck in an hour",
     "optionB": "Give her water to help her speak",
-    "optionC": "Note it in the chart at shift end",
+    "optionC": "Report it to the nurse at shift end",
     "optionD": "Report it to the nurse immediately",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Face drooping, arm weakness, and speech difficulty are FAST signs of a stroke, and T means time to get help right away. Treatment works best when started quickly, and fluids are unsafe because swallowing may be impaired."
+    "explanation": "Face drooping, arm weakness, and speech difficulty are FAST signs of a stroke, and T means time to get help right away. Treatment works best when started quickly, so a report at the end of the shift is too late, and fluids are unsafe because swallowing may be impaired."
   },
   {
     "type": "CNA",
@@ -1042,12 +1042,12 @@
     "category": "basicNursingSkills",
     "question": "A nurse aide counts 28 breaths in one minute for a resting adult resident. The nurse aide should:",
     "optionA": "Report the rate to the nurse promptly",
-    "optionB": "Recount the rate again tomorrow morning",
+    "optionB": "Report it to the nurse at tomorrow's rounds",
     "optionC": "Ask the resident to breathe more slowly",
     "optionD": "Record it as normal and continue care",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Normal adult respirations are 12 to 20 breaths per minute, so 28 is abnormal and must be reported. Coaching the resident's breathing does not address the change and delays reporting."
+    "explanation": "Normal adult respirations are 12 to 20 breaths per minute, so 28 is abnormal and must be reported promptly, not the next day. Coaching the resident's breathing does not address the change and delays reporting."
   },
   {
     "type": "CNA",
@@ -1127,11 +1127,11 @@
     "question": "A resident rates her pain as 8 on a 0 to 10 scale. The nurse aide should:",
     "optionA": "Tell her the pain will pass soon",
     "optionB": "Give her an over-the-counter pain pill from the cart",
-    "optionC": "Record it at the end of the shift only",
+    "optionC": "Report it to the nurse at the end of the shift",
     "optionD": "Report the pain rating to the nurse",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Pain is treated as the fifth vital sign, and the resident's own rating is reported to the nurse promptly. Giving any medication, even over-the-counter, is outside the nurse aide's scope."
+    "explanation": "Pain is treated as the fifth vital sign, and the resident's own rating is reported to the nurse promptly so it can be treated, not hours later at the end of the shift. Giving any medication, even over-the-counter, is outside the nurse aide's scope."
   },
   {
     "type": "CNA",
@@ -1140,12 +1140,12 @@
     "category": "basicNursingSkills",
     "question": "A pulse oximeter on a resident breathing room air reads 88 percent. The nurse aide should:",
     "optionA": "Turn up the resident's oxygen flow rate",
-    "optionB": "Remove the oximeter and recheck tomorrow",
+    "optionB": "Report it to the nurse at shift change",
     "optionC": "Report the reading to the nurse right away",
     "optionD": "Record it as a normal reading",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Normal oxygen saturation is about 95 to 100 percent, so 88 percent needs prompt reporting. The nurse aide never starts or adjusts oxygen flow."
+    "explanation": "Normal oxygen saturation is about 95 to 100 percent, so 88 percent needs reporting right away, not at shift change. The nurse aide never starts or adjusts oxygen flow."
   },
   {
     "type": "CNA",
@@ -1195,7 +1195,7 @@
     "questionId": "CNA-BNS-054",
     "category": "basicNursingSkills",
     "question": "During morning care, a usually alert resident is hard to wake and newly confused. The nurse aide should:",
-    "optionA": "Note it in the chart at the end of shift",
+    "optionA": "Report it to the nurse at the end of shift",
     "optionB": "Call the resident's daughter to ask about it",
     "optionC": "Report it to the nurse immediately",
     "optionD": "Let the resident sleep a few more hours",
@@ -1223,13 +1223,13 @@
     "questionId": "CNA-BNS-056",
     "category": "basicNursingSkills",
     "question": "When should the nurse aide document care that was given to a resident?",
-    "optionA": "Before starting the care, to save time",
+    "optionA": "Right before starting the care",
     "optionB": "At the beginning of the shift for all care",
     "optionC": "Right after the care is completed",
     "optionD": "Only when a problem occurs during care",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The chart is a legal record, so the aide charts only what was actually done and observed, after doing it, using facility-approved abbreviations. Charting before care is falsification if the care does not happen."
+    "explanation": "The chart is a legal record, so the aide charts only what was actually done and observed, after doing it, using facility-approved abbreviations. Charting right before care is falsification if the care does not happen."
   },
   {
     "type": "CNA",
@@ -1337,11 +1337,11 @@
     "question": "A resident at risk for skin breakdown is eating only half of each meal. The nurse aide should:",
     "optionA": "Tell the resident to eat or get sores",
     "optionB": "Report the poor intake to the nurse",
-    "optionC": "Ignore it since skin care is separate",
+    "optionC": "Report it to the nurse only if a sore forms",
     "optionD": "Remove the tray and offer nothing else",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Adequate protein, calories, and fluids are needed to keep skin healthy and heal wounds, so poor intake is reported. Threatening the resident is abusive and violates resident rights."
+    "explanation": "Adequate protein, calories, and fluids are needed to keep skin healthy and heal wounds, so poor intake is reported now, before skin breaks down. Threatening the resident is abusive and violates resident rights."
   },
   {
     "type": "CNA",
@@ -1506,10 +1506,10 @@
     "optionA": "Throw the pills away in the trash",
     "optionB": "Give her the pills with a glass of water",
     "optionC": "Leave them and tell the nurse right away",
-    "optionD": "Put the pills in her top drawer",
+    "optionD": "Hand them to her and tell the nurse later",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Nurse aides do not give medications, do sterile dressing changes, or manage tube feedings; they follow the care plan and report. Handing over the pills is administering medication, which is outside the aide's scope."
+    "explanation": "Nurse aides do not give medications; they leave the pills where they are and tell the nurse at once. Handing over the pills, even with a report afterward, is administering medication, which is outside the aide's scope."
   },
   {
     "type": "CNA",
@@ -1756,7 +1756,7 @@
     "category": "emotionalMentalHealth",
     "question": "A resident shouts that the nurse aide is always late with his breakfast tray. The nurse aide should:",
     "optionA": "Explain firmly that he is being unreasonable",
-    "optionB": "Leave the room until he decides to apologize",
+    "optionB": "Stay away until he decides to apologize",
     "optionC": "Remind him that other residents need care too",
     "optionD": "Stay calm and listen to his concerns",
     "correctAnswer": "D",
@@ -1785,11 +1785,11 @@
     "question": "A resident who usually enjoys bingo now stays in bed, eats little, and says nothing matters anymore. The nurse aide should:",
     "optionA": "Tell her to cheer up and join the group",
     "optionB": "Ignore it because older adults often feel sad",
-    "optionC": "Ask the family to bring in her antidepressant pills",
+    "optionC": "Report it to the nurse if it lasts a month",
     "optionD": "Report these changes to the nurse",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Withdrawal, poor appetite, and hopeless statements are signs of depression that must be reported. Depression is not a normal part of aging, and aides never handle medications."
+    "explanation": "Withdrawal, poor appetite, and hopeless statements are signs of depression that must be reported when they are noticed, not after weeks of waiting. Depression is not a normal part of aging, and cheering her up does not treat it."
   },
   {
     "type": "CNA",
@@ -1799,7 +1799,7 @@
     "question": "A resident says quietly, \"My family would be better off if I were gone.\" The nurse aide should:",
     "optionA": "Change the subject to something more cheerful",
     "optionB": "Tell the resident not to talk that way",
-    "optionC": "Note the comment in the chart at the end of the shift",
+    "optionC": "Tell the nurse about it at the end of the shift",
     "optionD": "Stay with the resident and call the nurse at once",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1995,11 +1995,11 @@
     "question": "A resident with dementia strikes at the nurse aide during morning care. The nurse aide should:",
     "optionA": "Hold the resident's arms down firmly",
     "optionB": "Apply a vest restraint until he calms",
-    "optionC": "Finish the care quickly while he resists",
+    "optionC": "Stay close and finish the care quickly",
     "optionD": "Step back, stay calm, and call for help",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "With a combative resident the aide keeps a safe distance, stays calm, and gets help. Holding or restraining the resident is unsafe and requires an order."
+    "explanation": "With a combative resident the aide keeps a safe distance, stays calm, and gets help. Staying close to finish the care keeps the aide in reach and makes him more upset, and holding or restraining the resident is unsafe and requires an order."
   },
   {
     "type": "CNA",
@@ -2135,11 +2135,11 @@
     "question": "While doing range of motion on a resident's shoulder, the resident says it hurts. The nurse aide should:",
     "optionA": "Stop the exercise and report to the nurse",
     "optionB": "Push gently past the pain to stretch",
-    "optionC": "Finish the repetitions more quickly",
+    "optionC": "Finish the repetitions, then report it",
     "optionD": "Apply a heating pad and continue the exercise slowly",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Range of motion is done gently and never forced; the aide stops at the point of pain or resistance and reports it. Pushing past pain can injure the joint, and applying heat requires an order."
+    "explanation": "Range of motion is done gently and never forced; the aide stops at the point of pain or resistance and reports it. Finishing the set first or pushing past pain can injure the joint, and applying heat requires an order."
   },
   {
     "type": "CNA",
@@ -2427,7 +2427,7 @@
     "questionId": "CNA-RTS-010",
     "category": "clientRights",
     "question": "A new resident brings her own quilt, family photos, and a small lamp from home. The aide should:",
-    "optionA": "Ask her family to take the items back home",
+    "optionA": "Help her family take the items back home",
     "optionB": "Help her arrange the items safely in her room",
     "optionC": "Store everything in the facility's locked storage room",
     "optionD": "Replace them with standard facility linens and lamps",
@@ -2570,10 +2570,10 @@
     "optionA": "Share her own religious beliefs instead",
     "optionB": "Explain that religion is a private matter",
     "optionC": "Report the request to the nurse promptly",
-    "optionD": "Tell her clergy visits are not permitted",
+    "optionD": "Report it at the next care conference",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The aide supports spiritual needs by reporting requests for clergy so a visit can be arranged. Aides do not impose their own beliefs, and residents have the right to clergy visits."
+    "explanation": "The aide supports spiritual needs by reporting requests for clergy to the nurse promptly so a visit can be arranged; waiting for the next care conference delays it. Aides do not impose their own beliefs, and residents have the right to clergy visits."
   },
   {
     "type": "CNA",
@@ -2724,10 +2724,10 @@
     "optionA": "Remove the tray and say nothing about it",
     "optionB": "Watch the resident and report any problems",
     "optionC": "Report the error to the nurse right away",
-    "optionD": "Write it in her notes at the end of shift",
+    "optionD": "Report it to the nurse at the end of the shift",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Accountability means reporting your own errors honestly and promptly so the nurse can assess the resident for choking or aspiration. Waiting for problems or hiding the mistake puts the resident at risk."
+    "explanation": "Accountability means reporting your own errors honestly and right away so the nurse can assess the resident for choking or aspiration. Waiting for problems, waiting until the end of the shift, or hiding the mistake puts the resident at risk."
   },
   {
     "type": "CNA",
@@ -2750,7 +2750,7 @@
     "category": "healthCareTeam",
     "question": "A resident asks the aide whether she is allowed to attend her own care conference. The aide should tell her:",
     "optionA": "She has the right to attend and help plan",
-    "optionB": "Only family members may attend the conference",
+    "optionB": "She has no right to attend, only family",
     "optionC": "Only staff attend, but she will get a summary",
     "optionD": "She may attend only if her doctor approves",
     "correctAnswer": "A",

@@ -117,13 +117,13 @@
     "questionId": "CNA-ADL-009",
     "category": "activitiesDailyLiving",
     "question": "Una residente con diabetes le pide al auxiliar de enfermería que le corte las uñas de los pies, que están largas y gruesas. ¿Qué debe hacer el auxiliar?",
-    "optionA": "Cortarlas en línea recta con un cortaúñas",
+    "optionA": "Cortarlas en línea recta y luego avisar a la enfermera",
     "optionB": "Remojarle los pies y luego cortarlas cortas",
     "optionC": "Cortar las esquinas para evitar uñas encarnadas",
     "optionD": "Avisar a la enfermera, quien organiza el corte",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La diabetes causa mala circulación y cicatrización lenta, por lo que un pequeño corte puede convertirse en una infección o úlcera grave. Los auxiliares de enfermería no cortan las uñas de los pies a residentes con diabetes; lo hace una enfermera o un podólogo."
+    "explanation": "La diabetes causa mala circulación y cicatrización lenta, por lo que un pequeño corte puede convertirse en una infección o úlcera grave. Los auxiliares de enfermería no cortan las uñas de los pies a residentes con diabetes, ni siquiera en línea recta; lo hace una enfermera o un podólogo."
   },
   {
     "type": "CNA",
@@ -148,10 +148,10 @@
     "optionA": "El brazo derecho primero",
     "optionB": "El brazo izquierdo primero",
     "optionC": "Ambos brazos al mismo tiempo",
-    "optionD": "El brazo más cercano al auxiliar",
+    "optionD": "El brazo derecho al final",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Se viste primero el lado débil o afectado y se desviste al final, porque el brazo débil necesita más espacio para entrar en la manga. El lado fuerte puede doblarse y meterse en la manga después."
+    "explanation": "Se viste primero el lado débil o afectado y se desviste al final, porque el brazo débil necesita más espacio para entrar en la manga. Aquí el lado débil es el derecho, así que entra primero, no al final; el lado fuerte izquierdo puede doblarse y meterse en la manga después."
   },
   {
     "type": "CNA",
@@ -176,10 +176,10 @@
     "optionA": "Sentarse a la altura de sus ojos y ofrecer bocados pequeños",
     "optionB": "Quedarse de pie junto a la cama para terminar más rápido",
     "optionC": "Dar cucharadas grandes para ahorrar tiempo",
-    "optionD": "Dar todos los líquidos después de terminar los sólidos",
+    "optionD": "Quedarse de pie frente a él y ofrecer bocados grandes",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Sentarse a la altura de los ojos, ofrecer bocados pequeños y alternar sólidos con líquidos permite que el residente trague con seguridad y favorece su dignidad. Estar de pie frente al residente y apresurarlo con bocados grandes aumenta el riesgo de atragantamiento."
+    "explanation": "Sentarse a la altura de los ojos, ofrecer bocados pequeños y alternar sólidos con líquidos permite que el residente trague con seguridad y favorece su dignidad. Quedarse de pie frente al residente y ofrecerle bocados grandes aumenta el riesgo de atragantamiento."
   },
   {
     "type": "CNA",
@@ -216,12 +216,12 @@
     "category": "activitiesDailyLiving",
     "question": "Una residente con líquidos espesados tipo néctar le pide al auxiliar de enfermería un vaso de agua normal. ¿Qué debe hacer el auxiliar?",
     "optionA": "Darle agua normal porque es más segura",
-    "optionB": "Darle un sorbito de agua normal con popote",
+    "optionB": "Darle agua normal y luego informar a la enfermera",
     "optionC": "Ofrecerle agua espesada e informar a la enfermera",
     "optionD": "Negarse a darle cualquier líquido",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los líquidos espesados se ordenan porque los residentes con problemas para tragar aspiran fácilmente los líquidos ligeros. El auxiliar sigue la orden de dieta, ofrece la forma espesada e informa la petición; un popote no hace seguros los líquidos ligeros."
+    "explanation": "Los líquidos espesados se ordenan porque los residentes con problemas para tragar aspiran fácilmente los líquidos ligeros. El auxiliar sigue la orden de dieta, ofrece la forma espesada e informa la petición; darle primero agua ligera, aunque después se informe, es un riesgo de aspiración."
   },
   {
     "type": "CNA",
@@ -274,10 +274,10 @@
     "optionA": "Explicarle el límite y avisar a la enfermera",
     "optionB": "Traerle el agua porque los residentes tienen derechos",
     "optionC": "Esconderle la jarra de agua a la residente",
-    "optionD": "Darle trocitos de hielo sin medirlos",
+    "optionD": "Darle el agua y decirle a la enfermera la cantidad",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "La restricción de líquidos es una orden médica, a menudo por problemas del corazón o de los riñones, así que el auxiliar la explica con amabilidad e informa la petición. Los trocitos de hielo cuentan como ingesta de líquidos y deben medirse; a los residentes que necesitan más líquidos, en cambio, se les ofrecen bebidas con frecuencia."
+    "explanation": "La restricción de líquidos es una orden médica, a menudo por problemas del corazón o de los riñones, así que el auxiliar la explica con amabilidad e informa la petición. Darle el agua extra no cumple la orden aunque después se informe la cantidad."
   },
   {
     "type": "CNA",
@@ -316,10 +316,10 @@
     "optionA": "Restringir todos los líquidos después del desayuno",
     "optionB": "Ofrecerle ir al baño con un horario regular",
     "optionC": "Dejarle puesto un pañal para adultos todo el día",
-    "optionD": "Esperar a que ella pida que la lleven al baño",
+    "optionD": "Ofrecerle ir al baño solo cuando ella lo pida",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Un horario regular para ir al baño (por ejemplo, cada 2 horas y después de las comidas) ayuda a prevenir la incontinencia y preserva la dignidad. Restringir los líquidos causa deshidratación y orina concentrada que irrita la vejiga."
+    "explanation": "Un horario regular para ir al baño (por ejemplo, cada 2 horas y después de las comidas) ayuda a prevenir la incontinencia y preserva la dignidad; esperar a que lo pida no atiende el patrón. Restringir los líquidos causa deshidratación y orina concentrada que irrita la vejiga."
   },
   {
     "type": "CNA",
@@ -369,13 +369,13 @@
     "questionId": "CNA-ADL-027",
     "category": "activitiesDailyLiving",
     "question": "Una residente dice que le arde al orinar, y su orina está turbia y huele mal. ¿Qué debe hacer el auxiliar de enfermería?",
-    "optionA": "Darle jugo de arándano y revisar de nuevo mañana",
+    "optionA": "Darle jugo de arándano y avisar a la enfermera mañana",
     "optionB": "Tomar ella misma una muestra estéril de orina",
     "optionC": "Darle un analgésico de venta libre",
     "optionD": "Informar estas observaciones a la enfermera",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El ardor, la orina turbia o con mal olor, la frecuencia y la confusión nueva son señales de infección urinaria que deben informarse de inmediato. Dar medicamentos o hacer procedimientos estériles no corresponde a las funciones del auxiliar."
+    "explanation": "El ardor, la orina turbia o con mal olor, la frecuencia y la confusión nueva son señales de infección urinaria que deben informarse de inmediato, no dejarse para el día siguiente. Dar jugo o medicamentos o hacer procedimientos estériles no corresponde a las funciones del auxiliar."
   },
   {
     "type": "CNA",
@@ -400,10 +400,10 @@
     "optionA": "Encender la luz del techo y la televisión",
     "optionB": "Darle una pastilla para dormir del carrito de medicamentos",
     "optionC": "Ofrecerle un masaje de espalda y bajar la luz",
-    "optionD": "Despertarla cada hora para ver que esté bien",
+    "optionD": "Ofrecerle café y dejar la televisión encendida",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un masaje de espalda, un cuarto tranquilo y con poca luz y una posición cómoda favorecen la relajación y el sueño. Dar medicamentos no corresponde a las funciones del auxiliar, y despertarla con frecuencia interrumpe el descanso."
+    "explanation": "Un masaje de espalda, un cuarto tranquilo y con poca luz y una posición cómoda favorecen la relajación y el sueño. La cafeína y un cuarto iluminado y con ruido la mantienen despierta, y dar medicamentos no corresponde a las funciones del auxiliar."
   },
   {
     "type": "CNA",
@@ -411,13 +411,13 @@
     "questionId": "CNA-ADL-030",
     "category": "activitiesDailyLiving",
     "question": "Un residente hace gestos de dolor y protege su cadera izquierda cuando lo giran, pero dice que está bien. ¿Qué debe hacer el auxiliar de enfermería?",
-    "optionA": "Aceptar su respuesta y anotar que no tiene dolor",
+    "optionA": "Informar a la enfermera que no tiene dolor",
     "optionB": "Darle acetaminofén de su cajón",
     "optionC": "Decirle que sea valiente al girarlo",
     "optionD": "Informar a la enfermera las señales no verbales de dolor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los gestos de dolor y proteger una parte del cuerpo son señales no verbales de dolor que deben informarse aunque el residente niegue el dolor. El auxiliar nunca da medicamentos, y restarle importancia al dolor es una falta de respeto."
+    "explanation": "Los gestos de dolor y proteger una parte del cuerpo son señales no verbales de dolor que deben informarse aunque el residente niegue el dolor. Informar solo lo que dice pasaría información errónea, el auxiliar nunca da medicamentos, y restarle importancia al dolor es una falta de respeto."
   },
   {
     "type": "CNA",
@@ -733,7 +733,7 @@
     "questionId": "CNA-BNS-021",
     "category": "basicNursingSkills",
     "question": "Un residente quiere caminar al baño solo con calcetines. ¿Qué debe hacer el auxiliar de enfermería?",
-    "optionA": "Dejar que camine con calcetines con cuidado",
+    "optionA": "Ayudarle a caminar con calcetines con cuidado",
     "optionB": "Pedirle que mejor camine descalzo",
     "optionC": "Decirle que no se le permite caminar",
     "optionD": "Ayudarle a ponerse zapatos antideslizantes",
@@ -845,7 +845,7 @@
     "questionId": "CNA-BNS-029",
     "category": "basicNursingSkills",
     "question": "Una residente de pie junto al lavamanos dice que se siente débil y mareada. ¿Qué debe hacer primero el auxiliar de enfermería?",
-    "optionA": "Llevarla caminando rápido a la cama",
+    "optionA": "Ayudarla a caminar rápido de vuelta a la cama",
     "optionB": "Ayudarla a sentarse o acostarse",
     "optionC": "Darle una taza de café caliente",
     "optionD": "Dejarla sola para ir a buscar a la enfermera",
@@ -875,11 +875,11 @@
     "question": "A una residente de repente se le cae un lado de la cara y arrastra las palabras al hablar. ¿Qué debe hacer el auxiliar de enfermería?",
     "optionA": "Dejarla descansar y revisarla en una hora",
     "optionB": "Darle agua para ayudarla a hablar",
-    "optionC": "Anotarlo en el expediente al final del turno",
+    "optionC": "Informarlo a la enfermera al final del turno",
     "optionD": "Informarlo a la enfermera de inmediato",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La cara caída, la debilidad del brazo y la dificultad para hablar son las señales FAST de un derrame cerebral, y la T (time) significa que es hora de buscar ayuda de inmediato. El tratamiento funciona mejor si empieza pronto, y los líquidos no son seguros porque puede tener dificultad para tragar."
+    "explanation": "La cara caída, la debilidad del brazo y la dificultad para hablar son las señales FAST de un derrame cerebral, y la T (time) significa que es hora de buscar ayuda de inmediato. El tratamiento funciona mejor si empieza pronto, así que informarlo al final del turno es demasiado tarde, y los líquidos no son seguros porque puede tener dificultad para tragar."
   },
   {
     "type": "CNA",
@@ -1042,12 +1042,12 @@
     "category": "basicNursingSkills",
     "question": "Un auxiliar de enfermería cuenta 28 respiraciones en un minuto en un residente adulto en reposo. ¿Qué debe hacer el auxiliar?",
     "optionA": "Informar la frecuencia a la enfermera de inmediato",
-    "optionB": "Volver a contarla mañana por la mañana",
+    "optionB": "Informarlo a la enfermera en la ronda de mañana",
     "optionC": "Pedirle al residente que respire más despacio",
     "optionD": "Anotarla como normal y continuar la atención",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "La frecuencia respiratoria normal de un adulto es de 12 a 20 respiraciones por minuto, así que 28 es anormal y debe informarse. Guiar la respiración del residente no atiende el cambio y retrasa el informe."
+    "explanation": "La frecuencia respiratoria normal de un adulto es de 12 a 20 respiraciones por minuto, así que 28 es anormal y debe informarse de inmediato, no al día siguiente. Guiar la respiración del residente no atiende el cambio y retrasa el informe."
   },
   {
     "type": "CNA",
@@ -1127,11 +1127,11 @@
     "question": "Una residente califica su dolor con un 8 en una escala de 0 a 10. ¿Qué debe hacer el auxiliar de enfermería?",
     "optionA": "Decirle que el dolor pasará pronto",
     "optionB": "Darle una pastilla para el dolor de venta libre del carrito",
-    "optionC": "Anotarlo solo al final del turno",
+    "optionC": "Informarlo a la enfermera al final del turno",
     "optionD": "Informar la calificación del dolor a la enfermera",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El dolor se considera el quinto signo vital, y la calificación que da la propia residente se informa a la enfermera de inmediato. Dar cualquier medicamento, incluso de venta libre, no corresponde a las funciones del auxiliar de enfermería."
+    "explanation": "El dolor se considera el quinto signo vital, y la calificación que da la propia residente se informa a la enfermera de inmediato para que se pueda tratar, no horas después al final del turno. Dar cualquier medicamento, incluso de venta libre, no corresponde a las funciones del auxiliar de enfermería."
   },
   {
     "type": "CNA",
@@ -1140,12 +1140,12 @@
     "category": "basicNursingSkills",
     "question": "Un oxímetro de pulso en un residente que respira aire ambiente marca 88 por ciento. ¿Qué debe hacer el auxiliar de enfermería?",
     "optionA": "Subir el flujo de oxígeno del residente",
-    "optionB": "Quitar el oxímetro y revisar de nuevo mañana",
+    "optionB": "Informarlo a la enfermera en el cambio de turno",
     "optionC": "Informar la lectura a la enfermera de inmediato",
     "optionD": "Anotarla como una lectura normal",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La saturación de oxígeno normal es de alrededor de 95 a 100 por ciento, así que 88 por ciento debe informarse de inmediato. El auxiliar de enfermería nunca inicia ni ajusta el flujo de oxígeno."
+    "explanation": "La saturación de oxígeno normal es de alrededor de 95 a 100 por ciento, así que 88 por ciento debe informarse de inmediato, no en el cambio de turno. El auxiliar de enfermería nunca inicia ni ajusta el flujo de oxígeno."
   },
   {
     "type": "CNA",
@@ -1195,7 +1195,7 @@
     "questionId": "CNA-BNS-054",
     "category": "basicNursingSkills",
     "question": "Durante el cuidado de la mañana, un residente que suele estar alerta cuesta trabajo despertarlo y está confundido, lo cual es nuevo. ¿Qué debe hacer el auxiliar de enfermería?",
-    "optionA": "Anotarlo en el expediente al final del turno",
+    "optionA": "Informarlo a la enfermera al final del turno",
     "optionB": "Llamar a la hija del residente para preguntarle",
     "optionC": "Informarlo a la enfermera de inmediato",
     "optionD": "Dejar que el residente duerma unas horas más",
@@ -1223,13 +1223,13 @@
     "questionId": "CNA-BNS-056",
     "category": "basicNursingSkills",
     "question": "¿Cuándo debe documentar el auxiliar de enfermería la atención que le dio a un residente?",
-    "optionA": "Antes de dar la atención, para ahorrar tiempo",
+    "optionA": "Justo antes de empezar la atención",
     "optionB": "Al inicio del turno, toda la atención",
     "optionC": "Justo después de terminar la atención",
     "optionD": "Solo cuando surge un problema durante la atención",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El expediente es un documento legal, así que el auxiliar anota solo lo que realmente hizo y observó, después de hacerlo, con las abreviaturas aprobadas por el centro. Anotar antes de dar la atención es falsificación si la atención no se da."
+    "explanation": "El expediente es un documento legal, así que el auxiliar anota solo lo que realmente hizo y observó, después de hacerlo, con las abreviaturas aprobadas por el centro. Anotar justo antes de dar la atención es falsificación si la atención no se da."
   },
   {
     "type": "CNA",
@@ -1337,11 +1337,11 @@
     "question": "Una residente con riesgo de lesiones en la piel come solo la mitad de cada comida. ¿Qué debe hacer el auxiliar de enfermería?",
     "optionA": "Decirle que coma o le saldrán llagas",
     "optionB": "Informar a la enfermera que come poco",
-    "optionC": "Ignorarlo porque el cuidado de la piel es aparte",
+    "optionC": "Informarlo a la enfermera solo si aparece una llaga",
     "optionD": "Retirar la charola y no ofrecerle nada más",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Se necesitan suficientes proteínas, calorías y líquidos para mantener la piel sana y que sanen las heridas, así que comer poco se informa. Amenazar a la residente es maltrato y viola los derechos del residente."
+    "explanation": "Se necesitan suficientes proteínas, calorías y líquidos para mantener la piel sana y que sanen las heridas, así que comer poco se informa ahora, antes de que la piel se dañe. Amenazar a la residente es maltrato y viola los derechos del residente."
   },
   {
     "type": "CNA",
@@ -1506,10 +1506,10 @@
     "optionA": "Tirar las pastillas a la basura",
     "optionB": "Darle las pastillas con un vaso de agua",
     "optionC": "Dejarlas ahí y avisar a la enfermera de inmediato",
-    "optionD": "Guardar las pastillas en el primer cajón",
+    "optionD": "Dárselas y avisar a la enfermera después",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los auxiliares de enfermería no dan medicamentos, no hacen curaciones estériles ni manejan alimentaciones por sonda; siguen el plan de cuidados e informan. Pasarle las pastillas es administrar medicamentos, lo cual no corresponde a las funciones del auxiliar."
+    "explanation": "Los auxiliares de enfermería no dan medicamentos; dejan las pastillas donde están y avisan a la enfermera de inmediato. Pasarle las pastillas, aunque luego se informe, es administrar medicamentos, lo cual no corresponde a las funciones del auxiliar."
   },
   {
     "type": "CNA",
@@ -1756,7 +1756,7 @@
     "category": "emotionalMentalHealth",
     "question": "Un residente le grita al auxiliar de enfermería que siempre le trae tarde la charola del desayuno. ¿Qué debe hacer el auxiliar?",
     "optionA": "Explicarle con firmeza que no está siendo razonable",
-    "optionB": "Salir del cuarto hasta que decida disculparse",
+    "optionB": "Mantenerse lejos hasta que decida disculparse",
     "optionC": "Recordarle que otros residentes también necesitan atención",
     "optionD": "Mantener la calma y escuchar sus inquietudes",
     "correctAnswer": "D",
@@ -1785,11 +1785,11 @@
     "question": "Una residente a quien suele gustarle el bingo ahora se queda en cama, come poco y dice que ya nada importa. ¿Qué debe hacer el auxiliar de enfermería?",
     "optionA": "Decirle que se anime y se una al grupo",
     "optionB": "Ignorarlo porque los adultos mayores suelen sentirse tristes",
-    "optionC": "Pedirle a la familia que traiga sus pastillas antidepresivas",
+    "optionC": "Informarlo a la enfermera si dura un mes",
     "optionD": "Informar estos cambios a la enfermera",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El aislamiento, la falta de apetito y las frases de desesperanza son señales de depresión que deben informarse. La depresión no es parte normal del envejecimiento, y los auxiliares nunca manejan medicamentos."
+    "explanation": "El aislamiento, la falta de apetito y las frases de desesperanza son señales de depresión que deben informarse en cuanto se notan, no después de semanas de espera. La depresión no es parte normal del envejecimiento, y animarla no la trata."
   },
   {
     "type": "CNA",
@@ -1799,7 +1799,7 @@
     "question": "Un residente dice en voz baja: \"Mi familia estaría mejor si yo ya no estuviera\". ¿Qué debe hacer el auxiliar de enfermería?",
     "optionA": "Cambiar el tema por algo más alegre",
     "optionB": "Decirle que no hable así",
-    "optionC": "Anotar el comentario en el expediente al final del turno",
+    "optionC": "Decírselo a la enfermera al final del turno",
     "optionD": "Quedarse con el residente y llamar a la enfermera de inmediato",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1995,11 +1995,11 @@
     "question": "Un residente con demencia golpea al auxiliar de enfermería durante el cuidado de la mañana. ¿Qué debe hacer el auxiliar?",
     "optionA": "Sujetarle los brazos con firmeza",
     "optionB": "Ponerle un chaleco de restricción hasta que se calme",
-    "optionC": "Terminar la atención rápido mientras él se resiste",
+    "optionC": "Quedarse cerca y terminar la atención rápido",
     "optionD": "Retirarse un poco, mantener la calma y pedir ayuda",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Con un residente agresivo, el auxiliar mantiene una distancia segura, conserva la calma y busca ayuda. Sujetar o restringir al residente no es seguro y requiere una orden."
+    "explanation": "Con un residente agresivo, el auxiliar mantiene una distancia segura, conserva la calma y busca ayuda. Quedarse cerca para terminar la atención deja al auxiliar a su alcance y lo altera más, y sujetar o restringir al residente no es seguro y requiere una orden."
   },
   {
     "type": "CNA",
@@ -2135,11 +2135,11 @@
     "question": "Al hacer el rango de movimiento del hombro de un residente, este dice que le duele. ¿Qué debe hacer el auxiliar de enfermería?",
     "optionA": "Suspender el ejercicio e informar a la enfermera",
     "optionB": "Empujar suavemente más allá del dolor para estirar",
-    "optionC": "Terminar las repeticiones más rápido",
+    "optionC": "Terminar las repeticiones y luego informarlo",
     "optionD": "Aplicar una almohadilla térmica y seguir el ejercicio despacio",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El rango de movimiento se hace con suavidad y nunca se fuerza; el auxiliar se detiene en el punto de dolor o resistencia y lo informa. Forzar más allá del dolor puede lesionar la articulación, y aplicar calor requiere una orden."
+    "explanation": "El rango de movimiento se hace con suavidad y nunca se fuerza; el auxiliar se detiene en el punto de dolor o resistencia y lo informa. Terminar primero la serie o forzar más allá del dolor puede lesionar la articulación, y aplicar calor requiere una orden."
   },
   {
     "type": "CNA",
@@ -2427,7 +2427,7 @@
     "questionId": "CNA-RTS-010",
     "category": "clientRights",
     "question": "Una nueva residente trae de su casa su propia colcha, fotos familiares y una lámpara pequeña. ¿Qué debe hacer el auxiliar?",
-    "optionA": "Pedirle a su familia que se lleve los objetos a casa",
+    "optionA": "Ayudar a su familia a llevarse los objetos a casa",
     "optionB": "Ayudarla a acomodar los objetos de forma segura en su cuarto",
     "optionC": "Guardar todo en el almacén bajo llave del centro",
     "optionD": "Cambiarlos por la ropa de cama y las lámparas comunes del centro",
@@ -2570,10 +2570,10 @@
     "optionA": "Compartirle mejor sus propias creencias religiosas",
     "optionB": "Explicarle que la religión es un asunto privado",
     "optionC": "Informar la petición a la enfermera de inmediato",
-    "optionD": "Decirle que no se permiten las visitas de religiosos",
+    "optionD": "Informarlo en la próxima conferencia de cuidados",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El auxiliar apoya las necesidades espirituales informando las peticiones de visitas de religiosos para que se pueda organizar una. Los auxiliares no imponen sus propias creencias, y los residentes tienen derecho a recibir visitas de religiosos."
+    "explanation": "El auxiliar apoya las necesidades espirituales informando a la enfermera de inmediato las peticiones de visitas de religiosos para que se pueda organizar una; esperar a la próxima conferencia de cuidados la retrasa. Los auxiliares no imponen sus propias creencias, y los residentes tienen derecho a recibir visitas de religiosos."
   },
   {
     "type": "CNA",
@@ -2724,10 +2724,10 @@
     "optionA": "Retirar la charola y no decir nada",
     "optionB": "Vigilar a la residente e informar si hay problemas",
     "optionC": "Informar el error a la enfermera de inmediato",
-    "optionD": "Escribirlo en sus notas al final del turno",
+    "optionD": "Informarlo a la enfermera al final del turno",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Ser responsable significa informar los propios errores con honestidad y de inmediato para que la enfermera valore a la residente por atragantamiento o aspiración. Esperar a que haya problemas u ocultar el error pone en riesgo a la residente."
+    "explanation": "Ser responsable significa informar los propios errores con honestidad y de inmediato para que la enfermera valore a la residente por atragantamiento o aspiración. Esperar a que haya problemas, esperar al final del turno u ocultar el error pone en riesgo a la residente."
   },
   {
     "type": "CNA",
@@ -2750,7 +2750,7 @@
     "category": "healthCareTeam",
     "question": "Una residente le pregunta a la auxiliar si se le permite asistir a su propia conferencia de cuidados. ¿Qué debe decirle la auxiliar?",
     "optionA": "Que tiene derecho a asistir y ayudar a planear",
-    "optionB": "Que solo los familiares pueden asistir a la conferencia",
+    "optionB": "Que no tiene derecho a asistir, solo la familia",
     "optionC": "Que solo asiste el personal, pero recibirá un resumen",
     "optionD": "Que solo puede asistir si su médico lo aprueba",
     "correctAnswer": "A",

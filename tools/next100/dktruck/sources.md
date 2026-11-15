@@ -128,5 +128,6 @@ next-morning alcohol, coffee, 0.2/0.5/0.8 per mille effects, alcohol and drug ri
 10 % speed and 45 % risk, seat belts at 10 km/h, load 1 m behind, three-lane motorway lanes for
 cars with caravans, tractors' red triangle and 30/40 km/h. The EU driving-time and tachograph
 rules are the same law as in `fitruck`, `hugki` and `mtcpc`; here they are asked as Danish
-scenarios (Wednesday after two 10-hour days, the 40 hours left after a 50-hour week, the Saturday
-deadline, the 30-hour compensation, ferry rest), not as copies of those stems.
+scenarios (one 10-hour day left after Monday, the 40 hours left after a 50-hour week, the Tuesday
+22:00 deadline, the 30-hour compensation, the 8-hour ferry rule), not as copies of those stems, and
+stems that came out close to `uklgv`, `iedttcv`, `rocpi`, `mtcpc` or `dkmoto` were rewritten.

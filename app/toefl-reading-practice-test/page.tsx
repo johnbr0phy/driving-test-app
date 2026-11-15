@@ -130,7 +130,7 @@ export default function ToeflReadingLandingPage() {
           <ExamLandingHero
             dashboardHref="/toefl-reading/dashboard"
             shortName="TOEFL Reading"
-            subtitle="Two full TOEFL iBT Reading sections in the 2026 format and 194 original questions. Reading only. No account needed."
+            subtitle="Two full TOEFL iBT Reading sections in the 2026 format and 194 original questions. Reading only. Free to start, no account needed."
             shots={{ mobile: "/landing/toeflread-mobile.png", desktop: "/landing/toeflread-desktop.png" }}
           />
         </div>

@@ -176,10 +176,10 @@
     "optionA": "Report the loss to SIRA",
     "optionB": "Make a copy from a photo",
     "optionC": "Borrow a colleague's card",
-    "optionD": "Wait for the renewal date",
+    "optionD": "Report it at renewal",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Art. 17 obliges the holder to inform SIRA if the licence is lost, stolen or damaged. Using another person's card is never allowed."
+    "explanation": "Art. 17 obliges the holder to inform SIRA if the licence is lost, stolen or damaged, which means now, not when the licence comes up for renewal. Using another person's card is never allowed."
   },
   {
     "type": "AESIRA",
@@ -344,10 +344,10 @@
     "optionA": "Protect people and property",
     "optionB": "Enforce traffic fines on roads",
     "optionC": "Fully investigate crimes",
-    "optionD": "Replace Dubai Police patrols",
+    "optionD": "Arrest people for the police",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A security guard protects lives and property by deterring, detecting and reporting. Investigating crimes and enforcing the law belong to Dubai Police."
+    "explanation": "A security guard protects lives and property by deterring, detecting and reporting. Investigating crimes, arresting people and enforcing the law belong to Dubai Police."
   },
   {
     "type": "AESIRA",
@@ -385,11 +385,11 @@
     "question": "A guard is due to be relieved at 7 a.m. but the relief guard has not arrived. What should the guard do?",
     "optionA": "Lock the site and go home",
     "optionB": "Leave the keys at reception",
-    "optionC": "Ask a cleaner to cover the post",
+    "optionC": "Call the supervisor, then leave",
     "optionD": "Stay and call the supervisor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A post must not be left unguarded. The guard stays and tells the supervisor, who arranges cover. An unlicensed person cannot stand in."
+    "explanation": "A post must not be left unguarded. The guard stays and tells the supervisor, who arranges cover; calling and then leaving still leaves the post empty. An unlicensed person cannot stand in."
   },
   {
     "type": "AESIRA",
@@ -400,10 +400,10 @@
     "optionA": "Decline it and tell the supervisor",
     "optionB": "Accept it if under a set value",
     "optionC": "Accept and share with colleagues",
-    "optionD": "Accept but log it as lost property",
+    "optionD": "Accept it, tell the supervisor",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Gifts given for special treatment create a conflict of interest and breach integrity rules. The guard declines and reports it so it is on record."
+    "explanation": "Gifts given for special treatment create a conflict of interest and breach integrity rules. The guard declines and reports it so it is on record; telling the supervisor does not make keeping the watch acceptable."
   },
   {
     "type": "AESIRA",
@@ -440,12 +440,12 @@
     "category": "aesiraRole",
     "question": "A guard finds a colleague asleep in the control room. What is the right action?",
     "optionA": "Take a photo and post it",
-    "optionB": "Let them sleep until dawn",
+    "optionB": "Report it, let them sleep",
     "optionC": "Cover for them in the log",
     "optionD": "Wake them and report it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Sleeping on duty leaves the site unprotected. The guard wakes the colleague and reports to the supervisor; covering it up makes the guard part of the breach."
+    "explanation": "Sleeping on duty leaves the site unprotected. The guard wakes the colleague and reports to the supervisor; reporting while leaving them asleep keeps the post unguarded, and covering it up makes the guard part of the breach."
   },
   {
     "type": "AESIRA",
@@ -552,12 +552,12 @@
     "category": "aesiraRole",
     "question": "A guard is on a 12-hour shift and feels very tired. What is the safest action?",
     "optionA": "Sleep briefly in the car park",
-    "optionB": "Drink energy drinks all night",
+    "optionB": "Tell the supervisor at shift end",
     "optionC": "Leave the post for a walk to wake up",
     "optionD": "Tell the supervisor straight away",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Fatigue reduces alertness. The supervisor can arrange a break or relief; sleeping or leaving the post on one's own decision leaves the site unguarded."
+    "explanation": "Fatigue reduces alertness. The supervisor can arrange a break or relief if told now; waiting until the shift ends defeats the point, and sleeping or leaving the post on one's own decision leaves the site unguarded."
   },
   {
     "type": "AESIRA",
@@ -566,12 +566,12 @@
     "category": "aesiraRole",
     "question": "A guard notices a recurring fault: a fire exit door at a labour accommodation no longer latches. The guard should:",
     "optionA": "Log it and report it",
-    "optionB": "Tie it shut with rope",
+    "optionB": "Tie it shut, then report it",
     "optionC": "Ignore it as a maintenance job",
     "optionD": "Wedge it open for airflow",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Faults found on patrol are logged and reported until fixed. Tying or wedging a fire door creates a danger in a fire."
+    "explanation": "Faults found on patrol are logged and reported until fixed. Tying or wedging a fire door creates a danger in a fire, even if it is reported afterwards."
   },
   {
     "type": "AESIRA",
@@ -650,12 +650,12 @@
     "category": "aesiraRole",
     "question": "A guard notices a manager's assistant regularly removing boxes at midnight. The guard should:",
     "optionA": "Ignore it as staff business",
-    "optionB": "Confront and search them",
+    "optionB": "Search them, then report it",
     "optionC": "Record it and report it",
     "optionD": "Post about it on social media",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Unusual patterns are reported with facts (time, what was seen) to the supervisor. Searching without consent or policy is not the guard's right."
+    "explanation": "Unusual patterns are reported with facts (time, what was seen) to the supervisor. Searching without consent or policy is not the guard's right, and reporting it afterwards does not make the search lawful."
   },
   {
     "type": "AESIRA",
@@ -678,12 +678,12 @@
     "category": "aesiraAccess",
     "question": "What is the main purpose of access control at an office tower entrance?",
     "optionA": "Only authorised people get in",
-    "optionB": "Counting daily visitor footfall",
+    "optionB": "Count people going in",
     "optionC": "Selling parking tickets",
     "optionD": "Checking visitors' dress codes",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Access control lets authorised people and vehicles in and keeps others out, and records who entered and when."
+    "explanation": "Access control lets authorised people and vehicles in and keeps others out, and records who entered and when. Counting visitors is a side effect, not the purpose."
   },
   {
     "type": "AESIRA",
@@ -764,10 +764,10 @@
     "optionA": "Let them in if they insist firmly",
     "optionB": "Keep the card and say nothing",
     "optionC": "Hold entry and call a supervisor",
-    "optionD": "Wave them in to avoid delay",
+    "optionD": "Wave them in, call a supervisor",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A mismatched ID may be a borrowed or stolen card. The guard holds entry and escalates. Confiscating cards without authority is not appropriate."
+    "explanation": "A mismatched ID may be a borrowed or stolen card. The guard holds entry and escalates; letting the person in first defeats the check. Confiscating cards without authority is not appropriate."
   },
   {
     "type": "AESIRA",
@@ -904,10 +904,10 @@
     "optionA": "Note details and report it",
     "optionB": "Seize the camera by force",
     "optionC": "Ignore it as normal tourism",
-    "optionD": "Chase the person away",
+    "optionD": "Chase them off, then report",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This can be hostile reconnaissance. The guard notes the person, time and vehicle and reports it to the supervisor and, if needed, the police."
+    "explanation": "This can be hostile reconnaissance. The guard notes the person, time and vehicle and reports it to the supervisor and, if needed, the police. Chasing the person away first loses the details the report needs."
   },
   {
     "type": "AESIRA",
@@ -973,11 +973,11 @@
     "question": "While searching a bag at an event, a guard finds an item that may be illegal. What should the guard do?",
     "optionA": "Take it and let them go in",
     "optionB": "Hold entry and call the police",
-    "optionC": "Destroy the item on the spot",
+    "optionC": "Let them in, then call police",
     "optionD": "Let the person in without fuss",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Guards are not police. Suspected illegal items are referred to Dubai Police; the guard records details and stops the person entering."
+    "explanation": "Guards are not police. Suspected illegal items are referred to Dubai Police; the guard records details and stops the person entering rather than letting them in first."
   },
   {
     "type": "AESIRA",
@@ -1002,7 +1002,7 @@
     "optionA": "To store pallets there",
     "optionB": "To lock them at night",
     "optionC": "To use them as smoking areas",
-    "optionD": "People must escape quickly",
+    "optionD": "Everyone must escape quickly",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Blocked exits cost lives in a fire. Any obstruction is cleared if safe or reported straight away."
@@ -1112,12 +1112,12 @@
     "category": "aesiraAccess",
     "question": "A guard sees a gap in a perimeter fence of a construction site. What should the guard do?",
     "optionA": "Climb through to test it",
-    "optionB": "Ignore it until morning",
+    "optionB": "Report it in the morning",
     "optionC": "Cover it with a cardboard sheet",
     "optionD": "Report it and watch the area",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A breach in the perimeter is reported for repair and watched more often until fixed, since it is an easy way in for intruders."
+    "explanation": "A breach in the perimeter is reported for repair now and watched more often until fixed, since it is an easy way in for intruders. Leaving the report until morning leaves the gap open all night."
   },
   {
     "type": "AESIRA",
@@ -1225,7 +1225,7 @@
     "question": "A theft has happened in a shop and the area is now quiet. The guard's role at the scene is to:",
     "optionA": "Tidy up the broken glass",
     "optionB": "Gather up the dropped items",
-    "optionC": "Ask shoppers to help search",
+    "optionC": "Ask people to help search",
     "optionD": "Keep people out of the area",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1489,13 +1489,13 @@
     "questionId": "AESIRA-REP-027",
     "category": "aesiraReports",
     "question": "A guard notices a car parked in the same spot outside a bank for three days with someone inside watching. The guard should:",
-    "optionA": "Knock and demand ID",
+    "optionA": "Demand ID, then report it",
     "optionB": "Let the tyres down",
     "optionC": "Note the details and report it",
     "optionD": "Photograph the driver for social media",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Repeated watching may be planning for a crime. Recording the plate, times and description and reporting it lets the police assess it."
+    "explanation": "Repeated watching may be planning for a crime. Recording the plate, times and description and reporting it lets the police assess it. A guard has no police powers, so he cannot make someone outside the site show ID."
   },
   {
     "type": "AESIRA",
@@ -1616,12 +1616,12 @@
     "category": "aesiraPowers",
     "question": "A shopper refuses to show their receipt at a store exit. A guard who suspects theft but saw nothing should:",
     "optionA": "Block the exit by force",
-    "optionB": "Search their bags anyway",
+    "optionB": "Search them, then report it",
     "optionC": "Take their car keys from them",
     "optionD": "Let them go and report it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Without seeing an offence, the guard has no grounds to detain or search. Noting a description and informing the police or the store is lawful."
+    "explanation": "Without seeing an offence, the guard has no grounds to detain or search, even if he reports it afterwards. Noting a description and informing the police or the store is lawful."
   },
   {
     "type": "AESIRA",
@@ -1660,10 +1660,10 @@
     "optionA": "Drag him outside the building",
     "optionB": "Lock him in the lobby",
     "optionC": "Call the police if he stays",
-    "optionD": "Threaten him with a baton",
+    "optionD": "Call police before asking him",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The guard asks politely and explains. If the person refuses, the police deal with it; dragging or locking someone in can be assault or unlawful detention."
+    "explanation": "The guard asks politely and explains first. If the person refuses, the police deal with it; dragging or locking someone in can be assault or unlawful detention."
   },
   {
     "type": "AESIRA",
@@ -1688,10 +1688,10 @@
     "optionA": "Stop it and call the police",
     "optionB": "Fine the teenager on the spot",
     "optionC": "Keep the teenager's phone",
-    "optionD": "Make them repaint the wall now",
+    "optionD": "Let them go, call police later",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Guards cannot issue fines or confiscate property. They stop the damage if safe, keep the person in sight and pass the matter to the police."
+    "explanation": "Guards cannot issue fines or confiscate property. They stop the damage if safe, keep the person in sight and pass the matter to the police while it is happening, not later."
   },
   {
     "type": "AESIRA",
@@ -1714,12 +1714,12 @@
     "category": "aesiraPowers",
     "question": "A guard is told by a client to hold a suspected fraudster in an office until the morning. The guard should:",
     "optionA": "Agree, as the client pays",
-    "optionB": "Hold them but feed them",
+    "optionB": "Hold them, call police at dawn",
     "optionC": "Refuse and call the police",
     "optionD": "Hold them until they confess",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Only the police and courts may detain people for long periods. A guard who holds someone overnight risks committing unlawful detention."
+    "explanation": "Only the police and courts may detain people for long periods. A guard who holds someone overnight risks committing unlawful detention, even if he calls the police in the morning."
   },
   {
     "type": "AESIRA",
@@ -1744,10 +1744,10 @@
     "optionA": "Report it to the supervisor",
     "optionB": "Enter and search the room",
     "optionC": "Seize the guest's passport",
-    "optionD": "Warn the guest to hide it",
+    "optionD": "Search it, then tell a supervisor",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Searching rooms and seizing passports are police matters. The guard reports what was seen through the proper route."
+    "explanation": "Searching rooms and seizing passports are police matters. The guard reports what was seen through the proper route; searching first and telling the supervisor afterwards is still a search the guard has no right to make."
   },
   {
     "type": "AESIRA",
@@ -1755,13 +1755,13 @@
     "questionId": "AESIRA-POW-018",
     "category": "aesiraPowers",
     "question": "A person drops a fake banknote at a till and the cashier calls the guard. The guard should:",
-    "optionA": "Return it to the person politely",
+    "optionA": "Return it, then call police",
     "optionB": "Keep it safe and call police",
     "optionC": "Tear it up in front of them",
     "optionD": "Spend it to test it",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Suspected counterfeit currency is evidence. It is handled as little as possible, kept safe and handed to the police."
+    "explanation": "Suspected counterfeit currency is evidence. It is handled as little as possible, kept safe and handed to the police; giving it back first loses the evidence."
   },
   {
     "type": "AESIRA",
@@ -1827,7 +1827,7 @@
     "question": "A guard finds an unattended bag in a metro station entrance. What should the guard do first?",
     "optionA": "Open it to check inside",
     "optionB": "Carry it to the guard room",
-    "optionC": "Ask nearby people about it",
+    "optionC": "Ask around for the owner",
     "optionD": "Push it to one side with a foot",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1839,13 +1839,13 @@
     "questionId": "AESIRA-EMG-004",
     "category": "aesiraEmergency",
     "question": "An unattended item has wires showing and no owner. What should the guard do?",
-    "optionA": "Stand next to it to guard it",
+    "optionA": "Move people back a few metres",
     "optionB": "Cover it with a jacket",
     "optionC": "Move it outside the building",
     "optionD": "Clear people well away",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A suspicious item is not touched or moved. People are moved well away, out of sight of it and behind solid cover, and police take over."
+    "explanation": "A suspicious item is not touched or moved. People are moved well away, out of sight of it and behind solid cover, not just a few metres, and police take over."
   },
   {
     "type": "AESIRA",
@@ -1923,7 +1923,7 @@
     "questionId": "AESIRA-EMG-010",
     "category": "aesiraEmergency",
     "question": "During an evacuation, a guard's role at the exit is mainly to:",
-    "optionA": "Check everyone's ID",
+    "optionA": "Check people's ID at the door",
     "optionB": "Keep people moving out",
     "optionC": "Collect everyone's bags",
     "optionD": "Lock the doors behind them",
@@ -2009,11 +2009,11 @@
     "question": "During heavy rain in Dubai, the underground car park of a tower starts to flood. The guard should:",
     "optionA": "Drive the cars out for owners",
     "optionB": "Open the basement doors wider",
-    "optionC": "Ignore it until morning",
+    "optionC": "Report it, let cars keep parking",
     "optionD": "Stop cars entering and report",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Water rises quickly. Stopping entry, moving people to safety and reporting to management and, if needed, Civil Defence, protects life."
+    "explanation": "Water rises quickly. Stopping entry, moving people to safety and reporting to management and, if needed, Civil Defence, protects life. Reporting it while cars keep driving in leaves people in danger."
   },
   {
     "type": "AESIRA",
@@ -2021,7 +2021,7 @@
     "questionId": "AESIRA-EMG-017",
     "category": "aesiraEmergency",
     "question": "The power fails at night in a shopping centre. What should the guard do first?",
-    "optionA": "Check people are safe",
+    "optionA": "Check no one is trapped",
     "optionB": "Leave to find a generator",
     "optionC": "Open all shop doors",
     "optionD": "Switch off the fire alarm",
@@ -2093,11 +2093,11 @@
     "question": "A vehicle is parked in a fire lane outside a hotel entrance. What should the guard do?",
     "optionA": "Let the air out of the tyres",
     "optionB": "Have it moved and report it",
-    "optionC": "Leave it for the driver",
+    "optionC": "Report it, leave it there",
     "optionD": "Block it in with a barrier",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Fire lanes must stay clear for Civil Defence vehicles. The guard asks for the car to be moved and reports repeated cases."
+    "explanation": "Fire lanes must stay clear for Civil Defence vehicles. The guard asks for the car to be moved and reports repeated cases; reporting it while it stays in the lane does not clear the lane."
   },
   {
     "type": "AESIRA",
@@ -2119,13 +2119,13 @@
     "questionId": "AESIRA-EMG-024",
     "category": "aesiraEmergency",
     "question": "An emergency plan lists 'invacuation'. This means:",
-    "optionA": "Leaving the building fast",
+    "optionA": "Moving people outside fast",
     "optionB": "Searching everyone's bags",
     "optionC": "Opening the roof doors for air",
     "optionD": "Moving people further inside",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When the danger is outside (for example an attack or a gas cloud), moving people deeper into the building may be safer than evacuating."
+    "explanation": "When the danger is outside (for example an attack or a gas cloud), moving people deeper into the building may be safer than evacuating them outside."
   },
   {
     "type": "AESIRA",
@@ -2373,11 +2373,11 @@
     "question": "During a patrol a guard sees a fire extinguisher with its safety pin missing. What should the guard do?",
     "optionA": "Hide it in a cupboard",
     "optionB": "Report it for checking",
-    "optionC": "Fire it briefly to test it",
+    "optionC": "Test-fire it, then report it",
     "optionD": "Ignore it as cosmetic",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A missing pin or seal may mean the unit has been used or tampered with. It is reported so it can be checked and replaced."
+    "explanation": "A missing pin or seal may mean the unit has been used or tampered with. It is reported so it can be checked and replaced; test-firing it empties it further."
   },
   {
     "type": "AESIRA",
@@ -2388,10 +2388,10 @@
     "optionA": "Silence it for good",
     "optionB": "Unplug the panel to reset",
     "optionC": "Log it and report it",
-    "optionD": "Wait for the next fault",
+    "optionD": "Report it if it faults again",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A faulty panel may not warn people in a real fire. Faults are recorded and reported so the system is repaired."
+    "explanation": "A faulty panel may not warn people in a real fire. Faults are recorded and reported the first time so the system is repaired; waiting for a second fault leaves the building unprotected."
   },
   {
     "type": "AESIRA",
@@ -2427,13 +2427,13 @@
     "questionId": "AESIRA-FIR-018",
     "category": "aesiraFire",
     "question": "Fire doors in a building's stairwell are found wedged open with chairs. The guard should:",
-    "optionA": "Leave them for airflow",
+    "optionA": "Report it, leave them wedged",
     "optionB": "Unwedge them and report it",
     "optionC": "Lock the doors shut instead",
     "optionD": "Add more chairs to hold them",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Wedged fire doors let smoke fill the escape stairs. The guard removes the obstruction and reports repeat cases."
+    "explanation": "Wedged fire doors let smoke fill the escape stairs. The guard removes the obstruction now and reports repeat cases; reporting it while leaving the chairs in place keeps the danger."
   },
   {
     "type": "AESIRA",
@@ -2694,12 +2694,12 @@
     "category": "aesiraFirstAid",
     "question": "A delivery rider is knocked off a scooter at a car park barrier and says his neck hurts. What should the guard do?",
     "optionA": "Keep him still, call 998",
-    "optionB": "Help him stand up slowly",
+    "optionB": "Help him stand, then call 998",
     "optionC": "Take his helmet off quickly",
     "optionD": "Turn his head to check",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Neck pain after a fall may mean spinal injury. Keep the head and neck still and leave the helmet on unless the airway is blocked."
+    "explanation": "Neck pain after a fall may mean spinal injury. Keep the head and neck still, call 998 and leave the helmet on unless the airway is blocked. Standing him up first can worsen the injury."
   },
   {
     "type": "AESIRA",
@@ -2724,10 +2724,10 @@
     "optionA": "Walk around it and move on",
     "optionB": "Cover it with a newspaper",
     "optionC": "Cordon it off and report it",
-    "optionD": "Wait for someone to slip",
+    "optionD": "Report it and walk on",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A wet or oily floor causes falls. Warn people with a sign or cordon and get it cleaned up straight away."
+    "explanation": "A wet or oily floor causes falls. Warn people with a sign or cordon and get it cleaned up straight away; reporting it without making it safe leaves the next shopper to slip."
   },
   {
     "type": "AESIRA",

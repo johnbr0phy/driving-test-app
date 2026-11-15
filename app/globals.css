@@ -1465,6 +1465,19 @@
     --brand-border-light: 159 40% 88%;
     --brand-gradient-to: 174 60% 94%;
   }
+  /* STAAR Algebra I theme: muted olive (v2 exam; matches lib/v2/exams/staaralg1.ts theme) */
+  [data-theme="staaralg1"] {
+    --brand: 70 25% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 70 30% 94%;
+    --brand-hover: 70 25% 25%;
+    --brand-dark: 70 25% 21%;
+    --brand-darker: 70 25% 14%;
+    --brand-muted: 70 15% 68%;
+    --brand-border: 70 15% 78%;
+    --brand-border-light: 70 15% 88%;
+    --brand-gradient-to: 85 25% 94%;
+  }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
     --brand: 256 90% 37%;
@@ -6224,6 +6237,17 @@
     --brand-muted: 159 40% 45%;
     --brand-dark: 159 95% 65%;
     --brand-darker: 159 90% 78%;
+  }
+  .dark [data-theme="staaralg1"] {
+    --brand: 70 25% 38.1%;
+    --brand-hover: 70 25% 30.1%;
+    --brand-light: 70 30% 13%;
+    --brand-gradient-to: 85 25% 11%;
+    --brand-border-light: 70 15% 24%;
+    --brand-border: 70 15% 34%;
+    --brand-muted: 70 15% 45%;
+    --brand-dark: 70 25% 65%;
+    --brand-darker: 70 25% 78%;
   }
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;

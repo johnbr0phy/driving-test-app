@@ -372,6 +372,14 @@
       "what": "Defra's Specification on the Prevention of Backflow (6 May 2026) takes effect on 6 May 2027, adding the Type AUK4 air gap.",
       "action": "Re-check the backflow device items and decide whether to add Type AUK4.",
       "source": "https://www.legislation.gov.uk/uksi/1999/1148/contents/made"
+    },
+    {
+      "exam": "staaralg1",
+      "date": "2027-08-01",
+      "kind": "format",
+      "what": "HB 8 replaces STAAR with the Student Success Tool from the 2027-28 school year; the Algebra I end-of-course test stays required, with optional beginning- and middle-of-year tests.",
+      "action": "Check TEA's SST Algebra I blueprint and question types; re-weight the bank and update the landing, facts and names.",
+      "source": "https://tea.texas.gov/data-reports/staar/hb-8-faq-update.pdf"
     }
   ]
 }

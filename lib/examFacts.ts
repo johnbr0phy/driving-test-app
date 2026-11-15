@@ -2168,6 +2168,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full practice tests in Math, Reading and Language Usage at NWEA's own blueprint, untimed like the real test, with a percent score per subject, and ten drills, one per instructional area, most of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no RIT score.",
   },
+  staaralg1: {
+    answer:
+      "The STAAR Algebra I end-of-course assessment is the Texas Education Agency's state test for students who finish Algebra I, whether in high school or in middle school. It has 50 questions worth 59 points: 41 one-point questions and 9 two-point questions that can earn partial credit, and since the 2022-23 redesign at most 75% are multiple choice, the rest being typed answers, graphing, number lines, drop-down menus, hot spots, drag and drop, match tables and multiselect. It covers five reporting categories: Number and Algebraic Methods, Describing and Graphing Linear Functions, Equations and Inequalities, Writing and Solving Linear Functions, Equations and Inequalities, Quadratic Functions and Equations, and Exponential Functions and Equations. TEA expects three to four hours; the test must be finished the same school day, with at most seven hours of working time. A graphing calculator and the Algebra I reference materials are provided. Passing is Approaches Grade Level, a scale score of 3550 (19 of 59 points on the Spring 2026 test).",
+    rows: [
+      { label: "Who takes it", value: "Texas students who complete Algebra I, in high school or middle school" },
+      { label: "Questions", value: "50 questions, 59 points (9 are worth 2 points)" },
+      { label: "Question types", value: "At most 75% multiple choice; the rest typed answers, graphing, drop-downs, match tables, multiselect and others" },
+      { label: "Reporting categories", value: "Number and algebraic methods; graphing linear; writing and solving linear; quadratics; exponentials" },
+      { label: "Time", value: "3 to 4 hours expected; same school day, up to 7 hours" },
+      { label: "Calculator", value: "A graphing calculator is required for the whole test, plus the reference materials" },
+      { label: "Pass mark", value: "Approaches Grade Level, scale score 3550 (19 of 59 points in Spring 2026)" },
+      { label: "Coming change", value: "HB 8 replaces STAAR with the Student Success Tool from 2027-28" },
+    ],
+    basedOn: "TEA's STAAR Algebra I Blueprint (effective 2022-23), the Algebra I assessed curriculum, the STAAR calculator policy and the Spring 2026 raw score conversion table",
+    source: { name: "TEA: STAAR Mathematics Resources", url: "https://tea.texas.gov/data-reports/staar/staar-mathematics-resources" },
+    tigertest:
+      "Tigertest has two full 50-question practice tests on TEA's blueprint and the assessed Algebra I TEKS, untimed like the real test, with a calculator and the reference sheet on every question and a mix of multiple choice, typed answers, multiselect, match tables and drop-downs. Seven topic drills, three of which teach the basics first, cover every reporting category. All of it is free with no account required. Every question is worth one point and graphs are described in words, so the score is percent correct, not a STAAR scale score.",
+  },
   psat: {
     answer:
       "The digital PSAT/NMSQT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules), with a calculator allowed on all of Math. It is adaptive by module and scored 320 to 1520, with each section scored 160 to 760. It is given to 10th and 11th graders in the fall (the PSAT 10 is the same test in the spring), and juniors' scores are used for the National Merit Scholarship Program through a Selection Index of 48 to 228.",

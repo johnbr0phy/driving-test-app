@@ -43,7 +43,7 @@ const QuestionsTab = dynamic(() => import("@/components/admin/QuestionsTab").the
   ssr: false,
   loading: () => <TabLoading />,
 });
-const TestsTab = dynamic(() => import("@/components/admin/TestsTab").then((m) => m.TestsTab), {
+const ABTestsTab = dynamic(() => import("@/components/admin/ABTestsTab").then((m) => m.ABTestsTab), {
   ssr: false,
   loading: () => <TabLoading />,
 });
@@ -56,7 +56,7 @@ const TABS = [
   { id: "today", label: "Today" },
   { id: "growth", label: "Growth" },
   { id: "conversion", label: "Conversion" },
-  { id: "tests", label: "Tests" },
+  { id: "ab", label: "A/B tests" },
   { id: "teachers", label: "Teachers" },
   { id: "quizzes", label: "Quizzes" },
   { id: "searches", label: "Searches" },
@@ -172,7 +172,7 @@ function AdminTabs() {
             {t.id === "today" && <TodayTab />}
             {t.id === "growth" && <GrowthTab />}
             {t.id === "conversion" && <ConversionTab />}
-            {t.id === "tests" && <TestsTab />}
+            {t.id === "ab" && <ABTestsTab />}
             {t.id === "teachers" && <TeachersTab />}
             {t.id === "quizzes" && <QuizzesTab />}
             {t.id === "searches" && <SearchesView />}

@@ -173,7 +173,7 @@ export default function RbtLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Weighted Mock Exams</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Eight mock exams of 50 questions, each weighted like the 75 scored questions on the real exam. Aim for 80% or better. No question appears in more than one test, and every one comes with an explanation.
+                Eight mock exams of 50 questions, each weighted like the 75 scored questions on the real exam. Aim for 80% or better. No question appears in more than one test, and every one comes with an explanation. The first 200 questions and Tests 1 to 4 are free. Premium adds the 200 scenario questions and Tests 5 to 8.
               </p>
             </div>
           </div>

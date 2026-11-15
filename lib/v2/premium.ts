@@ -29,8 +29,8 @@ export function hasDrillProgress(drills: Record<string, DrillState>, basics: Rec
 }
 
 /**
- * Paywall item ids from v2 exams start with this prefix, so analytics can
- * tell a v2 exam's paywall from the DMV's.
+ * Paywall item ids from v2 exams start with this prefix, so the
+ * paywall follow-up email (lib/paywallAbandon.ts) knows which v2 exam it was.
  * Underscore, not colon: /api/analytics/paywall only accepts [A-Za-z0-9_].
  */
 export const V2_PAYWALL_PREFIX = "v2_";

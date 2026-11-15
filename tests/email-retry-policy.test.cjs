@@ -103,7 +103,7 @@ test('purchase receipt requires exact still-valid purchase entitlement, not camp
 });
 
 test('every current durable journey captures an explicit retry policy and upper bound', () => {
-  for (const route of ['first-test-reminder', 'second-test-nudge', 'reengagement', 'inactive-share-request', 'super-amazing', 'new-tests', 'quizzes-launch', 'exit-question']) {
+  for (const route of ['first-test-reminder', 'second-test-nudge', 'reengagement', 'inactive-share-request', 'paywall-abandon', 'super-amazing', 'new-tests', 'quizzes-launch', 'exit-question']) {
     const source = fs.readFileSync(path.join(__dirname, `../app/api/cron/${route}/route.ts`), 'utf8');
     assert.match(source, /retryPolicy: \(u\) => makeSnapshotRetryPolicy\(u\.raw, \{ expiresAt:/, route);
   }

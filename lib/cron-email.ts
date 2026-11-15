@@ -275,9 +275,10 @@ export function latestPaywallHit(hits: any): PaywallHit | null {
 export const MIN_EMAIL_GAP_MS = 24 * 60 * 60 * 1000;
 
 /**
- * The gap can be shorter for time-critical campaigns. /api/send-welcome-email
- * also stamps lastEmailSent, so a flat 24-hour cap would suppress any email
- * meant for the day someone signs up.
+ * The gap is shorter for time-critical campaigns. /api/send-welcome-email also
+ * stamps lastEmailSent, so a flat 24-hour cap would silently suppress the
+ * paywall-abandon email for any user who signs up and hits a paywall the same
+ * day, which is precisely the audience it exists for.
  */
 export function emailedRecently(
   u: UserDoc,
@@ -353,7 +354,7 @@ export interface BatchOptions {
   label: string;
   /** Permanent per-campaign marker written to the user doc on success. */
   emailKey: string;
-  /** Fixed subject, or a per-user builder. */
+  /** Fixed subject, or a per-user builder (paywall-abandon names the paywall). */
   subject: string | ((user: UserDoc) => string);
   /** Rendered template, or a per-user builder (normally `(u) => T(u.voice)`). */
   template: string | ((user: UserDoc) => string);

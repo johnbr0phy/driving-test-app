@@ -214,6 +214,29 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       ].join("\n"),
     }),
 
+  // Hit a paywall 1-36h ago and walked away: the one Premium email, sent only
+  // because the person opened a locked step. Any exam that sells Premium
+  // (the DMV, every v1 exam, the paid v2 exams); the list is that exam's own.
+  paywallAbandon: (v) =>
+    emailShell({
+      voice: v,
+      title: EMAIL_INBOX.paywallAbandon(v).subject,
+      preheader: EMAIL_INBOX.paywallAbandon(v).preheader,
+      heading: "Take another look at {{paywallName}}",
+      body: [
+        p(
+          "You recently opened {{paywallName}}. You can return to your practice when you are ready.",
+        ),
+        p(
+          `<strong style="font-weight: 600;">On ${esc(v.shortName)}, Premium adds:</strong>`,
+        ),
+        ul(v.premiumBenefits),
+        cta(DASH(v, "paywall_abandon"), `Open ${esc(v.shortName)} Practice`),
+        p("Check the current price and payment details at checkout."),
+        signoff(),
+      ].join("\n"),
+    }),
+
   // Sent after confirmed payment. Context identifies the purchase page, not
   // the current exam. Unknown purchase context stays account-wide; v2 study
   // plans are free and must never be presented as a paid unlock.

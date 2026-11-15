@@ -86,7 +86,7 @@ test('copy does not blame the learner or invent prices, payment terms or lifetim
     assert.doesNotMatch(html + exitQuestionSubject(c), /vanished|disappeared|revenge|little bit you|mostly|mic drop/i);
     assert.match(html, /Continue CCMA Practice/);
   }
-  for (const [key, exam] of [['purchaseWelcome', 'dmv']]) {
+  for (const [key, exam] of [['paywallAbandon', 'dmv'], ['paywallAbandon', 'cdl'], ['paywallAbandon', 'nclex'], ['purchaseWelcome', 'dmv']]) {
     assert.doesNotMatch(EMAIL_TEMPLATES[key](voiceFor(exam)), /\$9\.99|nothing to cancel|one.time payment|no subscription/i);
   }
   assert.doesNotMatch(EMAIL_TEMPLATES.secondTestNudge(voiceFor('ccma')), /Your first practice result/);

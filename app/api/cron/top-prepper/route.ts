@@ -10,7 +10,8 @@
  *
  * Who: not Premium, reads in English, answered TOP_PREPPER_MIN_ANSWERS or
  * more and more than TOP_PREPPER_MIN_PCT percent of accounts with any answer,
- * last paywall view 36 hours to 14 days ago, active in the last 14 days, no email in 24 hours, not
+ * last paywall view 36 hours to 14 days ago (the paywall-abandon email owns
+ * the first 36 hours), active in the last 14 days, no email in 24 hours, not
  * in a teacher's class for that test (the class already unlocks it). DMV and
  * v1 exams only: `_stats` does not count v2 answers, so the number would be
  * wrong for a v2 student.
@@ -51,7 +52,7 @@ export const maxDuration = 300;
 
 const EMAIL_KEY = "topPrepper";
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
-/** Not straight after the paywall: give the person a day and a half first. */
+/** The paywall-abandon email covers the first 36 hours after a paywall view. */
 const MIN_AGE_MS = 36 * 60 * 60 * 1000;
 /** Past two weeks the paywall is no longer on their mind. */
 const MAX_AGE_MS = 14 * DAY_MS;

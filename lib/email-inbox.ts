@@ -34,6 +34,10 @@ export const EMAIL_INBOX = {
     subject: `Your next ${exam(v)}study step`,
     preheader: "Review your answers, then choose a topic or another practice test.",
   }),
+  paywallAbandon: (v: EmailVoice, feature?: string): InboxCopy => ({
+    subject: feature ? `Revisit ${inboxLabel(feature, "your practice")}` : `Explore ${exam(v)}Premium features`,
+    preheader: "Review the Premium features and current price before you decide.",
+  }),
   purchaseWelcome: (v: EmailVoice): InboxCopy => ({
     subject: "Tigertest Premium: purchase confirmed",
     preheader: v.id !== "unknown" && !EXAMS_V2.some(e => e.id === v.id)

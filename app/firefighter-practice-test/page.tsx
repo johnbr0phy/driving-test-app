@@ -143,7 +143,7 @@ export default function FirefighterLandingPage() {
           <ExamLandingHero
             dashboardHref="/firefighter/dashboard"
             shortName="Firefighter I"
-            subtitle="200 original questions on the NFPA 1010 Firefighter I job performance requirements: safety, fire behavior, SCBA, ladders, ventilation, hose and fire attack. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the NFPA 1010 Firefighter I job performance requirements: safety, fire behavior, SCBA, ladders, ventilation, hose and fire attack. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ffi-mobile.png", desktop: "/landing/ffi-desktop.png" }}
           />
         </div>

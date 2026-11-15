@@ -129,7 +129,7 @@ export default function NmcCbtLandingPage() {
           <ExamLandingHero
             dashboardHref="/nmc-cbt/dashboard"
             shortName="NMC CBT"
-            subtitle="Numeracy and clinical mock tests for nurses joining the UK register from India, the Philippines, Nigeria, Kenya and around the world. 272 questions with rationales, written for UK practice. No account needed."
+            subtitle="Numeracy and clinical mock tests for nurses joining the UK register from India, the Philippines, Nigeria, Kenya and around the world. 272 questions with rationales, written for UK practice. Free to start, no account needed."
             shots={{ mobile: "/landing/uknmc-mobile.png", desktop: "/landing/uknmc-desktop.png" }}
           />
         </div>

@@ -133,7 +133,7 @@ export default function CcmaLandingPage() {
           <ExamLandingHero
             dashboardHref="/ccma/dashboard"
             shortName="CCMA"
-            subtitle="200 questions weighted to the NHA CCMA test plan. Tuned for mobile. No account needed."
+            subtitle="200 questions weighted to the NHA CCMA test plan. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ccma-mobile.png", desktop: "/landing/ccma-desktop.png" }}
           />
         </div>

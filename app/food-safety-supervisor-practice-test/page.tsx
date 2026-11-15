@@ -142,7 +142,7 @@ export default function FoodSafetySupervisorLandingPage() {
           <ExamLandingHero
             dashboardHref="/food-safety-supervisor/dashboard"
             shortName="Food Safety Supervisor"
-            subtitle="200 questions on Standard 3.2.2A, the 5°C and 60°C rules, cooling, the 2-hour/4-hour rule, hygiene, cleaning and allergens, written to the Food Standards Code. Tuned for mobile. No account needed."
+            subtitle="200 questions on Standard 3.2.2A, the 5°C and 60°C rules, cooling, the 2-hour/4-hour rule, hygiene, cleaning and allergens, written to the Food Standards Code. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aufss-mobile.png", desktop: "/landing/aufss-desktop.png" }}
           />
         </div>

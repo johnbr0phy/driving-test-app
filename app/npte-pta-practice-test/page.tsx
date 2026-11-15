@@ -128,7 +128,7 @@ export default function NptePtaLandingPage() {
           <ExamLandingHero
             dashboardHref="/npte-pta/dashboard"
             shortName="NPTE-PTA"
-            subtitle="200 original PTA board questions on the FSBPT content outline: body systems, interventions, modalities, equipment, safety and your role under the PT's plan of care. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original PTA board questions on the FSBPT content outline: body systems, interventions, modalities, equipment, safety and your role under the PT's plan of care. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/nptepta-mobile.png", desktop: "/landing/nptepta-desktop.png" }}
           />
         </div>

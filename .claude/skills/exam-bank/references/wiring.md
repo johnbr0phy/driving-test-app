@@ -106,6 +106,15 @@ Launched, four study tips, five FAQs whose JSX text matches the JSON-LD text exa
 `<ExamClassFaq examId>` (and `classFaqJsonLd`) for a teacher-led exam, `<ExamRelatedTests examId>`,
 `<ExamLandingCTA>`.
 
+**"Free" wording (legal, Nov 2026).** The title and `h1` keep "Free ... Practice Test". On an exam
+with Premium steps (every v1 exam, and a v2 exam in `PREMIUM_V2_IDS`) the hero `subtitle` must end
+"Free to start, no account needed." and nothing on the page, in `EXAM_FACTS` or in a landing JSON
+may say that everything, all questions or every test is free. In another language the subtitle
+ends with that language's form ("Empieza gratis, sin cuenta.", "Kostenlos starten, ohne
+Anmeldung.", "Gratuit pour commencer, sans compte."). Only a free v2 exam (school, college
+entrance and children's tests) may say "Everything is free". `tests/landing-free-to-start.test.cjs`
+checks this.
+
 Alongside the landing:
 - `lib/examFacts.ts`: an entry for `<id>` (plain answer, facts table, official source, dated).
 - `lib/seoDates.ts`: bump `EXAM_LANDINGS_UPDATED_AT` with a comment naming the new exam.

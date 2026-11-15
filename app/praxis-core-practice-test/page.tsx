@@ -132,7 +132,7 @@ export default function PraxisCoreLandingPage() {
           <ExamLandingHero
             dashboardHref="/praxis-core/dashboard"
             shortName="Praxis Core"
-            subtitle="200 original Reading, Writing and Math questions for future teachers, timed at the real pace. Tuned for mobile. No account needed."
+            subtitle="200 original Reading, Writing and Math questions for future teachers, timed at the real pace. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/praxis-mobile.png", desktop: "/landing/praxis-desktop.png" }}
           />
         </div>

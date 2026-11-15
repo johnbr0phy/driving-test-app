@@ -142,7 +142,7 @@ export default function Level2FoodHygieneLandingPage() {
           <ExamLandingHero
             dashboardHref="/uk-food-hygiene/dashboard"
             shortName="Food Hygiene"
-            subtitle="200 questions on temperatures, the 14 allergens, hand washing, cleaning, pests and HACCP, written to UK law and FSA guidance. Tuned for mobile. No account needed."
+            subtitle="200 questions on temperatures, the 14 allergens, hand washing, cleaning, pests and HACCP, written to UK law and FSA guidance. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukfood-mobile.png", desktop: "/landing/ukfood-desktop.png" }}
           />
         </div>

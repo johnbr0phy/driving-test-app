@@ -137,7 +137,7 @@ export default function BoatingLandingPage() {
           <ExamLandingHero
             dashboardHref="/boating/dashboard"
             shortName="Boating"
-            subtitle="200 questions on the boater education standards behind every state exam. Tuned for mobile. No account needed."
+            subtitle="200 questions on the boater education standards behind every state exam. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/boating-mobile.png", desktop: "/landing/boating-desktop.png" }}
           />
         </div>

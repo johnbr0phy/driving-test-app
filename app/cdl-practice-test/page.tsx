@@ -129,7 +129,7 @@ export default function CDLLandingPage() {
           <ExamLandingHero
             dashboardHref="/cdl/dashboard"
             shortName="CDL"
-            subtitle="600 questions. Six tests weighted like the real exam. Tuned for mobile. No account needed."
+            subtitle="600 questions. Six tests weighted like the real exam. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cdl-mobile.png", desktop: "/landing/cdl-desktop.png" }}
           />
         </div>

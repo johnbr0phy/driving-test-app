@@ -122,7 +122,7 @@ export default function Series7LandingPage() {
           <ExamLandingHero
             dashboardHref="/series-7/dashboard"
             shortName="Series 7"
-            subtitle="200 original questions on FINRA's outline: options, municipal and other bonds, equities, funds and annuities, suitability, margin and trading. Four 50-question mock tests with the 72% pass line. Tuned for mobile. No account needed."
+            subtitle="200 original questions on FINRA's outline: options, municipal and other bonds, equities, funds and annuities, suitability, margin and trading. Four 50-question mock tests with the 72% pass line. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/series7-mobile.png", desktop: "/landing/series7-desktop.png" }}
           />
         </div>

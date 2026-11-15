@@ -121,7 +121,7 @@ export default function K53MotorcycleLandingPage() {
           <ExamLandingHero
             dashboardHref="/k53-motorcycle/dashboard"
             shortName="K53 motorcycle learner's"
-            subtitle="200 original questions for the South African Code 1 learner's test, the learner's for a motorcycle, scooter, tricycle or quadricycle: rules of the road, road signs and markings, and motorcycle controls. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the South African Code 1 learner's test, the learner's for a motorcycle, scooter, tricycle or quadricycle: rules of the road, road signs and markings, and motorcycle controls. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/zak53moto-mobile.png", desktop: "/landing/zak53moto-desktop.png" }}
           />
         </div>

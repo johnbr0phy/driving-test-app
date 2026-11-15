@@ -139,7 +139,7 @@ export default function ManitobaClass5LandingPage() {
           <ExamLandingHero
             dashboardHref="/manitoba-class-5/dashboard"
             shortName="MB Class 5"
-            subtitle="200 questions from the MPI Driver's Handbook on signs, right-of-way, sharing the road, GDL rules, parking, winter driving and impaired driving. Tuned for mobile. No account needed."
+            subtitle="200 questions from the MPI Driver's Handbook on signs, right-of-way, sharing the road, GDL rules, parking, winter driving and impaired driving. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/camb-mobile.png", desktop: "/landing/camb-desktop.png" }}
           />
         </div>

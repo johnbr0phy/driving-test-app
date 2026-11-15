@@ -140,7 +140,7 @@ export default function MidwifeBoardExamLandingPage() {
           <ExamLandingHero
             dashboardHref="/midwife-board-exam/dashboard"
             shortName="Midwife Board"
-            subtitle="200 original questions on the five subjects of the PRC Midwife Licensure Examination. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the five subjects of the PRC Midwife Licensure Examination. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/phmidwife-mobile.png", desktop: "/landing/phmidwife-desktop.png" }}
           />
         </div>

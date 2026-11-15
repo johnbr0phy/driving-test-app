@@ -126,7 +126,7 @@ export default function HongKongDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/hong-kong-driving-test/dashboard"
             shortName="Hong Kong driving test"
-            subtitle="200 original questions from the Road Users' Code: signs, junctions and roundabouts, expressways and tunnels, seat belts and child restraints, parking and your learner and probationary rules. Seven 20-question mock tests with the real pass mark. Tuned for mobile. No account needed."
+            subtitle="200 original questions from the Road Users' Code: signs, junctions and roundabouts, expressways and tunnels, seat belts and child restraints, parking and your learner and probationary rules. Seven 20-question mock tests with the real pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/hkdrive-mobile.png", desktop: "/landing/hkdrive-desktop.png" }}
           />
         </div>

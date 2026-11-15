@@ -127,7 +127,7 @@ export default function AgniveerLandingPage() {
           <ExamLandingHero
             dashboardHref="/agniveer-army/dashboard"
             shortName="Agniveer GD"
-            subtitle="231 original CEE questions on General Knowledge, Science, Maths and Reasoning. Tuned for mobile. No account needed."
+            subtitle="231 original CEE questions on General Knowledge, Science, Maths and Reasoning. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/agniveer-mobile.png", desktop: "/landing/agniveer-desktop.png" }}
           />
         </div>

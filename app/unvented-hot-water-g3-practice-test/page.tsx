@@ -123,7 +123,7 @@ export default function Ukg3LandingPage() {
           <ExamLandingHero
             dashboardHref="/unvented-hot-water/dashboard"
             shortName="Unvented G3"
-            subtitle="200 questions on Part G3 and Approved Document G for the unvented cylinder certificate: safety devices, tundish and D2 sizing, inlet controls, temperatures and commissioning. Tuned for mobile. No account needed."
+            subtitle="200 questions on Part G3 and Approved Document G for the unvented cylinder certificate: safety devices, tundish and D2 sizing, inlet controls, temperatures and commissioning. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukg3-mobile.png", desktop: "/landing/ukg3-desktop.png" }}
           />
         </div>

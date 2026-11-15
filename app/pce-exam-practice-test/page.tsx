@@ -121,7 +121,7 @@ export default function MypceLandingPage() {
           <ExamLandingHero
             dashboardHref="/malaysia-pce/dashboard"
             shortName="PCEIA"
-            subtitle="200 original questions for Malaysia's Pre-Contract Examination for Insurance Agents: risk and the principles of insurance, the FSA 2013 and agency law, motor and fire insurance, and life products, nomination, underwriting and claims. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions for Malaysia's Pre-Contract Examination for Insurance Agents: risk and the principles of insurance, the FSA 2013 and agency law, motor and fire insurance, and life products, nomination, underwriting and claims. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/mypce-mobile.png", desktop: "/landing/mypce-desktop.png" }}
           />
         </div>

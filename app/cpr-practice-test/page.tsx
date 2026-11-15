@@ -139,7 +139,7 @@ export default function CprLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpr/dashboard"
             shortName="CPR"
-            subtitle="200 questions on adult, child and infant CPR, AED use, choking and first aid. Tuned for mobile. No account needed."
+            subtitle="200 questions on adult, child and infant CPR, AED use, choking and first aid. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cpr-mobile.png", desktop: "/landing/cpr-desktop.png" }}
           />
         </div>

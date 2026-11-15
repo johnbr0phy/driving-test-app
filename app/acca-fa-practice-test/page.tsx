@@ -132,7 +132,7 @@ export default function AccaFaLandingPage() {
           <ExamLandingHero
             dashboardHref="/acca-fa/dashboard"
             shortName="ACCA FA"
-            subtitle="200 original objective test questions on the ACCA Financial Accounting syllabus: double entry, inventories, non-current assets, accruals, reconciliations, IFRS 18 statements, cash flows, consolidation and ratios. Four 50-question tests, every calculation explained. Tuned for mobile. No account needed."
+            subtitle="200 original objective test questions on the ACCA Financial Accounting syllabus: double entry, inventories, non-current assets, accruals, reconciliations, IFRS 18 statements, cash flows, consolidation and ratios. Four 50-question tests, every calculation explained. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/accafa-mobile.png", desktop: "/landing/accafa-desktop.png" }}
           />
         </div>

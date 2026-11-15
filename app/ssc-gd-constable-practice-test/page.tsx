@@ -127,7 +127,7 @@ export default function SscGdLandingPage() {
           <ExamLandingHero
             dashboardHref="/ssc-gd-constable/dashboard"
             shortName="SSC GD"
-            subtitle="208 original CBE questions on reasoning, GK, maths and English. Tuned for mobile. No account needed."
+            subtitle="208 original CBE questions on reasoning, GK, maths and English. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/sscgd-mobile.png", desktop: "/landing/sscgd-desktop.png" }}
           />
         </div>

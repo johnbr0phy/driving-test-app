@@ -145,7 +145,7 @@ export default function CanadianFirearmsLandingPage() {
           <ExamLandingHero
             dashboardHref="/canadian-firearms/dashboard"
             shortName="CFSC"
-            subtitle="200 questions for the PAL written test: ACTS and PROVE, actions, ammunition, safe handling, storage and transport rules, and Canadian firearms law, with the real 80% pass mark. Tuned for mobile. No account needed."
+            subtitle="200 questions for the PAL written test: ACTS and PROVE, actions, ammunition, safe handling, storage and transport rules, and Canadian firearms law, with the real 80% pass mark. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/capal-mobile.png", desktop: "/landing/capal-desktop.png" }}
           />
         </div>

@@ -129,7 +129,7 @@ export default function TgsiLandingPage() {
           <ExamLandingHero
             dashboardHref="/telangana-police-si/dashboard"
             shortName="TG Police SI"
-            subtitle="236 original questions on arithmetic, reasoning and General Studies, with the Telangana Movement. Tuned for mobile. No account needed."
+            subtitle="236 original questions on arithmetic, reasoning and General Studies, with the Telangana Movement. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/tgsi-mobile.png", desktop: "/landing/tgsi-desktop.png" }}
           />
         </div>

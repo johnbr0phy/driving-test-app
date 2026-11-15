@@ -127,7 +127,7 @@ export default function SafePassLandingPage() {
           <ExamLandingHero
             dashboardHref="/safe-pass/dashboard"
             shortName="Safe Pass"
-            subtitle="200 original questions for the SOLAS Safe Pass course and renewal test: site safety law, accident reporting, risk, electricity, excavations, work at height, plant and vehicles, noise, vibration and PPE. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the SOLAS Safe Pass course and renewal test: site safety law, accident reporting, risk, electricity, excavations, work at height, plant and vehicles, noise, vibration and PPE. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/iesafepass-mobile.png", desktop: "/landing/iesafepass-desktop.png" }}
           />
         </div>

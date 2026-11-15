@@ -140,7 +140,7 @@ export default function SaaqLandingPage() {
           <ExamLandingHero
             dashboardHref="/saaq/dashboard"
             shortName="SAAQ"
-            subtitle="200 questions for the Quebec Class 5 knowledge test: the Highway Safety Code, road signs, traffic lights, right of way, sharing the road and safe driving, in English. Tuned for mobile. No account needed."
+            subtitle="200 questions for the Quebec Class 5 knowledge test: the Highway Safety Code, road signs, traffic lights, right of way, sharing the road and safe driving, in English. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/caqc-mobile.png", desktop: "/landing/caqc-desktop.png" }}
           />
         </div>

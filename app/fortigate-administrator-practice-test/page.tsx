@@ -123,7 +123,7 @@ export default function FortigateLandingPage() {
           <ExamLandingHero
             dashboardHref="/fortigate/dashboard"
             shortName="FortiGate"
-            subtitle="200 original questions for Fortinet's NSE 4 - FortiOS 7.6 Administrator exam, formerly FCP - FortiGate 7.6 Administrator: firewall policies and NAT, security profiles, SSL inspection, SD-WAN, HA, FortiSASE and IPsec VPN. Four 50-question tests weighted like the real exam. Tuned for mobile. No account needed."
+            subtitle="200 original questions for Fortinet's NSE 4 - FortiOS 7.6 Administrator exam, formerly FCP - FortiGate 7.6 Administrator: firewall policies and NAT, security profiles, SSL inspection, SD-WAN, HA, FortiSASE and IPsec VPN. Four 50-question tests weighted like the real exam. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/fortigate-mobile.png", desktop: "/landing/fortigate-desktop.png" }}
           />
         </div>

@@ -54,6 +54,10 @@ const CASES = [
   ["wassce maths", "NG", "wasscemath"],
   ["ssce maths", "NG", "wasscemath"],
   ["may june maths", "NG", "wasscemath"],
+  ["afoqt", "US", "afoqt"],
+  ["afoqt practice test", "US", "afoqt"],
+  ["air force officer qualifying test", "US", "afoqt"],
+  ["air force officer test", "US", "afoqt"],
 ];
 
 for (const [q, region, id] of CASES) {

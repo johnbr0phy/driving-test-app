@@ -109,4 +109,5 @@ export const BANK_SIZES: Record<string, number> = {
   hiset: 288,
   wassceeng: 270,
   wasscemath: 200,
+  afoqt: 250,
 };

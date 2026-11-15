@@ -910,6 +910,20 @@
     --brand-gradient-to: 90 85% 95%;
   }
 
+  /* AFOQT theme: muted flight-suit olive (84 30% 38%: the assigned 40% saturation gave white text 4.1:1) (v2 exam; matches lib/v2/exams/afoqt.ts theme) */
+  [data-theme="afoqt"] {
+    --brand: 84 30% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 84 30% 96%;
+    --brand-hover: 84 30% 33%;
+    --brand-dark: 84 30% 26%;
+    --brand-darker: 84 28% 17%;
+    --brand-muted: 84 22% 72%;
+    --brand-border: 84 22% 80%;
+    --brand-border-light: 84 22% 90%;
+    --brand-gradient-to: 74 30% 95%;
+  }
+
   /* Times Tables theme: magenta (v2 exam; matches lib/v2/exams/timestables.ts theme) */
   [data-theme="timestables"] {
     --brand: 300 60% 42%;
@@ -5749,6 +5763,16 @@
     --brand-muted: 102 35% 45%;
     --brand-dark: 102 90% 65%;
     --brand-darker: 102 85% 78%;
+  }
+
+  .dark [data-theme="afoqt"] {
+    --brand-light: 84 30% 13%;
+    --brand-gradient-to: 74 30% 11%;
+    --brand-border-light: 84 22% 24%;
+    --brand-border: 84 22% 34%;
+    --brand-muted: 84 22% 45%;
+    --brand-dark: 84 30% 65%;
+    --brand-darker: 84 28% 78%;
   }
 
   .dark [data-theme="timestables"] {

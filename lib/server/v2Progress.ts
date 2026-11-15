@@ -17,6 +17,7 @@ import '@/lib/v2/banks/gcsescience';
 import '@/lib/v2/banks/ged';
 import '@/lib/v2/banks/hesi';
 import '@/lib/v2/banks/hiset';
+import '@/lib/v2/banks/afoqt';
 import '@/lib/v2/banks/hscmaths';
 import '@/lib/v2/banks/ks2';
 import '@/lib/v2/banks/naplan';

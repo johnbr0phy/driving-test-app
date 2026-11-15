@@ -2232,6 +2232,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
   },
+  afoqt: {
+    answer:
+      "The AFOQT (Air Force Officer Qualifying Test) is the Air Force's aptitude test for officer commissioning programs such as Officer Training School and Air Force ROTC, and for selection into training such as pilot and navigator training. Form T has 12 timed multiple-choice subtests, 516 questions in about five hours with breaks: Verbal Analogies, Arithmetic Reasoning, Word Knowledge, Math Knowledge, Reading Comprehension, Situational Judgment, the ungraded Self-Description Inventory, Physical Science, Table Reading, Instrument Comprehension, Block Counting and Aviation Information. Subtests combine into composites reported as 1 to 99 percentiles, not percent correct. Air Force ROTC, citing DAFMAN 36-2664, gives the minimums as the 15th percentile on Verbal and the 10th on Quantitative; rated programs set higher bars. It is free, taken with a voucher from a recruiter or test control officer, and limited to two attempts (three with a waiver).",
+    rows: [
+      { label: "Questions", value: "516 multiple choice across 12 subtests (Form T)" },
+      { label: "Time", value: "About 5 hours including breaks" },
+      { label: "Scores", value: "1 to 99 percentiles on composites" },
+      { label: "Minimums", value: "Verbal 15 and Quantitative 10 (AFROTC, citing DAFMAN 36-2664)" },
+      { label: "Attempts", value: "Two, or three with an approved waiver" },
+      { label: "Cost", value: "Free, voucher from a recruiter or test control officer" },
+      { label: "Given by", value: "U.S. Air Force, delivered by Pearson VUE" },
+    ],
+    basedOn: "The Air Force's AFOQT page at Pearson VUE and AFROTC Detachment 485's AFOQT page (checked November 2026)",
+    source: { name: "Pearson VUE (U.S. Air Force)", url: "https://www.pearsonvue.com/us/en/afoqt.html" },
+    tigertest:
+      "Tigertest has two AFOQT practice tests with eight subtests at about half length and the real pace, and a drill for each subtest. Start for free, no account required; the last two drills and Practice Test 2 are part of Premium. Situational Judgment, Instrument Comprehension, Block Counting and the Self-Description Inventory are not included, and scores are percent correct, not AFOQT percentiles.",
+  },
   lsat: {
     answer:
       "The LSAT has four 35-minute multiple-choice sections: two scored Logical Reasoning sections, one scored Reading Comprehension section and one unscored variable section of either type that LSAC uses to try out new questions, with a 10-minute intermission between the second and third sections. Analytical Reasoning (logic games) was dropped in August 2024. The score runs from 120 to 180, based on the number of questions answered correctly, with no deduction for wrong answers. LSAT Argumentative Writing, a 50-minute unscored essay taken online, must be on file before a score is released. From August 2027 the unscored questions move inside the three sections, which LSAC says will test the same skills.",

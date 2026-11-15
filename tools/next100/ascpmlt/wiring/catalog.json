@@ -1,0 +1,16 @@
+{
+  "blurb": "ASCP Board of Certification Medical Laboratory Technician MLT(ASCP) exam on the BOC content guideline: blood banking, urinalysis and body fluids, chemistry, hematology and hemostasis, immunology, microbiology and laboratory operations.",
+  "org": "ASCP Board of Certification · MLT(ASCP) content guideline, September 2025",
+  "group": "Healthcare certification exams",
+  "after": "ascppbt",
+  "aliases": ["mlt", "mlt ascp", "ascp mlt", "mlt(ascp)", "mlt ascpi", "ascp mlt exam", "ascp boc mlt", "medical laboratory technician", "medical lab technician", "mlt exam", "mlt certification", "clinical laboratory technician", "ascp medical laboratory technician"],
+  "teacherLed": true,
+  "teaches": "an MLT program",
+  "borrowTiger": "htl",
+  "shareTitle": "Free MLT(ASCP) Practice Test",
+  "shareDescription": "200 original questions on the ASCP BOC medical laboratory technician content guideline, four 50-question practice tests.",
+  "searchTests": [["ascp mlt", "US", "ascpmlt"], ["mlt ascp exam", "US", "ascpmlt"], ["medical laboratory technician exam", "US", "ascpmlt"], ["mlt practice test", "US", "ascpmlt"]],
+  "relatedOverrides": ["ascppbt", "htl", "phleb", "phmedtech"],
+  "region": "US",
+  "icon": "microscope"
+}

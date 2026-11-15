@@ -1,0 +1,16 @@
+{
+  "id": "aufirearmsvic", "stateCode": "AUFAVIC", "idBase": 30100, "prefix": "AUFAVIC-",
+  "slug": "/vic-firearms-licence", "landingPath": "/victoria-firearms-safety-test-practice-test", "dataFile": "data/vic-firearms-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 80,
+  "categories": [
+    {"key": "fvicCategories", "perTest": 6, "pool": 24, "segment": "CAT"},
+    {"key": "fvicLicence", "perTest": 7, "pool": 28, "segment": "LIC"},
+    {"key": "fvicPermits", "perTest": 6, "pool": 24, "segment": "PER"},
+    {"key": "fvicCarriage", "perTest": 7, "pool": 28, "segment": "CAR"},
+    {"key": "fvicStorage", "perTest": 5, "pool": 20, "segment": "STO"},
+    {"key": "fvicRules", "perTest": 7, "pool": 28, "segment": "RUL"},
+    {"key": "fvicField", "perTest": 6, "pool": 24, "segment": "FLD"},
+    {"key": "fvicParts", "perTest": 6, "pool": 24, "segment": "PAR"}
+  ],
+  "notes": "Victorian longarm firearm safety course test (Victoria Police Licensing and Regulation Division), required before a first longarm or junior licence by the Firearms Act 1996 (Vic) s 17(1)(c)(iii) and s 20(1)(b)(iii). No published weights or pass mark; split is Tigertest's: Victorian law 31 (categories 6, licences 7, permits, buying and registration 6, carriage, conduct and offences 7, storage and transport 5) and safe use 19 (the ten rules of the Victorian Firearm Safety Code 7, the field 6, firearm types, actions and ammunition 6) of 50."
+}

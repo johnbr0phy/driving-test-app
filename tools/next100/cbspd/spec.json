@@ -1,0 +1,16 @@
+{
+  "id": "cbspd", "stateCode": "CBSPD", "idBase": 29900, "prefix": "CBSPD-",
+  "slug": "/cspdt", "landingPath": "/cbspd-cspdt-practice-test", "dataFile": "data/cbspd-cspdt-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "cbspdRoles", "perTest": 7, "pool": 28, "segment": "ROL"},
+    {"key": "cbspdLife", "perTest": 4, "pool": 16, "segment": "LIF"},
+    {"key": "cbspdDecon", "perTest": 9, "pool": 36, "segment": "DEC"},
+    {"key": "cbspdPrep", "perTest": 8, "pool": 32, "segment": "PRP"},
+    {"key": "cbspdSteril", "perTest": 9, "pool": 36, "segment": "STR"},
+    {"key": "cbspdStorage", "perTest": 6, "pool": 24, "segment": "STO"},
+    {"key": "cbspdPce", "perTest": 3, "pool": 12, "segment": "PCE"},
+    {"key": "cbspdEthics", "perTest": 4, "pool": 16, "segment": "ETH"}
+  ],
+  "notes": "CBSPD Technician Candidate Bulletin, 2026 Version (2020 job analysis): 13/9/19/16/18/11/6/8 percent. Scaled to 50: 6.5/4.5/9.5/8/9/5.5/3/4, rounded by Tigertest to 7/4/9/8/9/6/3/4."
+}

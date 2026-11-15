@@ -1,0 +1,18 @@
+{
+  "id": "hspacis", "stateCode": "HSPACIS", "idBase": 30000, "prefix": "CIS-",
+  "slug": "/cis", "landingPath": "/cis-instrument-specialist-practice-test", "dataFile": "data/hspa-cis-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "cisDecon", "perTest": 6, "pool": 24, "segment": "DEC"},
+    {"key": "cisGrade", "perTest": 4, "pool": 16, "segment": "MAT"},
+    {"key": "cisSpecialty", "perTest": 8, "pool": 32, "segment": "SPC"},
+    {"key": "cisImplant", "perTest": 4, "pool": 16, "segment": "IMP"},
+    {"key": "cisInspect", "perTest": 7, "pool": 28, "segment": "INS"},
+    {"key": "cisRepair", "perTest": 3, "pool": 12, "segment": "REP"},
+    {"key": "cisPackage", "perTest": 5, "pool": 20, "segment": "PKG"},
+    {"key": "cisSterile", "perTest": 3, "pool": 12, "segment": "STR"},
+    {"key": "cisQuality", "perTest": 5, "pool": 20, "segment": "QUA"},
+    {"key": "cisSystems", "perTest": 5, "pool": 20, "segment": "SYS"}
+  ],
+  "notes": "HSPA CIS Exam Content Outline (Revised October 2024): I 12%, II 32%, III 20%, IV 10%, V 6%, VI 20%. Scaled to 50: 6/16/10/5/3/10. Section II split by Tigertest into grades and materials (II.A, II.C) 4, specialty instruments and terminology (II.B) 8, implants and identification methods (II.D, II.E) 4; Section III into inspection and testing (A-D) 7 and preventive maintenance and repair (E) 3; Section VI into training, customer relations and audits (A-C) 5 and tracking, loaners and water (D-F) 5."
+}

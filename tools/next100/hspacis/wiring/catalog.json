@@ -1,0 +1,12 @@
+{
+  "blurb": "Surgical instrument practice on HSPA's Certified Instrument Specialist outline: instrument identification, materials and finishes, inspection and testing, implants, loaners, tracking and water quality.",
+  "org": "Healthcare Sterile Processing Association (HSPA)",
+  "group": "Healthcare certification exams",
+  "aliases": ["cis", "hspa cis", "certified instrument specialist", "instrument specialist", "surgical instrument certification", "instrument identification", "sterile processing instruments", "cis exam"],
+  "teacherLed": true,
+  "teaches": "a sterile processing program",
+  "borrowTiger": "crcst",
+  "shareTitle": "Free CIS Instrument Specialist Practice Test",
+  "shareDescription": "200 original questions on the HSPA CIS outline, from instrument identification to inspection, implants and water quality. Free to start.",
+  "searchTests": [["cis exam", "US", "hspacis"], ["certified instrument specialist", "US", "hspacis"], ["hspa cis", "US", "hspacis"], ["instrument specialist", "US", "hspacis"]]
+}

@@ -1,0 +1,15 @@
+  cbspd: {
+    answer:
+      "The Certified Sterile Processing and Distribution Technician (CSPDT) exam is the Certification Board for Sterile Processing and Distribution's (CBSPD) certification exam for sterile processing and central service technicians. CBSPD's 2026 candidate bulletin gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a PSI test center in 3 hours, four times a year in a one-week window. The passing scaled score is 70, which is not the same as 70 percent correct; candidates testing in the U.S. get an official pass or fail at the end, and only failing candidates receive a numeric score. Certification is valid for five years and is renewed with 100 points of continuing education and related activity over that time.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Scaled score of 70 (not a percent correct)" },
+      { label: "Largest areas", value: "Decontamination and disinfection 19%, sterilization 18%" },
+      { label: "Where", value: "Computer based at PSI test centers, four windows a year" },
+      { label: "Renewal", value: "Every 5 years, with 100 recertification points" },
+      { label: "Run by", value: "Certification Board for Sterile Processing and Distribution (CBSPD)" },
+    ],
+    basedOn: "CBSPD's Technician Candidate Bulletin (2026 version) and 2020 technician test specifications, checked November 2026",
+    source: { name: "CBSPD: Technician certification", url: "https://www.cbspd.net/tech/" },
+  },

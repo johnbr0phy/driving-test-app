@@ -44,6 +44,157 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cpatcp: {
+    answer:
+      "TCP, Tax Compliance and Planning, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. TCP runs 4 hours with 68 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, unchanged for 2027, it covers tax compliance and planning for individuals and personal financial planning (30 to 40%), entity tax compliance (30 to 40%), entity tax planning (10 to 20%) and property transactions (10 to 20%). Candidates are not tested on tax amounts indexed to inflation.",
+    rows: [
+      { label: "Section time", value: "4 hours" },
+      { label: "Multiple-choice questions", value: "68, in two testlets of 34" },
+      { label: "Task-based simulations", value: "7" },
+      { label: "Score weighting", value: "50% MCQ, 50% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Largest areas", value: "Individuals and personal financial planning, and entity compliance, 30 to 40% each" },
+      { label: "Run by", value: "AICPA, with NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
+    source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
+  fortinse: {
+    answer:
+      "Fortinet NSE 1 in Cybersecurity is Fortinet's entry-level certification, and since July 15, 2026 it replaces Fortinet Certified Fundamentals (FCF) in Cybersecurity; people with an active FCF were awarded NSE 1 and NSE 2. To earn it you pass the online exam presented at the end of the free self-paced course Cybersecurity and Cloud Fundamentals on the Fortinet Training Institute, which Fortinet estimates at about 11 hours. The course has ten modules: Intro to Cybersecurity, Threat Landscape, Social Engineering, Malware, Cryptography and the Public Key Infrastructure, Secure Networking, Authentication and Access Control, Endpoint Security, Secure Data and Applications, and Cloud Security and Virtualization. Fortinet does not publish a question count, time limit or pass mark. The certification is active for two years.",
+    rows: [
+      { label: "Replaces", value: "Fortinet Certified Fundamentals (FCF) in Cybersecurity, from July 15, 2026" },
+      { label: "How to earn it", value: "Pass the online exam at the end of the Cybersecurity and Cloud Fundamentals course" },
+      { label: "Course", value: "Free, self-paced, about 11 hours, ten modules" },
+      { label: "Questions, time and pass mark", value: "Not published by Fortinet" },
+      { label: "Valid for", value: "Two years" },
+      { label: "Given by", value: "Fortinet Training Institute" },
+    ],
+    basedOn: "Fortinet's NSE Certification Program Updates 2026 page, the Training Institute NSE 1 and FCF certification pages and the Cybersecurity and Cloud Fundamentals course page, checked November 2026",
+    source: { name: "Fortinet Training Institute: NSE 1 in Cybersecurity", url: "https://training.fortinet.com/local/staticpage/view.php?page=nse_1" },
+  },
+  aufirearmswa: {
+    answer:
+      "In Western Australia, anyone applying for a firearm authority (a licence, permit or approval, including approval as an authorised person) who has not held a licence or been an authorised person in the last 3 years must complete the Firearm Safety Training Course (Firearms Act 2024, s 166; Firearms Regulations 2024, r 224). Part 1 is an online theory course and assessment delivered by Central Regional TAFE: 40 questions drawn at random from a question bank, with at least 80% needed overall across three sections and 3 attempts. Part 2 is in-person practical training and assessment with a licensed firearms dealer or another approved firearms trainer. Licences are issued by the WA Police Force; a first licence cannot be granted until 42 days after applying.",
+    rows: [
+      { label: "Course", value: "Firearm Safety Training Course: Part 1 theory (online, CRTAFE) and Part 2 practical (approved firearms trainer)" },
+      { label: "Theory assessment", value: "40 questions drawn at random, at least 80% overall across three sections" },
+      { label: "Attempts", value: "3, then wait at least 30 days and re-enrol" },
+      { label: "Certificate", value: "Valid 12 months for a licence application" },
+      { label: "Licence age", value: "18 for a licence or permit; 15 for an authorised person approval" },
+      { label: "First licence", value: "Not granted until at least 42 days after applying; terms of 1, 3 or 5 years" },
+      { label: "Licensing body", value: "Western Australia Police Force, Licensing Services" },
+    ],
+    basedOn: "The Firearms Act 2024 and Firearms Regulations 2024 on legislation.wa.gov.au and WA Police Force information sheets on the Firearm Safety Training Course and the CRTAFE theory course, checked November 2026",
+    source: { name: "WA Police Force: Firearm Safety Training Course information sheet", url: "https://www.wa.gov.au/media/159424/download" },
+  },
+  hspacis: {
+    answer:
+      "The Certified Instrument Specialist (CIS) exam is the Healthcare Sterile Processing Association's (HSPA) advanced certification for sterile processing technicians who identify, inspect, test, assemble and track surgical instruments. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. To apply, candidates must hold a current CRCST and document 200 hours of hands-on sterile processing experience, separate from their CRCST hours, and the certification is renewed every year with continuing education.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Set number of scored questions correct (Angoff method); no percentage published" },
+      { label: "Largest section", value: "Instrumentation identification, 32%" },
+      { label: "Eligibility", value: "Current CRCST plus 200 hours of hands-on sterile processing experience" },
+      { label: "Where", value: "Computer based at Prometric test centers" },
+      { label: "Renewal", value: "Every year, with continuing education" },
+      { label: "Run by", value: "Healthcare Sterile Processing Association (HSPA)" },
+    ],
+    basedOn: "HSPA's CIS Exam Content Outline (revised October 2024) and Certification Handbook (revised January 2026), checked November 2026",
+    source: { name: "HSPA: Certified Instrument Specialist (CIS)", url: "https://myhspa.org/certification/certification-overview/certified-instrument-specialist-cis/" },
+  },
+  mace: {
+    answer:
+      "The Medication Aide Certification Examination (MACE) is the national written exam that many states use to certify medication aides, also called medication assistants or MA-Cs: nurse aides with extra training who give selected medications under a licensed nurse's supervision. NCSBN created it and now says it no longer develops or owns it; Credentia develops and runs it for the states that use it. The exam has 60 multiple-choice questions in two hours, 50 of them scored, in three content areas: Authorized Duties 16% (8 questions), Medication Administration, Observation and Reporting 60% (30 questions) and Medication Concepts and Measurements 24% (12 questions). It is taken online, and results appear in the candidate's Credentia account. Who is eligible, how many attempts are allowed and what a certified aide may do are set by each state.",
+    rows: [
+      { label: "Questions", value: "60 multiple choice, 50 scored" },
+      { label: "Time", value: "2 hours" },
+      { label: "Largest area", value: "Medication Administration, Observation and Reporting, 60% (30 questions)" },
+      { label: "Other areas", value: "Medication Concepts and Measurements 24%, Authorized Duties 16%" },
+      { label: "Pass mark", value: "Not published by Credentia" },
+      { label: "Attempts and scope", value: "Set by each state" },
+      { label: "Run by", value: "Credentia (developed by NCSBN, which no longer owns it)" },
+    ],
+    basedOn: "The national MACE content outline in Credentia's state handbooks (2025 and 2026) and NCSBN's MA-C Model Curriculum, checked November 2026",
+    source: { name: "Credentia: national MACE content outline", url: "https://kb.wamace.credentia.com/en/article/national-medication-aide-certification-examination-mace-content-outline" },
+  },
+  ncma: {
+    answer:
+      "The National Certified Medical Assistant (NCMA) exam is the National Center for Competency Testing's (NCCT) certification exam for medical assistants. NCCT's detailed test plan, effective January 2024, gives it 125 scored questions plus 25 unscored pretest questions, with three hours to finish; about 92% are four-option multiple choice and 8% are alternative items such as drag and drop, multi-select and hotspot. Scores run from 200 to 720 and a scaled 575 passes, which is not a fixed percentage. The plan has four content categories: Pharmacology and General Medical Knowledge 18 items, Clinical Medical Procedures 72 (Infection Control and Safety 15, Patient Intake and Care 32, Phlebotomy 15, ECG 10), Medical Administrative Duties 15, and Law and Ethics 20. It is taken on a computer at a test site or by remote proctoring, in English only.",
+    rows: [
+      { label: "Questions", value: "150 (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "575 on a 200 to 720 scale" },
+      { label: "Largest areas", value: "Patient Intake and Care 32, Law and Ethics 20, Pharmacology and General Medical Knowledge 18" },
+      { label: "Eligibility", value: "NCCT-authorized medical assistant program (student or graduate within 5 years), 1 year of full-time work as a medical assistant within the past 5 years, or military training" },
+      { label: "Where", value: "Computer based, at a test site or by remote proctoring; English only" },
+      { label: "Retakes", value: "After 30 days for a 2nd and 3rd try, 90 days for a 4th, then 180 days with an appeal" },
+      { label: "Given by", value: "NCCT" },
+    ],
+    basedOn: "NCCT's NCMA Detailed Test Plan (effective January 2024) and Candidate Handbook (revised January 2026), checked November 2026",
+    source: { name: "NCCT: NCMA Detailed Test Plan", url: "https://www.ncctinc.com/Documents/MA%20Detailed%20Test%20Plan.pdf" },
+  },
+  aufirearmsvic: {
+    answer:
+      "In Victoria, a firearm licence is not issued unless the applicant has satisfactorily completed an approved course of firearms safety and has a good knowledge of firearms law (Firearms Act 1996, s 17). Victoria Police sets the minimum course requirements and approves independent instructors; the longarm course ends with a short multiple-choice safety and law knowledge test sat in person, and a pass earns a certificate for the licence application. Licences are issued by Victoria Police's Licensing and Regulation Division. An adult applicant must be 18 or over, live or work in Victoria, be a fit and proper person with a genuine reason, and be able to meet the storage rules. A first licence cannot be issued until 28 days after applying.",
+    rows: [
+      { label: "Course", value: "Approved firearm safety course for the licence type (longarm course for categories A and B and junior licences)" },
+      { label: "Assessment", value: "Short multiple-choice safety and law knowledge test, sat in person" },
+      { label: "Licence age", value: "18 for an adult licence; 12 to 17 for a junior licence with written parental consent" },
+      { label: "Waiting period", value: "28 days after applying for a licence" },
+      { label: "Licence term", value: "Up to 5 years for categories A and B; up to 3 years for C, D and E" },
+      { label: "Permit to acquire", value: "Needed for every firearm, valid 28 days" },
+      { label: "Licensing body", value: "Victoria Police Licensing and Regulation Division" },
+    ],
+    basedOn: "The Firearms Act 1996 (authorised version in force from 19 August 2026) on legislation.vic.gov.au, the Victoria Police eligibility page and the Firearm Safety Code booklet, checked November 2026",
+    source: { name: "Victoria Police: eligibility requirements for firearm applications", url: "https://www.police.vic.gov.au/firearm-licence-eligibility-requirements" },
+  },
+  cmaa: {
+    answer:
+      "The Certified Medical Administrative Assistant (CMAA) exam is the National Healthcareer Association's (NHA) certification exam for front office and administrative medical assistants. NHA's test plan gives it 110 scored questions plus 25 unscored pretest questions, with 2 hours 15 minutes to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2021 job analysis, has seven domains: Communication and Professionalism 21 items, Patient Encounter 21, Medical Law, Ethics, and Compliance 17, Scheduling 16, Medical Practice Administrative Procedures and Logistics 14, Billing and Revenue Cycle 11, and Foundational Knowledge 10. It is taken at a school, a PSI test center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "135 (110 scored, 25 pretest)" },
+      { label: "Time", value: "2 hours 15 minutes" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Largest domains", value: "Communication and Professionalism 21, Patient Encounter 21, Law and Compliance 17" },
+      { label: "Eligibility", value: "Training program within 5 years, or diploma plus 1 year of supervised work in the last 3 years (or 2 in the last 5)" },
+      { label: "Where", value: "School, PSI test center or live remote proctoring" },
+      { label: "Retakes", value: "After 30 days; three attempts, then one year between attempts" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's CMAA test plan (2021 job analysis), CMAA certification page and Candidate Handbook (updated October 2026), checked November 2026",
+    source: { name: "NHA: Medical Administrative Assistant (CMAA)", url: "https://www.nhanow.com/certifications/medical-administrative-assistant" },
+  },
+  cbspd: {
+    answer:
+      "The Certified Sterile Processing and Distribution Technician (CSPDT) exam is the Certification Board for Sterile Processing and Distribution's (CBSPD) certification exam for sterile processing and central service technicians. CBSPD's 2026 candidate bulletin gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a PSI test center in 3 hours, four times a year in a one-week window. The passing scaled score is 70, which is not the same as 70 percent correct; candidates testing in the U.S. get an official pass or fail at the end, and only failing candidates receive a numeric score. Certification is valid for five years and is renewed with 100 points of continuing education and related activity over that time.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Scaled score of 70 (not a percent correct)" },
+      { label: "Largest areas", value: "Decontamination and disinfection 19%, sterilization 18%" },
+      { label: "Where", value: "Computer based at PSI test centers, four windows a year" },
+      { label: "Renewal", value: "Every 5 years, with 100 recertification points" },
+      { label: "Run by", value: "Certification Board for Sterile Processing and Distribution (CBSPD)" },
+    ],
+    basedOn: "CBSPD's Technician Candidate Bulletin (2026 version) and 2020 technician test specifications, checked November 2026",
+    source: { name: "CBSPD: Technician certification", url: "https://www.cbspd.net/tech/" },
+  },
+  ascpmlt: {
+    answer:
+      "The MLT(ASCP) exam is the medical laboratory technician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the MLT(ASCP) credential (MLT(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 100 multiple-choice questions with one best answer in 2 hours 30 minutes, delivered as computer adaptive testing. Content areas are Chemistry 20 to 25%, Hematology 20 to 25%, Blood Banking 15 to 20%, Microbiology 15 to 20%, and Urinalysis and Other Body Fluids, Immunology and Laboratory Operations 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score from 100 to 999, with 400 to pass.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one best answer" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Format", value: "Computer adaptive testing (CAT)" },
+      { label: "Largest areas", value: "Chemistry and Hematology, 20 to 25% each" },
+      { label: "Pass mark", value: "Scaled score of 400 on a 100 to 999 scale" },
+      { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+    ],
+    basedOn: "The ASCP BOC Medical Laboratory Technician MLT(ASCP) and MLT(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
+    source: { name: "ASCP BOC: MLT(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mlt_content_guideline.pdf" },
+  },
   aufirearmsnsw: {
       answer:
         "In New South Wales, a person who has never held a firearms licence must complete the firearms training and safety course prescribed for the licence before it can be issued (Firearms Act 1996, s 11(3)(b)). The NSW Police users guide calls the longarm course the Firearms Licence Qualification course, run by approved clubs, organisations or trainers, with theory and a practical component. Licences are issued by the NSW Police Force Firearms Registry. An applicant must be 18 or over, an NSW resident, have a genuine reason such as approved club membership or permission to shoot on rural land, and be able to meet the storage rules. A first licence cannot be issued until 28 days after applying, and since 1 July 2026 a licence lasts up to 2 years.",

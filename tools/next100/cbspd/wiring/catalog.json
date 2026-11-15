@@ -1,0 +1,43 @@
+{
+  "blurb": "Sterile processing practice on CBSPD's technician exam outline: safety and OSHA rules, microbiology, decontamination, instrument prep and packaging, sterilization, storage and ethics.",
+  "org": "Certification Board for Sterile Processing and Distribution (CBSPD)",
+  "group": "Healthcare certification exams",
+  "groupAfter": "crcst",
+  "aliases": [
+    "cbspd",
+    "cspdt",
+    "cbspd exam",
+    "cbspd cspdt",
+    "certified sterile processing and distribution technician",
+    "sterile processing and distribution",
+    "cbspd technician",
+    "cspdt exam"
+  ],
+  "teacherLed": true,
+  "teaches": "a sterile processing program",
+  "borrowTiger": "crcst",
+  "shareTitle": "Free CBSPD CSPDT Practice Test",
+  "shareDescription": "200 original questions on CBSPD's technician exam outline, from decontamination to sterilization and storage. Free to start.",
+  "searchTests": [
+    [
+      "cbspd",
+      "US",
+      "cbspd"
+    ],
+    [
+      "cspdt",
+      "US",
+      "cbspd"
+    ],
+    [
+      "cbspd cspdt",
+      "US",
+      "cbspd"
+    ],
+    [
+      "certified sterile processing and distribution technician",
+      "US",
+      "cbspd"
+    ]
+  ]
+}

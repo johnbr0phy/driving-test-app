@@ -1,0 +1,17 @@
+{
+  "id": "mace", "stateCode": "MACE", "idBase": 30700, "prefix": "MACE-",
+  "slug": "/medication-aide", "landingPath": "/medication-aide-practice-test", "dataFile": "data/medication-aide-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "maceRole", "perTest": 5, "pool": 20, "segment": "ROL"},
+    {"key": "maceEthics", "perTest": 3, "pool": 12, "segment": "ETH"},
+    {"key": "maceOrders", "perTest": 7, "pool": 28, "segment": "ORD"},
+    {"key": "maceSafety", "perTest": 6, "pool": 24, "segment": "SAF"},
+    {"key": "maceRoutes", "perTest": 6, "pool": 24, "segment": "RTE"},
+    {"key": "maceClasses", "perTest": 6, "pool": 24, "segment": "CLS"},
+    {"key": "maceReport", "perTest": 5, "pool": 20, "segment": "RPT"},
+    {"key": "maceConcepts", "perTest": 7, "pool": 28, "segment": "CON"},
+    {"key": "maceForms", "perTest": 5, "pool": 20, "segment": "FRM"}
+  ],
+  "notes": "National MACE content outline (Credentia, which develops and owns the MACE since NCSBN handed it over): Authorized Duties 16% = 8, Medication Administration, Observation and Reporting 60% = 30, Medication Concepts and Measurements 24% = 12, of 50 scored items. Splits inside each area are Tigertest's."
+}

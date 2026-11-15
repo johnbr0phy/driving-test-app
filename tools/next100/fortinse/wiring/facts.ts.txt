@@ -1,0 +1,14 @@
+  fortinse: {
+    answer:
+      "Fortinet NSE 1 in Cybersecurity is Fortinet's entry-level certification, and since July 15, 2026 it replaces Fortinet Certified Fundamentals (FCF) in Cybersecurity; people with an active FCF were awarded NSE 1 and NSE 2. To earn it you pass the online exam presented at the end of the free self-paced course Cybersecurity and Cloud Fundamentals on the Fortinet Training Institute, which Fortinet estimates at about 11 hours. The course has ten modules: Intro to Cybersecurity, Threat Landscape, Social Engineering, Malware, Cryptography and the Public Key Infrastructure, Secure Networking, Authentication and Access Control, Endpoint Security, Secure Data and Applications, and Cloud Security and Virtualization. Fortinet does not publish a question count, time limit or pass mark. The certification is active for two years.",
+    rows: [
+      { label: "Replaces", value: "Fortinet Certified Fundamentals (FCF) in Cybersecurity, from July 15, 2026" },
+      { label: "How to earn it", value: "Pass the online exam at the end of the Cybersecurity and Cloud Fundamentals course" },
+      { label: "Course", value: "Free, self-paced, about 11 hours, ten modules" },
+      { label: "Questions, time and pass mark", value: "Not published by Fortinet" },
+      { label: "Valid for", value: "Two years" },
+      { label: "Given by", value: "Fortinet Training Institute" },
+    ],
+    basedOn: "Fortinet's NSE Certification Program Updates 2026 page, the Training Institute NSE 1 and FCF certification pages and the Cybersecurity and Cloud Fundamentals course page, checked November 2026",
+    source: { name: "Fortinet Training Institute: NSE 1 in Cybersecurity", url: "https://training.fortinet.com/local/staticpage/view.php?page=nse_1" },
+  },

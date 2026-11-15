@@ -642,3 +642,62 @@ Notes for every international batch 4 builder:
   of New Zealand, the Singapore Traffic Police, MAS, SCI or IBF, or LTA on the landing.
 - British spelling for Ireland, New Zealand and Singapore (licence, centre); euro (€), NZ dollars ($)
   and Singapore dollars (S$) only where a stem needs money, never a fee or fine.
+
+## Build-tests run 2026-11-15 (12 exams from the live ranking)
+
+Started by John with `/build-tests`. Branch `claude/build-tests-2026-11-15`. All Premium (career and
+licence exams): v1 exams get the standard v1 locks; v2 exams go in `PREMIUM_V2_IDS` (put that line
+in WIRING.md). Write `WIRING.md` in your tools folder in the same sections as your template's
+`WIRING.md` (or `wiring/` folder: config, types, labels, theme, catalog, facts, claude.md), as
+paste-ready blocks. The hue below was run through the clash checker against every theme on main
+and the other eleven in this run: use it as given.
+
+| id | Test | engine | idBase | stateCode | prefix | slug | landing | template | hue |
+|---|---|---|---|---|---|---|---|---|---|
+| cbspd | CBSPD Certified Sterile Processing and Distribution Technician (CSPDT) | v1 | 29900 | CBSPD | CBSPD- | /cspdt | /cbspd-cspdt-practice-test | tools/next100/hspacer | 161 75% 38% |
+| hspacis | HSPA Certified Instrument Specialist (CIS) | v1 | 30000 | HSPACIS | CIS- | /cis | /cis-instrument-specialist-practice-test | tools/next100/hspacer | 131 25% 22% |
+| aufirearmsvic | Victoria firearms safety course test (Victoria Police Licensing and Regulation Division) | v1 | 30100 | AUFAVIC | AUFAVIC- | /vic-firearms-licence | /victoria-firearms-safety-test-practice-test | tools/next100/aufirearmsnsw | 241 45% 38% |
+| aufirearmswa | WA Firearm Awareness Test (WA Police Force) | v1 | 30200 | AUFAWA | AUFAWA- | /wa-firearms-licence | /wa-firearm-awareness-test-practice-test | tools/next100/aufirearmsnsw | 49 55% 20% |
+| ascpmlt | ASCP BOC Medical Laboratory Technician, MLT(ASCP) | v1 | 30300 | ASCPMLT | MLT- | /ascp-mlt | /ascp-mlt-practice-test | tools/next100/ascppbt | 151 25% 22% |
+| ascpmla | ASCP BOC Medical Laboratory Assistant, MLA(ASCP) | v1 | 30400 | ASCPMLA | MLA- | /ascp-mla | /ascp-mla-practice-test | tools/next100/ascppbt | 260 45% 20% |
+| cmaa | NHA Certified Medical Administrative Assistant (CMAA) | v1 | 30500 | CMAA | CMAA- | /cmaa | /cmaa-practice-test | tools/next100/rma | 330 45% 22% |
+| ncma | NCCT National Certified Medical Assistant (NCMA) | v1 | 30600 | NCMA | NCMA- | /ncma | /ncma-practice-test | tools/next100/rma | 15 20% 22% |
+| mace | NCSBN Medication Aide Certification Examination (MACE) | v1 | 30700 | MACE | MACE- | /medication-aide | /medication-aide-practice-test | tools/next100/rpt | 300 45% 22% |
+| cpatcp | CPA Exam TCP (Tax Compliance and Planning) discipline, multiple choice only | v1 | 30800 | CPATCP | CPATCP- | /cpa-tcp | /cpa-tcp-practice-test | tools/next100/cpareg | 122 25% 26% |
+| fortinse | Fortinet Certified Fundamentals (FCF) in Cybersecurity exam | v2 | n/a | n/a | FCF- | /fortinet-fcf | /fortinet-fcf-practice-test | tools/cysa (v2; read tools/next100/fortigate for Fortinet sources) | 355 35% 20% |
+| togaf | TOGAF Standard, 10th Edition, Foundation (Part 1) | v2 | n/a | n/a | TOGAF- | /togaf | /togaf-foundation-practice-test | tools/itil | 270 35% 22% |
+
+Notes for every builder in this run:
+- Stop rule, strictly: if you cannot fetch the exam owner's own current outline, test plan,
+  blueprint or syllabus (or, for the two firearms tests, the state's Firearms Act and the
+  police's own course or handbook material), STOP before writing questions. Write only
+  `tools/next100/<id>/FAILED.md` with every URL you tried and what happened, and report
+  "FAILED: <reason>". A thin bank written from prep sites is worse than none.
+- Overlap: `cbspd` is a different exam from HSPA's CRCST (`data/crcst-questions.json`, whose copy
+  says it also covers CBSPD CSPDT). Build it only from CBSPD's own CSPDT content outline, and in
+  WIRING.md say in two lines what differs (owner, outline areas, weights). Grep the crcst,
+  hspacer and hspachl banks and keep clear of their stems and fact-and-answer pairs. `hspacis` is
+  the HSPA instrument specialist exam: its own outline (instrument identification, care, handling),
+  kept clear of crcst, hspacer, hspachl, cst and cbspd. `cmaa` and `ncma` share medical-assistant
+  facts with `ccma`, `cma`, `rma` and each other: grep those banks and each other's files on disk.
+  `ascpmlt` and `ascpmla` share the lab with `ascppbt`, `rpt`, `phleb`, `phmedtech` and `htl`:
+  grep them and each other. `mace` overlaps `cna` and the nursing banks on basics. `cpatcp` must
+  not repeat `data/cpa-reg-questions.json` (REG already covers individual and entity tax basics;
+  TCP is the planning discipline: keep to the TCP blueprint's own tasks). The two firearms banks
+  must stay clear of `aufirearmsnsw`, `aufirearmsqld`, `nzfirearms`, `capal`, `crfsc` and each
+  other: state law only for legal items (Firearms Act 1996 (Vic) and its regulations; Firearms
+  Act 1973 (WA) and Firearms Regulations 1974, or the Firearms Act 2024 (WA) if it is in force on
+  the build date: check). `fortinse` must stay clear of `fortigate`, `secplus` and `cysa`.
+  `togaf` is not ITIL: no repeated facts with `itil`.
+- Money: worked amounts inside a computation are fine (TCP); no fees, indexed limits or yearly
+  thresholds unless the item names the tax year and sources.md cites the IRS figure.
+- Images: lab, instrument and strip items describe what is seen in words.
+- Never name a commercial prep provider. Say "not affiliated with" the exam body on the landing.
+- v2 builders: run `tools/validate_v2_bank.py` from a /tmp copy with its bankSizes write stubbed,
+  and put the bankSizes, registry, PREMIUM_V2_IDS, classQuestions and mcpV2Practice lines in
+  WIRING.md.
+- Wiring format for this run (v1): a `tools/next100/<id>/wiring/` folder exactly like
+  `tools/next100/hspachl/wiring/` (catalog.json, claude.md, config.ts.txt, facts.ts.txt,
+  labels.json, theme.txt, types.txt), so the integrator can apply it by script. v2 builders write
+  a WIRING.md like `tools/cysa/BRIEF.md` describes plus the same catalog.json, facts.ts.txt,
+  theme.txt and claude.md files in `wiring/`.

@@ -1,0 +1,14 @@
+{
+  "blurb": "NHA Certified Medical Administrative Assistant exam on the CMAA test plan: medical terms and EHRs, patient communication, HIPAA and compliance, scheduling and telehealth, check-in and insurance, billing and the revenue cycle, and front office procedures.",
+  "org": "National Healthcareer Association (NHA) · CMAA test plan (2021 job analysis)",
+  "group": "Healthcare certification exams",
+  "groupAfter": "rma",
+  "aliases": ["cmaa", "nha cmaa", "medical administrative assistant", "certified medical administrative assistant", "medical office assistant", "front office medical assistant", "medical receptionist", "medical secretary", "administrative medical assistant", "nha medical administrative assistant"],
+  "teacherLed": true,
+  "teaches": "a medical administrative assistant program",
+  "borrowTiger": "ccma",
+  "shareTitle": "Free CMAA Practice Test",
+  "shareDescription": "200 original questions on the NHA CMAA test plan for medical administrative assistants. Free to start.",
+  "searchTests": [["cmaa", "US", "cmaa"], ["nha cmaa", "US", "cmaa"], ["medical administrative assistant", "US", "cmaa"], ["medical office assistant exam", "US", "cmaa"]],
+  "region": "TEST_REGIONS: cmaa is US (the default; add a line only if the file lists every US exam)"
+}

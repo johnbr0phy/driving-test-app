@@ -1,0 +1,16 @@
+{
+  "id": "aufirearmswa", "stateCode": "AUFAWA", "idBase": 30200, "prefix": "AUFAWA-",
+  "slug": "/wa-firearms-licence", "landingPath": "/wa-firearm-safety-course-practice-test", "dataFile": "data/wa-firearms-questions.json",
+  "testCount": 5, "questionsPerTest": 40, "passPct": 80,
+  "categories": [
+    {"key": "fwaLicences", "perTest": 5, "pool": 25, "segment": "LIC"},
+    {"key": "fwaHunting", "perTest": 5, "pool": 25, "segment": "HUN"},
+    {"key": "fwaEligibility", "perTest": 5, "pool": 25, "segment": "ELI"},
+    {"key": "fwaCategories", "perTest": 5, "pool": 25, "segment": "CAT"},
+    {"key": "fwaStorage", "perTest": 6, "pool": 30, "segment": "STO"},
+    {"key": "fwaConduct", "perTest": 5, "pool": 25, "segment": "CON"},
+    {"key": "fwaHandling", "perTest": 5, "pool": 25, "segment": "HAN"},
+    {"key": "fwaField", "perTest": 4, "pool": 20, "segment": "FLD"}
+  ],
+  "notes": "WA Firearm Safety Training Course, Part 1 theory assessment (CRTAFE, online), required since 31 March 2025 by the Firearms Act 2024 (WA) s 166 and Firearms Regulations 2024 r 224 for first-time firearm authority applicants and authorised persons; it replaced the Firearm Awareness Test of the repealed Firearms Act 1973 and Firearms Regulations 1974. Real assessment: 40 questions drawn at random from a bank, at least 80% overall across three sections (WA Police information sheet). Five 40-question tests at 80% model it. Topic weights are not published; split is Tigertest's: WA law 31 (licences 5, hunting permissions 5, eligibility 5, categories and ammunition 5, storage and transit 6, conduct and reporting 5) and safe use 9 (possession, care and actions 5, ranges, field and young shooters 4) of 40."
+}

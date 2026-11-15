@@ -102,6 +102,11 @@
   "https://assets-us-01.kc-usercontent.com:443/406ac8c6-58e8-00b3-e3c1-0c312965deb2/99c55d51-15bb-4a87-89f3-d6e7013d8a74/Radiography_Content_Specifications_2027.pdf",
   "https://www.arrt.org/pages/arrt-reference-documents/by-document-type/examination-content-specifications"
  ],
+ "ascpmlt": [
+  "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mlt_content_guideline.pdf",
+  "https://www.ascp.org/boc/earn-a-credential/examination-process/about-the-examination",
+  "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-630"
+ ],
  "ascppbt": [
   "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_pbt_content_guideline.pdf?sfvrsn=aa1319c7_1",
   "https://www.who.int/publications/i/item/9789241599221",
@@ -135,6 +140,16 @@
   "https://training.gov.au/api/training/11029NAT",
   "https://training.gov.au/api/training/NAT11029001",
   "https://training.gov.au/api/training/NAT11029002"
+ ],
+ "aufirearmsvic": [
+  "https://www.police.vic.gov.au/firearm-licence-eligibility-requirements",
+  "https://www.police.vic.gov.au/sites/default/files/2020-06/firearm-safety-booklet-2020.pdf",
+  "https://police.vic.gov.au/sites/default/files/2020-06/Safety%20Course%20Powerpoint%20_0.pdf"
+ ],
+ "aufirearmswa": [
+  "https://legislation.wa.gov.au/legislation/statutes.nsf/law_a147438.html",
+  "https://www.wa.gov.au/media/122944/download",
+  "https://legislation.wa.gov.au/legislation/statutes.nsf/law_s54842.html"
  ],
  "aufirstaid": [
   "https://training.gov.au/assets/HLT/HLTAID011_AssessmentRequirements_R1.pdf",
@@ -353,6 +368,11 @@
   "https://www.ctcexams.nesinc.com/content/docs/CBESTUpdatedTestSpecs.pdf",
   "https://www.ctcexams.nesinc.com/Content/StudyGuide/CA_SG_obj_CBEST.htm"
  ],
+ "cbspd": [
+  "https://www.cbspd.net/wp-content/uploads/2026/02/Tech-CB-wo-App-2026.pdf",
+  "https://cbspd.net/wp-content/uploads/2023/09/Tech-CB-wo-APP-923.pdf",
+  "https://www.cbspd.net/wp-content/uploads/2021/08/CBSPD-Tech-New-with-125-questions-2020.pdf"
+ ],
  "cca": [
   "https://ahima.org/certification/cca/",
   "https://ahima.org/media/oqul34x1/cca-content-outline-2024.pdf",
@@ -411,6 +431,11 @@
   "https://www.aama-ntl.org/certification",
   "https://www.aama-ntl.org/certification/testing-options"
  ],
+ "cmaa": [
+  "https://info.nhanow.com/hubfs/Test%20Plans/NHA_CMAA_Test_Plan_2021.pdf",
+  "https://www.nhanow.com/docs/default-source/test-plans/nha_cmaa_test_plan_2021.pdf",
+  "https://www.nhanow.com/certifications/medical-administrative-assistant"
+ ],
  "cogat": [
   "https://riversideinsights.com/hubfs/CogAT/CogAT%20Overview%20Brochure.pdf",
   "https://riversideinsights.com/hubfs/CitC/Overview_of_CogAT_for_Parents.pdf",
@@ -430,6 +455,11 @@
   "https://assets.ctfassets.net/rb9cdnjh59cm/71s84dkfo3KEsoLlz4vv6G/f4314469ec5368b5b4dd0d0184f00a71/CPA_Exam_Blueprints_2026.pdf",
   "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam",
   "https://accounting.uworld.com/cpa-review/cpa-exam/changes/"
+ ],
+ "cpatcp": [
+  "https://assets.ctfassets.net/rb9cdnjh59cm/5d2r66sSSE8wJRZTqAshlE/f97ec39c394eeb61b20a5824784306df/CPA_Exam_Blueprints_2026.pdf",
+  "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam",
+  "https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf"
  ],
  "cpc": [
   "https://aapc.com/certifications/cpc/taking-the-cpc-exam"
@@ -597,6 +627,11 @@
   "https://nseti-pdfs.s3.us-west-2.amazonaws.com/desc/FortiGate_7.6_Administrator_Exam_Description.pdf",
   "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator"
  ],
+ "fortinse": [
+  "https://www.fortinet.com/nse-training-update",
+  "https://training.fortinet.com/local/staticpage/view.php?page=nse_1",
+  "https://training.fortinet.com/local/staticpage/view.php?page=library_cybersecurity-and-cloud-fundamentals"
+ ],
  "frcode": [
   "https://www.service-public.gouv.fr/particuliers/vosdroits/F33694",
   "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494",
@@ -707,6 +742,11 @@
   "https://myhspa.org/wp-content/uploads/2026/03/HSPA_CHL_Content_Outline_2026.pdf",
   "https://myhspa.org/certified-healthcare-leader-chl-pilot-exam/",
   "https://myhspa.org/certification/certification-overview/certified-healthcare-leader-chl/"
+ ],
+ "hspacis": [
+  "https://myhspa.org/wp-content/uploads/2025/02/HSPA_CIS_Content_Outline_2024.pdf",
+  "https://myhspa.org/forms-and-applications.html",
+  "https://myhspa.org/certification/certification-overview/certified-instrument-specialist-cis/"
  ],
  "hspt": [
   "https://www.ststesting.com/hsp/index.html",
@@ -876,6 +916,11 @@
   "https://www.lsac.org/lsat/taking-lsat/test-format",
   "https://www.lsac.org/lsat/taking-lsat/test-format/reading-comprehension"
  ],
+ "mace": [
+  "https://kb.wamace.credentia.com/en/article/national-medication-aide-certification-examination-mace-content-outline",
+  "https://co-mace.credentia.com/en/article/the-medication-aide-certification-examination-overview",
+  "https://www.ncsbn.org/exams/nnaap-and-mace.page"
+ ],
  "mapgrowth": [
   "https://www.nwea.org/uploads/CCSS_2025.pdf",
   "https://www.nwea.org/uploads/MAP-Growth-Technical-Report-2025.pdf",
@@ -965,6 +1010,11 @@
   "https://www.nbcc.org/exams/nce",
   "https://www.nbcc.org/assets/exam/nce_content_outline.pdf",
   "https://sanbcccore.blob.core.windows.net/nbcc-assets/assets/exam/nce_content_outline.pdf"
+ ],
+ "ncma": [
+  "https://www.ncctinc.com/Documents/MA%20Detailed%20Test%20Plan.pdf",
+  "https://www.ncctinc.com/forms-and-documents",
+  "https://www.ncctinc.com/Documents/CandidateHandbook.pdf"
  ],
  "nda": [
   "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",

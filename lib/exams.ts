@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
+export type ExamId = "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -6934,6 +6934,638 @@ const aufirearmsnsw: ExamConfig = {
   },
 };
 
+const ascpmlt: ExamConfig = {
+  id: "ascpmlt",
+  stateCode: "ASCPMLT",
+  idBase: 30300,
+  slug: "/ascp-mlt",
+  landingPath: "/ascp-mlt-practice-test",
+  name: "MLT(ASCP) Practice Test",
+  shortName: "MLT(ASCP)",
+  examLabel: "MLT exam",
+  fullName: "ASCP Medical Laboratory Technician MLT(ASCP) Certification Exam",
+  questionIdPrefix: "MLT-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASCP BOC Medical Laboratory Technician MLT(ASCP) and MLT(ASCPi) Examination Content Guideline
+  // (revised September 25, 2025, checked November 2026): 100 questions in 2 hours 30 minutes,
+  // computer adaptive. Blood Banking 15-20%, Urinalysis and Other Body Fluids 5-10%, Chemistry
+  // 20-25%, Hematology 20-25%, Immunology 5-10%, Microbiology 15-20%, Laboratory Operations 5-10%.
+  // Per 50-question fixed form: 9/4/11/11/4/8/3 (18/8/22/22/8/16/6%), all inside the ranges;
+  // blood banking 4/5, chemistry 6/5 and hematology 7/4 are Tigertest's splits. The real exam
+  // is CAT and scaled; 70% here is a readiness marker. All items original.
+  blueprint: {
+    mltBbProd: 4,
+    mltBbSero: 5,
+    mltUa: 4,
+    mltChemGen: 6,
+    mltChemSpec: 5,
+    mltHeme: 7,
+    mltHemost: 4,
+    mltImmuno: 4,
+    mltMicro: 8,
+    mltOps: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30301, name: "Blood Banking", categories: ["mltBbProd", "mltBbSero"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 30302, name: "Urinalysis & Chemistry", categories: ["mltUa", "mltChemGen", "mltChemSpec"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 30303, name: "Hematology & Hemostasis", categories: ["mltHeme", "mltHemost"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 30304, name: "Immunology, Micro & Lab Operations", categories: ["mltImmuno", "mltMicro", "mltOps"], size: 60, weightLabel: "15 of 50 test questions" },
+  ],
+  categoryLabels: {
+    mltBbProd: "Blood Products & Transfusion Practice",
+    mltBbSero: "Blood Groups & Serologic Testing",
+    mltUa: "Urinalysis & Other Body Fluids",
+    mltChemGen: "Carbohydrates, Lipids, Proteins & Enzymes",
+    mltChemSpec: "Acid-Base, Electrolytes, Hormones & Drugs",
+    mltHeme: "Hematology Physiology, Disease & Testing",
+    mltHemost: "Hemostasis",
+    mltImmuno: "Immunology",
+    mltMicro: "Microbiology",
+    mltOps: "Laboratory Operations",
+  },
+  copy: {
+    guestPrompt: "to save your MLT(ASCP) progress and track every question you miss",
+    trainingHeading: "Train by BOC content area",
+    trainingSub: "Four sets covering the seven content areas of the ASCP BOC MLT guideline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Blood Banking.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the MLT(ASCP).",
+    ],
+    sourceLine: "Based on the ASCP BOC MLT(ASCP) Examination Content Guideline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the American Society for Clinical Pathology.",
+    analyticsKey: "ascpmlt",
+  },
+};
+
+const cbspd: ExamConfig = {
+  id: "cbspd",
+  stateCode: "CBSPD",
+  idBase: 29900,
+  slug: "/cspdt",
+  landingPath: "/cbspd-cspdt-practice-test",
+  name: "CBSPD CSPDT Practice Test",
+  shortName: "CSPDT (CBSPD)",
+  examLabel: "CSPDT exam",
+  fullName: "Certified Sterile Processing and Distribution Technician (CSPDT) Exam",
+  questionIdPrefix: "CBSPD-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // CBSPD Technician Candidate Bulletin, 2026 Version (exam built on the 2020 Job Analysis):
+  // 1 Roles and Responsibilities 13%, 2 Life Science 9%, 3 Decontamination and Disinfection 19%,
+  // 4 Preparation and Handling 16%, 5 Sterilization 18%, 6 Sterile Storage, Inventory Management
+  // and Distribution 11%, 7 Patient Care Equipment 6%, 8 Ethics 8%. Of 50: 6.5/4.5/9.5/8/9/5.5/3/4,
+  // rounded by Tigertest to 7/4/9/8/9/6/3/4. The real exam is 150 multiple-choice questions (125
+  // scored, 25 pretest) in 3 hours at PSI; passing scaled score 70, which is not a percent correct,
+  // so 70% here is a readiness marker. All items original.
+  blueprint: {
+    cbspdRoles: 7,
+    cbspdLife: 4,
+    cbspdDecon: 9,
+    cbspdPrep: 8,
+    cbspdSteril: 9,
+    cbspdStorage: 6,
+    cbspdPce: 3,
+    cbspdEthics: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29901, name: "Roles, Safety & Life Science", categories: ["cbspdRoles", "cbspdLife"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 29902, name: "Decontamination & Disinfection", categories: ["cbspdDecon"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 29903, name: "Preparation & Handling", categories: ["cbspdPrep"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 29904, name: "Sterilization", categories: ["cbspdSteril"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 29905, name: "Storage, Equipment & Ethics", categories: ["cbspdStorage", "cbspdPce", "cbspdEthics"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cbspdRoles: "Roles & Responsibilities",
+    cbspdLife: "Life Science",
+    cbspdDecon: "Decontamination & Disinfection",
+    cbspdPrep: "Preparation & Handling",
+    cbspdSteril: "Sterilization",
+    cbspdStorage: "Sterile Storage, Inventory & Distribution",
+    cbspdPce: "Patient Care Equipment",
+    cbspdEthics: "Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your CSPDT progress and track every question you miss",
+    trainingHeading: "Train by CBSPD outline area",
+    trainingSub: "Five sets covering the eight areas of the CBSPD technician exam outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Roles, Safety & Life Science.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CSPDT.",
+    ],
+    sourceLine: "Based on the CBSPD Technician Examination Outline (2026 candidate bulletin). Original questions; 50 per test, weighted like the real exam. Not affiliated with the Certification Board for Sterile Processing and Distribution.",
+    analyticsKey: "cbspd",
+  },
+};
+
+const cmaa: ExamConfig = {
+  id: "cmaa",
+  stateCode: "CMAA",
+  idBase: 30500,
+  slug: "/cmaa",
+  landingPath: "/cmaa-practice-test",
+  name: "CMAA Practice Test",
+  shortName: "CMAA (NHA)",
+  examLabel: "CMAA exam",
+  fullName: "Certified Medical Administrative Assistant (CMAA) Exam",
+  questionIdPrefix: "CMAA-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA Certified Medical Administrative Assistant (CMAA) Test Plan, based on the 2021 job
+  // analysis (Rev01222022), still the plan NHA links for the current exam (checked November
+  // 2026): 110 scored + 25 pretest items in 2 hours 15 minutes. Domains of 110: 1 Foundational
+  // Knowledge 10, 2 Communication and Professionalism 21, 3 Medical Law, Ethics, and Compliance 17,
+  // 4 Scheduling 16, 5 Patient Encounter 21, 6 Billing and Revenue Cycle 11, 7 Medical Practice
+  // Administrative Procedures and Logistics 14. Scaled to 50: 5/9/8/7/10/5/6 (Tigertest's
+  // rounding). NHA reports a scaled score (200 to 500, 390 to pass, not a percent); 70% here is
+  // a readiness marker. All items original.
+  blueprint: {
+    cmaaFoundations: 5,
+    cmaaComm: 9,
+    cmaaLaw: 8,
+    cmaaScheduling: 7,
+    cmaaEncounter: 10,
+    cmaaBilling: 5,
+    cmaaOffice: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30501, name: "Foundations & Communication", categories: ["cmaaFoundations", "cmaaComm"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 30502, name: "Law, Ethics & Scheduling", categories: ["cmaaLaw", "cmaaScheduling"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 30503, name: "Patient Encounter", categories: ["cmaaEncounter"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 30504, name: "Billing & Office Procedures", categories: ["cmaaBilling", "cmaaOffice"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cmaaFoundations: "Foundational Knowledge",
+    cmaaComm: "Communication & Professionalism",
+    cmaaLaw: "Medical Law, Ethics & Compliance",
+    cmaaScheduling: "Scheduling",
+    cmaaEncounter: "Patient Encounter",
+    cmaaBilling: "Billing & Revenue Cycle",
+    cmaaOffice: "Office Procedures & Logistics",
+  },
+  copy: {
+    guestPrompt: "to save your CMAA progress and track every question you miss",
+    trainingHeading: "Train by NHA test plan domain",
+    trainingSub: "Four sets covering all seven domains of the NHA CMAA test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Foundations & Communication.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CMAA.",
+    ],
+    sourceLine: "Based on the NHA CMAA test plan (2021 job analysis). Original questions; 50 per test, weighted like the real exam. Not affiliated with the National Healthcareer Association.",
+    analyticsKey: "cmaa",
+  },
+};
+// Add "cmaa" to the ExamId union and append cmaa to EXAMS right after rma.
+// IDs: tests 30501-30504, sets 30501-30504 (block 30500 assigned for this run).
+
+const aufirearmsvic: ExamConfig = {
+  id: "aufirearmsvic",
+  stateCode: "AUFAVIC",
+  idBase: 30100,
+  slug: "/vic-firearms-licence",
+  landingPath: "/victoria-firearms-safety-test-practice-test",
+  name: "Victoria Firearms Safety Practice Test",
+  shortName: "Vic Firearms Safety",
+  examLabel: "firearm safety course test",
+  fullName: "Victorian Firearm Safety Course Test (Longarm) for a Firearm Licence",
+  questionIdPrefix: "AUFAVIC-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Victorian longarm firearm safety course and its multiple-choice safety and law knowledge test
+  // (Victoria Police Licensing and Regulation Division sets the minimum course requirements and
+  // approves independent instructors), required before a first longarm or junior licence by the
+  // Firearms Act 1996 (Vic) s 17(1)(c)(iii) and s 20(1)(b)(iii). No weights, count or pass mark
+  // are published, so the split is Tigertest's: Victorian law 31 (categories 6, licences 7,
+  // permits, buying and registration 6, carriage, conduct and offences 7, storage and transport 5)
+  // and safe use 19 (the ten rules of the Victorian Firearm Safety Code 7, the field 6, firearm
+  // types, actions and ammunition 6). Every legal rule is from the Firearms Act 1996 as in force
+  // from 19 August 2026 (authorised version 107: the 2021 steel safe standard in Schedule 4, lever
+  // action shotguns in B or D since 2019); the uncommenced Parts 6 and 7 of the Firearms Amendment
+  // Act 2026 (citizenship, background checks) and Regulation-only rules are left out. Handling
+  // from the Firearm Safety Code booklet (2020), the longarm course slides and the instructors
+  // manual. 80% is a readiness target. All items original.
+  blueprint: {
+    fvicCategories: 6,
+    fvicLicence: 7,
+    fvicPermits: 6,
+    fvicCarriage: 7,
+    fvicStorage: 5,
+    fvicRules: 7,
+    fvicField: 6,
+    fvicParts: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30101, name: "Licence Categories & Applying", categories: ["fvicCategories", "fvicLicence"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 30102, name: "Permits, Carriage & the Law", categories: ["fvicPermits", "fvicCarriage"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 30103, name: "Storage & the Ten Safety Rules", categories: ["fvicStorage", "fvicRules"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 30104, name: "The Field & Firearm Basics", categories: ["fvicField", "fvicParts"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fvicCategories: "Licence & Firearm Categories",
+    fvicLicence: "Licences, Genuine Reasons & Eligibility",
+    fvicPermits: "Permits, Buying & Registration",
+    fvicCarriage: "Carriage, Conduct & Offences",
+    fvicStorage: "Safe Storage & Transport",
+    fvicRules: "The Ten Safety Rules",
+    fvicField: "In the Field",
+    fvicParts: "Firearm Types, Actions & Ammunition",
+  },
+  copy: {
+    guestPrompt: "to save your Victorian firearm safety progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering Victorian licence categories and applying, permits, carriage and the law, storage and the ten safety rules, and the field and firearm basics. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Licence Categories & Applying.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your firearm safety course.",
+    ],
+    sourceLine: "Based on the Firearms Act 1996 (Vic), the Victoria Police Firearm Safety Code booklet and the longarm safety course material. Original questions. Not affiliated with Victoria Police or its Licensing and Regulation Division.",
+    analyticsKey: "aufirearmsvic",
+  },
+};
+
+const ncma: ExamConfig = {
+  id: "ncma",
+  stateCode: "NCMA",
+  idBase: 30600,
+  slug: "/ncma",
+  landingPath: "/ncma-practice-test",
+  name: "NCMA Practice Test",
+  shortName: "NCMA (NCCT)",
+  examLabel: "NCMA exam",
+  fullName: "National Certified Medical Assistant (NCMA) Exam",
+  questionIdPrefix: "NCMA-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NCCT National Certified Medical Assistant (NCMA) Detailed Test Plan, Effective January 2024
+  // (EX-0508), the plan NCCT links in November 2026: 125 scored + 25 pretest items in 3 hours.
+  // Categories of 125: 1 Pharmacology and General Medical Knowledge 18; 2 Clinical Medical
+  // Procedures 72 (A Infection Control and Safety 15, B Patient Intake and Care 32, C Phlebotomy
+  // 15, D ECG 10); 3 Medical Administrative Duties 15; 4 Law and Ethics 20. Scaled to 50:
+  // 7/6/13/6/4/6/8 (Tigertest's rounding). NCCT reports a scaled score (200 to 720, 575 to pass,
+  // not a percent); 70% here is a readiness marker. All items original.
+  blueprint: {
+    ncmaPharm: 7,
+    ncmaInfection: 6,
+    ncmaIntake: 13,
+    ncmaPhleb: 6,
+    ncmaEcg: 4,
+    ncmaAdmin: 6,
+    ncmaLaw: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30601, name: "Pharmacology & Infection Control", categories: ["ncmaPharm", "ncmaInfection"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 30602, name: "Patient Intake & Care", categories: ["ncmaIntake"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 30603, name: "Phlebotomy & ECG", categories: ["ncmaPhleb", "ncmaEcg"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 30604, name: "Administrative Duties & Law", categories: ["ncmaAdmin", "ncmaLaw"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ncmaPharm: "Pharmacology & Medical Knowledge",
+    ncmaInfection: "Infection Control & Safety",
+    ncmaIntake: "Patient Intake & Care",
+    ncmaPhleb: "Phlebotomy",
+    ncmaEcg: "ECG",
+    ncmaAdmin: "Medical Administrative Duties",
+    ncmaLaw: "Law & Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your NCMA progress and track every question you miss",
+    trainingHeading: "Train by NCCT test plan category",
+    trainingSub: "Four sets covering every content category of the NCCT NCMA test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Pharmacology & Infection Control.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the NCMA.",
+    ],
+    sourceLine: "Based on the NCCT NCMA detailed test plan (effective January 2024). Original questions; 50 per test, weighted like the real exam. Not affiliated with the National Center for Competency Testing.",
+    analyticsKey: "ncma",
+  },
+};
+// Add "ncma" to the ExamId union and append ncma to EXAMS right after cmaa.
+// IDs: tests 30601-30604, sets 30601-30604 (block 30600 assigned for this run).
+
+const mace: ExamConfig = {
+  id: "mace",
+  stateCode: "MACE",
+  idBase: 30700,
+  slug: "/medication-aide",
+  landingPath: "/medication-aide-practice-test",
+  name: "Medication Aide (MACE) Practice Test",
+  shortName: "MACE",
+  examLabel: "MACE exam",
+  fullName: "Medication Aide Certification Examination (MACE)",
+  questionIdPrefix: "MACE-",
+  icon: "pill",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // National MACE Content Outline as published in Credentia's state handbooks (checked November
+  // 2026; NCSBN no longer develops or owns the MACE and refers questions to Credentia): 60
+  // multiple-choice items, 50 scored. I. Authorized Duties 16% = 8, II. Medication
+  // Administration, Observation and Reporting 60% = 30, III. Medication Concepts and
+  // Measurements 24% = 12. Per test here 8/30/12; the split inside each area is Tigertest's:
+  // I as role and delegation 5, relationships, legal and resources 3; II as orders, charting,
+  // storage and disposal 7, safety checks and client rights 6, routes and factors 6, classes 6,
+  // errors and reporting 5; III as concepts 7, forms and measurements 5. Content follows the
+  // NCSBN MA-C Model Curriculum (2007), which the MACE is based on. No passing score is
+  // published; 70% is a readiness marker. All items original.
+  blueprint: {
+    maceRole: 5,
+    maceEthics: 3,
+    maceOrders: 7,
+    maceSafety: 6,
+    maceRoutes: 6,
+    maceClasses: 6,
+    maceReport: 5,
+    maceConcepts: 7,
+    maceForms: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30701, name: "Duties, Orders & Storage", categories: ["maceRole", "maceEthics", "maceOrders"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 30702, name: "Safety Checks, Rights & Routes", categories: ["maceSafety", "maceRoutes"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 30703, name: "Drug Classes & Reporting", categories: ["maceClasses", "maceReport"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 30704, name: "Medication Concepts & Forms", categories: ["maceConcepts", "maceForms"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    maceRole: "Role of the MA-C & Delegation",
+    maceEthics: "Relationships, Legal & Resources",
+    maceOrders: "Orders, Charting, Storage & Disposal",
+    maceSafety: "Safety Checks & Client Rights",
+    maceRoutes: "Routes & How the Body Uses Drugs",
+    maceClasses: "Medication Classes",
+    maceReport: "Errors & Reporting Changes",
+    maceConcepts: "Medication Concepts & Terms",
+    maceForms: "Forms & Measurements",
+  },
+  copy: {
+    guestPrompt: "to save your MACE progress and track every question you miss",
+    trainingHeading: "Train by MACE content area",
+    trainingSub: "Four sets covering the three areas of the MACE content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Duties, Orders & Storage.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the MACE.",
+    ],
+    sourceLine: "Based on the national MACE content outline and the NCSBN MA-C Model Curriculum. Original questions; 50 per test, weighted like the real exam. Not affiliated with Credentia or NCSBN.",
+    analyticsKey: "mace",
+  },
+};
+
+const hspacis: ExamConfig = {
+  id: "hspacis",
+  stateCode: "HSPACIS",
+  idBase: 30000,
+  slug: "/cis",
+  landingPath: "/cis-instrument-specialist-practice-test",
+  name: "CIS Instrument Specialist Practice Test",
+  shortName: "CIS (HSPA)",
+  examLabel: "CIS exam",
+  fullName: "Certified Instrument Specialist (CIS) Exam",
+  questionIdPrefix: "CIS-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // HSPA Certified Instrument Specialist (CIS) Exam Content Outline, Revised October 2024 (2024
+  // job task analysis; still the current outline November 2026): I Decontamination Processes 12%,
+  // II Instrumentation Identification 32%, III Inspection, Testing, Integrity and Assembly 20%,
+  // IV Preparation and Packaging 10%, V Disinfection and Sterilization Processes 6%, VI Quality
+  // and Information Systems 20%. Scaled to 50: 6/16/10/5/3/10, with Tigertest's splits: II into
+  // grades and materials 4, specialty instruments 8, implants and identification 4; III into
+  // inspection and testing 7 and PM and repair 3; VI into training, teamwork and audits 5 and
+  // tracking, loaners and water 5. HSPA's real exam is 150 questions (125 scored) in 3 hours,
+  // pass/fail by number correct against an Angoff-set cut that is not published as a percent;
+  // 70% here is a readiness marker. All items original.
+  blueprint: {
+    cisDecon: 6,
+    cisGrade: 4,
+    cisSpecialty: 8,
+    cisImplant: 4,
+    cisInspect: 7,
+    cisRepair: 3,
+    cisPackage: 5,
+    cisSterile: 3,
+    cisQuality: 5,
+    cisSystems: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30001, name: "Decontamination & Instrument Grades", categories: ["cisDecon", "cisGrade"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 30002, name: "Specialty Instruments & Implants", categories: ["cisSpecialty", "cisImplant"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 30003, name: "Inspection, Testing & Repair", categories: ["cisInspect", "cisRepair"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 30004, name: "Quality & Information Systems", categories: ["cisQuality", "cisSystems"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 30005, name: "Packaging & Sterilization", categories: ["cisPackage", "cisSterile"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cisDecon: "Decontamination Processes",
+    cisGrade: "Instrument Grades & Materials",
+    cisSpecialty: "Specialty Instruments & Terminology",
+    cisImplant: "Implants & Instrument Identification",
+    cisInspect: "Inspection, Testing & Assembly",
+    cisRepair: "Preventive Maintenance & Repair",
+    cisPackage: "Preparation & Packaging",
+    cisSterile: "Disinfection & Sterilization",
+    cisQuality: "Training, Teamwork & Audits",
+    cisSystems: "Tracking, Loaners & Water Quality",
+  },
+  copy: {
+    guestPrompt: "to save your CIS progress and track every question you miss",
+    trainingHeading: "Train by HSPA outline section",
+    trainingSub: "Five sets covering the six sections of the HSPA CIS content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Decontamination & Instrument Grades.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CIS.",
+    ],
+    sourceLine: "Based on the HSPA Certified Instrument Specialist (CIS) Exam Content Outline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Healthcare Sterile Processing Association.",
+    analyticsKey: "hspacis",
+  },
+};
+
+const aufirearmswa: ExamConfig = {
+  id: "aufirearmswa",
+  stateCode: "AUFAWA",
+  idBase: 30200,
+  slug: "/wa-firearms-licence",
+  landingPath: "/wa-firearm-safety-course-practice-test",
+  name: "WA Firearm Safety Training Practice Test",
+  shortName: "WA Firearm Safety",
+  examLabel: "firearm safety training course",
+  fullName: "WA Firearm Safety Training Course (Theory) for a Firearm Authority",
+  questionIdPrefix: "AUFAWA-",
+  icon: "target",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 80,
+  // WA Firearm Safety Training Course, Part 1 theory (online course and assessment delivered by
+  // Central Regional TAFE), required by the Firearms Act 2024 (WA) s 166 and Firearms Regulations
+  // 2024 r 224 for every first-time firearm authority applicant and authorised person since the
+  // Act commenced on 31 March 2025; it replaced the Firearm Awareness Test under the repealed
+  // Firearms Act 1973. WA Police's CRTAFE theory Q&A: 40 questions drawn at random from a bank,
+  // at least 80% overall across three sections, 3 attempts. Five 40-question tests at 80% model
+  // it. No topic weights are published, so the split is Tigertest's: WA law 31 (licences 5,
+  // hunting permissions 5, eligibility 5, categories and ammunition 5, storage and transit 6,
+  // conduct and reporting 5) and safe use 9 (possession, care and actions 5, ranges, field and
+  // young shooters 4). Legal rules from the Act (version 00-f0-00) and Regulations (00-c0-00,
+  // from 1 July 2026) on legislation.wa.gov.au and WA Police information sheets, read November
+  // 2026; handling from the National Firearms Safety Code. No fees or penalties. All items original.
+  blueprint: {
+    fwaLicences: 5,
+    fwaHunting: 5,
+    fwaEligibility: 5,
+    fwaCategories: 5,
+    fwaStorage: 6,
+    fwaConduct: 5,
+    fwaHandling: 5,
+    fwaField: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30201, name: "Licences & Hunting Permissions", categories: ["fwaLicences", "fwaHunting"], size: 50, weightLabel: "10 of 40 test questions" },
+    { setNumber: 2, id: 30202, name: "Eligibility, Categories & Ammunition", categories: ["fwaEligibility", "fwaCategories"], size: 50, weightLabel: "10 of 40 test questions" },
+    { setNumber: 3, id: 30203, name: "Storage, Transport & Conduct", categories: ["fwaStorage", "fwaConduct"], size: 55, weightLabel: "11 of 40 test questions" },
+    { setNumber: 4, id: 30204, name: "Handling, Ranges & Young Shooters", categories: ["fwaHandling", "fwaField"], size: 45, weightLabel: "9 of 40 test questions" },
+  ],
+  categoryLabels: {
+    fwaLicences: "Licence Types & Purposes",
+    fwaHunting: "Hunting Permissions & Land",
+    fwaEligibility: "Eligibility, Disqualification & Renewal",
+    fwaCategories: "Firearm Categories, Accessories & Ammunition",
+    fwaStorage: "Storage & Transit",
+    fwaConduct: "Conduct, Reporting & Permits",
+    fwaHandling: "Possession, Care & Firearm Actions",
+    fwaField: "Ranges, Field & Young Shooters",
+  },
+  copy: {
+    guestPrompt: "to save your WA firearm safety progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering WA licences and hunting permissions, eligibility and firearm categories, storage, transport and conduct, and handling, ranges and young shooters. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 40 questions, like the real assessment",
+    heroSubs: [
+      "Four training sets, five practice tests. Start with Licences & Hunting Permissions.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your firearm safety training course.",
+    ],
+    sourceLine: "Based on the Firearms Act 2024 (WA), the Firearms Regulations 2024, WA Police Force information sheets and the National Firearms Safety Code. Original questions. Not affiliated with the WA Police Force or Central Regional TAFE.",
+    analyticsKey: "aufirearmswa",
+  },
+};
+
+const cpatcp: ExamConfig = {
+  id: "cpatcp",
+  stateCode: "CPATCP",
+  idBase: 30800,
+  slug: "/cpa-tcp",
+  landingPath: "/cpa-tcp-practice-test",
+  name: "CPA TCP Practice Test",
+  shortName: "CPA TCP",
+  examLabel: "CPA Exam TCP section",
+  fullName: "CPA Exam Tax Compliance and Planning (TCP) section",
+  questionIdPrefix: "CPATCP-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // AICPA Uniform CPA Examination Blueprints, effective January 1, 2026 (checked 2026-11-15;
+  // the summary of 2027 changes says no revisions to TCP). TCP is a Discipline section: 68 MCQs
+  // + 7 TBSs in 4 hours, MCQ 50% of score, 75 scaled to pass. Areas I 30-40%, II 30-40%,
+  // III 10-20%, IV 10-20%; midpoints scaled to 50: I 17 (individual compliance and planning 6,
+  // passive and at-risk 3, gift tax 3, personal financial planning 5), II 18 (C corporations and
+  // international 6, S corporations 4, partnerships 5, trusts and exempt organizations 3),
+  // III 7 (entity selection, formation and liquidation 3, C/S/partnership planning 4),
+  // IV 8 (like-kind and involuntary conversions 3, character and installment sales 3, related
+  // parties 2). Splits inside areas are Tigertest's. No indexed amounts except the 2026 gift
+  // tax annual exclusion, named in the stem. TBSs not modelled. All items original.
+  blueprint: {
+    cpatcpIndividual: 6,
+    cpatcpPassive: 3,
+    cpatcpGift: 3,
+    cpatcpPlanning: 5,
+    cpatcpCcorp: 6,
+    cpatcpScorp: 4,
+    cpatcpPartnership: 5,
+    cpatcpTrustExempt: 3,
+    cpatcpFormation: 3,
+    cpatcpOwnerPlanning: 4,
+    cpatcpNontaxable: 3,
+    cpatcpCharacter: 3,
+    cpatcpRelated: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30801, name: "Individual Tax Planning", categories: ["cpatcpIndividual", "cpatcpPassive"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 30802, name: "Gift Tax & Financial Planning", categories: ["cpatcpGift", "cpatcpPlanning"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 30803, name: "C Corps, Trusts & Exempt Orgs", categories: ["cpatcpCcorp", "cpatcpTrustExempt"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 30804, name: "S Corps & Partnerships", categories: ["cpatcpScorp", "cpatcpPartnership"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 30805, name: "Entity Tax Planning", categories: ["cpatcpFormation", "cpatcpOwnerPlanning"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 30806, name: "Property Transactions", categories: ["cpatcpNontaxable", "cpatcpCharacter", "cpatcpRelated"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cpatcpIndividual: "Individual Compliance & Planning",
+    cpatcpPassive: "Passive Activity & At-Risk Limits",
+    cpatcpGift: "Gift Tax Compliance & Planning",
+    cpatcpPlanning: "Personal Financial Planning",
+    cpatcpCcorp: "C Corporations & International",
+    cpatcpScorp: "S Corporations",
+    cpatcpPartnership: "Partnerships",
+    cpatcpTrustExempt: "Trusts & Tax-Exempt Organizations",
+    cpatcpFormation: "Entity Selection, Formation & Liquidation",
+    cpatcpOwnerPlanning: "C Corp, S Corp & Partnership Planning",
+    cpatcpNontaxable: "Like-Kind Exchanges & Involuntary Conversions",
+    cpatcpCharacter: "Character of Gains & Installment Sales",
+    cpatcpRelated: "Related Party Transactions",
+  },
+  copy: {
+    guestPrompt: "to save your CPA TCP progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering all four areas of the AICPA's TCP blueprint. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 multiple-choice questions weighted like the TCP blueprint, 75% target",
+    heroSubs: [
+      "Six sets, four mock tests. Start with Individual Tax Planning.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Schedule your TCP section.",
+    ],
+    sourceLine: "Based on the AICPA's 2026 TCP blueprint. Original multiple-choice questions; 50 per test, weighted like the real section's four areas, 75% target. Not affiliated with the AICPA or NASBA.",
+    analyticsKey: "cpatcp",
+  },
+};
+// Add "cpatcp" to the ExamId union and append cpatcp to EXAMS right after cpareg.
+// IDs: tests 30801-30804, sets 30801-30806 (block 30800 assigned for this run).
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -7118,7 +7750,7 @@ const crcst: ExamConfig = {
       "Review your mistakes, then retake any test you haven't passed.",
       "All done. Schedule your CRCST exam.",
     ],
-    sourceLine: "Weighted to the HSPA CRCST exam content outline (rev. Nov 2023). Also covers the CBSPD CSPDT.",
+    sourceLine: "Weighted to the HSPA CRCST exam content outline (rev. Nov 2023). For the CBSPD CSPDT, see the CSPDT practice test.",
     analyticsKey: "crcst",
   },
 };
@@ -20413,7 +21045,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

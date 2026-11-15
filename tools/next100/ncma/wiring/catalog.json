@@ -1,0 +1,14 @@
+{
+  "blurb": "NCCT National Certified Medical Assistant exam on the NCMA detailed test plan: pharmacology and medical knowledge, infection control, patient intake and care, phlebotomy, ECG, administrative duties, and law and ethics.",
+  "org": "National Center for Competency Testing (NCCT) · NCMA detailed test plan (effective January 2024)",
+  "group": "Healthcare certification exams",
+  "groupAfter": "cmaa",
+  "aliases": ["ncma", "ncct", "ncct ncma", "ncct medical assistant", "national certified medical assistant", "national certified medical assistant exam", "ncct ma exam", "ncct certification", "medical assistant certification ncct"],
+  "teacherLed": true,
+  "teaches": "a medical assistant program",
+  "borrowTiger": "ccma",
+  "shareTitle": "Free NCMA Practice Test",
+  "shareDescription": "200 original questions on the NCCT NCMA detailed test plan for medical assistants. Free to start.",
+  "searchTests": [["ncma", "US", "ncma"], ["ncct ncma", "US", "ncma"], ["national certified medical assistant", "US", "ncma"], ["ncct medical assistant exam", "US", "ncma"]],
+  "region": "TEST_REGIONS: ncma is US (the default; add a line only if the file lists every US exam)"
+}

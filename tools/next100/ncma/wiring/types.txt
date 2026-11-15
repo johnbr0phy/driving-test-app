@@ -1,0 +1,8 @@
+NCMA
+ncmaPharm
+ncmaInfection
+ncmaIntake
+ncmaPhleb
+ncmaEcg
+ncmaAdmin
+ncmaLaw

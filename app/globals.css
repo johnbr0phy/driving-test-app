@@ -4862,6 +4862,136 @@
     --brand-gradient-to: 19 50% 95%;
   }
 
+  [data-theme="ascpmlt"] {
+    --brand: 151 25% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 151 50% 95%;
+    --brand-hover: 151 25% 17%;
+    --brand-dark: 151 25% 15%;
+    --brand-darker: 151 20% 10%;
+    --brand-muted: 151 25% 70%;
+    --brand-border: 151 30% 78%;
+    --brand-border-light: 151 30% 88%;
+    --brand-gradient-to: 166 50% 95%;
+  }
+
+  [data-theme="cbspd"] {
+    --brand: 161 75% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 161 50% 95%;
+    --brand-hover: 161 75% 13%;
+    --brand-dark: 161 75% 11%;
+    --brand-darker: 161 70% 6%;
+    --brand-muted: 161 25% 70%;
+    --brand-border: 161 30% 78%;
+    --brand-border-light: 161 30% 88%;
+    --brand-gradient-to: 176 50% 95%;
+  }
+
+  [data-theme="cmaa"] {
+    --brand: 330 45% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 50% 95%;
+    --brand-hover: 330 45% 17%;
+    --brand-dark: 330 45% 15%;
+    --brand-darker: 330 40% 10%;
+    --brand-muted: 330 25% 70%;
+    --brand-border: 330 30% 78%;
+    --brand-border-light: 330 30% 88%;
+    --brand-gradient-to: 345 50% 95%;
+  }
+
+  [data-theme="aufirearmsvic"] {
+    --brand: 241 45% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 241 50% 95%;
+    --brand-hover: 241 45% 33%;
+    --brand-dark: 241 45% 31%;
+    --brand-darker: 241 40% 26%;
+    --brand-muted: 241 25% 70%;
+    --brand-border: 241 30% 78%;
+    --brand-border-light: 241 30% 88%;
+    --brand-gradient-to: 256 50% 95%;
+  }
+
+  [data-theme="ncma"] {
+    --brand: 15 20% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 15 50% 95%;
+    --brand-hover: 15 20% 17%;
+    --brand-dark: 15 20% 15%;
+    --brand-darker: 15 15% 10%;
+    --brand-muted: 15 25% 70%;
+    --brand-border: 15 30% 78%;
+    --brand-border-light: 15 30% 88%;
+    --brand-gradient-to: 30 50% 95%;
+  }
+
+  [data-theme="mace"] {
+    --brand: 300 45% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 50% 95%;
+    --brand-hover: 300 45% 17%;
+    --brand-dark: 300 45% 15%;
+    --brand-darker: 300 40% 10%;
+    --brand-muted: 300 25% 70%;
+    --brand-border: 300 30% 78%;
+    --brand-border-light: 300 30% 88%;
+    --brand-gradient-to: 315 50% 95%;
+  }
+
+  [data-theme="hspacis"] {
+    --brand: 131 25% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 131 50% 95%;
+    --brand-hover: 131 25% 17%;
+    --brand-dark: 131 25% 15%;
+    --brand-darker: 131 20% 10%;
+    --brand-muted: 131 25% 70%;
+    --brand-border: 131 30% 78%;
+    --brand-border-light: 131 30% 88%;
+    --brand-gradient-to: 146 50% 95%;
+  }
+
+  [data-theme="aufirearmswa"] {
+    --brand: 49 55% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 49 50% 95%;
+    --brand-hover: 49 55% 15%;
+    --brand-dark: 49 55% 13%;
+    --brand-darker: 49 50% 8%;
+    --brand-muted: 49 25% 70%;
+    --brand-border: 49 30% 78%;
+    --brand-border-light: 49 30% 88%;
+    --brand-gradient-to: 64 50% 95%;
+  }
+
+  [data-theme="fortinse"] {
+    --brand: 355 35% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 355 35% 96%;
+    --brand-hover: 355 35% 16%;
+    --brand-dark: 355 35% 15%;
+    --brand-darker: 355 32% 10%;
+    --brand-muted: 355 18% 70%;
+    --brand-border: 355 18% 80%;
+    --brand-border-light: 355 16% 89%;
+    --brand-gradient-to: 210 40% 95%;
+  }
+
+  [data-theme="cpatcp"] {
+    --brand: 122 25% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 122 50% 95%;
+    --brand-hover: 122 25% 21%;
+    --brand-dark: 122 25% 19%;
+    --brand-darker: 122 20% 14%;
+    --brand-muted: 122 25% 70%;
+    --brand-border: 122 30% 78%;
+    --brand-border-light: 122 30% 88%;
+    --brand-gradient-to: 137 50% 95%;
+  }
+
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
     --brand-foreground: 0 0% 100%;
@@ -9585,6 +9715,126 @@
     --brand-muted: 4 25% 45%;
     --brand-dark: 4 30% 65%;
     --brand-darker: 4 25% 78%;
+  }
+
+  .dark [data-theme="ascpmlt"] {
+    --brand: 151 25% 39.9%;
+    --brand-hover: 151 25% 31.9%;
+    --brand-light: 151 45% 13%;
+    --brand-gradient-to: 166 40% 11%;
+    --brand-border-light: 151 30% 24%;
+    --brand-border: 151 30% 34%;
+    --brand-muted: 151 25% 45%;
+    --brand-dark: 151 25% 65%;
+    --brand-darker: 151 20% 78%;
+  }
+
+  .dark [data-theme="cbspd"] {
+    --brand: 161 75% 29.8%;
+    --brand-hover: 161 75% 21.8%;
+    --brand-light: 161 45% 13%;
+    --brand-gradient-to: 176 40% 11%;
+    --brand-border-light: 161 30% 24%;
+    --brand-border: 161 30% 34%;
+    --brand-muted: 161 25% 45%;
+    --brand-dark: 161 75% 65%;
+    --brand-darker: 161 70% 78%;
+  }
+
+  .dark [data-theme="cmaa"] {
+    --brand: 330 45% 50%;
+    --brand-hover: 330 45% 42%;
+    --brand-light: 330 45% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 330 30% 24%;
+    --brand-border: 330 30% 34%;
+    --brand-muted: 330 25% 45%;
+    --brand-dark: 330 45% 65%;
+    --brand-darker: 330 40% 78%;
+  }
+
+  .dark [data-theme="aufirearmsvic"] {
+    --brand: 241 45% 50%;
+    --brand-hover: 241 45% 42%;
+    --brand-light: 241 45% 13%;
+    --brand-gradient-to: 256 40% 11%;
+    --brand-border-light: 241 30% 24%;
+    --brand-border: 241 30% 34%;
+    --brand-muted: 241 25% 45%;
+    --brand-dark: 241 45% 65%;
+    --brand-darker: 241 40% 78%;
+  }
+
+  .dark [data-theme="ncma"] {
+    --brand: 15 20% 47.4%;
+    --brand-hover: 15 20% 39.4%;
+    --brand-light: 15 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 15 30% 24%;
+    --brand-border: 15 30% 34%;
+    --brand-muted: 15 25% 45%;
+    --brand-dark: 15 20% 65%;
+    --brand-darker: 15 15% 78%;
+  }
+
+  .dark [data-theme="mace"] {
+    --brand: 300 45% 49.5%;
+    --brand-hover: 300 45% 41.5%;
+    --brand-light: 300 45% 13%;
+    --brand-gradient-to: 315 40% 11%;
+    --brand-border-light: 300 30% 24%;
+    --brand-border: 300 30% 34%;
+    --brand-muted: 300 25% 45%;
+    --brand-dark: 300 45% 65%;
+    --brand-darker: 300 40% 78%;
+  }
+
+  .dark [data-theme="hspacis"] {
+    --brand: 131 25% 40.3%;
+    --brand-hover: 131 25% 32.3%;
+    --brand-light: 131 45% 13%;
+    --brand-gradient-to: 146 40% 11%;
+    --brand-border-light: 131 30% 24%;
+    --brand-border: 131 30% 34%;
+    --brand-muted: 131 25% 45%;
+    --brand-dark: 131 25% 65%;
+    --brand-darker: 131 20% 78%;
+  }
+
+  .dark [data-theme="aufirearmswa"] {
+    --brand: 49 55% 33.8%;
+    --brand-hover: 49 55% 25.8%;
+    --brand-light: 49 45% 13%;
+    --brand-gradient-to: 64 40% 11%;
+    --brand-border-light: 49 30% 24%;
+    --brand-border: 49 30% 34%;
+    --brand-muted: 49 25% 45%;
+    --brand-dark: 49 55% 65%;
+    --brand-darker: 49 50% 78%;
+  }
+
+  .dark [data-theme="fortinse"] {
+    --brand: 355 35% 50%;
+    --brand-hover: 355 35% 42%;
+    --brand-light: 355 35% 13%;
+    --brand-gradient-to: 210 40% 11%;
+    --brand-border-light: 355 16% 24%;
+    --brand-border: 355 18% 34%;
+    --brand-muted: 355 18% 45%;
+    --brand-dark: 355 35% 65%;
+    --brand-darker: 355 32% 78%;
+  }
+
+  .dark [data-theme="cpatcp"] {
+    --brand: 122 25% 40.4%;
+    --brand-hover: 122 25% 32.4%;
+    --brand-light: 122 45% 13%;
+    --brand-gradient-to: 137 40% 11%;
+    --brand-border-light: 122 30% 24%;
+    --brand-border: 122 30% 34%;
+    --brand-muted: 122 25% 45%;
+    --brand-dark: 122 25% 65%;
+    --brand-darker: 122 20% 78%;
   }
 
   .dark [data-theme="hspachl"] {

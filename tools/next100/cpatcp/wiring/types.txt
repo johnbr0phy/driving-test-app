@@ -1,0 +1,14 @@
+CPATCP
+cpatcpIndividual
+cpatcpPassive
+cpatcpGift
+cpatcpPlanning
+cpatcpCcorp
+cpatcpScorp
+cpatcpPartnership
+cpatcpTrustExempt
+cpatcpFormation
+cpatcpOwnerPlanning
+cpatcpNontaxable
+cpatcpCharacter
+cpatcpRelated

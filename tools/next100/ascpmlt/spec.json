@@ -1,0 +1,18 @@
+{
+  "id": "ascpmlt", "stateCode": "ASCPMLT", "idBase": 30300, "prefix": "MLT-",
+  "slug": "/ascp-mlt", "landingPath": "/ascp-mlt-practice-test", "dataFile": "data/ascp-mlt-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "mltBbProd", "perTest": 4, "pool": 16, "segment": "BPR"},
+    {"key": "mltBbSero", "perTest": 5, "pool": 20, "segment": "BSR"},
+    {"key": "mltUa", "perTest": 4, "pool": 16, "segment": "URN"},
+    {"key": "mltChemGen", "perTest": 6, "pool": 24, "segment": "CHG"},
+    {"key": "mltChemSpec", "perTest": 5, "pool": 20, "segment": "CHS"},
+    {"key": "mltHeme", "perTest": 7, "pool": 28, "segment": "HEM"},
+    {"key": "mltHemost", "perTest": 4, "pool": 16, "segment": "HST"},
+    {"key": "mltImmuno", "perTest": 4, "pool": 16, "segment": "IMM"},
+    {"key": "mltMicro", "perTest": 8, "pool": 32, "segment": "MIC"},
+    {"key": "mltOps", "perTest": 3, "pool": 12, "segment": "OPS"}
+  ],
+  "notes": "ASCP BOC MLT(ASCP) content guideline (rev. Sept 25 2025): blood banking 15-20, urinalysis and other body fluids 5-10, chemistry 20-25, hematology 20-25, immunology 5-10, microbiology 15-20, laboratory operations 5-10%. Per 50: 9/4/11/11/4/8/3 (18/8/22/22/8/16/6%); the splits inside blood banking (4/5), chemistry (6/5) and hematology (7/4) are Tigertest's. Real exam is a 100-item CAT in 2.5 hours; modelled as fixed 50-question forms."
+}

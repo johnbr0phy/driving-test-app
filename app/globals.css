@@ -2592,6 +2592,20 @@
     --brand-gradient-to: 20 60% 96%;
   }
 
+  /* Denmark truck theory test theme */
+  [data-theme="dktruck"] {
+    --brand: 331 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 331 70% 96%;
+    --brand-hover: 331 85% 25%;
+    --brand-dark: 331 85% 22%;
+    --brand-darker: 331 80% 16%;
+    --brand-muted: 331 35% 70%;
+    --brand-border: 331 40% 82%;
+    --brand-border-light: 331 40% 90%;
+    --brand-gradient-to: 341 60% 96%;
+  }
+
   /* CILS B1 Cittadinanza (Italian B1 test for citizenship) theme */
   [data-theme="itcils"] {
     --brand: 146 90% 18%;
@@ -7182,6 +7196,17 @@
     --brand-muted: 12 35% 45%;
     --brand-dark: 12 85% 65%;
     --brand-darker: 12 80% 78%;
+  }
+  .dark [data-theme="dktruck"] {
+    --brand: 331 85% 47.7%;
+    --brand-hover: 331 85% 39.7%;
+    --brand-light: 331 45% 13%;
+    --brand-gradient-to: 341 40% 11%;
+    --brand-border-light: 331 35% 24%;
+    --brand-border: 331 40% 34%;
+    --brand-muted: 331 35% 45%;
+    --brand-dark: 331 85% 65%;
+    --brand-darker: 331 80% 78%;
   }
   .dark [data-theme="frcode"] {
     --brand: 234 100% 50%;

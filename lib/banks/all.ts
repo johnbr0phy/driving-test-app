@@ -125,6 +125,7 @@ import "./betoelating";
 import "./befsmavz";
 import "./dkteori";
 import "./dkmoto";
+import "./dktruck";
 import "./dkindfoed";
 import "./dkmedborger";
 import "./dkjagt";

@@ -54,6 +54,10 @@ const CASES = [
   ["wassce maths", "NG", "wasscemath"],
   ["ssce maths", "NG", "wasscemath"],
   ["may june maths", "NG", "wasscemath"],
+  ["lastbil teori", "DK", "dktruck"],
+  ["teoriprøve lastbil", "DK", "dktruck"],
+  ["denmark truck theory test", "DK", "dktruck"],
+  ["kørekort lastbil", "DK", "dktruck"],
 ];
 
 for (const [q, region, id] of CASES) {

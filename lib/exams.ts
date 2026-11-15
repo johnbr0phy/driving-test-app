@@ -60,6 +60,11 @@ export interface ExamTrainingSetDef {
    *  even split, for a set whose parts must start at a set question, e.g.
    *  where an exam's Premium questions begin (`premiumFrom`). */
   partSizes?: number[];
+  /** One dashboard label per part, in place of `weightLabel`, when the
+   *  parts should not all repeat the set's share of a test (RBT's scenario
+   *  parts cover the same topics as part 1, so repeating "14 of 50 test
+   *  questions" on both read as a total of 100). */
+  partWeightLabels?: string[];
   /** Set on a DMV-style set (see testSets): it holds exactly practice test
    *  N's questions, and `categories` is empty. */
   test?: number;
@@ -8341,10 +8346,10 @@ const rbt: ExamConfig = {
     rbtEthics: 7,
   },
   trainingSets: [
-    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 112, partSizes: [56, 56], partNames: ["Data Collection & Assessment", "Data & Assessment Scenarios"], weightLabel: "14 of 50 test questions" },
-    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 104, partSizes: [52, 52], partNames: ["Behavior Acquisition", "Acquisition Scenarios"], weightLabel: "13 of 50 test questions" },
-    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 72, partSizes: [36, 36], partNames: ["Behavior Reduction", "Reduction Scenarios"], weightLabel: "9 of 50 test questions" },
-    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 112, partSizes: [56, 56], partNames: ["Documentation, Reporting & Ethics", "Reporting & Ethics Scenarios"], weightLabel: "14 of 50 test questions" },
+    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 112, partSizes: [56, 56], partNames: ["Data Collection & Assessment", "Data & Assessment Scenarios"], weightLabel: "14 of 50 test questions", partWeightLabels: ["14 of 50 test questions", "Harder work scenarios"] },
+    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 104, partSizes: [52, 52], partNames: ["Behavior Acquisition", "Acquisition Scenarios"], weightLabel: "13 of 50 test questions", partWeightLabels: ["13 of 50 test questions", "Harder work scenarios"] },
+    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 72, partSizes: [36, 36], partNames: ["Behavior Reduction", "Reduction Scenarios"], weightLabel: "9 of 50 test questions", partWeightLabels: ["9 of 50 test questions", "Harder work scenarios"] },
+    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 112, partSizes: [56, 56], partNames: ["Documentation, Reporting & Ethics", "Reporting & Ethics Scenarios"], weightLabel: "14 of 50 test questions", partWeightLabels: ["14 of 50 test questions", "Harder work scenarios"] },
   ],
   categoryLabels: {
     rbtData: "Data Collection & Graphing",

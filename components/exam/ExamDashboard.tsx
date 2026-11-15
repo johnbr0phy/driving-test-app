@@ -225,13 +225,14 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     const rowId = `training-${def.setNumber}-${p.part}`;
     const locked = locks.partLocked(p);
     const partTitle = trainingPartName(p, lang);
+    const partLabel = def.partWeightLabels?.[p.part - 1] ?? def.weightLabel;
     return (
       <div id={rowId} className={`scroll-mt-24 rounded-lg ${highlightedStep === rowId ? "ring-2 ring-green-500 ring-offset-4 ring-offset-white dark:ring-offset-gray-950" : ""}`}>
         <ProgressCard
           title={partTitle}
           isPremiumLocked={locked}
           onClick={locked ? () => paywall.open(`set_${def.setNumber}`, partTitle) : undefined}
-          subtitle={def.weightLabel ? `${progress.correct}/${progress.total} · ${def.weightLabel}` : `${progress.correct}/${progress.total}`}
+          subtitle={partLabel ? `${progress.correct}/${progress.total} · ${partLabel}` : `${progress.correct}/${progress.total}`}
           completed={progress.complete}
           stepNumber={stepNumber}
           stamp={

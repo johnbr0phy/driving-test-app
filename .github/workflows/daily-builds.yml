@@ -18,10 +18,12 @@ name: Daily builds
 # its own PR when every check passes, set the repository variable
 # DAILY_BUILD_AUTOMERGE to "true".
 # How many a day: repository variable DAILY_BUILD_COUNT (default 10), or the
-# "count" input on a manual run. Each test is one long Claude Code session on
-# ANTHROPIC_API_KEY, so the count is also the daily spend.
+# "count" input on a manual run. Claude Code signs in with John's Claude
+# subscription (CLAUDE_CODE_OAUTH_TOKEN, made with `claude setup-token`), not the
+# API key, so a run costs nothing extra but shares the subscription's usage
+# limits with his own sessions: four tests build at a time.
 #
-# Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY.
+# Needs repository secrets CLAUDE_CODE_OAUTH_TOKEN and FIREBASE_SERVICE_ACCOUNT_KEY.
 
 on:
   schedule:
@@ -88,7 +90,7 @@ jobs:
     timeout-minutes: 300
     strategy:
       fail-fast: false
-      max-parallel: 10
+      max-parallel: 4
       matrix: ${{ fromJson(needs.pick.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
@@ -133,7 +135,7 @@ jobs:
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           claude_args: --max-turns 500 --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
           prompt: |
             Read CLAUDE.md. You build ONE new practice test for Tigertest today. Its row
@@ -258,7 +260,7 @@ jobs:
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           claude_args: --max-turns 400 --allowedTools "Read,Edit,Write,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git apply:*),Bash(git add:*),Bash(git diff:*),Bash(git status:*),Bash(git checkout:*),Bash(git restore:*),Bash(git rm:*),Bash(ls:*),Bash(cat:*)"
           prompt: |
             Read CLAUDE.md. Today's new tests were each built in their own checkout of this

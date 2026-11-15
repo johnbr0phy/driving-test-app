@@ -375,11 +375,11 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "CBEST-T1-R3",
-      "stem": "In the third paragraph, the word \"However\" signals that the next sentence:",
+      "stem": "In the paragraph that begins \"We are making this change,\" the word \"However\" signals that the next sentence:",
       "options": [
         "limits the change just described",
-        "gives an example of the change",
         "states the result of the change",
+        "gives an example of the change",
         "repeats the reason for the change"
       ],
       "correct": [
@@ -423,7 +423,7 @@
       "options": [
         "learn math facts in school",
         "read with a family member",
-        "have short practice assignments at home",
+        "do short math or spelling drills at home",
         "be given any homework that takes an hour"
       ],
       "correct": [
@@ -1550,10 +1550,10 @@
       "stimulusId": "CBEST-T2-R4",
       "stem": "Which information would be most relevant to settling the disagreement between the two passages?",
       "options": [
-        "Scores from a district before and after",
-        "How families plan their vacations",
-        "The cost of running summer camps",
-        "The number of holidays in each calendar"
+        "Test scores before and after a district switched calendars",
+        "How families plan their summer vacations",
+        "The cost of running summer camps in each district",
+        "The number of holidays in each kind of calendar"
       ],
       "correct": [
         0
@@ -2616,7 +2616,7 @@
       "correct": [
         2
       ],
-      "explanation": "The phrase \"without a pass\" could describe the running (no running unless you have a pass) or simply the students in the hall (no running, and you need a pass). The writer probably meant one, but the wording allows both."
+      "explanation": "It could mean running is allowed only for students who have a pass, or that no one may run at all and students in the hall need a pass. One reading bans only some running; the other bans all of it."
     },
     {
       "id": "CBEST-D-015",
@@ -2638,7 +2638,7 @@
       "correct": [
         3
       ],
-      "explanation": "\"The best place for a picnic\" is a judgment. The opening month, size and features can be checked."
+      "explanation": "\"The best spot in town for a picnic\" is a judgment. The opening month, size and features can be checked."
     },
     {
       "id": "CBEST-D-016",
@@ -2695,15 +2695,15 @@
       "format": "single",
       "stem": "\"Our library should stay open on Saturdays, because many working parents cannot visit during the week.\"\n\nWhich finding would most strengthen this argument?",
       "options": [
-        "Few staff want to work weekends",
-        "The library has a large DVD collection",
-        "Saturday visits are mostly families",
-        "Weekday hours end at 6 p.m."
+        "Few staff members want to work weekend shifts",
+        "The library has a large collection of DVDs and games",
+        "Most Saturday visitors are parents who work on weekdays",
+        "The library first opened its doors in 1985"
       ],
       "correct": [
         2
       ],
-      "explanation": "If most Saturday visitors are families, that supports the claim that working parents rely on Saturday hours. Staffing preferences would weaken it."
+      "explanation": "If most Saturday visitors are parents who work on weekdays, that supports the claim that working parents rely on Saturday hours. Staffing preferences would weaken it."
     },
     {
       "id": "CBEST-D-019",
@@ -3177,18 +3177,18 @@
       "skill": "Perimeter",
       "difficulty": 2,
       "format": "single",
-      "stem": "A rectangular playground is 40 yards long and 25 yards wide. How many yards of fence are needed to enclose it?",
+      "stem": "A rectangular playground is enclosed by 130 yards of fence. The playground is 40 yards long. How many yards wide is it?",
       "options": [
+        "25",
+        "50",
         "65",
-        "90",
-        "105",
-        "130"
+        "90"
       ],
       "correct": [
-        3
+        0
       ],
       "lockedOrder": true,
-      "explanation": "2 × (40 + 25) = 130 yards. 65 counts only one length and one width, and 105 leaves out one width."
+      "explanation": "Half the perimeter is one length plus one width: 130 ÷ 2 = 65, and 65 - 40 = 25 yards. 90 subtracts only one length from the whole perimeter, 65 is half the perimeter, and 50 subtracts both lengths but does not halve what is left."
     },
     {
       "id": "CBEST-D-041",
@@ -3286,17 +3286,18 @@
       "skill": "Percentiles",
       "difficulty": 3,
       "format": "single",
-      "stem": "Ana answered 80% of the questions on a test correctly, and her percentile rank was 60. Which statement is true?",
+      "stem": "Ana took a test with 200 other students, and her score was at the 60th percentile of that group. About how many of the 200 students scored below her?",
       "options": [
-        "She scored in the top 20% of the group",
-        "She answered 60 questions correctly",
-        "She scored at the 80th percentile",
-        "She beat about 60% of the group"
+        "60",
+        "80",
+        "120",
+        "160"
       ],
       "correct": [
-        3
+        2
       ],
-      "explanation": "Percent correct and percentile rank measure different things. A percentile rank of 60 means her score was higher than about 60% of the comparison group."
+      "lockedOrder": true,
+      "explanation": "The 60th percentile means about 60% of the group scored below her: 0.60 × 200 = 120. About 80 scored at or above her, and 60 mistakes the percentile for a count of students."
     },
     {
       "id": "CBEST-D-046",
@@ -3307,17 +3308,17 @@
       "skill": "Stanines",
       "difficulty": 2,
       "format": "single",
-      "stem": "Stanine scores run from 1 to 9. Which stanine shows above-average performance?",
+      "stem": "Stanine scores run from 1 to 9. Which stanine shows below-average performance?",
       "options": [
-        "Stanine 8",
-        "Stanine 5",
         "Stanine 4",
+        "Stanine 6",
+        "Stanine 8",
         "Stanine 2"
       ],
       "correct": [
-        0
+        3
       ],
-      "explanation": "Stanines 1 to 3 are below average, 4 to 6 average and 7 to 9 above average, so only 8 is above average."
+      "explanation": "Stanines 1 to 3 are below average, 4 to 6 average and 7 to 9 above average, so only 2 is below average."
     },
     {
       "id": "CBEST-D-047",
@@ -3398,13 +3399,13 @@
       "basics": "fractionOps",
       "stem": "What is 4/5 - 1/3?",
       "options": [
-        "1/2",
         "7/15",
+        "1/2",
         "3/2",
         "3/15"
       ],
       "correct": [
-        1
+        0
       ],
       "explanation": "Use the common denominator 15: 12/15 - 5/15 = 7/15. Subtracting tops and bottoms gives the wrong 3/2."
     },
@@ -3533,12 +3534,12 @@
       "stem": "A bus leaves school at 7:15 a.m. and makes 8 stops on its route. What more must you know to find when it reaches the last stop?",
       "options": [
         "Which driver is on the route",
-        "How many seats the bus has",
         "How long the whole route takes",
+        "How many seats the bus has",
         "How many students ride the bus"
       ],
       "correct": [
-        2
+        1
       ],
       "explanation": "Arrival time is the start time plus the travel time. The number of stops is already given, and riders, seats and the driver do not tell how long the trip takes."
     },
@@ -3555,11 +3556,11 @@
       "options": [
         "dividing it by 2",
         "multiplying it by 0.5",
-        "adding 0.5 to it",
-        "multiplying it by 2"
+        "multiplying it by 2",
+        "adding 0.5 to it"
       ],
       "correct": [
-        3
+        2
       ],
       "explanation": "0.5 is 1/2, and dividing by 1/2 is the same as multiplying by 2. For example, 8 ÷ 0.5 = 16."
     },
@@ -3643,13 +3644,13 @@
       "basics": "fractionConvert",
       "stem": "Which fraction is the greatest?",
       "options": [
-        "5/6",
         "3/4",
         "4/5",
-        "7/9"
+        "7/9",
+        "5/6"
       ],
       "correct": [
-        0
+        3
       ],
       "explanation": "As decimals: 5/6 is about 0.83, 4/5 = 0.8, 7/9 is about 0.78 and 3/4 = 0.75."
     },
@@ -3686,13 +3687,13 @@
       "format": "single",
       "stem": "Which comparison is true?",
       "options": [
-        "0.40 > 0.4",
         "0.07 < 0.1",
+        "0.40 > 0.4",
         "-5 > -2",
         "1/3 = 0.3"
       ],
       "correct": [
-        1
+        0
       ],
       "explanation": "0.1 = 0.10, which is greater than 0.07. -5 is less than -2, 1/3 is 0.333..., and 0.40 equals 0.4."
     },
@@ -3730,12 +3731,12 @@
       "stem": "Which expression has the same value as 3 × 15 + 3 × 5?",
       "options": [
         "3 × 15 × 5",
-        "15 + 3 × 5",
         "3 × 20",
+        "15 + 3 × 5",
         "6 × 20"
       ],
       "correct": [
-        2
+        1
       ],
       "explanation": "Both products share the factor 3, so 3 × 15 + 3 × 5 = 3 × (15 + 5) = 3 × 20 = 60."
     },
@@ -3797,11 +3798,11 @@
       "options": [
         "All teachers attend the fall meeting",
         "No teachers attend the fall meeting",
-        "Every coach at Elm is a teacher",
-        "Some teachers attend the meeting"
+        "Some teachers attend the meeting",
+        "Every coach at Elm is a teacher"
       ],
       "correct": [
-        3
+        2
       ],
       "explanation": "The teachers who coach are coaches, and all coaches attend, so at least some teachers attend. Nothing says every teacher coaches or every coach teaches."
     },
@@ -3816,13 +3817,13 @@
       "format": "single",
       "stem": "\"Students may join the robotics club if they are in grade 7 or they have a teacher's note.\" Which student may NOT join?",
       "options": [
-        "A grade 6 student with no note",
         "A grade 7 student with a note",
         "A grade 6 student with a note",
-        "A grade 7 student with no note"
+        "A grade 7 student with no note",
+        "A grade 6 student with no note"
       ],
       "correct": [
-        0
+        3
       ],
       "explanation": "With \"or,\" meeting either condition is enough. Only a student who meets neither, not in grade 7 and without a note, is left out."
     },

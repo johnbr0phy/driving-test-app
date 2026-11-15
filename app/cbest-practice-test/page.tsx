@@ -16,9 +16,9 @@ const siteUrl = SITE_URL;
 
 const title = "Free CBEST Practice Test 2026 - Reading and Math";
 const metaDescription =
-  "Free CBEST practice test for California teachers and substitutes: 170 original Reading and Math questions written to the CBEST test specifications, timed at the real pace, with explanations.";
+  "CBEST practice test for California teachers and substitutes, free to start: 170 original Reading and Math questions written to the CBEST test specifications, timed at the real pace, with explanations.";
 const description =
-  "Free CBEST practice tests with 170 original questions written to the CBEST Test Specifications for Reading and Mathematics. Each practice test has a timed Reading and Math section at half length and the real pace, with passages, letters and notices, paired passages, tables of contents, indexes and data tables for Reading, no-calculator Math in U.S. units, and an explanation for every answer. Six drills, four of which teach the basics first.";
+  "CBEST practice tests, free to start, with 170 original questions written to the CBEST Test Specifications for Reading and Mathematics. Each practice test has a timed Reading and Math section at half length and the real pace, with passages, letters and notices, paired passages, tables of contents, indexes and data tables for Reading, no-calculator Math in U.S. units, and an explanation for every answer. Six drills, four of which teach the basics first.";
 
 const faqs = [
   {

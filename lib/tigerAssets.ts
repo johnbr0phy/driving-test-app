@@ -73,6 +73,7 @@ const BORROWED_SETS: Record<string, string> = {
   ukplumb: "caplumb",
   ukrbi: "nhie",
   ukbregs: "nhie",
+  naplex: "ptcb",
   ukcar: "driving", ukadi: "driving", ukmoto: "moto", uklgv: "cdl", ukpcv: "cdl",
   caon: "driving", caqc: "driving", cabc: "driving", caab: "driving", camb: "driving",
   aunsw: "driving", auvic: "driving", auqld: "driving", auwa: "driving", ausa: "driving", inrto: "driving",
@@ -82,7 +83,7 @@ const BORROWED_SETS: Record<string, string> = {
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
-  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",shsat: "sat",
+  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",shsat: "sat",hspt: "sat", cogat: "timestables",ssat: "sat",isee: "sat",
   // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
   staareng1: "aplang",
   pkdrive: "driving",
@@ -150,6 +151,8 @@ const BORROWED_SETS: Record<string, string> = {
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",
+  // MBLEx (massage therapy licensing) borrows the NASM personal trainer tiger.
+  mblex: "nasm",
   // ASE A1-A8 (US automobile technicians) borrows the Red Seal automotive mechanic tiger (no flag).
   ase: "caauto",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal

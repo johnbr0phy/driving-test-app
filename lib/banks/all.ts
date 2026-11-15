@@ -215,6 +215,7 @@ import "./ccrn";
 import "./praxis5001";
 import "./fladjuster";
 import "./aafcs";
+import "./mblex";
 import "./ase";
 import "./llqp";
 import "./cemap";

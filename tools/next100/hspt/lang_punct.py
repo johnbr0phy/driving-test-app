@@ -1,0 +1,58 @@
+# HSPT Language: punctuation and capitalization. Original items.
+P = "Which sentence is punctuated correctly?"
+C = "Which sentence uses capital letters correctly?"
+ITEMS = [
+  # ---------------- Practice Test 1 ----------------
+  dict(test=1, skill="Introductory commas", diff=1, stem=P,
+       key="After the game, we went out for pizza.",
+       wrong=["After the game we went, out for pizza.", "After, the game we went out for pizza.", "After the game we went out, for pizza."],
+       expl="A comma follows an introductory phrase such as After the game. The other commas break up words that belong together."),
+  dict(test=1, skill="Capitalization", diff=1, stem=C,
+       key="We visited Uncle Ray in Denver last July.",
+       wrong=["We visited uncle Ray in Denver last July.", "We visited Uncle Ray in denver last July.", "We visited Uncle Ray in Denver last july."],
+       expl="Uncle is capitalized when it is used as part of a name, and the names of cities and months are always capitalized."),
+  dict(test=1, skill="Plural possessives", diff=2, stem=P,
+       key="The two girls' bikes were locked outside.",
+       wrong=["The two girl's bikes were locked outside.", "The two girls bike's were locked outside.", "The two girls's bikes were locked outside."],
+       expl="To show that more than one girl owns something, add only an apostrophe after the s: girls'. Girl's would mean just one girl."),
+  dict(test=1, skill="Colons", diff=2, stem=P,
+       key="Bring three things: a pencil, an eraser, and a ruler.",
+       wrong=["Bring three things; a pencil, an eraser, and a ruler.", "Bring: three things a pencil, an eraser, and a ruler.", "Bring three things, a pencil: an eraser, and a ruler."],
+       expl="A colon can introduce a list after a complete thought such as Bring three things. A semicolon joins two complete sentences, not a sentence and a list."),
+
+  # ---------------- Practice Test 2 ----------------
+  dict(test=2, skill="Quotation marks", diff=2, stem=P,
+       key='"Wait for me," Leah called.',
+       wrong=['"Wait for me" Leah called.', '"Wait for me", Leah called.', '"Wait for me," Leah called'],
+       expl="In American English, the comma that ends a quotation goes inside the closing quotation mark, and the sentence still needs a period at the end."),
+  dict(test=2, skill="Capitalization", diff=1, stem=C,
+       key="Our class toured the Lincoln Memorial on Friday.",
+       wrong=["Our class toured the lincoln Memorial on Friday.", "Our class toured the Lincoln memorial on Friday.", "Our class toured the Lincoln Memorial on friday."],
+       expl="Lincoln Memorial is the name of a particular place, so both words are capitalized, and so are the days of the week."),
+  dict(test=2, skill="Compound sentences", diff=2, stem=P,
+       key="The bus was late, so we walked to school.",
+       wrong=["The bus was late so, we walked to school.", "The bus, was late so we walked to school.", "The bus was late, so, we walked to school."],
+       expl="When so joins two complete sentences, the comma goes before so. No comma belongs between the subject and its verb."),
+  dict(test=2, skill="Apostrophes", diff=2, stem=P,
+       key="It's cold, so the dog stays in its bed.",
+       wrong=["Its cold, so the dog stays in its bed.", "It's cold, so the dog stays in it's bed.", "Its cold, so the dog stays in it's bed."],
+       expl="It's is short for it is, which fits It's cold. Its with no apostrophe shows ownership, which fits its bed."),
+
+  # ---------------- Drill only ----------------
+  dict(test=0, skill="Commas in dates", diff=2, stem=P,
+       key="On May 4, 2026, the school held a fair.",
+       wrong=["On May 4 2026, the school held a fair.", "On May, 4, 2026 the school held a fair.", "On May 4, 2026 the school, held a fair."],
+       expl="A full date in the middle of a sentence takes a comma after the day and after the year."),
+  dict(test=0, skill="Capitalization", diff=1, stem=C,
+       key="In the fall, Ana will study Spanish.",
+       wrong=["In the Fall, Ana will study Spanish.", "In the fall, Ana will study spanish.", "In the Fall, Ana will study spanish."],
+       expl="Seasons are not capitalized, but the names of languages always are."),
+  dict(test=0, skill="Singular possessives", diff=1, stem=P,
+       key="Who borrowed Mia's calculator?",
+       wrong=["Who borrowed Mias calculator?", "Who borrowed Mias' calculator?", "Who borrowed Mia's calculator."],
+       expl="To show that one person owns something, add an apostrophe and s: Mia's. A question ends with a question mark."),
+  dict(test=0, skill="Appositive commas", diff=3, stem=P,
+       key="Mr. Patel, our coach, gave a speech.",
+       wrong=["Mr. Patel our coach, gave a speech.", "Mr. Patel, our coach gave a speech.", "Mr. Patel our coach gave, a speech."],
+       expl="Our coach renames Mr. Patel, so it needs a comma on both sides. Leaving out either comma breaks the pair."),
+]

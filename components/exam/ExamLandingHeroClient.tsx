@@ -18,7 +18,7 @@ import { LANDING_TRY_INIT_SCRIPT, landingTryArm, noteLandingTryEnrolled } from "
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
 // subtitle, black pill CTA that turns into "Go to Dashboard" once there is a
-// session, then the two product screenshots.
+// session, then the two product screenshots (hidden while the try card shows).
 // Everything here is free to start and needs no account, so the CTA always goes
 // straight to the dashboard.
 // Fresh visitors become guests on their way in, exactly like the homepage's
@@ -232,7 +232,9 @@ export function ExamLandingHeroClient({
           <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={() => setHeldLabel((h) => h ?? label)} />
         </div>
       )}
-      <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
+      {/* The question takes the screenshots' place; control (and pages with no
+          question) keep them. CSS hides them before paint for the card arm. */}
+      <div className={`${tryQuestion && !hideTry ? "landing-shots " : ""}mt-16 flex flex-col md:flex-row items-center justify-center gap-8`}>
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
             <ThemedScreenshot

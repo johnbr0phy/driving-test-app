@@ -115,8 +115,8 @@ ITEMS = [
       "Ionization energy rises across a period, and neon's full valence shell holds its electrons most tightly. Sodium, at the "
       "far left, has the lowest."),
     Q(2, 2, G, LAB, "How many milliliters of a 2.0 M stock solution are needed to make 100 mL of a 0.50 M solution?",
-      ["25 mL", "40 mL", "100 mL", "50 mL"],
-      "M₁V₁ = M₂V₂: 2.0 × V₁ = 0.50 × 100, so V₁ = 25 mL, then dilute to 100 mL. 40 mL comes from inverting the ratio.", chk=25),
+      ["25 mL", "400 mL", "100 mL", "50 mL"],
+      "M₁V₁ = M₂V₂: 2.0 × V₁ = 0.50 × 100, so V₁ = 25 mL, then dilute to 100 mL. Inverting the ratio (2.0 × 100 / 0.50) gives 400 mL, more than the final volume.", chk=25),
 
     # ---------------- Drill-only ----------------
     Q(0, 2, G, KIN, "What does a catalyst change in a reaction?",

@@ -1964,20 +1964,20 @@
       "module": 1,
       "domain": "datQrWord",
       "skill": "Applied problems",
-      "difficulty": 1,
+      "difficulty": 2,
       "format": "single",
-      "stem": "A car travels 300 miles in 5 hours. At the same speed, how long does it take to travel 420 miles?",
+      "stem": "A cyclist rides at a steady 36 km/h. What is this speed in meters per second?",
       "options": [
-        "7 hours",
-        "8 hours",
-        "8.4 hours",
-        "10 hours"
+        "3.6 m/s",
+        "10 m/s",
+        "129.6 m/s",
+        "600 m/s"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
-      "explanation": "The speed is 300 / 5 = 60 miles per hour, so 420 miles takes 420 / 60 = 7 hours."
+      "explanation": "36 km/h is 36,000 m in 3,600 s, so 36,000 / 3,600 = 10 m/s. 600 m/s divides by 60 instead of 3,600, and 129.6 m/s multiplies by 3.6 instead of dividing."
     },
     {
       "id": "DAT-T1-QR-17",
@@ -2800,15 +2800,15 @@
       "stem": "How many milliliters of a 2.0 M stock solution are needed to make 100 mL of a 0.50 M solution?",
       "options": [
         "25 mL",
-        "40 mL",
         "50 mL",
-        "100 mL"
+        "100 mL",
+        "400 mL"
       ],
       "correct": [
         0
       ],
       "lockedOrder": true,
-      "explanation": "M₁V₁ = M₂V₂: 2.0 × V₁ = 0.50 × 100, so V₁ = 25 mL, then dilute to 100 mL. 40 mL comes from inverting the ratio."
+      "explanation": "M₁V₁ = M₂V₂: 2.0 × V₁ = 0.50 × 100, so V₁ = 25 mL, then dilute to 100 mL. Inverting the ratio (2.0 × 100 / 0.50) gives 400 mL, more than the final volume."
     },
     {
       "id": "DAT-T2-SNS-36",
@@ -3532,15 +3532,15 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "DAT-T2-RC-P2",
-      "stem": "Which of the following happened after Leonard Thompson's first injection?",
+      "stem": "According to the passage, what was one result of Leonard Thompson's first, impure injection?",
       "options": [
-        "He needed no further doses",
-        "His blood sugar became normal",
+        "An abscess formed at the site",
         "Sugar left his urine",
-        "An abscess formed at the site"
+        "He needed no further doses",
+        "His blood sugar became normal"
       ],
       "correct": [
-        3
+        0
       ],
       "explanation": "The first trial was a disappointment: his blood sugar fell only a little, and an abscess formed where the impure extract was injected."
     },

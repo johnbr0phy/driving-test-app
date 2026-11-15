@@ -324,7 +324,7 @@ ITEMS = [
     Q(2, 1, R, DETAIL, "Where did the team get a more abundant supply of pancreas?",
       ["Cattle from slaughterhouses", "Dogs bred for research", "Human donors after surgery", "Fish from local markets"],
       "The second paragraph says the work moved to whole pancreas taken from cattle at slaughterhouses.", stim=P22),
-    Q(2, 2, R, DETAIL, "Which of the following happened after Leonard Thompson's first injection?",
+    Q(2, 2, R, DETAIL, "According to the passage, what was one result of Leonard Thompson's first, impure injection?",
       ["An abscess formed at the site", "His blood sugar became normal", "Sugar left his urine", "He needed no further doses"],
       "The first trial was a disappointment: his blood sugar fell only a little, and an abscess formed where the impure extract "
       "was injected.", stim=P22),

@@ -69,9 +69,9 @@ ITEMS = [
     Q(1, 2, W, WORD, "A price of \\$80 is raised by 25%, and the new price is then cut by 20%. What is the final price?",
       ["\\$80", "\\$84", "\\$100", "\\$90"],
       "80 × 1.25 = 100, then 100 × 0.80 = 80. The two changes are applied to different bases, so they do not net to +5% (\\$84); \\$100 is only the price after the first change.", chk=80),
-    Q(1, 1, W, WORD, "A car travels 300 miles in 5 hours. At the same speed, how long does it take to travel 420 miles?",
-      ["7 hours", "8 hours", "8.4 hours", "10 hours"],
-      "The speed is 300 / 5 = 60 miles per hour, so 420 miles takes 420 / 60 = 7 hours.", chk=7),
+    Q(1, 2, W, WORD, "A cyclist rides at a steady 36 km/h. What is this speed in meters per second?",
+      ["10 m/s", "3.6 m/s", "600 m/s", "129.6 m/s"],
+      "36 km/h is 36,000 m in 3,600 s, so 36,000 / 3,600 = 10 m/s. 600 m/s divides by 60 instead of 3,600, and 129.6 m/s multiplies by 3.6 instead of dividing.", chk=10),
     Q(1, 2, W, WORD, "Pipe A fills a tank in 6 hours and pipe B fills it in 3 hours. Working together, how long do they take?",
       ["2 hours", "4.5 hours", "1.5 hours", "3 hours"],
       "Together they fill 1/6 + 1/3 = 1/2 of the tank per hour, so the tank takes 2 hours. Averaging the times gives 4.5 hours, "

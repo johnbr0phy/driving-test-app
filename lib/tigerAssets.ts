@@ -103,7 +103,7 @@ const BORROWED_SETS: Record<string, string> = {
   semoto: "moto", sejakt: "hunter", sehp: "sat",
   // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger.
   // Citizenship and residence share the reviewed Danish flag and civic-study set.
-  dkmoto: "moto", dkjagt: "hunter", dkmedborger: "dkindfoed",
+  dkmoto: "moto", dktruck: "cdl", dkjagt: "hunter", dkmedborger: "dkindfoed",
   // Italy: CILS and CELI share Italian language-study art, never US civics.
   itpatente: "driving", itcils: "itlanguage", itceli: "itlanguage",
   // France (Nov 2026): code de la route the car tiger.
@@ -134,6 +134,8 @@ const BORROWED_SETS: Record<string, string> = {
   // Next-100 batch 4: the college entrance exams the college-entrance (SAT) tiger, the teacher eligibility tests
   // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
   jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
+  // CAT (IIM) the GMAT tiger, the MBA entrance exam.
+  iimcat: "gmat",
   reet: "ctet", uptet: "ctet", ugcnet: "ctet", aissee: "asvab",
   // Next-100 batch 5: the JAMB UTME subjects (Use of English too) the college-entrance (SAT) tiger; the Nigeria
   // recruitment tests the police, firefighter, military-entrance and security-guard tigers; the TRCN PQE the Praxis tiger.
@@ -143,7 +145,7 @@ const BORROWED_SETS: Record<string, string> = {
   cca: "cpc",
   // Next-20 batch B reuses reviewed medical-assisting, dental, insurance, cloud and finance families.
   // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
-  cma: "ccma", nbdhe: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", cfal1: "series7",
+  cma: "ccma", rma: "ccma", nbdhe: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", cfal1: "series7",
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
@@ -155,6 +157,8 @@ const BORROWED_SETS: Record<string, string> = {
   mblex: "nasm",
   // ASE A1-A8 (US automobile technicians) borrows the Red Seal automotive mechanic tiger (no flag).
   ase: "caauto",
+  // CEN (BCEN Certified Emergency Nurse) borrows the NCLEX tiger.
+  cen: "nclex",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
   // licence, security guard and NCLEX families.
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",
@@ -164,7 +168,7 @@ const BORROWED_SETS: Record<string, string> = {
   // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX
   // and Series 7 families.
   iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl",
-  nzsfe: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving",
+  nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.
   phnle: "nclex", phmidwife: "nclex", phmedtech: "htl", phpharm: "ptcb", phpsychom: "appsych",

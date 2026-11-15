@@ -109,6 +109,7 @@ export const TEACHES: Record<string, string> = {
   cpc: "a medical coding program",
   cca: "a medical coding or HIM program",
   cma: "a medical assisting program",
+  rma: "a medical assisting program",
   nbdhe: "a dental hygiene program",
   nptepta: "a PTA program",
   aatl2: "an AAT Level 2 accounting course",
@@ -119,6 +120,7 @@ export const TEACHES: Record<string, string> = {
   rdexam: "a dietetics program",
   ccrn: "a CCRN review course or critical care nurse residency",
   aafcs: "a family and consumer sciences program",
+  cen: "a CEN review course",
   mblex: "at a massage therapy school",
   cemap: "a CeMAP course",
   aswb: "in an MSW program or run ASWB licensure prep",
@@ -141,6 +143,7 @@ export const TEACHES: Record<string, string> = {
   naplex: "a NAPLEX review course",
   dat: "DAT prep",
   lsat: "LSAT prep",
+  iimcat: "CAT coaching",
   netplus: "a networking or Network+ course",
   cysa: "a cybersecurity analyst or CySA+ course",
   cissp: "a CISSP or information security course",
@@ -265,6 +268,8 @@ export const TEACHES: Record<string, string> = {
   iesafepass: "a Safe Pass course or construction safety training",
   iepsa: "a QQI Level 4 Security Guarding Skills course",
   nzsfe: "a nursing school class",
+  nziqn: "a competence assessment preparation class",
+  nzensf: "a Diploma in Enrolled Nursing class",
   sgvl: "the taxi or private hire car vocational licence course",
 };
 

@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "ase";
+export type ExamId = "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -10910,6 +10910,77 @@ const dkmoto: ExamConfig = {
   },
 };
 
+const dktruck: ExamConfig = {
+  id: "dktruck",
+  stateCode: "DKTRUCK",
+  idBase: 28600,
+  slug: "/denmark-truck-theory",
+  landingPath: "/denmark-truck-theory-test",
+  name: "Denmark Truck Theory Practice Test",
+  shortName: "Denmark truck theory",
+  examLabel: "Danish truck theory test",
+  fullName: "Danish truck theory test (teoriprøve), categories C and CE",
+  questionIdPrefix: "DKTR-",
+  icon: "truck",
+  testCount: 8,
+  questionsPerTest: 25,
+  passPct: 80,
+  // Source: Færdselsstyrelsen (fstyr.dk, fetched 2026-11-15): the digital theory test is offered
+  // in English (and German) for category C among others, Danish and English at every digital test
+  // site, at most five errors. Content from the Undervisningsplan kategori C og D, version 1.0 2026
+  // (FS 16.01.2026), with a few CE coupling and length items from the CE plan. Weights follow
+  // Færdselsstyrelsen's published randomisation key for the digital category C test: afsnit 1
+  // 32%, 3 8%, 4 4%, 5 4%, 6 16%, 7 28%, 8 8%, so per 25: 8 (split 3/3/2), 2, 1 + 1 (one
+  // category), 4 (2/2), 7 (4/3) and 2. 25 questions per guides (the official practice test for C
+  // has 25 since 21 April 2026). The real test is picture-based with one or more correct answers;
+  // ours are text, single answer. Eight real-length tests; pools are exactly 8x each count.
+  blueprint: {
+    dktrBrakes: 3,
+    dktrVehicle: 3,
+    dktrBody: 2,
+    dktrHandling: 2,
+    dktrDriver: 2,
+    dktrRules: 2,
+    dktrHours: 2,
+    dktrPosition: 4,
+    dktrJunctions: 3,
+    dktrRisk: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28601, name: "Brakes, Steering & Lights", categories: ["dktrBrakes", "dktrVehicle"], size: 48, weightLabel: "6 of 25 test questions" },
+    { setNumber: 2, id: 28602, name: "Body, Loads & Driving Times", categories: ["dktrBody", "dktrRules", "dktrHours"], size: 48, weightLabel: "6 of 25 test questions" },
+    { setNumber: 3, id: 28603, name: "Other Vehicles, Driver & Risk", categories: ["dktrHandling", "dktrDriver", "dktrRisk"], size: 48, weightLabel: "6 of 25 test questions" },
+    { setNumber: 4, id: 28604, name: "Driving a Lorry in Traffic", categories: ["dktrPosition", "dktrJunctions"], size: 56, weightLabel: "7 of 25 test questions" },
+  ],
+  categoryLabels: {
+    dktrBrakes: "Steering & Air Brakes",
+    dktrVehicle: "Lights, Tyres & Engine",
+    dktrBody: "Body, Mirrors, Tachograph & Coupling",
+    dktrHandling: "Other Vehicles & How They Handle",
+    dktrDriver: "The Driver & Road Conditions",
+    dktrRules: "Licence, Dimensions, Weights & Loads",
+    dktrHours: "Driving Times, Tachograph & Haulage",
+    dktrPosition: "Speed, Lanes, Meeting & Overtaking",
+    dktrJunctions: "Junctions, Motorways & Parking",
+    dktrRisk: "Alcohol, Drugs, Speed & Seat Belts",
+  },
+  copy: {
+    guestPrompt: "to save your Danish truck theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the category C teaching plan, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 25 questions like the real test, 20 to pass",
+    heroSubs: [
+      "Four training sets, eight practice tests. Start with Brakes, Steering & Lights.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Book your teoriprøve.",
+    ],
+    sourceLine: "Based on Færdselsstyrelsen's teaching plan for category C (undervisningsplan C og D, 2026). Original questions in English; 25 per test, 20 to pass like the real test's five-error limit.",
+    analyticsKey: "dktruck",
+  },
+};
+
 const dkindfoed: ExamConfig = {
   id: "dkindfoed",
   stateCode: "DKINDFOED",
@@ -15851,6 +15922,154 @@ const cma: ExamConfig = {
   },
 };
 
+const cen: ExamConfig = {
+  id: "cen",
+  stateCode: "CEN",
+  idBase: 28400,
+  slug: "/cen",
+  landingPath: "/cen-practice-test",
+  name: "CEN Practice Test",
+  shortName: "CEN",
+  examLabel: "CEN exam",
+  fullName: "Certified Emergency Nurse (CEN) Exam",
+  questionIdPrefix: "CEN-",
+  icon: "siren",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 66,
+  // BCEN Certified Emergency Nurse (CEN) Examination Content Outline, effective July 2026 (read
+  // 2026-11-15): 175 items, 150 scored + 25 unscored, 3 hours, pass with 99 of 150 scored (66%).
+  // Eleven areas: cardiovascular 18, respiratory 17, neurological 17, gastrointestinal 14,
+  // GU/gyn/OB 10, mental health 13, medical 15, musculoskeletal and wound 11, HEENT 10,
+  // environment/toxicology/communicable disease 13, professional issues 12. Divided by three for
+  // 50 per test: 6/6/6/5/3/4/5/4/3/4/4. No image items; rhythms described in words. All original.
+  blueprint: {
+    cenCardio: 6,
+    cenResp: 6,
+    cenNeuro: 6,
+    cenGI: 5,
+    cenGUOB: 3,
+    cenMental: 4,
+    cenMedical: 5,
+    cenMusculo: 4,
+    cenHeent: 3,
+    cenEnviro: 4,
+    cenProf: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28401, name: "Cardiovascular & Respiratory", categories: ["cenCardio", "cenResp"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 28402, name: "Neurological & Gastrointestinal", categories: ["cenNeuro", "cenGI"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 28403, name: "GU, OB, Mental Health & Medical", categories: ["cenGUOB", "cenMental", "cenMedical"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 28404, name: "Wounds, HEENT & Toxicology", categories: ["cenMusculo", "cenHeent", "cenEnviro"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 5, id: 28405, name: "Professional Issues", categories: ["cenProf"], size: 16, weightLabel: "4 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cenCardio: "Cardiovascular Emergencies",
+    cenResp: "Respiratory Emergencies",
+    cenNeuro: "Neurological Emergencies",
+    cenGI: "Gastrointestinal Emergencies",
+    cenGUOB: "GU, Gynecology & Obstetrics",
+    cenMental: "Mental Health Emergencies",
+    cenMedical: "Medical Emergencies",
+    cenMusculo: "Musculoskeletal & Wound",
+    cenHeent: "Head, Eye, Ear, Nose & Throat",
+    cenEnviro: "Environment, Toxicology & Infection",
+    cenProf: "Professional Issues",
+  },
+  copy: {
+    guestPrompt: "to save your CEN progress and track every question you miss",
+    trainingHeading: "Train by BCEN content area",
+    trainingSub: "Five sets covering the eleven areas of the BCEN content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real 150 scored",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Cardiovascular & Respiratory.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CEN.",
+    ],
+    sourceLine: "Based on the BCEN CEN Examination Content Outline effective July 2026. Original questions; 50 per test, weighted like the real exam. Not affiliated with BCEN.",
+    analyticsKey: "cen",
+  },
+};
+
+const rma: ExamConfig = {
+  id: "rma",
+  stateCode: "RMA",
+  idBase: 28500,
+  slug: "/rma",
+  landingPath: "/rma-practice-test",
+  name: "RMA (AMT) Practice Test",
+  shortName: "RMA (AMT)",
+  examLabel: "RMA exam",
+  fullName: "Registered Medical Assistant (RMA) Certification Exam",
+  questionIdPrefix: "RMA-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AMT Registered Medical Assistant (RMA) Certification Examination Competencies and Examination
+  // Specifications (2026, checked November 2026): 210 questions. I. General Medical Assisting 65
+  // (31%: body systems, terminology, law and ethics, human relations); II. Administrative 30 (14%:
+  // insurance, clerical); III. Clinical 115 (55%: infection control, instruments, lab, minor
+  // surgery, vital signs, physical exams, pharmacology, therapeutic modalities, first aid). Scaled
+  // to 50 per test: general 15 (6/4/3/2), administrative 7 (3/4), clinical 28 (4/3/5/4/5/5/2);
+  // the split inside each work area is Tigertest's. AMT reports a scaled score (0 to 100, 70 to
+  // pass, not a percent); 70% here is a readiness marker. No image items. All items original.
+  blueprint: {
+    rmaAnatomy: 6,
+    rmaTerms: 4,
+    rmaLaw: 3,
+    rmaHuman: 2,
+    rmaInsurance: 3,
+    rmaClerical: 4,
+    rmaInfection: 4,
+    rmaInstruments: 3,
+    rmaLab: 5,
+    rmaVitals: 4,
+    rmaExams: 5,
+    rmaPharm: 5,
+    rmaTherapy: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28501, name: "Body Systems & Terminology", categories: ["rmaAnatomy", "rmaTerms"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 28502, name: "Law, Ethics & Office Administration", categories: ["rmaLaw", "rmaHuman", "rmaInsurance", "rmaClerical"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 28503, name: "Infection Control, Lab & Surgery", categories: ["rmaInfection", "rmaInstruments", "rmaLab"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 28504, name: "Vital Signs & Physical Exams", categories: ["rmaVitals", "rmaExams"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 28505, name: "Pharmacology & First Aid", categories: ["rmaPharm", "rmaTherapy"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rmaAnatomy: "Body Systems & Wellness",
+    rmaTerms: "Medical Terminology",
+    rmaLaw: "Medical Law & Ethics",
+    rmaHuman: "Human Relations",
+    rmaInsurance: "Insurance & Coding",
+    rmaClerical: "Clerical & Health Records",
+    rmaInfection: "Infection Control",
+    rmaInstruments: "Instruments & Minor Surgery",
+    rmaLab: "Laboratory Procedures",
+    rmaVitals: "Vital Signs & Measurements",
+    rmaExams: "Physical Examinations",
+    rmaPharm: "Clinical Pharmacology",
+    rmaTherapy: "Therapeutic Modalities & First Aid",
+  },
+  copy: {
+    guestPrompt: "to save your RMA progress and track every question you miss",
+    trainingHeading: "Train by AMT work area",
+    trainingSub: "Five sets covering the general, administrative and clinical work areas of the AMT RMA specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Body Systems & Terminology.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the RMA.",
+    ],
+    sourceLine: "Based on the AMT RMA Certification Examination Competencies and Examination Specifications. Original questions; 50 per test, weighted like the real exam. Not affiliated with American Medical Technologists.",
+    analyticsKey: "rma",
+  },
+};
+
 const nhie: ExamConfig = {
   id: "nhie",
   stateCode: "NHIE",
@@ -19316,7 +19535,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

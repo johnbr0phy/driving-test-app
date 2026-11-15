@@ -23,6 +23,8 @@ const TEACHER_LED = new Set([
   "mblex",
   // US: automotive technology programs (ASE A1-A8)
   "ase",
+  // US: emergency nursing CEN review courses
+  "cen",
   // Spain: academias de oposiciones and accredited security training centres
   "espolicia", "esguardia", "esvigilante",
   // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen
@@ -72,7 +74,7 @@ const TEACHER_LED = new Set([
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "lsat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)
@@ -84,7 +86,7 @@ const TEACHER_LED = new Set([
   // Next-100 batch 5 (November 2026)
   "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng", "apgov", "ngpolice", "trcnpqe",
   // Next-20 batch B (November 2026)
-  "cma", "nbdhe", "nptepta", "aatl2", "accafa",
+  "cma", "rma", "nbdhe", "nptepta", "aatl2", "accafa",
   // Next-20 batch C (November 2026)
   "aswbclin", "phr", "ccs", "rdexam", "cemap",
   // Next-20 batch (November 2026)
@@ -93,7 +95,7 @@ const TEACHER_LED = new Set([
   "nzlcq", "aesira", "kenck",
   "pknle", "pkpnmc", "zapsira", "punjabpolice",
   // International batch 4 (November 2026)
-  "iesafepass", "iepsa", "nzsfe", "sgvl",
+  "iesafepass", "iepsa", "nzsfe", "nzensf", "nziqn", "sgvl",
   // International batch 2 (November 2026): the PRC board exams and the criminology board exam
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
 ]);

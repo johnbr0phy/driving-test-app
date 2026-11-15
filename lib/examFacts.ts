@@ -3008,6 +3008,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category A test, and the teaching plan for categories AM, A1, A2 and A (undervisningsplan, version 1.0 2026, in use from 1 July 2026), checked November 2026",
     source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
   },
+  dktruck: {
+    answer:
+      "The Danish theory test (teoriprøve) for a lorry licence, category C, is run by Færdselsstyrelsen, the Danish Road Traffic Authority. You may make at most five errors; an unanswered question counts as an error. On the digital test each question shows a picture or video of a traffic situation and you pick the correct answer or answers. Questions are drawn at random from the teaching plan for categories C and D, weighted by Færdselsstyrelsen's published key: about a third on the lorry itself (brakes, steering, lights, mirrors, tachograph), with driving and rest times, weights, widths and loads, and driving a lorry in traffic. Digital theory tests in English are offered for category C at every digital test site, as well as in Danish. You take it after lessons with an approved driving instructor; a category C licence can normally be issued from 21. Category CE has its own theory test with its own key.",
+    rows: [
+      { label: "Run by", value: "Færdselsstyrelsen (Danish Road Traffic Authority)" },
+      { label: "Pass rule", value: "At most 5 errors (guides: 25 questions, so 20 right)" },
+      { label: "Format", value: "Picture or video based, one or more correct answers" },
+      { label: "Languages", value: "Danish and English at every digital site; German in Aabenraa" },
+      { label: "Weighting", value: "Vehicle 32%, traffic 28%, rules 16%, others 4 to 8%" },
+      { label: "Tigertest mock tests", value: "8 x 25 questions, 20 to pass" },
+      { label: "Licence age", value: "Category C normally from 21" },
+    ],
+    basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category C test, and the teaching plans for categories C and D and for CE (version 1.0 2026, FS 16.01.2026), checked November 2026",
+    source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
+  },
   itcils: {
     answer:
       "CILS B1 Cittadinanza is the Italian language certificate of the Centro CILS at the Università per Stranieri di Siena for people applying for Italian citizenship by marriage or residence, who must show Italian at B1 of the CEFR under article 9.1 of Law 91/1992. It tests four skills, each scored out of 12: listening (two tasks, about 30 minutes), reading comprehension and grammar (two tasks, 40 minutes), writing (one email of 80 to 120 words, 40 minutes) and speaking (about 10 minutes with an examiner). Every skill must be passed, the certificate is valid only for the citizenship application, and a failed skill cannot be carried over: the whole exam is taken again.",
@@ -3857,6 +3872,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "SBI's Recruitment of Junior Associates (Customer Support & Sales) advertisement CRPD/CR/2026-27/17 (registration 11 to 31 August 2026), section 4, Selection Procedure",
     source: { name: "State Bank of India Careers", url: "https://sbi.bank.in/web/careers/current-openings" },
   },
+  iimcat: {
+    answer:
+      "CAT 2026, the Common Admission Test of the Indian Institutes of Management, is a 120-minute computer-based test held on Sunday, 29 November 2026 in three sessions, convened this year by IIM Indore. It has three sections in a fixed order, Verbal Ability and Reading Comprehension, Data Interpretation and Logical Reasoning, and Quantitative Ability, with exactly 40 minutes for each and no switching between sections. A correct answer earns 3 marks; a wrong multiple-choice answer loses 1 mark, while non-MCQ questions, where you type the answer, carry no penalty. An on-screen calculator is available, CAT has no defined syllabus, and the IIMs do not publish the number of questions. The score is valid until 31 December 2027, and each IIM sets its own cut-offs and selection process.",
+    rows: [
+      { label: "Duration", value: "120 minutes" },
+      { label: "Sections", value: "VARC, DILR and QA, in a fixed order, 40 minutes each" },
+      { label: "Question types", value: "Multiple choice, and non-MCQ items where you type the answer" },
+      { label: "Marking", value: "+3 correct; -1 for a wrong MCQ; 0 for a wrong non-MCQ or a skipped question" },
+      { label: "Calculator", value: "On-screen calculator only" },
+      { label: "Test date", value: "29 November 2026, three sessions, about 170 cities" },
+      { label: "Fee", value: "Rs 2,700; Rs 1,350 for SC, ST and PwBD candidates" },
+      { label: "Score valid", value: "Until 31 December 2027" },
+    ],
+    basedOn: "the CAT 2026 press release of IIM Indore (26 July 2026), the CAT 2026 Information Bulletin and the CAT 2026 FAQs on iimcat.ac.in",
+    source: { name: "CAT 2026 official website", url: "https://iimcat.ac.in" },
+  },
   ibpsrrb: {
     answer:
       "The IBPS RRB Office Assistant (Multipurpose) Preliminary Examination, often called IBPS RRB Clerk, is one online objective paper of 80 questions in 45 minutes, with each test timed separately: Reasoning 40 questions in 25 minutes and Numerical Ability 40 questions in 20 minutes. Each question carries one mark and a quarter of a mark is deducted for every wrong answer. Candidates must clear a minimum cutoff set by IBPS in both tests; Prelims is qualifying for the Main examination, and only Main marks count for the final merit list and provisional allotment to a Regional Rural Bank. Under the CRP RRBs-XV notification of 1 September 2026, the Prelims is scheduled for November or December 2026.",
@@ -4607,6 +4638,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "New Zealand heavy vehicle rules as in force November 2026; NZTA's test page could not be read",
     source: { name: "NZTA Waka Kotahi heavy vehicle licences", url: "https://www.nzta.govt.nz/driver-licences/getting-a-licence/" },
   },
+  nziqn: {
+    answer:
+      "The IQN theoretical examination is the first test of competence the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) asks of internationally qualified nurses who need one before registration; the clinical competence assessment (OSCE) follows. The registered nurse exam is 120 computer-based multiple-choice questions, each with one correct answer, in 165 minutes at a Pearson test centre in New Zealand or overseas: Part A, Medication safety, 12 questions in 30 minutes including medicine calculations with an on-screen calculator, and Part B, Nursing knowledge, 108 questions in 135 minutes linked to the Council's standards of competence. Results come within 24 hours as Pass or Fail for each part; no pass mark is published. You have six months from the invitation and three attempts, and a failed part is re-sat on its own.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice: 12 in Part A, 108 in Part B (registered nurse)" },
+      { label: "Time", value: "165 minutes: 30 for Part A, 135 for Part B, no scheduled breaks" },
+      { label: "Pass mark", value: "Not published; each part is reported Pass or Fail" },
+      { label: "Calculator", value: "Provided in the software for calculation questions" },
+      { label: "Attempts", value: "3, within 6 months of the invitation; re-sit only a failed part" },
+      { label: "Where", value: "Pearson test centres in New Zealand and many other countries" },
+      { label: "Enrolled nurse exam", value: "90 questions in 135 minutes (9 in Part A, 81 in Part B)" },
+    ],
+    basedOn: "the Nursing Council's IQN theoretical examination handbook (version 1.5, October 2026) and the 2025 standards of competence for registered nurses",
+    source: { name: "Nursing Council of New Zealand", url: "https://nursingcouncil.org.nz/IQN/IQN/Competence-assessment-process.aspx" },
+  },
   nzsfe: {
     answer:
       "The State Final Examination is the examination the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) sets for graduates of approved nursing programmes before it registers them as registered or enrolled nurses. A New Zealand graduate applying for registration as a registered nurse supplies their State Final Examination results, support from the head of their school of nursing and two referees, and the Council registers successful applicants as soon as practicable after they pass. The Council's public website does not set out the number of questions, time or pass standard; candidates should ask their school of nursing or the Council for the current exam details.",
@@ -4620,6 +4666,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Nursing Council of New Zealand: Register as a nurse, Registered nurse scope of practice (January 2025) and Standards of competence for registered nurses (2025), checked November 2026",
     source: { name: "Nursing Council of New Zealand: Register as a nurse", url: "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Register_as_a_nurse.aspx" },
+  },
+  nzensf: {
+    answer:
+      "The State Final Examination for enrolled nurses is the examination the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) sets for graduates of the 18-month Diploma in Enrolled Nursing before it registers them in the enrolled nurse scope. The Council's handbook for nursing programmes describes it as 90 multiple-choice questions in 90 minutes, held in March, July and November, with an overall pass of 70% across the whole exam; the Council's FAQ adds that there is no pass mark for each category and that candidates have three attempts. The 2025 sample paper has two parts, Part A Medicine Calculations and Part B Nursing Knowledge, with four options a question, answered as an enrolled nurse would act. Part B is linked to the five pou of the Standards of competence for enrolled nurses (February 2025).",
+    rows: [
+      { label: "Run by", value: "Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa)" },
+      { label: "Who sits it", value: "Diploma in Enrolled Nursing graduates, before registration" },
+      { label: "Questions", value: "90 multiple choice, four options each" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Parts", value: "Part A Medicine Calculations, Part B Nursing Knowledge" },
+      { label: "Pass mark", value: "70% overall, no pass mark for each category" },
+      { label: "Attempts", value: "Three" },
+      { label: "Sittings", value: "March, July and November" },
+      { label: "Standards", value: "Enrolled nurse scope and standards of competence, 2025 (five pou)" },
+    ],
+    basedOn: "Nursing Council of New Zealand: Handbook for pre-registration nursing programmes (May 2022), State Final Examination FAQ (October 2024), EN sample questions 2025, Enrolled nurse scope of practice (January 2025) and Standards of competence for enrolled nurses (February 2025), checked November 2026",
+    source: { name: "Nursing Council of New Zealand: Enrolled nurse", url: "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Enrolled_nurse.aspx" },
   },
   sgrtt: {
     answer:
@@ -5188,6 +5251,38 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The AAMA Content Outline for the CMA (AAMA) Certification Exam (Rev 1/26) and the AAMA certification FAQ, checked November 2026",
     source: { name: "AAMA: CMA (AAMA) Certification", url: "https://www.aama-ntl.org/certification" },
+  },
+  cen: {
+    answer:
+      "The Certified Emergency Nurse (CEN) exam is the Board of Certification for Emergency Nursing's (BCEN) exam for registered nurses in emergency care. It has 175 multiple-choice items, 150 scored and 25 unscored pretest items, with 180 minutes of seat time, taken by computer at a PSI test center or at home by live remote proctoring. Under the content outline in effect from July 2026 the 150 scored items cover eleven areas, led by cardiovascular (18), respiratory (17) and neurological (17) emergencies. A pass needs 99 of the 150 scored items right, a raw count with no curve. After a failed attempt you wait 90 days to retest, and the CEN is renewed every four years.",
+    rows: [
+      { label: "Questions", value: "175 multiple choice (150 scored, 25 pretest)" },
+      { label: "Time", value: "180 minutes of seat time" },
+      { label: "Pass mark", value: "99 of 150 scored items (66%)" },
+      { label: "Content", value: "11 areas: cardiovascular 18, respiratory 17, neurological 17, medical 15, GI 14, mental health 13, environment and toxicology 13, professional issues 12, musculoskeletal and wound 11, GU/OB 10, HEENT 10" },
+      { label: "Where", value: "PSI test center or live remote proctoring" },
+      { label: "Retake", value: "Wait 90 days after a failed attempt" },
+      { label: "Renewal", value: "Every four years" },
+      { label: "Run by", value: "Board of Certification for Emergency Nursing (BCEN)" },
+    ],
+    basedOn: "The BCEN CEN Examination Content Outline effective July 2026 and the BCEN CEN exam FAQ, checked November 2026",
+    source: { name: "BCEN: Certified Emergency Nurse (CEN)", url: "https://bcen.org/cen/" },
+  },
+
+  rma: {
+    answer:
+      "The Registered Medical Assistant (RMA) exam is the certification exam of American Medical Technologists (AMT) for medical assistants, which earns the RMA (AMT) credential. AMT's examination specifications list 210 four-option multiple-choice questions: General Medical Assisting 65 (31%), Administrative Medical Assisting 30 (14%) and Clinical Medical Assisting 115 (55%). The exam is taken on a computer in 2 hours, scheduled through Pearson VUE or by a candidate's school, and may include unscored pretest items. Scores are scaled from 0 to 100, and 70 is the minimum passing score; it is not a percentage. A candidate who fails retakes the whole exam and may test up to four times in all.",
+    rows: [
+      { label: "Questions", value: "210 multiple choice, four options, single best answer" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "Scaled score of 70 (scale 0 to 100, not a percentage)" },
+      { label: "Content", value: "Clinical 115 (55%), General 65 (31%), Administrative 30 (14%)" },
+      { label: "Where", value: "Computer based, scheduled through Pearson VUE or your school" },
+      { label: "Retakes", value: "Whole exam, up to four attempts in all, with a retest fee" },
+      { label: "Run by", value: "American Medical Technologists (AMT)" },
+    ],
+    basedOn: "AMT's RMA Certification Examination Competencies and Examination Specifications (2026) and the AMT Candidate Handbook (revised April 2026), checked November 2026",
+    source: { name: "AMT: Registered Medical Assistant exam", url: "https://americanmedtech.org/medical-assistant/rma-exam" },
   },
   nhie: {
     answer:

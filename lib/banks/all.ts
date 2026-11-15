@@ -214,6 +214,7 @@ import "./fortigate";
 import "./cssgb";
 import "./ccs";
 import "./rdexam";
+import "./ccrn";
 import "./praxis5001";
 import "./fladjuster";
 import "./aafcs";

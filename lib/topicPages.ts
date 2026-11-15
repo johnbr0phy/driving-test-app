@@ -14,7 +14,7 @@ import { EXAMS, ExamConfig, getExamById } from "./exams";
 export const TOPIC_EXAM_IDS = [
   "realestate", "insurance", "pnc", "sie", "series7", "series63", "series65", "nmls", "txadjuster", "fladjuster", "notary",
   "cpafar", "cpareg", "cpaaud", "cfal1", "accafa", "phr", "cisa", "cssgb", "sfadmin", "llqp", "cemap",
-  "cna", "ptcb", "phleb", "ccma", "cma", "cen", "cet", "danb", "cpc", "cca", "ccs", "rbt", "arrt", "nptepta", "rdexam", "vtne", "nasm",
+  "cna", "ptcb", "phleb", "ccma", "cma", "cen", "cet", "danb", "cpc", "cca", "ccs", "rbt", "arrt", "nptepta", "rdexam", "ccrn", "vtne", "nasm",
   "aswb", "aswbclin", "nce",
   "cdl", "cdlx", "jelec", "nhie", "epa608", "foodmgr", "barber", "cosmetology", "moto", "civics", "part107",
 ] as const;

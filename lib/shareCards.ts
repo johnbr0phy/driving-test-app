@@ -752,6 +752,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(91, 20%, 26%)",
     "tint": "hsl(91, 20%, 96%)"
   },
+  "ccrn": {
+    "color": "hsl(252, 25%, 46%)",
+    "tint": "hsl(252, 25%, 96%)"
+  },
   "praxis5001": {
     "color": "hsl(39, 40%, 26%)",
     "tint": "hsl(39, 40%, 96%)"

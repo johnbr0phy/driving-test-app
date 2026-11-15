@@ -13,7 +13,7 @@ npm run typecheck # tsc --noEmit
 npm test          # node:test suite, tests/*.test.cjs (uses tsx to load TS)
 ```
 
-`.github/workflows/checks.yml` runs typecheck, lint, `npm test`, `scripts/build-training-parts.ts --check` and `scripts/review-question-banks.py` on every PR and push to main; Vercel's preview covers the build. Run `npm test` before pushing, and when a test asserts on source text that a deliberate change moved, update the test to the new contract rather than deleting it.
+`.github/workflows/checks.yml` runs typecheck, lint, `npm test`, `scripts/build-training-parts.ts --check` and `scripts/review-question-banks.py` on every PR and push to main. Vercel preview deploys are off (Nov 15 2026, to cut build costs), so nothing builds a PR before merge: the production build on main is the first build, and Vercel keeps the last good deploy live if it fails. The Vercel build also skips type checking and linting (`next.config.ts`), since CI runs both. Run `npm test` before pushing, and when a test asserts on source text that a deliberate change moved, update the test to the new contract rather than deleting it.
 
 ## Architecture
 

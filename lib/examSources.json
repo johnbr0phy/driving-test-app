@@ -381,6 +381,11 @@
   "https://www.aama-ntl.org/certification",
   "https://www.aama-ntl.org/certification/testing-options"
  ],
+ "cogat": [
+  "https://riversideinsights.com/hubfs/CogAT/CogAT%20Overview%20Brochure.pdf",
+  "https://riversideinsights.com/hubfs/CitC/Overview_of_CogAT_for_Parents.pdf",
+  "https://www.riversideinsights.com/cogat"
+ ],
  "cpaaud": [
   "https://assets.ctfassets.net/rb9cdnjh59cm/5d2r66sSSE8wJRZTqAshlE/f97ec39c394eeb61b20a5824784306df/CPA_Exam_Blueprints_2026.pdf",
   "https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf",
@@ -658,6 +663,11 @@
   "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/assessment",
   "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/assessment/hsc-examinations"
  ],
+ "hspt": [
+  "https://www.ststesting.com/hsp/index.html",
+  "https://ststesting.com/hspt/",
+  "https://www.ststesting.com/hp_int_sts.pdf"
+ ],
  "hubizt": [
   "https://www.mnb.hu/letoltes/vizsgaszabalyzat.pdf",
   "https://net.jogtar.hu/jogszabaly?docid=a1500040.ngm",
@@ -730,6 +740,11 @@
   "https://iimcat.ac.in",
   "https://cdn.digialm.com/per/g06/pub/32842/EForms/image/CAT2026/CAT_2026_Press_Release_26-07-2026.pdf",
   "https://cdn.digialm.com/per/g06/pub/32842/EForms/image/CAT2026/CAT2026InformationBulletin_26-07-2026_V2.pdf"
+ ],
+ "isee": [
+  "https://cdn.erblearn.org/www/20260801_E3n_ISEE_QuickFacts_DIGITAL.pdf",
+  "https://www.admission.org/assessments/isee/about",
+  "https://www.admission.org/assessments/isee/preparation"
  ],
  "itceli": [
   "https://cvcl.unistrapg.it/pagine/esami-celi-generici",
@@ -821,6 +836,11 @@
   "https://www.nwea.org/uploads/MAP-Growth-Technical-Report-2025.pdf",
   "https://learning.ccsso.org/wp-content/uploads/2022/11/Math_Standards1.pdf"
  ],
+ "mblex": [
+  "https://fsmtb.org/wp-content/uploads/2025/12/MBLEx-Content-Outline.pdf",
+  "https://fsmtb.org/exam-content/",
+  "https://fsmtb.org/wp-content/uploads/2026/09/MBLEx-Candidate-Handbook-2026.pdf"
+ ],
  "mcat": [
   "https://students-residents.aamc.org/prepare-mcat-exam/whats-mcat-exam",
   "https://students-residents.aamc.org/media/9261/download",
@@ -880,6 +900,11 @@
   "https://www.nap.edu.au/naplan/results-and-reports",
   "https://www.nap.edu.au/naplan/whats-in-the-tests",
   "https://www.nap.edu.au/naplan/understanding-online-assessment/tailored-tests"
+ ],
+ "naplex": [
+  "https://nabp.pharmacy/wp-content/uploads/NAPLEX-Content-Outline.pdf",
+  "https://nabp.pharmacy/news/blog/breaking-down-the-naplex-content-outline/",
+  "https://read.nxtbook.com/nabp/bulletin/naplex_mpje_bulletin/what_is_the_naplex.html"
  ],
  "nasm": [
   "https://support.nasm.org/how-many-questions-are-on-the-cpt-exam-and-how-long-do-i-have-to-complete-it",
@@ -1323,6 +1348,11 @@
  ],
  "sie": [
   "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam"
+ ],
+ "ssat": [
+  "https://www.admission.org/help/whats-on-the-middle-level-ssat",
+  "https://www.admission.org/help/whats-on-the-upper-level-ssat",
+  "https://www.admission.org/assessments/ssat/about-the-ssat"
  ],
  "ssccgl": [
   "https://ssc.gov.in"

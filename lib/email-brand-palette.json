@@ -105,6 +105,9 @@
   "naplan7": ["#0b0bd5","#eeeefc","#090971","#d8d8ee"],
   "ocnsw": ["#d50b81","#fceef6","#710946","#eed8e5"],
   "mapgrowth": ["#049562","#e9fbf5","#04442d","#d4ede4"],
+  "ssat": ["#810340","#fbe9f2","#440423","#edd4e0"],
+  "cogat": ["#1c403d","#eef7f6","#0c1d1b","#d9e8e7"],
+  "hspt": ["#5c563d","#f6f5ee","#353227","#e7e4da"],
   "shsat": ["#747a00","#fbfce8","#343701","#ebedcf"],
   "staaralg1": ["#596039","#f3f4eb","#2a2d1b","#e3e5dc"],
   "staareng1": ["#8e0b7c","#fdedfb","#400739","#f0dbed"],
@@ -312,6 +315,7 @@
   "aphug": ["#6c6a41","#f7f7f2","#2d2c1b","#eaeae1"],
   "jambmath": ["#2a6f4e","#edf8f2","#122b1f","#deede6"],
   "wasscemath": ["#0e6238","#ebfaf2","#062314","#ddeee6"],
+  "naplex": ["#195357","#edf7f8","#0d2526","#deeced"],
   "jambbio": ["#447e52","#f2f8f3","#203c27","#dfece2"],
   "jambchem": ["#5b787b","#f3f6f6","#303f41","#e2e8e9"],
   "jambphys": ["#414c8b","#f1f2f8","#1c2036","#e2e4ee"],
@@ -356,6 +360,7 @@
   "praxis5001": ["#5d4a28","#f7f4ed","#241d0f","#ebe5db"],
   "fladjuster": ["#633654","#f8f2f6","#301c2a","#e7dee4"],
   "aafcs": ["#0b8e7a","#ecf9f7","#0a3831","#d9e8e6"],
+  "mblex": ["#694979","#f6f2f8","#2f2235","#e4dfe7"],
   "ase": ["#717949","#f5f6ee","#2f3220","#e3e5dc"],
   "cen": ["#555407","#f9f8ec","#232206","#e8e8d9"],
   "llqp": ["#682d27","#f9f1f0","#321815","#e8dfde"],
@@ -370,5 +375,6 @@
   "mypce": ["#2a2f46","#f2f3f7","#14161f","#e0e1e6"],
   "kenck": ["#195742","#edf8f4","#0e2a21","#dae7e3"],
   "iedttcv": ["#115f2b","#ecf9f0","#092a14","#d9e8de"],
+  "isee": ["#19572a","#edf8f0","#0d2614","#d9e8dd"],
   "nzensf": ["#a51d5f","#fbeff5","#4c102d","#eddee5"]
 }

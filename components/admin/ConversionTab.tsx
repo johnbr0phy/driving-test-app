@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { GuestPromptTestCard } from "@/components/admin/GuestPromptTestCard";
+import { LandingTryTestCard } from "@/components/admin/LandingTryTestCard";
 import {
   CARD, ROW, STICKY_COL, ShowAllButton, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch, useTopN,
 } from "@/components/admin/AdminTabParts";
@@ -353,6 +354,9 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
           </div>
         );
       })()}
+
+      {/* The landing "Try one now" A/B test */}
+      <LandingTryTestCard />
 
       {/* The sign-up step's ten-design message test */}
       <GuestPromptTestCard />

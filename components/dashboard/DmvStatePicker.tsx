@@ -18,6 +18,31 @@ import { trackFunnelStep } from "@/lib/funnel";
 import type { Language } from "@/i18n";
 import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
 
+// The visitor's state from IP geolocation (/api/geo). The DMV dashboard sets
+// it for anyone with no state yet, as if they had chosen it; Change switches
+// it (free until they have progress). `done` once the lookup has answered,
+// so the picker only shows when there is no guess.
+export function useSuggestedState(active: boolean): { state: string | null; done: boolean } {
+  const [result, setResult] = useState<{ state: string | null; done: boolean }>({ state: null, done: false });
+  useEffect(() => {
+    if (!active) return;
+    let cancelled = false;
+    fetch("/api/geo")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: { state?: string } | null) => {
+        const code = d?.state && states.some((s) => s.code === d.state) ? d.state : null;
+        if (!cancelled) setResult({ state: code, done: true });
+      })
+      .catch(() => {
+        if (!cancelled) setResult({ state: null, done: true });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [active]);
+  return result;
+}
+
 function useDmvStateChoice() {
   const { t } = useTranslation();
   const selectedState = useStore((state) => state.selectedState);

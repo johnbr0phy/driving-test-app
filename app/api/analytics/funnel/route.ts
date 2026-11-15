@@ -4,6 +4,7 @@ import { FieldValue } from 'firebase-admin/firestore';
 import { isInternalEmail } from '@/lib/internal';
 import { regionFromCountry } from '@/lib/region';
 import { isBotRequest } from '@/lib/botUserAgent';
+import { landingKey, normalizeLanding } from '@/lib/funnelLanding';
 
 // Visitor funnel aggregate (see lib/funnel.ts). One counter per step, total
 // and per UTC day; signups are also split by whether the browser practiced
@@ -57,6 +58,17 @@ export async function POST(request: NextRequest) {
 
     // Nested-object merge, same pattern as analytics/paywalls.
     await db.doc('analytics/funnel').set({ steps }, { merge: true });
+
+    // Visits and first answers by the first visit's landing page, one doc per
+    // UTC day so no doc grows without end (lib/funnelLanding.ts).
+    if (step === 'visit' || step === 'answered') {
+      const landing = normalizeLanding(body.landing);
+      if (landing) {
+        await db
+          .doc(`funnelLandings/${today}`)
+          .set({ [step]: { [landingKey(landing)]: FieldValue.increment(1) } }, { merge: true });
+      }
+    }
 
     // Record the account's origin so purchases can be split by it. Kept out of
     // users/{uid}: a stub doc written here before the client's first save

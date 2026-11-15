@@ -1465,6 +1465,19 @@
     --brand-border-light: 159 40% 88%;
     --brand-gradient-to: 174 60% 94%;
   }
+  /* CogAT theme: deep pine teal (v2 exam; matches lib/v2/exams/cogat.ts theme) */
+  [data-theme="cogat"] {
+    --brand: 174 40% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 174 35% 95%;
+    --brand-hover: 174 40% 14%;
+    --brand-dark: 174 40% 12%;
+    --brand-darker: 174 40% 8%;
+    --brand-muted: 174 25% 70%;
+    --brand-border: 174 25% 78%;
+    --brand-border-light: 174 25% 88%;
+    --brand-gradient-to: 190 40% 94%;
+  }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
     --brand: 256 90% 37%;
@@ -6224,6 +6237,17 @@
     --brand-muted: 159 40% 45%;
     --brand-dark: 159 95% 65%;
     --brand-darker: 159 90% 78%;
+  }
+  .dark [data-theme="cogat"] {
+    --brand: 174 40% 36%;
+    --brand-hover: 174 40% 28%;
+    --brand-light: 174 35% 13%;
+    --brand-gradient-to: 190 40% 11%;
+    --brand-border-light: 174 25% 24%;
+    --brand-border: 174 25% 34%;
+    --brand-muted: 174 25% 45%;
+    --brand-dark: 174 40% 65%;
+    --brand-darker: 174 40% 78%;
   }
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;

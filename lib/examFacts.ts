@@ -2168,6 +2168,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full practice tests in Math, Reading and Language Usage at NWEA's own blueprint, untimed like the real test, with a percent score per subject, and ten drills, one per instructional area, most of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no RIT score.",
   },
+  cogat: {
+    answer:
+      "CogAT, the Cognitive Abilities Test from Riverside Insights, is a reasoning test that many US schools use to screen students for gifted and talented programs and to plan instruction. It measures how well a student reasons with words, numbers and shapes, not how much of the curriculum they have learned. It has three batteries: Verbal (Verbal Analogies, Sentence Completion, Verbal Classification), Quantitative (Number Analogies, Number Puzzles, Number Series) and Nonverbal (Figure Matrices, Paper Folding, Figure Classification). There is a separate test level for each grade from K to 6; from Level 9 (grade 3) the Verbal and Quantitative questions are written in words and numbers, and each of the nine tests takes about 10 minutes. Scores compare a student with others of the same age.",
+    rows: [
+      { label: "Who takes it", value: "Students in grades K to 12; Levels 9 to 12 are for grades 3 to 6" },
+      { label: "Batteries", value: "Verbal, Quantitative and Nonverbal, three tests each" },
+      { label: "Time", value: "About 10 minutes per test at Level 9 and up, nine tests in all" },
+      { label: "Forms", value: "Forms 7 and 8, two equivalent forms; a 30-minute Screening Form of the three analogies tests" },
+      { label: "Delivery", value: "Paper or online, set by the school" },
+      { label: "Score", value: "Standard Age Score, age percentile rank and stanine per battery, plus an Ability Profile" },
+      { label: "Pass mark", value: "None: schools set their own cut scores for gifted programs" },
+    ],
+    basedOn: "Riverside Insights' CogAT Overview Brochure (Forms 7 and 8 testing times and descriptions) and Overview of CogAT for Parents",
+    source: { name: "Riverside Insights: CogAT Overview Brochure", url: "https://riversideinsights.com/hubfs/CogAT/CogAT%20Overview%20Brochure.pdf" },
+    tigertest:
+      "Tigertest has two timed practice tests of the Verbal and Quantitative Batteries at Levels 9 to 12, 36 questions a battery with 12 for each CogAT test, and six drills, one per test. The Nonverbal Battery is picture puzzles and is not included. All of it is free with no account required. Scores are percent correct, never age scores or percentiles.",
+  },
   psat: {
     answer:
       "The digital PSAT/NMSQT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules), with a calculator allowed on all of Math. It is adaptive by module and scored 320 to 1520, with each section scored 160 to 760. It is given to 10th and 11th graders in the fall (the PSAT 10 is the same test in the spring), and juniors' scores are used for the National Merit Scholarship Program through a Selection Index of 48 to 228.",

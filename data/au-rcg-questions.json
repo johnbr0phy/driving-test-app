@@ -7,11 +7,11 @@
     "question": "Who mainly makes the laws on gambling in pubs, clubs and casinos in Australia?",
     "optionA": "State and territory governments",
     "optionB": "The Commonwealth Treasury alone",
-    "optionC": "Local councils in each region",
+    "optionC": "Local councils, not the state",
     "optionD": "The national industry bodies",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Venue gambling (gaming machines, Keno, wagering outlets and casinos) is regulated by each state and territory through its own legislation and gambling regulator. That is why RCG and RSG rules vary between states."
+    "explanation": "Venue gambling (gaming machines, Keno, wagering outlets and casinos) is regulated by each state and territory through its own legislation and gambling regulator, not by local councils. That is why RCG and RSG rules vary between states."
   },
   {
     "type": "AURCG",
@@ -21,11 +21,11 @@
     "question": "Which Commonwealth law restricts online casino-style gambling, such as online pokies, offered to people in Australia?",
     "optionA": "Privacy Act 1988",
     "optionB": "Interactive Gambling Act 2001",
-    "optionC": "Fair Work Act 2009",
+    "optionC": "Gambling Regulation Act 2003",
     "optionD": "Competition and Consumer Act 2010",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The Interactive Gambling Act 2001 makes it illegal to offer online casino games such as online pokies and roulette to people in Australia. The Australian Communications and Media Authority (ACMA) enforces it."
+    "explanation": "The Interactive Gambling Act 2001 makes it illegal to offer online casino games such as online pokies and roulette to people in Australia. The Australian Communications and Media Authority (ACMA) enforces it. The Gambling Regulation Act 2003 is a Victorian law for venue gambling, not a Commonwealth law."
   },
   {
     "type": "AURCG",
@@ -103,13 +103,13 @@
     "questionId": "AURCG-LAW-008",
     "category": "aurcgLaw",
     "question": "A customer is clearly intoxicated and wants to keep playing the gaming machines. What is the responsible action?",
-    "optionA": "Let them finish their credits",
+    "optionA": "Let them keep gambling slowly",
     "optionB": "Serve them water and let them play",
     "optionC": "Allow it if they are a member",
     "optionD": "Stop them gambling",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Intoxicated people must not be allowed to gamble under responsible gambling codes and, in most states, gaming law. Follow procedure, involve your supervisor and record the incident."
+    "explanation": "Intoxicated people must not be allowed to gamble under responsible gambling codes and, in most states, gaming law. Slowing down is not enough. Follow procedure, involve your supervisor and record the incident."
   },
   {
     "type": "AURCG",
@@ -148,10 +148,10 @@
     "optionA": "The venue's opening hours",
     "optionB": "How many machines you watch",
     "optionC": "Your state or territory",
-    "optionD": "Your job title only",
+    "optionD": "One rule for every state",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Refresher and renewal rules are set by each state or territory regulator and vary between them. Check the current rules where you work."
+    "explanation": "Refresher and renewal rules are set by each state or territory regulator and vary between them; there is no single national rule. Check the current rules where you work."
   },
   {
     "type": "AURCG",
@@ -160,12 +160,12 @@
     "category": "aurcgLaw",
     "question": "What is the main public interest reason for responsible gambling laws?",
     "optionA": "To raise venue profits",
-    "optionB": "To speed up prize payouts",
+    "optionB": "To grow gambling revenue",
     "optionC": "To attract more tourists",
     "optionD": "To reduce gambling harm",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Governments and communities are concerned about the harm gambling causes to individuals, families and communities. Responsible gambling practices aim to minimise that harm."
+    "explanation": "Governments and communities are concerned about the harm gambling causes to individuals, families and communities. Responsible gambling practices aim to minimise that harm, not to raise revenue."
   },
   {
     "type": "AURCG",
@@ -217,11 +217,11 @@
     "question": "What is a venue's responsible gambling code of practice?",
     "optionA": "A list of recent jackpot winners",
     "optionB": "The gaming machine repair manual",
-    "optionC": "A plan for raising turnover",
+    "optionC": "A plan for raising gambling turnover",
     "optionD": "Its written safer gambling rules",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A code of practice or code of conduct sets out how the venue will provide gambling responsibly, such as signage, exclusion, complaints and staff training. Many states require one to be displayed or available to customers."
+    "explanation": "A code of practice or code of conduct sets out how the venue will provide gambling responsibly, such as signage, exclusion, complaints and staff training. Many states require one to be displayed or available to customers. It is about safer gambling, not turnover."
   },
   {
     "type": "AURCG",
@@ -273,11 +273,11 @@
     "question": "Which statement about cashing cheques for gambling is correct?",
     "optionA": "It is always allowed",
     "optionB": "It is allowed for members",
-    "optionC": "It is allowed up to $5,000",
+    "optionC": "One national limit in every state",
     "optionD": "Rules vary by state",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Many states restrict or ban cashing cheques in venues so people cannot get more money to gamble, but the details vary by state. Follow your venue's policy."
+    "explanation": "Many states restrict or ban cashing cheques in venues so people cannot get more money to gamble, but the details vary by state and there is no single national limit. Follow your venue's policy."
   },
   {
     "type": "AURCG",
@@ -287,11 +287,11 @@
     "question": "A customer wins a large prize. Whether it must be paid by cheque or electronic transfer instead of cash:",
     "optionA": "Varies by state",
     "optionB": "Is never allowed",
-    "optionC": "Depends on the customer",
+    "optionC": "Is the same in every state",
     "optionD": "Is up to the attendant",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Several states require prizes over a set amount to be paid by cheque or electronic transfer, which stops the money going straight back into the machines. The threshold varies by state."
+    "explanation": "Several states require prizes over a set amount to be paid by cheque or electronic transfer, which stops the money going straight back into the machines. The threshold varies by state, so it is not the same everywhere."
   },
   {
     "type": "AURCG",
@@ -497,11 +497,11 @@
     "question": "A customer says they gamble to forget their worries. This is:",
     "optionA": "A healthy way to relax",
     "optionB": "A sign of a skilled player",
-    "optionC": "Normal for every player",
+    "optionC": "A sign of harm only after losses",
     "optionD": "A warning sign of harm",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Gambling to escape worry or personal problems is a recognised sign of harm. It can lead to longer sessions and bigger losses."
+    "explanation": "Gambling to escape worry or personal problems is a recognised sign of harm, whether or not the person is losing. It can lead to longer sessions and bigger losses."
   },
   {
     "type": "AURCG",
@@ -551,13 +551,13 @@
     "questionId": "AURCG-HRM-008",
     "category": "aurcgHarm",
     "question": "Committing illegal acts, such as stealing, to fund gambling is:",
-    "optionA": "A minor issue",
+    "optionA": "Harm to the venue only",
     "optionB": "Common among casual players",
     "optionC": "Unrelated to gambling",
     "optionD": "A sign of severe harm",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Committing illegal acts to finance gambling is a sign of serious gambling harm and can bring criminal charges, job loss and family breakdown."
+    "explanation": "Committing illegal acts to finance gambling is a sign of serious gambling harm to the person and can bring criminal charges, job loss and family breakdown."
   },
   {
     "type": "AURCG",
@@ -568,10 +568,10 @@
     "optionA": "Get help now and tell the manager",
     "optionB": "Change the subject politely",
     "optionC": "Offer them some free credits",
-    "optionD": "Tell them to go home and rest",
+    "optionD": "Give a help line card and walk away",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Thoughts of self-harm are the most serious sign of harm. Stay with the person if safe, call your manager, and contact emergency services on 000 if there is immediate danger. Lifeline (13 11 14) and the Gambling Help line (1800 858 858) are available any time."
+    "explanation": "Thoughts of self-harm are the most serious sign of harm. Stay with the person if safe rather than leaving them with a card, call your manager, and contact emergency services on 000 if there is immediate danger. Lifeline (13 11 14) and the Gambling Help line (1800 858 858) are available any time."
   },
   {
     "type": "AURCG",
@@ -582,10 +582,10 @@
     "optionA": "A sign of good luck",
     "optionB": "A sign of gambling harm",
     "optionC": "Required to win jackpots",
-    "optionD": "Normal for most players",
+    "optionD": "Gambling harm only if weekly",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Spending more than you can afford is one of the core signs of harm. Most people who gamble do so within what they can afford."
+    "explanation": "Spending more than you can afford is one of the core signs of harm, however often it happens. Most people who gamble do so within what they can afford."
   },
   {
     "type": "AURCG",
@@ -708,10 +708,10 @@
     "optionA": "A sign of a big win soon",
     "optionB": "Required for a jackpot",
     "optionC": "A sign of possible harm",
-    "optionD": "A sign they are a staff member",
+    "optionD": "Never harm while they are winning",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Long, unbroken sessions are a common observable sign of harm, especially alongside other signs such as distress or repeat ATM visits."
+    "explanation": "Long, unbroken sessions are a common observable sign of harm, win or lose, especially alongside other signs such as distress or repeat ATM visits."
   },
   {
     "type": "AURCG",
@@ -748,12 +748,12 @@
     "category": "aurcgHarm",
     "question": "A customer asks staff to lend money or for credit. This is:",
     "optionA": "Normal customer behaviour",
-    "optionB": "A possible sign of harm",
-    "optionC": "A sign they just won",
+    "optionB": "An observable sign of harm",
+    "optionC": "No sign of harm if they repay",
     "optionD": "A sign they are a member",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Asking to borrow money or for credit is an observable sign of harm. Refuse politely and let your supervisor know."
+    "explanation": "Asking to borrow money or for credit is an observable sign of harm, even if the person says they will repay. Refuse politely and let your supervisor know."
   },
   {
     "type": "AURCG",
@@ -820,10 +820,10 @@
     "optionA": "A loyal club member",
     "optionB": "A big win on the way",
     "optionC": "Trouble stopping gambling",
-    "optionD": "Careful money management",
+    "optionD": "Healthy gambling habits",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Being unable to stop and wanting to keep playing at closing time is one of the observable signs of possible gambling harm."
+    "explanation": "Being unable to stop and wanting to keep playing at closing time is one of the observable signs of possible gambling harm, not a healthy habit."
   },
   {
     "type": "AURCG",
@@ -845,13 +845,13 @@
     "questionId": "AURCG-HRM-029",
     "category": "aurcgHarm",
     "question": "A customer becomes secretive and tries to hide how much they gamble from family. This is:",
-    "optionA": "A possible sign of harm",
-    "optionB": "Normal personal privacy",
+    "optionA": "A warning sign of harm",
+    "optionB": "No harm unless they are in debt",
     "optionC": "A sign of real skill",
     "optionD": "A rule of the venue",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Hiding or lying about gambling to family is a common warning sign that gambling is causing problems."
+    "explanation": "Hiding or lying about gambling to family is a common warning sign that gambling is causing problems, before or without any debt."
   },
   {
     "type": "AURCG",
@@ -929,13 +929,13 @@
     "questionId": "AURCG-HRM-035",
     "category": "aurcgHarm",
     "question": "A customer tells you their partner has taken over their finances because of gambling. This suggests:",
-    "optionA": "A normal household money plan",
+    "optionA": "Gambling is under control now",
     "optionB": "A sign of some big wins",
     "optionC": "Gambling has caused problems",
     "optionD": "A requirement of the venue",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Needing someone else to control the money is a sign that gambling has already caused harm. Offer information on support services if appropriate."
+    "explanation": "Needing someone else to control the money is a sign that gambling has already caused harm, not that it is under control. Offer information on support services if appropriate."
   },
   {
     "type": "AURCG",
@@ -1044,10 +1044,10 @@
     "optionA": "Each player's own choice",
     "optionB": "The venue's bar staff",
     "optionC": "State and territory law",
-    "optionD": "The local council",
+    "optionD": "The venue, not the state",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Each state and territory sets a minimum return to player in its gaming legislation, so the minimum varies by state."
+    "explanation": "Each state and territory sets a minimum return to player in its gaming legislation, so the minimum varies by state. A venue cannot set it for itself."
   },
   {
     "type": "AURCG",
@@ -1422,10 +1422,10 @@
     "optionA": "Last week's jackpot winners",
     "optionB": "Gambling help service details",
     "optionC": "A list of the hottest machines",
-    "optionD": "The staff rosters for the week",
+    "optionD": "Gambling promotions for the week",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Venues must display information about counselling and support services, such as the Gambling Help line, where players can see it. The exact wording and placement vary by state."
+    "explanation": "Venues must display information about counselling and support services, such as the Gambling Help line, where players can see it. Promotions are not a required sign. The exact wording and placement vary by state."
   },
   {
     "type": "AURCG",
@@ -1475,13 +1475,13 @@
     "questionId": "AURCG-ENV-010",
     "category": "aurcgEnv",
     "question": "Lighting and natural light in a gaming area help responsible gambling because they:",
-    "optionA": "Make the machines sound louder",
+    "optionA": "Help players lose track of time",
     "optionB": "Help players track the time",
     "optionC": "Increase the size of bets",
     "optionD": "Hide the exits from players",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Dark rooms without windows make it easy to lose track of time. Natural light and visible clocks remind people how long they have played."
+    "explanation": "Dark rooms without windows make it easy to lose track of time. Natural light and visible clocks remind people how long they have played, rather than letting them lose track of time."
   },
   {
     "type": "AURCG",
@@ -1546,12 +1546,12 @@
     "category": "aurcgEnv",
     "question": "Why is information on support services often printed on small contact cards?",
     "optionA": "To advertise the venue's bistro",
-    "optionB": "To record the player's wins",
+    "optionB": "To help staff see who takes one",
     "optionC": "So help can be taken discreetly",
     "optionD": "To track members' spending",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Contact cards let a person take help line details privately without drawing attention, which respects their confidentiality."
+    "explanation": "Contact cards let a person take help line details privately without drawing attention, which respects their confidentiality. They are not a way for staff to watch who takes one."
   },
   {
     "type": "AURCG",
@@ -1561,11 +1561,11 @@
     "question": "Which feature of a gaming area best supports responsible gambling?",
     "optionA": "No windows and no clocks",
     "optionB": "An ATM beside the machines",
-    "optionC": "Free drinks served at machines",
+    "optionC": "Help signs placed out of sight",
     "optionD": "Visible clocks and help signs",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Visible clocks and help information support informed choices. The other options keep people playing longer or give easier access to more cash."
+    "explanation": "Visible clocks and help information support informed choices, but only where players can see them. Hiding clocks or signs keeps people playing longer, and an ATM nearby gives easier access to more cash."
   },
   {
     "type": "AURCG",
@@ -1742,12 +1742,12 @@
     "category": "aurcgEnv",
     "question": "Whether gaming machines must close for a few hours each night (a shutdown period) is set by:",
     "optionA": "State law",
-    "optionB": "The customers",
+    "optionB": "Each venue, whatever the state says",
     "optionC": "The machine supplier",
     "optionD": "The venue's cleaners",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Many states require gaming machines to shut down for a set period each day, but the hours vary by state and sometimes by venue type."
+    "explanation": "Many states require gaming machines to shut down for a set period each day, but the hours vary by state and sometimes by venue type. A venue must follow the law of its state, not set its own."
   },
   {
     "type": "AURCG",
@@ -1870,10 +1870,10 @@
     "optionA": "One day only",
     "optionB": "It varies by program and state",
     "optionC": "Always exactly one week",
-    "optionD": "It is always permanent",
+    "optionD": "Five years in every state",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Self-exclusion periods are set by each state or program and the person usually chooses within a range. Check the program used where you work."
+    "explanation": "Self-exclusion periods are set by each state or program and the person usually chooses within a range, so no one period applies everywhere. Check the program used where you work."
   },
   {
     "type": "AURCG",
@@ -1979,13 +1979,13 @@
     "questionId": "AURCG-EXC-014",
     "category": "aurcgExcl",
     "question": "Whether an excluded person who wins can keep the prize:",
-    "optionA": "Is always yes",
+    "optionA": "Is the same in every state",
     "optionB": "Varies by state",
     "optionC": "Depends on the attendant",
     "optionD": "Depends on the machine",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "In several states prizes won by excluded people are forfeited, which removes the reward for breaching. The rule varies by state."
+    "explanation": "In several states prizes won by excluded people are forfeited, which removes the reward for breaching. The rule varies by state, so it is not the same everywhere."
   },
   {
     "type": "AURCG",
@@ -2091,13 +2091,13 @@
     "questionId": "AURCG-EXC-022",
     "category": "aurcgExcl",
     "question": "A customer in distress asks to self-exclude right now, late at night. What should you do?",
-    "optionA": "Tell them to come back next week",
+    "optionA": "Help them apply next week",
     "optionB": "Get the duty manager to help",
     "optionC": "Say only mornings are allowed",
     "optionD": "Ignore it until closing",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Act on the request promptly by involving the duty manager or responsible gambling officer, and give help line information in the meantime."
+    "explanation": "Act on the request promptly, not days later, by involving the duty manager or responsible gambling officer, and give help line information in the meantime."
   },
   {
     "type": "AURCG",
@@ -2415,11 +2415,11 @@
     "question": "Which of these is useful to give a customer who wants help?",
     "optionA": "A help service contact card",
     "optionB": "A free credit voucher",
-    "optionC": "A tip on which machine is hot",
+    "optionC": "Tips to help win back losses",
     "optionD": "A personal loan form",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Contact cards and brochures for counselling and support services let customers seek help in their own time."
+    "explanation": "Contact cards and brochures for counselling and support services let customers seek help in their own time. Tips for winning back losses encourage chasing."
   },
   {
     "type": "AURCG",
@@ -2511,13 +2511,13 @@
     "questionId": "AURCG-AST-024",
     "category": "aurcgAssist",
     "question": "Which type of service gives face-to-face gambling counselling?",
-    "optionA": "Betting agencies and bookmakers",
+    "optionA": "Gambling venues and their bar staff",
     "optionB": "Pawnbrokers and second-hand dealers",
     "optionC": "Payday lenders",
     "optionD": "State-funded gambling help services",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Each state and territory funds gambling help services that offer free face-to-face, phone and online counselling."
+    "explanation": "Each state and territory funds gambling help services that offer free face-to-face, phone and online counselling. Venue staff give information, not counselling."
   },
   {
     "type": "AURCG",

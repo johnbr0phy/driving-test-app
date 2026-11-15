@@ -123,7 +123,7 @@
     "optionD": "Digoxin",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Adenosine briefly blocks the AV node and often ends reentrant SVT. It is pushed rapidly through a proximal line and followed by a saline flush."
+    "explanation": "Adenosine briefly blocks the AV node and often ends reentrant SVT. Warn the patient that it can cause a brief pause in the heartbeat and a sense of chest pressure."
   },
   {
     "type": "CEN",
@@ -186,14 +186,14 @@
     "state": "ALL",
     "questionId": "CEN-CAR-014",
     "category": "cenCardio",
-    "question": "Which finding is part of Beck's triad in pericardial tamponade?",
-    "optionA": "Widened pulse pressure",
-    "optionB": "Muffled heart sounds",
-    "optionC": "Bounding peripheral pulses",
-    "optionD": "A loud S3 gallop",
+    "question": "In a patient with suspected pericardial tamponade, what does pulsus paradoxus describe?",
+    "optionA": "Heart rate rise over 10 on standing",
+    "optionB": "Systolic drop over 10 mmHg on inspiration",
+    "optionC": "Diastolic rise over 10 mmHg on expiration",
+    "optionD": "Alternating strong and weak beats",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Beck's triad is hypotension, distended neck veins and muffled heart sounds. Tamponade narrows the pulse pressure rather than widening it."
+    "explanation": "Pulsus paradoxus is a fall in systolic pressure of more than 10 mmHg during inspiration. In tamponade the fluid limits filling, so the inspiratory shift of the septum lowers left-sided output."
   },
   {
     "type": "CEN",
@@ -914,7 +914,7 @@
     "state": "ALL",
     "questionId": "CEN-NEU-018",
     "category": "cenNeuro",
-    "question": "Clear fluid drains from the nose of a patient with a head injury. What bedside sign suggests it is cerebrospinal fluid?",
+    "question": "Blood-tinged fluid drains from the nose of a patient with a head injury. What bedside sign suggests it contains cerebrospinal fluid?",
     "optionA": "It tastes salty",
     "optionB": "A halo ring on gauze",
     "optionC": "It turns blue on litmus",
@@ -2791,7 +2791,7 @@
     "questionId": "CEN-PRO-016",
     "category": "cenProf",
     "question": "A visitor shouts threats and moves toward a nurse. What is the nurse's priority?",
-    "optionA": "Stand between visitor and door",
+    "optionA": "Step closer to calm the visitor",
     "optionB": "Try to restrain the visitor",
     "optionC": "Turn away and keep working",
     "optionD": "Move to safety, call security",

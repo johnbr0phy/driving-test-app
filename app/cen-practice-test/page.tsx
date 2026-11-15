@@ -17,9 +17,9 @@ const siteUrl = SITE_URL;
 
 const title = "CEN Practice Test 2026 - Free Certified Emergency Nurse Exam Questions";
 const metaDescription =
-  "Free CEN practice test: 200 original questions on the BCEN content outline effective July 2026, four 50-question mock exams and five training sets, every answer explained.";
+  "CEN practice test, free to start: 200 original questions on the BCEN content outline effective July 2026, four 50-question mock exams and five training sets, every answer explained.";
 const description =
-  "Free practice for the BCEN Certified Emergency Nurse (CEN) exam: 200 original questions written from the CEN Examination Content Outline effective July 2026. Four 50-question mock exams weighted like the real exam's eleven content areas, and five training sets covering cardiovascular, respiratory, neurological, gastrointestinal, GU and obstetric, mental health, medical, wound, HEENT, environmental and toxicology emergencies, communicable diseases and professional issues.";
+  "Free-to-start practice for the BCEN Certified Emergency Nurse (CEN) exam: 200 original questions written from the CEN Examination Content Outline effective July 2026. Four 50-question mock exams weighted like the real exam's eleven content areas, and five training sets covering cardiovascular, respiratory, neurological, gastrointestinal, GU and obstetric, mental health, medical, wound, HEENT, environmental and toxicology emergencies, communicable diseases and professional issues.";
 
 const faqs = [
   {

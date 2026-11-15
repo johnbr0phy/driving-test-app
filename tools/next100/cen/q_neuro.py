@@ -51,7 +51,7 @@ Q = [
 ("A patient has raccoon eyes after a head injury. Which tube should be avoided?",
  "A nasogastric tube", ["An orogastric tube", "A urinary catheter", "A peripheral IV"],
  "Raccoon eyes suggest a basilar skull fracture, and a tube passed through the nose can enter the cranium. An orogastric tube is used instead."),
-("Clear fluid drains from the nose of a patient with a head injury. What bedside sign suggests it is cerebrospinal fluid?",
+("Blood-tinged fluid drains from the nose of a patient with a head injury. What bedside sign suggests it contains cerebrospinal fluid?",
  "A halo ring on gauze", ["It tastes salty", "It turns blue on litmus", "It clots in minutes"],
  "A drop of bloody CSF on gauze spreads into a central blood spot with a clear outer ring. CSF also tests positive for glucose and beta-2 transferrin."),
 ("A patient has sudden one-sided facial weakness that includes the forehead, with no limb weakness. What is most likely?",

@@ -46,6 +46,6 @@ Q = [
  "A structured SBAR handoff", ["A brief hallway comment", "Written notes only later", "Leaving it to the provider"],
  "Structured tools such as SBAR (situation, background, assessment, recommendation) reduce omissions during handoffs."),
 ("A visitor shouts threats and moves toward a nurse. What is the nurse's priority?",
- "Move to safety, call security", ["Stand between visitor and door", "Try to restrain the visitor", "Turn away and keep working"],
+ "Move to safety, call security", ["Step closer to calm the visitor", "Try to restrain the visitor", "Turn away and keep working"],
  "Staff safety comes first: keep an exit open, call for security and follow the facility's workplace violence plan."),
 ]

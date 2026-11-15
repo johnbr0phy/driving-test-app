@@ -51,6 +51,7 @@ import "@/lib/v2/banks/gmat";
 import "@/lib/v2/banks/mcat";
 import "@/lib/v2/banks/lsat";
 import "@/lib/v2/banks/wonderlic";
+import "@/lib/v2/banks/iimcat";
 import "@/lib/v2/banks/sehp";
 import "@/lib/v2/banks/netplus";
 import "@/lib/v2/banks/cysa";

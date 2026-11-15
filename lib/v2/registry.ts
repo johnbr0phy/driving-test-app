@@ -49,6 +49,7 @@ import { IELTSREAD } from "./exams/ieltsread";
 import { TOEFLREAD } from "./exams/toeflread";
 import { MCAT } from "./exams/mcat";
 import { LSAT } from "./exams/lsat";
+import { IIMCAT } from "./exams/iimcat";
 import { SEHP } from "./exams/sehp";
 import { NETPLUS } from "./exams/netplus";
 import { CYSA } from "./exams/cysa";
@@ -113,7 +114,7 @@ import { APHUG } from "./exams/aphug";
 import { WONDERLIC } from "./exams/wonderlic";
 import { lockedStepCount } from "../examLocks";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, HISET, PRAXIS, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, LSAT, MCAT, IELTSREAD, TOEFLREAD, WONDERLIC, SEHP, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA];
+export const EXAMS_V2: ExamV2Config[] = [GED, HISET, PRAXIS, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, LSAT, MCAT, IELTSREAD, TOEFLREAD, WONDERLIC, SEHP, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, IIMCAT, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA];
 
 /**
  * The light Premium tier on v2 exams (Nov 2026), the v1 rule carried over:
@@ -129,7 +130,7 @@ export const PREMIUM_V2_IDS: string[] = [
   "secplus", "cysa", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "gcdl", "gcppca", "ccna",
   "pmp", "capm", "psm", "itil", "wonderlic",
   "upscse", "ssccgl", "sscchsl", "ssccpo", "sscgd", "sscmts", "rrbntpc", "rrbgroupd", "rrbalp", "rpfconst",
-  "uppolice", "delhipolice", "biharpolice", "rajpolice", "mppolice", "jkssbja", "tgsi",
+  "uppolice", "delhipolice", "biharpolice", "rajpolice", "mppolice", "jkssbja", "tgsi", "iimcat",
   "ibpspo", "sbipo", "ibpsclerk", "sbiclerk", "ibpsrrb", "agniveer", "agniveervayu",
   "ctet", "reet", "uptet", "ugcnet", "phcse",
 ];

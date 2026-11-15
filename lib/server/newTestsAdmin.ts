@@ -7,7 +7,7 @@ import { paymentNetUsdCents } from "@/lib/pricing";
 import launchDates from "@/lib/examLaunchDates.json";
 import { daysLive, mostRecent, onTestPages, sumSince, testPages, type NewTestRow, type TestPages } from "@/lib/newTests";
 
-// Data for the /admin New tests tab: the 50 most recently launched tests
+// Data for the /admin New tests tab: the 100 most recently launched tests
 // (lib/examLaunchDates.json), each with what it has done since launch: first
 // visits that landed on its pages (funnelLandings/{day}), signups whose first
 // visit landed there (signupOrigins), questions answered on it

@@ -76,6 +76,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
   },
+  tabe: {
+    answer:
+      "TABE (Tests of Adult Basic Education) is a placement and progress test published by Data Recognition Corporation (DRC) and used by adult education, workforce and correctional programs. TABE 13&14, the current forms, has three subtests: Reading, Mathematics and Language, each at Levels E, M, D and A, with a short Locator test that decides which level to take. At Level D, Reading is 39 questions in two 50-minute parts, Mathematics 40 questions in parts of 45 and 15 minutes, and Language 33 questions in 50 minutes. There is no pass mark: DRC reports scale scores, and each program sets the score it needs.",
+    rows: [
+      { label: "Subtests", value: "Reading, Mathematics, Language (any can be given alone)" },
+      { label: "Levels", value: "E, M, D and A, chosen per subject by the Locator test" },
+      { label: "Level D questions", value: "Reading 39, Mathematics 40, Language 33" },
+      { label: "Level D time", value: "Reading 50 + 50 min, Math 45 + 15 min, Language 50 min" },
+      { label: "Question types", value: "Multiple choice; evidence-based items in Reading; gridded response in Math" },
+      { label: "Passing", value: "No pass mark from DRC; programs set their own cut scores" },
+      { label: "Delivery", value: "Online (DRC INSIGHT) or on paper, through an adult education program" },
+      { label: "Published by", value: "Data Recognition Corporation (DRC)" },
+    ],
+    basedOn: "DRC's TABE 13&14 Level D blueprints and TABE 13&14 Maximum Allowable Testing Times",
+    source: { name: "TABE 13&14 blueprints (DRC)", url: "https://tabetest.com/resources-2/testing-information/blue-prints-1314/" },
+    tigertest:
+      "Tigertest has two TABE practice tests at Level D covering Reading, Mathematics and Language at the real pace, each scored as a percent correct per subject, plus seven drills (three open with the basics). All of it is free with no account required. Levels E, M and A and DRC's scale scores are not modeled.",
+  },
   hiset: {
     answer:
       "The HiSET is a high school equivalency test owned and run by PSI. It has five subtests, each taken and scored on its own: Language Arts - Reading (50 multiple-choice questions in 65 minutes), Language Arts - Writing (60 multiple-choice questions and one essay in 120 minutes), Mathematics (55 questions in 90 minutes), Science (60 questions in 80 minutes) and Social Studies (60 questions in 70 minutes). Each subtest is scored 1 to 20. To pass, you need at least 8 on every subtest, at least 2 out of 6 on the essay and a total of at least 45 across all five. It can be taken on a computer or on paper, at a test center or at home with a remote proctor, and the fee includes two free retests within 12 months.",

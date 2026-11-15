@@ -153,3 +153,21 @@ test("period comparison leaves today out and ranks paywalls by their rise", () =
   assert.deepStrictEqual(c.walls.find((w) => w.index === 0), { index: 0, before: 70, now: 70, soldBefore: 2, soldNow: 1 });
   assert.strictEqual(c.walls.find((w) => w.index === -1).soldNow, 1);
 });
+
+test("v2 answers and tests count, split at the purchase", () => {
+  const { v2Activity } = require("../lib/server/conversion.ts");
+  const v2 = {
+    questionStats: { itil: { "ITIL-1": { n: 3, w: 1 }, "ITIL-2": { n: 1, w: 0 } } },
+    drills: { "itil:people": { masteredIds: ["ITIL-1", "ITIL-3"], wrongQueue: ["ITIL-4"] } },
+    results: [
+      { examId: "itil", completedAt: "2026-11-01T00:00:00Z", items: [{ answer: [0] }, { answer: [] }, { answer: "12" }] },
+      { examId: "itil", completedAt: "2026-11-10T00:00:00Z", items: [{ answer: [1] }] },
+    ],
+  };
+  // 4 tallied + 2 untallied drill ids + 3 test answers
+  const all = v2Activity(v2, null);
+  assert.deepStrictEqual(all, { answers: 9, tests: 2, answersBefore: 9, testsBefore: 2 });
+  const split = v2Activity(v2, Date.parse("2026-11-05T00:00:00Z"));
+  assert.deepStrictEqual(split, { answers: 9, tests: 2, answersBefore: 8, testsBefore: 1 });
+  assert.deepStrictEqual(v2Activity(undefined, null), { answers: 0, tests: 0, answersBefore: 0, testsBefore: 0 });
+});

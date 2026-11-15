@@ -440,7 +440,7 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
           <Segmented
             value={dim}
             onChange={setDim}
-            options={[["answers", "Questions"], ["tests", "Tests"], ["activeDays", "Days active"], ["paywallViews", "Paywall views"]] as const}
+            options={[["answers", "Questions"], ["tests", "Tests"], ["activeDays", "Days active"], ["paywallViews", "Paywalls seen"]] as const}
           />
           <select value={exam} onChange={(e) => setExam(e.target.value)} aria-label="Test" className={SELECT}>
             <option value="all">All tests</option>
@@ -561,7 +561,7 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
                   <th className={`${TH} text-left`}>Test</th>
                   <th className={TH}>Questions</th>
                   <th className={TH}>Tests</th>
-                  <th className={TH}>Paywall views</th>
+                  <th className={TH}>Paywalls seen</th>
                   <th className={`${TH} text-left`}>Last paywall</th>
                   <th className={TH}>Last active</th>
                 </tr>
@@ -640,15 +640,15 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
       <details className={CARD}>
         <summary className="cursor-pointer text-sm font-semibold text-gray-900 dark:text-gray-50">More detail</summary>
 
-        <h3 className="mt-5 text-sm font-semibold text-gray-900 dark:text-gray-50">Practice and paywall views together</h3>
-        <p className={SUB}>Share who paid among accounts with at least this many questions and this many paywall views. It follows the test and market picked above.</p>
+        <h3 className="mt-5 text-sm font-semibold text-gray-900 dark:text-gray-50">Practice and paywalls seen together</h3>
+        <p className={SUB}>Share who paid among accounts with at least this many questions and this many different paywalls seen (tapping the same lock twice counts once). It follows the test and market picked above.</p>
         <TableScroll className="mt-3">
           <table className="w-full text-sm border-separate border-spacing-1">
             <thead>
               <tr className="text-xs text-gray-500 dark:text-gray-400">
                 <th className="text-left font-medium pb-1">Questions</th>
                 {GRID_VIEWS.map((v) => (
-                  <th key={v} className="font-medium pb-1 whitespace-nowrap">{v === 0 ? "Any views" : `${v}+ views`}</th>
+                  <th key={v} className="font-medium pb-1 whitespace-nowrap">{v === 0 ? "Any" : `${v}+ paywalls`}</th>
                 ))}
               </tr>
             </thead>

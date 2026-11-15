@@ -12,6 +12,7 @@ import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
 import { emailBrand } from "@/lib/email-brand";
 import type { TigerExpression } from "@/lib/tigerAssets";
 import { EXAMS_V2 } from "@/lib/v2/registry";
+import { reportReplyCopy } from "@/lib/reportReplyCopy";
 
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
@@ -30,6 +31,10 @@ interface ShellOptions {
    * they are not marketing and there is nothing to opt out of.
    */
   unsubscribe?: boolean;
+  /** <html lang> and the footer's two lines, for an email not in English. */
+  lang?: string;
+  footerNote?: string;
+  privacyLabel?: string;
 }
 
 /** Body paragraph in house style. */
@@ -67,18 +72,18 @@ export function signoff(lead = "Good luck,"): string {
 
 function emailShell({
   title, preheader, heading, body, voice, expression = 3,
-  eyebrow = "YOUR NEXT STUDY STEP", unsubscribe = true,
+  eyebrow = "YOUR NEXT STUDY STEP", unsubscribe = true, lang = "en", footerNote, privacyLabel = "Privacy Policy",
 }: ShellOptions): string {
   const brand = emailBrand(voice?.id, expression);
   const label = brand.known && voice ? `TIGERTEST · ${esc(voice.shortName.toUpperCase())} PRACTICE` : "TIGERTEST";
   const footerLinks = unsubscribe
     ? `<a href="https://www.tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #64777b;">Unsubscribe</a> · <a href="https://www.tigertest.io/privacy" style="color: #64777b;">Privacy Policy</a>`
-    : `<a href="https://www.tigertest.io/privacy" style="color: #64777b;">Privacy Policy</a>`;
+    : `<a href="https://www.tigertest.io/privacy" style="color: #64777b;">${esc(privacyLabel)}</a>`;
   const themedBody = body
     .replaceAll("background-color: #1a1a1a", `background-color: ${brand.accent}`)
     .replaceAll("#FF6B35", brand.accent);
   return `<!DOCTYPE html>
-<html lang="en"><head>
+<html lang="${esc(lang)}"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(title)}</title>
 <style>@media only screen and (max-width: 480px) { .email-body { padding: 22px 20px 26px !important; } .email-heading { font-size: 27px !important; } }</style>
@@ -97,7 +102,7 @@ ${emailPreheader(preheader)}
 ${themedBody}
 </td></tr></table>
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width: 540px;"><tr><td style="text-align: center; padding: 22px 14px 10px; font-size: 11px; line-height: 1.75; color: #64777b;">
-${unsubscribe ? "You receive study emails because you chose to hear from Tigertest." : "This is an account or service message."}<br>
+${unsubscribe ? "You receive study emails because you chose to hear from Tigertest." : esc(footerNote ?? "This is an account or service message.")}<br>
 ${footerLinks}${postalFooterLine()}
 </td></tr></table>
 </td></tr></table></body></html>`;
@@ -546,35 +551,38 @@ export interface ReportReplyContent {
   question: string;
   answer: string;
   explanation: string;
+  /** The language the student reported in; English when unknown. */
+  lang?: string;
 }
 
 export function reportReplySubject(c: ReportReplyContent): string {
-  return c.outcome === "fixed" ? "You were right: we fixed that question" : "We checked the question you reported";
+  const { copy } = reportReplyCopy(c.lang);
+  return c.outcome === "fixed" ? copy.subjectFixed : copy.subjectRight;
 }
 
 /** Transactional: they asked us something, so no unsubscribe link. */
 export function reportReplyEmail(v: EmailVoice, c: ReportReplyContent): string {
   const fixed = c.outcome === "fixed";
-  const quote = `              <p style="margin: 0 0 17px; padding: 14px 16px; background-color: #f5f7f7; border-radius: 10px; color: #1a1a1a; font-size: 15px; line-height: 1.6;">${esc(c.question)}${c.answer ? `<br><strong style="font-weight: 700;">Answer: ${esc(c.answer)}</strong>` : ""}</p>`;
+  const { lang, copy } = reportReplyCopy(c.lang);
+  const quote = `              <p style="margin: 0 0 17px; padding: 14px 16px; background-color: #f5f7f7; border-radius: 10px; color: #1a1a1a; font-size: 15px; line-height: 1.6;">${esc(c.question)}${c.answer ? `<br><strong style="font-weight: 700;">${esc(copy.answer)}: ${esc(c.answer)}</strong>` : ""}</p>`;
   return emailShell({
     voice: v,
     expression: fixed ? 1 : 3,
-    eyebrow: "ABOUT YOUR REPORT",
+    eyebrow: copy.eyebrow,
     title: reportReplySubject(c),
-    preheader: fixed ? "Thanks for flagging it. The question is fixed for everyone." : "Thanks for flagging it. Here is why the answer stands.",
-    heading: fixed ? "Thanks, you were right." : "Thanks for checking us.",
+    preheader: fixed ? copy.preFixed : copy.preRight,
+    heading: fixed ? copy.headFixed : copy.headRight,
     unsubscribe: false,
+    lang,
+    footerNote: copy.footer,
+    privacyLabel: copy.privacy,
     body: [
-      p(fixed
-        ? "You reported a question on Tigertest. We checked it, you were right, and it is now fixed for everyone who practices it:"
-        : "You reported a question on Tigertest. We checked it against the official material, and the answer stands:"),
+      p(esc(fixed ? copy.introFixed : copy.introRight)),
       quote,
-      c.explanation ? p(`${fixed ? "" : "<strong style=\"font-weight: 700;\">Why:</strong> "}${esc(c.explanation)}`) : "",
-      p(fixed
-        ? "Reports like yours are how the questions get better. Thank you."
-        : "If you still think it is wrong, just reply to this email with what your handbook or course says and I will look again."),
-      cta(DASH(v, "report_reply"), v.id === "unknown" ? "Keep Practicing" : `Keep Practicing ${v.shortName}`),
-      signoff("Thanks again,"),
+      c.explanation ? p(`${fixed ? "" : `<strong style="font-weight: 700;">${esc(copy.why)}:</strong> `}${esc(c.explanation)}`) : "",
+      p(esc(fixed ? copy.outroFixed : copy.outroRight)),
+      cta(DASH(v, "report_reply"), esc(v.id === "unknown" ? copy.cta : copy.ctaNamed.replace("{name}", v.shortName))),
+      signoff(esc(copy.signoff)),
     ].filter(Boolean).join("\n"),
   });
 }

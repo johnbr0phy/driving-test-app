@@ -129,6 +129,7 @@ import "@/lib/v2/banks/aissee";
 import "@/lib/v2/banks/apcalcab";
 import "@/lib/v2/banks/aphug";
 import { DMV_EXAM_ID, classExamInfo } from "@/lib/classes";
+import { DMV_LANGUAGES, type Language } from "@/i18n";
 import type { Question } from "@/types";
 import type { QuestionV2 } from "@/lib/v2/types";
 
@@ -166,18 +167,19 @@ function fromV2(q: QuestionV2): ClassQuestionDisplay {
   };
 }
 
-export function classQuestionLookup(examId: string): (questionId: string) => ClassQuestionDisplay | undefined {
+/** `language` picks a translated bank where the test has one (report replies); otherwise the test's own. */
+export function classQuestionLookup(examId: string, language?: Language): (questionId: string) => ClassQuestionDisplay | undefined {
   try {
     const kind = classExamInfo(examId)?.kind;
     if (examId === DMV_EXAM_ID) {
-      const byId = new Map(getQuestionsData("en").map((q) => [q.questionId, q]));
+      const byId = new Map(getQuestionsData(language && DMV_LANGUAGES.includes(language) ? language : "en").map((q) => [q.questionId, q]));
       return (id) => (byId.has(id) ? fromV1(byId.get(id)!) : undefined);
     }
     if (kind === "v2") {
       const index = getQuestionIndex(examId);
       return (id) => (index.has(id) ? fromV2(index.get(id)!) : undefined);
     }
-    const byId = new Map(getExamQuestions(examId as Parameters<typeof getExamQuestions>[0]).map((q) => [q.questionId, q]));
+    const byId = new Map(getExamQuestions(examId as Parameters<typeof getExamQuestions>[0], language).map((q) => [q.questionId, q]));
     return (id) => (byId.has(id) ? fromV1(byId.get(id)!) : undefined);
   } catch {
     return () => undefined;

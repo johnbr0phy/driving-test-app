@@ -1951,21 +1951,21 @@
     "test": 1,
     "module": 1,
     "domain": "napOrders",
-    "difficulty": 1,
+    "difficulty": 2,
     "format": "single",
     "skill": "Dosage forms",
     "calculator": true,
     "options": [
-      "Extended-release capsule",
-      "Transdermal patch",
-      "Sublingual tablet",
-      "Topical ointment"
+      "On for 7 days, then changed",
+      "On for 12 to 14 hours, then off for 10 to 12 hours",
+      "On all day and night, changed every 24 hours",
+      "Only at the onset of chest pain"
     ],
     "correct": [
-      2
+      1
     ],
-    "stem": "Which nitroglycerin dosage form relieves an acute attack of angina?",
-    "explanation": "Sublingual nitroglycerin acts within minutes and is used at the onset of chest pain. Patches, ointment and extended-release capsules are for prevention."
+    "stem": "How is a nitroglycerin transdermal patch usually worn to prevent angina?",
+    "explanation": "Wearing nitrate patches around the clock leads to tolerance, so a daily nitrate-free interval of about 10 to 12 hours, usually overnight, is built in."
   },
   {
     "id": "NAPLEX-T1-091",
@@ -3898,7 +3898,7 @@
       0
     ],
     "stem": "During a shortage of IV furosemide, which drug is a reasonable IV loop diuretic alternative?",
-    "explanation": "Bumetanide is a loop diuretic available IV; about 1 mg is commonly taken as equal to 40 mg of IV furosemide. The others are different diuretic classes."
+    "explanation": "Bumetanide is a loop diuretic available IV. Its labeling puts 1 mg at about the potency of 40 mg of furosemide, a figure applied to oral furosemide; IV furosemide works at about half the oral dose, so 1 mg is usually taken as equal to about 20 mg IV. The others are different diuretic classes."
   },
   {
     "id": "NAPLEX-T2-079",
@@ -4341,7 +4341,7 @@
       0
     ],
     "stem": "Which of these is a primary literature source?",
-    "explanation": "Primary literature reports original research. Review articles and indexing services are secondary sources, and textbooks and compendia are tertiary."
+    "explanation": "Primary literature reports original research. Indexing and abstracting services are secondary sources, while review articles, textbooks and compendia are tertiary."
   },
   {
     "id": "NAPLEX-T2-099",
@@ -4654,21 +4654,20 @@
     "module": 1,
     "domain": "napHandling",
     "difficulty": 1,
-    "format": "order",
+    "format": "single",
     "skill": "Disposal",
     "calculator": true,
     "options": [
-      "Mix with an unappealing substance and trash it",
-      "Flush it, if it is on the FDA flush list",
-      "Drug take-back site or mail-back envelope"
+      "Metformin tablets",
+      "Lisinopril tablets",
+      "Amoxicillin capsules",
+      "A fentanyl transdermal patch"
     ],
     "correct": [
-      2,
-      1,
-      0
+      3
     ],
-    "stem": "Put the FDA's options for disposing of an unused medicine in order of preference, from first to last.",
-    "explanation": "FDA guidance is take-back first; if none is available, flush only drugs on the flush list; otherwise mix the drug with dirt, cat litter or used coffee grounds, seal it in a bag and put it in the trash."
+    "stem": "Which of these medicines is on the FDA flush list?",
+    "explanation": "The FDA flush list names a small group of medicines that are dangerous if someone else takes them, including any drug containing fentanyl. Common drugs such as metformin, amoxicillin and lisinopril are not on it."
   },
   {
     "id": "NAPLEX-D-014",
@@ -4791,16 +4790,16 @@
     "skill": "Safety",
     "calculator": true,
     "options": [
-      "Ferritin",
-      "Uric acid",
-      "Serum amylase",
-      "TSH"
+      "Cut the warfarin dose by a third to a half",
+      "Keep the dose, since the two drugs do not interact",
+      "Stop warfarin until amiodarone reaches steady state",
+      "Double the warfarin dose for the first week"
     ],
     "correct": [
-      3
+      0
     ],
-    "stem": "Which test is repeated periodically during long-term amiodarone therapy?",
-    "explanation": "Amiodarone contains iodine and can cause hypothyroidism or hyperthyroidism, so TSH is checked about every 6 months along with liver tests."
+    "stem": "Amiodarone is started in a patient taking warfarin. What does the amiodarone labeling advise?",
+    "explanation": "Amiodarone inhibits warfarin metabolism and can double the prothrombin time within days, so the labeling advises cutting the warfarin dose by one-third to one-half and monitoring closely. It also advises halving the digoxin dose."
   },
   {
     "id": "NAPLEX-D-020",
@@ -5146,16 +5145,16 @@
     "skill": "Recalls",
     "calculator": true,
     "options": [
-      "Use may cause reversible harm",
-      "Use is likely to cause death",
-      "The product is only being withdrawn",
-      "There is no chance of any harm"
+      "A recall the FDA orders for a contaminated product",
+      "A ban on a drug class across the US",
+      "Removal for a minor violation not subject to FDA legal action",
+      "The most serious recall, with risk of death"
     ],
     "correct": [
-      0
+      2
     ],
-    "stem": "What does an FDA Class II recall mean?",
-    "explanation": "Class II covers products that may cause temporary or medically reversible problems, where serious harm is remote. Class I is the most serious, and a market withdrawal is a minor issue not subject to FDA action."
+    "stem": "What is an FDA market withdrawal?",
+    "explanation": "FDA defines a market withdrawal as a firm removing or correcting a product with a minor violation that would not be subject to FDA legal action. Recalls, by contrast, involve products the FDA considers in violation of the law."
   },
   {
     "id": "NAPLEX-D-036",

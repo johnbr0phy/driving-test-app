@@ -83,7 +83,7 @@ ITEMS = [
      "A case-control study starts from outcome status, so incidence cannot be measured and the odds ratio is reported. Relative risk needs a cohort or trial that follows exposed people forward."),
     ("S", 2, 1, "Drug information", "Which of these is a primary literature source?",
      ["A report of a randomized controlled trial", "A review article on the same trial", "A pharmacotherapy textbook chapter", "A monograph in a drug information compendium"],
-     "Primary literature reports original research. Review articles and indexing services are secondary sources, and textbooks and compendia are tertiary."),
+     "Primary literature reports original research. Indexing and abstracting services are secondary sources, while review articles, textbooks and compendia are tertiary."),
     # ---- Drill only ----
     ("O", 0, 2, "Drug development", "Place these steps of US drug development in order, from first to last.",
      ["Preclinical laboratory and animal studies", "Investigational new drug application filed", "Phase 1 trial", "Phase 2 trial", "Phase 3 trial", "New drug application reviewed by the FDA"],

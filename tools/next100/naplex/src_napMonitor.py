@@ -65,9 +65,9 @@ ITEMS = [
      ["HAS-BLED", "CHA2DS2-VASc", "PHQ-9", "Child-Pugh"],
      "HAS-BLED flags modifiable bleeding risks such as uncontrolled hypertension, labile INR and alcohol. CHA2DS2-VASc estimates stroke risk, and Child-Pugh grades liver disease."),
     # ---- Drill only ----
-    ("S", 0, 2, "Safety", "Which test is repeated periodically during long-term amiodarone therapy?",
-     ["TSH", "Uric acid", "Serum amylase", "Ferritin"],
-     "Amiodarone contains iodine and can cause hypothyroidism or hyperthyroidism, so TSH is checked about every 6 months along with liver tests."),
+    ("S", 0, 2, "Safety", "Amiodarone is started in a patient taking warfarin. What does the amiodarone labeling advise?",
+     ["Cut the warfarin dose by a third to a half", "Double the warfarin dose for the first week", "Stop warfarin until amiodarone reaches steady state", "Keep the dose, since the two drugs do not interact"],
+     "Amiodarone inhibits warfarin metabolism and can double the prothrombin time within days, so the labeling advises cutting the warfarin dose by one-third to one-half and monitoring closely. It also advises halving the digoxin dose."),
     ("S", 0, 2, "Safety", "Which labs are monitored for a patient on valproic acid?",
      ["Liver enzymes and platelets", "Potassium and magnesium", "TSH and free T4", "Lipase and amylase every month"],
      "Valproate carries boxed warnings for hepatotoxicity and pancreatitis and can cause thrombocytopenia, so liver tests and platelets are monitored. Pancreatitis is a clinical diagnosis checked when symptoms appear."),

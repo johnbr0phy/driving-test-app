@@ -68,9 +68,9 @@ ITEMS = [
      [0, 1, 2],
      "CDC guidance calls for a digital data logger, a backup monitoring device and a daily check of the minimum and maximum readings. Door shelves and dormitory-style units have unstable temperatures."),
     # ---- Drill only ----
-    ("O", 0, 1, "Disposal", "Put the FDA's options for disposing of an unused medicine in order of preference, from first to last.",
-     ["Drug take-back site or mail-back envelope", "Flush it, if it is on the FDA flush list", "Mix with an unappealing substance and trash it"],
-     "FDA guidance is take-back first; if none is available, flush only drugs on the flush list; otherwise mix the drug with dirt, cat litter or used coffee grounds, seal it in a bag and put it in the trash."),
+    ("S", 0, 1, "Disposal", "Which of these medicines is on the FDA flush list?",
+     ["A fentanyl transdermal patch", "Metformin tablets", "Amoxicillin capsules", "Lisinopril tablets"],
+     "The FDA flush list names a small group of medicines that are dangerous if someone else takes them, including any drug containing fentanyl. Common drugs such as metformin, amoxicillin and lisinopril are not on it."),
     ("S", 0, 1, "Storage", "What is controlled room temperature for drug storage?",
      ["20°C to 25°C", "15°C to 30°C", "2°C to 8°C", "25°C to 30°C"],
      "Controlled room temperature is 20°C to 25°C (68°F to 77°F), with brief excursions to 15°C to 30°C allowed. 2°C to 8°C is refrigeration."),

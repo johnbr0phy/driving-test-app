@@ -96,6 +96,24 @@ fictional.
   - Drug facts in the questions (boxed warnings, contraindications, key interactions, monitoring, storage)
     are the long-standing ones in current US labeling.
 
+- FDA, "Drug Disposal: FDA's Flush List for Certain Medicines", fetched 2026-11-15:
+  https://www.fda.gov/drugs/disposal-unused-medicines-what-you-should-know/drug-disposal-fdas-flush-list-certain-medicines
+  - The list includes "any drug that contains the word fentanyl"; flush only listed drugs and only when no
+    take-back option is readily available.
+- FDA, "Recalls Background and Definitions", fetched 2026-11-15:
+  https://www.fda.gov/safety/industry-guidance-recalls/recalls-background-and-definitions
+  - Class I, II and III definitions; a market withdrawal is a minor violation not subject to FDA legal action.
+- FDA, Cordarone (amiodarone) prescribing information (Reference ID 4336449), fetched 2026-11-15:
+  https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/018972s054lbl.pdf
+  - Warfarin: prothrombin time up 100% after 3 to 4 days; reduce warfarin by one-third to one-half and
+    monitor. Digoxin: reduce by half or stop.
+- DailyMed, bumetanide injection (Fresenius Kabi), fetched 2026-11-15:
+  https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a007f3aa-3977-4be3-a9a2-db3d458bca58
+  - "1 mg bumetanide has a diuretic potency equivalent to approximately 40 mg furosemide." The common
+    clinical reading is oral furosemide; IV furosemide works at about half the oral dose.
+- Drug information resources: primary (original research), secondary (indexing and abstracting services),
+  tertiary (review articles, textbooks, compendia), the standard classification taught in US PharmD programs.
+
 ## Could not be loaded or confirmed
 - ISMP's error-prone abbreviations list and the Joint Commission "Do Not Use" list returned 403 to the
   fetcher. Abbreviation items keep to the long-standing core (U, IU, trailing and leading zeros, qd and

@@ -71,3 +71,6 @@ Every key is recomputed by `build.py` (a number, a function of x, or a string bu
 computation); 6 concept items (logical reasoning, congruence, quadrilateral properties) were
 checked by hand. All-number options are sorted and locked. Exact trigonometric values, circle
 theorems and mensuration formulas are standard results.
+
+## Grades
+- WAEC grades WASSCE subjects on the nine-point scale A1 to F9 (WAEC circular reported by GNA: https://www.ghanaweb.com/GhanaHomePage/NewsArchive/WAEC-explains-new-grading-system-under-WASSCE-114576). No WAEC table of marks to grades was found; that is Tigertest's observation.

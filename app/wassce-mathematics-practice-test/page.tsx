@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "What topics does the WAEC Mathematics syllabus cover?",
-    a: "The syllabus has nine parts: Number and Numeration, Algebraic Processes, Mensuration, Plane Geometry, Coordinate Geometry of Straight Lines, Trigonometry, Introductory Calculus, Statistics and Probability, and Vectors and Transformation. Paper 1 is drawn from the common areas. The syllabus marks some topics as not common to every country (for example matrices, binary operations, bearings, loci, calculus, and vectors and transformation), so this practice bank keeps to the unmarked common topics. Check your own country's teaching syllabus for the rest.",
+    a: "The syllabus has nine parts: Number and Numeration, Algebraic Processes, Mensuration, Plane Geometry, Coordinate Geometry of Straight Lines, Trigonometry, Introductory Calculus, Statistics and Probability, and Vectors and Transformation. Paper 1 is drawn from the common areas. The syllabus flags some topics with symbols (for example matrices, binary operations, bearings, loci, calculus, and vectors and transformation). We read these as the areas not common to every country, so this practice bank keeps to the unflagged topics. Check your own country's teaching syllabus for the rest.",
   },
   {
     q: "Is this the same as Mathematics (Core) in Ghana?",
@@ -180,7 +180,7 @@ export default function WassceMathematicsLandingPage() {
                 Built on the WAEC Syllabus
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Every practice test has 50 four-option questions on the common areas of the syllabus, the parts Paper 1 is drawn from. WAEC does not publish a count per topic, so this split is Tigertest&apos;s. Topics the syllabus marks as not common to every country, such as matrices, bearings, loci, calculus and vectors, are left out.
+                Every practice test has 50 four-option questions on the common areas of the syllabus, the parts Paper 1 is drawn from. WAEC does not publish a count per topic, so this split is Tigertest&apos;s. Topics the syllabus flags with symbols, which we read as not common to every country (matrices, bearings, loci, calculus and vectors), are left out.
               </p>
               <div className="space-y-3">
                 {sections.map((s) => (

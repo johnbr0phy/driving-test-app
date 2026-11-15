@@ -23,23 +23,23 @@ const description =
 const faqs = [
   {
     q: "How many questions are in WAEC English Paper 1?",
-    a: "WAEC's English Language syllabus, as published by syllabus sites, sets Paper 1 as 80 objective questions in 1 hour for 40 marks, each with four options lettered A to D: forty on lexis and forty on structure. Tigertest practice tests have the full 80 Paper 1 questions in 1 hour, split the same way.",
+    a: "WAEC's English Language syllabus, as published by syllabus sites, sets Paper 1 as 80 objective questions in 1 hour for 40 marks, each with four options lettered A to D. In Nigeria, Sierra Leone, Liberia and The Gambia that is forty on lexis and forty on structure. Tigertest practice tests have the full 80 Paper 1 questions in 1 hour, split the same way.",
   },
   {
     q: "What does the WASSCE English syllabus cover?",
-    a: "Lexis covers the vocabulary of everyday life and of sixteen fields of activity (building, agriculture, fishing, the stock exchange, health, the environment, ceremonies, law and order, motor vehicles and travel, government, sports, religion, science and technology, animal husbandry, advertising and the human body), plus synonyms, antonyms, idioms and figurative usage. Structure covers word forms for number, tense and degree, how words combine into sentences, and structural words such as conjunctions, determiners and prepositions. Paper 3 covers vowels, consonants and clusters, rhymes, word stress and syllables, emphatic stress and intonation, and phonetic symbols.",
+    a: "For Nigeria, Sierra Leone, Liberia and The Gambia, lexis covers the vocabulary of everyday life and of sixteen fields of activity (building, agriculture, fishing, the stock exchange, health, the environment, ceremonies, law and order, motor vehicles and travel, government, sports, religion, science and technology, animal husbandry, advertising and the human body), plus synonyms, antonyms, idioms and figurative usage. Structure covers word forms for number, tense and degree, how words combine into sentences, and structural words such as conjunctions, determiners and prepositions. Paper 3 covers vowels, consonants and clusters, rhymes, word stress and syllables, emphatic stress and intonation, and phonetic symbols.",
   },
   {
     q: "What is the Test of Orals?",
-    a: "Paper 3 is 60 multiple-choice items in 45 minutes for 30 marks. Candidates in Nigeria and Liberia take the Test of Orals, on sounds, rhymes, stress and intonation. Candidates in Ghana, The Gambia and Sierra Leone take a listening comprehension test from a recording instead, which Tigertest does not model. Tigertest's orals section has 30 questions in 23 minutes, half the paper at the same pace, judged by standard British pronunciation.",
+    a: "Paper 3 is 60 multiple-choice items in 45 minutes for 30 marks. Candidates in Nigeria and Liberia take the Test of Orals, on sounds, rhymes, stress and intonation. Candidates in The Gambia and Sierra Leone (and, in the syllabus's detailed section, Ghana) take a listening comprehension test from a recording instead, which Tigertest does not model. Tigertest's orals section has 30 questions in 23 minutes, half the paper at the same pace, judged by standard British pronunciation.",
   },
   {
     q: "Does Tigertest cover the essay, comprehension and summary?",
-    a: "No. Paper 2 is written: an essay of at least 450 words on one of five topics, a comprehension passage and a summary, in 2 hours for 100 marks. It needs a teacher to mark it, so Tigertest covers only the two objective papers. Paper 2 carries 100 of the 170 marks, so practise writing too. Ghana's Paper 1 also has 30 literature questions on set texts, which are not covered here.",
+    a: "No. Paper 2 is written: an essay of at least 450 words on one of five topics, a comprehension passage and a summary, in 2 hours for 100 marks. It needs a teacher to mark it, so Tigertest covers only the two objective papers. Paper 2 carries 100 of the 170 marks, so practise writing too. Ghana's Paper 1 is different: of its 80 questions, 30 are lexis, 20 structure and 30 literature on set drama, prose and poetry, so this practice matches the Nigerian, Sierra Leonean, Liberian and Gambian paper.",
   },
   {
     q: "How is WASSCE English graded?",
-    a: "WAEC reports results as grades from A1 to F9. It does not publish how marks turn into grades, so Tigertest shows your percent correct, not a grade. A high percent on both objective papers is a strong sign that your lexis, structure and orals are ready.",
+    a: "WAEC reports results as grades from A1 to F9. Tigertest found no published table of how marks turn into grades, so Tigertest shows your percent correct, not a grade. A high percent on both objective papers is a strong sign that your lexis, structure and orals are ready.",
   },
   {
     q: "Are these WAEC past questions?",
@@ -180,7 +180,7 @@ export default function WassceEnglishLandingPage() {
                 Built on the WAEC English Language Syllabus
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Paper 1 follows the syllabus as published by syllabus sites: 80 four-option questions, forty on lexis and forty on structure. The Test of Orals section covers the six areas the syllabus lists for Nigeria and Liberia. Paper 2, Ghana&apos;s literature questions and the listening test are not modelled. Your score is percent correct, since WAEC publishes no conversion to grades.
+                Paper 1 follows the syllabus as published by syllabus sites: 80 four-option questions, forty on lexis and forty on structure in Nigeria, Sierra Leone, Liberia and The Gambia. The Test of Orals section covers the six areas the syllabus lists for Nigeria and Liberia. Paper 2, Ghana&apos;s literature questions and the listening test are not modelled. Your score is percent correct, since WAEC publishes no conversion to grades.
               </p>
               <div className="space-y-3">
                 {sections.map((s) => (

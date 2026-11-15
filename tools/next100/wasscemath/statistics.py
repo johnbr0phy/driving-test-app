@@ -45,8 +45,8 @@ ITEMS = [
     # ---------------- Practice Test 2 ----------------
     Q(2, 3, "Standard deviation",
       "Find the standard deviation of 2, 4, 6, 8 and 10, correct to 2 decimal places.",
-      ["2.83", "8", "3.16", "2.4"],
-      r"The mean is 6. The squared deviations are 16, 4, 0, 4, 16, which add to 40, so the variance is $\frac{40}{5} = 8$ and the standard deviation is $\sqrt{8} \approx 2.83$. 8 is the variance, and 2.4 is the mean deviation.",
+      ["2.83", "8", "4", "2.4"],
+      r"The mean is 6. The squared deviations are 16, 4, 0, 4, 16, which add to 40, so the variance is $\frac{40}{5} = 8$ and the standard deviation is $\sqrt{8} \approx 2.83$. 8 is the variance, 4 is the range halved, and 2.4 is the mean deviation.",
       chk=round(sqrt(pvar([2, 4, 6, 8, 10])), 2)),
     Q(2, 1, "Class marks",
       "Find the class mark of the class interval 20 to 29.",

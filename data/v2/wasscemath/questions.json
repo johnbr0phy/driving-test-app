@@ -2109,14 +2109,14 @@
     "options": [
       "2.4",
       "2.83",
-      "3.16",
+      "4",
       "8"
     ],
     "correct": [
       1
     ],
     "lockedOrder": true,
-    "explanation": "The mean is 6. The squared deviations are 16, 4, 0, 4, 16, which add to 40, so the variance is $\\frac{40}{5} = 8$ and the standard deviation is $\\sqrt{8} \\approx 2.83$. 8 is the variance, and 2.4 is the mean deviation."
+    "explanation": "The mean is 6. The squared deviations are 16, 4, 0, 4, 16, which add to 40, so the variance is $\\frac{40}{5} = 8$ and the standard deviation is $\\sqrt{8} \\approx 2.83$. 8 is the variance, 4 is the range halved, and 2.4 is the mean deviation."
   },
   {
     "id": "WASSCEMATH-T2-047",
@@ -3090,7 +3090,7 @@
       2
     ],
     "lockedOrder": true,
-    "explanation": "$V = kr^2h$, so $88 = k \\times 4 \\times 7$ and $k = \\frac{88}{28} = \\frac{22}{7}$. Then $V = \\frac{22}{7} \\times 9 \\times 14 = 396$. Using $r$ instead of $r^2$ gives 132."
+    "explanation": "$V = kr^2h$, so $88 = k \\times 4 \\times 7$ and $k = \\frac{88}{28} = \\frac{22}{7}$. Then $V = \\frac{22}{7} \\times 9 \\times 14 = 396$. Forgetting to square $r = 3$ in the second step gives 132."
   },
   {
     "id": "WASSCEMATH-D-041",
@@ -4125,7 +4125,7 @@
     "correct": [
       0
     ],
-    "explanation": "The graph cuts the $x$-axis where $y = 0$, that is where $\\cos x = 0$: at $90^\\circ$ and $270^\\circ$. The 2 stretches the graph upward but does not move these points."
+    "explanation": "The graph cuts the $x$-axis where $y = 0$, that is where $\\cos x = 0$: at $90^\\circ$ and $270^\\circ$. The 2 stretches the graph vertically by a factor of 2 but does not move these points."
   },
   {
     "id": "WASSCEMATH-D-088",

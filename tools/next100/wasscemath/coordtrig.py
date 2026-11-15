@@ -93,7 +93,7 @@ ITEMS = [
     Q(0, 2, "Graph of the cosine function",
       r"Between $0^\circ$ and $360^\circ$, at which values of $x$ does the graph of $y = 2\cos x$ cut the $x$-axis?",
       [r"$90^\circ$ and $270^\circ$", r"$0^\circ$ and $180^\circ$", r"$180^\circ$ and $360^\circ$", r"$60^\circ$ and $300^\circ$"],
-      r"The graph cuts the $x$-axis where $y = 0$, that is where $\cos x = 0$: at $90^\circ$ and $270^\circ$. The 2 stretches the graph upward but does not move these points.",
+      r"The graph cuts the $x$-axis where $y = 0$, that is where $\cos x = 0$: at $90^\circ$ and $270^\circ$. The 2 stretches the graph vertically by a factor of 2 but does not move these points.",
       chk=ok([t for t in range(0, 361) if abs(2 * cos(deg(t))) < 1e-9] == [90, 270], r"$90^\circ$ and $270^\circ$")),
     Q(0, 1, "Heights from angles",
       r"A kite string 50 m long is pulled straight and makes an angle of $60^\circ$ with the level ground. Find the height of the kite, correct to 1 decimal place.",

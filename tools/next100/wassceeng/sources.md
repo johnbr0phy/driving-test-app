@@ -61,3 +61,6 @@ paraphrased. WASSCE past questions are widely posted online; none was opened for
   Listening comprehension, which needs audio, is not modelled.
 - Paper 2 and Ghana's literature section are not modelled; the landing says so.
 - Left out: fees, dates of the next series, grade cut-offs and anything only a news report states.
+
+## Grades
+- WAEC grades WASSCE subjects on the nine-point scale A1 to F9 (WAEC circular reported by GNA: https://www.ghanaweb.com/GhanaHomePage/NewsArchive/WAEC-explains-new-grading-system-under-WASSCE-114576). No WAEC table of marks to grades was found; that is Tigertest's observation.

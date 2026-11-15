@@ -103,6 +103,6 @@ export const WASSCEENG: ExamV2Config = {
       "Goal hit. You are ready for WASSCE English.",
     ],
     sourceLine: "Original practice questions on the WAEC English Language syllabus (Paper 1 lexis and structure, Paper 3 Test of Orals). Not affiliated with or endorsed by WAEC.",
-    scoreNote: "Percent correct across Paper 1 and the Test of Orals. WAEC grades English Language from A1 to F9 and does not publish how marks turn into grades, so this is not a grade. Paper 2 (essay, comprehension and summary) is not modelled, and it carries 100 of the 170 marks.",
+    scoreNote: "Percent correct across Paper 1 and the Test of Orals. WAEC grades English Language from A1 to F9 and Tigertest found no published conversion from marks, so this is not a grade. Paper 2 (essay, comprehension and summary) is not modelled, and it carries 100 of the 170 marks.",
   },
 };

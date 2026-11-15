@@ -11,7 +11,7 @@ import { percentScale, overallPercent } from "../scales";
 // is 13 essay questions in two sections, answer 10 in 2 1/2 hours for 100
 // marks (not modelled). Non-programmable, silent, cordless calculators are
 // allowed (some questions may forbid them); WAEC mathematical tables may be
-// used. Topics the syllabus marks as not common to every country (matrices,
+// used. Topics the syllabus flags with symbols (read as not common to every country: matrices,
 // financial arithmetic, binary operations, functions, completing the square,
 // tangents to curves, graphical inequalities in two variables, sine and cosine
 // rules, longitudes and latitudes, construction, loci, the intercept theorem,
@@ -47,7 +47,7 @@ export const WASSCEMATH: ExamV2Config = {
       calculator: true,
       modules: [{ module: 1, questionCount: 50, timeLimit: minutes(90) }],
       directions:
-        "50 four-option questions in 1 hour 30 minutes, like WAEC's Paper 1. Questions run in syllabus order: number and numeration, algebraic processes, mensuration, plane geometry, coordinate geometry and trigonometry, then statistics and probability. A calculator is available, as WAEC allows a silent, non-programmable one. Where a question gives a value of pi or a logarithm, use it. You can move between questions and flag them. Wrong answers lose no marks, so answer every question.",
+        "50 four-option questions in 1 hour 30 minutes, like WAEC's Paper 1. Questions run in syllabus order: number and numeration, algebraic processes, mensuration, plane geometry, coordinate geometry and trigonometry, then statistics and probability. A calculator is available, as WAEC allows a silent, non-programmable one. Where a question gives a value of pi or a logarithm, use it. You can move between questions and flag them. Answer every question.",
       scale: percentScale(50),
       domains: [
         "wmNumber",
@@ -108,6 +108,6 @@ export const WASSCEMATH: ExamV2Config = {
       "Goal hit. You are ready for WASSCE Mathematics Paper 1.",
     ],
     sourceLine: "Original practice questions on the common areas of the WAEC General Mathematics / Mathematics (Core) syllabus. Not affiliated with or endorsed by the West African Examinations Council (WAEC).",
-    scoreNote: "Percent correct on 50 Paper 1 questions. Your WASSCE grade (A1 to F9) also counts Paper 2, the essay paper, and WAEC does not publish how marks convert to grades.",
+    scoreNote: "Percent correct on 50 Paper 1 questions. Your WASSCE grade (A1 to F9) also counts Paper 2, the essay paper, and Tigertest found no published conversion from marks to grades.",
   },
 };

@@ -110,7 +110,7 @@ ITEMS = [
     Q(0, 3, "Joint variation",
       r"$V$ varies jointly as $h$ and the square of $r$. $V = 88$ when $r = 2$ and $h = 7$. Find $V$ when $r = 3$ and $h = 14$.",
       ["396", "198", "792", "132"],
-      r"$V = kr^2h$, so $88 = k \times 4 \times 7$ and $k = \frac{88}{28} = \frac{22}{7}$. Then $V = \frac{22}{7} \times 9 \times 14 = 396$. Using $r$ instead of $r^2$ gives 132.",
+      r"$V = kr^2h$, so $88 = k \times 4 \times 7$ and $k = \frac{88}{28} = \frac{22}{7}$. Then $V = \frac{22}{7} \times 9 \times 14 = 396$. Forgetting to square $r = 3$ in the second step gives 132.",
       chk=88 / (4 * 7) * 9 * 14),
     Q(0, 2, "Time from speed",
       "A car leaves Accra at 08:40 and travels 270 km at an average speed of 60 km/h. At what time does it arrive?",

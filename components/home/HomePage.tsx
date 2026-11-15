@@ -265,13 +265,28 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
           {us ? c.everyTest : c.testsFor(inName)}
         </h2>
         {headline && <p className="mx-auto mb-6 max-w-2xl text-center text-gray-600 dark:text-gray-300">{headline.lead}</p>}
-        <TestCatalogStatic region={region} localOnly={!us} lang={lang} />
-        {!us && (
-          <p className="mt-10 text-sm text-gray-600 dark:text-gray-300">
-            {c.usExamPrompt}{" "}
-            <Link href="/tests" className="font-medium text-brand-dark hover:underline">{c.seeAllTests(examCount)}</Link>
-          </p>
+        {popular.length > 0 && (
+          <div className="mb-12">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{c.popularThisWeek}</h3>
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {popular.map(({ test, answered }) => (
+                <TestCard key={test.id} test={test} answered={answered} headingLevel={4} lang={lang} />
+              ))}
+            </div>
+          </div>
         )}
+        {/* Every category as short text links (the busiest first), not a card per
+            test: keeps each landing linked from the homepage at a fraction of the length. */}
+        <TestCatalogStatic region={region} localOnly={!us} lang={lang} popularity={popularity} />
+        <div className="mt-4 text-center">
+          {!us && <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">{c.usExamPrompt}</p>}
+          <Link
+            href="/tests"
+            className="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 px-6 py-3 font-semibold text-gray-900 dark:text-gray-50 hover:border-brand hover:text-brand transition-colors"
+          >
+            {c.seeAllTests(examCount)} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
+        </div>
       </div>
       )}
 

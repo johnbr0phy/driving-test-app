@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { Search, X } from "lucide-react";
 import {
+  groupAnchor,
   searchTestGroups,
   TEST_CATALOG,
   TestCatalogEntry,
@@ -130,7 +131,7 @@ export function TestCatalogGrid({
       )}
 
       {groups.map((group, i) => (
-        <div key={group.title} className={i < groups.length - 1 ? "mb-12" : ""}>
+        <div key={group.title} id={groupAnchor(group.title)} className={`scroll-mt-20 ${i < groups.length - 1 ? "mb-12" : ""}`}>
           <GroupHeading className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-4">
             {group.title}
           </GroupHeading>

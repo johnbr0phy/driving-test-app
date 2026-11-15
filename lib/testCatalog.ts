@@ -1268,3 +1268,8 @@ export function relatedTests(id: string, limit = 6): TestCatalogEntry[] {
   }
   return out.slice(0, limit);
 }
+
+/** The /tests anchor of a catalog group ("UK driving and instructor theory tests" -> "uk-driving-and-instructor-theory-tests"). */
+export function groupAnchor(title: string): string {
+  return title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}

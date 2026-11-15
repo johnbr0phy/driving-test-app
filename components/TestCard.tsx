@@ -8,10 +8,9 @@ import { getExamById } from "@/lib/exams";
 import { LANGUAGES, type Language } from "@/i18n";
 import { homeCopy } from "@/components/home/homeCopy";
 
-// No "use client": the homepage renders its whole catalog from the server
-// (components/TestCatalogStatic.tsx), so 330 cards are plain HTML that the
-// browser never hydrates. The /tests grid, a client component, imports the
-// same card.
+// No "use client": the homepage's Popular this week row renders it from the
+// server as plain HTML. The /tests grid, a client component, imports the same
+// card.
 
 /**
  * One test on the hub. Every card has the same rows so a grid lines up:

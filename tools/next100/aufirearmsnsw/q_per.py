@@ -2,7 +2,7 @@ SEG = "PER"
 CAT = "fnswPermits"
 Q = [
     ("You hold a category A licence and want to buy a second rimfire rifle. Before acquiring it you need:",
-     "A separate permit to acquire", ["A new licence category", "A club's written consent", "A police inspection of your home"],
+     "A separate permit to acquire", ["A new licence category", "A club permit to buy", "A police inspection of your home"],
      "Section 31(2) requires a separate permit to acquire for each firearm, and s 50 makes acquiring a firearm without one an offence for anyone but a licensed dealer."),
     ("A category H (sport/target shooting) licence holder applies for a permit to acquire a pistol. The application must be supported by a written statement from:",
      "Their pistol club's secretary", ["A licensed firearms dealer", "Their local council", "A medical practitioner"],
@@ -26,7 +26,7 @@ Q = [
      "Get it inspected or surrender it", ["Have it sold on your behalf", "Store it while you are away", "Have it repaired or tested"],
      "Section 9(1) covers taking a firearm to a licensed dealer to sell, convert, maintain, test or repair it, and to a police officer to have it inspected or to surrender it."),
     ("Before supplying a firearm to a licence holder who is not a dealer, the seller must inspect the buyer's licence and their:",
-     "Permit to acquire", ["Proof of address", "Club membership card", "Storage receipt"],
+     "Permit to acquire", ["Proof of address", "Club membership card", "Storage inspection permit"],
      "Section 51(1)(b) requires the other person's licence or permit and, unless they are a licensed dealer, their permit to acquire to be produced to and inspected by the supplier."),
     ("A person (not a dealer) who acquires a firearm from someone else must give the Commissioner the required particulars within:",
      "7 days", ["24 hours", "14 days", "28 days"],

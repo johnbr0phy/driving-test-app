@@ -219,6 +219,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cssgb: { title: "Six Sigma Green Belt (CSSGB)", description: "Practice DMAIC, lean tools, process capability, hypothesis tests, DOE and control charts." },
   ccs: { title: "AHIMA CCS Exam", description: "Review inpatient and outpatient coding, ICD-10-PCS, MS-DRGs, queries and compliance." },
   rdexam: { title: "Registered Dietitian (RD) Exam", description: "Review medical nutrition therapy, assessment, community nutrition, management and foodservice." },
+  ccrn: { title: "CCRN (Adult) Exam", description: "Review cardiovascular, respiratory, multisystem and neuro critical care, plus caring and ethics." },
   praxis5001: { title: "Praxis Elementary Education (5001)", description: "Review reading and language arts, math, social studies and science for elementary teachers." },
   fladjuster: { title: "Florida 6-20 Adjuster Exam", description: "Review Florida PIP and auto, homeowners, flood, workers' comp and Florida claims law." },
   llqp: { title: "LLQP Exam", description: "Practice life insurance, accident and sickness, segregated funds, annuities and ethics." },

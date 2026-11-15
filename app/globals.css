@@ -4831,6 +4831,20 @@
     --brand-gradient-to: 106 30% 96%;
   }
 
+  /* CCRN (Adult) critical care nursing theme */
+  [data-theme="ccrn"] {
+    --brand: 252 25% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 252 30% 96%;
+    --brand-hover: 252 25% 40%;
+    --brand-dark: 252 25% 34%;
+    --brand-darker: 252 25% 24%;
+    --brand-muted: 252 12% 70%;
+    --brand-border: 252 15% 80%;
+    --brand-border-light: 252 15% 89%;
+    --brand-gradient-to: 267 30% 96%;
+  }
+
   /* Praxis Elementary Education: Multiple Subjects (5001) theme: dark ochre brown */
   [data-theme="praxis5001"] {
     --brand: 39 40% 26%;
@@ -9141,6 +9155,18 @@
     --brand-muted: 91 12% 45%;
     --brand-dark: 91 20% 65%;
     --brand-darker: 91 20% 78%;
+  }
+
+  .dark [data-theme="ccrn"] {
+    --brand: 252 25% 50%;
+    --brand-hover: 252 25% 42%;
+    --brand-light: 252 30% 13%;
+    --brand-gradient-to: 267 30% 11%;
+    --brand-border-light: 252 15% 24%;
+    --brand-border: 252 15% 34%;
+    --brand-muted: 252 12% 45%;
+    --brand-dark: 252 25% 65%;
+    --brand-darker: 252 25% 78%;
   }
 
   .dark [data-theme="praxis5001"] {

@@ -1,6 +1,7 @@
 "use client";
 
 import { CARD, ROW, STICKY_COL, TableScroll } from "@/components/admin/AdminTabParts";
+import { Variations, VariationFrame } from "@/components/admin/Variations";
 import type { ConversionPayload } from "@/lib/server/conversion";
 
 // The top prepper email against its holdout (lib/topPrepper.ts), on the A/B
@@ -55,6 +56,10 @@ export function TopPrepperTestCard({ t }: { t: ConversionPayload["topPrepper"] }
       <p className={`mt-3 ${NOTE}`}>
         {t.sent < 100 ? "Too few people yet to trust the difference: wait for about 100 emails before reading it." : "With a holdout this small, a gap of a point or two can still be chance."}
       </p>
+      <Variations>
+        <VariationFrame name="Got the email" note="Sample numbers; each person sees their own." src="/admin/preview/top-prepper-email" height={640} />
+        <VariationFrame name="Holdout" note="One in ten gets no email." />
+      </Variations>
     </div>
   );
 }

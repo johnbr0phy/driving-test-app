@@ -3,7 +3,7 @@
 require('tsx/cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { testPages, onTestPages, daysLive, dayMinus, weekOf, cohorts, groups } = require('../lib/newTests.ts');
+const { testPages, onTestPages, daysLive, dayMinus, trafficOf, trafficCounts, groups, shares } = require('../lib/newTests.ts');
 const launchDates = require('../lib/examLaunchDates.json');
 const { EXAMS } = require('../lib/exams.ts');
 const { EXAMS_V2 } = require('../lib/v2/registry.ts');
@@ -18,31 +18,38 @@ test('a test owns its landings, app routes and topic pages, and nothing that onl
   assert.ok(onTestPages('/real-estate-practice-test/california', family));
 });
 
-test('days live counts launch day, weeks start on Monday', () => {
+test('days live counts launch day', () => {
   assert.equal(daysLive('2026-11-15', '2026-11-15'), 1);
   assert.equal(daysLive('2026-11-09', '2026-11-15'), 7);
   assert.equal(dayMinus('2026-11-15', 6), '2026-11-09');
-  assert.equal(weekOf('2026-11-15'), '2026-11-09');
-  assert.equal(weekOf('2026-11-09'), '2026-11-09');
 });
 
-const row = (id, launched, visitors, live, group = 'G') => ({
-  id, name: id, href: '/', group, region: 'US', launched, daysLive: live, visitors, visitors7d: visitors, firstAnswers: 0,
-  answers: 0, answers7d: 0, learners: 0, learners7d: 0, signups: 1, signups7d: 1, purchases: 0, revenueUsdCents: 0,
-  visitorsPerDay: visitors / live,
+const row = (id, visitors, live, signups = 0, group = 'G') => ({
+  id, name: id, href: '/', group, launched: '2026-11-01', daysLive: live, visitors, visitors7d: visitors,
+  perDay: visitors / live, signups, revenueUsdCents: 0, topSource: null,
 });
 
-test('cohorts and groups average visitors a test a day, so a young test is not punished', () => {
-  const rows = [row('a', '2026-11-10', 10, 5, 'X'), row('b', '2026-11-12', 30, 3, 'X'), row('c', '2026-11-03', 70, 12, 'Y')];
-  const [newest, older] = cohorts(rows);
-  assert.equal(newest.week, '2026-11-09');
-  assert.equal(newest.tests, 2);
-  assert.equal(newest.visitors, 40);
-  assert.equal(newest.visitorsPerTestDay, (2 + 10) / 2);
-  assert.equal(older.week, '2026-11-02');
-  const g = groups(rows);
+test('a test is judged on traffic only after a week', () => {
+  assert.equal(trafficOf(row('a', 0, 3)), 'tooNew');
+  assert.equal(trafficOf(row('a', 0, 10)), 'none');
+  assert.equal(trafficOf(row('a', 5, 10)), 'trickle');
+  assert.equal(trafficOf(row('a', 10, 10)), 'steady');
+  assert.deepEqual(trafficCounts([row('a', 0, 3), row('b', 0, 10), row('c', 20, 10)]), { steady: 1, trickle: 0, none: 1, tooNew: 1 });
+});
+
+test('groups rank by visitors a test a day, so a young test is not punished', () => {
+  const g = groups([row('a', 10, 5, 1, 'X'), row('b', 30, 3, 2, 'X'), row('c', 70, 35, 0, 'Y')]);
   assert.equal(g[0].group, 'X');
-  assert.equal(g[0].best.id, 'b');
+  assert.equal(g[0].perTestDay, (2 + 10) / 2);
+  assert.equal(g[0].signups, 3);
+  assert.equal(g[0].best, 'b');
+  assert.equal(g[1].best, 'c');
+});
+
+test('shares are biggest first and drop zeros', () => {
+  assert.deepEqual(shares({ search: 3, chatgpt: 1, direct: 0 }), [
+    { key: 'search', n: 3, share: 0.75 }, { key: 'chatgpt', n: 1, share: 0.25 },
+  ]);
 });
 
 test('every exam has a launch date, so a new test shows on the tab', () => {

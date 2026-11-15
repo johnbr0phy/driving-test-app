@@ -29,7 +29,7 @@ Q = [
  "The pump has already proved it can make full pressure, so pressure lost when the gear is loaded means the gear's internal seals are leaking."),
 ("A", "After a power steering rack is replaced, the fluid is foamy and the pump whines. What is needed?",
  "Purge the air",
- ["Replace the new pump", "Fit a larger cooler", "Overfill the reservoir"],
+ ["Replace the pump again", "Fit a larger cooler", "Overfill the reservoir"],
  "Air trapped in the system foams the fluid and makes the pump noisy. The bleed procedure in the service information, often turning lock to lock with the engine off and then running, removes it."),
 ("A", "Excessive steering free play on a rack-and-pinion car is most often caused by:",
  "Worn inner tie rod joints",

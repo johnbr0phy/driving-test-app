@@ -357,6 +357,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   aissee: { title: "AISSEE Class 6 Mock Test", description: "Sainik School entrance practice: 100-question mock tests on Language, Mathematics, Intelligence and General Knowledge." },
   aphug: { title: "AP Human Geography Practice Test", description: "Two full 60-question AP Human Geography multiple-choice sections with data and map stimulus sets, plus a drill for every unit." },
   apcalcab: { title: "AP Calculus AB Practice Test", description: "Two full 42-question AP Calculus AB multiple-choice sections, with and without a calculator, plus a drill for every unit." },
+  wasscemath: { title: "WASSCE Mathematics Practice Test", description: "Practise number bases, indices, algebra, mensuration, geometry, trigonometry and statistics in full 50-question WAEC Paper 1 tests." },
   jambmath: { title: "JAMB Mathematics Practice Test", description: "Practise number bases, algebra, geometry, trigonometry, calculus and statistics in full 40-question UTME Mathematics tests." },
   jambbio: { title: "JAMB Biology Practice Test", description: "Practise the whole UTME Biology syllabus in full 40-question timed tests, with every answer explained." },
   jambchem: { title: "JAMB Chemistry Practice Test", description: "Practise the whole UTME Chemistry syllabus in full 40-question tests, with every calculation worked out." },

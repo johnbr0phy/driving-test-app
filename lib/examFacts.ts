@@ -4589,6 +4589,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the JAMB website and widely reproduced UTME syllabus guides, checked November 2026. Question counts are guides' figures; JAMB publishes no count per topic",
     source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
   },
+  wasscemath: {
+    answer:
+      "General Mathematics, called Mathematics (Core) in Ghana, is one of the two core subjects of the West African Senior School Certificate Examination (WASSCE), set by the West African Examinations Council (WAEC) for candidates in Nigeria, Ghana, Sierra Leone, Liberia and The Gambia; WAEC Nigeria says every 2026 and 2027 candidate sits English Language and General Mathematics. WAEC's syllabus, as published by waecsyllabus.com and other copies, sets two papers, both compulsory. Paper 1 has 50 multiple-choice objective questions drawn from the common areas of the syllabus, answered in 1 1/2 hours for 50 marks. Paper 2 has 13 essay questions in two sections, of which candidates answer 10 in 2 1/2 hours for 100 marks. Silent, non-programmable calculators and WAEC-approved mathematical tables are allowed. Results are graded A1 to F9; WAEC does not publish how marks convert to grades.",
+    rows: [
+      { label: "Paper 1", value: "50 multiple-choice questions, 1 1/2 hours, 50 marks" },
+      { label: "Paper 2", value: "13 essay questions, answer 10, 2 1/2 hours, 100 marks" },
+      { label: "Calculator", value: "Silent, non-programmable calculators allowed" },
+      { label: "Topics", value: "Number and numeration, algebraic processes, mensuration, plane geometry, coordinate geometry, trigonometry, statistics and probability" },
+      { label: "Grades", value: "A1 to F9" },
+      { label: "Taken in", value: "Nigeria, Ghana, Sierra Leone, Liberia and The Gambia" },
+      { label: "Run by", value: "West African Examinations Council (WAEC)" },
+    ],
+    basedOn: "WAEC's General Mathematics / Mathematics (Core) syllabus as published by waecsyllabus.com (page and PDF) and matching copies, and the WAEC Nigeria FAQ, checked November 2026. WAEC's own sites do not serve the syllabus, and WAEC publishes no count per topic",
+    source: { name: "WAEC syllabus (waecsyllabus.com)", url: "https://waecsyllabus.com/mathematics/" },
+  },
   jambbio: {
     answer:
       "Biology is one of the subjects in JAMB's Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education, and is required for most medical, health, agricultural and life-science courses. The UTME is 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each of the other three subjects, Biology included, has 40. Each subject is scored out of 100, so the total is out of 400. The Biology syllabus has five sections: Variety of Organisms, Form and Functions, Ecology, Heredity and Variations, and Evolution. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",

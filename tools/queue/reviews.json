@@ -28,6 +28,18 @@
     "dktruck": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 5 }],
     "iimcat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 1 }],
     "nziqn": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 2 }],
-    "nzensf": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 5 }]
+    "nzensf": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 5 }],
+    "aufirearmsqld": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }],
+    "bcba": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 8 }],
+    "bcaba": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
+    "hspacer": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 10 }],
+    "hspachl": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }],
+    "rpt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 6 }],
+    "ascppbt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 2 }],
+    "crfsc": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
+    "cadc": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
+    "nzdrone": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }],
+    "nzham": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }],
+    "aufirearmsnsw": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }]
   }
 }

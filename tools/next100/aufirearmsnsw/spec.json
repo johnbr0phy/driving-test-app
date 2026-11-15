@@ -1,0 +1,16 @@
+{
+  "id": "aufirearmsnsw", "stateCode": "AUFANSW", "idBase": 29300, "prefix": "AUFANSW-",
+  "slug": "/nsw-firearms-licence", "landingPath": "/nsw-firearms-safety-test-practice-test", "dataFile": "data/nsw-firearms-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 80,
+  "categories": [
+    {"key": "fnswCategories", "perTest": 6, "pool": 24, "segment": "CAT"},
+    {"key": "fnswLicence", "perTest": 7, "pool": 28, "segment": "LIC"},
+    {"key": "fnswPermits", "perTest": 6, "pool": 24, "segment": "PER"},
+    {"key": "fnswOffences", "perTest": 7, "pool": 28, "segment": "OFF"},
+    {"key": "fnswStorage", "perTest": 5, "pool": 20, "segment": "STO"},
+    {"key": "fnswSafety", "perTest": 7, "pool": 28, "segment": "SAF"},
+    {"key": "fnswField", "perTest": 6, "pool": 24, "segment": "FLD"},
+    {"key": "fnswParts", "perTest": 6, "pool": 24, "segment": "PAR"}
+  ],
+  "notes": "NSW firearms safety (licence qualification) course for a first longarm licence, required by the Firearms Act 1996 s 11(3)(b). No published weights or pass mark; split is Tigertest's: law 31 (categories 6, licences 7, permits and registration 6, conditions and offences 7, storage 5) and safe use 19 (handling 7, ranges and field 6, parts and ammunition 6) of 50."
+}

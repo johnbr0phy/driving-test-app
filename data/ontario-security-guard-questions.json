@@ -1043,7 +1043,7 @@
     "question": "Why must you never use a water extinguisher on an electrical fire?",
     "optionA": "The water will freeze on contact",
     "optionB": "It makes the fire Class D",
-    "optionC": "You could get an electric shock",
+    "optionC": "It could give you a shock",
     "optionD": "It clogs the extinguisher",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1125,7 +1125,7 @@
     "questionId": "CAGUARD-EMG-017",
     "category": "caguardEmergency",
     "question": "After a break-in, what should you do until police arrive?",
-    "optionA": "Keep everyone out of the scene",
+    "optionA": "Protect the scene from entry",
     "optionB": "Tidy up the damaged area",
     "optionC": "Let staff collect their things",
     "optionD": "Count the missing stock",
@@ -1142,10 +1142,10 @@
     "optionA": "Doing only what the client asks",
     "optionB": "Acting as a reasonable person would",
     "optionC": "Protecting property over people first",
-    "optionD": "Caring for staff in your free time",
+    "optionD": "Doing what the client thinks reasonable",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Duty of care is the obligation to act as a reasonable person in your position would to avoid foreseeable harm. Failing to meet it can lead to negligence claims."
+    "explanation": "Duty of care is the obligation to act as a reasonable person in your position would to avoid foreseeable harm. The client's opinion does not set that standard. Failing to meet it can lead to negligence claims."
   },
   {
     "type": "CAGUARD",
@@ -1195,7 +1195,7 @@
     "questionId": "CAGUARD-EMG-022",
     "category": "caguardEmergency",
     "question": "A container of an unknown chemical is leaking. What should you do first?",
-    "optionA": "Mop it up with paper towels",
+    "optionA": "Get paper towels to mop it",
     "optionB": "Isolate the area and get help",
     "optionC": "Sniff it to identify it",
     "optionD": "Pour water on it to dilute it",
@@ -1267,7 +1267,7 @@
     "question": "A fire is too big to fight with an extinguisher. What should you do?",
     "optionA": "Try a second extinguisher",
     "optionB": "Open the windows to let smoke out",
-    "optionC": "Get out, closing doors behind",
+    "optionC": "Leave, closing doors behind",
     "optionD": "Wait for it to burn down",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1923,13 +1923,13 @@
     "questionId": "CAGUARD-LAW-046",
     "category": "caguardLaw",
     "question": "What does reasonable grounds mean?",
-    "optionA": "A strong hunch from your own experience",
+    "optionA": "A hunch that feels reasonable to you",
     "optionB": "Facts a reasonable person accepts",
     "optionC": "Proof beyond any doubt",
     "optionD": "An order from a manager",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Reasonable grounds are facts that would lead an ordinary, prudent person to the same belief. A hunch is not enough, and proof beyond doubt is the trial standard."
+    "explanation": "Reasonable grounds are facts that would lead an ordinary, prudent person to the same belief. A hunch is not enough, however reasonable it feels, and proof beyond doubt is the trial standard."
   },
   {
     "type": "CAGUARD",
@@ -2261,11 +2261,11 @@
     "question": "A person seems confused and frightened and is talking to people who are not there. What is the best approach?",
     "optionA": "Argue that no one is there",
     "optionB": "Stay calm, give space, get help",
-    "optionC": "Restrain them right away",
+    "optionC": "Get them out of the building",
     "optionD": "Laugh to lighten the mood",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Someone in a mental health crisis needs calm words, space and patience. Call for medical help or police if they are a danger to themselves or others."
+    "explanation": "Someone in a mental health crisis needs calm words, space and patience. Moving them out is not the aim; call for medical help or police if they are a danger to themselves or others."
   },
   {
     "type": "CAGUARD",
@@ -2470,12 +2470,12 @@
     "category": "caguardForce",
     "question": "Whether your force was reasonable is judged by:",
     "optionA": "What a reasonable person would see",
-    "optionB": "How you felt afterwards",
+    "optionB": "What you felt was reasonable",
     "optionC": "The client's opinion of what happened",
     "optionD": "How badly the person was injured",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Courts ask what a reasonable person in your position, with what you knew at the time, would have done. Hindsight and your feelings are not the test."
+    "explanation": "Courts ask what a reasonable person in your position, with what you knew at the time, would have done. Hindsight and your own feelings about what was reasonable are not the test."
   },
   {
     "type": "CAGUARD",
@@ -2542,10 +2542,10 @@
     "optionA": "Exactly equal to the force used on you",
     "optionB": "Reasonable in the circumstances",
     "optionC": "Done only after being hit",
-    "optionD": "Approved by a manager",
+    "optionD": "Reasonable in your own view",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Section 34 requires a reasonable belief that force is being used or threatened, a defensive purpose, and an act that is reasonable in the circumstances. Exact matching of force is not the test."
+    "explanation": "Section 34 requires a reasonable belief that force is being used or threatened, a defensive purpose, and an act that is reasonable in the circumstances. The court judges that objectively, not by what seemed reasonable to you alone, and exact matching of force is not the test."
   },
   {
     "type": "CAGUARD",
@@ -2707,13 +2707,13 @@
     "questionId": "CAGUARD-FAI-010",
     "category": "caguardFirstAid",
     "question": "How should you care for a casualty in shock while you wait for help?",
-    "optionA": "Sit them up with a hot drink",
+    "optionA": "Keep them sitting up, warm",
     "optionB": "Lay them down and keep warm",
     "optionC": "Walk them around for air",
     "optionD": "Give them food for energy",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Keep the person lying down, warm and still, treat the cause, and give nothing by mouth. Reassure them until paramedics arrive."
+    "explanation": "Keep the person lying down, warm and still, treat the cause, and give nothing by mouth. Sitting them up is wrong even if they are kept warm. Reassure them until paramedics arrive."
   },
   {
     "type": "CAGUARD",
@@ -2738,7 +2738,7 @@
     "optionA": "Stand them up at once",
     "optionB": "Give them a hot drink",
     "optionC": "Splash them with cold water",
-    "optionD": "Keep them lying down a while",
+    "optionD": "Let them rest lying down",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Fainting is a brief loss of responsiveness from reduced blood flow to the brain. Let them rest lying down and get help if they do not recover quickly."

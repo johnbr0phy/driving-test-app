@@ -79,7 +79,7 @@ Q = [
  "To let the heart refill", ["To rest your arms a little", "To check for a pulse", "To open the airway"],
  "Full recoil lets blood flow back into the heart so the next compression has blood to push. Leaning on the chest reduces that refill."),
 ("What is the first link in the chain of survival?",
- "Early recognition, call for help", ["Early CPR to buy some time", "Early defibrillation with an AED", "Good care after resuscitation"],
+ "Early recognition, get help", ["Early CPR to buy some time", "Early defibrillation with an AED", "Good care after resuscitation"],
  "The chain starts with recognising cardiac arrest and calling 999, then early CPR, early defibrillation and post-resuscitation care. Every later link depends on the first."),
 ("The casualty vomits during CPR. What should you do?",
  "Turn them, clear mouth, restart", ["Carry on without pausing at all", "Stop CPR and wait for help", "Give five abdominal thrusts"],

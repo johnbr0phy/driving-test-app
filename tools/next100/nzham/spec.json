@@ -1,0 +1,19 @@
+{
+  "id": "nzham", "stateCode": "NZHAM", "idBase": 29700, "prefix": "NZHAM-",
+  "slug": "/nz-amateur-radio", "landingPath": "/nz-amateur-radio-exam-practice-test",
+  "dataFile": "data/nz-amateur-radio-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 67,
+  "categories": [
+    {"key": "nzhamRegs", "perTest": 8, "pool": 32, "segment": "REG", "nzartTopics": "1 Regulations (7), 2 Frequencies (2)"},
+    {"key": "nzhamOperating", "perTest": 4, "pool": 16, "segment": "OPS", "nzartTopics": "23 General operating (1), 24 Practical operating (2), 25 Q signals (1)"},
+    {"key": "nzhamFundamentals", "perTest": 8, "pool": 32, "segment": "FUN", "nzartTopics": "3 Electronics fundamentals (2), 4 Measurement units (1), 5 Ohm's law (2), 6 Resistance (3), 7 Power (2)"},
+    {"key": "nzhamComponents", "perTest": 5, "pool": 20, "segment": "CMP", "nzartTopics": "8 AC (1), 9 Capacitors, inductors, resonance (2), 11 Semiconductors (2), 12 Device recognition (1)"},
+    {"key": "nzhamSafetyPower", "perTest": 4, "pool": 16, "segment": "PSU", "nzartTopics": "10 Safety (1), 13 Meters (1), 14 Decibels (1), 21 Power supplies (1), 22 Regulated power supplies (1)"},
+    {"key": "nzhamReceivers", "perTest": 5, "pool": 20, "segment": "RX", "nzartTopics": "15 HF station (1), 16 Receiver block diagrams (2), 17 Receiver operation (3)"},
+    {"key": "nzhamTransmitters", "perTest": 4, "pool": 16, "segment": "TX", "nzartTopics": "18 Transmitter block diagrams (2), 19 Transmitter theory (1), 20 Harmonics and parasitics (2)"},
+    {"key": "nzhamAntennas", "perTest": 5, "pool": 20, "segment": "ANT", "nzartTopics": "26 Transmission lines (2), 27 Antennas (4)"},
+    {"key": "nzhamPropagation", "perTest": 4, "pool": 16, "segment": "PRO", "nzartTopics": "28 Propagation (5)"},
+    {"key": "nzhamInterference", "perTest": 3, "pool": 12, "segment": "EMC", "nzartTopics": "29 Interference and filtering (3), 30 Digital systems (1)"}
+  ],
+  "notes": "NZART Study Guide (19/10/2025): 60 questions per paper, one from every ten in each of 30 topics, counts in brackets above. Grouped into 10 categories and scaled to 50: 9/4/10/6/5/6/5/6/5/4 of 60 becomes 8/4/8/5/4/5/4/5/4/3. Pass is 40 of 60 (67%)."
+}

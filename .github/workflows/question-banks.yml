@@ -44,6 +44,12 @@ jobs:
       - name: Bank integrity (blocking)
         run: python3 -I tools/check_banks.py
 
+      - name: No new answer patterns (blocking)
+        # A word that marks the key ("tell the supervisor" in 43 of 51 RBT
+        # scenarios, Nov 2026) or a key reused word for word. The baseline
+        # holds what older banks have today and may only shrink.
+        run: python3 -I tools/check_answer_patterns.py --all --baseline tools/answer_patterns_baseline.json
+
       - name: Freshness registry is well formed (blocking)
         run: python3 -I tools/check_freshness.py
 

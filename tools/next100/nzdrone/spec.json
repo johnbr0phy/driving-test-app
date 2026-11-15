@@ -1,0 +1,16 @@
+{
+  "id": "nzdrone", "stateCode": "NZDRONE", "idBase": 29600, "prefix": "NZDRONE-",
+  "slug": "/nz-drone-part-101", "landingPath": "/nz-drone-part-101-practice-test", "dataFile": "data/nz-drone-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 80,
+  "categories": [
+    {"key": "dronScope", "perTest": 6, "pool": 24, "segment": "SCO"},
+    {"key": "dronAerodrome", "perTest": 7, "pool": 28, "segment": "AER"},
+    {"key": "dronAirspace", "perTest": 8, "pool": 32, "segment": "AIR"},
+    {"key": "dronShielded", "perTest": 4, "pool": 16, "segment": "SHL"},
+    {"key": "dronConsent", "perTest": 7, "pool": 28, "segment": "CON"},
+    {"key": "dronSight", "perTest": 7, "pool": 28, "segment": "VIS"},
+    {"key": "dronSafety", "perTest": 7, "pool": 28, "segment": "SAF"},
+    {"key": "dronPlan", "perTest": 4, "pool": 16, "segment": "PLN"}
+  ],
+  "notes": "CAA NZ Part 101 (consolidation 22 Dec 2025, Amendment 1) and CATI 101-1 (in force 22 Dec 2025), AC101-1 Rev 2. No official exam: approved organisations under rule 101.202 set their own pilot qualification assessments. Weights are Tigertest's, following Subpart A and E and CATI 101-1. 80% is Tigertest's readiness target."
+}

@@ -9,7 +9,7 @@ import { useTestResults } from "@/hooks/useTestResults";
 import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { ResultsHeroDebrief } from "@/components/results/ResultsHeroDebrief";
 import { ResultsDebriefBody } from "@/components/results/ResultsDebriefBody";
-import { ExamConfig } from "@/lib/exams";
+import { ExamConfig, isMockTest } from "@/lib/exams";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 
 export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
@@ -34,7 +34,7 @@ export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <p className="px-4 pt-4 text-center text-sm text-gray-500 dark:text-gray-400">
-            {stateName} · {ui.testN(displayTestNumber(testId)).replace("🎯 ", "")} ·{" "}
+            {stateName} · {(isMockTest(localized, displayTestNumber(testId)) ? ui.mockN(displayTestNumber(testId) - localized.testCount) : ui.testN(displayTestNumber(testId))).replace(/^(🎯|⏱️) /u, "")} ·{" "}
             {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
           </p>
       <ResultsHeroDebrief results={results} onDrill={scrollToDrill} onNextLocked={() => {}} categoryLabels={localized.categoryLabels} />

@@ -1,0 +1,73 @@
+CAT = "nzhamReceivers"; SEG = "RX"
+# NZART Study Guide topics 15 (HF station arrangement), 16 (receiver block diagrams) and
+# 17 (receiver operation). Numbers computed and asserted. See sources.md.
+
+sig = 14.2; lo = 23.2
+if_ = lo - sig; assert abs(if_ - 9.0) < 1e-9
+image = sig + 2 * if_; assert abs(image - 32.2) < 1e-9
+sig2 = 3.7; if2 = 0.455
+lo2 = sig2 + if2; assert abs(lo2 - 4.155) < 1e-9
+beat = abs(7.031 - 7.030) * 1000; assert round(beat, 3) == 1.0
+
+Q = [
+("In a superheterodyne receiver, what does the mixer combine with the incoming signal?",
+ "The local oscillator output", ["The output of the audio amplifier", "The AGC voltage", "The detector output"],
+ "The mixer combines the signal with the local oscillator to make a new, fixed intermediate frequency (IF) where most of the gain and selectivity are provided."),
+(f"A receiver tuned to {sig} MHz uses a local oscillator on {lo} MHz. What is its intermediate frequency?",
+ f"{if_:g} MHz", ["37.4 MHz", "4.6 MHz", "18 MHz"],
+ "The IF is the difference between the oscillator and the signal: 23.2 - 14.2 = 9 MHz. The sum, 37.4 MHz, is filtered out."),
+(f"A receiver has a {if_:g} MHz IF and its oscillator is above the signal. Tuned to {sig} MHz, what is its image frequency?",
+ f"{image:g} MHz", ["23.2 MHz", "5.2 MHz", "28.4 MHz"],
+ "The image is the frequency on the far side of the oscillator by one IF, so 14.2 + 2 x 9 = 32.2 MHz. It mixes with the same oscillator to give 9 MHz too."),
+(f"A receiver with a {if2 * 1000:g} kHz IF is tuned to {sig2} MHz, with its oscillator above the signal. What is the oscillator frequency?",
+ f"{lo2:g} MHz", ["3.245 MHz", "3.7 MHz", "4.61 MHz"],
+ "With the oscillator above, LO = signal + IF = 3.7 + 0.455 = 4.155 MHz. Subtracting gives 3.245 MHz, which would put the oscillator below."),
+("Which receiver stage does most to reject the image frequency?",
+ "The RF stage before the mixer", ["The audio amplifier", "The product detector", "The automatic gain control"],
+ "Images must be removed before the mixer, because after mixing they sit on the IF with the wanted signal. Tuned RF stages ahead of the mixer do this."),
+("Why do some receivers use two intermediate frequencies?",
+ "Good image rejection and selectivity", ["To receive two bands at once", "To double the audio output", "To remove the need for any AGC at all"],
+ "A high first IF puts the image far away so it is easy to reject; a low second IF makes narrow, sharp filtering easier. Double conversion gets both."),
+("What does a receiver need to make a Morse (CW) signal audible?",
+ "A beat frequency oscillator", ["A squelch circuit", "A noise limiter", "A wider IF filter for voice"],
+ "A CW signal is a plain carrier switched on and off. The BFO beats with it in the detector to give an audio tone."),
+("Which detector is used to receive single sideband (SSB) speech?",
+ "A product detector", ["A diode envelope detector", "A ratio detector", "A discriminator"],
+ "SSB has no carrier, so the receiver must supply one from a local oscillator, mixing it with the signal in a product detector. Envelope detectors are for AM; discriminators are for FM."),
+("What kind of detector is commonly used for AM signals?",
+ "A diode envelope detector", ["A product detector", "A phase-locked loop", "A frequency counter at the IF"],
+ "An AM signal's audio is carried in the size of its envelope, so a simple diode and capacitor recover it."),
+("What does automatic gain control (AGC) do in a receiver?",
+ "Keeps the output level steady", ["Locks onto the strongest signal", "Removes the carrier", "Sets the IF bandwidth"],
+ "AGC turns the RF and IF gain down on strong signals and up on weak ones, so the volume does not jump as signals change."),
+("In a direct conversion receiver, a CW carrier is on 7.030 MHz and the local oscillator is on 7.031 MHz. What pitch is heard?",
+ f"A {beat:g} kHz tone", ["A 7 kHz tone", "A 2 kHz tone", "A 500 Hz tone"],
+ "The detector gives the difference between the signal and the oscillator: 7.031 - 7.030 MHz = 0.001 MHz, which is 1 kHz."),
+("Turning the RF gain up too far while listening on a crowded band can cause what?",
+ "Overload and false signals", ["Better image rejection", "A narrower bandwidth", "Lower background noise"],
+ "Too much gain ahead of the mixer lets strong nearby signals overload it and mix, producing intermodulation products heard as signals that are not really there."),
+("Which IF filter bandwidth suits SSB voice reception?",
+ "About 2.4 kHz", ["About 500 Hz", "About 6 kHz", "About 15 kHz"],
+ "SSB speech needs about 2.4 to 3 kHz. 500 Hz suits CW, about 6 kHz suits AM and wider filters suit FM."),
+("What is the main job of the crystal or ceramic filter in a receiver's IF?",
+ "To set the receiver's bandwidth", ["To set the oscillator's frequency", "To boost the audio level", "To protect the RF stage"],
+ "The IF filter passes only the bandwidth the mode needs and rejects signals either side, giving most of the receiver's selectivity."),
+("What does a noise blanker reduce?",
+ "Short pulses such as ignition noise", ["Interference from a steady nearby carrier", "Hum from a poor power supply", "Fading on long paths"],
+ "A noise blanker detects short, sharp pulses and switches the receiver off for their duration. It does little against steady signals or hum."),
+("In an FM receiver, what does the limiter stage do?",
+ "Removes amplitude variations", ["Sets the deviation", "Adds pre-emphasis", "Mutes the speaker"],
+ "FM carries its audio in frequency changes, so the limiter clips the signal to a constant level and strips out amplitude noise before the detector."),
+("An SSB station sounds garbled and unreadable however you tune it. What is the likely cause?",
+ "The wrong sideband is selected", ["The AGC is switched on", "The RF gain is at maximum", "The squelch is set too low for the signal"],
+ "Tuning the wrong sideband inverts the audio so speech cannot be understood. On HF, LSB is usual below 10 MHz and USB above."),
+("Why is the amplifier after a transceiver in an HF station called linear?",
+ "Its output is proportional to input", ["It works on one band only", "It uses a straight wire output", "It adds a fixed 3 dB of gain"],
+ "NZART's station notes explain that linear means the output is an exact replica of the input waveform, only bigger, which SSB needs."),
+("In an HF station, what does the antenna switch let you do?",
+ "Choose an antenna or the dummy load", ["Switch between USB and LSB", "Change from receive to transmit", "Turn the linear amplifier on"],
+ "An antenna switch selects which antenna, or the dummy load used for testing, is connected to the station."),
+("Why must an HF station's low-pass filter be rated for the station's full power?",
+ "All transmitted RF passes through it", ["It only works at full power", "It also powers the receiver", "It sets the output power"],
+ "The low-pass filter sits in line with the transmitter output, so it must handle the full power while it blocks frequencies above 30 MHz."),
+]

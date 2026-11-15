@@ -1,0 +1,16 @@
+  bcaba: {
+    answer:
+      "The BCaBA exam is the Behavior Analyst Certification Board's certification exam for Board Certified Assistant Behavior Analysts, the undergraduate-level credential in behavior analysis; BCaBAs practice under the supervision of a BCBA and may supervise RBTs. It has 175 multiple-choice questions in 4 hours, 150 scored and 25 unscored, each with 4 options and 1 correct answer, taken in English on a computer at Pearson VUE testing centers. It follows the BCaBA Test Content Outline (6th ed.): 90 tasks in 9 domains, led by behavior-change procedures (15%). The result is pass or fail against a passing score set by the modified Angoff method, not published as a percentage. Candidates may test up to 8 times in the 2-year authorization period, 30 days apart.",
+    rows: [
+      { label: "Questions", value: "175 multiple choice (150 scored, 25 unscored), 4 options each" },
+      { label: "Time", value: "4 hours" },
+      { label: "Pass mark", value: "Pass/fail; passing score set by modified Angoff, no published percentage" },
+      { label: "Content", value: "9 domains, 90 tasks (6th ed. outline)" },
+      { label: "Biggest domain", value: "Behavior-Change Procedures, 22 of 150" },
+      { label: "Retakes", value: "Up to 8 attempts in 2 years, 30 days apart" },
+      { label: "Where", value: "Pearson VUE testing centers, English only" },
+      { label: "Run by", value: "Behavior Analyst Certification Board (BACB)" },
+    ],
+    basedOn: "The BACB BCaBA Test Content Outline (6th ed.) and the BCaBA Handbook (updated October 2026), checked November 2026",
+    source: { name: "BACB: BCaBA certification", url: "https://www.bacb.com/bcaba/" },
+  },

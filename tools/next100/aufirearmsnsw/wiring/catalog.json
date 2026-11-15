@@ -1,0 +1,33 @@
+{
+  "blurb": "Practice for the NSW firearms safety course you need before a first firearms licence: the Firearms Act 1996 as in force from July 2026, licence categories, genuine reasons, permits to acquire, storage, safe handling and ranges, in four 50-question tests.",
+  "org": "NSW Police Force Firearms Registry · firearms safety course for a first licence (Firearms Act 1996)",
+  "region": "AU",
+  "group": "Australia firearms licences",
+  "aliases": [
+    "nsw firearms licence",
+    "nsw gun licence",
+    "new south wales firearms licence",
+    "new south wales gun licence",
+    "nsw firearms safety course",
+    "nsw firearms safety test",
+    "firearms licence qualification course",
+    "nsw firearms registry",
+    "firearms act 1996 nsw",
+    "nsw gun licence test",
+    "nsw firearms test",
+    "category a b firearms licence nsw",
+    "gun licence sydney",
+    "nsw permit to acquire"
+  ],
+  "related": ["aufirearmsqld", "nzfirearms", "capal"],
+  "teacherLed": false,
+  "borrowTiger": "hunter",
+  "shareTitle": "NSW Firearms Safety Practice Test",
+  "shareDescription": "Review NSW firearms law, licence categories, permits, storage and safe handling before your course.",
+  "searchTests": [
+    ["nsw firearms licence", "AU", "aufirearmsnsw"],
+    ["nsw gun licence test", "AU", "aufirearmsnsw"],
+    ["firearms safety course nsw", "AU", "aufirearmsnsw"],
+    ["firearms licence qualification course", "AU", "aufirearmsnsw"]
+  ]
+}

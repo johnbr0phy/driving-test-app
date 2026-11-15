@@ -1,0 +1,12 @@
+{
+  "blurb": "BACB Board Certified Assistant Behavior Analyst exam on the 6th edition outline: principles, measurement, ethics, assessment, behavior-change procedures, intervention monitoring and supervision.",
+  "org": "BACB · BCaBA Test Content Outline (6th ed.)",
+  "group": "Healthcare certification exams",
+  "aliases": ["bcaba", "bcaba exam", "board certified assistant behavior analyst", "assistant behavior analyst", "bacb bcaba", "bcaba 6th edition", "bcaba mock exam"],
+  "teacherLed": true,
+  "teaches": "an undergraduate BCaBA course sequence",
+  "borrowTiger": "rbt",
+  "shareTitle": "Free BCaBA Practice Test",
+  "shareDescription": "200 original questions on the BCaBA Test Content Outline (6th ed.), with explanations.",
+  "searchTests": [["bcaba", "US", "bcaba"], ["board certified assistant behavior analyst", "US", "bcaba"], ["bcaba practice exam", "US", "bcaba"], ["assistant behavior analyst exam", "US", "bcaba"]]
+}

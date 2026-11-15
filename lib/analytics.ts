@@ -2,6 +2,7 @@ import { auth } from "@/lib/firebase";
 import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
 import { getBrowserId, trackEnrollment } from "@/lib/enrollment";
 import { trackFunnelStep } from "@/lib/funnel";
+import { noteLandingTryPurchase } from "@/lib/landingTryTest";
 import { isInternalBrowser } from "@/lib/internal";
 import { knownPremiumPrice } from "@/lib/localPrice";
 import { USD_PRICE } from "@/lib/pricing";
@@ -180,6 +181,7 @@ export function trackPaywallDismissed(location = "dashboard") {
 }
 
 export function trackPurchase(transactionId: string) {
+  noteLandingTryPurchase();
   const first = checkoutAttribution();
   window.gtag?.("event", "purchase", {
     transaction_id: transactionId,
@@ -191,8 +193,8 @@ export function trackPurchase(transactionId: string) {
 
 // The in-training sign-up prompt (components/GuestPromptStep): shown, skipped,
 // or one of its buttons tapped. where: "training" (v1 exam sets) | "drill" (v2).
-/** A DMV state set on the dashboard: from its picker, or from a state landing's ?state= link. */
-export function trackStateSelected(state: string, via: "picker" | "link") {
+/** A DMV state set on the dashboard: from its picker, a state landing's ?state= link, or the visitor's IP state. */
+export function trackStateSelected(state: string, via: "picker" | "link" | "geo") {
   window.gtag?.("event", "state_selected", { state, via });
   if (via === "picker") trackFunnelStep("dmv_state");
 }

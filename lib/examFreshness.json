@@ -420,6 +420,14 @@
       "what": "The Nursing Council's IQN theoretical examination handbook (version 1.5, October 2026) is due for review in September 2027.",
       "action": "Read the new handbook: check question counts, times, the Part A and Part B scope and any published pass rules, then update the config, examFacts and landing.",
       "source": "https://www.nursingcouncil.org.nz/common/Uploaded%20files/Public/Nursing/IQN/Handbook-IQN-Theoretical-Exam-October2026.pdf"
+    },
+    {
+      "exam": "hspachl",
+      "date": "2026-12-15",
+      "kind": "outline",
+      "what": "HSPA launches the new CHL exam form on the 2026 content outline (25/23/29/23).",
+      "action": "Confirm the live form matches the 2026 outline weights and the handbook's section names; adjust if HSPA changed them.",
+      "source": "https://myhspa.org/wp-content/uploads/2026/03/HSPA_CHL_Content_Outline_2026.pdf"
     }
   ]
 }

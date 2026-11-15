@@ -17,13 +17,13 @@ const COPY: Record<Language, ExamPaywallCopy> = {
     premium: (s) => [
       `The final ${s} training step and practice test`,
       `Full stats on every ${s} question you miss`,
-      "The same on every other Tigertest exam, the DMV included",
+      "The same on every other Tigertest exam",
       "One payment, yours forever",
     ],
     stats: (n, s) => [
       `See your accuracy on all ${n} ${s} questions`,
       "See what you keep getting wrong, worst first",
-      "Full stats on every exam, the DMV included",
+      "Full stats on every Tigertest exam",
       "One payment, yours forever",
     ],
   },
@@ -31,13 +31,13 @@ const COPY: Record<Language, ExamPaywallCopy> = {
     premium: (s) => [
       `El último paso de práctica y el último examen de ${s}`,
       `Estadísticas completas de cada pregunta de ${s} que falles`,
-      "Lo mismo en todos los demás exámenes de Tigertest, incluido el DMV",
+      "Lo mismo en todos los demás exámenes de Tigertest",
       "Un solo pago, tuyo para siempre",
     ],
     stats: (n, s) => [
       `Mira tu precisión en las ${n} preguntas de ${s}`,
       "Mira en qué sigues fallando, de peor a mejor",
-      "Estadísticas completas en todos los exámenes, incluido el DMV",
+      "Estadísticas completas en todos los exámenes de Tigertest",
       "Un solo pago, tuyo para siempre",
     ],
   },
@@ -45,13 +45,13 @@ const COPY: Record<Language, ExamPaywallCopy> = {
     premium: (s) => [
       `Bước luyện tập cuối và bài thi thử cuối của ${s}`,
       `Thống kê đầy đủ cho mọi câu ${s} bạn làm sai`,
-      "Tương tự với mọi bài thi khác trên Tigertest, kể cả DMV",
+      "Tương tự với mọi bài thi khác trên Tigertest",
       "Trả một lần, dùng mãi mãi",
     ],
     stats: (n, s) => [
       `Xem độ chính xác của bạn trên cả ${n} câu hỏi ${s}`,
       "Xem những câu bạn hay sai, sai nhiều nhất trước",
-      "Thống kê đầy đủ cho mọi bài thi, kể cả DMV",
+      "Thống kê đầy đủ cho mọi bài thi trên Tigertest",
       "Trả một lần, dùng mãi mãi",
     ],
   },
@@ -59,13 +59,13 @@ const COPY: Record<Language, ExamPaywallCopy> = {
     premium: (s) => [
       `${s} 마지막 학습 단계와 마지막 모의고사`,
       `틀린 ${s} 문제마다 전체 통계`,
-      "DMV를 포함한 Tigertest의 다른 모든 시험에도 똑같이 적용",
+      "Tigertest의 다른 모든 시험에도 똑같이 적용",
       "한 번 결제로 평생 이용",
     ],
     stats: (n, s) => [
       `${s} 문제 ${n}개 전체의 정답률 보기`,
       "자주 틀리는 문제를 많이 틀린 순서로 보기",
-      "DMV를 포함한 모든 시험의 전체 통계",
+      "Tigertest 모든 시험의 전체 통계",
       "한 번 결제로 평생 이용",
     ],
   },
@@ -73,13 +73,13 @@ const COPY: Record<Language, ExamPaywallCopy> = {
     premium: (s) => [
       `${s} 的最后一个练习步骤和最后一套模拟题`,
       `每道答错的 ${s} 题目的完整统计`,
-      "Tigertest 上的其他所有考试同样解锁，包括 DMV",
+      "Tigertest 上的其他所有考试同样解锁",
       "一次付款，永久使用",
     ],
     stats: (n, s) => [
       `查看全部 ${n} 道 ${s} 题目的正确率`,
       "查看你反复答错的题目，错得最多的排在前面",
-      "所有考试的完整统计，包括 DMV",
+      "Tigertest 所有考试的完整统计",
       "一次付款，永久使用",
     ],
   },
@@ -255,4 +255,15 @@ const COPY: Record<Language, ExamPaywallCopy> = {
 
 export function examPaywallCopy(lang: Language): ExamPaywallCopy {
   return COPY[lang] ?? COPY.en;
+}
+
+/**
+ * The locked step's paywall bullets for one exam. An exam with its own
+ * `premiumBenefits` (English only) lists them, then the generic last line
+ * ("One payment, yours forever").
+ */
+export function examPremiumBullets(exam: { shortName: string; premiumBenefits?: string[] }, lang: Language): string[] {
+  const bullets = examPaywallCopy(lang).premium(exam.shortName);
+  if (lang === "en" && exam.premiumBenefits?.length) return [...exam.premiumBenefits, bullets[bullets.length - 1]];
+  return bullets;
 }

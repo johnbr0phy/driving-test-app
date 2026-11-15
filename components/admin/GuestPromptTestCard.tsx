@@ -122,7 +122,7 @@ function DesignPreviews() {
   const noop = () => {};
   return (
     <details className="mt-3">
-      <summary className="cursor-pointer text-sm font-semibold text-gray-900 dark:text-gray-50">See the ten designs</summary>
+      <summary className="cursor-pointer text-sm font-semibold text-gray-900 dark:text-gray-50">See the variations: all ten designs</summary>
       <div className="mt-3 grid gap-4 sm:grid-cols-2">
         {GUEST_PROMPT_VARIANTS.map((v) => {
           const Design = GUEST_PROMPT_DESIGNS[v];

@@ -22,6 +22,7 @@ import {
   examFamilyId,
   examSetBase,
   examTestIds,
+  examTestTotal,
   trainingPartName,
 } from "@/lib/exams";
 import { lockedTestIds, lockedTrainingParts } from "@/lib/examLocks";
@@ -108,6 +109,8 @@ const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
  * not English, so those exams get a plain description instead.
  */
 function v1PremiumBenefits(exam: ExamConfig): string[] {
+  // An exam that lists its own Premium (mocks and all) says it best.
+  if (exam.premiumBenefits?.length) return exam.premiumBenefits.map(esc);
   const english = !exam.language || exam.language === "en";
   const parts = lockedTrainingParts(exam);
   const ids = examTestIds(exam);
@@ -141,7 +144,7 @@ function voiceForExam(exam: ExamConfig): EmailVoice {
     fullName: exam.fullName,
     questionsPerTest: exam.questionsPerTest,
     testCount: exam.testCount,
-    stepCount: examTrainingParts(exam).length + exam.testCount,
+    stepCount: examTrainingParts(exam).length + examTestTotal(exam),
     passPct: exam.passPct,
     dashboardPath: `${exam.slug}/dashboard`,
     statsPath: `${exam.slug}/stats`,

@@ -1,8 +1,9 @@
 import { Question } from "@/types";
 import { shuffleQuestionOptions } from "./shuffleOptions";
-import { ExamConfig, trainingPartOf } from "./exams";
+import { ExamConfig, examTestTotal, isMockTest, trainingPartOf } from "./exams";
 import { getExamQuestions } from "./examData";
 import type { Language } from "@/i18n";
+import { mixTrainingOrder } from "./trainingOrder";
 
 function shuffle<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -31,14 +32,33 @@ export function generateExamTest(exam: ExamConfig, testNumber: number, language?
 
 /** Practice test N's fixed questions, unshuffled (blueprint order). */
 export function examTestQuestions(exam: ExamConfig, testNumber: number, language?: Language): Question[] {
-  if (testNumber < 1 || testNumber > exam.testCount) {
-    throw new Error(`Test number must be between 1 and ${exam.testCount}`);
+  if (testNumber < 1 || testNumber > examTestTotal(exam)) {
+    throw new Error(`Test number must be between 1 and ${examTestTotal(exam)}`);
   }
+  if (isMockTest(exam, testNumber)) return mockQuestions(exam, testNumber - exam.testCount, language);
   const questions: Question[] = [];
   for (const [category, perTest] of Object.entries(exam.blueprint)) {
     const pool = getCategoryQuestions(exam, category, language);
     const start = (testNumber - 1) * perTest;
     questions.push(...pool.slice(start, start + perTest));
+  }
+  return questions;
+}
+
+/**
+ * Full-length mock M: per category, an even spread across the whole pool
+ * (position floor((j * count + M - 1) * pool / (count * per))), so each mock
+ * mixes old and new questions and two mocks never share one.
+ */
+function mockQuestions(exam: ExamConfig, mock: number, language?: Language): Question[] {
+  const { count, blueprint } = exam.mockExams!;
+  const questions: Question[] = [];
+  for (const [category, per] of Object.entries(blueprint)) {
+    const pool = getCategoryQuestions(exam, category, language);
+    for (let j = 0; j < per; j++) {
+      const q = pool[Math.floor(((j * count + mock - 1) * pool.length) / (count * per))];
+      if (q) questions.push(q);
+    }
   }
   return questions;
 }
@@ -61,8 +81,14 @@ export function getExamTrainingSetQuestions(
   }
   return getExamQuestions(exam.id, language)
     .filter((q) => def.categories.includes(q.category))
+    .filter((q) => !exam.trainingExcludePrefix || !q.questionId.startsWith(exam.trainingExcludePrefix))
     .filter((q) => part === undefined || trainingPartOf(def.id, q.questionId) === part)
     .sort((a, b) => a.questionId.localeCompare(b.questionId));
+}
+
+/** A set's (or part's) questions in the order training asks them: mixed, see lib/trainingOrder.ts. */
+export function examTrainingAskOrder(questions: Question[]): Question[] {
+  return mixTrainingOrder(questions, (q) => q.questionId, (q) => q.category);
 }
 
 /** Next unmastered question in a set; wrong answers are re-queued to the back. */
@@ -75,7 +101,7 @@ export function getNextExamTrainingSetQuestion(
   part?: number,
   language?: Language
 ): Question | null {
-  const questions = getExamTrainingSetQuestions(exam, setNumber, part, language);
+  const questions = examTrainingAskOrder(getExamTrainingSetQuestions(exam, setNumber, part, language));
   let unmastered = questions.filter((q) => !masteredIds.includes(q.questionId));
   if (unmastered.length === 0) return null;
   if (currentQuestionId && unmastered.length > 1) {

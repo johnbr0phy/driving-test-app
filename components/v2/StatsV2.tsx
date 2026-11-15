@@ -135,7 +135,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
           `Your full ${exam.shortName} study plan, every topic ranked by the points it's worth`,
           "The exact skills you keep missing in each topic",
           "Every mistake saved, to retry until it sticks",
-          "Full stats on every exam, the DMV included",
+          "Full stats on every Tigertest exam",
           "One payment, yours forever",
         ]}
         isGuest={isGuest}

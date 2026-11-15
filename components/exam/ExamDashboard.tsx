@@ -8,6 +8,7 @@
 // and miss drill. The last quarter of the dashboard is Premium
 // (lib/examLocks.ts); everything before them is free.
 
+import { examStepGroups } from "@/lib/examLocks";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -21,7 +22,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
 import { computeMissSummary } from "@/lib/missedQuestions";
-import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, trainingPartName, trainingPartOf } from "@/lib/exams";
+import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, examTestLength, getExamById, examTrainingParts, getExamVariant, isMockTest, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { useTestSetMigration } from "@/hooks/useTestSetMigration";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
@@ -83,7 +84,10 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
 
   useTestSetMigration(source);
 
-  const PASS_SCORE = Math.ceil((exam.passPct / 100) * exam.questionsPerTest);
+  // A full-length mock has its own length (ExamConfig.mockExams), so the pass
+  // line is per test.
+  const testLength = (testId: number) => examTestLength(exam, testId - exam.idBase);
+  const passScoreFor = (testId: number) => Math.ceil((exam.passPct / 100) * testLength(testId));
 
   const missSummary = computeMissSummary(hydrated ? completedTests : [], exam.stateCode, routes.testIds);
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
@@ -178,7 +182,7 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
       }
     } else if (match?.[1] === "test") {
       const testId = routes.testIds.find((id) => routes.displayTestNumber(id) === Number(match[2]));
-      if (testId && (getTestAttemptStats(testId)?.bestScore ?? -1) >= PASS_SCORE) {
+      if (testId && (getTestAttemptStats(testId)?.bestScore ?? -1) >= passScoreFor(testId)) {
         rowId = `test-${Number(match[2])}`;
       }
     }
@@ -196,7 +200,7 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
   const testComplete = (testId: number) => {
     if (!hydrated) return false;
     const stats = getTestAttemptStats(testId);
-    return stats ? stats.bestScore >= PASS_SCORE : false;
+    return stats ? stats.bestScore >= passScoreFor(testId) : false;
   };
 
   const completedSteps = [
@@ -208,27 +212,12 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     completedSteps > 0 ||
     exam.trainingSets.some((s) => hydrated && getTrainingSetProgress(s.id).correct > 0);
 
-  // Train, test, train, test. Test i follows training step ceil((i+1)*P/T),
-  // so equal counts pair up one to one (the DMV layout), more training than
-  // tests puts a test after every few steps, and more tests than training
-  // puts several tests after each set. The last step is always a test. Only
-  // the order on screen changes: progress is stored by set and test ID.
-  const stepGroups: { parts: TrainingPart[]; testIds: number[] }[] = [];
-  if (parts.length === 0) {
-    stepGroups.push({ parts: [], testIds: [...routes.testIds] });
-  } else {
-    parts.forEach((p) => {
-      const last = stepGroups[stepGroups.length - 1];
-      if (last && last.testIds.length === 0) last.parts.push(p);
-      else stepGroups.push({ parts: [p], testIds: [] });
-      const after = stepGroups[stepGroups.length - 1];
-      const partsSoFar = stepGroups.reduce((n, g) => n + g.parts.length, 0);
-      routes.testIds.forEach((testId, i) => {
-        const slot = Math.ceil(((i + 1) * parts.length) / routes.testIds.length);
-        if (slot === partsSoFar) after.testIds.push(testId);
-      });
-    });
-  }
+  // Train, test, train, test (lib/examLocks.ts examStepGroups, which the
+  // Premium locks read too): test i follows training step ceil((i+1)*P/T),
+  // so the last step is always a test, and an exam with a Premium content
+  // block (premiumFrom) shows its free steps first. Only the order on screen
+  // changes: progress is stored by set and test ID.
+  const stepGroups = examStepGroups(exam);
 
   // One card per training step and per practice test; the list below puts
   // them in order.
@@ -267,7 +256,9 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     const n = routes.displayTestNumber(testId);
     const stats = hydrated ? getTestAttemptStats(testId) : undefined;
     const bestRaw = stats?.bestScore ?? null;
-    const bestPct = bestRaw !== null ? Math.round((bestRaw / exam.questionsPerTest) * 100) : null;
+    const len = testLength(testId);
+    const mock = isMockTest(exam, n);
+    const bestPct = bestRaw !== null ? Math.round((bestRaw / len) * 100) : null;
     const completed = testComplete(testId);
     const current = hydrated ? getCurrentTest(testId) : undefined;
     const answeredCount = Object.keys(current?.answers ?? {}).length;
@@ -285,9 +276,11 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     const locked = locks.testLocked(testId);
 
     // The translated string only covers 50-question tests (ham has 35, CA real estate 150).
-    let subtitle = exam.questionsPerTest === 50 ? t("testCard.fiftyQuestions") : ui.questionsCount(exam.questionsPerTest);
+    let subtitle = mock
+      ? ui.mockSub(len, exam.mockExams!.minutes)
+      : len === 50 ? t("testCard.fiftyQuestions") : ui.questionsCount(len);
     if (activelyInProgress) {
-      subtitle = `${answeredCount}/${exam.questionsPerTest} ${t("testCard.answered")}`;
+      subtitle = `${answeredCount}/${len} ${t("testCard.answered")}`;
     } else if (completed && bestPct !== null) {
       subtitle = `${t("dashboard.bestScore")}: ${bestPct}%`;
     } else if (bestPct !== null) {
@@ -298,15 +291,15 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     if (activelyInProgress) {
       stamp = { label: t("dashboard.stampContinue"), color: "amber" };
     } else if (bestRaw !== null) {
-      if (bestRaw === exam.questionsPerTest) stamp = { label: t("dashboard.stampMastered"), color: "green" };
-      else if (bestRaw >= PASS_SCORE) stamp = { label: t("dashboard.stampPassed"), color: "green" };
+      if (bestRaw === len) stamp = { label: t("dashboard.stampMastered"), color: "green" };
+      else if (bestRaw >= passScoreFor(testId)) stamp = { label: t("dashboard.stampPassed"), color: "green" };
       else stamp = { label: t("dashboard.stampKeepGoing"), color: "amber" };
     }
 
     return (
       <div id={`test-${n}`} className={`scroll-mt-24 rounded-lg ${highlightedStep === `test-${n}` ? "ring-2 ring-green-500 ring-offset-4 ring-offset-white dark:ring-offset-gray-950" : ""}`}>
         <ProgressCard
-          title={exam.testCount === 1 ? ui.fullLengthExam : ui.testN(n)}
+          title={mock ? ui.mockN(n - exam.testCount) : exam.testCount === 1 ? ui.fullLengthExam : ui.testN(n)}
           subtitle={subtitle}
           completed={completed}
           stepNumber={stepNumber}
@@ -315,7 +308,7 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
           href={locked || hasAttempts ? undefined : routes.test(testId)}
           onClick={
             locked
-              ? () => paywall.open(`test_${n}`, `Practice Test ${n}`)
+              ? () => paywall.open(`test_${n}`, mock ? `Full-length mock ${n - exam.testCount}` : `Practice Test ${n}`)
               : hasAttempts
                 ? () => setExpandedTest(isExpanded ? null : testId)
                 : undefined

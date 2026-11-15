@@ -6,6 +6,7 @@ import questionsDataVi from "@/data/questions_vi.json";
 import questionsDataKo from "@/data/questions_ko.json";
 import questionsDataZh from "@/data/questions_zh.json";
 import { shuffleQuestionOptions } from "./shuffleOptions";
+import { mixTrainingOrder } from "./trainingOrder";
 
 export { shuffleQuestionOptions };
 
@@ -177,7 +178,13 @@ export function getNextTrainingSetQuestion(
   currentQuestionId: string | null = null,
   language: Language = 'en'
 ): Question | null {
-  const questions = getTrainingSetQuestions(setNumber, state, language);
+  // Asked mixed (lib/trainingOrder.ts), not in ID order, so one topic never comes in a long run.
+  // State questions keep their own group so they spread through the set too.
+  const questions = mixTrainingOrder(
+    getTrainingSetQuestions(setNumber, state, language),
+    (q) => q.questionId,
+    (q) => (q.type === "State-Specific" ? `state:${q.category}` : q.category)
+  );
 
   // Find questions not yet mastered
   let unmasteredQuestions = questions.filter(q => !masteredIds.includes(q.questionId));

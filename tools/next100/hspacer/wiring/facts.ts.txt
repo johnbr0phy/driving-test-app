@@ -1,0 +1,16 @@
+  hspacer: {
+    answer:
+      "The Certified Endoscope Reprocessor (CER) exam is the Healthcare Sterile Processing Association's (HSPA) certification exam for people who pre-clean, leak test, clean, inspect, disinfect or sterilize, transport and store endoscopes. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. CER is a standalone certification: the CRCST is not required, but candidates need at least three months of hands-on endoscope reprocessing experience within the past three years, and certification is renewed every year with continuing education.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Set number of scored questions correct (Angoff method); no percentage published" },
+      { label: "Largest section", value: "Endoscope processing steps, 32%" },
+      { label: "Eligibility", value: "Three months of hands-on endoscope reprocessing within the past three years" },
+      { label: "Where", value: "Computer based at Prometric test centers" },
+      { label: "Renewal", value: "Every year, with continuing education" },
+      { label: "Run by", value: "Healthcare Sterile Processing Association (HSPA)" },
+    ],
+    basedOn: "HSPA's CER Exam Content Outline (revised May 2022) and Certification Handbook (revised January 2026), checked November 2026",
+    source: { name: "HSPA: Certified Endoscope Reprocessor (CER)", url: "https://myhspa.org/certification/certification-overview/certified-endoscope-reprocessor-cer/" },
+  },

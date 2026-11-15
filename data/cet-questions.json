@@ -35,11 +35,11 @@
     "question": "During a 12-lead, the QRS complexes in V2 through V4 are so tall they run into the leads above and below. The technician should:",
     "optionA": "Set paper speed to 50 mm/s",
     "optionB": "Trim the tall complexes when mounting",
-    "optionC": "Move V2 through V4 one space lower",
+    "optionC": "Halve the gain but do not note it",
     "optionD": "Set gain to 5 mm/mV and note it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Halving the gain to 5 mm/mV shrinks the complexes to fit, and the half-height standardization mark documents the change. Faster paper speed widens complexes but does not shorten them, and moving electrodes creates a nonstandard tracing."
+    "explanation": "Halving the gain to 5 mm/mV shrinks the complexes to fit, and the half-height standardization mark and a note document the change; an unnoted gain change makes the voltages look falsely low. Faster paper speed widens complexes but does not shorten them."
   },
   {
     "type": "CET",
@@ -187,13 +187,13 @@
     "questionId": "CET-ACQ-014",
     "category": "ekgAcquisition",
     "question": "A patient with heart failure becomes short of breath when lying flat for her 12-lead. The technician should:",
-    "optionA": "Keep her flat so the tracing is standard",
+    "optionA": "Keep her flat and note her breathlessness",
     "optionB": "Raise the head of the bed and note it",
     "optionC": "Postpone the test until she can lie flat",
     "optionD": "Seat her upright with legs dangling",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Semi-Fowler's position eases dyspnea, and the position is noted because it can change the tracing's appearance. Forcing her flat risks distress and movement artifact."
+    "explanation": "Semi-Fowler's position eases dyspnea, and the position is noted because it can change the tracing's appearance. Keeping her flat, even with a note, risks distress and movement artifact."
   },
   {
     "type": "CET",
@@ -526,10 +526,10 @@
     "optionA": "Move V1 lower to keep them even",
     "optionB": "Omit V2 from the tracing entirely",
     "optionC": "Note the altered position on the tracing",
-    "optionD": "Leave it unnoted, since the change is small",
+    "optionD": "Note it only in the chart, not the tracing",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Any deviation from standard placement is documented on the tracing so the reader does not misread changes and later tracings can match it. Leaving it unnoted can mimic a real R wave change."
+    "explanation": "Any deviation from standard placement is documented on the tracing itself so the reader does not misread changes and later tracings can match it. A note kept only in the chart never reaches the person reading the tracing, and an unnoted change can mimic a real R wave change."
   },
   {
     "type": "CET",
@@ -2246,12 +2246,12 @@
     "category": "ekgSafetyPatientCare",
     "question": "A patient with an IV infusion running asks the technician to slow the pump because her arm aches. The technician should:",
     "optionA": "Slow the pump slightly to ease the discomfort",
-    "optionB": "Pause the infusion pump until the nurse can come and check",
+    "optionB": "Pause the pump and notify the nurse",
     "optionC": "Notify the nurse; infusion changes are outside scope",
     "optionD": "Remove the IV catheter and apply pressure",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Changing medications or infusion rates is outside an EKG technician's scope, so the concern goes to the nurse. Even pausing the pump alters the ordered therapy."
+    "explanation": "Changing medications or infusion rates is outside an EKG technician's scope, so the concern goes to the nurse. Even pausing the pump alters the ordered therapy, so notifying the nurse after pausing it is still wrong."
   },
   {
     "type": "CET",
@@ -2513,11 +2513,11 @@
     "question": "Before a stress test, a patient's blood pressure is 188/124 and he reports a severe headache. The technician should:",
     "optionA": "Start the test, since exercise usually lowers blood pressure",
     "optionB": "Notify the provider immediately and not start the test",
-    "optionC": "Recheck it in an hour after a meal",
+    "optionC": "Start the warm-up, then notify the provider",
     "optionD": "Record it and begin the warm-up stage",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A reading over 180/120 is a hypertensive crisis, and with symptoms it needs immediate provider attention. Exercise raises blood pressure further, so the test must not begin."
+    "explanation": "A reading over 180/120 is a hypertensive crisis, and with symptoms it needs immediate provider attention before any exercise. Exercise raises blood pressure further, so the test must not begin, not even the warm-up."
   },
   {
     "type": "CET",
@@ -2667,11 +2667,11 @@
     "question": "While being prepped for an EKG, a patient becomes pale, sweaty, short of breath, and confused. The technician should:",
     "optionA": "Finish the EKG first, then tell the nurse",
     "optionB": "Stay with the patient and call for help immediately",
-    "optionC": "Give the patient water and recheck in 10 minutes",
+    "optionC": "Stay and finish the EKG before calling",
     "optionD": "Leave to find the nurse at the station",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Diaphoresis, dyspnea, and altered mental status are signs of cardiopulmonary compromise, so the technician summons help without leaving the patient. Leaving the room means no one is there if the patient deteriorates."
+    "explanation": "Diaphoresis, dyspnea, and altered mental status are signs of cardiopulmonary compromise, so the technician summons help at once without leaving the patient. Finishing the EKG first delays help, and leaving the room means no one is there if the patient deteriorates."
   },
   {
     "type": "CET",
@@ -2778,12 +2778,12 @@
     "category": "ekgSafetyPatientCare",
     "question": "A monitored patient's rhythm suddenly becomes chaotic, irregular waves with no identifiable QRS complexes, and the patient is unresponsive. The technician should:",
     "optionA": "Leave to print the strip for the nurse",
-    "optionB": "Check the electrodes and wait for it to clear",
+    "optionB": "Stay and check the electrodes first",
     "optionC": "Stay, call for help, and begin CPR if pulseless",
     "optionD": "Defibrillate manually using the crash cart",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Chaotic waves without QRS complexes in an unresponsive patient indicate ventricular fibrillation, so the technician stays, activates the emergency response, and starts BLS. Assuming artifact wastes time in an unresponsive patient, and manual defibrillation is beyond the technician's role unless trained and permitted."
+    "explanation": "Chaotic waves without QRS complexes in an unresponsive patient indicate ventricular fibrillation, so the technician stays, activates the emergency response, and starts BLS. Checking for artifact first wastes time in an unresponsive patient, and manual defibrillation is beyond the technician's role unless trained and permitted."
   },
   {
     "type": "CET",

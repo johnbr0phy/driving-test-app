@@ -1,0 +1,9 @@
+AUFANSW
+fnswCategories
+fnswLicence
+fnswPermits
+fnswOffences
+fnswStorage
+fnswSafety
+fnswField
+fnswParts

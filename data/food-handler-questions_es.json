@@ -469,7 +469,7 @@
     "question": "Un inspector de salud llega durante la hora pico del almuerzo y empieza a hacerle preguntas a un cocinero de línea. ¿A quién debe llamar el cocinero?",
     "optionA": "Al lavaplatos más cercano a la puerta",
     "optionB": "Al empleado más nuevo del turno",
-    "optionC": "A la persona a cargo en turno",
+    "optionC": "A la persona a cargo de ese turno",
     "optionD": "A un cliente habitual en el mostrador",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -495,7 +495,7 @@
     "questionId": "FH-BAS-036",
     "category": "fhBasics",
     "question": "El médico de una cocinera de preparación le diagnostica hepatitis A. ¿Qué debe hacer primero?",
-    "optionA": "Avisar a la persona a cargo de inmediato",
+    "optionA": "Informar el diagnóstico de inmediato",
     "optionB": "Mantenerlo en privado y usar guantes en el trabajo",
     "optionC": "Esperar hasta su próximo turno programado",
     "optionD": "Contárselo solo a su compañero de trabajo más cercano",
@@ -525,11 +525,11 @@
     "question": "Un lavaplatos nota que el termómetro de la cámara frigorífica marca 50 F durante el turno. ¿Qué debe hacer?",
     "optionA": "Desconectar la cámara y volver a conectarla",
     "optionB": "Avisar a la persona a cargo de inmediato",
-    "optionC": "Esperar al siguiente registro de temperatura programado",
+    "optionC": "Avisar a la persona a cargo al final del turno",
     "optionD": "Ignorarlo a menos que la comida huela mal",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Cualquier problema de inocuidad de los alimentos, como una cámara frigorífica por encima de 41 F (5 °C), debe informarse de inmediato a la persona a cargo. Los alimentos pueden ser peligrosos aunque huelan normal."
+    "explanation": "Cualquier problema de inocuidad de los alimentos, como una cámara frigorífica por encima de 41 F (5 °C), debe informarse de inmediato a la persona a cargo, mientras todavía se pueden salvar los alimentos. Esperar al final del turno deja los alimentos en la zona de peligro, y pueden ser peligrosos aunque huelan normal."
   },
   {
     "type": "FOODHANDLER",
@@ -1000,12 +1000,12 @@
     "category": "fhCleaning",
     "question": "Las aguas negras empiezan a salir por una coladera del piso de la cocina durante el servicio de la cena. ¿Qué debe hacer el personal?",
     "optionA": "Trapearlas y seguir cocinando",
-    "optionB": "Tapar la coladera con una charola",
+    "optionB": "Seguir cocinando y avisar al gerente después del servicio",
     "optionC": "Echar desinfectante en la coladera y continuar",
     "optionD": "Suspender el servicio y avisar al gerente",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Un regreso de aguas negras es un peligro inminente para la salud, así que se suspende el servicio y el gerente se comunica con el departamento de salud. Trapear o desinfectar mientras se sigue cocinando puede esparcir las aguas negras sobre los alimentos y el equipo."
+    "explanation": "Un regreso de aguas negras es un peligro inminente para la salud, así que se suspende el servicio de inmediato y el gerente se comunica con el departamento de salud. Esperar a que termine el servicio, o trapear o desinfectar mientras se sigue cocinando, puede esparcir las aguas negras sobre los alimentos y el equipo."
   },
   {
     "type": "FOODHANDLER",
@@ -1016,10 +1016,10 @@
     "optionA": "Limpiar la tabla con un trapo seco",
     "optionB": "Lavar, enjuagar y desinfectar la tabla",
     "optionC": "Voltear la tabla y usar el otro lado",
-    "optionD": "Enjuagar la tabla con agua caliente",
+    "optionD": "Lavar la tabla solo con jabón",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El pollo crudo deja patógenos en la tabla, así que se debe lavar, enjuagar y desinfectar antes de que la toquen alimentos listos para comer. Enjuagar o voltear la tabla no elimina ni mata los microbios que quedan."
+    "explanation": "El pollo crudo deja patógenos en la tabla, así que se debe lavar, enjuagar y desinfectar antes de que la toquen alimentos listos para comer. Lavarla solo con jabón omite la desinfección, y limpiarla o voltearla deja los microbios en la tabla."
   },
   {
     "type": "FOODHANDLER",
@@ -1449,11 +1449,11 @@
     "question": "Un cocinero ha estado preparando sándwiches de crema de cacahuate y ahora debe preparar uno para un cliente con alergia al cacahuate. ¿Qué debe hacer primero?",
     "optionA": "Lavarse las manos y ponerse guantes nuevos",
     "optionB": "Limpiar los guantes con una toalla",
-    "optionC": "Enjuagar los guantes con agua corriente",
+    "optionC": "Lavar los guantes y dejárselos puestos",
     "optionD": "Usar los mismos guantes, pero un cuchillo nuevo",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "La proteína del cacahuate se queda en los guantes y las manos, así que el cocinero debe lavarse las manos y cambiarse los guantes antes de preparar el pedido sin alérgenos. Limpiar o enjuagar los guantes no elimina el alérgeno."
+    "explanation": "La proteína del cacahuate se queda en los guantes y las manos, así que el cocinero debe lavarse las manos y cambiarse los guantes antes de preparar el pedido sin alérgenos. Lavar o limpiar los guantes usados no elimina el alérgeno, y los guantes desechables nunca se lavan para reutilizarlos."
   },
   {
     "type": "FOODHANDLER",
@@ -1534,10 +1534,10 @@
     "optionA": "Ignorarlo, porque probablemente es un proveedor",
     "optionB": "Avisar al gerente de inmediato",
     "optionC": "Pedirle que ayude a descargar la entrega",
-    "optionD": "Esperar al final del turno para mencionarlo",
+    "optionD": "Avisar al gerente al final del turno",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La defensa de los alimentos significa mantener a las personas no autorizadas lejos de los alimentos y del almacén para prevenir la contaminación intencional. Suponer que es un proveedor o esperar deja sin revisar una posible amenaza."
+    "explanation": "La defensa de los alimentos significa mantener a las personas no autorizadas lejos de los alimentos y del almacén para prevenir la contaminación intencional, así que el gerente debe saberlo de inmediato. Suponer que es un proveedor o esperar al final del turno deja sin revisar una posible amenaza."
   },
   {
     "type": "FOODHANDLER",
@@ -1562,10 +1562,10 @@
     "optionA": "Dejar de preparar ahí y avisar al gerente",
     "optionB": "Cubrir la mesa con plástico y seguir trabajando",
     "optionC": "Limpiar las gotas cada pocos minutos",
-    "optionD": "Retirar solo la carne cruda",
+    "optionD": "Seguir preparando y avisar al gerente después",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Las fugas y la condensación de las tuberías del techo pueden llevar suciedad y microbios a los alimentos, así que se debe dejar de preparar ahí hasta que se repare la fuga. Cubrir o limpiar no detiene la fuente de contaminación."
+    "explanation": "Las fugas y la condensación de las tuberías del techo pueden llevar suciedad y microbios a los alimentos, así que se debe dejar de preparar ahí y avisar al gerente de inmediato. Cubrir, limpiar o avisar más tarde no detiene la fuente de contaminación."
   },
   {
     "type": "FOODHANDLER",
@@ -1576,10 +1576,10 @@
     "optionA": "Lavarse las manos en el lavamanos",
     "optionB": "Ponerse un par de guantes nuevos",
     "optionC": "Usar antiséptico para manos y luego empezar a servir",
-    "optionD": "Enjuagarse las manos rápido en el fregadero de platos",
+    "optionD": "Lavarse las manos rápido en el fregadero de platos",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Sacar la basura contamina las manos, así que deben lavarse en un lavamanos antes de tocar alimentos. Ponerse guantes sobre las manos sucias solo pasa los microbios a los guantes."
+    "explanation": "Sacar la basura contamina las manos, así que deben lavarse en un lavamanos antes de tocar alimentos. El fregadero de platos no sirve para lavarse las manos, ni siquiera para un lavado rápido, y ponerse guantes sobre las manos sucias solo pasa los microbios a los guantes."
   },
   {
     "type": "FOODHANDLER",
@@ -1590,10 +1590,10 @@
     "optionA": "Limpiarse las manos en el delantal",
     "optionB": "Lavarse las manos",
     "optionC": "Seguir trabajando si sus manos se ven limpias",
-    "optionD": "Rociarse las manos con solución desinfectante",
+    "optionD": "Lavarse las manos al terminar la ensalada",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Tocarse el cabello, la cara o el cuerpo puede pasar microbios a las manos, así que deben lavarse antes de volver a los alimentos. Limpiarse las manos en el delantal no elimina los microbios y ensucia el delantal."
+    "explanation": "Tocarse el cabello, la cara o el cuerpo puede pasar microbios a las manos, así que deben lavarse antes de volver a los alimentos, no después de terminar la ensalada. Limpiarse las manos en el delantal no elimina los microbios y ensucia el delantal."
   },
   {
     "type": "FOODHANDLER",
@@ -1604,10 +1604,10 @@
     "optionA": "Usar pinzas para que sus manos nunca toquen los panecillos",
     "optionB": "Ponerse guantes y tomar los panecillos",
     "optionC": "Lavarse las manos antes de tocar el pan",
-    "optionD": "Limpiarse las manos con una servilleta limpia",
+    "optionD": "Lavarse las manos después de servir la mesa",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Estornudar o toser en las manos significa que deben lavarse de inmediato. Las pinzas o los guantes no corrigen unas manos contaminadas, que de todas formas tocan la canasta, las pinzas y otras superficies."
+    "explanation": "Estornudar o toser en las manos significa que deben lavarse de inmediato, antes de tocar el pan y no después de servirlo. Las pinzas o los guantes no corrigen unas manos contaminadas, que de todas formas tocan la canasta, las pinzas y otras superficies."
   },
   {
     "type": "FOODHANDLER",
@@ -1631,11 +1631,11 @@
     "question": "Una cocinera está por ponerse guantes desechables para armar wraps de pollo para el almuerzo. ¿Qué debe hacer justo antes de ponérselos?",
     "optionA": "Lavarse las manos",
     "optionB": "Soplar dentro de los guantes para abrirlos",
-    "optionC": "Enjuagar los guantes con agua caliente",
+    "optionC": "Ponerse los guantes y luego lavarlos puestos",
     "optionD": "Meter las manos en solución desinfectante",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Las manos deben lavarse antes de ponerse los guantes, porque los microbios de las manos pasan a la parte exterior de los guantes al ponérselos. Meter las manos en solución desinfectante no sustituye el lavado."
+    "explanation": "Las manos deben lavarse antes de ponerse los guantes, porque los microbios de las manos pasan a la parte exterior de los guantes al ponérselos. Los guantes desechables no se lavan una vez puestos, y meter las manos en solución desinfectante no sustituye el lavado."
   },
   {
     "type": "FOODHANDLER",
@@ -1798,12 +1798,12 @@
     "category": "fhHygiene",
     "question": "Una cocinera nota una pequeña rotura en su guante mientras forma tortas de carne cruda para hamburguesa. ¿Qué debe hacer?",
     "optionA": "Lavarse las manos y ponerse guantes nuevos",
-    "optionB": "Terminar la tanda y luego cambiarse los guantes",
+    "optionB": "Terminar la tanda y luego lavarse las manos y cambiarse los guantes",
     "optionC": "Ponerse un segundo guante encima del roto",
     "optionD": "Tapar la rotura con cinta y seguir trabajando",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los guantes deben cambiarse en cuanto se rompen, lavándose las manos antes de ponerse el par nuevo. Un segundo guante sobre uno roto deja dentro los microbios de la mano."
+    "explanation": "Los guantes deben cambiarse en cuanto se rompen, lavándose las manos antes de ponerse el par nuevo. Esperar a terminar la tanda deja que los microbios lleguen a la carne mientras tanto, y un segundo guante sobre uno roto deja dentro los microbios de la mano."
   },
   {
     "type": "FOODHANDLER",
@@ -1828,10 +1828,10 @@
     "optionA": "Limpiar los guantes con un trapo empapado en desinfectante",
     "optionB": "Seguir con los mismos guantes, ya que el pollo se va a cocinar",
     "optionC": "Quitarse los guantes, lavarse las manos y ponerse guantes nuevos",
-    "optionD": "Enjuagarse las manos con guantes en el lavamanos",
+    "optionD": "Lavarse las manos con guantes en el lavamanos",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los guantes deben cambiarse después de manipular carne cruda y antes de tocar alimentos listos para comer, lavándose las manos entre un par y otro. Limpiar o enjuagar los guantes no elimina los microbios del pollo crudo."
+    "explanation": "Los guantes deben cambiarse después de manipular carne cruda y antes de tocar alimentos listos para comer, lavándose las manos entre un par y otro. Lavar o limpiar los mismos guantes no los vuelve seguros para alimentos listos para comer."
   },
   {
     "type": "FOODHANDLER",
@@ -1898,7 +1898,7 @@
     "optionA": "Ponerse guantes de inmediato",
     "optionB": "Limpiar su estación con un trapo seco",
     "optionC": "Usar solo antiséptico para manos",
-    "optionD": "Lavarse las manos",
+    "optionD": "Lavarse las manos en el lavamanos",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Las manos deben lavarse al empezar a trabajar, aunque el uniforme y la redecilla estén limpios. El antiséptico para manos por sí solo no reemplaza el lavado de manos."
@@ -1952,12 +1952,12 @@
     "category": "fhHygiene",
     "question": "Un ayudante de mesero acaba de recoger platos sucios de varias mesas. El cocinero le pide ayuda para servir porciones de ensalada. ¿Qué debe hacer primero?",
     "optionA": "Ponerse guantes",
-    "optionB": "Limpiarse las manos con un trapo con desinfectante",
+    "optionB": "Lavarse las manos después de servir las porciones",
     "optionC": "Usar un tenedor en lugar de guantes",
     "optionD": "Lavarse las manos",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Tocar platos o equipo sucios contamina las manos, así que deben lavarse antes de manipular alimentos. Los guantes que se ponen sobre las manos sucias recogen esos microbios."
+    "explanation": "Tocar platos o equipo sucios contamina las manos, así que deben lavarse antes de manipular alimentos, no después de servir las porciones. Los guantes que se ponen sobre las manos sucias recogen esos microbios."
   },
   {
     "type": "FOODHANDLER",
@@ -2008,12 +2008,12 @@
     "category": "fhHygiene",
     "question": "Una mesera vomitó dos veces en su casa esta mañana, pero ya se siente mejor. ¿Qué debe hacer antes de su turno?",
     "optionA": "Trabajar, pero evitar tocar alimentos",
-    "optionB": "Trabajar si usa guantes",
+    "optionB": "Avisar al gerente y trabajar con guantes",
     "optionC": "Tomar medicina para el resfriado e ir a trabajar",
     "optionD": "Avisar al gerente y no trabajar",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El vómito debe informarse, y el manipulador de alimentos no debe trabajar hasta por lo menos 24 horas después de que se detenga. Sentirse mejor no significa que haya dejado de propagar la enfermedad."
+    "explanation": "El vómito debe informarse, y el manipulador de alimentos no debe trabajar hasta por lo menos 24 horas después de que se detenga. Avisar al gerente no basta si después trabaja, aunque sea con guantes, y sentirse mejor no significa que haya dejado de propagar la enfermedad."
   },
   {
     "type": "FOODHANDLER",
@@ -2402,7 +2402,7 @@
     "optionA": "145 F",
     "optionB": "155 F",
     "optionC": "Hasta que se vean de color verde brillante",
-    "optionD": "135 F",
+    "optionD": "135 F o más",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Las frutas, verduras, granos y legumbres que se cocinan para conservarse en caliente deben alcanzar 135 F (57 °C). 145 F y 155 F son temperaturas para carnes y huevos, no para verduras."
@@ -2596,7 +2596,7 @@
     "category": "fhTimeTemp",
     "question": "Un cocinero abre una bolsa de chili procesado comercialmente y listo para comer para conservarlo en caliente. ¿Qué temperatura de recalentamiento se requiere?",
     "optionA": "165 F durante 15 segundos",
-    "optionB": "135 F",
+    "optionB": "135 F o más",
     "optionC": "155 F",
     "optionD": "145 F",
     "correctAnswer": "B",

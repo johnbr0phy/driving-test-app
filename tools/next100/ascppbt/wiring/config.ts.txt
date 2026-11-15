@@ -1,0 +1,67 @@
+const ascppbt: ExamConfig = {
+  id: "ascppbt",
+  stateCode: "ASCPPBT",
+  idBase: 29800,
+  slug: "/ascp-phlebotomy",
+  landingPath: "/ascp-pbt-practice-test",
+  name: "PBT(ASCP) Practice Test",
+  shortName: "PBT(ASCP)",
+  examLabel: "PBT exam",
+  fullName: "ASCP Phlebotomy Technician PBT(ASCP) Certification Exam",
+  questionIdPrefix: "PBT-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASCP BOC Phlebotomy Technician PBT(ASCP) and PBT(ASCPi) Examination Content Guideline
+  // (revised September 25, 2025, checked November 2026): 80 questions in 2 hours, computer
+  // adaptive. I. Circulatory System 5-10%, II. Specimen Collection 45-50%, III. Specimen
+  // Handling, Transport, and Processing 15-20%, IV. Waived and Point-of-Care Testing 5-10%,
+  // V. Non-Blood Specimens 5-10%, VI. Laboratory Operations 15-20%. Per 50-question fixed form:
+  // 3/23/8/4/4/8, all inside the ranges; Specimen Collection is split 6/6/6/5 (orders and
+  // patient, sites and tests, order of draw and equipment, complications), Tigertest's split.
+  // The real exam is CAT and scaled; 70% here is a readiness marker. All items original.
+  blueprint: {
+    pbtCirc: 3,
+    pbtOrders: 6,
+    pbtSite: 6,
+    pbtDraw: 6,
+    pbtComp: 5,
+    pbtHandling: 8,
+    pbtPoct: 4,
+    pbtNonblood: 4,
+    pbtOps: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29801, name: "Circulatory System, Orders & Sites", categories: ["pbtCirc", "pbtOrders", "pbtSite"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 29802, name: "Order of Draw & Complications", categories: ["pbtDraw", "pbtComp"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 29803, name: "Specimen Handling & POCT", categories: ["pbtHandling", "pbtPoct"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 29804, name: "Non-Blood Specimens & Lab Operations", categories: ["pbtNonblood", "pbtOps"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pbtCirc: "Circulatory System",
+    pbtOrders: "Orders, Identification & Patient Prep",
+    pbtSite: "Site Selection, Technique & Common Tests",
+    pbtDraw: "Order of Draw & Equipment",
+    pbtComp: "Complications & Considerations",
+    pbtHandling: "Specimen Handling, Transport & Processing",
+    pbtPoct: "Waived & Point-of-Care Testing",
+    pbtNonblood: "Non-Blood Specimens",
+    pbtOps: "Laboratory Operations",
+  },
+  copy: {
+    guestPrompt: "to save your PBT(ASCP) progress and track every question you miss",
+    trainingHeading: "Train by BOC content area",
+    trainingSub: "Four sets covering the six content areas of the ASCP BOC phlebotomy guideline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Circulatory System, Orders & Sites.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the PBT(ASCP).",
+    ],
+    sourceLine: "Based on the ASCP BOC PBT(ASCP) Examination Content Guideline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the American Society for Clinical Pathology.",
+    analyticsKey: "ascppbt",
+  },
+};

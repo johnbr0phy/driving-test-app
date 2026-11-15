@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight, RefreshCw, Search, Sparkles, Trash2 } from "
 import { db } from "@/lib/firebase";
 import { Button } from "@/components/ui/button";
 import { CARD, TabError, TabHeader, TabLoading, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { regionOfTest } from "@/lib/region";
 
 // The Users tab on /admin: the 100 most recently active accounts (search,
 // filter, delete), DMV pass rate by state and Super Amazing adoption, from
@@ -49,20 +50,48 @@ const REGION_NAMES = (() => {
     return null;
   }
 })();
-const flagOf = (iso: string) => (/^[A-Z]{2}$/.test(iso) ? String.fromCodePoint(...[...iso].map((c) => 0x1f1a5 + c.charCodeAt(0))) : "");
-/** "🇬🇧 United Kingdom" from the account's country, else its picked region. */
-function countryOf(u: UserData): { flag: string; name: string } | null {
-  const raw = u.country || (u.region ? (u.region === "UK" ? "GB" : u.region) : null);
+/**
+ * A flag picture, not an emoji: Windows has no flag emoji and shows two
+ * letters instead. flagcdn serves every ISO 3166 flag as an SVG.
+ */
+function FlagImg({ iso }: { iso: string }) {
+  if (!/^[A-Z]{2}$/.test(iso)) return null;
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={`https://flagcdn.com/${iso.toLowerCase()}.svg`}
+      alt=""
+      width={18}
+      height={13}
+      loading="lazy"
+      className="inline-block h-[13px] w-[18px] rounded-[2px] object-cover align-[-2px] ring-1 ring-black/10 dark:ring-white/15"
+    />
+  );
+}
+/**
+ * The account's country: its signup or paywall country, else the one it
+ * picked, else the country of its test (worldwide tests have none).
+ */
+function countryOf(u: UserData): { iso: string; name: string; source: string } | null {
+  const testRegion = regionOfTest(u.test.id);
+  const [raw, source] = u.country
+    ? [u.country, "From their signup or paywall view"]
+    : u.region
+      ? [u.region, "The country they picked"]
+      : testRegion !== "GLOBAL"
+        ? [testRegion, "The country of their test"]
+        : [null, ""];
   if (!raw || raw === "ZZ" || raw === "GLOBAL") return null;
-  const iso = raw.toUpperCase();
-  return { flag: flagOf(iso), name: REGION_NAMES?.of(iso) ?? iso };
+  const upper = raw.toUpperCase();
+  const iso = upper === "UK" ? "GB" : upper;
+  return { iso, name: REGION_NAMES?.of(iso) ?? iso, source };
 }
 function Country({ u }: { u: UserData }) {
   const c = countryOf(u);
-  if (!c) return <span className="text-gray-400">·</span>;
+  if (!c) return <span className="text-gray-400" title="Unknown, and their test is worldwide">·</span>;
   return (
-    <span className="whitespace-nowrap" title={u.country ? "From their signup or paywall view" : "The country they picked"}>
-      {c.flag} {c.name}
+    <span className="inline-flex items-center gap-1.5 whitespace-nowrap" title={c.source}>
+      <FlagImg iso={c.iso} /> {c.name}
     </span>
   );
 }

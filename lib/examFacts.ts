@@ -44,6 +44,187 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  aufirearmsnsw: {
+      answer:
+        "In New South Wales, a person who has never held a firearms licence must complete the firearms training and safety course prescribed for the licence before it can be issued (Firearms Act 1996, s 11(3)(b)). The NSW Police users guide calls the longarm course the Firearms Licence Qualification course, run by approved clubs, organisations or trainers, with theory and a practical component. Licences are issued by the NSW Police Force Firearms Registry. An applicant must be 18 or over, an NSW resident, have a genuine reason such as approved club membership or permission to shoot on rural land, and be able to meet the storage rules. A first licence cannot be issued until 28 days after applying, and since 1 July 2026 a licence lasts up to 2 years.",
+      rows: [
+        { label: "Course", value: "Firearms safety course prescribed for a first licence (longarms: Firearms Licence Qualification course)" },
+        { label: "Licence age", value: "18 for a licence; minors use a minor's firearms permit with written parental consent" },
+        { label: "Waiting period", value: "28 days after applying for a first licence; not for renewals" },
+        { label: "Licence term", value: "Up to 2 years for licences issued from 1 July 2026" },
+        { label: "Permit to acquire", value: "One per firearm, valid 90 days, usually after a 28-day wait" },
+        { label: "Licensing body", value: "NSW Police Force Firearms Registry" },
+      ],
+      basedOn: "The Firearms Act 1996 (current version from 1 July 2026) on legislation.nsw.gov.au, the NSW Police Firearms (Longarms) Users Guide and the NSW Government's 1 July 2026 release, checked November 2026",
+      source: { name: "NSW Legislation: Firearms Act 1996", url: "https://legislation.nsw.gov.au/view/whole/html/inforce/current/act-1996-046" },
+    },
+  nzham: {
+      answer:
+        "The New Zealand amateur radio exam leads to the General Amateur Operator's Certificate of Competency (GAOC) and a ZL callsign, which together let you transmit under the General User Radio Licence for Amateur Radio Operators. Radio Spectrum Management (RSM, part of MBIE) sets the rules, and the syllabus is the international HAREC syllabus. NZART runs the exam through RSM-approved Approved Radio Examiners (ARXs): each paper has 60 multiple-choice questions, one drawn from every ten in a public 600-question bank across 30 topics, with 2 hours allowed, and 40 or more correct answers pass. A calculator may be used. A pass is recorded on an exam result notice, then the ARX issues the certificate and callsign. Only New Zealand citizens and permanent residents can normally be granted a GAOC.",
+      rows: [
+        { label: "Questions", value: "60 multiple choice, one from every ten in 30 syllabus topics" },
+        { label: "Pass mark", value: "40 or more correct answers" },
+        { label: "Time", value: "2 hours; a calculator is allowed" },
+        { label: "Syllabus", value: "HAREC (CEPT T/R 61-02), set out by NZART in 30 topics" },
+        { label: "Run by", value: "NZART through RSM-approved Approved Radio Examiners (ARXs)" },
+        { label: "You get", value: "A General Amateur Operator's Certificate and a ZL callsign" },
+        { label: "First 3 months", value: "No 5 to 25 MHz until 3 months and 50 logged contacts" },
+      ],
+      basedOn: "NZART's 2025 Examination Procedure and Study Guide (19/10/2025), RSM PIB 46 Issue 19.1 (July 2025) and the General User Radio Licence for Amateur Radio Operators Notice 2025, checked November 2026",
+      source: { name: "RSM: Get a certificate and/or callsign", url: "https://www.rsm.govt.nz/licensing/how-do-i/get-a-certificate-callsign" },
+    },
+  cadc: {
+      answer:
+        "The IC&RC Alcohol and Drug Counselor (ADC) exam is the certification exam of the International Certification & Reciprocity Consortium, used by many US state boards for their alcohol and drug counselor credential (called CADC, LADC, CAC or another name depending on the state). IC&RC's candidate guide (effective November 2022) lists 150 multiple-choice questions, 125 scored and 25 unscored pretest, in 3 hours, each with three or four choices and one best answer. It covers Scientific Principles of Substance Use and Co-Occurring Disorders (25%), Evidence-Based Screening and Assessment (20%), Evidence-Based Treatment, Counseling, and Referral (30%) and Professional, Ethical, and Legal Responsibilities (25%). Prometric delivers it on computer at a test center or by remote proctoring where the board allows it. Scores are scaled from 200 to 800 and 500 passes; a candidate who fails waits at least 90 days to retest.",
+      rows: [
+        { label: "Questions", value: "150 (125 scored, 25 pretest), three or four choices each" },
+        { label: "Time", value: "3 hours" },
+        { label: "Pass mark", value: "Scaled score of 500 (scale 200 to 800)" },
+        { label: "Largest domain", value: "Treatment, Counseling, and Referral, 30%" },
+        { label: "Where", value: "Prometric test centers, or remote proctoring if your board allows it" },
+        { label: "Retakes", value: "At least 90 days after the previous attempt" },
+        { label: "Run by", value: "IC&RC, through its member state boards" },
+      ],
+      basedOn: "IC&RC's ADC Exam Candidate Guide (effective November 2022) and the IC&RC General Candidate Guide (2025), checked November 2026",
+      source: { name: "IC&RC: credentials and candidate guides", url: "https://internationalcredentialing.org/icrc-credentials/credentials/" },
+    },
+  nzdrone: {
+      answer:
+        "New Zealand drones and model aircraft are flown under Civil Aviation Rule Part 101, made by the Civil Aviation Authority of New Zealand (CAA); since 22 December 2025 most of the detail for remotely piloted aircraft sits in the transport instrument CATI 101-1. A drone must weigh 25 kg or less (15 to 25 kg needs an approved person or organisation), stay in visual line of sight, below the cloud base and below 400 ft above ground level, give way to all manned aircraft, and fly over people or property only with their consent. Flying unshielded within 4 km of an aerodrome needs a pilot qualification from an approved person or organisation (or supervision, or a Part 61 or Part 149 licence) plus ATC authorisation or the aerodrome operator's agreement, and controlled airspace needs prior ATC authorisation, applied for through Airshare, unless the flight is shielded. There is no single official exam: approved organisations under rule 101.202 issue pilot qualifications with their own assessments. Operations outside Part 101 need a Part 102 operator certificate.",
+      rows: [
+        { label: "Rules", value: "Part 101 and transport instrument CATI 101-1 (in force 22 December 2025)" },
+        { label: "Weight limit", value: "25 kg; 15 to 25 kg needs an approved person or organisation" },
+        { label: "Height limit", value: "400 ft above ground level, unless CATI 101-1's conditions are met" },
+        { label: "Aerodromes", value: "4 km from the boundary, unless qualified and authorised or shielded" },
+        { label: "Pilot qualification", value: "Issued by approved organisations under rule 101.202; no official exam or pass mark" },
+        { label: "Outside Part 101", value: "Part 102 unmanned aircraft operator certificate" },
+        { label: "Run by", value: "Civil Aviation Authority of New Zealand (CAA)" },
+      ],
+      basedOn: "CAA Part 101 consolidation (22 December 2025), CATI 101-1 and AC101-1 Revision 2, checked November 2026",
+      source: { name: "CAA: Advisory Circular AC101-1, Remotely Piloted Aircraft Systems", url: "https://www.aviation.govt.nz/assets/rules/advisory-circulars/AC101-1a-Remotely-Piloted-Aircraft-Systems.pdf" },
+    },
+  crfsc: {
+      answer:
+        "The Canadian Restricted Firearms Safety Course (CRFSC) is the RCMP Canadian Firearms Program course for anyone who wants to acquire restricted firearms, such as most handguns. To apply for a Possession and Acquisition Licence for restricted firearms you must have passed both the CFSC and the CRFSC; a CFSC passed before February 1, 1999 counts for both. The course ends with a written test and a practical test. The RCMP does not publish the length or pass mark; course providers say the written test is multiple choice and the pass mark is 80% on each test. Since October 21, 2022 most individuals cannot acquire handguns under the national handgun freeze, but the course still covers all restricted firearms.",
+      rows: [
+        { label: "Tests", value: "A written test and a practical test" },
+        { label: "Pass mark", value: "Not published by the RCMP; course providers say 80% on each test" },
+        { label: "Who it is for", value: "Anyone who wants to acquire restricted firearms (RCMP: over 18)" },
+        { label: "Licence", value: "A restricted PAL needs both the CFSC and the CRFSC" },
+        { label: "Taught by", value: "Qualified instructors designated through the Chief Firearms Officer" },
+        { label: "Topics", value: "Handgun parts and actions, ammunition, firing, care, the law, storage and transport" },
+        { label: "Handgun freeze", value: "Most individuals cannot acquire handguns since October 21, 2022" },
+      ],
+      basedOn: "the RCMP Canadian Firearms Program safety course pages and PAL application notes (form RCMP 5592), the Firearms Act and its storage and transport regulations as current to 2026-10-19, and Public Safety Canada's handgun freeze page, checked November 2026",
+      source: { name: "RCMP: Firearms safety courses", url: "https://rcmp.ca/en/firearms/firearms-safety-training-transport-and-storage/safety-courses" },
+    },
+  ascppbt: {
+      answer:
+        "The PBT(ASCP) exam is the phlebotomy technician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the PBT(ASCP) credential (PBT(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 80 multiple-choice questions with one best answer in 2 hours, delivered as computer adaptive testing. Content areas are Specimen Collection 45 to 50%, Specimen Handling, Transport, and Processing 15 to 20%, Laboratory Operations 15 to 20%, and the Circulatory System, Waived and Point-of-Care Testing and Non-Blood Specimens 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score; guides say the scale is 100 to 999 with 400 to pass.",
+      rows: [
+        { label: "Questions", value: "80 multiple choice, one best answer" },
+        { label: "Time", value: "2 hours" },
+        { label: "Format", value: "Computer adaptive testing (CAT)" },
+        { label: "Largest area", value: "Specimen Collection, 45 to 50%" },
+        { label: "Pass mark", value: "Scaled score; guides say 400 on a 100 to 999 scale" },
+        { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+      ],
+      basedOn: "The ASCP BOC Phlebotomy Technician PBT(ASCP) and PBT(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
+      source: { name: "ASCP BOC: PBT(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_pbt_content_guideline.pdf?sfvrsn=aa1319c7_1" },
+    },
+  rpt: {
+      answer:
+        "The Registered Phlebotomy Technician (RPT) exam is the certification exam of American Medical Technologists (AMT) for phlebotomists, which earns the RPT (AMT) credential. AMT's examination specifications list 200 four-option multiple-choice questions in eight work areas: Obtaining Blood Samples 68 (34%), Specimen Collection and Processing 30 (15%), Safety Standards and Procedures 30 (15%), Time Management and Assignment Organization 20 (10%), Legal, Ethical, and Professional Considerations 20 (10%), Professional Communications 11 (5.5%), Clerical Skills and Duties 11 (5.5%) and Terminology, Anatomy, and Physiology 10 (5%). The exam is taken on a computer in 2.5 hours, scheduled through Pearson VUE or by a candidate's school, and may include unscored pretest items. Scores are scaled from 0 to 100, and 70 is the minimum passing score; it is not a percentage. A candidate who fails retakes the whole exam and may test up to four times in all.",
+      rows: [
+        { label: "Questions", value: "200 multiple choice, four options, single best answer" },
+        { label: "Time", value: "2.5 hours" },
+        { label: "Pass mark", value: "Scaled score of 70 (scale 0 to 100, not a percentage)" },
+        { label: "Largest area", value: "Obtaining Blood Samples, 68 questions (34%)" },
+        { label: "Where", value: "Computer based, scheduled through Pearson VUE or your school" },
+        { label: "Retakes", value: "Whole exam, up to four attempts in all, with a retest fee" },
+        { label: "Run by", value: "American Medical Technologists (AMT)" },
+      ],
+      basedOn: "AMT's RPT Certification Competencies and Examination Specifications (2025) and the AMT Candidate Handbook (revised April 2026), checked November 2026",
+      source: { name: "AMT: Registered Phlebotomy Technician exam", url: "https://americanmedtech.org/phlebotomy-technician/rpt-exam" },
+    },
+  hspachl: {
+      answer:
+        "The Certified Healthcare Leader (CHL) exam is the Healthcare Sterile Processing Association's (HSPA) certification exam for sterile processing managers and supervisors. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. The content outline revised August 2025 and updated January 2026 has four sections: Planning and Decision Making 25%, Organizing 23%, Leading 29%, and Governing and Compliance 23%. A current CRCST is required, and from October 2026 HSPA also asks for 12 months of sterile processing or leadership experience or an associate degree.",
+      rows: [
+        { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+        { label: "Time", value: "3 hours" },
+        { label: "Pass mark", value: "Set number of scored questions correct (Angoff method); no percentage published" },
+        { label: "Content", value: "Leading 29%, Planning 25%, Organizing 23%, Governing and Compliance 23%" },
+        { label: "Eligibility", value: "Current CRCST, plus (from Oct 2026) 12 months of SP or leadership experience or an associate degree" },
+        { label: "Where", value: "Computer based at Prometric test centers" },
+        { label: "Renewal", value: "Every year, with continuing education; CRCST must stay current" },
+        { label: "Run by", value: "Healthcare Sterile Processing Association (HSPA)" },
+      ],
+      basedOn: "HSPA's CHL Exam Content Outline (revised August 2025, updated January 2026), CHL eligibility update page and Certification Handbook (revised January 2026), checked November 2026",
+      source: { name: "HSPA: Certified Healthcare Leader (CHL)", url: "https://myhspa.org/certification/certification-overview/certified-healthcare-leader-chl/" },
+    },
+  hspacer: {
+      answer:
+        "The Certified Endoscope Reprocessor (CER) exam is the Healthcare Sterile Processing Association's (HSPA) certification exam for people who pre-clean, leak test, clean, inspect, disinfect or sterilize, transport and store endoscopes. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. CER is a standalone certification: the CRCST is not required, but candidates need at least three months of hands-on endoscope reprocessing experience within the past three years, and certification is renewed every year with continuing education.",
+      rows: [
+        { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+        { label: "Time", value: "3 hours" },
+        { label: "Pass mark", value: "Set number of scored questions correct (Angoff method); no percentage published" },
+        { label: "Largest section", value: "Endoscope processing steps, 32%" },
+        { label: "Eligibility", value: "Three months of hands-on endoscope reprocessing within the past three years" },
+        { label: "Where", value: "Computer based at Prometric test centers" },
+        { label: "Renewal", value: "Every year, with continuing education" },
+        { label: "Run by", value: "Healthcare Sterile Processing Association (HSPA)" },
+      ],
+      basedOn: "HSPA's CER Exam Content Outline (revised May 2022) and Certification Handbook (revised January 2026), checked November 2026",
+      source: { name: "HSPA: Certified Endoscope Reprocessor (CER)", url: "https://myhspa.org/certification/certification-overview/certified-endoscope-reprocessor-cer/" },
+    },
+  bcaba: {
+      answer:
+        "The BCaBA exam is the Behavior Analyst Certification Board's certification exam for Board Certified Assistant Behavior Analysts, the undergraduate-level credential in behavior analysis; BCaBAs practice under the supervision of a BCBA and may supervise RBTs. It has 175 multiple-choice questions in 4 hours, 150 scored and 25 unscored, each with 4 options and 1 correct answer, taken in English on a computer at Pearson VUE testing centers. It follows the BCaBA Test Content Outline (6th ed.): 90 tasks in 9 domains, led by behavior-change procedures (15%). The result is pass or fail against a passing score set by the modified Angoff method, not published as a percentage. Candidates may test up to 8 times in the 2-year authorization period, 30 days apart.",
+      rows: [
+        { label: "Questions", value: "175 multiple choice (150 scored, 25 unscored), 4 options each" },
+        { label: "Time", value: "4 hours" },
+        { label: "Pass mark", value: "Pass/fail; passing score set by modified Angoff, no published percentage" },
+        { label: "Content", value: "9 domains, 90 tasks (6th ed. outline)" },
+        { label: "Biggest domain", value: "Behavior-Change Procedures, 22 of 150" },
+        { label: "Retakes", value: "Up to 8 attempts in 2 years, 30 days apart" },
+        { label: "Where", value: "Pearson VUE testing centers, English only" },
+        { label: "Run by", value: "Behavior Analyst Certification Board (BACB)" },
+      ],
+      basedOn: "The BACB BCaBA Test Content Outline (6th ed.) and the BCaBA Handbook (updated October 2026), checked November 2026",
+      source: { name: "BACB: BCaBA certification", url: "https://www.bacb.com/bcaba/" },
+    },
+  bcba: {
+      answer:
+        "The BCBA exam is the Behavior Analyst Certification Board's certification exam for Board Certified Behavior Analysts, the graduate-level credential in behavior analysis. It has 185 multiple-choice questions in 4 hours, 175 scored and 10 unscored, each with 4 options and 1 correct answer, taken in English on a computer at Pearson VUE testing centers. It follows the BCBA Test Content Outline (6th ed.): 104 tasks in 9 domains, from concepts and principles and behavior-change procedures (14% each) to behaviorism and philosophical foundations (5%). The result is pass or fail against a passing score set by the modified Angoff method, not published as a percentage. Candidates may test up to 8 times in the 2-year authorization period, 30 days apart.",
+      rows: [
+        { label: "Questions", value: "185 multiple choice (175 scored, 10 unscored), 4 options each" },
+        { label: "Time", value: "4 hours" },
+        { label: "Pass mark", value: "Pass/fail; passing score set by modified Angoff, no published percentage" },
+        { label: "Content", value: "9 domains, 104 tasks (6th ed. outline)" },
+        { label: "Biggest domains", value: "Behavior-Change Procedures 25 and Concepts and Principles 24 of 175" },
+        { label: "Retakes", value: "Up to 8 attempts in 2 years, 30 days apart" },
+        { label: "Where", value: "Pearson VUE testing centers, English only" },
+        { label: "Run by", value: "Behavior Analyst Certification Board (BACB)" },
+      ],
+      basedOn: "The BACB BCBA Test Content Outline (6th ed.) and the BCBA Handbook (updated November 2026), checked November 2026",
+      source: { name: "BACB: BCBA certification", url: "https://www.bacb.com/bcba/" },
+    },
+  aufirearmsqld: {
+      answer:
+        "In Queensland, a person applying for a weapons licence must show adequate knowledge of safety practices, usually by completing an approved safety training course within 1 year before applying (Weapons Act 1990, s 10AA). The approved course is 11029NAT Course in Firearms and Weapons Safety, owned by the Queensland Police Service and run by approved training providers, with a core unit on weapons legislation and community safety and a unit for each weapon category. Licences are issued by the Queensland Police Service Weapons Licensing. An adult licence needs a genuine reason, such as sports or target shooting with club membership or recreational shooting with written landowner permission, access to secure storage, and a 28-day waiting period. Category A and B licences run for up to 10 years.",
+      rows: [
+        { label: "Course", value: "11029NAT Course in Firearms and Weapons Safety (approved for Queensland licensing)" },
+        { label: "When", value: "Completed within 1 year before applying for the licence" },
+        { label: "Licence age", value: "18 for an adult licence; minor's licence from 11" },
+        { label: "Waiting period", value: "28 days after lodging, unless exceptional circumstances" },
+        { label: "Licence term", value: "Up to 10 years for category A or B, 5 years for other categories" },
+        { label: "Course owner", value: "Queensland Police Service Weapons Licensing Group" },
+      ],
+      basedOn: "The Weapons Act 1990 and Weapons Regulation 2016 on legislation.qld.gov.au and the 11029NAT record on training.gov.au, checked November 2026",
+      source: { name: "Queensland Legislation: Weapons Act 1990", url: "https://www.legislation.qld.gov.au/view/whole/html/inforce/current/act-1990-071" },
+    },
   timestables: {
     answer:
       "The Multiplication Tables Check (MTC) is a statutory on-screen check for Year 4 pupils in England, taken at school in June. Children answer 25 multiplication questions on the 2 to 12 times tables, with 6 seconds to type each answer and a 3-second pause between questions. It is multiplication only, the 6, 7, 8, 9 and 12 times tables come up most, and a fact and its reverse (such as 8 × 6 and 6 × 8) never appear in the same check. There is no pass mark; schools see each child's score out of 25.",

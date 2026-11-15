@@ -138,6 +138,7 @@ export function StateExamLanding({ variant, shots }: { variant: ExamConfig; shot
             shortName={variant.shortName}
             subtitle={`${variant.questionsPerTest} questions checked against ${state} law and weighted like the state exam. Free to start, no account needed.`}
             shots={shots}
+            tryQuestion={false}
           />
         </div>
       </div>

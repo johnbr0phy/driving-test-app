@@ -175,6 +175,7 @@ KNOWN_BANKS = {
     "sweden-hunting-theory-questions.json": dict(rows=210, why="three real-length 70-question tests"),
     "dk-indfoedsret-questions.json": dict(rows=320, why="eight 40-question tests"),
     "de-motorrad-questions.json": dict(rows=210, why="seven 30-question tests"),
+    "rbt-questions.json": dict(rows=400, why="200 originals plus 200 Premium work scenarios, eight 50-question tests"),
     "ase-questions.json": dict(rows=320, why="eight ASE A-test pools of 40; four mixed 50-question tests use 5 to 7 of each"),
     "cdl-questions.json": dict(rows=600, max_avg=43,
         why="six tests from a 600-question bank; long-form options average 43 chars after the Nov 2026 key-length fix"),
@@ -351,6 +352,22 @@ def main() -> int:
         errs.append(f"{over_110} options over {soft_limit} chars (max {max_over})")
     if varies_key_only > 3:
         warns.append(f"'varies by state'/'house policy' only on the key in {varies_key_only} items (a tell)")
+
+    # Answer patterns across the bank (tools/check_answer_patterns.py): a word
+    # that marks the key, or one key reused word for word. Each item can be
+    # right and the bank still be passable without the content (RBT, Nov 2026).
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "tools"))
+    import check_answer_patterns as cap
+    pat = cap.analyse(cap.load_items(args.bank))
+    for t in pat["tells"]:
+        errs.append(f'answer pattern: "{t["term"]}" is in the key {t["key"]} of {t["n"]} times; picking it scores {t["rule"]} of {t["n"]} '
+                    f'against {t["n"] / 4:g} by guessing ({", ".join(t["ids"][:5])}...)')
+    for rep in pat["repeats"]:
+        errs.append(f'answer pattern: the key "{rep["key"]}" is used {len(rep["ids"])} times in {rep["category"]} ({", ".join(rep["ids"])})')
+    for run in pat["runs"]:
+        errs.append(f'answer pattern: {len(run["ids"])} keys in a row share "{run["term"]}" ({", ".join(run["ids"])}); training shows them in this order')
+    for t in pat["antiTells"][:5]:
+        warns.append(f'"{t["term"]}" is almost never the key ({t["key"]} of {t["n"]}, chance {t["chance"]}): make it right sometimes')
 
     print(f"lang {args.lang}  len-scale {scale}  rows {len(rows)}  categories {dict(counts)}")
     print(f"letters {dict(letters)}  avg option {avg_opt:.0f} chars  key-longest {long_share:.0%}  key>1.2x {far_share:.0%}")

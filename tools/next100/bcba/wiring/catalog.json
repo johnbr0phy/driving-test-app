@@ -1,0 +1,12 @@
+{
+  "blurb": "BACB Board Certified Behavior Analyst exam on the 6th edition outline: concepts and principles, measurement and design, ethics, assessment, behavior-change procedures and supervision.",
+  "org": "BACB · BCBA Test Content Outline (6th ed.)",
+  "group": "Healthcare certification exams",
+  "aliases": ["bcba", "bcba exam", "board certified behavior analyst", "behavior analyst exam", "bacb exam", "bacb bcba", "bcba 6th edition", "aba certification", "applied behavior analysis exam", "bcba mock exam"],
+  "teacherLed": true,
+  "teaches": "an ABA graduate program or verified course sequence",
+  "borrowTiger": "rbt",
+  "shareTitle": "Free BCBA Practice Test",
+  "shareDescription": "200 original questions on the BCBA Test Content Outline (6th ed.), with explanations.",
+  "searchTests": [["bcba", "US", "bcba"], ["board certified behavior analyst", "US", "bcba"], ["bcba practice exam", "US", "bcba"], ["behavior analyst exam", "US", "bcba"]]
+}

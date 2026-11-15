@@ -6,12 +6,12 @@
     "category": "notarialActs",
     "question": "A signer brings a deed she signed at home yesterday and asks for an acknowledgment. The notary should:",
     "optionA": "Require her to sign the deed again in front of the notary",
-    "optionB": "Refuse because the deed was signed outside the notary's presence",
+    "optionB": "Decline because the deed was signed outside the notary's presence",
     "optionC": "Identify her and confirm she signed it willingly",
     "optionD": "Administer an oath on the truth of the deed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "An acknowledgment does not require signing in the notary's presence; the signer must personally appear, be identified, and declare the signature was made willingly. Re-signing in front of the notary is a jurat requirement, not an acknowledgment requirement."
+    "explanation": "An acknowledgment does not require signing in the notary's presence; the signer must personally appear, be identified, and declare the signature was made willingly. Declining for that reason is wrong, and re-signing in front of the notary is a jurat requirement, not an acknowledgment requirement."
   },
   {
     "type": "NOTARY",
@@ -285,7 +285,7 @@
     "questionId": "NP-ACT-021",
     "category": "notarialActs",
     "question": "A process server signs a proof of service in front of the notary but refuses to take any oath or affirmation. The notary should:",
-    "optionA": "Decline to perform the jurat",
+    "optionA": "Not perform the jurat",
     "optionB": "Perform the jurat without the oath",
     "optionC": "Note the refusal and complete the jurat",
     "optionD": "Have a coworker take the oath for him",
@@ -370,12 +370,12 @@
     "category": "notarialActs",
     "question": "An affiant says her religion forbids swearing oaths, but she must verify an affidavit. The notary should:",
     "optionA": "Administer an affirmation instead",
-    "optionB": "Refuse the notarization",
+    "optionB": "Decline, since an oath is required",
     "optionC": "Skip the oath and note her religion",
     "optionD": "Ask her to swear anyway, as the law requires",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An affirmation is a solemn pledge on personal honor with no reference to a deity, offered for anyone who objects to an oath. It is legally equivalent to an oath, so there is no reason to refuse or to skip the pledge."
+    "explanation": "An affirmation is a solemn pledge on personal honor with no reference to a deity, offered for anyone who objects to an oath. It is legally equivalent to an oath, so there is no reason to decline or to skip the pledge."
   },
   {
     "type": "NOTARY",
@@ -538,12 +538,12 @@
     "category": "notarialActs",
     "question": "A notary's state does not allow copy certification, but a client needs a certified copy of her own unrecorded contract. The notary may:",
     "optionA": "Certify the copy anyway as a courtesy to the client",
-    "optionB": "Refuse any help with the copy",
+    "optionB": "Decline any help with the copy",
     "optionC": "Notarize her sworn statement that the copy is true",
     "optionD": "Stamp the copy with only the seal",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "In a copy certification by document custodian, the holder of the document swears or affirms that the copy is accurate, and the notary performs a jurat on that statement. The notary is not certifying the copy, so this works where direct copy certification is unavailable, which varies by state."
+    "explanation": "In a copy certification by document custodian, the holder of the document swears or affirms that the copy is accurate, and the notary performs a jurat on that statement. The notary is not certifying the copy, so this works where direct copy certification is unavailable, which varies by state, and there is no need to decline."
   },
   {
     "type": "NOTARY",
@@ -652,10 +652,10 @@
     "optionA": "Where the signer lives",
     "optionB": "Where the document will be filed",
     "optionC": "Where the act took place",
-    "optionD": "Where the notary's commission was issued",
+    "optionD": "Where the act will be recorded",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The venue states the state and county where the notarization actually took place. The signer's residence and the filing location are irrelevant to the venue."
+    "explanation": "The venue states the state and county where the notarization actually took place. The signer's residence and the place the document will be filed or recorded are irrelevant to the venue."
   },
   {
     "type": "NOTARY",
@@ -720,12 +720,12 @@
     "category": "notarialActs",
     "question": "A deed names two grantors, but only one of them appears before the notary. The notary should:",
     "optionA": "Notarize both signatures since the other signed earlier",
-    "optionB": "Refuse until both grantors appear together",
+    "optionB": "Decline until both grantors appear together",
     "optionC": "Have the present grantor sign for the absent one",
     "optionD": "Notarize only the signature of the signer who appeared",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Each signer must personally appear, so the notary completes a certificate for the one who is present and leaves the absent grantor's signature for another notarization. Notarizing an absent person's signature is a false certificate, and the two grantors need not appear at the same time."
+    "explanation": "Each signer must personally appear, so the notary completes a certificate for the one who is present and leaves the absent grantor's signature for another notarization. Notarizing an absent person's signature is a false certificate, and the two grantors need not appear at the same time, so declining the present signer is wrong."
   },
   {
     "type": "NOTARY",
@@ -804,12 +804,12 @@
     "category": "commissionLiability",
     "question": "A person lives in a neighboring state but works full time in this state. Can she obtain a commission here?",
     "optionA": "Possibly, depending on state law",
-    "optionB": "Yes, every state accepts any adult applicant",
+    "optionB": "Yes, federal law lets any adult apply in any state",
     "optionC": "No, no state ever commissions a nonresident",
     "optionD": "Only after her employer petitions the governor",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Residency rules vary by state, and some states commission nonresidents who work or do business there. The absolute answers are wrong because practice differs."
+    "explanation": "Residency rules vary by state, and some states commission nonresidents who work or do business there. No federal law sets commission eligibility, and the absolute answers are wrong because practice differs."
   },
   {
     "type": "NOTARY",
@@ -902,7 +902,7 @@
     "category": "commissionLiability",
     "question": "A notary's commission expired yesterday, and a customer needs an urgent acknowledgment today. The notary should:",
     "optionA": "Notarize, since a short grace period applies",
-    "optionB": "Decline until a new commission takes effect",
+    "optionB": "Hold off until recommissioned",
     "optionC": "Notarize and show the old expiration date",
     "optionD": "Notarize if the customer signs a waiver",
     "correctAnswer": "B",
@@ -916,7 +916,7 @@
     "category": "commissionLiability",
     "question": "A notary's commission is revoked for misconduct. What happens to her notary journal?",
     "optionA": "Her employer files it with company records",
-    "optionB": "It is kept or surrendered as state law directs",
+    "optionB": "It is kept or surrendered as the state directs",
     "optionC": "It is shredded on the day of revocation",
     "optionD": "It is mailed to the last signer listed",
     "correctAnswer": "B",
@@ -1030,10 +1030,10 @@
     "optionA": "May act anywhere within the commissioning state",
     "optionB": "Must first get written approval from the other county clerk",
     "optionC": "May act only within her home county",
-    "optionD": "Needs a second seal for that county",
+    "optionD": "Decline, since her seal names her home county",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A notary's authority is generally statewide, although a few states have county filing rules; details vary by state. The venue on the certificate simply shows the county where the act took place."
+    "explanation": "A notary's authority is generally statewide, although a few states have county filing rules; details vary by state. A county on the seal does not limit where she may notarize, and the venue on the certificate simply shows the county where the notarization took place."
   },
   {
     "type": "NOTARY",
@@ -1042,7 +1042,7 @@
     "category": "commissionLiability",
     "question": "While visiting a neighboring state, a notary is asked to notarize a friend's document there. The notary should:",
     "optionA": "Notarize, since commissions are valid nationwide",
-    "optionB": "Decline, since her commission has no authority there",
+    "optionB": "Decline; her commission ends at the state line",
     "optionC": "Notarize, if the document will return home",
     "optionD": "Notarize, using her home state as venue",
     "correctAnswer": "B",
@@ -1099,7 +1099,7 @@
     "question": "After completing a remote online notarization, what must happen to the audio-video recording?",
     "optionA": "It is deleted once the session ends to protect privacy",
     "optionB": "The only copy goes to the signer",
-    "optionC": "It is retained for the period state law sets",
+    "optionC": "It is retained for the period the state sets",
     "optionD": "It is kept until the fee is paid",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1198,7 +1198,7 @@
     "optionA": "Notarize it, because every state allows notarizing for relatives",
     "optionB": "Check her state's law, which may forbid notarizing for relatives",
     "optionC": "Notarize it, because knowing her son proves his identity",
-    "optionD": "Refuse, because relatives may never sign notarized documents",
+    "optionD": "Decline, because relatives may never sign notarized documents",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "Rules on notarizing for a spouse, parent or child vary by state, and many states prohibit it or treat it as a conflict. Personal knowledge proves identity but does not answer the conflict question."
@@ -1253,7 +1253,7 @@
     "question": "A customer asks the notary to pick a power of attorney form for him and fill it in. The non-attorney notary should:",
     "optionA": "Choose a form from a reputable website for him",
     "optionB": "Fill it in if the customer signs it later",
-    "optionC": "Decline; that would be practicing law",
+    "optionC": "Explain that this would be practicing law",
     "optionD": "Prepare it for an added document preparation fee",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1310,10 +1310,10 @@
     "optionA": "Describe the available acts and let her choose",
     "optionB": "Pick a jurat, since it carries an oath",
     "optionC": "Attach an acknowledgment certificate by default",
-    "optionD": "Refuse to discuss notarial acts at all",
+    "optionD": "Decline to discuss notarial acts at all",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The signer, or the person who will receive the document, decides which act is needed. The notary may describe acknowledgments and jurats but choosing for the signer is unauthorized practice of law."
+    "explanation": "The signer, or the person who will receive the document, decides which act is needed. The notary may describe acknowledgments and jurats, and need not decline to explain them, but choosing for the signer is unauthorized practice of law."
   },
   {
     "type": "NOTARY",
@@ -1408,7 +1408,7 @@
     "optionA": "Notarize, since blanks are only the signer's concern",
     "optionB": "Notarize and fill in the blanks for her",
     "optionC": "Notarize if she initials each of the blanks",
-    "optionD": "Refuse until every blank is filled in",
+    "optionD": "Have every blank filled in first",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "A notary must never notarize an incomplete document, because blanks invite fraud after the notarization. Filling in the blanks would also be improper document preparation."
@@ -1433,13 +1433,13 @@
     "questionId": "NP-ETH-023",
     "category": "ethicsProhibitedActs",
     "question": "A properly identified, willing signer presents a complete document, but the notary personally thinks the business deal is unwise. The notary should:",
-    "optionA": "Refuse, because notaries must screen out bad deals",
+    "optionA": "Decline, because notaries must screen out bad deals",
     "optionB": "Refuse unless the signer justifies the deal to the notary",
     "optionC": "Perform the notarization, since the duty is ministerial",
     "optionD": "Notarize after adding a written disclaimer",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A notary's duties are ministerial, so a lawful request that meets every requirement should be performed. The notary does not judge the wisdom of the transaction or add personal disclaimers."
+    "explanation": "A notary's duties are ministerial, so a lawful request that meets every requirement should be performed. The notary does not judge the wisdom of the transaction, so declining over it is wrong, and does not add personal disclaimers."
   },
   {
     "type": "NOTARY",
@@ -1462,7 +1462,7 @@
     "category": "ethicsProhibitedActs",
     "question": "A signer needs two signatures acknowledged on the same deed. What may the notary charge?",
     "optionA": "Any fee the signer agrees to in advance",
-    "optionB": "No more than the state maximum for each act",
+    "optionB": "No more than the state maximum per notarization",
     "optionC": "Whatever fee the notary posts at her desk",
     "optionD": "A flat rate set by the notary's employer",
     "correctAnswer": "B",
@@ -1518,7 +1518,7 @@
     "category": "ethicsProhibitedActs",
     "question": "A notary's website states she is \"state certified to advise on real estate documents\" because she passed the notary exam. She should:",
     "optionA": "Keep it, since she passed the state notary exam",
-    "optionB": "Remove it; a commission authorizes no advice",
+    "optionB": "Remove it; a commission permits no advice",
     "optionC": "Keep it, if the ad appears only online",
     "optionD": "Keep it, if her fees are listed beside it",
     "correctAnswer": "B",
@@ -1561,7 +1561,7 @@
     "question": "A neighbor asks a notary what another neighbor signed during a notarization last week. The notary should:",
     "optionA": "Share it, since notarizations are public acts",
     "optionB": "Share only the general type of document",
-    "optionC": "Decline to discuss it",
+    "optionC": "Keep what was signed confidential",
     "optionD": "Show the journal page to settle her curiosity",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -1632,7 +1632,7 @@
     "optionA": "Agree, if the customer signed it last month",
     "optionB": "Agree, if the journal shows the true date",
     "optionC": "Agree, if the deadline is legally binding",
-    "optionD": "Refuse, because the certificate must show the actual date",
+    "optionD": "Use the date the notarization happened",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "The certificate must state the date the notarial act actually took place; backdating is a false certificate. Even if the document was signed earlier, the act date is the day of the notarization."
@@ -1686,7 +1686,7 @@
     "category": "signerIdentification",
     "question": "A coworker hands you a deed signed by her husband, who is at home, and asks you to notarize his signature. You should:",
     "optionA": "Notarize it because she can vouch for his signature",
-    "optionB": "Refuse unless the husband appears before you",
+    "optionB": "Require the husband to appear before you",
     "optionC": "Call the husband to confirm that he signed",
     "optionD": "Notarize it if she brings his driver's license",
     "correctAnswer": "B",
@@ -1713,7 +1713,7 @@
     "questionId": "NP-ID-003",
     "category": "signerIdentification",
     "question": "A signer offers to appear by smartphone video call for a traditional paper acknowledgment. The notary should:",
-    "optionA": "Decline, since physical presence is required",
+    "optionA": "Explain that physical presence is required",
     "optionB": "Proceed if the signer holds an ID up to the camera",
     "optionC": "Proceed if a witness is in the room with the signer",
     "optionD": "Proceed and record the call in the journal",
@@ -1730,7 +1730,7 @@
     "optionA": "Reachable by telephone during the notarization",
     "optionB": "Known to someone working in the notary's office",
     "optionC": "Present when the document was first drafted",
-    "optionD": "Physically before the notary during the act",
+    "optionD": "Physically before the notary when notarizing",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Personal appearance means the signer is face to face with the notary at the time of the notarial act. Being on the phone or known to an office colleague does not meet the requirement."
@@ -1744,7 +1744,7 @@
     "optionA": "Notarize it once the father telephones you",
     "optionB": "Notarize it if the friend signs as a witness",
     "optionC": "Notarize it with a note that the signer was absent",
-    "optionD": "Refuse until the father appears in person",
+    "optionD": "Wait until the father appears in person",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "The father is the signer and must personally appear; a phone confirmation is not appearance, even for a close friend. Notarizing with a note of absence would still be a false certificate."
@@ -1756,12 +1756,12 @@
     "category": "signerIdentification",
     "question": "Which statement about remote online notarization is accurate?",
     "optionA": "Any video call satisfies personal appearance nationwide",
-    "optionB": "It removes the need to identify the signer",
-    "optionC": "It is allowed only where state law authorizes it",
+    "optionB": "Federal law permits it in every state",
+    "optionC": "It is allowed only where the state permits it",
     "optionD": "A recorded telephone call is an acceptable substitute",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Remote online notarization is permitted only where state law authorizes it, using an approved audio-video platform with identity proofing; rules vary by state. It does not make every video or phone call count, and identity must still be verified."
+    "explanation": "Remote online notarization is permitted only where the state authorizes it, using an approved audio-video platform with identity proofing; rules vary by state. No federal law makes it available everywhere, and it does not make every video or phone call count."
   },
   {
     "type": "NOTARY",
@@ -1785,11 +1785,11 @@
     "question": "A signer appears with a document she signed last week and asks for an acknowledgment. Regarding the existing signature, you should:",
     "optionA": "Require her to sign the document again in front of you",
     "optionB": "Have her acknowledge it as her own before you",
-    "optionC": "Refuse because it was not signed before you",
+    "optionC": "Decline because it was not signed before you",
     "optionD": "Ask a witness to confirm when she signed",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "For an acknowledgment the document may be signed beforehand; the signer must appear, be identified, and acknowledge the signature as hers. Re-signing is required for a jurat, not an acknowledgment."
+    "explanation": "For an acknowledgment the document may be signed beforehand; the signer must appear, be identified, and acknowledge the signature as hers, so there is no reason to decline. Re-signing is required for a jurat, not an acknowledgment."
   },
   {
     "type": "NOTARY",
@@ -1814,7 +1814,7 @@
     "optionA": "Accept the two documents together as proof",
     "optionB": "Accept them if the names match exactly",
     "optionC": "Accept them and list both in the journal",
-    "optionD": "Decline both and use another method",
+    "optionD": "Rely on another method instead",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Neither document is government-issued photo identification, and combining two unacceptable documents does not make them acceptable. The notary can turn to personal knowledge or credible witnesses where allowed."
@@ -1826,7 +1826,7 @@
     "category": "signerIdentification",
     "question": "A signer presents a U.S. passport that expired three years ago. How should the notary treat it?",
     "optionA": "Accept any passport whether expired or not",
-    "optionB": "Reject every ID the day after it expires",
+    "optionB": "Refuse every ID the day after it expires",
     "optionC": "Accept it only with a second expired ID",
     "optionD": "Follow the state rule on expired IDs",
     "correctAnswer": "D",
@@ -1840,12 +1840,12 @@
     "category": "signerIdentification",
     "question": "A signer's ID reads \"Maria Elena Lopez,\" and she wants to sign \"Maria Lopez.\" In many states the notary may:",
     "optionA": "Accept it, since the signed name is shorter",
-    "optionB": "Refuse unless the names match letter for letter",
+    "optionB": "Decline unless the names match letter for letter",
     "optionC": "Accept it only if she adds a middle initial",
     "optionD": "Correct her signature to match the ID",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Many states let a signer sign with less than, but not more than, the name on the ID; this varies by state. The notary never alters the signer's signature."
+    "explanation": "Many states let a signer sign with less than, but not more than, the name on the ID; this varies by state. Declining over the shorter name is not required there, and the notary never alters the signer's signature."
   },
   {
     "type": "NOTARY",
@@ -1937,7 +1937,7 @@
     "questionId": "NP-ID-019",
     "category": "signerIdentification",
     "question": "A signer presents a current permanent resident card with photo and signature. The notary should:",
-    "optionA": "Reject it because the signer is not a citizen",
+    "optionA": "Refuse it because the signer is not a citizen",
     "optionB": "Require a U.S. passport instead",
     "optionC": "Accept it only for immigration documents",
     "optionD": "Accept it as government-issued photo ID",
@@ -1952,12 +1952,12 @@
     "category": "signerIdentification",
     "question": "A visitor from abroad presents a current passport issued by a foreign government. Most states:",
     "optionA": "Accept it, subject to any state conditions",
-    "optionB": "Reject every foreign-issued identification document",
+    "optionB": "Refuse every foreign-issued identification document",
     "optionC": "Accept it only with an English translation",
     "optionD": "Accept it only for documents sent overseas",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A current foreign passport is generally acceptable identification, though some states add conditions; this varies by state. No blanket rule bars foreign IDs."
+    "explanation": "A current foreign passport is generally acceptable identification, though some states add conditions; this varies by state. No blanket rule lets a notary refuse foreign IDs."
   },
   {
     "type": "NOTARY",
@@ -2064,7 +2064,7 @@
     "category": "signerIdentification",
     "question": "A signer smells strongly of alcohol, slurs his words, and cannot say what the document is. The notary should:",
     "optionA": "Proceed, since his ID is valid",
-    "optionB": "Refuse to notarize at this time",
+    "optionB": "Not notarize while he is in this state",
     "optionC": "Proceed and note intoxication in the journal",
     "optionD": "Have a relative confirm his wishes",
     "correctAnswer": "B",
@@ -2176,12 +2176,12 @@
     "category": "signerIdentification",
     "question": "A blind signer appears with valid ID and a document to be acknowledged. Before notarizing, the notary should:",
     "optionA": "Make sure the document is read to the signer",
-    "optionB": "Refuse, since blind persons cannot sign",
+    "optionB": "Decline, since blind persons cannot sign",
     "optionC": "Have a relative sign on the signer's behalf",
     "optionD": "Notarize without any further steps",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A blind person may sign, but the notary must confirm awareness by ensuring the document is read to the signer; specific procedures vary by state. Blindness is not a reason to refuse."
+    "explanation": "A blind person may sign, but the notary must confirm awareness by ensuring the document is read to the signer; specific procedures vary by state. Blindness is not a reason to decline."
   },
   {
     "type": "NOTARY",
@@ -2332,10 +2332,10 @@
     "optionA": "Order a new seal and tell no one",
     "optionB": "Wait a few weeks to see if it turns up",
     "optionC": "Promptly notify the commissioning authority and police",
-    "optionD": "Notify only her employer's legal and compliance department",
+    "optionD": "Notify the commissioning authority at renewal time",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A stolen seal can be used to forge notarizations, so the notary should promptly report the loss or theft to the commissioning authority (and police), within the time the state sets. Quietly replacing it leaves the public unprotected."
+    "explanation": "A stolen seal can be used to forge notarizations, so the notary should promptly report the loss or theft to the commissioning authority (and police), within the time the state sets. Waiting until renewal or quietly replacing it leaves the public unprotected."
   },
   {
     "type": "NOTARY",
@@ -2443,7 +2443,7 @@
     "question": "A signer has a deed, an affidavit and a power of attorney notarized in one visit. How should the notary record them?",
     "optionA": "One entry covering the entire visit",
     "optionB": "One entry for the most important document",
-    "optionC": "A separate entry for each act",
+    "optionC": "A separate entry for each notarization",
     "optionD": "No entry, since the signer is the same person",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2499,7 +2499,7 @@
     "question": "A notary's supervisor wants to look through the notary's journal to find a competitor's home address. The notary should:",
     "optionA": "Allow it, since the employer supplied the journal",
     "optionB": "Allow it if the supervisor is also a notary",
-    "optionC": "Decline, since the journal is not for browsing",
+    "optionC": "Keep it from him; the journal is not for browsing",
     "optionD": "Lend the journal to him for the afternoon",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2569,11 +2569,11 @@
     "question": "A requester properly asks a notary for a copy of one journal entry under state rules. Which practice is appropriate?",
     "optionA": "Copy the full page including other entries",
     "optionB": "Mail the original journal page to the requester",
-    "optionC": "Refuse, since journal copies are never allowed",
+    "optionC": "Decline, since journal copies are never allowed",
     "optionD": "Copy only that entry, shielding other signers",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When state law allows copies, the notary provides only the requested entry and shields neighboring entries; some states allow a small copy fee. Removing or mailing original pages destroys the bound record."
+    "explanation": "When state law allows copies, the notary provides only the requested entry and shields neighboring entries; some states allow a small copy fee. Declining every request ignores those rules, and removing or mailing original pages destroys the bound record."
   },
   {
     "type": "NOTARY",
@@ -2596,7 +2596,7 @@
     "category": "journalSealRecords",
     "question": "A notary resigns her commission and moves to another state. What generally happens to her journal?",
     "optionA": "It is destroyed along with her seal",
-    "optionB": "It is kept or deposited per state law",
+    "optionB": "It is kept or deposited as the state requires",
     "optionC": "It goes to her most recent employer",
     "optionD": "It is mailed to the last signer listed",
     "correctAnswer": "B",
@@ -2626,7 +2626,7 @@
     "optionA": "Permission to charge above the maximum fee",
     "optionB": "A substitute for completing certificates",
     "optionC": "Transfer of liability to her employer",
-    "optionD": "Evidence of the act if it is later challenged",
+    "optionD": "Evidence if the notarization is later challenged",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "A journal is required or strongly recommended depending on the state, because it documents identification and appearance if a notarization is disputed. It never replaces the certificate or changes fee limits or liability."
@@ -2637,7 +2637,7 @@
     "questionId": "NP-REC-029",
     "category": "journalSealRecords",
     "question": "A notary performs an acknowledgment but plans to fill in and sign the certificate tomorrow at her office. This is:",
-    "optionA": "Improper; complete it at the time of the act",
+    "optionA": "Improper; complete it while notarizing",
     "optionB": "Fine if she uses today's date",
     "optionC": "Fine if the signer agrees in advance",
     "optionD": "Required whenever the signer is in a hurry to leave",
@@ -2693,7 +2693,7 @@
     "questionId": "NP-REC-033",
     "category": "journalSealRecords",
     "question": "A signer asks the notary to date the certificate two weeks earlier so it matches the document's date. The notary should:",
-    "optionA": "Use the date the act actually took place",
+    "optionA": "Use the date of the notarization itself",
     "optionB": "Use the document's date as requested",
     "optionC": "Leave the date blank for the signer",
     "optionD": "Use the date the signer prefers",
@@ -2708,7 +2708,7 @@
     "category": "journalSealRecords",
     "question": "A notary commissioned in one county notarizes for a signer in a neighboring county of the same state. The venue should show:",
     "optionA": "The county where she is commissioned",
-    "optionB": "The county where the act took place",
+    "optionB": "The county where she notarized",
     "optionC": "The county where the signer lives",
     "optionD": "The county where it will be recorded",
     "correctAnswer": "B",

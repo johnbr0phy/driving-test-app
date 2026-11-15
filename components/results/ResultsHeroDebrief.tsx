@@ -12,7 +12,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { getTigerFace } from "@/lib/resultsCopy";
 import type { ReadyTestResults } from "@/hooks/useTestResults";
 import { useStore } from "@/store/useStore";
-import { getExamById } from "@/lib/exams";
+import { getExamById, isMockTest } from "@/lib/exams";
 
 // Results hero — "The Debrief": no PASSED/FAILED stamp anywhere. The tiger
 // speaks as a coach, the score is a needle on a readiness meter (Building →
@@ -93,7 +93,28 @@ export function ResultsHeroDebrief({
       : [1, 2, 3, 4].map((id) => ({ id, setNumber: id, size: 50 }));
     return sets.find((s) => (trainingSets[s.id]?.masteredIds.length ?? 0) < s.size)?.setNumber ?? null;
   }, [routes.id, trainingSets]);
-  const trainingAhead = nextTrainingSet !== null;
+  // On a registry exam, only say the misses are "explained in the training
+  // sets ahead" when one really is: a missed question that lives in a
+  // training set the person hasn't finished. A full-length mock is the last
+  // dashboard step (nothing is ahead of it), and some questions are never in
+  // training (RBT's scenarios, `trainingExcludePrefix`).
+  const trainingAhead = useMemo(() => {
+    if (nextTrainingSet === null) return false;
+    if (routes.id === "dmv") return true;
+    const exam = getExamById(routes.id);
+    if (!exam) return false;
+    if (isMockTest(exam, displayTestNumber(testId))) return false;
+    return testSession.answers.some((a, i) => {
+      if (a.isCorrect) return false;
+      const q = testSession.questions[i];
+      if (!q) return false;
+      if (exam.trainingExcludePrefix && q.questionId.startsWith(exam.trainingExcludePrefix)) return false;
+      const set = exam.trainingSets.find((s) => s.categories.includes(q.category));
+      if (!set) return false;
+      const mastered = trainingSets[set.id]?.masteredIds ?? [];
+      return mastered.length < set.size && !mastered.includes(q.questionId);
+    });
+  }, [nextTrainingSet, routes.id, testId, displayTestNumber, testSession, trainingSets]);
 
   // Coach line + supporting sentence, picked from what the data supports.
   const byWrong = [...weakCategories].sort((a, b) => b.wrong - a.wrong);

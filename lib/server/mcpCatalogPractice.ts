@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { FieldValue, type Firestore } from 'firebase-admin/firestore';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { getExamById, getExamForSetId, getExamForTestId, getExamVariant, examLanguage, type ExamConfig } from '@/lib/exams';
-import { getExamTrainingSetQuestions } from '@/lib/examTestGenerator';
+import { examTrainingAskOrder, getExamTrainingSetQuestions } from '@/lib/examTestGenerator';
 import { getExamQuestions } from '@/lib/examData';
 import { migrateTestSets } from '@/lib/testSetMigration';
 import { splitLegacySets } from '@/lib/legacySetSplits';
@@ -103,7 +103,7 @@ function select(exam: ExamConfig, data: CatalogUserData, requested?: number, avo
   const defs = requested === undefined ? [...exam.trainingSets].sort((a,b)=>Number(started(b.id))-Number(started(a.id))) : exam.trainingSets.filter(s=>s.setNumber===requested);
   for (const def of defs) {
     const state = sets[String(def.id)] ?? EMPTY;
-    let pool = getExamTrainingSetQuestions(exam, def.setNumber, undefined, examLanguage(exam,data.language ?? 'en')).filter(q=>!state.masteredIds.includes(q.questionId));
+    let pool = examTrainingAskOrder(getExamTrainingSetQuestions(exam, def.setNumber, undefined, examLanguage(exam,data.language ?? 'en'))).filter(q=>!state.masteredIds.includes(q.questionId));
     if (pool.length > 1 && avoid) pool = pool.filter(q=>q.questionId!==avoid);
     const q = pool.find(q=>!state.wrongQueue.includes(q.questionId)) ?? state.wrongQueue.map(id=>pool.find(q=>q.questionId===id)).find(Boolean) ?? pool[0];
     if (q) return { q, def };

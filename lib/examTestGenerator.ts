@@ -3,6 +3,7 @@ import { shuffleQuestionOptions } from "./shuffleOptions";
 import { ExamConfig, examTestTotal, isMockTest, trainingPartOf } from "./exams";
 import { getExamQuestions } from "./examData";
 import type { Language } from "@/i18n";
+import { mixTrainingOrder } from "./trainingOrder";
 
 function shuffle<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -85,6 +86,11 @@ export function getExamTrainingSetQuestions(
     .sort((a, b) => a.questionId.localeCompare(b.questionId));
 }
 
+/** A set's (or part's) questions in the order training asks them: mixed, see lib/trainingOrder.ts. */
+export function examTrainingAskOrder(questions: Question[]): Question[] {
+  return mixTrainingOrder(questions, (q) => q.questionId, (q) => q.category);
+}
+
 /** Next unmastered question in a set; wrong answers are re-queued to the back. */
 export function getNextExamTrainingSetQuestion(
   exam: ExamConfig,
@@ -95,7 +101,7 @@ export function getNextExamTrainingSetQuestion(
   part?: number,
   language?: Language
 ): Question | null {
-  const questions = getExamTrainingSetQuestions(exam, setNumber, part, language);
+  const questions = examTrainingAskOrder(getExamTrainingSetQuestions(exam, setNumber, part, language));
   let unmastered = questions.filter((q) => !masteredIds.includes(q.questionId));
   if (unmastered.length === 0) return null;
   if (currentQuestionId && unmastered.length > 1) {

@@ -35,7 +35,7 @@ All question data lives in `/data/questions.json` (~2,200 questions covering 50 
 - 50 questions per test, 200 total per state
 - Answer options are shuffled every time a question is shown, in practice tests, training sets (first showing included, since Nov 2026: the banks are written with keys rotating A, B, C, D) and quizzes; skipped for position-dependent answers like "A and B" (`lib/shuffleOptions.ts`, pinned over every bank by `tests/shuffle-options.test.cjs`)
 
-**Training sets** mirror tests: 4 sets of 50 questions with mastery-based progression and a wrong-answer queue for spaced repetition.
+**Training sets** mirror tests: 4 sets of 50 questions with mastery-based progression and a wrong-answer queue for spaced repetition. Fresh questions are asked mixed, not in ID order (`lib/trainingOrder.ts`, Nov 2026: a golden-ratio stride within each category, categories spread evenly through the set), so one subtopic never comes in a long run; DMV, v1 registry exams and the MCP catalog practice all use it. Set and part contents stay in ID order, so `trainingParts.json` and stored progress are unchanged. v2 drills keep their easy-to-hard order.
 
 ### Zustand Store Structure
 

@@ -204,10 +204,10 @@
     "optionA": "Use it carefully till shift end",
     "optionB": "Fix it yourself if you can",
     "optionC": "Tag it out and report it",
-    "optionD": "Note it and keep working",
+    "optionD": "Report it and keep working",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A truck with a safety defect must be isolated, tagged out of service and reported to an authorised person. Only a competent person should repair it."
+    "explanation": "A truck with a safety defect must be isolated, tagged out of service and reported to an authorised person; reporting it while still driving it leaves the danger in use. Only a competent person should repair it."
   },
   {
     "type": "AUFORKLIFT",
@@ -428,10 +428,10 @@
     "optionA": "Sound the horn and keep going",
     "optionB": "Steer around them without slowing",
     "optionC": "Stop and wait till they're clear",
-    "optionD": "Flash the lights and continue",
+    "optionD": "Stop, then edge forward to hurry them",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Stop and let the pedestrian clear the path before moving. A horn warns people but does not make it safe to drive at them."
+    "explanation": "Stop and let the pedestrian clear the path before moving. A horn warns people but does not make it safe to drive at them, and creeping forward to hurry them is still driving at them."
   },
   {
     "type": "AUFORKLIFT",
@@ -483,7 +483,7 @@
     "question": "The lighting in your work area has failed and you cannot see clearly. What should you do?",
     "optionA": "Rely on the truck's beeper",
     "optionB": "Work faster to finish before dark",
-    "optionC": "Stop and get the lighting fixed",
+    "optionC": "Wait until the lighting is fixed",
     "optionD": "Use the horn more often",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -509,7 +509,7 @@
     "questionId": "AUFORKLIFT-PLN-009",
     "category": "auforkliftPlan",
     "question": "Strong gusts start while you are moving tall, light cartons outdoors. What is the safest action?",
-    "optionA": "Stop until the wind eases",
+    "optionA": "Wait until the wind eases",
     "optionB": "Lift the load above the gusts",
     "optionC": "Drive faster to finish the job",
     "optionD": "Tilt the mast fully forward",
@@ -526,10 +526,10 @@
     "optionA": "Keep working under the guard",
     "optionB": "Stop work and take shelter",
     "optionC": "Raise the mast to earth it",
-    "optionD": "Keep going until it's overhead",
+    "optionD": "Stop once it's overhead",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Lightning is a serious hazard to anyone working outdoors on plant. Stop, park the truck safely and shelter until the storm passes."
+    "explanation": "Lightning is a serious hazard to anyone working outdoors on plant, and it can strike well before the storm is overhead. Stop as it approaches, park the truck safely and shelter until the storm passes."
   },
   {
     "type": "AUFORKLIFT",
@@ -649,13 +649,13 @@
     "questionId": "AUFORKLIFT-PLN-019",
     "category": "auforkliftPlan",
     "question": "A spotter is guiding you and you lose sight of them. What should you do?",
-    "optionA": "Keep going slowly",
+    "optionA": "Stop at the end of the aisle",
     "optionB": "Sound the horn and continue",
     "optionC": "Stop straight away",
     "optionD": "Reverse to find them",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "If you cannot see your spotter or their signals, stop until contact is back. They may be in the path of the truck or the load."
+    "explanation": "If you cannot see your spotter or their signals, stop at once until contact is back, not at the end of the aisle. They may be in the path of the truck or the load."
   },
   {
     "type": "AUFORKLIFT",
@@ -734,12 +734,12 @@
     "category": "auforkliftPlan",
     "question": "A barrier listed in the traffic plan is missing from the work area. What should you do?",
     "optionA": "Report it before starting work",
-    "optionB": "Work around the gap very carefully",
+    "optionB": "Report it, then work around the gap",
     "optionC": "Make your own sign for it",
     "optionD": "Ignore it if it is quiet",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Risk controls that are missing or deficient must be reported to the relevant person before work starts. Do not improvise or assume the area will stay quiet."
+    "explanation": "Risk controls that are missing or deficient must be reported to the relevant person, and fixed, before work starts. Do not work around the gap, improvise or assume the area will stay quiet."
   },
   {
     "type": "AUFORKLIFT",
@@ -778,7 +778,7 @@
     "optionA": "Answer it on straight aisles only",
     "optionB": "Answer while reversing slowly",
     "optionC": "Text back, but don't talk",
-    "optionD": "Stop the truck before answering",
+    "optionD": "Park safely, then answer it",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Driving a forklift needs your full attention and both hands. Stop and park safely before using a phone or radio handset, or follow the site rule."
@@ -930,12 +930,12 @@
     "category": "auforkliftChecks",
     "question": "During a pre-start you find a crack at the heel of a fork arm. What should you do?",
     "optionA": "Use it for light loads only",
-    "optionB": "Swap it with the other fork",
+    "optionB": "Report it, then use it for light loads",
     "optionC": "Tag it out and report it",
     "optionD": "Weld it before the shift",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A cracked fork arm can fail without warning under load. The truck must be taken out of service and the fork replaced or inspected by a competent person."
+    "explanation": "A cracked fork arm can fail without warning under any load, light or heavy. The truck must be tagged out of service at once and the fork replaced or inspected by a competent person."
   },
   {
     "type": "AUFORKLIFT",
@@ -959,11 +959,11 @@
     "question": "During a pre-start you find the data plate is missing. What should you do?",
     "optionA": "Don't use it; report it",
     "optionB": "Use another truck's plate",
-    "optionC": "Judge capacity from its size",
+    "optionC": "Report it, then use it lightly",
     "optionD": "Use it for light loads only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Without a legible data plate you cannot know the truck's rated capacity. Report it and do not use the truck until the correct plate is fitted."
+    "explanation": "Without a legible data plate you cannot know the truck's rated capacity, even for light loads. Report it and do not use the truck at all until the correct plate is fitted."
   },
   {
     "type": "AUFORKLIFT",
@@ -985,13 +985,13 @@
     "questionId": "AUFORKLIFT-CHK-007",
     "category": "auforkliftChecks",
     "question": "A puddle of oil sits under the parked forklift at the pre-start. What should you do?",
-    "optionA": "Wipe it up and start work",
+    "optionA": "Wipe it up, report it, start work",
     "optionB": "Top up the oil and start work",
     "optionC": "Find the source and report it",
     "optionD": "Move the truck to a dry spot",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A fluid leak can mean a failing hydraulic hose or seal, and the spill is a slip hazard. Find where it comes from and report it before use."
+    "explanation": "A fluid leak can mean a failing hydraulic hose or seal, and the spill is a slip hazard. Find where it comes from and report it before use; reporting it and starting work anyway uses a truck that may be failing."
   },
   {
     "type": "AUFORKLIFT",
@@ -1055,13 +1055,13 @@
     "questionId": "AUFORKLIFT-CHK-012",
     "category": "auforkliftChecks",
     "question": "During operational checks the steering has too much free play. What should you do?",
-    "optionA": "Drive slowly for the shift",
+    "optionA": "Report it after the shift",
     "optionB": "Use it for empty runs only",
     "optionC": "Tighten the column yourself",
     "optionD": "Report it and don't use it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Steering faults can cause loss of control. Report the fault, tag the truck out and let a competent person repair it."
+    "explanation": "Steering faults can cause loss of control. Report the fault now, not after the shift, tag the truck out and let a competent person repair it."
   },
   {
     "type": "AUFORKLIFT",
@@ -1086,10 +1086,10 @@
     "optionA": "Grease it and carry on",
     "optionB": "Shut down, tag out, report",
     "optionC": "Ignore it if it lifts",
-    "optionD": "Use it until the next service",
+    "optionD": "Report it at the next service",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Unusual noises are a sign of wear or damage. Stop, isolate the truck and report it so it can be checked."
+    "explanation": "Unusual noises are a sign of wear or damage. Stop, isolate the truck and report it now so it can be checked, rather than waiting for the next service."
   },
   {
     "type": "AUFORKLIFT",
@@ -1394,7 +1394,7 @@
     "optionA": "It is higher",
     "optionB": "It is the same",
     "optionC": "It is not shown",
-    "optionD": "It is lower",
+    "optionD": "It is less",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Lifting higher raises the combined centre of gravity and reduces stability, so many plates and load charts reduce capacity above a set height."
@@ -1827,7 +1827,7 @@
     "question": "The truck's plate for an attachment shows 1800 kg. The attachment's own plate says 1500 kg. What is the working limit?",
     "optionA": "1800 kg, the truck value",
     "optionB": "3300 kg, the sum",
-    "optionC": "1500 kg, the lower value",
+    "optionC": "1500 kg, the smaller value",
     "optionD": "1650 kg, the average",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2105,13 +2105,13 @@
     "questionId": "AUFORKLIFT-OPR-015",
     "category": "auforkliftOperate",
     "question": "You bump a rack upright and dent it. What should you do?",
-    "optionA": "Keep using the rack",
+    "optionA": "Report it at the end of the week",
     "optionB": "Bend it back yourself",
     "optionC": "Report it straight away",
     "optionD": "Move the load and say nothing",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Damaged racking can collapse. Report all impacts so the rack can be inspected and unloaded if needed."
+    "explanation": "Damaged racking can collapse. Report every impact straight away so the rack can be inspected and unloaded if needed; a week of loading on a dented upright is a week of risk."
   },
   {
     "type": "AUFORKLIFT",
@@ -2204,7 +2204,7 @@
     "category": "auforkliftOperate",
     "question": "Following another forklift, how much gap should you keep?",
     "optionA": "Half a truck length",
-    "optionB": "Enough to stop safely",
+    "optionB": "Enough room to brake safely",
     "optionC": "Close, to stay in convoy",
     "optionD": "Just a metre or so",
     "correctAnswer": "B",
@@ -2331,7 +2331,7 @@
     "question": "Before changing from forward to reverse, what should you do?",
     "optionA": "Slow to walking pace",
     "optionB": "Shift while still rolling",
-    "optionC": "Come to a complete stop",
+    "optionC": "Bring the truck to a halt",
     "optionD": "Just sound the horn",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2429,7 +2429,7 @@
     "question": "May you leave the truck with a load still raised?",
     "optionA": "Yes, for a few minutes",
     "optionB": "No, lower it first",
-    "optionC": "Yes, with the brake on",
+    "optionC": "Yes, once stopped with the brake on",
     "optionD": "Yes, if someone watches it",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -2525,7 +2525,7 @@
     "questionId": "AUFORKLIFT-PWR-005",
     "category": "auforkliftPower",
     "question": "Why remove the key when you leave the forklift?",
-    "optionA": "To stop unauthorised use",
+    "optionA": "To prevent unauthorised use",
     "optionB": "To save the battery",
     "optionC": "To cool the engine",
     "optionD": "To reset the hour meter reading",
@@ -2597,11 +2597,11 @@
     "question": "You smell gas after fitting a new LPG cylinder. What should you do?",
     "optionA": "Start the engine to check the seal",
     "optionB": "Close the valve and report it",
-    "optionC": "Keep going if it fades",
+    "optionC": "Report it only if it lingers",
     "optionD": "Spray it with water",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A gas smell means a leak, often a damaged seal or a loose fitting. Close the cylinder valve, keep ignition sources away and report it."
+    "explanation": "A gas smell means a leak, often a damaged seal or a loose fitting. Close the cylinder valve, keep ignition sources away and report it, even if the smell fades."
   },
   {
     "type": "AUFORKLIFT",
@@ -2708,7 +2708,7 @@
     "category": "auforkliftPower",
     "question": "Before refuelling a diesel forklift, what should you do?",
     "optionA": "Leave it idling to save time",
-    "optionB": "Stop the engine; no smoking",
+    "optionB": "Switch off; no smoking nearby",
     "optionC": "Refuel it inside the store",
     "optionD": "Fill it until it overflows",
     "correctAnswer": "B",

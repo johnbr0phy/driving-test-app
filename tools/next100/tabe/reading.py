@@ -542,7 +542,7 @@ ITEMS = [
       "Officials said the drains were working but could not keep up with nearly four inches of rain in three hours. Clogged drains are the blogger's claim, not the paper's.",
       stim="TABE-D-R4", basics="causeEffect"),
     Q(0, KEY, 2, "Central idea of a text", "What does the resident's blog focus on most?",
-      ["Her family's night and neighbors' help", "The total number of homes that flooded",
+      ["One family's night and neighbors' help", "The total number of homes that flooded",
        "The city's plan to fix the creek", "How fire crews used boats"],
       "The blog describes the water reaching their home, the help from neighbors and the cleanup. Counts of homes and rescue boats come from the newspaper.",
       stim="TABE-D-R4", basics="mainIdea"),

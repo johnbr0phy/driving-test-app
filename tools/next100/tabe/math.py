@@ -278,11 +278,11 @@ ITEMS = [
       "On a scatter plot of hours studied and test scores, one student studied 1 hour and scored 98, far from all the other points. What is this point called?",
       ["An outlier", "A cluster", "The line of fit", "A negative association"],
       "A point far from the pattern of the rest is an outlier. A cluster is a group of points close together."),
-    Q(0, DATA, 2, "Biased sample",
-      "A survey asks only people at a gym how often they exercise, then reports the result for the whole town. Why might the result be misleading?",
-      ["Gym visitors are not typical", "The sample is far too large to use",
+    Q(0, DATA, 2, "Sample size",
+      "A town of 20,000 people picks 5 residents at random and asks how often they exercise, then reports the result for the whole town. What is the main problem with this survey?",
+      ["The sample is too small", "The residents were picked at random",
        "Exercise cannot really be measured", "Every resident was asked"],
-      "People at a gym likely exercise more than most residents, so the sample is not representative. The problem is who was asked, not the sample's size."),
+      "Picking at random is good, but 5 people is far too few: by chance they could all exercise a lot or hardly at all. A larger random sample gives a result much closer to the whole town's."),
 
     # Geometry (6)
     N(0, GEO, 1, "Angle sum of a triangle",

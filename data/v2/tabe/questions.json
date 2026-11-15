@@ -1297,7 +1297,7 @@
       "format": "single",
       "stem": "Read the sentence.\n\n\"At this point in time, the store is currently hiring new employees.\"\n\nWhich revision is the most concise?",
       "options": [
-        "The store is hiring.",
+        "The store is hiring new employees.",
         "At this time, the store is currently hiring.",
         "Currently the store hires new employees now.",
         "The store, at this point, is hiring employees now."
@@ -1305,7 +1305,7 @@
       "correct": [
         0
       ],
-      "explanation": "At this point in time, currently and now all say the same thing, and hired staff are new by definition. The store is hiring keeps the meaning in the fewest words."
+      "explanation": "\"At this point in time\" and \"currently\" repeat the same idea, so dropping both keeps the meaning in the fewest words: The store is hiring new employees. The other choices still repeat the idea of now or drop part of the meaning."
     },
     {
       "id": "TABE-T1-056",
@@ -3083,7 +3083,7 @@
       "format": "single",
       "stem": "What does the resident's blog focus on most?",
       "options": [
-        "Her family's night and neighbors' help",
+        "One family's night and neighbors' help",
         "How fire crews used boats",
         "The total number of homes that flooded",
         "The city's plan to fix the creek"
@@ -3789,20 +3789,20 @@
       "test": 0,
       "module": 1,
       "domain": "tabeMathData",
-      "skill": "Biased sample",
+      "skill": "Sample size",
       "difficulty": 2,
       "format": "single",
-      "stem": "A survey asks only people at a gym how often they exercise, then reports the result for the whole town. Why might the result be misleading?",
+      "stem": "A town of 20,000 people picks 5 residents at random and asks how often they exercise, then reports the result for the whole town. What is the main problem with this survey?",
       "options": [
-        "Gym visitors are not typical",
-        "The sample is far too large to use",
+        "The sample is too small",
         "Exercise cannot really be measured",
+        "The residents were picked at random",
         "Every resident was asked"
       ],
       "correct": [
         0
       ],
-      "explanation": "People at a gym likely exercise more than most residents, so the sample is not representative. The problem is who was asked, not the sample's size."
+      "explanation": "Picking at random is good, but 5 people is far too few: by chance they could all exercise a lot or hardly at all. A larger random sample gives a result much closer to the whole town's."
     },
     {
       "id": "TABE-D-051",
@@ -4226,17 +4226,17 @@
       "difficulty": 2,
       "basics": "pronounCase",
       "format": "single",
-      "stem": "Read the sentence.\n\n\"Between you and ___, the plan will not work.\"\n\nWhich word correctly fills the blank?",
+      "stem": "Read the sentence.\n\n\"Ana and ___ worked late to finish the order.\"\n\nWhich word correctly fills the blank?",
       "options": [
-        "myself",
         "me",
         "I",
-        "mine"
+        "mine",
+        "myself"
       ],
       "correct": [
         1
       ],
-      "explanation": "Between is a preposition, so it takes the object pronoun me."
+      "explanation": "The pronoun is part of the subject, the people who worked, so it is the subject pronoun I. Test it alone: \"I worked late,\" not \"me worked late.\""
     },
     {
       "id": "TABE-D-071",
@@ -4244,21 +4244,21 @@
       "test": 0,
       "module": 1,
       "domain": "tabeLangConventions",
-      "skill": "Comma splices",
+      "skill": "Run-on sentences",
       "difficulty": 2,
       "basics": "commaSplices",
       "format": "single",
-      "stem": "Read the sentence.\n\n\"The store opens at nine, the doors are locked until then.\"\n\nWhich revision is correct?",
+      "stem": "Read the sentence.\n\n\"The store opens at nine the doors are locked until then.\"\n\nWhich revision is correct?",
       "options": [
-        "nine, then the doors",
-        "nine, and, the doors",
-        "nine; the doors",
-        "nine the doors"
+        "nine the, doors",
+        "nine and, the doors",
+        "nine. The doors",
+        "nine, the doors"
       ],
       "correct": [
         2
       ],
-      "explanation": "A semicolon can join two complete sentences. A comma alone, or a comma with then, still leaves a comma splice."
+      "explanation": "This is a run-on: two complete sentences with nothing between them. A period after nine makes two sentences. A comma alone would be a comma splice, and the other commas are in the wrong place."
     },
     {
       "id": "TABE-D-072",

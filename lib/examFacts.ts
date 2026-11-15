@@ -3797,6 +3797,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full 60-question AP Biology multiple-choice sections and eight drills, one per unit, all free with no account required. The free-response section is not included.",
   },
+  staarbio: {
+    answer:
+      "STAAR Biology is the Texas end-of-course test for high school Biology, given by the Texas Education Agency. On the blueprint effective beginning with the Spring 2026 administration it has 33 to 35 questions worth 40 points in four strands: Biological Structures, Functions, and Processes (12 to 14 questions), Mechanisms of Genetics (7 to 9), Biological Evolution (7 to 9) and Interdependence within Environmental Systems (5 to 7). Question types include multiple choice, multiselect, drag and drop, hot spot, inline choice, match table grid, text entry and short constructed response, and some come in cluster sets that share a scenario. There is no fixed time limit: students are expected to finish in about three to four hours, within the school day. A calculator is required. On the Spring 2026 test, Approaches Grade Level began at a scale score of 3550, Meets at 4000 and Masters at 4570.",
+    rows: [
+      { label: "Questions", value: "33 to 35, worth 40 points" },
+      { label: "Strands", value: "Structures and processes 12-14, Genetics 7-9, Evolution 7-9, Interdependence 5-7" },
+      { label: "Time", value: "Untimed; about 3 to 4 hours, up to 7 in one school day" },
+      { label: "Calculator", value: "Required (built-in tool online)" },
+      { label: "Score", value: "Scale score; Approaches 3550, Meets 4000, Masters 4570 (Spring 2026)" },
+      { label: "Given by", value: "Texas Education Agency" },
+    ],
+    basedOn: "TEA's Biology STAAR Blueprint (effective Spring 2026), the Biology assessed curriculum (2025-2026), the 2026-2027 STAAR Test Administrator Manual and the Spring 2026 Biology raw score conversion table",
+    source: { name: "Texas Education Agency", url: "https://tea.texas.gov/data-reports/staar/biology-blueprint-2026.pdf" },
+    tigertest:
+      "Tigertest has two full 35-question STAAR Biology practice tests, untimed and split by strand like the real blueprint, and nine drills by tested standard, all free with no account required. Only multiple choice and choose-two questions are included.",
+  },
   phcse: {
     answer:
       "The Civil Service Exam (Career Service Examination, Pen and Paper Test or CSE-PPT) is the Civil Service Commission's test for eligibility for permanent government positions in the Philippines. It has two levels. Both test verbal ability (in English and Filipino), numerical ability and general information on the Philippine Constitution, R.A. 6713, peace and human rights, and the environment; the Professional level adds analytical ability and the Subprofessional level adds clerical ability. For the 2026 sittings the Professional level had 170 items in 3 hours and 10 minutes and the Subprofessional level 165 items in 2 hours and 40 minutes. You need a general rating of at least 80.00 to pass. Professional eligibility covers first and second level positions; Subprofessional covers first level positions only.",

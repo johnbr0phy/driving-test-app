@@ -62,6 +62,8 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
 const BORROWED_SETS: Record<string, string> = {
   dmv: "driving",
   hiset: "ged",
+  // Texas Biology EOC wears the AP Biology tiger.
+  staarbio: "apbio",
   ukwater: "caplumb",
   ukg3: "caplumb",
   ukplumb: "caplumb",

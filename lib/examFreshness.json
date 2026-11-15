@@ -388,6 +388,14 @@
       "what": "HB 8 replaces STAAR with the Student Success Tool from the 2027-28 school year; the Algebra I end-of-course test stays required, with optional beginning- and middle-of-year tests.",
       "action": "Check TEA's SST Algebra I blueprint and question types; re-weight the bank and update the landing, facts and names.",
       "source": "https://tea.texas.gov/data-reports/staar/hb-8-faq-update.pdf"
+    },
+    {
+      "exam": "staarbio",
+      "date": "2027-08-01",
+      "kind": "sunset",
+      "what": "House Bill 8: STAAR is replaced by a new assessment program (possibly called the Student Success Tool) beginning in the 2027-28 school year; TEA has posted draft SST Biology blueprints.",
+      "action": "Re-check TEA's Biology blueprint for the new program; rebuild or retire the STAAR Biology bank and landing.",
+      "source": "https://tea.texas.gov/data-reports/student-assessment-overview/house-bill-8-student-assessment"
     }
   ]
 }

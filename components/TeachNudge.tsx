@@ -55,7 +55,7 @@ const TEACHER_LED = new Set([
   "eqao9", "staareng1",
   "naplan7", "vicsel", "hscmaths",
   // Primary school classes
-  "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth",
+  "timestables", "ks2", "elevenplus", "ocnsw", "mapgrowth", "staarbio",
   // Texas high school end-of-course classes
   "staaralg1",
   // Trade schools, pre-licensing courses and instructor-led certifications

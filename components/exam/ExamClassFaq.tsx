@@ -167,6 +167,7 @@ export const TEACHES: Record<string, string> = {
   apitalian: "AP Italian Language and Culture",
   apgov: "AP U.S. Government and Politics",
   apbio: "AP Biology",
+  staarbio: "high school Biology",
   phcse: "a civil service exam review class",
   upscse: "a civil services coaching class",
   nda: "an NDA coaching batch",

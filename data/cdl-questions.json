@@ -1719,7 +1719,7 @@
     "optionD": "When traffic is light and road conditions are ideal",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Federal rules ban holding, dialing or texting on a hand-held phone while driving a commercial vehicle, including while briefly stopped in traffic or at a light. Pull off the road to a safe place first; only hands-free, single-touch use is allowed while driving. Federal rules also ban hand-held phone use while you are stopped at a light or in traffic."
+    "explanation": "Federal rules ban holding, dialing or texting on a hand-held phone while driving a commercial vehicle, including while briefly stopped in traffic or at a light. Pull off the road to a safe place first; only hands-free, single-touch use is allowed while driving."
   },
   {
     "questionId": "CDL-GK-124",
@@ -3913,11 +3913,11 @@
     "question": "What should you do if you suspect your vehicle has been involved in a hit-and-run?",
     "optionA": "Drive on safely and inspect it at your destination",
     "optionB": "Stop only if there's visible damage",
-    "optionC": "Report to police even if damage seems minor",
+    "optionC": "Report it to police only once you reach your destination",
     "optionD": "Stop and inspect your vehicle safely",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "If you suspect you've been involved in a hit-and-run, stop as soon as it's safe to inspect your vehicle and determine if an accident occurred. Report any damage to authorities. Waiting until your destination is not enough; stop and check now."
+    "explanation": "If you suspect you've been involved in a hit-and-run, stop as soon as it's safe to inspect your vehicle and determine if an accident occurred. Report any damage to authorities. Waiting until your destination is not enough; stop and check now. Reporting it later from your destination skips the check you owe at the scene."
   },
   {
     "questionId": "CDL-GK-281",
@@ -5227,13 +5227,13 @@
     "state": "ALL",
     "category": "weatherDriving",
     "question": "What should you do if your engine overheats in hot weather?",
-    "optionA": "Stop immediately and turn off the engine",
+    "optionA": "Stop as soon as it is safe and let it cool",
     "optionB": "Stop, then remove the radiator cap at once",
     "optionC": "Add cold water to the radiator immediately",
     "optionD": "Increase engine speed to improve cooling",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Continuing to operate an overheated engine can cause severe damage; stop immediately and allow it to cool before proceeding. Never remove the radiator cap on a hot engine, because hot coolant and steam can cause severe burns."
+    "explanation": "Continuing to operate an overheated engine can cause severe damage; stop as soon as it is safe and let it cool before proceeding. Never remove the radiator cap on a hot engine, because hot coolant and steam can cause severe burns."
   },
   {
     "questionId": "CDL-GK-375",
@@ -5396,12 +5396,12 @@
     "category": "weatherDriving",
     "question": "If you're caught in a severe thunderstorm while driving, you should?",
     "optionA": "Drive on at a safe speed until it passes",
-    "optionB": "Pull over using hazard lights",
+    "optionB": "Pull onto the shoulder with hazards on and keep watching traffic",
     "optionC": "Find safe shelter and wait it out",
     "optionD": "Continue at normal speed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Severe thunderstorms create dangerous driving conditions including wind, hail, and poor visibility that require finding safe shelter. In a severe storm no speed is reliably safe, so driving on until it passes is the wrong choice."
+    "explanation": "Severe thunderstorms create dangerous driving conditions including wind, hail, and poor visibility that require finding safe shelter. In a severe storm no speed is reliably safe, so driving on until it passes is the wrong choice. Sitting on the shoulder still leaves you exposed to wind, hail and traffic that cannot see you."
   },
   {
     "questionId": "CDL-GK-387",
@@ -5870,7 +5870,7 @@
     "type": "CDL",
     "state": "ALL",
     "category": "mountainDriving",
-    "question": "When descending a long grade, you should check your brakes by?",
+    "question": "Before descending a long grade, how should you check that your brakes respond?",
     "optionA": "Applying them hard briefly to test maximum stopping power",
     "optionB": "Pumping them rapidly to check for proper response",
     "optionC": "Riding them lightly to keep them effective",
@@ -6633,7 +6633,7 @@
     "optionD": "Flash hazard lights",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Federal and state laws require all vehicles to yield right-of-way by pulling over and stopping for emergency vehicles with activated lights and sirens. Pulling over only after they pass is too late; you must yield as they approach."
+    "explanation": "State laws require drivers to yield right-of-way by pulling over and stopping for emergency vehicles with activated lights and sirens. Pulling over only after they pass is too late; you must yield as they approach."
   },
   {
     "questionId": "CDL-GK-475",

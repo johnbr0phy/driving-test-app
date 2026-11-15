@@ -1719,7 +1719,7 @@
     "optionD": "Cuando hay poco tráfico y el camino está en condiciones ideales",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las normas federales prohíben sostener, marcar o enviar mensajes con un teléfono de mano mientras conduce un vehículo comercial, incluso cuando está detenido brevemente en el tráfico o en un semáforo. Primero oríllese en un lugar seguro; mientras conduce solo se permite el uso de manos libres con un solo toque. Las normas federales también prohíben usar el teléfono en la mano mientras está detenido en un semáforo o en el tráfico."
+    "explanation": "Las normas federales prohíben sostener, marcar o enviar mensajes con un teléfono de mano mientras conduce un vehículo comercial, incluso cuando está detenido brevemente en el tráfico o en un semáforo. Primero oríllese en un lugar seguro; mientras conduce solo se permite el uso de manos libres con un solo toque."
   },
   {
     "questionId": "CDL-GK-124",
@@ -3913,11 +3913,11 @@
     "question": "¿Qué debe hacer si sospecha que su vehículo estuvo involucrado en un choque en el que alguien se dio a la fuga?",
     "optionA": "Seguir con cuidado e inspeccionarlo en su destino",
     "optionB": "Detenerse solo si hay daños visibles",
-    "optionC": "Reportarlo a la policía aunque el daño parezca menor",
+    "optionC": "Reportarlo a la policía solo al llegar a su destino",
     "optionD": "Detenerse e inspeccionar su vehículo con seguridad",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Si sospecha que estuvo involucrado en un choque con fuga, deténgase en cuanto sea seguro para inspeccionar su vehículo y determinar si hubo un choque. Reporte cualquier daño a las autoridades. Esperar a llegar a su destino no basta; deténgase y revise ahora."
+    "explanation": "Si sospecha que estuvo involucrado en un choque con fuga, deténgase en cuanto sea seguro para inspeccionar su vehículo y determinar si hubo un choque. Reporte cualquier daño a las autoridades. Esperar a llegar a su destino no basta; deténgase y revise ahora. Reportarlo más tarde desde su destino omite la revisión que debe hacer en el lugar."
   },
   {
     "questionId": "CDL-GK-281",
@@ -5227,13 +5227,13 @@
     "state": "ALL",
     "category": "weatherDriving",
     "question": "¿Qué debe hacer si el motor se sobrecalienta con clima caluroso?",
-    "optionA": "Detenerse de inmediato y apagar el motor",
+    "optionA": "Detenerse en cuanto sea seguro y dejar que se enfríe",
     "optionB": "Parar y quitar de inmediato el tapón del radiador",
     "optionC": "Agregar agua fría al radiador de inmediato",
     "optionD": "Acelerar el motor para mejorar el enfriamiento",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Seguir operando un motor sobrecalentado puede causarle daños graves; deténgase de inmediato y deje que se enfríe antes de continuar. Nunca quite el tapón del radiador con el motor caliente, porque el refrigerante caliente y el vapor pueden causar quemaduras graves."
+    "explanation": "Seguir operando un motor sobrecalentado puede causarle daños graves; deténgase en cuanto sea seguro y deje que se enfríe antes de continuar. Nunca quite el tapón del radiador con el motor caliente, porque el refrigerante caliente y el vapor pueden causar quemaduras graves."
   },
   {
     "questionId": "CDL-GK-375",
@@ -5396,12 +5396,12 @@
     "category": "weatherDriving",
     "question": "Si lo sorprende una tormenta eléctrica fuerte mientras maneja, ¿qué debe hacer?",
     "optionA": "Seguir manejando a una velocidad segura hasta que pase",
-    "optionB": "Orillarse con las luces de emergencia",
+    "optionB": "Orillarse con las luces de emergencia y seguir vigilando el tráfico",
     "optionC": "Buscar un refugio seguro y esperar a que pase",
     "optionD": "Seguir a velocidad normal",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las tormentas eléctricas fuertes crean condiciones peligrosas para manejar, como viento, granizo y poca visibilidad, que exigen buscar un refugio seguro. En una tormenta fuerte ninguna velocidad es realmente segura, así que seguir manejando hasta que pase es un error."
+    "explanation": "Las tormentas eléctricas fuertes crean condiciones peligrosas para manejar, como viento, granizo y poca visibilidad, que exigen buscar un refugio seguro. En una tormenta fuerte ninguna velocidad es realmente segura, así que seguir manejando hasta que pase es un error. Quedarse en el acotamiento lo sigue exponiendo al viento, al granizo y al tráfico que no lo ve."
   },
   {
     "questionId": "CDL-GK-387",
@@ -5870,7 +5870,7 @@
     "type": "CDL",
     "state": "ALL",
     "category": "mountainDriving",
-    "question": "¿Al descender una pendiente larga, debe revisar los frenos?",
+    "question": "Antes de descender una pendiente larga, ¿cómo debe comprobar que sus frenos respondan?",
     "optionA": "Aplicándolos con fuerza un momento para probar su máxima capacidad",
     "optionB": "Bombeándolos rápidamente para comprobar que respondan bien",
     "optionC": "Aplicándolos levemente todo el tiempo para que sigan eficaces",
@@ -6633,7 +6633,7 @@
     "optionD": "Encender las luces de emergencia",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las leyes federales y estatales exigen que todos los vehículos cedan el paso orillándose y deteniéndose ante vehículos de emergencia con luces y sirenas activadas. Orillarse solo después de que le pasen es demasiado tarde; debe ceder el paso cuando se acercan."
+    "explanation": "Las leyes estatales exigen que los conductores cedan el paso orillándose y deteniéndose ante vehículos de emergencia con luces y sirenas activadas. Orillarse solo después de que le pasen es demasiado tarde; debe ceder el paso cuando se acercan."
   },
   {
     "questionId": "CDL-GK-475",

@@ -4589,6 +4589,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the JAMB website and widely reproduced UTME syllabus guides, checked November 2026. Question counts are guides' figures; JAMB publishes no count per topic",
     source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
   },
+  wasscemath: {
+    answer:
+      "General Mathematics, called Mathematics (Core) in Ghana, is one of the two core subjects of the West African Senior School Certificate Examination (WASSCE), set by the West African Examinations Council (WAEC) for candidates in Nigeria, Ghana, Sierra Leone, Liberia and The Gambia; WAEC Nigeria says every 2026 and 2027 candidate sits English Language and General Mathematics. WAEC's syllabus, as published by waecsyllabus.com and other copies, sets two papers, both compulsory. Paper 1 has 50 multiple-choice objective questions drawn from the common areas of the syllabus, answered in 1 1/2 hours for 50 marks. Paper 2 has 13 essay questions in two sections, of which candidates answer 10 in 2 1/2 hours for 100 marks. Silent, non-programmable calculators and WAEC-approved mathematical tables are allowed. Results are graded A1 to F9; WAEC does not publish how marks convert to grades.",
+    rows: [
+      { label: "Paper 1", value: "50 multiple-choice questions, 1 1/2 hours, 50 marks" },
+      { label: "Paper 2", value: "13 essay questions, answer 10, 2 1/2 hours, 100 marks" },
+      { label: "Calculator", value: "Silent, non-programmable calculators allowed" },
+      { label: "Topics", value: "Number and numeration, algebraic processes, mensuration, plane geometry, coordinate geometry, trigonometry, statistics and probability" },
+      { label: "Grades", value: "A1 to F9" },
+      { label: "Taken in", value: "Nigeria, Ghana, Sierra Leone, Liberia and The Gambia" },
+      { label: "Run by", value: "West African Examinations Council (WAEC)" },
+    ],
+    basedOn: "WAEC's General Mathematics / Mathematics (Core) syllabus as published by waecsyllabus.com (page and PDF) and matching copies, and the WAEC Nigeria FAQ, checked November 2026. WAEC's own sites do not serve the syllabus, and WAEC publishes no count per topic",
+    source: { name: "WAEC syllabus (waecsyllabus.com)", url: "https://waecsyllabus.com/mathematics/" },
+  },
   jambbio: {
     answer:
       "Biology is one of the subjects in JAMB's Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education, and is required for most medical, health, agricultural and life-science courses. The UTME is 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each of the other three subjects, Biology included, has 40. Each subject is scored out of 100, so the total is out of 400. The Biology syllabus has five sections: Variety of Organisms, Form and Functions, Ecology, Heredity and Variations, and Evolution. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
@@ -4633,6 +4648,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the JAMB website and UTME Physics syllabus guides that reproduce the IBASS brochure, checked November 2026. Question counts are guides' figures; JAMB publishes no topic weights",
     source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  wassceeng: {
+    answer:
+      "English Language is a core subject of the West African Senior School Certificate Examination (WASSCE), run by the West African Examinations Council (WAEC), so every candidate takes it. WAEC's English Language syllabus, as published by syllabus sites, sets three papers. Paper 1 is 80 four-option objective questions in 1 hour for 40 marks; in Nigeria, Sierra Leone, Liberia and The Gambia that is forty on lexis (everyday vocabulary and the words of sixteen fields such as building, health, law and sport, synonyms, antonyms, idioms and figurative usage) and forty on structure. Paper 2 is an essay, a comprehension passage and a summary in 2 hours for 100 marks. Paper 3 is 60 multiple-choice items in 45 minutes for 30 marks: the Test of Orals in Nigeria and Liberia, listening comprehension in The Gambia and Sierra Leone (the syllabus's detailed section adds Ghana). Ghana's Paper 1 differs: 30 lexis, 20 structure and 30 literature. Results are graded A1 to F9.",
+    rows: [
+      { label: "Papers", value: "Paper 1 objective, Paper 2 essay, comprehension and summary, Paper 3 orals or listening" },
+      { label: "Paper 1", value: "80 questions in 1 hour for 40 marks; 40 lexis and 40 structure outside Ghana" },
+      { label: "Paper 2", value: "Essay, comprehension and summary in 2 hours, 100 marks" },
+      { label: "Paper 3", value: "60 questions in 45 minutes, 30 marks (Test of Orals in Nigeria and Liberia)" },
+      { label: "Grades", value: "A1 to F9" },
+      { label: "Run by", value: "West African Examinations Council (WAEC)" },
+    ],
+    basedOn: "WAEC's English Language syllabus as published by waecsyllabus.com (updated September 5, 2026) and myschool.ng, which agree with the hosted syllabus PDF, and WAEC Nigeria's FAQ, checked November 2026. WAEC's own sites do not serve the syllabus, so the format is the syllabus as those sites reproduce it",
+    source: { name: "WAEC Nigeria", url: "https://www.waecnigeria.org" },
   },
   apgov: {
     answer:

@@ -4201,6 +4201,20 @@
     --brand-gradient-to: 131 40% 96%;
   }
 
+  /* WASSCE Mathematics theme: deep green (v2 exam; matches lib/v2/exams/wasscemath.ts theme) */
+  [data-theme="wasscemath"] {
+    --brand: 150 75% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 150 60% 95%;
+    --brand-hover: 150 75% 18%;
+    --brand-dark: 150 75% 15%;
+    --brand-darker: 150 70% 8%;
+    --brand-muted: 150 25% 70%;
+    --brand-border: 150 35% 80%;
+    --brand-border-light: 150 35% 90%;
+    --brand-gradient-to: 130 50% 96%;
+  }
+
   /* JAMB Biology theme: muted leaf green (v2 exam; matches lib/v2/exams/jambbio.ts theme) */
   [data-theme="jambbio"] {
     --brand: 135 30% 38%;
@@ -4241,6 +4255,20 @@
     --brand-border: 231 28% 82%;
     --brand-border-light: 231 28% 91%;
     --brand-gradient-to: 225 30% 97%;
+  }
+
+  /* WASSCE English Language theme: deep violet (v2 exam; matches lib/v2/exams/wassceeng.ts theme) */
+  [data-theme="wassceeng"] {
+    --brand: 275 95% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 275 95% 96%;
+    --brand-hover: 275 95% 25%;
+    --brand-dark: 275 95% 22%;
+    --brand-darker: 275 90% 12%;
+    --brand-muted: 275 35% 72%;
+    --brand-border: 275 40% 82%;
+    --brand-border-light: 275 40% 91%;
+    --brand-gradient-to: 265 80% 97%;
   }
 
   /* AP U.S. Government and Politics theme: deep brick (v2 exam; matches lib/v2/exams/apgov.ts theme) */
@@ -8511,6 +8539,18 @@
     --brand-darker: 151 40% 78%;
   }
 
+  .dark [data-theme="wasscemath"] {
+    --brand: 150 75% 30.1%;
+    --brand-hover: 150 75% 22.1%;
+    --brand-light: 150 45% 13%;
+    --brand-gradient-to: 130 40% 11%;
+    --brand-border-light: 150 35% 24%;
+    --brand-border: 150 35% 34%;
+    --brand-muted: 150 25% 45%;
+    --brand-dark: 150 75% 65%;
+    --brand-darker: 150 70% 78%;
+  }
+
   .dark [data-theme="jambbio"] {
     --brand: 135 30% 39.1%;
     --brand-hover: 135 30% 32%;
@@ -8545,6 +8585,18 @@
     --brand-muted: 231 20% 45%;
     --brand-dark: 231 36% 65%;
     --brand-darker: 231 32% 78%;
+  }
+
+  .dark [data-theme="wassceeng"] {
+    --brand: 275 95% 50%;
+    --brand-hover: 275 95% 42%;
+    --brand-light: 275 45% 13%;
+    --brand-gradient-to: 265 40% 11%;
+    --brand-border-light: 275 35% 24%;
+    --brand-border: 275 40% 34%;
+    --brand-muted: 275 35% 45%;
+    --brand-dark: 275 95% 65%;
+    --brand-darker: 275 90% 78%;
   }
 
   .dark [data-theme="apgov"] {

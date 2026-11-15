@@ -1,0 +1,4421 @@
+[
+  {
+    "id": "WASSCEMATH-T1-001",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Converting to base ten",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Convert $101101_{2}$ to a number in base ten.",
+    "options": [
+      "41",
+      "45",
+      "53",
+      "90"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$101101_{2} = 32 + 0 + 8 + 4 + 0 + 1 = 45$. Each digit is multiplied by a power of 2, starting with $2^0 = 1$ on the right."
+  },
+  {
+    "id": "WASSCEMATH-T1-002",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Adding in a base",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the sum of $344_{5}$ and $231_{5}$, giving the answer in base five.",
+    "options": [
+      "$1120_{5}$",
+      "$1130_{5}$",
+      "$1020_{5}$",
+      "$575_{5}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$344_{5} = 99$ and $231_{5} = 66$, so the sum is $165 = 1 \\times 125 + 1 \\times 25 + 3 \\times 5 + 0$, which is $1130_{5}$. Adding the digits as in base ten gives 575, which is not even a base-five numeral because 7 and 5 are not base-five digits."
+  },
+  {
+    "id": "WASSCEMATH-T1-003",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Modular arithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $(17 + 26) \\pmod{7}$.",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$17 + 26 = 43$ and $43 = 6 \\times 7 + 1$, so $43 \\equiv 1 \\pmod{7}$. The 6 is the quotient, not the remainder."
+  },
+  {
+    "id": "WASSCEMATH-T1-004",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Standard form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Express 0.0005073 in standard form, correct to 2 significant figures.",
+    "options": [
+      "$5.0 \\times 10^{-4}$",
+      "$5.07 \\times 10^{-4}$",
+      "$5.1 \\times 10^{-4}$",
+      "$5.1 \\times 10^{-3}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "To 2 significant figures 0.0005073 is 0.00051, because the third figure, 7, rounds the 0 up to 1. Moving the point 4 places right gives $5.1 \\times 10^{-4}$. $5.07 \\times 10^{-4}$ has 3 significant figures.",
+    "basics": "scientificNotation"
+  },
+  {
+    "id": "WASSCEMATH-T1-005",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Operations on fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $\\left(3\\frac{1}{2} - 1\\frac{2}{3}\\right) \\div 2\\frac{3}{4}$.",
+    "options": [
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{2}$",
+      "$\\frac{11}{6}$",
+      "$\\frac{121}{24}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$3\\frac{1}{2} - 1\\frac{2}{3} = \\frac{21}{6} - \\frac{10}{6} = \\frac{11}{6}$. Dividing by $\\frac{11}{4}$ means multiplying by $\\frac{4}{11}$: $\\frac{11}{6} \\times \\frac{4}{11} = \\frac{2}{3}$. Multiplying by $\\frac{11}{4}$ instead gives $\\frac{121}{24}$, and dividing the wrong way round gives $\\frac{3}{2}$.",
+    "basics": "fractionOps"
+  },
+  {
+    "id": "WASSCEMATH-T1-006",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Directed numbers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $-12 - (-5) \\times 3 + (-4)$.",
+    "options": [
+      "-31",
+      "-25",
+      "-23",
+      "-1"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply first: $(-5) \\times 3 = -15$, and subtracting $-15$ adds 15. So $-12 + 15 - 4 = -1$. Working left to right without the order of operations gives $(-12 + 5) \\times 3 - 4 = -25$.",
+    "basics": "negativeNumbers"
+  },
+  {
+    "id": "WASSCEMATH-T1-007",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Fractional and negative indices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $27^{\\frac{2}{3}} \\times 16^{-\\frac{1}{4}}$.",
+    "options": [
+      "$\\frac{9}{4}$",
+      "$\\frac{9}{2}$",
+      "$6$",
+      "$18$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$27^{\\frac{2}{3}} = (\\sqrt[3]{27})^2 = 3^2 = 9$ and $16^{-\\frac{1}{4}} = \\frac{1}{\\sqrt[4]{16}} = \\frac{1}{2}$. So the product is $\\frac{9}{2}$. Ignoring the minus sign gives $9 \\times 2 = 18$."
+  },
+  {
+    "id": "WASSCEMATH-T1-008",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Equations with indices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Solve $3^{x + 1} = 81$.",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "27"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$81 = 3^4$, so $x + 1 = 4$ and $x = 3$. Stopping at $x + 1 = 4$ gives the wrong answer 4."
+  },
+  {
+    "id": "WASSCEMATH-T1-009",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Rules of logarithms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Given that $\\log_{10} 2 = 0.3010$, evaluate $\\log_{10} 40$.",
+    "options": [
+      "0.6020",
+      "0.9030",
+      "1.2040",
+      "1.6020"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$40 = 4 \\times 10 = 2^2 \\times 10$, so $\\log_{10} 40 = 2(0.3010) + 1 = 1.6020$. Forgetting the factor 10 gives 0.6020."
+  },
+  {
+    "id": "WASSCEMATH-T1-010",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Rationalising a surd",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $\\frac{6}{\\sqrt{3}}$, leaving the answer in surd form.",
+    "options": [
+      "$\\sqrt{3}$",
+      "$2\\sqrt{3}$",
+      "$3\\sqrt{2}$",
+      "$6\\sqrt{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply top and bottom by $\\sqrt{3}$: $\\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}$. Multiplying only the top gives $6\\sqrt{3}$."
+  },
+  {
+    "id": "WASSCEMATH-T1-011",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Logarithms and indices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $\\log_{2} 8 + \\log_{3} \\frac{1}{9}$.",
+    "options": [
+      "-6",
+      "-1",
+      "1",
+      "5"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$8 = 2^3$, so $\\log_{2} 8 = 3$; $\\frac{1}{9} = 3^{-2}$, so $\\log_{3} \\frac{1}{9} = -2$. The sum is $3 + (-2) = 1$. Dropping the minus sign gives 5."
+  },
+  {
+    "id": "WASSCEMATH-T1-012",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "nth term of an A.P.",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The 5th term of an arithmetic progression is 17 and the 9th term is 33. Find the 20th term.",
+    "options": [
+      "69",
+      "73",
+      "76",
+      "77"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$a + 8d - (a + 4d) = 33 - 17$, so $4d = 16$ and $d = 4$; then $a = 17 - 16 = 1$. The 20th term is $a + 19d = 1 + 76 = 77$. Using $18d$ gives 73, and leaving out the first term gives 76."
+  },
+  {
+    "id": "WASSCEMATH-T1-013",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Sum of an A.P.",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the sum of the first 15 terms of the arithmetic progression 3, 7, 11, ...",
+    "options": [
+      "465",
+      "480",
+      "510",
+      "930"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$S_n = \\frac{n}{2}[2a + (n - 1)d] = \\frac{15}{2}[6 + 14 \\times 4] = \\frac{15}{2} \\times 62 = 465$. Forgetting to halve gives 930."
+  },
+  {
+    "id": "WASSCEMATH-T1-014",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Complement and intersection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\mathcal{E} = \\{1, 2, 3, \\ldots, 12\\}$, $A = \\{\\text{multiples of } 3\\}$ and $B = \\{\\text{even numbers}\\}$. Find $A \\cap B'$.",
+    "options": [
+      "$\\{3, 9\\}$",
+      "$\\{6, 12\\}$",
+      "$\\{3, 6, 9, 12\\}$",
+      "$\\{1, 5, 7, 11\\}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$A = \\{3, 6, 9, 12\\}$ and $B' = \\{1, 3, 5, 7, 9, 11\\}$, the odd numbers. The members of $A$ that are also odd are 3 and 9. $\\{6, 12\\}$ is $A \\cap B$."
+  },
+  {
+    "id": "WASSCEMATH-T1-015",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Venn diagrams with two sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Of 40 traders in a market, 25 sell yam, 18 sell cassava and 7 sell both. How many sell neither yam nor cassava?",
+    "options": [
+      "0",
+      "3",
+      "4",
+      "11"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$n(Y \\cup C) = 25 + 18 - 7 = 36$, so $40 - 36 = 4$ sell neither. Adding 25 and 18 without removing the 7 counted twice gives $43$, more than the 40 traders."
+  },
+  {
+    "id": "WASSCEMATH-T1-016",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Contrapositive",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$p$: It is raining. $q$: The road is wet. Which statement is equivalent to $p \\Rightarrow q$?",
+    "options": [
+      "If it is not raining, then the road is not wet.",
+      "It is raining and the road is not wet.",
+      "If the road is not wet, then it is not raining.",
+      "If the road is wet, then it is raining."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An implication $p \\Rightarrow q$ is equivalent to its contrapositive $\\sim q \\Rightarrow \\sim p$: if the road is not wet, it cannot be raining. The converse ($q \\Rightarrow p$) and the inverse ($\\sim p \\Rightarrow \\sim q$) are not equivalent: the road could be wet for another reason."
+  },
+  {
+    "id": "WASSCEMATH-T1-017",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Sharing in a ratio",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Three farmers, Adamu, Bisi and Chuks, share the ₦90,000 profit from a joint farm in the ratio 3 : 5 : 7. How much does Chuks receive?",
+    "options": [
+      "₦6,000",
+      "₦18,000",
+      "₦30,000",
+      "₦42,000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are $3 + 5 + 7 = 15$ parts, so one part is $\\frac{90000}{15} = 6000$. Chuks has 7 parts: ₦42,000. ₦30,000 is Bisi's share, ₦18,000 is Adamu's and ₦6,000 is a single part.",
+    "basics": "ratios"
+  },
+  {
+    "id": "WASSCEMATH-T1-018",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Compound interest",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Abena invests GH¢5,000 at 10% per annum compound interest. How much interest has she earned at the end of 3 years?",
+    "options": [
+      "GH¢1,500",
+      "GH¢1,550",
+      "GH¢1,655",
+      "GH¢6,655"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Amount $= 5000 \\times 1.1^3 = 5000 \\times 1.331 = 6655$, so the interest is $6655 - 5000 = 1655$. Simple interest would give only GH¢1,500, and GH¢6,655 is the amount, not the interest.",
+    "basics": "compoundInterest"
+  },
+  {
+    "id": "WASSCEMATH-T1-019",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Depreciation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A motorcycle bought for ₦480,000 loses 20% of its value each year, each loss worked out on its value at the start of that year. What is it worth after 2 years?",
+    "options": [
+      "₦96,000",
+      "₦192,000",
+      "₦288,000",
+      "₦307,200"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each year the value is multiplied by $0.8$: $480000 \\times 0.8 \\times 0.8 = 307200$. Taking 20% of the original price twice ($480000 - 2 \\times 96000$) gives ₦288,000, which is not how a reducing value works.",
+    "basics": "percentChange"
+  },
+  {
+    "id": "WASSCEMATH-T1-020",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Inverse variation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$y$ varies inversely as the square of $x$. When $x = 3$, $y = 8$. Find $y$ when $x = 6$.",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$y = \\frac{k}{x^2}$, so $k = 8 \\times 9 = 72$. When $x = 6$, $y = \\frac{72}{36} = 2$. Varying inversely as $x$ (not $x^2$) would give 4."
+  },
+  {
+    "id": "WASSCEMATH-T1-021",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Average speed",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A bus travels 180 km from Kumasi to Tamale in 2 hours 15 minutes. Find its average speed.",
+    "options": [
+      "72 km/h",
+      "80 km/h",
+      "84 km/h",
+      "90 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "2 hours 15 minutes is $2\\frac{15}{60} = 2.25$ hours, so the speed is $\\frac{180}{2.25} = 80$ km/h. Reading 2 h 15 min as 2.15 hours gives about 84 km/h.",
+    "basics": "rateProblems"
+  },
+  {
+    "id": "WASSCEMATH-T1-022",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Foreign exchange",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On a certain day a bureau de change gives ₦1,520 for each US dollar. How many US dollars can Emeka buy with ₦380,000 at that rate?",
+    "options": [
+      "250 US dollars",
+      "2,500 US dollars",
+      "25 US dollars",
+      "400 US dollars"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Number of dollars $= \\frac{380000}{1520} = 250$. Exchange rates change daily, so a question always states the rate to use."
+  },
+  {
+    "id": "WASSCEMATH-T1-023",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Forming and evaluating expressions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A tailor charges ₦m for sewing a shirt and ₦n for a pair of trousers. Write an expression for the charge T, in naira, for 3 shirts and 4 pairs of trousers, and find T when m = 2,500 and n = 4,000.",
+    "options": [
+      "₦7,500",
+      "₦16,000",
+      "₦22,000",
+      "₦23,500"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$T = 3m + 4n = 3(2500) + 4(4000) = 7500 + 16000 = 23500$. Swapping the numbers ($4m + 3n$) gives ₦22,000.",
+    "basics": "substitution"
+  },
+  {
+    "id": "WASSCEMATH-T1-024",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Expansion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Expand $(2x - 3)(x + 5)$.",
+    "options": [
+      "$2x^{2} + 7x + 15$",
+      "$2x^{2} + 13x - 15$",
+      "$2x^{2} - 7x - 15$",
+      "$2x^{2} + 7x - 15$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$(2x - 3)(x + 5) = 2x^2 + 10x - 3x - 15 = 2x^2 + 7x - 15$. The middle term combines $+10x$ and $-3x$.",
+    "basics": "distributing"
+  },
+  {
+    "id": "WASSCEMATH-T1-025",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Factorising a quadratic expression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Factorise $6x^{2} - x - 2$.",
+    "options": [
+      "$(2x + 1)(3x - 2)$",
+      "$(3x + 1)(2x - 2)$",
+      "$(6x + 1)(x - 2)$",
+      "$(2x - 1)(3x + 2)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Find two numbers with product $6 \\times (-2) = -12$ and sum $-1$: they are $-4$ and $3$. So $6x^2 - 4x + 3x - 2 = 2x(3x - 2) + 1(3x - 2) = (2x + 1)(3x - 2)$. Expanding $(2x - 1)(3x + 2)$ gives $+x$ in the middle, not $-x$.",
+    "basics": "factoring"
+  },
+  {
+    "id": "WASSCEMATH-T1-026",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Difference of two squares",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $63^{2} - 37^{2}$ without a calculator.",
+    "options": [
+      "676",
+      "2500",
+      "2600",
+      "3200"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$a^2 - b^2 = (a + b)(a - b)$, so $63^2 - 37^2 = (63 + 37)(63 - 37) = 100 \\times 26 = 2600$. $(63 - 37)^2 = 676$ is a different thing.",
+    "basics": "factoring"
+  },
+  {
+    "id": "WASSCEMATH-T1-027",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Simultaneous linear equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve the simultaneous equations $3x + 2y = 12$ and $x - y = -1$.",
+    "options": [
+      "$x = 2$, $y = -3$",
+      "$x = 3$, $y = 2$",
+      "$x = 2$, $y = 3$",
+      "$x = 4$, $y = 0$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From the second equation $x = y - 1$. Substitute: $3(y - 1) + 2y = 12$, so $5y = 15$, $y = 3$ and $x = 2$. Check: $6 + 6 = 12$ and $2 - 3 = -1$. The pair $x = 4$, $y = 0$ fits only the first equation.",
+    "basics": "systems"
+  },
+  {
+    "id": "WASSCEMATH-T1-028",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Change of subject",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Make $r$ the subject of the formula $A = P(1 + rt)$.",
+    "options": [
+      "$r = \\frac{A - P}{Pt}$",
+      "$r = \\frac{A - P}{t}$",
+      "$r = \\frac{A - 1}{Pt}$",
+      "$r = \\frac{A}{Pt} - P$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Divide by $P$: $\\frac{A}{P} = 1 + rt$. Subtract 1 and divide by $t$: $r = \\frac{\\frac{A}{P} - 1}{t} = \\frac{A - P}{Pt}$. Check with $P = 100$, $r = 0.05$, $t = 2$: $A = 110$ and $\\frac{110 - 100}{200} = 0.05$."
+  },
+  {
+    "id": "WASSCEMATH-T1-029",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Quadratic equations by factorisation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $x^{2} - 5x - 14 = 0$.",
+    "options": [
+      "$x = -2$ or $x = 7$",
+      "$x = -7$ or $x = 2$",
+      "$x = 7$ or $x = 2$",
+      "$x = -14$ or $x = 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$x^2 - 5x - 14 = (x - 7)(x + 2) = 0$, so $x = 7$ or $x = -2$. Check: $49 - 35 - 14 = 0$. The signs of the roots are the opposite of the signs in the factors."
+  },
+  {
+    "id": "WASSCEMATH-T1-030",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Linear inequalities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Solve the inequality $3 - 2x < 11$.",
+    "options": [
+      "$x < 4$",
+      "$x > -4$",
+      "$x > 4$",
+      "$x < -4$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Subtract 3: $-2x < 8$. Dividing by $-2$ reverses the inequality: $x > -4$. Forgetting to reverse it gives $x < -4$. Check with $x = 0$: $3 < 11$ is true, and 0 is greater than $-4$.",
+    "basics": "inequalities"
+  },
+  {
+    "id": "WASSCEMATH-T1-031",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Pythagoras' theorem",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A ladder 6.5 m long leans against a vertical wall and reaches 6 m up the wall. How far is the foot of the ladder from the wall?",
+    "options": [
+      "0.5 m",
+      "2.5 m",
+      "3 m",
+      "8.8 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The ladder is the hypotenuse: $d^2 = 6.5^2 - 6^2 = 42.25 - 36 = 6.25$, so $d = 2.5$ m. Adding the squares gives about 8.8 m, which would make the ladder the shortest side.",
+    "basics": "pythagorean"
+  },
+  {
+    "id": "WASSCEMATH-T1-032",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Length of an arc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the length of the arc of a circle of radius 14 cm that subtends an angle of $135^\\circ$ at the centre. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "33 cm",
+      "66 cm",
+      "88 cm",
+      "231 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Arc length $= \\frac{\\theta}{360} \\times 2\\pi r = \\frac{135}{360} \\times 2 \\times \\frac{22}{7} \\times 14 = \\frac{3}{8} \\times 88 = 33$ cm. 231 is the area of the sector in cm², not a length.",
+    "basics": "circleBasics"
+  },
+  {
+    "id": "WASSCEMATH-T1-033",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Area of a trapezium",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A trapezium has parallel sides of 11 cm and 17 cm, and the distance between them is 9 cm. Find its area.",
+    "options": [
+      "99 cm²",
+      "126 cm²",
+      "153 cm²",
+      "252 cm²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Area $= \\frac{1}{2}(a + b)h = \\frac{1}{2}(11 + 17) \\times 9 = 14 \\times 9 = 126$ cm². Forgetting the half gives 252 cm², and using only one parallel side gives 153 cm² or 99 cm².",
+    "basics": "areaPerimeter"
+  },
+  {
+    "id": "WASSCEMATH-T1-034",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Volume of a cylinder",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the volume of a cylindrical tin of radius 7 cm and height 10 cm. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "440 cm³",
+      "770 cm³",
+      "1540 cm³",
+      "4840 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = \\pi r^2 h = \\frac{22}{7} \\times 49 \\times 10 = 154 \\times 10 = 1540$ cm³. $2\\pi rh = 440$ is the curved surface area in cm², not the volume.",
+    "basics": "volume"
+  },
+  {
+    "id": "WASSCEMATH-T1-035",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "From a sector to a cone",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A sector of a circle of radius 12 cm with an angle of $120^\\circ$ is folded to form a cone. Find the radius of the base of the cone.",
+    "options": [
+      "4 cm",
+      "6 cm",
+      "8 cm",
+      "12 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The arc of the sector becomes the circumference of the base: $\\frac{120}{360} \\times 2\\pi \\times 12 = 8\\pi$. So $2\\pi r = 8\\pi$ and $r = 4$ cm. The radius of the sector, 12 cm, becomes the slant height."
+  },
+  {
+    "id": "WASSCEMATH-T1-036",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Volumes of similar solids",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two similar jars have heights of 6 cm and 9 cm. The smaller jar holds 160 cm³. How much does the larger jar hold?",
+    "options": [
+      "240 cm³",
+      "360 cm³",
+      "540 cm³",
+      "810 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The length ratio is $\\frac{9}{6} = \\frac{3}{2}$, so the volume ratio is $\\left(\\frac{3}{2}\\right)^3 = \\frac{27}{8}$. $160 \\times \\frac{27}{8} = 540$ cm³. Using the length ratio alone gives 240 cm³ and the area ratio gives 360 cm³."
+  },
+  {
+    "id": "WASSCEMATH-T1-037",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Interior angles of a regular polygon",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Each interior angle of a regular polygon is $156^\\circ$. How many sides does the polygon have?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "18"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each exterior angle is $180^\\circ - 156^\\circ = 24^\\circ$, and the exterior angles add up to $360^\\circ$, so $n = \\frac{360}{24} = 15$."
+  },
+  {
+    "id": "WASSCEMATH-T1-038",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Co-interior angles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two parallel lines are cut by a transversal. A pair of co-interior (allied) angles between the lines measure $(3x + 10)^\\circ$ and $(2x + 20)^\\circ$. Find $x$.",
+    "options": [
+      "10",
+      "30",
+      "34",
+      "50"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Co-interior angles add up to $180^\\circ$: $3x + 10 + 2x + 20 = 180$, so $5x = 150$ and $x = 30$. Setting the angles equal, as for alternate angles, gives $x = 10$."
+  },
+  {
+    "id": "WASSCEMATH-T1-039",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Angle at the centre",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A chord AB of a circle with centre O subtends an angle of $110^\\circ$ at O. C is a point on the major arc. Find angle ACB.",
+    "options": [
+      "55°",
+      "70°",
+      "110°",
+      "125°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle at the centre is twice the angle at the circumference on the same arc, so angle ACB $= \\frac{110^\\circ}{2} = 55^\\circ$. A point on the minor arc would give $180^\\circ - 55^\\circ = 125^\\circ$."
+  },
+  {
+    "id": "WASSCEMATH-T1-040",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Cyclic quadrilaterals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "PQRS is a cyclic quadrilateral. Angle P $= 4y^\\circ$ and the opposite angle R $= (y + 30)^\\circ$. Find angle R.",
+    "options": [
+      "30°",
+      "60°",
+      "90°",
+      "120°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Opposite angles of a cyclic quadrilateral add up to $180^\\circ$: $4y + y + 30 = 180$, so $y = 30$. Angle R $= 30 + 30 = 60^\\circ$ and angle P $= 120^\\circ$. 30 is $y$, not the angle."
+  },
+  {
+    "id": "WASSCEMATH-T1-041",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Exterior angle of a triangle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In triangle XYZ the exterior angle at Z is $118^\\circ$ and angle X is $47^\\circ$. Find angle Y.",
+    "options": [
+      "15°",
+      "47°",
+      "62°",
+      "71°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The exterior angle equals the sum of the two interior opposite angles: $X + Y = 118^\\circ$, so $Y = 118^\\circ - 47^\\circ = 71^\\circ$. $62^\\circ$ is the interior angle at Z."
+  },
+  {
+    "id": "WASSCEMATH-T1-042",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Distance between two points",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the distance between the points P(-2, 3) and Q(4, -5).",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "14"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$|PQ| = \\sqrt{(4 - (-2))^2 + (-5 - 3)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$. Adding the differences, $6 + 8$, gives the wrong 14."
+  },
+  {
+    "id": "WASSCEMATH-T1-043",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Equation of a line through two points",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the equation of the straight line through the points (1, 4) and (3, 10).",
+    "options": [
+      "$y = 3x + 1$",
+      "$y = 3x + 4$",
+      "$y = 2x + 2$",
+      "$y = \\frac{1}{3}x + \\frac{11}{3}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gradient $m = \\frac{10 - 4}{3 - 1} = 3$. Then $y - 4 = 3(x - 1)$, so $y = 3x + 1$. Check with $(3, 10)$: $9 + 1 = 10$. Turning the gradient upside down gives $\\frac{1}{3}$."
+  },
+  {
+    "id": "WASSCEMATH-T1-044",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Ratios of special angles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Without using tables or a calculator, evaluate $\\sin 60^\\circ \\cos 30^\\circ + \\cos 60^\\circ \\sin 30^\\circ$.",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{\\sqrt{3}}{2}$",
+      "1"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sin 60^\\circ = \\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$ and $\\cos 60^\\circ = \\sin 30^\\circ = \\frac{1}{2}$. So the value is $\\frac{3}{4} + \\frac{1}{4} = 1$. Stopping after the first product gives $\\frac{3}{4}$."
+  },
+  {
+    "id": "WASSCEMATH-T1-045",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Angle of elevation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "From a point on level ground 40 m from the foot of a tower, the angle of elevation of the top of the tower is $35^\\circ$. Find the height of the tower, correct to the nearest metre.",
+    "options": [
+      "23 m",
+      "28 m",
+      "33 m",
+      "57 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\tan 35^\\circ = \\frac{h}{40}$, so $h = 40 \\tan 35^\\circ = 40 \\times 0.7002 = 28.0$ m. Using $\\sin 35^\\circ$ gives 23 m and $\\cos 35^\\circ$ gives 33 m."
+  },
+  {
+    "id": "WASSCEMATH-T1-046",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Mean from a frequency table",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table shows the marks scored by 25 pupils in a short quiz.\n\n| Mark | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| Number of pupils | 3 | 5 | 8 | 6 | 3 |\n\nFind the mean mark.",
+    "options": [
+      "3",
+      "3.04",
+      "5",
+      "15.2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sum fx = 3 + 10 + 24 + 24 + 15 = 76$ and $\\sum f = 25$, so the mean is $\\frac{76}{25} = 3.04$. Dividing by 5, the number of different marks, gives 15.2.",
+    "basics": "meanMedian"
+  },
+  {
+    "id": "WASSCEMATH-T1-047",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Pie charts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A family spends ₦18,000 of its ₦60,000 monthly income on food. In a pie chart of the income, what angle does food take?",
+    "options": [
+      "18°",
+      "30°",
+      "72°",
+      "108°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Angle $= \\frac{18000}{60000} \\times 360^\\circ = 0.3 \\times 360^\\circ = 108^\\circ$. 30 is the percentage, not the angle."
+  },
+  {
+    "id": "WASSCEMATH-T1-048",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Median of a list",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the median of 7, 3, 9, 4, 12 and 8.",
+    "options": [
+      "6.5",
+      "7",
+      "7.5",
+      "8"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Arrange first: 3, 4, 7, 8, 9, 12. With six numbers the median is the mean of the 3rd and 4th: $\\frac{7 + 8}{2} = 7.5$. Taking the middle two of the unsorted list, 9 and 4, gives 6.5.",
+    "basics": "meanMedian"
+  },
+  {
+    "id": "WASSCEMATH-T1-049",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Theoretical probability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A bag contains 5 red, 3 blue and 4 green balls of the same size. One ball is picked at random. What is the probability that it is not blue?",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{5}{12}$",
+      "$\\frac{3}{4}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are $5 + 3 + 4 = 12$ balls and $12 - 3 = 9$ are not blue, so the probability is $\\frac{9}{12} = \\frac{3}{4}$. $\\frac{1}{4}$ is the probability that it is blue.",
+    "basics": "probabilityTable"
+  },
+  {
+    "id": "WASSCEMATH-T1-050",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Independent events",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The probability that Ama passes a test is $\\frac{2}{3}$ and the probability that Kwame passes is $\\frac{3}{5}$, independently. Find the probability that exactly one of them passes.",
+    "options": [
+      "$\\frac{2}{5}$",
+      "$\\frac{7}{15}$",
+      "$\\frac{13}{15}$",
+      "$\\frac{19}{15}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Exactly one passes if Ama passes and Kwame fails, or Ama fails and Kwame passes: $\\frac{2}{3} \\times \\frac{2}{5} + \\frac{1}{3} \\times \\frac{3}{5} = \\frac{4}{15} + \\frac{3}{15} = \\frac{7}{15}$. $\\frac{2}{5}$ is the chance that both pass and $\\frac{13}{15}$ that at least one passes."
+  },
+  {
+    "id": "WASSCEMATH-T2-001",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Converting from base ten",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Convert 87 to a number in base three.",
+    "options": [
+      "$10022_{3}$",
+      "$10200_{3}$",
+      "$2020_{3}$",
+      "$10020_{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Divide by 3 repeatedly: $87 = 29 \\times 3 + 0$, $29 = 9 \\times 3 + 2$, $9 = 3 \\times 3 + 0$, $3 = 1 \\times 3 + 0$, $1 = 0 \\times 3 + 1$. Reading the remainders from the bottom gives $10020_{3}$. Check: $81 + 6 = 87$."
+  },
+  {
+    "id": "WASSCEMATH-T2-002",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Multiplying in a base",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $23_{4} \\times 3_{4}$, giving the answer in base four.",
+    "options": [
+      "$201_{4}$",
+      "$69_{4}$",
+      "$132_{4}$",
+      "$203_{4}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$23_{4} = 2 \\times 4 + 3 = 11$, and $11 \\times 3 = 33 = 2 \\times 16 + 0 \\times 4 + 1$, so the product is $201_{4}$. Multiplying the digits as in base ten gives 69, which is not a base-four numeral."
+  },
+  {
+    "id": "WASSCEMATH-T2-003",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Modular arithmetic in daily life",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Markets in a town rotate through a 4-day cycle: Eke, Orie, Afor, Nkwo, then Eke again. Today is Eke market day. Which market day will it be 30 days from today?",
+    "options": [
+      "Eke",
+      "Orie",
+      "Afor",
+      "Nkwo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cycle repeats every 4 days, so work in modulo 4: $30 = 7 \\times 4 + 2$, so $30 \\equiv 2 \\pmod{4}$. Two days after Eke is Afor (Eke, then Orie, then Afor)."
+  },
+  {
+    "id": "WASSCEMATH-T2-004",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Decimal places",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $0.0478 \\times 2.61$, correct to 3 decimal places.",
+    "options": [
+      "0.12",
+      "0.124",
+      "0.1248",
+      "0.125"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$0.0478 \\times 2.61 = 0.124758$. The fourth decimal place is 7, so the third rounds up: 0.125. Cutting off without rounding gives 0.124.",
+    "basics": "rounding"
+  },
+  {
+    "id": "WASSCEMATH-T2-005",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Operations on decimals",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $\\frac{2.5 \\times 0.12}{0.04}$.",
+    "options": [
+      "0.075",
+      "0.75",
+      "7.5",
+      "75"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$2.5 \\times 0.12 = 0.3$, and $0.3 \\div 0.04 = \\frac{30}{4} = 7.5$. Multiplying the top and bottom by 100 first makes the division easier.",
+    "basics": "decimals"
+  },
+  {
+    "id": "WASSCEMATH-T2-006",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Ordering rational numbers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Arrange $-\\frac{3}{4}$, $\\frac{2}{3}$, $-0.7$ and $0.65$ in ascending order.",
+    "options": [
+      "$-\\frac{3}{4}, -0.7, \\frac{2}{3}, 0.65$",
+      "$0.65, \\frac{2}{3}, -0.7, -\\frac{3}{4}$",
+      "$-0.7, -\\frac{3}{4}, 0.65, \\frac{2}{3}$",
+      "$-\\frac{3}{4}, -0.7, 0.65, \\frac{2}{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "As decimals the numbers are $-0.75$, $0.667$, $-0.7$ and $0.65$. On the number line $-0.75$ is furthest left, then $-0.7$, then $0.65$, then $0.667$. A negative number further from zero is smaller, so $-0.75$ is less than $-0.7$."
+  },
+  {
+    "id": "WASSCEMATH-T2-007",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Laws of indices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $\\frac{(a^{3}b^{-2})^{2}}{a^{4}b^{-3}}$.",
+    "options": [
+      "$a^{2}b$",
+      "$\\frac{a^{10}}{b^{7}}$",
+      "$\\frac{a^{2}}{b}$",
+      "$\\frac{a}{b^{2}}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$(a^{3}b^{-2})^{2} = a^{6}b^{-4}$. Dividing subtracts the powers: $a^{6 - 4}b^{-4 - (-3)} = a^{2}b^{-1} = \\frac{a^{2}}{b}$. Adding the powers instead of subtracting gives $\\frac{a^{10}}{b^{7}}$."
+  },
+  {
+    "id": "WASSCEMATH-T2-008",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Fractional indices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $(0.008)^{\\frac{1}{3}}$.",
+    "options": [
+      "0.0027",
+      "0.02",
+      "0.08",
+      "0.2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$0.008 = \\frac{8}{1000}$, and the cube root is $\\frac{2}{10} = 0.2$. Check: $0.2 \\times 0.2 \\times 0.2 = 0.008$."
+  },
+  {
+    "id": "WASSCEMATH-T2-009",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Indices and logarithms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $\\log_{10}(2x - 1) = 2$.",
+    "options": [
+      "1.5",
+      "5.5",
+      "49.5",
+      "50.5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\log_{10} y = 2$ means $y = 10^2 = 100$. So $2x - 1 = 100$, $2x = 101$ and $x = 50.5$."
+  },
+  {
+    "id": "WASSCEMATH-T2-010",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Multiplying surds",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $(3 + \\sqrt{2})(3 - \\sqrt{2})$.",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "This is a difference of two squares: $3^2 - (\\sqrt{2})^2 = 9 - 2 = 7$. The middle terms $3\\sqrt{2}$ and $-3\\sqrt{2}$ cancel."
+  },
+  {
+    "id": "WASSCEMATH-T2-011",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Logarithms with tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Given that $\\log_{10} 2 = 0.3010$ and $\\log_{10} 7 = 0.8451$, find $\\log_{10} 3.5$.",
+    "options": [
+      "0.2544",
+      "0.4226",
+      "0.5441",
+      "1.1461"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$3.5 = \\frac{7}{2}$, so $\\log_{10} 3.5 = 0.8451 - 0.3010 = 0.5441$. Adding the logarithms gives $\\log_{10} 14 = 1.1461$."
+  },
+  {
+    "id": "WASSCEMATH-T2-012",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Terms of a G.P.",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The 3rd term of a geometric progression is 12 and the 6th term is 96. Find the 8th term.",
+    "options": [
+      "96",
+      "192",
+      "384",
+      "768"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{ar^5}{ar^2} = r^3 = \\frac{96}{12} = 8$, so $r = 2$ and $a = \\frac{12}{4} = 3$. The 8th term is $ar^7 = 3 \\times 128 = 384$. Using $r^8$ gives 768."
+  },
+  {
+    "id": "WASSCEMATH-T2-013",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Patterns of sequences",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sequence 2, 6, 12, 20, 30, ... continues in the same pattern. Find the 10th term.",
+    "options": [
+      "90",
+      "100",
+      "110",
+      "132"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The terms are $1 \\times 2$, $2 \\times 3$, $3 \\times 4$, $4 \\times 5$, $5 \\times 6$, so $U_n = n(n + 1)$ and $U_{10} = 10 \\times 11 = 110$. The differences 4, 6, 8, 10, ... confirm the pattern. 90 is the 9th term."
+  },
+  {
+    "id": "WASSCEMATH-T2-014",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Number of elements",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "If $n(P) = 17$, $n(Q) = 12$ and $n(P \\cup Q) = 23$, find $n(P \\cap Q)$.",
+    "options": [
+      "6",
+      "11",
+      "29",
+      "40"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$n(P \\cup Q) = n(P) + n(Q) - n(P \\cap Q)$, so $23 = 29 - n(P \\cap Q)$ and $n(P \\cap Q) = 6$."
+  },
+  {
+    "id": "WASSCEMATH-T2-015",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Venn diagrams with three sets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a school of 50 students, 17 study French, 21 study Hausa and 17 study Yoruba. 6 study French and Hausa, 5 study French and Yoruba, 7 study Hausa and Yoruba, and 2 study all three. How many students study none of the three languages?",
+    "options": [
+      "6",
+      "9",
+      "11",
+      "13"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$n(F \\cup H \\cup Y) = 17 + 21 + 17 - 6 - 5 - 7 + 2 = 39$, so $50 - 39 = 11$ study none. Forgetting to add back the 2 who study all three gives 13."
+  },
+  {
+    "id": "WASSCEMATH-T2-016",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Negation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the negation of the statement \"All the students passed the test\"?",
+    "options": [
+      "Some students passed the test.",
+      "All the students failed the test.",
+      "No student passed the test.",
+      "At least one student did not pass the test."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The negation must be true exactly when the statement is false. The statement is false as soon as one student did not pass, so the negation is: at least one student did not pass. Saying that no student passed is too strong: it is false when only some failed."
+  },
+  {
+    "id": "WASSCEMATH-T2-017",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Rate of simple interest",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "₦60,000 earns ₦10,800 simple interest in 3 years. Find the rate per annum.",
+    "options": [
+      "3%",
+      "5.4%",
+      "6%",
+      "18%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$R = \\frac{100I}{PT} = \\frac{100 \\times 10800}{60000 \\times 3} = 6\\%$. Dividing by $P$ alone gives the 18% earned over all 3 years.",
+    "basics": "simpleInterest"
+  },
+  {
+    "id": "WASSCEMATH-T2-018",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Profit percent",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A trader buys 40 oranges at 4 for GH¢2 and sells them all at GH¢0.75 each. Find her profit as a percentage of the cost.",
+    "options": [
+      "10%",
+      "25%",
+      "33.3%",
+      "50%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "40 oranges are 10 lots of four, so the cost is $10 \\times 2 = 20$ cedis. Sales $= 40 \\times 0.75 = 30$ cedis. Profit $= 10$, and $\\frac{10}{20} \\times 100 = 50\\%$. Dividing by the selling price gives 33.3%.",
+    "basics": "percents"
+  },
+  {
+    "id": "WASSCEMATH-T2-019",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Discount",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A radio is marked GH¢840. A shop gives a 15% discount. How much does a customer pay?",
+    "options": [
+      "GH¢126",
+      "GH¢714",
+      "GH¢825",
+      "GH¢966"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The discount is $0.15 \\times 840 = 126$, so the customer pays $840 - 126 = 714$, or simply $0.85 \\times 840$. GH¢126 is the discount itself.",
+    "basics": "percents"
+  },
+  {
+    "id": "WASSCEMATH-T2-020",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Partial variation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The charge for hiring a community hall is partly constant and partly varies as the number of hours h. Hiring it for 3 hours costs ₦25,000 and for 7 hours costs ₦45,000. Find the charge for 5 hours.",
+    "options": [
+      "₦25,000",
+      "₦35,000",
+      "₦41,667",
+      "₦50,000"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Charge $= a + kh$. Subtracting $25000 = a + 3k$ from $45000 = a + 7k$ gives $4k = 20000$, so $k = 5000$ and $a = 10000$. Then the charge is $10000 + 5000 \\times 5 = 35000$. Treating the charge as varying directly with $h$ gives $\\frac{25000}{3} \\times 5 \\approx 41667$."
+  },
+  {
+    "id": "WASSCEMATH-T2-021",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Hire purchase",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fridge costs GH¢3,600 cash. On hire purchase a buyer pays a 25% deposit and then 12 monthly instalments of GH¢250. How much more than the cash price does the buyer pay?",
+    "options": [
+      "GH¢300",
+      "GH¢600",
+      "GH¢900",
+      "GH¢3,900"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Deposit $= 0.25 \\times 3600 = 900$ and instalments $= 12 \\times 250 = 3000$, so the hire purchase price is GH¢3,900. That is GH¢300 more than the cash price."
+  },
+  {
+    "id": "WASSCEMATH-T2-022",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Rates of work",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "6 men can build a wall in 10 days. Working at the same rate, how many days would 4 men take?",
+    "options": [
+      "6.7 days",
+      "10 days",
+      "12 days",
+      "15 days"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The job takes $6 \\times 10 = 60$ man-days. 4 men need $\\frac{60}{4} = 15$ days. Fewer men take longer, so the answer must be more than 10 days.",
+    "basics": "rateProblems"
+  },
+  {
+    "id": "WASSCEMATH-T2-023",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Linear equations with fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $\\frac{x + 2}{3} - \\frac{x - 1}{4} = 2$.",
+    "options": [
+      "5",
+      "11",
+      "13",
+      "19"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply by 12: $4(x + 2) - 3(x - 1) = 24$, so $4x + 8 - 3x + 3 = 24$ and $x = 13$. Writing $-3(x - 1)$ as $-3x - 3$ gives the wrong 19.",
+    "basics": "solveX"
+  },
+  {
+    "id": "WASSCEMATH-T2-024",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Forming a quadratic equation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the quadratic equation whose roots are $-\\frac{3}{2}$ and $4$.",
+    "options": [
+      "$2x^{2} + 5x - 12 = 0$",
+      "$2x^{2} - 11x + 12 = 0$",
+      "$x^{2} - 5x - 6 = 0$",
+      "$2x^{2} - 5x - 12 = 0$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The roots give the factors $(2x + 3)$ and $(x - 4)$, so $(2x + 3)(x - 4) = 2x^2 - 8x + 3x - 12 = 2x^2 - 5x - 12 = 0$. Check: $2(16) - 20 - 12 = 0$."
+  },
+  {
+    "id": "WASSCEMATH-T2-025",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Undefined algebraic fractions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For which values of $x$ is $\\frac{2x + 1}{x^{2} + x - 12}$ undefined?",
+    "options": [
+      "$x = 4$ or $x = -3$",
+      "$x = -4$ or $x = 3$",
+      "$x = 12$ or $x = -1$",
+      "$x = -\\frac{1}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A fraction is undefined when its denominator is zero: $x^2 + x - 12 = (x + 4)(x - 3) = 0$, so $x = -4$ or $x = 3$. A zero numerator ($x = -\\frac{1}{2}$) makes the fraction equal to 0, which is defined."
+  },
+  {
+    "id": "WASSCEMATH-T2-026",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Fractions with binomial denominators",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Simplify $\\frac{2}{x - 1} - \\frac{1}{x + 2}$.",
+    "options": [
+      "$\\frac{x + 3}{(x - 1)(x + 2)}$",
+      "$\\frac{x + 5}{(x - 1)(x + 2)}$",
+      "$\\frac{x + 5}{x^{2} + 1}$",
+      "$\\frac{1}{(x - 1)(x + 2)}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The common denominator is $(x - 1)(x + 2)$. The numerator is $2(x + 2) - 1(x - 1) = 2x + 4 - x + 1 = x + 5$. Writing $-(x - 1)$ as $-x - 1$ gives $x + 3$."
+  },
+  {
+    "id": "WASSCEMATH-T2-027",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Minimum point of a quadratic graph",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the coordinates of the minimum point of the graph of $y = x^{2} - 6x + 5$.",
+    "options": [
+      "(3, 5)",
+      "(3, -4)",
+      "(-3, 32)",
+      "(6, 5)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The axis of symmetry is halfway between the roots 1 and 5, at $x = 3$. Then $y = 9 - 18 + 5 = -4$, so the minimum point is $(3, -4)$."
+  },
+  {
+    "id": "WASSCEMATH-T2-028",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Graphical solution of equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The graph of $y = x^{2} + 2x - 8$ has been drawn. Which line drawn on the same axes gives the solutions of $x^{2} + 2x - 5 = 0$?",
+    "options": [
+      "$y = -5$",
+      "$y = -3$",
+      "$y = 3$",
+      "$y = 5$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Rewrite the equation to match the graph: $x^2 + 2x - 5 = 0$ means $x^2 + 2x - 8 = -3$. So the roots are the $x$-values where the curve meets the line $y = -3$."
+  },
+  {
+    "id": "WASSCEMATH-T2-029",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Quadratic word problem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangular school garden is 4 m longer than it is wide, and its area is 96 m². Find its width.",
+    "options": [
+      "8 m",
+      "10 m",
+      "12 m",
+      "24 m"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Let the width be $w$: $w(w + 4) = 96$, so $w^2 + 4w - 96 = 0$ and $(w + 12)(w - 8) = 0$. A width cannot be negative, so $w = 8$ m and the length is 12 m."
+  },
+  {
+    "id": "WASSCEMATH-T2-030",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Evaluating expressions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $a = -2$, $b = 3$ and $c = 4$, evaluate $\\frac{a^{2}b - c}{b + ac}$.",
+    "options": [
+      "$-\\frac{8}{5}$",
+      "$-\\frac{8}{11}$",
+      "$\\frac{8}{11}$",
+      "$\\frac{8}{5}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$a^2b - c = 4 \\times 3 - 4 = 8$ and $b + ac = 3 + (-2)(4) = -5$, so the value is $-\\frac{8}{5}$. Taking $ac$ as $+8$ gives $\\frac{8}{11}$.",
+    "basics": "substitution"
+  },
+  {
+    "id": "WASSCEMATH-T2-031",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Area of a triangle from two sides and an angle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two sides of a triangle are 8 cm and 10 cm and the angle between them is $30^\\circ$. Find the area of the triangle.",
+    "options": [
+      "20 cm²",
+      "34.6 cm²",
+      "40 cm²",
+      "80 cm²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Area $= \\frac{1}{2}ab\\sin C = \\frac{1}{2} \\times 8 \\times 10 \\times \\sin 30^\\circ = 40 \\times 0.5 = 20$ cm². Using $\\cos 30^\\circ$ instead gives about 34.6 cm²."
+  },
+  {
+    "id": "WASSCEMATH-T2-032",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Perimeter of a sector",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the perimeter of a sector of a circle of radius 7 cm with an angle of $90^\\circ$. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "11 cm",
+      "25 cm",
+      "36 cm",
+      "38.5 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Arc length $= \\frac{90}{360} \\times 2 \\times \\frac{22}{7} \\times 7 = 11$ cm. The perimeter adds the two radii: $11 + 7 + 7 = 25$ cm. 11 cm is the arc alone and 38.5 is the area in cm².",
+    "basics": "circleBasics"
+  },
+  {
+    "id": "WASSCEMATH-T2-033",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Total surface area of a cone",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cone has base radius 7 cm and slant height 10 cm. Find its total surface area. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "154 cm²",
+      "220 cm²",
+      "374 cm²",
+      "528 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Curved surface $= \\pi rl = \\frac{22}{7} \\times 7 \\times 10 = 220$ cm², and the base is $\\pi r^2 = 154$ cm². The total is $220 + 154 = 374$ cm²."
+  },
+  {
+    "id": "WASSCEMATH-T2-034",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Volume of a sphere",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the volume, in cm³, of a sphere of radius 3 cm. Leave your answer in terms of $\\pi$.",
+    "options": [
+      "$12\\pi$",
+      "$27\\pi$",
+      "$36\\pi$",
+      "$108\\pi$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3} \\times \\pi \\times 27 = 36\\pi$ cm³. Forgetting the $\\frac{4}{3}$ gives $27\\pi$, and $4\\pi r^2 = 36\\pi$ cm² is the surface area, which happens to share the number but not the unit."
+  },
+  {
+    "id": "WASSCEMATH-T2-035",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Areas of similar figures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two similar rectangular farm plots have corresponding sides in the ratio 3 : 4. The smaller plot has an area of 18 hectares. Find the area of the larger plot.",
+    "options": [
+      "13.5 ha",
+      "24 ha",
+      "32 ha",
+      "42.7 ha"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Areas of similar figures are in the ratio of the squares of their sides: $3^2 : 4^2 = 9 : 16$. So the larger area is $18 \\times \\frac{16}{9} = 32$ ha. Using the side ratio $\\frac{4}{3}$ gives only 24 ha, and the cube gives about 42.7 ha."
+  },
+  {
+    "id": "WASSCEMATH-T2-036",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Capacity of a tank",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangular water tank measures 2 m by 1.5 m by 1.2 m inside. How many litres of water does it hold when full?",
+    "options": [
+      "3.6 litres",
+      "4.7 litres",
+      "360 litres",
+      "3600 litres"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume $= 2 \\times 1.5 \\times 1.2 = 3.6$ m³. One cubic metre is 1000 litres, so the tank holds $3.6 \\times 1000 = 3600$ litres.",
+    "basics": "volume"
+  },
+  {
+    "id": "WASSCEMATH-T2-037",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Angle sum of a polygon",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The interior angles of a pentagon are $100^\\circ$, $120^\\circ$, $95^\\circ$, $2x^\\circ$ and $x^\\circ$. Find $x$.",
+    "options": [
+      "15",
+      "65",
+      "75",
+      "150"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The interior angles of a pentagon add up to $(5 - 2) \\times 180^\\circ = 540^\\circ$. So $315 + 3x = 540$, $3x = 225$ and $x = 75$. Using $360^\\circ$ gives $x = 15$, and 150 is the angle $2x$."
+  },
+  {
+    "id": "WASSCEMATH-T2-038",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Tangent and radius",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tangent from a point T touches a circle with centre O at A. The radius OA is 5 cm and OT is 13 cm. Find the length of the tangent TA.",
+    "options": [
+      "8 cm",
+      "12 cm",
+      "13.9 cm",
+      "18 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so triangle OAT has a right angle at A: $TA = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$ cm."
+  },
+  {
+    "id": "WASSCEMATH-T2-039",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Alternate segment theorem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tangent touches a circle at P. The chord PQ makes an angle of $58^\\circ$ with the tangent. R is a point on the circle in the alternate segment. Find angle PRQ.",
+    "options": [
+      "29°",
+      "32°",
+      "58°",
+      "122°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle between a tangent and a chord equals the angle in the alternate segment, so angle PRQ $= 58^\\circ$. $32^\\circ$ would come from wrongly using the right angle between the tangent and the radius."
+  },
+  {
+    "id": "WASSCEMATH-T2-040",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Similar triangles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In triangle ABC, D is on AB and E is on AC with DE parallel to BC. AD = 4 cm, DB = 6 cm and DE = 6 cm. Find BC.",
+    "options": [
+      "9 cm",
+      "10 cm",
+      "15 cm",
+      "24 cm"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Triangles ADE and ABC are similar, so $\\frac{DE}{BC} = \\frac{AD}{AB} = \\frac{4}{10}$. Then $BC = 6 \\times \\frac{10}{4} = 15$ cm. Using $\\frac{AD}{DB} = \\frac{4}{6}$ gives the wrong 9 cm."
+  },
+  {
+    "id": "WASSCEMATH-T2-041",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Angle in a semicircle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "AB is a diameter of a circle and C is a point on the circle. Angle CAB is $28^\\circ$. Find angle ABC.",
+    "options": [
+      "62°",
+      "90°",
+      "118°",
+      "152°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle in a semicircle is a right angle, so angle ACB $= 90^\\circ$. The angles of triangle ABC add up to $180^\\circ$: angle ABC $= 180^\\circ - 90^\\circ - 28^\\circ = 62^\\circ$."
+  },
+  {
+    "id": "WASSCEMATH-T2-042",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Midpoint of a line segment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the midpoint of the line joining (-3, 7) and (5, -1).",
+    "options": [
+      "(2, 6)",
+      "(4, 4)",
+      "(1, 4)",
+      "(1, 3)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Midpoint $= \\left(\\frac{-3 + 5}{2}, \\frac{7 + (-1)}{2}\\right) = (1, 3)$. Subtracting the coordinates instead of adding them gives $(4, 4)$."
+  },
+  {
+    "id": "WASSCEMATH-T2-043",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Equation of a line from a point and a gradient",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the equation of the line with gradient $-2$ that passes through the point (3, 1).",
+    "options": [
+      "$y = -2x + 1$",
+      "$y = -2x - 5$",
+      "$y = -2x + 7$",
+      "$y = 2x - 5$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$y - y_1 = m(x - x_1)$ gives $y - 1 = -2(x - 3) = -2x + 6$, so $y = -2x + 7$. Check: $-6 + 7 = 1$. Using $+3$ in the bracket gives $y = -2x - 5$."
+  },
+  {
+    "id": "WASSCEMATH-T2-044",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Angles between 0 and 360 degrees",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Given that $\\sin \\theta = -\\frac{1}{2}$ and $180^\\circ < \\theta < 270^\\circ$, find $\\theta$.",
+    "options": [
+      "210°",
+      "240°",
+      "300°",
+      "330°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The acute angle with sine $\\frac{1}{2}$ is $30^\\circ$. Sine is negative in the third quadrant, where $\\theta = 180^\\circ + 30^\\circ = 210^\\circ$. $330^\\circ$ also has sine $-\\frac{1}{2}$ but lies in the fourth quadrant."
+  },
+  {
+    "id": "WASSCEMATH-T2-045",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Angle of depression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "From the top of a cliff 60 m high, the angle of depression of a canoe on the sea is $30^\\circ$. How far is the canoe from the foot of the cliff, correct to 1 decimal place?",
+    "options": [
+      "30.0 m",
+      "34.6 m",
+      "52.0 m",
+      "103.9 m"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The angle of elevation of the cliff top from the canoe is also $30^\\circ$, so $\\tan 30^\\circ = \\frac{60}{d}$ and $d = \\frac{60}{\\tan 30^\\circ} = 60\\sqrt{3} \\approx 103.9$ m. Multiplying by $\\tan 30^\\circ$ instead gives 34.6 m, and $60 \\cos 30^\\circ$ gives 52.0 m."
+  },
+  {
+    "id": "WASSCEMATH-T2-046",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Standard deviation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Find the standard deviation of 2, 4, 6, 8 and 10, correct to 2 decimal places.",
+    "options": [
+      "2.4",
+      "2.83",
+      "4",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 6. The squared deviations are 16, 4, 0, 4, 16, which add to 40, so the variance is $\\frac{40}{5} = 8$ and the standard deviation is $\\sqrt{8} \\approx 2.83$. 8 is the variance, 4 is the range halved, and 2.4 is the mean deviation."
+  },
+  {
+    "id": "WASSCEMATH-T2-047",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Class marks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the class mark of the class interval 20 to 29.",
+    "options": [
+      "19.5",
+      "24.5",
+      "25",
+      "29.5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The class mark is the middle of the class: $\\frac{20 + 29}{2} = 24.5$. 19.5 and 29.5 are the class boundaries."
+  },
+  {
+    "id": "WASSCEMATH-T2-048",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Mean of grouped data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table shows the number of goals scored by 20 school teams in a season.\n\n| Goals | 1 to 5 | 6 to 10 | 11 to 15 | 16 to 20 |\n|---|---|---|---|---|\n| Teams | 4 | 6 | 7 | 3 |\n\nUsing class marks, estimate the mean number of goals.",
+    "options": [
+      "10.25",
+      "10.5",
+      "12",
+      "51.25"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The class marks are 3, 8, 13 and 18. $\\sum fx = 12 + 48 + 91 + 54 = 205$, and $\\frac{205}{20} = 10.25$. Dividing by 4, the number of classes, gives 51.25.",
+    "basics": "fsmGroupedMean"
+  },
+  {
+    "id": "WASSCEMATH-T2-049",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Quartiles from a cumulative frequency curve",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cumulative frequency curve of the marks of 80 students gives a lower quartile of 34 and an upper quartile of 61. Find the semi-interquartile range.",
+    "options": [
+      "13.5",
+      "27",
+      "47.5",
+      "95"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The interquartile range is $61 - 34 = 27$, and the semi-interquartile range is half of it: 13.5. 47.5 is the mean of the two quartiles."
+  },
+  {
+    "id": "WASSCEMATH-T2-050",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Sample space of two dice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two fair dice are thrown together. What is the probability that the sum of the two numbers is 8?",
+    "options": [
+      "$\\frac{5}{36}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{2}{9}$",
+      "$\\frac{1}{4}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "There are $6 \\times 6 = 36$ equally likely outcomes. A sum of 8 comes from (2, 6), (3, 5), (4, 4), (5, 3) and (6, 2), so the probability is $\\frac{5}{36}$.",
+    "basics": "probabilityTable"
+  },
+  {
+    "id": "WASSCEMATH-D-001",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Converting to base ten",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Convert $214_{5}$ to base ten.",
+    "options": [
+      "54",
+      "59",
+      "69",
+      "214"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$214_{5} = 2 \\times 25 + 1 \\times 5 + 4 = 50 + 5 + 4 = 59$."
+  },
+  {
+    "id": "WASSCEMATH-D-002",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Subtracting in base two",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $11010_{2} - 1011_{2}$.",
+    "options": [
+      "$10111_{2}$",
+      "$11111_{2}$",
+      "$1101_{2}$",
+      "$1111_{2}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$11010_{2} = 26$ and $1011_{2} = 11$, so the difference is $15 = 8 + 4 + 2 + 1 = 1111_{2}$. Check by adding: $1111_{2} + 1011_{2} = 11010_{2}$."
+  },
+  {
+    "id": "WASSCEMATH-D-003",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Finding an unknown base",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $25_{n} = 17_{10}$, find the base $n$.",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$25_{n} = 2n + 5$, so $2n + 5 = 17$ and $n = 6$. The digit 5 must be less than the base, and 6 is greater than 5, so the answer fits."
+  },
+  {
+    "id": "WASSCEMATH-D-004",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Solving a congruence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find $x$, where $0 \\le x \\le 4$, such that $4x \\equiv 3 \\pmod{5}$.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Try each value: $4 \\times 2 = 8$ and $8 = 5 + 3$, so $8 \\equiv 3 \\pmod{5}$. The other values give $4 \\equiv 4$, $12 \\equiv 2$ and $16 \\equiv 1$."
+  },
+  {
+    "id": "WASSCEMATH-D-005",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Clock arithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A nurse begins a 9-hour night shift at 19:00. Working on a 24-hour clock, at what time does the shift end?",
+    "options": [
+      "04:00",
+      "28:00",
+      "03:00",
+      "10:00"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$19 + 9 = 28$, and on a 24-hour clock $28 \\equiv 4 \\pmod{24}$, so the shift ends at 04:00 the next morning."
+  },
+  {
+    "id": "WASSCEMATH-D-006",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Fractions of a remainder",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Efua spends $\\frac{2}{5}$ of her pocket money on books and $\\frac{1}{3}$ of the remainder on food. What fraction of her pocket money is left?",
+    "options": [
+      "$\\frac{1}{5}$",
+      "$\\frac{4}{15}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{3}{5}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "After books, $\\frac{3}{5}$ is left. Food takes $\\frac{1}{3} \\times \\frac{3}{5} = \\frac{1}{5}$. So $\\frac{3}{5} - \\frac{1}{5} = \\frac{2}{5}$ is left. Taking $\\frac{1}{3}$ of the whole instead gives $1 - \\frac{2}{5} - \\frac{1}{3} = \\frac{4}{15}$.",
+    "basics": "fractionOps"
+  },
+  {
+    "id": "WASSCEMATH-D-007",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Significant figures",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Round 8,456,210 to 3 significant figures.",
+    "options": [
+      "8,400,000",
+      "8,450,000",
+      "8,456,000",
+      "8,460,000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The first three significant figures are 8, 4 and 5; the next figure is 6, so the 5 rounds up to 6, giving 8,460,000. The zeros keep the place value. 8,456,000 has 4 significant figures.",
+    "basics": "rounding"
+  },
+  {
+    "id": "WASSCEMATH-D-008",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Multiplying in standard form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $(3.2 \\times 10^{5}) \\times (2.5 \\times 10^{-2})$, giving the answer in standard form.",
+    "options": [
+      "$8 \\times 10^{-10}$",
+      "$0.8 \\times 10^{3}$",
+      "$5.7 \\times 10^{3}$",
+      "$8 \\times 10^{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply the numbers and add the powers: $3.2 \\times 2.5 = 8$ and $10^{5} \\times 10^{-2} = 10^{3}$, so the answer is $8 \\times 10^{3}$. Adding 3.2 and 2.5 gives the wrong 5.7.",
+    "basics": "scientificNotation"
+  },
+  {
+    "id": "WASSCEMATH-D-009",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Writing small numbers in standard form",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Express 0.00000074 in standard form.",
+    "options": [
+      "$7.4 \\times 10^{-7}$",
+      "$7.4 \\times 10^{-6}$",
+      "$7.4 \\times 10^{6}$",
+      "$7.4 \\times 10^{7}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Move the decimal point 7 places to the right to get 7.4, so 0.00000074 = $7.4 \\times 10^{-7}$. A number less than 1 has a negative power of 10.",
+    "basics": "scientificNotation"
+  },
+  {
+    "id": "WASSCEMATH-D-010",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Directed numbers in context",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "At 6 a.m. the temperature in Jos was $-2$ degrees Celsius. By 2 p.m. it had risen 11 degrees, and by midnight it had fallen 5 degrees. What was the temperature at midnight, in degrees Celsius?",
+    "options": [
+      "-18",
+      "-8",
+      "4",
+      "14"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$-2 + 11 = 9$, then $9 - 5 = 4$ degrees Celsius. Adding the fall instead of subtracting it gives 14.",
+    "basics": "negativeNumbers"
+  },
+  {
+    "id": "WASSCEMATH-D-011",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmNumber",
+    "skill": "Adding and subtracting rational numbers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $-\\frac{3}{4} + \\frac{5}{6} - \\frac{1}{3}$.",
+    "options": [
+      "$-\\frac{1}{4}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{5}{12}$",
+      "$\\frac{7}{12}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Use the common denominator 12: $-\\frac{9}{12} + \\frac{10}{12} - \\frac{4}{12} = -\\frac{3}{12} = -\\frac{1}{4}$. Adding the $\\frac{1}{3}$ instead of subtracting it gives $\\frac{5}{12}$.",
+    "basics": "fractionOps"
+  },
+  {
+    "id": "WASSCEMATH-D-012",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Laws of indices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Simplify $2^{5} \\times 2^{-3} \\div 2^{-2}$.",
+    "options": [
+      "1",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Add powers when multiplying and subtract when dividing: $5 + (-3) - (-2) = 4$, so the answer is $2^4 = 16$."
+  },
+  {
+    "id": "WASSCEMATH-D-013",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Negative fractional indices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evaluate $32^{-\\frac{3}{5}}$.",
+    "options": [
+      "$-8$",
+      "$\\frac{1}{16}$",
+      "$\\frac{1}{8}$",
+      "$8$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sqrt[5]{32} = 2$, so $32^{\\frac{3}{5}} = 2^3 = 8$, and the negative index gives the reciprocal $\\frac{1}{8}$. A negative index never makes the answer negative."
+  },
+  {
+    "id": "WASSCEMATH-D-014",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Equations with indices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $2^{2x - 1} = \\frac{1}{8}$.",
+    "options": [
+      "-2",
+      "-1",
+      "1",
+      "2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{1}{8} = 2^{-3}$, so $2x - 1 = -3$, $2x = -2$ and $x = -1$."
+  },
+  {
+    "id": "WASSCEMATH-D-015",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Equating powers of the same base",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $9^{x} = 27^{x - 1}$.",
+    "options": [
+      "-3",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Write both sides as powers of 3: $3^{2x} = 3^{3(x - 1)} = 3^{3x - 3}$. So $2x = 3x - 3$ and $x = 3$."
+  },
+  {
+    "id": "WASSCEMATH-D-016",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Rules of logarithms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $\\log_{10} 25 + \\log_{10} 4$.",
+    "options": [
+      "2",
+      "10",
+      "29",
+      "100"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\log_{10} 25 + \\log_{10} 4 = \\log_{10}(25 \\times 4) = \\log_{10} 100 = 2$. Adding 25 and 4 inside the logarithm is not a rule of logarithms."
+  },
+  {
+    "id": "WASSCEMATH-D-017",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "From logarithm to number",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If $\\log_{10} y = 1.5$, find $y$ correct to 1 decimal place.",
+    "options": [
+      "3.2",
+      "15.0",
+      "31.6",
+      "316.2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$y = 10^{1.5} = 10 \\times 10^{0.5} = 10\\sqrt{10} \\approx 31.6$. Multiplying 1.5 by 10 gives the wrong 15.0."
+  },
+  {
+    "id": "WASSCEMATH-D-018",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Characteristic and mantissa",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Given that $\\log_{10} 4.56 = 0.6590$, find $\\log_{10} 456$.",
+    "options": [
+      "0.6590",
+      "1.6590",
+      "2.6590",
+      "3.6590"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$456 = 4.56 \\times 10^2$, so $\\log_{10} 456 = 2 + 0.6590 = 2.6590$. The whole number part, the characteristic, is the power of 10."
+  },
+  {
+    "id": "WASSCEMATH-D-019",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Simplifying surds",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Simplify $\\sqrt{98} - \\sqrt{32}$.",
+    "options": [
+      "$3\\sqrt{2}$",
+      "$4\\sqrt{2}$",
+      "$\\sqrt{66}$",
+      "$11\\sqrt{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sqrt{98} = \\sqrt{49 \\times 2} = 7\\sqrt{2}$ and $\\sqrt{32} = \\sqrt{16 \\times 2} = 4\\sqrt{2}$, so the difference is $3\\sqrt{2}$. You cannot subtract the numbers under the root sign."
+  },
+  {
+    "id": "WASSCEMATH-D-020",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Rationalising a binomial denominator",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Rationalise the denominator of $\\frac{1}{\\sqrt{5} - 2}$.",
+    "options": [
+      "$2 - \\sqrt{5}$",
+      "$\\sqrt{5} - 2$",
+      "$\\frac{\\sqrt{5} + 2}{9}$",
+      "$\\sqrt{5} + 2$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply top and bottom by $\\sqrt{5} + 2$: the denominator becomes $(\\sqrt{5})^2 - 2^2 = 5 - 4 = 1$, so the answer is $\\sqrt{5} + 2$. Using $5 + 4 = 9$ for the denominator is a sign error."
+  },
+  {
+    "id": "WASSCEMATH-D-021",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Expanding with surds",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Expand $(2\\sqrt{3} + 1)^{2}$.",
+    "options": [
+      "$13$",
+      "$7 + 4\\sqrt{3}$",
+      "$13 + 2\\sqrt{3}$",
+      "$13 + 4\\sqrt{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$(2\\sqrt{3} + 1)^2 = (2\\sqrt{3})^2 + 2(2\\sqrt{3})(1) + 1 = 12 + 4\\sqrt{3} + 1 = 13 + 4\\sqrt{3}$. Squaring each term and forgetting the middle term gives 13."
+  },
+  {
+    "id": "WASSCEMATH-D-022",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmIndices",
+    "skill": "Multiplying and dividing surds",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Simplify $\\frac{\\sqrt{12} \\times \\sqrt{6}}{\\sqrt{2}}$.",
+    "options": [
+      "$\\sqrt{6}$",
+      "$3\\sqrt{2}$",
+      "$2\\sqrt{6}$",
+      "$6$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{\\sqrt{12} \\times \\sqrt{6}}{\\sqrt{2}} = \\sqrt{\\frac{12 \\times 6}{2}} = \\sqrt{36} = 6$."
+  },
+  {
+    "id": "WASSCEMATH-D-023",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Common difference",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An arithmetic progression has first term $-4$ and 8th term 17. Find the common difference.",
+    "options": [
+      "-3",
+      "3",
+      "4",
+      "21"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$a + 7d = 17$ with $a = -4$, so $7d = 21$ and $d = 3$."
+  },
+  {
+    "id": "WASSCEMATH-D-024",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Number of terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many terms are there in the arithmetic progression 5, 9, 13, ..., 101?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "96"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$a + (n - 1)d = 101$ gives $5 + 4(n - 1) = 101$, so $n - 1 = 24$ and $n = 25$. Stopping at $n - 1 = 24$ undercounts by one."
+  },
+  {
+    "id": "WASSCEMATH-D-025",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "A.P. word problem",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Kofi saves GH¢20 in the first week and increases his savings by GH¢5 each week after that. How much has he saved altogether after 12 weeks?",
+    "options": [
+      "GH¢75",
+      "GH¢285",
+      "GH¢540",
+      "GH¢570"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The weekly savings form an A.P. with $a = 20$ and $d = 5$. $S_{12} = \\frac{12}{2}[2(20) + 11(5)] = 6 \\times 95 = 570$. GH¢75 is what he saves in the 12th week alone."
+  },
+  {
+    "id": "WASSCEMATH-D-026",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Terms of a G.P.",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The first term of a geometric progression is 81 and the common ratio is $\\frac{1}{3}$. Find the 5th term.",
+    "options": [
+      "$\\frac{1}{3}$",
+      "1",
+      "3",
+      "27"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$U_5 = ar^4 = 81 \\times \\left(\\frac{1}{3}\\right)^4 = \\frac{81}{81} = 1$. Using $r^5$ gives $\\frac{1}{3}$, which is the 6th term."
+  },
+  {
+    "id": "WASSCEMATH-D-027",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Consecutive terms of a G.P.",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "If $x - 1$, $x + 1$ and $x + 5$ are consecutive terms of a geometric progression, find $x$.",
+    "options": [
+      "-3",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "In a G.P. the middle term squared equals the product of its neighbours: $(x + 1)^2 = (x - 1)(x + 5)$. So $x^2 + 2x + 1 = x^2 + 4x - 5$, $2x = 6$ and $x = 3$, giving the terms 2, 4, 8."
+  },
+  {
+    "id": "WASSCEMATH-D-028",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Subsets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many subsets does the set $\\{a, b, c, d\\}$ have?",
+    "options": [
+      "4",
+      "8",
+      "15",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A set with $n$ members has $2^n$ subsets, counting the empty set and the set itself. Here $2^4 = 16$."
+  },
+  {
+    "id": "WASSCEMATH-D-029",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Complement of a set",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\mathcal{E} = \\{x : 1 \\le x \\le 10, x \\text{ is an integer}\\}$ and $P = \\{\\text{prime numbers}\\}$. Find $P'$.",
+    "options": [
+      "$\\{2, 3, 5, 7\\}$",
+      "$\\{1, 4, 6, 8, 9, 10\\}$",
+      "$\\{4, 6, 8, 9, 10\\}$",
+      "$\\{1, 3, 5, 7, 9\\}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$P = \\{2, 3, 5, 7\\}$, so $P'$ is every other member of $\\mathcal{E}$: $\\{1, 4, 6, 8, 9, 10\\}$. 1 is not a prime number, so it belongs in $P'$."
+  },
+  {
+    "id": "WASSCEMATH-D-030",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Only one set",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Of 35 farmers in a village, 20 grow maize and 22 grow millet. Every farmer grows at least one of the two crops. How many grow maize only?",
+    "options": [
+      "7",
+      "13",
+      "15",
+      "20"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$20 + 22 - 35 = 7$ grow both, so $20 - 7 = 13$ grow maize only. 7 is the number who grow both crops."
+  },
+  {
+    "id": "WASSCEMATH-D-031",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Chains of implications",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Given that $p \\Rightarrow q$ and $q \\Rightarrow r$, which conclusion is valid?",
+    "options": [
+      "$p \\Rightarrow r$",
+      "$q \\Rightarrow p$",
+      "$r \\Rightarrow p$",
+      "$\\sim p \\Rightarrow \\sim r$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If $p$ is true then $q$ is true, and then $r$ is true, so $p \\Rightarrow r$. Reversing an implication is not valid, so $r \\Rightarrow p$ and $q \\Rightarrow p$ do not follow, and neither does $\\sim p \\Rightarrow \\sim r$."
+  },
+  {
+    "id": "WASSCEMATH-D-032",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "Converse",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the converse of the statement \"If a number is divisible by 4, then it is even\"?",
+    "options": [
+      "If a number is not even, then it is not divisible by 4.",
+      "A number is divisible by 4 and it is even.",
+      "If a number is even, then it is divisible by 4.",
+      "If a number is not divisible by 4, then it is not even."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The converse of $p \\Rightarrow q$ is $q \\Rightarrow p$, so the two parts swap. This converse is false: 6 is even but not divisible by 4, which shows a true statement can have a false converse."
+  },
+  {
+    "id": "WASSCEMATH-D-033",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmSetsSequences",
+    "skill": "General term",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The nth term of a sequence is $U_n = 3n^2 - 1$. Find $U_4 - U_2$.",
+    "options": [
+      "18",
+      "24",
+      "36",
+      "47"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$U_4 = 3(16) - 1 = 47$ and $U_2 = 3(4) - 1 = 11$, so $U_4 - U_2 = 36$."
+  },
+  {
+    "id": "WASSCEMATH-D-034",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Increasing in a ratio",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Increase ₦45,000 in the ratio 5 : 3.",
+    "options": [
+      "₦27,000",
+      "₦48,000",
+      "₦72,000",
+      "₦75,000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Increasing in the ratio 5 : 3 means multiplying by $\\frac{5}{3}$: $45000 \\times \\frac{5}{3} = 75000$. Multiplying by $\\frac{3}{5}$ decreases the amount to ₦27,000.",
+    "basics": "ratios"
+  },
+  {
+    "id": "WASSCEMATH-D-035",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Percentage error",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Yaw estimates the mass of a bag of cement as 52 kg. Its true mass is 48 kg. Find the percentage error, correct to 2 decimal places.",
+    "options": [
+      "4.00%",
+      "7.69%",
+      "8.00%",
+      "8.33%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Error $= 52 - 48 = 4$ kg. Percentage error $= \\frac{4}{48} \\times 100 = 8.33\\%$, dividing by the true value. Dividing by the estimate 52 gives 7.69%."
+  },
+  {
+    "id": "WASSCEMATH-D-036",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Value added tax",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A pair of shoes costs ₦12,000 before VAT. Taking VAT as 7.5%, how much does a buyer pay?",
+    "options": [
+      "₦900",
+      "₦11,100",
+      "₦12,750",
+      "₦12,900"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "VAT $= 0.075 \\times 12000 = 900$, so the buyer pays $12000 + 900 = 12900$. ₦900 is the tax alone.",
+    "basics": "percents"
+  },
+  {
+    "id": "WASSCEMATH-D-037",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Commission",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sales agent earns a basic GH¢500 a month plus 3% commission on her sales. In one month she sells goods worth GH¢45,000. Find her total earnings that month.",
+    "options": [
+      "GH¢635",
+      "GH¢1,350",
+      "GH¢1,500",
+      "GH¢1,850"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Commission $= 0.03 \\times 45000 = 1350$, and with the basic pay she earns $1350 + 500 = 1850$. GH¢1,350 leaves out the basic pay."
+  },
+  {
+    "id": "WASSCEMATH-D-038",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Compound amount",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "₦200,000 is invested at 5% per annum compound interest. Find the amount after 2 years.",
+    "options": [
+      "₦20,500",
+      "₦210,000",
+      "₦220,000",
+      "₦220,500"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Amount $= 200000 \\times 1.05^2 = 200000 \\times 1.1025 = 220500$. Simple interest would give ₦220,000, and ₦20,500 is the interest only.",
+    "basics": "compoundInterest"
+  },
+  {
+    "id": "WASSCEMATH-D-039",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Direct variation with a root",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$P$ varies directly as the square root of $Q$. When $Q = 16$, $P = 6$. Find $P$ when $Q = 49$.",
+    "options": [
+      "7",
+      "10.5",
+      "12",
+      "18.4"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$P = k\\sqrt{Q}$, so $6 = 4k$ and $k = 1.5$. When $Q = 49$, $P = 1.5 \\times 7 = 10.5$. Treating $P$ as varying with $Q$ itself gives about 18.4."
+  },
+  {
+    "id": "WASSCEMATH-D-040",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Joint variation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$V$ varies jointly as $h$ and the square of $r$. $V = 88$ when $r = 2$ and $h = 7$. Find $V$ when $r = 3$ and $h = 14$.",
+    "options": [
+      "132",
+      "198",
+      "396",
+      "792"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = kr^2h$, so $88 = k \\times 4 \\times 7$ and $k = \\frac{88}{28} = \\frac{22}{7}$. Then $V = \\frac{22}{7} \\times 9 \\times 14 = 396$. Forgetting to square $r = 3$ in the second step gives 132."
+  },
+  {
+    "id": "WASSCEMATH-D-041",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Time from speed",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A car leaves Accra at 08:40 and travels 270 km at an average speed of 60 km/h. At what time does it arrive?",
+    "options": [
+      "12:10",
+      "13:30",
+      "13:10",
+      "12:40"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Time $= \\frac{270}{60} = 4.5$ hours, which is 4 hours 30 minutes. Adding this to 08:40 gives 13:10.",
+    "basics": "rateProblems"
+  },
+  {
+    "id": "WASSCEMATH-D-042",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Population density",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A district covers 2,400 square kilometres and has a population density of 135 people per square kilometre. Find its population.",
+    "options": [
+      "17.8",
+      "32,400",
+      "240,000",
+      "324,000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Population $=$ density $\\times$ area $= 135 \\times 2400 = 324000$. Dividing the area by the density gives a meaningless 17.8."
+  },
+  {
+    "id": "WASSCEMATH-D-043",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Direct proportion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "8 exercise books cost ₦2,000. What is the cost of 13 of the same books?",
+    "options": [
+      "₦1,230",
+      "₦2,600",
+      "₦3,200",
+      "₦3,250"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "One book costs $\\frac{2000}{8} = 250$, so 13 books cost $13 \\times 250 = 3250$.",
+    "basics": "ratios"
+  },
+  {
+    "id": "WASSCEMATH-D-044",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCommercial",
+    "skill": "Reverse percentage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a 20% increase, the price of a bag of rice is GH¢96. What was the price before the increase?",
+    "options": [
+      "GH¢76.80",
+      "GH¢80",
+      "GH¢115.20",
+      "GH¢120"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The new price is 120% of the old one, so the old price is $\\frac{96}{1.2} = 80$. Taking 20% off GH¢96 gives GH¢76.80, which is wrong because the 20% was of the old price.",
+    "basics": "percentChange"
+  },
+  {
+    "id": "WASSCEMATH-D-045",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Expanding and simplifying",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Expand and simplify $(x + 3)^{2} - (x - 2)(x + 2)$.",
+    "options": [
+      "$6x + 13$",
+      "$2x^{2} + 6x + 5$",
+      "$13$",
+      "$6x + 5$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$(x + 3)^2 = x^2 + 6x + 9$ and $(x - 2)(x + 2) = x^2 - 4$. Subtracting: $x^2 + 6x + 9 - x^2 + 4 = 6x + 13$. Subtracting $-4$ adds 4.",
+    "basics": "distributing"
+  },
+  {
+    "id": "WASSCEMATH-D-046",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Factorising by grouping",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Factorise $ab + 2a - 3b - 6$.",
+    "options": [
+      "$(a - 3)(b + 2)$",
+      "$(a - 2)(b + 3)$",
+      "$(a + 3)(b - 2)$",
+      "$(a + 2)(b - 3)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Group in pairs: $a(b + 2) - 3(b + 2) = (a - 3)(b + 2)$. Check with $a = 1$, $b = 1$: $1 + 2 - 3 - 6 = -6$ and $(1 - 3)(1 + 2) = -6$.",
+    "basics": "factoring"
+  },
+  {
+    "id": "WASSCEMATH-D-047",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Linear equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Solve $5(x - 2) = 2(x + 7)$.",
+    "options": [
+      "-8",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$5x - 10 = 2x + 14$, so $3x = 24$ and $x = 8$. Check: $5(6) = 30$ and $2(15) = 30$.",
+    "basics": "solveX"
+  },
+  {
+    "id": "WASSCEMATH-D-048",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Simultaneous equations in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "3 pens and 2 erasers cost ₦850. 1 pen and 4 erasers cost ₦700. Find the cost of one pen.",
+    "options": [
+      "₦125",
+      "₦150",
+      "₦200",
+      "₦250"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$3p + 2e = 850$ and $p + 4e = 700$. Doubling the first gives $6p + 4e = 1700$; subtracting the second gives $5p = 1000$, so $p = 200$ and $e = 125$. ₦125 is the cost of an eraser.",
+    "basics": "systems"
+  },
+  {
+    "id": "WASSCEMATH-D-049",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Change of subject with the subject twice",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Make $x$ the subject of $y = \\frac{3x + 2}{x - 1}$.",
+    "options": [
+      "$x = \\frac{2 - y}{y - 3}$",
+      "$x = \\frac{y + 2}{y - 3}$",
+      "$x = \\frac{y - 2}{y + 3}$",
+      "$x = \\frac{y + 2}{3 - y}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multiply up: $y(x - 1) = 3x + 2$, so $xy - y = 3x + 2$. Collect the $x$ terms: $xy - 3x = y + 2$, $x(y - 3) = y + 2$ and $x = \\frac{y + 2}{y - 3}$. Check with $x = 2$: $y = 8$ and $\\frac{10}{5} = 2$."
+  },
+  {
+    "id": "WASSCEMATH-D-050",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Substitution into a formula",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Given $v^{2} = u^{2} + 2as$, find $v$ when $u = 5$, $a = 3$ and $s = 4$ (take $v$ as positive).",
+    "options": [
+      "7",
+      "11",
+      "13",
+      "49"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$v^2 = 25 + 2(3)(4) = 25 + 24 = 49$, so $v = 7$. 49 is $v^2$, not $v$.",
+    "basics": "substitution"
+  },
+  {
+    "id": "WASSCEMATH-D-051",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Quadratic equations by factorisation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve $2x^{2} + 7x - 4 = 0$.",
+    "options": [
+      "$x = -4$ or $x = \\frac{1}{2}$",
+      "$x = -\\frac{1}{2}$ or $x = 4$",
+      "$x = 1$ or $x = -4$",
+      "$x = 2$ or $x = -1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$2x^2 + 7x - 4 = (2x - 1)(x + 4) = 0$, so $x = \\frac{1}{2}$ or $x = -4$. Check: $2 \\times \\frac{1}{4} + \\frac{7}{2} - 4 = 0$."
+  },
+  {
+    "id": "WASSCEMATH-D-052",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Forming a quadratic equation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the quadratic equation whose roots are 5 and $-2$.",
+    "options": [
+      "$x^{2} + 3x - 10 = 0$",
+      "$x^{2} - 3x + 10 = 0$",
+      "$x^{2} - 3x - 10 = 0$",
+      "$x^{2} - 7x + 10 = 0$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$(x - 5)(x + 2) = x^2 + 2x - 5x - 10 = x^2 - 3x - 10 = 0$. The sum of the roots is 3 and their product is $-10$."
+  },
+  {
+    "id": "WASSCEMATH-D-053",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Truth set of an inequality",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the integer values of $x$ that satisfy $-3 < 2x + 1 \\le 9$.",
+    "options": [
+      "$\\{-2, -1, 0, 1, 2, 3, 4\\}$",
+      "$\\{-2, -1, 0, 1, 2, 3\\}$",
+      "$\\{-1, 0, 1, 2, 3, 4\\}$",
+      "$\\{-1, 0, 1, 2, 3\\}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Subtract 1: $-4 < 2x \\le 8$. Divide by 2: $-2 < x \\le 4$. The integers are $-1, 0, 1, 2, 3, 4$: $-2$ is excluded by the strict sign and 4 is included.",
+    "basics": "inequalities"
+  },
+  {
+    "id": "WASSCEMATH-D-054",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Inequalities in context",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Musa has ₦5,000 to spend on notebooks costing ₦450 each. What is the greatest number of notebooks he can buy?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$450n \\le 5000$ gives $n \\le 11.1$, so the greatest whole number is 11. Rounding 11.1 up to 12 would cost ₦5,400, more than he has.",
+    "basics": "inequalities"
+  },
+  {
+    "id": "WASSCEMATH-D-055",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Fractions with monomial denominators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Simplify $\\frac{x}{3} + \\frac{2x}{5} - \\frac{x}{2}$.",
+    "options": [
+      "$\\frac{7x}{30}$",
+      "$\\frac{x}{3}$",
+      "$\\frac{37x}{30}$",
+      "$\\frac{7x}{10}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Use the common denominator 30: $\\frac{10x}{30} + \\frac{12x}{30} - \\frac{15x}{30} = \\frac{7x}{30}$. Adding the last term instead of subtracting gives $\\frac{37x}{30}$."
+  },
+  {
+    "id": "WASSCEMATH-D-056",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmAlgebra",
+    "skill": "Intercepts of a straight-line graph",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "At which point does the graph of $3x - 4y = 12$ cut the $y$-axis?",
+    "options": [
+      "(0, 4)",
+      "(0, -3)",
+      "(0, 3)",
+      "(4, 0)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "On the $y$-axis $x = 0$, so $-4y = 12$ and $y = -3$: the point is $(0, -3)$. $(4, 0)$ is where the line cuts the $x$-axis."
+  },
+  {
+    "id": "WASSCEMATH-D-057",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Pythagoras' theorem",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A rectangle is 12 cm long and 5 cm wide. Find the length of its diagonal.",
+    "options": [
+      "7 cm",
+      "10.9 cm",
+      "11.4 cm",
+      "13 cm"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The diagonal is the hypotenuse of a right-angled triangle with sides 12 and 5: $\\sqrt{144 + 25} = \\sqrt{169} = 13$ cm.",
+    "basics": "pythagorean"
+  },
+  {
+    "id": "WASSCEMATH-D-058",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Perimeter from area",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A rectangular plot has an area of 60 m² and a length of 12 m. Find its perimeter.",
+    "options": [
+      "17 m",
+      "34 m",
+      "72 m",
+      "120 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Width $= \\frac{60}{12} = 5$ m, so the perimeter is $2(12 + 5) = 34$ m. 17 m is only half the perimeter.",
+    "basics": "areaPerimeter"
+  },
+  {
+    "id": "WASSCEMATH-D-059",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Area of a circle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the area of a circular mat of diameter 21 cm. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "66 cm²",
+      "346.5 cm²",
+      "693 cm²",
+      "1386 cm²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The radius is 10.5 cm, so the area is $\\frac{22}{7} \\times 10.5^2 = \\frac{22}{7} \\times 110.25 = 346.5$ cm². Using the diameter as the radius gives 1386 cm², and 66 cm is the circumference.",
+    "basics": "circleBasics"
+  },
+  {
+    "id": "WASSCEMATH-D-060",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Area of a sector",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the area of a sector of a circle of radius 6 cm with an angle of $70^\\circ$. Leave your answer in terms of $\\pi$.",
+    "options": [
+      "$\\frac{7\\pi}{3}$",
+      "$7\\pi$",
+      "$14\\pi$",
+      "$36\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Area $= \\frac{70}{360} \\times \\pi \\times 36 = 7\\pi$ cm². $\\frac{7\\pi}{3}$ cm is the length of the arc, and $36\\pi$ is the whole circle."
+  },
+  {
+    "id": "WASSCEMATH-D-061",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Area of a segment",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area of the minor segment. (Take $\\pi = 3.14$.)",
+    "options": [
+      "28.5 cm²",
+      "50 cm²",
+      "78.5 cm²",
+      "128.5 cm²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Sector $= \\frac{90}{360} \\times 3.14 \\times 100 = 78.5$ cm² and the triangle $= \\frac{1}{2} \\times 10 \\times 10 = 50$ cm². The segment is the difference: $78.5 - 50 = 28.5$ cm²."
+  },
+  {
+    "id": "WASSCEMATH-D-062",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Surface area of a cuboid",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the total surface area of a closed box 5 cm long, 4 cm wide and 3 cm high.",
+    "options": [
+      "47 cm²",
+      "60 cm²",
+      "64 cm²",
+      "94 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are three pairs of faces: $2(5 \\times 4 + 5 \\times 3 + 4 \\times 3) = 2(20 + 15 + 12) = 94$ cm². 60 is the volume in cm³, and 47 counts each face once."
+  },
+  {
+    "id": "WASSCEMATH-D-063",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Volume of a cone",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the volume of a cone of base radius 3 cm and height 7 cm. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "22 cm³",
+      "66 cm³",
+      "132 cm³",
+      "198 cm³"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3} \\times \\frac{22}{7} \\times 9 \\times 7 = 66$ cm³. Leaving out the $\\frac{1}{3}$ gives the cylinder's 198 cm³.",
+    "basics": "volume"
+  },
+  {
+    "id": "WASSCEMATH-D-064",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Volume of a pyramid",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A pyramid has a square base of side 6 m and a vertical height of 10 m. Find its volume.",
+    "options": [
+      "60 m³",
+      "120 m³",
+      "240 m³",
+      "360 m³"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$V = \\frac{1}{3} \\times \\text{base area} \\times h = \\frac{1}{3} \\times 36 \\times 10 = 120$ m³. Leaving out the $\\frac{1}{3}$ gives 360 m³.",
+    "basics": "volume"
+  },
+  {
+    "id": "WASSCEMATH-D-065",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Curved surface area of a cylinder",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the curved surface area of a cylindrical pipe of radius 3.5 cm and length 10 cm. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "220 cm²",
+      "297 cm²",
+      "385 cm²",
+      "440 cm²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Curved surface $= 2\\pi rh = 2 \\times \\frac{22}{7} \\times 3.5 \\times 10 = 220$ cm². 385 is the volume in cm³, and 297 adds the two circular ends."
+  },
+  {
+    "id": "WASSCEMATH-D-066",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Surface area of a hemisphere",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the total surface area of a solid hemisphere of radius 7 cm. (Take $\\pi = \\frac{22}{7}$.)",
+    "options": [
+      "154 cm²",
+      "308 cm²",
+      "462 cm²",
+      "616 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The curved part is half a sphere, $2\\pi r^2 = 308$ cm², and the flat face is $\\pi r^2 = 154$ cm². The total is $3\\pi r^2 = 462$ cm². 616 cm² is the surface of a whole sphere."
+  },
+  {
+    "id": "WASSCEMATH-D-067",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmMensuration",
+    "skill": "Scales and areas",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A map is drawn to a scale of 1 : 50,000. A farm covers 6 cm² on the map. Find the real area of the farm.",
+    "options": [
+      "0.3 km²",
+      "1.5 km²",
+      "3 km²",
+      "15 km²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "1 cm on the map is 50,000 cm = 0.5 km, so 1 cm² is $0.5 \\times 0.5 = 0.25$ km². The farm is $6 \\times 0.25 = 1.5$ km². Using 0.5 km² per cm² gives 3 km², which forgets to square the scale."
+  },
+  {
+    "id": "WASSCEMATH-D-068",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Angles at a point",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Four angles at a point are $85^\\circ$, $2x^\\circ$, $3x^\\circ$ and $125^\\circ$. Find $x$.",
+    "options": [
+      "18",
+      "30",
+      "42",
+      "60"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Angles at a point add up to $360^\\circ$: $210 + 5x = 360$, so $x = 30$. Using $180^\\circ$ would give a negative angle."
+  },
+  {
+    "id": "WASSCEMATH-D-069",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Angles on a straight line",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two adjacent angles on a straight line are $(4x - 10)^\\circ$ and $(2x + 40)^\\circ$. Find $x$.",
+    "options": [
+      "25",
+      "35",
+      "55",
+      "90"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Adjacent angles on a straight line are supplementary: $6x + 30 = 180$, so $x = 25$. The angles are $90^\\circ$ and $90^\\circ$."
+  },
+  {
+    "id": "WASSCEMATH-D-070",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Vertically opposite angles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two vertically opposite angles are $(5y - 20)^\\circ$ and $(3y + 16)^\\circ$. Find $y$.",
+    "options": [
+      "4.5",
+      "18",
+      "23",
+      "36"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Vertically opposite angles are equal: $5y - 20 = 3y + 16$, so $2y = 36$ and $y = 18$. 36 is $2y$; each angle is $70^\\circ$."
+  },
+  {
+    "id": "WASSCEMATH-D-071",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Exterior angles of a polygon",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the size of each exterior angle of a regular polygon with 20 sides.",
+    "options": [
+      "18°",
+      "20°",
+      "36°",
+      "162°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The exterior angles of any polygon add up to $360^\\circ$, so each one is $\\frac{360^\\circ}{20} = 18^\\circ$. $162^\\circ$ is the interior angle."
+  },
+  {
+    "id": "WASSCEMATH-D-072",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Number of sides from the angle sum",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The interior angles of a polygon add up to $1440^\\circ$. How many sides does it have?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$(n - 2) \\times 180 = 1440$, so $n - 2 = 8$ and $n = 10$. Stopping at $n - 2 = 8$ gives the wrong answer 8."
+  },
+  {
+    "id": "WASSCEMATH-D-073",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Conditions for congruence",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two triangles have two pairs of equal sides, and the angles between those sides are equal. Which condition shows that the triangles are congruent?",
+    "options": [
+      "SAS",
+      "RHS",
+      "SSS",
+      "AAA"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Two sides and the included angle is the SAS condition. AAA only shows the triangles are similar, and RHS needs a right angle."
+  },
+  {
+    "id": "WASSCEMATH-D-074",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Properties of special quadrilaterals",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which quadrilateral always has diagonals that bisect each other at right angles, but not always diagonals of equal length?",
+    "options": [
+      "Rectangle",
+      "Trapezium",
+      "Rhombus",
+      "Square"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The diagonals of a rhombus bisect each other at right angles, and they are equal only when the rhombus is a square. A rectangle's diagonals are equal but not perpendicular in general, and a square's are always equal."
+  },
+  {
+    "id": "WASSCEMATH-D-075",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Angles in the same segment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A, B, C and D are points on a circle, with C and D on the same side of the chord AB. Angle ADB is $38^\\circ$. Find angle ACB.",
+    "options": [
+      "38°",
+      "52°",
+      "76°",
+      "142°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Angles in the same segment, standing on the same chord, are equal, so angle ACB $= 38^\\circ$. $76^\\circ$ is the angle the chord subtends at the centre."
+  },
+  {
+    "id": "WASSCEMATH-D-076",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Perpendicular from the centre to a chord",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A chord 16 cm long is drawn in a circle of radius 10 cm. How far is the chord from the centre?",
+    "options": [
+      "6 cm",
+      "8 cm",
+      "10 cm",
+      "12.8 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The perpendicular from the centre bisects the chord, giving a right-angled triangle with hypotenuse 10 and one side 8: distance $= \\sqrt{10^2 - 8^2} = 6$ cm."
+  },
+  {
+    "id": "WASSCEMATH-D-077",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Angles of a parallelogram",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two adjacent angles of a parallelogram are $(2x + 10)^\\circ$ and $(3x - 5)^\\circ$. Find the smaller angle.",
+    "options": [
+      "35°",
+      "80°",
+      "90°",
+      "100°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Adjacent angles of a parallelogram are supplementary: $5x + 5 = 180$, so $x = 35$. The angles are $2(35) + 10 = 80^\\circ$ and $3(35) - 5 = 100^\\circ$; the smaller is $80^\\circ$."
+  },
+  {
+    "id": "WASSCEMATH-D-078",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmGeometry",
+    "skill": "Figures between the same parallels",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Parallelograms ABCD and ABEF stand on the same base AB and lie between the same parallel lines. ABCD has an area of 48 cm². Find the area of triangle ABE.",
+    "options": [
+      "12 cm²",
+      "24 cm²",
+      "48 cm²",
+      "96 cm²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Parallelograms on the same base and between the same parallels are equal in area, so ABEF is also 48 cm². Triangle ABE is half of parallelogram ABEF: 24 cm²."
+  },
+  {
+    "id": "WASSCEMATH-D-079",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Gradient from an equation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the gradient of the line $2y - 6x = 5$.",
+    "options": [
+      "-6",
+      "-3",
+      "2.5",
+      "3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Make $y$ the subject: $2y = 6x + 5$, so $y = 3x + 2.5$. The gradient is the coefficient of $x$, which is 3. 2.5 is the $y$-intercept."
+  },
+  {
+    "id": "WASSCEMATH-D-080",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Using the distance formula",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The distance between the points (1, k) and (4, 2) is 5 units, and k is positive. Find k.",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$(4 - 1)^2 + (2 - k)^2 = 25$, so $(2 - k)^2 = 16$ and $2 - k = \\pm 4$. That gives $k = -2$ or $k = 6$; the positive value is 6."
+  },
+  {
+    "id": "WASSCEMATH-D-081",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Gradient of a line",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Find the gradient of the line joining A(-1, 5) and B(3, -3).",
+    "options": [
+      "-4",
+      "-2",
+      "$-\\frac{1}{2}$",
+      "2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{-3 - 5}{3 - (-1)} = \\frac{-8}{4} = -2$. Dividing the change in $x$ by the change in $y$ gives $-\\frac{1}{2}$."
+  },
+  {
+    "id": "WASSCEMATH-D-082",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Equation of a line through two points",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the equation of the line through (2, -1) and (6, 7).",
+    "options": [
+      "$y = 2x + 3$",
+      "$y = \\frac{1}{2}x - 2$",
+      "$y = 2x - 1$",
+      "$y = 2x - 5$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$m = \\frac{7 - (-1)}{6 - 2} = 2$, and $y + 1 = 2(x - 2)$ gives $y = 2x - 5$. Check: $12 - 5 = 7$."
+  },
+  {
+    "id": "WASSCEMATH-D-083",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Trigonometric ratios from a right-angled triangle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\theta$ is an acute angle and $\\tan \\theta = \\frac{5}{12}$. Find $\\cos \\theta$.",
+    "options": [
+      "$\\frac{5}{13}$",
+      "$\\frac{12}{13}$",
+      "$\\frac{13}{12}$",
+      "$\\frac{12}{5}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Draw a right-angled triangle with opposite side 5 and adjacent side 12; the hypotenuse is $\\sqrt{25 + 144} = 13$. So $\\cos \\theta = \\frac{12}{13}$. $\\frac{5}{13}$ is $\\sin \\theta$."
+  },
+  {
+    "id": "WASSCEMATH-D-084",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Ratios of special angles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Evaluate $\\tan 45^\\circ + 2\\sin 30^\\circ$ without tables.",
+    "options": [
+      "1.5",
+      "2",
+      "$1 + \\sqrt{3}$",
+      "3"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\tan 45^\\circ = 1$ and $\\sin 30^\\circ = \\frac{1}{2}$, so the value is $1 + 2 \\times \\frac{1}{2} = 2$."
+  },
+  {
+    "id": "WASSCEMATH-D-085",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Cosine of an obtuse angle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Without tables, find the value of $\\cos 150^\\circ$.",
+    "options": [
+      "$-\\frac{\\sqrt{3}}{2}$",
+      "$-\\frac{1}{2}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{3}}{2}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$150^\\circ$ is in the second quadrant, where cosine is negative, and its related acute angle is $180^\\circ - 150^\\circ = 30^\\circ$. So $\\cos 150^\\circ = -\\cos 30^\\circ = -\\frac{\\sqrt{3}}{2}$."
+  },
+  {
+    "id": "WASSCEMATH-D-086",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Graph of the sine function",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For $0^\\circ \\le x \\le 360^\\circ$, what is the greatest value of $y = 3\\sin x$, and at what value of $x$ does it occur?",
+    "options": [
+      "$y = 3$ at $x = 270^\\circ$",
+      "$y = 1$ at $x = 90^\\circ$",
+      "$y = 3$ at $x = 0^\\circ$",
+      "$y = 3$ at $x = 90^\\circ$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The greatest value of $\\sin x$ is 1, at $x = 90^\\circ$, so $y = 3\\sin x$ has a greatest value of 3 there. At $270^\\circ$ the graph reaches its least value, $-3$."
+  },
+  {
+    "id": "WASSCEMATH-D-087",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Graph of the cosine function",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Between $0^\\circ$ and $360^\\circ$, at which values of $x$ does the graph of $y = 2\\cos x$ cut the $x$-axis?",
+    "options": [
+      "$90^\\circ$ and $270^\\circ$",
+      "$180^\\circ$ and $360^\\circ$",
+      "$0^\\circ$ and $180^\\circ$",
+      "$60^\\circ$ and $300^\\circ$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The graph cuts the $x$-axis where $y = 0$, that is where $\\cos x = 0$: at $90^\\circ$ and $270^\\circ$. The 2 stretches the graph vertically by a factor of 2 but does not move these points."
+  },
+  {
+    "id": "WASSCEMATH-D-088",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Heights from angles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A kite string 50 m long is pulled straight and makes an angle of $60^\\circ$ with the level ground. Find the height of the kite, correct to 1 decimal place.",
+    "options": [
+      "25.0 m",
+      "28.9 m",
+      "43.3 m",
+      "86.6 m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The string is the hypotenuse, so the height is $50 \\sin 60^\\circ = 50 \\times 0.8660 = 43.3$ m. Using $\\cos 60^\\circ$ gives 25.0 m."
+  },
+  {
+    "id": "WASSCEMATH-D-089",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmCoordTrig",
+    "skill": "Finding an angle of elevation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vertical pole 8 m high casts a shadow $8\\sqrt{3}$ m long on level ground. Find the angle of elevation of the sun.",
+    "options": [
+      "30°",
+      "35°",
+      "45°",
+      "60°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\tan \\theta = \\frac{8}{8\\sqrt{3}} = \\frac{1}{\\sqrt{3}}$, and the angle whose tangent is $\\frac{1}{\\sqrt{3}}$ is $30^\\circ$. $60^\\circ$ is the angle at the top of the pole."
+  },
+  {
+    "id": "WASSCEMATH-D-090",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Mode from a frequency table",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The table shows the number of times pupils were late in a term.\n\n| Times late | 10 | 20 | 30 | 40 |\n|---|---|---|---|---|\n| Pupils | 4 | 9 | 7 | 5 |\n\nWhat is the mode?",
+    "options": [
+      "9",
+      "20",
+      "25",
+      "40"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mode is the value with the highest frequency. 9 pupils were late 20 times, more than for any other value, so the mode is 20. 9 is the frequency, not the value.",
+    "basics": "meanMedian"
+  },
+  {
+    "id": "WASSCEMATH-D-091",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Finding a missing value from the mean",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The mean of 5, x, 8, 11 and 6 is 7. Find x.",
+    "options": [
+      "5",
+      "7",
+      "30",
+      "35"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The five numbers add up to $5 \\times 7 = 35$, so $x = 35 - (5 + 8 + 11 + 6) = 35 - 30 = 5$.",
+    "basics": "meanMedian"
+  },
+  {
+    "id": "WASSCEMATH-D-092",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Median from a frequency table",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table shows the number of brothers that 20 pupils have.\n\n| Brothers | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Pupils | 2 | 5 | 6 | 4 | 3 |\n\nFind the median number of brothers.",
+    "options": [
+      "1.5",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The median is the mean of the 10th and 11th values. The running totals are 2, 7, 13, ..., so the 8th to 13th values are all 2. The median is 2. 6 is the highest frequency."
+  },
+  {
+    "id": "WASSCEMATH-D-093",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Mean deviation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the mean deviation of 3, 5, 7 and 9.",
+    "options": [
+      "0",
+      "2",
+      "2.24",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 6, and the absolute deviations are 3, 1, 1 and 3. Their mean is $\\frac{8}{4} = 2$. Without the absolute values the deviations add to 0, and 2.24 is the standard deviation."
+  },
+  {
+    "id": "WASSCEMATH-D-094",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Variance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Find the variance of 1, 3, 5 and 7.",
+    "options": [
+      "2.24",
+      "4",
+      "5",
+      "20"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 4. The squared deviations are 9, 1, 1, 9, adding to 20, so the variance is $\\frac{20}{4} = 5$. 2.24 is the standard deviation, the square root of the variance."
+  },
+  {
+    "id": "WASSCEMATH-D-095",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Range from a table",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The table shows the rainfall at a weather station in the first five months of a year.\n\n| Month | January | February | March | April | May |\n|---|---|---|---|---|---|\n| Rainfall (mm) | 12 | 30 | 85 | 140 | 210 |\n\nFind the range of the rainfall.",
+    "options": [
+      "85 mm",
+      "198 mm",
+      "210 mm",
+      "222 mm"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Range = highest $-$ lowest $= 210 - 12 = 198$ mm. 85 mm is the median.",
+    "basics": "readingTable"
+  },
+  {
+    "id": "WASSCEMATH-D-096",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Cumulative frequency",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The table shows the marks of the pupils in a class.\n\n| Marks | 1 to 10 | 11 to 20 | 21 to 30 | 31 to 40 | 41 to 50 |\n|---|---|---|---|---|---|\n| Pupils | 5 | 8 | 12 | 9 | 6 |\n\nHow many pupils scored 30 marks or less?",
+    "options": [
+      "12",
+      "20",
+      "25",
+      "34"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Add the frequencies up to the class 21 to 30: $5 + 8 + 12 = 25$. 12 is only the pupils in the class 21 to 30.",
+    "basics": "readingTable"
+  },
+  {
+    "id": "WASSCEMATH-D-097",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Pie charts in reverse",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a pie chart of the students in a school, a sector of $72^\\circ$ represents 45 students. How many students are in the school?",
+    "options": [
+      "5",
+      "9",
+      "162",
+      "225"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$72^\\circ$ is $\\frac{72}{360} = \\frac{1}{5}$ of the circle, so the total is $45 \\times 5 = 225$ students."
+  },
+  {
+    "id": "WASSCEMATH-D-098",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Combined independent events",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A fair coin is tossed and a fair die is thrown. What is the probability of getting a head and an even number?",
+    "options": [
+      "$\\frac{1}{12}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2}$",
+      "1"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The events are independent, so multiply: $P(\\text{head}) \\times P(\\text{even}) = \\frac{1}{2} \\times \\frac{3}{6} = \\frac{1}{4}$. Adding the two probabilities gives 1, which would mean it always happens."
+  },
+  {
+    "id": "WASSCEMATH-D-099",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Mutually exclusive events",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A spinner is coloured red, green and yellow. The probability of red is 0.3 and the probability of green is 0.25. What is the probability of red or green on one spin?",
+    "options": [
+      "0.075",
+      "0.25",
+      "0.45",
+      "0.55"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Red and green cannot happen on the same spin, so the probabilities add: $0.3 + 0.25 = 0.55$. Multiplying gives 0.075, which is for two spins; 0.45 is the probability of yellow."
+  },
+  {
+    "id": "WASSCEMATH-D-100",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wmStatistics",
+    "skill": "Experimental probability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A die is thrown 120 times and a six comes up 25 times. What is the experimental probability of throwing a six?",
+    "options": [
+      "$\\frac{5}{36}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{5}{24}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Experimental probability = number of times the event happened ÷ number of trials $= \\frac{25}{120} = \\frac{5}{24}$. $\\frac{1}{6}$ is the theoretical probability for a fair die.",
+    "basics": "probabilityTable"
+  }
+]

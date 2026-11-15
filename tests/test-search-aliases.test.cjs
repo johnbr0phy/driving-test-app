@@ -28,6 +28,12 @@ const CASES = [
   ["ielts academic reading", "UK", "ieltsread"],
   ["ielts general reading", "PH", "ieltsread"],
   ["ielts mock test", "US", "ieltsread"],
+  ["wassce english", "NG", "wassceeng"],
+  ["waec english", "NG", "wassceeng"],
+  ["ssce english", "NG", "wassceeng"],
+  ["may june english", "NG", "wassceeng"],
+  ["waec english objective", "NG", "wassceeng"],
+  ["test of orals", "NG", "wassceeng"],
   ["hiset", "US", "hiset"],
   ["hiset practice test", "US", "hiset"],
   ["hiset math", "US", "hiset"],
@@ -43,6 +49,11 @@ const CASES = [
   ["lsat practice test", "US", "lsat"],
   ["law school admission test", "US", "lsat"],
   ["logical reasoning practice", "US", "lsat"],
+  ["waec maths", "NG", "wasscemath"],
+  ["waec mathematics", "GH", "wasscemath"],
+  ["wassce maths", "NG", "wasscemath"],
+  ["ssce maths", "NG", "wasscemath"],
+  ["may june maths", "NG", "wasscemath"],
 ];
 
 for (const [q, region, id] of CASES) {

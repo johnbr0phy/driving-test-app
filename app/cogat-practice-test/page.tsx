@@ -60,11 +60,11 @@ const faqs = [
   },
   {
     q: "How is the CogAT scored?",
-    a: "The real CogAT compares your child with other students of the same age, month by month: a Standard Age Score, an age percentile rank and a stanine for each battery, plus an Ability Profile that sums up the pattern of strengths. Tigertest cannot give those scores, because a practice test is not normed. It gives percent correct per battery and shows which of the six tests need work.",
+    a: "The real CogAT compares your child with other students of the same age, month by month: a Standard Age Score and an age percentile rank, with age stanines and an Ability Profile that sums up the pattern of strengths. Tigertest cannot give those scores, because a practice test is not normed. It gives percent correct per battery and shows which of the six tests need work.",
   },
   {
     q: "How many questions are on each practice test?",
-    a: "36 questions a battery, 12 for each CogAT test, in 30 minutes a battery, so each test gets the 10 minutes Riverside gives it. Riverside publishes the time for each test rather than the number of questions, so the 12 per test is Tigertest's choice. There is a short break between the two batteries, since many schools give them in separate sittings.",
+    a: "36 questions a battery, 12 for each CogAT test, in 30 minutes a battery, so each test gets the 10 minutes Riverside gives it. Riverside publishes the time for each test rather than the number of questions, so the 12 per test is Tigertest's choice. There is a short break between the two batteries. Riverside says the full CogAT takes less than two class periods.",
   },
   {
     q: "Can you prepare for the CogAT?",
@@ -239,7 +239,7 @@ export default function CogatLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Read every choice</h3>
               <p>
-                Several answers often look close. Encourage your child to read all four before choosing and to check a number answer by putting it back into the pattern or equation.
+                Several answers often look close. Encourage your child to read every choice before picking one and to check a number answer by putting it back into the pattern or equation.
               </p>
             </div>
             <div>

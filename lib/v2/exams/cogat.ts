@@ -31,7 +31,7 @@ export const COGAT: ExamV2Config = {
   icon: "graduation",
   theme: { brand: "174 40% 18%", brandDark: "174 40% 12%", brandLight: "174 35% 95%" },
   breakSeconds: 300,
-  breakNote: "Many schools give each CogAT battery in its own sitting. Take a short break before the Quantitative Battery.",
+  breakNote: "Take a short break before the Quantitative Battery.",
   sections: [
     {
       key: "verbal",

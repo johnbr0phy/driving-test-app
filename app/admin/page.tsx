@@ -43,6 +43,10 @@ const QuestionsTab = dynamic(() => import("@/components/admin/QuestionsTab").the
   ssr: false,
   loading: () => <TabLoading />,
 });
+const TestsTab = dynamic(() => import("@/components/admin/TestsTab").then((m) => m.TestsTab), {
+  ssr: false,
+  loading: () => <TabLoading />,
+});
 const UsersTab = dynamic(() => import("@/components/admin/UsersTab").then((m) => m.UsersTab), {
   ssr: false,
   loading: () => <TabLoading />,
@@ -52,6 +56,7 @@ const TABS = [
   { id: "today", label: "Today" },
   { id: "growth", label: "Growth" },
   { id: "conversion", label: "Conversion" },
+  { id: "tests", label: "Tests" },
   { id: "teachers", label: "Teachers" },
   { id: "quizzes", label: "Quizzes" },
   { id: "searches", label: "Searches" },
@@ -139,7 +144,7 @@ function AdminTabs() {
       <div className="container mx-auto px-4 pb-6 max-w-6xl">
         {/* The tab bar stays at the top of the screen, so on a phone a tab is
             always one tap away however far down a table the reader is. The
-            title only fits beside it from sm up. Eight tabs are wider than a phone,
+            title only fits beside it from sm up. Nine tabs are wider than a phone,
             so there the bar scrolls sideways. */}
         <div className="sticky top-0 z-20 -mx-4 px-4 py-3 sm:py-4 mb-3 sm:mb-2 bg-gray-50/90 dark:bg-gray-950/90 backdrop-blur flex items-center justify-between gap-3">
           <h1 className="sr-only sm:not-sr-only text-xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">Tigertest admin</h1>
@@ -167,6 +172,7 @@ function AdminTabs() {
             {t.id === "today" && <TodayTab />}
             {t.id === "growth" && <GrowthTab />}
             {t.id === "conversion" && <ConversionTab />}
+            {t.id === "tests" && <TestsTab />}
             {t.id === "teachers" && <TeachersTab />}
             {t.id === "quizzes" && <QuizzesTab />}
             {t.id === "searches" && <SearchesView />}

@@ -17,7 +17,7 @@ Q = [
  "An initial MAP target of 65 mm Hg is a strong recommendation over higher targets, which added no benefit and more vasopressor exposure in trials."),
 ("Which vasopressor is recommended first-line for adults with septic shock?",
  "Norepinephrine", ["Dopamine infusion", "Phenylephrine", "Vasopressin alone"],
- "Norepinephrine is the first-line vasopressor. Vasopressin is added rather than escalating norepinephrine, usually at 0.25 to 0.5 mcg/kg/min, and dopamine causes more dysrhythmias."),
+ "Norepinephrine is the first-line vasopressor. Vasopressin is added rather than escalating norepinephrine further, usually once norepinephrine reaches 0.25 to 0.5 mcg/kg/min, and dopamine causes more dysrhythmias."),
 ("When does the 2021 Surviving Sepsis guideline suggest adding IV corticosteroids in septic shock?",
  "Norepinephrine 0.25 mcg/kg/min for 4 h", ["At the very first vasopressor dose", "Only if a cortisol level is low", "Before the first fluid bolus is given"],
  "IV hydrocortisone, typically 200 mg a day, is suggested for patients with an ongoing need for vasopressors, defined as norepinephrine or epinephrine at 0.25 mcg/kg/min or more for at least 4 hours after starting."),

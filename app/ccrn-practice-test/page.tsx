@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "How many questions are on the CCRN exam?",
-    a: "The CCRN exam is a 3-hour test of 150 multiple-choice questions. Of those, 125 are scored and 25 are unscored questions used to try out items for future exams, and you cannot tell which is which. It is taken by computer at a PSI testing center or by live remote proctoring, and results show on screen when you finish.",
+    a: "The CCRN exam is a 3-hour test of 150 multiple-choice questions. Of those, 125 are scored and 25 are unscored questions used to gather data on items for future exams. It is taken by computer at a PSI testing center or by live remote proctoring, and results show on screen when you finish.",
   },
   {
     q: "What score do you need to pass the CCRN?",

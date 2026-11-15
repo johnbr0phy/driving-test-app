@@ -51,8 +51,8 @@ items, and no prep-site or commercial question material were used, not even rewo
   https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/
   Used for: qSOFA not alone; lactate and capillary refill; at least 30 mL/kg crystalloid in 3 h;
   MAP 65; antimicrobials within 1 hour for possible shock, 3 hours for possible sepsis without
-  shock; balanced crystalloids; no starches; norepinephrine first, vasopressin added at 0.25 to
-  0.5 mcg/kg/min; peripheral vasopressor start; hydrocortisone 200 mg a day at norepinephrine or
+  shock; balanced crystalloids; no starches; norepinephrine first, vasopressin added rather than
+  escalating norepinephrine (in practice once norepinephrine reaches 0.25 to 0.5 mcg/kg/min); peripheral vasopressor start; hydrocortisone 200 mg a day at norepinephrine or
   epinephrine 0.25 mcg/kg/min or more for 4 hours; 6 mL/kg PBW; plateau under 30; prone over
   12 h; restrictive transfusion at 7 g/dL; insulin from 180 mg/dL; LMWH prophylaxis.
 - Hyperglycemic Crises in Adults With Diabetes: A Consensus Report (ADA, EASD, JBDS, AACE, DTS;

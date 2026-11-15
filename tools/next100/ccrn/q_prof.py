@@ -77,7 +77,7 @@ Q = [
  "Inviting them to daily rounds", ["Asking them to leave at rounds", "Sharing updates only at discharge", "Limiting them to set hours"],
  "Family participation in rounds keeps the family informed, lets them share what they know about the patient and builds trust in decisions. It also supports patient- and family-centered care."),
 # Facilitation of learning
-("A nurse uses teach-back and visual aids to teach a family about heart failure. Which Synergy Model competency is this?",
+("A nurse uses plain language, pictures and practice sessions to teach a family about heart failure. Which Synergy Model competency is this?",
  "Facilitation of learning", ["Clinical inquiry", "Collaboration", "Advocacy and moral agency"],
  "Facilitation of learning is the ability to help patients, families, staff and the community learn, through both formal and informal teaching."),
 ("What is the best way to check that a family understands discharge instructions?",

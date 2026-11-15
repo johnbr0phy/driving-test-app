@@ -40,7 +40,7 @@ ITEMS = [
       "Set 30 + 5x = 10x, so 5x = 30 and x = 6 classes, when both cost $60. At 3 classes Plan A costs $45, not $30."),
     S("1", 3, "Systems of inequalities", "Which point is in the solution set of y > x + 1 and y ≤ −2x + 7?",
       ["(1, 4)", "(3, 2)", "(0, 1)", "(2, 4)"],
-      "For (1, 4): 4 > 2 and 4 ≤ 5, so both are true. (2, 4) works in the first inequality, but 4 ≤ 3 is false, and (0, 1) sits on the dashed line y = x + 1, which is not included."),
+      "For (1, 4): 4 > 2 and 4 ≤ 5, so both are true. (2, 4) works in the first inequality, but 4 ≤ 3 is false, and (0, 1) lies on the boundary y = x + 1, where 1 > 1 is false, so it is not included."),
     S("1", 2, "Correlation coefficient", "A scatter plot of two quantities has a correlation coefficient of r = −0.92. Which describes the data?",
       ["Strong negative linear association", "Weak negative linear association", "Strong positive linear association", "No linear association"],
       "r near −1 means the points lie close to a line that falls from left to right: a strong negative association. A weak association would have r near 0."),

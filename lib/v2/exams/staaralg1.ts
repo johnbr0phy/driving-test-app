@@ -108,7 +108,7 @@ export const STAARALG1: ExamV2Config = {
   defaultGoal: 60,
   goalChoices: [40, 50, 55, 60, 70, 80, 90],
   goalNotes: {
-    40: "Around the Approaches (passing) line, as an estimate",
+    40: "Past the Approaches (passing) line, as an estimate",
     50: "Comfortably past the passing line",
     55: "Around the Meets Grade Level line, as an estimate",
     60: "Solid across all five reporting categories",

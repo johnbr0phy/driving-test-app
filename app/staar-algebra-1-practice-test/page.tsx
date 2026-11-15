@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "How long is the STAAR Algebra I test, and can I use a calculator?",
-    a: "There is no fixed time limit. TEA expects most students to finish in three to four hours, and the test must be finished the same school day. A graphing calculator is required: every student must have one for the whole test, and one is built into the online platform. The STAAR Algebra I reference materials, with the factoring, exponent, linear and quadratic formulas, are provided too.",
+    a: "There is no set clock for each question. TEA expects most students to finish in three to four hours; the test must be finished the same school day, and a student who needs more time can keep working to the end of the school day, up to seven hours. A graphing calculator is required: every student must have one for the whole test, and one is built into the online platform. The STAAR Algebra I reference materials, with the factoring, exponent, linear and quadratic formulas, are provided too.",
   },
   {
     q: "What score do you need to pass STAAR Algebra I?",

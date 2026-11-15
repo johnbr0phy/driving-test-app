@@ -395,7 +395,7 @@
       3
     ],
     "calculator": true,
-    "explanation": "With a = 2, b = −3 and c = −4: b² − 4ac = 9 + 32 = 41, and −b/2a uses −(−3) = 3 over 2(2) = 4. Using 9 − 32 forgets that −4ac is +32."
+    "explanation": "With a = 2, b = −3 and c = −4: b² − 4ac = 9 + 32 = 41, and −b/2a uses −(−3) = 3 over 2(2) = 4. Computing −4ac as −32 gives 9 − 32 = −23, and dropping that sign gives the wrong (3 ± √23)/4; the discriminant is 9 + 32 = 41."
   },
   {
     "id": "STAARA1-T1-019",
@@ -902,16 +902,16 @@
     "difficulty": 3,
     "format": "numeric",
     "basics": "systems",
-    "stem": "A school sold 200 tickets for \\$1,240. Adult tickets cost \\$8 and student tickets cost \\$5. How many adult tickets were sold?",
+    "stem": "A basketball team scored 54 points on 23 baskets, all 2-point and 3-point baskets. How many 3-point baskets did the team make?",
     "numeric": {
       "answers": [
-        "80"
+        "8"
       ],
       "tolerance": 0,
       "wholeNumber": true
     },
     "calculator": true,
-    "explanation": "a + s = 200 and 8a + 5s = 1,240. Substituting s = 200 − a: 8a + 1,000 − 5a = 1,240, so 3a = 240 and a = 80. Check: 80 adults and 120 students make \\$640 + \\$600."
+    "explanation": "t + h = 23 and 2t + 3h = 54, where t is 2-point and h is 3-point baskets. Substituting t = 23 − h: 46 − 2h + 3h = 54, so h = 8. Check: 15 two-pointers and 8 three-pointers make 30 + 24 = 54 points."
   },
   {
     "id": "STAARA1-T1-042",
@@ -1104,7 +1104,7 @@
       3
     ],
     "calculator": true,
-    "explanation": "For (1, 4): 4 > 2 and 4 ≤ 5, so both are true. (2, 4) works in the first inequality, but 4 ≤ 3 is false, and (0, 1) sits on the dashed line y = x + 1, which is not included."
+    "explanation": "For (1, 4): 4 > 2 and 4 ≤ 5, so both are true. (2, 4) works in the first inequality, but 4 ≤ 3 is false, and (0, 1) lies on the boundary y = x + 1, where 1 > 1 is false, so it is not included."
   },
   {
     "id": "STAARA1-T2-001",
@@ -1778,7 +1778,7 @@
       3
     ],
     "calculator": true,
-    "explanation": "y = 6 when x = 0, and each y is 3 times the one before, so y = 6(3)ˣ. y = 6x + 12 fits only the first two points."
+    "explanation": "y = 6 when x = 0, and each y is 3 times the one before, so y = 6(3)ˣ. y = 6x + 12 fits only the point (1, 18); at x = 0 it gives 12, not 6."
   },
   {
     "id": "STAARA1-T2-031",
@@ -3906,7 +3906,7 @@
       0
     ],
     "calculator": true,
-    "explanation": "v = 120(1.35)⁴ ≈ 120(3.3215) ≈ 398.6. 648 thousand treats 1.35 as adding 135 thousand a day, and 219 thousand is day 2."
+    "explanation": "v = 120(1.35)⁴ ≈ 120(3.3215) ≈ 398.6. 648 thousand multiplies 120 × 1.35 by 4 instead of raising 1.35 to the 4th power, and 219 thousand is day 2."
   },
   {
     "id": "STAARA1-D-075",
@@ -3919,10 +3919,10 @@
     "format": "matrix",
     "stem": "Can each binomial be written as a difference of two squares?",
     "rows": [
-      "x² − 81",
-      "x² + 36",
+      "4x² − 9y²",
+      "x² − 20",
       "16x² − 1",
-      "x² − 9x"
+      "9x² − 12"
     ],
     "columns": [
       "Yes",
@@ -3935,7 +3935,7 @@
       1
     ],
     "calculator": true,
-    "explanation": "x² − 81 = x² − 9² and 16x² − 1 = (4x)² − 1², so both can. x² + 36 is a sum, and in x² − 9x the second term 9x is not a square."
+    "explanation": "4x² − 9y² = (2x)² − (3y)² and 16x² − 1 = (4x)² − 1², so both can. 20 and 12 are not perfect squares, so x² − 20 and 9x² − 12 cannot be written with whole-number squares."
   },
   {
     "id": "STAARA1-D-076",

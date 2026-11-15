@@ -39,7 +39,7 @@ ITEMS = [
       "Losing 25% means keeping 75%, so the factor is 0.75. A factor of 0.25 would keep only a quarter of the value each year."),
     S("2", 2, "Writing from a table", "Which function represents the data in the table?",
       ["y = 6(3)ˣ", "y = 3(6)ˣ", "y = 6x + 12", "y = 6(12)ˣ"],
-      "y = 6 when x = 0, and each y is 3 times the one before, so y = 6(3)ˣ. y = 6x + 12 fits only the first two points.",
+      "y = 6 when x = 0, and each y is 3 times the one before, so y = 6(3)ˣ. y = 6x + 12 fits only the point (1, 18); at x = 0 it gives 12, not 6.",
       passage=table(["x", "0", "1", "2", "3"], ["y", "6", "18", "54", "162"])),
     N("2", 2, "Evaluating exponential functions", "If f(x) = 2(1.5)ˣ, what is f(2)?",
       ["4.5"],
@@ -91,5 +91,5 @@ ITEMS = [
       "At x = 10, g ≈ 288 and f = 300, so g is still smaller. At x = 11, g ≈ 432 and f = 320. An exponential function eventually passes any linear one."),
     S("0", 2, "Exponential models", "An exponential model of a video's views v, in thousands, d days after it is posted is v = 120(1.35)ᵈ. Which is the best prediction for day 4?",
       ["About 399 thousand", "About 648 thousand", "About 219 thousand", "About 162 thousand"],
-      "v = 120(1.35)⁴ ≈ 120(3.3215) ≈ 398.6. 648 thousand treats 1.35 as adding 135 thousand a day, and 219 thousand is day 2."),
+      "v = 120(1.35)⁴ ≈ 120(3.3215) ≈ 398.6. 648 thousand multiplies 120 × 1.35 by 4 instead of raising 1.35 to the 4th power, and 219 thousand is day 2."),
 ]

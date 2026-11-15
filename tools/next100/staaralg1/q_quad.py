@@ -23,7 +23,7 @@ ITEMS = [
       "x² − 5x − 14 = (x − 7)(x + 2), so x − 7 = 0 or x + 2 = 0, giving x = 7 and x = −2. The signs flip from the factors to the solutions."),
     S("1", 2, "Quadratic formula", "What are the solutions of 2x² − 3x − 4 = 0?",
       ["(3 ± √41)/4", "(−3 ± √41)/4", "(3 ± √23)/4", "(3 ± √41)/2"],
-      "With a = 2, b = −3 and c = −4: b² − 4ac = 9 + 32 = 41, and −b/2a uses −(−3) = 3 over 2(2) = 4. Using 9 − 32 forgets that −4ac is +32."),
+      "With a = 2, b = −3 and c = −4: b² − 4ac = 9 + 32 = 41, and −b/2a uses −(−3) = 3 over 2(2) = 4. Computing −4ac as −32 gives 9 − 32 = −23, and dropping that sign gives the wrong (3 ± √23)/4; the discriminant is 9 + 32 = 41."),
     S("1", 2, "Axis of symmetry", "What is the axis of symmetry of the graph of f(x) = 3x² − 12x + 1?",
       ["x = 2", "x = −2", "x = 4", "x = −4"],
       "x = −b/(2a) = −(−12)/(2 · 3) = 12/6 = 2. Leaving out the negative sign gives x = −2."),

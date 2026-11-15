@@ -62,6 +62,7 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
 const BORROWED_SETS: Record<string, string> = {
   dmv: "driving",
   hiset: "ged",
+  toeflread: "ieltsread",
   ukwater: "caplumb",
   ukg3: "caplumb",
   ukplumb: "caplumb",

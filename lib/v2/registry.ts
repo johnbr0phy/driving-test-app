@@ -43,6 +43,7 @@ import { PRAXIS } from "./exams/praxis";
 import { GRE } from "./exams/gre";
 import { GMAT } from "./exams/gmat";
 import { IELTSREAD } from "./exams/ieltsread";
+import { TOEFLREAD } from "./exams/toeflread";
 import { MCAT } from "./exams/mcat";
 import { LSAT } from "./exams/lsat";
 import { SEHP } from "./exams/sehp";
@@ -106,7 +107,7 @@ import { APCALCAB } from "./exams/apcalcab";
 import { APHUG } from "./exams/aphug";
 import { lockedStepCount } from "../examLocks";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, HISET, PRAXIS, SAT, PSAT, ACT, MAPGROWTH, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, LSAT, MCAT, IELTSREAD, SEHP, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA];
+export const EXAMS_V2: ExamV2Config[] = [GED, HISET, PRAXIS, SAT, PSAT, ACT, MAPGROWTH, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, LSAT, MCAT, IELTSREAD, TOEFLREAD, SEHP, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA];
 
 /**
  * The light Premium tier on v2 exams (Nov 2026), the v1 rule carried over:
@@ -117,7 +118,7 @@ export const EXAMS_V2: ExamV2Config[] = [GED, HISET, PRAXIS, SAT, PSAT, ACT, MAP
  * NEET and the rest) are never sold: leave a new one off this list.
  */
 export const PREMIUM_V2_IDS: string[] = [
-  "praxis", "gre", "gmat", "lsat", "mcat", "ieltsread", "teas", "hesi", "asvab",
+  "praxis", "gre", "gmat", "lsat", "mcat", "ieltsread", "toeflread", "teas", "hesi", "asvab",
   "nclex", "nclexpn", "rexpn", "uknmc", "emt", "paramedic", "faapvt",
   "secplus", "cysa", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "gcdl", "gcppca", "ccna",
   "pmp", "capm", "psm", "itil",

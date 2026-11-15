@@ -67,6 +67,7 @@ const BORROWED_SETS: Record<string, string> = {
   ukplumb: "caplumb",
   ukrbi: "nhie",
   ukbregs: "nhie",
+  naplex: "ptcb",
   ukcar: "driving", ukadi: "driving", ukmoto: "moto", uklgv: "cdl", ukpcv: "cdl",
   caon: "driving", caqc: "driving", cabc: "driving", caab: "driving", camb: "driving",
   aunsw: "driving", auvic: "driving", auqld: "driving", auwa: "driving", ausa: "driving", inrto: "driving",

@@ -7,6 +7,13 @@ import { urlLanguageHeaders } from "./lib/urlLanguage";
 const BUILD_LAST_MODIFIED = new Date().toUTCString();
 
 const nextConfig: NextConfig = {
+  // Every merge to main deploys, about 40 a day, and build minutes were most
+  // of the Vercel bill (Nov 15 2026). Type checking and linting already run
+  // on every PR and push in .github/workflows/checks.yml, so the Vercel build
+  // skips them rather than paying for them twice. Run `npm run typecheck` and
+  // `npm run lint` locally; CI still blocks a broken PR.
+  typescript: { ignoreBuildErrors: true },
+  eslint: { ignoreDuringBuilds: true },
   // The webpack compile of every page and question bank sits right at the
   // build machine's memory limit: on Nov 4 2026 a one-file change (#700) tipped
   // it into an out-of-memory kill on Vercel. Trade a little build time for a

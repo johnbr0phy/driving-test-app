@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "How is the AFOQT scored?",
-    a: "Subtest scores are combined into composites, and each composite is reported as a percentile from 1 to 99 against other test takers, not as percent correct. The Air Force's result areas are Verbal, Quantitative, Academic Aptitude, Pilot, Combat Systems Officer and Air Battle Manager, plus Situational Judgment. Per DAFMAN 36-2664 the minimums are the 15th percentile on Verbal and the 10th on Quantitative; pilot, CSO and ABM applicants need more. Tigertest shows percent correct for each subtest and never estimates an AFOQT percentile.",
+    a: "Subtest scores are combined into composites, and each composite is reported as a percentile from 1 to 99 against other test takers, not as percent correct. The Air Force's result areas are Verbal, Quantitative, Academic Aptitude, Pilot, Combat Systems Officer and Air Battle Manager. Air Force ROTC, citing DAFMAN 36-2664, gives the minimums as the 15th percentile on Verbal and the 10th on Quantitative; pilot, CSO and ABM applicants need more. Tigertest shows percent correct for each subtest and never estimates an AFOQT percentile.",
   },
   {
     q: "How many times can I take the AFOQT?",

@@ -332,14 +332,14 @@
       "options": [
         "gram",
         "pound",
-        "quart",
+        "yard",
         "inch",
         "weight"
       ],
       "correct": [
         1
       ],
-      "explanation": "Minutes make up an hour, and ounces make up a pound in the same system. A gram is a metric unit and an inch measures length."
+      "explanation": "Minutes make up an hour, and ounces make up a pound in the same system. A gram is a metric unit, and an inch and a yard measure length."
     },
     {
       "id": "AFOQT-T1-013",
@@ -735,7 +735,7 @@
       "correct": [
         0
       ],
-      "explanation": "Fortitude is courage and strength of mind in pain or hardship. Wealth and luck come from confusing it with fortune."
+      "explanation": "Fortitude is courage and strength of mind in pain or hardship. Good fortune and luck come from confusing it with fortune."
     },
     {
       "id": "AFOQT-T1-030",
@@ -834,18 +834,18 @@
       "skill": "Closest meaning",
       "difficulty": 1,
       "format": "single",
-      "stem": "NOVICE most nearly means:",
+      "stem": "PLACID most nearly means:",
       "options": [
-        "expert",
-        "novelist",
-        "judge",
-        "story",
-        "beginner"
+        "plain",
+        "angry",
+        "quick",
+        "eager",
+        "calm"
       ],
       "correct": [
         4
       ],
-      "explanation": "A novice is new to an activity. Story comes from confusing it with novel; expert is the opposite."
+      "explanation": "Placid means calm and peaceful, as a placid lake. Plain only looks similar; angry is close to the opposite."
     },
     {
       "id": "AFOQT-T1-035",
@@ -1690,7 +1690,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = 0 column and down to the Y = -1 row: the entry is 63. 15 is at X = -1, Y = 0, with the two values swapped."
+      "explanation": "Go across to the X = 0 column and down to the Y = -1 row: the entry is 63. 15 is at X = -1, Y = 0, with X and Y swapped; 11 is at X = +1, Y = -1, one cell away; 84 is at X = -1, Y = -1, one cell away; 53 is at X = 0, Y = 0, one cell away."
     },
     {
       "id": "AFOQT-T1-072",
@@ -1714,7 +1714,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = 0 column and down to the Y = +2 row: the entry is 23. 18 is at X = +2, Y = 0, with the two values swapped."
+      "explanation": "Go across to the X = 0 column and down to the Y = +2 row: the entry is 23. 18 is at X = +2, Y = 0, with X and Y swapped; 70 is at X = +1, Y = +2, one cell away; 15 is at X = -1, Y = +2, one cell away; 33 is at X = 0, Y = +3, one cell away."
     },
     {
       "id": "AFOQT-T1-073",
@@ -1738,7 +1738,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +3 column and down to the Y = -3 row: the entry is 15. 34 is at X = -3, Y = +3, with the two values swapped."
+      "explanation": "Go across to the X = +3 column and down to the Y = -3 row: the entry is 15. 34 is at X = -3, Y = +3, with X and Y swapped; 99 is at X = +2, Y = -3, one cell away; 38 is at X = +3, Y = -2, one cell away; 66 is at X = -3, Y = -3, where X has the wrong sign."
     },
     {
       "id": "AFOQT-T1-074",
@@ -1762,7 +1762,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -1 column and down to the Y = 0 row: the entry is 15. 63 is at X = 0, Y = -1, with the two values swapped."
+      "explanation": "Go across to the X = -1 column and down to the Y = 0 row: the entry is 15. 63 is at X = 0, Y = -1, with X and Y swapped; 53 is at X = 0, Y = 0, one cell away; 46 is at X = -2, Y = 0, one cell away; 84 is at X = -1, Y = -1, one cell away."
     },
     {
       "id": "AFOQT-T1-075",
@@ -1786,7 +1786,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -1 column and down to the Y = -1 row: the entry is 84. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = -1 column and down to the Y = -1 row: the entry is 84. 63 is at X = 0, Y = -1, one cell away; 95 is at X = -2, Y = -1, one cell away; 15 is at X = -1, Y = 0, one cell away; 35 is at X = -1, Y = -2, one cell away."
     },
     {
       "id": "AFOQT-T1-076",
@@ -1810,7 +1810,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -3 column and down to the Y = -3 row: the entry is 66. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = -3 column and down to the Y = -3 row: the entry is 66. 21 is at X = -2, Y = -3, one cell away; 42 is at X = -3, Y = -2, one cell away; 15 is at X = +3, Y = -3, where X has the wrong sign; 34 is at X = -3, Y = +3, where Y has the wrong sign."
     },
     {
       "id": "AFOQT-T1-077",
@@ -1834,7 +1834,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +3 column and down to the Y = 0 row: the entry is 82. 33 is at X = 0, Y = +3, with the two values swapped."
+      "explanation": "Go across to the X = +3 column and down to the Y = 0 row: the entry is 82. 33 is at X = 0, Y = +3, with X and Y swapped; 18 is at X = +2, Y = 0, one cell away; 93 is at X = +3, Y = +1, one cell away; 20 is at X = +3, Y = -1, one cell away."
     },
     {
       "id": "AFOQT-T1-078",
@@ -1858,7 +1858,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = 0 column and down to the Y = +1 row: the entry is 20. 63 is at X = +1, Y = 0, with the two values swapped."
+      "explanation": "Go across to the X = 0 column and down to the Y = +1 row: the entry is 20. 63 is at X = +1, Y = 0, with X and Y swapped; 41 is at X = +1, Y = +1, one cell away; 23 is at X = 0, Y = +2, one cell away; 53 is at X = 0, Y = 0, one cell away."
     },
     {
       "id": "AFOQT-T1-079",
@@ -1882,7 +1882,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 99. 42 is at X = -3, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 99. 42 is at X = -3, Y = +2, with X and Y swapped; 15 is at X = +3, Y = -3, one cell away; 23 is at X = +1, Y = -3, one cell away; 88 is at X = +2, Y = -2, one cell away."
     },
     {
       "id": "AFOQT-T1-080",
@@ -1906,7 +1906,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = 0 column and down to the Y = +3 row: the entry is 33. 82 is at X = +3, Y = 0, with the two values swapped."
+      "explanation": "Go across to the X = 0 column and down to the Y = +3 row: the entry is 33. 82 is at X = +3, Y = 0, with X and Y swapped; 83 is at X = +1, Y = +3, one cell away; 20 is at X = -1, Y = +3, one cell away; 23 is at X = 0, Y = +2, one cell away."
     },
     {
       "id": "AFOQT-T1-081",
@@ -1930,7 +1930,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -2 column and down to the Y = -2 row: the entry is 50. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = -2 column and down to the Y = -2 row: the entry is 50. 23 is at X = -1, Y = -2, one cell away; 40 is at X = -3, Y = -2, one cell away; 28 is at X = -2, Y = -1, one cell away; 32 is at X = -2, Y = -3, one cell away."
     },
     {
       "id": "AFOQT-T1-082",
@@ -1954,7 +1954,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +3 column and down to the Y = +2 row: the entry is 84. 28 is at X = +2, Y = +3, with the two values swapped."
+      "explanation": "Go across to the X = +3 column and down to the Y = +2 row: the entry is 84. 28 is at X = +2, Y = +3, with X and Y swapped; 75 is at X = +2, Y = +2, one cell away; 74 is at X = +3, Y = +3, one cell away; 56 is at X = +3, Y = +1, one cell away."
     },
     {
       "id": "AFOQT-T1-083",
@@ -1978,7 +1978,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -1 column and down to the Y = -1 row: the entry is 40. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = -1 column and down to the Y = -1 row: the entry is 40. 97 is at X = 0, Y = -1, one cell away; 28 is at X = -2, Y = -1, one cell away; 86 is at X = -1, Y = 0, one cell away; 23 is at X = -1, Y = -2, one cell away."
     },
     {
       "id": "AFOQT-T1-084",
@@ -2002,7 +2002,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -1 column and down to the Y = +3 row: the entry is 33. 50 is at X = +3, Y = -1, with the two values swapped."
+      "explanation": "Go across to the X = -1 column and down to the Y = +3 row: the entry is 33. 50 is at X = +3, Y = -1, with X and Y swapped; 58 is at X = 0, Y = +3, one cell away; 32 is at X = -2, Y = +3, one cell away; 42 is at X = -1, Y = +2, one cell away."
     },
     {
       "id": "AFOQT-T1-085",
@@ -2026,7 +2026,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +1 column and down to the Y = -1 row: the entry is 18. 84 is at X = -1, Y = +1, with the two values swapped."
+      "explanation": "Go across to the X = +1 column and down to the Y = -1 row: the entry is 18. 84 is at X = -1, Y = +1, with X and Y swapped; 90 is at X = +2, Y = -1, one cell away; 97 is at X = 0, Y = -1, one cell away; 42 is at X = +1, Y = 0, one cell away."
     },
     {
       "id": "AFOQT-T1-086",
@@ -2050,7 +2050,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 12. 78 is at X = -3, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 12. 78 is at X = -3, Y = +2, with X and Y swapped; 68 is at X = +3, Y = -3, one cell away; 76 is at X = +1, Y = -3, one cell away; 47 is at X = +2, Y = -2, one cell away."
     },
     {
       "id": "AFOQT-T1-087",
@@ -2074,7 +2074,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 46. 53 is at X = +1, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 46. 53 is at X = +1, Y = +2, with X and Y swapped; 56 is at X = +3, Y = +1, one cell away; 60 is at X = +1, Y = +1, one cell away; 75 is at X = +2, Y = +2, one cell away."
     },
     {
       "id": "AFOQT-T1-088",
@@ -2098,7 +2098,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = -2 row: the entry is 47. 69 is at X = -2, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = -2 row: the entry is 47. 69 is at X = -2, Y = +2, with X and Y swapped; 10 is at X = +3, Y = -2, one cell away; 80 is at X = +1, Y = -2, one cell away; 90 is at X = +2, Y = -1, one cell away."
     },
     {
       "id": "AFOQT-T1-089",
@@ -2122,7 +2122,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = 0 column and down to the Y = -1 row: the entry is 97. 86 is at X = -1, Y = 0, with the two values swapped."
+      "explanation": "Go across to the X = 0 column and down to the Y = -1 row: the entry is 97. 86 is at X = -1, Y = 0, with X and Y swapped; 18 is at X = +1, Y = -1, one cell away; 40 is at X = -1, Y = -1, one cell away; 74 is at X = 0, Y = 0, one cell away."
     },
     {
       "id": "AFOQT-T1-090",
@@ -2146,7 +2146,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = 0 row: the entry is 98. 57 is at X = 0, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = 0 row: the entry is 98. 57 is at X = 0, Y = +2, with X and Y swapped; 68 is at X = +3, Y = 0, one cell away; 42 is at X = +1, Y = 0, one cell away; 46 is at X = +2, Y = +1, one cell away."
     },
     {
       "id": "AFOQT-T1-091",
@@ -2434,7 +2434,7 @@
       "correct": [
         4
       ],
-      "explanation": "Diligent and lazy are opposites, and the opposite of candid (open and direct) is evasive. Honest and frank are synonyms of candid."
+      "explanation": "Diligent and lazy are opposites, and the opposite of candid (open and direct) is evasive. Frank and truthful are synonyms of candid."
     },
     {
       "id": "AFOQT-T2-004",
@@ -2544,7 +2544,7 @@
       "correct": [
         4
       ],
-      "explanation": "Ambiguous is the opposite of clear, and transient (passing quickly) is the opposite of permanent. Brief and fleeting are synonyms of transient."
+      "explanation": "Ambiguous is the opposite of clear, and transient (passing quickly) is the opposite of permanent. Brief and temporary are synonyms of transient."
     },
     {
       "id": "AFOQT-T2-009",
@@ -3985,7 +3985,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -3 column and down to the Y = 0 row: the entry is 57. 88 is at X = 0, Y = -3, with the two values swapped."
+      "explanation": "Go across to the X = -3 column and down to the Y = 0 row: the entry is 57. 88 is at X = 0, Y = -3, with X and Y swapped; 23 is at X = -2, Y = 0, one cell away; 87 is at X = -3, Y = +1, one cell away; 16 is at X = -3, Y = -1, one cell away."
     },
     {
       "id": "AFOQT-T2-072",
@@ -4009,7 +4009,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = 0 column and down to the Y = 0 row: the entry is 34. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = 0 column and down to the Y = 0 row: the entry is 34. 63 is at X = +1, Y = 0, one cell away; 54 is at X = -1, Y = 0, one cell away; 17 is at X = 0, Y = +1, one cell away; 50 is at X = 0, Y = -1, one cell away."
     },
     {
       "id": "AFOQT-T2-073",
@@ -4033,7 +4033,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +3 column and down to the Y = 0 row: the entry is 11. 80 is at X = 0, Y = +3, with the two values swapped."
+      "explanation": "Go across to the X = +3 column and down to the Y = 0 row: the entry is 11. 80 is at X = 0, Y = +3, with X and Y swapped; 30 is at X = +2, Y = 0, one cell away; 75 is at X = +3, Y = +1, one cell away; 87 is at X = +3, Y = -1, one cell away."
     },
     {
       "id": "AFOQT-T2-074",
@@ -4057,7 +4057,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +1 column and down to the Y = +1 row: the entry is 16. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = +1 column and down to the Y = +1 row: the entry is 16. 70 is at X = +2, Y = +1, one cell away; 17 is at X = 0, Y = +1, one cell away; 37 is at X = +1, Y = +2, one cell away; 63 is at X = +1, Y = 0, one cell away."
     },
     {
       "id": "AFOQT-T2-075",
@@ -4081,7 +4081,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -2 column and down to the Y = 0 row: the entry is 23. 17 is at X = 0, Y = -2, with the two values swapped."
+      "explanation": "Go across to the X = -2 column and down to the Y = 0 row: the entry is 23. 17 is at X = 0, Y = -2, with X and Y swapped; 54 is at X = -1, Y = 0, one cell away; 57 is at X = -3, Y = 0, one cell away; 60 is at X = -2, Y = +1, one cell away."
     },
     {
       "id": "AFOQT-T2-076",
@@ -4105,7 +4105,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -3 column and down to the Y = -1 row: the entry is 16. 58 is at X = -1, Y = -3, with the two values swapped."
+      "explanation": "Go across to the X = -3 column and down to the Y = -1 row: the entry is 16. 58 is at X = -1, Y = -3, with X and Y swapped; 94 is at X = -2, Y = -1, one cell away; 57 is at X = -3, Y = 0, one cell away; 90 is at X = -3, Y = -2, one cell away."
     },
     {
       "id": "AFOQT-T2-077",
@@ -4129,7 +4129,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = -2 row: the entry is 68. 64 is at X = -2, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = -2 row: the entry is 68. 64 is at X = -2, Y = +2, with X and Y swapped; 73 is at X = +3, Y = -2, one cell away; 53 is at X = +1, Y = -2, one cell away; 79 is at X = +2, Y = -1, one cell away."
     },
     {
       "id": "AFOQT-T2-078",
@@ -4153,7 +4153,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +3 column and down to the Y = +2 row: the entry is 60. 88 is at X = +2, Y = +3, with the two values swapped."
+      "explanation": "Go across to the X = +3 column and down to the Y = +2 row: the entry is 60. 88 is at X = +2, Y = +3, with X and Y swapped; 35 is at X = +2, Y = +2, one cell away; 76 is at X = +3, Y = +3, one cell away; 75 is at X = +3, Y = +1, one cell away."
     },
     {
       "id": "AFOQT-T2-079",
@@ -4177,7 +4177,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 70. 37 is at X = +1, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 70. 37 is at X = +1, Y = +2, with X and Y swapped; 75 is at X = +3, Y = +1, one cell away; 16 is at X = +1, Y = +1, one cell away; 35 is at X = +2, Y = +2, one cell away."
     },
     {
       "id": "AFOQT-T2-080",
@@ -4201,7 +4201,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -3 column and down to the Y = +1 row: the entry is 87. 49 is at X = +1, Y = -3, with the two values swapped."
+      "explanation": "Go across to the X = -3 column and down to the Y = +1 row: the entry is 87. 49 is at X = +1, Y = -3, with X and Y swapped; 60 is at X = -2, Y = +1, one cell away; 35 is at X = -3, Y = +2, one cell away; 57 is at X = -3, Y = 0, one cell away."
     },
     {
       "id": "AFOQT-T2-081",
@@ -4225,7 +4225,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -2 column and down to the Y = 0 row: the entry is 99. 90 is at X = 0, Y = -2, with the two values swapped."
+      "explanation": "Go across to the X = -2 column and down to the Y = 0 row: the entry is 99. 90 is at X = 0, Y = -2, with X and Y swapped; 72 is at X = -1, Y = 0, one cell away; 79 is at X = -3, Y = 0, one cell away; 68 is at X = -2, Y = +1, one cell away."
     },
     {
       "id": "AFOQT-T2-082",
@@ -4249,7 +4249,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -1 column and down to the Y = 0 row: the entry is 72. 78 is at X = 0, Y = -1, with the two values swapped."
+      "explanation": "Go across to the X = -1 column and down to the Y = 0 row: the entry is 72. 78 is at X = 0, Y = -1, with X and Y swapped; 39 is at X = 0, Y = 0, one cell away; 99 is at X = -2, Y = 0, one cell away; 48 is at X = -1, Y = +1, one cell away."
     },
     {
       "id": "AFOQT-T2-083",
@@ -4273,7 +4273,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -1 column and down to the Y = +1 row: the entry is 48. 39 is at X = +1, Y = -1, with the two values swapped."
+      "explanation": "Go across to the X = -1 column and down to the Y = +1 row: the entry is 48. 39 is at X = +1, Y = -1, with X and Y swapped; 22 is at X = 0, Y = +1, one cell away; 68 is at X = -2, Y = +1, one cell away; 38 is at X = -1, Y = +2, one cell away."
     },
     {
       "id": "AFOQT-T2-084",
@@ -4297,7 +4297,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +1 column and down to the Y = +2 row: the entry is 65. 13 is at X = +2, Y = +1, with the two values swapped."
+      "explanation": "Go across to the X = +1 column and down to the Y = +2 row: the entry is 65. 13 is at X = +2, Y = +1, with X and Y swapped; 46 is at X = +2, Y = +2, one cell away; 91 is at X = 0, Y = +2, one cell away; 61 is at X = +1, Y = +3, one cell away."
     },
     {
       "id": "AFOQT-T2-085",
@@ -4321,7 +4321,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = 0 column and down to the Y = -3 row: the entry is 45. 79 is at X = -3, Y = 0, with the two values swapped."
+      "explanation": "Go across to the X = 0 column and down to the Y = -3 row: the entry is 45. 79 is at X = -3, Y = 0, with X and Y swapped; 72 is at X = +1, Y = -3, one cell away; 41 is at X = -1, Y = -3, one cell away; 90 is at X = 0, Y = -2, one cell away."
     },
     {
       "id": "AFOQT-T2-086",
@@ -4345,7 +4345,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -2 column and down to the Y = -2 row: the entry is 76. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = -2 column and down to the Y = -2 row: the entry is 76. 11 is at X = -1, Y = -2, one cell away; 53 is at X = -3, Y = -2, one cell away; 48 is at X = -2, Y = -1, one cell away; 17 is at X = -2, Y = -3, one cell away."
     },
     {
       "id": "AFOQT-T2-087",
@@ -4369,7 +4369,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = -1 row: the entry is 36. 38 is at X = -1, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = -1 row: the entry is 36. 38 is at X = -1, Y = +2, with X and Y swapped; 37 is at X = +3, Y = -1, one cell away; 39 is at X = +1, Y = -1, one cell away; 50 is at X = +2, Y = 0, one cell away."
     },
     {
       "id": "AFOQT-T2-088",
@@ -4393,7 +4393,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -3 column and down to the Y = +3 row: the entry is 25. 85 is at X = +3, Y = -3, with the two values swapped."
+      "explanation": "Go across to the X = -3 column and down to the Y = +3 row: the entry is 25. 85 is at X = +3, Y = -3, with X and Y swapped; 61 is at X = -3, Y = +2, one cell away; 80 is at X = +3, Y = +3, where X has the wrong sign; 18 is at X = -3, Y = -3, where Y has the wrong sign."
     },
     {
       "id": "AFOQT-T2-089",
@@ -4417,7 +4417,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -1 column and down to the Y = +3 row: the entry is 66. 37 is at X = +3, Y = -1, with the two values swapped."
+      "explanation": "Go across to the X = -1 column and down to the Y = +3 row: the entry is 66. 37 is at X = +3, Y = -1, with X and Y swapped; 90 is at X = 0, Y = +3, one cell away; 85 is at X = -2, Y = +3, one cell away; 38 is at X = -1, Y = +2, one cell away."
     },
     {
       "id": "AFOQT-T2-090",
@@ -4441,7 +4441,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -3 column and down to the Y = +2 row: the entry is 61. 76 is at X = +2, Y = -3, with the two values swapped."
+      "explanation": "Go across to the X = -3 column and down to the Y = +2 row: the entry is 61. 76 is at X = +2, Y = -3, with X and Y swapped; 26 is at X = -2, Y = +2, one cell away; 25 is at X = -3, Y = +3, one cell away; 71 is at X = -3, Y = +1, one cell away."
     },
     {
       "id": "AFOQT-T2-091",
@@ -4988,20 +4988,20 @@
       "module": 1,
       "domain": "afoqtWord",
       "skill": "Closest meaning",
-      "difficulty": 1,
+      "difficulty": 3,
       "format": "single",
-      "stem": "FRUGAL most nearly means:",
+      "stem": "PARSIMONIOUS most nearly means:",
       "options": [
-        "wasteful",
-        "thrifty",
-        "fruitful",
+        "generous",
+        "stingy",
         "fragile",
-        "gentle"
+        "sensible",
+        "talkative"
       ],
       "correct": [
         1
       ],
-      "explanation": "A frugal person spends little and avoids waste. Fruitful only looks similar."
+      "explanation": "A parsimonious person is extremely unwilling to spend money. Generous is the opposite."
     },
     {
       "id": "AFOQT-D-016",
@@ -5379,18 +5379,18 @@
       "skill": "Kinetic energy",
       "difficulty": 2,
       "format": "single",
-      "stem": "If a moving object's speed doubles, its kinetic energy becomes:",
+      "stem": "If a moving object's speed triples, its kinetic energy becomes:",
       "options": [
-        "eight times as great",
-        "twice as great",
-        "half as great",
         "unchanged",
-        "four times as great"
+        "three times as great",
+        "twenty-seven times as great",
+        "six times as great",
+        "nine times as great"
       ],
       "correct": [
         4
       ],
-      "explanation": "Kinetic energy depends on speed squared, so doubling speed multiplies it by 2 x 2 = 4."
+      "explanation": "Kinetic energy depends on speed squared, so tripling speed multiplies it by 3 x 3 = 9. Three times forgets the square."
     },
     {
       "id": "AFOQT-D-033",
@@ -5504,7 +5504,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +1 column and down to the Y = -1 row: the entry is 61. 83 is at X = -1, Y = +1, with the two values swapped."
+      "explanation": "Go across to the X = +1 column and down to the Y = -1 row: the entry is 61. 83 is at X = -1, Y = +1, with X and Y swapped; 50 is at X = +2, Y = -1, one cell away; 77 is at X = 0, Y = -1, one cell away; 54 is at X = +1, Y = 0, one cell away."
     },
     {
       "id": "AFOQT-D-038",
@@ -5528,7 +5528,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = +2 row: the entry is 33. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = +2 column and down to the Y = +2 row: the entry is 33. 21 is at X = +3, Y = +2, one cell away; 51 is at X = +1, Y = +2, one cell away; 57 is at X = +2, Y = +3, one cell away; 49 is at X = +2, Y = +1, one cell away."
     },
     {
       "id": "AFOQT-D-039",
@@ -5552,7 +5552,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 49. 51 is at X = +1, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 49. 51 is at X = +1, Y = +2, with X and Y swapped; 12 is at X = +3, Y = +1, one cell away; 10 is at X = +1, Y = +1, one cell away; 33 is at X = +2, Y = +2, one cell away."
     },
     {
       "id": "AFOQT-D-040",
@@ -5576,7 +5576,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +1 column and down to the Y = +3 row: the entry is 56. 12 is at X = +3, Y = +1, with the two values swapped."
+      "explanation": "Go across to the X = +1 column and down to the Y = +3 row: the entry is 56. 12 is at X = +3, Y = +1, with X and Y swapped; 57 is at X = +2, Y = +3, one cell away; 17 is at X = 0, Y = +3, one cell away; 51 is at X = +1, Y = +2, one cell away."
     },
     {
       "id": "AFOQT-D-041",
@@ -5600,7 +5600,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = 0 column and down to the Y = -3 row: the entry is 17. 15 is at X = -3, Y = 0, with the two values swapped."
+      "explanation": "Go across to the X = 0 column and down to the Y = -3 row: the entry is 17. 15 is at X = -3, Y = 0, with X and Y swapped; 28 is at X = +1, Y = -3, one cell away; 14 is at X = -1, Y = -3, one cell away; 32 is at X = 0, Y = -2, one cell away."
     },
     {
       "id": "AFOQT-D-042",
@@ -5624,7 +5624,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 29. 58 is at X = -3, Y = +2, with the two values swapped."
+      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 29. 58 is at X = -3, Y = +2, with X and Y swapped; 39 is at X = +3, Y = -3, one cell away; 28 is at X = +1, Y = -3, one cell away; 30 is at X = +2, Y = -2, one cell away."
     },
     {
       "id": "AFOQT-D-043",
@@ -5648,7 +5648,7 @@
         3
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = +1 column and down to the Y = -2 row: the entry is 55. 17 is at X = -2, Y = +1, with the two values swapped."
+      "explanation": "Go across to the X = +1 column and down to the Y = -2 row: the entry is 55. 17 is at X = -2, Y = +1, with X and Y swapped; 30 is at X = +2, Y = -2, one cell away; 32 is at X = 0, Y = -2, one cell away; 61 is at X = +1, Y = -1, one cell away."
     },
     {
       "id": "AFOQT-D-044",
@@ -5672,7 +5672,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "Go across to the X = -3 column and down to the Y = -3 row: the entry is 68. The other values sit one cell away in the table."
+      "explanation": "Go across to the X = -3 column and down to the Y = -3 row: the entry is 68. 52 is at X = -2, Y = -3, one cell away; 85 is at X = -3, Y = -2, one cell away; 39 is at X = +3, Y = -3, where X has the wrong sign; 91 is at X = -3, Y = +3, where Y has the wrong sign."
     },
     {
       "id": "AFOQT-D-045",
@@ -5683,18 +5683,18 @@
       "skill": "Engines",
       "difficulty": 2,
       "format": "single",
-      "stem": "A jet engine produces thrust by:",
+      "stem": "Large transport aircraft built to carry heavy loads over long distances in high-speed cruise, such as the DC-8 airliner, use which type of engine?",
       "options": [
-        "storing air under pressure",
-        "spinning the whole aircraft",
-        "pulling air with a vacuum",
-        "pushing against the ground behind it",
-        "throwing gas out the back fast"
+        "solid-fuel rocket",
+        "pulsejet",
+        "ramjet",
+        "afterburning low-bypass turbofan",
+        "high-bypass turbofan"
       ],
       "correct": [
         4
       ],
-      "explanation": "Thrust is the reaction to accelerating a mass of gas rearward, Newton's third law. The amount depends on the mass flow and the exit speed."
+      "explanation": "Transports such as the DC-8 use high-bypass turbofans for long-distance cruise. Afterburning low-bypass turbofans suit fighters that need high acceleration in combat."
     },
     {
       "id": "AFOQT-D-046",
@@ -5702,21 +5702,21 @@
       "test": 0,
       "module": 1,
       "domain": "afoqtAviation",
-      "skill": "Flight controls",
+      "skill": "Aircraft parts",
       "difficulty": 1,
       "format": "single",
-      "stem": "Which motion does the rudder control?",
+      "stem": "Which part of an aircraft holds the crew, passengers and cargo?",
       "options": [
-        "yaw",
-        "roll",
-        "lift",
-        "climb",
-        "pitch"
+        "fuselage",
+        "vertical stabilizer",
+        "horizontal stabilizer",
+        "wing",
+        "winglet"
       ],
       "correct": [
         0
       ],
-      "explanation": "The rudder swings the nose left and right, which is yaw. The elevator controls pitch."
+      "explanation": "The fuselage is the long body of the aircraft that carries the crew, passengers and cargo. The wings make most of the lift."
     },
     {
       "id": "AFOQT-D-047",
@@ -5746,21 +5746,21 @@
       "test": 0,
       "module": 1,
       "domain": "afoqtAviation",
-      "skill": "Four forces",
-      "difficulty": 1,
+      "skill": "Factors that affect lift",
+      "difficulty": 2,
       "format": "single",
-      "stem": "In steady, level flight, lift is equal to:",
+      "stem": "To make the same lift at a lower airspeed, a wing must be:",
       "options": [
-        "zero",
-        "thrust",
-        "drag",
-        "twice the weight",
-        "weight"
+        "cut to a smaller area",
+        "inclined less steeply to the airflow",
+        "flown higher, in thinner air",
+        "held at the same inclination",
+        "inclined more steeply to the airflow"
       ],
       "correct": [
         4
       ],
-      "explanation": "In level, unaccelerated flight lift balances weight and thrust balances drag."
+      "explanation": "Lift depends on the velocity of the air and on how the wing is inclined to the flow. Less speed means less lift, so the wing must meet the air at a steeper angle to make up for it."
     },
     {
       "id": "AFOQT-D-049",

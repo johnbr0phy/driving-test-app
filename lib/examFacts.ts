@@ -2234,12 +2234,12 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   afoqt: {
     answer:
-      "The AFOQT (Air Force Officer Qualifying Test) is the Air Force's aptitude test for officer commissioning programs such as Officer Training School and Air Force ROTC, and for pilot, combat systems officer and air battle manager selection. Form T has 12 timed multiple-choice subtests, 516 questions in about five hours with breaks: Verbal Analogies, Arithmetic Reasoning, Word Knowledge, Math Knowledge, Reading Comprehension, Situational Judgment, the ungraded Self-Description Inventory, Physical Science, Table Reading, Instrument Comprehension, Block Counting and Aviation Information. Subtests combine into composites reported as 1 to 99 percentiles, not percent correct. Per DAFMAN 36-2664 the minimums are the 15th percentile on Verbal and the 10th on Quantitative; rated programs set higher bars. It is free, taken with a voucher from a recruiter or test control officer, and limited to two attempts (three with a waiver).",
+      "The AFOQT (Air Force Officer Qualifying Test) is the Air Force's aptitude test for officer commissioning programs such as Officer Training School and Air Force ROTC, and for selection into training such as pilot and navigator training. Form T has 12 timed multiple-choice subtests, 516 questions in about five hours with breaks: Verbal Analogies, Arithmetic Reasoning, Word Knowledge, Math Knowledge, Reading Comprehension, Situational Judgment, the ungraded Self-Description Inventory, Physical Science, Table Reading, Instrument Comprehension, Block Counting and Aviation Information. Subtests combine into composites reported as 1 to 99 percentiles, not percent correct. Air Force ROTC, citing DAFMAN 36-2664, gives the minimums as the 15th percentile on Verbal and the 10th on Quantitative; rated programs set higher bars. It is free, taken with a voucher from a recruiter or test control officer, and limited to two attempts (three with a waiver).",
     rows: [
       { label: "Questions", value: "516 multiple choice across 12 subtests (Form T)" },
       { label: "Time", value: "About 5 hours including breaks" },
       { label: "Scores", value: "1 to 99 percentiles on composites" },
-      { label: "Minimums", value: "Verbal 15 and Quantitative 10 (DAFMAN 36-2664)" },
+      { label: "Minimums", value: "Verbal 15 and Quantitative 10 (AFROTC, citing DAFMAN 36-2664)" },
       { label: "Attempts", value: "Two, or three with an approved waiver" },
       { label: "Cost", value: "Free, voucher from a recruiter or test control officer" },
       { label: "Given by", value: "U.S. Air Force, delivered by Pearson VUE" },

@@ -110,18 +110,29 @@ def make_table(tid, n_items, test):
         if len(items) == n_items:
             break
         key = grid[(x, y)]
-        cands = []
+        cands, where = [], []
         for c in [(y, x), (x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1), (-x, y), (x, -y)]:
             if c in grid and c != (x, y) and grid[c] != key and grid[c] not in cands:
                 cands.append(grid[c])
+                where.append(c)
         if len(cands) < 4:
             continue
         wrong = cands[:4]
-        why = []
-        if (y, x) in grid and grid[(y, x)] in wrong and x != y:
-            why.append(f"{grid[(y, x)]} is at X = {signed(y)}, Y = {signed(x)}, with the two values swapped")
+
+        def place(c):
+            cx, cy = c
+            at = f"{grid[c]} is at X = {signed(cx)}, Y = {signed(cy)}"
+            if c == (y, x):
+                return at + ", with X and Y swapped"
+            if abs(cx - x) + abs(cy - y) == 1:
+                return at + ", one cell away"
+            if cx == -x:
+                return at + ", where X has the wrong sign"
+            return at + ", where Y has the wrong sign"
+        why = "; ".join(place(c) for c in where[:4])
+        why = why[0].upper() + why[1:]
         expl = (f"Go across to the X = {signed(x)} column and down to the Y = {signed(y)} row: the entry is {key}. "
-                + (why[0] + "." if why else "The other values sit one cell away in the table."))
+                + why + ".")
         items.append({"test": test, "domain": "afoqtTable", "difficulty": 1, "skill": "Reading a table",
                       "stem": f"What is the entry at X = {signed(x)}, Y = {signed(y)}?",
                       "options": [str(key)] + [str(w) for w in wrong], "explanation": expl,

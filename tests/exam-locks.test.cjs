@@ -140,34 +140,17 @@ test('Full-length mocks: their own length, no shared question, a spread of the b
   assert.ok(scenario > 30 && scenario < 55, `scenario share ${scenario}`);
 });
 
-test('Readiness: unknown until enough answers, a weak area keeps it from Ready, the biggest gap first', () => {
-  const { examReadiness, MIN_AREA } = require('../lib/examReadiness.ts');
-  const exam = { passPct: 80, blueprint: { a: 30, b: 20 } };
-  const cat = (id) => id.split('-')[0];
-  const perf = (c, n, right) => Array.from({ length: n }, (_, i) => ({ questionId: `${c}-${i}`, timesCorrect: i < right ? 1 : 0, timesWrong: i < right ? 0 : 1 }));
-  let r = examReadiness(exam, cat, perf('a', MIN_AREA - 1, MIN_AREA - 1));
-  assert.equal(r.level, 'unknown');
-  assert.equal(r.estimate, null);
-  r = examReadiness(exam, cat, [...perf('a', 40, 39), ...perf('b', 40, 39)]);
-  assert.equal(r.level, 'ready');
-  assert.equal(r.fastest, null);
-  r = examReadiness(exam, cat, [...perf('a', 40, 40), ...perf('b', 40, 20)]);
-  assert.equal(r.areas.find((x) => x.category === 'b').level, 'notYet');
-  assert.notEqual(r.level, 'ready');
-  assert.equal(r.fastest.category, 'b');
-  // A question answered many times counts once.
-  const repeated = [{ questionId: 'a-0', timesCorrect: 50, timesWrong: 0 }, ...perf('a', MIN_AREA - 1, 0).map((p, i) => ({ ...p, questionId: `a-x${i}` }))];
-  assert.ok(examReadiness(exam, cat, repeated).areas[0].accuracy < 50);
-});
-
-test('RBT paywall sells what Premium does, not "the final training step"', () => {
+test('RBT paywall says plainly what Premium adds, never a readiness verdict', () => {
   const { examPremiumBullets } = require('../lib/examPaywallCopy.ts');
   for (const exam of [...EXAMS, ...EXAM_VARIANTS]) {
     if (exam.premiumBenefits) assert.ok(exam.premiumFrom || exam.mockExams, `${exam.id}: premiumBenefits without a Premium block`);
   }
   const rbt = examPremiumBullets(getExamById('rbt'), 'en');
-  assert.match(rbt[0], /full-length timed/);
-  assert.ok(rbt.some((b) => /readiness/.test(b)));
+  assert.match(rbt[0], /work-scenario questions/);
+  assert.ok(rbt.some((b) => /full-length timed/.test(b)));
+  for (const exam of [...EXAMS, ...EXAM_VARIANTS]) {
+    for (const b of exam.premiumBenefits ?? []) assert.ok(!/ready|readiness|pass/i.test(b), `${exam.id}: "${b}" promises an outcome`);
+  }
   assert.ok(!rbt.some((b) => /final .* training step/.test(b)));
   assert.match(rbt[rbt.length - 1], /One payment/);
   assert.match(examPremiumBullets(getExamById('cdl'), 'en')[0], /final CDL training step/);

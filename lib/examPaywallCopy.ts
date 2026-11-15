@@ -21,8 +21,8 @@ const COPY: Record<Language, ExamPaywallCopy> = {
       "One payment, yours forever",
     ],
     stats: (n, s) => [
-      `Your accuracy on all ${n} ${s} questions, worst first`,
-      `See if you are ready for ${s}, area by area`,
+      `See your accuracy on all ${n} ${s} questions`,
+      "See what you keep getting wrong, worst first",
       "Full stats on every exam, the DMV included",
       "One payment, yours forever",
     ],

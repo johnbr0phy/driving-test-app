@@ -213,3 +213,9 @@ export function getTigerAsset(examId = "dmv", expression?: TigerExpression): str
   return getSiteTigerAsset(expression);
 }
 
+
+/** A random smiling face (expression 3) from the site mascot or any test's own set. The homepage wordmark uses it. */
+export function randomSmilingTiger(random: () => number = Math.random): string {
+  const pool = ["/tiger.png", ...TIGER_EXAM_IDS.map((id) => `/tigers/${id}/tiger_face_03.png`)];
+  return pool[Math.floor(random() * pool.length)];
+}

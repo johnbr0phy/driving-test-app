@@ -64,9 +64,18 @@ export async function POST(request: NextRequest) {
     if (step === 'visit' || step === 'answered') {
       const landing = normalizeLanding(body.landing);
       if (landing) {
-        await db
-          .doc(`funnelLandings/${today}`)
-          .set({ [step]: { [landingKey(landing)]: FieldValue.increment(1) } }, { merge: true });
+        const key = landingKey(landing);
+        const update: Record<string, unknown> = { [step]: { [key]: FieldValue.increment(1) } };
+        // First visits are also split by source and ISO country per landing
+        // (since 2026-11-16), for "where the traffic comes from" on the
+        // /admin New tests tab.
+        if (step === 'visit') {
+          if (typeof body.source === 'string' && VISIT_SOURCES.has(body.source)) {
+            update.src = { [key]: { [body.source]: FieldValue.increment(1) } };
+          }
+          if (/^[A-Z]{2}$/.test(ipCountry)) update.cty = { [key]: { [ipCountry]: FieldValue.increment(1) } };
+        }
+        await db.doc(`funnelLandings/${today}`).set(update, { merge: true });
       }
     }
 

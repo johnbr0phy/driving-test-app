@@ -98,6 +98,12 @@ export function stripeUnitAmount(price: PremiumPrice): number {
   return ZERO_DECIMAL.has(price.currency) ? Math.round(price.amount) : Math.round(price.amount * 100);
 }
 
+/** A Stripe amount (smallest unit) back to a price, for showing what someone paid. */
+export function priceFromStripe(currency: string, unitAmount: number): PremiumPrice {
+  const c = currency.toLowerCase();
+  return { currency: c, amount: ZERO_DECIMAL.has(c) ? unitAmount : unitAmount / 100 };
+}
+
 /**
  * "$9.99", "£7.99", "₹499", "CA$12.99", "kr 99": the local symbol, except
  * where it would be a bare "$" for a currency that is not the US dollar.

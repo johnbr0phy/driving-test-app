@@ -5,13 +5,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import {
-  AreaChart, Area, BarChart, Bar, LineChart, Line, Legend, XAxis, YAxis, CartesianGrid, Tooltip,
+  AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, LabelList, Cell,
 } from "recharts";
 import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
-import { BasicsProgress } from "@/components/admin/BasicsProgress";
-import { ExitQuestions } from "@/components/admin/ExitQuestions";
-import { LayoutUsage } from "@/components/admin/LayoutUsage";
 import { WeeklyActiveLearners } from "@/components/admin/WeeklyActiveLearners";
 import { PeriodBarsCard, signupBars, type SignupUnit } from "@/components/admin/PeriodBars";
 
@@ -59,15 +56,6 @@ interface Metrics {
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
   // Optional: older cached payloads predate the per-exam split.
-  // Optional: absent from payloads that predate quizzes (lib/quizzes.ts).
-  quizzes?: {
-    createdWeb: number;
-    createdImport: number;
-    createdMcp: number;
-    plays: number;
-    questionReports: number;
-    total: number;
-  };
   studyTimes?: {
     grid: Record<string, number[]>;
     answers: number;
@@ -76,11 +64,6 @@ interface Metrics {
     days: number;
     updatedAt: string;
   } | null;
-  testRequests?: {
-    total: number;
-    byPick: { id: string; label: string; clicks: number; withDetails: number }[];
-    details: { pick: string; details: string; examId: string | null; source: string; email?: string | null; at: string }[];
-  };
   questionsByExamBackfillPending?: boolean;
   // Optional on purpose: a response predating this field (a stale cached
   // payload, or a tab whose JS is newer than the API it's talking to) must
@@ -317,37 +300,6 @@ function makeEndDot(color: string) {
   };
 }
 
-// ─── Quizzes (lib/quizzes.ts): the site-wide counters in analytics/quizzes ──
-function QuizTile({ label, value, sub }: { label: string; value: number; sub?: string }) {
-  return (
-    <div className="rounded-lg border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 px-3 py-2.5">
-      <div className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</div>
-      <div className="mt-0.5 text-lg font-semibold tabular-nums text-gray-900 dark:text-gray-50">{fmtInt(value)}</div>
-      {sub && <div className="text-[11px] text-gray-500 dark:text-gray-400">{sub}</div>}
-    </div>
-  );
-}
-
-function QuizzesCard({ data }: { data: NonNullable<Metrics["quizzes"]> }) {
-  const made = data.total;
-  const share = (n: number) => (made ? `${Math.round((n / made) * 100)}% of quizzes` : undefined);
-  return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5">
-      <div className="mb-4 flex items-baseline justify-between gap-2">
-        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">Quizzes</h2>
-        <p className="text-xs text-gray-500 dark:text-gray-400">All time. Made on /create, imported from Quizlet, or from Claude and ChatGPT.</p>
-      </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
-        <QuizTile label="Quizzes made" value={made} />
-        <QuizTile label="From Claude / ChatGPT" value={data.createdMcp} sub={share(data.createdMcp)} />
-        <QuizTile label="Quizlet imports" value={data.createdImport} sub={share(data.createdImport)} />
-        <QuizTile label="Plays" value={data.plays} sub="browsers that answered one question" />
-        <QuizTile label="Question reports" value={data.questionReports} sub="players flagging a bad question" />
-      </div>
-    </div>
-  );
-}
-
 type FunnelStage = { label: string; value: number; note?: string; section?: string };
 
 function Funnel({ data }: { data: FunnelStage[] }) {
@@ -418,83 +370,173 @@ const SOURCE_LABELS: [string, string][] = [
 ];
 const AI_SOURCE_KEYS = ["chatgpt", "perplexity", "gemini", "copilot", "claude", "ai_other"];
 
-// GEO over time: new visitors a day from AI answer engines against search
-// engines, since source tracking began, as a count or a share of that day's
-// tracked new visitors. All time, whatever range the funnel is set to.
-type GeoMode = "count" | "share";
+// SEO and GEO over time: new visitors from each AI answer engine and from
+// search engines, by day or week since source tracking began. Search is on
+// its own axis (it is much bigger), so a drop in either shows. Above the
+// chart, each source's last 7 days against its weekly average over the 4
+// weeks before, so a fall is caught early.
+type GeoBucket = "day" | "week";
+const GEO_SERIES: { key: string; label: string; color: string; dash?: string }[] = [
+  { key: "search", label: "Search engines", color: "#2a78d6", dash: "5 3" },
+  { key: "chatgpt", label: "ChatGPT", color: "#eb6834" },
+  { key: "perplexity", label: "Perplexity", color: "#7c5cd6" },
+  { key: "gemini", label: "Gemini", color: "#c99a12" },
+  { key: "copilot", label: "Copilot", color: "#1a9e9e" },
+  { key: "claude", label: "Claude", color: "#b5367a" },
+  { key: "ai_other", label: "Other AI", color: "#898781" },
+];
+/** A source is flagged when its last 7 days fall this far under its recent weekly average. */
+const GEO_DROP = 0.3;
 
 function GeoTrend({ daily }: { daily: Record<string, Record<string, number>> }) {
-  const [mode, setMode] = useState<GeoMode>("count");
-  const points = useMemo(() => {
-    const keys = SOURCE_LABELS.map(([k]) => `visit_${k}`);
-    const days = keys.flatMap((k) => Object.keys(daily[k] || {})).sort();
-    if (!days.length) return [];
-    const out: { key: string; label: string; ai: number; search: number; total: number }[] = [];
-    const today = new Date().toISOString().split("T")[0];
-    for (let d = new Date(days[0] + "T00:00:00Z"); ; d.setUTCDate(d.getUTCDate() + 1)) {
+  const [bucket, setBucket] = useState<GeoBucket>("week");
+  const [hidden, setHidden] = useState<Set<string>>(new Set());
+  const today = new Date().toISOString().split("T")[0];
+  const days = useMemo(() => {
+    const all = GEO_SERIES.flatMap((s) => Object.keys(daily[`visit_${s.key}`] || {})).sort();
+    if (!all.length) return [] as string[];
+    const out: string[] = [];
+    for (let d = new Date(all[0] + "T00:00:00Z"); ; d.setUTCDate(d.getUTCDate() + 1)) {
       const key = d.toISOString().split("T")[0];
       if (key > today) break;
-      const get = (k: string) => daily[`visit_${k}`]?.[key] || 0;
-      out.push({
-        key,
-        label: fmtDayLabel(key),
-        ai: AI_SOURCE_KEYS.reduce((n, k) => n + get(k), 0),
-        search: get("search"),
-        total: SOURCE_LABELS.reduce((n, [k]) => n + get(k), 0),
-      });
+      out.push(key);
     }
     return out;
-  }, [daily]);
+  }, [daily, today]);
+  const get = (k: string, day: string) => daily[`visit_${k}`]?.[day] || 0;
+
+  const points = useMemo(() => {
+    if (bucket === "day") {
+      return days.map((day) => {
+        const row: Record<string, number | string> = { label: fmtDayLabel(day) };
+        for (const s of GEO_SERIES) row[s.key] = get(s.key, day);
+        return row;
+      });
+    }
+    // Weeks end today, so the last point is always a full 7 days.
+    const out: Record<string, number | string>[] = [];
+    for (let end = days.length - 1; end >= 6; end -= 7) {
+      const slice = days.slice(end - 6, end + 1);
+      const row: Record<string, number | string> = { label: `wk to ${fmtDayLabel(days[end])}` };
+      for (const s of GEO_SERIES) row[s.key] = slice.reduce((n, d) => n + get(s.key, d), 0);
+      out.unshift(row);
+    }
+    return out;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [days, bucket, daily]);
+
+  // Last 7 days against the weekly average of the 28 days before.
+  const watch = useMemo(() => {
+    const sumRange = (k: string, from: number, to: number) =>
+      days.slice(Math.max(0, days.length - from), days.length - to).reduce((n, d) => n + get(k, d), 0);
+    const weeksBack = Math.min(4, Math.floor((days.length - 7) / 7));
+    return GEO_SERIES.map((s) => {
+      const last7 = sumRange(s.key, 7, 0);
+      const prev7 = sumRange(s.key, 14, 7);
+      const avg = weeksBack > 0 ? sumRange(s.key, 7 + weeksBack * 7, 7) / weeksBack : null;
+      const change = avg && avg > 0 ? last7 / avg - 1 : null;
+      return { ...s, last7, prev7, avg, change, alert: change !== null && avg! >= 5 && change <= -GEO_DROP };
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [days, daily]);
+
   if (points.length < 2) return null;
-  const data = points.map((p) =>
-    mode === "count"
-      ? { label: p.label, ai: p.ai, search: p.search }
-      : {
-          label: p.label,
-          ai: p.total ? Math.round((p.ai / p.total) * 1000) / 10 : 0,
-          search: p.total ? Math.round((p.search / p.total) * 1000) / 10 : 0,
-        },
-  );
-  const fmt = (n: number) => (mode === "count" ? fmtInt(n) : `${n}%`);
+  const alerts = watch.filter((w) => w.alert);
+  const toggle = (k: string) =>
+    setHidden((h) => {
+      const n = new Set(h);
+      if (n.has(k)) n.delete(k);
+      else n.add(k);
+      return n;
+    });
+  const aiShown = GEO_SERIES.some((s) => s.key !== "search" && !hidden.has(s.key));
   return (
     <div className="mt-4 border-t border-gray-200 dark:border-gray-800 pt-3">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <p className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">AI answer engines vs search, by day</p>
+        <p className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">Search and AI answer engines over time</p>
         <div className="flex gap-1 text-xs">
-          {(["count", "share"] as GeoMode[]).map((m) => (
+          {(["week", "day"] as GeoBucket[]).map((m) => (
             <button
               key={m}
-              onClick={() => setMode(m)}
+              onClick={() => setBucket(m)}
               className={`rounded-md px-2 py-0.5 ${
-                mode === m ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
+                bucket === m ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
               }`}
             >
-              {m === "count" ? "Visitors" : "Share"}
+              {m === "week" ? "By week" : "By day"}
             </button>
           ))}
         </div>
       </div>
-      <div className="mt-2 h-56">
+
+      {alerts.length > 0 ? (
+        <p className="mt-2 rounded-md bg-red-50 dark:bg-red-950 px-3 py-2 text-xs text-red-700 dark:text-red-300">
+          Dropping: {alerts.map((a) => `${a.label} ${Math.round(Math.abs(a.change!) * 100)}% under its usual week`).join("; ")}.
+        </p>
+      ) : (
+        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">No source is more than {Math.round(GEO_DROP * 100)}% under its usual week.</p>
+      )}
+
+      <TableScroll className="-mx-2 mt-2">
+        <table className="w-full text-sm">
+          <thead className="text-xs text-gray-500 dark:text-gray-400">
+            <tr className={ROW}>
+              <th className={`text-left font-medium pb-1 px-2 ${STICKY_COL}`}>Source</th>
+              <th className="text-right font-medium pb-1 px-2 whitespace-nowrap">Last 7 days</th>
+              <th className="text-right font-medium pb-1 px-2 whitespace-nowrap">Prior 7 days</th>
+              <th className="text-right font-medium pb-1 px-2 whitespace-nowrap" title="Weekly average over the 4 weeks before the last 7 days">Usual week</th>
+              <th className="text-right font-medium pb-1 px-2 whitespace-nowrap">vs usual</th>
+            </tr>
+          </thead>
+          <tbody>
+            {watch.map((w) => (
+              <tr key={w.key} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                <td className={`py-1.5 px-2 ${STICKY_COL}`}>
+                  <button type="button" onClick={() => toggle(w.key)} className="inline-flex items-center gap-2 text-left" title="Show or hide on the chart">
+                    <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: hidden.has(w.key) ? "transparent" : w.color, border: `2px solid ${w.color}` }} />
+                    <span className={`whitespace-nowrap ${hidden.has(w.key) ? "text-gray-400" : "text-gray-900 dark:text-gray-50"}`}>{w.label}</span>
+                  </button>
+                </td>
+                <td className="py-1.5 px-2 text-right tabular-nums">{fmtInt(w.last7)}</td>
+                <td className="py-1.5 px-2 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(w.prev7)}</td>
+                <td className="py-1.5 px-2 text-right tabular-nums text-gray-600 dark:text-gray-300">{w.avg === null ? "·" : fmtInt(Math.round(w.avg))}</td>
+                <td className="py-1.5 px-2 text-right tabular-nums whitespace-nowrap">
+                  {w.change === null ? (
+                    <span className="text-gray-400">·</span>
+                  ) : (
+                    <span className="font-medium" style={{ color: w.alert ? COLORS.deltaDown : w.change >= 0 ? COLORS.deltaUp : COLORS.inkMuted }}>
+                      {w.change >= 0 ? "▲" : "▼"} {Math.abs(Math.round(w.change * 100))}%
+                    </span>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </TableScroll>
+
+      <div className="mt-3 h-64">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 8, right: 12, left: 0, bottom: 0 }}>
+          <LineChart data={points} margin={{ top: 8, right: 4, left: 0, bottom: 0 }}>
             <CartesianGrid vertical={false} stroke={COLORS.grid} />
             <XAxis dataKey="label" tick={axisTickStyle} tickLine={false} axisLine={{ stroke: COLORS.axis }}
               interval="preserveStartEnd" minTickGap={24} tickMargin={8} />
-            <YAxis tick={axisTickStyle} tickLine={false} axisLine={false} width={44}
-              allowDecimals={mode === "share"} tickFormatter={(v: number) => (mode === "count" ? fmtCompact(v) : `${v}%`)} />
-            <Tooltip
-              formatter={(v, name) => [fmt(Number(v) || 0), String(name)]}
-              contentStyle={{ fontSize: 12, borderRadius: 8 }}
-            />
-            <Legend iconType="plainline" wrapperStyle={{ fontSize: 12 }} />
-            <Line type="monotone" dataKey="ai" name="AI answer engines" stroke={COLORS.engagement} strokeWidth={2} dot={false} isAnimationActive={false} />
-            <Line type="monotone" dataKey="search" name="Search engines" stroke={COLORS.users} strokeWidth={2} dot={false} isAnimationActive={false} />
+            <YAxis yAxisId="ai" tick={axisTickStyle} tickLine={false} axisLine={false} width={40} hide={!aiShown}
+              allowDecimals={false} tickFormatter={(v: number) => fmtCompact(v)} />
+            <YAxis yAxisId="search" orientation="right" tick={{ ...axisTickStyle, fill: "#2a78d6" }} tickLine={false} axisLine={false} width={44}
+              hide={hidden.has("search")} allowDecimals={false} tickFormatter={(v: number) => fmtCompact(v)} />
+            <Tooltip formatter={(v, name) => [fmtInt(Number(v) || 0), String(name)]} contentStyle={{ fontSize: 12, borderRadius: 8 }} />
+            {GEO_SERIES.filter((s) => !hidden.has(s.key)).map((s) => (
+              <Line key={s.key} yAxisId={s.key === "search" ? "search" : "ai"} type="monotone" dataKey={s.key} name={s.label}
+                stroke={s.color} strokeWidth={s.key === "search" ? 2 : 1.75} strokeDasharray={s.dash} dot={false} isAnimationActive={false} />
+            ))}
           </LineChart>
         </ResponsiveContainer>
       </div>
       <p className="mt-1 text-[11px] text-gray-500 dark:text-gray-400">
-        UTC days since source tracking began; today is still in progress. Share is of that day&apos;s new visitors with a tracked source.
-        AI apps that send no referrer show up as Direct, so the AI line is a floor.
+        New visitors by UTC day, since source tracking began; weeks end today. Search engines use the right-hand axis, AI engines the left. Tap a
+        source in the table to hide it. A source is flagged when its last 7 days are {Math.round(GEO_DROP * 100)}% or more under its usual week (and
+        it usually brings 5 or more). AI apps that send no referrer show up as Direct, so the AI lines are a floor.
       </p>
     </div>
   );
@@ -681,73 +723,6 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
             JavaScript) is in Google Analytics.
           </p>
         </>
-      )}
-    </div>
-  );
-}
-
-function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) {
-  const max = data.byPick.reduce((m, r) => Math.max(m, r.clicks), 0);
-  const pickLabel = (id: string) => data.byPick.find((p) => p.id === id)?.label ?? id;
-  return (
-    <div className={CARD}>
-      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
-        <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">What should we build next?</h2>
-        <p className="text-xs text-gray-500 dark:text-gray-400">{fmtInt(data.total)} answers</p>
-      </div>
-      {data.total === 0 ? (
-        <p className="text-sm text-gray-500 dark:text-gray-400">No answers yet. They arrive from the new-tests email, the unsubscribe page and searches that find nothing.</p>
-      ) : (
-        <div className="grid gap-6 lg:grid-cols-2">
-          <table className="w-full text-sm self-start">
-            <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                <th className="text-left font-medium pb-2">Category</th>
-                <th className="text-right font-medium pb-2 pl-4">Clicks</th>
-                <th className="text-right font-medium pb-2 pl-4">Named a test</th>
-                <th className="pb-2 pl-4 w-1/3"></th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.byPick.map((r) => (
-                <tr key={r.id} className="border-t border-gray-100 dark:border-gray-800">
-                  <td className="py-2 font-medium text-gray-900 dark:text-gray-50">{r.label}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-900 dark:text-gray-50">{fmtInt(r.clicks)}</td>
-                  <td className="py-2 pl-4 text-right tabular-nums text-gray-600 dark:text-gray-300">{fmtInt(r.withDetails)}</td>
-                  <td className="py-2 pl-4">
-                    <div className="h-1.5 w-full max-w-[160px] bg-gray-100 dark:bg-gray-800 rounded overflow-hidden ml-auto">
-                      <div
-                        className="h-full rounded"
-                        style={{ width: `${max > 0 ? (r.clicks / max) * 100 : 0}%`, background: COLORS.engagement }}
-                      />
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <div>
-            <p className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2">Named tests, newest first</p>
-            {data.details.length === 0 ? (
-              <p className="text-sm text-gray-500 dark:text-gray-400">Nobody has named a specific test yet.</p>
-            ) : (
-              <ul className="space-y-2 max-h-72 overflow-y-auto pr-1">
-                {data.details.map((d, i) => (
-                  <li key={i} className="text-sm border-t border-gray-100 dark:border-gray-800 pt-2 first:border-0 first:pt-0">
-                    <p className="text-gray-900 dark:text-gray-50">{d.details}</p>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400">
-                      {pickLabel(d.pick)}
-                      {d.examId ? ` · was studying ${d.examId}` : ""}
-                      {` · via ${d.source}`}
-                      {d.email ? ` · tell ${d.email} when it ships` : ""}
-                      {d.at ? ` · ${d.at.slice(0, 10)}` : ""}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        </div>
       )}
     </div>
   );
@@ -1125,18 +1100,6 @@ export function GrowthTab() {
           </p>
         )}
 
-        {/* SAT, ACT and the other v2 exams with Basics: steps and Basics use */}
-        <BasicsProgress />
-
-        {/* The last question before an account went quiet, per exam */}
-        <ExitQuestions />
-
-        {/* Set N, Test N dashboards against sets first */}
-        <LayoutUsage />
-
-        {/* Quiz creation, play and report counters. */}
-        {metrics.quizzes && <QuizzesCard data={metrics.quizzes} />}
-
         {/* When people study */}
         {metrics.studyTimes ? (
           <StudyTimes data={metrics.studyTimes} />
@@ -1146,9 +1109,6 @@ export function GrowthTab() {
             aggregate-stats from Vercel → Settings → Cron Jobs.
           </div>
         )}
-
-        {/* Test requests */}
-        {metrics.testRequests && <TestRequests data={metrics.testRequests} />}
 
         {/* Funnel: first visit to purchase */}
         {metrics.visitorFunnel && <VisitorFunnel data={metrics.visitorFunnel} />}

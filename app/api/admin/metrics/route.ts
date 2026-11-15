@@ -4,7 +4,6 @@ import { requireAdmin } from '@/lib/server/adminAuth';
 import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 import { isInternalEmail } from '@/lib/internal';
 import { getInternalUids } from '@/lib/server/internalUsers';
-import { TEST_REQUEST_PICKS } from '@/lib/test-requests';
 import type { DocumentSnapshot, QuerySnapshot } from 'firebase-admin/firestore';
 import { paymentNetUsdCents } from '@/lib/pricing';
 
@@ -74,18 +73,16 @@ export async function GET(request: NextRequest) {
 
 async function buildMetrics() {
   const db = getAdminDb();
-  const [usersSnapRaw, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap, internalUids, quizzesDoc, paywallsDoc] = await Promise.all([
+  const [usersSnapRaw, paymentsSnap, questionsDoc, studyTimesDoc, funnelDoc, originsSnap, internalUids, paywallsDoc] = await Promise.all([
     db.collection('users')
       .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats')
       .get(),
     db.collection('payments').get(),
     db.doc('analytics/questions').get(),
-    db.collection('testRequests').get(),
     db.doc('globalStats/studyTimes').get(),
     db.doc('analytics/funnel').get(),
     db.collection('signupOrigins').get(),
     getInternalUids(),
-    db.doc('analytics/quizzes').get(),
     db.doc('analytics/paywalls').get(),
   ]);
   // Every paywall open per UTC day, guests included (/api/analytics/paywall).
@@ -93,64 +90,11 @@ async function buildMetrics() {
   for (const [day, n] of Object.entries((paywallsDoc.data()?.daily as Record<string, unknown>) || {})) {
     if (typeof n === 'number') paywallHitsByDay[day] = n;
   }
-  // ── Quizzes (lib/quizzes.ts) ────────────────────────────────────────────
-  // Site-wide counters bumped by lib/server/quizzes.ts: quizzes made on
-  // /create, by Quizlet import and from Claude/ChatGPT through the MCP
-  // server, browsers that played one and bad-question reports. Zeros until
-  // the first quiz.
-  const quizCounters = quizzesDoc.exists ? (quizzesDoc.data() as Record<string, unknown>) : {};
-  const quizCount = (key: string) => (typeof quizCounters[key] === 'number' ? (quizCounters[key] as number) : 0);
-  const quizzes = {
-    createdWeb: quizCount('created_web'),
-    createdImport: quizCount('created_import'),
-    createdMcp: quizCount('created_mcp'),
-    plays: quizCount('plays'),
-    questionReports: quizCount('questionReports'),
-    total: quizCount('created_web') + quizCount('created_import') + quizCount('created_mcp'),
-  };
-  // Internal accounts (lib/internal) never count: drop their users, payments,
-  // test requests and signup origins before anything is aggregated.
+  // Internal accounts (lib/internal) never count: drop their users, payments
+  // and signup origins before anything is aggregated.
   const usersSnap = { docs: usersSnapRaw.docs.filter((d) => !internalUids.has(d.id)) };
   const isInternalPayment = (p: Record<string, unknown>) =>
     (typeof p.userId === 'string' && internalUids.has(p.userId)) || isInternalEmail(p.email as string | undefined);
-
-  // ── "What test should we build next?" answers ───────────────────────────
-  // One doc per user per category (lib/test-requests). Counts per category
-  // plus every free-text answer, newest first: the text is what names the
-  // exam to build.
-  const requestCounts = new Map<string, { clicks: number; withDetails: number }>();
-  const requestDetails: { pick: string; details: string; examId: string | null; source: string; email: string | null; at: string }[] = [];
-  let testRequestsTotal = 0;
-  testRequestsSnap.forEach((doc) => {
-    const d = doc.data();
-    if (typeof d.uid === 'string' && internalUids.has(d.uid)) return;
-    testRequestsTotal += 1;
-    const pick = typeof d.pick === 'string' ? d.pick : 'other';
-    const entry = requestCounts.get(pick) ?? { clicks: 0, withDetails: 0 };
-    entry.clicks += 1;
-    if (typeof d.details === 'string' && d.details.trim()) {
-      entry.withDetails += 1;
-      requestDetails.push({
-        pick,
-        details: d.details.trim(),
-        examId: typeof d.examId === 'string' ? d.examId : null,
-        source: typeof d.source === 'string' ? d.source : 'page',
-        email: typeof d.email === 'string' ? d.email : null,
-        at: typeof d.updatedAt === 'string' ? d.updatedAt : (typeof d.createdAt === 'string' ? d.createdAt : ''),
-      });
-    }
-    requestCounts.set(pick, entry);
-  });
-  const testRequests = {
-    total: testRequestsTotal,
-    byPick: TEST_REQUEST_PICKS.map((p) => ({
-      id: p.id,
-      label: p.label,
-      clicks: requestCounts.get(p.id)?.clicks ?? 0,
-      withDetails: requestCounts.get(p.id)?.withDetails ?? 0,
-    })).sort((a, b) => b.clicks - a.clicks),
-    details: requestDetails.sort((a, b) => b.at.localeCompare(a.at)).slice(0, 50),
-  };
 
   // ── Per-day maps (YYYY-MM-DD → number) ──────────────────────────────────
   const signupsByDay: Record<string, number> = {};
@@ -371,10 +315,8 @@ async function buildMetrics() {
     activeWeekly,
     activeMonthly,
     questionsByExamBackfillPending,
-    testRequests,
     // Built nightly by /api/cron/aggregate-stats.
     studyTimes: studyTimesDoc.exists ? studyTimesDoc.data() : null,
-    quizzes,
     // The "today" range. Signups and revenue are bucketed by the hour in
     // Eastern time off real timestamps. Questions and active users have no
     // clock time anywhere in their write path, so they can only be day

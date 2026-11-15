@@ -5,7 +5,7 @@ import { Sparkles, ChevronDown, CheckCircle2, AlertTriangle, XCircle, DollarSign
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 import type { DailyBrief } from "@/lib/server/dailyBrief";
 import { MENTIONS_SINCE } from "@/lib/webMentionsSince";
-import { CARD, ROW, STICKY_COL, TabHeader, TableScroll, fmtUpdated } from "@/components/admin/AdminTabParts";
+import { CARD, ROW, STICKY_COL, ShowAllButton, TOP_N, TabHeader, TableScroll, fmtUpdated, useTopN } from "@/components/admin/AdminTabParts";
 
 // The Opportunities tab body on /admin, given the API payload. Kept apart
 // from the fetch so it renders without an admin session.
@@ -92,6 +92,11 @@ function CountriesCard({ data, selected, onSelect }: {
   selected: CountryId | "all";
   onSelect: (id: CountryId | "all") => void;
 }) {
+  const sorted = useMemo(
+    () => [...data.countries].sort((a, b) => b.answers7d - a.answers7d || (b.visitors7d ?? 0) - (a.visitors7d ?? 0) || b.revenue7dCents - a.revenue7dCents),
+    [data.countries],
+  );
+  const top = useTopN(sorted);
   const rows = data.countries;
   const maxAnswers = Math.max(...rows.map((c) => c.answers7d), 1);
   const totalAnswers = rows.reduce((n, c) => n + c.answers7d, 0);
@@ -117,7 +122,7 @@ function CountriesCard({ data, selected, onSelect }: {
             </tr>
           </thead>
           <tbody>
-            {rows.map((c) => {
+            {top.shown.map((c) => {
               const active = selected === c.id;
               return (
                 <tr
@@ -152,6 +157,7 @@ function CountriesCard({ data, selected, onSelect }: {
           </tbody>
         </table>
       </TableScroll>
+      <ShowAllButton hidden={top.hidden} all={top.all} onToggle={top.toggle} noun="more countries" />
       <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
         Tap a country to filter the exam table. Answers and learners are filed by the exam&apos;s country (a Canadian on the DMV test counts under the US);
         visitors and signups by the visitor&apos;s.
@@ -283,7 +289,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
   const hasCountries = Array.isArray(data.countries) && data.countries.length > 0;
   // Busiest first (the API's order), narrowed by country and search; the
   // long tail is one click away.
-  const EXAMS_SHOWN = 12;
+  const EXAMS_SHOWN = TOP_N;
   const filteredExams = useMemo(() => {
     const q = query.trim().toLowerCase();
     return data.exams
@@ -303,6 +309,10 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
   const visits7Total = data.sources.reduce((n, x) => n + x.visits7d, 0);
   const maxSource = Math.max(...data.sources.map((x) => x.visits7d), 1);
   const maxPaywallViews = Math.max(...data.paywalls.map((p) => p.hitsAll), 1);
+  const paywalls = useTopN(useMemo(() => [...data.paywalls].sort((a, b) => b.purchasesAll - a.purchasesAll || b.hits30d - a.hits30d || b.hitsAll - a.hitsAll), [data.paywalls]));
+  const sources = useTopN(data.sources);
+  const landings = useTopN(data.landings);
+  const cohorts = useTopN(data.cohorts);
 
   return (
     <>
@@ -495,7 +505,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                 </tr>
               </thead>
               <tbody>
-                {data.paywalls.map((p) => (
+                {paywalls.shown.map((p) => (
                   <tr key={p.feature} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
                     <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{p.label}</td>
                     <td className="py-2 px-2 text-right tabular-nums">{fmtInt(p.hits30d)}</td>
@@ -514,6 +524,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
               </tbody>
             </table>
           </TableScroll>
+          <ShowAllButton hidden={paywalls.hidden} all={paywalls.all} onToggle={paywalls.toggle} noun="more paywalls" />
           <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
             Views are counted per open, including signed-out visitors, so per 100 views is a floor on the true rate. The dashboard sends one checkout name
             for both locked training sets (3 and 4) and both locked tests.
@@ -690,7 +701,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                 </tr>
               </thead>
               <tbody>
-                {data.sources.map((x) => (
+                {sources.shown.map((x) => (
                   <tr key={x.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
                     <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>
                       {x.label}
@@ -712,11 +723,12 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
               </tbody>
             </table>
           </TableScroll>
+          <ShowAllButton hidden={sources.hidden} all={sources.all} onToggle={sources.toggle} noun="more sources" />
           {data.landings.length > 0 ? (
             <div className="mt-5">
               <h3 className="text-xs font-semibold text-gray-700 dark:text-gray-200 mb-2">Landing pages that make accounts and revenue</h3>
               <ul className="text-sm divide-y divide-gray-100 dark:divide-gray-800">
-                {data.landings.map((l) => (
+                {landings.shown.map((l) => (
                   <li key={l.path} className="flex justify-between py-1.5">
                     <span className="font-mono text-xs text-gray-700 dark:text-gray-200 truncate">{l.path}</span>
                     <span className="tabular-nums text-xs text-gray-600 dark:text-gray-300 shrink-0 ml-3">
@@ -725,6 +737,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                   </li>
                 ))}
               </ul>
+              <ShowAllButton hidden={landings.hidden} all={landings.all} onToggle={landings.toggle} noun="more pages" />
             </div>
           ) : (
             <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
@@ -749,7 +762,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                 </tr>
               </thead>
               <tbody>
-                {data.cohorts.map((c) => (
+                {cohorts.shown.map((c) => (
                   <tr key={c.start} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
                     <td className={`py-2 px-2 whitespace-nowrap ${STICKY_COL}`}>{fmtDay(c.start)} to {fmtDay(c.end)}</td>
                     <td className="py-2 px-2 text-right tabular-nums">{fmtInt(c.size)}</td>
@@ -765,6 +778,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
               </tbody>
             </table>
           </TableScroll>
+          <ShowAllButton hidden={cohorts.hidden} all={cohorts.all} onToggle={cohorts.toggle} noun="older weeks" />
           <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
             A dot means that week has not fully passed for everyone in the cohort. Accounts only: guests have no activity record.
           </p>

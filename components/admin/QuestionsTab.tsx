@@ -2,14 +2,20 @@
 
 import { useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
-import { CARD, TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { CARD, ShowAllButton, TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch, useTopN } from "@/components/admin/AdminTabParts";
+import { FRESHNESS_AHEAD_DAYS, SETTLE_DAYS } from "@/lib/ownerWatch";
 import type { QuestionHealthPayload } from "@/lib/server/questionHealth";
 import { REPORT_REASONS } from "@/lib/questionQuality";
 
-// Question quality on one page: what the weekly Claude audit found, what
-// people reported, what the nightly pick statistics flag, which official
-// pages changed and which dated exam changes are due. Data from
-// /api/admin/questions (lib/server/questionHealth.ts).
+// Question quality, cut down to what needs a person. The daily audit judges
+// every new flag and report and fixes what it can in a PR that merges itself,
+// and the source triage settles changed pages, so this tab leads with what
+// those runs left open (the same rules as the Monday owner digest,
+// lib/ownerWatch.ts): findings and reports still open after SETTLE_DAYS,
+// flags the audit could not settle, pages the triage handed over, and exam
+// changes due within FRESHNESS_AHEAD_DAYS. Everything still in the automatic
+// pipeline is folded away with a count. Data from /api/admin/questions
+// (lib/server/questionHealth.ts).
 
 type Text = { question: string; options: string[]; answer: string; explanation: string } | undefined;
 
@@ -117,10 +123,42 @@ export function QuestionsTab() {
   const { user } = useAuth();
   const { data, setData, error, loading, refreshing, updating, reload } = useAdminFetch<QuestionHealthPayload>("/api/admin/questions");
   const [busy, setBusy] = useState<string | null>(null);
-  const [showAllFlags, setShowAllFlags] = useState(false);
 
   if (loading) return <TabLoading />;
   if (error || !data) return <TabError message={error || "Failed to load"} />;
+  return <QuestionsView data={data} setData={setData} user={user} busy={busy} setBusy={setBusy} reload={reload} refreshing={refreshing} updating={updating} />;
+}
+
+function QuestionsView({ data, setData, user, busy, setBusy, reload, refreshing, updating }: {
+  data: QuestionHealthPayload;
+  setData: React.Dispatch<React.SetStateAction<QuestionHealthPayload | null>>;
+  user: ReturnType<typeof useAuth>["user"];
+  busy: string | null;
+  setBusy: (id: string | null) => void;
+  reload: (refresh?: boolean) => unknown;
+  refreshing: boolean;
+  updating: boolean;
+}) {
+  const now = Date.now();
+  const settled = (iso: string) => !iso || now - Date.parse(iso) > SETTLE_DAYS * 86_400_000;
+  const findingsNeed = data.findings.filter((f) => settled(f.createdAt));
+  const findingsAuto = data.findings.length - findingsNeed.length;
+  const reportsNeed = data.reports.filter((r) => settled(r.createdAt));
+  const reportsAuto = data.reports.length - reportsNeed.length;
+  const openFlagsAll = data.flags.filter((f) => !f.cleared);
+  // A flag the audit has not read yet is still in the pipeline; one it read
+  // and could not settle (not "ok", not confident enough to be a finding) needs you.
+  const openFlags = openFlagsAll.filter((f) => f.review);
+  const flagsAuto = openFlagsAll.length - openFlags.length;
+  const ahead = new Date(now + FRESHNESS_AHEAD_DAYS * 86_400_000).toISOString().slice(0, 10);
+  const changes = data.freshness.filter((f) => f.state !== "done" && f.date <= ahead);
+  const laterChanges = data.freshness.filter((f) => f.state !== "done" && f.date > ahead);
+  const findings = useTopN(findingsNeed);
+  const reports = useTopN(reportsNeed);
+  const flagList = useTopN(openFlags);
+  const changedSources = data.sources.filter((s) => s.changed);
+  const sources = useTopN(changedSources);
+  const changeList = useTopN(changes);
 
   const act = async (kind: "report" | "finding" | "source" | "flag", ids: string[], status?: string, n?: number) => {
     setBusy(ids[0]);
@@ -150,13 +188,7 @@ export function QuestionsTab() {
     }
   };
 
-  const changedSources = data.sources.filter((s) => s.changed);
   const brokenSources = data.sources.filter((s) => !s.changed && s.failures >= 2);
-  const due = data.freshness.filter((f) => f.state === "due");
-  const soon = data.freshness.filter((f) => f.state === "soon");
-  const openFlags = data.flags.filter((f) => !f.cleared);
-  const clearedFlags = data.flags.filter((f) => f.cleared);
-  const flags = showAllFlags ? openFlags : openFlags.slice(0, 40);
   const flagRow = (f: (typeof data.flags)[number]) => (
     <li key={`${f.examId}|${f.questionId}`} className="py-3">
       <div className="flex flex-wrap items-center gap-2">
@@ -194,25 +226,31 @@ export function QuestionsTab() {
         updating={updating}
       />
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-        <Tile label="Audit findings open" value={data.findings.length} tone={data.findings.length ? "bad" : undefined} />
-        <Tile label="Reports open" value={data.reports.length} tone={data.reports.length ? "warn" : undefined} />
-        <Tile label="Flags not cleared" value={data.totalFlags} tone={data.byKind.keySuspect ? "bad" : undefined} />
-        <Tile label="Source pages changed" value={changedSources.length} tone={changedSources.length ? "warn" : undefined} />
-        <Tile label="Exam changes due / in 60 days" value={`${due.length} / ${soon.length}`} tone={due.length ? "bad" : soon.length ? "warn" : undefined} />
-        <Tile label="Exams due a yearly review" value={data.reviewDue.length} tone={data.reviewDue.length ? "warn" : undefined} />
+      <p className="text-sm text-gray-600 dark:text-gray-300">
+        Only what the automatic runs could not settle. The daily audit reads every new flag and report and fixes what it can in a PR that merges
+        itself; {findingsAuto + reportsAuto + flagsAuto > 0
+          ? `${findingsAuto + reportsAuto + flagsAuto} items are still with it (${findingsAuto} findings, ${reportsAuto} reports under ${SETTLE_DAYS} days old, ${flagsAuto} flags not read yet).`
+          : "nothing is waiting on it right now."}
+      </p>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+        <Tile label="Findings left open" value={findingsNeed.length} tone={findingsNeed.length ? "bad" : undefined} />
+        <Tile label="Reports left open" value={reportsNeed.length} tone={reportsNeed.length ? "warn" : undefined} />
+        <Tile label="Flags the audit could not settle" value={openFlags.length} tone={openFlags.length ? "warn" : undefined} />
+        <Tile label="Pages for you" value={changedSources.length} tone={changedSources.length ? "warn" : undefined} />
+        <Tile label={`Exam changes in ${FRESHNESS_AHEAD_DAYS} days`} value={changes.length} tone={changes.some((c) => c.state === "due") ? "bad" : changes.length ? "warn" : undefined} />
       </div>
 
       <section className={CARD}>
-        <h2 className="font-semibold">Audit findings</h2>
+        <h2 className="font-semibold">Audit findings the fix run left open</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
           {data.lastAudit
-            ? `Last audit ${fmtUpdated(data.lastAudit.at)}: ${data.lastAudit.checked} questions checked blind, ${data.lastAudit.disagreements} disagreed with the key, ${data.lastAudit.findings} confirmed. The GitHub Action opens a PR with fixes for these; merging it closes them here.`
+            ? `Last audit ${fmtUpdated(data.lastAudit.at)}: ${data.lastAudit.checked} questions checked blind, ${data.lastAudit.disagreements} disagreed with the key, ${data.lastAudit.findings} confirmed. Findings are fixed in a PR that merges itself; these are over ${SETTLE_DAYS} days old, so that run could not settle them.`
             : "No audit has run yet. It runs from GitHub Actions (scripts/question-audit.ts): flags and reports daily, the full sweep on Mondays."}
         </p>
-        {data.findings.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing open.</p>}
+        {findingsNeed.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing needs you.</p>}
         <ul className="divide-y divide-gray-100 dark:divide-gray-800">
-          {data.findings.map((f) => (
+          {findings.shown.map((f) => (
             <li key={f.id} className="py-3">
               <div className="flex flex-wrap items-center gap-2">
                 <Pill className={VERDICT_STYLE[f.verdict] ?? VERDICT_STYLE.typo}>{f.verdict.replace("_", " ")}</Pill>
@@ -230,16 +268,17 @@ export function QuestionsTab() {
             </li>
           ))}
         </ul>
+        <ShowAllButton hidden={findings.hidden} all={findings.all} onToggle={findings.toggle} noun="more findings" />
       </section>
 
       <section className={CARD}>
-        <h2 className="font-semibold">Reports from students</h2>
+        <h2 className="font-semibold">Student reports left open</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
-          {data.reportTotals.total} all time. Each is read by the audit the next morning and its verdict shown here; a confirmed problem also becomes a finding with a fix PR. Close them here once handled.
+          {data.reportTotals.total} all time. The audit reads each one the next morning; a confirmed problem becomes a finding with a fix PR. These are over {SETTLE_DAYS} days old and still open: close each once handled.
         </p>
-        {data.reports.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing open.</p>}
+        {reportsNeed.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing needs you.</p>}
         <ul className="divide-y divide-gray-100 dark:divide-gray-800">
-          {data.reports.map((r) => (
+          {reports.shown.map((r) => (
             <li key={r.id} className="py-3">
               <div className="flex flex-wrap items-center gap-2">
                 <Pill className={KIND_STYLE.reported}>{REASON_LABEL[r.reason] ?? r.reason}</Pill>
@@ -270,28 +309,18 @@ export function QuestionsTab() {
             </li>
           ))}
         </ul>
+        <ShowAllButton hidden={reports.hidden} all={reports.all} onToggle={reports.toggle} noun="more reports" />
       </section>
 
       <section className={CARD}>
-        <h2 className="font-semibold">Flagged by answer statistics</h2>
+        <h2 className="font-semibold">Flags the audit could not settle</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
-          Key suspect: people who get most questions right pick one wrong option about as often as the key. Split answer: one wrong option draws nearly as many as the key. Needs 40 answers (12 from strong students for key suspect). A hard question can look the same, so the audit reads every new flag the next morning: a wrong key becomes a finding above with a fix PR, and a key it finds right is cleared below until the question&apos;s answers double.
-          {" "}
-          {Object.entries(data.byKind).map(([k, n]) => `${KIND_LABEL[k] ?? k} ${n}`).join(" · ")}
+          Questions whose answer statistics look like a wrong key or a second right answer, that the audit read but was not sure enough about to fix.
+          Check each one: Key is right clears it until its answers double. {data.clearedFlags} others were checked and found right.
         </p>
-        {openFlags.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing waiting. Flags appear as questions reach 40 answers.</p>}
-        <ul className="divide-y divide-gray-100 dark:divide-gray-800">{flags.map(flagRow)}</ul>
-        {openFlags.length > 40 && (
-          <button type="button" className="mt-2 text-xs underline text-gray-500" onClick={() => setShowAllFlags((v) => !v)}>
-            {showAllFlags ? "Show fewer" : `Show all ${openFlags.length}`}
-          </button>
-        )}
-        {data.clearedFlags > 0 && (
-          <details className="mt-3">
-            <summary className="text-xs text-gray-500 cursor-pointer">{data.clearedFlags} checked by the audit and found right (hard questions, not wrong keys)</summary>
-            <ul className="divide-y divide-gray-100 dark:divide-gray-800">{clearedFlags.map(flagRow)}</ul>
-          </details>
-        )}
+        {openFlags.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing needs you.</p>}
+        <ul className="divide-y divide-gray-100 dark:divide-gray-800">{flagList.shown.map(flagRow)}</ul>
+        <ShowAllButton hidden={flagList.hidden} all={flagList.all} onToggle={flagList.toggle} noun="more flags" />
       </section>
 
       <section className={CARD}>
@@ -301,7 +330,7 @@ export function QuestionsTab() {
         </p>
         {changedSources.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing needs you.</p>}
         <ul className="divide-y divide-gray-100 dark:divide-gray-800">
-          {changedSources.map((s) => (
+          {sources.shown.map((s) => (
             <li key={s.id} className="py-2 flex flex-wrap items-center gap-2 text-sm">
               <a href={s.url} target="_blank" rel="noreferrer" className="underline break-all text-gray-900 dark:text-gray-50">{s.url}</a>
               <span className="text-xs text-gray-500 dark:text-gray-400">{s.exams.join(", ")} · {Math.round(s.ratio * 100)}% changed · {s.changedAt ? fmtUpdated(s.changedAt) : ""}{s.triage?.verdict === "needs_person" ? ` · Claude: ${s.triage.reason}` : ""}</span>
@@ -309,6 +338,7 @@ export function QuestionsTab() {
             </li>
           ))}
         </ul>
+        <ShowAllButton hidden={sources.hidden} all={sources.all} onToggle={sources.toggle} noun="more pages" />
         {brokenSources.length > 0 && (
           <details className="mt-3">
             <summary className="text-xs text-gray-500 cursor-pointer">{brokenSources.length} pages failed twice or more that Claude could not replace with a working official page</summary>
@@ -322,10 +352,14 @@ export function QuestionsTab() {
       </section>
 
       <section className={CARD}>
-        <h2 className="font-semibold">Dated exam changes</h2>
-        <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">From lib/examFreshness.json. Set <code>done</code> on an event once the bank is updated.</p>
+        <h2 className="font-semibold">Exam changes due or coming within {FRESHNESS_AHEAD_DAYS} days</h2>
+        <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
+          From lib/examFreshness.json. Set <code>done</code> on an event once the bank is updated.
+          {laterChanges.length > 0 && ` ${laterChanges.length} more are further off.`}
+        </p>
+        {changes.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing coming up.</p>}
         <ul className="divide-y divide-gray-100 dark:divide-gray-800">
-          {data.freshness.filter((f) => f.state !== "done").map((f, i) => (
+          {changeList.shown.map((f, i) => (
             <li key={i} className="py-2 text-sm">
               <div className="flex flex-wrap items-center gap-2">
                 <Pill className={f.state === "due" ? VERDICT_STYLE.wrong_key : f.state === "soon" ? VERDICT_STYLE.ambiguous : VERDICT_STYLE.typo}>
@@ -339,6 +373,7 @@ export function QuestionsTab() {
             </li>
           ))}
         </ul>
+        <ShowAllButton hidden={changeList.hidden} all={changeList.all} onToggle={changeList.toggle} noun="more changes" />
         {data.reviewDue.length > 0 && (
           <details className="mt-3">
             <summary className="text-xs text-gray-500 cursor-pointer">{data.reviewDue.length} exams unchanged for over a year: due a full review</summary>

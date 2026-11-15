@@ -103,7 +103,7 @@ Q = [
  'It can weaken judgement', ['It improves the odds', 'It speeds up the wins', 'It has no effect on play'],
  'Alcohol lowers inhibitions and judgement, so people tend to bet more and for longer. That is why intoxicated people must not gamble.'),
 ('A customer tells you their partner has taken over their finances because of gambling. This suggests:',
- 'Gambling has caused problems', ['Gambling is under control now', 'A sign of some big wins', 'A requirement of the venue'],
+ 'Gambling has caused problems', ['Gambling is under control now', 'Some big wins', 'Something the venue requires'],
  'Needing someone else to control the money is a sign that gambling has already caused harm, not that it is under control. Offer information on support services if appropriate.'),
 ('Which of these is a social impact of gambling harm on a family?',
  'Relationship breakdown', ['More family outings', 'Better communication at home', 'Higher family savings'],

@@ -930,9 +930,9 @@
     "category": "aurcgHarm",
     "question": "A customer tells you their partner has taken over their finances because of gambling. This suggests:",
     "optionA": "Gambling is under control now",
-    "optionB": "A sign of some big wins",
+    "optionB": "Some big wins",
     "optionC": "Gambling has caused problems",
-    "optionD": "A requirement of the venue",
+    "optionD": "Something the venue requires",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Needing someone else to control the money is a sign that gambling has already caused harm, not that it is under control. Offer information on support services if appropriate."
@@ -1744,7 +1744,7 @@
     "optionA": "State law",
     "optionB": "Each venue, whatever the state says",
     "optionC": "The machine supplier",
-    "optionD": "The venue's cleaners",
+    "optionD": "The local council",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "Many states require gaming machines to shut down for a set period each day, but the hours vary by state and sometimes by venue type. A venue must follow the law of its state, not set its own."

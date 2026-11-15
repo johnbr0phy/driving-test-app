@@ -85,7 +85,7 @@ Q = [
  'A player information message', ['A fault in the machine', 'A bonus game feature', 'A linked jackpot alert'],
  'Pop-up messages on time played or money spent are harm minimisation features that encourage players to pause and reconsider. Their use varies by state.'),
 ('Whether gaming machines must close for a few hours each night (a shutdown period) is set by:',
- 'State law', ['Each venue, whatever the state says', 'The machine supplier', "The venue's cleaners"],
+ 'State law', ['Each venue, whatever the state says', 'The machine supplier', 'The local council'],
  'Many states require gaming machines to shut down for a set period each day, but the hours vary by state and sometimes by venue type. A venue must follow the law of its state, not set its own.'),
 ("A customer asks if they can have a drink brought to them so they don't lose their machine. A responsible reply is to:",
  'Suggest a short break', ['Hold the machine all night', 'Bring drinks every hour', 'Give free credits instead'],

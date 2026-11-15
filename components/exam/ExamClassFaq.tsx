@@ -65,6 +65,7 @@ export const TEACHES: Record<string, string> = {
   // High school, military and college classes
   ged: "a GED or adult education class",
   hiset: "a HiSET or adult education class",
+  tabe: "an adult basic education or workforce program",
   timestables: "a primary school class",
   ks2: "a Year 6 class",
   gcsemaths: "GCSE Maths",

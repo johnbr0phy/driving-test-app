@@ -30,6 +30,7 @@ import '@/lib/v2/banks/ged';
 import '@/lib/v2/banks/cbest';
 import '@/lib/v2/banks/hiset';
 import '@/lib/v2/banks/shsat';
+import '@/lib/v2/banks/tabe';
 import '@/lib/v2/banks/hesi';
 import '@/lib/v2/banks/hscmaths';
 import '@/lib/v2/banks/ks2';

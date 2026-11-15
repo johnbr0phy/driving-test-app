@@ -63,6 +63,7 @@ const BORROWED_SETS: Record<string, string> = {
   dmv: "driving",
   hiset: "ged",
   cbest: "praxis",
+  tabe: "ged",
   ukwater: "caplumb",
   ukg3: "caplumb",
   ukplumb: "caplumb",

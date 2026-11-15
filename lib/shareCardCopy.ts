@@ -70,6 +70,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   htl: { title: "Histology Certification", description: "Review fixation, tissue processing, embedding, microtomy, staining and laboratory operations." },
   cst: { title: "Surgical Technologist", description: "Review perioperative care, sterilization, anatomy, microbiology and surgical pharmacology." },
   crcst: { title: "Sterile Processing Knowledge", description: "Review decontamination, instrument preparation, packaging, sterilization and sterile storage." },
+  tabe: { title: "TABE Practice Test", description: "Practice TABE Reading, Math and Language at Level D, at the real pace, with a percent score for each subject." },
   hiset: { title: "HiSET Practice Test", description: "Practice all five HiSET subtests, Reading, Writing, Math, Science and Social Studies, at the real pace, with an estimated score for each." },
   ged: { title: "GED Practice Tests", description: "Build skills in language arts, math, science and social studies with tests and topic drills." },
   shsat: { title: "SHSAT Practice Test", description: "Practice English Language Arts and Math for the SHSAT, the NYC Specialized High Schools Admissions Test." },

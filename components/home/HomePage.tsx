@@ -262,7 +262,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       {search && (
       <div id="all-tests" data-search-rest className="max-w-5xl mx-auto px-6 pt-10 pb-16 md:pb-24 scroll-mt-6">
         <h2 className={`text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center ${headline ? "mb-3" : "mb-6"}`}>
-          {us ? c.everyTest : c.testsFor(inName)}
+          {c.testsFor(inName)}
         </h2>
         {headline && <p className="mx-auto mb-6 max-w-2xl text-center text-gray-600 dark:text-gray-300">{headline.lead}</p>}
         {popular.length > 0 && (
@@ -275,9 +275,10 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
             </div>
           </div>
         )}
-        {/* Every category as short text links (the busiest first), not a card per
-            test: keeps each landing linked from the homepage at a fraction of the length. */}
-        <TestCatalogStatic region={region} localOnly={!us} lang={lang} popularity={popularity} />
+        {/* The country's own and worldwide tests as short text links (the busiest
+            first), the US included: other countries' landings are reached through
+            their own homepages (the country pills) and /tests. */}
+        <TestCatalogStatic region={region} localOnly lang={lang} popularity={popularity} />
         <div className="mt-4 text-center">
           {!us && <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">{c.usExamPrompt}</p>}
           <Link

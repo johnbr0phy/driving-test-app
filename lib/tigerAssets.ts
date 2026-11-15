@@ -77,6 +77,8 @@ const BORROWED_SETS: Record<string, string> = {
   psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables",
+  // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
+  staareng1: "aplang",
   pkdrive: "driving",
   // EU driving theory tests (Nov 2026) wear the car tiger.
   esdgt: "driving", ptimt: "driving", bedriving: "driving", dkteori: "driving", setrafik: "driving", fitheory: "driving", grdriving: "driving", rodrpciv: "driving", hukresz: "driving", mttheory: "driving", detheorie: "driving",

@@ -3,6 +3,14 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "staareng1",
+      "date": "2027-08-01",
+      "kind": "sunset",
+      "what": "TEA's Student Success Tool replaces STAAR from fall 2027; the draft SST English I summative blueprint (30 to 31 questions, 38 points, a 6-point extended constructed response) starts with the spring 2028 test.",
+      "action": "Check TEA's final SST English I blueprint and assessed curriculum; re-weight the reading and writing counts and update the landing, facts and score note.",
+      "source": "https://tea.texas.gov/data-reports/staar/sst-english-i-summative-blueprint.pdf"
+    },
+    {
       "exam": "ccna",
       "date": "2027-02-03",
       "kind": "outline",

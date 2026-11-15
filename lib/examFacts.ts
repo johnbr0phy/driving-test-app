@@ -2168,6 +2168,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full practice tests in Math, Reading and Language Usage at NWEA's own blueprint, untimed like the real test, with a percent score per subject, and ten drills, one per instructional area, most of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no RIT score.",
   },
+  staareng1: {
+    answer:
+      "STAAR English I is the Texas end-of-course test for the English I course, usually taken in ninth grade. Under TEA's blueprint in force since spring 2023 it has 52 questions worth 64 points: a reading section of 29 to 31 questions on two single passages and one paired passage, and a writing section of 21 to 23 questions on two revising passages and two editing passages plus one extended constructed response, a written response to a reading passage worth 10 points. Most questions are worth 1 point and three are worth 2. It is taken online, and the raw score becomes a scale score: Approaches Grade Level is 3775, Meets 4000 and Masters 4606.",
+    rows: [
+      { label: "Who takes it", value: "Texas students in the English I course, usually in grade 9" },
+      { label: "Questions", value: "52 on the base test (plus unscored field-test items)" },
+      { label: "Points", value: "64: Reading 32 to 34, Writing 30 to 32" },
+      { label: "Reading", value: "29 to 31 questions on two single passages and one paired passage" },
+      { label: "Writing", value: "21 to 23 questions on revising and editing passages, plus one 10-point extended constructed response" },
+      { label: "Question types", value: "Multiple choice and non-multiple-choice items such as multiselect, inline choice and hot text" },
+      { label: "Pass mark", value: "Approaches Grade Level, scale score 3775 (27 of 64 raw points on the summer 2026 form)" },
+      { label: "What's next", value: "From fall 2027 the Student Success Tool replaces STAAR; TEA's draft English I blueprint starts in spring 2028" },
+    ],
+    basedOn: "TEA's STAAR English I Blueprint and Test Design (effective spring 2023), the English I assessed curriculum and the summer 2026 raw score conversion table",
+    source: { name: "TEA: STAAR English I Blueprint", url: "https://tea.texas.gov/data-reports/staar/staar-english-i-blueprint-schematic-pdf.pdf" },
+    tigertest:
+      "Tigertest has two practice tests of the reading and the revising and editing questions at the blueprint's mix, 51 questions each on original passages and student drafts, with multiple choice, dropdown, choose-two and select-a-sentence items, and nine drills, one per skill area. The essay is not included and every question is worth one point. All of it is free with no account required.",
+  },
   psat: {
     answer:
       "The digital PSAT/NMSQT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules), with a calculator allowed on all of Math. It is adaptive by module and scored 320 to 1520, with each section scored 160 to 760. It is given to 10th and 11th graders in the fall (the PSAT 10 is the same test in the spring), and juniors' scores are used for the National Merit Scholarship Program through a Selection Index of 48 to 228.",

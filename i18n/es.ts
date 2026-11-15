@@ -1058,6 +1058,15 @@ export const es: TranslationKeys = {
     rmaExams: "Physical Examinations",
     rmaPharm: "Clinical Pharmacology",
     rmaTherapy: "Therapeutic Modalities & First Aid",
+    // nzdrone
+    dronScope: "Part 101 Scope & Approvals",
+    dronAerodrome: "Aerodromes",
+    dronAirspace: "Airspace",
+    dronShielded: "Shielded Operations",
+    dronConsent: "Consent & Height Limits",
+    dronSight: "Line of Sight & Night",
+    dronSafety: "Right of Way & Safety",
+    dronPlan: "Planning & Reporting",
     // crfsc
     crfscParts: "Parts, Types & Actions",
     crfscSafety: "Basic Firearms Safety",

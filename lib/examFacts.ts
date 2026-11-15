@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  nzdrone: {
+      answer:
+        "New Zealand drones and model aircraft are flown under Civil Aviation Rule Part 101, made by the Civil Aviation Authority of New Zealand (CAA); since 22 December 2025 most of the detail for remotely piloted aircraft sits in the transport instrument CATI 101-1. A drone must weigh 25 kg or less (15 to 25 kg needs an approved person or organisation), stay in visual line of sight, below the cloud base and below 400 ft above ground level, give way to all manned aircraft, and fly over people or property only with their consent. Flying unshielded within 4 km of an aerodrome needs a pilot qualification from an approved person or organisation (or supervision, or a Part 61 or Part 149 licence) plus ATC authorisation or the aerodrome operator's agreement, and controlled airspace needs prior ATC authorisation, applied for through Airshare, unless the flight is shielded. There is no single official exam: approved organisations under rule 101.202 issue pilot qualifications with their own assessments. Operations outside Part 101 need a Part 102 operator certificate.",
+      rows: [
+        { label: "Rules", value: "Part 101 and transport instrument CATI 101-1 (in force 22 December 2025)" },
+        { label: "Weight limit", value: "25 kg; 15 to 25 kg needs an approved person or organisation" },
+        { label: "Height limit", value: "400 ft above ground level, unless CATI 101-1's conditions are met" },
+        { label: "Aerodromes", value: "4 km from the boundary, unless qualified and authorised or shielded" },
+        { label: "Pilot qualification", value: "Issued by approved organisations under rule 101.202; no official exam or pass mark" },
+        { label: "Outside Part 101", value: "Part 102 unmanned aircraft operator certificate" },
+        { label: "Run by", value: "Civil Aviation Authority of New Zealand (CAA)" },
+      ],
+      basedOn: "CAA Part 101 consolidation (22 December 2025), CATI 101-1 and AC101-1 Revision 2, checked November 2026",
+      source: { name: "CAA: Advisory Circular AC101-1, Remotely Piloted Aircraft Systems", url: "https://www.aviation.govt.nz/assets/rules/advisory-circulars/AC101-1a-Remotely-Piloted-Aircraft-Systems.pdf" },
+    },
   crfsc: {
       answer:
         "The Canadian Restricted Firearms Safety Course (CRFSC) is the RCMP Canadian Firearms Program course for anyone who wants to acquire restricted firearms, such as most handguns. To apply for a Possession and Acquisition Licence for restricted firearms you must have passed both the CFSC and the CRFSC; a CFSC passed before February 1, 1999 counts for both. The course ends with a written test and a practical test. The RCMP does not publish the length or pass mark; course providers say the written test is multiple choice and the pass mark is 80% on each test. Since October 21, 2022 most individuals cannot acquire handguns under the national handgun freeze, but the course still covers all restricted firearms.",

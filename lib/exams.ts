@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
+export type ExamId = "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -6620,6 +6620,74 @@ const crfsc: ExamConfig = {
     ],
     sourceLine: "Based on the RCMP Canadian Restricted Firearms Safety Course topics and the federal Firearms Act and regulations. Original questions; 50 per test. Not affiliated with the RCMP.",
     analyticsKey: "crfsc",
+  },
+};
+
+const nzdrone: ExamConfig = {
+  id: "nzdrone",
+  stateCode: "NZDRONE",
+  idBase: 29600,
+  slug: "/nz-drone-part-101",
+  landingPath: "/nz-drone-part-101-practice-test",
+  name: "NZ Drone Rules (Part 101) Practice Test",
+  shortName: "NZ Drone (Part 101)",
+  examLabel: "Part 101 drone rules",
+  fullName: "New Zealand Drone Pilot Knowledge (Civil Aviation Rule Part 101)",
+  questionIdPrefix: "NZDRONE-",
+  icon: "plane",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // CAA NZ Civil Aviation Rule Part 101 (CAA consolidation 22 December 2025, Amendment 1) and
+  // Civil Aviation Transport Instrument CATI 101-1 (initial issue, in force 22 December 2025),
+  // with AC101-1 Revision 2 (22 December 2025), checked November 2026. There is no single
+  // official exam: approved persons or organisations under rule 101.202 issue pilot
+  // qualifications with their own assessments, and no question count or pass mark is published.
+  // Weights are Tigertest's, following Subparts A and E and CATI 101-1 Subpart B: scope, Part 102
+  // and approvals 6, aerodromes (CATI 2.3) 7, airspace (101.7 to 101.12) 8, shielded operations 4,
+  // consent and height (CATI 2.5) 7, line of sight and night (CATI 2.9, 2.11) 7, right of way,
+  // hazards and airworthiness 7, planning and reporting 4. 80% is a readiness target. All items
+  // original; aerial spraying (pending reform) not asked.
+  blueprint: {
+    dronScope: 6,
+    dronAerodrome: 7,
+    dronAirspace: 8,
+    dronShielded: 4,
+    dronConsent: 7,
+    dronSight: 7,
+    dronSafety: 7,
+    dronPlan: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29601, name: "Part 101 Basics & Shielded Flights", categories: ["dronScope", "dronShielded"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 29602, name: "Aerodromes & Airspace", categories: ["dronAerodrome", "dronAirspace"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 29603, name: "Consent, Height, Sight & Night", categories: ["dronConsent", "dronSight"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 29604, name: "Safety, Planning & Reporting", categories: ["dronSafety", "dronPlan"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    dronScope: "Part 101 Scope & Approvals",
+    dronAerodrome: "Aerodromes",
+    dronAirspace: "Airspace",
+    dronShielded: "Shielded Operations",
+    dronConsent: "Consent & Height Limits",
+    dronSight: "Line of Sight & Night",
+    dronSafety: "Right of Way & Safety",
+    dronPlan: "Planning & Reporting",
+  },
+  copy: {
+    guestPrompt: "to save your drone rules progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering Part 101 and CATI 101-1: scope and shielded flights, aerodromes and airspace, consent, height, sight and night, and safety and reporting. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across the rules",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Part 101 Basics & Shielded Flights.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You know New Zealand's drone rules.",
+    ],
+    sourceLine: "Based on Civil Aviation Rule Part 101, CATI 101-1 and AC101-1 (CAA of New Zealand). Original questions; 50 per test. Not affiliated with the Civil Aviation Authority of New Zealand or Airways.",
+    analyticsKey: "nzdrone",
   },
 };
 
@@ -20085,7 +20153,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

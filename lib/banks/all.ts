@@ -264,3 +264,4 @@ import "./hspachl";
 import "./rpt";
 import "./ascppbt";
 import "./crfsc";
+import "./nzdrone";

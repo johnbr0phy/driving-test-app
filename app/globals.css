@@ -4771,6 +4771,19 @@
     --brand-gradient-to: 326 50% 95%;
   }
 
+  [data-theme="nzdrone"] {
+    --brand: 192 95% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 192 50% 95%;
+    --brand-hover: 192 95% 15%;
+    --brand-dark: 192 95% 13%;
+    --brand-darker: 192 90% 8%;
+    --brand-muted: 192 25% 70%;
+    --brand-border: 192 30% 78%;
+    --brand-border-light: 192 30% 88%;
+    --brand-gradient-to: 207 50% 95%;
+  }
+
   [data-theme="crfsc"] {
     --brand: 194 60% 28%;
     --brand-foreground: 0 0% 100%;
@@ -9449,6 +9462,18 @@
     --brand-muted: 311 25% 45%;
     --brand-dark: 311 60% 65%;
     --brand-darker: 311 55% 78%;
+  }
+
+  .dark [data-theme="nzdrone"] {
+    --brand: 192 95% 31.8%;
+    --brand-hover: 192 95% 23.8%;
+    --brand-light: 192 45% 13%;
+    --brand-gradient-to: 207 40% 11%;
+    --brand-border-light: 192 30% 24%;
+    --brand-border: 192 30% 34%;
+    --brand-muted: 192 25% 45%;
+    --brand-dark: 192 95% 65%;
+    --brand-darker: 192 90% 78%;
   }
 
   .dark [data-theme="crfsc"] {

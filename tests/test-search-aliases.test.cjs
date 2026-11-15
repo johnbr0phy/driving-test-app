@@ -8,6 +8,11 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
   // [query, visitor region, test id that must come first]
+  ["part 101", "NZ", "nzdrone"],
+  ["nz drone test", "NZ", "nzdrone"],
+  ["drone licence nz", "NZ", "nzdrone"],
+  ["airshare pilot certificate", "NZ", "nzdrone"],
+  ["new zealand drone rules", "NZ", "nzdrone"],
   ["rpal test", "CA", "crfsc"],
   ["crfsc", "CA", "crfsc"],
   ["restricted firearms safety course", "CA", "crfsc"],

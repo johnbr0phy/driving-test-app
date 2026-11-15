@@ -8,12 +8,17 @@
 // Per exam family and never destructive: each state variant keeps its own
 // progress, and the choice (examStates[familyId]) never touches the DMV state.
 // Until a state is chosen the dashboard shows a prompt card; after that the
-// state is one line in the hero with a Change control.
+// state is one line in the hero with a Change control. Like the DMV (Nov
+// 2026), a visitor whose IP state has a variant gets it set as if they had
+// chosen it; the prompt shows only when there is no such guess.
 
+import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
+import { useAuth } from "@/contexts/AuthContext";
+import { useSuggestedState } from "@/components/dashboard/DmvStatePicker";
 import { ExamConfig, examFamilyId, getExamById, getExamVariant, getExamVariants } from "@/lib/exams";
 
 /** Stored for any state without its own variant; it stays on the national bank. */
@@ -74,9 +79,23 @@ function StateSelect({ familyId, value, onChange, className, placeholder, label 
 /** First-visit card on a family dashboard; renders nothing once a state is chosen. */
 export function ExamStatePrompt({ exam }: { exam: ExamConfig }) {
   const hydrated = useHydration();
+  const { user } = useAuth();
+  const firestoreLoaded = useStore((state) => state.firestoreLoaded);
   const { familyId, chosen, choose } = useExamStateChoice(exam);
   const variants = getExamVariants(familyId);
-  if (!hydrated || variants.length === 0 || exam.variantOf || chosen) return null;
+  // A signed-in account on a new device has its choice in flight from
+  // Firestore, so wait for it before guessing.
+  const needsState = hydrated && variants.length > 0 && !exam.variantOf && !chosen && (!user || firestoreLoaded);
+  const geo = useSuggestedState(needsState);
+  const geoVariant = geo.state && getExamVariant(familyId, geo.state) ? geo.state : null;
+  const applied = useRef(false);
+  useEffect(() => {
+    if (!needsState || !geoVariant || applied.current) return;
+    applied.current = true;
+    choose(geoVariant);
+    window.gtag?.("event", "state_selected", { state: geoVariant, via: "geo", exam: familyId });
+  }, [needsState, geoVariant, choose, familyId]);
+  if (!needsState || !geo.done || geoVariant) return null;
   const names = new Intl.ListFormat("en", { type: "conjunction" }).format(variants.map((v) => v.jurisdiction!.name));
 
   return (

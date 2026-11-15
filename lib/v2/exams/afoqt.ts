@@ -32,7 +32,7 @@ export const AFOQT: ExamV2Config = {
   fullName: "Air Force Officer Qualifying Test (AFOQT)",
   tagline: "Eight AFOQT subtests in Form T order at the real pace: verbal, math, reading, physical science, table reading and aviation.",
   icon: "plane",
-  theme: { brand: "84 30% 38%", brandDark: "84 30% 26%", brandLight: "84 30% 96%" },
+  theme: { brand: "109 20% 30%", brandDark: "109 20% 23%", brandLight: "109 30% 96%" },
   breakSeconds: minutes(15),
   breakNote: "The real AFOQT has a 15-minute break in the middle of the test, after Situational Judgment.",
   sections: [

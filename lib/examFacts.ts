@@ -5199,6 +5199,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AAFCS HNFS exam specifications and the Pearson Texas test 201 page, checked November 2026",
     source: { name: "AAFCS: Testing - HNFS", url: "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs" },
   },
+  ase: {
+    answer:
+      "The ASE A1 to A8 tests are the eight Automobile and Light Truck certification tests from the National Institute for Automotive Service Excellence: A1 Engine Repair, A2 Automatic Transmission/Transaxle, A3 Manual Drive Train and Axles, A4 Suspension and Steering, A5 Brakes, A6 Electrical/Electronic Systems, A7 Heating and Air Conditioning and A8 Engine Performance. Each is a separate multiple-choice test: A1, A2 and A5 have 45 scored questions in 75 minutes, A3 and A4 40 in 60 minutes, A6 50 in 90 minutes, and A7 and A8 50 in 75 minutes, and every certification test adds 10 unscored research questions. ASE does not publish a passing score. Certification also needs two years of documented work experience (up to half from vocational training), lasts five years, and passing all eight earns Master Automobile Technician status. Tests are taken at a test center; the Automobile tests can be shown side by side in Spanish.",
+    rows: [
+      { label: "Tests", value: "Eight separate tests, A1 to A8" },
+      { label: "Questions", value: "40 to 50 scored per test, plus 10 unscored" },
+      { label: "Time", value: "60 to 90 minutes per test" },
+      { label: "Passing score", value: "Not published by ASE" },
+      { label: "Experience", value: "2 years (up to half from training)" },
+      { label: "Valid for", value: "5 years, then a shorter recertification test" },
+    ],
+    basedOn: "The Official ASE Study Guide, Automobile Tests (2026 edition), the ASE A1-A9 test page and ASE Certification: Need to Know (January 2026), checked November 2026",
+    source: { name: "ASE: A Series (A1-A9) tests", url: "https://ase.com/tests/a1-a9/" },
+  },
   llqp: {
     answer:
       "The Life Licence Qualification Program (LLQP) is the harmonized exam that Canada's provincial and territorial insurance regulators require before licensing a life insurance agent; CISRO oversees the curriculum. It is written as four separate modules: Life Insurance, Accident and Sickness Insurance, and Segregated Funds and Annuities, each with 35 multiple-choice questions scored out of 30, and Ethics and Professional Practice, with 25 questions scored out of 20 (Common Law, or Civil Code in Quebec). Each module includes five unscored pilot questions, allows 75 minutes, and must be passed with 60% on its own.",

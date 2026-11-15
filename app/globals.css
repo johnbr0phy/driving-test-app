@@ -4774,6 +4774,20 @@
     --brand-gradient-to: 40 70% 95%;
   }
 
+  /* ASE Automobile and Light Truck tests A1-A8 theme */
+  [data-theme="ase"] {
+    --brand: 70 25% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 70 30% 95%;
+    --brand-hover: 70 25% 33%;
+    --brand-dark: 70 25% 27%;
+    --brand-darker: 70 22% 16%;
+    --brand-muted: 70 18% 66%;
+    --brand-border: 70 18% 78%;
+    --brand-border-light: 70 15% 88%;
+    --brand-gradient-to: 35 50% 95%;
+  }
+
   /* LLQP (Canada life licence) theme */
   [data-theme="llqp"] {
     --brand: 5 45% 28%;
@@ -8995,6 +9009,18 @@
     --brand-muted: 171 30% 45%;
     --brand-dark: 171 85% 65%;
     --brand-darker: 171 70% 78%;
+  }
+
+  .dark [data-theme="ase"] {
+    --brand: 70 25% 38.1%;
+    --brand-hover: 70 25% 33%;
+    --brand-light: 70 30% 13%;
+    --brand-gradient-to: 35 40% 11%;
+    --brand-border-light: 70 15% 24%;
+    --brand-border: 70 18% 34%;
+    --brand-muted: 70 18% 45%;
+    --brand-dark: 70 25% 65%;
+    --brand-darker: 70 22% 78%;
   }
 
   .dark [data-theme="llqp"] {

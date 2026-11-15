@@ -2168,6 +2168,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full practice tests in Math, Reading and Language Usage at NWEA's own blueprint, untimed like the real test, with a percent score per subject, and ten drills, one per instructional area, most of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no RIT score.",
   },
+  isee: {
+    answer:
+      "The ISEE (Independent School Entrance Exam) is the admission test many US and international independent schools use, run by E3n, the nonprofit formed by the merger of ERB and EMA. The Middle Level is for students applying to grades 7 and 8. It has four scored multiple-choice sections, Verbal Reasoning (40 questions, 20 minutes: synonyms and sentence completions), Quantitative Reasoning (37 questions, 35 minutes: word problems and quantitative comparisons), Reading Comprehension (36 questions, 35 minutes: six passages) and Mathematics Achievement (47 questions, 40 minutes), plus a 30-minute essay that is not scored but is sent to the schools. The whole test takes 2 hours 40 minutes with two 10-minute breaks, online or on paper. No calculator is allowed, wrong answers are not deducted, and scores are reported as scaled scores, percentile ranks and stanines compared only with students applying to the same grade.",
+    rows: [
+      { label: "Who takes it", value: "Students applying to grades 7 and 8 (Lower Level for grades 5 and 6, Upper Level for grades 9 to 12)" },
+      { label: "Sections", value: "Verbal Reasoning, Quantitative Reasoning, Reading Comprehension, Mathematics Achievement, plus an unscored essay" },
+      { label: "Questions", value: "160 multiple-choice questions (40, 37, 36 and 47) and 1 essay prompt" },
+      { label: "Time", value: "2 hours 40 minutes plus two 10-minute breaks" },
+      { label: "Format", value: "Online or on paper, same questions and timing; no calculator" },
+      { label: "Score", value: "Scaled scores, percentile ranks and stanines against same-grade applicants; no penalty for wrong answers" },
+      { label: "How often", value: "Once per testing season: fall, winter and spring/summer" },
+      { label: "Pass mark", value: "None: each school decides how to use the scores" },
+    ],
+    basedOn: "E3n's ISEE Quick Facts Guide 2026-2027 and ERB's What to Expect on the ISEE, Middle Level",
+    source: { name: "E3n: ISEE Quick Facts Guide 2026-2027", url: "https://cdn.erblearn.org/www/20260801_E3n_ISEE_QuickFacts_DIGITAL.pdf" },
+    tigertest:
+      "Tigertest has two timed ISEE Middle Level practice tests covering all four scored sections at about half length and the real pace, with a percent score per section, and eight drills on synonyms, sentence completion, word problems, quantitative comparisons, reading and math, two of which teach the basics first. All of it is free with no account required. It does not include the essay and does not give a stanine.",
+  },
   psat: {
     answer:
       "The digital PSAT/NMSQT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules), with a calculator allowed on all of Math. It is adaptive by module and scored 320 to 1520, with each section scored 160 to 760. It is given to 10th and 11th graders in the fall (the PSAT 10 is the same test in the spring), and juniors' scores are used for the National Merit Scholarship Program through a Selection Index of 48 to 228.",

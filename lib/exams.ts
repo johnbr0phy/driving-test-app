@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
+export type ExamId = "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -6139,6 +6139,282 @@ const aufirearmsqld: ExamConfig = {
     ],
     sourceLine: "Based on the Weapons Act 1990, the Weapons Regulation 2016, the Weapons Categories Regulation 1997 and the National Firearms Safety Code. Original questions. Not affiliated with the Queensland Police Service.",
     analyticsKey: "aufirearmsqld",
+  },
+};
+
+const bcba: ExamConfig = {
+  id: "bcba",
+  stateCode: "BCBA",
+  idBase: 28700,
+  slug: "/bcba",
+  landingPath: "/bcba-practice-test",
+  name: "BCBA Practice Test",
+  shortName: "BCBA",
+  examLabel: "BCBA exam",
+  fullName: "Board Certified Behavior Analyst (BCBA) Certification Exam",
+  questionIdPrefix: "BCBA-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // BACB BCBA Test Content Outline (6th ed.), document updated 09/2024, in use from 2025 and still
+  // the current edition in the BCBA Handbook updated 11/2026 (checked November 2026): 185 questions
+  // (175 scored, 10 unscored) in 4 hours, scored counts A Behaviorism and Philosophical
+  // Foundations 8, B Concepts and Principles 24, C Measurement, Data Display, and Interpretation
+  // 21, D Experimental Design 13, E Ethical and Professional Issues 22, F Behavior Assessment 23,
+  // G Behavior-Change Procedures 25, H Selecting and Implementing Interventions 20, I Personnel
+  // Supervision and Management 19; scaled here to 50 per test (2/7/6/4/6/7/7/6/5). The BACB
+  // reports pass/fail against a modified-Angoff passing score and publishes no percentage; 70% is
+  // a readiness marker. Ethics items follow the Ethics Code for Behavior Analysts. All items original.
+  blueprint: {
+    bcbaPhil: 2,
+    bcbaConcepts: 7,
+    bcbaMeasure: 6,
+    bcbaDesign: 4,
+    bcbaEthics: 6,
+    bcbaAssess: 7,
+    bcbaChange: 7,
+    bcbaInterv: 6,
+    bcbaSuper: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28701, name: "Philosophy, Concepts & Principles", categories: ["bcbaPhil", "bcbaConcepts"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 28702, name: "Measurement & Experimental Design", categories: ["bcbaMeasure", "bcbaDesign"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 28703, name: "Ethics & Behavior Assessment", categories: ["bcbaEthics", "bcbaAssess"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 28704, name: "Behavior Change & Interventions", categories: ["bcbaChange", "bcbaInterv"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 28705, name: "Supervision & Management", categories: ["bcbaSuper"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bcbaPhil: "Behaviorism & Philosophical Foundations",
+    bcbaConcepts: "Concepts & Principles",
+    bcbaMeasure: "Measurement, Data Display & Interpretation",
+    bcbaDesign: "Experimental Design",
+    bcbaEthics: "Ethical & Professional Issues",
+    bcbaAssess: "Behavior Assessment",
+    bcbaChange: "Behavior-Change Procedures",
+    bcbaInterv: "Selecting & Implementing Interventions",
+    bcbaSuper: "Personnel Supervision & Management",
+  },
+  copy: {
+    guestPrompt: "to save your BCBA progress and track every question you miss",
+    trainingHeading: "Train by BCBA domain",
+    trainingSub: "Five sets covering all nine domains of the BCBA Test Content Outline (6th ed.). Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real 175 scored",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Philosophy, Concepts & Principles.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the BCBA exam.",
+    ],
+    sourceLine: "Based on the BACB BCBA Test Content Outline (6th ed.) and the Ethics Code for Behavior Analysts. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Behavior Analyst Certification Board.",
+    analyticsKey: "bcba",
+  },
+};
+
+const bcaba: ExamConfig = {
+  id: "bcaba",
+  stateCode: "BCABA",
+  idBase: 28800,
+  slug: "/bcaba",
+  landingPath: "/bcaba-practice-test",
+  name: "BCaBA Practice Test",
+  shortName: "BCaBA",
+  examLabel: "BCaBA exam",
+  fullName: "Board Certified Assistant Behavior Analyst (BCaBA) Certification Exam",
+  questionIdPrefix: "BCABA-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // BACB BCaBA Test Content Outline (6th ed.), document updated 09/2024, in use from 2025 and still
+  // the current edition in the BCaBA Handbook updated 10/2026 (checked November 2026): 175
+  // questions (150 scored, 25 unscored) in 4 hours, scored counts A Behaviorism and Philosophical
+  // Foundations 10, B Concepts and Principles 18, C Measurement, Data Display, and Interpretation
+  // 20, D Experimental Design 10, E Ethical and Professional Issues 18, F Behavior Assessment 17,
+  // G Behavior-Change Procedures 22, H Intervention Development and Monitoring 20, I Supervisory
+  // Relationships 15; scaled here to 50 per test (one third: 3/6/7/3/6/6/7/7/5). The BACB reports
+  // pass/fail against a modified-Angoff passing score and publishes no percentage; 70% is a
+  // readiness marker. Ethics items follow the Ethics Code for Behavior Analysts. All items original.
+  blueprint: {
+    bcabaPhil: 3,
+    bcabaConcepts: 6,
+    bcabaMeasure: 7,
+    bcabaDesign: 3,
+    bcabaEthics: 6,
+    bcabaAssess: 6,
+    bcabaChange: 7,
+    bcabaInterv: 7,
+    bcabaSuper: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28801, name: "Philosophy, Concepts & Principles", categories: ["bcabaPhil", "bcabaConcepts"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 28802, name: "Measurement & Experimental Design", categories: ["bcabaMeasure", "bcabaDesign"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 28803, name: "Ethics & Behavior Assessment", categories: ["bcabaEthics", "bcabaAssess"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 28804, name: "Behavior Change & Monitoring", categories: ["bcabaChange", "bcabaInterv"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 5, id: 28805, name: "Supervisory Relationships", categories: ["bcabaSuper"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bcabaPhil: "Behaviorism & Philosophical Foundations",
+    bcabaConcepts: "Concepts & Principles",
+    bcabaMeasure: "Measurement, Data Display & Interpretation",
+    bcabaDesign: "Experimental Design",
+    bcabaEthics: "Ethical & Professional Issues",
+    bcabaAssess: "Behavior Assessment",
+    bcabaChange: "Behavior-Change Procedures",
+    bcabaInterv: "Intervention Development & Monitoring",
+    bcabaSuper: "Supervisory Relationships",
+  },
+  copy: {
+    guestPrompt: "to save your BCaBA progress and track every question you miss",
+    trainingHeading: "Train by BCaBA domain",
+    trainingSub: "Five sets covering all nine domains of the BCaBA Test Content Outline (6th ed.). Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real 150 scored",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Philosophy, Concepts & Principles.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the BCaBA exam.",
+    ],
+    sourceLine: "Based on the BACB BCaBA Test Content Outline (6th ed.) and the Ethics Code for Behavior Analysts. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Behavior Analyst Certification Board.",
+    analyticsKey: "bcaba",
+  },
+};
+
+const hspacer: ExamConfig = {
+  id: "hspacer",
+  stateCode: "HSPACER",
+  idBase: 29000,
+  slug: "/cer",
+  landingPath: "/cer-endoscope-reprocessor-practice-test",
+  name: "CER Endoscope Reprocessor Practice Test",
+  shortName: "CER (HSPA)",
+  examLabel: "CER exam",
+  fullName: "Certified Endoscope Reprocessor (CER) Exam",
+  questionIdPrefix: "CER-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // HSPA Certified Endoscope Reprocessor (CER) Exam Content Outline, Revised May 2022 (2021-2022
+  // job task analysis; still the current outline November 2026): 1 Microbiology and Infection
+  // Control 12%, 2 Endoscope Purpose, Design and Structure 10%, 3 Work Area Design 12%,
+  // 4 Endoscope Processing Steps 32%, 5 Handling, Transport and Storage 16%, 6 Tracking, Repair
+  // and System Maintenance 10%, 7 Human Factors 8%. Scaled to 50: 6/5/6/16/8/5/4, with section 4
+  // split by Tigertest into cleaning (items A-I) 7 and disinfection, sterilization and
+  // documentation (items J-U) 9. HSPA's real exam is 150 questions (125 scored) in 3 hours,
+  // pass/fail by number correct against an Angoff-set cut that is not published as a percent;
+  // 70% here is a readiness marker. All items original.
+  blueprint: {
+    cerMicro: 6,
+    cerDesign: 5,
+    cerWorkArea: 6,
+    cerCleaning: 7,
+    cerDisinfect: 9,
+    cerStorage: 8,
+    cerTracking: 5,
+    cerHuman: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29001, name: "Microbiology & Endoscope Design", categories: ["cerMicro", "cerDesign"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 29002, name: "Work Area & Manual Cleaning", categories: ["cerWorkArea", "cerCleaning"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 29003, name: "Disinfection & Sterilization", categories: ["cerDisinfect"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 29004, name: "Handling, Transport & Storage", categories: ["cerStorage"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 29005, name: "Tracking, Repair & Human Factors", categories: ["cerTracking", "cerHuman"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cerMicro: "Microbiology & Infection Control",
+    cerDesign: "Endoscope Purpose, Design & Structure",
+    cerWorkArea: "Work Area Design",
+    cerCleaning: "Pre-cleaning, Leak Testing & Manual Cleaning",
+    cerDisinfect: "HLD, Sterilization & Documentation",
+    cerStorage: "Handling, Transport & Storage",
+    cerTracking: "Tracking, Repair & Maintenance",
+    cerHuman: "Human Factors",
+  },
+  copy: {
+    guestPrompt: "to save your CER progress and track every question you miss",
+    trainingHeading: "Train by HSPA outline section",
+    trainingSub: "Five sets covering the seven sections of the HSPA CER content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Microbiology & Endoscope Design.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CER.",
+    ],
+    sourceLine: "Based on the HSPA Certified Endoscope Reprocessor (CER) Exam Content Outline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Healthcare Sterile Processing Association.",
+    analyticsKey: "hspacer",
+  },
+};
+
+const hspachl: ExamConfig = {
+  id: "hspachl",
+  stateCode: "HSPACHL",
+  idBase: 29100,
+  slug: "/chl",
+  landingPath: "/chl-healthcare-leader-practice-test",
+  name: "CHL Healthcare Leader Practice Test",
+  shortName: "CHL (HSPA)",
+  examLabel: "CHL exam",
+  fullName: "Certified Healthcare Leader (CHL) Exam",
+  questionIdPrefix: "CHL-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // HSPA Certified Healthcare Leader (CHL) Exam Content Outline, Revised August 2025; Updated
+  // January 2026 (2024-2025 job task analysis; the outline for the October 2026 pilot and the
+  // new exam): 1 Planning and Decision Making 25%, 2 Organizing 23%, 3 Leading 29%,
+  // 4 Governing and Compliance 23% (the handbook still calls it Controlling). Scaled to 50:
+  // 13/11/15/11; Tigertest's split inside sections: planning 6 processes and equipment (I-II)
+  // + 7 safety, workforce, finance and risk (III-VI); leading 8 staff (I-II) + 7 communication
+  // and leadership (III-IV); governing 4 inventory and finance + 3 infection prevention + 4
+  // quality. HSPA's real exam is 150 questions (125 scored) in 3 hours, pass/fail by number
+  // correct against an Angoff-set cut that is not published as a percent; 70% here is a
+  // readiness marker. All items original.
+  blueprint: {
+    chlProcesses: 6,
+    chlPlanning: 7,
+    chlOrganizing: 11,
+    chlStaff: 8,
+    chlComm: 7,
+    chlInventory: 4,
+    chlInfection: 3,
+    chlQuality: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29101, name: "Planning & Decision Making", categories: ["chlProcesses", "chlPlanning"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 29102, name: "Organizing", categories: ["chlOrganizing"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 29103, name: "Leading", categories: ["chlStaff", "chlComm"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 29104, name: "Governing & Compliance", categories: ["chlInventory", "chlInfection", "chlQuality"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    chlProcesses: "Quality Control, Workplace & Equipment",
+    chlPlanning: "Safety, Workforce & Financial Planning",
+    chlOrganizing: "Organizing Staff & Processes",
+    chlStaff: "Leading, Mentoring & Training Staff",
+    chlComm: "Communication & Leadership Skills",
+    chlInventory: "Inventory & Financial Management",
+    chlInfection: "Infection Prevention",
+    chlQuality: "Quality Management & Risk",
+  },
+  copy: {
+    guestPrompt: "to save your CHL progress and track every question you miss",
+    trainingHeading: "Train by HSPA outline section",
+    trainingSub: "Four sets, one for each section of the HSPA CHL content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Planning & Decision Making.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CHL.",
+    ],
+    sourceLine: "Based on the HSPA Certified Healthcare Leader (CHL) Exam Content Outline (2026). Original questions; 50 per test, weighted like the real exam. Not affiliated with the Healthcare Sterile Processing Association.",
+    analyticsKey: "hspachl",
   },
 };
 
@@ -19604,7 +19880,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

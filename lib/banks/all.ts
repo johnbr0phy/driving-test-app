@@ -257,3 +257,7 @@ import "./itceli";
 import "./itpatente";
 import "./frcode";
 import "./aufirearmsqld";
+import "./bcba";
+import "./bcaba";
+import "./hspacer";
+import "./hspachl";

@@ -1,4 +1,8 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  hspachl: { title: "Free CHL Healthcare Leader Practice Test", description: "200 original questions on the 2026 HSPA CHL outline for sterile processing leaders. Free to start." },
+  hspacer: { title: "Free CER Endoscope Reprocessor Practice Test", description: "200 original questions on the HSPA CER outline, from leak testing to high-level disinfection and storage. Free to start." },
+  bcaba: { title: "Free BCaBA Practice Test", description: "200 original questions on the BCaBA Test Content Outline (6th ed.), with explanations." },
+  bcba: { title: "Free BCBA Practice Test", description: "200 original questions on the BCBA Test Content Outline (6th ed.), with explanations." },
   aufirearmsqld: { title: "QLD Firearms Safety Practice Test", description: "Review Queensland weapons law, storage, transport and the National Firearms Safety Code before your course." },
   cdl: { title: "CDL General Knowledge", description: "Review vehicle inspections, cargo handling, road safety and commercial driving rules." },
   cdlx: { title: "CDL Endorsements", description: "Study hazardous materials, air brakes, combination vehicles, tankers and passenger transport." },

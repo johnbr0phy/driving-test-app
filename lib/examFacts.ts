@@ -44,6 +44,70 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  hspachl: {
+      answer:
+        "The Certified Healthcare Leader (CHL) exam is the Healthcare Sterile Processing Association's (HSPA) certification exam for sterile processing managers and supervisors. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. The content outline revised August 2025 and updated January 2026 has four sections: Planning and Decision Making 25%, Organizing 23%, Leading 29%, and Governing and Compliance 23%. A current CRCST is required, and from October 2026 HSPA also asks for 12 months of sterile processing or leadership experience or an associate degree.",
+      rows: [
+        { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+        { label: "Time", value: "3 hours" },
+        { label: "Pass mark", value: "Set number of scored questions correct (Angoff method); no percentage published" },
+        { label: "Content", value: "Leading 29%, Planning 25%, Organizing 23%, Governing and Compliance 23%" },
+        { label: "Eligibility", value: "Current CRCST, plus (from Oct 2026) 12 months of SP or leadership experience or an associate degree" },
+        { label: "Where", value: "Computer based at Prometric test centers" },
+        { label: "Renewal", value: "Every year, with continuing education; CRCST must stay current" },
+        { label: "Run by", value: "Healthcare Sterile Processing Association (HSPA)" },
+      ],
+      basedOn: "HSPA's CHL Exam Content Outline (revised August 2025, updated January 2026), CHL eligibility update page and Certification Handbook (revised January 2026), checked November 2026",
+      source: { name: "HSPA: Certified Healthcare Leader (CHL)", url: "https://myhspa.org/certification/certification-overview/certified-healthcare-leader-chl/" },
+    },
+  hspacer: {
+      answer:
+        "The Certified Endoscope Reprocessor (CER) exam is the Healthcare Sterile Processing Association's (HSPA) certification exam for people who pre-clean, leak test, clean, inspect, disinfect or sterilize, transport and store endoscopes. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. CER is a standalone certification: the CRCST is not required, but candidates need at least three months of hands-on endoscope reprocessing experience within the past three years, and certification is renewed every year with continuing education.",
+      rows: [
+        { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+        { label: "Time", value: "3 hours" },
+        { label: "Pass mark", value: "Set number of scored questions correct (Angoff method); no percentage published" },
+        { label: "Largest section", value: "Endoscope processing steps, 32%" },
+        { label: "Eligibility", value: "Three months of hands-on endoscope reprocessing within the past three years" },
+        { label: "Where", value: "Computer based at Prometric test centers" },
+        { label: "Renewal", value: "Every year, with continuing education" },
+        { label: "Run by", value: "Healthcare Sterile Processing Association (HSPA)" },
+      ],
+      basedOn: "HSPA's CER Exam Content Outline (revised May 2022) and Certification Handbook (revised January 2026), checked November 2026",
+      source: { name: "HSPA: Certified Endoscope Reprocessor (CER)", url: "https://myhspa.org/certification/certification-overview/certified-endoscope-reprocessor-cer/" },
+    },
+  bcaba: {
+      answer:
+        "The BCaBA exam is the Behavior Analyst Certification Board's certification exam for Board Certified Assistant Behavior Analysts, the undergraduate-level credential in behavior analysis; BCaBAs practice under the supervision of a BCBA and may supervise RBTs. It has 175 multiple-choice questions in 4 hours, 150 scored and 25 unscored, each with 4 options and 1 correct answer, taken in English on a computer at Pearson VUE testing centers. It follows the BCaBA Test Content Outline (6th ed.): 90 tasks in 9 domains, led by behavior-change procedures (15%). The result is pass or fail against a passing score set by the modified Angoff method, not published as a percentage. Candidates may test up to 8 times in the 2-year authorization period, 30 days apart.",
+      rows: [
+        { label: "Questions", value: "175 multiple choice (150 scored, 25 unscored), 4 options each" },
+        { label: "Time", value: "4 hours" },
+        { label: "Pass mark", value: "Pass/fail; passing score set by modified Angoff, no published percentage" },
+        { label: "Content", value: "9 domains, 90 tasks (6th ed. outline)" },
+        { label: "Biggest domain", value: "Behavior-Change Procedures, 22 of 150" },
+        { label: "Retakes", value: "Up to 8 attempts in 2 years, 30 days apart" },
+        { label: "Where", value: "Pearson VUE testing centers, English only" },
+        { label: "Run by", value: "Behavior Analyst Certification Board (BACB)" },
+      ],
+      basedOn: "The BACB BCaBA Test Content Outline (6th ed.) and the BCaBA Handbook (updated October 2026), checked November 2026",
+      source: { name: "BACB: BCaBA certification", url: "https://www.bacb.com/bcaba/" },
+    },
+  bcba: {
+      answer:
+        "The BCBA exam is the Behavior Analyst Certification Board's certification exam for Board Certified Behavior Analysts, the graduate-level credential in behavior analysis. It has 185 multiple-choice questions in 4 hours, 175 scored and 10 unscored, each with 4 options and 1 correct answer, taken in English on a computer at Pearson VUE testing centers. It follows the BCBA Test Content Outline (6th ed.): 104 tasks in 9 domains, from concepts and principles and behavior-change procedures (14% each) to behaviorism and philosophical foundations (5%). The result is pass or fail against a passing score set by the modified Angoff method, not published as a percentage. Candidates may test up to 8 times in the 2-year authorization period, 30 days apart.",
+      rows: [
+        { label: "Questions", value: "185 multiple choice (175 scored, 10 unscored), 4 options each" },
+        { label: "Time", value: "4 hours" },
+        { label: "Pass mark", value: "Pass/fail; passing score set by modified Angoff, no published percentage" },
+        { label: "Content", value: "9 domains, 104 tasks (6th ed. outline)" },
+        { label: "Biggest domains", value: "Behavior-Change Procedures 25 and Concepts and Principles 24 of 175" },
+        { label: "Retakes", value: "Up to 8 attempts in 2 years, 30 days apart" },
+        { label: "Where", value: "Pearson VUE testing centers, English only" },
+        { label: "Run by", value: "Behavior Analyst Certification Board (BACB)" },
+      ],
+      basedOn: "The BACB BCBA Test Content Outline (6th ed.) and the BCBA Handbook (updated November 2026), checked November 2026",
+      source: { name: "BACB: BCBA certification", url: "https://www.bacb.com/bcba/" },
+    },
   aufirearmsqld: {
       answer:
         "In Queensland, a person applying for a weapons licence must show adequate knowledge of safety practices, usually by completing an approved safety training course within 1 year before applying (Weapons Act 1990, s 10AA). The approved course is 11029NAT Course in Firearms and Weapons Safety, owned by the Queensland Police Service and run by approved training providers, with a core unit on weapons legislation and community safety and a unit for each weapon category. Licences are issued by the Queensland Police Service Weapons Licensing. An adult licence needs a genuine reason, such as sports or target shooting with club membership or recreational shooting with written landowner permission, access to secure storage, and a 28-day waiting period. Category A and B licences run for up to 10 years.",

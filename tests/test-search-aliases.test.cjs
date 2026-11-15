@@ -8,6 +8,22 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
   // [query, visitor region, test id that must come first]
+  ["chl exam", "US", "hspachl"],
+  ["certified healthcare leader", "US", "hspachl"],
+  ["hspa chl", "US", "hspachl"],
+  ["sterile processing leadership", "US", "hspachl"],
+  ["cer exam", "US", "hspacer"],
+  ["certified endoscope reprocessor", "US", "hspacer"],
+  ["hspa cer", "US", "hspacer"],
+  ["endoscope reprocessing", "US", "hspacer"],
+  ["bcaba", "US", "bcaba"],
+  ["board certified assistant behavior analyst", "US", "bcaba"],
+  ["bcaba practice exam", "US", "bcaba"],
+  ["assistant behavior analyst exam", "US", "bcaba"],
+  ["bcba", "US", "bcba"],
+  ["board certified behavior analyst", "US", "bcba"],
+  ["bcba practice exam", "US", "bcba"],
+  ["behavior analyst exam", "US", "bcba"],
   ["qld firearms licence", "AU", "aufirearmsqld"],
   ["queensland gun licence test", "AU", "aufirearmsqld"],
   ["firearms safety course qld", "AU", "aufirearmsqld"],

@@ -1,0 +1,16 @@
+{
+  "id": "hspacer", "stateCode": "HSPACER", "idBase": 29000, "prefix": "CER-",
+  "slug": "/cer", "landingPath": "/cer-endoscope-reprocessor-practice-test", "dataFile": "data/hspa-cer-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "cerMicro", "perTest": 6, "pool": 24, "segment": "MIC"},
+    {"key": "cerDesign", "perTest": 5, "pool": 20, "segment": "DES"},
+    {"key": "cerWorkArea", "perTest": 6, "pool": 24, "segment": "WRK"},
+    {"key": "cerCleaning", "perTest": 7, "pool": 28, "segment": "CLN"},
+    {"key": "cerDisinfect", "perTest": 9, "pool": 36, "segment": "HLD"},
+    {"key": "cerStorage", "perTest": 8, "pool": 32, "segment": "STO"},
+    {"key": "cerTracking", "perTest": 5, "pool": 20, "segment": "TRK"},
+    {"key": "cerHuman", "perTest": 4, "pool": 16, "segment": "HUM"}
+  ],
+  "notes": "HSPA CER Exam Content Outline (Revised May 2022): 12/10/12/32/16/10/8. Scaled to 50: 6/5/6/16/8/5/4; Section 4 split into cleaning 7 (items A-I) and disinfection/sterilization/documentation 9 (items J-U), Tigertest's split."
+}

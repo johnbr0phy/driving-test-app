@@ -17,6 +17,10 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 
 // Families by id; state versions count as their family (variantOf).
 const TEACHER_LED = new Set([
+  "hspachl",
+  "hspacer",
+  "bcaba",
+  "bcba",
   // US: FCS teacher preparation and FCS programs (AAFCS HNFS)
   "aafcs",
   // US: massage therapy schools (FSMTB MBLEx)

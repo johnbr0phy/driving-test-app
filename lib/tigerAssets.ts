@@ -1,5 +1,7 @@
 /** Add an exam only after all eight expressions have passed visual review. */
 export const TIGER_EXAM_IDS = [
+  // Four reviewed exam mascots, eight expressions each.
+  "afoqt", "shsat", "wonderlic", "mblex",
   "driving", // Car-test mascot; original site branding remains at the public root.
   "cdl", "cdlx", "moto", "civics", "part107", "ham", "epa608",
   "cna", "ptcb", "phleb", "cet", "htl", "cst", "crcst",
@@ -66,7 +68,6 @@ const BORROWED_SETS: Record<string, string> = {
   tabe: "ged",
   // Texas Biology EOC wears the AP Biology tiger.
   staarbio: "apbio",
-  wonderlic: "asvab",
   toeflread: "ieltsread",
   ukwater: "caplumb",
   ukg3: "caplumb",
@@ -83,7 +84,7 @@ const BORROWED_SETS: Record<string, string> = {
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
-  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",shsat: "sat",hspt: "sat", cogat: "timestables",ssat: "sat",isee: "sat",
+  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "shsat", cogat: "timestables",ssat: "shsat",isee: "shsat",
   // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
   staareng1: "aplang",
   pkdrive: "driving",
@@ -129,8 +130,6 @@ const BORROWED_SETS: Record<string, string> = {
   // the defence exams the military-entrance (ASVAB) tiger, the Philippine LET the teacher-licensing (Praxis) tiger.
   upscse: "ssccgl", ssccpo: "ssccgl", rrbalp: "rrbntpc", rpfconst: "police",
   nda: "asvab", agniveer: "asvab", agniveervayu: "asvab", phlet: "praxis",
-  // The AFOQT borrows the military-entrance (ASVAB) tiger.
-  afoqt: "asvab",
   // Next-100 batch 4: the college entrance exams the college-entrance (SAT) tiger, the teacher eligibility tests
   // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
   jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
@@ -153,8 +152,6 @@ const BORROWED_SETS: Record<string, string> = {
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",
-  // MBLEx (massage therapy licensing) borrows the NASM personal trainer tiger.
-  mblex: "nasm",
   // ASE A1-A8 (US automobile technicians) borrows the Red Seal automotive mechanic tiger (no flag).
   ase: "caauto",
   // CEN (BCEN Certified Emergency Nurse) borrows the NCLEX tiger.
@@ -194,3 +191,4 @@ export function getTigerAsset(examId = "dmv", expression?: TigerExpression): str
   }
   return getSiteTigerAsset(expression);
 }
+

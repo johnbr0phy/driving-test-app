@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  nzham: {
+      answer:
+        "The New Zealand amateur radio exam leads to the General Amateur Operator's Certificate of Competency (GAOC) and a ZL callsign, which together let you transmit under the General User Radio Licence for Amateur Radio Operators. Radio Spectrum Management (RSM, part of MBIE) sets the rules, and the syllabus is the international HAREC syllabus. NZART runs the exam through RSM-approved Approved Radio Examiners (ARXs): each paper has 60 multiple-choice questions, one drawn from every ten in a public 600-question bank across 30 topics, with 2 hours allowed, and 40 or more correct answers pass. A calculator may be used. A pass is recorded on an exam result notice, then the ARX issues the certificate and callsign. Only New Zealand citizens and permanent residents can normally be granted a GAOC.",
+      rows: [
+        { label: "Questions", value: "60 multiple choice, one from every ten in 30 syllabus topics" },
+        { label: "Pass mark", value: "40 or more correct answers" },
+        { label: "Time", value: "2 hours; a calculator is allowed" },
+        { label: "Syllabus", value: "HAREC (CEPT T/R 61-02), set out by NZART in 30 topics" },
+        { label: "Run by", value: "NZART through RSM-approved Approved Radio Examiners (ARXs)" },
+        { label: "You get", value: "A General Amateur Operator's Certificate and a ZL callsign" },
+        { label: "First 3 months", value: "No 5 to 25 MHz until 3 months and 50 logged contacts" },
+      ],
+      basedOn: "NZART's 2025 Examination Procedure and Study Guide (19/10/2025), RSM PIB 46 Issue 19.1 (July 2025) and the General User Radio Licence for Amateur Radio Operators Notice 2025, checked November 2026",
+      source: { name: "RSM: Get a certificate and/or callsign", url: "https://www.rsm.govt.nz/licensing/how-do-i/get-a-certificate-callsign" },
+    },
   cadc: {
       answer:
         "The IC&RC Alcohol and Drug Counselor (ADC) exam is the certification exam of the International Certification & Reciprocity Consortium, used by many US state boards for their alcohol and drug counselor credential (called CADC, LADC, CAC or another name depending on the state). IC&RC's candidate guide (effective November 2022) lists 150 multiple-choice questions, 125 scored and 25 unscored pretest, in 3 hours, each with three or four choices and one best answer. It covers Scientific Principles of Substance Use and Co-Occurring Disorders (25%), Evidence-Based Screening and Assessment (20%), Evidence-Based Treatment, Counseling, and Referral (30%) and Professional, Ethical, and Legal Responsibilities (25%). Prometric delivers it on computer at a test center or by remote proctoring where the board allows it. Scores are scaled from 200 to 800 and 500 passes; a candidate who fails waits at least 90 days to retest.",

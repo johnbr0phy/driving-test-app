@@ -1,0 +1,13 @@
+{
+  "blurb": "Practice for New Zealand's amateur radio exam for the General Amateur Operator's Certificate: regulations and band limits under the General User Radio Licence, callsigns, operating and Q signals, Ohm's law, receivers, transmitters, antennas and propagation, in four 50-question tests.",
+  "org": "NZART for Radio Spectrum Management · General Amateur Operator's Certificate (HAREC syllabus)",
+  "group": "New Zealand licences",
+  "region": "NZ",
+  "aliases": ["nz ham radio", "ham radio licence nz", "amateur radio licence nz", "amateur radio exam nz", "nzart exam", "nzart", "gaoc", "general amateur operator certificate", "amateur radio certificate nz", "zl callsign", "radio spectrum management amateur", "rsm amateur radio", "harec nz", "ham radio exam new zealand", "amateur radio new zealand"],
+  "teacherLed": true,
+  "teaches": "an amateur radio club licence class",
+  "borrowTiger": "ham",
+  "shareTitle": "Free NZ Amateur Radio Practice Test",
+  "shareDescription": "200 original questions on the New Zealand amateur radio syllabus, the GURL and PIB 46. Four 50-question practice tests. Free to start.",
+  "searchTests": [["nz ham radio", "NZ", "nzham"], ["nz amateur radio exam", "NZ", "nzham"], ["nzart", "NZ", "nzham"], ["gaoc", "NZ", "nzham"]]
+}

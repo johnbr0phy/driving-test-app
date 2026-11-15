@@ -1060,6 +1060,17 @@ export const ko: TranslationKeys = {
     rmaExams: "Physical Examinations",
     rmaPharm: "Clinical Pharmacology",
     rmaTherapy: "Therapeutic Modalities & First Aid",
+    // nzham
+    nzhamRegs: "Regulations & Frequencies",
+    nzhamOperating: "Operating Practice & Q Signals",
+    nzhamFundamentals: "Ohm's Law, Resistance & Power",
+    nzhamComponents: "AC, Resonance & Semiconductors",
+    nzhamSafetyPower: "Safety, Meters, Decibels & Power Supplies",
+    nzhamReceivers: "Station & Receivers",
+    nzhamTransmitters: "Transmitters & Harmonics",
+    nzhamAntennas: "Feed Lines & Antennas",
+    nzhamPropagation: "Propagation",
+    nzhamInterference: "Interference & Digital Systems",
     // cadc
     cadcBrain: "Addiction & the Brain",
     cadcPharm: "Substances & Pharmacology",

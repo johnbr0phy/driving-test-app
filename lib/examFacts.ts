@@ -2168,6 +2168,42 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full practice tests in Math, Reading and Language Usage at NWEA's own blueprint, untimed like the real test, with a percent score per subject, and ten drills, one per instructional area, most of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no RIT score.",
   },
+  staaralg1: {
+    answer:
+      "The STAAR Algebra I end-of-course assessment is the Texas Education Agency's state test for students who finish Algebra I, whether in high school or in middle school. It has 50 questions worth 59 points: 41 one-point questions and 9 two-point questions that can earn partial credit, and since the 2022-23 redesign at most 75% are multiple choice, the rest being typed answers, graphing, number lines, drop-down menus, hot spots, drag and drop, match tables and multiselect. It covers five reporting categories: Number and Algebraic Methods, Describing and Graphing Linear Functions, Equations and Inequalities, Writing and Solving Linear Functions, Equations and Inequalities, Quadratic Functions and Equations, and Exponential Functions and Equations. TEA expects three to four hours; the test must be finished the same school day, with at most seven hours of working time. A graphing calculator and the Algebra I reference materials are provided. Passing is Approaches Grade Level, a scale score of 3550 (19 of 59 points on the Spring 2026 test).",
+    rows: [
+      { label: "Who takes it", value: "Texas students who complete Algebra I, in high school or middle school" },
+      { label: "Questions", value: "50 questions, 59 points (9 are worth 2 points)" },
+      { label: "Question types", value: "At most 75% multiple choice; the rest typed answers, graphing, drop-downs, match tables, multiselect and others" },
+      { label: "Reporting categories", value: "Number and algebraic methods; graphing linear; writing and solving linear; quadratics; exponentials" },
+      { label: "Time", value: "3 to 4 hours expected; same school day, up to 7 hours" },
+      { label: "Calculator", value: "A graphing calculator is required for the whole test, plus the reference materials" },
+      { label: "Pass mark", value: "Approaches Grade Level, scale score 3550 (19 of 59 points in Spring 2026)" },
+      { label: "Coming change", value: "HB 8 replaces STAAR with the Student Success Tool from 2027-28" },
+    ],
+    basedOn: "TEA's STAAR Algebra I Blueprint (effective 2022-23), the Algebra I assessed curriculum, the STAAR calculator policy and the Spring 2026 raw score conversion table",
+    source: { name: "TEA: STAAR Mathematics Resources", url: "https://tea.texas.gov/data-reports/staar/staar-mathematics-resources" },
+    tigertest:
+      "Tigertest has two full 50-question practice tests on TEA's blueprint and the assessed Algebra I TEKS, untimed like the real test, with a calculator and the reference sheet on every question and a mix of multiple choice, typed answers, multiselect, match tables and drop-downs. Seven topic drills, three of which teach the basics first, cover every reporting category. All of it is free with no account required. Every question is worth one point and graphs are described in words, so the score is percent correct, not a STAAR scale score.",
+  },
+  staareng1: {
+    answer:
+      "STAAR English I is the Texas end-of-course test for the high school English I course. Under TEA's blueprint in force since spring 2023 it has 52 questions worth 64 points: a reading section of 29 to 31 questions on two single passages and one paired passage, and a writing section of 21 to 23 questions on two revising passages and two editing passages plus one extended constructed response, a written response to a reading passage worth 10 points. Most questions are worth 1 point and three are worth 2. It is taken online, and the raw score becomes a scale score: Approaches Grade Level is 3775, Meets 4000 and Masters 4606.",
+    rows: [
+      { label: "Who takes it", value: "Texas students taking the high school English I course" },
+      { label: "Questions", value: "52 on the base test (plus unscored field-test items)" },
+      { label: "Points", value: "64: Reading 32 to 34, Writing 30 to 32" },
+      { label: "Reading", value: "29 to 31 questions on two single passages and one paired passage" },
+      { label: "Writing", value: "21 to 23 questions on revising and editing passages, plus one 10-point extended constructed response" },
+      { label: "Question types", value: "Multiple-choice and non-multiple-choice items" },
+      { label: "Pass mark", value: "Approaches Grade Level, scale score 3775 (27 of 64 raw points on the summer 2026 form)" },
+      { label: "What's next", value: "TEA plans to bring in the Student Success Tool from fall 2027; its draft English I blueprint starts with the spring 2028 test" },
+    ],
+    basedOn: "TEA's STAAR English I Blueprint and Test Design (effective spring 2023), the English I assessed curriculum and the summer 2026 raw score conversion table",
+    source: { name: "TEA: STAAR English I Blueprint", url: "https://tea.texas.gov/data-reports/staar/staar-english-i-blueprint-schematic-pdf.pdf" },
+    tigertest:
+      "Tigertest has two practice tests of the reading and the revising and editing questions at the blueprint's mix, 51 questions each on original passages and student drafts, with multiple choice, dropdown, choose-two and select-a-sentence items, and nine drills, one per skill area. The essay is not included and every question is worth one point. All of it is free with no account required.",
+  },
   psat: {
     answer:
       "The digital PSAT/NMSQT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules), with a calculator allowed on all of Math. It is adaptive by module and scored 320 to 1520, with each section scored 160 to 760. It is given to 10th and 11th graders in the fall (the PSAT 10 is the same test in the spring), and juniors' scores are used for the National Merit Scholarship Program through a Selection Index of 48 to 228.",
@@ -2232,6 +2268,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
   },
+  wonderlic: {
+    answer:
+      "The Wonderlic cognitive ability test is the 12-minute timed section of Wonderlic's pre-employment assessments, the Wonderlic Personnel Test (WPT-R) and Wonderlic Select (WonScore), which employers use in hiring. Wonderlic describes it as 50 questions in 12 minutes covering simple math, basic logic, language comprehension, spatial reasoning and pattern identification, getting harder as the test goes on; its test-taker pages name word problems, number series, logic puzzles, vocabulary and analogies. The score is estimated from the whole response pattern, with each question weighted by its difficulty and the effect of guessing. There is no universal pass or fail: each employer compares results with the profile for the role, and Wonderlic says the classic 50-question test averages a score of about 20.",
+    rows: [
+      { label: "Questions", value: "50" },
+      { label: "Time", value: "12 minutes, about 14 seconds a question" },
+      { label: "Question types", value: "Simple math, word problems, number series, vocabulary, analogies, logic and spatial reasoning" },
+      { label: "Difficulty", value: "Gets harder as the test goes on" },
+      { label: "Scoring", value: "Weighted by each question's difficulty and the effect of guessing" },
+      { label: "Pass mark", value: "None: employers compare results with the profile for the role" },
+      { label: "Average", value: "About 20 out of 50 on the classic test" },
+      { label: "Given by", value: "Wonderlic, for employers, usually online" },
+    ],
+    basedOn: "Wonderlic's cognitive ability science page, Wonderlic Select product page, WPT-R product sheet and test-taker hub (checked November 2026)",
+    source: { name: "Wonderlic", url: "https://wonderlic.com/science/cognitive-ability/" },
+    tigertest:
+      "Tigertest has two timed Wonderlic-style practice tests of 50 original questions in 12 minutes, ordered from easier to harder, and seven drills: vocabulary, verbal reasoning, arithmetic, word problems, number and letter series, logic and spatial reasoning. Start for free, no account required; the Spatial Reasoning drill and Practice Test 2 are part of Premium. Scores are percent correct, not a Wonderlic score.",
+  },
   lsat: {
     answer:
       "The LSAT has four 35-minute multiple-choice sections: two scored Logical Reasoning sections, one scored Reading Comprehension section and one unscored variable section of either type that LSAC uses to try out new questions, with a 10-minute intermission between the second and third sections. Analytical Reasoning (logic games) was dropped in August 2024. The score runs from 120 to 180, based on the number of questions answered correctly, with no deduction for wrong answers. LSAT Argumentative Writing, a 50-minute unscored essay taken online, must be on file before a score is released. From August 2027 the unscored questions move inside the three sections, which LSAC says will test the same skills.",
@@ -2280,6 +2334,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "IELTS.org", url: "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading" },
     tigertest:
       "Tigertest has two full Academic Reading tests and seven drills by question type, with a band score estimate. Only Reading is covered; Listening, Writing and Speaking are not.",
+  },
+  toeflread: {
+    answer:
+      "Since January 21, 2026, the TOEFL iBT Reading section comes first and has 50 items in about 30 minutes, some of them unscored. It is two-stage adaptive: a first stage, then an easier or harder second stage of about 9 minutes, with no going back. There are three task types: Complete the Words (about 30 items: short academic paragraphs where you type the missing second half of every second word), Read in Daily Life (notices, emails, messages and menus of 15 to 150 words with two or three questions each) and Read an Academic Passage (about 200 words with five questions). Reading is scored on a 1 to 6 scale in half bands, like the other three sections.",
+    rows: [
+      { label: "Items", value: "50 (including unscored items), 1 point each" },
+      { label: "Time", value: "About 30 minutes" },
+      { label: "Task types", value: "Complete the Words, Read in Daily Life, Read an Academic Passage" },
+      { label: "Design", value: "Two-stage adaptive, no going back between stages" },
+      { label: "Score", value: "1 to 6 in half bands (a 0 to 120 total too, for two years from January 2026)" },
+      { label: "Order", value: "First section, then Listening, Writing, Speaking" },
+      { label: "Run by", value: "ETS" },
+    ],
+    basedOn: "the ETS TOEFL iBT 2026 test blueprint and specifications and the updated test overview (as of November 2026)",
+    source: { name: "ETS", url: "https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html" },
+    tigertest:
+      "Tigertest has two full Reading sections in the 2026 format with an adaptive second stage, and seven drills by task type, free to start. Only Reading is covered; Listening, Writing and Speaking are not.",
   },
   netplus: {
     answer:
@@ -3761,6 +3832,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full 60-question AP Biology multiple-choice sections and eight drills, one per unit, all free with no account required. The free-response section is not included.",
   },
+  staarbio: {
+    answer:
+      "STAAR Biology is the Texas end-of-course test for high school Biology, given by the Texas Education Agency. On the blueprint effective beginning with the Spring 2026 administration it has 33 to 35 questions worth 40 points in four strands: Biological Structures, Functions, and Processes (12 to 14 questions), Mechanisms of Genetics (7 to 9), Biological Evolution (7 to 9) and Interdependence within Environmental Systems (5 to 7). Question types include multiple choice, multiselect, drag and drop, hot spot, inline choice, match table grid, text entry and short constructed response, and some come in cluster sets that share a scenario. There is no fixed time limit: students are expected to finish in about three to four hours, within the school day. A calculator is required. On the Spring 2026 test, Approaches Grade Level began at a scale score of 3550, Meets at 4000 and Masters at 4570.",
+    rows: [
+      { label: "Questions", value: "33 to 35, worth 40 points" },
+      { label: "Strands", value: "Structures and processes 12-14, Genetics 7-9, Evolution 7-9, Interdependence 5-7" },
+      { label: "Time", value: "Untimed; about 3 to 4 hours, up to 7 in one school day" },
+      { label: "Calculator", value: "Required (built-in tool online)" },
+      { label: "Score", value: "Scale score; Approaches 3550, Meets 4000, Masters 4570 (Spring 2026)" },
+      { label: "Given by", value: "Texas Education Agency" },
+    ],
+    basedOn: "TEA's Biology STAAR Blueprint (effective Spring 2026), the Biology assessed curriculum (2025-2026), the 2026-2027 STAAR Test Administrator Manual and the Spring 2026 Biology raw score conversion table",
+    source: { name: "Texas Education Agency", url: "https://tea.texas.gov/data-reports/staar/biology-blueprint-2026.pdf" },
+    tigertest:
+      "Tigertest has two full 35-question STAAR Biology practice tests, untimed and split by strand like the real blueprint, and nine drills by tested standard, all free with no account required. Only multiple choice and choose-two questions are included.",
+  },
   phcse: {
     answer:
       "The Civil Service Exam (Career Service Examination, Pen and Paper Test or CSE-PPT) is the Civil Service Commission's test for eligibility for permanent government positions in the Philippines. It has two levels. Both test verbal ability (in English and Filipino), numerical ability and general information on the Philippine Constitution, R.A. 6713, peace and human rights, and the environment; the Professional level adds analytical ability and the Subprofessional level adds clerical ability. For the 2026 sittings the Professional level had 170 items in 3 hours and 10 minutes and the Subprofessional level 165 items in 2 hours and 40 minutes. You need a general rating of at least 80.00 to pass. Professional eligibility covers first and second level positions; Subprofessional covers first level positions only.",
@@ -5227,6 +5314,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "AAFCS HNFS exam specifications and the Pearson Texas test 201 page, checked November 2026",
     source: { name: "AAFCS: Testing - HNFS", url: "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs" },
+  },
+  ase: {
+    answer:
+      "The ASE A1 to A8 tests are the eight Automobile and Light Truck certification tests from the National Institute for Automotive Service Excellence: A1 Engine Repair, A2 Automatic Transmission/Transaxle, A3 Manual Drive Train and Axles, A4 Suspension and Steering, A5 Brakes, A6 Electrical/Electronic Systems, A7 Heating and Air Conditioning and A8 Engine Performance. Each is a separate multiple-choice test: A1, A2 and A5 have 45 scored questions in 75 minutes, A3 and A4 40 in 60 minutes, A6 50 in 90 minutes, and A7 and A8 50 in 75 minutes, and every certification test adds 10 unscored research questions. ASE does not publish a passing score. Certification also needs two years of documented work experience (up to half from vocational training), lasts five years, and passing all eight earns Master Automobile Technician status. A first-time certification test is taken at a test center, while recertification tests can also be taken remotely, and the A-series tests can show each question side by side in Spanish.",
+    rows: [
+      { label: "Tests", value: "Eight separate tests, A1 to A8" },
+      { label: "Questions", value: "40 to 50 scored per test, plus 10 unscored" },
+      { label: "Time", value: "60 to 90 minutes per test" },
+      { label: "Passing score", value: "Not published by ASE" },
+      { label: "Experience", value: "2 years (up to half from training)" },
+      { label: "Valid for", value: "5 years, then a shorter recertification test" },
+    ],
+    basedOn: "The Official ASE Study Guide, Automobile Tests (2026 edition), the ASE A1-A9 test page and ASE Certification: Need to Know (January 2026), checked November 2026",
+    source: { name: "ASE: A Series (A1-A9) tests", url: "https://ase.com/tests/a1-a9/" },
   },
   llqp: {
     answer:

@@ -214,6 +214,7 @@ import "./rdexam";
 import "./praxis5001";
 import "./fladjuster";
 import "./aafcs";
+import "./ase";
 import "./llqp";
 import "./cemap";
 import "./sgftt";

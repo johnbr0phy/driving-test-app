@@ -1157,6 +1157,15 @@ export const vi: TranslationKeys = {
     cmaaEncounter: "Patient Encounter",
     cmaaBilling: "Billing & Revenue Cycle",
     cmaaOffice: "Office Procedures & Logistics",
+    // aufirearmsvic
+    fvicCategories: "Licence & Firearm Categories",
+    fvicLicence: "Licences, Genuine Reasons & Eligibility",
+    fvicPermits: "Permits, Buying & Registration",
+    fvicCarriage: "Carriage, Conduct & Offences",
+    fvicStorage: "Safe Storage & Transport",
+    fvicRules: "The Ten Safety Rules",
+    fvicField: "In the Field",
+    fvicParts: "Firearm Types, Actions & Ammunition",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

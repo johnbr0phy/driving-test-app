@@ -50,7 +50,7 @@ Q = [
      "On public roads", ["On private farmland", "From a parked vehicle", "On fenced paddocks"],
      "The booklet says you must not spotlight on public roads or in recognised deer habitat, and refers to the Game Management Authority for details."),
     ("The booklet calls riding in the back of a ute or a roofless 'bush basher' while hunting:",
-     "Plainly irresponsible", ["Fine on private land", "Safe below 20 km/h", "Allowed if seated"],
+     "Plainly irresponsible", ["Fine if you hold on tight", "Safe below 20 km/h", "Allowed if firearms are cased"],
      "The booklet says riding in the back of a utility, tray vehicle or bush basher is plainly irresponsible and extremely dangerous, and urges everyone to wear a seat belt."),
     ("Before shooting anywhere, the booklet says you need:",
      "The landowner's say-so", ["A Game Licence", "A council permit", "A shooting club membership"],
@@ -71,6 +71,6 @@ Q = [
      "Their own Game Licence", ["Only the adult's licence", "No licence until 18", "A junior permit only"],
      "The booklet says anyone hunting game in Victoria, including juniors aged 12 to 17, must hold a current Game Licence endorsed for the game they hunt."),
     ("Before even a short local hunting trip, the instructors manual says you should:",
-     "Tell someone your plans", ["Check season dates", "Re-zero your rifle at a range", "Charge your spotlight"],
+     "Tell someone your plans", ["Clean and oil the barrel", "Re-zero your rifle at a range", "Charge your spotlight"],
      "The manual says to tell somebody where you are going and when you expect to return, even if it is only a short trip locally."),
 ]

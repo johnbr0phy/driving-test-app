@@ -271,3 +271,4 @@ import "./aufirearmsnsw";
 import "./ascpmlt";
 import "./cbspd";
 import "./cmaa";
+import "./aufirearmsvic";

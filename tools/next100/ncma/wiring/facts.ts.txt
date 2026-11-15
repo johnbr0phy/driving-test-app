@@ -1,0 +1,16 @@
+  ncma: {
+    answer:
+      "The National Certified Medical Assistant (NCMA) exam is the National Center for Competency Testing's (NCCT) certification exam for medical assistants. NCCT's detailed test plan, effective January 2024, gives it 125 scored questions plus 25 unscored pretest questions, with three hours to finish; about 92% are four-option multiple choice and 8% are alternative items such as drag and drop, multi-select and hotspot. Scores run from 200 to 720 and a scaled 575 passes, which is not a fixed percentage. The plan has four content categories: Pharmacology and General Medical Knowledge 18 items, Clinical Medical Procedures 72 (Infection Control and Safety 15, Patient Intake and Care 32, Phlebotomy 15, ECG 10), Medical Administrative Duties 15, and Law and Ethics 20. It is taken on a computer at a test site or by remote proctoring, in English only.",
+    rows: [
+      { label: "Questions", value: "150 (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "575 on a 200 to 720 scale" },
+      { label: "Largest areas", value: "Patient Intake and Care 32, Law and Ethics 20, Pharmacology and General Medical Knowledge 18" },
+      { label: "Eligibility", value: "NCCT-authorized medical assistant program (student or graduate within 5 years), or 1 year of full-time work as a medical assistant" },
+      { label: "Where", value: "Computer based, at a test site or by remote proctoring; English only" },
+      { label: "Retakes", value: "After 30 days for a 2nd and 3rd try, 90 days for a 4th, then 180 days with an appeal" },
+      { label: "Given by", value: "NCCT" },
+    ],
+    basedOn: "NCCT's NCMA Detailed Test Plan (effective January 2024) and Candidate Handbook (revised January 2026), checked November 2026",
+    source: { name: "NCCT: NCMA Detailed Test Plan", url: "https://www.ncctinc.com/Documents/MA%20Detailed%20Test%20Plan.pdf" },
+  },

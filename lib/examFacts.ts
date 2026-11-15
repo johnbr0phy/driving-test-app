@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  aufirearmsvic: {
+    answer:
+      "In Victoria, a firearm licence is not issued unless the applicant has satisfactorily completed an approved course of firearms safety and has a good knowledge of firearms law (Firearms Act 1996, s 17). Victoria Police sets the minimum course requirements and approves independent instructors; the longarm course ends with a short multiple-choice safety and law knowledge test sat in person, and a pass earns a certificate for the licence application. Licences are issued by Victoria Police's Licensing and Regulation Division. An adult applicant must be 18 or over, live or work in Victoria, be a fit and proper person with a genuine reason, and be able to meet the storage rules. A first licence cannot be issued until 28 days after applying.",
+    rows: [
+      { label: "Course", value: "Approved firearm safety course for the licence type (longarm course for categories A and B and junior licences)" },
+      { label: "Assessment", value: "Short multiple-choice safety and law knowledge test, sat in person" },
+      { label: "Licence age", value: "18 for an adult licence; 12 to 17 for a junior licence with written parental consent" },
+      { label: "Waiting period", value: "28 days after applying for a licence" },
+      { label: "Licence term", value: "Up to 5 years for categories A and B; up to 3 years for C, D and E" },
+      { label: "Permit to acquire", value: "Needed for every firearm, valid 28 days" },
+      { label: "Licensing body", value: "Victoria Police Licensing and Regulation Division" },
+    ],
+    basedOn: "The Firearms Act 1996 (authorised version in force from 19 August 2026) on legislation.vic.gov.au, the Victoria Police eligibility page and the Firearm Safety Code booklet, checked November 2026",
+    source: { name: "Victoria Police: eligibility requirements for firearm applications", url: "https://www.police.vic.gov.au/firearm-licence-eligibility-requirements" },
+  },
   cmaa: {
     answer:
       "The Certified Medical Administrative Assistant (CMAA) exam is the National Healthcareer Association's (NHA) certification exam for front office and administrative medical assistants. NHA's test plan gives it 110 scored questions plus 25 unscored pretest questions, with 2 hours 15 minutes to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2021 job analysis, has seven domains: Communication and Professionalism 21 items, Patient Encounter 21, Medical Law, Ethics, and Compliance 17, Scheduling 16, Medical Practice Administrative Procedures and Logistics 14, Billing and Revenue Cycle 11, and Foundational Knowledge 10. It is taken at a school, a PSI test center or by live remote proctoring.",

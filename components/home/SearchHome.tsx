@@ -13,6 +13,7 @@ import { useSearchTracking } from "@/hooks/useSearchTracking";
 import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit, SearchResult } from "@/lib/testSearch";
 import { TEST_CATALOG } from "@/lib/testCatalog";
+import { randomSmilingTiger } from "@/lib/tigerAssets";
 import { asNotifyEmail } from "@/lib/test-requests";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
@@ -155,12 +156,21 @@ export function SearchHome({
 
   const started = useTestsInProgress();
 
+  // A different smiling tiger on every load. Picked after mount so the server and first
+  // client render match; the slot is held empty until then so the default never flashes.
+  const [tigerSrc, setTigerSrc] = useState<string | null>(null);
+  useEffect(() => setTigerSrc(randomSmilingTiger()), []);
+
   return (
     <section aria-label="Find your test" data-search-home data-searching={showResults || undefined} className="bg-white dark:bg-gray-950">
       <div className="mx-auto w-full max-w-2xl px-4">
         {/* The wordmark. Shrinks to one line while searching so results stay above a phone keyboard. */}
         <div className={`flex items-center justify-center ${showResults ? "gap-2 pt-3 pb-4" : "gap-3 pt-10 pb-3 sm:pt-[12vh] sm:pb-4"}`}>
-          <Image src="/tiger.png" alt="" width={96} height={96} priority className={showResults ? "w-8 h-8" : "w-16 h-16 sm:w-24 sm:h-24"} />
+          {tigerSrc ? (
+            <Image src={tigerSrc} alt="" width={96} height={96} priority className={showResults ? "w-8 h-8" : "w-16 h-16 sm:w-24 sm:h-24"} />
+          ) : (
+            <span aria-hidden className={`shrink-0 ${showResults ? "w-8 h-8" : "w-16 h-16 sm:w-24 sm:h-24"}`} />
+          )}
           {headline ? (
             <p className={`font-extrabold tracking-tight text-gray-900 dark:text-gray-50 ${showResults ? "text-2xl" : "text-5xl sm:text-7xl"}`}>Tigertest</p>
           ) : (

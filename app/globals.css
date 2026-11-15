@@ -4815,6 +4815,20 @@
     --brand-gradient-to: 40 70% 95%;
   }
 
+  /* MBLEx (FSMTB massage and bodywork licensing) theme */
+  [data-theme="mblex"] {
+    --brand: 280 25% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 30% 96%;
+    --brand-hover: 280 25% 32%;
+    --brand-dark: 280 25% 26%;
+    --brand-darker: 280 22% 17%;
+    --brand-muted: 280 16% 68%;
+    --brand-border: 280 16% 80%;
+    --brand-border-light: 280 14% 89%;
+    --brand-gradient-to: 30 60% 95%;
+  }
+
   /* LLQP (Canada life licence) theme */
   [data-theme="llqp"] {
     --brand: 5 45% 28%;
@@ -9084,6 +9098,18 @@
     --brand-muted: 171 30% 45%;
     --brand-dark: 171 85% 65%;
     --brand-darker: 171 70% 78%;
+  }
+
+  .dark [data-theme="mblex"] {
+    --brand: 280 25% 50%;
+    --brand-hover: 280 25% 42%;
+    --brand-light: 280 30% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 280 14% 24%;
+    --brand-border: 280 16% 34%;
+    --brand-muted: 280 16% 45%;
+    --brand-dark: 280 25% 65%;
+    --brand-darker: 280 22% 78%;
   }
 
   .dark [data-theme="llqp"] {

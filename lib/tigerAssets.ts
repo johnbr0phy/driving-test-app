@@ -140,6 +140,8 @@ const BORROWED_SETS: Record<string, string> = {
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",
+  // MBLEx (massage therapy licensing) borrows the NASM personal trainer tiger.
+  mblex: "nasm",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
   // licence, security guard and NCLEX families.
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",

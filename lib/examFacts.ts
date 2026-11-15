@@ -5263,6 +5263,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AAFCS HNFS exam specifications and the Pearson Texas test 201 page, checked November 2026",
     source: { name: "AAFCS: Testing - HNFS", url: "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs" },
   },
+  mblex: {
+    answer:
+      "The MBLEx (Massage & Bodywork Licensing Examination) is the Federation of State Massage Therapy Boards' entry-level licensing exam for massage therapists; state boards and agencies decide which licensing exam they require. It is 100 multiple-choice questions in 110 minutes at a Pearson VUE center, a fixed-length computer-adaptive test answered in order, and results are reported only as pass or fail on a criterion-referenced standard. Passing it is not a license: the state board or agency issues the license, and state requirements vary.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "110 minutes (2-hour appointment)" },
+      { label: "Format", value: "Fixed-length computer-adaptive test, answered in order" },
+      { label: "Result", value: "Pass or fail; no percent published" },
+      { label: "Largest area", value: "Client Assessment, Reassessment & Treatment Planning, 17%" },
+      { label: "Languages", value: "English and Spanish" },
+    ],
+    basedOn: "FSMTB MBLEx Content Outline and the MBLEx Candidate Handbook effective August 2026, checked November 2026",
+    source: { name: "FSMTB: MBLEx", url: "https://www.fsmtb.org/mblex/" },
+  },
   llqp: {
     answer:
       "The Life Licence Qualification Program (LLQP) is the harmonized exam that Canada's provincial and territorial insurance regulators require before licensing a life insurance agent; CISRO oversees the curriculum. It is written as four separate modules: Life Insurance, Accident and Sickness Insurance, and Segregated Funds and Annuities, each with 35 multiple-choice questions scored out of 30, and Ethics and Professional Practice, with 25 questions scored out of 20 (Common Law, or Civil Code in Quebec). Each module includes five unscored pilot questions, allows 75 minutes, and must be passed with 60% on its own.",

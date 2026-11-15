@@ -1,0 +1,4272 @@
+[
+  {
+    "id": "STAARA1-T1-001",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Slope from two points",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "What is the slope of the line through (−2, 5) and (4, −7)?",
+    "numeric": {
+      "answers": [
+        "-2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Slope = change in y ÷ change in x = (−7 − 5) ÷ (4 − (−2)) = −12 ÷ 6 = −2. Dividing the x change by the y change gives −1/2."
+  },
+  {
+    "id": "STAARA1-T1-002",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Vertex form",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the vertex of the graph of f(x) = 2(x − 3)² + 5?",
+    "options": [
+      "(3, 5)",
+      "(−3, 5)",
+      "(3, −5)",
+      "(5, 3)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "In f(x) = a(x − h)² + k the vertex is (h, k). Here h = 3, because x − 3 means x minus 3, and k = 5."
+  },
+  {
+    "id": "STAARA1-T1-003",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Variables on both sides",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "What value of x makes 5x − 8 = 3x + 10 true?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Subtract 3x from both sides: 2x − 8 = 10. Add 8: 2x = 18, so x = 9. Check: 5(9) − 8 = 37 and 3(9) + 10 = 37."
+  },
+  {
+    "id": "STAARA1-T1-004",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Point and slope",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation describes the line with a slope of −3 that passes through (2, 1)?",
+    "options": [
+      "y = −3x + 5",
+      "y = −3x + 7",
+      "y = 3x − 5",
+      "y = −3x − 5"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "y − 1 = −3(x − 2) gives y = −3x + 6 + 1 = −3x + 7. Check: −3(2) + 7 = 1. The line y = 3x − 5 passes through the point but has the wrong slope."
+  },
+  {
+    "id": "STAARA1-T1-005",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Meaning of a",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A town's population t years from now is modeled by P = 4,500(1.03)ᵗ. What does 4,500 represent?",
+    "options": [
+      "The yearly growth rate",
+      "The population in 1 year",
+      "The population now",
+      "The yearly gain in people"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "At t = 0, (1.03)⁰ = 1, so P = 4,500: the population at the start. The growth rate comes from 1.03, which is 3% a year."
+  },
+  {
+    "id": "STAARA1-T1-006",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Adding polynomials",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is (3x² + 5x − 2) + (x² − 7x + 6)?",
+    "options": [
+      "4x² + 12x + 4",
+      "3x² − 2x + 4",
+      "4x² − 2x − 8",
+      "4x² − 2x + 4"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Add like terms: 3x² + x² = 4x², 5x − 7x = −2x and −2 + 6 = 4. Getting 12x means 7x was added instead of −7x."
+  },
+  {
+    "id": "STAARA1-T1-007",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Simplifying radicals",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "squareRoots",
+    "stem": "Which expression is √72 in simplest radical form?",
+    "options": [
+      "6√2",
+      "2√6",
+      "4√3",
+      "8√2"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "72 = 36 · 2 and √36 = 6, so √72 = 6√2. 2√6 is √24, not √72."
+  },
+  {
+    "id": "STAARA1-T1-008",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Slope from an equation",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "What is the slope of the line 4x − 2y = 10?",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Solve for y: −2y = −4x + 10, so y = 2x − 5 and the slope is 2. In Ax + By = C form the slope is −A/B = −4/(−2) = 2."
+  },
+  {
+    "id": "STAARA1-T1-009",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Range",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the range of f(x) = −(x + 1)² + 4?",
+    "options": [
+      "y ≥ 4",
+      "y ≤ 4",
+      "y ≤ −1",
+      "All real numbers"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The negative leading coefficient makes the parabola open down, so its highest point is the vertex (−1, 4), and every output is 4 or less."
+  },
+  {
+    "id": "STAARA1-T1-010",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Distributive property",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "solveX",
+    "stem": "What is the solution of 3(2x + 1) − 4 = 2(x + 7)?",
+    "lockedOrder": true,
+    "options": [
+      "2",
+      "3.75",
+      "4.25",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Distribute: 6x + 3 − 4 = 2x + 14, so 6x − 1 = 2x + 14. Then 4x = 15 and x = 3.75. Multiplying only 2x by 3 gives 4.25, and leaving the right side as 2x + 7 gives 2."
+  },
+  {
+    "id": "STAARA1-T1-011",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Rate of change",
+    "difficulty": 2,
+    "format": "numeric",
+    "passage": "| Hours | 2 | 4 | 6 | 8 |\n|---|---|---|---|---|\n| Cost (\\$) | 35 | 55 | 75 | 95 |",
+    "stem": "The table shows the cost of renting a party room for different numbers of hours. What is the rate of change of the cost, in dollars per hour?",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Each 2 more hours adds \\$20, so the cost rises \\$20 ÷ 2 = \\$10 per hour. \\$17.50 is the first cost divided by its hours, which includes the fixed fee."
+  },
+  {
+    "id": "STAARA1-T1-012",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Equation from a table",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| x | 0 | 2 | 4 | 6 |\n|---|---|---|---|---|\n| y | 9 | 5 | 1 | −3 |",
+    "stem": "Which equation represents the linear function in the table?",
+    "options": [
+      "y = 2x + 9",
+      "y = −4x + 9",
+      "y = −2x + 9",
+      "y = −2x + 5"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "y falls by 4 each time x rises by 2, so the slope is −2, and y = 9 when x = 0. A slope of −4 reads the change in y without dividing by the change in x."
+  },
+  {
+    "id": "STAARA1-T1-013",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Solving by factoring",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "What are the solutions of x² − 5x − 14 = 0? Choose two.",
+    "options": [
+      "x = −7",
+      "x = 2",
+      "x = 14",
+      "x = 7",
+      "x = −2"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2,
+    "calculator": true,
+    "explanation": "x² − 5x − 14 = (x − 7)(x + 2), so x − 7 = 0 or x + 2 = 0, giving x = 7 and x = −2. The signs flip from the factors to the solutions."
+  },
+  {
+    "id": "STAARA1-T1-014",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Meaning of b",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A car's value, in dollars, t years after it is bought is v = 22,000(0.85)ᵗ. What does 0.85 tell you?",
+    "options": [
+      "It loses 85% each year",
+      "It keeps 15% each year",
+      "It loses \\$0.85 each year",
+      "It loses 15% each year"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Each year the value is multiplied by 0.85, so it keeps 85% and loses 100% − 85% = 15%. Losing 85% would leave only 15% each year."
+  },
+  {
+    "id": "STAARA1-T1-015",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Subtracting polynomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "negativeNumbers",
+    "stem": "What is (5x² − 3x + 4) − (2x² + x − 6)?",
+    "options": [
+      "3x² − 4x + 10",
+      "3x² − 2x − 2",
+      "3x² − 4x − 2",
+      "7x² − 2x − 2"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Subtracting changes the sign of every term in the second polynomial: 5x² − 2x² − 3x − x + 4 + 6 = 3x² − 4x + 10. The result 3x² − 2x − 2 subtracts only the first term."
+  },
+  {
+    "id": "STAARA1-T1-016",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Laws of exponents",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Which expression is equivalent to (x⁴y³)² ÷ (x²y), where x and y are not 0?",
+    "options": [
+      "x⁴y⁵",
+      "x⁶y⁵",
+      "x⁸y⁵",
+      "x³y⁶"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "(x⁴y³)² = x⁸y⁶ (multiply the exponents). Dividing by x²y subtracts exponents: x⁸⁻²y⁶⁻¹ = x⁶y⁵. The result x⁸y⁵ forgets to divide the x terms."
+  },
+  {
+    "id": "STAARA1-T1-017",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Intercepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the x-intercept of the graph of 3x − 4y = 24?",
+    "options": [
+      "(0, −6)",
+      "(−6, 0)",
+      "(8, 0)",
+      "(0, 8)"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "At the x-intercept y = 0, so 3x = 24 and x = 8: the point (8, 0). (0, −6) is the y-intercept."
+  },
+  {
+    "id": "STAARA1-T1-018",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Quadratic formula",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are the solutions of 2x² − 3x − 4 = 0?",
+    "options": [
+      "(−3 ± √41)/4",
+      "(3 ± √23)/4",
+      "(3 ± √41)/2",
+      "(3 ± √41)/4"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "With a = 2, b = −3 and c = −4: b² − 4ac = 9 + 32 = 41, and −b/2a uses −(−3) = 3 over 2(2) = 4. Using 9 − 32 forgets that −4ac is +32."
+  },
+  {
+    "id": "STAARA1-T1-019",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Solving inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which inequality is the solution of −3x + 7 ≥ 22?",
+    "options": [
+      "x ≤ −5",
+      "x ≥ −5",
+      "x ≤ 5",
+      "x ≥ 5"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Subtract 7: −3x ≥ 15. Dividing by −3 reverses the sign: x ≤ −5. Forgetting to reverse gives x ≥ −5."
+  },
+  {
+    "id": "STAARA1-T1-020",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Key features in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The water in a tank, in gallons, is w = 400 − 25t after t minutes of draining. What does the zero of this function represent?",
+    "options": [
+      "The amount at the start",
+      "The time the tank is empty",
+      "The gallons lost each minute",
+      "The time the tank is full"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The zero is the t-value where w = 0, when no water is left: 400 − 25t = 0 at t = 16 minutes. The amount at the start is the w-intercept, 400 gallons."
+  },
+  {
+    "id": "STAARA1-T1-021",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Equation from a description",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A plumber charges \\$65 for a visit plus \\$40 for each hour of work. Which equation gives the total charge c for h hours?",
+    "options": [
+      "c = 65h + 40",
+      "c = 105h",
+      "c = 40h + 65",
+      "c = 40h − 65"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "\\$40 is charged for every hour, so it multiplies h, and the \\$65 visit fee is added once. c = 65h + 40 charges the visit fee every hour."
+  },
+  {
+    "id": "STAARA1-T1-022",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Writing growth functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A colony of 300 bacteria doubles every hour. Which function gives the number of bacteria after h hours?",
+    "options": [
+      "f(h) = 2(300)ʰ",
+      "f(h) = 300 + 2h",
+      "f(h) = 300(0.5)ʰ",
+      "f(h) = 300(2)ʰ"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The starting amount 300 is a, and doubling makes the growth factor b = 2: f(h) = 300(2)ʰ. A factor of 0.5 would halve the colony each hour."
+  },
+  {
+    "id": "STAARA1-T1-023",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Axis of symmetry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the axis of symmetry of the graph of f(x) = 3x² − 12x + 1?",
+    "options": [
+      "x = 2",
+      "x = −2",
+      "x = 4",
+      "x = −4"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "x = −b/(2a) = −(−12)/(2 · 3) = 12/6 = 2. Leaving out the negative sign gives x = −2."
+  },
+  {
+    "id": "STAARA1-T1-024",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Multiplying binomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to (2x − 3)(x + 4)?",
+    "options": [
+      "2x² − 5x − 12",
+      "2x² + 5x − 12",
+      "2x² + 11x − 12",
+      "2x² − 12"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Multiply each term: 2x · x = 2x², 2x · 4 = 8x, −3 · x = −3x and −3 · 4 = −12. The middle terms give 8x − 3x = 5x, so the product is 2x² + 5x − 12."
+  },
+  {
+    "id": "STAARA1-T1-025",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Evaluating functions",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "functionNotation",
+    "stem": "If f(x) = 2x² − 3x + 1, what is f(−2)?",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "f(−2) = 2(−2)² − 3(−2) + 1 = 2(4) + 6 + 1 = 15. Squaring −2 gives 4, not −4, and −3 times −2 is +6."
+  },
+  {
+    "id": "STAARA1-T1-026",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Graphing linear inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A graph shows a dashed line through (0, 2) with a slope of 3, and the region below the line is shaded. Which inequality is graphed?",
+    "options": [
+      "y ≤ 3x + 2",
+      "y > 3x + 2",
+      "y < 3x + 2",
+      "y ≥ 3x + 2"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "A dashed line means the line itself is not included (< or >), and shading below means y is less than the line: y < 3x + 2. A solid line would mean ≤."
+  },
+  {
+    "id": "STAARA1-T1-027",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Variables on both sides",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which inequality is the solution of 2(x + 4) < 5x − 7?",
+    "options": [
+      "x < 5",
+      "x > 1/3",
+      "x < −5",
+      "x > 5"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Distribute: 2x + 8 < 5x − 7. Subtract 2x and add 7: 15 < 3x, so 5 < x, which is x > 5. Reading 15 < 3x as x < 5 flips the inequality by mistake."
+  },
+  {
+    "id": "STAARA1-T1-028",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Transformations of f(x) = x²",
+    "difficulty": 2,
+    "format": "cloze",
+    "stem": "The graph of g(x) = (x + 4)² − 3 is the graph of f(x) = x² moved [[1]] and [[2]].",
+    "blanks": [
+      [
+        "left 4 units",
+        "left 3 units",
+        "right 4 units"
+      ],
+      [
+        "down 3 units",
+        "down 4 units",
+        "up 3 units"
+      ]
+    ],
+    "correct": [
+      0,
+      0
+    ],
+    "calculator": true,
+    "explanation": "(x + 4)² is f(x − (−4)), a shift left 4, and − 3 outside moves the graph down 3. The vertex moves from (0, 0) to (−4, −3)."
+  },
+  {
+    "id": "STAARA1-T1-029",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Reasonable domain",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A van holds at most 8 riders, and each rider pays \\$3, so the fares collected are f = 3r for r riders. What is a reasonable domain?",
+    "options": [
+      "{0, 1, 2, ..., 8}",
+      "0 ≤ r ≤ 8",
+      "{0, 3, 6, ..., 24}",
+      "0 ≤ r ≤ 24"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The domain is the number of riders, which must be a whole number from 0 to 8, so it is discrete. {0, 3, 6, ..., 24} lists the fares, which is the range."
+  },
+  {
+    "id": "STAARA1-T1-030",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Graphs of exponential functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describes the graph of f(x) = 5(0.4)ˣ?",
+    "options": [
+      "y-intercept 0.4; asymptote y = 0",
+      "y-intercept 5; asymptote y = 0",
+      "y-intercept 5; asymptote y = 5",
+      "y-intercept 0; asymptote x = 0"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "f(0) = 5(0.4)⁰ = 5, and as x grows, 5(0.4)ˣ gets closer and closer to 0 without reaching it, so the asymptote is y = 0."
+  },
+  {
+    "id": "STAARA1-T1-031",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Transformations of f(x) = x",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does the graph of g(x) = 3f(x) compare with the graph of the parent function f(x) = x?",
+    "options": [
+      "It is less steep",
+      "It is shifted up 3",
+      "It is steeper",
+      "It is shifted right 3"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "g(x) = 3x has a slope of 3 instead of 1, so the line rises 3 times as fast and is steeper. A shift up 3 would be f(x) + 3."
+  },
+  {
+    "id": "STAARA1-T1-032",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Solving systems",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "What is the solution of the system y = 2x + 3 and 3x + y = 18?",
+    "options": [
+      "(9, 3)",
+      "(3, 3)",
+      "(5, 13)",
+      "(3, 9)"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Substitute y = 2x + 3: 3x + 2x + 3 = 18, so 5x = 15 and x = 3. Then y = 2(3) + 3 = 9. (9, 3) swaps the coordinates."
+  },
+  {
+    "id": "STAARA1-T1-033",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Writing from solutions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function has zeros at x = −3 and x = 5?",
+    "options": [
+      "f(x) = x² − 2x − 15",
+      "f(x) = x² + 2x − 15",
+      "f(x) = x² − 8x + 15",
+      "f(x) = x² + 8x + 15"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Zeros of −3 and 5 come from the factors (x + 3)(x − 5) = x² − 5x + 3x − 15 = x² − 2x − 15. Using (x − 3)(x + 5) gives x² + 2x − 15, whose zeros are 3 and −5."
+  },
+  {
+    "id": "STAARA1-T1-034",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Estimating solutions of systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Plan A for a dance class costs \\$30 to join plus \\$5 a class. Plan B costs \\$10 a class with no fee. Where do the graphs of the two plans cross?",
+    "options": [
+      "(3, 30)",
+      "(6, 60)",
+      "(6, 30)",
+      "(10, 80)"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Set 30 + 5x = 10x, so 5x = 30 and x = 6 classes, when both cost \\$60. At 3 classes Plan A costs \\$45, not \\$30."
+  },
+  {
+    "id": "STAARA1-T1-035",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Factoring trinomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Which is the factored form of x² − 2x − 24?",
+    "options": [
+      "(x + 6)(x − 4)",
+      "(x − 8)(x + 3)",
+      "(x − 6)(x + 4)",
+      "(x − 12)(x + 2)"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "You need two numbers that multiply to −24 and add to −2: −6 and 4. (x + 6)(x − 4) multiplies back to x² + 2x − 24, with the wrong middle sign."
+  },
+  {
+    "id": "STAARA1-T1-036",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Identifying functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which set of ordered pairs represents a function?",
+    "options": [
+      "{(1, 2), (1, 3), (2, 4), (3, 5)}",
+      "{(0, 1), (2, 3), (2, 5), (4, 7)}",
+      "{(5, 1), (6, 2), (5, 3), (7, 4)}",
+      "{(1, 4), (2, 4), (3, 5), (4, 6)}"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "A function gives each input exactly one output. In {(1, 4), (2, 4), (3, 5), (4, 6)} no x-value repeats; two inputs sharing the output 4 is allowed. Each other set repeats an x-value with two outputs."
+  },
+  {
+    "id": "STAARA1-T1-037",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Writing systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A theater sold 150 tickets for \\$1,400. Adult tickets cost \\$12 and child tickets cost \\$7. Which system finds a, the adult tickets, and c, the child tickets?",
+    "options": [
+      "a + c = 150 and 12a + 7c = 1,400",
+      "a + c = 1,400 and 12a + 7c = 150",
+      "a + c = 150 and 7a + 12c = 1,400",
+      "12a + c = 150 and a + 7c = 1,400"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The number of tickets adds to 150, and the money from each kind adds to \\$1,400: a + c = 150 and 12a + 7c = 1,400. Swapping 12 and 7 charges children the adult price."
+  },
+  {
+    "id": "STAARA1-T1-038",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Factors and zeros",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are the x-intercepts of the graph of f(x) = (2x − 5)(x + 1)?",
+    "options": [
+      "(−2.5, 0) and (1, 0)",
+      "(2.5, 0) and (−1, 0)",
+      "(5, 0) and (−1, 0)",
+      "(2, 0) and (−1, 0)"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Each factor is 0 at an x-intercept: 2x − 5 = 0 gives x = 2.5, and x + 1 = 0 gives x = −1. The intercept (5, 0) forgets to divide by 2."
+  },
+  {
+    "id": "STAARA1-T1-039",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Range",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the range of f(x) = −2(3)ˣ?",
+    "options": [
+      "y > 0",
+      "y > −2",
+      "y < 0",
+      "All real numbers"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "3ˣ is always positive, so −2(3)ˣ is always negative and gets close to 0 from below: y < 0. It passes −2 at x = 0 and keeps falling, so y > −2 is wrong."
+  },
+  {
+    "id": "STAARA1-T1-040",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Correlation coefficient",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scatter plot of two quantities has a correlation coefficient of r = −0.92. Which describes the data?",
+    "options": [
+      "Weak negative linear association",
+      "Strong positive linear association",
+      "No linear association",
+      "Strong negative linear association"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "r near −1 means the points lie close to a line that falls from left to right: a strong negative association. A weak association would have r near 0."
+  },
+  {
+    "id": "STAARA1-T1-041",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Systems in context",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "systems",
+    "stem": "A school sold 200 tickets for \\$1,240. Adult tickets cost \\$8 and student tickets cost \\$5. How many adult tickets were sold?",
+    "numeric": {
+      "answers": [
+        "80"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "a + s = 200 and 8a + 5s = 1,240. Substituting s = 200 − a: 8a + 1,000 − 5a = 1,240, so 3a = 240 and a = 80. Check: 80 adults and 120 students make \\$640 + \\$600."
+  },
+  {
+    "id": "STAARA1-T1-042",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Vertex form to standard form",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which is f(x) = −2(x − 1)² + 8 written in standard form?",
+    "options": [
+      "f(x) = −2x² + 4x + 6",
+      "f(x) = −2x² − 4x + 6",
+      "f(x) = −2x² + 4x + 10",
+      "f(x) = −2x² + 2x + 9"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "(x − 1)² = x² − 2x + 1, so −2(x² − 2x + 1) + 8 = −2x² + 4x − 2 + 8 = −2x² + 4x + 6. Taking −2 times 1 as +2 gives + 10."
+  },
+  {
+    "id": "STAARA1-T1-043",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Systems by graphing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The lines y = 2x − 1 and y = −x + 5 are graphed on the same grid. At what point do they intersect?",
+    "options": [
+      "(3, 2)",
+      "(2, 3)",
+      "(2, 5)",
+      "(−2, 3)"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Where the lines cross, 2x − 1 = −x + 5, so 3x = 6 and x = 2; then y = 2(2) − 1 = 3. (3, 2) swaps the coordinates."
+  },
+  {
+    "id": "STAARA1-T1-044",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Difference of two squares",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two binomials can be written as a difference of two squares? Choose two.",
+    "options": [
+      "x² + 25",
+      "4x² − 18",
+      "x³ − 1",
+      "9x² − 49",
+      "x² − 64"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2,
+    "calculator": true,
+    "explanation": "9x² − 49 = (3x)² − 7² and x² − 64 = x² − 8², so both factor as (a − b)(a + b). x² + 25 is a sum, 18 is not a perfect square, and x³ is not a square."
+  },
+  {
+    "id": "STAARA1-T1-045",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Arithmetic sequences",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "The arithmetic sequence 7, 11, 15, 19, ... continues. What is its 30th term?",
+    "numeric": {
+      "answers": [
+        "123"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The first term is 7 and the common difference is 4, so a(n) = 7 + 4(n − 1). a(30) = 7 + 4(29) = 123. Using 4n alone gives 120."
+  },
+  {
+    "id": "STAARA1-T1-046",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Perpendicular lines",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which equation describes the line through (6, −1) that is perpendicular to y = 3x + 4?",
+    "options": [
+      "y = 3x − 19",
+      "y = −(1/3)x − 3",
+      "y = −(1/3)x + 1",
+      "y = (1/3)x − 3"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "A perpendicular slope is the opposite reciprocal of 3, which is −1/3. Then −1 = −(1/3)(6) + b gives b = 1. y = 3x − 19 is the parallel line through the point."
+  },
+  {
+    "id": "STAARA1-T1-047",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Decay in context",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A 200-milligram dose of a medicine decreases by 20% each hour. How many milligrams remain after 3 hours?",
+    "numeric": {
+      "answers": [
+        "102.4"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Keeping 80% each hour, the amount is 200(0.8)³ = 200(0.512) = 102.4 milligrams. Subtracting 20% of 200 three times would give 80, which treats the decay as linear."
+  },
+  {
+    "id": "STAARA1-T1-048",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Equations in context",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "A truck rental costs \\$45 plus \\$0.30 a mile. The bill was \\$72. How many miles was the truck driven?",
+    "numeric": {
+      "answers": [
+        "90"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "45 + 0.30m = 72, so 0.30m = 27 and m = 27 ÷ 0.30 = 90 miles. 240 divides the whole bill by 0.30 without taking off the \\$45."
+  },
+  {
+    "id": "STAARA1-T1-049",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Maximum value in context",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A ball's height in feet t seconds after it is thrown is h(t) = −16t² + 96t + 4. What is the greatest height the ball reaches, in feet?",
+    "numeric": {
+      "answers": [
+        "148"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The maximum is at the vertex, t = −96/(2(−16)) = 3 seconds. h(3) = −16(9) + 96(3) + 4 = −144 + 288 + 4 = 148 feet."
+  },
+  {
+    "id": "STAARA1-T1-050",
+    "section": "alg",
+    "test": 1,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Systems of inequalities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which point is in the solution set of y > x + 1 and y ≤ −2x + 7?",
+    "options": [
+      "(3, 2)",
+      "(0, 1)",
+      "(2, 4)",
+      "(1, 4)"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "For (1, 4): 4 > 2 and 4 ≤ 5, so both are true. (2, 4) works in the first inequality, but 4 ≤ 3 is false, and (0, 1) sits on the dashed line y = x + 1, which is not included."
+  },
+  {
+    "id": "STAARA1-T2-001",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Slope from a table",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "| x | 1 | 3 | 5 | 7 |\n|---|---|---|---|---|\n| y | 4 | 10 | 16 | 22 |",
+    "stem": "What is the slope of the line that contains the points in this table?",
+    "lockedOrder": true,
+    "options": [
+      "1/3",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Each time x increases by 2, y increases by 6, so the slope is 6 ÷ 2 = 3. Reading only the change in y gives 6."
+  },
+  {
+    "id": "STAARA1-T2-002",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Key attributes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the y-intercept of the graph of f(x) = x² − 6x + 8?",
+    "options": [
+      "(0, 8)",
+      "(8, 0)",
+      "(0, −6)",
+      "(3, −1)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The y-intercept is f(0) = 8, the point (0, 8). (3, −1) is the vertex, not an intercept."
+  },
+  {
+    "id": "STAARA1-T2-003",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Variables on both sides",
+    "difficulty": 1,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "What value of x makes 7 − 2x = 3x − 18 true?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Add 2x to both sides: 7 = 5x − 18. Add 18: 25 = 5x, so x = 5. Check: 7 − 10 = −3 and 15 − 18 = −3."
+  },
+  {
+    "id": "STAARA1-T2-004",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Two points",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation describes the line through (1, 4) and (3, 10)?",
+    "options": [
+      "y = 3x + 4",
+      "y = 3x + 1",
+      "y = 2x + 2",
+      "y = 3x − 1"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The slope is (10 − 4) ÷ (3 − 1) = 3, and 4 = 3(1) + b gives b = 1. y = 2x + 2 passes through (1, 4) but not (3, 10)."
+  },
+  {
+    "id": "STAARA1-T2-005",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Growth and decay",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "Does each function show exponential growth or decay?",
+    "rows": [
+      "y = 3(1.2)ˣ",
+      "y = 8(0.9)ˣ",
+      "y = 0.5(4)ˣ",
+      "y = 10(1/3)ˣ"
+    ],
+    "columns": [
+      "Growth",
+      "Decay"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "calculator": true,
+    "explanation": "When b > 1 the function grows, and when 0 < b < 1 it decays. The value of a, such as 0.5, does not decide growth or decay."
+  },
+  {
+    "id": "STAARA1-T2-006",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Subtracting polynomials",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "negativeNumbers",
+    "stem": "What is (6x² + 2x − 5) − (4x² − 3x + 1)?",
+    "options": [
+      "2x² − x − 4",
+      "2x² + 5x − 4",
+      "2x² + 5x − 6",
+      "10x² − x − 4"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Change every sign in the second polynomial and add: 6x² − 4x² = 2x², 2x + 3x = 5x, −5 − 1 = −6. The result 2x² − x − 4 forgets to change the signs."
+  },
+  {
+    "id": "STAARA1-T2-007",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Laws of exponents",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Which expression is equivalent to (3x⁻²)(4x⁵), where x is not 0?",
+    "options": [
+      "7x³",
+      "12x⁻¹⁰",
+      "12x⁷",
+      "12x³"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Multiply the coefficients (3 · 4 = 12) and add the exponents (−2 + 5 = 3): 12x³. Adding the coefficients gives 7x³."
+  },
+  {
+    "id": "STAARA1-T2-008",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Zeros",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the zero of f(x) = 4x − 12?",
+    "lockedOrder": true,
+    "options": [
+      "−12",
+      "−3",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The zero is where f(x) = 0: 4x − 12 = 0, so x = 3. −12 is the y-intercept, where x = 0."
+  },
+  {
+    "id": "STAARA1-T2-009",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Domain",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the domain of f(x) = 3(x − 2)² − 7?",
+    "options": [
+      "All real numbers",
+      "All x ≥ 2",
+      "All x ≥ −7",
+      "All x ≤ 2"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Any real number can be put in for x in a quadratic, so the domain is all real numbers. The value −7 limits the range, y ≥ −7, not the domain."
+  },
+  {
+    "id": "STAARA1-T2-010",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Equations with fractions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "fractionOps",
+    "stem": "What is the solution of x/4 + 2 = x/2 − 1?",
+    "lockedOrder": true,
+    "options": [
+      "−12",
+      "4",
+      "6",
+      "12"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Multiply every term by 4: x + 8 = 2x − 4. Subtract x and add 4: x = 12. Check: 3 + 2 = 5 and 6 − 1 = 5."
+  },
+  {
+    "id": "STAARA1-T2-011",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Slope from point-slope form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the slope of the line y − 4 = −(2/3)(x + 1)?",
+    "lockedOrder": true,
+    "options": [
+      "−3/2",
+      "−2/3",
+      "2/3",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "In y − y₁ = m(x − x₁) the slope m is the coefficient of the parentheses, −2/3. The 4 is the y-coordinate of a point on the line."
+  },
+  {
+    "id": "STAARA1-T2-012",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Direct variation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "y varies directly with x, and y = 18 when x = 4. What is the value of y when x = 10?",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The constant of variation is k = 18 ÷ 4 = 4.5, so y = 4.5x and y = 4.5(10) = 45."
+  },
+  {
+    "id": "STAARA1-T2-013",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Solving by square roots",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are the solutions of (x − 4)² = 25?",
+    "options": [
+      "x = 9 or x = 1",
+      "x = 9 or x = −1",
+      "x = 29 or x = −21",
+      "x = 5 or x = −5"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Take the square root of both sides: x − 4 = 5 or x − 4 = −5, so x = 9 or x = −1. Forgetting the negative root loses x = −1."
+  },
+  {
+    "id": "STAARA1-T2-014",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Meaning of b",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A club's membership t years from now is modeled by M = 1,200(1.08)ᵗ. Which describes how the membership changes?",
+    "options": [
+      "It grows by 108% a year",
+      "It grows by 1.08 a year",
+      "It grows by 8% a year",
+      "It grows by 0.08% a year"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The factor 1.08 is 100% + 8%, so each year the membership is the last year's plus 8%. Growing by 108% would more than double it."
+  },
+  {
+    "id": "STAARA1-T2-015",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Squaring a binomial",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to (x + 5)²?",
+    "options": [
+      "x² + 25",
+      "x² + 5x + 25",
+      "x² + 10x + 10",
+      "x² + 10x + 25"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "(x + 5)² = (x + 5)(x + 5) = x² + 5x + 5x + 25 = x² + 10x + 25. Squaring each term to get x² + 25 leaves out the two middle terms."
+  },
+  {
+    "id": "STAARA1-T2-016",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Rational exponents",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "What is the value of 16 raised to the 3/4 power?",
+    "lockedOrder": true,
+    "options": [
+      "2",
+      "8",
+      "12",
+      "64"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A 3/4 power is the fourth root raised to the third power: the fourth root of 16 is 2, and 2³ = 8. Multiplying 16 by 3/4 gives 12, which is not how exponents work."
+  },
+  {
+    "id": "STAARA1-T2-017",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Rate of change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A graph of distance in miles against time in hours is a line through (1, 45) and (4, 180). What is the rate of change?",
+    "options": [
+      "45 miles per hour",
+      "60 miles per hour",
+      "180 miles per hour",
+      "135 miles per hour"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The distance rises 180 − 45 = 135 miles in 4 − 1 = 3 hours, so the rate is 135 ÷ 3 = 45 miles per hour. 135 is the change in distance before dividing by time."
+  },
+  {
+    "id": "STAARA1-T2-018",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Completing the square",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "To solve x² + 8x + 3 = 0 by completing the square, the equation is rewritten as (x + p)² = q. What is the value of q?",
+    "numeric": {
+      "answers": [
+        "13"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Move the 3: x² + 8x = −3. Add (8/2)² = 16 to both sides: (x + 4)² = 13, so q = 13."
+  },
+  {
+    "id": "STAARA1-T2-019",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Solving inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which inequality is the solution of −2(x − 6) > 4x?",
+    "options": [
+      "x > 2",
+      "x < 2",
+      "x < −2",
+      "x > −2"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Distribute: −2x + 12 > 4x. Add 2x: 12 > 6x, so 2 > x, which is x < 2. Test x = 0: 12 > 0 is true, and 0 < 2."
+  },
+  {
+    "id": "STAARA1-T2-020",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Key features in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A gym charges a joining fee and a monthly fee. The total cost for m months is C = 25m + 60. What does 60 represent?",
+    "options": [
+      "The monthly fee",
+      "The cost per year",
+      "The joining fee",
+      "The number of months"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "60 is the cost when m = 0, before any months are paid: the joining fee. The monthly fee is the rate of change, 25."
+  },
+  {
+    "id": "STAARA1-T2-021",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Parallel lines",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which equation describes the line through (−2, 5) that is parallel to y = −4x + 1?",
+    "options": [
+      "y = −4x + 13",
+      "y = (1/4)x + 5.5",
+      "y = 4x + 13",
+      "y = −4x − 3"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "A parallel line has the same slope, −4. Then 5 = −4(−2) + b, so 5 = 8 + b and b = −3. y = (1/4)x + 5.5 passes through the point but is perpendicular."
+  },
+  {
+    "id": "STAARA1-T2-022",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Writing decay functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A \\$900 laptop loses 25% of its value each year. Which function gives its value V after t years?",
+    "options": [
+      "V = 900(0.75)ᵗ",
+      "V = 900(0.25)ᵗ",
+      "V = 900(1.25)ᵗ",
+      "V = 900 − 0.25t"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Losing 25% means keeping 75%, so the factor is 0.75. A factor of 0.25 would keep only a quarter of the value each year."
+  },
+  {
+    "id": "STAARA1-T2-023",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Writing in vertex form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A parabola has its vertex at (2, −3) and passes through (4, 5). Which function does it represent?",
+    "options": [
+      "f(x) = 2(x + 2)² − 3",
+      "f(x) = 2(x − 2)² − 3",
+      "f(x) = 4(x − 2)² − 3",
+      "f(x) = 2(x − 2)² + 3"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Start with f(x) = a(x − 2)² − 3. At (4, 5): 5 = a(2)² − 3, so 4a = 8 and a = 2. The value a = 4 forgets to square the 2."
+  },
+  {
+    "id": "STAARA1-T2-024",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Dividing polynomials",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is (x² + 7x + 12) ÷ (x + 3)?",
+    "options": [
+      "x − 4",
+      "x + 9",
+      "x + 4",
+      "x + 10"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "x² + 7x + 12 factors as (x + 3)(x + 4), so dividing by x + 3 leaves x + 4. Check: (x + 3)(x + 4) = x² + 7x + 12."
+  },
+  {
+    "id": "STAARA1-T2-025",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Literal equations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The formula P = 2l + 2w gives the perimeter of a rectangle. Which equation is solved for w?",
+    "options": [
+      "w = P − l",
+      "w = (P + 2l)/2",
+      "w = P/2 − 2l",
+      "w = (P − 2l)/2"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Subtract 2l from both sides (P − 2l = 2w), then divide by 2: w = (P − 2l)/2. P/2 − 2l divides only P by 2."
+  },
+  {
+    "id": "STAARA1-T2-026",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Graphing linear inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A graph shows a solid line y = −x + 4, and the region above the line is shaded. Which inequality is graphed?",
+    "options": [
+      "y ≥ −x + 4",
+      "y > −x + 4",
+      "y ≤ −x + 4",
+      "y < −x + 4"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "A solid line is included in the solution (≥ or ≤), and shading above means y is greater than the line: y ≥ −x + 4. A dashed line would mean >."
+  },
+  {
+    "id": "STAARA1-T2-027",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Inequalities in context",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "inequalities",
+    "stem": "Kira has \\$65 saved and adds \\$15 each week. What is the fewest number of weeks before she has at least \\$200?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "65 + 15w ≥ 200, so 15w ≥ 135 and w ≥ 9. After 9 weeks she has exactly \\$200, which counts as at least \\$200."
+  },
+  {
+    "id": "STAARA1-T2-028",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Transformations of f(x) = x²",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does the graph of g(x) = −0.5x² compare with the graph of f(x) = x²?",
+    "options": [
+      "Narrower and opens downward",
+      "Wider and opens downward",
+      "Wider and opens upward",
+      "Narrower and opens upward"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The negative sign reflects the parabola so it opens downward, and a coefficient between −1 and 1 (other than 0) makes it wider."
+  },
+  {
+    "id": "STAARA1-T2-029",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Vertical and horizontal lines",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describes the line through (3, −7) that is parallel to the y-axis?",
+    "options": [
+      "y = −7; slope undefined",
+      "x = 3; slope 0",
+      "x = 3; slope undefined",
+      "y = −7; slope 0"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "A line parallel to the y-axis is vertical, so every point has x = 3, and a vertical line has an undefined slope. y = −7 is the horizontal line through the point."
+  },
+  {
+    "id": "STAARA1-T2-030",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Writing from a table",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| x | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| y | 6 | 18 | 54 | 162 |",
+    "stem": "Which function represents the data in the table?",
+    "options": [
+      "y = 3(6)ˣ",
+      "y = 6x + 12",
+      "y = 6(12)ˣ",
+      "y = 6(3)ˣ"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "y = 6 when x = 0, and each y is 3 times the one before, so y = 6(3)ˣ. y = 6x + 12 fits only the first two points."
+  },
+  {
+    "id": "STAARA1-T2-031",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Transformations of f(x) = x",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function's graph is the graph of f(x) = x made steeper and then moved down 2 units?",
+    "options": [
+      "g(x) = 4x − 2",
+      "g(x) = 0.25x − 2",
+      "g(x) = 4x + 2",
+      "g(x) = 0.25x + 2"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Multiplying by 4 makes the slope 4, which is steeper than 1, and subtracting 2 moves the line down 2. A slope of 0.25 makes the line less steep."
+  },
+  {
+    "id": "STAARA1-T2-032",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Solving systems",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "What is the solution of the system 2x + 3y = 7 and 4x − 3y = 23?",
+    "options": [
+      "(−1, 5)",
+      "(5, −1)",
+      "(5, 1)",
+      "(2, 1)"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Adding the equations cancels y: 6x = 30, so x = 5. Then 2(5) + 3y = 7 gives y = −1. (2, 1) works in the first equation only."
+  },
+  {
+    "id": "STAARA1-T2-033",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Quadratic models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A quadratic model of a shop's weekly revenue R, in dollars, at a price of p dollars is R = −20p² + 400p. What revenue does the model predict at a price of \\$8?",
+    "lockedOrder": true,
+    "options": [
+      "\\$1,280",
+      "\\$1,920",
+      "\\$2,000",
+      "\\$3,200"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "R = −20(8)² + 400(8) = −20(64) + 3,200 = −1,280 + 3,200 = \\$1,920. \\$2,000 is the model's maximum, at a price of \\$10."
+  },
+  {
+    "id": "STAARA1-T2-034",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Systems by graphing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One line passes through (0, 4) and (2, 0). Another passes through (0, −2) and (3, 1). At what point do the lines intersect?",
+    "options": [
+      "(0, 4)",
+      "(3, 1)",
+      "(2, 0)",
+      "(1, 2)"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The first line is y = −2x + 4 and the second is y = x − 2. Setting −2x + 4 = x − 2 gives x = 2 and y = 0. (1, 2) is on the first line only."
+  },
+  {
+    "id": "STAARA1-T2-035",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Distributive property",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "distributing",
+    "stem": "When 4(2x − 5) − 3(x − 6) is written in the form ax + b, what is the value of b?",
+    "numeric": {
+      "answers": [
+        "-2"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "4(2x − 5) = 8x − 20 and −3(x − 6) = −3x + 18. Together that is 5x − 2, so b = −2. Forgetting to distribute the negative gives −38."
+  },
+  {
+    "id": "STAARA1-T2-036",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Recursive sequences",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sequence is defined by a(1) = 3 and a(n) = −2 · a(n − 1) for n ≥ 2. What is a(5)?",
+    "lockedOrder": true,
+    "options": [
+      "−96",
+      "−48",
+      "24",
+      "48"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Each term is −2 times the one before: 3, −6, 12, −24, 48. Five terms are needed, so a(5) = 48; −96 is a(6)."
+  },
+  {
+    "id": "STAARA1-T2-037",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Writing inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Maya needs to earn at least \\$90. She earns \\$10 an hour mowing lawns and \\$6 an hour babysitting. Which inequality shows m hours of mowing and b hours of babysitting that meet her goal?",
+    "options": [
+      "10m + 6b ≤ 90",
+      "10m + 6b > 90",
+      "6m + 10b ≥ 90",
+      "10m + 6b ≥ 90"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "\"At least \\$90\" means \\$90 or more, so the earnings must be ≥ 90. Using > would leave out earning exactly \\$90."
+  },
+  {
+    "id": "STAARA1-T2-038",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Key attributes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement about f(x) = −x² + 4x + 5 is true?",
+    "options": [
+      "Its maximum value is 9",
+      "Its minimum value is 9",
+      "Its zeros are −5 and 1",
+      "Its axis is x = −2"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The axis is x = −4/(2(−1)) = 2 and f(2) = −4 + 8 + 5 = 9. The parabola opens down, so 9 is a maximum. The zeros are 5 and −1."
+  },
+  {
+    "id": "STAARA1-T2-039",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Evaluating exponential functions",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "If f(x) = 2(1.5)ˣ, what is f(2)?",
+    "numeric": {
+      "answers": [
+        "4.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "f(2) = 2(1.5)² = 2(2.25) = 4.5. Multiplying first, 3², gives 9, but the exponent applies only to 1.5."
+  },
+  {
+    "id": "STAARA1-T2-040",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Association and causation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A study finds that towns with higher ice cream sales also have more sunburns. Which conclusion is best supported?",
+    "options": [
+      "Ice cream causes sunburn",
+      "The two are associated",
+      "Sunburn causes ice cream sales",
+      "The two are not related"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The data show the two rise together, which is an association. Both are likely caused by hot, sunny weather, so neither causes the other."
+  },
+  {
+    "id": "STAARA1-T2-041",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Systems in context",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "systems",
+    "stem": "Gym A charges \\$20 to join and \\$35 a month. Gym B charges \\$50 to join and \\$29 a month. After how many months is the total cost the same?",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "20 + 35m = 50 + 29m, so 6m = 30 and m = 5. Both gyms then cost \\$195."
+  },
+  {
+    "id": "STAARA1-T2-042",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Writing from a graph",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A parabola crosses the x-axis at (1, 0) and (7, 0) and crosses the y-axis at (0, 14). Which function does it represent?",
+    "options": [
+      "f(x) = (x − 1)(x − 7)",
+      "f(x) = 2(x + 1)(x + 7)",
+      "f(x) = 2(x − 1)(x − 7)",
+      "f(x) = 14(x − 1)(x − 7)"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The zeros give f(x) = a(x − 1)(x − 7). At x = 0, a(−1)(−7) = 7a = 14, so a = 2. Without the 2 the y-intercept would be 7."
+  },
+  {
+    "id": "STAARA1-T2-043",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Number of solutions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How many solutions does the system y = 3x + 1 and 6x − 2y = 4 have?",
+    "options": [
+      "Exactly one",
+      "Exactly two",
+      "Infinitely many",
+      "No solution"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The second equation is y = 3x − 2. Both lines have slope 3 but different y-intercepts, so they are parallel and never meet."
+  },
+  {
+    "id": "STAARA1-T2-044",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Factoring with a leading coefficient",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Which is the factored form of 3x² + 10x − 8?",
+    "options": [
+      "(3x − 2)(x + 4)",
+      "(3x + 2)(x − 4)",
+      "(3x − 4)(x + 2)",
+      "(3x + 8)(x − 1)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "(3x − 2)(x + 4) = 3x² + 12x − 2x − 8 = 3x² + 10x − 8. (3x + 2)(x − 4) gives a middle term of −10x, the wrong sign."
+  },
+  {
+    "id": "STAARA1-T2-045",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Evaluating functions",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "functionNotation",
+    "stem": "For g(x) = 5 − 3x, what value of x makes g(x) = −13?",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Set 5 − 3x = −13. Subtract 5: −3x = −18, so x = 6. Check: 5 − 3(6) = −13."
+  },
+  {
+    "id": "STAARA1-T2-046",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Range",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The function f(x) = −2x + 6 has the domain −1 ≤ x ≤ 4. What is its range?",
+    "options": [
+      "−1 ≤ y ≤ 4",
+      "−2 ≤ y ≤ 8",
+      "−2 ≤ y ≤ 6",
+      "6 ≤ y ≤ 8"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "f(−1) = 8 and f(4) = −2, and a line takes every value between its endpoints, so the range is −2 ≤ y ≤ 8. −1 ≤ y ≤ 4 repeats the domain."
+  },
+  {
+    "id": "STAARA1-T2-047",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Exponential models",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "An exponential model of a city's bike-share rides, in thousands, is y = 150(1.12)ˣ, where x is years since 2020. How many thousand rides does it predict for 2026, to the nearest whole number?",
+    "numeric": {
+      "answers": [
+        "296"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "2026 is x = 6, and 150(1.12)⁶ ≈ 150(1.9738) ≈ 296.1, so about 296 thousand rides."
+  },
+  {
+    "id": "STAARA1-T2-048",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Number of solutions",
+    "difficulty": 3,
+    "format": "matrix",
+    "basics": "solveX",
+    "stem": "How many solutions does each equation have?",
+    "rows": [
+      "3x + 5 = 3x − 2",
+      "2(x + 4) = 2x + 8",
+      "5x − 1 = 2x + 8"
+    ],
+    "columns": [
+      "One solution",
+      "No solution",
+      "Infinitely many"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ],
+    "calculator": true,
+    "explanation": "3x + 5 = 3x − 2 simplifies to 5 = −2, which is never true. 2(x + 4) = 2x + 8 is true for every x. 5x − 1 = 2x + 8 has the one solution x = 3."
+  },
+  {
+    "id": "STAARA1-T2-049",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Quadratic formula",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "What is the positive solution of x² + 2x − 7 = 0, rounded to the nearest hundredth?",
+    "numeric": {
+      "answers": [
+        "1.83"
+      ],
+      "tolerance": 0.005
+    },
+    "calculator": true,
+    "explanation": "x = (−2 ± √(4 + 28))/2 = (−2 ± √32)/2 = −1 ± 2√2. The positive solution is −1 + 2.828... ≈ 1.83."
+  },
+  {
+    "id": "STAARA1-T2-050",
+    "section": "alg",
+    "test": 2,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Lines of fit",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A line of fit for a plant's height h, in centimeters, after d days is h = 1.8d + 4.5. What height does the model predict after 20 days, in centimeters?",
+    "numeric": {
+      "answers": [
+        "40.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "h = 1.8(20) + 4.5 = 36 + 4.5 = 40.5 centimeters."
+  },
+  {
+    "id": "STAARA1-D-001",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Adding polynomials",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "negativeNumbers",
+    "stem": "What is (2x + 7) + (5x − 9)?",
+    "options": [
+      "7x + 16",
+      "3x − 2",
+      "7x − 2",
+      "7x − 16"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "2x + 5x = 7x and 7 + (−9) = −2, so the sum is 7x − 2. The result 7x + 16 adds 9 instead of subtracting it."
+  },
+  {
+    "id": "STAARA1-D-002",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Simplifying radicals",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "squareRoots",
+    "stem": "Which expression is √50 in simplest radical form?",
+    "options": [
+      "2√5",
+      "25√2",
+      "10√5",
+      "5√2"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "50 = 25 · 2 and √25 = 5, so √50 = 5√2. 25√2 forgets to take the square root of 25."
+  },
+  {
+    "id": "STAARA1-D-003",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Point-slope form",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation is in point-slope form for the line with slope 5 through (−1, 3)?",
+    "options": [
+      "y − 3 = 5(x + 1)",
+      "y + 3 = 5(x − 1)",
+      "y − 3 = 5(x − 1)",
+      "y − 1 = 5(x + 3)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Point-slope form is y − y₁ = m(x − x₁). With (−1, 3): y − 3 = 5(x − (−1)) = 5(x + 1). Writing x − 1 forgets that x₁ is negative."
+  },
+  {
+    "id": "STAARA1-D-004",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Growth and decay",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which function shows exponential decay?",
+    "options": [
+      "y = 0.7(4)ˣ",
+      "y = 4(0.7)ˣ",
+      "y = 4 − 0.7x",
+      "y = 4(1.7)ˣ"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Decay needs a base between 0 and 1, here 0.7. y = 0.7(4)ˣ has base 4, so it grows; y = 4 − 0.7x is linear."
+  },
+  {
+    "id": "STAARA1-D-005",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Two-step equations",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "solveX",
+    "stem": "What is the solution of x/3 − 4 = 2?",
+    "lockedOrder": true,
+    "options": [
+      "−6",
+      "2",
+      "6",
+      "18"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Add 4: x/3 = 6. Multiply by 3: x = 18. Stopping at x/3 = 6 gives 6, which is only a third of x."
+  },
+  {
+    "id": "STAARA1-D-006",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Vertex form",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the vertex of the graph of f(x) = −3(x + 2)² + 1?",
+    "options": [
+      "(2, 1)",
+      "(−2, −1)",
+      "(−2, 1)",
+      "(1, −2)"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "x + 2 is x − (−2), so h = −2, and k = 1. The −3 changes the width and direction, not the vertex."
+  },
+  {
+    "id": "STAARA1-D-007",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Slope from a graph",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A line on a graph passes through (0, −1) and (3, 5). What is its slope?",
+    "lockedOrder": true,
+    "options": [
+      "−2",
+      "1/2",
+      "2",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The rise is 5 − (−1) = 6 and the run is 3 − 0 = 3, so the slope is 6 ÷ 3 = 2. Run over rise would give 1/2."
+  },
+  {
+    "id": "STAARA1-D-008",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Combining like terms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is (x² + 4x) + (3x² − x)?",
+    "options": [
+      "4x² + 5x",
+      "3x² + 3x",
+      "7x³",
+      "4x² + 3x"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Only like terms combine: x² + 3x² = 4x² and 4x − x = 3x. x² and x are not like terms, so they never add into x³."
+  },
+  {
+    "id": "STAARA1-D-009",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Laws of exponents",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Which expression is equivalent to (2x³)(5x⁵)?",
+    "options": [
+      "10x⁸",
+      "7x⁸",
+      "10x¹⁵",
+      "7x¹⁵"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Multiply the coefficients (2 · 5 = 10) and add the exponents (3 + 5 = 8). Multiplying the exponents to get x¹⁵ is the rule for a power of a power, not a product."
+  },
+  {
+    "id": "STAARA1-D-010",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Horizontal lines",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation describes the line through (−2, 6) that is parallel to the x-axis?",
+    "options": [
+      "x = −2",
+      "y = 6",
+      "y = −2",
+      "x = 6"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "A line parallel to the x-axis is horizontal, so every point on it has the same y-value, 6. x = −2 is the vertical line through the point."
+  },
+  {
+    "id": "STAARA1-D-011",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "y-intercept",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the y-intercept of the graph of f(x) = 7(2)ˣ?",
+    "options": [
+      "(0, 2)",
+      "(0, 14)",
+      "(0, 7)",
+      "(7, 0)"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "f(0) = 7(2)⁰ = 7(1) = 7, so the graph crosses the y-axis at (0, 7). (0, 14) is f(1) placed on the y-axis."
+  },
+  {
+    "id": "STAARA1-D-012",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "One-step inequalities",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which inequality is the solution of x − 6 ≤ −2?",
+    "options": [
+      "x ≤ −8",
+      "x ≥ 4",
+      "x ≤ 8",
+      "x ≤ 4"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Add 6 to both sides: x ≤ 4. Adding or subtracting never reverses the sign; only multiplying or dividing by a negative does."
+  },
+  {
+    "id": "STAARA1-D-013",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Range",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the range of f(x) = 2x² − 8x + 3?",
+    "options": [
+      "y ≥ −5",
+      "y ≤ −5",
+      "y ≥ 2",
+      "y ≥ 3"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The axis is x = 8/4 = 2, and f(2) = 8 − 16 + 3 = −5. The parabola opens up, so every output is −5 or more. 2 is the x-value of the vertex."
+  },
+  {
+    "id": "STAARA1-D-014",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Multiplying by a monomial",
+    "difficulty": 1,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to 3x(2x² − 4x + 1)?",
+    "options": [
+      "6x³ − 4x + 1",
+      "6x³ − 12x² + 3x",
+      "6x² − 12x + 3",
+      "5x³ − 7x² + 3x"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Multiply 3x by every term: 3x · 2x² = 6x³, 3x · (−4x) = −12x² and 3x · 1 = 3x. Multiplying only the first term gives 6x³ − 4x + 1."
+  },
+  {
+    "id": "STAARA1-D-015",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Literal equations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which equation is d = rt solved for t?",
+    "options": [
+      "t = dr",
+      "t = r/d",
+      "t = d/r",
+      "t = d − r"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "t is multiplied by r, so divide both sides by r: t = d/r. Subtracting r would undo addition, not multiplication."
+  },
+  {
+    "id": "STAARA1-D-016",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Slope from an equation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the slope of the line 5x + 3y = 9?",
+    "lockedOrder": true,
+    "options": [
+      "−5/3",
+      "−3/5",
+      "5/3",
+      "3"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Solve for y: 3y = −5x + 9, so y = −(5/3)x + 3. The slope is −5/3, and 3 is the y-intercept."
+  },
+  {
+    "id": "STAARA1-D-017",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Standard form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which equation is y = (2/3)x − 4 written in standard form?",
+    "options": [
+      "2x + 3y = 12",
+      "2x − 3y = 4",
+      "3x − 2y = 12",
+      "2x − 3y = 12"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Multiply by 3: 3y = 2x − 12. Move the x term: −2x + 3y = −12, which is 2x − 3y = 12. Check with x = 0: y = −4 in both."
+  },
+  {
+    "id": "STAARA1-D-018",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Range",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the range of f(x) = 3(0.5)ˣ?",
+    "options": [
+      "y > 0",
+      "y ≥ 3",
+      "0 < y < 3",
+      "y < 0"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "(0.5)ˣ is always positive, so f(x) > 0, and for negative x it grows past 3 (f(−1) = 6). So the range is every positive number."
+  },
+  {
+    "id": "STAARA1-D-019",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Equations with decimals",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "solveX",
+    "stem": "What value of x makes 0.6x + 1.5 = 0.2x + 4.3 true?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Subtract 0.2x: 0.4x + 1.5 = 4.3. Subtract 1.5: 0.4x = 2.8, so x = 7."
+  },
+  {
+    "id": "STAARA1-D-020",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Dividing by a monomial",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is (6x² + 4x) ÷ 2x?",
+    "options": [
+      "3x² + 2",
+      "3x + 2",
+      "3x + 4",
+      "6x + 2"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Divide each term by 2x: 6x² ÷ 2x = 3x and 4x ÷ 2x = 2. Dividing only the coefficients and keeping x² gives 3x² + 2."
+  },
+  {
+    "id": "STAARA1-D-021",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Adding radicals",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "squareRoots",
+    "stem": "What is √48 + √27 in simplest radical form?",
+    "options": [
+      "√75",
+      "12√3",
+      "7√3",
+      "7√6"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "√48 = 4√3 and √27 = 3√3, and like radicals add: 4√3 + 3√3 = 7√3. Adding under one root (√75) is not allowed; √75 is only 5√3."
+  },
+  {
+    "id": "STAARA1-D-022",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Equation from a graph",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A line crosses the y-axis at −3 and passes through (2, 5). Which equation describes it?",
+    "options": [
+      "y = −3x + 4",
+      "y = 4x + 3",
+      "y = 2x − 3",
+      "y = 4x − 3"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The slope is (5 − (−3)) ÷ (2 − 0) = 8 ÷ 2 = 4, and the y-intercept is −3. y = 2x − 3 has the right intercept but gives y = 1 at x = 2."
+  },
+  {
+    "id": "STAARA1-D-023",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Solving by factoring",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "What are the solutions of x² + 3x = 28? Choose two.",
+    "options": [
+      "4",
+      "−7",
+      "7",
+      "28",
+      "−4"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2,
+    "calculator": true,
+    "explanation": "Set it equal to 0: x² + 3x − 28 = 0, which factors as (x + 7)(x − 4). So x = −7 or x = 4. Check: 16 + 12 = 28."
+  },
+  {
+    "id": "STAARA1-D-024",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Domain",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the domain of f(x) = 5(1.4)ˣ?",
+    "options": [
+      "All real x",
+      "Only x > 0",
+      "Only x ≥ 0",
+      "Only x ≥ 5"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Any real number can be an exponent, including negatives and fractions, so the domain is all real numbers. The outputs are limited (y > 0), not the inputs."
+  },
+  {
+    "id": "STAARA1-D-025",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Equations with fractions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "fractionOps",
+    "stem": "What is the solution of (2/3)(x − 6) = 10?",
+    "lockedOrder": true,
+    "options": [
+      "9",
+      "15",
+      "21",
+      "24"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Multiply both sides by 3/2: x − 6 = 15, so x = 21. Distributing only to x, (2/3)x − 6 = 10, gives 24."
+  },
+  {
+    "id": "STAARA1-D-026",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Rate of change",
+    "difficulty": 2,
+    "format": "numeric",
+    "passage": "| Minutes | 10 | 20 | 30 |\n|---|---|---|---|\n| Pages | 18 | 33 | 48 |",
+    "stem": "Ana's reading log shows the total pages read after different numbers of minutes. How many pages per minute does she read?",
+    "numeric": {
+      "answers": [
+        "1.5"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "Every 10 more minutes adds 15 pages, so the rate is 15 ÷ 10 = 1.5 pages per minute."
+  },
+  {
+    "id": "STAARA1-D-027",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Subtracting polynomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "negativeNumbers",
+    "stem": "What is (8x − 3) − (2x − 7)?",
+    "options": [
+      "6x − 10",
+      "6x + 4",
+      "6x − 4",
+      "10x + 4"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Subtracting −7 is adding 7: 8x − 2x = 6x and −3 + 7 = 4. The result 6x − 10 subtracts 7 instead of adding it."
+  },
+  {
+    "id": "STAARA1-D-028",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Power of a power",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Which expression is equivalent to (2a³)⁴?",
+    "options": [
+      "8a¹²",
+      "2a¹²",
+      "16a¹²",
+      "16a⁷"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Raise each factor to the 4th power: 2⁴ = 16 and (a³)⁴ = a¹². The result 8a¹² multiplies 2 by 4 instead of raising it to the 4th power."
+  },
+  {
+    "id": "STAARA1-D-029",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Equation from a description",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A candle is 30 centimeters tall and burns down 2.5 centimeters an hour. Which equation gives its height h after t hours?",
+    "options": [
+      "h = 2.5t + 30",
+      "h = 30t − 2.5",
+      "h = 2.5 − 30t",
+      "h = 30 − 2.5t"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The candle starts at 30 and loses 2.5 each hour, so h = 30 − 2.5t. h = 2.5t + 30 would make the candle grow."
+  },
+  {
+    "id": "STAARA1-D-030",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Meaning of b",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The number of bees in a hive w weeks from now is modeled by B = 2,500(1.06)ʷ. By what percent does the number of bees grow each week?",
+    "options": [
+      "6%",
+      "106%",
+      "0.06%",
+      "1.06%"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "1.06 = 1 + 0.06, so the hive grows by 0.06, or 6%, each week. 106% is the size each week compared with the week before."
+  },
+  {
+    "id": "STAARA1-D-031",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Dividing by a negative",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "inequalities",
+    "stem": "Which inequality is the solution of −4x > 28?",
+    "options": [
+      "x > −7",
+      "x < −7",
+      "x < 7",
+      "x > 7"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Divide by −4 and reverse the sign: x < −7. Test x = −10: −4(−10) = 40, and 40 > 28."
+  },
+  {
+    "id": "STAARA1-D-032",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Factoring to solve",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are the solutions of 3x² − 2x − 8 = 0?",
+    "options": [
+      "x = 4/3 or x = −2",
+      "x = −8/3 or x = 1",
+      "x = −4/3 or x = 2",
+      "x = −2/3 or x = 4"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "3x² − 2x − 8 = (3x + 4)(x − 2), so 3x + 4 = 0 gives x = −4/3 and x − 2 = 0 gives x = 2."
+  },
+  {
+    "id": "STAARA1-D-033",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Multiplying binomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to (x − 7)(x + 7)?",
+    "options": [
+      "x² + 49",
+      "x² − 14x − 49",
+      "x² − 14",
+      "x² − 49"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The middle terms cancel: x² + 7x − 7x − 49 = x² − 49. That is why a difference of squares has no x term."
+  },
+  {
+    "id": "STAARA1-D-034",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Negative exponents",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Which expression is equivalent to 6x⁻³y², where x is not 0?",
+    "options": [
+      "6y²/x³",
+      "1/(6x³y²)",
+      "6x³y²",
+      "y²/(6x³)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Only x has the negative exponent, so only x moves to the denominator: 6x⁻³y² = 6y²/x³. The coefficient 6 stays in the numerator."
+  },
+  {
+    "id": "STAARA1-D-035",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Intercepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the y-intercept of the graph of 2x + 5y = 20?",
+    "options": [
+      "(4, 0)",
+      "(0, 4)",
+      "(0, 10)",
+      "(10, 0)"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "At the y-intercept x = 0, so 5y = 20 and y = 4: the point (0, 4). (10, 0) is the x-intercept."
+  },
+  {
+    "id": "STAARA1-D-036",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Direct variation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which equation shows that y varies directly with x?",
+    "options": [
+      "y = 7x + 1",
+      "y = x + 7",
+      "y = 7x",
+      "xy = 7"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Direct variation has the form y = kx, a line through the origin. y = 7x + 1 does not pass through (0, 0), and xy = 7 is inverse variation."
+  },
+  {
+    "id": "STAARA1-D-037",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Meaning of a",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The amount of a medicine in the body h hours after a dose is A = 40(0.9)ʰ milligrams. How much medicine is in the body at the start?",
+    "options": [
+      "36 mg",
+      "0.9 mg",
+      "4 mg",
+      "40 mg"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "At h = 0 the factor (0.9)⁰ is 1, so A = 40 milligrams. 36 mg is the amount after 1 hour."
+  },
+  {
+    "id": "STAARA1-D-038",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Inequalities in context",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "inequalities",
+    "stem": "A truck can carry at most 2,000 pounds. The driver weighs 180 pounds and each box weighs 65 pounds. What is the greatest number of boxes the truck can carry?",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "180 + 65b ≤ 2,000, so 65b ≤ 1,820 and b ≤ 28. Exactly 28 boxes reach the limit, which is allowed."
+  },
+  {
+    "id": "STAARA1-D-039",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Multiplying polynomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "distributing",
+    "stem": "Which expression is equivalent to (x + 2)(x² − 3x + 1)?",
+    "options": [
+      "x³ − x² − 5x + 2",
+      "x³ − 3x² + x + 2",
+      "x³ + x² − 5x + 2",
+      "x³ − x² + 7x + 2"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "x(x² − 3x + 1) = x³ − 3x² + x and 2(x² − 3x + 1) = 2x² − 6x + 2. Adding: x³ − x² − 5x + 2. The result x³ − 3x² + x + 2 multiplies only the last term by 2."
+  },
+  {
+    "id": "STAARA1-D-040",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Evaluating functions",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "functionNotation",
+    "stem": "If f(x) = x² − 4x, what is f(3)?",
+    "lockedOrder": true,
+    "options": [
+      "−21",
+      "−3",
+      "3",
+      "21"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "f(3) = 3² − 4(3) = 9 − 12 = −3. Subtracting 9 instead of adding it gives −21."
+  },
+  {
+    "id": "STAARA1-D-041",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Vertex form to standard form",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is f(x) = (x + 3)² − 10 written in standard form?",
+    "options": [
+      "f(x) = x² + 3x − 1",
+      "f(x) = x² + 6x − 1",
+      "f(x) = x² + 6x − 19",
+      "f(x) = x² − 6x − 1"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "(x + 3)² = x² + 6x + 9, and 9 − 10 = −1. Writing the middle term as 3x instead of 2 · 3x gives x² + 3x − 1."
+  },
+  {
+    "id": "STAARA1-D-042",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Direct variation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Leo's pay varies directly with the hours he works. He earns \\$87 for 6 hours. How much does he earn for 15 hours?",
+    "lockedOrder": true,
+    "options": [
+      "\\$96.00",
+      "\\$130.50",
+      "\\$217.50",
+      "\\$1,305.00"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "His hourly rate is \\$87 ÷ 6 = \\$14.50, so 15 hours pay 15 × \\$14.50 = \\$217.50. \\$1,305 multiplies the 6-hour pay by 15 instead of the hourly rate."
+  },
+  {
+    "id": "STAARA1-D-043",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Writing growth functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A savings account starts with \\$500 and grows 4% each year. Which function gives the balance A after t years?",
+    "options": [
+      "A = 500(0.04)ᵗ",
+      "A = 500(1.4)ᵗ",
+      "A = 500(1.04)ᵗ",
+      "A = 500 + 1.04t"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Growing 4% means each year's balance is 104% of the last, a factor of 1.04. 1.4 would be 40% growth."
+  },
+  {
+    "id": "STAARA1-D-044",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Dividing polynomials",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is (2x² + 5x − 3) ÷ (x + 3)?",
+    "options": [
+      "2x + 1",
+      "x − 1",
+      "2x − 3",
+      "2x − 1"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "(x + 3)(2x − 1) = 2x² − x + 6x − 3 = 2x² + 5x − 3, so the quotient is 2x − 1. Check any choice by multiplying it by x + 3."
+  },
+  {
+    "id": "STAARA1-D-045",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Identifying functions",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Does each equation define y as a function of x?",
+    "rows": [
+      "y = 2x − 1",
+      "x = y²",
+      "y = x²",
+      "x = 4"
+    ],
+    "columns": [
+      "Function",
+      "Not a function"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "calculator": true,
+    "explanation": "y = 2x − 1 and y = x² give one y for each x. x = y² gives two y-values for x = 4 (2 and −2), and x = 4 is a vertical line, so neither is a function."
+  },
+  {
+    "id": "STAARA1-D-046",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Solutions of linear inequalities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which ordered pair is a solution of 2x − y > 3?",
+    "options": [
+      "(3, 1)",
+      "(1, −1)",
+      "(0, −2)",
+      "(2, 2)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "For (3, 1): 2(3) − 1 = 5, and 5 > 3. For (1, −1) the value is exactly 3, which is not greater than 3."
+  },
+  {
+    "id": "STAARA1-D-047",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Checking solutions",
+    "difficulty": 2,
+    "format": "matrix",
+    "basics": "inequalities",
+    "stem": "Is each value of x a solution of 3x − 2 > 7?",
+    "rows": [
+      "x = 2",
+      "x = 3",
+      "x = 4",
+      "x = 10"
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "calculator": true,
+    "explanation": "The inequality simplifies to x > 3. So 4 and 10 work, 2 does not, and 3 gives 7 > 7, which is false."
+  },
+  {
+    "id": "STAARA1-D-048",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Perpendicular slopes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A line has a slope of −4/5. What is the slope of a line perpendicular to it?",
+    "lockedOrder": true,
+    "options": [
+      "−5/4",
+      "−4/5",
+      "4/5",
+      "5/4"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "Perpendicular slopes are opposite reciprocals: flip −4/5 to −5/4 and change the sign to 5/4. Their product is −1."
+  },
+  {
+    "id": "STAARA1-D-049",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Writing decay functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 64-gram sample loses half of its mass every day. Which function gives its mass m after d days?",
+    "options": [
+      "m = 64(2)ᵈ",
+      "m = 64(0.5)ᵈ",
+      "m = 0.5(64)ᵈ",
+      "m = 64 − 0.5d"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The sample starts at 64 grams and is multiplied by 0.5 each day. A factor of 2 would double it."
+  },
+  {
+    "id": "STAARA1-D-050",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Writing from solutions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A parabola has zeros at x = 0 and x = 6 and passes through (3, −18). Which function does it represent?",
+    "options": [
+      "f(x) = x² − 6x",
+      "f(x) = −2x² + 12x",
+      "f(x) = 2x² − 12x",
+      "f(x) = 2x² + 12x"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "f(x) = a · x(x − 6), and at x = 3: a(3)(−3) = −9a = −18, so a = 2 and f(x) = 2x² − 12x. x² − 6x has the right zeros but gives −9 at x = 3."
+  },
+  {
+    "id": "STAARA1-D-051",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Factoring trinomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Which is the factored form of x² + 9x + 20?",
+    "options": [
+      "(x + 2)(x + 10)",
+      "(x + 4)(x − 5)",
+      "(x + 1)(x + 20)",
+      "(x + 4)(x + 5)"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "4 and 5 multiply to 20 and add to 9. 2 and 10 also multiply to 20, but they add to 12."
+  },
+  {
+    "id": "STAARA1-D-052",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Evaluating functions",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "substitution",
+    "stem": "The height of a ball, in feet, after t seconds is h(t) = −16t² + 64t. What is h(1)?",
+    "numeric": {
+      "answers": [
+        "48"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "h(1) = −16(1)² + 64(1) = −16 + 64 = 48 feet."
+  },
+  {
+    "id": "STAARA1-D-053",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Substitution",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "What is the solution of the system x = 2y − 1 and 3x + 4y = 27?",
+    "options": [
+      "(5, 3)",
+      "(3, 5)",
+      "(5, 2)",
+      "(1, 6)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Substitute: 3(2y − 1) + 4y = 27, so 10y − 3 = 27 and y = 3. Then x = 2(3) − 1 = 5. (3, 5) swaps x and y."
+  },
+  {
+    "id": "STAARA1-D-054",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Inequality from a graph",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The points (0, 3), (2, 4) and (4, 5) lie on a solid boundary line, and the region above the line is shaded. Which inequality is graphed?",
+    "options": [
+      "y ≤ (1/2)x + 3",
+      "y ≥ (1/2)x + 3",
+      "y ≥ 2x + 3",
+      "y > (1/2)x + 3"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The line rises 1 for every 2 across, so the slope is 1/2, and it crosses the y-axis at 3. Solid with shading above means ≥. A slope of 2 inverts rise and run."
+  },
+  {
+    "id": "STAARA1-D-055",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Graphs of exponential functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describes the graph of f(x) = 2(3)ˣ?",
+    "options": [
+      "Falls left to right; y-intercept 2",
+      "Rises left to right; y-intercept 3",
+      "Rises left to right; y-intercept 2",
+      "Falls left to right; y-intercept 3"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "The base 3 is greater than 1, so the graph rises, and f(0) = 2(1) = 2. The base is not the y-intercept."
+  },
+  {
+    "id": "STAARA1-D-056",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Transformations of f(x) = x",
+    "difficulty": 2,
+    "format": "cloze",
+    "stem": "Compared with the graph of f(x) = x, the graph of g(x) = (1/3)x is [[1]], and the graph of h(x) = x + 6 crosses the y-axis [[2]].",
+    "blanks": [
+      [
+        "less steep",
+        "steeper",
+        "just as steep"
+      ],
+      [
+        "at the same point",
+        "6 units higher",
+        "6 units lower"
+      ]
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "calculator": true,
+    "explanation": "A slope of 1/3 is less than 1, so g rises more slowly. Adding 6 moves the y-intercept from 0 up to 6."
+  },
+  {
+    "id": "STAARA1-D-057",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Perfect square trinomials",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Which is the factored form of x² − 12x + 36?",
+    "options": [
+      "(x + 6)²",
+      "(x − 6)(x + 6)",
+      "(x − 4)(x − 9)",
+      "(x − 6)²"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "x² − 12x + 36 = x² − 2(6)(x) + 6², a perfect square trinomial, so it is (x − 6)². (x − 6)(x + 6) would be x² − 36."
+  },
+  {
+    "id": "STAARA1-D-058",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Function notation",
+    "difficulty": 2,
+    "format": "numeric",
+    "basics": "functionNotation",
+    "stem": "If f(x) = 3x + 2, what is the value of f(4) − f(1)?",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "f(4) = 14 and f(1) = 5, so f(4) − f(1) = 9. Note this is not f(3), which is 11."
+  },
+  {
+    "id": "STAARA1-D-059",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Transformations of f(x) = x²",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For f(x) = x², how does each new function move the graph?",
+    "rows": [
+      "f(x) + 5",
+      "f(x − 5)",
+      "f(x + 5)",
+      "f(x) − 5"
+    ],
+    "columns": [
+      "Up 5",
+      "Down 5",
+      "Left 5",
+      "Right 5"
+    ],
+    "correct": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "calculator": true,
+    "explanation": "A number added outside moves the graph up or down. Inside, x − 5 moves it right and x + 5 moves it left, the opposite of the sign."
+  },
+  {
+    "id": "STAARA1-D-060",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Elimination",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "What is the solution of the system x + 2y = 4 and 3x − y = 19?",
+    "options": [
+      "(6, −1)",
+      "(−1, 6)",
+      "(6, 1)",
+      "(4, 0)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Multiply the second equation by 2 (6x − 2y = 38) and add: 7x = 42, so x = 6. Then 6 + 2y = 4 gives y = −1. (4, 0) works only in the first equation."
+  },
+  {
+    "id": "STAARA1-D-061",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Systems from tables",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Items (x) | 0 | 1 | 2 |\n|---|---|---|---|\n| Store A cost (y) | 20 | 24 | 28 |\n| Store B cost (y) | 8 | 14 | 20 |",
+    "stem": "The tables show the total costs at two stores for x items. Which system represents the two stores?",
+    "options": [
+      "y = 20x + 4 and y = 8x + 6",
+      "y = 4x + 20 and y = 6x + 8",
+      "y = 4x + 20 and y = 8x + 6",
+      "y = 4x + 24 and y = 6x + 14"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Store A starts at 20 and adds 4 per item; Store B starts at 8 and adds 6 per item. y = 4x + 24 uses the cost of 1 item as the starting value."
+  },
+  {
+    "id": "STAARA1-D-062",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Asymptotes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the horizontal asymptote of the graph of y = 6(0.2)ˣ?",
+    "options": [
+      "y = 6",
+      "y = 0.2",
+      "y = 0",
+      "x = 0"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "As x grows, 6(0.2)ˣ shrinks toward 0 but never reaches it, so the graph levels off along y = 0. 6 is the y-intercept."
+  },
+  {
+    "id": "STAARA1-D-063",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Greatest common factor",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "gcfLcm",
+    "stem": "Which is 6x² + 15x factored completely?",
+    "options": [
+      "3x(2x + 15)",
+      "6x(x + 15)",
+      "3x(2x² + 5)",
+      "3x(2x + 5)"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The greatest common factor of 6x² and 15x is 3x, and 6x² ÷ 3x = 2x, 15x ÷ 3x = 5. Multiply back to check: 3x(2x + 5) = 6x² + 15x."
+  },
+  {
+    "id": "STAARA1-D-064",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Arithmetic sequences",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which formula gives the nth term of the sequence 5, 2, −1, −4, ...?",
+    "options": [
+      "a(n) = 8 − 3n",
+      "a(n) = 5 − 3n",
+      "a(n) = −3 + 5n",
+      "a(n) = 8 + 3n"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "The first term is 5 and the difference is −3, so a(n) = 5 − 3(n − 1) = 8 − 3n. Check n = 1: 8 − 3 = 5. The formula 5 − 3n gives 2 for the first term."
+  },
+  {
+    "id": "STAARA1-D-065",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Correlation",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "What kind of correlation would you expect between each pair of quantities?",
+    "rows": [
+      "Hours studied and test score",
+      "A car's age and its resale value",
+      "Height and the last digit of a phone number",
+      "Outdoor temperature and heating bill"
+    ],
+    "columns": [
+      "Positive",
+      "Negative",
+      "None"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      1
+    ],
+    "calculator": true,
+    "explanation": "More study tends to go with higher scores (positive). Older cars and colder weather go with lower values and higher bills (negative). A phone number's last digit has nothing to do with height."
+  },
+  {
+    "id": "STAARA1-D-066",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Checking a system",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "systems",
+    "stem": "Which ordered pair is a solution of both 2x − y = 1 and x + y = 8?",
+    "options": [
+      "(5, 3)",
+      "(3, 5)",
+      "(4, 4)",
+      "(1, 1)"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Adding the equations gives 3x = 9, so x = 3 and y = 5. (1, 1) makes the first equation true but not the second."
+  },
+  {
+    "id": "STAARA1-D-067",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Reasonable domain",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pool holds 12,000 gallons and drains at 800 gallons an hour until it is empty. What is a reasonable domain for the time t, in hours?",
+    "options": [
+      "0 ≤ t ≤ 12,000",
+      "{0, 1, 2, ..., 15}",
+      "0 ≤ t ≤ 15",
+      "0 ≤ t ≤ 800"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "It takes 12,000 ÷ 800 = 15 hours to empty, and time can be any value in between, so the domain is continuous: 0 ≤ t ≤ 15. Listing only whole hours leaves out times like 2.5 hours."
+  },
+  {
+    "id": "STAARA1-D-068",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Factors and zeros",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The zeros of a quadratic function are x = 4 and x = −1/2. Which could be its factored form?",
+    "options": [
+      "(x + 4)(2x − 1)",
+      "(x − 4)(x + 2)",
+      "(x + 4)(x − 2)",
+      "(x − 4)(2x + 1)"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "x = 4 comes from x − 4, and x = −1/2 comes from 2x + 1 = 0. (x + 2) would give a zero at −2."
+  },
+  {
+    "id": "STAARA1-D-069",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Growth in context",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A town of 8,000 people grows 5% each year. What is its population after 2 years?",
+    "numeric": {
+      "answers": [
+        "8820",
+        "8,820"
+      ],
+      "tolerance": 0
+    },
+    "calculator": true,
+    "explanation": "8,000(1.05)² = 8,000(1.1025) = 8,820. Adding 5% of 8,000 twice would give 8,800, which ignores growth on the new people."
+  },
+  {
+    "id": "STAARA1-D-070",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Difference of two squares",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which expression is equivalent to 25x² − 16?",
+    "options": [
+      "(5x − 4)(5x + 4)",
+      "(5x − 4)²",
+      "(25x − 4)(x + 4)",
+      "(5x − 8)(5x + 2)"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "25x² = (5x)² and 16 = 4², so 25x² − 16 = (5x − 4)(5x + 4). (5x − 4)² would have a middle term of −40x."
+  },
+  {
+    "id": "STAARA1-D-071",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Geometric sequences",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which formula gives the nth term of the sequence 2, 6, 18, 54, ...?",
+    "options": [
+      "a(n) = 3(2)ⁿ⁻¹",
+      "a(n) = 2(3)ⁿ⁻¹",
+      "a(n) = 2 + 3(n − 1)",
+      "a(n) = 2(3)ⁿ"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "The first term is 2 and each term is 3 times the last, so a(n) = 2(3)ⁿ⁻¹. Check n = 2: 2(3)¹ = 6. a(n) = 2(3)ⁿ starts at 6, one term too far."
+  },
+  {
+    "id": "STAARA1-D-072",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Finding an error",
+    "difficulty": 2,
+    "format": "single",
+    "basics": "solveX",
+    "stem": "Ruth wrote 3(x − 4) = 15, then 3x − 12 = 15, then 3x = 3, then x = 1. What was her mistake?",
+    "options": [
+      "Not distributing the 3 to the 4",
+      "Dividing both sides by 3",
+      "Subtracting 12, not adding it",
+      "Rewriting 3(x − 4) as 3x − 12"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "From 3x − 12 = 15 she should add 12 to both sides to get 3x = 27 and x = 9. Her first step, 3x − 12, was correct."
+  },
+  {
+    "id": "STAARA1-D-073",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Reasonable range",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A phone plan costs \\$15 a month, so the total cost for m months is f(m) = 15m, for whole numbers of months from 1 to 12. What is the range?",
+    "options": [
+      "15 ≤ f ≤ 180",
+      "{1, 2, 3, ..., 12}",
+      "{0, 15, 30, ..., 180}",
+      "{15, 30, 45, ..., 180}"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The outputs are 15 times each whole month from 1 to 12, so they are 15, 30, ..., 180 and nothing in between. {1, 2, ..., 12} is the domain."
+  },
+  {
+    "id": "STAARA1-D-074",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Exponential models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An exponential model of a video's views v, in thousands, d days after it is posted is v = 120(1.35)ᵈ. Which is the best prediction for day 4?",
+    "options": [
+      "About 399 thousand",
+      "About 648 thousand",
+      "About 219 thousand",
+      "About 162 thousand"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "v = 120(1.35)⁴ ≈ 120(3.3215) ≈ 398.6. 648 thousand treats 1.35 as adding 135 thousand a day, and 219 thousand is day 2."
+  },
+  {
+    "id": "STAARA1-D-075",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Difference of two squares",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Can each binomial be written as a difference of two squares?",
+    "rows": [
+      "x² − 81",
+      "x² + 36",
+      "16x² − 1",
+      "2x² − 9"
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "calculator": true,
+    "explanation": "x² − 81 = x² − 9² and 16x² − 1 = (4x)² − 1², so both can. x² + 36 is a sum, and 2x² is not a perfect square."
+  },
+  {
+    "id": "STAARA1-D-076",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Recursive sequences",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sequence is defined by a(1) = 10 and a(n) = a(n − 1) − 4 for n ≥ 2. What is a(6)?",
+    "lockedOrder": true,
+    "options": [
+      "−14",
+      "−10",
+      "−6",
+      "14"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "From a(1) to a(6) there are 5 steps of −4: 10 − 20 = −10. Taking 6 steps gives −14."
+  },
+  {
+    "id": "STAARA1-D-077",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Lines of fit",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| Years since 2010 | 0 | 2 | 4 | 6 |\n|---|---|---|---|---|\n| Members | 120 | 150 | 178 | 210 |",
+    "stem": "A club's membership is shown in the table. Which linear function is the most reasonable fit, where x is years since 2010?",
+    "options": [
+      "y = 30x + 120",
+      "y = 15x + 120",
+      "y = 15x + 210",
+      "y = 120x + 15"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Members start near 120 and rise by about 30 every 2 years, or 15 a year: y = 15x + 120. A slope of 30 would double the growth."
+  },
+  {
+    "id": "STAARA1-D-078",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Quadratic models",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "| x | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| y | 2 | 3 | 6 | 11 |",
+    "stem": "Which function fits all the data in the table exactly?",
+    "options": [
+      "y = 3x + 2",
+      "y = 2x² + 1",
+      "y = x² + 2",
+      "y = x² + x + 2"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "Test each x: 0² + 2 = 2, 1² + 2 = 3, 2² + 2 = 6 and 3² + 2 = 11. y = 3x + 2 fits only the first point."
+  },
+  {
+    "id": "STAARA1-D-079",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Number of solutions",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "solveX",
+    "stem": "What is the solution of 5 − 3(x + 2) = 4(1 − x) + x?",
+    "options": [
+      "x = 5",
+      "x = −1",
+      "Infinitely many",
+      "No solution"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The left side is −3x − 1 and the right side is 4 − 3x. The x terms cancel and leave −1 = 4, which is false, so there is no solution."
+  },
+  {
+    "id": "STAARA1-D-080",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Parallel lines",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which equation describes the line through (3, 4) that is parallel to 2x + y = 5?",
+    "options": [
+      "y = −2x + 10",
+      "y = 2x − 2",
+      "y = −2x + 5",
+      "y = (1/2)x + 2.5"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "2x + y = 5 is y = −2x + 5, so the slope is −2. Then 4 = −2(3) + b gives b = 10. y = −2x + 5 is the original line, which does not pass through (3, 4)."
+  },
+  {
+    "id": "STAARA1-D-081",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Writing from a table",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "| x | 0 | 1 | 2 |\n|---|---|---|---|\n| y | 400 | 300 | 225 |",
+    "stem": "Which function represents the data in the table?",
+    "options": [
+      "y = 400(1.33)ˣ",
+      "y = 400(0.75)ˣ",
+      "y = 400 − 100x",
+      "y = 300(0.75)ˣ"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "300 ÷ 400 = 0.75 and 225 ÷ 300 = 0.75, so each y is 0.75 times the last, starting at 400. y = 400 − 100x fits the first two points but gives 200 at x = 2."
+  },
+  {
+    "id": "STAARA1-D-082",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Factoring with a leading coefficient",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "factoring",
+    "stem": "Which is the factored form of 2x² − 7x + 3?",
+    "options": [
+      "(2x − 3)(x − 1)",
+      "(2x + 1)(x − 3)",
+      "(2x − 1)(x − 3)",
+      "(2x − 1)(x + 3)"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "(2x − 1)(x − 3) = 2x² − 6x − x + 3 = 2x² − 7x + 3. (2x − 3)(x − 1) has the right first and last terms but a middle term of −5x."
+  },
+  {
+    "id": "STAARA1-D-083",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Rational exponents",
+    "difficulty": 3,
+    "format": "single",
+    "basics": "exponentRules",
+    "stem": "Which expression is equivalent to the cube root of x⁶?",
+    "options": [
+      "x³",
+      "x¹⁸",
+      "3x⁶",
+      "x²"
+    ],
+    "correct": [
+      3
+    ],
+    "calculator": true,
+    "explanation": "The cube root is the 1/3 power, so the exponent becomes 6 · 1/3 = 2. Check: (x²)³ = x⁶. The result x³ is the square root."
+  },
+  {
+    "id": "STAARA1-D-084",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Graph",
+    "skill": "Systems of inequalities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A graph shows the region above the dashed line y = x and below the dashed line y = 4. Which system has this solution set?",
+    "options": [
+      "y > x and y < 4",
+      "y < x and y > 4",
+      "y ≥ x and y ≤ 4",
+      "y > x and y > 4"
+    ],
+    "correct": [
+      0
+    ],
+    "calculator": true,
+    "explanation": "Above y = x means y > x, below y = 4 means y < 4, and dashed lines mean strict inequalities. ≥ and ≤ would need solid lines."
+  },
+  {
+    "id": "STAARA1-D-085",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Quad",
+    "skill": "Zeros in context",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A ball's height in feet after t seconds is h(t) = −16t² + 32t + 48. After how many seconds does it hit the ground?",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "Set h(t) = 0: −16(t² − 2t − 3) = −16(t − 3)(t + 1) = 0, so t = 3 or t = −1. Time cannot be negative, so the ball lands after 3 seconds."
+  },
+  {
+    "id": "STAARA1-D-086",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Solve",
+    "skill": "Systems in context",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "systems",
+    "stem": "Jamal buys 12 pens and pencils for \\$9.00. Pens cost \\$1.25 and pencils cost \\$0.50. How many pens does he buy?",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "p + c = 12 and 1.25p + 0.50c = 9. With c = 12 − p: 1.25p + 6 − 0.50p = 9, so 0.75p = 3 and p = 4."
+  },
+  {
+    "id": "STAARA1-D-087",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Write",
+    "skill": "Two points",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A line passes through (−4, 1) and (2, 10). What is its y-intercept?",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "The slope is (10 − 1) ÷ (2 − (−4)) = 9 ÷ 6 = 1.5. Then 10 = 1.5(2) + b, so b = 7, and the line is y = 1.5x + 7."
+  },
+  {
+    "id": "STAARA1-D-088",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Exp",
+    "skill": "Comparing models",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "f(x) = 100 + 20x and g(x) = 5(1.5)ˣ. For which whole number x is g(x) first greater than f(x)?",
+    "lockedOrder": true,
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "calculator": true,
+    "explanation": "At x = 10, g ≈ 288 and f = 300, so g is still smaller. At x = 11, g ≈ 432 and f = 320. An exponential function eventually passes any linear one."
+  },
+  {
+    "id": "STAARA1-D-089",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Poly",
+    "skill": "Multiplying binomials",
+    "difficulty": 3,
+    "format": "numeric",
+    "basics": "distributing",
+    "stem": "The product (3x − 2)(2x + 5) is written as ax² + bx + c. What is the value of b?",
+    "numeric": {
+      "answers": [
+        "11"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "calculator": true,
+    "explanation": "(3x − 2)(2x + 5) = 6x² + 15x − 4x − 10 = 6x² + 11x − 10, so b = 11. Using only 3x · 5 gives 15."
+  },
+  {
+    "id": "STAARA1-D-090",
+    "section": "alg",
+    "test": 0,
+    "module": 1,
+    "domain": "staaralg1Expr",
+    "skill": "Literal equations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which equation is 3x + 2y = 12 solved for y?",
+    "options": [
+      "y = 12 − 3x",
+      "y = 6 − 1.5x",
+      "y = 6 − 3x",
+      "y = 4 − 1.5x"
+    ],
+    "correct": [
+      1
+    ],
+    "calculator": true,
+    "explanation": "Subtract 3x: 2y = 12 − 3x. Divide every term by 2: y = 6 − 1.5x. The equation y = 6 − 3x divides only the 12 by 2."
+  }
+]

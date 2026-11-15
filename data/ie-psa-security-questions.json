@@ -998,7 +998,7 @@
     "state": "ALL",
     "questionId": "IEPSA-POW-024",
     "category": "iepsaPowers",
-    "question": "A shopper refuses a bag search requested at the exit. What should the guard do?",
+    "question": "A shopper refuses a bag search requested at the exit, with no other sign of theft. What should the guard do?",
     "optionA": "Take the bag by force",
     "optionB": "Lock her in the shop",
     "optionC": "Accept it, call the Gardaí",

@@ -706,7 +706,7 @@
     "category": "mtguardPowers",
     "question": "Who may a private guard arrest using police powers under article 355X?",
     "optionA": "Anyone suspected of a crime",
-    "optionB": "Anyone the police point out",
+    "optionB": "Anyone he thinks may offend",
     "optionC": "Nobody, 355X is for police",
     "optionD": "Anyone on the client's site",
     "correctAnswer": "C",

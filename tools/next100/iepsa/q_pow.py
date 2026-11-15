@@ -73,7 +73,7 @@ Q = [
 ("A guard wants to look in a staff member's locker. When may he lawfully search it?",
  "With consent or by contract", ["Whenever he suspects theft", "Only on a Friday", "Whenever the locker is shut"],
  "A guard has no general power of search. A search of a person's property needs their consent or a lawful basis such as an agreed condition of employment or entry."),
-("A shopper refuses a bag search requested at the exit. What should the guard do?",
+("A shopper refuses a bag search requested at the exit, with no other sign of theft. What should the guard do?",
  "Accept it and note it", ["Take the bag by force", "Lock her in the shop", "Accept it, call the Gardaí"],
  "A bag search is by consent. Without an arrestable offence and the section 4 conditions, the guard accepts the refusal and records it. A refusal alone is not a crime, so the Gardaí are called only if there is real suspicion of an offence."),
 ("Where a personal search is agreed, who should carry it out?",

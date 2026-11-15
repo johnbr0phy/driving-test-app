@@ -74,7 +74,7 @@ Q = [
 ("A guard arrests a suspect and slaps him for swearing. What is the legal position?",
  "It is assault", ["It is reasonable force", "It is allowed after arrest", "It is a lawful warning"],
  "Force after the suspect is under control serves no lawful purpose. Hitting a detained person is assault."),
-("A person loiters at the estate gate and refuses to leave, but commits no offence. What is the guard's best action?",
+("A person loiters on the public road outside the estate gate and refuses to move on, but commits no offence. What is the guard's best action?",
  "Observe and record details", ["Arrest them for loitering", "Call SAPS to remove them", "Take their ID book away"],
  "Without an offence there are no arrest grounds, and SAPS is not called to remove someone who is breaking no law. The guard keeps watch, records details and calls SAPS only if the person becomes a threat."),
 ("Who decides whether an arrested shoplifter will be charged?",

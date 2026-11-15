@@ -13,7 +13,7 @@ Q = [
  '112', ['911', '999', '000'],
  "112 works from cellphones and routes the call to an emergency operator. 911, 999 and 000 are other countries' numbers."),
 ("A guard is first on the scene of an armed robbery that has just ended. What comes first?",
- "Help the injured, call help", ["Chase the robbers' car", "Call SAPS, then help the injured", "Clean up the broken glass"],
+ "Help the injured, call help", ["Chase the robbers' car", "Wait for SAPS before helping anyone", "Clean up the broken glass"],
  "Preserving life comes first: get help for the injured, then call SAPS and protect the scene."),
 ('A caller phones the reception desk with a bomb threat. What should the officer do during the call?',
  'Keep them talking, take notes', ['Hang up immediately', 'Laugh it off as a joke', 'Transfer them to a tenant'],

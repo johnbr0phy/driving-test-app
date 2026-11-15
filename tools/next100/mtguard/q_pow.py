@@ -81,7 +81,7 @@ Q = [
  "Ask him to leave politely", ["Arrest him for trespass", "Lock the car park gate behind him", "Take his car keys away"],
  "Simply being on private land is not on the article 355W list. The guard asks the person to leave, records it and calls the police if a crime follows."),
 ("Who may a private guard arrest using police powers under article 355X?",
- "Nobody, 355X is for police", ["Anyone suspected of a crime", "Anyone the police point out", "Anyone on the client's site"],
+ "Nobody, 355X is for police", ["Anyone suspected of a crime", "Anyone he thinks may offend", "Anyone on the client's site"],
  "Article 355X gives powers to any police officer. A private guard has only the private person's power in article 355W, even when a police officer points someone out to him."),
 ("A guard sees a man punch a stranger in a hotel lobby and run. The guard catches him a minute later. Is the arrest lawful?",
  "Yes, he just committed it", ["No, guards cannot arrest", "No, only the victim may", "Only inside the guard's post"],

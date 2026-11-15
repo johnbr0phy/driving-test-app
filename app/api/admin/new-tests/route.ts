@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
   if (denied) return denied;
   try {
     const { payload, cache, at } = await cachedAdminPayload({
-      key: 'newTests',
+      key: 'newTests50',
       ttlMs: 5 * 60_000,
       staleMs: 24 * 3_600_000,
       refresh: wantsRefresh(request),

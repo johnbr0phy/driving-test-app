@@ -3,7 +3,7 @@
 require('tsx/cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { testPages, onTestPages, daysLive, dayMinus, trafficOf, trafficCounts, groups, shares } = require('../lib/newTests.ts');
+const { testPages, onTestPages, daysLive, dayMinus, sumSince, mostRecent } = require('../lib/newTests.ts');
 const launchDates = require('../lib/examLaunchDates.json');
 const { EXAMS } = require('../lib/exams.ts');
 const { EXAMS_V2 } = require('../lib/v2/registry.ts');
@@ -24,32 +24,14 @@ test('days live counts launch day', () => {
   assert.equal(dayMinus('2026-11-15', 6), '2026-11-09');
 });
 
-const row = (id, visitors, live, signups = 0, group = 'G') => ({
-  id, name: id, href: '/', group, launched: '2026-11-01', daysLive: live, visitors, visitors7d: visitors,
-  perDay: visitors / live, signups, revenueUsdCents: 0, topSource: null,
+test('questions count from launch day on', () => {
+  assert.equal(sumSince({ '2026-11-01': 5, '2026-11-02': 3, '2026-10-31': 9 }, '2026-11-01'), 8);
+  assert.equal(sumSince(undefined, '2026-11-01'), 0);
 });
 
-test('a test is judged on traffic only after a week', () => {
-  assert.equal(trafficOf(row('a', 0, 3)), 'tooNew');
-  assert.equal(trafficOf(row('a', 0, 10)), 'none');
-  assert.equal(trafficOf(row('a', 5, 10)), 'trickle');
-  assert.equal(trafficOf(row('a', 10, 10)), 'steady');
-  assert.deepEqual(trafficCounts([row('a', 0, 3), row('b', 0, 10), row('c', 20, 10)]), { steady: 1, trickle: 0, none: 1, tooNew: 1 });
-});
-
-test('groups rank by visitors a test a day, so a young test is not punished', () => {
-  const g = groups([row('a', 10, 5, 1, 'X'), row('b', 30, 3, 2, 'X'), row('c', 70, 35, 0, 'Y')]);
-  assert.equal(g[0].group, 'X');
-  assert.equal(g[0].perTestDay, (2 + 10) / 2);
-  assert.equal(g[0].signups, 3);
-  assert.equal(g[0].best, 'b');
-  assert.equal(g[1].best, 'c');
-});
-
-test('shares are biggest first and drop zeros', () => {
-  assert.deepEqual(shares({ search: 3, chatgpt: 1, direct: 0 }), [
-    { key: 'search', n: 3, share: 0.75 }, { key: 'chatgpt', n: 1, share: 0.25 },
-  ]);
+test('the tab lists the newest launches first, capped', () => {
+  const l = [{ id: 'a', day: '2026-11-01' }, { id: 'b', day: '2026-11-10' }, { id: 'c', day: '2026-11-05' }];
+  assert.deepEqual(mostRecent(l, 2).map((x) => x.id), ['b', 'c']);
 });
 
 test('every exam has a launch date, so a new test shows on the tab', () => {

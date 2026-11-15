@@ -231,7 +231,6 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           `<strong style="font-weight: 600;">On ${esc(v.shortName)}, Premium adds:</strong>`,
         ),
         ul(v.premiumBenefits),
-        p("The rest of your practice stays free either way."),
         cta(DASH(v, "paywall_abandon"), `Open ${esc(v.shortName)} Practice`),
         p("Check the current price and payment details at checkout."),
         signoff(),

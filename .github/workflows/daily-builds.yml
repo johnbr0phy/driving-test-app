@@ -1,0 +1,394 @@
+name: Daily builds
+
+# Every day: rank the backlog of tests we do not have yet from yesterday's live
+# data (scripts/build-queue.ts over tools/queue/backlog.json: a candidate scores
+# what its live sibling tests score in practice, paywall views and purchases),
+# build the top N in parallel with Claude Code, one runner per test, then put
+# them together in one PR.
+#
+#   pick       ranks, picks N, gives each v1 pick its own store ID block
+#   build      one job per test: research the official outline, write the bank,
+#              wire it, check it; the result is a patch (no commit, no push)
+#   integrate  applies the patches in order (the shared files all get a line
+#              per test, so Claude Code settles the overlaps), runs every check
+#              and opens the PR. Tests that built are marked "pr" in Firestore
+#              (buildQueue/{id}); the rest "failed", retried once after 14 days.
+#
+# The PR waits for a person: merging it publishes the tests. To let a run merge
+# its own PR when every check passes, set the repository variable
+# DAILY_BUILD_AUTOMERGE to "true".
+# How many a day: repository variable DAILY_BUILD_COUNT (default 10), or the
+# "count" input on a manual run. Each test is one long Claude Code session on
+# ANTHROPIC_API_KEY, so the count is also the daily spend.
+#
+# Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY.
+
+on:
+  schedule:
+    - cron: "17 8 * * *" # 08:17 UTC, after search-gaps (07:41); PR ready by US morning
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many tests to build"
+        default: "2"
+      only:
+        description: "Build exactly these backlog ids (comma separated). Empty: take the top of the ranking."
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: daily-builds
+  cancel-in-progress: false
+
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      matrix: ${{ steps.rank.outputs.matrix }}
+      any: ${{ steps.rank.outputs.any }}
+      date: ${{ steps.rank.outputs.date }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Rank the backlog
+        id: rank
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          COUNT_INPUT: ${{ github.event.inputs.count }}
+          COUNT_VAR: ${{ vars.DAILY_BUILD_COUNT }}
+          ONLY_INPUT: ${{ github.event.inputs.only }}
+        run: |
+          count="${COUNT_INPUT:-${COUNT_VAR:-10}}"
+          case "$count" in ''|*[!0-9]*) echo "count must be a whole number"; exit 1 ;; esac
+          [ "$count" -le 25 ] || { echo "count is capped at 25 a run"; exit 1; }
+          only=()
+          if [ -n "${ONLY_INPUT:-}" ]; then
+            case "$ONLY_INPUT" in *[!a-z0-9,]*) echo "only: lower-case ids and commas"; exit 1 ;; esac
+            only=(--only "$ONLY_INPUT")
+          fi
+          npx tsx scripts/build-queue.ts --count "$count" --out "$RUNNER_TEMP/queue" --github "${only[@]}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: queue-${{ github.run_id }}
+          path: ${{ runner.temp }}/queue/
+
+  build:
+    needs: pick
+    if: needs.pick.outputs.any == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix: ${{ fromJson(needs.pick.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+
+      # The row comes from tools/queue/backlog.json (reviewed in the repo), passed
+      # through env so nothing in it is ever run as shell.
+      - name: Write the brief
+        env:
+          ID: ${{ matrix.id }}
+          NAME: ${{ matrix.name }}
+          OWNER: ${{ matrix.owner }}
+          REGION: ${{ matrix.region }}
+          ENGINE: ${{ matrix.engine }}
+          ID_BASE: ${{ matrix.idBase }}
+          SIBLINGS: ${{ matrix.siblings }}
+          SEARCH: ${{ matrix.search }}
+          NOTE: ${{ matrix.note }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/out"
+          {
+            echo "id: $ID"
+            echo "test: $NAME"
+            echo "owner (the body that runs it): $OWNER"
+            echo "Tigertest country (lib/region.ts): $REGION"
+            echo "engine: $ENGINE"
+            echo "idBase (v1 only; tests and sets are idBase+1..): $ID_BASE"
+            echo "closest live tests, to copy structure and theme family from: $SIBLINGS"
+            echo "words people search for it: $SEARCH"
+            echo "note: $NOTE"
+          } > "$RUNNER_TEMP/out/brief.txt"
+          cat "$RUNNER_TEMP/out/brief.txt"
+
+      - name: Build the test with Claude Code
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: --max-turns 500 --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
+          prompt: |
+            Read CLAUDE.md. You build ONE new practice test for Tigertest today. Its row
+            from the build queue is in ${{ runner.temp }}/out/brief.txt: read it first. Use the
+            id exactly as given, and for a v1 exam the idBase exactly as given (other tests
+            are being built in parallel right now and each has its own block).
+
+            First check lib/testCatalog.ts, lib/exams.ts and lib/v2/registry.ts: if the site
+            already has this test under any id or name, build nothing, write
+            "duplicate: <the live id>" to ${{ runner.temp }}/out/failed.txt and stop.
+
+            Research comes first and decides whether you build. Follow step 0 of
+            .claude/skills/exam-bank/SKILL.md in full before writing any spec or question:
+              - Identify the body that owns the exam. With WebSearch, then WebFetch on the
+                pages themselves (never a search snippet), read its current content outline or
+                syllabus with revision date and weights, its candidate handbook or bulletin for
+                the format, its news page for any newer version or dated change, and the
+                primary law, standard or official manual the outline points to.
+              - Write every fact in a question from those primary texts. Prep sites may only
+                support format facts the owner does not publish, labelled "guides say", and
+                only when two agree. No sample, past or commercial questions, even reworded.
+              - Leave out fees, fines, indexed limits, office-holders, current affairs and
+                anything in a pending reform.
+              - Write tools/next100/<id>/sources.md as the skill describes and run
+                python3 -I tools/check_sources.py <id>; fix it until it passes.
+            Stop rule: if you cannot fetch an official outline, syllabus, handbook or primary
+            law, or the test turns out not to be a multiple-choice knowledge test, do not
+            build it. Write one line saying what you searched and why it was not enough to
+            ${{ runner.temp }}/out/failed.txt and stop.
+
+            Then build it end to end with the exam-bank skill: follow the rest of
+            .claude/skills/exam-bank/SKILL.md and .claude/skills/exam-bank/references/wiring.md
+            exactly (spec from the official outline, the bank in house style, the validator,
+            the full wiring, catalog entry and hub group next to its closest live tests,
+            landing, examFacts, search aliases for the words people search). Skip the landing
+            screenshots (no browser here). Add no new per-exam dynamic route folders.
+
+            Before you finish, check your own work against the sources: pick 25 questions
+            spread across every category, and for each one re-open the source passage that
+            supports its key and confirm the key, the explanation and that no other option is
+            defensible. Fix or drop any that fail.
+
+            Then run and fix everything reported by:
+              npm run typecheck
+              npm run lint
+              npm test
+              python3 -I tools/check_banks.py
+              npx tsx scripts/build-training-parts.ts
+            and the exam's own validator and python3 -I tools/check_sources.py <id>.
+
+            Finally write ${{ runner.temp }}/out/report.md: the test's name and id, question
+            count, the official outline and revision used, every source URL from sources.md
+            with what it gave you, what could not be confirmed, how many questions the
+            25-question source check changed, and which of the checks above pass. Do not
+            commit; the next step collects your changes.
+
+      - name: Collect the changes
+        id: collect
+        env:
+          ID: ${{ matrix.id }}
+        run: |
+          out="$RUNNER_TEMP/out"
+          git add -A
+          if [ -s "$out/failed.txt" ] || git diff --cached --quiet; then
+            [ -s "$out/failed.txt" ] || echo "the build made no changes" > "$out/failed.txt"
+            echo "built=false" >> "$GITHUB_OUTPUT"
+          else
+            git diff --cached --binary > "$out/exam.patch"
+            git diff --cached --name-only > "$out/files.txt"
+            echo "built=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "$ID" > "$out/id.txt"
+          cp "$out/failed.txt" "$out/failed-$ID.txt" 2>/dev/null || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ matrix.id }}
+          path: ${{ runner.temp }}/out/
+
+  integrate:
+    needs: [pick, build]
+    if: always() && needs.pick.outputs.any == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: build-*
+          path: ${{ runner.temp }}/builds
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: queue-${{ github.run_id }}
+          path: ${{ runner.temp }}/queue
+
+      - name: List what was built
+        id: list
+        run: |
+          cd "$RUNNER_TEMP/builds"
+          built=""; failed=""
+          for d in build-*/; do
+            [ -d "$d" ] || continue
+            id="$(cat "$d/id.txt" 2>/dev/null || echo "${d#build-}" | tr -d /)"
+            if [ -s "$d/exam.patch" ]; then built="$built $id"; else failed="$failed $id"; fi
+          done
+          echo "built=$(echo $built)" >> "$GITHUB_OUTPUT"
+          echo "failed=$(echo $failed)" >> "$GITHUB_OUTPUT"
+          echo "Built: $built"; echo "Not built: $failed"
+
+      - name: Put the tests together with Claude Code
+        if: steps.list.outputs.built != ''
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: --max-turns 400 --allowedTools "Read,Edit,Write,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git apply:*),Bash(git add:*),Bash(git diff:*),Bash(git status:*),Bash(git checkout:*),Bash(git restore:*),Bash(git rm:*),Bash(ls:*),Bash(cat:*)"
+          prompt: |
+            Read CLAUDE.md. Today's new tests were each built in their own checkout of this
+            commit. Each one's changes are a patch at
+            ${{ runner.temp }}/builds/build-<id>/exam.patch, with its report.md and files.txt
+            beside it. The tests: ${{ steps.list.outputs.built }}
+
+            Put them all into this checkout, one at a time, in that order:
+              1. git apply --3way <patch>. New files always apply. The shared files
+                 (lib/exams.ts, lib/testCatalog.ts, lib/examFacts.ts, lib/region.ts,
+                 lib/v2/registry.ts, lib/v2/bankSizes.ts, lib/banks/all.ts, types/index.ts,
+                 i18n/*, app/globals.css, CLAUDE.md, lib/trainingParts.json and the like)
+                 conflict when two tests added a line at the same place.
+              2. Settle every conflict by keeping both tests' additions, in the file's own
+                 order, then git add the files. lib/trainingParts.json and
+                 lib/v2/bankSizes.ts are generated: take either side and regenerate them at
+                 the end. Leave no conflict markers anywhere (grep for <<<<<<< and >>>>>>>).
+              3. Go on to the next patch.
+
+            Then make the set consistent: no two tests share an id, a store ID block, a
+            slug, a state code, a question id prefix or a landing path; theme colours follow
+            the clash rule in CLAUDE.md (move the newer test's hue if two collide and re-run
+            python3 -I tools/gen_dark_brand_css.py); each new test sits in a hub group in
+            lib/testCatalog.ts. Run npx tsx scripts/build-training-parts.ts and
+            python3 -I tools/validate_v2_bank.py for each new v2 exam as wiring.md says.
+
+            Then run and fix everything reported by:
+              npm run typecheck
+              npm run lint
+              npm test
+              npx tsx scripts/build-training-parts.ts --check
+              python3 -I tools/build_state_exam_facts.py --check
+              python3 -I scripts/review-question-banks.py
+              python3 -I tools/check_banks.py
+              python3 -I tools/check_freshness.py
+              python3 -I tools/build_exam_sources.py --check
+            If one test cannot be made to pass, take that test out completely (every file
+            and every line it added) so the rest can ship, and write its id and the reason on
+            one line in ${{ runner.temp }}/dropped.txt.
+
+            Finally write ${{ runner.temp }}/pr.md: a heading "Daily builds
+            ${{ needs.pick.outputs.date }}", one short paragraph per test that is in (name, id,
+            question count, the official outline it follows, anything its report says could
+            not be confirmed), the tests dropped and why, and what you changed to fit them
+            together. Do not commit; the next step opens the PR.
+
+      - name: Check the result
+        id: checks
+        if: steps.list.outputs.built != ''
+        continue-on-error: true
+        run: |
+          if grep -rIl -e '^<<<<<<< ' -e '^>>>>>>> ' app components data lib tests tools types i18n CLAUDE.md 2>/dev/null | head -5 | grep .; then
+            echo "conflict markers left"; exit 1
+          fi
+          bash scripts/automerge-checks.sh
+
+      - name: Write the PR body
+        if: steps.list.outputs.built != ''
+        env:
+          CHECKS: ${{ steps.checks.outcome }}
+          FAILED: ${{ steps.list.outputs.failed }}
+        run: |
+          body="$RUNNER_TEMP/pr.md"
+          [ -s "$body" ] || echo "# Daily builds" > "$body"
+          {
+            echo
+            echo "## Checks"
+            echo
+            if [ "$CHECKS" = "success" ]; then echo "Every check passed in the run (typecheck, lint, tests, bank checks)."; else echo "**The checks did not all pass in the run.** Look at the run log before merging."; fi
+            if [ -n "$FAILED" ]; then
+              echo
+              echo "## Not built"
+              echo
+              for id in $FAILED; do echo "- \`$id\`: $(head -c 300 "$RUNNER_TEMP/builds/build-$id/failed.txt" 2>/dev/null || echo 'the build job did not finish')"; done
+            fi
+            echo
+            echo "## The ranking"
+            echo
+            cat "$RUNNER_TEMP"/queue/*.md
+          } >> "$body"
+
+      - name: Open PR
+        id: pr
+        if: steps.list.outputs.built != ''
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: daily-builds/${{ github.run_id }}
+          title: "Daily builds ${{ needs.pick.outputs.date }}: ${{ steps.list.outputs.built }}"
+          commit-message: "Daily builds ${{ needs.pick.outputs.date }}: new tests"
+          body-path: ${{ runner.temp }}/pr.md
+          add-paths: |
+            app/**
+            components/**
+            data/**
+            lib/**
+            public/**
+            tests/**
+            tools/**
+            types/**
+            i18n/**
+            CLAUDE.md
+            .claude/skills/**
+
+      # So tomorrow's run neither rebuilds a test whose PR is open nor reuses its ID block.
+      - name: Record the outcome
+        if: always()
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          BUILT: ${{ steps.list.outputs.built }}
+          FAILED: ${{ steps.list.outputs.failed }}
+          PR: ${{ steps.pr.outputs.pull-request-number }}
+        run: |
+          picks="$(ls "$RUNNER_TEMP"/queue/*.json | head -n1)"
+          dropped=" $(cut -d' ' -f1 "$RUNNER_TEMP/dropped.txt" 2>/dev/null | tr -d ':' | tr '\n' ' ') "
+          for id in $BUILT; do
+            base="$(node -e 'const j=require(process.argv[1]);const p=j.picks.find(c=>c.id===process.argv[2]);process.stdout.write(String(p&&p.idBase||0))' "$picks" "$id")"
+            if [ -z "$PR" ] || [ "${dropped#* $id }" != "$dropped" ]; then
+              npx tsx scripts/build-queue.ts --mark "$id" --status failed --note "dropped while putting the day's tests together" || true
+            else
+              npx tsx scripts/build-queue.ts --mark "$id" --status pr --note "PR #$PR" --id-base "$base" || true
+            fi
+          done
+          for id in $FAILED; do
+            note="$(head -c 200 "$RUNNER_TEMP/builds/build-$id/failed.txt" 2>/dev/null || echo 'the build job did not finish')"
+            case "$note" in duplicate:*) status=skipped ;; *) status=failed ;; esac
+            npx tsx scripts/build-queue.ts --mark "$id" --status "$status" --note "$note" || true
+          done
+
+      - name: Merge when every check passed
+        if: steps.pr.outputs.pull-request-number && steps.checks.outcome == 'success' && vars.DAILY_BUILD_AUTOMERGE == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch

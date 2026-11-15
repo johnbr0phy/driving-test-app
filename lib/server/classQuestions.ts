@@ -41,6 +41,7 @@ import "@/lib/v2/banks/timestables";
 import "@/lib/v2/banks/vicsel";
 import "@/lib/v2/banks/mapgrowth";
 import "@/lib/v2/banks/staaralg1";
+import "@/lib/v2/banks/staareng1";
 import "@/lib/v2/banks/faapvt";
 import "@/lib/v2/banks/psat";
 import "@/lib/v2/banks/praxis";

@@ -1478,6 +1478,19 @@
     --brand-border-light: 70 15% 88%;
     --brand-gradient-to: 85 25% 94%;
   }
+  /* STAAR English I theme: deep magenta (v2 exam; matches lib/v2/exams/staareng1.ts theme) */
+  [data-theme="staareng1"] {
+    --brand: 308 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 308 80% 96%;
+    --brand-hover: 308 85% 25%;
+    --brand-dark: 308 85% 21%;
+    --brand-darker: 308 80% 14%;
+    --brand-muted: 308 40% 72%;
+    --brand-border: 308 40% 80%;
+    --brand-border-light: 308 40% 90%;
+    --brand-gradient-to: 322 60% 96%;
+  }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
     --brand: 256 90% 37%;
@@ -6248,6 +6261,18 @@
     --brand-muted: 70 15% 45%;
     --brand-dark: 70 25% 65%;
     --brand-darker: 70 25% 78%;
+  }
+
+  .dark [data-theme="staareng1"] {
+    --brand: 308 85% 44.7%;
+    --brand-hover: 308 85% 36.7%;
+    --brand-light: 308 45% 13%;
+    --brand-gradient-to: 322 40% 11%;
+    --brand-border-light: 308 35% 24%;
+    --brand-border: 308 40% 34%;
+    --brand-muted: 308 40% 45%;
+    --brand-dark: 308 85% 65%;
+    --brand-darker: 308 80% 78%;
   }
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;

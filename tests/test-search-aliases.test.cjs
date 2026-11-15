@@ -59,6 +59,10 @@ const CASES = [
   ["algebra 1 eoc", "US", "staaralg1"],
   ["algebra i eoc", "US", "staaralg1"],
   ["texas algebra 1", "US", "staaralg1"],
+  ["staar english 1", "US", "staareng1"],
+  ["staar english i", "US", "staareng1"],
+  ["english 1 eoc", "US", "staareng1"],
+  ["english i eoc", "US", "staareng1"],
 ];
 
 for (const [q, region, id] of CASES) {

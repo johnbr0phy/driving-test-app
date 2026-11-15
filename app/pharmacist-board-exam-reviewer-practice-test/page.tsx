@@ -142,7 +142,7 @@ export default function PharmacistBoardExamLandingPage() {
           <ExamLandingHero
             dashboardHref="/pharmacist-board-exam/dashboard"
             shortName="PhLE"
-            subtitle="200 original questions on all six subjects of the Philippine Pharmacist Licensure Examination. Four 50-question mock exams weighted like the PRC program. Tuned for mobile. No account needed."
+            subtitle="200 original questions on all six subjects of the Philippine Pharmacist Licensure Examination. Four 50-question mock exams weighted like the PRC program. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/phpharm-mobile.png", desktop: "/landing/phpharm-desktop.png" }}
           />
         </div>

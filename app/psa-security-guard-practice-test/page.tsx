@@ -126,7 +126,7 @@ export default function IePsaLandingPage() {
           <ExamLandingHero
             dashboardHref="/psa-security-licence/dashboard"
             shortName="QQI Security Guarding"
-            subtitle="200 original questions for the QQI Level 4 Security Guarding Skills theory exam you need for a PSA licence: the 2004 Act, arrest and reasonable force, access control, patrols, reports, fire, events and retail. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the QQI Level 4 Security Guarding Skills theory exam you need for a PSA licence: the 2004 Act, arrest and reasonable force, access control, patrols, reports, fire, events and retail. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/iepsa-mobile.png", desktop: "/landing/iepsa-desktop.png" }}
           />
         </div>

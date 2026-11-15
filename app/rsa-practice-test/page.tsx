@@ -129,7 +129,7 @@ export default function RsaPracticeTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/rsa/dashboard"
             shortName="RSA"
-            subtitle="200 questions for SITHFAB021 Provide responsible service of alcohol: standard drinks, proof of age, signs of intoxication, refusing service and RSA law across Australia. Tuned for mobile. No account needed."
+            subtitle="200 questions for SITHFAB021 Provide responsible service of alcohol: standard drinks, proof of age, signs of intoxication, refusing service and RSA law across Australia. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aursa-mobile.png", desktop: "/landing/aursa-desktop.png" }}
           />
         </div>

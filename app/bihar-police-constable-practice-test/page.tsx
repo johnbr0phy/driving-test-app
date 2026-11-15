@@ -129,7 +129,7 @@ export default function BiharPoliceLandingPage() {
           <ExamLandingHero
             dashboardHref="/bihar-police-constable/dashboard"
             shortName="Bihar Police"
-            subtitle="232 original questions on Hindi, English, Maths, Social Science, Science and GK. Tuned for mobile. No account needed."
+            subtitle="232 original questions on Hindi, English, Maths, Social Science, Science and GK. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/biharpolice-mobile.png", desktop: "/landing/biharpolice-desktop.png" }}
           />
         </div>

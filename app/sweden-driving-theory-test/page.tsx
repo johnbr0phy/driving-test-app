@@ -128,7 +128,7 @@ export default function SwedenDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/sweden-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions in English on what Trafikverket's knowledge test for a B licence asks: the right-hand rule, priority roads, signs, speed limits, moose and winter driving, alcohol limits and eco-driving. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions in English on what Trafikverket's knowledge test for a B licence asks: the right-hand rule, priority roads, signs, speed limits, moose and winter driving, alcohol limits and eco-driving. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/setrafik-mobile.png", desktop: "/landing/setrafik-desktop.png" }}
           />
         </div>

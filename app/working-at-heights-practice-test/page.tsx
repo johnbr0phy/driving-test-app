@@ -131,7 +131,7 @@ export default function WorkingAtHeightsLandingPage() {
           <ExamLandingHero
             dashboardHref="/working-at-heights/dashboard"
             shortName="Working at Heights"
-            subtitle="200 questions for the knowledge assessment in RIIWHS204 Work safely at heights: the falls hierarchy, ladders, scaffolds and EWPs, harnesses and anchors, roof work and rescue. Tuned for mobile. No account needed."
+            subtitle="200 questions for the knowledge assessment in RIIWHS204 Work safely at heights: the falls hierarchy, ladders, scaffolds and EWPs, harnesses and anchors, roof work and rescue. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/auwah-mobile.png", desktop: "/landing/auwah-desktop.png" }}
           />
         </div>

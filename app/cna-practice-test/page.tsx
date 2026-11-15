@@ -131,7 +131,7 @@ export default function CnaLandingPage() {
           <ExamLandingHero
             dashboardHref="/cna/dashboard"
             shortName="CNA"
-            subtitle="200 questions weighted to the NNAAP written exam outline. Tuned for mobile. No account needed."
+            subtitle="200 questions weighted to the NNAAP written exam outline. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cna-mobile.png", desktop: "/landing/cna-desktop.png" }}
           />
         </div>

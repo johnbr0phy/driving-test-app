@@ -127,7 +127,7 @@ export default function ArrtLandingPage() {
           <ExamLandingHero
             dashboardHref="/arrt-radiography/dashboard"
             shortName="ARRT"
-            subtitle="200 original registry questions on the ARRT Radiography content specifications: patient care, radiation safety, image production and positioning. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original registry questions on the ARRT Radiography content specifications: patient care, radiation safety, image production and positioning. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/arrt-mobile.png", desktop: "/landing/arrt-desktop.png" }}
           />
         </div>

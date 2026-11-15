@@ -127,7 +127,7 @@ export default function MaltaDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/malta-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions on Maltese road rules for your category B licence: signs, markings, roundabouts, speed limits, parking and sharing the road. Five 35-question mock tests with 30 to pass, like the real test. Tuned for mobile. No account needed."
+            subtitle="200 original questions on Maltese road rules for your category B licence: signs, markings, roundabouts, speed limits, parking and sharing the road. Five 35-question mock tests with 30 to pass, like the real test. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/mttheory-mobile.png", desktop: "/landing/mttheory-desktop.png" }}
           />
         </div>

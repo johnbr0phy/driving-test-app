@@ -125,7 +125,7 @@ export default function CDLEndorsementsLandingPage() {
           <ExamLandingHero
             dashboardHref="/cdl-endorsements/dashboard"
             shortName="CDL endorsement"
-            subtitle="HazMat, air brakes, combination, tank and passenger. 200 questions from the FMCSA manual. No account needed."
+            subtitle="HazMat, air brakes, combination, tank and passenger. 200 questions from the FMCSA manual. Free to start, no account needed."
             shots={{ mobile: "/landing/cdlx-mobile.png", desktop: "/landing/cdlx-desktop.png" }}
           />
         </div>

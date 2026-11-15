@@ -131,7 +131,7 @@ export default function PrivatePilotLandingPage() {
           <ExamLandingHero
             dashboardHref="/private-pilot/dashboard"
             shortName="Private Pilot"
-            subtitle="202 original three-choice questions for the FAA PAR knowledge test. Tuned for mobile. No account needed."
+            subtitle="202 original three-choice questions for the FAA PAR knowledge test. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/faapvt-mobile.png", desktop: "/landing/faapvt-desktop.png" }}
           />
         </div>

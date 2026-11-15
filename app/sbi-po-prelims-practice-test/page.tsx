@@ -126,7 +126,7 @@ export default function SbiPoLandingPage() {
           <ExamLandingHero
             dashboardHref="/sbi-po/dashboard"
             shortName="SBI PO"
-            subtitle="231 original questions on the 2026 pattern: English 40, Quant 30, Reasoning 30, with 20-minute sectional timing. Tuned for mobile. No account needed."
+            subtitle="231 original questions on the 2026 pattern: English 40, Quant 30, Reasoning 30, with 20-minute sectional timing. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/sbipo-mobile.png", desktop: "/landing/sbipo-desktop.png" }}
           />
         </div>

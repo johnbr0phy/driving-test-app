@@ -142,7 +142,7 @@ export default function FirstAidAtWorkLandingPage() {
           <ExamLandingHero
             dashboardHref="/first-aid-at-work/dashboard"
             shortName="First Aid at Work"
-            subtitle="200 questions on CPR and AEDs, bleeding, fractures, burns, choking and major illness, written to the 2025 UK resuscitation guidelines and HSE guidance. Tuned for mobile. No account needed."
+            subtitle="200 questions on CPR and AEDs, bleeding, fractures, burns, choking and major illness, written to the 2025 UK resuscitation guidelines and HSE guidance. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukfaw-mobile.png", desktop: "/landing/ukfaw-desktop.png" }}
           />
         </div>

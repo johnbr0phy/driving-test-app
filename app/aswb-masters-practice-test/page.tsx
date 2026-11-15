@@ -126,7 +126,7 @@ export default function AswbLandingPage() {
           <ExamLandingHero
             dashboardHref="/aswb-masters/dashboard"
             shortName="ASWB Masters"
-            subtitle="200 original questions on the 2026 Masters content outline: values and ethics, assessment and planning, intervention and practice. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the 2026 Masters content outline: values and ethics, assessment and planning, intervention and practice. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/aswb-mobile.png", desktop: "/landing/aswb-desktop.png" }}
           />
         </div>

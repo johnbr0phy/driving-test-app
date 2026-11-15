@@ -127,7 +127,7 @@ export default function RdExamLandingPage() {
           <ExamLandingHero
             dashboardHref="/registered-dietitian/dashboard"
             shortName="RD exam"
-            subtitle="200 original questions on the CDR test specifications: medical nutrition therapy, nutrition support, community nutrition, management, research and foodservice. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the CDR test specifications: medical nutrition therapy, nutrition support, community nutrition, management, research and foodservice. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/rdexam-mobile.png", desktop: "/landing/rdexam-desktop.png" }}
           />
         </div>

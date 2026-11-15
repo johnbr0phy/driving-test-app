@@ -139,7 +139,7 @@ export default function NzClass2LicenceLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-heavy-vehicle-licence/dashboard"
             shortName="Class 2 Theory (NZ)"
-            subtitle="200 original questions for New Zealand's Class 2 heavy vehicle theory test: work time and logbooks, loads, air brakes, the 90 km/h limit and sharing the road in a truck. Five 35-question tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions for New Zealand's Class 2 heavy vehicle theory test: work time and logbooks, loads, air brakes, the 90 km/h limit and sharing the road in a truck. Five 35-question tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/nzheavy-mobile.png", desktop: "/landing/nzheavy-desktop.png" }}
           />
         </div>

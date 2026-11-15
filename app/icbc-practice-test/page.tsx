@@ -140,7 +140,7 @@ export default function IcbcLandingPage() {
           <ExamLandingHero
             dashboardHref="/icbc/dashboard"
             shortName="ICBC"
-            subtitle="200 questions from Learn to Drive Smart for your B.C. Class 7L knowledge test: signs, right-of-way, lanes and parking, sharing the road, impairment, emergencies and GLP rules. 50 per test, 40 to pass. Tuned for mobile. No account needed."
+            subtitle="200 questions from Learn to Drive Smart for your B.C. Class 7L knowledge test: signs, right-of-way, lanes and parking, sharing the road, impairment, emergencies and GLP rules. 50 per test, 40 to pass. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cabc-mobile.png", desktop: "/landing/cabc-desktop.png" }}
           />
         </div>

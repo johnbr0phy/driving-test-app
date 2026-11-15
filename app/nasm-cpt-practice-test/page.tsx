@@ -138,7 +138,7 @@ export default function NasmCptLandingPage() {
           <ExamLandingHero
             dashboardHref="/nasm-cpt/dashboard"
             shortName="NASM CPT"
-            subtitle="200 original questions on the NASM CPT7 exam blueprint: the OPT model, assessments, program design, exercise technique and coaching. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the NASM CPT7 exam blueprint: the OPT model, assessments, program design, exercise technique and coaching. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/nasm-mobile.png", desktop: "/landing/nasm-desktop.png" }}
           />
         </div>

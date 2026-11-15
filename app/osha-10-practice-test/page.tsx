@@ -141,7 +141,7 @@ export default function OshaLandingPage() {
           <ExamLandingHero
             dashboardHref="/osha-10/dashboard"
             shortName="OSHA 10"
-            subtitle="200 questions on worker rights, the Focus Four, HazCom and PPE, health hazards, tools and fire safety. Construction and general industry. Tuned for mobile. No account needed."
+            subtitle="200 questions on worker rights, the Focus Four, HazCom and PPE, health hazards, tools and fire safety. Construction and general industry. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/osha-mobile.png", desktop: "/landing/osha-desktop.png" }}
           />
         </div>

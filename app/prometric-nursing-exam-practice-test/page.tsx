@@ -143,7 +143,7 @@ export default function GulfNursingLandingPage() {
           <ExamLandingHero
             dashboardHref="/gulf-nursing-exam/dashboard"
             shortName="Gulf RN"
-            subtitle="200 original registered nurse questions for the DHA, DOH, MOHAP, SCFHS, Qatar, Oman, Kuwait and Bahrain licensing exams: fundamentals, med-surg, maternity, pediatrics and dosage. Tuned for mobile. No account needed."
+            subtitle="200 original registered nurse questions for the DHA, DOH, MOHAP, SCFHS, Qatar, Oman, Kuwait and Bahrain licensing exams: fundamentals, med-surg, maternity, pediatrics and dosage. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/gulfrn-mobile.png", desktop: "/landing/gulfrn-desktop.png" }}
           />
         </div>

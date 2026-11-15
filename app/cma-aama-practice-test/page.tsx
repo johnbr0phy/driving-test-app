@@ -126,7 +126,7 @@ export default function CmaLandingPage() {
           <ExamLandingHero
             dashboardHref="/cma-aama/dashboard"
             shortName="CMA (AAMA)"
-            subtitle="200 original questions on the AAMA content outline: clinical skills, pharmacology, law and ethics, communication, billing and scheduling. Four 50-question mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions on the AAMA content outline: clinical skills, pharmacology, law and ethics, communication, billing and scheduling. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cma-mobile.png", desktop: "/landing/cma-desktop.png" }}
           />
         </div>

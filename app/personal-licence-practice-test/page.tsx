@@ -143,7 +143,7 @@ export default function PersonalLicencePracticeTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/personal-licence/dashboard"
             shortName="Personal Licence"
-            subtitle="200 questions on the Licensing Act 2003 for the Level 2 Award for Personal Licence Holders: objectives, premises licences, the DPS, TENs, police powers and underage sales. Tuned for mobile. No account needed."
+            subtitle="200 questions on the Licensing Act 2003 for the Level 2 Award for Personal Licence Holders: objectives, premises licences, the DPS, TENs, police powers and underage sales. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ukaplh-mobile.png", desktop: "/landing/ukaplh-desktop.png" }}
           />
         </div>

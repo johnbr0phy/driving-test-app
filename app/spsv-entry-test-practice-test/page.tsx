@@ -129,7 +129,7 @@ export default function SpsvEntryTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/spsv-entry-test/dashboard"
             shortName="SPSV Entry Test"
-            subtitle="200 original practice questions for the Industry Knowledge module, written from the NTA's Official Manual: licensing, vehicles, ranks and bus lanes, fares, customer service and safety. Three 54-question mock tests at the real 75% pass line. Tuned for mobile. No account needed."
+            subtitle="200 original practice questions for the Industry Knowledge module, written from the NTA's Official Manual: licensing, vehicles, ranks and bus lanes, fares, customer service and safety. Three 54-question mock tests at the real 75% pass line. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/iespsv-mobile.png", desktop: "/landing/iespsv-desktop.png" }}
           />
         </div>

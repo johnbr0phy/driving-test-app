@@ -140,7 +140,7 @@ export default function SecplusLandingPage() {
           <ExamLandingHero
             dashboardHref="/comptia-security-plus/dashboard"
             shortName="Security+"
-            subtitle="200 questions weighted to the SY0-701 objectives. Tuned for mobile. No account needed."
+            subtitle="200 questions weighted to the SY0-701 objectives. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/secplus-mobile.png", desktop: "/landing/secplus-desktop.png" }}
           />
         </div>

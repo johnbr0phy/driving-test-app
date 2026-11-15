@@ -134,7 +134,7 @@ export default function NclexPnLandingPage() {
           <ExamLandingHero
             dashboardHref="/nclex-pn/dashboard"
             shortName="NCLEX-PN"
-            subtitle="200 practical nursing questions with rationales, written for the LPN/LVN scope, including select all that apply. Tuned for mobile. No account needed."
+            subtitle="200 practical nursing questions with rationales, written for the LPN/LVN scope, including select all that apply. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/nclexpn-mobile.png", desktop: "/landing/nclexpn-desktop.png" }}
           />
         </div>

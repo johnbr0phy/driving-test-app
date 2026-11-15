@@ -126,7 +126,7 @@ export default function PhrebrokerLandingPage() {
           <ExamLandingHero
             dashboardHref="/real-estate-broker-exam-philippines/dashboard"
             shortName="REB Exam"
-            subtitle="200 original questions for the PRC Real Estate Brokers Licensure Examination: property ownership, R.A. 9646 and ethics, subdivisions and condominiums, sale, mortgage and lease, titles and registration, brokerage, finance, zoning, ecology and appraisal. Four 50-item mock exams. Tuned for mobile. No account needed."
+            subtitle="200 original questions for the PRC Real Estate Brokers Licensure Examination: property ownership, R.A. 9646 and ethics, subdivisions and condominiums, sale, mortgage and lease, titles and registration, brokerage, finance, zoning, ecology and appraisal. Four 50-item mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/phrebroker-mobile.png", desktop: "/landing/phrebroker-desktop.png" }}
           />
         </div>

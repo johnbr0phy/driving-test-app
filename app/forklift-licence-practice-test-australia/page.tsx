@@ -141,7 +141,7 @@ export default function AuForkliftLandingPage() {
           <ExamLandingHero
             dashboardHref="/au-forklift-licence/dashboard"
             shortName="Forklift Licence"
-            subtitle="200 questions for the Australian LF high risk work licence: load charts, load weight calculations, pre-start checks, safe operation, LPG and batteries. Tuned for mobile. No account needed."
+            subtitle="200 questions for the Australian LF high risk work licence: load charts, load weight calculations, pre-start checks, safe operation, LPG and batteries. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/auforklift-mobile.png", desktop: "/landing/auforklift-desktop.png" }}
           />
         </div>

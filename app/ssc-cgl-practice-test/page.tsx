@@ -127,7 +127,7 @@ export default function SscCglLandingPage() {
           <ExamLandingHero
             dashboardHref="/ssc-cgl/dashboard"
             shortName="SSC CGL"
-            subtitle="232 original Tier 1 questions on reasoning, GK, quant and English. Tuned for mobile. No account needed."
+            subtitle="232 original Tier 1 questions on reasoning, GK, quant and English. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/ssccgl-mobile.png", desktop: "/landing/ssccgl-desktop.png" }}
           />
         </div>

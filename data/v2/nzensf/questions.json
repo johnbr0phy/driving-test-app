@@ -228,15 +228,15 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Practising certificates",
-    "stem": "How often must an enrolled nurse renew their annual practising certificate?",
+    "stem": "How often must an enrolled nurse renew their practising certificate?",
     "options": [
+      "Every three years",
       "Once, at registration",
-      "Every year",
       "Every two years",
-      "Every three years"
+      "Every year"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The Council says a nurse practising in Aotearoa New Zealand must hold a valid practising certificate, renewed each year, and must meet continuing competence requirements to renew."
   },
@@ -671,9 +671,9 @@
     "skill": "Te Tiriti principles",
     "stem": "Which three principles of Te Tiriti o Waitangi does the Nursing Council's Code of Conduct name as integral to nursing services for Māori?",
     "options": [
-      "Equity, access, affordability and choice",
+      "Equity, access and choice",
       "Partnership, protection and participation",
-      "Safety, quality, efficiency and value",
+      "Safety, quality and value",
       "Honesty, respect and confidentiality"
     ],
     "correct": [
@@ -2168,15 +2168,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Accountability",
-    "stem": "Since January 2025, who is accountable for an enrolled nurse's own nursing practice?",
+    "stem": "Who is accountable for an enrolled nurse's own nursing practice?",
     "options": [
-      "The enrolled nurse",
       "The registered nurse in charge",
-      "The patient's doctor",
-      "The employing organisation"
+      "The enrolled nurse",
+      "The employing organisation",
+      "The patient's doctor"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The scope says enrolled nurses are accountable and responsible for their nursing practice, consistent with their education, assessed competence and the law."
   },
@@ -2505,17 +2505,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Heart failure",
-    "stem": "Which position helps a patient with heart failure who is breathless at night?",
+    "stem": "A patient with heart failure now needs three pillows to sleep and wakes at night short of breath. What should the enrolled nurse do?",
     "options": [
-      "Prone with arms by the side",
-      "Lying flat on the left side all night",
-      "Sitting up supported by pillows",
-      "Lying flat with legs raised"
+      "Record it as normal for heart failure",
+      "Remove the pillows so he lies flat",
+      "Report it as a possible sign of worsening",
+      "Wait for his next routine review"
     ],
     "correct": [
       2
     ],
-    "explanation": "Sitting up reduces fluid returning to the heart and lungs and eases breathing. Raising the legs increases the return and can worsen breathlessness."
+    "explanation": "Needing more pillows to breathe (orthopnoea) and waking breathless at night can mean fluid is building up in the lungs as heart failure worsens. The enrolled nurse reports this change so it is assessed."
   },
   {
     "id": "NZENSF-T2-032",
@@ -3095,15 +3095,15 @@
     "skill": "Fluid overload",
     "stem": "During an IV infusion, an older patient becomes breathless with crackles in the lungs and raised blood pressure. What should the enrolled nurse do first?",
     "options": [
-      "Lie him flat and give him water",
-      "Slow the infusion, sit him up, escalate",
-      "Speed up the infusion to flush the line",
-      "Stop his oxygen and observe closely"
+      "Lie him flat, give him water and recheck in an hour",
+      "Stop or slow the infusion per policy, sit him up, escalate",
+      "Speed up the infusion to flush the line and keep it running",
+      "Stop his oxygen and keep observing him closely at the bedside"
     ],
     "correct": [
       1
     ],
-    "explanation": "These are signs of fluid overload. Slowing the fluid, sitting him up to ease breathing and getting urgent review protect him."
+    "explanation": "These are signs of fluid overload. Stopping the infusion, or slowing it as the organisation's policy says, sitting him up to ease breathing and getting urgent review protect him."
   },
   {
     "id": "NZENSF-T2-060",

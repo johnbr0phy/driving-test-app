@@ -37,7 +37,7 @@ ITEMS = [
      "Clear, respectful communication with colleagues (Code of Conduct principle 6) starts with understanding the reason. There may be a safety concern, such as a back injury, that changes the plan."),
     # ---- Test 2 ----
     ("S", 2, 2, "Accountability",
-     "Since January 2025, who is accountable for an enrolled nurse's own nursing practice?",
+     "Who is accountable for an enrolled nurse's own nursing practice?",
      ["The enrolled nurse", "The registered nurse in charge", "The employing organisation", "The patient's doctor"],
      "The scope says enrolled nurses are accountable and responsible for their nursing practice, consistent with their education, assessed competence and the law."),
     ("S", 2, 3, "Escalation",

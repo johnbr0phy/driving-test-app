@@ -5,7 +5,7 @@
 ITEMS = [
     # ---- Test 1 ----
     ("S", 1, 1, "Practising certificates",
-     "How often must an enrolled nurse renew their annual practising certificate?",
+     "How often must an enrolled nurse renew their practising certificate?",
      ["Every year", "Every two years", "Every three years", "Once, at registration"],
      "The Council says a nurse practising in Aotearoa New Zealand must hold a valid practising certificate, renewed each year, and must meet continuing competence requirements to renew."),
     ("S", 1, 2, "Code of Rights",

@@ -13,7 +13,7 @@ ITEMS = [
      "Pou one asks nurses to demonstrate kawa whakaruruhau by addressing power imbalances and working collaboratively with Māori. It is cultural safety in a Māori context."),
     ("S", 1, 2, "Te Tiriti principles",
      "Which three principles of Te Tiriti o Waitangi does the Nursing Council's Code of Conduct name as integral to nursing services for Māori?",
-     ["Partnership, protection and participation", "Honesty, respect and confidentiality", "Equity, access, affordability and choice", "Safety, quality, efficiency and value"],
+     ["Partnership, protection and participation", "Honesty, respect and confidentiality", "Equity, access and choice", "Safety, quality and value"],
      "The Code of Conduct says the principles of partnership, protection and participation are integral to providing appropriate nursing services for Māori."),
     ("S", 1, 2, "Social determinants",
      "Pou one asks an enrolled nurse to understand how social determinants affect health. Which of these is the standard's own example?",

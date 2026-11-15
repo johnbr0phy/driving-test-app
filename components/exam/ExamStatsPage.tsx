@@ -44,8 +44,6 @@ import {
 } from "@/components/stats/StatsParts";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 import { checkoutAttribution } from "@/lib/funnel";
-import { examReadiness } from "@/lib/examReadiness";
-import { ExamReadinessCard } from "@/components/exam/ExamReadinessCard";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -189,15 +187,6 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     });
   }, [examQuestions, exam.stateCode, getQuestionPerformance, hydrated]);
 
-  const readiness = useMemo(() => {
-    const category = new Map(questionsWithPerformance.map((q) => [q.question.questionId, q.question.category]));
-    return examReadiness(
-      exam,
-      (id) => category.get(id),
-      questionsWithPerformance.map((q) => ({ questionId: q.question.questionId, timesCorrect: q.correct, timesWrong: q.wrong }))
-    );
-  }, [exam, questionsWithPerformance]);
-
   const sortedQuestions = useMemo(() => {
     return [...questionsWithPerformance].sort((a, b) => {
       let comparison = 0;
@@ -324,14 +313,6 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
           )}
 
           {!showCommunity && (<>
-          <ExamReadinessCard
-            exam={exam}
-            ui={ui}
-            readiness={readiness}
-            isPremium={isPremium}
-            price={price}
-            onUnlock={() => { trackPaywallHit("stats_readiness", "Readiness", paywallLocation); trackViewItem(paywallLocation); setPaywallOpen(true); }}
-          />
           <StatsHeaderCard
             title={t("stats.yourStats")}
             subtitle={ui.statsSeen(answeredCount, examQuestions.length, exam.shortName)}

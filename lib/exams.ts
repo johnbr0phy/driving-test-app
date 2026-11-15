@@ -112,9 +112,9 @@ export interface ExamConfig {
    *  everywhere a test ID is read. */
   mockExams?: { count: number; minutes: number; blueprint: Record<string, number> };
   /** English paywall bullets saying what Premium adds, in place of the
-   *  generic ones (lib/examPaywallCopy.ts examPremiumBullets). Sell what
-   *  Premium does for the person (a dress rehearsal, readiness), not a
-   *  count of steps. Other languages keep the generic bullets. */
+   *  generic ones (lib/examPaywallCopy.ts examPremiumBullets). Say plainly
+   *  what Premium adds (more questions, more tests, timed mocks); never
+   *  promise a pass or a readiness verdict. Other languages keep the generic bullets. */
   premiumBenefits?: string[];
   questionsPerTest: number;
   passPct: number;
@@ -9108,9 +9108,8 @@ const rbt: ExamConfig = {
   // scaled to 85.
   mockExams: { count: 2, minutes: 90, blueprint: { rbtData: 15, rbtAssess: 9, rbtAcq: 21, rbtReduce: 16, rbtDoc: 11, rbtEthics: 13 } },
   premiumBenefits: [
-    "2 full-length timed RBT mocks: 85 questions in 90 minutes",
-    "Your readiness in every RBT area, and where to gain points",
     "200 work-scenario questions and Practice Tests 5 to 8",
+    "2 full-length timed RBT mocks: 85 questions in 90 minutes",
     "Full stats on every question you miss, on every Tigertest exam",
   ],
   questionsPerTest: 50,

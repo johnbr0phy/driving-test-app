@@ -479,7 +479,7 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">{ui.yourStats}</h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{exam.mockExams ? ui.readinessTeaser : ui.yourStatsSub}</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{ui.yourStatsSub}</p>
               </div>
               <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
             </div>

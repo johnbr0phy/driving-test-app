@@ -60,7 +60,6 @@ const jsonLd = {
         "400 RBT practice questions, 200 of them work scenarios",
         "8 practice tests of 50 questions weighted like the RBT Test Content Outline (3rd ed.)",
         "2 full-length timed mocks: 85 questions in 90 minutes, like the real exam (Premium)",
-        "Readiness by content area: ready, almost or not yet (Premium)",
         "4 training sets by content domain",
         "Instant feedback with explanations",
         "Auto-save progress",
@@ -115,7 +114,7 @@ const jsonLd = {
           name: "What is free, and what does Premium add?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Free: the first 200 questions, the training sets that teach them and Practice Tests 1 to 4. Premium is one payment and adds two full-length timed mocks (85 questions in 90 minutes, like the real exam), your readiness in every content area with where to gain points, 200 work-scenario questions with Practice Tests 5 to 8, and full stats on every question you miss.",
+            text: "Free: the first 200 questions, the training sets that teach them and Practice Tests 1 to 4. Premium is one payment and adds 200 work-scenario questions with Practice Tests 5 to 8, two full-length timed mocks (85 questions in 90 minutes, like the real exam), and full stats on every question you miss.",
           },
         },
         classFaqJsonLd("rbt"),
@@ -183,7 +182,7 @@ export default function RbtLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Weighted Mock Exams</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Eight practice tests of 50 questions, each weighted like the 75 scored questions on the real exam, then two full-length mocks of 85 questions on a 90-minute clock, like test day. Every question comes with an explanation. The first 200 questions and Tests 1 to 4 are free. Premium adds the 200 scenario questions, Tests 5 to 8, the timed mocks and your readiness in every area.
+                Eight practice tests of 50 questions, each weighted like the 75 scored questions on the real exam, then two full-length mocks of 85 questions on a 90-minute clock, like test day. Every question comes with an explanation. The first 200 questions and Tests 1 to 4 are free. Premium adds the 200 scenario questions, Tests 5 to 8 and the timed mocks.
               </p>
             </div>
           </div>
@@ -271,7 +270,7 @@ export default function RbtLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by domain and tells you which ones are ready. Aim for 80% or better on every practice test, then sit a full-length timed mock before you book. After each test, drill the questions you missed and retrain the weakest domain.
+                Tigertest tracks your accuracy by domain. Aim for 80% or better on every practice test, then sit a full-length timed mock before you book. After each test, drill the questions you missed and retrain the weakest domain.
               </p>
             </div>
           </div>
@@ -317,7 +316,7 @@ export default function RbtLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is free, and what does Premium add?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Free: the first 200 questions, the training sets that teach them and Practice Tests 1 to 4. Premium is one payment and adds two full-length timed mocks (85 questions in 90 minutes, like the real exam), your readiness in every content area with where to gain points, 200 work-scenario questions with Practice Tests 5 to 8, and full stats on every question you miss.
+              Free: the first 200 questions, the training sets that teach them and Practice Tests 1 to 4. Premium is one payment and adds 200 work-scenario questions with Practice Tests 5 to 8, two full-length timed mocks (85 questions in 90 minutes, like the real exam), and full stats on every question you miss.
             </p>
           </div>
           <ExamClassFaq examId="rbt" />

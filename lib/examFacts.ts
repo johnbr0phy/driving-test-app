@@ -44,6 +44,20 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  aufirearmsnsw: {
+      answer:
+        "In New South Wales, a person who has never held a firearms licence must complete the firearms training and safety course prescribed for the licence before it can be issued (Firearms Act 1996, s 11(3)(b)). The NSW Police users guide calls the longarm course the Firearms Licence Qualification course, run by approved clubs, organisations or trainers, with theory and a practical component. Licences are issued by the NSW Police Force Firearms Registry. An applicant must be 18 or over, an NSW resident, have a genuine reason such as approved club membership or permission to shoot on rural land, and be able to meet the storage rules. A first licence cannot be issued until 28 days after applying, and since 1 July 2026 a licence lasts up to 2 years.",
+      rows: [
+        { label: "Course", value: "Firearms safety course prescribed for a first licence (longarms: Firearms Licence Qualification course)" },
+        { label: "Licence age", value: "18 for a licence; minors use a minor's firearms permit with written parental consent" },
+        { label: "Waiting period", value: "28 days after applying for a first licence; not for renewals" },
+        { label: "Licence term", value: "Up to 2 years for licences issued from 1 July 2026" },
+        { label: "Permit to acquire", value: "One per firearm, valid 90 days, usually after a 28-day wait" },
+        { label: "Licensing body", value: "NSW Police Force Firearms Registry" },
+      ],
+      basedOn: "The Firearms Act 1996 (current version from 1 July 2026) on legislation.nsw.gov.au, the NSW Police Firearms (Longarms) Users Guide and the NSW Government's 1 July 2026 release, checked November 2026",
+      source: { name: "NSW Legislation: Firearms Act 1996", url: "https://legislation.nsw.gov.au/view/whole/html/inforce/current/act-1996-046" },
+    },
   nzham: {
       answer:
         "The New Zealand amateur radio exam leads to the General Amateur Operator's Certificate of Competency (GAOC) and a ZL callsign, which together let you transmit under the General User Radio Licence for Amateur Radio Operators. Radio Spectrum Management (RSM, part of MBIE) sets the rules, and the syllabus is the international HAREC syllabus. NZART runs the exam through RSM-approved Approved Radio Examiners (ARXs): each paper has 60 multiple-choice questions, one drawn from every ten in a public 600-question bank across 30 topics, with 2 hours allowed, and 40 or more correct answers pass. A calculator may be used. A pass is recorded on an exam result notice, then the ARX issues the certificate and callsign. Only New Zealand citizens and permanent residents can normally be granted a GAOC.",

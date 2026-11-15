@@ -267,3 +267,4 @@ import "./crfsc";
 import "./nzdrone";
 import "./cadc";
 import "./nzham";
+import "./aufirearmsnsw";

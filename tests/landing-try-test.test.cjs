@@ -3,7 +3,7 @@
 require("tsx/cjs");
 const test = require("node:test");
 const assert = require("node:assert");
-const { landingTryResult, LANDING_TRY_INIT_SCRIPT, LANDING_TRY_TARGET_PER_ARM } = require("../lib/landingTryTest.ts");
+const { landingTryResult, LANDING_TRY_INIT_SCRIPT, LANDING_TRY_TARGET_PER_ARM, LANDING_TRY_STORAGE_KEY, LANDING_TRY_TEST_ID } = require("../lib/landingTryTest.ts");
 
 test("too early under 100 new visitors an arm", () => {
   assert.strictEqual(landingTryResult({ enrolled: 99, answered: 90 }, { enrolled: 500, answered: 100 }).verdict, "too_early");
@@ -50,4 +50,9 @@ test("the inline script assigns an arm, honours a pin and marks <html>", () => {
   delete store["tigertest-landing-try-test"];
   run("?tryq=card");
   assert.strictEqual(JSON.parse(store["tigertest-landing-try-test"]).pinned, true, "any pin is never counted");
+});
+
+test("init script uses the same storage key and test id as the module", () => {
+  assert.ok(LANDING_TRY_INIT_SCRIPT.includes(`k=${JSON.stringify(LANDING_TRY_STORAGE_KEY)}`));
+  assert.ok(LANDING_TRY_INIT_SCRIPT.includes(`t=${JSON.stringify(LANDING_TRY_TEST_ID)}`));
 });

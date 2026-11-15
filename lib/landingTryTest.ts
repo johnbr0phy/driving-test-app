@@ -41,7 +41,8 @@ export const LANDING_TRY_WINDOW_MS = 7 * 24 * 3_600_000;
 /** "Kept going": this many answers in the window. */
 export const LANDING_TRY_ENGAGED = 10;
 
-const KEY = "tigertest-landing-try-test";
+export const LANDING_TRY_STORAGE_KEY = "tigertest-landing-try-test";
+const KEY = LANDING_TRY_STORAGE_KEY;
 
 type Stored = {
   test: string;
@@ -60,9 +61,10 @@ type Stored = {
  * it, so CSS hides the card for control browsers from the first frame.
  * Kept in step with load() below.
  */
-export const LANDING_TRY_INIT_SCRIPT = `(function(){try{var k=${JSON.stringify(KEY)},t=${JSON.stringify(
-  LANDING_TRY_TEST_ID,
-)},p=new URLSearchParams(location.search).get("tryq"),r=null;try{r=JSON.parse(localStorage.getItem(k)||"null")}catch(e){}if(!r||r.test!==t||(r.arm!=="card"&&r.arm!=="control"))r={test:t,arm:Math.random()<0.5?"card":"control"};if(p==="card"||p==="control"){r.arm=p;r.pinned=true}localStorage.setItem(k,JSON.stringify(r));document.documentElement.setAttribute("data-ltq",r.arm)}catch(e){}})();`;
+// A fixed string with the key and test id written in (a test checks they match
+// KEY and LANDING_TRY_TEST_ID), so nothing is interpolated into the script.
+export const LANDING_TRY_INIT_SCRIPT =
+  '(function(){try{var k="tigertest-landing-try-test",t="landingTry1",p=new URLSearchParams(location.search).get("tryq"),r=null;try{r=JSON.parse(localStorage.getItem(k)||"null")}catch(e){}if(!r||r.test!==t||(r.arm!=="card"&&r.arm!=="control"))r={test:t,arm:Math.random()<0.5?"card":"control"};if(p==="card"||p==="control"){r.arm=p;r.pinned=true}localStorage.setItem(k,JSON.stringify(r));document.documentElement.setAttribute("data-ltq",r.arm)}catch(e){}})();';
 
 function load(): Stored | null {
   try {

@@ -9928,3 +9928,8 @@ html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
     font-size: max(16px, 1em);
   }
 }
+
+/* "Try one now" A/B test (lib/landingTryTest.ts): the control arm never sees the card. */
+html[data-ltq="control"] .landing-try {
+  display: none;
+}

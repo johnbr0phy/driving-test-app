@@ -2,6 +2,7 @@ import { auth } from "@/lib/firebase";
 import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
 import { getBrowserId, trackEnrollment } from "@/lib/enrollment";
 import { trackFunnelStep } from "@/lib/funnel";
+import { noteLandingTryPurchase } from "@/lib/landingTryTest";
 import { isInternalBrowser } from "@/lib/internal";
 import { knownPremiumPrice } from "@/lib/localPrice";
 import { USD_PRICE } from "@/lib/pricing";
@@ -180,6 +181,7 @@ export function trackPaywallDismissed(location = "dashboard") {
 }
 
 export function trackPurchase(transactionId: string) {
+  noteLandingTryPurchase();
   const first = checkoutAttribution();
   window.gtag?.("event", "purchase", {
     transaction_id: transactionId,

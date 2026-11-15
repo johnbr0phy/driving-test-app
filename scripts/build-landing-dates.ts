@@ -15,6 +15,12 @@
  *
  * lib/examFacts.ts is shared by every exam, so it is left out; uncommitted
  * changes do not count until they are committed.
+ *
+ * It also keeps lib/examLaunchDates.json, the day each exam went live (the
+ * first commit that added any of the same files), read by the /admin New
+ * tests tab. A launch date is written once and never moved: an exam already
+ * in the file keeps its date, and a new exam whose files git cannot find yet
+ * (not committed, or a shallow clone) gets today.
  */
 import { execFileSync } from "child_process";
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "fs";
@@ -24,6 +30,7 @@ import { EXAMS_V2 } from "@/lib/v2/registry";
 
 const ROOT = join(__dirname, "..");
 const OUT = join(ROOT, "lib/landingDates.json");
+const LAUNCH_OUT = join(ROOT, "lib/examLaunchDates.json");
 
 /** "@/data/x.json" imports of a bank module, by imported identifier. */
 function dataImports(modulePath: string): Map<string, string> {
@@ -73,6 +80,14 @@ function lastCommitDate(paths: string[]): string | null {
   return out || null;
 }
 
+/** The day the first of these files was added, or null when git has none of them. */
+function firstAddDate(paths: string[]): string | null {
+  if (paths.length === 0) return null;
+  const out = execFileSync("git", ["log", "--diff-filter=A", "--format=%cs", "--", ...paths], { cwd: ROOT, encoding: "utf8" }).trim();
+  const days = out.split("\n").filter(Boolean).sort();
+  return days[0] ?? null;
+}
+
 const sources: Record<string, string[]> = {};
 
 sources.dmv = ["app/dmv-practice-test/page.tsx", "data/questions.json"];
@@ -100,6 +115,16 @@ for (const id of Object.keys(sources).sort()) {
 }
 
 const json = `${JSON.stringify(dates, null, 2)}\n`;
+
+// Launch dates: existing entries are kept; state variants count in their family.
+const launches: Record<string, string> = existsSync(LAUNCH_OUT) ? JSON.parse(readFileSync(LAUNCH_OUT, "utf8")) : {};
+const today = new Date().toISOString().slice(0, 10);
+const variantIds = new Set<string>(ALL_EXAMS.filter((e) => e.variantOf).map((e) => e.id));
+for (const id of Object.keys(sources)) {
+  if (variantIds.has(id) || launches[id]) continue;
+  launches[id] = firstAddDate(sources[id]) ?? today;
+}
+const launchJson = `${JSON.stringify(Object.fromEntries(Object.entries(launches).sort(([a], [b]) => a.localeCompare(b))), null, 2)}\n`;
 if (missing.length) console.warn(`No committed files found for: ${missing.join(", ")} (they fall back to EXAM_LANDINGS_UPDATED_AT)`);
 
 if (process.argv.includes("--check")) {
@@ -108,8 +133,13 @@ if (process.argv.includes("--check")) {
     console.error("lib/landingDates.json is stale: run npx tsx scripts/build-landing-dates.ts");
     process.exit(1);
   }
+  if ((existsSync(LAUNCH_OUT) ? readFileSync(LAUNCH_OUT, "utf8") : "") !== launchJson) {
+    console.error("lib/examLaunchDates.json is missing exams: run npx tsx scripts/build-landing-dates.ts");
+    process.exit(1);
+  }
   console.log("lib/landingDates.json is up to date.");
 } else {
   writeFileSync(OUT, json);
+  writeFileSync(LAUNCH_OUT, launchJson);
   console.log(`Wrote ${Object.keys(dates).length} landing dates to lib/landingDates.json`);
 }

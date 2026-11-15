@@ -256,3 +256,4 @@ import "./itcils";
 import "./itceli";
 import "./itpatente";
 import "./frcode";
+import "./aufirearmsqld";

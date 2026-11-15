@@ -1,4 +1,5 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  aufirearmsqld: { title: "QLD Firearms Safety Practice Test", description: "Review Queensland weapons law, storage, transport and the National Firearms Safety Code before your course." },
   cdl: { title: "CDL General Knowledge", description: "Review vehicle inspections, cargo handling, road safety and commercial driving rules." },
   cdlx: { title: "CDL Endorsements", description: "Study hazardous materials, air brakes, combination vehicles, tankers and passenger transport." },
   moto: { title: "Motorcycle Permit Test", description: "Review protective gear, motorcycle control, road positioning and hazard awareness." },

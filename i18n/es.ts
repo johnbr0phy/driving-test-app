@@ -1058,6 +1058,15 @@ export const es: TranslationKeys = {
     rmaExams: "Physical Examinations",
     rmaPharm: "Clinical Pharmacology",
     rmaTherapy: "Therapeutic Modalities & First Aid",
+    // aufirearmsqld
+    fqLaw: "Weapons Act & Licensing",
+    fqCategories: "Weapon Categories",
+    fqStorage: "Secure Storage",
+    fqTransport: "Transport & Public Places",
+    fqConduct: "Private Land, Buying & Ranges",
+    fqCode: "National Firearms Safety Code",
+    fqField: "Target, Firing Zone & Field Safety",
+    fqActions: "Parts, Actions & Ammunition",
     // nhie
     nhieExterior: "Site, Exterior & Roofing",
     nhieStructure: "Structure & Interiors",

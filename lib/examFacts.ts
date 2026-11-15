@@ -44,6 +44,20 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  aufirearmsqld: {
+      answer:
+        "In Queensland, a person applying for a weapons licence must show adequate knowledge of safety practices, usually by completing an approved safety training course within 1 year before applying (Weapons Act 1990, s 10AA). The approved course is 11029NAT Course in Firearms and Weapons Safety, owned by the Queensland Police Service and run by approved training providers, with a core unit on weapons legislation and community safety and a unit for each weapon category. Licences are issued by the Queensland Police Service Weapons Licensing. An adult licence needs a genuine reason, such as sports or target shooting with club membership or recreational shooting with written landowner permission, access to secure storage, and a 28-day waiting period. Category A and B licences run for up to 10 years.",
+      rows: [
+        { label: "Course", value: "11029NAT Course in Firearms and Weapons Safety (approved for Queensland licensing)" },
+        { label: "When", value: "Completed within 1 year before applying for the licence" },
+        { label: "Licence age", value: "18 for an adult licence; minor's licence from 11" },
+        { label: "Waiting period", value: "28 days after lodging, unless exceptional circumstances" },
+        { label: "Licence term", value: "Up to 10 years for category A or B, 5 years for other categories" },
+        { label: "Course owner", value: "Queensland Police Service Weapons Licensing Group" },
+      ],
+      basedOn: "The Weapons Act 1990 and Weapons Regulation 2016 on legislation.qld.gov.au and the 11029NAT record on training.gov.au, checked November 2026",
+      source: { name: "Queensland Legislation: Weapons Act 1990", url: "https://www.legislation.qld.gov.au/view/whole/html/inforce/current/act-1990-071" },
+    },
   timestables: {
     answer:
       "The Multiplication Tables Check (MTC) is a statutory on-screen check for Year 4 pupils in England, taken at school in June. Children answer 25 multiplication questions on the 2 to 12 times tables, with 6 seconds to type each answer and a 3-second pause between questions. It is multiplication only, the 6, 7, 8, 9 and 12 times tables come up most, and a fact and its reverse (such as 8 × 6 and 6 × 8) never appear in the same check. There is no pass mark; schools see each child's score out of 25.",

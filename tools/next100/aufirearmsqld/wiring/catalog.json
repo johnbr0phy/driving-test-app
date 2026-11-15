@@ -1,0 +1,57 @@
+{
+  "blurb": "Practice for the Queensland firearms safety course you need before a first weapons licence: the Weapons Act 1990, weapon categories, secure storage, transport and public places, private land and ranges, and the National Firearms Safety Code, in four 50-question tests.",
+  "org": "Queensland Police Service Weapons Licensing · approved firearms safety course (11029NAT)",
+  "group": "Australia firearms licences",
+  "groupNote": "New group proposed, placed after \"Australia work certificates\"; it should hold aufirearmsqld (and aufirearmsnsw if that is ever built). NSW was not built (see report).",
+  "aliases": [
+    "qld firearms licence",
+    "qld gun licence",
+    "queensland firearms licence",
+    "queensland gun licence",
+    "qld firearms safety course",
+    "firearms safety course queensland",
+    "11029nat",
+    "10618nat",
+    "weapons licensing qld",
+    "qld weapons licence",
+    "weapons act 1990",
+    "qld firearms test",
+    "category a b firearms licence qld",
+    "national firearms safety code",
+    "gun licence brisbane",
+    "firearms licence australia"
+  ],
+  "related": [
+    "nzfirearms",
+    "capal",
+    "hunter"
+  ],
+  "teacherLed": false,
+  "borrowTiger": "hunter",
+  "shareTitle": "QLD Firearms Safety Practice Test",
+  "shareDescription": "Review Queensland weapons law, storage, transport and the National Firearms Safety Code before your course.",
+  "searchTests": [
+    [
+      "qld firearms licence",
+      "AU",
+      "aufirearmsqld"
+    ],
+    [
+      "queensland gun licence test",
+      "AU",
+      "aufirearmsqld"
+    ],
+    [
+      "firearms safety course qld",
+      "AU",
+      "aufirearmsqld"
+    ],
+    [
+      "11029nat",
+      "AU",
+      "aufirearmsqld"
+    ]
+  ],
+  "region": "AU",
+  "groupAfter": "Australia work certificates"
+}

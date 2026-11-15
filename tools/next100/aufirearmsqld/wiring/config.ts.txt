@@ -1,0 +1,68 @@
+const aufirearmsqld: ExamConfig = {
+  id: "aufirearmsqld",
+  stateCode: "AUFAQLD",
+  idBase: 29400,
+  slug: "/qld-firearms-licence",
+  landingPath: "/qld-firearms-safety-test-practice-test",
+  name: "QLD Firearms Safety Practice Test",
+  shortName: "QLD Firearms Safety",
+  examLabel: "firearms safety course",
+  fullName: "Queensland Firearms Safety Course (11029NAT) for a Weapons Licence",
+  questionIdPrefix: "AUFAQLD-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Queensland Police Service accredited course 11029NAT Course in Firearms and Weapons Safety
+  // (Approved for Firearms Licensing in Queensland), current 1 May 2022 to 30 April 2027, read on
+  // training.gov.au November 2026: core unit NAT11029001 (weapons legislation, weapons and community
+  // safety) and NAT11029002 (use category A and B firearms lawfully, safely and responsibly). The
+  // course document is not public and no weights exist, so the split is Tigertest's: law and
+  // licensing 30 (law 7, categories 5, storage 6, transport and public places 6, private land,
+  // acquisition and ranges 6) and safe use 20 (National Firearms Safety Code 8, field and firing
+  // zone 7, parts, actions and ammunition 5). Law from the Weapons Act 1990, Weapons Regulation
+  // 2016 and Weapons Categories Regulation 1997 as in force November 2026; handling from the
+  // Commonwealth's National Firearms Safety Code and the QPS storage brochure. No pass mark is
+  // published; 80% is a readiness target. All items original.
+  blueprint: {
+    fqLaw: 7,
+    fqCategories: 5,
+    fqStorage: 6,
+    fqTransport: 6,
+    fqConduct: 6,
+    fqCode: 8,
+    fqField: 7,
+    fqActions: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29401, name: "Weapons Law & Categories", categories: ["fqLaw", "fqCategories"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 29402, name: "Storage & Transport", categories: ["fqStorage", "fqTransport"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 29403, name: "Safe Handling & Firearm Actions", categories: ["fqCode", "fqActions"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 29404, name: "In the Field, Ranges & Private Land", categories: ["fqField", "fqConduct"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fqLaw: "Weapons Act & Licensing",
+    fqCategories: "Weapon Categories",
+    fqStorage: "Secure Storage",
+    fqTransport: "Transport & Public Places",
+    fqConduct: "Private Land, Buying & Ranges",
+    fqCode: "National Firearms Safety Code",
+    fqField: "Target, Firing Zone & Field Safety",
+    fqActions: "Parts, Actions & Ammunition",
+  },
+  copy: {
+    guestPrompt: "to save your QLD firearms safety progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering Queensland weapons law and categories, storage and transport, safe handling and firearm actions, and field safety, ranges and private land. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Weapons Law & Categories.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your firearms safety course.",
+    ],
+    sourceLine: "Based on the Weapons Act 1990, the Weapons Regulation 2016, the Weapons Categories Regulation 1997 and the National Firearms Safety Code. Original questions. Not affiliated with the Queensland Police Service.",
+    analyticsKey: "aufirearmsqld",
+  },
+};

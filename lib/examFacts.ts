@@ -76,6 +76,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
   },
+  tabe: {
+    answer:
+      "TABE (Tests of Adult Basic Education) is a placement and progress test published by Data Recognition Corporation (DRC) and used by adult education, workforce and correctional programs. TABE 13&14, the current forms, has three subtests: Reading, Mathematics and Language, each at Levels E, M, D and A, with a short Locator test that decides which level to take. At Level D, Reading is 39 questions in two 50-minute parts, Mathematics 40 questions in parts of 45 and 15 minutes, and Language 33 questions in 50 minutes. There is no pass mark: DRC reports scale scores, and each program sets the score it needs.",
+    rows: [
+      { label: "Subtests", value: "Reading, Mathematics, Language (any can be given alone)" },
+      { label: "Levels", value: "E, M, D and A, chosen per subject by the Locator test" },
+      { label: "Level D questions", value: "Reading 39, Mathematics 40, Language 33" },
+      { label: "Level D time", value: "Reading 50 + 50 min, Math 45 + 15 min, Language 50 min" },
+      { label: "Question types", value: "Multiple choice; evidence-based items in Reading; gridded response in Math" },
+      { label: "Passing", value: "No pass mark from DRC; programs set their own cut scores" },
+      { label: "Delivery", value: "Online (DRC INSIGHT) or on paper, through an adult education program" },
+      { label: "Published by", value: "Data Recognition Corporation (DRC)" },
+    ],
+    basedOn: "DRC's TABE 13&14 Level D blueprints and TABE 13&14 Maximum Allowable Testing Times",
+    source: { name: "TABE 13&14 blueprints (DRC)", url: "https://tabetest.com/resources-2/testing-information/blue-prints-1314/" },
+    tigertest:
+      "Tigertest has two TABE practice tests at Level D covering Reading, Mathematics and Language at the real pace, each scored as a percent correct per subject, plus seven drills (three open with the basics). All of it is free with no account required. Levels E, M and A and DRC's scale scores are not modeled.",
+  },
   hiset: {
     answer:
       "The HiSET is a high school equivalency test owned and run by PSI. It has five subtests, each taken and scored on its own: Language Arts - Reading (50 multiple-choice questions in 65 minutes), Language Arts - Writing (60 multiple-choice questions and one essay in 120 minutes), Mathematics (55 questions in 90 minutes), Science (60 questions in 80 minutes) and Social Studies (60 questions in 70 minutes). Each subtest is scored 1 to 20. To pass, you need at least 8 on every subtest, at least 2 out of 6 on the essay and a total of at least 45 across all five. It can be taken on a computer or on paper, at a test center or at home with a remote proctor, and the fee includes two free retests within 12 months.",
@@ -2150,6 +2168,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the FAA Private Pilot for Airplane Category ACS (FAA-S-ACS-6C) and the FAA ACS knowledge test table",
     source: { name: "FAA", url: "https://www.faa.gov/training_testing/testing/acs" },
   },
+  shsat: {
+    answer:
+      "The SHSAT (Specialized High Schools Admissions Test) is the NYC Public Schools test that decides admission to eight of New York City's nine Specialized High Schools, including Stuyvesant, Bronx Science and Brooklyn Tech (LaGuardia uses an audition). NYC residents in 8th grade, or in 9th grade for the first time, can take it in the fall before the school year they want to enter. From fall 2026 it is a computer-adaptive test on DOE computers: 50 English Language Arts questions (Revising/Editing and Reading Comprehension) and 50 Math questions in 180 minutes, with the student choosing which subject to start with and how to split the time. Each subject includes 10 unscored field-test items. There is no calculator and no formula sheet. Scaled scores in the two subjects are added into a composite that ranks students for offers; there is no pass mark.",
+    rows: [
+      { label: "Who takes it", value: "NYC residents in grade 8, or in grade 9 for the first time" },
+      { label: "Questions", value: "50 ELA and 50 Math, including 10 unscored field-test items in each" },
+      { label: "Time", value: "180 minutes in all, split between the subjects as the student chooses" },
+      { label: "Format", value: "Computer adaptive from fall 2026; multiple choice, fill-in-the-blank and technology-enhanced items" },
+      { label: "ELA", value: "Revising/Editing Parts A and B, Reading Comprehension" },
+      { label: "Math", value: "NYS standards through Grade 7 on Grade 8 forms; no calculator, no formulas given" },
+      { label: "Score", value: "Two scaled subtest scores added into a composite used to rank students" },
+      { label: "Pass mark", value: "None: the composite ranks students for offers" },
+    ],
+    basedOn: "NYC Public Schools' NYC Guide to the SHSAT for 2027 Admissions and its SHSAT test page",
+    source: { name: "NYC Public Schools: Specialized High Schools Admissions Test", url: "https://www.schools.nyc.gov/learning/testing/specialized-high-school-admissions-test/" },
+    tigertest:
+      "Tigertest has two full SHSAT practice tests of 50 ELA and 50 Math questions in 3 hours, with Revising/Editing Parts A and B, informational and literary reading passages and math without a calculator, scored as percent correct, plus eight drills, two of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no scaled score.",
+  },
   mapgrowth: {
     answer:
       "MAP Growth is NWEA's computer adaptive test that many US schools give in the fall, winter and spring (and sometimes summer) to measure what a student knows and how much they grow. Students in grades 2 to 5 take Math 2-5, Reading 2-5 and Language Usage 2+. Each test is untimed, usually takes about 45 to 60 minutes, and has at most 43 questions, a few of them unscored field-test items. Questions get harder or easier as the student answers, and the result is a RIT score, compared with national norms updated in 2025. Math covers Operations and Algebraic Thinking, Number and Operations, Measurement and Data, and Geometry; Reading covers Literary Text, Informational Text and Vocabulary; Language Usage covers writing, grammar and usage, and mechanics.",
@@ -2305,6 +2341,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ETS Praxis Study Companions for Core Reading (5713), Writing (5723) and Mathematics (5733)",
     source: { name: "ETS Praxis", url: "https://praxis.ets.org/scores" },
   },
+  cbest: {
+    answer:
+      "The CBEST (California Basic Educational Skills Test) is one way to meet California's basic skills requirement for teaching and substitute credentials. It is owned by the California Commission on Teacher Credentialing and given by Pearson as three separately registered sections, all in English. Reading is 50 multiple-choice questions in 1 hour 30 minutes, about 40 percent critical analysis and evaluation and 60 percent comprehension and research skills. Mathematics is 50 multiple-choice questions in 2 hours with no calculator: estimation, measurement and statistics about 30 percent, computation and problem solving about 35 percent, and numerical and graphic relationships about 35 percent. Writing is two essays in 1 hour 30 minutes. Each section is scored 20 to 80; you pass with 41 on each section, or with a total of 123 if no section is below 37.",
+    rows: [
+      { label: "Reading", value: "50 multiple-choice questions, 1 hour 30 minutes" },
+      { label: "Mathematics", value: "50 multiple-choice questions, 2 hours, no calculator" },
+      { label: "Writing", value: "2 essays, 1 hour 30 minutes" },
+      { label: "Scores", value: "20 to 80 per section" },
+      { label: "Passing", value: "41 per section, or a 123 total with no section below 37" },
+      { label: "Given by", value: "Pearson for the CTC, at test centers or online proctored" },
+    ],
+    basedOn: "the CBEST Test Specifications for Reading and Mathematics (California Commission on Teacher Credentialing)",
+    source: { name: "CTC Exams: CBEST", url: "https://www.ctcexams.nesinc.com/TestView.aspx?f=HTML_FRAG/CA_CBEST_TestPage.html" },
+  },
   gre: {
     answer:
       "The GRE General Test takes about 1 hour 58 minutes since its September 2023 update. It has one Analytical Writing task (30 minutes), two Verbal Reasoning sections (12 questions in 18 minutes and 15 in 23 minutes) and two Quantitative Reasoning sections (12 questions in 21 minutes and 15 in 26 minutes). Verbal and Quant are section-level adaptive and each scored 130 to 170; Analytical Writing is scored 0 to 6. There is no pass mark: graduate programs set their own expectations.",
@@ -2355,6 +2405,40 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "AAMC", url: "https://students-residents.aamc.org/prepare-mcat-exam/whats-mcat-exam" },
     tigertest:
       "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
+  },
+  afoqt: {
+    answer:
+      "The AFOQT (Air Force Officer Qualifying Test) is the Air Force's aptitude test for officer commissioning programs such as Officer Training School and Air Force ROTC, and for selection into training such as pilot and navigator training. Form T has 12 timed multiple-choice subtests, 516 questions in about five hours with breaks: Verbal Analogies, Arithmetic Reasoning, Word Knowledge, Math Knowledge, Reading Comprehension, Situational Judgment, the ungraded Self-Description Inventory, Physical Science, Table Reading, Instrument Comprehension, Block Counting and Aviation Information. Subtests combine into composites reported as 1 to 99 percentiles, not percent correct. Air Force ROTC, citing DAFMAN 36-2664, gives the minimums as the 15th percentile on Verbal and the 10th on Quantitative; rated programs set higher bars. It is free, taken with a voucher from a recruiter or test control officer, and limited to two attempts (three with a waiver).",
+    rows: [
+      { label: "Questions", value: "516 multiple choice across 12 subtests (Form T)" },
+      { label: "Time", value: "About 5 hours including breaks" },
+      { label: "Scores", value: "1 to 99 percentiles on composites" },
+      { label: "Minimums", value: "Verbal 15 and Quantitative 10 (AFROTC, citing DAFMAN 36-2664)" },
+      { label: "Attempts", value: "Two, or three with an approved waiver" },
+      { label: "Cost", value: "Free, voucher from a recruiter or test control officer" },
+      { label: "Given by", value: "U.S. Air Force, delivered by Pearson VUE" },
+    ],
+    basedOn: "The Air Force's AFOQT page at Pearson VUE and AFROTC Detachment 485's AFOQT page (checked November 2026)",
+    source: { name: "Pearson VUE (U.S. Air Force)", url: "https://www.pearsonvue.com/us/en/afoqt.html" },
+    tigertest:
+      "Tigertest has two AFOQT practice tests with eight subtests at about half length and the real pace, and a drill for each subtest. Start for free, no account required; the last two drills and Practice Test 2 are part of Premium. Situational Judgment, Instrument Comprehension, Block Counting and the Self-Description Inventory are not included, and scores are percent correct, not AFOQT percentiles.",
+  },
+  dat: {
+    answer:
+      "The DAT is the American Dental Association's computer-based Dental Admission Test, with four multiple-choice sections in this order: the Survey of the Natural Sciences (100 questions in 90 minutes: 40 biology, 30 general chemistry and 30 organic chemistry), the Perceptual Ability Test (90 questions in 60 minutes in six picture subtests), an optional 30-minute break, Reading Comprehension (50 questions on three scientific passages in 60 minutes) and Quantitative Reasoning (40 questions in 45 minutes, with an on-screen calculator). Since March 1, 2025 scores are reported from 200 to 600 in 10-point steps; there is no official passing score, each dental program decides what it accepts, and there is no penalty for guessing.",
+    rows: [
+      { label: "Sections", value: "Natural Sciences, Perceptual Ability, Reading, Quantitative" },
+      { label: "Questions", value: "280: 100, 90, 50 and 40" },
+      { label: "Time", value: "4 hr 15 min of testing; 5 hr 15 min with tutorial, break and survey" },
+      { label: "Score", value: "200 to 600 in 10-point steps; no official passing score" },
+      { label: "Calculator", value: "On-screen, Quantitative Reasoning only; periodic table in General Chemistry" },
+      { label: "Retakes", value: "60 days apart, at most four in 12 months" },
+      { label: "Given by", value: "ADA Department of Testing Services, at Prometric test centers" },
+    ],
+    basedOn: "the ADA's DAT 2026 Candidate Guide (updated August 4, 2026) and the Organic Chemistry specifications in force since April 2026",
+    source: { name: "ADA", url: "https://www.ada.org/en/education-careers/dental-admission-test" },
+    tigertest:
+      "Tigertest has two DAT practice tests with the Survey of the Natural Sciences, Reading Comprehension and Quantitative Reasoning at half length and the real pace, and seven drills by topic. The picture-based Perceptual Ability Test is not included. It is free to start, with no account required.",
   },
   wonderlic: {
     answer:
@@ -5357,6 +5441,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The CDR Registered Dietitian Examination Test Specifications (2022 to 2026 and 2027 to 2031) and the CDR RD and DTR Exam FAQ (2025), checked November 2026",
     source: { name: "CDR: Registration Examination for Dietitians", url: "https://www.cdrnet.org/rdexamoverview" },
+  },
+  ccrn: {
+    answer:
+      "CCRN (Adult) is the acute and critical care nursing certification of AACN Certification Corporation, for RNs and APRNs who care for acutely or critically ill adults. The exam has 150 multiple-choice questions in 3 hours; 125 are scored and 25 are unscored pretest items. It is taken by computer at a PSI testing center or by live remote proctoring. The passing point is a raw number of correct answers set by a modified Angoff study, not a percentage. Under the Adult test plan for exams taken on and after November 12, 2025, 80% is Clinical Judgment (Cardiovascular 13%, Respiratory 12%, Endocrine, Hematology/Immunology, GI, Renal/GU and Integumentary 21%, Musculoskeletal, Neurological and Behavioral/Psychosocial 18%, Multisystem 16%) and 20% is Professional Caring and Ethical Practice. Certification lasts 3 years.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 unscored)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "A raw cut score set by modified Angoff, not a percentage" },
+      { label: "Content", value: "Clinical Judgment 80% (CV 13, respiratory 12, endocrine/heme/GI/renal/skin 21, neuro/MSK/behavioral 18, multisystem 16), Professional Caring and Ethical Practice 20%" },
+      { label: "Eligibility", value: "U.S. RN or APRN license; 1,750 direct care hours in 2 years or 2,000 in 5 years" },
+      { label: "Where", value: "PSI testing centers or live remote proctoring" },
+      { label: "Retakes", value: "Up to 4 attempts in a rolling 12 months" },
+      { label: "Run by", value: "AACN Certification Corporation" },
+    ],
+    basedOn: "The AACN CCRN Exam Handbook (Direct Care pathway, July 2026) with the Adult test plan for exams on and after November 12, 2025, and the AACN Certification Exam Policy Handbook (September 2026), checked November 2026",
+    source: { name: "AACN: CCRN (Adult) certification", url: "https://www.aacn.org/certification/get-certified/ccrn-adult" },
   },
   praxis5001: {
     answer:

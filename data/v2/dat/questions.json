@@ -1,0 +1,4627 @@
+{
+  "stimuli": [
+    {
+      "id": "DAT-T1-RC-P1",
+      "title": "Passage 1: A city on the surface of a tooth",
+      "text": "Within hours of being brushed clean, the surface of a tooth is coated again. The first layer is not living at all: it is a thin film of proteins from saliva, called the acquired pellicle, that sticks to the mineral of the enamel. The pellicle is useful in its own right, since it lubricates the tooth and slows the loss of mineral, but it also gives bacteria something to hold. Certain streptococci carry surface proteins that bind pellicle proteins, and they are usually among the first to settle.\n\nWhat follows is less a coating than a construction project. The early settlers divide and release sticky polymers, and later arrivals attach not to the tooth but to the bacteria already there. Some species act as bridges, binding both the early colonizers and organisms that could not otherwise stay. Over several days the community thickens into dental plaque, one of the best studied examples of a biofilm: a structured community of microbes embedded in a matrix that they make themselves. Hundreds of species can be found in plaque, and their arrangement is not random. Organisms that tolerate oxygen tend to sit near the surface, while those that cannot survive it live deeper, where the oxygen has already been consumed.\n\nLife in a biofilm differs from life as a free-floating cell. The matrix slows the movement of molecules, so a cell deep in plaque may meet a very different chemical environment from one at the edge. The matrix also protects. Bacteria in a biofilm can survive concentrations of antimicrobial agents that would kill the same species growing alone in a test tube, partly because the agent penetrates slowly and partly because many cells in the interior grow slowly and are less affected by drugs that target active growth.\n\nFor most of the day, plaque and the tooth beneath it coexist. The trouble begins with sugar. When a person eats or drinks something sweet, acid-tolerant bacteria in the plaque ferment the sugar and release acids, chiefly lactic acid. Within minutes the pH at the tooth surface can fall sharply. Enamel is made mostly of hydroxyapatite, a calcium phosphate mineral, and below a critical pH, often given as about 5.5, the fluid around it can no longer hold the dissolved mineral in balance, so calcium and phosphate begin to leave the enamel. Saliva slowly restores the pH. It contains bicarbonate, which neutralizes acid, along with calcium and phosphate that can be redeposited in the weakened enamel. A tooth therefore goes through cycles of loss and repair many times a day.\n\nDecay, on this view, is not a single attack but a balance tipped over time. If sugar exposures are frequent, the pH spends long periods below the critical value, and repair cannot keep up. The same total amount of sugar taken in many small snacks does more harm than when it is eaten at one meal, because it produces more acid episodes. Frequent acid also changes the community itself: species that thrive in acid, and that make acid, gain ground over species that do not, which makes the next drop in pH more likely.\n\nFluoride works within this cycle rather than outside it. When fluoride is present in the fluid around the enamel during repair, the mineral that is redeposited can include fluorapatite, which resists acid better than the original hydroxyapatite. Small, frequent exposures to fluoride, as from toothpaste, are therefore thought to matter more than a large dose taken once.\n\nSeeing plaque as an ecosystem has changed the questions researchers ask. The goal is less often to sterilize the mouth, which is neither possible nor desirable, than to keep the community in a stable state in which acid-producing species do not take over. Some of the microbes in a healthy mouth may even help, by competing with harmful species for space and food."
+    },
+    {
+      "id": "DAT-T1-RC-P2",
+      "title": "Passage 2: Life on pause",
+      "text": "Tardigrades, sometimes called water bears, are microscopic animals with eight stubby legs that live in films of water on mosses, lichens, soil and the sea floor. They would be obscure were it not for a remarkable talent. Many species can survive almost complete drying. As its surroundings dry out, a tardigrade pulls in its legs and head and contracts into a compact form called a tun. In this state its metabolism becomes so slow that it cannot be measured, and the animal can remain for years. Add water, and within minutes to hours it may unfold and walk away.\n\nThis state is one form of cryptobiosis, literally hidden life, and the kind brought on by drying is called anhydrobiosis. It is not unique to tardigrades; some nematode worms, rotifers, brine shrimp embryos and many plant seeds share it. What makes tardigrades a favorite subject is the range of other insults that tuns have been reported to tolerate in laboratory tests, including extreme cold, high doses of radiation and, in one experiment, a period of exposure to space in low Earth orbit.\n\nSuch reports are easy to exaggerate. A tun is not indestructible, and survival rates in harsh tests are often well below 100 percent. Many of the extreme results come from animals that were first dried slowly, under controlled conditions; an active tardigrade suddenly exposed to the same stress usually dies. The animal, in other words, survives because it prepares, and the preparation takes time.\n\nHow it prepares has been a puzzle. Drying is dangerous because water holds the shapes of proteins and membranes; as it leaves, proteins can unfold and stick together and membranes can fuse or tear. In many anhydrobiotic organisms, including brine shrimp and some nematodes, a sugar called trehalose builds up as the organism dries. Trehalose is thought to replace water around biological molecules and to set into a glassy solid that holds them in place. Yet many tardigrades accumulate little trehalose, so researchers looked for something else.\n\nOne answer appears to be a set of proteins found in tardigrades and few other animals. These proteins are intrinsically disordered: in solution they have no fixed folded shape. As a cell dries, some of them seem to form a glass-like matrix, much as trehalose does elsewhere. When the genes for several of these proteins were moved into bacteria and yeast, the altered microbes survived drying better than ordinary ones, which suggests that the proteins can protect cells on their own. Other tardigrade proteins appear to shield DNA from damage, and a tardigrade also seems able to repair damaged DNA after it rehydrates.\n\nThe interest is not merely academic. Many vaccines and medicines must be kept cold from the factory to the clinic, and keeping them cold is expensive and often fails in places with unreliable electricity. If the molecules that let a tun endure drying could stabilize a vaccine at room temperature, that chain of refrigeration might be shortened. Whether tardigrade proteins will prove practical for such uses is not yet known, but they have already changed the question from how anything could survive drying to how many different ways life has found to do it."
+    },
+    {
+      "id": "DAT-T2-RC-P1",
+      "title": "Passage 1: The compass in the bird",
+      "text": "Every autumn, many songbirds that have never made the journey before fly thousands of kilometers to wintering grounds they have never seen. Young birds raised in captivity, with no adult to follow, still become restless at the right season and orient themselves in a consistent direction. Part of the knowledge of where to go seems to be inherited. But to hold a direction, a bird needs a reference, and over the past half century researchers have shown that birds use several: the sun, the pattern of stars around the celestial pole, and the magnetic field of the Earth.\n\nThe magnetic sense was the hardest to accept, because it has no obvious organ. The evidence came from behavior. Caged migratory birds hop in the direction they would fly, and when experimenters altered the magnetic field around the cage with electric coils, the birds turned with it. These experiments also showed something unexpected. The birds' compass did not read the north and south polarity of the field, as a ship's compass does. Instead it responded to the angle the field lines make with the ground. Near the poles the lines dip steeply toward the Earth; near the equator they run almost level. A compass that reads this inclination can tell poleward from equatorward, though not north from south.\n\nTwo explanations of how such a sense might work have been pursued. The first proposes tiny particles of magnetite, a magnetic iron oxide, connected to nerve endings, which would twist in the field like miniature compass needles. Iron-rich cells were reported in the upper beak of pigeons, but later work found that many of them were immune cells that had nothing to do with sensing. The magnetite idea has not been abandoned, and it may explain a separate sense of field strength that could serve as a kind of map, but it has lost ground as an account of the compass.\n\nThe second explanation places the compass in the eye. Light striking certain proteins in the retina, called cryptochromes, can create pairs of molecules each carrying an unpaired electron. The way such a radical pair behaves can be influenced, very slightly, by the direction of a magnetic field. If the result differs across the curved retina, the bird might literally see the field as a pattern laid over its view. Several observations fit. The compass of caged birds works only when some light is present, and it is disrupted by weak radio-frequency noise, which should not affect a needle of magnetite but could disturb a radical pair. In some experiments, birds also lost their magnetic orientation when the visual area of the brain that receives this signal was damaged.\n\nNone of this is yet a complete account. The effect of the Earth's field on a radical pair is tiny, and how a signal so weak could rise above the noise of a living cell is not understood. Nor is it certain which cryptochrome is involved. What has emerged with some confidence is that birds carry a magnetic compass of an unusual kind, and that migration relies on several cues that can check one another. A bird that cannot see the stars on a cloudy night may still have the field, and a bird whose magnetic sense is confused may still have the setting sun."
+    },
+    {
+      "id": "DAT-T2-RC-P2",
+      "title": "Passage 2: A year that changed diabetes",
+      "text": "Before 1922, a diagnosis of type 1 diabetes in a child was close to a death sentence. The body could not use the sugar in its blood, and physicians could offer only diets so severe in carbohydrate that patients slowly starved. Some lived a year or two longer than they otherwise would have, at the cost of a wasting existence. It had been known for some decades that removing the pancreas from a dog produced diabetes, and many researchers suspected that some substance made by clusters of cells in the pancreas, the islets, controlled blood sugar. Repeated attempts to extract it had failed, largely because the same organ makes powerful digestive enzymes that destroyed the substance during extraction.\n\nIn 1921, Frederick Banting, a young surgeon, persuaded J. J. R. Macleod, a professor of physiology at the University of Toronto, to give him laboratory space and an assistant, a student named Charles Best. Banting's idea was to tie off the ducts of the pancreas so that the enzyme-making tissue would waste away while the islets survived. The early experiments on dogs were crude, but extracts from such pancreases lowered blood sugar in diabetic dogs. The work moved quickly to extracts of whole pancreas taken from cattle at slaughterhouses, a far more abundant source.\n\nThe first trial in a human, in January 1922, was a disappointment. A fourteen-year-old boy, Leonard Thompson, received an injection of the extract; his blood sugar fell only a little, and he developed an abscess where the impure material had been injected. The decisive improvement came from James Collip, a biochemist who had joined the team. He worked out a way to purify the extract using alcohol at carefully chosen concentrations, so that much of the unwanted protein was left behind. When Thompson was treated with Collip's purer preparation less than two weeks later, his blood sugar fell toward normal and sugar disappeared from his urine.\n\nNews spread quickly, and the difficulty became one of supply. A laboratory method that made enough for a few patients could not supply thousands. The university worked with a pharmaceutical company to scale up production, and for a time the purified hormone was so scarce that physicians had to choose which patients would receive it. By the following year, supplies had grown enough that the treatment was used widely in North America.\n\nThe story is often told as a tale of individual genius, and the award of the 1923 Nobel Prize in Physiology or Medicine to Banting and Macleod did not end the arguments about credit. Banting shared his part of the prize money with Best, and Macleod shared his with Collip. Read more carefully, the discovery looks like the work of a team whose members supplied different things: an idea that was partly mistaken, the physiological expertise to test it, and the chemistry to make the product usable.\n\nInsulin did not cure diabetes. Patients still had to inject it for life, and doses that were too high could drive blood sugar dangerously low. But it turned a fatal illness into one that could be managed, and it became one of the first proteins whose structure and later whose manufacture were worked out in detail, making it a landmark not only in medicine but also in biochemistry."
+    }
+  ],
+  "questions": [
+    {
+      "id": "DAT-T1-SNS-01",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Cell metabolism",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In which part of the cell does glycolysis take place?",
+      "options": [
+        "Nucleus",
+        "Inner mitochondrial membrane",
+        "Cytosol",
+        "Mitochondrial matrix"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Glycolysis splits glucose into two pyruvate in the cytosol. The citric acid cycle runs in the mitochondrial matrix and the electron transport chain sits in the inner mitochondrial membrane."
+    },
+    {
+      "id": "DAT-T1-SNS-02",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Cell metabolism",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An enzyme is mixed with a competitive inhibitor. Compared with the uninhibited enzyme, what happens to Km and Vmax?",
+      "options": [
+        "Km is unchanged; Vmax falls",
+        "Km falls; Vmax is unchanged",
+        "Both Km and Vmax fall",
+        "Km rises; Vmax is unchanged"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A competitive inhibitor competes for the active site, so more substrate is needed to reach half of Vmax (Km rises), but enough substrate still outcompetes it, so Vmax is unchanged. A noncompetitive inhibitor lowers Vmax instead."
+    },
+    {
+      "id": "DAT-T1-SNS-03",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Cellular processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which molecule moves across a plasma membrane mainly by simple diffusion through the lipid bilayer?",
+      "options": [
+        "Oxygen",
+        "Water-soluble protein",
+        "Sodium ion",
+        "Glucose"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Small nonpolar molecules such as O₂ and CO₂ dissolve in the bilayer and diffuse straight through. Glucose and ions need carrier or channel proteins, and proteins are far too large."
+    },
+    {
+      "id": "DAT-T1-SNS-04",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Cell structure and function",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Proteins destined for secretion are first made on ribosomes bound to which organelle?",
+      "options": [
+        "Smooth ER",
+        "Golgi apparatus",
+        "Rough ER",
+        "Lysosome"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Secreted proteins are translated by ribosomes on the rough ER, threaded into its lumen, then sent to the Golgi for modification and packaging. The Golgi has no ribosomes."
+    },
+    {
+      "id": "DAT-T1-SNS-05",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Mitosis/meiosis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A diploid cell with 2n = 8 completes meiosis I. How many chromosomes does each daughter cell have, and how many chromatids?",
+      "options": [
+        "8 chromosomes, 8 chromatids",
+        "4 chromosomes, 4 chromatids",
+        "8 chromosomes, 16 chromatids",
+        "4 chromosomes, 8 chromatids"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Meiosis I separates homologs, so each daughter gets 4 chromosomes, but sister chromatids are still joined, giving 8 chromatids. They separate in meiosis II."
+    },
+    {
+      "id": "DAT-T1-SNS-06",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datDiversity",
+      "skill": "Eubacteria",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which structure is found in bacteria but not in eukaryotic cells?",
+      "options": [
+        "Cytoplasm",
+        "Peptidoglycan",
+        "Ribosomes",
+        "Plasma membrane"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Peptidoglycan is unique to the walls of bacteria. Ribosomes, a plasma membrane and cytoplasm are found in every cell, though bacterial ribosomes are smaller (70S) than eukaryotic ones (80S)."
+    },
+    {
+      "id": "DAT-T1-SNS-07",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datDiversity",
+      "skill": "Viruses",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A retrovirus such as HIV copies its RNA genome into DNA using which enzyme?",
+      "options": [
+        "Reverse transcriptase",
+        "RNA-dependent RNA polymerase",
+        "Viral integrase",
+        "DNA ligase"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Reverse transcriptase makes DNA from an RNA template. Integrase then inserts that DNA into the host genome; it does not copy the genome."
+    },
+    {
+      "id": "DAT-T1-SNS-08",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datDiversity",
+      "skill": "Plantae",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the life cycle of a moss, which generation is the larger, longer-lived and photosynthetic one?",
+      "options": [
+        "Diploid gametophyte",
+        "Haploid gametophyte",
+        "Diploid sporophyte",
+        "Haploid sporophyte"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Mosses and other bryophytes are gametophyte-dominant: the green plant is the haploid gametophyte, and the small diploid sporophyte grows from it. Ferns and seed plants are sporophyte-dominant."
+    },
+    {
+      "id": "DAT-T1-SNS-09",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Circulatory",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Oxygenated blood returning from the lungs enters the heart through which chamber?",
+      "options": [
+        "Right atrium",
+        "Left atrium",
+        "Left ventricle",
+        "Right ventricle"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The pulmonary veins carry oxygenated blood to the left atrium, which passes it to the left ventricle for the systemic circuit. The right atrium receives deoxygenated blood from the venae cavae."
+    },
+    {
+      "id": "DAT-T1-SNS-10",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Digestive",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which cells of the stomach lining secrete hydrochloric acid?",
+      "options": [
+        "Enteroendocrine cells",
+        "Parietal cells",
+        "Chief cells",
+        "Mucous neck cells"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Parietal cells secrete HCl and intrinsic factor. Chief cells secrete pepsinogen, mucous neck cells secrete mucus, and enteroendocrine cells such as G cells secrete hormones like gastrin."
+    },
+    {
+      "id": "DAT-T1-SNS-11",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Urinary",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Antidiuretic hormone (ADH) makes urine more concentrated mainly by acting on which part of the nephron?",
+      "options": [
+        "Glomerulus",
+        "Proximal convoluted tubule",
+        "Descending loop of Henle",
+        "Collecting duct"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "ADH inserts aquaporins into collecting duct cells, so water leaves the filtrate into the salty medulla. The proximal tubule reabsorbs most water without hormonal control."
+    },
+    {
+      "id": "DAT-T1-SNS-12",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Nervous/sensory",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During an action potential, what causes the rapid depolarization phase?",
+      "options": [
+        "K⁺ leaving the cell",
+        "Na⁺ entering the cell",
+        "Ca²⁺ leaving the cell",
+        "Cl⁻ entering the cell"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Voltage-gated Na⁺ channels open and Na⁺ rushes in, driving the membrane positive. K⁺ leaving through voltage-gated K⁺ channels causes repolarization."
+    },
+    {
+      "id": "DAT-T1-SNS-13",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Endocrine",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which hormone lowers blood glucose?",
+      "options": [
+        "Cortisol",
+        "Insulin",
+        "Epinephrine",
+        "Glucagon"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Insulin, from pancreatic beta cells, promotes glucose uptake and storage. Glucagon, cortisol and epinephrine all raise blood glucose."
+    },
+    {
+      "id": "DAT-T1-SNS-14",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Classical genetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two pea plants heterozygous for seed color (Yy) are crossed. What fraction of the offspring are expected to be heterozygous?",
+      "options": [
+        "1/4",
+        "1/3",
+        "1/2",
+        "3/4"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Yy × Yy gives YY, Yy, yY and yy in equal parts, so 2 of 4, or 1/2, are heterozygous. 3/4 is the share showing the dominant phenotype."
+    },
+    {
+      "id": "DAT-T1-SNS-15",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Molecular genetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A DNA template strand reads 3'-TAC GGA-5'. What is the mRNA made from it, written 5' to 3'?",
+      "options": [
+        "5'-UCC GUA-3'",
+        "5'-ATG CCT-3'",
+        "5'-AUG CCU-3'",
+        "5'-UAC GGA-3'"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "mRNA is complementary and antiparallel to the template: 3'-TAC GGA-5' pairs with 5'-AUG CCU-3', with uracil in place of thymine. 5'-ATG CCT-3' is the coding strand in DNA, not the mRNA."
+    },
+    {
+      "id": "DAT-T1-SNS-16",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Human genetics",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A woman whose father has hemophilia (X-linked recessive) has children with an unaffected man. What is the chance that a son of theirs has hemophilia?",
+      "options": [
+        "0",
+        "1/4",
+        "1/2",
+        "1"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "She received her father's affected X, so she is a carrier (XᴴXʰ). A son gets his X from her, so each son has a 1/2 chance. 1/4 is the chance that any child is an affected son."
+    },
+    {
+      "id": "DAT-T1-SNS-17",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Chromosomal genetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Nondisjunction of chromosome 21 during meiosis can produce a gamete that leads to which condition after fertilization?",
+      "options": [
+        "Triploidy",
+        "Monosomy X",
+        "Trisomy 21",
+        "Deletion of 21q"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Nondisjunction leaves a gamete with two copies of chromosome 21; with a normal gamete the zygote has three copies (Down syndrome). Triploidy is a whole extra set of chromosomes."
+    },
+    {
+      "id": "DAT-T1-SNS-18",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datEvolution",
+      "skill": "Population genetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In a population at Hardy-Weinberg equilibrium, 16% of individuals show a recessive trait. What is the frequency of the dominant allele?",
+      "options": [
+        "0.16",
+        "0.4",
+        "0.6",
+        "0.84"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "q² = 0.16, so q = 0.4 and p = 1 - 0.4 = 0.6. 0.84 is the share of people showing the dominant phenotype (p² + 2pq)."
+    },
+    {
+      "id": "DAT-T1-SNS-19",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datEvolution",
+      "skill": "Ecology",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In a food chain, about how much of the energy at one trophic level is usually passed to the next?",
+      "options": [
+        "About 10%",
+        "About 1%",
+        "About 90%",
+        "About 50%"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Most energy at each level is lost as heat in respiration or left unconsumed, so roughly 10% reaches the next level. That is why food chains rarely have more than four or five levels."
+    },
+    {
+      "id": "DAT-T1-SNS-20",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datEvolution",
+      "skill": "Animal behavior",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A young goose follows the first moving object it sees after hatching. This is an example of what?",
+      "options": [
+        "Classical conditioning",
+        "Imprinting",
+        "Habituation",
+        "Fixed action pattern"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Imprinting is learning fixed during a short critical period, such as a gosling attaching to the first moving object. Habituation is a fading response to a repeated harmless stimulus."
+    },
+    {
+      "id": "DAT-T1-SNS-21",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Stoichiometry",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "How many moles of water are in 9.0 g of H₂O (molar mass 18 g/mol)?",
+      "options": [
+        "0.25 mol",
+        "0.50 mol",
+        "2.0 mol",
+        "9.0 mol"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Moles = mass / molar mass = 9.0 g / 18 g/mol = 0.50 mol. 2.0 mol comes from dividing the wrong way."
+    },
+    {
+      "id": "DAT-T1-SNS-22",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Stoichiometry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A compound is 40.0% carbon, 6.7% hydrogen and 53.3% oxygen by mass. What is its empirical formula?",
+      "options": [
+        "CHO",
+        "C₂H₄O",
+        "CH₂O",
+        "CH₃O"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In 100 g: 40.0/12 = 3.33 mol C, 6.7/1.0 = 6.7 mol H, 53.3/16 = 3.33 mol O. Dividing by 3.33 gives 1 : 2 : 1, so CH₂O."
+    },
+    {
+      "id": "DAT-T1-SNS-23",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Stoichiometry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "When C₃H₈ + O₂ → CO₂ + H₂O is balanced with the smallest whole numbers, what is the coefficient of O₂?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. The products hold 3 × 2 + 4 × 1 = 10 oxygen atoms, which is 5 O₂."
+    },
+    {
+      "id": "DAT-T1-SNS-24",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Gases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The pressure on a sample of ideal gas is doubled while its kelvin temperature is also doubled. What happens to its volume?",
+      "options": [
+        "It is unchanged",
+        "It falls by half",
+        "It doubles in size",
+        "It grows fourfold"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "V = nRT/P. Doubling T doubles V and doubling P halves it, so the two cancel and the volume is unchanged."
+    },
+    {
+      "id": "DAT-T1-SNS-25",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Gases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A tank holds 2.0 mol of N₂ and 1.0 mol of O₂ at a total pressure of 900 torr. What is the partial pressure of O₂?",
+      "options": [
+        "300 torr",
+        "450 torr",
+        "600 torr",
+        "900 torr"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "By Dalton's law the partial pressure is the mole fraction times the total: (1.0 / 3.0) × 900 = 300 torr. 600 torr is the partial pressure of N₂."
+    },
+    {
+      "id": "DAT-T1-SNS-26",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Liquids and solids",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which substance has the highest normal boiling point?",
+      "options": [
+        "H₂O",
+        "H₂S",
+        "Ne",
+        "CH₄"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Water molecules hydrogen bond to one another, which takes far more energy to overcome than the dipole forces in H₂S or the dispersion forces in CH₄ and Ne."
+    },
+    {
+      "id": "DAT-T1-SNS-27",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Solutions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which 0.10 m aqueous solution has the lowest freezing point?",
+      "options": [
+        "Glucose",
+        "NaCl",
+        "CaCl₂",
+        "KBr"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Freezing point depression is proportional to the number of dissolved particles. CaCl₂ gives three ions per formula unit, NaCl and KBr two, and glucose one."
+    },
+    {
+      "id": "DAT-T1-SNS-28",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Acids and bases",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the pH of 0.010 M HCl?",
+      "options": [
+        "1",
+        "2",
+        "10",
+        "12"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "HCl is a strong acid, so [H⁺] = 0.010 M = 10⁻² M and pH = 2. pH 12 is the value for 0.010 M NaOH."
+    },
+    {
+      "id": "DAT-T1-SNS-29",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Acids and bases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of these is a weak acid in water?",
+      "options": [
+        "HCl",
+        "HF",
+        "HNO₃",
+        "HBr"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "HF ionizes only partly because the H-F bond is strong and F⁻ is small and tightly holds the proton. HCl, HBr and HNO₃ are strong acids that ionize completely."
+    },
+    {
+      "id": "DAT-T1-SNS-30",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Chemical equilibria",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "For N₂ + 3 H₂ ⇌ 2 NH₃, the forward reaction is exothermic. What happens when the temperature is raised?",
+      "options": [
+        "Shifts right; K rises",
+        "No shift; K rises",
+        "Shifts left; K is unchanged",
+        "Shifts left; K falls"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Heat acts as a product of an exothermic reaction, so adding heat shifts the equilibrium left. Unlike pressure or concentration changes, a temperature change alters K itself, and here K falls."
+    },
+    {
+      "id": "DAT-T1-SNS-31",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Thermodynamics and thermochemistry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Under which conditions is a reaction spontaneous at every temperature?",
+      "options": [
+        "ΔH > 0 and ΔS > 0",
+        "ΔH < 0 and ΔS > 0",
+        "ΔH > 0 and ΔS < 0",
+        "ΔH < 0 and ΔS < 0"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "ΔG = ΔH - TΔS. With ΔH negative and ΔS positive, both terms make ΔG negative at any temperature. With matching signs, spontaneity depends on temperature."
+    },
+    {
+      "id": "DAT-T1-SNS-32",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Chemical kinetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A reaction has the rate law rate = k[A]². If [A] is doubled, by what factor does the rate change?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The rate depends on [A] squared, so doubling [A] multiplies the rate by 2² = 4. A first-order reaction would double."
+    },
+    {
+      "id": "DAT-T1-SNS-33",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Oxidation-reduction",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the oxidation number of manganese in KMnO₄?",
+      "options": [
+        "+5",
+        "+4",
+        "+6",
+        "+7"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "K is +1 and four O atoms are -8, so Mn must be +7 for a neutral compound: +1 + Mn - 8 = 0."
+    },
+    {
+      "id": "DAT-T1-SNS-34",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Atomic and molecular structure",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "What is the ground-state electron configuration of Fe²⁺ (iron is element 26)?",
+      "options": [
+        "[Ar] 4s² 3d⁶",
+        "[Ar] 4s² 3d⁴",
+        "[Ar] 3d⁶",
+        "[Ar] 4s¹ 3d⁵"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Neutral iron is [Ar] 4s² 3d⁶. Transition metals lose their 4s electrons first, so Fe²⁺ is [Ar] 3d⁶, not [Ar] 4s² 3d⁴."
+    },
+    {
+      "id": "DAT-T1-SNS-35",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Nuclear reactions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Carbon-14 undergoes beta-minus decay. What nucleus is formed?",
+      "options": [
+        "Boron-14",
+        "Carbon-13",
+        "Nitrogen-14",
+        "Nitrogen-15"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In beta-minus decay a neutron becomes a proton and an electron is emitted, so the atomic number rises by 1 (C to N) and the mass number stays 14."
+    },
+    {
+      "id": "DAT-T1-SNS-36",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Mechanisms",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The rate of an SN2 reaction depends on the concentration of what?",
+      "options": [
+        "Nucleophile only",
+        "Leaving group only",
+        "Substrate only",
+        "Both reactants"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "SN2 is one concerted step in which the nucleophile attacks as the leaving group departs, so both reactants, substrate and nucleophile, appear in the rate law. An SN1 rate depends on the substrate alone."
+    },
+    {
+      "id": "DAT-T1-SNS-37",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Mechanisms",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "(R)-2-Bromobutane reacts with sodium cyanide in DMSO. What is the configuration of the 2-methylbutanenitrile formed?",
+      "options": [
+        "S, by inversion",
+        "A racemic mixture",
+        "R, by retention",
+        "R, by inversion"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A secondary halide with a good nucleophile in a polar aprotic solvent reacts by SN2, with backside attack and inversion. The cyano group takes the top priority that bromine held, so the inverted center is S."
+    },
+    {
+      "id": "DAT-T1-SNS-38",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Propene reacts with HBr with no peroxides present. What is the major product?",
+      "options": [
+        "Propane",
+        "1-Bromopropane",
+        "2-Bromopropane",
+        "1,2-Dibromopropane"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Protonation gives the more stable secondary carbocation, which bromide then attacks (Markovnikov addition). 1-Bromopropane forms by the radical path when peroxides are present."
+    },
+    {
+      "id": "DAT-T1-SNS-39",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which reagents convert propene into 1-propanol?",
+      "options": [
+        "HBr, then aqueous NaOH",
+        "H₂O with catalytic H₂SO₄",
+        "BH₃·THF, then H₂O₂ and NaOH",
+        "Hg(OAc)₂ in water, then NaBH₄"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Hydroboration-oxidation adds OH to the less substituted carbon (anti-Markovnikov). Acid-catalyzed hydration and oxymercuration both put OH on the middle carbon, giving 2-propanol, and HBr then hydroxide also leads there."
+    },
+    {
+      "id": "DAT-T1-SNS-40",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "2-Bromo-2-methylbutane is heated with potassium tert-butoxide. What is the major product?",
+      "options": [
+        "2-Methyl-1-butene",
+        "2-Methyl-2-butene",
+        "2-Methyl-2-butanol",
+        "2-tert-Butoxy-2-methylbutane"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A bulky base removes the most accessible hydrogen, on the methyl group, giving the less substituted (Hofmann) alkene. A small base such as ethoxide favors the more substituted Zaitsev product, 2-methyl-2-butene."
+    },
+    {
+      "id": "DAT-T1-SNS-41",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Structural evaluation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which carbocation is the least stable?",
+      "options": [
+        "tert-Butyl",
+        "Isopropyl",
+        "Ethyl",
+        "Methyl"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Carbocation stability rises with the number of alkyl groups on the positive carbon, which donate electron density by hyperconjugation and induction: tertiary > secondary > primary > methyl. The methyl cation has none."
+    },
+    {
+      "id": "DAT-T1-SNS-42",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "2-Butanone is treated with NaBH₄, then water. What is the product?",
+      "options": [
+        "2-Butene",
+        "1-Butanol",
+        "Butanoic acid",
+        "2-Butanol"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Sodium borohydride delivers hydride to the carbonyl carbon, and workup protonates the alkoxide. A ketone is reduced to a secondary alcohol, so 2-butanone gives 2-butanol."
+    },
+    {
+      "id": "DAT-T1-SNS-43",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Ethylmagnesium bromide reacts with carbon dioxide, and the mixture is then treated with aqueous acid. What is the product?",
+      "options": [
+        "Acetic acid",
+        "Propanoic acid",
+        "Propan-1-ol",
+        "Butanoic acid"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Grignard carbon attacks CO₂ to give a carboxylate, which acid protonates. The new acid has one more carbon than the Grignard reagent: two from the ethyl group plus one from CO₂."
+    },
+    {
+      "id": "DAT-T1-SNS-44",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Acid-base chemistry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which compound is the strongest acid?",
+      "options": [
+        "CH₃COOH",
+        "Cl₃CCOOH",
+        "CH₃CH₂OH",
+        "ClCH₂COOH"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Electronegative chlorines pull electron density away from the carboxylate and stabilize it by the inductive effect, so acidity rises with each Cl. Ethanol, with no resonance-stabilized base, is the weakest."
+    },
+    {
+      "id": "DAT-T1-SNS-45",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Acid-base chemistry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which compound is the strongest base?",
+      "options": [
+        "Pyridine",
+        "Diphenylamine",
+        "Methylamine",
+        "Acetamide"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Methylamine's lone pair is localized and pushed outward by the methyl group. In diphenylamine the lone pair is spread over two rings and in acetamide into the carbonyl, and pyridine holds its lone pair in a tighter sp² orbital."
+    },
+    {
+      "id": "DAT-T1-SNS-46",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Structural evaluation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which species is aromatic?",
+      "options": [
+        "Cycloheptatrienyl anion",
+        "Cyclooctatetraene",
+        "Cyclopentadienyl cation",
+        "Cyclopentadienyl anion"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The cyclopentadienyl anion is cyclic, planar and fully conjugated with 6 π electrons, which fits Hückel's 4n + 2 rule. The cyclopentadienyl cation (4 π electrons) and cycloheptatrienyl anion (8) are antiaromatic, and cyclooctatetraene is not planar."
+    },
+    {
+      "id": "DAT-T1-SNS-47",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Structural evaluation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the hybridization of each carbon atom in ethyne (HC≡CH)?",
+      "options": [
+        "sp²",
+        "sp³d",
+        "sp",
+        "sp³"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each carbon forms two σ bonds (one to H, one to C) and two π bonds, so it uses two hybrid orbitals: sp, with a 180° bond angle. sp² is the alkene carbon."
+    },
+    {
+      "id": "DAT-T1-SNS-48",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical and physical properties",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An infrared spectrum shows a strong, sharp absorption near 1715 cm⁻¹. Which group does it indicate?",
+      "options": [
+        "C≡C",
+        "O-H",
+        "C=O",
+        "C-H"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A strong band near 1700 to 1750 cm⁻¹ is the carbonyl stretch; 1715 cm⁻¹ is typical of a ketone. An alcohol O-H gives a broad band near 3200 to 3550 cm⁻¹."
+    },
+    {
+      "id": "DAT-T1-SNS-49",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Structural evaluation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the IUPAC name of CH₃CH₂CH(CH₃)CH₂OH?",
+      "options": [
+        "2-Methylbutan-1-ol",
+        "2-Ethylpropan-1-ol",
+        "3-Methylbutan-1-ol",
+        "3-Methylbutan-2-ol"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The longest chain holding the OH carbon has four carbons, numbered from the OH end, with a methyl on C2. 2-Ethylpropan-1-ol misses the longer chain through the ethyl group."
+    },
+    {
+      "id": "DAT-T1-SNS-50",
+      "section": "sns",
+      "test": 1,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Structural evaluation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "How many stereoisomers does 2,3-dibromobutane have?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Two stereocenters allow up to 2² = 4, but the two centers carry identical groups, so the (2R,3S) form has an internal mirror plane and is meso. That leaves one pair of enantiomers plus the meso form: 3."
+    },
+    {
+      "id": "DAT-T1-RC-01",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "Which statement best expresses the main idea of the passage?",
+      "options": [
+        "Decay depends on the balance within plaque",
+        "Fluoride alone is enough to prevent tooth decay",
+        "Brushing removes every bacterium for good",
+        "Saliva, not bacteria, is the main cause of decay"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage presents plaque as a structured biofilm and decay as a balance between acid attack and repair, tipped by how often sugar arrives. Fluoride is one part of that cycle, not the whole answer."
+    },
+    {
+      "id": "DAT-T1-RC-02",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "According to the passage, what is the acquired pellicle?",
+      "options": [
+        "A layer of the earliest bacteria",
+        "The matrix that bacteria make",
+        "A coating of fluorapatite",
+        "A film of salivary proteins"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The first paragraph calls the pellicle a thin film of proteins from saliva that sticks to the enamel, and says it is not living at all. Bacteria attach to it afterward."
+    },
+    {
+      "id": "DAT-T1-RC-03",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "According to the passage, how do many later arrivals join the growing plaque?",
+      "options": [
+        "By using oxygen near the tooth",
+        "By binding bacteria already there",
+        "By dissolving the acquired pellicle",
+        "By binding to the enamel directly"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The second paragraph says later arrivals attach not to the tooth but to the bacteria already there, with some species acting as bridges."
+    },
+    {
+      "id": "DAT-T1-RC-04",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "Where in plaque does the passage say organisms that cannot survive oxygen tend to live?",
+      "options": [
+        "Only in saliva",
+        "At the outer surface",
+        "Between separate teeth",
+        "In the deeper layers"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Oxygen-tolerant organisms sit near the surface, while those that cannot survive it live deeper, where the oxygen has already been used up."
+    },
+    {
+      "id": "DAT-T1-RC-05",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "Which two reasons does the passage give for biofilm bacteria surviving antimicrobial agents?",
+      "options": [
+        "Slow penetration and slow growth",
+        "Thick cell walls and tough spores",
+        "Fluoride and calcium in saliva",
+        "High oxygen levels and low pH"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The third paragraph names two reasons: the agent penetrates the matrix slowly, and many interior cells grow slowly and are less affected by drugs that target active growth."
+    },
+    {
+      "id": "DAT-T1-RC-06",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "Which acid does the passage name as the main one released when plaque bacteria ferment sugar?",
+      "options": [
+        "Carbonic acid",
+        "Lactic acid",
+        "Acetic acid",
+        "Citric acid"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The fourth paragraph says acid-tolerant bacteria ferment sugar and release acids, chiefly lactic acid."
+    },
+    {
+      "id": "DAT-T1-RC-07",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "According to the passage, what happens to enamel when the surrounding pH falls below about 5.5?",
+      "options": [
+        "Bicarbonate starts to build up in it",
+        "The pellicle on it dissolves",
+        "Fluorapatite forms within it",
+        "Calcium and phosphate leave it"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Below the critical pH the fluid can no longer hold the dissolved mineral in balance, so calcium and phosphate begin to leave the enamel."
+    },
+    {
+      "id": "DAT-T1-RC-08",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "Which substance in saliva does the passage say neutralizes acid?",
+      "options": [
+        "Pellicle protein",
+        "Bicarbonate",
+        "Calcium",
+        "Phosphate"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Saliva contains bicarbonate, which neutralizes acid, along with calcium and phosphate, which can be redeposited in weakened enamel."
+    },
+    {
+      "id": "DAT-T1-RC-09",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "Based on the passage, which habit would most likely do the most harm to teeth?",
+      "options": [
+        "Sipping a sweet drink all afternoon",
+        "Drinking water between meals",
+        "Brushing with fluoride toothpaste twice a day",
+        "Eating dessert once at dinner"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says the same sugar spread over many small exposures causes more acid episodes and more harm than one exposure. Sipping all afternoon keeps the pH low for the longest time."
+    },
+    {
+      "id": "DAT-T1-RC-10",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "The passage suggests that frequent acid exposure makes later drops in pH more likely because it:",
+      "options": [
+        "favors acid-making species",
+        "turns enamel into fluorapatite",
+        "stops saliva from forming",
+        "removes the acquired pellicle"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Frequent acid lets species that thrive in and make acid gain ground over others, which makes the next fall in pH more likely: a feedback loop."
+    },
+    {
+      "id": "DAT-T1-RC-11",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "Why does the passage say small, frequent fluoride exposures may matter more than one large dose?",
+      "options": [
+        "Large doses of fluoride dissolve enamel",
+        "Fluoride acts during repeated repair",
+        "Bacteria use fluoride as a food",
+        "Saliva breaks down fluoride quickly"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fluoride works within the cycle: when it is present during repair, the redeposited mineral can include acid-resistant fluorapatite. Repair happens many times a day, so frequent small doses fit it."
+    },
+    {
+      "id": "DAT-T1-RC-12",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Vocabulary in context",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "As used in the passage, the word \"sterilize\" most nearly means:",
+      "options": [
+        "cleaned of food debris",
+        "made unable to reproduce",
+        "protected from acid",
+        "free of all microbes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The final paragraph contrasts sterilizing the mouth with keeping its microbial community stable, so sterilize means to rid it of all microbes."
+    },
+    {
+      "id": "DAT-T1-RC-13",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Author's purpose",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P1",
+      "stem": "The author's attitude toward the ecosystem view of plaque is best described as:",
+      "options": [
+        "uncertain",
+        "hostile",
+        "dismissive",
+        "approving"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The author presents the view as having usefully changed the questions researchers ask and notes that some microbes may even help; nothing in the passage questions it."
+    },
+    {
+      "id": "DAT-T1-RC-14",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "What is the passage mainly about?",
+      "options": [
+        "Why tardigrades live in mosses",
+        "How vaccines are kept cold",
+        "Why space travel harms animals",
+        "How tardigrades survive drying"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Most of the passage describes the tun, the limits on its toughness, and the molecules that seem to protect it. Vaccines and space come up only as examples."
+    },
+    {
+      "id": "DAT-T1-RC-15",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "According to the passage, what is a tun?",
+      "options": [
+        "A film of water on a moss leaf",
+        "The dried, contracted animal",
+        "A sugar that sets into a glass",
+        "A protein that shields DNA"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The first paragraph says a drying tardigrade pulls in its legs and head and contracts into a compact form called a tun."
+    },
+    {
+      "id": "DAT-T1-RC-16",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "What does the passage say the word cryptobiosis literally means?",
+      "options": [
+        "Slow life",
+        "Dry life",
+        "Hidden life",
+        "Frozen life"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The second paragraph gives cryptobiosis as \"hidden life\"; the kind brought on by drying is anhydrobiosis."
+    },
+    {
+      "id": "DAT-T1-RC-17",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "Which of the following does the passage name as another organism capable of anhydrobiosis?",
+      "options": [
+        "Honeybee larvae",
+        "Freshwater frog tadpoles",
+        "Brine shrimp embryos",
+        "Earthworm egg cocoons"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The second paragraph lists some nematode worms, rotifers, brine shrimp embryos and many plant seeds."
+    },
+    {
+      "id": "DAT-T1-RC-18",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Author's purpose",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "Why does the author point out that many extreme results came from animals first dried slowly?",
+      "options": [
+        "To prove that tuns are indestructible",
+        "To show survival depends on preparation",
+        "To explain why tardigrades are so rare",
+        "To criticize the experiment in space"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The third paragraph warns against exaggeration: an active animal suddenly exposed to the stress usually dies, so the animal survives because it prepares."
+    },
+    {
+      "id": "DAT-T1-RC-19",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "According to the passage, why is drying dangerous to cells?",
+      "options": [
+        "Proteins and membranes lose their shape",
+        "Water loss speeds up the cell's metabolism",
+        "Drying raises the cell's temperature",
+        "Dry cells absorb more radiation"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Water holds the shapes of proteins and membranes; as it leaves, proteins can unfold and stick together and membranes can fuse or tear."
+    },
+    {
+      "id": "DAT-T1-RC-20",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "What role does the passage say trehalose is thought to play in organisms that accumulate it?",
+      "options": [
+        "It folds the disordered proteins",
+        "It repairs DNA damaged during drying",
+        "It speeds up the cell's metabolism",
+        "It replaces water and forms a glass"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Trehalose is thought to replace water around biological molecules and set into a glassy solid that holds them in place."
+    },
+    {
+      "id": "DAT-T1-RC-21",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "Why did researchers look beyond trehalose to explain tardigrade survival?",
+      "options": [
+        "It has been found only in tuns",
+        "Many tardigrades make little of it",
+        "It has been found only in plant seeds",
+        "Trehalose is toxic to all animals"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The fourth paragraph says many tardigrades accumulate little trehalose, so researchers looked for something else."
+    },
+    {
+      "id": "DAT-T1-RC-22",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Vocabulary in context",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "In the passage, \"intrinsically disordered\" proteins are described as proteins that:",
+      "options": [
+        "are damaged by drying",
+        "bind tightly to strands of DNA",
+        "are found in every animal",
+        "have no fixed folded shape"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage defines the term directly: in solution they have no fixed folded shape."
+    },
+    {
+      "id": "DAT-T1-RC-23",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "What does the experiment with bacteria and yeast suggest?",
+      "options": [
+        "Bacteria already make the same proteins",
+        "The proteins can protect cells by themselves",
+        "Trehalose is needed for the proteins to work",
+        "Yeast cannot survive drying under any conditions"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Microbes given the tardigrade genes survived drying better than ordinary ones, which the passage says suggests the proteins can protect cells on their own."
+    },
+    {
+      "id": "DAT-T1-RC-24",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "According to the passage, what might tardigrade molecules make possible for vaccines?",
+      "options": [
+        "Storage without refrigeration",
+        "Faster production of vaccines",
+        "Vaccines that need one dose only",
+        "Protection against radiation"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The final paragraph suggests the molecules might stabilize a vaccine at room temperature and shorten the chain of refrigeration."
+    },
+    {
+      "id": "DAT-T1-RC-25",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Organization",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T1-RC-P2",
+      "stem": "Which best describes the organization of the passage?",
+      "options": [
+        "A claim, then its full rejection",
+        "A history told one year at a time",
+        "A puzzle, a proposed answer, a use",
+        "Two rival theories, then a verdict"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage describes a survival ability, sets out the puzzle of how it works, gives the disordered-protein answer, and ends with a possible practical use."
+    },
+    {
+      "id": "DAT-T1-QR-01",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If 3x - 7 = 2x + 5, what is x?",
+      "options": [
+        "-12",
+        "-2",
+        "2",
+        "12"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Subtract 2x from both sides and add 7: x = 12. Check: 3(12) - 7 = 29 and 2(12) + 5 = 29."
+    },
+    {
+      "id": "DAT-T1-QR-02",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which inequality describes every x for which -2x + 4 > 10?",
+      "options": [
+        "x < -3",
+        "x > -3",
+        "x > 7",
+        "x < 3"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Subtract 4: -2x > 6. Dividing by a negative number reverses the sign, so x < -3. Forgetting to flip it gives x > -3."
+    },
+    {
+      "id": "DAT-T1-QR-03",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the value of (2³ × 2⁵) ÷ 2⁴?",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "256"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Add exponents when multiplying and subtract when dividing: 2^(3 + 5 - 4) = 2⁴ = 16."
+    },
+    {
+      "id": "DAT-T1-QR-04",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is $(6.0 \\times 10^{5})(3.0 \\times 10^{-2})$?",
+      "options": [
+        "$1.8 \\times 10^{3}$",
+        "$9.0 \\times 10^{3}$",
+        "$1.8 \\times 10^{-10}$",
+        "$1.8 \\times 10^{4}$"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Multiply the numbers (6.0 × 3.0 = 18) and add the exponents (5 + (-2) = 3): 18 × 10³ = 1.8 × 10⁴."
+    },
+    {
+      "id": "DAT-T1-QR-05",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What are the solutions of |2x - 3| = 7?",
+      "options": [
+        "x = 5 only",
+        "x = 5 or x = 2",
+        "x = -5 or x = 2",
+        "x = 5 or x = -2"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Either 2x - 3 = 7, so x = 5, or 2x - 3 = -7, so x = -2. Dropping the negative case loses the second solution."
+    },
+    {
+      "id": "DAT-T1-QR-06",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "If a : b = 3 : 5 and b : c = 2 : 7, what is a : c?",
+      "options": [
+        "6 : 7",
+        "6 : 35",
+        "3 : 7",
+        "15 : 14"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Make b the same in both ratios: a : b = 6 : 10 and b : c = 10 : 35, so a : c = 6 : 35. Linking 3 : 7 directly ignores that b differs between the ratios."
+    },
+    {
+      "id": "DAT-T1-QR-07",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the slope of the line through (1, 2) and (4, 11)?",
+      "options": [
+        "-3",
+        "1/3",
+        "3",
+        "9"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Slope = change in y / change in x = (11 - 2) / (4 - 1) = 9 / 3 = 3. 1/3 divides the x change by the y change."
+    },
+    {
+      "id": "DAT-T1-QR-08",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Quantitative comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Compare Quantity A and Quantity B. x is a negative integer. Quantity A: x². Quantity B: x³. Which is greater?",
+      "options": [
+        "Quantity A is greater",
+        "Quantity B is greater",
+        "The two quantities are equal",
+        "The relationship cannot be determined"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A negative number squared is positive and cubed is negative, so x² > x³ for every negative integer. For x = -1: A is 1 and B is -1."
+    },
+    {
+      "id": "DAT-T1-QR-09",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Statistics",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A student's scores on five tests are 70, 80, 90, 100 and x. Their mean is 86. What is x?",
+      "options": [
+        "80",
+        "86",
+        "90",
+        "95"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The five scores must total 5 × 86 = 430. 70 + 80 + 90 + 100 = 340, so x = 430 - 340 = 90."
+    },
+    {
+      "id": "DAT-T1-QR-10",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Statistics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the median of 3, 9, 4, 12, 7 and 5?",
+      "options": [
+        "5",
+        "6",
+        "6.7",
+        "7"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "In order: 3, 4, 5, 7, 9, 12. With six values the median is the mean of the middle two: (5 + 7) / 2 = 6. 6.7 is the mean."
+    },
+    {
+      "id": "DAT-T1-QR-11",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Probability",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Two fair six-sided dice are rolled. What is the probability that the sum is 7?",
+      "options": [
+        "1/36",
+        "1/12",
+        "1/6",
+        "7/36"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Six of the 36 equally likely outcomes sum to 7 (1-6, 2-5, 3-4, 4-3, 5-2, 6-1), so the probability is 6/36 = 1/6."
+    },
+    {
+      "id": "DAT-T1-QR-12",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Probability",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A bag holds 3 red and 2 blue marbles. Two are drawn without replacement. What is the probability that both are red?",
+      "options": [
+        "1/5",
+        "3/10",
+        "9/25",
+        "3/5"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "P(first red) = 3/5 and then P(second red) = 2/4, so (3/5)(2/4) = 6/20 = 3/10. 9/25 assumes the first marble is put back."
+    },
+    {
+      "id": "DAT-T1-QR-13",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Statistics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which data set has the largest standard deviation?",
+      "options": [
+        "1, 10, 10, 19",
+        "9, 10, 10, 11",
+        "10, 10, 10, 10",
+        "8, 9, 11, 12"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "All four sets have a mean of 10. Standard deviation measures spread from the mean, and 1, 10, 10, 19 has the values farthest from 10. A set of identical values has a standard deviation of 0."
+    },
+    {
+      "id": "DAT-T1-QR-14",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Data sufficiency",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A rectangle has a perimeter of 30 cm. Which additional fact alone is enough to find its area?",
+      "options": [
+        "Its sides are whole numbers",
+        "Its length exceeds its width",
+        "Its length is 9 cm",
+        "It is not a square"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Length plus width is 15 cm, so a length of 9 cm fixes the width at 6 cm and the area at 54 cm². Each other fact still allows many different rectangles."
+    },
+    {
+      "id": "DAT-T1-QR-15",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A price of \\$80 is raised by 25%, and the new price is then cut by 20%. What is the final price?",
+      "options": [
+        "\\$80",
+        "\\$84",
+        "\\$90",
+        "\\$100"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "80 × 1.25 = 100, then 100 × 0.80 = 80. The two changes are applied to different bases, so they do not net to +5% (\\$84); \\$100 is only the price after the first change."
+    },
+    {
+      "id": "DAT-T1-QR-16",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A cyclist rides at a steady 36 km/h. What is this speed in meters per second?",
+      "options": [
+        "3.6 m/s",
+        "10 m/s",
+        "129.6 m/s",
+        "600 m/s"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "36 km/h is 36,000 m in 3,600 s, so 36,000 / 3,600 = 10 m/s. 600 m/s divides by 60 instead of 3,600, and 129.6 m/s multiplies by 3.6 instead of dividing."
+    },
+    {
+      "id": "DAT-T1-QR-17",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Pipe A fills a tank in 6 hours and pipe B fills it in 3 hours. Working together, how long do they take?",
+      "options": [
+        "1.5 hours",
+        "2 hours",
+        "3 hours",
+        "4.5 hours"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Together they fill 1/6 + 1/3 = 1/2 of the tank per hour, so the tank takes 2 hours. Averaging the times gives 4.5 hours, which ignores that the rates add."
+    },
+    {
+      "id": "DAT-T1-QR-18",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "How many liters of a 20% acid solution must be added to 10 L of a 50% acid solution to make a 30% solution?",
+      "options": [
+        "5 L",
+        "10 L",
+        "15 L",
+        "20 L"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Acid before and after must match: 0.20x + 0.50(10) = 0.30(10 + x). So 0.20x + 5 = 3 + 0.30x, giving 0.10x = 2 and x = 20 L."
+    },
+    {
+      "id": "DAT-T1-QR-19",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Ana is three times as old as Ben. In 10 years she will be twice as old as he is then. How old is Ben now?",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Let Ben be b and Ana 3b. Then 3b + 10 = 2(b + 10), so b = 10. Ana is 30 now; in 10 years she is 40 and Ben 20."
+    },
+    {
+      "id": "DAT-T1-QR-20",
+      "section": "qr",
+      "test": 1,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A race is 5.0 km long. Using 1 mile = 1.609 km, about how many miles is the race?",
+      "options": [
+        "3.1 miles",
+        "3.6 miles",
+        "5.0 miles",
+        "8.0 miles"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Divide kilometers by kilometers per mile: 5.0 / 1.609 = 3.1 miles. Multiplying instead gives 8.0, larger than the race itself."
+    },
+    {
+      "id": "DAT-T2-SNS-01",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Cell metabolism",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Where in the cell is most ATP made during aerobic respiration?",
+      "options": [
+        "Mitochondrial matrix",
+        "Outer mitochondrial membrane",
+        "Mitochondrial intermembrane space",
+        "Inner mitochondrial membrane"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "ATP synthase in the inner membrane makes most ATP by oxidative phosphorylation, driven by the proton gradient. The matrix runs the citric acid cycle, which makes only a little ATP (or GTP) directly."
+    },
+    {
+      "id": "DAT-T2-SNS-02",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Cell metabolism",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In photosynthesis, which process produces the O₂ that a plant releases?",
+      "options": [
+        "Regeneration of RuBP",
+        "Fixing of CO₂",
+        "Reduction of NADP⁺",
+        "Splitting of water"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Photosystem II splits water to replace its electrons, releasing O₂. CO₂ fixation by rubisco and RuBP regeneration are steps of the Calvin cycle and release no oxygen."
+    },
+    {
+      "id": "DAT-T2-SNS-03",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Cellular processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A hormone binds a receptor on the cell surface, and the receptor activates a G protein. Which second messenger does adenylyl cyclase then make?",
+      "options": [
+        "Diacylglycerol",
+        "Inositol trisphosphate",
+        "Cyclic GMP",
+        "Cyclic AMP"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Adenylyl cyclase converts ATP to cAMP, which activates protein kinase A. IP₃ and DAG come from phospholipase C, and cGMP from guanylyl cyclase."
+    },
+    {
+      "id": "DAT-T2-SNS-04",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Cell structure and function",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which organelle contains hydrolytic enzymes that work best at an acidic pH?",
+      "options": [
+        "Lysosome",
+        "Ribosome",
+        "Centrosome",
+        "Peroxisome"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lysosomes keep an internal pH near 5 and digest macromolecules with acid hydrolases. Peroxisomes break down fatty acids and hydrogen peroxide but are not acidic digestive compartments."
+    },
+    {
+      "id": "DAT-T2-SNS-05",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Experimental cell biology",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A researcher wants to separate cell organelles by size and density. Which technique is used?",
+      "options": [
+        "Fluorescence microscopy",
+        "Size-exclusion chromatography",
+        "Differential centrifugation",
+        "Gel electrophoresis"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Spinning a homogenate at increasing speeds pellets nuclei first, then mitochondria, then microsomes. Electrophoresis and size-exclusion chromatography separate molecules, not organelles, and microscopy only views them."
+    },
+    {
+      "id": "DAT-T2-SNS-06",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datDiversity",
+      "skill": "Fungi",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What do the cell walls of fungi contain?",
+      "options": [
+        "Silica",
+        "Cellulose",
+        "Chitin",
+        "Peptidoglycan"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Fungal walls are made mainly of chitin, the same polymer as in insect exoskeletons. Plant walls are cellulose, bacterial walls peptidoglycan, and diatoms build silica shells."
+    },
+    {
+      "id": "DAT-T2-SNS-07",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datDiversity",
+      "skill": "Archaebacteria",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which feature distinguishes Archaea from Bacteria?",
+      "options": [
+        "A circular chromosome",
+        "70S ribosomes",
+        "Ester-linked lipids",
+        "Ether-linked lipids"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Archaeal membrane lipids join glycerol to their side chains by ether bonds, while bacteria use ester bonds. Both groups have circular chromosomes, 70S ribosomes and no nucleus."
+    },
+    {
+      "id": "DAT-T2-SNS-08",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datDiversity",
+      "skill": "Animalia",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which animal group has a water vascular system and tube feet?",
+      "options": [
+        "Echinoderms",
+        "Cephalopods",
+        "Arthropods",
+        "Cnidarians"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sea stars, sea urchins and other echinoderms move and feed with tube feet driven by a water vascular system. Cnidarians have stinging cells, arthropods jointed legs, and cephalopods a muscular foot turned into arms."
+    },
+    {
+      "id": "DAT-T2-SNS-09",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Respiratory",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Most carbon dioxide is carried in the blood in which form?",
+      "options": [
+        "Bicarbonate ion",
+        "Bound to hemoglobin's heme",
+        "Dissolved CO₂",
+        "Carbonic acid"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "About 70% of CO₂ travels as HCO₃⁻, made in red cells by carbonic anhydrase. Some binds hemoglobin's protein chains, not the heme iron, and a little dissolves directly."
+    },
+    {
+      "id": "DAT-T2-SNS-10",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Muscular",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During skeletal muscle contraction, calcium ions bind to which protein?",
+      "options": [
+        "Actin",
+        "Tropomyosin",
+        "Myosin",
+        "Troponin"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ca²⁺ binds troponin, which shifts tropomyosin off the binding sites on actin so myosin heads can attach. Calcium does not bind tropomyosin itself."
+    },
+    {
+      "id": "DAT-T2-SNS-11",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Lymphatic/immune",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which cells make antibodies?",
+      "options": [
+        "Plasma cells",
+        "Helper T cells",
+        "Cytotoxic T cells",
+        "Macrophages"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Activated B cells become plasma cells, which secrete antibodies. Helper T cells signal other cells, cytotoxic T cells kill infected cells, and macrophages engulf and present antigen."
+    },
+    {
+      "id": "DAT-T2-SNS-12",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Reproductive",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "What triggers ovulation in the menstrual cycle?",
+      "options": [
+        "A fall in FSH",
+        "A fall in estrogen",
+        "A rise in progesterone",
+        "A surge of LH"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rising estrogen from the growing follicle switches to positive feedback and causes an LH surge, which triggers ovulation about a day later. Progesterone rises after ovulation, from the corpus luteum."
+    },
+    {
+      "id": "DAT-T2-SNS-13",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Skeletal",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which cells break down bone matrix?",
+      "options": [
+        "Osteocytes",
+        "Osteoclasts",
+        "Chondrocytes",
+        "Osteoblasts"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Osteoclasts resorb bone and release calcium into the blood. Osteoblasts lay down new matrix, osteocytes maintain it, and chondrocytes make cartilage."
+    },
+    {
+      "id": "DAT-T2-SNS-14",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Classical genetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A cross of AaBb × AaBb involves two unlinked genes with complete dominance. What fraction of offspring show both recessive traits?",
+      "options": [
+        "1/16",
+        "3/16",
+        "1/4",
+        "9/16"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Each gene gives a 1/4 chance of the recessive phenotype, and unlinked genes assort independently, so 1/4 × 1/4 = 1/16. 9/16 show both dominant traits."
+    },
+    {
+      "id": "DAT-T2-SNS-15",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Gene expression",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the lac operon of E. coli, what does the repressor do when lactose is absent?",
+      "options": [
+        "Binds lactose",
+        "Degrades lac mRNA",
+        "Binds the CAP site",
+        "Binds the operator"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "With no lactose, the repressor sits on the operator and blocks RNA polymerase. Lactose (as allolactose) binds the repressor and releases it; CAP is a separate activator."
+    },
+    {
+      "id": "DAT-T2-SNS-16",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Genetic technology",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which enzyme cuts DNA at a specific short sequence and is used to make recombinant DNA?",
+      "options": [
+        "DNA polymerase I",
+        "Reverse transcriptase",
+        "Restriction enzyme",
+        "DNA ligase"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Restriction enzymes cut at specific sites, often leaving sticky ends. DNA ligase then seals the pieces together; it does not cut."
+    },
+    {
+      "id": "DAT-T2-SNS-17",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Epigenetics",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which change to chromatin usually silences the genes in it?",
+      "options": [
+        "Promoter DNA methylation",
+        "Loosening of nucleosomes",
+        "Histone tail acetylation",
+        "Removal of histone H1"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Methylation of cytosines in promoter CpG islands recruits proteins that compact chromatin and silence genes. Histone acetylation loosens chromatin and usually increases transcription."
+    },
+    {
+      "id": "DAT-T2-SNS-18",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datEvolution",
+      "skill": "Natural selection",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A trait in which individuals with intermediate values leave the most offspring is under which kind of selection?",
+      "options": [
+        "Frequency-dependent",
+        "Disruptive",
+        "Directional",
+        "Stabilizing"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Stabilizing selection favors the middle and narrows variation, as with human birth weight. Disruptive selection favors both extremes; directional selection favors one."
+    },
+    {
+      "id": "DAT-T2-SNS-19",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datEvolution",
+      "skill": "Population genetics/speciation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two populations of frogs live in the same pond but breed in different months. This is which kind of isolation?",
+      "options": [
+        "Geographic isolation",
+        "Mechanical isolation",
+        "Temporal isolation",
+        "Hybrid sterility"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Breeding at different times keeps populations apart even when they share a place: temporal isolation, a prezygotic barrier. Hybrid sterility acts only after mating."
+    },
+    {
+      "id": "DAT-T2-SNS-20",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datEvolution",
+      "skill": "Ecology",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Lichens grow on bare rock left by a retreating glacier, and soil slowly forms. This begins which process?",
+      "options": [
+        "Primary succession",
+        "Secondary succession",
+        "Eutrophication",
+        "Climax community"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Primary succession starts where there is no soil, as on new rock. Secondary succession follows a disturbance that leaves soil in place, such as a fire or an abandoned field."
+    },
+    {
+      "id": "DAT-T2-SNS-21",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Stoichiometry",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the mass percent of oxygen in CO₂ (C = 12, O = 16)?",
+      "options": [
+        "27.3%",
+        "36.4%",
+        "66.7%",
+        "72.7%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "CO₂ has a molar mass of 44 g/mol, 32 g of it oxygen: 32 / 44 = 72.7%. 66.7% is the mole fraction of O atoms, not the mass fraction."
+    },
+    {
+      "id": "DAT-T2-SNS-22",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Stoichiometry",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "4.0 g of H₂ reacts with 16 g of O₂ by 2 H₂ + O₂ → 2 H₂O. What is the greatest mass of water that can form?",
+      "options": [
+        "18 g",
+        "20 g",
+        "32 g",
+        "36 g"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "4.0 g H₂ is 2.0 mol and 16 g O₂ is 0.50 mol. O₂ is limiting: 0.50 mol O₂ gives 1.0 mol H₂O, which is 18 g. 36 g assumes all the hydrogen reacts."
+    },
+    {
+      "id": "DAT-T2-SNS-23",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Gases",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What volume does 0.50 mol of an ideal gas occupy at STP (0 °C and 1 atm)?",
+      "options": [
+        "5.6 L",
+        "11.2 L",
+        "22.4 L",
+        "44.8 L"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "One mole of ideal gas fills 22.4 L at STP, so 0.50 mol fills 11.2 L."
+    },
+    {
+      "id": "DAT-T2-SNS-24",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Gases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "At the same temperature, which gas has the highest average molecular speed?",
+      "options": [
+        "H₂",
+        "CO₂",
+        "O₂",
+        "Cl₂"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Every gas at one temperature has the same average kinetic energy, so the lightest molecules move fastest. H₂ (2 g/mol) is far lighter than O₂, CO₂ or Cl₂."
+    },
+    {
+      "id": "DAT-T2-SNS-25",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Liquids and solids",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A liquid's vapor pressure equals the external pressure at which temperature?",
+      "options": [
+        "Its boiling point",
+        "Its triple point",
+        "Its melting point",
+        "Its critical point"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A liquid boils when its vapor pressure reaches the pressure above it, which is why water boils below 100 °C at high altitude."
+    },
+    {
+      "id": "DAT-T2-SNS-26",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Atomic and molecular structure",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the molecular geometry of NH₃?",
+      "options": [
+        "Tetrahedral",
+        "Trigonal bipyramidal",
+        "Trigonal planar",
+        "Trigonal pyramidal"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Nitrogen has three bonds and one lone pair: four electron domains arranged tetrahedrally, but the shape of the atoms alone is trigonal pyramidal. Trigonal planar has no lone pair, as in BF₃."
+    },
+    {
+      "id": "DAT-T2-SNS-27",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Solutions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "4.0 g of NaOH (molar mass 40 g/mol) is dissolved in water to make 250 mL of solution. What is the molarity?",
+      "options": [
+        "0.016 M",
+        "0.10 M",
+        "0.40 M",
+        "1.6 M"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "4.0 g is 0.10 mol, and 0.10 mol / 0.250 L = 0.40 M. 0.10 M forgets to divide by the volume in liters."
+    },
+    {
+      "id": "DAT-T2-SNS-28",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Acids and bases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the conjugate base of H₂PO₄⁻?",
+      "options": [
+        "PO₄³⁻",
+        "HPO₄²⁻",
+        "H₃PO₄",
+        "HPO₃²⁻"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A conjugate base has one fewer proton: H₂PO₄⁻ minus H⁺ is HPO₄²⁻. H₃PO₄ is its conjugate acid."
+    },
+    {
+      "id": "DAT-T2-SNS-29",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Acids and bases",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A buffer contains equal concentrations of acetic acid (pKa 4.76) and sodium acetate. What is its pH?",
+      "options": [
+        "2.38",
+        "4.76",
+        "7.00",
+        "9.24"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "By the Henderson-Hasselbalch equation, pH = pKa + log([A⁻]/[HA]). With equal concentrations the log term is 0, so pH = pKa = 4.76."
+    },
+    {
+      "id": "DAT-T2-SNS-30",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Chemical equilibria",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Solid NaCl is added to a saturated solution of AgCl. What happens to the solubility of AgCl?",
+      "options": [
+        "It doubles",
+        "It stays the same",
+        "It decreases",
+        "It increases"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Added Cl⁻ is a common ion: it pushes AgCl(s) ⇌ Ag⁺ + Cl⁻ to the left, so less AgCl dissolves. Ksp is unchanged."
+    },
+    {
+      "id": "DAT-T2-SNS-31",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Thermodynamics and thermochemistry",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "For A → B, ΔH = -100 kJ. What is ΔH for 2 B → 2 A?",
+      "options": [
+        "-50 kJ",
+        "+200 kJ",
+        "+100 kJ",
+        "-200 kJ"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Reversing a reaction changes the sign of ΔH (+100 kJ), and doubling it doubles ΔH, giving +200 kJ."
+    },
+    {
+      "id": "DAT-T2-SNS-32",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Chemical kinetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A first-order reaction has a half-life of 10 minutes. What fraction of the reactant remains after 30 minutes?",
+      "options": [
+        "1/8",
+        "1/6",
+        "1/4",
+        "1/3"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "30 minutes is three half-lives: 1/2 × 1/2 × 1/2 = 1/8. 1/3 would assume the amount falls in equal steps."
+    },
+    {
+      "id": "DAT-T2-SNS-33",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Oxidation-reduction",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In a galvanic cell, where does oxidation take place?",
+      "options": [
+        "At the anode",
+        "In the voltmeter",
+        "In the salt bridge",
+        "At the cathode"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Oxidation happens at the anode and reduction at the cathode in every electrochemical cell. The salt bridge only lets ions flow to keep each half-cell neutral."
+    },
+    {
+      "id": "DAT-T2-SNS-34",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Periodic properties",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which element has the highest first ionization energy?",
+      "options": [
+        "Chlorine",
+        "Magnesium",
+        "Sodium",
+        "Neon"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ionization energy rises across a period, and neon's full valence shell holds its electrons most tightly. Sodium, at the far left, has the lowest."
+    },
+    {
+      "id": "DAT-T2-SNS-35",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Laboratory",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "How many milliliters of a 2.0 M stock solution are needed to make 100 mL of a 0.50 M solution?",
+      "options": [
+        "25 mL",
+        "50 mL",
+        "100 mL",
+        "400 mL"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "M₁V₁ = M₂V₂: 2.0 × V₁ = 0.50 × 100, so V₁ = 25 mL, then dilute to 100 mL. Inverting the ratio (2.0 × 100 / 0.50) gives 400 mL, more than the final volume."
+    },
+    {
+      "id": "DAT-T2-SNS-36",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Mechanisms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which conditions favor an SN1 reaction?",
+      "options": [
+        "Tertiary halide, polar protic solvent",
+        "Primary halide, polar aprotic solvent",
+        "Methyl halide, strong nucleophile",
+        "Primary halide, bulky strong base"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "SN1 goes through a carbocation, which forms best from a tertiary substrate and is stabilized by a polar protic solvent such as water or ethanol. Polar aprotic solvents and unhindered substrates favor SN2."
+    },
+    {
+      "id": "DAT-T2-SNS-37",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Mechanisms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "On a reaction coordinate diagram for a two-step reaction, which step is rate-determining?",
+      "options": [
+        "The one with the highest transition state",
+        "The one that comes first in time",
+        "The one with the most stable intermediate",
+        "The one with the largest overall ΔH"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The slowest step is the one that must climb to the highest-energy transition state on the diagram. An intermediate sits in a valley between the two transition states."
+    },
+    {
+      "id": "DAT-T2-SNS-38",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Mechanisms",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Ethanol is protonated by H₃O⁺. In the curved-arrow mechanism, where does the arrow begin?",
+      "options": [
+        "The O-H bond of ethanol",
+        "The positive charge on H₃O⁺",
+        "Ethanol's oxygen lone pair",
+        "A hydrogen of H₃O⁺"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Curved arrows start at electrons. Ethanol's oxygen lone pair attacks a hydrogen of hydronium, and a second arrow moves the O-H bonding pair of H₃O⁺ onto its oxygen, leaving water."
+    },
+    {
+      "id": "DAT-T2-SNS-39",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Mechanisms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "1,3-Butadiene and ethene react by a Diels-Alder reaction. What is the product?",
+      "options": [
+        "Cyclohexene",
+        "Cyclohexane",
+        "1,3-Cyclohexadiene",
+        "Benzene"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A diene and a dienophile join in one concerted [4+2] step, forming two new σ bonds and a six-membered ring. One π bond remains, between the old C2 and C3 of the diene, so the product is cyclohexene."
+    },
+    {
+      "id": "DAT-T2-SNS-40",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Benzene is treated with acetyl chloride and AlCl₃. What is the product?",
+      "options": [
+        "Phenyl acetate",
+        "Acetophenone",
+        "Benzaldehyde",
+        "Toluene"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Friedel-Crafts acylation: AlCl₃ makes an acylium ion that the ring attacks, giving the aryl ketone C₆H₅COCH₃. Phenyl acetate is an ester, which would need phenol."
+    },
+    {
+      "id": "DAT-T2-SNS-41",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Toluene is nitrated with HNO₃ and H₂SO₄. Where does the nitro group mainly go?",
+      "options": [
+        "Ortho and para",
+        "On the methyl group",
+        "Para only, no ortho",
+        "Meta only"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A methyl group donates electron density and stabilizes the carbocation intermediates of ortho and para attack, so it is an ortho, para director. Ortho and para products both form; para is favored somewhat by sterics."
+    },
+    {
+      "id": "DAT-T2-SNS-42",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Ethyl acetate is heated with aqueous NaOH. What are the products?",
+      "options": [
+        "Ethyl alcohol and CO₂",
+        "Sodium acetate and ethanol",
+        "Acetic acid and sodium ethoxide",
+        "Acetaldehyde and ethanol"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Saponification: hydroxide attacks the ester carbonyl and expels ethoxide, which takes the proton from the acid. In base the acid ends up as its carboxylate salt."
+    },
+    {
+      "id": "DAT-T2-SNS-43",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A primary alcohol is oxidized with PCC in dichloromethane. What forms?",
+      "options": [
+        "A ketone",
+        "An aldehyde",
+        "An alkene",
+        "A carboxylic acid"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "PCC is a mild oxidant used without water, so oxidation stops at the aldehyde. Chromic acid in water would carry it on to the carboxylic acid; ketones come from secondary alcohols."
+    },
+    {
+      "id": "DAT-T2-SNS-44",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which order of steps makes 1-bromo-3-nitrobenzene from benzene?",
+      "options": [
+        "Brominate, then reduce",
+        "Nitrate, then reduce",
+        "Nitrate, then brominate",
+        "Brominate, then nitrate"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The nitro group is a meta director, so nitrating first and then brominating puts Br meta to NO₂. Bromine is an ortho, para director, so brominating first would give mainly the ortho and para isomers."
+    },
+    {
+      "id": "DAT-T2-SNS-45",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two molecules of acetaldehyde react in dilute NaOH at room temperature. What is the product?",
+      "options": [
+        "Butanoic acid",
+        "Ethyl acetate",
+        "But-2-enal (crotonaldehyde)",
+        "3-Hydroxybutanal"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In the aldol addition the enolate of one acetaldehyde attacks the carbonyl of another, giving a β-hydroxy aldehyde. Heating would dehydrate it to 2-butenal, the aldol condensation product."
+    },
+    {
+      "id": "DAT-T2-SNS-46",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical synthesis",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Sodium methoxide in methanol opens 2-methyloxirane. Where does methoxide attack?",
+      "options": [
+        "The more substituted carbon",
+        "Each carbon equally often",
+        "The less substituted carbon",
+        "The epoxide oxygen atom"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Under basic conditions a strong nucleophile opens the epoxide by an SN2-like attack at the less hindered carbon. In acid the more substituted carbon is attacked, because it carries more positive charge."
+    },
+    {
+      "id": "DAT-T2-SNS-47",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Acid-base chemistry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which base removes the proton of a terminal alkyne (pKa about 25) essentially completely?",
+      "options": [
+        "CH₃CO₂Na",
+        "NaOH",
+        "NaHCO₃",
+        "NaNH₂"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An acid-base equilibrium favors the side with the weaker acid. NH₃ (pKa about 38) is far weaker than the alkyne, so amide deprotonates it fully; water (pKa about 15.7) is a stronger acid than the alkyne, so hydroxide cannot."
+    },
+    {
+      "id": "DAT-T2-SNS-48",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical and physical properties",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Benzoic acid and naphthalene are dissolved in diethyl ether. Which wash moves the benzoic acid into the water layer?",
+      "options": [
+        "Aqueous HCl",
+        "Pure water",
+        "Aqueous NaHCO₃",
+        "Saturated NaCl"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bicarbonate deprotonates benzoic acid to sodium benzoate, an ionic salt that dissolves in water, while neutral naphthalene stays in the ether. Acid leaves benzoic acid neutral and in the organic layer."
+    },
+    {
+      "id": "DAT-T2-SNS-49",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical and physical properties",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "How many signals does ethyl acetate, CH₃COOCH₂CH₃, show in its ¹H NMR spectrum?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "There are three sets of equivalent hydrogens: the acetyl CH₃ (a singlet), the OCH₂ (a quartet) and the ethyl CH₃ (a triplet)."
+    },
+    {
+      "id": "DAT-T2-SNS-50",
+      "section": "sns",
+      "test": 2,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Structural evaluation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "How are (2R,3S)-2-bromo-3-chlorobutane and (2S,3S)-2-bromo-3-chlorobutane related?",
+      "options": [
+        "Diastereomers",
+        "Identical",
+        "Enantiomers",
+        "Constitutional isomers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "They differ at C2 but match at C3. Stereoisomers that are not mirror images are diastereomers; enantiomers would differ at every stereocenter, as (2R,3S) and (2S,3R) do."
+    },
+    {
+      "id": "DAT-T2-RC-01",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To explain why birds migrate in autumn",
+        "To describe how birds may sense direction",
+        "To compare pigeons with migrating songbirds",
+        "To argue that magnetite does not exist"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage reviews the cues birds use to hold a direction, with most of its length on the two explanations of the magnetic compass."
+    },
+    {
+      "id": "DAT-T2-RC-02",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "What does the passage say about young birds raised in captivity?",
+      "options": [
+        "They follow the stars and nothing else",
+        "They cannot learn the route at all",
+        "They still orient consistently",
+        "They never become restless in autumn"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first paragraph says they become restless at the right season and orient themselves consistently, which suggests part of the knowledge is inherited."
+    },
+    {
+      "id": "DAT-T2-RC-03",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "Which of the following does the passage NOT name as a reference birds use for direction?",
+      "options": [
+        "The moon",
+        "The stars",
+        "The sun",
+        "The magnetic field"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The first paragraph names the sun, the pattern of stars around the celestial pole and the Earth's magnetic field. The moon is not mentioned."
+    },
+    {
+      "id": "DAT-T2-RC-04",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "How did experimenters show that caged birds use the magnetic field?",
+      "options": [
+        "The birds stopped singing in the dark",
+        "The birds ate food containing magnetite",
+        "The birds turned when the field was shifted",
+        "The birds flew straight toward the equator"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Caged birds hop in the direction they would fly; when coils altered the field around the cage, the birds turned with it."
+    },
+    {
+      "id": "DAT-T2-RC-05",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "According to the passage, what does the birds' magnetic compass respond to?",
+      "options": [
+        "The direction of the sun",
+        "The field's north and south polarity",
+        "The strength of the field",
+        "The angle of the field lines"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The compass does not read polarity like a ship's compass; it reads the inclination, the angle the field lines make with the ground."
+    },
+    {
+      "id": "DAT-T2-RC-06",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "A compass that reads only inclination could tell a bird which of the following?",
+      "options": [
+        "Its exact present latitude",
+        "The local time of day",
+        "True north from true south",
+        "Poleward from equatorward"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Inclination is steep near the poles and level near the equator, so it separates poleward from equatorward, though not north from south, as the passage says."
+    },
+    {
+      "id": "DAT-T2-RC-07",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "What did later work find about many iron-rich cells in pigeon beaks?",
+      "options": [
+        "They were nerve endings",
+        "They were immune cells",
+        "They held cryptochrome",
+        "They were in the retina"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The third paragraph says many of the cells were immune cells that had nothing to do with sensing."
+    },
+    {
+      "id": "DAT-T2-RC-08",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "The passage suggests that magnetite may still explain which ability?",
+      "options": [
+        "Sensing field strength as a map",
+        "Orienting by the setting sun",
+        "Seeing the field as a pattern",
+        "Reading patterns of the stars"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The magnetite idea has lost ground for the compass but may explain a separate sense of field strength that could act as a kind of map."
+    },
+    {
+      "id": "DAT-T2-RC-09",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "Where does the second explanation place the magnetic compass?",
+      "options": [
+        "In the feathers",
+        "In the upper beak",
+        "In the inner ear",
+        "In the eye"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The fourth paragraph says the second explanation places the compass in the eye, in cryptochrome proteins of the retina."
+    },
+    {
+      "id": "DAT-T2-RC-10",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "Why does the effect of radio-frequency noise support the radical-pair explanation?",
+      "options": [
+        "Noise blocks the light that birds need",
+        "Noise should disturb a radical pair only",
+        "Noise heats the tissue of the retina",
+        "Noise shifts the Earth's field lines"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says weak radio-frequency noise should not affect a magnetite needle but could disturb a radical pair, so the disruption fits the eye-based account."
+    },
+    {
+      "id": "DAT-T2-RC-11",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Vocabulary in context",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "As used in the passage, \"inclination\" refers to:",
+      "options": [
+        "a bird's natural preference",
+        "the dip of field lines",
+        "the slope of a hill",
+        "the height of flight"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage uses the word for the angle the field lines make with the ground, steep near the poles and level near the equator."
+    },
+    {
+      "id": "DAT-T2-RC-12",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "Which problem with the radical-pair explanation does the author mention?",
+      "options": [
+        "Magnetite was found in the retina",
+        "Birds orient best in total darkness",
+        "The effect on the pair is tiny",
+        "Cryptochromes are absent in birds"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The final paragraph notes that the field's effect on a radical pair is tiny, and how so weak a signal rises above a cell's noise is not understood."
+    },
+    {
+      "id": "DAT-T2-RC-13",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Author's purpose",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P1",
+      "stem": "The final example of a cloudy night is used to show that:",
+      "options": [
+        "the cues can back one another up",
+        "stars are the most useful cue",
+        "birds cannot fly in bad weather",
+        "the magnetic sense fails in clouds"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The author ends by saying migration relies on several cues that can check one another: without stars a bird may use the field, and without the field it may use the sun."
+    },
+    {
+      "id": "DAT-T2-RC-14",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "Which title best fits the passage?",
+      "options": [
+        "Diet as a cure for diabetes",
+        "How insulin became a treatment",
+        "The life of Frederick Banting",
+        "Why the pancreas makes enzymes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage follows insulin from the failed extraction attempts through purification, supply and the dispute over credit. Banting is one figure among several."
+    },
+    {
+      "id": "DAT-T2-RC-15",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "According to the passage, why had earlier attempts to extract the substance failed?",
+      "options": [
+        "No one suspected the islets",
+        "Dogs could not be used in tests",
+        "Digestive enzymes destroyed it",
+        "Alcohol ruined every extract"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first paragraph says the pancreas also makes powerful digestive enzymes that destroyed the substance during extraction."
+    },
+    {
+      "id": "DAT-T2-RC-16",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "What treatment did physicians offer patients with type 1 diabetes before 1922?",
+      "options": [
+        "Regular doses of alcohol",
+        "Injections of beef extract",
+        "Surgical removal of the pancreas",
+        "Severe low-carbohydrate diets"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Physicians could offer only diets so severe in carbohydrate that patients slowly starved."
+    },
+    {
+      "id": "DAT-T2-RC-17",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "What was the purpose of tying off the ducts of the pancreas?",
+      "options": [
+        "To stop the islets from growing",
+        "To make the dogs diabetic",
+        "To collect pancreatic juice for study",
+        "To let the enzyme tissue waste away"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Banting hoped the enzyme-making tissue would waste away while the islets survived, so their substance could be extracted intact."
+    },
+    {
+      "id": "DAT-T2-RC-18",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "Where did the team get a more abundant supply of pancreas?",
+      "options": [
+        "Fish from local markets",
+        "Dogs bred for research",
+        "Cattle from slaughterhouses",
+        "Human donors after surgery"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The second paragraph says the work moved to whole pancreas taken from cattle at slaughterhouses."
+    },
+    {
+      "id": "DAT-T2-RC-19",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "According to the passage, what was one result of Leonard Thompson's first, impure injection?",
+      "options": [
+        "An abscess formed at the site",
+        "Sugar left his urine",
+        "He needed no further doses",
+        "His blood sugar became normal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The first trial was a disappointment: his blood sugar fell only a little, and an abscess formed where the impure extract was injected."
+    },
+    {
+      "id": "DAT-T2-RC-20",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "What did James Collip contribute, according to the passage?",
+      "options": [
+        "A deal with a drug company",
+        "Laboratory space and staff",
+        "A way to purify the extract",
+        "The idea of tying off ducts"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Collip worked out how to purify the extract using alcohol at carefully chosen concentrations, leaving much of the unwanted protein behind."
+    },
+    {
+      "id": "DAT-T2-RC-21",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "The passage implies that soon after the second trial the main obstacle to treatment was:",
+      "options": [
+        "making enough insulin",
+        "proving that it worked",
+        "lowering its price",
+        "finding willing patients"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The fourth paragraph says the difficulty became one of supply: a laboratory method could not serve thousands, and physicians had to choose who received it."
+    },
+    {
+      "id": "DAT-T2-RC-22",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "How did the prize winners share the Nobel Prize money?",
+      "options": [
+        "Banting with Collip, Macleod with Best",
+        "Each winner kept his full share",
+        "Banting with Best, Macleod with Collip",
+        "All four men split it equally"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The fifth paragraph says Banting shared his part with Best and Macleod shared his with Collip."
+    },
+    {
+      "id": "DAT-T2-RC-23",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Author's purpose",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "The author most likely mentions that Banting's idea was \"partly mistaken\" in order to:",
+      "options": [
+        "show that the success was a team effort",
+        "argue that Banting deserved no credit",
+        "criticize the Nobel committee's choice",
+        "prove that the dog experiments failed"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The point comes as the author retells the story as teamwork: an imperfect idea, physiological expertise to test it and chemistry to make it usable."
+    },
+    {
+      "id": "DAT-T2-RC-24",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Vocabulary in context",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "As used in the final paragraph, the word \"managed\" most nearly means:",
+      "options": [
+        "cured completely",
+        "made less common",
+        "supervised by staff",
+        "kept under control"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says insulin did not cure diabetes but turned a fatal illness into one that could be managed: controlled with lifelong treatment."
+    },
+    {
+      "id": "DAT-T2-RC-25",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "datReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "DAT-T2-RC-P2",
+      "stem": "Which statement would the author most likely agree with?",
+      "options": [
+        "Diet therapy worked better than insulin did",
+        "Insulin cured diabetes once and for all",
+        "Credit for insulin belongs to Banting alone",
+        "Insulin mattered to medicine and biochemistry"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The final paragraph calls insulin a landmark not only in medicine but also in biochemistry, while saying it did not cure the disease."
+    },
+    {
+      "id": "DAT-T2-QR-01",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If x + y = 10 and x - y = 4, what is x?",
+      "options": [
+        "3",
+        "6",
+        "7",
+        "14"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Adding the two equations gives 2x = 14, so x = 7 (and y = 3)."
+    },
+    {
+      "id": "DAT-T2-QR-02",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What are the solutions of x² - 5x + 6 = 0?",
+      "options": [
+        "x = 1 and x = 6",
+        "x = -2 and x = -3",
+        "x = 2 and x = 3",
+        "x = -1 and x = 6"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Factor: (x - 2)(x - 3) = 0, so x = 2 or 3. The roots add to 5 and multiply to 6, matching the coefficients."
+    },
+    {
+      "id": "DAT-T2-QR-03",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which expression equals (x⁴)³ ÷ x⁵ for x ≠ 0?",
+      "options": [
+        "x¹¹",
+        "x⁷",
+        "x⁶",
+        "x²"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A power of a power multiplies exponents: (x⁴)³ = x¹². Dividing subtracts: x¹² ÷ x⁵ = x⁷. Adding 4 + 3 instead of multiplying leads to x²."
+    },
+    {
+      "id": "DAT-T2-QR-04",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which describes every x for which |x - 4| < 3?",
+      "options": [
+        "1 < x < 7",
+        "x < 7",
+        "-7 < x < 1",
+        "x < 1 or x > 7"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "|x - 4| < 3 means x is within 3 of 4: -3 < x - 4 < 3, so 1 < x < 7. The form \"x < 1 or x > 7\" is the answer for |x - 4| > 3."
+    },
+    {
+      "id": "DAT-T2-QR-05",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is √50 + √18 in simplest form?",
+      "options": [
+        "√68",
+        "5√2",
+        "2√17",
+        "8√2"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "√50 = 5√2 and √18 = 3√2, so the sum is 8√2. Square roots of a sum cannot be combined as √68."
+    },
+    {
+      "id": "DAT-T2-QR-06",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If f(x) = 2x² - 3, what is f(-2)?",
+      "options": [
+        "-11",
+        "5",
+        "11",
+        "13"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "f(-2) = 2(-2)² - 3 = 2(4) - 3 = 5. Squaring before applying the sign matters: (-2)² is 4, not -4."
+    },
+    {
+      "id": "DAT-T2-QR-07",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "If 3ˣ = 81, what is x?",
+      "options": [
+        "3",
+        "4",
+        "9",
+        "27"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "81 = 3 × 3 × 3 × 3 = 3⁴, so x = 4. 27 is 81 / 3."
+    },
+    {
+      "id": "DAT-T2-QR-08",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Quantitative comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Compare Quantity A and Quantity B. Quantity A: (0.5)². Quantity B: √0.25. Which is greater?",
+      "options": [
+        "Quantity A is greater",
+        "Quantity B is greater",
+        "The two quantities are equal",
+        "The relationship cannot be determined"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "(0.5)² = 0.25 and √0.25 = 0.5, so Quantity B is greater. For numbers between 0 and 1, squaring makes them smaller and square roots make them larger."
+    },
+    {
+      "id": "DAT-T2-QR-09",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Statistics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A class of 20 students averages 75 on an exam and a class of 30 averages 85. What is the average of all 50 students?",
+      "options": [
+        "78",
+        "80",
+        "81",
+        "82"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Total points: 20 × 75 + 30 × 85 = 1,500 + 2,550 = 4,050, and 4,050 / 50 = 81. The simple average 80 ignores the larger second class."
+    },
+    {
+      "id": "DAT-T2-QR-10",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Statistics",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the range of 4, 7, 7, 9, 12 and 15?",
+      "options": [
+        "7",
+        "9",
+        "11",
+        "15"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The range is the largest value minus the smallest: 15 - 4 = 11. 7 is the mode."
+    },
+    {
+      "id": "DAT-T2-QR-11",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Probability",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In how many ways can a committee of 3 be chosen from 7 people?",
+      "options": [
+        "35",
+        "70",
+        "210",
+        "343"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Order does not matter, so use combinations: 7! / (3! 4!) = (7 × 6 × 5) / (3 × 2 × 1) = 35. 210 counts ordered choices."
+    },
+    {
+      "id": "DAT-T2-QR-12",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Probability",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A fair coin is tossed 3 times. What is the probability of at least one head?",
+      "options": [
+        "1/8",
+        "3/8",
+        "1/2",
+        "7/8"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The only outcome with no head is three tails, probability (1/2)³ = 1/8, so at least one head is 1 - 1/8 = 7/8."
+    },
+    {
+      "id": "DAT-T2-QR-13",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A clinic recorded the patients it saw in one week:\n\n| Day | Patients |\n|---|---|\n| Monday | 24 |\n| Tuesday | 30 |\n| Wednesday | 18 |\n| Thursday | 36 |\n| Friday | 42 |\n\nBy about what percent did the number of patients rise from Wednesday to Friday?",
+      "options": [
+        "24%",
+        "57%",
+        "133%",
+        "233%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Percent change = (new - old) / old = (42 - 18) / 18 = 24 / 18 = 1.33, about 133%. Dividing by 42 instead gives 57%."
+    },
+    {
+      "id": "DAT-T2-QR-14",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrData",
+      "skill": "Data sufficiency",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "x and y are integers. Which fact alone is enough to tell whether x + y is even?",
+      "options": [
+        "x is odd and y > 0",
+        "x is greater than y",
+        "x and y are both odd",
+        "The product xy is even"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Two odd numbers always add to an even number. Knowing that x is odd and y is positive, or that xy is even (at least one is even), still allows an odd or an even sum."
+    },
+    {
+      "id": "DAT-T2-QR-15",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "\\$2,000 is invested at 4% simple interest per year. How much interest does it earn in 3 years?",
+      "options": [
+        "\\$240",
+        "\\$249.73",
+        "\\$800",
+        "\\$2,240"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Simple interest = principal × rate × time = 2,000 × 0.04 × 3 = \\$240. \\$2,240 is the balance, not the interest, and \\$249.73 would be compound interest."
+    },
+    {
+      "id": "DAT-T2-QR-16",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Two trains start at the same time from cities 450 km apart and travel toward each other at 70 km/h and 80 km/h. After how many hours do they meet?",
+      "options": [
+        "3",
+        "4",
+        "4.5",
+        "6"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "They close the gap at 70 + 80 = 150 km/h, so they meet after 450 / 150 = 3 hours."
+    },
+    {
+      "id": "DAT-T2-QR-17",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The price of a box of gloves falls from \\$50 to \\$42. By what percent did the price fall?",
+      "options": [
+        "8%",
+        "16%",
+        "19%",
+        "84%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Percent decrease = 8 / 50 = 0.16 = 16%. Dividing by the new price (8 / 42) gives about 19%."
+    },
+    {
+      "id": "DAT-T2-QR-18",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A circular garden has a diameter of 14 m. Using π ≈ 3.14, about what is its area?",
+      "options": [
+        "44 m²",
+        "154 m²",
+        "308 m²",
+        "616 m²"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The radius is 7 m, so the area is πr² = 3.14 × 49 ≈ 154 m². 616 m² uses the diameter as the radius, and 44 m is the circumference."
+    },
+    {
+      "id": "DAT-T2-QR-19",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A medicine is dosed at 15 mg per kilogram of body weight. Using 1 kg = 2.2 lb, what dose does a 44 lb child receive?",
+      "options": [
+        "136 mg",
+        "300 mg",
+        "600 mg",
+        "660 mg"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "44 lb / 2.2 = 20 kg, and 20 × 15 = 300 mg. 660 mg multiplies the dose by the weight in pounds."
+    },
+    {
+      "id": "DAT-T2-QR-20",
+      "section": "qr",
+      "test": 2,
+      "module": 1,
+      "domain": "datQrWord",
+      "skill": "Applied problems",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A machine makes 120 parts in 1.5 hours. At the same rate, how many parts does it make in an 8-hour shift?",
+      "options": [
+        "640",
+        "720",
+        "800",
+        "960"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The rate is 120 / 1.5 = 80 parts per hour, so 8 hours gives 640. 960 uses 120 parts per hour as the rate."
+    },
+    {
+      "id": "DAT-D-SNS-01",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Biomolecules",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which bond joins two amino acids in a protein?",
+      "options": [
+        "Glycosidic bond",
+        "Peptide bond",
+        "Ester bond",
+        "Phosphodiester bond"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A peptide bond is an amide link between the carboxyl group of one amino acid and the amino group of the next. Glycosidic bonds join sugars and phosphodiester bonds join nucleotides."
+    },
+    {
+      "id": "DAT-D-SNS-02",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Thermodynamics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A reaction in a cell has ΔG = +15 kJ/mol. How can the cell make it proceed?",
+      "options": [
+        "Lower the temperature",
+        "Couple it to ATP hydrolysis",
+        "Add more of its enzyme",
+        "Raise the activation energy"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An enzyme speeds a reaction but cannot change its ΔG. Coupling it to a strongly exergonic reaction such as ATP hydrolysis makes the overall ΔG negative."
+    },
+    {
+      "id": "DAT-D-SNS-03",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datCell",
+      "skill": "Mitosis/meiosis",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In which phase of mitosis do sister chromatids separate and move to opposite poles?",
+      "options": [
+        "Metaphase",
+        "Prophase",
+        "Anaphase",
+        "Telophase"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In anaphase cohesin is cleaved and sister chromatids are pulled to opposite poles. In metaphase they line up at the plate, still joined."
+    },
+    {
+      "id": "DAT-D-SNS-04",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Molecular genetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During DNA replication, which strand is made in short Okazaki fragments?",
+      "options": [
+        "Leading strand",
+        "Coding strand",
+        "Template strand",
+        "Lagging strand"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "DNA polymerase works only 5' to 3', so the strand running the other way from the fork is made in pieces, the lagging strand. The leading strand is made continuously."
+    },
+    {
+      "id": "DAT-D-SNS-05",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Classical genetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In snapdragons, red (RR) crossed with white (WW) gives all pink. Crossing two pink plants gives what ratio of red to pink to white?",
+      "options": [
+        "1 : 2 : 1",
+        "9 : 3 : 4",
+        "3 : 1 : 0",
+        "1 : 1 : 1"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Incomplete dominance makes each genotype a separate phenotype, so RW × RW gives RR, RW and WW in a 1 : 2 : 1 ratio. 3 : 1 would show only with complete dominance."
+    },
+    {
+      "id": "DAT-D-SNS-06",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datGenetics",
+      "skill": "Developmental mechanisms",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Homeotic (Hox) genes control what during animal development?",
+      "options": [
+        "Rate of cell division",
+        "Identity of body segments",
+        "Sex determination in embryos",
+        "Programmed cell death"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Hox genes encode transcription factors that give each region along the head-to-tail axis its identity; a mutation can put legs where antennae belong in a fly."
+    },
+    {
+      "id": "DAT-D-SNS-07",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datDiversity",
+      "skill": "Protista",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which disease is caused by a protist carried by mosquitoes?",
+      "options": [
+        "Tuberculosis",
+        "Influenza",
+        "Malaria",
+        "Ringworm"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Malaria is caused by Plasmodium, a protist spread by Anopheles mosquitoes. Tuberculosis is bacterial, influenza viral, and ringworm fungal."
+    },
+    {
+      "id": "DAT-D-SNS-08",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datDiversity",
+      "skill": "Plantae",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which plant tissue carries sugars from the leaves to the rest of the plant?",
+      "options": [
+        "Cambium",
+        "Xylem",
+        "Epidermis",
+        "Phloem"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Phloem sieve tubes move sugars from sources such as leaves to sinks such as roots and fruit. Xylem carries water and minerals upward from the roots."
+    },
+    {
+      "id": "DAT-D-SNS-09",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Integumentary",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which layer of the skin contains blood vessels, sweat glands and hair follicles?",
+      "options": [
+        "Stratum corneum",
+        "Stratum basale",
+        "Epidermis",
+        "Dermis"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The dermis holds blood vessels, nerves, glands and follicles. The epidermis, including the stratum basale and stratum corneum, has no blood vessels."
+    },
+    {
+      "id": "DAT-D-SNS-10",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datSystems",
+      "skill": "Endocrine",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A tumor makes too much ACTH. Which hormone level in the blood is most likely to rise as a result?",
+      "options": [
+        "Thyroxine",
+        "Aldosterone",
+        "Cortisol",
+        "Growth hormone"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "ACTH from the anterior pituitary drives cortisol release from the adrenal cortex. Aldosterone is controlled mainly by the renin-angiotensin system and potassium, not ACTH."
+    },
+    {
+      "id": "DAT-D-SNS-11",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Chemical kinetics",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What does a catalyst change in a reaction?",
+      "options": [
+        "The enthalpy change",
+        "The products formed",
+        "The activation energy",
+        "The equilibrium constant"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A catalyst offers a path with a lower activation energy, so equilibrium is reached faster. ΔH and K are unchanged, because the reactants and products are the same."
+    },
+    {
+      "id": "DAT-D-SNS-12",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Atomic and molecular structure",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the greatest number of electrons that the n = 3 shell can hold?",
+      "options": [
+        "8",
+        "9",
+        "18",
+        "32"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "A shell holds 2n² electrons: 2 × 3² = 18 (3s, 3p and 3d). 8 is the count of the 3s and 3p subshells alone, and 32 is n = 4."
+    },
+    {
+      "id": "DAT-D-SNS-13",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Gases",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "2.0 L of gas at 1.0 atm is compressed to 0.50 L at constant temperature. What is the new pressure?",
+      "options": [
+        "0.25 atm",
+        "1.0 atm",
+        "2.0 atm",
+        "4.0 atm"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "By Boyle's law P₁V₁ = P₂V₂: 1.0 × 2.0 = P₂ × 0.50, so P₂ = 4.0 atm."
+    },
+    {
+      "id": "DAT-D-SNS-14",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datGenChem",
+      "skill": "Laboratory",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A balance reads every mass 0.20 g too high. What kind of error is this, and what does it affect?",
+      "options": [
+        "Random; precision",
+        "Systematic; accuracy",
+        "Systematic; precision",
+        "Random; accuracy"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An error in the same direction every time is systematic and moves results away from the true value (accuracy). The readings can still agree closely with each other, so precision is unaffected."
+    },
+    {
+      "id": "DAT-D-SNS-15",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Structural evaluation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which conformation about the C2-C3 bond of butane is the most stable?",
+      "options": [
+        "Fully eclipsed",
+        "Anti",
+        "Gauche",
+        "Eclipsed"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In the anti conformation the two methyl groups are 180° apart, so there is no steric strain between them. Gauche puts them 60° apart, and the eclipsed forms add torsional strain."
+    },
+    {
+      "id": "DAT-D-SNS-16",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical and physical properties",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A mixture is run on a silica gel TLC plate with hexane and ethyl acetate. Which compound has the lowest Rf?",
+      "options": [
+        "Benzaldehyde",
+        "Benzoic acid",
+        "Methyl benzoate",
+        "Ethylbenzene"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Silica is polar, so the most polar compound sticks hardest and moves least. Benzoic acid hydrogen bonds to the silica; ethylbenzene, the least polar, runs nearly with the solvent front."
+    },
+    {
+      "id": "DAT-D-SNS-17",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Chemical and physical properties",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "How many signals does 1,4-dimethylbenzene (p-xylene) show in its ¹³C NMR spectrum?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Symmetry makes the two methyl carbons equivalent, the two ring carbons bearing methyls equivalent, and the four ring CH carbons equivalent: 3 signals for 8 carbons."
+    },
+    {
+      "id": "DAT-D-SNS-18",
+      "section": "sns",
+      "test": 0,
+      "module": 1,
+      "domain": "datOrgChem",
+      "skill": "Acid-base chemistry",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Why is phenol much more acidic than cyclohexanol?",
+      "options": [
+        "Its molar mass is a little lower",
+        "Its oxygen atom is sp³ hybridized",
+        "Its anion is resonance-stabilized",
+        "It hydrogen bonds more weakly"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In phenoxide the negative charge spreads from oxygen into the ring by resonance, which stabilizes the base. The cyclohexoxide charge stays on one oxygen, so cyclohexanol (pKa about 16) is far weaker than phenol (about 10)."
+    },
+    {
+      "id": "DAT-D-QR-01",
+      "section": "qr",
+      "test": 0,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If 5(x - 2) = 3x + 4, what is x?",
+      "options": [
+        "-3",
+        "1",
+        "3",
+        "7"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Distribute: 5x - 10 = 3x + 4. Then 2x = 14 and x = 7. Writing 5x - 2 forgets to multiply the 2 by 5."
+    },
+    {
+      "id": "DAT-D-QR-02",
+      "section": "qr",
+      "test": 0,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which expression equals (3a²b)(4ab³)?",
+      "options": [
+        "12a³b³",
+        "12a³b⁴",
+        "7a³b⁴",
+        "12a²b³"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Multiply the coefficients (3 × 4 = 12) and add the exponents of like bases: a² × a = a³ and b × b³ = b⁴."
+    },
+    {
+      "id": "DAT-D-QR-03",
+      "section": "qr",
+      "test": 0,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the slope of the line 2x + 3y = 12?",
+      "options": [
+        "-3/2",
+        "-2/3",
+        "2/3",
+        "4"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Solve for y: 3y = -2x + 12, so y = (-2/3)x + 4. The slope is -2/3 and the y-intercept is 4."
+    },
+    {
+      "id": "DAT-D-QR-04",
+      "section": "qr",
+      "test": 0,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Quantitative comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Compare Quantity A and Quantity B. x > 1. Quantity A: 1/x. Quantity B: x. Which is greater?",
+      "options": [
+        "Quantity A is greater",
+        "Quantity B is greater",
+        "The two quantities are equal",
+        "The relationship cannot be determined"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "For x greater than 1, 1/x is less than 1 while x is greater than 1, so Quantity B is greater. For x = 2: A is 0.5 and B is 2."
+    },
+    {
+      "id": "DAT-D-QR-05",
+      "section": "qr",
+      "test": 0,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "If 3/x = 12/20, what is x?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "80"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Cross-multiply: 12x = 60, so x = 5. Check: 3/5 = 0.6 and 12/20 = 0.6."
+    },
+    {
+      "id": "DAT-D-QR-06",
+      "section": "qr",
+      "test": 0,
+      "module": 1,
+      "domain": "datQrAlgebra",
+      "skill": "Algebra",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the value of 4⁻²?",
+      "options": [
+        "-16",
+        "-8",
+        "1/16",
+        "1/8"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "A negative exponent means a reciprocal: 4⁻² = 1/4² = 1/16. It never makes the number negative."
+    }
+  ]
+}

@@ -910,6 +910,48 @@
     --brand-gradient-to: 90 85% 95%;
   }
 
+  /* AFOQT theme: muted flight-suit olive (84 30% 38%: the assigned 40% saturation gave white text 4.1:1) (v2 exam; matches lib/v2/exams/afoqt.ts theme) */
+  [data-theme="afoqt"] {
+    --brand: 109 20% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 109 30% 96%;
+    --brand-hover: 109 20% 25%;
+    --brand-dark: 109 20% 23%;
+    --brand-darker: 109 15% 18%;
+    --brand-muted: 109 22% 72%;
+    --brand-border: 109 22% 80%;
+    --brand-border-light: 109 22% 90%;
+    --brand-gradient-to: 99 30% 95%;
+  }
+
+  /* CBEST theme: muted clay brown (v2 exam; matches lib/v2/exams/cbest.ts theme) */
+  [data-theme="cbest"] {
+    --brand: 21 25% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 21 25% 96%;
+    --brand-hover: 21 25% 37%;
+    --brand-dark: 21 25% 30%;
+    --brand-darker: 21 25% 20%;
+    --brand-muted: 21 20% 72%;
+    --brand-border: 21 20% 80%;
+    --brand-border-light: 21 20% 90%;
+    --brand-gradient-to: 30 25% 95%;
+  }
+
+  /* TABE theme: muted orchid (v2 exam; matches lib/v2/exams/tabe.ts theme) */
+  [data-theme="tabe"] {
+    --brand: 301 40% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 301 40% 96%;
+    --brand-hover: 301 40% 37%;
+    --brand-dark: 301 40% 30%;
+    --brand-darker: 301 35% 18%;
+    --brand-muted: 301 25% 72%;
+    --brand-border: 301 30% 80%;
+    --brand-border-light: 301 30% 90%;
+    --brand-gradient-to: 295 40% 95%;
+  }
+
   /* Times Tables theme: magenta (v2 exam; matches lib/v2/exams/timestables.ts theme) */
   [data-theme="timestables"] {
     --brand: 300 60% 42%;
@@ -1503,6 +1545,19 @@
     --brand-border: 48 20% 78%;
     --brand-border-light: 48 20% 88%;
     --brand-gradient-to: 63 25% 94%;
+  }
+  /* SHSAT theme: deep olive gold (v2 exam; matches lib/v2/exams/shsat.ts theme) */
+  [data-theme="shsat"] {
+    --brand: 63 100% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 63 80% 95%;
+    --brand-hover: 63 100% 20%;
+    --brand-dark: 63 100% 17%;
+    --brand-darker: 63 95% 11%;
+    --brand-muted: 63 40% 68%;
+    --brand-border: 63 45% 76%;
+    --brand-border-light: 63 45% 87%;
+    --brand-gradient-to: 50 80% 94%;
   }
   /* STAAR Algebra I theme: muted olive (v2 exam; matches lib/v2/exams/staaralg1.ts theme) */
   [data-theme="staaralg1"] {
@@ -2221,6 +2276,22 @@
     --brand-border: 256 45% 80%;
     --brand-border-light: 256 40% 89%;
     --brand-gradient-to: 240 60% 96%;
+  }
+
+  /* DAT theme (v2 exam; matches lib/v2/exams/dat.ts theme): deep bronze gold.
+     The assigned 42 85% 42% failed white-text contrast (2.8:1), and every lighter gold near hue 42
+     clashes with foodmgr, forklift, jelec or cscs, so it keeps hue 42 at 20% lightness (8.5:1). */
+  [data-theme="dat"] {
+    --brand: 42 100% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 42 70% 95%;
+    --brand-hover: 42 100% 16%;
+    --brand-dark: 42 100% 14%;
+    --brand-darker: 42 90% 9%;
+    --brand-muted: 42 30% 68%;
+    --brand-border: 42 35% 78%;
+    --brand-border-light: 42 30% 88%;
+    --brand-gradient-to: 36 70% 95%;
   }
 
   /* LSAT theme (v2 exam; matches lib/v2/exams/lsat.ts theme): deep oxblood */
@@ -4881,6 +4952,20 @@
     --brand-gradient-to: 106 30% 96%;
   }
 
+  /* CCRN (Adult) critical care nursing theme */
+  [data-theme="ccrn"] {
+    --brand: 252 25% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 252 30% 96%;
+    --brand-hover: 252 25% 40%;
+    --brand-dark: 252 25% 34%;
+    --brand-darker: 252 25% 24%;
+    --brand-muted: 252 12% 70%;
+    --brand-border: 252 15% 80%;
+    --brand-border-light: 252 15% 89%;
+    --brand-gradient-to: 267 30% 96%;
+  }
+
   /* Praxis Elementary Education: Multiple Subjects (5001) theme: dark ochre brown */
   [data-theme="praxis5001"] {
     --brand: 39 40% 26%;
@@ -5903,6 +5988,18 @@
     --brand-darker: 265 50% 78%;
   }
 
+  .dark [data-theme="cbest"] {
+    --brand: 21 25% 46.1%;
+    --brand-hover: 21 25% 38.1%;
+    --brand-light: 21 25% 13%;
+    --brand-gradient-to: 30 25% 11%;
+    --brand-border-light: 21 20% 24%;
+    --brand-border: 21 20% 34%;
+    --brand-muted: 21 20% 45%;
+    --brand-dark: 21 25% 65%;
+    --brand-darker: 21 25% 78%;
+  }
+
   .dark [data-theme="hiset"] {
     --brand-light: 102 45% 13%;
     --brand-gradient-to: 90 40% 11%;
@@ -5911,6 +6008,29 @@
     --brand-muted: 102 35% 45%;
     --brand-dark: 102 90% 65%;
     --brand-darker: 102 85% 78%;
+  }
+  .dark [data-theme="afoqt"] {
+    --brand: 109 20% 41.1%;
+    --brand-hover: 109 20% 33.1%;
+    --brand-light: 109 30% 13%;
+    --brand-gradient-to: 99 30% 11%;
+    --brand-border-light: 109 22% 24%;
+    --brand-border: 109 22% 34%;
+    --brand-muted: 109 22% 45%;
+    --brand-dark: 109 20% 65%;
+    --brand-darker: 109 15% 78%;
+  }
+
+  .dark [data-theme="tabe"] {
+    --brand: 301 40% 49.8%;
+    --brand-hover: 301 40% 41.8%;
+    --brand-light: 301 40% 13%;
+    --brand-gradient-to: 295 40% 11%;
+    --brand-border-light: 301 30% 24%;
+    --brand-border: 301 30% 34%;
+    --brand-muted: 301 25% 45%;
+    --brand-dark: 301 40% 65%;
+    --brand-darker: 301 35% 78%;
   }
 
   .dark [data-theme="timestables"] {
@@ -6420,6 +6540,17 @@
     --brand-dark: 48 20% 65%;
     --brand-darker: 48 15% 78%;
   }
+
+  .dark [data-theme="shsat"] {
+    --brand-light: 63 45% 13%;
+    --brand-gradient-to: 50 40% 11%;
+    --brand-border-light: 63 35% 24%;
+    --brand-border: 63 40% 34%;
+    --brand-muted: 63 40% 45%;
+    --brand-dark: 63 100% 65%;
+    --brand-darker: 63 95% 78%;
+  }
+
   .dark [data-theme="staaralg1"] {
     --brand: 70 25% 38.1%;
     --brand-hover: 70 25% 30.1%;
@@ -7031,6 +7162,18 @@
     --brand-muted: 256 40% 45%;
     --brand-dark: 256 75% 67%;
     --brand-darker: 256 60% 78%;
+  }
+
+  .dark [data-theme="dat"] {
+    --brand: 42 100% 30.4%;
+    --brand-hover: 42 100% 22.4%;
+    --brand-light: 42 45% 13%;
+    --brand-gradient-to: 36 40% 11%;
+    --brand-border-light: 42 30% 24%;
+    --brand-border: 42 35% 34%;
+    --brand-muted: 42 30% 45%;
+    --brand-dark: 42 100% 65%;
+    --brand-darker: 42 90% 78%;
   }
 
   .dark [data-theme="lsat"] {
@@ -9279,6 +9422,18 @@
     --brand-muted: 91 12% 45%;
     --brand-dark: 91 20% 65%;
     --brand-darker: 91 20% 78%;
+  }
+
+  .dark [data-theme="ccrn"] {
+    --brand: 252 25% 50%;
+    --brand-hover: 252 25% 42%;
+    --brand-light: 252 30% 13%;
+    --brand-gradient-to: 267 30% 11%;
+    --brand-border-light: 252 15% 24%;
+    --brand-border: 252 15% 34%;
+    --brand-muted: 252 12% 45%;
+    --brand-dark: 252 25% 65%;
+    --brand-darker: 252 25% 78%;
   }
 
   .dark [data-theme="praxis5001"] {

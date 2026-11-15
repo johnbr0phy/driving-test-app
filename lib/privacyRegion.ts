@@ -36,7 +36,7 @@ export const EMAIL_OPTIN_COUNTRIES = [...COOKIE_CONSENT_COUNTRIES, "CA"];
 /**
  * Children's tests, by path prefix (landing and app pages): Times Tables, KS2
  * SATs, 11+, NSW OC and Selective, NAPLAN Year 7, JNVST and AISSEE (Class 6
- * entry), MAP Growth (grades 2 to 5; "/map-growth" also covers its landing), STAAR Algebra I (often taken in grade 8; "/staar-algebra-1" also covers its landing), CogAT (grades 3 to 6; "/cogat" also covers "/cogat-practice-test"), SSAT Middle Level (grades 5 to 7; "/ssat" also covers "/ssat-practice-test"), ISEE Middle Level (applicants to grades 7 and 8; "/isee" also covers its landing). HSPT (grade 8; "/hspt" also covers "/hspt-practice-test"). Also /c/ (joining a teacher's class).
+ * entry), MAP Growth (grades 2 to 5; "/map-growth" also covers its landing), STAAR Algebra I (often taken in grade 8; "/staar-algebra-1" also covers its landing), SHSAT (NYC grades 8 and 9; "/shsat" also covers "/shsat-practice-test"), CogAT (grades 3 to 6; "/cogat" also covers "/cogat-practice-test"), SSAT Middle Level (grades 5 to 7; "/ssat" also covers "/ssat-practice-test"), ISEE Middle Level (applicants to grades 7 and 8; "/isee" also covers its landing). HSPT (grade 8; "/hspt" also covers "/hspt-practice-test"). Also /c/ (joining a teacher's class).
  */
 export const CHILD_PATH_PREFIXES = [
   "/times-tables",
@@ -53,6 +53,7 @@ export const CHILD_PATH_PREFIXES = [
   "/ssat",
   "/cogat",
   "/hspt",
+  "/shsat",
   "/staar-algebra-1",
   "/c/",
 ];

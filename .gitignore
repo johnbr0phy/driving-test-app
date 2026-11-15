@@ -46,3 +46,7 @@ next-env.d.ts
 
 # Python bytecode from tools/ build scripts
 __pycache__/
+
+# Output of scripts/build-queue.ts and scripts/test-progress.ts
+audits/build-queue/
+audits/progress/

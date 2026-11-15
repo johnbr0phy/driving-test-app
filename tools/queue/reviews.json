@@ -1,0 +1,33 @@
+{
+  "_": "Second-reviewer checks of whole banks: a reviewer that did not write the questions answered every one without the key and its findings were fixed. One entry per check. /build-tests adds an entry for each test it ships. Read by scripts/test-progress.ts. Tests built before 2026-11-14 are not listed: their reviews were not recorded per test.",
+  "reviews": {
+    "lsat": [{ "date": "2026-11-14", "kind": "blind review at build", "pr": 797 }, { "date": "2026-11-14", "kind": "independent re-check of every question", "pr": 799 }],
+    "mcat": [{ "date": "2026-11-14", "kind": "blind review at build", "pr": 797 }, { "date": "2026-11-14", "kind": "independent re-check of every question", "pr": 799 }],
+    "wassceeng": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 806 }],
+    "wasscemath": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 806 }],
+    "staaralg1": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 6 }],
+    "staareng1": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 11 }],
+    "staarbio": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 8 }],
+    "wonderlic": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 5 }],
+    "ase": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 5 }],
+    "toeflread": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 4 }],
+    "afoqt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 11 }],
+    "shsat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 4 }],
+    "cbest": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 9 }],
+    "tabe": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 6 }],
+    "dat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 3 }],
+    "ccrn": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 3 }],
+    "isee": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 6 }],
+    "ssat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 3 }],
+    "mblex": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 7 }],
+    "cogat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 7 }],
+    "hspt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 3 }],
+    "naplex": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 6 }],
+    "cen": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 4 }],
+    "rma": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 3 }],
+    "dktruck": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 5 }],
+    "iimcat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 1 }],
+    "nziqn": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 2 }],
+    "nzensf": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 5 }]
+  }
+}

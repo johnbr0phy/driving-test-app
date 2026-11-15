@@ -4348,6 +4348,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "New Zealand heavy vehicle rules as in force November 2026; NZTA's test page could not be read",
     source: { name: "NZTA Waka Kotahi heavy vehicle licences", url: "https://www.nzta.govt.nz/driver-licences/getting-a-licence/" },
   },
+  nziqn: {
+    answer:
+      "The IQN theoretical examination is the first test of competence the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) asks of internationally qualified nurses who need one before registration; the clinical competence assessment (OSCE) follows. The registered nurse exam is 120 computer-based multiple-choice questions, each with one correct answer, in 165 minutes at a Pearson test centre in New Zealand or overseas: Part A, Medication safety, 12 questions in 30 minutes including medicine calculations with an on-screen calculator, and Part B, Nursing knowledge, 108 questions in 135 minutes linked to the Council's standards of competence. Results come within 24 hours as Pass or Fail for each part; no pass mark is published. You have six months from the invitation and three attempts, and a failed part is re-sat on its own.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice: 12 in Part A, 108 in Part B (registered nurse)" },
+      { label: "Time", value: "165 minutes: 30 for Part A, 135 for Part B, no scheduled breaks" },
+      { label: "Pass mark", value: "Not published; each part is reported Pass or Fail" },
+      { label: "Calculator", value: "Provided in the software for calculation questions" },
+      { label: "Attempts", value: "3, within 6 months of the invitation; re-sit only a failed part" },
+      { label: "Where", value: "Pearson test centres in New Zealand and many other countries" },
+      { label: "Enrolled nurse exam", value: "90 questions in 135 minutes (9 in Part A, 81 in Part B)" },
+    ],
+    basedOn: "the Nursing Council's IQN theoretical examination handbook (version 1.5, October 2026) and the 2025 standards of competence for registered nurses",
+    source: { name: "Nursing Council of New Zealand", url: "https://nursingcouncil.org.nz/IQN/IQN/Competence-assessment-process.aspx" },
+  },
   nzsfe: {
     answer:
       "The State Final Examination is the examination the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) sets for graduates of approved nursing programmes before it registers them as registered or enrolled nurses. A New Zealand graduate applying for registration as a registered nurse supplies their State Final Examination results, support from the head of their school of nursing and two referees, and the Council registers successful applicants as soon as practicable after they pass. The Council's public website does not set out the number of questions, time or pass standard; candidates should ask their school of nursing or the Council for the current exam details.",

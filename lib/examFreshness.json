@@ -372,6 +372,14 @@
       "what": "Defra's Specification on the Prevention of Backflow (6 May 2026) takes effect on 6 May 2027, adding the Type AUK4 air gap.",
       "action": "Re-check the backflow device items and decide whether to add Type AUK4.",
       "source": "https://www.legislation.gov.uk/uksi/1999/1148/contents/made"
+    },
+    {
+      "exam": "nziqn",
+      "date": "2027-09-01",
+      "kind": "review",
+      "what": "The Nursing Council's IQN theoretical examination handbook (version 1.5, October 2026) is due for review in September 2027.",
+      "action": "Read the new handbook: check question counts, times, the Part A and Part B scope and any published pass rules, then update the config, examFacts and landing.",
+      "source": "https://www.nursingcouncil.org.nz/common/Uploaded%20files/Public/Nursing/IQN/Handbook-IQN-Theoretical-Exam-October2026.pdf"
     }
   ]
 }

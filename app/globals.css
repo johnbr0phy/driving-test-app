@@ -4004,6 +4004,20 @@
     --brand-gradient-to: 320 25% 95%;
   }
 
+  /* NZ IQN theoretical examination theme: deep teal (v2 exam; matches lib/v2/exams/nziqn.ts theme) */
+  [data-theme="nziqn"] {
+    --brand: 180 85% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 180 60% 95%;
+    --brand-hover: 180 85% 29%;
+    --brand-dark: 180 85% 26%;
+    --brand-darker: 180 80% 18%;
+    --brand-muted: 180 30% 68%;
+    --brand-border: 180 30% 78%;
+    --brand-border-light: 180 25% 88%;
+    --brand-gradient-to: 195 55% 95%;
+  }
+
   /* Singapore RTT theme */
   [data-theme="sgrtt"] {
     --brand: 105 60% 22%;
@@ -8369,6 +8383,16 @@
     --brand-muted: 305 15% 45%;
     --brand-dark: 305 30% 65%;
     --brand-darker: 305 28% 78%;
+  }
+
+  .dark [data-theme="nziqn"] {
+    --brand-light: 180 45% 13%;
+    --brand-gradient-to: 195 40% 11%;
+    --brand-border-light: 180 25% 24%;
+    --brand-border: 180 30% 34%;
+    --brand-muted: 180 30% 45%;
+    --brand-dark: 180 85% 65%;
+    --brand-darker: 180 80% 78%;
   }
 
   .dark [data-theme="sgrtt"] {

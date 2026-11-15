@@ -4201,6 +4201,20 @@
     --brand-gradient-to: 131 40% 96%;
   }
 
+  /* WASSCE Mathematics theme: deep green (v2 exam; matches lib/v2/exams/wasscemath.ts theme) */
+  [data-theme="wasscemath"] {
+    --brand: 150 75% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 150 60% 95%;
+    --brand-hover: 150 75% 18%;
+    --brand-dark: 150 75% 15%;
+    --brand-darker: 150 70% 8%;
+    --brand-muted: 150 25% 70%;
+    --brand-border: 150 35% 80%;
+    --brand-border-light: 150 35% 90%;
+    --brand-gradient-to: 130 50% 96%;
+  }
+
   /* JAMB Biology theme: muted leaf green (v2 exam; matches lib/v2/exams/jambbio.ts theme) */
   [data-theme="jambbio"] {
     --brand: 135 30% 38%;
@@ -8523,6 +8537,18 @@
     --brand-muted: 151 20% 45%;
     --brand-dark: 151 45% 65%;
     --brand-darker: 151 40% 78%;
+  }
+
+  .dark [data-theme="wasscemath"] {
+    --brand: 150 75% 30.1%;
+    --brand-hover: 150 75% 22.1%;
+    --brand-light: 150 45% 13%;
+    --brand-gradient-to: 130 40% 11%;
+    --brand-border-light: 150 35% 24%;
+    --brand-border: 150 35% 34%;
+    --brand-muted: 150 25% 45%;
+    --brand-dark: 150 75% 65%;
+    --brand-darker: 150 70% 78%;
   }
 
   .dark [data-theme="jambbio"] {

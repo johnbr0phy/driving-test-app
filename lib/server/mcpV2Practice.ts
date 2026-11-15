@@ -75,6 +75,7 @@ import '@/lib/v2/banks/ibpsclerk';
 import '@/lib/v2/banks/jnvst';
 import '@/lib/v2/banks/jambeng';
 import '@/lib/v2/banks/jambmath';
+import '@/lib/v2/banks/wasscemath';
 import '@/lib/v2/banks/jambbio';
 import '@/lib/v2/banks/jambchem';
 import '@/lib/v2/banks/jambphys';

@@ -146,6 +146,7 @@ export const TEACHES: Record<string, string> = {
   jnvst: "a Navodaya coaching class or a Class 5 classroom",
   jambeng: "a JAMB tutorial class",
   jambmath: "a JAMB tutorial class",
+  wasscemath: "an SS3 Mathematics class",
   jambbio: "a JAMB tutorial class",
   jambchem: "a JAMB tutorial class",
   jambphys: "a JAMB tutorial class",

@@ -63,6 +63,8 @@
   "ged": ["#6632ae","#f3ebff","#331c54","#e4daf1"],
   "hiset": ["#2e8807","#f1feec","#163d05","#e1f0db"],
   "afoqt": ["#677e44","#f5f8f2","#2e371f","#e7ebe0"],
+  "cbest": ["#866350","#f7f4f2","#402f26","#ebe4e0"],
+  "tabe": ["#964095","#f9f1f9","#3e1e3d","#eddeed"],
   "timestables": ["#ab2bab","#ffebff","#4f174f","#f1daf1"],
   "nswsel": ["#4736a1","#eeebff","#251d4e","#dfdbf0"],
   "ks2": ["#8532ae","#f8ebff","#411c54","#e9dbf0"],

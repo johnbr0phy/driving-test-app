@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     q: "Is STAAR changing?",
-    a: "Yes. Texas is replacing STAAR with the Student Success Tool from fall 2027, and TEA has published a draft English I blueprint for it that begins with the spring 2028 test. For the 2026-27 school year the English I test follows the STAAR blueprint this practice is built on.",
+    a: "Yes. TEA plans to bring in the Student Success Tool, the state test that follows STAAR, from fall 2027, and it has published a draft English I blueprint for it that begins with the spring 2028 test. For the 2026-27 school year the English I test follows the STAAR blueprint this practice is built on.",
   },
   {
     q: "Is the Tigertest STAAR English I practice free?",

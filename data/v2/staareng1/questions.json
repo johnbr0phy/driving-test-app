@@ -231,19 +231,19 @@
       "format": "multi",
       "select": 2,
       "stimulusId": "STAARE1-T1-R1",
-      "stem": "Which two details best show that Mateo has changed by the end of the story? Choose two.",
+      "stem": "Which two details best show what prompts Mateo to change and how he changes? Choose two.",
       "options": [
+        "He searches the cabinets for his grandfather's watch",
         "He takes the job because his mother arranged it",
         "He watches the second hand of the repaired watch sweep around",
-        "He searches the cabinets for his grandfather's watch",
-        "He writes the ticket for the nurse's watch",
-        "He tells his uncle about the watch he broke"
+        "He tells his uncle about the watch he broke",
+        "He writes the ticket for the nurse's watch"
       ],
       "correct": [
-        1,
-        4
+        2,
+        3
       ],
-      "explanation": "Admitting the broken watch after six years of silence is the clearest change, and watching the repaired watch tick is what moves him to speak. Searching the cabinets is what he did as a nine-year-old to hide the truth, not a change."
+      "explanation": "Watching the repaired watch tick is what prompts him to speak, and admitting the broken watch after six years of silence is the change itself. Searching the cabinets is what he did as a nine-year-old to hide the truth, not a change."
     },
     {
       "id": "STAARE1-T1-006",
@@ -620,7 +620,7 @@
       "stem": "In \"Learning the River,\" the simile \"like a fist, / then loosened, then let me go\" mainly shows that the speaker's fear",
       "options": [
         "was strong at first but quickly eased",
-        "grew stronger the longer she stayed",
+        "grew stronger the longer the speaker stayed",
         "came from the cold more than the current",
         "disappeared before the speaker stepped in"
       ],
@@ -639,17 +639,17 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "STAARE1-T1-R3",
-      "stem": "In paragraph 6 of \"The Dock,\" the narrator calls her father's choice \"the most embarrassing and the most comforting thing he ever did.\" This contrast mainly shows that she",
+      "stem": "In paragraph 6 of \"The Dock,\" the narrator calls the father's choice \"the most embarrassing and the most comforting thing he ever did.\" This contrast mainly shows that the narrator",
       "options": [
         "did not notice him until much later",
-        "is still angry that he followed her",
         "wished he had stayed on the beach",
+        "is still angry that the father followed",
         "has mixed feelings about his care"
       ],
       "correct": [
         3
       ],
-      "explanation": "Pairing embarrassing with comforting shows two feelings at once: she is a little embarrassed to be followed and also glad he was there. Nothing suggests lasting anger."
+      "explanation": "Pairing embarrassing with comforting shows two feelings at once: the narrator is a little embarrassed to be followed and also glad the father was there. Nothing suggests lasting anger."
     },
     {
       "id": "STAARE1-T1-025",
@@ -671,7 +671,7 @@
       "correct": [
         0
       ],
-      "explanation": "The father shares his own near-drowning when his daughter panics, showing he knows the fear she feels. Paragraph 4 confirms it: \"I still don't like deep water.\""
+      "explanation": "The father shares his own near-drowning when the narrator panics, showing he knows the fear the narrator feels. Paragraph 4 confirms it: \"I still don't like deep water.\""
     },
     {
       "id": "STAARE1-T1-026",
@@ -693,7 +693,7 @@
       "correct": [
         1
       ],
-      "explanation": "Tete-a-tete, borrowed from French, means a private talk between two people, and the paragraph says the narrator asked her father questions until the mosquitoes came."
+      "explanation": "Tete-a-tete, borrowed from French, means a private talk between two people, and the paragraph says the narrator asked the father questions until the mosquitoes came."
     },
     {
       "id": "STAARE1-T1-027",
@@ -709,13 +709,13 @@
       "options": [
         "The narrator's father wanted to talk only about swimming",
         "The narrator decided to stop the swimming lessons for the summer",
-        "Her father's fear made the narrator see him in a new way",
+        "The father's fear made the narrator see him in a new way",
         "The mosquitoes kept the narrator from sleeping that night"
       ],
       "correct": [
         2
       ],
-      "explanation": "The narrator says it had never occurred to her that he could be afraid, and she then asks questions she had never thought to ask, so she sees him in a new way."
+      "explanation": "The narrator says it had never occurred to them that the father could be afraid, then asks questions never thought of before, so the narrator sees him in a new way."
     },
     {
       "id": "STAARE1-T1-028",
@@ -1304,7 +1304,7 @@
       "stem": "Why does the playwright include the stage direction that Mr. Park \"does not see the girls at first\"?",
       "options": [
         "So Noelle can decide to quit without anyone seeing her",
-        "So the audience hears a hint of trouble before Noelle does",
+        "So the audience overhears a hint of trouble before Mr. Park speaks to Noelle",
         "So the audience knows that Mr. Park is angry with Noelle",
         "So Grace has time to leave before Mr. Park notices her"
       ],
@@ -1656,11 +1656,11 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "STAARE1-T2-R2",
-      "stem": "In paragraph 2, the word dense most likely means",
+      "stem": "In paragraph 1, the word dense most likely means",
       "options": [
         "tall and widely spaced",
-        "dry, brittle and easily broken",
         "green and full of flowers",
+        "dry, brittle and easily broken",
         "thick and crowded together"
       ],
       "correct": [
@@ -1991,7 +1991,7 @@
       "stimulusId": "STAARE1-T2-W1",
       "stem": "Which sentence could best be added after sentence 11 to strengthen the writer's response to the counterargument?",
       "options": [
-        "Many schools already have kitchens from cooking electives.",
+        "Many students already take an elective only to fill an empty period in their schedule.",
         "Cooking shows have become very popular on television in recent years.",
         "Some students prefer art or music to cooking.",
         "The cafeteria serves lunch to hundreds of students every single day."
@@ -1999,7 +1999,7 @@
       "correct": [
         0
       ],
-      "explanation": "The objection is that there is no room for a new required class. Pointing out that schools already have cooking classrooms shows the plan is practical. The other sentences do not answer the objection."
+      "explanation": "The objection is that there is no room for a new required class. Pointing out that many students take an elective only to fill an empty period shows the schedule does have room for the class. The other sentences do not answer the objection."
     },
     {
       "id": "STAARE1-T2-034",
@@ -2315,7 +2315,7 @@
           "Our club meets after school we need a quiet place to play.",
           "Our club meets after school, and, we need a quiet place to play.",
           "Our club meets after school, we need a quiet place to play.",
-          "Since our club meets after school, we need a quiet place."
+          "Since our club meets after school, we need a quiet place to play."
         ]
       ],
       "correct": [
@@ -3045,17 +3045,17 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "STAARE1-D-R4",
-      "stem": "Which sentence from paragraph 5 best states the central idea of the article?",
+      "stem": "Which statement best expresses the central idea of the article?",
       "options": [
-        "Protecting it means paying attention to what happens on the surface.",
-        "A single rain shower in the hills can fill the whole aquifer in just one day.",
         "A sprinkler in a front yard uses water from the aquifer.",
-        "The Edwards Aquifer cannot be seen, but it shapes life above it every day."
+        "The recharge zone lies north and west of San Antonio.",
+        "A single rain shower in the hills can fill the whole aquifer in just one day.",
+        "The Edwards Aquifer cannot be seen from the highway, but it shapes life above it every day."
       ],
       "correct": [
         3
       ],
-      "explanation": "The article explains how the hidden aquifer supplies cities, farms and springs, and this sentence sums up that idea. The article never says one shower fills it."
+      "explanation": "The article explains how the hidden aquifer supplies cities, farms and springs, and this sentence from paragraph 5 sums up that idea. The recharge zone is one detail, and the article never says one shower fills the aquifer."
     },
     {
       "id": "STAARE1-D-030",
@@ -3177,12 +3177,12 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "STAARE1-D-R4",
-      "stem": "Based on paragraph 3, why might the blind salamander be at risk during a drought?",
+      "stem": "Based on paragraphs 3 and 4, why might the blind salamander be at risk during a drought?",
       "options": [
-        "It lives only in springs that can slow to a trickle",
-        "It must travel all the way to the recharge zone to lay its eggs",
+        "It lives only in spring-fed water that can slow to a trickle",
         "It is often pumped out of the aquifer through wells",
-        "It cannot find food when farmers stop watering fields"
+        "It cannot find food when farmers stop watering fields",
+        "It must travel all the way to the recharge zone to lay its eggs"
       ],
       "correct": [
         0
@@ -3473,7 +3473,7 @@
       "correct": [
         0
       ],
-      "explanation": "Carte blanche, from French, means full freedom to decide, and the narrator says it meant no one would tell him what to do."
+      "explanation": "Carte blanche, from French, means full freedom to decide, and the narrator says it meant no one would tell the narrator what to do."
     },
     {
       "id": "STAARE1-D-049",
@@ -3551,12 +3551,12 @@
       "difficulty": 3,
       "format": "single",
       "stimulusId": "STAARE1-D-R6",
-      "stem": "In paragraph 3, the narrator says his uncle moved \"almost lazily.\" Why does the narrator include the word almost?",
+      "stem": "In paragraph 3, the narrator says the uncle moved \"almost lazily.\" Why does the narrator include the word almost?",
       "options": [
         "To show the uncle only seemed lazy",
         "To show the uncle was too tired to work quickly that day",
         "To show the uncle was waiting for someone to help",
-        "To show the narrator thought his uncle was a poor cook"
+        "To show the narrator thought the uncle was a poor cook"
       ],
       "correct": [
         0
@@ -3605,7 +3605,7 @@
       "correct": [
         1
       ],
-      "explanation": "The narrator adds that neither of them ever admitted it, so he believes it without proof."
+      "explanation": "The narrator adds that neither of them ever admitted it, so the narrator believes it without proof."
     },
     {
       "id": "STAARE1-D-055",
@@ -3671,7 +3671,7 @@
       "correct": [
         1
       ],
-      "explanation": "Breaking a bowl, burning tortillas and wandering between stations show the narrator was lost at first, which makes his progress by August stand out."
+      "explanation": "Breaking a bowl, burning tortillas and wandering between stations show the narrator was lost at first, which makes the narrator's progress by August stand out."
     },
     {
       "id": "STAARE1-D-058",
@@ -3687,13 +3687,13 @@
       "options": [
         "It reveals that the narrator lost the recipe card",
         "It suggests the narrator never cooked again",
-        "It shows the summer's lessons have stayed with him",
+        "It shows the summer's lessons have stayed with the narrator",
         "It explains why the uncle closed the catering business that fall"
       ],
       "correct": [
         2
       ],
-      "explanation": "Keeping the stained card in his wallet years later shows how much the summer and his uncle's trust still mean to him."
+      "explanation": "Keeping the stained card in a wallet years later shows how much the summer and the uncle's trust still mean to the narrator."
     },
     {
       "id": "STAARE1-D-059",
@@ -4664,7 +4664,7 @@
       "stem": "Choose the correct punctuation for sentence 3.\n\n(3) Bluebonnets are a kind of [[1]] a plant in the pea family.",
       "blanks": [
         [
-          "lupine:",
+          "lupine.",
           "lupine,",
           "lupine",
           "lupine;"
@@ -4673,7 +4673,7 @@
       "correct": [
         1
       ],
-      "explanation": "\"A plant in the pea family\" renames lupine, so a comma sets it off. A semicolon must be followed by a complete sentence."
+      "explanation": "\"A plant in the pea family\" renames lupine, so a comma sets it off. A semicolon must be followed by a complete sentence, and a period leaves the phrase as a fragment."
     },
     {
       "id": "STAARE1-D-101",

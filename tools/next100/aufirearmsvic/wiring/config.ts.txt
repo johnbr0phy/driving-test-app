@@ -1,0 +1,70 @@
+const aufirearmsvic: ExamConfig = {
+  id: "aufirearmsvic",
+  stateCode: "AUFAVIC",
+  idBase: 30100,
+  slug: "/vic-firearms-licence",
+  landingPath: "/victoria-firearms-safety-test-practice-test",
+  name: "Victoria Firearms Safety Practice Test",
+  shortName: "Vic Firearms Safety",
+  examLabel: "firearm safety course test",
+  fullName: "Victorian Firearm Safety Course Test (Longarm) for a Firearm Licence",
+  questionIdPrefix: "AUFAVIC-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Victorian longarm firearm safety course and its multiple-choice safety and law knowledge test
+  // (Victoria Police Licensing and Regulation Division sets the minimum course requirements and
+  // approves independent instructors), required before a first longarm or junior licence by the
+  // Firearms Act 1996 (Vic) s 17(1)(c)(iii) and s 20(1)(b)(iii). No weights, count or pass mark
+  // are published, so the split is Tigertest's: Victorian law 31 (categories 6, licences 7,
+  // permits, buying and registration 6, carriage, conduct and offences 7, storage and transport 5)
+  // and safe use 19 (the ten rules of the Victorian Firearm Safety Code 7, the field 6, firearm
+  // types, actions and ammunition 6). Every legal rule is from the Firearms Act 1996 as in force
+  // from 19 August 2026 (authorised version 107: the 2021 steel safe standard in Schedule 4, lever
+  // action shotguns in B or D since 2019); the uncommenced Parts 6 and 7 of the Firearms Amendment
+  // Act 2026 (citizenship, background checks) and Regulation-only rules are left out. Handling
+  // from the Firearm Safety Code booklet (2020), the longarm course slides and the instructors
+  // manual. 80% is a readiness target. All items original.
+  blueprint: {
+    fvicCategories: 6,
+    fvicLicence: 7,
+    fvicPermits: 6,
+    fvicCarriage: 7,
+    fvicStorage: 5,
+    fvicRules: 7,
+    fvicField: 6,
+    fvicParts: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30101, name: "Licence Categories & Applying", categories: ["fvicCategories", "fvicLicence"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 30102, name: "Permits, Carriage & the Law", categories: ["fvicPermits", "fvicCarriage"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 30103, name: "Storage & the Ten Safety Rules", categories: ["fvicStorage", "fvicRules"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 30104, name: "The Field & Firearm Basics", categories: ["fvicField", "fvicParts"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fvicCategories: "Licence & Firearm Categories",
+    fvicLicence: "Licences, Genuine Reasons & Eligibility",
+    fvicPermits: "Permits, Buying & Registration",
+    fvicCarriage: "Carriage, Conduct & Offences",
+    fvicStorage: "Safe Storage & Transport",
+    fvicRules: "The Ten Safety Rules",
+    fvicField: "In the Field",
+    fvicParts: "Firearm Types, Actions & Ammunition",
+  },
+  copy: {
+    guestPrompt: "to save your Victorian firearm safety progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering Victorian licence categories and applying, permits, carriage and the law, storage and the ten safety rules, and the field and firearm basics. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Licence Categories & Applying.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your firearm safety course.",
+    ],
+    sourceLine: "Based on the Firearms Act 1996 (Vic), the Victoria Police Firearm Safety Code booklet and the longarm safety course material. Original questions. Not affiliated with Victoria Police or its Licensing and Regulation Division.",
+    analyticsKey: "aufirearmsvic",
+  },
+};

@@ -1,0 +1,65 @@
+const cmaa: ExamConfig = {
+  id: "cmaa",
+  stateCode: "CMAA",
+  idBase: 30500,
+  slug: "/cmaa",
+  landingPath: "/cmaa-practice-test",
+  name: "CMAA Practice Test",
+  shortName: "CMAA (NHA)",
+  examLabel: "CMAA exam",
+  fullName: "Certified Medical Administrative Assistant (CMAA) Exam",
+  questionIdPrefix: "CMAA-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA Certified Medical Administrative Assistant (CMAA) Test Plan, based on the 2021 job
+  // analysis (Rev01222022), still the plan NHA links for the current exam (checked November
+  // 2026): 110 scored + 25 pretest items in 2 hours 15 minutes. Domains of 110: 1 Foundational
+  // Knowledge 10, 2 Communication and Professionalism 21, 3 Medical Law, Ethics, and Compliance 17,
+  // 4 Scheduling 16, 5 Patient Encounter 21, 6 Billing and Revenue Cycle 11, 7 Medical Practice
+  // Administrative Procedures and Logistics 14. Scaled to 50: 5/9/8/7/10/5/6 (Tigertest's
+  // rounding). NHA reports a scaled score (200 to 500, 390 to pass, not a percent); 70% here is
+  // a readiness marker. All items original.
+  blueprint: {
+    cmaaFoundations: 5,
+    cmaaComm: 9,
+    cmaaLaw: 8,
+    cmaaScheduling: 7,
+    cmaaEncounter: 10,
+    cmaaBilling: 5,
+    cmaaOffice: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30501, name: "Foundations & Communication", categories: ["cmaaFoundations", "cmaaComm"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 30502, name: "Law, Ethics & Scheduling", categories: ["cmaaLaw", "cmaaScheduling"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 30503, name: "Patient Encounter", categories: ["cmaaEncounter"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 30504, name: "Billing & Office Procedures", categories: ["cmaaBilling", "cmaaOffice"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cmaaFoundations: "Foundational Knowledge",
+    cmaaComm: "Communication & Professionalism",
+    cmaaLaw: "Medical Law, Ethics & Compliance",
+    cmaaScheduling: "Scheduling",
+    cmaaEncounter: "Patient Encounter",
+    cmaaBilling: "Billing & Revenue Cycle",
+    cmaaOffice: "Office Procedures & Logistics",
+  },
+  copy: {
+    guestPrompt: "to save your CMAA progress and track every question you miss",
+    trainingHeading: "Train by NHA test plan domain",
+    trainingSub: "Four sets covering all seven domains of the NHA CMAA test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Foundations & Communication.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CMAA.",
+    ],
+    sourceLine: "Based on the NHA CMAA test plan (2021 job analysis). Original questions; 50 per test, weighted like the real exam. Not affiliated with the National Healthcareer Association.",
+    analyticsKey: "cmaa",
+  },
+};
+// Add "cmaa" to the ExamId union and append cmaa to EXAMS right after rma.
+// IDs: tests 30501-30504, sets 30501-30504 (block 30500 assigned for this run).

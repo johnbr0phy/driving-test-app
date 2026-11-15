@@ -4,7 +4,7 @@ Q = [
  "Refractive index", ["Ionic strength", "Freezing point", "Light absorbance"],
  "A refractometer reads how much light bends in the sample, which rises with dissolved solids. The reagent strip pad responds to ionic strength instead."),
 ("High levels of ascorbic acid in urine can cause a false-negative result on which reagent pads?",
- "Glucose and blood", ["Protein and nitrite pH", "Specific gravity and pH", "Urobilinogen and ketone"],
+ "Glucose and blood", ["Protein and pH", "Specific gravity and pH", "Urobilinogen and ketone"],
  "Ascorbic acid is a reducing agent that interferes with the peroxide reactions on the glucose and blood pads, giving falsely low or negative readings."),
 ("Urine bilirubin is negative and urobilinogen is markedly increased. This pattern fits:",
  "Hemolytic jaundice", ["Bile duct obstruction", "Viral hepatitis late in course", "A normal healthy adult"],

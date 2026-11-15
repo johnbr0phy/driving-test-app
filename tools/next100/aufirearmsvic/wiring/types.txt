@@ -1,0 +1,9 @@
+AUFAVIC
+fvicCategories
+fvicLicence
+fvicPermits
+fvicCarriage
+fvicStorage
+fvicRules
+fvicField
+fvicParts

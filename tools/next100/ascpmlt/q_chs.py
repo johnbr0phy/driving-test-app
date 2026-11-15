@@ -1,6 +1,6 @@
 CAT = "mltChemSpec"; SEG = "CHS"
 Q = [
-("Arterial blood gas: pH 7.25, pCO2 30 mm Hg, HCO3 13 mmol/L. This is:",
+("Arterial blood gas: pH 7.25, pCO2 28 mm Hg, HCO3 13 mmol/L. This is:",
  "Metabolic acidosis, partly compensated", ["Respiratory acidosis, uncompensated", "Metabolic alkalosis, compensated", "Respiratory alkalosis, partly compensated"],
  "Low pH with low bicarbonate is metabolic acidosis. The low pCO2 shows the lungs blowing off CO2, but the pH is not yet normal, so compensation is partial."),
 ("Arterial blood gas: pH 7.31, pCO2 60 mm Hg, HCO3 30 mmol/L. This is:",

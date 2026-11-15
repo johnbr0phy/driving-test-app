@@ -48,7 +48,7 @@ Q = [
 ("Acute promyelocytic leukemia with t(15;17) carries a high risk of:",
  "DIC", ["Hyperviscosity", "Hemochromatosis", "Polycythemia"],
  "Granules in the abnormal promyelocytes release procoagulants, so APL often presents with DIC. The PML-RARA fusion is the marker."),
-("Bilobed neutrophils with normal function are found in a healthy woman and both her parents. This suggests:",
+("Bilobed neutrophils with normal function are found in a healthy woman and her mother. This suggests:",
  "Pelger-Huet anomaly", ["May-Hegglin anomaly", "Chediak-Higashi syndrome", "Alder-Reilly anomaly"],
  "Pelger-Huet anomaly is an inherited failure of nuclear segmentation with normal function. Acquired pseudo-Pelger cells suggest myelodysplasia."),
 ("Giant platelets, thrombocytopenia and blue Dohle-like inclusions in neutrophils suggest:",

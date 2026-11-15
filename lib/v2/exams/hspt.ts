@@ -32,7 +32,7 @@ export const HSPT: ExamV2Config = {
   fullName: "HSPT (High School Placement Test)",
   tagline: "Verbal, quantitative, reading, math and language practice for the grade 8 High School Placement Test.",
   icon: "graduation",
-  theme: { brand: "84 25% 38%", brandDark: "84 25% 29%", brandLight: "84 30% 95%" },
+  theme: { brand: "48 20% 30%", brandDark: "48 20% 23%", brandLight: "48 30% 95%" },
   breakSeconds: 0,
   sections: [
     {

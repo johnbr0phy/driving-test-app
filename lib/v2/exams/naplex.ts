@@ -30,7 +30,7 @@ export const NAPLEX: ExamV2Config = {
   fullName: "North American Pharmacist Licensure Examination (NAPLEX)",
   tagline: "100 pharmacist licensure questions in order, no going back, weighted like NABP's 2025 content outline.",
   icon: "pill",
-  theme: { brand: "132 55% 22%", brandDark: "132 55% 15%", brandLight: "132 45% 95%" },
+  theme: { brand: "184 55% 22%", brandDark: "184 55% 15%", brandLight: "184 45% 95%" },
   breakSeconds: 0,
   sections: [
     {

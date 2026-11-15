@@ -29,7 +29,7 @@ export const SSAT: ExamV2Config = {
   fullName: "SSAT Middle Level (Secondary School Admission Test)",
   tagline: "Quantitative, Reading and Verbal practice for the Middle Level SSAT, for grades 5 to 7.",
   icon: "graduation",
-  theme: { brand: "91 95% 26%", brandDark: "91 95% 18%", brandLight: "91 70% 95%" },
+  theme: { brand: "331 95% 26%", brandDark: "331 95% 19%", brandLight: "331 70% 95%" },
   breakSeconds: 600,
   sections: [
     {

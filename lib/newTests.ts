@@ -1,15 +1,18 @@
-// ─── New tests: is each launch bringing people in? ───────────────────────────
+// ─── New tests: are the launches bringing people in? ─────────────────────────
 // Pure rules for the /admin New tests tab (lib/server/newTestsAdmin.ts reads
 // the data). A test's "pages" are every URL that belongs to it: its landing
 // (and translated landings, state landings under it), its app routes and its
 // /questions topic pages. A first visit or signup whose first landing was one
 // of those pages is credited to that test, so a test is judged on the new
-// people it brought to Tigertest, not on people already here who tried it.
-// Pinned by tests/new-tests.test.cjs.
+// people it brought to Tigertest. Pinned by tests/new-tests.test.cjs.
 
 export const DAY_MS = 86_400_000;
 /** Tests launched this many days ago or less are listed. */
 export const NEW_TEST_WINDOW_DAYS = 90;
+/** A test needs this many days live before it is judged on traffic. */
+export const JUDGE_AFTER_DAYS = 7;
+/** Visitors a day at or above this count as "getting traffic". */
+export const STEADY_PER_DAY = 1;
 
 export type TestPages = { exact: string[]; prefixes: string[] };
 
@@ -45,85 +48,46 @@ export function dayMinus(today: string, n: number): string {
   return new Date(Date.parse(today) - n * DAY_MS).toISOString().slice(0, 10);
 }
 
-/** Monday of the UTC week a day falls in. */
-export function weekOf(day: string): string {
-  const d = new Date(`${day}T00:00:00Z`);
-  const back = (d.getUTCDay() + 6) % 7;
-  return new Date(d.getTime() - back * DAY_MS).toISOString().slice(0, 10);
-}
-
 export interface NewTestRow {
   id: string;
   name: string;
   href: string;
   group: string;
-  region: string;
   launched: string;
   daysLive: number;
   /** First visits (new browsers) that landed on this test's pages, since launch. */
   visitors: number;
   visitors7d: number;
-  /** Of those, how many answered a first question (any test). */
-  firstAnswers: number;
-  /** Questions answered on this test since launch, by anyone. */
-  answers: number;
-  answers7d: number;
-  /** Distinct people who answered at least one of its questions. */
-  learners: number;
-  learners7d: number;
+  /** visitors / daysLive: compares a 3-day-old test with a 60-day-old one. */
+  perDay: number;
   /** Accounts whose first visit landed on this test's pages. */
   signups: number;
-  signups7d: number;
-  purchases: number;
   revenueUsdCents: number;
-  /** visitors / daysLive: compares a 3-day-old test with a 60-day-old one. */
-  visitorsPerDay: number;
+  /** Where most of its visitors came from (since source tracking began). */
+  topSource: string | null;
 }
 
-export interface CohortRow {
-  /** Monday of the launch week. */
-  week: string;
-  tests: number;
-  visitors: number;
-  signups: number;
-  purchases: number;
-  revenueUsdCents: number;
-  /** Visitors per test per day live, averaged over the week's tests. */
-  visitorsPerTestDay: number;
+export type Traffic = "steady" | "trickle" | "none" | "tooNew";
+
+export function trafficOf(r: Pick<NewTestRow, "daysLive" | "visitors" | "perDay">): Traffic {
+  if (r.daysLive < JUDGE_AFTER_DAYS) return "tooNew";
+  if (r.visitors === 0) return "none";
+  return r.perDay >= STEADY_PER_DAY ? "steady" : "trickle";
+}
+
+export function trafficCounts(rows: NewTestRow[]): Record<Traffic, number> {
+  const out: Record<Traffic, number> = { steady: 0, trickle: 0, none: 0, tooNew: 0 };
+  for (const r of rows) out[trafficOf(r)]++;
+  return out;
 }
 
 export interface GroupRow {
   group: string;
   tests: number;
-  visitors7d: number;
+  /** Visitors per test per day live, averaged over the group's tests. */
+  perTestDay: number;
   signups: number;
-  purchases: number;
-  revenueUsdCents: number;
-  visitorsPerTestDay: number;
-  /** The group's best test by visitors per day. */
-  best: { id: string; name: string } | null;
-}
-
-const perTestDay = (rows: NewTestRow[]) =>
-  rows.length ? rows.reduce((s, r) => s + r.visitorsPerDay, 0) / rows.length : 0;
-
-export function cohorts(rows: NewTestRow[]): CohortRow[] {
-  const byWeek = new Map<string, NewTestRow[]>();
-  for (const r of rows) {
-    const w = weekOf(r.launched);
-    byWeek.set(w, [...(byWeek.get(w) ?? []), r]);
-  }
-  return [...byWeek.entries()]
-    .map(([week, rs]) => ({
-      week,
-      tests: rs.length,
-      visitors: rs.reduce((s, r) => s + r.visitors, 0),
-      signups: rs.reduce((s, r) => s + r.signups, 0),
-      purchases: rs.reduce((s, r) => s + r.purchases, 0),
-      revenueUsdCents: rs.reduce((s, r) => s + r.revenueUsdCents, 0),
-      visitorsPerTestDay: perTestDay(rs),
-    }))
-    .sort((a, b) => b.week.localeCompare(a.week));
+  best: string | null;
 }
 
 export function groups(rows: NewTestRow[]): GroupRow[] {
@@ -131,17 +95,23 @@ export function groups(rows: NewTestRow[]): GroupRow[] {
   for (const r of rows) byGroup.set(r.group, [...(byGroup.get(r.group) ?? []), r]);
   return [...byGroup.entries()]
     .map(([group, rs]) => {
-      const best = [...rs].sort((a, b) => b.visitorsPerDay - a.visitorsPerDay)[0];
+      const best = [...rs].sort((a, b) => b.perDay - a.perDay)[0];
       return {
         group,
         tests: rs.length,
-        visitors7d: rs.reduce((s, r) => s + r.visitors7d, 0),
+        perTestDay: rs.reduce((s, r) => s + r.perDay, 0) / rs.length,
         signups: rs.reduce((s, r) => s + r.signups, 0),
-        purchases: rs.reduce((s, r) => s + r.purchases, 0),
-        revenueUsdCents: rs.reduce((s, r) => s + r.revenueUsdCents, 0),
-        visitorsPerTestDay: perTestDay(rs),
-        best: best && best.visitors > 0 ? { id: best.id, name: best.name } : null,
+        best: best && best.visitors > 0 ? best.name : null,
       };
     })
-    .sort((a, b) => b.visitorsPerTestDay - a.visitorsPerTestDay || b.tests - a.tests);
+    .sort((a, b) => b.perTestDay - a.perTestDay || b.tests - a.tests);
+}
+
+/** A count map into rows, biggest first, each with its share of the total. */
+export function shares(counts: Record<string, number>): { key: string; n: number; share: number }[] {
+  const total = Object.values(counts).reduce((s, n) => s + n, 0);
+  return Object.entries(counts)
+    .filter(([, n]) => n > 0)
+    .map(([key, n]) => ({ key, n, share: total ? n / total : 0 }))
+    .sort((a, b) => b.n - a.n);
 }

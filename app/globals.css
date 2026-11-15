@@ -2144,6 +2144,22 @@
     --brand-gradient-to: 240 60% 96%;
   }
 
+  /* DAT theme (v2 exam; matches lib/v2/exams/dat.ts theme): deep bronze gold.
+     The assigned 42 85% 42% failed white-text contrast (2.8:1), and every lighter gold near hue 42
+     clashes with foodmgr, forklift, jelec or cscs, so it keeps hue 42 at 20% lightness (8.5:1). */
+  [data-theme="dat"] {
+    --brand: 42 100% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 42 70% 95%;
+    --brand-hover: 42 100% 16%;
+    --brand-dark: 42 100% 14%;
+    --brand-darker: 42 90% 9%;
+    --brand-muted: 42 30% 68%;
+    --brand-border: 42 35% 78%;
+    --brand-border-light: 42 30% 88%;
+    --brand-gradient-to: 36 70% 95%;
+  }
+
   /* LSAT theme (v2 exam; matches lib/v2/exams/lsat.ts theme): deep oxblood */
   [data-theme="lsat"] {
     --brand: 342 30% 24%;
@@ -6773,6 +6789,18 @@
     --brand-muted: 256 40% 45%;
     --brand-dark: 256 75% 67%;
     --brand-darker: 256 60% 78%;
+  }
+
+  .dark [data-theme="dat"] {
+    --brand: 42 100% 30.4%;
+    --brand-hover: 42 100% 22.4%;
+    --brand-light: 42 45% 13%;
+    --brand-gradient-to: 36 40% 11%;
+    --brand-border-light: 42 30% 24%;
+    --brand-border: 42 35% 34%;
+    --brand-muted: 42 30% 45%;
+    --brand-dark: 42 100% 65%;
+    --brand-darker: 42 90% 78%;
   }
 
   .dark [data-theme="lsat"] {

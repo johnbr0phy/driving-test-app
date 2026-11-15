@@ -160,6 +160,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   praxis: { title: "Praxis Core for future teachers", description: "Practice Reading, Writing and Math for the Praxis Core Academic Skills for Educators tests, timed at the real pace." },
   gre: { title: "GRE General Test Practice", description: "Practice adaptive Verbal and Quant sections in the shorter GRE format, with a 130 to 170 score estimate." },
   sehp: { title: "Högskoleprovet övningsprov", description: "Öva ORD, LÄS, MEK, ELF, XYZ, KVA, NOG och DTK med två övningsprov och ett uppskattat resultat från 0,0 till 2,0." },
+  dat: { title: "DAT Practice Tests", description: "DAT biology, general and organic chemistry, reading comprehension and quantitative reasoning at the real pace, with drills by topic." },
   mcat: { title: "MCAT Practice Tests", description: "All four MCAT sections with passage sets, a 472 to 528 score estimate and drills by foundational concept and CARS skill." },
   gmat: { title: "GMAT Focus Edition Practice Tests", description: "Timed Quant, Verbal and Data Insights sections with a 205 to 805 score estimate and drills by question type." },
   lsat: { title: "LSAT Practice Tests", description: "Timed Logical Reasoning and Reading Comprehension sections with a 120 to 180 score estimate and drills by question family." },

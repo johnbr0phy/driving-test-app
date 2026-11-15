@@ -124,6 +124,7 @@ export const TEACHES: Record<string, string> = {
   gmat: "GMAT prep",
   ieltsread: "an IELTS preparation course",
   mcat: "MCAT prep",
+  dat: "DAT prep",
   lsat: "LSAT prep",
   netplus: "a networking or Network+ course",
   cysa: "a cybersecurity analyst or CySA+ course",

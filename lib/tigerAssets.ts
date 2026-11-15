@@ -46,6 +46,8 @@ export const TIGER_EXAM_IDS = [
   "rdexam", "phr",
   // Italian language and citizenship study: complete eight-expression set.
   "itlanguage",
+  // Neutral workplace cognitive-aptitude mascot.
+  "wonderlic",
   // Reviewed EU citizenship and practitioner mascots: five complete sets for six exams.
   "semedb", "dkindfoed", "grcitizen", "rorezid", "deheilpr",
 ] as const;
@@ -64,7 +66,6 @@ const BORROWED_SETS: Record<string, string> = {
   hiset: "ged",
   // Texas Biology EOC wears the AP Biology tiger.
   staarbio: "apbio",
-  wonderlic: "asvab",
   toeflread: "ieltsread",
   ukwater: "caplumb",
   ukg3: "caplumb",
@@ -183,3 +184,4 @@ export function getTigerAsset(examId = "dmv", expression?: TigerExpression): str
   }
   return getSiteTigerAsset(expression);
 }
+

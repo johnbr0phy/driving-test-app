@@ -343,6 +343,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   iepsa: { title: "PSA Security Guard Practice Test", description: "Practise PSA licensing, arrest and force, access control, patrols, reports and emergencies." },
   nzmoto: { title: "NZ Motorcycle Learner Licence Test", description: "Practise learner conditions, gear, giving way, road position, braking and road hazards." },
   nzheavy: { title: "NZ Class 2 Licence Theory Test", description: "Practise work time and logbooks, loads, air brakes and heavy vehicle road rules." },
+  nzensf: { title: "NZ Enrolled Nurse State Final", description: "Practise medicine calculations, Te Tiriti, the EN scope, assessment, medicines and acute care." },
   nzsfe: { title: "NZ Nursing State Final Exam", description: "Practise Te Tiriti, law and ethics, assessment, medicines, acute care and mental health." },
   sgrtt: { title: "Singapore Riding Theory Test", description: "Review motorcycle controls, braking, junctions, defensive riding and pillions for your RTT." },
   sgm5: { title: "CMFAS RES5 Practice Test", description: "Practise the FAA, FAA-N16, the balanced scorecard, AML, products, ethics and advisory skills." },

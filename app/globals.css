@@ -4970,6 +4970,20 @@
     --brand-gradient-to: 30 90% 95%;
   }
 
+  /* NZ Enrolled Nurse State Final theme: deep raspberry (v2 exam; matches lib/v2/exams/nzensf.ts theme) */
+  [data-theme="nzensf"] {
+    --brand: 331 70% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 331 60% 96%;
+    --brand-hover: 331 70% 33%;
+    --brand-dark: 331 70% 28%;
+    --brand-darker: 331 65% 18%;
+    --brand-muted: 331 30% 70%;
+    --brand-border: 331 35% 80%;
+    --brand-border-light: 331 30% 90%;
+    --brand-gradient-to: 345 60% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -9191,6 +9205,18 @@
     --brand-muted: 140 25% 45%;
     --brand-dark: 140 70% 65%;
     --brand-darker: 140 65% 78%;
+  }
+
+  .dark [data-theme="nzensf"] {
+    --brand: 331 70% 50%;
+    --brand-hover: 331 70% 42%;
+    --brand-light: 331 45% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 331 30% 24%;
+    --brand-border: 331 35% 34%;
+    --brand-muted: 331 30% 45%;
+    --brand-dark: 331 70% 65%;
+    --brand-darker: 331 65% 78%;
   }
 
 }

@@ -54,6 +54,10 @@ const CASES = [
   ["wassce maths", "NG", "wasscemath"],
   ["ssce maths", "NG", "wasscemath"],
   ["may june maths", "NG", "wasscemath"],
+  ["enrolled nurse state final", "NZ", "nzensf"],
+  ["en state final", "NZ", "nzensf"],
+  ["enrolled nurse exam nz", "NZ", "nzensf"],
+  ["diploma in enrolled nursing", "NZ", "nzensf"],
 ];
 
 for (const [q, region, id] of CASES) {

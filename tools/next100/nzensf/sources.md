@@ -19,7 +19,7 @@ was opened only to confirm the format (part names, four options); its questions 
   - 7.2.2 "Candidates for the enrolled nurse examination are provided 90 minutes."
   - 7.4.1 results are issued pass or fail; 7.5.2 sample questions are on the Council's website.
 - State Final Examination Frequently Asked Questions (PDF, dated October 2024),
-  https://nursingcouncil.org.nz/common/Uploaded%20files/State%20Final%20Examination%20Frequently%20Asked%20Questions%20(FAQ).pdf
+  https://nursingcouncil.org.nz/common/Uploaded%20files/State%20Final%20Examination%20Frequently%20Asked%20Questions%20%28FAQ%29.pdf
   (fetched 2026-11-15): "There is no required pass rate per category of the examination. The
   examination is graded on an overall percentage." "Candidates have three attempts to pass the
   State Final Examination." Up to 25 minutes extra time in exceptional circumstances.
@@ -81,11 +81,21 @@ was opened only to confirm the format (part names, four options); its questions 
   (fetched 2026-11-15): links the 2025 scope and standards.
 
 ### Law
+- Annual practising certificates, https://www.nursingcouncil.org.nz/Public/Nursing/Annual_practising_certificates/NCNZ/nursing-section/Annual_practising_certificates.aspx
+  (fetched 2026-11-15): "you must hold a valid practising certificate, which you renew each year";
+  practising without a current certificate "is not permitted under the Act and may lead to
+  disciplinary action"; renewal needs the Council's continuing competence requirements.
+- Concerns about a nurse, https://www.nursingcouncil.org.nz/Public/concerns/NCNZ/Concerns.aspx
+  (fetched 2026-11-15): health practitioners, employers and people in charge of health services
+  must notify the Council, in writing, if they believe a nurse is unable to perform the functions
+  of a nurse because of a health condition.
 - Health and Disability Commissioner, Code of Health and Disability Services Consumers' Rights,
   https://www.hdc.org.nz/your-rights/about-the-code/code-of-health-and-disability-services-consumers-rights/
   (fetched 2026-11-15): the ten rights; Right 5(1) competent interpreter where necessary and
   reasonably practicable; 7(2) presumed competent; 7(7) refuse and withdraw consent; Right 8
-  support persons; 10(6)(a) acknowledge a complaint in writing within 5 working days.
+  support persons; Right 10 complain in any form; 10(6)(a) acknowledge a complaint in writing within
+  5 working days. The Health and Disability Services (Safety) Act 2001 and the Pae Ora (Healthy
+  Futures) Act 2022 appear only as wrong options in one legislation item.
 
 ## Clinical content
 Clinical items (calculations, assessment, deterioration, acute and long-term care, mental

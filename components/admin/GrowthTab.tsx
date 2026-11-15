@@ -8,7 +8,8 @@ import {
   AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, LabelList, Cell,
 } from "recharts";
-import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { CARD, ROW, STICKY_COL, ShowAllButton, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch, useTopN } from "@/components/admin/AdminTabParts";
+import type { LandingRow } from "@/lib/funnelLanding";
 import { WeeklyActiveLearners } from "@/components/admin/WeeklyActiveLearners";
 import { PeriodBarsCard, signupBars, type SignupUnit } from "@/components/admin/PeriodBars";
 
@@ -85,6 +86,8 @@ interface Metrics {
     };
     // Optional: absent from payloads that predate the combined funnel.
     cohort?: Record<"tried" | "cold", Record<CohortStage, Record<string, number>>>;
+    // Optional: absent from payloads that predate landing tracking.
+    byLanding?: { startedAt: string | null } & Record<"7d" | "30d" | "all", LandingRow[]>;
   };
 }
 
@@ -690,6 +693,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
               </p>
             </div>
           </div>
+          <LandingFunnel data={data.byLanding} range={range} />
           <VisitSources sum={sum} daily={data.daily} />
           <TableScroll className="mt-5">
             <table className="w-full text-sm">
@@ -726,6 +730,73 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
             signup, stages follow the accounts tracked at signup, by the day they signed up, so a later
             purchase still counts toward its signup window. True site traffic (including people without
             JavaScript) is in Google Analytics.
+          </p>
+        </>
+      )}
+    </div>
+  );
+}
+
+// Visit to first answer by landing page: which pages lose the most visitors
+// before they try a question. Sorted by visitors lost, so the page worth
+// fixing first is on top.
+function LandingFunnel({ data, range }: { data?: NonNullable<Metrics["visitorFunnel"]>["byLanding"]; range: FunnelRange }) {
+  const rows = useMemo(
+    () =>
+      [...(data?.[range] ?? [])].sort(
+        (a, b) => b.visits - Math.min(b.answered, b.visits) - (a.visits - Math.min(a.answered, a.visits)),
+      ),
+    [data, range],
+  );
+  const { shown, all, hidden, toggle } = useTopN(rows);
+  const visits = rows.reduce((n, r) => n + r.visits, 0);
+  const answered = rows.reduce((n, r) => n + r.answered, 0);
+  const pct = (n: number, d: number) => (d > 0 ? `${Math.round((Math.min(n, d) / d) * 100)}%` : "n/a");
+  return (
+    <div className="mt-5">
+      <p className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">First question by landing page</p>
+      {!data?.startedAt || rows.length === 0 ? (
+        <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+          {data?.startedAt ? "No landing page has 10 visitors in this window yet." : "Counting starts with this deploy."}
+        </p>
+      ) : (
+        <>
+          <TableScroll className="mt-2">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className={`${ROW} text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400`}>
+                  <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Landing page</th>
+                  <th className="text-right font-medium pb-2 pl-4">Visitors</th>
+                  <th className="text-right font-medium pb-2 pl-4">Tried a question</th>
+                  <th className="text-right font-medium pb-2 pl-4">Rate</th>
+                  <th className="text-right font-medium pb-2 pl-4">Lost</th>
+                </tr>
+              </thead>
+              <tbody>
+                {shown.map((r) => (
+                  <tr key={r.landing} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                    <td className={`py-2 font-medium text-gray-900 dark:text-gray-50 max-w-[16rem] truncate ${STICKY_COL}`}>
+                      {r.landing.includes("*") ? (
+                        r.landing
+                      ) : (
+                        <a href={r.landing} target="_blank" rel="noreferrer" className="hover:underline">
+                          {r.landing}
+                        </a>
+                      )}
+                    </td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(r.visits)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(Math.min(r.answered, r.visits))}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{pct(r.answered, r.visits)}</td>
+                    <td className="py-2 pl-4 text-right tabular-nums">{fmtInt(Math.max(r.visits - r.answered, 0))}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </TableScroll>
+          <ShowAllButton hidden={hidden} all={all} onToggle={toggle} noun="more pages" />
+          <p className="mt-2 text-[11px] text-gray-500 dark:text-gray-400">
+            {pct(answered, visits)} of these visitors tried a question. Pages with 10+ visitors, most visitors lost first;
+            since start is the last 90 days, counted from {fmtDayLabel(data.startedAt)}.
           </p>
         </>
       )}

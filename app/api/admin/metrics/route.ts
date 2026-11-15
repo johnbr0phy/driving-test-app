@@ -5,6 +5,8 @@ import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/admin
 import { isInternalEmail } from '@/lib/internal';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import type { DocumentSnapshot, QuerySnapshot } from 'firebase-admin/firestore';
+import { FieldPath } from 'firebase-admin/firestore';
+import { sumLandingDays } from '@/lib/funnelLanding';
 import { paymentNetUsdCents } from '@/lib/pricing';
 
 // Growth/revenue metrics for the /admin Growth tab. Everything here is derived from two
@@ -73,7 +75,8 @@ export async function GET(request: NextRequest) {
 
 async function buildMetrics() {
   const db = getAdminDb();
-  const [usersSnapRaw, paymentsSnap, questionsDoc, studyTimesDoc, funnelDoc, originsSnap, internalUids, paywallsDoc, enrolledSnap] = await Promise.all([
+  const landingSince = new Date(Date.now() - 89 * 86_400_000).toISOString().slice(0, 10);
+  const [usersSnapRaw, paymentsSnap, questionsDoc, studyTimesDoc, funnelDoc, originsSnap, internalUids, paywallsDoc, enrolledSnap, landingSnap] = await Promise.all([
     db.collection('users')
       .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats')
       .get(),
@@ -88,6 +91,8 @@ async function buildMetrics() {
     // one enrollments doc per (exam, uid), guest docs claimed on sign-in
     // (lib/enrollment.ts). `_stats` alone misses v1 exam training and all v2.
     db.collection('enrollments').where('uid', '>', '').select('uid').get(),
+    // Visits and first answers by landing page, one doc per UTC day (lib/funnelLanding.ts).
+    db.collection('funnelLandings').where(FieldPath.documentId(), '>=', landingSince).get(),
   ]);
   const enrolledUids = new Set<string>();
   enrolledSnap.forEach((d) => {
@@ -349,7 +354,10 @@ async function buildMetrics() {
       // day's real total (2,886).
       questions: questionsByDay[etToday] || 0,
     },
-    visitorFunnel: buildVisitorFunnel(funnelDoc, originsSnap, premiumIds, accountStages, internalUids),
+    visitorFunnel: {
+      ...buildVisitorFunnel(funnelDoc, originsSnap, premiumIds, accountStages, internalUids),
+      byLanding: buildLandingFunnel(landingSnap),
+    },
     funnel: {
       signups: totalUsers,
       engaged: engagedUsers,
@@ -360,6 +368,22 @@ async function buildMetrics() {
   };
 
   return payload;
+}
+
+// Visit to first answer by landing page, for the funnel's 7d, 30d and
+// since-start (90 days) windows. Pages under 10 visits are left out.
+function buildLandingFunnel(snap: QuerySnapshot) {
+  const days = snap.docs.map((d) => ({ day: d.id, data: d.data() as { visit?: Record<string, number>; answered?: Record<string, number> } }));
+  const window = (n: number) => {
+    const since = new Date(Date.now() - (n - 1) * 86_400_000).toISOString().slice(0, 10);
+    return sumLandingDays(days.filter((d) => d.day >= since).map((d) => d.data), 10);
+  };
+  return {
+    startedAt: days.map((d) => d.day).sort()[0] ?? null,
+    '7d': window(7),
+    '30d': window(30),
+    all: window(90),
+  };
 }
 
 // ─── Visitor funnel (lib/funnel.ts) ──────────────────────────────────────────

@@ -144,11 +144,14 @@ function setFlag(step: FunnelStep) {
 export function trackFunnelStep(step: Exclude<FunnelStep, "signup">) {
   if (typeof window === "undefined" || auth.currentUser || hasFlag(step) || isInternalBrowser()) return;
   setFlag(step);
+  // A first answer carries the first visit's landing page, for the funnel by
+  // landing page on /admin (lib/funnelLanding.ts).
+  if (step === "answered") return void post({ step, landing: readFirstVisit()?.landing });
   if (step !== "visit") return void post({ step });
   const source = visitSource();
   // The path only, never the query string, which can carry personal data.
   saveFirstVisit({ source, landing: window.location.pathname.slice(0, 120) });
-  void post({ step, source, deep: isDeepDirect(source) || undefined });
+  void post({ step, source, deep: isDeepDirect(source) || undefined, landing: window.location.pathname.slice(0, 120) });
 }
 
 /** A brand-new account. Tags it with whether this browser practiced first. */

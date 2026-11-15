@@ -17,7 +17,7 @@ test('missing description/topics uses honest fallback; private landing does not 
  assert.match(html,/Private to the creator/);assert.doesNotMatch(html,/no account needed|What you will practice/);assert.match(html,/Practice 1 question in three ways/);
 });
 test('exam hero and quiz landing share one intro template; mode returns go to dashboard',()=>{
- for(const path of ['components/exam/ExamLandingHero.tsx','components/quiz/QuizLanding.tsx'])assert.match(readFileSync(path,'utf8'),/<LandingIntro/);
+ for(const path of ['components/exam/ExamLandingHeroClient.tsx','components/quiz/QuizLanding.tsx'])assert.match(readFileSync(path,'utf8'),/<LandingIntro/);
  for(const name of ['QuizPractice','QuizTest','QuizFlashcards','QuizResults'])assert.match(readFileSync(`components/quiz/${name}.tsx`,'utf8'),/quizDashboardPath\(code\)/);
  assert.match(readFileSync('app/q/[code]/page.tsx','utf8'),/<QuizLanding/);
  assert.match(readFileSync('app/q/[code]/dashboard/page.tsx','utf8'),/<QuizHome/);

@@ -18,6 +18,35 @@ import { trackFunnelStep } from "@/lib/funnel";
 import type { Language } from "@/i18n";
 import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
 
+// "Use Texas": the visitor's state from IP geolocation (/api/geo), offered
+// as one tap beside the dropdown. A suggestion only, since VPNs and travel
+// guess wrong and switching later deletes progress.
+const SUGGEST: Partial<Record<Language, (state: string) => string>> = {
+  en: (s) => `Use ${s}`,
+  es: (s) => `Usar ${s}`,
+  vi: (s) => `Chọn ${s}`,
+  ko: (s) => `${s} 선택`,
+  zh: (s) => `选择 ${s}`,
+};
+
+function useSuggestedState(active: boolean) {
+  const [code, setCode] = useState<string | null>(null);
+  useEffect(() => {
+    if (!active) return;
+    let cancelled = false;
+    fetch("/api/geo")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: { state?: string } | null) => {
+        if (!cancelled && d?.state && states.some((s) => s.code === d.state)) setCode(d.state);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [active]);
+  return code;
+}
+
 function useDmvStateChoice() {
   const { t } = useTranslation();
   const selectedState = useStore((state) => state.selectedState);
@@ -40,8 +69,10 @@ function useDmvStateChoice() {
  * scrolls into view, flashes and opens its dropdown, so the tap is never dead.
  */
 export function DmvStatePrompt({ nudge = 0 }: { nudge?: number }) {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const { selectedState, choose } = useDmvStateChoice();
+  const suggested = useSuggestedState(!selectedState);
+  const suggestedName = states.find((s) => s.code === suggested)?.name;
   const cardRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
   const [flash, setFlash] = useState(false);
@@ -89,7 +120,16 @@ export function DmvStatePrompt({ nudge = 0 }: { nudge?: number }) {
         </Select>
         {t("onboarding.takingTestInSuffix") && <span>{t("onboarding.takingTestInSuffix")}</span>}
       </div>
-      <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">{t("onboarding.stateNote")}</p>
+      {suggested && suggestedName && (
+        <button
+          type="button"
+          onClick={() => choose(suggested)}
+          className="mt-3 inline-flex items-center rounded-full bg-brand px-5 py-2.5 text-base font-semibold text-brand-foreground hover:bg-brand-hover"
+        >
+          {(SUGGEST[language] ?? SUGGEST.en!)(suggestedName)}
+        </button>
+      )}
+      <p className="text-xs text-gray-600 dark:text-gray-300 mt-2">{t("onboarding.stateNote")}</p>
     </div>
   );
 }

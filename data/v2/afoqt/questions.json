@@ -1,0 +1,5810 @@
+{
+  "stimuli": [
+    {
+      "id": "AFOQT-T1-R1",
+      "title": "Checklists",
+      "text": "Experienced crews sometimes treat a checklist as a crutch for beginners. The opposite is closer to the truth. Skill makes routine steps automatic, and automatic steps are the ones a busy mind skips without noticing. A pilot who has started an engine a thousand times may, on a day full of interruptions, believe a step was done because it has always been done.\n\nA checklist does not replace knowledge. It assumes the reader already understands each item and simply asks for a deliberate pause to confirm it. The best checklists are short, list only the steps that are both important and easy to miss, and use the same words that appear on the switches. A checklist that tries to teach the whole system becomes too long to use, and a list that is too long is soon ignored."
+    },
+    {
+      "id": "AFOQT-T1-R2",
+      "title": "The base garden",
+      "text": "When the housing office at a northern base offered unused land for vegetable plots, it expected a dozen applications. It received ninety. Rather than turn people away, the office divided each plot in half and set one rule: a plot left unweeded for three weeks would pass to the next family on the list.\n\nThe rule was enforced only twice in the first summer. Neighbors who had never spoken began trading seedlings and watering each other's beds during deployments. By autumn the office reported fewer complaints about noise and parking in the housing area, though it noted that it could not prove the garden was the reason. The following spring it doubled the land set aside for plots."
+    },
+    {
+      "id": "AFOQT-T1-R3",
+      "title": "Sleep debt",
+      "text": "Lost sleep does not simply disappear after one good night. Researchers describe the shortfall as a debt: each night of short sleep adds to it, and the brain does not repay it in a single session. People carrying a large debt often rate themselves as only slightly tired, even when their reaction times have slowed markedly. This gap between how alert people feel and how alert they are is what makes sleep debt dangerous in jobs that demand constant attention.\n\nCaffeine can mask the feeling of tiredness for a few hours, but it does not restore the slowed responses to normal. For that reason, schedulers who plan long shifts are urged to protect regular sleep periods rather than rely on crews to stay alert by effort or by stimulants."
+    },
+    {
+      "id": "AFOQT-T1-R4",
+      "title": "Maps and their makers",
+      "text": "Every flat map of the Earth distorts something. A round surface cannot be pressed flat without stretching or tearing it, so a mapmaker must choose what to keep true. One projection keeps compass directions accurate, which suits navigators, but swells the size of lands near the poles. Another keeps areas in their correct proportions but bends the shapes of continents. No single projection is best for every purpose.\n\nReaders often forget this choice was made at all. A student who learns geography from one familiar wall map may carry a lasting picture of a far northern island as larger than a whole continent. The map is not wrong; it was built to answer a different question than the one the student was asking."
+    },
+    {
+      "id": "AFOQT-T2-R1",
+      "title": "The night shift mechanic",
+      "text": "Most of the flight line sleeps while the night maintenance crew works. Aircraft that flew during the day are inspected, repaired and released by morning, and a delay at night becomes a canceled sortie the next day. For that reason, crews prize a quality that rarely appears on an evaluation form: the willingness to say a job is not finished.\n\nA mechanic who signs off a panel at four in the morning is under quiet pressure to be done. The leaders who run the best night crews make it plain that a reported problem is never a failure, while a hidden one always is. Their aircraft are sometimes late, but they are rarely sent back."
+    },
+    {
+      "id": "AFOQT-T2-R2",
+      "title": "Desert water",
+      "text": "Travelers crossing a desert are often surprised that the greatest danger is not heat alone but the speed at which the body loses water without warning. In dry air, sweat evaporates almost as soon as it forms, so the skin may feel dry even while the body is losing a great deal of fluid. Thirst is a late signal; by the time it is strong, performance has already begun to fall.\n\nFor this reason, guides who lead groups through hot, dry country plan drinking on a schedule rather than waiting for people to ask. They also ration effort, moving in the cooler hours of morning and evening and resting in shade at midday, because the body's demand for water rises sharply with hard work in the sun."
+    },
+    {
+      "id": "AFOQT-T2-R3",
+      "title": "Learning a second language",
+      "text": "Adults who move abroad often worry that they started learning the local language too late. The research is more encouraging than the worry. Children usually end up with a more native-sounding accent, but adults tend to learn vocabulary and grammar faster in the first months, because they can study rules deliberately and connect new words to ones they already know.\n\nWhat matters most for adults is regular use. A learner who speaks with neighbors every day, even badly, usually overtakes one who studies carefully from a book but avoids conversation. Embarrassment, not age, is the more common barrier. Teachers who make mistakes feel normal in class tend to produce speakers who are willing to keep talking outside it."
+    },
+    {
+      "id": "AFOQT-T2-R4",
+      "title": "Bridges in the wind",
+      "text": "Engineers once judged a bridge mainly by how much weight it could carry. A series of failures in the last century showed that a structure strong enough for its load could still be shaken apart by wind. Air flowing past a long, light deck can set it twisting, and if the twisting builds on itself each cycle, the motion grows until something breaks.\n\nToday, designs for long bridges are usually tested as scale models in wind tunnels before construction begins. Deck shapes are chosen to let air pass smoothly, and some decks include openings that break up the steady push of the wind. The lesson was expensive, but it changed the question engineers ask from whether a bridge can hold its load to how it will move."
+    },
+    {
+      "id": "AFOQT-D-R1",
+      "title": "Volunteer firefighters",
+      "text": "In many rural counties, the fire department is staffed almost entirely by volunteers. They train on weekend evenings, keep radios beside their beds and leave their own jobs when the siren sounds. Recruiting has become harder in recent years. Fewer young people stay in the small towns where they grew up, and those who do often commute to jobs too far away to answer a daytime call.\n\nSome departments have responded by paying a small fee for each call, while others share equipment and crews with neighboring towns. Neither approach solves the problem alone, but chiefs report that shared crews at least ensure that a truck leaves the station when someone dials for help."
+    },
+    {
+      "id": "AFOQT-D-R2",
+      "title": "Weather lore",
+      "text": "Before forecasts arrived by radio, sailors and farmers relied on sayings to read the sky. Some of these sayings rest on real patterns. In much of the middle latitudes, weather tends to move from west to east, so a red sky in the evening, lit by a setting sun shining through clear air to the west, often meant that fair weather was on its way. Other sayings, such as the belief that animals can predict a hard winter months ahead, have little support.\n\nThe useful sayings survived because they described what an observer could actually see a few hours before a change. They worked as short-range forecasts, not as predictions of a whole season."
+    },
+    {
+      "id": "AFOQT-T1-TR1",
+      "title": "Table Reading",
+      "text": "X values run across the top and Y values down the left side. Each entry is the value where its column and row meet.\n\n| Y / X | -3 | -2 | -1 | 0 | +1 | +2 | +3 |\n|---|---|---|---|---|---|---|---|\n| **+3** | 34 | 13 | 20 | 33 | 83 | 47 | 55 |\n| **+2** | 42 | 98 | 15 | 23 | 70 | 42 | 44 |\n| **+1** | 78 | 34 | 63 | 20 | 41 | 16 | 93 |\n| **0** | 21 | 46 | 15 | 53 | 63 | 18 | 82 |\n| **-1** | 34 | 95 | 84 | 63 | 11 | 19 | 20 |\n| **-2** | 42 | 43 | 35 | 51 | 43 | 88 | 38 |\n| **-3** | 66 | 21 | 79 | 85 | 23 | 99 | 15 |"
+    },
+    {
+      "id": "AFOQT-T1-TR2",
+      "title": "Table Reading",
+      "text": "X values run across the top and Y values down the left side. Each entry is the value where its column and row meet.\n\n| Y / X | -3 | -2 | -1 | 0 | +1 | +2 | +3 |\n|---|---|---|---|---|---|---|---|\n| **+3** | 51 | 32 | 33 | 58 | 71 | 28 | 74 |\n| **+2** | 78 | 69 | 42 | 57 | 53 | 75 | 84 |\n| **+1** | 92 | 59 | 84 | 61 | 60 | 46 | 56 |\n| **0** | 25 | 41 | 86 | 74 | 42 | 98 | 68 |\n| **-1** | 97 | 28 | 40 | 97 | 18 | 90 | 50 |\n| **-2** | 40 | 50 | 23 | 20 | 80 | 47 | 10 |\n| **-3** | 74 | 32 | 11 | 16 | 76 | 12 | 68 |"
+    },
+    {
+      "id": "AFOQT-T2-TR1",
+      "title": "Table Reading",
+      "text": "X values run across the top and Y values down the left side. Each entry is the value where its column and row meet.\n\n| Y / X | -3 | -2 | -1 | 0 | +1 | +2 | +3 |\n|---|---|---|---|---|---|---|---|\n| **+3** | 83 | 49 | 33 | 80 | 41 | 88 | 76 |\n| **+2** | 35 | 64 | 47 | 44 | 37 | 35 | 60 |\n| **+1** | 87 | 60 | 42 | 17 | 16 | 70 | 75 |\n| **0** | 57 | 23 | 54 | 34 | 63 | 30 | 11 |\n| **-1** | 16 | 94 | 52 | 50 | 15 | 79 | 87 |\n| **-2** | 90 | 69 | 34 | 17 | 53 | 68 | 73 |\n| **-3** | 92 | 23 | 58 | 88 | 49 | 85 | 63 |"
+    },
+    {
+      "id": "AFOQT-T2-TR2",
+      "title": "Table Reading",
+      "text": "X values run across the top and Y values down the left side. Each entry is the value where its column and row meet.\n\n| Y / X | -3 | -2 | -1 | 0 | +1 | +2 | +3 |\n|---|---|---|---|---|---|---|---|\n| **+3** | 25 | 85 | 66 | 90 | 61 | 53 | 80 |\n| **+2** | 61 | 26 | 38 | 91 | 65 | 46 | 85 |\n| **+1** | 71 | 68 | 48 | 22 | 87 | 13 | 94 |\n| **0** | 79 | 99 | 72 | 39 | 34 | 50 | 10 |\n| **-1** | 61 | 48 | 21 | 78 | 39 | 36 | 37 |\n| **-2** | 53 | 76 | 11 | 90 | 29 | 22 | 56 |\n| **-3** | 18 | 17 | 41 | 45 | 72 | 76 | 85 |"
+    },
+    {
+      "id": "AFOQT-D-TR1",
+      "title": "Table Reading",
+      "text": "X values run across the top and Y values down the left side. Each entry is the value where its column and row meet.\n\n| Y / X | -3 | -2 | -1 | 0 | +1 | +2 | +3 |\n|---|---|---|---|---|---|---|---|\n| **+3** | 91 | 82 | 99 | 17 | 56 | 57 | 29 |\n| **+2** | 58 | 48 | 43 | 89 | 51 | 33 | 21 |\n| **+1** | 82 | 17 | 83 | 15 | 10 | 49 | 12 |\n| **0** | 15 | 19 | 88 | 81 | 54 | 88 | 65 |\n| **-1** | 78 | 33 | 49 | 77 | 61 | 50 | 12 |\n| **-2** | 85 | 19 | 11 | 32 | 55 | 30 | 31 |\n| **-3** | 68 | 52 | 14 | 17 | 28 | 29 | 39 |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "AFOQT-T1-001",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Instrument and what it measures",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Thermometer is to temperature as barometer is to:",
+      "options": [
+        "air pressure",
+        "altitude",
+        "rainfall",
+        "humidity",
+        "wind direction"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A thermometer measures temperature and a barometer measures air pressure. Humidity is read with a hygrometer and wind speed with an anemometer."
+    },
+    {
+      "id": "AFOQT-T1-002",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Part to whole",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Stanza is to poem as scene is to:",
+      "options": [
+        "actor",
+        "play",
+        "stage",
+        "novel",
+        "audience"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A stanza is one section of a poem, and a scene is one section of a play. A stage is where the play happens, not the work the scene belongs to."
+    },
+    {
+      "id": "AFOQT-T1-003",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "What it is made of",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Flood is to water as avalanche is to:",
+      "options": [
+        "winter",
+        "skier",
+        "snow",
+        "slope",
+        "mountain"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A flood is a rush of water and an avalanche is a rush of snow. The mountain and the slope are where an avalanche happens, not what it is made of."
+    },
+    {
+      "id": "AFOQT-T1-004",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Antonyms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Timid is to bold as frugal is to:",
+      "options": [
+        "cautious",
+        "poor",
+        "greedy",
+        "wasteful",
+        "thrifty"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Timid and bold are opposites, so the pair needs the opposite of frugal, which is wasteful. Thrifty is a synonym of frugal, the most common trap."
+    },
+    {
+      "id": "AFOQT-T1-005",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Worker and tool",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Sculptor is to chisel as surgeon is to:",
+      "options": [
+        "patient",
+        "operation",
+        "nurse",
+        "hospital",
+        "scalpel"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A sculptor works with a chisel and a surgeon works with a scalpel. The hospital is the workplace and the patient is who is treated, not the tool."
+    },
+    {
+      "id": "AFOQT-T1-006",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Antonyms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Ignite is to extinguish as accelerate is to:",
+      "options": [
+        "decelerate",
+        "drive",
+        "steer",
+        "launch",
+        "hasten"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To extinguish undoes igniting, and to decelerate undoes accelerating. Hasten means nearly the same as accelerate."
+    },
+    {
+      "id": "AFOQT-T1-007",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Seed and plant",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Kernel is to corn as pit is to:",
+      "options": [
+        "orchard",
+        "peach",
+        "stone",
+        "banana",
+        "grape"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A kernel is the seed of corn and a pit is the seed of a peach. A grape has small seeds rather than a pit, and an orchard is where peaches grow."
+    },
+    {
+      "id": "AFOQT-T1-008",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Operator and craft",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Pilot is to aircraft as:",
+      "options": [
+        "driver is to road",
+        "teacher is to school",
+        "captain is to ship",
+        "farmer is to barn",
+        "author is to page"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A pilot commands an aircraft as a captain commands a ship. A driver uses a road but does not operate it, and a teacher works in a school rather than steering one."
+    },
+    {
+      "id": "AFOQT-T1-009",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Degree of skill",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Novice is to expert as apprentice is to:",
+      "options": [
+        "tool",
+        "beginner",
+        "trade",
+        "master",
+        "student"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A novice grows into an expert, and an apprentice trains to become a master. Student and beginner are other words for the starting level, not the end."
+    },
+    {
+      "id": "AFOQT-T1-010",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Synonyms",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Meager is to scant as abundant is to:",
+      "options": [
+        "modest",
+        "wealthy",
+        "sufficient",
+        "scarce",
+        "plentiful"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Meager and scant mean the same thing, so abundant pairs with plentiful. Scarce is its opposite."
+    },
+    {
+      "id": "AFOQT-T1-011",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Home of an animal",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Hive is to bee as:",
+      "options": [
+        "warren is to rabbit",
+        "den is to forest",
+        "burrow is to tunnel",
+        "web is to fly",
+        "nest is to egg"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A hive is where bees live and a warren is where rabbits live. A fly is caught in a web rather than living in it, and an egg is laid in a nest, not a resident."
+    },
+    {
+      "id": "AFOQT-T1-012",
+      "section": "va",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Smaller unit to larger",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Minute is to hour as ounce is to:",
+      "options": [
+        "gram",
+        "pound",
+        "yard",
+        "inch",
+        "weight"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Minutes make up an hour, and ounces make up a pound in the same system. A gram is a metric unit, and an inch and a yard measure length."
+    },
+    {
+      "id": "AFOQT-T1-013",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Rate and time",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "rateProblems",
+      "stem": "A tanker aircraft transfers fuel at 2,400 pounds per minute. How long does it take to transfer 30,000 pounds?",
+      "options": [
+        "10 minutes",
+        "12 minutes",
+        "12.5 minutes",
+        "15 minutes",
+        "25 minutes"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Time is amount divided by rate: 30,000 / 2,400 = 12.5 minutes. Stopping at 12 drops the remainder of 1,200 pounds, which takes another half minute."
+    },
+    {
+      "id": "AFOQT-T1-014",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Distance, rate and time",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "rateProblems",
+      "stem": "An aircraft cruises at 450 miles per hour. How far does it fly in 2 hours 40 minutes?",
+      "options": [
+        "900 miles",
+        "1,080 miles",
+        "1,125 miles",
+        "1,200 miles",
+        "1,350 miles"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "2 hours 40 minutes is 2 2/3 hours, and 450 x 8/3 = 1,200 miles. Reading 40 minutes as 0.4 hour gives 1,080 miles."
+    },
+    {
+      "id": "AFOQT-T1-015",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Fractions of a group",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "wordProblems",
+      "stem": "A flight of 48 airmen has 3/8 of its members on leave. How many are on duty?",
+      "options": [
+        "18",
+        "24",
+        "30",
+        "36",
+        "40"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "3/8 of 48 is 18 on leave, so 48 - 18 = 30 are on duty. 18 is the number on leave, not on duty."
+    },
+    {
+      "id": "AFOQT-T1-016",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Percent change",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "percents",
+      "stem": "The price of a part rises from 80 dollars to 92 dollars. What is the percent increase?",
+      "options": [
+        "13%",
+        "12%",
+        "20%",
+        "18%",
+        "15%"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Percent change is the change over the original: 12 / 80 = 0.15, or 15%. Dividing by the new price, 12 / 92, gives about 13%."
+    },
+    {
+      "id": "AFOQT-T1-017",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Mixtures",
+      "difficulty": 3,
+      "format": "single",
+      "basics": "wordProblems",
+      "stem": "A radiator holds 20 liters of a mixture that is 30% antifreeze. How many liters of pure antifreeze must be added to make the mixture 50% antifreeze?",
+      "options": [
+        "4 liters",
+        "6 liters",
+        "8 liters",
+        "10 liters",
+        "12 liters"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "There are 6 liters of antifreeze now. (6 + x) / (20 + x) = 0.5 gives 6 + x = 10 + 0.5x, so x = 8. Adding only 4 liters forgets that the total grows too."
+    },
+    {
+      "id": "AFOQT-T1-018",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Scale drawings",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "ratios",
+      "stem": "On an airfield diagram, 1 centimeter stands for 150 meters. A runway is 18 centimeters long on the diagram. How long is the real runway?",
+      "options": [
+        "1,800 meters",
+        "2,250 meters",
+        "2,700 meters",
+        "3,000 meters",
+        "3,150 meters"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Multiply the drawing length by the scale: 18 x 150 = 2,700 meters."
+    },
+    {
+      "id": "AFOQT-T1-019",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Area",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "wordProblems",
+      "stem": "A hangar floor is 60 feet by 45 feet. It is covered with square tiles 3 feet on a side. How many tiles are needed?",
+      "options": [
+        "150",
+        "270",
+        "300",
+        "900",
+        "2,700"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The floor is 2,700 square feet and each tile covers 9 square feet, so 2,700 / 9 = 300 tiles. 2,700 is the area, not the tile count."
+    },
+    {
+      "id": "AFOQT-T1-020",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Distance, rate and time",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "rateProblems",
+      "stem": "Two aircraft leave the same base at the same time and fly in opposite directions, one at 320 miles per hour and the other at 280 miles per hour. After how many hours are they 1,500 miles apart?",
+      "options": [
+        "2 hours",
+        "2.5 hours",
+        "3 hours",
+        "3.5 hours",
+        "5 hours"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Flying apart, their speeds add to 600 miles per hour, and 1,500 / 600 = 2.5 hours."
+    },
+    {
+      "id": "AFOQT-T1-021",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Averages",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "wordProblems",
+      "stem": "A student's average on four tests is 82. What score on a fifth test would raise the average to 85?",
+      "options": [
+        "88",
+        "91",
+        "94",
+        "97",
+        "100"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Five tests averaging 85 total 425, and the first four total 328, so the fifth must be 425 - 328 = 97."
+    },
+    {
+      "id": "AFOQT-T1-022",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Ratios",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "ratios",
+      "stem": "The ratio of officers to enlisted members in a squadron is 2 to 9. The squadron has 132 members. How many are officers?",
+      "options": [
+        "12",
+        "22",
+        "24",
+        "29",
+        "108"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The ratio has 2 + 9 = 11 parts, so each part is 132 / 11 = 12 people, and officers are 2 parts: 24. 108 is the enlisted count."
+    },
+    {
+      "id": "AFOQT-T1-023",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Work rates",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "One pump can fill a tank in 6 hours and a second pump can fill it in 3 hours. How long do the two pumps take working together?",
+      "options": [
+        "1.5 hours",
+        "2 hours",
+        "3 hours",
+        "4.5 hours",
+        "9 hours"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Together they fill 1/6 + 1/3 = 1/2 of the tank an hour, so the whole tank takes 2 hours. Averaging the two times gives 4.5 hours, which is slower than the faster pump alone."
+    },
+    {
+      "id": "AFOQT-T1-024",
+      "section": "ar",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Simple interest",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "percents",
+      "stem": "A savings bond of \\$2,000 earns 4% simple interest each year. How much interest has it earned after 3 years?",
+      "options": [
+        "\\$80",
+        "\\$120",
+        "\\$240",
+        "\\$320",
+        "\\$2,240"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Simple interest is principal x rate x time: 2,000 x 0.04 x 3 = 240 dollars. 2,240 dollars is the value of the bond, not the interest."
+    },
+    {
+      "id": "AFOQT-T1-025",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "ABATE most nearly means:",
+      "options": [
+        "lessen",
+        "argue",
+        "wait",
+        "increase",
+        "cover"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To abate is to become less intense, as a storm abates. Increase is the opposite."
+    },
+    {
+      "id": "AFOQT-T1-026",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "CANDOR most nearly means:",
+      "options": [
+        "grief",
+        "fear",
+        "brightness",
+        "sweetness",
+        "frankness"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Candor is open, honest speech. Sweetness is a trap from the look of candy, not the meaning."
+    },
+    {
+      "id": "AFOQT-T1-027",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "DILIGENT most nearly means:",
+      "options": [
+        "intelligent",
+        "clever",
+        "careless",
+        "hardworking",
+        "gentle"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A diligent person works steadily and carefully. Careless is close to the opposite."
+    },
+    {
+      "id": "AFOQT-T1-028",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "EPHEMERAL most nearly means:",
+      "options": [
+        "ancient",
+        "otherworldly",
+        "hidden",
+        "heavenly",
+        "short-lived"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Ephemeral describes something that lasts a very short time, like a mayfly. Ancient is the opposite."
+    },
+    {
+      "id": "AFOQT-T1-029",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "FORTITUDE most nearly means:",
+      "options": [
+        "courage",
+        "pride",
+        "anger",
+        "good fortune",
+        "luck"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Fortitude is courage and strength of mind in pain or hardship. Good fortune and luck come from confusing it with fortune."
+    },
+    {
+      "id": "AFOQT-T1-030",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "GREGARIOUS most nearly means:",
+      "options": [
+        "sociable",
+        "generous",
+        "serious",
+        "greedy",
+        "loud"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A gregarious person enjoys company. Loud is not the same thing: a sociable person can be quiet."
+    },
+    {
+      "id": "AFOQT-T1-031",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "IMPEDE most nearly means:",
+      "options": [
+        "explain",
+        "hinder",
+        "enter",
+        "hurry",
+        "demand"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To impede is to get in the way of something. Hurry is close to the opposite."
+    },
+    {
+      "id": "AFOQT-T1-032",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "LETHARGIC most nearly means:",
+      "options": [
+        "nervous",
+        "deadly",
+        "cheerful",
+        "sluggish",
+        "angry"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lethargic means slow and lacking energy. Deadly comes from confusing it with lethal."
+    },
+    {
+      "id": "AFOQT-T1-033",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "METICULOUS most nearly means:",
+      "options": [
+        "quick",
+        "clumsy",
+        "lighthearted",
+        "timid",
+        "painstaking"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A meticulous worker takes great care over every detail. Quick work is often the opposite of meticulous work."
+    },
+    {
+      "id": "AFOQT-T1-034",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "PLACID most nearly means:",
+      "options": [
+        "plain",
+        "angry",
+        "quick",
+        "eager",
+        "calm"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Placid means calm and peaceful, as a placid lake. Plain only looks similar; angry is close to the opposite."
+    },
+    {
+      "id": "AFOQT-T1-035",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "PRUDENT most nearly means:",
+      "options": [
+        "sensible",
+        "rude",
+        "wasteful",
+        "eager",
+        "proud"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Prudent means acting with care and good judgment. Proud only looks similar."
+    },
+    {
+      "id": "AFOQT-T1-036",
+      "section": "wk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "VERBOSE most nearly means:",
+      "options": [
+        "active",
+        "wordy",
+        "silent",
+        "honest",
+        "angry"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Verbose writing or speech uses more words than it needs; the root verb means word. Silent is the opposite."
+    },
+    {
+      "id": "AFOQT-T1-037",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Linear equations",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "solveX",
+      "stem": "If $3x - 7 = 2x + 5$, what is the value of $x$?",
+      "options": [
+        "-12",
+        "-2",
+        "2",
+        "7",
+        "12"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Subtract 2x from both sides to get x - 7 = 5, then add 7: x = 12."
+    },
+    {
+      "id": "AFOQT-T1-038",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Exponents",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "exponentRules",
+      "stem": "What is the value of $2^3 \\cdot 2^4$?",
+      "options": [
+        "14",
+        "64",
+        "128",
+        "256",
+        "4,096"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "When powers of the same base are multiplied, the exponents add: $2^7 = 128$. Multiplying the exponents gives $2^{12} = 4096$."
+    },
+    {
+      "id": "AFOQT-T1-039",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Absolute value",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the value of $|-8| - |3|$?",
+      "options": [
+        "-11",
+        "-5",
+        "5",
+        "11",
+        "24"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The absolute value of -8 is 8 and of 3 is 3, so 8 - 3 = 5."
+    },
+    {
+      "id": "AFOQT-T1-040",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Inequalities",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "inequalities",
+      "stem": "Which inequality is equivalent to $-3x + 4 < 10$?",
+      "options": [
+        "$x < -\\frac{14}{3}$",
+        "$x < -2$",
+        "$x < 2$",
+        "$x > -2$",
+        "$x > 2$"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Subtract 4 to get -3x < 6, then divide by -3, which flips the sign: x > -2. Keeping the sign unchanged gives x < -2."
+    },
+    {
+      "id": "AFOQT-T1-041",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Area",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the area of a triangle with a base of 10 and a height of 7?",
+      "options": [
+        "17",
+        "35",
+        "50",
+        "70",
+        "100"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The area is one half of base times height: 0.5 x 10 x 7 = 35. Forgetting the one half gives 70."
+    },
+    {
+      "id": "AFOQT-T1-042",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Factoring",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "factoring",
+      "stem": "Which is a factored form of $x^2 - 5x - 14$?",
+      "options": [
+        "$(x + 7)(x - 2)$",
+        "$(x - 7)(x - 2)$",
+        "$(x + 7)(x + 2)$",
+        "$(x - 7)(x + 2)$",
+        "$(x - 14)(x + 1)$"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "You need two numbers that multiply to -14 and add to -5: -7 and 2. $(x + 7)(x - 2)$ gives a middle term of +5x."
+    },
+    {
+      "id": "AFOQT-T1-043",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Radicals",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which is $\\sqrt{72}$ in simplest radical form?",
+      "options": [
+        "$6\\sqrt{2}$",
+        "$6\\sqrt{3}$",
+        "$2\\sqrt{6}$",
+        "$36\\sqrt{2}$",
+        "$4\\sqrt{3}$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "72 = 36 x 2, and the square root of 36 is 6, so $\\sqrt{72} = 6\\sqrt{2}$. $2\\sqrt{6}$ is only the square root of 24."
+    },
+    {
+      "id": "AFOQT-T1-044",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Circles",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the area of a circle with a radius of 5?",
+      "options": [
+        "$10\\pi$",
+        "$50\\pi$",
+        "$100\\pi$",
+        "$25\\pi$",
+        "$5\\pi$"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Area is $\\pi r^2 = 25\\pi$. $10\\pi$ is the circumference, and $100\\pi$ squares the diameter."
+    },
+    {
+      "id": "AFOQT-T1-045",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Scientific notation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which is $0.0042$ written in scientific notation?",
+      "options": [
+        "$42 \\times 10^{-2}$",
+        "$4.2 \\times 10^{-4}$",
+        "$4.2 \\times 10^{-2}$",
+        "$4.2 \\times 10^{3}$",
+        "$4.2 \\times 10^{-3}$"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Moving the decimal point three places right gives 4.2, so the power of ten is -3. A positive exponent would make the number 4,200."
+    },
+    {
+      "id": "AFOQT-T1-046",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Slope",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the slope of the line through the points $(1, 2)$ and $(4, 11)$?",
+      "options": [
+        "$3$",
+        "$-3$",
+        "$4$",
+        "$9$",
+        "$\\frac{1}{3}$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Slope is the change in y over the change in x: (11 - 2) / (4 - 1) = 9 / 3 = 3. Putting x over y gives 1/3."
+    },
+    {
+      "id": "AFOQT-T1-047",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Angles",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the supplement of a 68 degree angle?",
+      "options": [
+        "22 degrees",
+        "68 degrees",
+        "112 degrees",
+        "122 degrees",
+        "292 degrees"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Supplementary angles add to 180 degrees, so 180 - 68 = 112. 22 degrees is the complement, which adds to 90."
+    },
+    {
+      "id": "AFOQT-T1-048",
+      "section": "mk",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Evaluating expressions",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "solveX",
+      "stem": "What is the value of $x^2 - 3x$ when $x = -4$?",
+      "options": [
+        "-28",
+        "-4",
+        "4",
+        "16",
+        "28"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "$(-4)^2 = 16$ and $-3(-4) = 12$, so 16 + 12 = 28. Treating $(-4)^2$ as -16 gives -4."
+    },
+    {
+      "id": "AFOQT-T1-049",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R1",
+      "stem": "Which statement best expresses the main idea of the passage?",
+      "options": [
+        "Interruptions are rare in professional flying",
+        "Checklists keep experts from skipping steps",
+        "Engines are the hardest systems to start safely",
+        "Pilots should memorize every step of each procedure",
+        "Checklists are mainly a tool for training beginners"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage argues that skill makes steps automatic and automatic steps get skipped, so checklists help experienced crews. It rejects the idea that they are only for beginners."
+    },
+    {
+      "id": "AFOQT-T1-050",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R1",
+      "stem": "According to the passage, the best checklists:",
+      "options": [
+        "explain how each system works",
+        "list only key steps that are easy to miss",
+        "use plain words in place of switch labels",
+        "include every step of a procedure",
+        "are rewritten by each crew"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says the best checklists are short and list only steps that are important and easy to miss. It warns that a list that tries to teach the whole system becomes too long."
+    },
+    {
+      "id": "AFOQT-T1-051",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R1",
+      "stem": "The author would most likely agree that a very long checklist:",
+      "options": [
+        "should replace system training",
+        "is safer than a short one",
+        "suits experienced crews best",
+        "is soon ignored by its users",
+        "removes the need for knowledge"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage ends by saying a list that is too long is soon ignored. It also says a checklist does not replace knowledge."
+    },
+    {
+      "id": "AFOQT-T1-052",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R2",
+      "stem": "Why did the housing office divide each plot in half?",
+      "options": [
+        "Far more families applied than it expected",
+        "The land was too poor to support full-sized plots",
+        "Families asked for smaller plots",
+        "It wanted to test the weeding rule",
+        "Half of the land flooded each spring"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The office expected a dozen applications, received ninety and halved the plots rather than turn people away."
+    },
+    {
+      "id": "AFOQT-T1-053",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R2",
+      "stem": "The office's report about fewer complaints suggests that it:",
+      "options": [
+        "believed the garden caused new complaints",
+        "stopped enforcing the weeding rule",
+        "planned to close the garden",
+        "proved the garden reduced complaints",
+        "saw a benefit it could not prove"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The office reported fewer complaints but said it could not prove the garden was the reason, so the link is possible, not shown."
+    },
+    {
+      "id": "AFOQT-T1-054",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R2",
+      "stem": "Which title best fits the passage?",
+      "options": [
+        "A Garden That Brought Neighbors Together",
+        "Growing Food in a Northern Climate",
+        "Solving the Parking Problems in Base Housing",
+        "Why the Office Refused Applications",
+        "How to Weed a Vegetable Bed"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage follows the plots from the flood of applications to neighbors trading seedlings and the office expanding the program. Parking appears only as one detail."
+    },
+    {
+      "id": "AFOQT-T1-055",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R3",
+      "stem": "The passage is mainly concerned with:",
+      "options": [
+        "the history of sleep research",
+        "why lost sleep builds up and goes unnoticed",
+        "how caffeine improves reaction time on long shifts",
+        "how to fall asleep more quickly",
+        "why long shifts should be banned"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage explains that lost sleep accumulates, is not repaid in one night and is underrated by tired people. It does not call for banning long shifts."
+    },
+    {
+      "id": "AFOQT-T1-056",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R3",
+      "stem": "According to the passage, caffeine:",
+      "options": [
+        "has no effect on how tired people feel",
+        "repays sleep debt within a few hours",
+        "speeds reaction times back to normal",
+        "masks tiredness but not slow reactions",
+        "is safe to rely on for long shifts"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says caffeine can mask the feeling of tiredness but does not restore slowed responses to normal."
+    },
+    {
+      "id": "AFOQT-T1-057",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Author's purpose",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R3",
+      "stem": "The author mentions how people rate their own tiredness in order to:",
+      "options": [
+        "argue that self-ratings are always accurate",
+        "explain how caffeine works",
+        "prove that people exaggerate fatigue",
+        "show why sleep debt is dangerous",
+        "describe how sleep is measured"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The point is the gap between feeling only slightly tired and actually being slow, which the passage calls what makes sleep debt dangerous."
+    },
+    {
+      "id": "AFOQT-T1-058",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R4",
+      "stem": "The central point of the passage is that:",
+      "options": [
+        "wall maps are drawn carelessly",
+        "navigators should not use projections",
+        "polar regions are larger than most maps show",
+        "one projection is best for every purpose",
+        "each flat map keeps some features true"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage says every flat map distorts something and the mapmaker chooses what to keep true for a purpose. It says no projection is best for every purpose."
+    },
+    {
+      "id": "AFOQT-T1-059",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R4",
+      "stem": "According to the passage, a projection that keeps compass directions accurate:",
+      "options": [
+        "enlarges lands near the poles",
+        "is useless to navigators",
+        "shows continents without distortion",
+        "shrinks lands near the poles",
+        "keeps areas in true proportion"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says the direction-true projection suits navigators but swells the size of lands near the poles."
+    },
+    {
+      "id": "AFOQT-T1-060",
+      "section": "rc",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-R4",
+      "stem": "The student described in the second paragraph most likely:",
+      "options": [
+        "used a map with printing errors",
+        "used a map made for another purpose",
+        "studied a map that kept every area true",
+        "confused two different islands",
+        "had never seen a wall map"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The author says the map is not wrong but was built to answer a different question, so the student's false picture of sizes comes from the projection chosen."
+    },
+    {
+      "id": "AFOQT-T1-061",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Units",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the SI unit of force?",
+      "options": [
+        "newton",
+        "joule",
+        "kilogram",
+        "watt",
+        "pascal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Force is measured in newtons, one kilogram-meter per second squared. The joule is the unit of energy and the watt of power."
+    },
+    {
+      "id": "AFOQT-T1-062",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Newton's second law",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A net force of 30 newtons acts on a 10-kilogram cart. What is the cart's acceleration?",
+      "options": [
+        "0.33 m/s²",
+        "3 m/s²",
+        "20 m/s²",
+        "40 m/s²",
+        "300 m/s²"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "From F = ma, a = F / m = 30 / 10 = 3 meters per second squared. Multiplying instead gives 300."
+    },
+    {
+      "id": "AFOQT-T1-063",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Work",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "How much work is done lifting a 50-newton box straight up 2 meters?",
+      "options": [
+        "25 J",
+        "52 J",
+        "100 J",
+        "200 J",
+        "250 J"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Work is force times distance in the direction of the force: 50 x 2 = 100 joules. Dividing gives 25."
+    },
+    {
+      "id": "AFOQT-T1-064",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Levers",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A lever has an effort arm 2 meters long and a load arm 0.5 meter long. What is its ideal mechanical advantage?",
+      "options": [
+        "0.25",
+        "1",
+        "2.5",
+        "4",
+        "5"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Ideal mechanical advantage is effort arm over load arm: 2 / 0.5 = 4. Turning the ratio over gives 0.25, a lever that loses force."
+    },
+    {
+      "id": "AFOQT-T1-065",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Newton's laws",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which law explains why a jet engine is pushed forward as it throws hot gas backward?",
+      "options": [
+        "Newton's second law",
+        "Boyle's law",
+        "Ohm's law",
+        "Newton's first law",
+        "Newton's third law"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The third law says forces come in pairs: the engine pushes gas back and the gas pushes the engine forward. The first law is about inertia."
+    },
+    {
+      "id": "AFOQT-T1-066",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Waves",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A wave has a frequency of 50 hertz and a wavelength of 4 meters. What is its speed?",
+      "options": [
+        "0.08 m/s",
+        "12.5 m/s",
+        "46 m/s",
+        "54 m/s",
+        "200 m/s"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Wave speed is frequency times wavelength: 50 x 4 = 200 meters per second. 12.5 divides the two."
+    },
+    {
+      "id": "AFOQT-T1-067",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Vectors",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which of these is a vector quantity?",
+      "options": [
+        "mass",
+        "temperature",
+        "velocity",
+        "energy",
+        "speed"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A vector has size and direction. Velocity is speed in a stated direction; speed alone has no direction."
+    },
+    {
+      "id": "AFOQT-T1-068",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Electricity",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A 12-volt battery is connected across a 4-ohm resistor. What current flows?",
+      "options": [
+        "0.33 A",
+        "3 A",
+        "8 A",
+        "16 A",
+        "48 A"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Ohm's law gives current as voltage over resistance: 12 / 4 = 3 amperes. Multiplying gives 48."
+    },
+    {
+      "id": "AFOQT-T1-069",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Heat transfer",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Warm air rising from a heater and cool air sinking to take its place is heat transfer by:",
+      "options": [
+        "conduction",
+        "radiation",
+        "insulation",
+        "convection",
+        "evaporation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Convection carries heat by the movement of a fluid such as air or water. Conduction passes heat through direct contact."
+    },
+    {
+      "id": "AFOQT-T1-070",
+      "section": "ps",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Density",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A block has a mass of 200 grams and a volume of 50 cubic centimeters. What is its density?",
+      "options": [
+        "0.25 g/cm³",
+        "4 g/cm³",
+        "150 g/cm³",
+        "250 g/cm³",
+        "10,000 g/cm³"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Density is mass over volume: 200 / 50 = 4 grams per cubic centimeter. 0.25 divides the other way."
+    },
+    {
+      "id": "AFOQT-T1-071",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = 0, Y = -1?",
+      "options": [
+        "11",
+        "15",
+        "53",
+        "63",
+        "84"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = 0 column and down to the Y = -1 row: the entry is 63. 15 is at X = -1, Y = 0, with X and Y swapped; 11 is at X = +1, Y = -1, one cell away; 84 is at X = -1, Y = -1, one cell away; 53 is at X = 0, Y = 0, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-072",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = 0, Y = +2?",
+      "options": [
+        "15",
+        "18",
+        "23",
+        "33",
+        "70"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = 0 column and down to the Y = +2 row: the entry is 23. 18 is at X = +2, Y = 0, with X and Y swapped; 70 is at X = +1, Y = +2, one cell away; 15 is at X = -1, Y = +2, one cell away; 33 is at X = 0, Y = +3, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-073",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = +3, Y = -3?",
+      "options": [
+        "15",
+        "34",
+        "38",
+        "66",
+        "99"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +3 column and down to the Y = -3 row: the entry is 15. 34 is at X = -3, Y = +3, with X and Y swapped; 99 is at X = +2, Y = -3, one cell away; 38 is at X = +3, Y = -2, one cell away; 66 is at X = -3, Y = -3, where X has the wrong sign."
+    },
+    {
+      "id": "AFOQT-T1-074",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = -1, Y = 0?",
+      "options": [
+        "15",
+        "46",
+        "53",
+        "63",
+        "84"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -1 column and down to the Y = 0 row: the entry is 15. 63 is at X = 0, Y = -1, with X and Y swapped; 53 is at X = 0, Y = 0, one cell away; 46 is at X = -2, Y = 0, one cell away; 84 is at X = -1, Y = -1, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-075",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = -1, Y = -1?",
+      "options": [
+        "15",
+        "35",
+        "63",
+        "84",
+        "95"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -1 column and down to the Y = -1 row: the entry is 84. 63 is at X = 0, Y = -1, one cell away; 95 is at X = -2, Y = -1, one cell away; 15 is at X = -1, Y = 0, one cell away; 35 is at X = -1, Y = -2, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-076",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = -3, Y = -3?",
+      "options": [
+        "15",
+        "21",
+        "34",
+        "42",
+        "66"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -3 column and down to the Y = -3 row: the entry is 66. 21 is at X = -2, Y = -3, one cell away; 42 is at X = -3, Y = -2, one cell away; 15 is at X = +3, Y = -3, where X has the wrong sign; 34 is at X = -3, Y = +3, where Y has the wrong sign."
+    },
+    {
+      "id": "AFOQT-T1-077",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = +3, Y = 0?",
+      "options": [
+        "18",
+        "20",
+        "33",
+        "82",
+        "93"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +3 column and down to the Y = 0 row: the entry is 82. 33 is at X = 0, Y = +3, with X and Y swapped; 18 is at X = +2, Y = 0, one cell away; 93 is at X = +3, Y = +1, one cell away; 20 is at X = +3, Y = -1, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-078",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = 0, Y = +1?",
+      "options": [
+        "20",
+        "23",
+        "41",
+        "53",
+        "63"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = 0 column and down to the Y = +1 row: the entry is 20. 63 is at X = +1, Y = 0, with X and Y swapped; 41 is at X = +1, Y = +1, one cell away; 23 is at X = 0, Y = +2, one cell away; 53 is at X = 0, Y = 0, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-079",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = +2, Y = -3?",
+      "options": [
+        "15",
+        "23",
+        "42",
+        "88",
+        "99"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 99. 42 is at X = -3, Y = +2, with X and Y swapped; 15 is at X = +3, Y = -3, one cell away; 23 is at X = +1, Y = -3, one cell away; 88 is at X = +2, Y = -2, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-080",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR1",
+      "stem": "What is the entry at X = 0, Y = +3?",
+      "options": [
+        "20",
+        "23",
+        "33",
+        "82",
+        "83"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = 0 column and down to the Y = +3 row: the entry is 33. 82 is at X = +3, Y = 0, with X and Y swapped; 83 is at X = +1, Y = +3, one cell away; 20 is at X = -1, Y = +3, one cell away; 23 is at X = 0, Y = +2, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-081",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = -2, Y = -2?",
+      "options": [
+        "23",
+        "28",
+        "32",
+        "40",
+        "50"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -2 column and down to the Y = -2 row: the entry is 50. 23 is at X = -1, Y = -2, one cell away; 40 is at X = -3, Y = -2, one cell away; 28 is at X = -2, Y = -1, one cell away; 32 is at X = -2, Y = -3, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-082",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = +3, Y = +2?",
+      "options": [
+        "28",
+        "56",
+        "74",
+        "75",
+        "84"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +3 column and down to the Y = +2 row: the entry is 84. 28 is at X = +2, Y = +3, with X and Y swapped; 75 is at X = +2, Y = +2, one cell away; 74 is at X = +3, Y = +3, one cell away; 56 is at X = +3, Y = +1, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-083",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = -1, Y = -1?",
+      "options": [
+        "23",
+        "28",
+        "40",
+        "86",
+        "97"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -1 column and down to the Y = -1 row: the entry is 40. 97 is at X = 0, Y = -1, one cell away; 28 is at X = -2, Y = -1, one cell away; 86 is at X = -1, Y = 0, one cell away; 23 is at X = -1, Y = -2, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-084",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = -1, Y = +3?",
+      "options": [
+        "32",
+        "33",
+        "42",
+        "50",
+        "58"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -1 column and down to the Y = +3 row: the entry is 33. 50 is at X = +3, Y = -1, with X and Y swapped; 58 is at X = 0, Y = +3, one cell away; 32 is at X = -2, Y = +3, one cell away; 42 is at X = -1, Y = +2, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-085",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = +1, Y = -1?",
+      "options": [
+        "18",
+        "42",
+        "84",
+        "90",
+        "97"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +1 column and down to the Y = -1 row: the entry is 18. 84 is at X = -1, Y = +1, with X and Y swapped; 90 is at X = +2, Y = -1, one cell away; 97 is at X = 0, Y = -1, one cell away; 42 is at X = +1, Y = 0, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-086",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = +2, Y = -3?",
+      "options": [
+        "12",
+        "47",
+        "68",
+        "76",
+        "78"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 12. 78 is at X = -3, Y = +2, with X and Y swapped; 68 is at X = +3, Y = -3, one cell away; 76 is at X = +1, Y = -3, one cell away; 47 is at X = +2, Y = -2, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-087",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = +2, Y = +1?",
+      "options": [
+        "46",
+        "53",
+        "56",
+        "60",
+        "75"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 46. 53 is at X = +1, Y = +2, with X and Y swapped; 56 is at X = +3, Y = +1, one cell away; 60 is at X = +1, Y = +1, one cell away; 75 is at X = +2, Y = +2, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-088",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = +2, Y = -2?",
+      "options": [
+        "10",
+        "47",
+        "69",
+        "80",
+        "90"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = -2 row: the entry is 47. 69 is at X = -2, Y = +2, with X and Y swapped; 10 is at X = +3, Y = -2, one cell away; 80 is at X = +1, Y = -2, one cell away; 90 is at X = +2, Y = -1, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-089",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = 0, Y = -1?",
+      "options": [
+        "18",
+        "40",
+        "74",
+        "86",
+        "97"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = 0 column and down to the Y = -1 row: the entry is 97. 86 is at X = -1, Y = 0, with X and Y swapped; 18 is at X = +1, Y = -1, one cell away; 40 is at X = -1, Y = -1, one cell away; 74 is at X = 0, Y = 0, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-090",
+      "section": "tr",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T1-TR2",
+      "stem": "What is the entry at X = +2, Y = 0?",
+      "options": [
+        "42",
+        "46",
+        "57",
+        "68",
+        "98"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = 0 row: the entry is 98. 57 is at X = 0, Y = +2, with X and Y swapped; 68 is at X = +3, Y = 0, one cell away; 42 is at X = +1, Y = 0, one cell away; 46 is at X = +2, Y = +1, one cell away."
+    },
+    {
+      "id": "AFOQT-T1-091",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Flight controls",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which control surfaces roll an aircraft from side to side?",
+      "options": [
+        "elevator",
+        "ailerons",
+        "horizontal stabilizer",
+        "flaps",
+        "rudder"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The ailerons, hinged on the outer wings, produce the rolling motion. The elevator controls pitch and the rudder yaw."
+    },
+    {
+      "id": "AFOQT-T1-092",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Four forces",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which force opposes an aircraft's weight?",
+      "options": [
+        "thrust",
+        "torque",
+        "lift",
+        "drag",
+        "gravity"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Lift acts against weight, mostly produced by the wings. Thrust works against drag, not weight."
+    },
+    {
+      "id": "AFOQT-T1-093",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Four forces",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In steady, level flight at constant speed, thrust is equal to:",
+      "options": [
+        "zero",
+        "lift",
+        "weight",
+        "drag",
+        "lift plus drag"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "With the forces balanced, thrust balances drag and lift balances weight. If thrust exceeded drag, the aircraft would accelerate."
+    },
+    {
+      "id": "AFOQT-T1-094",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Axes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The pitch axis of an aircraft runs:",
+      "options": [
+        "from nose to tail",
+        "from top to bottom",
+        "along the propeller shaft",
+        "from wingtip to wingtip",
+        "along the left wing only"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Pitch moves the nose up and down about an axis through the center of gravity from wingtip to wingtip. The nose-to-tail axis is roll."
+    },
+    {
+      "id": "AFOQT-T1-095",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Wing devices",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Flaps are lowered during takeoff and landing mainly to:",
+      "options": [
+        "raise the cruise speed",
+        "add lift at low speeds",
+        "steer on the ground",
+        "reduce its weight",
+        "roll the aircraft"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Flaps change the wing's shape so it makes more lift at the slow speeds of takeoff and landing. Rolling is the ailerons' job."
+    },
+    {
+      "id": "AFOQT-T1-096",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Lift equation",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "If an aircraft's speed doubles and nothing else changes, its lift becomes:",
+      "options": [
+        "0.5 times as great",
+        "2 times as great",
+        "4 times as great",
+        "8 times as great",
+        "16 times as great"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Lift is proportional to velocity squared, so doubling speed gives 2 x 2 = 4 times the lift."
+    },
+    {
+      "id": "AFOQT-T1-097",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Engines",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Why can a jet engine not run in outer space?",
+      "options": [
+        "there is no air to burn fuel with",
+        "the exhaust cannot leave the nozzle",
+        "the fan blades would freeze",
+        "the fuel would boil away",
+        "there is no gravity to push against"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A turbine engine takes its oxygen from the surrounding air, so it needs an atmosphere. A rocket carries its own oxidizer."
+    },
+    {
+      "id": "AFOQT-T1-098",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Drag",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Induced drag is caused by:",
+      "options": [
+        "the shape of the fuselage",
+        "vortices that form at the wingtips",
+        "friction with the aircraft's skin",
+        "shock waves near the speed of sound",
+        "rain striking the windscreen"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Induced drag comes with lift: the pressure difference between the top and bottom of the wing curls air around the tips into vortices. Skin friction is a separate kind of drag."
+    },
+    {
+      "id": "AFOQT-T1-099",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Aircraft parts",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the hinged rear part of the vertical stabilizer called?",
+      "options": [
+        "slat",
+        "aileron",
+        "rudder",
+        "elevator",
+        "flap"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The rudder hangs on the back of the vertical fin and swings the tail left and right. The elevator is on the horizontal tail."
+    },
+    {
+      "id": "AFOQT-T1-100",
+      "section": "ai",
+      "test": 1,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Gliding",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A glider with a lift-to-drag ratio of 10 starts 6,000 feet above flat ground in still air. About how far can it glide?",
+      "options": [
+        "600 feet",
+        "6,000 feet",
+        "10,000 feet",
+        "60,000 feet",
+        "600,000 feet"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Glide distance is height times the lift-to-drag ratio: 6,000 x 10 = 60,000 feet. Dividing gives 600."
+    },
+    {
+      "id": "AFOQT-T2-001",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Instrument and what it measures",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Odometer is to distance as tachometer is to:",
+      "options": [
+        "engine heat",
+        "road speed",
+        "engine speed",
+        "oil pressure",
+        "fuel level"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An odometer counts distance and a tachometer shows engine speed in revolutions per minute. Road speed is read on the speedometer."
+    },
+    {
+      "id": "AFOQT-T2-002",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Opening part",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Prologue is to novel as overture is to:",
+      "options": [
+        "melody",
+        "finale",
+        "orchestra",
+        "opera",
+        "conductor"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A prologue opens a novel and an overture opens an opera. The finale is the closing part, and the orchestra plays the overture rather than being opened by it."
+    },
+    {
+      "id": "AFOQT-T2-003",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Antonyms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Diligent is to lazy as candid is to:",
+      "options": [
+        "shy",
+        "frank",
+        "rude",
+        "truthful",
+        "evasive"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Diligent and lazy are opposites, and the opposite of candid (open and direct) is evasive. Frank and truthful are synonyms of candid."
+    },
+    {
+      "id": "AFOQT-T2-004",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Worker and material",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Carpenter is to lumber as potter is to:",
+      "options": [
+        "clay",
+        "studio",
+        "vase",
+        "wheel",
+        "kiln"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A carpenter shapes lumber and a potter shapes clay. The wheel and the kiln are a potter's equipment and the vase is the finished product."
+    },
+    {
+      "id": "AFOQT-T2-005",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Young to adult",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Larva is to butterfly as tadpole is to:",
+      "options": [
+        "egg",
+        "frog",
+        "minnow",
+        "fish",
+        "pond"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A larva grows into a butterfly and a tadpole grows into a frog. The egg comes before the tadpole, and the pond is only where it lives."
+    },
+    {
+      "id": "AFOQT-T2-006",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Description of a place",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Arid is to desert as frigid is to:",
+      "options": [
+        "prairie",
+        "savanna",
+        "tundra",
+        "jungle",
+        "marsh"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Arid (very dry) describes a desert and frigid (very cold) describes the tundra. A jungle is hot and wet."
+    },
+    {
+      "id": "AFOQT-T2-007",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Tool and what it drives",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Hammer is to nail as:",
+      "options": [
+        "drill is to hole",
+        "glue is to paper",
+        "paintbrush is to canvas",
+        "screwdriver is to screw",
+        "saw is to wood"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A hammer drives a nail and a screwdriver drives a screw. A saw cuts wood and a drill makes a hole, so they act on a material rather than driving a fastener."
+    },
+    {
+      "id": "AFOQT-T2-008",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Antonyms",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Ambiguous is to clear as transient is to:",
+      "options": [
+        "moving",
+        "brief",
+        "temporary",
+        "unclear",
+        "permanent"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Ambiguous is the opposite of clear, and transient (passing quickly) is the opposite of permanent. Brief and temporary are synonyms of transient."
+    },
+    {
+      "id": "AFOQT-T2-009",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Whole to member",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Galaxy is to star as forest is to:",
+      "options": [
+        "tree",
+        "park",
+        "leaf",
+        "ranger",
+        "branch"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A galaxy is made up of many stars and a forest of many trees. A leaf is part of a tree, one level too small."
+    },
+    {
+      "id": "AFOQT-T2-010",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Leader and group",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Shepherd is to flock as conductor is to:",
+      "options": [
+        "concert",
+        "orchestra",
+        "performance",
+        "baton",
+        "music"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A shepherd leads a flock and a conductor leads an orchestra. The baton is the conductor's tool and the composer writes the music."
+    },
+    {
+      "id": "AFOQT-T2-011",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Absence of a sense",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Inaudible is to sound as:",
+      "options": [
+        "loud is to volume",
+        "transparent is to glass",
+        "invisible is to sight",
+        "audible is to ear",
+        "blind is to eye"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Something inaudible cannot be heard, and something invisible cannot be seen. Blind describes a person, not a thing that cannot be seen."
+    },
+    {
+      "id": "AFOQT-T2-012",
+      "section": "va",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Skill in an area",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Fluent is to speech as nimble is to:",
+      "options": [
+        "reflexes",
+        "clumsy",
+        "speed",
+        "movement",
+        "dancer"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Fluent describes smooth, skilled speech and nimble describes quick, skilled movement. Clumsy is the opposite of nimble."
+    },
+    {
+      "id": "AFOQT-T2-013",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Rate",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "rateProblems",
+      "stem": "A vehicle travels 28 miles on each gallon of fuel. How many gallons does it use on a 350-mile trip?",
+      "options": [
+        "10 gallons",
+        "11.5 gallons",
+        "12.5 gallons",
+        "13 gallons",
+        "14 gallons"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Divide the distance by the miles per gallon: 350 / 28 = 12.5 gallons."
+    },
+    {
+      "id": "AFOQT-T2-014",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Distance, rate and time",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "rateProblems",
+      "stem": "A truck drives 81 miles at 54 miles per hour. How many minutes does the trip take?",
+      "options": [
+        "75 minutes",
+        "81 minutes",
+        "90 minutes",
+        "96 minutes",
+        "105 minutes"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Time is 81 / 54 = 1.5 hours, which is 90 minutes."
+    },
+    {
+      "id": "AFOQT-T2-015",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Percents",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "percents",
+      "stem": "Of 250 cadets, 36% are seniors. How many cadets are not seniors?",
+      "options": [
+        "90",
+        "136",
+        "150",
+        "160",
+        "214"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "36% of 250 is 90 seniors, so 250 - 90 = 160 are not. 90 is the number of seniors."
+    },
+    {
+      "id": "AFOQT-T2-016",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Discounts",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "percents",
+      "stem": "After a 25% discount, a jacket costs \\$36. What was its price before the discount?",
+      "options": [
+        "\\$27",
+        "\\$45",
+        "\\$48",
+        "\\$54",
+        "\\$61"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The sale price is 75% of the original, so the original is 36 / 0.75 = 48 dollars. Adding 25% of 36 gives 45 dollars, which takes the percent of the wrong price."
+    },
+    {
+      "id": "AFOQT-T2-017",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Work rates",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "ratios",
+      "stem": "Five workers can paint a building in 12 days. Working at the same rate, how many days would 6 workers take?",
+      "options": [
+        "8 days",
+        "10 days",
+        "11 days",
+        "14.4 days",
+        "15 days"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The job is 5 x 12 = 60 worker-days, and 60 / 6 = 10 days. More workers means fewer days, so 14.4 days runs the proportion the wrong way."
+    },
+    {
+      "id": "AFOQT-T2-018",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Ratios",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "ratios",
+      "stem": "Concrete is mixed from cement, sand and gravel in the ratio 1 to 2 to 3 by weight. How many pounds of sand are in a 540-pound batch?",
+      "options": [
+        "90 pounds",
+        "135 pounds",
+        "180 pounds",
+        "216 pounds",
+        "270 pounds"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The ratio has 6 parts of 90 pounds each, and sand is 2 parts: 180 pounds."
+    },
+    {
+      "id": "AFOQT-T2-019",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Circles",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A circular track has a radius of 70 meters. Using 22/7 for pi, how far is one lap?",
+      "options": [
+        "220 meters",
+        "440 meters",
+        "490 meters",
+        "880 meters",
+        "15,400 meters"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Circumference is 2 x pi x r = 2 x 22/7 x 70 = 440 meters. 220 meters uses the radius in place of the diameter, and 15,400 is the area in square meters."
+    },
+    {
+      "id": "AFOQT-T2-020",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Elapsed time",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "wordProblems",
+      "stem": "A flight departs at 2245 and lands at 0130 the next morning. How long is the flight?",
+      "options": [
+        "21 hr 15 min",
+        "3 hr 45 min",
+        "3 hr 15 min",
+        "2 hr 15 min",
+        "2 hr 45 min"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "From 2245 to midnight is 1 hour 15 minutes, and midnight to 0130 is 1 hour 30 minutes: 2 hours 45 minutes in all."
+    },
+    {
+      "id": "AFOQT-T2-021",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Consecutive integers",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "wordProblems",
+      "stem": "The sum of three consecutive even integers is 78. What is the largest of them?",
+      "options": [
+        "24",
+        "26",
+        "28",
+        "30",
+        "32"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The middle number is 78 / 3 = 26, so the integers are 24, 26 and 28. 26 is the middle one."
+    },
+    {
+      "id": "AFOQT-T2-022",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Right triangles",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A 13-foot ladder leans against a wall with its foot 5 feet from the wall. How high up the wall does it reach?",
+      "options": [
+        "8 feet",
+        "10 feet",
+        "12 feet",
+        "13.9 feet",
+        "18 feet"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The ladder is the hypotenuse: 13 squared minus 5 squared is 169 - 25 = 144, and the square root is 12 feet."
+    },
+    {
+      "id": "AFOQT-T2-023",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Mixtures",
+      "difficulty": 3,
+      "format": "single",
+      "basics": "wordProblems",
+      "stem": "A store mixes 3 pounds of nuts costing \\$4 a pound with 2 pounds costing \\$9 a pound. What is the cost per pound of the mixture?",
+      "options": [
+        "\\$5.00",
+        "\\$6.00",
+        "\\$6.50",
+        "\\$7.00",
+        "\\$13.00"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The mixture costs 12 + 18 = 30 dollars for 5 pounds, or 6 dollars a pound. Averaging 4 and 9 gives 6.50 dollars, which ignores that there is more of the cheaper nut."
+    },
+    {
+      "id": "AFOQT-T2-024",
+      "section": "ar",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Rate of climb",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "rateProblems",
+      "stem": "An aircraft at 3,000 feet climbs at 1,200 feet per minute. What is its altitude after 7.5 minutes?",
+      "options": [
+        "9,000 feet",
+        "10,500 feet",
+        "12,000 feet",
+        "12,600 feet",
+        "15,000 feet"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "It climbs 1,200 x 7.5 = 9,000 feet and started at 3,000, so it reaches 12,000 feet. 9,000 is only the height gained."
+    },
+    {
+      "id": "AFOQT-T2-025",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "AUGMENT most nearly means:",
+      "options": [
+        "increase",
+        "reduce",
+        "argue",
+        "praise",
+        "forecast"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To augment is to make larger, as in augmenting a crew. Reduce is the opposite."
+    },
+    {
+      "id": "AFOQT-T2-026",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "BENIGN most nearly means:",
+      "options": [
+        "fatal",
+        "double",
+        "sudden",
+        "dangerous",
+        "harmless"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Benign means not harmful, as a benign growth. Fatal is the opposite."
+    },
+    {
+      "id": "AFOQT-T2-027",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "CONCUR most nearly means:",
+      "options": [
+        "agree",
+        "conquer",
+        "compete",
+        "finish",
+        "recover"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To concur is to agree with an opinion. Conquer only looks similar."
+    },
+    {
+      "id": "AFOQT-T2-028",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "DEARTH most nearly means:",
+      "options": [
+        "shortage",
+        "fear",
+        "depth",
+        "death",
+        "abundance"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A dearth is a lack or scarcity, as a dearth of spare parts. Death and depth are traps from spelling."
+    },
+    {
+      "id": "AFOQT-T2-029",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "ELATED most nearly means:",
+      "options": [
+        "puzzled",
+        "exhausted",
+        "worried",
+        "overjoyed",
+        "delayed"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Elated means extremely happy. Delayed comes from the rhyme, not the meaning."
+    },
+    {
+      "id": "AFOQT-T2-030",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "FEASIBLE most nearly means:",
+      "options": [
+        "costly",
+        "feeble",
+        "fashionable",
+        "hidden",
+        "possible"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A feasible plan is one that can be carried out. Feeble only looks similar."
+    },
+    {
+      "id": "AFOQT-T2-031",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "HAMPER most nearly means:",
+      "options": [
+        "accompany",
+        "soften",
+        "store",
+        "obstruct",
+        "carry"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "As a verb, to hamper is to get in the way of, as fog hampers a search. Store comes from the noun, a basket for laundry."
+    },
+    {
+      "id": "AFOQT-T2-032",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "INCESSANT most nearly means:",
+      "options": [
+        "innocent",
+        "rare",
+        "sudden",
+        "loud",
+        "constant"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Incessant means going on without stopping. Rare is the opposite; loud describes volume, not how long it lasts."
+    },
+    {
+      "id": "AFOQT-T2-033",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "LUCID most nearly means:",
+      "options": [
+        "clear",
+        "heavy",
+        "lucky",
+        "angry",
+        "sleepy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lucid means clear and easy to understand, as a lucid briefing. Lucky only looks similar."
+    },
+    {
+      "id": "AFOQT-T2-034",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "MUNDANE most nearly means:",
+      "options": [
+        "exciting",
+        "ordinary",
+        "weekly",
+        "strange",
+        "clean"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Mundane describes dull, everyday things. Weekly comes from confusing it with Monday; exciting is the opposite."
+    },
+    {
+      "id": "AFOQT-T2-035",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "OBSOLETE most nearly means:",
+      "options": [
+        "obvious",
+        "broken",
+        "absolute",
+        "outdated",
+        "useful"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An obsolete item is no longer in use because something newer replaced it. It may still work, so broken is not the meaning."
+    },
+    {
+      "id": "AFOQT-T2-036",
+      "section": "wk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "TENACIOUS most nearly means:",
+      "options": [
+        "tender",
+        "temperamental",
+        "tense",
+        "fragile",
+        "persistent"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A tenacious person holds on and does not give up. Tense only shares the first letters."
+    },
+    {
+      "id": "AFOQT-T2-037",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Linear equations",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "solveX",
+      "stem": "If $\\frac{x}{4} + 3 = 9$, what is the value of $x$?",
+      "options": [
+        "3",
+        "6",
+        "12",
+        "24",
+        "48"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Subtract 3 to get x / 4 = 6, then multiply by 4: x = 24. 6 is the value of x / 4, not of x."
+    },
+    {
+      "id": "AFOQT-T2-038",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Monomials",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "exponentRules",
+      "stem": "Which is equal to $(3a^2b)(4ab^3)$?",
+      "options": [
+        "$12a^3b^3$",
+        "$12a^3b^4$",
+        "$7a^3b^4$",
+        "$12a^2b^3$",
+        "$7a^2b^4$"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Multiply the numbers (3 x 4 = 12) and add the exponents of each letter: $a^{2+1}b^{1+3} = a^3b^4$. Adding 3 and 4 instead of multiplying gives 7."
+    },
+    {
+      "id": "AFOQT-T2-039",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Primes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which of these numbers is prime?",
+      "options": [
+        "39",
+        "47",
+        "49",
+        "51",
+        "57"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "47 has no factors other than 1 and itself. 39 = 3 x 13, 49 = 7 x 7, 51 = 3 x 17 and 57 = 3 x 19."
+    },
+    {
+      "id": "AFOQT-T2-040",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Perimeter",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A rectangle has an area of 48 and a length of 8. What is its perimeter?",
+      "options": [
+        "14",
+        "24",
+        "28",
+        "40",
+        "56"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The width is 48 / 8 = 6, so the perimeter is 2 x (8 + 6) = 28. 14 adds one length and one width only."
+    },
+    {
+      "id": "AFOQT-T2-041",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Systems of equations",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "solveX",
+      "stem": "If $x + y = 10$ and $x - y = 4$, what is the value of $x$?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "7",
+        "14"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Adding the equations gives 2x = 14, so x = 7. 3 is the value of y."
+    },
+    {
+      "id": "AFOQT-T2-042",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Pythagorean theorem",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "pythagorean",
+      "stem": "A right triangle has legs of 9 and 12. How long is the hypotenuse?",
+      "options": [
+        "13",
+        "15",
+        "17",
+        "21",
+        "225"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "81 + 144 = 225, and the square root of 225 is 15. 21 just adds the legs, and 225 forgets the square root."
+    },
+    {
+      "id": "AFOQT-T2-043",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Squaring binomials",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "factoring",
+      "stem": "Which is equal to $(x + 3)^2$?",
+      "options": [
+        "$x^2 + 6x + 9$",
+        "$2x + 6$",
+        "$x^2 + 6x + 6$",
+        "$x^2 + 9$",
+        "$x^2 + 3x + 9$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "$(x + 3)(x + 3) = x^2 + 3x + 3x + 9 = x^2 + 6x + 9$. $x^2 + 9$ leaves out the middle term."
+    },
+    {
+      "id": "AFOQT-T2-044",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Fractions",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is $\\frac{2}{3} \\div \\frac{4}{9}$?",
+      "options": [
+        "$6$",
+        "$\\frac{8}{27}$",
+        "$\\frac{9}{4}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{3}{2}$"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Dividing by a fraction is multiplying by its reciprocal: $\\frac{2}{3} \\times \\frac{9}{4} = \\frac{18}{12} = \\frac{3}{2}$. $\\frac{8}{27}$ multiplies the fractions instead."
+    },
+    {
+      "id": "AFOQT-T2-045",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Volume",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the volume of a cube with edges of length 4?",
+      "options": [
+        "12",
+        "16",
+        "48",
+        "64",
+        "96"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Volume is edge cubed: 4 x 4 x 4 = 64. 96 is the surface area, six faces of 16."
+    },
+    {
+      "id": "AFOQT-T2-046",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Exponents",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "exponentRules",
+      "stem": "If $5^x = 125$, what is the value of $x$?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "25",
+        "120"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "5 x 5 x 5 = 125, so x = 3. 25 is 125 / 5, not the exponent."
+    },
+    {
+      "id": "AFOQT-T2-047",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Polygon angles",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the sum of the interior angles of a hexagon?",
+      "options": [
+        "360 degrees",
+        "540 degrees",
+        "720 degrees",
+        "900 degrees",
+        "1,080 degrees"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The sum is (n - 2) x 180 degrees, and a hexagon has 6 sides: 4 x 180 = 720. 540 degrees is a pentagon."
+    },
+    {
+      "id": "AFOQT-T2-048",
+      "section": "mk",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Absolute value equations",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which gives every solution of $|x - 2| = 5$?",
+      "options": [
+        "$x = 7$ or $x = -3$",
+        "$x = 7$ only",
+        "$x = -3$ only",
+        "$x = 3$ or $x = -7$",
+        "$x = 7$ or $x = 3$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "x - 2 can be 5 or -5, so x = 7 or x = -3. Stopping at x = 7 misses the negative case."
+    },
+    {
+      "id": "AFOQT-T2-049",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R1",
+      "stem": "The passage mainly argues that good night maintenance crews:",
+      "options": [
+        "rarely make mistakes on inspections",
+        "should work faster than day crews",
+        "are judged by on-time departures alone",
+        "need better evaluation forms",
+        "put honest reports ahead of speed"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage praises the willingness to say a job is not finished and leaders who treat a reported problem as no failure."
+    },
+    {
+      "id": "AFOQT-T2-050",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R1",
+      "stem": "According to the passage, a delay during the night:",
+      "options": [
+        "can cancel a sortie the next day",
+        "is common on the best crews",
+        "is reported on an evaluation form",
+        "matters less than a delay by day",
+        "always means a hidden problem"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says a delay at night becomes a canceled sortie the next day."
+    },
+    {
+      "id": "AFOQT-T2-051",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R1",
+      "stem": "The last sentence suggests that aircraft from the best night crews:",
+      "options": [
+        "fly fewer sorties than others",
+        "are always released on time",
+        "need more spare parts",
+        "are inspected again by the day crews",
+        "seldom return with unfixed faults"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Sometimes late but rarely sent back means problems are fixed before release, the trade the passage describes."
+    },
+    {
+      "id": "AFOQT-T2-052",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R2",
+      "stem": "According to the passage, the skin may feel dry in desert heat because:",
+      "options": [
+        "sweat dries almost as soon as it forms",
+        "thirst slows the loss of fluid",
+        "people drink too much water",
+        "shade keeps the body cool",
+        "the body stops sweating at all in dry air"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says sweat evaporates almost at once in dry air, so the skin feels dry while fluid is still being lost."
+    },
+    {
+      "id": "AFOQT-T2-053",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Inference",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R2",
+      "stem": "Guides plan drinking on a schedule mainly because:",
+      "options": [
+        "groups move faster that way",
+        "thirst shows up after performance drops",
+        "people dislike carrying water",
+        "drinking at midday is unsafe",
+        "water supplies in the desert are limited"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage calls thirst a late signal: by the time it is strong, performance has already begun to fall."
+    },
+    {
+      "id": "AFOQT-T2-054",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R2",
+      "stem": "Which title best fits the passage?",
+      "options": [
+        "Finding Shade at Midday",
+        "How Desert Guides Choose a Route",
+        "Keeping Sweat Off the Skin",
+        "The Hidden Risk of Losing Water",
+        "Why Deserts Are Hot"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Both paragraphs are about losing water without warning and how guides plan around it. Shade is only one of the measures."
+    },
+    {
+      "id": "AFOQT-T2-055",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R3",
+      "stem": "The author's main point is that adults learning a language:",
+      "options": [
+        "need to start before a certain age",
+        "can never lose a foreign accent",
+        "should study grammar before speaking",
+        "learn more slowly than children at every stage",
+        "do well if they use it often despite mistakes"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage says research is encouraging for adults and that regular use matters most, with embarrassment the more common barrier than age."
+    },
+    {
+      "id": "AFOQT-T2-056",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R3",
+      "stem": "According to the passage, adults tend to learn faster than children in the first months because they:",
+      "options": [
+        "can study rules and build on known words",
+        "spend more hours in class",
+        "feel less embarrassed than children",
+        "already speak several languages",
+        "end up with a more native-sounding accent"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage credits adults' early speed to studying rules deliberately and connecting new words to ones they know. Children, not adults, end up with the better accent."
+    },
+    {
+      "id": "AFOQT-T2-057",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Author's purpose",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R3",
+      "stem": "The author contrasts the learner who speaks with neighbors and the one who studies from a book in order to:",
+      "options": [
+        "show that practice beats careful study alone",
+        "argue that books are useless for adult learners",
+        "describe a typical classroom",
+        "prove that neighbors make good teachers",
+        "explain why accents differ"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The comparison supports the claim that regular use matters most for adults. It does not say books are useless."
+    },
+    {
+      "id": "AFOQT-T2-058",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R4",
+      "stem": "The passage is mainly about:",
+      "options": [
+        "how to build bridges faster",
+        "how engineers learned to design for wind",
+        "why scale models are expensive",
+        "a single famous bridge collapse",
+        "the heaviest loads that long bridges can carry"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage traces the shift from judging bridges by weight alone to testing how they move in wind."
+    },
+    {
+      "id": "AFOQT-T2-059",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R4",
+      "stem": "According to the passage, openings in some bridge decks:",
+      "options": [
+        "reduce the cost of building",
+        "make the deck lighter to carry",
+        "allow inspectors to reach the cables",
+        "break up the steady push of the wind",
+        "let rainwater drain from the road"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says some decks include openings that break up the steady push of the wind."
+    },
+    {
+      "id": "AFOQT-T2-060",
+      "section": "rc",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-R4",
+      "stem": "It can be inferred that the bridges that failed in the last century:",
+      "options": [
+        "were built too heavy to stand the wind",
+        "used decks with openings",
+        "failed because of traffic weight",
+        "had been tested in wind tunnels",
+        "were strong enough for their loads"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage says a structure strong enough for its load could still be shaken apart by wind, which is the lesson those failures taught."
+    },
+    {
+      "id": "AFOQT-T2-061",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Kinetic energy",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the kinetic energy of a 2-kilogram ball moving at 3 meters per second?",
+      "options": [
+        "3 J",
+        "6 J",
+        "9 J",
+        "12 J",
+        "18 J"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Kinetic energy is one half m v squared: 0.5 x 2 x 9 = 9 joules. Forgetting the one half gives 18."
+    },
+    {
+      "id": "AFOQT-T2-062",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Units",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which unit measures power?",
+      "options": [
+        "joule",
+        "ampere",
+        "volt",
+        "newton",
+        "watt"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Power is energy per unit time, measured in watts (joules per second). The joule measures the energy itself."
+    },
+    {
+      "id": "AFOQT-T2-063",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Free fall",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Ignoring air resistance, what is the acceleration of a falling object near Earth's surface?",
+      "options": [
+        "1.0 m/s²",
+        "4.9 m/s²",
+        "9.8 m/s²",
+        "19.6 m/s²",
+        "32 m/s²"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Gravity accelerates falling objects at about 9.8 meters per second squared. 32 is the figure in feet per second squared, not meters."
+    },
+    {
+      "id": "AFOQT-T2-064",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Pressure",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A force of 600 newtons presses evenly on an area of 3 square meters. What is the pressure?",
+      "options": [
+        "0.005 Pa",
+        "200 Pa",
+        "603 Pa",
+        "1,800 Pa",
+        "2,000 Pa"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Pressure is force over area: 600 / 3 = 200 pascals. Multiplying gives 1,800."
+    },
+    {
+      "id": "AFOQT-T2-065",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Potential energy",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A 5-kilogram box is raised 4 meters. Using 10 m/s² for gravity, how much potential energy does it gain?",
+      "options": [
+        "9 J",
+        "20 J",
+        "50 J",
+        "200 J",
+        "2,000 J"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Potential energy is m g h: 5 x 10 x 4 = 200 joules. 20 leaves out gravity."
+    },
+    {
+      "id": "AFOQT-T2-066",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Simple machines",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A screw is best described as:",
+      "options": [
+        "an inclined plane wrapped around a post",
+        "two levers joined at a pin",
+        "a grooved wheel carrying a rope",
+        "a lever turning about a fixed point",
+        "a wheel fixed firmly to a smaller axle"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The thread of a screw is a long ramp wound around a cylinder, which trades distance turned for force. A grooved wheel with a rope is a pulley."
+    },
+    {
+      "id": "AFOQT-T2-067",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Sound",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Sound cannot travel through:",
+      "options": [
+        "water",
+        "a vacuum",
+        "solid steel",
+        "air",
+        "wood"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sound is a vibration passed from particle to particle, so it needs a medium. Empty space has none; sound actually travels faster in water and steel than in air."
+    },
+    {
+      "id": "AFOQT-T2-068",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Power",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A motor does 600 joules of work in 20 seconds. What is its power?",
+      "options": [
+        "0.03 W",
+        "12 W",
+        "30 W",
+        "580 W",
+        "12,000 W"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Power is work over time: 600 / 20 = 30 watts. Multiplying gives 12,000."
+    },
+    {
+      "id": "AFOQT-T2-069",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Units",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which is the SI base unit of temperature?",
+      "options": [
+        "degree Fahrenheit",
+        "calorie",
+        "joule",
+        "kelvin",
+        "degree Celsius"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The kelvin is one of the seven SI base units. The degree Celsius is a derived unit defined from the kelvin."
+    },
+    {
+      "id": "AFOQT-T2-070",
+      "section": "ps",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Momentum",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "What is the momentum of a 1,000-kilogram car moving at 20 meters per second?",
+      "options": [
+        "50 kg·m/s",
+        "1,020 kg·m/s",
+        "10,000 kg·m/s",
+        "20,000 kg·m/s",
+        "200,000 kg·m/s"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Momentum is mass times velocity: 1,000 x 20 = 20,000 kilogram-meters per second. 1,020 adds the numbers instead."
+    },
+    {
+      "id": "AFOQT-T2-071",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = -3, Y = 0?",
+      "options": [
+        "16",
+        "23",
+        "57",
+        "87",
+        "88"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -3 column and down to the Y = 0 row: the entry is 57. 88 is at X = 0, Y = -3, with X and Y swapped; 23 is at X = -2, Y = 0, one cell away; 87 is at X = -3, Y = +1, one cell away; 16 is at X = -3, Y = -1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-072",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = 0, Y = 0?",
+      "options": [
+        "17",
+        "34",
+        "50",
+        "54",
+        "63"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = 0 column and down to the Y = 0 row: the entry is 34. 63 is at X = +1, Y = 0, one cell away; 54 is at X = -1, Y = 0, one cell away; 17 is at X = 0, Y = +1, one cell away; 50 is at X = 0, Y = -1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-073",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = +3, Y = 0?",
+      "options": [
+        "11",
+        "30",
+        "75",
+        "80",
+        "87"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +3 column and down to the Y = 0 row: the entry is 11. 80 is at X = 0, Y = +3, with X and Y swapped; 30 is at X = +2, Y = 0, one cell away; 75 is at X = +3, Y = +1, one cell away; 87 is at X = +3, Y = -1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-074",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = +1, Y = +1?",
+      "options": [
+        "16",
+        "17",
+        "37",
+        "63",
+        "70"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +1 column and down to the Y = +1 row: the entry is 16. 70 is at X = +2, Y = +1, one cell away; 17 is at X = 0, Y = +1, one cell away; 37 is at X = +1, Y = +2, one cell away; 63 is at X = +1, Y = 0, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-075",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = -2, Y = 0?",
+      "options": [
+        "17",
+        "23",
+        "54",
+        "57",
+        "60"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -2 column and down to the Y = 0 row: the entry is 23. 17 is at X = 0, Y = -2, with X and Y swapped; 54 is at X = -1, Y = 0, one cell away; 57 is at X = -3, Y = 0, one cell away; 60 is at X = -2, Y = +1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-076",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = -3, Y = -1?",
+      "options": [
+        "16",
+        "57",
+        "58",
+        "90",
+        "94"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -3 column and down to the Y = -1 row: the entry is 16. 58 is at X = -1, Y = -3, with X and Y swapped; 94 is at X = -2, Y = -1, one cell away; 57 is at X = -3, Y = 0, one cell away; 90 is at X = -3, Y = -2, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-077",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = +2, Y = -2?",
+      "options": [
+        "53",
+        "64",
+        "68",
+        "73",
+        "79"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = -2 row: the entry is 68. 64 is at X = -2, Y = +2, with X and Y swapped; 73 is at X = +3, Y = -2, one cell away; 53 is at X = +1, Y = -2, one cell away; 79 is at X = +2, Y = -1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-078",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = +3, Y = +2?",
+      "options": [
+        "35",
+        "60",
+        "75",
+        "76",
+        "88"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +3 column and down to the Y = +2 row: the entry is 60. 88 is at X = +2, Y = +3, with X and Y swapped; 35 is at X = +2, Y = +2, one cell away; 76 is at X = +3, Y = +3, one cell away; 75 is at X = +3, Y = +1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-079",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = +2, Y = +1?",
+      "options": [
+        "16",
+        "35",
+        "37",
+        "70",
+        "75"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 70. 37 is at X = +1, Y = +2, with X and Y swapped; 75 is at X = +3, Y = +1, one cell away; 16 is at X = +1, Y = +1, one cell away; 35 is at X = +2, Y = +2, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-080",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR1",
+      "stem": "What is the entry at X = -3, Y = +1?",
+      "options": [
+        "35",
+        "49",
+        "57",
+        "60",
+        "87"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -3 column and down to the Y = +1 row: the entry is 87. 49 is at X = +1, Y = -3, with X and Y swapped; 60 is at X = -2, Y = +1, one cell away; 35 is at X = -3, Y = +2, one cell away; 57 is at X = -3, Y = 0, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-081",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = -2, Y = 0?",
+      "options": [
+        "68",
+        "72",
+        "79",
+        "90",
+        "99"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -2 column and down to the Y = 0 row: the entry is 99. 90 is at X = 0, Y = -2, with X and Y swapped; 72 is at X = -1, Y = 0, one cell away; 79 is at X = -3, Y = 0, one cell away; 68 is at X = -2, Y = +1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-082",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = -1, Y = 0?",
+      "options": [
+        "39",
+        "48",
+        "72",
+        "78",
+        "99"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -1 column and down to the Y = 0 row: the entry is 72. 78 is at X = 0, Y = -1, with X and Y swapped; 39 is at X = 0, Y = 0, one cell away; 99 is at X = -2, Y = 0, one cell away; 48 is at X = -1, Y = +1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-083",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = -1, Y = +1?",
+      "options": [
+        "22",
+        "38",
+        "39",
+        "48",
+        "68"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -1 column and down to the Y = +1 row: the entry is 48. 39 is at X = +1, Y = -1, with X and Y swapped; 22 is at X = 0, Y = +1, one cell away; 68 is at X = -2, Y = +1, one cell away; 38 is at X = -1, Y = +2, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-084",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = +1, Y = +2?",
+      "options": [
+        "13",
+        "46",
+        "61",
+        "65",
+        "91"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +1 column and down to the Y = +2 row: the entry is 65. 13 is at X = +2, Y = +1, with X and Y swapped; 46 is at X = +2, Y = +2, one cell away; 91 is at X = 0, Y = +2, one cell away; 61 is at X = +1, Y = +3, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-085",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = 0, Y = -3?",
+      "options": [
+        "41",
+        "45",
+        "72",
+        "79",
+        "90"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = 0 column and down to the Y = -3 row: the entry is 45. 79 is at X = -3, Y = 0, with X and Y swapped; 72 is at X = +1, Y = -3, one cell away; 41 is at X = -1, Y = -3, one cell away; 90 is at X = 0, Y = -2, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-086",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = -2, Y = -2?",
+      "options": [
+        "11",
+        "17",
+        "48",
+        "53",
+        "76"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -2 column and down to the Y = -2 row: the entry is 76. 11 is at X = -1, Y = -2, one cell away; 53 is at X = -3, Y = -2, one cell away; 48 is at X = -2, Y = -1, one cell away; 17 is at X = -2, Y = -3, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-087",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = +2, Y = -1?",
+      "options": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "50"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = -1 row: the entry is 36. 38 is at X = -1, Y = +2, with X and Y swapped; 37 is at X = +3, Y = -1, one cell away; 39 is at X = +1, Y = -1, one cell away; 50 is at X = +2, Y = 0, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-088",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = -3, Y = +3?",
+      "options": [
+        "18",
+        "25",
+        "61",
+        "80",
+        "85"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -3 column and down to the Y = +3 row: the entry is 25. 85 is at X = +3, Y = -3, with X and Y swapped; 61 is at X = -3, Y = +2, one cell away; 80 is at X = +3, Y = +3, where X has the wrong sign; 18 is at X = -3, Y = -3, where Y has the wrong sign."
+    },
+    {
+      "id": "AFOQT-T2-089",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = -1, Y = +3?",
+      "options": [
+        "37",
+        "38",
+        "66",
+        "85",
+        "90"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -1 column and down to the Y = +3 row: the entry is 66. 37 is at X = +3, Y = -1, with X and Y swapped; 90 is at X = 0, Y = +3, one cell away; 85 is at X = -2, Y = +3, one cell away; 38 is at X = -1, Y = +2, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-090",
+      "section": "tr",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-T2-TR2",
+      "stem": "What is the entry at X = -3, Y = +2?",
+      "options": [
+        "25",
+        "26",
+        "61",
+        "71",
+        "76"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -3 column and down to the Y = +2 row: the entry is 61. 76 is at X = +2, Y = -3, with X and Y swapped; 26 is at X = -2, Y = +2, one cell away; 25 is at X = -3, Y = +3, one cell away; 71 is at X = -3, Y = +1, one cell away."
+    },
+    {
+      "id": "AFOQT-T2-091",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Flight controls",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Moving the elevator changes an aircraft's:",
+      "options": [
+        "roll",
+        "thrust",
+        "yaw",
+        "weight",
+        "pitch"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The elevator on the horizontal tail moves the nose up and down, which is pitch. Roll comes from the ailerons."
+    },
+    {
+      "id": "AFOQT-T2-092",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Wing devices",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Spoilers on a wing are raised to:",
+      "options": [
+        "add thrust",
+        "cool the engines",
+        "lower the landing gear",
+        "add lift",
+        "reduce lift"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Spoilers disrupt the airflow over the wing and cut lift, which helps slow an aircraft after landing. Flaps and slats are the devices that add lift."
+    },
+    {
+      "id": "AFOQT-T2-093",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Four forces",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In which direction does lift act?",
+      "options": [
+        "at right angles to the flight path",
+        "opposite to the direction of flight",
+        "along the flight path",
+        "straight toward the ground",
+        "along the engine's thrust line"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lift acts perpendicular to the direction of flight. Drag is the force that acts along the flight path against the motion."
+    },
+    {
+      "id": "AFOQT-T2-094",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Atmosphere",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "How does air density change as altitude increases in the lower atmosphere?",
+      "options": [
+        "It stays the same",
+        "It doubles",
+        "It rises, then falls",
+        "It decreases",
+        "It increases"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Pressure and density both fall with altitude, which is why wings and engines get less from each breath of air higher up."
+    },
+    {
+      "id": "AFOQT-T2-095",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Bernoulli",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Along a streamline, where the airflow speeds up, the static pressure:",
+      "options": [
+        "becomes the total pressure",
+        "rises",
+        "doubles",
+        "stays the same",
+        "falls"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Bernoulli's equation keeps static plus dynamic pressure constant, so when speed and dynamic pressure rise, static pressure falls."
+    },
+    {
+      "id": "AFOQT-T2-096",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Instruments",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A pitot-static tube compares total pressure with static pressure to find:",
+      "options": [
+        "airspeed",
+        "engine speed",
+        "heading",
+        "fuel flow",
+        "outside air temperature"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The difference between total and static pressure is the dynamic pressure, which gives airspeed. Heading comes from a compass."
+    },
+    {
+      "id": "AFOQT-T2-097",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Stability",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Control surfaces rotate an aircraft about its:",
+      "options": [
+        "wing root",
+        "leading edge",
+        "nose wheel",
+        "center of pressure",
+        "center of gravity"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The aircraft rotates about its center of gravity, the average location of its weight. The center of pressure is where lift can be treated as acting."
+    },
+    {
+      "id": "AFOQT-T2-098",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Engines",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The C-130 cargo aircraft is powered by which type of engine?",
+      "options": [
+        "turboprop",
+        "rocket",
+        "ramjet",
+        "high-bypass turbofan",
+        "turbojet"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The C-130 uses four turboprop engines for long-range cargo flights. The T-38 trainer is an example of an aircraft with turbojets."
+    },
+    {
+      "id": "AFOQT-T2-099",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Aircraft parts",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Winglets on the tips of a wing are added to:",
+      "options": [
+        "roll the aircraft",
+        "reduce drag",
+        "store fuel",
+        "add thrust",
+        "steer on the ground"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Winglets weaken the wingtip vortices and so reduce drag. Rolling the aircraft is done by the ailerons."
+    },
+    {
+      "id": "AFOQT-T2-100",
+      "section": "ai",
+      "test": 2,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Drag",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Compared with a short, wide wing of the same area, a long, thin wing has:",
+      "options": [
+        "more form drag",
+        "no skin friction",
+        "the same induced drag",
+        "lower induced drag",
+        "higher induced drag"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Long, thin wings produce weaker tip vortices and so less induced drag. The Wright brothers' 1902 glider, with a longer span and a shorter chord than their 1901 design, flew better for this reason."
+    },
+    {
+      "id": "AFOQT-D-001",
+      "section": "va",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Small start to large result",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Spark is to blaze as seed is to:",
+      "options": [
+        "harvest",
+        "garden",
+        "root",
+        "soil",
+        "tree"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A spark grows into a blaze and a seed grows into a tree. Soil is what the seed grows in, not what it becomes."
+    },
+    {
+      "id": "AFOQT-D-002",
+      "section": "va",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Worker and material",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Mason is to stone as tailor is to:",
+      "options": [
+        "cloth",
+        "pattern",
+        "shop",
+        "suit",
+        "needle"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A mason works stone and a tailor works cloth. The needle is the tailor's tool and the suit is the product."
+    },
+    {
+      "id": "AFOQT-D-003",
+      "section": "va",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Antonyms",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Cautious is to reckless as humble is to:",
+      "options": [
+        "modest",
+        "arrogant",
+        "polite",
+        "quiet",
+        "grateful"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Cautious and reckless are opposites, so humble pairs with its opposite, arrogant. Modest means nearly the same as humble."
+    },
+    {
+      "id": "AFOQT-D-004",
+      "section": "va",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Instrument and what it shows",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Compass is to direction as clock is to:",
+      "options": [
+        "alarm",
+        "wall",
+        "time",
+        "hour",
+        "speed"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A compass shows direction and a clock shows time. An hour is one unit of time, not the quantity the clock shows."
+    },
+    {
+      "id": "AFOQT-D-005",
+      "section": "va",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Body part for moving",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Wing is to bird as:",
+      "options": [
+        "horn is to goat",
+        "shell is to turtle",
+        "claw is to cat",
+        "fin is to fish",
+        "scale is to snake"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A bird moves through the air with its wings and a fish moves through water with its fins. Scales and shells protect the body rather than move it."
+    },
+    {
+      "id": "AFOQT-D-006",
+      "section": "va",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtVerbal",
+      "skill": "Synonyms",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Benevolent is to kind as obstinate is to:",
+      "options": [
+        "clever",
+        "flexible",
+        "agreeable",
+        "obvious",
+        "stubborn"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Benevolent means kind, and obstinate means stubborn. Flexible and agreeable are close to the opposite."
+    },
+    {
+      "id": "AFOQT-D-007",
+      "section": "ar",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Speed",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "rateProblems",
+      "stem": "A car covers 15 miles in 20 minutes. What is its average speed in miles per hour?",
+      "options": [
+        "30 mph",
+        "35 mph",
+        "45 mph",
+        "50 mph",
+        "75 mph"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "20 minutes is 1/3 of an hour, so the speed is 15 x 3 = 45 miles per hour."
+    },
+    {
+      "id": "AFOQT-D-008",
+      "section": "ar",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Percents",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "percents",
+      "stem": "40% of a number is 34. What is the number?",
+      "options": [
+        "13.6",
+        "47.6",
+        "74",
+        "85",
+        "94"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Divide the part by the percent: 34 / 0.40 = 85. 13.6 is 40% of 34, the reverse question."
+    },
+    {
+      "id": "AFOQT-D-009",
+      "section": "ar",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Volume and units",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "A crate measures 2 feet by 3 feet by 4 feet. What is its volume in cubic inches?",
+      "options": [
+        "288",
+        "3,456",
+        "20,736",
+        "41,472",
+        "82,944"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The volume is 24 cubic feet, and a cubic foot is 12 x 12 x 12 = 1,728 cubic inches, so 24 x 1,728 = 41,472. Multiplying by 12 only once gives 288."
+    },
+    {
+      "id": "AFOQT-D-010",
+      "section": "ar",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Percents",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "percents",
+      "stem": "A meal costs \\$40 and the diner adds a 15% tip. What is the total?",
+      "options": [
+        "\\$41.50",
+        "\\$44.00",
+        "\\$46.00",
+        "\\$48.00",
+        "\\$55.00"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "15% of 40 dollars is 6 dollars, so the total is 46 dollars."
+    },
+    {
+      "id": "AFOQT-D-011",
+      "section": "ar",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Wind and ground speed",
+      "difficulty": 3,
+      "format": "single",
+      "basics": "rateProblems",
+      "stem": "An aircraft flies 600 miles into a headwind in 3 hours and returns with the same wind behind it in 2 hours. What is the wind speed?",
+      "options": [
+        "25 mph",
+        "50 mph",
+        "75 mph",
+        "100 mph",
+        "250 mph"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Ground speeds are 200 and 300 miles per hour. The wind is half the difference: (300 - 200) / 2 = 50 miles per hour. 100 is the whole difference."
+    },
+    {
+      "id": "AFOQT-D-012",
+      "section": "ar",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtArithmetic",
+      "skill": "Signed numbers",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The temperature falls from 12 degrees to -9 degrees. By how many degrees did it fall?",
+      "options": [
+        "3 degrees",
+        "9 degrees",
+        "12 degrees",
+        "19 degrees",
+        "21 degrees"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The fall is 12 - (-9) = 21 degrees. Subtracting 9 from 12 gives 3, which treats -9 as 9 above zero."
+    },
+    {
+      "id": "AFOQT-D-013",
+      "section": "wk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "ADROIT most nearly means:",
+      "options": [
+        "skillful",
+        "awkward",
+        "direct",
+        "brave",
+        "courteous"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Adroit means clever or skillful with the hands or mind. Awkward is the opposite."
+    },
+    {
+      "id": "AFOQT-D-014",
+      "section": "wk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "COPIOUS most nearly means:",
+      "options": [
+        "plentiful",
+        "scarce",
+        "cozy",
+        "copied",
+        "comfortable"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Copious means in large amounts, as copious notes. Scarce is the opposite and copied is a spelling trap."
+    },
+    {
+      "id": "AFOQT-D-015",
+      "section": "wk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "PARSIMONIOUS most nearly means:",
+      "options": [
+        "generous",
+        "stingy",
+        "fragile",
+        "sensible",
+        "talkative"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A parsimonious person is extremely unwilling to spend money. Generous is the opposite."
+    },
+    {
+      "id": "AFOQT-D-016",
+      "section": "wk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "INNATE most nearly means:",
+      "options": [
+        "learned",
+        "polite",
+        "inborn",
+        "sudden",
+        "harmless"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An innate ability is one you are born with. Learned is the opposite."
+    },
+    {
+      "id": "AFOQT-D-017",
+      "section": "wk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "RETICENT most nearly means:",
+      "options": [
+        "eager",
+        "talkative",
+        "angry",
+        "reserved",
+        "retired"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A reticent person keeps thoughts and feelings to themselves. Talkative is the opposite."
+    },
+    {
+      "id": "AFOQT-D-018",
+      "section": "wk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtWord",
+      "skill": "Closest meaning",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "VIGILANT most nearly means:",
+      "options": [
+        "sleepy",
+        "vigorous",
+        "violent",
+        "careless",
+        "watchful"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A vigilant guard stays alert for danger. Vigorous shares the first letters but means energetic."
+    },
+    {
+      "id": "AFOQT-D-019",
+      "section": "mk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Mean",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the mean of 4, 9, 11 and 16?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12",
+        "40"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The sum is 40 and there are four numbers, so the mean is 10. 40 is the sum, not the mean."
+    },
+    {
+      "id": "AFOQT-D-020",
+      "section": "mk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Exponents",
+      "difficulty": 1,
+      "format": "single",
+      "basics": "exponentRules",
+      "stem": "Which is equal to $\\frac{x^8}{x^2}$?",
+      "options": [
+        "$x^6$",
+        "$x^4$",
+        "$6x$",
+        "$x^{16}$",
+        "$x^{10}$"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "When powers of the same base are divided, the exponents subtract: 8 - 2 = 6. Dividing the exponents gives $x^4$."
+    },
+    {
+      "id": "AFOQT-D-021",
+      "section": "mk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Linear equations",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "solveX",
+      "stem": "If $4(x - 2) = 2x + 6$, what is the value of $x$?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "7",
+        "14"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Distribute to get 4x - 8 = 2x + 6, so 2x = 14 and x = 7. 14 is 2x."
+    },
+    {
+      "id": "AFOQT-D-022",
+      "section": "mk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Triangle angles",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "One acute angle of a right triangle measures 35 degrees. What does the other acute angle measure?",
+      "options": [
+        "35 degrees",
+        "55 degrees",
+        "65 degrees",
+        "125 degrees",
+        "145 degrees"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The angles of a triangle add to 180 and the right angle takes 90, so the acute angles add to 90: 90 - 35 = 55."
+    },
+    {
+      "id": "AFOQT-D-023",
+      "section": "mk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Square roots",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is $\\sqrt{49} + \\sqrt{36}$?",
+      "options": [
+        "1",
+        "11",
+        "13",
+        "42",
+        "85"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The square roots are 7 and 6, and 7 + 6 = 13. 85 adds the numbers under the roots."
+    },
+    {
+      "id": "AFOQT-D-024",
+      "section": "mk",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtMath",
+      "skill": "Distance formula",
+      "difficulty": 2,
+      "format": "single",
+      "basics": "pythagorean",
+      "stem": "What is the distance between the points $(-2, 3)$ and $(4, 11)$?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "14",
+        "100"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The legs are 4 - (-2) = 6 and 11 - 3 = 8, and the square root of 36 + 64 = 100 is 10. 100 forgets the square root."
+    },
+    {
+      "id": "AFOQT-D-025",
+      "section": "rc",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-D-R1",
+      "stem": "The passage mainly describes:",
+      "options": [
+        "the long history of volunteer departments",
+        "why sirens are used in small towns",
+        "how to become a firefighter",
+        "the cost of fire trucks",
+        "why rural fire crews are harder to fill"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage explains the recruiting problem and the responses departments have tried."
+    },
+    {
+      "id": "AFOQT-D-026",
+      "section": "rc",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-R1",
+      "stem": "According to the passage, one reason recruiting is harder is that young people:",
+      "options": [
+        "often move away or work far off",
+        "dislike training on weekend evenings",
+        "lack the needed fitness",
+        "cannot afford radios",
+        "prefer paid departments"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says fewer young people stay in their towns, and those who do often commute too far to answer daytime calls."
+    },
+    {
+      "id": "AFOQT-D-027",
+      "section": "rc",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Inference",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "AFOQT-D-R1",
+      "stem": "The chiefs' report about shared crews suggests that sharing:",
+      "options": [
+        "costs more than paying a fee for each call",
+        "gets trucks out without ending the shortage",
+        "has solved the recruiting problem for good",
+        "is used only in large cities",
+        "has made volunteers unnecessary"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says neither approach solves the problem alone, but shared crews ensure that a truck leaves the station."
+    },
+    {
+      "id": "AFOQT-D-028",
+      "section": "rc",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Main idea",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-D-R2",
+      "stem": "The author's main point is that some old weather sayings:",
+      "options": [
+        "are all without any basis",
+        "apply only to sailors",
+        "came from radio forecasts",
+        "work as short-range forecasts",
+        "predict whole seasons accurately"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says the useful sayings survived because they described what an observer could see a few hours before a change."
+    },
+    {
+      "id": "AFOQT-D-029",
+      "section": "rc",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Detail",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "AFOQT-D-R2",
+      "stem": "According to the passage, a red evening sky often meant fair weather because:",
+      "options": [
+        "the sun sets in the east",
+        "animals behave calmly at dusk",
+        "storms form only at night",
+        "warm air rises quickly in the evening",
+        "weather tends to move west to east"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage ties the saying to weather moving from west to east, with clear air to the west lit by the setting sun."
+    },
+    {
+      "id": "AFOQT-D-030",
+      "section": "rc",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtReading",
+      "skill": "Author's purpose",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "AFOQT-D-R2",
+      "stem": "The author mentions the belief about animals predicting a hard winter in order to:",
+      "options": [
+        "give an example of an unsupported saying",
+        "argue against radio forecasts",
+        "explain how sailors forecast storms",
+        "describe a pattern of the middle latitudes",
+        "show that animals sense the weather"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage sets it apart from the sayings that rest on real patterns, as one that has little support."
+    },
+    {
+      "id": "AFOQT-D-031",
+      "section": "ps",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Circuits",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Resistors of 6 ohms and 3 ohms are connected in series. What is the total resistance?",
+      "options": [
+        "0.5 Ω",
+        "2 Ω",
+        "3 Ω",
+        "9 Ω",
+        "18 Ω"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Series resistances add: 6 + 3 = 9 ohms. 2 ohms is the result for the same resistors in parallel."
+    },
+    {
+      "id": "AFOQT-D-032",
+      "section": "ps",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Kinetic energy",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "If a moving object's speed triples, its kinetic energy becomes:",
+      "options": [
+        "unchanged",
+        "three times as great",
+        "twenty-seven times as great",
+        "six times as great",
+        "nine times as great"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Kinetic energy depends on speed squared, so tripling speed multiplies it by 3 x 3 = 9. Three times forgets the square."
+    },
+    {
+      "id": "AFOQT-D-033",
+      "section": "ps",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Mass and weight",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An astronaut carries a 10-kilogram tool from Earth to the Moon. On the Moon, the tool's mass:",
+      "options": [
+        "stays the same",
+        "rises about sixfold",
+        "falls to about one sixth",
+        "is cut in half",
+        "falls to zero"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mass is the amount of matter and does not change with location. Its weight, the pull of gravity, is what falls to about one sixth on the Moon."
+    },
+    {
+      "id": "AFOQT-D-034",
+      "section": "ps",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Pulleys",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "In an ideal pulley system, four rope segments support an 800-newton load. What effort is needed to lift it?",
+      "options": [
+        "100 N",
+        "200 N",
+        "400 N",
+        "796 N",
+        "3,200 N"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Four supporting segments give an ideal mechanical advantage of 4, so the effort is 800 / 4 = 200 newtons."
+    },
+    {
+      "id": "AFOQT-D-035",
+      "section": "ps",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Light",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "What is the bending of light as it passes from air into water called?",
+      "options": [
+        "reflection",
+        "polarization",
+        "refraction",
+        "absorption",
+        "diffraction"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Light changes speed and bends as it crosses into a new medium, which is refraction. Reflection is light bouncing off a surface."
+    },
+    {
+      "id": "AFOQT-D-036",
+      "section": "ps",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtScience",
+      "skill": "Speed",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A runner covers 150 meters in 12 seconds. What is the average speed?",
+      "options": [
+        "0.08 m/s",
+        "12.5 m/s",
+        "138 m/s",
+        "162 m/s",
+        "1,800 m/s"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Speed is distance over time: 150 / 12 = 12.5 meters per second."
+    },
+    {
+      "id": "AFOQT-D-037",
+      "section": "tr",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-TR1",
+      "stem": "What is the entry at X = +1, Y = -1?",
+      "options": [
+        "50",
+        "54",
+        "61",
+        "77",
+        "83"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +1 column and down to the Y = -1 row: the entry is 61. 83 is at X = -1, Y = +1, with X and Y swapped; 50 is at X = +2, Y = -1, one cell away; 77 is at X = 0, Y = -1, one cell away; 54 is at X = +1, Y = 0, one cell away."
+    },
+    {
+      "id": "AFOQT-D-038",
+      "section": "tr",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-TR1",
+      "stem": "What is the entry at X = +2, Y = +2?",
+      "options": [
+        "21",
+        "33",
+        "49",
+        "51",
+        "57"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = +2 row: the entry is 33. 21 is at X = +3, Y = +2, one cell away; 51 is at X = +1, Y = +2, one cell away; 57 is at X = +2, Y = +3, one cell away; 49 is at X = +2, Y = +1, one cell away."
+    },
+    {
+      "id": "AFOQT-D-039",
+      "section": "tr",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-TR1",
+      "stem": "What is the entry at X = +2, Y = +1?",
+      "options": [
+        "10",
+        "12",
+        "33",
+        "49",
+        "51"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = +1 row: the entry is 49. 51 is at X = +1, Y = +2, with X and Y swapped; 12 is at X = +3, Y = +1, one cell away; 10 is at X = +1, Y = +1, one cell away; 33 is at X = +2, Y = +2, one cell away."
+    },
+    {
+      "id": "AFOQT-D-040",
+      "section": "tr",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-TR1",
+      "stem": "What is the entry at X = +1, Y = +3?",
+      "options": [
+        "12",
+        "17",
+        "51",
+        "56",
+        "57"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +1 column and down to the Y = +3 row: the entry is 56. 12 is at X = +3, Y = +1, with X and Y swapped; 57 is at X = +2, Y = +3, one cell away; 17 is at X = 0, Y = +3, one cell away; 51 is at X = +1, Y = +2, one cell away."
+    },
+    {
+      "id": "AFOQT-D-041",
+      "section": "tr",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-TR1",
+      "stem": "What is the entry at X = 0, Y = -3?",
+      "options": [
+        "14",
+        "15",
+        "17",
+        "28",
+        "32"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = 0 column and down to the Y = -3 row: the entry is 17. 15 is at X = -3, Y = 0, with X and Y swapped; 28 is at X = +1, Y = -3, one cell away; 14 is at X = -1, Y = -3, one cell away; 32 is at X = 0, Y = -2, one cell away."
+    },
+    {
+      "id": "AFOQT-D-042",
+      "section": "tr",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-TR1",
+      "stem": "What is the entry at X = +2, Y = -3?",
+      "options": [
+        "28",
+        "29",
+        "30",
+        "39",
+        "58"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +2 column and down to the Y = -3 row: the entry is 29. 58 is at X = -3, Y = +2, with X and Y swapped; 39 is at X = +3, Y = -3, one cell away; 28 is at X = +1, Y = -3, one cell away; 30 is at X = +2, Y = -2, one cell away."
+    },
+    {
+      "id": "AFOQT-D-043",
+      "section": "tr",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-TR1",
+      "stem": "What is the entry at X = +1, Y = -2?",
+      "options": [
+        "17",
+        "30",
+        "32",
+        "55",
+        "61"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = +1 column and down to the Y = -2 row: the entry is 55. 17 is at X = -2, Y = +1, with X and Y swapped; 30 is at X = +2, Y = -2, one cell away; 32 is at X = 0, Y = -2, one cell away; 61 is at X = +1, Y = -1, one cell away."
+    },
+    {
+      "id": "AFOQT-D-044",
+      "section": "tr",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtTable",
+      "skill": "Reading a table",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "AFOQT-D-TR1",
+      "stem": "What is the entry at X = -3, Y = -3?",
+      "options": [
+        "39",
+        "52",
+        "68",
+        "85",
+        "91"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Go across to the X = -3 column and down to the Y = -3 row: the entry is 68. 52 is at X = -2, Y = -3, one cell away; 85 is at X = -3, Y = -2, one cell away; 39 is at X = +3, Y = -3, where X has the wrong sign; 91 is at X = -3, Y = +3, where Y has the wrong sign."
+    },
+    {
+      "id": "AFOQT-D-045",
+      "section": "ai",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Engines",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Large transport aircraft built to carry heavy loads over long distances in high-speed cruise, such as the DC-8 airliner, use which type of engine?",
+      "options": [
+        "solid-fuel rocket",
+        "pulsejet",
+        "ramjet",
+        "afterburning low-bypass turbofan",
+        "high-bypass turbofan"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Transports such as the DC-8 use high-bypass turbofans for long-distance cruise. Afterburning low-bypass turbofans suit fighters that need high acceleration in combat."
+    },
+    {
+      "id": "AFOQT-D-046",
+      "section": "ai",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Aircraft parts",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which part of an aircraft holds the crew, passengers and cargo?",
+      "options": [
+        "fuselage",
+        "vertical stabilizer",
+        "horizontal stabilizer",
+        "wing",
+        "winglet"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The fuselage is the long body of the aircraft that carries the crew, passengers and cargo. The wings make most of the lift."
+    },
+    {
+      "id": "AFOQT-D-047",
+      "section": "ai",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Wing devices",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Where on the wing are slats found?",
+      "options": [
+        "along the leading edge",
+        "on the horizontal tail",
+        "beneath the engines",
+        "on the trailing edge near the body",
+        "on the vertical tail"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Slats deploy from the front of the wing for takeoff and landing. The hinged sections on the trailing edge near the fuselage are flaps."
+    },
+    {
+      "id": "AFOQT-D-048",
+      "section": "ai",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Factors that affect lift",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "To make the same lift at a lower airspeed, a wing must be:",
+      "options": [
+        "cut to a smaller area",
+        "inclined less steeply to the airflow",
+        "flown higher, in thinner air",
+        "held at the same inclination",
+        "inclined more steeply to the airflow"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Lift depends on the velocity of the air and on how the wing is inclined to the flow. Less speed means less lift, so the wing must meet the air at a steeper angle to make up for it."
+    },
+    {
+      "id": "AFOQT-D-049",
+      "section": "ai",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Atmosphere",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the troposphere, as altitude increases, air temperature generally:",
+      "options": [
+        "stays the same",
+        "rises, then falls",
+        "doubles",
+        "rises",
+        "falls"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Temperature falls steadily with height through the troposphere, from a standard 59 degrees Fahrenheit at sea level."
+    },
+    {
+      "id": "AFOQT-D-050",
+      "section": "ai",
+      "test": 0,
+      "module": 1,
+      "domain": "afoqtAviation",
+      "skill": "Weight and balance",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "An aircraft's center of gravity is found from:",
+      "options": [
+        "weights times their distances",
+        "the wing's area and span",
+        "the airspeed and altitude",
+        "the fuel's grade and color",
+        "the engine's thrust and the drag"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Engineers add up each component's weight times its distance from a reference line and divide by the total weight. The result is the average location of the weight."
+    }
+  ]
+}

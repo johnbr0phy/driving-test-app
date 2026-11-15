@@ -62,6 +62,8 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
 const BORROWED_SETS: Record<string, string> = {
   dmv: "driving",
   hiset: "ged",
+  cbest: "praxis",
+  tabe: "ged",
   // Texas Biology EOC wears the AP Biology tiger.
   staarbio: "apbio",
   wonderlic: "asvab",
@@ -75,12 +77,12 @@ const BORROWED_SETS: Record<string, string> = {
   caon: "driving", caqc: "driving", cabc: "driving", caab: "driving", camb: "driving",
   aunsw: "driving", auvic: "driving", auqld: "driving", auwa: "driving", ausa: "driving", inrto: "driving",
   // Global certifications and nursing exams wear their nearest US exam's tiger.
-  awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex",
+  awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex", ccrn: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
-  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",
+  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",shsat: "sat",
   // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
   staareng1: "aplang",
   pkdrive: "driving",
@@ -126,6 +128,8 @@ const BORROWED_SETS: Record<string, string> = {
   // the defence exams the military-entrance (ASVAB) tiger, the Philippine LET the teacher-licensing (Praxis) tiger.
   upscse: "ssccgl", ssccpo: "ssccgl", rrbalp: "rrbntpc", rpfconst: "police",
   nda: "asvab", agniveer: "asvab", agniveervayu: "asvab", phlet: "praxis",
+  // The AFOQT borrows the military-entrance (ASVAB) tiger.
+  afoqt: "asvab",
   // Next-100 batch 4: the college entrance exams the college-entrance (SAT) tiger, the teacher eligibility tests
   // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
   jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
@@ -138,7 +142,7 @@ const BORROWED_SETS: Record<string, string> = {
   cca: "cpc",
   // Next-20 batch B reuses reviewed medical-assisting, dental, insurance, cloud and finance families.
   // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
-  cma: "ccma", nbdhe: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", cfal1: "series7",
+  cma: "ccma", nbdhe: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", cfal1: "series7",
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.

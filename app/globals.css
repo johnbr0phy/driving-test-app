@@ -1467,16 +1467,16 @@
   }
   /* SSAT theme: deep lime green (v2 exam; matches lib/v2/exams/ssat.ts theme) */
   [data-theme="ssat"] {
-    --brand: 91 95% 26%;
+    --brand: 331 95% 26%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 91 70% 95%;
-    --brand-hover: 91 95% 22%;
-    --brand-dark: 91 95% 18%;
-    --brand-darker: 91 90% 12%;
-    --brand-muted: 91 40% 70%;
-    --brand-border: 91 40% 78%;
-    --brand-border-light: 91 40% 88%;
-    --brand-gradient-to: 106 60% 94%;
+    --brand-light: 331 70% 95%;
+    --brand-hover: 331 95% 21%;
+    --brand-dark: 331 95% 19%;
+    --brand-darker: 331 90% 14%;
+    --brand-muted: 331 40% 70%;
+    --brand-border: 331 40% 78%;
+    --brand-border-light: 331 40% 88%;
+    --brand-gradient-to: 346 60% 94%;
   }
   /* CogAT theme: deep pine teal (v2 exam; matches lib/v2/exams/cogat.ts theme) */
   [data-theme="cogat"] {
@@ -1493,16 +1493,16 @@
   }
   /* HSPT theme: muted olive (v2 exam; matches lib/v2/exams/hspt.ts theme). 84 55% 38% failed white-text contrast (3.5:1). */
   [data-theme="hspt"] {
-    --brand: 84 25% 38%;
+    --brand: 48 20% 30%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 84 30% 95%;
-    --brand-hover: 84 25% 33%;
-    --brand-dark: 84 25% 29%;
-    --brand-darker: 84 25% 20%;
-    --brand-muted: 84 20% 70%;
-    --brand-border: 84 20% 78%;
-    --brand-border-light: 84 20% 88%;
-    --brand-gradient-to: 99 25% 94%;
+    --brand-light: 48 30% 95%;
+    --brand-hover: 48 20% 25%;
+    --brand-dark: 48 20% 23%;
+    --brand-darker: 48 15% 18%;
+    --brand-muted: 48 20% 70%;
+    --brand-border: 48 20% 78%;
+    --brand-border-light: 48 20% 88%;
+    --brand-gradient-to: 63 25% 94%;
   }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
@@ -4256,16 +4256,16 @@
 
   /* NAPLEX theme: deep pharmacy green (v2 exam; matches lib/v2/exams/naplex.ts theme) */
   [data-theme="naplex"] {
-    --brand: 132 55% 22%;
+    --brand: 184 55% 22%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 132 45% 95%;
-    --brand-hover: 132 55% 17%;
-    --brand-dark: 132 55% 15%;
-    --brand-darker: 132 50% 10%;
-    --brand-muted: 132 25% 65%;
-    --brand-border: 132 30% 78%;
-    --brand-border-light: 132 30% 90%;
-    --brand-gradient-to: 150 40% 96%;
+    --brand-light: 184 45% 95%;
+    --brand-hover: 184 55% 17%;
+    --brand-dark: 184 55% 15%;
+    --brand-darker: 184 50% 10%;
+    --brand-muted: 184 25% 65%;
+    --brand-border: 184 30% 78%;
+    --brand-border-light: 184 30% 90%;
+    --brand-gradient-to: 202 40% 96%;
   }
 
   /* JAMB Biology theme: muted leaf green (v2 exam; matches lib/v2/exams/jambbio.ts theme) */
@@ -6306,15 +6306,15 @@
     --brand-darker: 159 90% 78%;
   }
   .dark [data-theme="ssat"] {
-    --brand: 91 95% 26.6%;
-    --brand-hover: 91 95% 22%;
-    --brand-light: 91 45% 13%;
-    --brand-gradient-to: 106 40% 11%;
-    --brand-border-light: 91 35% 24%;
-    --brand-border: 91 40% 34%;
-    --brand-muted: 91 40% 45%;
-    --brand-dark: 91 95% 65%;
-    --brand-darker: 91 90% 78%;
+    --brand: 331 95% 45.8%;
+    --brand-hover: 331 95% 37.8%;
+    --brand-light: 331 45% 13%;
+    --brand-gradient-to: 346 40% 11%;
+    --brand-border-light: 331 35% 24%;
+    --brand-border: 331 40% 34%;
+    --brand-muted: 331 40% 45%;
+    --brand-dark: 331 95% 65%;
+    --brand-darker: 331 90% 78%;
   }
   .dark [data-theme="cogat"] {
     --brand: 174 40% 36%;
@@ -6328,15 +6328,15 @@
     --brand-darker: 174 40% 78%;
   }
   .dark [data-theme="hspt"] {
-    --brand: 84 25% 38.8%;
-    --brand-hover: 84 25% 33%;
-    --brand-light: 84 30% 13%;
-    --brand-gradient-to: 99 25% 11%;
-    --brand-border-light: 84 20% 24%;
-    --brand-border: 84 20% 34%;
-    --brand-muted: 84 20% 45%;
-    --brand-dark: 84 25% 65%;
-    --brand-darker: 84 25% 78%;
+    --brand: 48 20% 41%;
+    --brand-hover: 48 20% 33%;
+    --brand-light: 48 30% 13%;
+    --brand-gradient-to: 63 25% 11%;
+    --brand-border-light: 48 20% 24%;
+    --brand-border: 48 20% 34%;
+    --brand-muted: 48 20% 45%;
+    --brand-dark: 48 20% 65%;
+    --brand-darker: 48 15% 78%;
   }
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;
@@ -8665,15 +8665,15 @@
   }
 
   .dark [data-theme="naplex"] {
-    --brand: 132 55% 33.9%;
-    --brand-hover: 132 55% 25.9%;
-    --brand-light: 132 45% 13%;
-    --brand-gradient-to: 150 40% 11%;
-    --brand-border-light: 132 30% 24%;
-    --brand-border: 132 30% 34%;
-    --brand-muted: 132 25% 45%;
-    --brand-dark: 132 55% 65%;
-    --brand-darker: 132 50% 78%;
+    --brand: 184 55% 34.1%;
+    --brand-hover: 184 55% 26.1%;
+    --brand-light: 184 45% 13%;
+    --brand-gradient-to: 202 40% 11%;
+    --brand-border-light: 184 30% 24%;
+    --brand-border: 184 30% 34%;
+    --brand-muted: 184 25% 45%;
+    --brand-dark: 184 55% 65%;
+    --brand-darker: 184 50% 78%;
   }
 
   .dark [data-theme="jambbio"] {

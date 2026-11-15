@@ -1060,6 +1060,15 @@ export const zh: TranslationKeys = {
     rmaExams: "Physical Examinations",
     rmaPharm: "Clinical Pharmacology",
     rmaTherapy: "Therapeutic Modalities & First Aid",
+    // aufirearmsnsw
+    fnswCategories: "Licence Categories & Prohibited Firearms",
+    fnswLicence: "Licences, Genuine Reasons & Eligibility",
+    fnswPermits: "Permits, Buying & Registration",
+    fnswOffences: "Licence Conditions & Offences",
+    fnswStorage: "Safe Storage & Transport",
+    fnswSafety: "Safe Handling",
+    fnswField: "Ranges, Field & Ethics",
+    fnswParts: "Firearm Types, Parts & Ammunition",
     // nzham
     nzhamRegs: "Regulations & Frequencies",
     nzhamOperating: "Operating Practice & Q Signals",

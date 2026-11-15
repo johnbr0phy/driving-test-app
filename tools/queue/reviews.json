@@ -39,6 +39,7 @@
     "crfsc": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
     "cadc": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
     "nzdrone": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }],
-    "nzham": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }]
+    "nzham": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }],
+    "aufirearmsnsw": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }]
   }
 }

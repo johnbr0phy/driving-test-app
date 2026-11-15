@@ -62,6 +62,7 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  * Remove an entry once that exam has its own eight expressions.
  */
 const BORROWED_SETS: Record<string, string> = {
+  aufirearmsnsw: "hunter",
   nzham: "ham",
   cadc: "nce",
   nzdrone: "part107",

@@ -31,8 +31,8 @@ STIMULI = [
     {"id": "STAARE1-T2-R2", "title": "Making Room for the Ocelot", "text": (
         "**1** In the thick brush of South Texas lives a wild cat that most Texans have never seen. The ocelot is about twice the "
         "size of a house cat, with a coat of black spots and stripes on gold fur. It hunts at night and spends its days hidden in "
-        "dense thorny shrubs. Ocelots once ranged across much of South and Central Texas. Today only a small number remain in the "
-        "United States, all of them in the southern tip of the state, and the species is listed as endangered. Saving the ocelot "
+        "dense thorny shrubs. Ocelots once ranged across much of South and Central Texas. Today only a small number are known to breed in the "
+        "United States, all in the southern tip of the state, and the species is listed as endangered. Saving the ocelot "
         "depends on two things: protecting the brush it needs and helping it travel safely between the patches that are left.\n\n"
         "**Losing Ground**\n\n"
         "**2** Ocelots need cover. They avoid open ground, where they are easy to see, and they rarely cross wide fields. Over the "
@@ -197,7 +197,7 @@ ITEMS = [
     Q(2, 2, INF, THESIS,
       "Which sentence from paragraph 1 states the thesis of the article?",
       ["Saving the ocelot depends on two things: protecting the brush it needs and helping it travel safely between the patches that are left.",
-       "Today only a small number remain in the United States, all of them in the southern tip of the state, and the species is listed as endangered.",
+       "Today only a small number are known to breed in the United States, all in the southern tip of the state, and the species is listed as endangered.",
        "The ocelot is about twice the size of a house cat, with a coat of black spots and stripes on gold fur.",
        "Ocelots once ranged across much of South and Central Texas."],
       "The sentence about protecting brush and safe travel names the two ideas the article develops in its later sections. The other sentences give background facts about the cat.",

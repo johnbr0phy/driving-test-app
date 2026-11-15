@@ -1,0 +1,17 @@
+{
+  "blurb": "CPA Exam TCP multiple-choice practice on the AICPA's 2026 blueprint: individual tax planning, passive losses, gift tax, personal financial planning, C and S corporations, partnerships, trusts, entity planning and property transactions, with every calculation explained.",
+  "org": "AICPA and NASBA · Uniform CPA Examination, TCP Discipline section",
+  "group": "Accounting, CPA and finance exams",
+  "groupAfter": "cpaaud",
+  "aliases": ["cpa tcp", "tcp", "tcp cpa", "cpa exam tcp", "tax compliance and planning", "cpa tax discipline", "tcp discipline", "cpa tcp practice", "cpa tax compliance", "uniform cpa exam tcp"],
+  "teacherLed": false,
+  "borrowTiger": "cpareg",
+  "shareTitle": "Free CPA TCP Practice Test",
+  "shareDescription": "200 original multiple-choice questions on the AICPA's TCP blueprint: individual, entity and property tax planning. Free to start.",
+  "shareCardCopy": { "title": "CPA TCP Exam", "description": "Review individual and entity tax planning, gift tax, partnerships, S corps and property transactions." },
+  "topicPages": "add cpatcp to TOPIC_EXAM_IDS in lib/topicPages.ts next to cpareg, as the other CPA sections are",
+  "searchAliasLine": "cpatcp: \"cpa tcp cpa exam tax compliance and planning tcp section discipline uniform cpa examination aicpa nasba tax planning individual tax entity tax partnership s corporation gift tax personal financial planning accountant license certified public accountant\"",
+  "searchTests": [["cpa tcp", "US", "cpatcp"], ["tax compliance and planning", "US", "cpatcp"], ["tcp cpa exam", "US", "cpatcp"]],
+  "region": "TEST_REGIONS: cpatcp is US (the default; add a line only if the file lists every US exam)",
+  "premium": "v1 exam: the standard v1 locks apply (last quarter of the dashboard steps, so set 6 and test 4 by examSteps)"
+}

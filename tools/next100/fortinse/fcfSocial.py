@@ -30,9 +30,9 @@ ITEMS = [
       ["Baiting", "Pretexting", "Vishing", "Whaling"],
       "Baiting leaves something tempting for a victim to pick up. Plugging in the drive can run malware on the work computer."),
     # Drill only
-    S(0, "Phishing types", "A caller pretending to be from the bank's fraud team asks a customer to read out a code just sent to her phone. What attack is this?",
+    S(0, "Phishing types", "A phone call claims to be from the tax office and threatens arrest unless a fine is paid at once with gift cards. What attack is this?",
       ["Vishing", "Smishing", "Pharming", "Spam"],
-      "Vishing is voice phishing. The code is usually a one-time password the attacker needs to get into the account."),
+      "Vishing is voice phishing. Threats, urgency and an odd payment method such as gift cards are classic signs; a real tax office does not collect fines this way."),
     S(0, "Phishing", "What is the main goal of most phishing emails?",
       ["To get the reader to act", "To slow down the email server", "To test the company's spam filter", "To sell real products cheaply"],
       "Phishing tricks the reader into an action, such as clicking a link, opening an attachment or entering a password, that helps the attacker."),

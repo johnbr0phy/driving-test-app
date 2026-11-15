@@ -1,4 +1,5 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  hspacis: { title: "Free CIS Instrument Specialist Practice Test", description: "200 original questions on the HSPA CIS outline, from instrument identification to inspection, implants and water quality. Free to start." },
   mace: { title: "Free Medication Aide (MACE) Practice Test", description: "200 original questions on the national MACE content outline, four 50-question practice tests. Free to start." },
   ncma: { title: "Free NCMA Practice Test", description: "200 original questions on the NCCT NCMA detailed test plan for medical assistants. Free to start." },
   aufirearmsvic: { title: "Victoria Firearms Safety Practice Test", description: "Review Victorian firearms law, licence categories, permits, storage and the ten safety rules before your course." },

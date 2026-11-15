@@ -44,6 +44,22 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  hspacis: {
+    answer:
+      "The Certified Instrument Specialist (CIS) exam is the Healthcare Sterile Processing Association's (HSPA) advanced certification for sterile processing technicians who identify, inspect, test, assemble and track surgical instruments. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. To apply, candidates must hold a current CRCST and document 200 hours of hands-on sterile processing experience, separate from their CRCST hours, and the certification is renewed every year with continuing education.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Set number of scored questions correct (Angoff method); no percentage published" },
+      { label: "Largest section", value: "Instrumentation identification, 32%" },
+      { label: "Eligibility", value: "Current CRCST plus 200 hours of hands-on sterile processing experience" },
+      { label: "Where", value: "Computer based at Prometric test centers" },
+      { label: "Renewal", value: "Every year, with continuing education" },
+      { label: "Run by", value: "Healthcare Sterile Processing Association (HSPA)" },
+    ],
+    basedOn: "HSPA's CIS Exam Content Outline (revised October 2024) and Certification Handbook (revised January 2026), checked November 2026",
+    source: { name: "HSPA: Certified Instrument Specialist (CIS)", url: "https://myhspa.org/certification/certification-overview/certified-instrument-specialist-cis/" },
+  },
   mace: {
     answer:
       "The Medication Aide Certification Examination (MACE) is the national written exam that many states use to certify medication aides, also called medication assistants or MA-Cs: nurse aides with extra training who give selected medications under a licensed nurse's supervision. NCSBN created it and now says it no longer develops or owns it; Credentia develops and runs it for the states that use it. The exam has 60 multiple-choice questions in two hours, 50 of them scored, in three content areas: Authorized Duties 16% (8 questions), Medication Administration, Observation and Reporting 60% (30 questions) and Medication Concepts and Measurements 24% (12 questions). It is taken online, and results appear in the candidate's Credentia account. Who is eligible, how many attempts are allowed and what a certified aide may do are set by each state.",

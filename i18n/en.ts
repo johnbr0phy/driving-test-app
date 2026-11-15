@@ -1186,6 +1186,17 @@ export const en = {
     maceReport: "Errors & Reporting Changes",
     maceConcepts: "Medication Concepts & Terms",
     maceForms: "Forms & Measurements",
+    // hspacis
+    cisDecon: "Decontamination Processes",
+    cisGrade: "Instrument Grades & Materials",
+    cisSpecialty: "Specialty Instruments & Terminology",
+    cisImplant: "Implants & Instrument Identification",
+    cisInspect: "Inspection, Testing & Assembly",
+    cisRepair: "Preventive Maintenance & Repair",
+    cisPackage: "Preparation & Packaging",
+    cisSterile: "Disinfection & Sterilization",
+    cisQuality: "Training, Teamwork & Audits",
+    cisSystems: "Tracking, Loaners & Water Quality",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

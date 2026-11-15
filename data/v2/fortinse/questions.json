@@ -117,7 +117,7 @@
     "explanation": "A stateful firewall remembers active sessions, so replies to an allowed outbound connection are let in. A packet filter judges each packet alone by its header.",
     "options": [
       "Scan email for phishing links",
-      "Track connections and allow return traffic",
+      "Track sessions and allow replies",
       "Block users based on their job role",
       "Read every file inside the traffic"
     ],
@@ -182,7 +182,7 @@
       "To make files smaller to store",
       "To speed up searches on the drive",
       "To decide which files to print",
-      "To apply the right protection to each kind"
+      "To protect each kind as needed"
     ],
     "correct": [
       3
@@ -200,7 +200,7 @@
     "stem": "A company rents virtual servers in the cloud and installs and patches its own operating systems on them. Which service model is this?",
     "explanation": "In IaaS the provider supplies compute, storage and networking, and the customer manages the operating system and everything above it.",
     "options": [
-      "Function as a service",
+      "Function as a service platform",
       "Infrastructure as a service",
       "Software as a service",
       "Platform as a service"
@@ -221,7 +221,7 @@
     "stem": "In security terms, what is a vulnerability?",
     "explanation": "A vulnerability is a weakness in a system, process or control. The person or event that could use it is the threat, and code that uses it is an exploit.",
     "options": [
-      "A person who wants to cause harm",
+      "A person or group that wants to cause harm",
       "A weakness that a threat could exploit",
       "The chance that an attack succeeds",
       "Code written to take over a system"
@@ -242,7 +242,7 @@
     "stem": "Which type of threat actor is most likely to run a long, well-funded campaign to steal another country's defense secrets?",
     "explanation": "Nation-state groups have the funding and patience for long espionage campaigns, often called advanced persistent threats. Script kiddies use ready-made tools for quick wins.",
     "options": [
-      "A careless employee",
+      "A careless office employee",
       "A script kiddie",
       "A nation-state group",
       "A hacktivist"
@@ -326,8 +326,8 @@
     "stem": "Why does a company place its public web server in a DMZ rather than on the internal network?",
     "explanation": "A DMZ is a separate zone between the internet and the internal network. If the exposed server is compromised, firewall rules still keep the attacker away from internal systems.",
     "options": [
-      "A breach there does not open the internal network",
-      "It lets staff browse without a proxy",
+      "A breach there stays out of the LAN",
+      "It lets staff browse the web without a proxy",
       "It removes the need for a firewall",
       "It makes the website load much faster"
     ],
@@ -348,9 +348,9 @@
     "explanation": "NIST SP 800-63B favors length and screening against known compromised passwords, and advises against forced periodic changes and composition rules.",
     "options": [
       "Require a symbol in every password",
-      "Give hints to help users remember",
+      "Give password hints to help users remember",
       "Force a password change every 30 days",
-      "Check new passwords against breached lists"
+      "Screen passwords against breached lists"
     ],
     "correct": [
       3
@@ -368,7 +368,7 @@
     "stem": "Why is applying security patches quickly important?",
     "explanation": "Once a patch is public, attackers can study it and target systems that have not installed it. Prompt patching closes that window.",
     "options": [
-      "Attackers exploit known flaws soon after release",
+      "Attackers target known flaws fast",
       "Old software cannot be connected",
       "Patches make devices run faster",
       "Patches replace the need for backups"
@@ -455,7 +455,7 @@
       "A flaw found during a code review",
       "A flaw that is fixed the same day",
       "A flaw with no patch available yet",
-      "A flaw that only crashes a system"
+      "A flaw that only affects old systems"
     ],
     "correct": [
       2
@@ -536,7 +536,7 @@
     "stem": "What is the main difference between an IDS and an IPS?",
     "explanation": "An intrusion detection system watches and alerts. An intrusion prevention system sits in the traffic path and can drop malicious packets.",
     "options": [
-      "An IDS sits outside the network edge only",
+      "An IDS can sit only outside the network edge",
       "An IPS can block traffic, an IDS only alerts",
       "An IPS only works on wireless networks",
       "An IDS encrypts traffic, an IPS does not"
@@ -558,7 +558,7 @@
     "explanation": "Single sign-on lets a user authenticate once to an identity provider and then reach many connected applications without logging in again.",
     "options": [
       "Every app gets its own password",
-      "Passwords are shared with the team",
+      "Passwords are shared with the whole team",
       "No authentication is needed at all",
       "One login gives access to many apps"
     ],
@@ -578,7 +578,7 @@
     "stem": "What does endpoint detection and response (EDR) add beyond traditional antivirus?",
     "explanation": "EDR monitors activity on the endpoint, detects suspicious behavior and lets responders investigate and isolate the device, not just remove known files.",
     "options": [
-      "Recording behavior and helping respond",
+      "Recording behavior to respond",
       "Backing up the device every hour",
       "Encrypting all email messages",
       "Blocking all websites by default"
@@ -665,7 +665,7 @@
       "Stolen goods to resell",
       "The victims' backup copies",
       "The malware and payment tools",
-      "Fake job adverts for victims"
+      "Fake job adverts to attract victims"
     ],
     "correct": [
       2
@@ -727,7 +727,7 @@
     "options": [
       "Stores every user's private key",
       "Issues passwords for websites",
-      "Signs certificates that bind a key to an identity",
+      "Signs certificates for keys",
       "Encrypts all traffic on the internet"
     ],
     "correct": [
@@ -769,7 +769,7 @@
     "options": [
       "By labels like Secret and Top Secret",
       "To roles, which users are assigned to",
-      "By the time of day only",
+      "By the time of day the user logs in",
       "To each file by its owner"
     ],
     "correct": [
@@ -809,8 +809,8 @@
     "stem": "A company is giving away old hard drives that held customer data. What should be done to them first?",
     "explanation": "Deleting or quick formatting leaves data recoverable. NIST SP 800-88 describes clearing, purging or destroying media according to how sensitive the data is.",
     "options": [
-      "Reformat them with a quick format",
-      "Rename every folder on the drives",
+      "Reformat them with a quick format first",
+      "Rename every folder on the drives to hide them",
       "Delete the files and empty the recycle bin",
       "Sanitize them so the data cannot be recovered"
     ],
@@ -957,8 +957,8 @@
     "explanation": "A next generation firewall identifies applications and users and adds features such as intrusion prevention and malware inspection, not just port and address rules.",
     "options": [
       "Automatic backups of servers",
-      "Physical locks for the server room",
-      "Application awareness and threat inspection",
+      "Physical locks and cameras for the server room",
+      "App awareness and threat inspection",
       "A faster internet connection"
     ],
     "correct": [
@@ -1000,7 +1000,7 @@
     "options": [
       "Load balancing",
       "Port forwarding",
-      "Application allow listing",
+      "Allow listing",
       "Content caching"
     ],
     "correct": [
@@ -1022,7 +1022,7 @@
       "In use",
       "In transit",
       "At rest",
-      "Archived"
+      "In archive"
     ],
     "correct": [
       1
@@ -1085,7 +1085,7 @@
       "A distributed denial of service",
       "A SQL injection attack",
       "A man-in-the-middle attack",
-      "A watering hole attack"
+      "A cross-site request forgery attack"
     ],
     "correct": [
       0
@@ -1124,7 +1124,7 @@
     "stem": "An employee opens a Word attachment and is asked to enable macros to see the content. Why is this risky?",
     "explanation": "Malicious macros download or run malware once enabled, which is why many organizations block macros in files from the internet.",
     "options": [
-      "Macros can run code that installs malware",
+      "Macros can run code that installs it",
       "Macros delete the original attachment",
       "Macros make the file read-only",
       "Macros slow down the email server"
@@ -1163,16 +1163,16 @@
     "skill": "NAC",
     "difficulty": 2,
     "format": "single",
-    "stem": "A company wants to check that a laptop has current antivirus and patches before it may join the network. Which technology does this?",
-    "explanation": "Network access control checks a device's identity and health when it connects and can block it or move it to a quarantine network.",
+    "stem": "A visitor plugs a laptop into a meeting room network port and it is placed on a restricted network until its health is checked. Which technology does this?",
+    "explanation": "Network access control checks a device's identity and health when it connects and can block it or move it to a quarantine or guest network.",
     "options": [
+      "A content delivery network",
       "A secure email gateway",
       "A load balancer",
-      "Network access control",
-      "A content delivery network"
+      "Network access control"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -1187,7 +1187,7 @@
     "stem": "Why do many systems lock an account after several wrong password attempts in a row?",
     "explanation": "Lockout or throttling limits how many guesses an attacker can make, which defeats online brute force attacks.",
     "options": [
-      "To log users out of other devices",
+      "To log users out of all their other devices",
       "To remind users to change passwords",
       "To free up memory on the server",
       "To slow down password guessing attacks"
@@ -1229,7 +1229,7 @@
     "stem": "An attacker posts a comment containing a script, and every visitor's browser runs it when the page loads. What is this attack?",
     "explanation": "Cross-site scripting injects script into pages other users view. Encoding output and validating input stop the browser from treating it as code.",
     "options": [
-      "Tailgating",
+      "Cross-site request forgery",
       "A buffer overflow",
       "Cross-site scripting",
       "SQL injection"
@@ -1251,7 +1251,7 @@
     "explanation": "A CASB sits between users and cloud services to show which apps are used and to enforce policies such as blocking uploads of sensitive data.",
     "options": [
       "Replaces the company's email system",
-      "Applies security policy to use of cloud apps",
+      "Applies policy to cloud app use",
       "Builds the provider's data centers",
       "Sells cloud storage at lower prices"
     ],
@@ -1313,7 +1313,7 @@
     "stem": "A supplier's real email account is hacked and used to tell a customer that the supplier's bank details have changed. What should the customer do before paying?",
     "explanation": "In business email compromise the message comes from a real account, so replying reaches the attacker. Checking by phone on a number you already have is the safe step.",
     "options": [
-      "Ask for the new details in a PDF",
+      "Ask for the new details in a signed PDF",
       "Pay a small amount first as a test",
       "Call the supplier on a known number",
       "Reply to the email to confirm it"
@@ -1358,7 +1358,7 @@
       "It lets users share one password safely",
       "Salting makes logins faster for users",
       "Hashes can be decrypted by the help desk",
-      "A stolen database does not reveal the passwords"
+      "A stolen copy does not reveal them"
     ],
     "correct": [
       3
@@ -1376,7 +1376,7 @@
     "stem": "An employee working from a cafe connects to the office through a VPN. What does the VPN mainly protect?",
     "explanation": "A VPN creates an encrypted tunnel over the untrusted network, so people on the cafe Wi-Fi cannot read or change her traffic.",
     "options": [
-      "Traffic between her laptop and the office",
+      "Her traffic to the office",
       "Her laptop from all malware",
       "Files stored on the office servers",
       "The cafe's own Wi-Fi network"
@@ -1420,7 +1420,7 @@
     "options": [
       "To correlate events and spot attacks",
       "To save space on the laptops' disks",
-      "To share files with customers",
+      "To share files with customers and suppliers",
       "To make laptops start faster"
     ],
     "correct": [
@@ -1460,8 +1460,8 @@
     "stem": "What does secure access service edge (SASE) combine?",
     "explanation": "SASE joins SD-WAN networking with cloud-delivered security such as secure web gateway, CASB, ZTNA and firewall as a service, so users get the same protection anywhere.",
     "options": [
-      "Networking and security delivered from the cloud",
-      "Backups and printers in one device",
+      "Cloud-delivered network security",
+      "Backups and printers in one office device",
       "Cables and switches in one rack",
       "Email and calendars in one app"
     ],
@@ -1544,7 +1544,7 @@
     "stem": "Why do security products send unknown files to a sandbox?",
     "explanation": "A sandbox is an isolated environment where a file can run without risk. If it tries something malicious, such as encrypting files, it can be blocked everywhere.",
     "options": [
-      "To sign them with a trusted certificate",
+      "To sign them with a trusted code certificate",
       "To run them safely and watch what they do",
       "To store them until the user returns",
       "To compress them for faster delivery"
@@ -1586,7 +1586,7 @@
     "stem": "What does a secure email gateway do?",
     "explanation": "A secure email gateway checks messages for spam, phishing, malicious links and attachments before they reach users' inboxes.",
     "options": [
-      "Translates email into other languages",
+      "Translates incoming email into other languages",
       "Stores every user's mailbox password",
       "Sends company newsletters on a schedule",
       "Filters incoming mail for spam and malware"
@@ -1609,8 +1609,8 @@
     "options": [
       "It lets her skip multifactor sign-in",
       "It makes her daily account faster",
-      "It is needed to read email",
-      "It limits damage if the daily account is hacked"
+      "It is needed to read company email",
+      "A hacked daily account is less harmful"
     ],
     "correct": [
       3
@@ -1629,7 +1629,7 @@
     "explanation": "A host firewall travels with the device, so it still filters traffic at home or in a hotel, and it limits spread between machines on the same network.",
     "options": [
       "It makes the network firewall faster",
-      "It stops the laptop being stolen",
+      "It stops the laptop being stolen from a bag",
       "It replaces the need for antivirus",
       "It protects the laptop on other networks"
     ],
@@ -1646,16 +1646,16 @@
     "skill": "Tokenization",
     "difficulty": 2,
     "format": "single",
-    "stem": "A payment system replaces card numbers with random values that map to the real numbers only in a secure vault. What is this called?",
-    "explanation": "Tokenization swaps sensitive data for meaningless tokens, so systems that store only tokens hold nothing useful to an attacker.",
+    "stem": "A store's order system keeps tokens instead of card numbers, and only a separate vault can map them back. Why does this limit the harm if the order system is breached?",
+    "explanation": "A token has no mathematical link to the card number, so stealing tokens gives the attacker nothing usable. The mapping lives only in the protected vault.",
     "options": [
-      "Compression",
-      "Obfuscation",
-      "Hashing",
-      "Tokenization"
+      "Tokens can be reversed with simple math",
+      "Tokens are useless without the vault",
+      "Tokens hide the store's web address",
+      "Tokens expire after every purchase"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -1688,16 +1688,16 @@
     "skill": "CIA triad",
     "difficulty": 2,
     "format": "single",
-    "stem": "An employee emails a spreadsheet of customer card numbers to a personal account by mistake. Which security goal was broken?",
-    "explanation": "Confidentiality means only authorized people can see data. The data was not changed or made unavailable, it was exposed.",
+    "stem": "A thief opens files on a stolen, unencrypted laptop and reads staff salary details. Which security goal was broken?",
+    "explanation": "Confidentiality means only authorized people can see data. The salary files were not changed, they were exposed to someone with no right to read them.",
     "options": [
-      "Confidentiality",
       "Availability",
+      "Integrity",
       "Accountability",
-      "Integrity"
+      "Confidentiality"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -1730,16 +1730,16 @@
     "skill": "Phishing types",
     "difficulty": 2,
     "format": "single",
-    "stem": "A caller pretending to be from the bank's fraud team asks a customer to read out a code just sent to her phone. What attack is this?",
-    "explanation": "Vishing is voice phishing. The code is usually a one-time password the attacker needs to get into the account.",
+    "stem": "A phone call claims to be from the tax office and threatens arrest unless a fine is paid at once with gift cards. What attack is this?",
+    "explanation": "Vishing is voice phishing. Threats, urgency and an odd payment method such as gift cards are classic signs; a real tax office does not collect fines this way.",
     "options": [
-      "Spam",
-      "Smishing",
+      "Vishing",
       "Pharming",
-      "Vishing"
+      "Spam",
+      "Smishing"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -1754,7 +1754,7 @@
     "stem": "What does a computer virus need in order to spread?",
     "explanation": "A virus attaches itself to a host, such as a program or document, and spreads when that host is shared and opened. A worm needs no host.",
     "options": [
-      "Administrator access to a router",
+      "Administrator access to the network router",
       "A physical connection to a printer",
       "No help from users or files",
       "A host file or program to attach to"
@@ -1775,7 +1775,7 @@
     "stem": "What is ciphertext?",
     "explanation": "Plaintext is readable data; encrypting it with a key produces ciphertext, which is unreadable without the right key.",
     "options": [
-      "A list of approved algorithms",
+      "A list of approved encryption algorithms",
       "Data before it is encrypted",
       "Data after it has been encrypted",
       "The key used to encrypt data"
@@ -1796,7 +1796,7 @@
     "stem": "What does a firewall do at its most basic level?",
     "explanation": "A firewall enforces a policy: traffic matching an allow rule passes and everything else is blocked. Assigning addresses is the job of DHCP.",
     "options": [
-      "Stores copies of all network traffic",
+      "Stores copies of all network traffic for years",
       "Allows or blocks traffic based on rules",
       "Speeds up the network connection",
       "Assigns IP addresses to devices"
@@ -1819,7 +1819,7 @@
     "options": [
       "Deciding which files a user may open",
       "Recording what a user did",
-      "Proving that a user is who they claim to be",
+      "Proving a user is who they claim",
       "Encrypting a user's network traffic"
     ],
     "correct": [
@@ -1840,7 +1840,7 @@
     "options": [
       "A laptop, phone or smart sensor",
       "Only a network firewall",
-      "The internet provider's cables",
+      "The internet provider's fiber cables",
       "Only a company's main server"
     ],
     "correct": [
@@ -1861,7 +1861,7 @@
     "options": [
       "Saving all input to a backup",
       "Showing input back to the user",
-      "Checking that input is the expected type and size",
+      "Checking input fits what is expected",
       "Encrypting every input with a key"
     ],
     "correct": [
@@ -1944,7 +1944,7 @@
     "explanation": "Phishing tricks the reader into an action, such as clicking a link, opening an attachment or entering a password, that helps the attacker.",
     "options": [
       "To test the company's spam filter",
-      "To get the reader to click, open or share",
+      "To get the reader to act",
       "To slow down the email server",
       "To sell real products cheaply"
     ],
@@ -2009,7 +2009,7 @@
       "A port forwarding rule",
       "A failover rule",
       "A permit any rule",
-      "An implicit or default deny rule"
+      "A default deny rule"
     ],
     "correct": [
       3
@@ -2218,7 +2218,7 @@
     "options": [
       "To make printing faster for staff",
       "To limit how far an attacker can move",
-      "To avoid needing any firewall",
+      "To avoid needing any firewall between them",
       "To use fewer network cables"
     ],
     "correct": [
@@ -2240,7 +2240,7 @@
       "A PIN and a fingerprint",
       "A password and a security question",
       "A password and a hardware key",
-      "A smart card and a PIN"
+      "A smart card and a PIN typed in"
     ],
     "correct": [
       1
@@ -2261,7 +2261,7 @@
       "Replaces every firewall in the network",
       "Backs up servers to tape",
       "Protects only email inboxes",
-      "Combines data from endpoints, network, email and cloud"
+      "Links detections across many layers"
     ],
     "correct": [
       3
@@ -2279,10 +2279,10 @@
     "stem": "What is the OWASP Top 10?",
     "explanation": "The OWASP Top 10 is an awareness document listing the most critical security risks to web applications, such as broken access control and injection.",
     "options": [
-      "A list of the most critical web app risks",
+      "A list of top web app risks",
       "A ranking of antivirus products",
       "A list of the safest websites",
-      "A law that sets data fines"
+      "A law that sets fines for data breaches"
     ],
     "correct": [
       0
@@ -2344,7 +2344,7 @@
     "options": [
       "It always encrypts the victim's files",
       "It is launched from many infected devices",
-      "It is carried out by a single teenager",
+      "It is carried out by a single teenager at home",
       "It stays hidden in a network for a long time"
     ],
     "correct": [
@@ -2364,7 +2364,7 @@
     "explanation": "Hovering shows the real destination, which may differ from the text of the link. Replying may reach the attacker.",
     "options": [
       "Reply and ask the sender about it",
-      "Forward the email to a coworker",
+      "Forward the email to a coworker to check",
       "Check that the email has a logo",
       "Hover over the link to see the address"
     ],
@@ -2384,7 +2384,7 @@
     "stem": "Which type of malware lets an attacker control an infected computer from far away, for example to use its webcam?",
     "explanation": "A remote access trojan, or RAT, gives the attacker remote control of the device, including files, camera and microphone.",
     "options": [
-      "A polymorphic virus",
+      "A polymorphic boot virus",
       "Adware",
       "A logic bomb",
       "A remote access trojan"
@@ -2449,7 +2449,7 @@
     "options": [
       "A code sent by text message",
       "A code sent by email",
-      "A FIDO2 security key or passkey",
+      "A FIDO2 key or passkey",
       "A security question"
     ],
     "correct": [
@@ -2491,7 +2491,7 @@
     "options": [
       "Broken access control",
       "Weak encryption",
-      "A phishing site",
+      "A phishing site copy",
       "A denial of service"
     ],
     "correct": [
@@ -2534,7 +2534,7 @@
       "A log of failed sign-in attempts",
       "A plan to recover after an attack",
       "A weakness in software or settings",
-      "Code or a method that uses a vulnerability"
+      "A method that uses a vulnerability"
     ],
     "correct": [
       3
@@ -2553,7 +2553,7 @@
     "explanation": "Bots are infected computers, phones or IoT devices that wait for commands from a command and control server. Botnets are used for DDoS, spam and fraud.",
     "options": [
       "A group of firewalls that share threat data",
-      "A network of infected devices under one controller",
+      "Infected devices under one controller",
       "A set of honeypots run by researchers",
       "A list of websites known to host malware"
     ],
@@ -2574,7 +2574,7 @@
     "explanation": "Reporting quickly lets the security team act before the password is used, and changing it makes the stolen copy useless.",
     "options": [
       "Delete the email and say nothing",
-      "Restart her computer twice",
+      "Restart her computer and clear the browser",
       "Wait to see if anything happens",
       "Report it and change her password"
     ],
@@ -2615,7 +2615,7 @@
     "stem": "What is the Diffie-Hellman method used for?",
     "explanation": "Diffie-Hellman lets two parties derive the same secret key without ever sending it, even if someone is watching the exchange.",
     "options": [
-      "Agreeing a shared secret over an open network",
+      "Agreeing a shared secret key",
       "Signing software updates",
       "Storing passwords on a server",
       "Compressing files before encryption"
@@ -2700,9 +2700,9 @@
     "explanation": "Anyone can send requests to an exposed API without using the official app, so authentication, authorization and input checks must live in the API itself.",
     "options": [
       "APIs cannot use encryption",
-      "Attackers can call the API directly",
+      "Attackers can skip the app",
       "The app always sends errors",
-      "Mobile apps have no login"
+      "Mobile apps have no login screen at all"
     ],
     "correct": [
       1
@@ -2743,7 +2743,7 @@
     "options": [
       "Users and devices",
       "Age and size",
-      "Cost and speed",
+      "Budget and staff numbers",
       "Likelihood and impact"
     ],
     "correct": [
@@ -2762,7 +2762,7 @@
     "stem": "On criminal markets, what does an initial access broker sell?",
     "explanation": "Initial access brokers break into organizations and sell that access, such as stolen VPN logins, to other criminals like ransomware gangs.",
     "options": [
-      "Advertising space on fake websites",
+      "Advertising space on fake shopping websites",
       "Encryption keys for ransomed files",
       "Ways into already breached networks",
       "Zero trust software licenses"
@@ -2827,7 +2827,7 @@
     "options": [
       "Its length grows with the input",
       "It is the same as encryption",
-      "It cannot be reversed to get the input",
+      "It cannot be reversed",
       "It needs a key to create it"
     ],
     "correct": [
@@ -2846,9 +2846,9 @@
     "stem": "How does anomaly-based detection find attacks?",
     "explanation": "Anomaly detection learns what normal looks like and flags departures from it, which can catch new attacks but may raise more false positives.",
     "options": [
-      "It flags traffic that differs from a normal baseline",
+      "It flags traffic that is unlike normal",
       "It matches traffic to known attack signatures",
-      "It blocks every encrypted connection",
+      "It blocks every encrypted connection it sees",
       "It asks users to report odd behavior"
     ],
     "correct": [
@@ -2870,7 +2870,7 @@
       "It shares passwords with coworkers",
       "It removes the need for any password",
       "It writes passwords on sticky notes",
-      "It stores a unique strong password per site"
+      "It keeps a unique password per site"
     ],
     "correct": [
       3
@@ -2911,7 +2911,7 @@
     "options": [
       "Only on paper documents",
       "Only on the company's printers",
-      "On endpoints, the network and cloud apps",
+      "On devices, networks and clouds",
       "Only inside the database server"
     ],
     "correct": [
@@ -2951,7 +2951,7 @@
     "stem": "At a small firm, one employee can create a new supplier and also approve payments to it. Which principle would reduce the fraud risk?",
     "explanation": "Separation of duties splits sensitive steps between people, so one person cannot set up and pay a fake supplier alone.",
     "options": [
-      "Implicit trust",
+      "Implicit trust of staff",
       "Separation of duties",
       "Data retention",
       "Single sign-on"
@@ -3056,7 +3056,7 @@
     "stem": "A school wants to stop students reaching gambling and adult websites. Which security feature is built for this?",
     "explanation": "Web filtering blocks or allows sites by category or address. It is often run on the firewall or a secure web gateway.",
     "options": [
-      "Data backup",
+      "Data backup software",
       "Web content filtering",
       "Full disk encryption",
       "A sandbox"
@@ -3100,7 +3100,7 @@
     "options": [
       "Laptops always use public Wi-Fi",
       "Laptops cannot run antivirus",
-      "Laptops have no passwords",
+      "Laptops have no login passwords",
       "Laptops are often lost or stolen"
     ],
     "correct": [
@@ -3120,7 +3120,7 @@
     "explanation": "Encryption at rest protects the data if the storage or a backup copy is stolen. Link encryption protects only data in transit.",
     "options": [
       "It removes the need for passwords",
-      "Stolen database files stay unreadable",
+      "Stolen files stay unreadable",
       "Encryption makes queries run faster",
       "It lets anyone read the data"
     ],
@@ -3143,7 +3143,7 @@
       "Many customers share the same hardware",
       "Public clouds never use encryption",
       "Each customer has its own building",
-      "Customers share one admin password"
+      "Customers share one admin password for all"
     ],
     "correct": [
       0
@@ -3263,16 +3263,16 @@
     "skill": "Sandboxing",
     "difficulty": 2,
     "format": "single",
-    "stem": "Where is a network sandbox usually placed in the flow of traffic?",
+    "stem": "How do firewalls and email gateways usually work with a network sandbox?",
     "explanation": "Firewalls and email gateways send suspicious files to the sandbox for analysis, then block the file everywhere if it turns out to be malicious.",
     "options": [
-      "Inside the DNS server",
-      "Between the keyboard and the PC",
-      "On every printer in the office",
-      "Beside the firewall or mail gateway, for unknown files"
+      "They use it to back up their rules",
+      "They send it unknown files to test",
+      "They send it every page that is printed",
+      "They store their DNS records in it"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -3287,10 +3287,10 @@
     "stem": "What does LDAP give an organization?",
     "explanation": "LDAP is a protocol for reading and updating directory services, such as user accounts and groups, which many systems use for authentication.",
     "options": [
-      "A way to assign IP addresses",
+      "A way to assign IP addresses to devices",
       "A way to block spam email",
       "A way to encrypt hard drives",
-      "A way to query a directory of users and groups"
+      "A way to query a user directory"
     ],
     "correct": [
       3
@@ -3309,7 +3309,7 @@
     "explanation": "Secure boot only lets signed, trusted boot code run, which blocks bootkits and rootkits that try to load before the operating system.",
     "options": [
       "That the antivirus database is current",
-      "That the start-up software is trusted and signed",
+      "That start-up code is signed",
       "That the user's password is long enough",
       "That the network cable is plugged in"
     ],
@@ -3435,7 +3435,7 @@
     "explanation": "A drive-by download exploits a flaw in the browser or a plug-in just by loading the page. Keeping software patched removes the flaw.",
     "options": [
       "Tailgating",
-      "A watering hole",
+      "A watering hole infection",
       "A drive-by download",
       "A logic bomb"
     ],
@@ -3521,7 +3521,7 @@
       "A managed work profile or container",
       "A brighter screen for work apps",
       "A second SIM card for work calls",
-      "A rule to never install apps"
+      "A rule to never install any apps at all"
     ],
     "correct": [
       0
@@ -3539,7 +3539,7 @@
     "stem": "A sign-up form asks for date of birth, address and ID number, though the service needs only an email address. Which principle does this break?",
     "explanation": "Data minimization means collecting only the data you need. Data never collected cannot be leaked.",
     "options": [
-      "Load balancing",
+      "Load balancing of data",
       "Defense in depth",
       "Non-repudiation",
       "Data minimization"
@@ -3605,7 +3605,7 @@
       "To speed up their internet connection",
       "To find new customers for their products",
       "To replace their firewalls and antivirus",
-      "To learn about current threats and indicators"
+      "To learn about current threats"
     ],
     "correct": [
       3
@@ -3624,7 +3624,7 @@
     "explanation": "Attackers now use AI-generated voice and video to impersonate leaders. Payment requests should be confirmed through a separate, known channel.",
     "options": [
       "The video and voice may be AI fakes",
-      "The meeting link may expire soon",
+      "The meeting link may expire before she joins",
       "The call quality may hide a virus",
       "The camera may be recording her"
     ],
@@ -3686,7 +3686,7 @@
     "stem": "Why should guest Wi-Fi be on a different network from the company's internal systems?",
     "explanation": "Visitors bring unmanaged devices that may be infected. Isolating guest Wi-Fi keeps them away from internal servers and data.",
     "options": [
-      "Guests' devices are not managed or trusted",
+      "Guest devices are not managed",
       "It saves money on internet service",
       "Guest Wi-Fi is always faster",
       "Internal systems cannot use Wi-Fi"
@@ -3728,7 +3728,7 @@
     "stem": "EDR flags a laptop that is encrypting files on a shared drive. What is a common first response?",
     "explanation": "Isolating the endpoint stops the spread while keeping it available for investigation. Most EDR tools can do this remotely in one action.",
     "options": [
-      "Turn off the EDR agent",
+      "Turn off the EDR agent to save power",
       "Delete the shared drive at once",
       "Ask the user to restart it later",
       "Isolate the laptop from the network"
@@ -3749,8 +3749,8 @@
     "stem": "Why should backups be tested by restoring them from time to time?",
     "explanation": "A backup that fails to restore is worthless in an emergency. Regular test restores catch corrupt or incomplete copies early.",
     "options": [
-      "To change the backup password",
-      "To prove they can actually be restored",
+      "To change the backup password each time",
+      "To prove they restore",
       "To make the backups smaller",
       "To delete old copies faster"
     ],
@@ -3770,8 +3770,8 @@
     "stem": "Which control best protects a company's cloud administrator console from stolen passwords?",
     "explanation": "Cloud consoles are reachable from anywhere, so a stolen admin password alone should never be enough to log in.",
     "options": [
-      "A public link to the console",
-      "Multifactor authentication for admins",
+      "A public link to the console for staff",
+      "MFA for every admin",
       "Sharing one admin login",
       "A longer session timeout"
     ],
@@ -3794,7 +3794,7 @@
       "Verify only connections from the internet",
       "Verify every request, wherever it comes from",
       "Trust any device inside the office network",
-      "Trust a user for the whole working day"
+      "Trust a user for the whole day after login"
     ],
     "correct": [
       1
@@ -3877,8 +3877,8 @@
     "options": [
       "Encrypt a file with a password",
       "Create a new private key",
-      "Check whether a certificate is revoked",
-      "Renew a certificate early"
+      "Check if a certificate is revoked",
+      "Renew a certificate before it expires"
     ],
     "correct": [
       2
@@ -3896,8 +3896,8 @@
     "stem": "What does a site-to-site VPN connect?",
     "explanation": "A site-to-site VPN, often using IPsec, joins whole networks over the internet. A remote access VPN connects one user's device.",
     "options": [
-      "Two networks, such as two offices",
-      "One user to one website",
+      "Two networks, such as offices",
+      "One user's browser to one website",
       "A printer to a laptop",
       "A phone to a smartwatch"
     ],
@@ -3919,7 +3919,7 @@
     "options": [
       "A false rejection",
       "A false acceptance",
-      "A crossover error",
+      "A crossover error rate",
       "A true negative"
     ],
     "correct": [
@@ -3939,7 +3939,7 @@
     "explanation": "Keeping more than one copy on different media with one offsite, often called the 3-2-1 rule, means one event cannot destroy every copy.",
     "options": [
       "A copy on the user's desktop",
-      "Several copies, one of them offsite",
+      "Several copies, one offsite",
       "No backups, only antivirus",
       "One copy on the same drive"
     ],
@@ -3981,9 +3981,9 @@
     "explanation": "Traffic between cloud workloads never passes the office firewall, so virtual or cloud-native firewalls apply segmentation and inspection inside the cloud.",
     "options": [
       "To cool the provider's servers",
-      "To inspect traffic between cloud workloads",
+      "To inspect traffic between workloads",
       "To replace identity management",
-      "To speed up software updates"
+      "To speed up software updates on servers"
     ],
     "correct": [
       1
@@ -4004,7 +4004,7 @@
       "It removes the need for patching",
       "People are a common target for attacks",
       "Training replaces technical controls",
-      "Laws ban software-only security"
+      "Laws ban security that relies on software"
     ],
     "correct": [
       1
@@ -4024,7 +4024,7 @@
     "options": [
       "The attacker removes logs to hide tracks",
       "The attacker sends data out of the network",
-      "The attacker gathers information on the target",
+      "The attacker studies the target",
       "The attacker encrypts the victim's files"
     ],
     "correct": [
@@ -4106,10 +4106,10 @@
     "stem": "What does a forward web proxy do for a company's users?",
     "explanation": "A forward proxy sits between users and the internet, so it can filter, log and cache web traffic. A reverse proxy sits in front of servers instead.",
     "options": [
-      "Makes web requests on their behalf and filters them",
+      "Makes and filters their web requests",
       "Stores the users' passwords",
       "Hosts the company's public website",
-      "Repairs damaged network cables"
+      "Repairs damaged network cables in the building"
     ],
     "correct": [
       0
@@ -4130,7 +4130,7 @@
       "Gives full network access after one login",
       "Removes the need for user identities",
       "Works only inside the office building",
-      "Grants access to one app at a time after checks"
+      "Grants access per app after checks"
     ],
     "correct": [
       3
@@ -4150,7 +4150,7 @@
     "options": [
       "Missing patches and weak settings",
       "Who sent each email",
-      "The value of each device",
+      "The resale value of each device in use",
       "The users' browsing history"
     ],
     "correct": [
@@ -4172,7 +4172,7 @@
       "To reject tampered or fake updates",
       "To make updates download faster",
       "To make the updates smaller",
-      "To let users skip updates"
+      "To let users skip updates they do not want"
     ],
     "correct": [
       0
@@ -4193,7 +4193,7 @@
       "The host operating system",
       "The data center network",
       "The physical servers",
-      "Its function code and settings"
+      "Its code and settings"
     ],
     "correct": [
       3

@@ -30,9 +30,9 @@ ITEMS = [
       ["The attack surface", "The recovery point", "The risk appetite", "The audit trail"],
       "The attack surface is the sum of all the points where an attacker could try to get in. Shrinking it, for example by closing unused ports, reduces risk."),
     # Drill only
-    S(0, "CIA triad", "An employee emails a spreadsheet of customer card numbers to a personal account by mistake. Which security goal was broken?",
+    S(0, "CIA triad", "A thief opens files on a stolen, unencrypted laptop and reads staff salary details. Which security goal was broken?",
       ["Confidentiality", "Availability", "Integrity", "Accountability"],
-      "Confidentiality means only authorized people can see data. The data was not changed or made unavailable, it was exposed."),
+      "Confidentiality means only authorized people can see data. The salary files were not changed, they were exposed to someone with no right to read them."),
     S(0, "AAA", "Which step of the AAA framework records what a user did after logging in?",
       ["Accounting", "Authorization", "Authentication", "Administration"],
       "Accounting logs a user's actions for auditing. Authentication proves who the user is, and authorization decides what they may do."),

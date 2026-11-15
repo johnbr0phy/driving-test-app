@@ -6563,7 +6563,7 @@ const crfsc: ExamConfig = {
   idBase: 29200,
   slug: "/canadian-restricted-firearms",
   landingPath: "/canadian-restricted-firearms-safety-course-practice-test",
-  name: "CRFSC Practice Test",
+  name: "Canadian Restricted Firearms Safety Course (CRFSC) Practice Test",
   shortName: "CRFSC",
   examLabel: "CRFSC written test",
   fullName: "Canadian Restricted Firearms Safety Course (CRFSC) Written Test",

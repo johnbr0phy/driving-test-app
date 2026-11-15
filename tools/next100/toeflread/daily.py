@@ -74,7 +74,7 @@ DAILY = [
   dict(id="TOEFLR-D-DL2", test=0, title="Email: Class moved",
        text="**Subject:** BIO 110: Wednesday class moved\n\nDear students,\n\nI will be at a conference on Wednesday, so our class will not meet in Lecture Hall B. Instead, please watch the recorded lecture on the course page before Friday. The quiz planned for Wednesday will now open online on Thursday and close Friday at midnight. Friday's lab will go ahead as usual.\n\nProfessor Alvarez",
        qs=[
-         Q(1, "infer", "Why did Professor Alvarez send the email?", "To explain what replaces the class", ["To cancel the whole course for the week", "To move the lab to a new room", "To announce a new conference"], "She will be at a conference, so the email explains what replaces Wednesday's class and when the quiz will be taken."),
+         Q(1, "infer", "Why did Professor Alvarez send the email?", "To explain what replaces the class", ["To cancel the whole course for the week", "To move the lab to a new room", "To announce a new conference"], "The professor will be at a conference, so the email explains what replaces Wednesday's class and when the quiz will be taken."),
          Q(2, "detail", "When will the quiz close?", "Friday at midnight", ["Wednesday at the end of class", "Thursday morning", "After Friday's lab"], "The quiz opens online Thursday and closes Friday at midnight."),
          Q(3, "infer", "What can be inferred about the recorded lecture?", "It covers Wednesday's material", ["It replaces Friday's lab", "It is only for students who miss the quiz", "It will be shown in Lecture Hall B"], "Students are asked to watch it instead of attending Wednesday's class, so it stands in for that class."),
        ]),

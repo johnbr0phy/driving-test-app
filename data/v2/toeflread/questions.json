@@ -38,7 +38,7 @@
     {
       "id": "TOEFLR-T1-CW3",
       "title": "Why Sleep Matters",
-      "text": "Fill in the missing letters in the paragraph.\n\nMost people need between seven and nine hours of sleep each night. During de_ _ **(1)** sleep, yo_ _ **(2)** body rep_ _ _ _ **(3)** tired mus_ _ _ _ **(4)** while yo_ _ **(5)** brain sto_ _ _ **(6)** lessons fr_ _ **(7)** the d_ _ **(8)**. Students w_ _ **(9)** sleep t_ _ **(10)** little often find it hard to focus in class. They may also feel hungry more often, because tiredness changes the hormones that control appetite. Going to bed at the same time every night is one simple way to sleep better and wake up feeling rested."
+      "text": "Fill in the missing letters in the paragraph.\n\nMost people need between seven and nine hours of sleep each night. During de_ _ **(1)** sleep, yo_ _ **(2)** body rep_ _ _ _ **(3)** tired mus_ _ _ _ **(4)** while t_ _ **(5)** brain sto_ _ _ **(6)** lessons fr_ _ **(7)** the d_ _ **(8)**. Students w_ _ **(9)** sleep t_ _ **(10)** little often find it hard to focus in class. They may also feel hungry more often, because tiredness changes the hormones that control appetite. Going to bed at the same time every night is one simple way to sleep better and wake up feeling rested."
     },
     {
       "id": "TOEFLR-T1-AP2",
@@ -113,7 +113,7 @@
     {
       "id": "TOEFLR-D-CW1",
       "title": "Photosynthesis",
-      "text": "Fill in the missing letters in the paragraph.\n\nPlants make their own food through a process called photosynthesis. Inside th_ _ _ **(1)** leaves, gr_ _ _ **(2)** cells cap_ _ _ _ **(3)** energy fr_ _ **(4)** light a_ _ **(5)** use i_ **(6)** to jo_ _ **(7)** water wi_ _ **(8)** carbon dio_ _ _ _ **(9)** taken fr_ _ **(10)** the air. The result is a simple sugar, which the plant either burns for energy or stores for later use. Oxygen is released as a byproduct of this process. Almost every animal on Earth depends on photosynthesis, either by eating plants directly or by eating other animals that do."
+      "text": "Fill in the missing letters in the paragraph.\n\nPlants make their own food through a process called photosynthesis. Inside th_ _ _ **(1)** leaves, gr_ _ _ **(2)** cells cap_ _ _ _ **(3)** energy fr_ _ **(4)** light a_ _ **(5)** use i_ **(6)** to jo_ _ **(7)** water wi_ _ **(8)** carbon dio_ _ _ _ **(9)** taken i_ **(10)** from the air. The result is a simple sugar, which the plant either burns for energy or stores for later use. Oxygen is released as a byproduct of this process. Almost every animal on Earth depends on photosynthesis, either by eating plants directly or by eating other animals that do."
     },
     {
       "id": "TOEFLR-D-CW2",
@@ -173,7 +173,7 @@
     {
       "id": "TOEFLR-D-AP4",
       "title": "How Vaccines Work",
-      "text": "The human immune system learns from experience. When a germ enters the body for the first time, the immune system needs several days to recognize it and produce antibodies, proteins that attach to the germ and help destroy it. During that time the person may become seriously ill. Afterward, however, some immune cells remain in the body as memory cells. If the same germ returns, these cells respond within hours, often before any symptoms appear.\n\nVaccines take advantage of this memory. A vaccine exposes the immune system to a harmless version or a single part of a germ, such as a surface protein. Because this material cannot cause the disease, the person does not become sick, yet the immune system still learns to recognize the germ and forms memory cells.\n\nSome vaccines provide protection for life, while others need booster doses because memory fades or because the germ changes over time. When enough people in a community are immune, a germ has trouble spreading from person to person. This also protects people who cannot be vaccinated, such as newborn babies."
+      "text": "The human immune system learns from experience. When a germ enters the body for the first time, the immune system needs several days to recognize it and produce antibodies, proteins that attach to the germ and help destroy it. During that time the person may become seriously ill. Afterward, however, some immune cells remain in the body as memory cells. If the same germ returns, these cells respond much faster, often before any symptoms appear.\n\nVaccines take advantage of this memory. A vaccine exposes the immune system to a harmless version or a single part of a germ, such as a surface protein. Because this material cannot cause the disease, the person does not become sick, yet the immune system still learns to recognize the germ and forms memory cells.\n\nSome vaccines provide protection for life, while others need booster doses because memory fades or because the germ changes over time. When enough people in a community are immune, a germ has trouble spreading from person to person. This also protects people who cannot be vaccinated, such as newborn babies."
     }
   ],
   "questions": [
@@ -1050,17 +1050,17 @@
       "difficulty": 1,
       "stimulusId": "TOEFLR-T1-CW3",
       "format": "single",
-      "stem": "Which word completes gap (5), **yo_ _**?",
+      "stem": "Which word completes gap (5), **t_ _**?",
       "options": [
-        "yolk",
-        "your",
-        "yoke",
-        "yoga"
+        "tin",
+        "the",
+        "tap",
+        "tug"
       ],
       "correct": [
         1
       ],
-      "explanation": "\"your\" fits. \"Your brain\" matches \"your body\" earlier in the sentence."
+      "explanation": "\"the\" fits. \"The brain\" needs the article before the noun; the other words make no sense before \"brain\"."
     },
     {
       "id": "TOEFLR-T1-041",
@@ -3305,17 +3305,17 @@
       "difficulty": 2,
       "stimulusId": "TOEFLR-D-CW1",
       "format": "single",
-      "stem": "Which word completes gap (10), **fr_ _**?",
+      "stem": "Which word completes gap (10), **i_**?",
       "options": [
-        "fret",
-        "fray",
-        "frog",
-        "from"
+        "if",
+        "it",
+        "is",
+        "in"
       ],
       "correct": [
         3
       ],
-      "explanation": "\"from\" fits. \"Taken from the air\" says where the gas comes from."
+      "explanation": "\"in\" fits. \"Taken in from the air\" means drawn into the leaf; \"taken in\" is the phrasal verb for absorbing something."
     },
     {
       "id": "TOEFLR-D-011",
@@ -3843,7 +3843,7 @@
       "correct": [
         0
       ],
-      "explanation": "She will be at a conference, so the email explains what replaces Wednesday's class and when the quiz will be taken."
+      "explanation": "The professor will be at a conference, so the email explains what replaces Wednesday's class and when the quiz will be taken."
     },
     {
       "id": "TOEFLR-D-035",

@@ -107,4 +107,5 @@ export const BANK_SIZES: Record<string, number> = {
   mcat: 234,
   lsat: 203,
   hiset: 288,
+  shsat: 240,
 };

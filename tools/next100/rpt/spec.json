@@ -1,0 +1,18 @@
+{
+  "id": "rpt", "stateCode": "RPT", "idBase": 28900, "prefix": "RPT-",
+  "slug": "/rpt", "landingPath": "/rpt-practice-test", "dataFile": "data/rpt-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "rptPatient", "perTest": 6, "pool": 24, "segment": "PAT"},
+    {"key": "rptVenipuncture", "perTest": 7, "pool": 28, "segment": "VEN"},
+    {"key": "rptCapillary", "perTest": 4, "pool": 16, "segment": "CAP"},
+    {"key": "rptSpecimen", "perTest": 8, "pool": 32, "segment": "SPC"},
+    {"key": "rptWorkflow", "perTest": 5, "pool": 20, "segment": "WRK"},
+    {"key": "rptComm", "perTest": 3, "pool": 12, "segment": "COM"},
+    {"key": "rptClerical", "perTest": 3, "pool": 12, "segment": "CLR"},
+    {"key": "rptSafety", "perTest": 7, "pool": 28, "segment": "SAF"},
+    {"key": "rptLegal", "perTest": 5, "pool": 20, "segment": "LEG"},
+    {"key": "rptAnatomy", "perTest": 2, "pool": 8, "segment": "ANA"}
+  ],
+  "notes": "AMT RPT Certification Competencies and Examination Specifications (2025): 68/30/20/11/11/30/20/10 of 200. Scaled to 50: 17/8/5/3/3/7/5/2; split of work area I (6/7/4) is Tigertest's."
+}

@@ -1,4 +1,6 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  ascppbt: { title: "Free PBT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC phlebotomy content guideline, four 50-question practice tests." },
+  rpt: { title: "Free RPT (AMT) Practice Test", description: "200 original questions on the AMT RPT exam specifications, four 50-question practice tests." },
   hspachl: { title: "Free CHL Healthcare Leader Practice Test", description: "200 original questions on the 2026 HSPA CHL outline for sterile processing leaders. Free to start." },
   hspacer: { title: "Free CER Endoscope Reprocessor Practice Test", description: "200 original questions on the HSPA CER outline, from leak testing to high-level disinfection and storage. Free to start." },
   bcaba: { title: "Free BCaBA Practice Test", description: "200 original questions on the BCaBA Test Content Outline (6th ed.), with explanations." },

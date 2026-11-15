@@ -1,0 +1,12 @@
+{
+  "blurb": "American Medical Technologists Registered Phlebotomy Technician exam on the RPT examination specifications: patient identification, venipuncture and the order of draw, capillary and heel punctures, specimen processing, workflow, safety, law and ethics.",
+  "org": "American Medical Technologists (AMT) · RPT examination specifications",
+  "group": "Healthcare certification exams",
+  "aliases": ["rpt", "rpt amt", "amt rpt", "amt phlebotomy", "registered phlebotomy technician", "american medical technologists phlebotomy", "rpt exam", "rpt certification", "amt phlebotomy exam"],
+  "teacherLed": true,
+  "teaches": "a phlebotomy program",
+  "borrowTiger": "phleb",
+  "shareTitle": "Free RPT (AMT) Practice Test",
+  "shareDescription": "200 original questions on the AMT RPT exam specifications, four 50-question practice tests.",
+  "searchTests": [["rpt", "US", "rpt"], ["amt phlebotomy", "US", "rpt"], ["registered phlebotomy technician", "US", "rpt"], ["rpt amt exam", "US", "rpt"]]
+}

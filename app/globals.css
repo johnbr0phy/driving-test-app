@@ -4771,6 +4771,32 @@
     --brand-gradient-to: 326 50% 95%;
   }
 
+  [data-theme="ascppbt"] {
+    --brand: 116 45% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 116 50% 95%;
+    --brand-hover: 116 45% 17%;
+    --brand-dark: 116 45% 15%;
+    --brand-darker: 116 40% 10%;
+    --brand-muted: 116 25% 70%;
+    --brand-border: 116 30% 78%;
+    --brand-border-light: 116 30% 88%;
+    --brand-gradient-to: 131 50% 95%;
+  }
+
+  [data-theme="rpt"] {
+    --brand: 4 30% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 4 50% 95%;
+    --brand-hover: 4 30% 17%;
+    --brand-dark: 4 30% 15%;
+    --brand-darker: 4 25% 10%;
+    --brand-muted: 4 25% 70%;
+    --brand-border: 4 30% 78%;
+    --brand-border-light: 4 30% 88%;
+    --brand-gradient-to: 19 50% 95%;
+  }
+
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
     --brand-foreground: 0 0% 100%;
@@ -9410,6 +9436,30 @@
     --brand-muted: 311 25% 45%;
     --brand-dark: 311 60% 65%;
     --brand-darker: 311 55% 78%;
+  }
+
+  .dark [data-theme="ascppbt"] {
+    --brand: 116 45% 35.9%;
+    --brand-hover: 116 45% 27.9%;
+    --brand-light: 116 45% 13%;
+    --brand-gradient-to: 131 40% 11%;
+    --brand-border-light: 116 30% 24%;
+    --brand-border: 116 30% 34%;
+    --brand-muted: 116 25% 45%;
+    --brand-dark: 116 45% 65%;
+    --brand-darker: 116 40% 78%;
+  }
+
+  .dark [data-theme="rpt"] {
+    --brand: 4 30% 50%;
+    --brand-hover: 4 30% 42%;
+    --brand-light: 4 45% 13%;
+    --brand-gradient-to: 19 40% 11%;
+    --brand-border-light: 4 30% 24%;
+    --brand-border: 4 30% 34%;
+    --brand-muted: 4 25% 45%;
+    --brand-dark: 4 30% 65%;
+    --brand-darker: 4 25% 78%;
   }
 
   .dark [data-theme="hspachl"] {

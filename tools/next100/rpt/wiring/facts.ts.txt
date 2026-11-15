@@ -1,0 +1,15 @@
+  rpt: {
+    answer:
+      "The Registered Phlebotomy Technician (RPT) exam is the certification exam of American Medical Technologists (AMT) for phlebotomists, which earns the RPT (AMT) credential. AMT's examination specifications list 200 four-option multiple-choice questions in eight work areas: Obtaining Blood Samples 68 (34%), Specimen Collection and Processing 30 (15%), Safety Standards and Procedures 30 (15%), Time Management and Assignment Organization 20 (10%), Legal, Ethical, and Professional Considerations 20 (10%), Professional Communications 11 (5.5%), Clerical Skills and Duties 11 (5.5%) and Terminology, Anatomy, and Physiology 10 (5%). The exam is taken on a computer in 2.5 hours, scheduled through Pearson VUE or by a candidate's school, and may include unscored pretest items. Scores are scaled from 0 to 100, and 70 is the minimum passing score; it is not a percentage. A candidate who fails retakes the whole exam and may test up to four times in all.",
+    rows: [
+      { label: "Questions", value: "200 multiple choice, four options, single best answer" },
+      { label: "Time", value: "2.5 hours" },
+      { label: "Pass mark", value: "Scaled score of 70 (scale 0 to 100, not a percentage)" },
+      { label: "Largest area", value: "Obtaining Blood Samples, 68 questions (34%)" },
+      { label: "Where", value: "Computer based, scheduled through Pearson VUE or your school" },
+      { label: "Retakes", value: "Whole exam, up to four attempts in all, with a retest fee" },
+      { label: "Run by", value: "American Medical Technologists (AMT)" },
+    ],
+    basedOn: "AMT's RPT Certification Competencies and Examination Specifications (2025) and the AMT Candidate Handbook (revised April 2026), checked November 2026",
+    source: { name: "AMT: Registered Phlebotomy Technician exam", url: "https://americanmedtech.org/phlebotomy-technician/rpt-exam" },
+  },

@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
+export type ExamId = "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -6415,6 +6415,145 @@ const hspachl: ExamConfig = {
     ],
     sourceLine: "Based on the HSPA Certified Healthcare Leader (CHL) Exam Content Outline (2026). Original questions; 50 per test, weighted like the real exam. Not affiliated with the Healthcare Sterile Processing Association.",
     analyticsKey: "hspachl",
+  },
+};
+
+const rpt: ExamConfig = {
+  id: "rpt",
+  stateCode: "RPT",
+  idBase: 28900,
+  slug: "/rpt",
+  landingPath: "/rpt-practice-test",
+  name: "RPT (AMT) Practice Test",
+  shortName: "RPT (AMT)",
+  examLabel: "RPT exam",
+  fullName: "Registered Phlebotomy Technician (RPT) Certification Exam",
+  questionIdPrefix: "RPT-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AMT Registered Phlebotomy Technician (RPT) Certification Competencies and Examination
+  // Specifications (©2025, checked November 2026): 200 questions. I. Obtaining Blood Samples 68
+  // (34%), II. Specimen Collection and Processing 30 (15%), III. Time Management and Assignment
+  // Organization 20 (10%), IV. Professional Communications 11 (5.5%), V. Clerical Skills and
+  // Duties 11 (5.5%), VI. Safety Standards and Procedures 30 (15%), VII. Legal, Ethical, and
+  // Professional Considerations 20 (10%), VIII. Terminology, Anatomy, and Physiology 10 (5%).
+  // Scaled to 50 per test: 17/8/5/3/3/7/5/2; work area I is split 6/7/4 (patient and site,
+  // venipuncture and tubes, capillary and labeling), Tigertest's split. AMT reports a scaled
+  // score (0 to 100, 70 to pass, not a percent); 70% here is a readiness marker. All items original.
+  blueprint: {
+    rptPatient: 6,
+    rptVenipuncture: 7,
+    rptCapillary: 4,
+    rptSpecimen: 8,
+    rptWorkflow: 5,
+    rptComm: 3,
+    rptClerical: 3,
+    rptSafety: 7,
+    rptLegal: 5,
+    rptAnatomy: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28901, name: "Patient ID & Venipuncture", categories: ["rptPatient", "rptVenipuncture"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 28902, name: "Capillary & Specimen Processing", categories: ["rptCapillary", "rptSpecimen"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 28903, name: "Workflow, Communication & Clerical", categories: ["rptWorkflow", "rptComm", "rptClerical"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 28904, name: "Safety, Legal & Anatomy", categories: ["rptSafety", "rptLegal", "rptAnatomy"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rptPatient: "Patient ID, Preparation & Sites",
+    rptVenipuncture: "Venipuncture, Tubes & Equipment",
+    rptCapillary: "Capillary Punctures & Labeling",
+    rptSpecimen: "Specimen Collection & Processing",
+    rptWorkflow: "Time Management & Workflow",
+    rptComm: "Professional Communications",
+    rptClerical: "Clerical Skills & Duties",
+    rptSafety: "Safety Standards & Procedures",
+    rptLegal: "Legal, Ethical & Professional",
+    rptAnatomy: "Terminology, Anatomy & Physiology",
+  },
+  copy: {
+    guestPrompt: "to save your RPT progress and track every question you miss",
+    trainingHeading: "Train by AMT work area",
+    trainingSub: "Four sets covering the eight work areas of the AMT RPT specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Patient ID & Venipuncture.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the RPT.",
+    ],
+    sourceLine: "Based on the AMT RPT Certification Competencies and Examination Specifications. Original questions; 50 per test, weighted like the real exam. Not affiliated with American Medical Technologists.",
+    analyticsKey: "rpt",
+  },
+};
+
+const ascppbt: ExamConfig = {
+  id: "ascppbt",
+  stateCode: "ASCPPBT",
+  idBase: 29800,
+  slug: "/ascp-phlebotomy",
+  landingPath: "/ascp-pbt-practice-test",
+  name: "PBT(ASCP) Practice Test",
+  shortName: "PBT(ASCP)",
+  examLabel: "PBT exam",
+  fullName: "ASCP Phlebotomy Technician PBT(ASCP) Certification Exam",
+  questionIdPrefix: "PBT-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASCP BOC Phlebotomy Technician PBT(ASCP) and PBT(ASCPi) Examination Content Guideline
+  // (revised September 25, 2025, checked November 2026): 80 questions in 2 hours, computer
+  // adaptive. I. Circulatory System 5-10%, II. Specimen Collection 45-50%, III. Specimen
+  // Handling, Transport, and Processing 15-20%, IV. Waived and Point-of-Care Testing 5-10%,
+  // V. Non-Blood Specimens 5-10%, VI. Laboratory Operations 15-20%. Per 50-question fixed form:
+  // 3/23/8/4/4/8, all inside the ranges; Specimen Collection is split 6/6/6/5 (orders and
+  // patient, sites and tests, order of draw and equipment, complications), Tigertest's split.
+  // The real exam is CAT and scaled; 70% here is a readiness marker. All items original.
+  blueprint: {
+    pbtCirc: 3,
+    pbtOrders: 6,
+    pbtSite: 6,
+    pbtDraw: 6,
+    pbtComp: 5,
+    pbtHandling: 8,
+    pbtPoct: 4,
+    pbtNonblood: 4,
+    pbtOps: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 29801, name: "Circulatory System, Orders & Sites", categories: ["pbtCirc", "pbtOrders", "pbtSite"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 29802, name: "Order of Draw & Complications", categories: ["pbtDraw", "pbtComp"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 29803, name: "Specimen Handling & POCT", categories: ["pbtHandling", "pbtPoct"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 29804, name: "Non-Blood Specimens & Lab Operations", categories: ["pbtNonblood", "pbtOps"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pbtCirc: "Circulatory System",
+    pbtOrders: "Orders, Identification & Patient Prep",
+    pbtSite: "Site Selection, Technique & Common Tests",
+    pbtDraw: "Order of Draw & Equipment",
+    pbtComp: "Complications & Considerations",
+    pbtHandling: "Specimen Handling, Transport & Processing",
+    pbtPoct: "Waived & Point-of-Care Testing",
+    pbtNonblood: "Non-Blood Specimens",
+    pbtOps: "Laboratory Operations",
+  },
+  copy: {
+    guestPrompt: "to save your PBT(ASCP) progress and track every question you miss",
+    trainingHeading: "Train by BOC content area",
+    trainingSub: "Four sets covering the six content areas of the ASCP BOC phlebotomy guideline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Circulatory System, Orders & Sites.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the PBT(ASCP).",
+    ],
+    sourceLine: "Based on the ASCP BOC PBT(ASCP) Examination Content Guideline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the American Society for Clinical Pathology.",
+    analyticsKey: "ascppbt",
   },
 };
 
@@ -19880,7 +20019,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

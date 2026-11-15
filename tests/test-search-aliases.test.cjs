@@ -8,6 +8,14 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
   // [query, visitor region, test id that must come first]
+  ["ascp phlebotomy", "US", "ascppbt"],
+  ["pbt ascp", "US", "ascppbt"],
+  ["ascp pbt exam", "US", "ascppbt"],
+  ["ascp phlebotomy technician", "US", "ascppbt"],
+  ["rpt", "US", "rpt"],
+  ["amt phlebotomy", "US", "rpt"],
+  ["registered phlebotomy technician", "US", "rpt"],
+  ["rpt amt exam", "US", "rpt"],
   ["chl exam", "US", "hspachl"],
   ["certified healthcare leader", "US", "hspachl"],
   ["hspa chl", "US", "hspachl"],

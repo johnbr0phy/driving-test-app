@@ -1,0 +1,70 @@
+const rpt: ExamConfig = {
+  id: "rpt",
+  stateCode: "RPT",
+  idBase: 28900,
+  slug: "/rpt",
+  landingPath: "/rpt-practice-test",
+  name: "RPT (AMT) Practice Test",
+  shortName: "RPT (AMT)",
+  examLabel: "RPT exam",
+  fullName: "Registered Phlebotomy Technician (RPT) Certification Exam",
+  questionIdPrefix: "RPT-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AMT Registered Phlebotomy Technician (RPT) Certification Competencies and Examination
+  // Specifications (©2025, checked November 2026): 200 questions. I. Obtaining Blood Samples 68
+  // (34%), II. Specimen Collection and Processing 30 (15%), III. Time Management and Assignment
+  // Organization 20 (10%), IV. Professional Communications 11 (5.5%), V. Clerical Skills and
+  // Duties 11 (5.5%), VI. Safety Standards and Procedures 30 (15%), VII. Legal, Ethical, and
+  // Professional Considerations 20 (10%), VIII. Terminology, Anatomy, and Physiology 10 (5%).
+  // Scaled to 50 per test: 17/8/5/3/3/7/5/2; work area I is split 6/7/4 (patient and site,
+  // venipuncture and tubes, capillary and labeling), Tigertest's split. AMT reports a scaled
+  // score (0 to 100, 70 to pass, not a percent); 70% here is a readiness marker. All items original.
+  blueprint: {
+    rptPatient: 6,
+    rptVenipuncture: 7,
+    rptCapillary: 4,
+    rptSpecimen: 8,
+    rptWorkflow: 5,
+    rptComm: 3,
+    rptClerical: 3,
+    rptSafety: 7,
+    rptLegal: 5,
+    rptAnatomy: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 28901, name: "Patient ID & Venipuncture", categories: ["rptPatient", "rptVenipuncture"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 28902, name: "Capillary & Specimen Processing", categories: ["rptCapillary", "rptSpecimen"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 28903, name: "Workflow, Communication & Clerical", categories: ["rptWorkflow", "rptComm", "rptClerical"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 28904, name: "Safety, Legal & Anatomy", categories: ["rptSafety", "rptLegal", "rptAnatomy"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rptPatient: "Patient ID, Preparation & Sites",
+    rptVenipuncture: "Venipuncture, Tubes & Equipment",
+    rptCapillary: "Capillary Punctures & Labeling",
+    rptSpecimen: "Specimen Collection & Processing",
+    rptWorkflow: "Time Management & Workflow",
+    rptComm: "Professional Communications",
+    rptClerical: "Clerical Skills & Duties",
+    rptSafety: "Safety Standards & Procedures",
+    rptLegal: "Legal, Ethical & Professional",
+    rptAnatomy: "Terminology, Anatomy & Physiology",
+  },
+  copy: {
+    guestPrompt: "to save your RPT progress and track every question you miss",
+    trainingHeading: "Train by AMT work area",
+    trainingSub: "Four sets covering the eight work areas of the AMT RPT specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Patient ID & Venipuncture.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the RPT.",
+    ],
+    sourceLine: "Based on the AMT RPT Certification Competencies and Examination Specifications. Original questions; 50 per test, weighted like the real exam. Not affiliated with American Medical Technologists.",
+    analyticsKey: "rpt",
+  },
+};

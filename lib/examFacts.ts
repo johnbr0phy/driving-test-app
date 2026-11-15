@@ -44,6 +44,35 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  ascppbt: {
+      answer:
+        "The PBT(ASCP) exam is the phlebotomy technician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the PBT(ASCP) credential (PBT(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 80 multiple-choice questions with one best answer in 2 hours, delivered as computer adaptive testing. Content areas are Specimen Collection 45 to 50%, Specimen Handling, Transport, and Processing 15 to 20%, Laboratory Operations 15 to 20%, and the Circulatory System, Waived and Point-of-Care Testing and Non-Blood Specimens 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score; guides say the scale is 100 to 999 with 400 to pass.",
+      rows: [
+        { label: "Questions", value: "80 multiple choice, one best answer" },
+        { label: "Time", value: "2 hours" },
+        { label: "Format", value: "Computer adaptive testing (CAT)" },
+        { label: "Largest area", value: "Specimen Collection, 45 to 50%" },
+        { label: "Pass mark", value: "Scaled score; guides say 400 on a 100 to 999 scale" },
+        { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+      ],
+      basedOn: "The ASCP BOC Phlebotomy Technician PBT(ASCP) and PBT(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
+      source: { name: "ASCP BOC: PBT(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_pbt_content_guideline.pdf?sfvrsn=aa1319c7_1" },
+    },
+  rpt: {
+      answer:
+        "The Registered Phlebotomy Technician (RPT) exam is the certification exam of American Medical Technologists (AMT) for phlebotomists, which earns the RPT (AMT) credential. AMT's examination specifications list 200 four-option multiple-choice questions in eight work areas: Obtaining Blood Samples 68 (34%), Specimen Collection and Processing 30 (15%), Safety Standards and Procedures 30 (15%), Time Management and Assignment Organization 20 (10%), Legal, Ethical, and Professional Considerations 20 (10%), Professional Communications 11 (5.5%), Clerical Skills and Duties 11 (5.5%) and Terminology, Anatomy, and Physiology 10 (5%). The exam is taken on a computer in 2.5 hours, scheduled through Pearson VUE or by a candidate's school, and may include unscored pretest items. Scores are scaled from 0 to 100, and 70 is the minimum passing score; it is not a percentage. A candidate who fails retakes the whole exam and may test up to four times in all.",
+      rows: [
+        { label: "Questions", value: "200 multiple choice, four options, single best answer" },
+        { label: "Time", value: "2.5 hours" },
+        { label: "Pass mark", value: "Scaled score of 70 (scale 0 to 100, not a percentage)" },
+        { label: "Largest area", value: "Obtaining Blood Samples, 68 questions (34%)" },
+        { label: "Where", value: "Computer based, scheduled through Pearson VUE or your school" },
+        { label: "Retakes", value: "Whole exam, up to four attempts in all, with a retest fee" },
+        { label: "Run by", value: "American Medical Technologists (AMT)" },
+      ],
+      basedOn: "AMT's RPT Certification Competencies and Examination Specifications (2025) and the AMT Candidate Handbook (revised April 2026), checked November 2026",
+      source: { name: "AMT: Registered Phlebotomy Technician exam", url: "https://americanmedtech.org/phlebotomy-technician/rpt-exam" },
+    },
   hspachl: {
       answer:
         "The Certified Healthcare Leader (CHL) exam is the Healthcare Sterile Processing Association's (HSPA) certification exam for sterile processing managers and supervisors. HSPA's handbook gives it 150 multiple-choice questions, 125 scored and 25 unscored pretest items, taken on a computer at a Prometric test center in 3 hours. Pass or fail depends on the number of scored questions answered correctly against a passing point HSPA sets by the Angoff method and does not publish as a percentage. The content outline revised August 2025 and updated January 2026 has four sections: Planning and Decision Making 25%, Organizing 23%, Leading 29%, and Governing and Compliance 23%. A current CRCST is required, and from October 2026 HSPA also asks for 12 months of sterile processing or leadership experience or an associate degree.",

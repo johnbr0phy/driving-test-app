@@ -22,15 +22,5 @@ Exam format (BACB, Pearson VUE): 85 multiple-choice questions (75 scored, 10 pil
 The BACB reports pass/fail against a modified-Angoff passing score and publishes no percentage; this site uses 80% as
 a readiness marker, not an official pass mark.
 
-All 400 items are original, written for Tigertest from the outline above. No item is copied from
+All 200 items are original, written for Tigertest from the outline above. No item is copied from
 any published question bank.
-
-## Scenario questions (added 2026-11-15)
-
-200 more items (segments SDAT, SASM, SACQ, SRED, SDOC, SETH), each a short work scenario that asks
-the candidate to apply a task from the outline. Written from:
-- RBT Test Content Outline (3rd ed.), https://www.bacb.com/wp-content/uploads/2023/12/RBT-3rd-Edition-Test-Content-Outline-240903-a.pdf ,
-  fetched 2026-11-15 (Updated 09/2024): the 43 task statements A.1 to F.10.
-- RBT Ethics Code (2.0), https://www.bacb.com/wp-content/RBT-Ethics-Code , fetched 2026-11-15 (Updated 08/2024):
-  items 1.01 to 3.07, quoted by number in explanations. The BACB's "rbt-compliance-code-future" link served the
-  same 2.0 text on that date, so no newer code is in force.

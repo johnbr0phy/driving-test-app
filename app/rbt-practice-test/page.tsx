@@ -17,9 +17,9 @@ const siteUrl = SITE_URL;
 
 const title = "RBT Practice Test 2026 - Free RBT Exam Questions (3rd Ed.)";
 const metaDescription =
-  "RBT practice test: 400 original questions on the BACB RBT Test Content Outline (3rd ed.), 200 of them work scenarios, eight 50-question mock exams and four training sets, every answer explained. Free to start.";
+  "Free RBT practice test: 200 original questions on the BACB RBT Test Content Outline (3rd ed.), four 50-question mock exams and four training sets, every answer explained.";
 const description =
-  "Practice for the BACB Registered Behavior Technician (RBT) exam: 400 original questions written from the RBT Test Content Outline (3rd edition), in effect since January 2026, 200 of them work scenarios like the real exam. Eight 50-question mock exams weighted like the real 75 scored questions, and four training sets covering data collection and graphing, behavior assessment, behavior acquisition, behavior reduction, documentation and reporting, and ethics.";
+  "Free practice for the BACB Registered Behavior Technician (RBT) exam: 200 original questions written from the RBT Test Content Outline (3rd edition), in effect since January 2026. Four 50-question mock exams weighted like the real 75 scored questions, and four training sets covering data collection and graphing, behavior assessment, behavior acquisition, behavior reduction, documentation and reporting, and ethics.";
 
 export const metadata: Metadata = {
   title,
@@ -57,8 +57,8 @@ const jsonLd = {
       operatingSystem: "Any",
       offers: examOffers("rbt"),
       featureList: [
-        "400 RBT practice questions, 200 of them work scenarios",
-        "8 mock exams of 50 questions weighted like the RBT Test Content Outline (3rd ed.)",
+        "200 RBT practice questions",
+        "4 mock exams of 50 questions weighted like the RBT Test Content Outline (3rd ed.)",
         "4 training sets by content domain",
         "Instant feedback with explanations",
         "Auto-save progress",
@@ -105,7 +105,7 @@ const jsonLd = {
           name: "Are these the real RBT exam questions?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Every question is original, written by Tigertest from the BACB's published RBT Test Content Outline and ethics code, so it tests the same skills without copying the exam. It is independent practice, not an official BACB product, and it does not replace your training, competency assessment or supervisor.",
+            text: "No. Every question is original, written by Tigertest from the BACB's published RBT Test Content Outline and ethics code, so it tests the same skills without copying the exam. It is free practice, not an official BACB product, and it does not replace your training, competency assessment or supervisor.",
           },
         },
         classFaqJsonLd("rbt"),
@@ -141,7 +141,7 @@ export default function RbtLandingPage() {
           <ExamLandingHero
             dashboardHref="/rbt/dashboard"
             shortName="RBT"
-            subtitle="400 original questions on the RBT Test Content Outline (3rd ed.): measurement, assessment, teaching, behavior reduction, documentation and ethics. Eight 50-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 original questions on the RBT Test Content Outline (3rd ed.): measurement, assessment, teaching, behavior reduction, documentation and ethics. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/rbt-mobile.png", desktop: "/landing/rbt-desktop.png" }}
           />
         </div>
@@ -162,7 +162,7 @@ export default function RbtLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets follow the outline: data collection and assessment; behavior acquisition; behavior reduction; and documentation, reporting and ethics. Each set has a part of work scenarios that ask you to apply the idea, not just name it. Questions you miss come back until you have mastered them.
+                Four training sets follow the outline: data collection and assessment; behavior acquisition; behavior reduction; and documentation, reporting and ethics. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function RbtLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Weighted Mock Exams</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Eight mock exams of 50 questions, each weighted like the 75 scored questions on the real exam. Aim for 80% or better. No question appears in more than one test, and every one comes with an explanation. The first 200 questions and Tests 1 to 4 are free. Premium adds the 200 scenario questions and Tests 5 to 8.
+                Four mock exams of 50 questions, each weighted like the 75 scored questions on the real exam. Aim for 80% or better. No question appears in more than one test, and every one comes with an explanation.
               </p>
             </div>
           </div>
@@ -301,7 +301,7 @@ export default function RbtLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Are these the real RBT exam questions?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Every question is original, written by Tigertest from the BACB&apos;s published RBT Test Content Outline and ethics code, so it tests the same skills without copying the exam. It is independent practice, not an official BACB product, and it does not replace your training, competency assessment or supervisor.
+              No. Every question is original, written by Tigertest from the BACB&apos;s published RBT Test Content Outline and ethics code, so it tests the same skills without copying the exam. It is free practice, not an official BACB product, and it does not replace your training, competency assessment or supervisor.
             </p>
           </div>
           <ExamClassFaq examId="rbt" />
@@ -317,7 +317,7 @@ export default function RbtLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the RBT Exam?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 400 questions across every domain of the RBT outline.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across every domain of the RBT outline.</p>
           <ExamLandingCTA dashboardHref="/rbt/dashboard" />
         </div>
       </div>

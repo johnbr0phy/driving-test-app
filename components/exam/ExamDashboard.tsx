@@ -8,7 +8,6 @@
 // and miss drill. The last quarter of the dashboard is Premium
 // (lib/examLocks.ts); everything before them is free.
 
-import { examStepGroups } from "@/lib/examLocks";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -209,12 +208,27 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     completedSteps > 0 ||
     exam.trainingSets.some((s) => hydrated && getTrainingSetProgress(s.id).correct > 0);
 
-  // Train, test, train, test (lib/examLocks.ts examStepGroups, which the
-  // Premium locks read too): test i follows training step ceil((i+1)*P/T),
-  // so the last step is always a test, and an exam with a Premium content
-  // block (premiumFrom) shows its free steps first. Only the order on screen
-  // changes: progress is stored by set and test ID.
-  const stepGroups = examStepGroups(exam);
+  // Train, test, train, test. Test i follows training step ceil((i+1)*P/T),
+  // so equal counts pair up one to one (the DMV layout), more training than
+  // tests puts a test after every few steps, and more tests than training
+  // puts several tests after each set. The last step is always a test. Only
+  // the order on screen changes: progress is stored by set and test ID.
+  const stepGroups: { parts: TrainingPart[]; testIds: number[] }[] = [];
+  if (parts.length === 0) {
+    stepGroups.push({ parts: [], testIds: [...routes.testIds] });
+  } else {
+    parts.forEach((p) => {
+      const last = stepGroups[stepGroups.length - 1];
+      if (last && last.testIds.length === 0) last.parts.push(p);
+      else stepGroups.push({ parts: [p], testIds: [] });
+      const after = stepGroups[stepGroups.length - 1];
+      const partsSoFar = stepGroups.reduce((n, g) => n + g.parts.length, 0);
+      routes.testIds.forEach((testId, i) => {
+        const slot = Math.ceil(((i + 1) * parts.length) / routes.testIds.length);
+        if (slot === partsSoFar) after.testIds.push(testId);
+      });
+    });
+  }
 
   // One card per training step and per practice test; the list below puts
   // them in order.

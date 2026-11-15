@@ -18,11 +18,6 @@
  * A step someone already has work in stays open, class students are never
  * locked (hooks/useExamLocks.ts), and gating is client-side like the DMV's.
  * The DMV keeps its own rules in the store.
- *
- * An exam can instead mark a block of content as Premium (`premiumFrom` on
- * ExamConfig): RBT keeps its original 200 questions, Practice Tests 1 to 4
- * and the first part of every set free, and Premium opens Tests 5 to 8 and
- * the scenario part of every set (200 more questions).
  */
 import { ExamConfig, TrainingPart, examTestIds, examTrainingParts } from "./exams";
 
@@ -37,61 +32,27 @@ export function lockedStepCount(steps: number): number {
 
 export type ExamStep = { kind: "part"; part: TrainingPart } | { kind: "test"; testId: number };
 
-/** A run of training steps followed by the tests that come after them. */
-export type ExamStepGroup = { parts: TrainingPart[]; testIds: number[] };
-
-/** Is this step Premium content under `premiumFrom`? */
-function inPremiumBlock(exam: ExamConfig, step: ExamStep): boolean {
-  const from = exam.premiumFrom;
-  if (!from) return false;
-  if (step.kind === "test") return step.testId - exam.idBase >= from.test;
-  return step.part.partCount > 1 && step.part.part >= from.part;
-}
-
-/** Train, test, train, test: test i follows training step ceil((i+1)*P/T). */
-function interleave(parts: TrainingPart[], testIds: number[]): ExamStepGroup[] {
-  if (parts.length === 0) return testIds.length ? [{ parts: [], testIds: [...testIds] }] : [];
-  const groups: ExamStepGroup[] = [];
-  parts.forEach((p, n) => {
-    const last = groups[groups.length - 1];
-    if (last && last.testIds.length === 0) last.parts.push(p);
-    else groups.push({ parts: [p], testIds: [] });
-    testIds.forEach((testId, i) => {
-      if (Math.ceil(((i + 1) * parts.length) / testIds.length) === n + 1) groups[groups.length - 1].testIds.push(testId);
-    });
-  });
-  return groups;
-}
-
 /**
- * The dashboard's steps in groups (components/exam/ExamDashboard.tsx), so
- * the last step is always a test. With `premiumFrom` the free steps are laid
- * out first and the Premium block after them, each interleaved the same way.
+ * Every step in dashboard order (components/exam/ExamDashboard.tsx): test i
+ * follows training step ceil((i+1)*P/T), so the last step is always a test.
  */
-export function examStepGroups(exam: ExamConfig): ExamStepGroup[] {
+export function examSteps(exam: ExamConfig): ExamStep[] {
   const parts = examTrainingParts(exam);
   const testIds = examTestIds(exam);
-  if (!exam.premiumFrom) return interleave(parts, testIds);
-  const premiumPart = (part: TrainingPart) => inPremiumBlock(exam, { kind: "part", part });
-  const premiumTest = (testId: number) => inPremiumBlock(exam, { kind: "test", testId });
-  return [
-    ...interleave(parts.filter((p) => !premiumPart(p)), testIds.filter((t) => !premiumTest(t))),
-    ...interleave(parts.filter(premiumPart), testIds.filter(premiumTest)),
-  ];
+  if (parts.length === 0) return testIds.map((testId) => ({ kind: "test", testId }));
+  const steps: ExamStep[] = [];
+  parts.forEach((part, p) => {
+    steps.push({ kind: "part", part });
+    testIds.forEach((testId, i) => {
+      if (Math.ceil(((i + 1) * parts.length) / testIds.length) === p + 1) steps.push({ kind: "test", testId });
+    });
+  });
+  return steps;
 }
 
-/** Every step in dashboard order. */
-export function examSteps(exam: ExamConfig): ExamStep[] {
-  return examStepGroups(exam).flatMap((g) => [
-    ...g.parts.map((part): ExamStep => ({ kind: "part", part })),
-    ...g.testIds.map((testId): ExamStep => ({ kind: "test", testId })),
-  ]);
-}
-
-/** The Premium steps: the `premiumFrom` block, else the last quarter of the dashboard. */
+/** The Premium steps: the last quarter of the dashboard. */
 function lockedSteps(exam: ExamConfig): ExamStep[] {
   const steps = examSteps(exam);
-  if (exam.premiumFrom) return steps.filter((s) => inPremiumBlock(exam, s));
   // A one-test exam keeps its test free and locks training steps only.
   if (exam.testCount < 2) {
     const parts = steps.filter((s) => s.kind === "part");

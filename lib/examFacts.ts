@@ -2215,6 +2215,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full adaptive GRE practice tests with Verbal and Quant score estimates and seven drills, all free with no account required. The essay is not included.",
   },
+  naplex: {
+    answer:
+      "The NAPLEX is NABP's North American Pharmacist Licensure Examination, which every US board of pharmacy uses to assess a new pharmacist's competence. It is a 6-hour computerized fixed-form exam of 225 questions, 200 scored and 25 unscored pretest questions, mostly scenario-based with a patient profile. Questions are answered in order: none can be skipped and an answer cannot be changed after moving on. Formats are multiple choice, multiple response, constructed response (a typed number), ordered response and hot spot, with an on-screen scientific calculator. The content outline in force since May 1, 2025 weights five domains: Foundational Knowledge 25%, Medication Use Process 25%, Person-Centered Assessment and Treatment Planning 40%, Professional Practice 5% and Pharmacy Management and Leadership 5%. Results are pass or fail; on NABP's 0 to 150 scale a scaled score of 75 passes.",
+    rows: [
+      { label: "Questions", value: "225: 200 scored, 25 unscored pretest" },
+      { label: "Time", value: "6 hours, two optional 10-minute breaks" },
+      { label: "Navigation", value: "In order, no skipping, no going back" },
+      { label: "Formats", value: "Multiple choice, multiple response, numeric, ordered response, hot spot" },
+      { label: "Domains", value: "25% / 25% / 40% / 5% / 5%" },
+      { label: "Result", value: "Pass or fail; scaled 75 of 150 passes" },
+      { label: "Retakes", value: "45-day wait, 3 attempts in 12 months, 5 in all" },
+      { label: "Given by", value: "NABP" },
+    ],
+    basedOn: "NABP's NAPLEX Content Outline effective May 1, 2025 and the NAPLEX/MPJE Candidate Application Bulletin (March 2026)",
+    source: { name: "NABP", url: "https://nabp.pharmacy/wp-content/uploads/NAPLEX-Content-Outline.pdf" },
+    tigertest:
+      "Tigertest has two 100-question NAPLEX practice tests at the real pace, in order with no going back, weighted like the 2025 content outline, with typed calculations, select all that apply and ordered questions, plus eight drills by content area. It is free to start, with no account required.",
+  },
   mcat: {
     answer:
       "The MCAT is the AAMC's computer-based Medical College Admission Test, with four multiple-choice sections in this order: Chemical and Physical Foundations of Biological Systems (59 questions, 95 minutes), Critical Analysis and Reasoning Skills (53 questions, 90 minutes), Biological and Biochemical Foundations of Living Systems (59, 95) and Psychological, Social, and Biological Foundations of Behavior (59, 95). The science sections mix passage-based sets with discrete questions; CARS is all passage-based and needs no outside knowledge. Each section is scored 118 to 132 and the total runs from 472 to 528, and wrong answers count the same as blank ones.",

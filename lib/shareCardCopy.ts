@@ -7,6 +7,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ham: { title: "Ham Radio Technician", description: "Study radio rules, operating procedures, circuits, antennas and electrical safety." },
   epa608: { title: "EPA Section 608", description: "Review refrigerant handling, recovery, leak detection and equipment safety by certification type." },
   cna: { title: "CNA Written Exam", description: "Review daily living assistance, basic nursing skills, resident rights and safe care." },
+  naplex: { title: "NAPLEX Pharmacist Licensure", description: "Practice pharmacology, calculations, interactions, monitoring and counseling on NABP's five content domains." },
   ptcb: { title: "PTCB Pharmacy Technician", description: "Review medications, pharmacy calculations, patient safety, order entry and federal law." },
   phleb: { title: "Phlebotomy Certification", description: "Study blood collection, patient identification, infection control and specimen handling." },
   ccma: { title: "Clinical Medical Assistant", description: "Review vital signs, clinical procedures, infection control and patient communication." },

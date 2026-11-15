@@ -46,6 +46,7 @@ import "@/lib/v2/banks/praxis";
 import "@/lib/v2/banks/gre";
 import "@/lib/v2/banks/gmat";
 import "@/lib/v2/banks/mcat";
+import "@/lib/v2/banks/naplex";
 import "@/lib/v2/banks/lsat";
 import "@/lib/v2/banks/sehp";
 import "@/lib/v2/banks/netplus";

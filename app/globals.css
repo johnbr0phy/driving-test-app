@@ -4215,6 +4215,20 @@
     --brand-gradient-to: 130 50% 96%;
   }
 
+  /* NAPLEX theme: deep pharmacy green (v2 exam; matches lib/v2/exams/naplex.ts theme) */
+  [data-theme="naplex"] {
+    --brand: 132 55% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 132 45% 95%;
+    --brand-hover: 132 55% 17%;
+    --brand-dark: 132 55% 15%;
+    --brand-darker: 132 50% 10%;
+    --brand-muted: 132 25% 65%;
+    --brand-border: 132 30% 78%;
+    --brand-border-light: 132 30% 90%;
+    --brand-gradient-to: 150 40% 96%;
+  }
+
   /* JAMB Biology theme: muted leaf green (v2 exam; matches lib/v2/exams/jambbio.ts theme) */
   [data-theme="jambbio"] {
     --brand: 135 30% 38%;
@@ -8549,6 +8563,18 @@
     --brand-muted: 150 25% 45%;
     --brand-dark: 150 75% 65%;
     --brand-darker: 150 70% 78%;
+  }
+
+  .dark [data-theme="naplex"] {
+    --brand: 132 55% 33.9%;
+    --brand-hover: 132 55% 25.9%;
+    --brand-light: 132 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 132 30% 24%;
+    --brand-border: 132 30% 34%;
+    --brand-muted: 132 25% 45%;
+    --brand-dark: 132 55% 65%;
+    --brand-darker: 132 50% 78%;
   }
 
   .dark [data-theme="jambbio"] {

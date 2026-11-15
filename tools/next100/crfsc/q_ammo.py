@@ -27,7 +27,7 @@ Q = [
 ("What is the usual unit for a handgun bullet's weight?",
  "Grains", ["Grams per round", "Ounces", "Joules"],
  "Bullet weight is normally given in grains, with 7,000 grains in a pound. A 9 mm load might be 115 or 124 grains."),
-("A revolver chambered for 9 mm Luger needs what to hold and eject the rimless cases?",
+("A revolver chambered for 9 mm Luger usually uses what to hold and eject the rimless cases?",
  "Moon clips", ["A tube magazine", "A speed strip only", "A box magazine"],
  "Rimless cases like the 9 mm Luger have no rim for the extractor to catch, so 9 mm revolvers usually use moon clips that hold the cases in a ring."),
 ("Can .22 Winchester Magnum Rimfire be fired in a handgun chambered only for .22 Long Rifle?",

@@ -94,6 +94,6 @@ Q = [
  "It may not close fully", ["It wears out the spring", "It empties the magazine", "It lowers the sights"],
  "Riding the slide forward slowly can leave it short of fully closed, which may stop the pistol firing. Let it go from full rearward travel."),
 ("What is the safest way to carry an unloaded handgun from one firing point to another on a range?",
- "As the range rules direct", ["Loaded, muzzle down", "Cocked, finger off the trigger", "Tucked in your waistband"],
+ "Unloaded, action open, as directed", ["Unloaded, action closed, in hand", "Unloaded, in a pocket", "Unloaded, tucked in a waistband"],
  "Range rules set how handguns move on the range, usually unloaded, actions open and cased or holstered. Follow them and the range officer's instructions."),
 ]

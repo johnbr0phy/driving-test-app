@@ -65,7 +65,7 @@ const CASES = [
   ["wonderlic personnel test", "US", "wonderlic"],
   ["wonscore", "US", "wonderlic"],
   ["pre employment test", "US", "wonderlic"],
-  ["cognitive ability test", "US", "wonderlic"],
+  ["pre employment cognitive ability test", "US", "wonderlic"],
   ["hiset practice test", "US", "hiset"],
   ["hiset math", "US", "hiset"],
   ["jkssb", "IN", "jkssbja"],

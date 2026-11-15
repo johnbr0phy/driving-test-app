@@ -38,7 +38,7 @@ Q = [
  "Sixteen and seventeen-year-olds who want to have and use airguns unsupervised need a firearms licence."),
 ("To possess a high-energy airgun, such as a specified pre-charged pneumatic air rifle, you need:",
  "A firearms licence", ["No licence if you are 18", "A club membership card", "Only the seller's receipt"],
- "Most airguns need no licence for adults, but high-energy airguns (specially dangerous airguns), including specified pre-charged pneumatic air rifles, are treated like firearms and need a firearms licence."),
+ "Most airguns need no licence for adults, but high-energy airguns, including specified pre-charged pneumatic air rifles, are treated like firearms and need a firearms licence."),
 ("When must a licence holder's secure storage be inspected and approved?",
  "Even if they own no firearms", ["Only when they first buy a pistol", "Only after a theft", "Only if they live in a city"],
  "All licence holders must have secure storage inspected and approved, even if they do not yet possess firearms or ammunition."),

@@ -340,14 +340,14 @@
     "state": "ALL",
     "questionId": "U-025",
     "category": "roadSigns",
-    "question": "What does a sign with bumps indicate?",
-    "optionA": "Rough road surface",
-    "optionB": "Speed bump ahead",
-    "optionC": "Uneven lanes",
-    "optionD": "Dip in road",
+    "question": "What does a yellow BUMP warning sign mean?",
+    "optionA": "A sharp rise in the road ahead",
+    "optionB": "A school speed zone ahead",
+    "optionC": "The lane is closing ahead",
+    "optionD": "A sharp drop in the road ahead",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "This sign warns of an uneven or rough road surface ahead."
+    "explanation": "A BUMP sign warns of a sharp rise in the road surface, so slow down. A sudden drop is marked by a DIP sign instead."
   },
   {
     "type": "Universal",
@@ -638,10 +638,10 @@
     "optionA": "Speed",
     "optionB": "Lane width",
     "optionC": "Parking time",
-    "optionD": "Bridge capacity",
+    "optionD": "Vehicle weight",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Weight limit signs show maximum vehicle weight allowed typically on bridges."
+    "explanation": "A weight limit sign sets the heaviest vehicle allowed on that road or bridge. It does not limit speed, lane width or parking."
   },
   {
     "type": "Universal",
@@ -664,12 +664,12 @@
     "category": "roadSigns",
     "question": "What does END indicate on a road sign?",
     "optionA": "Road terminates",
-    "optionB": "Restriction ends",
-    "optionC": "Speed zone ends",
-    "optionD": "Any of these",
+    "optionB": "You must stop ahead",
+    "optionC": "A new lane begins",
+    "optionD": "A posted zone or rule ends",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "END on a sign indicates a previously posted regulation or zone is no longer in effect."
+    "explanation": "END on a sign, as in END SCHOOL ZONE or END ROAD WORK, means the zone or rule posted earlier no longer applies. A road that stops is marked by a separate warning sign, not by END alone."
   },
   {
     "type": "Universal",
@@ -677,13 +677,13 @@
     "questionId": "U-049",
     "category": "roadSigns",
     "question": "What does a bike lane sign indicate?",
-    "optionA": "Bikes only in lane",
+    "optionA": "Lane set aside for bicycles",
     "optionB": "No bikes allowed",
-    "optionC": "Bikes may use",
+    "optionC": "Bikes share the lane with cars",
     "optionD": "Bike parking",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Bike lane signs mark lanes designated exclusively for bicycle use."
+    "explanation": "A bike lane sign marks a lane set aside for bicycles. Drivers may enter or cross it only to turn or park where allowed, after yielding to cyclists."
   },
   {
     "type": "Universal",
@@ -760,14 +760,14 @@
     "state": "ALL",
     "questionId": "U-055",
     "category": "rulesOfRoad",
-    "question": "When can you pass a school bus with flashing red lights?",
-    "optionA": "When going opposite direction on a divided highway only",
+    "question": "In most states, when may you pass a school bus with flashing red lights?",
+    "optionA": "Going the opposite way on a highway with a median or barrier",
     "optionB": "When the bus driver waves you to pass the stopped bus",
     "optionC": "When no children are visible near the stopped school bus",
     "optionD": "You can never pass a school bus with flashing red lights",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "On divided highways with a median you may proceed when traveling the opposite direction."
+    "explanation": "Most states let traffic going the opposite way keep moving when a median or physical barrier divides the highway. Some states, such as New York, require every driver to stop, so check your state's rule."
   },
   {
     "type": "Universal",
@@ -830,14 +830,14 @@
     "state": "ALL",
     "questionId": "U-060",
     "category": "rulesOfRoad",
-    "question": "How far before a turn must you signal?",
+    "question": "In most states, how far before a turn must you signal?",
     "optionA": "25 feet",
     "optionB": "50 feet",
     "optionC": "100 feet",
     "optionD": "200 feet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Signal at least 100 feet before turning to give other drivers adequate warning."
+    "explanation": "Most states require a turn signal at least 100 feet before the turn. Some states require more on rural or high-speed roads, such as 200 feet in Illinois outside business districts."
   },
   {
     "type": "Universal",
@@ -847,25 +847,25 @@
     "question": "When should you use headlights?",
     "optionA": "Only at night",
     "optionB": "When visibility is reduced",
-    "optionC": "Sunset to sunrise",
+    "optionC": "Between dusk and dawn",
     "optionD": "B and C",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Headlights must be used from sunset to sunrise and whenever visibility is reduced."
+    "explanation": "Headlights are required from around sunset to sunrise (many states say 30 minutes after sunset to 30 minutes before sunrise) and whenever rain, fog or darkness reduces visibility. Using them only at night misses the low-visibility rule."
   },
   {
     "type": "Universal",
     "state": "ALL",
     "questionId": "U-062",
     "category": "rulesOfRoad",
-    "question": "What is the proper following distance in ideal conditions?",
+    "question": "What following distance do most state handbooks recommend in ideal conditions?",
     "optionA": "1 second",
     "optionB": "2 seconds",
     "optionC": "3-4 seconds",
     "optionD": "5 seconds",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Maintain at least 3-4 seconds following distance under normal driving conditions."
+    "explanation": "Most state handbooks recommend at least 3 to 4 seconds behind the vehicle ahead in good conditions, and more in bad weather. Two seconds leaves too little time to react at highway speeds."
   },
   {
     "type": "Universal",
@@ -1096,28 +1096,28 @@
     "state": "ALL",
     "questionId": "U-079",
     "category": "rulesOfRoad",
-    "question": "How close can you park to a fire hydrant?",
+    "question": "In most states, how close may you park to a fire hydrant?",
     "optionA": "5 feet",
     "optionB": "10 feet",
     "optionC": "15 feet",
     "optionD": "20 feet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "You must park at least 15 feet from a fire hydrant to ensure emergency access."
+    "explanation": "Most states require you to park at least 15 feet from a fire hydrant so fire crews can reach it. A few, such as Massachusetts and New Jersey, use 10 feet."
   },
   {
     "type": "Universal",
     "state": "ALL",
     "questionId": "U-080",
     "category": "rulesOfRoad",
-    "question": "How close can you park to a crosswalk?",
+    "question": "In most states, how close may you park to a crosswalk at an intersection?",
     "optionA": "10 feet",
     "optionB": "15 feet",
     "optionC": "20 feet",
     "optionD": "25 feet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Do not park within 20 feet of a crosswalk to maintain pedestrian visibility."
+    "explanation": "Most states ban parking within 20 feet of a crosswalk at an intersection so drivers can see pedestrians. A few states set a different distance, such as 25 feet in New Jersey."
   },
   {
     "type": "Universal",
@@ -1575,11 +1575,11 @@
     "question": "What is the safest position for hands on the steering wheel?",
     "optionA": "10 and 2",
     "optionB": "9 and 3",
-    "optionC": "8 and 4",
+    "optionC": "One hand at 6 o'clock",
     "optionD": "12 o'clock",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The 9 and 3 position provides best control and reduces injury risk from airbag deployment."
+    "explanation": "Holding the wheel at 9 and 3 gives good control and keeps your arms out of the airbag's path. The older 10 and 2 position puts your hands where a deploying airbag can throw them back at you."
   },
   {
     "type": "Universal",
@@ -1684,14 +1684,14 @@
     "state": "ALL",
     "questionId": "U-122",
     "category": "safeDriving",
-    "question": "What should you do before entering a vehicle?",
+    "question": "What should you do before you drive away?",
     "optionA": "Check around vehicle",
     "optionB": "Adjust all mirrors",
     "optionC": "Fasten seat belt",
     "optionD": "All of these",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Walk around to check for obstructions then adjust mirrors and fasten your seat belt."
+    "explanation": "Walk around the vehicle to check for hazards before you get in, then adjust the mirrors and fasten your seat belt before moving. Each step is part of getting ready to drive."
   },
   {
     "type": "Universal",
@@ -1758,10 +1758,10 @@
     "optionA": "Pass when clear",
     "optionB": "Cut through procession",
     "optionC": "Maintain normal driving",
-    "optionD": "Pull over and wait",
+    "optionD": "Yield and let it pass",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Pull over or wait for the procession to pass as a sign of respect and for safety."
+    "explanation": "Yield to a funeral procession and let it pass, and never cut into the line of cars. Keeping your normal driving can mean cutting through the procession."
   },
   {
     "type": "Universal",
@@ -2216,14 +2216,14 @@
     "state": "ALL",
     "questionId": "U-160",
     "category": "alcoholDUI",
-    "question": "What should you do during a tornado while driving?",
-    "optionA": "Drive away from the tornado as fast as you can",
+    "question": "What is the best thing to do if a tornado nears while you are driving?",
+    "optionA": "Open the windows to equalize pressure",
     "optionB": "Park under an overpass for protection from wind",
     "optionC": "Speed up to try to outrun the tornado path",
-    "optionD": "Exit your car and lie in a low area nearby",
+    "optionD": "Drive to the nearest sturdy shelter",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "If no building is available leave your car and lie flat in a low area away from vehicles."
+    "explanation": "The National Weather Service says the best action is to drive to the closest sturdy shelter. If you cannot, get down in the car and cover your head or leave it for a ditch; an overpass gives no protection from wind and debris."
   },
   {
     "type": "Universal",
@@ -2342,14 +2342,14 @@
     "state": "AK",
     "questionId": "AK-008",
     "category": "gdlLicensing",
-    "question": "At what age can you obtain a full unrestricted driver's license in Alaska?",
-    "optionA": "16 years old",
-    "optionB": "17 years old",
-    "optionC": "19 years old",
-    "optionD": "18 years old",
+    "question": "How long must the adult supervising an Alaska permit holder have been licensed?",
+    "optionA": "At least 3 years",
+    "optionB": "At least 2 years",
+    "optionC": "At least 5 years",
+    "optionD": "At least 1 year",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Alaska drivers can obtain a full unrestricted license at age 18, once they have completed all GDL stages and accumulated sufficient driving experience."
+    "explanation": "Under AS 28.15.051, the supervising driver must be at least 21, licensed for at least one year for that type of vehicle, and sitting beside the permit holder."
   },
   {
     "type": "State-Specific",
@@ -2498,12 +2498,12 @@
     "category": "duiStateLaws",
     "question": "When are studded tires permitted on roads north of 60° North latitude in Alaska?",
     "optionA": "October 1 through April 30",
-    "optionB": "September 16 through May 1",
+    "optionB": "September 16 through April 30",
     "optionC": "November 1 through March 31",
     "optionD": "October 15 through April 15",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "North of 60° North latitude — including Anchorage and Fairbanks — studded tires are legal from September 16 through May 1, reflecting the longer winter season in northern Alaska."
+    "explanation": "AS 28.35.155 bans studded tires north of 60 degrees North from May 1 through September 15, so they are legal from September 16 through April 30. South of 60 degrees the ban runs April 15 through September 30."
   },
   {
     "type": "State-Specific",
@@ -3105,7 +3105,7 @@
     "optionD": "0.06%",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Alabama sets the legal BAC limit at 0.08% for drivers aged 21 and older — the same standard used by all 50 states under federal guidelines."
+    "explanation": "Alabama's limit for drivers 21 and older is 0.08%. Every state uses 0.08% except Utah, which lowered its limit to 0.05%."
   },
   {
     "type": "State-Specific",
@@ -3451,11 +3451,11 @@
     "question": "When does a learner's license expire in Arkansas?",
     "optionA": "After 2 full years pass",
     "optionB": "When holder turns age 18",
-    "optionC": "On holder's 16th birthday",
+    "optionC": "One month after 16th birthday",
     "optionD": "After 18 full months pass",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Arkansas learner's licenses automatically expire on the holder's 16th birthday, when they become eligible for an intermediate license."
+    "explanation": "Arkansas DFA says a learner's license expires one month past the holder's 16th birthday. Intermediate licenses are for ages 16 and 17."
   },
   {
     "type": "State-Specific",
@@ -4652,14 +4652,14 @@
     "state": "CO",
     "questionId": "CO-013",
     "category": "speedLimits",
-    "question": "What is the speed limit in a Colorado school zone when children are present?",
-    "optionA": "15 mph",
-    "optionB": "20 mph",
-    "optionC": "25 mph",
-    "optionD": "30 mph",
+    "question": "What speed limit applies in a Colorado school zone during its posted hours?",
+    "optionA": "Always 15 mph statewide",
+    "optionB": "The posted school zone limit",
+    "optionC": "Always 25 mph statewide",
+    "optionD": "10 mph under the normal limit",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Colorado school zones have a speed limit of 20 mph when children are present during posted school zone hours."
+    "explanation": "Colorado has no single statewide school zone number; each zone's limit is set by a traffic study and posted. CDOT lists posted school zone speeds as absolute limits that may not be exceeded while they apply."
   },
   {
     "type": "State-Specific",
@@ -4724,12 +4724,12 @@
     "category": "stateUnique",
     "question": "When are headlights required to be on while driving in Colorado?",
     "optionA": "Only between sunset and sunrise",
-    "optionB": "When windshield wipers are in continuous use",
+    "optionB": "When you can't see clearly 1,000 feet ahead",
     "optionC": "Only in construction zones at all times",
     "optionD": "Whenever visibility is under one mile away",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Colorado law requires headlights to be on whenever windshield wipers are in continuous use due to weather conditions, in addition to the standard sunset-to-sunrise requirement."
+    "explanation": "C.R.S. 42-4-204 requires lighted lamps between sunset and sunrise and any time people and vehicles are not clearly visible 1,000 feet ahead. Sunset to sunrise alone misses the low-visibility rule, and Colorado has no wiper-based headlight law."
   },
   {
     "type": "State-Specific",
@@ -4834,14 +4834,14 @@
     "state": "CO",
     "questionId": "CO-026",
     "category": "duiStateLaws",
-    "question": "What is Colorado's legal limit for THC while driving?",
+    "question": "At what THC blood level may a Colorado court infer a driver was impaired?",
     "optionA": "10 nanograms per milliliter of blood",
     "optionB": "5 nanograms per milliliter of blood",
     "optionC": "15 nanograms per milliliter of blood",
     "optionD": "2 nanograms per milliliter of blood",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Colorado law establishes 5 nanograms of THC per milliliter of blood as the legal limit, with the same penalties as alcohol DUI."
+    "explanation": "Under C.R.S. 42-4-1301, 5 nanograms or more of THC per milliliter of whole blood allows a permissible inference that the driver was under the influence. It is not a fixed per se limit like 0.08% for alcohol, and a driver can be charged at lower levels."
   },
   {
     "type": "State-Specific",
@@ -5366,14 +5366,14 @@
     "state": "CT",
     "questionId": "CT-024",
     "category": "speedLimits",
-    "question": "What is the default speed limit in Connecticut residential and business districts?",
-    "optionA": "20 mph",
-    "optionB": "25 mph",
-    "optionC": "30 mph",
-    "optionD": "35 mph",
+    "question": "Who must approve a speed limit a Connecticut town sets on its own roads?",
+    "optionA": "The town's police chief alone",
+    "optionB": "The Office of the State Traffic Administration",
+    "optionC": "The state DMV commissioner",
+    "optionD": "The local school board",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Connecticut's default speed limit in residential and business districts is 25 mph unless otherwise posted."
+    "explanation": "Connecticut's Office of the State Traffic Administration sets speed limits on state roads and must approve any limit a town's traffic authority sets before it takes effect (CGS 14-218a). Speed limits are posted after an engineering study."
   },
   {
     "type": "State-Specific",
@@ -5480,12 +5480,12 @@
     "category": "stateUnique",
     "question": "What type of road divider exempts opposite-direction traffic from stopping for a school bus in Connecticut?",
     "optionA": "Any painted center line or median",
-    "optionB": "A physical median or barrier of at least four feet",
+    "optionB": "A safety island or physical barrier",
     "optionC": "A center turn lane",
     "optionD": "Double yellow lines",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Under CGS § 14-279, only a physical median, barrier, or unpaved area of at least four feet qualifies as a divider. Painted medians and turn lanes do not count."
+    "explanation": "Under CGS 14-279, drivers on a highway separated by a safety island or physical barrier need not stop for a school bus on the other side. A painted line or center turn lane does not count, so both directions must stop."
   },
   {
     "type": "State-Specific",
@@ -5761,11 +5761,11 @@
     "question": "Where must the supervising driver sit when accompanying a Delaware GDL permit holder?",
     "optionA": "In the back seat directly behind the driver",
     "optionB": "Anywhere in the vehicle",
-    "optionC": "In the front passenger seat",
+    "optionC": "In any seat with a seat belt",
     "optionD": "Beside the driver in the front seat",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The supervising driver must sit beside the permit holder in the front passenger seat."
+    "explanation": "The supervising driver must sit in the front seat beside the permit holder, close enough to help. Sitting in the back or anywhere else does not meet the rule."
   },
   {
     "type": "State-Specific",
@@ -6141,9 +6141,9 @@
     "optionB": "Newark",
     "optionC": "Dover",
     "optionD": "Rehoboth Beach",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "Dover maintains and enforces its own red light camera program."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Wilmington runs its own red light camera program, which DelDOT reviews each year. Cameras elsewhere, including those in Dover, are part of DelDOT's statewide Electronic Red Light Safety Program."
   },
   {
     "type": "State-Specific",
@@ -6360,7 +6360,7 @@
     "state": "FL",
     "questionId": "FL-015",
     "category": "cellPhone",
-    "question": "How much is the base fine for a second texting offense in Florida within five years?",
+    "question": "What happens on a second texting offense within five years in Florida?",
     "optionA": "No fine, warning only",
     "optionB": "Same as first offense",
     "optionC": "Higher fine plus points",
@@ -6420,10 +6420,10 @@
     "optionA": "0.05%",
     "optionB": "0.08%",
     "optionC": "0.02%",
-    "optionD": "Zero tolerance",
+    "optionD": "0.04%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Florida has a zero tolerance policy with a 0.02% BAC limit for drivers under 21 years old."
+    "explanation": "Florida's zero tolerance law suspends the license of a driver under 21 with a BAC of 0.02% or higher. The 0.08% limit applies to adults, and 0.04% is the commercial driver limit."
   },
   {
     "type": "State-Specific",
@@ -6850,14 +6850,14 @@
     "state": "GA",
     "questionId": "GA-010",
     "category": "gdlLicensing",
-    "question": "Who qualifies as a supervising driver for someone with a Georgia learner's permit?",
-    "optionA": "Any family member with a license",
-    "optionB": "A licensed driver at least 21 years old",
-    "optionC": "Anyone who has held a license for 5 years",
-    "optionD": "A parent or legal guardian only",
+    "question": "What program must Georgia teens complete before getting a Class D license?",
+    "optionA": "A defensive driving course",
+    "optionB": "The Alcohol and Drug Awareness Program",
+    "optionC": "A motorcycle safety course",
+    "optionD": "A first aid course",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The supervising driver for a learner's permit holder must be a licensed driver at least 21 years old."
+    "explanation": "Georgia DDS requires proof of completing the Alcohol and Drug Awareness Program (ADAP) for a Class D provisional license. Defensive driving and first aid courses do not meet this rule."
   },
   {
     "type": "State-Specific",
@@ -7384,12 +7384,12 @@
     "category": "gdlLicensing",
     "question": "What must you complete before applying for a provisional license in Hawaii?",
     "optionA": "Written test and vision screening",
-    "optionB": "Behind-the-wheel training and road test",
+    "optionB": "A defensive driving course only",
     "optionC": "Vision screening and classroom instruction",
     "optionD": "Classroom and behind-wheel education",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Applicants must complete both a classroom instruction course and behind-the-wheel education before applying for a provisional license."
+    "explanation": "Hawaii requires both classroom driver education and behind-the-wheel training before a provisional license. A defensive driving course alone does not meet the requirement."
   },
   {
     "type": "State-Specific",
@@ -7760,14 +7760,14 @@
     "state": "HI",
     "questionId": "HI-035",
     "category": "stateUnique",
-    "question": "Is jaywalking legal in Hawaii?",
-    "optionA": "Yes, anywhere outside business districts",
-    "optionB": "Yes, if no cars are present",
-    "optionC": "No, it is illegal",
-    "optionD": "Yes, with caution",
+    "question": "Between two Hawaii intersections with working signals, where may pedestrians cross?",
+    "optionA": "Anywhere outside business districts",
+    "optionB": "Anywhere if no cars are present",
+    "optionC": "Only in a marked crosswalk",
+    "optionD": "Anywhere, with caution",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Jaywalking is illegal."
+    "explanation": "Under HRS 291C-73(c), pedestrians may cross between adjacent signalized intersections only in a marked crosswalk, with a $100 fine. Elsewhere they may cross outside a crosswalk only if they yield to all vehicles."
   },
   {
     "type": "State-Specific",
@@ -8420,12 +8420,12 @@
     "category": "gdlLicensing",
     "question": "How long must you hold a Supervised Instruction Permit after completing driver's education before getting a license?",
     "optionA": "3 months minimum",
-    "optionB": "6 months or age 17",
+    "optionB": "At least 6 months",
     "optionC": "1 year minimum",
     "optionD": "9 months minimum",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "After completing driver's education, you must hold a Supervised Instruction Permit until age 17 or for 6 months, whichever is longer."
+    "explanation": "Idaho Code 49-307 lets a permit holder apply for a license no sooner than 6 months after completing driver training, and only at age 15 or older. During that time they must log at least 50 supervised hours, 10 after dark."
   },
   {
     "type": "State-Specific",
@@ -8880,14 +8880,14 @@
     "state": "ID",
     "questionId": "ID-035",
     "category": "stateUnique",
-    "question": "What should you do when a slow-moving vehicle on a two-lane highway has three or more vehicles behind it?",
+    "question": "On an Idaho two-lane road, what must a slow driver with 3+ cars behind do?",
     "optionA": "Flash your lights at them",
     "optionB": "Pass immediately when safe",
-    "optionC": "Pull off at nearest turnout",
+    "optionC": "Pull off at the next turnout or safe spot",
     "optionD": "Honk your horn at them",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A slow-moving vehicle with three or more vehicles behind it must pull off at the nearest turnout."
+    "explanation": "Idaho Code 49-639 requires a driver outside an urban area, with three or more vehicles lined up behind and passing unsafe, to pull off at the nearest turnout or safe spot. Flashing lights or honking at the line does not meet that duty."
   },
   {
     "type": "State-Specific",
@@ -9192,24 +9192,24 @@
     "optionA": "When reporting an emergency",
     "optionB": "At red traffic lights only",
     "optionC": "In parking lots only allowed",
-    "optionD": "When traffic is stopped completely",
+    "optionD": "When driving under 10 mph",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Illinois law only permits handheld phone use when the vehicle is parked on the roadway shoulder or when reporting an emergency situation."
+    "explanation": "Illinois allows handheld use to report an emergency. Other exceptions include being parked on the shoulder or stopped in obstructed traffic in neutral or park, but low speed is never an exception."
   },
   {
     "type": "State-Specific",
     "state": "IL",
     "questionId": "IL-018",
     "category": "cellPhone",
-    "question": "Can Illinois drivers use handheld phones while stopped at a red light or in traffic?",
-    "optionA": "Yes, allowed when traffic is fully stopped",
-    "optionB": "No, prohibited even when stopped",
-    "optionC": "Yes, allowed at red lights only",
-    "optionD": "Yes, allowed when parking brake is engaged",
+    "question": "An Illinois driver is stopped because traffic ahead is blocked. When may they use a handheld phone?",
+    "optionA": "Never, even when fully stopped",
+    "optionB": "When the car is in park or neutral",
+    "optionC": "Any time the brake pedal is pressed",
+    "optionD": "Only after turning the engine off",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Illinois prohibits handheld electronic device use while driving, even when stopped at a red light or stuck in traffic."
+    "explanation": "Illinois allows device use when the vehicle is stopped because normal traffic is obstructed and the transmission is in neutral or park. Simply holding the brake in drive does not qualify."
   },
   {
     "type": "State-Specific",
@@ -9398,14 +9398,14 @@
     "state": "IL",
     "questionId": "IL-032",
     "category": "stateUnique",
-    "question": "What does Illinois's Scott's Law require when approaching stationary emergency vehicles?",
-    "optionA": "Maintain your current speed",
-    "optionB": "Honk to alert emergency responders",
-    "optionC": "Slow down and move over",
-    "optionD": "Come to a complete stop behind them",
+    "question": "On an Illinois road with at least four lanes, who must stop for a school bus with red lights flashing?",
+    "optionA": "Traffic in both directions",
+    "optionB": "Only traffic going the opposite way",
+    "optionC": "Only traffic going the same way as the bus",
+    "optionD": "No one, if children use the sidewalk",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Illinois's Scott's Law requires drivers to slow down and move over when possible when approaching stationary emergency vehicles with lights activated."
+    "explanation": "On a road of four or more lanes, only traffic traveling in the same direction as the bus must stop. On a two-lane road, traffic in both directions must stop."
   },
   {
     "type": "State-Specific",
@@ -9611,11 +9611,11 @@
     "question": "After the first 180 days, when can probationary drivers not drive Sunday through Thursday?",
     "optionA": "Midnight to 5 AM Sunday through Thursday",
     "optionB": "10 PM to 5 AM Sunday through Thursday",
-    "optionC": "11 PM to 5 AM Monday",
+    "optionC": "11 PM to 5 AM the next morning",
     "optionD": "9 PM to 6 AM Sunday through Thursday",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "After the first 180 days, probationary drivers cannot drive between 11 PM Sunday through Thursday and 5 AM the following morning."
+    "explanation": "After the first 180 days, probationary drivers may not drive from 11 PM to 5 AM the next morning on Sunday through Thursday nights. The 10 PM limit applies only during the first 180 days."
   },
   {
     "type": "State-Specific",
@@ -9804,14 +9804,14 @@
     "state": "IN",
     "questionId": "IN-021",
     "category": "duiStateLaws",
-    "question": "Indiana law requires headlights whenever what device is in continuous use?",
-    "optionA": "Windshield wipers",
-    "optionB": "Air conditioning",
-    "optionC": "Cruise control",
-    "optionD": "Turn signals",
+    "question": "Indiana requires headlights at any time visibility is less than how many feet?",
+    "optionA": "500 feet",
+    "optionB": "200 feet",
+    "optionC": "1,000 feet",
+    "optionD": "100 feet",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Headlights must be on whenever windshield wipers are in continuous use due to weather conditions."
+    "explanation": "Indiana drivers must use headlights between sunset and sunrise and any other time visibility is less than 500 feet. Indiana law does not tie headlights to wiper use."
   },
   {
     "type": "State-Specific",
@@ -9988,12 +9988,12 @@
     "category": "stateUnique",
     "question": "When must you use turn signals before turning or changing lanes in Indiana?",
     "optionA": "At least 200 feet before",
-    "optionB": "At reasonable time before",
+    "optionB": "A reasonable time before the move",
     "optionC": "Immediately before turning",
     "optionD": "Only on major highways",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "Drivers must signal continuously for at least the last 200 feet before turning or changing lanes."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "Since January 1, 2023, Indiana requires a signal a reasonable time before turning or changing lanes. The old fixed 200-foot rule was repealed."
   },
   {
     "type": "State-Specific",
@@ -10126,14 +10126,14 @@
     "state": "KS",
     "questionId": "KS-004",
     "category": "gdlLicensing",
-    "question": "How many hours of supervised driving are required to progress from a learner's permit in Kansas?",
+    "question": "How many supervised hours must a Kansas teen certify to move to a less restricted license at 16?",
     "optionA": "25 hours",
     "optionB": "30 hours",
     "optionC": "40 hours",
     "optionD": "50 hours",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "50 hours of supervised driving are required to progress from a learner's permit."
+    "explanation": "Kansas requires a 50-hour affidavit to move to lesser restrictions at 16. A 15-year-old needs only 25 hours for the first restricted license."
   },
   {
     "type": "State-Specific",
@@ -10214,10 +10214,10 @@
     "optionA": "Hands-free use only",
     "optionB": "Texting prohibited only",
     "optionC": "GPS navigation is allowed",
-    "optionD": "All use is prohibited",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "Learner's permit holders are prohibited from texting while driving."
+    "optionD": "All use, except to report an emergency",
+    "correctAnswer": "D",
+    "correctIndex": 3,
+    "explanation": "Kansas permit holders under 17 may not use wireless devices while driving except to report illegal activity or call for medical or emergency help. The ban is not limited to texting."
   },
   {
     "type": "State-Specific",
@@ -10227,11 +10227,11 @@
     "question": "Which passengers can a 15-year-old restricted license holder transport without supervision in Kansas?",
     "optionA": "No passengers allowed",
     "optionB": "Any family members",
-    "optionC": "Siblings only",
+    "optionC": "Siblings, but no other minors",
     "optionD": "One non-family passenger",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A 15-year-old restricted license holder may transport siblings without supervision."
+    "explanation": "A 15-year-old restricted license holder may not carry any non-sibling minor passengers. Brothers and sisters are allowed, but not cousins or friends under 18."
   },
   {
     "type": "State-Specific",
@@ -10504,14 +10504,14 @@
     "state": "KS",
     "questionId": "KS-031",
     "category": "stateUnique",
-    "question": "When must you turn on headlights while driving in Kansas?",
-    "optionA": "When driving after dark",
-    "optionB": "When visibility drops below 500 feet",
+    "question": "Besides from sunset to sunrise, when does Kansas law require headlights?",
+    "optionA": "Only in highway work zones",
+    "optionB": "Only on interstate highways",
     "optionC": "When wipers in continuous use",
     "optionD": "When traveling on the highway",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights must be turned on whenever windshield wipers are in continuous use."
+    "explanation": "Kansas requires headlights whenever windshield wipers are in continuous use because of rain, sleet or snow, as well as at night and when visibility is under 1,000 feet. There is no rule limited to work zones or interstates."
   },
   {
     "type": "State-Specific",
@@ -10574,14 +10574,14 @@
     "state": "KS",
     "questionId": "KS-036",
     "category": "stateUnique",
-    "question": "What must vehicles traveling under 25 mph display on Kansas roads?",
-    "optionA": "Flashing hazard lights at all times",
-    "optionB": "A slow-moving vehicle emblem",
-    "optionC": "A white flag on the antenna",
-    "optionD": "Reflective tape on the rear bumper",
+    "question": "What alcohol concentration is illegal for a Kansas driver under 21?",
+    "optionA": "0.08% or more",
+    "optionB": "0.02% or more",
+    "optionC": "0.04% or more",
+    "optionD": "0.10% or more",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Vehicles designed to travel under 25 mph must display a slow-moving vehicle emblem — a reflective orange triangle — on the rear."
+    "explanation": "Under K.S.A. 8-1567a, a driver under 21 may not drive with a breath or blood alcohol content of 0.02 or more. The 0.08 limit applies to adult drivers."
   },
   {
     "type": "State-Specific",
@@ -11291,11 +11291,11 @@
     "question": "What passenger restriction applies to intermediate license holders between 6 PM and 5 AM in Louisiana?",
     "optionA": "No non-family passengers are permitted",
     "optionB": "Maximum of two non-family passengers allowed",
-    "optionC": "One non-family passenger under 21 with adult",
+    "optionC": "One non-family under 21, unless adult 21+ rides",
     "optionD": "Maximum of three total passengers allowed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Intermediate license holders may have only one non-family passenger under 21 accompanied by a supervising adult between 6 PM and 5 AM."
+    "explanation": "From 6 PM to 5 AM an intermediate driver may carry no more than one non-family passenger under 21 unless a licensed adult 21 or older is in the car. There is no general three-passenger limit."
   },
   {
     "type": "State-Specific",
@@ -11626,12 +11626,12 @@
     "category": "stateUnique",
     "question": "When are headlights required in Louisiana?",
     "optionA": "Only during nighttime hours",
-    "optionB": "During rain and bad weather",
+    "optionB": "Only on interstate highways",
     "optionC": "Between sunset and sunrise",
     "optionD": "Only in fog or heavy mist",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights are required between sunset and sunrise."
+    "explanation": "Louisiana requires headlights between sunset and sunrise, and also when visibility is poor or wipers are in use. They are not limited to interstates."
   },
   {
     "type": "State-Specific",
@@ -12058,14 +12058,14 @@
     "state": "MA",
     "questionId": "MA-022",
     "category": "stateUnique",
-    "question": "At what age must all vehicle passengers wear a seat belt in Massachusetts?",
-    "optionA": "13 and older",
-    "optionB": "16 and older",
-    "optionC": "All ages",
-    "optionD": "18 and older",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "All passengers aged 13 and older must wear a seat belt."
+    "question": "Who must be buckled in or use a child restraint in a Massachusetts passenger car?",
+    "optionA": "Only front-seat riders",
+    "optionB": "Only the driver",
+    "optionC": "Every driver and passenger",
+    "optionD": "Only riders 18 and older",
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Massachusetts requires every driver and passenger to wear a seat belt, and young children must use a child restraint under the child passenger law. Back-seat riders are not exempt."
   },
   {
     "type": "State-Specific",
@@ -12436,14 +12436,14 @@
     "state": "MD",
     "questionId": "MD-009",
     "category": "gdlLicensing",
-    "question": "At what age does a provisional license automatically become unrestricted in Maryland?",
-    "optionA": "18 years old",
-    "optionB": "17 years old",
-    "optionC": "19 years old",
-    "optionD": "21 years old",
+    "question": "When does a Maryland provisional license automatically become a full license?",
+    "optionA": "After 18 months with no convictions",
+    "optionB": "On the driver's 17th birthday",
+    "optionC": "On the driver's 19th birthday",
+    "optionD": "After 6 months with no crashes",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A provisional license automatically becomes an unrestricted license when the driver turns 18 years old."
+    "explanation": "Maryland converts a provisional license to a full license after it has been held at least 18 months with no convictions. A conviction restarts the 18 months."
   },
   {
     "type": "State-Specific",
@@ -13908,12 +13908,12 @@
     "category": "stateUnique",
     "question": "When can you make a left turn on red in Michigan?",
     "optionA": "Never permitted in Michigan",
-    "optionB": "One-way to one-way after stopping",
+    "optionB": "Onto a one-way street after stopping",
     "optionC": "Any time after midnight hours",
     "optionD": "Only in rural areas of state",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A left turn on red is permitted only when turning from a one-way street onto another one-way street after stopping."
+    "explanation": "Michigan allows a left turn on red onto a one-way street from a one-way or two-way street, after stopping and yielding, unless a sign forbids it. Turning onto a two-way street on red is not allowed."
   },
   {
     "type": "State-Specific",
@@ -14312,14 +14312,14 @@
     "state": "MN",
     "questionId": "MN-023",
     "category": "stateUnique",
-    "question": "In Minnesota, when must you turn on your headlights while driving?",
-    "optionA": "When driving between sunset and sunrise",
-    "optionB": "When visibility drops below 500 feet",
-    "optionC": "When wipers are needed for rain or snow",
-    "optionD": "When driving on unlit rural roads",
+    "question": "In Minnesota, which weather requires headlights even in daytime?",
+    "optionA": "Bright sunshine",
+    "optionB": "Strong crosswinds",
+    "optionC": "Rain, snow, sleet or hail",
+    "optionD": "High temperatures",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights must be on whenever weather conditions require the use of windshield wipers, in addition to the standard sunset-to-sunrise requirement."
+    "explanation": "Minnesota requires headlights any time it is raining, snowing, sleeting or hailing, as well as at night. Wind or heat alone does not require them."
   },
   {
     "type": "State-Specific",
@@ -14340,14 +14340,14 @@
     "state": "MN",
     "questionId": "MN-025",
     "category": "stateUnique",
-    "question": "What happens to traffic fines in a Minnesota work zone when workers are present?",
-    "optionA": "Fines are doubled",
-    "optionB": "Fines remain the same",
-    "optionC": "Fines are tripled",
-    "optionD": "Only a warning is issued",
+    "question": "What is the fine for speeding in a Minnesota work zone?",
+    "optionA": "$300 plus surcharges",
+    "optionB": "The same as anywhere else",
+    "optionC": "Three times the usual fine",
+    "optionD": "Only a written warning",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Traffic fines are doubled in work zones when workers are present, to protect road workers and slow down traffic."
+    "explanation": "Minnesota sets a $300 fine, plus surcharges, for speeding in a work zone. It is a fixed amount, not a multiple of the usual fine."
   },
   {
     "type": "State-Specific",
@@ -14368,14 +14368,14 @@
     "state": "MN",
     "questionId": "MN-027",
     "category": "stateUnique",
-    "question": "What is the speed limit on expressways and freeways in Minnesota unless otherwise posted?",
+    "question": "What is the speed limit on Minnesota noninterstate expressways and freeways unless posted?",
     "optionA": "55 mph",
     "optionB": "60 mph",
     "optionC": "65 mph",
     "optionD": "70 mph",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The default speed limit on expressways and divided highways with controlled access is 65 mph unless otherwise posted."
+    "explanation": "Minnesota law sets 65 mph on noninterstate expressways and freeways. Rural interstates are 70 mph, and other roads default to 55 mph."
   },
   {
     "type": "State-Specific",
@@ -14872,14 +14872,14 @@
     "state": "MO",
     "questionId": "MO-023",
     "category": "stateUnique",
-    "question": "What is the default speed limit on rural interstates and freeways in Missouri?",
+    "question": "What is the maximum speed limit allowed by law on Missouri rural interstates and freeways?",
     "optionA": "70 mph",
     "optionB": "65 mph",
     "optionC": "75 mph",
     "optionD": "60 mph",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "The default speed limit on rural interstates and freeways is 70 mph."
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Since August 28, 2026, Missouri law allows up to 75 mph on rural interstates and freeways, up from 70 mph. Always obey the posted sign where MoDOT has set a lower limit."
   },
   {
     "type": "State-Specific",
@@ -14984,14 +14984,14 @@
     "state": "MO",
     "questionId": "MO-031",
     "category": "stateUnique",
-    "question": "When must you use headlights in Missouri?",
-    "optionA": "With sunset or rising darkness",
-    "optionB": "With rain, snow, or fog only",
-    "optionC": "With wipers or low visibility",
-    "optionD": "With highway driving at night",
+    "question": "Besides at night, when must you use headlights in Missouri?",
+    "optionA": "Only on interstate highways",
+    "optionB": "Only in fog, never in rain",
+    "optionC": "When weather requires wipers",
+    "optionD": "Only when towing a trailer",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights are required whenever windshield wipers are in use or visibility is reduced."
+    "explanation": "Missouri drivers must use headlights any time weather conditions require windshield wipers, as well as from a half hour after sunset to a half hour before sunrise. The rule covers rain, not just fog."
   },
   {
     "type": "State-Specific",
@@ -15096,14 +15096,14 @@
     "state": "MO",
     "questionId": "MO-039",
     "category": "stateUnique",
-    "question": "When are headlights required during fog in Missouri?",
-    "optionA": "Only if visibility is severely reduced",
-    "optionB": "Only if windshield wipers are on",
-    "optionC": "Always during fog, even without wipers",
-    "optionD": "Fog lights can replace headlights safely",
+    "question": "Which headlight setting does Missouri's Driver Guide say to use in fog?",
+    "optionA": "High beams for more range",
+    "optionB": "Parking lights only",
+    "optionC": "Low beams",
+    "optionD": "Lights off to cut glare",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights are always required during fog, even when windshield wipers are not in use."
+    "explanation": "Missouri's Driver Guide says to keep headlights on low beam in fog. High beams reflect off the fog and make it harder to see."
   },
   {
     "type": "State-Specific",
@@ -15334,14 +15334,14 @@
     "state": "MS",
     "questionId": "MS-016",
     "category": "cellPhone",
-    "question": "What cell phone restriction applies to learner's permit holders in Mississippi?",
-    "optionA": "Texting only prohibited",
-    "optionB": "Handheld calls prohibited",
-    "optionC": "Social media prohibited",
-    "optionD": "All cell phone use banned",
+    "question": "Under Mississippi's texting law, which message is not counted as a text message?",
+    "optionA": "An email",
+    "optionB": "An instant message",
+    "optionC": "A social media post",
+    "optionD": "A weather or traffic alert",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Learner's permit holders are banned from all cell phone use while driving."
+    "explanation": "Mississippi's texting ban covers texts, instant messages and email, but an emergency, traffic or weather alert is not counted as a text message. Posting to social media on a handheld phone is also banned."
   },
   {
     "type": "State-Specific",
@@ -15726,14 +15726,14 @@
     "state": "MT",
     "questionId": "MT-004",
     "category": "gdlLicensing",
-    "question": "How many supervised driving hours are required if your parent teaches the driving component in Montana?",
-    "optionA": "50 hours with 10 at night",
-    "optionB": "60 hours with 10 at night",
-    "optionC": "50 hours with 15 at night",
-    "optionD": "75 hours with 15 at night",
+    "question": "How long must a Montana teen hold a traffic education permit or learner license before GDL certification?",
+    "optionA": "At least 30 days",
+    "optionB": "At least 3 months",
+    "optionC": "At least 12 months",
+    "optionD": "At least six months",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When a parent teaches the driving component, 75 hours of supervised driving are required, including 15 hours at night."
+    "explanation": "Montana's GDL certification is completed after the teen has held a traffic education permit or learner license for at least six months. During that time the teen must log 50 supervised hours, 10 at night."
   },
   {
     "type": "State-Specific",
@@ -16104,14 +16104,14 @@
     "state": "MT",
     "questionId": "MT-031",
     "category": "stateUnique",
-    "question": "What must drivers do when approaching emergency vehicles with flashing lights on an interstate in Montana?",
-    "optionA": "Maintain current speed",
-    "optionB": "Stop completely now",
-    "optionC": "Move over, or slow 20 mph",
-    "optionD": "Flash headlights signal",
+    "question": "On a Montana interstate with no temporary limit posted, how much must you slow for a stopped emergency vehicle if you can change lanes?",
+    "optionA": "10 mph below the limit",
+    "optionB": "To half the posted limit",
+    "optionC": "20 mph below the limit",
+    "optionD": "No change after moving over",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "When approaching a stopped emergency vehicle with flashing lights on an interstate, drivers must move over a lane if it is safe. If they cannot move over, they must slow to 20 mph below the speed limit."
+    "explanation": "On an interstate, Montana drivers who can change lanes must move over and slow to 20 mph below the posted limit. If they cannot change lanes, they must slow to half the posted limit."
   },
   {
     "type": "State-Specific",
@@ -16122,10 +16122,10 @@
     "optionA": "10 mph below limit",
     "optionB": "15 mph below limit",
     "optionC": "20 mph below limit",
-    "optionD": "30 mph below or half",
+    "optionD": "To half the posted limit",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When unable to change lanes on a state highway, drivers must slow down 30 mph below the speed limit or reduce speed to half the posted limit when approaching emergency vehicles."
+    "explanation": "On a Montana state highway or county road, a driver who cannot change lanes must slow to half the posted limit. The 30 mph below rule applies when the driver can change lanes."
   },
   {
     "type": "State-Specific",
@@ -16622,14 +16622,14 @@
     "state": "NC",
     "questionId": "NC-028",
     "category": "stateUnique",
-    "question": "How often must drivers ages 18 to 66 renew their driver license in North Carolina?",
+    "question": "How often must drivers ages 18 to 65 renew their driver license in North Carolina?",
     "optionA": "Every 4 years",
     "optionB": "Every 5 years",
     "optionC": "Every 8 years",
     "optionD": "Every 10 years",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Drivers between ages 18 and 66 must renew their driver license every 8 years."
+    "explanation": "North Carolina licenses issued to adults 18 to 65 are valid for eight years. Drivers 66 and older renew every five years."
   },
   {
     "type": "State-Specific",
@@ -16664,14 +16664,14 @@
     "state": "NC",
     "questionId": "NC-031",
     "category": "stateUnique",
-    "question": "When must you turn on headlights while driving in North Carolina?",
-    "optionA": "When driving at night",
-    "optionB": "When driving in heavy rain",
-    "optionC": "When wipers are on",
-    "optionD": "When driving in fog",
+    "question": "Besides at night, when must you turn on headlights in North Carolina?",
+    "optionA": "Only inside tunnels",
+    "optionB": "Only on interstate highways",
+    "optionC": "When wipers are on for weather",
+    "optionD": "Only when towing a trailer",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights must be turned on whenever windshield wipers are in use."
+    "explanation": "North Carolina requires headlights whenever windshield wipers are in use because of weather, as well as between sunset and sunrise. The rule is not limited to tunnels or interstates."
   },
   {
     "type": "State-Specific",
@@ -16944,14 +16944,14 @@
     "state": "ND",
     "questionId": "ND-011",
     "category": "gdlLicensing",
-    "question": "How long must a 15-year-old hold an instruction permit in North Dakota?",
-    "optionA": "Until age 16 or 3 mos min",
-    "optionB": "Until age 16 or 12 mos min",
-    "optionC": "Until age 16 or 6 mos min",
-    "optionD": "Until age 16 or 9 mos min",
+    "question": "How long must a 16-year-old hold an instruction permit before a class D license in North Dakota?",
+    "optionA": "At least 3 months",
+    "optionB": "At least 12 months",
+    "optionC": "At least 6 months",
+    "optionD": "At least 9 months",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A 15-year-old must hold an instruction permit until reaching age 16 or for a minimum of 6 months, whichever comes first."
+    "explanation": "North Dakota drivers aged 16 or 17 must hold an instruction permit for at least six months before a class D license. Drivers under 16 must hold it for at least 12 months."
   },
   {
     "type": "State-Specific",
@@ -16986,14 +16986,14 @@
     "state": "ND",
     "questionId": "ND-014",
     "category": "cellPhone",
-    "question": "What is the cell phone law for drivers under 18 in North Dakota?",
-    "optionA": "Texting only prohibited for minors",
-    "optionB": "All devices banned incl. hands-free",
-    "optionC": "Handheld use only prohibited law",
-    "optionD": "No restrictions if licensed driver",
+    "question": "When may a North Dakota permit holder use a phone while the vehicle is moving?",
+    "optionA": "To check GPS directions",
+    "optionB": "To prevent a crime about to happen",
+    "optionC": "To text a parent briefly",
+    "optionD": "When driving on rural roads",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Drivers under 18 are banned from using all wireless devices while driving, including hands-free options."
+    "explanation": "A North Dakota permit holder may use a phone while moving only to get emergency help, to prevent a crime about to be committed, or when a life is in danger. Navigation and texting family are not exceptions."
   },
   {
     "type": "State-Specific",
@@ -17028,14 +17028,14 @@
     "state": "ND",
     "questionId": "ND-017",
     "category": "cellPhone",
-    "question": "Can drivers 21 and older talk on a handheld phone while driving in North Dakota?",
+    "question": "Can drivers 18 and older talk on a handheld phone while driving in North Dakota?",
     "optionA": "Yes, handheld phones permitted",
     "optionB": "No, hands-free only law",
     "optionC": "Only in emergency situations",
     "optionD": "Only outside city limits use",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Drivers aged 21 and older are permitted to talk on a handheld phone while driving."
+    "explanation": "North Dakota bans texting for all drivers and all phone use for drivers under 18. Drivers 18 and older may still make handheld calls."
   },
   {
     "type": "State-Specific",
@@ -17509,9 +17509,9 @@
     "optionB": "1 year and may be renewed",
     "optionC": "3 months and may be renewed",
     "optionD": "Valid until age 16",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "A School Learner's Permit is valid for 3 months and may be renewed."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "A Nebraska School Learner's Permit (LPE) is valid for six months from issuance and can be renewed at a driver licensing office."
   },
   {
     "type": "State-Specific",
@@ -17574,14 +17574,14 @@
     "state": "NE",
     "questionId": "NE-016",
     "category": "cellPhone",
-    "question": "When can drivers legally use handheld devices while driving in Nebraska?",
-    "optionA": "When stopped at red lights",
-    "optionB": "During highway driving only",
-    "optionC": "For GPS navigation only",
-    "optionD": "To contact emergency services",
+    "question": "Can an adult driver hold a phone to make a voice call while driving in Nebraska?",
+    "optionA": "No, never while driving",
+    "optionB": "Only on highways",
+    "optionC": "Only for GPS navigation",
+    "optionD": "Yes, only texting is banned",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Handheld devices may only be used while driving to contact emergency services."
+    "explanation": "Nebraska bans reading, typing or sending messages while driving, but adults may still make handheld voice calls. Drivers with permits or provisional licenses may not use phones at all."
   },
   {
     "type": "State-Specific",
@@ -17826,14 +17826,14 @@
     "state": "NE",
     "questionId": "NE-034",
     "category": "stateUnique",
-    "question": "At what distance must you dim your headlights from high to low beam in Nebraska?",
-    "optionA": "100 feet from oncoming vehicle",
-    "optionB": "200 feet from oncoming vehicle",
-    "optionC": "300 feet from oncoming vehicle",
-    "optionD": "500 feet from oncoming vehicle",
+    "question": "Within what distance must you dim your high beams when following another vehicle in Nebraska?",
+    "optionA": "100 feet behind the vehicle",
+    "optionB": "200 feet behind the vehicle",
+    "optionC": "300 feet behind the vehicle",
+    "optionD": "500 feet behind the vehicle",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "High beams must be dimmed to low beams within 200 feet of an oncoming vehicle."
+    "explanation": "Nebraska law requires drivers to dim their headlights when following another vehicle within 200 feet. Bright lights from behind can blind the driver ahead in the mirrors."
   },
   {
     "type": "State-Specific",
@@ -18064,14 +18064,14 @@
     "state": "NH",
     "questionId": "NH-011",
     "category": "gdlLicensing",
-    "question": "What must drivers under 18 complete before getting a license in New Hampshire?",
-    "optionA": "A six-month learner's permit",
-    "optionB": "A proof of employment form",
-    "optionC": "Driver ed plus 40 supervised hours",
-    "optionD": "20 logged hours, no driver ed",
+    "question": "How soon must a new resident get a New Hampshire driver license?",
+    "optionA": "Within 10 days",
+    "optionB": "Within 30 days",
+    "optionC": "Within 60 days",
+    "optionD": "Within 6 months",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "New Hampshire has no learner's permit. Applicants under 18 must pass an approved driver education course and log 40 hours of supervised driving, 10 of them at night."
+    "explanation": "A person who moves to New Hampshire and drives must get a New Hampshire driver license within 60 days of establishing residency. The out-of-state license must be surrendered."
   },
   {
     "type": "State-Specific",
@@ -18276,12 +18276,12 @@
     "category": "duiStateLaws",
     "question": "What happens if a driver under 21 has a BAC between 0.02% and 0.08% in New Hampshire?",
     "optionA": "Warning only for the first offense",
-    "optionB": "Same penalties as any standard DWI",
+    "optionB": "No penalty below 0.08%",
     "optionC": "Longer suspension than over-21 drivers",
     "optionD": "Suspension and standard DWI penalties",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A driver under 21 with a BAC between 0.02% and 0.08% faces both a license suspension and standard DWI penalties."
+    "explanation": "In New Hampshire a driver under 21 with a BAC of 0.02% or more can be charged with DWI, facing license suspension and the standard DWI penalties. The 0.08% limit applies only to adults."
   },
   {
     "type": "State-Specific",
@@ -18541,13 +18541,13 @@
     "questionId": "NJ-005",
     "category": "gdlLicensing",
     "question": "What happens if a probationary license holder violates GDL restrictions in New Jersey?",
-    "optionA": "Must restart the provisional period",
+    "optionA": "A $100 fine",
     "optionB": "License will be permanently revoked",
     "optionC": "Must restart from learner's permit",
     "optionD": "Criminal record will be created",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Violating GDL restrictions as a probationary license holder requires restarting the entire provisional period."
+    "explanation": "Violating any GDL restriction as a permit or probationary license holder in New Jersey carries a $100 fine. It does not restart the probationary period or create a criminal record."
   },
   {
     "type": "State-Specific",
@@ -18612,12 +18612,12 @@
     "category": "gdlLicensing",
     "question": "What exception allows probationary drivers to drive during curfew hours in New Jersey?",
     "optionA": "Social events only allowed",
-    "optionB": "Work, school, religious, emergency",
+    "optionB": "Work or religious reasons, with a letter",
     "optionC": "Any time with passengers here",
     "optionD": "No exceptions are allowed here",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Probationary drivers may drive during curfew hours only for work, school, religious activities, or emergencies."
+    "explanation": "New Jersey probationary drivers may drive during the 11:01 PM to 5 AM curfew only for work or religious reasons, carrying a letter on official letterhead. Social events are not an exception."
   },
   {
     "type": "State-Specific",
@@ -18638,14 +18638,14 @@
     "state": "NJ",
     "questionId": "NJ-012",
     "category": "gdlLicensing",
-    "question": "For how many years must a supervising driver have been licensed in New Jersey?",
-    "optionA": "At least 1 year",
-    "optionB": "At least 2 years",
-    "optionC": "At least 5 years",
-    "optionD": "At least 3 years",
+    "question": "How many hours of behind-the-wheel instruction with a licensed instructor does New Jersey require for a special learner's permit holder?",
+    "optionA": "At least 3 hours",
+    "optionB": "At least 4 hours",
+    "optionC": "At least 10 hours",
+    "optionD": "At least 6 hours",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A supervising driver must have been licensed for at least 3 years."
+    "explanation": "New Jersey requires 6 hours of behind-the-wheel instruction in a dual-controlled car with a licensed instructor. This is separate from the 50 hours of supervised practice."
   },
   {
     "type": "State-Specific",
@@ -18841,7 +18841,7 @@
     "optionD": "Until age 5 or 48 inches tall",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Children must ride in a booster seat until they are 8 years old or 57 inches tall, whichever comes later."
+    "explanation": "A child must ride in a booster seat until reaching age 8 or 57 inches tall, whichever comes first. After that, the seat belt must fit properly."
   },
   {
     "type": "State-Specific",
@@ -19464,14 +19464,14 @@
     "state": "NM",
     "questionId": "NM-031",
     "category": "stateUnique",
-    "question": "What is the default speed limit on roads where no speed limit is posted in New Mexico?",
-    "optionA": "45 mph on unposted roads",
-    "optionB": "65 mph on unposted roads",
-    "optionC": "55 mph on unposted roads",
-    "optionD": "35 mph on unposted roads",
+    "question": "What is the speed limit on a New Mexico county road with no posted speed limit?",
+    "optionA": "45 mph",
+    "optionB": "65 mph",
+    "optionC": "55 mph",
+    "optionD": "35 mph",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The default speed limit on any road where no speed limit is posted is 55 mph."
+    "explanation": "Since 2016, New Mexico law sets 55 mph on county roads that have no posted limit. Business and residence districts default to 30 mph."
   },
   {
     "type": "State-Specific",
@@ -19730,14 +19730,14 @@
     "state": "NV",
     "questionId": "NV-010",
     "category": "gdlLicensing",
-    "question": "What alternative allows getting a full license before age 18 in Nevada?",
-    "optionA": "Completing advanced driver training course",
-    "optionB": "Intermediate license 1 year with no violations",
-    "optionC": "Passing an advanced road test successfully",
-    "optionD": "Parent or guardian approval documentation",
+    "question": "When does Nevada's 10 PM to 5 AM teen driving curfew end?",
+    "optionA": "After 6 months of driving",
+    "optionB": "When the driver turns 18",
+    "optionC": "After 1 year with no violations",
+    "optionD": "With a parent's signed note",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Drivers who hold an intermediate license for one year with no violations may obtain a full license before age 18."
+    "explanation": "Nevada's teen curfew stays in effect until the driver turns 18, no matter when the license was issued. A clean record or a parent's note does not end it early."
   },
   {
     "type": "State-Specific",
@@ -20027,11 +20027,11 @@
     "question": "When are headlights required in Nevada?",
     "optionA": "From dusk to dawn only",
     "optionB": "During rain or snow only",
-    "optionC": "Sunset/sunrise +/-30 min, low visibility",
+    "optionC": "Half hour after sunset to before sunrise",
     "optionD": "On highways only",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights are required from sunset to sunrise and within 30 minutes of either, as well as whenever visibility is reduced."
+    "explanation": "Nevada requires headlights from a half hour after sunset until a half hour before sunrise, and whenever light is poor or people and vehicles cannot be seen at 1,000 feet."
   },
   {
     "type": "State-Specific",
@@ -20290,14 +20290,14 @@
     "state": "NY",
     "questionId": "NY-010",
     "category": "gdlLicensing",
-    "question": "How many hours of night driving practice are required for a junior license in New York?",
-    "optionA": "10 hours nighttime",
-    "optionB": "15 of 50 total hours",
-    "optionC": "20 hours nighttime",
-    "optionD": "No nighttime required",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "Of the required 50 total hours of supervised practice, at least 15 hours must be completed at night."
+    "question": "During what hours may an upstate New York junior license holder drive without a supervising driver?",
+    "optionA": "5 AM to 9 PM",
+    "optionB": "6 AM to midnight",
+    "optionC": "Any time of day",
+    "optionD": "9 PM to 5 AM only",
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Upstate, a junior license lets you drive without a supervisor from 5 AM to 9 PM. From 9 PM to 5 AM you need a supervisor except for direct trips between home and work or school."
   },
   {
     "type": "State-Specific",
@@ -20682,14 +20682,14 @@
     "state": "NY",
     "questionId": "NY-038",
     "category": "stateUnique",
-    "question": "Can school bus drivers turn right on red in New York?",
-    "optionA": "Yes, after stopping first",
-    "optionB": "No, never allowed at all",
-    "optionC": "Yes, if no students aboard",
-    "optionD": "Only in rural areas only",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "School bus drivers are never permitted to make a right turn on red."
+    "question": "When may a New York school bus turn right on red where right turns on red are allowed?",
+    "optionA": "Any time, after stopping first",
+    "optionB": "Never, under any conditions",
+    "optionC": "Only when no pupils are aboard",
+    "optionD": "Only in rural areas",
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Under VTL 1111(d)(5), a school bus transporting pupils may not proceed on a steady red signal. With no pupils aboard it may turn right on red where other traffic may."
   },
   {
     "type": "State-Specific",
@@ -20755,11 +20755,11 @@
     "question": "Who can supervise a 16-year-old temporary permit holder from midnight to 6 AM in Ohio?",
     "optionA": "Any licensed driver over 21",
     "optionB": "Only a driving instructor",
-    "optionC": "Parent/guardian/approved adult",
+    "optionC": "Parent, guardian or custodian",
     "optionD": "Any family member with a license",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Between midnight and 6 AM, a 16-year-old permit holder must be supervised by a parent, guardian, or approved adult."
+    "explanation": "From midnight to 6 AM, an Ohio permit holder under 18 must be accompanied by a licensed parent, guardian or custodian seated beside them. Another licensed adult 21 or older may supervise only at other hours."
   },
   {
     "type": "State-Specific",
@@ -21242,14 +21242,14 @@
     "state": "OH",
     "questionId": "OH-038",
     "category": "stateUnique",
-    "question": "What is the maximum speed limit on rural interstates in Ohio?",
-    "optionA": "65 mph",
-    "optionB": "70 mph",
-    "optionC": "75 mph",
-    "optionD": "60 mph",
+    "question": "What is the speed limit in an alley within an Ohio municipality unless otherwise posted?",
+    "optionA": "25 mph",
+    "optionB": "15 mph",
+    "optionC": "20 mph",
+    "optionD": "10 mph",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The maximum speed limit on rural interstates is 70 mph."
+    "explanation": "ORC 4511.21(B)(7) sets 15 mph in all alleys within a municipal corporation. The 25 mph limit applies to other streets in a municipality."
   },
   {
     "type": "State-Specific",
@@ -21270,14 +21270,14 @@
     "state": "OH",
     "questionId": "OH-040",
     "category": "stateUnique",
-    "question": "In Ohio, what must you do when your windshield wipers are on due to rain, snow, or fog?",
-    "optionA": "Reduce speed by 10 mph always",
-    "optionB": "Use only parking lights for now",
-    "optionC": "Pull over until conditions improve",
-    "optionD": "Turn on your headlights too",
+    "question": "What is Ohio's speed limit on rural expressways without traffic signals unless otherwise posted?",
+    "optionA": "55 mph",
+    "optionB": "60 mph",
+    "optionC": "70 mph",
+    "optionD": "65 mph",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Headlights must be turned on whenever windshield wipers are in use due to precipitation or reduced visibility."
+    "explanation": "ORC 4511.21(B)(13) sets 65 mph on rural expressways without traffic signals. Rural freeways are 70 mph, and rural expressways with signals are 60 mph."
   },
   {
     "type": "State-Specific",
@@ -21382,14 +21382,14 @@
     "state": "OK",
     "questionId": "OK-008",
     "category": "gdlLicensing",
-    "question": "When can an intermediate license holder obtain an unrestricted license in Oklahoma?",
-    "optionA": "Immediately at age 18",
-    "optionB": "Age 19 regardless of violations",
-    "optionC": "Age 16 with driver education",
-    "optionD": "Age 17 w/ 6 mos violation-free",
+    "question": "With driver education, what is the earliest an Oklahoma teen can get an unrestricted license?",
+    "optionA": "18 years old",
+    "optionB": "17 years old",
+    "optionC": "16 years old",
+    "optionD": "16½, with 180 days conviction-free",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "An intermediate license holder may obtain an unrestricted license at age 17 after maintaining a violation-free record for 6 months."
+    "explanation": "Service Oklahoma lets a driver education graduate get an unrestricted license at 16½ with no traffic convictions in the prior 180 days. Without driver education, the minimum is 17 with a year on the intermediate license."
   },
   {
     "type": "State-Specific",
@@ -21410,14 +21410,14 @@
     "state": "OK",
     "questionId": "OK-010",
     "category": "gdlLicensing",
-    "question": "What documentation is required for drivers under 19 applying for a permit in Oklahoma?",
+    "question": "What documentation is required for drivers under 18 applying for a permit in Oklahoma?",
     "optionA": "Only birth certificate",
     "optionB": "Enrollment or graduation",
     "optionC": "Employment verification",
     "optionD": "Parental consent form only",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Drivers under 19 applying for a permit must provide proof of school enrollment or graduation."
+    "explanation": "Under 47 O.S. 6-107.3, applicants under 18 must show they are enrolled in school or have graduated or earned an equivalency before a permit or license is issued."
   },
   {
     "type": "State-Specific",
@@ -21539,11 +21539,11 @@
     "question": "What is the legal BAC limit for drivers under 21 in Oklahoma?",
     "optionA": "0.08%",
     "optionB": "0.04%",
-    "optionC": "0.02%",
-    "optionD": "Zero tolerance",
+    "optionC": "Any measurable amount",
+    "optionD": "0.05%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The legal BAC limit for drivers under 21 is 0.02%."
+    "explanation": "Oklahoma has zero tolerance for drivers under 21: any measurable amount of alcohol can bring a DUI charge. The 0.08% limit applies to adults."
   },
   {
     "type": "State-Specific",
@@ -21760,14 +21760,14 @@
     "state": "OK",
     "questionId": "OK-035",
     "category": "stateUnique",
-    "question": "What is the headlight visibility requirement in Oklahoma?",
-    "optionA": "500 feet visibility",
-    "optionB": "800 feet visibility",
-    "optionC": "Under 1,000 ft visibility",
-    "optionD": "Only when completely dark",
+    "question": "How far from a stop sign must you park in Oklahoma?",
+    "optionA": "At least 15 feet",
+    "optionB": "At least 20 feet",
+    "optionC": "At least 30 feet",
+    "optionD": "At least 50 feet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights are required when visibility is under 1,000 feet."
+    "explanation": "Service Oklahoma says it is illegal to park within 30 feet of a stop sign. The 15-foot rule is for fire hydrants and 20 feet is for crosswalks."
   },
   {
     "type": "State-Specific",
@@ -21984,14 +21984,14 @@
     "state": "OR",
     "questionId": "OR-011",
     "category": "gdlLicensing",
-    "question": "What requirement applies to the front seat when supervising a learner's permit holder in Oregon?",
-    "optionA": "Supervisor can be anywhere in the vehicle",
-    "optionB": "No supervision is needed during daytime hours",
-    "optionC": "Supervisor must sit in the front passenger seat",
-    "optionD": "Supervisor is only required on highways",
+    "question": "How long must a supervisor have held a license for Oregon practice hours to count?",
+    "optionA": "At least one year",
+    "optionB": "At least five years",
+    "optionC": "At least three years",
+    "optionD": "Any length of time",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Oregon requires the supervising driver to occupy the front passenger seat at all times so they can provide immediate guidance or grab the wheel in an emergency."
+    "explanation": "ORS 807.065 counts practice hours only when the supervisor is at least 21 and has held a valid license for at least three years."
   },
   {
     "type": "State-Specific",
@@ -22054,14 +22054,14 @@
     "state": "OR",
     "questionId": "OR-016",
     "category": "cellPhone",
-    "question": "What cell phone restriction applies to all drivers under 18 in Oregon?",
-    "optionA": "Only handheld use prohibited",
-    "optionB": "Only texting is prohibited",
-    "optionC": "Hands-free devices are allowed",
-    "optionD": "All electronic device use is prohibited",
+    "question": "Can you hold a phone while stopped at a red light in Oregon?",
+    "optionA": "Yes, while stopped at the light",
+    "optionB": "Only to read a message",
+    "optionC": "Only to use navigation",
+    "optionD": "No, that still counts as driving",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Oregon applies a total ban on all mobile device use — including hands-free — for drivers under 18, recognizing that new drivers cannot safely manage even hands-free distractions."
+    "explanation": "ORS 811.507 counts being temporarily stopped for traffic or a traffic signal as driving, so holding a phone there is illegal. You may use it once pulled off the road or parked."
   },
   {
     "type": "State-Specific",
@@ -22131,7 +22131,7 @@
     "optionD": "Any amount above 0.08%",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Oregon has a zero-tolerance policy for underage drivers — any detectable amount of alcohol in a driver under 21 is grounds for a DUII charge and license suspension."
+    "explanation": "Under ORS 813.300, any amount of alcohol counts as being under the influence for a driver under 21 for implied consent purposes, which brings a license suspension. A DUII charge needs 0.08% or proof of impairment."
   },
   {
     "type": "State-Specific",
@@ -22824,14 +22824,14 @@
     "state": "PA",
     "questionId": "PA-031",
     "category": "stateUnique",
-    "question": "When must you turn on headlights while driving in Pennsylvania?",
-    "optionA": "Only at nighttime",
-    "optionB": "During rain only periods",
-    "optionC": "Using windshield wipers",
-    "optionD": "Only in fog conditions",
+    "question": "How far from a fire hydrant must you park in Pennsylvania?",
+    "optionA": "At least 5 feet",
+    "optionB": "At least 10 feet",
+    "optionC": "At least 15 feet",
+    "optionD": "At least 25 feet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Headlights must be turned on whenever windshield wipers are in use."
+    "explanation": "Pennsylvania's driver's manual says never to park within 15 feet of a fire hydrant. It also bars parking within 20 feet of a crosswalk at an intersection."
   },
   {
     "type": "State-Specific",
@@ -23006,14 +23006,14 @@
     "state": "RI",
     "questionId": "RI-004",
     "category": "gdlLicensing",
-    "question": "What are the nighttime driving restrictions for permit holders in Rhode Island?",
-    "optionA": "No driving after 10 PM on weekends",
-    "optionB": "No driving after midnight on any day",
-    "optionC": "No restrictions when w/ supervisor",
-    "optionD": "No driving 11 PM-5 AM w/o parent",
+    "question": "Who else may sit in the front seat while a Rhode Island permit holder drives?",
+    "optionA": "Any licensed adult",
+    "optionB": "A sibling over 16",
+    "optionC": "Any belted passenger",
+    "optionD": "No one but the supervisor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Permit holders may not drive between 11 PM and 5 AM without a parent or guardian present."
+    "explanation": "Rhode Island requires the supervising driver to sit beside the permit holder, and no one other than the supervisor may be in the front seat."
   },
   {
     "type": "State-Specific",
@@ -23107,11 +23107,11 @@
     "question": "How long is a Rhode Island instructional permit valid?",
     "optionA": "6 months from issue date",
     "optionB": "2 years from issue date",
-    "optionC": "Valid 1 yr or until age 18",
+    "optionC": "1 year from issue date",
     "optionD": "Until road test is passed successfully",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "An instructional permit is valid for 1 year from the date of issue or until the holder turns 18, whichever comes first."
+    "explanation": "Under R.I. Gen. Laws 31-10-6, a limited instruction permit is valid for one year and may be extended for a reasonable time on evidence of hardship."
   },
   {
     "type": "State-Specific",
@@ -23468,14 +23468,14 @@
     "state": "RI",
     "questionId": "RI-037",
     "category": "stateUnique",
-    "question": "What exemption exists for the divided highway school bus rule in Rhode Island?",
-    "optionA": "Don't stop if opposite side of divided hwy",
-    "optionB": "Stop only during morning hours before noon",
-    "optionC": "Stop only for elementary students under 12",
-    "optionD": "No exemptions exist in Rhode Island law",
+    "question": "How long must a Rhode Island teen hold a provisional license before getting a full license?",
+    "optionA": "At least 12 months",
+    "optionB": "At least 6 months",
+    "optionC": "At least 18 months",
+    "optionD": "At least 24 months",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "On a divided highway, drivers traveling on the opposite side from a stopped school bus are not required to stop."
+    "explanation": "A full operator's license requires holding a limited provisional license for at least 12 months with no moving violation or seat belt infraction in the prior six months."
   },
   {
     "type": "State-Specific",
@@ -23580,14 +23580,14 @@
     "state": "SC",
     "questionId": "SC-005",
     "category": "gdlLicensing",
-    "question": "What are the nighttime driving restrictions for conditional license holders aged 15-16 in South Carolina?",
-    "optionA": "No driving alone from 6 PM to 6 AM",
+    "question": "What are the nighttime driving restrictions for conditional license holders in South Carolina?",
+    "optionA": "No solo driving after 6 PM (8 PM in DST)",
     "optionB": "No driving alone from 10 PM to 5 AM",
     "optionC": "No restrictions if with parent",
     "optionD": "No driving after midnight only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Conditional license holders aged 15–16 may not drive alone from 6 PM to 6 AM."
+    "explanation": "A conditional license holder may drive alone only from 6 AM to 6 PM, or to 8 PM during daylight saving time. Later, they need a licensed driver 21 or older, and after midnight a person listed on their consent form."
   },
   {
     "type": "State-Specific",
@@ -23611,11 +23611,11 @@
     "question": "When can a driver obtain unrestricted full driving privileges in South Carolina?",
     "optionA": "Age 16 with driver education course",
     "optionB": "Immediately upon turning age 19",
-    "optionC": "Age 17 w/ 6 mos violation-free or 18",
+    "optionC": "16 after 1 clean year, or at 17",
     "optionD": "Age 21 regardless of violations",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Full unrestricted driving privileges are available at age 17 with six violation-free months, or automatically at age 18."
+    "explanation": "SCDMV grants full privileges at 16 to drivers who have held a conditional or special restricted license for one year with no violations or at-fault crashes. Otherwise the restrictions stay for a year after the last offense or until 17."
   },
   {
     "type": "State-Specific",
@@ -23636,14 +23636,14 @@
     "state": "SC",
     "questionId": "SC-009",
     "category": "gdlLicensing",
-    "question": "What documentation is required for drivers under 19 applying for a permit in South Carolina?",
-    "optionA": "School enrollment or grad proof",
+    "question": "What school requirement applies to South Carolina license applicants under 17?",
+    "optionA": "Be currently enrolled in school",
     "optionB": "Employment verification documents",
     "optionC": "Only parental consent form",
     "optionD": "Birth certificate only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Drivers under 19 applying for a permit must provide proof of school enrollment or graduation."
+    "explanation": "SCDMV requires applicants under 17 to be enrolled in school, follow attendance laws and not be suspended or expelled."
   },
   {
     "type": "State-Specific",
@@ -24098,28 +24098,28 @@
     "state": "SD",
     "questionId": "SD-002",
     "category": "gdlLicensing",
-    "question": "How long must you hold an instruction permit before applying for a restricted minor's permit in South Dakota?",
+    "question": "Without driver education, how long must you hold an instruction permit before a restricted minor's permit in South Dakota?",
     "optionA": "90 days minimum",
-    "optionB": "180 days minimum",
-    "optionC": "270 days minimum",
+    "optionB": "275 days minimum",
+    "optionC": "365 days minimum",
     "optionD": "120 days minimum",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An instruction permit must be held for a minimum of 180 days before applying for a restricted minor's permit."
+    "explanation": "For permits issued after July 1, 2020, South Dakota requires 275 days on an instruction permit before a restricted minor's permit. Driver education graduates need 180 days."
   },
   {
     "type": "State-Specific",
     "state": "SD",
     "questionId": "SD-003",
     "category": "gdlLicensing",
-    "question": "At what age can you obtain a restricted minor's permit in South Dakota?",
-    "optionA": "14 years old",
+    "question": "With driver education, what is the earliest age to get a restricted minor's permit in South Dakota?",
+    "optionA": "16 years old",
     "optionB": "15 years old",
-    "optionC": "14 yrs, 3 months",
+    "optionC": "14 yrs, 6 months",
     "optionD": "13 yrs, 6 months",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A restricted minor's permit is available at 14 years and 3 months of age."
+    "explanation": "An instruction permit is available at 14, and a driver education graduate may move to a restricted minor's permit after 180 days, so about 14 years 6 months at the earliest."
   },
   {
     "type": "State-Specific",
@@ -24154,14 +24154,14 @@
     "state": "SD",
     "questionId": "SD-006",
     "category": "gdlLicensing",
-    "question": "How many supervised driving hours are recommended before testing for a license in South Dakota?",
+    "question": "How many supervised driving hours must a South Dakota instruction permit holder complete?",
     "optionA": "20 total hours",
     "optionB": "50 total hours",
     "optionC": "30 total hours",
     "optionD": "40 total hours",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "50 total hours of supervised driving are recommended before testing for a license."
+    "explanation": "South Dakota requires at least 50 supervised hours, including 10 at night and 10 in inclement weather, attested by a parent or guardian before a restricted minor's permit."
   },
   {
     "type": "State-Specific",
@@ -24210,14 +24210,14 @@
     "state": "SD",
     "questionId": "SD-010",
     "category": "gdlLicensing",
-    "question": "In South Dakota, how long must you hold a restricted minor's permit before getting an operator's license if you completed driver education?",
+    "question": "How long must you hold a restricted minor's permit before getting an operator's license in South Dakota?",
     "optionA": "1 month",
     "optionB": "3 months",
     "optionC": "6 months",
     "optionD": "9 months",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "The restricted minor's permit must be held for 6 months, or 3 months if you completed an approved driver education course, with no traffic violations in that time."
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Under SDCL 32-12-12, a minor at least 16 may get an operator's license after holding a restricted minor's permit for six months with no traffic convictions in that time. Driver education shortens only the instruction permit wait."
   },
   {
     "type": "State-Specific",
@@ -24322,14 +24322,14 @@
     "state": "SD",
     "questionId": "SD-018",
     "category": "cellPhone",
-    "question": "Can you use voice-to-text features while driving in South Dakota?",
-    "optionA": "Only if hands-free",
-    "optionB": "Allowed for all drivers",
+    "question": "Can a fully licensed adult driver in South Dakota use voice-to-text while driving?",
+    "optionA": "No, never allowed",
+    "optionB": "Yes, in hands-free voice mode",
     "optionC": "Only for emergencies",
-    "optionD": "Not allowed, considered texting",
+    "optionD": "Only when stopped at a light",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Voice-to-text features are allowed for all drivers and are not treated as texting."
+    "explanation": "SDCL 32-26-47.1 allows a device in voice-operated or hands-free mode. Instruction and restricted minor's permit holders may not use any wireless device while driving."
   },
   {
     "type": "State-Specific",
@@ -24980,14 +24980,14 @@
     "state": "TN",
     "questionId": "TN-025",
     "category": "duiStateLaws",
-    "question": "What device is required for all DUI convictions in Tennessee?",
+    "question": "What must a first-time DUI offender in Tennessee use to keep driving during the revocation?",
     "optionA": "Ignition interlock device",
     "optionB": "Ankle monitoring bracelet",
     "optionC": "Breath analyzer portable",
     "optionD": "GPS tracking system",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An ignition interlock device is required for all DUI convictions."
+    "explanation": "A first DUI in Tennessee brings a one-year revocation. To keep driving during it, the offender must use an ignition interlock device for the whole revocation period."
   },
   {
     "type": "State-Specific",
@@ -25148,56 +25148,56 @@
     "state": "TN",
     "questionId": "TN-037",
     "category": "stateUnique",
-    "question": "What is the purpose of Tennessee's 'slow poke law' for left-lane driving?",
-    "optionA": "Require minimum speed limits on all roads",
-    "optionB": "Prevent slow driving in the left lane of multi-lane highways",
-    "optionC": "Ban trucks from left lanes",
-    "optionD": "Require passing on the right",
+    "question": "How much space must you leave when passing a bicyclist in Tennessee?",
+    "optionA": "At least 1 foot",
+    "optionB": "At least 3 feet",
+    "optionC": "At least 6 feet",
+    "optionD": "No set distance",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The left-lane slow driving law prohibits traveling below 55 mph in the left lane of interstates and multi-lane highways to keep traffic flowing."
+    "explanation": "The Tennessee driver handbook says to pass a bicyclist slowly with at least 3 feet between you and the bicycle, and to keep that clearance until safely past."
   },
   {
     "type": "State-Specific",
     "state": "TN",
     "questionId": "TN-038",
     "category": "stateUnique",
-    "question": "When are headlights required even during daytime in Tennessee?",
-    "optionA": "Never during daytime",
-    "optionB": "Inclement weather",
-    "optionC": "Only during fog",
-    "optionD": "Only during snow",
+    "question": "Where must you stop when signals are flashing at a Tennessee railroad crossing?",
+    "optionA": "Right on the tracks",
+    "optionB": "Within 50 ft, no closer than 15 ft",
+    "optionC": "At least 100 feet away",
+    "optionD": "Within 5 feet of the rail",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Headlights are required during daytime in inclement weather conditions."
+    "explanation": "At a crossing with signal devices, Tennessee requires a full stop within 50 feet and no closer than 15 feet from the nearest rail, until it is safe to go."
   },
   {
     "type": "State-Specific",
     "state": "TN",
     "questionId": "TN-039",
     "category": "stateUnique",
-    "question": "What weather conditions require constant windshield wiper use and headlights in Tennessee?",
-    "optionA": "Light drizzle only",
-    "optionB": "Heavy fog only",
-    "optionC": "Rain, mist, snow",
-    "optionD": "Sleet only",
+    "question": "How far from a stop sign or traffic signal must you park in Tennessee?",
+    "optionA": "At least 10 feet",
+    "optionB": "At least 20 feet",
+    "optionC": "At least 30 feet",
+    "optionD": "At least 50 feet",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Rain, mist, and snow require the constant use of windshield wipers and headlights."
+    "explanation": "The Tennessee driver handbook bars parking within 30 feet of a traffic signal, stop sign or other traffic control device. The 50-foot rule is for railroad crossings."
   },
   {
     "type": "State-Specific",
     "state": "TN",
     "questionId": "TN-040",
     "category": "stateUnique",
-    "question": "Which colored headlights are banned on non-emergency vehicles in Tennessee?",
-    "optionA": "Amber colored lights",
-    "optionB": "Yellow colored lights",
-    "optionC": "White colored lights",
-    "optionD": "Blue or green lights",
+    "question": "How far from a fire hydrant must you park in Tennessee?",
+    "optionA": "At least 5 feet",
+    "optionB": "At least 10 feet",
+    "optionC": "At least 25 feet",
+    "optionD": "At least 15 feet",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Blue and green headlights are banned on non-emergency vehicles."
+    "explanation": "The Tennessee driver handbook bars parking within 15 feet of a fire hydrant. It also bars parking within 20 feet of a crosswalk."
   },
   {
     "type": "State-Specific",
@@ -25388,12 +25388,12 @@
     "category": "cellPhone",
     "question": "Can novice drivers under 18 use hands-free devices in Texas?",
     "optionA": "Yes, if voice-activated",
-    "optionB": "No, all use prohibited",
-    "optionC": "Only for emergencies",
+    "optionB": "No, except in an emergency",
+    "optionC": "Only on rural highways",
     "optionD": "Only with supervision",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Drivers under 18 are prohibited from all cell phone use while driving, including hands-free devices."
+    "explanation": "Texas Transportation Code 545.424 bars drivers under 18 from using any wireless communication device, hands-free included, except in an emergency."
   },
   {
     "type": "State-Specific",
@@ -25694,14 +25694,14 @@
     "state": "TX",
     "questionId": "TX-036",
     "category": "stateUnique",
-    "question": "What does Texas law require regarding the left lane on multi-lane highways?",
-    "optionA": "Any speed is permitted",
+    "question": "What does Texas law require of lane use on multi-lane highways?",
+    "optionA": "Any speed is fine in any lane",
     "optionB": "Left lane is for HOV only",
-    "optionC": "Left lane is for passing only",
+    "optionC": "Slower traffic must keep right",
     "optionD": "No restrictions apply",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The left lane on multi-lane highways is for passing only, and drivers must move right when being overtaken."
+    "explanation": "Texas Transportation Code 545.051(b) requires a driver moving slower than normal traffic to use the right-hand lane, except when passing or preparing to turn left. Left Lane for Passing Only signs add the rule where posted."
   },
   {
     "type": "State-Specific",
@@ -25820,14 +25820,14 @@
     "state": "UT",
     "questionId": "UT-005",
     "category": "gdlLicensing",
-    "question": "What minimum age must a supervising driver be when accompanying a learner permit holder?",
+    "question": "How old must the licensed supervisor be for a Utah learner permit holder who is 18 or older?",
     "optionA": "21 years old",
     "optionB": "25 years old",
     "optionC": "18 years old",
     "optionD": "23 years old",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A supervising driver must be at least 21 years old when accompanying a learner permit holder."
+    "explanation": "A learner permit holder 18 or older may drive only with a licensed driver at least 21 years old beside them. Younger permit holders may also drive with a licensed parent, guardian or approved instructor."
   },
   {
     "type": "State-Specific",
@@ -25918,14 +25918,14 @@
     "state": "UT",
     "questionId": "UT-012",
     "category": "gdlLicensing",
-    "question": "At what age can you apply for a full driver license if requirements are met?",
+    "question": "What is the minimum age to get a driver license in Utah?",
     "optionA": "15 years old",
     "optionB": "17 years old",
     "optionC": "18 years old",
-    "optionD": "16½ years old",
+    "optionD": "16 years old",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Drivers who meet all requirements can apply for a full driver license at age 16½."
+    "explanation": "Utah issues a driver license from age 16 after driver education, the tests and, for applicants 17 or younger, six months with a learner permit. The learner permit is available at 15."
   },
   {
     "type": "State-Specific",
@@ -25953,7 +25953,7 @@
     "optionD": "Browsing the web",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Adult drivers may only use hands-free calls while operating a vehicle."
+    "explanation": "Utah bans manually texting, emailing, dialing and browsing while the vehicle moves, but voice calls and hands-free use are allowed. Hands-free calls are the only legal choice listed."
   },
   {
     "type": "State-Specific",
@@ -26002,14 +26002,14 @@
     "state": "UT",
     "questionId": "UT-018",
     "category": "cellPhone",
-    "question": "Which phone action is illegal while driving a moving vehicle in Utah?",
-    "optionA": "Voice calling",
-    "optionB": "Manual texting",
-    "optionC": "Viewing a GPS map",
-    "optionD": "Hands-free talking",
+    "question": "Which of these may a Utah driver do with a phone while the vehicle is moving?",
+    "optionA": "Read a text message",
+    "optionB": "View a navigation app",
+    "optionC": "Take a photograph",
+    "optionD": "Record a video",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Utah bans manually texting, dialing or reading messages while the vehicle is moving; voice calls, hands-free use and viewing GPS are allowed."
+    "explanation": "Utah Code 41-6a-1716 bans reading messages, taking photos and recording video by hand while moving, but viewing a GPS or navigation app is allowed."
   },
   {
     "type": "State-Specific",
@@ -26156,14 +26156,14 @@
     "state": "UT",
     "questionId": "UT-029",
     "category": "stateUnique",
-    "question": "Who is responsible for ensuring all vehicle occupants wear seat belts in Utah?",
-    "optionA": "Each individual passenger",
+    "question": "In Utah, who must make sure passengers under 16 are buckled up?",
+    "optionA": "Each passenger themselves",
     "optionB": "Front-seat passengers only",
-    "optionC": "Vehicle owner",
+    "optionC": "The vehicle owner",
     "optionD": "The driver",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The driver is responsible for ensuring all occupants in the vehicle are properly restrained by a seat belt."
+    "explanation": "Utah Code 41-6a-1803 makes the driver responsible for restraining every passenger under 16 in a child seat or seat belt. Passengers 16 and older must buckle themselves."
   },
   {
     "type": "State-Specific",
@@ -26415,7 +26415,7 @@
     "optionD": "No passengers allowed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Provisional license holders under 18 may transport no more than one passenger under age 21, unless a licensed parent or guardian is seated in the front seat."
+    "explanation": "Until 18, a provisional license holder may carry only one passenger under 21, not counting family or household members. After the first year, up to three are allowed for school activities, with a licensed driver 21 or older beside them, or in an emergency."
   },
   {
     "type": "State-Specific",
@@ -26536,12 +26536,12 @@
     "category": "cellPhone",
     "question": "What is the cell phone restriction for drivers under 18 in Virginia?",
     "optionA": "Hands-free calls permitted",
-    "optionB": "Emergency calls only",
+    "optionB": "Navigation apps only",
     "optionC": "Texting only prohibited",
-    "optionD": "No use while moving",
+    "optionD": "None, unless emergency or parked",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Drivers under 18 may not use a cell phone in any way while the vehicle is moving."
+    "explanation": "Drivers under 18 may not use a cell phone or other wireless device, handheld or hands-free, except in a driver emergency or when lawfully parked or stopped."
   },
   {
     "type": "State-Specific",
@@ -26982,14 +26982,14 @@
     "state": "VT",
     "questionId": "VT-008",
     "category": "gdlLicensing",
-    "question": "When does a junior license automatically convert to an unrestricted license in Vermont?",
-    "optionA": "At age 17 only",
-    "optionB": "After 2 years",
-    "optionC": "Never automatic",
-    "optionD": "1 yr or age 18",
+    "question": "When does a Vermont junior operator's license expire?",
+    "optionA": "On the day you turn 17",
+    "optionB": "One year after it is issued",
+    "optionC": "It never expires",
+    "optionD": "Eve of the 2nd birthday after issue",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A junior license automatically converts to an unrestricted license after 1 year of holding it or upon turning 18, whichever comes first."
+    "explanation": "A Vermont junior operator's license expires at midnight on the eve of the holder's second birthday after it was issued, so one issued at 16 expires the night before the 18th birthday. It may be renewed."
   },
   {
     "type": "State-Specific",
@@ -27040,12 +27040,12 @@
     "category": "gdlLicensing",
     "question": "How long after getting a junior license must a Vermont driver wait before driving for employment?",
     "optionA": "6 months",
-    "optionB": "1 year or until age 18",
+    "optionB": "1 year after it is issued",
     "optionC": "3 months",
     "optionD": "2 years",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Junior license holders may not drive for employment for one year after issuance or until they reach age 18, whichever comes first."
+    "explanation": "Under 23 V.S.A. 614(b), a junior license does not allow driving for your job or for pay for one year after it is issued. Moving a farm tractor between parts of a farm is an exception."
   },
   {
     "type": "State-Specific",
@@ -27430,14 +27430,14 @@
     "state": "VT",
     "questionId": "VT-040",
     "category": "stateUnique",
-    "question": "What defines a divided highway exception for school bus stops in Vermont?",
-    "optionA": "Any painted median",
-    "optionB": "Four or more lanes",
-    "optionC": "Double yellow lines",
-    "optionD": "Physical barrier",
+    "question": "For a fully licensed Vermont driver, how many points lead to a license suspension?",
+    "optionA": "6 points",
+    "optionB": "8 points",
+    "optionC": "12 points",
+    "optionD": "10 points",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A divided highway exception for school bus stops applies only when the highway is separated by a physical barrier."
+    "explanation": "Under 23 V.S.A. 2506, an accumulation of 10 points brings a 10-day suspension, with longer ones at 15 and 20 points. The 6-point recall applies to junior operators."
   },
   {
     "type": "State-Specific",
@@ -27545,11 +27545,11 @@
     "question": "Can learner's permit holders in Washington use hands-free cell phone devices while driving?",
     "optionA": "Yes, if over 16 years old",
     "optionB": "Yes, for navigation only",
-    "optionC": "Yes, for emergency calls only",
-    "optionD": "No, no wireless devices at all",
+    "optionC": "Yes, at red lights only",
+    "optionD": "No, except to report an emergency",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Learner's permit holders are prohibited from using any wireless devices while driving, including hands-free devices."
+    "explanation": "Under RCW 46.20.055, a permit holder may drive only if not using a wireless device, hands-free included. The only exception is to report a crime, contact emergency services or prevent harm."
   },
   {
     "type": "State-Specific",
@@ -27962,14 +27962,14 @@
     "state": "WA",
     "questionId": "WA-038",
     "category": "stateUnique",
-    "question": "In Washington, at what visibility distance must you turn on your headlights?",
-    "optionA": "When you cannot see 500 feet ahead",
-    "optionB": "When you cannot see 1,000 feet ahead",
-    "optionC": "When you cannot see 200 feet ahead",
-    "optionD": "Only when it is completely dark",
+    "question": "How far from a fire hydrant must you park in Washington?",
+    "optionA": "At least 5 feet",
+    "optionB": "At least 15 feet",
+    "optionC": "At least 10 feet",
+    "optionD": "At least 25 feet",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Headlights must be turned on whenever persons and vehicles on the highway are not clearly discernible at a distance of 1,000 feet ahead."
+    "explanation": "RCW 46.61.570 bars stopping, standing or parking within 15 feet of a fire hydrant. Some states use 10 feet, but Washington uses 15."
   },
   {
     "type": "State-Specific",
@@ -28061,13 +28061,13 @@
     "questionId": "WI-005",
     "category": "gdlLicensing",
     "question": "What are the exceptions to nighttime curfew for probationary license holders in Wisconsin?",
-    "optionA": "Work, school, emergency",
+    "optionA": "Trips between home, school or work",
     "optionB": "Religious activities only",
     "optionC": "Family events only",
     "optionD": "Sports activities only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Probationary license holders may drive during curfew hours for work, school, or emergency purposes."
+    "explanation": "In the first nine months, a probationary license holder may not drive from midnight to 5 AM unless traveling between home and school or work."
   },
   {
     "type": "State-Specific",
@@ -28116,14 +28116,14 @@
     "state": "WI",
     "questionId": "WI-009",
     "category": "gdlLicensing",
-    "question": "At what age does a probationary license automatically convert to a regular license in Wisconsin?",
-    "optionA": "18 years old",
-    "optionB": "21 years old",
-    "optionC": "19 years old",
-    "optionD": "17 years old",
+    "question": "When does a Wisconsin probationary license expire?",
+    "optionA": "Two years from your next birthday",
+    "optionB": "On your 21st birthday",
+    "optionC": "Five years after it is issued",
+    "optionD": "After nine months",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A probationary license automatically converts to a regular license at age 18."
+    "explanation": "A Wisconsin probationary license expires two years from the holder's next birthday, so one issued at 16 expires at 19 at the earliest. The nine-month restrictions are separate and can be extended up to 18."
   },
   {
     "type": "State-Specific",
@@ -28161,11 +28161,11 @@
     "question": "In Wisconsin, when must you turn on your headlights?",
     "optionA": "When visibility drops below 500 feet",
     "optionB": "When windshield wipers are in use",
-    "optionC": "When driving in heavy rain or snow",
-    "optionD": "When driving on rural highways at night",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "Headlights must be on whenever windshield wipers are in continuous use."
+    "optionC": "Only when it is fully dark",
+    "optionD": "Only on rural highways",
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Wisconsin requires headlights from a half hour after sunset to a half hour before sunrise and whenever you cannot see a person or vehicle 500 feet away. Using them with your wipers is recommended, not required."
   },
   {
     "type": "State-Specific",
@@ -28242,14 +28242,14 @@
     "state": "WI",
     "questionId": "WI-018",
     "category": "cellPhone",
-    "question": "Which phone activity does Wisconsin law ban for all drivers?",
-    "optionA": "Following a dash-mounted GPS",
-    "optionB": "Composing or sending a text",
-    "optionC": "Listening to music",
-    "optionD": "Hands-free voice calls",
+    "question": "In a Wisconsin road construction zone, when may you use your phone while driving?",
+    "optionA": "When traffic is moving slowly",
+    "optionB": "Only to report an emergency",
+    "optionC": "For a short voice call",
+    "optionD": "While you wait at a flagger",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Wisconsin bans composing or sending texts and emails while driving; drivers with a probationary license or instruction permit may not use a phone at all."
+    "explanation": "The Wisconsin Motorists' Handbook says you may use your cellphone in a construction zone only to report an emergency. Fines also double in these zones."
   },
   {
     "type": "State-Specific",
@@ -28452,14 +28452,14 @@
     "state": "WI",
     "questionId": "WI-033",
     "category": "stateUnique",
-    "question": "At what age must children use a booster seat in Wisconsin?",
-    "optionA": "Under 8 or under 57 inches",
-    "optionB": "Under 6 or under 50 inches",
-    "optionC": "Under 10 or under 60 inches",
-    "optionD": "Under 12 or under 65 inches",
+    "question": "In Wisconsin, a child aged 4 to 8 must use a booster seat until reaching which milestone?",
+    "optionA": "Age 8, 80 pounds or 4 ft 9 in",
+    "optionB": "Age 6 or 50 pounds",
+    "optionC": "Age 10 or 60 inches",
+    "optionD": "Age 12 or 65 inches",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Children under 8 years old or under 57 inches tall must use a booster seat."
+    "explanation": "Wisconsin requires a booster seat for children 4 to 8 who weigh 40 to 80 pounds and are no taller than 4 feet 9 inches. A child may move to a seat belt after turning 8, passing 80 pounds or passing 4 feet 9 inches."
   },
   {
     "type": "State-Specific",
@@ -28776,12 +28776,12 @@
     "category": "cellPhone",
     "question": "What device can you wear while driving without violating the cell phone law?",
     "optionA": "Tablet on dashboard",
-    "optionB": "Phone in pocket",
-    "optionC": "Bluetooth earpiece",
+    "optionB": "Phone held on your lap",
+    "optionC": "Handheld GPS receiver",
     "optionD": "Smartwatch on wrist",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A smartwatch worn on the wrist is permitted while driving without violating the cell phone law."
+    "explanation": "West Virginia's law does not count a smartwatch as a covered device, so wearing one is allowed. Holding or supporting a phone, tablet or handheld GPS with any part of your body is not."
   },
   {
     "type": "State-Specific",
@@ -28817,13 +28817,13 @@
     "questionId": "WV-019",
     "category": "duiStateLaws",
     "question": "What is the legal blood alcohol content (BAC) limit for drivers under 21 in WV?",
-    "optionA": "0.00% - zero tolerance",
+    "optionA": "0.00%",
     "optionB": "0.05% or lower",
-    "optionC": "0.02% or lower",
+    "optionC": "Below 0.02%",
     "optionD": "0.01% or lower",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Drivers under 21 must have a BAC of 0.02% or lower — any higher constitutes a violation under the zero-tolerance standard."
+    "explanation": "In West Virginia, a driver under 21 commits an offense with a BAC of 0.02% or more, so the legal limit is below 0.02%. Adult DUI penalties apply at 0.08%."
   },
   {
     "type": "State-Specific",
@@ -28989,9 +28989,9 @@
     "optionB": "Once every six months",
     "optionC": "Once annually",
     "optionD": "Once every three years",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "Registered vehicles must pass a safety inspection once annually."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Under WV Code 17C-16-4, registered vehicles must be inspected once every two years. Commercial motor vehicles under federal rules must still be inspected at least once a year."
   },
   {
     "type": "State-Specific",
@@ -30160,14 +30160,14 @@
     "state": "DC",
     "questionId": "DC-035",
     "category": "stateUnique",
-    "question": "Where must children under 13 ride in a vehicle in DC?",
+    "question": "Where should children under 13 ride in a vehicle in DC?",
     "optionA": "In the front seat with an airbag",
     "optionB": "In the back seat",
     "optionC": "Anywhere with a seatbelt",
     "optionD": "In the middle row only",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "DC recommends that all children under age 13 ride in the back seat, which is the safest position in the vehicle."
+    "explanation": "Children under 13 should ride in the back seat, which keeps them away from front airbags. A seat belt alone does not make the front seat safe for them."
   },
   {
     "type": "State-Specific",
@@ -30230,14 +30230,14 @@
     "state": "DC",
     "questionId": "DC-040",
     "category": "stateUnique",
-    "question": "What is the maximum speed limit allowed on any DC road unless otherwise posted?",
-    "optionA": "30 mph",
-    "optionB": "35 mph",
-    "optionC": "20 mph",
-    "optionD": "45 mph",
+    "question": "In DC, what may a bicyclist do at a stop sign when the way is clear?",
+    "optionA": "Must come to a full stop every time",
+    "optionB": "Must walk the bike across",
+    "optionC": "Go through without stopping after yielding",
+    "optionD": "May only turn right",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Unless a different limit is posted, the maximum lawful speed on DC streets is 20 mph; many major corridors are posted at 25 mph, and alleys are 15 mph."
+    "explanation": "DC's Safer Streets Amendment Act lets a rider go through a stop sign without stopping at a safe speed, after checking for hazards and yielding to pedestrians and traffic. Drivers should expect cyclists to roll through and must not assume they will stop."
   },
   {
     "type": "State-Specific",

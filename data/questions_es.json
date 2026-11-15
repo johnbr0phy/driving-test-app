@@ -340,14 +340,14 @@
     "state": "ALL",
     "questionId": "U-025",
     "category": "roadSigns",
-    "question": "¿Qué indica una señal que muestra baches?",
-    "optionA": "Superficie del camino irregular",
-    "optionB": "Tope adelante",
-    "optionC": "Carriles desiguales",
-    "optionD": "Hundimiento en el camino",
+    "question": "¿Qué significa una señal amarilla de advertencia BUMP?",
+    "optionA": "Una elevación brusca en el camino adelante",
+    "optionB": "Una zona de velocidad escolar adelante",
+    "optionC": "El carril se cierra adelante",
+    "optionD": "Una bajada brusca en el camino adelante",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Esta señal advierte de una superficie del camino desigual o irregular adelante."
+    "explanation": "Una señal BUMP advierte de una elevación brusca en la superficie del camino, así que reduzca la velocidad. Una bajada repentina se marca con una señal DIP."
   },
   {
     "type": "Universal",
@@ -638,10 +638,10 @@
     "optionA": "Velocidad",
     "optionB": "Ancho del carril",
     "optionC": "Tiempo de estacionamiento",
-    "optionD": "Capacidad del puente",
+    "optionD": "Peso del vehículo",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Las señales de límite de peso muestran el peso máximo de vehículo permitido, típicamente en puentes."
+    "explanation": "Una señal de límite de peso fija el vehículo más pesado permitido en ese camino o puente. No limita la velocidad, el ancho del carril ni el estacionamiento."
   },
   {
     "type": "Universal",
@@ -664,12 +664,12 @@
     "category": "roadSigns",
     "question": "¿Qué indica END en una señal vial?",
     "optionA": "El camino termina",
-    "optionB": "La restricción termina",
-    "optionC": "La zona de velocidad termina",
-    "optionD": "Cualquiera de estas",
+    "optionB": "Debe detenerse más adelante",
+    "optionC": "Comienza un nuevo carril",
+    "optionD": "Termina una zona o regla indicada",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "END en una señal indica que una regulación o zona previamente señalizada ya no está en efecto."
+    "explanation": "END en una señal, como en END SCHOOL ZONE o END ROAD WORK, significa que la zona o regla indicada antes ya no se aplica. Un camino que termina se marca con una señal de advertencia distinta, no solo con END."
   },
   {
     "type": "Universal",
@@ -677,13 +677,13 @@
     "questionId": "U-049",
     "category": "roadSigns",
     "question": "¿Qué indica una señal de carril para bicicletas?",
-    "optionA": "Solo bicicletas en el carril",
+    "optionA": "Carril reservado para bicicletas",
     "optionB": "No se permiten bicicletas",
-    "optionC": "Las bicicletas pueden usar",
+    "optionC": "Las bicicletas comparten el carril con los autos",
     "optionD": "Estacionamiento de bicicletas",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Las señales de carril para bicicletas marcan carriles designados exclusivamente para uso de bicicletas."
+    "explanation": "Una señal de carril para bicicletas marca un carril reservado para bicicletas. Los conductores pueden entrar o cruzarlo solo para girar o estacionar donde se permita, después de ceder el paso a los ciclistas."
   },
   {
     "type": "Universal",
@@ -760,14 +760,14 @@
     "state": "ALL",
     "questionId": "U-055",
     "category": "rulesOfRoad",
-    "question": "¿Cuándo puede rebasar un autobús escolar con luces rojas intermitentes?",
-    "optionA": "Solo cuando va en dirección opuesta en una autopista dividida",
+    "question": "En la mayoría de los estados, ¿cuándo puede rebasar un autobús escolar con luces rojas intermitentes?",
+    "optionA": "Al ir en dirección opuesta en una carretera con mediana o barrera",
     "optionB": "Cuando el conductor del autobús le hace señas para que pase el autobús detenido",
     "optionC": "Cuando no hay niños visibles cerca del autobús escolar detenido",
     "optionD": "Nunca puede rebasar un autobús escolar con luces rojas intermitentes",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "En autopistas divididas con mediana, puede continuar cuando viaja en dirección opuesta."
+    "explanation": "La mayoría de los estados permite que el tráfico en dirección opuesta siga avanzando cuando una mediana o una barrera física divide la carretera. Algunos estados, como New York, exigen que todos los conductores se detengan, así que revise la regla de su estado."
   },
   {
     "type": "Universal",
@@ -830,14 +830,14 @@
     "state": "ALL",
     "questionId": "U-060",
     "category": "rulesOfRoad",
-    "question": "¿Con cuánta anticipación antes de un giro debe señalizar?",
+    "question": "En la mayoría de los estados, ¿con cuánta anticipación antes de un giro debe señalizar?",
     "optionA": "25 pies",
     "optionB": "50 pies",
     "optionC": "100 pies",
     "optionD": "200 pies",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Señalice al menos 100 pies antes de girar para dar advertencia adecuada a otros conductores."
+    "explanation": "La mayoría de los estados exige señalizar al menos 100 pies antes del giro. Algunos estados exigen más en caminos rurales o de alta velocidad, como 200 pies en Illinois fuera de los distritos comerciales."
   },
   {
     "type": "Universal",
@@ -847,25 +847,25 @@
     "question": "¿Cuándo debe usar las luces delanteras?",
     "optionA": "Solo de noche",
     "optionB": "Cuando la visibilidad está reducida",
-    "optionC": "Del atardecer al amanecer",
+    "optionC": "Entre el anochecer y el amanecer",
     "optionD": "B y C",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Las luces delanteras deben usarse desde el atardecer hasta el amanecer y siempre que la visibilidad esté reducida."
+    "explanation": "Los faros se exigen aproximadamente desde el atardecer hasta el amanecer (muchos estados dicen de 30 minutos después del atardecer a 30 minutos antes del amanecer) y siempre que la lluvia, la niebla o la oscuridad reduzcan la visibilidad. Usarlos solo de noche omite la regla de baja visibilidad."
   },
   {
     "type": "Universal",
     "state": "ALL",
     "questionId": "U-062",
     "category": "rulesOfRoad",
-    "question": "¿Cuál es la distancia de seguimiento adecuada en condiciones ideales?",
+    "question": "¿Qué distancia de seguimiento recomiendan la mayoría de los manuales estatales en condiciones ideales?",
     "optionA": "1 segundo",
     "optionB": "2 segundos",
     "optionC": "3-4 segundos",
     "optionD": "5 segundos",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Mantenga al menos 3-4 segundos de distancia de seguimiento en condiciones normales de conducción."
+    "explanation": "La mayoría de los manuales estatales recomienda al menos 3 a 4 segundos detrás del vehículo de adelante en buenas condiciones, y más con mal tiempo. Dos segundos dejan muy poco tiempo para reaccionar a velocidades de carretera."
   },
   {
     "type": "Universal",
@@ -1096,28 +1096,28 @@
     "state": "ALL",
     "questionId": "U-079",
     "category": "rulesOfRoad",
-    "question": "¿A qué distancia puede estacionar de una boca de incendios?",
+    "question": "En la mayoría de los estados, ¿qué tan cerca de una boca de incendios puede estacionar?",
     "optionA": "5 pies",
     "optionB": "10 pies",
     "optionC": "15 pies",
     "optionD": "20 pies",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Debe estacionar al menos a 15 pies de una boca de incendios para asegurar acceso de emergencia."
+    "explanation": "La mayoría de los estados exige estacionar al menos a 15 pies de una boca de incendios para que los bomberos puedan llegar a ella. Algunos, como Massachusetts y New Jersey, usan 10 pies."
   },
   {
     "type": "Universal",
     "state": "ALL",
     "questionId": "U-080",
     "category": "rulesOfRoad",
-    "question": "¿A qué distancia puede estacionar de un cruce peatonal?",
+    "question": "En la mayoría de los estados, ¿qué tan cerca de un cruce peatonal en una intersección puede estacionar?",
     "optionA": "10 pies",
     "optionB": "15 pies",
     "optionC": "20 pies",
     "optionD": "25 pies",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "No estacione dentro de 20 pies de un cruce peatonal para mantener la visibilidad de los peatones."
+    "explanation": "La mayoría de los estados prohíbe estacionar a menos de 20 pies de un cruce peatonal en una intersección para que los conductores puedan ver a los peatones. Algunos estados fijan otra distancia, como 25 pies en New Jersey."
   },
   {
     "type": "Universal",
@@ -1575,11 +1575,11 @@
     "question": "¿Cuál es la posición más segura para las manos en el volante?",
     "optionA": "10 y 2",
     "optionB": "9 y 3",
-    "optionC": "8 y 4",
+    "optionC": "Una mano a las 6 en punto",
     "optionD": "12 en punto",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La posición 9 y 3 proporciona el mejor control y reduce el riesgo de lesión por despliegue del airbag."
+    "explanation": "Sostener el volante a las 9 y 3 da buen control y mantiene los brazos fuera del camino de la bolsa de aire. La antigua posición de 10 y 2 pone las manos donde una bolsa de aire al inflarse puede lanzarlas contra usted."
   },
   {
     "type": "Universal",
@@ -1684,14 +1684,14 @@
     "state": "ALL",
     "questionId": "U-122",
     "category": "safeDriving",
-    "question": "¿Qué debe hacer antes de entrar en un vehículo?",
+    "question": "¿Qué debe hacer antes de arrancar?",
     "optionA": "Verificar alrededor del vehículo",
     "optionB": "Ajustar todos los espejos",
     "optionC": "Abrocharse el cinturón de seguridad",
     "optionD": "Todas las anteriores",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Camine alrededor para verificar obstrucciones, luego ajuste los espejos y abroche su cinturón de seguridad."
+    "explanation": "Camine alrededor del vehículo para revisar si hay peligros antes de entrar, y luego ajuste los espejos y abróchese el cinturón de seguridad antes de avanzar. Cada paso es parte de prepararse para conducir."
   },
   {
     "type": "Universal",
@@ -1758,10 +1758,10 @@
     "optionA": "Rebasar cuando esté despejado",
     "optionB": "Cortar a través del cortejo",
     "optionC": "Mantener la conducción normal",
-    "optionD": "Detenerse a un lado y esperar",
+    "optionD": "Ceder el paso y dejarlo pasar",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Deténgase a un lado o espere a que pase el cortejo como señal de respeto y por seguridad."
+    "explanation": "Ceda el paso a un cortejo fúnebre y déjelo pasar, y nunca se meta en la fila de autos. Mantener la conducción normal puede significar cortar a través del cortejo."
   },
   {
     "type": "Universal",
@@ -2216,14 +2216,14 @@
     "state": "ALL",
     "questionId": "U-160",
     "category": "alcoholDUI",
-    "question": "¿Qué debes hacer durante un tornado mientras conduces?",
-    "optionA": "Conducir lejos del tornado lo más rápido que puedas",
+    "question": "¿Qué es lo mejor que puede hacer si se acerca un tornado mientras conduce?",
+    "optionA": "Abrir las ventanas para igualar la presión",
     "optionB": "Estacionar bajo un paso elevado para protegerse del viento",
     "optionC": "Acelerar para intentar escapar de la trayectoria del tornado",
-    "optionD": "Salir de tu auto y acostarte en un área baja cercana",
+    "optionD": "Conducir al refugio sólido más cercano",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Si no hay un edificio disponible, sal de tu auto y acuéstate en un área baja lejos de los vehículos."
+    "explanation": "El Servicio Meteorológico Nacional dice que lo mejor es conducir al refugio sólido más cercano. Si no puede, agáchese en el auto y cúbrase la cabeza o déjelo y métase en una zanja; un paso elevado no protege del viento ni de los escombros."
   },
   {
     "type": "Universal",
@@ -2342,14 +2342,14 @@
     "state": "AK",
     "questionId": "AK-008",
     "category": "gdlLicensing",
-    "question": "¿A qué edad puedes obtener una licencia de conducir completa sin restricciones en Alaska?",
-    "optionA": "16 años",
-    "optionB": "17 años",
-    "optionC": "19 años",
-    "optionD": "18 años",
+    "question": "¿Cuánto tiempo debe haber tenido licencia el adulto que supervisa a un titular de permiso en Alaska?",
+    "optionA": "Al menos 3 años",
+    "optionB": "Al menos 2 años",
+    "optionC": "Al menos 5 años",
+    "optionD": "Al menos 1 año",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores de Alaska pueden obtener una licencia completa sin restricciones a los 18 años de edad, una vez que hayan completado todas las etapas GDL y acumulado suficiente experiencia de conducción."
+    "explanation": "Según AS 28.15.051, el conductor supervisor debe tener al menos 21 años, haber tenido licencia para ese tipo de vehículo durante al menos un año y sentarse al lado del titular del permiso."
   },
   {
     "type": "State-Specific",
@@ -2498,12 +2498,12 @@
     "category": "duiStateLaws",
     "question": "¿Cuándo se permiten neumáticos con clavos en las carreteras al norte de los 60° de latitud norte en Alaska?",
     "optionA": "Del 1 de octubre al 30 de abril",
-    "optionB": "Del 16 de septiembre al 1 de mayo",
+    "optionB": "Del 16 de septiembre al 30 de abril",
     "optionC": "Del 1 de noviembre al 31 de marzo",
     "optionD": "15 de octubre al 15 de abril",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Al norte de los 60° de latitud norte, incluidos Anchorage y Fairbanks, los neumáticos con clavos son legales desde el 16 de septiembre hasta el 1 de mayo, lo que refleja la temporada invernal más larga en el norte de Alaska."
+    "explanation": "AS 28.35.155 prohíbe los neumáticos con clavos al norte de los 60 grados de latitud norte del 1 de mayo al 15 de septiembre, por lo que son legales del 16 de septiembre al 30 de abril. Al sur de los 60 grados, la prohibición va del 15 de abril al 30 de septiembre."
   },
   {
     "type": "State-Specific",
@@ -3105,7 +3105,7 @@
     "optionD": "0,06%",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Alabama establece el límite legal de BAC en 0,08% para conductores mayores de 21 años, el mismo estándar utilizado por los 50 estados según las pautas federales."
+    "explanation": "El límite de Alabama para conductores de 21 años o más es 0,08%. Todos los estados usan 0,08% excepto Utah, que bajó su límite a 0,05%."
   },
   {
     "type": "State-Specific",
@@ -3451,11 +3451,11 @@
     "question": "¿Cuándo expira una licencia de aprendizaje en Arkansas?",
     "optionA": "Después de 2 años completos",
     "optionB": "Cuando el titular cumple 18 años",
-    "optionC": "En el cumpleaños número 16 del titular",
+    "optionC": "Un mes después de cumplir 16 años",
     "optionD": "Después de 18 meses completos",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las licencias de aprendizaje de Arkansas expiran automáticamente en el cumpleaños número 16 del titular, cuando se vuelve elegible para una licencia intermedia."
+    "explanation": "El DFA de Arkansas indica que la licencia de aprendizaje vence un mes después del cumpleaños número 16 del titular. Las licencias intermedias son para personas de 16 y 17 años."
   },
   {
     "type": "State-Specific",
@@ -5212,14 +5212,14 @@
     "state": "CO",
     "questionId": "CO-013",
     "category": "speedLimits",
-    "question": "¿Cuál es el límite de velocidad en una zona escolar de Colorado cuando hay niños presentes?",
-    "optionA": "15 mph",
-    "optionB": "20 mph",
-    "optionC": "25 mph",
-    "optionD": "30 mph",
+    "question": "¿Qué límite de velocidad se aplica en una zona escolar de Colorado durante su horario indicado?",
+    "optionA": "Siempre 15 mph en todo el estado",
+    "optionB": "El límite indicado para la zona escolar",
+    "optionC": "Siempre 25 mph en todo el estado",
+    "optionD": "10 mph menos que el límite normal",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las zonas escolares de Colorado tienen un límite de velocidad de 20 mph cuando hay niños presentes durante el horario indicado en la zona escolar."
+    "explanation": "Colorado no tiene un número único para las zonas escolares en todo el estado; el límite de cada zona se fija mediante un estudio de tráfico y se indica en señales. CDOT considera los límites indicados en las zonas escolares como límites absolutos que no se pueden exceder mientras están vigentes."
   },
   {
     "type": "State-Specific",
@@ -5284,12 +5284,12 @@
     "category": "stateUnique",
     "question": "¿Cuándo se requieren las luces delanteras encendidas mientras se conduce en Colorado?",
     "optionA": "Sólo entre el atardecer y el amanecer",
-    "optionB": "Cuando los limpiaparabrisas están en uso continuo",
+    "optionB": "Cuando no puede ver bien a 1,000 pies adelante",
     "optionC": "Sólo en zonas de construcción en todo momento",
     "optionD": "Siempre que la visibilidad sea inferior a una milla de distancia",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La ley de Colorado exige que los faros estén encendidos siempre que los limpiaparabrisas estén en uso continuo debido a las condiciones climáticas, además del requisito estándar desde el atardecer hasta el amanecer."
+    "explanation": "C.R.S. 42-4-204 exige luces encendidas entre el atardecer y el amanecer y siempre que las personas y los vehículos no se vean con claridad a 1,000 pies adelante. La regla del atardecer al amanecer por sí sola omite la de baja visibilidad, y Colorado no tiene una ley que vincule los faros con los limpiaparabrisas."
   },
   {
     "type": "State-Specific",
@@ -5394,14 +5394,14 @@
     "state": "CO",
     "questionId": "CO-026",
     "category": "duiStateLaws",
-    "question": "¿Cuál es el límite legal de THC de Colorado mientras se conduce?",
+    "question": "¿A partir de qué nivel de THC en la sangre puede un tribunal de Colorado inferir que un conductor estaba afectado?",
     "optionA": "10 nanogramos por mililitro de sangre",
     "optionB": "5 nanogramos por mililitro de sangre",
     "optionC": "15 nanogramos por mililitro de sangre",
     "optionD": "2 nanogramos por mililitro de sangre",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La ley de Colorado establece 5 nanogramos de THC por mililitro de sangre como el límite legal, con las mismas penalidades que un DUI por alcohol."
+    "explanation": "Según C.R.S. 42-4-1301, 5 nanogramos o más de THC por mililitro de sangre total permiten inferir que el conductor estaba bajo la influencia. No es un límite fijo por sí solo como el 0.08% del alcohol, y se puede acusar a un conductor con niveles más bajos."
   },
   {
     "type": "State-Specific",
@@ -5926,14 +5926,14 @@
     "state": "CT",
     "questionId": "CT-024",
     "category": "speedLimits",
-    "question": "¿Cuál es el límite de velocidad predeterminado en los distritos residenciales y comerciales de Connecticut?",
-    "optionA": "20 mph",
-    "optionB": "25 mph",
-    "optionC": "30 mph",
-    "optionD": "35 mph",
+    "question": "¿Quién debe aprobar un límite de velocidad que un pueblo de Connecticut fija en sus propias calles?",
+    "optionA": "Solo el jefe de policía del pueblo",
+    "optionB": "La Oficina de Administración de Tráfico Estatal",
+    "optionC": "El comisionado estatal del DMV",
+    "optionD": "La junta escolar local",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El límite de velocidad predeterminado de Connecticut en distritos residenciales y comerciales es de 25 mph a menos que se indique lo contrario."
+    "explanation": "La Oficina de Administración de Tráfico Estatal de Connecticut fija los límites de velocidad en las carreteras estatales y debe aprobar cualquier límite que fije la autoridad de tráfico de un pueblo antes de que entre en vigor (CGS 14-218a). Los límites de velocidad se indican después de un estudio de ingeniería."
   },
   {
     "type": "State-Specific",
@@ -6040,12 +6040,12 @@
     "category": "stateUnique",
     "question": "¿Qué tipo de divisor de carretera exime al tráfico en dirección opuesta de detenerse para un autobús escolar en Connecticut?",
     "optionA": "Cualquier línea central o mediana pintada",
-    "optionB": "Una mediana física o barrera de al menos cuatro pies",
+    "optionB": "Una isla de seguridad o barrera física",
     "optionC": "Un carril central para girar",
     "optionD": "Líneas amarillas dobles",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Según CGS § 14-279, sólo una mediana física, una barrera o un área sin pavimentar de al menos cuatro pies califica como divisor. Las medianas pintadas y los carriles para girar no cuentan."
+    "explanation": "Según CGS 14-279, los conductores en una carretera dividida por una isla de seguridad o una barrera física no tienen que detenerse por un autobús escolar del otro lado. Una línea pintada o un carril central para girar no cuenta, así que ambas direcciones deben detenerse."
   },
   {
     "type": "State-Specific",
@@ -6321,11 +6321,11 @@
     "question": "¿Dónde debe sentarse el conductor supervisor al acompañar a un titular de permiso GDL de Delaware?",
     "optionA": "En el asiento trasero directamente detrás del conductor",
     "optionB": "En cualquier lugar del vehículo",
-    "optionC": "En el asiento delantero del pasajero",
+    "optionC": "En cualquier asiento con cinturón de seguridad",
     "optionD": "Junto al conductor en el asiento delantero",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El conductor supervisor debe sentarse junto al titular del permiso en el asiento delantero del pasajero."
+    "explanation": "El conductor supervisor debe sentarse en el asiento delantero junto al titular del permiso, lo bastante cerca para ayudar. Sentarse atrás o en cualquier otro lugar no cumple la regla."
   },
   {
     "type": "State-Specific",
@@ -6701,9 +6701,9 @@
     "optionB": "Newark",
     "optionC": "Dover",
     "optionD": "Rehoboth Beach",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "Dover mantiene y hace cumplir su propio programa de cámaras de semáforo en rojo."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Wilmington tiene su propio programa de cámaras de semáforo en rojo, que DelDOT revisa cada año. Las cámaras en otros lugares, incluidas las de Dover, forman parte del Programa Electrónico de Seguridad de Semáforos en Rojo de DelDOT en todo el estado."
   },
   {
     "type": "State-Specific",
@@ -6920,7 +6920,7 @@
     "state": "FL",
     "questionId": "FL-015",
     "category": "cellPhone",
-    "question": "¿Cuánto es la multa base por una segunda infracción de mensajes de texto en Florida dentro de cinco años?",
+    "question": "¿Qué sucede con una segunda infracción por enviar mensajes de texto dentro de cinco años en Florida?",
     "optionA": "Sin multa, solo advertencia",
     "optionB": "Igual que la primera infracción",
     "optionC": "Multa más alta más puntos",
@@ -6980,10 +6980,10 @@
     "optionA": "0.05%",
     "optionB": "0.08%",
     "optionC": "0.02%",
-    "optionD": "Tolerancia cero",
+    "optionD": "0.04%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Florida tiene una política de tolerancia cero con un límite de BAC de 0.02% para conductores menores de 21 años."
+    "explanation": "La ley de tolerancia cero de Florida suspende la licencia de un conductor menor de 21 años con un BAC de 0.02% o más. El límite de 0.08% se aplica a los adultos, y 0.04% es el límite para conductores comerciales."
   },
   {
     "type": "State-Specific",
@@ -7410,14 +7410,14 @@
     "state": "GA",
     "questionId": "GA-010",
     "category": "gdlLicensing",
-    "question": "¿Quién califica como conductor supervisor para alguien con un permiso de aprendizaje de Georgia?",
-    "optionA": "Cualquier miembro de la familia con licencia",
-    "optionB": "Un conductor con licencia de al menos 21 años",
-    "optionC": "Cualquier persona que haya tenido licencia por 5 años",
-    "optionD": "Solo un padre o tutor legal",
+    "question": "¿Qué programa deben completar los adolescentes de Georgia antes de obtener una licencia Clase D?",
+    "optionA": "Un curso de manejo defensivo",
+    "optionB": "El Programa de Concientización sobre Alcohol y Drogas",
+    "optionC": "Un curso de seguridad en motocicleta",
+    "optionD": "Un curso de primeros auxilios",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El conductor supervisor de un titular de permiso de aprendizaje debe ser un conductor con licencia de al menos 21 años de edad."
+    "explanation": "El DDS de Georgia exige prueba de haber completado el Programa de Concientización sobre Alcohol y Drogas (ADAP) para una licencia provisional Clase D. Los cursos de manejo defensivo y de primeros auxilios no cumplen esta regla."
   },
   {
     "type": "State-Specific",
@@ -7944,12 +7944,12 @@
     "category": "gdlLicensing",
     "question": "¿Qué debe completar antes de solicitar una licencia provisional en Hawaii?",
     "optionA": "Solo se requiere el examen escrito",
-    "optionB": "Solo entrenamiento de manejo práctico",
+    "optionB": "Solo un curso de manejo defensivo",
     "optionC": "Solo curso de instrucción en el aula",
     "optionD": "Educación en el aula y manejo práctico",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los solicitantes deben completar tanto un curso de instrucción en el aula como educación práctica al volante antes de solicitar una licencia provisional."
+    "explanation": "Hawaii exige tanto educación vial en el aula como entrenamiento práctico al volante antes de una licencia provisional. Un curso de manejo defensivo por sí solo no cumple el requisito."
   },
   {
     "type": "State-Specific",
@@ -8320,14 +8320,14 @@
     "state": "HI",
     "questionId": "HI-035",
     "category": "stateUnique",
-    "question": "¿Es legal cruzar la calle imprudentemente en Hawaii?",
-    "optionA": "Sí, en cualquier lugar fuera de distritos comerciales",
-    "optionB": "Sí, si no hay autos presentes",
-    "optionC": "No, es ilegal",
-    "optionD": "Sí, con precaución",
+    "question": "Entre dos intersecciones de Hawaii con semáforos en funcionamiento, ¿dónde pueden cruzar los peatones?",
+    "optionA": "En cualquier lugar fuera de distritos comerciales",
+    "optionB": "En cualquier lugar si no hay autos",
+    "optionC": "Solo en un cruce peatonal marcado",
+    "optionD": "En cualquier lugar, con precaución",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Cruzar la calle imprudentemente (jaywalking) es ilegal."
+    "explanation": "Según HRS 291C-73(c), los peatones solo pueden cruzar entre intersecciones contiguas con semáforos por un cruce peatonal marcado, con una multa de $100. En otros lugares pueden cruzar fuera de un cruce peatonal solo si ceden el paso a todos los vehículos."
   },
   {
     "type": "State-Specific",
@@ -8980,12 +8980,12 @@
     "category": "gdlLicensing",
     "question": "¿Por cuánto tiempo debe tener un Permiso de Instrucción Supervisada después de completar educación vial antes de obtener una licencia?",
     "optionA": "Mínimo 3 meses",
-    "optionB": "6 meses o 17 años",
+    "optionB": "Al menos 6 meses",
     "optionC": "Mínimo 1 año",
     "optionD": "Mínimo 9 meses",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Después de completar la educación vial, debe mantener un Permiso de Instrucción Supervisada hasta los 17 años o durante 6 meses, lo que sea más largo."
+    "explanation": "El Código de Idaho 49-307 permite que el titular de un permiso solicite una licencia no antes de 6 meses después de completar la educación vial, y solo a partir de los 15 años. Durante ese tiempo debe registrar al menos 50 horas supervisadas, 10 de ellas de noche."
   },
   {
     "type": "State-Specific",
@@ -9440,14 +9440,14 @@
     "state": "ID",
     "questionId": "ID-035",
     "category": "stateUnique",
-    "question": "¿Qué debe hacer cuando un vehículo de movimiento lento en una carretera de dos carriles tiene tres o más vehículos detrás?",
+    "question": "En una carretera de dos carriles de Idaho, ¿qué debe hacer un conductor lento con 3 o más autos detrás?",
     "optionA": "Hacerle señales con las luces",
     "optionB": "Adelantar inmediatamente cuando sea seguro",
-    "optionC": "Salirse en el desvío más cercano",
+    "optionC": "Salirse en el siguiente desvío o lugar seguro",
     "optionD": "Tocarle la bocina",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un vehículo de movimiento lento con tres o más vehículos detrás debe salirse en el desvío más cercano."
+    "explanation": "El Código de Idaho 49-639 exige que un conductor fuera de un área urbana, con tres o más vehículos en fila detrás y sin que sea seguro rebasar, se salga en el desvío o lugar seguro más cercano. Encender luces intermitentes o tocar la bocina a la fila no cumple ese deber."
   },
   {
     "type": "State-Specific",
@@ -9752,24 +9752,24 @@
     "optionA": "Al reportar una emergencia",
     "optionB": "Solo en semáforos en rojo",
     "optionC": "Solo en estacionamientos permitido",
-    "optionD": "Cuando el tráfico está completamente detenido",
+    "optionD": "Al conducir a menos de 10 mph",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "La ley de Illinois solo permite el uso de teléfono manual cuando el vehículo está estacionado en el arcén de la carretera o cuando se reporta una situación de emergencia."
+    "explanation": "Illinois permite el uso manual para reportar una emergencia. Otras excepciones incluyen estar estacionado en el arcén o detenido por tráfico obstruido en neutral o estacionamiento, pero la baja velocidad nunca es una excepción."
   },
   {
     "type": "State-Specific",
     "state": "IL",
     "questionId": "IL-018",
     "category": "cellPhone",
-    "question": "¿Pueden los conductores de Illinois usar teléfonos manuales mientras están detenidos en una luz roja o en el tráfico?",
-    "optionA": "Sí, si el tráfico está detenido",
-    "optionB": "No, prohibido incluso cuando está detenido",
-    "optionC": "Sí, solo en luces rojas",
-    "optionD": "Sí, si el freno de estacionamiento está activado",
+    "question": "Un conductor de Illinois está detenido porque el tráfico adelante está bloqueado. ¿Cuándo puede usar un teléfono manual?",
+    "optionA": "Nunca, ni completamente detenido",
+    "optionB": "Cuando el auto está en estacionamiento o neutral",
+    "optionC": "Siempre que pise el pedal del freno",
+    "optionD": "Solo después de apagar el motor",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Illinois prohíbe el uso de dispositivos electrónicos manuales mientras se conduce, incluso cuando se está detenido en una luz roja o atascado en el tráfico."
+    "explanation": "Illinois permite usar un dispositivo cuando el vehículo está detenido porque el tráfico normal está obstruido y la transmisión está en neutral o en estacionamiento. Simplemente mantener el freno pisado en marcha no cuenta."
   },
   {
     "type": "State-Specific",
@@ -9958,14 +9958,14 @@
     "state": "IL",
     "questionId": "IL-032",
     "category": "stateUnique",
-    "question": "¿Qué requiere la Scott's Law de Illinois al acercarse a vehículos de emergencia estacionarios?",
-    "optionA": "Mantener tu velocidad actual",
-    "optionB": "Tocar la bocina para alertar a los respondedores de emergencia",
-    "optionC": "Reducir la velocidad y moverse a un lado",
-    "optionD": "Detenerse completamente detrás de ellos",
+    "question": "En una carretera de Illinois con al menos cuatro carriles, ¿quién debe detenerse por un autobús escolar con luces rojas intermitentes?",
+    "optionA": "El tráfico en ambas direcciones",
+    "optionB": "Solo el tráfico en dirección opuesta",
+    "optionC": "Solo el tráfico en la misma dirección del autobús",
+    "optionD": "Nadie, si los niños usan la acera",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La Scott's Law de Illinois requiere que los conductores reduzcan la velocidad y se muevan a un lado cuando sea posible al acercarse a vehículos de emergencia estacionarios con luces activadas."
+    "explanation": "En una carretera de cuatro o más carriles, solo el tráfico que va en la misma dirección que el autobús debe detenerse. En una carretera de dos carriles, el tráfico en ambas direcciones debe detenerse."
   },
   {
     "type": "State-Specific",
@@ -10171,11 +10171,11 @@
     "question": "Después de los primeros 180 días, ¿cuándo no pueden conducir los conductores provisionales de domingo a jueves?",
     "optionA": "Después de medianoche hasta las 5 AM",
     "optionB": "Después de las 10 PM hasta las 5 AM",
-    "optionC": "11 PM a 5 AM del lunes",
+    "optionC": "De 11 PM a 5 AM de la mañana siguiente",
     "optionD": "Después de las 9 PM hasta las 6 AM",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Después de los primeros 180 días, los conductores provisionales no pueden conducir entre las 11 PM de domingo a jueves y las 5 AM de la mañana siguiente."
+    "explanation": "Después de los primeros 180 días, los conductores provisionales no pueden conducir de 11 PM a 5 AM de la mañana siguiente las noches de domingo a jueves. El límite de las 10 PM solo se aplica durante los primeros 180 días."
   },
   {
     "type": "State-Specific",
@@ -10364,14 +10364,14 @@
     "state": "IN",
     "questionId": "IN-021",
     "category": "duiStateLaws",
-    "question": "¿La ley de Indiana requiere faros siempre que qué dispositivo esté en uso continuo?",
-    "optionA": "Limpiaparabrisas",
-    "optionB": "Aire acondicionado",
-    "optionC": "Control de crucero",
-    "optionD": "Señales de giro",
+    "question": "Indiana exige faros siempre que la visibilidad sea menor de ¿cuántos pies?",
+    "optionA": "500 pies",
+    "optionB": "200 pies",
+    "optionC": "1,000 pies",
+    "optionD": "100 pies",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "La ley de Indiana exige que los faros estén encendidos siempre que los limpiaparabrisas estén en uso continuo debido a las condiciones climáticas."
+    "explanation": "Los conductores de Indiana deben usar los faros entre el atardecer y el amanecer y en cualquier otro momento en que la visibilidad sea menor de 500 pies. La ley de Indiana no vincula los faros con el uso de los limpiaparabrisas."
   },
   {
     "type": "State-Specific",
@@ -10548,12 +10548,12 @@
     "category": "stateUnique",
     "question": "¿Cuándo debe usar las señales de giro antes de girar o cambiar de carril en Indiana?",
     "optionA": "Al menos 200 pies antes",
-    "optionB": "En un tiempo razonable antes",
+    "optionB": "Un tiempo razonable antes de la maniobra",
     "optionC": "Inmediatamente antes de girar",
     "optionD": "Sólo en las carreteras principales",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "La ley de Indiana exige una señal de giro continua durante al menos los últimos 200 pies antes de girar (IC 9-21-8-25)."
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "Desde el 1 de enero de 2023, Indiana exige señalizar un tiempo razonable antes de girar o cambiar de carril. La antigua regla fija de 200 pies fue derogada."
   },
   {
     "type": "State-Specific",
@@ -10686,14 +10686,14 @@
     "state": "KS",
     "questionId": "KS-004",
     "category": "gdlLicensing",
-    "question": "¿Cuántas horas de manejo supervisado se requieren para progresar de un permiso de aprendizaje en Kansas?",
+    "question": "¿Cuántas horas supervisadas debe certificar un adolescente de Kansas para pasar a una licencia con menos restricciones a los 16 años?",
     "optionA": "25 horas",
     "optionB": "30 horas",
     "optionC": "40 horas",
     "optionD": "50 horas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Se requieren 50 horas de conducción supervisada para avanzar de un permiso de aprendizaje."
+    "explanation": "Kansas exige una declaración jurada de 50 horas para pasar a menos restricciones a los 16 años. Un joven de 15 años solo necesita 25 horas para la primera licencia restringida."
   },
   {
     "type": "State-Specific",
@@ -10774,10 +10774,10 @@
     "optionA": "Solo uso de manos libres",
     "optionB": "Solo mensajes de texto prohibidos",
     "optionC": "Navegación GPS está permitida",
-    "optionD": "Todo uso está prohibido",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "A los titulares de permiso de aprendizaje se les prohíbe enviar mensajes de texto mientras conducen."
+    "optionD": "Todo uso, salvo para reportar una emergencia",
+    "correctAnswer": "D",
+    "correctIndex": 3,
+    "explanation": "Los titulares de permiso menores de 17 años en Kansas no pueden usar dispositivos inalámbricos mientras conducen, salvo para reportar actividad ilegal o pedir ayuda médica o de emergencia. La prohibición no se limita a los mensajes de texto."
   },
   {
     "type": "State-Specific",
@@ -10787,11 +10787,11 @@
     "question": "¿Qué pasajeros puede transportar un titular de licencia restringida de 15 años sin supervisión en Kansas?",
     "optionA": "No se permiten pasajeros",
     "optionB": "Cualquier miembro de la familia",
-    "optionC": "Solo hermanos",
+    "optionC": "Hermanos, pero ningún otro menor",
     "optionD": "Un pasajero no familiar",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un titular de licencia restringida de 15 años puede transportar hermanos sin supervisión."
+    "explanation": "Un titular de licencia restringida de 15 años no puede llevar pasajeros menores que no sean hermanos. Se permiten hermanos y hermanas, pero no primos ni amigos menores de 18 años."
   },
   {
     "type": "State-Specific",
@@ -11064,14 +11064,14 @@
     "state": "KS",
     "questionId": "KS-031",
     "category": "stateUnique",
-    "question": "¿Cuándo debe encender las luces delanteras mientras conduce en Kansas?",
-    "optionA": "Solo de noche",
-    "optionB": "Solo en condiciones de lluvia fuerte",
+    "question": "Además del atardecer al amanecer, ¿cuándo exige la ley de Kansas encender los faros?",
+    "optionA": "Solo en zonas de trabajo en carreteras",
+    "optionB": "Solo en autopistas interestatales",
     "optionC": "Cuando los limpiaparabrisas estén en uso continuo",
     "optionD": "Solo durante el período de meses de invierno",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras deben encenderse siempre que los limpiaparabrisas estén en uso continuo."
+    "explanation": "Kansas exige los faros siempre que los limpiaparabrisas estén en uso continuo por lluvia, aguanieve o nieve, además de por la noche y cuando la visibilidad sea menor de 1,000 pies. No hay una regla limitada a zonas de trabajo o interestatales."
   },
   {
     "type": "State-Specific",
@@ -11134,14 +11134,14 @@
     "state": "KS",
     "questionId": "KS-036",
     "category": "stateUnique",
-    "question": "¿Qué deben mostrar los vehículos que viajan a menos de 25 mph en las carreteras de Kansas?",
-    "optionA": "Luces de emergencia intermitentes en todo momento",
-    "optionB": "Un emblema de vehículo que circula lentamente",
-    "optionC": "Una bandera blanca en la antena",
-    "optionD": "Cinta reflectante en el parachoques trasero",
+    "question": "¿Qué concentración de alcohol es ilegal para un conductor menor de 21 años en Kansas?",
+    "optionA": "0.08% o más",
+    "optionB": "0.02% o más",
+    "optionC": "0.04% o más",
+    "optionD": "0.10% o más",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La ley de Kansas exige que cualquier vehículo diseñado para viajar a menos de 25 mph en vías públicas muestre un emblema de vehículo de movimiento lento (triángulo naranja reflectante) en la parte trasera."
+    "explanation": "Según K.S.A. 8-1567a, un conductor menor de 21 años no puede conducir con un contenido de alcohol en el aliento o en la sangre de 0.02 o más. El límite de 0.08 se aplica a los conductores adultos."
   },
   {
     "type": "State-Specific",
@@ -11851,11 +11851,11 @@
     "question": "¿Qué restricción de pasajeros aplica a los titulares de licencia intermedia entre las 6 PM y las 5 AM en Louisiana?",
     "optionA": "No se permiten pasajeros no familiares",
     "optionB": "Máximo de dos pasajeros no familiares permitidos",
-    "optionC": "Un pasajero no familiar menor de 21 con adulto",
+    "optionC": "Uno no familiar menor de 21, salvo que viaje un adulto de 21+",
     "optionD": "Máximo de tres pasajeros en total permitidos",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los titulares de licencia intermedia solo pueden tener un pasajero no familiar menor de 21 años acompañado por un adulto supervisor entre las 6 PM y las 5 AM."
+    "explanation": "De 6 PM a 5 AM, un conductor intermedio no puede llevar más de un pasajero no familiar menor de 21 años, a menos que vaya en el auto un adulto con licencia de 21 años o más. No hay un límite general de tres pasajeros."
   },
   {
     "type": "State-Specific",
@@ -12186,12 +12186,12 @@
     "category": "stateUnique",
     "question": "¿Cuándo se requieren las luces delanteras en Louisiana?",
     "optionA": "Solo durante las horas nocturnas",
-    "optionB": "Durante la lluvia y el mal tiempo",
+    "optionB": "Solo en autopistas interestatales",
     "optionC": "Entre el atardecer y el amanecer",
     "optionD": "Solo en niebla o neblina intensa",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras se requieren entre el atardecer y el amanecer."
+    "explanation": "Louisiana exige los faros entre el atardecer y el amanecer, y también cuando la visibilidad es mala o se usan los limpiaparabrisas. No se limitan a las interestatales."
   },
   {
     "type": "State-Specific",
@@ -12618,14 +12618,14 @@
     "state": "MA",
     "questionId": "MA-022",
     "category": "stateUnique",
-    "question": "¿A qué edad todos los pasajeros de un vehículo deben usar el cinturón de seguridad en Massachusetts?",
-    "optionA": "13 años y mayores",
-    "optionB": "16 años y mayores",
-    "optionC": "Todas las edades",
-    "optionD": "18 años y mayores",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "La ley de Massachusetts exige que todos los pasajeros mayores de 13 años usen el cinturón de seguridad. Los niños menores de 13 años deben viajar en un sistema de retención infantil adecuado."
+    "question": "¿Quién debe usar el cinturón de seguridad o un asiento de seguridad infantil en un auto de pasajeros en Massachusetts?",
+    "optionA": "Solo los ocupantes del asiento delantero",
+    "optionB": "Solo el conductor",
+    "optionC": "Todo conductor y pasajero",
+    "optionD": "Solo los ocupantes de 18 años o más",
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Massachusetts exige que todo conductor y pasajero use el cinturón de seguridad, y los niños pequeños deben usar un asiento de seguridad infantil según la ley de pasajeros infantiles. Los ocupantes del asiento trasero no están exentos."
   },
   {
     "type": "State-Specific",
@@ -12996,14 +12996,14 @@
     "state": "MD",
     "questionId": "MD-009",
     "category": "gdlLicensing",
-    "question": "¿A qué edad una licencia provisional se convierte automáticamente en sin restricciones en Maryland?",
-    "optionA": "18 años",
-    "optionB": "17 años",
-    "optionC": "19 años",
-    "optionD": "21 años",
+    "question": "¿Cuándo se convierte automáticamente una licencia provisional de Maryland en una licencia completa?",
+    "optionA": "Tras 18 meses sin condenas",
+    "optionB": "Al cumplir el conductor 17 años",
+    "optionC": "Al cumplir el conductor 19 años",
+    "optionD": "Tras 6 meses sin choques",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Una licencia provisional se convierte automáticamente en una licencia sin restricciones cuando el conductor cumple 18 años."
+    "explanation": "Maryland convierte una licencia provisional en una licencia completa después de tenerla al menos 18 meses sin condenas. Una condena reinicia los 18 meses."
   },
   {
     "type": "State-Specific",
@@ -14468,12 +14468,12 @@
     "category": "stateUnique",
     "question": "¿Cuándo puede hacer un giro a la izquierda en luz roja en Michigan?",
     "optionA": "Nunca permitido en Michigan",
-    "optionB": "De una vía a una vía después de detenerse",
+    "optionB": "Hacia una calle de un solo sentido tras detenerse",
     "optionC": "En cualquier momento después de medianoche",
     "optionD": "Solo en áreas rurales del estado",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Un giro a la izquierda en rojo solo está permitido al girar de una calle de un solo sentido a otra calle de un solo sentido después de detenerse."
+    "explanation": "Michigan permite girar a la izquierda en rojo hacia una calle de un solo sentido desde una calle de uno o dos sentidos, después de detenerse y ceder el paso, a menos que una señal lo prohíba. No se permite girar en rojo hacia una calle de doble sentido."
   },
   {
     "type": "State-Specific",
@@ -14872,14 +14872,14 @@
     "state": "MN",
     "questionId": "MN-023",
     "category": "stateUnique",
-    "question": "En Minnesota, ¿cuándo debe encender las luces delanteras mientras conduce?",
-    "optionA": "Sólo entre el atardecer y el amanecer",
-    "optionB": "Sólo cuando la visibilidad es inferior a 500 pies",
-    "optionC": "Cuando se necesitan limpiaparabrisas en caso de lluvia o nieve",
-    "optionD": "Sólo en caminos rurales sin iluminación",
+    "question": "En Minnesota, ¿qué clima exige los faros incluso de día?",
+    "optionA": "Sol brillante",
+    "optionB": "Vientos cruzados fuertes",
+    "optionC": "Lluvia, nieve, aguanieve o granizo",
+    "optionD": "Temperaturas altas",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La ley de Minnesota exige que los faros estén encendidos siempre que las condiciones climáticas requieran el uso de limpiaparabrisas, además del requisito estándar desde el atardecer hasta el amanecer."
+    "explanation": "Minnesota exige los faros siempre que llueva, nieve, caiga aguanieve o granizo, además de por la noche. El viento o el calor por sí solos no los exigen."
   },
   {
     "type": "State-Specific",
@@ -14900,14 +14900,14 @@
     "state": "MN",
     "questionId": "MN-025",
     "category": "stateUnique",
-    "question": "¿Qué sucede con las multas de tránsito en una zona de trabajo de Minnesota cuando hay trabajadores presentes?",
-    "optionA": "Las multas se duplican",
-    "optionB": "Las multas siguen siendo las mismas",
-    "optionC": "Se triplican las multas",
-    "optionD": "Sólo se emite una advertencia",
+    "question": "¿Cuál es la multa por exceso de velocidad en una zona de trabajo de Minnesota?",
+    "optionA": "$300 más recargos",
+    "optionB": "La misma que en cualquier otro lugar",
+    "optionC": "Tres veces la multa normal",
+    "optionD": "Solo una advertencia por escrito",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "En Minnesota, las multas de tránsito se duplican en las zonas de trabajo cuando hay trabajadores presentes, para ayudar a proteger a los trabajadores de la carretera y ralentizar el tráfico."
+    "explanation": "Minnesota fija una multa de $300, más recargos, por exceso de velocidad en una zona de trabajo. Es una cantidad fija, no un múltiplo de la multa normal."
   },
   {
     "type": "State-Specific",
@@ -14928,14 +14928,14 @@
     "state": "MN",
     "questionId": "MN-027",
     "category": "stateUnique",
-    "question": "¿Cuál es el límite de velocidad en las autopistas y autopistas de Minnesota a menos que se indique lo contrario?",
+    "question": "¿Cuál es el límite de velocidad en las vías rápidas y autopistas no interestatales de Minnesota a menos que se indique otro?",
     "optionA": "55 mph",
     "optionB": "60 mph",
     "optionC": "65 mph",
     "optionD": "70 mph",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Minnesota establece el límite de velocidad predeterminado en 65 mph en autopistas y autopistas divididas con acceso controlado."
+    "explanation": "La ley de Minnesota fija 65 mph en las vías rápidas y autopistas no interestatales. Las interestatales rurales son de 70 mph, y las demás carreteras tienen 55 mph por defecto."
   },
   {
     "type": "State-Specific",
@@ -15432,14 +15432,14 @@
     "state": "MO",
     "questionId": "MO-023",
     "category": "stateUnique",
-    "question": "¿Cuál es el límite de velocidad predeterminado en las autopistas e interestatales rurales de Missouri?",
+    "question": "¿Cuál es el límite de velocidad máximo que permite la ley en las interestatales y autopistas rurales de Missouri?",
     "optionA": "70 mph",
     "optionB": "65 mph",
     "optionC": "75 mph",
     "optionD": "60 mph",
-    "correctAnswer": "A",
-    "correctIndex": 0,
-    "explanation": "El límite de velocidad legal de Missouri en las autopistas y autopistas interestatales rurales es de 70 mph según RSMo 304.010."
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Desde el 28 de agosto de 2026, la ley de Missouri permite hasta 75 mph en las interestatales y autopistas rurales, antes 70 mph. Siempre obedezca la señal indicada donde MoDOT haya fijado un límite más bajo."
   },
   {
     "type": "State-Specific",
@@ -15544,14 +15544,14 @@
     "state": "MO",
     "questionId": "MO-031",
     "category": "stateUnique",
-    "question": "¿Cuándo debe usar las luces delanteras en Missouri?",
-    "optionA": "Solo entre el atardecer y el amanecer",
-    "optionB": "Solo en condiciones de lluvia o niebla",
-    "optionC": "Con limpiaparabrisas o baja visibilidad",
-    "optionD": "Solo en carreteras por la noche",
+    "question": "Además de por la noche, ¿cuándo debe usar los faros en Missouri?",
+    "optionA": "Solo en autopistas interestatales",
+    "optionB": "Solo con niebla, nunca con lluvia",
+    "optionC": "Cuando el clima exige limpiaparabrisas",
+    "optionD": "Solo al remolcar un tráiler",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras son requeridas siempre que los limpiaparabrisas estén en uso o la visibilidad esté reducida."
+    "explanation": "Los conductores de Missouri deben usar los faros siempre que el clima exija limpiaparabrisas, además de desde media hora después del atardecer hasta media hora antes del amanecer. La regla incluye la lluvia, no solo la niebla."
   },
   {
     "type": "State-Specific",
@@ -15656,14 +15656,14 @@
     "state": "MO",
     "questionId": "MO-039",
     "category": "stateUnique",
-    "question": "¿Cuándo se requieren las luces delanteras durante la niebla en Missouri?",
-    "optionA": "Solo si la visibilidad está severamente reducida",
-    "optionB": "Solo si los limpiaparabrisas están encendidos",
-    "optionC": "Siempre durante la niebla, incluso sin limpiaparabrisas",
-    "optionD": "Las luces de niebla pueden reemplazar las luces delanteras con seguridad",
+    "question": "¿Qué posición de los faros indica la Guía del Conductor de Missouri para la niebla?",
+    "optionA": "Luces altas para más alcance",
+    "optionB": "Solo luces de estacionamiento",
+    "optionC": "Luces bajas",
+    "optionD": "Luces apagadas para reducir el reflejo",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras siempre son requeridas durante la niebla, incluso cuando los limpiaparabrisas no están en uso."
+    "explanation": "La Guía del Conductor de Missouri indica mantener los faros en luces bajas con niebla. Las luces altas se reflejan en la niebla y hacen más difícil ver."
   },
   {
     "type": "State-Specific",
@@ -15894,14 +15894,14 @@
     "state": "MS",
     "questionId": "MS-016",
     "category": "cellPhone",
-    "question": "¿Qué restricción de teléfono celular aplica a los titulares de permiso de aprendizaje en Mississippi?",
-    "optionA": "Solo envío de mensajes de texto prohibido",
-    "optionB": "Llamadas en mano prohibidas",
-    "optionC": "Redes sociales prohibidas",
-    "optionD": "Todo uso de teléfono celular prohibido",
+    "question": "Según la ley de mensajes de texto de Mississippi, ¿qué mensaje no se considera un mensaje de texto?",
+    "optionA": "Un correo electrónico",
+    "optionB": "Un mensaje instantáneo",
+    "optionC": "Una publicación en redes sociales",
+    "optionD": "Una alerta del clima o del tráfico",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los titulares de permiso de aprendizaje tienen prohibido todo uso de teléfono celular mientras conducen."
+    "explanation": "La prohibición de mensajes de texto de Mississippi incluye textos, mensajes instantáneos y correo electrónico, pero una alerta de emergencia, de tráfico o del clima no se considera un mensaje de texto. Publicar en redes sociales con un teléfono en la mano también está prohibido."
   },
   {
     "type": "State-Specific",
@@ -16286,14 +16286,14 @@
     "state": "MT",
     "questionId": "MT-004",
     "category": "gdlLicensing",
-    "question": "¿Cuántas horas de manejo supervisado se requieren si sus padres enseñan el componente de manejo en Montana?",
-    "optionA": "50 horas con 10 de noche",
-    "optionB": "60 horas con 10 de noche",
-    "optionC": "50 horas con 15 de noche",
-    "optionD": "75 horas con 15 de noche",
+    "question": "¿Cuánto tiempo debe tener un adolescente de Montana un permiso de educación vial o licencia de aprendizaje antes de la certificación GDL?",
+    "optionA": "Al menos 30 días",
+    "optionB": "Al menos 3 meses",
+    "optionC": "Al menos 12 meses",
+    "optionD": "Al menos seis meses",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Cuando un padre enseña el componente de manejo, se requieren 75 horas de manejo supervisado, incluyendo 15 horas de noche."
+    "explanation": "La certificación GDL de Montana se completa después de que el adolescente haya tenido un permiso de educación vial o una licencia de aprendizaje durante al menos seis meses. Durante ese tiempo debe registrar 50 horas supervisadas, 10 de ellas de noche."
   },
   {
     "type": "State-Specific",
@@ -16664,14 +16664,14 @@
     "state": "MT",
     "questionId": "MT-031",
     "category": "stateUnique",
-    "question": "¿Qué deben hacer los conductores al acercarse a vehículos de emergencia con luces intermitentes en una interestatal en Montana?",
-    "optionA": "Mantener la velocidad actual",
-    "optionB": "Detenerse completamente ahora",
-    "optionC": "Cambiar de carril o reducir 20 mph",
-    "optionD": "Hacer destellar las luces delanteras",
+    "question": "En una interestatal de Montana sin límite temporal indicado, ¿cuánto debe reducir la velocidad por un vehículo de emergencia detenido si puede cambiar de carril?",
+    "optionA": "10 mph menos que el límite",
+    "optionB": "A la mitad del límite indicado",
+    "optionC": "20 mph menos que el límite",
+    "optionD": "Ningún cambio tras cambiar de carril",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Al acercarse a un vehículo de emergencia detenido con luces intermitentes en una interestatal, los conductores deben cambiarse de carril si es seguro. Si no pueden cambiarse, deben reducir la velocidad a 20 mph por debajo del límite."
+    "explanation": "En una interestatal, los conductores de Montana que pueden cambiar de carril deben cambiarse y reducir a 20 mph menos que el límite indicado. Si no pueden cambiar de carril, deben reducir a la mitad del límite indicado."
   },
   {
     "type": "State-Specific",
@@ -16682,10 +16682,10 @@
     "optionA": "10 mph debajo del límite",
     "optionB": "15 mph debajo del límite",
     "optionC": "20 mph debajo del límite",
-    "optionD": "30 mph debajo o la mitad",
+    "optionD": "A la mitad del límite indicado",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Cuando no pueden cambiar de carril en una carretera estatal, los conductores deben reducir 30 mph por debajo del límite de velocidad o reducir la velocidad a la mitad del límite publicado al acercarse a vehículos de emergencia."
+    "explanation": "En una carretera estatal o de condado de Montana, el conductor que no puede cambiar de carril debe reducir a la mitad del límite indicado. La regla de 30 mph menos se aplica cuando el conductor sí puede cambiar de carril."
   },
   {
     "type": "State-Specific",
@@ -17182,14 +17182,14 @@
     "state": "NC",
     "questionId": "NC-028",
     "category": "stateUnique",
-    "question": "¿Con qué frecuencia los conductores entre 18 y 66 años deben renovar su licencia de conducir en Carolina del Norte?",
+    "question": "¿Con qué frecuencia deben renovar su licencia de conducir los conductores de 18 a 65 años en Carolina del Norte?",
     "optionA": "Cada 4 años",
     "optionB": "Cada 5 años",
     "optionC": "Cada 8 años",
     "optionD": "Cada 10 años",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "En Carolina del Norte, las licencias de conducir estándar Clase C emitidas a personas de 18 a 66 años son válidas durante ocho años antes de que sea necesaria la renovación."
+    "explanation": "Las licencias de Carolina del Norte emitidas a adultos de 18 a 65 años son válidas por ocho años. Los conductores de 66 años o más renuevan cada cinco años."
   },
   {
     "type": "State-Specific",
@@ -17224,14 +17224,14 @@
     "state": "NC",
     "questionId": "NC-031",
     "category": "stateUnique",
-    "question": "¿Cuándo debe encender las luces delanteras mientras conduce en North Carolina?",
-    "optionA": "Solo de noche",
-    "optionB": "Solo en lluvia fuerte",
-    "optionC": "Cuando los limpiaparabrisas están encendidos",
-    "optionD": "Solo en niebla",
+    "question": "Además de por la noche, ¿cuándo debe encender los faros en North Carolina?",
+    "optionA": "Solo dentro de túneles",
+    "optionB": "Solo en autopistas interestatales",
+    "optionC": "Cuando usa limpiaparabrisas por el clima",
+    "optionD": "Solo al remolcar un tráiler",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras deben encenderse siempre que los limpiaparabrisas estén en uso."
+    "explanation": "North Carolina exige los faros siempre que se usen los limpiaparabrisas por el clima, además de entre el atardecer y el amanecer. La regla no se limita a túneles ni interestatales."
   },
   {
     "type": "State-Specific",
@@ -17504,14 +17504,14 @@
     "state": "ND",
     "questionId": "ND-011",
     "category": "gdlLicensing",
-    "question": "¿Cuánto tiempo debe mantener un permiso de instrucción un joven de 15 años en North Dakota?",
-    "optionA": "Período mínimo de 3 meses",
-    "optionB": "Período mínimo de 12 meses",
-    "optionC": "Hasta los 16 años o 6 meses mín",
-    "optionD": "Período mínimo de 9 meses",
+    "question": "¿Cuánto tiempo debe tener un joven de 16 años un permiso de instrucción antes de una licencia clase D en North Dakota?",
+    "optionA": "Al menos 3 meses",
+    "optionB": "Al menos 12 meses",
+    "optionC": "Al menos 6 meses",
+    "optionD": "Al menos 9 meses",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un joven de 15 años debe mantener un permiso de instrucción hasta cumplir 16 años o durante un mínimo de 6 meses, lo que ocurra primero."
+    "explanation": "Los conductores de 16 o 17 años en North Dakota deben tener un permiso de instrucción durante al menos seis meses antes de una licencia clase D. Los menores de 16 años deben tenerlo durante al menos 12 meses."
   },
   {
     "type": "State-Specific",
@@ -17546,14 +17546,14 @@
     "state": "ND",
     "questionId": "ND-014",
     "category": "cellPhone",
-    "question": "¿Cuál es la ley de teléfonos celulares para conductores menores de 18 años en North Dakota?",
-    "optionA": "Solo mensajes de texto prohibidos para menores",
-    "optionB": "Todos los dispositivos prohibidos incl. manos libres",
-    "optionC": "Solo uso manual prohibido por ley",
-    "optionD": "Sin restricciones si tiene licencia de conducir",
+    "question": "¿Cuándo puede un titular de permiso de North Dakota usar un teléfono mientras el vehículo está en movimiento?",
+    "optionA": "Para ver indicaciones del GPS",
+    "optionB": "Para evitar un delito a punto de ocurrir",
+    "optionC": "Para enviar un breve texto a un padre",
+    "optionD": "Al conducir en caminos rurales",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los conductores menores de 18 años tienen prohibido usar todos los dispositivos inalámbricos mientras conducen, incluyendo opciones de manos libres."
+    "explanation": "Un titular de permiso en North Dakota puede usar un teléfono en movimiento solo para obtener ayuda de emergencia, evitar un delito a punto de cometerse o cuando una vida está en peligro. La navegación y los mensajes a la familia no son excepciones."
   },
   {
     "type": "State-Specific",
@@ -17588,14 +17588,14 @@
     "state": "ND",
     "questionId": "ND-017",
     "category": "cellPhone",
-    "question": "¿Pueden los conductores de 21 años o más hablar por teléfono manual mientras conducen en North Dakota?",
+    "question": "¿Pueden los conductores de 18 años o más hablar por un teléfono en la mano mientras conducen en North Dakota?",
     "optionA": "Sí, teléfonos manuales permitidos",
     "optionB": "No, solo ley de manos libres",
     "optionC": "Solo en situaciones de emergencia",
     "optionD": "Solo fuera de los límites de la ciudad",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los conductores de 21 años o más pueden hablar por un teléfono de mano mientras conducen."
+    "explanation": "North Dakota prohíbe los mensajes de texto a todos los conductores y todo uso del teléfono a los conductores menores de 18 años. Los conductores de 18 años o más todavía pueden hacer llamadas con el teléfono en la mano."
   },
   {
     "type": "State-Specific",
@@ -18069,9 +18069,9 @@
     "optionB": "1 año y puede renovarse",
     "optionC": "3 meses y puede renovarse",
     "optionD": "Válido hasta los 16 años",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "Un Permiso Escolar de Aprendizaje es válido por 3 meses y puede renovarse."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Un Permiso Escolar de Aprendizaje de Nebraska (LPE) es válido por seis meses desde su emisión y se puede renovar en una oficina de licencias de conducir."
   },
   {
     "type": "State-Specific",
@@ -18134,14 +18134,14 @@
     "state": "NE",
     "questionId": "NE-016",
     "category": "cellPhone",
-    "question": "¿Cuándo pueden los conductores usar legalmente dispositivos manuales mientras conducen en Nebraska?",
-    "optionA": "Cuando están detenidos en semáforos en rojo",
-    "optionB": "Solo durante conducción en carretera",
+    "question": "¿Puede un conductor adulto sostener un teléfono para hacer una llamada de voz mientras conduce en Nebraska?",
+    "optionA": "No, nunca mientras conduce",
+    "optionB": "Solo en carreteras",
     "optionC": "Solo para navegación GPS",
-    "optionD": "Para contactar servicios de emergencia",
+    "optionD": "Sí, solo se prohíben los textos",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los dispositivos de mano solo pueden usarse mientras conduce para contactar servicios de emergencia."
+    "explanation": "Nebraska prohíbe leer, escribir o enviar mensajes mientras se conduce, pero los adultos todavía pueden hacer llamadas de voz con el teléfono en la mano. Los conductores con permiso o licencia provisional no pueden usar el teléfono en absoluto."
   },
   {
     "type": "State-Specific",
@@ -18386,14 +18386,14 @@
     "state": "NE",
     "questionId": "NE-034",
     "category": "stateUnique",
-    "question": "¿A qué distancia debe cambiar las luces delanteras de altas a bajas en Nebraska?",
-    "optionA": "100 pies de un vehículo que se aproxima",
-    "optionB": "200 pies de un vehículo que se aproxima",
-    "optionC": "300 pies de un vehículo que se aproxima",
-    "optionD": "500 pies de un vehículo que se aproxima",
+    "question": "¿A qué distancia debe bajar las luces altas al seguir a otro vehículo en Nebraska?",
+    "optionA": "100 pies detrás del vehículo",
+    "optionB": "200 pies detrás del vehículo",
+    "optionC": "300 pies detrás del vehículo",
+    "optionD": "500 pies detrás del vehículo",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las luces altas deben bajarse a luces bajas a 200 pies de un vehículo que se aproxima de frente."
+    "explanation": "La ley de Nebraska exige que los conductores bajen las luces cuando siguen a otro vehículo a menos de 200 pies. Las luces altas desde atrás pueden encandilar al conductor de adelante a través de los espejos."
   },
   {
     "type": "State-Specific",
@@ -18624,14 +18624,14 @@
     "state": "NH",
     "questionId": "NH-011",
     "category": "gdlLicensing",
-    "question": "¿Qué deben completar los conductores menores de 18 años antes de obtener una licencia en New Hampshire?",
-    "optionA": "Un permiso de aprendizaje de seis meses",
-    "optionB": "Un formulario de prueba de empleo",
-    "optionC": "Educación vial y 40 horas supervisadas",
-    "optionD": "20 horas registradas, sin educación vial",
+    "question": "¿En qué plazo debe un nuevo residente obtener una licencia de conducir de New Hampshire?",
+    "optionA": "En 10 días",
+    "optionB": "En 30 días",
+    "optionC": "En 60 días",
+    "optionD": "En 6 meses",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "New Hampshire no tiene permiso de aprendizaje. Los solicitantes menores de 18 años deben aprobar un curso de educación vial aprobado y registrar 40 horas de manejo supervisado, 10 de ellas de noche."
+    "explanation": "Una persona que se muda a New Hampshire y conduce debe obtener una licencia de conducir de New Hampshire dentro de los 60 días de establecer su residencia. La licencia de otro estado debe entregarse."
   },
   {
     "type": "State-Specific",
@@ -18836,12 +18836,12 @@
     "category": "duiStateLaws",
     "question": "¿Qué sucede si un conductor menor de 21 años tiene una concentración de alcohol en sangre entre 0.02% y 0.08% en New Hampshire?",
     "optionA": "Solo advertencia para la primera infracción",
-    "optionB": "Mismas penalidades que cualquier DWI estándar",
+    "optionB": "Sin penalidad por debajo de 0.08%",
     "optionC": "Suspensión más larga que conductores mayores de 21",
     "optionD": "Suspensión y penalidades estándar de DWI",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Un conductor menor de 21 años con un BAC entre 0.02% y 0.08% enfrenta tanto una suspensión de licencia como las penalidades estándar de DWI."
+    "explanation": "En New Hampshire, un conductor menor de 21 años con un BAC de 0.02% o más puede ser acusado de DWI, con suspensión de la licencia y las penalidades estándar de DWI. El límite de 0.08% solo se aplica a los adultos."
   },
   {
     "type": "State-Specific",
@@ -19101,13 +19101,13 @@
     "questionId": "NJ-005",
     "category": "gdlLicensing",
     "question": "¿Qué sucede si un titular de licencia provisional viola las restricciones GDL en New Jersey?",
-    "optionA": "Debe reiniciar el período provisional",
+    "optionA": "Una multa de $100",
     "optionB": "La licencia será revocada permanentemente",
     "optionC": "Debe reiniciar desde el permiso de aprendizaje",
     "optionD": "Se creará un registro criminal",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Violar las restricciones GDL como titular de licencia provisional requiere reiniciar todo el período provisional."
+    "explanation": "Violar cualquier restricción GDL como titular de permiso o de licencia provisional en New Jersey conlleva una multa de $100. No reinicia el período provisional ni crea un registro criminal."
   },
   {
     "type": "State-Specific",
@@ -19172,12 +19172,12 @@
     "category": "gdlLicensing",
     "question": "¿Qué excepción permite a los conductores provisionales manejar durante las horas de toque de queda en New Jersey?",
     "optionA": "Solo eventos sociales permitidos",
-    "optionB": "Trabajo, escuela, religioso, emergencia",
+    "optionB": "Trabajo o motivos religiosos, con una carta",
     "optionC": "Cualquier momento con pasajeros aquí",
     "optionD": "No se permiten excepciones aquí",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los conductores provisionales pueden conducir durante las horas de toque de queda solo para trabajo, escuela, actividades religiosas o emergencias."
+    "explanation": "Los conductores provisionales de New Jersey pueden conducir durante el toque de queda de 11:01 PM a 5 AM solo por trabajo o motivos religiosos, con una carta en papel membretado oficial. Los eventos sociales no son una excepción."
   },
   {
     "type": "State-Specific",
@@ -19198,14 +19198,14 @@
     "state": "NJ",
     "questionId": "NJ-012",
     "category": "gdlLicensing",
-    "question": "¿Por cuántos años debe haber estado licenciado un conductor supervisor en New Jersey?",
-    "optionA": "Mínimo 1 año",
-    "optionB": "Mínimo 2 años",
-    "optionC": "Mínimo 5 años",
-    "optionD": "Al menos 3 años",
+    "question": "¿Cuántas horas de instrucción al volante con un instructor con licencia exige New Jersey para el titular de un permiso especial de aprendizaje?",
+    "optionA": "Al menos 3 horas",
+    "optionB": "Al menos 4 horas",
+    "optionC": "Al menos 10 horas",
+    "optionD": "Al menos 6 horas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Un conductor supervisor debe haber estado licenciado durante al menos 3 años."
+    "explanation": "New Jersey exige 6 horas de instrucción al volante en un auto de doble control con un instructor con licencia. Esto es aparte de las 50 horas de práctica supervisada."
   },
   {
     "type": "State-Specific",
@@ -19401,7 +19401,7 @@
     "optionD": "Hasta los 5 años o 48 pulgadas de alto",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "En Nueva Jersey, los niños deben estar asegurados en un sistema de retención infantil o asiento elevado adecuado hasta que cumplan 8 años o miden 57 pulgadas de altura. Posteriormente deberán utilizar el cinturón de seguridad del vehículo."
+    "explanation": "Un niño debe viajar en un asiento elevador hasta cumplir 8 años o medir 57 pulgadas, lo que ocurra primero. Después, el cinturón de seguridad debe ajustarse correctamente."
   },
   {
     "type": "State-Specific",
@@ -20024,14 +20024,14 @@
     "state": "NM",
     "questionId": "NM-031",
     "category": "stateUnique",
-    "question": "¿Cuál es el límite de velocidad predeterminado en las carreteras donde no se indica ningún límite de velocidad en Nuevo México?",
-    "optionA": "45 mph en caminos no señalizados",
-    "optionB": "65 mph en caminos no señalizados",
-    "optionC": "55 mph en caminos no señalizados",
-    "optionD": "35 mph en caminos no señalizados",
+    "question": "¿Cuál es el límite de velocidad en un camino de condado de Nuevo México sin límite de velocidad indicado?",
+    "optionA": "45 mph",
+    "optionB": "65 mph",
+    "optionC": "55 mph",
+    "optionD": "35 mph",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El límite de velocidad predeterminado en cualquier carretera donde no se indique ningún límite de velocidad en Nuevo México es de 55 mph."
+    "explanation": "Desde 2016, la ley de Nuevo México fija 55 mph en los caminos de condado que no tienen un límite indicado. Los distritos comerciales y residenciales tienen 30 mph por defecto."
   },
   {
     "type": "State-Specific",
@@ -20290,14 +20290,14 @@
     "state": "NV",
     "questionId": "NV-010",
     "category": "gdlLicensing",
-    "question": "¿Qué alternativa permite obtener una licencia completa antes de los 18 años en Nevada?",
-    "optionA": "Completar curso de capacitación avanzada para conductores",
-    "optionB": "Licencia intermedia 1 año sin infracciones",
-    "optionC": "Aprobar un examen de manejo avanzado exitosamente",
-    "optionD": "Documentación de aprobación de padre o tutor",
+    "question": "¿Cuándo termina en Nevada el toque de queda de 10 PM a 5 AM para conductores adolescentes?",
+    "optionA": "Tras 6 meses de manejo",
+    "optionB": "Cuando el conductor cumple 18 años",
+    "optionC": "Tras 1 año sin infracciones",
+    "optionD": "Con una nota firmada por un padre",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los conductores que mantienen una licencia intermedia durante un año sin infracciones pueden obtener una licencia completa antes de los 18 años."
+    "explanation": "El toque de queda para adolescentes de Nevada sigue vigente hasta que el conductor cumple 18 años, sin importar cuándo se emitió la licencia. Un historial limpio o una nota de un padre no lo terminan antes."
   },
   {
     "type": "State-Specific",
@@ -20587,11 +20587,11 @@
     "question": "¿Cuándo se requieren las luces delanteras en Nevada?",
     "optionA": "Solo al conducir de noche en carreteras",
     "optionB": "Solo en condiciones de mal tiempo presentes",
-    "optionC": "Atardecer/amanecer +/-30 min, baja visibilidad",
+    "optionC": "Media hora tras el atardecer hasta antes del amanecer",
     "optionD": "Solo en autopistas y carreteras presentes",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras se requieren desde la puesta del sol hasta el amanecer y dentro de 30 minutos de cualquiera de los dos, así como siempre que la visibilidad esté reducida."
+    "explanation": "Nevada exige los faros desde media hora después del atardecer hasta media hora antes del amanecer, y siempre que haya poca luz o no se puedan ver personas y vehículos a 1,000 pies."
   },
   {
     "type": "State-Specific",
@@ -20850,14 +20850,14 @@
     "state": "NY",
     "questionId": "NY-010",
     "category": "gdlLicensing",
-    "question": "¿Cuántas horas de práctica de conducción nocturna se requieren para una licencia junior en New York?",
-    "optionA": "10 horas nocturnas",
-    "optionB": "15 de 50 horas totales",
-    "optionC": "20 horas nocturnas",
-    "optionD": "No se requiere nocturna",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "De las 50 horas totales requeridas de práctica supervisada, al menos 15 horas deben completarse de noche."
+    "question": "¿En qué horario puede conducir sin un conductor supervisor el titular de una licencia junior en el norte del estado de New York?",
+    "optionA": "De 5 AM a 9 PM",
+    "optionB": "De 6 AM a medianoche",
+    "optionC": "A cualquier hora del día",
+    "optionD": "Solo de 9 PM a 5 AM",
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "En el norte del estado, una licencia junior le permite conducir sin supervisor de 5 AM a 9 PM. De 9 PM a 5 AM necesita un supervisor, salvo en viajes directos entre la casa y el trabajo o la escuela."
   },
   {
     "type": "State-Specific",
@@ -21242,14 +21242,14 @@
     "state": "NY",
     "questionId": "NY-038",
     "category": "stateUnique",
-    "question": "¿Pueden los conductores de autobuses escolares girar a la derecha en rojo en New York?",
-    "optionA": "Sí, después de detenerse primero",
-    "optionB": "No, nunca está permitido",
-    "optionC": "Sí, si no hay estudiantes a bordo",
+    "question": "¿Cuándo puede un autobús escolar de New York girar a la derecha en rojo donde se permiten esos giros?",
+    "optionA": "En cualquier momento, tras detenerse",
+    "optionB": "Nunca, bajo ninguna condición",
+    "optionC": "Solo cuando no hay estudiantes a bordo",
     "optionD": "Solo en áreas rurales",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "A los conductores de autobuses escolares nunca se les permite girar a la derecha en rojo."
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Según VTL 1111(d)(5), un autobús escolar que transporta estudiantes no puede avanzar con una luz roja fija. Sin estudiantes a bordo, puede girar a la derecha en rojo donde el resto del tráfico puede hacerlo."
   },
   {
     "type": "State-Specific",
@@ -21315,11 +21315,11 @@
     "question": "¿Quién puede supervisar a un titular de permiso temporal de 16 años de medianoche a 6 AM en Ohio?",
     "optionA": "Cualquier conductor licenciado mayor de 21",
     "optionB": "Solo un instructor de manejo",
-    "optionC": "Padre/tutor/adulto aprobado",
+    "optionC": "Padre, tutor o custodio",
     "optionD": "Cualquier miembro de familia con licencia",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Entre medianoche y las 6 AM, un titular de permiso de 16 años debe ser supervisado por un padre, tutor o adulto aprobado."
+    "explanation": "De medianoche a 6 AM, un titular de permiso menor de 18 años en Ohio debe ir acompañado de un padre, tutor o custodio con licencia sentado a su lado. Otro adulto con licencia de 21 años o más solo puede supervisar en otros horarios."
   },
   {
     "type": "State-Specific",
@@ -21802,14 +21802,14 @@
     "state": "OH",
     "questionId": "OH-038",
     "category": "stateUnique",
-    "question": "¿Cuál es el límite máximo de velocidad en autopistas interestatales rurales en Ohio?",
-    "optionA": "65 mph",
-    "optionB": "70 mph",
-    "optionC": "75 mph",
-    "optionD": "60 mph",
+    "question": "¿Cuál es el límite de velocidad en un callejón dentro de un municipio de Ohio a menos que se indique otro?",
+    "optionA": "25 mph",
+    "optionB": "15 mph",
+    "optionC": "20 mph",
+    "optionD": "10 mph",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El límite máximo de velocidad en las autopistas interestatales rurales es 70 mph."
+    "explanation": "ORC 4511.21(B)(7) fija 15 mph en todos los callejones dentro de una corporación municipal. El límite de 25 mph se aplica a otras calles de un municipio."
   },
   {
     "type": "State-Specific",
@@ -21830,14 +21830,14 @@
     "state": "OH",
     "questionId": "OH-040",
     "category": "stateUnique",
-    "question": "En Ohio, ¿qué debe hacer cuando los limpiaparabrisas están activados debido a la lluvia, la nieve o la niebla?",
-    "optionA": "Reduzca la velocidad siempre en 10 mph",
-    "optionB": "Utilice únicamente luces de estacionamiento por ahora",
-    "optionC": "Deténgase hasta que las condiciones mejoren",
-    "optionD": "Enciende tus luces también",
+    "question": "¿Cuál es el límite de velocidad de Ohio en vías rápidas rurales sin semáforos a menos que se indique otro?",
+    "optionA": "55 mph",
+    "optionB": "60 mph",
+    "optionC": "70 mph",
+    "optionD": "65 mph",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La ley de Ohio exige que los faros estén encendidos siempre que se utilicen los limpiaparabrisas debido a precipitaciones o visibilidad reducida."
+    "explanation": "ORC 4511.21(B)(13) fija 65 mph en las vías rápidas rurales sin semáforos. Las autopistas rurales son de 70 mph, y las vías rápidas rurales con semáforos de 60 mph."
   },
   {
     "type": "State-Specific",
@@ -21942,14 +21942,14 @@
     "state": "OK",
     "questionId": "OK-008",
     "category": "gdlLicensing",
-    "question": "¿Cuándo puede un titular de licencia intermedia obtener una licencia sin restricciones en Oklahoma?",
-    "optionA": "Inmediatamente a los 18 años",
-    "optionB": "A los 19 años sin importar las infracciones",
-    "optionC": "A los 16 años con educación del conductor",
-    "optionD": "A los 17 años con 6 meses sin infracciones",
+    "question": "Con educación vial, ¿a qué edad lo antes posible puede un adolescente de Oklahoma obtener una licencia sin restricciones?",
+    "optionA": "18 años",
+    "optionB": "17 años",
+    "optionC": "16 años",
+    "optionD": "16½, con 180 días sin condenas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Un titular de licencia intermedia puede obtener una licencia sin restricciones a los 17 años después de mantener un récord sin infracciones durante 6 meses."
+    "explanation": "Service Oklahoma permite que un graduado de educación vial obtenga una licencia sin restricciones a los 16½ años sin condenas de tráfico en los 180 días anteriores. Sin educación vial, el mínimo es 17 años con un año de licencia intermedia."
   },
   {
     "type": "State-Specific",
@@ -21970,14 +21970,14 @@
     "state": "OK",
     "questionId": "OK-010",
     "category": "gdlLicensing",
-    "question": "¿Qué documentación se requiere para conductores menores de 19 que solicitan un permiso en Oklahoma?",
+    "question": "¿Qué documentación se requiere para conductores menores de 18 años que solicitan un permiso en Oklahoma?",
     "optionA": "Solo certificado de nacimiento",
     "optionB": "Inscripción o graduación",
     "optionC": "Verificación de empleo",
     "optionD": "Solo formulario de consentimiento de los padres",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los conductores menores de 19 años que solicitan un permiso deben proporcionar prueba de inscripción escolar o graduación."
+    "explanation": "Según 47 O.S. 6-107.3, los solicitantes menores de 18 años deben demostrar que están inscritos en la escuela o que se graduaron u obtuvieron un equivalente antes de que se emita un permiso o licencia."
   },
   {
     "type": "State-Specific",
@@ -22099,11 +22099,11 @@
     "question": "¿Cuál es el límite legal de BAC para conductores menores de 21 en Oklahoma?",
     "optionA": "0.08%",
     "optionB": "0.04%",
-    "optionC": "0.02%",
-    "optionD": "Tolerancia cero",
+    "optionC": "Cualquier cantidad medible",
+    "optionD": "0.05%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El límite legal de BAC para conductores menores de 21 años es 0.02%."
+    "explanation": "Oklahoma tiene tolerancia cero para conductores menores de 21 años: cualquier cantidad medible de alcohol puede llevar a un cargo de DUI. El límite de 0.08% se aplica a los adultos."
   },
   {
     "type": "State-Specific",
@@ -22320,14 +22320,14 @@
     "state": "OK",
     "questionId": "OK-035",
     "category": "stateUnique",
-    "question": "¿Cuál es el requisito de visibilidad de luces delanteras en Oklahoma?",
-    "optionA": "Visibilidad de 500 feet",
-    "optionB": "Visibilidad de 800 feet",
-    "optionC": "Visibilidad menor a 1,000 feet",
-    "optionD": "Solo cuando esté completamente oscuro",
+    "question": "¿A qué distancia de una señal de alto debe estacionar en Oklahoma?",
+    "optionA": "Al menos 15 pies",
+    "optionB": "Al menos 20 pies",
+    "optionC": "Al menos 30 pies",
+    "optionD": "Al menos 50 pies",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras se requieren cuando la visibilidad es menor a 1,000 pies."
+    "explanation": "Service Oklahoma indica que es ilegal estacionar a menos de 30 pies de una señal de alto. La regla de 15 pies es para las bocas de incendios y la de 20 pies para los cruces peatonales."
   },
   {
     "type": "State-Specific",
@@ -22544,14 +22544,14 @@
     "state": "OR",
     "questionId": "OR-011",
     "category": "gdlLicensing",
-    "question": "¿Qué requisito se aplica al asiento delantero al supervisar a un titular de permiso de aprendizaje en Oregon?",
-    "optionA": "El supervisor puede estar en cualquier lugar del vehículo",
-    "optionB": "No se necesita supervisión durante el día",
-    "optionC": "Debe sentarse en el asiento del pasajero delantero",
-    "optionD": "Supervisor solo necesario en autopistas",
+    "question": "¿Cuánto tiempo debe haber tenido licencia un supervisor para que cuenten las horas de práctica en Oregon?",
+    "optionA": "Al menos un año",
+    "optionB": "Al menos cinco años",
+    "optionC": "Al menos tres años",
+    "optionD": "Cualquier tiempo",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Oregon requiere que el conductor supervisor ocupe el asiento del pasajero delantero en todo momento para que pueda dar orientación inmediata o tomar el volante en una emergencia."
+    "explanation": "ORS 807.065 cuenta las horas de práctica solo cuando el supervisor tiene al menos 21 años y ha tenido una licencia válida durante al menos tres años."
   },
   {
     "type": "State-Specific",
@@ -22614,14 +22614,14 @@
     "state": "OR",
     "questionId": "OR-016",
     "category": "cellPhone",
-    "question": "¿Qué restricción de teléfono celular se aplica a todos los conductores menores de 18 años en Oregon?",
-    "optionA": "Solo se prohíbe el uso manual",
-    "optionB": "Solo se prohíbe enviar mensajes de texto",
-    "optionC": "Se permiten dispositivos de manos libres",
-    "optionD": "Todo uso de dispositivos prohibido",
+    "question": "¿Puede sostener un teléfono mientras está detenido en una luz roja en Oregon?",
+    "optionA": "Sí, mientras está detenido en la luz",
+    "optionB": "Solo para leer un mensaje",
+    "optionC": "Solo para usar la navegación",
+    "optionD": "No, eso todavía cuenta como conducir",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Oregon aplica una prohibición total de todo uso de dispositivos móviles, incluyendo manos libres, para conductores menores de 18 años, reconociendo que los conductores nuevos no pueden manejar de forma segura ni siquiera las distracciones de manos libres."
+    "explanation": "ORS 811.507 considera que estar detenido temporalmente por el tráfico o por un semáforo es conducir, así que sostener un teléfono ahí es ilegal. Puede usarlo una vez que se haya salido del camino o esté estacionado."
   },
   {
     "type": "State-Specific",
@@ -22691,7 +22691,7 @@
     "optionD": "0.08% o nivel superior",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Oregon tiene una política de tolerancia cero para conductores menores de edad: cualquier cantidad detectable de alcohol en un conductor menor de 21 años es motivo de un cargo de DUII y de suspensión de la licencia."
+    "explanation": "Según ORS 813.300, para un conductor menor de 21 años cualquier cantidad de alcohol cuenta como estar bajo la influencia a efectos del consentimiento implícito, lo que conlleva la suspensión de la licencia. Un cargo de DUII requiere 0.08% o prueba de que estaba afectado."
   },
   {
     "type": "State-Specific",
@@ -23384,14 +23384,14 @@
     "state": "PA",
     "questionId": "PA-031",
     "category": "stateUnique",
-    "question": "¿Cuándo debes encender las luces delanteras mientras conduces en Pennsylvania?",
-    "optionA": "Solo durante la noche",
-    "optionB": "Solo durante períodos de lluvia",
-    "optionC": "Al usar limpiaparabrisas",
-    "optionD": "Solo en condiciones de niebla",
+    "question": "¿A qué distancia de una boca de incendios debe estacionar en Pennsylvania?",
+    "optionA": "Al menos 5 pies",
+    "optionB": "Al menos 10 pies",
+    "optionC": "Al menos 15 pies",
+    "optionD": "Al menos 25 pies",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Las luces delanteras deben encenderse siempre que se usen los limpiaparabrisas."
+    "explanation": "El manual del conductor de Pennsylvania indica no estacionar nunca a menos de 15 pies de una boca de incendios. También prohíbe estacionar a menos de 20 pies de un cruce peatonal en una intersección."
   },
   {
     "type": "State-Specific",
@@ -23566,14 +23566,14 @@
     "state": "RI",
     "questionId": "RI-004",
     "category": "gdlLicensing",
-    "question": "¿Cuáles son las restricciones de conducción nocturna para titulares de permiso en Rhode Island?",
-    "optionA": "No conducir después de las 10 PM en fines de semana",
-    "optionB": "No conducir después de medianoche ningún día",
-    "optionC": "Sin restricciones con supervisor",
-    "optionD": "No conducir 11 PM-5 AM sin padre/madre",
+    "question": "¿Quién más puede sentarse en el asiento delantero mientras conduce un titular de permiso de Rhode Island?",
+    "optionA": "Cualquier adulto con licencia",
+    "optionB": "Un hermano mayor de 16 años",
+    "optionC": "Cualquier pasajero con cinturón",
+    "optionD": "Nadie más que el supervisor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los titulares de permiso no pueden conducir entre las 11 PM y las 5 AM sin un padre, madre o tutor presente."
+    "explanation": "Rhode Island exige que el conductor supervisor se siente al lado del titular del permiso, y nadie más que el supervisor puede ir en el asiento delantero."
   },
   {
     "type": "State-Specific",
@@ -23667,11 +23667,11 @@
     "question": "¿Cuánto tiempo es válido un permiso de instrucción de Rhode Island?",
     "optionA": "6 meses desde la fecha de emisión",
     "optionB": "2 años desde la fecha de emisión",
-    "optionC": "Válido 1 año o hasta cumplir 18 años",
+    "optionC": "1 año desde la fecha de emisión",
     "optionD": "Hasta que se apruebe el examen de manejo",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un permiso de instrucción es válido por 1 año desde la fecha de emisión o hasta que el titular cumpla 18 años, lo que ocurra primero."
+    "explanation": "Según R.I. Gen. Laws 31-10-6, un permiso de instrucción limitado es válido por un año y se puede extender por un tiempo razonable si se demuestra una dificultad."
   },
   {
     "type": "State-Specific",
@@ -24028,14 +24028,14 @@
     "state": "RI",
     "questionId": "RI-037",
     "category": "stateUnique",
-    "question": "¿Qué exención existe para la regla de autobús escolar en carreteras divididas en Rhode Island?",
-    "optionA": "No detenerse si está en lado opuesto de autopista dividida",
-    "optionB": "Detenerse solo durante horas matutinas antes del mediodía",
-    "optionC": "Detenerse solo para estudiantes de primaria menores de 12",
-    "optionD": "No existen exenciones en la ley de Rhode Island",
+    "question": "¿Cuánto tiempo debe tener un adolescente de Rhode Island una licencia provisional antes de obtener una licencia completa?",
+    "optionA": "Al menos 12 meses",
+    "optionB": "Al menos 6 meses",
+    "optionC": "Al menos 18 meses",
+    "optionD": "Al menos 24 meses",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "En una carretera dividida, los conductores que circulan en el lado opuesto de un autobús escolar detenido no están obligados a detenerse."
+    "explanation": "Una licencia de operador completa exige haber tenido una licencia provisional limitada durante al menos 12 meses sin infracciones de movimiento ni de cinturón de seguridad en los seis meses anteriores."
   },
   {
     "type": "State-Specific",
@@ -24140,14 +24140,14 @@
     "state": "SC",
     "questionId": "SC-005",
     "category": "gdlLicensing",
-    "question": "¿Cuáles son las restricciones de manejo nocturno para titulares de licencia condicional de 15-16 años en South Carolina?",
-    "optionA": "No conducir solo de 6 PM a 6 AM",
+    "question": "¿Cuáles son las restricciones de manejo nocturno para titulares de licencia condicional en South Carolina?",
+    "optionA": "No conducir solo después de las 6 PM (8 PM en horario de verano)",
     "optionB": "No conducir solo de 10 PM a 5 AM",
     "optionC": "Sin restricciones si está con padre",
     "optionD": "No conducir después de medianoche solamente",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los titulares de licencia condicional de 15–16 años no pueden conducir solos de 6 PM a 6 AM."
+    "explanation": "Un titular de licencia condicional solo puede conducir solo de 6 AM a 6 PM, o hasta las 8 PM durante el horario de verano. Más tarde, necesita un conductor con licencia de 21 años o más, y después de medianoche una persona que figure en su formulario de consentimiento."
   },
   {
     "type": "State-Specific",
@@ -24171,11 +24171,11 @@
     "question": "¿Cuándo puede un conductor obtener privilegios de manejo completos sin restricciones en South Carolina?",
     "optionA": "Edad 16 con curso de educación vial",
     "optionB": "Inmediatamente al cumplir 19 años",
-    "optionC": "Edad 17 con 6 meses sin infracciones o 18",
+    "optionC": "16 tras 1 año sin infracciones, o a los 17",
     "optionD": "Edad 21 independientemente de infracciones",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los privilegios de manejo completos sin restricciones están disponibles a los 17 años con seis meses sin infracciones, o automáticamente a los 18 años."
+    "explanation": "El SCDMV otorga privilegios completos a los 16 años a los conductores que han tenido una licencia condicional o restringida especial durante un año sin infracciones ni choques en los que tuvieron la culpa. De lo contrario, las restricciones siguen por un año después de la última infracción o hasta los 17 años."
   },
   {
     "type": "State-Specific",
@@ -24196,14 +24196,14 @@
     "state": "SC",
     "questionId": "SC-009",
     "category": "gdlLicensing",
-    "question": "¿Qué documentación se requiere para conductores menores de 19 años que solicitan un permiso en South Carolina?",
-    "optionA": "Prueba de inscripción escolar o graduación",
+    "question": "¿Qué requisito escolar se aplica a los solicitantes de licencia menores de 17 años en South Carolina?",
+    "optionA": "Estar inscrito actualmente en la escuela",
     "optionB": "Documentos de verificación de empleo",
     "optionC": "Solo formulario de consentimiento parental",
     "optionD": "Solo certificado de nacimiento",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los conductores menores de 19 años que solicitan un permiso deben presentar prueba de inscripción escolar o graduación."
+    "explanation": "El SCDMV exige que los solicitantes menores de 17 años estén inscritos en la escuela, cumplan las leyes de asistencia y no estén suspendidos ni expulsados."
   },
   {
     "type": "State-Specific",
@@ -24658,28 +24658,28 @@
     "state": "SD",
     "questionId": "SD-002",
     "category": "gdlLicensing",
-    "question": "¿Cuánto tiempo debe mantener un permiso de instrucción antes de solicitar un permiso restringido de menor en South Dakota?",
+    "question": "Sin educación vial, ¿cuánto tiempo debe tener un permiso de instrucción antes de un permiso restringido de menor en South Dakota?",
     "optionA": "Mínimo 90 días",
-    "optionB": "Mínimo 180 días",
-    "optionC": "Mínimo 270 días",
+    "optionB": "Mínimo 275 días",
+    "optionC": "Mínimo 365 días",
     "optionD": "Mínimo 120 días",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Un permiso de instrucción debe mantenerse durante un mínimo de 180 días antes de solicitar un permiso restringido de menor."
+    "explanation": "Para permisos emitidos después del 1 de julio de 2020, South Dakota exige 275 días con permiso de instrucción antes de un permiso restringido de menor. Los graduados de educación vial necesitan 180 días."
   },
   {
     "type": "State-Specific",
     "state": "SD",
     "questionId": "SD-003",
     "category": "gdlLicensing",
-    "question": "¿A qué edad puede obtener un permiso restringido de menor en South Dakota?",
-    "optionA": "14 años de edad",
+    "question": "Con educación vial, ¿cuál es la edad mínima para obtener un permiso restringido de menor en South Dakota?",
+    "optionA": "16 años de edad",
     "optionB": "15 años de edad",
-    "optionC": "14 años, 3 meses",
+    "optionC": "14 años, 6 meses",
     "optionD": "13 años, 6 meses",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un permiso restringido de menor está disponible a los 14 años y 3 meses de edad."
+    "explanation": "El permiso de instrucción está disponible a los 14 años, y un graduado de educación vial puede pasar a un permiso restringido de menor después de 180 días, así que lo más pronto es a los 14 años y 6 meses aproximadamente."
   },
   {
     "type": "State-Specific",
@@ -24714,14 +24714,14 @@
     "state": "SD",
     "questionId": "SD-006",
     "category": "gdlLicensing",
-    "question": "¿Cuántas horas de conducción supervisada se recomiendan antes de la prueba para obtener una licencia en South Dakota?",
+    "question": "¿Cuántas horas de conducción supervisada debe completar un titular de permiso de instrucción en South Dakota?",
     "optionA": "20 horas totales",
     "optionB": "50 horas totales",
     "optionC": "30 horas totales",
     "optionD": "40 horas totales",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Se recomiendan 50 horas totales de conducción supervisada antes de la prueba para obtener una licencia."
+    "explanation": "South Dakota exige al menos 50 horas supervisadas, incluidas 10 de noche y 10 con mal tiempo, certificadas por un padre o tutor antes de un permiso restringido de menor."
   },
   {
     "type": "State-Specific",
@@ -24770,14 +24770,14 @@
     "state": "SD",
     "questionId": "SD-010",
     "category": "gdlLicensing",
-    "question": "En Dakota del Sur, ¿cuánto tiempo debe tener un permiso restringido para menores antes de obtener una licencia de conducir si completó educación vial?",
+    "question": "¿Cuánto tiempo debe tener un permiso restringido de menor antes de obtener una licencia de operador en South Dakota?",
     "optionA": "1 mes",
     "optionB": "3 meses",
     "optionC": "6 meses",
     "optionD": "9 meses",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "El permiso restringido para menores debe tenerse durante 6 meses, o 3 meses si completó un curso aprobado de educación vial, sin infracciones de tránsito en ese tiempo."
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Según SDCL 32-12-12, un menor de al menos 16 años puede obtener una licencia de operador después de tener un permiso restringido de menor durante seis meses sin condenas de tráfico en ese tiempo. La educación vial solo acorta la espera del permiso de instrucción."
   },
   {
     "type": "State-Specific",
@@ -24882,14 +24882,14 @@
     "state": "SD",
     "questionId": "SD-018",
     "category": "cellPhone",
-    "question": "¿Puede usar funciones de voz a texto mientras conduce en South Dakota?",
-    "optionA": "Solo si es manos libres",
-    "optionB": "Permitido para todos los conductores",
+    "question": "¿Puede un conductor adulto con licencia completa en South Dakota usar voz a texto mientras conduce?",
+    "optionA": "No, nunca está permitido",
+    "optionB": "Sí, en modo de voz manos libres",
     "optionC": "Solo para emergencias",
-    "optionD": "No permitido, se considera mensajes de texto",
+    "optionD": "Solo cuando está detenido en un semáforo",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las funciones de voz a texto están permitidas para todos los conductores y no se tratan como mensajes de texto."
+    "explanation": "SDCL 32-26-47.1 permite usar un dispositivo en modo activado por voz o manos libres. Los titulares de permiso de instrucción y de permiso restringido de menor no pueden usar ningún dispositivo inalámbrico mientras conducen."
   },
   {
     "type": "State-Specific",
@@ -25540,14 +25540,14 @@
     "state": "TN",
     "questionId": "TN-025",
     "category": "duiStateLaws",
-    "question": "¿Qué dispositivo se requiere para todas las condenas por DUI en Tennessee?",
+    "question": "¿Qué debe usar en Tennessee un infractor de DUI por primera vez para seguir conduciendo durante la revocación?",
     "optionA": "Dispositivo de bloqueo de encendido",
     "optionB": "Brazalete de monitoreo de tobillo",
     "optionC": "Analizador de aliento portátil",
     "optionD": "Sistema de rastreo GPS",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Se requiere un dispositivo de bloqueo de encendido para todas las condenas por DUI."
+    "explanation": "Un primer DUI en Tennessee conlleva una revocación de un año. Para seguir conduciendo durante ella, el infractor debe usar un dispositivo de bloqueo de encendido durante todo el período de revocación."
   },
   {
     "type": "State-Specific",
@@ -25708,56 +25708,56 @@
     "state": "TN",
     "questionId": "TN-037",
     "category": "stateUnique",
-    "question": "¿Cuál es el propósito de la 'ley de empuje lento' de Tennessee para la conducción por el carril izquierdo?",
-    "optionA": "Exigir límites mínimos de velocidad en todas las carreteras",
-    "optionB": "Evitar la conducción lenta por el carril izquierdo en autopistas de varios carriles",
-    "optionC": "Prohibir la circulación de camiones por el carril izquierdo",
-    "optionD": "Requerir rebasar por la derecha",
+    "question": "¿Cuánto espacio debe dejar al rebasar a un ciclista en Tennessee?",
+    "optionA": "Al menos 1 pie",
+    "optionB": "Al menos 3 pies",
+    "optionC": "Al menos 6 pies",
+    "optionD": "Ninguna distancia fija",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La ley de velocidad lenta de Tennessee prohíbe conducir a menos de 55 mph en el carril izquierdo de las autopistas interestatales y de varios carriles para mantener el tráfico fluido y reducir los incidentes de agresividad al volante."
+    "explanation": "El manual del conductor de Tennessee indica rebasar a un ciclista despacio, con al menos 3 pies entre usted y la bicicleta, y mantener esa distancia hasta haberlo pasado de forma segura."
   },
   {
     "type": "State-Specific",
     "state": "TN",
     "questionId": "TN-038",
     "category": "stateUnique",
-    "question": "¿Cuándo se requieren faros delanteros incluso durante el día en Tennessee?",
-    "optionA": "Nunca durante el día",
-    "optionB": "Clima inclemente",
-    "optionC": "Solo durante la niebla",
-    "optionD": "Solo durante la nieve",
+    "question": "¿Dónde debe detenerse cuando hay señales intermitentes en un cruce de ferrocarril de Tennessee?",
+    "optionA": "Justo sobre las vías",
+    "optionB": "A menos de 50 pies, no más cerca de 15",
+    "optionC": "Al menos a 100 pies",
+    "optionD": "A menos de 5 pies del riel",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Las luces delanteras se requieren durante el día en condiciones de clima inclemente."
+    "explanation": "En un cruce con dispositivos de señales, Tennessee exige detenerse por completo a menos de 50 pies y no más cerca de 15 pies del riel más cercano, hasta que sea seguro avanzar."
   },
   {
     "type": "State-Specific",
     "state": "TN",
     "questionId": "TN-039",
     "category": "stateUnique",
-    "question": "¿Qué condiciones climáticas requieren uso constante de limpiaparabrisas y faros delanteros en Tennessee?",
-    "optionA": "Solo llovizna ligera",
-    "optionB": "Solo niebla densa",
-    "optionC": "Lluvia, neblina, nieve",
-    "optionD": "Solo aguanieve",
+    "question": "¿A qué distancia de una señal de alto o un semáforo debe estacionar en Tennessee?",
+    "optionA": "Al menos 10 pies",
+    "optionB": "Al menos 20 pies",
+    "optionC": "Al menos 30 pies",
+    "optionD": "Al menos 50 pies",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La lluvia, la neblina y la nieve requieren el uso constante de limpiaparabrisas y luces delanteras."
+    "explanation": "El manual del conductor de Tennessee prohíbe estacionar a menos de 30 pies de un semáforo, una señal de alto u otro dispositivo de control de tráfico. La regla de 50 pies es para los cruces de ferrocarril."
   },
   {
     "type": "State-Specific",
     "state": "TN",
     "questionId": "TN-040",
     "category": "stateUnique",
-    "question": "¿Qué colores de faros delanteros están prohibidos en vehículos que no son de emergencia en Tennessee?",
-    "optionA": "Luces de color ámbar",
-    "optionB": "Luces de color amarillo",
-    "optionC": "Luces de color blanco",
-    "optionD": "Luces azules o verdes",
+    "question": "¿A qué distancia de una boca de incendios debe estacionar en Tennessee?",
+    "optionA": "Al menos 5 pies",
+    "optionB": "Al menos 10 pies",
+    "optionC": "Al menos 25 pies",
+    "optionD": "Al menos 15 pies",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Las luces delanteras azules y verdes están prohibidas en vehículos que no son de emergencia."
+    "explanation": "El manual del conductor de Tennessee prohíbe estacionar a menos de 15 pies de una boca de incendios. También prohíbe estacionar a menos de 20 pies de un cruce peatonal."
   },
   {
     "type": "State-Specific",
@@ -25948,12 +25948,12 @@
     "category": "cellPhone",
     "question": "¿Pueden los conductores novatos menores de 18 años usar dispositivos manos libres en Texas?",
     "optionA": "Sí, si está activado por voz",
-    "optionB": "No, todo uso está prohibido",
-    "optionC": "Solo para emergencias",
+    "optionB": "No, salvo en una emergencia",
+    "optionC": "Solo en carreteras rurales",
     "optionD": "Solo con supervisión",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los conductores menores de 18 años tienen prohibido todo uso del teléfono celular mientras conducen, incluyendo dispositivos de manos libres."
+    "explanation": "El Código de Transporte de Texas 545.424 prohíbe que los conductores menores de 18 años usen cualquier dispositivo de comunicación inalámbrica, incluidos los de manos libres, salvo en una emergencia."
   },
   {
     "type": "State-Specific",
@@ -26254,14 +26254,14 @@
     "state": "TX",
     "questionId": "TX-036",
     "category": "stateUnique",
-    "question": "¿Qué exige la ley de Texas con respecto al carril izquierdo en carreteras de varios carriles?",
-    "optionA": "Se permite cualquier velocidad",
+    "question": "¿Qué exige la ley de Texas sobre el uso de carriles en carreteras de varios carriles?",
+    "optionA": "Cualquier velocidad está bien en cualquier carril",
     "optionB": "El carril izquierdo es solo para HOV",
-    "optionC": "El carril izquierdo es sólo para rebasar",
+    "optionC": "El tráfico más lento debe ir a la derecha",
     "optionD": "No se aplican restricciones",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El Código de Transporte de Texas § 545.051 requiere que el tráfico más lento se mantenga a la derecha. Los conductores deben utilizar el carril izquierdo sólo para adelantar y deben moverse hacia la derecha al ser adelantados."
+    "explanation": "El Código de Transporte de Texas 545.051(b) exige que un conductor que va más lento que el tráfico normal use el carril derecho, salvo al rebasar o al prepararse para girar a la izquierda. Las señales Left Lane for Passing Only añaden la regla donde están colocadas."
   },
   {
     "type": "State-Specific",
@@ -26380,14 +26380,14 @@
     "state": "UT",
     "questionId": "UT-005",
     "category": "gdlLicensing",
-    "question": "¿Qué edad mínima debe tener un conductor supervisor al acompañar a un titular de permiso de aprendizaje?",
+    "question": "¿Qué edad debe tener el supervisor con licencia de un titular de permiso de aprendizaje de Utah de 18 años o más?",
     "optionA": "21 años",
     "optionB": "25 años",
     "optionC": "18 años",
     "optionD": "23 años",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Un conductor supervisor debe tener al menos 21 años de edad al acompañar a un titular de permiso de aprendizaje."
+    "explanation": "Un titular de permiso de aprendizaje de 18 años o más solo puede conducir con un conductor con licencia de al menos 21 años a su lado. Los titulares más jóvenes también pueden conducir con un padre, tutor o instructor aprobado con licencia."
   },
   {
     "type": "State-Specific",
@@ -26478,14 +26478,14 @@
     "state": "UT",
     "questionId": "UT-012",
     "category": "gdlLicensing",
-    "question": "¿A qué edad puedes solicitar una licencia de conducir completa si se cumplen los requisitos?",
+    "question": "¿Cuál es la edad mínima para obtener una licencia de conducir en Utah?",
     "optionA": "15 años",
     "optionB": "17 años",
     "optionC": "18 años",
-    "optionD": "16½ años",
+    "optionD": "16 años",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores que cumplen todos los requisitos pueden solicitar una licencia de conducir completa a los 16½ años."
+    "explanation": "Utah emite licencias de conducir desde los 16 años después de la educación vial, los exámenes y, para solicitantes de 17 años o menos, seis meses con un permiso de aprendizaje. El permiso de aprendizaje está disponible a los 15 años."
   },
   {
     "type": "State-Specific",
@@ -26513,7 +26513,7 @@
     "optionD": "Navegar por internet",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los conductores adultos solo pueden usar llamadas de manos libres mientras operan un vehículo."
+    "explanation": "Utah prohíbe escribir mensajes, enviar correos, marcar y navegar por internet manualmente mientras el vehículo está en movimiento, pero se permiten las llamadas de voz y el uso de manos libres. Las llamadas manos libres son la única opción legal de la lista."
   },
   {
     "type": "State-Specific",
@@ -26562,14 +26562,14 @@
     "state": "UT",
     "questionId": "UT-018",
     "category": "cellPhone",
-    "question": "¿Qué acción con el teléfono es ilegal mientras conduce un vehículo en movimiento en Utah?",
-    "optionA": "Llamadas de voz",
-    "optionB": "Envío manual de mensajes de texto",
-    "optionC": "Ver un mapa de GPS",
-    "optionD": "Hablar manos libres",
+    "question": "¿Cuál de estas acciones puede hacer un conductor de Utah con un teléfono mientras el vehículo está en movimiento?",
+    "optionA": "Leer un mensaje de texto",
+    "optionB": "Ver una aplicación de navegación",
+    "optionC": "Tomar una fotografía",
+    "optionD": "Grabar un video",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Utah prohíbe escribir, marcar o leer mensajes manualmente mientras el vehículo está en movimiento; las llamadas de voz, el uso manos libres y ver el GPS están permitidos."
+    "explanation": "El Código de Utah 41-6a-1716 prohíbe leer mensajes, tomar fotos y grabar video con el teléfono en la mano mientras el vehículo se mueve, pero se permite ver un GPS o una aplicación de navegación."
   },
   {
     "type": "State-Specific",
@@ -26716,14 +26716,14 @@
     "state": "UT",
     "questionId": "UT-029",
     "category": "stateUnique",
-    "question": "¿Quién es responsable de garantizar que todos los ocupantes del vehículo usen el cinturón de seguridad en Utah?",
-    "optionA": "Cada pasajero individual",
+    "question": "En Utah, ¿quién debe asegurarse de que los pasajeros menores de 16 años lleven el cinturón abrochado?",
+    "optionA": "Cada pasajero por su cuenta",
     "optionB": "Sólo pasajeros del asiento delantero",
-    "optionC": "Propietario del vehículo",
+    "optionC": "El propietario del vehículo",
     "optionD": "El conductor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Según la ley de Utah, el conductor es responsable de garantizar que todos los ocupantes del vehículo estén correctamente sujetos con el cinturón de seguridad."
+    "explanation": "El Código de Utah 41-6a-1803 hace responsable al conductor de asegurar a todo pasajero menor de 16 años en un asiento infantil o con cinturón de seguridad. Los pasajeros de 16 años o más deben abrocharse ellos mismos."
   },
   {
     "type": "State-Specific",
@@ -26975,7 +26975,7 @@
     "optionD": "No se permiten pasajeros",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La ley de Virginia restringe a los titulares de licencias provisionales menores de 18 años a no más de un pasajero menor de 21 años, a menos que estén acompañados por un padre o tutor con licencia en el asiento delantero."
+    "explanation": "Hasta los 18 años, un titular de licencia provisional solo puede llevar un pasajero menor de 21 años, sin contar a familiares ni miembros del hogar. Después del primer año, se permiten hasta tres para actividades escolares, con un conductor con licencia de 21 años o más a su lado, o en una emergencia."
   },
   {
     "type": "State-Specific",
@@ -27096,12 +27096,12 @@
     "category": "cellPhone",
     "question": "¿Cuál es la restricción de teléfono celular para conductores menores de 18 años en Virginia?",
     "optionA": "Llamadas en manos libres permitidas",
-    "optionB": "Solo llamadas de emergencia",
+    "optionB": "Solo aplicaciones de navegación",
     "optionC": "Solo está prohibido enviar mensajes de texto",
-    "optionD": "No usar mientras esté en movimiento",
+    "optionD": "Ninguno, salvo emergencia o estacionado",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores menores de 18 años no pueden usar un teléfono celular de ninguna manera mientras el vehículo está en movimiento."
+    "explanation": "Los conductores menores de 18 años no pueden usar un teléfono celular u otro dispositivo inalámbrico, en la mano o manos libres, salvo en una emergencia del conductor o cuando estén legalmente estacionados o detenidos."
   },
   {
     "type": "State-Specific",
@@ -27542,14 +27542,14 @@
     "state": "VT",
     "questionId": "VT-008",
     "category": "gdlLicensing",
-    "question": "¿Cuándo se convierte automáticamente una licencia juvenil en una licencia sin restricciones en Vermont?",
-    "optionA": "Solo a los 17 años",
-    "optionB": "Después de 2 años",
-    "optionC": "Nunca automático",
-    "optionD": "1 año o a los 18 años",
+    "question": "¿Cuándo vence una licencia de operador junior de Vermont?",
+    "optionA": "El día en que cumple 17 años",
+    "optionB": "Un año después de emitida",
+    "optionC": "Nunca vence",
+    "optionD": "La víspera del 2.º cumpleaños tras su emisión",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Una licencia juvenil se convierte automáticamente en una licencia sin restricciones después de 1 año de tenerla o al cumplir 18 años, lo que ocurra primero."
+    "explanation": "Una licencia de operador junior de Vermont vence a la medianoche de la víspera del segundo cumpleaños del titular después de su emisión, así que una emitida a los 16 años vence la noche antes de cumplir 18. Se puede renovar."
   },
   {
     "type": "State-Specific",
@@ -27600,12 +27600,12 @@
     "category": "gdlLicensing",
     "question": "¿Cuánto tiempo después de obtener una licencia junior debe esperar un conductor de Vermont antes de conducir para buscar empleo?",
     "optionA": "6 meses",
-    "optionB": "1 año o hasta los 18 años",
+    "optionB": "1 año después de emitida",
     "optionC": "3 meses",
     "optionD": "2 años",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los titulares de una licencia junior no pueden conducir para trabajar durante un año después de su emisión o hasta que cumplan 18 años, lo que ocurra primero."
+    "explanation": "Según 23 V.S.A. 614(b), una licencia junior no permite conducir para su trabajo ni a cambio de pago durante un año después de emitida. Mover un tractor agrícola entre partes de una granja es una excepción."
   },
   {
     "type": "State-Specific",
@@ -27990,14 +27990,14 @@
     "state": "VT",
     "questionId": "VT-040",
     "category": "stateUnique",
-    "question": "¿Qué define una excepción de autopista dividida para paradas de autobuses escolares en Vermont?",
-    "optionA": "Cualquier mediana pintada",
-    "optionB": "Cuatro o más carriles",
-    "optionC": "Líneas amarillas dobles",
-    "optionD": "Barrera física",
+    "question": "Para un conductor de Vermont con licencia completa, ¿cuántos puntos llevan a la suspensión de la licencia?",
+    "optionA": "6 puntos",
+    "optionB": "8 puntos",
+    "optionC": "12 puntos",
+    "optionD": "10 puntos",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La excepción de autopista dividida para paradas de autobús escolar se aplica solo cuando la autopista está separada por una barrera física."
+    "explanation": "Según 23 V.S.A. 2506, acumular 10 puntos conlleva una suspensión de 10 días, con suspensiones más largas a los 15 y 20 puntos. La revocación por 6 puntos se aplica a los operadores junior."
   },
   {
     "type": "State-Specific",
@@ -28105,11 +28105,11 @@
     "question": "¿Pueden los titulares de permiso de aprendizaje en Washington usar dispositivos de teléfono celular manos libres mientras conducen?",
     "optionA": "Sí, si son mayores de 16 años",
     "optionB": "Sí, solo para navegación",
-    "optionC": "Sí, solo para llamadas de emergencia",
-    "optionD": "No, ningún dispositivo inalámbrico",
+    "optionC": "Sí, solo en luces rojas",
+    "optionD": "No, salvo para reportar una emergencia",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los titulares de permiso de aprendizaje tienen prohibido usar cualquier dispositivo inalámbrico mientras conducen, incluyendo dispositivos de manos libres."
+    "explanation": "Según RCW 46.20.055, un titular de permiso solo puede conducir si no usa un dispositivo inalámbrico, incluidos los de manos libres. La única excepción es para reportar un delito, contactar a los servicios de emergencia o evitar un daño."
   },
   {
     "type": "State-Specific",
@@ -28522,14 +28522,14 @@
     "state": "WA",
     "questionId": "WA-038",
     "category": "stateUnique",
-    "question": "En Washington, ¿a qué distancia de visibilidad debes encender las luces delanteras?",
-    "optionA": "Cuando no puedes ver a 500 pies más adelante",
-    "optionB": "Cuando no puedes ver a 1000 pies más adelante",
-    "optionC": "Cuando no puedes ver a 200 pies más adelante",
-    "optionD": "Sólo cuando esté completamente oscuro",
+    "question": "¿A qué distancia de una boca de incendios debe estacionar en Washington?",
+    "optionA": "Al menos 5 pies",
+    "optionB": "Al menos 15 pies",
+    "optionC": "Al menos 10 pies",
+    "optionD": "Al menos 25 pies",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Washington requiere luces delanteras cuando las personas y vehículos en la carretera no son claramente discernibles a una distancia de 1,000 pies adelante debido a luz insuficiente o condiciones desfavorables."
+    "explanation": "RCW 46.61.570 prohíbe detenerse, quedarse parado o estacionar a menos de 15 pies de una boca de incendios. Algunos estados usan 10 pies, pero Washington usa 15."
   },
   {
     "type": "State-Specific",
@@ -28621,13 +28621,13 @@
     "questionId": "WI-005",
     "category": "gdlLicensing",
     "question": "¿Cuáles son las excepciones al toque de queda nocturno para titulares de licencia probatoria en Wisconsin?",
-    "optionA": "Trabajo, escuela, emergencia",
+    "optionA": "Viajes entre casa, escuela o trabajo",
     "optionB": "Solo actividades religiosas",
     "optionC": "Solo eventos familiares",
     "optionD": "Solo actividades deportivas",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los titulares de licencia probatoria pueden conducir durante las horas de toque de queda por motivos de trabajo, escuela o emergencia."
+    "explanation": "En los primeros nueve meses, un titular de licencia probatoria no puede conducir de medianoche a 5 AM, salvo al viajar entre la casa y la escuela o el trabajo."
   },
   {
     "type": "State-Specific",
@@ -28676,14 +28676,14 @@
     "state": "WI",
     "questionId": "WI-009",
     "category": "gdlLicensing",
-    "question": "¿A qué edad una licencia probatoria se convierte automáticamente en una licencia regular en Wisconsin?",
-    "optionA": "18 años de edad",
-    "optionB": "21 años de edad",
-    "optionC": "19 años de edad",
-    "optionD": "17 años de edad",
+    "question": "¿Cuándo vence una licencia probatoria de Wisconsin?",
+    "optionA": "Dos años después de su próximo cumpleaños",
+    "optionB": "Al cumplir 21 años",
+    "optionC": "Cinco años después de emitida",
+    "optionD": "Después de nueve meses",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Una licencia probatoria se convierte automáticamente en una licencia regular a los 18 años."
+    "explanation": "Una licencia probatoria de Wisconsin vence dos años después del próximo cumpleaños del titular, así que una emitida a los 16 años vence como pronto a los 19. Las restricciones de nueve meses son aparte y se pueden extender hasta los 18."
   },
   {
     "type": "State-Specific",
@@ -28721,11 +28721,11 @@
     "question": "En Wisconsin, ¿cuándo debe encender las luces delanteras?",
     "optionA": "Sólo entre el atardecer y el amanecer",
     "optionB": "Cuando se utilizan limpiaparabrisas",
-    "optionC": "Sólo en caso de lluvia intensa o nieve",
-    "optionD": "Sólo en carreteras rurales de noche",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "La ley de Wisconsin exige que los faros estén encendidos siempre que los limpiaparabrisas estén en uso continuo, además del requisito estándar desde el atardecer hasta el amanecer."
+    "optionC": "Solo cuando está completamente oscuro",
+    "optionD": "Solo en carreteras rurales",
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Wisconsin exige los faros desde media hora después del atardecer hasta media hora antes del amanecer y siempre que no pueda ver a una persona o un vehículo a 500 pies. Usarlos con los limpiaparabrisas se recomienda, pero no se exige."
   },
   {
     "type": "State-Specific",
@@ -28802,14 +28802,14 @@
     "state": "WI",
     "questionId": "WI-018",
     "category": "cellPhone",
-    "question": "¿Qué uso del teléfono prohíbe la ley de Wisconsin a todos los conductores?",
-    "optionA": "Seguir un GPS montado en el tablero",
-    "optionB": "Escribir o enviar un mensaje de texto",
-    "optionC": "Escuchar música",
-    "optionD": "Llamadas de voz manos libres",
+    "question": "En una zona de construcción de carreteras de Wisconsin, ¿cuándo puede usar su teléfono mientras conduce?",
+    "optionA": "Cuando el tráfico avanza lentamente",
+    "optionB": "Solo para reportar una emergencia",
+    "optionC": "Para una llamada de voz breve",
+    "optionD": "Mientras espera a un abanderado",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Wisconsin prohíbe escribir o enviar mensajes de texto y correos electrónicos mientras conduce; los conductores con licencia probatoria o permiso de aprendizaje no pueden usar el teléfono en absoluto."
+    "explanation": "El Manual del Conductor de Wisconsin indica que puede usar su teléfono celular en una zona de construcción solo para reportar una emergencia. Las multas también se duplican en estas zonas."
   },
   {
     "type": "State-Specific",
@@ -29012,14 +29012,14 @@
     "state": "WI",
     "questionId": "WI-033",
     "category": "stateUnique",
-    "question": "¿A qué edad deben los niños usar un asiento elevador en Wisconsin?",
-    "optionA": "Menores de 8 años o menos de 57 inches",
-    "optionB": "Menores de 6 años o menos de 50 inches",
-    "optionC": "Menores de 10 años o menos de 60 inches",
-    "optionD": "Menores de 12 años o menos de 65 inches",
+    "question": "En Wisconsin, un niño de 4 a 8 años debe usar un asiento elevador hasta alcanzar ¿qué límite?",
+    "optionA": "8 años, 80 libras o 4 pies 9 pulgadas",
+    "optionB": "6 años o 50 libras",
+    "optionC": "10 años o 60 pulgadas",
+    "optionD": "12 años o 65 pulgadas",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Los niños menores de 8 años o de menos de 57 pulgadas de estatura deben usar un asiento elevador."
+    "explanation": "Wisconsin exige un asiento elevador para niños de 4 a 8 años que pesen de 40 a 80 libras y midan no más de 4 pies 9 pulgadas. Un niño puede pasar al cinturón de seguridad después de cumplir 8 años, superar las 80 libras o superar los 4 pies 9 pulgadas."
   },
   {
     "type": "State-Specific",
@@ -29336,12 +29336,12 @@
     "category": "cellPhone",
     "question": "¿Qué dispositivo puede usar mientras conduce sin violar la ley de teléfonos celulares?",
     "optionA": "Tableta en el tablero",
-    "optionB": "Teléfono en el bolsillo",
-    "optionC": "Auricular Bluetooth",
+    "optionB": "Teléfono sostenido en el regazo",
+    "optionC": "Receptor GPS de mano",
     "optionD": "Reloj inteligente en la muñeca",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Un reloj inteligente usado en la muñeca está permitido mientras se conduce sin violar la ley de teléfonos celulares."
+    "explanation": "La ley de West Virginia no considera un reloj inteligente como dispositivo cubierto, así que se permite usarlo. Sostener o apoyar un teléfono, una tableta o un GPS de mano con cualquier parte del cuerpo no está permitido."
   },
   {
     "type": "State-Specific",
@@ -29377,13 +29377,13 @@
     "questionId": "WV-019",
     "category": "duiStateLaws",
     "question": "¿Cuál es el límite legal de concentración de alcohol en sangre (BAC) para conductores menores de 21 años en WV?",
-    "optionA": "0.00% - tolerancia cero",
+    "optionA": "0.00%",
     "optionB": "0.05% o menos",
-    "optionC": "0.02% o menos",
+    "optionC": "Menos de 0.02%",
     "optionD": "0.01% o menos",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los conductores menores de 21 años deben tener un BAC de 0.02% o menos: cualquier nivel mayor constituye una infracción bajo el estándar de tolerancia cero."
+    "explanation": "En West Virginia, un conductor menor de 21 años comete una infracción con un BAC de 0.02% o más, así que el límite legal es menos de 0.02%. Las penalidades de DUI para adultos se aplican a partir de 0.08%."
   },
   {
     "type": "State-Specific",
@@ -29549,9 +29549,9 @@
     "optionB": "Cada 6 meses",
     "optionC": "Una vez al año",
     "optionD": "Cada 3 años",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "Los vehículos registrados deben pasar una inspección de seguridad una vez al año."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "Según el Código de WV 17C-16-4, los vehículos registrados deben inspeccionarse una vez cada dos años. Los vehículos de motor comerciales sujetos a las reglas federales todavía deben inspeccionarse al menos una vez al año."
   },
   {
     "type": "State-Specific",
@@ -30720,14 +30720,14 @@
     "state": "DC",
     "questionId": "DC-035",
     "category": "stateUnique",
-    "question": "¿Dónde deben viajar los niños menores de 13 años en un vehículo en DC?",
+    "question": "¿Dónde deben viajar en un vehículo los niños menores de 13 años en DC?",
     "optionA": "En el asiento delantero con airbag",
     "optionB": "En el asiento trasero",
     "optionC": "En cualquier lugar con cinturón de seguridad",
     "optionD": "Sólo en la fila del medio",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "DC recomienda que todos los niños menores de 13 años viajen en el asiento trasero, que es la posición más segura en el vehículo."
+    "explanation": "Los niños menores de 13 años deben viajar en el asiento trasero, lo que los mantiene alejados de las bolsas de aire delanteras. El cinturón de seguridad por sí solo no hace que el asiento delantero sea seguro para ellos."
   },
   {
     "type": "State-Specific",
@@ -30790,13 +30790,13 @@
     "state": "DC",
     "questionId": "DC-040",
     "category": "stateUnique",
-    "question": "¿Cuál es el límite de velocidad máximo permitido en cualquier carretera de DC a menos que se indique lo contrario?",
-    "optionA": "30 mph",
-    "optionB": "35 mph",
-    "optionC": "20 mph",
-    "optionD": "45 mph",
+    "question": "En DC, ¿qué puede hacer un ciclista en una señal de alto cuando el camino está despejado?",
+    "optionA": "Detenerse por completo cada vez",
+    "optionB": "Cruzar caminando con la bicicleta",
+    "optionC": "Pasar sin detenerse tras ceder el paso",
+    "optionD": "Solo girar a la derecha",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A menos que se indique otro límite, la velocidad máxima legal en las calles de DC es de 20 mph; muchas vías principales tienen un límite señalizado de 25 mph y los callejones de 15 mph."
+    "explanation": "La Safer Streets Amendment Act de DC permite que un ciclista pase una señal de alto sin detenerse, a una velocidad segura, después de revisar si hay peligros y ceder el paso a los peatones y al tráfico. Los conductores deben esperar que los ciclistas pasen sin detenerse y no deben suponer que se detendrán."
   }
 ]

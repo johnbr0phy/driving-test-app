@@ -1297,6 +1297,18 @@
   "https://tea.texas.gov/data-reports/staar/staar-mathematics-resources",
   "https://tea.texas.gov/data-reports/staar/hb-8-faq-update.pdf"
  ],
+ "staarbio": [
+  "https://tea.texas.gov/data-reports/staar/biology-blueprint-2026.pdf",
+  "https://tea.texas.gov/data-reports/staar/2026-staar-bio-assessed-curriculum.pdf",
+  "https://tea.texas.gov/laws-and-rules/sboe-rules-tac/sboe-tac-currently-effect/ch112c.pdf",
+  "https://tea.texas.gov/data-reports/student-assessment-overview/house-bill-8-student-assessment"
+ ],
+ "staareng1": [
+  "https://tea.texas.gov/data-reports/staar/staar-english-i-blueprint-schematic-pdf.pdf",
+  "https://tea.texas.gov/student-assessment/assessment-initiatives/staar-redesign",
+  "https://tea2.tea.texas.gov/data-reports/staar/sst-english-i-assessed-curriculum.pdf",
+  "https://tea.texas.gov/data-reports/staar/sst-english-i-summative-blueprint.pdf"
+ ],
  "texesppr": [
   "https://www.tx.nesinc.com/TestView.aspx?f=HTML_FRAG/TX160_TestPage.html",
   "https://www.tx.nesinc.com/Content/StudyGuide/TX_SG_obj_160.htm",
@@ -1444,6 +1456,11 @@
   "https://www.waecnigeria.org/index.php/node/9?page=0",
   "https://waecsyllabus.com/mathematics/",
   "https://waecsyllabus.com/files/ssce/GENERAL%20MATHEMATICS%20OR%20MATHEMATICS%20%28CORE%29.pdf"
+ ],
+ "wonderlic": [
+  "https://wonderlic.com/science/cognitive-ability/",
+  "https://wonderlic.com/select-hiring-assessment/cognitive/",
+  "https://wonderlic.com/wp-content/uploads/2017/06/WPT-R_Description_MSP.pdf"
  ],
  "zak53": [
   "https://www.gov.za/services/driving-licence/apply-learners-licence",

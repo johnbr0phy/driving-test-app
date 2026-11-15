@@ -103,6 +103,7 @@
   "ocnsw": ["#d50b81","#fceef6","#710946","#eed8e5"],
   "mapgrowth": ["#049562","#e9fbf5","#04442d","#d4ede4"],
   "staaralg1": ["#596039","#f3f4eb","#2a2d1b","#e3e5dc"],
+  "staareng1": ["#8e0b7c","#fdedfb","#400739","#f0dbed"],
   "vicsel": ["#3709b3","#f1eefc","#1a0750","#ded8ee"],
   "hscmaths": ["#2f6a5e","#f0faf8","#152925","#d8eee9"],
   "aursa": ["#6b2e36","#faf0f1","#291417","#eed8db"],

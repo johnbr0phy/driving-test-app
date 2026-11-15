@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "cer practice test, cer exam, hspa cer practice test, certified endoscope reprocessor practice exam, endoscope reprocessing certification, cer exam questions 2026, hspa endoscope exam, flexible endoscope reprocessing test",
+    "cis practice test, cis exam, hspa cis practice test, certified instrument specialist practice exam, surgical instrument certification, cis exam questions 2026, instrument specialist exam, sterile processing instrument test",
   alternates: {
     canonical: `${siteUrl}/cis-instrument-specialist-practice-test`,
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/cis-instrument-specialist-practice-test`,
-    images: [{ url: shareImageUrl("hspacis"), width: 1200, height: 630, alt: "Tigertest free CER practice test" }],
+    images: [{ url: shareImageUrl("hspacis"), width: 1200, height: 630, alt: "Tigertest free CIS practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
@@ -80,8 +80,8 @@ const jsonLd = {
       operatingSystem: "Any",
       offers: examOffers("hspacis"),
       featureList: [
-        "200 CER (HSPA) practice questions",
-        "4 practice tests of 50 questions weighted like the HSPA CER content outline",
+        "200 CIS (HSPA) practice questions",
+        "4 practice tests of 50 questions weighted like the HSPA CIS content outline",
         "5 training sets by outline section",
         "Instant feedback with explanations",
         "Auto-save progress",
@@ -103,13 +103,12 @@ const jsonLd = {
 };
 
 const contentAreas = [
-  { name: "Endoscope Processing Steps", weight: "32%" },
-  { name: "Endoscope Handling, Transport and Storage", weight: "16%" },
-  { name: "Microbiology and Infection Control", weight: "12%" },
-  { name: "Work Area Design", weight: "12%" },
-  { name: "Endoscope Purpose, Design and Structure", weight: "10%" },
-  { name: "Endoscope Tracking, Repair and System Maintenance", weight: "10%" },
-  { name: "Human Factors That Impact Endoscope Systems", weight: "8%" },
+  { name: "Instrumentation Identification", weight: "32%" },
+  { name: "Instrumentation Inspection, Testing, Integrity and Assembly", weight: "20%" },
+  { name: "Quality and Information Systems", weight: "20%" },
+  { name: "Decontamination Processes", weight: "12%" },
+  { name: "Preparation and Packaging", weight: "10%" },
+  { name: "Disinfection and Sterilization Processes", weight: "6%" },
 ];
 
 export default function HspaCisLandingPage() {
@@ -125,12 +124,12 @@ export default function HspaCisLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            Free CER Endoscope Reprocessor Practice Test 2026
+            Free CIS Instrument Specialist Practice Test 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/cis/dashboard"
-            shortName="CER"
-            subtitle="200 original questions on the HSPA CER exam content outline: pre-cleaning, leak testing, manual cleaning, high-level disinfection, drying, storage and tracking. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            shortName="CIS"
+            subtitle="200 original questions on the HSPA CIS exam content outline: instrument identification, materials, inspection and testing, implants, packaging, loaners, tracking and water quality. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/hspacis-mobile.png", desktop: "/landing/hspacis-desktop.png" }}
           />
         </div>
@@ -151,7 +150,7 @@ export default function HspaCisLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train by Outline Section</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Five training sets follow the HSPA CER outline: microbiology and endoscope design; work area and manual cleaning; disinfection and sterilization; handling, transport and storage; and tracking, repair and human factors. Questions you miss come back until you have mastered them.
+                Five training sets follow the HSPA CIS outline: decontamination and instrument grades; specialty instruments and implants; inspection, testing and repair; quality and information systems; and packaging and sterilization. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -162,7 +161,7 @@ export default function HspaCisLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Weighted Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four practice tests of 50 questions, each weighted like the seven sections of the real exam. Aim for 70% or better. No question appears in more than one test, and every one comes with an explanation.
+                Four practice tests of 50 questions, each weighted like the six sections of the real exam. Aim for 70% or better. No question appears in more than one test, and every one comes with an explanation.
               </p>
             </div>
           </div>
@@ -175,10 +174,10 @@ export default function HspaCisLandingPage() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
-                Built on the HSPA CER Content Outline
+                Built on the HSPA CIS Content Outline
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                HSPA publishes the weight of each of the seven sections, and every practice test here keeps that balance, scaled to 50 questions: 16 on the processing steps, 8 on handling and storage, 6 each on microbiology and work area design, 5 each on design and tracking, and 4 on human factors. Sterile processing program instructors can set Tigertest as CER review at{" "}
+                HSPA publishes the weight of each of the six sections, and every practice test here keeps that balance, scaled to 50 questions: 16 on instrumentation identification, 10 each on inspection and testing and on quality and information systems, 6 on decontamination, 5 on packaging and 3 on disinfection and sterilization. Sterile processing program instructors can set Tigertest as CIS review at{" "}
                 <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">tigertest.io/teach</Link>
                 {" "}and see which topics the class misses most.
               </p>
@@ -226,25 +225,25 @@ export default function HspaCisLandingPage() {
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
-            How to Pass the CER Exam
+            How to Pass the CIS Exam
           </h2>
           <div className="space-y-8 text-gray-600 dark:text-gray-300">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Master the processing steps</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Know the instruments by name and use</h3>
               <p>
-                Processing steps are 32% of the exam. Know the order from point-of-use pre-cleaning and leak testing through manual cleaning, inspection, high-level disinfection, rinsing, alcohol flush, drying and documentation, and why each step comes where it does.
+                Instrumentation identification is 32% of the exam. Learn the instruments of each specialty, from rongeurs, osteotomes and reamers to lid specula, bulldog clamps and cervical dilators, the surgical terms that name procedures, and how grade, metal and finish change how an instrument is used and cared for.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Know the scope you are holding</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Inspect and test like a specialist</h3>
               <p>
-                Learn the parts of a flexible endoscope, from the control head valves and biopsy port to the bending section and light guide connector, and why channels and elevators are hard to clean. Know the Spaulding classes and which scopes and accessories need sterilization.
+                Inspection, testing and assembly are 20%. Know what magnification, a borescope, an insulation tester and test media show, how to tell staining from rust, when an instrument goes for repair, and how preventive maintenance keeps sets in service.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Do not skip storage and records</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Do not skip quality and systems</h3>
               <p>
-                Handling, storage, tracking and human factors are over a third of the exam. Know cabinet storage, hang time set by risk assessment, ready-for-use cues, the scope and patient identifiers in every record, loaner and repair tracking, and when competency is checked.
+                Quality and information systems are another 20%. Know UDI and tracking systems, count sheet upkeep, the loaner process from receipt to pickup, water categories and what poor water does to steel, and the audits and teamwork that cut immediate-use sterilization.
               </p>
             </div>
             <div>
@@ -260,7 +259,7 @@ export default function HspaCisLandingPage() {
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
-          CER Exam Frequently Asked Questions
+          CIS Exam Frequently Asked Questions
         </h2>
         <div className="space-y-8">
           {faqs.map((f) => (
@@ -281,8 +280,8 @@ export default function HspaCisLandingPage() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the CER Exam?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across every section of the HSPA CER content outline.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the CIS Exam?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across every section of the HSPA CIS content outline.</p>
           <ExamLandingCTA dashboardHref="/cis/dashboard" />
         </div>
       </div>

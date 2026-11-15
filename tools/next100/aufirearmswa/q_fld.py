@@ -77,8 +77,8 @@ Q = [
      "The occupier's express consent",
      ["A neighbouring farmer's say-so", "Consent from last season", "No signs saying no hunting"],
      "Section 300(1) makes it an offence to use a firearm on land belonging to another person without the express consent of the occupier or someone apparently authorised to act for them."),
-    ("You walk across a neighbour's paddock with a cased rifle to reach your permission land. Under the Act you need:",
-     "The occupier's say-so",
-     ["Nothing if it is unloaded", "Nothing if it is in a case", "Nothing in daylight hours"],
-     "Section 300(2) makes it an offence to carry a firearm onto or across land used for primary production, other than on a public road, without the occupier's express consent."),
+    ("Under s 300(2), where may you carry a firearm across farmland without the occupier's express consent?",
+     "Along a public road",
+     ["Along a fence line", "Anywhere, if unloaded", "Anywhere, if cased"],
+     "Section 300(2) makes it an offence to carry a firearm onto or across land used for primary production without the occupier's express consent, other than on a road open to the public."),
 ]

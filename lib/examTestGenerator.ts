@@ -80,6 +80,7 @@ export function getExamTrainingSetQuestions(
   }
   return getExamQuestions(exam.id, language)
     .filter((q) => def.categories.includes(q.category))
+    .filter((q) => !exam.trainingExcludePrefix || !q.questionId.startsWith(exam.trainingExcludePrefix))
     .filter((q) => part === undefined || trainingPartOf(def.id, q.questionId) === part)
     .sort((a, b) => a.questionId.localeCompare(b.questionId));
 }

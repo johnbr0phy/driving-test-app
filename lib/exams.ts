@@ -116,6 +116,9 @@ export interface ExamConfig {
    *  what Premium adds (more questions, more tests, timed mocks); never
    *  promise a pass or a readiness verdict. Other languages keep the generic bullets. */
   premiumBenefits?: string[];
+  /** Questions whose id starts with this are in tests only, never in a
+   *  training set (RBT's scenario questions, which make up Practice Test 5). */
+  trainingExcludePrefix?: string;
   questionsPerTest: number;
   passPct: number;
   /** Questions per content area in each practice test (sums to questionsPerTest). */
@@ -9096,20 +9099,20 @@ const rbt: ExamConfig = {
   fullName: "Registered Behavior Technician (RBT) exam",
   questionIdPrefix: "RBT-",
   icon: "target",
-  testCount: 8,
-  // Nov 2026: the bank grew from 200 to 400 with 200 scenario questions
-  // (segments SDAT, SASM, SACQ, SRED, SDOC, SETH), which sort after the
-  // originals, so Tests 1 to 4 and saved progress are unchanged. The
-  // originals are free; Premium is Tests 5 to 8 and part 2 of every set.
+  testCount: 5,
+  // The original 200 questions, the four training sets and Tests 1 to 4 are
+  // free. Premium is two steps at the end: Practice Test 5, 50 work-scenario
+  // questions (segments SDAT, SASM, SACQ, SRED, SDOC, SETH, which sort after
+  // the originals and stay out of the training sets), and one full-length
+  // timed mock (test 6 by number): 85 questions in 90 minutes like the real
+  // exam (75 scored + 10 unscored pilot items; every question counts here),
+  // the 13/8/19/14/10/11 scored split scaled to 85, spread over the whole bank.
   premiumFrom: { test: 5, part: 2 },
-  // Two full-length mocks (Premium, Tests 9 and 10 by number): 85 questions in
-  // 90 minutes like the real exam, which has 75 scored + 10 unscored pilot
-  // items; every question counts here. The 13/8/19/14/10/11 scored split,
-  // scaled to 85.
-  mockExams: { count: 2, minutes: 90, blueprint: { rbtData: 15, rbtAssess: 9, rbtAcq: 21, rbtReduce: 16, rbtDoc: 11, rbtEthics: 13 } },
+  trainingExcludePrefix: "RBT-S",
+  mockExams: { count: 1, minutes: 90, blueprint: { rbtData: 15, rbtAssess: 9, rbtAcq: 21, rbtReduce: 16, rbtDoc: 11, rbtEthics: 13 } },
   premiumBenefits: [
-    "200 work-scenario questions and Practice Tests 5 to 8",
-    "2 full-length timed RBT mocks: 85 questions in 90 minutes",
+    "Practice Test 5: 50 work-scenario questions",
+    "A full-length timed RBT mock: 85 questions in 90 minutes",
     "Full stats on every question you miss, on every Tigertest exam",
   ],
   questionsPerTest: 50,
@@ -9118,7 +9121,7 @@ const rbt: ExamConfig = {
   // updated 09/2024, checked October 2026): 75 scored + 10 unscored pilot questions in 90 minutes,
   // scored counts A Data Collection and Graphing 13, B Behavior Assessment 8, C Behavior
   // Acquisition 19, D Behavior Reduction 14, E Documentation and Reporting 10, F Ethics 11,
-  // scaled here to 50 per test (9/5/13/9/7/7), pools 72/40/104/72/56/56 for eight tests. The BACB reports pass/fail against a modified-Angoff passing score and
+  // scaled here to 50 per test (9/5/13/9/7/7), pools 36/20/52/36/28/28 for Tests 1 to 4, plus one test's worth of scenarios for Test 5. The BACB reports pass/fail against a modified-Angoff passing score and
   // publishes no percentage; 80% is a readiness marker. All items original.
   blueprint: {
     rbtData: 9,
@@ -9129,10 +9132,10 @@ const rbt: ExamConfig = {
     rbtEthics: 7,
   },
   trainingSets: [
-    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 112, partSizes: [56, 56], partNames: ["Data Collection & Assessment", "Data & Assessment Scenarios"], weightLabel: "14 of 50 test questions" },
-    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 104, partSizes: [52, 52], partNames: ["Behavior Acquisition", "Acquisition Scenarios"], weightLabel: "13 of 50 test questions" },
-    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 72, partSizes: [36, 36], partNames: ["Behavior Reduction", "Reduction Scenarios"], weightLabel: "9 of 50 test questions" },
-    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 112, partSizes: [56, 56], partNames: ["Documentation, Reporting & Ethics", "Reporting & Ethics Scenarios"], weightLabel: "14 of 50 test questions" },
+    { setNumber: 1, id: 10801, name: "Data Collection & Assessment", categories: ["rbtData", "rbtAssess"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 10802, name: "Behavior Acquisition", categories: ["rbtAcq"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 10803, name: "Behavior Reduction", categories: ["rbtReduce"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 10804, name: "Documentation, Reporting & Ethics", categories: ["rbtDoc", "rbtEthics"], size: 56, weightLabel: "14 of 50 test questions" },
   ],
   categoryLabels: {
     rbtData: "Data Collection & Graphing",
@@ -9145,16 +9148,16 @@ const rbt: ExamConfig = {
   copy: {
     guestPrompt: "to save your RBT progress and track every question you miss",
     trainingHeading: "Train by RBT domain",
-    trainingSub: "Four sets covering all six domains of the RBT Test Content Outline (3rd ed.), each with a scenario part. Instant feedback, and missed questions come back until you master them.",
-    testsHeading: "Practice tests · 50 questions weighted like the real 75 scored, then full-length timed mocks",
+    trainingSub: "Four sets covering all six domains of the RBT Test Content Outline (3rd ed.), Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real 75 scored",
     heroSubs: [
-      "Four sets, eight practice tests and two timed mocks. Start with Data Collection & Assessment.",
+      "Four sets and five practice tests. Start with Data Collection & Assessment.",
       "Master each set, then take a mock exam.",
       "Keep going. Take a mock exam to see where you stand.",
       "Review your mistakes, then retake any mock exam you haven't passed.",
       "All done. Book your RBT exam.",
     ],
-    sourceLine: "Based on the BACB RBT Test Content Outline (3rd ed.) and the RBT Ethics Code (2.0). Original questions, 200 of them work scenarios; 50 per test, weighted like the real exam.",
+    sourceLine: "Based on the BACB RBT Test Content Outline (3rd ed.) and the RBT Ethics Code (2.0). Original questions; 50 per test, weighted like the real exam.",
     analyticsKey: "rbt",
   },
 };

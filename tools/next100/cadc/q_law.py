@@ -61,7 +61,7 @@ Q = [
  "An ongoing process", ["A one-time signature", "Needed only for minors", "Optional in groups"],
  "Consent is revisited as treatment changes, so the client keeps understanding and agreeing to what happens in care."),
 ("Which should a client learn before agreeing to treatment?",
- "Limits of confidentiality", ["The counselor's salary", "Other clients' names", "Staff home phone numbers"],
+ "Limits of confidentiality", ["The counselor's recovery history", "Results of future drug screens", "The agency's annual budget"],
  "Informed consent covers the services, risks and benefits, costs, the client's rights and when confidential information may be disclosed."),
 ("A client is unhappy with how a counselor treated her. The counselor should:",
  "Explain the grievance process", ["Discourage the complaint", "Discharge the client", "Delete that day's session note"],

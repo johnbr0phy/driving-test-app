@@ -57,7 +57,7 @@ Q = [
 ("During assessment, the DSM is used to:",
  "Apply standard criteria", ["Set medication doses", "Pick weekly group topics", "Rate job skills"],
  "The DSM gives standard criteria so a diagnosis means the same thing across providers. Who may make a diagnosis varies by state and credential."),
-("A client has met no SUD criteria except craving for the past 14 months. DSM-5 calls this:",
+("A client who previously met criteria for alcohol use disorder has met none except craving for the past 14 months. DSM-5 calls this:",
  "Sustained remission", ["Early remission", "A mild disorder", "A moderate disorder"],
  "Sustained remission means no criteria except craving for 12 months or longer. Early remission covers at least 3 but less than 12 months."),
 ("A client in remission lives in a locked facility with no access to substances. Which specifier applies?",

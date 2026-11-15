@@ -40,7 +40,7 @@ Q = [
  "A trained interpreter", ["The client's child", "A bilingual friend from group", "Simple English only"],
  "Trained interpreters give accurate, confidential communication. Children and peers can distort meaning and should not carry sensitive information."),
 ("A counselor notices clients from one ethnic group leave treatment early more often. The best response is to:",
- "Review barriers and adapt", ["Ignore the pattern", "Stop admitting them", "Blame their motivation"],
+ "Review barriers and adapt", ["Add confrontation groups", "Refer them all elsewhere", "Require longer intakes"],
  "Advocating for equity in care means looking for program barriers, such as language, cost or a poor cultural fit, and changing them."),
 ("Why should counselors avoid calling drug test results clean or dirty?",
  "The terms add to stigma", ["The terms are illegal", "The terms confuse labs", "The terms are too informal"],

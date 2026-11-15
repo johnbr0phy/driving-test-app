@@ -7,6 +7,7 @@ import { resolveCurrentExamId } from '@/lib/email-voice';
 import { getCatalogEntry, getCatalogEntryByPath } from '@/lib/testCatalog';
 import { isAnswered } from '@/lib/v2/grading';
 import type { AnswerValue } from '@/lib/v2/types';
+import { purchaseLocationLabel } from '@/lib/purchaseAttribution';
 
 // The payload is kept in lib/server/adminCache: fresh for two minutes, and
 // an older copy is served at once while a rebuild runs after the response.
@@ -205,9 +206,26 @@ async function buildUsers() {
     originSnaps.map((s) => [s.id, typeof s.get('country') === 'string' && s.get('country') ? (s.get('country') as string) : null]),
   );
 
+  // Where each Premium account actually checked out: the `location` the
+  // Stripe webhook stored on its payments doc. More reliable than paywall
+  // hits, which are only recorded while signed in (a guest who hit the
+  // paywall, then made an account and paid, has none).
+  const paymentIds = fullDocs
+    .map((d) => ((d.get('subscription') || {}) as Record<string, unknown>).stripePaymentId)
+    .filter((id): id is string => typeof id === 'string' && id.length > 0);
+  const paymentSnaps = paymentIds.length ? await db.getAll(...paymentIds.map((id) => db.doc(`payments/${id}`))) : [];
+  const checkoutLocation = new Map(
+    paymentSnaps.map((s) => [s.id, typeof s.get('location') === 'string' && s.get('location') ? (s.get('location') as string) : null]),
+  );
+
   const users = fullDocs.map((doc) => {
     const data = doc.data() as Record<string, unknown>;
     const stats = processFullDoc(data);
+    const paymentId = ((data.subscription || {}) as Record<string, unknown>).stripePaymentId;
+    const location = typeof paymentId === 'string' ? checkoutLocation.get(paymentId) ?? null : null;
+    if (stats.isPremium && location) {
+      stats.convertedPaywall = { key: location, label: purchaseLocationLabel(location), location };
+    }
     const iso = countryByUid.get(doc.id) ?? (typeof data.paywallCountry === 'string' && data.paywallCountry ? data.paywallCountry : null);
     return {
       uid: doc.id,

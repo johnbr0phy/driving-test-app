@@ -655,6 +655,11 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
               { label: "Purchased", value: purchased, note: `${pct(purchased, paywall)} of paywall hits` },
             ]}
           />
+          <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+            Signed-out steps count browsers on the day they happened. After signup follows the accounts made in this window to
+            today, so a short window&apos;s newest accounts are still practicing and buying. Accounts made through an assistant
+            connector are not counted.
+          </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-lg bg-gray-50 dark:bg-gray-950 p-3">
               <p className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">Signup page drop-off</p>

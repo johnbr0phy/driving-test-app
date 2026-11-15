@@ -73,7 +73,7 @@ export async function GET(request: NextRequest) {
 
 async function buildMetrics() {
   const db = getAdminDb();
-  const [usersSnapRaw, paymentsSnap, questionsDoc, studyTimesDoc, funnelDoc, originsSnap, internalUids, paywallsDoc] = await Promise.all([
+  const [usersSnapRaw, paymentsSnap, questionsDoc, studyTimesDoc, funnelDoc, originsSnap, internalUids, paywallsDoc, enrolledSnap] = await Promise.all([
     db.collection('users')
       .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats')
       .get(),
@@ -84,7 +84,16 @@ async function buildMetrics() {
     db.collection('signupOrigins').get(),
     getInternalUids(),
     db.doc('analytics/paywalls').get(),
+    // Accounts that answered at least one question on any test (DMV, v1, v2):
+    // one enrollments doc per (exam, uid), guest docs claimed on sign-in
+    // (lib/enrollment.ts). `_stats` alone misses v1 exam training and all v2.
+    db.collection('enrollments').where('uid', '>', '').select('uid').get(),
   ]);
+  const enrolledUids = new Set<string>();
+  enrolledSnap.forEach((d) => {
+    const uid = d.get('uid');
+    if (typeof uid === 'string') enrolledUids.add(uid);
+  });
   // Every paywall open per UTC day, guests included (/api/analytics/paywall).
   const paywallHitsByDay: Record<string, number> = {};
   for (const [day, n] of Object.entries((paywallsDoc.data()?.daily as Record<string, unknown>) || {})) {
@@ -187,10 +196,13 @@ async function buildMetrics() {
     const answered =
       ((stats.trainingQuestionsAnswered as number) || 0) + ((stats.testQuestionsAnswered as number) || 0);
     totalQuestions += answered;
-    if (answered > 0) engagedUsers++;
-    const hitPaywall = Object.keys((data.paywallHits as Record<string, unknown>) || {}).length > 0;
+    const answeredAny = answered > 0 || enrolledUids.has(doc.id);
+    if (answeredAny) engagedUsers++;
+    // A buyer saw a paywall even when the view was not on the account (made
+    // as a guest before signing up), so every buyer counts at this step.
+    const hitPaywall = Object.keys((data.paywallHits as Record<string, unknown>) || {}).length > 0 || isPremium;
     if (hitPaywall) paywallUsers++;
-    accountStages.set(doc.id, { answered: answered > 0, paywall: hitPaywall });
+    accountStages.set(doc.id, { answered: answeredAny, paywall: hitPaywall });
 
     // Purchases / revenue
     if (isPremium) {

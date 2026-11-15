@@ -4969,6 +4969,19 @@
     --brand-border-light: 140 25% 88%;
     --brand-gradient-to: 30 90% 95%;
   }
+  /* ISEE theme: deep forest green (v2 exam; matches lib/v2/exams/isee.ts theme) */
+  [data-theme="isee"] {
+    --brand: 136 55% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 136 45% 95%;
+    --brand-hover: 136 55% 18%;
+    --brand-dark: 136 55% 15%;
+    --brand-darker: 136 50% 10%;
+    --brand-muted: 136 25% 68%;
+    --brand-border: 136 28% 78%;
+    --brand-border-light: 136 25% 88%;
+    --brand-gradient-to: 160 50% 94%;
+  }
 
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
@@ -9191,6 +9204,18 @@
     --brand-muted: 140 25% 45%;
     --brand-dark: 140 70% 65%;
     --brand-darker: 140 65% 78%;
+  }
+
+  .dark [data-theme="isee"] {
+    --brand: 136 55% 33.8%;
+    --brand-hover: 136 55% 25.8%;
+    --brand-light: 136 45% 13%;
+    --brand-gradient-to: 160 40% 11%;
+    --brand-border-light: 136 25% 24%;
+    --brand-border: 136 28% 34%;
+    --brand-muted: 136 25% 45%;
+    --brand-dark: 136 55% 65%;
+    --brand-darker: 136 50% 78%;
   }
 
 }

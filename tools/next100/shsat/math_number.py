@@ -24,7 +24,7 @@ ITEMS = [
     dict(test=1, skill="Order of operations", diff=2,
          stem="What is the value of $18 - 3 \\times 2^3 + 10 \\div 5$?",
          key="-4", wrong=["-8", "8", "122"],
-         expl="Exponent first: 2^3 = 8. Then 3 x 8 = 24 and 10 / 5 = 2. Finally 18 - 24 + 2 = -4. Working left to right without the order of operations gives 122."),
+         expl="Exponent first: 2^3 = 8. Then 3 x 8 = 24 and 10 / 5 = 2. Finally 18 - 24 + 2 = -4. Subtracting 18 - 3 before multiplying gives 15 x 8 + 2 = 122."),
     dict(test=1, skill="Least common multiple", diff=1,
          stem="Two buses leave a station together at 8:00 a.m. One bus leaves every 12 minutes and the other every 18 minutes. When do they next leave together?",
          key="8:36 a.m.", wrong=["8:06 a.m.", "8:30 a.m.", "9:00 a.m."],

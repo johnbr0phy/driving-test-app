@@ -151,7 +151,7 @@ ITEMS = [
                       "Before leaving, we bought postcards in the gift shop."),
          stem="Which sentence contains an error in its construction and should be revised?",
          **pick(1),
-         expl="In Sentence 1 the phrase \"with tall cliffs\" sits next to \"a famous artist,\" so it seems the artist has the cliffs. It belongs with the painting: \"a painting by a famous artist of the Hudson River with its tall cliffs.\""),
+         expl="In Sentence 1 the phrase \"with tall cliffs\" sits next to \"a famous artist,\" so it seems the artist has the cliffs. It belongs with the painting: \"a famous artist's painting of the Hudson River and its tall cliffs.\""),
 
     # ---- Drill only ----
     dict(test=0, skill="Shifts in verb tense", diff=1, basics="verbTense",
@@ -166,9 +166,9 @@ ITEMS = [
          expl="A semicolon can join two complete sentences on its own. A comma alone makes a comma splice, and a semicolon followed by \"and\" uses two joiners where one is enough."),
     dict(test=0, skill="Pronoun case", diff=2, basics="pronounCase",
          stem="Which sentence uses a pronoun correctly?",
-         key="The prize was shared between Ada and me.",
-         wrong=["The prize was shared between Ada and I.", "The prize was shared between I and Ada.", "The prize was shared between Ada and myself."],
-         expl="\"Between\" is a preposition, so the pronoun after it is an object and takes the objective case, \"me.\" \"Myself\" is used only when \"I\" is the subject of the same sentence."),
+         key="The principal thanked us students for running the bake sale.",
+         wrong=["The principal thanked we students for running the bake sale.", "Us students ran the bake sale for the principal.", "The principal thanked us students and they for running the bake sale."],
+         expl="In \"us students,\" the pronoun does the same job as the noun after it. Drop \"students\" to test it: \"thanked us,\" not \"thanked we.\" As a subject it would be \"We students ran,\" so \"Us students ran\" is wrong, and \"thanked ... they\" should be \"them.\""),
     dict(test=0, skill="Dangling modifiers", diff=2, basics="danglingModifiers",
          passage="While walking to school, a stray kitten followed Nadia.",
          stem="Which revision of the sentence corrects the dangling modifier?",

@@ -34,7 +34,7 @@ STIMULI = {
         "After leaving NASA, Jemison started a technology company and created an international science camp for students. She has often said that science belongs to everyone and that creativity in the arts and creativity in science come from the same place. Her own life, which has included medicine, engineering, dance and space flight, may be the best support for that idea.")),
     "RI5": ("The Animal That Refuses to Quit", paras(
         "Under a microscope, a drop of water squeezed from a clump of moss may reveal a strange little animal lumbering along on eight stubby legs. It is a tardigrade, also known as a water bear. Most tardigrades are less than a millimeter long, but they are famous among scientists for being nearly impossible to kill.",
-        "Tardigrades live almost everywhere: in moss on city sidewalks, in mud at the bottom of lakes, on mountaintops and in the deep sea. Like fish, they need a film of water around them to stay active. What makes them remarkable is what they do when that water disappears.",
+        "Tardigrades live almost everywhere: in moss on city sidewalks, in mud at the bottom of lakes, on mountaintops and in the deep sea. Like many tiny water animals, they need a thin film of water around them to stay active. What makes them remarkable is what they do when that water disappears.",
         "When its home dries out, a tardigrade pulls in its head and legs and curls into a tiny, shriveled ball called a tun. Its body loses almost all of its water, and its activity slows so much that it can barely be measured. In this state, a tardigrade can survive for years. When water returns, it can swell up and begin crawling again within hours.",
         "In the tun state, tardigrades have survived conditions that would destroy most living things, including freezing cold, intense heat and high doses of radiation. In 2007, scientists sent dried tardigrades into orbit on a satellite and exposed them to outer space. Some of them survived and later produced healthy young.",
         "Researchers are now studying how tardigrades protect their bodies while dried out. Some have found special proteins that seem to hold the parts of a cell in place, a little like packing material around a fragile package. Learning how these proteins work might someday help scientists store medicines without refrigeration. A creature most people have never seen could end up solving very human problems.")),
@@ -187,7 +187,7 @@ ITEMS = [
          stem="Which sentence from the passage best supports the idea that tardigrades can survive in outer space?",
          key="\"Some of them survived and later produced healthy young.\" (paragraph 4)",
          wrong=["\"In this state, a tardigrade can survive for years.\" (paragraph 3)",
-                "\"Like fish, they need a film of water around them to stay active.\" (paragraph 2)",
+                "\"Like many tiny water animals, they need a thin film of water around them to stay active.\" (paragraph 2)",
                 "\"Researchers are now studying how tardigrades protect their bodies.\" (paragraph 5)"],
          expl="This sentence follows the description of tardigrades sent into orbit and exposed to space, so it shows they survived there. Surviving for years as a tun says nothing about space."),
     dict(test=2, stim="RI5", skill="Purpose of a comparison", diff=3,

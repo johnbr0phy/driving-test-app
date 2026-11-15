@@ -63,7 +63,7 @@
     {
       "id": "SHSAT-RI5",
       "title": "The Animal That Refuses to Quit",
-      "text": "**1** Under a microscope, a drop of water squeezed from a clump of moss may reveal a strange little animal lumbering along on eight stubby legs. It is a tardigrade, also known as a water bear. Most tardigrades are less than a millimeter long, but they are famous among scientists for being nearly impossible to kill.\n\n**2** Tardigrades live almost everywhere: in moss on city sidewalks, in mud at the bottom of lakes, on mountaintops and in the deep sea. Like fish, they need a film of water around them to stay active. What makes them remarkable is what they do when that water disappears.\n\n**3** When its home dries out, a tardigrade pulls in its head and legs and curls into a tiny, shriveled ball called a tun. Its body loses almost all of its water, and its activity slows so much that it can barely be measured. In this state, a tardigrade can survive for years. When water returns, it can swell up and begin crawling again within hours.\n\n**4** In the tun state, tardigrades have survived conditions that would destroy most living things, including freezing cold, intense heat and high doses of radiation. In 2007, scientists sent dried tardigrades into orbit on a satellite and exposed them to outer space. Some of them survived and later produced healthy young.\n\n**5** Researchers are now studying how tardigrades protect their bodies while dried out. Some have found special proteins that seem to hold the parts of a cell in place, a little like packing material around a fragile package. Learning how these proteins work might someday help scientists store medicines without refrigeration. A creature most people have never seen could end up solving very human problems."
+      "text": "**1** Under a microscope, a drop of water squeezed from a clump of moss may reveal a strange little animal lumbering along on eight stubby legs. It is a tardigrade, also known as a water bear. Most tardigrades are less than a millimeter long, but they are famous among scientists for being nearly impossible to kill.\n\n**2** Tardigrades live almost everywhere: in moss on city sidewalks, in mud at the bottom of lakes, on mountaintops and in the deep sea. Like many tiny water animals, they need a thin film of water around them to stay active. What makes them remarkable is what they do when that water disappears.\n\n**3** When its home dries out, a tardigrade pulls in its head and legs and curls into a tiny, shriveled ball called a tun. Its body loses almost all of its water, and its activity slows so much that it can barely be measured. In this state, a tardigrade can survive for years. When water returns, it can swell up and begin crawling again within hours.\n\n**4** In the tun state, tardigrades have survived conditions that would destroy most living things, including freezing cold, intense heat and high doses of radiation. In 2007, scientists sent dried tardigrades into orbit on a satellite and exposed them to outer space. Some of them survived and later produced healthy young.\n\n**5** Researchers are now studying how tardigrades protect their bodies while dried out. Some have found special proteins that seem to hold the parts of a cell in place, a little like packing material around a fragile package. Learning how these proteins work might someday help scientists store medicines without refrigeration. A creature most people have never seen could end up solving very human problems."
     },
     {
       "id": "SHSAT-RL5",
@@ -1950,7 +1950,7 @@
       "correct": [
         1
       ],
-      "explanation": "Exponent first: 2^3 = 8. Then 3 x 8 = 24 and 10 / 5 = 2. Finally 18 - 24 + 2 = -4. Working left to right without the order of operations gives 122."
+      "explanation": "Exponent first: 2^3 = 8. Then 3 x 8 = 24 and 10 / 5 = 2. Finally 18 - 24 + 2 = -4. Subtracting 18 - 3 before multiplying gives 15 x 8 + 2 = 122."
     },
     {
       "id": "SHSAT-T1-085",
@@ -2692,7 +2692,7 @@
       "correct": [
         0
       ],
-      "explanation": "In Sentence 1 the phrase \"with tall cliffs\" sits next to \"a famous artist,\" so it seems the artist has the cliffs. It belongs with the painting: \"a painting by a famous artist of the Hudson River with its tall cliffs.\""
+      "explanation": "In Sentence 1 the phrase \"with tall cliffs\" sits next to \"a famous artist,\" so it seems the artist has the cliffs. It belongs with the painting: \"a famous artist's painting of the Hudson River and its tall cliffs.\""
     },
     {
       "id": "SHSAT-T2-019",
@@ -3036,7 +3036,7 @@
       "options": [
         "\"In this state, a tardigrade can survive for years.\" (paragraph 3)",
         "\"Some of them survived and later produced healthy young.\" (paragraph 4)",
-        "\"Like fish, they need a film of water around them to stay active.\" (paragraph 2)",
+        "\"Like many tiny water animals, they need a thin film of water around them to stay active.\" (paragraph 2)",
         "\"Researchers are now studying how tardigrades protect their bodies.\" (paragraph 5)"
       ],
       "correct": [
@@ -4668,15 +4668,15 @@
       "format": "single",
       "stem": "Which sentence uses a pronoun correctly?",
       "options": [
-        "The prize was shared between Ada and I.",
-        "The prize was shared between I and Ada.",
-        "The prize was shared between Ada and myself.",
-        "The prize was shared between Ada and me."
+        "The principal thanked we students for running the bake sale.",
+        "Us students ran the bake sale for the principal.",
+        "The principal thanked us students and they for running the bake sale.",
+        "The principal thanked us students for running the bake sale."
       ],
       "correct": [
         3
       ],
-      "explanation": "\"Between\" is a preposition, so the pronoun after it is an object and takes the objective case, \"me.\" \"Myself\" is used only when \"I\" is the subject of the same sentence."
+      "explanation": "In \"us students,\" the pronoun does the same job as the noun after it. Drop \"students\" to test it: \"thanked us,\" not \"thanked we.\" As a subject it would be \"We students ran,\" so \"Us students ran\" is wrong, and \"thanked ... they\" should be \"them.\""
     },
     {
       "id": "SHSAT-D-010",

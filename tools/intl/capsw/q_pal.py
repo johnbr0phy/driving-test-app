@@ -5,7 +5,7 @@ Q = [
  "Comfort and quality of life", ["Curing the illness", "Shortening the time left", "Moving the client to hospital"],
  "Palliative care aims to relieve pain and other symptoms and support quality of life for the person and family. It can start at diagnosis and run alongside other treatment."),
 ("A dying client no longer responds. How should you talk during care?",
- "Keep speaking and explain care", ["Stay silent to avoid disturbing", "Talk with coworkers instead", "Speak only to the family"],
+ "Keep speaking and explain care", ["Keep silent to avoid disturbing", "Talk with coworkers instead", "Speak only to the family"],
  "Hearing is thought to be one of the last senses lost. Keep explaining what you are doing, and encourage the family to talk to the person."),
 ("Which is a common sign that death is near?",
  "Cool, mottled feet", ["A sudden fever of 40°C", "Increased appetite", "Faster healing of wounds"],

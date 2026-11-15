@@ -133,8 +133,12 @@ plan, give way) and every scenario becomes "the safe move". So before writing a 
 - Never reuse one key word for word in a category, and do not write near-duplicate scenarios
   with the same answer (six "a caregiver raises a concern, tell the supervisor" items teach one
   fact six times).
+- Order matters as well as rate: training sets show questions in ID order, so 4 or more in a row
+  whose answers share a word read as one answer to everyone. Interleave them.
 `tools/check_answer_patterns.py` runs inside the validator and fails a bank where picking the option
-with one word beats guessing by a clear margin, or a key repeats; run it on the bank as a whole
+with one word beats guessing by a clear margin, a key repeats, or 4+ keys in a row share a word. It
+reports the result as marks a test-wise student gains per 50-question test, measured on what one
+student meets (a DMV state's 200, not all 2,200); RBT's scenarios gained about 5 before the fix; run it on the bank as a whole
 (`python3 -I tools/check_answer_patterns.py data/<file>.json`) while writing, not only at the end.
 
 **Stems are self-contained.** One question, ending in a question mark or a colon-completion.

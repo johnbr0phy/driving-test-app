@@ -361,6 +361,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   jambbio: { title: "JAMB Biology Practice Test", description: "Practise the whole UTME Biology syllabus in full 40-question timed tests, with every answer explained." },
   jambchem: { title: "JAMB Chemistry Practice Test", description: "Practise the whole UTME Chemistry syllabus in full 40-question tests, with every calculation worked out." },
   jambphys: { title: "JAMB Physics Practice Test", description: "Practise the whole UTME Physics syllabus in full 40-question tests, with every calculation worked." },
+  wassceeng: { title: "WASSCE English Language Practice Test", description: "Practise WAEC Paper 1 lexis and structure and the Test of Orals in full timed tests, with every answer explained." },
   apgov: { title: "AP US Government Practice Test", description: "Two full 55-question AP Gov multiple-choice sections with data, document and visual sets, plus a drill for every unit." },
   ngpolice: { title: "Nigeria Police Recruitment Practice Test", description: "Practise English, maths, reasoning, the 1999 Constitution and policing in 50-question mock CBTs for the constable aptitude test." },
   cdcfib: { title: "CDCFIB Recruitment Practice Test", description: "Practise the four services, Nigerian geography, English, maths and reasoning in 50-question mock CBTs." },

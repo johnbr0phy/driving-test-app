@@ -149,6 +149,7 @@ export const TEACHES: Record<string, string> = {
   jambbio: "a JAMB tutorial class",
   jambchem: "a JAMB tutorial class",
   jambphys: "a JAMB tutorial class",
+  wassceeng: "an SS3 English class or WAEC lesson",
   appsych: "AP Psychology",
   sbipo: "a bank exam coaching batch",
   sbiclerk: "a bank exam coaching batch",

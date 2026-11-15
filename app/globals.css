@@ -4243,6 +4243,20 @@
     --brand-gradient-to: 225 30% 97%;
   }
 
+  /* WASSCE English Language theme: deep violet (v2 exam; matches lib/v2/exams/wassceeng.ts theme) */
+  [data-theme="wassceeng"] {
+    --brand: 275 95% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 275 95% 96%;
+    --brand-hover: 275 95% 25%;
+    --brand-dark: 275 95% 22%;
+    --brand-darker: 275 90% 12%;
+    --brand-muted: 275 35% 72%;
+    --brand-border: 275 40% 82%;
+    --brand-border-light: 275 40% 91%;
+    --brand-gradient-to: 265 80% 97%;
+  }
+
   /* AP U.S. Government and Politics theme: deep brick (v2 exam; matches lib/v2/exams/apgov.ts theme) */
   [data-theme="apgov"] {
     --brand: 5 30% 30%;
@@ -8545,6 +8559,18 @@
     --brand-muted: 231 20% 45%;
     --brand-dark: 231 36% 65%;
     --brand-darker: 231 32% 78%;
+  }
+
+  .dark [data-theme="wassceeng"] {
+    --brand: 275 95% 50%;
+    --brand-hover: 275 95% 42%;
+    --brand-light: 275 45% 13%;
+    --brand-gradient-to: 265 40% 11%;
+    --brand-border-light: 275 35% 24%;
+    --brand-border: 275 40% 34%;
+    --brand-muted: 275 35% 45%;
+    --brand-dark: 275 95% 65%;
+    --brand-darker: 275 90% 78%;
   }
 
   .dark [data-theme="apgov"] {

@@ -78,6 +78,7 @@ import '@/lib/v2/banks/jambmath';
 import '@/lib/v2/banks/jambbio';
 import '@/lib/v2/banks/jambchem';
 import '@/lib/v2/banks/jambphys';
+import '@/lib/v2/banks/wassceeng';
 import '@/lib/v2/banks/appsych';
 import '@/lib/v2/banks/sbiclerk';
 import '@/lib/v2/banks/sbipo';

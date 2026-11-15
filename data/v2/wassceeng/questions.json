@@ -1,0 +1,5675 @@
+[
+  {
+    "id": "WASSCEENG-T1-001",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Building",
+    "stem": "Choose the option that best completes the sentence.\n\nBefore the walls were raised, the bricklayers laid a strong ...... to carry the weight of the house.",
+    "options": [
+      "gutter",
+      "lintel",
+      "foundation",
+      "rafter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The foundation is the base under the walls that carries the building's weight. Rafters hold up the roof and a lintel spans a door or window."
+  },
+  {
+    "id": "WASSCEENG-T1-002",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Choose the option that best completes the sentence.\n\nAfter the harvest, the farmer stored his maize in a ...... to keep it dry and safe from rats.",
+    "options": [
+      "plantation",
+      "orchard",
+      "granary",
+      "nursery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A granary is a store for grain. A nursery raises young plants, an orchard is a field of fruit trees and a plantation is a large estate of one crop."
+  },
+  {
+    "id": "WASSCEENG-T1-003",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fishing",
+    "stem": "Choose the option that best completes the sentence.\n\nThe fishermen cast their ...... into the lagoon at dawn and hauled it in full of tilapia.",
+    "options": [
+      "paddle",
+      "net",
+      "anchor",
+      "bait"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Something cast out and hauled in full of fish is a net. Bait only attracts fish, and a paddle and an anchor belong to the canoe."
+  },
+  {
+    "id": "WASSCEENG-T1-004",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stock exchange",
+    "stem": "Choose the option that best completes the sentence.\n\nWhen the company announced record profits, the price of its ...... on the stock exchange rose.",
+    "options": [
+      "loans",
+      "taxes",
+      "shares",
+      "receipts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Shares in a company are bought and sold on the stock exchange, and their price usually rises with good results."
+  },
+  {
+    "id": "WASSCEENG-T1-005",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Choose the option that best completes the sentence.\n\nThe doctor said the high fever was a ...... of malaria and started treatment at once.",
+    "options": [
+      "vaccine",
+      "symptom",
+      "remedy",
+      "ward"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A symptom is a sign that shows a disease is present. A vaccine prevents a disease and a remedy treats it."
+  },
+  {
+    "id": "WASSCEENG-T1-006",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Choose the option that best completes the sentence.\n\nCutting down trees without planting new ones has led to serious ...... in many parts of the country.",
+    "options": [
+      "conservation",
+      "fertilisation",
+      "irrigation",
+      "deforestation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Deforestation is the loss of forest when trees are cut and not replaced. Conservation is the opposite: protecting the forest."
+  },
+  {
+    "id": "WASSCEENG-T1-007",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ceremonies",
+    "stem": "Choose the option that best completes the sentence.\n\nThe new king's ...... drew chiefs and guests from every part of the kingdom.",
+    "options": [
+      "christening",
+      "graduation",
+      "coronation",
+      "burial"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A coronation is the ceremony at which a king is crowned. A christening names a baby and a graduation marks the end of a course."
+  },
+  {
+    "id": "WASSCEENG-T1-008",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Law and order",
+    "stem": "Choose the option that best completes the sentence.\n\nThe accused was ...... because the court found that he had not committed the crime.",
+    "options": [
+      "convicted",
+      "remanded",
+      "sentenced",
+      "acquitted"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To acquit is to declare an accused person not guilty. Convicted and sentenced follow a finding of guilt, and remanded means held while the case goes on."
+  },
+  {
+    "id": "WASSCEENG-T1-009",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Motor vehicles and travelling",
+    "stem": "Choose the option that best completes the sentence.\n\nThe driver was fined for parking on the zebra crossing that is meant for ......",
+    "options": [
+      "pedestrians",
+      "conductors",
+      "motorists",
+      "passengers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A zebra crossing is a marked place where pedestrians, people on foot, cross the road."
+  },
+  {
+    "id": "WASSCEENG-T1-010",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Government and administration",
+    "stem": "Choose the option that best completes the sentence.\n\nThe bill became law after the governor gave his ...... to it.",
+    "options": [
+      "mandate",
+      "assent",
+      "ballot",
+      "veto"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A head of government gives assent to a bill to make it law. A veto is the opposite, a refusal to sign it."
+  },
+  {
+    "id": "WASSCEENG-T1-011",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "Choose the option that best completes the sentence.\n\nThe ...... blew his whistle to stop play after the striker was fouled.",
+    "options": [
+      "referee",
+      "captain",
+      "coach",
+      "spectator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The referee controls a football match and stops play with the whistle. The coach trains the team from the touchline."
+  },
+  {
+    "id": "WASSCEENG-T1-012",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Religion",
+    "stem": "Choose the option that best completes the sentence.\n\nThe ...... led the faithful in prayer at the central mosque on Friday.",
+    "options": [
+      "deacon",
+      "pilgrim",
+      "muezzin",
+      "imam"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The imam leads prayers in a mosque. The muezzin calls the faithful to prayer, and a deacon serves in a church."
+  },
+  {
+    "id": "WASSCEENG-T1-013",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Science and technology",
+    "stem": "Choose the option that best completes the sentence.\n\nIn the laboratory, the pupils used a ...... to look at the tiny cells on the slide.",
+    "options": [
+      "periscope",
+      "microscope",
+      "thermometer",
+      "telescope"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A microscope makes very small things such as cells look larger. A telescope is for distant objects such as stars."
+  },
+  {
+    "id": "WASSCEENG-T1-014",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Animal husbandry",
+    "stem": "Choose the option that best completes the sentence.\n\nEvery morning the herdsmen led their cattle to the ...... to graze.",
+    "options": [
+      "hatchery",
+      "pasture",
+      "kennel",
+      "abattoir"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A pasture is land covered with grass for animals to graze. An abattoir is where animals are slaughtered and a hatchery is where eggs are hatched."
+  },
+  {
+    "id": "WASSCEENG-T1-015",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Advertising",
+    "stem": "Choose the option that best completes the sentence.\n\nA huge ...... beside the expressway showed a smiling family drinking the new brand of milk.",
+    "options": [
+      "sponsor",
+      "slogan",
+      "billboard",
+      "jingle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A billboard is a large board for advertisements beside a road. A jingle is a short tune on radio or television and a slogan is a catchy phrase."
+  },
+  {
+    "id": "WASSCEENG-T1-016",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Choose the option that best completes the sentence.\n\nThe ...... filter waste from the blood and produce urine.",
+    "options": [
+      "arteries",
+      "intestines",
+      "kidneys",
+      "lungs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The kidneys remove waste and extra water from the blood as urine. The lungs exchange gases and arteries carry blood from the heart."
+  },
+  {
+    "id": "WASSCEENG-T1-017",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe principal was __furious__ when he saw the broken windows.",
+    "options": [
+      "puzzled",
+      "ashamed",
+      "angry",
+      "tired"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Furious means very angry."
+  },
+  {
+    "id": "WASSCEENG-T1-018",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe rains were __abundant__ this year, so the harvest was good.",
+    "options": [
+      "destructive",
+      "plentiful",
+      "scanty",
+      "harmful"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Abundant means more than enough, that is, plentiful. Scanty is its opposite."
+  },
+  {
+    "id": "WASSCEENG-T1-019",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nNobody could __fathom__ why the quiet boy had run away from home.",
+    "options": [
+      "understand",
+      "forgive",
+      "report",
+      "appreciate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To fathom something is to understand it after thinking hard."
+  },
+  {
+    "id": "WASSCEENG-T1-020",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe two villages had been __feuding__ over the farmland for years.",
+    "options": [
+      "quarrelling",
+      "trading",
+      "sharing",
+      "negotiating"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A feud is a long, bitter quarrel, so feuding villages are quarrelling."
+  },
+  {
+    "id": "WASSCEENG-T1-021",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe old man's advice proved __invaluable__ to the young farmer.",
+    "options": [
+      "worthless",
+      "very useful",
+      "costly",
+      "confusing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Invaluable means so useful that its value cannot be measured. It does not mean worthless."
+  },
+  {
+    "id": "WASSCEENG-T1-022",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe governor made a __fleeting__ visit to the flooded town.",
+    "options": [
+      "brief",
+      "happy",
+      "official",
+      "secret"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fleeting means lasting only a short time."
+  },
+  {
+    "id": "WASSCEENG-T1-023",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe flood victims were in a __precarious__ position on the roof.",
+    "options": [
+      "permanent",
+      "crowded",
+      "dangerous",
+      "comfortable"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Precarious means unsafe and likely to get worse."
+  },
+  {
+    "id": "WASSCEENG-T1-024",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe new manager is __generous__ to his staff.",
+    "options": [
+      "strict",
+      "mean",
+      "kind",
+      "polite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Generous means giving freely. Its opposite is mean, unwilling to give."
+  },
+  {
+    "id": "WASSCEENG-T1-025",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nYears of drought had made the land __barren__.",
+    "options": [
+      "fertile",
+      "hard",
+      "empty",
+      "dry"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Barren land produces nothing. Fertile land produces good crops."
+  },
+  {
+    "id": "WASSCEENG-T1-026",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe accused man's statement to the police was __coherent__.",
+    "options": [
+      "clear",
+      "brief",
+      "confused",
+      "exaggerated"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A coherent statement is clear and logical. Its opposite is confused."
+  },
+  {
+    "id": "WASSCEENG-T1-027",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nFood prices in the market have been __stable__ for months.",
+    "options": [
+      "fixed",
+      "unaffordable",
+      "fluctuating",
+      "low"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Stable prices stay the same. Fluctuating prices keep going up and down. Fixed means the same as stable."
+  },
+  {
+    "id": "WASSCEENG-T1-028",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe visitors received a __warm__ welcome in the village.",
+    "options": [
+      "short",
+      "kind",
+      "cold",
+      "loud"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A warm welcome is friendly. A cold welcome is unfriendly."
+  },
+  {
+    "id": "WASSCEENG-T1-029",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nAma is __optimistic__ about her chances in the examination.",
+    "options": [
+      "pessimistic",
+      "hopeful",
+      "enthusiastic",
+      "anxious"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An optimistic person expects things to go well; a pessimistic one expects them to go badly. Hopeful and confident are close in meaning."
+  },
+  {
+    "id": "WASSCEENG-T1-030",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe committee decided to __postpone__ the meeting.",
+    "options": [
+      "delay",
+      "adjourn",
+      "cancel",
+      "bring forward"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To postpone is to move to a later time, so the opposite is to bring forward. Adjourn and delay are close in meaning, and to cancel is to drop it altogether."
+  },
+  {
+    "id": "WASSCEENG-T1-031",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"In the big city school, the new boy was like a fish out of water.\"",
+    "options": [
+      "He felt uncomfortable there",
+      "He made friends quickly",
+      "He was always hungry",
+      "He was a good swimmer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A fish out of water is someone uneasy in unfamiliar surroundings."
+  },
+  {
+    "id": "WASSCEENG-T1-032",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"Chinedu let the cat out of the bag about the surprise party.\"",
+    "options": [
+      "He set an animal free",
+      "He revealed the secret",
+      "He cancelled the party",
+      "He spoiled the food"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To let the cat out of the bag is to reveal a secret by mistake."
+  },
+  {
+    "id": "WASSCEENG-T1-033",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The headmaster told the prefects to keep the matter under their hats.\"",
+    "options": [
+      "They should discuss it openly",
+      "They should settle it at once",
+      "They should keep it secret",
+      "They should tell the parents"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To keep something under your hat is to keep it secret."
+  },
+  {
+    "id": "WASSCEENG-T1-034",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"Our new football coach is a hard nut to crack.\"",
+    "options": [
+      "He is fond of nuts",
+      "He is difficult to deal with",
+      "He is easily persuaded",
+      "He is very strong"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A hard nut to crack is a person or problem that is difficult to understand or deal with."
+  },
+  {
+    "id": "WASSCEENG-T1-035",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"When the price of fuel went up, fares rose across the board.\"",
+    "options": [
+      "They rose only for long trips",
+      "They rose for every route",
+      "They rose very slowly",
+      "They rose at the motor park"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Across the board means affecting everything or everyone in a group."
+  },
+  {
+    "id": "WASSCEENG-T1-036",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The villagers took the politician's promises with a pinch of salt.\"",
+    "options": [
+      "They welcomed the promises",
+      "They forgot the promises",
+      "They repeated the promises",
+      "They doubted the promises"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To take something with a pinch of salt is not to believe it completely."
+  },
+  {
+    "id": "WASSCEENG-T1-037",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Figurative usage",
+    "stem": "In which of the following sentences is the underlined word used figuratively?",
+    "options": [
+      "She __cut__ her finger on the knife.",
+      "Her harsh words __cut__ him deeply.",
+      "The barber __cut__ my hair.",
+      "He __cut__ the yam into pieces."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Words cannot really cut, so in that sentence cut means hurt his feelings, a figurative use. In the others something is cut with a blade."
+  },
+  {
+    "id": "WASSCEENG-T1-038",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"Mrs Okafor runs her home with an iron hand.\"",
+    "options": [
+      "She runs it very kindly",
+      "She runs it with help",
+      "She runs it very strictly",
+      "She runs it carelessly"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To rule with an iron hand is to control people very strictly."
+  },
+  {
+    "id": "WASSCEENG-T1-039",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"Kofi burnt the midnight oil before the examination.\"",
+    "options": [
+      "He studied late into the night",
+      "He wasted his fuel",
+      "He cooked late at night",
+      "He went to bed early"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To burn the midnight oil is to work or study late at night."
+  },
+  {
+    "id": "WASSCEENG-T1-040",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"But for the rain, the match would have been played.\"",
+    "options": [
+      "The rain began after the match",
+      "There was no rain that day",
+      "The rain stopped the match",
+      "The match was played in the rain"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "But for means without or if it had not been for, so the rain was the reason the match was not played."
+  },
+  {
+    "id": "WASSCEENG-T1-041",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nMathematics ...... my best subject at school.",
+    "options": [
+      "are",
+      "were",
+      "have been",
+      "is"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Mathematics ends in -s but names one subject, so it takes a singular verb: Mathematics is."
+  },
+  {
+    "id": "WASSCEENG-T1-042",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nOne of the girls ...... lost her bag.",
+    "options": [
+      "are",
+      "were",
+      "have",
+      "has"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The subject is one, not girls, so the verb is singular: One of the girls has lost her bag."
+  },
+  {
+    "id": "WASSCEENG-T1-043",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nTen kilometres ...... a long distance to walk to school.",
+    "options": [
+      "have",
+      "are",
+      "were",
+      "is"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A distance treated as one amount takes a singular verb: Ten kilometres is a long distance."
+  },
+  {
+    "id": "WASSCEENG-T1-044",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nThe teacher, together with his students, ...... gone on an excursion.",
+    "options": [
+      "has",
+      "have",
+      "were",
+      "are"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Words added with together with do not change the subject, the teacher, so the verb is singular: has gone."
+  },
+  {
+    "id": "WASSCEENG-T1-045",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nMany a student ...... failed that paper.",
+    "options": [
+      "have",
+      "are",
+      "has",
+      "were"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Many a is followed by a singular noun and a singular verb: Many a student has failed."
+  },
+  {
+    "id": "WASSCEENG-T1-046",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Degree",
+    "stem": "Choose the option that best completes the sentence.\n\nOf all the girls in the class, Abena is the ......",
+    "options": [
+      "much intelligent",
+      "most intelligent",
+      "intelligentest",
+      "more intelligent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Comparing one with all the others needs the superlative, the most intelligent. More is for two."
+  },
+  {
+    "id": "WASSCEENG-T1-047",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word order",
+    "stem": "Choose the option that best completes the sentence.\n\nShe bought a ...... dress for the wedding.",
+    "options": [
+      "beautiful long blue",
+      "beautiful blue long",
+      "blue long beautiful",
+      "long blue beautiful"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Adjectives go in the order opinion, size, colour: a beautiful long blue dress."
+  },
+  {
+    "id": "WASSCEENG-T1-048",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number",
+    "stem": "Choose the option that best completes the sentence.\n\nThe ...... of both hostels were repainted last year.",
+    "options": [
+      "rooves",
+      "roofes",
+      "roof",
+      "roofs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The plural of roof is roofs."
+  },
+  {
+    "id": "WASSCEENG-T1-049",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Determiners",
+    "stem": "Choose the option that best completes the sentence.\n\nThere is ...... water left in the tank, so we must fetch some more.",
+    "options": [
+      "few",
+      "a few",
+      "little",
+      "many"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Water cannot be counted, so it takes little. Few, a few and many go with countable nouns."
+  },
+  {
+    "id": "WASSCEENG-T1-050",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word forms",
+    "stem": "Choose the option that best completes the sentence.\n\nThe judge praised the boy for his ......",
+    "options": [
+      "honestly",
+      "dishonest",
+      "honesty",
+      "honest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After his, a noun is needed: his honesty. Honest is an adjective and honestly an adverb."
+  },
+  {
+    "id": "WASSCEENG-T1-051",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nNeither Kofi nor his sisters ...... at home yesterday.",
+    "options": [
+      "was",
+      "has",
+      "were",
+      "is"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With neither ... nor, the verb agrees with the nearer subject, sisters, and yesterday needs the past: were."
+  },
+  {
+    "id": "WASSCEENG-T1-052",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nThe police ...... searching the area for the missing child.",
+    "options": [
+      "has",
+      "are",
+      "is",
+      "was"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Police is always plural: The police are searching."
+  },
+  {
+    "id": "WASSCEENG-T1-053",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nEvery boy and girl ...... to bring a cutlass on Friday.",
+    "options": [
+      "have required",
+      "are required",
+      "is required",
+      "were require"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Two nouns joined after every are taken one at a time, so the verb is singular: Every boy and girl is required."
+  },
+  {
+    "id": "WASSCEENG-T1-054",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conjunctions",
+    "stem": "Choose the option that best completes the sentence.\n\n...... he was tired, he finished the work before leaving.",
+    "options": [
+      "Despite",
+      "Unless",
+      "Because",
+      "Although"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Although introduces a contrast with a full clause. Despite must be followed by a noun, as in despite his tiredness."
+  },
+  {
+    "id": "WASSCEENG-T1-055",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conditionals",
+    "stem": "Choose the option that best completes the sentence.\n\nIf you heat ice, it ......",
+    "options": [
+      "would melt",
+      "melts",
+      "had melted",
+      "melted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A general truth uses the present in both parts: If you heat ice, it melts."
+  },
+  {
+    "id": "WASSCEENG-T1-056",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mood",
+    "stem": "Choose the option that best completes the sentence.\n\nI wish I ...... the answer to that question.",
+    "options": [
+      "know",
+      "knew",
+      "will know",
+      "have known"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After I wish about the present, the verb goes back to the past: I wish I knew."
+  },
+  {
+    "id": "WASSCEENG-T1-057",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Perfect tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nBy next December, my brother ...... in Accra for ten years.",
+    "options": [
+      "will have lived",
+      "is living",
+      "will live",
+      "has lived"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By a time in the future, an action that will be complete takes the future perfect: will have lived."
+  },
+  {
+    "id": "WASSCEENG-T1-058",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Passive",
+    "stem": "Choose the option that best completes the sentence.\n\nThe letter ...... yesterday by the secretary.",
+    "options": [
+      "is typed",
+      "was typed",
+      "typed",
+      "has been typed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Yesterday needs the past, and by the secretary shows the passive: was typed."
+  },
+  {
+    "id": "WASSCEENG-T1-059",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sequence of tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nShe told me that she ...... the film the week before.",
+    "options": [
+      "has seen",
+      "had seen",
+      "sees",
+      "will see"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In reported speech after told, an earlier action moves back to the past perfect: had seen."
+  },
+  {
+    "id": "WASSCEENG-T1-060",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb forms",
+    "stem": "Choose the option that best completes the sentence.\n\nKwesi is used to ...... early every morning.",
+    "options": [
+      "waking",
+      "waked",
+      "woke",
+      "wake"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Be used to is followed by the -ing form: is used to waking."
+  },
+  {
+    "id": "WASSCEENG-T1-061",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb forms",
+    "stem": "Choose the option that best completes the sentence.\n\nThe doctor advised him to avoid ...... sugary drinks.",
+    "options": [
+      "taking",
+      "to take",
+      "take",
+      "took"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Avoid is followed by the -ing form: avoid taking."
+  },
+  {
+    "id": "WASSCEENG-T1-062",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Perfect tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nThe bell ...... before we reached the school.",
+    "options": [
+      "rings",
+      "has rung",
+      "had rung",
+      "was ring"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Of two past actions, the earlier one takes the past perfect: the bell had rung before we reached."
+  },
+  {
+    "id": "WASSCEENG-T1-063",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conditionals",
+    "stem": "Choose the option that best completes the sentence.\n\nUnless he ...... harder, he will lose his job.",
+    "options": [
+      "works",
+      "had worked",
+      "worked",
+      "will work"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After unless, as after if, the present is used for a future condition: Unless he works harder."
+  },
+  {
+    "id": "WASSCEENG-T1-064",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Continuous tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nLook! The goats ...... the cassava leaves.",
+    "options": [
+      "ate",
+      "eat",
+      "are eating",
+      "have eat"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Look! shows the action is happening now, so the present continuous is used."
+  },
+  {
+    "id": "WASSCEENG-T1-065",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb forms",
+    "stem": "Choose the option that best completes the sentence.\n\nThe thief was made to ...... the stolen phone.",
+    "options": [
+      "returns",
+      "returned",
+      "returning",
+      "return"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After to, the base form of the verb is used: was made to return."
+  },
+  {
+    "id": "WASSCEENG-T1-066",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Perfect tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nWe ...... in this house since 2019.",
+    "options": [
+      "live",
+      "are living",
+      "have lived",
+      "lived"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Since a past point up to now needs the present perfect: We have lived here since 2019."
+  },
+  {
+    "id": "WASSCEENG-T1-067",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Passive",
+    "stem": "Choose the option that best completes the sentence.\n\nThe new hospital ...... next year by the government.",
+    "options": [
+      "will open",
+      "has opened",
+      "opens",
+      "will be opened"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Next year needs the future, and by the government shows the passive: will be opened."
+  },
+  {
+    "id": "WASSCEENG-T1-068",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pronouns",
+    "stem": "Choose the option that best completes the sentence.\n\nBetween you and ......, the plan will not work.",
+    "options": [
+      "mine",
+      "me",
+      "I",
+      "myself"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Between is a preposition, so the pronoun after it is the object form: between you and me."
+  },
+  {
+    "id": "WASSCEENG-T1-069",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relative pronouns",
+    "stem": "Choose the option that best completes the sentence.\n\nThe girl ...... father is a doctor won the prize.",
+    "options": [
+      "whose",
+      "who",
+      "whom",
+      "which"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Whose shows possession: the girl whose father is a doctor."
+  },
+  {
+    "id": "WASSCEENG-T1-070",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relative pronouns",
+    "stem": "Choose the option that best completes the sentence.\n\nThe man ...... you met yesterday is my uncle.",
+    "options": [
+      "what",
+      "whom",
+      "whose",
+      "which"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Whom is the object of met: you met him, so the man whom you met."
+  },
+  {
+    "id": "WASSCEENG-T1-071",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nShe is very good ...... mathematics.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "with"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Good takes at for a subject or skill: good at mathematics."
+  },
+  {
+    "id": "WASSCEENG-T1-072",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nThe boy was punished for being absent ...... school.",
+    "options": [
+      "of",
+      "from",
+      "at",
+      "in"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Absent takes from: absent from school."
+  },
+  {
+    "id": "WASSCEENG-T1-073",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nWe arrived ...... Lagos late at night.",
+    "options": [
+      "to",
+      "on",
+      "at",
+      "in"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Arrive takes in for a city or country and at for a building or smaller place: arrived in Lagos."
+  },
+  {
+    "id": "WASSCEENG-T1-074",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nHe prefers rice ...... yam.",
+    "options": [
+      "over",
+      "from",
+      "to",
+      "than"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Prefer is followed by to, not than: He prefers rice to yam."
+  },
+  {
+    "id": "WASSCEENG-T1-075",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Question tags",
+    "stem": "Choose the option that best completes the sentence.\n\nShe can swim, ......?",
+    "options": [
+      "doesn't she",
+      "can't she",
+      "can she",
+      "isn't she"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A positive statement with can takes a negative tag with the same auxiliary: can't she."
+  },
+  {
+    "id": "WASSCEENG-T1-076",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Question tags",
+    "stem": "Choose the option that best completes the sentence.\n\nThey had finished the work, ......?",
+    "options": [
+      "didn't they",
+      "haven't they",
+      "hadn't they",
+      "had they"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The tag repeats the auxiliary had in the negative: hadn't they."
+  },
+  {
+    "id": "WASSCEENG-T1-077",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Question tags",
+    "stem": "Choose the option that best completes the sentence.\n\nThere is enough food for everyone, ......?",
+    "options": [
+      "isn't there",
+      "isn't it",
+      "is there",
+      "aren't there"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A sentence beginning There is takes the tag isn't there."
+  },
+  {
+    "id": "WASSCEENG-T1-078",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phrasal verbs",
+    "stem": "Choose the option that best completes the sentence.\n\nThe meeting has been put ...... until next week.",
+    "options": [
+      "up",
+      "off",
+      "out",
+      "away"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To put off is to postpone. Put out means extinguish and put away means store."
+  },
+  {
+    "id": "WASSCEENG-T1-079",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conjunctions",
+    "stem": "Choose the option that best completes the sentence.\n\nHe went to school ...... he was ill.",
+    "options": [
+      "unless",
+      "although",
+      "because",
+      "so"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Going to school while ill is a contrast, so the conjunction is although."
+  },
+  {
+    "id": "WASSCEENG-T1-080",
+    "section": "p1",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pronouns",
+    "stem": "Choose the option that best completes the sentence.\n\nThe headmaster ...... welcomed the visitors at the gate.",
+    "options": [
+      "themselves",
+      "hisself",
+      "itself",
+      "himself"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The emphatic pronoun for the headmaster is himself. Hisself is not standard English."
+  },
+  {
+    "id": "WASSCEENG-T1-081",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nb__ea__t",
+    "options": [
+      "bit",
+      "bait",
+      "field",
+      "bet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Beat has the long vowel /iː/, as in field. Bit has /ɪ/, bet /e/ and bait /eɪ/."
+  },
+  {
+    "id": "WASSCEENG-T1-082",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nc__au__ght",
+    "options": [
+      "floor",
+      "cot",
+      "cut",
+      "coat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Caught has /ɔː/, the vowel of floor. Cot has /ɒ/, cut /ʌ/ and coat /əʊ/."
+  },
+  {
+    "id": "WASSCEENG-T1-083",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nf__a__ther",
+    "options": [
+      "curl",
+      "cat",
+      "came",
+      "calm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The a in father is /ɑː/, as in calm, where the l is silent. Cat has /æ/, came /eɪ/ and curl /ɜː/."
+  },
+  {
+    "id": "WASSCEENG-T1-084",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nh__ur__t",
+    "options": [
+      "learn",
+      "hat",
+      "hot",
+      "hut"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hurt has /ɜː/, as in learn. Hut has /ʌ/, hot /ɒ/ and hat /æ/."
+  },
+  {
+    "id": "WASSCEENG-T1-085",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nf__oo__d",
+    "options": [
+      "fond",
+      "foot",
+      "flood",
+      "shoe"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Food has the long /uː/, as in shoe. Foot has the short /ʊ/, fond /ɒ/ and flood /ʌ/."
+  },
+  {
+    "id": "WASSCEENG-T1-086",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nm__y__",
+    "options": [
+      "mow",
+      "may",
+      "buy",
+      "me"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "My has the diphthong /aɪ/, as in buy. May has /eɪ/, me /iː/ and mow /əʊ/."
+  },
+  {
+    "id": "WASSCEENG-T1-087",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nb__oy__",
+    "options": [
+      "bough",
+      "bore",
+      "buy",
+      "voice"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Boy has the diphthong /ɔɪ/, as in voice. Buy has /aɪ/, bough /aʊ/ and bore /ɔː/."
+  },
+  {
+    "id": "WASSCEENG-T1-088",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phonetic symbols",
+    "stem": "Which of the following words contains the vowel sound /ʌ/?",
+    "options": [
+      "morning",
+      "mining",
+      "moody",
+      "money"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The o in money is /ʌ/: /ˈmʌni/. Moody has /uː/, morning /ɔː/ and mining /aɪ/."
+  },
+  {
+    "id": "WASSCEENG-T1-089",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Which of the following words has a different vowel sound from the others?",
+    "options": [
+      "bad",
+      "call",
+      "cat",
+      "man"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cat, man and bad all have the short /æ/. Call has the long /ɔː/."
+  },
+  {
+    "id": "WASSCEENG-T1-090",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Triphthongs",
+    "stem": "Which of the following words contains a triphthong?",
+    "options": [
+      "fear",
+      "fair",
+      "fire",
+      "far"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fire has three vowel qualities in one syllable, /aɪə/. Fair /eə/ and fear /ɪə/ are diphthongs and far /ɑː/ is a pure vowel."
+  },
+  {
+    "id": "WASSCEENG-T1-091",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\n__c__ity",
+    "options": [
+      "kitchen",
+      "cake",
+      "chalk",
+      "cinema"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The c in city is /s/, as in cinema. Before a, c is /k/ (cake), ch in chalk is /tʃ/ and kitchen begins with /k/."
+  },
+  {
+    "id": "WASSCEENG-T1-092",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\nenou__gh__",
+    "options": [
+      "night",
+      "though",
+      "ghost",
+      "cough"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The gh in enough is /f/, as in cough. It is silent in though and night, and in ghost it is /ɡ/."
+  },
+  {
+    "id": "WASSCEENG-T1-093",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\n__th__ink",
+    "options": [
+      "mother",
+      "these",
+      "tank",
+      "method"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Think begins with the voiceless /θ/, as in method. Mother and these have the voiced /ð/, and tank has /t/."
+  },
+  {
+    "id": "WASSCEENG-T1-094",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\n__s__ugar",
+    "options": [
+      "chair",
+      "ocean",
+      "soup",
+      "measure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The s in sugar is /ʃ/, the same sound as the c in ocean. Soup has /s/, chair /tʃ/ and the s in measure /ʒ/."
+  },
+  {
+    "id": "WASSCEENG-T1-095",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Silent letters",
+    "stem": "In which of the following words is the underlined letter not pronounced?",
+    "options": [
+      "s__w__eet",
+      "__w__rite",
+      "__w__ater",
+      "t__w__in"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The w in write is silent: /raɪt/. It is pronounced in sweet, water and twin."
+  },
+  {
+    "id": "WASSCEENG-T1-096",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Endings",
+    "stem": "In which of the following words is the final -ed pronounced /t/?",
+    "options": [
+      "cleaned",
+      "waited",
+      "needed",
+      "jumped"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After a voiceless sound such as /p/, -ed is /t/: jumped. Needed and waited end in /ɪd/, and cleaned in /d/."
+  },
+  {
+    "id": "WASSCEENG-T1-097",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consonant clusters",
+    "stem": "Which of the following words begins with a consonant cluster?",
+    "options": [
+      "eat",
+      "sheet",
+      "seat",
+      "street"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Street begins with three consonant sounds together, /str/. Seat and sheet begin with one consonant sound each, /s/ and /ʃ/."
+  },
+  {
+    "id": "WASSCEENG-T1-098",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phonetic symbols",
+    "stem": "Which of the following words contains the consonant sound /v/?",
+    "options": [
+      "phone",
+      "fan",
+      "of",
+      "off"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The f in of is pronounced /v/: /ɒv/. Off, fan and phone all have /f/."
+  },
+  {
+    "id": "WASSCEENG-T1-099",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"great\".",
+    "options": [
+      "threat",
+      "late",
+      "treat",
+      "greet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Great is /ɡreɪt/, so it rhymes with late. Treat and greet have /iːt/ and threat has /et/."
+  },
+  {
+    "id": "WASSCEENG-T1-100",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"home\".",
+    "options": [
+      "some",
+      "come",
+      "tomb",
+      "comb"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Home and comb both end in /əʊm/. Come and some have /ʌm/ and tomb has /uːm/."
+  },
+  {
+    "id": "WASSCEENG-T1-101",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Which of the following pairs of words rhymes?",
+    "options": [
+      "wood / mood",
+      "wood / food",
+      "wood / flood",
+      "wood / should"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Wood and should both end in /ʊd/. Mood and food have /uːd/, and flood has /ʌd/."
+  },
+  {
+    "id": "WASSCEENG-T1-102",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with the underlined word in the line below.\n\nThe farmer worked until the sun went __down__.",
+    "options": [
+      "crown",
+      "known",
+      "grown",
+      "drawn"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Down and crown both end in /aʊn/. Grown and known have /əʊn/ and drawn has /ɔːn/."
+  },
+  {
+    "id": "WASSCEENG-T1-103",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "In the options, the syllable written in capital letters carries the primary stress. Choose the correct stress pattern for \"education\".",
+    "options": [
+      "ed-u-ca-TION",
+      "ed-u-CA-tion",
+      "ed-U-ca-tion",
+      "ED-u-ca-tion"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Words ending in -tion are stressed on the syllable just before the ending: ed-u-CA-tion."
+  },
+  {
+    "id": "WASSCEENG-T1-104",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "Which of the following words is stressed on the first syllable?",
+    "options": [
+      "market",
+      "attend",
+      "decide",
+      "police"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MAR-ket is stressed on the first syllable. Po-LICE, de-CIDE and at-TEND are stressed on the second."
+  },
+  {
+    "id": "WASSCEENG-T1-105",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "In which of the following sentences is the word \"record\" stressed on the first syllable?",
+    "options": [
+      "They will record a new song.",
+      "Please record the meeting.",
+      "She broke the world record.",
+      "The clerk must record every sale."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "As a noun, record is stressed on the first syllable, REC-ord. As a verb it is re-CORD, so in the other sentences the stress falls on the second syllable."
+  },
+  {
+    "id": "WASSCEENG-T1-106",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "Which of the following words has a different stress pattern from the others?",
+    "options": [
+      "garden",
+      "guitar",
+      "teacher",
+      "father"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Teacher, father and garden are stressed on the first syllable. Guitar is stressed on the second: gui-TAR."
+  },
+  {
+    "id": "WASSCEENG-T1-107",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllable structure",
+    "stem": "How many syllables does the word \"university\" have?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "u-ni-ver-si-ty has five syllables."
+  },
+  {
+    "id": "WASSCEENG-T1-108",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emphatic stress",
+    "stem": "In the sentence below, the word in capital letters carries the emphatic stress. Choose the option to which the sentence relates.\n\n\"Kofi sold his BICYCLE yesterday.\"",
+    "options": [
+      "When did Kofi sell his bicycle?",
+      "Did Kofi sell his car yesterday?",
+      "Who sold his bicycle yesterday?",
+      "Did Kofi buy his bicycle yesterday?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stress on bicycle corrects the thing that was sold, so the sentence answers a question that names something else, such as a car."
+  },
+  {
+    "id": "WASSCEENG-T1-109",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emphatic stress",
+    "stem": "In the sentence below, the word in capital letters carries the emphatic stress. Choose the option to which the sentence relates.\n\n\"My mother cooked the rice YESTERDAY.\"",
+    "options": [
+      "Did your mother cook the rice today?",
+      "Who cooked the rice yesterday?",
+      "What did your mother cook yesterday?",
+      "Did your mother buy the rice yesterday?"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Stress on yesterday corrects the time, so the sentence answers a question that names a different day."
+  },
+  {
+    "id": "WASSCEENG-T1-110",
+    "section": "p3",
+    "test": 1,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Intonation",
+    "stem": "Which of the following sentences is normally said with a falling tune at the end?",
+    "options": [
+      "Are you ready?",
+      "Can you help me?",
+      "Is this your bag?",
+      "Where do you live?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A wh- question such as Where do you live? normally ends with a falling tune. Questions that expect yes or no normally rise."
+  },
+  {
+    "id": "WASSCEENG-T2-001",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Building",
+    "stem": "Choose the option that best completes the sentence.\n\nThe roof was held up by wooden ...... that sloped from the ridge down to the walls.",
+    "options": [
+      "windows",
+      "foundations",
+      "gutters",
+      "rafters"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rafters are the sloping beams that support a roof. Foundations lie under the walls and gutters carry rainwater away."
+  },
+  {
+    "id": "WASSCEENG-T2-002",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Choose the option that best completes the sentence.\n\nTo grow vegetables in the dry season, the farmers depend on ...... from the river.",
+    "options": [
+      "harvest",
+      "erosion",
+      "irrigation",
+      "manure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Irrigation is supplying land with water through channels or pipes. Erosion is the wearing away of soil."
+  },
+  {
+    "id": "WASSCEENG-T2-003",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fishing",
+    "stem": "Choose the option that best completes the sentence.\n\nThe women dried and smoked the day's ...... before taking it to the market.",
+    "options": [
+      "raft",
+      "bait",
+      "catch",
+      "hook"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A catch is the fish caught on a trip. Bait is what is put on a hook to attract fish."
+  },
+  {
+    "id": "WASSCEENG-T2-004",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stock exchange",
+    "stem": "Choose the option that best completes the sentence.\n\nPeople who buy and sell shares on behalf of investors are called ......",
+    "options": [
+      "stockbrokers",
+      "auctioneers",
+      "auditors",
+      "cashiers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A stockbroker trades shares for clients. Auditors check accounts and auctioneers sell goods to the highest bidder."
+  },
+  {
+    "id": "WASSCEENG-T2-005",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Choose the option that best completes the sentence.\n\nAfter the operation, the patient was moved from the theatre to the ...... to recover.",
+    "options": [
+      "ward",
+      "pharmacy",
+      "mortuary",
+      "dispensary"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Patients stay and recover in a hospital ward. A dispensary and a pharmacy give out drugs, and a mortuary keeps the dead."
+  },
+  {
+    "id": "WASSCEENG-T2-006",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Choose the option that best completes the sentence.\n\nSmoke from factories and old vehicles is a major cause of air ...... in our cities.",
+    "options": [
+      "pollution",
+      "flooding",
+      "erosion",
+      "drought"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pollution is making air, water or land dirty and harmful. Smoke pollutes the air."
+  },
+  {
+    "id": "WASSCEENG-T2-007",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ceremonies",
+    "stem": "Choose the option that best completes the sentence.\n\nAt the burial, the mourners sang ...... in honour of the late chief.",
+    "options": [
+      "dirges",
+      "carols",
+      "lullabies",
+      "anthems"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A dirge is a sad song for the dead. Lullabies are sung to send babies to sleep and carols are sung at Christmas."
+  },
+  {
+    "id": "WASSCEENG-T2-008",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Law and order",
+    "stem": "Choose the option that best completes the sentence.\n\nThe suspect was taken to the police station, where he was ...... with armed robbery.",
+    "options": [
+      "acquitted",
+      "charged",
+      "convicted",
+      "accused"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A suspect is charged with a crime. Accused takes of, not with, and convicted and acquitted come only after a trial."
+  },
+  {
+    "id": "WASSCEENG-T2-009",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Motor vehicles and travelling",
+    "stem": "Choose the option that best completes the sentence.\n\nThe mechanic said the car would not start because the ...... was flat.",
+    "options": [
+      "bonnet",
+      "windscreen",
+      "battery",
+      "boot"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A flat battery cannot turn the engine over, so the car will not start. The bonnet covers the engine and the boot holds luggage."
+  },
+  {
+    "id": "WASSCEENG-T2-010",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Government and administration",
+    "stem": "Choose the option that best completes the sentence.\n\nThe commissioner was asked to ...... after he was found to have misused public funds.",
+    "options": [
+      "nominate",
+      "resign",
+      "campaign",
+      "legislate"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To resign is to give up one's office. Legislate means to make laws and nominate means to propose someone for a post."
+  },
+  {
+    "id": "WASSCEENG-T2-011",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "Choose the option that best completes the sentence.\n\nThe goalkeeper made a brilliant save, and the ...... rose to their feet to cheer.",
+    "options": [
+      "referees",
+      "spectators",
+      "substitutes",
+      "linesmen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spectators are the people watching a match. Referees and linesmen officiate, and substitutes wait on the bench."
+  },
+  {
+    "id": "WASSCEENG-T2-012",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Religion",
+    "stem": "Choose the option that best completes the sentence.\n\nEvery year, thousands of Muslims travel to Mecca on ......",
+    "options": [
+      "pilgrimage",
+      "crusade",
+      "sabbatical",
+      "procession"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A pilgrimage is a journey to a holy place, and the journey to Mecca is the hajj. A sabbatical is a period of leave from work."
+  },
+  {
+    "id": "WASSCEENG-T2-013",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science and technology",
+    "stem": "Choose the option that best completes the sentence.\n\nSignals from a weather ...... in orbit help forecasters warn farmers of coming storms.",
+    "options": [
+      "antenna",
+      "satellite",
+      "generator",
+      "laboratory"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A satellite orbits the earth and sends back signals, such as weather images. An antenna only receives or sends signals on the ground."
+  },
+  {
+    "id": "WASSCEENG-T2-014",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Animal husbandry",
+    "stem": "Choose the option that best completes the sentence.\n\nThe farmer called a ...... to treat his sick goats.",
+    "options": [
+      "dentist",
+      "midwife",
+      "vet",
+      "chemist"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A vet, short for veterinary surgeon, treats animals. A chemist sells medicine and a midwife helps women give birth."
+  },
+  {
+    "id": "WASSCEENG-T2-015",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Advertising",
+    "stem": "Choose the option that best completes the sentence.\n\nThe radio station kept playing a catchy ...... that made everyone remember the new brand of rice.",
+    "options": [
+      "poster",
+      "banner",
+      "jingle",
+      "billboard"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A jingle is a short tune used to advertise a product on radio or television. A billboard, poster and banner are seen, not heard."
+  },
+  {
+    "id": "WASSCEENG-T2-016",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Choose the option that best completes the sentence.\n\nFood passes from the mouth to the stomach through the ......",
+    "options": [
+      "bladder",
+      "oesophagus",
+      "trachea",
+      "artery"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The oesophagus, or gullet, carries food to the stomach. The trachea, or windpipe, carries air to the lungs."
+  },
+  {
+    "id": "WASSCEENG-T2-017",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe villagers were __jubilant__ when their team won the cup.",
+    "options": [
+      "silent",
+      "tired",
+      "angry",
+      "joyful"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jubilant means full of joy at a success."
+  },
+  {
+    "id": "WASSCEENG-T2-018",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe teacher told the class to be __concise__ in their answers.",
+    "options": [
+      "honest",
+      "careful",
+      "polite",
+      "brief"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Concise means saying a lot in few words, that is, brief."
+  },
+  {
+    "id": "WASSCEENG-T2-019",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe thief __confessed__ that he had taken the money.",
+    "options": [
+      "denied",
+      "pretended",
+      "forgot",
+      "admitted"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To confess is to admit a wrong. Denied is its opposite."
+  },
+  {
+    "id": "WASSCEENG-T2-020",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe machines in the old factory are now __obsolete__.",
+    "options": [
+      "broken",
+      "outdated",
+      "imported",
+      "expensive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Obsolete means no longer used because something newer has replaced it."
+  },
+  {
+    "id": "WASSCEENG-T2-021",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nHalima showed great __fortitude__ during her long illness.",
+    "options": [
+      "wisdom",
+      "fear",
+      "wealth",
+      "courage"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fortitude is courage in pain or trouble."
+  },
+  {
+    "id": "WASSCEENG-T2-022",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe rumour about the school closing turned out to be __unfounded__.",
+    "options": [
+      "old",
+      "harmful",
+      "baseless",
+      "widespread"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unfounded means not based on facts, that is, baseless."
+  },
+  {
+    "id": "WASSCEENG-T2-023",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe farmer __toiled__ on his land from dawn to dusk.",
+    "options": [
+      "rested",
+      "wandered",
+      "laboured",
+      "sang"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To toil is to work very hard, to labour."
+  },
+  {
+    "id": "WASSCEENG-T2-024",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe new chairman is a __humble__ man.",
+    "options": [
+      "poor",
+      "quiet",
+      "generous",
+      "arrogant"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A humble person does not think himself better than others. An arrogant person does."
+  },
+  {
+    "id": "WASSCEENG-T2-025",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe water in the stream is __shallow__ here.",
+    "options": [
+      "muddy",
+      "cold",
+      "clear",
+      "deep"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Shallow water is not deep."
+  },
+  {
+    "id": "WASSCEENG-T2-026",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe guests found the soup __delicious__.",
+    "options": [
+      "sweet",
+      "tasteless",
+      "filling",
+      "expensive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Delicious food tastes very good. Tasteless food has little or no flavour."
+  },
+  {
+    "id": "WASSCEENG-T2-027",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nEmeka's handwriting is __legible__.",
+    "options": [
+      "slanted",
+      "neat",
+      "small",
+      "unreadable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Legible writing can be read easily, so its opposite is unreadable."
+  },
+  {
+    "id": "WASSCEENG-T2-028",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe government plans to __expand__ the road through the town.",
+    "options": [
+      "repair",
+      "narrow",
+      "widen",
+      "close"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To expand is to make larger. Here the opposite is to narrow the road; widen means the same as expand."
+  },
+  {
+    "id": "WASSCEENG-T2-029",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe two families settled their dispute in an __amicable__ way.",
+    "options": [
+      "unfriendly",
+      "peaceful",
+      "costly",
+      "businesslike"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amicable means friendly and without quarrelling. Peaceful is close in meaning."
+  },
+  {
+    "id": "WASSCEENG-T2-030",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe trader's prices are __moderate__.",
+    "options": [
+      "fair",
+      "excessive",
+      "negotiable",
+      "fixed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moderate prices are reasonable. Excessive prices are far too high."
+  },
+  {
+    "id": "WASSCEENG-T2-031",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"When his father lost his job, Femi had to tighten his belt.\"",
+    "options": [
+      "He borrowed money",
+      "He found work at once",
+      "He lost a lot of weight",
+      "He had to spend less"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To tighten your belt is to spend less money because you have less."
+  },
+  {
+    "id": "WASSCEENG-T2-032",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The two brothers do not see eye to eye on the sale of the land.\"",
+    "options": [
+      "They agree completely",
+      "They disagree about it",
+      "They both have poor sight",
+      "They avoid each other"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To see eye to eye is to agree, so not seeing eye to eye means disagreeing."
+  },
+  {
+    "id": "WASSCEENG-T2-033",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"Esi passed the examination with flying colours.\"",
+    "options": [
+      "She passed at last",
+      "She barely passed",
+      "She passed very well",
+      "She passed by cheating"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To pass with flying colours is to pass with great success."
+  },
+  {
+    "id": "WASSCEENG-T2-034",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The new tax law is a double-edged sword.\"",
+    "options": [
+      "It is very harsh",
+      "It has good and bad effects",
+      "It will soon be changed",
+      "It is easy to enforce"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A double-edged sword is something that brings both advantages and disadvantages."
+  },
+  {
+    "id": "WASSCEENG-T2-035",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The storekeeper was caught red-handed stealing from the warehouse.\"",
+    "options": [
+      "He was caught by his family",
+      "He was caught after a search",
+      "He had blood on his hands",
+      "He was caught in the act"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To be caught red-handed is to be caught while doing something wrong."
+  },
+  {
+    "id": "WASSCEENG-T2-036",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"After years of losses, the old textile company is on its last legs.\"",
+    "options": [
+      "It is about to collapse",
+      "It is run by old people",
+      "It is growing fast",
+      "It has moved away"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Something on its last legs is close to failing or ending."
+  },
+  {
+    "id": "WASSCEENG-T2-037",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Figurative usage",
+    "stem": "In which of the following sentences is the underlined expression used figuratively?",
+    "options": [
+      "The soles of her sandals __wore thin__.",
+      "The teacher's patience __wore thin__ by noon.",
+      "The mat by the door __wore thin__.",
+      "The elbows of his shirt __wore thin__."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Patience is not cloth, so wore thin there means began to run out, a figurative use. Shirts, mats and sandals really wear thin."
+  },
+  {
+    "id": "WASSCEENG-T2-038",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The youngest son is the apple of his mother's eye.\"",
+    "options": [
+      "He is her favourite",
+      "He has an eye problem",
+      "He sells fruit",
+      "He disobeys her"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The apple of someone's eye is the person they love most."
+  },
+  {
+    "id": "WASSCEENG-T2-039",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"Kwame took the bull by the horns and reported the matter to the police.\"",
+    "options": [
+      "He fought with a bull",
+      "He faced the problem boldly",
+      "He waited for help",
+      "He acted foolishly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To take the bull by the horns is to deal with a difficult problem directly and bravely."
+  },
+  {
+    "id": "WASSCEENG-T2-040",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"No sooner had we reached the gate than the rain started.\"",
+    "options": [
+      "The rain stopped as we arrived",
+      "We waited for the rain",
+      "We arrived after the rain",
+      "It rained as soon as we arrived"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "No sooner ... than means that the second event happened immediately after the first."
+  },
+  {
+    "id": "WASSCEENG-T2-041",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nMeasles ...... a dangerous disease for young children.",
+    "options": [
+      "were",
+      "is",
+      "are",
+      "have been"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Measles ends in -s but names one disease, so the verb is singular: Measles is."
+  },
+  {
+    "id": "WASSCEENG-T2-042",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nEach of the players ...... a new pair of boots.",
+    "options": [
+      "are receiving",
+      "has received",
+      "were receive",
+      "have received"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each is singular, so the verb is singular: Each of the players has received."
+  },
+  {
+    "id": "WASSCEENG-T2-043",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nFive hundred naira ...... too much for a plate of rice.",
+    "options": [
+      "have",
+      "is",
+      "were",
+      "are"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sum of money treated as one amount takes a singular verb."
+  },
+  {
+    "id": "WASSCEENG-T2-044",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nThe headmaster, as well as the teachers, ...... present at the meeting.",
+    "options": [
+      "was",
+      "are",
+      "have",
+      "were"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "As well as does not join subjects, so the verb agrees with the headmaster: was."
+  },
+  {
+    "id": "WASSCEENG-T2-045",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nThe majority of the farmers ...... their crops early this year.",
+    "options": [
+      "has harvested",
+      "was harvesting",
+      "have harvested",
+      "is harvesting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When the majority of is followed by a plural noun, the verb is plural: the majority of the farmers have harvested."
+  },
+  {
+    "id": "WASSCEENG-T2-046",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Degree",
+    "stem": "Choose the option that best completes the sentence.\n\nThis road is ...... than the one we used last year.",
+    "options": [
+      "worse",
+      "badder",
+      "worst",
+      "more worse"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The comparative of bad is worse. Worst is the superlative and more worse is a double comparative."
+  },
+  {
+    "id": "WASSCEENG-T2-047",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word order",
+    "stem": "Choose the option that best completes the sentence.\n\nGrandmother lives in a ...... house near the market.",
+    "options": [
+      "small old wooden",
+      "small wooden old",
+      "old small wooden",
+      "wooden old small"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Adjectives go in the order size, age, material: a small old wooden house."
+  },
+  {
+    "id": "WASSCEENG-T2-048",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Number",
+    "stem": "Choose the option that best completes the sentence.\n\nThe bride's two ...... sat at the high table.",
+    "options": [
+      "mothers-in-law",
+      "mother-in-law",
+      "mother-in-laws",
+      "mothers-in-laws"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a compound like mother-in-law, the main noun takes the plural: mothers-in-law."
+  },
+  {
+    "id": "WASSCEENG-T2-049",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Determiners",
+    "stem": "Choose the option that best completes the sentence.\n\n...... students came to the lesson, so it was cancelled.",
+    "options": [
+      "Little",
+      "A lot",
+      "Much",
+      "Few"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Students can be counted, so the determiner is few. Little and much go with nouns that cannot be counted, and a lot needs of."
+  },
+  {
+    "id": "WASSCEENG-T2-050",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word forms",
+    "stem": "Choose the option that best completes the sentence.\n\nThe pupils listened ...... to the story.",
+    "options": [
+      "attentively",
+      "attend",
+      "attention",
+      "attentive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An adverb is needed to describe how they listened: attentively."
+  },
+  {
+    "id": "WASSCEENG-T2-051",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nEither the teacher or the pupils ...... to blame.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "has been"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With either ... or, the verb agrees with the nearer subject, pupils, so it is plural: are."
+  },
+  {
+    "id": "WASSCEENG-T2-052",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nThe cattle ...... grazing by the river.",
+    "options": [
+      "is",
+      "was",
+      "has",
+      "are"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cattle is a plural noun: The cattle are grazing."
+  },
+  {
+    "id": "WASSCEENG-T2-053",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nThe furniture in the staff room ...... very old.",
+    "options": [
+      "is",
+      "were",
+      "have",
+      "are"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Furniture cannot be counted and takes a singular verb: The furniture is old."
+  },
+  {
+    "id": "WASSCEENG-T2-054",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conjunctions",
+    "stem": "Choose the option that best completes the sentence.\n\nYou will miss the bus ...... you leave now.",
+    "options": [
+      "unless",
+      "although",
+      "because",
+      "if"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Unless means if not: you will miss the bus if you do not leave now."
+  },
+  {
+    "id": "WASSCEENG-T2-055",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simple present",
+    "stem": "Choose the option that best completes the sentence.\n\nWater ...... at 100 degrees Celsius at sea level.",
+    "options": [
+      "boils",
+      "is boiling",
+      "boiled",
+      "has boiled"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A scientific fact is stated in the simple present: Water boils."
+  },
+  {
+    "id": "WASSCEENG-T2-056",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mood",
+    "stem": "Choose the option that best completes the sentence.\n\nIt is high time the government ...... the roads.",
+    "options": [
+      "repaired",
+      "repairs",
+      "has repaired",
+      "repair"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "It is high time is followed by the past form, even though the meaning is present: it is high time the government repaired."
+  },
+  {
+    "id": "WASSCEENG-T2-057",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Perfect tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nBy the time you arrive, we ...... the hall.",
+    "options": [
+      "have decorated",
+      "will have decorated",
+      "decorated",
+      "had decorated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An action complete before a future time takes the future perfect: will have decorated."
+  },
+  {
+    "id": "WASSCEENG-T2-058",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Passive",
+    "stem": "Choose the option that best completes the sentence.\n\nThe winning goal ...... by the youngest player in the team.",
+    "options": [
+      "was scored",
+      "were scored",
+      "has score",
+      "scored"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The goal did not score anything; it was scored by the player, so the passive is needed."
+  },
+  {
+    "id": "WASSCEENG-T2-059",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sequence of tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nHe asked me where I ......",
+    "options": [
+      "live",
+      "will live",
+      "am living",
+      "lived"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In a reported question after asked, the verb moves back to the past: where I lived."
+  },
+  {
+    "id": "WASSCEENG-T2-060",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb forms",
+    "stem": "Choose the option that best completes the sentence.\n\nI look forward to ...... from you soon.",
+    "options": [
+      "be hearing",
+      "heard",
+      "hearing",
+      "hear"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In look forward to, to is a preposition, so the -ing form follows: look forward to hearing."
+  },
+  {
+    "id": "WASSCEENG-T2-061",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb forms",
+    "stem": "Choose the option that best completes the sentence.\n\nShe could not help ...... when she heard the joke.",
+    "options": [
+      "laughing",
+      "laugh",
+      "laughed",
+      "to laugh"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cannot help, meaning cannot stop oneself, is followed by the -ing form: could not help laughing."
+  },
+  {
+    "id": "WASSCEENG-T2-062",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Perfect tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nWhen we got to the station, the train had already ......",
+    "options": [
+      "leaves",
+      "leave",
+      "leaving",
+      "left"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Had already needs the past participle: had already left."
+  },
+  {
+    "id": "WASSCEENG-T2-063",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conditionals",
+    "stem": "Choose the option that best completes the sentence.\n\nHad he listened to his parents, he ...... into trouble.",
+    "options": [
+      "will not get",
+      "had not got",
+      "would not get",
+      "would not have got"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Had he listened means if he had listened, a past condition, so the result is would not have got."
+  },
+  {
+    "id": "WASSCEENG-T2-064",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Continuous tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nListen! Someone ...... at the door.",
+    "options": [
+      "has knock",
+      "knocked",
+      "is knocking",
+      "knocks"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Listen! shows the action is happening now, so the present continuous is used."
+  },
+  {
+    "id": "WASSCEENG-T2-065",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb forms",
+    "stem": "Choose the option that best completes the sentence.\n\nWe saw the boys ...... over the school wall.",
+    "options": [
+      "to climb",
+      "climbed",
+      "climb",
+      "had climbed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After see someone, the bare infinitive is used for a completed action: we saw the boys climb."
+  },
+  {
+    "id": "WASSCEENG-T2-066",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Perfect tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nAkosua ...... for the company for five years before she retired.",
+    "options": [
+      "had worked",
+      "works",
+      "has worked",
+      "is working"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An action that went on until another past action takes the past perfect: had worked before she retired."
+  },
+  {
+    "id": "WASSCEENG-T2-067",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Passive",
+    "stem": "Choose the option that best completes the sentence.\n\nThe results ...... announced next week.",
+    "options": [
+      "will",
+      "has been",
+      "have",
+      "will be"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Next week needs the future, and the results do not announce anything, so the passive: will be announced."
+  },
+  {
+    "id": "WASSCEENG-T2-068",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pronouns",
+    "stem": "Choose the option that best completes the sentence.\n\nThis book is ......; the other one is yours.",
+    "options": [
+      "I",
+      "me",
+      "my",
+      "mine"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A possessive pronoun that stands alone is mine. My must be followed by a noun."
+  },
+  {
+    "id": "WASSCEENG-T2-069",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relative pronouns",
+    "stem": "Choose the option that best completes the sentence.\n\nThe house ...... we bought last year has a large garden.",
+    "options": [
+      "whose",
+      "who",
+      "whom",
+      "which"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Which refers to things, here the house. Who and whom refer to people."
+  },
+  {
+    "id": "WASSCEENG-T2-070",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nThe teacher shared the sweets ...... the three pupils.",
+    "options": [
+      "within",
+      "among",
+      "between",
+      "along"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Among is used for three or more, between for two."
+  },
+  {
+    "id": "WASSCEENG-T2-071",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nThe thieves broke ...... the house through the back window.",
+    "options": [
+      "into",
+      "inside",
+      "in",
+      "onto"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To break into a building is to enter it by force."
+  },
+  {
+    "id": "WASSCEENG-T2-072",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nHer sister is married ...... a lawyer.",
+    "options": [
+      "for",
+      "by",
+      "with",
+      "to"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Married takes to: married to a lawyer."
+  },
+  {
+    "id": "WASSCEENG-T2-073",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nThe little girl is afraid ...... snakes.",
+    "options": [
+      "from",
+      "with",
+      "about",
+      "of"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Afraid takes of: afraid of snakes."
+  },
+  {
+    "id": "WASSCEENG-T2-074",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nHe insisted ...... paying for the meal.",
+    "options": [
+      "at",
+      "on",
+      "to",
+      "for"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Insist takes on: insisted on paying."
+  },
+  {
+    "id": "WASSCEENG-T2-075",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Question tags",
+    "stem": "Choose the option that best completes the sentence.\n\nYou didn't see the accident, ......?",
+    "options": [
+      "didn't you",
+      "saw you",
+      "do you",
+      "did you"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A negative statement takes a positive tag: did you."
+  },
+  {
+    "id": "WASSCEENG-T2-076",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Question tags",
+    "stem": "Choose the option that best completes the sentence.\n\nEverybody enjoyed the party, ......?",
+    "options": [
+      "didn't he",
+      "did they",
+      "didn't they",
+      "wasn't it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Everybody takes they in the tag, and a positive statement takes a negative tag: didn't they."
+  },
+  {
+    "id": "WASSCEENG-T2-077",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Question tags",
+    "stem": "Choose the option that best completes the sentence.\n\nPass me the salt, ......?",
+    "options": [
+      "shall we",
+      "don't you",
+      "will you",
+      "do you"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A request in the imperative usually takes the tag will you."
+  },
+  {
+    "id": "WASSCEENG-T2-078",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Phrasal verbs",
+    "stem": "Choose the option that best completes the sentence.\n\nThe children were asked to put ...... their toys after playing.",
+    "options": [
+      "out",
+      "away",
+      "on",
+      "off"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To put away is to return things to their place."
+  },
+  {
+    "id": "WASSCEENG-T2-079",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conjunctions",
+    "stem": "Choose the option that best completes the sentence.\n\nTake an umbrella ...... it rains.",
+    "options": [
+      "so that",
+      "although",
+      "unless",
+      "in case"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In case means because it may happen: take an umbrella because it may rain."
+  },
+  {
+    "id": "WASSCEENG-T2-080",
+    "section": "p1",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pronouns",
+    "stem": "Choose the option that best completes the sentence.\n\nKofi and ...... went to the market.",
+    "options": [
+      "myself",
+      "mine",
+      "I",
+      "me"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The pronoun is part of the subject, so the subject form is used: Kofi and I went."
+  },
+  {
+    "id": "WASSCEENG-T2-081",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\ns__i__t",
+    "options": [
+      "set",
+      "build",
+      "seat",
+      "sight"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sit has the short /ɪ/, as in build, where the u is silent. Seat has /iː/, set /e/ and sight /aɪ/."
+  },
+  {
+    "id": "WASSCEENG-T2-082",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nc__o__t",
+    "options": [
+      "coat",
+      "what",
+      "caught",
+      "cut"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cot has the short /ɒ/, as in what. Coat has /əʊ/, caught /ɔː/ and cut /ʌ/."
+  },
+  {
+    "id": "WASSCEENG-T2-083",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nb__a__d",
+    "options": [
+      "bud",
+      "bard",
+      "salad",
+      "bed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bad has the short /æ/, as in the first syllable of salad. Bard has /ɑː/, bed /e/ and bud /ʌ/."
+  },
+  {
+    "id": "WASSCEENG-T2-084",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nsh__ou__lder",
+    "options": [
+      "shut",
+      "bowl",
+      "should",
+      "shout"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The ou in shoulder is the diphthong /əʊ/, as in bowl. Should has /ʊ/, shout /aʊ/ and shut /ʌ/."
+  },
+  {
+    "id": "WASSCEENG-T2-085",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nh__ere__",
+    "options": [
+      "deer",
+      "hair",
+      "hire",
+      "her"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Here has the diphthong /ɪə/, as in deer. Hair has /eə/, her /ɜː/ and hire /aɪə/."
+  },
+  {
+    "id": "WASSCEENG-T2-086",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nth__ere__",
+    "options": [
+      "wear",
+      "word",
+      "were",
+      "here"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There has the diphthong /eə/, as in wear. Here has /ɪə/, and were and word have /ɜː/."
+  },
+  {
+    "id": "WASSCEENG-T2-087",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nt__ow__n",
+    "options": [
+      "torn",
+      "tone",
+      "doubt",
+      "ton"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Town has the diphthong /aʊ/, as in doubt, where the b is silent. Tone has /əʊ/, ton /ʌ/ and torn /ɔː/."
+  },
+  {
+    "id": "WASSCEENG-T2-088",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phonetic symbols",
+    "stem": "Which of the following words contains the vowel sound /ɜː/?",
+    "options": [
+      "journey",
+      "joint",
+      "juggle",
+      "jolly"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The our in journey is /ɜː/: /ˈdʒɜːni/. Jolly has /ɒ/, juggle /ʌ/ and joint /ɔɪ/."
+  },
+  {
+    "id": "WASSCEENG-T2-089",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Phonetic symbols",
+    "stem": "Which of the following words contains the vowel sound /eɪ/?",
+    "options": [
+      "break",
+      "bread",
+      "breath",
+      "breakfast"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Break is /breɪk/. In breakfast, bread and breath the ea is the short /e/."
+  },
+  {
+    "id": "WASSCEENG-T2-090",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Triphthongs",
+    "stem": "Which of the following words contains the triphthong /aʊə/?",
+    "options": [
+      "pore",
+      "pour",
+      "paw",
+      "power"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Power is /ˈpaʊə/, with /aʊ/ followed by /ə/. Pour, pore and paw all have the long /ɔː/."
+  },
+  {
+    "id": "WASSCEENG-T2-091",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\n__c__ool",
+    "options": [
+      "church",
+      "ship",
+      "chorus",
+      "cell"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cool begins with /k/, the sound of ch in chorus. Church has /tʃ/, cell /s/ and ship /ʃ/."
+  },
+  {
+    "id": "WASSCEENG-T2-092",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\n__j__ump",
+    "options": [
+      "shame",
+      "game",
+      "yam",
+      "gem"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The j in jump is /dʒ/, as in gem, where g comes before e. Game has /ɡ/, yam /j/ and shame /ʃ/."
+  },
+  {
+    "id": "WASSCEENG-T2-093",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\nmo__th__er",
+    "options": [
+      "bath",
+      "Thursday",
+      "bathe",
+      "thin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The th in mother is the voiced /ð/, as in bathe. Bath, thin and Thursday have the voiceless /θ/."
+  },
+  {
+    "id": "WASSCEENG-T2-094",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\nna__t__ion",
+    "options": [
+      "question",
+      "pleasure",
+      "special",
+      "nature"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The t in nation is /ʃ/, as in special. Question and nature have /tʃ/, and pleasure has /ʒ/."
+  },
+  {
+    "id": "WASSCEENG-T2-095",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Silent letters",
+    "stem": "In which of the following words is the underlined letter not pronounced?",
+    "options": [
+      "__s__and",
+      "i__s__land",
+      "ca__s__h",
+      "ba__s__ket"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The s in island is silent: /ˈaɪlənd/. It is pronounced in cash, basket and sand."
+  },
+  {
+    "id": "WASSCEENG-T2-096",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Endings",
+    "stem": "In which of the following words is the final -s pronounced /z/?",
+    "options": [
+      "dogs",
+      "ships",
+      "books",
+      "cats"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After a voiced sound such as /ɡ/, -s is /z/: dogs. After the voiceless /t/, /k/ and /p/ it is /s/."
+  },
+  {
+    "id": "WASSCEENG-T2-097",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consonant clusters",
+    "stem": "Which of the following words ends with a consonant cluster?",
+    "options": [
+      "deep",
+      "day",
+      "dish",
+      "desk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Desk ends with two consonant sounds together, /sk/. Dish ends in one sound, /ʃ/, deep in /p/, and day in a vowel."
+  },
+  {
+    "id": "WASSCEENG-T2-098",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phonetic symbols",
+    "stem": "Which of the following words contains the consonant sound /ŋ/?",
+    "options": [
+      "lone",
+      "land",
+      "lunch",
+      "long"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The ng in long is the single sound /ŋ/. Lone and land have /n/, and lunch has /n/ followed by /tʃ/."
+  },
+  {
+    "id": "WASSCEENG-T2-099",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"love\".",
+    "options": [
+      "stove",
+      "move",
+      "glove",
+      "cove"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Love and glove both end in /ʌv/. Move has /uːv/, and stove and cove have /əʊv/."
+  },
+  {
+    "id": "WASSCEENG-T2-100",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"fear\".",
+    "options": [
+      "bear",
+      "fire",
+      "beer",
+      "fur"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fear and beer both end in /ɪə/. Bear has /eə/, fur /ɜː/ and fire /aɪə/."
+  },
+  {
+    "id": "WASSCEENG-T2-101",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Which of the following pairs of words rhymes?",
+    "options": [
+      "cough / tough",
+      "cough / though",
+      "cough / off",
+      "cough / bough"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cough is /kɒf/, which rhymes with off. Bough is /baʊ/, though /ðəʊ/ and tough /tʌf/."
+  },
+  {
+    "id": "WASSCEENG-T2-102",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with the underlined word in the line below.\n\nThe children laughed and ran out to __play__.",
+    "options": [
+      "ploy",
+      "pea",
+      "weigh",
+      "why"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Play and weigh both end in /eɪ/; the gh in weigh is silent. Why has /aɪ/, pea /iː/ and ploy /ɔɪ/."
+  },
+  {
+    "id": "WASSCEENG-T2-103",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "In the options, the syllable written in capital letters carries the primary stress. Choose the correct stress pattern for \"necessary\".",
+    "options": [
+      "nec-es-SAR-y",
+      "NEC-es-sar-y",
+      "nec-ES-sar-y",
+      "nec-es-sar-Y"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In British English, necessary is stressed on the first syllable: NEC-es-sar-y."
+  },
+  {
+    "id": "WASSCEENG-T2-104",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "Which of the following words is stressed on the second syllable?",
+    "options": [
+      "mother",
+      "morning",
+      "mistake",
+      "master"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mis-TAKE is stressed on the second syllable. MOTH-er, MORN-ing and MAS-ter are stressed on the first."
+  },
+  {
+    "id": "WASSCEENG-T2-105",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "In which of the following sentences is the word \"object\" stressed on the second syllable?",
+    "options": [
+      "The object of the game is to score.",
+      "Did anyone object to the plan?",
+      "What is that object on the table?",
+      "He found a strange object in the bush."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "As a verb, object is ob-JECT. In the other sentences it is a noun, OB-ject, stressed on the first syllable."
+  },
+  {
+    "id": "WASSCEENG-T2-106",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "Which of the following words has a different stress pattern from the others?",
+    "options": [
+      "purpose",
+      "become",
+      "suppose",
+      "agree"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Suppose, agree and become are stressed on the second syllable. Purpose is stressed on the first: PUR-pose."
+  },
+  {
+    "id": "WASSCEENG-T2-107",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllable structure",
+    "stem": "How many syllables does the word \"geography\" have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "ge-og-ra-phy has four syllables."
+  },
+  {
+    "id": "WASSCEENG-T2-108",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Emphatic stress",
+    "stem": "In the sentence below, the word in capital letters carries the emphatic stress. Choose the option to which the sentence relates.\n\n\"AMA bought the new shoes.\"",
+    "options": [
+      "What did Ama buy?",
+      "Did Ama sell the new shoes?",
+      "Who bought the new shoes?",
+      "Did Ama buy the old shoes?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Stress on Ama, the subject, answers a question about who did the buying."
+  },
+  {
+    "id": "WASSCEENG-T2-109",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emphatic stress",
+    "stem": "In the sentence below, the word in capital letters carries the emphatic stress. Choose the option to which the sentence relates.\n\n\"We travelled to Kano by TRAIN.\"",
+    "options": [
+      "Did you travel from Kano by train?",
+      "Did you travel to Kano by bus?",
+      "Who travelled to Kano by train?",
+      "Where did you travel by train?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stress on train corrects the means of travel, so the sentence answers a question that names another one, such as a bus."
+  },
+  {
+    "id": "WASSCEENG-T2-110",
+    "section": "p3",
+    "test": 2,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Intonation",
+    "stem": "When a statement such as \"You passed the examination?\" is said with a rising tune at the end, the speaker is usually ......",
+    "options": [
+      "stating a fact",
+      "giving an order",
+      "asking a question",
+      "greeting someone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A statement said with a rising tune becomes a question. The same words with a falling tune would state a fact."
+  },
+  {
+    "id": "WASSCEENG-D-001",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Building",
+    "stem": "Choose the option that best completes the sentence.\n\nThe ...... above the door carries the weight of the wall over the opening.",
+    "options": [
+      "foundation",
+      "rafter",
+      "lintel",
+      "gutter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A lintel is the beam across the top of a door or window that holds up the wall above it."
+  },
+  {
+    "id": "WASSCEENG-D-002",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Law and order",
+    "stem": "Choose the option that best completes the sentence.\n\nThe lawyer who speaks for the accused person in court is the counsel for the ......",
+    "options": [
+      "defence",
+      "jury",
+      "prosecution",
+      "plaintiff"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Counsel for the defence acts for the accused. The prosecution brings the case against him."
+  },
+  {
+    "id": "WASSCEENG-D-003",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Choose the option that best completes the sentence.\n\nThe nurse gave the baby an injection to ...... her against measles.",
+    "options": [
+      "diagnose",
+      "immunise",
+      "operate",
+      "prescribe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To immunise is to protect someone from a disease, usually with a vaccine. To diagnose is to identify a disease."
+  },
+  {
+    "id": "WASSCEENG-D-004",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Choose the option that best completes the sentence.\n\nHeavy rain washed away the topsoil and left deep gullies, a clear sign of soil ......",
+    "options": [
+      "rotation",
+      "fertility",
+      "erosion",
+      "irrigation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Erosion is the washing or wearing away of soil by water or wind, and gullies are a common result."
+  },
+  {
+    "id": "WASSCEENG-D-005",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stock exchange",
+    "stem": "Choose the option that best completes the sentence.\n\nAt the end of the year, the shareholders received a ...... from the company's profits.",
+    "options": [
+      "dividend",
+      "mortgage",
+      "deposit",
+      "premium"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A dividend is the part of a company's profit paid to its shareholders. A premium is paid for insurance and a mortgage is a loan for a house."
+  },
+  {
+    "id": "WASSCEENG-D-006",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengFields",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Choose the option that best completes the sentence.\n\nThe farmer left part of his land ...... for two years so that the soil could regain its strength.",
+    "options": [
+      "fertile",
+      "harvested",
+      "irrigated",
+      "fallow"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Land left fallow is not planted for a time so that it can recover. Fertile land is already rich."
+  },
+  {
+    "id": "WASSCEENG-D-007",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe suspect remained __mute__ throughout the questioning.",
+    "options": [
+      "silent",
+      "angry",
+      "polite",
+      "calm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mute means not speaking."
+  },
+  {
+    "id": "WASSCEENG-D-008",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe pupils were __elated__ by the news of an extra holiday.",
+    "options": [
+      "bored",
+      "surprised",
+      "delighted",
+      "worried"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Elated means very happy and excited."
+  },
+  {
+    "id": "WASSCEENG-D-009",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Synonym",
+    "stem": "Choose the option nearest in meaning to the underlined word.\n\nThe road into the city was __congested__ with lorries.",
+    "options": [
+      "empty",
+      "crowded",
+      "flooded",
+      "damaged"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A congested road is crowded with too many vehicles."
+  },
+  {
+    "id": "WASSCEENG-D-010",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe new uniform is __compulsory__ for all students.",
+    "options": [
+      "available",
+      "optional",
+      "smart",
+      "expensive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Compulsory means required. Optional means left to one's own choice."
+  },
+  {
+    "id": "WASSCEENG-D-011",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe doctor said the patient's condition was __deteriorating__.",
+    "options": [
+      "worsening",
+      "serious",
+      "unknown",
+      "improving"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Deteriorating means getting worse, so the opposite is improving."
+  },
+  {
+    "id": "WASSCEENG-D-012",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengSynonyms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonym",
+    "stem": "Choose the option most nearly opposite in meaning to the underlined word.\n\nThe witness gave a __vague__ description of the man.",
+    "options": [
+      "long",
+      "false",
+      "brief",
+      "precise"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A vague description is unclear. A precise one is exact."
+  },
+  {
+    "id": "WASSCEENG-D-013",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The final was a walkover for the home team.\"",
+    "options": [
+      "They lost the match",
+      "They won very easily",
+      "They walked off the pitch",
+      "They did not turn up"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A walkover is a very easy victory."
+  },
+  {
+    "id": "WASSCEENG-D-014",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"Amaka is always blowing her own trumpet.\"",
+    "options": [
+      "She plays in a band",
+      "She boasts about herself",
+      "She speaks for others",
+      "She complains loudly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To blow your own trumpet is to boast about your own achievements."
+  },
+  {
+    "id": "WASSCEENG-D-015",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The plan to build a new market fell through.\"",
+    "options": [
+      "It worked well",
+      "It was copied",
+      "It was announced",
+      "It did not happen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If a plan falls through, it fails and does not happen."
+  },
+  {
+    "id": "WASSCEENG-D-016",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengIdioms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idiom",
+    "stem": "Choose the option that best explains the information conveyed in the sentence.\n\n\"The rich man gave his old friend the cold shoulder.\"",
+    "options": [
+      "He gave him food",
+      "He ignored him",
+      "He felt very cold",
+      "He embraced him"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To give someone the cold shoulder is to ignore them on purpose."
+  },
+  {
+    "id": "WASSCEENG-D-017",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nEither of the two roads ...... to the market.",
+    "options": [
+      "are leading",
+      "leads",
+      "have led",
+      "lead"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Either on its own is singular, so the verb is singular: leads."
+  },
+  {
+    "id": "WASSCEENG-D-018",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Concord",
+    "stem": "Choose the option that best completes the sentence.\n\nThere ...... a lot of noise in the classroom this morning.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "have"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Noise cannot be counted, so a lot of noise takes a singular verb."
+  },
+  {
+    "id": "WASSCEENG-D-019",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Degree",
+    "stem": "Choose the option that best completes the sentence.\n\nThis is the ...... of the two plans.",
+    "options": [
+      "better",
+      "good",
+      "best",
+      "more better"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Comparing two things needs the comparative, better. Best is used for three or more."
+  },
+  {
+    "id": "WASSCEENG-D-020",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengConcord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Determiners",
+    "stem": "Choose the option that best completes the sentence.\n\nShe has ...... friends, so she is never lonely.",
+    "options": [
+      "many",
+      "much",
+      "a little",
+      "little"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Friends can be counted, so the determiner is many."
+  },
+  {
+    "id": "WASSCEENG-D-021",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Perfect tenses",
+    "stem": "Choose the option that best completes the sentence.\n\nOur team ...... every match so far this season.",
+    "options": [
+      "wins",
+      "had won",
+      "has won",
+      "won"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "So far this season links the past to now, so the present perfect is used: has won."
+  },
+  {
+    "id": "WASSCEENG-D-022",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb forms",
+    "stem": "Choose the option that best completes the sentence.\n\nThe teacher made us ...... the poem twice.",
+    "options": [
+      "reciting",
+      "recite",
+      "recited",
+      "to recite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the active, make someone is followed by the bare infinitive: made us recite."
+  },
+  {
+    "id": "WASSCEENG-D-023",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conditionals",
+    "stem": "Choose the option that best completes the sentence.\n\nIf it ...... tomorrow, the farmers will be happy.",
+    "options": [
+      "would rain",
+      "rains",
+      "rained",
+      "will rain"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In a condition about the future, the if-clause takes the present: If it rains tomorrow."
+  },
+  {
+    "id": "WASSCEENG-D-024",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengTenses",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Passive",
+    "stem": "Choose the option that best completes the sentence.\n\nThe broken window ...... before the parents came.",
+    "options": [
+      "was repairing",
+      "is repaired",
+      "had been repaired",
+      "has been repaired"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An action finished before another past action, done to the window, takes the past perfect passive."
+  },
+  {
+    "id": "WASSCEENG-D-025",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relative pronouns",
+    "stem": "Choose the option that best completes the sentence.\n\nThe girl ...... won the race is my cousin.",
+    "options": [
+      "which",
+      "whose",
+      "who",
+      "whom"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Who is the subject of won, and it refers to a person."
+  },
+  {
+    "id": "WASSCEENG-D-026",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nWe travelled to Kumasi ...... bus.",
+    "options": [
+      "by",
+      "with",
+      "on",
+      "in"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Means of transport without the takes by: by bus."
+  },
+  {
+    "id": "WASSCEENG-D-027",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Question tags",
+    "stem": "Choose the option that best completes the sentence.\n\nYou have done your homework, ......?",
+    "options": [
+      "haven't you",
+      "have you",
+      "didn't you",
+      "don't you"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The tag repeats have in the negative: haven't you."
+  },
+  {
+    "id": "WASSCEENG-D-028",
+    "section": "p1",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStructure",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the option that best completes the sentence.\n\nThe prize-giving will be held ...... Friday.",
+    "options": [
+      "at",
+      "on",
+      "by",
+      "in"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Days of the week take on: on Friday."
+  },
+  {
+    "id": "WASSCEENG-D-029",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nfr__ui__t",
+    "options": [
+      "route",
+      "front",
+      "fright",
+      "foot"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fruit has the long /uː/, and in British English route is /ruːt/ with the same vowel. Foot has /ʊ/, fright /aɪ/ and front /ʌ/."
+  },
+  {
+    "id": "WASSCEENG-D-030",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nw__o__lf",
+    "options": [
+      "cold",
+      "wall",
+      "cud",
+      "could"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The o in wolf is the short /ʊ/, as in could. Cold has /əʊ/, wall /ɔː/ and cud /ʌ/."
+  },
+  {
+    "id": "WASSCEENG-D-031",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Phonetic symbols",
+    "stem": "Which of the following words contains the vowel sound /ɒ/?",
+    "options": [
+      "know",
+      "now",
+      "knowledge",
+      "gnaw"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Knowledge is /ˈnɒlɪdʒ/. Know has /əʊ/, now /aʊ/ and gnaw /ɔː/."
+  },
+  {
+    "id": "WASSCEENG-D-032",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengVowels",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vowels",
+    "stem": "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\nsh__ir__t",
+    "options": [
+      "shut",
+      "shot",
+      "nurse",
+      "short"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Shirt has /ɜː/, as in nurse. Short has /ɔː/, shut /ʌ/ and shot /ɒ/."
+  },
+  {
+    "id": "WASSCEENG-D-033",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Silent letters",
+    "stem": "In which of the following words is the underlined letter not pronounced?",
+    "options": [
+      "__h__appy",
+      "be__h__ind",
+      "__h__our",
+      "__h__ouse"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The h in hour is silent, so hour sounds like our. It is pronounced in house, happy and behind."
+  },
+  {
+    "id": "WASSCEENG-D-034",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Consonants",
+    "stem": "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\n__wh__o",
+    "options": [
+      "white",
+      "whole",
+      "wheat",
+      "when"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The wh in who is /h/, as in whole. In white, when and wheat it is /w/."
+  },
+  {
+    "id": "WASSCEENG-D-035",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phonetic symbols",
+    "stem": "Which of the following words contains the consonant sound /tʃ/?",
+    "options": [
+      "machine",
+      "picture",
+      "pressure",
+      "measure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The t in picture is /tʃ/. Pressure and machine have /ʃ/, and measure has /ʒ/."
+  },
+  {
+    "id": "WASSCEENG-D-036",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengConsonants",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Endings",
+    "stem": "In which of the following words is the final -ed pronounced /d/?",
+    "options": [
+      "laughed",
+      "lived",
+      "kissed",
+      "painted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After a voiced sound such as /v/, -ed is /d/: lived. Laughed and kissed end in /t/, and painted in /ɪd/."
+  },
+  {
+    "id": "WASSCEENG-D-037",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"hurt\".",
+    "options": [
+      "hat",
+      "heart",
+      "hut",
+      "shirt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hurt and shirt both end in /ɜːt/. Heart has /ɑːt/, hut /ʌt/ and hat /æt/."
+  },
+  {
+    "id": "WASSCEENG-D-038",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"steak\".",
+    "options": [
+      "break",
+      "streak",
+      "stick",
+      "speak"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Steak is /steɪk/, so it rhymes with break. Speak and streak have /iːk/ and stick has /ɪk/."
+  },
+  {
+    "id": "WASSCEENG-D-039",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"lose\".",
+    "options": [
+      "rose",
+      "shoes",
+      "those",
+      "loss"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lose is /luːz/, so it rhymes with shoes. Those and rose have /əʊz/, and loss is /lɒs/."
+  },
+  {
+    "id": "WASSCEENG-D-040",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"flower\".",
+    "options": [
+      "floor",
+      "our",
+      "flow",
+      "four"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Flower ends in /aʊə/, the same sound as our. Floor and four have /ɔː/ and flow has /əʊ/."
+  },
+  {
+    "id": "WASSCEENG-D-041",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Which of the following pairs of words rhymes?",
+    "options": [
+      "worm / form",
+      "worm / firm",
+      "worm / warm",
+      "worm / storm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Worm and firm both end in /ɜːm/. Form, storm and warm have /ɔːm/."
+  },
+  {
+    "id": "WASSCEENG-D-042",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"climb\".",
+    "options": [
+      "limb",
+      "time",
+      "slim",
+      "comb"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Climb is /klaɪm/, so it rhymes with time. Limb and slim have /ɪm/ and comb has /əʊm/."
+  },
+  {
+    "id": "WASSCEENG-D-043",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with \"moon\".",
+    "options": [
+      "gone",
+      "tune",
+      "done",
+      "none"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moon and tune both end in /uːn/. Done and none have /ʌn/ and gone has /ɒn/."
+  },
+  {
+    "id": "WASSCEENG-D-044",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengRhymes",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rhyme",
+    "stem": "Choose the word that rhymes with the underlined word in the line below.\n\nThe old man sat beneath the mango __tree__.",
+    "options": [
+      "eye",
+      "say",
+      "key",
+      "day"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tree and key both end in /iː/. Eye has /aɪ/, and say and day have /eɪ/."
+  },
+  {
+    "id": "WASSCEENG-D-045",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "In the options, the syllable written in capital letters carries the primary stress. Choose the correct stress pattern for \"information\".",
+    "options": [
+      "in-FOR-ma-tion",
+      "in-for-ma-TION",
+      "in-for-MA-tion",
+      "IN-for-ma-tion"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Words ending in -tion are stressed on the syllable just before the ending: in-for-MA-tion."
+  },
+  {
+    "id": "WASSCEENG-D-046",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "Which of the following words is stressed on the first syllable?",
+    "options": [
+      "remain",
+      "believe",
+      "window",
+      "today"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "WIN-dow is stressed on the first syllable. Re-MAIN, be-LIEVE and to-DAY are stressed on the second."
+  },
+  {
+    "id": "WASSCEENG-D-047",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Word stress",
+    "stem": "In which of the following sentences is the word \"increase\" stressed on the first syllable?",
+    "options": [
+      "There was an increase in prices.",
+      "The workers want to increase output.",
+      "Rains increase the risk of floods.",
+      "Prices will increase next month."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "As a noun, increase is IN-crease. As a verb it is in-CREASE, so in the other sentences the stress falls on the second syllable."
+  },
+  {
+    "id": "WASSCEENG-D-048",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Syllable structure",
+    "stem": "How many syllables does the word \"beautiful\" have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "beau-ti-ful has three syllables."
+  },
+  {
+    "id": "WASSCEENG-D-049",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emphatic stress",
+    "stem": "In the sentence below, the word in capital letters carries the emphatic stress. Choose the option to which the sentence relates.\n\n\"The headmaster PRAISED the girls.\"",
+    "options": [
+      "Did the headmaster praise the boys?",
+      "Who praised the girls?",
+      "Whom did the headmaster praise?",
+      "Did the headmaster punish the girls?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stress on praised corrects the action, so the sentence answers a question that names a different action."
+  },
+  {
+    "id": "WASSCEENG-D-050",
+    "section": "p3",
+    "test": 0,
+    "module": 1,
+    "domain": "wassceengStress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Intonation",
+    "stem": "Which of the following sentences normally ends with a rising tune?",
+    "options": [
+      "How old are you?",
+      "The shop is closed.",
+      "Close the window.",
+      "Is the shop open?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A question that expects yes or no normally rises at the end. Wh- questions, commands and statements normally fall."
+  }
+]

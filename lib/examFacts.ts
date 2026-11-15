@@ -4634,6 +4634,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the JAMB website and UTME Physics syllabus guides that reproduce the IBASS brochure, checked November 2026. Question counts are guides' figures; JAMB publishes no topic weights",
     source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
   },
+  wassceeng: {
+    answer:
+      "English Language is a core subject of the West African Senior School Certificate Examination (WASSCE), run by the West African Examinations Council (WAEC), so every candidate takes it. WAEC's English Language syllabus, as published by syllabus sites, sets three papers. Paper 1 is 80 four-option objective questions in 1 hour for 40 marks: forty on lexis (everyday vocabulary and the words of sixteen fields such as building, health, law and sport, synonyms, antonyms, idioms and figurative usage) and forty on structure. Paper 2 is an essay, a comprehension passage and a summary in 2 hours for 100 marks. Paper 3 is 60 multiple-choice items in 45 minutes for 30 marks: the Test of Orals in Nigeria and Liberia, listening comprehension in Ghana, The Gambia and Sierra Leone. Ghana's Paper 1 also differs, with 30 questions on literature. Results are graded A1 to F9.",
+    rows: [
+      { label: "Papers", value: "Paper 1 objective, Paper 2 essay, comprehension and summary, Paper 3 orals or listening" },
+      { label: "Paper 1", value: "80 questions in 1 hour, 40 lexis and 40 structure, 40 marks" },
+      { label: "Paper 2", value: "Essay, comprehension and summary in 2 hours, 100 marks" },
+      { label: "Paper 3", value: "60 questions in 45 minutes, 30 marks (Test of Orals in Nigeria and Liberia)" },
+      { label: "Grades", value: "A1 to F9" },
+      { label: "Run by", value: "West African Examinations Council (WAEC)" },
+    ],
+    basedOn: "WAEC's English Language syllabus as published by waecsyllabus.com (updated September 5, 2026) and myschool.ng, which agree with the hosted syllabus PDF, and WAEC Nigeria's FAQ, checked November 2026. WAEC's own sites do not serve the syllabus, so the format is the syllabus as those sites reproduce it",
+    source: { name: "WAEC Nigeria", url: "https://www.waecnigeria.org" },
+  },
   apgov: {
     answer:
       "The AP U.S. Government and Politics Exam is a fully digital, 3-hour exam from the College Board. Section I has 55 multiple-choice questions in 80 minutes (50% of the score): about 30 stand alone and the rest come in sets on quantitative data, a foundational document or other text, and visuals such as maps and cartoons. Section II has four free-response questions in 100 minutes (50%): concept application, quantitative analysis, SCOTUS comparison and an argument essay. The course has five units and requires 13 foundational documents (four added for 2026-27) and 14 Supreme Court cases. Scores are reported from 1 to 5, and wrong answers are not penalized.",

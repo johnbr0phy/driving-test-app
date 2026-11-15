@@ -641,7 +641,7 @@
     "optionD": "An adult day care center",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A grief support group addresses loss and isolation. Home health and equipment suppliers meet physical care needs."
+    "explanation": "A grief support group addresses loss and isolation. Hospice serves patients near the end of life, and home health and adult day care meet care needs."
   },
   {
     "type": "CMAA",
@@ -1719,7 +1719,7 @@
     "optionD": "Give her the forms to take home",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Intake technology needs a staffed alternative. Asking another patient to help would expose her information."
+    "explanation": "Intake technology needs a staffed alternative so she is checked in today with her information kept private."
   },
   {
     "type": "CMAA",

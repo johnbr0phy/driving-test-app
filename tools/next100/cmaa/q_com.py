@@ -77,7 +77,7 @@ Q = [
  "Front office staff often share community resources such as food banks and assistance programs when a patient mentions a social need."),
 ("A recently widowed patient says he feels alone. Which community resource is most fitting to share?",
  "A grief support group", ["A hospice program", "A home health agency", "An adult day care center"],
- "A grief support group addresses loss and isolation. Home health and equipment suppliers meet physical care needs."),
+ "A grief support group addresses loss and isolation. Hospice serves patients near the end of life, and home health and adult day care meet care needs."),
 ("A provider orders a fasting blood test for tomorrow morning. What should the written instructions tell the patient?",
  "Not to eat for the hours ordered", ["To skip food and water from midnight", "To eat a light meal before coming", "To stop all of her morning medicines"],
  "Fasting instructions give the hours without food that the provider ordered. Water is usually allowed, and medicine changes come only from the provider."),

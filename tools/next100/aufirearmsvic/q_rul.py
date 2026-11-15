@@ -56,7 +56,7 @@ Q = [
      "Blaze orange", ["Camouflage green", "Olive drab", "Dark brown"],
      "The booklet says blaze orange is the recommended colour for all field shooting, while reminding hunters that it only helps if others identify their targets."),
     ("Under rule 5, before firing the booklet says to ask yourself:",
-     "What if I miss?", ["How far is my car?", "How many rounds are left?", "Is my licence current?"],
+     "What if I miss?", ["How far is my car?", "How many rounds are left?", "Is the target still moving?"],
      "Rule 5 says to be aware of what lies between you and the target and beyond it, and to ask what could happen if you miss."),
     ("The booklet says shooting at a target on the skyline is:",
      "Unsafe", ["Safest at dusk", "Fine with a rifle", "Fine on farmland"],

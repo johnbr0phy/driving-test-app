@@ -20,7 +20,7 @@ Q = [
  "Keeping a copy of a living will or health care proxy in the record lets the care team follow her wishes."),
 ("An older patient cannot work the check-in tablet. What should the medical assistant do?",
  "Help her or check her in yourself", ["Let her skip the forms today", "Have her try again after waiting", "Give her the forms to take home"],
- "Intake technology needs a staffed alternative. Asking another patient to help would expose her information."),
+ "Intake technology needs a staffed alternative so she is checked in today with her information kept private."),
 ("A patient's insurance card shows a different last name from her photo ID. What should the medical assistant do?",
  "Confirm the name with the insurer", ["Bill under the name on her ID", "Change her card name in the system", "Ask her to bring a new card later"],
  "A mismatch can cause claim rejections. Staff check which name the plan has on file and update the record or the plan as needed."),

@@ -136,6 +136,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(155, 40%, 22%)",
     "tint": "hsl(155, 40%, 95%)"
   },
+  "ukdsc1": {
+    "color": "hsl(118, 85%, 18%)",
+    "tint": "hsl(118, 85%, 95%)"
+  },
   "ukbregs": {
     "color": "hsl(260, 20%, 30%)",
     "tint": "hsl(260, 20%, 95%)"

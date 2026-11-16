@@ -236,6 +236,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cma: { title: "CMA (AAMA) Exam", description: "Review patient intake, infection control, procedures, pharmacology, law and ethics, and billing." },
   nhie: { title: "National Home Inspector Exam", description: "Review roofing, structure, electrical, HVAC, plumbing, fireplaces, reporting and ethics." },
   txadjuster: { title: "Texas All-Lines Adjuster", description: "Review property, auto, liability and workers' comp claims, loss settlement and Texas law." },
+  ukdsc1: { title: "DSC1 Practice Test", description: "Practise the Deer Stalking Certificate Level 1 written test: deer biology, species, law, firearms safety and carcass hygiene." },
   ukwater: { title: "Water Regulations Practice Test", description: "Practise notification, fluid categories, backflow prevention and the Schedule 2 rules for water fittings." },
   ukg3: { title: "Unvented Hot Water (G3) Practice Test", description: "Practise safety devices, tundish and discharge pipe sizing, inlet controls and commissioning for the G3 certificate." },
   ukplumb: { title: "Plumbing Theory Practice Test", description: "Practise Level 2 and 3 plumbing theory: cold and hot water, central heating, drainage, pipework and safety." },

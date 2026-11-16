@@ -59,6 +59,7 @@ import "./ukrbi";
 import "./ukplumb";
 import "./ukg3";
 import "./ukwater";
+import "./ukdsc1";
 import "./cscs";
 import "./ukfood";
 import "./ukaplh";

@@ -97,6 +97,7 @@ const BORROWED_SETS: Record<string, string> = {
   staarbio: "apbio",
   toeflread: "ieltsread",
   ukwater: "caplumb",
+  ukdsc1: "hunter",
   ukg3: "caplumb",
   ukplumb: "caplumb",
   ukrbi: "nhie",

@@ -126,7 +126,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   ukcar: "UK", ukmoto: "UK", uklgv: "UK", ukpcv: "UK", ukadi: "UK", timestables: "UK", ks2: "UK", gcsemaths: "UK", uksia: "UK", uk18ed: "UK", ukgas: "UK", ukbregs: "UK", ukrbi: "UK", ukplumb: "UK", ukg3: "UK", ukwater: "UK",
   gcsehigher: "UK", gcsescience: "UK", gcsecs: "UK", elevenplus: "UK", fsmaths: "UK", cscs: "UK", ukfood: "UK", ukaplh: "UK", ukfaw: "UK", ukcare: "UK",
   uklitu: "UK", uknmc: "UK", ukseru: "UK", aatl2: "UK", cemap: "UK",
-  iedtt: "IE", iedttcv: "IE", iesafepass: "IE", iespsv: "IE", ieqfa: "IE", iepsa: "IE",
+  iedtt: "IE", iedttcv: "IE", iesafepass: "IE", iespsv: "IE", ieqfa: "IE", iepsa: "IE", iehcap: "IE",
   caon: "CA", caqc: "CA", cabc: "CA", caab: "CA", camb: "CA", osslt: "CA", capal: "CA", caelec: "CA",
   rexpn: "CA", eqao9: "CA", capsw: "CA", casfa: "CA", cawhmis: "CA", caguard: "CA", caauto: "CA", caplumb: "CA", cacarp: "CA", caweld: "CA", cacit: "CA", llqp: "CA",
   cask: "CA", cans: "CA", pcoc: "CA",
@@ -192,7 +192,7 @@ export const NON_DRIVING_TESTS = new Set([
   "jambeng", "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng",
   "ngpolice", "cdcfib", "ngarmy", "ngcustoms", "trcnpqe",
   "sgres", "hkiiqe1", "hklesfi1", "nzfirearms", "nzboat", "nzlcq", "aesira", "mypce", "kenck",
-  "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl",
+  "iesafepass", "iespsv", "ieqfa", "iepsa", "iehcap", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl",
 ]);
 
 /** Every test not listed above is a US exam. */

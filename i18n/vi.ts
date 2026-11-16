@@ -2733,6 +2733,14 @@ export const vi: TranslationKeys = {
     caqcSharing: "Sharing the Road",
     caqcRisk: "Alcohol, Drugs, Fatigue & Distraction",
     caqcDriving: "Driving Techniques & Conditions",
+    hcapSpecies: "Irish Deer Species & Identification",
+    hcapBiology: "Deer Biology, Antlers & the Rut",
+    hcapManagement: "Principles of Deer Management",
+    hcapRifle: "Rifles, Ballistics & Shot Placement",
+    hcapFirearms: "Firearms Safety & Storage",
+    hcapLaw: "Deer Hunting & the Law",
+    hcapCarcase: "Carcase Handling & Food Safety",
+    hcapHabitat: "Forestry, Habitats & Conservation",
   } as Record<string, string>,
 
   // Training set names

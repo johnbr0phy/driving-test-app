@@ -1175,5 +1175,9 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "trcnpqe": {
     "color": "hsl(170, 20%, 38%)",
     "tint": "hsl(170, 30%, 95%)"
+  },
+  "iehcap": {
+    "color": "hsl(148, 90%, 32%)",
+    "tint": "hsl(148, 70%, 96%)"
   }
 };

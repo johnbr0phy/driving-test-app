@@ -191,7 +191,7 @@ const BORROWED_SETS: Record<string, string> = {
   zak53moto: "moto", zare5: "insurance", zasaps: "police", zapsira: "security",
   // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX
   // and Series 7 families.
-  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl",
+  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", iehcap: "hunter", nzmoto: "moto", nzheavy: "cdl",
   nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.

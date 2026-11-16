@@ -3,7 +3,7 @@
   "stateCode": "IEHCAP",
   "idBase": 31600,
   "prefix": "HCAP-",
-  "slug": "/hcap-deer-hunter",
+  "slug": "/hcap",
   "landingPath": "/hcap-practice-test",
   "dataFile": "data/ie-hcap-questions.json",
   "region": "IE",

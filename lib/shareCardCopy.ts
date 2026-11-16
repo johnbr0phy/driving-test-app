@@ -421,4 +421,5 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ngarmy: { title: "Nigerian Army Recruitment Practice Test", description: "Practise English, maths, reasoning, Nigerian history, the armed forces and ECOWAS in 50-question mock tests." },
   ngcustoms: { title: "Nigeria Customs Recruitment Practice Test", description: "Practise English, maths, reasoning, customs, trade and world geography in 50-question mock CBTs." },
   trcnpqe: { title: "TRCN PQE Practice Test", description: "Practise pedagogy, literacy, numeracy, ICT and safeguarding in full 60-question PQE mock exams." },
+  iehcap: { title: "HCAP Practice Test", description: "Practise Irish deer species, deer management, rifle and firearms safety, the Wildlife Acts and carcase handling in 50-question mock tests." },
 };

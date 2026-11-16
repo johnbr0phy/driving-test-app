@@ -283,3 +283,4 @@ import "./cehrs";
 import "./cpabar";
 import "./ea1";
 import "./nzboat";
+import "./hknurse";

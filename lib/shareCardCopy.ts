@@ -265,6 +265,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   sgres: { title: "Singapore RES Exam", description: "Practice land law, agency law, CEA rules, anti-money laundering, HDB and private property sales." },
   hkiiqe1: { title: "IIQE Paper 1", description: "Practice risk, insurance law, the principles of insurance, the Insurance Ordinance and ethics." },
   hklesfi1: { title: "LE Paper 1", description: "Practice the SFO, SFC licensing, the Code of Conduct, AML, the exchanges and market misconduct." },
+  hknurse: { title: "Free HK Nursing Licensing Exam Practice Test", description: "200 original questions on the topics of the Nursing Council of Hong Kong Licensing Examination written part, four 50-question practice tests." },
   nzfirearms: { title: "NZ Firearms Licence Test", description: "Review the seven firearms safety rules, firing zones, safe handling, storage and the law." },
   nzlcq: { title: "LCQ Duty Manager Test", description: "Practice the Sale and Supply of Alcohol Act, licences, minors and ID, intoxication and host responsibility." },
   aesira: { title: "SIRA Security Guard Exam", description: "Practice SIRA law, access control, reports, legal limits, emergencies, fire safety and first aid." },

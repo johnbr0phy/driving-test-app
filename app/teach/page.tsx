@@ -62,7 +62,6 @@ export default function TeachPage() {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="relative">
-        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 sm:px-6 py-10 max-w-3xl">
           <div className="flex items-center justify-between gap-4 mb-6">
             <div>

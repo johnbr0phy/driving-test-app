@@ -1,0 +1,15 @@
+{
+  "blurb": "Practice for Microsoft Security, Compliance, and Identity Fundamentals (SC-900): shared responsibility, Zero Trust and identity concepts, Microsoft Entra ID, Conditional Access, PIM and ID Protection, Azure network security, Defender for Cloud, Microsoft Sentinel, Defender XDR, and Microsoft Purview compliance, labels, DLP, retention, eDiscovery and audit.",
+  "org": "Microsoft · Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+  "group": "IT certifications",
+  "groupAfter": "az900",
+  "aliases": ["sc-900", "sc900", "sc 900", "microsoft sc-900", "microsoft security fundamentals", "microsoft security compliance and identity fundamentals", "security compliance identity fundamentals", "microsoft entra fundamentals", "microsoft identity fundamentals", "microsoft compliance fundamentals", "purview fundamentals", "sentinel fundamentals", "defender fundamentals"],
+  "teacherLed": false,
+  "borrowTiger": "secplus",
+  "shareTitle": "Free SC-900 Practice Test",
+  "shareDescription": "200 original questions on all four SC-900 skill areas: concepts, Microsoft Entra, Microsoft security solutions and Microsoft compliance solutions. Free to start.",
+  "searchTests": [["sc-900", "US", "sc900"], ["sc900", "US", "sc900"], ["microsoft security fundamentals", "US", "sc900"]],
+  "related": ["az900", "secplus", "sc200"],
+  "region": "TEST_REGIONS: sc900 is GLOBAL",
+  "premium": "PREMIUM_V2_IDS: add \"sc900\""
+}

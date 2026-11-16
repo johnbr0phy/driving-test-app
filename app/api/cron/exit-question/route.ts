@@ -27,6 +27,7 @@ import {
   getEligibleUsers,
   processBatch,
   verifyCronSecret,
+  notSentAndNotRecent,
 } from "@/lib/cron-email";
 import { exitQuestionEmail, exitQuestionSubject, type ExitQuestionContent } from "@/lib/email-templates";
 import { voiceFor } from "@/lib/email-voice";
@@ -76,7 +77,7 @@ export async function GET(req: NextRequest) {
 
     const authMap = await buildAuthMap();
     // Win-back: exempt from the quiet-days rule, bounded by EXIT_EMAIL_MAX_DAYS.
-    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, true);
+    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, true, (u) => notSentAndNotRecent(EMAIL_KEY)(u) && (u.language === null || u.language === "en"));
 
     const exits = new Map<string, { exit: AccountExit; content: ExitQuestionContent }>();
     const eligible = users.filter((u) => {

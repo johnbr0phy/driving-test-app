@@ -35,6 +35,7 @@ import {
   emailedRecently,
   latestPaywallHit,
   maxInactiveMs,
+  notSentAndNotRecent,
 } from "@/lib/cron-email";
 import { voiceFor } from "@/lib/email-voice";
 import { EMAIL_INBOX } from "@/lib/email-inbox";
@@ -84,7 +85,7 @@ export async function GET(req: NextRequest) {
   try {
     const now = Date.now();
     const authMap = await buildAuthMap();
-    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
+    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, false, notSentAndNotRecent(EMAIL_KEY, GAP_MS));
 
     const eligible = users.flatMap((u) => {
       const hit = u.lastPaywallHit;

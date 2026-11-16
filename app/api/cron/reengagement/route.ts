@@ -18,6 +18,7 @@ import {
   processBatch,
   verifyCronSecret,
   emailedRecently,
+  notSentAndNotRecent,
 } from "@/lib/cron-email";
 import { withStudyContext } from "@/lib/email-lifecycle";
 import { EXAMS_V2 } from "@/lib/v2/registry";
@@ -38,7 +39,7 @@ export async function GET(req: NextRequest) {
     const fiveDaysAgo = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
     const authMap = await buildAuthMap();
     // Win-back: exempt from the three-day rule, bounded at 30 days instead.
-    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, true);
+    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, true, notSentAndNotRecent(EMAIL_KEY));
 
     const contextualUsers = users.flatMap((user) => {
       const scoped = withStudyContext(user);

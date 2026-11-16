@@ -37,6 +37,7 @@ import {
   processBatch,
   verifyCronSecret,
   type UserDoc,
+  notSentAndNotRecent,
 } from "@/lib/cron-email";
 import { topPrepperEmail } from "@/lib/email-templates";
 import { topPrepperInbox } from "@/lib/email-inbox";
@@ -88,7 +89,7 @@ export async function GET(req: NextRequest) {
     const population = statsSnap.docs.map((d) => answersOf(d.data())).filter((n) => n > 0).sort((a, b) => a - b);
 
     const authMap = await buildAuthMap();
-    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
+    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, false, (u) => notSentAndNotRecent(EMAIL_KEY)(u) && (u.language === null || u.language === "en"));
 
     const picks = new Map<string, Pick>();
     const pickFor = (raw: Record<string, any>): Pick | null => {

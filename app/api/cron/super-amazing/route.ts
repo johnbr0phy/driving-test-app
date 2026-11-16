@@ -21,6 +21,7 @@ import {
   verifyCronSecret,
   emailedRecently,
   maxInactiveMs,
+  notSentAndNotRecent,
 } from "@/lib/cron-email";
 import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
@@ -42,7 +43,7 @@ export async function GET(req: NextRequest) {
   try {
     const now = Date.now();
     const authMap = await buildAuthMap();
-    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
+    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, false, notSentAndNotRecent(EMAIL_KEY, GAP_MS));
 
     const eligible = users.flatMap((u) => {
       if (u.emailsSent.includes(EMAIL_KEY)) return [];

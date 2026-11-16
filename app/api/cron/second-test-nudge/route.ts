@@ -22,6 +22,7 @@ import {
   verifyCronSecret,
   emailedRecently,
   maxInactiveMs,
+  notSentAndNotRecent,
 } from "@/lib/cron-email";
 import { withStudyContext } from "@/lib/email-lifecycle";
 import { EXAMS_V2 } from "@/lib/v2/registry";
@@ -39,7 +40,7 @@ export async function GET(req: NextRequest) {
   try {
     const twoDaysAgo = new Date(Date.now() - 48 * 60 * 60 * 1000);
     const authMap = await buildAuthMap();
-    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
+    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, false, notSentAndNotRecent(EMAIL_KEY));
 
     const contextualUsers = users.flatMap((user) => {
       const scoped = withStudyContext(user);

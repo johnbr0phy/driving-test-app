@@ -115,6 +115,35 @@ export interface UserDoc {
   raw: FirebaseFirestore.DocumentData;
 }
 
+/** The small fields read before deciding whose full record to download. */
+const LIGHT_FIELDS = [
+  "emailConsent",
+  "unsubscribed",
+  "lastUpdated",
+  "v2.updatedAt",
+  "emailsSent",
+  "lastEmailSent",
+  "language",
+];
+
+/** What a prefilter sees: the small fields only. */
+export interface LightUser {
+  uid: string;
+  email: string;
+  creationTime: Date;
+  emailsSent: string[];
+  lastEmailSent: Date | null;
+  lastUpdated: Date | null;
+  language: string | null;
+}
+
+/** Prefilter for a once-only campaign with the usual frequency cap. */
+export function notSentAndNotRecent(emailKey: string, gapMs = MIN_EMAIL_GAP_MS) {
+  return (u: LightUser) =>
+    !u.emailsSent.includes(emailKey) &&
+    !(u.lastEmailSent && Date.now() - u.lastEmailSent.getTime() < gapMs);
+}
+
 /** Per-event active-study windows: three days for DMV, fourteen for other exams.
  * getEligibleUsers applies only a broad candidate ceiling; active routes apply
  * this stricter rule after binding the actual triggering exam. Win-back routes
@@ -140,7 +169,13 @@ export async function getEligibleUsers(
    * Skip the broad candidate activity window. Win-back and announcement
    * campaigns impose their own explicit staleness ceilings.
    */
-  includeInactive = false
+  includeInactive = false,
+  /**
+   * A cheap check on the small fields (already sent this campaign, emailed
+   * recently, language...). Only accounts that pass it have their full record
+   * downloaded, so it must never reject someone the route would keep.
+   */
+  prefilter?: (u: LightUser) => boolean
 ): Promise<UserDoc[]> {
   const db = getAdminDb();
 
@@ -154,14 +189,60 @@ export async function getEligibleUsers(
     ? (db.collection("users") as FirebaseFirestore.Query)
     : db.collection("users").where("emailConsent", "==", true);
 
-  const snap = await query.get();
+  // Two steps, to keep Firestore egress down (Nov 2026: about ten daily
+  // campaigns each downloaded every consented account's whole record, answer
+  // history included). First only the small fields, then the full record for
+  // the accounts that can still qualify.
+  const lightSnap = await query.select(...LIGHT_FIELDS).get();
+  const candidates: FirebaseFirestore.DocumentReference[] = [];
+  for (const doc of lightSnap.docs) {
+    const authRecord = authMap.get(doc.id);
+    if (!authRecord) continue;
+    const d = doc.data();
+    if (d.unsubscribed === true || d.emailConsent !== true) continue;
+    const emailLower = authRecord.email.toLowerCase();
+    if (emailLower.includes("@johnbrophy.net") || emailLower.includes("@stensul.com")) continue;
+    const lastUpdated = toDate(d.lastUpdated);
+    const lightActiveAt = new Date(
+      Math.max(
+        lastUpdated?.getTime() ?? 0,
+        toDate(d.v2?.updatedAt)?.getTime() ?? 0,
+        authRecord.creationTime.getTime()
+      )
+    );
+    // Finishing a test also saves lastUpdated, so the light date is enough
+    // to rule an account out. With no lastUpdated at all, keep it and let
+    // the full record (its completedTests) decide.
+    if (!includeInactive && lastUpdated && Date.now() - lightActiveAt.getTime() > 14 * DAY_MS) continue;
+    if (
+      prefilter &&
+      !prefilter({
+        uid: doc.id,
+        email: authRecord.email,
+        creationTime: authRecord.creationTime,
+        emailsSent: Array.isArray(d.emailsSent) ? d.emailsSent : [],
+        lastEmailSent: toDate(d.lastEmailSent),
+        lastUpdated,
+        language: typeof d.language === "string" ? d.language : null,
+      })
+    ) continue;
+    candidates.push(doc.ref);
+  }
+
+  const fullDocs: FirebaseFirestore.DocumentSnapshot[] = [];
+  for (let i = 0; i < candidates.length; i += 200) {
+    const chunk = candidates.slice(i, i + 200);
+    if (chunk.length) fullDocs.push(...(await db.getAll(...chunk)));
+  }
+
   const users: UserDoc[] = [];
 
-  for (const doc of snap.docs) {
+  for (const doc of fullDocs) {
+    if (!doc.exists) continue;
     const authRecord = authMap.get(doc.id);
     if (!authRecord) continue; // not a real user
 
-    const d = doc.data();
+    const d = doc.data() ?? {};
 
     // Skip explicit opt-outs even in permissive mode
     if (d.unsubscribed === true) continue;

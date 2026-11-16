@@ -147,8 +147,47 @@ export const fmtUpdated = (iso: string) =>
 export const ROW = "bg-white dark:bg-gray-900";
 export const STICKY_COL = "sticky left-0 z-[1] bg-inherit";
 
+// The header row of every table stays under the tab bar while its table is
+// on screen, so the column names never scroll away. CSS sticky cannot do it
+// here: the sideways scroll box is its own scroll container, so a sticky
+// header would stick to the box, not the screen. Instead the header cells are
+// moved down with a transform as the page scrolls (inside the table's own
+// height, so nothing is clipped).
 export function TableScroll({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <div className={`overflow-x-auto ${className}`}>{children}</div>;
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const box = ref.current;
+    if (!box) return;
+    let frame = 0;
+    const place = () => {
+      frame = 0;
+      const head = box.querySelector("thead");
+      if (!head) return;
+      const bar = document.querySelector("[data-admin-tabbar]");
+      const top = bar ? bar.getBoundingClientRect().bottom : 0;
+      const rect = box.getBoundingClientRect();
+      const max = rect.height - head.getBoundingClientRect().height;
+      const shift = Math.max(0, Math.min(top - rect.top, max));
+      const stuck = shift > 0 && rect.height > 0;
+      head.classList.toggle("admin-thead-stuck", stuck);
+      head.querySelectorAll("th").forEach((th) => {
+        (th as HTMLElement).style.transform = stuck ? `translateY(${shift}px)` : "";
+      });
+    };
+    const onScroll = () => { if (!frame) frame = requestAnimationFrame(place); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    const ro = new ResizeObserver(onScroll);
+    ro.observe(box);
+    place();
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      ro.disconnect();
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
+  return <div ref={ref} className={`overflow-x-auto ${className}`}>{children}</div>;
 }
 
 // A white card with the same padding on every tab, tighter on a phone.

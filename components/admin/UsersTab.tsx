@@ -6,7 +6,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { ChevronLeft, ChevronRight, RefreshCw, Search, Sparkles, Trash2 } from "lucide-react";
 import { db } from "@/lib/firebase";
 import { Button } from "@/components/ui/button";
-import { CARD, TabError, TabHeader, TabLoading, useAdminFetch } from "@/components/admin/AdminTabParts";
+import { CARD, TableScroll, TabError, TabHeader, TabLoading, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { regionOfTest } from "@/lib/region";
 
 // The Users tab on /admin: the 100 most recently active accounts (search,
@@ -309,7 +309,7 @@ export function UsersTab() {
         </ul>
 
         {/* From sm up: the table */}
-        <div className="hidden sm:block overflow-x-auto">
+        <TableScroll className="hidden sm:block">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-gray-200 dark:border-gray-800">
@@ -355,7 +355,7 @@ export function UsersTab() {
               ))}
             </tbody>
           </table>
-        </div>
+        </TableScroll>
 
         {usersPageCount > 1 && (
           <div className="flex items-center justify-between mt-4 text-sm text-gray-600 dark:text-gray-300">

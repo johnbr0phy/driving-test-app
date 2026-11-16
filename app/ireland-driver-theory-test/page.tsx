@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Ireland Driver Theory Test 2026 - Free Practice Tests";
+const title = "Driver Theory Test Ireland 2026 - Free Mock Theory Test Practice";
 const metaDescription =
   "Free Irish Driver Theory Test practice: 200 original questions from the RSA Rules of the Road, five 40-question tests with the real 35 to pass, all explained.";
 const description =

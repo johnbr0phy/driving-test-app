@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Singapore Vocational Licence Practice Test 2026 - Free TDVL and PDVL Questions";
+const title = "TDVL and PDVL Mock Test 2026 - Free Singapore Vocational Licence Practice";
 const metaDescription =
   "Free practice for Singapore's taxi and private hire car vocational licence test (TDVL and PDVL): 200 original questions on road safety, passenger handling, VL rules and demerit points, bookings, decals, fares and routes. Four 50-question mock tests, every answer explained.";
 const description =

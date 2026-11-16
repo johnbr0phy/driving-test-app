@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free Food Manager Practice Test 2026 - CFPM Exam";
+const title = "Free Food Manager Certification Practice Test 2026 - CFPM Exam";
 const metaDescription =
   "Free food manager practice tests: 200 FDA Food Code questions for the CFPM exam, from the flow of food and temperatures to HACCP. ServSafe Manager prep too.";
 const description =

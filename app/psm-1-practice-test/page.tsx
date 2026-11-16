@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free PSM I Practice Test 2026 - Scrum Guide Questions";
+const title = "Free PSM I (PSM1) Practice Test 2026 - Scrum Guide Questions";
 const metaDescription =
   "Free PSM I practice exam: 200 original questions on the 2020 Scrum Guide, with two full 80-question tests in 60 minutes, multiple answer and true/false items, and explanations.";
 const description =

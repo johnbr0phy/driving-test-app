@@ -15,7 +15,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free OC Test Practice 2026 - Reading, Maths, Thinking Skills";
+const title = "Free NSW OC Practice Test 2026 - Reading, Maths, Thinking Skills";
 const metaDescription =
   "Free NSW Opportunity Class (OC) Placement Test practice for Year 4: Reading, Mathematical Reasoning and Thinking Skills, timed like the real computer-based test, with explanations for every question.";
 const description =

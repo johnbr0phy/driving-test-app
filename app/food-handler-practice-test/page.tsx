@@ -13,7 +13,7 @@ import { examLandingAlternates, examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free Food Handler Practice Test 2026 - Card Exam";
+const title = "Free Food Handlers Card Practice Test 2026 - Food Handler Test";
 const metaDescription =
   "Free food handler practice test: 200 FDA Food Code questions on hygiene, handwashing, cross-contamination, allergens and temperatures. Pass your card test.";
 const description =

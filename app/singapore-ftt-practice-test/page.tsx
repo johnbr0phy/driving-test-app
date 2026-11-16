@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Singapore FTT Practice Test 2026 - Free Final Theory Test Questions";
+const title = "Singapore FTT Mock Test 2026 - Free Final Theory Test Practice";
 const metaDescription =
   "Free Singapore Final Theory Test practice: 200 original questions from the 2026 Final Theory of Driving handbook, four 50-question mock tests, every answer explained.";
 const description =

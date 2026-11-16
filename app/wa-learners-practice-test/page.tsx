@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "WA Learner's Practice Test 2026 - Free Theory Test";
+const title = "WA Learners Test Practice 2026 - Free Driving Theory Test";
 const metaDescription =
   "Free WA road rules theory test practice: 200 questions from Drive Safe on give way, roundabouts, P plates, demerits and BAC limits, every answer explained.";
 const description =

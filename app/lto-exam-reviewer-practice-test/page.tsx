@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "LTO Exam Reviewer 2026 - Free LTO Practice Test (Philippines)";
+const title = "LTO Exam Reviewer 2026 - Free LTO Mock Exam (Philippines)";
 const metaDescription =
   "Free LTO exam reviewer: 200 original questions on Philippine traffic rules, three 60-item mock tests with a 48-of-60 pass mark, every answer explained.";
 const description =

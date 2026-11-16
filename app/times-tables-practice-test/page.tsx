@@ -15,7 +15,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free Times Tables Practice Test - Year 2 to Year 4 MTC";
+const title = "Free Times Tables Test - Year 4 MTC Practice (Year 2 to 4)";
 const metaDescription =
   "Free times tables practice for primary school: the 2s, 5s and 10s up to 12 × 12 in the order school teaches them, a short lesson for each table, and practice checks like the Year 4 MTC.";
 const description =

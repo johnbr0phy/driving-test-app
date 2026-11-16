@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free AWS Cloud Practitioner Practice Test 2026";
+const title = "Free AWS Cloud Practitioner Practice Test 2026 - CCP CLF-C02";
 const metaDescription =
   "Free AWS Cloud Practitioner CLF-C02 practice tests: 200 questions on cloud concepts, security and IAM, core services, and billing and pricing, all explained.";
 const description =

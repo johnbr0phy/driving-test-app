@@ -15,7 +15,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "First Aid Course Practice Test Australia 2026 - Free HLTAID011 Quiz";
+const title = "First Aid Test Questions and Answers Australia 2026 - Free HLTAID011 Practice";
 const metaDescription =
   "Free HLTAID011 Provide First Aid practice: 200 original questions on DRSABCD, CPR and AEDs, choking, asthma, anaphylaxis, snake bite and more, to current ARC guidelines.";
 const description =

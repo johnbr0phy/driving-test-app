@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "RTO Learner's Licence Test 2026 - Free LL Mock Test";
+const title = "RTO Learner's Licence Mock Test 2026 - Free Practice for the Parivahan LL Test";
 const metaDescription =
   "Free RTO learner's licence practice: 200 original LL test questions on road signs, traffic rules, helmets, seat belts and documents, all explained.";
 const description =

@@ -288,6 +288,7 @@ import "./nzboat";
 import "./sgsnb";
 import "./iehcap";
 import "./qabaabat";
+import "./smartserve";
 import "./hknurse";
 import "./bcrealestate";
 import "./aerera";

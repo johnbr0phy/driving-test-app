@@ -6414,6 +6414,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
     source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
   },
+  smartserve: {
+    answer:
+      "Smart Serve is the responsible alcohol service training approved by the board of the Alcohol and Gaming Commission of Ontario (AGCO) for all liquor licensees and their staff. Ontario requires everyone involved in selling, serving, sampling or delivering liquor, or taking orders for it, and security staff the licensee employs, to hold a valid certificate from an approved course. The Full Course is about four hours online and ends with a proctored final test of 33 multiple-choice questions, taken in one sitting of about 30 minutes, with 80% needed to pass and two attempts included. Certificates must be renewed every five years.",
+    rows: [
+      { label: "Run by", value: "Smart Serve Ontario, approved by the AGCO Board" },
+      { label: "Who needs it", value: "Anyone who sells, serves, samples or delivers liquor in Ontario, and licensee-employed security" },
+      { label: "Final test", value: "33 multiple-choice questions, about 30 minutes, proctored online" },
+      { label: "Pass mark", value: "80%" },
+      { label: "Attempts", value: "2 included with the course" },
+      { label: "Renewal", value: "Every five years (AGCO)" },
+      { label: "Tigertest mock tests", value: "6 x 33 questions, 80% to pass" },
+    ],
+    basedOn: "Smart Serve's Full Course page and the AGCO's training, hours and ID guidance, checked November 2026",
+    source: { name: "Smart Serve: the Full Course", url: "https://smartserve.ca/full-course" },
+  },
   iehcap: {
     answer:
       "HCAP, the Hunter Competence Assessment Programme, is Ireland's deer hunter certification run by the Deer Alliance HCAP Assessment Committee. NPWS lists it as one of three approved courses for first-time Deer Hunting Licence applicants, and the Deer Alliance says Coillte requires HCAP or an equivalent for hunting deer on its forests. The first stage is a written multiple-choice test of 50 questions, and you need 40 correct (80%). Candidates who pass go on to a Range Test at 100 metres and then an oral safety examination. The Stalker Training Manual is the core text, and the written test covers deer biology and species, management, rifles and firearms safety, the law and carcase handling.",

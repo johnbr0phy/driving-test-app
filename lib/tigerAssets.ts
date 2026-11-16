@@ -202,6 +202,8 @@ const BORROWED_SETS: Record<string, string> = {
   // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX
   // and Series 7 families.
   iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter",
+  // Smart Serve Ontario borrows the alcohol server tiger.
+  smartserve: "alcohol",
   nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving", sgsnb: "nclex",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.

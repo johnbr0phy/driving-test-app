@@ -342,6 +342,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   rotaxi: { title: "Romania Taxi Driver Attestation", description: "Review Law 38/2003, the taximeter and receipts, ride-hailing rules, customers and safety for the ARR test." },
   roadmed: { title: "Admitere Medicină", description: "Grile originale de biologie (clasa a XI-a) și chimie organică, în limba română, pentru admiterea la UMF." },
   rorezid: { title: "Grile Rezidențiat Medicină", description: "Grile originale în limba română pe tematica Rezidențiatului, domeniul Medicină: Kumar și Clark, Lawrence, Sinopsis de medicină." },
+  chtheory: { title: "Swiss Driving Theory Test", description: "Practise Swiss signs, priority to the right, speed limits and parking rules for the basic theory test, in English." },
   mttheory: { title: "Malta Driving Theory Test", description: "Practise Maltese signs, roundabouts, speed limits and parking rules for the Transport Malta theory test." },
   mtmoto: { title: "Malta Motorcycle Theory Test", description: "Practise helmets and gear, machine checks, braking and road position for the Transport Malta motorcycle theory test." },
   detheorie: { title: "German Driving Theory Test", description: "Practise German right of way, signs, hazard awareness and the StVO in German for the Klasse B Theorieprüfung." },

@@ -5812,6 +5812,18 @@
     --brand-border: 28 15% 78%;
     --brand-border-light: 28 12% 88%;
     --brand-gradient-to: 100 25% 95%;
+  /* Switzerland driving theory theme: deep crimson (Swiss red hues are all taken, so dark and saturated) */
+  [data-theme="chtheory"] {
+    --brand: 357 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 357 80% 96%;
+    --brand-hover: 357 100% 18%;
+    --brand-dark: 357 100% 17%;
+    --brand-darker: 357 100% 12%;
+    --brand-muted: 357 30% 70%;
+    --brand-border: 357 35% 80%;
+    --brand-border-light: 357 30% 90%;
+    --brand-gradient-to: 10 60% 96%;
   }
 
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
@@ -10771,6 +10783,16 @@
     --brand-muted: 28 15% 45%;
     --brand-dark: 28 25% 65%;
     --brand-darker: 28 25% 78%;
+  .dark [data-theme="chtheory"] {
+    --brand: 357 100% 46.2%;
+    --brand-hover: 357 100% 38.2%;
+    --brand-light: 357 45% 13%;
+    --brand-gradient-to: 10 40% 11%;
+    --brand-border-light: 357 30% 24%;
+    --brand-border: 357 35% 34%;
+    --brand-muted: 357 30% 45%;
+    --brand-dark: 357 100% 65%;
+    --brand-darker: 357 100% 78%;
   }
 
 }

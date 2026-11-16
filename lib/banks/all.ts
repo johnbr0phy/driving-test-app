@@ -291,3 +291,4 @@ import "./bcrealestate";
 import "./aerera";
 import "./nzrealestate";
 import "./cacore";
+import "./chtheory";

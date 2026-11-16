@@ -1,3 +1,6 @@
+// Dedicated medical roles and neutral Australian firearm-safety artwork.
+const MEDICAL_SAFETY_MASCOT_IDS = new Set(["cmaa", "mace", "aufirearmsnsw", "aufirearmsqld", "aufirearmsvic", "aufirearmswa"]);
+
 // New role and school-admissions artwork replaces cached borrowed mascots.
 const UPDATED_EXAM_MASCOT_IDS = new Set(["afoqt", "shsat", "wonderlic", "mblex", "isee", "ssat", "hspt"]);
 
@@ -38,9 +41,10 @@ const HUB_IDS = new Set(["home", "tests", "teach", "uk", "ca", "au", "in", "ie",
 
 export function shareImageUrl(id: string, language = "en"): string {
   const query = new URLSearchParams({
-    v: UPDATED_EXAM_MASCOT_IDS.has(id) ? "new-exam-mascots-1" : ITALIAN_MASCOT_IDS.has(id) ? "italian-mascots-1" : ADMISSIONS_MASCOT_IDS.has(id) ? "admissions-mascots-1" : id === "ukgas" ? "gas-engineer-1" : EU_MASCOT_IDS.has(id) ? "eu-mascots-1" : BATCH_C_MASCOT_IDS.has(id) ? "batch-c-mascots-1" : BATCH_B_MASCOT_IDS.has(id) ? "batch-b-mascots-1" : BATCH_A_MASCOT_IDS.has(id) ? "batch-a-mascots-1" : AP_PH_MASCOT_IDS.has(id) ? "ap-ph-mascots-1" : HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
+    v: MEDICAL_SAFETY_MASCOT_IDS.has(id) ? "medical-safety-mascots-1" : UPDATED_EXAM_MASCOT_IDS.has(id) ? "new-exam-mascots-1" : ITALIAN_MASCOT_IDS.has(id) ? "italian-mascots-1" : ADMISSIONS_MASCOT_IDS.has(id) ? "admissions-mascots-1" : id === "ukgas" ? "gas-engineer-1" : EU_MASCOT_IDS.has(id) ? "eu-mascots-1" : BATCH_C_MASCOT_IDS.has(id) ? "batch-c-mascots-1" : BATCH_B_MASCOT_IDS.has(id) ? "batch-b-mascots-1" : BATCH_A_MASCOT_IDS.has(id) ? "batch-a-mascots-1" : AP_PH_MASCOT_IDS.has(id) ? "ap-ph-mascots-1" : HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
   });
   if (language !== "en") query.set("lang", language);
   return `/og/${encodeURIComponent(id)}?${query.toString()}`;
 }
+
 

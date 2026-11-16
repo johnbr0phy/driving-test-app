@@ -6322,5 +6322,18 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Deer Alliance HCAP certification procedure, the HCAP Stalker Manual contents and the NPWS deer hunting licence pages, checked November 2026",
     source: { name: "Deer Alliance: HCAP certification", url: "https://www.deeralliance.ie/certification" },
+  hknurse: {
+    answer:
+      "The Nursing Council of Hong Kong can require nurses trained outside Hong Kong to pass its Licensing Examination before they register as registered nurses (general) under the Nurses Registration Ordinance. It has a written part and a practical part, with no exemption for either, and the written part must be passed first. The Council's Candidates' Handbook (September 2018) describes the written part as 200 marks over one day with a passing mark of 100, and both Paper A (Medical English) and Paper B must be passed. Paper B's multiple-choice marks cover psychology, basic nursing care and system nursing care, then anatomy and physiology, food and nutrition, primary health care, personal and communal health, microbiology, first aid and pharmacology. Tigertest practises those multiple-choice topics only.",
+    rows: [
+      { label: "Written part", value: "200 marks, passing mark 100, one day" },
+      { label: "Papers", value: "Medical English, multiple choice, essay and specialty questions" },
+      { label: "Both papers", value: "Paper A and Paper B must each be passed" },
+      { label: "Languages", value: "Chinese or English" },
+      { label: "Then", value: "Practical part: health assessment, medication, aseptic technique" },
+      { label: "Run by", value: "Nursing Council of Hong Kong" },
+    ],
+    basedOn: "The Council's Candidates' Handbook for Nursing Council Licensing Examinations (September 2018) and its 2025 RN(G) syllabus, checked November 2026",
+    source: { name: "Nursing Council of Hong Kong: Candidates' Handbook", url: "https://www.nchk.org.hk/filemanager/en/pdf/Candidates_Handbook_for_Nursing_Council_Licensing_Exam_eng.pdf" },
   },
 };

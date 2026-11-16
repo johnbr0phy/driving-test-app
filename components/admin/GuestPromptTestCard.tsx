@@ -7,6 +7,7 @@ import {
   GUEST_PROMPT_TEST_ID,
   GUEST_PROMPT_VARIANTS,
   GUEST_PROMPT_VARIANT_NAMES,
+  RETIRED_GUEST_PROMPT_VARIANTS,
   twoProportionP,
   type GuestPromptCounts,
   type GuestPromptVariant,
@@ -56,8 +57,8 @@ export function GuestPromptTestCard() {
     <div className={`${CARD} mb-3 sm:mb-4`}>
       <h2 className={H2}>Which sign-up message works best?</h2>
       <p className={SUB}>
-        After two right answers in a row, signed-out English readers get a sign-up step in place of the next question, a different one of ten designs each time,
-        in an order shuffled per browser. A sign-up counts for a design when the account is made within an hour of tapping its button.
+        After two right answers in a row, signed-out English readers get a sign-up step in place of the next question, a different one of the active designs each time,
+        in an order shuffled per browser. Retired designs keep their counts but are no longer shown. A sign-up counts for a design when the account is made within an hour of tapping its button.
         {data.since && ` Counting since ${data.since.slice(0, 10)}.`}
       </p>
       <div className="mt-3 inline-flex rounded-lg border border-gray-200 dark:border-gray-800 p-0.5 text-xs">
@@ -94,6 +95,9 @@ export function GuestPromptTestCard() {
                   <td className={`py-2 pr-2 ${STICKY_COL} max-w-[14rem]`}>
                     <span className="font-mono text-xs text-gray-500 dark:text-gray-400 mr-1">{r.v}</span>
                     {GUEST_PROMPT_VARIANT_NAMES[r.v]}
+                    {RETIRED_GUEST_PROMPT_VARIANTS.includes(r.v) && (
+                      <span className="ml-1 rounded bg-gray-100 dark:bg-gray-800 px-1 text-xs text-gray-500 dark:text-gray-400">retired</span>
+                    )}
                   </td>
                   <td className={TD}>{r.shown}</td>
                   <td className={TD}>{r.taps} <span className="text-gray-500 dark:text-gray-400">({fmtPct(r.taps, r.shown)})</span></td>
@@ -108,7 +112,7 @@ export function GuestPromptTestCard() {
         </TableScroll>
       )}
       <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
-        Ten designs split the traffic, so give it at least a few hundred showings each before calling a winner, and with ten comparisons expect one
+        The active designs split the traffic, so give it at least a few hundred showings each before calling a winner, and with several comparisons expect one
         to look &quot;significant&quot; by chance about two times in five: a winner should beat the control at p under 0.005, or hold its lead for another two weeks.
       </p>
       <DesignPreviews />
@@ -128,7 +132,7 @@ function DesignPreviews() {
           const Design = GUEST_PROMPT_DESIGNS[v];
           return (
             <div key={v} className="pointer-events-none">
-              <p className="mb-1 text-xs font-mono text-gray-500 dark:text-gray-400">{v}</p>
+              <p className="mb-1 text-xs font-mono text-gray-500 dark:text-gray-400">{v}{RETIRED_GUEST_PROMPT_VARIANTS.includes(v) ? " (retired)" : ""}</p>
               <Design n={14} headingRef={heading} isNative={false} busy={false} onGoogle={noop} signupHref="/signup" onEmail={noop} onLater={noop} />
             </div>
           );

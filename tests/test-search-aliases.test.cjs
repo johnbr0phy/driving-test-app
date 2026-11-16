@@ -7,6 +7,10 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["nchk", "HK", "hknurse"],
+  ["hong kong nursing council", "HK", "hknurse"],
+  ["hk nurse licensing exam", "HK", "hknurse"],
+  ["hong kong rn exam", "HK", "hknurse"],
   // [query, visitor region, test id that must come first]
   ["nsw firearms licence", "AU", "aufirearmsnsw"],
   ["nsw gun licence test", "AU", "aufirearmsnsw"],

@@ -5624,6 +5624,20 @@
     --brand-gradient-to: 280 70% 96%;
   }
 
+  /* Hong Kong nursing Licensing Examination theme */
+  [data-theme="hknurse"] {
+    --brand: 190 40% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 190 50% 95%;
+    --brand-hover: 190 40% 14%;
+    --brand-dark: 190 40% 12%;
+    --brand-darker: 190 35% 8%;
+    --brand-muted: 190 25% 70%;
+    --brand-border: 190 30% 78%;
+    --brand-border-light: 190 30% 88%;
+    --brand-gradient-to: 205 50% 95%;
+  }
+
   /* NZ firearms licence theory test theme */
   [data-theme="nzfirearms"] {
     --brand: 30 55% 22%;
@@ -10544,6 +10558,18 @@
     --brand-muted: 275 25% 45%;
     --brand-dark: 275 70% 65%;
     --brand-darker: 275 65% 78%;
+  }
+
+  .dark [data-theme="hknurse"] {
+    --brand: 190 40% 39%;
+    --brand-hover: 190 40% 31%;
+    --brand-light: 190 45% 13%;
+    --brand-gradient-to: 205 40% 11%;
+    --brand-border-light: 190 30% 24%;
+    --brand-border: 190 30% 34%;
+    --brand-muted: 190 25% 45%;
+    --brand-dark: 190 40% 65%;
+    --brand-darker: 190 35% 78%;
   }
 
   .dark [data-theme="nzfirearms"] {

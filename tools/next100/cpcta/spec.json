@@ -1,0 +1,16 @@
+{
+  "id": "cpcta", "stateCode": "CPCTA", "idBase": 31000, "prefix": "CPCTA-",
+  "slug": "/cpcta", "landingPath": "/cpct-practice-test", "dataFile": "data/cpcta-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "cpctaBasicCare", "perTest": 6, "pool": 24, "segment": "BAS"},
+    {"key": "cpctaVitals", "perTest": 6, "pool": 24, "segment": "VIT"},
+    {"key": "cpctaMobility", "perTest": 6, "pool": 24, "segment": "MOB"},
+    {"key": "cpctaPsychosocial", "perTest": 4, "pool": 16, "segment": "PSY"},
+    {"key": "cpctaCompliance", "perTest": 9, "pool": 36, "segment": "CMP"},
+    {"key": "cpctaInfection", "perTest": 8, "pool": 32, "segment": "INF"},
+    {"key": "cpctaPhlebotomy", "perTest": 6, "pool": 24, "segment": "PHL"},
+    {"key": "cpctaEkg", "perTest": 5, "pool": 20, "segment": "EKG"}
+  ],
+  "notes": "NHA CPCT/A Test Plan based on the 2025 job analysis (the plan for exams from January 13, 2027; the 2018 plan covers exams before then): 100 scored + 20 pretest items in 2 hours, domains 43/19/16/12/10. Scaled to 50: Patient Care 22 (split 6/6/6/4 into four Tigertest categories), Compliance 9, Infection Control 8, Phlebotomy and Nonblood Specimens 6, EKG 5; Tigertest's rounding."
+}

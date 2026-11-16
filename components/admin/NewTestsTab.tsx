@@ -7,7 +7,7 @@ import {
 import type { NewTestsPayload } from "@/lib/server/newTestsAdmin";
 
 // The New tests tab on /admin, from /api/admin/new-tests
-// (lib/server/newTestsAdmin.ts): the 100 most recently launched tests, each
+// (lib/server/newTestsAdmin.ts): the 200 most recently launched tests, each
 // with what it has done since launch.
 
 const fmtInt = (n: number) => Math.round(n).toLocaleString("en-US");

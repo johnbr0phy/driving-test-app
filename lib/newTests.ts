@@ -8,7 +8,7 @@
 
 export const DAY_MS = 86_400_000;
 /** The tab lists this many tests, newest launch first. */
-export const RECENT_TESTS = 100;
+export const RECENT_TESTS = 200;
 
 export type TestPages = { exact: string[]; prefixes: string[] };
 

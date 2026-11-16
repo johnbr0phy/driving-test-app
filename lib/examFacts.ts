@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cpabar: {
+    answer:
+      "BAR, Business Analysis and Reporting, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. BAR runs 4 hours with 50 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, with only one task reworded for 2027, it covers business analysis (40 to 50%), technical accounting and reporting (35 to 45%) and state and local governments (10 to 20%).",
+    rows: [
+      { label: "Section time", value: "4 hours" },
+      { label: "Multiple-choice questions", value: "50, in two testlets of 25" },
+      { label: "Task-based simulations", value: "7" },
+      { label: "Score weighting", value: "50% MCQ, 50% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Largest area", value: "Business analysis, 40 to 50%" },
+      { label: "Run by", value: "AICPA, with NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
+    source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
   cehrs: {
     answer:
       "The Certified Electronic Health Records Specialist (CEHRS) exam is the National Healthcareer Association's (NHA) certification exam for people who keep electronic health records accurate, secure and usable. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 125 minutes to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2019 job analysis, has five domains: Clinical Operations 32 items, Non-Clinical Operations 28, Revenue Cycle/Finance 15, Regulatory Compliance 15 and Reporting 10. It is taken at a school, a PSI testing center or by live remote proctoring.",

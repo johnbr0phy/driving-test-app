@@ -1,4 +1,5 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  cpabar: { title: "Free CPA BAR Practice Test", description: "200 original multiple-choice questions on the AICPA's BAR blueprint: business analysis, technical accounting and reporting, and state and local governments. Free to start." },
   cehrs: { title: "Free CEHRS Practice Test", description: "200 original questions on the NHA CEHRS test plan for electronic health records specialists. Free to start." },
   cpcta: { title: "Free-to-Start CPCT/A Practice Test", description: "200 original questions on the NHA CPCT/A test plan for patient care technicians. Free to start." },
   pance: { title: "Free PANCE Practice Test", description: "200 original questions on the NCCPA PANCE content blueprint (2025) for physician assistant candidates. Free to start." },

@@ -280,3 +280,4 @@ import "./cpatcp";
 import "./pance";
 import "./cpcta";
 import "./cehrs";
+import "./cpabar";

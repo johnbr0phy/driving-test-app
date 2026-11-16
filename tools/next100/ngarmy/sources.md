@@ -14,7 +14,9 @@ were not opened or copied. Checked 2026-11-01 unless noted.
   - https://www.hotnigerianjobs.com/print/873959/ (eligibility as reprinted: single, Nigerian by birth,
     NIN and BVN, at least 4 passes (not credits, as the listing words it) including English in WASSCE/GCE/NECO/NABTEB/NBAIS in at most two
     sittings, state of origin, height 1.68 m men and 1.65 m women)
-  - https://jobnow.ng/nigerian-army-nationwide-massive-recruitment-for-trades-non-tradesmen-women-91rri-2026/
+  - jobnow.ng carried the same 91RRI listing; on 2026-11-16 its URL showed only a general job board
+    (the article was taken down), so the link was dropped. No official Nigerian Army page with the
+    91RRI terms could be read (army.mil.ng did not load); the reports here remain the best sources.
   - https://radionigeriasouthsouth.gov.ng/delta-rallies-563-army-recruits-urges-shortlisted-candidates-to-report-for-screening/ (25 August 2026)
 - 90RRI listings (screening reported for 4 to 18 December 2025) also said no pre-selection CBT and
   no zonal screening, all screening in the state of origin. The 89RRI announcement (Nairametrics,

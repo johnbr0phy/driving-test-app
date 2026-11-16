@@ -65,7 +65,7 @@ below, all checked 2026-10-31. Signs and markings are described in words (no ima
     damage crashes to police within 24 hours; minor damage-only crashes may move aside; 999;
     first aid basics.
 - TD, "Conditions Imposed with Issue of Learner's Driving Licence" (Oct 2017):
-  https://www.td.gov.hk/filemanager/en/publication/conditions%20imposed%20with%20issue%20of%20ldl%20(eng)_oct%202017.pdf
+  https://www.td.gov.hk/filemanager/en/publication/conditions%20imposed%20with%20issue%20of%20ldl%20%28eng%29_oct%202017.pdf
   Instructor for the vehicle class; passengers limited to the instructor, one other learner under
   instruction and examiners; white 250 mm plate with a red L and the red character for "learn",
   front and rear; permitted times Mon-Fri 6:00-7:30, 9:30-16:30, 19:30-23:30; Sat 6:00-7:30,
@@ -98,3 +98,8 @@ below, all checked 2026-10-31. Signs and markings are described in words (no ima
   "three children count as two passengers" rule, which the 1 November 2025 CRD law may affect.
 - Learner licence validity, test languages and retake waiting periods (not stated on the pages read).
 - Colour of the P plate (not stated in the Code text).
+
+## Source triage 2026-11-16
+
+- The source watcher cut this file's link at its "(" and reported it broken; the parentheses (and any
+  comma) in the URL are now percent-encoded so the whole link is watched. The full link loads (PDF).

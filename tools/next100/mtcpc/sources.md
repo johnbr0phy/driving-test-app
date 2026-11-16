@@ -98,7 +98,7 @@ legislation.mt PDFs load directly and were read in full where cited.
   including the driver.
 - From 1 July 2026, light goods vehicles over 2.5 t up to 3.5 t in international carriage or
   cabotage for hire or reward need a smart tachograph (RSA "Smart Tachograph 2 (LCVs)",
-  https://www.rsa.ie/services/professional-drivers/tachographs-information/smart-tachograph-2-(lcvs),
+  https://www.rsa.ie/services/professional-drivers/tachographs-information/smart-tachograph-2-%28lcvs%29,
   and several trade sources, via search 2026-11-07).
 - Directive 2002/15/EC (working time of mobile workers): average 48 h, 60 h maximum in a week;
   no more than 6 h of work without a break; 30 min for 6 to 9 h, 45 min over 9 h; breaks split

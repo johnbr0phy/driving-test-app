@@ -54,7 +54,7 @@ Writing PDFs) were deliberately not opened.
 
 ## Credential context (checked 2026-11-14)
 - California Commission on Teacher Credentialing, leaflet CL-667 "Basic Skills Requirement" (July 2021, page last
-  updated October 2026): https://www.ctc.ca.gov/credentials/leaflets/basic-skills-requirement-(cl-667) (fetched
+  updated October 2026): https://www.ctc.ca.gov/credentials/leaflets/basic-skills-requirement-%28cl-667%29 (fetched
   2026-11-14). The CBEST is one way to meet the basic skills requirement; passing standard 41 per section, or 37 in a
   section with a total of 123; passing scores do not expire; other routes (coursework, SAT/ACT, CSET: Multiple
   Subjects plus Writing Skills, AP, other states' exams) exist.

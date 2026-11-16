@@ -13,7 +13,7 @@ results; none were opened for their questions and nothing was copied. Checked 20
   public service commission in Pakistan, established April 1937, constituted under the Punjab Public
   Service Commission Ordinance 1978 and working under the Punjab Public Service Commission
   (Functions) Rules 1979, headquarters Lahore. (The article notes it relies on few sources.)
-  https://en.wikipedia.org/wiki/Punjab_Public_Service_Commission_(Pakistan)
+  https://en.wikipedia.org/wiki/Punjab_Public_Service_Commission_%28Pakistan%29
 - Search result snippets of PPSC syllabus PDFs (ppsc.gop.pk/Syllabus/Slb1G2024_240723152057.pdf,
   syllabus_23122916550.pdf, 4C2022.pdf and others, 2026-11-05; the PDFs themselves did not open):
   per-post syllabus notices describing a single MCQ paper of 100 marks in 90 minutes, a general
@@ -76,12 +76,12 @@ no primary PPSC document could be read, so the format stays guide-level and is l
 - MAO College 1875: https://en.wikipedia.org/wiki/Muhammadan_Anglo-Oriental_College ; became AMU in
   1920: https://en.wikipedia.org/wiki/Aligarh_Muslim_University
 - Asbab-e-Baghawat-e-Hind and Tahzib-ul-Akhlaq: https://en.wikipedia.org/wiki/Syed_Ahmad_Khan
-- Bengal partition reversed 1911: https://en.wikipedia.org/wiki/Partition_of_Bengal_(1905)
+- Bengal partition reversed 1911: https://en.wikipedia.org/wiki/Partition_of_Bengal_%281905%29
 - Fourteen Points 1929 in reply to the Nehru Report: https://en.wikipedia.org/wiki/Jinnah%27s_Fourteen_Points
 - Rahmat Ali, Now or Never 1933: https://en.wikipedia.org/wiki/Now_or_Never;_Are_We_to_Live_or_Perish_Forever%3F
-- Round Table Conferences in London 1930-32: https://en.wikipedia.org/wiki/Round_Table_Conferences_(India)
+- Round Table Conferences in London 1930-32: https://en.wikipedia.org/wiki/Round_Table_Conferences_%28India%29
 - 1935 Act provincial autonomy, 1937 elections, 1919 dyarchy: https://en.wikipedia.org/wiki/Government_of_India_Act_1935
-- Day of Deliverance 22 Dec 1939: https://en.wikipedia.org/wiki/Day_of_Deliverance_(India)
+- Day of Deliverance 22 Dec 1939: https://en.wikipedia.org/wiki/Day_of_Deliverance_%28India%29
 - Lahore Resolution 23 Mar 1940, moved by Fazlul Huq, seconded by Khaliquzzaman and others, Minto
   Park now (Greater) Iqbal Park: https://en.wikipedia.org/wiki/Lahore_Resolution
 - Cripps Mission March 1942, rejected by both: https://en.wikipedia.org/wiki/Cripps_Mission
@@ -147,3 +147,10 @@ no primary PPSC document could be read, so the format stays guide-level and is l
   ibpsrrb, ibpsclerk, rpfconst, upscse, agniveer, ugcnet, cdcfib, vicsel, nigeria-customs and others
   were rewritten. Remaining overlaps are generic stems ("Which sentence is correct?") with
   different options.
+
+## Source triage 2026-11-16
+
+- MCQsDrive (coaching) re-read: still 100 MCQs, 100 marks, 90 minutes, subjects by post, which the
+  bank already treats as a guide figure. ppsc.gop.pk did not load from here, so no official page could
+  replace it. The Wikipedia link above was cut short at its "(" by the source watcher; its parentheses
+  are now percent-encoded.

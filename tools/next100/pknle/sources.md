@@ -16,7 +16,7 @@ The PMDC results page is still at pmdc.pk/result/NLEStepOne.
   practical component if determined by the Council"; no limit on attempts. 18(3): foreign-qualified
   practitioners registered abroad must also pass it.
 - "National Registration Examination (Medical) Standard, Structure and Syllabus 2024"
-  (https://pmdc.pk/Documents/Syllabus/National%20Registration%20Examination%20(Medical)%20Standard,%20Structure%20and%20Syllabus%202024.pdf),
+  (https://pmdc.pk/Documents/Syllabus/National%20Registration%20Examination%20%28Medical%29%20Standard%2C%20Structure%20and%20Syllabus%202024.pdf),
   notified by PM&DC letter Exam/2024/13 of 30 April 2024 (National Medical & Dental Academic Board
   20 March 2024, Council 5 April 2024). Text extracted with pdftotext; the weightage page was also
   read as an image:
@@ -133,3 +133,8 @@ fast-breathing cut-offs, MUAC 11.5 cm, zinc 10 to 14 days, newborn compressions,
 zone, OGTT 24 to 28 weeks, praevia caesarean timing, refractory anaphylaxis, hyperkalaemia, DKA,
 hyponatraemia correction limit, thrombolysis within 4.5 h, IV artesunate, pathology, biochemistry
 and drug facts in q_pab.py and q_pha.py. The exam-format items under "Not confirmed" above stand.
+
+## Source triage 2026-11-16
+
+- The source watcher cut this file's link at its "(" and reported it broken; the parentheses (and any
+  comma) in the URL are now percent-encoded so the whole link is watched. The full link loads (PDF).

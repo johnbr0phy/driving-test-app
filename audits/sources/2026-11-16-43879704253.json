@@ -1,0 +1,626 @@
+[
+  {
+    "id": "04a66fba3416fb2b0afc0a0f0f99b4885b826f4a",
+    "url": "https://www.eqao.com/the-assessments/grade-9-math/",
+    "verdict": "noise",
+    "reason": "EQAO page still gives two sessions of about 60 minutes, two stages each, 54 questions (50 scored), built-in calculator and formula sheet, as Tigertest says."
+  },
+  {
+    "id": "09b6923474cf6be1ad5c86c9fc895b35f7af4bc9",
+    "url": "https://nairametrics.com/2025/11/26/cdcfib-2025-recruitment-over-200000-candidates-fail-computer%e2%80%91based-test",
+    "verdict": "replaced",
+    "reason": "Nairametrics (news) still matches; no official CDCFIB page states the CBT format, so it stays as the best source with a dated note in sources.md."
+  },
+  {
+    "id": "19c194b0db771e129738aed8d5dead75b51c6932",
+    "url": "https://www.trafikverket.se/korkort/ta-korkort/teoriprov-och-yrkesprov-med-stod/",
+    "verdict": "noise",
+    "reason": "Trafikverket's support page lists accommodation options and times (75 minutes extended); nothing Tigertest states moved."
+  },
+  {
+    "id": "26daa4c9f1e8844d9ef4f4e6ffb737fd46613bab",
+    "url": "https://www.citb.co.uk/courses-and-qualifications/hse-test-and-cards/about-hse-test/",
+    "verdict": "noise",
+    "reason": "CITB still gives 50 questions in 45 minutes for £23.50, matching the facts."
+  },
+  {
+    "id": "3734abe784a7d0e67d880e8db91ac310949c9916",
+    "url": "https://praxis.ets.org/test/5001.html",
+    "verdict": "noise",
+    "reason": "ETS 5001 page still gives 4 hours 35 minutes over four separately timed subtests; the changes are prices of prep products."
+  },
+  {
+    "id": "4280473a71a382d011ee4f408f8f1c7cc46d0513",
+    "url": "https://uppbpb.gov.in",
+    "verdict": "noise",
+    "reason": "UPPRPB homepage only adds result and court-order notices for the 2025 recruitment; nothing about the written exam pattern."
+  },
+  {
+    "id": "46893a666b78baae8226496f985cf1862dc9b7f3",
+    "url": "https://www.aqa.org.uk/news/gcse-maths-and-gcse-sciences-formulae-and-equation-sheets-for-2025-2027",
+    "verdict": "noise",
+    "reason": "AQA news index lists other news items; the 2025-2027 equation sheet item Tigertest relies on is unchanged and already tracked in examFreshness."
+  },
+  {
+    "id": "487bdcb1f4144aa18b680d24a02bf8a12c3bed3e",
+    "url": "https://eqao.com/the-assessments/grade-9-math",
+    "verdict": "noise",
+    "reason": "Same EQAO Grade 9 page without www; it still matches the format, question count and tools Tigertest states."
+  },
+  {
+    "id": "54ef5cfe2087661cb451b760e6f353270985fbf7",
+    "url": "https://www.sheriaplex.com/kenya-acts/3089",
+    "verdict": "replaced",
+    "reason": "Sheriaplex reproduces Traffic Act s 31 unchanged; new.kenyalaw.org could not be read, so it stays as the best readable copy, noted in sources.md."
+  },
+  {
+    "id": "5551b606c7c743e47d2d381579cf63d329048afe",
+    "url": "https://hellobanker.in/ibps-rrb-crp-xv-recruitment-2026-notification-pdf-out-for-officer-office-assistant-posts/",
+    "verdict": "replaced",
+    "reason": "hellobanker still links the CRP RRBs-XV notification with the same pattern; ibps.in's RRB XV page does not link the PDF, noted in sources.md."
+  },
+  {
+    "id": "586fd35506dd1b99de5083432ce2f82e0d034fea",
+    "url": "https://news.careers360.com/upessc-up-gov-in-uptet-result-2026-out-updeled-gov-in-direct-link-pass-percentage-paper-1-2-sarkari-exam",
+    "verdict": "replaced",
+    "reason": "Careers360 result article still matches; upessc.up.gov.in did not load, so it stays as a secondary source with a dated note."
+  },
+  {
+    "id": "59cccde424500c2c78d4793025f9ebe998db4c2a",
+    "url": "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve",
+    "verdict": "replaced",
+    "reason": "Lex still gives 45 questions, 36 to pass with 4 of 5 values; no SIRI page with the format could be found, noted in sources.md."
+  },
+  {
+    "id": "5b90292605c949192347fc2c86e450f5d497dafe",
+    "url": "https://www.aama-ntl.org/certification",
+    "verdict": "updated",
+    "reason": "AAMA now says a revised CMA content outline applies to exams on or after July 2027; added a lib/examFreshness.json event and a dated sources.md note, bank stays on the current outline."
+  },
+  {
+    "id": "69b329c613dc20d9458ff51e4ee8c50cd0233b98",
+    "url": "https://www.cnn.gr/ellada/story/285219/adeies-odigisis-allazei-to-orio-ilikias-stoys-ypopsifioys-kamera-stin-exetasi",
+    "verdict": "replaced",
+    "reason": "CNN Greece is news; the Ministry's official computer theory test page now loads and is listed first, CNN moved to a secondary line."
+  },
+  {
+    "id": "6eda68d7714011da5e5d35e957abdf91a7807d50",
+    "url": "https://eur-lex.europa.eu/eli/dir/2016/97/oj",
+    "verdict": "noise",
+    "reason": "EUR-Lex answered with a bot check; the Official Journal text of Directive 2016/97 is fixed and the pending Retail Investment Strategy change is already a freshness event."
+  },
+  {
+    "id": "748943508b1f6391c26a359369b546fd28811400",
+    "url": "https://mcqsdrive.com/blog/ppsc-syllabus-2026/",
+    "verdict": "replaced",
+    "reason": "MCQsDrive still says 100 MCQs in 90 minutes, a guide figure; ppsc.gop.pk did not load, noted in sources.md."
+  },
+  {
+    "id": "7b8412a2b98de473ec84c95a318df7fbfffc9eb6",
+    "url": "https://redopositor.com/blog/es-oposiciones-proves-seleccio-per-vigilant-seguretat-ministerio-del-interior-2026/",
+    "verdict": "replaced",
+    "reason": "Redopositor still matches BOE-A-2026-813; moved to a Secondary sources section so the watched links are BOE pages."
+  },
+  {
+    "id": "7bde5e9117df1dfe5c22f8413e8be33f5c11e509",
+    "url": "https://insuranceworld.gr/tte-to-programma-exetaseon-pistopoiisis-asfaliston-gia-to-a%CE%84-6mino-2026/",
+    "verdict": "replaced",
+    "reason": "Insurance World reports Bank of Greece sitting dates only; bankofgreece.gr returned 403, noted in sources.md."
+  },
+  {
+    "id": "8a46c74ac2096b282fb69b4e600517c45f0648b1",
+    "url": "https://www.mas.gov.sg/regulation/notices/notice-faa-n26",
+    "verdict": "noise",
+    "reason": "MAS FAA-N26 page still shows last revised 1 April 2024; the new item is a related December 2025 information paper."
+  },
+  {
+    "id": "8b09f66ff7c24efd002cb7e9ead1d91b89cc8914",
+    "url": "https://www.cityandguilds.com/qualifications-and-apprenticeships/building-services-industry/electrical-installation/2382-requirements-for-electrical-installations",
+    "verdict": "noise",
+    "reason": "City & Guilds still says 2382-26 (Amendment 4) is current from 16 April 2026; only document listings changed."
+  },
+  {
+    "id": "8e61cb4d97550fa46409e7dac9380760f4933d29",
+    "url": "https://rmn.ph/iskedyul-ng-afpsat-sa-rehiyon-dos-inanunsyo-ng-afp",
+    "verdict": "replaced",
+    "reason": "RMN reports AFPSAT sitting dates only; afp.mil.ph shows a holding page, noted in sources.md."
+  },
+  {
+    "id": "9905cba17633ce30d9a4904a6607312232d28b45",
+    "url": "https://www.karmasandhan.com/up-police-constable-exam-date/",
+    "verdict": "replaced",
+    "reason": "Karmasandhan still gives 8 to 10 June 2026, 150 questions, 300 marks; no official notice with the pattern could be read, noted in sources.md."
+  },
+  {
+    "id": "99b9f4174da55f8fa88e0d58d4a3382b7ae80ed0",
+    "url": "https://trailhead.salesforce.com/credentials/platformadministrator",
+    "verdict": "noise",
+    "reason": "Trailhead credential page is script-rendered and shows only related credentials; no exam figure Tigertest uses could be seen changing."
+  },
+  {
+    "id": "9c6e90886a5b5c5017e4b1c40f3fb7242dcc154a",
+    "url": "https://novascotia.ca/sns/rmv/safe/handbook.asp",
+    "verdict": "needs_person",
+    "reason": "The Nova Scotia handbook URL now leads to a new 2026 edition (\"Reprinted with revisions, 2026\"); the bank was written from the 2017 reprint and needs a full re-check against it."
+  },
+  {
+    "id": "a1144040fe75a49c816d6256e79422d9ad0ce627",
+    "url": "https://praxis.ets.org/test/5622.html",
+    "verdict": "noise",
+    "reason": "ETS 5622 page still gives 2 hours, 70 selected-response and 4 constructed-response questions; changes are prep product offers."
+  },
+  {
+    "id": "a7fd6f02b6c74fb3e15b4fd3543da9755e9a1972",
+    "url": "https://www.icirnigeria.org/cut-off-mark-for-varsity-admission-remains-150-says-jamb/",
+    "verdict": "replaced",
+    "reason": "ICIR still reports the 150 cut-off; JAMB's own news could not be read, noted in sources.md."
+  },
+  {
+    "id": "a89391780282a8586d35c5022a509a0be49602b6",
+    "url": "https://www.novascotia.ca/documents/drivers-handbook",
+    "verdict": "needs_person",
+    "reason": "Same as the other handbook link: a 2026 revised edition of the Nova Scotia Driver's Handbook replaced the 2017 reprint and needs a person to compare the bank against it."
+  },
+  {
+    "id": "a8df965fbed4e431d7a3ceeb0cd856c4efdc8af8",
+    "url": "https://www.police.gov.sg/E-Services/Practise-Driving-and-Riding-Theory-Test",
+    "verdict": "noise",
+    "reason": "SPF practice test page only lists the RTT practice tests in four languages; no format figures."
+  },
+  {
+    "id": "ad7813ccfc320eaf6a28eec55d994b44ceb4acb0",
+    "url": "https://www.moonstone.co.za/services/regulatory-exam-body/",
+    "verdict": "noise",
+    "reason": "Moonstone's exam body page carries only navigation and service links; no RE5 figures changed."
+  },
+  {
+    "id": "b2e038c3859f8bc6207f326de4ee732fea3acd51",
+    "url": "https://utkarsh.com/exams/rajasthan-police-constable",
+    "verdict": "replaced",
+    "reason": "Utkarsh still gives 150 questions in 2 hours; police.rajasthan.gov.in did not load, noted in sources.md."
+  },
+  {
+    "id": "bad6e22cdd44fe38c3d9ff1d8bd565d880b15c3f",
+    "url": "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Provisional-Driving-Licence",
+    "verdict": "noise",
+    "reason": "SPF provisional licence page still says the PDL is digital and valid for 2 years after the Basic Theory Test, as Tigertest says."
+  },
+  {
+    "id": "bf92d87288f97bfcd5625f5b86623569224e410e",
+    "url": "https://jobnow.ng/nigerian-army-nationwide-massive-recruitment-for-trades-non-tradesmen-women-91rri-2026/",
+    "verdict": "replaced",
+    "reason": "The jobnow.ng article was taken down (URL shows a job board); link dropped, the government radio report and other listings remain."
+  },
+  {
+    "id": "c05e24fd2f0e03ac188e2df962b8f7380cd1c1e2",
+    "url": "https://www.oliveboard.in/hindiblog/ssc-cpo-ki-exam-date-kya-hai/",
+    "verdict": "needs_person",
+    "reason": "Oliveboard now reports an SSC notice of 26 October 2026 moving Paper-I to 23 to 28 November 2026 (landing says guides report 20 to 28); ssc.gov.in could not be read to confirm."
+  },
+  {
+    "id": "c74187095321a7ad458cb52fe8b2beba1651c617",
+    "url": "https://www.alberta.ca/drivers-knowledge-test",
+    "verdict": "noise",
+    "reason": "Alberta still gives 30 multiple-choice questions, 25 to pass, at registry agents, in 25 languages."
+  },
+  {
+    "id": "d4f5e7a9be845da3ac3def09d6a79aa72a0eaf56",
+    "url": "https://www.vlaanderen.be/toelatingsexamens",
+    "verdict": "noise",
+    "reason": "Exam dates 2 and 3 July 2027 match; the published 2027 leerstofoverzicht is already a freshness event due 2026-12-01."
+  },
+  {
+    "id": "d56a674942cb24c67085cc2382352a87347c7294",
+    "url": "https://www.sheriaplex.com/kenya-acts/3088",
+    "verdict": "replaced",
+    "reason": "Sheriaplex reproduces Traffic Act s 30 unchanged; new.kenyalaw.org could not be read, so it stays as the best readable copy, noted in sources.md."
+  },
+  {
+    "id": "d9b3a8700bf48324c028cbc8ecb216abd8f2cc9c",
+    "url": "https://thefrontierng.com/10-things-candidates-should-know-about-customs-recruitment-cbt-exams/",
+    "verdict": "replaced",
+    "reason": "The Frontier still matches the Customs press release, which is the first watched link; noted in sources.md."
+  },
+  {
+    "id": "dc9dd3271e57ca8b3bacf438c498ed94c54063f2",
+    "url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+    "verdict": "noise",
+    "reason": "Google still gives 90 minutes, 99 USD, 50 to 60 multiple choice and multiple select questions; it adds a renewal exam Tigertest does not describe."
+  },
+  {
+    "id": "dfb706c4e745fa38d1dd74623736be0ddffc1ac0",
+    "url": "https://www.trafikverket.se/korkort/korkortsprov/personbil-och-latt-lastbil/kunskapsprov-b/",
+    "verdict": "noise",
+    "reason": "Trafikverket still gives 70 questions, 5 unscored, 52 of 65 to pass, 50 minutes, matching the facts."
+  },
+  {
+    "id": "e5b741d618c7e856fc418302de97088de6a59aaf",
+    "url": "https://www.aagora.gr/tte-exetaseis-pistopoiisis-stin-athina-stis-5-kai-6-dekemvriou/",
+    "verdict": "replaced",
+    "reason": "Aagora reports the 5 and 6 December 2026 sittings only; bankofgreece.gr returned 403, noted in sources.md."
+  },
+  {
+    "id": "e97c6c038d73f2f6fc75be098c656470f5b2b87b",
+    "url": "https://news.careers360.com/delhi-police-constable-result-2026-out-over-1-lakh-candidates-shortlisted-for-pe-mt-dv-male-female-government-jobs-ssc-gov-in/amp",
+    "verdict": "replaced",
+    "reason": "Careers360 result article still lists the 35-mark PE&MT cut-off; ssc.gov.in is script-only, noted in sources.md."
+  },
+  {
+    "id": "f0ed9b1d4c4879a5926cda47ea2928842a966330",
+    "url": "https://aiiasia.org/exam-faqs/",
+    "verdict": "noise",
+    "reason": "Aii's FAQ covers entry requirements and admin; nothing contradicts the PCEIA format Tigertest states."
+  },
+  {
+    "id": "fe8226d283fb8056724a088a935496c4cf9cd688",
+    "url": "https://competition.careers360.com/articles/up-police-constable-exam-date-2026-out",
+    "verdict": "replaced",
+    "reason": "Careers360 still gives the same dates and 300 marks; no official notice with the pattern could be read, noted in sources.md."
+  },
+  {
+    "id": "05a96a90486d27fe1875e960194f323680d249b3",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/52964",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "0b299d976668295ab3533b9cef261100d0e40804",
+    "url": "https://www.td.gov.hk/filemanager/en/publication/conditions%20imposed%20with%20issue%20of%20ldl%20(eng",
+    "verdict": "replaced",
+    "reason": "Link was cut at \"(\" by the watcher; parentheses percent-encoded and the full PDF link loads."
+  },
+  {
+    "id": "0cb5d677e0b6c930e7fe23abbf776e6dd23c2f44",
+    "url": "https://dlp.dubai.gov.ae/Legislation%20Ar%20Reference/2026/",
+    "verdict": "noise",
+    "reason": "The Dubai legislation folder loads with a browser user agent; nothing to change."
+  },
+  {
+    "id": "0cbf6a4a9d0c467b24623aaf4dd00ff8d0f1afbd",
+    "url": "https://www.saps.gov.za/careers/",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "109950349da9aee14f0a3c5f65ef810f310f8cc2",
+    "url": "https://scc-ccn.ca/standardsdb/standards/4028992",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "12aba8bc1b979fba665e234c0b28f7a91eaca377",
+    "url": "https://ugcnet.nta.nic.in/",
+    "verdict": "noise",
+    "reason": "NTA UGC-NET site loads with a browser user agent and lists the December 2026 cycle Tigertest uses."
+  },
+  {
+    "id": "139b98be3c8064dcd37d7ff859dc4a8c55514704",
+    "url": "https://navodaya.gov.in",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "1c16232bb667185826d76b7a51668d26b5b8e717",
+    "url": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/oposiciones/cuerpo-de-la-guardia-civil/escala-de-cabos-y-guardias/pruebas-de-seleccion/",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "1edecb087d4638e892a950d2e70d2e645a8acda1",
+    "url": "https://www.safeworkaustralia.gov.au/doc/model-code-practice-managing-risk-falls-workplaces",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (The operation was aborted due to timeout); nothing changed."
+  },
+  {
+    "id": "264748a8b156e8c4a58198913cd4a058ac127ed8",
+    "url": "https://esb.mp.gov.in/rulebooks/rule_books.htm",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "2a6787c8c61278ef7ecf4e17d602c07fb69420f0",
+    "url": "https://www.food.gov.uk/sites/default/files/media/document/hot-holding.pdf",
+    "verdict": "replaced",
+    "reason": "FSA hot holding PDF is gone (404); replaced by the Food Safety and Hygiene (England) Regulations 2013 Schedule 4, which gives the same 63 °C and under-two-hours rule."
+  },
+  {
+    "id": "2e6e980f2bf038bb133a629e1731db5091f4a31f",
+    "url": "https://www.rrbcdg.gov.in/uploads/2025/09-LVL1/092025-CEN.pdf",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "3323cb7d20a6865794c69c219e943346b19e3618",
+    "url": "https://www.pmi.org/certifications/project-management-pmp/new-exam",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "3e75d6752dbb5fd12f8b136bc6bece42fba3c42e",
+    "url": "https://www.prc.gov.ph/sites/default/files/April%2018%20and%2019%202026%20Exam%20Program%20(Pharmacy",
+    "verdict": "replaced",
+    "reason": "Link was cut at \"(\" by the watcher; parentheses percent-encoded (prc.gov.ph did not load from the checker)."
+  },
+  {
+    "id": "469167c8b832fdb4fd4ec327d2ffcc0167ced880",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocsfriendly/10/56553",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "4a835f808f3f5f8b760e20eb99c8f86ec9edc41f",
+    "url": "https://www.gesetze-im-internet.de/bbig_2005/BBiG.pdf",
+    "verdict": "noise",
+    "reason": "The BBiG PDF on gesetze-im-internet.de loads with a browser user agent; the watcher's failure was a connection problem."
+  },
+  {
+    "id": "4e814ac54463d94c72b19f2be9858a9b384dea7f",
+    "url": "https://esb.mp.gov.in",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "5078680bcc1aba6e1aa8da424ae07d1ac3626a9a",
+    "url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2018/Resolution%20No.%20(1",
+    "verdict": "replaced",
+    "reason": "Link was cut at \"(\" by the watcher; parentheses percent-encoded and the full page loads."
+  },
+  {
+    "id": "531e7cb51771e914dd38455e9af59103a368a475",
+    "url": "https://pmdc.pk/Documents/Syllabus/National%20Registration%20Examination%20(Medical",
+    "verdict": "replaced",
+    "reason": "Link was cut at \"(\" and a comma by the watcher; both percent-encoded and the full PDF loads."
+  },
+  {
+    "id": "5565c2db0719bf9767ed4f1693c6621b50945c71",
+    "url": "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "60d39bd7ecf30b71a7f4ba265b5a342bf580d3ba",
+    "url": "https://scc-ccn.ca/standardsdb/standards/4032281",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "61f035b3cbc589b375ec9b549b4b7bc70c6bad58",
+    "url": "https://www.pmi.org/certifications/certified-associate-capm",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "67e915884b32c6fc485365539e6524ccf65ae1bc",
+    "url": "https://www.prc.gov.ph/sites/default/files/exam%20progam%20feb%202026%20nle%20(nursing",
+    "verdict": "replaced",
+    "reason": "Link was cut at \"(\" by the watcher; parentheses percent-encoded (prc.gov.ph did not load from the checker)."
+  },
+  {
+    "id": "6a2b394427149137b7dc6e1490ff775146cbfea4",
+    "url": "https://www.prc.gov.ph/sites/default/files/exam%20progam%20aug%202026%20nle%20(nursing",
+    "verdict": "replaced",
+    "reason": "Link was cut at \"(\" by the watcher; parentheses percent-encoded (prc.gov.ph did not load from the checker)."
+  },
+  {
+    "id": "6ed8350933adbb2e895a66ce252aa708f38f560f",
+    "url": "https://bx1.be/categories/news/nouvelles-regles-permis-theorique-a-bruxelles-entreront-vigueur-30-avril/",
+    "verdict": "needs_person",
+    "reason": "BX1 is a news site and returned 403; an official Brussels Mobility page for the April rule change could not be confirmed, so nothing changed."
+  },
+  {
+    "id": "740bd9802325d0a39901b1c5d6f0e2fc2ac5eccf",
+    "url": "https://a-katsastus.fi/en/driving-licences-and-permits/what-happens-during-the-theory-test",
+    "verdict": "noise",
+    "reason": "A-Katsastus page loads and still says the theory test is electronic at Ajovarma points with 30 minutes."
+  },
+  {
+    "id": "88002621dd83548e2caaf544f02beee5daf1d293",
+    "url": "https://www.servizz.gov.mt/en/Pages/Transport-and-Communications/Transport-Services/Land-Transport/Driving-License/WEB725/default.aspx",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "8eeab3798db50aa5092dfcb47b8d8863ce4e1603",
+    "url": "https://open.alberta.ca/publications/drivers-guide",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "8f2bba6134f5ea83f7e725f5c65bdba97e3a2639",
+    "url": "https://neet.nta.nic.in/",
+    "verdict": "noise",
+    "reason": "NTA NEET site loads with a browser user agent and still lists the NEET (UG) 2026 bulletin."
+  },
+  {
+    "id": "917c603141bc6e79f3032448db4d3482ca9b3853",
+    "url": "https://www.prc.gov.ph/sites/default/files/exam%20program%20sept%202023%20lept%20(prof%20teachers",
+    "verdict": "replaced",
+    "reason": "Link was cut at \"(\" by the watcher; parentheses percent-encoded (prc.gov.ph did not load from the checker)."
+  },
+  {
+    "id": "93b6700df866b05146bcfd58f94681a14ce51377",
+    "url": "https://www.joinpakarmy.gov.pk",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "9a465c1a61373cea27bc063c780a40da74075bfd",
+    "url": "https://rajeduboard.rajasthan.gov.in/reet2024final121224.PDF",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "9b9d334c9f83b0beacc837620c579cdc95549e52",
+    "url": "https://rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN%202024-02%20RPF-Const.pdf",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "9cfbd254eac61e340f40efe8d08e41c6f5d73d68",
+    "url": "https://www.gesetze-im-internet.de/ausbeignv_2009/AusbEignV_2009.pdf",
+    "verdict": "noise",
+    "reason": "The AusbEignV PDF on gesetze-im-internet.de loads with a browser user agent."
+  },
+  {
+    "id": "9e2e10c2573a8f5ae96de3cb9a980c83163eae00",
+    "url": "https://dit.sa.gov.au/ontherighttrack/your_licence/getting_a_licence/licence_tests",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "a0751800b64e8ac90d1e9dda53dd3049b58978c9",
+    "url": "https://www.cbc.ca/1.6952180",
+    "verdict": "replaced",
+    "reason": "CBC (news) loads again and still reports 30 multiple-choice questions; MPI's page stays the official source, noted in sources.md."
+  },
+  {
+    "id": "a0898f6819233bffec81048c5ee9b8c3dbc19afb",
+    "url": "https://www.paf.gov.pk",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "a4db1ee5c43a1a23eea2d53ce051848f8fc23371",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/40411",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "a672e8f51b8f23019e6ea7035e2b90e2ff0d7846",
+    "url": "https://www.rrbcdg.gov.in",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "a7266bb5518afd7f24a3fb012f2e727f2ed417c2",
+    "url": "https://open.alberta.ca/dataset/387f4e8a-6c0a-456a-ab31-995aadaf1f2b/resource/5babee5c-040d-4e41-981a-04f22e839aac/download/tec-drivers-guide-2026.pdf",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "a7603967dea16b4fd00d553f594fa89b4f04c224",
+    "url": "https://www.prc.gov.ph/sites/default/files/031924%20revised%20exam%20program%20apr%202024%20real%20estate%20brokers%20(res",
+    "verdict": "replaced",
+    "reason": "Link was cut at \"(\" by the watcher; parentheses percent-encoded (prc.gov.ph did not load from the checker)."
+  },
+  {
+    "id": "ae719644fb4b3e00a4242de52965f1486a2e832c",
+    "url": "https://jeemain.nta.nic.in/",
+    "verdict": "noise",
+    "reason": "NTA JEE Main site loads with a browser user agent and lists the 2027 Session 1 application the bank follows."
+  },
+  {
+    "id": "b505d39f7afee601296bfef1bf092c5248464b8e",
+    "url": "https://www.gov.mt/en/Life%20Events/Pages/Getting%20a%20Driving%20License/Getting-a-Driving-Licence-in-Malta.aspx",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "b702e3b73202cb21b4f01e4b2adf915a846a3f2e",
+    "url": "https://www.saps.gov.za/careers/ptrainees.php",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "c3d5853f68b2a82024b74cdbfd6514e16fde4fc4",
+    "url": "https://www.health.gov.au/topics/alcohol/about-alcohol/standard-drinks-guide",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (The operation was aborted due to timeout); nothing changed."
+  },
+  {
+    "id": "c57b8380e5f8979c9f6d629d279727df2859d92e",
+    "url": "https://immi.homeaffairs.gov.au/citizenship-subsite/files/our-common-bond-testable.pdf",
+    "verdict": "noise",
+    "reason": "The Our Common Bond testable PDF loads with a browser user agent."
+  },
+  {
+    "id": "d07eb7e5d8c53b241ff302d5e68777033a2bfa44",
+    "url": "https://www.saps.gov.za/careers/downloads/2026/trainee/Police-Trainee-Advert-2026-2027.pdf",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "d23dbc7affae6d8d1c0119c8c8527e6fd2ac7d13",
+    "url": "https://www.frsc.gov.ng/NATROADTRAFFICREGS2012.pdf",
+    "verdict": "needs_person",
+    "reason": "The regulations PDF is gone from frsc.gov.ng (404); search shows a copy at old.frsc.gov.ng, which refused connections, so no replacement could be read."
+  },
+  {
+    "id": "d3747c19334fbbc0d863e5264bdf0e49b4aef11f",
+    "url": "https://www.careerindia.com/news/rpf-constable-result-2025-declared-42-143-candidates-qualified-check-pet-pmt-details-051155.html",
+    "verdict": "replaced",
+    "reason": "CareerIndia (news) loads with a browser and reports only result numbers Tigertest does not state; noted in sources.md."
+  },
+  {
+    "id": "d8e250fe46cb5d74a1c621a7372bfbd013804fba",
+    "url": "https://lautorite.qc.ca/en/becoming-a-professional/insurance-of-persons-and-group-insurance-of-persons/examinations/pilot-exam-questions",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "e77d7674d1ef94d5106310fce1c8286e964c8398",
+    "url": "https://rrbapply.gov.in",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "f1347e2a5e24c1091c17b034b37f77c43cc2648d",
+    "url": "https://rrbajmer.gov.in/Upload_PDF/CEN%2001-2026%20Eng-639143539720035538.pdf",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "f1d94ac975590c4c38ff69724ad5d4364318d852",
+    "url": "https://tfl.gov.uk/info-for/taxis-and-private-hire/safety-equality-and-regulatory-understanding-requirement",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "f287b017fd7cdceedb75e9b75fd6e0c2e2a7e6cc",
+    "url": "https://rajeduboard.rajasthan.gov.in",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "f51d956625565104f46d71b4a4468a1cbdf55674",
+    "url": "https://esb.mp.gov.in/Rulebooks/RB_2023/PCRT_2023_RULEBOOK.pdf",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "f67311abd9a76ba0485b7cc7ac6b4d5258a33aa7",
+    "url": "https://police.rajasthan.gov.in/uploads/1360_01c57d32ab.pdf",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (fetch failed); nothing changed."
+  },
+  {
+    "id": "fad147f12eb7b6133090d2cd0e467c7ca287ddf0",
+    "url": "https://en.wikipedia.org/wiki/Punjab_Public_Service_Commission_(Pakistan",
+    "verdict": "replaced",
+    "reason": "Wikipedia link was cut at \"(\"; encoded so it loads; ppsc.gop.pk did not load, so no official page replaces it, noted in sources.md."
+  },
+  {
+    "id": "fc270496d69f5e806728de570bbb01d058094b7a",
+    "url": "https://iafrecruitment.edcil.co.in",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "fc467d8f5c6e8b397441fc888bc486bffa757298",
+    "url": "https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/driver-history-handbooks-and-logbooks/driver-handbooks-and-logbooks",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "fee458525c3b0f16af8d243b640895b0f77d87ad",
+    "url": "https://www.kent.gov.uk/education-and-children/schools/school-places/kent-test/prepare-for-the-kent-test",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  },
+  {
+    "id": "534af404969dbfbec36cfc58d2e7adb46fdc2502",
+    "url": "https://www.transport.gov.mt/land/licence/obtaining-your-driving-licence-786",
+    "verdict": "needs_person",
+    "reason": "Official page could not be read from the checker (HTTP 403); nothing changed."
+  }
+]

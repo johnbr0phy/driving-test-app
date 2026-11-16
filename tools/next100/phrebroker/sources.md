@@ -21,7 +21,7 @@
   It confirms the April 16, 2026 date. The results date (April 21, 2026) is still from news reports
   only. Neither date is used on the landing.
 - Same subjects and weights in the April 18, 2024 program:
-  https://www.prc.gov.ph/sites/default/files/031924%20revised%20exam%20program%20apr%202024%20real%20estate%20brokers%20(res).pdf
+  https://www.prc.gov.ph/sites/default/files/031924%20revised%20exam%20program%20apr%202024%20real%20estate%20brokers%20%28res%29.pdf
 - PRB-RES Resolution No. 04, s. 2011, Tables of Specifications (Annex A): General/Fundamentals
   100 items (four competencies of 25), Special and Technical Knowledge 100 items (four of 25),
   Professional Practice 200 items (six of about 33). Read from a copy hosted by a third-party site
@@ -157,3 +157,8 @@ Checked stems and keys against `data/real-estate-questions.json`, every `data/re
 state variant and `data/singapore-res-questions.json`; items sharing a fact and answer (variance,
 substitution, progression, one-bathroom functional obsolescence, highest and best use definition,
 cooperative, seller's floor price) were replaced with Philippine-specific items.
+
+## Source triage 2026-11-16
+
+- The source watcher cut this file's link at its "(" and reported it broken; the parentheses (and any
+  comma) in the URL are now percent-encoded so the whole link is watched. prc.gov.ph did not load from the checker, so the content was not re-read.

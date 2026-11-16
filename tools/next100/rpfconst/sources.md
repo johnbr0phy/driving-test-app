@@ -16,7 +16,7 @@ itself confirms "Centralized Employment Notice No. RPF 02/2024", Constable (Exec
 4,208 vacancies, a 22-page notice. The 50/35/35 split and the 35%/30% qualifying marks are still from guides only.
 
 - CBT dates: 2 to 18 March 2025 (secondary reports; the RRB CDG exam-schedule PDF is listed at
-  https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN%20RPF02-2024%20(Constable)%20-%20Exam-Schedule%20for%20CBT.pdf).
+  https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN%20RPF02-2024%20%28Constable%29%20-%20Exam-Schedule%20for%20CBT.pdf).
   Result and cut-offs reported 19 June 2025, with 42,143 candidates called to the PET and PMT
   (https://www.careerindia.com/news/rpf-constable-result-2025-declared-42-143-candidates-qualified-check-pet-pmt-details-051155.html).
   The final result was reported on 16 February 2026.
@@ -83,3 +83,10 @@ next notice has not been published and that its body and pattern should be check
   Factory Yelahanka; Kalka-Shimla, Nilgiri and Matheran lines; broad gauge 1,676 mm; Fairy Queen built 1855; National
   Rail Museum New Delhi (1977). RPF Act, 1957; RPF under the Ministry of Railways.
 - Science to school level (NCERT classes 6 to 10).
+
+## Source triage 2026-11-16
+
+- CareerIndia (news) loads with a browser; re-read: 42,143 candidates qualified the CBT for PET and
+  PMT. Tigertest states no result figures, so nothing moved. rrbcdg.gov.in did not load from here; the
+  exam schedule link above was cut short at its "(" by the source watcher and now has its
+  parentheses percent-encoded.

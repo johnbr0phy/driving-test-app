@@ -114,3 +114,9 @@ landing does not say.
   appeal (retsplejeloven); explanation of DKIND-GRL-055 corrected.
 - Equal inheritance: the year (1845 forordning or its 1857 amendment) could not be pinned down,
   so DKIND-VAE-039 no longer names a year.
+
+## Source triage 2026-11-16
+
+- Lex (encyclopedia) re-read: still 45 questions in 45 minutes, 35 + 5 current affairs + 5 values,
+  at least 36 right with at least 4 of 5 values, twice a year. No page on siri.dk stating the format
+  could be found (siri.dk/indfoedsretsproeven returns 404), so Lex stays the best readable source.

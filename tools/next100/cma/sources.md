@@ -67,3 +67,13 @@ practice exams or any commercial review.
   as nptepta PTA-EQP-003; now elbow flexion at the handgrips), CMA-LAB-004 (hematocrit definition,
   same as phlebotomy PHL-SPEC-016; now a raised WBC count) and CMA-LAB-010 (centrifuge balance tube,
   same as phlebotomy PHL-PROC-001; now external controls on a new lot of a CLIA-waived kit).
+
+## Source triage 2026-11-16
+
+- AAMA certification page re-read (https://www.aama-ntl.org/certification): "New Content Outline
+  Released for the CMA (AAMA) Certification Exam", revised to reflect the 2025 Occupational Analysis.
+  "Exam Date Is Before July 2027: Continue using the previously published Content Outline"; "Exam
+  Date Is On or After July 2027: Use the updated Content Outline." The bank stays on the current
+  outline until then; a lib/examFreshness.json event (2027-07-01) tracks the switch. Unchanged on
+  the same page: 200 multiple-choice questions in four 40-minute segments (160 minutes), scaled
+  200 to 800, six attempts in 12 months with no waiting period.

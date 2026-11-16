@@ -89,3 +89,8 @@ All checked 2026-11-01.
   ibpspo, ctet, rrbgroupd, sscgd, sscchsl, sscmts, uppolice, ibpsclerk, jnvst and the batch's sbiclerk, sbipo,
   ibpsrrb, biharpolice, delhipolice, mppolice, phcse as they stood) and about 90 items were rewritten where the same
   fact and answer or the same numbers appeared.
+
+## Source triage 2026-11-16
+
+- Utkarsh (coaching) re-read: still 150 objective questions, 150 marks, 2 hours; nothing moved.
+  police.rajasthan.gov.in did not load from here, so no official page could replace it.

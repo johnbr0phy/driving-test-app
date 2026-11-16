@@ -99,3 +99,11 @@ left-hand-traffic, UK-derived Highway Code, with no distances or figures we coul
 - Fines, fees, demerit points, provisional licence validity, open-road car speed limits, licence
   sub-classes (B1/B2 definitions differ between sources), warning-triangle placement figures from
   the Highway Code other than the Act's 50 m.
+
+## Source triage 2026-11-16
+
+- Sheriaplex reproduces the Traffic Act (Cap. 403); sections 30 and 31 re-read and unchanged in
+  substance (licence needed for each class, conditions for a licence, s 30(4) three-year licence,
+  s 30(6) PSV and commercial drivers retested every three years). The official text on
+  new.kenyalaw.org answered with a bot check and could not be read, so Sheriaplex stays the best
+  readable copy.

@@ -16,8 +16,13 @@ the sources below fixed the topic coverage, figures and legal points. Checked 20
   landing says "usually 60 to 70 percent" rather than one number.
 
 ## Temperatures and law
-- FSA hot holding guidance (63°C, 2-hour single display period, then reheat, chill to 8°C or discard):
-  https://www.food.gov.uk/sites/default/files/media/document/hot-holding.pdf
+- Food Safety and Hygiene (England) Regulations 2013, Schedule 4, read 2026-11-16 (source triage): food
+  that must be kept hot is held at or above 63 °C; the defence allows holding below 63 °C for service
+  or display for a period of less than two hours:
+  https://www.legislation.gov.uk/uksi/2013/2996/schedule/4
+  (Replaces the FSA hot holding leaflet, food.gov.uk/sites/default/files/media/document/hot-holding.pdf,
+  which returned 404 from 2026-11-14; the leaflet gave the same 63 °C and 2-hour figures and the
+  advice to reheat, chill to 8 °C or discard afterwards.)
 - Food Safety and Hygiene (England) Regulations 2013, Schedule 4 (8°C chill holding, 63°C hot holding,
   tolerance periods 2 h hot / 4 h cold), and the Welsh and NI equivalents; see also the 1995
   Temperature Control Regulations text: https://legislation.gov.uk/uksi/1995/2200/part/II/made

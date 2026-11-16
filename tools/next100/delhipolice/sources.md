@@ -66,3 +66,9 @@ Checked 1 November 2026.
 - RBI began work 1 April 1935 and was nationalised 1 January 1949; SBI formed 1955; 14 banks nationalised 1969.
 - Rohini RS-1 put in orbit by SLV-3 from Sriharikota on 18 July 1980.
 - Rajya Sabha: Article 80 maximum 250; 245 seats at present (233 elected + 12 nominated).
+
+## Source triage 2026-11-16
+
+- Careers360 result article re-read: still lists the PE&MT cut-off of 35 marks for unreserved
+  candidates; nothing moved. ssc.gov.in loads only as a script app, so the notice copy above stays
+  the source.

@@ -95,7 +95,7 @@ pma.gov.pk), so reputable secondary sources are used where no official page load
   Manora, Karachi": https://en.wikipedia.org/wiki/Pakistan_Naval_Academy
 - ARM-022, ARM-023 Kilo and Romeo: https://en.wikipedia.org/wiki/NATO_phonetic_alphabet ;
   ARM-024 21:00 = 9:00 p.m.: https://en.wikipedia.org/wiki/24-hour_clock ; ARM-025 bearings are the
-  clockwise angle from north: https://en.wikipedia.org/wiki/Bearing_(navigation) ; ARM-026 close
+  clockwise angle from north: https://en.wikipedia.org/wiki/Bearing_%28navigation%29 ; ARM-026 close
   contour lines mean a steep gradient: https://en.wikipedia.org/wiki/Contour_line (all 2026-11-05).
 - Islamic studies (2026-11-05): Fajr "consisting of two rak'a" (https://en.wikipedia.org/wiki/Fajr);
   early Muslims in Medina faced Jerusalem before the qibla changed to the Kaaba

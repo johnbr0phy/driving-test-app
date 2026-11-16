@@ -45,8 +45,8 @@ an academy's test bank or a commercial app. Checked 2026-11-06 unless noted.
 - Ministry of the Interior: the Acuerdo de 10 de septiembre de 2026 for convocatoria 02/2026
   (interior.gob.es .../Convocatoria-2_2026/Acuerdo_10_septiembre_2026.pdf) returned 403 to the
   checker; not used.
-- Redopositor guide to the 2026 vigilante calls (secondary, matches the BOE: 100 questions in
-  50 minutes, nine venues): https://redopositor.com/blog/es-oposiciones-proves-seleccio-per-vigilant-seguretat-ministerio-del-interior-2026/
+- Redopositor guide to the 2026 vigilante calls: secondary, listed under "Secondary sources" at the
+  end of this file so that only official pages are watched.
 
 ## Law used for the questions
 - Ley 5/2014, de 4 de abril, de Seguridad Privada, consolidated text (last modification
@@ -103,3 +103,9 @@ tentativa, agresión ilegítima, coacciones, robo vs hurto, art. 259 LECrim, Par
 Commission initiative or PRL art. 21). Kept clear in substance of the English security banks
 (`security`, `uksia`, `iepsa`, `aesira`, `zapsira`, `caguard`): this bank is Spanish law and
 Spanish practice.
+
+## Secondary sources
+
+- Redopositor guide to the 2026 vigilante calls (secondary; re-read 2026-11-16 and it still matches
+  BOE-A-2026-813: 100 questions with three alternatives in 50 minutes, at least 180 hours of training):
+  https://redopositor.com/blog/es-oposiciones-proves-seleccio-per-vigilant-seguretat-ministerio-del-interior-2026/

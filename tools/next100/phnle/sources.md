@@ -6,7 +6,7 @@ All checked 2026-11-05.
 
 - PRC, Professional Regulatory Board of Nursing, "Program of the Nurses Licensure Examination on
   Aug. 29-30, 2026" (approved May 28, 2026):
-  https://www.prc.gov.ph/sites/default/files/exam%20progam%20aug%202026%20nle%20(nursing)%20signed.pdf
+  https://www.prc.gov.ph/sites/default/files/exam%20progam%20aug%202026%20nle%20%28nursing%29%20signed.pdf
   - Five parts over two days. Saturday: Nursing Practice I, Care of Individuals, Families,
     Population Groups and Community (Community Health Nursing), 8:00 to 10:00 a.m.; Nursing
     Practice II, Part 1 Care of Mother, Adolescent (Well Clients), At Risk or With Problems (Acute
@@ -25,7 +25,7 @@ All checked 2026-11-05.
     beginning management and leadership).
   - Pencil and paper (No. 2 pencils, black ball pens); all calculators prohibited.
 - PRC, "Program of the Nurses Licensure Examination", February 26-27, 2026 (same five parts):
-  https://www.prc.gov.ph/sites/default/files/exam%20progam%20feb%202026%20nle%20(nursing)%20approved.pdf
+  https://www.prc.gov.ph/sites/default/files/exam%20progam%20feb%202026%20nle%20%28nursing%29%20approved.pdf
 - Professional Regulatory Board of Nursing Resolution No. 10, s. 2025, "Adoption, Issuance and
   Promulgation of the Enhanced Tables of Specifications for the Subjects in the Nurses Licensure
   Examination" (applies from the November 2025 NLE; supersedes Board Resolutions No. 18, s. 2006
@@ -184,3 +184,8 @@ Clinical content:
   rate, ABG) were recomputed 2026-11-05. CPR: 2025 AHA Guidelines (Circulation, Nov 2025, DOI
   10.1161/CIR.0000000000001369): adult rate 100 to 120 per minute, 30:2 without an advanced
   airway. All drug names are generic (R.A. 6675).
+
+## Source triage 2026-11-16
+
+- The source watcher cut this file's link at its "(" and reported it broken; the parentheses (and any
+  comma) in the URL are now percent-encoded so the whole link is watched. prc.gov.ph did not load from the checker, so the content was not re-read.

@@ -58,7 +58,7 @@ painted bright orange). Checked 2026-11-05: flight recorders "required to be pai
 orange" (https://en.wikipedia.org/wiki/Flight_recorder); first powered flights 17 December 1903
 near Kitty Hawk, North Carolina, at what is now Kill Devil Hills (https://en.wikipedia.org/wiki/Wright_Flyer;
 explanation reworded from "at" to "near" Kitty Hawk); knot = one nautical mile per hour, nautical
-mile 1,852 m (https://en.wikipedia.org/wiki/Knot_(unit)); runway number = magnetic heading in tens
+mile 1,852 m (https://en.wikipedia.org/wiki/Knot_%28unit%29); runway number = magnetic heading in tens
 of degrees (https://en.wikipedia.org/wiki/Runway). The rest were not checked against a source
 this session (web search budget exhausted). Every maths,
 physics and electricity calculation was worked by hand and its key matches the explanation.

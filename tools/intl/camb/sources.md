@@ -50,3 +50,10 @@
   every prep site (tests.ca, try2pass.ca, licenceready.ca). MPI does not publish a question count or pass mark.
 - Pass mark: prep sites split between 24 of 30 (80%) and 25 of 30 (83%). Not confirmed by MPI.
   The bank uses 80% as a practice line; flagged as uncertain.
+
+## Source triage 2026-11-16
+
+- CBC (news, 2023) loads again with a browser; re-read: MPI's knowledge test is 30 multiple-choice
+  questions from the Manitoba Driver's Handbook, which the landing already gives as the usually
+  reported count. MPI's own testing page above stays the official source; CBC is kept as the only
+  report of the question count.

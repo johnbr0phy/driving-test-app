@@ -19,7 +19,7 @@ Checked 2026-11-01.
     15%, 22; E. Field Study and Teaching Internship (incl. action research) 20%, 30.
   - Difficulty: easy 30%, moderate 50%, difficult 20%.
 - PRC, Program of the LEPT on September 24, 2023 (PDF, read directly):
-  https://www.prc.gov.ph/sites/default/files/exam%20program%20sept%202023%20lept%20(prof%20teachers)%20revised.pdf
+  https://www.prc.gov.ph/sites/default/files/exam%20program%20sept%202023%20lept%20%28prof%20teachers%29%20revised.pdf
   Elementary: General Education 8:00 to 10:00 a.m., 40%; Professional Education 11:00 a.m. to
   2:00 p.m., 60%. Secondary: 20% / 40% / Specialization 40% (3:00 to 6:30 p.m.).
 - Board for Professional Teachers Resolution No. 228, s. 1996 (Supreme Court e-Library,
@@ -73,3 +73,8 @@ ASSURE, SAMR, TPACK, item analysis).
 
 All 200 items are original, written for Tigertest from the TOS above. No item is copied from a
 past LET, a PRC sample or any commercial reviewer.
+
+## Source triage 2026-11-16
+
+- The source watcher cut this file's link at its "(" and reported it broken; the parentheses (and any
+  comma) in the URL are now percent-encoded so the whole link is watched. prc.gov.ph did not load from the checker, so the content was not re-read.

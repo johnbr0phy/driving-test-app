@@ -92,3 +92,9 @@ Yaounde, N'Djamena and Mali were dropped because `ngarmy` asks them.
   Malacca and IMF items replaced by Kiel Canal, Mombasa, Jebel Ali, Shanghai and Afreximbank;
   lucid, frugal, lenient, scarce and meticulous replaced by succinct, illicit, covert, conspicuous
   and lax; deny + gerund and "between you and me" replaced by "object to" and "except him".
+
+## Source triage 2026-11-16
+
+- The Frontier (news) re-read: still a virtual CBT on a laptop or desktop with webcam, a pre-test
+  link and a main CBT link, an extra CBT for the Superintendent cadre; matches the Service's own
+  press release above (the first link). customs.gov.ng answered 403 to the checker.

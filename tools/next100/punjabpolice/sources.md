@@ -59,7 +59,7 @@ office-holders (ppsc's and the military banks' lanes, and dated content).
 
 ## Law used in the GK questions
 - Police Order 2002 (Chief Executive's Order No. 22 of 2002, Islamabad, 14 August 2002), text as
-  promulgated, read 2026-11-05: https://www.rightofassembly.info/assets/downloads/2002_Police_Order_(Pakistan).pdf
+  promulgated, read 2026-11-05: https://www.rightofassembly.info/assets/downloads/2002_Police_Order_%28Pakistan%29.pdf
   Articles used: 2 (definitions: Provincial Police Officer, Capital City Police Officer, District
   Police Officer), 3 (attitude towards the public), 4 (duties: unclaimed property, arrest
   information to a person of choice, traffic), 7(3) (entry ranks Constable, ASI, ASP), 16 (DPO),

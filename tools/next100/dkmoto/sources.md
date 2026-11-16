@@ -51,7 +51,7 @@ and were not used.
 - Færdselsstyrelsen, Undervisningsplan kategori AM (stor knallert) og kategori A1, A2 og A (lille,
   mellem og stor motorcykel), version 1.0 2026, in use from 1 July 2026 (students who started
   before may finish on the old rules until the end of December 2026):
-  https://admin.fstyr.dk/Media/639045957573779147/Undervisnigsplan%20kategori%20AM%20(stor%20knallert)%20og%20kategori%20A1%20A2%20og%20A%20(lille%20%20mellem%20og%20stor%20motorcykel)%20-%20210126.pdf
+  https://admin.fstyr.dk/Media/639045957573779147/Undervisnigsplan%20kategori%20AM%20%28stor%20knallert%29%20og%20kategori%20A1%20A2%20og%20A%20%28lille%20%20mellem%20og%20stor%20motorcykel%29%20-%20210126.pdf
   Every motorcycle rule and figure in the bank is from this plan. Used: front brake lever on the
   right; two independent braking systems; ABS on newer two-wheeled motorcycles; hydraulic lever
   must not sink; tread at least 1 mm in the main pattern; new tyres slippery, old tyres hard;

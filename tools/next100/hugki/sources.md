@@ -147,7 +147,7 @@ GKI app, past paper or provider material was opened or copied. Checked 2026-11-0
   crossings automatically; DSRC remote early detection.
 - Light commercial vehicles over 2.5 t in international haulage from 1 July 2026: RSA (Ireland)
   "Smart tachograph 2 (LCVs)" page and CMS legal update, read via search 2026-11-06.
-  https://www.rsa.ie/services/professional-drivers/tachographs-information/smart-tachograph-2-(lcvs)
+  https://www.rsa.ie/services/professional-drivers/tachographs-information/smart-tachograph-2-%28lcvs%29
 - Regulation (EC) No 1072/2009 as amended in 2020: cabotage, three operations within seven days,
   four-day cooling-off; vehicle return to the operational centre within eight weeks (Regulation
   (EC) No 1071/2009 as amended); certified copy of the Community licence; driver attestation for

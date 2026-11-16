@@ -131,3 +131,10 @@ words, three idioms, accommodation and occurrence spellings, "since 2019", "hard
   scene-safety first aid, prudent, curb, lenient, evacuate, obstinate, reluctant, conceal, four
   idioms, acquitted, courteous, LCM 6/14/21, HCF 108/x, 20-21-29 triangle, south-left-left walk,
   "my mother's only daughter", the sister-mother-father chain).
+
+## Source triage 2026-11-16
+
+- Nairametrics (26 Nov 2025) re-read: still reports the online CBT of 12 to 19 November 2025 as the
+  third stage and gives no question count, time or pass mark, so nothing in the bank moved.
+  cdcfib.gov.ng loads again but still publishes no CBT format, so the news reports above stay the
+  best sources.

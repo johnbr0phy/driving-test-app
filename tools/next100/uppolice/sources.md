@@ -60,3 +60,11 @@ All checked 2026-10-31.
 - Questions are original. Items were checked against the ssccgl, rrbntpc, ibpspo and ctet banks and the batch's
   other India banks present on 2026-10-31 (rrbgroupd, sscgd, sscmts, jnvst), and rewritten where the same fact or the
   same numbers appeared.
+
+## Source triage 2026-11-16
+
+- uppbpb.gov.in re-read: new notices are normalised-marks and court-order results for the 2025
+  recruitment and an SI promotion PET; nothing about the written exam pattern.
+- Careers360 and Karmasandhan re-read: still 8, 9 and 10 June 2026, 32,679 posts, 150 questions for
+  300 marks in 2 hours; nothing moved. No official notice with the pattern could be read, so they
+  stay as secondary sources.

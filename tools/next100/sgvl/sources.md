@@ -49,7 +49,7 @@ landmark recall are not modelled beyond route-planning principles, postal codes 
 
 - Road Traffic (Chauffeured Private Hire Car and Taxi Vocational Licence Demerit Points System)
   Rules 2017 (S 365/2017), informal consolidation in force from 30 October 2020, LTA copy:
-  https://www.lta.gov.sg/content/dam/ltagov/industry_innovations/industry_matters/regulations_licensing/taxis_private_hire_cars/private_hire_car_licence/pdf/Road%20Traffic%20(Chauffeured%20Private%20Hire%20Car%20and%20Taxi%20Vocational%20Licence%20Demerit%20Points%20System)%20Rules%20wef%2030%20Oct%202020.pdf
+  https://www.lta.gov.sg/content/dam/ltagov/industry_innovations/industry_matters/regulations_licensing/taxis_private_hire_cars/private_hire_car_licence/pdf/Road%20Traffic%20%28Chauffeured%20Private%20Hire%20Car%20and%20Taxi%20Vocational%20Licence%20Demerit%20Points%20System%29%20Rules%20wef%2030%20Oct%202020.pdf
   - Points on conviction or composition; relevant period any 24 months; suspension 1 to 5 none,
     6 to 10 two weeks, 11 to 15 four weeks, 16+ eight weeks; revocation above 20; 14 days for
     representations. Scheduled offences and points used: 21 (lending VL, expired or suspended VL,

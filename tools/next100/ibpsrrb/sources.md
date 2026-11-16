@@ -87,3 +87,11 @@ another bank (reverse alphabet, GARDEN, MARKET, BANK/LOAN, the 360 m train, 2 : 
   answer as rajpolice), T1-041 (35% of 840, also in sbiclerk), T1-051 (√624 approximation, sbiclerk),
   T1-072 (12 and 18 days, ssccgl and ibpspo), T2-041 (45% of 620, sbiclerk), T2-077 (240 m train at
   54 km/h, delhipolice).
+
+## Source triage 2026-11-16
+
+- hellobanker.in re-read: still links the CRP RRBs-XV notification and gives the same Prelims
+  pattern; the page change was its own layout. ibps.in now loads: its CRP RRBs XV page
+  (https://www.ibps.in/index.php/rural-bank-xv/, read 2026-11-16) lists the RRB process and the
+  Pre-Exam Training for CRP-RRBs-XV but does not link the notification PDF, so the hellobanker copy
+  stays the source for the pattern.

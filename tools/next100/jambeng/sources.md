@@ -47,3 +47,9 @@ Checked 31 October 2026.
   examFacts rows to stay safe.
 - Every passage and item is original. No past paper, the prescribed text or a commercial app's
   items were used.
+
+## Source triage 2026-11-16
+
+- ICIR (news) re-read: JAMB kept 150 as the minimum university cut-off for 2026 and dropped UTME
+  for NCE admissions; unchanged on what the landing says. jamb.gov.ng loads but its news is not on
+  a page that could be read, so the report stays.

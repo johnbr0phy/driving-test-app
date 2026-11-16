@@ -83,3 +83,9 @@ to alum settling mud; sloping roofs in heavy rain (aissee) to pucca house; silk 
 (uppolice 9-12-18 sirens) to 10-12-16; successor of the largest 5-digit number (aissee predecessor of 1,00,000) to
 6-digit; clock at 8 o'clock (jnvst) to 10 o'clock. UP is India's largest sugarcane producer (Ministry of Agriculture
 production statistics, as widely reported).
+
+## Source triage 2026-11-16
+
+- Careers360 result article re-read: still 26 August 2026, 80.07% pass in Paper 1, results on
+  updeled.gov.in and upessc.up.gov.in; nothing in the bank moved. upessc.up.gov.in did not load
+  from here, so the information booklet copy and these reports stay the best sources.

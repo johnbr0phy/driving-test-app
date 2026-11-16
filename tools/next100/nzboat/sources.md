@@ -37,7 +37,7 @@ rules they cover are asked here, but none of their wording is reused).
 ## Law and rules
 - Maritime New Zealand, Maritime Rules Part 91 Navigation Safety Rules, MNZ Consolidation
   1 November 2016 (copy of the MNZ PDF), fetched 2026-11-16:
-  https://www.karapirorowing.com/site_files/21887/upload_files/Part91-maritime-rule(1).pdf?dl=1
+  https://www.karapirorowing.com/site_files/21887/upload_files/Part91-maritime-rule%281%29.pdf?dl=1
   91.4 PFDs (carriage, wearing when there is danger, towed persons), 91.5 under-15s and 10 knots,
   91.6 5 knot rule (50 m, 200 m of shore or structure, 200 m of Flag A, body over the bow or side),
   91.7 wake, 91.8 observer aged 10+, 91.9 no towing sunset to sunrise, 91.10 and 91.11 access lanes,

@@ -428,6 +428,14 @@
       "what": "HSPA launches the new CHL exam form on the 2026 content outline (25/23/29/23).",
       "action": "Confirm the live form matches the 2026 outline weights and the handbook's section names; adjust if HSPA changed them.",
       "source": "https://myhspa.org/wp-content/uploads/2026/03/HSPA_CHL_Content_Outline_2026.pdf"
+    },
+    {
+      "exam": "cma",
+      "date": "2027-07-01",
+      "kind": "outline",
+      "what": "AAMA applies its revised CMA (AAMA) Content Outline, based on the 2025 Occupational Analysis, to exams dated on or after July 2027; exams before then use the outline the bank follows (Rev 1/26).",
+      "action": "Read the revised Content Outline and re-weight or rewrite the bank to it before July 2027.",
+      "source": "https://www.aama-ntl.org/certification"
     }
   ]
 }

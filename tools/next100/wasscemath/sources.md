@@ -25,7 +25,7 @@ scenario).
   https://waecsyllabus.com/files/ssce/GENERAL%20MATHEMATICS%20OR%20MATHEMATICS%20%28CORE%29.pdf
   (fetched 2026-11-14, read with pdftotext).
 - Second and third copies with the same text (fetched 2026-11-15):
-  https://zenodo.org/records/3745446/files/GENERAL%20MATHEMATICS%20OR%20MATHEMATICS%20(CORE).pdf
+  https://zenodo.org/records/3745446/files/GENERAL%20MATHEMATICS%20OR%20MATHEMATICS%20%28CORE%29.pdf
   and https://rachel.core2learn.org/modules/en-wassce/WASSCESYLABUS/GENERAL_MATHEMATICS_OR_MATHEMATICS%20_CORE.pdf
   (the RACHEL offline WASSCE library). The examination scheme, calculator rule and topic list
   agree word for word.

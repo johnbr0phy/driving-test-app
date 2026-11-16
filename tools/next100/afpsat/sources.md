@@ -115,7 +115,7 @@ Each general-information and passage fact below was checked on 2026-11-05.
   and https://ibctv13.com/pbbm-to-afp-keep-upholding-honor-service-patriotism/ (2026-11-05).
 - Medal of Valor highest AFP award, Gold Cross below it (AFPSAT-AFP-006): AFP order of precedence as
   given at https://en.wikipedia.org/wiki/Armed_Forces_of_the_Philippines_Medal_of_Valor and
-  https://en.wikipedia.org/wiki/Gold_Cross_(Philippines) (secondary; AFP sites unreachable, 2026-11-05).
+  https://en.wikipedia.org/wiki/Gold_Cross_%28Philippines%29 (secondary; AFP sites unreachable, 2026-11-05).
 - Coast Guard (AFPSAT-AFP-001): R.A. 9993, Philippine Coast Guard Law of 2009, establishes the PCG as an
   armed and uniformed service attached to the DOTC (now the Department of Transportation), attached
   to the DND only in a war declared by Congress. https://chanrobles.com/republicacts/republicactno9993.php
@@ -171,3 +171,8 @@ Each general-information and passage fact below was checked on 2026-11-05.
   regional reports in the landing and examFacts; the landing now says the AFPSAT is "the subject of
   AFP circulars (2013, 2015 and 2020)" rather than "governed by", and the examFacts "Bring" row names
   its 2025 regional notice. The six-month retake wait is not used anywhere.
+
+## Source triage 2026-11-16
+
+- RMN (news) re-read: an AFP announcement of AFPSAT sitting dates in Cagayan Valley. Dates only;
+  Tigertest states none. afp.mil.ph loads only a holding page, so no official page could replace it.

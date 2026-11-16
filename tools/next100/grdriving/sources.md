@@ -12,12 +12,18 @@ results were not opened). Signs are described in words. Checked 2026-11-01 unles
   the material is available in foreign languages besides Greek, in Greek with audio, and in
   Greek Sign Language. The article does not list the foreign languages.
   https://www.taxheaven.gr/law/4850/2021/arthro/6
-- Law 4850/2021 draft ("Οδηγώντας με Ασφάλεια"), CNN Greece, 13 Oct 2021: accompanied driving
-  from 17 on a provisional licence until 18; questionnaires in other languages, Greek with audio
-  and Greek Sign Language; phones and smart devices banned in the exam room.
-  https://www.cnn.gr/ellada/story/285219/adeies-odigisis-allazei-to-orio-ilikias-stoys-ypopsifioys-kamera-stin-exetasi
+- Ministry of Infrastructure and Transport, "Θεωρητική εξέταση υποψηφίων οδηγών μέσω Η/Υ
+  (ΜΣΘΕΥΟ)" (source triage, read 2026-11-16, loads again): the official page of the computer
+  theory test; at the end of the exam the system prints the questions set, the answers given,
+  whether each was right and the final result. It publishes no question count or time.
+  https://www.yme.gov.gr/metafores/adeies-odigisis/theoritiki-exetasi-ypopsifion-odigon-meso-i-y-mstheyo
 - NRSO (NTUA road safety observatory), accompanied driving page: ministerial decree of December
   2021 implements accompanied driving from 17. https://www.nrso.ntua.gr/nrss2030/accompanied-driving/?lang=en
+- Secondary: Law 4850/2021 draft ("Οδηγώντας με Ασφάλεια"), CNN Greece, 13 Oct 2021 (re-read
+  2026-11-16, unchanged on these points): accompanied driving from 17 on a provisional licence
+  until 18; questionnaires in other languages, Greek with audio and Greek Sign Language; phones
+  and smart devices banned in the exam room; a camera checks the candidate's photo on entry.
+  https://www.cnn.gr/ellada/story/285219/adeies-odigisis-allazei-to-orio-ilikias-stoys-ypopsifioys-kamera-stin-exetasi
 - Format, GUIDES ONLY (not confirmed on a ministry page; the ministry and opengov.gr returned
   403/WAF pages on 2026-11-01): 30 multiple-choice questions, 35 minutes, pass with at most one
   mistake (29 of 30). gocar.gr, "Πόσα λάθη επιτρέπονται στις εξετάσεις οδήγησης;", 21 Feb 2025:

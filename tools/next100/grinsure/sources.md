@@ -94,3 +94,13 @@ not match it, and the landing says so. Checked 2026-11-07 unless noted.
   share no topic with this bank. The English-language ieqfa, llqp, life-health, mypce, hkiiqe1
   and cemap banks cover similar principles in other jurisdictions; this bank cites Greek and EU
   law and was written in Greek, not from their stems.
+
+## Source triage 2026-11-16
+
+- Insurance World and Aagora (news) re-read: they report the Bank of Greece's exam schedules
+  (first half of 2026; Athens sittings on 5 and 6 December 2026). Sitting dates only; Tigertest states
+  none, and the question count and 90% line are unchanged. bankofgreece.gr answered 403, so these
+  stay the best readable reports of the schedule.
+- EUR-Lex (Directive 2016/97, Official Journal text) answered with a bot check; the OJ text of a
+  published directive does not change, and the pending Retail Investment Strategy amendment is
+  tracked in lib/examFreshness.json.

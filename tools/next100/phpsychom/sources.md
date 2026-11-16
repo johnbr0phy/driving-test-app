@@ -106,7 +106,7 @@ sample was used.
 
 - MMPI-2 567, MMPI-2-RF 338 (a subset of the 567), PAI 344, MCMI 175 items (TST-003): MMPI-2-RF
   technical manual, https://www.pearsonassessments.com/content/dam/school/global/clinical/us/assets/MMPI-2-RF/mmpi-2-rf-technical-manual.pdf;
-  https://web.lemoyne.edu/~hevern/psy448_25F/448documents/Neuropsychological%20Assessment%20(part%203).pdf
+  https://web.lemoyne.edu/~hevern/psy448_25F/448documents/Neuropsychological%20Assessment%20%28part%203%29.pdf
 - BDI-II: 21 items, past two weeks including today, Beck, Steer and Brown 1996:
   https://www.testable.org/scale/bdi-ii-beck-depression-inventory-ii
 - WISC-V ages 6:0 to 16:11 (TST-010): https://www.pearsonassessments.com/store/usd/p/100000771.html
@@ -116,7 +116,7 @@ sample was used.
   https://courses.lumenlearning.com/suny-lifespandevelopment/chapter/temperament/
 - Schmidt and Hunter (1998), Psychological Bulletin 124(2), 262-274: GMA .51; graphology yields no
   information about job performance (IOH-017):
-  https://web.pdx.edu/~mccunee/quant_621/Outlines/Schmidt%20&%20Hunter%20(1998).doc
+  https://web.pdx.edu/~mccunee/quant_621/Outlines/Schmidt%20&%20Hunter%20%281998%29.doc
 - DSM-5 one-month minimum for pica: https://www.psychdb.com/_export/xhtml/eating-disorders/pica
 - IRT (PSM-021): reworded to the 50% point, which holds exactly for the b parameter without guessing;
   with a c parameter the point of maximum information sits slightly above b, so the old wording

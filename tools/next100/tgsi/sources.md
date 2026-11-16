@@ -10,7 +10,7 @@ All pages fetched 2026-11-13.
   Site: https://www.tgprb.in (www.tslprb.in redirects there; fetched 2026-11-13). The board still signs itself
   TSLPRB in its 2026 documents; searchers also call it TGLPRB / TGPRB.
 - **Notification for SCT SI (Civil) and equivalent posts, Rc. No. 225 / Rect. / Rect.1 / 2026 dated 29 July 2026**,
-  https://doc.tgprb.in/SI+(Civil+et+al)+2026+Notification+dated+29-07-2026.pdf (57 pages, fetched 2026-11-13).
+  https://doc.tgprb.in/SI+%28Civil+et+al%29+2026+Notification+dated+29-07-2026.pdf (57 pages, fetched 2026-11-13).
   What it gave:
   - Para 1: 275 vacancies (SI Civil 148, RSI AR 14, RSI SAR CPL 3, RSI TGSP 12, SPF SI 44, Station Fire Officer 39,
     Deputy Jailor 14 + 1).

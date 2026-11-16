@@ -7,7 +7,7 @@ Checked 2026-11-05.
 - PRC, Professional Regulatory Board of Pharmacy, Revised Program of the Pharmacists Licensure
   Examination on April 18 and 19, 2026 (dated March 31, 2026; supersedes the program of February 4,
   2026). Read directly (PDF, text extracted):
-  https://www.prc.gov.ph/sites/default/files/April%2018%20and%2019%202026%20Exam%20Program%20(Pharmacy)%20revised.pdf
+  https://www.prc.gov.ph/sites/default/files/April%2018%20and%2019%202026%20Exam%20Program%20%28Pharmacy%29%20revised.pdf
   - Day 1 (Saturday): Pharmaceutical Chemistry 8:00 to 10:00 a.m., 20% (Inorganic Pharmaceutical
     and Medicinal Chemistry; Organic Pharmaceutical and Medicinal Chemistry; Qualitative
     Pharmaceutical Chemistry). Pharmacognosy/Biochemistry 11:00 a.m. to 12:30 p.m., 15% (Plant
@@ -148,3 +148,8 @@ Written against `data/ptcb-questions.json` (no grapefruit/simvastatin, nitroglyc
 insulin storage, metronidazole-alcohol, laminar hood cleaning items; different calculation numbers)
 and the sibling Philippine banks `tools/next100/phnle` (dengue, DOTS, cold chain, BCG left to it)
 and `tools/next100/phmedtech` (laboratory microbiology and parasitology).
+
+## Source triage 2026-11-16
+
+- The source watcher cut this file's link at its "(" and reported it broken; the parentheses (and any
+  comma) in the URL are now percent-encoded so the whole link is watched. prc.gov.ph did not load from the checker, so the content was not re-read.

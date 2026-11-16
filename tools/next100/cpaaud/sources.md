@@ -78,7 +78,7 @@ simulation, commercial review course or question bank was copied. Checked 2026-1
   December 15, 2026 (PCAOB postponement, Aug 28, 2025:
   https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-postpones-effective-date-of-qc-1000-and-related-standards--rules--and-forms,
   checked 2026-11-03); not asked in the bank. AS 1000 14-day documentation completion: phased in by firm
-  size (https://pcaobus.org/oversight/standards/implementation-resources-PCAOB-standards-rules/general-responsibilities-of-the-auditor-in-conducting-an-audit-(as-1000),
+  size (https://pcaobus.org/oversight/standards/implementation-resources-PCAOB-standards-rules/general-responsibilities-of-the-auditor-in-conducting-an-audit-%28as-1000%29,
   checked 2026-11-03), so not asked.
 - SSARS: AR-C 70 (preparation, no assurance legend), AR-C 80 (compilation, independence disclosure),
   AR-C 90 (review, inquiry and analytics, independence required).

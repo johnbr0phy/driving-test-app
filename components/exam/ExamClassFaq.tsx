@@ -163,6 +163,7 @@ export const TEACHES: Record<string, string> = {
   iimcat: "CAT coaching",
   netplus: "a networking or Network+ course",
   cysa: "a cybersecurity analyst or CySA+ course",
+  sc200: "an SC-200 or Microsoft security operations course",
   cissp: "a CISSP or information security course",
   gcdl: "a cloud fundamentals course",
   gcppca: "a cloud architecture course",

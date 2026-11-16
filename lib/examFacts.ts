@@ -155,6 +155,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Microsoft Learn SC-900 study guide (skills measured as of October 21, 2026) and the Security, Compliance, and Identity Fundamentals certification page, checked November 2026",
     source: { name: "Microsoft Learn: Study guide for Exam SC-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
   },
+  sc200: {
+    answer:
+      "Exam SC-200: Microsoft Security Operations Analyst is the exam for the Microsoft Certified: Security Operations Analyst Associate certification. Microsoft gives 100 minutes and a passing score of 700 on a scale of 1 to 1,000; it does not publish a fixed question count, and says most of its certification exams have 40 to 60 questions, with types that can include case studies and, on some role-based exams, labs. The skills measured as of October 21, 2026 are Manage a security operations environment 40-45%, Respond to security incidents 35-40% and Perform threat hunting 20-25%, across Microsoft Defender XDR, Microsoft Sentinel, Microsoft Entra ID, Microsoft Purview, Defender for Cloud and KQL. The exam is proctored through Pearson VUE in 10 languages, and the certification is renewed every 12 months with a free online assessment.",
+    rows: [
+      { label: "Time", value: "100 minutes" },
+      { label: "Questions", value: "Not published (Microsoft: most exams have 40 to 60)" },
+      { label: "Pass mark", value: "700 on a scale of 1 to 1,000" },
+      { label: "Content", value: "Manage a security operations environment 40-45%, Respond to security incidents 35-40%, Perform threat hunting 20-25%" },
+      { label: "Languages", value: "English, Japanese, Chinese (Simplified and Traditional), Korean, French, German, Spanish, Portuguese (Brazil), Italian" },
+      { label: "Where", value: "Proctored, scheduled through Pearson VUE" },
+      { label: "Renewal", value: "Every 12 months, free online assessment on Microsoft Learn" },
+      { label: "Run by", value: "Microsoft" },
+    ],
+    basedOn: "Microsoft Learn's SC-200 study guide (skills measured as of October 21, 2026), the Security Operations Analyst Associate certification page and Microsoft's exam duration page, checked November 2026",
+    source: { name: "Microsoft Learn: SC-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200" },
+  },
   fortinse: {
     answer:
       "Fortinet NSE 1 in Cybersecurity is Fortinet's entry-level certification, and since July 15, 2026 it replaces Fortinet Certified Fundamentals (FCF) in Cybersecurity; people with an active FCF were awarded NSE 1 and NSE 2. To earn it you pass the online exam presented at the end of the free self-paced course Cybersecurity and Cloud Fundamentals on the Fortinet Training Institute, which Fortinet estimates at about 11 hours. The course has ten modules: Intro to Cybersecurity, Threat Landscape, Social Engineering, Malware, Cryptography and the Public Key Infrastructure, Secure Networking, Authentication and Access Control, Endpoint Security, Secure Data and Applications, and Cloud Security and Virtualization. Fortinet does not publish a question count, time limit or pass mark. The certification is active for two years.",

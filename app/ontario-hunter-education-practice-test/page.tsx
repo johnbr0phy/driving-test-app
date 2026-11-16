@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How many questions are on the exam, and what is the pass mark?",
-    a: "The ministry does not publish a question count. The ministry's delegated online course requires a final exam grade of at least 80 percent, and instructor-led exams are set by the course, so ask your instructor. Tigertest's practice tests have 50 questions each and use 80 percent as the line. Aim to clear it on all four before you sit the real exam.",
+    a: "The ministry does not publish a question count or a provincial pass mark. The online course (HUNTERcourse.com) requires at least 80 percent on its final exam, and instructor-led exams are set by the course, so ask your instructor. Tigertest's practice tests have 50 questions each and use 80 percent as Tigertest's target, matching the online course. Aim to clear it on all four before you sit the real exam.",
   },
   {
     q: "What does the course cover?",
@@ -164,7 +164,7 @@ export default function OntarioHunterLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Four Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four tests of 50 questions that mix all eight topics, with an 80% line, the pass mark of the ministry&apos;s online course. No question appears in more than one test, and every answer comes with a short explanation citing the Act, the regulation or the ministry&apos;s summary.
+                Four tests of 50 questions that mix all eight topics, with an 80% line, Tigertest&apos;s target, matching the online course&apos;s final exam. No question appears in more than one test, and every answer comes with a short explanation citing the Act, the regulation or the ministry&apos;s summary.
               </p>
             </div>
           </div>

@@ -164,3 +164,15 @@ the prefix CAHUNTON- and block 31500; it never shipped, so no stored progress us
   must carry it.
 - Migratory bird hunting rules (federal), trapping licences and falconry details.
 - Anything about the exam itself.
+
+## Second review (2026-11-16)
+
+Cue found in the first build: the key was the second-longest option in 92 of 200 items (75% in
+field care, 60% in ethics, 58% in tags, 50% in land), because the earlier options-only pass kept
+the key from being longest by adding one padded, longer distractor. Options in 53 items were
+re-lengthened or shortened (no key changed to another fact), and a few stems or options were
+reworded where the key alone shared a word with the stem (TAG-013, RUL-012, RUL-020, LND-003,
+LND-014, WLD-018, WLD-024, EQP-019). After: no length rank holds more than 37.5% of keys in any
+category (all 200: 48/52/54/46 shortest to longest), a stem-word match guess scores 23%, and
+tools/check_answer_patterns.py is clean. The paused branch claude/cahunteron-stem-rewrite (a full
+rewrite of every stem and option) was not used, since its new wording had not been checked.

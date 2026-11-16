@@ -6399,12 +6399,12 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   cahunteron: {
     answer:
-      "The Ontario Hunter Education Course exam is the test most Ontario residents must pass before they can buy hunting licences and tags or join the Hunter Apprenticeship Safety Program. The course, run by the Ontario Hunter Education Program for the Ministry of Natural Resources, is taken in person with a certified instructor or online, and ends with an exam. It covers hunting safety and equipment, hunting laws and regulations, hunter responsibilities, wildlife management, hunting techniques and wildlife identification. The ministry's delegated online course requires a final exam grade of at least 80%; the ministry does not publish a question count, and instructor-led exams are set by the course. Passing it and buying licences lets you hunt with a bow; hunting with a gun also needs a PAL, a minor's licence or proof of passing the Canadian Firearms Safety Course.",
+      "The Ontario Hunter Education Course exam is the test most Ontario residents must pass before they can buy hunting licences and tags or join the Hunter Apprenticeship Safety Program. The course, run by the Ontario Hunter Education Program for the Ministry of Natural Resources, is taken in person with a certified instructor or online, and ends with an exam. It covers hunting safety and equipment, hunting laws and regulations, hunter responsibilities, wildlife management, hunting techniques and wildlife identification. The ministry publishes no question count or provincial pass mark: the online course (HUNTERcourse.com) requires at least 80% on its final exam, and instructor-led exams are set by the course. Passing it and buying licences lets you hunt with a bow; hunting with a gun also needs a PAL, a minor's licence or proof of passing the Canadian Firearms Safety Course.",
     rows: [
       { label: "Run by", value: "Ontario Hunter Education Program, for the Ministry of Natural Resources" },
       { label: "Formats", value: "In person with a certified instructor, or online and self-paced" },
       { label: "Topics", value: "Safety and equipment, laws, responsibilities, wildlife management, techniques, wildlife identification" },
-      { label: "Pass mark", value: "At least 80% on the online course's final exam; instructor-led exams are set by the course" },
+      { label: "Pass mark", value: "No provincial pass mark published; the online course's final exam needs at least 80%, and instructor-led exams are set by the course" },
       { label: "Question count", value: "Not published by the ministry" },
       { label: "Needed for", value: "Buying Ontario hunting licences and tags, and the apprentice program (ages 12 to 14)" },
       { label: "After passing", value: "Register accreditation at ServiceOntario, or online from December 10, 2026" },

@@ -130,3 +130,6 @@ rules they cover are asked here, but none of their wording is reused).
 - Kept clear of the stems and fact-and-answer pairs in `data/boating-questions.json`,
   `data/pcoc-questions.json` and `data/nz-firearms-questions.json` (checked with a stem similarity
   scan; nine near-matches were rewritten to a different fact or angle).
+
+## Official confirmation of the lifejacket wearing rule (read 2026-11-16)
+- Maritime NZ, "Lifejacket wearing rule amendment", https://maritimenz.govt.nz/recreational-craft/maritime-transport-lifejackets-on-recreational-craft-amendment-bill/ (last updated 8 October 2026; read in a browser because automated fetches get 403). "From 9 October 2026, everyone on board recreational craft of 6 metres in length and under will have to wear lifejackets while those craft are underway. The new rule will apply everywhere in New Zealand." Underway: not at anchor, attached to a dock, aground or attached to the shore. Supports NZBOAT-LAW-010 and NZBOAT-LAW-011.

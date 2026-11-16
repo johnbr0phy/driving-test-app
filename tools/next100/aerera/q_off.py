@@ -26,7 +26,7 @@ Q = [
 ("A broker signs a private sale contract for a project not approved by the competent entities. The contract is:",
  "Null and void in law", ["Valid with a warning", "Valid for the buyer only", "Voidable by RERA only"],
  "Article 10 bars developers and brokers from such contracts and makes any contract signed before approval null and void."),
-("How much notice does the Department give a purchaser who breaches an off-plan contract before the developer may act (Law No. (9) of 2009)?",
+("How much notice does the Department give a purchaser who breaches an off-plan contract before the developer may act (Law No. (13) of 2008 as amended in 2020)?",
  "30 days", ["7 days", "14 days", "90 days"],
  "Article 11(a)(2) of Law No. (13) of 2008, as replaced by Law No. (19) of 2020, requires the Department to give the purchaser thirty days' notice to fulfil his obligations."),
 ("The purchaser stays in default after notice and the developer has completed at least 80% of the project. What may the developer do?",

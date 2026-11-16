@@ -203,11 +203,11 @@
     "question": "Which of these is a function of RERA under Law No. (4) of 2019?",
     "optionA": "Collecting income tax from owners",
     "optionB": "Appointing judges for rent claims",
-    "optionC": "Monitoring real estate advertisements",
+    "optionC": "Approving real estate advertisement content",
     "optionD": "Setting the price of off-plan units",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Article 5(11) of Law No. (4) of 2019 gives RERA the approval of real estate advertisement content in Dubai, and its monitoring, alongside licensing real property activities and auditing escrow accounts."
+    "explanation": "Article 5(11) of Law No. (4) of 2019 gives RERA the approval of real estate advertisement content in Dubai, alongside licensing real property activities and auditing escrow accounts."
   },
   {
     "type": "AERERA",
@@ -1460,7 +1460,7 @@
     "state": "ALL",
     "questionId": "AERERA-OFF-009",
     "category": "aereraOffPlan",
-    "question": "How much notice does the Department give a purchaser who breaches an off-plan contract before the developer may act (Law No. (9) of 2009)?",
+    "question": "How much notice does the Department give a purchaser who breaches an off-plan contract before the developer may act (Law No. (13) of 2008 as amended in 2020)?",
     "optionA": "30 days",
     "optionB": "7 days",
     "optionC": "14 days",

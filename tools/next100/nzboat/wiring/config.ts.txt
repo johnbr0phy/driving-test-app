@@ -1,0 +1,67 @@
+const nzboat: ExamConfig = {
+  id: "nzboat",
+  stateCode: "NZBOAT",
+  idBase: 30900,
+  slug: "/nz-day-skipper",
+  landingPath: "/nz-day-skipper-practice-test",
+  name: "NZ Day Skipper Practice Test",
+  shortName: "NZ Day Skipper",
+  examLabel: "Day Skipper assessment",
+  fullName: "Coastguard Boating Education Day Skipper (New Zealand)",
+  questionIdPrefix: "NZBOAT-",
+  icon: "sailboat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Coastguard Boating Education Day Skipper course page (checked November 2026): learning outcomes
+  // are boat components and equipment, basic boat handling, navigational charts, basic tide and
+  // weather terminology, navigational marks, Maritime Rules and Regulations, emergencies, and common
+  // knots; every delivery mode ends with an online assessment. No question count, time or pass mark
+  // is published, so four tests of 50 and an 80% line are Tigertest's target. Blueprint follows the
+  // outcomes, weighted towards the rules of the road (Maritime Rules Part 22) and Part 91. Pools are
+  // exactly 4x per-test (no spares). All items original.
+  blueprint: {
+    nzboatBoat: 5,
+    nzboatHandling: 6,
+    nzboatCharts: 5,
+    nzboatTidesWeather: 5,
+    nzboatMarks: 6,
+    nzboatCollision: 7,
+    nzboatLights: 5,
+    nzboatLaw: 5,
+    nzboatEmergency: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30901, name: "The Boat, Handling & Knots", categories: ["nzboatBoat", "nzboatHandling"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 30902, name: "Charts, Tides & Weather", categories: ["nzboatCharts", "nzboatTidesWeather"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 30903, name: "Navigational Marks & Lights", categories: ["nzboatMarks", "nzboatLights"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 30904, name: "Rules of the Road & Local Rules", categories: ["nzboatCollision", "nzboatLaw"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 30905, name: "Emergencies & Communications", categories: ["nzboatEmergency"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nzboatBoat: "The Boat & Its Equipment",
+    nzboatHandling: "Boat Handling, Anchoring & Knots",
+    nzboatCharts: "Charts & Compass",
+    nzboatTidesWeather: "Tides & Marine Weather",
+    nzboatMarks: "Navigational Marks (IALA A)",
+    nzboatCollision: "Give-Way & Collision Rules",
+    nzboatLights: "Lights, Shapes & Sound Signals",
+    nzboatLaw: "Maritime Rules & Local Bylaws",
+    nzboatEmergency: "Emergencies & Communications",
+  },
+  copy: {
+    guestPrompt: "to save your Day Skipper progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Day Skipper topics: the boat, handling and knots; charts, tides and weather; navigational marks and lights; the rules of the road and local rules; and emergencies. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic, aim for 40",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with the boat and its gear.",
+      "Master each set, then try a test.",
+      "Halfway there. Take a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for your Day Skipper.",
+    ],
+    sourceLine: "Based on the Day Skipper learning outcomes, Maritime Rules Parts 22 and 91, regional council harbourmaster guidance and LINZ tide information, as of November 2026. Original questions; 50 per test is Tigertest's format. Not affiliated with Coastguard Boating Education, Coastguard New Zealand or Maritime New Zealand.",
+    analyticsKey: "nzboat",
+  },
+};

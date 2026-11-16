@@ -1,0 +1,39 @@
+{
+  "blurb": "Practice for the Coastguard Boating Education Day Skipper course assessment: New Zealand's give-way rules, lights and sound signals, IALA A buoys, the 5 knot rule, lifejackets, tides, marine weather, anchoring, knots and Mayday calls, in four 50-question tests.",
+  "org": "Coastguard Boating Education · Day Skipper course (Maritime Rules Parts 22 and 91)",
+  "region": "NZ",
+  "group": "New Zealand licences",
+  "groupAfter": "nzfirearms",
+  "aliases": [
+    "day skipper",
+    "day skipper nz",
+    "nz day skipper",
+    "coastguard day skipper",
+    "coastguard boating education",
+    "day skipper course",
+    "day skipper test",
+    "day skipper exam",
+    "boating test nz",
+    "nz boating rules",
+    "boat licence nz",
+    "boat licence new zealand",
+    "skipper course nz",
+    "skippers ticket nz",
+    "nz boating course",
+    "5 knot rule nz",
+    "maritime rules part 91",
+    "boatie course nz"
+  ],
+  "related": ["nzfirearms", "boating", "pcoc"],
+  "teacherLed": true,
+  "teaches": "a Day Skipper or boating safety course",
+  "borrowTiger": "boating",
+  "shareTitle": "NZ Day Skipper Practice Test",
+  "shareDescription": "200 original questions on New Zealand's boating rules, buoys, lights, tides and emergencies for the Coastguard Day Skipper course. Free to start.",
+  "searchTests": [
+    ["day skipper", "NZ", "nzboat"],
+    ["coastguard day skipper", "NZ", "nzboat"],
+    ["boat licence nz", "NZ", "nzboat"],
+    ["nz boating rules test", "NZ", "nzboat"]
+  ]
+}

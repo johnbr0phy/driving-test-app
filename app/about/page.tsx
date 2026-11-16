@@ -10,7 +10,7 @@ import { ABOUT_PAGE_UPDATED_AT } from "@/lib/seoDates";
 // costs. The page search and AI answer engines read when they ask whether a
 // practice-test site can be trusted, linked from the footer and llms.txt.
 
-const CONTACT = "john@johnbrophy.net";
+const CONTACT = "john@tigertest.io";
 const EXAM_COUNT = TEST_CATALOG.length;
 const COUNTRY_COUNT = REGIONS.length;
 

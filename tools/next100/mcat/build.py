@@ -46,7 +46,10 @@ def Q(test, d, domain, skill, stem, opts, expl, stim=None, locked=False, chk=Non
             "explanation": expl, "stim": stim, "locked": locked, "chk": chk}
 
 
-NUM = re.compile(r"^-?[\d,]*\.?\d+(\s?(x|×)\s?10\^?-?\d+)?(\s?[A-Za-zµ°%/^²³·\-]+[A-Za-z0-9µ°%/^²³·\-]*)*$")
+# Units after the number: the first may follow with or without a space, later
+# ones need one. Same matches as before, without the nested repeat CodeQL flags
+# (py/redos: exponential backtracking on long runs like "0%%%%...").
+NUM = re.compile(r"^-?[\d,]*\.?\d+(\s?(x|×)\s?10\^?-?\d+)?(?:\s?[A-Za-zµ°%/^²³·\-][A-Za-z0-9µ°%/^²³·\-]*)?(?:\s[A-Za-zµ°%/^²³·\-][A-Za-z0-9µ°%/^²³·\-]*)*$")
 FIRST = re.compile(r"-?\d[\d,]*\.?\d*(?:\s?(?:x|×)\s?10\^?(-?\d+))?")
 
 

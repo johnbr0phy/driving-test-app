@@ -5829,6 +5829,19 @@
     --brand-gradient-to: 10 60% 96%;
   }
 
+  [data-theme="qabaabat"] {
+    --brand: 193 15% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 193 30% 95%;
+    --brand-hover: 193 15% 25%;
+    --brand-dark: 193 15% 21%;
+    --brand-darker: 193 15% 15%;
+    --brand-muted: 193 12% 70%;
+    --brand-border: 193 15% 78%;
+    --brand-border-light: 193 15% 88%;
+    --brand-gradient-to: 208 30% 95%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -10799,6 +10812,18 @@
     --brand-muted: 357 30% 45%;
     --brand-dark: 357 100% 65%;
     --brand-darker: 357 100% 78%;
+  }
+
+  .dark [data-theme="qabaabat"] {
+    --brand: 193 15% 43.9%;
+    --brand-hover: 193 15% 35.9%;
+    --brand-light: 193 30% 13%;
+    --brand-gradient-to: 208 30% 11%;
+    --brand-border-light: 193 15% 24%;
+    --brand-border: 193 15% 34%;
+    --brand-muted: 193 12% 45%;
+    --brand-dark: 193 15% 65%;
+    --brand-darker: 193 15% 78%;
   }
 
 }

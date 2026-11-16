@@ -24,6 +24,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   rpt: { title: "Free RPT (AMT) Practice Test", description: "200 original questions on the AMT RPT exam specifications, four 50-question practice tests." },
   hspachl: { title: "Free CHL Healthcare Leader Practice Test", description: "200 original questions on the 2026 HSPA CHL outline for sterile processing leaders. Free to start." },
   hspacer: { title: "Free CER Endoscope Reprocessor Practice Test", description: "200 original questions on the HSPA CER outline, from leak testing to high-level disinfection and storage. Free to start." },
+  qabaabat: { title: "Free QABA ABAT Practice Test", description: "200 original questions on QABA's ABAT test specifications for applied behavior analysis technicians. Free to start." },
   bcaba: { title: "Free BCaBA Practice Test", description: "200 original questions on the BCaBA Test Content Outline (6th ed.), with explanations." },
   bcba: { title: "Free BCBA Practice Test", description: "200 original questions on the BCBA Test Content Outline (6th ed.), with explanations." },
   aufirearmsqld: { title: "QLD Firearms Safety Practice Test", description: "Review Queensland weapons law, storage, transport and the National Firearms Safety Code before your course." },

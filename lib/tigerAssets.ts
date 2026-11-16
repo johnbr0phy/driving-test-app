@@ -90,6 +90,7 @@ const BORROWED_SETS: Record<string, string> = {
   hspachl: "crcst",
   hspacer: "crcst",
   bcaba: "rbt",
+  qabaabat: "rbt",
   bcba: "rbt",
   aufirearmsqld: "capal",
   dmv: "driving",

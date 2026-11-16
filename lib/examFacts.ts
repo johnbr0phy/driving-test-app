@@ -487,6 +487,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       basedOn: "HSPA's CER Exam Content Outline (revised May 2022) and Certification Handbook (revised January 2026), checked November 2026",
       source: { name: "HSPA: Certified Endoscope Reprocessor (CER)", url: "https://myhspa.org/certification/certification-overview/certified-endoscope-reprocessor-cer/" },
     },
+  qabaabat: {
+      answer:
+        "The ABAT exam is the certification exam for the Applied Behavior Analysis Technician credential from the Qualified Applied Behavior Analysis Credentialing Board (QABA), an entry-level credential for technicians who carry out ABA treatment plans and collect data under the supervision of a QBA, QASP-S, BCBA, BCaBA or other qualified professional. Candidates first complete 40 hours of approved coursework, 15 hours of supervised fieldwork and the application. The exam has 125 questions in 2 hours: 100 scored and 25 unscored pretest questions that are not identified. It is taken online with a live proctor, and the pass point is 72%, with a pass or fail result given right away. QABA's test specifications spread the 100 scored questions over 14 domains, led by autism spectrum disorder basics (12%), functional analysis (11%) and person-centered planning (10%).",
+      rows: [
+        { label: "Questions", value: "125 (100 scored, 25 unscored pretest)" },
+        { label: "Time", value: "2 hours" },
+        { label: "Pass mark", value: "72%, pass or fail shown right after the exam" },
+        { label: "Content", value: "14 domains (ABAT job analysis test specifications)" },
+        { label: "Biggest domain", value: "Autism Spectrum Disorder Basics, 12 of 100" },
+        { label: "Retakes", value: "Second attempt right away, then 7 days between attempts" },
+        { label: "Where", value: "Online, live-proctored by Premier Proctoring" },
+        { label: "Run by", value: "Qualified Applied Behavior Analysis Credentialing Board (QABA)" },
+      ],
+      basedOn: "QABA's ABAT job analysis test specifications (reviewed August 2023), the ABAT Competency Standards (January 2023) and the ABAT Candidate Handbook (January 2026), checked November 2026",
+      source: { name: "QABA: ABAT certification", url: "https://qababoard.com/pages/?p=8977" },
+    },
   bcaba: {
       answer:
         "The BCaBA exam is the Behavior Analyst Certification Board's certification exam for Board Certified Assistant Behavior Analysts, the undergraduate-level credential in behavior analysis; BCaBAs practice under the supervision of a BCBA and may supervise RBTs. It has 175 multiple-choice questions in 4 hours, 150 scored and 25 unscored, each with 4 options and 1 correct answer, taken in English on a computer at Pearson VUE testing centers. It follows the BCaBA Test Content Outline (6th ed.): 90 tasks in 9 domains, led by behavior-change procedures (15%). The result is pass or fail against a passing score set by the modified Angoff method, not published as a percentage. Candidates may test up to 8 times in the 2-year authorization period, 30 days apart.",

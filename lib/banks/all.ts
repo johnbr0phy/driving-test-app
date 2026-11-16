@@ -286,6 +286,7 @@ import "./ea1";
 import "./nzboat";
 import "./sgsnb";
 import "./iehcap";
+import "./qabaabat";
 import "./hknurse";
 import "./bcrealestate";
 import "./aerera";

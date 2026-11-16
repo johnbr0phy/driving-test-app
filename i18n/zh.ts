@@ -1268,6 +1268,13 @@ export const zh: TranslationKeys = {
     cpabarPublic: "SEC Reporting, Segments & Benefit Plans",
     cpabarGovReporting: "Government Financial Reporting",
     cpabarGovTransactions: "Government Transactions & Fund Balance",
+    // ea1
+    ea1Prelim: "Preliminary Work & Taxpayer Data",
+    ea1Income: "Income & Assets",
+    ea1Deductions: "Deductions & Credits",
+    ea1Taxation: "Taxation",
+    ea1Advising: "Advising the Individual Taxpayer",
+    ea1Specialized: "Specialized Returns for Individuals",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

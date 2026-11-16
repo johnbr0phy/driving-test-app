@@ -44,6 +44,23 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  ea1: {
+    answer:
+      "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 1 covers individuals. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 1's six domains are preliminary work and taxpayer data (14 scored questions), income and assets (17), deductions and credits (17), taxation (15), advising the individual taxpayer (11) and specialized returns for individuals (11). For exams from July 1, 2026 to February 28, 2027, questions follow tax law as amended through December 31, 2025 and relate to calendar year 2025.",
+    rows: [
+      { label: "Questions", value: "100 (85 scored, 15 unscored)" },
+      { label: "Time", value: "3.5 hours" },
+      { label: "Passing score", value: "500 on a 200 to 800 scale" },
+      { label: "Tax year tested", value: "2025, for July 1, 2026 to February 28, 2027" },
+      { label: "Largest domains", value: "Income and assets 17, deductions and credits 17" },
+      { label: "Where", value: "PSI test center or remote proctoring, both in the U.S.; international testing delayed" },
+      { label: "Attempts", value: "Up to four per part each testing window" },
+      { label: "Passed parts", value: "Carry over for three years" },
+      { label: "Given by", value: "PSI for the IRS" },
+    ],
+    basedOn: "the PSI Candidate Information Bulletin for the IRS SEE (revised October 9, 2026) and the IRS enrolled agent FAQs, checked November 2026",
+    source: { name: "IRS: Enrolled agents frequently asked questions", url: "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions" },
+  },
   cpabar: {
     answer:
       "BAR, Business Analysis and Reporting, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. BAR runs 4 hours with 50 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, with only one task reworded for 2027, it covers business analysis (40 to 50%), technical accounting and reporting (35 to 45%) and state and local governments (10 to 20%).",

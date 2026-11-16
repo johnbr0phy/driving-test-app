@@ -281,3 +281,4 @@ import "./pance";
 import "./cpcta";
 import "./cehrs";
 import "./cpabar";
+import "./ea1";

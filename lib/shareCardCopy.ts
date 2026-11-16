@@ -1,4 +1,5 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  ea1: { title: "Free Enrolled Agent Part 1 Practice Test", description: "200 original questions on the IRS SEE Part 1 (Individuals) outline and 2025 tax law. Free to start." },
   cpabar: { title: "Free CPA BAR Practice Test", description: "200 original multiple-choice questions on the AICPA's BAR blueprint: business analysis, technical accounting and reporting, and state and local governments. Free to start." },
   cehrs: { title: "Free CEHRS Practice Test", description: "200 original questions on the NHA CEHRS test plan for electronic health records specialists. Free to start." },
   cpcta: { title: "Free-to-Start CPCT/A Practice Test", description: "200 original questions on the NHA CPCT/A test plan for patient care technicians. Free to start." },

@@ -87,6 +87,12 @@ function save(r: Stored) {
 /** This browser's arm, or null when the init script could not run (the card shows). */
 export function landingTryArm(): LandingTryArm | null {
   if (typeof window === "undefined") return null;
+  // The arm this page was drawn with (set by the inline script, per
+  // document). localStorage is shared by every tab and frame, so the admin
+  // preview's two frames, pinned to different arms, would otherwise read
+  // whichever frame wrote last and both show the control page.
+  const drawn = document.documentElement.getAttribute("data-ltq");
+  if (drawn === "card" || drawn === "control") return drawn;
   return load()?.arm ?? null;
 }
 

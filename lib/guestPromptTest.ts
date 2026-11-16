@@ -1,8 +1,8 @@
 // The in-training sign-up step's message test (components/GuestPromptStep,
 // hooks/useGuestPrompt). English readers see a different one of ten designs
 // each time the step comes up, in an order shuffled once per browser, so every
-// design is equally likely at every showing (the first showing on its own is
-// a clean 10-way A/B test). Each showing, button tap and finished sign-up is
+// active design is equally likely at every showing (the first showing on its
+// own is a clean A/B test). Each showing, button tap and finished sign-up is
 // counted per design in analytics/guestPromptTest through
 // /api/analytics/guest-prompt; the Conversion tab on /admin compares them.
 // Other languages keep the single translated design and are not in the test.
@@ -13,6 +13,16 @@ export const GUEST_PROMPT_TEST_ID = "guestPrompt10";
 
 export const GUEST_PROMPT_VARIANTS = ["v01", "v02", "v03", "v04", "v05", "v06", "v07", "v08", "v09", "v10"] as const;
 export type GuestPromptVariant = (typeof GUEST_PROMPT_VARIANTS)[number];
+
+/**
+ * Designs taken out of the rotation (Nov 16 2026: the four lowest sign-ups per
+ * showing, all under the control). Their counts stay on /admin and
+ * `?guestPrompt=` still previews them; browsers only see the active ones.
+ */
+export const RETIRED_GUEST_PROMPT_VARIANTS: readonly GuestPromptVariant[] = ["v02", "v05", "v09", "v10"];
+export const ACTIVE_GUEST_PROMPT_VARIANTS: GuestPromptVariant[] = GUEST_PROMPT_VARIANTS.filter(
+  (v) => !RETIRED_GUEST_PROMPT_VARIANTS.includes(v),
+);
 
 /** What each design tries, for the admin table. v01 is the control. */
 export const GUEST_PROMPT_VARIANT_NAMES: Record<GuestPromptVariant, string> = {
@@ -39,9 +49,9 @@ export function isGuestPromptAction(a: unknown): a is GuestPromptAction {
   return typeof a === "string" && (GUEST_PROMPT_ACTIONS as readonly string[]).includes(a);
 }
 
-/** A Fisher-Yates shuffle of the ten designs, random source injectable for tests. */
+/** A Fisher-Yates shuffle of the active designs, random source injectable for tests. */
 export function shuffledVariants(random: () => number = Math.random): GuestPromptVariant[] {
-  const order = [...GUEST_PROMPT_VARIANTS];
+  const order = [...ACTIVE_GUEST_PROMPT_VARIANTS];
   for (let i = order.length - 1; i > 0; i--) {
     const j = Math.floor(random() * (i + 1));
     [order[i], order[j]] = [order[j], order[i]];
@@ -64,8 +74,8 @@ function readOrder(): Stored | null {
     if (
       parsed?.test === GUEST_PROMPT_TEST_ID &&
       Array.isArray(parsed.order) &&
-      parsed.order.length === GUEST_PROMPT_VARIANTS.length &&
-      parsed.order.every(isGuestPromptVariant) &&
+      parsed.order.length === ACTIVE_GUEST_PROMPT_VARIANTS.length &&
+      parsed.order.every((v: unknown) => isGuestPromptVariant(v) && ACTIVE_GUEST_PROMPT_VARIANTS.includes(v)) &&
       Number.isInteger(parsed.next)
     ) {
       return parsed as Stored;

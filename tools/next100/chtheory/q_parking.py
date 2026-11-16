@@ -57,7 +57,7 @@ Q = [
 ('You open your door beside a road. What is your duty?',
  'Look out for traffic from behind', ['Look out for oncoming traffic only', 'Check only for cyclists on the pavement', 'Open it only once the engine is off'],
  'People getting in and out must not endanger others, and when opening doors you must watch for traffic from behind (VRV art. 21 para. 1).'),
-('What is the main reason you must not stop in a tunnel unless in an emergency?',
- 'It may block others dangerously', ['Idling cars overload the tunnel ventilation', 'Cameras cannot read stopped number plates', 'Stopped cars hide the emergency exits'],
+('When may you stop in a tunnel?',
+ 'Only in an emergency', ['To check a map', 'At the lay-bys whenever you like', 'When traffic is light'],
  'In tunnels you may stop only in emergencies and must stop the engine at once (VRV art. 39 para. 3).'),
 ]

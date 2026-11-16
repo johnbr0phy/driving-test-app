@@ -49,7 +49,7 @@ Q = [
  'Pedestrians and similar device users', ['Cars with a parking disc', 'Cars driving at 20 km/h', 'Cyclists and mopeds only'],
  'The "Pedestrian zone" sign reserves the area for pedestrians and users of vehicle-like devices. If limited vehicle access is allowed, vehicles drive at walking pace and give way (SSV art. 22c).'),
 ('A speed limit sign of 60 is posted. Until when does it apply?',
- 'Until its end sign, or the next junction at the latest', ['Until the next village sign appears', 'For one kilometre, then it lapses', 'Until you leave the canton'],
+ 'Until its end sign, or the end of the next junction at the latest', ['Until the next village sign appears', 'For one kilometre, then it lapses', 'Until you leave the canton'],
  'The "Speed limit" sign (2.30) applies until its end sign (2.53), but at most to the end of the next junction. If the limit is to go on, the sign is repeated there (SSV art. 16 para. 2).'),
 ('What does the sign "End of speed limit 50 general" announce?',
  'The urban limit no longer applies', ['A motorway is about to begin here', 'A 30 km/h zone begins from here', 'A school zone is about to begin'],

@@ -25,7 +25,7 @@ Q = [
  'Only to the next exit', ['To the next service area', 'To the next border', 'Up to 20 km'],
  'Broken-down vehicles may be towed only as far as the next exit (VRV art. 35 para. 3).'),
 ('Traffic on a motorway with two lanes in your direction has stopped. What do you do?',
- 'Leave a lane for emergency vehicles', ['Close up tightly to save space', 'Keep to the right edge of the right lane', 'Use the hard shoulder to keep moving'],
+ 'Leave a free corridor between the two lanes', ['Close up tightly to save space', 'Stop in the middle of your lane', 'Use the hard shoulder to keep moving'],
  'When traffic crawls or stops, vehicles must leave a free corridor between the leftmost lane and the one beside it for emergency services (VRV art. 36 para. 7).'),
 ('Which of these is banned in a tunnel?',
  'Reversing', ['Keeping dipped lights on', 'Driving in a line at a steady pace', 'Keeping a safe distance'],

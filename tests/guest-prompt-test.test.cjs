@@ -1,18 +1,19 @@
 // The sign-up step's message test (lib/guestPromptTest.ts): every browser's
-// order holds all ten designs once, and the comparison maths behave.
+// order holds each active design once, and the comparison maths behave.
 require("tsx/cjs");
 const test = require("node:test");
 const assert = require("node:assert");
 const g = require("../lib/guestPromptTest.ts");
 const fs = require("node:fs");
 
-test("a shuffled order holds each of the ten designs once", () => {
+test("a shuffled order holds each active design once, and no retired one", () => {
   for (let seed = 1; seed < 50; seed++) {
     let x = seed;
     const rnd = () => ((x = (x * 9301 + 49297) % 233280) / 233280);
     const order = g.shuffledVariants(rnd);
-    assert.strictEqual(order.length, 10);
-    assert.deepStrictEqual([...order].sort(), [...g.GUEST_PROMPT_VARIANTS]);
+    assert.strictEqual(order.length, g.ACTIVE_GUEST_PROMPT_VARIANTS.length);
+    assert.deepStrictEqual([...order].sort(), [...g.ACTIVE_GUEST_PROMPT_VARIANTS]);
+    for (const v of g.RETIRED_GUEST_PROMPT_VARIANTS) assert.ok(!order.includes(v), v);
   }
 });
 

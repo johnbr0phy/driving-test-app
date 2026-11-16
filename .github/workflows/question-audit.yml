@@ -158,7 +158,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
-          claude_args: --max-turns 200 --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md, then the question audit at ${{ steps.findings.outputs.report }}
             (details in ${{ steps.findings.outputs.file }}).
@@ -215,7 +215,7 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
-          claude_args: --max-turns 150 --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
+          claude_args: --max-turns 150 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
           prompt: |
             You are the second reviewer of an automatic fix to Tigertest's question
             banks. Another run changed questions after an audit; nobody else will read

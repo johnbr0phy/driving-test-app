@@ -24,8 +24,8 @@ export const SITE_JSON_LD = {
       description: `Practice tests, free to start, for ${TEST_CATALOG.length} exams in ${REGIONS.length} countries: the DMV permit test in all 50 states and DC, driving theory tests from the UK to Malaysia, and licensing, certification, school and admissions exams such as the CDL, NCLEX, SAT and CompTIA. Premium is an optional one-time purchase with no subscription.`,
       areaServed: REGIONS.map((r) => ({ "@type": "Country", name: r.name })),
       founder: { "@type": "Person", name: "John Brophy", sameAs: ["https://x.com/JohnBr0"] },
-      email: "john@johnbrophy.net",
-      contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: "john@johnbrophy.net", availableLanguage: ["en"] },
+      email: "john@tigertest.io",
+      contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: "john@tigertest.io", availableLanguage: ["en"] },
       sameAs: ["https://x.com/JohnBr0"],
     },
     {

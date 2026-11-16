@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import {
-  CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch,
+  CARD, ROW, STICKY_COL, TableScroll, TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch,
 } from "@/components/admin/AdminTabParts";
 import type { NewTestsPayload } from "@/lib/server/newTestsAdmin";
 
@@ -42,7 +42,7 @@ export function NewTestsTab() {
         refreshing={refreshing}
         updating={updating}
       />
-      <div className={`${CARD} !p-0 overflow-x-auto`}>
+      <TableScroll className={`${CARD} !p-0`}>
         <table className="w-full text-sm">
           <thead className="text-xs text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-800">
             <tr className={ROW}>
@@ -83,7 +83,7 @@ export function NewTestsTab() {
             </tr>
           </tfoot>
         </table>
-      </div>
+      </TableScroll>
       <p className="text-xs text-gray-500 dark:text-gray-400">
         Traffic and signups count new people whose first page was one of the test&apos;s pages (landing, app or topic pages).
         Questions count every answer on the test. Sales are Premium purchases made from the test, after refunds.

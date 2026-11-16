@@ -115,13 +115,12 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
   };
 
   return (
-    <div className="flex-1 bg-white dark:bg-gray-900">
+    <div className="flex-1 bg-white dark:bg-gray-950">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <TeachLandingTracker />
 
       {/* Hero */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-6 pt-14 pb-20 md:pt-20 md:pb-24 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight text-balance">
             Free practice tests for your whole class
@@ -295,7 +294,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-brand-light py-16">
+      <div className="bg-gray-50 dark:bg-gray-900 py-16">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <Gift className="w-8 h-8 mx-auto mb-4 text-brand-dark" aria-hidden="true" />
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-4">{british ? "Your class could be practising tonight" : "Your class could be practicing tonight"}</h2>

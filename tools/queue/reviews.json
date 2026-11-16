@@ -1,6 +1,15 @@
 {
   "_": "Second-reviewer checks of whole banks: a reviewer that did not write the questions answered every one without the key and its findings were fixed. One entry per check. /build-tests adds an entry for each test it ships. Read by scripts/test-progress.ts. Tests built before 2026-11-14 are not listed: their reviews were not recorded per test.",
   "reviews": {
+    "sgsnb": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 7 }],
+    "iehcap": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 6 }],
+    "ukdsc1": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 3 }],
+    "hknurse": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 5 }],
+    "bcrealestate": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 7 }],
+    "aerera": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 27 }],
+    "nzrealestate": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 8 }],
+    "cacore": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 16 }],
+    "chtheory": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 867, "findings": 13 }],
     "nzboat": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 2 }],
     "pentestplus": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 0 }],
     "sc200": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 26 }],

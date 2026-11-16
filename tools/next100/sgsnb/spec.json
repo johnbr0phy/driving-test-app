@@ -1,0 +1,27 @@
+{
+  "id": "sgsnb",
+  "engine": "v1",
+  "stateCode": "SGSNB",
+  "idBase": 32100,
+  "prefix": "SGSNB-",
+  "slug": "/singapore-snb-rn-exam",
+  "landingPath": "/singapore-snb-rn-licensure-exam-practice-test",
+  "dataFile": "data/singapore-snb-rn-questions.json",
+  "name": "SNB RN Licensure Exam Practice Test",
+  "shortName": "SNB RN Exam",
+  "icon": "stethoscope",
+  "passPct": 70,
+  "region": "SG",
+  "categories": [
+    {"key": "sgsnbLegal", "perTest": 6, "segment": "LEG"},
+    {"key": "sgsnbQuality", "perTest": 5, "segment": "QUA"},
+    {"key": "sgsnbAssess", "perTest": 4, "segment": "ASM"},
+    {"key": "sgsnbSafety", "perTest": 5, "segment": "SAF"},
+    {"key": "sgsnbMeds", "perTest": 7, "segment": "MED"},
+    {"key": "sgsnbFluids", "perTest": 4, "segment": "FLU"},
+    {"key": "sgsnbEmergency", "perTest": 5, "segment": "EMG"},
+    {"key": "sgsnbSurgical", "perTest": 5, "segment": "SUR"},
+    {"key": "sgsnbMental", "perTest": 5, "segment": "MHA"},
+    {"key": "sgsnbTeam", "perTest": 4, "segment": "TEA"}
+  ]
+}

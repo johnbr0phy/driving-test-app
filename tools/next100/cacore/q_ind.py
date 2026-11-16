@@ -1,0 +1,28 @@
+CAT = "cacoreIndigenous"; SEG = "IND"
+# Sources: Constitution Act, 1982 s. 35; Migratory Birds Regulations, 2022 s. 21 (laws-lois.justice.gc.ca).
+Q = [
+('Section 35(1) of the Constitution Act, 1982 says existing aboriginal and treaty rights are:',
+ 'Recognized and affirmed', ['Suspended during the open season', 'Set by each province in turn', 'Limited to land claims areas'],
+ 'Section 35(1) says the existing aboriginal and treaty rights of the aboriginal peoples of Canada are hereby recognized and affirmed.'),
+('Under section 35(2), the aboriginal peoples of Canada include the Indian, Inuit and:',
+ 'Métis peoples', ['Acadian peoples', 'Settler peoples', 'Territorial peoples'],
+ 'Section 35(2) says aboriginal peoples of Canada includes the Indian, Inuit and Métis peoples.'),
+('Under section 35(3), treaty rights include rights that exist by way of:',
+ 'Land claims agreements', ['Provincial licences and tags', 'Municipal by-laws and permits', 'Private contracts with landowners'],
+ 'Section 35(3) includes rights that now exist, or may be acquired, by way of land claims agreements.'),
+('Section 35(4) guarantees aboriginal and treaty rights equally to:',
+ 'Male and female persons', ['Residents and non-residents alike', 'Persons living on a reserve', 'Adults over 18 only'],
+ 'Section 35(4) says the rights are guaranteed equally to male and female persons.'),
+('Part II of the Constitution Act, 1982, which contains section 35, is titled:',
+ 'Rights of the Aboriginal Peoples of Canada', ['Rights of the Provinces and Territories', 'Rights and Freedoms of Hunters', 'Amendment of Treaty Obligations'],
+ 'Part II of the Constitution Act, 1982 is titled Rights of the Aboriginal Peoples of Canada and holds sections 35 and 35.1.'),
+('The Migratory Birds Regulations, 2022 provide an exception for:',
+ 'Aboriginal rights holders', ['Licensed hunting guides', 'Landowners with large tracts', 'Foreign visitors with a permit'],
+ 'Section 21 of the Regulations provides exceptions for aboriginal rights holders.'),
+('Section 25 of the Canadian Charter of Rights and Freedoms says the Charter must not abrogate or derogate from:',
+ 'Aboriginal, treaty or other rights of aboriginal peoples', ['The powers of provincial legislatures', 'The rights of landowners', 'Provincial hunting laws'],
+ 'Section 25 of the Charter, in Part I of the Constitution Act, 1982, protects aboriginal, treaty and other rights of the aboriginal peoples of Canada.'),
+('Section 35.1 commits governments to hold a constitutional conference before certain amendments and invite representatives of:',
+ 'The Indian, Inuit and Métis peoples', ['Provincial hunting associations', 'Municipal councils', 'Wildlife management boards'],
+ 'Section 35.1(b) says the Prime Minister will invite representatives of the aboriginal peoples of Canada, which section 35(2) says includes the Indian, Inuit and Métis peoples.'),
+]

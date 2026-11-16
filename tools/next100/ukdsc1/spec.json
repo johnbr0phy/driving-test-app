@@ -1,0 +1,33 @@
+{
+  "id": "ukdsc1",
+  "stateCode": "UKDSC1",
+  "idBase": 31700,
+  "prefix": "UKDSC-",
+  "slug": "/deer-stalking-certificate",
+  "landingPath": "/dsc1-practice-test",
+  "dataFile": "data/uk-dsc1-questions.json",
+  "region": "UK",
+  "name": "DSC1 Practice Test",
+  "shortName": "DSC1",
+  "examLabel": "DSC1 written test",
+  "fullName": "Deer Stalking Certificate Level 1 (DSC1) written test",
+  "icon": "target",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "ukdscBiology", "label": "Deer Biology & Ecology", "perTest": 8, "pool": 32, "segment": "BIO"},
+    {"key": "ukdscId", "label": "Identifying the Six Species", "perTest": 6, "pool": 24, "segment": "IDN"},
+    {"key": "ukdscLaw", "label": "Deer Law & Close Seasons", "perTest": 10, "pool": 40, "segment": "LAW"},
+    {"key": "ukdscSafety", "label": "Firearms, Ammunition & Safety", "perTest": 8, "pool": 32, "segment": "SAF"},
+    {"key": "ukdscShot", "label": "Shot Placement & Follow Up", "perTest": 7, "pool": 28, "segment": "SHT"},
+    {"key": "ukdscHygiene", "label": "Carcass Handling & Large Game Hygiene", "perTest": 11, "pool": 44, "segment": "HYG"}
+  ],
+  "trainingSets": [
+    {"setNumber": 1, "id": 31701, "name": "Deer Biology & Identification", "categories": ["ukdscBiology", "ukdscId"], "size": 56},
+    {"setNumber": 2, "id": 31702, "name": "Deer Law & Close Seasons", "categories": ["ukdscLaw"], "size": 40},
+    {"setNumber": 3, "id": 31703, "name": "Firearms, Safety & Shot Placement", "categories": ["ukdscSafety", "ukdscShot"], "size": 60},
+    {"setNumber": 4, "id": 31704, "name": "Carcass Handling & Hygiene", "categories": ["ukdscHygiene"], "size": 44}
+  ],
+  "notes": "Real DSC1 (DMQ, dmq.org.uk checked 2026-11-16): written paper 50 multiple-choice questions, 40 to pass (80%); game meat hygiene paper 40 questions, 32 to pass (80%); visual identification of 20 images, safety walk and live-fire shooting are separate and not modelled. Blueprint is Tigertest's split along the seven syllabus areas (DMQ publishes no weights); hygiene is weighted a little heavier because DMQ examines it as its own 40-question paper. Dashboard = 4 sets + 4 tests = 8 steps."
+}

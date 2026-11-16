@@ -9,6 +9,8 @@ import { teachPathFor } from "@/lib/teachPages";
 // page's FAQPage graph; keep the two in step.
 
 export const TEACHES: Record<string, string> = {
+  hknurse: "a nursing licensing exam preparation class",
+  cacore: "a CORE hunter education course",
   nzboat: "a Day Skipper or boating safety course",
   cehrs: "an electronic health records specialist program",
   cpcta: "a patient care technician program",
@@ -259,6 +261,7 @@ export const TEACHES: Record<string, string> = {
   ukplumb: "a plumbing course",
   ukg3: "an unvented hot water (G3) course",
   ukwater: "a Water Regulations course",
+  ukdsc1: "a deer stalking course",
   capal: "the Canadian Firearms Safety Course",
   caelec: "an electrical apprenticeship program",
   caauto: "an automotive service technician apprenticeship class",
@@ -278,6 +281,8 @@ export const TEACHES: Record<string, string> = {
   ukfood: "Level 2 food hygiene courses",
   ukaplh: "a personal licence course",
   nzlcq: "an LCQ course",
+  aerera: "a DREI certified real estate broker course",
+  nzrealestate: "a New Zealand Certificate in Real Estate (Salesperson) course",
   aesira: "a SIRA basic security guard course",
   kenck: "a nursing college class",
   pknle: "an NRE preparation class",
@@ -286,10 +291,12 @@ export const TEACHES: Record<string, string> = {
   punjabpolice: "a police test coaching class",
   iesafepass: "a Safe Pass course or construction safety training",
   iepsa: "a QQI Level 4 Security Guarding Skills course",
+  iehcap: "a deer stalking or HCAP preparation course",
   nzsfe: "a nursing school class",
   nziqn: "a competence assessment preparation class",
   nzensf: "a Diploma in Enrolled Nursing class",
   sgvl: "the taxi or private hire car vocational licence course",
+  sgsnb: "a nursing school or hospital nursing class",
 };
 
 function question(examId: string): string {

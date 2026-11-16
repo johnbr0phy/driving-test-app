@@ -64,6 +64,9 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  * Remove an entry once that exam has its own eight expressions.
  */
 const BORROWED_SETS: Record<string, string> = {
+  hknurse: "nclex",
+  bcrealestate: "realestate",
+  cacore: "hunter",
   nzboat: "boating",
   ea1: "cpareg",
   cpabar: "cpafar",
@@ -97,6 +100,7 @@ const BORROWED_SETS: Record<string, string> = {
   staarbio: "apbio",
   toeflread: "ieltsread",
   ukwater: "caplumb",
+  ukdsc1: "hunter",
   ukg3: "caplumb",
   ukplumb: "caplumb",
   ukrbi: "nhie",
@@ -136,6 +140,8 @@ const BORROWED_SETS: Record<string, string> = {
   itpatente: "driving", itcils: "itlanguage", itceli: "itlanguage",
   // France (Nov 2026): code de la route the car tiger.
   frcode: "driving",
+  // Switzerland (Nov 2026): the car tiger.
+  chtheory: "driving",
   // AP Italian (Nov 2026): the AP English Language tiger.
   apitalian: "aplang",
   // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.
@@ -186,13 +192,15 @@ const BORROWED_SETS: Record<string, string> = {
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
   // licence, security guard and NCLEX families.
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",
-  nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", mypce: "insurance", kenck: "nclex",
+  nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", aerera: "realestate", mypce: "insurance", kenck: "nclex",
+  // NZ real estate salesperson borrows the real estate tiger.
+  nzrealestate: "realestate",
   ppsc: "phcse", punjabpolice: "police", pakarmy: "asvab", pkpaf: "asvab", pknle: "nclex", pkpnmc: "nclex",
   zak53moto: "moto", zare5: "insurance", zasaps: "police", zapsira: "security",
   // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX
   // and Series 7 families.
-  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl",
-  nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving",
+  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter",
+  nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving", sgsnb: "nclex",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.
   phnle: "nclex", phmidwife: "nclex", phmedtech: "htl", phpharm: "ptcb", phpsychom: "appsych",

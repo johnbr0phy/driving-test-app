@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  bcrealestate: {
+      answer:
+        "The British Columbia real estate trading services exam is the final exam of the UBC Sauder Real Estate Trading Services Licensing Course, the course BCFSA requires before a representative licence to provide trading services (selling, leasing and advising on real estate) under the Real Estate Services Act. UBC's Real Estate Division gives it as 100 multiple-choice questions, one mark each, in three hours, with a passing grade of 70%. After passing, candidates complete the Residential or Commercial Trading Services Applied Practice Course run by BCFSA before applying for a licence. The exam is not offered outside Canada.",
+      rows: [
+        { label: "Format", value: "100 multiple-choice questions, one mark each, in 3 hours" },
+        { label: "Pass mark", value: "70% (UBC Sauder Real Estate Division)" },
+        { label: "Course", value: "Real Estate Trading Services Licensing Course, UBC Sauder, with assignments and a final exam" },
+        { label: "Regulator", value: "BC Financial Services Authority (BCFSA), under the Real Estate Services Act" },
+        { label: "After the exam", value: "Residential or Commercial Trading Services Applied Practice Course, then a licence application within one year" },
+        { label: "Calculator", value: "A financial calculator such as the HP 10bII+ is recommended for the mortgage and valuation questions" },
+        { label: "Age", value: "At least 19 and of good reputation to be licensed" },
+      ],
+      basedOn: "the UBC Sauder Real Estate Division course page and student handbook, BCFSA's Education and Licensing Guidelines, and BC Laws consolidations of the Real Estate Services Act and Rules, Property Law Act, Land Title Act, Strata Property Act and Real Estate Development Marketing Act current to November 10, 2026, checked November 2026",
+      source: { name: "UBC Sauder: Real Estate Trading Services Licensing Course", url: "https://www.sauder.ubc.ca/programs/real-estate/licensing-registration-courses/bc-licensing-courses/real-estate-trading-services-licensing" },
+    },
   nzboat: {
     answer:
       "Day Skipper is Coastguard Boating Education's introductory course for recreational boaties and crew in New Zealand, especially people new to being skipper of their own boat. Its learning outcomes are the parts of a boat and its equipment, basic boat handling, navigational charts, basic tide and weather terms, navigational marks, Maritime Rules and Regulations, emergencies and common marine knots. It runs in a classroom (four weeks including two days in class), a virtual classroom or online self-study within four weeks, and every version ends with an online assessment. Coastguard Boating Education does not publish the number of questions or a pass mark; a learner who falls short gets feedback and a second attempt at the questions they got wrong. The certificate is an internal Coastguard Education certificate, not an NZQA qualification. New Zealand requires no licence to skipper a recreational boat, but skippers must follow the Maritime Rules and regional bylaws.",
@@ -1401,6 +1416,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the SIA door supervision specifications (April 2021) and an awarding body's published exam structure, checked October 2026",
     source: { name: "GOV.UK: SIA licence-linked training specifications", url: "https://www.gov.uk/guidance/read-the-specifications-for-sia-licence-linked-training" },
+  },
+  ukdsc1: {
+    answer:
+      "The Deer Stalking Certificate Level 1 (DSC1) is the entry qualification for stalking wild deer in Britain, run by Deer Management Qualifications (DMQ). The written assessment is 50 multiple-choice questions and you need 40 correct (80%). There is a separate 40-question large game hygiene paper, 32 correct to pass, and a practical rifle shooting test on a range and in the field.",
+    rows: [
+      { label: "Who runs it", value: "Deer Management Qualifications (DMQ), with the British Deer Society and Deer Initiative" },
+      { label: "Written paper", value: "50 multiple-choice questions, 40 correct to pass (80%)" },
+      { label: "Hygiene paper", value: "40 questions, 32 correct to pass" },
+      { label: "Law covered", value: "Deer Act 1991 (England and Wales), Deer (Scotland) Act 1996" },
+      { label: "Also assessed", value: "Rifle shooting test and a field assessment" },
+      { label: "Scotland", value: "No close season for male deer since October 2023" },
+    ],
+    basedOn: "DMQ's Deer Stalking Certificate Level 1 page, the Deer Act 1991, the Deer (Scotland) Act 1996 and the FSA wild game guidance, checked November 2026",
+    source: { name: "Deer Management Qualifications: Deer Stalking Certificate Level 1", url: "https://dmq.org.uk/qualifications/deer-stalking-qualification-1/" },
   },
   ukwater: {
     answer:
@@ -4038,6 +4067,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Transport Malta's licensing guidance and the Highway Code of Malta (updated 25 July 2025), checked November 2026",
     source: { name: "Transport Malta: Obtaining your driving licence", url: "https://www.transport.gov.mt/land/licence/obtaining-your-driving-licence-786" },
   },
+  chtheory: {
+    answer:
+      "The Swiss basic theory test (Basis-Theorieprüfung) is the first test for a learner licence in category B (car) and categories A1 and A, taken at your canton's road traffic office. English is offered for this test only, alongside German, French and Italian. As the Aargau office describes it, there are 50 questions on a computer in 45 minutes out of 150 points, and you may collect at most 15 error points; Zurich's page lists 55 questions and 17 errors, the same 10%. Each question scores 1 to 3 error points and some have more than one right answer. If you fail, you can retake it after at least one day.",
+    rows: [
+      { label: "Run by", value: "Cantonal road traffic offices (Strassenverkehrsämter)" },
+      { label: "Questions", value: "About 50, three options, one or two right" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass rule", value: "At most 15 error points of 150 (Zurich lists 17)" },
+      { label: "Languages", value: "German, French, Italian and English" },
+      { label: "Who sits it", value: "First-time learner licence applicants (A1, A, B)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 45 to pass" },
+      { label: "Study material", value: "SVG, VRV and SSV (federal traffic law)" },
+    ],
+    basedOn: "the cantonal road traffic office pages of Zurich and Aargau and the Swiss federal road traffic law (SVG, VRV, SSV), checked November 2026",
+    source: { name: "Canton of Zurich: Theorieprüfung", url: "https://www.zh.ch/de/mobilitaet/fuehrerausweis-fahren-lernen/fahren-lernen/theoriepruefung.html" },
+  },
   mtmoto: {
     answer:
       "The Malta motorcycle theory test is Transport Malta's theory test for a moped or motorcycle licence in categories AM, A1, A2 and A, taken on a touch-screen computer at the Theory Test Centre. Transport Malta gives the theory test as 35 multiple-choice questions in 45 minutes, with 30 correct to pass, in English or Maltese. Malta's driving licence regulations add compulsory questions for motorcycle categories on protective clothing and helmets, how visible riders are, slippery surfaces such as drain covers and road markings, and the engine cut-out switch, oil and chain. For category AM the theory test is the whole test; for A1, A2 and A a practical test follows.",
@@ -5204,6 +5249,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "LTA's OneMotoring vocational licence application and renewal pages and the course providers' published paper outlines, checked November 2026",
     source: { name: "OneMotoring (LTA): Vocational Licence Application", url: "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/vocational_licence/vocational_licence_application.html" },
   },
+  sgsnb: {
+    answer:
+      "The Singapore Nursing Board (SNB) Registered Nurse Licensure Examination is the test foreign-trained nurses sit before they can register as a registered nurse in Singapore. It is a computer-based multiple-choice exam, delivered at Pearson VUE test centres since 28 November 2024, with 60 minutes on the clock and an on-screen calculator. Applications are made by the nurse's employing Singapore healthcare institution through SNB's portal, not by the nurse. Each candidate has two attempts. SNB publishes a test plan listing four core competencies and their categories, but it does not publish the number of questions, the weights or the pass mark.",
+    rows: [
+      { label: "Core competencies", value: "Legal and ethical practice; professional nursing practice; collaborative practice and teamwork; continuing professional education" },
+      { label: "Format", value: "Computer-based multiple choice at a Pearson VUE test centre" },
+      { label: "Time", value: "60 minutes, with an on-screen calculator" },
+      { label: "Questions and pass mark", value: "Not published; 70% is Tigertest's readiness target" },
+      { label: "Attempts", value: "Two attempts per candidate" },
+      { label: "Applied for by", value: "The employing healthcare institution, through SNB's portal" },
+      { label: "Run by", value: "Singapore Nursing Board; delivered by Pearson VUE" },
+    ],
+    basedOn: "SNB RN Licensure Examination test plan (April 2026), SNB's licensure examination and CBT FAQ pages, and the Code for Nurses and Midwives (2018), checked November 2026",
+    source: { name: "Singapore Nursing Board: SNB Licensure Examinations", url: "https://www.snb.gov.sg/for-professionals/becoming-a-nurse-or-midwife/apply-for-registration-enrolment/snb-licensure-examinations/" },
+  },
   jeemain: {
     answer:
       "JEE (Main) Paper 1 is the National Testing Agency's computer-based entrance test for B.E. and B.Tech. admission to NITs, IIITs and other centrally funded institutes, and the qualifying test for JEE (Advanced). It has 75 questions for 300 marks in 3 hours: 25 each in Mathematics, Physics and Chemistry, of which 20 are multiple choice (Section A) and 5 need a numerical value typed as an integer (Section B). Every answer earns 4 marks if correct and loses 1 if wrong, in both sections. For 2027 it is held in two sessions, January and April, and the better NTA score counts.",
@@ -6218,6 +6278,35 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NZQA unit standards 4646 v11 and 16705 v7 (March 2023), checked November 2026",
     source: { name: "NZQA: unit standard 16705", url: "https://www.nzqa.govt.nz/nqfdocs/units/pdf/16705.pdf" },
   },
+  aerera: {
+    answer:
+      "In Dubai, nobody may work as a real estate broker unless licensed by the competent entities and entered in the Real Estate Brokers Register kept under Bylaw No. (85) of 2006. The Bylaw lists, among the registration documents, certificates from accredited real estate training courses and a certificate that the applicant passed the real estate brokerage test prepared by the Dubai Land Department. The Real Estate Regulatory Agency (RERA) regulates brokers and issues the broker card through the Trakheesi system, and the Dubai Real Estate Institute (DREI) runs the certified training. The Land Department does not publish the test's question count, time or pass mark on any page we could read, so Tigertest's mock tests use 50 questions and a 70% target.",
+    rows: [
+      { label: "Questions", value: "Not published by the Dubai Land Department" },
+      { label: "Pass mark", value: "Not published; 70% is Tigertest's target" },
+      { label: "Before the test", value: "Accredited real estate broker training (DREI)" },
+      { label: "Needed for", value: "Broker registration and the broker card (Trakheesi)" },
+      { label: "Exemptions", value: "Listed on the card service: over 55, or 5 consecutive years in the same office" },
+      { label: "Also needed", value: "Trade licence, Dubai Police good conduct certificate, Emirates ID" },
+      { label: "Run by", value: "Dubai Land Department and RERA, Dubai" },
+    ],
+    basedOn: "Bylaw No. (85) of 2006 and the Dubai Land Department's real estate legislation, and RERA's Real Estate Brokerage Practice Guide (second edition, November 2024), checked November 2026",
+    source: { name: "Dubai Land Department: Real Estate Brokerage Practice Guide 2024", url: "https://dubailand.gov.ae/media/i31iv1n0/real_estate_brokerage_practice_guide_2024.pdf" },
+  },
+  nzrealestate: {
+    answer:
+      "To work as a real estate salesperson in New Zealand you need a licence from the Real Estate Authority (REA, Te Mana Papawhenua), and the qualification REA accepts for a salesperson licence is the New Zealand Certificate in Real Estate (Salesperson) (Level 4), 50 credits, offered by approved providers such as REINZ, Skills Institute, Strategi, Open Polytechnic and Toi Ohomai. You must also be at least 18, a fit and proper person and consent to a criminal conviction history check. A salesperson must be supervised by a licensed agent or branch manager. Training providers write and mark their own assessments, and no national question count or pass mark is published, so Tigertest's mock tests use an 80% readiness target.",
+    rows: [
+      { label: "Qualification", value: "New Zealand Certificate in Real Estate (Salesperson) (Level 4), NZQA reference 3111, 50 credits" },
+      { label: "Assessment", value: "Set by the approved provider; no national question count or pass mark" },
+      { label: "Licence", value: "Real Estate Authority (REA), under the Real Estate Agents Act 2008" },
+      { label: "Minimum age", value: "18" },
+      { label: "Also needed", value: "Fit and proper person; conviction history check; supervision by an agent or branch manager" },
+      { label: "Recent qualification", value: "Usable if gained less than three years ago; otherwise show the Registrar sufficient knowledge" },
+    ],
+    basedOn: "Real Estate Agents Act 2008, the Professional Conduct and Client Care Rules 2012 and Real Estate Authority guidance, checked November 2026",
+    source: { name: "REA: required criteria and qualifications to work in real estate", url: "https://www.rea.govt.nz/real-estate-professionals/apply-for-your-licence/required-criteria-and-qualifications-to-work-in-real-estate/" },
+  },
   aesira: {
     answer:
       "In Dubai, anyone who works as a security guard needs an individual licence from the Security Industry Regulatory Agency (SIRA), under Law No. (12) of 2016. The executive regulation issued in June 2026 requires the applicant to be at least 18, hold valid UAE residence if not a UAE national, know the basics of Arabic or English, be of good conduct, and pass the theoretical and practical tests SIRA approves, usually after a basic course at a SIRA-accredited training centre. SIRA does not publish the written test's length or pass mark; guides say about 60 multiple-choice questions in English or Arabic, with about 70% commonly reported as the pass mark. The licence lasts two years.",
@@ -6278,5 +6367,49 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
     source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
+  },
+  iehcap: {
+    answer:
+      "HCAP, the Hunter Competence Assessment Programme, is Ireland's deer hunter certification run by the Deer Alliance HCAP Assessment Committee. NPWS lists it as one of three approved courses for first-time Deer Hunting Licence applicants, and the Deer Alliance says Coillte requires HCAP or an equivalent for hunting deer on its forests. The first stage is a written multiple-choice test of 50 questions, and you need 40 correct (80%). Candidates who pass go on to a Range Test at 100 metres and then an oral safety examination. The Stalker Training Manual is the core text, and the written test covers deer biology and species, management, rifles and firearms safety, the law and carcase handling.",
+    rows: [
+      { label: "Run by", value: "Deer Alliance HCAP Assessment Committee" },
+      { label: "Written stage", value: "50 multiple-choice questions" },
+      { label: "Pass mark", value: "40 of 50 (80%)" },
+      { label: "Then", value: "Range Test (100 m) and an oral safety examination" },
+      { label: "Accepted for", value: "A first NPWS Deer Hunting Licence, and Coillte deer hunting" },
+      { label: "Core text", value: "HCAP Stalker Training Manual" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 40 to pass" },
+    ],
+    basedOn: "Deer Alliance HCAP certification procedure, the HCAP Stalker Manual contents and the NPWS deer hunting licence pages, checked November 2026",
+    source: { name: "Deer Alliance: HCAP certification", url: "https://www.deeralliance.ie/certification" },
+  },
+  hknurse: {
+    answer:
+      "The Nursing Council of Hong Kong can require nurses trained outside Hong Kong to pass its Licensing Examination before they register as registered nurses (general) under the Nurses Registration Ordinance. It has a written part and a practical part, with no exemption for either, and the written part must be passed first. The Council's Candidates' Handbook (September 2018) describes the written part as 200 marks over one day with a passing mark of 100, and both Paper A (Medical English) and Paper B must be passed. Paper B's multiple-choice marks cover psychology, basic nursing care and system nursing care, then anatomy and physiology, food and nutrition, primary health care, personal and communal health, microbiology, first aid and pharmacology. Tigertest practises those multiple-choice topics only.",
+    rows: [
+      { label: "Written part", value: "200 marks, passing mark 100, one day" },
+      { label: "Papers", value: "Medical English, multiple choice, essay and specialty questions" },
+      { label: "Both papers", value: "Paper A and Paper B must each be passed" },
+      { label: "Languages", value: "Chinese or English" },
+      { label: "Then", value: "Practical part: health assessment, medication, aseptic technique" },
+      { label: "Run by", value: "Nursing Council of Hong Kong" },
+    ],
+    basedOn: "The Council's Candidates' Handbook for Nursing Council Licensing Examinations (September 2018) and its 2025 RN(G) syllabus, checked November 2026",
+    source: { name: "Nursing Council of Hong Kong: Candidates' Handbook", url: "https://www.nchk.org.hk/filemanager/en/pdf/Candidates_Handbook_for_Nursing_Council_Licensing_Exam_eng.pdf" },
+  },
+  cacore: {
+    answer:
+      "The CORE (Conservation and Outdoor Recreation Education) exam is the hunter education requirement for a first British Columbia hunting licence. The program is run by the BC Wildlife Federation for the BC government and has a written exam and a practical firearms handling exam. The written exam is 90 multiple-choice questions based on the CORE Manual and the Hunting and Trapping Regulations Synopsis, and you need at least 68 points to pass. The practical test, in which you handle two of the five firearm action types, is passed with 23 out of 30, and holders of a Canadian Firearms Safety Course report are exempt from it.",
+    rows: [
+      { label: "Run by", value: "BC Wildlife Federation, for the BC government" },
+      { label: "Written exam", value: "90 multiple-choice questions" },
+      { label: "Pass mark", value: "At least 68 points (about 76%)" },
+      { label: "Practical firearms test", value: "23 out of 30; a CFSC report is exempt" },
+      { label: "Topics", value: "Conservation, ethics, law and regulations, first aid and survival, firearm safety, animal and bird identification, Indigenous peoples and hunting in BC" },
+      { label: "Study from", value: "CORE Manual and the Hunting & Trapping Regulations Synopsis" },
+      { label: "How to take it", value: "In-person course or exam with a certified CORE examiner, or the BCWF online course" },
+    ],
+    basedOn: "the BC Wildlife Federation CORE program page, checked November 2026",
+    source: { name: "BC Wildlife Federation: CORE", url: "https://www.bcwf.bc.ca/core/" },
   },
 };

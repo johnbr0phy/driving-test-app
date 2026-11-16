@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
+export type ExamId = "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -7926,6 +7926,409 @@ const ea1: ExamConfig = {
   },
 };
 // IDs: tests 31401-31404, sets 31401-31405 (block 31400 assigned for this run).
+
+const sgsnb: ExamConfig = {
+  id: "sgsnb",
+  stateCode: "SGSNB",
+  idBase: 32100,
+  slug: "/singapore-snb-rn-exam",
+  landingPath: "/singapore-snb-rn-licensure-exam-practice-test",
+  name: "SNB RN Licensure Exam Practice Test",
+  shortName: "SNB RN Exam",
+  examLabel: "RN Licensure Examination",
+  fullName: "Singapore Nursing Board Registered Nurse Licensure Examination (SNB RN LE)",
+  questionIdPrefix: "SGSNB-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // SNB RN Licensure Examination test plan (April 2026 PDF, go.gov.sg/snb-rn-le-test-plan-and-sample-qns):
+  // four core competencies (legal and ethical practice, professional nursing practice with 20 categories,
+  // collaborative practice and teamwork, CPE) with no published weights. This split of the plan's
+  // categories into ten topics is Tigertest's, and 70% is a readiness target: SNB publishes no pass mark.
+  // All items original; Code for Nurses and Midwives (April 2018) for law and ethics.
+  blueprint: {
+    sgsnbLegal: 6,
+    sgsnbQuality: 5,
+    sgsnbAssess: 4,
+    sgsnbSafety: 5,
+    sgsnbMeds: 7,
+    sgsnbFluids: 4,
+    sgsnbEmergency: 5,
+    sgsnbSurgical: 5,
+    sgsnbMental: 5,
+    sgsnbTeam: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 32101, name: "Law, Ethics & Quality Care", categories: ["sgsnbLegal","sgsnbQuality"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 32102, name: "Assessment, Safety & Infection Control", categories: ["sgsnbAssess","sgsnbSafety"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 32103, name: "Medications, Fluids & Elimination", categories: ["sgsnbMeds","sgsnbFluids"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 32104, name: "Emergency, Surgical & Wound Care", categories: ["sgsnbEmergency","sgsnbSurgical"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 32105, name: "Mental Health, Older Adults & Teamwork", categories: ["sgsnbMental","sgsnbTeam"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgsnbLegal: "Law, Ethics & Culturally Safe Care",
+    sgsnbQuality: "Quality, Communication & Client Education",
+    sgsnbAssess: "Client Assessment & Reassessment",
+    sgsnbSafety: "Safety, Infection Control & Comfort",
+    sgsnbMeds: "Medications & Pharmacology",
+    sgsnbFluids: "Fluids, Nutrition & Elimination",
+    sgsnbEmergency: "Medical Emergencies & Respiratory Care",
+    sgsnbSurgical: "Surgical, Wound & Diabetes Care",
+    sgsnbMental: "Mental Health, Elder & End-of-Life Care",
+    sgsnbTeam: "Teamwork, Delegation & Professional Development",
+  },
+  copy: {
+    guestPrompt: "to save your SNB RN exam progress and track every question you miss",
+    trainingHeading: "Practise each topic",
+    trainingSub: "Five topic sets that follow the SNB test plan. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 70% readiness line",
+    heroSubs: [
+      "Five practice sets, four practice tests. Start with Law, Ethics & Quality Care.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You are ready for the SNB RN Licensure Examination.",
+    ],
+    sourceLine: "Based on the SNB RN Licensure Examination test plan and the Code for Nurses and Midwives. Original questions; the 50-question format and the 70% line are Tigertest's. Not affiliated with the Singapore Nursing Board or Pearson VUE.",
+    analyticsKey: "sgsnb",
+  },
+};
+
+const ukdsc1: ExamConfig = {
+  id: "ukdsc1",
+  stateCode: "UKDSC1",
+  idBase: 31700,
+  slug: "/deer-stalking-certificate",
+  landingPath: "/dsc1-practice-test",
+  name: "DSC1 Practice Test",
+  shortName: "DSC1",
+  examLabel: "DSC1 written test",
+  fullName: "Deer Stalking Certificate Level 1 (DSC1) written test (Deer Management Qualifications)",
+  questionIdPrefix: "UKDSC-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // DSC1, the Deer Stalking Certificate Level 1 awarded by Deer Management Qualifications (DMQ), checked
+  // November 2026: the written paper is 50 multiple-choice questions from DMQ's question bank, 40 to pass
+  // (80%), and the game meat hygiene paper is 40 questions, 32 to pass. DMQ publishes no topic weights, so
+  // the split over its syllabus areas (biology and ecology, identification, law, safety, stalking technique
+  // and shot placement, large game hygiene) is Tigertest's. Law is Deer Act 1991 (England and Wales), with
+  // the Scottish Act and orders stated where they differ. Visual identification, the safety walk and the
+  // live-fire shooting test are not modelled.
+  blueprint: {
+    ukdscBiology: 8,
+    ukdscId: 6,
+    ukdscLaw: 10,
+    ukdscSafety: 8,
+    ukdscShot: 7,
+    ukdscHygiene: 11,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 31701, name: "Deer Biology & Identification", categories: ["ukdscBiology","ukdscId"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 31702, name: "Deer Law & Close Seasons", categories: ["ukdscLaw"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 31703, name: "Firearms, Safety & Shot Placement", categories: ["ukdscSafety","ukdscShot"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 31704, name: "Carcass Handling & Hygiene", categories: ["ukdscHygiene"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ukdscBiology: "Deer Biology & Ecology",
+    ukdscId: "Identifying the Six Species",
+    ukdscLaw: "Deer Law & Close Seasons",
+    ukdscSafety: "Firearms, Ammunition & Safety",
+    ukdscShot: "Shot Placement & Follow Up",
+    ukdscHygiene: "Carcass Handling & Large Game Hygiene",
+  },
+  copy: {
+    guestPrompt: "to save your DSC1 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four topic sets, from deer biology and the Deer Act to shot placement and carcass hygiene. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every DSC1 topic, 80% to pass",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Deer Biology & Identification.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed. The real written paper needs 80%.",
+      "All done. Book your DSC1 assessment day.",
+    ],
+    sourceLine: "Based on the DMQ DSC1 syllabus, the Deer Act 1991, the Deer (Scotland) Act 1996, the Deer Initiative best practice guides and the FSA Wild Game Guidance, checked November 2026. Original questions.",
+    analyticsKey: "ukdsc1",
+  },
+};
+
+const hknurse: ExamConfig = {
+  id: "hknurse",
+  stateCode: "HKNURSE",
+  idBase: 32200,
+  slug: "/hk-nursing-licensing",
+  landingPath: "/hk-nursing-licensing-exam-practice-test",
+  name: "Hong Kong Nursing Licensing Exam Practice Test",
+  shortName: "HK Nursing Exam",
+  examLabel: "Licensing Examination",
+  fullName: "Nursing Council of Hong Kong Licensing Examination, registered nurse (general), written part",
+  questionIdPrefix: "HKNURSE-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // Nursing Council of Hong Kong Candidates' Handbook (September 2018), Appendix A: the written part
+  // for Part I (General) Registration has Paper A (Medical English), Paper B(I) multiple choice (60
+  // marks: psychology, basic nursing care, system nursing care) and Paper B(II) (multiple choice 40
+  // marks on anatomy and physiology, nutrition, primary health care, personal and communal health,
+  // microbiology, first aid and pharmacology, plus essay and specialty questions). The Council gives
+  // no per-topic counts, so this split, drawn from the topics in its 2025 RN(G) syllabus, is Tigertest's.
+  // The real written part is passed at 100 of 200 marks with both papers passed; 60% here is a
+  // readiness margin above that. Paper A, the essays and the practical part are not modelled.
+  blueprint: {
+    hknPsych: 3,
+    hknLaw: 3,
+    hknBasic: 7,
+    hknCardioResp: 4,
+    hknDigestEndo: 4,
+    hknNeuroMsk: 4,
+    hknPeriop: 3,
+    hknLifespan: 4,
+    hknFirstAid: 3,
+    hknAnatomy: 4,
+    hknNutrition: 2,
+    hknPublicHealth: 3,
+    hknMicro: 3,
+    hknPharm: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 32201, name: "Professional Practice & Basic Care", categories: ["hknPsych", "hknLaw", "hknBasic"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 32202, name: "Body Systems & Medical-Surgical Care", categories: ["hknCardioResp", "hknDigestEndo", "hknNeuroMsk"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 32203, name: "Peri-operative, Life-span & First Aid", categories: ["hknPeriop", "hknLifespan", "hknFirstAid"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 32204, name: "Sciences, Pharmacology & Public Health", categories: ["hknAnatomy", "hknNutrition", "hknPublicHealth", "hknMicro", "hknPharm"], size: 60, weightLabel: "15 of 50 test questions" },
+  ],
+  categoryLabels: {
+    hknPsych: "Psychology & Communication",
+    hknLaw: "Law, Ethics & Professional Practice",
+    hknBasic: "Basic Nursing Care & Infection Control",
+    hknCardioResp: "Cardiovascular & Respiratory Nursing",
+    hknDigestEndo: "Digestive, Renal & Endocrine Nursing",
+    hknNeuroMsk: "Neurological, Musculoskeletal & Sensory Nursing",
+    hknPeriop: "Peri-operative, Emergency & Palliative Care",
+    hknLifespan: "Child, Maternal, Older Adult & Mental Health Nursing",
+    hknFirstAid: "First Aid",
+    hknAnatomy: "Anatomy & Physiology",
+    hknNutrition: "Food & Nutrition",
+    hknPublicHealth: "Public Health & Primary Health Care",
+    hknMicro: "Microbiology",
+    hknPharm: "Pharmacology",
+  },
+  copy: {
+    guestPrompt: "to save your Licensing Examination progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the written-part topics of the Nursing Council's Licensing Examination. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 60% readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Professional Practice & Basic Care.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the multiple-choice papers.",
+    ],
+    sourceLine: "Based on the Nursing Council of Hong Kong's Licensing Examination Candidates' Handbook and its 2025 RN(G) syllabus. Original questions; the topic split and the 60% line are Tigertest's. Not affiliated with the Nursing Council of Hong Kong.",
+    analyticsKey: "hknurse",
+  },
+};
+
+const bcrealestate: ExamConfig = {
+  id: "bcrealestate",
+  stateCode: "BCRE",
+  idBase: 32300,
+  slug: "/bc-real-estate-exam",
+  landingPath: "/bc-real-estate-licensing-exam-practice-test",
+  name: "BC Real Estate Exam Practice Test",
+  shortName: "BC real estate exam",
+  examLabel: "BC trading services exam",
+  fullName: "British Columbia Real Estate Trading Services Licensing Exam (UBC Sauder, BCFSA)",
+  questionIdPrefix: "BCRE-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // UBC Sauder Real Estate Division, Real Estate Trading Services Licensing Course (checked November 16, 2026):
+  // the final exam is 100 multiple-choice questions in 3 hours, one mark each, pass grade 70%. UBC and BCFSA
+  // publish no chapter list or weights, so the split is Tigertest's: the Real Estate Services Act and Rules
+  // (licensing, agency duties and disclosure, contracts and advertising, trust accounts and records), land law
+  // (Land Title Act, Property Law Act, Law and Equity Act s. 59), strata and development sales (Strata Property
+  // Act, Real Estate Development Marketing Act, the home buyer rescission regulation), and the mortgage finance
+  // and valuation arithmetic the UBC handbook says the course needs. BC Laws consolidations current to
+  // November 10, 2026. No fees, commission rates or tax rates. All items original.
+  blueprint: {
+    bcreLicensing: 6,
+    bcreDuties: 8,
+    bcreContracts: 6,
+    bcreTrust: 5,
+    bcreLand: 7,
+    bcreStrata: 7,
+    bcreFinance: 6,
+    bcreValuation: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 32301, name: "Licensing & Agency Duties", categories: ["bcreLicensing", "bcreDuties"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 32302, name: "Contracts & Trust Accounts", categories: ["bcreContracts", "bcreTrust"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 32303, name: "Land Title & Strata", categories: ["bcreLand", "bcreStrata"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 32304, name: "Mortgages & Valuation", categories: ["bcreFinance", "bcreValuation"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bcreLicensing: "Licensing & the Real Estate Services Act",
+    bcreDuties: "Agency Duties & Disclosure",
+    bcreContracts: "Contracts, Offers & Advertising",
+    bcreTrust: "Trust Accounts & Records",
+    bcreLand: "Land Title & Ownership",
+    bcreStrata: "Strata & Development Sales",
+    bcreFinance: "Mortgage Finance",
+    bcreValuation: "Valuation & Measurement",
+  },
+  copy: {
+    guestPrompt: "to save your BC real estate exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets from the Real Estate Services Act to mortgage math. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Licensing & Agency Duties.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the BC trading services exam.",
+    ],
+    sourceLine: "Based on the Real Estate Services Act and Rules, the Land Title, Property Law, Strata Property and Real Estate Development Marketing Acts, and the UBC Sauder trading services course exam format. Original questions; 50 per test. Not affiliated with UBC or BCFSA.",
+    analyticsKey: "bcrealestate",
+  },
+};
+
+const aerera: ExamConfig = {
+  id: "aerera",
+  stateCode: "AERERA",
+  idBase: 32400,
+  slug: "/rera-broker-exam",
+  landingPath: "/rera-broker-exam-practice-test",
+  name: "RERA Broker Exam Practice Test",
+  shortName: "RERA Broker",
+  examLabel: "Dubai RERA broker exam",
+  fullName: "Dubai RERA real estate broker certification exam",
+  questionIdPrefix: "AERERA-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Dubai Land Department and RERA: Bylaw No. (85) of 2006 (Real Estate Brokers Register), Law No. (7) of
+  // 2006, Law No. (16) of 2007, Law No. (8) of 2007, Law No. (26) of 2007 as amended by Law No. (33) of 2008,
+  // Law No. (27) of 2007, Law No. (13) of 2008 as amended by Law No. (9) of 2009, Decree No. (26) of 2013, and
+  // the RERA Real Estate Brokerage Practice Guide (second edition, November 2024). The Department prepares
+  // the broker test (Bylaw 85, Art. 6) but publishes no count, time, weights or pass mark; Tigertest's
+  // blueprint follows the Bylaw's registration and conduct chapters and the property laws brokers deal with:
+  // land 5, register 6, duties 6, agreements 7, off-plan 7, practice 4, maths 3, leasing 7, joint 5.
+  // 70% is Tigertest's target.
+  blueprint: {
+    aereraLand: 5,
+    aereraRegister: 6,
+    aereraDuties: 6,
+    aereraAgreements: 7,
+    aereraOffPlan: 7,
+    aereraPractice: 4,
+    aereraMaths: 3,
+    aereraLeasing: 7,
+    aereraJoint: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 32401, name: "Land Law & the Broker Register", categories: ["aereraLand", "aereraRegister"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 32402, name: "Broker Duties & Agreements", categories: ["aereraDuties", "aereraAgreements"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 32403, name: "Off-Plan, RERA Rules & Maths", categories: ["aereraOffPlan", "aereraPractice", "aereraMaths"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 32404, name: "Leasing & Jointly Owned Property", categories: ["aereraLeasing", "aereraJoint"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aereraLand: "Land Registration & the Land Department",
+    aereraRegister: "The Broker Register & Registration",
+    aereraDuties: "Broker Duties & Professional Ethics",
+    aereraAgreements: "Brokerage Agreements & Remuneration",
+    aereraOffPlan: "Off-Plan Sales, Escrow & Marketing",
+    aereraPractice: "RERA Systems & Practice Rules",
+    aereraMaths: "Real Estate Maths",
+    aereraLeasing: "Landlord & Tenant Law",
+    aereraJoint: "Jointly Owned Property",
+  },
+  copy: {
+    guestPrompt: "to save your RERA broker progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on what Dubai brokers need: land registration and the broker register, duties and brokerage agreements, off-plan sales and RERA rules, and leasing and jointly owned property. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Four topic sets, four mock tests. Start with Land Law & the Broker Register.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Book your broker exam with the Dubai Land Department.",
+    ],
+    sourceLine: "Based on Dubai Land Department legislation (Bylaw No. (85) of 2006 and the property laws brokers work under) and RERA's Real Estate Brokerage Practice Guide (2024). Original questions; 50 per test, 70% is Tigertest's target. Not affiliated with the Dubai Land Department, RERA or DREI.",
+    analyticsKey: "aerera",
+  },
+};
+
+const cacore: ExamConfig = {
+  id: "cacore",
+  stateCode: "CACORE",
+  idBase: 31900,
+  slug: "/bc-core-hunter-exam",
+  landingPath: "/bc-core-hunter-exam-practice-test",
+  name: "BC CORE Hunter Exam Practice Test",
+  shortName: "BC CORE exam",
+  examLabel: "BC CORE hunter exam",
+  fullName: "British Columbia CORE (Conservation and Outdoor Recreation Education) hunter exam",
+  questionIdPrefix: "CACORE-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 76,
+  // BC Wildlife Federation CORE program page (bcwf.bc.ca/core, checked 2026-11-16): the written exam is 90
+  // multiple-choice questions based on the CORE Manual and the Hunting and Trapping Regulations Synopsis, 68
+  // points to pass (about 76%). BCWF publishes no topic weights and the CORE Manual and the gov.bc.ca
+  // Synopsis could not be read, so every item rests on a primary page that was: the Wildlife Act, the Wildlife
+  // Act General Regulation and the Hunting Regulation (B.C. Reg. 190/84) on bclaws, the federal Firearms Act,
+  // SOR/98-209 and the Migratory Birds Regulations, 2022, Constitution Act 1982 s. 35 and HealthLinkBC's cold,
+  // shock and dehydration pages. BCWF's ethics, conservation and animal and bird identification topics are not
+  // modelled for lack of an official source. Counts are Tigertest's. Four tests of 50. All items original.
+  blueprint: {
+    cacoreLaw: 12,
+    cacoreRegs: 15,
+    cacoreSafety: 10,
+    cacoreBirds: 7,
+    cacoreSurvival: 4,
+    cacoreIndigenous: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 31901, name: "Wildlife Act & General Regulation", categories: ["cacoreLaw"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 31902, name: "Hunting Regulation: Weapons & Methods", categories: ["cacoreRegs"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 31903, name: "Firearm Law, Storage & Transport", categories: ["cacoreSafety"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 31904, name: "Game Birds, First Aid & Aboriginal Rights", categories: ["cacoreBirds", "cacoreSurvival", "cacoreIndigenous"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cacoreLaw: "Wildlife Act & Hunter Duties",
+    cacoreRegs: "Hunting Regulation: Weapons & Methods",
+    cacoreSafety: "Firearm Law, Storage & Transport",
+    cacoreBirds: "Game Birds & Migratory Bird Rules",
+    cacoreSurvival: "First Aid for Cold, Shock & Dehydration",
+    cacoreIndigenous: "Aboriginal Rights & Hunting",
+  },
+  copy: {
+    guestPrompt: "to save your CORE exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on the law behind the CORE exam: the Wildlife Act, the Hunting Regulation, firearm storage and transport, and game birds with first aid and Aboriginal rights. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across the CORE law topics, aim for 38",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with the Wildlife Act & General Regulation.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Read this year's Synopsis and book your CORE exam with an examiner.",
+    ],
+    sourceLine: "Based on the Wildlife Act, the Hunting Regulation, federal firearms and migratory bird rules and the CORE topics BC Wildlife Federation lists, as of November 2026. Original questions; ethics, conservation, animal identification and the practical firearms test are not modelled. Not affiliated with the BC Wildlife Federation or the Province of British Columbia.",
+    analyticsKey: "cacore",
+  },
+};
 
 const htl: ExamConfig = {
   id: "htl",
@@ -21474,7 +21877,213 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, htl, cst, crcst];
+const iehcap: ExamConfig = {
+  id: "iehcap",
+  stateCode: "IEHCAP",
+  idBase: 31600,
+  slug: "/hcap",
+  landingPath: "/hcap-practice-test",
+  name: "HCAP Practice Test",
+  shortName: "HCAP deer hunter test",
+  examLabel: "HCAP test",
+  fullName: "Hunter Competence Assessment Programme, deer hunting competence (Ireland)",
+  questionIdPrefix: "HCAP-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Ireland: Deer Alliance HCAP, one of the three courses NPWS approves for first-time Deer Hunting
+  // Licence applicants. The written stage is 50 multiple-choice questions, 40 correct (80%), drawn from
+  // a bank of about 300 (Deer Alliance certification procedure, read Nov 2026); the Range Test and oral
+  // safety examination are not modelled. No topic weights are published: Tigertest's blueprint follows
+  // the twelve chapters of the HCAP Stalker Manual: species 7, biology 7, management 8, rifles 5,
+  // firearms safety 7, law 8, carcase handling 4, forestry and habitats 4.
+  blueprint: {
+    hcapSpecies: 7,
+    hcapBiology: 7,
+    hcapManagement: 8,
+    hcapRifle: 5,
+    hcapFirearms: 7,
+    hcapLaw: 8,
+    hcapCarcase: 4,
+    hcapHabitat: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 31601, name: "Deer Management & Biology", categories: ["hcapManagement", "hcapBiology"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 31602, name: "Irish Deer Species & Habitat", categories: ["hcapSpecies", "hcapHabitat"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 31603, name: "Rifles, Firearms & Field Safety", categories: ["hcapRifle", "hcapFirearms"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 31604, name: "Deer Hunting Law & Carcase Handling", categories: ["hcapLaw", "hcapCarcase"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    hcapSpecies: "Irish Deer Species & Identification",
+    hcapBiology: "Deer Biology, Antlers & the Rut",
+    hcapManagement: "Principles of Deer Management",
+    hcapRifle: "Rifles, Ballistics & Shot Placement",
+    hcapFirearms: "Firearms Safety & Storage",
+    hcapLaw: "Deer Hunting & the Law",
+    hcapCarcase: "Carcase Handling & Food Safety",
+    hcapHabitat: "Forestry, Habitats & Conservation",
+  },
+  copy: {
+    guestPrompt: "to save your HCAP progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets over the HCAP Stalker Manual: deer management and biology, Irish deer species and habitat, rifles, firearms and field safety, and deer hunting law and carcase handling. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 40 to pass",
+    heroSubs: [
+      "Four topic sets, four mock tests. Start with Deer Management & Biology.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Ready for the HCAP written test.",
+    ],
+    sourceLine: "Based on the twelve chapters of the HCAP Stalker Manual, the Wildlife Acts, the Firearms Acts and FSAI wild game guidance. Original questions; 50 per test, 40 to pass like the real multiple-choice stage. Not affiliated with the Deer Alliance, NPWS or Coillte.",
+    analyticsKey: "iehcap",
+  },
+};
+
+
+const nzrealestate: ExamConfig = {
+  id: "nzrealestate",
+  stateCode: "NZRE",
+  idBase: 32500,
+  slug: "/nz-real-estate",
+  landingPath: "/nz-real-estate-salesperson-practice-test",
+  name: "NZ Real Estate Salesperson Practice Test",
+  shortName: "NZ Real Estate",
+  examLabel: "NZ real estate salesperson assessments",
+  fullName: "New Zealand Certificate in Real Estate (Salesperson) (Level 4)",
+  questionIdPrefix: "NZRE-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // The knowledge behind NZQA qualification 3111, the New Zealand Certificate in Real Estate (Salesperson)
+  // (Level 4, 50 credits), which the Real Estate Authority requires for a salesperson licence. Approved
+  // providers write and mark their own assessments and no national question count or pass mark is
+  // published, so 50 questions and 80% are Tigertest's readiness target. Written from the Real Estate
+  // Agents Act 2008 (REA-hosted copy, version as at 28 October 2021), the Professional Conduct and Client
+  // Care Rules 2012 and REA's guidance. Per test: licensing 5, conduct 6, discipline 4, agency agreements 7,
+  // disclosure 6, money and documents 3, sale and purchase 6, tenure and leases 3, council and building 4,
+  // other laws 4, marketing practice 2. Original items; the split is Tigertest's (no official weights).
+  blueprint: {
+    nzreLicensing: 5,
+    nzreConduct: 6,
+    nzreDiscipline: 4,
+    nzreAgency: 7,
+    nzreDisclosure: 6,
+    nzreMoney: 3,
+    nzreSale: 6,
+    nzreTenure: 3,
+    nzreCouncil: 4,
+    nzreOtherLaw: 4,
+    nzreMarketing: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 32501, name: "Licensing & Professional Conduct", categories: ["nzreLicensing", "nzreConduct", "nzreDiscipline"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 32502, name: "Agency, Disclosure & Marketing", categories: ["nzreAgency", "nzreDisclosure", "nzreMarketing"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 32503, name: "Sale, Money & Tenure", categories: ["nzreSale", "nzreMoney", "nzreTenure"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 32504, name: "Council & Other Laws", categories: ["nzreCouncil", "nzreOtherLaw"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nzreLicensing: "Licensing & Who May Do Agency Work",
+    nzreConduct: "Code of Conduct & Client Care",
+    nzreDiscipline: "Complaints & Discipline",
+    nzreAgency: "Agency Agreements & Commission",
+    nzreDisclosure: "Disclosure, Defects & Conflicts",
+    nzreMoney: "Money, Trust Accounts & Documents",
+    nzreSale: "Sale & Purchase Agreements",
+    nzreTenure: "Title, Tenure & Leases",
+    nzreCouncil: "Council, Building & Planning",
+    nzreOtherLaw: "Other Laws Licensees Meet",
+    nzreMarketing: "Marketing & Sales Practice",
+  },
+  copy: {
+    guestPrompt: "to save your real estate progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets: licensing and conduct, agency agreements and disclosure, sale and purchase, and council and other law. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests \u00b7 50 questions across the licensee's duties, 80% readiness line",
+    heroSubs: [
+      "Four sets, four mock tests. Start with Licensing & Professional Conduct.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. You're ready for your real estate assessments.",
+    ],
+    sourceLine: "Based on the Real Estate Agents Act 2008, the Professional Conduct and Client Care Rules 2012 and Real Estate Authority guidance, checked November 2026. Original questions; 50 per test, 80% is Tigertest's readiness target. Not affiliated with the Real Estate Authority, NZQA, REINZ or any training provider.",
+    analyticsKey: "nzrealestate",
+  },
+};
+
+
+const chtheory: ExamConfig = {
+  id: "chtheory",
+  stateCode: "CHTHEORY",
+  idBase: 32700,
+  slug: "/switzerland-driving-theory",
+  landingPath: "/switzerland-driving-theory-test",
+  name: "Switzerland Driving Theory Test Practice",
+  shortName: "Swiss theory test",
+  examLabel: "Swiss driving theory test",
+  fullName: "Swiss basic theory test (category B car)",
+  questionIdPrefix: "CHTHE-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // Real test (Strassenverkehrsämter, read 2026-11-16): the basic theory test (Basis-Theorieprüfung) for
+  // categories A1, A and B, taken at the cantonal road traffic office; German, French, Italian and, for the
+  // basic test only, English (zh.ch). Format per Aargau and the asa: 50 questions with three options of which
+  // one or two are right, 150 points, at most 15 error points, 45 minutes (Zurich's table says 55 questions
+  // and 17 errors; both are 10% of the 150 points). Each real question scores 1 to 3 error points; Tigertest
+  // uses single-answer items and passPct 90 (45 of 50) as the same 10% line. The cantons publish no topic
+  // weights, so the blueprint is Tigertest's, signs and priority weighted most. Rules from the SVG, VRV and
+  // SSV as in force November 2026: right-hand traffic, priority to the right, 50/80/100/120 km/h, alcohol
+  // 0.5 per mille. All items original; the asa-licensed official questions were not used.
+  blueprint: {
+    chSigns: 8,
+    chMarkings: 5,
+    chPriority: 8,
+    chSpeed: 7,
+    chParking: 5,
+    chRoadUsers: 6,
+    chDriver: 7,
+    chSpecial: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 32701, name: "Signs, Markings & Lights", categories: ["chSigns", "chMarkings"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 32702, name: "Priority, Speed & Overtaking", categories: ["chPriority", "chSpeed"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 32703, name: "Parking & Other Road Users", categories: ["chParking", "chRoadUsers"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 32704, name: "Driver, Licence & Special Roads", categories: ["chDriver", "chSpecial"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    chSigns: "Road Signs",
+    chMarkings: "Markings, Lights & Signals",
+    chPriority: "Priority, Junctions & Roundabouts",
+    chSpeed: "Speed, Lanes & Overtaking",
+    chParking: "Stopping & Parking",
+    chRoadUsers: "Pedestrians, Cyclists & Other Road Users",
+    chDriver: "Alcohol, Phones, Belts, Lights & Licence",
+    chSpecial: "Motorways, Tunnels, Crossings & Accidents",
+  },
+  copy: {
+    guestPrompt: "to save your theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on the Swiss road rules the basic theory test asks about. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions like the real test, 45 to pass",
+    heroSubs: [
+      "Four topics, four real-length tests. Start with Signs, Markings & Lights.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Book your theory test at the cantonal office.",
+    ],
+    sourceLine: "Based on Swiss road traffic law (SVG, VRV and SSV). Original questions; 50 per test, 45 to pass as a practice line for the real 15-error limit.",
+    analyticsKey: "chtheory",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory];
+
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

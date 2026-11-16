@@ -104,6 +104,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   DE: "TÜV/DEKRA",
   IT: "the Motorizzazione Civile or the universities for foreigners in Siena and Perugia",
   FR: "the Interior Ministry or the approved exam centres",
+  CH: "the cantonal road traffic offices (Strassenverkehrsämter) or the asa",
 };
 
 // AUTHORITY is written for an English sentence ("the IMT"); other languages

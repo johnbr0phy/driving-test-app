@@ -1,7 +1,7 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
 // /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk,
-// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de, /it and /fr. A view
+// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de, /it, /fr and /ch. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
@@ -9,7 +9,7 @@
 
 import type { Language } from "@/i18n";
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR" | "CH";
 
 /**
  * Every country with its own homepage. `lang` is the language its homepage is
@@ -47,6 +47,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "DE", name: "Germany", short: "DE", inName: "Germany", lang: "de", locale: "de-DE" },
   { code: "IT", name: "Italy", short: "IT", inName: "Italy", lang: "it", locale: "it-IT" },
   { code: "FR", name: "France", short: "FR", inName: "France", lang: "fr", locale: "fr-FR" },
+  { code: "CH", name: "Switzerland", short: "CH", inName: "Switzerland", lang: "en", locale: "en-CH" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -96,6 +97,8 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     // Metropolitan France and the overseas departments, which use the same Code de la route
     // and permis; Monaco, New Caledonia and French Polynesia have their own rules.
     case "FR": case "GP": case "MQ": case "GF": case "RE": case "YT": return "FR";
+    // Switzerland only: Liechtenstein has its own rules and stays unmapped.
+    case "CH": return "CH";
     default: return null;
   }
 }
@@ -116,6 +119,7 @@ export function regionInfo(r: Region) {
 export type TestRegion = Region | "GLOBAL";
 
 const TEST_REGIONS: Record<string, TestRegion> = {
+  bcrealestate: "CA",
   aufirearmswa: "AU",
   aufirearmsvic: "AU",
   aufirearmsnsw: "AU",
@@ -123,13 +127,13 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   nzdrone: "NZ",
   crfsc: "CA",
   aufirearmsqld: "AU",
-  ukcar: "UK", ukmoto: "UK", uklgv: "UK", ukpcv: "UK", ukadi: "UK", timestables: "UK", ks2: "UK", gcsemaths: "UK", uksia: "UK", uk18ed: "UK", ukgas: "UK", ukbregs: "UK", ukrbi: "UK", ukplumb: "UK", ukg3: "UK", ukwater: "UK",
+  ukcar: "UK", ukmoto: "UK", uklgv: "UK", ukpcv: "UK", ukadi: "UK", timestables: "UK", ks2: "UK", gcsemaths: "UK", uksia: "UK", uk18ed: "UK", ukgas: "UK", ukbregs: "UK", ukrbi: "UK", ukplumb: "UK", ukg3: "UK", ukwater: "UK", ukdsc1: "UK",
   gcsehigher: "UK", gcsescience: "UK", gcsecs: "UK", elevenplus: "UK", fsmaths: "UK", cscs: "UK", ukfood: "UK", ukaplh: "UK", ukfaw: "UK", ukcare: "UK",
   uklitu: "UK", uknmc: "UK", ukseru: "UK", aatl2: "UK", cemap: "UK",
-  iedtt: "IE", iedttcv: "IE", iesafepass: "IE", iespsv: "IE", ieqfa: "IE", iepsa: "IE",
+  iedtt: "IE", iedttcv: "IE", iesafepass: "IE", iespsv: "IE", ieqfa: "IE", iepsa: "IE", iehcap: "IE",
   caon: "CA", caqc: "CA", cabc: "CA", caab: "CA", camb: "CA", osslt: "CA", capal: "CA", caelec: "CA",
   rexpn: "CA", eqao9: "CA", capsw: "CA", casfa: "CA", cawhmis: "CA", caguard: "CA", caauto: "CA", caplumb: "CA", cacarp: "CA", caweld: "CA", cacit: "CA", llqp: "CA",
-  cask: "CA", cans: "CA", pcoc: "CA",
+  cask: "CA", cans: "CA", pcoc: "CA", cacore: "CA",
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ", nzfirearms: "NZ", nzboat: "NZ", nzlcq: "NZ", nzmoto: "NZ", nzheavy: "NZ", nzsfe: "NZ", nzensf: "NZ",nziqn: "NZ",
@@ -137,11 +141,13 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   ppsc: "PK", punjabpolice: "PK", pakarmy: "PK", pkpaf: "PK", pknle: "PK", pkpnmc: "PK",
   zak53moto: "ZA", zare5: "ZA", zasaps: "ZA", zapsira: "ZA",
   phnle: "PH", phmedtech: "PH", phpharm: "PH", phmidwife: "PH", phpsychom: "PH", phnapolcom: "PH", afpsat: "PH", phnat: "PH", phcle: "PH", phinsurance: "PH", phrebroker: "PH",
-  sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE",
+  sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", sgsnb: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE", hknurse: "HK", aerera: "AE",
   detheorie: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
   esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", rocpi: "RO", rotaxi: "RO", roadmed: "RO", rorezid: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", grmoto: "GR", grcitizen: "GR", grsecurity: "GR", grinsure: "GR", dkteori: "DK", dkmoto: "DK", dktruck: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", hukreszmoto: "HU", hugki: "HU", huelsoseg: "HU", hubizt: "HU", bedriving: "BE", bemoto: "BE", bevracht: "BE", betoelating: "BE", befsmavz: "BE", fitheory: "FI", fimoto: "FI", fitruck: "FI", fihygiene: "FI", fihunt: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
   itpatente: "IT", itcils: "IT", itceli: "IT",
   frcode: "FR",
+  nzrealestate: "NZ",
+  chtheory: "CH",
   jambeng: "NG", jambmath: "NG", wasscemath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG", wassceeng: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -173,10 +179,10 @@ export const NON_DRIVING_TESTS = new Set([
   "grcitizen", "grsecurity", "grinsure",
   "betoelating", "befsmavz",
   "dkindfoed", "dkmedborger", "dkjagt",
-  "timestables", "ks2", "gcsemaths", "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater",
+  "timestables", "ks2", "gcsemaths", "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "ukdsc1",
   "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare", "uklitu", "uknmc", "ukseru", "aatl2", "cemap",
   "osslt", "capal", "caelec",
-  "rexpn", "eqao9", "capsw", "casfa", "cawhmis", "caguard", "caauto", "caplumb", "cacarp", "caweld", "cacit", "pcoc", "llqp",
+  "rexpn", "eqao9", "capsw", "casfa", "cawhmis", "caguard", "caauto", "caplumb", "cacarp", "caweld", "cacit", "pcoc", "llqp", "cacore",
   "naplan", "nswsel", "auwhite",
   "naplan7", "ocnsw", "vicsel", "hscmaths", "aursa", "aurcg", "aufss", "aufirstaid", "auforklift", "auwah", "aucit",
   "ssccgl", "rrbntpc", "ibpspo", "ctet",
@@ -192,7 +198,11 @@ export const NON_DRIVING_TESTS = new Set([
   "jambeng", "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng",
   "ngpolice", "cdcfib", "ngarmy", "ngcustoms", "trcnpqe",
   "sgres", "hkiiqe1", "hklesfi1", "nzfirearms", "nzboat", "nzlcq", "aesira", "mypce", "kenck",
+  "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl", "sgsnb",
+  "iesafepass", "iespsv", "ieqfa", "iepsa", "iehcap", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl",
+  "sgres", "hkiiqe1", "hklesfi1", "hknurse", "nzfirearms", "nzboat", "nzlcq", "aesira", "mypce", "kenck", "aerera",
   "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl",
+  "nzrealestate",
 ]);
 
 /** Every test not listed above is a US exam. */
@@ -292,7 +302,7 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
   },
   AE: {
     title: "Free UAE Practice Tests: Driving & SIRA Guard | Tigertest",
-    description: "Free practice for the UAE driving theory test and the Dubai SIRA security guard licence exam, every answer explained. No account needed.",
+    description: "Free practice for the UAE driving theory test, the Dubai SIRA security guard licence exam and the RERA broker exam, every answer explained. No account needed.",
     lead: "Practice for the RTA theory test, an early step to a UAE driving licence, and the SIRA security guard licence exam in Dubai. Original questions, every answer explained. No signup.",
     cta: { label: "UAE theory test", href: "/uae-driving-theory-test" },
     testsTitle: "Driving theory test",
@@ -444,6 +454,14 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Test code de la route", href: "/fr/code-de-la-route-test" },
     testsTitle: "Tests d'entraînement pour la France",
     testsSub: "Le code de la route pour le permis B, d'après le Code de la route en vigueur, en km/h et avec la circulation à droite : priorités, signalisation, vitesses, alcool, stationnement, premiers secours et écoconduite.",
+  },
+  CH: {
+    title: "Free Swiss Driving Theory Test Practice in English | Tigertest",
+    description: "Free practice for the Swiss basic theory test (category B car licence), in English: 200 original questions on Swiss road rules, signs and priority, every answer explained. No account needed.",
+    lead: "Practise for the Swiss basic theory test for your car learner licence, offered in English at the cantonal road traffic office. Original questions on signs, priority to the right, speed limits and safe driving, every answer explained. No signup.",
+    cta: { label: "Theory test", href: "/switzerland-driving-theory-test" },
+    testsTitle: "Driving theory test",
+    testsSub: "200 questions on Swiss road rules, in km/h for right-hand traffic. Four full 50-question tests, 45 to pass.",
   },
   MT: {
     title: "Free Malta Driving Theory Test Practice | Tigertest",

@@ -7,7 +7,15 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["nchk", "HK", "hknurse"],
+  ["hong kong nursing council", "HK", "hknurse"],
+  ["hk nurse licensing exam", "HK", "hknurse"],
+  ["hong kong rn exam", "HK", "hknurse"],
   // [query, visitor region, test id that must come first]
+  ["bc real estate exam", "CA", "bcrealestate"],
+  ["ubc sauder real estate", "CA", "bcrealestate"],
+  ["bcfsa licensing exam", "CA", "bcrealestate"],
+  ["bc realtor exam", "CA", "bcrealestate"],
   ["nsw firearms licence", "AU", "aufirearmsnsw"],
   ["nsw gun licence test", "AU", "aufirearmsnsw"],
   ["firearms safety course nsw", "AU", "aufirearmsnsw"],
@@ -276,6 +284,12 @@ const CASES = [
   ["en state final", "NZ", "nzensf"],
   ["enrolled nurse exam nz", "NZ", "nzensf"],
   ["diploma in enrolled nursing", "NZ", "nzensf"],
+  ["dsc1", "UK", "ukdsc1"],
+  ["deer stalking certificate", "UK", "ukdsc1"],
+  ["dsc level 1", "UK", "ukdsc1"],
+  ["bc core", "CA", "cacore"],
+  ["core exam", "CA", "cacore"],
+  ["bc hunting test", "CA", "cacore"],
 ];
 
 for (const [q, region, id] of CASES) {

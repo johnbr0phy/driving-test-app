@@ -17,6 +17,8 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 
 // Families by id; state versions count as their family (variantOf).
 const TEACHER_LED = new Set([
+  "hknurse",
+  "cacore",
   "nzboat",
   // Microsoft security operations courses and SOC bootcamps (SC-200)
   "sc200",
@@ -87,7 +89,7 @@ const TEACHER_LED = new Set([
   // Trade schools, pre-licensing courses and instructor-led certifications
   "cdl", "cdlx", "moto", "osha", "forklift", "epa608", "foodmgr", "security", "lifeguard", "hunter", "cosmetology",
   "realestate", "insurance", "pnc", "ham", "civics",
-  "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "capal", "caelec", "auwhite",
+  "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "ukdsc1", "capal", "caelec", "auwhite",
   "cscs", "ukfood", "ukaplh",
   "caauto", "caplumb", "cacarp", "caweld", "cawhmis", "caguard",
   "aursa", "aurcg", "aufss", "auforklift", "auwah",
@@ -112,10 +114,14 @@ const TEACHER_LED = new Set([
   // Next-20 batch (November 2026)
   "ccrn",
   // International batch 1 (November 2026)
-  "nzlcq", "aesira", "kenck",
+  "nzlcq", "aesira", "aerera", "kenck",
   "pknle", "pkpnmc", "zapsira", "punjabpolice",
   // International batch 4 (November 2026)
+  "iesafepass", "iepsa", "nzsfe", "nzensf", "nziqn", "sgvl", "sgsnb",
+  "iesafepass", "iepsa", "iehcap", "nzsfe", "nzensf", "nziqn", "sgvl",
   "iesafepass", "iepsa", "nzsfe", "nzensf", "nziqn", "sgvl",
+  // Build-tests run (Nov 16 2026)
+  "nzrealestate",
   // International batch 2 (November 2026): the PRC board exams and the criminology board exam
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
 ]);

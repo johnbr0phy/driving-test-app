@@ -2733,6 +2733,16 @@ export const vi: TranslationKeys = {
     caqcSharing: "Sharing the Road",
     caqcRisk: "Alcohol, Drugs, Fatigue & Distraction",
     caqcDriving: "Driving Techniques & Conditions",
+    // aerera
+    aereraLand: "Land Registration & the Land Department",
+    aereraRegister: "The Broker Register & Registration",
+    aereraDuties: "Broker Duties & Professional Ethics",
+    aereraAgreements: "Brokerage Agreements & Remuneration",
+    aereraOffPlan: "Off-Plan Sales, Escrow & Marketing",
+    aereraLeasing: "Landlord & Tenant Law",
+    aereraJoint: "Jointly Owned Property",
+    aereraPractice: "RERA Systems & Practice Rules",
+    aereraMaths: "Real Estate Maths",
   } as Record<string, string>,
 
   // Training set names

@@ -5709,6 +5709,20 @@
     --brand-gradient-to: 345 60% 96%;
   }
 
+  /* Dubai RERA real estate broker exam theme: deep leaf green (the only free hue under the clash rule) */
+  [data-theme="aerera"] {
+    --brand: 94 60% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 94 60% 96%;
+    --brand-hover: 94 60% 21%;
+    --brand-dark: 94 60% 20%;
+    --brand-darker: 94 55% 12%;
+    --brand-muted: 94 20% 70%;
+    --brand-border: 94 20% 80%;
+    --brand-border-light: 94 18% 89%;
+    --brand-gradient-to: 99 70% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -10577,6 +10591,18 @@
     --brand-muted: 136 25% 45%;
     --brand-dark: 136 55% 65%;
     --brand-darker: 136 50% 78%;
+  }
+
+  .dark [data-theme="aerera"] {
+    --brand: 94 60% 32%;
+    --brand-hover: 94 60% 24%;
+    --brand-light: 94 45% 13%;
+    --brand-gradient-to: 99 40% 11%;
+    --brand-border-light: 94 18% 24%;
+    --brand-border: 94 20% 34%;
+    --brand-muted: 94 20% 45%;
+    --brand-dark: 94 60% 65%;
+    --brand-darker: 94 55% 78%;
   }
 
 }

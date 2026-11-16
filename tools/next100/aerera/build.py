@@ -2,7 +2,7 @@
 import importlib.util, json, sys, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
-ORDER = ["land", "reg", "dut", "agr", "off", "lse", "jnt", "pra", "mth"]
+ORDER = ["land", "reg", "dut", "agr", "off", "pra", "mth", "lse", "jnt"]
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "rera-broker-questions.json")
 sys.dont_write_bytecode = True
 rows = []

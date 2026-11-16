@@ -6218,6 +6218,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NZQA unit standards 4646 v11 and 16705 v7 (March 2023), checked November 2026",
     source: { name: "NZQA: unit standard 16705", url: "https://www.nzqa.govt.nz/nqfdocs/units/pdf/16705.pdf" },
   },
+  aerera: {
+    answer:
+      "In Dubai, nobody may work as a real estate broker unless licensed by the competent entities and entered in the Real Estate Brokers Register kept under Bylaw No. (85) of 2006. The Bylaw lists, among the registration documents, certificates from accredited real estate training courses and a certificate that the applicant passed the real estate brokerage test prepared by the Dubai Land Department. The Real Estate Regulatory Agency (RERA) regulates brokers and issues the broker card through the Trakheesi system, and the Dubai Real Estate Institute (DREI) runs the certified training. The Land Department does not publish the test's question count, time or pass mark on any page we could read, so Tigertest's mock tests use 50 questions and a 70% target.",
+    rows: [
+      { label: "Questions", value: "Not published by the Dubai Land Department" },
+      { label: "Pass mark", value: "Not published; 70% is Tigertest's target" },
+      { label: "Before the test", value: "Accredited real estate broker training (DREI)" },
+      { label: "Needed for", value: "Broker registration and the broker card (Trakheesi)" },
+      { label: "Exemptions", value: "Listed on the card service: over 55, or 5 consecutive years in the same office" },
+      { label: "Also needed", value: "Trade licence, Dubai Police good conduct certificate, Emirates ID" },
+      { label: "Run by", value: "Dubai Land Department and RERA, Dubai" },
+    ],
+    basedOn: "Bylaw No. (85) of 2006 and the Dubai Land Department's real estate legislation, and RERA's Real Estate Brokerage Practice Guide (second edition, November 2024), checked November 2026",
+    source: { name: "Dubai Land Department: Real Estate Brokerage Practice Guide 2024", url: "https://dubailand.gov.ae/media/i31iv1n0/real_estate_brokerage_practice_guide_2024.pdf" },
+  },
   aesira: {
     answer:
       "In Dubai, anyone who works as a security guard needs an individual licence from the Security Industry Regulatory Agency (SIRA), under Law No. (12) of 2016. The executive regulation issued in June 2026 requires the applicant to be at least 18, hold valid UAE residence if not a UAE national, know the basics of Arabic or English, be of good conduct, and pass the theoretical and practical tests SIRA approves, usually after a basic course at a SIRA-accredited training centre. SIRA does not publish the written test's length or pass mark; guides say about 60 multiple-choice questions in English or Arabic, with about 70% commonly reported as the pass mark. The licence lasts two years.",

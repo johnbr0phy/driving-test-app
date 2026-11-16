@@ -175,7 +175,7 @@ export default function BcRealEstateLandingPage() {
                 Built on the Law the Exam Tests
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                UBC Sauder and BCFSA publish no chapter list or weights for this exam, so the split here is Tigertest's: every practice test spreads its 50 questions across eight topics, with the most on agency duties and disclosure. The legal questions are written from BC Laws consolidations of the Real Estate Services Act and Rules, the Property Law Act, the Land Title Act, the Strata Property Act and the Real Estate Development Marketing Act as they stand in November 2026.
+                UBC Sauder and BCFSA publish no chapter list or weights for this exam, so the split here is Tigertest&apos;s: every practice test spreads its 50 questions across eight topics, with the most on agency duties and disclosure. The legal questions are written from BC Laws consolidations of the Real Estate Services Act and Rules, the Property Law Act, the Land Title Act, the Strata Property Act and the Real Estate Development Marketing Act as they stand in November 2026.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (

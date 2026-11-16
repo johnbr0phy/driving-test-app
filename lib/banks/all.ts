@@ -207,6 +207,7 @@ import "./cpaaud";
 import "./accafa";
 import "./aatl2";
 import "./nbdhe";
+import "./inbde";
 import "./nptepta";
 import "./aswbclin";
 import "./phr";

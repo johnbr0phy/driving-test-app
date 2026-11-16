@@ -248,6 +248,16 @@
     "value": "Once every 21 days, up to 5 times in any rolling 12 months",
     "url": "https://www.in.ets.org/content/dam/ets-org/pdfs/gre/gre-info-bulletin.pdf"
    }
+  },
+  "inbde": {
+   "fee": {
+    "value": "$890 (plus a $435 processing fee for students or graduates of a program not accredited by CODA)",
+    "url": "https://jcnde.ada.org/-/media/project/ada-organization/ada/jcnde/files/2026_inbde_candidate_guide.pdf"
+   },
+   "retake": {
+    "value": "At least 60 days between attempts, at most four a year; pass within five years or five attempts, then once every six months",
+    "url": "https://jcnde.ada.org/-/media/project/ada-organization/ada/jcnde/files/2026_inbde_candidate_guide.pdf"
+   }
   }
  }
 }

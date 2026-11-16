@@ -1454,6 +1454,17 @@ export const zh: TranslationKeys = {
     aatl2Ethics: "Ethics, CSR & Sustainability",
     aatl2Entities: "Business Entities & Formation",
     aatl2Finance: "The Finance Function & Information",
+    // inbde
+    inbdeBiology: "Structure, Function & Development (FK1)",
+    inbdePhysChem: "Physics & Chemistry of Biology (FK2)",
+    inbdeMaterials: "Materials, Radiology & Technology (FK3)",
+    inbdeGenetics: "Genetic & Developmental Conditions (FK4)",
+    inbdeImmunology: "Immunology & Host Defense (FK5)",
+    inbdePathology: "General & Oral Pathology (FK6)",
+    inbdeMicrobiology: "Microbiology & Infection Control (FK7)",
+    inbdePharmacology: "Pharmacology (FK8)",
+    inbdeEthics: "Behavior, Ethics & Law (FK9)",
+    inbdeResearch: "Research & Informatics (FK10)",
     // nbdhe
     nbdheAnat: "Anatomy, Histology & Embryology",
     nbdheBiosci: "Physiology, Nutrition, Microbiology & Immunology",

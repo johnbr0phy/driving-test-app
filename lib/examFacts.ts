@@ -171,6 +171,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Microsoft Learn's SC-200 study guide (skills measured as of October 21, 2026), the Security Operations Analyst Associate certification page and Microsoft's exam duration page, checked November 2026",
     source: { name: "Microsoft Learn: SC-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200" },
   },
+  pentestplus: {
+    answer:
+      "The CompTIA PenTest+ exam (PT0-003) has a maximum of 90 questions in 165 minutes, multiple choice and performance-based, and you need 750 on a 100 to 900 scale to pass. It covers Engagement Management 13%, Reconnaissance and Enumeration 21%, Vulnerability Discovery and Analysis 17%, Attacks and Exploits 35% and Post-exploitation and Lateral Movement 14%. PT0-003 launched on December 17, 2024 and replaced PT0-002, which retired on June 17, 2025.",
+    rows: [
+      { label: "Questions", value: "Up to 90" },
+      { label: "Time", value: "165 minutes" },
+      { label: "Passing score", value: "750 on a 100 to 900 scale" },
+      { label: "Exam code", value: "PT0-003 (replaced PT0-002)" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "CompTIA, at Pearson VUE or online" },
+    ],
+    basedOn: "the CompTIA PenTest+ PT0-003 exam objectives (Document Version 5.0)",
+    source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/pentest/" },
+  },
   fortinse: {
     answer:
       "Fortinet NSE 1 in Cybersecurity is Fortinet's entry-level certification, and since July 15, 2026 it replaces Fortinet Certified Fundamentals (FCF) in Cybersecurity; people with an active FCF were awarded NSE 1 and NSE 2. To earn it you pass the online exam presented at the end of the free self-paced course Cybersecurity and Cloud Fundamentals on the Fortinet Training Institute, which Fortinet estimates at about 11 hours. The course has ten modules: Intro to Cybersecurity, Threat Landscape, Social Engineering, Malware, Cryptography and the Public Key Infrastructure, Secure Networking, Authentication and Access Control, Endpoint Security, Secure Data and Applications, and Cloud Security and Virtualization. Fortinet does not publish a question count, time limit or pass mark. The certification is active for two years.",

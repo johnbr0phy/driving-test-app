@@ -155,6 +155,8 @@ const CASES = [
   ["auto mechanic certification", "US", "ase"],
   ["fortinet fcf", "US", "fortinse"],
   ["nse 1", "US", "fortinse"],
+  ["pentest+", "US", "pentestplus"],
+  ["pt0-003", "US", "pentestplus"],
   ["sc-200", "US", "sc200"],
   ["security operations analyst", "US", "sc200"],
   ["sc-900", "US", "sc900"],

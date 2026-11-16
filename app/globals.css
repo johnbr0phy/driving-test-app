@@ -4979,6 +4979,20 @@
     --brand-gradient-to: 210 40% 95%;
   }
 
+  /* CompTIA PenTest+ PT0-003 theme: deep muted red (v2 exam; matches lib/v2/exams/pentestplus.ts theme) */
+  [data-theme="pentestplus"] {
+    --brand: 5 15% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 5 20% 96%;
+    --brand-hover: 5 15% 22%;
+    --brand-dark: 5 15% 19%;
+    --brand-darker: 5 18% 12%;
+    --brand-muted: 5 12% 70%;
+    --brand-border: 5 15% 80%;
+    --brand-border-light: 5 14% 89%;
+    --brand-gradient-to: 20 25% 96%;
+  }
+
   /* Microsoft SC-200 theme: deep indigo (v2 exam; matches lib/v2/exams/sc200.ts theme) */
   [data-theme="sc200"] {
     --brand: 249 45% 22%;
@@ -9916,6 +9930,18 @@
     --brand-muted: 355 18% 45%;
     --brand-dark: 355 35% 65%;
     --brand-darker: 355 32% 78%;
+  }
+
+  .dark [data-theme="pentestplus"] {
+    --brand: 5 15% 48.8%;
+    --brand-hover: 5 15% 40.8%;
+    --brand-light: 5 20% 13%;
+    --brand-gradient-to: 20 25% 11%;
+    --brand-border-light: 5 14% 24%;
+    --brand-border: 5 15% 34%;
+    --brand-muted: 5 12% 45%;
+    --brand-dark: 5 15% 65%;
+    --brand-darker: 5 18% 78%;
   }
 
   .dark [data-theme="sc200"] {

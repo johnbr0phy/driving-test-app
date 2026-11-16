@@ -7,7 +7,7 @@ Q = [
  "The lessee must pay rent when due", ["The lessor pays the rates as rent", "Rent is paid only at the end", "Rent is optional in year one"],
  "REA material says section 218 and Schedule 3 imply into all leases that the lessee must pay the rent when it is due under the lease."),
 ("A tenant under a commercial lease wants to alter the premises. What does the implied covenant say?",
- "The lessor's consent is needed", ["Alterations are always allowed", "Alterations need council approval only", "Alterations need the agent's approval"],
+ "The lessor's consent is needed", ["Alterations are always allowed", "Alterations need council consent only", "Alterations need the agent's approval"],
  "REA material lists the implied covenant that the lessee will not carry out alterations without the lessor's consent."),
 ("Which right does the lessor have under the implied lease terms?",
  "To inspect at reasonable times", ["To enter at any hour unannounced", "To live in part of the premises", "To change the rent each month"],

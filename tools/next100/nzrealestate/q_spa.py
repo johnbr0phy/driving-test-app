@@ -46,7 +46,7 @@ Q = [
  "Paying the vendor interest", ["Forfeiting the agent's fee", "Cancelling the land title", "Paying the agent's bonus fee"],
  "REA's guide says default by the buyer may require compensation to the seller, for example interest payments. Vendor default may mean paying the buyer's accommodation costs."),
 ("A vendor warranty in an agreement commonly concerns:",
- "Building Act or RMA compliance", ["The buyer's finance approval", "The agent's licence status", "The neighbours' written views"],
+ "Building Act or RMA compliance", ["The buyer's finance approval", "The agent's licence status", "Land Transfer Act registration"],
  "REA's material says vendor warranties, for example about compliance with the Building Act or Resource Management Act, are among the general terms in the standard agreement."),
 ("After a settlement notice expires, a vendor may cancel and keep the deposit. Up to how much of the price may be kept?",
  "10 percent", ["50 percent", "25 percent", "The whole deposit however large"],

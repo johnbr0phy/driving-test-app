@@ -4,7 +4,7 @@ Q = [
  "1 January 2019", ["1 January 2009", "1 July 2015", "1 April 2022"],
  "REA's Other laws page says the Anti-Money Laundering and Countering Financing of Terrorism Act 2009 has applied to real estate agents from 1 January 2019."),
 ("Under the AML/CFT Act, what must licensees carry out for clients?",
- "Customer due diligence checks", ["A credit rating check on them", "A building condition report", "A market appraisal letter"],
+ "Customer due diligence checks", ["A credit check on the customer", "A building condition report", "A market appraisal letter"],
  "REA says licensees must carry out customer due diligence under the AML/CFT regime."),
 ("Under AML/CFT rules, what must an agency complete and maintain?",
  "A risk profile and programme", ["A client mailing list for ads", "A staff roster of shifts only", "A trust deed for each client"],

@@ -37,7 +37,7 @@ Q = [
  "Lending money on mortgage", ["Marketing a house for a vendor", "Advising on an offer price", "Arranging a commercial lease"],
  "The definition excludes lending money on mortgage or otherwise, investment advice, conveyancing, and publishing or broadcasting advertisements for land or businesses."),
 ("What makes work \"real estate agency work\" under section 4?",
- "Trade work to bring about a deal", ["Any property advice given to friends", "Valuing a property for a bank", "Work done by a branch manager"],
+ "Trade services for another", ["Any property advice given to friends", "Valuing a property for a bank", "Work done by a branch manager"],
  "Agency work means work or services provided in trade, on behalf of another person, for the purpose of bringing about a transaction, including work by a branch manager or salesperson for an agent."),
 ("A landlord uses a licensee to find a tenant for a residential tenancy covered by the Residential Tenancies Act 1986. Under the Act's definition, that letting is:",
  "Not a transaction", ["A leasehold transaction", "A freehold disposal", "A business sale"],

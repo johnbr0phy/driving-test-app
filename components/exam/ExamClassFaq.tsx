@@ -28,6 +28,7 @@ export const TEACHES: Record<string, string> = {
   hspachl: "a sterile processing leadership course",
   hspacer: "a sterile processing program",
   bcaba: "an undergraduate BCaBA course sequence",
+  qabaabat: "the 40-hour ABAT coursework or supervise ABAT candidates",
   bcba: "an ABA graduate program or verified course sequence",
   espolicia: "a Policía Nacional oposiciones class",
   esguardia: "a Guardia Civil oposiciones class",

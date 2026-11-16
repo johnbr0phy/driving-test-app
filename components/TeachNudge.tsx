@@ -38,6 +38,7 @@ const TEACHER_LED = new Set([
   "hspachl",
   "hspacer",
   "bcaba",
+  "qabaabat",
   "bcba",
   // US: FCS teacher preparation and FCS programs (AAFCS HNFS)
   "aafcs",

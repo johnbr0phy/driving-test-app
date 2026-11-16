@@ -105,7 +105,7 @@ jobs:
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           # Prints the run, so a failure shows its reason in the log (it was hidden).
           show_full_output: true
-          claude_args: --max-turns 300 --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-turns 300 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md (especially "Question quality" and the exam's own entry), then
             ${{ steps.pages.outputs.list }}: official pages Tigertest's question banks were

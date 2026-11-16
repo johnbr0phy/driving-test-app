@@ -2794,6 +2794,18 @@ export const ko: TranslationKeys = {
     aereraJoint: "Jointly Owned Property",
     aereraPractice: "RERA Systems & Practice Rules",
     aereraMaths: "Real Estate Maths",
+    // NZ real estate salesperson
+    nzreLicensing: "Licensing & Who May Do Agency Work",
+    nzreConduct: "Code of Conduct & Client Care",
+    nzreDiscipline: "Complaints & Discipline",
+    nzreAgency: "Agency Agreements & Commission",
+    nzreDisclosure: "Disclosure, Defects & Conflicts",
+    nzreMoney: "Money, Trust Accounts & Documents",
+    nzreSale: "Sale & Purchase Agreements",
+    nzreTenure: "Title, Tenure & Leases",
+    nzreCouncil: "Council, Building & Planning",
+    nzreOtherLaw: "Other Laws Licensees Meet",
+    nzreMarketing: "Marketing & Sales Practice",
   } as Record<string, string>,
 
   // Training set names

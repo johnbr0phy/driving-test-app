@@ -1,0 +1,140 @@
+{
+  "id": "nzrealestate",
+  "stateCode": "NZRE",
+  "idBase": 32500,
+  "prefix": "NZRE-",
+  "slug": "/nz-real-estate",
+  "landingPath": "/nz-real-estate-salesperson-practice-test",
+  "dataFile": "data/nz-real-estate-questions.json",
+  "region": "NZ",
+  "name": "NZ Real Estate Salesperson Practice Test",
+  "shortName": "NZ Real Estate",
+  "icon": "house",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {
+      "key": "nzreLicensing",
+      "label": "Licensing & Who May Do Agency Work",
+      "perTest": 5,
+      "pool": 20,
+      "segment": "LIC"
+    },
+    {
+      "key": "nzreConduct",
+      "label": "Code of Conduct & Client Care",
+      "perTest": 6,
+      "pool": 24,
+      "segment": "CON"
+    },
+    {
+      "key": "nzreDiscipline",
+      "label": "Complaints & Discipline",
+      "perTest": 4,
+      "pool": 16,
+      "segment": "DIS"
+    },
+    {
+      "key": "nzreAgency",
+      "label": "Agency Agreements & Commission",
+      "perTest": 7,
+      "pool": 28,
+      "segment": "AGY"
+    },
+    {
+      "key": "nzreDisclosure",
+      "label": "Disclosure, Defects & Conflicts",
+      "perTest": 6,
+      "pool": 24,
+      "segment": "DSC"
+    },
+    {
+      "key": "nzreMoney",
+      "label": "Money, Trust Accounts & Documents",
+      "perTest": 3,
+      "pool": 12,
+      "segment": "TRU"
+    },
+    {
+      "key": "nzreSale",
+      "label": "Sale & Purchase Agreements",
+      "perTest": 6,
+      "pool": 24,
+      "segment": "SPA"
+    },
+    {
+      "key": "nzreTenure",
+      "label": "Title, Tenure & Leases",
+      "perTest": 3,
+      "pool": 12,
+      "segment": "TEN"
+    },
+    {
+      "key": "nzreCouncil",
+      "label": "Council, Building & Planning",
+      "perTest": 4,
+      "pool": 16,
+      "segment": "CNL"
+    },
+    {
+      "key": "nzreOtherLaw",
+      "label": "Other Laws Licensees Meet",
+      "perTest": 4,
+      "pool": 16,
+      "segment": "LAW"
+    },
+    {
+      "key": "nzreMarketing",
+      "label": "Marketing & Sales Practice",
+      "perTest": 2,
+      "pool": 8,
+      "segment": "MKT"
+    }
+  ],
+  "trainingSets": [
+    {
+      "setNumber": 1,
+      "id": 32501,
+      "name": "Licensing & Professional Conduct",
+      "categories": [
+        "nzreLicensing",
+        "nzreConduct",
+        "nzreDiscipline"
+      ],
+      "size": 60
+    },
+    {
+      "setNumber": 2,
+      "id": 32502,
+      "name": "Agency, Disclosure & Marketing",
+      "categories": [
+        "nzreAgency",
+        "nzreDisclosure",
+        "nzreMarketing"
+      ],
+      "size": 60
+    },
+    {
+      "setNumber": 3,
+      "id": 32503,
+      "name": "Sale, Money & Tenure",
+      "categories": [
+        "nzreSale",
+        "nzreMoney",
+        "nzreTenure"
+      ],
+      "size": 48
+    },
+    {
+      "setNumber": 4,
+      "id": 32504,
+      "name": "Council & Other Laws",
+      "categories": [
+        "nzreCouncil",
+        "nzreOtherLaw"
+      ],
+      "size": 32
+    }
+  ]
+}

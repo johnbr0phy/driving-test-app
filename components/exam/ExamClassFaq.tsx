@@ -281,6 +281,7 @@ export const TEACHES: Record<string, string> = {
   ukaplh: "a personal licence course",
   nzlcq: "an LCQ course",
   aerera: "a DREI certified real estate broker course",
+  nzrealestate: "a New Zealand Certificate in Real Estate (Salesperson) course",
   aesira: "a SIRA basic security guard course",
   kenck: "a nursing college class",
   pknle: "an NRE preparation class",

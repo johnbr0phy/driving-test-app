@@ -5679,6 +5679,20 @@
     --brand-gradient-to: 345 70% 96%;
   }
 
+  /* NZ real estate salesperson theme */
+  [data-theme="nzrealestate"] {
+    --brand: 64 50% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 64 50% 96%;
+    --brand-hover: 64 50% 14%;
+    --brand-dark: 64 50% 12%;
+    --brand-darker: 64 45% 8%;
+    --brand-muted: 64 20% 70%;
+    --brand-border: 64 20% 80%;
+    --brand-border-light: 64 18% 89%;
+    --brand-gradient-to: 69 50% 96%;
+  }
+
   /* SIRA security guard (Dubai) theme */
   [data-theme="aesira"] {
     --brand: 220 55% 22%;
@@ -10631,6 +10645,18 @@
     --brand-muted: 340 20% 45%;
     --brand-dark: 340 70% 65%;
     --brand-darker: 340 65% 78%;
+  }
+
+  .dark [data-theme="nzrealestate"] {
+    --brand: 64 50% 31.8%;
+    --brand-hover: 64 50% 23.8%;
+    --brand-light: 64 45% 13%;
+    --brand-gradient-to: 69 40% 11%;
+    --brand-border-light: 64 18% 24%;
+    --brand-border: 64 20% 34%;
+    --brand-muted: 64 20% 45%;
+    --brand-dark: 64 50% 65%;
+    --brand-darker: 64 45% 78%;
   }
 
   .dark [data-theme="aesira"] {

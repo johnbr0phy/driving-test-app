@@ -289,3 +289,4 @@ import "./iehcap";
 import "./hknurse";
 import "./bcrealestate";
 import "./aerera";
+import "./nzrealestate";

@@ -808,6 +808,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(340, 70%, 22%)",
     "tint": "hsl(340, 70%, 96%)"
   },
+  "aerera": {
+    "color": "hsl(94, 60%, 26%)",
+    "tint": "hsl(94, 60%, 96%)"
+  },
   "aesira": {
     "color": "hsl(220, 55%, 22%)",
     "tint": "hsl(220, 55%, 96%)"

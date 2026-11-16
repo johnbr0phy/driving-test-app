@@ -2782,6 +2782,16 @@ export const es: TranslationKeys = {
     hcapLaw: "Deer Hunting & the Law",
     hcapCarcase: "Carcase Handling & Food Safety",
     hcapHabitat: "Forestry, Habitats & Conservation",
+    // aerera
+    aereraLand: "Land Registration & the Land Department",
+    aereraRegister: "The Broker Register & Registration",
+    aereraDuties: "Broker Duties & Professional Ethics",
+    aereraAgreements: "Brokerage Agreements & Remuneration",
+    aereraOffPlan: "Off-Plan Sales, Escrow & Marketing",
+    aereraLeasing: "Landlord & Tenant Law",
+    aereraJoint: "Jointly Owned Property",
+    aereraPractice: "RERA Systems & Practice Rules",
+    aereraMaths: "Real Estate Maths",
   } as Record<string, string>,
 
   // Training set names

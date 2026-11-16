@@ -270,6 +270,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   hknurse: { title: "Free HK Nursing Licensing Exam Practice Test", description: "200 original questions on the topics of the Nursing Council of Hong Kong Licensing Examination written part, four 50-question practice tests." },
   nzfirearms: { title: "NZ Firearms Licence Test", description: "Review the seven firearms safety rules, firing zones, safe handling, storage and the law." },
   nzlcq: { title: "LCQ Duty Manager Test", description: "Practice the Sale and Supply of Alcohol Act, licences, minors and ID, intoxication and host responsibility." },
+  aerera: { title: "RERA Broker Exam", description: "Practice the broker register, brokerage agreements, off-plan sales and escrow, leasing law and jointly owned property for Dubai brokers." },
   aesira: { title: "SIRA Security Guard Exam", description: "Practice SIRA law, access control, reports, legal limits, emergencies, fire safety and first aid." },
   mypce: { title: "Malaysia PCEIA", description: "Practice Part A basics, Part B general insurance and Part C life insurance for your PCEIA." },
   kenck: { title: "NCK Licensure Exam", description: "Practice fundamentals, med-surg, midwifery, IMCI, community health and Kenyan nursing law." },

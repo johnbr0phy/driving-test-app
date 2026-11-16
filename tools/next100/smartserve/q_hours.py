@@ -22,7 +22,7 @@ Q = [
  'Until 2:00 a.m. new time', ['Until the first 2:00 a.m.', 'Until 1:00 a.m. new time', 'All night, as an exception'],
  'The licensee may turn the clock back and keep selling until 2:00 a.m. new time, then has 45 minutes to clear signs of service.'),
 ('In the spring, clocks jump from 2:00 a.m. to 3:00 a.m. When must sale stop?',
- 'At that moment', ['At 3:00 a.m. new time', 'At 3:45 a.m.', 'At 1:00 a.m.'],
+ 'At that moment', ['At 4:00 a.m. new time', 'At 3:45 a.m.', 'At 1:00 a.m.'],
  'Sale stops when the clock moves forward. The licensee then has 45 minutes to clear signs of service, even though the clock shows 3:00 a.m.'),
 ('A licence carries a condition limiting service to midnight. Which hours apply?',
  'The licence condition', ['The regular 2 a.m. end', 'Whichever is later', "The server's choice"],

@@ -12,6 +12,10 @@ const CASES = [
   ["hk nurse licensing exam", "HK", "hknurse"],
   ["hong kong rn exam", "HK", "hknurse"],
   // [query, visitor region, test id that must come first]
+  ["bc real estate exam", "CA", "bcrealestate"],
+  ["ubc sauder real estate", "CA", "bcrealestate"],
+  ["bcfsa licensing exam", "CA", "bcrealestate"],
+  ["bc realtor exam", "CA", "bcrealestate"],
   ["nsw firearms licence", "AU", "aufirearmsnsw"],
   ["nsw gun licence test", "AU", "aufirearmsnsw"],
   ["firearms safety course nsw", "AU", "aufirearmsnsw"],

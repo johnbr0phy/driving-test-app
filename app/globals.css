@@ -4862,6 +4862,19 @@
     --brand-gradient-to: 209 50% 95%;
   }
 
+  [data-theme="bcrealestate"] {
+    --brand: 158 95% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 158 60% 95%;
+    --brand-hover: 158 95% 15%;
+    --brand-dark: 158 95% 11%;
+    --brand-darker: 158 85% 8%;
+    --brand-muted: 158 35% 62%;
+    --brand-border: 158 40% 76%;
+    --brand-border-light: 158 45% 88%;
+    --brand-gradient-to: 158 55% 92%;
+  }
+
   [data-theme="ascppbt"] {
     --brand: 116 45% 22%;
     --brand-foreground: 0 0% 100%;
@@ -9888,6 +9901,18 @@
     --brand-muted: 194 25% 45%;
     --brand-dark: 194 60% 65%;
     --brand-darker: 194 55% 78%;
+  }
+
+  .dark [data-theme="bcrealestate"] {
+    --brand: 158 95% 37.6%;
+    --brand-hover: 158 95% 29.8%;
+    --brand-light: 158 45% 13%;
+    --brand-gradient-to: 158 40% 11%;
+    --brand-border-light: 158 35% 24%;
+    --brand-border: 158 40% 34%;
+    --brand-muted: 158 35% 45%;
+    --brand-dark: 158 95% 65%;
+    --brand-darker: 158 85% 78%;
   }
 
   .dark [data-theme="ascppbt"] {

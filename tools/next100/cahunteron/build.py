@@ -25,7 +25,7 @@ for m, want in ORDER:
             longest_n += 1
             if report:
                 print(f"LONGEST {m} {i+1:03d} {len(key)} vs {statistics.mean(len(w) for w in wrong):.0f}: {key} | {wrong}")
-        rows.append({"type": "CAHUNTON", "state": "ALL", "questionId": f"CAHUNTON-{mod.SEG}-{i+1:03d}",
+        rows.append({"type": "CAHUNTERON", "state": "ALL", "questionId": f"CAHON-{mod.SEG}-{i+1:03d}",
             "category": mod.CAT, "question": q, "optionA": opts[0], "optionB": opts[1], "optionC": opts[2],
             "optionD": opts[3], "correctAnswer": "ABCD"[k], "correctIndex": k, "explanation": expl})
 with open(out, "w", encoding="utf-8") as f:

@@ -290,6 +290,10 @@ const CASES = [
   ["bc core", "CA", "cacore"],
   ["core exam", "CA", "cacore"],
   ["bc hunting test", "CA", "cacore"],
+  ["ontario hunter education", "CA", "cahunteron"],
+  ["ontario hunting exam", "CA", "cahunteron"],
+  ["ohep", "CA", "cahunteron"],
+  ["ontario hunter safety course", "CA", "cahunteron"],
 ];
 
 for (const [q, region, id] of CASES) {

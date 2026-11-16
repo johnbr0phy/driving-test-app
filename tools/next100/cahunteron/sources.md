@@ -33,11 +33,27 @@ quizzes, or any commercial prep site or app.
 
 ## Exam format (what could and could not be confirmed)
 
-- Neither ontario.ca nor ohep.net publishes the exam's question count, time limit, pass mark or
-  whether it is open book. A provider listing reports 50 multiple-choice questions, open book;
-  that is a guide figure only and is not used as a fact. The copy says "the ministry does not
-  publish the question count or pass mark" and uses Tigertest's own 80% readiness target
-  ("Tigertest's target"), four practice tests of 50.
+- Neither ontario.ca nor ohep.net publishes the exam's question count, time limit or pass mark
+  for the instructor-led course. A provider listing reports 50 multiple-choice questions, open
+  book; that is a guide figure only and is not used as a fact.
+- HUNTERcourse.com, Official Ontario Hunter Education Course (the online course; the page says
+  it is "a delegated provider for Ontario Ministry of Natural Resources and Forestry" and is
+  approved by the ministry), fetched 2026-11-16: https://www.huntercourse.com/canada/ontario/
+  and FAQs https://www.huntercourse.com/canada/ontario/faqs.aspx
+  The online course has 13 chapters, each with a quiz, and a final exam that must be passed
+  "with a grade of at least 80%"; failed quizzes or exams can be retaken; Certificate of
+  Completion taken to ServiceOntario. The app's 80% line follows this online-course pass mark;
+  the copy says the instructor-led exam's count and pass mark are set by the course and not
+  published by the ministry. The provider's course content was not read for questions.
+- Ontario.ca, Hunter education (updated October 30, 2026), re-fetched 2026-11-16: from
+  December 10, 2026 online submission of hunter accreditation is accepted through the new
+  licensing system (FishHuntON); the licensing system is down December 7 to 9, 2026
+  (https://www.ontario.ca/page/hunting-notices-and-updates). No question depends on the name of
+  the licensing system.
+
+Bank ids for this build (2026-11-16 run): state code `CAHUNTERON`, prefix `CAHON-`, idBase 32900
+(tests and sets 32901-32904). An earlier work-in-progress build of the same questions used
+the prefix CAHUNTON- and block 31500; it never shipped, so no stored progress uses those ids.
 
 ## Law (Ontario e-Laws, official consolidations, downloaded as Word files from ontario.ca)
 

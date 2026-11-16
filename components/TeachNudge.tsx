@@ -19,6 +19,7 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 const TEACHER_LED = new Set([
   "hknurse",
   "cacore",
+  "cahunteron",
   "nzboat",
   // Microsoft security operations courses and SOC bootcamps (SC-200)
   "sc200",

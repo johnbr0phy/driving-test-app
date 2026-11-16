@@ -1,0 +1,12 @@
+{
+  "blurb": "NCCPA PANCE practice on the 2025 content blueprint: cardiovascular, pulmonary, GI, renal, GU, endocrine, neuro, psychiatry, EENT, musculoskeletal, skin, reproductive, infectious disease, hematology and professional practice.",
+  "org": "NCCPA · PANCE content blueprint (effective January 2025)",
+  "group": "Healthcare certification exams",
+  "aliases": ["pance", "pance exam", "pance practice", "physician assistant exam", "physician assistant board exam", "pa boards", "pa board exam", "nccpa", "nccpa exam", "pa-c exam", "pa certification exam", "physician assistant national certifying exam", "panre"],
+  "teacherLed": true,
+  "teaches": "a PA program's board review course",
+  "borrowTiger": "nclex",
+  "shareTitle": "Free PANCE Practice Test",
+  "shareDescription": "200 original questions on the NCCPA PANCE content blueprint (2025) for physician assistant candidates. Free to start.",
+  "searchTests": [["pance", "US", "pance"], ["physician assistant exam", "US", "pance"], ["pa boards", "US", "pance"], ["nccpa", "US", "pance"]]
+}

@@ -1,0 +1,17 @@
+CPABAR
+cpabarFsa
+cpabarCost
+cpabarBudget
+cpabarCapital
+cpabarInvest
+cpabarRiskEcon
+cpabarIntangibles
+cpabarRevenue
+cpabarStockComp
+cpabarBizComb
+cpabarConsol
+cpabarDerivatives
+cpabarLeases
+cpabarPublic
+cpabarGovReporting
+cpabarGovTransactions

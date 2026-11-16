@@ -1,0 +1,47 @@
+{
+  "blurb": "CPA Exam BAR multiple-choice practice on the AICPA's 2026 blueprint: financial and cost analysis, budgeting, cost of capital and investment decisions, goodwill, revenue, stock compensation, business combinations, derivatives, leases, SEC reporting and state and local governments, with every calculation explained.",
+  "org": "AICPA and NASBA · Uniform CPA Examination, BAR Discipline section",
+  "group": "Accounting, CPA and finance exams",
+  "groupAfter": "cpatcp",
+  "aliases": [
+    "cpa bar",
+    "bar cpa",
+    "cpa exam bar",
+    "business analysis and reporting",
+    "cpa bar discipline",
+    "bar discipline",
+    "cpa bar practice",
+    "uniform cpa exam bar",
+    "cpa business analysis"
+  ],
+  "teacherLed": false,
+  "borrowTiger": "cpafar",
+  "shareTitle": "Free CPA BAR Practice Test",
+  "shareDescription": "200 original multiple-choice questions on the AICPA's BAR blueprint: business analysis, technical accounting and reporting, and state and local governments. Free to start.",
+  "shareCardCopy": {
+    "title": "CPA BAR Exam",
+    "description": "Review financial analysis, cost accounting, business combinations, derivatives, leases and government accounting."
+  },
+  "topicPages": "add cpabar to TOPIC_EXAM_IDS in lib/topicPages.ts next to cpafar, as the other CPA sections are",
+  "searchAliasLine": "cpabar: \"cpa bar cpa exam business analysis and reporting bar section discipline uniform cpa examination aicpa nasba financial statement analysis cost accounting variance budgeting cost of capital npv goodwill business combinations consolidation foreign currency derivatives hedge accounting lessor leases stock compensation sec reporting segments governmental accounting gasb accountant license certified public accountant\"",
+  "searchTests": [
+    [
+      "cpa bar",
+      "US",
+      "cpabar"
+    ],
+    [
+      "business analysis and reporting",
+      "US",
+      "cpabar"
+    ],
+    [
+      "bar cpa exam",
+      "US",
+      "cpabar"
+    ]
+  ],
+  "region": "TEST_REGIONS: cpabar is US (the default; add a line only if the file lists every US exam)",
+  "premium": "v1 exam: the standard v1 locks apply (last quarter of the dashboard steps, so set 6 and test 4 by examSteps)",
+  "aliasNote": "\"bar\" alone is left out on purpose: it is also the lawyers' bar exam"
+}

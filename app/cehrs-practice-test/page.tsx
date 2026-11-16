@@ -24,7 +24,7 @@ const description =
 const faqs = [
   {
     q: "What is the CEHRS exam?",
-    a: "It is the certification exam for the Certified Electronic Health Records Specialist credential from the National Healthcareer Association (NHA). It covers the work of keeping electronic health records accurate and secure: registration and patient data, clinical documentation and data exchange, codes and billing in the EHR, HIPAA and HITECH compliance, and running reports. You can sit for it with a high school diploma or GED, after an EHR specialist training program within the last five years, or with supervised work in the field.",
+    a: "It is the certification exam for the Certified Electronic Health Records Specialist credential from the National Healthcareer Association (NHA). It covers the work of keeping electronic health records accurate and secure: registration and patient data, clinical documentation and data exchange, codes and billing in the EHR, HIPAA and HITECH compliance, and running reports. To sit for it you need a high school diploma or GED (or one due within 18 months) plus either an EHR specialist training program completed within the last five years or supervised work in the field (one year within the last three, or two within the last five).",
   },
   {
     q: "How many questions are on the CEHRS exam?",

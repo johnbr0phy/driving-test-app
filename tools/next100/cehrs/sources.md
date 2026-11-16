@@ -17,9 +17,9 @@ practice tests or preparation materials, released items, or any commercial revie
   Meaningful Use / QPP reporting).
 - NHA, Electronic Health Records Specialist certification page, fetched 2026-11-16:
   https://www.nhanow.com/certifications/electronic-health-records-specialist
-  Links the 2019 test plan as the plan for the current CEHRS exam. Eligibility: a high school
-  diploma or GED (or completion scheduled within 18 months), or an EHR specialist training or
-  education program within the last 5 years, or a diploma or GED plus supervised EHR specialist
+  Links the 2019 test plan as the plan for the current CEHRS exam. Eligibility (rechecked 2026-11-15 by the second reviewer): a high school
+  diploma or GED (or completion scheduled within 18 months) plus either an EHR specialist training or
+  education program within the last 5 years, or supervised EHR specialist
   work experience (1 year within 3 years, or 2 within 5). Exam at the candidate's school, a PSI
   testing center or by live remote proctoring. Renews every two years with 10 continuing
   education credits; an expired certification can be reinstated within 1 year.

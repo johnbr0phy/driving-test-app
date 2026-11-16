@@ -45,6 +45,14 @@ rules they cover are asked here, but none of their wording is reused).
   500 GT in harbour areas, 91.17 rivers, 91.18 Flag A, definitions (Flag A at least 600 mm by 600 mm).
   maritimenz.govt.nz HTML pages return 403; its /media/ PDFs load (below), but no newer Part 91
   consolidation PDF URL could be found, so only rules unlikely to have changed are asked.
+- National lifejacket wearing rule (second review, 2026-11-15): the Maritime Transport (Lifejackets
+  on Recreational Craft) Amendment Bill passed in September 2026 and took effect on 9 October 2026:
+  everyone on a recreational craft 6 m or less must wear a properly fitted lifejacket while
+  underway (not at anchor, made fast to the shore or aground), subject to Part 91's existing
+  exceptions. Reported by Yachting NZ (3 Sep 2026, https://www.yachtingnz.org.nz/node/38106) and
+  1News (9 Oct 2026, https://www.1news.co.nz/2026/10/09/what-you-need-to-know-as-new-rules-for-lifejackets-start-today/);
+  the amended Part 91 text was not reachable (legislation.govt.nz and maritimenz.govt.nz return 403).
+  NZBOAT-LAW-010 and LAW-011 were rewritten for it; the 2016 consolidation above predates it.
 - Maritime New Zealand, Maritime Rules Part 22 Collision Prevention, MNZ Consolidation
   31 March 2021, fetched 2026-11-16:
   https://www.maritimenz.govt.nz/media/vu5bafi0/part22-maritime-rule.pdf

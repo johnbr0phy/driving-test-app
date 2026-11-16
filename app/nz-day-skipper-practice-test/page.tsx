@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "Do you need a licence to drive a boat in New Zealand?",
-    a: "No. New Zealand has no licence for skippering a recreational boat, but every skipper must follow the Maritime Rules and the regional council's navigation bylaws, such as the 5 knot rule and carrying a lifejacket for everyone on board. Coastguard Boating Education calls Day Skipper the minimum training it recommends. Operating a marine VHF radio, except in an emergency, does need an operator's qualification.",
+    a: "No. New Zealand has no licence for skippering a recreational boat, but every skipper must follow the Maritime Rules and the regional council's navigation bylaws, such as the 5 knot rule, carrying a lifejacket for everyone on board and, since 9 October 2026, wearing one on boats 6 m or under whenever they are underway. Coastguard Boating Education calls Day Skipper the minimum training it recommends. Operating a marine VHF radio, except in an emergency, does need an operator's qualification.",
   },
   {
     q: "How is the Day Skipper assessed?",

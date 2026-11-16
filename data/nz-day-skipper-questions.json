@@ -2314,28 +2314,28 @@
     "state": "ALL",
     "questionId": "NZBOAT-LAW-010",
     "category": "nzboatLaw",
-    "question": "When does Rule 91.4 require everyone on board to wear a lifejacket?",
+    "question": "On a recreational boat over 6 m long, when must the skipper make everyone wear a lifejacket?",
     "optionA": "Only when the boat is planing",
     "optionB": "When conditions are risky",
     "optionC": "Only for those who can't swim",
     "optionD": "Only at night or in fog",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Rule 91.4(6): the person in charge must make everyone wear a secured lifejacket when tides, river flows, poor visibility, rough seas, bad weather or emergencies create danger."
+    "explanation": "Rule 91.4: on any recreational boat the person in charge must make everyone wear a secured lifejacket when tides, river flows, poor visibility, rough seas, bad weather or emergencies create danger. On boats 6 m or under, lifejackets must be worn whenever the boat is underway (from 9 October 2026)."
   },
   {
     "type": "NZBOAT",
     "state": "ALL",
     "questionId": "NZBOAT-LAW-011",
     "category": "nzboatLaw",
-    "question": "Under Hawke's Bay's bylaws, everyone on a boat 6 m or under must wear a lifejacket except when:",
+    "question": "Since 9 October 2026, everyone on a recreational boat 6 m or under must wear a lifejacket, except when the boat is:",
     "optionA": "Under 5 knots",
     "optionB": "Within 200 m of shore",
     "optionC": "Anchored or at a wharf",
     "optionD": "On a lake or river",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Some regional bylaws go further than Maritime Rules. In Hawke's Bay, lifejackets must be worn on vessels 6 m or less unless anchored or secured to a wharf. Check your own region's bylaws."
+    "explanation": "A law change passed in September 2026 (the Maritime Transport (Lifejackets on Recreational Craft) Amendment) made wearing a lifejacket compulsory on recreational craft of 6 m or less while underway, nationwide. A boat at anchor, made fast to the shore or aground is not underway. Some regions, such as Hawke's Bay, already had this rule in a bylaw."
   },
   {
     "type": "NZBOAT",

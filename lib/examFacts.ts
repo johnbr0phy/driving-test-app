@@ -5204,6 +5204,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "LTA's OneMotoring vocational licence application and renewal pages and the course providers' published paper outlines, checked November 2026",
     source: { name: "OneMotoring (LTA): Vocational Licence Application", url: "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/vocational_licence/vocational_licence_application.html" },
   },
+  sgsnb: {
+    answer:
+      "The Singapore Nursing Board (SNB) Registered Nurse Licensure Examination is the test foreign-trained nurses sit before they can register as a registered nurse in Singapore. It is a computer-based multiple-choice exam, delivered at Pearson VUE test centres since 28 November 2024, with 60 minutes on the clock and an on-screen calculator. Applications are made by the nurse's employing Singapore healthcare institution through SNB's portal, not by the nurse. Each candidate has two attempts. SNB publishes a test plan listing four core competencies and their categories, but it does not publish the number of questions, the weights or the pass mark.",
+    rows: [
+      { label: "Core competencies", value: "Legal and ethical practice; professional nursing practice; collaborative practice and teamwork; continuing professional education" },
+      { label: "Format", value: "Computer-based multiple choice at a Pearson VUE test centre" },
+      { label: "Time", value: "60 minutes, with an on-screen calculator" },
+      { label: "Questions and pass mark", value: "Not published; 70% is Tigertest's readiness target" },
+      { label: "Attempts", value: "Two attempts per candidate" },
+      { label: "Applied for by", value: "The employing healthcare institution, through SNB's portal" },
+      { label: "Run by", value: "Singapore Nursing Board; delivered by Pearson VUE" },
+    ],
+    basedOn: "SNB RN Licensure Examination test plan (April 2026), SNB's licensure examination and CBT FAQ pages, and the Code for Nurses and Midwives (2018), checked November 2026",
+    source: { name: "Singapore Nursing Board: SNB Licensure Examinations", url: "https://www.snb.gov.sg/for-professionals/becoming-a-nurse-or-midwife/apply-for-registration-enrolment/snb-licensure-examinations/" },
+  },
   jeemain: {
     answer:
       "JEE (Main) Paper 1 is the National Testing Agency's computer-based entrance test for B.E. and B.Tech. admission to NITs, IIITs and other centrally funded institutes, and the qualifying test for JEE (Advanced). It has 75 questions for 300 marks in 3 hours: 25 each in Mathematics, Physics and Chemistry, of which 20 are multiple choice (Section A) and 5 need a numerical value typed as an integer (Section B). Every answer earns 4 marks if correct and loses 1 if wrong, in both sections. For 2027 it is held in two sessions, January and April, and the better NTA score counts.",

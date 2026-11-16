@@ -4197,6 +4197,18 @@
   }
 
   /* Nursing Council of New Zealand State Final Examination theme */
+  [data-theme="sgsnb"] {
+    --brand: 320 55% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 320 40% 95%;
+    --brand-hover: 320 55% 16%;
+    --brand-dark: 320 55% 14%;
+    --brand-darker: 320 50% 10%;
+    --brand-muted: 320 20% 66%;
+    --brand-border: 320 22% 78%;
+    --brand-border-light: 320 15% 88%;
+    --brand-gradient-to: 335 40% 95%;
+  }
   [data-theme="nzsfe"] {
     --brand: 305 30% 22%;
     --brand-foreground: 0 0% 100%;
@@ -9268,6 +9280,17 @@
     --brand-darker: 80 40% 78%;
   }
 
+  .dark [data-theme="sgsnb"] {
+    --brand: 320 55% 50%;
+    --brand-hover: 320 55% 42%;
+    --brand-light: 320 40% 13%;
+    --brand-gradient-to: 335 40% 11%;
+    --brand-border-light: 320 15% 24%;
+    --brand-border: 320 22% 34%;
+    --brand-muted: 320 20% 45%;
+    --brand-dark: 320 55% 65%;
+    --brand-darker: 320 50% 78%;
+  }
   .dark [data-theme="nzsfe"] {
     --brand: 305 30% 50%;
     --brand-hover: 305 30% 42%;

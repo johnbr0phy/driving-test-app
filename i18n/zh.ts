@@ -2575,6 +2575,17 @@ export const zh: TranslationKeys = {
     nzsfeMental: "Mental Health & Addiction",
     nzsfeChild: "Child, Maternal & Whānau Health",
     nzsfeLead: "Leadership, Safety & Communication",
+    // sgsnb
+    sgsnbLegal: "Law, Ethics & Culturally Safe Care",
+    sgsnbQuality: "Quality, Communication & Client Education",
+    sgsnbAssess: "Client Assessment & Reassessment",
+    sgsnbSafety: "Safety, Infection Control & Comfort",
+    sgsnbMeds: "Medications & Pharmacology",
+    sgsnbFluids: "Fluids, Nutrition & Elimination",
+    sgsnbEmergency: "Medical Emergencies & Respiratory Care",
+    sgsnbSurgical: "Surgical, Wound & Diabetes Care",
+    sgsnbMental: "Mental Health, Elder & End-of-Life Care",
+    sgsnbTeam: "Teamwork, Delegation & Professional Development",
     // sgrtt
     sgrtRider: "Rider Fitness, Gear & Posture",
     sgrtMachine: "Motorcycle Parts, Checks & Handling",

@@ -290,6 +290,7 @@ export const TEACHES: Record<string, string> = {
   nziqn: "a competence assessment preparation class",
   nzensf: "a Diploma in Enrolled Nursing class",
   sgvl: "the taxi or private hire car vocational licence course",
+  sgsnb: "a nursing school or hospital nursing class",
 };
 
 function question(examId: string): string {

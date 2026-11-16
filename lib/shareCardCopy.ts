@@ -395,6 +395,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   nzheavy: { title: "NZ Class 2 Licence Theory Test", description: "Practise work time and logbooks, loads, air brakes and heavy vehicle road rules." },
   nziqn: { title: "NZ IQN Theoretical Examination", description: "Practise medication safety calculations, the 2025 standards of competence and safe NZ nursing." },
   nzensf: { title: "NZ Enrolled Nurse State Final", description: "Practise medicine calculations, Te Tiriti, the EN scope, assessment, medicines and acute care." },
+  sgsnb: { title: "SNB RN Licensure Exam", description: "Practise the Code for Nurses and Midwives, assessment, infection control, medications, emergencies and elder care." },
   nzsfe: { title: "NZ Nursing State Final Exam", description: "Practise Te Tiriti, law and ethics, assessment, medicines, acute care and mental health." },
   sgrtt: { title: "Singapore Riding Theory Test", description: "Review motorcycle controls, braking, junctions, defensive riding and pillions for your RTT." },
   sgm5: { title: "CMFAS RES5 Practice Test", description: "Practise the FAA, FAA-N16, the balanced scorecard, AML, products, ethics and advisory skills." },

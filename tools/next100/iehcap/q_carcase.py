@@ -16,7 +16,7 @@ Q = [
  "Go with the body to the plant", ["Be buried at the kill site", "Be disposed of with the green offal", "Be kept in a separate bag at home"],
  "The head, except antlers, and all viscera apart from stomach and intestines must accompany the body, so an official vet can inspect them."),
 ("The cold chain for a large wild game body aims for:",
- "7 degrees C or below", ["Below freezing at all times", "4 degrees C or below", "10 degrees C or below"],
+ "7 degrees C or below", ["Below freezing at all times", "12 degrees C or below", "10 degrees C or below"],
  "Large wild game must reach 7 degrees C or below within a reasonable time after killing. Small game must reach 4 degrees C."),
 ("When transporting deer carcases, you should avoid:",
  "Heaping or stacking them", ["Using a clean vehicle", "Keeping them chilled", "Keeping them separate from dirt"],

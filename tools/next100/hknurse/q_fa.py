@@ -25,7 +25,7 @@ Q = [
  'Immobilise the limb as found', ['Realign the limb gently before splinting', 'Apply firm heat and massage the area', 'Ask the person to test the joint by moving it'],
  'Movement can damage nerves and vessels. The limb is supported in the position found, and help is called.'),
 ('A conscious person feels faint. What helps?',
- 'Lie flat and raise the legs', ['Sit with the head between the knees for several minutes', 'Stand still and take deep breaths', 'Give a sugary drink while standing'],
+ 'Lie flat and raise the legs', ['Stand up and walk around briskly', 'Stand still and take deep breaths', 'Give a sugary drink while standing'],
  'Raising the legs helps blood return to the brain. The person rises slowly once recovered.'),
 ('What should be avoided in first aid for swallowed poison?',
  'Making the person vomit', ['Giving small sips of water if they are alert', 'Keeping the container for the poison centre', 'Noting the time of swallowing'],

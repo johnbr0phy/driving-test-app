@@ -82,6 +82,6 @@ Q = [
  "Seven days", ["Forty-eight hours", "Fourteen days", "Thirty days"],
  "REA's agency agreement material says the standard clauses require seven days' written notice to cancel a general agency agreement."),
 ("Before a seller signs an agency agreement, which of these must the licensee set out in writing under rule 10.6?",
- "When the agreement ends", ["The vendor's likely sale price", "How many open homes are held", "Which lawyer will act for the buyer"],
+ "When the agreement ends", ["How many viewings the agent expects", "How many open homes are held", "Which lawyer will act for the buyer"],
  "Rule 10.6(b) requires the licensee to explain and set out in writing, among other things, when the agency agreement ends."),
 ]

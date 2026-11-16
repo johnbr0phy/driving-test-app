@@ -1,7 +1,7 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
 // /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk,
-// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de, /it and /fr. A view
+// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de, /it, /fr and /ch. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
@@ -9,7 +9,7 @@
 
 import type { Language } from "@/i18n";
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR" | "CH";
 
 /**
  * Every country with its own homepage. `lang` is the language its homepage is
@@ -47,6 +47,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "DE", name: "Germany", short: "DE", inName: "Germany", lang: "de", locale: "de-DE" },
   { code: "IT", name: "Italy", short: "IT", inName: "Italy", lang: "it", locale: "it-IT" },
   { code: "FR", name: "France", short: "FR", inName: "France", lang: "fr", locale: "fr-FR" },
+  { code: "CH", name: "Switzerland", short: "CH", inName: "Switzerland", lang: "en", locale: "en-CH" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -96,6 +97,8 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     // Metropolitan France and the overseas departments, which use the same Code de la route
     // and permis; Monaco, New Caledonia and French Polynesia have their own rules.
     case "FR": case "GP": case "MQ": case "GF": case "RE": case "YT": return "FR";
+    // Switzerland only: Liechtenstein has its own rules and stays unmapped.
+    case "CH": return "CH";
     default: return null;
   }
 }
@@ -142,6 +145,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", rocpi: "RO", rotaxi: "RO", roadmed: "RO", rorezid: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", grmoto: "GR", grcitizen: "GR", grsecurity: "GR", grinsure: "GR", dkteori: "DK", dkmoto: "DK", dktruck: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", hukreszmoto: "HU", hugki: "HU", huelsoseg: "HU", hubizt: "HU", bedriving: "BE", bemoto: "BE", bevracht: "BE", betoelating: "BE", befsmavz: "BE", fitheory: "FI", fimoto: "FI", fitruck: "FI", fihygiene: "FI", fihunt: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
   itpatente: "IT", itcils: "IT", itceli: "IT",
   frcode: "FR",
+  chtheory: "CH",
   jambeng: "NG", jambmath: "NG", wasscemath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG", wassceeng: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -444,6 +448,14 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Test code de la route", href: "/fr/code-de-la-route-test" },
     testsTitle: "Tests d'entraînement pour la France",
     testsSub: "Le code de la route pour le permis B, d'après le Code de la route en vigueur, en km/h et avec la circulation à droite : priorités, signalisation, vitesses, alcool, stationnement, premiers secours et écoconduite.",
+  },
+  CH: {
+    title: "Free Swiss Driving Theory Test Practice in English | Tigertest",
+    description: "Free practice for the Swiss basic theory test (category B car licence), in English: 200 original questions on Swiss road rules, signs and priority, every answer explained. No account needed.",
+    lead: "Practise for the Swiss basic theory test for your car learner licence, offered in English at the cantonal road traffic office. Original questions on signs, priority to the right, speed limits and safe driving, every answer explained. No signup.",
+    cta: { label: "Theory test", href: "/switzerland-driving-theory-test" },
+    testsTitle: "Driving theory test",
+    testsSub: "200 questions on Swiss road rules, in km/h for right-hand traffic. Four full 50-question tests, 45 to pass.",
   },
   MT: {
     title: "Free Malta Driving Theory Test Practice | Tigertest",

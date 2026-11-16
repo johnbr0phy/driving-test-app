@@ -55,6 +55,7 @@ const hubs: Record<string, ShareCard> = {
   de: { title: "Kostenlose Übungstests für Deutschland", lines: ["Kostenlose", "Übungstests für", "Deutschland"], description: "Führerschein-Theorie und Zertifizierungen. Jede Antwort erklärt.", footer: "Finde deinen Test auf tigertest.io/de", color: "#1F1F1F", tint: "#F2F2F2", mascots: ["dmv", "sat", "aws"] },
   it: { title: "Test di pratica gratuiti per l'Italia", lines: ["Test di pratica", "gratuiti per", "l'Italia"], description: "Quiz patente B e certificazioni di italiano B1. Ogni risposta spiegata.", footer: "Trova il tuo test su tigertest.io/it", color: "#00703C", tint: "#EDF8F2", mascots: ["dmv", "sat", "aws"] },
   fr: { title: "Tests d'entraînement gratuits pour la France", lines: ["Tests d'entraînement", "gratuits pour", "la France"], description: "Le code de la route pour le permis B. Chaque réponse expliquée.", footer: "Trouve ton test sur tigertest.io/fr", color: "#00136F", tint: "#EDEFFD", mascots: ["dmv", "sat", "aws"] },
+  ch: { title: "Free practice tests for Switzerland", lines: ["Free practice tests", "for Switzerland"], description: "The Swiss basic theory test for a car licence, in English.", footer: "Find your test at tigertest.io/ch", color: "#700006", tint: "#FDEDED", mascots: ["dmv", "sat", "aws"] },
   mt: { title: "Free practice tests for Malta", lines: ["Free practice tests", "for Malta"], description: "Transport Malta theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/mt", color: "#C00C0C", tint: "#FDEDED", mascots: ["dmv", "sat", "aws"] },
 };
 
@@ -1175,5 +1176,9 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "trcnpqe": {
     "color": "hsl(170, 20%, 38%)",
     "tint": "hsl(170, 30%, 95%)"
+  },
+  "chtheory": {
+    "color": "hsl(357, 100%, 22%)",
+    "tint": "hsl(357, 80%, 96%)"
   }
 };

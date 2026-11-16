@@ -37,7 +37,7 @@ const SHARE_COPY_IDS = new Set(["nzboat", "pentestplus", "sc200", "sc900", "ea1"
 const REMAINING_MASCOT_IDS = new Set(["capm", "psm", "itil", "cissp", "rbt", "cpc", "pcoc", "ukseru", "ibpspo", "ctet", "praxis", "gre", "gmat", "sie", "series7", "ssccgl", "rrbntpc"]);
 
 // The homepage cards were redrawn like the search homepage, and /tests and /teach got their own (Nov 2026).
-const HUB_IDS = new Set(["home", "tests", "teach", "uk", "ca", "au", "in", "ie", "nz", "ph", "my", "sg", "hk", "ae", "za", "ng", "pk", "ke", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de"]);
+const HUB_IDS = new Set(["home", "tests", "teach", "uk", "ca", "au", "in", "ie", "nz", "ph", "my", "sg", "hk", "ae", "za", "ng", "pk", "ke", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de", "ch"]);
 
 export function shareImageUrl(id: string, language = "en"): string {
   const query = new URLSearchParams({

@@ -4038,6 +4038,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Transport Malta's licensing guidance and the Highway Code of Malta (updated 25 July 2025), checked November 2026",
     source: { name: "Transport Malta: Obtaining your driving licence", url: "https://www.transport.gov.mt/land/licence/obtaining-your-driving-licence-786" },
   },
+  chtheory: {
+    answer:
+      "The Swiss basic theory test (Basis-Theorieprüfung) is the first test for a learner licence in category B (car) and categories A1 and A, taken at your canton's road traffic office. English is offered for this test only, alongside German, French and Italian. As the Aargau office describes it, there are 50 questions on a computer in 45 minutes out of 150 points, and you may collect at most 15 error points; Zurich's page lists 55 questions and 17 errors, the same 10%. Each question scores 1 to 3 error points and some have more than one right answer. If you fail, you can retake it after at least one day.",
+    rows: [
+      { label: "Run by", value: "Cantonal road traffic offices (Strassenverkehrsämter)" },
+      { label: "Questions", value: "About 50, three options, one or two right" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass rule", value: "At most 15 error points of 150 (Zurich lists 17)" },
+      { label: "Languages", value: "German, French, Italian and English" },
+      { label: "Who sits it", value: "First-time learner licence applicants (A1, A, B)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 45 to pass" },
+      { label: "Study material", value: "SVG, VRV and SSV (federal traffic law)" },
+    ],
+    basedOn: "the cantonal road traffic office pages of Zurich and Aargau and the Swiss federal road traffic law (SVG, VRV, SSV), checked November 2026",
+    source: { name: "Canton of Zurich: Theorieprüfung", url: "https://www.zh.ch/de/mobilitaet/fuehrerausweis-fahren-lernen/fahren-lernen/theoriepruefung.html" },
+  },
   mtmoto: {
     answer:
       "The Malta motorcycle theory test is Transport Malta's theory test for a moped or motorcycle licence in categories AM, A1, A2 and A, taken on a touch-screen computer at the Theory Test Centre. Transport Malta gives the theory test as 35 multiple-choice questions in 45 minutes, with 30 correct to pass, in English or Maltese. Malta's driving licence regulations add compulsory questions for motorcycle categories on protective clothing and helmets, how visible riders are, slippery surfaces such as drain covers and road markings, and the engine cut-out switch, oil and chain. For category AM the theory test is the whole test; for A1, A2 and A a practical test follows.",

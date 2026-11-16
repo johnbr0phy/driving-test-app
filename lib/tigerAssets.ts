@@ -136,6 +136,8 @@ const BORROWED_SETS: Record<string, string> = {
   itpatente: "driving", itcils: "itlanguage", itceli: "itlanguage",
   // France (Nov 2026): code de la route the car tiger.
   frcode: "driving",
+  // Switzerland (Nov 2026): the car tiger.
+  chtheory: "driving",
   // AP Italian (Nov 2026): the AP English Language tiger.
   apitalian: "aplang",
   // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.

@@ -12,7 +12,7 @@ Q = [
  "Cumulative cost at the end of year 2 is 5,000 x $11 x 2/3 = $36,667. Less the $15,000 recognized in year 1 (5,000 x $9 x 1/3) gives $21,667.",
  round(5000 * 11 * 2 / 3 - 5000 * 9 / 3)),
 ("For awards with only a service condition, an entity may account for forfeitures:",
- "By estimate or as they occur", ["Only as they occur", "Only by estimate", "Only when the award vests"],
+ "By estimate or as they occur", ["Only by estimate", "Only when the award vests", "Only through retained earnings"],
  "ASU 2016-09 lets an entity elect, as an accounting policy, to estimate expected forfeitures or to account for them when they happen."),
 ("An employee renders the full service required for an award with a market condition, but the target stock price is never reached. Previously recognized compensation cost is:",
  "Not reversed", ["Reversed in full", "Reversed in part", "Moved to equity reserves"],

@@ -1,7 +1,7 @@
 CAT = "cpabarGovTransactions"; SEG = "GVT"
 Q = [
 ("A city's capital assets, net, are $90,000,000. Related bonds payable are $52,000,000, of which $4,000,000 of proceeds is unspent and held in cash. Net investment in capital assets is:",
- "$42,000,000", ["$38,000,000", "$90,000,000", "$46,000,000"],
+ "$42,000,000", ["$48,000,000", "$90,000,000", "$46,000,000"],
  "Debt tied to unspent proceeds is excluded, so the related debt is $52,000,000 - $4,000,000 = $48,000,000, and $90,000,000 - $48,000,000 = $42,000,000.",
  90000000 - (52000000 - 4000000)),
 ("A state's total pension liability is $480,000,000 and its pension plan's fiduciary net position is $395,000,000. The net pension liability reported is:",
@@ -21,7 +21,7 @@ Q = [
  "The general fund", ["Every governmental fund", "Special revenue funds", "Capital projects funds"],
  "Under GASB Statement 54 the general fund is the only fund that reports a positive unassigned balance. Other governmental funds report unassigned only as a deficit."),
 ("A general fund's total fund balance is $10,000,000. It holds $300,000 of inventory, $1,200,000 restricted by a grant, $2,000,000 set aside by council ordinance and $1,500,000 earmarked by the city manager under delegated authority. Unassigned fund balance is:",
- "$5,000,000", ["$6,500,000", "$8,500,000", "$4,700,000"],
+ "$5,000,000", ["$6,500,000", "$8,500,000", "$5,300,000"],
  "Unassigned is the residual: $10,000,000 - $300,000 nonspendable - $1,200,000 restricted - $2,000,000 committed - $1,500,000 assigned = $5,000,000.",
  10000000 - 300000 - 1200000 - 2000000 - 1500000),
 ("A city levies $20,000,000 of property taxes for the current year and expects 2% to be uncollectible. In the government-wide statements, property tax revenue for the year is:",
@@ -35,7 +35,7 @@ Q = [
  "A liability", ["Revenue", "A deferred inflow", "Restricted fund balance"],
  "GASB Statement 65 treats resources received before eligibility requirements other than time are met as liabilities. Only unmet time requirements give a deferred inflow."),
 ("A general fund issues a purchase order for $25,000 of equipment and records the encumbrance. The equipment arrives with an invoice for $24,600. The expenditure recorded is:",
- "$24,600", ["$25,000", "$400", "$49,600"],
+ "$24,600", ["$25,000", "$25,400", "$49,600"],
  "The encumbrance is reversed for the $25,000 ordered, and the expenditure is recorded at the actual invoice amount of $24,600.",
  24600),
 ("A city's general fund budget shows estimated revenues of $50,000,000 and appropriations of $48,000,000. In recording the budget, budgetary fund balance is credited for:",

@@ -1,0 +1,14 @@
+{
+  "blurb": "NHA Certified Electronic Health Records Specialist exam on the CEHRS test plan: patient identifiers, registration and EHR support, clinical documentation and data exchange, codes, claims and the revenue cycle, HIPAA, HITECH and information blocking, and EHR reports.",
+  "org": "National Healthcareer Association (NHA) · CEHRS test plan (2019 job analysis)",
+  "group": "Healthcare certification exams",
+  "groupAfter": "cmaa",
+  "aliases": ["cehrs", "nha cehrs", "ehr specialist", "electronic health records specialist", "certified electronic health records specialist", "electronic health record specialist", "ehr certification", "health records specialist", "medical records specialist", "nha ehr"],
+  "teacherLed": true,
+  "teaches": "an electronic health records specialist program",
+  "borrowTiger": "cpc",
+  "shareTitle": "Free CEHRS Practice Test",
+  "shareDescription": "200 original questions on the NHA CEHRS test plan for electronic health records specialists. Free to start.",
+  "searchTests": [["cehrs", "US", "cehrs"], ["nha cehrs", "US", "cehrs"], ["electronic health records specialist", "US", "cehrs"], ["ehr specialist exam", "US", "cehrs"]],
+  "region": "TEST_REGIONS: cehrs is US (the default; add a line only if the file lists every US exam)"
+}

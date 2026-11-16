@@ -193,6 +193,8 @@ const BORROWED_SETS: Record<string, string> = {
   // and Series 7 families.
   iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl",
   nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving", sgsnb: "nclex",
+  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", iehcap: "hunter", nzmoto: "moto", nzheavy: "cdl",
+  nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.
   phnle: "nclex", phmidwife: "nclex", phmedtech: "htl", phpharm: "ptcb", phpsychom: "appsych",

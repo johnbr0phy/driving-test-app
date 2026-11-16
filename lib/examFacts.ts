@@ -6294,4 +6294,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
     source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
   },
+  iehcap: {
+    answer:
+      "HCAP, the Hunter Competence Assessment Programme, is Ireland's deer hunter certification run by the Deer Alliance HCAP Assessment Committee. NPWS lists it as one of three approved courses for first-time Deer Hunting Licence applicants, and the Deer Alliance says Coillte requires HCAP or an equivalent for hunting deer on its forests. The first stage is a written multiple-choice test of 50 questions, and you need 40 correct (80%). Candidates who pass go on to a Range Test at 100 metres and then an oral safety examination. The Stalker Training Manual is the core text, and the written test covers deer biology and species, management, rifles and firearms safety, the law and carcase handling.",
+    rows: [
+      { label: "Run by", value: "Deer Alliance HCAP Assessment Committee" },
+      { label: "Written stage", value: "50 multiple-choice questions" },
+      { label: "Pass mark", value: "40 of 50 (80%)" },
+      { label: "Then", value: "Range Test (100 m) and an oral safety examination" },
+      { label: "Accepted for", value: "A first NPWS Deer Hunting Licence, and Coillte deer hunting" },
+      { label: "Core text", value: "HCAP Stalker Training Manual" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 40 to pass" },
+    ],
+    basedOn: "Deer Alliance HCAP certification procedure, the HCAP Stalker Manual contents and the NPWS deer hunting licence pages, checked November 2026",
+    source: { name: "Deer Alliance: HCAP certification", url: "https://www.deeralliance.ie/certification" },
+  },
 };

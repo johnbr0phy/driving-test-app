@@ -5721,6 +5721,20 @@
     --brand-gradient-to: 345 60% 96%;
   }
 
+  /* HCAP (Ireland deer hunter competence) theme: emerald green */
+  [data-theme="iehcap"] {
+    --brand: 148 90% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 148 70% 95%;
+    --brand-hover: 148 90% 26%;
+    --brand-dark: 148 90% 20%;
+    --brand-darker: 148 85% 11%;
+    --brand-muted: 148 25% 68%;
+    --brand-border: 148 30% 78%;
+    --brand-border-light: 148 25% 88%;
+    --brand-gradient-to: 150 70% 95%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -10600,6 +10614,16 @@
     --brand-muted: 136 25% 45%;
     --brand-dark: 136 55% 65%;
     --brand-darker: 136 50% 78%;
+  }
+
+  .dark [data-theme="iehcap"] {
+    --brand-light: 148 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 148 25% 24%;
+    --brand-border: 148 30% 34%;
+    --brand-muted: 148 25% 45%;
+    --brand-dark: 148 90% 65%;
+    --brand-darker: 148 85% 78%;
   }
 
 }

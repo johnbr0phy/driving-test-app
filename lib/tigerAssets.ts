@@ -66,6 +66,7 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
 const BORROWED_SETS: Record<string, string> = {
   hknurse: "nclex",
   bcrealestate: "realestate",
+  cacore: "hunter",
   nzboat: "boating",
   ea1: "cpareg",
   cpabar: "cpafar",

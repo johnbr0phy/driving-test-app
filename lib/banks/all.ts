@@ -290,3 +290,4 @@ import "./hknurse";
 import "./bcrealestate";
 import "./aerera";
 import "./nzrealestate";
+import "./cacore";

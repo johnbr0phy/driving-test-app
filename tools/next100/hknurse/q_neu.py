@@ -45,7 +45,7 @@ Q = [
 ('How should a nosebleed be managed in first aid?',
  'Lean forward, pinch the soft nose', ['Lie flat and tilt the head back', 'Pinch the bridge of the nose', 'Pack the nostril with cotton wool'],
  'Leaning forward stops blood being swallowed, and pressure on the soft part of the nose compresses the bleeding point.'),
-('A client with a high spinal cord injury has a sudden severe headache and hypertension. What should the nurse check first?',
+('A client with a high spinal cord injury has a sudden severe headache and hypertension. After sitting the client upright, which cause should the nurse look for first?',
  'Bladder distension', ['Blood glucose level', 'Mattress firmness', 'Pulse rate in the feet'],
  'Autonomic dysreflexia is triggered by stimuli below the injury, most often bladder distension or bowel impaction. It is an emergency.'),
 ]

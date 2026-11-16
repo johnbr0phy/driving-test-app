@@ -287,6 +287,9 @@ const CASES = [
   ["dsc1", "UK", "ukdsc1"],
   ["deer stalking certificate", "UK", "ukdsc1"],
   ["dsc level 1", "UK", "ukdsc1"],
+  ["bc core", "CA", "cacore"],
+  ["core exam", "CA", "cacore"],
+  ["bc hunting test", "CA", "cacore"],
 ];
 
 for (const [q, region, id] of CASES) {

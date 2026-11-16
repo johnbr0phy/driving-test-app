@@ -33,7 +33,7 @@ Q = [
 ('Which organism causes oral thrush?',
  'Candida albicans', ['Staphylococcus aureus', 'Herpes simplex virus', 'Trichomonas vaginalis'],
  'Thrush is a fungal infection and can follow antibiotic or steroid use.'),
-('Which spore-forming bacterium causes tetanus?',
+('Which spore-forming bacterium found in soil can enter a puncture wound and cause muscle spasms and lockjaw?',
  'Clostridium tetani', ['Neisseria meningitidis', 'Vibrio cholerae', 'Salmonella typhi'],
  'Its spores live in soil and enter through wounds, where they produce a toxin that causes muscle spasm.'),
 ]

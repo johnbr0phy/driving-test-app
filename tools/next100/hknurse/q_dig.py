@@ -40,7 +40,7 @@ Q = [
  'Oral rehydration solution', ['Antibiotics for every case', 'Fasting for a full day', 'Sweetened fizzy drinks'],
  'Oral rehydration solution replaces water and salts. Fizzy drinks have too much sugar and too little sodium.'),
 ('Which stool is expected from a descending colostomy?',
- 'Formed stool', ['Watery effluent', 'Liquid stool', 'Bile only'],
+ 'Formed stool', ['Watery effluent', 'Semi-formed, pasty stool', 'Bile only'],
  'The colon absorbs water along its length, so output from the descending colon is firmer than from an ileostomy.'),
 ('Which advice helps prevent constipation?',
  'Eat more fibre and drink fluids', ['Eat mostly refined white foods', 'Ignore the urge to defecate', 'Limit fluids to a small amount'],

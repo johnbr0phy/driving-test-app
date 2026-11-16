@@ -300,6 +300,11 @@
   "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study",
   "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/results.html"
  ],
+ "cacore": [
+  "https://www.bcwf.bc.ca/core/",
+  "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96488_01",
+  "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/190_84_01"
+ ],
  "cadc": [
   "https://internationalcredentialing.org/wp-content/uploads/2025/07/ADC-Candidate-Guide-2022.pdf",
   "https://internationalcredentialing.org/icrc-credentials/credentials/",

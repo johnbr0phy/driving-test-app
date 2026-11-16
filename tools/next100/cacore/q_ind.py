@@ -1,0 +1,28 @@
+CAT = "cacoreIndigenous"; SEG = "IND"
+# Sources: Constitution Act, 1982 s. 35; Migratory Birds Regulations, 2022 s. 21 (laws-lois.justice.gc.ca).
+Q = [
+('Section 35(1) of the Constitution Act, 1982 says existing aboriginal and treaty rights are:',
+ 'Recognized and affirmed', ['Suspended during the open season', 'Set by each province in turn', 'Limited to land claims areas'],
+ 'Section 35(1) says the existing aboriginal and treaty rights of the aboriginal peoples of Canada are hereby recognized and affirmed.'),
+('Under section 35(2), the aboriginal peoples of Canada include the Indian, Inuit and:',
+ 'Métis peoples', ['Acadian peoples', 'Settler peoples', 'Territorial peoples'],
+ 'Section 35(2) says aboriginal peoples of Canada includes the Indian, Inuit and Métis peoples.'),
+('Under section 35(3), treaty rights include rights that exist by way of:',
+ 'Land claims agreements', ['Provincial licences and tags', 'Municipal by-laws and permits', 'Private contracts with landowners'],
+ 'Section 35(3) includes rights that now exist, or may be acquired, by way of land claims agreements.'),
+('Section 35(4) guarantees aboriginal and treaty rights equally to:',
+ 'Male and female persons', ['Residents of large cities only', 'Licensed hunters and guides only', 'Adults over 18 only'],
+ 'Section 35(4) says the rights are guaranteed equally to male and female persons.'),
+('Section 35 of the Constitution Act, 1982 protects which rights?',
+ 'Existing aboriginal and treaty rights', ['Hunting licence rights only', 'Guide outfitter rights only', 'Tag allocation rights only'],
+ 'Section 35(1) protects the existing aboriginal and treaty rights of the aboriginal peoples of Canada.'),
+('The Migratory Birds Regulations, 2022 provide an exception for:',
+ 'Aboriginal rights holders', ['Licensed hunting guides only', 'Landowners with large tracts', 'Foreign visitors with a permit'],
+ 'Section 21 of the Regulations provides exceptions for aboriginal rights holders.'),
+('Treaty rights described in section 35 can also be acquired in future through:',
+ 'Land claims agreements', ['Municipal councils and by-laws', 'Hunting clubs and associations', 'Landowner letters and notices'],
+ 'Section 35(3) covers rights that now exist or may be acquired by way of land claims agreements.'),
+('Who are the aboriginal peoples of Canada according to section 35(2)?',
+ 'Indian, Inuit and Métis peoples', ['Only First Nations and registered hunters', 'Only registered hunters and trappers', 'Only treaty signers and landowners'],
+ 'Section 35(2) defines aboriginal peoples of Canada to include the Indian, Inuit and Métis peoples.'),
+]

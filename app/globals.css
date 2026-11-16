@@ -5800,6 +5800,18 @@
     --brand-border: 94 20% 80%;
     --brand-border-light: 94 18% 89%;
     --brand-gradient-to: 99 70% 96%;
+  /* BC CORE hunter exam theme */
+  [data-theme="cacore"] {
+    --brand: 28 25% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 28 25% 95%;
+    --brand-hover: 28 25% 16%;
+    --brand-dark: 28 25% 12%;
+    --brand-darker: 28 25% 8%;
+    --brand-muted: 28 15% 70%;
+    --brand-border: 28 15% 78%;
+    --brand-border-light: 28 12% 88%;
+    --brand-gradient-to: 100 25% 95%;
   }
 
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
@@ -10749,6 +10761,16 @@
     --brand-muted: 94 20% 45%;
     --brand-dark: 94 60% 65%;
     --brand-darker: 94 55% 78%;
+  .dark [data-theme="cacore"] {
+    --brand: 28 25% 44.4%;
+    --brand-hover: 28 25% 36.4%;
+    --brand-light: 28 25% 13%;
+    --brand-gradient-to: 100 25% 11%;
+    --brand-border-light: 28 12% 24%;
+    --brand-border: 28 15% 34%;
+    --brand-muted: 28 15% 45%;
+    --brand-dark: 28 25% 65%;
+    --brand-darker: 28 25% 78%;
   }
 
 }

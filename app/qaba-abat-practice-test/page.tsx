@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "What score do you need to pass the ABAT exam?",
-    a: "QABA sets the pass point at 72%, and candidates see a pass or fail result right after the exam. The practice tests here use the same 72% line. A candidate who fails may schedule a second attempt right away, then wait 7 days between later attempts.",
+    a: "QABA sets the pass point at 72%, and candidates see a pass or fail result right after the exam. The practice tests here use the same 72% line. A candidate who fails may schedule a second attempt right away; a third or fourth attempt comes at least 7 days after the one before, and no one may test more than 8 times within a year of the first attempt.",
   },
   {
     q: "What is on the ABAT exam?",

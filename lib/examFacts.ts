@@ -496,7 +496,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
         { label: "Pass mark", value: "72%, pass or fail shown right after the exam" },
         { label: "Content", value: "14 domains (ABAT job analysis test specifications)" },
         { label: "Biggest domain", value: "Autism Spectrum Disorder Basics, 12 of 100" },
-        { label: "Retakes", value: "Second attempt right away, then 7 days between attempts" },
+        { label: "Retakes", value: "Second attempt right away, then 7 days before a third or fourth; at most 8 in a year" },
         { label: "Where", value: "Online, live-proctored by Premier Proctoring" },
         { label: "Run by", value: "Qualified Applied Behavior Analysis Credentialing Board (QABA)" },
       ],

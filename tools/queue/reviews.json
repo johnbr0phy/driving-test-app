@@ -1,64 +1,555 @@
 {
   "_": "Second-reviewer checks of whole banks: a reviewer that did not write the questions answered every one without the key and its findings were fixed. One entry per check. /build-tests adds an entry for each test it ships. Read by scripts/test-progress.ts. Tests built before 2026-11-14 are not listed: their reviews were not recorded per test.",
   "reviews": {
-    "nzboat": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 2 }],
-    "pentestplus": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 0 }],
-    "sc200": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 26 }],
-    "sc900": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 10 }],
-    "ea1": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 24 }],
-    "cpabar": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 43 }],
-    "cehrs": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 125 }],
-    "cpcta": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 32 }],
-    "pance": [{ "date": "2026-11-16", "kind": "blind review at build", "pr": 862, "findings": 45 }],
-    "cpatcp": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 2 }],
-    "fortinse": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 1 }],
-    "aufirearmswa": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 3 }],
-    "hspacis": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 1 }],
-    "mace": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 3 }],
-    "ncma": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 2 }],
-    "aufirearmsvic": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 4 }],
-    "cbspd": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 1 }],
-    "cmaa": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 6 }],
-    "ascpmlt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 847, "findings": 3 }],
-    "lsat": [{ "date": "2026-11-14", "kind": "blind review at build", "pr": 797 }, { "date": "2026-11-14", "kind": "independent re-check of every question", "pr": 799 }],
-    "mcat": [{ "date": "2026-11-14", "kind": "blind review at build", "pr": 797 }, { "date": "2026-11-14", "kind": "independent re-check of every question", "pr": 799 }],
-    "wassceeng": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 806 }],
-    "wasscemath": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 806 }],
-    "staaralg1": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 6 }],
-    "staareng1": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 11 }],
-    "staarbio": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 8 }],
-    "wonderlic": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 5 }],
-    "ase": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 5 }],
-    "toeflread": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 807, "findings": 4 }],
-    "afoqt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 11 }],
-    "shsat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 4 }],
-    "cbest": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 9 }],
-    "tabe": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 6 }],
-    "dat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 3 }],
-    "ccrn": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 809, "findings": 3 }],
-    "isee": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 6 }],
-    "ssat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 3 }],
-    "mblex": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 7 }],
-    "cogat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 7 }],
-    "hspt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 3 }],
-    "naplex": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 810, "findings": 6 }],
-    "cen": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 4 }],
-    "rma": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 3 }],
-    "dktruck": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 5 }],
-    "iimcat": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 1 }],
-    "nziqn": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 2 }],
-    "nzensf": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 813, "findings": 5 }],
-    "aufirearmsqld": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }],
-    "bcba": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 8 }],
-    "bcaba": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
-    "hspacer": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 10 }],
-    "hspachl": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }],
-    "rpt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 6 }],
-    "ascppbt": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 2 }],
-    "crfsc": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
-    "cadc": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
-    "nzdrone": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }],
-    "nzham": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }],
-    "aufirearmsnsw": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }]
+    "nzboat": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 2
+      }
+    ],
+    "pentestplus": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 0
+      }
+    ],
+    "sc200": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 26
+      }
+    ],
+    "sc900": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 10
+      }
+    ],
+    "ea1": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 24
+      }
+    ],
+    "cpabar": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 43
+      }
+    ],
+    "cehrs": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 125
+      }
+    ],
+    "cpcta": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 32
+      }
+    ],
+    "pance": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 862,
+        "findings": 45
+      }
+    ],
+    "cpatcp": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 2
+      }
+    ],
+    "fortinse": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 1
+      }
+    ],
+    "aufirearmswa": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 3
+      }
+    ],
+    "hspacis": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 1
+      }
+    ],
+    "mace": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 3
+      }
+    ],
+    "ncma": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 2
+      }
+    ],
+    "aufirearmsvic": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 4
+      }
+    ],
+    "cbspd": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 1
+      }
+    ],
+    "cmaa": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 6
+      }
+    ],
+    "ascpmlt": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 847,
+        "findings": 3
+      }
+    ],
+    "lsat": [
+      {
+        "date": "2026-11-14",
+        "kind": "blind review at build",
+        "pr": 797
+      },
+      {
+        "date": "2026-11-14",
+        "kind": "independent re-check of every question",
+        "pr": 799
+      }
+    ],
+    "mcat": [
+      {
+        "date": "2026-11-14",
+        "kind": "blind review at build",
+        "pr": 797
+      },
+      {
+        "date": "2026-11-14",
+        "kind": "independent re-check of every question",
+        "pr": 799
+      }
+    ],
+    "wassceeng": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 806
+      }
+    ],
+    "wasscemath": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 806
+      }
+    ],
+    "staaralg1": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 807,
+        "findings": 6
+      }
+    ],
+    "staareng1": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 807,
+        "findings": 11
+      }
+    ],
+    "staarbio": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 807,
+        "findings": 8
+      }
+    ],
+    "wonderlic": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 807,
+        "findings": 5
+      }
+    ],
+    "ase": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 807,
+        "findings": 5
+      }
+    ],
+    "toeflread": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 807,
+        "findings": 4
+      }
+    ],
+    "afoqt": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 809,
+        "findings": 11
+      }
+    ],
+    "shsat": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 809,
+        "findings": 4
+      }
+    ],
+    "cbest": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 809,
+        "findings": 9
+      }
+    ],
+    "tabe": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 809,
+        "findings": 6
+      }
+    ],
+    "dat": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 809,
+        "findings": 3
+      }
+    ],
+    "ccrn": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 809,
+        "findings": 3
+      }
+    ],
+    "isee": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 810,
+        "findings": 6
+      }
+    ],
+    "ssat": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 810,
+        "findings": 3
+      }
+    ],
+    "mblex": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 810,
+        "findings": 7
+      }
+    ],
+    "cogat": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 810,
+        "findings": 7
+      }
+    ],
+    "hspt": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 810,
+        "findings": 3
+      }
+    ],
+    "naplex": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 810,
+        "findings": 6
+      }
+    ],
+    "cen": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 813,
+        "findings": 4
+      }
+    ],
+    "rma": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 813,
+        "findings": 3
+      }
+    ],
+    "dktruck": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 813,
+        "findings": 5
+      }
+    ],
+    "iimcat": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 813,
+        "findings": 1
+      }
+    ],
+    "nziqn": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 813,
+        "findings": 2
+      }
+    ],
+    "nzensf": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 813,
+        "findings": 5
+      }
+    ],
+    "aufirearmsqld": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 1
+      }
+    ],
+    "bcba": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 8
+      }
+    ],
+    "bcaba": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 5
+      }
+    ],
+    "hspacer": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 10
+      }
+    ],
+    "hspachl": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 1
+      }
+    ],
+    "rpt": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 6
+      }
+    ],
+    "ascppbt": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 2
+      }
+    ],
+    "crfsc": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 5
+      }
+    ],
+    "cadc": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 5
+      }
+    ],
+    "nzdrone": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 4
+      }
+    ],
+    "nzham": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 1
+      }
+    ],
+    "aufirearmsnsw": [
+      {
+        "date": "2026-11-15",
+        "kind": "blind review at build",
+        "pr": 821,
+        "findings": 4
+      }
+    ],
+    "sgsnb": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 7
+      }
+    ],
+    "iehcap": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 6
+      }
+    ],
+    "ukdsc1": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 3
+      }
+    ],
+    "hknurse": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 5
+      }
+    ],
+    "bcrealestate": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 7
+      }
+    ],
+    "aerera": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 27
+      }
+    ],
+    "nzrealestate": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 8
+      }
+    ],
+    "cacore": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 16
+      }
+    ],
+    "chtheory": [
+      {
+        "date": "2026-11-16",
+        "kind": "blind review at build",
+        "pr": 867,
+        "findings": 13
+      }
+    ]
   }
 }

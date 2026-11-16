@@ -292,6 +292,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NCCT's NCMA Detailed Test Plan (effective January 2024) and Candidate Handbook (revised January 2026), checked November 2026",
     source: { name: "NCCT: NCMA Detailed Test Plan", url: "https://www.ncctinc.com/Documents/MA%20Detailed%20Test%20Plan.pdf" },
   },
+  ncpt: {
+    answer:
+      "The National Certified Phlebotomy Technician (NCPT) exam is the National Center for Competency Testing's (NCCT) certification exam for phlebotomy technicians. NCCT's detailed test plan, effective January 2025, gives it 100 scored questions plus 25 unscored pretest questions, with three hours to finish; about 92% are four-option multiple choice and 8% are alternative items such as drag and drop, multi-select and hotspot. Scores run from 200 to 720 and a scaled 575 passes, which is not a fixed percentage. The plan has five content categories: Infection Control and Safety 15 items, Preparing for Specimen Collection 25 (Equipment Selection 12, Patient and Site Preparation 13), Specimen Collection 30, Collection Complications and Troubleshooting 15, and Law and Ethics 15. It is taken on a computer at a test site or by remote testing, in English only.",
+    rows: [
+      { label: "Questions", value: "125 (100 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "575 on a 200 to 720 scale" },
+      { label: "Largest areas", value: "Specimen Collection 30, Preparing for Specimen Collection 25, then 15 each for the other three" },
+      { label: "Eligibility", value: "NCCT-authorized phlebotomy program (student or graduate within 5 years), 1 year of full-time work as a phlebotomy technician within the past 5 years, or military training; most routes need a critical skills form" },
+      { label: "Where", value: "Computer based, at a test site or by remote testing; English only" },
+      { label: "Retakes", value: "After 30 days for a 2nd and 3rd try, 90 days for a 4th, then 180 days with an appeal" },
+      { label: "Given by", value: "NCCT" },
+    ],
+    basedOn: "NCCT's NCPT Detailed Test Plan (effective January 2025) and Candidate Handbook (revised January 2026), checked November 2026",
+    source: { name: "NCCT: NCPT Detailed Test Plan", url: "https://www.ncctinc.com/Documents/NCPT_2025.pdf" },
+  },
   aufirearmsvic: {
     answer:
       "In Victoria, a firearm licence is not issued unless the applicant has satisfactorily completed an approved course of firearms safety and has a good knowledge of firearms law (Firearms Act 1996, s 17). Victoria Police sets the minimum course requirements and approves independent instructors; the longarm course ends with a short multiple-choice safety and law knowledge test sat in person, and a pass earns a certificate for the licence application. Licences are issued by Victoria Police's Licensing and Regulation Division. An adult applicant must be 18 or over, live or work in Victoria, be a fit and proper person with a genuine reason, and be able to meet the storage rules. A first licence cannot be issued until 28 days after applying.",

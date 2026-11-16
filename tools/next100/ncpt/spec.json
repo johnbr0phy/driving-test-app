@@ -7,7 +7,7 @@
   "slug": "/ncpt",
   "landingPath": "/ncpt-practice-test",
   "dataFile": "data/ncpt-questions.json",
-  "name": "NCPT Practice Test",
+  "name": "NCPT Phlebotomy Practice Test",
   "shortName": "NCPT (NCCT)",
   "icon": "syringe",
   "passPct": 70,

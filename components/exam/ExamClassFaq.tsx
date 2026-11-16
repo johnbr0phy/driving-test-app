@@ -25,6 +25,7 @@ export const TEACHES: Record<string, string> = {
   cadc: "an addiction counseling program",
   ascppbt: "a phlebotomy program",
   rpt: "a phlebotomy program",
+  ncpt: "a phlebotomy program",
   hspachl: "a sterile processing leadership course",
   hspacer: "a sterile processing program",
   bcaba: "an undergraduate BCaBA course sequence",

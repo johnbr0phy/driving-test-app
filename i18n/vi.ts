@@ -1195,6 +1195,14 @@ export const vi: TranslationKeys = {
     ncmaEcg: "ECG",
     ncmaAdmin: "Medical Administrative Duties",
     ncmaLaw: "Law & Ethics",
+    // ncpt
+    ncptInfection: "Infection Control & Safety",
+    ncptEquipment: "Equipment Selection",
+    ncptPatientPrep: "Patient & Site Preparation",
+    ncptCollection: "Blood Collection Procedures",
+    ncptProcessing: "Processing, POCT & Non-Blood",
+    ncptComplications: "Complications & Troubleshooting",
+    ncptLaw: "Law and Ethics",
     // mace
     maceRole: "Role of the MA-C & Delegation",
     maceEthics: "Relationships, Legal & Resources",

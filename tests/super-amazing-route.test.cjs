@@ -13,10 +13,11 @@ let batch;
 require.cache[cronPath].exports = {
   ...cron,
   buildAuthMap: async () => new Map(),
-  getEligibleUsers: async (_auth, includeLegacy, includeInactive) => {
+  getEligibleUsers: async (_auth, includeLegacy, includeInactive, prefilter) => {
     audienceCalls++;
     assert.equal(includeLegacy, false);
-    assert.equal(includeInactive, undefined, 'shared consent/activity/internal-account filtering stays enabled');
+    assert.equal(includeInactive, false, 'shared consent/activity/internal-account filtering stays enabled');
+    assert.equal(typeof prefilter, 'function', 'only accounts not yet sent this email are fetched in full');
     return users;
   },
   processBatch: async (options) => {

@@ -8,7 +8,7 @@ const now=Date.now(), day=86400000;
 let users,batch, reengagement,inactive;
 try {
  Module._load=function(request,parent,main){
-  if(request==='@/lib/cron-email') return {buildAuthMap:async()=>new Map(),getEligibleUsers:async()=>users,verifyCronSecret:()=>true,emailedRecently:()=>false,processBatch:async o=>{batch=o;return{eligible:o.users.length,sent:0};}};
+  if(request==='@/lib/cron-email') return {buildAuthMap:async()=>new Map(),getEligibleUsers:async()=>users,verifyCronSecret:()=>true,emailedRecently:()=>false,notSentAndNotRecent:()=>()=>true,processBatch:async o=>{batch=o;return{eligible:o.users.length,sent:0};}};
   return original.call(this,request,parent,main);
  };
  reengagement=require('../app/api/cron/reengagement/route.ts').GET;

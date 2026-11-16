@@ -4,6 +4,8 @@ export const TIGER_EXAM_IDS = [
   "afoqt", "shsat", "wonderlic", "mblex",
   // Reviewed medical-office administrator and medication-aide sets.
   "cmaa", "mace",
+  // Reviewed physician-assistant and electronic-health-records specialists.
+  "pance", "cehrs",
   "driving", // Car-test mascot; original site branding remains at the public root.
   "cdl", "cdlx", "moto", "civics", "part107", "ham", "epa608",
   "cna", "ptcb", "phleb", "cet", "htl", "cst", "crcst",
@@ -70,9 +72,7 @@ const BORROWED_SETS: Record<string, string> = {
   nzboat: "boating",
   ea1: "cpareg",
   cpabar: "cpafar",
-  cehrs: "cpc",
   cpcta: "cna",
-  pance: "nclex",
   cpatcp: "cpareg",
   aufirearmswa: "capal",
   hspacis: "crcst",

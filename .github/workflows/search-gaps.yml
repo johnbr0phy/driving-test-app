@@ -90,7 +90,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
-          claude_args: --max-turns 500 --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
+          claude_args: --max-turns 500 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
           prompt: |
             Read CLAUDE.md. Today's search gaps are in ${{ env.REPORT }}.md, with details
             in ${{ env.REPORT }}.json: searches on the site that find no test, most-searched

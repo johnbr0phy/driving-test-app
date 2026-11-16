@@ -52,7 +52,7 @@ Q = [
  "Contribution", ["Substitution", "Anticipation", "Regression"],
  "Under contribution, an improvement is worth what it adds to the property's market value, not necessarily what it cost."),
 ("The highest and best use of a site is the use that is:",
- "Legal, possible and most profitable", ["Cheapest to build", "Chosen by the neighbour", "Current for 10 years"],
+ "Legal, possible and most profitable", ["Lowest in construction cost", "Most popular with the neighbours", "Current use for the past 10 years"],
  "Highest and best use is the legally permissible, physically possible, financially feasible and maximally productive use."),
 ("Which best describes market value?",
  "Likely price in an open, competitive market", ["The seller's asking price", "The assessed tax value", "The mortgage balance"],

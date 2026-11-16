@@ -94,7 +94,7 @@ Q = [
  d(160000), [d(640000), d(80000), d(8000)],
  "The loan is 640,000, leaving 160,000, which is 20% of the price."),
 ("What is the term of a mortgage?",
- "The period a rate and conditions apply", ["The total time to repay in full", "The time between payments", "The age of the lender"],
+ "The period a rate and conditions apply", ["The total time needed to repay in full", "The time between each of the payments", "The length of each payment period"],
  "Term is the length of the contract, often 1 to 5 years, after which the mortgage is renewed or repaid. Amortization is the total repayment period."),
 ("A closed mortgage normally:",
  "Limits early prepayment", ["Lets any amount be repaid free", "Has no fixed rate", "Has no registration"],

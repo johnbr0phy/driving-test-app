@@ -44,6 +44,103 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  nzboat: {
+    answer:
+      "Day Skipper is Coastguard Boating Education's introductory course for recreational boaties and crew in New Zealand, especially people new to being skipper of their own boat. Its learning outcomes are the parts of a boat and its equipment, basic boat handling, navigational charts, basic tide and weather terms, navigational marks, Maritime Rules and Regulations, emergencies and common marine knots. It runs in a classroom (four weeks including two days in class), a virtual classroom or online self-study within four weeks, and every version ends with an online assessment. Coastguard Boating Education does not publish the number of questions or a pass mark; a learner who falls short gets feedback and a second attempt at the questions they got wrong. The certificate is an internal Coastguard Education certificate, not an NZQA qualification. New Zealand requires no licence to skipper a recreational boat, but skippers must follow the Maritime Rules and regional bylaws.",
+    rows: [
+      { label: "Run by", value: "Coastguard Boating Education" },
+      { label: "Assessment", value: "Online assessment at the end of the course; no question count or pass mark published" },
+      { label: "Resits", value: "Feedback, then a second attempt at the questions answered wrongly" },
+      { label: "Course", value: "Classroom (2 days), virtual classroom or online self-study, within 4 weeks" },
+      { label: "Covers", value: "Boat and equipment, handling, charts, tides and weather, marks, Maritime Rules, emergencies, knots" },
+      { label: "Eligibility", value: "Domestic learners aged 16 and over" },
+      { label: "Certificate", value: "Coastguard Education internal certificate (not NZQA)" },
+      { label: "Licence needed to skipper?", value: "No, but the Maritime Rules and regional bylaws apply" },
+    ],
+    basedOn: "Coastguard Boating Education's Day Skipper course page, its Domestic Learner Handbook (18 March 2026) and FAQ, checked November 2026",
+    source: { name: "Coastguard Boating Education: Day Skipper", url: "https://www.boatingeducation.org.nz/courses/1/day-skipper/" },
+  },
+  ea1: {
+    answer:
+      "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 1 covers individuals. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 1's six domains are preliminary work and taxpayer data (14 scored questions), income and assets (17), deductions and credits (17), taxation (15), advising the individual taxpayer (11) and specialized returns for individuals (11). For exams from July 1, 2026 to February 28, 2027, questions follow tax law as amended through December 31, 2025 and relate to calendar year 2025.",
+    rows: [
+      { label: "Questions", value: "100 (85 scored, 15 unscored)" },
+      { label: "Time", value: "3.5 hours" },
+      { label: "Passing score", value: "500 on a 200 to 800 scale" },
+      { label: "Tax year tested", value: "2025, for July 1, 2026 to February 28, 2027" },
+      { label: "Largest domains", value: "Income and assets 17, deductions and credits 17" },
+      { label: "Where", value: "PSI test center or remote proctoring, both in the U.S.; international testing delayed" },
+      { label: "Attempts", value: "Up to four per part each testing window" },
+      { label: "Passed parts", value: "Carry over for three years" },
+      { label: "Given by", value: "PSI for the IRS" },
+    ],
+    basedOn: "the PSI Candidate Information Bulletin for the IRS SEE (revised October 9, 2026) and the IRS enrolled agent FAQs, checked November 2026",
+    source: { name: "IRS: Enrolled agents frequently asked questions", url: "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions" },
+  },
+  cpabar: {
+    answer:
+      "BAR, Business Analysis and Reporting, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. BAR runs 4 hours with 50 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, with only one task reworded for 2027, it covers business analysis (40 to 50%), technical accounting and reporting (35 to 45%) and state and local governments (10 to 20%).",
+    rows: [
+      { label: "Section time", value: "4 hours" },
+      { label: "Multiple-choice questions", value: "50, in two testlets of 25" },
+      { label: "Task-based simulations", value: "7" },
+      { label: "Score weighting", value: "50% MCQ, 50% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Largest area", value: "Business analysis, 40 to 50%" },
+      { label: "Run by", value: "AICPA, with NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
+    source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
+  cehrs: {
+    answer:
+      "The Certified Electronic Health Records Specialist (CEHRS) exam is the National Healthcareer Association's (NHA) certification exam for people who keep electronic health records accurate, secure and usable. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 125 minutes to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2019 job analysis, has five domains: Clinical Operations 32 items, Non-Clinical Operations 28, Revenue Cycle/Finance 15, Regulatory Compliance 15 and Reporting 10. It is taken at a school, a PSI testing center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "125 (100 scored, 25 pretest)" },
+      { label: "Time", value: "125 minutes" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Largest domains", value: "Clinical Operations 32, Non-Clinical Operations 28" },
+      { label: "Eligibility", value: "Diploma or GED plus an EHR specialist program within 5 years or supervised EHR work experience" },
+      { label: "Where", value: "School, PSI testing center or live remote proctoring" },
+      { label: "Retakes", value: "After 30 days; three attempts, then one year between attempts" },
+      { label: "Renewal", value: "Every two years with 10 continuing education credits" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's CEHRS test plan (2019 job analysis), CEHRS certification page and Candidate Handbook (updated October 2026), checked November 2026",
+    source: { name: "NHA: Electronic Health Records Specialist (CEHRS)", url: "https://www.nhanow.com/certifications/electronic-health-records-specialist" },
+  },
+  cpcta: {
+    answer:
+      "The Certified Patient Care Technician/Assistant (CPCT/A) exam is the National Healthcareer Association's (NHA) certification exam for patient care technicians and assistants. NHA's test plan gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The new exam that NHA launches on January 13, 2027 follows a test plan from a 2025 job analysis with five domains: Patient Care 43 items, Compliance, Safety, and Professional Responsibility 19, Infection Control 16, Phlebotomy and Nonblood Specimen Collection 12, and EKG 10. Exams before that date follow the 2018 plan (45, 20, 11, 14 and 10). It is taken at a school, a PSI test center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "120 (100 scored, 20 pretest)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Domains (2025 plan)", value: "Patient Care 43, Compliance and Safety 19, Infection Control 16, Phlebotomy 12, EKG 10" },
+      { label: "New exam", value: "From January 13, 2027 (2025 test plan)" },
+      { label: "Eligibility", value: "Training program within 5 years, or 1 year of supervised work in the last 3 years (or 2 in the last 5)" },
+      { label: "Where", value: "School, PSI test center or live remote proctoring" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's CPCT/A test plans (2025 and 2018 job analyses), CPCT/A certification page and 2024 pass rate report, checked November 2026",
+    source: { name: "NHA: Patient Care Technician (CPCT/A)", url: "https://www.nhanow.com/certifications/patient-care-technician" },
+  },
+  pance: {
+    answer:
+      "The PANCE (Physician Assistant National Certifying Exam) is the National Commission on Certification of Physician Assistants' (NCCPA) exam that graduates of accredited PA programs pass to earn the PA-C credential. It has 300 multiple-choice questions in five blocks of 60, with 60 minutes per block, 45 minutes of total break time and a 15-minute tutorial, about 5 hours in all, taken by computer at Pearson VUE test centers. Scores are reported on a 200 to 800 scale and the passing standard is 350, set by the modified Angoff method; wrong answers are not penalized. The content blueprint effective January 2025 spreads questions over 14 organ systems plus professional practice (6%), led by cardiovascular (11%) and pulmonary (9%), with 12 to 15% on pediatric patients. Candidates may take it once in 90 days or three times in a calendar year, whichever is fewer, and up to six times within six years of finishing their program.",
+    rows: [
+      { label: "Questions", value: "300 multiple choice, in five blocks of 60" },
+      { label: "Time", value: "5 hours: five 60-minute blocks, 45 minutes of breaks, 15-minute tutorial" },
+      { label: "Pass mark", value: "Scaled score of 350 on a 200 to 800 scale (modified Angoff)" },
+      { label: "Content", value: "Cardiovascular 11%, pulmonary 9%, GI and musculoskeletal 8% each, other systems 4 to 7%, professional practice 6%" },
+      { label: "Patients", value: "12 to 15% pediatric; up to 8 to 10% general surgery" },
+      { label: "Where", value: "Computer based at Pearson VUE test centers" },
+      { label: "Attempts", value: "Once in 90 days or three times a year (whichever is fewer); six times within six years of graduation" },
+      { label: "Run by", value: "National Commission on Certification of Physician Assistants (NCCPA)" },
+    ],
+    basedOn: "NCCPA's PANCE Content Blueprint (effective January 2025), What to Expect on Test Day, Exam Development and Scoring pages and PANCE at a Glance presentation, checked November 2026",
+    source: { name: "NCCPA: PANCE Content Blueprint", url: "https://www.nccpa.net/become-certified/pance-blueprint/" },
+  },
   cpatcp: {
     answer:
       "TCP, Tax Compliance and Planning, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. TCP runs 4 hours with 68 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, unchanged for 2027, it covers tax compliance and planning for individuals and personal financial planning (30 to 40%), entity tax compliance (30 to 40%), entity tax planning (10 to 20%) and property transactions (10 to 20%). Candidates are not tested on tax amounts indexed to inflation.",
@@ -58,6 +155,51 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
     source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
+  sc900: {
+    answer:
+      "SC-900, Microsoft Security, Compliance, and Identity Fundamentals, is Microsoft's beginner exam for business stakeholders, IT professionals and students who want to understand Microsoft's security, compliance and identity solutions across Azure and Microsoft 365. Passing it earns the Microsoft Certified: Security, Compliance, and Identity Fundamentals certification. The exam is 45 minutes, proctored, and can include interactive question types; Microsoft does not publish a question count, but guides report 40 to 60 questions. Scores run from 1 to 1000 and 700 is needed to pass. The skills measured as of October 21, 2026 are the concepts of security, compliance and identity (10 to 15 percent), the capabilities of Microsoft Entra (25 to 30 percent), Microsoft security solutions (35 to 40 percent) and Microsoft compliance solutions (20 to 25 percent). A first retake is allowed after 24 hours, and the price depends on the country where the exam is taken.",
+    rows: [
+      { label: "Time", value: "45 minutes, proctored" },
+      { label: "Questions", value: "Not published by Microsoft; guides report 40 to 60" },
+      { label: "Passing score", value: "700 on a scale of 1 to 1000" },
+      { label: "Skill areas", value: "Concepts 10-15%, Microsoft Entra 25-30%, security solutions 35-40%, compliance solutions 20-25%" },
+      { label: "Retake", value: "First retake after 24 hours" },
+      { label: "Languages", value: "English and 12 others, including Japanese, Spanish, French and German" },
+      { label: "Given by", value: "Microsoft, through Pearson VUE (Certiport for students and educators)" },
+    ],
+    basedOn: "the Microsoft Learn SC-900 study guide (skills measured as of October 21, 2026) and the Security, Compliance, and Identity Fundamentals certification page, checked November 2026",
+    source: { name: "Microsoft Learn: Study guide for Exam SC-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
+  },
+  sc200: {
+    answer:
+      "Exam SC-200: Microsoft Security Operations Analyst is the exam for the Microsoft Certified: Security Operations Analyst Associate certification. Microsoft gives 100 minutes and a passing score of 700 on a scale of 1 to 1,000; it does not publish a fixed question count, and says most of its certification exams have 40 to 60 questions, with types that can include case studies and, on some role-based exams, labs. The skills measured as of October 21, 2026 are Manage a security operations environment 40-45%, Respond to security incidents 35-40% and Perform threat hunting 20-25%, across Microsoft Defender XDR, Microsoft Sentinel, Microsoft Entra ID, Microsoft Purview, Defender for Cloud and KQL. The exam is proctored through Pearson VUE in 10 languages, and the certification is renewed every 12 months with a free online assessment.",
+    rows: [
+      { label: "Time", value: "100 minutes" },
+      { label: "Questions", value: "Not published (Microsoft: most exams have 40 to 60)" },
+      { label: "Pass mark", value: "700 on a scale of 1 to 1,000" },
+      { label: "Content", value: "Manage a security operations environment 40-45%, Respond to security incidents 35-40%, Perform threat hunting 20-25%" },
+      { label: "Languages", value: "English, Japanese, Chinese (Simplified and Traditional), Korean, French, German, Spanish, Portuguese (Brazil), Italian" },
+      { label: "Where", value: "Proctored, scheduled through Pearson VUE" },
+      { label: "Renewal", value: "Every 12 months, free online assessment on Microsoft Learn" },
+      { label: "Run by", value: "Microsoft" },
+    ],
+    basedOn: "Microsoft Learn's SC-200 study guide (skills measured as of October 21, 2026), the Security Operations Analyst Associate certification page and Microsoft's exam duration page, checked November 2026",
+    source: { name: "Microsoft Learn: SC-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200" },
+  },
+  pentestplus: {
+    answer:
+      "The CompTIA PenTest+ exam (PT0-003) has a maximum of 90 questions in 165 minutes, multiple choice and performance-based, and you need 750 on a 100 to 900 scale to pass. It covers Engagement Management 13%, Reconnaissance and Enumeration 21%, Vulnerability Discovery and Analysis 17%, Attacks and Exploits 35% and Post-exploitation and Lateral Movement 14%. PT0-003 launched on December 17, 2024 and replaced PT0-002, which retired on June 17, 2025.",
+    rows: [
+      { label: "Questions", value: "Up to 90" },
+      { label: "Time", value: "165 minutes" },
+      { label: "Passing score", value: "750 on a 100 to 900 scale" },
+      { label: "Exam code", value: "PT0-003 (replaced PT0-002)" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "CompTIA, at Pearson VUE or online" },
+    ],
+    basedOn: "the CompTIA PenTest+ PT0-003 exam objectives (Document Version 5.0)",
+    source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/pentest/" },
   },
   fortinse: {
     answer:

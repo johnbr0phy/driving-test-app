@@ -132,7 +132,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   cask: "CA", cans: "CA", pcoc: "CA",
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
-  nzroad: "NZ", nzfirearms: "NZ", nzlcq: "NZ", nzmoto: "NZ", nzheavy: "NZ", nzsfe: "NZ", nzensf: "NZ",nziqn: "NZ",
+  nzroad: "NZ", nzfirearms: "NZ", nzboat: "NZ", nzlcq: "NZ", nzmoto: "NZ", nzheavy: "NZ", nzsfe: "NZ", nzensf: "NZ",nziqn: "NZ",
   phlto: "PH", phcse: "PH", phlet: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", zak53c3: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
   ppsc: "PK", punjabpolice: "PK", pakarmy: "PK", pkpaf: "PK", pknle: "PK", pkpnmc: "PK",
   zak53moto: "ZA", zare5: "ZA", zasaps: "ZA", zapsira: "ZA",
@@ -149,13 +149,16 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   sbiclerk: "IN", sbipo: "IN", ibpsrrb: "IN", biharpolice: "IN", rajpolice: "IN", delhipolice: "IN", mppolice: "IN", jkssbja: "IN", tgsi: "IN",
   upscse: "IN", nda: "IN", agniveer: "IN", agniveervayu: "IN", rrbalp: "IN", rpfconst: "IN", ssccpo: "IN",
   neet: "IN", jeemain: "IN", cuet: "IN", mhtcet: "IN", ugcnet: "IN", reet: "IN", uptet: "IN", aissee: "IN", iimcat: "IN",
-  aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL",
-  netplus: "GLOBAL", cysa: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL",
+  aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", sc900: "GLOBAL", sc200: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL",
+  netplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL",
   ccaf: "GLOBAL", sfadmin: "GLOBAL", cfal1: "GLOBAL", accafa: "GLOBAL", cisa: "GLOBAL", fortigate: "GLOBAL", cssgb: "GLOBAL",
 };
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "pentestplus",
+  "sc200",
+  "sc900",
   "fortinse",
   "wonderlic",
   "espolicia", "esguardia", "esvigilante",
@@ -188,7 +191,7 @@ export const NON_DRIVING_TESTS = new Set([
   "zare5", "zasaps", "zapsira",
   "jambeng", "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng",
   "ngpolice", "cdcfib", "ngarmy", "ngcustoms", "trcnpqe",
-  "sgres", "hkiiqe1", "hklesfi1", "nzfirearms", "nzlcq", "aesira", "mypce", "kenck",
+  "sgres", "hkiiqe1", "hklesfi1", "nzfirearms", "nzboat", "nzlcq", "aesira", "mypce", "kenck",
   "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl",
 ]);
 

@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
+export type ExamId = "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -7565,6 +7565,367 @@ const cpatcp: ExamConfig = {
 };
 // Add "cpatcp" to the ExamId union and append cpatcp to EXAMS right after cpareg.
 // IDs: tests 30801-30804, sets 30801-30806 (block 30800 assigned for this run).
+
+const pance: ExamConfig = {
+  id: "pance",
+  stateCode: "PANCE",
+  idBase: 31100,
+  slug: "/pance",
+  landingPath: "/pance-practice-test",
+  name: "PANCE Practice Test",
+  shortName: "PANCE",
+  examLabel: "PANCE",
+  fullName: "Physician Assistant National Certifying Exam (PANCE)",
+  questionIdPrefix: "PANCE-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NCCPA PANCE Content Blueprint, released 2025 and effective January 2025 (medical content
+  // categories): Cardiovascular 11%, Dermatologic 4%, Endocrine 6%, EENT 6%, GI/Nutrition 8%,
+  // Genitourinary 4%, Hematologic 5%, Infectious Diseases 7%, Musculoskeletal 8%, Neurologic 7%,
+  // Psychiatry/Behavioral 7%, Pulmonary 9%, Renal 5%, Reproductive 7%, Professional Practice 6%.
+  // Scaled to 50 and rounded: 6/2/3/3/4/2/2/4/4/3/4/5/2/3/3. The blueprint also puts 12 to 15%
+  // on pediatric patients and up to 8 to 10% on general surgery; the bank follows that inside the
+  // organ systems. The real PANCE is 300 questions in five 60-minute blocks of 60, scored on a
+  // 200 to 800 scale with 350 to pass (modified Angoff); each mock here is 50 questions at the
+  // same minute-a-question pace, and 70% is a readiness marker, not NCCPA's standard.
+  blueprint: {
+    panceCardio: 6,
+    pancePulm: 5,
+    panceGI: 4,
+    panceRenal: 2,
+    panceGU: 2,
+    panceEndo: 3,
+    panceNeuro: 3,
+    pancePsych: 4,
+    panceEENT: 3,
+    panceMSK: 4,
+    panceDerm: 2,
+    panceRepro: 3,
+    panceID: 4,
+    panceHeme: 2,
+    panceProf: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 31101, name: "Cardiovascular & Pulmonary", categories: ["panceCardio", "pancePulm"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 31102, name: "GI, Renal, GU & Endocrine", categories: ["panceGI", "panceRenal", "panceGU", "panceEndo"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 31103, name: "Neurology, Psychiatry & EENT", categories: ["panceNeuro", "pancePsych", "panceEENT"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 31104, name: "MSK, Skin & Reproductive", categories: ["panceMSK", "panceDerm", "panceRepro"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 31105, name: "Infectious, Heme & Professional", categories: ["panceID", "panceHeme", "panceProf"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    panceCardio: "Cardiovascular",
+    pancePulm: "Pulmonary",
+    panceGI: "Gastrointestinal & Nutrition",
+    panceRenal: "Renal",
+    panceGU: "Genitourinary",
+    panceEndo: "Endocrine",
+    panceNeuro: "Neurologic",
+    pancePsych: "Psychiatry & Behavioral Science",
+    panceEENT: "Eyes, Ears, Nose & Throat",
+    panceMSK: "Musculoskeletal",
+    panceDerm: "Dermatologic",
+    panceRepro: "Reproductive",
+    panceID: "Infectious Diseases",
+    panceHeme: "Hematologic",
+    panceProf: "Professional Practice",
+  },
+  copy: {
+    guestPrompt: "to save your PANCE progress and track every question you miss",
+    trainingHeading: "Train by organ system",
+    trainingSub: "Five sets grouping the 15 content categories of the NCCPA PANCE blueprint. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Cardiovascular & Pulmonary.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the PANCE.",
+    ],
+    sourceLine: "Based on the NCCPA PANCE Content Blueprint (effective January 2025). Original questions; 50 per test, weighted like the real exam. Not affiliated with NCCPA.",
+    analyticsKey: "pance",
+  },
+};
+
+const cpcta: ExamConfig = {
+  id: "cpcta",
+  stateCode: "CPCTA",
+  idBase: 31000,
+  slug: "/cpcta",
+  landingPath: "/cpct-practice-test",
+  name: "Patient Care Technician (CPCT/A) Practice Test",
+  shortName: "CPCT/A (NHA)",
+  examLabel: "CPCT/A exam",
+  fullName: "Certified Patient Care Technician/Assistant (CPCT/A) Exam",
+  questionIdPrefix: "CPCTA-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA Certified Patient Care Technician/Assistant (CPCT/A) Test Plan based on the 2025 job
+  // analysis, the plan for exams from January 13, 2027 (NHA media center; the 2018 plan covers
+  // exams before then with domains 45/20/11/14/10). 100 scored + 20 pretest items in 2 hours.
+  // Domains of 100: 1 Patient Care 43, 2 Compliance, Safety, and Professional Responsibility 19,
+  // 3 Infection Control 16, 4 Phlebotomy and Nonblood Specimen Collection 12, 5 EKG 10. Scaled to
+  // 50: 22/9/8/6/5 (Tigertest's rounding), with Patient Care split by Tigertest into four
+  // categories 6/6/6/4. NHA reports a scaled score (200 to 500, 390 to pass, not a percent);
+  // 70% here is a readiness marker. All items original.
+  blueprint: {
+    cpctaBasicCare: 6,
+    cpctaVitals: 6,
+    cpctaMobility: 6,
+    cpctaPsychosocial: 4,
+    cpctaCompliance: 9,
+    cpctaInfection: 8,
+    cpctaPhlebotomy: 6,
+    cpctaEkg: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 31001, name: "Daily Care & Vital Signs", categories: ["cpctaBasicCare", "cpctaVitals"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 31002, name: "Mobility, Comfort & End of Life", categories: ["cpctaMobility", "cpctaPsychosocial"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 31003, name: "Compliance, Safety & Professionalism", categories: ["cpctaCompliance"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 31004, name: "Infection Control & Phlebotomy", categories: ["cpctaInfection", "cpctaPhlebotomy"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 5, id: 31005, name: "EKG", categories: ["cpctaEkg"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cpctaBasicCare: "Basic Care & Daily Living",
+    cpctaVitals: "Vital Signs & Monitoring",
+    cpctaMobility: "Mobility, Procedures & Emergencies",
+    cpctaPsychosocial: "Psychosocial & End-of-Life Care",
+    cpctaCompliance: "Compliance, Safety & Professional Responsibility",
+    cpctaInfection: "Infection Control",
+    cpctaPhlebotomy: "Phlebotomy & Nonblood Specimens",
+    cpctaEkg: "EKG",
+  },
+  copy: {
+    guestPrompt: "to save your CPCT/A progress and track every question you miss",
+    trainingHeading: "Train by NHA test plan domain",
+    trainingSub: "Five sets covering all five domains of the NHA CPCT/A test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Daily Care & Vital Signs.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CPCT/A.",
+    ],
+    sourceLine: "Based on the NHA CPCT/A test plan (2025 job analysis). Original questions; 50 per test, weighted like the real exam. Not affiliated with the National Healthcareer Association.",
+    analyticsKey: "cpcta",
+  },
+};
+// IDs: tests 31001-31004, sets 31001-31005 (block 31000 assigned for this run).
+// Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
+
+const cehrs: ExamConfig = {
+  id: "cehrs",
+  stateCode: "CEHRS",
+  idBase: 31200,
+  slug: "/cehrs",
+  landingPath: "/cehrs-practice-test",
+  name: "CEHRS Practice Test",
+  shortName: "CEHRS (NHA)",
+  examLabel: "CEHRS exam",
+  fullName: "Certified Electronic Health Records Specialist (CEHRS) Exam",
+  questionIdPrefix: "CEHRS-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA Certified Electronic Health Records Specialist (CEHRS) Test Plan, based on the 2019 job
+  // analysis, still the plan NHA links for the current exam (checked November 2026): 100 scored
+  // + 25 pretest items in 125 minutes. Domains of 100: 1 Non-Clinical Operations 28, 2 Clinical
+  // Operations 32, 3 Revenue Cycle/Finance 15, 4 Regulatory Compliance 15, 5 Reporting 10.
+  // Scaled to 50: 14/15/8/8/5 (Tigertest's rounding; Clinical is 15 rather than 16 so its
+  // training set stays at 60 questions). NHA reports a scaled score (200 to 500, 390 to pass, not
+  // a percent); 70% here is a readiness marker. All items original.
+  blueprint: {
+    cehrsNonClinical: 14,
+    cehrsClinical: 15,
+    cehrsRevenue: 8,
+    cehrsCompliance: 8,
+    cehrsReporting: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 31201, name: "Non-Clinical Operations", categories: ["cehrsNonClinical"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 31202, name: "Clinical Operations", categories: ["cehrsClinical"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 31203, name: "Revenue Cycle & Reporting", categories: ["cehrsRevenue", "cehrsReporting"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 31204, name: "Regulatory Compliance", categories: ["cehrsCompliance"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cehrsNonClinical: "Non-Clinical Operations",
+    cehrsClinical: "Clinical Operations",
+    cehrsRevenue: "Revenue Cycle & Finance",
+    cehrsCompliance: "Regulatory Compliance",
+    cehrsReporting: "Reporting",
+  },
+  copy: {
+    guestPrompt: "to save your CEHRS progress and track every question you miss",
+    trainingHeading: "Train by NHA test plan domain",
+    trainingSub: "Four sets covering all five domains of the NHA CEHRS test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Non-Clinical Operations.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CEHRS.",
+    ],
+    sourceLine: "Based on the NHA CEHRS test plan (2019 job analysis). Original questions; 50 per test, weighted like the real exam. Not affiliated with the National Healthcareer Association.",
+    analyticsKey: "cehrs",
+  },
+};
+// IDs: tests 31201-31204, sets 31201-31204 (block 31200 assigned for this run).
+
+const cpabar: ExamConfig = {
+  id: "cpabar",
+  stateCode: "CPABAR",
+  idBase: 31300,
+  slug: "/cpa-bar",
+  landingPath: "/cpa-bar-practice-test",
+  name: "CPA BAR Practice Test",
+  shortName: "CPA BAR",
+  examLabel: "CPA Exam BAR section",
+  fullName: "CPA Exam Business Analysis and Reporting (BAR) section",
+  questionIdPrefix: "CPABAR-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // AICPA Uniform CPA Examination Blueprints, effective January 1, 2026 (checked 2026-11-16;
+  // the summary of 2027 changes rewords one Area III task only). BAR is a Discipline section:
+  // 50 MCQs + 7 TBSs in 4 hours, MCQ 50% of score, 75 scaled to pass. Areas I Business Analysis
+  // 40-50%, II Technical Accounting and Reporting 35-45%, III State and Local Governments 10-20%.
+  // Per 50-question test: I 22 (statement and performance analysis 5, cost accounting 5,
+  // budgeting 3, capital structure 3, investment models 3, risk and economics 3), II 20
+  // (intangibles, software and R&D 3, revenue 2, stock comp 2, business combinations 3,
+  // consolidation and foreign currency 3, derivatives 3, lessor leases 2, SEC, segments and
+  // benefit plans 2), III 8 (reporting 4, transactions 4). Splits inside areas are Tigertest's.
+  // TBSs not modelled. All items original.
+  blueprint: {
+    cpabarFsa: 5,
+    cpabarCost: 5,
+    cpabarBudget: 3,
+    cpabarCapital: 3,
+    cpabarInvest: 3,
+    cpabarRiskEcon: 3,
+    cpabarIntangibles: 3,
+    cpabarRevenue: 2,
+    cpabarStockComp: 2,
+    cpabarBizComb: 3,
+    cpabarConsol: 3,
+    cpabarDerivatives: 3,
+    cpabarLeases: 2,
+    cpabarPublic: 2,
+    cpabarGovReporting: 4,
+    cpabarGovTransactions: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 31301, name: "Financial & Cost Analysis", categories: ["cpabarFsa", "cpabarCost"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 31302, name: "Budgets, Capital & Investments", categories: ["cpabarBudget", "cpabarCapital", "cpabarInvest", "cpabarRiskEcon"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 31303, name: "Intangibles, Revenue & Stock Comp", categories: ["cpabarIntangibles", "cpabarRevenue", "cpabarStockComp"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 31304, name: "Business Combinations", categories: ["cpabarBizComb", "cpabarConsol"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 31305, name: "Derivatives, Leases & SEC", categories: ["cpabarDerivatives", "cpabarLeases", "cpabarPublic"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 31306, name: "State & Local Governments", categories: ["cpabarGovReporting", "cpabarGovTransactions"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cpabarFsa: "Financial Statement & Performance Analysis",
+    cpabarCost: "Managerial & Cost Accounting",
+    cpabarBudget: "Budgeting, Forecasting & Projection",
+    cpabarCapital: "Capital Structure & Cost of Capital",
+    cpabarInvest: "Investment Decision Models",
+    cpabarRiskEcon: "Risk Management & Economic Influences",
+    cpabarIntangibles: "Goodwill, Software & R&D",
+    cpabarRevenue: "Revenue Recognition",
+    cpabarStockComp: "Stock Compensation",
+    cpabarBizComb: "Business Combinations",
+    cpabarConsol: "Consolidation & Foreign Currency",
+    cpabarDerivatives: "Derivatives & Hedge Accounting",
+    cpabarLeases: "Lessor Accounting & Sale-Leaseback",
+    cpabarPublic: "SEC Reporting, Segments & Benefit Plans",
+    cpabarGovReporting: "Government Financial Reporting",
+    cpabarGovTransactions: "Government Transactions & Fund Balance",
+  },
+  copy: {
+    guestPrompt: "to save your CPA BAR progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering all three areas of the AICPA's BAR blueprint. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 multiple-choice questions weighted like the BAR blueprint, 75% target",
+    heroSubs: [
+      "Six sets, four mock tests. Start with Financial & Cost Analysis.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Schedule your BAR section.",
+    ],
+    sourceLine: "Based on the AICPA's 2026 BAR blueprint. Original multiple-choice questions; 50 per test, weighted like the real section's three areas, 75% target. Not affiliated with the AICPA or NASBA.",
+    analyticsKey: "cpabar",
+  },
+};
+// IDs: tests 31301-31304, sets 31301-31306 (block 31300 assigned for this run).
+
+const ea1: ExamConfig = {
+  id: "ea1",
+  stateCode: "EA1",
+  idBase: 31400,
+  slug: "/enrolled-agent-part-1",
+  landingPath: "/enrolled-agent-part-1-practice-test",
+  name: "Enrolled Agent Part 1 Practice Test",
+  shortName: "EA Exam Part 1",
+  examLabel: "SEE Part 1",
+  fullName: "IRS Special Enrollment Examination (SEE) Part 1: Individuals",
+  questionIdPrefix: "EA1-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // IRS SEE Candidate Information Bulletin (PSI), revised October 9, 2026, Part 1 content outline:
+  // 85 scored of 100 questions in 3.5 hours. Domains of 85: Preliminary Work and Taxpayer Data 14,
+  // Income and Assets 17, Deductions and Credits 17, Taxation 15, Advising the Individual Taxpayer
+  // 11, Specialized Returns for Individuals 11. Scaled to 50: 8/10/10/9/7/6 (Tigertest's rounding).
+  // The July 1, 2026 to February 28, 2027 window tests calendar year 2025 (law as amended through
+  // December 31, 2025). The real result is scaled 200 to 800 with 500 to pass; 70% is a
+  // readiness marker. All items original.
+  blueprint: {
+    ea1Prelim: 8,
+    ea1Income: 10,
+    ea1Deductions: 10,
+    ea1Taxation: 9,
+    ea1Advising: 7,
+    ea1Specialized: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 31401, name: "Preliminary Work & Taxpayer Data", categories: ["ea1Prelim"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 31402, name: "Income & Assets", categories: ["ea1Income"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 31403, name: "Deductions & Credits", categories: ["ea1Deductions"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 31404, name: "Taxation", categories: ["ea1Taxation"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 31405, name: "Advising & Specialized Returns", categories: ["ea1Advising", "ea1Specialized"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ea1Prelim: "Preliminary Work & Taxpayer Data",
+    ea1Income: "Income & Assets",
+    ea1Deductions: "Deductions & Credits",
+    ea1Taxation: "Taxation",
+    ea1Advising: "Advising the Individual Taxpayer",
+    ea1Specialized: "Specialized Returns for Individuals",
+  },
+  copy: {
+    guestPrompt: "to save your Enrolled Agent Part 1 progress and track every question you miss",
+    trainingHeading: "Train by IRS Part 1 domain",
+    trainingSub: "Five sets covering all six domains of the IRS Part 1 outline, on 2025 tax law. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Preliminary Work & Taxpayer Data.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for SEE Part 1.",
+    ],
+    sourceLine: "Based on the IRS SEE Part 1 content outline and 2025 tax law. Original questions; 50 per test, weighted like the real exam. Not affiliated with the IRS or PSI.",
+    analyticsKey: "ea1",
+  },
+};
+// IDs: tests 31401-31404, sets 31401-31405 (block 31400 assigned for this run).
 
 const htl: ExamConfig = {
   id: "htl",
@@ -19374,6 +19735,74 @@ const nzfirearms: ExamConfig = {
   },
 };
 
+const nzboat: ExamConfig = {
+  id: "nzboat",
+  stateCode: "NZBOAT",
+  idBase: 30900,
+  slug: "/nz-day-skipper",
+  landingPath: "/nz-day-skipper-practice-test",
+  name: "NZ Day Skipper Practice Test",
+  shortName: "NZ Day Skipper",
+  examLabel: "Day Skipper assessment",
+  fullName: "Coastguard Boating Education Day Skipper (New Zealand)",
+  questionIdPrefix: "NZBOAT-",
+  icon: "sailboat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Coastguard Boating Education Day Skipper course page (checked November 2026): learning outcomes
+  // are boat components and equipment, basic boat handling, navigational charts, basic tide and
+  // weather terminology, navigational marks, Maritime Rules and Regulations, emergencies, and common
+  // knots; every delivery mode ends with an online assessment. No question count, time or pass mark
+  // is published, so four tests of 50 and an 80% line are Tigertest's target. Blueprint follows the
+  // outcomes, weighted towards the rules of the road (Maritime Rules Part 22) and Part 91. Pools are
+  // exactly 4x per-test (no spares). All items original.
+  blueprint: {
+    nzboatBoat: 5,
+    nzboatHandling: 6,
+    nzboatCharts: 5,
+    nzboatTidesWeather: 5,
+    nzboatMarks: 6,
+    nzboatCollision: 7,
+    nzboatLights: 5,
+    nzboatLaw: 5,
+    nzboatEmergency: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 30901, name: "The Boat, Handling & Knots", categories: ["nzboatBoat", "nzboatHandling"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 30902, name: "Charts, Tides & Weather", categories: ["nzboatCharts", "nzboatTidesWeather"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 30903, name: "Navigational Marks & Lights", categories: ["nzboatMarks", "nzboatLights"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 30904, name: "Rules of the Road & Local Rules", categories: ["nzboatCollision", "nzboatLaw"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 30905, name: "Emergencies & Communications", categories: ["nzboatEmergency"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nzboatBoat: "The Boat & Its Equipment",
+    nzboatHandling: "Boat Handling, Anchoring & Knots",
+    nzboatCharts: "Charts & Compass",
+    nzboatTidesWeather: "Tides & Marine Weather",
+    nzboatMarks: "Navigational Marks (IALA A)",
+    nzboatCollision: "Give-Way & Collision Rules",
+    nzboatLights: "Lights, Shapes & Sound Signals",
+    nzboatLaw: "Maritime Rules & Local Bylaws",
+    nzboatEmergency: "Emergencies & Communications",
+  },
+  copy: {
+    guestPrompt: "to save your Day Skipper progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Day Skipper topics: the boat, handling and knots; charts, tides and weather; navigational marks and lights; the rules of the road and local rules; and emergencies. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic, aim for 40",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with the boat and its gear.",
+      "Master each set, then try a test.",
+      "Halfway there. Take a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for your Day Skipper.",
+    ],
+    sourceLine: "Based on the Day Skipper learning outcomes, Maritime Rules Parts 22 and 91, regional council harbourmaster guidance and LINZ tide information, as of November 2026. Original questions; 50 per test is Tigertest's format. Not affiliated with Coastguard Boating Education, Coastguard New Zealand or Maritime New Zealand.",
+    analyticsKey: "nzboat",
+  },
+};
+
 const nzlcq: ExamConfig = {
   id: "nzlcq",
   stateCode: "NZLCQ",
@@ -21045,7 +21474,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

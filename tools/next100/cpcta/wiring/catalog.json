@@ -1,0 +1,14 @@
+{
+  "blurb": "NHA Certified Patient Care Technician/Assistant exam on the 2025 CPCT/A test plan: patient care and vital signs, mobility and end-of-life care, compliance and safety, infection control, phlebotomy and nonblood specimens, and EKG.",
+  "org": "National Healthcareer Association (NHA) · CPCT/A test plan (2025 job analysis)",
+  "group": "Healthcare certification exams",
+  "groupAfter": "cna",
+  "aliases": ["cpct", "cpcta", "cpct/a", "nha cpct", "nha cpct/a", "patient care technician", "patient care tech", "pct exam", "pct certification", "certified patient care technician", "patient care assistant", "nha patient care technician"],
+  "teacherLed": true,
+  "teaches": "a patient care technician program",
+  "borrowTiger": "cna",
+  "shareTitle": "Free-to-Start CPCT/A Practice Test",
+  "shareDescription": "200 original questions on the NHA CPCT/A test plan for patient care technicians. Free to start.",
+  "searchTests": [["cpct", "US", "cpcta"], ["nha cpct", "US", "cpcta"], ["patient care technician", "US", "cpcta"], ["pct exam", "US", "cpcta"]],
+  "region": "TEST_REGIONS: cpcta is US (the default; add a line only if the file lists every US exam)"
+}

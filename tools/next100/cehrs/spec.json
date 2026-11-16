@@ -1,0 +1,13 @@
+{
+  "id": "cehrs", "stateCode": "CEHRS", "idBase": 31200, "prefix": "CEHRS-",
+  "slug": "/cehrs", "landingPath": "/cehrs-practice-test", "dataFile": "data/cehrs-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "cehrsNonClinical", "perTest": 14, "pool": 56, "segment": "NCL"},
+    {"key": "cehrsClinical", "perTest": 15, "pool": 60, "segment": "CLN"},
+    {"key": "cehrsRevenue", "perTest": 8, "pool": 32, "segment": "REV"},
+    {"key": "cehrsCompliance", "perTest": 8, "pool": 32, "segment": "REG"},
+    {"key": "cehrsReporting", "perTest": 5, "pool": 20, "segment": "RPT"}
+  ],
+  "notes": "NHA CEHRS Test Plan (2019 job analysis, the plan NHA links in November 2026): 100 scored + 25 pretest items in 125 minutes, domains 28/32/15/15/10. Scaled to 50: 14/15/8/8/5 (Tigertest's rounding; Clinical is 15 rather than 16 so its training set stays at 60)."
+}

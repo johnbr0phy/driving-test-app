@@ -1,0 +1,17 @@
+{
+  "panceCardio": "Cardiovascular",
+  "pancePulm": "Pulmonary",
+  "panceGI": "Gastrointestinal & Nutrition",
+  "panceRenal": "Renal",
+  "panceGU": "Genitourinary",
+  "panceEndo": "Endocrine",
+  "panceNeuro": "Neurologic",
+  "pancePsych": "Psychiatry & Behavioral Science",
+  "panceEENT": "Eyes, Ears, Nose & Throat",
+  "panceMSK": "Musculoskeletal",
+  "panceDerm": "Dermatologic",
+  "panceRepro": "Reproductive",
+  "panceID": "Infectious Diseases",
+  "panceHeme": "Hematologic",
+  "panceProf": "Professional Practice"
+}

@@ -1,0 +1,4404 @@
+[
+  {
+    "id": "SC900-T1-001",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Workload identities",
+    "stem": "An Azure virtual machine must read secrets from Azure Key Vault without any credentials stored in its code. What type of identity should it use?",
+    "options": [
+      "A Microsoft 365 group",
+      "A guest user account",
+      "A device identity",
+      "A managed identity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A managed identity is a special type of service principal that Azure manages, so developers never handle the credentials. Guest users and groups represent people, and a device identity represents a computer or phone."
+  },
+  {
+    "id": "SC900-T1-002",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conditional Access",
+    "stem": "A company wants to block sign-ins to its finance app from any country where it has no offices. Which feature should it use?",
+    "options": [
+      "Conditional Access",
+      "Microsoft Entra Connect Sync",
+      "Access reviews",
+      "Azure role-based access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Conditional Access policies combine signals such as location with decisions such as block. Azure RBAC controls what a signed-in user can do with Azure resources, not where they may sign in from."
+  },
+  {
+    "id": "SC900-T1-003",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Defender for Office 365",
+    "stem": "A company wants email attachments opened in a sandbox and checked for new malware before the message is delivered. Which feature does this?",
+    "options": [
+      "Attack simulation training",
+      "Safe Links",
+      "Zero-hour auto purge",
+      "Safe Attachments"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Safe Attachments detonates attachments in a virtual environment to catch malware that signatures miss. Safe Links checks URLs, and zero-hour auto purge removes messages after delivery."
+  },
+  {
+    "id": "SC900-T1-004",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Shared responsibility model",
+    "stem": "A company stores its files in Microsoft 365, a SaaS service. Under the shared responsibility model, which responsibility always stays with the company?",
+    "options": [
+      "Patching the host servers",
+      "Physical datacenter security",
+      "The physical network links",
+      "Its information and data"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Whatever the service type, the customer always owns its information and data, its devices, and its accounts and identities. Microsoft always owns the physical datacenter, network and hosts."
+  },
+  {
+    "id": "SC900-T1-005",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Azure Bastion",
+    "stem": "Admins must connect to Azure virtual machines over RDP without giving the VMs public IP addresses. What should they use?",
+    "options": [
+      "Azure DDoS Protection",
+      "A network security group",
+      "Azure Bastion",
+      "Azure Firewall"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Azure Bastion gives RDP and SSH to VMs through the Azure portal over TLS, so the VMs need no public IP address. A network security group can filter RDP traffic but doesn't provide the connection."
+  },
+  {
+    "id": "SC900-T1-006",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Secure score",
+    "stem": "In Microsoft Defender for Cloud, what does a higher secure score mean?",
+    "options": [
+      "More alerts were raised today",
+      "More security plans are paid for",
+      "Lower identified security risk",
+      "More resources are monitored"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The secure score is based on Microsoft cloud security benchmark recommendations; a higher score means a lower identified risk level. It doesn't count alerts or paid plans."
+  },
+  {
+    "id": "SC900-T1-007",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sensitivity labels",
+    "stem": "A company wants documents marked Confidential to be encrypted and to carry a footer wherever they travel. What should it use?",
+    "options": [
+      "DLP policies",
+      "Insider risk policies",
+      "Sensitivity labels",
+      "Retention labels"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sensitivity labels classify content and can apply protection that travels with it, such as encryption and content markings like headers, footers and watermarks. Retention labels control how long content is kept."
+  },
+  {
+    "id": "SC900-T1-008",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Service Trust Portal",
+    "stem": "An auditor needs Microsoft's independent SOC 2 and ISO 27001 audit reports for Microsoft 365. Where can they be downloaded?",
+    "options": [
+      "Microsoft Purview Audit",
+      "The Microsoft Defender portal",
+      "Compliance Manager",
+      "The Service Trust Portal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Service Trust Portal is Microsoft's site for publishing audit reports from external auditors, whitepapers and other compliance information about its cloud services."
+  },
+  {
+    "id": "SC900-T1-009",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hybrid identity",
+    "stem": "A company syncs its on-premises Active Directory users to Microsoft Entra ID and wants cloud sign-in to keep working if its on-premises servers go down. Which sign-in method fits?",
+    "options": [
+      "Seamless single sign-on alone",
+      "Pass-through authentication",
+      "Federation with AD FS",
+      "Password hash synchronization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With password hash synchronization, a hash of the password hash is synced to Microsoft Entra ID, which then authenticates users itself. Pass-through authentication and federation both depend on on-premises servers being available."
+  },
+  {
+    "id": "SC900-T1-010",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privileged Identity Management",
+    "stem": "An admin should hold the Exchange Administrator role only when needed, activating it with a justification each time. What kind of assignment in PIM is this?",
+    "options": [
+      "An eligible assignment",
+      "A dynamic group assignment",
+      "A guest assignment",
+      "A permanent active assignment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With an eligible assignment the user must activate the role, for example with MFA, a justification or an approval, before using it. An active assignment gives the role's permissions without any action."
+  },
+  {
+    "id": "SC900-T1-011",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Identity",
+    "stem": "Which service uses sensors on domain controllers to detect attacks against on-premises Active Directory identities?",
+    "options": [
+      "Microsoft Defender for Office 365",
+      "Microsoft Defender for Cloud Apps",
+      "Microsoft Entra ID Protection",
+      "Microsoft Defender for Identity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Defender for Identity installs sensors on domain controllers and related servers to detect attacks such as pass-the-hash and lateral movement on premises. Entra ID Protection watches cloud sign-ins."
+  },
+  {
+    "id": "SC900-T1-012",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Zero Trust",
+    "stem": "Which Zero Trust principle says to authenticate and authorize every request using all available data, such as identity, location and device health?",
+    "options": [
+      "Use least privileged access",
+      "Trust the internal network",
+      "Verify explicitly",
+      "Assume breach"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Verify explicitly means every request is checked against all available signals before access is granted. Zero Trust never trusts a request just because it comes from inside the network."
+  },
+  {
+    "id": "SC900-T1-013",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Azure Web Application Firewall",
+    "stem": "A public web app must be protected against SQL injection and cross-site scripting attacks. What should be deployed in front of it?",
+    "options": [
+      "Azure Bastion",
+      "A network security group on the subnet",
+      "Azure Web Application Firewall",
+      "Azure DDoS IP Protection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A web application firewall inspects HTTP traffic for common exploits such as SQL injection and cross-site scripting. DDoS Protection and NSGs work at the network layers and don't read web requests."
+  },
+  {
+    "id": "SC900-T1-014",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud workload protection",
+    "stem": "A company wants alerts when someone tries to exploit its Azure SQL databases. Which part of Defender for Cloud provides this?",
+    "options": [
+      "Foundational CSPM",
+      "Cloud workload protection",
+      "The Microsoft cloud security benchmark",
+      "The secure score"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Defender for Cloud does two jobs: posture management finds weaknesses, and cloud workload protection plans such as Defender for SQL raise threat alerts on active attacks against the workloads."
+  },
+  {
+    "id": "SC900-T1-015",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data loss prevention",
+    "stem": "A company wants to stop employees from emailing credit card numbers outside the organization. What should it create?",
+    "options": [
+      "A sensitivity label policy",
+      "An eDiscovery case",
+      "A retention policy",
+      "A DLP policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data loss prevention policies detect sensitive information such as credit card numbers and can block or warn when it is shared inappropriately, for example to external recipients."
+  },
+  {
+    "id": "SC900-T1-016",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance score",
+    "stem": "Compliance Manager gives an organization a score before it creates any assessments of its own. What is that first score based on?",
+    "options": [
+      "Its Defender for Cloud secure score",
+      "Last year's external audit",
+      "The data protection baseline",
+      "Its Microsoft Secure Score"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The initial score comes from the default Microsoft 365 data protection baseline assessment, a set of controls drawn from standards such as NIST CSF, ISO, FedRAMP and GDPR."
+  },
+  {
+    "id": "SC900-T1-017",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Multifactor authentication",
+    "stem": "For each statement about multifactor authentication (MFA), select Yes if it is true or No if it is false.",
+    "rows": [
+      "MFA requires two or more different kinds of verification.",
+      "A password and a PIN together count as MFA.",
+      "A one-time code from an app is something you know.",
+      "Security defaults can require users to register for MFA."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "MFA combines different factors: something you know, something you have and something you are. A password and a PIN are both things you know, so together they are still one factor, and a code from an authenticator app is something you have."
+  },
+  {
+    "id": "SC900-T1-018",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Entra roles",
+    "stem": "Which kind of role controls who can create users and reset their passwords in Microsoft Entra ID?",
+    "options": [
+      "A Microsoft Entra role",
+      "A Microsoft Purview role group",
+      "An Azure RBAC role",
+      "A Conditional Access policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Microsoft Entra roles manage Entra resources such as users, groups and apps, for example User Administrator. Azure RBAC roles manage Azure resources such as virtual machines and storage."
+  },
+  {
+    "id": "SC900-T1-019",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Defender for Cloud Apps",
+    "stem": "A company wants to find out which cloud apps employees use without IT approval. Which Defender XDR service should it use?",
+    "options": [
+      "Microsoft Defender for Office 365",
+      "Microsoft Defender for Identity",
+      "Microsoft Defender for Cloud Apps",
+      "Microsoft Defender for Endpoint"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Defender for Cloud Apps is a cloud access security broker; its Cloud Discovery analyzes traffic logs to reveal shadow IT, the cloud apps in use without approval."
+  },
+  {
+    "id": "SC900-T1-020",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hashing",
+    "stem": "A system stores a value computed from each user's password instead of the password itself, and that value can't be turned back into the password. What technique is this?",
+    "options": [
+      "Hashing",
+      "Symmetric encryption",
+      "Asymmetric encryption",
+      "Federation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hashing is one-way: it turns any input into a fixed-length value that can't be reversed. Encryption, symmetric or asymmetric, is designed to be decrypted with the right key."
+  },
+  {
+    "id": "SC900-T1-021",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Network security groups",
+    "stem": "An NSG has a rule with priority 100 that denies port 3389 and a rule with priority 200 that allows it. What happens to RDP traffic on port 3389?",
+    "options": [
+      "It is denied",
+      "It is allowed",
+      "Both rules are ignored",
+      "It is allowed only from Azure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NSG rules are processed in priority order, lowest number first, and processing stops at the first match. The priority 100 deny rule matches first, so the allow rule is never reached."
+  },
+  {
+    "id": "SC900-T1-022",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "Which Microsoft service collects security data from across an enterprise and correlates it to detect threats?",
+    "options": [
+      "Microsoft Entra ID Protection",
+      "Microsoft Sentinel",
+      "Azure Key Vault",
+      "Microsoft Defender for Endpoint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microsoft Sentinel is a cloud-native SIEM and SOAR solution: it collects data from users, devices, apps and infrastructure, on premises and in many clouds, and detects threats across it. Defender for Endpoint covers devices only."
+  },
+  {
+    "id": "SC900-T1-023",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Retention",
+    "stem": "One retention policy keeps an email for 5 years and another keeps the same email for 7 years. How long is it kept?",
+    "options": [
+      "7 years",
+      "5 years",
+      "6 years",
+      "12 years"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When retention settings conflict, the longest retention period wins, so the email is kept for 7 years. Periods are never added together."
+  },
+  {
+    "id": "SC900-T1-024",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Password protection",
+    "stem": "An admin wants to stop users from choosing passwords that contain the company's brand name. What should the admin configure?",
+    "options": [
+      "Self-service password reset",
+      "Smart lockout thresholds",
+      "The global banned password list",
+      "A custom banned password list"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The custom banned password list holds terms specific to an organization, such as brand and product names. The global banned password list is managed by Microsoft and can't be edited."
+  },
+  {
+    "id": "SC900-T1-025",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Microsoft Entra ID Protection",
+    "stem": "For each statement about Microsoft Entra ID Protection, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Leaked credentials flags passwords found in known breaches.",
+      "Atypical travel is calculated offline, after the sign-in.",
+      "ID Protection risk can make Conditional Access require MFA.",
+      "Leaked credentials is calculated during the sign-in itself."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "ID Protection detects risks, feeds risk-based Conditional Access policies that require MFA or a password change, and lets risk data be exported to tools such as Microsoft Sentinel. Atypical travel is calculated in real time; leaked credentials comes from scanning breach data, so it is calculated offline."
+  },
+  {
+    "id": "SC900-T1-026",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Endpoint",
+    "stem": "Which Defender for Endpoint capability blocks risky behaviors, such as Office apps launching child processes?",
+    "options": [
+      "Automated investigation",
+      "Endpoint detection and response",
+      "Device discovery",
+      "Attack surface reduction rules"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Attack surface reduction rules stop behaviors that malware often abuses, such as Office apps creating child processes or running obfuscated scripts. EDR detects and investigates attacks rather than blocking these behaviors in advance."
+  },
+  {
+    "id": "SC900-T1-027",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Insider risk management",
+    "stem": "A company worries that employees who resign might copy confidential files to USB drives before they leave. Which Purview solution fits?",
+    "options": [
+      "Insider risk management",
+      "Communication compliance",
+      "Audit (Standard)",
+      "eDiscovery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Insider risk management finds and helps act on risky activity by people inside the organization, with policy templates such as data theft by departing users. Audit records activity but doesn't flag the risk."
+  },
+  {
+    "id": "SC900-T1-028",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Encryption",
+    "stem": "For each statement about encryption and hashing, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Symmetric encryption uses the same key to encrypt and decrypt.",
+      "Asymmetric encryption uses a public key and a private key.",
+      "Encryption in transit protects data stored on a disk.",
+      "A hash can be reversed if you have the right key."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Symmetric encryption uses one shared key; asymmetric encryption uses a key pair. Encryption at rest protects stored data, while encryption in transit protects data moving across a network. A hash has no key and can't be reversed."
+  },
+  {
+    "id": "SC900-T1-029",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Azure Key Vault",
+    "stem": "Developers keep database connection strings in their app code. Where should these secrets be stored instead?",
+    "options": [
+      "Azure Key Vault",
+      "Microsoft Purview",
+      "An Azure Storage blob",
+      "A network security group"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Azure Key Vault securely stores and controls access to secrets, keys and certificates, so apps fetch them at run time instead of keeping them in code."
+  },
+  {
+    "id": "SC900-T1-030",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "Microsoft Sentinel playbooks automate responses to threats. What are they built on?",
+    "options": [
+      "Azure Policy definitions",
+      "Power BI reports",
+      "Azure Logic Apps",
+      "Microsoft Purview scans"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sentinel playbooks are workflows built in Azure Logic Apps, which can run actions such as isolating a device or opening a ticket in another system."
+  },
+  {
+    "id": "SC900-T1-031",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Activity explorer",
+    "stem": "Which tool shows what users did with labeled content, such as when a label was removed?",
+    "options": [
+      "Activity explorer",
+      "The Service Trust Portal",
+      "Content explorer",
+      "Compliance Manager"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Activity explorer shows activities on labeled and classified content, such as labels being applied, changed or removed. Content explorer shows where sensitive and labeled items are."
+  },
+  {
+    "id": "SC900-T1-032",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Authentication methods",
+    "stem": "Which sign-in method is both passwordless and phishing-resistant?",
+    "options": [
+      "A passkey (FIDO2)",
+      "A security question",
+      "A voice call",
+      "An SMS code"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A passkey, such as a FIDO2 security key, signs in with a key pair tied to the site, so there is nothing a phishing page can capture and replay. SMS codes and voice calls can be phished."
+  },
+  {
+    "id": "SC900-T1-033",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Access reviews",
+    "stem": "A company wants managers to confirm each quarter that their team members still need access to a sales app. What should it set up?",
+    "options": [
+      "A Conditional Access policy",
+      "A PIM activation request",
+      "An access review",
+      "A custom banned password list"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Access reviews ask chosen reviewers, such as managers, to confirm or remove users' access to groups, apps and roles on a recurring schedule."
+  },
+  {
+    "id": "SC900-T1-034",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Microsoft Defender XDR",
+    "stem": "For each statement about Microsoft Defender XDR, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Each Defender service is managed in its own separate portal.",
+      "It is managed in the Microsoft Purview portal.",
+      "Advanced hunting lets analysts query raw data with KQL.",
+      "Automatic attack disruption can contain a compromised account."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "explanation": "Defender XDR is a unified suite run from the Microsoft Defender portal. It stitches alerts from its services into incidents, offers advanced hunting with KQL, and can contain attacks automatically."
+  },
+  {
+    "id": "SC900-T1-035",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Audit",
+    "stem": "For each statement about auditing in Microsoft Purview, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Audit (Standard) is turned off by default.",
+      "Audit (Standard) keeps audit records for 180 days.",
+      "Audit (Premium) keeps Exchange and SharePoint records for one year by default.",
+      "Audit (Standard) supports custom audit log retention policies."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "explanation": "Audit (Standard) is on by default and keeps records for 180 days. Audit (Premium) adds custom audit log retention policies and keeps Microsoft Entra, Exchange, OneDrive and SharePoint records for one year by default."
+  },
+  {
+    "id": "SC900-T1-036",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Authorization",
+    "stem": "After a user signs in, an app checks whether she is allowed to edit a shared budget file. Which process is that check?",
+    "options": [
+      "Federation",
+      "Authorization",
+      "Auditing",
+      "Authentication"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Authentication proves who you are; authorization decides what you are allowed to do. Signing in was the authentication step, and the permission check that follows is authorization."
+  },
+  {
+    "id": "SC900-T1-037",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Azure DDoS Protection",
+    "stem": "For each statement about Azure DDoS Protection, select Yes if it is true or No if it is false.",
+    "rows": [
+      "It mitigates attacks at network layers 3 and 4.",
+      "DDoS IP Protection needs a DDoS protection plan.",
+      "DDoS Network Protection stops SQL injection.",
+      "Azure gives basic infrastructure DDoS protection by default."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "Azure DDoS Protection works at layers 3 and 4; web attacks such as SQL injection need a WAF at layer 7. DDoS IP Protection is enabled on a public IP resource with no protection plan needed, and services without any DDoS tier still get the default infrastructure-level protection."
+  },
+  {
+    "id": "SC900-T1-038",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Microsoft Defender for Cloud",
+    "stem": "For each statement about Microsoft Defender for Cloud, select Yes if it is true or No if it is false.",
+    "rows": [
+      "It can assess resources in AWS and Google Cloud.",
+      "Foundational CSPM needs a paid plan.",
+      "Attack path analysis is part of Foundational CSPM.",
+      "It can protect on-premises servers through Azure Arc."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "Defender for Cloud assesses Azure, AWS and GCP, and on-premises servers connected through Azure Arc. Foundational CSPM is free and uses the Microsoft cloud security benchmark; advanced tools such as attack path analysis need the paid Defender CSPM plan."
+  },
+  {
+    "id": "SC900-T1-039",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Data classification",
+    "stem": "For each statement about data classification and labeling, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Sensitive information types can find data such as credit card numbers.",
+      "Trainable classifiers learn to recognize content from examples.",
+      "An item can have several sensitivity labels at once.",
+      "Sensitive information types can find words but not numbers."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Sensitive information types match patterns such as card numbers, and trainable classifiers learn from samples. Only one sensitivity label applies to an item at a time, and label policies publish labels to chosen users."
+  },
+  {
+    "id": "SC900-T1-040",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Workload identities",
+    "select": 2,
+    "stem": "Which two are workload identities in Microsoft Entra ID? (Choose two.)",
+    "options": [
+      "Managed identities",
+      "Microsoft 365 groups",
+      "Service principals",
+      "Guest users"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "In Microsoft Entra, workload identities are applications, service principals and managed identities: identities for software rather than people. Guest users are human identities, and groups only collect other objects."
+  },
+  {
+    "id": "SC900-T1-041",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conditional Access",
+    "stem": "Which is a Conditional Access decision rather than a signal?",
+    "options": [
+      "The user's sign-in risk",
+      "Require multifactor authentication",
+      "The location of the user's IP address",
+      "The device platform"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Signals are the inputs a policy checks, such as user, location, device and risk. Decisions are the outcome: block access, grant access, or grant it with requirements such as MFA or a compliant device."
+  },
+  {
+    "id": "SC900-T1-042",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender Vulnerability Management",
+    "stem": "Which solution discovers software vulnerabilities on devices and ranks them by risk to the organization?",
+    "options": [
+      "Microsoft Defender Vulnerability Management",
+      "Microsoft Purview Compliance Manager",
+      "Microsoft Sentinel",
+      "Microsoft Defender for Cloud Apps discovery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Defender Vulnerability Management continuously discovers and assesses vulnerabilities and misconfigurations on devices and prioritizes remediation based on threat context and business impact."
+  },
+  {
+    "id": "SC900-T1-043",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "eDiscovery",
+    "stem": "Legal counsel asks IT to preserve all email of three employees involved in a lawsuit. What should IT use?",
+    "options": [
+      "A DLP policy",
+      "A sensitivity label",
+      "A hold in an eDiscovery case",
+      "An insider risk management policy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In an eDiscovery case, a hold preserves content in the chosen mailboxes and sites so it can't be lost to deletion during the investigation. Sensitivity labels and DLP protect content but don't preserve it."
+  },
+  {
+    "id": "SC900-T1-044",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Federation",
+    "select": 2,
+    "stem": "Which two statements about federation are true? (Choose two.)",
+    "options": [
+      "It depends on trust between domains",
+      "Users keep their own home identity",
+      "The trust always runs in both directions",
+      "Both domains share one directory"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Federation lets users sign in to another domain's services with the identity from their own identity provider, based on a trust relationship. That trust isn't necessarily two-way, and the domains keep separate directories."
+  },
+  {
+    "id": "SC900-T1-045",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Azure Firewall",
+    "stem": "Which Azure service is a managed, stateful firewall that filters traffic between virtual networks and to the internet?",
+    "options": [
+      "Azure Key Vault",
+      "Azure Bastion",
+      "Azure Web Application Firewall",
+      "Azure Firewall"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Azure Firewall is a cloud-native, stateful firewall service with built-in high availability that protects resources across virtual networks. Azure WAF focuses on web application traffic."
+  },
+  {
+    "id": "SC900-T1-046",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "SIEM and SOAR",
+    "select": 2,
+    "stem": "Which two are SOAR capabilities rather than SIEM capabilities? (Choose two.)",
+    "options": [
+      "Correlating events into incidents",
+      "Automating a response to alerts",
+      "Collecting logs from firewalls",
+      "Running a playbook on an incident"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "SIEM collects and correlates security data to find threats. SOAR, security orchestration automated response, takes in those alerts and runs automated playbooks to respond."
+  },
+  {
+    "id": "SC900-T1-047",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Records management",
+    "stem": "A signed contract must be locked so nobody can edit or delete it until its retention period ends. What should be applied?",
+    "options": [
+      "A label that encrypts the file",
+      "A label declaring it a record",
+      "A DLP policy blocking sharing",
+      "An eDiscovery hold on the site"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A retention label that declares an item a record restricts edits and blocks deletion for the retention period. A hold preserves a copy of content for a case but doesn't stop users editing the original."
+  },
+  {
+    "id": "SC900-T1-048",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Password management",
+    "stem": "Users who forget their passwords keep calling the help desk. Which Microsoft Entra ID feature lets them reset the password themselves after proving who they are?",
+    "options": [
+      "Password writeback",
+      "Password hash synchronization",
+      "Self-service password reset",
+      "Smart lockout"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Self-service password reset (SSPR) lets users verify themselves with registered methods and set a new password. Password writeback only sends a cloud-reset password back to on-premises Active Directory."
+  },
+  {
+    "id": "SC900-T1-049",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Privileged Identity Management",
+    "select": 2,
+    "stem": "Which two can Privileged Identity Management do? (Choose two.)",
+    "options": [
+      "Require approval to activate a role",
+      "Classify documents by sensitivity",
+      "Block legacy authentication protocols",
+      "Give time-bound role assignments"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "PIM provides just-in-time and time-bound access, approvals, MFA on activation, justifications, notifications, access reviews and audit history. Blocking legacy authentication is a Conditional Access job, and classifying documents belongs to Microsoft Purview."
+  },
+  {
+    "id": "SC900-T1-050",
+    "section": "sc900",
+    "test": 1,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Microsoft Defender for Office 365",
+    "select": 2,
+    "stem": "Which two features are in Defender for Office 365 Plan 2 but not in Plan 1? (Choose two.)",
+    "options": [
+      "Safe Links",
+      "Safe Attachments for SharePoint",
+      "Threat Explorer",
+      "Attack simulation training"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Plan 1 adds prevention such as Safe Links, Safe Attachments and impersonation protection. Plan 2 adds attack simulation training, Threat Explorer, campaigns and automated investigation and response."
+  },
+  {
+    "id": "SC900-T2-001",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Workload identities",
+    "stem": "Several Azure apps must share one identity, and that identity must keep existing when any one of the apps is deleted. What should you use?",
+    "options": [
+      "A user-assigned managed identity",
+      "A system-assigned managed identity",
+      "A guest account for each app",
+      "A device identity for each app"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A user-assigned managed identity is a standalone resource that can be shared by many resources and has its own lifecycle. A system-assigned managed identity belongs to one resource and is deleted with it."
+  },
+  {
+    "id": "SC900-T2-002",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Entra ID Governance",
+    "stem": "New contractors need the same groups, apps and SharePoint sites, requested in one step and removed when the contract ends. What fits?",
+    "options": [
+      "Conditional Access session controls",
+      "Entitlement management access packages",
+      "Dynamic group membership rules",
+      "Privileged Identity Management for Groups"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In entitlement management, an access package bundles groups, apps and sites that users request together, with approvals and an expiry. That fits the contractor lifecycle better than any single control."
+  },
+  {
+    "id": "SC900-T2-003",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Office 365",
+    "stem": "A link in an email points to a site that turns malicious hours after the message arrives. Which feature checks the URL again when the user clicks it?",
+    "options": [
+      "Connection filtering",
+      "Safe Attachments",
+      "Safe Links",
+      "Anti-spam policies"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Safe Links scans URLs at the time of click in email, Office apps and Teams, so a link that became malicious after delivery is still caught."
+  },
+  {
+    "id": "SC900-T2-004",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility model",
+    "stem": "A company moves an app from Azure virtual machines (IaaS) to a PaaS service. Which responsibility moves from the company to Microsoft?",
+    "options": [
+      "Managing the operating system",
+      "Classifying the app's data",
+      "Managing user accounts",
+      "Securing the employees' laptops"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In IaaS the customer patches and manages the operating system; in PaaS Microsoft does. Accounts, data and devices stay with the customer in every service type."
+  },
+  {
+    "id": "SC900-T2-005",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Network segmentation",
+    "stem": "A company puts its web servers and database servers in separate subnets and allows only the needed traffic between them. What is this?",
+    "options": [
+      "Virtual network peering",
+      "Data classification",
+      "Network segmentation",
+      "Load balancing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Segmentation splits a network into zones, such as subnets, and controls the traffic between them, so a breach in one zone doesn't open the others. Peering joins networks rather than dividing them."
+  },
+  {
+    "id": "SC900-T2-006",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "How does Microsoft Sentinel bring in logs from Microsoft 365 and from non-Microsoft firewalls?",
+    "options": [
+      "Workbooks",
+      "Jupyter notebooks",
+      "Playbooks",
+      "Data connectors"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data connectors ingest data from Microsoft and non-Microsoft sources into Sentinel. Workbooks visualize data, notebooks support deep investigation, and playbooks automate responses."
+  },
+  {
+    "id": "SC900-T2-007",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Retention",
+    "stem": "One retention policy deletes Teams chats after 1 year, but another retains the same chats for 3 years. What happens at the 1-year mark?",
+    "options": [
+      "They are deleted at 2 years",
+      "They are deleted at 1 year",
+      "They are kept until 3 years",
+      "They are kept forever"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Retention wins over deletion: content isn't permanently deleted while another setting still requires it to be kept. The deletion is suspended until the 3-year retention period ends."
+  },
+  {
+    "id": "SC900-T2-008",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance Manager",
+    "stem": "In Compliance Manager, who completes the Microsoft actions in an assessment?",
+    "options": [
+      "The customer and Microsoft jointly",
+      "The customer's compliance team",
+      "The customer's external auditor",
+      "Microsoft, for its own services"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microsoft actions are controls Microsoft implements and tests for its cloud services. Improvement actions are the ones the customer's organization carries out."
+  },
+  {
+    "id": "SC900-T2-009",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hybrid identity",
+    "stem": "Company policy says every cloud sign-in must be checked against on-premises Active Directory, without deploying AD FS. Which method meets this?",
+    "options": [
+      "Pass-through authentication",
+      "Password hash synchronization",
+      "Federation",
+      "Microsoft Entra B2B collaboration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pass-through authentication uses lightweight on-premises agents to validate passwords against Active Directory at sign-in, with no AD FS farm. Federation would need an on-premises identity provider such as AD FS."
+  },
+  {
+    "id": "SC900-T2-010",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Entra ID Protection",
+    "stem": "An admin wants users whose sign-in is rated high risk to complete MFA before they get in. What should the admin create?",
+    "options": [
+      "A sign-in risk policy",
+      "An access review",
+      "A user risk policy",
+      "A custom banned password list"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sign-in risk is the chance that a particular sign-in isn't from the account owner, and the usual response is to require MFA. User risk is about the account itself being compromised, and is usually answered with a secure password change."
+  },
+  {
+    "id": "SC900-T2-011",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Defender portal",
+    "stem": "Where do security teams manage incidents from Defender for Endpoint, Office 365, Identity and Cloud Apps together?",
+    "options": [
+      "The Microsoft Defender portal",
+      "The Azure Cost Management page",
+      "The Microsoft Purview portal",
+      "The Service Trust Portal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Microsoft Defender portal combines protection, detection, investigation and response across the Defender XDR services in one place, with a unified incident queue."
+  },
+  {
+    "id": "SC900-T2-012",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Zero Trust",
+    "stem": "A security team segments its network and encrypts data end to end so that an attacker who gets in can reach as little as possible. Which Zero Trust principle is this?",
+    "options": [
+      "Verify explicitly",
+      "Use least privileged access",
+      "Security through obscurity",
+      "Assume breach"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Assume breach means acting as if an attacker is already inside: segment access to limit the blast radius, encrypt end to end and use analytics to spot threats. Verify explicitly is about checking each request."
+  },
+  {
+    "id": "SC900-T2-013",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Network security groups",
+    "stem": "Where can a network security group be associated?",
+    "options": [
+      "A subnet or a network interface",
+      "A resource group or a subscription",
+      "A storage account or a key vault",
+      "A user or a security group"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An NSG filters traffic for the subnet or the virtual machine network interface it is associated with. It can't be attached to a resource group, a user or a PaaS account."
+  },
+  {
+    "id": "SC900-T2-014",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud security posture management",
+    "stem": "A security team wants to see the chains of weaknesses an attacker could follow to reach a critical database. Which Defender CSPM feature shows this?",
+    "options": [
+      "Attack path analysis",
+      "Secure score",
+      "The asset inventory view",
+      "Workflow automation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Attack path analysis maps how an attacker could exploit a series of weaknesses to reach high-value resources. Asset inventory and workflow automation are also in the free plan, but they don't trace attack paths."
+  },
+  {
+    "id": "SC900-T2-015",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Content explorer",
+    "stem": "A compliance admin wants to see how many SharePoint items contain passport numbers and where they are. Which tool fits?",
+    "options": [
+      "Content explorer",
+      "Activity explorer",
+      "Audit (Standard)",
+      "Compliance Manager"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Content explorer shows items that contain sensitive information types or carry labels, and where they are stored. Activity explorer shows what was done to labeled content."
+  },
+  {
+    "id": "SC900-T2-016",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Compliance score",
+    "stem": "In Compliance Manager, which type of improvement action carries the most points?",
+    "options": [
+      "Preventative mandatory",
+      "Preventative discretionary",
+      "Corrective mandatory",
+      "Detective mandatory"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Points follow risk: preventative mandatory actions score 27, preventative discretionary 9, and detective or corrective mandatory actions 3 each."
+  },
+  {
+    "id": "SC900-T2-017",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hybrid identity",
+    "stem": "Which tool synchronizes on-premises Active Directory users to Microsoft Entra ID using lightweight agents managed from the cloud?",
+    "options": [
+      "Microsoft Entra Cloud Sync",
+      "Microsoft Entra ID Protection",
+      "Microsoft Entra ID Governance",
+      "Microsoft Entra Domain Services"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Microsoft Entra Cloud Sync uses a lightweight provisioning agent, with its configuration held in the cloud. Microsoft Entra Domain Services is a different service: it offers managed domains with Kerberos and LDAP in Azure."
+  },
+  {
+    "id": "SC900-T2-018",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Microsoft Entra roles",
+    "stem": "A help desk worker only needs to reset passwords for users who aren't admins. Which role assignment best follows least privilege?",
+    "options": [
+      "Global Administrator",
+      "Password Administrator",
+      "Privileged Role Administrator",
+      "User Administrator"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Password Administrator can reset passwords for non-administrators and other Password Administrators, and little else. User Administrator can also create and delete users and manage groups, which is more than this job needs."
+  },
+  {
+    "id": "SC900-T2-019",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Endpoint",
+    "stem": "Which Defender for Endpoint capability records device behavior so analysts can investigate an attack after it happens?",
+    "options": [
+      "Endpoint detection and response",
+      "Attack surface reduction",
+      "Automated investigation and response",
+      "Next-generation protection"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "EDR collects behavioral data from devices and raises alerts on advanced attacks, giving analysts the timeline they need to investigate. Next-generation protection is the antivirus layer."
+  },
+  {
+    "id": "SC900-T2-020",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "CIA triad",
+    "stem": "An attacker floods a website with traffic so customers can't reach it. Which part of the CIA triad does this attack target?",
+    "options": [
+      "Integrity",
+      "Authenticity",
+      "Confidentiality",
+      "Availability"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The CIA triad is confidentiality, integrity and availability. Making a service unreachable attacks availability; reading data you shouldn't see is a confidentiality breach, and changing it is an integrity breach."
+  },
+  {
+    "id": "SC900-T2-021",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure Firewall",
+    "stem": "Azure Firewall can alert on or deny traffic to and from known malicious IP addresses and domains. What is this feature?",
+    "options": [
+      "Web application firewall managed rules",
+      "Just-in-time VM access",
+      "Threat intelligence-based filtering",
+      "DDoS rapid response"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Threat intelligence-based filtering uses Microsoft's threat intelligence feed of known malicious IP addresses and domains, set to alert or to alert and deny."
+  },
+  {
+    "id": "SC900-T2-022",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "Which Microsoft Sentinel feature gives interactive dashboards for visualizing the data it collects?",
+    "options": [
+      "Workbooks",
+      "Playbooks",
+      "Data connectors",
+      "Analytics rules"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Workbooks are Azure workbooks used for data visualization and interaction in Sentinel. Analytics rules detect threats, and data connectors bring data in."
+  },
+  {
+    "id": "SC900-T2-023",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sensitivity labels",
+    "stem": "Sensitivity labels can apply privacy and external sharing settings to which of these containers?",
+    "options": [
+      "Azure subscriptions and resource groups",
+      "Domain controllers",
+      "Teams, Microsoft 365 groups and sites",
+      "Azure virtual networks and subnets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Besides files and email, sensitivity labels can protect containers: Microsoft Teams, Microsoft 365 groups and SharePoint sites, with settings such as privacy and external sharing."
+  },
+  {
+    "id": "SC900-T2-024",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Password protection",
+    "stem": "Microsoft Entra Password Protection finds two banned words in a new password, plus two other characters. Is the password accepted?",
+    "options": [
+      "No, it scores 4 points",
+      "Yes, it scores 4 points",
+      "Yes, it scores 6 points",
+      "No, it scores 2 points"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each banned word found scores one point and each remaining character scores one point, so this password scores 2 + 2 = 4. A password needs at least five points to be accepted."
+  },
+  {
+    "id": "SC900-T2-025",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Entra ID Governance",
+    "stem": "HR marks an employee's last day. Which Microsoft Entra ID Governance feature can automatically remove the user's access on that date?",
+    "options": [
+      "Quarterly access reviews",
+      "Password writeback",
+      "Lifecycle workflows",
+      "Named locations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lifecycle workflows automate joiner, mover and leaver tasks, such as disabling an account and removing group memberships on the last day. Access reviews depend on reviewers and run on a schedule, not on the HR date."
+  },
+  {
+    "id": "SC900-T2-026",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Microsoft Defender for Cloud Apps",
+    "stem": "A company wants to block downloads from a sanctioned cloud app in real time when users are on unmanaged devices. Which Defender for Cloud Apps feature fits?",
+    "options": [
+      "App risk scores",
+      "Conditional Access App Control",
+      "Cloud Discovery",
+      "Cloud Discovery anomaly policies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Conditional Access App Control proxies user sessions so Defender for Cloud Apps can monitor and control them in real time, for example blocking downloads. Cloud Discovery only reports on which apps are used."
+  },
+  {
+    "id": "SC900-T2-027",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy principles",
+    "stem": "Under Microsoft's privacy commitments, how does Microsoft respond when a government asks it for a customer's data?",
+    "options": [
+      "It discloses the data if the agency is local",
+      "It redirects the request to the customer",
+      "It gives the agency direct access to the data",
+      "It discloses the data once it is encrypted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microsoft's position is that government requests should go to the customer. It doesn't give any government direct or unfettered access, discloses only as the customer directs or the law requires, and challenges requests where it lawfully can."
+  },
+  {
+    "id": "SC900-T2-028",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance concepts",
+    "stem": "A national law says certain records about a country's citizens may be stored only in data centers inside that country. Which compliance concept is this?",
+    "options": [
+      "Data minimization",
+      "Data classification",
+      "Data retention",
+      "Data residency"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data residency rules govern the physical locations where data may be stored and how and when it can move between countries. Retention is about how long data is kept, not where."
+  },
+  {
+    "id": "SC900-T2-029",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Azure Key Vault",
+    "select": 2,
+    "stem": "Which two kinds of objects can Azure Key Vault store and manage? (Choose two.)",
+    "options": [
+      "Firewall rule collections",
+      "Certificates",
+      "Cryptographic keys",
+      "Virtual machine images"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Key Vault manages secrets, cryptographic keys and TLS/SSL certificates. VM images live in a compute gallery, and firewall rules belong to Azure Firewall."
+  },
+  {
+    "id": "SC900-T2-030",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security recommendations",
+    "stem": "Defender for Cloud notices a storage account that allows public network access and suggests a fix. What is this suggestion called?",
+    "options": [
+      "A security recommendation",
+      "An incident in Microsoft Sentinel",
+      "A security alert",
+      "A playbook"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Recommendations come from assessing resources against security standards and tell you how to fix misconfigurations. Alerts are raised when a threat is detected on a protected workload."
+  },
+  {
+    "id": "SC900-T2-031",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sensitivity labels",
+    "stem": "A company wants documents that contain health record numbers to be labeled even when users forget. What should it use?",
+    "options": [
+      "Label policy priority",
+      "Manual labeling",
+      "Mandatory labeling",
+      "Auto-labeling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Auto-labeling applies a label when content matches conditions such as a sensitive information type. Mandatory labeling only forces users to pick some label, not necessarily the right one."
+  },
+  {
+    "id": "SC900-T2-032",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Identity types",
+    "stem": "For each statement about device identities in Microsoft Entra ID, select Yes if it is true or No if it is false.",
+    "rows": [
+      "A device can be registered, joined or hybrid joined.",
+      "Registration is meant for company-owned PCs.",
+      "A hybrid joined device has no on-premises AD account.",
+      "A device identity lets Conditional Access check the device."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "Registered suits personal (bring your own) devices, joined suits company devices that live in the cloud, and hybrid joined devices are joined to both on-premises Active Directory and Microsoft Entra ID. Conditional Access can then use device state as a signal."
+  },
+  {
+    "id": "SC900-T2-033",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Conditional Access",
+    "stem": "For each statement about Microsoft Entra Conditional Access, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Policies are enforced after first-factor authentication.",
+      "A policy can require a device marked as compliant.",
+      "Conditional Access replaces the need to authenticate.",
+      "Conditional Access is included in Microsoft Entra ID Free."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Conditional Access acts after the first authentication factor is complete, as an if-then engine for access decisions. It adds to authentication rather than replacing it, and it is a P1 or P2 feature."
+  },
+  {
+    "id": "SC900-T2-034",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Threat Intelligence",
+    "stem": "Analysts want Microsoft's research on a threat actor's tools and infrastructure, plus related indicators. Where in the Defender portal can they browse it?",
+    "options": [
+      "Device inventory",
+      "Secure score",
+      "Intel explorer",
+      "The Action center"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Intel explorer lets analysts search Microsoft threat intelligence by threat actors, campaigns, tools, indicators and vulnerabilities, with threat analytics reports included."
+  },
+  {
+    "id": "SC900-T2-035",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Purview portal",
+    "stem": "Where do admins now manage Compliance Manager, data loss prevention, eDiscovery and audit?",
+    "options": [
+      "The Azure portal",
+      "The Service Trust Portal",
+      "The Microsoft Defender portal",
+      "The Microsoft Purview portal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Microsoft Purview portal brings Microsoft's data security, data governance and compliance solutions together, replacing the retired compliance portal."
+  },
+  {
+    "id": "SC900-T2-036",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Identity concepts",
+    "stem": "For each statement about identity, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Identity is often called the primary security perimeter.",
+      "Active Directory Domain Services is a cloud-native identity service.",
+      "An identity provider can give single sign-on to many apps.",
+      "Authentication decides what a user is allowed to do."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "With people working from anywhere, identity has become the main security boundary. AD DS is the traditional on-premises directory service, and deciding what a user may do is authorization, not authentication."
+  },
+  {
+    "id": "SC900-T2-037",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure DDoS Protection",
+    "stem": "A company has DDoS Network Protection on its virtual network. What should it add to defend a web app against layer 7 attacks?",
+    "options": [
+      "A web application firewall",
+      "A second DDoS protection plan",
+      "A network security group",
+      "Azure Bastion"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Azure DDoS Protection covers layers 3 and 4. Protecting a web app at the application layer, layer 7, needs a WAF, for example on Application Gateway."
+  },
+  {
+    "id": "SC900-T2-038",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Cloud",
+    "stem": "How can Defender for Cloud protect a company's on-premises servers?",
+    "options": [
+      "By adding them to an NSG",
+      "By syncing them with Entra Connect",
+      "By routing them through Azure Bastion",
+      "By connecting them through Azure Arc"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Azure Arc connects on-premises and other-cloud machines to Azure, so Defender for Cloud can assess and protect them. Entra Connect synchronizes identities, not servers."
+  },
+  {
+    "id": "SC900-T2-039",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Data loss prevention",
+    "select": 2,
+    "stem": "Which two locations can a Microsoft Purview DLP policy protect? (Choose two.)",
+    "options": [
+      "Windows devices",
+      "Domain controller logs",
+      "Azure virtual networks",
+      "Exchange email"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "DLP policies can cover Exchange email, SharePoint and OneDrive, Teams chats and channels, and devices through endpoint DLP. Network traffic filtering belongs to other tools."
+  },
+  {
+    "id": "SC900-T2-040",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication methods",
+    "stem": "A new employee has no credentials yet and must set up a passkey on day one. What can an admin issue so the employee can sign in to do that?",
+    "options": [
+      "A password reset link",
+      "A hardware OATH token code",
+      "A Temporary Access Pass",
+      "A one-time SMS code"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Temporary Access Pass is a time-limited passcode an admin issues so a user can sign in and register passwordless methods. SMS codes and OATH tokens are second factors that the user would already need to have registered."
+  },
+  {
+    "id": "SC900-T2-041",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privileged Identity Management",
+    "stem": "Auditors ask why an admin activated the Global Administrator role last Tuesday. Where can the admin's stated reason be found?",
+    "options": [
+      "In Compliance Manager",
+      "In the Service Trust Portal",
+      "In the PIM audit history",
+      "In the secure score"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PIM asks for a justification when a role is activated, and its audit history records activations and their reasons, which can be downloaded for audits."
+  },
+  {
+    "id": "SC900-T2-042",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Microsoft Defender for Identity",
+    "stem": "Defender for Identity shows how an attacker could move from a low-privilege account to a domain admin account through cached credentials. What is this called?",
+    "options": [
+      "An attack path in Defender CSPM",
+      "A sign-in risk detection",
+      "An attack surface reduction rule",
+      "A lateral movement path"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lateral movement paths in Defender for Identity show how an attacker could use sensitive accounts' credentials left on computers to escalate on premises. Defender CSPM attack paths cover cloud resources."
+  },
+  {
+    "id": "SC900-T2-043",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Audit",
+    "select": 2,
+    "stem": "Which two does Audit (Premium) add to Audit (Standard)? (Choose two.)",
+    "options": [
+      "Search in the Purview portal",
+      "Audit log retention policies",
+      "Export of results to CSV",
+      "Intelligent insights"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Audit (Premium) adds retention policies, longer retention, intelligent insights such as MailItemsAccessed and more API bandwidth. Searching the log and exporting results to CSV are already in Audit (Standard)."
+  },
+  {
+    "id": "SC900-T2-044",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directory services",
+    "stem": "What is the main purpose of a directory service such as Active Directory Domain Services?",
+    "options": [
+      "To analyze security logs",
+      "To store and manage identity objects",
+      "To encrypt files on servers",
+      "To route traffic between office networks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A directory service stores objects such as users, groups and computers and lets admins manage them and control access to network resources. Encryption, routing and log analysis are jobs for other tools."
+  },
+  {
+    "id": "SC900-T2-045",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Infrastructure security",
+    "stem": "Match each task to the Azure service that performs it.",
+    "rows": [
+      "Store an API key that an app reads at run time",
+      "Open an SSH session to a VM from the browser",
+      "Filter outbound traffic by domain name",
+      "Manage and renew a TLS certificate"
+    ],
+    "columns": [
+      "Azure Firewall",
+      "Azure Bastion",
+      "Azure Key Vault"
+    ],
+    "correct": [
+      2,
+      1,
+      0,
+      2
+    ],
+    "explanation": "Key Vault holds secrets and certificates, Bastion gives browser-based RDP and SSH to VMs, and Azure Firewall filters traffic, including by fully qualified domain name."
+  },
+  {
+    "id": "SC900-T2-046",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Microsoft Sentinel",
+    "stem": "Match each task to the Microsoft Sentinel feature that does it.",
+    "rows": [
+      "Run KQL queries to look for threats before any alert fires",
+      "Create incidents from a suspicious pattern in the logs",
+      "Assign and tag incidents as soon as they are created",
+      "Detect a brute-force pattern on a schedule"
+    ],
+    "columns": [
+      "Analytics rules",
+      "Hunting",
+      "Automation rules"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      0
+    ],
+    "explanation": "Analytics rules turn suspicious patterns in the data into alerts and incidents. Hunting is analyst-led searching, and automation rules handle incidents, for example assigning them or running playbooks."
+  },
+  {
+    "id": "SC900-T2-047",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data classification",
+    "stem": "A company wants DLP to recognize its own customer ID numbers from a database, with few false positives. Which classification method fits?",
+    "options": [
+      "A sensitivity label",
+      "A trainable classifier",
+      "Exact data match",
+      "A built-in sensitive info type"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Exact data match compares content against the organization's actual sensitive values, such as customer records, which gives far fewer false positives than a general pattern."
+  },
+  {
+    "id": "SC900-T2-048",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Groups",
+    "stem": "An admin wants everyone whose department attribute is Sales to join a group automatically, and leave it when they move. What should the admin create?",
+    "options": [
+      "A distribution list",
+      "An administrative unit",
+      "A group with assigned membership",
+      "A group with dynamic membership"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dynamic membership rules add and remove members from user or device attributes such as department. With assigned membership, owners add and remove each member by hand."
+  },
+  {
+    "id": "SC900-T2-049",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Conditional Access",
+    "stem": "Classify each item in a Conditional Access policy as a signal or a decision.",
+    "rows": [
+      "A sign-in from an unfamiliar country",
+      "Block access",
+      "The device is marked compliant",
+      "Require multifactor authentication"
+    ],
+    "columns": [
+      "Signal",
+      "Decision"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Signals are the conditions a policy looks at, such as location, device state and risk. Decisions are what happens: block access, or grant it with requirements like MFA."
+  },
+  {
+    "id": "SC900-T2-050",
+    "section": "sc900",
+    "test": 2,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Microsoft Defender XDR",
+    "stem": "Match each threat to the Defender XDR service mainly designed to stop it.",
+    "rows": [
+      "A phishing email with a malicious link",
+      "A ransomware process starting on a laptop",
+      "A pass-the-ticket attack against a domain controller",
+      "An email that impersonates the company's CEO"
+    ],
+    "columns": [
+      "Defender for Endpoint",
+      "Defender for Office 365",
+      "Defender for Identity"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Defender for Office 365 covers email and collaboration threats such as phishing and impersonation, Defender for Endpoint covers devices, and Defender for Identity covers on-premises Active Directory."
+  },
+  {
+    "id": "SC900-D-001",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Defense in depth",
+    "stem": "In the defense-in-depth model, which layer is at the center, protected by every other layer?",
+    "options": [
+      "Physical security",
+      "Perimeter",
+      "Data",
+      "Network"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Defense in depth places layers of controls around the data: physical security, identity and access, perimeter, network, compute and application. Data sits in the middle as the asset all the layers protect."
+  },
+  {
+    "id": "SC900-D-002",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Network security groups",
+    "stem": "Inbound internet traffic reaches a VM's subnet and matches none of the NSG's custom rules. What happens to it?",
+    "options": [
+      "A default rule denies it",
+      "A default rule allows it",
+      "It is sent to Azure Firewall",
+      "It is logged and let through"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every NSG ends with default rules, including one that denies all inbound traffic not allowed by a higher-priority rule. Only traffic from within the virtual network and the Azure load balancer is allowed by default."
+  },
+  {
+    "id": "SC900-D-003",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "SIEM and SOAR",
+    "stem": "What does SIEM stand for?",
+    "options": [
+      "Security incident and endpoint monitoring",
+      "Secure identity and entitlement management",
+      "System integrity and event mapping",
+      "Security information and event management"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SIEM is security information and event management: collecting and analyzing security data to detect threats. Microsoft Sentinel is Microsoft's cloud-native SIEM."
+  },
+  {
+    "id": "SC900-D-004",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Retention",
+    "stem": "What can a retention label do that a retention policy can't?",
+    "options": [
+      "Apply to a whole location",
+      "Delete content after a period",
+      "Retain content for years",
+      "Declare an item as a record"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Retention labels are applied to individual items and can declare them records. Retention policies apply to whole locations, and both can retain and delete."
+  },
+  {
+    "id": "SC900-D-005",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Entra ID",
+    "stem": "A company uses Microsoft 365. Where are its users' cloud accounts stored?",
+    "options": [
+      "In its Microsoft Entra ID tenant",
+      "In Microsoft Purview",
+      "On its own on-premises domain controllers",
+      "In an Azure Key Vault"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Microsoft 365 uses Microsoft Entra ID as its identity service, so every organization's users live in its own Entra tenant. Domain controllers hold on-premises Active Directory accounts."
+  },
+  {
+    "id": "SC900-D-006",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Entra roles",
+    "stem": "Which Microsoft Entra role can manage every administrative feature in the tenant?",
+    "options": [
+      "Global Reader",
+      "Security Administrator",
+      "User Administrator",
+      "Global Administrator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Global Administrator has access to all administrative features, which is why Microsoft advises keeping very few people in it. Global Reader can view the same settings but can't change them."
+  },
+  {
+    "id": "SC900-D-007",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Defender XDR",
+    "stem": "What does XDR stand for in Microsoft Defender XDR?",
+    "options": [
+      "Extended detection and response",
+      "Extended directory and risk reporting",
+      "External data retention",
+      "Cross-domain recovery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "XDR is extended detection and response: detection and response that extends beyond one product to endpoints, identities, email, apps and more."
+  },
+  {
+    "id": "SC900-D-008",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance Manager",
+    "stem": "What does an assessment in Compliance Manager track?",
+    "options": [
+      "Sign-in risk for a group of users",
+      "Progress on the controls for a regulation",
+      "Malware found on devices",
+      "Monthly spending on each compliance license"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An assessment groups the controls of a regulation, standard or policy, such as GDPR or ISO 27001, and tracks the actions completed against them."
+  },
+  {
+    "id": "SC900-D-009",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hashing",
+    "stem": "Why is a random value, called a salt, added to a password before it is hashed?",
+    "options": [
+      "So the hash can be decrypted",
+      "So the stored hash takes less space",
+      "So equal passwords hash differently",
+      "So it meets complexity rules"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A salt makes two users with the same password get different hashes, which defeats lookup tables of precomputed hashes. Salting doesn't make a hash reversible."
+  },
+  {
+    "id": "SC900-D-010",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Network security groups",
+    "stem": "An NSG allows an outbound request from a virtual machine. What happens to the reply traffic?",
+    "options": [
+      "It is allowed automatically",
+      "It needs its own inbound rule",
+      "It must pass through Bastion",
+      "It is always blocked"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NSGs are stateful: once a flow is allowed in one direction, the return traffic for that flow is allowed without a separate rule."
+  },
+  {
+    "id": "SC900-D-011",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "Where is the log data that Microsoft Sentinel searches and correlates stored?",
+    "options": [
+      "In a storage queue",
+      "In a Log Analytics workspace",
+      "In an Azure Key Vault",
+      "In a Microsoft Purview data map"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sentinel is enabled on a Log Analytics workspace, and its back end stays integrated with Log Analytics for data storage, search and correlation, even in the Defender portal."
+  },
+  {
+    "id": "SC900-D-012",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Retention",
+    "stem": "How many retention labels can an email have applied at one time?",
+    "options": [
+      "Two",
+      "No limit",
+      "Five",
+      "One"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Like sensitivity labels, an item can have only one retention label at a time, applied manually or automatically."
+  },
+  {
+    "id": "SC900-D-013",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Identity types",
+    "stem": "A user from a partner company is invited into a tenant to collaborate on a project. What type of user object is created?",
+    "options": [
+      "A managed identity",
+      "A guest user",
+      "A member user",
+      "A service principal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "External users invited through B2B collaboration appear in the inviting tenant as guest users and sign in with their own credentials. Member users are the organization's own employees."
+  },
+  {
+    "id": "SC900-D-014",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Entra roles",
+    "stem": "No built-in Microsoft Entra role grants exactly the permissions a team needs. What can the admin create?",
+    "options": [
+      "A custom Microsoft Entra role",
+      "A separate administrative tenant",
+      "An access package",
+      "A dynamic group"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Custom roles are built from a chosen set of permissions when the built-in roles give too much or too little. An access package bundles resources for users to request; it doesn't define admin permissions."
+  },
+  {
+    "id": "SC900-D-015",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender XDR",
+    "stem": "Which capability lets Defender XDR examine alerts and fix issues, such as removing a malicious file, without waiting for an analyst?",
+    "options": [
+      "Advanced hunting",
+      "Attack simulation training",
+      "Threat analytics",
+      "Automated investigation and response"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Automated investigation and response (AIR) investigates alerts and takes remediation actions automatically or after approval. Advanced hunting is analyst-led querying."
+  },
+  {
+    "id": "SC900-D-016",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance Manager",
+    "stem": "In Compliance Manager, what are improvement actions?",
+    "options": [
+      "Fixes Microsoft applies to its datacenters",
+      "Steps your organization takes for controls",
+      "Audit records of admin changes",
+      "Alerts raised by insider risk policies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Improvement actions are the controls your organization implements, with guidance and points. Controls Microsoft implements for its own services are Microsoft actions."
+  },
+  {
+    "id": "SC900-D-017",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Encryption",
+    "stem": "Data was encrypted with Ana's public key. Which key can decrypt it?",
+    "options": [
+      "A hash of Ana's public key",
+      "A shared symmetric key",
+      "Ana's private key",
+      "Ana's public key"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In asymmetric encryption, what the public key encrypts only the matching private key can decrypt. That is why the private key must never be shared."
+  },
+  {
+    "id": "SC900-D-018",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure Bastion",
+    "stem": "How does Azure Bastion carry the RDP or SSH session to the admin's browser?",
+    "options": [
+      "Over TLS on port 443",
+      "Over a point-to-site VPN",
+      "Over SSH on port 22",
+      "Over RDP on port 3389"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The admin connects to Bastion in the Azure portal over TLS on port 443, and Bastion opens the RDP or SSH session to the VM's private IP address. No VPN is needed, and ports 3389 and 22 are never exposed to the internet."
+  },
+  {
+    "id": "SC900-D-019",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "Where can analysts handle Microsoft Sentinel incidents and Defender XDR incidents together in one queue?",
+    "options": [
+      "In the Microsoft Entra admin center",
+      "In the Microsoft Purview portal",
+      "In the Microsoft Defender portal",
+      "In the Service Trust Portal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Microsoft Sentinel is available in the Microsoft Defender portal, where a unified incident queue brings SIEM and XDR incidents together."
+  },
+  {
+    "id": "SC900-D-020",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Retention",
+    "stem": "A retention label deletes a file after 3 years, and a site-wide retention policy deletes it after 1 year. Neither keeps it longer. When is it deleted?",
+    "options": [
+      "Never",
+      "After 4 years",
+      "After 3 years",
+      "After 1 year"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Explicit wins over implicit for deletions: the delete action from a retention label on the item takes precedence over one from a retention policy on the whole site."
+  },
+  {
+    "id": "SC900-D-021",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "External identities",
+    "stem": "Two organizations want users to work together in Teams shared channels without creating guest accounts in each other's tenants. Which capability fits?",
+    "options": [
+      "Pass-through authentication",
+      "B2B collaboration",
+      "Microsoft Entra Domain Services",
+      "B2B direct connect"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "B2B direct connect sets up a mutual trust between two Microsoft Entra organizations so users can join Teams shared channels without being added as guests. B2B collaboration creates guest users."
+  },
+  {
+    "id": "SC900-D-022",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Access reviews",
+    "stem": "For each statement about access reviews, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Access reviews are included in Microsoft Entra ID Free.",
+      "Access reviews can cover Microsoft Entra role assignments.",
+      "Reviewers have to be Global Administrators.",
+      "Denied access can be removed automatically."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "explanation": "Access reviews need Microsoft Entra ID P2 or ID Governance licenses. Reviews can cover groups, applications and privileged roles, and reviewers can be managers, owners, chosen users or the users themselves. Results can be applied automatically when the review ends."
+  },
+  {
+    "id": "SC900-D-023",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Microsoft Defender for Cloud Apps",
+    "stem": "Defender for Cloud Apps connects to a sanctioned cloud app's API to see its activities and files. What does it use?",
+    "options": [
+      "A Sentinel workbook",
+      "A Defender for Identity sensor",
+      "A log collector",
+      "An app connector"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "App connectors use the app provider's APIs to give visibility and control inside sanctioned apps. Log collectors upload firewall and proxy logs for Cloud Discovery."
+  },
+  {
+    "id": "SC900-D-024",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance score",
+    "stem": "A company's compliance score in Compliance Manager reaches 90%. What does that score show?",
+    "options": [
+      "Certified compliance with GDPR",
+      "A passed external audit of its controls",
+      "Microsoft's own verification of its controls",
+      "Points earned for completed improvement actions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The compliance score adds up points for improvement actions that are completed and tested. Microsoft states that Compliance Manager isn't a guarantee of compliance: it proves no certification or audit result, and each organization must evaluate its own controls."
+  },
+  {
+    "id": "SC900-D-025",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Zero Trust",
+    "stem": "Admins get just-in-time, just-enough access that expires after a task. Which Zero Trust principle does this apply?",
+    "options": [
+      "Defense in depth",
+      "Assume breach",
+      "Use least privileged access",
+      "Verify explicitly"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Least privileged access limits users to the access they need, for only as long as they need it, with just-in-time and just-enough access. Defense in depth is a layered model, not a Zero Trust principle."
+  },
+  {
+    "id": "SC900-D-026",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Azure Bastion",
+    "stem": "What is a security benefit of Azure Bastion?",
+    "options": [
+      "Admins sign in without credentials",
+      "VM traffic is scanned for malware",
+      "VMs are patched by Bastion automatically",
+      "VMs need no public IP address"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Because Bastion connects to VMs over their private IP addresses, the VMs don't need public IPs or open RDP and SSH ports, which removes a common target for port scanning. Bastion doesn't patch VMs, scan traffic for malware or remove the need to sign in."
+  },
+  {
+    "id": "SC900-D-027",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "Which Sentinel capability learns normal behavior for users and hosts so it can spot anomalies?",
+    "options": [
+      "Workbooks",
+      "Data connectors",
+      "Watchlists",
+      "User and entity behavior analytics"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "UEBA builds behavioral baselines for entities such as users and hosts and flags activity that departs from them. Watchlists are lists of reference data used in queries."
+  },
+  {
+    "id": "SC900-D-028",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Retention",
+    "stem": "Two delete-only retention policies apply to the same mailbox: one deletes after 2 years, the other after 4. When is an email deleted?",
+    "options": [
+      "After 6 years",
+      "After 3 years",
+      "After 2 years",
+      "After 4 years"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When the deletions come from policies of the same scope, the shortest deletion period wins. Nothing here retains the email, so it is deleted after 2 years."
+  },
+  {
+    "id": "SC900-D-029",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Workload identities",
+    "stem": "In Microsoft Entra ID, what is a service principal?",
+    "options": [
+      "A managed device that runs apps",
+      "A person who manages applications",
+      "An app's global template for all tenants",
+      "An app's local instance in one tenant"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The application object is the global template; a service principal is the local representation of that app in a specific tenant and defines what it can do there."
+  },
+  {
+    "id": "SC900-D-030",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Entra ID Protection",
+    "stem": "An admin wants users rated high user risk to change their password securely. What should the admin create?",
+    "options": [
+      "An access review",
+      "A user risk policy",
+      "A sign-in risk policy",
+      "A lifecycle workflow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "User risk means the account is likely compromised, for example through leaked credentials, and a secure password change remediates it. A sign-in risk policy reacts to one suspicious sign-in."
+  },
+  {
+    "id": "SC900-D-031",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Cloud Apps",
+    "stem": "How does Defender for Cloud Apps help admins judge whether a discovered cloud app is safe to use?",
+    "options": [
+      "It lists the app's licensed users",
+      "It blocks every app it discovers",
+      "It tests the app's code for flaws",
+      "It gives each app a risk score"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The cloud app catalog rates thousands of apps against security, compliance and legal criteria and gives each a risk score, which helps admins sanction or block apps."
+  },
+  {
+    "id": "SC900-D-032",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service Trust Portal",
+    "stem": "In the Service Trust Portal, how can a user get an email when a document they use is updated?",
+    "options": [
+      "Save it to My Library",
+      "Pin it in the Defender portal",
+      "Create an audit retention policy",
+      "Add it to a Compliance Manager assessment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Documents saved to My Library can have notifications set, so the user is emailed when Microsoft updates them."
+  },
+  {
+    "id": "SC900-D-033",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Zero Trust",
+    "stem": "Microsoft's Zero Trust model names six foundational pillars. Which is one of them?",
+    "options": [
+      "Devices",
+      "Firewalls",
+      "Datacenters",
+      "Passwords"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The six pillars are identities, devices, applications, data, infrastructure and networks. Firewalls and passwords are controls used within those pillars, not pillars themselves."
+  },
+  {
+    "id": "SC900-D-034",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure Key Vault",
+    "stem": "What is a benefit of keeping an organization's secrets in Azure Key Vault?",
+    "options": [
+      "They are encrypted only in transit",
+      "They rotate with no setup at all",
+      "Any user in the tenant can read them",
+      "Access to them is controlled and logged"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Key Vault centralizes secrets, so access can be limited with permissions and monitored through logs. Rotation has to be set up, only identities granted access can read them, and they are encrypted at rest as well as in transit."
+  },
+  {
+    "id": "SC900-D-035",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "Which language do Microsoft Sentinel hunting queries use?",
+    "options": [
+      "Kusto Query Language (KQL)",
+      "Keyword Query Language (KeyQL)",
+      "Transact-SQL",
+      "PowerShell"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sentinel queries, analytics rules and hunting use Kusto Query Language. KeyQL is the search language of Microsoft Purview eDiscovery."
+  },
+  {
+    "id": "SC900-D-036",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Records management",
+    "stem": "Which kind of record can't be unlocked or have its label removed, even by an admin?",
+    "options": [
+      "A sensitivity-labeled file",
+      "A standard record",
+      "A regulatory record",
+      "A file on eDiscovery hold"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A regulatory record has the strictest controls: the label can't be removed and the record can't be unlocked. A standard record can be unlocked for editing when allowed."
+  },
+  {
+    "id": "SC900-D-037",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hybrid identity",
+    "stem": "With federated authentication, which system checks the user's password?",
+    "options": [
+      "The user's device",
+      "The on-premises identity provider",
+      "Microsoft Entra ID",
+      "Microsoft Entra Connect Sync servers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In a federated setup, Microsoft Entra ID hands authentication to a trusted identity provider such as AD FS, which validates the password. Connect Sync only synchronizes objects."
+  },
+  {
+    "id": "SC900-D-038",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Microsoft Entra ID Protection",
+    "stem": "Which Microsoft Entra ID Protection detection is calculated offline rather than during the sign-in?",
+    "options": [
+      "Atypical travel",
+      "Leaked credentials",
+      "Unfamiliar sign-in properties",
+      "Anonymous IP address"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Leaked credentials is found by scanning breach data outside of any sign-in, so it is calculated offline. Anonymous IP address, atypical travel and unfamiliar sign-in properties are calculated in real time."
+  },
+  {
+    "id": "SC900-D-039",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Office 365",
+    "stem": "Which Defender for Office 365 feature warns when an email pretends to come from the company's CEO?",
+    "options": [
+      "Impersonation protection",
+      "Zero-hour auto purge",
+      "Outbound spam protection",
+      "Safe Attachments"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Anti-phishing policies in Defender for Office 365 add user and domain impersonation protection, which detects senders posing as important people or domains."
+  },
+  {
+    "id": "SC900-D-040",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Privacy principles",
+    "stem": "For each statement about Microsoft's privacy commitments for its commercial cloud, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Customers can access, change or delete their data at any time.",
+      "Microsoft mines customer data for advertising.",
+      "Customers can choose where their data is stored for many services.",
+      "Governments get direct access to customer data."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Microsoft's commitments cover control of your data, knowing where it is located, securing it at rest and in transit, and defending it. Microsoft doesn't mine it for advertising or give governments direct access."
+  },
+  {
+    "id": "SC900-D-041",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "GRC",
+    "stem": "In governance, risk and compliance (GRC), what does governance mean?",
+    "options": [
+      "Rules and processes that direct the business",
+      "Spotting and reducing threats to it",
+      "Encrypting data so only its owners can read it",
+      "Meeting laws and regulations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Governance is the set of rules, practices and processes an organization uses to direct and control its activities. Identifying and reducing threats is risk management, and meeting laws is compliance."
+  },
+  {
+    "id": "SC900-D-042",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Azure DDoS Protection",
+    "stem": "A company wants access to the DDoS Rapid Response team during an attack. Which tier should it choose?",
+    "options": [
+      "Azure Firewall Standard",
+      "DDoS IP Protection",
+      "DDoS Network Protection",
+      "Default infrastructure protection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DDoS IP Protection has the same core mitigation as Network Protection but leaves out rapid response support, cost protection and WAF discounts. Network Protection includes all three."
+  },
+  {
+    "id": "SC900-D-043",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud workload protection",
+    "stem": "Which Defender for Cloud plan raises threat alerts for suspicious activity on virtual machines?",
+    "options": [
+      "Defender CSPM",
+      "Defender for Key Vault",
+      "Defender for Servers",
+      "Defender for Storage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Defender for Servers is the workload protection plan for machines in Azure, other clouds and on premises. Defender CSPM is a posture plan rather than a threat protection plan."
+  },
+  {
+    "id": "SC900-D-044",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Records management",
+    "stem": "Before content is deleted at the end of its retention period, a records manager must approve it. What is this?",
+    "options": [
+      "Activity explorer",
+      "A DLP policy tip",
+      "Disposition review",
+      "Access review"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A disposition review lets chosen reviewers confirm deletion of content at the end of its retention period. An access review checks who has access, not what is deleted."
+  },
+  {
+    "id": "SC900-D-045",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication methods",
+    "stem": "Which method signs a user in with a phone app and a number match, with no password?",
+    "options": [
+      "An SMS one-time code",
+      "Windows Hello for Business",
+      "A hardware OATH token",
+      "Authenticator phone sign-in"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microsoft Authenticator supports passwordless phone sign-in: the user matches a number and confirms with a biometric or PIN. An SMS code and an OATH token are usually used alongside a password."
+  },
+  {
+    "id": "SC900-D-046",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Entra ID Protection",
+    "stem": "Many accounts each get a few tries with very common passwords. Which ID Protection detection describes this attack?",
+    "options": [
+      "Atypical travel",
+      "Anomalous token",
+      "Password spray",
+      "Leaked credentials"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A password spray tries a few common passwords against many identities to avoid lockouts. ID Protection raises the detection when an attacker successfully validates a user's password this way."
+  },
+  {
+    "id": "SC900-D-047",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Office 365",
+    "stem": "A message is delivered and later found to contain malware. Which feature removes it from mailboxes after delivery?",
+    "options": [
+      "Connection filtering",
+      "Safe Links",
+      "Zero-hour auto purge",
+      "Attack simulation training"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Zero-hour auto purge (ZAP) acts on messages already delivered when they are later found to be malware, phishing or spam, moving them out of the inbox."
+  },
+  {
+    "id": "SC900-D-048",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy principles",
+    "stem": "Under Microsoft's privacy commitments, how is customer data protected as it moves between data centers and users?",
+    "options": [
+      "With encryption such as TLS",
+      "With retention labels",
+      "With hashing such as SHA-256",
+      "With network segmentation only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Microsoft protects data at rest and in transit with encryption, using industry-standard transport protocols such as TLS and IPsec for data in transit."
+  },
+  {
+    "id": "SC900-D-049",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance concepts",
+    "stem": "Which compliance concept covers how personal data is collected, used and shared, and the rights people have over it?",
+    "options": [
+      "Data residency",
+      "Data retention",
+      "Data sovereignty",
+      "Data privacy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data privacy is about handling personal data properly and openly, including telling people what is collected and honoring their rights over it. Data residency and data sovereignty are about where data is stored and whose laws apply."
+  },
+  {
+    "id": "SC900-D-050",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Azure DDoS Protection",
+    "stem": "What does a distributed denial of service (DDoS) attack try to do?",
+    "options": [
+      "Exhaust resources so the service goes down",
+      "Steal passwords from a database",
+      "Read encrypted traffic in transit",
+      "Change data without being noticed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A DDoS attack floods an endpoint with traffic to use up its resources, so legitimate users can't reach the application."
+  },
+  {
+    "id": "SC900-D-051",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud workload protection",
+    "stem": "Which Defender for Cloud plan detects unusual access to blob storage and scans uploaded files for malware?",
+    "options": [
+      "Defender for Storage",
+      "Defender for Servers",
+      "Defender for Containers",
+      "Foundational CSPM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Defender for Storage protects storage accounts, alerting on suspicious access and scanning uploads for malware."
+  },
+  {
+    "id": "SC900-D-052",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data loss prevention",
+    "stem": "What does a DLP policy tip do?",
+    "options": [
+      "Encrypts the file automatically",
+      "Warns the user as they share",
+      "Deletes the message",
+      "Adds a retention label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A policy tip is a notice in apps such as Outlook that tells the user their content conflicts with a DLP policy, before or as they share it."
+  },
+  {
+    "id": "SC900-D-053",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identity providers",
+    "stem": "With modern authentication, which party issues the security tokens that apps trust after a user signs in?",
+    "options": [
+      "The user's device",
+      "The identity provider",
+      "The network firewall",
+      "The application server"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In modern authentication the identity provider authenticates the user and issues tokens, and apps trust those tokens instead of handling passwords themselves. Microsoft Entra ID is an example of an identity provider."
+  },
+  {
+    "id": "SC900-D-054",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication methods",
+    "stem": "Which passwordless method uses a biometric or a PIN tied to the user's own Windows device?",
+    "options": [
+      "A Temporary Access Pass",
+      "An OATH hardware token",
+      "Voice call verification",
+      "Windows Hello for Business"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Windows Hello for Business replaces the password with strong two-factor authentication bound to the device, unlocked by a face, fingerprint or PIN."
+  },
+  {
+    "id": "SC900-D-055",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conditional Access",
+    "stem": "A company lets users read email in a browser on unmanaged devices but blocks downloads. Which part of Conditional Access does this?",
+    "options": [
+      "User risk policies",
+      "Session controls",
+      "Grant controls",
+      "Named locations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Session controls limit what a user can do inside an app after access is granted, for example through app enforced restrictions or Conditional Access App Control. Grant controls decide whether access is given at all."
+  },
+  {
+    "id": "SC900-D-056",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Defender for Office 365",
+    "stem": "A company wants to send realistic fake phishing emails to train its staff. What should it use?",
+    "options": [
+      "Impersonation protection",
+      "Safe Links",
+      "Attack simulation training",
+      "Threat Explorer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Attack simulation training, in Defender for Office 365 Plan 2, runs benign phishing simulations and assigns training to users who fall for them."
+  },
+  {
+    "id": "SC900-D-057",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Insider risk management",
+    "stem": "Insider risk management starts from built-in policy templates. Which is one of them?",
+    "options": [
+      "Data theft by departing users",
+      "Passwords found in known breaches",
+      "Inappropriate text in Teams chats",
+      "Mailboxes kept for a lawsuit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data theft by departing users is an insider risk policy template. Finding inappropriate text in messages is communication compliance, keeping mailboxes for a lawsuit is an eDiscovery hold, and passwords found in breaches are an ID Protection leaked credentials detection."
+  },
+  {
+    "id": "SC900-D-058",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure Web Application Firewall",
+    "stem": "On which Azure service can Azure Web Application Firewall be deployed?",
+    "options": [
+      "Azure Key Vault",
+      "Azure DNS",
+      "Azure Bastion",
+      "Azure Application Gateway"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Azure WAF runs on Azure Application Gateway and Azure Front Door, where it can inspect HTTP and HTTPS requests to web apps."
+  },
+  {
+    "id": "SC900-D-059",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloud security posture management",
+    "stem": "A company wants Defender for Cloud to track its posture against PCI DSS and ISO 27001. Which plan includes regulatory compliance assessments?",
+    "options": [
+      "Defender CSPM",
+      "Defender for Servers",
+      "Foundational CSPM",
+      "Defender for Storage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Regulatory compliance assessments against standards beyond the default benchmark are a Defender CSPM feature. Foundational CSPM gives the Microsoft cloud security benchmark and the secure score."
+  },
+  {
+    "id": "SC900-D-060",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sensitivity labels",
+    "stem": "A user changes a document's label from Highly Confidential to General, and the label policy makes them give a reason first. What is this setting?",
+    "options": [
+      "Default labeling",
+      "Auto-labeling",
+      "Justification for a downgrade",
+      "Mandatory labeling"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Label policies can require users to justify removing a label or replacing it with a lower one, and the reason is recorded. Mandatory labeling forces a label on content that has none."
+  },
+  {
+    "id": "SC900-D-061",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Federation",
+    "stem": "Domain A trusts Domain B through federation. What does that say about Domain B trusting Domain A?",
+    "options": [
+      "It is automatic",
+      "It is required for sign-in",
+      "It starts after the first sign-in",
+      "Nothing: it isn't implied"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A federation trust isn't necessarily bidirectional. Domain B trusting Domain A would need its own trust relationship."
+  },
+  {
+    "id": "SC900-D-062",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Password protection",
+    "stem": "For each statement about Microsoft Entra Password Protection, select Yes if it is true or No if it is false.",
+    "rows": [
+      "The global banned password list is always applied.",
+      "A custom banned password list can hold up to 100,000 terms.",
+      "Uppercase letters are changed to lowercase before checking.",
+      "Banned lists are checked when a user signs in."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "The global list is applied automatically and can't be disabled. Custom lists are capped at 1,000 base terms, and every new password is normalized, with uppercase changed to lowercase and common substitutions undone, before it is checked. The lists are checked only when a password is changed or reset."
+  },
+  {
+    "id": "SC900-D-063",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conditional Access",
+    "stem": "An admin defines the office IP address ranges once to reuse in many Conditional Access policies. What is this?",
+    "options": [
+      "An Azure Firewall rule",
+      "An administrative unit",
+      "A network security group",
+      "A named location"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Named locations define trusted IP ranges or countries that Conditional Access policies can include or exclude. A network security group filters Azure network traffic and has nothing to do with sign-in policies."
+  },
+  {
+    "id": "SC900-D-064",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Identity",
+    "stem": "Which attack is Microsoft Defender for Identity designed to detect?",
+    "options": [
+      "Malware hidden in a SharePoint file",
+      "Unapproved cloud apps",
+      "Pass-the-hash on on-premises AD",
+      "A malicious link in an email"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Defender for Identity watches on-premises Active Directory for reconnaissance, compromised credentials such as pass-the-hash, lateral movement and domain dominance."
+  },
+  {
+    "id": "SC900-D-065",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Insider risk management",
+    "stem": "What can insider risk management use to learn an employee's resignation date?",
+    "options": [
+      "An HR data connector",
+      "A Safe Links policy",
+      "A Sentinel playbook",
+      "A sensitivity label"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An HR connector imports human resources data such as resignation and termination dates, which can trigger policies like data theft by departing users."
+  },
+  {
+    "id": "SC900-D-066",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Azure Firewall",
+    "stem": "What does Azure Firewall offer that a network security group does not?",
+    "options": [
+      "Central filtering by domain name",
+      "Rules attached to a subnet",
+      "Filtering by source and destination IP",
+      "Allow and deny rules by port"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NSGs filter by IP address, port and protocol on each subnet or interface. Azure Firewall adds central, cross-network control with application rules for fully qualified domain names and threat intelligence."
+  },
+  {
+    "id": "SC900-D-067",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cloud security posture management",
+    "stem": "What is cloud security posture management (CSPM)?",
+    "options": [
+      "Ongoing checks of cloud setup for risk",
+      "Tracking cloud spending by team",
+      "Encryption of data in cloud storage",
+      "Real-time blocking of malicious network traffic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CSPM continuously assesses cloud resources against security standards and issues recommendations to reduce misconfigurations and risk. Blocking traffic is a firewall's job."
+  },
+  {
+    "id": "SC900-D-068",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sensitivity labels",
+    "stem": "Which is a content marking a sensitivity label can add to a document?",
+    "options": [
+      "A DLP policy tip",
+      "A retention period",
+      "A disposition review",
+      "A watermark"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Content markings are headers, footers and watermarks. A retention period comes from a retention label, not a sensitivity label."
+  },
+  {
+    "id": "SC900-D-069",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Identity concepts",
+    "stem": "Match each activity to the identity concept it shows.",
+    "rows": [
+      "A user enters a password and approves a phone prompt",
+      "An app checks whether a user may approve invoices",
+      "A log records who changed a firewall rule",
+      "A user proves who she is with a fingerprint"
+    ],
+    "columns": [
+      "Authentication",
+      "Authorization",
+      "Auditing"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Authentication proves identity, with a password, a prompt or a fingerprint. Authorization decides what that identity may do, and auditing records who did what and when."
+  },
+  {
+    "id": "SC900-D-070",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Multifactor authentication",
+    "stem": "A small company on Microsoft Entra ID Free wants basic MFA protection for everyone with one setting. What should it turn on?",
+    "options": [
+      "Conditional Access policies",
+      "Security defaults",
+      "ID Protection risk policies",
+      "Privileged Identity Management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Security defaults are free and turn on preconfigured protections such as MFA registration for all users. Conditional Access and the other features need paid Microsoft Entra ID licenses."
+  },
+  {
+    "id": "SC900-D-071",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privileged Identity Management",
+    "stem": "What risk does just-in-time access in PIM reduce?",
+    "options": [
+      "Devices missing security updates",
+      "Standing admin access an attacker could abuse",
+      "Too many guest accounts in a tenant",
+      "Users forgetting their passwords"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Just-in-time access means admin rights exist only while they are activated. A compromised account then has no permanent privileges to misuse."
+  },
+  {
+    "id": "SC900-D-072",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Defender for Endpoint",
+    "stem": "Which Defender for Endpoint capability provides its antivirus and anti-malware protection?",
+    "options": [
+      "Endpoint detection and response",
+      "Vulnerability management",
+      "Attack surface reduction",
+      "Next-generation protection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Next-generation protection is the antimalware layer, using machine learning and cloud protection to block threats. EDR handles detection and investigation of attacks that get through."
+  },
+  {
+    "id": "SC900-D-073",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "eDiscovery",
+    "stem": "Investigators want to tag, filter and analyze collected items, including near-duplicate detection. Which eDiscovery feature is needed?",
+    "options": [
+      "Content search statistics",
+      "Holds on mailboxes",
+      "Audit log export",
+      "Review sets in premium eDiscovery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Review sets, part of the premium eDiscovery features, hold a static copy of collected items for review with tagging, filtering and analytics such as near-duplicate detection and email threading."
+  },
+  {
+    "id": "SC900-D-074",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Network segmentation",
+    "stem": "By default, can resources in two different Azure virtual networks reach each other?",
+    "options": [
+      "Yes, if they are in the same Azure region",
+      "No, not until the networks are connected",
+      "No, not even with peering",
+      "Yes, all VNets are connected"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each virtual network is isolated from every other one by default. Connecting them takes a step such as virtual network peering or a VPN gateway."
+  },
+  {
+    "id": "SC900-D-075",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Microsoft Sentinel",
+    "stem": "For each statement about Microsoft Sentinel, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Sentinel needs on-premises servers to store its logs.",
+      "Sentinel can ingest data from non-Microsoft sources.",
+      "Sentinel stores its logs in Azure Key Vault.",
+      "Automation rules can run playbooks on incidents."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "explanation": "Sentinel is a cloud-native SIEM and SOAR that takes data from Microsoft and non-Microsoft sources across clouds and on premises. Automation rules can triage incidents and trigger playbooks."
+  },
+  {
+    "id": "SC900-D-076",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data classification",
+    "stem": "A company wants to recognize resumes, which have no fixed pattern such as a number format. Which method fits?",
+    "options": [
+      "Exact data match",
+      "A regex-based info type",
+      "A custom banned word list",
+      "A trainable classifier"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Trainable classifiers learn to recognize types of content, such as resumes or contracts, from examples. Sensitive information types and exact data match look for specific patterns or values."
+  },
+  {
+    "id": "SC900-D-077",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identity as the perimeter",
+    "stem": "Why is identity described as the primary security perimeter today?",
+    "options": [
+      "Passwords have replaced every other factor",
+      "Each cloud app now runs its own directory",
+      "Firewalls can no longer filter cloud traffic",
+      "People work from anywhere, on any device"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Users, apps and data now sit outside the old corporate network boundary, so the network edge no longer marks who is trusted. The identity signing in has become the control point."
+  },
+  {
+    "id": "SC900-D-078",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Multifactor authentication",
+    "stem": "A user signs in with a password and then a code from a hardware token. Which factor does the token provide?",
+    "options": [
+      "Somewhere you are",
+      "Something you have",
+      "Something you are",
+      "Something you know"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The token is a physical item in the user's possession, so it is something you have. The password is something you know."
+  },
+  {
+    "id": "SC900-D-079",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Entra ID Governance",
+    "stem": "Which Microsoft Entra capability makes sure the right people have the right access to the right resources, only for as long as needed?",
+    "options": [
+      "Microsoft Entra ID Governance",
+      "Microsoft Defender for Identity",
+      "Microsoft Purview Compliance Manager",
+      "Microsoft Entra ID Protection"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Microsoft Entra ID Governance covers the identity lifecycle, access lifecycle and privileged access, with entitlement management, access reviews, lifecycle workflows and PIM. ID Protection detects risky sign-ins and users."
+  },
+  {
+    "id": "SC900-D-080",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender Vulnerability Management",
+    "stem": "Which Defender Vulnerability Management feature lists the applications installed across managed devices?",
+    "options": [
+      "Cloud Discovery",
+      "Threat analytics",
+      "Secure score",
+      "Software inventory"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Software inventory shows the software found on devices along with known vulnerabilities, which helps prioritize patching. Cloud Discovery finds cloud apps from network logs."
+  },
+  {
+    "id": "SC900-D-081",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "eDiscovery",
+    "stem": "What is eDiscovery?",
+    "options": [
+      "Scanning managed devices for software flaws",
+      "Finding apps employees use",
+      "Classifying files by sensitivity",
+      "Finding electronic content for legal cases"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Electronic discovery identifies and delivers electronically stored information that can be used as evidence in investigations and legal cases."
+  },
+  {
+    "id": "SC900-D-082",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Azure Key Vault",
+    "stem": "For each statement about Azure Key Vault, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Key Vault can store secrets such as passwords.",
+      "Access to Key Vault can be controlled with Azure RBAC.",
+      "Key Vault stores virtual machine disk images.",
+      "Key Vault filters network traffic to virtual machines."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Key Vault stores secrets, keys and certificates, controls who can use them and serves them to authorized apps when needed. Filtering network traffic is a job for NSGs and Azure Firewall."
+  },
+  {
+    "id": "SC900-D-083",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Microsoft Sentinel",
+    "stem": "In Microsoft Sentinel, what groups related alerts together for an analyst to investigate?",
+    "options": [
+      "A workbook",
+      "A watchlist",
+      "A data connector",
+      "An incident"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Alerts that relate to the same attack are grouped into an incident, which is what analysts assign, investigate and close."
+  },
+  {
+    "id": "SC900-D-084",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data loss prevention",
+    "stem": "A DLP policy must stop users copying sensitive files to USB drives. Which location must the policy include?",
+    "options": [
+      "Exchange email",
+      "Devices (endpoint DLP)",
+      "SharePoint sites",
+      "Teams chats"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Endpoint DLP extends policies to Windows and macOS devices, where it can audit or block actions such as copying to removable media."
+  },
+  {
+    "id": "SC900-D-085",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directory services",
+    "stem": "Which identity service do organizations traditionally run on their own domain controllers?",
+    "options": [
+      "Microsoft Entra Domain Services",
+      "Microsoft Entra ID",
+      "Active Directory Domain Services",
+      "Azure Key Vault"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Active Directory Domain Services (AD DS) runs on on-premises domain controllers. Microsoft Entra ID is Microsoft's cloud identity service."
+  },
+  {
+    "id": "SC900-D-086",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Password management",
+    "stem": "With password hash sync, a user resets her password in the cloud. Which feature sends the new password back to on-premises Active Directory?",
+    "options": [
+      "The global banned password list",
+      "Pass-through authentication",
+      "Password writeback",
+      "Seamless single sign-on"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Password writeback writes password changes made in Microsoft Entra ID back to the on-premises directory, so both stay the same. Pass-through authentication only validates passwords at sign-in."
+  },
+  {
+    "id": "SC900-D-087",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Entra ID Protection",
+    "stem": "ID Protection flags a cloud user's account for leaked credentials. What remediates that user risk?",
+    "options": [
+      "A secure password reset",
+      "Signing in from a new device",
+      "Removing the user's MFA methods",
+      "Adding the user to a new group"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Leaked credentials means the current password is known to attackers, so the fix is a secure password reset. Changing devices or groups leaves the exposed password in place."
+  },
+  {
+    "id": "SC900-D-088",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Microsoft Defender for Cloud Apps",
+    "stem": "For each statement about Microsoft Defender for Cloud Apps, select Yes if it is true or No if it is false.",
+    "rows": [
+      "It is a cloud access security broker (CASB).",
+      "It can discover shadow IT from firewall logs.",
+      "It replaces Conditional Access for sign-in control.",
+      "It protects on-premises domain controllers."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Defender for Cloud Apps is a CASB that discovers cloud app use, Microsoft and non-Microsoft alike, gives visibility into sanctioned apps and controls sessions through Conditional Access App Control, which works with Conditional Access rather than replacing it. On-premises domain controllers are Defender for Identity's job."
+  },
+  {
+    "id": "SC900-D-089",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Audit",
+    "stem": "An admin must find out who deleted a SharePoint file last month. What should the admin search?",
+    "options": [
+      "The Service Trust Portal",
+      "Content explorer",
+      "Compliance Manager",
+      "The unified audit log"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The unified audit log records thousands of user and admin activities across Microsoft services, including file deletions, and can be searched in the Purview portal."
+  },
+  {
+    "id": "SC900-D-090",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Azure Firewall",
+    "stem": "A firewall rule lets servers in a subnet reach only *.contoso.com over HTTPS. Which kind of Azure Firewall rule is this?",
+    "options": [
+      "A DNAT rule",
+      "A network rule",
+      "An application rule",
+      "An NSG security rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Application rules filter outbound traffic by fully qualified domain name, including wildcards. Network rules filter by IP address, port and protocol, and DNAT rules translate inbound traffic."
+  },
+  {
+    "id": "SC900-D-091",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Defender for Cloud",
+    "stem": "Which Defender for Cloud feature can automatically run a Logic App when a new recommendation or alert appears?",
+    "options": [
+      "Workflow automation",
+      "Cloud security explorer",
+      "Attack path analysis",
+      "Secure score"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Workflow automation triggers Logic Apps on recommendations, alerts and regulatory compliance changes, and is available in Foundational CSPM."
+  },
+  {
+    "id": "SC900-D-092",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 1,
+    "format": "matrix",
+    "skill": "Retention",
+    "stem": "For each statement about retention in Microsoft Purview, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Retention settings can retain, delete, or retain then delete content.",
+      "A retention label applies to a whole location at once.",
+      "A deleted item still under retention is removed for good at once.",
+      "Retention labels can be applied automatically by policy."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "Retention settings can retain only, delete only, or retain and then delete. A retention policy covers whole locations, while a retention label is applied to individual items, by users or automatically by an auto-apply policy. A deleted item under retention is kept in a secure location until the period ends."
+  },
+  {
+    "id": "SC900-D-093",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hashing",
+    "stem": "A download site publishes a hash next to each file. What can a user confirm with it?",
+    "options": [
+      "That the file has no viruses",
+      "That the file wasn't changed",
+      "Who wrote the file",
+      "That the file is encrypted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If the hash of the downloaded file matches the published one, the file is the same as the original. A matching hash says nothing about who wrote it or whether the original was safe."
+  },
+  {
+    "id": "SC900-D-094",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Identity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication methods",
+    "stem": "Which method lets users sign in to Microsoft Entra ID with an X.509 certificate on a smart card?",
+    "options": [
+      "Windows Hello for Business",
+      "OATH software tokens",
+      "A Temporary Access Pass",
+      "Certificate-based authentication"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Certificate-based authentication signs users in directly with an X.509 certificate, for example on a smart card, against Microsoft Entra ID."
+  },
+  {
+    "id": "SC900-D-095",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Access",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Role-based access control",
+    "stem": "A user must manage virtual machines in one Azure subscription. Which type of role should be assigned?",
+    "options": [
+      "A Microsoft Purview role group",
+      "An Azure RBAC role",
+      "A Conditional Access policy",
+      "A Microsoft Entra role"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Azure role-based access control governs actions on Azure resources such as virtual machines, at a scope like a subscription. Microsoft Entra roles govern directory objects such as users and apps."
+  },
+  {
+    "id": "SC900-D-096",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Xdr",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microsoft Threat Intelligence",
+    "stem": "Which reports in the Defender portal, written by Microsoft security researchers, also show whether an emerging threat affects your own organization?",
+    "options": [
+      "Audit log searches",
+      "Compliance Manager assessments",
+      "Threat analytics reports",
+      "Secure score recommendations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Threat analytics reports describe threats, actors and techniques, and add data from your environment to show whether you are affected and whether protections are in place."
+  },
+  {
+    "id": "SC900-D-097",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Compliance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Audit",
+    "stem": "A company must keep certain users' audit records for 10 years. What does it need besides Audit (Premium)?",
+    "options": [
+      "A retention label on each mailbox",
+      "A Defender XDR license",
+      "An eDiscovery hold on the audit log",
+      "A 10-year retention add-on license"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ten-year retention needs a per-user 10-Year Audit Log Retention add-on license and a matching audit log retention policy. It isn't retroactive."
+  },
+  {
+    "id": "SC900-D-098",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Infra",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Azure Firewall",
+    "stem": "Inbound internet traffic to a firewall's public IP address must be translated and sent to a private server. Which Azure Firewall rule does this?",
+    "options": [
+      "An application rule",
+      "A DNAT rule",
+      "A WAF custom rule",
+      "A network rule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Destination network address translation (DNAT) rules translate and filter inbound traffic arriving at the firewall's public IP to a private address."
+  },
+  {
+    "id": "SC900-D-099",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900CloudSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloud security posture management",
+    "stem": "A team wants to query for every internet-exposed VM that has high-severity vulnerabilities. Which Defender CSPM tool fits?",
+    "options": [
+      "Workflow automation",
+      "Cloud security explorer",
+      "Secure score",
+      "The Microsoft cloud security benchmark"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud security explorer, a Defender CSPM tool, lets teams hunt for risk with graph-based queries that combine exposure, vulnerabilities and other context."
+  },
+  {
+    "id": "SC900-D-100",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900InfoProt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Records management",
+    "stem": "Which records management tool lets a company create and manage its retention labels and their properties in one place?",
+    "options": [
+      "Content explorer",
+      "Compliance score",
+      "Activity explorer",
+      "File plan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "File plan in records management is where retention labels are created, imported and managed in bulk, along with descriptive properties."
+  },
+  {
+    "id": "SC900-D-101",
+    "section": "sc900",
+    "test": 0,
+    "module": 1,
+    "domain": "sc900Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Encryption",
+    "stem": "A company uses TLS on its website so data can't be read as it crosses the internet. Which kind of encryption is this?",
+    "options": [
+      "Hashing",
+      "Encryption at rest",
+      "Encryption in use",
+      "Encryption in transit"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Encrypting data while it moves across a network is encryption in transit, for example with TLS. Encryption at rest protects data stored on disks and in databases."
+  }
+]

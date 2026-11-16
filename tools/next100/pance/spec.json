@@ -1,0 +1,23 @@
+{
+  "id": "pance", "stateCode": "PANCE", "idBase": 31100, "prefix": "PANCE-",
+  "slug": "/pance", "landingPath": "/pance-practice-test", "dataFile": "data/pance-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 70,
+  "categories": [
+    {"key": "panceCardio", "perTest": 6, "pool": 24, "segment": "CAR"},
+    {"key": "pancePulm", "perTest": 5, "pool": 20, "segment": "PUL"},
+    {"key": "panceGI", "perTest": 4, "pool": 16, "segment": "GIN"},
+    {"key": "panceRenal", "perTest": 2, "pool": 8, "segment": "REN"},
+    {"key": "panceGU", "perTest": 2, "pool": 8, "segment": "GUR"},
+    {"key": "panceEndo", "perTest": 3, "pool": 12, "segment": "END"},
+    {"key": "panceNeuro", "perTest": 3, "pool": 12, "segment": "NEU"},
+    {"key": "pancePsych", "perTest": 4, "pool": 16, "segment": "PSY"},
+    {"key": "panceEENT", "perTest": 3, "pool": 12, "segment": "ENT"},
+    {"key": "panceMSK", "perTest": 4, "pool": 16, "segment": "MSK"},
+    {"key": "panceDerm", "perTest": 2, "pool": 8, "segment": "DER"},
+    {"key": "panceRepro", "perTest": 3, "pool": 12, "segment": "REP"},
+    {"key": "panceID", "perTest": 4, "pool": 16, "segment": "INF"},
+    {"key": "panceHeme", "perTest": 2, "pool": 8, "segment": "HEM"},
+    {"key": "panceProf", "perTest": 3, "pool": 12, "segment": "PRO"}
+  ],
+  "notes": "NCCPA PANCE Content Blueprint effective January 2025 (11/4/6/6/8/4/5/7/8/7/7/9/5/7/6%). Scaled to 50 and rounded to whole items: 6/5/4/2/2/3/3/4/3/4/2/3/4/2/3."
+}

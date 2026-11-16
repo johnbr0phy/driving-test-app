@@ -9,6 +9,10 @@ import { teachPathFor } from "@/lib/teachPages";
 // page's FAQPage graph; keep the two in step.
 
 export const TEACHES: Record<string, string> = {
+  nzboat: "a Day Skipper or boating safety course",
+  cehrs: "an electronic health records specialist program",
+  cpcta: "a patient care technician program",
+  pance: "a PA program's board review course",
   hspacis: "a sterile processing program",
   mace: "a medication aide training program",
   ncma: "a medical assistant program",
@@ -160,6 +164,7 @@ export const TEACHES: Record<string, string> = {
   iimcat: "CAT coaching",
   netplus: "a networking or Network+ course",
   cysa: "a cybersecurity analyst or CySA+ course",
+  sc200: "an SC-200 or Microsoft security operations course",
   cissp: "a CISSP or information security course",
   gcdl: "a cloud fundamentals course",
   gcppca: "a cloud architecture course",

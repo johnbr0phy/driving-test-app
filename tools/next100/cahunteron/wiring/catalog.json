@@ -1,0 +1,14 @@
+{
+  "blurb": "Ontario Hunter Education Course exam on Ontario's own hunting law: the Outdoors Card and licences, apprentices, tags and party hunting, hunter reporting, hunting hours and hunter orange, firearm and bow rules, trespass, ethics, wildlife identification and management, and field care.",
+  "org": "Ontario Ministry of Natural Resources · Ontario Hunter Education Program, Fish and Wildlife Conservation Act, 1997 and O. Reg. 665/98",
+  "group": "Outdoor & recreation licenses",
+  "groupAfter": "hunter",
+  "aliases": ["ontario hunter education", "ontario hunter ed", "ontario hunting exam", "ontario hunting test", "ontario hunters exam", "ohep", "ontario hunting licence test", "ontario hunting license test", "hunter education ontario", "ontario hunting course", "ontario outdoors card hunting", "mnr hunting exam"],
+  "teacherLed": true,
+  "teaches": "an Ontario hunter education course",
+  "borrowTiger": "hunter",
+  "shareTitle": "Ontario Hunter Education Practice Test",
+  "shareDescription": "200 original questions on Ontario's hunting law, tags, hunter orange, firearm and bow rules, wildlife and field care. Start for free.",
+  "searchTests": [["ontario hunter education", "CA", "cahunteron"], ["ontario hunting exam", "CA", "cahunteron"], ["ohep", "CA", "cahunteron"], ["hunter education ontario", "CA", "cahunteron"]],
+  "region": "TEST_REGIONS: cahunteron: \"CA\""
+}

@@ -64,6 +64,12 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  * Remove an entry once that exam has its own eight expressions.
  */
 const BORROWED_SETS: Record<string, string> = {
+  nzboat: "boating",
+  ea1: "cpareg",
+  cpabar: "cpafar",
+  cehrs: "cpc",
+  cpcta: "cna",
+  pance: "nclex",
   cpatcp: "cpareg",
   aufirearmswa: "capal",
   hspacis: "crcst",
@@ -103,7 +109,7 @@ const BORROWED_SETS: Record<string, string> = {
   awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex", ccrn: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
-  psat: "sat", netplus: "secplus", cysa: "secplus", fortinse: "secplus", gcdl: "aws", gcppca: "aws",
+  psat: "sat", netplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", sc200: "secplus", sc900: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "shsat", cogat: "timestables",ssat: "shsat",isee: "shsat",
   // STAAR English I (Texas, grade 9) wears the AP English Language tiger.

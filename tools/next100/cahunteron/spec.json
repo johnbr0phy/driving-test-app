@@ -1,0 +1,17 @@
+{
+  "id": "cahunteron", "stateCode": "CAHUNTON", "idBase": 31500, "prefix": "CAHUNTON-",
+  "slug": "/ontario-hunter", "landingPath": "/ontario-hunter-education-practice-test",
+  "dataFile": "data/ontario-hunter-education-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 80, "icon": "target",
+  "categories": [
+    {"key": "cahunLicence", "label": "Licences, Outdoors Card & Apprentices", "perTest": 6, "pool": 24, "segment": "LIC"},
+    {"key": "cahunTags", "label": "Tags, Party Hunting & Reporting", "perTest": 6, "pool": 24, "segment": "TAG"},
+    {"key": "cahunRules", "label": "Hunting Hours, Hunter Orange & Methods", "perTest": 8, "pool": 32, "segment": "RUL"},
+    {"key": "cahunEquip", "label": "Firearms & Archery Rules", "perTest": 7, "pool": 28, "segment": "EQP"},
+    {"key": "cahunLand", "label": "Land Access & Conservation Officers", "perTest": 5, "pool": 20, "segment": "LND"},
+    {"key": "cahunEthics", "label": "Hunter Ethics & Responsibilities", "perTest": 5, "pool": 20, "segment": "ETH"},
+    {"key": "cahunWildlife", "label": "Wildlife Identification & Management", "perTest": 8, "pool": 32, "segment": "WLD"},
+    {"key": "cahunCare", "label": "Field Care, Health & Outdoor Safety", "perTest": 5, "pool": 20, "segment": "CAR"}
+  ],
+  "notes": "Ontario publishes the course's six topic areas (hunting safety and equipment, laws and regulations, hunter responsibilities, wildlife management, hunting techniques, wildlife identification) but no question count, pass mark or topic weights for the exam. Counts are Tigertest's, leaning on the law and regulations. 80% is Tigertest's readiness target."
+}

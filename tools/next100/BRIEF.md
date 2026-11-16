@@ -701,3 +701,56 @@ Notes for every builder in this run:
   labels.json, theme.txt, types.txt), so the integrator can apply it by script. v2 builders write
   a WIRING.md like `tools/cysa/BRIEF.md` describes plus the same catalog.json, facts.ts.txt,
   theme.txt and claude.md files in `wiring/`.
+
+## Build-tests run 2026-11-16 (12 exams from the live ranking)
+
+Started by John. Branch `claude/build-tests-2026-11-16`, checkout `~/tt-build-1116` (use absolute
+paths under it; never touch `/Users/johnbrophy/driving-test-app`). All Premium (career, licence and
+certification exams): v1 exams get the standard v1 locks; v2 exams go in `PREMIUM_V2_IDS` (put that
+line in WIRING.md). The hue below passed the clash checker against every theme on main and the
+other eleven in this run, and has at least 4.5:1 contrast with white: use it as given.
+
+| id | Test | engine | idBase | stateCode | prefix | slug | landing | template | hue |
+|---|---|---|---|---|---|---|---|---|---|
+| nzboat | Coastguard Boating Education Day Skipper (New Zealand) | v1 | 30900 | NZBOAT | NZBOAT- | /nz-day-skipper | /nz-day-skipper-practice-test | tools/next100/nzfirearms | 209 15% 26% |
+| cpcta | NHA Certified Patient Care Technician/Assistant (CPCT/A) | v1 | 31000 | CPCTA | CPCTA- | /cpcta | /cpct-practice-test | tools/next100/cmaa | 181 95% 18% |
+| pance | NCCPA Physician Assistant National Certifying Exam (PANCE) | v1 | 31100 | PANCE | PANCE- | /pance | /pance-practice-test | tools/next100/ccrn | 345 15% 26% |
+| cehrs | NHA Certified Electronic Health Records Specialist (CEHRS) | v1 | 31200 | CEHRS | CEHRS- | /cehrs | /cehrs-practice-test | tools/next100/cmaa | 231 85% 20% |
+| sc900 | Microsoft Security, Compliance, and Identity Fundamentals (SC-900) | v2 | n/a | n/a | SC900- | /sc-900 | /sc-900-practice-test | tools/az900 | 241 15% 26% |
+| az500 | Microsoft Azure Security Engineer Associate (AZ-500) | v2 | n/a | n/a | AZ500- | /az-500 | /az-500-practice-test | tools/az900 (read tools/cysa for scenario style) | 243 95% 18% |
+| cpabar | CPA Exam BAR (Business Analysis and Reporting) discipline, multiple choice only | v1 | 31300 | CPABAR | CPABAR- | /cpa-bar | /cpa-bar-practice-test | tools/next100/cpatcp | 105 75% 21% |
+| ea1 | IRS Enrolled Agent Special Enrollment Examination, Part 1: Individuals | v1 | 31400 | EA1 | EA1- | /enrolled-agent-part-1 | /enrolled-agent-part-1-practice-test | tools/next100/cpareg | 39 85% 20% |
+| sc200 | Microsoft Security Operations Analyst Associate (SC-200) | v2 | n/a | n/a | SC200- | /sc-200 | /sc-200-practice-test | tools/cysa | 249 45% 22% |
+| pentestplus | CompTIA PenTest+ (current exam code, check PT0-003) | v2 | n/a | n/a | PENTEST- | /comptia-pentest-plus | /comptia-pentest-plus-practice-test | tools/cysa | 5 15% 26% |
+| servicenowcsa | ServiceNow Certified System Administrator (CSA) | v2 | n/a | n/a | SNCSA- | /servicenow-csa | /servicenow-csa-practice-test | tools/itil (read tools/next100/sfadmin for platform-admin style) | 160 95% 18% |
+| cahunteron | Ontario Hunter Education Program exam (Ontario MNR, delivered by approved instructors) | v1 | 31500 | CAHUNTON | CAHUNTON- | /ontario-hunter | /ontario-hunter-education-practice-test | tools/intl/capal | 90 95% 18% |
+
+Notes for every builder in this run:
+- Stop rule, strictly: if you cannot fetch the exam owner's own current outline, blueprint, skills
+  measured, test plan or syllabus (or, for cahunteron, Ontario's hunting law and the ministry's own
+  hunter education material; for nzboat, Coastguard Boating Education's own Day Skipper course
+  outline plus Maritime NZ rules), STOP before writing questions. Write only
+  `tools/next100/<id>/FAILED.md` with every URL you tried and what happened, and report
+  "FAILED: <reason>". Also stop if the exam is retired or retiring within 3 months (check Microsoft
+  and CompTIA retirement dates) and say so. Never write a bank from prep sites or memory.
+- Folder: every builder's tools go in `tools/next100/<id>/` even when the template lives elsewhere.
+- Overlap (grep these banks and keep clear of their stems and fact-and-answer pairs): cpcta vs
+  cna, phleb, cet, ccma, cmaa, rpt, ascppbt; cehrs vs cmaa, ccma, cca, cpc, ccs, rma, ncma; pance vs
+  nclex, nclexpn, paramedic, pknle, rorezid, kenck; cpabar vs cpafar, cpaaud, cpatcp, cpareg (BAR is
+  the business analysis and advanced reporting discipline; FAR already left business combinations,
+  derivatives, foreign currency, stock comp and lessor accounting to BAR); ea1 vs cpareg, cpatcp
+  (Part 1 is individuals only); sc900, az500, sc200 vs az900, secplus, cysa and each other (check the
+  other two folders on disk as you write); pentestplus vs secplus, cysa, cissp, netplus; servicenowcsa
+  vs itil, sfadmin; nzboat vs boating, pcoc, nzfirearms; cahunteron vs hunter, capal, crfsc, dkjagt,
+  fihunt, sejakt (Ontario law only for legal items).
+- Money: worked amounts inside a computation are fine; fees and indexed limits only when the item
+  names the tax year and sources.md cites the IRS figure (ea1: say which tax year the SEE tests,
+  from the IRS candidate bulletin).
+- Never name a commercial prep provider. Say "not affiliated with" the exam body on the landing.
+- v2 builders: run `tools/validate_v2_bank.py` from a scratch copy with its bankSizes write stubbed,
+  and put the bankSizes, registry, PREMIUM_V2_IDS, classQuestions and mcpV2Practice lines in
+  WIRING.md, plus `wiring/` catalog.json, facts.ts.txt, theme.txt and claude.md.
+- v1 builders: a `tools/next100/<id>/wiring/` folder exactly like `tools/next100/hspachl/wiring/`
+  (catalog.json, claude.md, config.ts.txt, facts.ts.txt, labels.json, theme.txt, types.txt).
+- Spelling: US for US exams and Microsoft/CompTIA/ServiceNow; British-style NZ spelling (licence,
+  metres) for nzboat; Canadian spelling for cahunteron.

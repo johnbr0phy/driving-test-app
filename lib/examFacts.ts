@@ -44,6 +44,22 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cpcta: {
+    answer:
+      "The Certified Patient Care Technician/Assistant (CPCT/A) exam is the National Healthcareer Association's (NHA) certification exam for patient care technicians and assistants. NHA's test plan gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The new exam that NHA launches on January 13, 2027 follows a test plan from a 2025 job analysis with five domains: Patient Care 43 items, Compliance, Safety, and Professional Responsibility 19, Infection Control 16, Phlebotomy and Nonblood Specimen Collection 12, and EKG 10. Exams before that date follow the 2018 plan (45, 20, 11, 14 and 10). It is taken at a school, a PSI test center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "120 (100 scored, 20 pretest)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Domains (2025 plan)", value: "Patient Care 43, Compliance and Safety 19, Infection Control 16, Phlebotomy 12, EKG 10" },
+      { label: "New exam", value: "From January 13, 2027 (2025 test plan)" },
+      { label: "Eligibility", value: "Training program within 5 years, or 1 year of supervised work in the last 3 years (or 2 in the last 5)" },
+      { label: "Where", value: "School, PSI test center or live remote proctoring" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's CPCT/A test plans (2025 and 2018 job analyses), CPCT/A certification page and 2024 pass rate report, checked November 2026",
+    source: { name: "NHA: Patient Care Technician (CPCT/A)", url: "https://www.nhanow.com/certifications/patient-care-technician" },
+  },
   pance: {
     answer:
       "The PANCE (Physician Assistant National Certifying Exam) is the National Commission on Certification of Physician Assistants' (NCCPA) exam that graduates of accredited PA programs pass to earn the PA-C credential. It has 300 multiple-choice questions in five blocks of 60, with 60 minutes per block, 45 minutes of total break time and a 15-minute tutorial, about 5 hours in all, taken by computer at Pearson VUE test centers. Scores are reported on a 200 to 800 scale and the passing standard is 350, set by the modified Angoff method; wrong answers are not penalized. The content blueprint effective January 2025 spreads questions over 14 organ systems plus professional practice (6%), led by cardiovascular (11%) and pulmonary (9%), with 12 to 15% on pediatric patients. Candidates may take it once in 90 days or three times in a calendar year, whichever is fewer, and up to six times within six years of finishing their program.",

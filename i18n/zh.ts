@@ -1236,6 +1236,15 @@ export const zh: TranslationKeys = {
     panceID: "Infectious Diseases",
     panceHeme: "Hematologic",
     panceProf: "Professional Practice",
+    // cpcta
+    cpctaBasicCare: "Basic Care & Daily Living",
+    cpctaVitals: "Vital Signs & Monitoring",
+    cpctaMobility: "Mobility, Procedures & Emergencies",
+    cpctaPsychosocial: "Psychosocial & End-of-Life Care",
+    cpctaCompliance: "Compliance, Safety & Professional Responsibility",
+    cpctaInfection: "Infection Control",
+    cpctaPhlebotomy: "Phlebotomy & Nonblood Specimens",
+    cpctaEkg: "EKG",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

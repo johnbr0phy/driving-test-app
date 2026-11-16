@@ -278,3 +278,4 @@ import "./hspacis";
 import "./aufirearmswa";
 import "./cpatcp";
 import "./pance";
+import "./cpcta";

@@ -428,5 +428,6 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ngcustoms: { title: "Nigeria Customs Recruitment Practice Test", description: "Practise English, maths, reasoning, customs, trade and world geography in 50-question mock CBTs." },
   trcnpqe: { title: "TRCN PQE Practice Test", description: "Practise pedagogy, literacy, numeracy, ICT and safeguarding in full 60-question PQE mock exams." },
   iehcap: { title: "HCAP Practice Test", description: "Practise Irish deer species, deer management, rifle and firearms safety, the Wildlife Acts and carcase handling in 50-question mock tests." },
+  cabcguard: { title: "BC Security Guard Practice Test", description: "Practise the Security Services Act, arrest and use of force, BC's Trespass Act, the Code of Conduct, report writing and personal safety for the BST exam." },
   cacore: { title: "BC CORE Hunter Exam Practice Test", description: "200 original questions on the Wildlife Act, Hunting Regulation, firearm law, migratory bird rules, first aid and Aboriginal rights. Start for free." },
 };

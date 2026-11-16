@@ -1196,5 +1196,9 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "chtheory": {
     "color": "hsl(357, 100%, 22%)",
     "tint": "hsl(357, 80%, 96%)"
+  },
+  "cabcguard": {
+    "color": "hsl(239, 15%, 18%)",
+    "tint": "hsl(239, 20%, 96%)"
   }
 };

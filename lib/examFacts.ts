@@ -6368,6 +6368,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
     source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
   },
+  cabcguard: {
+    answer:
+      "Basic Security Training (BST) is the training standard the BC Registrar of Security Services accepts for a security guard worker licence under the Security Services Act. It is a 40-hour theory course followed by the BST Assessment, a final exam that the Justice Institute of British Columbia (JIBC) runs and invigilates on the registrar's behalf. JIBC lists the exam as 75 questions in 90 minutes with a 70% pass mark, written at JIBC in New Westminster or by online proctoring for some students outside the Lower Mainland, within six months of the course, with two attempts before the course must be retaken. It tests a guard's legal authority to act and the rule that public and personal safety come first. To be licensed you must be at least 19 and ordinarily resident in Canada, and you apply to the Security Programs Division.",
+    rows: [
+      { label: "Exam", value: "BST Assessment, 75 questions in 90 minutes" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Course", value: "BST Theory, 40 hours, in person or online" },
+      { label: "Attempts", value: "Two, then the theory course again" },
+      { label: "Run by", value: "Justice Institute of BC, for the Registrar of Security Services" },
+      { label: "Licence", value: "Security guard worker licence, age 19, from the Security Programs Division" },
+      { label: "Tigertest practice tests", value: "4 x 50 questions, 70% to pass" },
+    ],
+    basedOn: "JIBC's Basic Security Training program and assessment pages and the BC Security Programs Division's licensing pages, checked November 2026",
+    source: { name: "JIBC: Basic Security Training", url: "https://www.jibc.ca/program/basic-security-training" },
+  },
   iehcap: {
     answer:
       "HCAP, the Hunter Competence Assessment Programme, is Ireland's deer hunter certification run by the Deer Alliance HCAP Assessment Committee. NPWS lists it as one of three approved courses for first-time Deer Hunting Licence applicants, and the Deer Alliance says Coillte requires HCAP or an equivalent for hunting deer on its forests. The first stage is a written multiple-choice test of 50 questions, and you need 40 correct (80%). Candidates who pass go on to a Range Test at 100 metres and then an oral safety examination. The Stalker Training Manual is the core text, and the written test covers deer biology and species, management, rifles and firearms safety, the law and carcase handling.",

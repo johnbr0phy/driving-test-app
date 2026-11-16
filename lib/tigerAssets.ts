@@ -67,6 +67,7 @@ const BORROWED_SETS: Record<string, string> = {
   hknurse: "nclex",
   bcrealestate: "realestate",
   cacore: "hunter",
+  cabcguard: "caguard",
   nzboat: "boating",
   ea1: "cpareg",
   cpabar: "cpafar",

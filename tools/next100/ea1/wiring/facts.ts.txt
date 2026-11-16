@@ -7,7 +7,7 @@
       { label: "Passing score", value: "500 on a 200 to 800 scale" },
       { label: "Tax year tested", value: "2025, for July 1, 2026 to February 28, 2027" },
       { label: "Largest domains", value: "Income and assets 17, deductions and credits 17" },
-      { label: "Where", value: "PSI test center in the U.S. or remote proctoring" },
+      { label: "Where", value: "PSI test center or remote proctoring, both in the U.S.; international testing delayed" },
       { label: "Attempts", value: "Up to four per part each testing window" },
       { label: "Passed parts", value: "Carry over for three years" },
       { label: "Given by", value: "PSI for the IRS" },

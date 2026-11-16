@@ -26,7 +26,8 @@ review course, book or app item was used, reworded or adapted. Checked 2026-11-1
     relate to the calendar year 2025." So the current window tests tax year 2025.
   - Window July 1, 2026 to February 28, 2027; no testing in March and April; each part up to
     four times a window; parts in any order; in person in the U.S. or remote proctored
-    (international candidates remote only).
+    in the U.S.; scheduling for international candidates is temporarily delayed and will be
+    remote only when it resumes.
 - IRS, "Enrolled agents frequently asked questions", page reviewed 26-Oct-2026, fetched
   2026-11-16: https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions
   Confirms the three parts, 100 questions (85 scored), 3.5 hours, scaled 200 to 800 with 500 to
@@ -60,6 +61,12 @@ review course, book or app item was used, reworded or adapted. Checked 2026-11-1
   https://www.irs.gov/credits-deductions/residential-clean-energy-credit
   30% for property placed in service in 2025; none after December 31, 2025.
 
+- IRS, "Instructions for Form 5405 (11/2024)", fetched 2026-11-16: https://www.irs.gov/instructions/i5405
+  The 15-year repayment for 2008 purchases began with the 2010 return and ended with the 2024
+  return; 2024 was the last year to file Form 5405 (used for TAX-034: nothing due for 2025).
+- Estimated tax safe harbor of 110% of prior-year tax when prior-year AGI exceeds $150,000
+  ($75,000 married filing separately): IRC 6654(d)(1)(C) (TAX-035).
+
 ## Rules used (statutory or fixed in regulation; not indexed)
 - Preliminary work: IRC 7701(b) (substantial presence, 31 and 183 days, 1/3 and 1/6 weights;
   green card test), 6013(g) election, 7703 (status at year end), 2(a) and 2(b), 152 (tie-breaker
@@ -90,7 +97,7 @@ review course, book or app item was used, reworded or adapted. Checked 2026-11-1
   waiver, 6654(i) farmers (March 1), 6621 (short-term rate plus 3%), 1402(j) ($108.28), 1402(a)(13),
   31(b) and Schedule 3, 107 and 1402(a)(8), 1402(e) and Form 4361, 112 and 7508 (180 days),
   62(a)(2)(E), 691(a) and 691(c), 1411 ($200,000 / $250,000 / $125,000), 3101(b)(2) and 3102(f),
-  Forms 4137, 8919 and 5405 (2008 credit repaid over 15 years).
+  Forms 4137 and 8919.
 - Advising: 6050I (Form 8300), 1(h)(4) (28% collectibles), Williams v. McGowan and Form 8594,
   529(c)(6) and 529(c)(3)(E) ($35,000), 530(b)(1)(E), 529(c)(3)(B)(v), 2038 and 2036 (revocable
   trust in estate), 2042 and 2035, 704(e), 7702B, 72(b), 408(d)(8), 72(t)(4), 1041, TCJA section

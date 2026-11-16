@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "When can I take the SEE?",
-    a: "The exam is given by PSI for the IRS, in person in the U.S. or by remote proctoring. The current window runs July 1, 2026 to February 28, 2027, with no testing in March and April while the exam is updated. Each part can be taken up to four times a window, in any order, and a passed part carries over for three years.",
+    a: "The exam is given by PSI for the IRS, in person at a PSI test center or by remote proctoring, both in the U.S. for now (international testing is delayed, and will be remote only when it resumes). The current window runs July 1, 2026 to February 28, 2027, with no testing in March and April while the exam is updated. Each part can be taken up to four times a window, in any order, and a passed part carries over for three years.",
   },
   {
     q: "Are these real Enrolled Agent exam questions?",

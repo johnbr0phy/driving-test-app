@@ -1245,6 +1245,12 @@ export const en = {
     cpctaInfection: "Infection Control",
     cpctaPhlebotomy: "Phlebotomy & Nonblood Specimens",
     cpctaEkg: "EKG",
+    // cehrs
+    cehrsNonClinical: "Non-Clinical Operations",
+    cehrsClinical: "Clinical Operations",
+    cehrsRevenue: "Revenue Cycle & Finance",
+    cehrsCompliance: "Regulatory Compliance",
+    cehrsReporting: "Reporting",
     // hspachl
     chlProcesses: "Quality Control, Workplace & Equipment",
     chlPlanning: "Safety, Workforce & Financial Planning",

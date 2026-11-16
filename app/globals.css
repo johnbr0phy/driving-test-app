@@ -5018,6 +5018,19 @@
     --brand-gradient-to: 196 50% 95%;
   }
 
+  [data-theme="cehrs"] {
+    --brand: 231 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 231 50% 95%;
+    --brand-hover: 231 85% 15%;
+    --brand-dark: 231 85% 13%;
+    --brand-darker: 231 80% 8%;
+    --brand-muted: 231 25% 70%;
+    --brand-border: 231 30% 78%;
+    --brand-border-light: 231 30% 88%;
+    --brand-gradient-to: 246 50% 95%;
+  }
+
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
     --brand-foreground: 0 0% 100%;
@@ -9885,6 +9898,18 @@
     --brand-muted: 181 25% 45%;
     --brand-dark: 181 95% 65%;
     --brand-darker: 181 90% 78%;
+  }
+
+  .dark [data-theme="cehrs"] {
+    --brand: 231 85% 50%;
+    --brand-hover: 231 85% 42%;
+    --brand-light: 231 45% 13%;
+    --brand-gradient-to: 246 40% 11%;
+    --brand-border-light: 231 30% 24%;
+    --brand-border: 231 30% 34%;
+    --brand-muted: 231 25% 45%;
+    --brand-dark: 231 85% 67%;
+    --brand-darker: 231 80% 78%;
   }
 
   .dark [data-theme="hspachl"] {

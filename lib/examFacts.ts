@@ -44,6 +44,23 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cehrs: {
+    answer:
+      "The Certified Electronic Health Records Specialist (CEHRS) exam is the National Healthcareer Association's (NHA) certification exam for people who keep electronic health records accurate, secure and usable. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 125 minutes to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2019 job analysis, has five domains: Clinical Operations 32 items, Non-Clinical Operations 28, Revenue Cycle/Finance 15, Regulatory Compliance 15 and Reporting 10. It is taken at a school, a PSI testing center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "125 (100 scored, 25 pretest)" },
+      { label: "Time", value: "125 minutes" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Largest domains", value: "Clinical Operations 32, Non-Clinical Operations 28" },
+      { label: "Eligibility", value: "Diploma or GED plus an EHR specialist program within 5 years or supervised EHR work experience" },
+      { label: "Where", value: "School, PSI testing center or live remote proctoring" },
+      { label: "Retakes", value: "After 30 days; three attempts, then one year between attempts" },
+      { label: "Renewal", value: "Every two years with 10 continuing education credits" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's CEHRS test plan (2019 job analysis), CEHRS certification page and Candidate Handbook (updated October 2026), checked November 2026",
+    source: { name: "NHA: Electronic Health Records Specialist (CEHRS)", url: "https://www.nhanow.com/certifications/electronic-health-records-specialist" },
+  },
   cpcta: {
     answer:
       "The Certified Patient Care Technician/Assistant (CPCT/A) exam is the National Healthcareer Association's (NHA) certification exam for patient care technicians and assistants. NHA's test plan gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The new exam that NHA launches on January 13, 2027 follows a test plan from a 2025 job analysis with five domains: Patient Care 43 items, Compliance, Safety, and Professional Responsibility 19, Infection Control 16, Phlebotomy and Nonblood Specimen Collection 12, and EKG 10. Exams before that date follow the 2018 plan (45, 20, 11, 14 and 10). It is taken at a school, a PSI test center or by live remote proctoring.",

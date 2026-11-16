@@ -10,7 +10,7 @@ Q = [
  "Plaque psoriasis", ["Atopic dermatitis", "Tinea corporis", "Lichen planus"],
  "Silvery-scaled plaques on extensor surfaces with the Auspitz sign are plaque psoriasis. Atopic dermatitis favors flexures, and tinea has an active scaly border with central clearing."),
 ("A 6-year-old has a scaly patch of hair loss with broken hairs and an enlarged occipital lymph node. What is the treatment?",
- "Oral griseofulvin", ["Topical clotrimazole", "Topical mupirocin", "Selenium shampoo alone"],
+ "Oral griseofulvin", ["Topical clotrimazole", "Topical mupirocin", "Selenium sulfide shampoo"],
  "Tinea capitis needs an oral antifungal, such as griseofulvin or terbinafine, because topical agents do not reach the hair shaft. Antifungal shampoo is used only alongside to limit spread."),
 ("A 5-year-old has a few honey-colored crusted sores around the nose and mouth. What is the treatment?",
  "Topical mupirocin", ["Oral clindamycin", "Topical hydrocortisone", "Oral acyclovir"],

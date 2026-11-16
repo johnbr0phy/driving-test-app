@@ -43,7 +43,7 @@ Q = [
  'Oral nadolol', ['Oral metoprolol', 'Oral omeprazole', 'Oral spironolactone'],
  'Secondary prevention of variceal bleeding combines a nonselective beta blocker (propranolol, nadolol or carvedilol) with repeated band ligation. Cardioselective beta blockers such as metoprolol do not lower portal pressure enough.'),
 ('A 58-year-old has compensated cirrhosis from hepatitis C. Which surveillance for hepatocellular carcinoma is recommended?',
- 'Ultrasound every 6 months', ['CT scan every 2 years', 'AFP level alone yearly', 'Liver biopsy every year'],
+ 'Ultrasound every 6 months', ['CT scan every 2 years', 'AFP level yearly', 'Liver biopsy every year'],
  'People with cirrhosis are screened for hepatocellular carcinoma with ultrasound every 6 months, with or without AFP. AFP alone misses many tumors, and biopsy is not a screening test.'),
 ("During repair of an indirect inguinal hernia, where does the hernia sac enter the inguinal canal?",
  "Deep inguinal ring", ["Hesselbach triangle", "Femoral canal", "Obturator canal"],

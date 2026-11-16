@@ -13,7 +13,7 @@ Q = [
  "FENa below 1%", ["FENa above 3%", "Muddy brown casts", "Urine osmolality 290"],
  "In prerenal injury the tubules still conserve sodium, so the fractional excretion of sodium is under 1% and urine is concentrated. Muddy brown granular casts and a high FENa point to acute tubular necrosis."),
 ("A 40-year-old man has sudden colicky flank pain radiating to the groin with hematuria. Which study is preferred in a nonpregnant adult?",
- "Noncontrast CT", ["CT with IV contrast", "Plain KUB x-ray only", "Renal angiography"],
+ "Noncontrast CT", ["CT with IV contrast", "Plain KUB x-ray", "Renal angiography"],
  "Noncontrast helical CT is the most sensitive test for kidney stones and shows size and site. Ultrasound is preferred in pregnancy and in children to avoid radiation."),
 ('A patient with a sodium of 114 mEq/L and no severe symptoms is at high risk of osmotic demyelination. What is the maximum correction over the first 24 hours?',
  '8 mEq/L', ['2 mEq/L', '15 mEq/L', '20 mEq/L'],

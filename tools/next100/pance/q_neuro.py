@@ -4,7 +4,7 @@ Q = [
  "Upper motor neuron pathway", ["Facial nerve at the parotid", "Facial nerve in the canal", "Geniculate ganglion"],
  "The forehead gets input from both cortices, so a central (upper motor neuron) lesion such as a stroke spares it. A peripheral facial nerve lesion, as in Bell palsy, weakens the whole side of the face, forehead included."),
 ("A 31-year-old woke with weakness of the whole left side of her face, including her forehead, and no other deficits. What is the recommended treatment?",
- "Oral prednisone", ["IV acyclovir alone", "Botulinum toxin injection", "Carbamazepine daily"],
+ "Oral prednisone", ["IV acyclovir", "Botulinum toxin injection", "Carbamazepine daily"],
  "Bell palsy is treated with oral corticosteroids started within 72 hours, which improve recovery; an antiviral may be added for severe palsy but not given alone. Eye protection prevents corneal injury."),
 ("A 46-year-old has the worst headache of her life that peaked within a minute. Noncontrast head CT 9 hours later is normal. What is the next step?",
  "Lumbar puncture", ["MRI of the spine", "Discharge with triptan", "EEG"],

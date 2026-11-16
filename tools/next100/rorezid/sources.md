@@ -95,3 +95,16 @@ Reviewer re-checked by web search: 15 November 2026, 200 questions in 4 hours, 9
 pass at 60% of the national top score in the domain, answer key from 16:00 on the exam day
 (Agerpres, 15 May 2026: https://agerpres.ro/educatie-stiinta/2026/05/15/p-rezidentiat-2026-cifre-ale-sesiunii-2025-pregatirea-pentru-15-noiembrie-si-ce-se-discuta-despre-20--1556428 ;
 Edupedu registration article above). rezidentiat.ms.ro not reached again.
+
+## Freshness check, 2026-11-16
+
+- The 2026 review event (due 15 November 2026) was checked again. rezidentiat.ms.ro still returned
+  HTTP 503 for the home page and for both tematica PDFs
+  (https://rezidentiat.ms.ro/20261115/tematici/rezidentiat-M-2026.pdf and
+  https://rezidentiat.ms.ro/20251116/tematici/rezidentiat-M-2025.pdf), so the official 2026 list
+  could not be compared with the bank.
+- The only evidence for 2026 is the Ministry's statement of 22 January 2026, as reported by Edupedu
+  (link above): "se va păstra același model de concurs și aceleași bibliografii utilizate în anul
+  2025". The bank follows the 2025 chapter list, so nothing points to a mismatch, but this is a
+  news report, not the official PDF. No questions were changed.
+- The event was moved to 2026-12-01 in `lib/examFreshness.json` to read the official PDF then.

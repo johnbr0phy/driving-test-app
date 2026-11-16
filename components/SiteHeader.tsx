@@ -210,7 +210,7 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
   }
 
   return (
-    <header className={searchHome ? "bg-white dark:bg-gray-950" : "border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"}>
+    <header className={searchHome || onTeach ? "bg-white dark:bg-gray-950" : "border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"}>
       <div className="flex h-14 items-center gap-1.5 px-3 sm:gap-3 sm:px-6">
         <BrandLockup />
 

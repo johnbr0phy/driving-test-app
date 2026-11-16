@@ -248,7 +248,7 @@ export default function Sc200LandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak area, then sit a full test</h3>
               <p>
-                Tigertest tracks your accuracy by area. Retake the drill you miss most until you clear 80 percent, then take Practice Test 2 cold. Before the real exam, try Microsoft's exam sandbox so the question types and any labs are familiar.
+                Tigertest tracks your accuracy by area. Retake the drill you miss most until you clear 80 percent, then take Practice Test 2 cold. Before the real exam, try Microsoft&apos;s exam sandbox so the question types and any labs are familiar.
               </p>
             </div>
           </div>

@@ -3,7 +3,7 @@
  * (sourceWatch, filled by /api/cron/source-watch) that changed or keep failing,
  * handed to Claude Code so nobody has to read them by hand.
  *
- *   npx tsx scripts/source-triage.ts --export <file>
+ *   npx tsx scripts/source-triage.ts --export <file> [--limit N]
  *     Writes the pages that need a decision: changed or broken (2+ failures),
  *     still watched (in lib/examSources.json), and not triaged since they last
  *     changed. A page left as needs_person is retried after 7 days. Prints the
@@ -98,8 +98,14 @@ async function main() {
         sourcesMd: Object.fromEntries(exams.map((e) => [e, sourcesMdFor(e)])),
       });
     }
-    writeFileSync(exportTo, JSON.stringify(out, null, 1) + "\n");
-    console.log(out.length);
+    // At most --limit pages a run (oldest change first), so one night's cost stays
+    // small and a backlog clears over several nights.
+    const limit = Number(arg("limit") ?? 0);
+    out.sort((a, b) => String(a.changedAt ?? "").localeCompare(String(b.changedAt ?? "")));
+    const batch = limit > 0 ? out.slice(0, limit) : out;
+    if (batch.length < out.length) console.error(`${out.length} pages waiting, triaging ${batch.length} this run`);
+    writeFileSync(exportTo, JSON.stringify(batch, null, 1) + "\n");
+    console.log(batch.length);
     return;
   }
 

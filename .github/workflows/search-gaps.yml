@@ -90,7 +90,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
-          claude_args: --max-turns 500 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
+          claude_args: --model claude-sonnet-5-5 --max-turns 500 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
           prompt: |
             Read CLAUDE.md. Today's search gaps are in ${{ env.REPORT }}.md, with details
             in ${{ env.REPORT }}.json: searches on the site that find no test, most-searched
@@ -107,9 +107,11 @@ jobs:
             searches (say which in the report): a wrong alias is worse than none.
 
             Part 2, at most one new test. Build: "${{ github.event.inputs.build }}".
-            If that is empty${{ github.event.inputs.aliases_only == 'true' && ', skip Part 2 (aliases only today)' || '' }}, take the most-searched "buildable" gap that is a real
-            exam people prepare for, with a published official outline, not already covered
-            by a test on the site (check lib/testCatalog.ts); if none qualifies, build nothing.
+            If that is empty, skip Part 2 and build nothing: on the nightly run this job only
+            adds aliases. New tests are built with /build-tests in a Claude Code session, which
+            runs on the plan, not on the $200 a month of API credit these jobs share. Only when
+            a test is named here (a run started by hand) build it, after checking it is a real
+            exam with a published official outline that no test on the site covers.
             Research comes first and decides whether you build. Follow step 0 of
             .claude/skills/exam-bank/SKILL.md in full before writing any spec or question:
               - Identify the body that owns the exam. With WebSearch, then WebFetch on the

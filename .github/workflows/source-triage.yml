@@ -79,7 +79,7 @@ jobs:
         run: |
           mkdir -p audits/sources
           list="$RUNNER_TEMP/source-pages.json"
-          n=$(npx tsx scripts/source-triage.ts --export "$list" | tail -1)
+          n=$(npx tsx scripts/source-triage.ts --export "$list" --limit 15 | tail -1)
           echo "count=$n" >> "$GITHUB_OUTPUT"
           echo "list=$list" >> "$GITHUB_OUTPUT"
           echo "decisions=audits/sources/$(date -u +%F)-${{ github.run_id }}.json" >> "$GITHUB_OUTPUT"
@@ -105,7 +105,7 @@ jobs:
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           # Prints the run, so a failure shows its reason in the log (it was hidden).
           show_full_output: true
-          claude_args: --max-turns 300 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --model claude-sonnet-5-5 --max-turns 150 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md (especially "Question quality" and the exam's own entry), then
             ${{ steps.pages.outputs.list }}: official pages Tigertest's question banks were

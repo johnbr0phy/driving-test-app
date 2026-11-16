@@ -16,7 +16,8 @@ import { mergeMentions, searchMentions, type WebMention } from '@/lib/server/web
 // by /api/cron/daily-brief, or on demand from the page. One doc per Eastern
 // day in dailyBriefs/{YYYY-MM-DD}; the page shows the newest.
 
-export const BRIEF_MODEL = 'claude-opus-5-5';
+// Sonnet keeps the daily update cheap (all Claude jobs share $200 a month of API credit).
+export const BRIEF_MODEL = 'claude-sonnet-5-5';
 
 export interface DailyBrief {
   date: string;

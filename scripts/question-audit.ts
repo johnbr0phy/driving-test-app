@@ -42,7 +42,12 @@ import FRESHNESS from "@/lib/examFreshness.json";
 import { SIGN_BY_QUESTION_ID, SIGN_DESCRIPTIONS } from "@/lib/signImages";
 import { reviewFresh, type FlagReview } from "@/lib/questionQuality";
 
-const MODEL = "claude-opus-5-5";
+// Models chosen to keep every Claude job inside the $200 a month of API credit:
+// the blind answer is a cheap first pass, and only questions it disagrees with
+// (plus reported and flagged ones) go to the judge.
+const BLIND_MODEL = "claude-haiku-5-5";
+const JUDGE_MODEL = "claude-sonnet-5-5";
+const MODEL = `${BLIND_MODEL} + ${JUDGE_MODEL}`;
 const CONCURRENCY = 6;
 const RECENT_DAYS = 90;
 const LETTERS = "ABCDEF";
@@ -349,14 +354,14 @@ function render(q: IndexQuestion, withKey: boolean): string {
   return lines.join("\n");
 }
 
-async function structured<T>(system: string, user: string, schema: object, effort: "low" | "medium" | "high"): Promise<T | null> {
+async function structured<T>(model: string, system: string, user: string, schema: object, effort: "low" | "medium" | "high"): Promise<T | null> {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const response = await client.beta.messages.create({
-        model: MODEL,
+        model,
         max_tokens: 16000,
-        betas: ["server-side-fallback-2026-07-01"],
-        fallbacks: "default",
+        // Haiku has no server-side fallback; Sonnet falls back on a refusal.
+        ...(model === BLIND_MODEL ? {} : { betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" }),
         output_config: { effort, format: { type: "json_schema", schema } },
         system,
         messages: [{ role: "user", content: user }],
@@ -398,7 +403,7 @@ async function audit(item: QueueItem): Promise<Result> {
   let blind: Blind | null = null;
   let disagreed = false;
   if (choiceFormat(q) && key.length) {
-    blind = await structured<Blind>(BLIND_SYSTEM, render(q, false), BLIND_SCHEMA, "low");
+    blind = await structured<Blind>(BLIND_MODEL, BLIND_SYSTEM, render(q, false), BLIND_SCHEMA, "low");
     if (blind) {
       const same = blind.answer.length === key.length && blind.answer.every((a) => key.includes(a));
       disagreed = !same || blind.defensibleOthers.length > 0 || blind.problem.trim().length > 0;
@@ -420,7 +425,7 @@ async function audit(item: QueueItem): Promise<Result> {
       `\nWhy it is being reviewed:\n${evidence.map((e) => `- ${e}`).join("\n") || "- Routine check."}`,
       sources ? `\nThe author's sources (sources.md):\n${sources}` : "",
     ].join("\n");
-    verdict = await structured<Verdict>(JUDGE_SYSTEM, user, VERDICT_SCHEMA, "high");
+    verdict = await structured<Verdict>(JUDGE_MODEL, JUDGE_SYSTEM, user, VERDICT_SCHEMA, "high");
   }
   return { examId: q.examId, questionId: q.id, file: q.file, trigger: [...item.trigger], notes: item.notes, key, blind, disagreed, verdict, signalExamId: item.signalExamId, n: item.n };
 }

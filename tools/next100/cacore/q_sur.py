@@ -17,7 +17,7 @@ Q = [
  'Slow', ['Racing', 'Pounding', 'Loud'],
  'HealthLinkBC lists a slow pulse and shallow breathing as late symptoms.'),
 ('For mild hypothermia, first aid is to move the person out of the cold or wet and use:',
- 'Warm blankets or a heat source', ['Alcohol to warm up from within', 'Ice packs on the arms and legs', 'A cold shower to wake up'],
+ 'Warm blankets or a heat source', ['Rubbing the arms and legs hard', 'Giving a warm alcoholic drink', 'Walking briskly to warm up'],
  'HealthLinkBC says to move the person out of the cold or wet environment and use warm blankets, heaters or hot water bottles.'),
 ('Moderate to severe hypothermia is generally treated:',
  'In hospital', ['In a hot bath at camp', 'With rest alone', 'By waiting a day'],

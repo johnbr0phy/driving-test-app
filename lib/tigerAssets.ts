@@ -2,6 +2,8 @@
 export const TIGER_EXAM_IDS = [
   // Four reviewed exam mascots, eight expressions each.
   "afoqt", "shsat", "wonderlic", "mblex",
+  // Reviewed medical-office administrator and medication-aide sets.
+  "cmaa", "mace",
   "driving", // Car-test mascot; original site branding remains at the public root.
   "cdl", "cdlx", "moto", "civics", "part107", "ham", "epa608",
   "cna", "ptcb", "phleb", "cet", "htl", "cst", "crcst",
@@ -63,15 +65,13 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  */
 const BORROWED_SETS: Record<string, string> = {
   cpatcp: "cpareg",
-  aufirearmswa: "hunter",
+  aufirearmswa: "capal",
   hspacis: "crcst",
-  mace: "cna",
   ncma: "ccma",
-  aufirearmsvic: "hunter",
-  cmaa: "ccma",
+  aufirearmsvic: "capal",
   cbspd: "crcst",
   ascpmlt: "htl",
-  aufirearmsnsw: "hunter",
+  aufirearmsnsw: "capal",
   nzham: "ham",
   cadc: "nce",
   nzdrone: "part107",
@@ -82,7 +82,7 @@ const BORROWED_SETS: Record<string, string> = {
   hspacer: "crcst",
   bcaba: "rbt",
   bcba: "rbt",
-  aufirearmsqld: "hunter",
+  aufirearmsqld: "capal",
   dmv: "driving",
   hiset: "ged",
   cbest: "praxis",
@@ -212,4 +212,5 @@ export function getTigerAsset(examId = "dmv", expression?: TigerExpression): str
   }
   return getSiteTigerAsset(expression);
 }
+
 

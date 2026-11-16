@@ -61,9 +61,14 @@ export async function generateMetadata({
   }
 
   // A few high-demand states carry their own search phrasing (data/stateLandingData.ts `seo`).
+  // The default leads with "permit practice test": Search Console (Nov 2026) shows that is
+  // how people search in every state checked (Utah, Ohio, Nevada, Georgia), with "dmv
+  // practice test" second. The description gives the real test's size from data/states.ts.
   const seo = getStateLandingInfo(state.code)?.seo;
-  const title = seo?.title ?? `${state.name} DMV Practice Test 2026 - Free Permit Practice | Tigertest`;
-  const description = seo?.description ?? `Pass your ${state.name} permit test on the first try. ${state.writtenTestQuestions} free practice questions based on the ${state.name} driver's manual. Start practicing now.`;
+  const title = seo?.title ?? `${state.name} Permit Practice Test 2026 - Free DMV Practice Test | Tigertest`;
+  const description =
+    seo?.description ??
+    `Free ${state.name} permit practice test: 200 questions from the ${state.name} driver's manual. The real ${state.name} permit test has ${state.writtenTestQuestions} questions and you need ${state.passCount} right to pass.`;
   const canonicalUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
 
   return {
@@ -366,7 +371,7 @@ export default async function StateDMVPracticeTestPage({
         {/* Hero */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-6">
-            {landingInfo.seo?.h1 ?? `Free ${state.name} DMV Practice Test 2026`}
+            {landingInfo.seo?.h1 ?? `Free ${state.name} Permit Practice Test 2026`}
           </h1>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 mb-8 max-w-2xl mx-auto">
             The {state.name} {state.dmvName} permit test has{" "}

@@ -90,3 +90,10 @@ under the acceptable use policy. HIPAA needs a Business Associate Agreement and 
 Prices, discount percentages and SLA numbers; support plan tiers; storage minimum durations;
 renewal exam content; App Engine; any product renamed in 2026 whose new name could not be
 confirmed (for example Dataproc's), so those products are not asked about.
+
+## Audit check 2026-11-16 (GCPPCA-D-019)
+
+Cloud Storage bucket locations, https://docs.cloud.google.com/storage/docs/locations , read
+2026-11-16: buckets support four location types, region, zone, dual-region and multi-region;
+"Zonal locations for buckets are only available through Rapid Bucket." The explanation no longer
+says buckets are never single-zone; key unchanged (dual-region).

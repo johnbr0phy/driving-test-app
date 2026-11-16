@@ -95,3 +95,15 @@ Reviewer re-checked by web search: 15 November 2026, 200 questions in 4 hours, 9
 pass at 60% of the national top score in the domain, answer key from 16:00 on the exam day
 (Agerpres, 15 May 2026: https://agerpres.ro/educatie-stiinta/2026/05/15/p-rezidentiat-2026-cifre-ale-sesiunii-2025-pregatirea-pentru-15-noiembrie-si-ce-se-discuta-despre-20--1556428 ;
 Edupedu registration article above). rezidentiat.ms.ro not reached again.
+
+## Audit check 2026-11-16 (ROREZ-CHG-007)
+
+CDC Guideline for Prevention of Surgical Site Infection, 1999 (Mangram et al.), official PDF
+https://stacks.cdc.gov/view/cdc/7160/cdc_7160_DS1.pdf , read 2026-11-16: Class II/Clean-Contaminated
+includes "operations involving the biliary tract, appendix, vagina, and oropharynx ... provided no
+evidence of infection or major break in technique is encountered"; Class III/Contaminated includes
+"incisions in which acute, nonpurulent inflammation is encountered"; Class IV covers existing
+clinical infection or perforated viscera. Cholecystectomy for uncomplicated acute cholecystitis is
+therefore contaminated: key changed from curată-contaminată to contaminată, and the stem now rules
+out empiem, gangrenă and perforație. The NHSN SSI protocol (January 2026,
+https://www.cdc.gov/nhsn/pdfs/pscmanual/9pscssicurrent.pdf) keeps the same four classes (AORN).

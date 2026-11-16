@@ -1,0 +1,266 @@
+{
+ "runId": "2026-11-16-c8bea0",
+ "at": "2026-11-16T16:05:36.983Z",
+ "model": "claude-opus-5-5",
+ "checked": 1352,
+ "blindChecked": 1351,
+ "disagreements": 198,
+ "adjudicated": 498,
+ "findings": [
+  {
+   "examId": "dktruck",
+   "questionId": "DKTR-HAN-010",
+   "file": "data/denmark-truck-theory-questions.json",
+   "trigger": [
+    "sweep"
+   ],
+   "notes": [],
+   "key": [
+    "B"
+   ],
+   "blind": {
+    "answer": [
+     "D"
+    ],
+    "confidence": "medium",
+    "defensibleOthers": [
+     "B"
+    ],
+    "problem": "The question does not say whether the grab is empty or loaded. A heavy front load can unload the rear axle, so the rear wheels may lift (D). With an unladen front implement, though, steering is not the expected concern. B is wrong in principle, because front weight increases front-wheel grip. D is the intended answer, but the wording could be clearer, for example by asking about the loaded case or the effect of braking with a load."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "wrong_key",
+    "confidence": "medium",
+    "correctAnswer": [
+     "D"
+    ],
+    "reason": "A loaded front-loader grab puts weight ahead of the front axle. The tractor pivots about the front wheels, which loads the front axle and unloads the rear. The rear wheels can lose grip or lift (D), while the front wheels gain grip, so B and the explanation's claim that the front wheels leave the road are physically backwards. The author's paraphrase of B-plan 3.2.4 ('front grab can lift the front wheels') appears to be a misreading, since front-wheel lift comes from heavy rear-mounted implements.",
+    "fix": "Change key to D. Reword stem to: 'A tractor carries a heavy load in its front loader grab. What can happen while it drives?' Replace explanation with: 'A heavy load in a front grab sits ahead of the front axle and takes weight off the rear axle. The rear wheels can lose grip or even lift off the road, which makes braking and traction poor and the tractor unstable.'"
+   }
+  },
+  {
+   "examId": "insurance-pa",
+   "questionId": "LHPA-PALIC-003",
+   "file": "data/life-health-pa-questions.json",
+   "trigger": [
+    "sweep"
+   ],
+   "notes": [],
+   "key": [
+    "C"
+   ],
+   "blind": {
+    "answer": [
+     "C"
+    ],
+    "confidence": "medium",
+    "defensibleOthers": [
+     "A"
+    ],
+    "problem": "The question names no state and does not give the required hours per period. The answer assumes a 24-hour requirement with excess hours (40 − 24 = 16) carried forward. Carryover rules vary by state, and some states allow none."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "wrong_key",
+    "confidence": "medium",
+    "correctAnswer": [
+     "A"
+    ],
+    "reason": "This is a Pennsylvania exam. Pennsylvania requires 24 approved CE credit hours per two-year licensing period, including 3 hours of ethics, under 40 P.S. § 310.8 (Section 608-A). Pennsylvania does not allow excess credit hours to be carried over to the next licensing period, so the 16 extra hours are lost and the answer is A. The explanation invents a 24-hour carry-forward cap that does not exist in Section 608-A(b)(1).",
+    "fix": "Change the key to A. Revise the stem to: \"A Pennsylvania producer completed 40 approved continuing education credit hours in one two-year license period, which requires 24 hours. How many hours can she carry forward to the next period?\" Replace the explanation with: \"Pennsylvania requires 24 CE credit hours per biennial licensing period, including 3 hours of ethics (40 P.S. § 310.8). Pennsylvania does not permit excess credit hours to carry over to the next licensing period, so the 16 hours above the requirement cannot be carried forward.\""
+   }
+  },
+  {
+   "examId": "rorezid",
+   "questionId": "ROREZ-CHG-007",
+   "file": "data/romania-rezidentiat-questions.json",
+   "trigger": [
+    "sweep"
+   ],
+   "notes": [],
+   "key": [
+    "C"
+   ],
+   "blind": {
+    "answer": [
+     "B"
+    ],
+    "confidence": "medium",
+    "defensibleOthers": [
+     "D"
+    ],
+    "problem": "The stem does not say whether the gallbladder is purulent (empyema or gangrene). If it were, the operation would be classified as dirty; for non-purulent acute inflammation it is contaminated."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "wrong_key",
+    "confidence": "medium",
+    "correctAnswer": [
+     "B"
+    ],
+    "reason": "Under the CDC/NRC wound classification used in surgical-infection chapters such as Lawrence ch. 8, a biliary tract operation without unusual contamination (e.g. elective cholecystectomy) is clean-contaminated. Encountering acute, non-purulent inflammation makes the procedure contaminated (class III). Cholecystectomy for acute cholecystitis is therefore the classic example of a contaminated operation, so the key C is wrong. Purulent inflammation (empyema, gangrene with pus, perforation) would make it dirty, which is why the stem should rule that out.",
+    "fix": "Change key to B. Rewrite stem: \"O colecistectomie efectuată pentru colecistită acută necomplicată (fără empiem, gangrenă sau perforație) este, după gradul de contaminare, o intervenție:\". New explanation: \"Intervențiile pe tractul biliar fără contaminare neobișnuită (de ex. colecistectomia electivă) sunt curat-contaminate. Prezența unei inflamații acute nepurulente, cum este colecistita acută, încadrează operația drept contaminată (clasa III). Inflamația purulentă (empiem, perforație cu puroi) sau o plagă traumatică veche ar face-o murdară (clasa IV).\""
+   }
+  },
+  {
+   "examId": "gcppca",
+   "questionId": "GCPPCA-D-019",
+   "file": "data/v2/gcppca/questions.json",
+   "trigger": [
+    "sweep"
+   ],
+   "notes": [],
+   "key": [
+    "B"
+   ],
+   "blind": {
+    "answer": [
+     "B"
+    ],
+    "confidence": "high",
+    "defensibleOthers": [],
+    "problem": "Option D is a weak distractor: Cloud Storage offers region, dual-region and multi-region location types, not a single-zone bucket type."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "outdated",
+    "confidence": "medium",
+    "correctAnswer": [
+     "B"
+    ],
+    "reason": "B is the right key: a dual-region bucket can be placed in two regions inside one country, giving geo-redundancy, low latency for both cities and data residency. The explanation's claim that buckets are \"never single-zone\" is no longer accurate. Since 2025, Cloud Storage Rapid Storage has offered zonal buckets that keep data in a single zone for high-performance AI/ML workloads. D stays wrong, but for a different reason: a zonal bucket gives no cross-region redundancy and suits compute in that one zone, not users in two cities.",
+    "fix": "Replace the explanation with: \"A dual-region bucket stores data redundantly in two specific regions, which can both be in the chosen country, so it keeps data in-country and serves users in both areas with low latency. Multi-region locations span large areas such as a whole continent, so data could leave the country. A bucket in another country breaks the residency requirement. A zonal (single-zone) bucket, such as Rapid Storage, keeps data in one zone for co-located high-performance compute; it has no cross-region redundancy and is not suited to users in two cities.\" Optionally reword D to \"A zonal bucket in a single zone of one region\"."
+   }
+  },
+  {
+   "examId": "dmv",
+   "questionId": "AL-026",
+   "file": "data/questions.json",
+   "trigger": [
+    "sweep"
+   ],
+   "notes": [],
+   "key": [
+    "D"
+   ],
+   "blind": {
+    "answer": [
+     "B"
+    ],
+    "confidence": "medium",
+    "defensibleOthers": [
+     "D"
+    ],
+    "problem": "Alabama law (Code § 32-5A-171) sets 30 mph for urban districts and does not define a separate 'residential' limit. Many cities post 25 mph on residential streets, so the question's wording is ambiguous."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "ambiguous",
+    "confidence": "medium",
+    "correctAnswer": [
+     "B",
+     "D"
+    ],
+    "reason": "Alabama Code § 32-5A-171 sets a 30 mph default for an 'urban district' and has no general statewide default for 'residential areas.' Many municipalities post 25 mph on residential streets, so both 30 mph (statutory urban default) and 25 mph (common posted local limit) are defensible. The explanation's claim of a statewide 25 mph residential default is not supported by the statute.",
+    "fix": "Reword the stem to: 'Unless otherwise posted, what is the maximum speed limit in an urban district in Alabama?' and change the key to B (30 mph). Replace the explanation with: 'Under Alabama Code § 32-5A-171, the maximum speed in an urban district is 30 mph unless a lower or higher limit is posted; many cities post 25 mph on residential streets.'"
+   }
+  },
+  {
+   "examId": "dmv",
+   "questionId": "AK-006",
+   "file": "data/questions.json",
+   "trigger": [
+    "sweep"
+   ],
+   "notes": [],
+   "key": [
+    "B"
+   ],
+   "blind": {
+    "answer": [
+     "A"
+    ],
+    "confidence": "low",
+    "defensibleOthers": [
+     "B",
+     "D"
+    ],
+    "problem": "No jurisdiction is given, and provisional-license curfew hours vary by state. For example, Kentucky uses midnight to 6 AM with a supervising driver 21 or older; Florida uses 1 AM to 5 AM for 17-year-olds and 11 PM to 6 AM for 16-year-olds; California and Pennsylvania use 11 PM to 5 AM. The question cannot be answered definitively as written."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "ambiguous",
+    "confidence": "high",
+    "correctAnswer": [
+     "B"
+    ],
+    "reason": "The stem never names a jurisdiction, and provisional-license night hours differ by state. Kentucky uses midnight to 6 AM, Florida uses 1 AM to 5 AM for 17-year-olds, and California uses 11 PM to 5 AM, so A, B and D are each correct somewhere. Only the explanation reveals that the question is about Alaska. Alaska's provisional license bars driving from 1 AM to 5 AM unless accompanied by a parent, guardian or licensed driver 21 or older, so B is right once the state is specified.",
+    "fix": "Rewrite the stem: \"In Alaska, during what hours can a provisional license holder not drive unless accompanied by a parent, guardian, or licensed driver 21 or older?\" Keep the key as B."
+   }
+  },
+  {
+   "examId": "grdriving",
+   "questionId": "GRDRV-REG-022",
+   "file": "data/greece-driving-questions.json",
+   "trigger": [
+    "source"
+   ],
+   "notes": [
+    "An official source page for this exam changed recently; check the question is still correct."
+   ],
+   "key": [
+    "B"
+   ],
+   "blind": {
+    "answer": [
+     "B"
+    ],
+    "confidence": "high",
+    "defensibleOthers": [],
+    "problem": "Minor wording inaccuracy: under the Vienna Convention, the 'end of speed limit' sign normally has a white or grey background with a grey or black border and diagonal stripes, and no red border. A red border with diagonal lines is not the standard design. The intended answer, B, is still clear."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "unclear",
+    "confidence": "medium",
+    "correctAnswer": [
+     "B"
+    ],
+    "reason": "The key (B) is right: diagonal stripes across a speed-limit disc cancel that limit, and the general limit for the road then applies. However, the stem describes a sign that does not exist. Under the Vienna Convention (C,17b) and on the Greek end-of-limit sign, the disc is white with a thin black or grey border, grey numerals and diagonal stripes, and has no red border. The answer is unaffected, but the stem misdescribes what candidates will see on the real test.",
+    "fix": "Rewrite the stem as: \"A white circle with a grey \"50\" and a thin black or grey border, crossed by diagonal lines (no red border), means:\" Keep options A–D and key B. Add to the explanation: \"End-of-limit signs have no red border; the red ring is replaced by a thin black or grey edge.\""
+   }
+  },
+  {
+   "examId": "dmv",
+   "questionId": "NV-007",
+   "file": "data/questions.json",
+   "trigger": [
+    "sweep"
+   ],
+   "notes": [],
+   "key": [
+    "C"
+   ],
+   "blind": {
+    "answer": [
+     "C"
+    ],
+    "confidence": "medium",
+    "defensibleOthers": [],
+    "problem": "Nevada has no separate 'intermediate license'; under-18 drivers hold a full license with restrictions. The curfew (10 p.m.–5 a.m.) exception in NRS 483.2521 covers driving to or from a scheduled event such as school or work. 'Emergencies' is not an explicit statutory exception, so option C is only approximately accurate."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "unclear",
+    "confidence": "medium",
+    "correctAnswer": [
+     "C"
+    ],
+    "reason": "C is the only defensible option, so the key is right. Two parts of the wording are inaccurate for Nevada, though. Nevada does not issue an 'intermediate license'; drivers under 18 hold a full license with restrictions. The curfew exception in NRS 483.2521 and the Nevada DMV handbook covers only driving to or from a scheduled event such as school or work, not emergencies, so the option and explanation misstate the rule a Nevada candidate studies.",
+    "fix": "Stem: \"In Nevada, when may a driver under 18 drive between 10 p.m. and 5 a.m.?\" Option C: \"When going to or from a scheduled event, such as school or work\". Explanation: \"Under NRS 483.2521, drivers under 18 may not drive between 10 p.m. and 5 a.m. unless they are driving to or from a scheduled event, such as school or work.\""
+   }
+  }
+ ],
+ "signalsCleared": 2
+}

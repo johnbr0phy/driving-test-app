@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rorezid__ROREZ-CHG-007",
+    "status": "fixed",
+    "note": "Key changed to Contaminată and stem limited to uncomplicated acute cholecystitis, per the CDC 1999 SSI guideline wound classes (acute nonpurulent inflammation is Class III)."
+  },
+  {
+    "id": "gcppca__GCPPCA-D-019",
+    "status": "fixed",
+    "note": "Explanation no longer says buckets are never single-zone; zonal buckets exist through Rapid Bucket (Google Cloud Storage locations page, read 2026-11-16). Key unchanged."
+  },
+  {
+    "id": "insurance-pa__LHPA-PALIC-003",
+    "status": "dismissed",
+    "note": "Insurance Department Act 608-A(b)(1), read on the official palegis.us PDF, allows carrying forward excess CE hours up to 24, so key C (16 hours) is right."
+  }
+]

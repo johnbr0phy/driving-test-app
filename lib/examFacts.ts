@@ -3101,6 +3101,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISC2 CISSP exam outline effective April 15, 2024",
     source: { name: "ISC2", url: "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" },
   },
+  prince2: {
+    answer:
+      "The PRINCE2 7 Foundation exam has 60 multiple-choice questions, one mark each, in 60 minutes. It is closed book, there is no negative marking, and you need 36 correct answers (60 percent) to pass; candidates sitting in a language that is not their own may get 25 percent extra time. It tests recall and understanding of the PRINCE2 method: key concepts 3 percent, the seven principles 8 percent, people 14 percent, the seven practices 60 percent and the seven processes 15 percent. PeopleCert offers it in 14 languages, lists no prerequisites, and the certification is renewed every 3 years. PRINCE2 7 has been the current edition since September 2023.",
+    rows: [
+      { label: "Questions", value: "60 multiple choice, one mark each" },
+      { label: "Time", value: "60 minutes, closed book" },
+      { label: "Pass mark", value: "60 percent (36 of 60), no negative marking" },
+      { label: "Biggest area", value: "The seven practices, 60 percent of the marks" },
+      { label: "Prerequisites", value: "None listed" },
+      { label: "Renewal", value: "Every 3 years (60 CPD points or another exam in the suite)" },
+      { label: "Given by", value: "PeopleCert" },
+    ],
+    basedOn: "the PRINCE2 7 Foundation syllabus and PeopleCert's PRINCE2 Foundation (Version 7) exam page, checked November 2026",
+    source: { name: "PeopleCert", url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579" },
+  },
   itil: {
     answer:
       "The ITIL 4 Foundation exam has 40 multiple-choice questions in 60 minutes. It is closed book and the pass mark is 65 percent, 26 of 40, with no negative marking. It covers key service management concepts, the seven guiding principles, the four dimensions, the service value system and value chain, the purpose of 15 practices and seven practices in detail. PeopleCert released ITIL (Version 5) in early 2026 and still offers ITIL 4 Foundation alongside it; its current plan is to retire all ITIL 4 modules on 31 December 2027.",

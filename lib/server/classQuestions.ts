@@ -73,6 +73,7 @@ import "@/lib/v2/banks/sc200";
 import "@/lib/v2/banks/sc900";
 import "@/lib/v2/banks/cissp";
 import "@/lib/v2/banks/itil";
+import "@/lib/v2/banks/prince2";
 import "@/lib/v2/banks/psm";
 import "@/lib/v2/banks/capm";
 import "@/lib/v2/banks/gcdl";

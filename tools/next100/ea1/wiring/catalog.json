@@ -1,0 +1,14 @@
+{
+  "blurb": "IRS Enrolled Agent Special Enrollment Examination Part 1 (Individuals) practice on the IRS content outline and 2025 tax law: filing status and dependents, income, IRAs and property, deductions and credits, AMT and payroll taxes, planning, and estate, gift and FBAR reporting.",
+  "org": "IRS · Special Enrollment Examination (SEE) Part 1, given by PSI",
+  "group": "Accounting, CPA and finance exams",
+  "groupAfter": "cpatcp",
+  "aliases": ["enrolled agent", "enrolled agent exam", "ea exam", "ea part 1", "see part 1", "see exam", "special enrollment examination", "irs ea exam", "irs see", "enrolled agent part 1", "ea individuals", "irs enrolled agent", "tax preparer exam", "ea1"],
+  "teacherLed": false,
+  "teaches": "",
+  "borrowTiger": "cpareg",
+  "shareTitle": "Free Enrolled Agent Part 1 Practice Test",
+  "shareDescription": "200 original questions on the IRS SEE Part 1 (Individuals) outline and 2025 tax law. Free to start.",
+  "searchTests": [["enrolled agent", "US", "ea1"], ["ea exam part 1", "US", "ea1"], ["see part 1", "US", "ea1"], ["special enrollment examination", "US", "ea1"]],
+  "region": "TEST_REGIONS: ea1 is US (the default; add a line only if the file lists every US exam)"
+}

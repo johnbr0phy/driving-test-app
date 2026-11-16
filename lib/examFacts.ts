@@ -6218,6 +6218,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NZQA unit standards 4646 v11 and 16705 v7 (March 2023), checked November 2026",
     source: { name: "NZQA: unit standard 16705", url: "https://www.nzqa.govt.nz/nqfdocs/units/pdf/16705.pdf" },
   },
+  nzrealestate: {
+    answer:
+      "To work as a real estate salesperson in New Zealand you need a licence from the Real Estate Authority (REA, Te Mana Papawhenua), and the qualification REA accepts for a salesperson licence is the New Zealand Certificate in Real Estate (Salesperson) (Level 4), 50 credits, offered by approved providers such as REINZ, Skills Institute, Strategi, Open Polytechnic and Toi Ohomai. You must also be at least 18, a fit and proper person and consent to a criminal conviction history check. A salesperson must be supervised by a licensed agent or branch manager. Training providers write and mark their own assessments, and no national question count or pass mark is published, so Tigertest's mock tests use an 80% readiness target.",
+    rows: [
+      { label: "Qualification", value: "New Zealand Certificate in Real Estate (Salesperson) (Level 4), NZQA reference 3111, 50 credits" },
+      { label: "Assessment", value: "Set by the approved provider; no national question count or pass mark" },
+      { label: "Licence", value: "Real Estate Authority (REA), under the Real Estate Agents Act 2008" },
+      { label: "Minimum age", value: "18" },
+      { label: "Also needed", value: "Fit and proper person; conviction history check; supervision by an agent or branch manager" },
+      { label: "Recent qualification", value: "Usable if gained less than three years ago; otherwise show the Registrar sufficient knowledge" },
+    ],
+    basedOn: "Real Estate Agents Act 2008, the Professional Conduct and Client Care Rules 2012 and Real Estate Authority guidance, checked November 2026",
+    source: { name: "REA: required criteria and qualifications to work in real estate", url: "https://www.rea.govt.nz/real-estate-professionals/apply-for-your-licence/required-criteria-and-qualifications-to-work-in-real-estate/" },
+  },
   aesira: {
     answer:
       "In Dubai, anyone who works as a security guard needs an individual licence from the Security Industry Regulatory Agency (SIRA), under Law No. (12) of 2016. The executive regulation issued in June 2026 requires the applicant to be at least 18, hold valid UAE residence if not a UAE national, know the basics of Arabic or English, be of good conduct, and pass the theoretical and practical tests SIRA approves, usually after a basic course at a SIRA-accredited training centre. SIRA does not publish the written test's length or pass mark; guides say about 60 multiple-choice questions in English or Arabic, with about 70% commonly reported as the pass mark. The licence lasts two years.",

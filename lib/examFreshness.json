@@ -428,6 +428,14 @@
       "what": "HSPA launches the new CHL exam form on the 2026 content outline (25/23/29/23).",
       "action": "Confirm the live form matches the 2026 outline weights and the handbook's section names; adjust if HSPA changed them.",
       "source": "https://myhspa.org/wp-content/uploads/2026/03/HSPA_CHL_Content_Outline_2026.pdf"
+    },
+    {
+      "exam": "nzrealestate",
+      "date": "2027-05-31",
+      "kind": "outline",
+      "what": "NZQA qualification 3111 (NZ Certificate in Real Estate (Salesperson) (Level 4)) version 2 has a last date of assessment of 31 May 2027, and version 3 follows the May 2025 review, which widened the graduate profile to business broking, rural, and commercial and industrial real estate.",
+      "action": "Read the version 3 qualification record and REA's qualification page; add any new topics and update the examFacts and landing.",
+      "source": "https://www.nzqa.govt.nz/nqfdocs/summaries/2025/may25/revsummay25-12.html"
     }
   ]
 }

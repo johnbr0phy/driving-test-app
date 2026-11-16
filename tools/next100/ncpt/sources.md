@@ -96,6 +96,17 @@ review material, released items or any commercial review book or prep site.
   https://www.aha.org/other-resources/patient-care-partnership
   The plain-language brochure that replaced the AHA Patient's Bill of Rights: high quality care, a
   clean and safe environment, involvement in care, privacy, preparing to leave, help with the bill.
+- The Joint Commission, National Patient Safety Goals Effective January 2026 for the Laboratory
+  Program, fetched 2026-11-16:
+  https://digitalassets.jointcommission.org/api/public/content/3c7a110c215943bc80d9ce87e9d9ee9d
+  NPSG.01.01.01: use at least two patient identifiers when collecting blood samples and other
+  specimens; the room number or physical location is not an identifier; label containers in the
+  presence of the patient.
+- Frequently Asked Questions on NFPA 704 (NFPA's FAQ, as hosted by the Cambridge, MA fire
+  department), fetched 2026-11-16:
+  https://www.Cambridgema.gov/-/media/Files/firedepartment/lepcinfo/704_FAQs.pdf
+  Blue for health (nine o'clock), red for flammability (twelve), yellow for instability (three),
+  white for special hazards (six); ratings 0 to 4.
 - Standard textbook facts the test plan's Essential Knowledge Base names (tort definitions,
   laboratory departments, basic vascular anatomy, urine, stool, sputum and swab collection,
   chain-of-custody steps, specimen handling for light and temperature). CLSI GP41, GP42 and GP44

@@ -4437,6 +4437,59 @@
         "rrn",
         "jkssb"
       ]
+    },
+    {
+      "id": "qabaabat",
+      "name": "QABA Applied Behavior Analysis Technician (ABAT)",
+      "owner": "QABA",
+      "region": "US",
+      "engine": "v1",
+      "siblings": [
+        "rbt",
+        "bcaba"
+      ],
+      "sells": 1.0,
+      "search": [
+        "abat",
+        "qaba",
+        "aba technician"
+      ]
+    },
+    {
+      "id": "nzsecurity",
+      "name": "NZ security guard certificate (PSPLA Certificate of Approval unit standards)",
+      "owner": "NZQA / PSPLA",
+      "region": "NZ",
+      "engine": "v1",
+      "siblings": [
+        "caguard",
+        "nzfirearms",
+        "nzlcq"
+      ],
+      "sells": 1.0,
+      "search": [
+        "nz security guard",
+        "pspla",
+        "certificate of approval",
+        "security officer nz"
+      ]
+    },
+    {
+      "id": "ncpt",
+      "name": "NCCT National Certified Phlebotomy Technician (NCPT)",
+      "owner": "NCCT",
+      "region": "US",
+      "engine": "v1",
+      "siblings": [
+        "phleb",
+        "rpt",
+        "ascppbt"
+      ],
+      "sells": 1.0,
+      "search": [
+        "ncpt",
+        "ncct phlebotomy"
+      ]
     }
   ]
 }

@@ -69,4 +69,7 @@ Q = [
 ("A licensee advertises a property at a price different from the one the client authorised. Which rule does this breach?",
  "The rule on advertising terms", ["The rule on trust account money", "The rule on written appraisals", "The rule on copies of offers"],
  "Rule 10.9 says a licensee must not advertise land or a business on terms different from those authorised by the client."),
+("Under section 134(7), when a salesperson's work enables the agent to act for a vendor, the vendor is also:",
+ "The salesperson's client", ["Only the agent's client", "A customer of the salesperson", "No one's client"],
+ "Section 134(7) says the client of an agent is also the client of any branch manager or salesperson whose work enables the agent to do agency work, so the acquisition restrictions apply to them too."),
 ]

@@ -126,7 +126,7 @@ ITEMS = [
     S(0, 2, "Identity as the perimeter",
       "Why is identity described as the primary security perimeter today?",
       "People work from anywhere, on any device",
-      ["Network firewalls no longer block traffic", "Every app now stores its own passwords", "Cloud services can't use encryption"],
+      ["Firewalls can no longer filter cloud traffic", "Each cloud app now runs its own directory", "Passwords have replaced every other factor"],
       "Users, apps and data now sit outside the old corporate network boundary, so the network edge no longer marks who is trusted. The identity signing in has become the control point."),
     S(0, 1, "Directory services",
       "Which identity service do organizations traditionally run on their own domain controllers?",

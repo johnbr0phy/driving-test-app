@@ -522,9 +522,9 @@
     "stem": "For each statement about Microsoft Entra ID Protection, select Yes if it is true or No if it is false.",
     "rows": [
       "Leaked credentials flags passwords found in known breaches.",
-      "Atypical travel weighs sign-in locations against travel time.",
-      "ID Protection can report risk but can't act on it.",
-      "Every ID Protection detection is calculated in real time."
+      "Atypical travel is calculated offline, after the sign-in.",
+      "ID Protection risk can make Conditional Access require MFA.",
+      "Leaked credentials is calculated during the sign-in itself."
     ],
     "columns": [
       "Yes",
@@ -532,11 +532,11 @@
     ],
     "correct": [
       0,
-      0,
       1,
+      0,
       1
     ],
-    "explanation": "ID Protection detects risks, feeds risk-based Conditional Access policies that require MFA or a password change, and lets risk data be exported to tools such as Microsoft Sentinel. Some detections, such as leaked credentials, are calculated offline rather than in real time."
+    "explanation": "ID Protection detects risks, feeds risk-based Conditional Access policies that require MFA or a password change, and lets risk data be exported to tools such as Microsoft Sentinel. Atypical travel is calculated in real time; leaked credentials comes from scanning breach data, so it is calculated offline."
   },
   {
     "id": "SC900-T1-026",
@@ -752,7 +752,7 @@
     "skill": "Audit",
     "stem": "For each statement about auditing in Microsoft Purview, select Yes if it is true or No if it is false.",
     "rows": [
-      "Audit (Standard) must be turned on for each user.",
+      "Audit (Standard) is turned off by default.",
       "Audit (Standard) keeps audit records for 180 days.",
       "Audit (Premium) keeps Exchange and SharePoint records for one year by default.",
       "Audit (Standard) supports custom audit log retention policies."
@@ -803,7 +803,7 @@
     "rows": [
       "It mitigates attacks at network layers 3 and 4.",
       "DDoS IP Protection needs a DDoS protection plan.",
-      "DDoS Network Protection alone stops SQL injection.",
+      "DDoS Network Protection stops SQL injection.",
       "Azure gives basic infrastructure DDoS protection by default."
     ],
     "columns": [
@@ -830,9 +830,9 @@
     "stem": "For each statement about Microsoft Defender for Cloud, select Yes if it is true or No if it is false.",
     "rows": [
       "It can assess resources in AWS and Google Cloud.",
-      "Foundational CSPM is available at no cost.",
+      "Foundational CSPM needs a paid plan.",
       "Attack path analysis is part of Foundational CSPM.",
-      "It protects only resources that run in Azure."
+      "It can protect on-premises servers through Azure Arc."
     ],
     "columns": [
       "Yes",
@@ -840,11 +840,11 @@
     ],
     "correct": [
       0,
-      0,
       1,
-      1
+      1,
+      0
     ],
-    "explanation": "Defender for Cloud assesses Azure, AWS and GCP. Foundational CSPM is free and uses the Microsoft cloud security benchmark; advanced tools such as attack path analysis need the paid Defender CSPM plan."
+    "explanation": "Defender for Cloud assesses Azure, AWS and GCP, and on-premises servers connected through Azure Arc. Foundational CSPM is free and uses the Microsoft cloud security benchmark; advanced tools such as attack path analysis need the paid Defender CSPM plan."
   },
   {
     "id": "SC900-T1-039",
@@ -1672,10 +1672,10 @@
     "skill": "Privacy principles",
     "stem": "Under Microsoft's privacy commitments, how does Microsoft respond when a government asks it for a customer's data?",
     "options": [
-      "It shares the data with any agency that asks",
+      "It discloses the data if the agency is local",
       "It redirects the request to the customer",
-      "It hands over the data directly",
-      "It deletes the data first"
+      "It gives the agency direct access to the data",
+      "It discloses the data once it is encrypted"
     ],
     "correct": [
       1
@@ -1780,8 +1780,8 @@
     "stem": "For each statement about device identities in Microsoft Entra ID, select Yes if it is true or No if it is false.",
     "rows": [
       "A device can be registered, joined or hybrid joined.",
-      "Registration is meant only for company-owned devices.",
-      "A hybrid joined device is joined only to Microsoft Entra ID.",
+      "Registration is meant for company-owned PCs.",
+      "A hybrid joined device has no on-premises AD account.",
       "A device identity lets Conditional Access check the device."
     ],
     "columns": [
@@ -2592,14 +2592,14 @@
     "stem": "How does Azure Bastion carry the RDP or SSH session to the admin's browser?",
     "options": [
       "Over TLS on port 443",
-      "Over a site-to-site VPN only",
-      "Over unencrypted HTTP",
-      "Over port 3389 from the internet"
+      "Over a point-to-site VPN",
+      "Over SSH on port 22",
+      "Over RDP on port 3389"
     ],
     "correct": [
       0
     ],
-    "explanation": "The admin connects to Bastion in the Azure portal over TLS on port 443, and Bastion opens the RDP or SSH session to the VM's private IP address. Port 3389 is never exposed to the internet."
+    "explanation": "The admin connects to Bastion in the Azure portal over TLS on port 443, and Bastion opens the RDP or SSH session to the VM's private IP address. No VPN is needed, and ports 3389 and 22 are never exposed to the internet."
   },
   {
     "id": "SC900-D-019",
@@ -2675,9 +2675,9 @@
     "skill": "Access reviews",
     "stem": "For each statement about access reviews, select Yes if it is true or No if it is false.",
     "rows": [
-      "Access reviews can only cover Azure subscriptions.",
+      "Access reviews are included in Microsoft Entra ID Free.",
       "Access reviews can cover Microsoft Entra role assignments.",
-      "Reviewers must always be Global Administrators.",
+      "Reviewers have to be Global Administrators.",
       "Denied access can be removed automatically."
     ],
     "columns": [
@@ -2690,7 +2690,7 @@
       1,
       0
     ],
-    "explanation": "Reviews can cover groups, applications and privileged roles, and reviewers can be managers, owners, chosen users or the users themselves. Results can be applied automatically when the review ends."
+    "explanation": "Access reviews need Microsoft Entra ID P2 or ID Governance licenses. Reviews can cover groups, applications and privileged roles, and reviewers can be managers, owners, chosen users or the users themselves. Results can be applied automatically when the review ends."
   },
   {
     "id": "SC900-D-023",
@@ -2722,17 +2722,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Compliance score",
-    "stem": "What does a high compliance score in Compliance Manager guarantee?",
+    "stem": "A company's compliance score in Compliance Manager reaches 90%. What does that score show?",
     "options": [
-      "A passed external audit",
-      "Full compliance with GDPR",
-      "Protection from any data breach or fine",
-      "It isn't a guarantee of compliance"
+      "Certified compliance with GDPR",
+      "A passed external audit of its controls",
+      "Microsoft's own verification of its controls",
+      "Points earned for completed improvement actions"
     ],
     "correct": [
       3
     ],
-    "explanation": "Microsoft states that Compliance Manager recommendations aren't a guarantee of compliance; each organization must evaluate its own controls against its regulatory environment."
+    "explanation": "The compliance score adds up points for improvement actions that are completed and tested. Microsoft states that Compliance Manager isn't a guarantee of compliance: it proves no certification or audit result, and each organization must evaluate its own controls."
   },
   {
     "id": "SC900-D-025",
@@ -2766,15 +2766,15 @@
     "skill": "Azure Bastion",
     "stem": "What is a security benefit of Azure Bastion?",
     "options": [
-      "VM disks are encrypted by Bastion",
-      "VMs need no sign-in at all",
-      "VMs need no operating system updates",
+      "Admins sign in without credentials",
+      "VM traffic is scanned for malware",
+      "VMs are patched by Bastion automatically",
       "VMs need no public IP address"
     ],
     "correct": [
       3
     ],
-    "explanation": "Because Bastion connects to VMs over their private IP addresses, the VMs don't need public IPs or open RDP and SSH ports, which removes a common target for port scanning."
+    "explanation": "Because Bastion connects to VMs over their private IP addresses, the VMs don't need public IPs or open RDP and SSH ports, which removes a common target for port scanning. Bastion doesn't patch VMs, scan traffic for malware or remove the need to sign in."
   },
   {
     "id": "SC900-D-027",
@@ -2871,9 +2871,9 @@
     "skill": "Microsoft Defender for Cloud Apps",
     "stem": "How does Defender for Cloud Apps help admins judge whether a discovered cloud app is safe to use?",
     "options": [
-      "It rewrites the app's code",
-      "It encrypts all of the app's traffic",
-      "It moves the app into Azure",
+      "It lists the app's licensed users",
+      "It blocks every app it discovers",
+      "It tests the app's code for flaws",
       "It gives each app a risk score"
     ],
     "correct": [
@@ -2934,15 +2934,15 @@
     "skill": "Azure Key Vault",
     "stem": "What is a benefit of keeping an organization's secrets in Azure Key Vault?",
     "options": [
-      "They are copied into every app",
-      "They never need to be rotated",
-      "Apps can read them without any identity",
+      "They are encrypted only in transit",
+      "They rotate with no setup at all",
+      "Any user in the tenant can read them",
       "Access to them is controlled and logged"
     ],
     "correct": [
       3
     ],
-    "explanation": "Key Vault centralizes secrets, so access can be limited with permissions and monitored through logs. Secrets still need rotating, and apps must authenticate, often with a managed identity, to read them."
+    "explanation": "Key Vault centralizes secrets, so access can be limited with permissions and monitored through logs. Rotation has to be set up, only identities granted access can read them, and they are encrypted at rest as well as in transit."
   },
   {
     "id": "SC900-D-035",
@@ -3425,14 +3425,14 @@
     "stem": "Insider risk management starts from built-in policy templates. Which is one of them?",
     "options": [
       "Data theft by departing users",
-      "Password spray",
-      "Leaked credentials",
-      "Atypical travel"
+      "Passwords found in known breaches",
+      "Inappropriate text in Teams chats",
+      "Mailboxes kept for a lawsuit"
     ],
     "correct": [
       0
     ],
-    "explanation": "Data theft by departing users is an insider risk policy template. Leaked credentials, atypical travel and password spray are Microsoft Entra ID Protection detections."
+    "explanation": "Data theft by departing users is an insider risk policy template. Finding inappropriate text in messages is communication compliance, keeping mailboxes for a lawsuit is an eDiscovery hold, and passwords found in breaches are an ID Protection leaked credentials detection."
   },
   {
     "id": "SC900-D-058",
@@ -3529,18 +3529,18 @@
     "skill": "Password protection",
     "stem": "For each statement about Microsoft Entra Password Protection, select Yes if it is true or No if it is false.",
     "rows": [
-      "An admin can turn off the global banned password list.",
-      "A custom banned password list can hold up to 1,000 terms.",
+      "The global banned password list is always applied.",
+      "A custom banned password list can hold up to 100,000 terms.",
       "Uppercase letters are changed to lowercase before checking.",
-      "Banned lists are checked at every sign-in."
+      "Banned lists are checked when a user signs in."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      1,
       0,
+      1,
       0,
       1
     ],
@@ -3819,7 +3819,7 @@
     "rows": [
       "Sentinel needs on-premises servers to store its logs.",
       "Sentinel can ingest data from non-Microsoft sources.",
-      "Sentinel can analyze only data from Azure.",
+      "Sentinel stores its logs in Azure Key Vault.",
       "Automation rules can run playbooks on incidents."
     ],
     "columns": [
@@ -3866,9 +3866,9 @@
     "skill": "Identity as the perimeter",
     "stem": "Why is identity described as the primary security perimeter today?",
     "options": [
-      "Cloud services can't use encryption",
-      "Every app now stores its own passwords",
-      "Network firewalls no longer block traffic",
+      "Passwords have replaced every other factor",
+      "Each cloud app now runs its own directory",
+      "Firewalls can no longer filter cloud traffic",
       "People work from anywhere, on any device"
     ],
     "correct": [
@@ -4106,7 +4106,7 @@
     "rows": [
       "It is a cloud access security broker (CASB).",
       "It can discover shadow IT from firewall logs.",
-      "It works only with Microsoft cloud apps.",
+      "It replaces Conditional Access for sign-in control.",
       "It protects on-premises domain controllers."
     ],
     "columns": [
@@ -4119,7 +4119,7 @@
       1,
       1
     ],
-    "explanation": "Defender for Cloud Apps is a CASB that discovers cloud app use, Microsoft and non-Microsoft alike, gives visibility into sanctioned apps and controls sessions. On-premises domain controllers are Defender for Identity's job."
+    "explanation": "Defender for Cloud Apps is a CASB that discovers cloud app use, Microsoft and non-Microsoft alike, gives visibility into sanctioned apps and controls sessions through Conditional Access App Control, which works with Conditional Access rather than replacing it. On-premises domain controllers are Defender for Identity's job."
   },
   {
     "id": "SC900-D-089",
@@ -4196,9 +4196,9 @@
     "stem": "For each statement about retention in Microsoft Purview, select Yes if it is true or No if it is false.",
     "rows": [
       "Retention settings can retain, delete, or retain then delete content.",
-      "A retention policy can apply to whole locations such as all mailboxes.",
+      "A retention label applies to a whole location at once.",
       "A deleted item still under retention is removed for good at once.",
-      "Retention labels must always be applied by hand."
+      "Retention labels can be applied automatically by policy."
     ],
     "columns": [
       "Yes",
@@ -4206,11 +4206,11 @@
     ],
     "correct": [
       0,
-      0,
       1,
-      1
+      1,
+      0
     ],
-    "explanation": "Retention settings can retain only, delete only, or retain and then delete. A deleted item under retention is kept in a secure location until the period ends, and retention labels can be auto-applied by policy."
+    "explanation": "Retention settings can retain only, delete only, or retain and then delete. A retention policy covers whole locations, while a retention label is applied to individual items, by users or automatically by an auto-apply policy. A deleted item under retention is kept in a secure location until the period ends."
   },
   {
     "id": "SC900-D-093",

@@ -7,7 +7,7 @@
   "teacherLed": false,
   "borrowTiger": "secplus",
   "shareTitle": "Free SC-900 Practice Test",
-  "shareDescription": "200 original questions on all four SC-900 skill areas: concepts, Microsoft Entra, Microsoft security solutions and Microsoft compliance solutions. Free to start.",
+  "shareDescription": "201 original questions on all four SC-900 skill areas: concepts, Microsoft Entra, Microsoft security solutions and Microsoft compliance solutions. Free to start.",
   "searchTests": [["sc-900", "US", "sc900"], ["sc900", "US", "sc900"], ["microsoft security fundamentals", "US", "sc900"]],
   "related": ["az900", "secplus", "sc200"],
   "region": "TEST_REGIONS: sc900 is GLOBAL",

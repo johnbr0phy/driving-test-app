@@ -16,9 +16,9 @@ const siteUrl = SITE_URL;
 
 const title = "Free SC-900 Practice Test 2026: Security, Compliance, Identity";
 const metaDescription =
-  "Free SC-900 practice tests: 200 original questions on security, compliance and identity concepts, Microsoft Entra, Defender, Sentinel and Purview, all explained.";
+  "Free SC-900 practice tests: 201 original questions on security, compliance and identity concepts, Microsoft Entra, Defender, Sentinel and Purview, all explained.";
 const description =
-  "Free Microsoft Security, Compliance, and Identity Fundamentals (SC-900) practice tests with 200 original questions weighted to the Microsoft Learn study guide: shared responsibility, Zero Trust, encryption and identity concepts; Microsoft Entra ID, Conditional Access, PIM and ID Protection; Azure network security, Defender for Cloud, Microsoft Sentinel and Defender XDR; and the Service Trust Portal, Compliance Manager, sensitivity labels, DLP, retention, insider risk, eDiscovery and audit in Microsoft Purview.";
+  "Free Microsoft Security, Compliance, and Identity Fundamentals (SC-900) practice tests with 201 original questions weighted to the Microsoft Learn study guide: shared responsibility, Zero Trust, encryption and identity concepts; Microsoft Entra ID, Conditional Access, PIM and ID Protection; Azure network security, Defender for Cloud, Microsoft Sentinel and Defender XDR; and the Service Trust Portal, Compliance Manager, sensitivity labels, DLP, retention, insider risk, eDiscovery and audit in Microsoft Purview.";
 
 export const metadata: Metadata = {
   title,
@@ -79,7 +79,7 @@ const jsonLd = {
       operatingSystem: "Any",
       offers: examOffers("sc900"),
       featureList: [
-        "200 original SC-900 practice questions",
+        "201 original SC-900 practice questions",
         "2 full 50-question practice tests in 45 minutes",
         "8 drills that follow the study guide",
         "Yes/no statement sets, matching and choose-two items",
@@ -123,7 +123,7 @@ export default function Sc900LandingPage() {
           <ExamLandingHero
             dashboardHref="/sc-900/dashboard"
             shortName="SC-900"
-            subtitle="200 original questions weighted to the SC-900 study guide. Tuned for mobile. Free to start, no account needed."
+            subtitle="201 original questions weighted to the SC-900 study guide. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/sc900-mobile.png", desktop: "/landing/sc900-desktop.png" }}
           />
         </div>
@@ -273,7 +273,7 @@ export default function Sc900LandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass SC-900?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across all four skill areas.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 201 questions across all four skill areas.</p>
           <ExamLandingCTA dashboardHref="/sc-900/dashboard" />
         </div>
       </div>

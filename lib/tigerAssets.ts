@@ -87,6 +87,7 @@ const BORROWED_SETS: Record<string, string> = {
   crfsc: "capal",
   ascppbt: "phleb",
   rpt: "phleb",
+  ncpt: "phleb",
   hspachl: "crcst",
   hspacer: "crcst",
   bcaba: "rbt",

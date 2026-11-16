@@ -21,6 +21,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   nzdrone: { title: "Free NZ Drone Rules (Part 101) Practice Test", description: "200 original questions on New Zealand's Part 101 drone rules and CATI 101-1, with every answer explained." },
   crfsc: { title: "Free CRFSC Practice Test", description: "200 original questions for the Canadian Restricted Firearms Safety Course: handguns, ammunition, firing, care and the restricted storage and transport rules." },
   ascppbt: { title: "Free PBT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC phlebotomy content guideline, four 50-question practice tests." },
+  ncpt: { title: "Free NCPT Practice Test", description: "200 original questions on the NCCT NCPT detailed test plan for phlebotomy technicians. Free to start." },
   rpt: { title: "Free RPT (AMT) Practice Test", description: "200 original questions on the AMT RPT exam specifications, four 50-question practice tests." },
   hspachl: { title: "Free CHL Healthcare Leader Practice Test", description: "200 original questions on the 2026 HSPA CHL outline for sterile processing leaders. Free to start." },
   hspacer: { title: "Free CER Endoscope Reprocessor Practice Test", description: "200 original questions on the HSPA CER outline, from leak testing to high-level disinfection and storage. Free to start." },

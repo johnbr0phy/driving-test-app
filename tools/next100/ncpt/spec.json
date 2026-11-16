@@ -1,0 +1,24 @@
+{
+  "id": "ncpt",
+  "engine": "v1",
+  "stateCode": "NCPT",
+  "idBase": 33600,
+  "prefix": "NCPT-",
+  "slug": "/ncpt",
+  "landingPath": "/ncpt-practice-test",
+  "dataFile": "data/ncpt-questions.json",
+  "name": "NCPT Phlebotomy Practice Test",
+  "shortName": "NCPT (NCCT)",
+  "icon": "syringe",
+  "passPct": 70,
+  "region": "US",
+  "categories": [
+    {"key": "ncptInfection", "perTest": 8, "segment": "INF"},
+    {"key": "ncptEquipment", "perTest": 6, "segment": "EQP"},
+    {"key": "ncptPatientPrep", "perTest": 7, "segment": "PRP"},
+    {"key": "ncptCollection", "perTest": 8, "segment": "COL"},
+    {"key": "ncptProcessing", "perTest": 7, "segment": "PRC"},
+    {"key": "ncptComplications", "perTest": 7, "segment": "CMP"},
+    {"key": "ncptLaw", "perTest": 7, "segment": "LAW"}
+  ]
+}

@@ -274,6 +274,7 @@ import "./cbspd";
 import "./cmaa";
 import "./aufirearmsvic";
 import "./ncma";
+import "./ncpt";
 import "./mace";
 import "./hspacis";
 import "./aufirearmswa";

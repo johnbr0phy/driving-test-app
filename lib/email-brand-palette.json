@@ -416,6 +416,7 @@
   "iehcap": ["#089b4d","#e9fbf2","#04341a","#d9e8e0"],
   "aerera": ["#3d6a1b","#f4fbef","#1c2f0e","#e2e8de"],
   "cacore": ["#403226","#f5f2ef","#1a140f","#e4e0dd"],
+  "nzsecurity": ["#170e43","#efedfd","#090519","#e0deed"],
   "chtheory": ["#700006","#fdeded","#3d0003","#eddedf"],
   "qabaabat": ["#415358","#eef4f6","#212a2c","#dce3e5"]
 }

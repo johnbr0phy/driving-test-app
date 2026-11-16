@@ -291,5 +291,6 @@ import "./hknurse";
 import "./bcrealestate";
 import "./aerera";
 import "./nzrealestate";
+import "./nzsecurity";
 import "./cacore";
 import "./chtheory";

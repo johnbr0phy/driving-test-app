@@ -195,7 +195,7 @@ const BORROWED_SETS: Record<string, string> = {
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",
   nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", aerera: "realestate", mypce: "insurance", kenck: "nclex",
   // NZ real estate salesperson borrows the real estate tiger.
-  nzrealestate: "realestate",
+  nzrealestate: "realestate", nzsecurity: "security",
   ppsc: "phcse", punjabpolice: "police", pakarmy: "asvab", pkpaf: "asvab", pknle: "nclex", pkpnmc: "nclex",
   zak53moto: "moto", zare5: "insurance", zasaps: "police", zapsira: "security",
   // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX

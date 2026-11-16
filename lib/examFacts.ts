@@ -6323,6 +6323,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Real Estate Agents Act 2008, the Professional Conduct and Client Care Rules 2012 and Real Estate Authority guidance, checked November 2026",
     source: { name: "REA: required criteria and qualifications to work in real estate", url: "https://www.rea.govt.nz/real-estate-professionals/apply-for-your-licence/required-criteria-and-qualifications-to-work-in-real-estate/" },
   },
+  nzsecurity: {
+    answer:
+      "To work as a crowd controller, property guard or personal guard for a security company in New Zealand you need a certificate of approval (COA) from the Private Security Personnel Licensing Authority (PSPLA). Before the COA is granted you must complete the minimum training: NZQA skill standards 40146 (security industry knowledge), 40145 (conflict management theory) and 40147 (conflict management in practice), or the unit standards 27364, 27360 and 27361 they replaced, 12 credits in all. The New Zealand Certificate in Security (Level 3 or 4) also meets it. A temporary COA lets you work for 3 months while you train. Accredited training providers assess each standard as Achieved; no national question count or pass mark is published, so Tigertest's mock tests use an 80% readiness target.",
+    rows: [
+      { label: "Training", value: "NZQA skill standards 40146, 40145 and 40147 (or unit standards 27364, 27360 and 27361), 12 credits" },
+      { label: "Assessment", value: "Set by the training provider, graded Achieved; 40147 is a practical role play" },
+      { label: "Pass mark", value: "None published; 80% is Tigertest's readiness target" },
+      { label: "Approval", value: "Certificate of approval from the PSPLA, under the Private Security Personnel and Private Investigators Act 2010" },
+      { label: "While training", value: "Temporary COA, valid 3 months" },
+      { label: "Renewal", value: "Training is done once and is not repeated at renewal" },
+    ],
+    basedOn: "NZQA skill standards 40146, 40145 and 40147 (version 1, 2024), PSPLA guidance and New Zealand Police, WorkSafe and Privacy Commissioner guidance, checked November 2026",
+    source: { name: "PSPLA: Training & skills", url: "https://www.justice.govt.nz/tribunals/licences-certificates/pspla/training-and-skills/" },
+  },
   aesira: {
     answer:
       "In Dubai, anyone who works as a security guard needs an individual licence from the Security Industry Regulatory Agency (SIRA), under Law No. (12) of 2016. The executive regulation issued in June 2026 requires the applicant to be at least 18, hold valid UAE residence if not a UAE national, know the basics of Arabic or English, be of good conduct, and pass the theoretical and practical tests SIRA approves, usually after a basic course at a SIRA-accredited training centre. SIRA does not publish the written test's length or pass mark; guides say about 60 multiple-choice questions in English or Arabic, with about 70% commonly reported as the pass mark. The licence lasts two years.",

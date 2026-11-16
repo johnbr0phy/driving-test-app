@@ -1673,6 +1673,15 @@ export const en = {
     nzfaStorage: "Rules 6 & 7: Storage, Transport & Alcohol",
     nzfaLaw: "Licence Holder Obligations & the Law",
     nzfaAmmo: "Firearms, Ammunition & Malfunctions",
+    // nzsecurity
+    nzsecLicensing: "PSPLA Licensing & the Act",
+    nzsecForce: "Use of Force, Arrest & Detention",
+    nzsecEntry: "Trespass, Entry, Searching & ID",
+    nzsecSafety: "Health & Safety at Work",
+    nzsecIncidents: "Incidents & Emergencies",
+    nzsecReporting: "Reporting, Radio & Privacy",
+    nzsecConflict: "Conflict Theory & Tactical Options",
+    nzsecComms: "Communication & Customer Service",
     // nzlcq
     nzlcqObject: "The Act, Licensing Bodies & LAPs",
     nzlcqLicences: "Licence Types, Hours & Conditions",

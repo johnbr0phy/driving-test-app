@@ -1189,6 +1189,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(170, 20%, 38%)",
     "tint": "hsl(170, 30%, 95%)"
   },
+  "nzsecurity": {
+    "color": "hsl(250, 65%, 16%)",
+    "tint": "hsl(250, 80%, 96%)"
+  },
   "iehcap": {
     "color": "hsl(148, 90%, 32%)",
     "tint": "hsl(148, 70%, 96%)"

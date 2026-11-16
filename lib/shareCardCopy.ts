@@ -1,4 +1,5 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  pance: { title: "Free PANCE Practice Test", description: "200 original questions on the NCCPA PANCE content blueprint (2025) for physician assistant candidates. Free to start." },
   cpatcp: { title: "Free CPA TCP Practice Test", description: "200 original multiple-choice questions on the AICPA's TCP blueprint: individual, entity and property tax planning. Free to start." },
   aufirearmswa: { title: "WA Firearm Safety Training Practice Test", description: "Review WA firearms law, licence types, hunting permissions, storage levels and safe handling before your course." },
   hspacis: { title: "Free CIS Instrument Specialist Practice Test", description: "200 original questions on the HSPA CIS outline, from instrument identification to inspection, implants and water quality. Free to start." },

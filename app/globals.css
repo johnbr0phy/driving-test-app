@@ -4992,6 +4992,19 @@
     --brand-gradient-to: 137 50% 95%;
   }
 
+  [data-theme="pance"] {
+    --brand: 345 15% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 345 50% 95%;
+    --brand-hover: 345 15% 21%;
+    --brand-dark: 345 15% 19%;
+    --brand-darker: 345 10% 14%;
+    --brand-muted: 345 25% 70%;
+    --brand-border: 345 30% 78%;
+    --brand-border-light: 345 30% 88%;
+    --brand-gradient-to: 0 50% 95%;
+  }
+
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
     --brand-foreground: 0 0% 100%;
@@ -9835,6 +9848,18 @@
     --brand-muted: 122 25% 45%;
     --brand-dark: 122 25% 65%;
     --brand-darker: 122 20% 78%;
+  }
+
+  .dark [data-theme="pance"] {
+    --brand: 345 15% 49.4%;
+    --brand-hover: 345 15% 41.4%;
+    --brand-light: 345 45% 13%;
+    --brand-gradient-to: 0 40% 11%;
+    --brand-border-light: 345 30% 24%;
+    --brand-border: 345 30% 34%;
+    --brand-muted: 345 25% 45%;
+    --brand-dark: 345 15% 65%;
+    --brand-darker: 345 10% 78%;
   }
 
   .dark [data-theme="hspachl"] {

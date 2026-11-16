@@ -277,3 +277,4 @@ import "./mace";
 import "./hspacis";
 import "./aufirearmswa";
 import "./cpatcp";
+import "./pance";

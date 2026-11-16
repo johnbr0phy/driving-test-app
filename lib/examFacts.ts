@@ -44,6 +44,22 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  pance: {
+    answer:
+      "The PANCE (Physician Assistant National Certifying Exam) is the National Commission on Certification of Physician Assistants' (NCCPA) exam that graduates of accredited PA programs pass to earn the PA-C credential. It has 300 multiple-choice questions in five blocks of 60, with 60 minutes per block, 45 minutes of total break time and a 15-minute tutorial, about 5 hours in all, taken by computer at Pearson VUE test centers. Scores are reported on a 200 to 800 scale and the passing standard is 350, set by the modified Angoff method; wrong answers are not penalized. The content blueprint effective January 2025 spreads questions over 14 organ systems plus professional practice (6%), led by cardiovascular (11%) and pulmonary (9%), with 12 to 15% on pediatric patients. Candidates may take it once in 90 days or three times in a calendar year, whichever is fewer, and up to six times within six years of finishing their program.",
+    rows: [
+      { label: "Questions", value: "300 multiple choice, in five blocks of 60" },
+      { label: "Time", value: "5 hours: five 60-minute blocks, 45 minutes of breaks, 15-minute tutorial" },
+      { label: "Pass mark", value: "Scaled score of 350 on a 200 to 800 scale (modified Angoff)" },
+      { label: "Content", value: "Cardiovascular 11%, pulmonary 9%, GI and musculoskeletal 8% each, other systems 4 to 7%, professional practice 6%" },
+      { label: "Patients", value: "12 to 15% pediatric; up to 8 to 10% general surgery" },
+      { label: "Where", value: "Computer based at Pearson VUE test centers" },
+      { label: "Attempts", value: "Once in 90 days or three times a year (whichever is fewer); six times within six years of graduation" },
+      { label: "Run by", value: "National Commission on Certification of Physician Assistants (NCCPA)" },
+    ],
+    basedOn: "NCCPA's PANCE Content Blueprint (effective January 2025), What to Expect on Test Day, Exam Development and Scoring pages and PANCE at a Glance presentation, checked November 2026",
+    source: { name: "NCCPA: PANCE Content Blueprint", url: "https://www.nccpa.net/become-certified/pance-blueprint/" },
+  },
   cpatcp: {
     answer:
       "TCP, Tax Compliance and Planning, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. TCP runs 4 hours with 68 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, unchanged for 2027, it covers tax compliance and planning for individuals and personal financial planning (30 to 40%), entity tax compliance (30 to 40%), entity tax planning (10 to 20%) and property transactions (10 to 20%). Candidates are not tested on tax amounts indexed to inflation.",

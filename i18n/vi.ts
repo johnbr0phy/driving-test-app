@@ -1108,6 +1108,15 @@ export const vi: TranslationKeys = {
     crfscCare: "Care of Restricted Firearms",
     crfscLaw: "Owner Responsibilities & the Law",
     crfscStorage: "Storage, Display & Transport",
+    // bcrealestate
+    bcreLicensing: "Licensing & the Real Estate Services Act",
+    bcreDuties: "Agency Duties & Disclosure",
+    bcreContracts: "Contracts, Offers & Advertising",
+    bcreTrust: "Trust Accounts & Records",
+    bcreLand: "Land Title & Ownership",
+    bcreStrata: "Strata & Development Sales",
+    bcreFinance: "Mortgage Finance",
+    bcreValuation: "Valuation & Measurement",
     // ascppbt
     pbtCirc: "Circulatory System",
     pbtOrders: "Orders, Identification & Patient Prep",

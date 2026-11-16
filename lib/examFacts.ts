@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  bcrealestate: {
+      answer:
+        "The British Columbia real estate trading services exam is the final exam of the UBC Sauder Real Estate Trading Services Licensing Course, the course BCFSA requires before a representative licence to provide trading services (selling, leasing and advising on real estate) under the Real Estate Services Act. UBC's Real Estate Division gives it as 100 multiple-choice questions, one mark each, in three hours, with a passing grade of 70%. After passing, candidates complete the Residential or Commercial Trading Services Applied Practice Course run by BCFSA before applying for a licence. The exam is not offered outside Canada.",
+      rows: [
+        { label: "Format", value: "100 multiple-choice questions, one mark each, in 3 hours" },
+        { label: "Pass mark", value: "70% (UBC Sauder Real Estate Division)" },
+        { label: "Course", value: "Real Estate Trading Services Licensing Course, UBC Sauder, with assignments and a final exam" },
+        { label: "Regulator", value: "BC Financial Services Authority (BCFSA), under the Real Estate Services Act" },
+        { label: "After the exam", value: "Residential or Commercial Trading Services Applied Practice Course, then a licence application within one year" },
+        { label: "Calculator", value: "A financial calculator such as the HP 10bII+ is recommended for the mortgage and valuation questions" },
+        { label: "Age", value: "At least 19 and of good reputation to be licensed" },
+      ],
+      basedOn: "the UBC Sauder Real Estate Division course page and student handbook, BCFSA's Education and Licensing Guidelines, and BC Laws consolidations of the Real Estate Services Act and Rules, Property Law Act, Land Title Act, Strata Property Act and Real Estate Development Marketing Act current to November 10, 2026, checked November 2026",
+      source: { name: "UBC Sauder: Real Estate Trading Services Licensing Course", url: "https://www.sauder.ubc.ca/programs/real-estate/licensing-registration-courses/bc-licensing-courses/real-estate-trading-services-licensing" },
+    },
   nzboat: {
     answer:
       "Day Skipper is Coastguard Boating Education's introductory course for recreational boaties and crew in New Zealand, especially people new to being skipper of their own boat. Its learning outcomes are the parts of a boat and its equipment, basic boat handling, navigational charts, basic tide and weather terms, navigational marks, Maritime Rules and Regulations, emergencies and common marine knots. It runs in a classroom (four weeks including two days in class), a virtual classroom or online self-study within four weeks, and every version ends with an online assessment. Coastguard Boating Education does not publish the number of questions or a pass mark; a learner who falls short gets feedback and a second attempt at the questions they got wrong. The certificate is an internal Coastguard Education certificate, not an NZQA qualification. New Zealand requires no licence to skipper a recreational boat, but skippers must follow the Maritime Rules and regional bylaws.",

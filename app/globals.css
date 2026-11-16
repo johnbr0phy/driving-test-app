@@ -5816,6 +5816,19 @@
     --brand-gradient-to: 100 25% 95%;
   }
   /* Switzerland driving theory theme: deep crimson (Swiss red hues are all taken, so dark and saturated) */
+  [data-theme="nzsecurity"] {
+    --brand: 250 65% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 250 80% 96%;
+    --brand-hover: 250 65% 12%;
+    --brand-dark: 250 65% 11%;
+    --brand-darker: 250 65% 6%;
+    --brand-muted: 250 30% 70%;
+    --brand-border: 250 35% 80%;
+    --brand-border-light: 250 30% 90%;
+    --brand-gradient-to: 263 60% 96%;
+  }
+
   [data-theme="chtheory"] {
     --brand: 357 100% 22%;
     --brand-foreground: 0 0% 100%;
@@ -10789,6 +10802,18 @@
     --brand-dark: 28 25% 65%;
     --brand-darker: 28 25% 78%;
   }
+  .dark [data-theme="nzsecurity"] {
+    --brand: 250 65% 50%;
+    --brand-hover: 250 65% 42%;
+    --brand-light: 250 45% 13%;
+    --brand-gradient-to: 263 40% 11%;
+    --brand-border-light: 250 30% 24%;
+    --brand-border: 250 35% 34%;
+    --brand-muted: 250 30% 45%;
+    --brand-dark: 250 65% 66%;
+    --brand-darker: 250 65% 78%;
+  }
+
   .dark [data-theme="chtheory"] {
     --brand: 357 100% 46.2%;
     --brand-hover: 357 100% 38.2%;

@@ -147,6 +147,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   itpatente: "IT", itcils: "IT", itceli: "IT",
   frcode: "FR",
   nzrealestate: "NZ",
+  nzsecurity: "NZ",
   chtheory: "CH",
   jambeng: "NG", jambmath: "NG", wasscemath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG", wassceeng: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
@@ -203,6 +204,7 @@ export const NON_DRIVING_TESTS = new Set([
   "sgres", "hkiiqe1", "hklesfi1", "hknurse", "nzfirearms", "nzboat", "nzlcq", "aesira", "mypce", "kenck", "aerera",
   "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl",
   "nzrealestate",
+  "nzsecurity",
 ]);
 
 /** Every test not listed above is a US exam. */

@@ -8,6 +8,10 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
   ["nchk", "HK", "hknurse"],
+  ["nz security guard", "NZ", "nzsecurity"],
+  ["pspla certificate of approval", "NZ", "nzsecurity"],
+  ["crowd controller nz", "NZ", "nzsecurity"],
+  ["unit standard 27364", "NZ", "nzsecurity"],
   ["hong kong nursing council", "HK", "hknurse"],
   ["hk nurse licensing exam", "HK", "hknurse"],
   ["hong kong rn exam", "HK", "hknurse"],

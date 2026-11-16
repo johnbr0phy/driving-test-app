@@ -6352,6 +6352,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Deer Alliance HCAP certification procedure, the HCAP Stalker Manual contents and the NPWS deer hunting licence pages, checked November 2026",
     source: { name: "Deer Alliance: HCAP certification", url: "https://www.deeralliance.ie/certification" },
+  },
   hknurse: {
     answer:
       "The Nursing Council of Hong Kong can require nurses trained outside Hong Kong to pass its Licensing Examination before they register as registered nurses (general) under the Nurses Registration Ordinance. It has a written part and a practical part, with no exemption for either, and the written part must be passed first. The Council's Candidates' Handbook (September 2018) describes the written part as 200 marks over one day with a passing mark of 100, and both Paper A (Medical English) and Paper B must be passed. Paper B's multiple-choice marks cover psychology, basic nursing care and system nursing care, then anatomy and physiology, food and nutrition, primary health care, personal and communal health, microbiology, first aid and pharmacology. Tigertest practises those multiple-choice topics only.",

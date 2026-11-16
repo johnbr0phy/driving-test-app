@@ -145,7 +145,6 @@
   "ukplumb": 200,
   "ukg3": 200,
   "ukwater": 200,
-  "ukdsc1": 200,
   "cscs": 200,
   "ukseru": 200,
   "ukfood": 200,
@@ -322,5 +321,9 @@
   "htl": 214,
   "cst": 200,
   "crcst": 200,
-  "iehcap": 200
+  "iehcap": 200,
+  "ukdsc1": 200,
+  "hknurse": 200,
+  "bcrealestate": 200,
+  "aerera": 200
 }

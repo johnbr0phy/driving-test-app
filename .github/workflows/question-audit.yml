@@ -138,6 +138,17 @@ jobs:
           echo "report=${f%.json}.md" >> "$GITHUB_OUTPUT"
           echo "resolutions=audits/resolutions/$(date -u +%F)-${{ github.run_id }}.json" >> "$GITHUB_OUTPUT"
 
+      # Workaround for anthropics/claude-code-action#1901: requests the action marks
+      # as "claude-code-github-action" are refused with "Credit balance is too low"
+      # on plan credit, while the same key works from the plain CLI. This wrapper
+      # runs Claude Code without those markers. Remove it once the action is fixed.
+      - name: Claude Code wrapper (action#1901)
+        run: |
+          [ -x "$HOME/.local/bin/claude" ] || curl -fsSL https://claude.ai/install.sh | bash
+          printf '#!/bin/sh\nunset CLAUDE_CODE_ENTRYPOINT CLAUDE_CODE_ACTION\nexec "%s" "$@"\n' "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
+          chmod +x "$RUNNER_TEMP/claude"
+          "$RUNNER_TEMP/claude" --version
+
       # If Claude Code cannot run, the PR still opens with the report, unfixed.
       - name: Fix findings with Claude Code
         id: fix
@@ -146,6 +157,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          path_to_claude_code_executable: ${{ runner.temp }}/claude
           claude_args: --max-turns 200 --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md, then the question audit at ${{ steps.findings.outputs.report }}
@@ -201,6 +213,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
           claude_args: --max-turns 150 --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
           prompt: |

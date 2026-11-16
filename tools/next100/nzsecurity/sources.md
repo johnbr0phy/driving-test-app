@@ -163,3 +163,14 @@ provider workbooks, sample questions or prep sites.
   the same Act); post-arrest searching (Police and NZSA advice differ); Oranga Tamariki Act and
   Summary Offences Act detail (text not readable); Privacy Act response deadlines; the practical
   role plays of 40147.
+
+## Second review (2026-11-16)
+- legislation.govt.nz (Crimes Act 1961, Trespass Act 1980, Private Security Personnel and Private
+  Investigators Act 2010, whole.html) still returned an empty 202 bot challenge. Re-read instead and
+  confirmed against the bank: NZQA 40145, 40146 and 40147 PDFs (TENR, OODA, AWOCA expansions;
+  stacking/splitting as "change in position to maintain distance/space with multiple subjects";
+  the Crimes Act sections and their topics as 40146 lists them), the NZ Police citizen's arrest
+  page, the Police trespass chapter (s 5 service by registered post; a notice cannot be enforced
+  once the licensee who signed it stops being the occupier), the NZSA guidelines (blue COA
+  supervised duties, induction table, wanding steps) and the PSPLA training and replacements pages
+  (classes are added by an application form).

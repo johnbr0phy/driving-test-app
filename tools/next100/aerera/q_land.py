@@ -1,6 +1,6 @@
 CAT = "aereraLand"; SEG = "LND"
 # Law No. (7) of 2006 (real property registration), Law No. (7) of 2013 (Land Department),
-# Law No. (16) of 2007 (RERA), Regulation No. (3) of 2006. DLD legislation compilation (2014).
+# Law No. (4) of 2019 (RERA), Regulation No. (3) of 2006. DLD legislation compilation (2014).
 Q = [
 ("Which body is the only one authorised to register real property rights in Dubai?",
  "The Land Department", ["RERA, acting as registrar", "Dubai Municipality", "The Chamber of Commerce"],
@@ -38,15 +38,15 @@ Q = [
 ("Which duty does Law No. (7) of 2013 give the Land Department?",
  "Preparing training programmes for brokers", ["Setting bank lending rates for buyers", "Issuing residence visas to investors", "Appointing arbitrators in rent cases"],
  "Article 6 includes preparing real property training programmes to qualify developers, real estate brokers and others working in the market."),
-("Law No. (16) of 2007 created RERA. To which body is RERA affiliated?",
+("Under Law No. (4) of 2019, to which body is RERA affiliated?",
  "The Land Department", ["Dubai Municipality", "The Executive Council", "Dubai Courts"],
- "Article 3 makes RERA a public corporation with its own legal personality, affiliated to the Land Department."),
-("Which function did Law No. (16) of 2007 transfer from the Department to RERA?",
- "Regulating brokerages and brokers", ["Registering title deeds and mortgages", "Issuing trade licences to companies", "Surveying land and issuing maps"],
- "Article 8 transferred the regulation of real estate brokerages and brokers, real estate studies, escrow account management and the supervision of Owners Associations."),
-("Which of these is a stated objective of RERA?",
+ "Article 2 of Law No. (4) of 2019 applies the law to RERA as a public corporation with its own legal personality, affiliated to the Land Department."),
+("What does RERA do for people who carry out real property activities under Law No. (4) of 2019?",
+ "Registers them and issues their ID cards", ["Registers title deeds and mortgages for them", "Issues their trade licences as companies", "Surveys land and issues maps for them"],
+ "Article 5 of Law No. (4) of 2019 has RERA license real property activities, register the people who carry them out, issue their ID cards and investigate complaints."),
+("Which of these is a function of RERA under Law No. (4) of 2019?",
  "Monitoring real estate advertisements", ["Collecting income tax from owners", "Appointing judges for rent claims", "Setting the price of off-plan units"],
- "Article 5 gives RERA the job of monitoring real estate advertisements in all media, along with licensing brokerages, accrediting escrow institutions and supervising Owners Associations."),
+ "Article 5(11) of Law No. (4) of 2019 gives RERA the approval of real estate advertisement content in Dubai, and its monitoring, alongside licensing real property activities and auditing escrow accounts."),
 ("Under Regulation No. (3) of 2006, where may non-UAE nationals acquire freehold ownership?",
  "In the listed areas", ["In any area after five years", "Anywhere with a broker's letter", "Only in free zones"],
  "Article 3 allows freehold, usufruct or leasehold rights only over the plots listed against each named area on the Department's maps."),
@@ -60,6 +60,6 @@ Q = [
  "It extends over the whole merged unit", ["It lapses when the units merge", "It covers only the original unit", "It must be re-signed with a new lender"],
  "Under Article 20, where only one unit is encumbered the right extends to the whole merged unit without the beneficiary's approval."),
 ("A seller fails to honour his undertaking to transfer a property right. What is his liability limited to?",
- "Compensation for the breach", ["Forced transfer through the register", "Loss of the plot to the buyer", "Double the price paid so far"],
+ "Compensation for the breach", ["Forced transfer through the register", "Loss of the plot to the buyer", "Refund of the price with a 10% uplift"],
  "Article 10 limits liability for failing to honour such an undertaking to paying compensation, whether or not the agreement provides for it."),
 ]

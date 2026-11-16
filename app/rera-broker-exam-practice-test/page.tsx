@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "Which laws are the questions based on?",
-    a: "The questions are written from the Dubai Land Department's published legislation and RERA's Real Estate Brokerage Practice Guide (second edition, November 2024): Bylaw No. (85) of 2006, Law No. (7) of 2006, Law No. (16) of 2007, Law No. (8) of 2007, Law No. (26) of 2007 as amended in 2008, Law No. (27) of 2007, Law No. (13) of 2008 as amended in 2009 and Decree No. (26) of 2013. Fees, fines and commission percentages are left out because they change.",
+    a: "The questions are written from the Dubai Land Department's published legislation and RERA's Real Estate Brokerage Practice Guide (second edition, November 2024): Bylaw No. (85) of 2006, Law No. (7) of 2006, Law No. (8) of 2007, Law No. (26) of 2007 as amended in 2008, Law No. (13) of 2008 as amended by Law No. (19) of 2020, Decree No. (26) of 2013, Law No. (6) of 2019 on jointly owned property and Law No. (4) of 2019 on RERA. Fees, fines and commission percentages are left out because they change.",
   },
   {
     q: "Are these the real RERA exam questions?",
@@ -227,7 +227,7 @@ export default function ReraBrokerLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Know who does what</h3>
               <p>
-                The Land Department registers property rights and keeps the broker register. RERA regulates brokers, escrow accounts, advertising and Owners Associations. The Rent Disputes Settlement Centre hears landlord and tenant claims. Many wrong options swap one of these bodies for another.
+                The Land Department registers property rights and keeps the broker register. RERA regulates brokers, escrow accounts, advertising content and the management of jointly owned property. The Rent Disputes Settlement Centre hears landlord and tenant claims. Many wrong options swap one of these bodies for another.
               </p>
             </div>
             <div>

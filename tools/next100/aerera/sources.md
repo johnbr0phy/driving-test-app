@@ -40,6 +40,24 @@ was used or reworded. All sources checked 2026-11-16.
   Fetched 2026-11-16. Matches the compilation; Article 9 was later amended by Law No. (7) of 2019, whose
   changes are not asked.
 
+## Later Dubai laws (read 2026-11-16, Dubai Legislation Portal, dlp.dubai.gov.ae, English text; the Arabic prevails)
+
+- Law No. (6) of 2019 Concerning Ownership of Jointly Owned Real Property in the Emirate of Dubai
+  (https://dlp.dubai.gov.ae/Legislation%20Reference/2019/Law%20No.%20(6)%20of%202019%20Concerning%20Ownership%20of%20Jointly%20Owned%20Real%20Property%20in%20the%20Emirate%20of%20Dubai.html),
+  fetched 2026-11-16. Art. 51 repeals Law No. (27) of 2007; Art. 49 passes Owners Associations' rights to
+  Management Entities. Used for the whole Joint category: Arts. 7, 13, 14, 15, 16, 17, 18, 22, 25, 28, 32, 40.
+- Law No. (19) of 2020 Amending Law No. (13) of 2008 (Interim Real Property Register)
+  (https://dlp.dubai.gov.ae/Legislation%20Reference/2020/Law%20No.%20(19)%20of%202020%20Amending%20Law%20No.%20(13)%20of%202008%20Regulating%20the%20Interim%20Real%20Property%20Register%20in%20the%20Emirate%20of%20Dubai.pdf),
+  fetched 2026-11-16, text read from the PDF. New Art. 11 replaces the 2009 text: over 80% complete the
+  developer may keep the contract and all payments, auction, or terminate keeping up to 40%; 60% to 80%
+  up to 40%; under 60% with work started up to 25%; work not commenced for a reason beyond his control, or
+  a project cancelled by RERA, means a refund of all payments (no 30% retention).
+- Law No. (4) of 2019 Concerning the Real Estate Regulatory Agency
+  (https://dlp.dubai.gov.ae/Legislation%20Reference/2019/Law%20No.%20(4)%20of%202019%20Concerning%20the%20Real%20Estate%20Regulatory%20Agency.html),
+  fetched 2026-11-16. Art. 10 supersedes Law No. (16) of 2007 and moves lease registration to the DLD;
+  Art. 5 gives RERA the audit of jointly owned property accounts, approval of advertisement content and
+  licensing and registration of real property activities.
+
 ## Exam format (not published by the owner)
 
 Neither the DLD nor the Dubai Real Estate Institute (DREI) publishes the broker test's question count, time,
@@ -54,6 +72,7 @@ property laws that training covers.
 
 Fees, commission percentages, fines and penalty amounts; rent increase caps and the RERA rent index (they
 change); the 2-year rent rule of the 2007 text (replaced by Law 33 of 2008); Law 7 of 2019 changes to
-Article 9; the later Dubai Law No. (4) of 2019 and newer circulars (not readable); Ejari procedure details;
-anything about booking or sitting the test. Rules come from the 2014 compilation plus the 2024 guide; a rule
-amended after 2014 and not in these documents is not asked.
+Article 9; newer circulars not read; Ejari procedure details;
+anything about booking or sitting the test. Rules come from the 2014 compilation, the three later laws above (which replace its Law 27/2007
+Joint, Law 16/2007 RERA and Art. 11 of Law 13/2008 texts) and the 2024 guide; a rule amended after
+these and not in them is not asked.

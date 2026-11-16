@@ -7,7 +7,7 @@ assert 24_000_000 * 5 // 100 == 1_200_000
 assert 1_500_000 - 600_000 == 900_000
 assert 2_000_000 * 40 // 100 == 800_000
 assert 1_200_000 * 25 // 100 == 300_000
-assert 500_000 * 30 // 100 == 150_000
+assert 500_000 - 500_000 == 0
 assert 96_000 // 4 == 24_000
 assert 50_000 * 40 // 100 == 20_000
 assert round(1076.4 / 10.764, 2) == 100
@@ -21,22 +21,22 @@ Q = [
  "Multiply the area by the rate: 850 x 12 = 10,200. Dividing gives 70.83."),
 ("A 900 sqft unit sits in a building of 45,000 sqft. Annual service fees for the building are AED 360,000. What is this unit's share by area?",
  "AED 7,200", ["AED 8,000", "AED 400", "AED 72,000"],
- "The unit holds 900/45,000 = 2% of the area, and 2% of 360,000 is 7,200, in line with the area-based share in Law No. (27) of 2007."),
+ "The unit holds 900/45,000 = 2% of the area, and 2% of 360,000 is 7,200, in line with the area-based share in Article 25 of Law No. (6) of 2019."),
 ("An escrow account's total value is AED 24,000,000. How much does the Escrow Agent retain after the completion certificate?",
  "AED 1,200,000", ["AED 120,000", "AED 2,400,000", "AED 4,800,000"],
  "Law No. (8) of 2007 keeps 5% of the account's total value: 24,000,000 x 5% = 1,200,000."),
 ("A unit contract is AED 1,500,000 and the buyer has paid AED 600,000. The project is 85% complete and the buyer stays in default after notice. What balance may the developer claim?",
  "AED 900,000", ["AED 600,000", "AED 1,500,000", "AED 300,000"],
- "At 80% or more complete the developer keeps all payments and claims the balance: 1,500,000 - 600,000 = 900,000."),
+ "Above 80% complete the developer may keep all payments and claims the balance: 1,500,000 - 600,000 = 900,000."),
 ("A unit contract is AED 2,000,000. The project is 62% complete and the developer terminates after default. What is the most he may retain?",
  "AED 800,000", ["AED 500,000", "AED 1,200,000", "AED 600,000"],
- "At 60% or more the cap is 40% of the unit value: 2,000,000 x 40% = 800,000."),
+ "Between 60% and 80% complete the cap is 40% of the unit value: 2,000,000 x 40% = 800,000."),
 ("A unit contract is AED 1,200,000. Construction has started but the project is below 60%. What is the most the developer may retain after default and termination?",
  "AED 300,000", ["AED 480,000", "AED 360,000", "AED 180,000"],
  "Below 60%, once construction has started, the cap is 25% of the unit value: 1,200,000 x 25% = 300,000."),
-("Through no fault of the developer, construction never started. A buyer who paid AED 500,000 defaults after notice. What is the most the developer may retain?",
- "AED 150,000", ["AED 125,000", "AED 200,000", "AED 250,000"],
- "In this case the cap is 30% of the payments made: 500,000 x 30% = 150,000."),
+("Through no fault of the developer, work on the project never started for a reason beyond his control. A buyer has paid AED 500,000. What may the developer retain?",
+ "Nothing, he refunds AED 500,000", ["AED 150,000", "AED 125,000", "AED 200,000"],
+ "Under Article 11(b) of Law No. (13) of 2008, as replaced by Law No. (19) of 2020, all payments are refunded, so the developer retains AED 0. The old 30% rule (AED 150,000) no longer applies."),
 ("A lease has an annual rent of AED 96,000 and no agreed payment dates. How much is each advance instalment?",
  "AED 24,000", ["AED 8,000", "AED 48,000", "AED 32,000"],
  "The default is four equal instalments paid in advance: 96,000 / 4 = 24,000."),

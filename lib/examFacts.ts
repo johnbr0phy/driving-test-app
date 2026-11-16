@@ -6279,4 +6279,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
     source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
   },
+  cacore: {
+    answer:
+      "The CORE (Conservation and Outdoor Recreation Education) exam is the hunter education requirement for a first British Columbia hunting licence. The program is run by the BC Wildlife Federation for the BC government and has a written exam and a practical firearms handling exam. The written exam is 90 multiple-choice questions based on the CORE Manual and the Hunting and Trapping Regulations Synopsis, and you need at least 68 points to pass. The practical test, in which you handle two of the five firearm action types, is passed with 23 out of 30, and holders of a Canadian Firearms Safety Course report are exempt from it.",
+    rows: [
+      { label: "Run by", value: "BC Wildlife Federation, for the BC government" },
+      { label: "Written exam", value: "90 multiple-choice questions" },
+      { label: "Pass mark", value: "At least 68 points (about 76%)" },
+      { label: "Practical firearms test", value: "23 out of 30; a CFSC report is exempt" },
+      { label: "Topics", value: "Conservation, ethics, law and regulations, first aid and survival, firearm safety, animal and bird identification, Indigenous peoples and hunting in BC" },
+      { label: "Study from", value: "CORE Manual and the Hunting & Trapping Regulations Synopsis" },
+      { label: "How to take it", value: "In-person course or exam with a certified CORE examiner, or the BCWF online course" },
+    ],
+    basedOn: "the BC Wildlife Federation CORE program page, checked November 2026",
+    source: { name: "BC Wildlife Federation: CORE", url: "https://www.bcwf.bc.ca/core/" },
+  },
 };

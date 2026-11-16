@@ -9,6 +9,7 @@ import { teachPathFor } from "@/lib/teachPages";
 // page's FAQPage graph; keep the two in step.
 
 export const TEACHES: Record<string, string> = {
+  cacore: "a CORE hunter education course",
   nzboat: "a Day Skipper or boating safety course",
   cehrs: "an electronic health records specialist program",
   cpcta: "a patient care technician program",

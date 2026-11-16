@@ -5802,6 +5802,19 @@
     --brand-border-light: 148 25% 88%;
     --brand-gradient-to: 150 70% 95%;
   }
+  /* Ontario Hunter Education theme: deep russet brown */
+  [data-theme="cahunteron"] {
+    --brand: 21 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 21 50% 95%;
+    --brand-hover: 21 85% 16%;
+    --brand-dark: 21 85% 15%;
+    --brand-darker: 21 75% 10%;
+    --brand-muted: 21 25% 70%;
+    --brand-border: 21 30% 78%;
+    --brand-border-light: 21 25% 88%;
+    --brand-gradient-to: 30 40% 95%;
+  }
   /* Dubai RERA real estate broker exam theme: deep leaf green (the only free hue under the clash rule) */
   [data-theme="aerera"] {
     --brand: 94 60% 26%;
@@ -10830,6 +10843,17 @@
     --brand-muted: 148 25% 45%;
     --brand-dark: 148 90% 65%;
     --brand-darker: 148 85% 78%;
+  }
+  .dark [data-theme="cahunteron"] {
+    --brand: 21 85% 42%;
+    --brand-hover: 21 85% 34%;
+    --brand-light: 21 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 21 25% 24%;
+    --brand-border: 21 30% 34%;
+    --brand-muted: 21 25% 45%;
+    --brand-dark: 21 85% 65%;
+    --brand-darker: 21 75% 78%;
   }
   .dark [data-theme="aerera"] {
     --brand: 94 60% 32%;

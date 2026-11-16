@@ -6458,6 +6458,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The Council's Candidates' Handbook for Nursing Council Licensing Examinations (September 2018) and its 2025 RN(G) syllabus, checked November 2026",
     source: { name: "Nursing Council of Hong Kong: Candidates' Handbook", url: "https://www.nchk.org.hk/filemanager/en/pdf/Candidates_Handbook_for_Nursing_Council_Licensing_Exam_eng.pdf" },
   },
+  cahunteron: {
+    answer:
+      "The Ontario Hunter Education Course exam is the test most Ontario residents must pass before they can buy hunting licences and tags or join the Hunter Apprenticeship Safety Program. The course, run by the Ontario Hunter Education Program for the Ministry of Natural Resources, is taken in person with a certified instructor or online, and ends with an exam. It covers hunting safety and equipment, hunting laws and regulations, hunter responsibilities, wildlife management, hunting techniques and wildlife identification. The ministry publishes no question count or provincial pass mark: the online course (HUNTERcourse.com) requires at least 80% on its final exam, and instructor-led exams are set by the course. Passing it and buying licences lets you hunt with a bow; hunting with a gun also needs a PAL, a minor's licence or proof of passing the Canadian Firearms Safety Course.",
+    rows: [
+      { label: "Run by", value: "Ontario Hunter Education Program, for the Ministry of Natural Resources" },
+      { label: "Formats", value: "In person with a certified instructor, or online and self-paced" },
+      { label: "Topics", value: "Safety and equipment, laws, responsibilities, wildlife management, techniques, wildlife identification" },
+      { label: "Pass mark", value: "No provincial pass mark published; the online course's final exam needs at least 80%, and instructor-led exams are set by the course" },
+      { label: "Question count", value: "Not published by the ministry" },
+      { label: "Needed for", value: "Buying Ontario hunting licences and tags, and the apprentice program (ages 12 to 14)" },
+      { label: "After passing", value: "Register accreditation at ServiceOntario, or online from December 10, 2026" },
+      { label: "Gun hunting", value: "Also needs a PAL, minor's licence or CFSC proof" },
+    ],
+    basedOn: "ontario.ca hunter education page, the Ontario Hunter Education Program site, the ministry's delegated online course (HUNTERcourse.com) and the 2026 Ontario Hunting Regulations Summary, checked November 2026",
+    source: { name: "Ontario: Hunter education", url: "https://www.ontario.ca/page/hunter-education" },
+  },
   cacore: {
     answer:
       "The CORE (Conservation and Outdoor Recreation Education) exam is the hunter education requirement for a first British Columbia hunting licence. The program is run by the BC Wildlife Federation for the BC government and has a written exam and a practical firearms handling exam. The written exam is 90 multiple-choice questions based on the CORE Manual and the Hunting and Trapping Regulations Synopsis, and you need at least 68 points to pass. The practical test, in which you handle two of the five firearm action types, is passed with 23 out of 30, and holders of a Canadian Firearms Safety Course report are exempt from it.",

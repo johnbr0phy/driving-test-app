@@ -33,11 +33,27 @@ quizzes, or any commercial prep site or app.
 
 ## Exam format (what could and could not be confirmed)
 
-- Neither ontario.ca nor ohep.net publishes the exam's question count, time limit, pass mark or
-  whether it is open book. A provider listing reports 50 multiple-choice questions, open book;
-  that is a guide figure only and is not used as a fact. The copy says "the ministry does not
-  publish the question count or pass mark" and uses Tigertest's own 80% readiness target
-  ("Tigertest's target"), four practice tests of 50.
+- Neither ontario.ca nor ohep.net publishes the exam's question count, time limit or pass mark
+  for the instructor-led course. A provider listing reports 50 multiple-choice questions, open
+  book; that is a guide figure only and is not used as a fact.
+- HUNTERcourse.com, Official Ontario Hunter Education Course (the online course; the page says
+  it is "a delegated provider for Ontario Ministry of Natural Resources and Forestry" and is
+  approved by the ministry), fetched 2026-11-16: https://www.huntercourse.com/canada/ontario/
+  and FAQs https://www.huntercourse.com/canada/ontario/faqs.aspx
+  The online course has 13 chapters, each with a quiz, and a final exam that must be passed
+  "with a grade of at least 80%"; failed quizzes or exams can be retaken; Certificate of
+  Completion taken to ServiceOntario. The app's 80% line follows this online-course pass mark;
+  the copy says the instructor-led exam's count and pass mark are set by the course and not
+  published by the ministry. The provider's course content was not read for questions.
+- Ontario.ca, Hunter education (updated October 30, 2026), re-fetched 2026-11-16: from
+  December 10, 2026 online submission of hunter accreditation is accepted through the new
+  licensing system (FishHuntON); the licensing system is down December 7 to 9, 2026
+  (https://www.ontario.ca/page/hunting-notices-and-updates). No question depends on the name of
+  the licensing system.
+
+Bank ids for this build (2026-11-16 run): state code `CAHUNTERON`, prefix `CAHON-`, idBase 32900
+(tests and sets 32901-32904). An earlier work-in-progress build of the same questions used
+the prefix CAHUNTON- and block 31500; it never shipped, so no stored progress uses those ids.
 
 ## Law (Ontario e-Laws, official consolidations, downloaded as Word files from ontario.ca)
 
@@ -148,3 +164,15 @@ quizzes, or any commercial prep site or app.
   must carry it.
 - Migratory bird hunting rules (federal), trapping licences and falconry details.
 - Anything about the exam itself.
+
+## Second review (2026-11-16)
+
+Cue found in the first build: the key was the second-longest option in 92 of 200 items (75% in
+field care, 60% in ethics, 58% in tags, 50% in land), because the earlier options-only pass kept
+the key from being longest by adding one padded, longer distractor. Options in 53 items were
+re-lengthened or shortened (no key changed to another fact), and a few stems or options were
+reworded where the key alone shared a word with the stem (TAG-013, RUL-012, RUL-020, LND-003,
+LND-014, WLD-018, WLD-024, EQP-019). After: no length rank holds more than 37.5% of keys in any
+category (all 200: 48/52/54/46 shortest to longest), a stem-word match guess scores 23%, and
+tools/check_answer_patterns.py is clean. The paused branch claude/cahunteron-stem-rewrite (a full
+rewrite of every stem and option) was not used, since its new wording had not been checked.

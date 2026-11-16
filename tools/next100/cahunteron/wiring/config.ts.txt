@@ -1,14 +1,14 @@
 const cahunteron: ExamConfig = {
   id: "cahunteron",
-  stateCode: "CAHUNTON",
-  idBase: 31500,
+  stateCode: "CAHUNTERON",
+  idBase: 32900,
   slug: "/ontario-hunter",
   landingPath: "/ontario-hunter-education-practice-test",
   name: "Ontario Hunter Education Practice Test",
   shortName: "Ontario Hunter Ed",
   examLabel: "Ontario hunter education exam",
   fullName: "Ontario Hunter Education Course exam (Ontario Hunter Education Program)",
-  questionIdPrefix: "CAHUNTON-",
+  questionIdPrefix: "CAHON-",
   icon: "target",
   testCount: 4,
   questionsPerTest: 50,
@@ -32,10 +32,10 @@ const cahunteron: ExamConfig = {
     cahunCare: 5,
   },
   trainingSets: [
-    { setNumber: 1, id: 31501, name: "Licences, Tags & Reporting", categories: ["cahunLicence", "cahunTags"], size: 48, weightLabel: "12 of 50 test questions" },
-    { setNumber: 2, id: 31502, name: "Hunting Rules & Land Access", categories: ["cahunRules", "cahunLand"], size: 52, weightLabel: "13 of 50 test questions" },
-    { setNumber: 3, id: 31503, name: "Firearms, Archery & Ethics", categories: ["cahunEquip", "cahunEthics"], size: 48, weightLabel: "12 of 50 test questions" },
-    { setNumber: 4, id: 31504, name: "Wildlife & Field Care", categories: ["cahunWildlife", "cahunCare"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 1, id: 32901, name: "Licences, Tags & Reporting", categories: ["cahunLicence", "cahunTags"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 32902, name: "Hunting Rules & Land Access", categories: ["cahunRules", "cahunLand"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 32903, name: "Firearms, Archery & Ethics", categories: ["cahunEquip", "cahunEthics"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 32904, name: "Wildlife & Field Care", categories: ["cahunWildlife", "cahunCare"], size: 52, weightLabel: "13 of 50 test questions" },
   ],
   categoryLabels: {
     cahunLicence: "Licences, Outdoors Card & Apprentices",
@@ -64,4 +64,4 @@ const cahunteron: ExamConfig = {
   },
 };
 // Add "cahunteron" to the ExamId union and append cahunteron to EXAMS right after hunter.
-// IDs: tests 31501-31504, sets 31501-31504 (block 31500 assigned for this run).
+// IDs: tests 32901-32904, sets 32901-32904 (block 32900 assigned for this run).

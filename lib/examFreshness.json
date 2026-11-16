@@ -436,6 +436,14 @@
       "what": "NZQA qualification 3111 (NZ Certificate in Real Estate (Salesperson) (Level 4)) version 2 has a last date of assessment of 31 May 2027, and version 3 follows the May 2025 review, which widened the graduate profile to business broking, rural, and commercial and industrial real estate.",
       "action": "Read the version 3 qualification record and REA's qualification page; add any new topics and update the examFacts and landing.",
       "source": "https://www.nzqa.govt.nz/nqfdocs/summaries/2025/may25/revsummay25-12.html"
+    },
+    {
+      "exam": "cahunteron",
+      "date": "2027-01-01",
+      "kind": "law",
+      "what": "O. Reg. 121/26 amendments to O. Reg. 665/98 take effect: digital tags and labels, new tag attachment wording, 15-year-old apprentices in two cases. The FishHuntON licensing system launches December 10, 2026.",
+      "action": "Re-read O. Reg. 665/98 and the 2027 Hunting Regulations Summary; update the tag, licence summary and apprentice items (CAHON-LIC, CAHON-TAG).",
+      "source": "https://www.ontario.ca/laws/regulation/980665"
     }
   ]
 }

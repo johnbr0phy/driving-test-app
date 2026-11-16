@@ -432,5 +432,6 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   nzsecurity: { title: "NZ Security Guard Practice Test", description: "Practise PSPLA licensing, lawful force and arrest, trespass and searching, health and safety, incidents and conflict management in 50-question mock tests." },
   iehcap: { title: "HCAP Practice Test", description: "Practise Irish deer species, deer management, rifle and firearms safety, the Wildlife Acts and carcase handling in 50-question mock tests." },
   smartserve: { title: "Smart Serve Practice Test", description: "Practise Ontario's liquor rules: legal age and ID, standard drinks, signs of intoxication, refusing service and service hours, in 33-question mock tests." },
+  cahunteron: { title: "Ontario Hunter Education Practice Test", description: "200 original questions on Ontario's hunting law, tags, hunter orange, firearm and bow rules, wildlife and field care. Start for free." },
   cacore: { title: "BC CORE Hunter Exam Practice Test", description: "200 original questions on the Wildlife Act, Hunting Regulation, firearm law, migratory bird rules, first aid and Aboriginal rights. Start for free." },
 };

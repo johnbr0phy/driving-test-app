@@ -10,6 +10,7 @@ import { teachPathFor } from "@/lib/teachPages";
 
 export const TEACHES: Record<string, string> = {
   nzboat: "a Day Skipper or boating safety course",
+  cahunteron: "an Ontario hunter education course",
   cehrs: "an electronic health records specialist program",
   cpcta: "a patient care technician program",
   pance: "a PA program's board review course",

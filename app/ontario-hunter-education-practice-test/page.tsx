@@ -16,9 +16,9 @@ import { examOffers } from "@/lib/examSeo";
 const siteUrl = SITE_URL;
 const path = "/ontario-hunter-education-practice-test";
 
-const title = "Ontario Hunter Education Practice Test 2026 - Hunting Exam Questions";
+const title = "Ontario Hunter Education Practice Test 2026 - Free Hunting Exam Questions";
 const metaDescription =
-  "Practice for the Ontario Hunter Education Course exam: 200 original questions on Ontario hunting law, the Outdoors Card, tags, hunter orange, firearm and bow rules, wildlife and field care.";
+  "Free-to-start practice for the Ontario Hunter Education Course exam: 200 original questions on Ontario hunting law, the Outdoors Card, tags, hunter orange, firearm and bow rules, wildlife and field care.";
 const description =
   "Practice for the exam of the Ontario Hunter Education Course, which most residents pass before they can buy Ontario hunting licences and tags: 200 original questions on licences, the Outdoors Card and the apprentice program, tags, party hunting and hunter reporting, hunting hours, hunter orange and prohibited methods, firearm and archery rules, land access and conservation officers, hunter ethics, wildlife identification and management, and field care. Four 50-question practice tests and an explanation on every question, written from the Fish and Wildlife Conservation Act, 1997, the Hunting regulation and the ministry's Hunting Regulations Summary.";
 
@@ -139,12 +139,12 @@ export default function OntarioHunterLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            Ontario Hunter Education Practice Test 2026
+            Free Ontario Hunter Education Practice Test 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/ontario-hunter/dashboard"
             shortName="Ontario Hunter Ed"
-            subtitle="200 questions for the Ontario Hunter Education Course exam: the Outdoors Card, tags, hunter orange, firearm and bow rules, land access, ethics, wildlife and field care, written from Ontario's hunting law. Tuned for mobile. Start for free, no account needed."
+            subtitle="200 questions for the Ontario Hunter Education Course exam: the Outdoors Card, tags, hunter orange, firearm and bow rules, land access, ethics, wildlife and field care, written from Ontario's hunting law. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cahunteron-mobile.png", desktop: "/landing/cahunteron-desktop.png" }}
           />
         </div>

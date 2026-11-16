@@ -1015,6 +1015,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the NASBLA boating education standards",
     source: { name: "NASBLA", url: "https://www.nasbla.org" },
   },
+  cahunteron: {
+    answer:
+      "The Ontario Hunter Education Course exam is the test most Ontario residents must pass before they can buy hunting licences and tags or join the Hunter Apprenticeship Safety Program. The course, run by the Ontario Hunter Education Program for the Ministry of Natural Resources, is taken in person with a certified instructor or online, and ends with an exam. It covers hunting safety and equipment, hunting laws and regulations, hunter responsibilities, wildlife management, hunting techniques and wildlife identification. The ministry does not publish the question count or pass mark. Passing it and buying licences lets you hunt with a bow; hunting with a gun also needs a PAL, a minor's licence or proof of passing the Canadian Firearms Safety Course.",
+    rows: [
+      { label: "Run by", value: "Ontario Hunter Education Program, for the Ministry of Natural Resources" },
+      { label: "Formats", value: "In person with a certified instructor, or online and self-paced" },
+      { label: "Topics", value: "Safety and equipment, laws, responsibilities, wildlife management, techniques, wildlife identification" },
+      { label: "Questions and pass mark", value: "Not published by the ministry; ask your course provider" },
+      { label: "Needed for", value: "Buying Ontario hunting licences and tags, and the apprentice program (ages 12 to 14)" },
+      { label: "After passing", value: "Register accreditation at ServiceOntario, or online from December 10, 2026" },
+      { label: "Gun hunting", value: "Also needs a PAL, minor's licence or CFSC proof" },
+    ],
+    basedOn: "ontario.ca hunter education page, the Ontario Hunter Education Program site and the 2026 Ontario Hunting Regulations Summary, checked November 2026",
+    source: { name: "Ontario: Hunter education", url: "https://www.ontario.ca/page/hunter-education" },
+  },
   hunter: {
     answer:
       "Most state hunter education exams have about 50 multiple-choice questions with 80% to pass, taken online or at the end of a field day. Nearly every state requires hunter education for first-time hunters born after a cutoff date. The certificate is recognized in every US state and Canadian province and does not expire.",

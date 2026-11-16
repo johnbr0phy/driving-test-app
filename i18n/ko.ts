@@ -1236,6 +1236,15 @@ export const ko: TranslationKeys = {
     panceID: "Infectious Diseases",
     panceHeme: "Hematologic",
     panceProf: "Professional Practice",
+    // cahunteron
+    cahunLicence: "Licences, Outdoors Card & Apprentices",
+    cahunTags: "Tags, Party Hunting & Reporting",
+    cahunRules: "Hunting Hours, Hunter Orange & Methods",
+    cahunEquip: "Firearms & Archery Rules",
+    cahunLand: "Land Access & Conservation Officers",
+    cahunEthics: "Hunter Ethics & Responsibilities",
+    cahunWildlife: "Wildlife Identification & Management",
+    cahunCare: "Field Care, Health & Outdoor Safety",
     // nzboat
     nzboatBoat: "The Boat & Its Equipment",
     nzboatHandling: "Boat Handling, Anchoring & Knots",

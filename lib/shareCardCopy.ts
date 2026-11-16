@@ -1,4 +1,5 @@
 export const EXAM_SHARE_COPY: Record<string, { title?: string; description: string }> = {
+  cahunteron: { title: "Ontario Hunter Education Practice Test", description: "200 original questions on Ontario's hunting law, tags, hunter orange, firearm and bow rules, wildlife and field care. Start for free." },
   nzboat: { title: "NZ Day Skipper Practice Test", description: "200 original questions on New Zealand's boating rules, buoys, lights, tides and emergencies for the Coastguard Day Skipper course. Free to start." },
   ea1: { title: "Free Enrolled Agent Part 1 Practice Test", description: "200 original questions on the IRS SEE Part 1 (Individuals) outline and 2025 tax law. Free to start." },
   cpabar: { title: "Free CPA BAR Practice Test", description: "200 original multiple-choice questions on the AICPA's BAR blueprint: business analysis, technical accounting and reporting, and state and local governments. Free to start." },

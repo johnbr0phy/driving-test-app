@@ -75,7 +75,7 @@ ITEMS = [
            "On Windows, the undo command restores an entity that remediate removed. The release command ends network isolation on macOS and does not reverse remediation."),
     single(0, "Live response", 2,
            "The SOC wants to run an internally written PowerShell script during live response without signing it. What must an administrator change first?",
-           ["Allow unsigned scripts", "Turn on tamper protection", "Set full automation level", "Enable selective isolation"],
+           ["Allow unsigned scripts", "Turn on tamper protection", "Enable live response for servers", "Enable custom network indicators"],
            "Live response verifies signatures on PowerShell scripts, so unsigned scripts run only after the live response unsigned script execution setting is turned on in Advanced features. Tamper protection and automation levels do not control this."),
     single(0, "Device timeline", 2,
            "While reviewing a device timeline, an analyst finds three events that show the attack chain and wants to return to them quickly and point them out to colleagues. What should the analyst do?",
@@ -95,6 +95,6 @@ ITEMS = [
            "Deep analysis runs the file in a secure cloud environment and reports its behavior, such as network activity and dropped files. Downloading the file only gets a copy that someone would still have to detonate."),
     single(0, "Automatic attack disruption", 2,
            "Automatic attack disruption contained a business-critical device during a ransomware incident. The analyst has confirmed remediation is in place. What should the analyst do next?",
-           ["Release the device", "Delete the incident", "Disable attack disruption", "Reimage every contained device"],
+           ["Release the device", "Offboard and re-onboard it", "Restrict app execution on it", "Exclude it from disruption"],
            "Attack disruption leaves the SOC in control of bringing assets back online, so once remediation is confirmed the analyst releases the device. Turning off attack disruption would remove protection for future incidents."),
 ]

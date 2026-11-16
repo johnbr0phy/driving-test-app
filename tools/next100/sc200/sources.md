@@ -129,3 +129,10 @@ Microsoft 365 and Purview
 - Labs, case studies and hot-area images.
 - Facts already asked in `az900`, `secplus`, `cysa` and the sibling `sc900` bank (checked by stem
   similarity against all four on 2026-11-16).
+
+## Second review (2026-11-16)
+- Purview DLP alerts set as behaviors by default from October 12, 2026 (built-in alert tuning rule; data in BehaviorInfo and BehaviorEntities): Microsoft 365 message center MC1465771 (https://mc.merill.net/message/MC1465771). T1-050 rewritten.
+- Defender for Cloud Apps anomaly policies moved to the dynamic model from June 2025; Suspicious inbox forwarding and Unusual ISP for an OAuth app were disabled and renamed: https://learn.microsoft.com/en-us/defender-cloud-apps/anomaly-detection-policy (also confirms the 7-day impossible travel learning period). T2-050 and D-022 reworded.
+- ZAP 48-hour window and Teams group chat exclusions: https://learn.microsoft.com/en-us/defender-office-365/zero-hour-auto-purge
+- HR automation caveat and Standard discovery for Contain device: https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption
+- KQL job limits (30-minute start delay, 5 concurrent jobs rejected not queued, 1-hour timeout with partial results, unsupported operators, _KQL_CL suffix, 15-minute lake latency): https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs

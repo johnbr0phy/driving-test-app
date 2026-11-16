@@ -54,7 +54,7 @@ ITEMS = [
     # ---------------- Drill only ----------------
     single(0, "Data collection rules", 2,
            "An MSSP must deploy the same Windows event filtering to dozens of customer machines in different resource groups. What makes data collection rules suited to this?",
-           ["They are reusable across machines", "They are stored in each VM's registry", "They apply per Log Analytics table", "They require one rule per machine"],
+           ["They are reusable across machines", "They are scoped to one resource group", "They need one workspace per customer", "They apply only to Azure VMs"],
            "Data collection rules are independent of the workspace and the VM, so one rule can be defined once and associated with many machines, and they can be created through the API at scale."),
     single(0, "Data collection rules", 2,
            "An engineer writes an XPath filter for a Windows data collection rule. How can they check that the query is valid before saving it?",
@@ -90,10 +90,10 @@ ITEMS = [
            "Custom log tables end in _CL. The _KQL_CL suffix marks tables that KQL jobs create, and _SRCH marks search job results."),
     single(0, "Transformations", 2,
            "Fabrikam must remove a column holding personal data from incoming events before they are stored, to meet a privacy rule. Where should this be done?",
-           ["An ingestion-time transformation", "A query inside the analytics rule that reads it", "A workbook parameter", "A KQL job on the data lake"],
+           ["An ingestion-time transformation", "Table-level RBAC on the column", "A data export rule", "A KQL job on the data lake"],
            "A transformation in the data collection rule runs at ingestion, so it can drop or mask columns before data is stored. Queries after ingestion cannot remove data already written."),
     single(0, "Azure activity logs", 2,
            "An engineer wants diagnostic logs from an Azure Key Vault sent to Microsoft Sentinel. What should be configured on the Key Vault?",
-           ["A diagnostic setting to the workspace", "The Azure Monitor Agent on the vault itself", "A Windows Event Collector", "A TAXII collection"],
+           ["A diagnostic setting to the workspace", "The Azure Monitor Agent on the vault itself", "The Azure Activity connector", "A data collection endpoint"],
            "Azure resource logs are sent by a diagnostic setting on the resource that targets the Log Analytics workspace, and Azure Policy can apply such settings at scale. Agents are only for machines."),
 ]

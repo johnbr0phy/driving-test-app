@@ -56,7 +56,7 @@ ITEMS = [
            ["It needs an add-on license and a policy", "It also covers records from past years", "It is the Audit (Standard) default", "It also applies to service principals"],
            "Ten-year retention needs the per-user 10-Year Audit Log Retention add-on plus a matching retention policy, and it is not retroactive. Records from non-user entities such as service principals are kept for a fixed one year."),
     single(0, "Content search", 2,
-           "In the Microsoft Purview portal, where do content searches now live, and who can see them by default?",
+           "In the Microsoft Purview portal, where does Content search functionality now live?",
            ["A Content Search eDiscovery case", "A separate Content search app", "The Defender XDR incident queue", "The Audit search page in Purview"],
            "All Content Search functionality is now in eDiscovery, in a system-generated case open to the eDiscovery Manager and Administrator role groups by default. Case settings control who else can access those searches."),
     single(0, "Content search", 2,

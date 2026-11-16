@@ -679,7 +679,7 @@
       "Automation rule that closes them, with an expiration date",
       "Playbook that deletes the incidents as they arrive",
       "Disable both analytics rules until the test ends",
-      "Alert tuning rule scoped to all device groups"
+      "Watchlist of tester IPs that the rules never expire"
     ],
     "correct": [
       0
@@ -716,11 +716,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Defender for Cloud Apps raises an impossible travel alert for a user. The analyst confirms that the second address belongs to the company's sanctioned VPN, which is not tagged. What should she do?",
-    "explanation": "An untagged corporate VPN is a false positive: dismiss the alert and add the VPN's IP range to Defender for Cloud Apps with a tag, so future travel through it is trusted. Suspending or marking the user fits only a true positive.",
+    "explanation": "An untagged corporate VPN is a false positive: dismiss the alert and add the VPN's IP range to Defender for Cloud Apps with a corporate tag, so travel through it is trusted. A higher sensitivity suppresses less, excluding the user removes coverage, and marking the user fits only a true positive.",
     "options": [
       "Mark the user as compromised",
-      "Suspend the user right away",
-      "Exclude the user from all policies",
+      "Raise the policy sensitivity to High",
+      "Exclude the user from the policy",
       "Dismiss it and tag the VPN range"
     ],
     "correct": [
@@ -1091,16 +1091,16 @@
     "skill": "Purview alerts in Defender",
     "difficulty": 2,
     "format": "single",
-    "stem": "A Microsoft Purview data loss prevention policy raises an alert when a user shares a file of card numbers outside Contoso. Where can the SOC triage this alert along with alerts from the other Defender workloads?",
-    "explanation": "Purview DLP alerts flow into the Microsoft Defender portal, where they are correlated into incidents with other Defender alerts. The risky users report covers identity risk, not data loss.",
+    "stem": "Since October 12, 2026, a built-in alert tuning rule in Defender XDR sets Microsoft Purview data loss prevention alerts as behaviors, so they no longer reach the incident queue by default. Where can a Contoso analyst still hunt for these DLP signals in Defender XDR?",
+    "explanation": "The built-in Set as behavior rule for Purview DLP alerts keeps them in the BehaviorInfo and BehaviorEntities tables in Advanced Hunting, and in the Purview portal. An admin who wants DLP alerts back in the incident queue can turn the rule off under Alert tuning.",
     "options": [
-      "The Sentinel Content hub",
-      "The Defender XDR incident queue",
-      "The Entra ID risky users report",
-      "The Defender for Cloud Apps app catalog"
+      "The CloudAppEvents and EmailEvents tables",
+      "The AlertInfo and AlertEvidence tables",
+      "The BehaviorInfo and BehaviorEntities tables",
+      "The IdentityInfo and IdentityQueryEvents tables"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -1113,12 +1113,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "ZAP moved a legitimate supplier newsletter to the Junk Email folder for many users. What should the admin do so Microsoft can correct the verdict?",
-    "explanation": "A false positive from ZAP is reported to Microsoft through Submissions, which can also create allow entries. Bypassing filtering with a mail flow rule or turning off ZAP weakens protection for every message.",
+    "explanation": "A false positive from ZAP is reported to Microsoft through Submissions, which sends the message for analysis and can also create allow entries. Moving or releasing copies, or adding an allow entry on its own, fixes this delivery but does not ask Microsoft to correct the verdict.",
     "options": [
       "Report it to Microsoft as good",
-      "Add a mail flow rule to bypass filtering",
-      "Turn off ZAP for phishing",
-      "Release it from quarantine"
+      "Release the messages from quarantine",
+      "Add the sender to the Tenant Allow/Block List",
+      "Move the messages back with Threat Explorer"
     ],
     "correct": [
       0
@@ -1325,10 +1325,10 @@
     "stem": "Automatic attack disruption could contain a hospital's devices that run patient monitoring, which must never be cut off automatically. What is the recommended way to protect them?",
     "explanation": "Defender lets you exclude supported users, devices and IP addresses from automated containment, so critical assets are spared while disruption still protects everything else. Turning the feature off removes protection for the whole tenant.",
     "options": [
-      "Remove Defender for Endpoint from the devices",
+      "Tag them as critical assets in the inventory",
       "Add them as attack disruption exclusions",
-      "Set every device group to full automation",
-      "Turn off attack disruption for the tenant"
+      "Restrict app execution on the devices",
+      "Set their device group to semi automation"
     ],
     "correct": [
       1
@@ -1577,7 +1577,7 @@
     "stem": "An automation rule should run a playbook, but the playbook shows as unavailable in the rule's playbook list. What must be done?",
     "explanation": "Sentinel runs playbooks through its own service account, which needs explicit permissions on the resource group where the playbook lives; playbooks it cannot use appear grayed out. A user's own roles do not give the service account access.",
     "options": [
-      "Grant Sentinel permissions on the playbook's resource group",
+      "Grant Sentinel rights on the playbook's resource group",
       "Recreate the playbook with an alert trigger instead",
       "Move the playbook into the Sentinel workspace",
       "Assign the analyst the Logic App Contributor role"
@@ -1805,16 +1805,16 @@
     "skill": "Multi-stage incidents",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user is compromised in an incident, and the analyst wants to see the paths an attacker could take from that account to critical assets. Which view shows this?",
-    "explanation": "Blast radius analysis in the incident graph, powered by Sentinel graph, shows the vulnerable paths from a compromised entity to critical assets. The activity log and Action center record what was done, not what could happen.",
+    "stem": "A multi-stage incident includes a compromised, non-sensitive Active Directory account. The analyst wants Defender for Identity's view of which sensitive accounts an attacker could reach from it by moving laterally through devices where those accounts sign in. Where should she look?",
+    "explanation": "Defender for Identity maps lateral movement paths: chains of devices and logged-on accounts that lead from a non-sensitive account to sensitive ones, shown on the identity page. Sign-in logs and the Action center show what happened, not where an attacker could go next.",
     "options": [
       "The Action center history",
-      "Blast radius in the incident graph",
-      "The incident activity log",
-      "The timeline of the first alert"
+      "The Defender for Identity health issues page",
+      "Lateral movement paths on the identity page",
+      "The account's Entra ID sign-in logs"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -1890,12 +1890,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Defender for Cloud raises a recurring alert each night when an approved vulnerability scanner VM probes the subscription. The team has confirmed the activity is benign. What should they do?",
-    "explanation": "Suppression rules dismiss alerts that match known benign activity, such as a specific scanner, while other alerts keep flowing. Disabling the plan removes protection for every resource.",
+    "explanation": "Suppression rules dismiss alerts that match known benign activity, such as a specific scanner, while other alerts keep flowing. Exemptions and governance rules apply to recommendations, not alerts, and a plan has no setting that lowers alert severity.",
     "options": [
-      "Delete each alert by hand",
+      "Create a governance rule for the VM",
       "Create a suppression rule",
-      "Move the VM to a new subscription",
-      "Disable the Defender plan"
+      "Lower the plan's alert severity setting",
+      "Exempt the VM from a recommendation"
     ],
     "correct": [
       1
@@ -2158,18 +2158,18 @@
     "skill": "Defender for Cloud Apps",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Defender for Cloud Apps raises a suspicious inbox forwarding alert, and the analyst confirms that an attacker created a rule forwarding all mail outside Fabrikam. Which two actions are recommended? (Choose two.)",
+    "stem": "Defender for Cloud Apps alerts on a suspicious email forwarding rule, and the analyst confirms that an attacker used the account to create a rule forwarding all mail outside Fabrikam. Which two actions are recommended? (Choose two.)",
     "explanation": "For a true positive, suspend the user, reset the password and remove the forwarding rule. Dismissing, tagging the IP or excluding the user fit only a benign case.",
     "options": [
-      "Exclude the user from the policy",
-      "Dismiss the alert as benign",
       "Tag the source IP as corporate",
       "Suspend the user",
-      "Remove the forwarding rule"
+      "Remove the forwarding rule",
+      "Dismiss the alert as benign",
+      "Exclude the user from the policy"
     ],
     "correct": [
-      3,
-      4
+      1,
+      2
     ],
     "select": 2
   },
@@ -2248,10 +2248,10 @@
     "stem": "An MSSP must deploy the same Windows event filtering to dozens of customer machines in different resource groups. What makes data collection rules suited to this?",
     "explanation": "Data collection rules are independent of the workspace and the VM, so one rule can be defined once and associated with many machines, and they can be created through the API at scale.",
     "options": [
-      "They require one rule per machine",
+      "They apply only to Azure VMs",
       "They are reusable across machines",
-      "They are stored in each VM's registry",
-      "They apply per Log Analytics table"
+      "They are scoped to one resource group",
+      "They need one workspace per customer"
     ],
     "correct": [
       1
@@ -2377,12 +2377,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Many atypical travel detections come from Contoso's sanctioned VPN egress addresses. What reduces these false positives in Entra ID Protection?",
-    "explanation": "Adding corporate VPN ranges to named locations in Conditional Access helps ID Protection treat them as known. Dismissing risk in bulk or turning off policies hides real attacks.",
+    "explanation": "Adding corporate VPN ranges to named locations in Conditional Access helps ID Protection treat them as known. Excluding users, loosening the policy or confirming detections one by one hides real attacks.",
     "options": [
-      "Exclude the VPN users from MFA",
-      "Turn off the user risk policy",
+      "Confirm each detection safe as it arrives",
+      "Raise the sign-in risk policy to High only",
       "Add the range to named locations",
-      "Dismiss every risky user each week"
+      "Exclude the VPN users from the sign-in risk policy"
     ],
     "correct": [
       2
@@ -2629,16 +2629,16 @@
     "skill": "OAuth apps",
     "difficulty": 2,
     "format": "single",
-    "stem": "Defender for Cloud Apps alerts that a trusted OAuth app is connecting from an ISP it has never used, and the analyst confirms the activity is not the real app. What is the recommended action?",
-    "explanation": "For a true positive on an unusual ISP for an OAuth app, revoke all the app's access tokens and check whether an attacker can generate new ones. Dismissing or tagging fits only legitimate activity.",
+    "stem": "Defender for Cloud Apps raises OAuth application activity from an unknown ISP for a trusted app, and the analyst confirms the activity is not the real app. What is the recommended action?",
+    "explanation": "For a true positive on OAuth app activity from an unknown ISP (the detection once called Unusual ISP for an OAuth app), revoke all the app's access tokens and check whether an attacker can generate new ones. Dismissing or tagging fits only legitimate activity.",
     "options": [
-      "Revoke the app's access tokens",
       "Tag the ISP as corporate",
       "Dismiss the alert as benign",
-      "Suspend the app's publisher"
+      "Revoke the app's access tokens",
+      "Reset the app owner's password"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -3090,16 +3090,16 @@
     "skill": "Content search",
     "difficulty": 2,
     "format": "single",
-    "stem": "In the Microsoft Purview portal, where do content searches now live, and who can see them by default?",
+    "stem": "In the Microsoft Purview portal, where does Content search functionality now live?",
     "explanation": "All Content Search functionality is now in eDiscovery, in a system-generated case open to the eDiscovery Manager and Administrator role groups by default. Case settings control who else can access those searches.",
     "options": [
-      "A Content Search eDiscovery case",
       "The Defender XDR incident queue",
+      "A Content Search eDiscovery case",
       "The Audit search page in Purview",
       "A separate Content search app"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -3136,9 +3136,9 @@
     "explanation": "Alert grouping in the rule's incident settings can combine alerts into one incident when their entities match, so each account gets one incident. A longer lookback only changes what each run reads, and turning off incident creation hides the activity.",
     "options": [
       "Group alerts by matching entities",
-      "Lengthen the query lookback period",
-      "Lower the rule severity",
-      "Turn off incident creation"
+      "Group all alerts into one incident",
+      "Re-open closed matching incidents",
+      "Lengthen the query lookback"
     ],
     "correct": [
       0
@@ -3290,9 +3290,9 @@
     "explanation": "Contain user applies a policy on all Defender for Endpoint onboarded devices that blocks communication from the user, limiting lateral movement and remote encryption. It is temporary and can be undone.",
     "options": [
       "Blocks the user on onboarded devices",
-      "Resets the user's password",
-      "Wipes the user's mobile device",
-      "Deletes the account from Entra ID now"
+      "Revokes the user's Entra ID sessions",
+      "Forces a password reset at next sign-in",
+      "Disables the account in Active Directory"
     ],
     "correct": [
       0
@@ -3310,10 +3310,10 @@
     "stem": "An analyst opens the Action center and sees several remediation actions on the Pending tab that nobody approved. What happens to a pending action after seven days?",
     "explanation": "Pending actions time out after seven days, and a timed-out action behaves as if it was rejected. Nothing is approved automatically at semi-automation levels.",
     "options": [
-      "It is escalated to Global Admin",
-      "It is approved automatically",
-      "It times out, like a rejection",
-      "It moves to the History tab as done"
+      "It is retried",
+      "It is approved",
+      "It times out",
+      "It is escalated"
     ],
     "correct": [
       2
@@ -3375,8 +3375,8 @@
     "options": [
       "Allow unsigned scripts",
       "Turn on tamper protection",
-      "Enable selective isolation",
-      "Set full automation level"
+      "Enable custom network indicators",
+      "Enable live response for servers"
     ],
     "correct": [
       0
@@ -3436,10 +3436,10 @@
     "stem": "A SOAR team pulls Defender XDR incidents through the API and wants to spot those likely to be disrupted automatically. What should their logic look for?",
     "explanation": "Through the API, the string (attack disruption) is added to the end of the titles of incidents with high confidence that are likely to be automatically disrupted. Severity and owner do not show this.",
     "options": [
-      "An empty assigned-to field",
-      "A severity of informational",
+      "A Defender Experts tag on the incident",
+      "An AttackDisruption classification",
       "(attack disruption) in the title",
-      "A classification of true positive"
+      "A pending automated investigation"
     ],
     "correct": [
       2
@@ -3665,10 +3665,10 @@
     "stem": "Attack disruption disabled an on-premises Active Directory user, but a nightly HR script that re-enables every active employee's account keeps turning it back on. What is the concern?",
     "explanation": "Automation that enforces enabled accounts can reactivate accounts that attack disruption turned off during an attack, so it should be reviewed. Defender for Identity can disable AD accounts through sensors on domain controllers.",
     "options": [
-      "Disruption cannot act on AD accounts",
+      "Disruption reverts the script's change nightly",
       "The script can undo the containment",
-      "Disruption needs the script to approve",
-      "The script disables the MDI sensor"
+      "Disruption skips accounts the script manages",
+      "The script blocks the MDI action account"
     ],
     "correct": [
       1
@@ -4193,10 +4193,10 @@
     "stem": "An analyst bookmarked hunting results and has now confirmed the activity is malicious. What should the analyst do next in Microsoft Sentinel?",
     "explanation": "A bookmark can be promoted to a new incident or added to an existing one, so the evidence moves into the incident workflow. Deleting the query would lose the hunt logic for later use.",
     "options": [
-      "Run a restore on the table",
+      "Export the bookmark to a notebook",
       "Create an incident from the bookmark",
-      "Delete the hunting query",
-      "Turn the bookmark into a watchlist item"
+      "Add the bookmark to a watchlist",
+      "Promote the bookmark to an analytics rule"
     ],
     "correct": [
       1
@@ -4216,8 +4216,8 @@
     "options": [
       "A KQL job on the data lake",
       "An ingestion-time transformation",
-      "A workbook parameter",
-      "A query inside the analytics rule that reads it"
+      "A data export rule",
+      "Table-level RBAC on the column"
     ],
     "correct": [
       1
@@ -4431,9 +4431,9 @@
     "stem": "An engineer wants diagnostic logs from an Azure Key Vault sent to Microsoft Sentinel. What should be configured on the Key Vault?",
     "explanation": "Azure resource logs are sent by a diagnostic setting on the resource that targets the Log Analytics workspace, and Azure Policy can apply such settings at scale. Agents are only for machines.",
     "options": [
-      "A Windows Event Collector",
+      "The Azure Activity connector",
       "The Azure Monitor Agent on the vault itself",
-      "A TAXII collection",
+      "A data collection endpoint",
       "A diagnostic setting to the workspace"
     ],
     "correct": [
@@ -4480,9 +4480,9 @@
     "stem": "Automatic attack disruption contained a business-critical device during a ransomware incident. The analyst has confirmed remediation is in place. What should the analyst do next?",
     "explanation": "Attack disruption leaves the SOC in control of bringing assets back online, so once remediation is confirmed the analyst releases the device. Turning off attack disruption would remove protection for future incidents.",
     "options": [
-      "Delete the incident",
-      "Reimage every contained device",
-      "Disable attack disruption",
+      "Offboard and re-onboard it",
+      "Exclude it from disruption",
+      "Restrict app execution on it",
       "Release the device"
     ],
     "correct": [

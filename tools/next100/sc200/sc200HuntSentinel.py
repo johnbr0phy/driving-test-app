@@ -76,7 +76,7 @@ ITEMS = [
            "Notebooks, through the Microsoft Sentinel extension for Visual Studio Code, run Python and Spark jobs over data lake tables, which suits custom machine learning. Analytics rules and workbooks use KQL and cannot run Python."),
     single(0, "Hunting queries", 2,
            "An analyst bookmarked hunting results and has now confirmed the activity is malicious. What should the analyst do next in Microsoft Sentinel?",
-           ["Create an incident from the bookmark", "Delete the hunting query", "Turn the bookmark into a watchlist item", "Run a restore on the table"],
+           ["Create an incident from the bookmark", "Add the bookmark to a watchlist", "Promote the bookmark to an analytics rule", "Export the bookmark to a notebook"],
            "A bookmark can be promoted to a new incident or added to an existing one, so the evidence moves into the incident workflow. Deleting the query would lose the hunt logic for later use."),
     single(0, "Sentinel MCP server", 2,
            "An analyst building a Security Copilot agent wants it to return a verdict on a suspicious URL by reasoning over the organization's own security data. Which Sentinel MCP capability fits?",

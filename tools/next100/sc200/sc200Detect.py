@@ -84,7 +84,7 @@ ITEMS = [
            "Entity mapping tells Sentinel which query columns are accounts, hosts, IP addresses and other entities, which drives investigation and correlation. Custom details surface extra fields in the alert but do not create entities."),
     single(0, "Alert grouping", 2,
            "A scheduled rule for password spraying opens a separate incident for every run, giving 30 incidents a day for the same account. The team wants one incident per targeted account. What should the engineer change?",
-           ["Group alerts by matching entities", "Lengthen the query lookback period", "Lower the rule severity", "Turn off incident creation"],
+           ["Group alerts by matching entities", "Group all alerts into one incident", "Re-open closed matching incidents", "Lengthen the query lookback"],
            "Alert grouping in the rule's incident settings can combine alerts into one incident when their entities match, so each account gets one incident. A longer lookback only changes what each run reads, and turning off incident creation hides the activity."),
     single(0, "Threat intelligence rule", 2,
            "A SOC enables the Microsoft Threat Intelligence Analytics rule in Microsoft Sentinel. Which data does the rule match against Microsoft indicators?",

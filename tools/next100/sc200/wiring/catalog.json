@@ -1,0 +1,16 @@
+{
+  "blurb": "Microsoft SC-200 Security Operations Analyst, skills measured as of October 21, 2026. Defender XDR and Sentinel automation, Sentinel roles, retention and data connectors, custom detections and analytics rules, incident response in Defender XDR and Defender for Endpoint, Purview Audit and Graph activity logs, and KQL threat hunting.",
+  "org": "Microsoft · Exam SC-200, skills measured as of October 21, 2026",
+  "group": "IT certifications",
+  "groupAfter": "az900",
+  "aliases": ["sc-200", "sc200", "sc 200", "security operations analyst", "microsoft security operations analyst", "security operations analyst associate", "microsoft sentinel exam", "defender xdr exam", "microsoft defender exam", "kql exam", "microsoft soc analyst"],
+  "teacherLed": true,
+  "teaches": "an SC-200 or Microsoft security operations course",
+  "borrowTiger": "secplus",
+  "shareTitle": "Free Microsoft SC-200 Practice Test",
+  "shareDescription": "212 original questions on Defender XDR, Microsoft Sentinel and KQL hunting, weighted to the SC-200 skills measured. Free to start.",
+  "searchTests": [["sc-200", "US", "sc200"], ["sc200", "US", "sc200"], ["security operations analyst", "US", "sc200"]],
+  "related": ["sc900", "cysa", "az900"],
+  "region": "TEST_REGIONS: sc200 is GLOBAL",
+  "premium": "PREMIUM_V2_IDS: add \"sc200\""
+}

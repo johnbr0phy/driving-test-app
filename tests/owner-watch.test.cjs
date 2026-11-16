@@ -45,7 +45,11 @@ test("the digest lists what needs a person and leaves out what the automation ma
       { number: 802, title: "Draft", url: "https://github.com/o/r/pull/802", createdAt: hoursAgo(5), draft: true },
     ],
     jobs: [{ id: "stats", title: "Nightly stats", detail: "It last finished 3 days ago." }],
-    sources: [{ url: "https://dmv.example/handbook", exams: ["dmv"], reason: "Could not read the PDF." }],
+    sources: [
+      { url: "https://dmv.example/handbook", exams: ["dmv"], kind: "person", reason: "Could not read the PDF." },
+      { url: "https://www.eqao.example/x", exams: ["eqao9"], kind: "broken", reason: "HTTP 404" },
+    ],
+    examName: (id) => (id === "eqao9" ? "EQAO Grade 9 Math" : undefined),
     findings: [
       { examId: "cdl", questionId: "CDL-001", verdict: "wrong_key", createdAt: hoursAgo(100) },
       // Raised this morning: the fix run has not had its two days yet.
@@ -62,29 +66,39 @@ test("the digest lists what needs a person and leaves out what the automation ma
   });
   const titles = d.sections.map((s) => s.title);
   assert.deepStrictEqual(titles, [
-    "Jobs that stopped running",
-    "Pull requests waiting for you",
-    "Official pages the triage could not settle",
-    "Audit findings the fix run left open",
-    "Questions students or statistics doubt",
-    "Exam changes due or coming within 30 days",
-    "Yearly reviews due",
+    "Scheduled jobs that stopped",
+    "Pull requests to review",
+    "Source links that no longer load",
+    "Changed pages Claude handed to you",
+    "Questions the audit thinks are wrong",
+    "Questions to double-check",
+    "Real exams changing soon",
+    "Exams due a yearly review",
   ]);
   const text = JSON.stringify(d.sections);
   assert.match(text, /#801/);
   assert.doesNotMatch(text, /#802/);
   assert.match(text, /CDL-001/);
   assert.doesNotMatch(text, /CDL-002/);
-  assert.match(text, /1 student report open/);
+  assert.match(text, /1 student report/);
+  assert.match(text, /EQAO Grade 9 Math/);
+  assert.match(text, /eqao\.example: the page has moved or been removed \(404\)/);
+  assert.match(text, /The marked answer looks wrong/);
   assert.match(text, /ccna/);
-  assert.doesNotMatch(text, /nce|itil/);
-  assert.strictEqual(d.count, 8);
-  assert.strictEqual(d.subject, "Tigertest: 8 things need you");
+  assert.doesNotMatch(text, /\bnce\b|\bitil\b/);
+  // Each section counts its real items: 1 report + 3 flagged questions, 1 exam due.
+  assert.strictEqual(d.count, 11);
+  assert.strictEqual(d.subject, "Tigertest: 11 things need you");
 });
 
 test("links are full URLs on the www host, and text is escaped", () => {
-  const d = buildOwnerDigest({ ...empty, sources: [{ url: "https://a.example/x", exams: ["cdl"], reason: "<b>odd</b> page" }] });
+  const d = buildOwnerDigest({ ...empty, sources: [{ url: "https://a.example/x", exams: ["cdl"], kind: "person", reason: "<b>odd</b> page" }] });
   assert.match(d.html, /href="https:\/\/www\.tigertest\.io\/admin\?tab=questions"/);
   assert.match(d.html, /&lt;b&gt;odd&lt;\/b&gt;/);
+  // A long list is cut, but the count stays true.
+  const many = buildOwnerDigest({ ...empty, sources: Array.from({ length: 12 }, (_, i) => ({ url: `https://s${i}.example/`, exams: ["cdl"], kind: "broken", reason: "fetch failed" })) });
+  assert.strictEqual(many.count, 12);
+  assert.strictEqual(many.sections[0].lines.length, 8);
+  assert.match(many.html, /and 5 more/);
   assert.strictEqual(buildOwnerDigest({ ...empty, prs: null }).footer, "GitHub could not be read, so open pull requests are not listed.");
 });

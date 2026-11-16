@@ -2,7 +2,8 @@
  * Cron: owner digest. Schedule: Mondays 12:10 UTC (vercel.json), after the
  * weekly question audit and that morning's source triage and watchdog.
  *
- * One email to John listing only what needs a person (buildOwnerDigest in
+ * One email to John listing only what needs a person, each section with a
+ * one-line "what to do" (buildOwnerDigest in
  * lib/ownerWatch.ts): jobs that stopped, pull requests the automation did not
  * merge, source pages the triage could not settle, audit findings the fix run
  * left open, old student reports, exam changes due within 30 days and yearly
@@ -13,6 +14,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { CAMPAIGN_REPLY_TO, verifyCronSecret } from "@/lib/cron-email";
 import { buildOwnerDigest } from "@/lib/ownerWatch";
+import { getCatalogEntry } from "@/lib/testCatalog";
 import { readOpenPrs, readWatchdogState } from "@/lib/server/ownerWatch";
 import { buildQuestionHealth } from "@/lib/server/questionHealth";
 import { sendEmail } from "@/lib/resend";
@@ -30,7 +32,14 @@ export async function GET(req: NextRequest) {
     siteUrl: SITE_URL,
     prs,
     jobs: watchdog.problems ?? [],
-    sources: health.sources.map((s) => ({ url: s.url, exams: s.exams, reason: s.triage?.reason ?? (s.changed ? "changed, not triaged yet" : `failing to load: ${s.error ?? "unknown error"}`) })),
+    sources: health.sources.map((s) =>
+      s.triage
+        ? { url: s.url, exams: s.exams, kind: "person" as const, reason: s.triage.reason }
+        : s.changed
+          ? { url: s.url, exams: s.exams, kind: "changed" as const }
+          : { url: s.url, exams: s.exams, kind: "broken" as const, reason: s.error ?? undefined },
+    ),
+    examName: (id) => getCatalogEntry(id)?.name,
     findings: health.findings.map((f) => ({ examId: f.examId, questionId: f.questionId, verdict: f.verdict, createdAt: f.createdAt })),
     openFlags: health.totalFlags,
     reports: health.reports.map((r) => ({ createdAt: r.createdAt })),

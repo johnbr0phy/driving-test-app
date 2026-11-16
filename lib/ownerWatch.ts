@@ -84,6 +84,16 @@ export interface DigestPr {
   draft?: boolean;
 }
 
+export interface DigestSource {
+  url: string;
+  exams: string[];
+  /** broken: the page will not load. changed: it changed and the daily triage
+   *  has not read it yet. person: the triage read it and handed it over. */
+  kind: "broken" | "changed" | "person";
+  /** The triage's reason (person) or the fetch error (broken). */
+  reason?: string;
+}
+
 export interface DigestInput {
   now?: number;
   siteUrl: string;
@@ -91,7 +101,7 @@ export interface DigestInput {
   prs: DigestPr[] | null;
   jobs: JobProblem[];
   /** Changed or broken official pages the triage could not settle. */
-  sources: { url: string; exams: string[]; reason: string }[];
+  sources: DigestSource[];
   /** Audit findings still open (the fix run could not settle them). */
   findings: { examId: string; questionId: string; verdict: string; createdAt: string }[];
   /** Statistical flags not cleared by a review. */
@@ -104,13 +114,30 @@ export interface DigestInput {
   reviewDue: { exam: string; lastChanged: string }[];
   /** Pages the source triage handled alone in the last 7 days. */
   sourcesHandled: number;
+  /** Readable name for an exam id ("eqao9" -> "EQAO Grade 9 Math"). */
+  examName?: (id: string) => string | undefined;
+}
+
+export interface DigestLine {
+  /** What it is, in a few words (bold in the email). */
+  text: string;
+  /** One plain sentence of detail (gray). */
+  detail?: string;
+  href?: string;
+  /** Label for the link; the line itself is never all link. */
+  linkText?: string;
 }
 
 export interface DigestSection {
   title: string;
-  lines: { text: string; href?: string }[];
+  /** One sentence: what to do about the items below. */
+  todo: string;
+  lines: DigestLine[];
+  /** How many things, when lines were cut to MAX_LINES; else lines.length. */
+  total?: number;
   /** Where to act on the whole section. */
   href?: string;
+  hrefText?: string;
 }
 
 export interface OwnerDigest {
@@ -126,10 +153,46 @@ export interface OwnerDigest {
 export const SETTLE_DAYS = 2;
 /** Dated exam changes are listed this many days ahead. */
 export const FRESHNESS_AHEAD_DAYS = 30;
+/** At most this many lines per section; the rest are "and N more". */
+const MAX_LINES = 8;
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
+
+/** A fetch error in plain words. */
+export function fetchErrorWords(error: string | undefined): string {
+  const e = (error ?? "").trim();
+  const code = e.match(/\b(\d{3})\b/)?.[1];
+  if (code === "403" || code === "401") return `the site blocks automated reads (${code})`;
+  if (code === "404" || code === "410") return `the page has moved or been removed (${code})`;
+  if (code && code.startsWith("5")) return `the site's server is failing (${code})`;
+  if (/fetch failed|timeout|timed out|ENOTFOUND|ECONN/i.test(e)) return "the site did not respond";
+  return e || "it will not load";
+}
+
+const VERDICT_WORDS: Record<string, string> = {
+  wrong_key: "the marked answer looks wrong",
+  ambiguous: "more than one answer could be right",
+  outdated: "the rule or figure looks out of date",
+  unclear: "the question is unclear",
+  typo: "there is a typo",
+};
+
+function hostOf(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
+
+function capped(lines: DigestLine[]): { lines: DigestLine[]; total: number } {
+  if (lines.length <= MAX_LINES) return { lines, total: lines.length };
+  return { lines: [...lines.slice(0, MAX_LINES - 1), { text: `and ${lines.length - (MAX_LINES - 1)} more` }], total: lines.length };
+}
+
+const sectionCount = (s: DigestSection) => s.total ?? s.lines.length;
 
 export function buildOwnerDigest(input: DigestInput): OwnerDigest {
   const now = input.now ?? Date.now();
@@ -137,91 +200,159 @@ export function buildOwnerDigest(input: DigestInput): OwnerDigest {
   const sections: DigestSection[] = [];
   const daysOld = (iso: string) => Math.max(0, Math.floor((now - Date.parse(iso)) / DAY));
   const settled = (iso: string) => !iso || now - Date.parse(iso) > SETTLE_DAYS * DAY;
+  const name = (id: string) => input.examName?.(id) || id;
+  const names = (ids: string[]) => (ids.length ? ids.map(name).join(", ") : "Unknown exam");
 
   if (input.jobs.length) {
     sections.push({
-      title: "Jobs that stopped running",
-      lines: input.jobs.map((j) => ({ text: `${j.title}. ${j.detail}` })),
+      title: "Scheduled jobs that stopped",
+      todo: "Something that normally runs on its own has not run. Check the Vercel logs, or ask Claude to look.",
+      lines: input.jobs.map((j) => ({ text: j.title, detail: j.detail })),
     });
   }
 
   const prs = (input.prs ?? []).filter((p) => !p.draft);
   if (prs.length) {
     sections.push({
-      title: "Pull requests waiting for you",
+      title: "Pull requests to review",
+      todo: "These did not merge themselves. Merge or close each one.",
       lines: prs
         .slice()
         .sort((a, b) => a.createdAt.localeCompare(b.createdAt))
-        .map((p) => ({ text: `#${p.number} ${p.title} (open ${plural(daysOld(p.createdAt), "day", "days")})`, href: p.url })),
+        .map((p) => ({ text: `#${p.number} ${p.title}`, detail: daysOld(p.createdAt) === 0 ? "Opened today." : `Open ${plural(daysOld(p.createdAt), "day", "days")}.`, href: p.url, linkText: "Open on GitHub" })),
     });
   }
 
-  if (input.sources.length) {
+  const broken = input.sources.filter((s) => s.kind === "broken");
+  if (broken.length) {
     sections.push({
-      title: "Official pages the triage could not settle",
+      title: "Source links that no longer load",
+      todo: "Each exam checks its official page for changes. These pages fail to load, so swap in a working official URL (ask Claude to do it).",
       href: questionsTab,
-      lines: input.sources.slice(0, 8).map((s) => ({
-        text: `${s.exams.join(", ") || "unknown exam"}: ${s.reason || "not triaged yet"}`,
+      hrefText: "See them in /admin",
+      ...capped(broken.map((s) => ({
+        text: names(s.exams),
+        detail: `${hostOf(s.url)}: ${fetchErrorWords(s.reason)}.`,
         href: s.url,
-      })),
+        linkText: "Try the page",
+      }))),
+    });
+  }
+
+  const person = input.sources.filter((s) => s.kind === "person");
+  if (person.length) {
+    sections.push({
+      title: "Changed pages Claude handed to you",
+      todo: "The daily check read these and could not decide on its own. Read its note, then mark each one reviewed.",
+      href: questionsTab,
+      hrefText: "Review in /admin",
+      ...capped(person.map((s) => ({ text: names(s.exams), detail: s.reason || hostOf(s.url), href: s.url, linkText: "Open the page" }))),
+    });
+  }
+
+  const changed = input.sources.filter((s) => s.kind === "changed");
+  if (changed.length) {
+    sections.push({
+      title: "Changed pages not checked yet",
+      todo: "The daily check normally reads these the same morning. If they are still here next week, it is stuck.",
+      href: questionsTab,
+      hrefText: "See them in /admin",
+      ...capped(changed.map((s) => ({ text: names(s.exams), detail: `${hostOf(s.url)} changed.`, href: s.url, linkText: "Open the page" }))),
     });
   }
 
   const findings = input.findings.filter((f) => settled(f.createdAt));
   if (findings.length) {
     sections.push({
-      title: "Audit findings the fix run left open",
+      title: "Questions the audit thinks are wrong",
+      todo: `The automatic fix left these open for over ${SETTLE_DAYS} days. Mark each one Fixed or Not a problem.`,
       href: questionsTab,
-      lines: findings.slice(0, 8).map((f) => ({ text: `${f.examId} ${f.questionId}: ${f.verdict}` })),
+      hrefText: "Review in /admin",
+      ...capped(findings.map((f) => ({ text: `${name(f.examId)}, ${f.questionId}`, detail: `${(VERDICT_WORDS[f.verdict] ?? f.verdict).replace(/^./, (c) => c.toUpperCase())}.` }))),
     });
   }
 
   const reports = input.reports.filter((r) => settled(r.createdAt));
   if (reports.length || input.openFlags) {
-    const lines: DigestSection["lines"] = [];
-    if (reports.length) lines.push({ text: `${plural(reports.length, "student report", "student reports")} open for more than ${SETTLE_DAYS} days` });
-    if (input.openFlags) lines.push({ text: `${plural(input.openFlags, "question", "questions")} flagged by answer statistics and not cleared by the audit` });
-    sections.push({ title: "Questions students or statistics doubt", href: questionsTab, lines });
+    const lines: DigestLine[] = [];
+    if (reports.length) lines.push({ text: plural(reports.length, "student report", "student reports"), detail: `Open for more than ${SETTLE_DAYS} days.` });
+    if (input.openFlags) lines.push({ text: plural(input.openFlags, "question", "questions"), detail: "Flagged by how students answer, and the audit could not clear them." });
+    sections.push({ title: "Questions to double-check", todo: "Look at each one and decide whether the answer key is right.", href: questionsTab, hrefText: "Review in /admin", lines, total: reports.length + input.openFlags });
   }
 
   const ahead = new Date(now + FRESHNESS_AHEAD_DAYS * DAY).toISOString().slice(0, 10);
   const changes = input.freshness.filter((e) => e.state !== "done" && e.date <= ahead);
   if (changes.length) {
     sections.push({
-      title: "Exam changes due or coming within 30 days",
+      title: "Real exams changing soon",
+      todo: `These exams change within ${FRESHNESS_AHEAD_DAYS} days (or already have). Update the question bank before or on the date.`,
       href: questionsTab,
-      lines: changes.map((e) => ({ text: `${e.exam}, ${e.date}: ${e.what}` })),
+      hrefText: "See them in /admin",
+      lines: changes.map((e) => ({ text: `${name(e.exam)}, ${e.date}`, detail: e.what })),
     });
   }
 
   if (input.reviewDue.length) {
-    const first = input.reviewDue.slice(0, 5).map((r) => r.exam).join(", ");
+    const first = input.reviewDue.slice(0, 5).map((r) => name(r.exam)).join(", ");
     sections.push({
-      title: "Yearly reviews due",
+      title: "Exams due a yearly review",
+      todo: "Each bank should be re-checked against its official outline once a year.",
       href: questionsTab,
-      lines: [{ text: `${plural(input.reviewDue.length, "exam", "exams")} last changed over a year ago, oldest first: ${first}` }],
+      hrefText: "See them in /admin",
+      lines: [{ text: plural(input.reviewDue.length, "exam", "exams"), detail: `Oldest first: ${first}.` }],
+      total: input.reviewDue.length,
     });
   }
 
-  const count = sections.reduce((n, s) => n + s.lines.length, 0);
+  const count = sections.reduce((n, s) => n + sectionCount(s), 0);
   const subject = count === 0 ? "Tigertest: nothing needs you this week" : `Tigertest: ${plural(count, "thing needs", "things need")} you`;
   const footerParts: string[] = [];
   if (input.sourcesHandled) footerParts.push(`${plural(input.sourcesHandled, "changed source page", "changed source pages")} handled without you in the last 7 days`);
   if (input.prs === null) footerParts.push("GitHub could not be read, so open pull requests are not listed");
   const footer = footerParts.length ? `${footerParts.join(". ")}.` : "";
 
-  const body = count === 0
-    ? `<p>Nothing needs you this week. The audits, source triage and nightly jobs all ran.</p>`
-    : sections
-        .map((s) => {
-          const items = s.lines
-            .map((l) => `<li>${l.href ? `<a href="${esc(l.href)}">${esc(l.text)}</a>` : esc(l.text)}</li>`)
-            .join("");
-          const where = s.href ? ` <a href="${esc(s.href)}">Open</a>` : "";
-          return `<p><strong>${esc(s.title)}</strong>${where}</p><ul>${items}</ul>`;
+  return { count, subject, sections, footer, html: renderDigest(sections, footer, count) };
+}
+
+// Email HTML: inline styles only, one column, readable on a phone. Only the
+// small "Open ..." links are links, never a whole line.
+const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
+const C = { text: "#111827", muted: "#6b7280", line: "#e5e7eb", link: "#2563eb", card: "#f9fafb" };
+
+function renderDigest(sections: DigestSection[], footer: string, count: number): string {
+  const wrap = (inner: string) =>
+    `<div style="font-family:${FONT};font-size:16px;line-height:1.5;color:${C.text};max-width:560px;margin:0 auto;padding:8px 4px">${inner}</div>`;
+  const foot = footer ? `<p style="margin:24px 0 0;font-size:14px;color:${C.muted}">${esc(footer)}</p>` : "";
+  if (count === 0) {
+    return wrap(`<p style="margin:0">Nothing needs you this week. The audits, source checks and nightly jobs all ran.</p>${foot}`);
+  }
+
+  const summary = sections
+    .map((s) => `<li style="margin:2px 0">${esc(s.title)}: <strong>${sectionCount(s)}</strong></li>`)
+    .join("");
+  const intro = `<p style="margin:0 0 4px">This week, ${plural(count, "thing needs", "things need")} you:</p><ul style="margin:0 0 8px;padding-left:20px">${summary}</ul>`;
+
+  const link = (href: string, text: string) =>
+    `<a href="${esc(href)}" style="color:${C.link};text-decoration:none;font-size:14px;white-space:nowrap">${esc(text)} &rarr;</a>`;
+
+  const body = sections
+    .map((s) => {
+      const items = s.lines
+        .map((l) => {
+          const detail = l.detail ? `<div style="color:${C.muted};font-size:14px">${esc(l.detail)}</div>` : "";
+          const a = l.href ? `<div style="margin-top:2px">${link(l.href, l.linkText || "Open")}</div>` : "";
+          return `<div style="padding:10px 0;border-top:1px solid ${C.line}"><div style="font-weight:600">${esc(l.text)}</div>${detail}${a}</div>`;
         })
         .join("");
-  const html = `${body}${footer ? `<p style="color:#666">${esc(footer)}</p>` : ""}`;
+      const where = s.href ? `<div style="padding-top:10px;border-top:1px solid ${C.line}">${link(s.href, s.hrefText || "Open")}</div>` : "";
+      return (
+        `<div style="margin-top:20px;padding:14px 16px;background:${C.card};border:1px solid ${C.line};border-radius:10px">` +
+        `<div style="font-size:18px;font-weight:700">${esc(s.title)} <span style="color:${C.muted};font-weight:400">(${sectionCount(s)})</span></div>` +
+        `<div style="color:${C.muted};font-size:14px;margin:4px 0 6px">${esc(s.todo)}</div>` +
+        `${items}${where}</div>`
+      );
+    })
+    .join("");
 
-  return { count, subject, sections, footer, html };
+  return wrap(`${intro}${body}${foot}`);
 }

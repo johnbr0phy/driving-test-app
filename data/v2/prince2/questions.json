@@ -411,7 +411,7 @@
     "options": [
       "The person who carries out an agreed action in response to a risk",
       "The person assigned to take responsibility for responding to a risk",
-      "The project board member whose budget the risk affects",
+      "The project board member whose budget or area of concern the risk affects",
       "The person who first identified the risk and recorded it"
     ],
     "correct": [
@@ -2067,18 +2067,18 @@
     "domain": "p2Principles",
     "difficulty": 2,
     "format": "single",
-    "skill": "Tailoring documented",
-    "stem": "Where are the tailoring decisions for a PRINCE2 project documented?",
+    "skill": "How the method is applied",
+    "stem": "Initiating a project ensures a common understanding of how the project applies business policies, methods and guidance. Which management product brings this initiation information together to gain authorization for the project?",
     "options": [
-      "In the lessons log",
-      "In the communication management approach",
-      "In the project initiation documentation",
-      "In the daily log"
+      "The daily log",
+      "The lessons log",
+      "The communication management approach",
+      "The project initiation documentation"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "Tailoring decisions are recorded in the project initiation documentation, so everyone working on the project knows how the method is being applied. Logs are informal records kept by the project manager."
+    "explanation": "The project initiation documentation (PID) aggregates the management products created or updated during initiation, including how the project applies business policies, methods and guidance, and is used to gain authorization for the project to proceed. Logs are informal records kept by the project manager."
   },
   {
     "id": "PRINCE2-T2-040",
@@ -3946,18 +3946,18 @@
     "domain": "p2Progress",
     "difficulty": 2,
     "format": "single",
-    "skill": "Lessons report",
-    "stem": "What is the main use of a lessons report?",
+    "skill": "Lesson",
+    "stem": "In PRINCE2, what is a lesson?",
     "options": [
-      "To list the quality checks carried out in a stage",
-      "To request the project board's approval to close the project",
-      "To record minor problems that need no formal action",
-      "To pass on lessons that can help this or other projects"
+      "A request to the project board for its approval to close the project at the end",
+      "A minor problem or concern that the project manager handles informally in the daily log",
+      "A quality check carried out on a specialist product during a stage of the project",
+      "Information that helps this or other projects and promotes learning"
     ],
     "correct": [
       3
     ],
-    "explanation": "A lessons report passes on lessons that can be applied to this or future projects, supporting the learn from experience principle. The lessons log is where they are collected informally."
+    "explanation": "A lesson is information to facilitate the future of the project or other projects and actively promote learning from experience. The experience may be positive or negative. Lessons are kept informally in the lessons log."
   },
   {
     "id": "PRINCE2-D-069",
@@ -4096,9 +4096,9 @@
     "skill": "Risk tolerance",
     "stem": "What is risk tolerance?",
     "options": [
-      "The chance that a risk will occur during a stage",
+      "The chance that a given risk will occur at some point during the current stage",
       "The amount and type of risk the business is willing to take overall",
-      "The time between a risk occurring and its effect",
+      "The length of time between a risk occurring and its effect being felt",
       "A measurable threshold for the tolerable range of outcomes per objective"
     ],
     "correct": [

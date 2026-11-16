@@ -276,6 +276,9 @@ const CASES = [
   ["en state final", "NZ", "nzensf"],
   ["enrolled nurse exam nz", "NZ", "nzensf"],
   ["diploma in enrolled nursing", "NZ", "nzensf"],
+  ["dsc1", "UK", "ukdsc1"],
+  ["deer stalking certificate", "UK", "ukdsc1"],
+  ["dsc level 1", "UK", "ukdsc1"],
 ];
 
 for (const [q, region, id] of CASES) {

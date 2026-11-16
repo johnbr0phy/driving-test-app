@@ -1078,6 +1078,20 @@
     --brand-gradient-to: 272 20% 95%;
   }
 
+  /* DSC1 theme: deep stalking green */
+  [data-theme="ukdsc1"] {
+    --brand: 118 85% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 118 85% 95%;
+    --brand-hover: 118 85% 15%;
+    --brand-dark: 118 85% 12%;
+    --brand-darker: 118 85% 9%;
+    --brand-muted: 118 85% 65%;
+    --brand-border: 118 85% 74%;
+    --brand-border-light: 118 85% 88%;
+    --brand-gradient-to: 130 85% 95%;
+  }
+
   /* Water Regulations theme: river teal */
   [data-theme="ukwater"] {
     --brand: 155 40% 22%;
@@ -6595,6 +6609,18 @@
     --brand-darker: 50 70% 78%;
   }
 
+
+  .dark [data-theme="ukdsc1"] {
+    --brand: 118 85% 28.8%;
+    --brand-hover: 118 85% 20.8%;
+    --brand-light: 118 45% 13%;
+    --brand-gradient-to: 130 40% 11%;
+    --brand-border-light: 118 35% 24%;
+    --brand-border: 118 40% 34%;
+    --brand-muted: 118 45% 45%;
+    --brand-dark: 118 85% 65%;
+    --brand-darker: 118 85% 78%;
+  }
 
   .dark [data-theme="ukwater"] {
     --brand: 155 40% 36.5%;

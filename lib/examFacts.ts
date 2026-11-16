@@ -1402,6 +1402,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the SIA door supervision specifications (April 2021) and an awarding body's published exam structure, checked October 2026",
     source: { name: "GOV.UK: SIA licence-linked training specifications", url: "https://www.gov.uk/guidance/read-the-specifications-for-sia-licence-linked-training" },
   },
+  ukdsc1: {
+    answer:
+      "The Deer Stalking Certificate Level 1 (DSC1) is the entry qualification for stalking wild deer in Britain, run by Deer Management Qualifications (DMQ). The written assessment is 50 multiple-choice questions and you need 40 correct (80%). There is a separate 40-question large game hygiene paper, 32 correct to pass, and a practical rifle shooting test on a range and in the field.",
+    rows: [
+      { label: "Who runs it", value: "Deer Management Qualifications (DMQ), with the British Deer Society and Deer Initiative" },
+      { label: "Written paper", value: "50 multiple-choice questions, 40 correct to pass (80%)" },
+      { label: "Hygiene paper", value: "40 questions, 32 correct to pass" },
+      { label: "Law covered", value: "Deer Act 1991 (England and Wales), Deer (Scotland) Act 1996" },
+      { label: "Also assessed", value: "Rifle shooting test and a field assessment" },
+      { label: "Scotland", value: "No close season for male deer since October 2023" },
+    ],
+    basedOn: "DMQ's Deer Stalking Certificate Level 1 page, the Deer Act 1991, the Deer (Scotland) Act 1996 and the FSA wild game guidance, checked November 2026",
+    source: { name: "Deer Management Qualifications: Deer Stalking Certificate Level 1", url: "https://dmq.org.uk/qualifications/deer-stalking-qualification-1/" },
+  },
   ukwater: {
     answer:
       "The Water Regulations certificate shows a plumber knows the Water Supply (Water Fittings) Regulations 1999 in England and Wales, and the matching Scottish Byelaws 2014 and Northern Ireland 2009 Regulations: what must be notified to the water company, the five fluid categories, which backflow device or air gap suits each, and the Schedule 2 rules for pipework, cisterns, hot water, WCs and taps. Awarding bodies such as City & Guilds and BPEC run it as an open-book multiple-choice test after a short course, and it is the usual evidence for joining an approved contractors' scheme.",

@@ -259,6 +259,7 @@ export const TEACHES: Record<string, string> = {
   ukplumb: "a plumbing course",
   ukg3: "an unvented hot water (G3) course",
   ukwater: "a Water Regulations course",
+  ukdsc1: "a deer stalking course",
   capal: "the Canadian Firearms Safety Course",
   caelec: "an electrical apprenticeship program",
   caauto: "an automotive service technician apprenticeship class",

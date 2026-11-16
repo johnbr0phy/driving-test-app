@@ -468,7 +468,7 @@ const EXAM_BLURBS: Record<string, string> = {
   kenck: "Practice for the Nursing Council of Kenya licensure exam (KRCHN, BScN, KRN/M): fundamentals, med-surg with malaria, TB and HIV, midwifery and newborn care, IMCI, community health and Kenyan nursing law, with drug calculations.",
   iedttcv: "Ireland's truck and bus Driver Theory Test (categories C and D): EU drivers' hours, tachographs, air brakes and coupling, loads, passengers and heavy vehicle speed limits, in four 50-question tests with the real 74% pass line.",
   trcnpqe: "Three full-length mock exams for the TRCN Professional Qualifying Examination that Nigerian teachers take to register: pedagogy, literacy, numeracy, ICT and safeguarding, 12 questions from each area, on the TRCN PQE curriculum guide.",
-  cacore: "BC CORE hunter exam, required for a first British Columbia hunting licence: the Wildlife Act and Hunting Regulation, weapon and method rules, firearm safety, storage and transport, ethics, conservation, first aid and survival, animal and bird identification, and Indigenous peoples and hunting in BC, in four 50-question tests.",
+  cacore: "BC CORE hunter exam, required for a first British Columbia hunting licence: the Wildlife Act and Hunting Regulation, weapon and method rules, firearm law, storage and transport, migratory bird rules, first aid and Aboriginal rights, in four 50-question tests.",
 };
 
 // Short issuing-body line for menus; defaults to the exam label.

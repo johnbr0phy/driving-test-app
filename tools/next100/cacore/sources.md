@@ -1,59 +1,51 @@
 # Sources: BC CORE hunter exam (`cacore`)
 
-Every question is original, written from the rules below. No CORE Manual text, official sample or practice
-question, or commercial prep material was read or used. All checked 16 November 2026.
+Every question is original and rests on an official or primary page that was actually read. No CORE Manual text,
+official sample or practice question, or commercial prep material was read or used. All fetched 2026-11-16.
 
 ## Format of the real exam
-- BC Wildlife Federation (BCWF), "CORE" program page (the program is run by the BCWF for the Ministry of Water,
-  Land and Resource Stewardship):
+- BC Wildlife Federation (BCWF), "CORE" program page (run by the BCWF for the BC government):
   https://www.bcwf.bc.ca/core/
-  fetched 2026-11-16. Written exam: 90 multiple-choice questions based on the CORE Manual and the Hunting and
-  Trapping Regulations Synopsis, 68 points to pass, supplemental manual material not tested, a failed exam is
-  retaken on a different day. Practical firearms handling exam: handle two of the five action types, 23 of 30
-  to pass; a Canadian Firearms Safety Course report exempts the practical. Topics: Conservation, Ethics, Law and
-  Regulations, First Aid and Survival, Firearm Safety, Animal Identification, Bird Identification, Indigenous
-  Peoples and Hunting in BC. Study options: certified examiner course, the BCWF online course, self-study.
-  The BCWF page says 68 of 90 (about 76%), which supersedes older figures quoted by instructors (60 points,
-  75% each). The bank uses 76% as the practice pass line.
-- BCWF "CORE Program" page, older address: https://bcwf.net/index.php/programs/core?id=87 (returned an empty page).
+  Written exam: 90 multiple-choice questions based on the CORE Manual and the Hunting and Trapping Regulations
+  Synopsis, 68 points to pass (about 76%), supplemental manual material not tested, a failed exam is retaken on a
+  different day. Practical firearms handling exam: two of five action types, 23 of 30 to pass; a Canadian Firearms
+  Safety Course report exempts the practical. Listed topics: Conservation, Ethics, Law and Regulations, First Aid
+  and Survival, Firearm Safety, Animal Identification, Bird Identification, Indigenous Peoples and Hunting in BC.
 
 ## Law (primary text)
-- Wildlife Act, RSBC 1996, c. 488 (BC Laws, complete text, read to about section 76):
+- Wildlife Act, RSBC 1996, c. 488 (BC Laws, read to about section 76; later sections were past the fetch limit):
   https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96488_01
-  fetched 2026-11-16. Used: licence to hunt (s. 11), open season, prohibited hours, light or illuminating device and
-  sanctuaries (s. 26), motor vehicle (s. 27), dangerous hunting (s. 28), swimming big game (s. 30), highways (s. 31),
-  no shooting areas (s. 32), possession (s. 33), feeding dangerous wildlife (s. 33.1), retrieval and edible meat
-  (s. 35), parts left attached (s. 36), information to officers (s. 38), cultivated land (s. 39), accidental
-  killing report (s. 75), trafficking (s. 22), licence prohibitions (s. 24), under-18 supervision (s. 11 and 17.1).
-  Sections 78 onward were beyond the 100,000 characters the fetch returned and are not used.
-- Hunting Regulation, B.C. Reg. 190/84 (current to 10 November 2026):
+  Used: ss. 11, 22, 24, 26, 27, 28, 30, 31, 32, 33, 33.1, 35, 36, 38, 39, 56, 75.
+- Hunting Regulation, B.C. Reg. 190/84:
   https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/190_84_01
-  fetched 2026-11-16. Used: prohibited hours (s. 14), weapons and ammunition (s. 17), methods, baiting, calls,
-  optics, drones, bows and crossbows, dogs (s. 17 to 18), parts attached to carcasses and antlers (s. 15 and 15.1),
-  protected wildlife (s. 13.7), mandatory inspection (not asked). No bag limits, season dates or fees are asked.
+  Used: prohibited hours, weapons and ammunition, bows and crossbows, baiting, calls, optics, drones, dogs, parts
+  that stay on carcasses, protected wildlife (young, cubs, kittens). No bag limits, season dates or fees.
+- Wildlife Act General Regulation, B.C. Reg. 340/82:
+  https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/340_82
+  Used: minimum hunting age, photo identification, showing a licence, transporting wildlife, records of receipt.
+- Firearms Act, S.C. 1995, c. 39:
+  https://laws-lois.justice.gc.ca/eng/acts/F-11.6/FullText.html
+  Used: ss. 5 to 8, 22, 23, 33, 64, 68, 69.1, 70, 70.1, 70.2 (eligibility, minors, licence terms, transfers, loans).
 - Storage, Display, Transportation and Handling of Firearms by Individuals Regulations, SOR/98-209:
   https://laws-lois.justice.gc.ca/eng/regulations/SOR-98-209/FullText.html
-  fetched 2026-11-16. Used: storage (s. 5), display (s. 8), transportation (s. 10), handling (s. 15).
-- Migratory game bird permit requirement (Environment and Climate Change Canada, Migratory Game Bird Hunting
-  permit overview; found by search, fee and phase-out details deliberately not used):
-  https://www.canada.ca/en/environment-climate-change/services/migratory-game-bird-hunting/permit.html
-- RCMP, Canadian Firearms Safety Course page (topics only):
-  https://rcmp.ca/en/firearms/firearms-safety-training-transport-and-storage/safety-courses
-  fetched 2026-11-16.
+  Used: ss. 2(4), 5, 8, 10, 15.
+- Migratory Birds Regulations, 2022, SOR/2022-105:
+  https://laws-lois.justice.gc.ca/eng/regulations/SOR-2022-105/FullText.html
+  Used: ss. 21, 27 to 45, 50, 52, 55 (permit, hours, shot, shotgun limits, bait, calls, vehicles and boats, retrieval,
+  limits, labelling, edible meat).
+- Constitution Act, 1982, s. 35:
+  https://laws-lois.justice.gc.ca/eng/const/page-12.html
 
-## Not confirmed from an official page (read the reviewer notes)
-- The CORE Manual itself is not public, and gov.bc.ca (the Hunting and Trapping Regulations Synopsis and its
-  hunting pages) did not load from the build session, so general conservation, ethics, first aid and survival,
-  animal and bird identification and Indigenous-rights items rest on the law above plus widely taught, stable
-  field knowledge (the North American Model, hypothermia and bleeding first aid, bear and cervid field marks),
-  Section 35 of the Constitution Act, 1982 and well-documented public history (Nisga'a Final Agreement, Douglas
-  Treaties, Treaty 8, Tsilhqot'in Nation v. British Columbia, 2014). Hypothermia first aid was cross-checked
-  against HealthLinkBC (https://www.healthlinkbc.ca/healthwise/hypothermia-and-cold-temperature-exposure) via
-  search results only.
-- ACTS and PROVE are left out because their wording differs between sources; safe-handling items teach the
-  principles (muzzle control, finger off the trigger, treat as loaded, know the target and beyond) instead.
+## First aid (government health pages)
+- HealthLinkBC Healthwise topics (BC government), read in full:
+  https://www.healthlinkbc.ca/healthwise/hypothermia-and-cold-temperature-exposure
+  https://www.healthlinkbc.ca/healthwise/frostbite
+  https://www.healthlinkbc.ca/healthwise/shock
+  https://www.healthlinkbc.ca/healthwise/dehydration
 
-## Deliberately left out
-- Fees, season dates, bag limits and possession limits (they change every year), regional limited entry
-  details, the practical test, and any question about the exam itself.
-- The Synopsis (read by candidates) lists current-year rules; nothing here relies on it.
+## Not available when built
+- The BC Hunting & Trapping Regulations Synopsis and the other gov.bc.ca hunting pages failed twice with "socket
+  hang up", so nothing in the bank comes from them (no season dates, limits or fees).
+- The CORE Manual is not public.
+- BCWF's ethics, conservation, animal identification and bird identification topics are therefore not modelled:
+  no official page on them could be read, and none of those facts are asked from memory.

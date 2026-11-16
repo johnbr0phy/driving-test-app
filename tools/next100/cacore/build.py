@@ -7,8 +7,8 @@ import importlib.util, json, sys, os
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
-ORDER = ["law", "reg", "saf", "eth", "con", "ani", "brd", "sur", "ind"]
-POOLS = {"law": 28, "reg": 32, "saf": 32, "eth": 20, "con": 20, "ani": 20, "brd": 16, "sur": 20, "ind": 12}
+ORDER = ["law", "reg", "saf", "brd", "sur", "ind"]
+POOLS = {"law": 48, "reg": 60, "saf": 40, "brd": 28, "sur": 16, "ind": 8}
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "bc-core-questions.json")
 rows = []
 for m in ORDER:

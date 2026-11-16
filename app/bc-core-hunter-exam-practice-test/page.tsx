@@ -16,9 +16,9 @@ const siteUrl = SITE_URL;
 
 const title = "BC CORE Exam Practice Test 2026 - Free CORE Hunter Exam Questions";
 const metaDescription =
-  "Free practice for the BC CORE hunter exam: 200 original questions on the Wildlife Act, the Hunting Regulation, firearm safety, ethics, conservation, first aid, animal and bird identification and Indigenous peoples and hunting in BC.";
+  "Free practice for the BC CORE hunter exam: 200 original questions on the Wildlife Act, the Hunting Regulation, firearm law, migratory bird rules, first aid and Aboriginal rights, written from the law itself.";
 const description =
-  "Free practice for the CORE (Conservation and Outdoor Recreation Education) written exam that first-time hunters in British Columbia pass before buying a licence: 200 original questions on the Wildlife Act and Hunting Regulation, firearm safety, storage and transport, hunter ethics, conservation, first aid and survival, animal and bird identification, and Indigenous peoples and hunting in BC. Four practice tests of 50 questions and four training sets.";
+  "Free practice for the CORE (Conservation and Outdoor Recreation Education) written exam that first-time hunters in British Columbia pass before buying a licence: 200 original questions on the Wildlife Act and General Regulation, the Hunting Regulation, federal firearm storage and transport rules, migratory game birds, first aid for cold, shock and dehydration, and Aboriginal rights. Ethics, conservation and animal and bird identification are not covered. Four practice tests of 50 questions and four training sets.";
 
 export const metadata: Metadata = {
   title,
@@ -55,15 +55,15 @@ const faqs = [
   },
   {
     q: "What topics does the CORE exam cover?",
-    a: "The BCWF lists conservation, ethics, law and regulations, first aid and survival, firearm safety, animal identification, bird identification, and Indigenous Peoples and hunting in BC. These practice tests cover all of them, with the most questions on the Wildlife Act, the Hunting Regulation and firearm safety.",
+    a: "The BCWF lists conservation, ethics, law and regulations, first aid and survival, firearm safety, animal identification, bird identification, and Indigenous Peoples and hunting in BC. These practice tests cover the law and safety side of that list, from the Wildlife Act, the Hunting Regulation, the federal firearms regulations, the migratory bird rules, HealthLinkBC first aid advice and the Constitution Act. They do not cover conservation, ethics or animal and bird identification, because there is no official source we could read for them; use the CORE Manual for those.",
   },
   {
     q: "How are these practice tests different from the real exam?",
-    a: "Each of the four practice tests has 50 questions drawn across every topic, with no question repeated in another test, and every answer explains the rule behind it. They teach the rules that stay the same from year to year. Season dates, bag limits, fees and the current Synopsis change annually, so read this year's Synopsis before you book. The practical firearms test, where you handle two of five action types, has to be learned hands-on and is not modelled.",
+    a: "Each of the four practice tests has 50 questions drawn across the law topics, with no question repeated in another test, and every answer explains the rule behind it. They teach the rules that stay the same from year to year. Season dates, bag limits, fees and the current Synopsis change annually, so read this year's Synopsis before you book. The practical firearms test, where you handle two of five action types, has to be learned hands-on and is not modelled.",
   },
   {
     q: "Are these the real CORE exam questions?",
-    a: "No. Every question is original, written by Tigertest from the Wildlife Act, the Hunting Regulation, the federal firearms storage and handling regulations and the CORE topic list. It is free practice for hunting knowledge, not affiliated with the BC Wildlife Federation or the Province of British Columbia, and it does not replace the CORE course, the CORE Manual or the Synopsis.",
+    a: "No. Every question is original, written by Tigertest from the Wildlife Act, the Hunting Regulation, the federal firearms storage and handling regulations, the Migratory Birds Regulations, 2022 and public first aid pages. It is free practice for hunting knowledge, not affiliated with the BC Wildlife Federation or the Province of British Columbia, and it does not replace the CORE course, the CORE Manual or the Synopsis.",
   },
 ];
 
@@ -102,15 +102,12 @@ const jsonLd = {
 };
 
 const contentAreas = [
-  { name: "Wildlife Act and hunter duties", weight: "7 per test" },
-  { name: "Hunting Regulation: weapons and methods", weight: "8 per test" },
-  { name: "Firearm safety, storage and transport", weight: "8 per test" },
-  { name: "Hunter ethics and responsibility", weight: "5 per test" },
-  { name: "Conservation and wildlife management", weight: "5 per test" },
-  { name: "Animal identification", weight: "5 per test" },
-  { name: "Bird identification and game birds", weight: "4 per test" },
-  { name: "First aid and survival", weight: "5 per test" },
-  { name: "Indigenous peoples and hunting in BC", weight: "3 per test" },
+  { name: "Wildlife Act and General Regulation", weight: "12 per test" },
+  { name: "Hunting Regulation: weapons and methods", weight: "15 per test" },
+  { name: "Firearm law, storage and transport", weight: "10 per test" },
+  { name: "Game birds and migratory bird rules", weight: "7 per test" },
+  { name: "First aid for cold, shock and dehydration", weight: "4 per test" },
+  { name: "Aboriginal rights and hunting", weight: "2 per test" },
 ];
 
 export default function BcCoreLandingPage() {
@@ -131,7 +128,7 @@ export default function BcCoreLandingPage() {
           <ExamLandingHero
             dashboardHref="/bc-core-hunter-exam/dashboard"
             shortName="CORE exam"
-            subtitle="200 original questions on the topics of the BC CORE hunter exam: the Wildlife Act and Hunting Regulation, firearm safety, ethics, conservation, first aid, animal and bird identification and Indigenous peoples and hunting in BC. Four 50-question tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 original questions on the law behind the BC CORE hunter exam: the Wildlife Act and Hunting Regulation, firearm law, migratory bird rules, first aid and Aboriginal rights. Four 50-question tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/cacore-mobile.png", desktop: "/landing/cacore-desktop.png" }}
           />
         </div>
@@ -152,7 +149,7 @@ export default function BcCoreLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train One Topic at a Time</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets: the Wildlife Act and Hunting Regulation, firearm safety with first aid and survival, ethics, conservation and Indigenous peoples, and animal and bird identification. Questions you miss come back until you have mastered them.
+                Four training sets: the Wildlife Act and General Regulation, the Hunting Regulation, firearm law with storage and transport, and game birds with first aid and Aboriginal rights. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

@@ -7944,51 +7944,47 @@ const cacore: ExamConfig = {
   passPct: 76,
   // BC Wildlife Federation CORE program page (bcwf.bc.ca/core, checked 2026-11-16): the written exam is 90
   // multiple-choice questions based on the CORE Manual and the Hunting and Trapping Regulations Synopsis, 68
-  // points to pass (about 76%); topics are conservation, ethics, law and regulations, first aid and survival,
-  // firearm safety, animal identification, bird identification and Indigenous Peoples and hunting in BC. BCWF
-  // publishes no topic weights, so the counts are Tigertest's and lean on the law (Wildlife Act, Hunting
-  // Regulation B.C. Reg. 190/84, federal storage and handling regulations). Four tests of 50. All items original.
+  // points to pass (about 76%). BCWF publishes no topic weights and the CORE Manual and the gov.bc.ca
+  // Synopsis could not be read, so every item rests on a primary page that was: the Wildlife Act, the Wildlife
+  // Act General Regulation and the Hunting Regulation (B.C. Reg. 190/84) on bclaws, the federal Firearms Act,
+  // SOR/98-209 and the Migratory Birds Regulations, 2022, Constitution Act 1982 s. 35 and HealthLinkBC's cold,
+  // shock and dehydration pages. BCWF's ethics, conservation and animal and bird identification topics are not
+  // modelled for lack of an official source. Counts are Tigertest's. Four tests of 50. All items original.
   blueprint: {
-    cacoreLaw: 7,
-    cacoreRegs: 8,
-    cacoreSafety: 8,
-    cacoreEthics: 5,
-    cacoreConservation: 5,
-    cacoreAnimals: 5,
-    cacoreBirds: 4,
-    cacoreSurvival: 5,
-    cacoreIndigenous: 3,
+    cacoreLaw: 12,
+    cacoreRegs: 15,
+    cacoreSafety: 10,
+    cacoreBirds: 7,
+    cacoreSurvival: 4,
+    cacoreIndigenous: 2,
   },
   trainingSets: [
-    { setNumber: 1, id: 31901, name: "Wildlife Act & Hunting Regulation", categories: ["cacoreLaw", "cacoreRegs"], size: 60, weightLabel: "15 of 50 test questions" },
-    { setNumber: 2, id: 31902, name: "Firearm Safety, First Aid & Survival", categories: ["cacoreSafety", "cacoreSurvival"], size: 52, weightLabel: "13 of 50 test questions" },
-    { setNumber: 3, id: 31903, name: "Ethics, Conservation & Indigenous Peoples", categories: ["cacoreEthics", "cacoreConservation", "cacoreIndigenous"], size: 52, weightLabel: "13 of 50 test questions" },
-    { setNumber: 4, id: 31904, name: "Animal & Bird Identification", categories: ["cacoreAnimals", "cacoreBirds"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 1, id: 31901, name: "Wildlife Act & General Regulation", categories: ["cacoreLaw"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 31902, name: "Hunting Regulation: Weapons & Methods", categories: ["cacoreRegs"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 31903, name: "Firearm Law, Storage & Transport", categories: ["cacoreSafety"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 31904, name: "Game Birds, First Aid & Aboriginal Rights", categories: ["cacoreBirds", "cacoreSurvival", "cacoreIndigenous"], size: 52, weightLabel: "13 of 50 test questions" },
   ],
   categoryLabels: {
     cacoreLaw: "Wildlife Act & Hunter Duties",
     cacoreRegs: "Hunting Regulation: Weapons & Methods",
-    cacoreSafety: "Firearm Safety, Storage & Transport",
-    cacoreEthics: "Hunter Ethics & Responsibility",
-    cacoreConservation: "Conservation & Wildlife Management",
-    cacoreAnimals: "Animal Identification",
-    cacoreBirds: "Bird Identification & Game Birds",
-    cacoreSurvival: "First Aid & Survival",
-    cacoreIndigenous: "Indigenous Peoples & Hunting in BC",
+    cacoreSafety: "Firearm Law, Storage & Transport",
+    cacoreBirds: "Game Birds & Migratory Bird Rules",
+    cacoreSurvival: "First Aid for Cold, Shock & Dehydration",
+    cacoreIndigenous: "Aboriginal Rights & Hunting",
   },
   copy: {
     guestPrompt: "to save your CORE exam progress and track every question you miss",
     trainingHeading: "Train by topic",
-    trainingSub: "Four sets on the CORE topics: the Wildlife Act and Hunting Regulation, firearm safety and survival, ethics, conservation and Indigenous peoples, and animal and bird identification. Missed questions come back until you master them.",
-    testsHeading: "Practice tests · 50 questions across every CORE topic, aim for 38",
+    trainingSub: "Four sets on the law behind the CORE exam: the Wildlife Act, the Hunting Regulation, firearm storage and transport, and game birds with first aid and Aboriginal rights. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across the CORE law topics, aim for 38",
     heroSubs: [
-      "Four training sets, four practice tests. Start with the Wildlife Act & Hunting Regulation.",
+      "Four training sets, four practice tests. Start with the Wildlife Act & General Regulation.",
       "Master each set, then take a practice test.",
       "Keep going. Take a practice test to see where you stand.",
       "Review your mistakes, then retake any test you haven't passed.",
       "All done. Read this year's Synopsis and book your CORE exam with an examiner.",
     ],
-    sourceLine: "Based on the BC Wildlife Federation CORE topics, the Wildlife Act, the Hunting Regulation and federal firearms storage rules, as of November 2026. Original questions; the practical firearms test is not modelled. Not affiliated with the BC Wildlife Federation or the Province of British Columbia.",
+    sourceLine: "Based on the Wildlife Act, the Hunting Regulation, federal firearms and migratory bird rules and the CORE topics BC Wildlife Federation lists, as of November 2026. Original questions; ethics, conservation, animal identification and the practical firearms test are not modelled. Not affiliated with the BC Wildlife Federation or the Province of British Columbia.",
     analyticsKey: "cacore",
   },
 };

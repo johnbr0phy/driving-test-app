@@ -173,6 +173,8 @@ const CASES = [
   ["security operations analyst", "US", "sc200"],
   ["sc-900", "US", "sc900"],
   ["microsoft security fundamentals", "US", "sc900"],
+  ["prince2", "UK", "prince2"],
+  ["prince 2 foundation", "US", "prince2"],
   ["gcp professional p", "SG", "gcppca"],
   ["gcp professional", "SG", "gcppca"],
   ["gcp architect", "US", "gcppca"],

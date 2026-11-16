@@ -207,6 +207,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   iimcat: { title: "CAT Mock Tests", description: "Timed VARC, DILR and QA sections of 40 minutes each, typed TITA answers and drills by question type." },
   lsat: { title: "LSAT Practice Tests", description: "Timed Logical Reasoning and Reading Comprehension sections with a 120 to 180 score estimate and drills by question family." },
   cissp: { title: "ISC2 CISSP", description: "Practice manager-level questions across all eight CISSP domains, from risk management to secure software." },
+  prince2: { title: "PRINCE2 7 Foundation", description: "Practise the 60-question PRINCE2 7 Foundation exam: principles, people, the seven practices and the seven processes." },
   itil: { title: "ITIL 4 Foundation", description: "Practice the 40-question ITIL 4 Foundation exam: guiding principles, the value chain and the ITIL practices." },
   psm: { title: "PSM I Professional Scrum Master", description: "Practice the 2020 Scrum Guide: accountabilities, events, artifacts and commitments, in 80 questions in 60 minutes." },
   capm: { title: "CAPM Certified Associate in Project Management", description: "Practice questions on project management fundamentals, predictive and agile methods, and business analysis." },

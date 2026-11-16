@@ -1,0 +1,4214 @@
+[
+  {
+    "id": "PRINCE2-T1-001",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Starting up a project purpose",
+    "stem": "Which process asks whether there is a viable and worthwhile project?",
+    "options": [
+      "Initiating a project",
+      "Starting up a project",
+      "Directing a project",
+      "Managing a stage boundary"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Starting up a project makes sure the prerequisites for initiating a project are in place by answering whether there is a viable and worthwhile project. The decision to start must be explicit."
+  },
+  {
+    "id": "PRINCE2-T1-002",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Organizational ecosystem",
+    "stem": "What is the organizational ecosystem?",
+    "options": [
+      "The business, user and supplier groups on the project board",
+      "The people assigned to roles in the project management team",
+      "The users who will operate the project's products after handover to business as usual",
+      "An organization's internal elements together with its external relationships"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The organizational ecosystem is the internal elements of an organization (staff, board, owners) together with its external relationships such as customers, partners, suppliers, regulators and competitors."
+  },
+  {
+    "id": "PRINCE2-T1-003",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Purpose of organizing",
+    "stem": "What is the purpose of the organizing practice?",
+    "options": [
+      "To define and establish the project's structure of accountability",
+      "To judge whether the project remains desirable and viable",
+      "To compare actual achievements against those planned",
+      "To document the user's requirements and how they will be met during the project"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The organizing practice defines and establishes the project's structure of accountability and responsibilities, the 'who'. Documenting requirements is the quality practice; comparing actuals with plans is progress."
+  },
+  {
+    "id": "PRINCE2-T1-004",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ensure continued business justification",
+    "stem": "Halfway through a project, a competitor launches a cheaper product and the expected sales benefits fall below the project's costs. Which principle says the project should now be stopped?",
+    "options": [
+      "Define roles, responsibilities and relationships",
+      "Ensure continued business justification",
+      "Learn from experience",
+      "Focus on products"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ensure continued business justification requires a justification for the investment to start the project and throughout it. If the project is no longer justified, it should be stopped. Manage by exception concerns tolerances and escalation."
+  },
+  {
+    "id": "PRINCE2-T1-005",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Purpose of business case practice",
+    "stem": "What is the purpose of the business case practice?",
+    "options": [
+      "To judge whether the project is and remains desirable, viable and achievable",
+      "To identify, assess and control uncertainties affecting the project objectives",
+      "To define the products and the means to deliver them",
+      "To collect issues and control changes to the baseline"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The business case practice establishes mechanisms to judge whether the project is, and remains, desirable, viable and achievable, to support decisions on continued investment. Controlling uncertainty is the risk practice."
+  },
+  {
+    "id": "PRINCE2-T1-006",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Purpose of plans",
+    "stem": "What is the purpose of the plans practice?",
+    "options": [
+      "To identify, assess and control the project's risks",
+      "To compare actual progress with what was planned",
+      "To set the structure of accountability for the project",
+      "To define the products and the means to deliver them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The plans practice facilitates communication and control by defining the products to be delivered (the what) and the means to deliver them (who, how, where, when and how much), to satisfy the business case (the why)."
+  },
+  {
+    "id": "PRINCE2-T1-007",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Purpose of quality",
+    "stem": "What is the purpose of the quality practice?",
+    "options": [
+      "To check that the project remains desirable, viable and achievable",
+      "To document user requirements and establish how they will be met",
+      "To control changes to the products in the project baseline",
+      "To define who is accountable for each product"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The quality practice documents the user's requirements of the project products and establishes the means by which they will be met."
+  },
+  {
+    "id": "PRINCE2-T1-008",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Purpose of risk",
+    "stem": "What is the purpose of the risk practice?",
+    "options": [
+      "To collect issues and control changes to the baseline",
+      "To forecast the project's objectives and its continued viability",
+      "To judge whether the project remains worth doing",
+      "To identify, assess and control uncertainties affecting objectives"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The risk practice identifies, assesses and controls uncertainties that would affect the project's objectives, improving the project's ability to succeed."
+  },
+  {
+    "id": "PRINCE2-T1-009",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Purpose of issues",
+    "stem": "What is the purpose of the issues practice?",
+    "options": [
+      "To document user requirements and how they will be met",
+      "To collect and assess issues and control changes to the baseline",
+      "To monitor actual achievements against those planned",
+      "To identify, assess and control the uncertainties affecting the project"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The issues practice collects and assesses issues and controls changes to the project's baseline. In PRINCE2, issue management encompasses change control."
+  },
+  {
+    "id": "PRINCE2-T1-010",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Purpose of progress",
+    "stem": "Which is part of the purpose of the progress practice?",
+    "options": [
+      "To define the structure of accountability",
+      "To judge whether the project is desirable",
+      "To document the user's quality requirements for products",
+      "To control any deviations causing an exception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The progress practice monitors and compares actual achievements against plans, forecasts the project's objectives and continued viability, and controls any deviations causing an exception."
+  },
+  {
+    "id": "PRINCE2-T1-011",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directing a project purpose",
+    "stem": "What is the purpose of directing a project?",
+    "options": [
+      "To assign work, monitor it and take corrective action to keep the stage within tolerance",
+      "To let the board be accountable through key decisions, delegating daily management",
+      "To control the link between the project manager and the team manager",
+      "To set solid foundations before committing significant resources"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Directing a project enables the project board to be accountable for success by making key decisions and exercising overall control, while delegating day-to-day management to the project manager."
+  },
+  {
+    "id": "PRINCE2-T1-012",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stakeholder",
+    "stem": "Which describes a stakeholder in PRINCE2?",
+    "options": [
+      "Anyone who must approve a product before it is handed over to the users",
+      "Anyone who holds a named role in the project management team",
+      "Anyone who can affect, is affected by, or feels affected by the project",
+      "Anyone who has paid for part of the project's budget"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A stakeholder is any individual, group or organization that can affect or be affected by, or perceives itself to be affected by, the project. Many stakeholders have no formal role."
+  },
+  {
+    "id": "PRINCE2-T1-013",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Integrated elements",
+    "stem": "Which list gives the five integrated elements of PRINCE2?",
+    "options": [
+      "Principles, practices, processes, products, tolerances",
+      "People, plans, processes, products, project board",
+      "Principles, people, practices, processes, project context",
+      "Principles, practices, processes, stages and the project board"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PRINCE2 7 has five integrated elements: the principles, people, the practices, the processes and the project context. Products, stages and tolerances are concepts used inside the method, not elements of it."
+  },
+  {
+    "id": "PRINCE2-T1-014",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Three project interests",
+    "stem": "Which three interests does PRINCE2 represent on the project board?",
+    "options": [
+      "Executive, manager and team",
+      "Business, customer and sponsor",
+      "User, supplier and regulator",
+      "Business, user and supplier"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "PRINCE2 focuses on three stakeholder interests, business, user and supplier, represented on the board by the executive, the senior user and the senior supplier."
+  },
+  {
+    "id": "PRINCE2-T1-015",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Initiating a project purpose",
+    "stem": "Which process establishes solid foundations so the business understands the work before committing significant expenditure?",
+    "options": [
+      "Controlling a stage",
+      "Starting up a project",
+      "Managing product delivery",
+      "Initiating a project"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Initiating a project establishes solid foundations, so the business understands the work needed to deliver the project product before committing significant expenditure or resources."
+  },
+  {
+    "id": "PRINCE2-T1-016",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Learn from experience",
+    "stem": "Before a new project starts, the project manager reads the lessons reports of two similar projects. Which principle is being applied?",
+    "options": [
+      "Define roles, responsibilities and relationships",
+      "Learn from experience",
+      "Manage by stages",
+      "Tailor to suit the project"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Learn from experience means the team seeks, records and applies lessons from earlier projects and throughout the project, and shares them for others. Reading earlier lessons reports at the start is a direct use of it."
+  },
+  {
+    "id": "PRINCE2-T1-017",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Output, outcome, benefit",
+    "stem": "A new online booking system goes live. Customers now book without phoning, and call costs fall by 15%. What is the fall in call costs?",
+    "options": [
+      "A benefit",
+      "An outcome",
+      "An output",
+      "A capability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The system is the output, customers booking online is the outcome (the result of the change), and the measurable improvement in call costs is the benefit that contributes to a business objective."
+  },
+  {
+    "id": "PRINCE2-T1-018",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stage plan",
+    "stem": "Which plan is the detailed basis for project management control throughout a stage?",
+    "options": [
+      "Project plan",
+      "Team plan",
+      "Exception plan",
+      "Stage plan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A stage plan is a detailed plan used as the basis for project management control throughout a stage. The project plan is high level, and a team plan covers one work package."
+  },
+  {
+    "id": "PRINCE2-T1-019",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acceptance criteria",
+    "stem": "What are acceptance criteria?",
+    "options": [
+      "The quality measures applied by reviewers to each specialist product in every stage of the project",
+      "The standards the supplier uses to build its specialist products",
+      "The checks the project board makes before authorizing a stage",
+      "A prioritized list of criteria the project product must meet for the user to accept it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Acceptance criteria are a prioritized list of criteria that the project product must meet before the user will accept it. Quality measures applied by those doing quality control are quality specifications."
+  },
+  {
+    "id": "PRINCE2-T1-020",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk owner and action owner",
+    "stem": "Who is the risk owner?",
+    "options": [
+      "The person who carries out an agreed action in response to a risk",
+      "The person assigned to take responsibility for responding to a risk",
+      "The project board member whose budget the risk affects",
+      "The person who first identified the risk and recorded it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The risk owner is assigned to take responsibility for responding to a risk. The risk action owner, also called the risk actionee, carries out an agreed response action."
+  },
+  {
+    "id": "PRINCE2-T1-021",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Types of issue",
+    "stem": "A user asks for an extra report to be added to a system whose specification has already been approved. What type of issue is this?",
+    "options": [
+      "A request for change",
+      "A business opportunity",
+      "A problem",
+      "An off-specification"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A request for change is a proposal for a change to a baseline, here the approved specification. An off-specification is a product that will not meet its quality specifications."
+  },
+  {
+    "id": "PRINCE2-T1-022",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Highlight report",
+    "stem": "Which report does the project manager send to the project board at agreed intervals during a stage?",
+    "options": [
+      "End stage report",
+      "Checkpoint report",
+      "Exception report",
+      "Highlight report"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A highlight report is a time-driven report from the project manager to the board on stage progress. Checkpoint reports go from a team manager to the project manager."
+  },
+  {
+    "id": "PRINCE2-T1-023",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change management purpose",
+    "stem": "Why is change management important on a PRINCE2 project?",
+    "options": [
+      "Change management replaces the need for a business case",
+      "Projects deliver change that affects people's business as usual",
+      "It is needed only when the project brings in an external supplier",
+      "It controls changes to the approved project baseline"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Change management is the means by which an organization moves from the current state to the target state. Projects deliver change that affects people's routines and responsibilities. Controlling changes to the baseline is change control, part of the issues practice."
+  },
+  {
+    "id": "PRINCE2-T1-024",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlling a stage objectives",
+    "stem": "Which is an objective of controlling a stage?",
+    "options": [
+      "The project is closed in an orderly way",
+      "The project brief is assembled",
+      "Work on products allocated to the team is authorized",
+      "Risks and issues are kept under control"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Controlling a stage keeps attention on delivering the stage's products, controls risks and issues, keeps the business case under review and keeps delivery within tolerances. Authorizing team work is an objective of managing product delivery."
+  },
+  {
+    "id": "PRINCE2-T1-025",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Executive",
+    "stem": "Which statement about the executive is correct?",
+    "options": [
+      "The executive represents the users who will operate the products",
+      "There can be several, one for each part of the business affected",
+      "The role can be delegated to the project manager on a small or low-risk project",
+      "There is only one, and the role cannot be combined with the project manager"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The executive is the single point of accountability for the project, and this accountability cannot be delegated. There cannot be more than one executive, and the role cannot be combined with that of the project manager."
+  },
+  {
+    "id": "PRINCE2-T1-026",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Leadership versus management",
+    "stem": "What is the difference between leadership and management in PRINCE2?",
+    "options": [
+      "Leadership motivates people; management instructs tasks in agreed ways",
+      "Leadership sets tolerances; management reports against them",
+      "Leadership is the project board's job; management is the team manager's job",
+      "Leadership applies to suppliers; management applies to users"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Leadership is motivating people to achieve the project's objectives, best done through collaboration and influence. Management is instructing the execution of tasks in line with agreed ways of working. Every role needs some of both."
+  },
+  {
+    "id": "PRINCE2-T1-027",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Manage by exception",
+    "stem": "The project board sets limits of time and cost for a stage and only expects to be involved if the project manager forecasts that they will be exceeded. Which principle does this show?",
+    "options": [
+      "Tailor to suit the project",
+      "Manage by stages",
+      "Ensure continued business justification",
+      "Manage by exception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Manage by exception sets limits of delegated authority as tolerances against plans. The board then intervenes only when a forecast says a tolerance will be exceeded. Manage by stages is about planning and controlling stage by stage."
+  },
+  {
+    "id": "PRINCE2-T1-028",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dis-benefit",
+    "stem": "What is a dis-benefit?",
+    "options": [
+      "A cost that was left out of the business case",
+      "A benefit that is realized later than planned",
+      "A risk that would have a negative effect on business objectives",
+      "A measurable decline from an outcome seen as negative"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A dis-benefit is the measurable decline resulting from an outcome perceived as negative by the investing organization, which detracts from business objectives. A risk is uncertain; a dis-benefit is an expected result."
+  },
+  {
+    "id": "PRINCE2-T1-029",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product-based planning",
+    "stem": "What is the starting point of PRINCE2 product-based planning?",
+    "options": [
+      "Defining and analysing the required products",
+      "Estimating the cost of each activity",
+      "Preparing the schedule and the resource levels",
+      "Agreeing the tolerances for the plan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Product-based planning starts by defining and analysing the products needed, then derives the work breakdown, estimates and schedule from the product descriptions."
+  },
+  {
+    "id": "PRINCE2-T1-030",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality assurance",
+    "stem": "Which statement about quality assurance is correct?",
+    "options": [
+      "It is typically managed independently of the project team",
+      "It is carried out by the producer of each specialist product",
+      "It is recorded only in the daily log",
+      "It replaces quality control on smaller projects"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quality assurance is a planned, systematic activity that gives confidence products will meet their quality specifications. It is typically managed independently of the project team, often by the business."
+  },
+  {
+    "id": "PRINCE2-T1-031",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk responses",
+    "stem": "A project insures its equipment against damage, so that a third party pays for any loss. Which risk response is this?",
+    "options": [
+      "Avoid",
+      "Reduce",
+      "Transfer",
+      "Accept"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Transferring a risk passes part of its impact, often the financial part, to a third party, as insurance does. Avoiding removes the threat, reducing lowers its probability or impact, and accepting takes no action."
+  },
+  {
+    "id": "PRINCE2-T1-032",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Daily log",
+    "stem": "A team member reports a minor concern that the project manager can handle informally. Where should it be recorded?",
+    "options": [
+      "In the risk register",
+      "In the daily log",
+      "In an issue report",
+      "In the issue register"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The daily log records problems and concerns that the project manager can handle informally. The issue register and issue reports are for issues managed formally."
+  },
+  {
+    "id": "PRINCE2-T1-033",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Event-driven control",
+    "stem": "Which is an example of an event-driven control?",
+    "options": [
+      "A fortnightly team progress meeting",
+      "A weekly checkpoint report from a team",
+      "An end stage report at the end of a stage",
+      "A monthly highlight report to the project board"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Event-driven controls happen when a specific event occurs, such as the end of a stage, completion of the PID or an exception report. Regular reports at set intervals are time-driven."
+  },
+  {
+    "id": "PRINCE2-T1-034",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managing product delivery purpose",
+    "stem": "Which process controls the link between the project manager and the team manager?",
+    "options": [
+      "Directing a project",
+      "Managing a stage boundary",
+      "Controlling a stage",
+      "Managing product delivery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Managing product delivery controls the link between the project manager and the team manager by agreeing the requirements for acceptance, execution, reporting and delivery of specialist products."
+  },
+  {
+    "id": "PRINCE2-T1-035",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Communication management approach",
+    "stem": "Which management product describes how and how often the project communicates with, and gets feedback from, its ecosystem?",
+    "options": [
+      "Digital and data management approach",
+      "Highlight report",
+      "Communication management approach",
+      "Project brief"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The communication management approach, part of the PID, sets the means and frequency of communication and feedback, giving a controlled two-way flow of information with stakeholders."
+  },
+  {
+    "id": "PRINCE2-T1-036",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Senior supplier",
+    "stem": "Which role is accountable for the quality of the products delivered by the suppliers and for the project's technical integrity?",
+    "options": [
+      "Senior user",
+      "Project assurance",
+      "Senior supplier",
+      "Executive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The senior supplier represents the supplier community, commits supplier resources and is accountable for the quality of products delivered by suppliers and for technical integrity."
+  },
+  {
+    "id": "PRINCE2-T1-037",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managing a stage boundary purpose",
+    "stem": "Which is a purpose of managing a stage boundary?",
+    "options": [
+      "Giving users the final project product",
+      "Giving the business layer the project mandate",
+      "Giving the team manager the authority to start work on a new work package",
+      "Giving the board information to review the stage and plan the next"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Managing a stage boundary gives the board enough information to review the current stage, approve the next stage plan, review the updated project plan and confirm continued justification and acceptable risks."
+  },
+  {
+    "id": "PRINCE2-T1-038",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "People within and affected",
+    "stem": "In PRINCE2, who does the people element cover?",
+    "options": [
+      "Only those named in the project management team structure",
+      "Only the staff of the organization paying for the project",
+      "Only the users who will receive the project's products",
+      "Those working on the project and those affected by it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "People covers those working on the project and the relationships between them, as well as those impacted by the project, who may hold no formal role at all."
+  },
+  {
+    "id": "PRINCE2-T1-039",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tailoring factors",
+    "stem": "Which is a factor that influences how PRINCE2 is tailored to a project?",
+    "options": [
+      "The date the project mandate arrived",
+      "The capability of the project team",
+      "The names of the project board members",
+      "The number of principles to apply"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The method is tailored to suit the project environment, size, complexity, importance, delivery method, team capability and level of risk. All seven principles are always applied; they are not reduced by tailoring."
+  },
+  {
+    "id": "PRINCE2-T1-040",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business case lifecycle",
+    "stem": "When is the outline business case first developed?",
+    "options": [
+      "During initiation, as part of the PID",
+      "At the end of the first delivery stage",
+      "After the project closes, for post-project benefit reviews",
+      "In the pre-project period, during starting up a project"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The outline business case is developed before the project starts, in starting up a project. It is refined into the full business case in the initiation stage and then maintained and updated through the stages."
+  },
+  {
+    "id": "PRINCE2-T1-041",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning horizon",
+    "stem": "Why does PRINCE2 not plan every stage in detail at the start of the project?",
+    "options": [
+      "Stage plans are written after the stage has finished",
+      "The project board does not approve detailed plans",
+      "Accurate planning is only possible for a limited time ahead",
+      "Detailed plans are only needed for projects with external suppliers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The planning horizon is the period for which it is possible to plan accurately. So the project plan stays high level, and each stage plan is produced near the end of the previous stage."
+  },
+  {
+    "id": "PRINCE2-T1-042",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality register",
+    "stem": "Which record identifies all the quality control activities planned or carried out?",
+    "options": [
+      "Issue register",
+      "Quality register",
+      "Product register",
+      "Lessons log"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The quality register, part of the project log, identifies all quality control activities planned or done and feeds end stage and end project reports. The product register records the products and their acceptance."
+  },
+  {
+    "id": "PRINCE2-T1-043",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk appetite",
+    "stem": "What is risk appetite?",
+    "options": [
+      "The money set aside to fund the responses to threats and opportunities",
+      "The combined effect of all the project's threats and opportunities",
+      "The amount and type of risk the business will take for its objectives",
+      "The threshold for each objective beyond which risk is escalated"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Risk appetite is the amount and type of risk the business is willing to take in pursuit of its objectives. Risk tolerance is the measurable threshold for each objective, and the risk budget is the money for responses."
+  },
+  {
+    "id": "PRINCE2-T1-044",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project baseline",
+    "stem": "What is the project baseline?",
+    "options": [
+      "The first version of the project plan, kept unchanged for later comparison",
+      "The set of tolerances agreed between the board and business",
+      "The list of products the project will hand over to users",
+      "The current approved versions of products that are under change control"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The project baseline is the current approved versions of the management and specialist products that are subject to change control. A change is a modification to any of them."
+  },
+  {
+    "id": "PRINCE2-T1-045",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Exception",
+    "stem": "In PRINCE2, what is an exception?",
+    "options": [
+      "A risk that has a high probability and impact",
+      "Any change to a product after it has been approved by the board",
+      "A forecast deviation beyond the agreed tolerance levels",
+      "A request from the board for more information"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An exception is a situation where it can be forecast that there will be a deviation beyond the tolerance levels agreed between levels of management. It is raised on the forecast, before the breach."
+  },
+  {
+    "id": "PRINCE2-T1-046",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Closing a project purpose",
+    "stem": "Which process provides a fixed point at which acceptance of the project product is confirmed?",
+    "options": [
+      "Managing a stage boundary",
+      "Directing a project",
+      "Closing a project",
+      "Controlling a stage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Closing a project provides a fixed point where acceptance of the project product is confirmed and the objectives, or approved changes to them, are recognized as achieved."
+  },
+  {
+    "id": "PRINCE2-T1-047",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Characteristics of a project",
+    "stem": "A project team is made up of finance, IT and warehouse staff who will go back to their usual jobs when the new system goes live. Which TWO characteristics of a project does this show most clearly?",
+    "options": [
+      "Temporary and cross-functional",
+      "Change and unique",
+      "Uncertain and cross-functional",
+      "Uncertain and temporary"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Staff from several functions working together show the cross-functional characteristic, and the team ending at go-live shows that a project is temporary. Uniqueness and uncertainty are true of projects too, but the scenario does not describe them."
+  },
+  {
+    "id": "PRINCE2-T1-048",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project assurance",
+    "stem": "Who is accountable for the project assurance of their own area of concern?",
+    "options": [
+      "The project board members",
+      "The project manager",
+      "The project manager and team managers",
+      "Project support"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Project board members are accountable for assurance of their respective areas: business assurance for the executive, user assurance for the senior user and supplier assurance for the senior supplier. Assurance is independent of the project manager."
+  },
+  {
+    "id": "PRINCE2-T1-049",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Temporary teams",
+    "stem": "Why do project teams often need a different style of leadership from established business teams?",
+    "options": [
+      "They never include external suppliers",
+      "They are larger than most business teams",
+      "They are temporary and cross organizational boundaries",
+      "They report directly to the business layer, not a line manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Projects are delivered by temporary teams working across organizational boundaries, so a temporary leader may find it harder to exercise authority. Building trust and social cohesion matters more."
+  },
+  {
+    "id": "PRINCE2-T1-050",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stage boundary context",
+    "stem": "When is managing a stage boundary NOT used for a planned stage end?",
+    "options": [
+      "At the end of the initiation stage",
+      "At the end of the final stage",
+      "At the end of the second stage",
+      "At the end of a middle delivery stage"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Managing a stage boundary is first used at the end of the initiation stage and repeated at the end of each later stage except the final one, which ends with closing a project. It can still be used in the final stage to prepare an exception plan."
+  },
+  {
+    "id": "PRINCE2-T1-051",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Principles basis",
+    "stem": "Consider these statements about the PRINCE2 principles:\n\n1. If the principles are not all applied, the project is not a PRINCE2 project.\n\n2. The principles are guiding obligations and good practices.\n\n3. A small project may leave out the principles it does not need.\n\n4. The principles are a set of activities for the project manager.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The principles are the guiding obligations and good practices that decide whether a project is genuinely managed with PRINCE2, so all seven must be applied. Activities belong to the processes, and tailoring adapts the method without dropping principles.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T1-052",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Benefits management approach",
+    "stem": "Which management product defines the actions to confirm that the project's benefits are realized, including after the project closes?",
+    "options": [
+      "Sustainability management approach",
+      "Benefits management approach",
+      "End project report",
+      "Project product description"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The benefits management approach defines the management actions that ensure outcomes are achieved and confirm that benefits are realized. Many benefits come after closure, so it covers post-project reviews."
+  },
+  {
+    "id": "PRINCE2-T1-053",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product flow diagram",
+    "stem": "What does a product flow diagram show?",
+    "options": [
+      "The hierarchy of all the products to be produced during the plan",
+      "The sequence in which products are produced and their dependencies",
+      "The people responsible for producing each product",
+      "The costs, durations and resources needed for each product in turn"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A product flow diagram shows the sequence of production and interdependencies of the products listed in the product breakdown structure. The hierarchy itself is the product breakdown structure."
+  },
+  {
+    "id": "PRINCE2-T1-054",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Concession",
+    "stem": "A product will not meet one of its quality specifications, and the project board accepts it without corrective action. What is this called?",
+    "options": [
+      "An exception plan",
+      "A concession",
+      "A request for change",
+      "A quality review"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An off-specification that the project board accepts without corrective action is a concession. A request for change proposes changing the baseline before the product is built."
+  },
+  {
+    "id": "PRINCE2-T1-055",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risk technique",
+    "stem": "In the PRINCE2 risk technique, what happens in the assess step?",
+    "options": [
+      "Planned risk responses are carried out and monitored",
+      "Risks are prioritized and the combined risk profile is assessed",
+      "The plan's context and objectives are reviewed to find new threats",
+      "Risk responses and monitoring arrangements are decided"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The risk technique has identify, assess, plan, implement and communicate. Assess prioritizes risks and assesses the combined risk profile; plan decides the responses."
+  },
+  {
+    "id": "PRINCE2-T1-056",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Issue technique steps",
+    "stem": "In the PRINCE2 issue management technique, which step follows assess?",
+    "options": [
+      "Capture",
+      "Decide",
+      "Implement",
+      "Recommend"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The technique runs capture, assess, recommend, decide, implement. After the impact is assessed, options are identified and evaluated and a recommendation is made."
+  },
+  {
+    "id": "PRINCE2-T1-057",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tolerance levels",
+    "stem": "Who sets the work package tolerances for a team manager?",
+    "options": [
+      "The business layer",
+      "The project board",
+      "The project manager",
+      "The senior supplier"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tolerances are delegated down the levels: the business layer sets project tolerances, the board sets stage tolerances, and the project manager sets work package tolerances for team managers."
+  },
+  {
+    "id": "PRINCE2-T1-058",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Four organizational levels",
+    "stem": "Which organizational level sets the project tolerances and provides the project mandate?",
+    "options": [
+      "The project manager",
+      "The project board",
+      "The team managers",
+      "The business layer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The commissioning party in the business layer provides the project mandate, identifies the executive and defines the project-level tolerances. The board directs within those, and sets stage tolerances for the project manager."
+  },
+  {
+    "id": "PRINCE2-T1-059",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "How does PRINCE2 describe culture?",
+    "options": [
+      "The organization's written policies and standards for projects",
+      "Shared attitudes, values, goals and ways of working of a group",
+      "The rules for how often reports go to the project board",
+      "The skills and experience of the project manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Culture is the set of shared attitudes, values, goals and ways of working that characterize a group of people. Projects often cross several cultures, so cultural intelligence helps."
+  },
+  {
+    "id": "PRINCE2-T1-060",
+    "section": "prince2",
+    "test": 1,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Starting up objectives",
+    "stem": "Consider these statements about starting up a project:\n\n1. It confirms there is business justification for initiating the project.\n\n2. It produces the full business case for authorizing the project.\n\n3. It plans the work needed for the initiation stage.\n\n4. It authorizes the project to deliver its products.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Starting up a project confirms a business justification for initiating (the outline business case) and plans the initiation stage. The full business case is produced in initiating a project, and the board authorizes the project in directing a project.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-001",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Starting up timing",
+    "stem": "Why must the decision to start a project be explicit?",
+    "options": [
+      "The project board meets only once in the project",
+      "The project mandate is only written after that decision has been made",
+      "The business case is only produced after closure",
+      "Starting up a project takes place before that decision is made"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The activities in starting up a project happen before the decision to start, so the decision itself must be explicit. Starting up is pre-project; the project begins when the board authorizes initiation."
+  },
+  {
+    "id": "PRINCE2-T2-002",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project ecosystem",
+    "stem": "What is the project ecosystem?",
+    "options": [
+      "The organization's whole investment in all of its projects, programmes and other change",
+      "The business areas involved in or affected by the project, plus users and suppliers",
+      "The products and work packages delivered in a stage",
+      "The four levels of the project's management structure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The project ecosystem is those elements of the business involved in or directly impacted by the project and the associated users and suppliers. An organization's total investment in change is its portfolio."
+  },
+  {
+    "id": "PRINCE2-T2-003",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Senior user",
+    "stem": "Which role is accountable for specifying the benefits and showing the business that they are on track to be realized?",
+    "options": [
+      "Executive",
+      "Project manager",
+      "Senior user",
+      "Senior supplier"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The senior user represents the user community, is accountable for capturing user requirements and specifying benefits aligned to the business case, and demonstrates that forecast benefits are on track."
+  },
+  {
+    "id": "PRINCE2-T2-004",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Focus on products",
+    "stem": "Before any work starts, the team writes a description of each product, including its quality specifications. Which principle does this apply?",
+    "options": [
+      "Focus on products",
+      "Manage by exception",
+      "Manage by stages",
+      "Learn from experience"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Focus on products means the project concentrates on defining and delivering products, in particular their user quality expectations and requirements. Product descriptions with quality specifications are how it is applied."
+  },
+  {
+    "id": "PRINCE2-T2-005",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Business case definition",
+    "stem": "What does the business case document?",
+    "options": [
+      "The roles and reporting lines of the project management team",
+      "The way the project will be tailored to its environment",
+      "The products to be delivered and their quality specifications and acceptance criteria",
+      "The justification for the project, weighing costs, benefits and risks"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The business case documents the business justification for the project, based on estimated costs against expected benefits, offset by associated risks, and how and when benefits can be measured."
+  },
+  {
+    "id": "PRINCE2-T2-006",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project plan",
+    "stem": "Which plan shows the major products of the project and when, how and at what cost they will be delivered?",
+    "options": [
+      "Project plan",
+      "Team plan",
+      "Exception plan",
+      "Stage plan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The project plan is a high-level plan showing the major products of the project and when, how and at what cost they will be delivered."
+  },
+  {
+    "id": "PRINCE2-T2-007",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "User's quality expectations",
+    "stem": "Where are the user's quality expectations for the project product recorded?",
+    "options": [
+      "In the communication management approach",
+      "In the project product description",
+      "In each work package description",
+      "In the quality register"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The user's quality expectations are a statement about the quality expected from the project product, captured in the project product description along with the acceptance criteria."
+  },
+  {
+    "id": "PRINCE2-T2-008",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Risk definition",
+    "stem": "How does PRINCE2 define a risk?",
+    "options": [
+      "A forecast that a tolerance will be exceeded",
+      "An uncertain event that, if it occurs, will affect the objectives",
+      "An event that has already happened and needs management attention",
+      "A product that will not meet its quality specifications"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A risk is an uncertain event or set of events that, should it occur, will affect the achievement of objectives. An event that has already happened and needs attention is an issue."
+  },
+  {
+    "id": "PRINCE2-T2-009",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Issue definition",
+    "stem": "How does PRINCE2 define an issue?",
+    "options": [
+      "A product that has failed its quality review",
+      "A complaint raised by a stakeholder outside the project",
+      "An uncertain event that, if it occurs, may affect the project's objectives",
+      "An event relevant to the project that needs management consideration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An issue is an event relevant to the project that requires project management consideration. An uncertain event that may happen is a risk."
+  },
+  {
+    "id": "PRINCE2-T2-010",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Checkpoint report",
+    "stem": "Who produces a checkpoint report, and for whom?",
+    "options": [
+      "Project assurance, for the executive",
+      "The project manager, for the project board",
+      "The project board, for the business layer",
+      "A team manager, for the project manager"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A checkpoint report is a team-level, time-driven report from a team manager to the project manager on a work package, at a frequency set in the work package description."
+  },
+  {
+    "id": "PRINCE2-T2-011",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directing objectives",
+    "stem": "Which is an objective of directing a project?",
+    "options": [
+      "Team managers know the expected effort and cost",
+      "Progress information reaches the project manager",
+      "The PID is assembled from the management approaches",
+      "There is authority to close the project"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Directing a project ensures there is authority to initiate, to deliver and to close the project, gives management direction, keeps the project viable and connects it to the business layer."
+  },
+  {
+    "id": "PRINCE2-T2-012",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Co-creation",
+    "stem": "Users and key influencers help design a new process and agree how it will be used. What is this called?",
+    "options": [
+      "Change control",
+      "Quality assurance",
+      "Co-creation",
+      "Stakeholder mapping"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Co-creation is a form of collaboration that involves users and key influencers in designing products and agreeing ways of working, so the results are adopted. Change control handles changes to the baseline."
+  },
+  {
+    "id": "PRINCE2-T2-013",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Definition of a project",
+    "stem": "How does PRINCE2 define a project?",
+    "options": [
+      "A permanent team that runs and improves an organization's business as usual services each day",
+      "A temporary organization created to deliver business products to an agreed business case",
+      "A plan of activities with fixed start and end dates agreed by a sponsor",
+      "A set of related programmes managed together to meet strategic objectives"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A project is a temporary organization created for the purpose of delivering one or more business products according to an agreed business case. A set of programmes and projects managed together is a portfolio."
+  },
+  {
+    "id": "PRINCE2-T2-014",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project support",
+    "stem": "Which statement about project support is correct?",
+    "options": [
+      "It is always provided by a permanent office",
+      "It must be kept separate from project assurance",
+      "It approves changes within the change budget",
+      "It is a responsibility of the senior supplier role"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Project support is the project manager's responsibility, though it can be delegated. It must be kept separate from project assurance so assurance stays independent. A change authority, not support, approves changes."
+  },
+  {
+    "id": "PRINCE2-T2-015",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Initiating objectives",
+    "stem": "Which document is produced in initiating a project and used by the board to authorize the project?",
+    "options": [
+      "The end project report",
+      "The project mandate",
+      "The full business case",
+      "The outline business case"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Initiating a project produces the full business case, which the board uses to authorize the project and which is the basis for checking that the project remains viable. The outline business case comes from starting up."
+  },
+  {
+    "id": "PRINCE2-T2-016",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Manage by stages",
+    "stem": "A project is planned, monitored and controlled one stage at a time, with the board deciding at each stage end whether to continue. Which principle is this?",
+    "options": [
+      "Manage by exception",
+      "Focus on products",
+      "Ensure continued business justification",
+      "Manage by stages"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Manage by stages means a PRINCE2 project is planned, monitored and controlled on a stage-by-stage basis. The board's decision point at each stage end is what gives it control."
+  },
+  {
+    "id": "PRINCE2-T2-017",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Outcome",
+    "stem": "A council installs smart street lights (the project's product). Residents then feel safer walking at night. What is the residents feeling safer?",
+    "options": [
+      "A business objective",
+      "A dis-benefit",
+      "An outcome",
+      "An output"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The street lights are the output. An outcome is the result of the change, normally affecting real-world behaviour and circumstances, such as residents feeling safer. A measurable improvement from it would be a benefit."
+  },
+  {
+    "id": "PRINCE2-T2-018",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Team plan",
+    "stem": "Which statement about team plans is correct?",
+    "options": [
+      "They are approved by the business layer",
+      "They are optional in PRINCE2",
+      "They are produced before the project plan",
+      "They replace the stage plan for each stage"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Team plans are used to organize and control a team's work on a work package, and they are optional in PRINCE2."
+  },
+  {
+    "id": "PRINCE2-T2-019",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality control",
+    "stem": "Which part of the quality procedure monitors specific products to see if they comply with relevant standards?",
+    "options": [
+      "Quality control",
+      "Quality planning",
+      "Quality tolerance",
+      "Quality assurance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quality control monitors the specific products and their development to see whether they comply with standards, and finds ways to remove causes of poor performance. Quality planning captures the specifications first."
+  },
+  {
+    "id": "PRINCE2-T2-020",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk register",
+    "stem": "Which record holds the identified risks for the project, with their status and history?",
+    "options": [
+      "Daily log",
+      "Issue register",
+      "Lessons log",
+      "Risk register"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The risk register, part of the project log, is the record of identified risks, including their status and history. The daily log is for informal problems and concerns."
+  },
+  {
+    "id": "PRINCE2-T2-021",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Off-specification",
+    "stem": "Testing shows a delivered product will not meet one of its agreed quality specifications. What type of issue is this?",
+    "options": [
+      "A business opportunity",
+      "An off-specification",
+      "A request for change",
+      "A concern"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An off-specification is a product that will not meet its quality specifications. If the board then accepts it without corrective action, it becomes a concession."
+  },
+  {
+    "id": "PRINCE2-T2-022",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Exception report",
+    "stem": "The project manager forecasts that a stage will exceed its cost tolerance. What should be sent to the project board?",
+    "options": [
+      "A checkpoint report",
+      "An end stage report",
+      "An exception report",
+      "A highlight report"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An exception report explains to the board where tolerances are, or are forecast to be, breached for the stage or project, and asks for direction. The board may then ask for an exception plan."
+  },
+  {
+    "id": "PRINCE2-T2-023",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change management approach",
+    "stem": "Which part of the PID sets out how the project will help people move from the current state to the target state?",
+    "options": [
+      "The change management approach",
+      "The issue management approach",
+      "The communication management approach",
+      "The quality management approach"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "PRINCE2 addresses change by creating and maintaining a change management approach in the PID. The communication management approach covers how information flows with stakeholders."
+  },
+  {
+    "id": "PRINCE2-T2-024",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlling a stage purpose",
+    "stem": "Which process assigns work, monitors it, handles issues, reports to the board and takes corrective action to keep a stage within tolerance?",
+    "options": [
+      "Controlling a stage",
+      "Managing a stage boundary",
+      "Managing product delivery",
+      "Directing a project"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Controlling a stage assigns and monitors work, handles issues, reports progress to the board and takes corrective action to keep the stage within the tolerances set by the board."
+  },
+  {
+    "id": "PRINCE2-T2-025",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Team manager",
+    "stem": "To whom does a team manager report?",
+    "options": [
+      "The executive",
+      "The project board",
+      "The project manager",
+      "The senior supplier"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The team manager is responsible for producing the products allocated in a work package and reports to, and takes direction from, the project manager."
+  },
+  {
+    "id": "PRINCE2-T2-026",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholder engagement",
+    "stem": "A group of warehouse staff has no role in the project but will use the new system every day. What should the project do?",
+    "options": [
+      "Give them seats on the project board",
+      "Leave them out until the system is ready to be handed over",
+      "Ask the supplier to manage their concerns",
+      "Engage them as stakeholders affected by the change"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stakeholders include people impacted by the project who hold no formal role. Engaging them early supports adoption. Board seats are for the executive, senior user and senior supplier roles."
+  },
+  {
+    "id": "PRINCE2-T2-027",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Define roles, responsibilities and relationships",
+    "stem": "Which principle requires a project to engage the business, user and supplier interests through agreed roles?",
+    "options": [
+      "Focus on products",
+      "Define roles, responsibilities and relationships",
+      "Tailor to suit the project",
+      "Ensure continued business justification"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "This principle says a PRINCE2 project has defined and agreed roles and responsibilities in a structure that engages the business, user and supplier interests, and builds relationships with stakeholders."
+  },
+  {
+    "id": "PRINCE2-T2-028",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Executive and business case",
+    "stem": "Which role is responsible for the business case and for the project's continued business justification?",
+    "options": [
+      "Project manager",
+      "Senior supplier",
+      "Executive",
+      "Senior user"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The executive secures funding and is responsible for the business case and continued business justification. The senior user specifies benefits and shows they are on track to be realized."
+  },
+  {
+    "id": "PRINCE2-T2-029",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project product description",
+    "stem": "For which level of plan is a project product description written?",
+    "options": [
+      "Every team plan",
+      "Every stage plan",
+      "Every exception plan only",
+      "The project plan only"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The project product description is written for the project plan only. Product breakdown structures, product descriptions and product flow diagrams are produced for every level of plan."
+  },
+  {
+    "id": "PRINCE2-T2-030",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality management approach",
+    "stem": "Which management product describes the quality techniques and standards to be applied and who is responsible for achieving the required quality?",
+    "options": [
+      "Quality management approach",
+      "Product description",
+      "Project product description",
+      "Quality register"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The quality management approach, part of the PID, describes the quality techniques and standards and the roles and responsibilities for achieving quality and acceptance criteria."
+  },
+  {
+    "id": "PRINCE2-T2-031",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opportunity responses",
+    "stem": "A project might finish early if a supplier delivers ahead of schedule, and the team acts to make that more likely. Which response is this?",
+    "options": [
+      "Enhance",
+      "Share",
+      "Reduce",
+      "Exploit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enhancing an opportunity makes it more likely or increases its effect. Exploiting acts to make sure the opportunity happens; reduce is the threat response that lowers probability or impact."
+  },
+  {
+    "id": "PRINCE2-T2-032",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Issue report",
+    "stem": "When is an issue report created?",
+    "options": [
+      "Only for issues that need to be handled formally",
+      "Only when a risk owner closes a risk",
+      "Only at the end of each management stage",
+      "For every issue, including those in the daily log"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An issue report holds the description, impact assessment and recommendations for an issue. It is created only for issues handled formally."
+  },
+  {
+    "id": "PRINCE2-T2-033",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Seven tolerances",
+    "stem": "For which of these can tolerances be set in PRINCE2?",
+    "options": [
+      "Number of stages",
+      "Sustainability",
+      "Team morale",
+      "Stakeholder numbers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tolerances are set for the seven performance targets: benefits, cost, time, quality, scope, sustainability and risk."
+  },
+  {
+    "id": "PRINCE2-T2-034",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managing product delivery objectives",
+    "stem": "Which is an objective of managing product delivery?",
+    "options": [
+      "The business case is updated for the end of the stage",
+      "Planned products are delivered to quality expectations and in tolerance",
+      "The project board has the authority it needs to deliver the project product",
+      "The previous stage is reviewed by the board"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Managing product delivery ensures team work is authorized and agreed, teams know what to produce at what effort, cost and timescale, products meet quality expectations within tolerance, and progress is reported."
+  },
+  {
+    "id": "PRINCE2-T2-035",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Effective teams",
+    "stem": "Which helps build an effective project team under PRINCE2?",
+    "options": [
+      "Choosing members only from the supplier organization",
+      "Diversity, matching capability to the work and building trust",
+      "Avoiding changes to agreed ways of working once set",
+      "Keeping members apart so that each one can work independently"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Effective teams draw on diversity, the right capability and competence, and team building that creates trust and compatible ways of working, whether co-located, virtual or hybrid."
+  },
+  {
+    "id": "PRINCE2-T2-036",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work breakdown structure",
+    "stem": "What links the product breakdown structure to the work packages?",
+    "options": [
+      "The project management team structure",
+      "The quality register",
+      "The work breakdown structure",
+      "The product flow diagram"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The work breakdown structure is a hierarchy of all work to be done during a project and forms the link between the product breakdown structure and the work packages."
+  },
+  {
+    "id": "PRINCE2-T2-037",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Exception plans in stage boundary",
+    "stem": "Which process is used to prepare an exception plan?",
+    "options": [
+      "Managing product delivery",
+      "Starting up a project",
+      "Managing a stage boundary",
+      "Controlling a stage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managing a stage boundary is also used to prepare an exception plan and seek approval to replace the project or stage plan with it. This can happen at any time, including in the final stage."
+  },
+  {
+    "id": "PRINCE2-T2-038",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Collaboration",
+    "stem": "In PRINCE2, what is collaboration?",
+    "options": [
+      "The project board meeting to approve a stage plan",
+      "Suppliers agreeing a contract with the commissioning business",
+      "People across the project ecosystem working together to the objectives",
+      "Team managers sending regular checkpoint reports to the project manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Collaboration is people from across the project ecosystem working together to achieve the project's objectives. Co-creation is a specific form of it."
+  },
+  {
+    "id": "PRINCE2-T2-039",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tailoring documented",
+    "stem": "Where are the tailoring decisions for a PRINCE2 project documented?",
+    "options": [
+      "In the lessons log",
+      "In the communication management approach",
+      "In the project initiation documentation",
+      "In the daily log"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tailoring decisions are recorded in the project initiation documentation, so everyone working on the project knows how the method is being applied. Logs are informal records kept by the project manager."
+  },
+  {
+    "id": "PRINCE2-T2-040",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sustainability management approach",
+    "stem": "What does the sustainability management approach define?",
+    "options": [
+      "The suppliers allowed to work on the project",
+      "Actions, reviews and controls to meet sustainability targets",
+      "The environmental benefits that will help to pay for the project",
+      "The tolerance for the project's overall cost"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sustainability management approach defines the actions, reviews and controls that ensure the project's sustainability performance targets are achieved. It sits in the PID alongside the other management approaches."
+  },
+  {
+    "id": "PRINCE2-T2-041",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dependencies",
+    "stem": "A project needs a new government standard to be published before it can finish one of its products. What kind of dependency is this?",
+    "options": [
+      "External",
+      "Optional",
+      "Internal",
+      "Sequential"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An external dependency is between a project product and a product or activity outside the project's scope, which the team cannot fully control. An internal dependency is between two products of the project."
+  },
+  {
+    "id": "PRINCE2-T2-042",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product description",
+    "stem": "What does a product description include?",
+    "options": [
+      "The names of the people who will accept the product",
+      "The product's purpose, composition and quality specifications",
+      "The risks and issues raised while the team was building the product",
+      "The product's cost, schedule and resource allocation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A product description describes a product's purpose, format, composition, derivation, quality specifications and development responsibilities. Costs and schedules are in plans."
+  },
+  {
+    "id": "PRINCE2-T2-043",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk proximity",
+    "stem": "What does risk proximity describe?",
+    "options": [
+      "How likely a risk is to occur",
+      "How near in time a risk might occur",
+      "How close a risk is to its tolerance",
+      "How quickly a risk would affect objectives"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk proximity is how near in time a risk might occur. How quickly it would affect objectives once it occurs is risk velocity."
+  },
+  {
+    "id": "PRINCE2-T2-044",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change budget",
+    "stem": "What is a change budget?",
+    "options": [
+      "The cost tolerance agreed for a stage",
+      "The total project budget approved by the board",
+      "Money set aside to fund planned responses to threats and opportunities",
+      "Money or authorized constraints set aside to cover changes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A change budget is the money or authorized constraints set aside in a plan to cover changes, allocated by those with delegated authority. Money for risk responses is the risk budget."
+  },
+  {
+    "id": "PRINCE2-T2-045",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lessons log",
+    "stem": "Which log is an informal repository for lessons that apply to this project or to future projects?",
+    "options": [
+      "Daily log",
+      "Lessons log",
+      "Quality register",
+      "Issue register"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The lessons log is an informal repository for lessons. PRINCE2 has two logs, the daily log and the lessons log; the registers are records too, but they are kept formally."
+  },
+  {
+    "id": "PRINCE2-T2-046",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Closing objectives",
+    "stem": "Which is an objective of closing a project?",
+    "options": [
+      "Appointing the executive and project manager",
+      "Agreeing the work package with the team manager",
+      "Making provision for all open issues and risks",
+      "Preparing the stage plan for the next stage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Closing a project checks user acceptance, ensures the business can support the products, reviews performance against baselines, assesses benefits and makes provision for open issues and risks with follow-on action recommendations."
+  },
+  {
+    "id": "PRINCE2-T2-047",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delivery approaches",
+    "stem": "A project builds a website by releasing a small working version, getting user feedback and then adding features in repeated cycles. Which delivery approach is this?",
+    "options": [
+      "Hybrid",
+      "Iterative-incremental",
+      "Product-based delivery",
+      "Linear-sequential"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Delivering in repeated cycles that each add to a working product is iterative-incremental. Linear-sequential finishes each step before the next starts; hybrid combines both. Product-based planning is a planning technique, not a delivery approach."
+  },
+  {
+    "id": "PRINCE2-T2-048",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Role combinations",
+    "stem": "On a small project, which role combination does PRINCE2 allow?",
+    "options": [
+      "The project manager also doing the team manager role",
+      "Project support also doing project assurance",
+      "The executive also performing the project manager role",
+      "The project manager also doing user assurance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Depending on scale, the project manager may also perform the team manager and project support roles. The executive and project manager roles cannot be combined, and assurance must stay independent of the project manager and of support."
+  },
+  {
+    "id": "PRINCE2-T2-049",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Communication",
+    "stem": "Consider these statements about communication in PRINCE2:\n\n1. Communication is only needed with people who hold a project role.\n\n2. Communication helps avoid misconceptions and needless barriers to change.\n\n3. The communication management approach supports a two-way flow of information.\n\n4. Remote and hybrid teams communicate in the same way as co-located teams.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 4",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Communication avoids misconceptions and unnecessary barriers, and the communication management approach gives a controlled, bidirectional flow of information across the ecosystem. How teams communicate depends on whether they are co-located, remote or hybrid.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-050",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Premature closure",
+    "stem": "The board decides to end a project early because it is no longer justified. What does closing a project make sure of?",
+    "options": [
+      "The project is restarted with a new project manager",
+      "The work in progress is abandoned at once",
+      "All the remaining products are still finished and handed over as planned",
+      "The project is closed in an orderly way and value is salvaged"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For a premature close, closing a project makes sure the project is closed in an orderly way and not simply abandoned, salvaging any value created and raising gaps left by the cancellation with the business."
+  },
+  {
+    "id": "PRINCE2-T2-051",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "What tailoring changes",
+    "stem": "Consider these statements about tailoring PRINCE2:\n\n1. The executive and project manager roles can be combined on a small project.\n\n2. Terms used in the method can be changed to match the organization's own.\n\n3. One of the seven principles can be dropped for a low-risk project.\n\n4. Tailoring adapts the method to the project's environment and complexity.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tailoring adapts the method, including its terminology, to suit the project environment, size and complexity. The principles are never dropped, and the executive role cannot be combined with the project manager role.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-052",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business case through the lifecycle",
+    "stem": "Consider these statements about the business case:\n\n1. It is written once at start-up and then not changed.\n\n2. It is checked at decision points such as stage boundaries.\n\n3. It is only needed for projects funded by external customers.\n\n4. It is maintained and updated as the project progresses.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The business case is developed, then checked at key decision points and maintained through the project, with benefits confirmed during and after it. Every PRINCE2 project needs one, whoever funds it.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-053",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number of stages",
+    "stem": "Consider these statements about stages:\n\n1. A project has at least two stages.\n\n2. Every project has exactly four stages.\n\n3. The number of stages is set by the business layer.\n\n4. The first stage is the initiation stage.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 4",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "There should be at least two stages, the first of which is the initiation stage. The number of stages varies with the nature of the products and the delivery activities; it is not fixed.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-054",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality review roles",
+    "stem": "Consider these statements about quality roles:\n\n1. The producer is the person or group who develops a product.\n\n2. The approver must always be the senior supplier.\n\n3. The reviewer is responsible for fixing defects found.\n\n4. A reviewer is independent of the producer.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 4",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The producer develops the product, and a reviewer is independent of the producer and assesses the product against its description. The approver can be any person or group qualified and authorized, such as the project board.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-055",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk management approach",
+    "stem": "Consider these statements about the risk management approach:\n\n1. It describes the procedure the project will use for managing risk.\n\n2. It sets out roles and responsibilities for risk management.\n\n3. It lists each risk with its status and history.\n\n4. It is written by the senior supplier after each stage.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The risk management approach, part of the PID, describes how risk will be managed, including the procedure, techniques, standards, responsibilities, tolerances and reporting. The list of risks and their history is the risk register.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-056",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change control decisions",
+    "stem": "Consider these statements about change control:\n\n1. A request for change may be approved, rejected or deferred.\n\n2. Only the project manager may decide on a request for change.\n\n3. The board can delegate some change decisions to a change authority.\n\n4. Changes to the baseline need no record once agreed.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Change control identifies, assesses and then approves, rejects or defers changes to the baseline. The board can delegate authority for some changes to a change authority, and records and the baseline are updated when changes are implemented.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-057",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "PID and project log",
+    "stem": "Consider these statements:\n\n1. The PID is created during starting up a project and not updated.\n\n2. The PID brings together key information to start the project on a sound basis.\n\n3. The project log holds the daily log, lessons log and the registers.\n\n4. The project log needs the board to agree its format.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 4",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The PID is assembled during initiation and reviewed at stage boundaries. The project log holds the daily log, lessons log and the issue, product, quality and risk registers. Logs are informal and need no board agreement on format.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-058",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project board",
+    "stem": "Consider these statements about the project board:\n\n1. It manages the project on a day-to-day basis.\n\n2. It sets the work package tolerances for team managers.\n\n3. It is accountable to the business for the project's success.\n\n4. It sets stage tolerances to manage by exception.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The project board is accountable to the business for the project's success and sets stage tolerances. Day-to-day management and work package tolerances belong to the project manager.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-T2-059",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "People and other elements",
+    "stem": "How does the people element relate to the other PRINCE2 elements?",
+    "options": [
+      "It only applies during the closing a project process",
+      "It replaces the organizing practice on small and simple projects",
+      "The principles, practices and processes are applied by people",
+      "It is managed separately from the practices"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "People are central to the method: the principles, practices and processes are applied by the people involved. The organizing practice sets the roles, and the people element covers how those people work together and with those affected."
+  },
+  {
+    "id": "PRINCE2-T2-060",
+    "section": "prince2",
+    "test": 2,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Process context",
+    "stem": "Consider these statements about the processes:\n\n1. Managing product delivery is used only by the project board.\n\n2. Initiating a project happens after the first delivery stage.\n\n3. Starting up a project is used by both the directing and managing levels.\n\n4. Closing a project is used for both a planned and a premature close.\n\nWhich two statements are correct?",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Starting up a project is used by both the directing and managing levels, and closing a project handles both a planned close and a premature one. Managing product delivery is the team manager's process, and initiation is the first stage.",
+    "lockedOrder": true
+  },
+  {
+    "id": "PRINCE2-D-001",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Seven processes",
+    "stem": "Which is one of the seven PRINCE2 processes?",
+    "options": [
+      "Planning the project",
+      "Reviewing benefits",
+      "Managing the business case",
+      "Managing a stage boundary"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The seven processes are starting up a project, directing a project, initiating a project, controlling a stage, managing product delivery, managing a stage boundary and closing a project."
+  },
+  {
+    "id": "PRINCE2-D-002",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Seven principles",
+    "stem": "Which is one of the seven PRINCE2 principles?",
+    "options": [
+      "Plan the whole project in detail",
+      "Tailor to suit the project",
+      "Use a single delivery method",
+      "Keep the project board informed weekly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The seven principles are ensure continued business justification, learn from experience, define roles, responsibilities and relationships, manage by stages, manage by exception, focus on products and tailor to suit the project."
+  },
+  {
+    "id": "PRINCE2-D-003",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Leading change",
+    "stem": "What does PRINCE2 say is needed to deliver the change that a project introduces?",
+    "options": [
+      "A fixed-price contract",
+      "Effective leadership",
+      "A single delivery method",
+      "A large project board"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Change management moves an organization from the current to the target state, and effective leadership is needed to deliver that change and bring people with it."
+  },
+  {
+    "id": "PRINCE2-D-004",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time-driven control",
+    "stem": "Which is an example of a time-driven control?",
+    "options": [
+      "An end stage report at the end of a stage",
+      "A highlight report sent every two weeks",
+      "An exception report after a forecast breach",
+      "An end project report at closure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Time-driven controls take place at predefined periodic intervals, such as highlight and checkpoint reports. End stage, exception and end project reports are triggered by events."
+  },
+  {
+    "id": "PRINCE2-D-005",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Exception plan",
+    "stem": "When is an exception plan produced?",
+    "options": [
+      "At the start of every stage, alongside the stage plan",
+      "After an exception report, to show how the project will respond",
+      "When a team manager accepts a work package",
+      "When the project is closed early and needs a plan for closing it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An exception plan follows an exception report and explains how the project will respond to the exception. Once approved, it replaces the plan that was in exception."
+  },
+  {
+    "id": "PRINCE2-D-006",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Quality definition",
+    "stem": "How does PRINCE2 define quality?",
+    "options": [
+      "The degree to which a product was delivered on time",
+      "The agreement of the users that they like the finished product overall",
+      "The absence of any defects in the finished product",
+      "The degree to which inherent characteristics fulfil requirements"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Quality is the degree to which a set of inherent characteristics of a product, service, process, person, organization, system or resource fulfils its requirements."
+  },
+  {
+    "id": "PRINCE2-D-007",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cause, event, effect",
+    "stem": "A risk is written as: 'Because the venue has no backup generator, a power cut may stop the event, delaying the launch.' What is 'a power cut may stop the event'?",
+    "options": [
+      "The risk response",
+      "The risk cause",
+      "The risk effect",
+      "The risk event"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Describing a risk by cause, event and effect separates the source (no backup generator), the uncertain event (a power cut stopping the event) and the effect on objectives (a delayed launch)."
+  },
+  {
+    "id": "PRINCE2-D-008",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Problem",
+    "stem": "Which type of issue has an immediate and negative impact?",
+    "options": [
+      "A concern",
+      "A problem",
+      "A request for change",
+      "An off-specification"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A problem is an issue with an immediate and negative impact. A concern is an issue whose timeliness and impact still need to be assessed."
+  },
+  {
+    "id": "PRINCE2-D-009",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Business objective",
+    "stem": "What is a business objective?",
+    "options": [
+      "A limit on how much a plan may deviate before escalation",
+      "A task the project manager must complete in each stage",
+      "A measurable outcome showing progress toward the organization's strategy",
+      "A product that the project must deliver to gain the users' formal acceptance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Business objectives are the measurable outcomes that demonstrate progress against the organization's strategy, to which the project should contribute through its benefits."
+  },
+  {
+    "id": "PRINCE2-D-010",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project manager authority",
+    "stem": "Within what does the project manager run the project on behalf of the project board?",
+    "options": [
+      "The agreed project tolerances and constraints",
+      "The risk appetite of the senior supplier",
+      "The work package tolerances set by team managers",
+      "The budget agreed with project support"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The project manager has authority to run the project day to day on behalf of the board within the agreed tolerances and constraints, and sets work package tolerances for team managers."
+  },
+  {
+    "id": "PRINCE2-D-011",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Aspects of performance",
+    "stem": "Which is one of the seven aspects of project performance that PRINCE2 manages?",
+    "options": [
+      "Morale",
+      "Innovation",
+      "Stakeholder satisfaction",
+      "Sustainability"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The seven aspects of performance are benefits, costs, time, quality, scope, sustainability and risk. Each has its own tolerance. Morale and reputation matter, but they are not performance targets in the method."
+  },
+  {
+    "id": "PRINCE2-D-012",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project mandate",
+    "stem": "What triggers starting up a project?",
+    "options": [
+      "The project mandate",
+      "The first highlight report",
+      "The project initiation documentation",
+      "The project brief"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The project mandate is produced by the authority commissioning the project, in the business layer, and is the trigger for starting up a project. The project brief is an output of starting up."
+  },
+  {
+    "id": "PRINCE2-D-013",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Learn from experience timing",
+    "stem": "When should a PRINCE2 project team look for and apply lessons?",
+    "options": [
+      "Only after the project has been closed",
+      "At the start, throughout the project and at its close",
+      "Only when an exception has been raised",
+      "Only during starting up a project and initiating a project"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Learn from experience applies across the whole lifecycle: lessons from earlier projects are sought at the start, lessons are recorded and applied during the project, and they are passed on at the end."
+  },
+  {
+    "id": "PRINCE2-D-014",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cultural intelligence",
+    "stem": "A project team includes staff from three countries who work in quite different ways. Which ability helps most?",
+    "options": [
+      "Risk appetite",
+      "Product-based planning",
+      "Cultural intelligence",
+      "Quality control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cultural intelligence is the ability to relate and work across cultures within the organizational ecosystem. It helps a mixed team find compatible ways of working."
+  },
+  {
+    "id": "PRINCE2-D-015",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "End stage report",
+    "stem": "Which report gives the project board the project's performance during a stage and its status at the stage end?",
+    "options": [
+      "End stage report",
+      "Highlight report",
+      "Checkpoint report",
+      "Lessons report"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The end stage report is given by the project manager to the board at the end of each stage, with performance during the stage and status at its end."
+  },
+  {
+    "id": "PRINCE2-D-016",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Schedule",
+    "stem": "In PRINCE2, what is a schedule?",
+    "options": [
+      "The record of the time-driven reports sent to the project board",
+      "A list of the products to be produced during a plan",
+      "A description of a product's quality specifications",
+      "A graphical representation of a plan, such as a Gantt chart"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A schedule is a graphical representation of a plan, such as a Gantt chart, typically showing a sequence of tasks with resource allocations."
+  },
+  {
+    "id": "PRINCE2-D-017",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality planning",
+    "stem": "What happens during quality planning?",
+    "options": [
+      "Finished products are tested against standards",
+      "Users formally accept the project product",
+      "Independent checks confirm the project is being run correctly",
+      "Quality specifications are captured in product descriptions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Quality planning captures the quality specifications for the project products and produces the associated product descriptions and quality management approach. Testing finished products is quality control."
+  },
+  {
+    "id": "PRINCE2-D-018",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk exposure",
+    "stem": "Why does PRINCE2 call risk exposure a neutral concept?",
+    "options": [
+      "It is measured only after the project closes",
+      "Exposure can be positive or negative",
+      "It does not depend on probability or impact",
+      "It is set by the business, not the project"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk exposure is the degree to which an objective is at risk. It is neutral because exposure can be positive, from opportunities, or negative, from threats."
+  },
+  {
+    "id": "PRINCE2-D-019",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business opportunity issue",
+    "stem": "A team finds that a component it built can also be sold to another department, a positive result nobody expected. What type of issue is this?",
+    "options": [
+      "A business opportunity",
+      "A concession",
+      "A request for change",
+      "A newly identified opportunity risk"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A business opportunity is an issue that represents previously unanticipated positive consequences for the project or user organization. It has already been found, so it is an issue rather than a risk."
+  },
+  {
+    "id": "PRINCE2-D-020",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Starting up objectives detail",
+    "stem": "Which is an objective of starting up a project?",
+    "options": [
+      "Work packages are authorized for each team",
+      "The full business case is approved by the project board before initiation",
+      "Products are handed over to the users",
+      "Alternative approaches are evaluated and the project approach agreed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Starting up evaluates alternative approaches and agrees the chosen project approach, alongside the outline business case, authorities, project brief, appointments and the initiation stage plan."
+  },
+  {
+    "id": "PRINCE2-D-021",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Output",
+    "stem": "In PRINCE2, what is an output?",
+    "options": [
+      "The tangible or intangible deliverable of an activity",
+      "The measurable improvement from an outcome",
+      "The completed set of project outputs needed for an outcome",
+      "The result of change in real-world behaviour"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An output is the tangible or intangible deliverable of an activity. The completed set of outputs needed to deliver an outcome is a capability."
+  },
+  {
+    "id": "PRINCE2-D-022",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change authority",
+    "stem": "The project board delegates the review of small requests for change to a nominated group with a budget. What is this group called?",
+    "options": [
+      "A project assurance team",
+      "A project office",
+      "Project support",
+      "A change authority"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A change authority is a person or group to which the board may delegate responsibility for considering requests for change or off-specifications. It may be given a change budget and approve changes within it."
+  },
+  {
+    "id": "PRINCE2-D-023",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Why project management is used",
+    "stem": "Why does a project need a different management approach from business as usual?",
+    "options": [
+      "It never affects the people who do the day-to-day work",
+      "It must always be run by an external supplier",
+      "It is temporary, cross-functional and brings change with uncertainty",
+      "It always costs more than the organization spends on running its operations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Projects bring change, are temporary and cross-functional, are unique and carry uncertainty, so they need management that differs from running the business. Many projects are internal and nearly all affect the people doing business as usual."
+  },
+  {
+    "id": "PRINCE2-D-024",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business justification over time",
+    "stem": "What does the business justification principle require of a project?",
+    "options": [
+      "A justification reviewed only when the project closes",
+      "A justification written only for projects with external suppliers",
+      "A justification to start and an ongoing one to its completion",
+      "A justification approved once by the business before start-up"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The principle needs business justification sufficient to warrant investment to initiate the project and ongoing investment through to completion. If it is lost, the project should be stopped."
+  },
+  {
+    "id": "PRINCE2-D-025",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Impact on project performance",
+    "stem": "What does PRINCE2 say a project's performance depends on?",
+    "options": [
+      "The seniority of the people on the project board",
+      "The number of management products the project produces",
+      "How closely the project team follows the whole method without any tailoring",
+      "The team's capability, its relationships and the people the change affects"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "How well change is implemented, and so how well the project performs, depends on the capabilities of the team, the strength of their relationships and the people affected by the change."
+  },
+  {
+    "id": "PRINCE2-D-026",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "End project report",
+    "stem": "Which report confirms the handover of all products and reviews how the project performed?",
+    "options": [
+      "Highlight report",
+      "Lessons report for the business",
+      "End stage report",
+      "End project report"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The end project report goes from the project manager to the board, confirming the handover of all products, reviewing performance and requesting approval to close."
+  },
+  {
+    "id": "PRINCE2-D-027",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Initiating common understanding",
+    "stem": "Initiating a project aims to give a common understanding of several things. Which is one of them?",
+    "options": [
+      "When the next stage boundary will be reached",
+      "Which products the team will build this week",
+      "How progress will be monitored and controlled",
+      "Whether there is a viable and worthwhile project"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Initiating a project aims for common understanding of the reasons, scope, delivery, decision-making, quality, baselines, risks and issues, how progress is monitored and controlled, information needs and how business policies are applied."
+  },
+  {
+    "id": "PRINCE2-D-028",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product breakdown structure",
+    "stem": "Which planning product is a hierarchy of all the products to be produced during a plan?",
+    "options": [
+      "Work breakdown structure",
+      "Product flow diagram",
+      "Project product description",
+      "Product breakdown structure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A product breakdown structure is a hierarchy of all the products to be produced during a plan. The work breakdown structure covers the work to produce them."
+  },
+  {
+    "id": "PRINCE2-D-029",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product register",
+    "stem": "Which part of the project log identifies the products to be delivered and records their acceptance?",
+    "options": [
+      "Issue register",
+      "Product register",
+      "Quality register",
+      "Risk register"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The product register is a component of the project log that identifies the products the project will deliver and records their acceptance."
+  },
+  {
+    "id": "PRINCE2-D-030",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk budget",
+    "stem": "What is a risk budget?",
+    "options": [
+      "Money to pay for the risk management approach itself",
+      "Money to cover changes to the approved baseline",
+      "Money to fund responses to the project's threats and opportunities",
+      "Money kept back by the business to cover any project overspend"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A risk budget is a sum of money to fund specific responses to threats and opportunities, such as the cost of contingent plans. Money for changes is the change budget."
+  },
+  {
+    "id": "PRINCE2-D-031",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Issue register",
+    "stem": "Who should monitor the issue register on a regular basis?",
+    "options": [
+      "The senior user",
+      "The project assurance team",
+      "The project manager",
+      "The team manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The issue register captures and maintains information on all issues managed formally, and it should be monitored by the project manager regularly."
+  },
+  {
+    "id": "PRINCE2-D-032",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "PID assembly",
+    "stem": "In which process is the project initiation documentation assembled?",
+    "options": [
+      "Managing a stage boundary",
+      "Initiating a project",
+      "Starting up a project",
+      "Directing a project"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The PID is assembled in initiating a project from the management products created or updated during initiation, and it is used to gain authorization for the project to proceed."
+  },
+  {
+    "id": "PRINCE2-D-033",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project brief",
+    "stem": "Which management product supports the business case practice by giving the project a well-defined starting point?",
+    "options": [
+      "The checkpoint report",
+      "The quality register",
+      "The issue register",
+      "The project brief"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The project brief, created in starting up a project, gives the project a commonly understood and well-defined starting point. It is superseded by the PID and not maintained."
+  },
+  {
+    "id": "PRINCE2-D-034",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Commercial management approach",
+    "stem": "Which part of the PID describes the organizational and commercial arrangements with suppliers?",
+    "options": [
+      "The commercial management approach",
+      "The communication management approach",
+      "The benefits management approach",
+      "The quality management approach"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The commercial management approach supports the organizing practice by describing the delivery model: the organizational and commercial arrangements, reflected in the project management team structure."
+  },
+  {
+    "id": "PRINCE2-D-035",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Manage by exception levels",
+    "stem": "Manage by exception establishes limits of delegated authority. What are those limits called?",
+    "options": [
+      "Baselines",
+      "Tolerances",
+      "Constraints",
+      "Milestones"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Manage by exception defines tolerances for performance against plans. Each level of management can act freely inside its tolerances and escalates when a forecast says they will be exceeded."
+  },
+  {
+    "id": "PRINCE2-D-036",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business as usual",
+    "stem": "Why does a project affect people's business as usual?",
+    "options": [
+      "It takes over business as usual work while it runs",
+      "It replaces the organization's normal line management structure for good",
+      "It needs the users to stop work until handover",
+      "It delivers change to their activities, routines and responsibilities"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The purpose of a project is to deliver change, and that change affects people in their business as usual activities, routines and responsibilities."
+  },
+  {
+    "id": "PRINCE2-D-037",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecast",
+    "stem": "In PRINCE2, what is a forecast?",
+    "options": [
+      "A prediction made by studying historical data and past patterns",
+      "A record of the products accepted so far",
+      "A plan that replaces the current stage plan after an exception occurs",
+      "A target set by the business for the project"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A forecast is a prediction made by studying historical data and past patterns. Forecasting the remaining work lets the project manager spot an exception before it happens."
+  },
+  {
+    "id": "PRINCE2-D-038",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Features of PRINCE2",
+    "stem": "Which feature of PRINCE2 means it can be used for any project, of any scale, alongside industry-specific models?",
+    "options": [
+      "Outcome-focused",
+      "Universal",
+      "Proven",
+      "Common language"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PRINCE2 is universal: it can be applied to any project of any scale and used alongside specialist models. Proven refers to its basis in established practice, and common language to the shared vocabulary it gives everyone."
+  },
+  {
+    "id": "PRINCE2-D-039",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning steps",
+    "stem": "In the PRINCE2 planning technique, what comes after defining and analysing the products?",
+    "options": [
+      "Creating the product breakdown structure",
+      "Organizing work packages",
+      "Writing product descriptions",
+      "Writing the project product description"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After the products are defined and analysed, the technique goes on to organizing work packages, preparing estimates, preparing the schedule, analysing risks, preparing the budget and documenting the plan."
+  },
+  {
+    "id": "PRINCE2-D-040",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Requirement",
+    "stem": "In PRINCE2, what is a requirement?",
+    "options": [
+      "A contract term agreed with an external supplier",
+      "A limit on cost that must not be exceeded",
+      "A wish from a user that has not yet been written down or agreed",
+      "A need or expectation documented in an approved management product"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A requirement is a need or expectation that is documented in an approved management product. Until it is documented and approved it is not a requirement under the method."
+  },
+  {
+    "id": "PRINCE2-D-041",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Residual risk",
+    "stem": "What is residual risk?",
+    "options": [
+      "A risk left over from a previous project",
+      "A risk that has already occurred and turned into an issue",
+      "The risk remaining after a response has been applied",
+      "A risk that nobody has been assigned to own"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Residual risk is the risk remaining after the risk response has been applied. A risk that has occurred is managed as an issue."
+  },
+  {
+    "id": "PRINCE2-D-042",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decide step",
+    "stem": "In the decide step of the issue technique, which is a possible decision?",
+    "options": [
+      "Register the issue",
+      "Determine the issue type",
+      "Ask for an exception plan",
+      "Assess impact on the business case"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In the decide step the decision-maker can approve, reject, ask for an exception plan or request more information. Registering the issue and determining its type happen at capture."
+  },
+  {
+    "id": "PRINCE2-D-043",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stage boundary timing",
+    "stem": "When should managing a stage boundary be carried out?",
+    "options": [
+      "Only when an exception is raised",
+      "Only after the final stage",
+      "At, or close to, the end of each stage",
+      "At the start of every work package in a stage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Managing a stage boundary should be executed at, or close to, the end of each stage so the board can review the stage and decide on the next. It is also used for exception plans."
+  },
+  {
+    "id": "PRINCE2-D-044",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Principle misapplied",
+    "stem": "A project board asks for a detailed report every day and approves every small decision itself. Which principle is it failing to apply?",
+    "options": [
+      "Focus on products",
+      "Manage by stages",
+      "Learn from experience",
+      "Manage by exception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under manage by exception the board delegates within tolerances and is involved when a tolerance is forecast to be exceeded. Approving every small decision makes poor use of the board's time and the project manager's authority."
+  },
+  {
+    "id": "PRINCE2-D-045",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Management definition",
+    "stem": "In PRINCE2, what is management?",
+    "options": [
+      "Instructing the execution of tasks in line with agreed ways of working",
+      "Setting the project-level tolerances on behalf of the commissioning business",
+      "Motivating people to achieve the project's objectives",
+      "Approving the business case at each stage boundary"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Management is instructing the execution of tasks in line with agreed ways of working. Motivating people to achieve objectives is leadership."
+  },
+  {
+    "id": "PRINCE2-D-046",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Digital and data management approach",
+    "stem": "Which management product supports the progress practice by describing how the project will manage its data and digital tools?",
+    "options": [
+      "Change management approach",
+      "Digital and data management approach",
+      "Commercial management approach",
+      "Communication management approach for reporting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The digital and data management approach, part of the PID, supports progress management, including the use of data and systems to monitor and report progress."
+  },
+  {
+    "id": "PRINCE2-D-047",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Confirm benefits",
+    "stem": "Most benefits of a training programme will only be seen a year after the project closes. How does PRINCE2 handle this?",
+    "options": [
+      "Recording them as dis-benefits in the risk register",
+      "Post-project benefit reviews in the benefits management approach",
+      "Keeping the whole project open until every benefit has been measured",
+      "Removing those benefits from the business case"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Benefits that come after closure are confirmed through post-project reviews planned in the benefits management approach, which is updated during closing a project. The project is not kept open to wait for them."
+  },
+  {
+    "id": "PRINCE2-D-048",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Customer term",
+    "stem": "When does PRINCE2 use the term 'customer'?",
+    "options": [
+      "For the executive on every project",
+      "Whenever the users are outside the business",
+      "For anyone at all who will use the project's products after handover",
+      "Only where there is a commercial relationship with the supplier"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The term customer is only used where there is a commercial relationship between the business and the supplier. It is the person or group from the business who commissioned the work and will benefit from the results."
+  },
+  {
+    "id": "PRINCE2-D-049",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stage boundary objectives",
+    "stem": "Which is an objective of managing a stage boundary?",
+    "options": [
+      "Producing the project brief for the board",
+      "Agreeing tolerances for each work package",
+      "Confirming that the project product is accepted by the users",
+      "Recording lessons that can help later stages or other projects"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Managing a stage boundary assures the board the stage is complete, prepares the next stage or exception plan, updates the PID, informs the board on viability, records lessons and requests authorization to continue."
+  },
+  {
+    "id": "PRINCE2-D-050",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scope",
+    "stem": "How does PRINCE2 define the scope of a plan?",
+    "options": [
+      "The list of users who will receive the products from each stage plan",
+      "The money set aside in a plan to cover changes",
+      "The product, delivery and management activities in an approved plan",
+      "The period over which the benefits are realized"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scope is the sum of the product, delivery and management activities represented by an approved plan and its product and work package descriptions. Money set aside for changes is the change budget."
+  },
+  {
+    "id": "PRINCE2-D-051",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality specifications",
+    "stem": "What are quality specifications?",
+    "options": [
+      "The quality measures and the levels a finished product must meet",
+      "The independent checks the business makes on the project",
+      "The prioritized list of criteria for accepting the project product",
+      "The user's general statement of the quality they expect"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quality specifications describe the quality measures that will be applied by those performing quality control and the levels the finished product must meet."
+  },
+  {
+    "id": "PRINCE2-D-052",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Contingent plans",
+    "stem": "The team cannot prevent a key supplier going out of business, so it agrees in advance what it will do if that happens. Which response is this?",
+    "options": [
+      "Avoid the threat",
+      "Transfer the risk to a third party",
+      "Prepare contingent plans",
+      "Accept the risk"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Preparing contingent plans means planning in advance the actions to take if the risk occurs. Accepting is a decision to take no action and live with the risk."
+  },
+  {
+    "id": "PRINCE2-D-053",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Escalating issues",
+    "stem": "When should the project manager escalate an issue to the project board?",
+    "options": [
+      "Whenever any issue is entered in the daily log",
+      "When resolving it would go beyond the project manager's authority",
+      "Only when the issue is raised by a team manager",
+      "Only once the stage has already gone beyond its agreed tolerances"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the recommend step, an issue is escalated if dealing with it is beyond the project manager's delegated authority. Escalation is triggered by a forecast, before tolerances are exceeded."
+  },
+  {
+    "id": "PRINCE2-D-054",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directing ongoing direction",
+    "stem": "During a stage, the project manager needs advice on a difficult decision from the project board. Which process covers the board's response?",
+    "options": [
+      "Managing a stage boundary",
+      "Directing a project",
+      "Initiating a project",
+      "Controlling a stage"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Directing a project gives appropriate management direction and control throughout the project's life, including responding to requests for advice from the project manager."
+  },
+  {
+    "id": "PRINCE2-D-055",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tailoring the principle",
+    "stem": "A project is small, low-risk and run by an experienced team. Under the tailor to suit the project principle, what should happen?",
+    "options": [
+      "The method is applied exactly as written, whatever the scale",
+      "The project is run without any PRINCE2 practices",
+      "The principles are reduced to the four most useful",
+      "The method is adapted to fit the project's scale and risk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tailoring adapts the method to the project's environment, size, complexity, importance, delivery method, team capability and risk. A small project still applies all seven principles and all the practices, in a lighter form."
+  },
+  {
+    "id": "PRINCE2-D-056",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders without roles",
+    "stem": "Who must a project involve, according to the people element?",
+    "options": [
+      "Those with project roles and key people affected by or critical to it",
+      "Only those named in the project management team structure",
+      "Only the executive, the senior user and the senior supplier on the board",
+      "Only staff of the business that pays for the project"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A project needs to involve those with a formal role and key people who are either impacted by or critical to its success, even if they have no formal role."
+  },
+  {
+    "id": "PRINCE2-D-057",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Escalating",
+    "stem": "A team manager forecasts that a work package will exceed its time tolerance. What should the team manager do?",
+    "options": [
+      "Change the work package tolerances",
+      "Raise an issue with the project manager",
+      "Send an exception report to the project board",
+      "Wait until the tolerance has been exceeded"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tolerance breaches are escalated one level up. For a work package, the team manager raises an issue with the project manager, who sets those tolerances. Exception reports go from the project manager to the board."
+  },
+  {
+    "id": "PRINCE2-D-058",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Project management definition",
+    "stem": "In PRINCE2, what is project management?",
+    "options": [
+      "Approving the business case before any work starts",
+      "Applying methods, tools, techniques and competencies to a project",
+      "Delivering the specialist products of a project to the users on time",
+      "Setting the overall objectives and tolerances for a project"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PRINCE2 defines project management as the application of methods, tools, techniques and competencies to a project. Setting overall objectives and tolerances is done by the business layer."
+  },
+  {
+    "id": "PRINCE2-D-059",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aligning products to objectives",
+    "stem": "Why should a project's products be aligned to business objectives?",
+    "options": [
+      "So the supplier can set the project's costs",
+      "So the project needs no tolerances for benefits",
+      "So the project board does not need to review progress at stage ends",
+      "So the outputs lead to outcomes and benefits the business wants"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Products lead to outcomes, and outcomes to benefits that contribute to business objectives. Aligning products to those objectives, within tolerances, is part of managing the business case."
+  },
+  {
+    "id": "PRINCE2-D-060",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Role descriptions",
+    "stem": "Which management product describes the specific responsibilities of each member of the project management team?",
+    "options": [
+      "Work package description",
+      "Project brief",
+      "Role descriptions",
+      "Lessons report"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Role descriptions, part of the PID, describe the roles of those in the project management team and their specific responsibilities. A role is the function in this project, not a person's job outside it."
+  },
+  {
+    "id": "PRINCE2-D-061",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlling stage scope",
+    "stem": "What happens to the business case while a stage is being controlled?",
+    "options": [
+      "It is replaced by the stage plan",
+      "It is written in full for the first time",
+      "It is left unchanged until closure",
+      "It is kept under review"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Controlling a stage keeps the business case under review during the stage, as well as focusing on delivering the stage's products and controlling risks and issues."
+  },
+  {
+    "id": "PRINCE2-D-062",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tolerances and constraints",
+    "stem": "How do plans use tolerances?",
+    "options": [
+      "To set the exact date when every product must be delivered",
+      "To remove the need to report progress until the end",
+      "To let team managers approve changes to the baseline",
+      "To give each level room to manage within its constraints"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Plans use tolerances to manage constraints: each level can manage within its tolerances, giving flexibility, and escalates only when a forecast says they will be exceeded."
+  },
+  {
+    "id": "PRINCE2-D-063",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Types of acceptance",
+    "stem": "Which type of acceptance is given by the group that will support a product after it goes into the operational environment?",
+    "options": [
+      "Supplier acceptance of the delivered product",
+      "Project board approval at closure",
+      "User acceptance after handover",
+      "Operational and maintenance acceptance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Operational and maintenance acceptance is given by those who will support the product once delivered. User acceptance comes from those who will use it."
+  },
+  {
+    "id": "PRINCE2-D-064",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decision bias",
+    "stem": "Why does PRINCE2 ask teams to understand decision bias when managing risk?",
+    "options": [
+      "Bias sets the business's risk appetite",
+      "Bias is recorded in the register in place of risk probability",
+      "Bias can distort how people identify and assess risks",
+      "Bias decides who becomes the risk owner"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Risk culture and decision bias affect how people see and judge risk. Understanding bias helps a team identify and assess risks more objectively."
+  },
+  {
+    "id": "PRINCE2-D-065",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change control definition",
+    "stem": "In PRINCE2, what is change control?",
+    "options": [
+      "Identifying, assessing and approving, rejecting or deferring baseline changes",
+      "Moving an organization from its current state to a target state",
+      "Recording the minor concerns that the project manager can handle informally",
+      "Assigning work packages to team managers for delivery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Change control is the process by which changes that may affect the project baseline are identified, assessed and then approved, rejected or deferred. Moving to a target state is change management."
+  },
+  {
+    "id": "PRINCE2-D-066",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Focus on products definition",
+    "stem": "The focus on products principle concentrates on the definition and delivery of products, in particular their:",
+    "options": [
+      "Risks and issues",
+      "Costs and dates of delivery",
+      "User quality expectations and requirements",
+      "Supplier contracts and commercial arrangements"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A PRINCE2 project focuses on the definition and delivery of products, in particular their user quality expectations and requirements. Costs, dates and risks are planned around those products."
+  },
+  {
+    "id": "PRINCE2-D-067",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social cohesion",
+    "stem": "A hybrid team rarely meets in person and members feel disconnected. What should the project manager focus on?",
+    "options": [
+      "Raising an exception report to the project board",
+      "Building social cohesion and trust in the team",
+      "Moving the work into a single work package",
+      "Asking project assurance to take over the team"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bringing teams together and building social cohesion, whether co-located, virtual or hybrid, is part of managing successful teams. An exception report is for forecast tolerance breaches."
+  },
+  {
+    "id": "PRINCE2-D-068",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lessons report",
+    "stem": "What is the main use of a lessons report?",
+    "options": [
+      "To list the quality checks carried out in a stage",
+      "To request the project board's approval to close the project",
+      "To record minor problems that need no formal action",
+      "To pass on lessons that can help this or other projects"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A lessons report passes on lessons that can be applied to this or future projects, supporting the learn from experience principle. The lessons log is where they are collected informally."
+  },
+  {
+    "id": "PRINCE2-D-069",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Directing post-project",
+    "stem": "Which objective of directing a project continues past the end of the project?",
+    "options": [
+      "There is authority to deliver the project product in each stage",
+      "The business layer is linked to the project",
+      "The project remains viable at each stage",
+      "Plans for realizing post-project benefits are managed and reviewed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Directing a project ensures plans for realizing post-project benefits are managed and reviewed. Benefits often come after closure, so the reviews are planned before the project ends."
+  },
+  {
+    "id": "PRINCE2-D-070",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Concepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Project context",
+    "stem": "A project is part of a programme, uses an external supplier under contract and must meet strict environmental targets. Which integrated element of PRINCE2 covers these circumstances?",
+    "options": [
+      "The organizing practice",
+      "The people",
+      "The project context",
+      "The processes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The project context is the element that covers the organizational and commercial setting, the delivery method, sustainability requirements and scale. The principles, practices and processes are then applied to fit that context."
+  },
+  {
+    "id": "PRINCE2-D-071",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2BusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Benefits tolerance",
+    "stem": "Where is benefits tolerance documented?",
+    "options": [
+      "In the work package description",
+      "In the daily log",
+      "In the stage plan",
+      "In the business case"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Benefits tolerance, the permissible deviation in benefit performance targets before escalation, is documented in the business case. Sustainability tolerance is documented there too."
+  },
+  {
+    "id": "PRINCE2-D-072",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Organizing",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Accountable versus responsible",
+    "stem": "What is the difference between being accountable and being responsible in PRINCE2?",
+    "options": [
+      "Neither can be delegated once the project starts",
+      "Responsibility cannot be delegated; accountability can",
+      "Both can be delegated to the project manager",
+      "Accountability cannot be delegated; responsibility can"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The accountable person is the single person who owns a task, and accountability cannot be delegated. The responsible person has the authority and is expected to perform the task, and responsibility can be delegated."
+  },
+  {
+    "id": "PRINCE2-D-073",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Plans",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delivery sustainability",
+    "stem": "How does the plans practice support sustainability?",
+    "options": [
+      "By planning how sustainability targets will be met in delivery",
+      "By moving all sustainability work until after the project has closed",
+      "By treating sustainability as a dis-benefit",
+      "By leaving sustainability to the supplier's own plans"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Delivery sustainability is part of effective planning: plans show how the sustainability performance targets for the project work and products will be achieved."
+  },
+  {
+    "id": "PRINCE2-D-074",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Quality",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality review",
+    "stem": "What does a quality review assess?",
+    "options": [
+      "Whether a product is complete, meets standards and its specifications",
+      "Whether the team is working to agreed ways of working",
+      "Whether the stage will finish inside its tolerances",
+      "Whether the project is still fully justified by its business case"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quality reviews assess whether a product is complete, adheres to standards and meets its quality specifications. They may happen at several points in a complex product's development."
+  },
+  {
+    "id": "PRINCE2-D-075",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Risk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk tolerance",
+    "stem": "What is risk tolerance?",
+    "options": [
+      "The chance that a risk will occur during a stage",
+      "The amount and type of risk the business is willing to take overall",
+      "The time between a risk occurring and its effect",
+      "A measurable threshold for the tolerable range of outcomes per objective"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Risk tolerance is a measurable threshold for the tolerable range of outcomes for each objective at risk, in the same units used to measure that objective. Risk appetite is the business's overall willingness to take risk."
+  },
+  {
+    "id": "PRINCE2-D-076",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Issues",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Issue management approach",
+    "stem": "Which management product describes how issues will be handled and changes controlled on the project?",
+    "options": [
+      "The communication management approach",
+      "The issue register",
+      "The issue management approach",
+      "The risk management approach"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The issue management approach, part of the PID, describes the procedures, techniques and responsibilities for handling issues and change control. The issue register records the issues themselves."
+  },
+  {
+    "id": "PRINCE2-D-077",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Principles",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Principle from scenario",
+    "stem": "A new project manager is not sure who should approve a change and whether the senior supplier can commit resources. Which principle has been poorly applied?",
+    "options": [
+      "Ensure continued business justification",
+      "Define roles, responsibilities and relationships",
+      "Focus on products",
+      "Learn from experience"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When people do not know who decides what, roles and responsibilities have not been defined and agreed. This principle makes accountability and authority clear across the business, user and supplier interests."
+  },
+  {
+    "id": "PRINCE2-D-078",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2People",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Bidirectional information",
+    "stem": "Why does PRINCE2 want information to flow both ways between the project and its stakeholders?",
+    "options": [
+      "It keeps users from changing their requirements",
+      "It lets the project board approve every decision in person",
+      "Feedback supports alignment and helps shape the project",
+      "It removes the need for highlight reports"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The communication management approach establishes a controlled, bidirectional flow so feedback from across the ecosystem keeps people aligned and helps shape the project."
+  },
+  {
+    "id": "PRINCE2-D-079",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Progress",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dashboard",
+    "stem": "In PRINCE2, what is a dashboard?",
+    "options": [
+      "A plan showing every product and its dependencies",
+      "A graphic summary of key decision-support data on progress",
+      "A formal report that replaces the highlight report each week",
+      "A list of open issues sorted by priority"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A dashboard represents large amounts of decision-support data as a current, easy-to-read summary, usually graphic, of key information on progress and performance."
+  },
+  {
+    "id": "PRINCE2-D-080",
+    "section": "prince2",
+    "test": 0,
+    "module": 1,
+    "domain": "p2Processes",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work package description",
+    "stem": "Which document is used in managing product delivery to pass responsibility for work formally to a team manager?",
+    "options": [
+      "Work package description",
+      "Product flow diagram",
+      "Team plan for the work",
+      "Project brief"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A work package description describes how one or more products will be produced and delivered, and is used to pass responsibility for the work formally to a team manager or team member."
+  }
+]

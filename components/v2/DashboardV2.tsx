@@ -275,17 +275,19 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   : routes.drill(s.def.key)
                 : routes.drillQuestions(s.def.key);
               return (
+                <div key={`${s.def.key}-${step.kind}`}>
+                  {/* The section name sits outside the row, so the "you came
+                      back here" ring wraps only the card, not the label. */}
+                  {newSection && (
+                    <p className={`text-[11px] font-semibold text-gray-500 dark:text-gray-400 mb-1.5 ${index === 0 ? "" : "mt-3"}`}>{section.name}</p>
+                  )}
                 <div
-                  key={`${s.def.key}-${step.kind}`}
                   id={`progress-${basics ? "basics" : "drill"}:${s.def.key}`}
                   tabIndex={-1}
                   aria-label={`${s.def.name}${basics ? " Basics" : ""}: ${subtitle}`}
                   onBlur={() => setReturnedTo(null)}
                   className={`progress-row rounded-xl scroll-mt-6 focus:outline-none ${returnedTo === `${basics ? "basics" : "drill"}:${s.def.key}` ? `focus:ring-2 ${step.complete ? "focus:ring-green-500" : "focus:ring-brand"} focus:ring-offset-4 dark:focus:ring-offset-gray-950` : ""}`}
                 >
-                  {newSection && (
-                    <p className={`text-[11px] font-semibold text-gray-500 dark:text-gray-400 mb-1.5 ${index === 0 ? "" : "mt-3"}`}>{section.name}</p>
-                  )}
                   <ProgressCard
                     title={basics ? `${s.def.name} [Basics]` : s.def.name}
                     subtitle={subtitle}
@@ -296,6 +298,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                     href={gated ? undefined : href}
                     onClick={gated ? () => paywall.open(`drill_${s.def.key}`, `${s.def.name} drill`) : undefined}
                   />
+                </div>
                 </div>
               );
             })}

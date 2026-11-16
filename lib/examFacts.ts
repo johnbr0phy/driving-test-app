@@ -6276,6 +6276,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Bylaw No. (85) of 2006 and the Dubai Land Department's real estate legislation, and RERA's Real Estate Brokerage Practice Guide (second edition, November 2024), checked November 2026",
     source: { name: "Dubai Land Department: Real Estate Brokerage Practice Guide 2024", url: "https://dubailand.gov.ae/media/i31iv1n0/real_estate_brokerage_practice_guide_2024.pdf" },
+  },
   nzrealestate: {
     answer:
       "To work as a real estate salesperson in New Zealand you need a licence from the Real Estate Authority (REA, Te Mana Papawhenua), and the qualification REA accepts for a salesperson licence is the New Zealand Certificate in Real Estate (Salesperson) (Level 4), 50 credits, offered by approved providers such as REINZ, Skills Institute, Strategi, Open Polytechnic and Toi Ohomai. You must also be at least 18, a fit and proper person and consent to a criminal conviction history check. A salesperson must be supervised by a licensed agent or branch manager. Training providers write and mark their own assessments, and no national question count or pass mark is published, so Tigertest's mock tests use an 80% readiness target.",

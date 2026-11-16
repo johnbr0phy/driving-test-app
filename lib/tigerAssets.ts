@@ -190,7 +190,6 @@ const BORROWED_SETS: Record<string, string> = {
   // licence, security guard and NCLEX families.
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",
   nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", aerera: "realestate", mypce: "insurance", kenck: "nclex",
-  nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", mypce: "insurance", kenck: "nclex",
   // NZ real estate salesperson borrows the real estate tiger.
   nzrealestate: "realestate",
   ppsc: "phcse", punjabpolice: "police", pakarmy: "asvab", pkpaf: "asvab", pknle: "nclex", pkpnmc: "nclex",

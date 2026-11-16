@@ -1,4 +1,4 @@
-CAT = "chMarkings"; SEG = "MRK"
+CAT = 'chMarkings'; SEG = 'MRK'
 Q = [
 ('A solid white line runs along the middle of the road. What may you not do?',
  'Cross it or drive over it', ['Drive closer than 1 m to it', 'Brake while beside it', 'Signal while beside it'],
@@ -10,7 +10,7 @@ Q = [
  'Cross the solid line, cautiously', ['Never cross either of the lines', 'Cross it at a junction only', 'Stop on the solid line itself'],
  'A short broken line next to a safety line lets vehicles on that side cross the solid line at that place (SSV art. 73 para. 7).'),
 ('A solid line beside a broken line is marked on the road. You are on the solid-line side. What applies?',
- 'Do not cross the solid line', ['Cross it with the necessary care', 'Cross it only in the night', 'Cross it only to park there'],
+ 'Do not cross the solid line', ['Cross it with the necessary care', 'Cross it only to overtake', 'Cross it only to park there'],
  'With a double line, vehicles on the side of the safety line may neither drive on nor cross it (SSV art. 73 para. 6).'),
 ('A long row of white broken lines gets shorter and closer, ahead of a solid line. What is its purpose?',
  'A solid line follows soon', ['A no-parking section follows', 'The speed limit ends here', 'A bus lane follows soon'],
@@ -58,6 +58,6 @@ Q = [
  'Stop only in that direction', ['Stop in every direction', 'Turn right without stopping', 'Go straight on freely'],
  'A black outline arrow inside a red light means the halt applies only to the direction shown (SSV art. 68 para. 1bis).'),
 ("A traffic officer's hand signal conflicts with the green light. Which do you follow?",
- "The officer's signal", ['The green light', 'The faster car ahead', 'The priority sign'],
+ "The officer's signal", ['The green light', 'The traffic light on the cross road', 'The priority sign'],
  "The Road Traffic Act (SVG art. 27) puts the police's instructions ahead of the general rules, signals and markings, so traffic lights included."),
 ]

@@ -1,4 +1,4 @@
-CAT = "chParking"; SEG = "PRK"
+CAT = 'chParking'; SEG = 'PRK'
 Q = [
 ('On a normal road, on which side must you stop or park?',
  'At the right edge, parallel to it', ['On the left, facing the traffic', 'Anywhere on the carriageway', 'At an angle to the kerb'],
@@ -40,7 +40,7 @@ Q = [
  'At least 3 m', ['At least 1 m', 'At least 2 m', 'At least 5 m'],
  'You may not stop beside safety lines, unbroken longitudinal lines and double lines unless a passage at least 3 m wide stays free (VRV art. 18 para. 2 c).'),
 ('May you park a car without number plates on a public road?',
- 'No', ['Yes, for 24 hours', 'Yes, in the daytime', 'Yes, on a pavement'],
+ 'No, not on any public road', ['Yes, for up to 24 hours', 'Yes, in the daytime only', 'Yes, if the owner stays nearby'],
  'Vehicles without the required plates may not be left on public roads or car parks, except on private car parks where the owner allows it (VRV art. 20).'),
 ('No sign or marking allows parking on a pavement. What may you still do there?',
  'Stop only to load or set down', ['Park if 1 m is left clear', 'Park for up to an hour', 'Park there at night only'],
@@ -49,15 +49,15 @@ Q = [
  '1.50 m', ['0.50 m', '1.00 m', '2.50 m'],
  'Vehicles may not stop on tram tracks or nearer than 1.50 m to the nearest rail (VRV art. 25 para. 5).'),
 ('You park on a downhill slope. What should you do?',
- 'Apply the brake and add a safeguard', ['Rely on the handbrake alone to hold it', 'Leave the car in neutral gear', 'Leave the engine running to hold it'],
+ 'Apply the brake and add a safeguard', ['Rely on the handbrake alone to hold it', 'Leave the gearbox in neutral', 'Turn the wheels away from the kerb'],
  'On a slope you must apply the brake and take another effective safeguard, such as selecting a low gear or turning the wheels toward a kerb (VRV art. 22 para. 2).'),
 ('You leave your car. Which action is required?',
- 'Stop the engine and secure the car', ['Leave the keys in the car for others', 'Leave the engine running', 'Leave a window open a little'],
+ 'Stop the engine and secure the car', ['Switch off the engine but leave it unlocked', 'Leave the engine idling for a short stop', 'Lock it only if you will be away long'],
  'Before leaving, you must switch off the engine and secure the car against rolling away and against use by unauthorised people (VRV art. 22 para. 1).'),
 ('You open your door beside a road. What is your duty?',
- 'Look out for traffic from behind', ['Open it fast and get out quickly', 'Open it only after it is dark', 'Sound the horn before you open it'],
+ 'Look out for traffic from behind', ['Look out for oncoming traffic only', 'Check only for cyclists on the pavement', 'Open it only once the engine is off'],
  'People getting in and out must not endanger others, and when opening doors you must watch for traffic from behind (VRV art. 21 para. 1).'),
-('Why must you not stop in a tunnel unless in an emergency?',
- 'It may block others dangerously', ['It would reduce your fuel economy', 'It could damage the tunnel walls', 'It is noisy for the driver inside'],
+('What is the main reason you must not stop in a tunnel unless in an emergency?',
+ 'It may block others dangerously', ['Idling cars overload the tunnel ventilation', 'Cameras cannot read stopped number plates', 'Stopped cars hide the emergency exits'],
  'In tunnels you may stop only in emergencies and must stop the engine at once (VRV art. 39 para. 3).'),
 ]

@@ -1,4 +1,4 @@
-CAT = "chRoadUsers"; SEG = "RDU"
+CAT = 'chRoadUsers'; SEG = 'RDU'
 Q = [
 ('A pedestrian crossing has no lights. A pedestrian is already on it. Who has priority?',
  'The pedestrian', ['The vehicle that is faster', 'The vehicle that signals', 'Whoever arrived first'],
@@ -55,16 +55,16 @@ Q = [
  'No, only if they can pedal', ['Yes, if an adult walks beside', 'Yes, on quiet streets only', 'Yes, if they wear a helmet'],
  'Children may use a bicycle only if they can work the pedals (VRV art. 42 para. 1).'),
 ("A child's ball rolls into the road. What should you expect?",
- 'A child may follow it', ['The ball will come to a stop', 'Nothing out of the ordinary', 'Another driver to overtake you'],
+ 'A child may follow it', ['The ball to stop at the kerb', 'Children to stay on the pavement', 'The child to look before crossing'],
  'Children often run after a ball. You must slow down and be ready to stop, and sound the horn if children do not pay attention (VRV art. 29).'),
 ('In a pedestrian zone, a vehicle is allowed by exception. What speed must it keep?',
  'Walking pace', ['At most 20 km/h', 'At most 30 km/h', 'At most 10 km/h'],
  'In a pedestrian zone, limited vehicle traffic may go no faster than walking pace, and pedestrians have priority (SSV art. 22c).'),
 ('What rights do pedestrians have in a Meeting zone?',
- 'They may use the whole area, with priority', ['They must stay on the pavement only', 'They must give way to all cars', 'They are not allowed to cross at all'],
+ 'They may use the whole area, with priority', ['No, cycle lanes are for cycles only', 'Yes, but only at up to 30 km/h', 'Yes, but only outside rush hour'],
  'In a Meeting zone, pedestrians may use the entire traffic area and have priority over drivers, but they may not needlessly hinder vehicles (SSV art. 22b).'),
 ('A driver of a vehicle-like device, such as a scooter or rollerblades, uses the pavement. What rule applies?',
- 'Pedestrian rules, and give way to walkers', ['Car rules apply to them as drivers', 'They have priority over all walkers', 'No traffic rules apply to them at all'],
+ 'Pedestrian rules, and give way to walkers', ['No, they must walk on the road', 'Only if they push a bike', 'Only if they walk in single file'],
  'Users of vehicle-like devices follow pedestrian rules, adjust speed and give way to pedestrians (VRV art. 50a).'),
 ('A cycle lane is marked with a broken line. May a car drive on it?',
  'Yes, if cyclists are not hindered', ['No, never at any time of the day', 'Yes, at any speed that they like', 'Only after it has got dark'],

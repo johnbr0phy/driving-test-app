@@ -305,6 +305,11 @@
   "https://www.ontario.ca/page/security-guard-study-guide",
   "https://www.ontario.ca/document/training-syllabus-security-guards"
  ],
+ "cahunteron": [
+  "https://www.ontario.ca/page/hunter-education",
+  "https://www.ohep.net",
+  "https://www.ontario.ca/document/ontario-hunting-regulations-summary/ontario-hunter-education-course"
+ ],
  "camb": [
   "https://www.mpi.mb.ca/en/PDFs/completehandbook.pdf",
   "https://www.mpi.mb.ca/testing-for-your-class-5-licence/",
@@ -403,6 +408,11 @@
   "https://nairametrics.com/2025/11/26/cdcfib-2025-recruitment-over-200000-candidates-fail-computer%e2%80%91based-test",
   "https://arbiterz.com/?p=54640"
  ],
+ "cehrs": [
+  "https://www.nhanow.com/docs/default-source/test-plans/nha_cehrs-test-plan.pdf?sfvrsn=ad996ae5_2",
+  "https://www.nhanow.com/certifications/electronic-health-records-specialist",
+  "https://www.nhanow.com/docs/default-source/test-plans/candidate_handbook.pdf"
+ ],
  "cemap": [
   "https://www.walbrook.ac.uk/libf/professional-qualifications/your-professional-studies/improvements-cemap-from-30-september-2025",
   "https://www.walbrook.ac.uk/hubfs/files/documents/pe/fsre-specification-2026.pdf",
@@ -446,6 +456,11 @@
   "https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf",
   "https://www.aicpa-cima.com/resources/article/learn-what-is-tested-on-the-cpa-exam"
  ],
+ "cpabar": [
+  "https://assets.ctfassets.net/rb9cdnjh59cm/5d2r66sSSE8wJRZTqAshlE/f97ec39c394eeb61b20a5824784306df/CPA_Exam_Blueprints_2026.pdf",
+  "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam",
+  "https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf"
+ ],
  "cpafar": [
   "https://www.aicpa-cima.com/resources/article/learn-what-is-tested-on-the-cpa-exam",
   "https://assets.ctfassets.net/rb9cdnjh59cm/5d2r66sSSE8wJRZTqAshlE/f97ec39c394eeb61b20a5824784306df/CPA_Exam_Blueprints_2026.pdf",
@@ -463,6 +478,11 @@
  ],
  "cpc": [
   "https://aapc.com/certifications/cpc/taking-the-cpc-exam"
+ ],
+ "cpcta": [
+  "https://info.nhanow.com/hubfs/Products/Certified%20Patient%20Care%20Technician%20%28CPCT%29/Test%20Plan/2025/NHA%202025%20CPCT%20Test%20Plan.pdf",
+  "https://info.nhanow.com/mediacenter/coming-soon-new-cpcta-certification-exam-study-materials",
+  "https://info.nhanow.com/hubfs/Test%20Plans/nha-2018-cpct-test-plan-1.pdf"
  ],
  "crfsc": [
   "https://rcmp.ca/en/firearms/firearms-safety-training-transport-and-storage/safety-courses",
@@ -553,6 +573,11 @@
   "https://www.fstyr.dk/Media/639041568193040740/Undervisningsplan%20kategori%20C%20(stor%20lastbil",
   "https://www.fstyr.dk/Media/639041568080850919/Undervisningsplan%20kategori%20CE%20(stor%20lastbil%20med%20stort%20p%c3%a5h%c3%a6ngsk%c3%b8ret%c3%b8j",
   "https://cdn.fstyr.dk/faerdselsstyrelsen/Media/639159124710541258/undervisningsplan-kategori-b-almindelig-bil-version-11-maj-2026_pdf290526.pdf"
+ ],
+ "ea1": [
+  "https://test-takers.psigov.us/api/content/bulletin/12238",
+  "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions",
+  "https://www.irs.gov/node/776"
  ],
  "elevenplus": [
   "https://11plus.gl-assessment.co.uk/free-materials/",
@@ -1069,6 +1094,11 @@
   "https://education.nsw.gov.au/schooling/students/oc-and-shs/going-to-a-selective-high-school/get-ready-for-the-selective-high-school-placement-test",
   "https://education.nsw.gov.au/schooling/parents-and-carers/choosing-a-school-setting/selective-high-schools/placement-test/selective-high-school-practice-tests"
  ],
+ "nzboat": [
+  "https://www.boatingeducation.org.nz/courses/1/day-skipper/",
+  "https://www.boatingeducation.org.nz/downloads/downloads/Domestic_Learners_Handbook_18_March_2026_Spread.pdf",
+  "https://www.boatingeducation.org.nz/faq/"
+ ],
  "nzdrone": [
   "https://www.aviation.govt.nz/assets/rules/consolidations/Part_101_Consolidation.pdf",
   "https://www.aviation.govt.nz/assets/rules/transport-instruments/CATI-101-1.pdf",
@@ -1131,10 +1161,20 @@
   "https://www.pakistanarmy.gov.pk",
   "https://www.app.com.pk/?p=1056892"
  ],
+ "pance": [
+  "https://www.nccpa.net/become-certified/pance-blueprint/",
+  "https://www.nccpa.net/become-certified/test-day/",
+  "https://www.nccpa.net/examdevelopmentscoring/"
+ ],
  "pcoc": [
   "https://tc.canada.ca/en/marine-transportation/marine-safety/proof-competency-recreational-boaters",
   "https://tc.canada.ca/en/marine-transportation/preparing-operate-your-vessel/pleasure-craft-operator-card-pcoc",
   "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2010-91/FullText.html"
+ ],
+ "pentestplus": [
+  "https://www.comptia.org/en-us/certifications/pentest/",
+  "https://lecbyo.files.cmp.optimizely.com/download/1e8cf0febef111efb260822b03028498",
+  "https://www.comptia.jp/pdf/CompTIA%20PenTest%2B%20PT0-003%20Exam%20Objectives%20%283.0%29.pdf"
  ],
  "phcle": [
   "https://www.prc.gov.ph/sites/default/files/Crim%20Program%20of%20Exam%20August%202026.pdf",
@@ -1376,6 +1416,16 @@
   "https://ibsbankcareer.in/notifications/pdfs/6a351de591b7a.pdf",
   "https://sbi.bank.in/web/careers/current-openings",
   "https://sbi.bank.in/web/careers/po-pre-result-2025"
+ ],
+ "sc200": [
+  "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+  "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+  "https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience"
+ ],
+ "sc900": [
+  "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+  "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+  "https://learn.microsoft.com/en-us/credentials/support/credential-retirement"
  ],
  "sehp": [
   "https://www.studera.nu/hogskoleprov/om/intro/",

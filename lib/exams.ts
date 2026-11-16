@@ -7654,7 +7654,7 @@ const cpcta: ExamConfig = {
   idBase: 31000,
   slug: "/cpcta",
   landingPath: "/cpct-practice-test",
-  name: "CPCT/A Practice Test",
+  name: "Patient Care Technician (CPCT/A) Practice Test",
   shortName: "CPCT/A (NHA)",
   examLabel: "CPCT/A exam",
   fullName: "Certified Patient Care Technician/Assistant (CPCT/A) Exam",

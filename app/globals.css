@@ -5828,6 +5828,19 @@
     --brand-border-light: 357 30% 90%;
     --brand-gradient-to: 10 60% 96%;
   }
+  /* Smart Serve Ontario theme: deep wine (340 at 16% so it sits clear of the LCQ raspberry) */
+  [data-theme="smartserve"] {
+    --brand: 340 55% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 40% 95%;
+    --brand-hover: 340 55% 12%;
+    --brand-dark: 340 55% 11%;
+    --brand-darker: 340 50% 8%;
+    --brand-muted: 340 20% 66%;
+    --brand-border: 340 22% 78%;
+    --brand-border-light: 340 15% 88%;
+    --brand-gradient-to: 350 40% 95%;
+  }
 
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
@@ -10799,6 +10812,17 @@
     --brand-muted: 357 30% 45%;
     --brand-dark: 357 100% 65%;
     --brand-darker: 357 100% 78%;
+  }
+  .dark [data-theme="smartserve"] {
+    --brand: 340 55% 50%;
+    --brand-hover: 340 55% 42%;
+    --brand-light: 340 40% 13%;
+    --brand-gradient-to: 350 40% 11%;
+    --brand-border-light: 340 15% 24%;
+    --brand-border: 340 22% 34%;
+    --brand-muted: 340 20% 45%;
+    --brand-dark: 340 55% 65%;
+    --brand-darker: 340 50% 78%;
   }
 
 }

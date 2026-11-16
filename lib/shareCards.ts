@@ -1196,5 +1196,9 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "chtheory": {
     "color": "hsl(357, 100%, 22%)",
     "tint": "hsl(357, 80%, 96%)"
+  },
+  "smartserve": {
+    "color": "hsl(340, 55%, 16%)",
+    "tint": "hsl(340, 40%, 95%)"
   }
 };

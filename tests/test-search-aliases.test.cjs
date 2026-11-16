@@ -276,6 +276,12 @@ const CASES = [
   ["en state final", "NZ", "nzensf"],
   ["enrolled nurse exam nz", "NZ", "nzensf"],
   ["diploma in enrolled nursing", "NZ", "nzensf"],
+  ["ap hug", "US", "aphug"],
+  ["nha cpt", "US", "phleb"],
+  ["nha phlebotomy", "US", "phleb"],
+  ["ohio cdl", "US", "cdl"],
+  ["नवोदय परीक्षा", "IN", "jnvst"],
+  ["नवोदय पेपर", "IN", "jnvst"],
 ];
 
 for (const [q, region, id] of CASES) {

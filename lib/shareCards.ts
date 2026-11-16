@@ -1141,6 +1141,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(80, 40%, 20%)",
     "tint": "hsl(80, 40%, 95%)"
   },
+  "inbde": {
+    "color": "hsl(194, 75%, 16%)",
+    "tint": "hsl(194, 45%, 95%)"
+  },
   "sgsnb": {
     "color": "hsl(320, 55%, 20%)",
     "tint": "hsl(320, 40%, 95%)"

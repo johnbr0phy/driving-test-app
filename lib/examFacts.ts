@@ -5936,6 +5936,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AAT's Level 2 Certificate in Accounting (Q2022) qualification specification, version 5.7, checked November 2026",
     source: { name: "AAT: Level 2 Certificate in Accounting", url: "https://www.aat.org.uk/qualifications-and-courses/accounting/level-2-certificate-accounting" },
   },
+  inbde: {
+    answer:
+      "The Integrated National Board Dental Examination (INBDE) is the Joint Commission on National Dental Examinations' written board exam for dentists. It replaced NBDE Part I and Part II, and US dental licensing jurisdictions use it as part of licensure. It has 500 multiple-choice questions over two days at a Prometric test center: 300 standalone questions and 60 case questions on day one, 140 case questions on day two, in 105-minute sections, 12 hours 30 minutes in all with the tutorial and breaks. Questions come from the JCNDE's Domain of Dentistry, 56 clinical content areas (Diagnosis and Treatment Planning 36%, Oral Health Management 42%, Practice and Profession 22%) and 10 Foundation Knowledge areas. Results are pass or fail; scale scores run from 49 to 99 and 75 is the minimum passing score.",
+    rows: [
+      { label: "Questions", value: "500 multiple choice (300 standalone, 200 case-based)" },
+      { label: "Time", value: "Two days, six 105-minute sections, 12 h 30 min with tutorial and breaks" },
+      { label: "Pass mark", value: "Scale score of 75 (scale 49 to 99), reported pass or fail" },
+      { label: "Content", value: "Diagnosis and Treatment Planning 36%, Oral Health Management 42%, Practice and Profession 22%, across 10 Foundation Knowledge areas" },
+      { label: "Retakes", value: "At least 60 days apart, at most four a year; pass within five years or five attempts" },
+      { label: "Where", value: "Prometric test centers; both days at the same center within 7 days" },
+      { label: "Run by", value: "Joint Commission on National Dental Examinations (JCNDE)" },
+    ],
+    basedOn: "The JCNDE INBDE 2026 Candidate Guide (updated December 15, 2025) and the JCNDE INBDE pages, checked November 2026",
+    source: { name: "JCNDE: INBDE", url: "https://jcnde.ada.org/inbde" },
+  },
   nbdhe: {
     answer:
       "The National Board Dental Hygiene Examination (NBDHE) is the Joint Commission on National Dental Examinations' written board exam for dental hygienists, used by US licensing jurisdictions as part of dental hygiene licensure. It has 350 multiple-choice questions in two sessions: 200 discipline-based questions in 3 hours 30 minutes and 150 case-based questions on 12 to 15 patient cases in 4 hours, about 9 hours in all with breaks. Under the updated specifications scheduled for November 2026, the discipline-based questions are Scientific Basis 56, Clinical Dental Hygiene Services 124 and Research Principles and Community Health 20. Results are pass or fail; scale scores run from 49 to 99 and 75 is the minimum passing score.",

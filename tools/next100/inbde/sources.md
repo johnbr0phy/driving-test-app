@@ -35,6 +35,9 @@ acute allergic reaction) were avoided as topics.
   Topic lists for each FK area (for example FK2.3 critical pH, statherin, erosion from GERD and
   bulimia, tongue jewelry; FK2.4 contralateral subcondylar fracture after a blow to the mandibular
   body; FK2.5 ergonomics, carpal and cubital tunnel; FK3 radiation, materials and lasers).
+- JCNDE INBDE history FAQ, https://jcnde.ada.org/inbde/inbde-history (fetched 2026-11-16): the INBDE
+  replaced NBDE Part I (last given July 31, 2020) and Part II (last given 2022); first scored INBDE
+  administration August 1, 2020.
 - JCNDE INBDE preparation page, https://jcnde.ada.org/inbde/inbde-prepare (fetched 2026-11-16):
   links to the guide, Domain of Dentistry, test specifications and FK document.
 

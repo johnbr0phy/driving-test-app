@@ -4210,6 +4210,20 @@
     --brand-gradient-to: 40 80% 95%;
   }
 
+  /* JCNDE Integrated National Board Dental Examination theme */
+  [data-theme="inbde"] {
+    --brand: 194 75% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 194 45% 95%;
+    --brand-hover: 194 75% 12%;
+    --brand-dark: 194 75% 10%;
+    --brand-darker: 194 70% 7%;
+    --brand-muted: 194 20% 66%;
+    --brand-border: 194 22% 78%;
+    --brand-border-light: 194 15% 88%;
+    --brand-gradient-to: 209 45% 95%;
+  }
+
   /* Nursing Council of New Zealand State Final Examination theme */
   [data-theme="sgsnb"] {
     --brand: 320 55% 20%;
@@ -9400,6 +9414,17 @@
     --brand-darker: 80 40% 78%;
   }
 
+  .dark [data-theme="inbde"] {
+    --brand: 194 75% 50%;
+    --brand-hover: 194 75% 42%;
+    --brand-light: 194 45% 13%;
+    --brand-gradient-to: 209 45% 11%;
+    --brand-border-light: 194 15% 24%;
+    --brand-border: 194 22% 34%;
+    --brand-muted: 194 20% 45%;
+    --brand-dark: 194 75% 65%;
+    --brand-darker: 194 70% 78%;
+  }
   .dark [data-theme="sgsnb"] {
     --brand: 320 55% 50%;
     --brand-hover: 320 55% 42%;

@@ -250,6 +250,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cpaaud: { title: "CPA AUD Exam", description: "Review independence, risk assessment, internal control, evidence, sampling and audit reports." },
   accafa: { title: "ACCA Financial Accounting (FA)", description: "Practice double entry, inventories, depreciation, reconciliations, IFRS statements and consolidation." },
   aatl2: { title: "AAT Level 2 Accounting", description: "Review daybooks, VAT, control accounts, bank reconciliations, journals, costing and business law." },
+  inbde: { title: "INBDE Dental Boards", description: "Practice the ten Foundation Knowledge areas with written patient cases, from anatomy to pharmacology and ethics." },
   nbdhe: { title: "NBDHE Dental Hygiene Boards", description: "Review sciences, assessment, radiography, periodontics, preventive care and patient cases." },
   nptepta: { title: "NPTE-PTA Exam", description: "Review musculoskeletal, neuromuscular and cardiopulmonary care, modalities and PTA scope." },
   aswbclin: { title: "ASWB Clinical Exam (LCSW)", description: "Review clinical ethics, DSM-5-TR diagnosis, treatment planning and evidence-based therapies." },

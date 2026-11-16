@@ -46,7 +46,7 @@ Q = [
 ("Which condition calls for extra caution with epinephrine-containing local anesthetic?",
  "Uncontrolled hyperthyroidism", ["Controlled hypothyroidism", "Well-controlled asthma", "Iron deficiency anemia"],
  "In uncontrolled hyperthyroidism, added epinephrine can trigger tachyarrhythmias or a thyroid storm, so care waits for control or epinephrine is limited."),
-("Under the AHA statement on infective endocarditis, which history alone warrants antibiotic prophylaxis before gingival manipulation?",
+("Under current guidance on preventing infective endocarditis, which history alone warrants antibiotic prophylaxis before gingival manipulation?",
  "A previous infective endocarditis", ["Mitral valve prolapse without regurgitation", "A coronary artery stent", "An implanted cardiac pacemaker"],
  "Prophylaxis is limited to the highest-risk conditions: prosthetic valves or valve repair material, prior endocarditis, some congenital heart disease and cardiac transplant with valvulopathy. Stents and pacemakers are not on the list."),
 ("Case: 55-year-old man with alcoholic cirrhosis needs two teeth extracted. Which laboratory tests matter most beforehand?",

@@ -19,7 +19,7 @@ Q = [
 ("Ibuprofen relieves dental pain by:",
  "Reversible COX-1 and COX-2 block", ["Binding mu opioid receptors", "Blocking sodium channels in nerves", "Irreversibly acetylating platelets"],
  "Ibuprofen is a reversible, nonselective cyclooxygenase inhibitor that cuts prostaglandin formation. Aspirin is the drug that acetylates COX irreversibly."),
-("For an adult with acute dental pain and no contraindications, which approach does current ADA guidance favor first?",
+("For an adult with acute dental pain and no contraindications, which approach does current evidence-based guidance favor first?",
  "Ibuprofen with acetaminophen", ["Hydrocodone with acetaminophen", "Codeine alone", "Tramadol alone"],
  "ADA guidance for acute dental pain recommends NSAIDs, alone or with acetaminophen, as first-line care and opioids only when these are not enough or cannot be used."),
 ("The main danger of an acetaminophen overdose is:",

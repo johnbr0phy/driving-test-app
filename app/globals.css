@@ -5047,6 +5047,19 @@
     --brand-gradient-to: 0 50% 95%;
   }
 
+  [data-theme="nzboat"] {
+    --brand: 209 15% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 209 50% 95%;
+    --brand-hover: 209 15% 21%;
+    --brand-dark: 209 15% 19%;
+    --brand-darker: 209 10% 14%;
+    --brand-muted: 209 25% 70%;
+    --brand-border: 209 30% 78%;
+    --brand-border-light: 209 30% 88%;
+    --brand-gradient-to: 224 50% 95%;
+  }
+
   [data-theme="cpcta"] {
     --brand: 181 95% 18%;
     --brand-foreground: 0 0% 100%;
@@ -9990,6 +10003,18 @@
     --brand-muted: 345 25% 45%;
     --brand-dark: 345 15% 65%;
     --brand-darker: 345 10% 78%;
+  }
+
+  .dark [data-theme="nzboat"] {
+    --brand: 209 15% 49.4%;
+    --brand-hover: 209 15% 41.4%;
+    --brand-light: 209 45% 13%;
+    --brand-gradient-to: 224 40% 11%;
+    --brand-border-light: 209 30% 24%;
+    --brand-border: 209 30% 34%;
+    --brand-muted: 209 25% 45%;
+    --brand-dark: 209 15% 65%;
+    --brand-darker: 209 10% 78%;
   }
 
   .dark [data-theme="cpcta"] {

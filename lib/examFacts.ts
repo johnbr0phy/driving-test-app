@@ -44,6 +44,22 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  nzboat: {
+    answer:
+      "Day Skipper is Coastguard Boating Education's introductory course for recreational boaties and crew in New Zealand, especially people new to being skipper of their own boat. Its learning outcomes are the parts of a boat and its equipment, basic boat handling, navigational charts, basic tide and weather terms, navigational marks, Maritime Rules and Regulations, emergencies and common marine knots. It runs in a classroom (four weeks including two days in class), a virtual classroom or online self-study within four weeks, and every version ends with an online assessment. Coastguard Boating Education does not publish the number of questions or a pass mark; a learner who falls short gets feedback and a second attempt at the questions they got wrong. The certificate is an internal Coastguard Education certificate, not an NZQA qualification. New Zealand requires no licence to skipper a recreational boat, but skippers must follow the Maritime Rules and regional bylaws.",
+    rows: [
+      { label: "Run by", value: "Coastguard Boating Education" },
+      { label: "Assessment", value: "Online assessment at the end of the course; no question count or pass mark published" },
+      { label: "Resits", value: "Feedback, then a second attempt at the questions answered wrongly" },
+      { label: "Course", value: "Classroom (2 days), virtual classroom or online self-study, within 4 weeks" },
+      { label: "Covers", value: "Boat and equipment, handling, charts, tides and weather, marks, Maritime Rules, emergencies, knots" },
+      { label: "Eligibility", value: "Domestic learners aged 16 and over" },
+      { label: "Certificate", value: "Coastguard Education internal certificate (not NZQA)" },
+      { label: "Licence needed to skipper?", value: "No, but the Maritime Rules and regional bylaws apply" },
+    ],
+    basedOn: "Coastguard Boating Education's Day Skipper course page, its Domestic Learner Handbook (18 March 2026) and FAQ, checked November 2026",
+    source: { name: "Coastguard Boating Education: Day Skipper", url: "https://www.boatingeducation.org.nz/courses/1/day-skipper/" },
+  },
   ea1: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 1 covers individuals. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 1's six domains are preliminary work and taxpayer data (14 scored questions), income and assets (17), deductions and credits (17), taxation (15), advising the individual taxpayer (11) and specialized returns for individuals (11). For exams from July 1, 2026 to February 28, 2027, questions follow tax law as amended through December 31, 2025 and relate to calendar year 2025.",

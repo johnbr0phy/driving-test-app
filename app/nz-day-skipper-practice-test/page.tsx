@@ -13,9 +13,9 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "NZ Day Skipper Practice Test 2026 - Boating Rules Questions";
+const title = "NZ Day Skipper Practice Test 2026 - Free Boating Rules Questions";
 const metaDescription =
-  "Practice for the Coastguard Boating Education Day Skipper course assessment: 200 original questions on New Zealand's boating rules, give-way rules, lights, IALA A buoys, tides, weather and emergencies, in four 50-question tests.";
+  "Free-to-start practice for the Coastguard Boating Education Day Skipper course assessment: 200 original questions on New Zealand's boating rules, give-way rules, lights, IALA A buoys, tides, weather and emergencies, in four 50-question tests.";
 const description =
   "Practice for the online assessment at the end of the Day Skipper course run by Coastguard Boating Education: 200 original questions on the parts of a boat and its equipment, boat handling, anchoring and knots, charts and compass, tides and marine weather, IALA A navigational marks, the Part 22 collision rules, lights and sound signals, the Part 91 navigation safety rules and local bylaws, and emergencies and VHF communications. Four tests of 50 questions and five training sets.";
 
@@ -122,12 +122,12 @@ export default function NzBoatLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            NZ Day Skipper Practice Test 2026
+            Free NZ Day Skipper Practice Test 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/nz-day-skipper/dashboard"
             shortName="Day Skipper"
-            subtitle="200 original questions on New Zealand boating: give-way rules, lights and sound signals, IALA A buoys, the 5 knot rule, tides, marine weather, anchoring, knots and Mayday calls. Four 50-question tests. Tuned for mobile. Start for free, no account needed."
+            subtitle="200 original questions on New Zealand boating: give-way rules, lights and sound signals, IALA A buoys, the 5 knot rule, tides, marine weather, anchoring, knots and Mayday calls. Four 50-question tests. Tuned for mobile. Free to start, no account needed."
             shots={{ mobile: "/landing/nzboat-mobile.png", desktop: "/landing/nzboat-desktop.png" }}
           />
         </div>

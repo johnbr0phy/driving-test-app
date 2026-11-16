@@ -1234,6 +1234,16 @@ export const vi: TranslationKeys = {
     panceID: "Infectious Diseases",
     panceHeme: "Hematologic",
     panceProf: "Professional Practice",
+    // nzboat
+    nzboatBoat: "The Boat & Its Equipment",
+    nzboatHandling: "Boat Handling, Anchoring & Knots",
+    nzboatCharts: "Charts & Compass",
+    nzboatTidesWeather: "Tides & Marine Weather",
+    nzboatMarks: "Navigational Marks (IALA A)",
+    nzboatCollision: "Give-Way & Collision Rules",
+    nzboatLights: "Lights, Shapes & Sound Signals",
+    nzboatLaw: "Maritime Rules & Local Bylaws",
+    nzboatEmergency: "Emergencies & Communications",
     // cpcta
     cpctaBasicCare: "Basic Care & Daily Living",
     cpctaVitals: "Vital Signs & Monitoring",

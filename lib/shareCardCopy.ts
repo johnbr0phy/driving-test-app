@@ -288,6 +288,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   hkdrive: { title: "Hong Kong Driving Written Test", description: "Study signs, junctions, expressways, seat belts and parking from the Road Users' Code." },
   netplus: { title: "CompTIA Network+ N10-009", description: "Practise networking concepts, implementation, operations, security and troubleshooting." },
   fortinse: { title: "Fortinet NSE 1 (FCF)", description: "Practice all ten modules of NSE 1 Cybersecurity and Cloud Fundamentals, the course that replaced FCF." },
+  sc900: { title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900", description: "Review Zero Trust and identity concepts, Microsoft Entra, Defender, Sentinel and Purview." },
   cysa: { title: "CompTIA CySA+ CS0-004", description: "Practise security operations, vulnerability management, incident response and reporting." },
   gcppca: { title: "Google Cloud Professional Cloud Architect", description: "Practise architecture scenarios, case studies, security, AI and operations on Google Cloud." },
   gcdl: { title: "Google Cloud Digital Leader", description: "Study cloud transformation, data, AI, modernization, security and cloud operations." },

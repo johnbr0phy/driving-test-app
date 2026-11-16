@@ -584,6 +584,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(248, 90%, 32%)",
     "tint": "hsl(248, 70%, 96%)"
   },
+  "sc900": {
+    "color": "hsl(241, 15%, 26%)",
+    "tint": "hsl(241, 15%, 96%)"
+  },
   "ccna": {
     "color": "hsl(191, 45%, 30%)",
     "tint": "hsl(191, 70%, 96%)"

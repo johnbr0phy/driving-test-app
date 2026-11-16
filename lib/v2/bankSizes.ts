@@ -43,6 +43,7 @@ export const BANK_SIZES: Record<string, number> = {
   netplus: 204,
   cysa: 194,
   fortinse: 200,
+  sc900: 201,
   cissp: 224,
   itil: 160,
   psm: 200,

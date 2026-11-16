@@ -140,6 +140,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
     source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
   },
+  sc900: {
+    answer:
+      "SC-900, Microsoft Security, Compliance, and Identity Fundamentals, is Microsoft's beginner exam for business stakeholders, IT professionals and students who want to understand Microsoft's security, compliance and identity solutions across Azure and Microsoft 365. Passing it earns the Microsoft Certified: Security, Compliance, and Identity Fundamentals certification. The exam is 45 minutes, proctored, and can include interactive question types; Microsoft does not publish a question count, but guides report 40 to 60 questions. Scores run from 1 to 1000 and 700 is needed to pass. The skills measured as of October 21, 2026 are the concepts of security, compliance and identity (10 to 15 percent), the capabilities of Microsoft Entra (25 to 30 percent), Microsoft security solutions (35 to 40 percent) and Microsoft compliance solutions (20 to 25 percent). A first retake is allowed after 24 hours, and the price depends on the country where the exam is taken.",
+    rows: [
+      { label: "Time", value: "45 minutes, proctored" },
+      { label: "Questions", value: "Not published by Microsoft; guides report 40 to 60" },
+      { label: "Passing score", value: "700 on a scale of 1 to 1000" },
+      { label: "Skill areas", value: "Concepts 10-15%, Microsoft Entra 25-30%, security solutions 35-40%, compliance solutions 20-25%" },
+      { label: "Retake", value: "First retake after 24 hours" },
+      { label: "Languages", value: "English and 12 others, including Japanese, Spanish, French and German" },
+      { label: "Given by", value: "Microsoft, through Pearson VUE (Certiport for students and educators)" },
+    ],
+    basedOn: "the Microsoft Learn SC-900 study guide (skills measured as of October 21, 2026) and the Security, Compliance, and Identity Fundamentals certification page, checked November 2026",
+    source: { name: "Microsoft Learn: Study guide for Exam SC-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
+  },
   fortinse: {
     answer:
       "Fortinet NSE 1 in Cybersecurity is Fortinet's entry-level certification, and since July 15, 2026 it replaces Fortinet Certified Fundamentals (FCF) in Cybersecurity; people with an active FCF were awarded NSE 1 and NSE 2. To earn it you pass the online exam presented at the end of the free self-paced course Cybersecurity and Cloud Fundamentals on the Fortinet Training Institute, which Fortinet estimates at about 11 hours. The course has ten modules: Intro to Cybersecurity, Threat Landscape, Social Engineering, Malware, Cryptography and the Public Key Infrastructure, Secure Networking, Authentication and Access Control, Endpoint Security, Secure Data and Applications, and Cloud Security and Virtualization. Fortinet does not publish a question count, time limit or pass mark. The certification is active for two years.",

@@ -251,7 +251,7 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     testsSub: "Car: 40 questions, 35 to pass. Truck or bus (C or D): 100 questions, 74 to pass. All in km/h for left-hand traffic.",
   },
   NZ: {
-    title: "Free NZ Practice Tests: Learner, Class 2, Firearms & Nursing | Tigertest",
+    title: "Free NZ Practice Tests: Road Code, Motorcycle, Class 2 & Firearms | Tigertest",
     description: "Free practice for New Zealand: the car and motorcycle learner licence tests, the Class 2 heavy vehicle theory test, the firearms licence theory test, the LCQ for duty managers and the Nursing Council State Final Examination. No account needed.",
     lead: "Practice for the car and motorcycle learner licence theory tests, the Class 2 heavy vehicle theory test, the firearms licence theory test, the Licence Controller Qualification and the registered nurse State Final Examination. Original questions, every answer explained. No signup.",
     cta: { label: "Learner licence test", href: "/nz-learner-licence-practice-test" },

@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "UAE Driving Theory Test 2026 - Free RTA Practice Test";
+const title = "UAE Driving Theory Test 2026 - Free RTA Mock Test (Dubai)";
 const metaDescription =
   "Free UAE driving theory practice test: 200 original questions for the RTA Dubai knowledge test, four 40-question mock tests with the real 30-of-40 pass mark, every answer explained.";
 const description =

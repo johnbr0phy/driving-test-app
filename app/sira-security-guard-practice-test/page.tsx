@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "SIRA Security Guard Practice Test 2026 - Free Dubai Guard Licence Questions";
+const title = "SIRA Mock Test 2026 - Free Dubai Security Guard Exam Questions and Answers";
 const metaDescription =
   "Free practice for the Dubai SIRA security guard licensing exam: 200 original questions on SIRA law and licences, access control, patrols, reports, legal limits, emergencies, fire safety and first aid. Four 50-question mock tests, every answer explained.";
 const description =

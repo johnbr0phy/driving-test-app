@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "NZ Learner Licence Practice Test 2026 - Free Road Code Test";
+const title = "NZ Road Code Test 2026 - Free 35-Question Learner Licence Practice";
 const metaDescription =
   "Free NZ learner licence practice test: 200 original Road Code questions, five 35-question mock tests with the real 32-of-35 pass mark, every answer explained.";
 const description =

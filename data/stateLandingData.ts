@@ -167,6 +167,11 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "Drivers under 18 cannot drive between 11:00 PM and 6:00 AM (or 1:00 AM to 5:00 AM with a valid work permit)."
     ],
     neighboringSlugs: ["georgia", "alabama"],
+    seo: {
+      title: "Florida Permit Practice Test 2026 - Free FLHSMV 50-Question Test | Tigertest",
+      description: "Free Florida permit practice test: 50-question practice tests like the FLHSMV Class E knowledge exam, which has 50 questions and needs 40 right to pass. 200 questions from the Florida Driver's Handbook.",
+      h1: "Free Florida Permit Practice Test 2026: FLHSMV 50-Question Test Prep",
+    },
     onlineTestInfo: "No, the Florida Class E knowledge exam must be taken in person at a FLHSMV office or authorized testing center. The TLSAE course can be completed online."
   },
   GA: {
@@ -182,9 +187,9 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
     neighboringSlugs: ["florida", "alabama", "tennessee", "north-carolina", "south-carolina"],
     onlineTestInfo: "No, the Georgia DDS knowledge test must be taken in person at a DDS customer service center.",
     seo: {
-      title: "Georgia DDS Practice Test 2026 - Free Georgia Permit Test | Tigertest",
+      title: "Georgia Permit Practice Test 2026 - Free DDS Practice Test (GA) | Tigertest",
       description: "Free Georgia DDS practice test for the Georgia permit test: 40 questions on the DDS knowledge exam and 30 right to pass. 200 questions from the Georgia DDS Driver's Manual.",
-      h1: "Free Georgia DDS Practice Test 2026: Georgia Permit Test Prep",
+      h1: "Free Georgia Permit Practice Test 2026: DDS Knowledge Test Prep",
       faq: [
         {
           question: "Is a Georgia DDS practice test the same as a Georgia permit practice test?",

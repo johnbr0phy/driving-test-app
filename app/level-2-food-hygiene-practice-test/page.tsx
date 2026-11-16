@@ -15,7 +15,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Level 2 Food Hygiene Practice Test 2026 - Free UK Mock Tests";
+const title = "Food Hygiene Level 2 Quiz 2026 - Free UK Practice Test with Answers";
 const metaDescription =
   "Free Level 2 Food Safety and Hygiene for Catering practice: 200 original questions on temperatures, the 14 allergens, HACCP, cleaning and personal hygiene, every answer explained.";
 const description =

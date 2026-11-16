@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Safe Pass Practice Test 2026 - Free Irish Safe Pass Questions";
+const title = "Safe Pass Mock Test 2026 - Free Irish Safe Pass Questions and Answers";
 const metaDescription =
   "Free practice for the SOLAS Safe Pass construction safety course in Ireland: 200 original questions on site safety law, accident reporting, risk, electricity, excavations, work at height, plant and vehicles, noise, vibration and PPE. Four 50-question mock tests, every answer explained.";
 const description =

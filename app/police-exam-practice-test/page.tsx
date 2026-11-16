@@ -15,7 +15,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free Police Exam Practice Test 2026 - Officer Written Exam";
+const title = "Free Police Exam Practice Test 2026 - Police Written Exam";
 const metaDescription =
   "Free police officer written exam practice: 200 original questions on reading, grammar, report writing, math and judgment, four 50-question tests, every answer explained.";
 const description =

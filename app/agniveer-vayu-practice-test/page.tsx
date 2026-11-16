@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free Agniveer Vayu Mock Test 2026 - Science (English, Physics, Maths)";
+const title = "Free Agniveer Vayu Mock Test 2026 - Indian Air Force Science Exam";
 const metaDescription =
   "Free Agniveer Vayu Science mock tests: 204 original questions on English, Physics and Mathematics to the 10+2 CBSE syllabus, with two full 70-question tests in 60 minutes and an explanation on every answer.";
 const description =

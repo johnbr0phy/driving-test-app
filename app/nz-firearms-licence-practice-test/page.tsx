@@ -13,7 +13,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "NZ Firearms Licence Practice Test 2026 - Free Theory Test Questions";
+const title = "NZ Firearms Code Quiz 2026 - Free Firearms Licence Theory Test";
 const metaDescription =
   "Free practice for the New Zealand firearms licence theory test: 200 original questions on the Firearms Safety Code, the seven rules, states of readiness, storage, transport and the Arms Act 2026, in six 30-question tests.";
 const description =

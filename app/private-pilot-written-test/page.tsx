@@ -14,7 +14,7 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free Private Pilot Written Test Practice 2026 - FAA PAR";
+const title = "Free Private Pilot Practice Test 2026 - FAA Written Exam (PAR)";
 const metaDescription =
   "Free FAA private pilot written test practice: 202 original three-choice questions on regulations, airspace, weather, aerodynamics, performance, navigation and human factors, with explanations.";
 const description =

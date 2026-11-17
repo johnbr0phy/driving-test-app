@@ -1,0 +1,3362 @@
+[
+  {
+    "id": "VIDYAGYAN-ENGLISH-001",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In \"The basket is beside the door\", what kind of word is \"basket\"?",
+    "options": [
+      "A noun",
+      "A verb",
+      "An adjective",
+      "An adverb"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Basket names an object, so it is a noun."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-002",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In \"Birds build nests\", what kind of word is \"build\"?",
+    "options": [
+      "A noun",
+      "A verb",
+      "An adjective",
+      "An adverb"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Build expresses an action, so it is a verb."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-003",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In \"We crossed a narrow bridge\", what kind of word is \"narrow\"?",
+    "options": [
+      "A noun",
+      "A verb",
+      "An adjective",
+      "An adverb"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Narrow describes the bridge, so it is an adjective."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-004",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In \"Meera closed the gate quietly\", what kind of word is \"quietly\"?",
+    "options": [
+      "A noun",
+      "A verb",
+      "An adjective",
+      "An adverb"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Quietly describes how the action was done, so it is an adverb."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-005",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Complete the sentence: \"Every morning, Ravi ___ to the bus stop.\"",
+    "options": [
+      "walks",
+      "walked",
+      "will walk",
+      "is walking"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every morning describes a habit; the singular subject takes walks."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-006",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Complete the sentence: \"Yesterday, Neha ___ home with her aunt.\"",
+    "options": [
+      "walks",
+      "walked",
+      "will walk",
+      "is walking"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Yesterday calls for the past-tense form walked."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-007",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Complete the sentence: \"Tomorrow, if the weather is fine, Amir ___ to the market.\"",
+    "options": [
+      "walks",
+      "walked",
+      "will walk",
+      "is walking"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Will walk expresses the planned future action."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-008",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Complete the sentence: \"Look! The baby ___ across the room right now.\"",
+    "options": [
+      "walks",
+      "walked",
+      "will walk",
+      "is walking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Is walking describes an action in progress now."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-009",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the pronoun: \"Lata has a new book, and ___ wants to read it.\"",
+    "options": [
+      "she",
+      "they",
+      "it",
+      "we"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "She refers to the singular person Lata."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-010",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the pronoun: \"The two players arrived early because ___ wanted to practise.\"",
+    "options": [
+      "she",
+      "they",
+      "it",
+      "we"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "They refers to the two players."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-011",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the pronoun: \"The clay pot fell, but ___ did not break.\"",
+    "options": [
+      "she",
+      "they",
+      "it",
+      "we"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "It refers to the singular object, the pot."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-012",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the pronoun: \"My brother and I packed our bags because ___ were leaving.\"",
+    "options": [
+      "she",
+      "they",
+      "it",
+      "we"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "We includes the speaker and another person."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-013",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cat is directly below a table, resting on the floor. Complete: \"The cat is ___ the table.\"",
+    "options": [
+      "under",
+      "between",
+      "behind",
+      "above"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Under expresses a lower position covered by the table."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-014",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One house stands with a shop on its left and a school on its right. Complete: \"The house is ___ the shop and the school.\"",
+    "options": [
+      "under",
+      "between",
+      "behind",
+      "above"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Between describes its position with one place on either side."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-015",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A child stands at the back of a tree, hidden from a person in front. Complete: \"The child is ___ the tree.\"",
+    "options": [
+      "under",
+      "between",
+      "behind",
+      "above"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Behind means at the back relative to the stated observer."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-016",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A kite is higher in the sky than the roof. Complete: \"The kite is ___ the roof.\"",
+    "options": [
+      "under",
+      "between",
+      "behind",
+      "above"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Above expresses a higher position."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-017",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which word gives the reason: \"We stayed indoors ___ the rain was heavy\"?",
+    "options": [
+      "because",
+      "but",
+      "before",
+      "and"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Because introduces a reason."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-018",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which word shows a contrast: \"The bag was small ___ surprisingly heavy\"?",
+    "options": [
+      "because",
+      "but",
+      "before",
+      "and"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "But joins the contrasting ideas of small size and heavy weight."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-019",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which word states the required order: \"Wash your hands ___ you begin eating\"?",
+    "options": [
+      "because",
+      "but",
+      "before",
+      "and"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Before places washing earlier than eating."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-020",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which word simply adds another item: \"Please bring a pencil ___ an eraser\"?",
+    "options": [
+      "because",
+      "but",
+      "before",
+      "and"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "And joins the two requested items."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-021",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sana carried the full glass slowly so that no water spilled. Which word best describes how she acted?",
+    "options": [
+      "careful",
+      "tired",
+      "delighted",
+      "puzzled"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Moving slowly to avoid a spill shows care."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-022",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a long walk, Dev yawned and wanted to rest. Which word best describes him?",
+    "options": [
+      "careful",
+      "tired",
+      "delighted",
+      "puzzled"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Yawning and wanting rest support tired."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-023",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Nila smiled widely when her lost kitten returned. Which word best describes her feeling?",
+    "options": [
+      "careful",
+      "tired",
+      "delighted",
+      "puzzled"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A wide smile at happy news supports delighted."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-024",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Omar stared at the strange instructions and asked what they meant. Which word best describes his feeling?",
+    "options": [
+      "careful",
+      "tired",
+      "delighted",
+      "puzzled"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Not understanding the instructions supports puzzled."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-025",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A jar was full in the morning, but every seed was removed. Which word now describes the jar?",
+    "options": [
+      "empty",
+      "rough",
+      "early",
+      "quiet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With all its contents removed, the jar is empty."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-026",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A wooden board feels uneven and scratchy, rather than smooth. Which word describes its surface?",
+    "options": [
+      "empty",
+      "rough",
+      "early",
+      "quiet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rough contrasts with smooth."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-027",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A train expected at noon arrived at 11:45 a.m. Which word describes its arrival?",
+    "options": [
+      "empty",
+      "rough",
+      "early",
+      "quiet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Arriving before the expected time is early."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-028",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The noisy workshop stopped its machines and became almost silent. Which word describes it now?",
+    "options": [
+      "empty",
+      "rough",
+      "early",
+      "quiet"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Quiet describes the absence of much noise."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-029",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which mark normally ends \"Where is the nearest well\" when it is written as a direct question?",
+    "options": [
+      "A question mark",
+      "A comma",
+      "A full stop",
+      "An apostrophe"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A direct question ends with a question mark."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-030",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which mark separates \"rice\" and \"beans\" in the list \"rice, beans and peas\"?",
+    "options": [
+      "A question mark",
+      "A comma",
+      "A full stop",
+      "An apostrophe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A comma separates items in the list."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-031",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which mark normally ends the ordinary statement \"The bus has arrived\"?",
+    "options": [
+      "A question mark",
+      "A comma",
+      "A full stop",
+      "An apostrophe"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A full stop ends an ordinary statement."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-032",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which mark replaces missing letters in the short form \"don't\"?",
+    "options": [
+      "A question mark",
+      "A comma",
+      "A full stop",
+      "An apostrophe"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The apostrophe marks the omitted letter in do not."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-033",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before their class picnic, Riya checked the route, counted the water bottles and asked each group to carry a small bag for rubbish. She also checked when the return bus would leave. On the day, the group had what it needed and reached the bus stop on time. Which idea is best supported by this story?",
+    "options": [
+      "A careful plan",
+      "A helpful change",
+      "A mistaken assumption",
+      "A shared responsibility"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Riya prepared several important details before the outing, showing careful planning."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-034",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The classroom seed packets were kept in a deep box. Pupils often emptied the box to find one packet. Kabir suggested shallow trays with labels. The class tried his idea and found the packets much faster. They kept the trays and used the empty box for larger tools. Which idea is best supported by this story?",
+    "options": [
+      "A careful plan",
+      "A helpful change",
+      "A mistaken assumption",
+      "A shared responsibility"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Changing the storage method solved the problem and made the task easier."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-035",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Leela saw an empty water bowl outside and thought nobody had filled it. She was about to complain when she noticed wet paw prints leading away. Her brother explained that the dog had just finished drinking. Leela realised that the bowl being empty did not mean it had been empty all morning. Which idea is best supported by this story?",
+    "options": [
+      "A careful plan",
+      "A helpful change",
+      "A mistaken assumption",
+      "A shared responsibility"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Leela reached an incorrect conclusion before learning what had happened."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-036",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The school garden needed care during a holiday. One pupil could not visit every day, so the group made a rota. Each child chose two days. They wrote notes about watering and checked the plants when their turn came. The garden stayed healthy because the job did not depend on only one person. Which idea is best supported by this story?",
+    "options": [
+      "A careful plan",
+      "A helpful change",
+      "A mistaken assumption",
+      "A shared responsibility"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The group divided the work so that several people helped care for the garden."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-037",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Mina went shopping with a basket. On the way home she crossed a bridge, passed a bakery and stopped at the library. At the library door she noticed that the handle of something she carried had broken. She moved the vegetables into a cloth bag and left the broken object with the caretaker. Which object had broken?",
+    "options": [
+      "The basket",
+      "The bridge",
+      "The bakery",
+      "The library"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The basket carried the vegetables and had a handle; the other places were not objects she carried."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-038",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A notice at the river said that the usual crossing was closed for repair. Arun could still buy bread at the bakery and return books at the library, but he needed a different route to the village on the opposite bank. He put his lunch basket down while studying the map. What was closed for repair?",
+    "options": [
+      "The basket",
+      "The bridge",
+      "The bakery",
+      "The library"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The river crossing is the bridge; the passage says the other services remain available."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-039",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Farah borrowed a storybook at the library, crossed the bridge and followed the smell of fresh bread. She entered a shop where trays of rolls were cooling. After buying two rolls, she placed them in her basket and continued home. Which place did she enter after following the smell?",
+    "options": [
+      "The basket",
+      "The bridge",
+      "The bakery",
+      "The library"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A shop making and selling bread is a bakery."
+  },
+  {
+    "id": "VIDYAGYAN-ENGLISH-040",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A village notice said: \"Please return borrowed books by Friday. Our shelves will be rearranged over the weekend, and borrowing will begin again on Monday.\" The notice was pinned near the bridge, beside an advertisement for a bakery. Hari read it while carrying an empty basket. Which place issued the book notice?",
+    "options": [
+      "The basket",
+      "The bridge",
+      "The bakery",
+      "The library"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Borrowing and returning books are services of the library."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-001",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Six boxes each contain 4 chalk sticks. How many chalk sticks are there altogether?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "60"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply 6 by 4 to get 24."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-002",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shelf had 59 books. After 23 were borrowed, how many remained?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "60"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "59 minus 23 is 36."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-003",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A school has 144 seedlings and puts an equal number in each of 3 beds. How many go in one bed?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "60"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "144 divided by 3 is 48."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-004",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A class collected 27 bottles on Monday and 33 on Tuesday. How many did it collect in all?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "60"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "27 plus 33 is 60."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-005",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A ribbon is divided into 8 equal parts. Four parts are coloured. What fraction is coloured, in simplest form?",
+    "options": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "1/5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Four eighths is equivalent to one half."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-006",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A child eats 3 of 12 equal slices of melon. What fraction of the melon is eaten?",
+    "options": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "1/5"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "3/12 simplifies to 1/4."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-007",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which fraction is greater than 2/3 but less than 1?",
+    "options": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "1/5"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Three quarters is greater than two thirds and less than one; the other choices are at most one half."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-008",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which fraction is equivalent to 2/10?",
+    "options": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "1/5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dividing numerator and denominator by two gives 1/5."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-009",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Write one quarter as a decimal. Which value is correct?",
+    "options": [
+      "0.25",
+      "0.5",
+      "0.75",
+      "0.2"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One quarter equals 25 hundredths, or 0.25."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-010",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 0.8 minus 0.3?",
+    "options": [
+      "0.25",
+      "0.5",
+      "0.75",
+      "0.2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Eight tenths minus three tenths is five tenths, or 0.5."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-011",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A piece of string is 0.4 m long and another is 0.35 m. What is their total length in metres?",
+    "options": [
+      "0.25",
+      "0.5",
+      "0.75",
+      "0.2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "0.40 plus 0.35 is 0.75."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-012",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One metre of ribbon is shared equally among five children. How many metres does each receive?",
+    "options": [
+      "0.25",
+      "0.5",
+      "0.75",
+      "0.2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "One divided by five is 0.2."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-013",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A lesson starts at 10:20 a.m. and ends at 10:35 a.m. How long does it last?",
+    "options": [
+      "15 minutes",
+      "30 minutes",
+      "45 minutes",
+      "60 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There are 15 minutes between the two times."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-014",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bus leaves at 11:50 a.m. and arrives at 12:20 p.m. How long is the journey?",
+    "options": [
+      "15 minutes",
+      "30 minutes",
+      "45 minutes",
+      "60 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ten minutes to noon and twenty after noon total thirty minutes."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-015",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A programme lasts three quarters of an hour. How long is that in minutes?",
+    "options": [
+      "15 minutes",
+      "30 minutes",
+      "45 minutes",
+      "60 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Three quarters of 60 is 45."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-016",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A clock minute hand makes one complete turn. How much time passes?",
+    "options": [
+      "15 minutes",
+      "30 minutes",
+      "45 minutes",
+      "60 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A complete minute-hand turn takes one hour, or 60 minutes."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-017",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many millilitres are in one quarter of a litre?",
+    "options": [
+      "250",
+      "500",
+      "750",
+      "1000"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A litre contains 1000 millilitres; one quarter is 250."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-018",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 1 kg bag of rice is split into two equal portions. How many grams are in one portion?",
+    "options": [
+      "250",
+      "500",
+      "750",
+      "1000"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Half of 1000 grams is 500 grams."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-019",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rope is 7 m 50 cm long. What is its length in centimetres?",
+    "options": [
+      "250",
+      "500",
+      "750",
+      "1000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Seven metres is 700 centimetres; adding fifty gives 750."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-020",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many metres are in one kilometre?",
+    "options": [
+      "250",
+      "500",
+      "750",
+      "1000"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The prefix kilo means one thousand, so a kilometre is 1000 metres."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-021",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the line segment from the centre of a circle to its edge called?",
+    "options": [
+      "A radius",
+      "A diameter",
+      "A perimeter",
+      "An area"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A radius joins the centre to the circumference."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-022",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a straight line segment through a circle's centre with both ends on its edge called?",
+    "options": [
+      "A radius",
+      "A diameter",
+      "A perimeter",
+      "An area"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A diameter spans the circle through its centre."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-023",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What quantity measures the total distance around the boundary of a field?",
+    "options": [
+      "A radius",
+      "A diameter",
+      "A perimeter",
+      "An area"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Perimeter is the boundary length."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-024",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What quantity measures the amount of flat surface inside a shape?",
+    "options": [
+      "A radius",
+      "A diameter",
+      "A perimeter",
+      "An area"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Area measures enclosed surface."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-025",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangle has sides 6 cm and 3 cm. What is its area in square centimetres?",
+    "options": [
+      "18",
+      "20",
+      "28",
+      "32"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply length by width: 6 times 3 is 18."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-026",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A square has side length 5 cm. What is its perimeter in centimetres?",
+    "options": [
+      "18",
+      "20",
+      "28",
+      "32"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Four sides of 5 cm total 20 cm."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-027",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangular garden is 10 m long and 4 m wide. What is its perimeter in metres?",
+    "options": [
+      "18",
+      "20",
+      "28",
+      "32"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Twice the sum of 10 and 4 is 28."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-028",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tiled rectangle has 8 rows of 4 square tiles. How many tiles cover it?",
+    "options": [
+      "18",
+      "20",
+      "28",
+      "32"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eight groups of four total 32 tiles."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-029",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the greatest number that divides both 18 and 24 exactly?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The common factors are 1,2,3,6; the greatest is 6."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-030",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What number must multiply 7 to give 56?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "56 divided by 7 equals 8."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-031",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many complete groups of 5 can be made from 47 beads?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nine complete groups use 45 beads and leave 2."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-032",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the smallest positive multiple shared by 3 and 4?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Twelve is divisible by both, and no smaller positive number is."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-033",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the value of the digit 2 in 12,640?",
+    "options": [
+      "2000",
+      "3000",
+      "4000",
+      "5000"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The digit 2 occupies the thousands place."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-034",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Round 2,760 to the nearest thousand. What is the result?",
+    "options": [
+      "2000",
+      "3000",
+      "4000",
+      "5000"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "2760 is closer to 3000 than to 2000."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-035",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What number is represented by 4 thousands, 0 hundreds, 0 tens and 0 ones?",
+    "options": [
+      "2000",
+      "3000",
+      "4000",
+      "5000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Four thousands equal 4000."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-036",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shop had 8,250 envelopes and sold 3,250. How many remain?",
+    "options": [
+      "2000",
+      "3000",
+      "4000",
+      "5000"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "8250 minus 3250 equals 5000."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-037",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A table shows Monday: 4 visitors, Tuesday: 7, Wednesday: 6. How many visited on Tuesday?",
+    "options": [
+      "7",
+      "10",
+      "13",
+      "16"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Read the Tuesday entry: 7."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-038",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One team scored 6 points before lunch and 4 afterward. How many points did it score?",
+    "options": [
+      "7",
+      "10",
+      "13",
+      "16"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "6 plus 4 equals 10."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-039",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pictograph uses one symbol for 2 trees. It shows 6 whole symbols and a half symbol. How many trees does this represent?",
+    "options": [
+      "7",
+      "10",
+      "13",
+      "16"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Six symbols represent 12 trees; half a symbol represents 1 more."
+  },
+  {
+    "id": "VIDYAGYAN-MATHS-040",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The numbers of red, blue and green balls are 5,8 and 3. How many balls are there altogether?",
+    "options": [
+      "7",
+      "10",
+      "13",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "5 plus 8 plus 3 equals 16."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-001",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which plant parts usually absorb water from soil and help anchor the plant?",
+    "options": [
+      "Roots",
+      "Stem",
+      "Leaves",
+      "Flowers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Roots absorb water and help hold a plant in the soil."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-002",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which main plant part supports the leaves and provides a route for water moving upward from the roots?",
+    "options": [
+      "Roots",
+      "Stem",
+      "Leaves",
+      "Flowers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The stem supports above-ground parts and carries water."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-003",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a typical green plant, which broad green parts capture sunlight for making food?",
+    "options": [
+      "Roots",
+      "Stem",
+      "Leaves",
+      "Flowers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Leaves are the main sites where green plants use light to make food."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-004",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a flowering plant, which structures usually contain petals and are involved in forming seeds?",
+    "options": [
+      "Roots",
+      "Stem",
+      "Leaves",
+      "Flowers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Flowers contain reproductive structures that can lead to seed formation."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-005",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shallow puddle becomes smaller on a dry sunny day without draining away. Liquid water enters the air as vapour. What is this change?",
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Freezing",
+      "Melting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Evaporation changes liquid water to water vapour."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-006",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Water vapour in the air forms droplets on the outside of a cold glass. What is this change?",
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Freezing",
+      "Melting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cooling water vapour into liquid droplets is condensation."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-007",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Liquid water is cooled until it becomes solid ice. What is this change?",
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Freezing",
+      "Melting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The change from liquid to solid is freezing."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-008",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An ice cube warms and becomes liquid water. What is this change?",
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Freezing",
+      "Melting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The change from solid ice to liquid water is melting."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-009",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool should a pupil use to compare the temperatures of two water samples?",
+    "options": [
+      "A thermometer",
+      "A balance",
+      "A clock",
+      "A measuring jug"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A thermometer measures temperature."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-010",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool compares the masses of two packets of seeds?",
+    "options": [
+      "A thermometer",
+      "A balance",
+      "A clock",
+      "A measuring jug"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A balance compares mass."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-011",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool helps record how long a journey takes?",
+    "options": [
+      "A thermometer",
+      "A balance",
+      "A clock",
+      "A measuring jug"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A clock provides times from which duration can be found."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-012",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool with volume markings can measure 300 mL of water?",
+    "options": [
+      "A thermometer",
+      "A balance",
+      "A clock",
+      "A measuring jug"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A measuring jug measures liquid volume using its scale."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-013",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A child wants to borrow a storybook from a community collection. Which institution is most directly suited to this?",
+    "options": [
+      "A library",
+      "A post office",
+      "A health centre",
+      "A bank"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A library lends reading materials."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-014",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A family wants to send a letter through the postal service. Which institution handles that service?",
+    "options": [
+      "A library",
+      "A post office",
+      "A health centre",
+      "A bank"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A post office accepts and distributes mail."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-015",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A community needs a place where trained staff provide basic medical care. Which institution serves this role?",
+    "options": [
+      "A library",
+      "A post office",
+      "A health centre",
+      "A bank"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A health centre provides healthcare services."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-016",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An adult wants to deposit savings in an account. Which institution ordinarily provides this service?",
+    "options": [
+      "A library",
+      "A fire station",
+      "A health centre",
+      "A bank"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A bank accepts account deposits."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-017",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An empty food jar is cleaned and used to store pencils. Which practice is illustrated?",
+    "options": [
+      "Reusing an object",
+      "Recycling a material",
+      "Composting plant waste",
+      "Collecting rainwater"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The same object is used again for a new purpose."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-018",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Used paper is processed into pulp to make new paper. Which practice is illustrated?",
+    "options": [
+      "Reusing an object",
+      "Recycling a material",
+      "Composting plant waste",
+      "Collecting rainwater"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The material is processed into a new product, which is recycling."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-019",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Dry leaves and vegetable scraps are allowed to break down into material for the garden. Which practice is illustrated?",
+    "options": [
+      "Reusing an object",
+      "Recycling a material",
+      "Composting plant waste",
+      "Collecting rainwater"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Composting turns suitable organic waste into a soil amendment."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-020",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A roof channel directs rain into a storage tank for watering plants. Which practice is illustrated?",
+    "options": [
+      "Reusing an object",
+      "Recycling a material",
+      "Composting plant waste",
+      "Collecting rainwater"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rainwater is being collected for later use."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-021",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pupil can clearly see printed words through a clean glass sheet. What property is shown?",
+    "options": [
+      "It lets light pass through",
+      "It takes up water",
+      "It is attracted by a magnet",
+      "It dissolves in water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Seeing the words through the sheet shows that light passes through it."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-022",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dry cloth becomes wet after touching a spill. What property is shown?",
+    "options": [
+      "It lets light pass through",
+      "It takes up water",
+      "It is attracted by a magnet",
+      "It dissolves in water"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The cloth takes up liquid by absorption."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-023",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An iron nail moves toward a nearby magnet. What property is shown?",
+    "options": [
+      "It lets light pass through",
+      "It takes up water",
+      "It is attracted by a magnet",
+      "It dissolves in water"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The observed movement shows magnetic attraction."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-024",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After stirring sugar into water, the grains are no longer visible, but the sugar remains in the solution. What property is shown?",
+    "options": [
+      "It lets light pass through",
+      "It takes up water",
+      "It is attracted by a magnet",
+      "It dissolves in water"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sugar dissolves rather than simply remaining as visible grains."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-025",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two similar seedlings have equal light, warmth and pot size. One receives 20 mL of water daily; the other receives 40 mL. What condition differs for the second seedling?",
+    "options": [
+      "More water was supplied",
+      "More light was supplied",
+      "More space was supplied",
+      "More warmth was supplied"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Only the amount of water is changed."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-026",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two similar seedlings receive equal water, warmth and soil. One is kept under a grow light for longer each day. What condition increases for that seedling?",
+    "options": [
+      "More water was supplied",
+      "More light was supplied",
+      "More space was supplied",
+      "More warmth was supplied"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The duration of light exposure increases."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-027",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A root-bound seedling is moved to a larger pot while water, light and temperature stay the same. What is increased?",
+    "options": [
+      "More water was supplied",
+      "More light was supplied",
+      "More space was supplied",
+      "More warmth was supplied"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A larger pot gives the roots more growing space."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-028",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two equal trays of damp seeds are kept in the same light. One tray is placed in a warmer room. What condition increases for that tray?",
+    "options": [
+      "More water was supplied",
+      "More light was supplied",
+      "More space was supplied",
+      "More warmth was supplied"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The environmental temperature, or warmth, increases."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-029",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dry wooden block remains at the surface when gently placed in water. What is it doing?",
+    "options": [
+      "Floating",
+      "Sinking",
+      "Dissolving",
+      "Absorbing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Remaining at the water surface is floating."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-030",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A stone drops to the bottom of a bowl of water. What is it doing?",
+    "options": [
+      "Floating",
+      "Sinking",
+      "Dissolving",
+      "Absorbing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moving below the surface to the bottom is sinking."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-031",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Salt crystals spread through water as a solution when stirred. What process is occurring?",
+    "options": [
+      "Floating",
+      "Sinking",
+      "Dissolving",
+      "Absorbing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The salt is dissolving in the water."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-032",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sponge takes water into its small spaces when placed in a spill. What process is occurring?",
+    "options": [
+      "Floating",
+      "Sinking",
+      "Dissolving",
+      "Absorbing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Taking up water is absorption."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-033",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cow eats grass growing in a field. What does the grass provide to the cow?",
+    "options": [
+      "A source of food",
+      "A source of shelter",
+      "A means of seed dispersal",
+      "A means of pollination"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The grass is food for the grazing animal."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-034",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bird rests inside a hollow part of a tree during a storm. What does the hollow provide?",
+    "options": [
+      "A source of food",
+      "A source of shelter",
+      "A means of seed dispersal",
+      "A means of pollination"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The hollow protects the bird as shelter."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-035",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hooked seed catches on an animal's fur and is carried to another place. What role does the animal play?",
+    "options": [
+      "A source of food",
+      "A source of shelter",
+      "A means of seed dispersal",
+      "A means of pollination"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Carrying a seed away helps disperse it."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-036",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bee carries pollen from one flower to another. What role does the bee play?",
+    "options": [
+      "A source of food",
+      "A source of shelter",
+      "A means of seed dispersal",
+      "A means of pollination"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Moving pollen between flowers contributes to pollination."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-037",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A class measures water in two containers using the same marked cup for both. Why is using the same unit useful?",
+    "options": [
+      "To compare amounts fairly",
+      "To record change over time",
+      "To group similar observations",
+      "To check a repeated result"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A shared unit makes the amounts directly comparable."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-038",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pupil marks a plant's height every Monday on a chart. What is the main purpose of these dated measurements?",
+    "options": [
+      "To compare amounts fairly",
+      "To record change over time",
+      "To group similar observations",
+      "To check a repeated result"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Repeated dated observations show growth over time."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-039",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A class sorts collected leaves into piles with smooth edges and toothed edges. What is the main purpose?",
+    "options": [
+      "To compare amounts fairly",
+      "To record change over time",
+      "To group similar observations",
+      "To check a repeated result"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Grouping by an observable feature helps compare similarities and differences."
+  },
+  {
+    "id": "VIDYAGYAN-SCIENCE-040",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaScience",
+    "skill": "science",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pupil repeats a simple floating test three times with the same object and conditions. What is the main purpose?",
+    "options": [
+      "To compare amounts fairly",
+      "To record change over time",
+      "To group similar observations",
+      "To check a repeated result"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Repeating the test checks whether the observed result is consistent."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-001",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A child faces west and turns right through a quarter-turn. Which direction does the child face?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A right turn from west points north."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-002",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a map with north at the top, a pond lies directly to the right of a school. In which direction is the pond from the school?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The right-hand direction on this map is east."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-003",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A walker moves 3 steps north, then 5 steps south along the same line. In which direction is the walker from the starting point?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The net movement is two steps south."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-004",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shop is east of a library. In which direction is the library from the shop?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The reverse of east is west."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-005",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Asha is taller than Bina. Bina is taller than Chirag, who is taller than Deep. Who is tallest?",
+    "options": [
+      "Asha",
+      "Bina",
+      "Chirag",
+      "Deep"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The chain places Asha above everyone else."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-006",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four children finish a race without ties. Deep finishes first, Chirag third and Asha fourth. Who finishes second?",
+    "options": [
+      "Asha",
+      "Bina",
+      "Chirag",
+      "Deep"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bina is the only child left for second place."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-007",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a row from left to right are Deep, Asha, Chirag and Bina. Who stands immediately to the right of Asha?",
+    "options": [
+      "Asha",
+      "Bina",
+      "Chirag",
+      "Deep"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chirag follows Asha in the stated order."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-008",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Bina has fewer marbles than Asha, and Asha has fewer than Deep. Chirag has fewer than Bina. Who has the most?",
+    "options": [
+      "Asha",
+      "Bina",
+      "Chirag",
+      "Deep"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Deep has more than Asha, who has more than the remaining two."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-009",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which shape is different from the others because its boundary has exactly three straight sides?",
+    "options": [
+      "A triangle",
+      "A square",
+      "A circle",
+      "A rectangle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A triangle has three sides; the square and rectangle have four, and a circle has no straight sides."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-010",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A four-sided tile has four right angles and all its sides are equal. Which is its most specific name?",
+    "options": [
+      "A triangle",
+      "A square",
+      "A circle",
+      "A rectangle"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The equal-sided right-angled shape is a square."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-011",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which shape has no corners and has every boundary point equally far from its centre?",
+    "options": [
+      "A triangle",
+      "A square",
+      "A circle",
+      "A rectangle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Those properties describe a circle."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-012",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shape has four right angles, with opposite sides equal, but its length is greater than its width. Which shape is it?",
+    "options": [
+      "A triangle",
+      "A square",
+      "A circle",
+      "A rectangle"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "It is a nonsquare rectangle."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-013",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Continue the alphabet pattern: A, C, __, G. Which letter fills the gap?",
+    "options": [
+      "E",
+      "H",
+      "M",
+      "R"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pattern skips one letter each time: A,C,E,G."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-014",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Starting at K, move three letters backward in the alphabet. Which letter do you reach?",
+    "options": [
+      "E",
+      "H",
+      "M",
+      "R"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The backward steps are J,I,H."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-015",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A code replaces each letter with the next alphabet letter. What replaces L?",
+    "options": [
+      "E",
+      "H",
+      "M",
+      "R"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The letter after L is M."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-016",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Letters in a row are P, Q, R, S, T. Which letter is in the middle?",
+    "options": [
+      "E",
+      "H",
+      "M",
+      "R"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "R is the third of five letters."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-017",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sequence follows the rule \"add 3\": 3,6,9,__ . What comes next?",
+    "options": [
+      "12",
+      "16",
+      "21",
+      "25"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Adding three to nine gives twelve."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-018",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pattern doubles each value: 1,2,4,8,__ . What comes next?",
+    "options": [
+      "12",
+      "16",
+      "21",
+      "25"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Doubling eight gives sixteen."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-019",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A number pattern adds 2, then 3, then 4, then 5: 7,9,12,16,__ . What comes next?",
+    "options": [
+      "12",
+      "16",
+      "21",
+      "25"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The next increase is five, so sixteen becomes twenty-one."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-020",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The rule is \"square the counting number\": 1,4,9,16,__ . What comes next?",
+    "options": [
+      "12",
+      "16",
+      "21",
+      "25"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The next counting number is five, whose square is twenty-five."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-021",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Complete the shelter relationship: a dog may rest in a kennel; a nest-building bird rests in a __.",
+    "options": [
+      "Nest",
+      "Burrow",
+      "Hive",
+      "Web"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A nest is the corresponding shelter for the stated kind of bird."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-022",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Complete: bee is to hive as a ground-dwelling rabbit is to which shelter?",
+    "options": [
+      "Nest",
+      "Burrow",
+      "Hive",
+      "Web"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A rabbit shelter in the ground is a burrow."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-023",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which place is to a bee colony as a nest is to many birds?",
+    "options": [
+      "Nest",
+      "Burrow",
+      "Hive",
+      "Web"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A bee colony lives in a hive."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-024",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which structure is to a web-building spider as a nest is to a nest-building bird?",
+    "options": [
+      "Nest",
+      "Burrow",
+      "Hive",
+      "Web"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The spider builds a web."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-025",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If today is Saturday, which day will it be two days from now?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After Saturday come Sunday and Monday."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-026",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A lesson is every third day. One lesson is on Saturday. On which day is the next?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Three days after Saturday is Tuesday."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-027",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fair starts on Sunday and lasts five days, counting Sunday as day one. On which day does it end?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The counted days are Sunday,Monday,Tuesday,Wednesday,Thursday."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-028",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Yesterday was Friday. What day is today?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Saturday follows Friday."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-029",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A box is for objects that are red and round. How does a red round bead meet these two conditions?",
+    "options": [
+      "Both conditions are met",
+      "Only the colour condition is met",
+      "Only the shape condition is met",
+      "Neither condition is met"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "It is both red and round."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-030",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sorting rules are \"blue\" and \"triangular\". How does a blue square match the rules?",
+    "options": [
+      "Both conditions are met",
+      "Only the colour condition is met",
+      "Only the shape condition is met",
+      "Neither condition is met"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "It is blue but not triangular."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-031",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sorting rules are \"green\" and \"square\". How does a yellow square match them?",
+    "options": [
+      "Both conditions are met",
+      "Only the colour condition is met",
+      "Only the shape condition is met",
+      "Neither condition is met"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "It has the required shape but not the required colour."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-032",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sorting rules are \"yellow\" and \"round\". How does a red triangle match them?",
+    "options": [
+      "Both conditions are met",
+      "Only the colour condition is met",
+      "Only the shape condition is met",
+      "Neither condition is met"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "It is neither yellow nor round."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-033",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four bags have labels: red=books, blue=seeds, green=cloth, yellow=tools. Which bag should someone open to find books?",
+    "options": [
+      "The red bag",
+      "The blue bag",
+      "The green bag",
+      "The yellow bag"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The red label is matched with books."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-034",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The green bag is lighter than the blue bag. The red bag is lighter than the green bag, and the yellow bag is lighter than the red bag. Which is heaviest?",
+    "options": [
+      "The red bag",
+      "The blue bag",
+      "The green bag",
+      "The yellow bag"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Blue is heavier than green, which is heavier than the others."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-035",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One bag is left after removing the yellow bag, then the red bag, then the blue bag. Which bag remains?",
+    "options": [
+      "The red bag",
+      "The blue bag",
+      "The green bag",
+      "The yellow bag"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Green is the only named bag not removed."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-036",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "From smallest to largest, the bags are blue, red, yellow, green. Which bag is second largest?",
+    "options": [
+      "The red bag",
+      "The blue bag",
+      "The green bag",
+      "The yellow bag"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Yellow comes immediately before the largest, green."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-037",
+    "section": "skills",
+    "test": 2,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A row has five spaces. The middle space is occupied. How many spaces lie to its left?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The middle is the third space, leaving two on its left."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-038",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A queue has six children. One child is fourth from the front. How many children, including that child, are behind the third child?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The fourth, fifth and sixth children are three in total."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-039",
+    "section": "skills",
+    "test": 0,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A path has one flag at the start, one at the end, and two between them. How many flags are there?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "One plus one plus two gives four."
+  },
+  {
+    "id": "VIDYAGYAN-REASONING-040",
+    "section": "skills",
+    "test": 1,
+    "module": 1,
+    "domain": "vidyaReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A stack has seven books. The top two are removed. How many books remain?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Seven minus two is five."
+  }
+]

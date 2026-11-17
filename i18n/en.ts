@@ -2926,6 +2926,11 @@ export const en = {
     caqcSharing: "Sharing the Road",
     caqcRisk: "Alcohol, Drugs, Fatigue & Distraction",
     caqcDriving: "Driving Techniques & Conditions",
+    // NCCCO Mobile Crane Core
+    ncccoSite: "Site",
+    ncccoOperations: "Operations",
+    ncccoTechnical: "Technical Knowledge",
+    ncccoCharts: "Load Charts",
     // qabaabat
     abatAsd: "Autism Spectrum Disorder Basics",
     abatWorking: "Working with Autism Effectively",

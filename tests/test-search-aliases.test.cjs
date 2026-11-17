@@ -7,6 +7,21 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["nccco", "US", "nccco"],
+  ["crane operator", "US", "nccco"],
+  ["mobile crane core", "GB", "nccco"],
+  ["osssc", "US", "osssc"],
+  ["odisha", "IN", "osssc"],
+  ["odisha combined recruitment", "IN", "osssc"],
+  ["osslt", "CA", "osslt"],
+  ["vidya gyan", "IN", "vidyagyan"],
+  ["UP VidyaGyan entrance", "US", "vidyagyan"],
+  ["vidyagyan class 6", "IN", "vidyagyan"],
+  ["AP Computer Science", "US", "apcsp"],
+  ["AP CSP", "US", "apcsp"],
+  ["ap computer science principles", "GB", "apcsp"],
+  ["jamb literature", "NG", "jamblit"],
+  ["utme literature in english", "US", "jamblit"],
   ["inbde", "US", "inbde"],
   ["integrated national board dental", "US", "inbde"],
   ["dentist board exam", "US", "inbde"],

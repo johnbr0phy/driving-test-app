@@ -1,0 +1,962 @@
+[
+  {
+    "id": "165c547814d6",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 3000"
+  },
+  {
+    "id": "1d85f64f8334",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 21"
+  },
+  {
+    "id": "c0391635eaf5",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 48"
+  },
+  {
+    "id": "50a9dae5a8d4",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 12"
+  },
+  {
+    "id": "466bb2809cf4",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 0.5"
+  },
+  {
+    "id": "e45181f505c1",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred M"
+  },
+  {
+    "id": "161a5b34617b",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A diameter"
+  },
+  {
+    "id": "976430323b00",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 21"
+  },
+  {
+    "id": "769bb35fbeb9",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Both conditions are met"
+  },
+  {
+    "id": "a6856a7a2366",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A thermometer"
+  },
+  {
+    "id": "4ab45efa1169",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Leaves"
+  },
+  {
+    "id": "d1469d5e5015",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred The library"
+  },
+  {
+    "id": "e48cb52b8dcb",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred M"
+  },
+  {
+    "id": "100241c8d785",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 12"
+  },
+  {
+    "id": "5fee07583627",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Evaporation"
+  },
+  {
+    "id": "e4fa7cff7a91",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Thursday"
+  },
+  {
+    "id": "24ce9d1b1d65",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred M"
+  },
+  {
+    "id": "fc0967f43749",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred between"
+  },
+  {
+    "id": "f7d93b0188f5",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Hive"
+  },
+  {
+    "id": "df38b2d0e227",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Reusing an object"
+  },
+  {
+    "id": "8d349303492c",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A helpful change"
+  },
+  {
+    "id": "3d11d7105a5b",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred quiet"
+  },
+  {
+    "id": "e0b2cf28bbd6",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 0.5"
+  },
+  {
+    "id": "17d4eb863107",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A thermometer"
+  },
+  {
+    "id": "d0ae1df7cc8e",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred North"
+  },
+  {
+    "id": "0d7f48c253af",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred because"
+  },
+  {
+    "id": "1181c4ddba74",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A question mark"
+  },
+  {
+    "id": "d0a440afc47a",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 1/2"
+  },
+  {
+    "id": "92eb4dc55983",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred To compare amounts fairly"
+  },
+  {
+    "id": "bf759efb0cc3",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 1/2"
+  },
+  {
+    "id": "fa0e58c6ec23",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Thursday"
+  },
+  {
+    "id": "1da80609267c",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A health centre"
+  },
+  {
+    "id": "2a6b688f5cbb",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred quiet"
+  },
+  {
+    "id": "4ee4391cf475",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 48"
+  },
+  {
+    "id": "0816ba1455d8",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A means of seed dispersal"
+  },
+  {
+    "id": "7c3c6573f9b4",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred To compare amounts fairly"
+  },
+  {
+    "id": "5608888c8c66",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred To compare amounts fairly"
+  },
+  {
+    "id": "2ab108145cfd",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred An adjective"
+  },
+  {
+    "id": "71dc1da7f44c",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A diameter"
+  },
+  {
+    "id": "b28947030829",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Dissolving"
+  },
+  {
+    "id": "abf31148155e",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A circle"
+  },
+  {
+    "id": "9e342424f486",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred To compare amounts fairly"
+  },
+  {
+    "id": "921c20e25ac7",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A health centre"
+  },
+  {
+    "id": "beab86f38666",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 13"
+  },
+  {
+    "id": "4152bd4a243c",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Thursday"
+  },
+  {
+    "id": "c0cf3c26d77a",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 28"
+  },
+  {
+    "id": "fa53a0c38505",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred quiet"
+  },
+  {
+    "id": "86cc286c2972",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Hive"
+  },
+  {
+    "id": "703ecc234723",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A means of seed dispersal"
+  },
+  {
+    "id": "28fdc503da5e",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Evaporation"
+  },
+  {
+    "id": "09f3b4d4e4b0",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Bina"
+  },
+  {
+    "id": "dba42a04811b",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 48"
+  },
+  {
+    "id": "afd217161d69",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred delighted"
+  },
+  {
+    "id": "938bf72d4091",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred It is attracted by a magnet"
+  },
+  {
+    "id": "90786700bf04",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred An adjective"
+  },
+  {
+    "id": "1b7e6fd50584",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 500"
+  },
+  {
+    "id": "692763c073ec",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A health centre"
+  },
+  {
+    "id": "643545f94d9a",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Bina"
+  },
+  {
+    "id": "5f1735859daf",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 1/2"
+  },
+  {
+    "id": "c208805b3c12",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred between"
+  },
+  {
+    "id": "3c7e0e2f7ad5",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred delighted"
+  },
+  {
+    "id": "56b2c41e4082",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred delighted"
+  },
+  {
+    "id": "17c62a803232",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 45 minutes"
+  },
+  {
+    "id": "97df40197cb9",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A question mark"
+  },
+  {
+    "id": "b4b72cba905a",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 13"
+  },
+  {
+    "id": "9db8e9dc5502",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred they"
+  },
+  {
+    "id": "d8b5480f9bed",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred delighted"
+  },
+  {
+    "id": "d6c85338e20e",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 3000"
+  },
+  {
+    "id": "665bfc5de1a3",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 0.5"
+  },
+  {
+    "id": "dcae754034c9",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 21"
+  },
+  {
+    "id": "0d7403e6c55b",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred More light was supplied"
+  },
+  {
+    "id": "39e4037761ee",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 45 minutes"
+  },
+  {
+    "id": "5d1a3e33d09e",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A thermometer"
+  },
+  {
+    "id": "9b020b41b43d",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred between"
+  },
+  {
+    "id": "47e904d53979",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred An adjective"
+  },
+  {
+    "id": "2c0113d93ba4",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 48"
+  },
+  {
+    "id": "3dc5109a020b",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A means of seed dispersal"
+  },
+  {
+    "id": "1763a9be3458",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A circle"
+  },
+  {
+    "id": "1870807d877c",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred It is attracted by a magnet"
+  },
+  {
+    "id": "c46494beddf8",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Evaporation"
+  },
+  {
+    "id": "55f799fa044a",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A diameter"
+  },
+  {
+    "id": "e69591c17786",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 12"
+  },
+  {
+    "id": "ad8cf22f1366",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A thermometer"
+  },
+  {
+    "id": "bfc4135b8e9f",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 1/2"
+  },
+  {
+    "id": "69224f3b4db3",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Both conditions are met"
+  },
+  {
+    "id": "69b7a2b97616",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred The blue bag"
+  },
+  {
+    "id": "6645f0dbb4e8",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 12"
+  },
+  {
+    "id": "66fefa55646c",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred quiet"
+  },
+  {
+    "id": "ade81dd8aa57",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Leaves"
+  },
+  {
+    "id": "e82032403ebf",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred because"
+  },
+  {
+    "id": "46890bba2d1d",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred walked"
+  },
+  {
+    "id": "963d28a6b0fd",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A diameter"
+  },
+  {
+    "id": "6db35762cae5",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 28"
+  },
+  {
+    "id": "fdaa21020efa",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred North"
+  },
+  {
+    "id": "6805ec6d26a3",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 3"
+  },
+  {
+    "id": "6c330d8dd088",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A helpful change"
+  },
+  {
+    "id": "32bc55e1afc7",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred The blue bag"
+  },
+  {
+    "id": "1d20d5f33bb6",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred they"
+  },
+  {
+    "id": "07ba18c11239",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 500"
+  },
+  {
+    "id": "cb1e564f9852",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Both conditions are met"
+  },
+  {
+    "id": "eb1fa4fc6649",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Reusing an object"
+  },
+  {
+    "id": "514f60345faf",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred The library"
+  },
+  {
+    "id": "504e9a67a968",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A question mark"
+  },
+  {
+    "id": "9743983f546e",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A question mark"
+  },
+  {
+    "id": "b45c6be41e32",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred More light was supplied"
+  },
+  {
+    "id": "9beaa940c7be",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 13"
+  },
+  {
+    "id": "c0d0d49166d1",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 13"
+  },
+  {
+    "id": "0cd0db4298d6",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 3000"
+  },
+  {
+    "id": "ce683b88b261",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 21"
+  },
+  {
+    "id": "598fc5db021b",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Dissolving"
+  },
+  {
+    "id": "02cb205dffc9",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred because"
+  },
+  {
+    "id": "881a776aa140",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 45 minutes"
+  },
+  {
+    "id": "646f7420ba93",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred between"
+  },
+  {
+    "id": "8d647499c7f1",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Both conditions are met"
+  },
+  {
+    "id": "39894830ae51",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Dissolving"
+  },
+  {
+    "id": "deaf17ca3b7f",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Bina"
+  },
+  {
+    "id": "04fb844265d7",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Hive"
+  },
+  {
+    "id": "ce2519b9a337",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred More light was supplied"
+  },
+  {
+    "id": "6a9f351f3800",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred walked"
+  },
+  {
+    "id": "bb89b70fa5eb",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 3"
+  },
+  {
+    "id": "71d91bc32974",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Reusing an object"
+  },
+  {
+    "id": "8827cbb3afa5",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Leaves"
+  },
+  {
+    "id": "60eb130ea17c",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A means of seed dispersal"
+  },
+  {
+    "id": "12c392b94edb",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A helpful change"
+  },
+  {
+    "id": "68f1afd261b1",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 3"
+  },
+  {
+    "id": "916b554bb2b9",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred It is attracted by a magnet"
+  },
+  {
+    "id": "e2ae912d749c",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred walked"
+  },
+  {
+    "id": "bd08e6de7373",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred M"
+  },
+  {
+    "id": "c543668ca547",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Hive"
+  },
+  {
+    "id": "29c0e6e37b44",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Leaves"
+  },
+  {
+    "id": "f1939588943c",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A helpful change"
+  },
+  {
+    "id": "04165bff4c40",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Dissolving"
+  },
+  {
+    "id": "c4cc8c60e270",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred The library"
+  },
+  {
+    "id": "c3770e3f7990",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred North"
+  },
+  {
+    "id": "5ce038836ac9",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A circle"
+  },
+  {
+    "id": "03386012c9a8",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred An adjective"
+  },
+  {
+    "id": "67d08bb9f640",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 28"
+  },
+  {
+    "id": "96b4808ef638",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred The blue bag"
+  },
+  {
+    "id": "e103966fcbae",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 3"
+  },
+  {
+    "id": "e8dbb2b63a75",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 500"
+  },
+  {
+    "id": "e041ec2e802c",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A circle"
+  },
+  {
+    "id": "070cfd2feafb",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred It is attracted by a magnet"
+  },
+  {
+    "id": "50949bbd29eb",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Reusing an object"
+  },
+  {
+    "id": "e1bc3b653066",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 0.5"
+  },
+  {
+    "id": "7e05433c329b",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Thursday"
+  },
+  {
+    "id": "106028c454aa",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred they"
+  },
+  {
+    "id": "0040d0460187",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred because"
+  },
+  {
+    "id": "045096614579",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred More light was supplied"
+  },
+  {
+    "id": "bb10fac64f85",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 28"
+  },
+  {
+    "id": "7bf1f6425663",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 45 minutes"
+  },
+  {
+    "id": "af39a8f9259d",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 3000"
+  },
+  {
+    "id": "c52ab0a27308",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred they"
+  },
+  {
+    "id": "596d807b6dbf",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred The library"
+  },
+  {
+    "id": "274079a98ff8",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred 500"
+  },
+  {
+    "id": "958ba54af34c",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Evaporation"
+  },
+  {
+    "id": "621c1ddd1e4f",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred A health centre"
+  },
+  {
+    "id": "f278a347208b",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred Bina"
+  },
+  {
+    "id": "2d80beb88790",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred North"
+  },
+  {
+    "id": "53d8d7fa162c",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred The blue bag"
+  },
+  {
+    "id": "a4ed2b52642f",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "reason": "Weak topic-prior guess; options are parallel and no decisive stem-free cue. Preferred walked"
+  }
+]

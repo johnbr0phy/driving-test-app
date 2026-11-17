@@ -66,6 +66,7 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  * Remove an entry once that exam has its own eight expressions.
  */
 const BORROWED_SETS: Record<string, string> = {
+  nccco: "osha",
   prince2: "pmp",
   hknurse: "nclex",
   bcrealestate: "realestate",
@@ -120,7 +121,7 @@ const BORROWED_SETS: Record<string, string> = {
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", ceh: "secplus", sc200: "secplus", sc900: "secplus", gcdl: "aws", gcppca: "aws", isc2cc: "cissp",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
-  ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "shsat", cogat: "timestables",ssat: "shsat",isee: "shsat",
+  osssc: "ssccgl", ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", vidyagyan: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "shsat", cogat: "timestables",ssat: "shsat",isee: "shsat",
   // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
   staareng1: "aplang",
   pkdrive: "driving",
@@ -176,7 +177,7 @@ const BORROWED_SETS: Record<string, string> = {
   reet: "ctet", uptet: "ctet", ugcnet: "ctet", aissee: "asvab",
   // Next-100 batch 5: the JAMB UTME subjects (Use of English too) the college-entrance (SAT) tiger; the Nigeria
   // recruitment tests the police, firefighter, military-entrance and security-guard tigers; the TRCN PQE the Praxis tiger.
-  jambeng: "sat", jambmath: "sat", wasscemath: "sat", jambbio: "sat", jambchem: "sat", jambphys: "sat", wassceeng: "sat",
+  jambeng: "sat", jambmath: "sat", wasscemath: "sat", jambbio: "sat", jambchem: "sat", jambphys: "sat", jamblit: "sat", apcsp: "sat", wassceeng: "sat",
   ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
   // AHIMA CCA shares the CPC medical coding tiger.
   cca: "cpc",

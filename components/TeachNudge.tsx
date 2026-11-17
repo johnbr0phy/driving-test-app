@@ -17,6 +17,7 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 
 // Families by id; state versions count as their family (variantOf).
 const TEACHER_LED = new Set([
+  "nccco",
   "hknurse",
   "cacore",
   "cahunteron",
@@ -105,7 +106,7 @@ const TEACHER_LED = new Set([
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "prince2", "psm", "capm",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "ceh", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
-  "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
+  "osssc", "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "vidyagyan", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)
   "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "jkssbja", "tgsi", "apush", "apbio", "apitalian", "phcse",
   // Next-100 batch 3 (November 2026)
@@ -113,7 +114,7 @@ const TEACHER_LED = new Set([
   // Next-100 batch 4 (November 2026)
   "neet", "jeemain", "mhtcet", "cuet", "ugcnet", "reet", "uptet", "aissee", "aphug", "apcalcab",
   // Next-100 batch 5 (November 2026)
-  "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng", "apgov", "ngpolice", "trcnpqe",
+  "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "jamblit", "apcsp", "wassceeng", "apgov", "ngpolice", "trcnpqe",
   // Next-20 batch B (November 2026)
   "cma", "rma", "nbdhe", "inbde", "nptepta", "aatl2", "accafa",
   // Next-20 batch C (November 2026)

@@ -64,6 +64,12 @@
   "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-bc-course-and-exam-description-clarifications.pdf",
   "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
  ],
+ "apcsp": [
+  "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-and-exam-description.pdf",
+  "https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam",
+  "https://apstudents.collegeboard.org/courses/ap-computer-science-principles/assessment",
+  "https://apcentral.collegeboard.org/courses/ap-computer-science-principles"
+ ],
  "apgov": [
   "https://apcentral.collegeboard.org/courses/ap-united-states-government-and-politics/exam",
   "https://apcentral.collegeboard.org/courses/ap-united-states-government-and-politics",
@@ -953,6 +959,11 @@
   "https://ibass.jamb.gov.ng",
   "https://www.icirnigeria.org/cut-off-mark-for-varsity-admission-remains-150-says-jamb/"
  ],
+ "jamblit": [
+  "https://ibass.jamb.gov.ng/static/media/Literature.f24a00818658eb8ecbd0.pdf",
+  "https://ibass.jamb.gov.ng/assets/uploads/Literature-in-English.pdf",
+  "https://poets.org/glossary"
+ ],
  "jambmath": [
   "https://www.jamb.gov.ng/",
   "https://ibass.jamb.gov.ng",
@@ -1093,6 +1104,11 @@
   "https://jcnde.ada.org/nbdhe",
   "https://jcnde.ada.org/-/media/project/ada-organization/ada/jcnde/files/nbdhe_case_guide.pdf"
  ],
+ "nccco": [
+  "https://ccocert.org/en/handbooks-forms/",
+  "https://ccocert.org/wp-content/uploads/2026/06/mobile-crane-operator-candidate-handbook_111424-en.pdf",
+  "https://ccocert.org/en/news-and-events/"
+ ],
  "nce": [
   "https://www.nbcc.org/exams/nce",
   "https://www.nbcc.org/assets/exam/nce_content_outline.pdf",
@@ -1232,6 +1248,11 @@
   "https://www.eqao.com/wp-content/uploads/2021/01/framework-osslt.pdf",
   "https://www.eqao.com/framework-osslt/",
   "https://eqao.com/the-assessments/osslt/"
+ ],
+ "osssc": [
+  "https://www.osssc.gov.in/Docs/CRE-2025-3219.pdf",
+  "https://www.osssc.gov.in/Public/OSSSC/Default.aspx",
+  "https://support.microsoft.com/en-us/excel/get-started/overview-of-formulas-in-excel"
  ],
  "pakarmy": [
   "https://www.joinpakarmy.gov.pk",
@@ -1799,6 +1820,11 @@
   "https://www.vic.gov.au/selective-entry-high-schools",
   "https://selectiveentry.acer.org/vic/prepare",
   "https://selectiveentry.acer.org/vic/exam-day"
+ ],
+ "vidyagyan": [
+  "https://vidyagyan.in/sites/default/files/2025-12/VidyaGyan-Main-Exam-Centres-2026%E2%80%9327-%28District-Wise%29.pdf",
+  "https://vidyagyan.in/sites/default/files/Sample-of-Invite-Letter-for-VidyaGyan-Bulandshahar.pdf",
+  "https://vidyagyan.in/admissions"
  ],
  "wassceeng": [
   "https://www.waecnigeria.org/index.php/node/9?page=0",

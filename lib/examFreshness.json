@@ -452,6 +452,14 @@
       "what": "The Security Services and Investigators Regulation (AR 52/2010) and Ministerial Regulation (AR 55/2010) expire on March 31, 2028 unless repassed, possibly amended.",
       "action": "Read the new or repassed regulations and update the licensing, uniform, baton and reporting items.",
       "source": "https://kings-printer.alberta.ca/documents/Regs/2010_055.pdf"
+    },
+    {
+      "exam": "apcsp",
+      "date": "2027-04-01",
+      "kind": "review",
+      "what": "Editorial reminder to check the announced 2027–28 CSP redesign; this is not an official effective date.",
+      "action": "Read the new CED when published and schedule a bank/format review before the redesigned course begins.",
+      "source": "https://apcentral.collegeboard.org/courses/ap-computer-science-principles"
     }
   ]
 }

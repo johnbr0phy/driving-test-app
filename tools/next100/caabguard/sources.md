@@ -96,7 +96,7 @@ the site allowed it, otherwise curl with a browser user agent; PDFs read as text
   https://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html
   - Fetched 2026-11-16. s 25 (as much force as is necessary, on reasonable grounds; no force likely to
     cause death or grievous bodily harm except for self-preservation), s 26 (excessive force), s 27
-    (preventing an offence), s 34 (self-defence factors), s 35 (defence of property), s 265 (assault),
+    (preventing an offence), s 30 (preventing a breach of the peace; detain to give into the custody of a peace officer), s 34 (self-defence factors), s 35 (defence of property), s 265 (assault),
     s 322 (theft), s 348 (break and enter), s 354 (possession of property obtained by crime), s 430
     (mischief, including computer data), s 494 (arrest without warrant by any person and by the owner
     or a person authorized by the owner; deliver forthwith to a peace officer).

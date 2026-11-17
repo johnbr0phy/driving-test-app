@@ -1180,14 +1180,14 @@
     "state": "ALL",
     "questionId": "CAABG-FOR-017",
     "category": "abgForce",
-    "question": "After you use force on duty, you must be ready to:",
-    "optionA": "Justify and record it",
-    "optionB": "Report it if someone is hurt",
-    "optionC": "Tell only your supervisor",
-    "optionD": "Note it if police ask",
+    "question": "Under section 30, a person you detain for joining a breach of the peace is held so you can:",
+    "optionA": "Hand them to a peace officer",
+    "optionB": "Take a written statement",
+    "optionC": "Ban them from the site",
+    "optionD": "Wait for the client to decide",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Using force is a serious matter. Record the events, and be ready to justify your actions and answer questions about them."
+    "explanation": "Section 30 lets anyone who witnesses a breach of the peace detain a person who joins or renews it, with no more force than is reasonably necessary, for the purpose of giving them into the custody of a peace officer."
   },
   {
     "type": "CAABGUARD",

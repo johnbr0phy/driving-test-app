@@ -9,6 +9,7 @@ import { teachPathFor } from "@/lib/teachPages";
 // page's FAQPage graph; keep the two in step.
 
 export const TEACHES: Record<string, string> = {
+  nccco: "a mobile crane operator training course",
   hknurse: "a nursing licensing exam preparation class",
   cacore: "a CORE hunter education course",
   cahunteron: "an Ontario hunter education course",
@@ -181,6 +182,7 @@ export const TEACHES: Record<string, string> = {
   prince2: "a PRINCE2 course",
   psm: "a Scrum or agile course",
   capm: "a project management course",
+  osssc: "an OSSSC preparation class",
   ssccgl: "an SSC coaching batch",
   rrbntpc: "a railway exam coaching class",
   ctet: "a CTET or B.Ed coaching class",
@@ -191,12 +193,15 @@ export const TEACHES: Record<string, string> = {
   sscmts: "an SSC MTS coaching batch",
   uppolice: "a UP Police coaching batch",
   ibpsclerk: "a bank exam coaching batch",
+  vidyagyan: "a Class 5 classroom or a VidyaGyan preparation class",
   jnvst: "a Navodaya coaching class or a Class 5 classroom",
   jambeng: "a JAMB tutorial class",
   jambmath: "a JAMB tutorial class",
   wasscemath: "an SS3 Mathematics class",
   jambbio: "a JAMB tutorial class",
   jambchem: "a JAMB tutorial class",
+  apcsp: "AP Computer Science Principles",
+  jamblit: "a JAMB literature tutorial class",
   jambphys: "a JAMB tutorial class",
   wassceeng: "an SS3 English class or WAEC lesson",
   appsych: "AP Psychology",

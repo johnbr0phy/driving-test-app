@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "OSSSC-MATHS-001",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A salary of ₹25000 rises by ₹3000. What is the percentage increase?",
+    "options": [
+      "12",
+      "15",
+      "18",
+      "24"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "3000/25000 times 100 equals 12%."
+  },
+  {
+    "id": "OSSSC-MATHS-002",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A trader pays ₹200 for an item and sells it for ₹230. What is the profit percentage on cost?",
+    "options": [
+      "12",
+      "15",
+      "18",
+      "24"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Profit is 30;30/200 times 100 is 15."
+  },
+  {
+    "id": "OSSSC-MATHS-003",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retailer sells an item for ₹590 after buying it for ₹500. What is the profit percentage on cost?",
+    "options": [
+      "12",
+      "15",
+      "18",
+      "24"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Profit is 90;90/500 times 100 is 18%."
+  },
+  {
+    "id": "OSSSC-MATHS-004",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A quantity is reduced by 20% to 96. What was the reduction?",
+    "options": [
+      "12",
+      "15",
+      "18",
+      "24"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The original is 96/0.8=120;the reduction is 24."
+  },
+  {
+    "id": "OSSSC-MATHS-005",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a ratio 3:2, the larger share is 30. What is the smaller share?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One ratio part is 10, so two parts are 20."
+  },
+  {
+    "id": "OSSSC-MATHS-006",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The average of 18,22,27 and x is 23. What is x?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Four values total 92;the known sum is 67, leaving 25."
+  },
+  {
+    "id": "OSSSC-MATHS-007",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A worker completes 3/5 of a task in 18 days at a constant rate. How many days would the whole task take?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "18 divided by 3/5 equals 30."
+  },
+  {
+    "id": "OSSSC-MATHS-008",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cyclist covers 18 km in 27 minutes. What is the speed in km/h?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "27 minutes is 0.45 hour;18/0.45=40."
+  },
+  {
+    "id": "OSSSC-MATHS-009",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the simple interest on ₹1000 at 6% per year for 2 years?",
+    "options": [
+      "₹120",
+      "₹180",
+      "₹240",
+      "₹300"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "1000 times 0.06 times 2 equals 120."
+  },
+  {
+    "id": "OSSSC-MATHS-010",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An item marked ₹900 is sold at 20% off. How much is the discount?",
+    "options": [
+      "₹120",
+      "₹180",
+      "₹240",
+      "₹300"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "20% of 900 is 180."
+  },
+  {
+    "id": "OSSSC-MATHS-011",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A ₹600 sum is divided in the ratio 2:3. What is the smaller share?",
+    "options": [
+      "₹120",
+      "₹180",
+      "₹240",
+      "₹300"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Two of five parts is 2/5 times 600=240."
+  },
+  {
+    "id": "OSSSC-MATHS-012",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shop receives ₹1080 from selling goods that cost ₹780. What is the profit?",
+    "options": [
+      "₹120",
+      "₹180",
+      "₹240",
+      "₹300"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Subtract cost from receipts:1080-780=300."
+  },
+  {
+    "id": "OSSSC-MATHS-013",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One pipe fills a tank in 6 hours and another in 6 hours. Working together at constant rates, how long do they take?",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Their rates add to 1/3 tank per hour, so the time is 3 hours."
+  },
+  {
+    "id": "OSSSC-MATHS-014",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A car travels 240 km at 60 km/h without stopping. How long is the journey?",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Time equals 240/60=4 hours."
+  },
+  {
+    "id": "OSSSC-MATHS-015",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two workers together finish a job in 2 hours. One alone would take 10/3 hours. How long would the other take alone?",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The other rate is 1/2-3/10=1/5 job per hour, giving 5 hours."
+  },
+  {
+    "id": "OSSSC-MATHS-016",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A train travels 90 km at 45 km/h, stops 1 hour and then travels 150 km at 50 km/h. What is its total elapsed time?",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The two moving times are 2 and 3 hours;adding the stop gives 6 hours."
+  },
+  {
+    "id": "OSSSC-MATHS-017",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Solve 3 x+4=19. What is x?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Subtract 4 and divide 15 by 3 to get 5."
+  },
+  {
+    "id": "OSSSC-MATHS-018",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If 2 a-b=9 and b=5, what is a?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "2 a=14, so a=7."
+  },
+  {
+    "id": "OSSSC-MATHS-019",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sum of three consecutive integers is 27. What is the middle integer?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The middle value is the average,27/3=9."
+  },
+  {
+    "id": "OSSSC-MATHS-020",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A number leaves remainder 2 when divided by 3 and remainder 1 when divided by 5. Which listed number fits both?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eleven gives remainders 2 and 1 respectively."
+  },
+  {
+    "id": "OSSSC-MATHS-021",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangle is 9 m by 4 m. What is its area in square metres?",
+    "options": [
+      "36",
+      "48",
+      "60",
+      "72"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Area is 9 times 4=36."
+  },
+  {
+    "id": "OSSSC-MATHS-022",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cuboid is 4 cm by 3 cm by 4 cm. What is its volume in cubic centimetres?",
+    "options": [
+      "36",
+      "48",
+      "60",
+      "72"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multiply 4 times 3 times 4=48."
+  },
+  {
+    "id": "OSSSC-MATHS-023",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A triangle has base 12 cm and perpendicular height 10 cm. What is its area in square centimetres?",
+    "options": [
+      "36",
+      "48",
+      "60",
+      "72"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Half of 12 times 10 is 60."
+  },
+  {
+    "id": "OSSSC-MATHS-024",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rectangle has perimeter 36 cm and width 6 cm. What is its area in square centimetres?",
+    "options": [
+      "36",
+      "48",
+      "60",
+      "72"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Length plus width is 18, so length is 12;area is 12 times 6=72."
+  },
+  {
+    "id": "OSSSC-MATHS-025",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two angles of a triangle are 80° and 70°. What is the third angle?",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Triangle angles total 180°;180-150=30°."
+  },
+  {
+    "id": "OSSSC-MATHS-026",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An isosceles right triangle has a 90° angle. What is either of its equal angles?",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The remaining 90° is split equally, giving 45°."
+  },
+  {
+    "id": "OSSSC-MATHS-027",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is each interior angle of an equilateral triangle?",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Three equal angles sum to 180°, so each is 60°."
+  },
+  {
+    "id": "OSSSC-MATHS-028",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A straight angle is divided into two equal angles. What is each angle?",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A straight angle is 180°, and half is 90°."
+  },
+  {
+    "id": "OSSSC-MATHS-029",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fair six-sided die is rolled once. What is the probability of rolling a 4?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There is one favourable outcome among six."
+  },
+  {
+    "id": "OSSSC-MATHS-030",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is 5/6 minus 1/2?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Convert 1/2 to 3/6;5/6-3/6=2/6=1/3."
+  },
+  {
+    "id": "OSSSC-MATHS-031",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bag contains 4 red and 4 blue counters. What fraction are blue?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Four of eight is 1/2."
+  },
+  {
+    "id": "OSSSC-MATHS-032",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which fraction equals 0.666... with 6 repeating indefinitely?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The repeating decimal 0.666... equals 2/3."
+  },
+  {
+    "id": "OSSSC-MATHS-033",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the greatest common divisor of 42 and 56?",
+    "options": [
+      "14",
+      "16",
+      "21",
+      "28"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Their greatest common factor is 14."
+  },
+  {
+    "id": "OSSSC-MATHS-034",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the square root of 256?",
+    "options": [
+      "14",
+      "16",
+      "21",
+      "28"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "16 times 16=256."
+  },
+  {
+    "id": "OSSSC-MATHS-035",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many unordered pairs can be chosen from 7 people?",
+    "options": [
+      "14",
+      "16",
+      "21",
+      "28"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "7 times 6 divided by 2 equals 21."
+  },
+  {
+    "id": "OSSSC-MATHS-036",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The first term of an arithmetic sequence is 4 and its common difference is 6. What is its fifth term?",
+    "options": [
+      "14",
+      "16",
+      "21",
+      "28"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The fifth term is 4+4 times 6=28."
+  },
+  {
+    "id": "OSSSC-MATHS-037",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A list of observations is 3,5,8,11,13. What is the median?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "20"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The middle value in the ordered list is 8."
+  },
+  {
+    "id": "OSSSC-MATHS-038",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The mean of four values is 12. Three values are 8,14 and 16. What is the fourth?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "20"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The total is 48;the three given values total 38, so the missing value is 10."
+  },
+  {
+    "id": "OSSSC-MATHS-039",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A table lists bus trips as Monday 7, Tuesday 12, Wednesday 9. How many Tuesday trips are recorded?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "20"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Tuesday entry is 12."
+  },
+  {
+    "id": "OSSSC-MATHS-040",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A department processes 80 forms on one day and 100 on the next. By how many forms did processing increase?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "20"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "100-80=20."
+  },
+  {
+    "id": "OSSSC-MATHS-041",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the remainder when 62 is divided by 5?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "62=12 times 5+2."
+  },
+  {
+    "id": "OSSSC-MATHS-042",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A number is 25% of 16. What is the number?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "One quarter of 16 is 4."
+  },
+  {
+    "id": "OSSSC-MATHS-043",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A map scale is 1 cm for 5 km. A route is 30 km long. How many centimetres represent it?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "30/5=6 cm."
+  },
+  {
+    "id": "OSSSC-MATHS-044",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "If x:y=2:3 and y=12, what is x?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each ratio part is 4, so x is 8."
+  },
+  {
+    "id": "OSSSC-MATHS-045",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An item costs ₹640. Its price is raised by 25% and then reduced by 10%. What is the final price?",
+    "options": [
+      "₹720",
+      "₹704",
+      "₹736",
+      "₹800"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The raised price is 800;90%of 800 is 720."
+  },
+  {
+    "id": "OSSSC-MATHS-046",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A journey of 120 km is made at 40 km/h and the same distance back at 60 km/h. What is the average speed for the whole journey?",
+    "options": [
+      "50 km/h",
+      "48 km/h",
+      "45 km/h",
+      "52 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Total distance is 240 km;total time is 3+2=5 hours, so average speed is 48 km/h."
+  },
+  {
+    "id": "OSSSC-MATHS-047",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscMaths",
+    "skill": "maths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three machines make 450 parts in 5 hours at equal constant rates. How many parts do two such machines make in 4 hours?",
+    "options": [
+      "300 parts",
+      "360 parts",
+      "240 parts",
+      "180 parts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each machine makes 450/(3 times 5)=30 parts per hour;two machines for 4 hours make 240."
+  },
+  {
+    "id": "OSSSC-GENERAL-001",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which place became the capital of Odisha after independence, replacing the earlier provincial capital?",
+    "options": [
+      "Bhubaneswar",
+      "Cuttack",
+      "Konark",
+      "Mahendragiri"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bhubaneswar became the new capital; Cuttack was the earlier provincial capital."
+  },
+  {
+    "id": "OSSSC-GENERAL-002",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which place served as the capital when Odisha became a separate province in 1936?",
+    "options": [
+      "Bhubaneswar",
+      "Cuttack",
+      "Konark",
+      "Mahendragiri"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cuttack served as the provincial capital before the move to Bhubaneswar."
+  },
+  {
+    "id": "OSSSC-GENERAL-003",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At which place is the temple whose architecture represents the chariot of the Sun god?",
+    "options": [
+      "Bhubaneswar",
+      "Cuttack",
+      "Konark",
+      "Mahendragiri"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Sun Temple at Konark represents the chariot of Surya."
+  },
+  {
+    "id": "OSSSC-GENERAL-004",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which place is a mountain in Gajapati district, rising about 1,501 metres within the Eastern Ghats?",
+    "options": [
+      "Bhubaneswar",
+      "Cuttack",
+      "Konark",
+      "Mahendragiri"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Gajapati district administration identifies Mahendragiri as this mountain."
+  },
+  {
+    "id": "OSSSC-GENERAL-005",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which historical figure led the conquest of Kalinga dated to 261 BCE?",
+    "options": [
+      "Ashoka",
+      "Kharavela",
+      "Narasimha Deva I",
+      "Mahatma Gandhi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ashoka conquered Kalinga in 261 BCE."
+  },
+  {
+    "id": "OSSSC-GENERAL-006",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Whose achievements are associated with the Hathigumpha inscription at Udayagiri?",
+    "options": [
+      "Ashoka",
+      "Kharavela",
+      "Narasimha Deva I",
+      "Mahatma Gandhi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Hathigumpha inscription records the achievements of Kharavela."
+  },
+  {
+    "id": "OSSSC-GENERAL-007",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under whose reign was the thirteenth-century Sun Temple at Konark built?",
+    "options": [
+      "Ashoka",
+      "Kharavela",
+      "Narasimha Deva I",
+      "Mahatma Gandhi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "UNESCO identifies Konark with the reign of Narasimha Deva I, AD 1238–1264."
+  },
+  {
+    "id": "OSSSC-GENERAL-008",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who organised nationwide celebrations on 26 January 1930 as Independence Day following the demand for complete independence?",
+    "options": [
+      "Ashoka",
+      "Kharavela",
+      "Narasimha Deva I",
+      "Mahatma Gandhi"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The President's Secretariat historical account identifies Mahatma Gandhi as organising these celebrations."
+  },
+  {
+    "id": "OSSSC-GENERAL-009",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In which year was Odisha formed as a separate province?",
+    "options": [
+      "1936",
+      "1947",
+      "1949",
+      "1950"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The separate province was formed in 1936."
+  },
+  {
+    "id": "OSSSC-GENERAL-010",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In which year did India gain independence from British rule?",
+    "options": [
+      "1936",
+      "1947",
+      "1949",
+      "1950"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "India became independent on 15 August 1947."
+  },
+  {
+    "id": "OSSSC-GENERAL-011",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In which year did the Constituent Assembly adopt the Constitution of India?",
+    "options": [
+      "1936",
+      "1947",
+      "1949",
+      "1950"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Constitution was adopted on 26 November 1949."
+  },
+  {
+    "id": "OSSSC-GENERAL-012",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In which year did the Constitution come into force as the basis of the Republic of India?",
+    "options": [
+      "1936",
+      "1947",
+      "1949",
+      "1950"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Constitution came into force on 26 January 1950."
+  },
+  {
+    "id": "OSSSC-GENERAL-013",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Union Council of Ministers is collectively responsible to which institution?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "President",
+      "Supreme Court"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Council of Ministers is collectively responsible to the Lok Sabha."
+  },
+  {
+    "id": "OSSSC-GENERAL-014",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which institution is the parliamentary House formally known as the Council of States?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "President",
+      "Supreme Court"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rajya Sabha is the Council of States; Lok Sabha is the House of the People."
+  },
+  {
+    "id": "OSSSC-GENERAL-015",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which office, together with the two Houses, constitutes the Parliament of India?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "President",
+      "Supreme Court"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Parliament consists of the President, Rajya Sabha and Lok Sabha."
+  },
+  {
+    "id": "OSSSC-GENERAL-016",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which institution stands at the apex of India's judicial system?",
+    "options": [
+      "Lok Sabha",
+      "Rajya Sabha",
+      "President",
+      "Supreme Court"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Supreme Court is India's apex judicial body."
+  },
+  {
+    "id": "OSSSC-GENERAL-017",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A plant absorbs water through its roots. Which structure conducts much of that water towards the leaves?",
+    "options": [
+      "Xylem",
+      "Phloem",
+      "Stomata",
+      "Chlorophyll"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Xylem conducts water and dissolved minerals through the plant."
+  },
+  {
+    "id": "OSSSC-GENERAL-018",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sugars made in a leaf must reach growing roots. Which tissue transports these food materials?",
+    "options": [
+      "Xylem",
+      "Phloem",
+      "Stomata",
+      "Chlorophyll"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phloem transports products of photosynthesis to other plant parts."
+  },
+  {
+    "id": "OSSSC-GENERAL-019",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which leaf pores, regulated by guard cells, allow gas exchange and water-vapour loss?",
+    "options": [
+      "Xylem",
+      "Phloem",
+      "Stomata",
+      "Chlorophyll"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Stomata are pores controlled by guard cells."
+  },
+  {
+    "id": "OSSSC-GENERAL-020",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which green pigment absorbs light energy for photosynthesis?",
+    "options": [
+      "Xylem",
+      "Phloem",
+      "Stomata",
+      "Chlorophyll"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chlorophyll absorbs light energy used in photosynthesis."
+  },
+  {
+    "id": "OSSSC-GENERAL-021",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which structures in human lungs provide a large surface for gas exchange with blood?",
+    "options": [
+      "Alveoli",
+      "Nephrons",
+      "Villi",
+      "Arteries"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Alveoli are the small air sacs where gas exchange occurs."
+  },
+  {
+    "id": "OSSSC-GENERAL-022",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kidney units filter blood and modify the filtrate to form urine?",
+    "options": [
+      "Alveoli",
+      "Nephrons",
+      "Villi",
+      "Arteries"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nephrons perform filtration and selective reabsorption in the kidneys."
+  },
+  {
+    "id": "OSSSC-GENERAL-023",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which finger-like structures increase the small intestine's absorptive surface?",
+    "options": [
+      "Alveoli",
+      "Nephrons",
+      "Villi",
+      "Arteries"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Villi increase the surface for absorption of digested nutrients."
+  },
+  {
+    "id": "OSSSC-GENERAL-024",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which vessels carry blood away from the heart, irrespective of its oxygen content?",
+    "options": [
+      "Alveoli",
+      "Nephrons",
+      "Villi",
+      "Arteries"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Arteries carry blood away from the heart; direction defines them."
+  },
+  {
+    "id": "OSSSC-GENERAL-025",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An ammeter measures the rate of flow of electric charge. In which SI unit is its reading expressed?",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Electric current is measured in amperes."
+  },
+  {
+    "id": "OSSSC-GENERAL-026",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A meter is connected across two points to measure their electric potential difference. Which SI unit is appropriate?",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Potential difference is measured in volts."
+  },
+  {
+    "id": "OSSSC-GENERAL-027",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A component opposes current flow. Which SI unit expresses the component's electrical resistance?",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Electrical resistance is measured in ohms."
+  },
+  {
+    "id": "OSSSC-GENERAL-028",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An appliance rating specifies the rate at which it consumes electrical energy. Which SI unit expresses that rate?",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Power, the rate of energy transfer, is measured in watts."
+  },
+  {
+    "id": "OSSSC-GENERAL-029",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a pond, algae make organic food using sunlight. Which ecological group do these algae belong to?",
+    "options": [
+      "Producers",
+      "Primary consumers",
+      "Secondary consumers",
+      "Decomposers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Photosynthetic algae make their own food and are producers."
+  },
+  {
+    "id": "OSSSC-GENERAL-030",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A caterpillar feeds directly on green leaves. Which ecological group does it occupy in that food chain?",
+    "options": [
+      "Producers",
+      "Primary consumers",
+      "Secondary consumers",
+      "Decomposers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An organism that eats a producer is a primary consumer."
+  },
+  {
+    "id": "OSSSC-GENERAL-031",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A frog eats grasshoppers that feed on grass. Which ecological group does the frog occupy in this chain?",
+    "options": [
+      "Producers",
+      "Primary consumers",
+      "Secondary consumers",
+      "Decomposers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The frog eats primary consumers, making it a secondary consumer."
+  },
+  {
+    "id": "OSSSC-GENERAL-032",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fungi break down dead leaves and return nutrients to the soil. Which ecological group do they represent?",
+    "options": [
+      "Producers",
+      "Primary consumers",
+      "Secondary consumers",
+      "Decomposers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Decomposers break down dead organic matter and recycle nutrients."
+  },
+  {
+    "id": "OSSSC-GENERAL-033",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Dilute hydrochloric acid reacts with sodium hydroxide solution to form sodium chloride and water. Which process is illustrated?",
+    "options": [
+      "Neutralisation",
+      "Oxidation",
+      "Thermal decomposition",
+      "Evaporation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The acid and base react to form salt and water, a neutralisation reaction."
+  },
+  {
+    "id": "OSSSC-GENERAL-034",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Copper is heated in air and combines with oxygen to form black copper oxide. Which process describes the addition of oxygen?",
+    "options": [
+      "Neutralisation",
+      "Oxidation",
+      "Thermal decomposition",
+      "Evaporation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Combining with oxygen is oxidation in this reaction."
+  },
+  {
+    "id": "OSSSC-GENERAL-035",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A compound breaks down into simpler substances when heated strongly. Which process is described?",
+    "options": [
+      "Neutralisation",
+      "Oxidation",
+      "Thermal decomposition",
+      "Evaporation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Breakdown of a compound through heating is thermal decomposition."
+  },
+  {
+    "id": "OSSSC-GENERAL-036",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Water gradually leaves a shallow dish as vapour without forming a new chemical substance. Which process is described?",
+    "options": [
+      "Neutralisation",
+      "Oxidation",
+      "Thermal decomposition",
+      "Evaporation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The liquid changes into vapour by evaporation, a physical change."
+  },
+  {
+    "id": "OSSSC-GENERAL-037",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four aqueous samples at about 25°C have the listed pH values. Which sample has the greatest hydrogen-ion concentration?",
+    "options": [
+      "pH 2",
+      "pH 5",
+      "pH 7",
+      "pH 10"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lower pH means greater hydrogen-ion concentration, so pH 2 is greatest among these values."
+  },
+  {
+    "id": "OSSSC-GENERAL-038",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An aqueous sample at about 25°C is acidic but has a lower hydrogen-ion concentration than a sample of pH 2. Which listed value fits?",
+    "options": [
+      "pH 2",
+      "pH 5",
+      "pH 7",
+      "pH 10"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "pH 5 is below neutral 7 but above 2, so it is acidic with fewer hydrogen ions than the pH 2 sample."
+  },
+  {
+    "id": "OSSSC-GENERAL-039",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which listed pH corresponds to a neutral aqueous solution at about 25°C?",
+    "options": [
+      "pH 2",
+      "pH 5",
+      "pH 7",
+      "pH 10"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At about 25°C, a neutral aqueous solution has pH 7."
+  },
+  {
+    "id": "OSSSC-GENERAL-040",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A solution at about 25°C turns red litmus blue. Which listed pH is consistent with that observation?",
+    "options": [
+      "pH 2",
+      "pH 5",
+      "pH 7",
+      "pH 10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A basic solution turns red litmus blue and has pH above 7; only pH 10 fits."
+  },
+  {
+    "id": "OSSSC-GENERAL-041",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After heavy rain, rivers entering Chilika carry more water and tend to dilute its dissolved salts. Which process most directly explains this dilution?",
+    "options": [
+      "Freshwater inflow",
+      "Seawater inflow",
+      "Catchment soil erosion",
+      "Organic-matter decomposition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Freshwater entering from rivers dilutes the lagoon's salt concentration."
+  },
+  {
+    "id": "OSSSC-GENERAL-042",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a dry period, tides drive salt water through Chilika's connection with the Bay of Bengal. Which process is described?",
+    "options": [
+      "Freshwater inflow",
+      "Seawater inflow",
+      "Catchment soil erosion",
+      "Organic-matter decomposition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Seawater entering through the connecting channel is seawater inflow."
+  },
+  {
+    "id": "OSSSC-GENERAL-043",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Rain washes exposed soil from surrounding land into streams, which carry it towards Chilika. Which process supplies that sediment?",
+    "options": [
+      "Freshwater inflow",
+      "Seawater inflow",
+      "Catchment soil erosion",
+      "Organic-matter decomposition"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Catchment soil erosion releases the sediment that streams transport to the lagoon."
+  },
+  {
+    "id": "OSSSC-GENERAL-044",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Microorganisms break down dead plant material, releasing nutrients that can be reused by other organisms. Which process is described?",
+    "options": [
+      "Freshwater inflow",
+      "Seawater inflow",
+      "Catchment soil erosion",
+      "Organic-matter decomposition"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Organic-matter decomposition breaks down dead material and recycles nutrients."
+  },
+  {
+    "id": "OSSSC-GENERAL-045",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An ohmic resistor of 8 ohms has a potential difference of 24 volts across it. What current flows?",
+    "options": [
+      "3 A",
+      "2 A",
+      "4 A",
+      "6 A"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ohm's law gives I = V/R = 24/8 = 3 amperes."
+  },
+  {
+    "id": "OSSSC-GENERAL-046",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two resistors of 4 ohms and 6 ohms are connected in parallel. What is their combined resistance?",
+    "options": [
+      "10 ohms",
+      "2.4 ohms",
+      "5 ohms",
+      "1.2 ohms"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For two parallel resistors, R = (4 × 6)/(4 + 6) = 24/10 = 2.4 ohms."
+  },
+  {
+    "id": "OSSSC-GENERAL-047",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscGeneral",
+    "skill": "general",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 60 W lamp operates for 5 hours at its rated power. How much energy does it consume?",
+    "options": [
+      "0.12 kWh",
+      "0.36 kWh",
+      "0.30 kWh",
+      "0.60 kWh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "60 W is 0.06 kW; energy = 0.06 × 5 = 0.30 kWh."
+  },
+  {
+    "id": "OSSSC-ENGLISH-001",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the verb phrase showing an action already finished before a past deadline: By the time the inspector arrived yesterday, Tara ___ the register.",
+    "options": [
+      "had completed",
+      "has completed",
+      "will have completed",
+      "is completing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The past perfect had completed places completion before the past arrival."
+  },
+  {
+    "id": "OSSSC-ENGLISH-002",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the verb phrase connecting a finished action with the present: Tara ___ the register already, so it is ready for inspection now.",
+    "options": [
+      "had completed",
+      "has completed",
+      "will have completed",
+      "is completing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Has completed is present perfect and links the finished work to its present result."
+  },
+  {
+    "id": "OSSSC-ENGLISH-003",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the verb phrase expressing completion before a future point: By this time tomorrow, Tara ___ the register.",
+    "options": [
+      "had completed",
+      "has completed",
+      "will have completed",
+      "is completing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Will have completed is future perfect: completion before a future reference point."
+  },
+  {
+    "id": "OSSSC-ENGLISH-004",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the verb phrase for an action in progress now: Please wait; Tara ___ the register at this moment.",
+    "options": [
+      "had completed",
+      "has completed",
+      "will have completed",
+      "is completing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Is completing is present continuous for work underway now."
+  },
+  {
+    "id": "OSSSC-ENGLISH-005",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fill the gap: The office has occupied this building ___ 2018.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "until"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Since introduces the starting point of a period continuing to the present."
+  },
+  {
+    "id": "OSSSC-ENGLISH-006",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fill the gap: The clerk has worked here ___ six years.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "until"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For introduces a duration, here six years."
+  },
+  {
+    "id": "OSSSC-ENGLISH-007",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the preposition meaning within the period of the meeting: No visitors entered the room ___ the meeting.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "until"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "During locates the event within the period named by the noun meeting."
+  },
+  {
+    "id": "OSSSC-ENGLISH-008",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the preposition marking Friday as the endpoint: Applications will remain open ___ Friday and will close that evening.",
+    "options": [
+      "since",
+      "for",
+      "during",
+      "until"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Until marks the endpoint of the period for which applications remain open."
+  },
+  {
+    "id": "OSSSC-ENGLISH-009",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the conjunction expressing concession: ___ the road was narrow, the bus passed safely.",
+    "options": [
+      "although",
+      "because",
+      "unless",
+      "so that"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Although contrasts the difficult condition with the successful outcome."
+  },
+  {
+    "id": "OSSSC-ENGLISH-010",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the conjunction expressing a cause: The hall was closed ___ its roof needed repairs.",
+    "options": [
+      "although",
+      "because",
+      "unless",
+      "so that"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Because introduces the reason for the closure."
+  },
+  {
+    "id": "OSSSC-ENGLISH-011",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the conjunction meaning except if: The parcel cannot be released ___ you show the receipt.",
+    "options": [
+      "although",
+      "because",
+      "unless",
+      "so that"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unless sets showing the receipt as the condition needed for release."
+  },
+  {
+    "id": "OSSSC-ENGLISH-012",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the conjunction expressing purpose: She labelled each drawer ___ the files could be found quickly.",
+    "options": [
+      "although",
+      "because",
+      "unless",
+      "so that"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "So that introduces the intended result of labelling."
+  },
+  {
+    "id": "OSSSC-ENGLISH-013",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the article before university: Meera hopes to study at ___ university near her village; she has not chosen one yet.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "University starts with a consonant /y/ sound, so the indefinite article is a."
+  },
+  {
+    "id": "OSSSC-ENGLISH-014",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the article: It took ___ hour to repair the printer.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hour begins with a vowel sound because h is silent, so an is used."
+  },
+  {
+    "id": "OSSSC-ENGLISH-015",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report was placed on my desk. Complete the next sentence: I signed ___ report and returned it.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The refers back to the particular report already introduced."
+  },
+  {
+    "id": "OSSSC-ENGLISH-016",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the article, or no article: ___ honesty is essential in public service.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Honesty is used as an abstract uncountable noun in a general statement and takes no article."
+  },
+  {
+    "id": "OSSSC-ENGLISH-017",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the present-tense verb: Each of the sealed packets ___ ready for dispatch.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each is singular, so its present-tense verb is is."
+  },
+  {
+    "id": "OSSSC-ENGLISH-018",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the present-tense verb: The forms, together with their envelopes, ___ on the desk.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The plural subject forms takes are; the added phrase does not change agreement."
+  },
+  {
+    "id": "OSSSC-ENGLISH-019",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the past-tense verb: Neither of the two keys ___ missing when we checked yesterday.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Neither is treated as singular in formal agreement, giving was."
+  },
+  {
+    "id": "OSSSC-ENGLISH-020",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the past-tense verb: The records ___ transferred to the new room last week.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The plural subject records takes were in this past passive construction."
+  },
+  {
+    "id": "OSSSC-ENGLISH-021",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the modal expressing a binding obligation: Under this rule, every applicant ___ sign the declaration; unsigned forms are rejected.",
+    "options": [
+      "must",
+      "may",
+      "should",
+      "cannot"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Must expresses a requirement rather than permission, advice or impossibility."
+  },
+  {
+    "id": "OSSSC-ENGLISH-022",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the modal expressing permission: Visitors ___ use the side gate if they prefer, but the main entrance remains open.",
+    "options": [
+      "must",
+      "may",
+      "should",
+      "cannot"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "May grants permission without imposing an obligation."
+  },
+  {
+    "id": "OSSSC-ENGLISH-023",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the modal expressing advice rather than a rule: You ___ keep a spare copy, though the instructions do not require it.",
+    "options": [
+      "must",
+      "may",
+      "should",
+      "cannot"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Should recommends an action without making it compulsory."
+  },
+  {
+    "id": "OSSSC-ENGLISH-024",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the modal expressing impossibility: A whole number ending in 5 ___ be divisible by 2.",
+    "options": [
+      "must",
+      "may",
+      "should",
+      "cannot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cannot expresses impossibility: a number ending in 5 is odd."
+  },
+  {
+    "id": "OSSSC-ENGLISH-025",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the closest meaning of concise in: The officer asked for a concise account of the incident.",
+    "options": [
+      "brief",
+      "accurate",
+      "impartial",
+      "legible"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Concise means expressing the information briefly, without unnecessary words."
+  },
+  {
+    "id": "OSSSC-ENGLISH-026",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the closest meaning of precise in: The surveyor supplied precise measurements.",
+    "options": [
+      "brief",
+      "accurate",
+      "impartial",
+      "legible"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Precise measurements are exact or accurate."
+  },
+  {
+    "id": "OSSSC-ENGLISH-027",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the closest meaning of unbiased in: An unbiased assessor reviewed both applications.",
+    "options": [
+      "brief",
+      "accurate",
+      "impartial",
+      "legible"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unbiased means impartial: not favouring one side."
+  },
+  {
+    "id": "OSSSC-ENGLISH-028",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the closest meaning of readable in: Please submit a clearly readable handwritten address.",
+    "options": [
+      "brief",
+      "accurate",
+      "impartial",
+      "legible"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Legible means clear enough to read, especially handwriting."
+  },
+  {
+    "id": "OSSSC-ENGLISH-029",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the opposite of permanent in: The team used a permanent office.",
+    "options": [
+      "temporary",
+      "scarce",
+      "transparent",
+      "reluctant"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Temporary means lasting only for a limited period, the opposite of permanent."
+  },
+  {
+    "id": "OSSSC-ENGLISH-030",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the opposite of abundant in: Clean water was abundant in the settlement.",
+    "options": [
+      "temporary",
+      "scarce",
+      "transparent",
+      "reluctant"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scarce means insufficient or in short supply, unlike abundant."
+  },
+  {
+    "id": "OSSSC-ENGLISH-031",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the opposite of opaque when describing a sheet through which light and objects can be seen clearly.",
+    "options": [
+      "temporary",
+      "scarce",
+      "transparent",
+      "reluctant"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Transparent allows clear viewing through it; opaque does not transmit light."
+  },
+  {
+    "id": "OSSSC-ENGLISH-032",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the opposite of willing in: He was willing to accept the extra duty.",
+    "options": [
+      "temporary",
+      "scarce",
+      "transparent",
+      "reluctant"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Reluctant means hesitant or unwilling to do something."
+  },
+  {
+    "id": "OSSSC-ENGLISH-033",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A meeting was moved from Monday to Thursday. It was ___.",
+    "options": [
+      "postponed",
+      "cancelled",
+      "resumed",
+      "concluded"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Postponed means delayed to a later time, not abandoned altogether."
+  },
+  {
+    "id": "OSSSC-ENGLISH-034",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Organisers announced that the planned event would not take place at all. It was ___.",
+    "options": [
+      "postponed",
+      "cancelled",
+      "resumed",
+      "concluded"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cancelled means called off rather than merely delayed."
+  },
+  {
+    "id": "OSSSC-ENGLISH-035",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a short break, the discussion began again from where it had stopped. It ___.",
+    "options": [
+      "postponed",
+      "cancelled",
+      "resumed",
+      "concluded"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Resumed means continued after an interruption."
+  },
+  {
+    "id": "OSSSC-ENGLISH-036",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After the final item had been discussed, the chair formally ended the session. It ___.",
+    "options": [
+      "postponed",
+      "cancelled",
+      "resumed",
+      "concluded"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Concluded means brought to an end."
+  },
+  {
+    "id": "OSSSC-ENGLISH-037",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the active sentence preserving the tense of: The entries were checked by the clerk.",
+    "options": [
+      "The clerk checked the entries.",
+      "The clerk is checking the entries.",
+      "The clerk has checked the entries.",
+      "The clerk will check the entries."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Were checked is simple past passive; checked preserves the simple past in active voice."
+  },
+  {
+    "id": "OSSSC-ENGLISH-038",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the active sentence preserving the tense of: The entries are being checked by the clerk.",
+    "options": [
+      "The clerk checked the entries.",
+      "The clerk is checking the entries.",
+      "The clerk has checked the entries.",
+      "The clerk will check the entries."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Are being checked is present continuous passive; is checking is the corresponding active form."
+  },
+  {
+    "id": "OSSSC-ENGLISH-039",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the active sentence preserving the tense of: The entries have been checked by the clerk.",
+    "options": [
+      "The clerk checked the entries.",
+      "The clerk is checking the entries.",
+      "The clerk has checked the entries.",
+      "The clerk will check the entries."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Have been checked is present perfect passive; has checked agrees with the singular active subject."
+  },
+  {
+    "id": "OSSSC-ENGLISH-040",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Choose the active sentence preserving the tense of: The entries will be checked by the clerk.",
+    "options": [
+      "The clerk checked the entries.",
+      "The clerk is checking the entries.",
+      "The clerk has checked the entries.",
+      "The clerk will check the entries."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Will be checked becomes will check in active voice."
+  },
+  {
+    "id": "OSSSC-ENGLISH-041",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Notice: The library will close early on Wednesday for maintenance. Claim 1: It will remain closed all Thursday. Claim 2: Membership fees will increase. Which assessment follows from the notice alone?",
+    "options": [
+      "No definite conclusion is supported.",
+      "Only the first claim is supported.",
+      "Only the second claim is supported.",
+      "Both claims are supported."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Neither Thursday opening nor membership fees is addressed, so neither claim is established."
+  },
+  {
+    "id": "OSSSC-ENGLISH-042",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Notice: Requests received before noon will be processed today; later requests will be processed tomorrow. Claim 1: A request received at 11 a.m. will be processed today. Claim 2: A request received at 2 p.m. will be processed today. Which assessment follows?",
+    "options": [
+      "No definite conclusion is supported.",
+      "Only the first claim is supported.",
+      "Only the second claim is supported.",
+      "Both claims are supported."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 11 a.m. request is before noon; the 2 p.m. request is later and belongs to tomorrow."
+  },
+  {
+    "id": "OSSSC-ENGLISH-043",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Notice: Only registered teams may enter the competition. Claim 1: Every registered team must compete. Claim 2: An unregistered team is ineligible to enter. Which assessment follows?",
+    "options": [
+      "No definite conclusion is supported.",
+      "Only the first claim is supported.",
+      "Only the second claim is supported.",
+      "Both claims are supported."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Registration is necessary for entry but does not compel participation."
+  },
+  {
+    "id": "OSSSC-ENGLISH-044",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Notice: The counter accepts cash and cards, and closes at 4 p.m. Claim 1: Card payments are accepted. Claim 2: The counter closes at 4 p.m. Which assessment follows?",
+    "options": [
+      "No definite conclusion is supported.",
+      "Only the first claim is supported.",
+      "Only the second claim is supported.",
+      "Both claims are supported."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Both claims are directly stated in the notice."
+  },
+  {
+    "id": "OSSSC-ENGLISH-045",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Read: A village installed a new water tank. During the first month, supply was uneven. Inspectors found that two valves had been left partly closed. After the valves were adjusted, water reached every lane. Which conclusion is best supported?",
+    "options": [
+      "The valve settings contributed to the uneven supply.",
+      "The tank had insufficient capacity for the village.",
+      "Residents used less water after the inspection.",
+      "The pipes had to be replaced in every lane."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The reported improvement followed adjustment of the partly closed valves; capacity, usage changes and pipe replacement are not reported."
+  },
+  {
+    "id": "OSSSC-ENGLISH-046",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Read: An office tested online appointments for six weeks. Waiting times fell, but some visitors could not book online. The office retained a walk-in counter alongside the booking system. Why did it retain that counter?",
+    "options": [
+      "To compare the cost of two internet providers.",
+      "To preserve access for people unable to book online.",
+      "To reduce the number of appointments available.",
+      "To replace the booking system after the trial."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The stated limitation was that some visitors could not book online, and the walk-in counter addresses that access problem."
+  },
+  {
+    "id": "OSSSC-ENGLISH-047",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscEnglish",
+    "skill": "english",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Read: The committee initially favoured the cheapest supplier. It then found that the price excluded delivery and maintenance. After comparing total costs, it selected another supplier. What changed the decision?",
+    "options": [
+      "Finding that the cheapest supplier had no stock.",
+      "Deciding that delivery speed mattered more than cost.",
+      "Considering costs beyond the quoted purchase price.",
+      "Learning that maintenance was unnecessary."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The passage specifically links the revised decision to a comparison including delivery and maintenance costs."
+  },
+  {
+    "id": "OSSSC-COMPUTER-001",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a spreadsheet, which function should total all numeric expenditure amounts in B2:B13?",
+    "options": [
+      "SUM",
+      "AVERAGE",
+      "MAX",
+      "COUNT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SUM adds the numeric values in a range."
+  },
+  {
+    "id": "OSSSC-COMPUTER-002",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which spreadsheet function returns the arithmetic mean of the numeric monthly receipts in C2:C7?",
+    "options": [
+      "SUM",
+      "AVERAGE",
+      "MAX",
+      "COUNT"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AVERAGE divides the sum of numeric values by their count."
+  },
+  {
+    "id": "OSSSC-COMPUTER-003",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which spreadsheet function finds the largest numeric daily attendance in D2:D20?",
+    "options": [
+      "SUM",
+      "AVERAGE",
+      "MAX",
+      "COUNT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "MAX returns the greatest numeric value."
+  },
+  {
+    "id": "OSSSC-COMPUTER-004",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which spreadsheet function counts cells containing numbers, rather than counting all nonempty cells?",
+    "options": [
+      "SUM",
+      "AVERAGE",
+      "MAX",
+      "COUNT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "COUNT counts numeric entries; text entries are not counted."
+  },
+  {
+    "id": "OSSSC-COMPUTER-005",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Excel formula is copied down and across. Which reference always points to column A, row 1?",
+    "options": [
+      "\\$A\\$1",
+      "A\\$1",
+      "\\$A1",
+      "A1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dollar signs before both column and row make both coordinates absolute."
+  },
+  {
+    "id": "OSSSC-COMPUTER-006",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Excel reference keeps row 1 fixed when copied but allows the column to change?",
+    "options": [
+      "\\$A\\$1",
+      "A\\$1",
+      "\\$A1",
+      "A1"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A\\$1 has an absolute row and a relative column."
+  },
+  {
+    "id": "OSSSC-COMPUTER-007",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Excel reference keeps column A fixed when copied but allows the row to change?",
+    "options": [
+      "\\$A\\$1",
+      "A\\$1",
+      "\\$A1",
+      "A1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\\$A1 has an absolute column and a relative row."
+  },
+  {
+    "id": "OSSSC-COMPUTER-008",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Excel reference allows both its column and row to change relative to the destination when copied?",
+    "options": [
+      "\\$A\\$1",
+      "A\\$1",
+      "\\$A1",
+      "A1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A1 has no dollar signs, so both coordinates are relative."
+  },
+  {
+    "id": "OSSSC-COMPUTER-009",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which peripheral captures the contents of a paper form as a digital image?",
+    "options": [
+      "Scanner",
+      "Printer",
+      "Microphone",
+      "Projector"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A scanner converts a physical document into a digital image."
+  },
+  {
+    "id": "OSSSC-COMPUTER-010",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which peripheral produces a hard copy of a computer document?",
+    "options": [
+      "Scanner",
+      "Printer",
+      "Microphone",
+      "Projector"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A printer places the document on paper."
+  },
+  {
+    "id": "OSSSC-COMPUTER-011",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which peripheral captures spoken instructions as audio input?",
+    "options": [
+      "Scanner",
+      "Printer",
+      "Microphone",
+      "Projector"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A microphone converts sound into an input signal."
+  },
+  {
+    "id": "OSSSC-COMPUTER-012",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which peripheral displays a computer presentation on a large external screen or wall?",
+    "options": [
+      "Scanner",
+      "Printer",
+      "Microphone",
+      "Projector"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A projector projects the visual output onto a larger surface."
+  },
+  {
+    "id": "OSSSC-COMPUTER-013",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which component normally holds active program data temporarily and loses its contents when power is removed?",
+    "options": [
+      "RAM",
+      "Solid-state drive",
+      "CPU",
+      "Operating system"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ordinary RAM is volatile working memory."
+  },
+  {
+    "id": "OSSSC-COMPUTER-014",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which component provides persistent file storage without moving mechanical platters?",
+    "options": [
+      "RAM",
+      "Solid-state drive",
+      "CPU",
+      "Operating system"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A solid-state drive stores files persistently using electronic memory."
+  },
+  {
+    "id": "OSSSC-COMPUTER-015",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which component executes machine instructions and performs arithmetic and logical operations?",
+    "options": [
+      "RAM",
+      "Solid-state drive",
+      "CPU",
+      "Operating system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The central processing unit executes instructions and processes data."
+  },
+  {
+    "id": "OSSSC-COMPUTER-016",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which software manages processes, memory and access to hardware resources for applications?",
+    "options": [
+      "RAM",
+      "Solid-state drive",
+      "CPU",
+      "Operating system"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The operating system manages these resources and provides services to applications."
+  },
+  {
+    "id": "OSSSC-COMPUTER-017",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A clerk needs 80 letters with identical wording but different recipient names from a table. Which word-processing feature best fits?",
+    "options": [
+      "Mail merge",
+      "Find and replace",
+      "Track changes",
+      "Page break"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mail merge combines a common document with individual records."
+  },
+  {
+    "id": "OSSSC-COMPUTER-018",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organisation name has changed. A writer wants to locate each occurrence of the old name and substitute the new one. Which feature fits?",
+    "options": [
+      "Mail merge",
+      "Find and replace",
+      "Track changes",
+      "Page break"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Find and replace locates matching text and substitutes the specified replacement."
+  },
+  {
+    "id": "OSSSC-COMPUTER-019",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reviewer needs proposed edits recorded so the author can accept or reject them later. Which feature fits?",
+    "options": [
+      "Mail merge",
+      "Find and replace",
+      "Track changes",
+      "Page break"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Track changes records revisions for review."
+  },
+  {
+    "id": "OSSSC-COMPUTER-020",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new chapter must begin on the next page regardless of later edits above it. Which feature should be inserted?",
+    "options": [
+      "Mail merge",
+      "Find and replace",
+      "Track changes",
+      "Page break"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A page break forces following content to start on a new page."
+  },
+  {
+    "id": "OSSSC-COMPUTER-021",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a document editor, which command places selected text on the clipboard while leaving the original text in place?",
+    "options": [
+      "Copy",
+      "Cut",
+      "Paste",
+      "Undo"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Copy duplicates the selection to the clipboard without removing it."
+  },
+  {
+    "id": "OSSSC-COMPUTER-022",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which editing command places selected text on the clipboard and removes it from its present location?",
+    "options": [
+      "Copy",
+      "Cut",
+      "Paste",
+      "Undo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cut removes the selected text for moving via the clipboard."
+  },
+  {
+    "id": "OSSSC-COMPUTER-023",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which editing command inserts the clipboard contents at the current insertion point?",
+    "options": [
+      "Copy",
+      "Cut",
+      "Paste",
+      "Undo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Paste inserts clipboard contents."
+  },
+  {
+    "id": "OSSSC-COMPUTER-024",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which editing command reverses the most recent reversible action?",
+    "options": [
+      "Copy",
+      "Cut",
+      "Paste",
+      "Undo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Undo reverses the latest supported action rather than manipulating the clipboard."
+  },
+  {
+    "id": "OSSSC-COMPUTER-025",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which software directly renders web pages reached through their URLs?",
+    "options": [
+      "Web browser",
+      "Search engine",
+      "Email client",
+      "Spreadsheet application"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A web browser retrieves and displays web pages."
+  },
+  {
+    "id": "OSSSC-COMPUTER-026",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which service indexes web content so users can find relevant pages using keywords?",
+    "options": [
+      "Web browser",
+      "Search engine",
+      "Email client",
+      "Spreadsheet application"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A search engine uses an index to return relevant search results."
+  },
+  {
+    "id": "OSSSC-COMPUTER-027",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which application is primarily designed to compose, send and organise electronic messages?",
+    "options": [
+      "Web browser",
+      "Search engine",
+      "Email client",
+      "Spreadsheet application"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An email client manages email messages and mailboxes."
+  },
+  {
+    "id": "OSSSC-COMPUTER-028",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which application primarily organises values in cells and recalculates formulas based on those values?",
+    "options": [
+      "Web browser",
+      "Search engine",
+      "Email client",
+      "Spreadsheet application"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A spreadsheet application provides a grid of cells with formula-based calculation."
+  },
+  {
+    "id": "OSSSC-COMPUTER-029",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee accidentally deletes a needed folder. The device is otherwise working, and a verified earlier copy exists. Which action directly recovers the missing files?",
+    "options": [
+      "Restore from a verified backup",
+      "Install the security update",
+      "Enable multifactor authentication",
+      "Revoke the shared link"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Restoring the earlier backup recovers the files; the other actions address different security goals."
+  },
+  {
+    "id": "OSSSC-COMPUTER-030",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A software vendor releases a patch for a known vulnerability in the installed version. Which action directly closes that vulnerability?",
+    "options": [
+      "Restore from a verified backup",
+      "Install the security update",
+      "Enable multifactor authentication",
+      "Revoke the shared link"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Installing the applicable security update fixes the known software flaw."
+  },
+  {
+    "id": "OSSSC-COMPUTER-031",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An account currently needs only a password. Which action directly adds a second independent verification factor to sign-in?",
+    "options": [
+      "Restore from a verified backup",
+      "Install the security update",
+      "Enable multifactor authentication",
+      "Revoke the shared link"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multifactor authentication adds a separate factor beyond the password."
+  },
+  {
+    "id": "OSSSC-COMPUTER-032",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A confidential document was shared through an unrestricted link. Which action directly stops further access through that link?",
+    "options": [
+      "Restore from a verified backup",
+      "Install the security update",
+      "Enable multifactor authentication",
+      "Revoke the shared link"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Revoking the link disables that access route, though it cannot retrieve copies already downloaded."
+  },
+  {
+    "id": "OSSSC-COMPUTER-033",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Cell A1 contains 8 and A2 contains 3. What does =A1+A2*2 evaluate to?",
+    "options": [
+      "14",
+      "22",
+      "19",
+      "16"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiplication precedes addition: 8 + (3 × 2) = 14."
+  },
+  {
+    "id": "OSSSC-COMPUTER-034",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Cells B1:B4 contain 5, 7, a text label, and 12. What does =SUM(B1:B4) return?",
+    "options": [
+      "6",
+      "24",
+      "8",
+      "19"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SUM ignores the text in the referenced cells and adds 5 + 7 + 12 = 24."
+  },
+  {
+    "id": "OSSSC-COMPUTER-035",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscComputer",
+    "skill": "computer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A spreadsheet formula in C4 is =A4+B4. It is copied one row down to C5 using ordinary relative references. What is the copied formula?",
+    "options": [
+      "=A4+B4",
+      "=B4+C4",
+      "=A5+B5",
+      "=A6+B6"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Moving down one row increases both relative row references by one; the columns do not change."
+  },
+  {
+    "id": "OSSSC-REASONING-001",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ravi faces east. He turns left, then right, then left. Which direction does he finally face?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "East to north to east to north leaves him facing north."
+  },
+  {
+    "id": "OSSSC-REASONING-002",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A person walks 3 km north, 4 km east and 3 km south. In which direction is the final position from the start?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "North and south movements cancel, leaving a displacement east."
+  },
+  {
+    "id": "OSSSC-REASONING-003",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An office is directly west of a clinic. A school is directly south of the office. In which direction is the school from the office?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The school is stated to be south of the office; the clinic does not alter that relation."
+  },
+  {
+    "id": "OSSSC-REASONING-004",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cyclist faces south and makes a right turn. Which direction does the cyclist now face?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A right turn from south points west."
+  },
+  {
+    "id": "OSSSC-REASONING-005",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Assume the statements are true: All surveyors are trained. Some surveyors are drivers. I: Some drivers are trained. II: All trained people are surveyors. Which conclusions necessarily follow?",
+    "options": [
+      "Only conclusion I follows.",
+      "Only conclusion II follows.",
+      "Both conclusions follow.",
+      "Neither conclusion follows."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The surveyors who are drivers are trained, proving I. The first statement does not reverse to prove II."
+  },
+  {
+    "id": "OSSSC-REASONING-006",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Assume: All roses are flowers. No flowers are stones. I: All flowers are roses. II: No roses are stones. Which conclusions necessarily follow?",
+    "options": [
+      "Only conclusion I follows.",
+      "Only conclusion II follows.",
+      "Both conclusions follow.",
+      "Neither conclusion follows."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Roses form a subset of flowers, so they cannot be stones. Other flowers need not be roses."
+  },
+  {
+    "id": "OSSSC-REASONING-007",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Assume: Some clerks are musicians. All musicians are readers. I: Some clerks are readers. II: Some readers are musicians. Which conclusions necessarily follow?",
+    "options": [
+      "Only conclusion I follows.",
+      "Only conclusion II follows.",
+      "Both conclusions follow.",
+      "Neither conclusion follows."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The stated clerks who are musicians exist and are readers, establishing both existential conclusions."
+  },
+  {
+    "id": "OSSSC-REASONING-008",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Assume: Some buses are electric. Some electric vehicles are blue. I: Some buses are blue. II: All blue vehicles are buses. Which conclusions necessarily follow?",
+    "options": [
+      "Only conclusion I follows.",
+      "Only conclusion II follows.",
+      "Both conclusions follow.",
+      "Neither conclusion follows."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The two groups of electric vehicles need not overlap; neither conclusion is guaranteed."
+  },
+  {
+    "id": "OSSSC-REASONING-009",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four people stand left to right in this order: Charu, Asha, Deepa, Bina. Who is immediately left of Deepa?",
+    "options": [
+      "Asha",
+      "Bina",
+      "Charu",
+      "Deepa"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Asha is directly before Deepa in the stated left-to-right order."
+  },
+  {
+    "id": "OSSSC-REASONING-010",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Asha is older than Charu. Deepa is younger than Charu. Bina is older than Asha. Who is oldest?",
+    "options": [
+      "Asha",
+      "Bina",
+      "Charu",
+      "Deepa"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The age order is Bina, Asha, Charu, Deepa."
+  },
+  {
+    "id": "OSSSC-REASONING-011",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four files belong to Asha, Bina, Charu and Deepa. Asha's file is not first or last. Bina's is immediately after Asha's. Deepa's is last. Whose file is first?",
+    "options": [
+      "Asha",
+      "Bina",
+      "Charu",
+      "Deepa"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Asha and Bina must occupy positions two and three, leaving Charu first."
+  },
+  {
+    "id": "OSSSC-REASONING-012",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Asha finished before Bina but after Charu. Deepa finished after Bina. Who finished last?",
+    "options": [
+      "Asha",
+      "Bina",
+      "Charu",
+      "Deepa"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The order is Charu, Asha, Bina, Deepa, so Deepa is last."
+  },
+  {
+    "id": "OSSSC-REASONING-013",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The terms double each time: 1, 2, 4, 8, ___. What is next?",
+    "options": [
+      "16",
+      "25",
+      "32",
+      "49"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Doubling 8 gives 16."
+  },
+  {
+    "id": "OSSSC-REASONING-014",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The sequence lists consecutive positive squares: 1, 4, 9, 16, ___. What is next?",
+    "options": [
+      "16",
+      "25",
+      "32",
+      "49"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After 4 squared comes 5 squared, or 25."
+  },
+  {
+    "id": "OSSSC-REASONING-015",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Continue the rule \"add 3, then 6, then 9, then 12\": 2, 5, 11, 20, ___.",
+    "options": [
+      "16",
+      "25",
+      "32",
+      "49"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The next increment is 12, so 20 + 12 = 32."
+  },
+  {
+    "id": "OSSSC-REASONING-016",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sequence begins 1, 7, 19, 37. Successive differences are 6, 12 and 18. If the differences continue increasing by 6, what is the next term?",
+    "options": [
+      "49",
+      "55",
+      "67",
+      "61"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The next difference is 24, giving 37 + 24 = 61."
+  },
+  {
+    "id": "OSSSC-REASONING-017",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the area of a square? I: Its side is 6 cm. II: Its diagonal is longer than 8 cm. Which data are sufficient?",
+    "options": [
+      "Statement I alone is sufficient.",
+      "Statement II alone is sufficient.",
+      "Both statements together are necessary and sufficient.",
+      "Even both statements together are insufficient."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "I gives area 36 cm² directly. II supplies only an inequality and does not fix a unique area."
+  },
+  {
+    "id": "OSSSC-REASONING-018",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a positive integer n? I: n is even. II: 3n = 42. Which data are sufficient?",
+    "options": [
+      "Statement I alone is sufficient.",
+      "Statement II alone is sufficient.",
+      "Both statements together are necessary and sufficient.",
+      "Even both statements together are insufficient."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "I leaves many possibilities; II alone gives n = 14."
+  },
+  {
+    "id": "OSSSC-REASONING-019",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the total price of some identical pens? I: Each pen costs ₹12. II: Exactly 7 pens are bought. Which data are sufficient?",
+    "options": [
+      "Statement I alone is sufficient.",
+      "Statement II alone is sufficient.",
+      "Both statements together are necessary and sufficient.",
+      "Even both statements together are insufficient."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unit price and quantity together give ₹84; neither alone fixes the total."
+  },
+  {
+    "id": "OSSSC-REASONING-020",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the exact age of R? I: R is older than 20. II: R is younger than 30. Which data are sufficient?",
+    "options": [
+      "Statement I alone is sufficient.",
+      "Statement II alone is sufficient.",
+      "Both statements together are necessary and sufficient.",
+      "Even both statements together are insufficient."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The combined range still contains many possible ages, so no exact age follows."
+  },
+  {
+    "id": "OSSSC-REASONING-021",
+    "section": "written",
+    "test": 0,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "P, Q, R and S have different scores. P scored more than R; R scored more than Q; Q scored more than S. Who has the highest score?",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ordering P > R > Q > S places P highest."
+  },
+  {
+    "id": "OSSSC-REASONING-022",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A code assigns P = 1, Q = 2, R = 3 and S = 4. Which letter represents the number of vowels in the word TEAM?",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "TEAM has two vowels, E and A, so Q represents the count."
+  },
+  {
+    "id": "OSSSC-REASONING-023",
+    "section": "written",
+    "test": 1,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four shelves from top to bottom are S, P, R, Q. Which shelf is directly above Q?",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "R immediately precedes Q in the top-to-bottom order."
+  },
+  {
+    "id": "OSSSC-REASONING-024",
+    "section": "written",
+    "test": 2,
+    "module": 1,
+    "domain": "ossscReasoning",
+    "skill": "reasoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Among P, Q, R and S, P and Q are not eligible. R withdrew. Exactly one remaining person is eligible and did not withdraw. Who is it?",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eliminating P, Q and R leaves S."
+  }
+]

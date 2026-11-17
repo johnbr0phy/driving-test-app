@@ -119,6 +119,7 @@ export function regionInfo(r: Region) {
 export type TestRegion = Region | "GLOBAL";
 
 const TEST_REGIONS: Record<string, TestRegion> = {
+  nccco: "US",
   bcrealestate: "CA",
   aufirearmswa: "AU",
   aufirearmsvic: "AU",
@@ -149,10 +150,10 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   nzrealestate: "NZ",
   nzsecurity: "NZ",
   chtheory: "CH",
-  jambeng: "NG", jambmath: "NG", wasscemath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG", wassceeng: "NG",
+  jambeng: "NG", jambmath: "NG", wasscemath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG", jamblit: "NG", wassceeng: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
-  inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
-  rrbgroupd: "IN", sscgd: "IN", sscchsl: "IN", sscmts: "IN", uppolice: "IN", ibpsclerk: "IN", jnvst: "IN",
+  osssc: "IN", inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
+  rrbgroupd: "IN", sscgd: "IN", sscchsl: "IN", sscmts: "IN", uppolice: "IN", ibpsclerk: "IN", jnvst: "IN", vidyagyan: "IN",
   sbiclerk: "IN", sbipo: "IN", ibpsrrb: "IN", biharpolice: "IN", rajpolice: "IN", delhipolice: "IN", mppolice: "IN", jkssbja: "IN", tgsi: "IN",
   upscse: "IN", nda: "IN", agniveer: "IN", agniveervayu: "IN", rrbalp: "IN", rpfconst: "IN", ssccpo: "IN",
   neet: "IN", jeemain: "IN", cuet: "IN", mhtcet: "IN", ugcnet: "IN", reet: "IN", uptet: "IN", aissee: "IN", iimcat: "IN",
@@ -163,6 +164,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "nccco",
   "pentestplus",
   "ceh",
   "isc2cc",
@@ -192,8 +194,8 @@ export const NON_DRIVING_TESTS = new Set([
   "rexpn", "eqao9", "capsw", "casfa", "cawhmis", "caguard", "caabguard", "caauto", "caplumb", "cacarp", "caweld", "cacit", "pcoc", "llqp", "cacore",
   "naplan", "nswsel", "auwhite",
   "naplan7", "ocnsw", "vicsel", "hscmaths", "aursa", "aurcg", "aufss", "aufirstaid", "auforklift", "auwah", "aucit",
-  "ssccgl", "rrbntpc", "ibpspo", "ctet",
-  "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst",
+  "osssc", "ssccgl", "rrbntpc", "ibpspo", "ctet",
+  "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "vidyagyan",
   "sbiclerk", "sbipo", "ibpsrrb", "biharpolice", "rajpolice", "delhipolice", "mppolice", "jkssbja", "tgsi",
   "upscse", "nda", "agniveer", "agniveervayu", "rrbalp", "rpfconst", "ssccpo",
   "neet", "jeemain", "cuet", "mhtcet", "ugcnet", "reet", "uptet", "aissee", "iimcat",
@@ -202,7 +204,7 @@ export const NON_DRIVING_TESTS = new Set([
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phnapolcom", "afpsat", "phnat", "phcle", "phinsurance", "phrebroker",
   "ppsc", "punjabpolice", "pakarmy", "pkpaf", "pknle", "pkpnmc",
   "zare5", "zasaps", "zapsira",
-  "jambeng", "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng",
+  "jambeng", "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "jamblit", "apcsp", "wassceeng",
   "ngpolice", "cdcfib", "ngarmy", "ngcustoms", "trcnpqe",
   "sgres", "hkiiqe1", "hklesfi1", "nzfirearms", "nzboat", "nzlcq", "aesira", "mypce", "kenck",
   "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl", "sgsnb",

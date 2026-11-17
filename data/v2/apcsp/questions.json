@@ -1,0 +1,4244 @@
+[
+  {
+    "id": "APCSP-CREATIVE-001",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A museum team interviews visitors before choosing features for an audio guide. Which development activity is this?",
+    "options": [
+      "Investigating user needs",
+      "Testing implemented code",
+      "Debugging observed faults",
+      "Documenting program behavior"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Interviews investigate what users need before the team chooses a solution. Testing requires a program or prototype to evaluate."
+  },
+  {
+    "id": "APCSP-CREATIVE-002",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A developer runs a finished caption feature on several recorded talks and compares the captions with expected text. Which activity is this?",
+    "options": [
+      "Debugging observed faults",
+      "Testing implemented code",
+      "Documenting program behavior",
+      "Investigating user needs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Comparing actual and expected outputs is testing. Locating and repairing the cause of a failure would be debugging."
+  },
+  {
+    "id": "APCSP-CREATIVE-003",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "After a map marker appears in the wrong place, a developer traces coordinate values and repairs a reversed latitude/longitude assignment. Which activity is this?",
+    "options": [
+      "Documenting program behavior",
+      "Testing implemented code",
+      "Debugging observed faults",
+      "Investigating user needs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tracing the fault to an assignment and repairing it is debugging. The original observation of the wrong marker was evidence from testing."
+  },
+  {
+    "id": "APCSP-CREATIVE-004",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A developer writes a description of each input accepted by a scheduling procedure and the value it returns. Which activity is this?",
+    "options": [
+      "Debugging observed faults",
+      "Testing implemented code",
+      "Investigating user needs",
+      "Documenting program behavior"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The description documents how the procedure can be used. It does not itself execute a test or change the code."
+  },
+  {
+    "id": "APCSP-CREATIVE-005",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A medication reminder program is described as helping people remember scheduled doses. What does that statement describe?",
+    "options": [
+      "The program purpose",
+      "The input representation",
+      "The execution sequence",
+      "The test coverage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Purpose is the problem or goal the program addresses. It differs from a description of its implementation."
+  },
+  {
+    "id": "APCSP-CREATIVE-006",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A cooking app description says it filters recipes, sorts by preparation time, then displays the first five. What does that statement primarily describe?",
+    "options": [
+      "The input representation",
+      "The execution sequence",
+      "The test coverage",
+      "The program purpose"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "It gives the order of operations. It does not explain the broader user problem or specify how an input is encoded."
+  },
+  {
+    "id": "APCSP-CREATIVE-007",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A specification says a temperature reading is a decimal number in degrees Celsius. What is being described?",
+    "options": [
+      "The test coverage",
+      "The execution sequence",
+      "The input representation",
+      "The program purpose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The statement describes the type and meaning of an input value, rather than operations performed on it."
+  },
+  {
+    "id": "APCSP-CREATIVE-008",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A report says a checkout feature was tried with an empty basket, one item and several items. What does that statement describe?",
+    "options": [
+      "The execution sequence",
+      "The input representation",
+      "The program purpose",
+      "The test coverage"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "It describes the situations exercised by tests. It does not specify the actual checkout algorithm."
+  },
+  {
+    "id": "APCSP-CREATIVE-009",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A quiz always reports success because its comparison is reversed. The program runs without stopping. Which error category best fits?",
+    "options": [
+      "A logic error",
+      "A syntax error",
+      "An overflow error",
+      "A division-by-zero error"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A program that executes but implements the wrong decision has a logic error. A syntax error concerns invalid language structure."
+  },
+  {
+    "id": "APCSP-CREATIVE-010",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A parser rejects a statement because a required closing parenthesis is missing. Which error category best fits?",
+    "options": [
+      "A logic error",
+      "A syntax error",
+      "An overflow error",
+      "A division-by-zero error"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The statement violates the language syntax. The program has not merely calculated a valid but unintended result."
+  },
+  {
+    "id": "APCSP-CREATIVE-011",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A program attempts 24 / count when count is zero and the environment stops execution. Which error category best fits?",
+    "options": [
+      "A syntax error",
+      "An overflow error",
+      "A division-by-zero error",
+      "A logic error"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The arithmetic operation cannot be performed with a zero divisor in the stated environment. This is a run-time failure, not a missing syntax symbol."
+  },
+  {
+    "id": "APCSP-CREATIVE-012",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A fixed-width integer counter cannot represent the result of adding one to its largest value. Which error category best fits?",
+    "options": [
+      "A syntax error",
+      "A logic error",
+      "A division-by-zero error",
+      "An overflow error"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Overflow occurs when a numeric result exceeds the representable range. The same valid addition could work in a representation with more capacity."
+  },
+  {
+    "id": "APCSP-CREATIVE-013",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A garden program receives a new moisture measurement from a sensor. What role does that incoming number play?",
+    "options": [
+      "An input value",
+      "An output value",
+      "An internal state value",
+      "An input event"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The measurement enters the program from its environment, making it input."
+  },
+  {
+    "id": "APCSP-CREATIVE-014",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A sound-monitoring program sends a brightness value to an external lamp controller. What role does the sent value play?",
+    "options": [
+      "An input event",
+      "An output value",
+      "An input value",
+      "An internal state value"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The program sends the result to another device, making it output."
+  },
+  {
+    "id": "APCSP-CREATIVE-015",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A drawing program retains the currently selected brush width between pointer movements. How is that retained value best classified?",
+    "options": [
+      "An output value",
+      "An input event",
+      "An internal state value",
+      "An input value"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The saved brush width is part of the program state used by later actions."
+  },
+  {
+    "id": "APCSP-CREATIVE-016",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A button press causes a drawing program to run its clear-screen handler. What triggers the handler?",
+    "options": [
+      "An input value",
+      "An output value",
+      "An internal state value",
+      "An input event"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A user action generates an event associated with the handler."
+  },
+  {
+    "id": "APCSP-CREATIVE-017",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A team has not implemented route search but wants passengers to try the planned screen navigation. Which artifact is most directly useful?",
+    "options": [
+      "A clickable interface prototype",
+      "A table of expected test results",
+      "A trace of changing variable values",
+      "A procedure interface description"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An interactive prototype lets users try the intended navigation before the search implementation exists."
+  },
+  {
+    "id": "APCSP-CREATIVE-018",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A team wants a reference against which to compare outputs from a finished tax calculator using several chosen inputs. Which artifact is most directly useful?",
+    "options": [
+      "A procedure interface description",
+      "A table of expected test results",
+      "A clickable interface prototype",
+      "A trace of changing variable values"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Expected results provide a reference for judging whether actual outputs are correct."
+  },
+  {
+    "id": "APCSP-CREATIVE-019",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A developer must locate where an incorrect subtotal first appears during program execution. Which artifact is most directly useful?",
+    "options": [
+      "A table of expected test results",
+      "A procedure interface description",
+      "A trace of changing variable values",
+      "A clickable interface prototype"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A variable trace shows intermediate state changes, helping locate the first divergence."
+  },
+  {
+    "id": "APCSP-CREATIVE-020",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A developer wants to call a library function without reading its implementation. Which artifact is most directly useful?",
+    "options": [
+      "A clickable interface prototype",
+      "A table of expected test results",
+      "A trace of changing variable values",
+      "A procedure interface description"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An interface description supplies parameter requirements and the meaning of the return value."
+  },
+  {
+    "id": "APCSP-CREATIVE-021",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A function should charge 4 credits for lengths up to and including 12, and 7 above 12. It mistakenly uses length < 12 for the first branch. Which input exposes the fault?",
+    "options": [
+      "12 units",
+      "11 units",
+      "13 units",
+      "10 units"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At exactly 12, the intended and implemented conditions disagree. Values below or above that boundary do not expose this particular fault."
+  },
+  {
+    "id": "APCSP-CREATIVE-022",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "creative",
+    "stem": "A function returns the smallest item in a nonempty list. Tests use [2,5,9] and [4,7,8], but an implementation that returns the first item passes both. Which additional case detects that implementation?",
+    "options": [
+      "[0,4,6]",
+      "[7,2,5]",
+      "[1,6,8]",
+      "[3,3,9]"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In [7,2,5], the smallest value is not first. The other proposed cases still have a minimum in the first position."
+  },
+  {
+    "id": "APCSP-CREATIVE-023",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "creative",
+    "stem": "Before implementing route search, a team wants users to evaluate the planned interaction. Which TWO artifacts fit this goal?",
+    "options": [
+      "A benchmark of route-search speed",
+      "A table of route-search test outputs",
+      "A clickable screen prototype",
+      "A storyboard of user actions"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "A prototype and storyboard communicate planned interaction without a completed search implementation.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-CREATIVE-024",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspCreative",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "creative",
+    "stem": "After implementing route search, a team wants evidence of its performance and correctness. Which TWO artifacts fit this goal?",
+    "options": [
+      "A table of route-search test outputs",
+      "A clickable screen prototype",
+      "A storyboard of user actions",
+      "A benchmark of route-search speed"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "A speed benchmark measures performance and actual outputs can be compared with expected outputs to check correctness.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-DATA-001",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "What decimal integer does unsigned binary 10110 represent?",
+    "options": [
+      "22",
+      "31",
+      "45",
+      "16"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "16 + 4 + 2 = 22."
+  },
+  {
+    "id": "APCSP-DATA-002",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "What is the largest unsigned integer representable with five bits?",
+    "options": [
+      "16",
+      "31",
+      "22",
+      "45"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Five bits represent 32 patterns, from zero through 31."
+  },
+  {
+    "id": "APCSP-DATA-003",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "An unsigned binary field contains 101101. What decimal integer does it represent?",
+    "options": [
+      "31",
+      "16",
+      "45",
+      "22"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "32 + 8 + 4 + 1 = 45."
+  },
+  {
+    "id": "APCSP-DATA-004",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A four-bit identifier can use every binary pattern. How many distinct identifiers are available?",
+    "options": [
+      "22",
+      "31",
+      "45",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Four independent bits give 2 to the power 4, or 16 patterns."
+  },
+  {
+    "id": "APCSP-DATA-005",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A palette gains a fifth color. All new codes must have equal length. What is the minimum code length that distinguishes the five colors?",
+    "options": [
+      "3 bits",
+      "5 bits",
+      "6 bits",
+      "8 bits"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Two bits offer four patterns, while three offer eight."
+  },
+  {
+    "id": "APCSP-DATA-006",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "An unsigned four-bit register contains 1111. How many bits are needed to represent the mathematical result of adding one?",
+    "options": [
+      "8 bits",
+      "5 bits",
+      "3 bits",
+      "6 bits"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "15 + 1 = 16, written 10000 in binary, requiring five bits."
+  },
+  {
+    "id": "APCSP-DATA-007",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A sensor must distinguish 40 states using equal-length binary codes. What is the minimum length?",
+    "options": [
+      "5 bits",
+      "8 bits",
+      "6 bits",
+      "3 bits"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Five bits give 32 states, too few. Six give 64."
+  },
+  {
+    "id": "APCSP-DATA-008",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A file format assigns exactly one byte to each character. How many bits represent one character?",
+    "options": [
+      "3 bits",
+      "5 bits",
+      "6 bits",
+      "8 bits"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A byte contains eight bits."
+  },
+  {
+    "id": "APCSP-DATA-009",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A black-and-white image has 18 by 12 pixels at one bit per pixel, without overhead. How much storage do its pixels use?",
+    "options": [
+      "27 bytes",
+      "72 bytes",
+      "600 bytes",
+      "2400 bytes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "18 times 12 is 216 bits; dividing by eight gives 27 bytes."
+  },
+  {
+    "id": "APCSP-DATA-010",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "Nine sensor readings each occupy 64 bits. With no overhead, how many bytes store them?",
+    "options": [
+      "2400 bytes",
+      "72 bytes",
+      "27 bytes",
+      "600 bytes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nine times 64 is 576 bits, or 72 bytes."
+  },
+  {
+    "id": "APCSP-DATA-011",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A 2400-byte file is compressed to one quarter of its original size. What is the compressed size?",
+    "options": [
+      "72 bytes",
+      "2400 bytes",
+      "600 bytes",
+      "27 bytes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "2400 divided by four is 600 bytes."
+  },
+  {
+    "id": "APCSP-DATA-012",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "An audio fragment has 1600 samples of 12 bits each, without overhead. How much storage does it use?",
+    "options": [
+      "27 bytes",
+      "72 bytes",
+      "600 bytes",
+      "2400 bytes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "1600 times 12 is 19200 bits, or 2400 bytes."
+  },
+  {
+    "id": "APCSP-DATA-013",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "Two temperature files use Celsius and Fahrenheit. What preprocessing directly makes their numerical measurements comparable?",
+    "options": [
+      "Standardize measurement units",
+      "Remove duplicated observations",
+      "Join matching record identifiers",
+      "Filter records by a condition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Convert to a common unit before direct numeric comparisons."
+  },
+  {
+    "id": "APCSP-DATA-014",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "An import error loaded each loan record twice. What preprocessing directly prevents counting each loan twice?",
+    "options": [
+      "Filter records by a condition",
+      "Remove duplicated observations",
+      "Standardize measurement units",
+      "Join matching record identifiers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Removing the duplicate observations restores one record per actual loan."
+  },
+  {
+    "id": "APCSP-DATA-015",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "One table has station IDs and rainfall; another has station IDs and elevations. What operation combines each station's rainfall with its elevation?",
+    "options": [
+      "Remove duplicated observations",
+      "Filter records by a condition",
+      "Join matching record identifiers",
+      "Standardize measurement units"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Join records using the shared identifier for the same station."
+  },
+  {
+    "id": "APCSP-DATA-016",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A nationwide trip table is ready for analysis, but the question concerns only journeys starting in Lakeside. What operation selects the relevant records?",
+    "options": [
+      "Standardize measurement units",
+      "Remove duplicated observations",
+      "Join matching record identifiers",
+      "Filter records by a condition"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Filter on the start-location condition to select the desired subset."
+  },
+  {
+    "id": "APCSP-DATA-017",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A computing-interest survey includes only members of an optional coding club but is used to describe all students. What threatens the conclusion?",
+    "options": [
+      "A sampling imbalance",
+      "A unit mismatch",
+      "A date-format ambiguity",
+      "A rounding limitation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Club membership can select people with different interests from the full population."
+  },
+  {
+    "id": "APCSP-DATA-018",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A distance dataset combines numbers in miles and kilometers without conversion. What threatens a direct numerical comparison?",
+    "options": [
+      "A rounding limitation",
+      "A unit mismatch",
+      "A sampling imbalance",
+      "A date-format ambiguity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The values refer to different units and need conversion."
+  },
+  {
+    "id": "APCSP-DATA-019",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "The date text 03/04/2026 came from contributors using different month/day orders. What threatens a time-series analysis?",
+    "options": [
+      "A unit mismatch",
+      "A rounding limitation",
+      "A date-format ambiguity",
+      "A sampling imbalance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The same text can mean March 4 or April 3."
+  },
+  {
+    "id": "APCSP-DATA-020",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "Readings 6.2 and 6.4 are both stored as the integer 6. What prevents recovery of their original difference?",
+    "options": [
+      "A sampling imbalance",
+      "A unit mismatch",
+      "A date-format ambiguity",
+      "A rounding limitation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rounding maps the two original values to the same stored value."
+  },
+  {
+    "id": "APCSP-DATA-021",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A file has one row per library loan and a borrower ID on every row. What does counting unique borrower IDs calculate?",
+    "options": [
+      "The number of distinct people",
+      "The total number of events",
+      "The mean value per event",
+      "The largest recorded value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Distinct IDs count borrowers once, even if they have multiple loans."
+  },
+  {
+    "id": "APCSP-DATA-022",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "An event log has exactly one row for each recorded bicycle rental. What does counting all rows calculate?",
+    "options": [
+      "The largest recorded value",
+      "The total number of events",
+      "The number of distinct people",
+      "The mean value per event"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each row represents an event, so row count gives the number of rentals."
+  },
+  {
+    "id": "APCSP-DATA-023",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A file records one trip duration per journey. What does summing durations and dividing by the number of journeys calculate?",
+    "options": [
+      "The total number of events",
+      "The largest recorded value",
+      "The mean value per event",
+      "The number of distinct people"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Total duration divided by journey count gives the mean duration per event."
+  },
+  {
+    "id": "APCSP-DATA-024",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "An analyst sorts measured daily rainfall from greatest to least and reads the first value. What has the analyst found?",
+    "options": [
+      "The number of distinct people",
+      "The total number of events",
+      "The mean value per event",
+      "The largest recorded value"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Descending order places a maximum first."
+  },
+  {
+    "id": "APCSP-DATA-025",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A storage system replaces repeated strings with short codes and can restore every original character. Which process is illustrated?",
+    "options": [
+      "Lossless data compression",
+      "Lossy data compression",
+      "Digital sampling",
+      "Metadata collection"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Exact reconstruction distinguishes lossless compression."
+  },
+  {
+    "id": "APCSP-DATA-026",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A photo encoder discards fine color differences to create a smaller approximation of the original. Which process is illustrated?",
+    "options": [
+      "Metadata collection",
+      "Lossy data compression",
+      "Lossless data compression",
+      "Digital sampling"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Discarding detail for a smaller approximation is lossy compression."
+  },
+  {
+    "id": "APCSP-DATA-027",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A microphone system measures sound pressure at regular intervals to represent a continuous signal. Which process is illustrated?",
+    "options": [
+      "Lossy data compression",
+      "Metadata collection",
+      "Digital sampling",
+      "Lossless data compression"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Regular measurements of an analog signal are digital sampling."
+  },
+  {
+    "id": "APCSP-DATA-028",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "An image service records each photograph's camera model and creation time alongside its pixels. Which process is illustrated?",
+    "options": [
+      "Lossless data compression",
+      "Lossy data compression",
+      "Digital sampling",
+      "Metadata collection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "These descriptive fields are metadata about the image."
+  },
+  {
+    "id": "APCSP-DATA-029",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A table shows that warmer days tend to have higher bicycle rental counts, without a controlled experiment. What relation is directly established?",
+    "options": [
+      "Correlation between measurements",
+      "A causal effect of an intervention",
+      "A difference between group averages",
+      "A change in one series over time"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The co-occurrence supports correlation, not necessarily causation."
+  },
+  {
+    "id": "APCSP-DATA-030",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A randomized controlled trial changes only reminder delivery and finds a reliable attendance difference between groups. What type of conclusion does that design support?",
+    "options": [
+      "A change in one series over time",
+      "A causal effect of an intervention",
+      "Correlation between measurements",
+      "A difference between group averages"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Random assignment and a controlled intervention support a causal inference under the stated conditions."
+  },
+  {
+    "id": "APCSP-DATA-031",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "Published data give mean screen time for four age groups. Comparing these four figures directly describes what?",
+    "options": [
+      "A causal effect of an intervention",
+      "A change in one series over time",
+      "A difference between group averages",
+      "Correlation between measurements"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The figures are group averages, not individual histories."
+  },
+  {
+    "id": "APCSP-DATA-032",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A station's annual rainfall is plotted from 2001 through 2020. What can that single-variable plot directly show?",
+    "options": [
+      "Correlation between measurements",
+      "A causal effect of an intervention",
+      "A difference between group averages",
+      "A change in one series over time"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The chronological series can show how that station's rainfall changes over time."
+  },
+  {
+    "id": "APCSP-DATA-033",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "One reader treats the same bits as an integer and another as a character. What explains their different interpretations?",
+    "options": [
+      "A different encoding convention",
+      "A longer sampling interval",
+      "A smaller numeric range",
+      "A compression overhead cost"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The convention for interpreting a pattern determines its meaning."
+  },
+  {
+    "id": "APCSP-DATA-034",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A recorder takes one sample each second instead of ten per second. What change reduces its temporal detail?",
+    "options": [
+      "A compression overhead cost",
+      "A longer sampling interval",
+      "A different encoding convention",
+      "A smaller numeric range"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The gap between measurements has increased."
+  },
+  {
+    "id": "APCSP-DATA-035",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A counter is reduced from 16 bits to 8 bits. What change makes overflow possible at a lower value?",
+    "options": [
+      "A longer sampling interval",
+      "A compression overhead cost",
+      "A smaller numeric range",
+      "A different encoding convention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fewer bits represent fewer integer values."
+  },
+  {
+    "id": "APCSP-DATA-036",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "data",
+    "stem": "A small file grows after a lossless compressor adds a dictionary larger than the saved repeated text. What explains the growth?",
+    "options": [
+      "A different encoding convention",
+      "A longer sampling interval",
+      "A smaller numeric range",
+      "A compression overhead cost"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The supporting representation overhead exceeds the saved space."
+  },
+  {
+    "id": "APCSP-DATA-037",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "data",
+    "stem": "Which TWO fields are needed to compute mean speed for each completed trip?",
+    "options": [
+      "Trip distance",
+      "Trip duration",
+      "Driver identifier",
+      "Driver birth year"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Distance divided by duration gives mean speed.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-DATA-038",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "data",
+    "stem": "Which TWO fields are needed to calculate each identified driver's approximate age in a known calendar year?",
+    "options": [
+      "Trip duration",
+      "Driver identifier",
+      "Driver birth year",
+      "Trip distance"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "An identifier associates each record with a driver, and birth year supports approximate age.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-DATA-039",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "data",
+    "stem": "Which TWO changes can improve signal detail, assuming the recording hardware supports them and storage is sufficient?",
+    "options": [
+      "Reduce samples per second",
+      "Reduce bits per sample",
+      "Increase samples per second",
+      "Increase bits per sample"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "More samples capture temporal detail; more bits can represent finer sample values.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-DATA-040",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspData",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "data",
+    "stem": "Which TWO changes each reduce uncompressed recording size for a fixed duration, all other settings held constant?",
+    "options": [
+      "Reduce bits per sample",
+      "Increase samples per second",
+      "Increase bits per sample",
+      "Reduce samples per second"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Fewer samples or fewer bits in each sample reduce raw bit count.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-ALGORITHMS-001",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "After x <- 7; y <- x; x <- 12, what is y?",
+    "options": [
+      "7",
+      "12",
+      "19",
+      "5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Assigning x to y copies the current value 7. Later changing x does not change y."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-002",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "After a <- 4; b <- 9; a <- b; b <- a, what are (a, b)?",
+    "options": [
+      "(4, 4)",
+      "(9, 9)",
+      "(9, 4)",
+      "(4, 9)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After a becomes 9, assigning a to b copies 9. A temporary variable is needed to preserve the old a for a swap."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-003",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "What is the value of 18 MOD 5?",
+    "options": [
+      "5",
+      "13",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "MOD returns the remainder after integer division. 18 = 3 times 5 plus 3."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-004",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "After score <- 5 + 3 * 4, what is score?",
+    "options": [
+      "32",
+      "20",
+      "27",
+      "17"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Multiplication occurs before addition: 3 times 4 is 12, then 5 + 12 is 17."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-005",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A Boolean expression is (age >= 13) AND (age <= 17). For which age is it true?",
+    "options": [
+      "16",
+      "12",
+      "18",
+      "20"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Both bounds must hold. Sixteen is within the inclusive interval from 13 through 17."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-006",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "What are the values of NOT (false OR true) and (false OR true), respectively?",
+    "options": [
+      "(true, true)",
+      "(false, true)",
+      "(true, false)",
+      "(false, false)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "false OR true evaluates to true. Negating it gives false, so the ordered pair is (false, true)."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-007",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "Given x = 8 and y = 3, which condition is true?",
+    "options": [
+      "NOT (x > y)",
+      "(x = y) AND (y = 3)",
+      "(x > y) AND (y > 0)",
+      "(x < y) OR (y < 0)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Eight exceeds three and three exceeds zero, so both parts of the conjunction hold."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-008",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A ticket costs 10. The code runs IF(member) {cost <- cost - 2} then IF(child) {cost <- cost - 3}. If both flags are true, what is cost?",
+    "options": [
+      "8",
+      "7",
+      "10",
+      "5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Both independent IF statements execute, subtracting 2 and then 3 from 10."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-009",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "After x <- 6; IF(x > 4) {x <- x + 1} ELSE {x <- x - 1}, what is x?",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The condition is true, so only the first branch executes and x becomes 7."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-010",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "The code sets n <- 3, then repeats n <- n * 2 three times. What is n afterward?",
+    "options": [
+      "9",
+      "24",
+      "18",
+      "12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The successive values are 6, 12 and 24. Repeated doubling is not the same as multiplying the starting value by the iteration count."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-011",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A loop sets total <- 0 and then, for each value in [4,1,6], adds that value to total. What is total?",
+    "options": [
+      "6",
+      "24",
+      "11",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sum is 4 + 1 + 6 = 11. The loop counts neither entries nor products."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-012",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A counter starts at 1 and increases by 2 while it is less than 8. What is its value when the loop finishes?",
+    "options": [
+      "7",
+      "8",
+      "11",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The values after updates are 3, 5, 7 and 9. At 9 the condition is false, so the loop stops."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-013",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "An algorithm starts count <- 0 and adds 1 for each positive value in [-2,0,5,1,-4]. What is count?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Only 5 and 1 are greater than zero. Zero is not positive."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-014",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A one-based list is [11,22,33,44]. After REMOVE(values,2), what is values[2]?",
+    "options": [
+      "44",
+      "33",
+      "22",
+      "11"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Removing the second item shifts later items left. The original third value, 33, becomes second."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-015",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "PROCEDURE double(n) { RETURN(2*n) }. What is double(7) + double(2)?",
+    "options": [
+      "9",
+      "16",
+      "18",
+      "28"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The calls return 14 and 4, whose sum is 18. The parameters belong to separate calls."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-016",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A procedure returns the smaller of two values. Which input pair makes returning the first parameter incorrect?",
+    "options": [
+      "(2,9)",
+      "(4,4)",
+      "(-1,6)",
+      "(8,3)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For (8,3), the smaller value is the second parameter. For the other pairs, returning the first gives a minimum."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-017",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "RANDOM(1,8) returns each integer from 1 through 8 equally often in the long run. What is the probability of a result greater than 6?",
+    "options": [
+      "1/4",
+      "1/8",
+      "3/4",
+      "1/2"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The favorable values are 7 and 8, two of eight equally likely outcomes."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-018",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A sorted list has 127 items. Binary search examines the middle item and halves the remaining range after each unsuccessful comparison. At most how many item comparisons are needed?",
+    "options": [
+      "14",
+      "7",
+      "63",
+      "127"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Successive candidate ranges have sizes at most 127,63,31,15,7,3,1, requiring no more than seven comparisons."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-019",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "After p <- 2; q <- 5; temp <- p; p <- q; q <- temp, what are (p,q)?",
+    "options": [
+      "(5,5)",
+      "(2,2)",
+      "(5,2)",
+      "(2,5)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "temp preserves the original p, allowing the values to be exchanged."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-020",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A program sets x <- 10; y <- x + 3; x <- y * 2. What is x?",
+    "options": [
+      "20",
+      "23",
+      "16",
+      "26"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "y becomes 13, and x then becomes twice y, or 26."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-021",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "What is 29 MOD 6 + 2?",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "29 MOD 6 is 5, and adding 2 gives 7."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-022",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A condition allows entry when hasPass OR isStaff is true. Which pair (hasPass,isStaff) is rejected?",
+    "options": [
+      "(true,true)",
+      "(false,false)",
+      "(true,false)",
+      "(false,true)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "OR is false only when both operands are false."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-023",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "The condition NOT ((x < 2) OR (x > 9)) is true for which x?",
+    "options": [
+      "10",
+      "-2",
+      "5",
+      "1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Negating the outside conditions restricts x to the inclusive interval 2 through 9."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-024",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "Set level <- 2. Run IF(level < 3) {level <- 4}; then IF(level > 3) {level <- 6}. What is level?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The second IF sees the updated value 4, so it also executes and sets level to 6."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-025",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "Set points <- 12. If points >= 10, subtract 4; otherwise add 4. Then multiply points by 2. What is the result?",
+    "options": [
+      "16",
+      "24",
+      "32",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first branch yields 8, and the final multiplication yields 16."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-026",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A loop starts sum <- 0 and i <- 1. It repeats sum <- sum + i; i <- i + 1 four times. What is sum?",
+    "options": [
+      "15",
+      "10",
+      "4",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The values added are 1,2,3,4, totaling 10. The final i is 5 but is not added."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-027",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A loop runs three times; each time an inner loop displays a star twice. How many stars are displayed?",
+    "options": [
+      "9",
+      "3",
+      "6",
+      "5"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The inner two displays occur during each of three outer iterations: 3 times 2 = 6."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-028",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "Starting with n <- 20, a loop repeatedly subtracts 3 until n <= 10. What value causes it to stop?",
+    "options": [
+      "11",
+      "10",
+      "5",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The values are 17,14,11,8. Eight is the first value meeting n <= 10."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-029",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A program scans [6,2,9,4] with best initially the first item, replacing best whenever it sees a larger value. What does it return?",
+    "options": [
+      "9",
+      "2",
+      "4",
+      "6"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This traversal maintains the largest value seen so far, ending at 9."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-030",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A one-based list is [2,4,6]. INSERT(values,2,9) inserts before the item at position 2. What is the resulting list?",
+    "options": [
+      "[2,9,6]",
+      "[2,9,4,6]",
+      "[2,4,9,6]",
+      "[9,2,4,6]"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Insertion shifts the old second item and later items right. It does not replace the old item."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-031",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "PROCEDURE fee(n) { IF(n < 3) {RETURN(5)} RETURN(9) }. What is fee(2)?",
+    "options": [
+      "14",
+      "2",
+      "5",
+      "9"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first RETURN exits the procedure with 5, so the later RETURN is not reached for this input."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-032",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "PROCEDURE square(n) {RETURN(n*n)}. What is square(square(2))?",
+    "options": [
+      "8",
+      "4",
+      "32",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The inner call returns 4; the outer call squares 4 to produce 16."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-033",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "RANDOM(0,9) is uniform over its inclusive integer range. Which test simulates an event with probability 30%?",
+    "options": [
+      "RANDOM(0,9) < 3",
+      "RANDOM(0,9) <= 3",
+      "RANDOM(0,9) = 3",
+      "RANDOM(0,9) > 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The values 0,1,2 satisfy less than 3, giving three out of ten outcomes."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-034",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A linear search checks an unsorted list of 12 distinct items from the beginning. How many comparisons are needed when the target is absent?",
+    "options": [
+      "1",
+      "12",
+      "6",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Without ordering information, every item must be checked to establish absence."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-035",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "An algorithm performs a fixed amount of work once for each of n input items. How does its step count grow with n?",
+    "options": [
+      "Constant growth",
+      "Exponential growth",
+      "Linear growth",
+      "Quadratic growth"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "One fixed amount per item gives a total proportional to n."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-036",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "An algorithm compares each of n records with every record, including itself. How does the number of comparisons grow?",
+    "options": [
+      "Linear growth",
+      "Constant growth",
+      "Exponential growth",
+      "Quadratic growth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "There are n choices for each position in the ordered pair, giving n squared comparisons."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-037",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "An algorithm reads only the first item and returns it, regardless of the nonempty list length. How does its step count grow with length?",
+    "options": [
+      "Constant growth",
+      "Linear growth",
+      "Quadratic growth",
+      "Exponential growth"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The fixed action count does not depend on list length."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-038",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "An algorithm examines every subset of a collection of n items, doing at least one step per subset. How does this minimum work grow?",
+    "options": [
+      "Constant growth",
+      "Exponential growth",
+      "Linear growth",
+      "Quadratic growth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "There are 2 to the power n subsets, giving exponential growth."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-039",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A drawing operation is named drawTile(size) and reused with different sizes instead of copying its statements. Which abstraction is central?",
+    "options": [
+      "A Boolean condition",
+      "A simplified simulation model",
+      "A parameterized procedure",
+      "A list of related values"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The parameter generalizes a reusable procedure."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-040",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A program replaces score1 through score50 with one collection traversed by a loop. Which abstraction is central?",
+    "options": [
+      "A parameterized procedure",
+      "A Boolean condition",
+      "A simplified simulation model",
+      "A list of related values"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A list groups related data and supports processing a variable number of entries."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-041",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A program represents whether someone meets both membership and age requirements with one true/false expression. Which representation is central?",
+    "options": [
+      "A Boolean condition",
+      "A parameterized procedure",
+      "A list of related values",
+      "A simplified simulation model"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Boolean condition combines the requirements into a truth value."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-042",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A flood study represents a valley with a grid and omits small surface features to estimate water movement. Which abstraction is central?",
+    "options": [
+      "A Boolean condition",
+      "A simplified simulation model",
+      "A parameterized procedure",
+      "A list of related values"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A simulation models selected relevant features and omits detail."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-043",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A search only needs to decide whether a list contains a negative number, and may stop as soon as the answer is yes. Which algorithm fits?",
+    "options": [
+      "A running-minimum traversal",
+      "An order-preserving filter",
+      "An early-exit existence search",
+      "A full match-counting traversal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "One negative item proves existence; absence requires reaching the end."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-044",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A report needs the number of entries above a threshold, including repeated equal entries. Which algorithm fits?",
+    "options": [
+      "An early-exit existence search",
+      "A running-minimum traversal",
+      "An order-preserving filter",
+      "A full match-counting traversal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each matching entry increments a count during the full traversal."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-045",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "Prices are nonnegative and at least one item is affordable. A buyer needs the cheapest item, not just the first affordable one. Which algorithm fits?",
+    "options": [
+      "A running-minimum traversal",
+      "An early-exit existence search",
+      "A full match-counting traversal",
+      "An order-preserving filter"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The global minimum is affordable because at least one affordable item exists."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-046",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A program must retain all even values in their original order for later processing. Which algorithm fits?",
+    "options": [
+      "A running-minimum traversal",
+      "An order-preserving filter",
+      "An early-exit existence search",
+      "A full match-counting traversal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Appending each matching item while traversing produces the desired filtered list."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-047",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A minimum-finding procedure must handle any nonempty numeric list, including lists with only negative values. Which initialization fits?",
+    "options": [
+      "One",
+      "An empty list",
+      "The first list item",
+      "Zero"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Starting with an actual item gives a valid minimum candidate regardless of sign."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-048",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A program will add each item to a running sum and return zero for an empty list. Which initialization fits?",
+    "options": [
+      "The first list item",
+      "One",
+      "An empty list",
+      "Zero"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Zero is the additive identity and the required empty-list sum."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-049",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A program will multiply together a list of factors and return the multiplicative identity for an empty list. Which initialization fits?",
+    "options": [
+      "One",
+      "The first list item",
+      "Zero",
+      "An empty list"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One is the multiplicative identity, so it does not alter later factors."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-050",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A program will append selected records in traversal order and should return no records when none match. Which initialization fits?",
+    "options": [
+      "One",
+      "An empty list",
+      "The first list item",
+      "Zero"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An empty result collection starts with no unwanted items."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-051",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "An ordered list is searched by comparing its middle value and discarding the half that cannot contain the target. Which method is used?",
+    "options": [
+      "Exhaustive enumeration",
+      "A nearest-neighbor heuristic",
+      "Binary search",
+      "Linear search"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Binary search uses ordering to halve the candidate range."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-052",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "An unsorted list is checked from its first item onward until a match is found or the list ends. Which method is used?",
+    "options": [
+      "Binary search",
+      "Exhaustive enumeration",
+      "A nearest-neighbor heuristic",
+      "Linear search"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Linear search examines items sequentially without relying on sorting."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-053",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A route planner calculates the length of every possible ordering of stops and selects the shortest. Which method is used?",
+    "options": [
+      "Exhaustive enumeration",
+      "Binary search",
+      "Linear search",
+      "A nearest-neighbor heuristic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enumerating every candidate permits exact selection but can be costly."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-054",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A route planner repeatedly visits the closest unvisited stop and accepts that the final route may not be optimal. Which method is used?",
+    "options": [
+      "Exhaustive enumeration",
+      "A nearest-neighbor heuristic",
+      "Binary search",
+      "Linear search"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A local nearest-neighbor rule is a heuristic rather than exhaustive optimization."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-055",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A problem has no algorithm that returns the correct yes/no answer for every allowed instance. What classification applies?",
+    "options": [
+      "A randomized simulation",
+      "A deterministic approximation",
+      "An undecidable general problem",
+      "An inefficient exact algorithm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Undecidability concerns the absence of a general always-correct decision algorithm."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-056",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A procedure always finds the optimum but its exhaustive search takes impractical time for large inputs. What description applies?",
+    "options": [
+      "An undecidable general problem",
+      "A randomized simulation",
+      "A deterministic approximation",
+      "An inefficient exact algorithm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Correctness does not guarantee practical running time."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-057",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A queue model draws customer arrivals at random and repeats the experiment to estimate waiting-time variation. What description applies?",
+    "options": [
+      "A randomized simulation",
+      "An undecidable general problem",
+      "An inefficient exact algorithm",
+      "A deterministic approximation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Random trials generate a range of possible simulated outcomes."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-058",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "algorithms",
+    "stem": "A planner uses a fixed greedy rule with fixed tie-breaking, producing the same potentially nonoptimal route for the same input. What description applies?",
+    "options": [
+      "A randomized simulation",
+      "A deterministic approximation",
+      "An undecidable general problem",
+      "An inefficient exact algorithm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "It gives an approximate result without randomness for the specified inputs."
+  },
+  {
+    "id": "APCSP-ALGORITHMS-059",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "algorithms",
+    "stem": "A one-based list has exactly two items. Which TWO indices are valid?",
+    "options": [
+      "4",
+      "5",
+      "1",
+      "2"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Valid one-based indices run from one through the list length.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-ALGORITHMS-060",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "algorithms",
+    "stem": "A one-based list has five items. Which TWO indices refer to items after the third?",
+    "options": [
+      "5",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "The fourth and fifth positions follow the third.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-ALGORITHMS-061",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "algorithms",
+    "stem": "Which TWO conditions are equivalent to x >= 4?",
+    "options": [
+      "(x > 4) OR (x = 4)",
+      "NOT (x < 4)",
+      "(x < 4) OR (x = 4)",
+      "NOT (x > 4)"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "At least four includes equality and values above four; it is also the negation of less than four.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-ALGORITHMS-062",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "algorithms",
+    "stem": "A sensor reading x is within an allowed upper bound when it is at most 4. Which TWO tests accept precisely those readings?",
+    "options": [
+      "NOT (x < 4)",
+      "(x < 4) OR (x = 4)",
+      "NOT (x > 4)",
+      "(x > 4) OR (x = 4)"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "At most four includes equality and values below four; it is also the negation of greater than four.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-ALGORITHMS-063",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "algorithms",
+    "stem": "Which TWO inputs make (x MOD 3 = 0) AND (x > 5) true?",
+    "options": [
+      "3",
+      "8",
+      "6",
+      "12"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Six and twelve satisfy both divisibility by three and the lower bound.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-ALGORITHMS-064",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspAlgorithms",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "algorithms",
+    "stem": "Which TWO inputs make (x MOD 3 != 0) OR (x <= 5) true?",
+    "options": [
+      "8",
+      "6",
+      "12",
+      "3"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Three satisfies the size condition; eight satisfies the nondivisibility condition.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-NETWORKS-001",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A browser needs the IP address associated with a host name. Which Internet service supplies that mapping?",
+    "options": [
+      "DNS name resolution",
+      "TCP stream delivery",
+      "HTTP resource transfer",
+      "IP packet forwarding"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DNS maps domain names to IP addresses. IP forwards packets once addressing information is available."
+  },
+  {
+    "id": "APCSP-NETWORKS-002",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A router examines a destination address and chooses a next hop. Which function is being performed?",
+    "options": [
+      "TCP stream delivery",
+      "IP packet forwarding",
+      "HTTP resource transfer",
+      "DNS name resolution"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "IP supports addressed packet delivery across networks. Looking up a name and requesting a web resource are different tasks."
+  },
+  {
+    "id": "APCSP-NETWORKS-003",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A web client requests a particular page from a web server. Which application-level function is involved?",
+    "options": [
+      "TCP stream delivery",
+      "IP packet forwarding",
+      "HTTP resource transfer",
+      "DNS name resolution"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "HTTP describes requests and responses for web resources. DNS supplies addresses, not page contents."
+  },
+  {
+    "id": "APCSP-NETWORKS-004",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A connection reconstructs an ordered byte stream and retransmits missing data. Which function best matches this behavior?",
+    "options": [
+      "IP packet forwarding",
+      "HTTP resource transfer",
+      "DNS name resolution",
+      "TCP stream delivery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "TCP provides reliable ordered delivery over the underlying packet network. Individual IP packets do not supply that stream guarantee."
+  },
+  {
+    "id": "APCSP-NETWORKS-005",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A service doubles its active users while adding servers and maintaining acceptable response times. Which property is most directly demonstrated?",
+    "options": [
+      "Scalability",
+      "Fault tolerance",
+      "Confidentiality",
+      "Data integrity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scalability concerns adapting capacity to increased demand. Surviving failed components would demonstrate fault tolerance."
+  },
+  {
+    "id": "APCSP-NETWORKS-006",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A storage service continues operating after one of its redundant servers fails. Which property is most directly demonstrated?",
+    "options": [
+      "Confidentiality",
+      "Fault tolerance",
+      "Data integrity",
+      "Scalability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Continuing operation after a component failure demonstrates fault tolerance. A larger user population is not required for this example."
+  },
+  {
+    "id": "APCSP-NETWORKS-007",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A transfer mechanism detects that received bits differ from the sent bits. Which property is it checking?",
+    "options": [
+      "Fault tolerance",
+      "Scalability",
+      "Data integrity",
+      "Confidentiality"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Integrity concerns whether data have been altered. Confidentiality concerns who can read them."
+  },
+  {
+    "id": "APCSP-NETWORKS-008",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "Encrypted traffic cannot be read by a passive observer who lacks the key. Which property does this primarily support?",
+    "options": [
+      "Scalability",
+      "Data integrity",
+      "Fault tolerance",
+      "Confidentiality"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Encryption limits reading of the content. In isolation, the fact stated does not show added network capacity or failure recovery."
+  },
+  {
+    "id": "APCSP-NETWORKS-009",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A 48-megabit file crosses a link at a constant 12 megabits per second, ignoring overhead. How long does transfer take?",
+    "options": [
+      "4 seconds",
+      "8 seconds",
+      "10 seconds",
+      "3 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Time is data amount divided by transfer rate: 48 / 12 = 4 seconds. Multiplication gives the wrong units."
+  },
+  {
+    "id": "APCSP-NETWORKS-010",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "Independent tasks take 3, 5 and 8 seconds. Three processors run one task each at the same time, with no overhead. How long until all finish?",
+    "options": [
+      "3 seconds",
+      "8 seconds",
+      "4 seconds",
+      "10 seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Completion waits for the longest task, 8 seconds. The sequential total would be 16 seconds."
+  },
+  {
+    "id": "APCSP-NETWORKS-011",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A job has a 4-second setup that must finish first, followed by four independent 6-second tasks. Four processors run the tasks simultaneously. Ignoring overhead, what is the total time?",
+    "options": [
+      "8 seconds",
+      "3 seconds",
+      "10 seconds",
+      "4 seconds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The setup takes 4 seconds, and the parallel phase takes 6 more. The setup cannot overlap the tasks under the stated dependency."
+  },
+  {
+    "id": "APCSP-NETWORKS-012",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A 9-megabyte file is sent at 24 megabits per second. Using 8 bits per byte and ignoring overhead, what is the minimum transfer time?",
+    "options": [
+      "4 seconds",
+      "8 seconds",
+      "10 seconds",
+      "3 seconds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nine megabytes is 72 megabits. Dividing 72 by 24 gives 3 seconds."
+  },
+  {
+    "id": "APCSP-NETWORKS-013",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "Which part of a packet helps a router choose where to forward it?",
+    "options": [
+      "Destination addressing",
+      "Packet sequence information",
+      "Payload content",
+      "Error-detection information"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Destination information guides forwarding toward the receiver."
+  },
+  {
+    "id": "APCSP-NETWORKS-014",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "Packets from one stream arrive out of order. Which information helps place their contents back in the intended sequence?",
+    "options": [
+      "Error-detection information",
+      "Packet sequence information",
+      "Destination addressing",
+      "Payload content"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ordering metadata identifies the correct positions of the received data."
+  },
+  {
+    "id": "APCSP-NETWORKS-015",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A packet carries a piece of a photograph. Which part contains those image data rather than information about delivery?",
+    "options": [
+      "Packet sequence information",
+      "Error-detection information",
+      "Payload content",
+      "Destination addressing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The payload is the carried content."
+  },
+  {
+    "id": "APCSP-NETWORKS-016",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A receiver checks whether packet bits were altered in transit. Which type of information supports this check?",
+    "options": [
+      "Destination addressing",
+      "Packet sequence information",
+      "Payload content",
+      "Error-detection information"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Error-detection information can reveal corruption."
+  },
+  {
+    "id": "APCSP-NETWORKS-017",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A branch office has one cable route to a service. Which change most directly allows communication to survive failure of that route?",
+    "options": [
+      "Add an independent network path",
+      "Increase the link bandwidth",
+      "Split independent work across processors",
+      "Use publicly specified protocol rules"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An independent alternate route supplies redundancy."
+  },
+  {
+    "id": "APCSP-NETWORKS-018",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "Large transfers are limited by the number of bits a link carries per second. Which change directly raises that capacity?",
+    "options": [
+      "Use publicly specified protocol rules",
+      "Increase the link bandwidth",
+      "Add an independent network path",
+      "Split independent work across processors"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Higher bandwidth raises the maximum data rate."
+  },
+  {
+    "id": "APCSP-NETWORKS-019",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A job has many independent calculations and unused processors. Which change directly reduces elapsed computation time, ignoring overhead?",
+    "options": [
+      "Increase the link bandwidth",
+      "Use publicly specified protocol rules",
+      "Split independent work across processors",
+      "Add an independent network path"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Independent tasks can run at the same time on different processors."
+  },
+  {
+    "id": "APCSP-NETWORKS-020",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "Devices from different manufacturers need to exchange compatible messages. Which choice directly establishes common communication rules?",
+    "options": [
+      "Add an independent network path",
+      "Increase the link bandwidth",
+      "Split independent work across processors",
+      "Use publicly specified protocol rules"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Open protocol specifications enable interoperable implementations."
+  },
+  {
+    "id": "APCSP-NETWORKS-021",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "All traffic from A to C must pass through B, with no other path. What role makes B a vulnerability?",
+    "options": [
+      "A single point of failure",
+      "A redundant route",
+      "A sequential dependency",
+      "A distributed computation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Failure of B breaks the only A-to-C route."
+  },
+  {
+    "id": "APCSP-NETWORKS-022",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A network already connects A-B-D and adds A-C-D with independent links. What does the added path provide?",
+    "options": [
+      "A distributed computation",
+      "A redundant route",
+      "A single point of failure",
+      "A sequential dependency"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "It gives an alternative path if a component of the original path fails."
+  },
+  {
+    "id": "APCSP-NETWORKS-023",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "A job must finish validating all input before any processing task can begin. What limits overlap between these phases?",
+    "options": [
+      "A redundant route",
+      "A distributed computation",
+      "A sequential dependency",
+      "A single point of failure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The processing phase depends on completion of validation."
+  },
+  {
+    "id": "APCSP-NETWORKS-024",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "networks",
+    "stem": "Several laboratories process separate image batches on their own computers and send back results. What arrangement is illustrated?",
+    "options": [
+      "A single point of failure",
+      "A redundant route",
+      "A sequential dependency",
+      "A distributed computation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Work is performed on multiple networked computers."
+  },
+  {
+    "id": "APCSP-NETWORKS-025",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "networks",
+    "stem": "Which TWO entries describe lower-level packet or transport services used by applications, rather than Web-specific resource features?",
+    "options": [
+      "IP forwarding between networks",
+      "TCP ordered stream delivery",
+      "HTTP requests for web resources",
+      "HTML links between web pages"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "IP forwards packets and TCP provides an ordered stream; HTTP and HTML are Web-related application features.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-NETWORKS-026",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspNetworks",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "networks",
+    "stem": "Which TWO entries describe features specifically associated with the World Wide Web rather than general packet or transport service?",
+    "options": [
+      "TCP ordered stream delivery",
+      "HTTP requests for web resources",
+      "HTML links between web pages",
+      "IP forwarding between networks"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "HTTP requests web resources, and HTML links connect pages. The Internet supports non-Web applications too.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-IMPACT-001",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "What aspect of crowdsourcing is illustrated by RideLink's volunteer bus reports?",
+    "options": [
+      "Participation by the public",
+      "Unequal geographic coverage",
+      "Individual reidentification risk",
+      "Permission for content reuse"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Residents contribute observations used by the service.",
+    "passage": "A fictional town launches RideLink, an app that combines volunteered bus-location reports with riders' trip requests. It predicts arrival times and suggests routes. Reports include a timestamp and precise location but omit names. The town publishes route-level daily summaries. Residents need a smartphone and data plan to submit reports, though anyone can read predicted times on displays at major stops. During a trial, central routes receive many more reports than outer routes. A proposed update would retain each device's full travel history to improve personalized suggestions. No travel-history sharing with advertisers is currently described."
+  },
+  {
+    "id": "APCSP-IMPACT-002",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "What concern motivates LeafWatch to recruit rural participants?",
+    "options": [
+      "Permission for content reuse",
+      "Unequal geographic coverage",
+      "Participation by the public",
+      "Individual reidentification risk"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The early data mainly cover urban gardens, leaving other locations underrepresented.",
+    "passage": "A fictional research group launches LeafWatch, a website where volunteers upload plant photographs with location and date. Volunteers also help label the images. The group trains a classifier on those labels to identify signs of plant disease. Most early submissions come from urban gardens, so the team recruits rural participants before a wider evaluation. Each uploader chooses whether the original photograph is publicly downloadable under a stated reuse license. Public maps show counts within broad geographic cells rather than exact home coordinates. The team wants both useful regional disease estimates and protection of contributors' privacy."
+  },
+  {
+    "id": "APCSP-IMPACT-003",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "What privacy concern would linked device travel histories create in RideLink?",
+    "options": [
+      "Unequal geographic coverage",
+      "Permission for content reuse",
+      "Individual reidentification risk",
+      "Participation by the public"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Repeated locations can reveal personal routines even without names.",
+    "passage": "A fictional town launches RideLink, an app that combines volunteered bus-location reports with riders' trip requests. It predicts arrival times and suggests routes. Reports include a timestamp and precise location but omit names. The town publishes route-level daily summaries. Residents need a smartphone and data plan to submit reports, though anyone can read predicted times on displays at major stops. During a trial, central routes receive many more reports than outer routes. A proposed update would retain each device's full travel history to improve personalized suggestions. No travel-history sharing with advertisers is currently described."
+  },
+  {
+    "id": "APCSP-IMPACT-004",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "What issue do LeafWatch uploaders address when selecting a reuse license?",
+    "options": [
+      "Participation by the public",
+      "Unequal geographic coverage",
+      "Individual reidentification risk",
+      "Permission for content reuse"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A license states which uses of the photograph are permitted and under what conditions.",
+    "passage": "A fictional research group launches LeafWatch, a website where volunteers upload plant photographs with location and date. Volunteers also help label the images. The group trains a classifier on those labels to identify signs of plant disease. Most early submissions come from urban gardens, so the team recruits rural participants before a wider evaluation. Each uploader chooses whether the original photograph is publicly downloadable under a stated reuse license. Public maps show counts within broad geographic cells rather than exact home coordinates. The team wants both useful regional disease estimates and protection of contributors' privacy."
+  },
+  {
+    "id": "APCSP-IMPACT-005",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Which access issue remains for RideLink residents who want to submit reports but lack a smartphone and data plan?",
+    "options": [
+      "Connectivity needed to contribute",
+      "Information access without a personal device",
+      "Exposure of precise home locations",
+      "Coverage of classifier training examples"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Submitting reports still requires the stated device and connectivity.",
+    "passage": "A fictional town launches RideLink, an app that combines volunteered bus-location reports with riders' trip requests. It predicts arrival times and suggests routes. Reports include a timestamp and precise location but omit names. The town publishes route-level daily summaries. Residents need a smartphone and data plan to submit reports, though anyone can read predicted times on displays at major stops. During a trial, central routes receive many more reports than outer routes. A proposed update would retain each device's full travel history to improve personalized suggestions. No travel-history sharing with advertisers is currently described."
+  },
+  {
+    "id": "APCSP-IMPACT-006",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "What access improvement do RideLink's stop displays provide?",
+    "options": [
+      "Coverage of classifier training examples",
+      "Information access without a personal device",
+      "Connectivity needed to contribute",
+      "Exposure of precise home locations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "They let riders read predictions without owning a device.",
+    "passage": "A fictional town launches RideLink, an app that combines volunteered bus-location reports with riders' trip requests. It predicts arrival times and suggests routes. Reports include a timestamp and precise location but omit names. The town publishes route-level daily summaries. Residents need a smartphone and data plan to submit reports, though anyone can read predicted times on displays at major stops. During a trial, central routes receive many more reports than outer routes. A proposed update would retain each device's full travel history to improve personalized suggestions. No travel-history sharing with advertisers is currently described."
+  },
+  {
+    "id": "APCSP-IMPACT-007",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Which privacy issue does LeafWatch reduce by publishing broad geographic cells?",
+    "options": [
+      "Information access without a personal device",
+      "Coverage of classifier training examples",
+      "Exposure of precise home locations",
+      "Connectivity needed to contribute"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Coarser public locations reduce disclosure of exact homes.",
+    "passage": "A fictional research group launches LeafWatch, a website where volunteers upload plant photographs with location and date. Volunteers also help label the images. The group trains a classifier on those labels to identify signs of plant disease. Most early submissions come from urban gardens, so the team recruits rural participants before a wider evaluation. Each uploader chooses whether the original photograph is publicly downloadable under a stated reuse license. Public maps show counts within broad geographic cells rather than exact home coordinates. The team wants both useful regional disease estimates and protection of contributors' privacy."
+  },
+  {
+    "id": "APCSP-IMPACT-008",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Which aspect of LeafWatch's model development is changed by adding more rural submissions?",
+    "options": [
+      "Connectivity needed to contribute",
+      "Information access without a personal device",
+      "Exposure of precise home locations",
+      "Coverage of classifier training examples"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The set of examples extends beyond its initial urban concentration.",
+    "passage": "A fictional research group launches LeafWatch, a website where volunteers upload plant photographs with location and date. Volunteers also help label the images. The group trains a classifier on those labels to identify signs of plant disease. Most early submissions come from urban gardens, so the team recruits rural participants before a wider evaluation. Each uploader chooses whether the original photograph is publicly downloadable under a stated reuse license. Public maps show counts within broad geographic cells rather than exact home coordinates. The team wants both useful regional disease estimates and protection of contributors' privacy."
+  },
+  {
+    "id": "APCSP-IMPACT-009",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Which activity occurs when a resident sends RideLink a timestamped bus location?",
+    "options": [
+      "Collecting new observations",
+      "Publishing aggregated results",
+      "Checking license conditions",
+      "Restricting data access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The service receives a new contributed observation.",
+    "passage": "A fictional town launches RideLink, an app that combines volunteered bus-location reports with riders' trip requests. It predicts arrival times and suggests routes. Reports include a timestamp and precise location but omit names. The town publishes route-level daily summaries. Residents need a smartphone and data plan to submit reports, though anyone can read predicted times on displays at major stops. During a trial, central routes receive many more reports than outer routes. A proposed update would retain each device's full travel history to improve personalized suggestions. No travel-history sharing with advertisers is currently described."
+  },
+  {
+    "id": "APCSP-IMPACT-010",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Which activity is illustrated by LeafWatch's public map of counts within broad cells?",
+    "options": [
+      "Restricting data access",
+      "Publishing aggregated results",
+      "Collecting new observations",
+      "Checking license conditions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Individual observations are summarized into geographic totals for publication.",
+    "passage": "A fictional research group launches LeafWatch, a website where volunteers upload plant photographs with location and date. Volunteers also help label the images. The group trains a classifier on those labels to identify signs of plant disease. Most early submissions come from urban gardens, so the team recruits rural participants before a wider evaluation. Each uploader chooses whether the original photograph is publicly downloadable under a stated reuse license. Public maps show counts within broad geographic cells rather than exact home coordinates. The team wants both useful regional disease estimates and protection of contributors' privacy."
+  },
+  {
+    "id": "APCSP-IMPACT-011",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A designer reads the terms attached to an illustration before including it in a commercial app. Which activity is this?",
+    "options": [
+      "Publishing aggregated results",
+      "Restricting data access",
+      "Checking license conditions",
+      "Collecting new observations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The designer is establishing what reuse the license permits."
+  },
+  {
+    "id": "APCSP-IMPACT-012",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A research team lets only named analysts view identifiable participant records. Which activity is this?",
+    "options": [
+      "Collecting new observations",
+      "Publishing aggregated results",
+      "Checking license conditions",
+      "Restricting data access"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Permissions limit who can reach the retained personal data."
+  },
+  {
+    "id": "APCSP-IMPACT-013",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A message impersonates payroll and directs a worker to a copied sign-in page. Which threat is illustrated?",
+    "options": [
+      "Phishing",
+      "Software keylogging",
+      "A rogue access point",
+      "Credential reuse after a leak"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The deceptive message and page attempt to obtain credentials by impersonation."
+  },
+  {
+    "id": "APCSP-IMPACT-014",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A hidden program records typed passwords and sends them to an attacker. Which threat is illustrated?",
+    "options": [
+      "Credential reuse after a leak",
+      "Software keylogging",
+      "Phishing",
+      "A rogue access point"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A keylogger captures keyboard input."
+  },
+  {
+    "id": "APCSP-IMPACT-015",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "An attacker operates a wireless network using a cafe's name to attract connections. Which threat is illustrated?",
+    "options": [
+      "Software keylogging",
+      "Credential reuse after a leak",
+      "A rogue access point",
+      "Phishing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The attacker-controlled wireless access point imitates a legitimate one."
+  },
+  {
+    "id": "APCSP-IMPACT-016",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "An attacker tries passwords leaked from a game site against the same users' email accounts. Which threat is illustrated?",
+    "options": [
+      "Phishing",
+      "Software keylogging",
+      "A rogue access point",
+      "Credential reuse after a leak"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Using the same password at multiple sites allows a leak at one to threaten another."
+  },
+  {
+    "id": "APCSP-IMPACT-017",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "An account requires both a password and a code from a separate authenticator. Which protection is added?",
+    "options": [
+      "Multifactor authentication",
+      "Encryption of stored records",
+      "Reduction of retained data",
+      "Verification through another channel"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The separate factor makes possession of the password alone insufficient."
+  },
+  {
+    "id": "APCSP-IMPACT-018",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A backup file is made unreadable without a secret key before it is stored remotely. Which protection is applied?",
+    "options": [
+      "Verification through another channel",
+      "Encryption of stored records",
+      "Multifactor authentication",
+      "Reduction of retained data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Encryption protects readability of the stored contents."
+  },
+  {
+    "id": "APCSP-IMPACT-019",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A company stops retaining exact trip histories once neighborhood counts have been calculated. Which protection is applied?",
+    "options": [
+      "Encryption of stored records",
+      "Verification through another channel",
+      "Reduction of retained data",
+      "Multifactor authentication"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Discarding unneeded individual detail reduces the personal data retained."
+  },
+  {
+    "id": "APCSP-IMPACT-020",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "An employee receives a surprising request for a sign-in code and calls the known help-desk number instead of using the message link. Which protection is illustrated?",
+    "options": [
+      "Multifactor authentication",
+      "Encryption of stored records",
+      "Reduction of retained data",
+      "Verification through another channel"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Independent contact checks the request without trusting the suspicious channel."
+  },
+  {
+    "id": "APCSP-IMPACT-021",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A remote-learning program assumes every student has a reliable laptop and home Internet. Which concern applies to students who lack them?",
+    "options": [
+      "A digital access barrier",
+      "Bias inherited from data",
+      "Disclosure of personal routines",
+      "An intellectual-property restriction"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Unequal resources can prevent participation, a digital divide issue."
+  },
+  {
+    "id": "APCSP-IMPACT-022",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A hiring model learns from decisions made under a discriminatory selection process. Which concern arises from its examples?",
+    "options": [
+      "An intellectual-property restriction",
+      "Bias inherited from data",
+      "A digital access barrier",
+      "Disclosure of personal routines"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Training data may encode earlier human bias."
+  },
+  {
+    "id": "APCSP-IMPACT-023",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A public dataset omits names but reveals each device's nightly location over many weeks. Which concern remains?",
+    "options": [
+      "Bias inherited from data",
+      "An intellectual-property restriction",
+      "Disclosure of personal routines",
+      "A digital access barrier"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Stable location histories may reveal homes and routines."
+  },
+  {
+    "id": "APCSP-IMPACT-024",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A developer finds an online image whose license prohibits commercial reuse. Which concern applies to placing it in a paid app?",
+    "options": [
+      "A digital access barrier",
+      "Bias inherited from data",
+      "Disclosure of personal routines",
+      "An intellectual-property restriction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Availability online does not override the copyright holder's license conditions."
+  },
+  {
+    "id": "APCSP-IMPACT-025",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A program's code is published under terms allowing inspection, modification and redistribution. Which description best applies?",
+    "options": [
+      "Open-source software",
+      "A public-domain work",
+      "A licensed copyrighted work",
+      "An anonymously authored work"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Open-source terms make code available with rights to use and modify it."
+  },
+  {
+    "id": "APCSP-IMPACT-026",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A text is no longer covered by copyright because its protection has expired. Which description best applies?",
+    "options": [
+      "An anonymously authored work",
+      "A public-domain work",
+      "Open-source software",
+      "A licensed copyrighted work"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An expired copyright can leave the work in the public domain."
+  },
+  {
+    "id": "APCSP-IMPACT-027",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "An illustration remains protected, but its creator permits reuse with attribution under stated terms. Which description best applies?",
+    "options": [
+      "A public-domain work",
+      "An anonymously authored work",
+      "A licensed copyrighted work",
+      "Open-source software"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Permission under a license does not itself remove copyright."
+  },
+  {
+    "id": "APCSP-IMPACT-028",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "An essay is published without identifying its writer; no copyright permission is stated. Which description is established?",
+    "options": [
+      "Open-source software",
+      "A public-domain work",
+      "A licensed copyrighted work",
+      "An anonymously authored work"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Omitting the writer's identity establishes anonymity, not public-domain or open-license status."
+  },
+  {
+    "id": "APCSP-IMPACT-029",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "To send confidential public-key encrypted mail to a recipient, which item does the sender use to encrypt?",
+    "options": [
+      "The recipient's public key",
+      "The recipient's private key",
+      "A shared symmetric secret",
+      "A certificate binding identity to a key"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The recipient's public key allows encryption for that recipient."
+  },
+  {
+    "id": "APCSP-IMPACT-030",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A recipient needs to decrypt mail encrypted with that recipient's public key. Which item is required?",
+    "options": [
+      "A certificate binding identity to a key",
+      "The recipient's private key",
+      "The recipient's public key",
+      "A shared symmetric secret"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The corresponding private key enables decryption."
+  },
+  {
+    "id": "APCSP-IMPACT-031",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Two devices use symmetric encryption to communicate privately. Which item must they both possess?",
+    "options": [
+      "The recipient's private key",
+      "A certificate binding identity to a key",
+      "A shared symmetric secret",
+      "The recipient's public key"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Symmetric encryption relies on the same shared secret."
+  },
+  {
+    "id": "APCSP-IMPACT-032",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A browser checks a trusted issuer's statement associating a site name with its encryption key. What is it checking?",
+    "options": [
+      "The recipient's public key",
+      "The recipient's private key",
+      "A shared symmetric secret",
+      "A certificate binding identity to a key"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A certificate authenticates the binding of an identity to a key, not every statement on the site."
+  },
+  {
+    "id": "APCSP-IMPACT-033",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Many online supporters each donate a small amount to finance a community project. What practice is illustrated?",
+    "options": [
+      "Crowdfunding",
+      "Citizen science",
+      "Open-data research",
+      "Collaborative software development"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Crowdfunding gathers funding from a distributed group of contributors."
+  },
+  {
+    "id": "APCSP-IMPACT-034",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Volunteers use their own devices to submit bird observations for a scientific study. What practice is illustrated?",
+    "options": [
+      "Collaborative software development",
+      "Citizen science",
+      "Crowdfunding",
+      "Open-data research"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Citizen science includes members of the public contributing research observations."
+  },
+  {
+    "id": "APCSP-IMPACT-035",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A research team reanalyzes measurements that another team published for anyone to download. What practice is illustrated?",
+    "options": [
+      "Citizen science",
+      "Collaborative software development",
+      "Open-data research",
+      "Crowdfunding"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Accessible underlying data enable independent analysis and new questions."
+  },
+  {
+    "id": "APCSP-IMPACT-036",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Programmers in several cities review proposed changes and contribute fixes to a shared code repository. What practice is illustrated?",
+    "options": [
+      "Crowdfunding",
+      "Citizen science",
+      "Open-data research",
+      "Collaborative software development"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "They collaborate on developing and maintaining software."
+  },
+  {
+    "id": "APCSP-IMPACT-037",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A classifier makes substantially more mistakes for one demographic group than another. What issue is demonstrated?",
+    "options": [
+      "Uneven accuracy across groups",
+      "Narrower exposure to viewpoints",
+      "A shift in work tasks",
+      "Different costs for stakeholders"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Different error rates reveal uneven performance across groups."
+  },
+  {
+    "id": "APCSP-IMPACT-038",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A feed increasingly shows only opinions similar to articles a reader previously selected. What possible effect is illustrated?",
+    "options": [
+      "Different costs for stakeholders",
+      "Narrower exposure to viewpoints",
+      "Uneven accuracy across groups",
+      "A shift in work tasks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Personalization can narrow the range of perspectives encountered."
+  },
+  {
+    "id": "APCSP-IMPACT-039",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "Automatic invoice entry reduces manual typing while increasing demand for people to review unusual cases. What effect is illustrated?",
+    "options": [
+      "Narrower exposure to viewpoints",
+      "Different costs for stakeholders",
+      "A shift in work tasks",
+      "Uneven accuracy across groups"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Automation changes the tasks and skills demanded, rather than necessarily removing all work."
+  },
+  {
+    "id": "APCSP-IMPACT-040",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A routing app saves drivers time by sending traffic through a residential street, increasing noise for residents. What effect is illustrated?",
+    "options": [
+      "Uneven accuracy across groups",
+      "Narrower exposure to viewpoints",
+      "A shift in work tasks",
+      "Different costs for stakeholders"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "One group benefits while another bears a cost from the same innovation."
+  },
+  {
+    "id": "APCSP-IMPACT-041",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "An app for all residents has received feedback only from people with new premium phones. What step directly addresses missing user perspectives?",
+    "options": [
+      "Broaden the participant sample",
+      "Minimize the requested permissions",
+      "Separate evaluation from training data",
+      "Compare error rates by group"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Recruiting a wider participant set can reveal needs overlooked by the narrow sample."
+  },
+  {
+    "id": "APCSP-IMPACT-042",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A local stopwatch requests address-book access it does not need. What design change directly reduces unnecessary personal-data collection?",
+    "options": [
+      "Compare error rates by group",
+      "Minimize the requested permissions",
+      "Broaden the participant sample",
+      "Separate evaluation from training data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Removing unnecessary permissions reduces access to unrelated personal information."
+  },
+  {
+    "id": "APCSP-IMPACT-043",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A model has been assessed only on records used to develop it. What step directly tests performance on unseen cases?",
+    "options": [
+      "Minimize the requested permissions",
+      "Compare error rates by group",
+      "Separate evaluation from training data",
+      "Broaden the participant sample"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Evaluation on separate data checks generalization beyond development records."
+  },
+  {
+    "id": "APCSP-IMPACT-044",
+    "section": "mcq",
+    "test": 0,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "impact",
+    "stem": "A team knows overall model accuracy but wants to detect whether one demographic group experiences more mistakes. What analysis directly addresses that goal?",
+    "options": [
+      "Broaden the participant sample",
+      "Minimize the requested permissions",
+      "Separate evaluation from training data",
+      "Compare error rates by group"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Group-specific error rates expose disparities hidden by a single overall average."
+  },
+  {
+    "id": "APCSP-IMPACT-045",
+    "section": "mcq",
+    "test": 1,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "impact",
+    "stem": "Which TWO fields refer to individual devices or accounts rather than aggregate observations?",
+    "options": [
+      "A persistent device identifier",
+      "An account email address",
+      "A citywide daily visit count",
+      "A regionwide monthly rainfall mean"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Device identifiers and account emails can link records to individual entities.",
+    "select": 2
+  },
+  {
+    "id": "APCSP-IMPACT-046",
+    "section": "mcq",
+    "test": 2,
+    "module": 1,
+    "domain": "apcspImpact",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "impact",
+    "stem": "Which TWO fields are aggregate measurements rather than individual device or account identifiers?",
+    "options": [
+      "An account email address",
+      "A citywide daily visit count",
+      "A regionwide monthly rainfall mean",
+      "A persistent device identifier"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Citywide counts and regional means summarize many observations.",
+    "select": 2
+  }
+]

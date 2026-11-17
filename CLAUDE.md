@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+OSSSC CRE-2025 (`osssc`) uses v2: 200 original English-language questions, five subject drills and two 85-question tests. Premium government-job exam. Odia, current affairs and Stage II practical excluded; percentage scoring does not apply real negative marking. Source/build/review records: `tools/build20261117/osssc/`.
+
 ## Commands
 
 ```bash
@@ -700,3 +702,11 @@ GITHUB_TOKEN                    # Optional: lifts GitHub's rate limit when the M
 ```
 
 **MCP study continuation**: `list_in_progress_tests` discovers only the caller’s synced account progress (site started-test signals, plus learned Basics/custom quiz history). `get_study_progress`, `start_study_practice`, and `submit_study_answer` add v1 registry and v2 drill practice without replacing legacy DMV or custom-quiz tools. Catalog practice updates `users/{uid}.trainingSets`/history; v2 uses its existing drills and grader. Pending attempt IDs prevent stale answer replay. Timed/adaptive sittings remain web-only and unchanged. Browser sync is not live collaboration. MCP writes increment per-store mcpProgressRevisions (catalog/v2/quiz); browser save transactions reject stale revisions and latch a visible conflict until explicit reload. This preserves newer cloud progress without guessing reset/delete merge intent; unsynced browser work may need repeating. Scope baselines are captured before local replacement, never refreshed mid-session. No model calls.
+
+- **JAMB Literature in English** (`jamblit`, `/jamb-literature`, landing `/jamb-literature-practice-test`): free v2 literary-skills practice, NG, Nigeria university entrance tests; 120 original questions, two 40-question tests (Test 2 held out) and 40 drill-only items, four domains/drills (drama, prose, poetry, appreciation). Equal weights and 30-minute timer are practice choices. Current official IBASS syllabus read 17 November 2026; prescribed-book knowledge explicitly not covered. SAT tiger reused. Sources and reproducible Python sources: `tools/build20261117/jamblit/`.
+
+- AP Computer Science Principles (`apcsp`): free v2, 200 original questions, two 70-question/120-minute MCQ tests and five drills. Eight choose-two and five passage items per test. Create/written responses and AP CSA excluded. Sources/build: `tools/build20261117/apcsp/`. SAT tiger reuse.
+
+- VidyaGyan Class 6 (`vidyagyan`): free v2 English-language Class4–5 skills practice,160 originals, two40-question/60-minute skills tests, four drills. Chosen timing/weights, not a preliminary/main simulation. Hindi excluded. Sources/build: `tools/build20261117/vidyagyan/`. Borrows the JNVST/times-tables tiger set.
+
+- NCCCO Mobile Crane Core: `/nccco`, landing `/nccco-mobile-crane-core-practice-test`, `data/nccco-questions.json`; pools Site44/Operations56/Technical48/Charts52, tests/training33701–33704, stateNCCCO, study target70% (not official score), 11/14/12/13 per50. CCO MCO handbook rev01/25, US Aviation/radio/trade group. Core knowledge only; specialties/practical excluded.

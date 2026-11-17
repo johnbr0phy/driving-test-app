@@ -44,6 +44,53 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  nccco: {
+  "answer": "The CCO Mobile Crane Operator Core examination covers site conditions, operations, technical knowledge and load charts. The current handbook lists 95 questions in 90 minutes without a calculator. Certification also requires the applicable specialty written examination and practical examination. These 200 original questions provide shorter Core knowledge practice, not a full certification simulation or operator qualification.",
+  "rows": [
+    {
+      "label": "Core questions",
+      "value": "95"
+    },
+    {
+      "label": "Core time",
+      "value": "90 minutes"
+    },
+    {
+      "label": "Calculator",
+      "value": "Not permitted"
+    },
+    {
+      "label": "Official domains",
+      "value": "Site 22%, Operations 28%, Technical 23%, Load Charts 27%"
+    },
+    {
+      "label": "This practice",
+      "value": "Four 50-question tests; 70% study target only"
+    },
+    {
+      "label": "Excluded",
+      "value": "Specialty exams, practical skills and actual manufacturer charts"
+    }
+  ],
+  "basedOn": "CCO Mobile Crane Operator Candidate Handbook, cover revision January 2025, linked by CCO on November 17, 2026; OSHA construction crane rules",
+  "source": {
+    "name": "CCO current handbooks and forms",
+    "url": "https://ccocert.org/en/handbooks-forms/"
+  }
+},
+  osssc: {
+    answer: "OSSSC CRE-2025 advertisement IIE-120/2025-3219 covers RI, ICDS Supervisor, VAW, Junior Assistant, ARI, Amin and SFS recruitment. Its Stage I written paper has 100 questions in 90 minutes: mathematics 20, general studies 20, English 20, Odia 15, computer knowledge 15 and logical reasoning 10, at minimum HSC standard. Stage II is a qualifying basic-computer practical; this is distinct from OSSC, Odisha Police and OSSSC CRE-2025(II).",
+    rows: [
+      { label: "Official written paper", value: "100 MCQs, 100 marks, 90 minutes" },
+      { label: "Official marking", value: "+1 correct, −0.25 wrong, 0 blank; not reproduced by this practice score" },
+      { label: "Computer practical", value: "Stage II: 50 marks, 60 minutes, 40% qualifying; excluded here" },
+      { label: "Practice scope", value: "Two 85-question English-language tests; Odia, current affairs and practical excluded" },
+      { label: "Practice score", value: "Percentage correct only; no negative marking or normalization, no selection prediction" },
+    ],
+    basedOn: "OSSSC CRE-2025 advertisement IIE-120/2025-3219 dated 30 December 2025, pages 10–11, checked November 2026. Selected written subjects only, not an exhaustive syllabus simulation.",
+    source: { name: "OSSSC CRE-2025 official advertisement", url: "https://www.osssc.gov.in/Docs/CRE-2025-3219.pdf" },
+    tigertest: "200 original questions, five subject drills and two 85-question tests with a chosen 90-minute subset timer. Free to start; the last quarter of steps requires Premium. The second test stays out of drills.",
+  },
   bcrealestate: {
       answer:
         "The British Columbia real estate trading services exam is the final exam of the UBC Sauder Real Estate Trading Services Licensing Course, the course BCFSA requires before a representative licence to provide trading services (selling, leasing and advising on real estate) under the Real Estate Services Act. UBC's Real Estate Division gives it as 100 multiple-choice questions, one mark each, in three hours, with a passing grade of 70%. After passing, candidates complete the Residential or Commercial Trading Services Applied Practice Course run by BCFSA before applying for a licence. The exam is not offered outside Canada.",
@@ -5581,6 +5628,45 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the JAMB UTME Chemistry syllabus (copy for the 2026/2027 cycle), the JAMB website and UTME guides, checked November 2026",
     source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  vidyagyan: {
+    answer: "VidyaGyan is a Shiv Nadar Foundation residential-school initiative with Class 6 admissions. The UP entrance process includes preliminary and main examinations. The latest accessible owner subject notice, for the 2026–27 main exam, describes Class 4–5 language, mathematics, science, general knowledge and aptitude skills. Tigertest offers English-language supporting skills practice, not a simulation of either current entrance stage. Prepare Hindi separately and follow current official instructions.",
+    rows: [
+      { label: "Practice scope", value: "English-language Class 4–5 skills for Class 6 preparation" },
+      { label: "Practice bank", value: "160 originals; four drills and two 40-question skills tests" },
+      { label: "Practice timer", value: "60 minutes; a Tigertest choice, not official stage timing" },
+      { label: "Practice score", value: "Percentage correct, not a selection cutoff" },
+      { label: "Not covered", value: "Hindi, picture-only reasoning, OMR mechanics and interviews" },
+      { label: "Price", value: "All drills and both skills tests are free" },
+    ],
+    basedOn: "VidyaGyan's 2026–27 main-exam subject notice and current admissions portal, checked 17 November 2026. No detailed current-year blueprint was located; practice weights and timer are chosen by Tigertest",
+    source: { name: "VidyaGyan admissions", url: "https://vidyagyan.in/admissions" },
+  },
+  apcsp: {
+    answer: "AP Computer Science Principles introduces computing, data, algorithms, networks and computing impacts. Its current multiple-choice section has 70 questions in 120 minutes and contributes 70% of the AP score. Create and its written responses contribute 30%. Tigertest provides 200 original MCQ questions, five drills and two full-length MCQ tests; it does not assess Create or AP Computer Science A.",
+    rows: [
+      { label: "Multiple choice", value: "70 questions in 120 minutes; 70% of AP score" },
+      { label: "Question types", value: "57 standalone single-answer, 5 passage single-answer, 8 choose-two" },
+      { label: "Create and written response", value: "30% of AP score; not covered here" },
+      { label: "Practice score", value: "Percentage correct; no AP 1–5 conversion" },
+      { label: "Practice bank", value: "200 originals, five drills, two 70-question tests" },
+      { label: "Price", value: "All drills and both tests are free" },
+    ],
+    basedOn: "College Board CSP CED effective Fall 2023 and current exam page, checked 17 November 2026. A redesign is announced for the 2027–28 school year; this bank follows the current framework",
+    source: { name: "College Board AP CSP exam", url: "https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam" },
+  },
+  jamblit: {
+    answer: "JAMB Literature in English is a UTME subject for applicants whose chosen courses require it. The current IBASS syllabus covers drama, prose, poetry, general literary terms and appreciation of unseen extracts, as well as prescribed plays, novels and poems. Tigertest offers 120 original literary-skills questions, four drills and two 40-question practice tests. It does not cover prescribed-book knowledge or reproduce JAMB past questions. Read the current prescribed texts separately.",
+    rows: [
+      { label: "Exam owner", value: "Joint Admissions and Matriculation Board (JAMB), Nigeria" },
+      { label: "Practice format", value: "Two 40-question tests, four literary-skills drills" },
+      { label: "Practice timer", value: "30 minutes per test, chosen by Tigertest" },
+      { label: "Practice score", value: "Percentage correct; a study target, not an admission pass mark" },
+      { label: "Not covered", value: "Knowledge of the prescribed books and poems" },
+      { label: "Price", value: "All drills and both practice tests are free" },
+    ],
+    basedOn: "JAMB's current IBASS Literature in English syllabus, fetched 17 November 2026; no effective year or topic weights printed. Practice weights and timer are Tigertest choices",
+    source: { name: "JAMB IBASS Literature syllabus", url: "https://ibass.jamb.gov.ng/static/media/Literature.f24a00818658eb8ecbd0.pdf" },
   },
   jambphys: {
     answer:

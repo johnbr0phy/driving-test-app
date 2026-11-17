@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "8827cbb3afa5",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "Stem",
+    "reason": "stem supports leaves and transports water"
+  },
+  {
+    "id": "bb10fac64f85",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "answer": "28",
+    "reason": "2*(10+4)=28"
+  },
+  {
+    "id": "165c547814d6",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "5000",
+    "reason": "8250-3250=5000"
+  },
+  {
+    "id": "56b2c41e4082",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "careful",
+    "reason": "slow carrying avoids spills"
+  },
+  {
+    "id": "92eb4dc55983",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "To group similar observations",
+    "reason": "sorting groups similar edges"
+  },
+  {
+    "id": "17c62a803232",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "60 minutes",
+    "reason": "minute hand full turn=60min"
+  },
+  {
+    "id": "161a5b34617b",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "answer": "A radius",
+    "reason": "centre to circumference=radius"
+  },
+  {
+    "id": "1b7e6fd50584",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "answer": "750",
+    "reason": "7*100+50=750"
+  },
+  {
+    "id": "68f1afd261b1",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "3",
+    "reason": "positions 4,5,6=3"
+  },
+  {
+    "id": "69224f3b4db3",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "Both conditions are met",
+    "reason": "red and round both match"
+  },
+  {
+    "id": "f1939588943c",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "A shared responsibility",
+    "reason": "rota distributes responsibility"
+  },
+  {
+    "id": "0cd0db4298d6",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "answer": "4000",
+    "reason": "4*1000=4000"
+  },
+  {
+    "id": "29c0e6e37b44",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "Roots",
+    "reason": "roots absorb and anchor"
+  },
+  {
+    "id": "2c0113d93ba4",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "48",
+    "reason": "144/3=48"
+  },
+  {
+    "id": "32bc55e1afc7",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "The green bag",
+    "reason": "green is unremoved"
+  },
+  {
+    "id": "17d4eb863107",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "A measuring jug",
+    "reason": "jug measures volume"
+  },
+  {
+    "id": "ade81dd8aa57",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "Leaves",
+    "reason": "green leaves photosynthesise"
+  },
+  {
+    "id": "0d7403e6c55b",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "More space was supplied",
+    "reason": "larger pot increases space"
+  },
+  {
+    "id": "9743983f546e",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "A question mark",
+    "reason": "direct question needs question mark"
+  },
+  {
+    "id": "bd08e6de7373",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "answer": "R",
+    "reason": "third of five is R"
+  },
+  {
+    "id": "e1bc3b653066",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "0.75",
+    "reason": "0.4+0.35=0.75"
+  },
+  {
+    "id": "665bfc5de1a3",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "0.5",
+    "reason": "0.8-0.3=0.5"
+  },
+  {
+    "id": "9beaa940c7be",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "answer": "10",
+    "reason": "6+4=10"
+  },
+  {
+    "id": "0d7f48c253af",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "and",
+    "reason": "and adds items"
+  },
+  {
+    "id": "03386012c9a8",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "A verb",
+    "reason": "build is action verb"
+  },
+  {
+    "id": "69b7a2b97616",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "answer": "The red bag",
+    "reason": "red label=books"
+  },
+  {
+    "id": "3dc5109a020b",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "A source of shelter",
+    "reason": "tree hollow shelters bird"
+  },
+  {
+    "id": "921c20e25ac7",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "A bank",
+    "reason": "bank takes deposits; Indian post office also does, ambiguity"
+  },
+  {
+    "id": "e69591c17786",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "9",
+    "reason": "47=9*5+2"
+  },
+  {
+    "id": "958ba54af34c",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "Freezing",
+    "reason": "liquid to ice=freezing"
+  },
+  {
+    "id": "274079a98ff8",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "answer": "1000",
+    "reason": "1km=1000m"
+  },
+  {
+    "id": "5fee07583627",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "Condensation",
+    "reason": "vapour to droplets=condensation"
+  },
+  {
+    "id": "c0391635eaf5",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "36",
+    "reason": "59-23=36"
+  },
+  {
+    "id": "3c7e0e2f7ad5",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "puzzled",
+    "reason": "not understanding=puzzled"
+  },
+  {
+    "id": "50949bbd29eb",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "Composting plant waste",
+    "reason": "decomposition=composting"
+  },
+  {
+    "id": "045096614579",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "answer": "More warmth was supplied",
+    "reason": "warmer room increases warmth"
+  },
+  {
+    "id": "55f799fa044a",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "A diameter",
+    "reason": "through centre edge to edge=diameter"
+  },
+  {
+    "id": "5d1a3e33d09e",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "answer": "A clock",
+    "reason": "clock measures elapsed time"
+  },
+  {
+    "id": "deaf17ca3b7f",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "answer": "Chirag",
+    "reason": "Deep Asha Chirag Bina gives Chirag"
+  },
+  {
+    "id": "28fdc503da5e",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "answer": "Evaporation",
+    "reason": "liquid to vapour=evaporation"
+  },
+  {
+    "id": "504e9a67a968",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "A full stop",
+    "reason": "statement ends full stop"
+  },
+  {
+    "id": "c0d0d49166d1",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "16",
+    "reason": "5+8+3=16"
+  },
+  {
+    "id": "692763c073ec",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "A health centre",
+    "reason": "health centre provides care"
+  },
+  {
+    "id": "bb89b70fa5eb",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "4",
+    "reason": "1+1+2=4"
+  },
+  {
+    "id": "4ab45efa1169",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "Flowers",
+    "reason": "flowers have petals and reproductive structures"
+  },
+  {
+    "id": "ce2519b9a337",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "More light was supplied",
+    "reason": "longer grow light increases light"
+  },
+  {
+    "id": "5f1735859daf",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "3/4",
+    "reason": "2/3<3/4<1"
+  },
+  {
+    "id": "769bb35fbeb9",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "Only the shape condition is met",
+    "reason": "yellow fails green; square matches"
+  },
+  {
+    "id": "c46494beddf8",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "Melting",
+    "reason": "ice to liquid=melting"
+  },
+  {
+    "id": "97df40197cb9",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "An apostrophe",
+    "reason": "apostrophe replaces omitted o"
+  },
+  {
+    "id": "a6856a7a2366",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "A thermometer",
+    "reason": "thermometer measures temperature"
+  },
+  {
+    "id": "09f3b4d4e4b0",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "answer": "Deep",
+    "reason": "Deep>Asha>Bina>Chirag"
+  },
+  {
+    "id": "afd217161d69",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "delighted",
+    "reason": "smiling at return=delighted"
+  },
+  {
+    "id": "3d11d7105a5b",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "early",
+    "reason": "1145 precedes noon=early"
+  },
+  {
+    "id": "0040d0460187",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "before",
+    "reason": "washing must happen before eating"
+  },
+  {
+    "id": "9b020b41b43d",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "above",
+    "reason": "higher=above"
+  },
+  {
+    "id": "646f7420ba93",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "between",
+    "reason": "shop-house-school gives between"
+  },
+  {
+    "id": "b4b72cba905a",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "7",
+    "reason": "Tuesday entry=7"
+  },
+  {
+    "id": "eb1fa4fc6649",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "answer": "Recycling a material",
+    "reason": "pulp into new paper=recycling"
+  },
+  {
+    "id": "e4fa7cff7a91",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "Tuesday",
+    "reason": "Saturday+3days=Tuesday"
+  },
+  {
+    "id": "963d28a6b0fd",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "A perimeter",
+    "reason": "boundary distance=perimeter"
+  },
+  {
+    "id": "881a776aa140",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "answer": "45 minutes",
+    "reason": "3/4*60=45"
+  },
+  {
+    "id": "04fb844265d7",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "Web",
+    "reason": "spider builds web"
+  },
+  {
+    "id": "bf759efb0cc3",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "1/2",
+    "reason": "4/8=1/2"
+  },
+  {
+    "id": "9e342424f486",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "To check a repeated result",
+    "reason": "repetition checks consistency"
+  },
+  {
+    "id": "50a9dae5a8d4",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "6",
+    "reason": "gcd(18,24)=6"
+  },
+  {
+    "id": "6805ec6d26a3",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "2",
+    "reason": "positions 1,2 left of middle=2"
+  },
+  {
+    "id": "5608888c8c66",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "answer": "To compare amounts fairly",
+    "reason": "common unit enables fair comparison"
+  },
+  {
+    "id": "0816ba1455d8",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "answer": "A means of pollination",
+    "reason": "pollen transfer=pollination"
+  },
+  {
+    "id": "02cb205dffc9",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "because",
+    "reason": "because gives reason"
+  },
+  {
+    "id": "04165bff4c40",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "Sinking",
+    "reason": "bottom=sinking"
+  },
+  {
+    "id": "916b554bb2b9",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "It lets light pass through",
+    "reason": "visible through glass=transparency"
+  },
+  {
+    "id": "53d8d7fa162c",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "The blue bag",
+    "reason": "blue>green>red>yellow"
+  },
+  {
+    "id": "703ecc234723",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "A means of seed dispersal",
+    "reason": "transport of seeds=dispersal"
+  },
+  {
+    "id": "24ce9d1b1d65",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "M",
+    "reason": "L next is M"
+  },
+  {
+    "id": "e48cb52b8dcb",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "E",
+    "reason": "A C E G increment2"
+  },
+  {
+    "id": "71d91bc32974",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "answer": "Reusing an object",
+    "reason": "same jar repurposed=reuse"
+  },
+  {
+    "id": "8d349303492c",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "A careful plan",
+    "reason": "advance checks=careful plan"
+  },
+  {
+    "id": "c0cf3c26d77a",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "18",
+    "reason": "6*3=18"
+  },
+  {
+    "id": "dcae754034c9",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "12",
+    "reason": "9+3=12"
+  },
+  {
+    "id": "c543668ca547",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "answer": "Nest",
+    "reason": "bird nest"
+  },
+  {
+    "id": "8d647499c7f1",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "answer": "Neither condition is met",
+    "reason": "red fails yellow; triangle fails round"
+  },
+  {
+    "id": "1763a9be3458",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "A triangle",
+    "reason": "three sides=triangle"
+  },
+  {
+    "id": "643545f94d9a",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "Bina",
+    "reason": "only remaining finisher Bina"
+  },
+  {
+    "id": "d0ae1df7cc8e",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "South",
+    "reason": "3N-5S=2S"
+  },
+  {
+    "id": "6db35762cae5",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "20",
+    "reason": "4*5=20"
+  },
+  {
+    "id": "e0b2cf28bbd6",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "0.25",
+    "reason": "1/4=0.25"
+  },
+  {
+    "id": "39894830ae51",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "Absorbing",
+    "reason": "sponge absorption"
+  },
+  {
+    "id": "d8b5480f9bed",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "tired",
+    "reason": "rest after walk=tired"
+  },
+  {
+    "id": "1d85f64f8334",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "21",
+    "reason": "16+5=21"
+  },
+  {
+    "id": "e041ec2e802c",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "A circle",
+    "reason": "circle definition"
+  },
+  {
+    "id": "6c330d8dd088",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "A helpful change",
+    "reason": "trays improve retrieval=helpful change"
+  },
+  {
+    "id": "4152bd4a243c",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "answer": "Saturday",
+    "reason": "Friday+1=Saturday"
+  },
+  {
+    "id": "39e4037761ee",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "answer": "30 minutes",
+    "reason": "10min to noon+20=30"
+  },
+  {
+    "id": "f278a347208b",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "Asha",
+    "reason": "Asha>Bina>Chirag>Deep"
+  },
+  {
+    "id": "2d80beb88790",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "North",
+    "reason": "west right turn=north"
+  },
+  {
+    "id": "7e05433c329b",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "Monday",
+    "reason": "Saturday+2=Monday"
+  },
+  {
+    "id": "6645f0dbb4e8",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "12",
+    "reason": "lcm(3,4)=12"
+  },
+  {
+    "id": "1d20d5f33bb6",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "it",
+    "reason": "singular pot=it"
+  },
+  {
+    "id": "86cc286c2972",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "Burrow",
+    "reason": "rabbit burrow"
+  },
+  {
+    "id": "d1469d5e5015",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "The library",
+    "reason": "book borrowing institution=library"
+  },
+  {
+    "id": "96b4808ef638",
+    "category": "vidyaReasoning",
+    "predictedIndex": 1,
+    "answer": "The yellow bag",
+    "reason": "blue red yellow green second largest=yellow"
+  },
+  {
+    "id": "938bf72d4091",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "It takes up water",
+    "reason": "cloth absorbs water"
+  },
+  {
+    "id": "596d807b6dbf",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "The basket",
+    "reason": "carried container holding vegetables=basket"
+  },
+  {
+    "id": "e2ae912d749c",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "walked",
+    "reason": "yesterday requires past walked"
+  },
+  {
+    "id": "abf31148155e",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "A rectangle",
+    "reason": "unequal adjacent sides right angles=rectangle"
+  },
+  {
+    "id": "fa0e58c6ec23",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "Thursday",
+    "reason": "Sun Mon Tue Wed Thu fifth=Thursday"
+  },
+  {
+    "id": "1181c4ddba74",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "A comma",
+    "reason": "comma separates list items"
+  },
+  {
+    "id": "9db8e9dc5502",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "they",
+    "reason": "two players=they"
+  },
+  {
+    "id": "e8dbb2b63a75",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "500",
+    "reason": "1000/2=500g"
+  },
+  {
+    "id": "46890bba2d1d",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "walks",
+    "reason": "habitual present walks"
+  },
+  {
+    "id": "af39a8f9259d",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "answer": "2000",
+    "reason": "2 in thousands place=2000"
+  },
+  {
+    "id": "cb1e564f9852",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "Only the colour condition is met",
+    "reason": "blue matches; square not triangular"
+  },
+  {
+    "id": "e45181f505c1",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "H",
+    "reason": "K J I H three back"
+  },
+  {
+    "id": "beab86f38666",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "answer": "13",
+    "reason": "6.5*2=13"
+  },
+  {
+    "id": "2a6b688f5cbb",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "empty",
+    "reason": "no seeds=empty"
+  },
+  {
+    "id": "d0a440afc47a",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "1/5",
+    "reason": "2/10=1/5"
+  },
+  {
+    "id": "514f60345faf",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "The bakery",
+    "reason": "bread rolls shop=bakery"
+  },
+  {
+    "id": "e103966fcbae",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "5",
+    "reason": "7-2=5"
+  },
+  {
+    "id": "bfc4135b8e9f",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "1/4",
+    "reason": "3/12=1/4"
+  },
+  {
+    "id": "dba42a04811b",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "60",
+    "reason": "27+33=60"
+  },
+  {
+    "id": "7c3c6573f9b4",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "To record change over time",
+    "reason": "dated heights track change"
+  },
+  {
+    "id": "ad8cf22f1366",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "A balance",
+    "reason": "balance compares mass"
+  },
+  {
+    "id": "b28947030829",
+    "category": "vidyaScience",
+    "predictedIndex": 1,
+    "answer": "Floating",
+    "reason": "surface=floating"
+  },
+  {
+    "id": "71dc1da7f44c",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "An area",
+    "reason": "flat surface measure=area"
+  },
+  {
+    "id": "1da80609267c",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "A post office",
+    "reason": "post office handles mail"
+  },
+  {
+    "id": "e82032403ebf",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "but",
+    "reason": "but signals contrast"
+  },
+  {
+    "id": "621c1ddd1e4f",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "A library",
+    "reason": "library lends books"
+  },
+  {
+    "id": "47e904d53979",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "An adjective",
+    "reason": "narrow modifies noun=adjective"
+  },
+  {
+    "id": "976430323b00",
+    "category": "vidyaReasoning",
+    "predictedIndex": 0,
+    "answer": "25",
+    "reason": "5 squared=25"
+  },
+  {
+    "id": "5ce038836ac9",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "A square",
+    "reason": "equal sides and right angles=square most specific"
+  },
+  {
+    "id": "4ee4391cf475",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "24",
+    "reason": "6*4=24"
+  },
+  {
+    "id": "60eb130ea17c",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "A source of food",
+    "reason": "grass is food"
+  },
+  {
+    "id": "c4cc8c60e270",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "The bridge",
+    "reason": "river crossing=bridge"
+  },
+  {
+    "id": "598fc5db021b",
+    "category": "vidyaScience",
+    "predictedIndex": 3,
+    "answer": "Dissolving",
+    "reason": "salt makes solution=dissolving"
+  },
+  {
+    "id": "070cfd2feafb",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "It is attracted by a magnet",
+    "reason": "magnetic attraction"
+  },
+  {
+    "id": "fa53a0c38505",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "quiet",
+    "reason": "silent=quiet"
+  },
+  {
+    "id": "ce683b88b261",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "16",
+    "reason": "8*2=16"
+  },
+  {
+    "id": "90786700bf04",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "An adverb",
+    "reason": "quietly modifies action=adverb"
+  },
+  {
+    "id": "66fefa55646c",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "rough",
+    "reason": "scratchy surface=rough"
+  },
+  {
+    "id": "df38b2d0e227",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "Collecting rainwater",
+    "reason": "tank collects rainwater"
+  },
+  {
+    "id": "7bf1f6425663",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "15 minutes",
+    "reason": "1035-1020=15min"
+  },
+  {
+    "id": "fdaa21020efa",
+    "category": "vidyaReasoning",
+    "predictedIndex": 2,
+    "answer": "East",
+    "reason": "right on north-up map=east"
+  },
+  {
+    "id": "d6c85338e20e",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "3000",
+    "reason": "2760 nearest thousand=3000"
+  },
+  {
+    "id": "67d08bb9f640",
+    "category": "vidyaMaths",
+    "predictedIndex": 3,
+    "answer": "32",
+    "reason": "8*4=32"
+  },
+  {
+    "id": "12c392b94edb",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "A mistaken assumption",
+    "reason": "empty bowl assumption disproved"
+  },
+  {
+    "id": "fc0967f43749",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "behind",
+    "reason": "back of tree=behind"
+  },
+  {
+    "id": "c52ab0a27308",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "we",
+    "reason": "speaker plus brother=we"
+  },
+  {
+    "id": "106028c454aa",
+    "category": "vidyaEnglish",
+    "predictedIndex": 2,
+    "answer": "she",
+    "reason": "Lata singular feminine=she"
+  },
+  {
+    "id": "466bb2809cf4",
+    "category": "vidyaMaths",
+    "predictedIndex": 2,
+    "answer": "0.2",
+    "reason": "1/5=0.2"
+  },
+  {
+    "id": "6a9f351f3800",
+    "category": "vidyaEnglish",
+    "predictedIndex": 3,
+    "answer": "will walk",
+    "reason": "future conditional main clause=will walk"
+  },
+  {
+    "id": "07ba18c11239",
+    "category": "vidyaMaths",
+    "predictedIndex": 1,
+    "answer": "250",
+    "reason": "1000/4=250mL"
+  },
+  {
+    "id": "c208805b3c12",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "under",
+    "reason": "below table=under"
+  },
+  {
+    "id": "a4ed2b52642f",
+    "category": "vidyaEnglish",
+    "predictedIndex": 0,
+    "answer": "is walking",
+    "reason": "right now present progressive"
+  },
+  {
+    "id": "100241c8d785",
+    "category": "vidyaMaths",
+    "predictedIndex": 0,
+    "answer": "8",
+    "reason": "56/7=8"
+  },
+  {
+    "id": "f7d93b0188f5",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "Hive",
+    "reason": "bees colony hive"
+  },
+  {
+    "id": "1870807d877c",
+    "category": "vidyaScience",
+    "predictedIndex": 0,
+    "answer": "It dissolves in water",
+    "reason": "sugar dissolves"
+  },
+  {
+    "id": "2ab108145cfd",
+    "category": "vidyaEnglish",
+    "predictedIndex": 1,
+    "answer": "A noun",
+    "reason": "basket names object=noun"
+  },
+  {
+    "id": "b45c6be41e32",
+    "category": "vidyaScience",
+    "predictedIndex": 2,
+    "answer": "More water was supplied",
+    "reason": "40mL>20mL more water"
+  },
+  {
+    "id": "c3770e3f7990",
+    "category": "vidyaReasoning",
+    "predictedIndex": 3,
+    "answer": "West",
+    "reason": "inverse of east=west"
+  }
+]

@@ -4518,6 +4518,71 @@
   }
 
   /* JAMB Physics theme: slate indigo (v2 exam; matches lib/v2/exams/jambphys.ts theme) */
+  [data-theme="nccco"] {
+    --brand: 41 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 41 15% 96%;
+    --brand-hover: 41 15% 26%;
+    --brand-dark: 41 15% 22%;
+    --brand-darker: 41 15% 16%;
+    --brand-muted: 41 15% 70%;
+    --brand-border: 41 15% 82%;
+    --brand-border-light: 41 15% 91%;
+    --brand-gradient-to: 41 15% 97%;
+  }
+
+  [data-theme="osssc"] {
+    --brand: 131 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 131 15% 96%;
+    --brand-hover: 131 15% 26%;
+    --brand-dark: 131 15% 22%;
+    --brand-darker: 131 15% 16%;
+    --brand-muted: 131 15% 70%;
+    --brand-border: 131 15% 82%;
+    --brand-border-light: 131 15% 91%;
+    --brand-gradient-to: 131 15% 97%;
+  }
+
+  [data-theme="vidyagyan"] {
+    --brand: 315 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 315 15% 96%;
+    --brand-hover: 315 15% 26%;
+    --brand-dark: 315 15% 22%;
+    --brand-darker: 315 15% 16%;
+    --brand-muted: 315 15% 70%;
+    --brand-border: 315 15% 82%;
+    --brand-border-light: 315 15% 91%;
+    --brand-gradient-to: 315 15% 97%;
+  }
+
+  [data-theme="apcsp"] {
+    --brand: 18 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 18 15% 96%;
+    --brand-hover: 18 15% 26%;
+    --brand-dark: 18 15% 22%;
+    --brand-darker: 18 15% 16%;
+    --brand-muted: 18 15% 70%;
+    --brand-border: 18 15% 82%;
+    --brand-border-light: 18 15% 91%;
+    --brand-gradient-to: 18 15% 97%;
+  }
+
+  [data-theme="jamblit"] {
+    --brand: 316 15% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 316 15% 96%;
+    --brand-hover: 316 15% 36%;
+    --brand-dark: 316 15% 32%;
+    --brand-darker: 316 15% 16%;
+    --brand-muted: 316 15% 70%;
+    --brand-border: 316 15% 82%;
+    --brand-border-light: 316 15% 91%;
+    --brand-gradient-to: 316 15% 97%;
+  }
+
   [data-theme="jambphys"] {
     --brand: 231 36% 40%;
     --brand-foreground: 0 0% 100%;
@@ -9817,6 +9882,66 @@
     --brand-muted: 186 10% 45%;
     --brand-dark: 186 15% 65%;
     --brand-darker: 186 15% 78%;
+  }
+
+  .dark [data-theme="nccco"] {
+    --brand: 41 15% 50%;
+    --brand-hover: 41 15% 42%;
+    --brand-light: 41 15% 13%;
+    --brand-gradient-to: 41 15% 11%;
+    --brand-border-light: 41 15% 24%;
+    --brand-border: 41 15% 34%;
+    --brand-muted: 41 15% 45%;
+    --brand-dark: 41 15% 65%;
+    --brand-darker: 41 15% 78%;
+  }
+
+  .dark [data-theme="osssc"] {
+    --brand: 131 15% 50%;
+    --brand-hover: 131 15% 42%;
+    --brand-light: 131 15% 13%;
+    --brand-gradient-to: 131 15% 11%;
+    --brand-border-light: 131 15% 24%;
+    --brand-border: 131 15% 34%;
+    --brand-muted: 131 15% 45%;
+    --brand-dark: 131 15% 65%;
+    --brand-darker: 131 15% 78%;
+  }
+
+  .dark [data-theme="vidyagyan"] {
+    --brand: 315 15% 50%;
+    --brand-hover: 315 15% 42%;
+    --brand-light: 315 15% 13%;
+    --brand-gradient-to: 315 15% 11%;
+    --brand-border-light: 315 15% 24%;
+    --brand-border: 315 15% 34%;
+    --brand-muted: 315 15% 45%;
+    --brand-dark: 315 15% 65%;
+    --brand-darker: 315 15% 78%;
+  }
+
+  .dark [data-theme="apcsp"] {
+    --brand: 18 15% 50%;
+    --brand-hover: 18 15% 42%;
+    --brand-light: 18 15% 13%;
+    --brand-gradient-to: 18 15% 11%;
+    --brand-border-light: 18 15% 24%;
+    --brand-border: 18 15% 34%;
+    --brand-muted: 18 15% 45%;
+    --brand-dark: 18 15% 65%;
+    --brand-darker: 18 15% 78%;
+  }
+
+  .dark [data-theme="jamblit"] {
+    --brand: 316 15% 50%;
+    --brand-hover: 316 15% 42%;
+    --brand-light: 316 15% 13%;
+    --brand-gradient-to: 316 15% 11%;
+    --brand-border-light: 316 15% 24%;
+    --brand-border: 316 15% 34%;
+    --brand-muted: 316 15% 45%;
+    --brand-dark: 316 15% 65%;
+    --brand-darker: 316 15% 78%;
   }
 
   .dark [data-theme="jambphys"] {

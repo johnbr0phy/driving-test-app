@@ -3360,7 +3360,7 @@
     "skill": "impact",
     "stem": "Which access issue remains for RideLink residents who want to submit reports but lack a smartphone and data plan?",
     "options": [
-      "They have no way to contribute data",
+      "Their bus sightings cannot enter the app",
       "They cannot read predicted arrival times",
       "Their reports reveal their names",
       "They must pay to view the daily summaries"
@@ -3368,7 +3368,7 @@
     "correct": [
       0
     ],
-    "explanation": "Submitting still requires a device and connection, a digital divide issue. They can still read predictions on stop displays.",
+    "explanation": "The passage says submitting reports requires a smartphone and data plan, so these residents cannot add their observations: a digital divide issue. They can still read predictions on stop displays, and summaries are published.",
     "passage": "A fictional town launches RideLink, an app that combines volunteered bus-location reports with riders' trip requests. It predicts arrival times and suggests routes. Reports include a timestamp and precise location but omit names. The town publishes route-level daily summaries. Residents need a smartphone and data plan to submit reports, though anyone can read predicted times on displays at major stops. During a trial, central routes receive many more reports than outer routes. A proposed update would retain each device's full travel history to improve personalized suggestions. No travel-history sharing with advertisers is currently described."
   },
   {

@@ -24,3 +24,11 @@ The bank was first built as option "families" (four questions sharing one option
 ## Second review, 2026-11-17
 
 All 200 questions answered blind from stem and options (including hand-traced code, binary, storage, MOD and loop items). 200/200 matched the key, including all 16 choose-two items. No fixes needed; no bank changes. Checks: option reuse OK (0% shared sets, echo gain -3.0), answer patterns none, check_banks PASS, validate_v2_bank 1/2 tests x 70 mcq.
+
+## Third review (blind, Opus), 2026-11-17
+
+Blind agreement: 200/200. One item was listed for a medium-confidence note.
+
+- APCSP-IMPACT-005: key right, but the key "They have no way to contribute data" was more absolute than the passage. Reworded to "Their bus sightings cannot enter the app" (the passage says submitting reports requires a smartphone and data plan) and the explanation now quotes that rule. Distractors unchanged; key and id unchanged.
+
+Checks after rebuild: option reuse OK (0% shared sets, echo gain -3.1), answer patterns none, check_banks PASS, validate_v2_bank tests 1 and 2 x 70 mcq OK.

@@ -25,3 +25,7 @@ These are introductory literary recognition and interpretation exercises, not a 
 ## Rewrite, 2026-11-17
 
 The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.
+
+## Second review, 2026-11-17
+
+120 questions, all answered blind from stem and options only; 120/120 agreed with the key. No wrong facts, ambiguity or typos found. One change: keys sat in a fixed A, B, C, D cycle within each category (key = index mod 4), so build.py now places keys by a seeded balanced shuffle per category (same options, same meaning, only letter positions move). Rebuilt; option-reuse (0% shared sets, echo gain -0.7), answer-pattern, check_banks and validate_v2_bank all pass.

@@ -10,13 +10,13 @@
     "skill": "drama",
     "stem": "A ruler rejects several chances to reconcile with his daughter. His suspicion causes her death and his ruin. The ending offers no recovery. Which form best describes this central action?",
     "options": [
-      "Tragedy",
       "Melodrama",
       "Tragicomedy",
-      "Revenge play"
+      "Revenge play",
+      "Tragedy"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "The serious conflict ends in irreversible destruction, characteristic of tragedy."
   },
@@ -32,12 +32,12 @@
     "stem": "Two lovers are kept apart by mistaken assumptions about their families. The errors are exposed, the families reconcile, and the lovers marry. Which form best fits this plot?",
     "options": [
       "Comedy of manners",
-      "Romantic comedy",
       "Farce",
+      "Romantic comedy",
       "Pastoral drama"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The love plot resolves obstacles through reconciliation and marriage, fitting romantic comedy."
   },
@@ -53,12 +53,12 @@
     "stem": "Three visitors hide behind doors while a confused host repeatedly welcomes the wrong person. Rapid entrances, improbable coincidences and physical mishaps dominate. Which form is most evident?",
     "options": [
       "Comedy of manners",
-      "Burlesque",
       "Farce",
+      "Burlesque",
       "Satirical comedy"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The exaggerated physical complications and improbable coincidences are characteristic of farce."
   },
@@ -73,13 +73,13 @@
     "skill": "drama",
     "stem": "A play combines a comic journey with a threatened execution. The execution is prevented, but the reunited family discovers an irreversible loss. Neither complete catastrophe nor an uncomplicated happy ending closes the action. Which form fits best?",
     "options": [
+      "Tragicomedy",
       "Tragedy",
       "Melodrama",
-      "Romantic comedy",
-      "Tragicomedy"
+      "Romantic comedy"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The combination of serious danger, comic action and an unsettled mixed ending supports tragicomedy."
   },
@@ -94,13 +94,13 @@
     "skill": "drama",
     "stem": "Alone on stage after her guests leave, a woman speaks aloud about a decision she has concealed from them. What technique exposes her private reasoning?",
     "options": [
-      "Soliloquy",
       "Aside",
+      "Soliloquy",
       "Prologue",
       "Dramatic monologue"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The solitary character voices her thoughts aloud in a soliloquy."
   },
@@ -115,13 +115,13 @@
     "skill": "drama",
     "stem": "While bargaining with a customer, a trader briefly turns to the audience and reveals a trick. The customer is conventionally unable to hear that remark. What technique is used?",
     "options": [
-      "Soliloquy",
       "Aside",
+      "Soliloquy",
       "Epilogue",
       "Interior monologue"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The short remark heard by the audience but not the other character is an aside."
   },
@@ -138,11 +138,11 @@
     "options": [
       "Monologue",
       "Narration",
-      "Dialogue",
-      "Aside"
+      "Aside",
+      "Dialogue"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "The alternating exchange between characters is dialogue."
   },
@@ -157,13 +157,13 @@
     "skill": "drama",
     "stem": "A group of villagers speaks together in a single collective voice, commenting on the ruler's decision. Which mode is used?",
     "options": [
+      "Choral speech",
       "Dialogue",
       "Prologue",
-      "Soliloquy",
-      "Choral speech"
+      "Soliloquy"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "A group delivering a collective commentary uses choral speech."
   },
@@ -178,13 +178,13 @@
     "skill": "drama",
     "stem": "Before the central dispute starts, a conversation establishes that the family has lost its farm and owes the merchant money. What plot function does this background serve?",
     "options": [
-      "Exposition",
       "Inciting incident",
+      "Exposition",
       "Rising action",
       "Denouement"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The information establishes the circumstances necessary to understand the action, functioning as exposition."
   },
@@ -199,13 +199,13 @@
     "skill": "drama",
     "stem": "The siblings have agreed to share an inheritance when a previously unknown claimant arrives. The arrival introduces an obstacle without settling the dispute. What plot function does it serve?",
     "options": [
-      "Exposition",
       "Complication",
+      "Exposition",
       "Climax",
       "Falling action"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The new obstacle complicates the existing conflict rather than resolving it."
   },
@@ -220,13 +220,13 @@
     "skill": "drama",
     "stem": "After mounting pressure, the accused chooses to reveal the evidence in court. This decisive confrontation determines the outcome; the remaining scenes show its consequences. What plot stage is reached?",
     "options": [
+      "Climax",
       "Falling action",
       "Rising action",
-      "Climax",
       "Exposition"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "The decisive confrontation at the height of the central conflict is the climax."
   },
@@ -242,12 +242,12 @@
     "stem": "The judgment has settled the central dispute. A final short scene shows the family making arrangements under the new circumstances. What plot function does that scene serve?",
     "options": [
       "Climax",
+      "Denouement",
       "Complication",
-      "Rising action",
-      "Denouement"
+      "Rising action"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The settling of consequences after the main conflict is the denouement."
   },
@@ -262,13 +262,13 @@
     "skill": "drama",
     "stem": "The present scene ends with a character recognising a scar. The next scene stages the accident ten years earlier that caused it. Which technique changes the narrative time?",
     "options": [
-      "Flashback",
       "Foreshadowing",
       "Flash-forward",
+      "Flashback",
       "Dramatic irony"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "The action returns to an earlier event, using flashback."
   },
@@ -304,13 +304,13 @@
     "skill": "drama",
     "stem": "The audience sees a forged letter being prepared. The recipient later trusts it, unaware of what the audience knows. Which device depends on this unequal knowledge?",
     "options": [
+      "Dramatic irony",
       "Situational irony",
       "Verbal irony",
-      "Dramatic irony",
       "Foreshadowing"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Dramatic irony arises from the audience knowing something that a character does not."
   },
@@ -346,13 +346,13 @@
     "skill": "drama",
     "stem": "A play follows a nurse's effort to save a clinic. Her decisions organise the main action and determine its outcome. Which role does she occupy?",
     "options": [
-      "Protagonist",
       "Confidant",
       "Foil",
+      "Protagonist",
       "Deuteragonist"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "The principal character whose struggle organises the action is the protagonist."
   },
@@ -368,12 +368,12 @@
     "stem": "A play centres on a worker's effort to expose fraud. A manager actively destroys evidence and tries to stop that effort. Which role does the manager fulfil?",
     "options": [
       "Foil",
-      "Antagonist",
       "Deuteragonist",
+      "Antagonist",
       "Tragic hero"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The character opposing the protagonist's central aim serves as antagonist."
   },
@@ -390,11 +390,11 @@
     "options": [
       "Antagonist",
       "Confidant",
-      "Foil",
-      "Stock character"
+      "Stock character",
+      "Foil"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "The contrast highlights the hero's qualities, making the friend a foil rather than an active antagonist."
   },
@@ -452,12 +452,12 @@
     "stem": "A character reaches for a sealed verdict while the scene repeatedly delays its opening. The audience still does not know whether she will be freed. What effect do the delays mainly create?",
     "options": [
       "Dramatic irony",
-      "Suspense",
       "Climax",
-      "Comic relief"
+      "Comic relief",
+      "Suspense"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Delaying an uncertain and important outcome builds suspense."
   },
@@ -473,12 +473,12 @@
     "stem": "After losing his home, an elderly character carefully sets a place at an imaginary table for his absent child. The scene chiefly invites tender sorrow for him. Which effect is foregrounded?",
     "options": [
       "Bathos",
-      "Irony",
       "Pathos",
+      "Irony",
       "Suspense"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The scene appeals to sympathetic sadness, or pathos."
   },
@@ -495,11 +495,11 @@
     "options": [
       "Farce",
       "Parody",
-      "Comic relief",
-      "Social satire"
+      "Social satire",
+      "Comic relief"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Ridicule exposes institutional corruption, making the scene social satire."
   },
@@ -514,13 +514,13 @@
     "skill": "drama",
     "stem": "A character alone weighs whether to confess a lie or preserve a valued friendship. No one else yet knows the lie. Which conflict is directly shown?",
     "options": [
-      "Internal conflict",
       "Interpersonal conflict",
       "Social conflict",
+      "Internal conflict",
       "Supernatural conflict"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "The competing motives within one character create internal conflict."
   },
@@ -577,13 +577,13 @@
     "skill": "drama",
     "stem": "A fishing crew struggles to reach land while a storm drives its boat towards rocks. No rival person causes the danger. Which conflict drives the scene?",
     "options": [
+      "Conflict with nature",
       "Internal conflict",
       "Supernatural conflict",
-      "Interpersonal conflict",
-      "Conflict with nature"
+      "Interpersonal conflict"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The human struggle against the storm is conflict with nature."
   },
@@ -598,13 +598,13 @@
     "skill": "drama",
     "stem": "In the printed script, \"[He places the letter beneath the lamp]\" tells the performer what to do without being spoken. What is this instruction?",
     "options": [
-      "Stage direction",
       "Prologue",
+      "Stage direction",
       "Subtext",
       "Dramatis personae"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The bracketed performance instruction is a stage direction."
   },
@@ -620,12 +620,12 @@
     "stem": "Painted walls, a doorway and a raised platform represent a palace courtyard in a production. Which design element establishes the place?",
     "options": [
       "Props",
-      "Scenery",
       "Lighting",
-      "Costume"
+      "Costume",
+      "Scenery"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The physical representation of the setting is scenery."
   },
@@ -640,13 +640,13 @@
     "skill": "prose",
     "stem": "\"I stole the letter because I feared what it would reveal about me.\" The narrator is the central actor in the conflict. Which viewpoint is used?",
     "options": [
-      "First-person participant",
       "First-person witness",
       "Second-person narration",
+      "First-person participant",
       "Third-person limited"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "The narrator uses I and directly participates as the central actor."
   },
@@ -724,13 +724,13 @@
     "skill": "prose",
     "stem": "A writer uses letters and interviews to recount the life of a scientist who died before the writer was born. Which form best describes the resulting book?",
     "options": [
-      "Biography",
       "Autobiography",
+      "Biography",
       "Historical fiction",
       "Obituary"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "A researched account of another person's life is a biography."
   },
@@ -768,11 +768,11 @@
     "options": [
       "Autobiography",
       "Journal",
-      "Memoir",
-      "Biography"
+      "Biography",
+      "Memoir"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "A memoir selects and reflects on personal experience, often around a period or theme."
   },
@@ -787,13 +787,13 @@
     "skill": "prose",
     "stem": "A novel places invented traders in a real nineteenth-century war and builds an imagined story around that period. Which form is used?",
     "options": [
+      "Historical fiction",
       "Chronicle",
       "Fantasy",
-      "Historical biography",
-      "Historical fiction"
+      "Historical biography"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Invented narrative set within a historical period is historical fiction."
   },
@@ -808,13 +808,13 @@
     "skill": "prose",
     "stem": "A character is generous yet jealous, brave in public yet afraid at home, and the narrative explores these tensions in depth. Which term describes this character?",
     "options": [
-      "Round character",
       "Flat character",
+      "Round character",
       "Stock character",
       "Dynamic character"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "A round character has several developed and sometimes conflicting qualities."
   },
@@ -830,12 +830,12 @@
     "stem": "A minor official is portrayed only through one trait, greed, and is given no inner life. Which term describes him?",
     "options": [
       "Round character",
-      "Flat character",
       "Dynamic character",
+      "Flat character",
       "Protagonist"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "A flat character is organised around a narrow set of traits."
   },
@@ -873,11 +873,11 @@
     "options": [
       "Dynamic character",
       "Antagonist",
-      "Confidant",
-      "Static character"
+      "Static character",
+      "Confidant"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "A static character remains essentially unchanged through the action; this does not imply a lack of complexity. A dynamic character, by contrast, changes significantly."
   },
@@ -934,13 +934,13 @@
     "skill": "prose",
     "stem": "A paragraph moves through a character's unfinished thoughts, sensations and sudden associations without arranging them into an orderly account. Which technique is most evident?",
     "options": [
+      "Stream of consciousness",
       "Flashback",
       "Epiphany",
-      "Stream of consciousness",
       "Omniscient narration"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Stream of consciousness represents the flow of mental experience."
   },
@@ -956,12 +956,12 @@
     "stem": "On seeing her abandoned childhood garden, a character suddenly understands why her pursuit of status has left her dissatisfied. What is this moment of insight?",
     "options": [
       "Climax",
+      "Epiphany",
       "Foreshadowing",
-      "Denouement",
-      "Epiphany"
+      "Denouement"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The sudden significant understanding is an epiphany."
   },
@@ -976,13 +976,13 @@
     "skill": "prose",
     "stem": "A story is presented entirely through letters exchanged by two relatives. Which organising form is used?",
     "options": [
-      "Epistolary narrative",
       "Frame narrative",
       "Parallel narrative",
+      "Epistolary narrative",
       "Picaresque narrative"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Letters carrying the story constitute an epistolary narrative."
   },
@@ -997,13 +997,13 @@
     "skill": "prose",
     "stem": "Travellers meet at an inn in an opening story. One traveller then tells a second story, and the work closes by returning to the inn. Which organising form is used?",
     "options": [
-      "Parallel narrative",
       "Frame narrative",
+      "Parallel narrative",
       "Episodic narrative",
       "Linear narrative"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "An enclosing story surrounding another is a frame narrative."
   },
@@ -1019,12 +1019,12 @@
     "stem": "Alternate chapters follow two families during the same period, placing their separate experiences side by side before the plots meet. Which organisation is most evident?",
     "options": [
       "Frame narrative",
-      "Circular narrative",
       "Parallel narrative",
+      "Circular narrative",
       "Episodic narrative"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Parallel narrative presents distinct lines of action alongside one another."
   },
@@ -1060,13 +1060,13 @@
     "skill": "prose",
     "stem": "An empty chair recurs whenever a family discusses the person who has left. The chair comes to represent the absence. Which device gives the object this meaning?",
     "options": [
-      "Symbolism",
       "Allegory",
       "Imagery",
+      "Symbolism",
       "Allusion"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "A concrete object representing a broader meaning functions symbolically."
   },
@@ -1081,13 +1081,13 @@
     "skill": "prose",
     "stem": "A narrator calls a difficult choice \"my own crossing of the Rubicon\", relying on readers to recognise a historical reference. Which device is used?",
     "options": [
-      "Metaphor",
       "Allusion",
+      "Metaphor",
       "Symbolism",
       "Anecdote"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The phrase refers beyond the story to a known historical event, making an allusion."
   },
@@ -1104,11 +1104,11 @@
     "options": [
       "Symbolism",
       "Personification",
-      "Allegory",
-      "Allusion"
+      "Allusion",
+      "Allegory"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "The sustained system of characters and events representing abstract meanings creates an allegory."
   },
@@ -1144,13 +1144,13 @@
     "skill": "prose",
     "stem": "A reader argues that repeated choices in a story explore whether loyalty can survive injustice. Which aspect is the reader interpreting?",
     "options": [
-      "Theme",
       "Plot",
       "Motif",
-      "Tone"
+      "Tone",
+      "Theme"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "The underlying concern or idea explored by the work is its theme."
   },
@@ -1165,13 +1165,13 @@
     "skill": "prose",
     "stem": "A reader examines how the coastal town and the period just after a war shape the action. Which aspect is the focus?",
     "options": [
-      "Atmosphere",
       "Setting",
+      "Atmosphere",
       "Theme",
       "Plot"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The place and time of the action together constitute setting."
   },
@@ -1187,12 +1187,12 @@
     "stem": "A reader traces how a concealed letter causes a quarrel, which leads to a departure and then a reconciliation. Which aspect is being analysed?",
     "options": [
       "Theme",
-      "Subplot",
       "Plot",
+      "Subplot",
       "Setting"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The connected sequence of actions and consequences is the plot."
   },
@@ -1207,13 +1207,13 @@
     "skill": "prose",
     "stem": "A reader studies how a woman's speech, habits and responses reveal her pride and vulnerability. Which aspect is the focus?",
     "options": [
+      "Characterisation",
       "Point of view",
       "Tone",
-      "Plot",
-      "Characterisation"
+      "Plot"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The means by which the narrative presents a person's qualities are characterisation."
   },
@@ -1228,13 +1228,13 @@
     "skill": "prose",
     "stem": "A narrator reports only what she observed, distinguishes guesses from facts, and has her central claims confirmed by other evidence in the story. How is her account best judged on that evidence?",
     "options": [
-      "Reliable account",
       "Unreliable account",
       "Omniscient account",
-      "Biased account"
+      "Biased account",
+      "Reliable account"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "The acknowledged limits and corroboration support reliability; they do not establish omniscience."
   },
@@ -1249,13 +1249,13 @@
     "skill": "prose",
     "stem": "A narrator claims to have been alone at home, but a later scene and his own dated letter place him elsewhere. How is his account best judged on this contradiction?",
     "options": [
-      "Reliable account",
       "Unreliable account",
+      "Reliable account",
       "Objective account",
       "Omniscient account"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The conflicting evidence undermines the reliability of his account."
   },
@@ -1270,13 +1270,13 @@
     "skill": "poetry",
     "stem": "\"The moon was a silver coin above the village.\" Which device directly equates the two unlike objects?",
     "options": [
-      "Metaphor",
       "Simile",
       "Personification",
+      "Metaphor",
       "Symbol"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "The moon is identified with a coin without an explicit like or as comparison, making a metaphor."
   },
@@ -1354,13 +1354,13 @@
     "skill": "poetry",
     "stem": "\"Bold birds battered the broken branch.\" Which pattern is created by the repeated initial b sound?",
     "options": [
-      "Alliteration",
       "Assonance",
       "Onomatopoeia",
+      "Alliteration",
       "Internal rhyme"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Repeated consonant sounds at word beginnings create alliteration."
   },
@@ -1376,12 +1376,12 @@
     "stem": "\"Slow boats float home.\" Which pattern is created by the repeated long o vowel?",
     "options": [
       "Alliteration",
-      "Assonance",
       "Consonance",
-      "Onomatopoeia"
+      "Onomatopoeia",
+      "Assonance"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Repeated similar vowel sounds create assonance."
   },
@@ -1397,12 +1397,12 @@
     "stem": "A line uses \"buzz\" to imitate a bee's noise rather than merely name the insect. What device links the word's sound to its meaning?",
     "options": [
       "Alliteration",
-      "Imagery",
       "Onomatopoeia",
+      "Imagery",
       "Assonance"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "A word that imitates the sound it describes uses onomatopoeia."
   },
@@ -1460,12 +1460,12 @@
     "stem": "A formal lyric addresses a living tree in sustained celebration, praising its endurance without narrating a sequence of adventures. Which form best fits?",
     "options": [
       "Elegy",
-      "Ode",
       "Sonnet",
+      "Ode",
       "Epic"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The sustained lyric celebration of a subject fits an ode."
   },
@@ -1481,12 +1481,12 @@
     "stem": "A songlike poem recounts a traveller's disappearance in short stanzas, returning to a refrain after each stage of the story. Which form best fits?",
     "options": [
       "Ode",
-      "Epic",
       "Ballad",
+      "Epic",
       "Elegy"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "A narrative in songlike stanzas with a recurring refrain is characteristic of a ballad."
   },
@@ -1522,13 +1522,13 @@
     "skill": "poetry",
     "stem": "A poem has fourteen lines, a conventional rhyme scheme and a turn in its argument. Which is its most specific formal classification?",
     "options": [
-      "Sonnet",
       "Lyric",
+      "Sonnet",
       "Villanelle",
       "Ode"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The fourteen-line structure and conventional argumentative turn identify a sonnet more specifically than the broader term lyric."
   },
@@ -1543,13 +1543,13 @@
     "skill": "poetry",
     "stem": "In a poem, line lengths vary with speech rhythms, and neither a regular metre nor a rhyme scheme governs it. Which term applies?",
     "options": [
-      "Blank verse",
       "Free verse",
+      "Blank verse",
       "Prose poem",
       "Sonnet"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Free verse is not governed by fixed metre or a regular rhyme scheme."
   },
@@ -1606,13 +1606,13 @@
     "skill": "poetry",
     "stem": "\"We waited by the river / until the lamps grew pale.\" Which technique carries the sentence beyond the first line ending?",
     "options": [
-      "Enjambment",
       "Caesura",
       "End-stopped line",
+      "Enjambment",
       "Refrain"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Enjambment continues a sentence or phrase across a line break."
   },
@@ -1627,13 +1627,13 @@
     "skill": "poetry",
     "stem": "\"The doors were shut. We waited in the rain.\" Which term describes the strong pause inside this single verse line?",
     "options": [
-      "Enjambment",
       "Caesura",
+      "Enjambment",
       "Ellipsis",
       "Refrain"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "A pause within a verse line is a caesura."
   },
@@ -1649,12 +1649,12 @@
     "stem": "Each stanza ends with the identical line \"Still the river runs\", repeated as a separate line in the same position. What is the recurring line?",
     "options": [
       "Anaphora",
-      "Epistrophe",
       "Refrain",
+      "Epistrophe",
       "Rhyme"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "A recurring line at corresponding places in a poem is a refrain."
   },
@@ -1669,13 +1669,13 @@
     "skill": "poetry",
     "stem": "\"We remember the wells. / We remember the trees. / We remember the path.\" Which term describes the repeated opening phrase of these successive lines?",
     "options": [
+      "Anaphora",
       "Epistrophe",
       "Refrain",
-      "Alliteration",
-      "Anaphora"
+      "Alliteration"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Anaphora repeats words at the beginnings of successive lines or clauses."
   },
@@ -1690,13 +1690,13 @@
     "skill": "poetry",
     "stem": "\"O absent sister, hear my song!\" Which device addresses a person who is not present as though she could listen?",
     "options": [
-      "Apostrophe",
       "Personification",
       "Allusion",
-      "Exclamation"
+      "Exclamation",
+      "Apostrophe"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Apostrophe directly addresses someone absent or something unable to respond."
   },
@@ -1712,12 +1712,12 @@
     "stem": "A poem calls a confused gathering \"another Babel\", relying on the reader's knowledge of an earlier story. Which device makes that external reference?",
     "options": [
       "Simile",
-      "Allusion",
       "Hyperbole",
+      "Allusion",
       "Apostrophe"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "A reference to a recognised story outside the poem is an allusion."
   },
@@ -1732,13 +1732,13 @@
     "skill": "poetry",
     "stem": "\"The crown announced new taxes.\" Here the crown stands for royal authority by association, rather than as a bodily part of a person. Which device is used?",
     "options": [
+      "Metonymy",
       "Synecdoche",
       "Allusion",
-      "Metonymy",
       "Euphemism"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Using a closely associated object for the institution is metonymy."
   },
@@ -1754,12 +1754,12 @@
     "stem": "\"We need more hands in the fields.\" Here hands stands for the workers, a part representing the whole. Which device is used?",
     "options": [
       "Metonymy",
+      "Synecdoche",
       "Hyperbole",
-      "Personification",
-      "Synecdoche"
+      "Personification"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "A part standing for the whole is synecdoche."
   },
@@ -1774,13 +1774,13 @@
     "skill": "poetry",
     "stem": "After a ruler destroys the harvest, a speaker calls him \"our generous provider\" while clearly condemning him. Which device uses praise to convey its opposite?",
     "options": [
-      "Verbal irony",
       "Euphemism",
       "Oxymoron",
-      "Paradox"
+      "Paradox",
+      "Verbal irony"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "The intended condemnation contradicts the literal praise, producing verbal irony."
   },
@@ -1795,13 +1795,13 @@
     "skill": "poetry",
     "stem": "\"By surrendering his demand for victory, he finally won his freedom.\" Which device presents an apparent contradiction that expresses an intelligible insight?",
     "options": [
-      "Oxymoron",
       "Paradox",
+      "Oxymoron",
       "Understatement",
       "Hyperbole"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The apparent contradiction between surrender and winning conveys a meaningful paradox."
   },
@@ -1816,13 +1816,13 @@
     "skill": "poetry",
     "stem": "A poet describes a crowd's silence as a \"deafening quiet\". Which device places directly contradictory terms together in one phrase?",
     "options": [
+      "Oxymoron",
       "Paradox",
       "Pun",
-      "Oxymoron",
       "Synaesthesia"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "The compressed juxtaposition of contradictory words forms an oxymoron."
   },
@@ -1838,12 +1838,12 @@
     "stem": "A traveller loses every possession in a flood, then calls it \"a slight inconvenience\". Which device deliberately reduces the stated seriousness?",
     "options": [
       "Euphemism",
+      "Understatement",
       "Hyperbole",
-      "Anticlimax",
-      "Understatement"
+      "Anticlimax"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The mild description of a severe loss is understatement."
   },
@@ -1858,13 +1858,13 @@
     "skill": "poetry",
     "stem": "Four lines end with \"rain\", \"hill\", \"pain\", \"still\". What is the rhyme scheme?",
     "options": [
-      "ABAB",
       "AABB",
+      "ABAB",
       "ABBA",
       "ABCB"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Rain rhymes with pain and hill with still, creating alternating ABAB rhyme."
   },
@@ -1879,13 +1879,13 @@
     "skill": "poetry",
     "stem": "Four lines end with \"night\", \"light\", \"shore\", \"door\". What is the rhyme scheme?",
     "options": [
-      "ABAB",
       "AABB",
+      "ABAB",
       "AABC",
       "ABCC"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The first pair rhymes together and the second pair rhymes together, creating AABB."
   },
@@ -1900,13 +1900,13 @@
     "skill": "appreciation",
     "stem": "The footsteps passed her door and faded. Ada slowly unclenched her hand. For the first time that evening she let the lamp burn low and rested her head against the wall. Which feeling is most strongly conveyed?",
     "options": [
-      "Quiet relief",
       "Lingering fear",
       "Sudden joy",
+      "Quiet relief",
       "Deep sorrow"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "The danger appears to pass, and her body relaxes. Those details support quiet relief."
   },
@@ -1921,13 +1921,13 @@
     "skill": "appreciation",
     "stem": "Each time the gate creaked, Femi stood up. The messenger was already an hour late. He moved the untouched meal aside and listened again, counting the pauses between approaching footsteps. Which feeling is most strongly conveyed?",
     "options": [
-      "Quiet patience",
       "Growing apprehension",
+      "Quiet patience",
       "Mild boredom",
       "Sharp anger"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Repeated vigilance, delay and the untouched meal indicate increasing apprehension rather than relief."
   },
@@ -1943,12 +1943,12 @@
     "stem": "She laid his unused shoes beside the grave. \"All those promises,\" she said, pressing the words between her teeth. The mourners had left, but she remained, angry that the world could continue without him. Which feeling is most strongly conveyed?",
     "options": [
       "Calm acceptance",
-      "Quiet nostalgia",
       "Bitter grief",
+      "Quiet nostalgia",
       "Guilty remorse"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The loss is accompanied by anger and resentment, making bitter grief the strongest description."
   },
@@ -1963,13 +1963,13 @@
     "skill": "appreciation",
     "stem": "The flood had taken the seedlings. Weeks later, a green shoot appeared beside the ruined fence. Musa knelt to protect it with two stones, then went to find the seed tin he had put away. Which feeling is most strongly conveyed?",
     "options": [
+      "Renewed hope",
       "Weary resignation",
       "Lingering regret",
-      "Quiet pride",
-      "Renewed hope"
+      "Quiet pride"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "His return to planting after recognising new growth shows renewed hope."
   },
@@ -1984,13 +1984,13 @@
     "skill": "appreciation",
     "stem": "After winning the race, Amina saw the unfamiliar runner who had fallen. She returned to help, although the medal ceremony was about to start. Which value most directly motivates the action shown?",
     "options": [
-      "Compassion",
       "Ambition",
       "Obedience",
-      "Gratitude"
+      "Gratitude",
+      "Compassion"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Helping an injured stranger at a personal inconvenience demonstrates compassion."
   },
@@ -2005,13 +2005,13 @@
     "skill": "appreciation",
     "stem": "The apprentice was offered comfortable work in the village. She chose the harder training in the city because she wanted to become the finest craftswoman in her field. Which motive is foregrounded?",
     "options": [
-      "Curiosity",
       "Ambition",
+      "Curiosity",
       "Independence",
       "Discipline"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Her choice is driven by the aspiration to excel, showing ambition."
   },
@@ -2068,13 +2068,13 @@
     "skill": "appreciation",
     "stem": "Long after selling the house, the narrator keeps its key. \"It opens no door now,\" she says, \"but whenever I hold it I hear the courtyard voices.\" What does the key chiefly represent?",
     "options": [
-      "Attachment to memory",
       "Hope of return",
+      "Attachment to memory",
       "Fear of strangers",
       "Pride in ownership"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The key evokes the lost home and its voices, representing attachment to memory."
   },
@@ -2090,12 +2090,12 @@
     "stem": "In a yard left bare by fire, a child places one seed in the ash. The story ends before anything grows, with the child carefully bringing water. What does the seed chiefly represent?",
     "options": [
       "Grief for what burned",
-      "Potential for renewal",
       "Recovery already achieved",
+      "Potential for renewal",
       "Waste of effort"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The seed is a possibility that must be nurtured, representing potential for renewal rather than an accomplished recovery."
   },
@@ -2111,12 +2111,12 @@
     "stem": "At the station, a woman holds two tickets, one to her old village and one to a distant city. The story ends with her still on the footbridge, neither train boarded. What do the tickets chiefly represent?",
     "options": [
       "A longing for home",
-      "A plan to travel widely",
       "A choice between futures",
+      "A plan to travel widely",
       "A fear of travel"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The two destinations embody competing possible futures and an unresolved choice."
   },
@@ -2132,12 +2132,12 @@
     "stem": "A family installs a new kitchen clock. Its chimes signal breakfast, homework and the evening meal. Through busy weeks and quiet ones, those daily activities keep their familiar sequence. What does the clock chiefly represent in this account?",
     "options": [
       "Fear of passing time",
+      "Continuity of routine",
       "Loss of freedom",
-      "Attachment to memory",
-      "Continuity of routine"
+      "Attachment to memory"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The clock organises repeated daily activities, representing continuity of routine. It is new and is not linked to recollections of a lost person or place."
   },
@@ -2174,12 +2174,12 @@
     "stem": "\"He praised fairness from the platform, then dismissed the workers without listening. His fine words cost him nothing; the silence he demanded cost them their wages.\" What attitude does the narrator express towards the speaker?",
     "options": [
       "Grudging respect",
-      "Criticism",
       "Mild amusement",
-      "Neutral detachment"
+      "Neutral detachment",
+      "Criticism"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The contrast between proclaimed fairness and harmful conduct expresses criticism."
   },
@@ -2195,12 +2195,12 @@
     "stem": "\"Grandfather searched solemnly for his spectacles while they rested on his head. When he asked whether a thief had come, I had to hide my smile behind a cup.\" What attitude does the narrator express in this moment?",
     "options": [
       "Concern",
-      "Impatience",
       "Amusement",
+      "Impatience",
       "Contempt"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The concealed smile at the harmless mistake shows amusement."
   },
@@ -2236,13 +2236,13 @@
     "skill": "appreciation",
     "stem": "The council wants to replace the annual harvest ritual with a new communal festival. The elder insists that the old form must remain because it joins the village to its ancestors. What conflict is foregrounded?",
     "options": [
-      "Tradition versus change",
       "Faith versus doubt",
       "Duty versus desire",
+      "Tradition versus change",
       "Individual versus community"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "The disagreement concerns preserving an inherited practice against adopting a new one."
   },
@@ -2278,13 +2278,13 @@
     "skill": "appreciation",
     "stem": "A clerk discovers evidence that his closest friend stole public funds. Protecting the friendship would mean concealing harm to the community. What conflict is foregrounded?",
     "options": [
+      "Loyalty versus justice",
       "Fear versus courage",
       "Wealth versus poverty",
-      "Loyalty versus justice",
       "Tradition versus change"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Personal loyalty conflicts with the duty to expose wrongdoing and uphold justice."
   },
@@ -2299,13 +2299,13 @@
     "skill": "appreciation",
     "stem": "An experienced builder cannot lift a beam alone. He rejects an apprentice's offer because admitting the need feels humiliating, although the work remains unfinished. What conflict is foregrounded?",
     "options": [
+      "Pride versus accepting help",
       "Strength versus weakness",
       "Ambition versus failure",
-      "Duty versus rest",
-      "Pride versus accepting help"
+      "Duty versus rest"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "His self-image prevents him accepting useful assistance, setting pride against receiving help."
   },
@@ -2320,13 +2320,13 @@
     "skill": "appreciation",
     "stem": "\"His offer was a door painted on a wall: bright hinges, a golden handle, and no way through.\" What does the image imply about the offer?",
     "options": [
-      "An empty promise",
       "A hidden danger",
+      "An empty promise",
       "A generous gift",
       "A difficult test"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The door only appears usable, suggesting a promise that provides no real access."
   },
@@ -2342,12 +2342,12 @@
     "stem": "\"The new rule was a locked gate across the path we had always walked.\" What does the image imply about the rule?",
     "options": [
       "A forgotten custom",
-      "An imposed restriction",
       "A temporary delay",
-      "A hidden danger"
+      "A hidden danger",
+      "An imposed restriction"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The locked gate blocks a previously available path, suggesting an imposed restriction."
   },
@@ -2364,11 +2364,11 @@
     "options": [
       "A comforting shelter",
       "A brief inconvenience",
-      "A burdensome obligation",
-      "A source of pride"
+      "A source of pride",
+      "A burdensome obligation"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "The weight, discomfort and inability to remove it suggest a burdensome obligation."
   },
@@ -2384,12 +2384,12 @@
     "stem": "\"Their letter was an open doorway, with a lamp kept burning for my arrival.\" What does the image imply about the letter?",
     "options": [
       "A formal summons",
+      "A welcoming invitation",
       "A distant memory",
-      "A cautious warning",
-      "A welcoming invitation"
+      "A cautious warning"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The open door and waiting light convey welcome, suggesting an invitation."
   },
@@ -2404,13 +2404,13 @@
     "skill": "appreciation",
     "stem": "After the argument, Nneka stopped joining the evening conversations. She answered kindly when addressed, but spent longer in the far garden and no longer offered stories of her day. What change in her behaviour is emphasised?",
     "options": [
-      "Withdrawal",
       "Open hostility",
       "Quiet contentment",
+      "Withdrawal",
       "Deep grief"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Her reduced participation and increasing distance show withdrawal without explicit hostility."
   },
@@ -2426,12 +2426,12 @@
     "stem": "When the bridge collapsed, households that had rarely spoken began sharing boats and carrying one another's supplies. By the time repairs began, neighbours knew each other's needs. What development is emphasised?",
     "options": [
       "Rivalry",
-      "Solidarity",
       "Isolation",
+      "Solidarity",
       "Dependence"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Cooperation in a shared difficulty builds solidarity among previously distant neighbours."
   },
@@ -2509,13 +2509,13 @@
     "skill": "appreciation",
     "stem": "\"The challenger raised his hand. The guards stopped. Nobody spoke. For a moment even the crowd seemed to hold its breath; the answer had still not come.\" What effect is chiefly created?",
     "options": [
-      "Rising panic",
       "Suspended tension",
+      "Rising panic",
       "Calm resolution",
       "Comic delay"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The halted action and withheld answer suspend the confrontation in tension."
   }

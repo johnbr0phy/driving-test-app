@@ -14,3 +14,7 @@ No unresolved material content findings. Remote preview and batch-level integrat
 ## Rewrite, 2026-11-17
 
 The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.
+
+## Second review, 2026-11-17
+
+All 260 questions answered blind from stem and options (picks written to the scratchpad), numbers recomputed (RISK-037 to 040 percentages, INCIDENT-033 to 036 RTO/RPO). Agreement 260/260. No confirmed problems, so no fixes and no rebuild. Single-key echo only on NETWORK-024 (key echoing the stem, a rogue endpoint on a wired port); left because it is the only natural answer. Checks: option reuse OK (0% shared sets, echo gain -2.7), check_banks PASS, v2 validator run.

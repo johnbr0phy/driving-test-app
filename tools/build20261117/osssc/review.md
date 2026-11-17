@@ -11,3 +11,7 @@ English007/008 clarified temporal meanings. Maths042 missing space fixed. GENERA
 ## Rewrite, 2026-11-17
 
 The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.
+
+## Second review, 2026-11-17
+
+Blind second reviewer re-solved all 200 questions from stem and options only (maths, reasoning, grammar, spreadsheet references and Odisha/India history recomputed or rechecked against sources.md). 200/200 agreed with the key. No fixes were needed; bank and sources unchanged. Judgement calls left alone: REASONING-006 (B relies on pencils existing, the usual convention), ENGLISH-019 ("was" over "were" after "Neither of the two keys", stem says formal English), GENERAL-008 (Gandhi as the organiser of the 26 January 1930 observance; the other options are clearly wrong).

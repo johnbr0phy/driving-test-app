@@ -19,9 +19,13 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 const TEACHER_LED = new Set([
   "hknurse",
   "cacore",
+  "cahunteron",
+  "cabcguard",
   "nzboat",
   // Microsoft security operations courses and SOC bootcamps (SC-200)
   "sc200",
+  // Entry-level cybersecurity courses and bootcamps (ISC2 CC)
+  "isc2cc",
   "cehrs",
   "cpcta",
   "pance",
@@ -35,9 +39,11 @@ const TEACHER_LED = new Set([
   "cadc",
   "ascppbt",
   "rpt",
+  "ncpt",
   "hspachl",
   "hspacer",
   "bcaba",
+  "qabaabat",
   "bcba",
   // US: FCS teacher preparation and FCS programs (AAFCS HNFS)
   "aafcs",
@@ -91,12 +97,13 @@ const TEACHER_LED = new Set([
   "realestate", "insurance", "pnc", "ham", "civics",
   "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "ukdsc1", "capal", "caelec", "auwhite",
   "cscs", "ukfood", "ukaplh",
-  "caauto", "caplumb", "cacarp", "caweld", "cawhmis", "caguard",
+  "caauto", "caplumb", "cacarp", "caweld", "cawhmis", "caguard", "caabguard",
   "aursa", "aurcg", "aufss", "auforklift", "auwah",
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "prince2", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "ceh", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)
@@ -108,7 +115,7 @@ const TEACHER_LED = new Set([
   // Next-100 batch 5 (November 2026)
   "jambmath", "wasscemath", "jambbio", "jambchem", "jambphys", "wassceeng", "apgov", "ngpolice", "trcnpqe",
   // Next-20 batch B (November 2026)
-  "cma", "rma", "nbdhe", "nptepta", "aatl2", "accafa",
+  "cma", "rma", "nbdhe", "inbde", "nptepta", "aatl2", "accafa",
   // Next-20 batch C (November 2026)
   "aswbclin", "phr", "ccs", "rdexam", "cemap",
   // Next-20 batch (November 2026)
@@ -122,6 +129,8 @@ const TEACHER_LED = new Set([
   "iesafepass", "iepsa", "nzsfe", "nzensf", "nziqn", "sgvl",
   // Build-tests run (Nov 16 2026)
   "nzrealestate",
+  "nzsecurity",
+  "nzrealestate", "caairbrake",
   // International batch 2 (November 2026): the PRC board exams and the criminology board exam
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
 ]);

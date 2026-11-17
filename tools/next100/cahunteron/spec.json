@@ -1,5 +1,5 @@
 {
-  "id": "cahunteron", "stateCode": "CAHUNTON", "idBase": 31500, "prefix": "CAHUNTON-",
+  "id": "cahunteron", "stateCode": "CAHUNTERON", "idBase": 32900, "prefix": "CAHON-",
   "slug": "/ontario-hunter", "landingPath": "/ontario-hunter-education-practice-test",
   "dataFile": "data/ontario-hunter-education-questions.json",
   "testCount": 4, "questionsPerTest": 50, "passPct": 80, "icon": "target",

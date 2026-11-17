@@ -17,11 +17,11 @@ import "./cahunteron";
 
 ## lib/exams.ts
 Paste `wiring/config.ts.txt`. Add `"cahunteron"` to the `ExamId` union and append `cahunteron`
-to `EXAMS` right after `hunter`. Icon `target` already exists. IDs: tests 31501-31504, sets
-31501-31504 (block 31500). Premium: the standard v1 locks apply (no extra line).
+to `EXAMS` right after `hunter`. Icon `target` already exists. IDs: tests 32901-32904, sets
+32901-32904 (block 32900). Premium: the standard v1 locks apply (no extra line).
 
 ## types/index.ts
-State code `CAHUNTON` and category keys (from `wiring/types.txt`):
+State code `CAHUNTERON` and category keys (from `wiring/types.txt`):
 `cahunLicence`, `cahunTags`, `cahunRules`, `cahunEquip`, `cahunLand`, `cahunEthics`,
 `cahunWildlife`, `cahunCare`.
 
@@ -38,10 +38,10 @@ State code `CAHUNTON` and category keys (from `wiring/types.txt`):
 ```
 
 ## app/globals.css
-Hue from the run table, `90 95% 18%` (deep forest green; checked by the run's clash checker):
+Hue from the run table, `21 85% 20%` (deep russet brown; checked by the run's clash checker):
 ```css
   [data-theme="cahunteron"] {
-    --brand: 90 95% 18%;
+    --brand: 21 85% 20%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 90 40% 95%;
     --brand-hover: 90 95% 14%;
@@ -91,7 +91,7 @@ Bump `EXAM_LANDINGS_UPDATED_AT`; run `npx tsx scripts/build-landing-dates.ts` af
 Run `npx tsx scripts/build-training-parts.ts` (no set is over 60, so no parts).
 
 ## Landing screenshots
-`node .claude/skills/exam-bank/scripts/shoot_landing.js http://localhost:3123 public/landing cahunteron:ontario-hunter:31501`
+`node .claude/skills/exam-bank/scripts/shoot_landing.js http://localhost:3123 public/landing cahunteron:ontario-hunter:32901`
 
 ## CLAUDE.md
 Paste `wiring/claude.md` under Additional Exams, after the Canada teacher-led entries.

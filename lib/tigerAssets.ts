@@ -64,9 +64,12 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  * Remove an entry once that exam has its own eight expressions.
  */
 const BORROWED_SETS: Record<string, string> = {
+  prince2: "pmp",
   hknurse: "nclex",
   bcrealestate: "realestate",
   cacore: "hunter",
+  cahunteron: "hunter",
+  cabcguard: "caguard",
   nzboat: "boating",
   ea1: "cpareg",
   cpabar: "cpafar",
@@ -87,9 +90,11 @@ const BORROWED_SETS: Record<string, string> = {
   crfsc: "capal",
   ascppbt: "phleb",
   rpt: "phleb",
+  ncpt: "phleb",
   hspachl: "crcst",
   hspacer: "crcst",
   bcaba: "rbt",
+  qabaabat: "rbt",
   bcba: "rbt",
   aufirearmsqld: "capal",
   dmv: "driving",
@@ -113,7 +118,7 @@ const BORROWED_SETS: Record<string, string> = {
   awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex", ccrn: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
-  psat: "sat", netplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", sc200: "secplus", sc900: "secplus", gcdl: "aws", gcppca: "aws",
+  psat: "sat", netplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", ceh: "secplus", sc200: "secplus", sc900: "secplus", gcdl: "aws", gcppca: "aws", isc2cc: "cissp",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "shsat", cogat: "timestables",ssat: "shsat",isee: "shsat",
   // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
@@ -177,7 +182,7 @@ const BORROWED_SETS: Record<string, string> = {
   cca: "cpc",
   // Next-20 batch B reuses reviewed medical-assisting, dental, insurance, cloud and finance families.
   // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
-  cma: "ccma", rma: "ccma", nbdhe: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", cfal1: "series7",
+  cma: "ccma", rma: "ccma", nbdhe: "danb", inbde: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", cfal1: "series7",
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
@@ -194,12 +199,14 @@ const BORROWED_SETS: Record<string, string> = {
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",
   nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", aerera: "realestate", mypce: "insurance", kenck: "nclex",
   // NZ real estate salesperson borrows the real estate tiger.
-  nzrealestate: "realestate",
+  nzrealestate: "realestate", nzsecurity: "security",
   ppsc: "phcse", punjabpolice: "police", pakarmy: "asvab", pkpaf: "asvab", pknle: "nclex", pkpnmc: "nclex",
   zak53moto: "moto", zare5: "insurance", zasaps: "police", zapsira: "security",
   // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX
   // and Series 7 families.
-  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter",
+  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter", caabguard: "caguard", caairbrake: "cdl",
+  // Smart Serve Ontario borrows the alcohol server tiger.
+  smartserve: "alcohol",
   nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving", sgsnb: "nclex",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.

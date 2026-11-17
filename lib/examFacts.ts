@@ -202,6 +202,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Microsoft Learn's SC-200 study guide (skills measured as of October 21, 2026), the Security Operations Analyst Associate certification page and Microsoft's exam duration page, checked November 2026",
     source: { name: "Microsoft Learn: SC-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200" },
   },
+  ceh: {
+    answer:
+      "The EC-Council Certified Ethical Hacker exam (CEH v13, exam 312-50) has 125 multiple-choice questions in 4 hours and is not open book. EC-Council sets a cut score for each exam form between 60% and 85%, depending on how hard that form's questions are. The CEH Exam Blueprint v5.0 weights nine domains: Information Security and Ethical Hacking Overview 6%, Reconnaissance Techniques 17%, System Hacking Phases and Attack Techniques 15%, Network and Perimeter Hacking 24%, Web Application Hacking 14%, Wireless Network Hacking 5%, Mobile Platform, IoT and OT Hacking 10%, Cloud Computing 5% and Cryptography 5%. The credential is valid for three years and is renewed with 120 continuing education credits.",
+    rows: [
+      { label: "Questions", value: "125 multiple choice" },
+      { label: "Time", value: "4 hours" },
+      { label: "Passing score", value: "60% to 85%, set for each exam form" },
+      { label: "Exam code", value: "312-50 (CEH v13)" },
+      { label: "Valid for", value: "3 years, renewed with 120 credits" },
+      { label: "Given by", value: "EC-Council, at ECC Exam Centres, Pearson VUE or remote proctoring" },
+    ],
+    basedOn: "EC-Council's CEH Exam Blueprint v5.0, the CEH certification page and the CEH Candidate Handbook, checked November 2026",
+    source: { name: "EC-Council: Certified Ethical Hacker", url: "https://cert.eccouncil.org/certified-ethical-hacker.html" },
+  },
   pentestplus: {
     answer:
       "The CompTIA PenTest+ exam (PT0-003) has a maximum of 90 questions in 165 minutes, multiple choice and performance-based, and you need 750 on a 100 to 900 scale to pass. It covers Engagement Management 13%, Reconnaissance and Enumeration 21%, Vulnerability Discovery and Analysis 17%, Attacks and Exploits 35% and Post-exploitation and Lateral Movement 14%. PT0-003 launched on December 17, 2024 and replaced PT0-002, which retired on June 17, 2025.",
@@ -291,6 +305,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "NCCT's NCMA Detailed Test Plan (effective January 2024) and Candidate Handbook (revised January 2026), checked November 2026",
     source: { name: "NCCT: NCMA Detailed Test Plan", url: "https://www.ncctinc.com/Documents/MA%20Detailed%20Test%20Plan.pdf" },
+  },
+  ncpt: {
+    answer:
+      "The National Certified Phlebotomy Technician (NCPT) exam is the National Center for Competency Testing's (NCCT) certification exam for phlebotomy technicians. NCCT's detailed test plan, effective January 2025, gives it 100 scored questions plus 25 unscored pretest questions, with three hours to finish; about 92% are four-option multiple choice and 8% are alternative items such as drag and drop, multi-select and hotspot. Scores run from 200 to 720 and a scaled 575 passes, which is not a fixed percentage. The plan has five content categories: Infection Control and Safety 15 items, Preparing for Specimen Collection 25 (Equipment Selection 12, Patient and Site Preparation 13), Specimen Collection 30, Collection Complications and Troubleshooting 15, and Law and Ethics 15. It is taken on a computer at a test site or by remote testing, in English only.",
+    rows: [
+      { label: "Questions", value: "125 (100 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "575 on a 200 to 720 scale" },
+      { label: "Largest areas", value: "Specimen Collection 30, Preparing for Specimen Collection 25, then 15 each for the other three" },
+      { label: "Eligibility", value: "NCCT-authorized phlebotomy program (student or graduate within 5 years), 1 year of full-time work as a phlebotomy technician within the past 5 years, or military training; most routes need a critical skills form" },
+      { label: "Where", value: "Computer based, at a test site or by remote testing; English only" },
+      { label: "Retakes", value: "After 30 days for a 2nd and 3rd try, 90 days for a 4th, then 180 days with an appeal" },
+      { label: "Given by", value: "NCCT" },
+    ],
+    basedOn: "NCCT's NCPT Detailed Test Plan (effective January 2025) and Candidate Handbook (revised January 2026), checked November 2026",
+    source: { name: "NCCT: NCPT Detailed Test Plan", url: "https://www.ncctinc.com/Documents/NCPT_2025.pdf" },
   },
   aufirearmsvic: {
     answer:
@@ -486,6 +516,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       ],
       basedOn: "HSPA's CER Exam Content Outline (revised May 2022) and Certification Handbook (revised January 2026), checked November 2026",
       source: { name: "HSPA: Certified Endoscope Reprocessor (CER)", url: "https://myhspa.org/certification/certification-overview/certified-endoscope-reprocessor-cer/" },
+    },
+  qabaabat: {
+      answer:
+        "The ABAT exam is the certification exam for the Applied Behavior Analysis Technician credential from the Qualified Applied Behavior Analysis Credentialing Board (QABA), an entry-level credential for technicians who carry out ABA treatment plans and collect data under the supervision of a QBA, QASP-S, BCBA, BCaBA or other qualified professional. Candidates first complete 40 hours of approved coursework, 15 hours of supervised fieldwork and the application. The exam has 125 questions in 2 hours: 100 scored and 25 unscored pretest questions that are not identified. It is taken online with a live proctor, and the pass point is 72%, with a pass or fail result given right away. QABA's test specifications spread the 100 scored questions over 14 domains, led by autism spectrum disorder basics (12%), functional analysis (11%) and person-centered planning (10%).",
+      rows: [
+        { label: "Questions", value: "125 (100 scored, 25 unscored pretest)" },
+        { label: "Time", value: "2 hours" },
+        { label: "Pass mark", value: "72%, pass or fail shown right after the exam" },
+        { label: "Content", value: "14 domains (ABAT job analysis test specifications)" },
+        { label: "Biggest domain", value: "Autism Spectrum Disorder Basics, 12 of 100" },
+        { label: "Retakes", value: "Second attempt right away, then 7 days before a third or fourth; at most 8 in a year" },
+        { label: "Where", value: "Online, live-proctored by Premier Proctoring" },
+        { label: "Run by", value: "Qualified Applied Behavior Analysis Credentialing Board (QABA)" },
+      ],
+      basedOn: "QABA's ABAT job analysis test specifications (reviewed August 2023), the ABAT Competency Standards (January 2023) and the ABAT Candidate Handbook (January 2026), checked November 2026",
+      source: { name: "QABA: ABAT certification", url: "https://qababoard.com/pages/?p=8977" },
     },
   bcaba: {
       answer:
@@ -1605,6 +1651,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Health Canada's amended Hazardous Products Regulations page and CCOHS WHMIS fact sheets, checked October 2026",
     source: { name: "Health Canada: Amended Hazardous Products Regulations", url: "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system/amendments-hazardous-products-regulations.html" },
+  },
+  caabguard: {
+    answer:
+      "To be licensed as a security worker in Alberta (security guard, loss prevention worker, patrol dog handler, alarm responder or executive security), you complete an approved course, the Alberta Basic Security Training course or an accredited equivalent, with an approved training provider, then pass the provincial final exam with a score of 80% or higher. The exam is overseen by the Government of Alberta and marked by a Ministry or certified proctor. Applicants must be over 18, eligible to work in Canada, at Canadian Language Benchmark 5 in English, and have no criminal record, outstanding charges or ongoing criminal investigation. The licence is issued under the Security Services and Investigators Act and runs for 2 years. Alberta does not publish the number of questions or a time limit.",
+    rows: [
+      { label: "Pass mark", value: "80% on the provincial final exam" },
+      { label: "Training first", value: "Alberta Basic Security Training or an accredited course" },
+      { label: "Rewrites", value: "Allowed for up to 2 years from the start of the course" },
+      { label: "Minimum age", value: "Over 18" },
+      { label: "English", value: "Canadian Language Benchmark 5" },
+      { label: "Licence term", value: "2 years, portable between employers" },
+      { label: "Law", value: "Security Services and Investigators Act (Alberta)" },
+      { label: "Run by", value: "Government of Alberta, Security Programs" },
+    ],
+    basedOn: "alberta.ca's security service worker licence page, the Ministry's SSIA provincial examination process and the ABST Participant Manual, checked November 2026",
+    source: { name: "Alberta.ca: Security service worker licence", url: "https://www.alberta.ca/security-service-worker-licence" },
   },
   caguard: {
     answer:
@@ -3055,6 +3117,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the CompTIA CySA+ CS0-004 exam objectives",
     source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/" },
   },
+  isc2cc: {
+    answer:
+      "The ISC2 Certified in Cybersecurity (CC) exam is computerized adaptive: 100 to 125 items in 2 hours, multiple choice plus advanced item types, answered in order. It is scored on a 0 to 1000 scale and 700 passes. The outline effective September 1, 2026 weights five domains: Security Principles 24%, Security Governance 17.3%, Identity and Access Management (IAM) Concepts 20%, Networking and Cloud Security Concepts 21.3%, and Security Operations and Incident Response 17.3%. No work experience is required.",
+    rows: [
+      { label: "Questions", value: "100 to 125 (adaptive)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "700 on a 0 to 1000 scale" },
+      { label: "Domains", value: "5, weighted 17.3% to 24%" },
+      { label: "Experience", value: "None required" },
+      { label: "Languages", value: "English, Chinese, Japanese, German, Spanish" },
+      { label: "Given by", value: "ISC2, at Pearson VUE test centers" },
+    ],
+    basedOn: "the ISC2 CC exam outline effective September 1, 2026",
+    source: { name: "ISC2", url: "https://www.isc2.org/certifications/cc/cc-certification-exam-outline" },
+  },
   cissp: {
     answer:
       "The CISSP exam is computerized adaptive in every language: 100 to 150 questions in 3 hours, answered in order with no going back. It is scored on a 0 to 1000 scale and 700 passes. The April 15, 2024 outline weights eight domains: Security and Risk Management 16%, Asset Security 10%, Security Architecture and Engineering 13%, Communication and Network Security 13%, Identity and Access Management 13%, Security Assessment and Testing 12%, Security Operations 13% and Software Development Security 10%. Certification also needs five years of paid work in two or more domains.",
@@ -3068,6 +3145,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the ISC2 CISSP exam outline effective April 15, 2024",
     source: { name: "ISC2", url: "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" },
+  },
+  prince2: {
+    answer:
+      "The PRINCE2 7 Foundation exam has 60 multiple-choice questions, one mark each, in 60 minutes. It is closed book, there is no negative marking, and you need 36 correct answers (60 percent) to pass; candidates sitting in a language that is not their own may get 25 percent extra time. It tests recall and understanding of the PRINCE2 method: key concepts 3 percent, the seven principles 8 percent, people 14 percent, the seven practices 60 percent and the seven processes 15 percent. PeopleCert offers it in 14 languages, lists no prerequisites, and the certification is renewed every 3 years. PRINCE2 7 has been the current edition since September 2023.",
+    rows: [
+      { label: "Questions", value: "60 multiple choice, one mark each" },
+      { label: "Time", value: "60 minutes, closed book" },
+      { label: "Pass mark", value: "60 percent (36 of 60), no negative marking" },
+      { label: "Biggest area", value: "The seven practices, 60 percent of the marks" },
+      { label: "Prerequisites", value: "None listed" },
+      { label: "Renewal", value: "Every 3 years (60 CPD points or another exam in the suite)" },
+      { label: "Given by", value: "PeopleCert" },
+    ],
+    basedOn: "the PRINCE2 7 Foundation syllabus and PeopleCert's PRINCE2 Foundation (Version 7) exam page, checked November 2026",
+    source: { name: "PeopleCert", url: "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579" },
   },
   itil: {
     answer:
@@ -5936,6 +6028,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AAT's Level 2 Certificate in Accounting (Q2022) qualification specification, version 5.7, checked November 2026",
     source: { name: "AAT: Level 2 Certificate in Accounting", url: "https://www.aat.org.uk/qualifications-and-courses/accounting/level-2-certificate-accounting" },
   },
+  inbde: {
+    answer:
+      "The Integrated National Board Dental Examination (INBDE) is the Joint Commission on National Dental Examinations' written board exam for dentists. It replaced NBDE Part I and Part II, and US dental licensing jurisdictions use it as part of licensure. It has 500 multiple-choice questions over two days at a Prometric test center: 300 standalone questions and 60 case questions on day one, 140 case questions on day two, in 105-minute sections, 12 hours 30 minutes in all with the tutorial and breaks. Questions come from the JCNDE's Domain of Dentistry, 56 clinical content areas (Diagnosis and Treatment Planning 36%, Oral Health Management 42%, Practice and Profession 22%) and 10 Foundation Knowledge areas. Results are pass or fail; scale scores run from 49 to 99 and 75 is the minimum passing score.",
+    rows: [
+      { label: "Questions", value: "500 multiple choice (300 standalone, 200 case-based)" },
+      { label: "Time", value: "Two days, six 105-minute sections, 12 h 30 min with tutorial and breaks" },
+      { label: "Pass mark", value: "Scale score of 75 (scale 49 to 99), reported pass or fail" },
+      { label: "Content", value: "Diagnosis and Treatment Planning 36%, Oral Health Management 42%, Practice and Profession 22%, across 10 Foundation Knowledge areas" },
+      { label: "Retakes", value: "At least 60 days apart, at most four a year; pass within five years or five attempts" },
+      { label: "Where", value: "Prometric test centers; both days at the same center within 7 days" },
+      { label: "Run by", value: "Joint Commission on National Dental Examinations (JCNDE)" },
+    ],
+    basedOn: "The JCNDE INBDE 2026 Candidate Guide (updated December 15, 2025) and the JCNDE INBDE pages, checked November 2026",
+    source: { name: "JCNDE: INBDE", url: "https://jcnde.ada.org/inbde" },
+  },
   nbdhe: {
     answer:
       "The National Board Dental Hygiene Examination (NBDHE) is the Joint Commission on National Dental Examinations' written board exam for dental hygienists, used by US licensing jurisdictions as part of dental hygiene licensure. It has 350 multiple-choice questions in two sessions: 200 discipline-based questions in 3 hours 30 minutes and 150 case-based questions on 12 to 15 patient cases in 4 hours, about 9 hours in all with breaks. Under the updated specifications scheduled for November 2026, the discipline-based questions are Scientific Basis 56, Clinical Dental Hygiene Services 124 and Research Principles and Community Health 20. Results are pass or fail; scale scores run from 49 to 99 and 75 is the minimum passing score.",
@@ -6307,6 +6414,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Real Estate Agents Act 2008, the Professional Conduct and Client Care Rules 2012 and Real Estate Authority guidance, checked November 2026",
     source: { name: "REA: required criteria and qualifications to work in real estate", url: "https://www.rea.govt.nz/real-estate-professionals/apply-for-your-licence/required-criteria-and-qualifications-to-work-in-real-estate/" },
   },
+  nzsecurity: {
+    answer:
+      "To work as a crowd controller, property guard or personal guard for a security company in New Zealand you need a certificate of approval (COA) from the Private Security Personnel Licensing Authority (PSPLA). Before the COA is granted you must complete the minimum training: NZQA skill standards 40146 (security industry knowledge), 40145 (conflict management theory) and 40147 (conflict management in practice), or the unit standards 27364, 27360 and 27361 they replaced, 12 credits in all. The New Zealand Certificate in Security (Level 3 or 4) also meets it. A temporary COA lets you work for 3 months while you train. Accredited training providers assess each standard as Achieved; no national question count or pass mark is published, so Tigertest's mock tests use an 80% readiness target.",
+    rows: [
+      { label: "Training", value: "NZQA skill standards 40146, 40145 and 40147 (or unit standards 27364, 27360 and 27361), 12 credits" },
+      { label: "Assessment", value: "Set by the training provider, graded Achieved; 40147 is a practical role play" },
+      { label: "Pass mark", value: "None published; 80% is Tigertest's readiness target" },
+      { label: "Approval", value: "Certificate of approval from the PSPLA, under the Private Security Personnel and Private Investigators Act 2010" },
+      { label: "While training", value: "Temporary COA, valid 3 months" },
+      { label: "Renewal", value: "Training is done once and is not repeated at renewal" },
+    ],
+    basedOn: "NZQA skill standards 40146, 40145 and 40147 (version 1, 2024), PSPLA guidance and New Zealand Police, WorkSafe and Privacy Commissioner guidance, checked November 2026",
+    source: { name: "PSPLA: Training & skills", url: "https://www.justice.govt.nz/tribunals/licences-certificates/pspla/training-and-skills/" },
+  },
   aesira: {
     answer:
       "In Dubai, anyone who works as a security guard needs an individual licence from the Security Industry Regulatory Agency (SIRA), under Law No. (12) of 2016. The executive regulation issued in June 2026 requires the applicant to be at least 18, hold valid UAE residence if not a UAE national, know the basics of Arabic or English, be of good conduct, and pass the theoretical and practical tests SIRA approves, usually after a basic course at a SIRA-accredited training centre. SIRA does not publish the written test's length or pass mark; guides say about 60 multiple-choice questions in English or Arabic, with about 70% commonly reported as the pass mark. The licence lasts two years.",
@@ -6368,6 +6489,51 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
     source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
   },
+  smartserve: {
+    answer:
+      "Smart Serve is the responsible alcohol service training approved by the board of the Alcohol and Gaming Commission of Ontario (AGCO) for all liquor licensees and their staff. Ontario requires everyone involved in selling, serving, sampling or delivering liquor, or taking orders for it, and security staff the licensee employs, to hold a valid certificate from an approved course. The Full Course is about four hours online and ends with a proctored final test of 33 multiple-choice questions, taken in one sitting of about 30 minutes, with 80% needed to pass and two attempts included. Certificates must be renewed every five years.",
+    rows: [
+      { label: "Run by", value: "Smart Serve Ontario, approved by the AGCO Board" },
+      { label: "Who needs it", value: "Anyone who sells, serves, samples or delivers liquor in Ontario, and licensee-employed security" },
+      { label: "Final test", value: "33 multiple-choice questions, about 30 minutes, proctored online" },
+      { label: "Pass mark", value: "80%" },
+      { label: "Attempts", value: "2 included with the course" },
+      { label: "Renewal", value: "Every five years (AGCO)" },
+      { label: "Tigertest mock tests", value: "6 x 33 questions, 80% to pass" },
+    ],
+    basedOn: "Smart Serve's Full Course page and the AGCO's training, hours and ID guidance, checked November 2026",
+    source: { name: "Smart Serve: the Full Course", url: "https://smartserve.ca/full-course" },
+  },
+  cabcguard: {
+    answer:
+      "Basic Security Training (BST) is the training standard the BC Registrar of Security Services accepts for a security guard worker licence under the Security Services Act. It is a 40-hour theory course followed by the BST Assessment, a final exam that the Justice Institute of British Columbia (JIBC) runs and invigilates on the registrar's behalf. JIBC's program page lists the exam as 75 questions in 90 minutes with a 70% pass mark (its assessment course page gives a two-hour time limit instead), written at JIBC in New Westminster or by online proctoring for some students outside the Lower Mainland, within six months of the course, with two attempts before the course must be retaken. It tests a guard's legal authority to act and the rule that public and personal safety come first. To be licensed you must be at least 19 and ordinarily resident in Canada, and you apply to the Security Programs Division.",
+    rows: [
+      { label: "Exam", value: "BST Assessment, 75 questions; 90 minutes on JIBC's program page, two hours on its course page" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Course", value: "BST Theory, 40 hours, in person or online" },
+      { label: "Attempts", value: "Two, then the theory course again" },
+      { label: "Run by", value: "Justice Institute of BC, for the Registrar of Security Services" },
+      { label: "Licence", value: "Security guard worker licence, age 19, from the Security Programs Division" },
+      { label: "Tigertest practice tests", value: "4 x 50 questions, 70% to pass" },
+    ],
+    basedOn: "JIBC's Basic Security Training program and assessment pages and the BC Security Programs Division's licensing pages, checked November 2026",
+    source: { name: "JIBC: Basic Security Training", url: "https://www.jibc.ca/program/basic-security-training" },
+  },
+  caairbrake: {
+    answer:
+      "In Ontario you need an air brake (Z) endorsement on your driver's licence to drive a vehicle with an air brake or air-over-hydraulic brake system. The Ministry of Transportation (MTO) offers two routes: an air brake endorsement course from a vehicle fleet owner, community college or safety organization, or tests at a DriveTest centre, an air brake knowledge test followed by a practical test. MTO says its Official Air Brake Handbook contains what you need for the knowledge test. MTO does not publish the number of questions or the pass mark; guides say it is multiple choice with a pass mark of about 80%. Since September 1, 2023, renewals use an online air brake learning module instead of the knowledge test.",
+    rows: [
+      { label: "Run by", value: "Ontario Ministry of Transportation, at DriveTest centres" },
+      { label: "Needed for", value: "Vehicles with air brakes or air-over-hydraulic brakes" },
+      { label: "Tests", value: "Knowledge test, then a practical test (or an approved course)" },
+      { label: "Study guide", value: "The Official Air Brake Handbook (MTO)" },
+      { label: "Pass mark", value: "Not published by MTO; guides say about 80%" },
+      { label: "Renewal", value: "Online learning module; from age 80, module and practical test each year" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 80% target" },
+    ],
+    basedOn: "MTO's Official Air Brake Handbook and its Get a truck driver's licence page, checked November 2026",
+    source: { name: "Ontario: The Official Air Brake Handbook", url: "https://www.ontario.ca/document/official-air-brake-handbook" },
+  },
   iehcap: {
     answer:
       "HCAP, the Hunter Competence Assessment Programme, is Ireland's deer hunter certification run by the Deer Alliance HCAP Assessment Committee. NPWS lists it as one of three approved courses for first-time Deer Hunting Licence applicants, and the Deer Alliance says Coillte requires HCAP or an equivalent for hunting deer on its forests. The first stage is a written multiple-choice test of 50 questions, and you need 40 correct (80%). Candidates who pass go on to a Range Test at 100 metres and then an oral safety examination. The Stalker Training Manual is the core text, and the written test covers deer biology and species, management, rifles and firearms safety, the law and carcase handling.",
@@ -6396,6 +6562,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The Council's Candidates' Handbook for Nursing Council Licensing Examinations (September 2018) and its 2025 RN(G) syllabus, checked November 2026",
     source: { name: "Nursing Council of Hong Kong: Candidates' Handbook", url: "https://www.nchk.org.hk/filemanager/en/pdf/Candidates_Handbook_for_Nursing_Council_Licensing_Exam_eng.pdf" },
+  },
+  cahunteron: {
+    answer:
+      "The Ontario Hunter Education Course exam is the test most Ontario residents must pass before they can buy hunting licences and tags or join the Hunter Apprenticeship Safety Program. The course, run by the Ontario Hunter Education Program for the Ministry of Natural Resources, is taken in person with a certified instructor or online, and ends with an exam. It covers hunting safety and equipment, hunting laws and regulations, hunter responsibilities, wildlife management, hunting techniques and wildlife identification. The ministry publishes no question count or provincial pass mark: the online course (HUNTERcourse.com) requires at least 80% on its final exam, and instructor-led exams are set by the course. Passing it and buying licences lets you hunt with a bow; hunting with a gun also needs a PAL, a minor's licence or proof of passing the Canadian Firearms Safety Course.",
+    rows: [
+      { label: "Run by", value: "Ontario Hunter Education Program, for the Ministry of Natural Resources" },
+      { label: "Formats", value: "In person with a certified instructor, or online and self-paced" },
+      { label: "Topics", value: "Safety and equipment, laws, responsibilities, wildlife management, techniques, wildlife identification" },
+      { label: "Pass mark", value: "No provincial pass mark published; the online course's final exam needs at least 80%, and instructor-led exams are set by the course" },
+      { label: "Question count", value: "Not published by the ministry" },
+      { label: "Needed for", value: "Buying Ontario hunting licences and tags, and the apprentice program (ages 12 to 14)" },
+      { label: "After passing", value: "Register accreditation at ServiceOntario, or online from December 10, 2026" },
+      { label: "Gun hunting", value: "Also needs a PAL, minor's licence or CFSC proof" },
+    ],
+    basedOn: "ontario.ca hunter education page, the Ontario Hunter Education Program site, the ministry's delegated online course (HUNTERcourse.com) and the 2026 Ontario Hunting Regulations Summary, checked November 2026",
+    source: { name: "Ontario: Hunter education", url: "https://www.ontario.ca/page/hunter-education" },
   },
   cacore: {
     answer:

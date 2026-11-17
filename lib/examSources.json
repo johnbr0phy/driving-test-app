@@ -280,6 +280,17 @@
   "https://open.alberta.ca/dataset/387f4e8a-6c0a-456a-ab31-995aadaf1f2b/resource/5babee5c-040d-4e41-981a-04f22e839aac/download/tec-drivers-guide-2026.pdf",
   "https://www.alberta.ca/drivers-knowledge-test"
  ],
+ "caabguard": [
+  "https://www.alberta.ca/security-service-worker-licence",
+  "https://open.alberta.ca/dataset/698c1720-9dbf-44b2-9978-492b2a0f08cc/resource/6604778b-2c73-44bb-9487-3624d7131bd1/download/sched-a-examination-process-handout-january-2015-1.pdf",
+  "https://open.alberta.ca/publications/alberta-basic-security-training-participant-manual-third-edition",
+  "https://kings-printer.alberta.ca/documents/Regs/2010_055.pdf"
+ ],
+ "caairbrake": [
+  "https://www.ontario.ca/document/official-air-brake-handbook",
+  "https://www.ontario.ca/document/print/book/82162",
+  "https://www.ontario.ca/page/get-truck-drivers-licence"
+ ],
  "caauto": [
   "https://red-seal.ca/eng/trades/autoservtech/exam-information.shtml",
   "https://red-seal.ca/eng/trades/autoservtech/exam-weightings.shtml",
@@ -289,6 +300,11 @@
   "https://www.icbc.com/assets/en/4zwylo9j9OaOX2I7Q8Epat/knowledge-test-tip-sheet.pdf",
   "https://www.partners.icbc.com/assets/5s5WTCbPfpQeitI89dtfVN/mv2022.pdf",
   "https://icbc.com/about-icbc/newsroom/2026-06-08-online-knowledge-tests"
+ ],
+ "cabcguard": [
+  "https://www.jibc.ca/program/basic-security-training",
+  "https://www.jibc.ca/course/basic-security-training-theory",
+  "https://jibc.ca/course/basic-security-training-assessment"
  ],
  "cacarp": [
   "https://red-seal.ca/eng/trades/carpenters/exam-weightings.shtml",
@@ -323,7 +339,8 @@
  "cahunteron": [
   "https://www.ontario.ca/page/hunter-education",
   "https://www.ohep.net",
-  "https://www.ontario.ca/document/ontario-hunting-regulations-summary/ontario-hunter-education-course"
+  "https://www.ontario.ca/document/ontario-hunting-regulations-summary/ontario-hunter-education-course",
+  "https://www.ontario.ca/laws/regulation/980665"
  ],
  "camb": [
   "https://www.mpi.mb.ca/en/PDFs/completehandbook.pdf",
@@ -422,6 +439,11 @@
   "https://cdcfib.gov.ng",
   "https://nairametrics.com/2025/11/26/cdcfib-2025-recruitment-over-200000-candidates-fail-computer%e2%80%91based-test",
   "https://arbiterz.com/?p=54640"
+ ],
+ "ceh": [
+  "https://cert.eccouncil.org/wp-content/uploads/2024/04/CEH-Exam-Blueprint-v5.pdf",
+  "https://cert.eccouncil.org/certified-ethical-hacker.html",
+  "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/"
  ],
  "cehrs": [
   "https://www.nhanow.com/docs/default-source/test-plans/nha_cehrs-test-plan.pdf?sfvrsn=ad996ae5_2",
@@ -881,6 +903,16 @@
   "https://cdn.digialm.com/per/g06/pub/32842/EForms/image/CAT2026/CAT_2026_Press_Release_26-07-2026.pdf",
   "https://cdn.digialm.com/per/g06/pub/32842/EForms/image/CAT2026/CAT2026InformationBulletin_26-07-2026_V2.pdf"
  ],
+ "inbde": [
+  "https://jcnde.ada.org/-/media/project/ada-organization/ada/jcnde/files/2026_inbde_candidate_guide.pdf",
+  "https://jcnde.ada.org/-/media/project/ada-organization/ada/jcnde/files/foundation_knowledge_general_dentist.pdf",
+  "https://jcnde.ada.org/inbde/inbde-history"
+ ],
+ "isc2cc": [
+  "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+  "https://www.isc2.org/certifications/cc",
+  "https://www.isc2.org/ethics"
+ ],
  "isee": [
   "https://cdn.erblearn.org/www/20260801_E3n_ISEE_QuickFacts_DIGITAL.pdf",
   "https://www.admission.org/assessments/isee/about",
@@ -1071,6 +1103,11 @@
   "https://www.ncctinc.com/forms-and-documents",
   "https://www.ncctinc.com/Documents/CandidateHandbook.pdf"
  ],
+ "ncpt": [
+  "https://www.ncctinc.com/Documents/NCPT_2025.pdf",
+  "https://www.ncctinc.com/Documents/PT%20Comparison%20to%20previous%20DTP%202025.pdf",
+  "https://www.ncctinc.com/forms-and-documents"
+ ],
  "nda": [
   "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
   "https://www.defenceguru.co.in/assets/uploads/blog_gallery/Notif-NDA-II-2026.pdf",
@@ -1176,6 +1213,11 @@
   "https://drive.govt.nz/learner-licence/doing-the-learner-licence-test",
   "https://drive.govt.nz/learner-licence/preparing-for-and-booking-the-test",
   "https://www.nzta.govt.nz/driver-licences/"
+ ],
+ "nzsecurity": [
+  "https://www.justice.govt.nz/tribunals/licences-certificates/pspla/training-and-skills/",
+  "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/40146.pdf",
+  "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/40145.pdf"
  ],
  "nzsfe": [
   "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Register_as_a_nurse.aspx",
@@ -1328,6 +1370,11 @@
   "https://www.ets.org/pdfs/praxis/5622.pdf",
   "https://praxis.ets.org/test/5622.html"
  ],
+ "prince2": [
+  "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
+  "https://www.peoplecert.org/en/news-and-announcements",
+  "https://www.peoplecert.org/news-and-announcements/PRINCE2_7"
+ ],
  "psat": [
   "https://satsuite.collegeboard.org/psat-nmsqt/whats-on-the-test"
  ],
@@ -1363,6 +1410,11 @@
   "https://punjabpolice.gov.pk/node/22506",
   "https://punjabpolice.gov.pk/system/files/Advertisement%208.1.2025_0.pdf",
   "https://punjabpolice.gov.pk/node/28033"
+ ],
+ "qabaabat": [
+  "https://qababoard.com/pages/job-task-analysis-for-abat-certification/",
+  "https://qababoard.com/pages/?p=8977",
+  "https://qababoard.com/pages/?document=abat-candidate-handbook"
  ],
  "rajpolice": [
   "https://police.rajasthan.gov.in",
@@ -1549,6 +1601,11 @@
  ],
  "sie": [
   "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam"
+ ],
+ "smartserve": [
+  "https://smartserve.ca/",
+  "https://smartserve.ca/full-course",
+  "https://smartserve.ca/certificate-faqs/"
  ],
  "ssat": [
   "https://www.admission.org/help/whats-on-the-middle-level-ssat",

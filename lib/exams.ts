@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory";
+export type ExamId = "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -4519,6 +4519,70 @@ const caguard: ExamConfig = {
   },
 };
 
+const cabcguard: ExamConfig = {
+  id: "cabcguard",
+  stateCode: "CABCGUARD",
+  idBase: 33100,
+  slug: "/bc-security-guard",
+  landingPath: "/bc-security-guard-practice-test",
+  name: "BC Security Guard Practice Test",
+  shortName: "BC Security Guard (BST)",
+  examLabel: "BST exam",
+  fullName: "BC Basic Security Training (BST) exam for a security worker licence",
+  questionIdPrefix: "CABCG-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // British Columbia: the Basic Security Training final exam (BST Assessment) that the Justice
+  // Institute of BC runs and invigilates for the Registrar of Security Services; the training standard
+  // for a security guard worker licence under the Security Services Act. JIBC (read Nov 2026): 75
+  // questions in 90 minutes (the assessment course page says two hours), 70% to pass. JIBC publishes no topic weights; Tigertest's blueprint
+  // weights legal authority most, as the assessment page says: legal system 6, licensing 8, arrest 6,
+  // force 6, trespass and offences 6, conduct and privacy 8, reports 5, personal safety 5.
+  blueprint: {
+    bcgLegal: 6,
+    bcgLicensing: 8,
+    bcgArrest: 6,
+    bcgForce: 6,
+    bcgTrespass: 6,
+    bcgConduct: 8,
+    bcgReports: 5,
+    bcgSafety: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 33101, name: "Legal System & Licensing", categories: ["bcgLegal", "bcgLicensing"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 33102, name: "Arrest & Use of Force", categories: ["bcgArrest", "bcgForce"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 33103, name: "Trespass, Conduct & Privacy", categories: ["bcgTrespass", "bcgConduct"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 33104, name: "Reports & Personal Safety", categories: ["bcgReports", "bcgSafety"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bcgLegal: "The Legal System & Regulator",
+    bcgLicensing: "Security Services Act & Licensing",
+    bcgArrest: "Arrest & Legal Authority",
+    bcgForce: "Use of Force & Equipment",
+    bcgTrespass: "Trespass & Common Offences",
+    bcgConduct: "Code of Conduct & Privacy",
+    bcgReports: "Notes, Reports & Evidence",
+    bcgSafety: "Personal Safety & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your BST progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets over the BST topics: the legal system and licensing, arrest and use of force, trespass, conduct and privacy, and reports and personal safety. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic, 70% to pass",
+    heroSubs: [
+      "Four topic sets, four practice tests. Start with Legal System & Licensing.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Ready for the BST exam.",
+    ],
+    sourceLine: "Based on the Security Services Act and Regulation, the registrar's licence policies, BC's Trespass Act, the Criminal Code, PIPA and WorkSafeBC rules. Original questions; 70% to pass like the real BST exam. Not affiliated with JIBC or the BC government.",
+    analyticsKey: "cabcguard",
+  },
+};
+
 const caauto: ExamConfig = {
   id: "caauto",
   stateCode: "CAAUTO",
@@ -7271,6 +7335,70 @@ const ncma: ExamConfig = {
 // Add "ncma" to the ExamId union and append ncma to EXAMS right after cmaa.
 // IDs: tests 30601-30604, sets 30601-30604 (block 30600 assigned for this run).
 
+const ncpt: ExamConfig = {
+  id: "ncpt",
+  stateCode: "NCPT",
+  idBase: 33600,
+  slug: "/ncpt",
+  landingPath: "/ncpt-practice-test",
+  name: "NCPT Phlebotomy Practice Test",
+  shortName: "NCPT (NCCT)",
+  examLabel: "NCPT exam",
+  fullName: "National Certified Phlebotomy Technician (NCPT) Exam",
+  questionIdPrefix: "NCPT-",
+  icon: "syringe",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NCCT National Certified Phlebotomy Technician (NCPT) Detailed Test Plan, Effective January 2025
+  // (EX-0513, checked November 2026): 100 scored + 25 pretest items in 3 hours. 1 Infection Control
+  // and Safety 15; 2 Preparing for Specimen Collection 25 (A Equipment Selection 12, B Patient and
+  // Site Preparation 13); 3 Specimen Collection 30; 4 Collection Complications and Troubleshooting
+  // 15; 5 Law and Ethics 15. Scaled to 50 per test: 8/6/7/15/7/7, Specimen Collection split into
+  // blood collection 8 and processing, point-of-care and non-blood 7 (Tigertest's split). NCCT
+  // reports a scaled score (200 to 720, 575 to pass, not a percent); 70% here is a readiness marker.
+  // All items original.
+  blueprint: {
+    ncptInfection: 8,
+    ncptEquipment: 6,
+    ncptPatientPrep: 7,
+    ncptCollection: 8,
+    ncptProcessing: 7,
+    ncptComplications: 7,
+    ncptLaw: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 33601, name: "Infection Control & Equipment", categories: ["ncptInfection", "ncptEquipment"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 33602, name: "Patient Prep & Blood Collection", categories: ["ncptPatientPrep", "ncptCollection"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 33603, name: "Processing & Complications", categories: ["ncptProcessing", "ncptComplications"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 33604, name: "Law and Ethics", categories: ["ncptLaw"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ncptInfection: "Infection Control & Safety",
+    ncptEquipment: "Equipment Selection",
+    ncptPatientPrep: "Patient & Site Preparation",
+    ncptCollection: "Blood Collection Procedures",
+    ncptProcessing: "Processing, POCT & Non-Blood",
+    ncptComplications: "Complications & Troubleshooting",
+    ncptLaw: "Law and Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your NCPT progress and track every question you miss",
+    trainingHeading: "Train by NCCT content category",
+    trainingSub: "Four sets covering every content category of the NCCT NCPT test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Infection Control & Equipment.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the NCPT.",
+    ],
+    sourceLine: "Based on the NCCT NCPT detailed test plan (effective January 2025). Original questions; 50 per test, weighted like the real exam. Not affiliated with the National Center for Competency Testing.",
+    analyticsKey: "ncpt",
+  },
+};
+
 const mace: ExamConfig = {
   id: "mace",
   stateCode: "MACE",
@@ -7926,6 +8054,73 @@ const ea1: ExamConfig = {
   },
 };
 // IDs: tests 31401-31404, sets 31401-31405 (block 31400 assigned for this run).
+
+const inbde: ExamConfig = {
+  id: "inbde",
+  stateCode: "INBDE",
+  idBase: 33000,
+  slug: "/inbde",
+  landingPath: "/inbde-practice-test",
+  name: "INBDE Practice Test",
+  shortName: "INBDE",
+  examLabel: "Integrated National Board Dental Examination",
+  fullName: "Integrated National Board Dental Examination (INBDE)",
+  questionIdPrefix: "INBDE-",
+  icon: "tooth",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // JCNDE INBDE 2026 Candidate Guide (updated 12/15/2025): the Domain of Dentistry's 10 Foundation
+  // Knowledge areas, FK totals 12/7/8/11/9/12/11/11/11/10% of items, halved and rounded to 50 per test.
+  // One category per FK area (Tigertest's split); the 56 clinical content areas run through every
+  // category, with about a quarter of items written as "Case:" scenarios. 75% is a readiness line:
+  // the real 75 is a scale score from 49 to 99, not percent correct. All items original.
+  blueprint: {
+    inbdeBiology: 6,
+    inbdePhysChem: 3,
+    inbdeMaterials: 4,
+    inbdeGenetics: 6,
+    inbdeImmunology: 4,
+    inbdePathology: 6,
+    inbdeMicrobiology: 6,
+    inbdePharmacology: 5,
+    inbdeEthics: 5,
+    inbdeResearch: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 33001, name: "Biology, Physics & Materials", categories: ["inbdeBiology", "inbdePhysChem", "inbdeMaterials"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 33002, name: "Development & Host Defense", categories: ["inbdeGenetics", "inbdeImmunology"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 33003, name: "Pathology & Microbiology", categories: ["inbdePathology", "inbdeMicrobiology"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 33004, name: "Pharmacology, Ethics & Research", categories: ["inbdePharmacology", "inbdeEthics", "inbdeResearch"], size: 60, weightLabel: "15 of 50 test questions" },
+  ],
+  categoryLabels: {
+    inbdeBiology: "Structure, Function & Development (FK1)",
+    inbdePhysChem: "Physics & Chemistry of Biology (FK2)",
+    inbdeMaterials: "Materials, Radiology & Technology (FK3)",
+    inbdeGenetics: "Genetic & Developmental Conditions (FK4)",
+    inbdeImmunology: "Immunology & Host Defense (FK5)",
+    inbdePathology: "General & Oral Pathology (FK6)",
+    inbdeMicrobiology: "Microbiology & Infection Control (FK7)",
+    inbdePharmacology: "Pharmacology (FK8)",
+    inbdeEthics: "Behavior, Ethics & Law (FK9)",
+    inbdeResearch: "Research & Informatics (FK10)",
+  },
+  copy: {
+    guestPrompt: "to save your INBDE progress and track every question you miss",
+    trainingHeading: "Practice each Foundation Knowledge area",
+    trainingSub: "Four topic sets built on the JCNDE's ten Foundation Knowledge areas, with written patient cases. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 75% readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Biology, Physics & Materials.",
+      "Master each set, then test yourself.",
+      "Keep going. Every set you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Keep reviewing your misses until your INBDE date.",
+    ],
+    sourceLine: "Based on the JCNDE INBDE Candidate Guide and Domain of Dentistry. Original questions; 50 per test with written patient cases, and the 75% line is Tigertest's. Not affiliated with the JCNDE or the ADA.",
+    analyticsKey: "inbde",
+  },
+};
 
 const sgsnb: ExamConfig = {
   id: "sgsnb",
@@ -21941,6 +22136,139 @@ const iehcap: ExamConfig = {
   },
 };
 
+const caabguard: ExamConfig = {
+  id: "caabguard",
+  stateCode: "CAABGUARD",
+  idBase: 33200,
+  slug: "/alberta-security-guard",
+  landingPath: "/alberta-basic-security-training-practice-test",
+  name: "Alberta Security Guard (ABST) Practice Test",
+  shortName: "Alberta ABST",
+  examLabel: "ABST provincial exam",
+  fullName: "Alberta Basic Security Training provincial exam (security worker licence)",
+  questionIdPrefix: "CAABG-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Alberta: the provincial final exam after the Alberta Basic Security Training course, needed for a
+  // security services worker licence under the Security Services and Investigators Act. alberta.ca and
+  // the Ministry's exam process (Schedule A, 2015) set the pass at 80%; no question count, time or
+  // topic weights are published. Tigertest's blueprint follows the seven modules of the ABST
+  // Participant Manual (3rd ed., 2014), with the law taken from current consolidations: industry and
+  // licensing 9, Charter, arrest, search and trespass 8, use of force 5, patrol 8, communication 6,
+  // notes and evidence 6, alarms and emergencies 5, health and safety 3.
+  blueprint: {
+    abgIndustry: 9,
+    abgLaw: 8,
+    abgForce: 5,
+    abgPatrol: 8,
+    abgComm: 6,
+    abgNotes: 6,
+    abgEmergency: 5,
+    abgSafety: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 33201, name: "Security Industry & Licensing", categories: ["abgIndustry"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 33202, name: "The Law & Use of Force", categories: ["abgLaw", "abgForce"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 33203, name: "Patrol & Communication", categories: ["abgPatrol", "abgComm"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 33204, name: "Notes, Emergencies & Safety", categories: ["abgNotes", "abgEmergency", "abgSafety"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    abgIndustry: "Security Industry, Licensing & Conduct",
+    abgLaw: "The Charter, Arrest, Search & Trespass",
+    abgForce: "Use of Force",
+    abgPatrol: "Observation, Patrol & Access Control",
+    abgComm: "Communication & Interviews",
+    abgNotes: "Notebooks, Reports & Evidence",
+    abgEmergency: "Alarms, Fire & Bomb Threats",
+    abgSafety: "Health & Safety on the Job",
+  },
+  copy: {
+    guestPrompt: "to save your Alberta security exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets over the seven ABST modules: the security industry and licensing, the law and use of force, patrol and communication, and notes, emergencies and safety. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every module, 40 to pass",
+    heroSubs: [
+      "Four topic sets, four mock tests. Start with Security Industry & Licensing.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Ready for the provincial ABST exam.",
+    ],
+    sourceLine: "Based on the Alberta Basic Security Training Participant Manual, the Security Services and Investigators Act and its regulations, the Trespass to Premises Act, the Petty Trespass Act and the Criminal Code. Original questions; the real exam needs 80%. Not affiliated with the Government of Alberta.",
+    analyticsKey: "caabguard",
+  },
+};
+
+const caairbrake: ExamConfig = {
+  id: "caairbrake",
+  stateCode: "CAAIRBRAKE",
+  idBase: 33400,
+  slug: "/ontario-air-brake",
+  landingPath: "/ontario-air-brake-practice-test",
+  name: "Ontario Air Brake Practice Test",
+  shortName: "Ontario Air Brake (Z)",
+  examLabel: "Ontario air brake test",
+  fullName: "Ontario air brake (Z) endorsement knowledge test",
+  questionIdPrefix: "CAAIR-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Ontario: the Z endorsement knowledge test taken at a DriveTest centre for the Ministry of
+  // Transportation (MTO), then a practical test (not modelled). MTO publishes no question count or
+  // pass mark (guides say multiple choice, about 80%, which Tigertest uses as a readiness line) and
+  // no weights: the blueprint follows the chapters of the Official Air Brake Handbook (ontario.ca,
+  // read Nov 2026): braking systems and foundation brakes 5, air supply 7, service brakes 4, spring
+  // brakes 6, trailer brakes 6, demands while driving 5, compliance and component inspection 5,
+  // system operation tests 7, brake adjustment 5.
+  blueprint: {
+    caairBasics: 5,
+    caairSupply: 7,
+    caairService: 4,
+    caairSpring: 6,
+    caairTrailer: 6,
+    caairDriving: 5,
+    caairInspect: 5,
+    caairTests: 7,
+    caairAdjust: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 33401, name: "Brake Systems & Air Supply", categories: ["caairBasics", "caairSupply"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 33402, name: "Service & Spring Brakes", categories: ["caairService", "caairSpring"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 33403, name: "Trailer Brakes & Driving Demands", categories: ["caairTrailer", "caairDriving"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 33404, name: "Inspecting Components & Operation", categories: ["caairInspect", "caairTests"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 33405, name: "Brake Adjustment", categories: ["caairAdjust"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    caairBasics: "Braking Systems & Foundation Brakes",
+    caairSupply: "Air Supply Subsystem",
+    caairService: "Service Brakes & Brake Chambers",
+    caairSpring: "Spring (Parking & Emergency) Brakes",
+    caairTrailer: "Trailer Brake Subsystem",
+    caairDriving: "Demands on Brakes While Driving",
+    caairInspect: "Compliance & Inspecting Components",
+    caairTests: "Testing Air Brake Operation",
+    caairAdjust: "Inspecting Brake Adjustment",
+  },
+  copy: {
+    guestPrompt: "to save your Ontario air brake progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets that follow the Official Air Brake Handbook: brake systems and air supply, service and spring brakes, trailer brakes and driving demands, inspecting components and operation, and brake adjustment. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every chapter, 80% to pass",
+    heroSubs: [
+      "Five topic sets, four mock tests. Start with Brake Systems & Air Supply.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Ready for the air brake knowledge test at DriveTest.",
+    ],
+    sourceLine: "Based on MTO's Official Air Brake Handbook. Original questions; 50 per test, 80% is Tigertest's target (MTO publishes no count or pass mark). Not affiliated with the Ministry of Transportation or DriveTest.",
+    analyticsKey: "caairbrake",
+  },
+};
+
 
 const nzrealestate: ExamConfig = {
   id: "nzrealestate",
@@ -22015,6 +22343,73 @@ const nzrealestate: ExamConfig = {
 };
 
 
+const cahunteron: ExamConfig = {
+  id: "cahunteron",
+  stateCode: "CAHUNTERON",
+  idBase: 32900,
+  slug: "/ontario-hunter",
+  landingPath: "/ontario-hunter-education-practice-test",
+  name: "Ontario Hunter Education Practice Test",
+  shortName: "Ontario Hunter Ed",
+  examLabel: "Ontario hunter education exam",
+  fullName: "Ontario Hunter Education Course exam (Ontario Hunter Education Program)",
+  questionIdPrefix: "CAHON-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Ontario Hunter Education Program (Ministry of Natural Resources; course delivered in person
+  // by certified instructors or online, with an exam). ontario.ca/page/hunter-education and
+  // ohep.net (checked 2026-11-16) list six topic areas: hunting safety and equipment, laws and
+  // regulations, hunter responsibilities, wildlife management, hunting techniques, wildlife
+  // identification. Ontario publishes no question count or topic weights, so the counts are
+  // Tigertest's and lean on the law: Fish and Wildlife Conservation Act, 1997 and O. Reg. 665/98
+  // (Hunting) as consolidated July 1, 2026, plus the 2026 Hunting Regulations Summary. 80% is
+  // the final exam pass mark of the ministry's delegated online course (HUNTERcourse.com,
+  // checked 2026-11-16); instructor-led exams are set by the course. All items original.
+  blueprint: {
+    cahunLicence: 6,
+    cahunTags: 6,
+    cahunRules: 8,
+    cahunEquip: 7,
+    cahunLand: 5,
+    cahunEthics: 5,
+    cahunWildlife: 8,
+    cahunCare: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 32901, name: "Licences, Tags & Reporting", categories: ["cahunLicence", "cahunTags"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 32902, name: "Hunting Rules & Land Access", categories: ["cahunRules", "cahunLand"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 32903, name: "Firearms, Archery & Ethics", categories: ["cahunEquip", "cahunEthics"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 32904, name: "Wildlife & Field Care", categories: ["cahunWildlife", "cahunCare"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cahunLicence: "Licences, Outdoors Card & Apprentices",
+    cahunTags: "Tags, Party Hunting & Reporting",
+    cahunRules: "Hunting Hours, Hunter Orange & Methods",
+    cahunEquip: "Firearms & Archery Rules",
+    cahunLand: "Land Access & Conservation Officers",
+    cahunEthics: "Hunter Ethics & Responsibilities",
+    cahunWildlife: "Wildlife Identification & Management",
+    cahunCare: "Field Care, Health & Outdoor Safety",
+  },
+  copy: {
+    guestPrompt: "to save your Ontario hunter education progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering Ontario's hunting law, safe firearm and bow use, ethics, wildlife and field care. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every course topic",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Licences, Tags & Reporting.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Read the current Hunting Regulations Summary and book your exam.",
+    ],
+    sourceLine: "Based on Ontario's Fish and Wildlife Conservation Act, 1997, the Hunting regulation and the 2026 Hunting Regulations Summary. Original questions. Not affiliated with the Ontario Ministry of Natural Resources or the Ontario Hunter Education Program.",
+    analyticsKey: "cahunteron",
+  },
+};
+
 const chtheory: ExamConfig = {
   id: "chtheory",
   stateCode: "CHTHEORY",
@@ -22082,7 +22477,213 @@ const chtheory: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory];
+const qabaabat: ExamConfig = {
+  id: "qabaabat",
+  stateCode: "QABAABAT",
+  idBase: 32800,
+  slug: "/qaba-abat",
+  landingPath: "/qaba-abat-practice-test",
+  name: "QABA ABAT Practice Test",
+  shortName: "QABA ABAT",
+  examLabel: "ABAT exam",
+  fullName: "QABA Applied Behavior Analysis Technician (ABAT) Certification Exam",
+  questionIdPrefix: "ABAT-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 72,
+  // QABA ABAT Job Analysis Test Specifications (last updated June 2020, reviewed by the QABA Exam
+  // Committee August 2023, read on qababoard.com Nov 2026): 14 domains over 100 scored items (plus 25
+  // unscored pretest items), 2 hours, pass point 72% (ABAT Candidate Handbook, January 2026). Content
+  // follows the ABAT Competency Standards (January 2023) and the QABA Ethical Code of Conduct (March
+  // 2024). Scaled to 50 per test by Tigertest: ASD basics 6 (12%), working with autism 3 (6%), ABA
+  // principles 4 (6%), instructional interventions 3 (6%), DTT 4% + PRT 5% as 4, data 3 (6%),
+  // challenging behaviors 4 (8%), functional analysis 5 (11%), PBS 4 (7%), person-centered planning 5
+  // (10%), philosophy, values and advocacy 4 (9%), legal and ethical 5% + education, training and
+  // self-development 5% as 5. All items original.
+  blueprint: {
+    abatAsd: 6,
+    abatWorking: 3,
+    abatPrinciples: 4,
+    abatInstruct: 3,
+    abatDttPrt: 4,
+    abatData: 3,
+    abatChallenging: 4,
+    abatFunction: 5,
+    abatPbs: 4,
+    abatPcp: 5,
+    abatValues: 4,
+    abatEthics: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 32801, name: "Autism & ABA Principles", categories: ["abatAsd", "abatWorking", "abatPrinciples"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 32802, name: "Teaching, DTT, PRT & Data", categories: ["abatInstruct", "abatDttPrt", "abatData"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 32803, name: "Function & Behavior Support", categories: ["abatChallenging", "abatFunction", "abatPbs"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 32804, name: "Planning, Values & Ethics", categories: ["abatPcp", "abatValues", "abatEthics"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    abatAsd: "Autism Spectrum Disorder Basics",
+    abatWorking: "Working with Autism Effectively",
+    abatPrinciples: "Principles of ABA",
+    abatInstruct: "Instructional Interventions",
+    abatDttPrt: "Discrete Trial Training & PRT",
+    abatData: "Data Collection & Analysis",
+    abatChallenging: "Treating Challenging Behaviors",
+    abatFunction: "Functional Analysis",
+    abatPbs: "Positive Behavior Support",
+    abatPcp: "Person-Centered Planning",
+    abatValues: "Philosophy, Values & Advocacy",
+    abatEthics: "Legal, Ethical & Professional Development",
+  },
+  copy: {
+    guestPrompt: "to save your ABAT progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets over all 14 domains of QABA's ABAT test specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Autism & ABA Principles.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the ABAT exam.",
+    ],
+    sourceLine: "Based on QABA's ABAT test specifications, the ABAT Competency Standards and the QABA Ethical Code of Conduct. Original questions; 50 per test, 72% to pass like the real exam. Not affiliated with QABA.",
+    analyticsKey: "qabaabat",
+  },
+};
+
+const nzsecurity: ExamConfig = {
+  id: "nzsecurity",
+  stateCode: "NZSECURITY",
+  idBase: 33500,
+  slug: "/nz-security-guard",
+  landingPath: "/nz-security-guard-practice-test",
+  name: "NZ Security Guard Practice Test",
+  shortName: "NZ Security Guard",
+  examLabel: "NZ security guard assessments",
+  fullName: "New Zealand security guard certificate of approval training (NZQA skill standards 40146, 40145, 40147)",
+  questionIdPrefix: "NZSEC-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // New Zealand: the minimum training the PSPLA requires before a crowd controller, property guard or
+  // personal guard certificate of approval, NZQA skill standards 40146 (security industry knowledge),
+  // 40145 (conflict management theory) and 40147 (conflict management practice), v1 registered August
+  // 2024, which replaced unit standards 27364, 27360 and 27361. Each is graded Achieved by the
+  // provider; no national question count or pass mark, so 50 questions and 80% are Tigertest's
+  // readiness target. Per test, Tigertest's split along the standards' outcomes: 40146 licensing 6,
+  // force and arrest 7, trespass, entry and ID 7, health and safety 6, incidents and emergencies 6,
+  // reporting and privacy 6 (38); 40145 and 40147 conflict theory 7, communication 5 (12).
+  blueprint: {
+    nzsecLicensing: 6,
+    nzsecForce: 7,
+    nzsecEntry: 7,
+    nzsecSafety: 6,
+    nzsecIncidents: 6,
+    nzsecReporting: 6,
+    nzsecConflict: 7,
+    nzsecComms: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 33501, name: "Licensing, the Law & Use of Force", categories: ["nzsecLicensing", "nzsecForce"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 33502, name: "Trespass, Entry & Reporting", categories: ["nzsecEntry", "nzsecReporting"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 33503, name: "Health, Safety & Emergencies", categories: ["nzsecSafety", "nzsecIncidents"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 33504, name: "Conflict Management", categories: ["nzsecConflict", "nzsecComms"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nzsecLicensing: "PSPLA Licensing & the Act",
+    nzsecForce: "Use of Force, Arrest & Detention",
+    nzsecEntry: "Trespass, Entry, Searching & ID",
+    nzsecSafety: "Health & Safety at Work",
+    nzsecIncidents: "Incidents & Emergencies",
+    nzsecReporting: "Reporting, Radio & Privacy",
+    nzsecConflict: "Conflict Theory & Tactical Options",
+    nzsecComms: "Communication & Customer Service",
+  },
+  copy: {
+    guestPrompt: "to save your security guard progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets across the guard training standards: licensing, the law and use of force, trespass, entry and reporting, health, safety and emergencies, and conflict management. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 80% readiness line",
+    heroSubs: [
+      "Four training sets, four mock tests. Start with Licensing, the Law & Use of Force.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. You're ready for your security guard assessments.",
+    ],
+    sourceLine: "Based on NZQA skill standards 40146, 40145 and 40147, PSPLA guidance and New Zealand law as of November 2026. Original questions; 50 per test, 80% is Tigertest's readiness target. Not affiliated with the PSPLA, NZQA or any training provider.",
+    analyticsKey: "nzsecurity",
+  },
+};
+
+const smartserve: ExamConfig = {
+  id: "smartserve",
+  stateCode: "SMARTSERVE",
+  idBase: 33300,
+  slug: "/smart-serve",
+  landingPath: "/smart-serve-practice-test",
+  name: "Smart Serve Ontario Practice Test",
+  shortName: "Smart Serve",
+  examLabel: "Smart Serve test",
+  fullName: "Smart Serve Ontario responsible alcohol service certification",
+  questionIdPrefix: "SMSV-",
+  icon: "wine",
+  testCount: 6,
+  questionsPerTest: 33,
+  passPct: 80,
+  // Ontario: Smart Serve, the AGCO Board-approved responsible service program everyone who sells,
+  // serves, samples or delivers liquor needs (Registrar's Interim Standard 4.1). The Full Course
+  // final test is 33 randomly generated multiple-choice questions in about 30 minutes, 80% to pass,
+  // two attempts (smartserve.ca, read Nov 2026). No topic weights are published: Tigertest's split
+  // follows what the AGCO tells licensees and staff: law and the AGCO 5, age and ID 6, alcohol and
+  // the body 5, recognizing intoxication 6, preventing intoxication and refusing service 6, hours and
+  // liquor on the premises 3, retail, delivery and events 2. Six real-length tests; each pool is 6x
+  // its count, plus one training-only spare in law and in retail.
+  blueprint: {
+    ssvLaw: 5,
+    ssvAge: 6,
+    ssvAlcohol: 5,
+    ssvIntox: 6,
+    ssvService: 6,
+    ssvHours: 3,
+    ssvRetail: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 33301, name: "Liquor Law & Service Hours", categories: ["ssvLaw", "ssvHours"], size: 49, weightLabel: "8 of 33 test questions" },
+    { setNumber: 2, id: 33302, name: "Legal Age, ID & Retail Sales", categories: ["ssvAge", "ssvRetail"], size: 49, weightLabel: "8 of 33 test questions" },
+    { setNumber: 3, id: 33303, name: "Alcohol & the Body", categories: ["ssvAlcohol"], size: 30, weightLabel: "5 of 33 test questions" },
+    { setNumber: 4, id: 33304, name: "Recognizing Intoxication", categories: ["ssvIntox"], size: 36, weightLabel: "6 of 33 test questions" },
+    { setNumber: 5, id: 33305, name: "Preventing & Refusing Service", categories: ["ssvService"], size: 36, weightLabel: "6 of 33 test questions" },
+  ],
+  categoryLabels: {
+    ssvLaw: "Liquor Law, the AGCO & Liability",
+    ssvAge: "Legal Age & Checking ID",
+    ssvAlcohol: "Alcohol & the Body",
+    ssvIntox: "Recognizing Intoxication",
+    ssvService: "Preventing Intoxication & Refusing Service",
+    ssvHours: "Hours & Liquor on the Premises",
+    ssvRetail: "Retail, Delivery & Events",
+  },
+  copy: {
+    guestPrompt: "to save your Smart Serve progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on Ontario's liquor rules: the law and service hours, legal age and ID, alcohol and the body, recognizing intoxication, and preventing it and refusing service. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 33 questions like the real test, 80% to pass",
+    heroSubs: [
+      "Five topic sets, six real-length mock tests. Start with Liquor Law & Service Hours.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Ready for your Smart Serve test.",
+    ],
+    sourceLine: "Based on Ontario's Liquor Licence and Control Act, 2019, its regulations and the AGCO's guidance for licensees. Original questions; 33 per test, 80% to pass like the real final test. Not affiliated with Smart Serve Ontario or the AGCO.",
+    analyticsKey: "smartserve",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

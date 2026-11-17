@@ -597,6 +597,14 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(249, 45%, 22%)",
     "tint": "hsl(249, 45%, 96%)"
   },
+  "prince2": {
+    "color": "hsl(262, 35%, 20%)",
+    "tint": "hsl(262, 35%, 96%)"
+  },
+  "isc2cc": {
+    "color": "hsl(203, 85%, 16%)",
+    "tint": "hsl(203, 85%, 96%)"
+  },
   "ccna": {
     "color": "hsl(191, 45%, 30%)",
     "tint": "hsl(191, 70%, 96%)"
@@ -1141,6 +1149,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(80, 40%, 20%)",
     "tint": "hsl(80, 40%, 95%)"
   },
+  "inbde": {
+    "color": "hsl(194, 75%, 16%)",
+    "tint": "hsl(194, 45%, 95%)"
+  },
   "sgsnb": {
     "color": "hsl(320, 55%, 20%)",
     "tint": "hsl(320, 40%, 95%)"
@@ -1189,12 +1201,32 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(170, 20%, 38%)",
     "tint": "hsl(170, 30%, 95%)"
   },
+  "nzsecurity": {
+    "color": "hsl(250, 65%, 16%)",
+    "tint": "hsl(250, 80%, 96%)"
+  },
+  "caairbrake": {
+    "color": "hsl(48, 15%, 38%)",
+    "tint": "hsl(48, 15%, 95%)"
+  },
   "iehcap": {
     "color": "hsl(148, 90%, 32%)",
     "tint": "hsl(148, 70%, 96%)"
   },
+  "cahunteron": {
+    "color": "hsl(21, 85%, 20%)",
+    "tint": "hsl(21, 60%, 96%)"
+  },
   "chtheory": {
     "color": "hsl(357, 100%, 22%)",
     "tint": "hsl(357, 80%, 96%)"
+  },
+  "smartserve": {
+    "color": "hsl(340, 55%, 16%)",
+    "tint": "hsl(340, 40%, 95%)"
+  },
+  "cabcguard": {
+    "color": "hsl(239, 15%, 18%)",
+    "tint": "hsl(239, 20%, 96%)"
   }
 };

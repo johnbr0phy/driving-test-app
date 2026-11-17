@@ -1,0 +1,29 @@
+{
+  "id": "qabaabat",
+  "engine": "v1",
+  "stateCode": "QABAABAT",
+  "idBase": 32800,
+  "prefix": "ABAT-",
+  "slug": "/qaba-abat",
+  "landingPath": "/qaba-abat-practice-test",
+  "dataFile": "data/qaba-abat-questions.json",
+  "name": "QABA ABAT Practice Test",
+  "shortName": "QABA ABAT",
+  "icon": "target",
+  "passPct": 72,
+  "region": "US",
+  "categories": [
+    {"key": "abatAsd", "perTest": 6, "segment": "ASD"},
+    {"key": "abatWorking", "perTest": 3, "segment": "WRK"},
+    {"key": "abatPrinciples", "perTest": 4, "segment": "PRI"},
+    {"key": "abatInstruct", "perTest": 3, "segment": "INS"},
+    {"key": "abatDttPrt", "perTest": 4, "segment": "DTP"},
+    {"key": "abatData", "perTest": 3, "segment": "DAT"},
+    {"key": "abatChallenging", "perTest": 4, "segment": "CHB"},
+    {"key": "abatFunction", "perTest": 5, "segment": "FUN"},
+    {"key": "abatPbs", "perTest": 4, "segment": "PBS"},
+    {"key": "abatPcp", "perTest": 5, "segment": "PCP"},
+    {"key": "abatValues", "perTest": 4, "segment": "VAL"},
+    {"key": "abatEthics", "perTest": 5, "segment": "ETH"}
+  ]
+}

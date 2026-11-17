@@ -4210,6 +4210,20 @@
     --brand-gradient-to: 40 80% 95%;
   }
 
+  /* JCNDE Integrated National Board Dental Examination theme */
+  [data-theme="inbde"] {
+    --brand: 194 75% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 194 45% 95%;
+    --brand-hover: 194 75% 12%;
+    --brand-dark: 194 75% 10%;
+    --brand-darker: 194 70% 7%;
+    --brand-muted: 194 20% 66%;
+    --brand-border: 194 22% 78%;
+    --brand-border-light: 194 15% 88%;
+    --brand-gradient-to: 209 45% 95%;
+  }
+
   /* Nursing Council of New Zealand State Final Examination theme */
   [data-theme="sgsnb"] {
     --brand: 320 55% 20%;
@@ -4966,6 +4980,19 @@
     --brand-gradient-to: 30 50% 95%;
   }
 
+  [data-theme="ncpt"] {
+    --brand: 357 15% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 357 45% 95%;
+    --brand-hover: 357 15% 14%;
+    --brand-dark: 357 15% 12%;
+    --brand-darker: 357 12% 8%;
+    --brand-muted: 357 20% 68%;
+    --brand-border: 357 25% 78%;
+    --brand-border-light: 357 25% 88%;
+    --brand-gradient-to: 12 45% 95%;
+  }
+
   [data-theme="mace"] {
     --brand: 300 45% 22%;
     --brand-foreground: 0 0% 100%;
@@ -5046,6 +5073,33 @@
     --brand-gradient-to: 210 40% 95%;
   }
 
+  /* EC-Council CEH v13 theme: deep hacker green (v2 exam; matches lib/v2/exams/ceh.ts theme) */
+  [data-theme="ceh"] {
+    --brand: 137 85% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 137 45% 96%;
+    --brand-hover: 137 85% 15%;
+    --brand-dark: 137 85% 13%;
+    --brand-darker: 137 80% 9%;
+    --brand-muted: 137 30% 70%;
+    --brand-border: 137 30% 80%;
+    --brand-border-light: 137 25% 89%;
+    --brand-gradient-to: 160 40% 95%;
+  }
+  /* ISC2 Certified in Cybersecurity (CC) theme: deep navy blue (v2 exam; matches lib/v2/exams/isc2cc.ts theme) */
+  [data-theme="isc2cc"] {
+    --brand: 203 85% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 203 85% 96%;
+    --brand-hover: 203 85% 13%;
+    --brand-dark: 203 85% 11%;
+    --brand-darker: 203 82% 7%;
+    --brand-muted: 203 30% 70%;
+    --brand-border: 203 30% 80%;
+    --brand-border-light: 203 25% 89%;
+    --brand-gradient-to: 210 40% 95%;
+  }
+
   /* Microsoft SC-900 theme: deep slate indigo (v2 exam; matches lib/v2/exams/sc900.ts theme) */
   [data-theme="sc900"] {
     --brand: 241 15% 26%;
@@ -5057,6 +5111,20 @@
     --brand-muted: 241 10% 70%;
     --brand-border: 241 10% 80%;
     --brand-border-light: 241 10% 89%;
+    --brand-gradient-to: 210 40% 95%;
+  }
+
+  /* PRINCE2 7 Foundation theme: deep violet (v2 exam; matches lib/v2/exams/prince2.ts theme) */
+  [data-theme="prince2"] {
+    --brand: 262 35% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 262 35% 96%;
+    --brand-hover: 262 35% 16%;
+    --brand-dark: 262 35% 14%;
+    --brand-darker: 262 32% 10%;
+    --brand-muted: 262 18% 70%;
+    --brand-border: 262 18% 80%;
+    --brand-border-light: 262 16% 89%;
     --brand-gradient-to: 210 40% 95%;
   }
 
@@ -5776,6 +5844,32 @@
     --brand-gradient-to: 345 60% 96%;
   }
 
+  /* BC Basic Security Training (security guard) theme: deep slate navy */
+  [data-theme="cabcguard"] {
+    --brand: 239 15% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 239 20% 95%;
+    --brand-hover: 239 15% 14%;
+    --brand-dark: 239 15% 12%;
+    --brand-darker: 239 15% 7%;
+    --brand-muted: 239 10% 62%;
+    --brand-border: 239 12% 76%;
+    --brand-border-light: 239 12% 88%;
+    --brand-gradient-to: 241 20% 95%;
+  }
+  /* Alberta ABST security worker exam theme: very dark muted red-brown */
+  [data-theme="caabguard"] {
+    --brand: 6 15% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 6 30% 96%;
+    --brand-hover: 6 15% 14%;
+    --brand-dark: 6 15% 12%;
+    --brand-darker: 6 15% 8%;
+    --brand-muted: 6 12% 62%;
+    --brand-border: 6 15% 78%;
+    --brand-border-light: 6 20% 88%;
+    --brand-gradient-to: 6 30% 93%;
+  }
   /* HCAP (Ireland deer hunter competence) theme: emerald green */
   [data-theme="iehcap"] {
     --brand: 148 90% 32%;
@@ -5788,6 +5882,32 @@
     --brand-border: 148 30% 78%;
     --brand-border-light: 148 25% 88%;
     --brand-gradient-to: 150 70% 95%;
+  }
+  /* Ontario Hunter Education theme: deep russet brown */
+  [data-theme="cahunteron"] {
+    --brand: 21 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 21 50% 95%;
+    --brand-hover: 21 85% 16%;
+    --brand-dark: 21 85% 15%;
+    --brand-darker: 21 75% 10%;
+    --brand-muted: 21 25% 70%;
+    --brand-border: 21 30% 78%;
+    --brand-border-light: 21 25% 88%;
+    --brand-gradient-to: 30 40% 95%;
+  }
+  /* Ontario air brake (Z) theme: muted brass (48 at 15% so it sits clear of the golds) */
+  [data-theme="caairbrake"] {
+    --brand: 48 15% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 48 15% 95%;
+    --brand-hover: 48 15% 34%;
+    --brand-dark: 48 15% 31%;
+    --brand-darker: 48 15% 25%;
+    --brand-muted: 48 15% 70%;
+    --brand-border: 48 15% 76%;
+    --brand-border-light: 48 15% 88%;
+    --brand-gradient-to: 60 15% 95%;
   }
   /* Dubai RERA real estate broker exam theme: deep leaf green (the only free hue under the clash rule) */
   [data-theme="aerera"] {
@@ -5816,6 +5936,19 @@
     --brand-gradient-to: 100 25% 95%;
   }
   /* Switzerland driving theory theme: deep crimson (Swiss red hues are all taken, so dark and saturated) */
+  [data-theme="nzsecurity"] {
+    --brand: 250 65% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 250 80% 96%;
+    --brand-hover: 250 65% 12%;
+    --brand-dark: 250 65% 11%;
+    --brand-darker: 250 65% 6%;
+    --brand-muted: 250 30% 70%;
+    --brand-border: 250 35% 80%;
+    --brand-border-light: 250 30% 90%;
+    --brand-gradient-to: 263 60% 96%;
+  }
+
   [data-theme="chtheory"] {
     --brand: 357 100% 22%;
     --brand-foreground: 0 0% 100%;
@@ -5827,6 +5960,32 @@
     --brand-border: 357 35% 80%;
     --brand-border-light: 357 30% 90%;
     --brand-gradient-to: 10 60% 96%;
+  }
+  /* Smart Serve Ontario theme: deep wine (340 at 16% so it sits clear of the LCQ raspberry) */
+  [data-theme="smartserve"] {
+    --brand: 340 55% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 40% 95%;
+    --brand-hover: 340 55% 12%;
+    --brand-dark: 340 55% 11%;
+    --brand-darker: 340 50% 8%;
+    --brand-muted: 340 20% 66%;
+    --brand-border: 340 22% 78%;
+    --brand-border-light: 340 15% 88%;
+    --brand-gradient-to: 350 40% 95%;
+  }
+
+  [data-theme="qabaabat"] {
+    --brand: 193 15% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 193 30% 95%;
+    --brand-hover: 193 15% 25%;
+    --brand-dark: 193 15% 21%;
+    --brand-darker: 193 15% 15%;
+    --brand-muted: 193 12% 70%;
+    --brand-border: 193 15% 78%;
+    --brand-border-light: 193 15% 88%;
+    --brand-gradient-to: 208 30% 95%;
   }
 
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
@@ -9400,6 +9559,17 @@
     --brand-darker: 80 40% 78%;
   }
 
+  .dark [data-theme="inbde"] {
+    --brand: 194 75% 50%;
+    --brand-hover: 194 75% 42%;
+    --brand-light: 194 45% 13%;
+    --brand-gradient-to: 209 45% 11%;
+    --brand-border-light: 194 15% 24%;
+    --brand-border: 194 22% 34%;
+    --brand-muted: 194 20% 45%;
+    --brand-dark: 194 75% 65%;
+    --brand-darker: 194 70% 78%;
+  }
   .dark [data-theme="sgsnb"] {
     --brand: 320 55% 50%;
     --brand-hover: 320 55% 42%;
@@ -10052,6 +10222,18 @@
     --brand-darker: 15 15% 78%;
   }
 
+  .dark [data-theme="ncpt"] {
+    --brand: 357 15% 49.6%;
+    --brand-hover: 357 15% 41.6%;
+    --brand-light: 357 45% 13%;
+    --brand-gradient-to: 12 40% 11%;
+    --brand-border-light: 357 25% 24%;
+    --brand-border: 357 25% 34%;
+    --brand-muted: 357 20% 45%;
+    --brand-dark: 357 15% 65%;
+    --brand-darker: 357 12% 78%;
+  }
+
   .dark [data-theme="mace"] {
     --brand: 300 45% 49.5%;
     --brand-hover: 300 45% 41.5%;
@@ -10124,6 +10306,29 @@
     --brand-darker: 249 42% 78%;
   }
 
+  .dark [data-theme="ceh"] {
+    --brand: 137 85% 28.7%;
+    --brand-hover: 137 85% 20.7%;
+    --brand-light: 137 45% 13%;
+    --brand-gradient-to: 160 40% 11%;
+    --brand-border-light: 137 25% 24%;
+    --brand-border: 137 30% 34%;
+    --brand-muted: 137 30% 45%;
+    --brand-dark: 137 85% 65%;
+    --brand-darker: 137 80% 78%;
+}
+  .dark [data-theme="isc2cc"] {
+    --brand: 203 85% 40%;
+    --brand-hover: 203 85% 32%;
+    --brand-light: 203 45% 13%;
+    --brand-gradient-to: 210 40% 11%;
+    --brand-border-light: 203 25% 24%;
+    --brand-border: 203 30% 34%;
+    --brand-muted: 203 30% 45%;
+    --brand-dark: 203 85% 65%;
+    --brand-darker: 203 82% 78%;
+  }
+
   .dark [data-theme="sc900"] {
     --brand: 241 15% 50%;
     --brand-hover: 241 15% 42%;
@@ -10134,6 +10339,18 @@
     --brand-muted: 241 10% 45%;
     --brand-dark: 241 15% 65%;
     --brand-darker: 241 15% 78%;
+  }
+
+  .dark [data-theme="prince2"] {
+    --brand: 262 35% 50%;
+    --brand-hover: 262 35% 42%;
+    --brand-light: 262 35% 13%;
+    --brand-gradient-to: 210 40% 11%;
+    --brand-border-light: 262 16% 24%;
+    --brand-border: 262 18% 34%;
+    --brand-muted: 262 18% 45%;
+    --brand-dark: 262 35% 65%;
+    --brand-darker: 262 32% 78%;
   }
 
   .dark [data-theme="cpatcp"] {
@@ -10758,6 +10975,28 @@
     --brand-darker: 136 50% 78%;
   }
 
+  .dark [data-theme="cabcguard"] {
+    --brand: 239 15% 50%;
+    --brand-hover: 239 15% 42%;
+    --brand-light: 239 20% 13%;
+    --brand-gradient-to: 241 20% 11%;
+    --brand-border-light: 239 12% 24%;
+    --brand-border: 239 12% 34%;
+    --brand-muted: 239 10% 45%;
+    --brand-dark: 239 15% 65%;
+    --brand-darker: 239 15% 78%;
+}
+  .dark [data-theme="caabguard"] {
+    --brand: 6 15% 48.6%;
+    --brand-hover: 6 15% 40.6%;
+    --brand-light: 6 30% 13%;
+    --brand-gradient-to: 6 30% 11%;
+    --brand-border-light: 6 20% 24%;
+    --brand-border: 6 15% 34%;
+    --brand-muted: 6 12% 45%;
+    --brand-dark: 6 15% 65%;
+    --brand-darker: 6 15% 78%;
+  }
   .dark [data-theme="iehcap"] {
     --brand-light: 148 45% 13%;
     --brand-gradient-to: 150 40% 11%;
@@ -10766,6 +11005,28 @@
     --brand-muted: 148 25% 45%;
     --brand-dark: 148 90% 65%;
     --brand-darker: 148 85% 78%;
+  }
+  .dark [data-theme="cahunteron"] {
+    --brand: 21 85% 42%;
+    --brand-hover: 21 85% 34%;
+    --brand-light: 21 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 21 25% 24%;
+    --brand-border: 21 30% 34%;
+    --brand-muted: 21 25% 45%;
+    --brand-dark: 21 85% 65%;
+    --brand-darker: 21 75% 78%;
+}
+  .dark [data-theme="caairbrake"] {
+    --brand: 48 15% 42.2%;
+    --brand-hover: 48 15% 34.2%;
+    --brand-light: 48 15% 13%;
+    --brand-gradient-to: 60 15% 11%;
+    --brand-border-light: 48 15% 24%;
+    --brand-border: 48 15% 34%;
+    --brand-muted: 48 15% 45%;
+    --brand-dark: 48 15% 65%;
+    --brand-darker: 48 15% 78%;
   }
   .dark [data-theme="aerera"] {
     --brand: 94 60% 32%;
@@ -10789,6 +11050,18 @@
     --brand-dark: 28 25% 65%;
     --brand-darker: 28 25% 78%;
   }
+  .dark [data-theme="nzsecurity"] {
+    --brand: 250 65% 50%;
+    --brand-hover: 250 65% 42%;
+    --brand-light: 250 45% 13%;
+    --brand-gradient-to: 263 40% 11%;
+    --brand-border-light: 250 30% 24%;
+    --brand-border: 250 35% 34%;
+    --brand-muted: 250 30% 45%;
+    --brand-dark: 250 65% 66%;
+    --brand-darker: 250 65% 78%;
+  }
+
   .dark [data-theme="chtheory"] {
     --brand: 357 100% 46.2%;
     --brand-hover: 357 100% 38.2%;
@@ -10799,6 +11072,29 @@
     --brand-muted: 357 30% 45%;
     --brand-dark: 357 100% 65%;
     --brand-darker: 357 100% 78%;
+  }
+  .dark [data-theme="smartserve"] {
+    --brand: 340 55% 50%;
+    --brand-hover: 340 55% 42%;
+    --brand-light: 340 40% 13%;
+    --brand-gradient-to: 350 40% 11%;
+    --brand-border-light: 340 15% 24%;
+    --brand-border: 340 22% 34%;
+    --brand-muted: 340 20% 45%;
+    --brand-dark: 340 55% 65%;
+    --brand-darker: 340 50% 78%;
+  }
+
+  .dark [data-theme="qabaabat"] {
+    --brand: 193 15% 43.9%;
+    --brand-hover: 193 15% 35.9%;
+    --brand-light: 193 30% 13%;
+    --brand-gradient-to: 208 30% 11%;
+    --brand-border-light: 193 15% 24%;
+    --brand-border: 193 15% 34%;
+    --brand-muted: 193 12% 45%;
+    --brand-dark: 193 15% 65%;
+    --brand-darker: 193 15% 78%;
   }
 
 }

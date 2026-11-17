@@ -93,7 +93,7 @@ ITEMS = [
       "A child's explanation shows the strategy and any misconception behind an answer, which a score or a time cannot show.",
     ),
     S(2, 2, "Language of mathematics", "Before using the word 'perimeter', a teacher asks children to walk around the edge of the playground. This helps them",
-      ["build meaning for the term through experience",
+      ["build meaning for the term from experience",
        "memorise the spelling of a new and difficult word",
        "finish the chapter on measurement quickly",
        "practise addition of large numbers"],

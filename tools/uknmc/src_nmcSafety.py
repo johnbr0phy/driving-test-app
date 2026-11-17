@@ -57,7 +57,7 @@ ITEMS = [
      ["Plan, do, study, act", "Prepare, deliver, sign, audit", "Prevent, detect, stop, adapt", "Plan, decide, solve, assess"],
      "PDSA cycles test small changes quickly: plan the change, do it, study the results and act on what was learned."),
     ("S", 2, 2, "Infection control", "There is a spill of blood on the floor of the ward. How should it be managed?",
-     ["Wear PPE and use a chlorine-releasing agent at the strength in local policy", "Wipe it up with paper towels and leave the floor to dry", "Cover it with a sheet until the domestic staff arrive", "Mop it with hot water and general-purpose detergent only, then leave it to dry"],
+     ["Wear PPE and use a chlorine-releasing agent at the strength the trust sets", "Wipe it up with paper towels and leave the floor to dry", "Cover it with a sheet until the domestic staff arrive", "Mop it with hot water and general-purpose detergent only, then leave it to dry"],
      "Blood spills are managed with PPE and a chlorine-releasing agent, often granules or a 10,000 ppm solution, according to the national infection prevention and control manual and local policy."),
     ("S", 2, 1, "Medicines safety", "At what temperature range should a ward medicines fridge be kept?",
      ["2°C to 8°C", "0°C to 4°C", "8°C to 15°C", "15°C to 25°C"],

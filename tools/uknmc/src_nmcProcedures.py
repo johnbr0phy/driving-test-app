@@ -38,7 +38,7 @@ ITEMS = [
      ["At least every 6 months", "At least every 2 years", "At least every 5 years", "Only when it breaks down"],
      "Lifting equipment used for people must have a thorough examination by a competent person at least every 6 months. Staff also check the hoist and sling before each use."),
     ("S", 2, 2, "Care after death", "What should guide care of a patient's body after death?",
-     ["The person's and family's cultural and religious wishes, and local policy", "Speed, so that the bed can be ready for the next patient as quickly as possible", "The nurse's own beliefs about the right way to do it", "A fixed routine that is the same for everyone"],
+     ["The person's and family's cultural and religious wishes, and local policy", "Speed, so that the bed can be ready for the next patient as quickly as possible", "The nurse's own beliefs about the right way to do it", "A fixed local routine that is the same for everyone"],
      "Personalised care after death respects the person's beliefs and the family's wishes, within legal and infection control requirements."),
     ("S", 2, 1, "Specimen collection", "How should a midstream urine sample be collected?",
      ["Pass the first part into the toilet, then collect the middle part", "Collect the first urine passed in the morning straight into the pot", "Collect urine from the catheter drainage bag", "Collect the last part of the stream after most has been passed"],

@@ -15,7 +15,7 @@ SPELL = "Select the word that is spelled incorrectly."
 # ---------------------------------------------------------------- Test 1
 
 S(IDEAS, 1, "Topic sentence", 2, "Read the paragraph. Which sentence would make the best opening sentence?",
-  ["The Northside food bank relies on help from the whole community.", "Many families across Canada use food banks every month.", "Students from two high schools run a food drive in December.", "Grocery stores throw away far too much food every week."],
+  ["The Northside food bank relies on help from the whole community.", "Many families across Canada use food banks every month.", "Students from two high schools help run a food drive in December.", "Grocery stores throw away far too much food every week."],
   "An opening sentence should cover everything the paragraph goes on to say: volunteers, grocery stores and students all helping one food bank. The student food drive is only one of the details.",
   basics="topicSentences",
   passage=OPEN + " Volunteers sort donations every Saturday morning. Local grocery stores give food that is close to its best-before date. Students from two high schools run a canned food drive each December.")
@@ -187,7 +187,7 @@ S(IDEAS, 0, "Supporting reason", 2, "A student writes: \"Our school should offer
   "A reason explains why the class matters, and needing to feed yourself soon does that. The others describe classes, rooms or the writer's hobby.",
   basics="addingSentence")
 S(IDEAS, 0, "Main idea", 2, "Read the paragraph. Which sentence best states its main idea?",
-  ["Buying food from nearby farms helps both students and farmers.", "Apples are the most popular food in the school cafeteria.", "Trucks carry food long distances across the country.", "Farmers need more customers to stay in business."],
+  ["Buying food from nearby farms helps both students and farmers.", "Apples are the most popular food in the school cafeteria.", "Trucks carry food long distances across the country.", "Farmers need more customers to help them stay in business."],
   "The paragraph gives benefits for students (fresher food that tastes better) and for farmers (steady sales). The apple detail is one example, not the main idea.",
   basics="topicSentences",
   passage="Our school cafeteria now buys apples, potatoes and carrots from farms less than 100 kilometres away. The food is fresher because it spends less time on trucks. Local farmers earn steady money from a buyer they can count on. And students say the apples taste better than the ones the cafeteria used to serve.")

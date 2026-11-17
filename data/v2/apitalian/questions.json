@@ -511,7 +511,7 @@
       "stem": "Perché gli organizzatori chiedono di intervistare gli abitanti?",
       "options": [
         "Per scegliere insieme agli abitanti i colori da usare",
-        "Per legare le opere alla vita del quartiere",
+        "Per collegare le opere con la vita del quartiere",
         "Per vendere le opere ai residenti",
         "Per controllare l'età degli artisti"
       ],
@@ -2847,7 +2847,7 @@
       "stem": "Nel contesto, l'espressione «sta tornando a vedersi» significa che l'affresco:",
       "options": [
         "si può vedere solo il sabato",
-        "ridiventa visibile grazie alla pulizia",
+        "ridiventa visibile dopo la pulizia",
         "è stato copiato da un artista",
         "è stato portato in un museo della città"
       ],
@@ -3618,7 +3618,7 @@
       "stem": "Vuoi scrivere alla segreteria per avere altre informazioni. Quale domanda è più utile?",
       "options": [
         "Il corso costa qualcosa alle famiglie delle ragazze?",
-        "Si riceve un attestato alla fine del corso?",
+        "Si riceve un attestato finale?",
         "Serve esperienza di programmazione?",
         "Entro quando ci si deve iscrivere?"
       ],
@@ -3839,7 +3839,7 @@
       "options": [
         "La colazione è compresa nel prezzo?",
         "Posso portare con me il mio cane?",
-        "C'è un parcheggio vicino alla casa?",
+        "C'è un parcheggio vicino all'alloggio?",
         "I bambini di tre anni pagano?"
       ],
       "correct": [

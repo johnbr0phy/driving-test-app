@@ -821,18 +821,18 @@
       "difficulty": 3,
       "format": "single",
       "skill": "Blood relations",
-      "stem": "In a certain code, 'P * Q' means P is the wife of Q, 'P @ Q' means P is the father of Q, and 'P # Q' means P is the sister of Q. If M * N @ O # R, how is M related to R?",
+      "stem": "In a certain code, 'P * Q' means P is the wife of Q, 'P @ Q' means P is the father of Q, and 'P # Q' means P is the sister of Q. If M * N @ O # R, how is O related to M?",
       "options": [
-        "Daughter",
+        "Granddaughter",
+        "Niece",
         "Sister",
-        "Grandmother",
-        "Aunt",
-        "Mother"
+        "Mother",
+        "Daughter"
       ],
       "correct": [
         4
       ],
-      "explanation": "M is N's wife, N is O's father and O is R's sister, so R is also N's child. N's wife M is R's mother."
+      "explanation": "M is N's wife and N is O's father, so O is M's child. O is the sister of R, so O is female: O is M's daughter."
     },
     {
       "id": "IBPSRRB-T1-035",

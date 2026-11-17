@@ -468,7 +468,7 @@ S(NEWS, 0, INF, 2, "Why does the writer include Keisha Thompson's story about he
   "Keisha says her grandfather remembers a creek full of fish and she wants it to be like that again, a personal reason for the work. Her words suggest there are fewer fish now, not more.",
   basics="authorPurpose", stim="OSSLT-P12")
 S(NEWS, 0, EXP, 1, "What does the last paragraph of the article add?",
-  ["The project will continue and needs more help.", "The planting day was cancelled because of rain.", "Most of the new trees have already died.", "The students were paid for the day's work."],
+  ["The project will continue and wants more groups to join.", "The planting day was cancelled because of rain.", "Most of the new trees have already died.", "The students were paid for the day's work."],
   "The last paragraph says the city will plant 3,000 more trees next fall and wants more school groups. The planting went ahead in the rain.",
   basics="findingDetail", stim="OSSLT-P12")
 
@@ -843,7 +843,7 @@ S(NAR, 0, INF, 2, "When Noor says \"That's not what I asked,\" what is she point
   "Noor asked whether the narrator still wants the study room, and the narrator answered about not being president. Noor separates the goal from the title.",
   basics="inference", stim="OSSLT-P20")
 S(NAR, 0, INF, 2, "Why does Marcus look \"surprised, and then relieved\"?",
-  ["He did not expect the offer but was glad of the help.", "He thought the narrator wanted the votes recounted.", "He had forgotten that the election had happened.", "He wanted to cancel the study room idea."],
+  ["He did not expect the offer but was glad to accept it.", "He thought the narrator wanted the votes recounted.", "He had forgotten that the election had happened.", "He wanted to cancel the study room idea."],
   "Marcus admits he was going to ask the narrator for help, so the offer surprised him and then took a weight off. Nothing suggests a recount or cancelling the room.",
   basics="inference", stim="OSSLT-P20")
 S(NAR, 0, WORD, 2, "The whispering rule was one \"nobody followed but everyone liked.\" This detail suggests the study room",

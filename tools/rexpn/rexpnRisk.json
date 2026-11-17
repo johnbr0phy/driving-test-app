@@ -149,7 +149,7 @@
   "options": [
    "Have the client sit and report the drop",
    "Encourage the client to walk the hallway",
-   "Retake the BP lying down in 4 hours",
+   "Report the readings at the end of the shift",
    "Document the readings as normal"
   ],
   "correct": [
@@ -218,7 +218,7 @@
    "Report the rise before the next dose",
    "Give the next dose early",
    "Encourage the client to limit fluids",
-   "Recheck the creatinine in a week"
+   "Give the next dose and report the rise afterward"
   ],
   "correct": [
    0

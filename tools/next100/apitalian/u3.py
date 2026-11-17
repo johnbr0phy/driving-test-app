@@ -79,7 +79,7 @@ ITEMS = [
       "The rules require at least one adult member in a group. Experience is not the issue, and artists work in daylight hours.",
       "APITAL-T1-U3"),
     Q(1, 3, INF, "Perché gli organizzatori chiedono di intervistare gli abitanti?",
-      ["Per legare le opere alla vita del quartiere", "Per controllare l'età degli artisti", "Per vendere le opere ai residenti", "Per scegliere insieme agli abitanti i colori da usare"],
+      ["Per collegare le opere con la vita del quartiere", "Per controllare l'età degli artisti", "Per vendere le opere ai residenti", "Per scegliere insieme agli abitanti i colori da usare"],
       "The theme is the memory of the neighborhood, and each mural must tell a true local story gathered from residents. The interviews root the art in the community.",
       "APITAL-T1-U3"),
     Q(1, 2, WORD, "Nel testo, che cosa significa la parola «bozzetto»?",
@@ -149,7 +149,7 @@ ITEMS = [
       "He comes every morning and says he feels he is meeting the saint for the first time now that its blue eyes show. He is amazed and drawn closer, not angry.",
       "APITAL-D-U3B"),
     Q(0, 2, WORD, "Nel contesto, l'espressione «sta tornando a vedersi» significa che l'affresco:",
-      ["ridiventa visibile grazie alla pulizia", "è stato portato in un museo della città", "si può vedere solo il sabato", "è stato copiato da un artista"],
+      ["ridiventa visibile dopo la pulizia", "è stato portato in un museo della città", "si può vedere solo il sabato", "è stato copiato da un artista"],
       "Centuries of dust and candle soot had darkened the fresco; as the students clean it, the painting can be seen again. Saturday is only when the students give explanations.",
       "APITAL-D-U3B"),
 

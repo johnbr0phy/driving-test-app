@@ -92,7 +92,7 @@
     "stem": "A snapped utility pole has left a wire lying across the hood of a crashed car. The 40-year-old driver is alert and talking. You should:",
     "options": [
       "Help him step out onto the dry pavement",
-      "Tell him to stay inside and request the power company",
+      "Tell him to stay inside until the power company cuts the power",
       "Move the wire aside with a dry wooden branch",
       "Approach wearing rubber boots and gloves to assess him"
     ],
@@ -127,7 +127,7 @@
     "format": "single",
     "stem": "A family of four reports headache and nausea; two are drowsy, and a furnace ran all night with the windows shut. Your first action is to:",
     "options": [
-      "Move everyone to fresh air and request the fire department",
+      "Move everyone to fresh air and call for the fire department",
       "Check pulse oximetry to rule out a low oxygen level",
       "Begin assessing the drowsiest child right there in the living room",
       "Open a window and start oxygen inside the house"
@@ -237,7 +237,7 @@
     "options": [
       "Climb in to give oxygen and reassurance",
       "Lower your partner into the trench on a rope to assess him",
-      "Stay out and request a technical rescue team",
+      "Stay out and get a technical rescue team on the way",
       "Dig the soil from around him with shovels"
     ],
     "correct": [
@@ -595,7 +595,7 @@
     "options": [
       "Begin transport and request an ALS intercept",
       "Assist with his nitroglycerin before moving him",
-      "Wait on scene until a paramedic unit arrives",
+      "Request a paramedic unit and wait on scene for it",
       "Transport without notifying dispatch or the hospital"
     ],
     "correct": [

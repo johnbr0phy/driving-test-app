@@ -44,7 +44,7 @@
   "format": "single",
   "stem": "A client signed a consent form for a bronchoscopy yesterday. In the procedure area the client says, \"I'm not sure I want this done anymore.\" What should the nurse do?",
   "options": [
-   "Hold the procedure and tell the health care provider",
+   "Delay the procedure and tell the health care provider",
    "Remind the client that the form is already signed",
    "Give the ordered sedation to ease the client's anxiety",
    "Ask the client's spouse to confirm the consent"
@@ -114,7 +114,7 @@
   "options": [
    "Report it to the charge nurse or manager now",
    "Offer the colleague coffee and keep an eye on them",
-   "Wait until morning and tell the day manager",
+   "Wait until morning and report it to the day manager",
    "Ask the colleague to give only oral medications"
   ],
   "correct": [
@@ -484,7 +484,7 @@
   "format": "single",
   "stem": "At the start of a busy day shift, what should the nurse do first to manage the workload?",
   "options": [
-   "Review report and rank client needs by priority",
+   "Review the handover and rank client needs by priority",
    "Begin morning care with the client in the first room",
    "Give all 0900 medications to every client",
    "Complete charting from the previous shift"
@@ -558,7 +558,7 @@
   "format": "single",
   "stem": "A client is being transferred from the medical unit to a rehabilitation unit in the same hospital. What should the nurse provide to the receiving nurse?",
   "options": [
-   "A verbal report and the client's current care plan",
+   "A verbal handover and the client's current care plan",
    "Only the medication administration record",
    "A summary of the client's family history",
    "Nothing, since the chart is electronic"
@@ -577,7 +577,7 @@
   "options": [
    "Ensure the resident's safety and report it as required",
    "Ask the staff member to explain what happened",
-   "Wait to see if the resident repeats the story",
+   "Report it only if the resident repeats the story",
    "Tell the resident's family and let them decide"
   ],
   "correct": [
@@ -715,7 +715,7 @@
   "format": "single",
   "stem": "Partway through a shift, the nurse feels too ill to continue. What must the nurse do before leaving?",
   "options": [
-   "Give report to the charge nurse",
+   "Hand over the clients to the charge nurse",
    "Leave a note at the nursing station",
    "Text a coworker to cover the clients",
    "Finish documenting and leave quietly"

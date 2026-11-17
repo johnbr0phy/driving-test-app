@@ -70,12 +70,12 @@
       "Hold the dose and notify the RN",
       "Give the dose and recheck the pulse in 1 hour",
       "Give half the dose and document the pulse",
-      "Give the dose with a full glass of water"
+      "Give the dose, then notify the RN of the pulse"
     ],
     "correct": [
       0
     ],
-    "explanation": "Digoxin slows the heart, so a dose is held and reported when the apical pulse is below 60/min in an adult. Giving any part of the dose at this rate risks a dangerous bradycardia, and the PN does not change a prescribed dose."
+    "explanation": "Digoxin slows the heart, so a dose is held and reported when the apical pulse is below 60/min in an adult. Giving any part of the dose at this rate risks a dangerous bradycardia, and the PN does not change a prescribed dose. Reporting the pulse after the dose is given comes too late."
   },
   {
     "domain": "pnPharm",
@@ -372,12 +372,12 @@
       "Reassure the client that the ringing will pass on its own",
       "Give the next dose with food to lessen the side effect",
       "Report the finding to the RN before the next dose",
-      "Document the complaint and recheck it tomorrow morning"
+      "Report the finding to the RN after giving the next dose"
     ],
     "correct": [
       2
     ],
-    "explanation": "Tinnitus is an early sign of ototoxicity from a loop diuretic, and hearing loss can become permanent, so the finding is reported before another dose is given. Food does not prevent ototoxicity, and waiting a day risks more damage."
+    "explanation": "Tinnitus is an early sign of ototoxicity from a loop diuretic, and hearing loss can become permanent, so the finding is reported before another dose is given. Food does not prevent ototoxicity, and giving another dose before reporting risks more damage."
   },
   {
     "domain": "pnPharm",

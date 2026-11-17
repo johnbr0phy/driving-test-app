@@ -99,7 +99,7 @@ ITEMS = [
     # ---------- Drill only (draft PRAXIS-WD and single items) ----------
     S(0, 2, "Supporting detail",
       "The writer wants to add a sentence after sentence 6 to support the point made in sentences 4 through 6. Which of the following best does this?",
-      ["Lights along some beaches now lead many of them inland, away from the water.",
+      ["Lights along some beaches now lead the hatchlings inland, away from the water.",
        "Sea turtles can live for more than fifty years in the wild.",
        "Some species of birds migrate thousands of miles each year.",
        "Streetlights were first lit by gas in the early 1800s.",

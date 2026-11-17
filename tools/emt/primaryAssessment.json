@@ -26,7 +26,7 @@
     "stem": "A 62-year-old woman who speaks only Vietnamese has abdominal pain. Her 10-year-old grandson offers to translate. The best approach is to:",
     "options": [
       "Speak English loudly and slowly to her",
-      "Request a trained interpreter or language line",
+      "Use a trained interpreter or a language line",
       "Skip the history and transport without questions",
       "Rely on the grandson for all medical questions"
     ],
@@ -1457,7 +1457,7 @@
     "format": "single",
     "stem": "A 6-year-old has seized continuously for 8 minutes. You are managing his airway with suction and oxygen, and the hospital is 30 minutes away. You should:",
     "options": [
-      "Stay on scene until the seizure stops",
+      "Request a paramedic unit and stay on scene until the seizure stops",
       "Give oral glucose to stop the seizure",
       "Request an ALS intercept and begin transport",
       "Restrain his arms to prevent injury"

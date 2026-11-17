@@ -17,6 +17,8 @@ what chance gives (an option among four is the key a quarter of the time):
             the key in under 10%, at least 4 fewer than chance ("always",
             "never", "immediately"...)
   repeat    the same key, word for word, in 3+ questions of one category
+            (unless it is a standard option, such as "NO CHANGE", offered in
+            many questions and keyed in no more than 40% of them)
   run       4+ questions in a row (ID order, which is the order a training set
             shows them) whose keys share a word the stem does not give away,
             like RBT-SDOC-001 to -006, all "tell the supervisor"
@@ -62,6 +64,8 @@ any all some one two three four five first second third next only also just more
 your you his her he she they them we our us who whom which what when where why how if per via
 """.split())
 
+# A computed answer that happens to recur ("$60$", "24 cm") is no cue.
+NUMBER = re.compile(r"[\s$\\(){}.,:/%+\-\d]*\d[\s$\\(){}.,:/%+\-\d]*(?:[a-z]{1,3}\b\.?)?")
 WORD = re.compile(r"[a-zA-Z][a-zA-Z'\-]*")
 
 
@@ -92,7 +96,8 @@ def load_items(path):
                 k = "ABCD".index(q["correctAnswer"])
         elif q.get("format", "single") == "single" and isinstance(q.get("options"), list):
             opts = [o if isinstance(o, str) else (o.get("text") or "") for o in q["options"]]
-            a = q.get("answer")
+            # v2 banks key the item in "correct"; older drafts used "answer".
+            a = q.get("correct", q.get("answer"))
             k = a[0] if isinstance(a, list) and len(a) == 1 else (a if isinstance(a, int) else None)
         else:
             continue
@@ -125,12 +130,31 @@ def analyse(items):
         if n >= ANTI_MIN_N and keyed / n < ANTI_RATE and exp - keyed >= ANTI_DEFICIT:
             antis.append({"term": t, "n": n, "key": keyed, "chance": round(exp, 1)})
     tells.sort(key=lambda r: -r["gain"])
+    n_items, all_items = len(items), items
     antis.sort(key=lambda r: -(r["chance"] - r["key"]))
+
+    # A fixed answer set (True / False / Not Given, the four quantitative
+    # comparison answers, "I only / II only / Both / Neither") is offered word
+    # for word in many questions, so its key coming up again is no cue. Those
+    # questions still count for tells above ("pick True" can be one) but not
+    # for repeats or runs.
+    shapes = defaultdict(int)
+    for _q, _c, opts, *_ in items:
+        shapes[frozenset(" ".join(o.lower().split()) for o in opts)] += 1
+    items = [it for it in items if shapes[frozenset(" ".join(o.lower().split()) for o in it[2])] < REPEAT_MIN]
 
     keys = defaultdict(list)
     for qid, cat, opts, k, *_ in items:
         keys[(cat, " ".join(opts[k].lower().split()))].append(qid)
-    repeats = [{"category": c, "key": t, "ids": ids} for (c, t), ids in keys.items() if len(ids) >= REPEAT_MIN and len(t) > 3]
+    # A standard option ("NO CHANGE", "No mistake") offered in many questions is
+    # no cue when it is the key no more often than chance gives it.
+    offered = defaultdict(int)
+    for _q, cat, opts, *_ in items:
+        for o in {" ".join(o.lower().split()) for o in opts}:
+            offered[(cat, o)] += 1
+    repeats = [{"category": c, "key": t, "ids": ids} for (c, t), ids in keys.items()
+               if len(ids) >= REPEAT_MIN and len(t) > 3 and len(ids) / offered[(c, t)] > 0.4
+               and not NUMBER.fullmatch(t)]
 
     # Runs: in ID order within a category, 3+ keys in a row sharing a word that is
     # not in every option and not in the stem.
@@ -167,12 +191,12 @@ def analyse(items):
     # where an option holds a tell word, pick among those options at random.
     tell_terms = {t["term"] for t in tells}
     gain = 0.0
-    for qid, _c, opts, k, *_ in items:
+    for qid, _c, opts, k, *_ in all_items:
         holders = [i for i, o in enumerate(opts) if terms(o) & tell_terms]
         if holders and len(holders) < len(opts):
             gain += (1 / len(holders) if k in holders else 0) - 1 / len(opts)
-    marks = round(50 * gain / len(items), 1) if items else 0.0
-    return {"items": len(items), "tells": tells, "antiTells": antis, "repeats": repeats, "runs": runs, "edge": marks}
+    marks = round(50 * gain / n_items, 1) if n_items else 0.0
+    return {"items": n_items, "tells": tells, "antiTells": antis, "repeats": repeats, "runs": runs, "edge": marks}
 
 
 def all_banks():

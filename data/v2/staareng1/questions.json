@@ -752,7 +752,7 @@
       "stem": "How are the brother in \"Learning the River\" and the father in \"The Dock\" alike?",
       "options": [
         "Both stay in the water close to the learner",
-        "Both shout instructions from the shore",
+        "Both shout instructions from out of the water",
         "Both give up when the child is afraid",
         "Both admit that they cannot swim very well"
       ],
@@ -3069,7 +3069,7 @@
       "stimulusId": "STAARE1-D-R4",
       "stem": "How are paragraphs 2 and 3 organized?",
       "options": [
-        "They compare the Edwards Aquifer with an underground lake",
+        "They compare the water in the aquifer with an underground lake",
         "They tell the history of San Antonio in time order",
         "They explain how water enters and then how it leaves",
         "They describe a problem and argue for one solution"
@@ -3093,7 +3093,7 @@
       "options": [
         "Classification, sorting the animals of the springs",
         "Definition, explaining what limestone is made of",
-        "Chronological order, listing the region's droughts year by year",
+        "Chronological order, listing the region's water shortages year by year",
         "Cause and effect, from drought to falling water to new rules"
       ],
       "correct": [
@@ -3116,7 +3116,7 @@
         "The springs at San Marcos are among the largest in Texas",
         "Spills there reach the water with little filtering",
         "The limestone rises to the surface north of San Antonio",
-        "Creeks flow across the exposed rock after it rains"
+        "Creeks carry water across the exposed rock after it rains"
       ],
       "correct": [
         1
@@ -3180,7 +3180,7 @@
       "stem": "Based on paragraphs 3 and 4, why might the blind salamander be at risk during a drought?",
       "options": [
         "It lives only in spring-fed water that can slow to a trickle",
-        "It is often pumped out of the aquifer through wells",
+        "It is often pumped out with well water",
         "It cannot find food when farmers stop watering fields",
         "It must travel all the way to the recharge zone to lay its eggs"
       ],
@@ -3224,7 +3224,7 @@
       "stem": "How do the headings help organize the information in the article?",
       "options": [
         "They give the dates of the worst droughts on record",
-        "They list the cities that depend on the aquifer",
+        "They list the cities that depend on its water",
         "They follow the water in, out and through its management",
         "They separate the facts in the article from the author's own opinions"
       ],

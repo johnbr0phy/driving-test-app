@@ -145,14 +145,14 @@
       "stimulusId": "SBICLK-T1-RC",
       "stem": "What does the local trader do, according to the passage?",
       "options": [
-        "Lends weavers money to buy power looms",
-        "Supplies yarn, buys the cloth and sets the price",
+        "Supplies yarn, buys the woven saris and sets the price",
+        "Photographs each sari for city buyers",
         "Teaches young weavers the family patterns",
-        "Sells the weavers' saris on a website",
-        "Photographs each sari for city buyers"
+        "Lends weavers money to buy power looms",
+        "Sells the weavers' saris on a website"
       ],
       "correct": [
-        1
+        0
       ],
       "explanation": "The second paragraph says the trader 'supplies the yarn, buys the finished cloth and sets the price'."
     },
@@ -758,19 +758,19 @@
       "difficulty": 3,
       "format": "single",
       "skill": "Phrase rearrangement",
-      "stem": "The parts of a sentence, labelled P, Q, R and S, are given in jumbled order after the fixed opening. Choose the order that makes a meaningful sentence.\n\nAlthough the monsoon arrived late this year,\n\nP. that supply drinking water\nQ. most of the reservoirs\nR. were full by September\nS. to the city",
+      "stem": "The parts of a sentence, labelled P, Q, R and S, are given in jumbled order after the fixed opening. Choose the order that makes a meaningful sentence.\n\nAlthough the monsoon arrived late this year,\n\nP. were full by September\nQ. most of the reservoirs\nR. that supply drinking water\nS. to the city",
       "options": [
         "QRPS",
         "PSQR",
-        "QPSR",
+        "QRSP",
         "QSPR",
-        "SQPR"
+        "SQRP"
       ],
       "correct": [
         2
       ],
       "lockedOrder": true,
-      "explanation": "Although the monsoon arrived late this year, (Q) most of the reservoirs (P) that supply drinking water (S) to the city (R) were full by September. The relative clause 'that supply drinking water to the city' must follow 'reservoirs' directly."
+      "explanation": "Although the monsoon arrived late this year, (Q) most of the reservoirs (R) that supply drinking water (S) to the city (P) were full by September. The relative clause 'that supply drinking water to the city' must follow 'reservoirs' directly."
     },
     {
       "id": "SBICLK-T1-031",

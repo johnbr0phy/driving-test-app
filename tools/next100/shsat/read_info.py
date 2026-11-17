@@ -80,7 +80,7 @@ ITEMS = [
          expl="Only the sentence about fish, crabs and other animals shows reefs helping other creatures. The sentence about restaurants shows people helping oysters, not the other way around."),
     dict(test=1, stim="RI1", skill="Author's point of view", diff=3,
          stem="Based on paragraph 5, the author most likely views the student workers as:",
-         key="an example of how people can help a place recover",
+         key="an example of how people can restore a damaged place",
          wrong=["too young to do serious work on the reefs", "the main reason that the harbor water became cleaner", "visitors who see the harbor only from a ferry"],
          expl="The author calls the harbor their \"living classroom\" and ends with the reefs' return as a sign that \"a damaged place can heal.\" The passage credits cleaner water to recent decades, not to the students."),
 
@@ -137,7 +137,7 @@ ITEMS = [
          expl="The paragraph says that when every hour is filled there is \"no room\" for a young person to discover interests, so busy schedules push that thinking out."),
     dict(test=1, stim="RI3", skill="Meaning of a conclusion", diff=2,
          stem="What does the final sentence of the passage suggest about learning to handle boredom?",
-         key="It is a skill that helps a person throughout life.",
+         key="It is a skill that serves a person throughout life.",
          wrong=["It is something only wealthy families can afford.", "It is a lesson that teachers should add to school.", "It is a problem that most people never really solve."],
          expl="The sentence says handling boredom teaches \"how to make an interesting life out of whatever is at hand,\" a lasting skill. The paragraph also says it requires no money, and that \"no lesson can teach\" it."),
 
@@ -171,7 +171,7 @@ ITEMS = [
     # ---- Practice Test 2: RI5 ----
     dict(test=2, stim="RI5", skill="Central idea", diff=2,
          stem="Which statement best expresses the central idea of the passage?",
-         key="Tardigrades survive harsh conditions in ways that may help science.",
+         key="Tardigrades survive harsh conditions in ways that may benefit science.",
          wrong=["Tardigrades are the smallest of all the animals that live in moss and mud.", "Tardigrades can live only in places that always stay wet.", "Tardigrades were first found by scientists in outer space."],
          expl="The passage explains how tardigrades survive drying, cold, heat, radiation and space, and ends with how their proteins might help people. Paragraph 3 shows they survive when their homes dry out, so they do not need places that always stay wet."),
     dict(test=2, stim="RI5", skill="How ideas connect", diff=2,
@@ -192,7 +192,7 @@ ITEMS = [
          expl="This sentence follows the description of tardigrades sent into orbit and exposed to space, so it shows they survived there. Surviving for years as a tun says nothing about space."),
     dict(test=2, stim="RI5", skill="Purpose of a comparison", diff=3,
          stem="Why does the author compare the proteins to \"packing material around a fragile package\" in paragraph 5?",
-         key="to help readers picture how the proteins protect cells",
+         key="to let readers picture how the proteins protect cells",
          wrong=["to show that tardigrades are easy to send by mail", "to suggest that the proteins are a kind of paper", "to argue that cells are too fragile to be studied"],
          expl="Packing material keeps a fragile object from breaking, which helps readers imagine proteins holding the parts of a cell in place. The comparison is not literal."),
 

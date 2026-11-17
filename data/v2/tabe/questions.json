@@ -93,7 +93,7 @@
     {
       "id": "TABE-D-L1",
       "title": "Draft: Why our clinic should offer evening hours",
-      "text": "(1) The Westside Health Clinic is open from 8 a.m. to 4 p.m. on weekdays. (2) For people who work those same hours, getting a checkup means losing a day's pay. (3) The clinic should stay open until 7 p.m. two nights a week. (4) A survey of clinic patients found that more than half work daytime shifts. (5) Many of them said they skip checkups because they cannot leave work. (6) The clinic's waiting room was painted last year. (7) Evening hours would help patients get care before small problems become serious."
+      "text": "(1) The Westside Health Clinic is open from 8 a.m. to 4 p.m. on weekdays. (2) For people who work those same hours, getting a checkup means losing a day's pay. (3) The clinic should stay open until 7 p.m. two nights a week. (4) A survey of clinic patients found that more than half work daytime shifts. (5) Many of them said they skip checkups because they cannot leave work. (6) Evening hours would help patients get care before small problems become serious. (7) The clinic's waiting room was painted last year."
     },
     {
       "id": "TABE-D-L2",
@@ -456,7 +456,7 @@
         "To show that workers dislike the trail",
         "To describe jobs on Main Street",
         "To prove the hospital supports the plan",
-        "To show people use it to get to work"
+        "To show people ride it to their jobs"
       ],
       "correct": [
         3
@@ -1471,7 +1471,7 @@
       "format": "single",
       "stem": "How does the shed repair connect to the rest of the passage?",
       "options": [
-        "It shows neighbors now work together",
+        "It shows neighbors now pitch in as a team",
         "It proves the shed was poorly built",
         "It shows that storms damage gardens",
         "It explains why the lease was renewed"
@@ -3965,8 +3965,8 @@
       "stem": "Which sentence should be removed from the draft?",
       "options": [
         "Sentence 5",
+        "Sentence 7",
         "Sentence 6",
-        "Sentence 4",
         "Sentence 2"
       ],
       "correct": [
@@ -4118,7 +4118,7 @@
       "format": "single",
       "stem": "Which sentence would best introduce the report if it were added before sentence 1?",
       "options": [
-        "A bee colony splits its work three ways.",
+        "A bee colony splits its tasks three ways.",
         "Some of the flowers in my yard are purple.",
         "I like to put honey on my toast every day.",
         "Bees can sting when they are scared."
@@ -4187,7 +4187,7 @@
         "Honey is sold in many grocery stores.",
         "I hope to keep bees someday.",
         "Wasps are also yellow and black.",
-        "Shared work keeps the colony alive."
+        "Shared labor keeps the colony alive."
       ],
       "correct": [
         3

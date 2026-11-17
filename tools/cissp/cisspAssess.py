@@ -4,7 +4,7 @@ ITEMS = [
 # ---- Test 1 (12) ----
 Q(1, 3, "Penetration test authorization",
   "A security manager is planning a penetration test of the company's public systems. What must be obtained FIRST?",
-  ["Written authorization from senior management defining scope and rules of engagement",
+  ["Written authorization from senior leadership defining scope and rules of engagement",
    "A list of known vulnerabilities from the last scan",
    "Exploit code for the systems in scope",
    "Approval by email from each administrator of the systems that will be tested in scope"],
@@ -90,7 +90,7 @@ O(1, 3, "Penetration test phases",
 # ---- Test 2 (12) ----
 Q(2, 3, "Assessment strategy",
   "A company must show regulators that its controls are working throughout the year, not just on audit day. What should it implement?",
-  ["Continuous monitoring with key metrics reported to management",
+  ["Continuous monitoring with key metrics reported to leadership",
    "A single annual penetration test",
    "A yearly review of every security policy by the legal and compliance teams",
    "An annual employee attestation form"],

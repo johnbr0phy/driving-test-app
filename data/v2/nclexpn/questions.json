@@ -388,7 +388,7 @@
       "skill": "Right to refuse",
       "stem": "A competent adult client refuses the scheduled morning dose of warfarin. What should the PN do?",
       "options": [
-        "Ask the family to persuade the client",
+        "Notify the family and ask them to persuade the client",
         "Mix the crushed tablet into applesauce",
         "Hold the dose and chart it as given",
         "Document the refusal and notify the RN"
@@ -443,12 +443,12 @@
         "Document the intake and send the client to surgery",
         "Notify the RN right away",
         "Give an antacid and continue the preoperative checklist",
-        "Reschedule the surgery for the afternoon"
+        "Notify the RN after the client leaves for surgery"
       ],
       "correct": [
         1
       ],
-      "explanation": "Food within the fasting window raises the risk of aspiration during anesthesia, so the RN and surgical team must know before the client leaves the unit; they decide whether to delay. The PN reports the data and does not reschedule surgery or cover the problem with an antacid."
+      "explanation": "Food within the fasting window raises the risk of aspiration during anesthesia, so the RN and surgical team must know before the client leaves the unit; they decide whether to delay. The PN reports the data and does not cover the problem with an antacid, and telling the RN after the client has left is too late."
     },
     {
       "id": "NCLEXPN-T1-021",
@@ -569,12 +569,12 @@
         "Hold the dose and notify the RN",
         "Give the dose and recheck the pulse in 1 hour",
         "Give half the dose and document the pulse",
-        "Give the dose with a full glass of water"
+        "Give the dose, then notify the RN of the pulse"
       ],
       "correct": [
         0
       ],
-      "explanation": "Digoxin slows the heart, so a dose is held and reported when the apical pulse is below 60/min in an adult. Giving any part of the dose at this rate risks a dangerous bradycardia, and the PN does not change a prescribed dose."
+      "explanation": "Digoxin slows the heart, so a dose is held and reported when the apical pulse is below 60/min in an adult. Giving any part of the dose at this rate risks a dangerous bradycardia, and the PN does not change a prescribed dose. Reporting the pulse after the dose is given comes too late."
     },
     {
       "id": "NCLEXPN-T1-027",
@@ -1103,7 +1103,7 @@
       "options": [
         "Report the observation to the supervisor",
         "Confront the coworker privately first",
-        "Wait to see whether it happens again",
+        "Report it only if it happens again",
         "Ask the client whether the dose was given"
       ],
       "correct": [
@@ -1327,12 +1327,12 @@
         "Explain the risks of the procedure to the client",
         "Reassure the client that the form is signed",
         "Notify the RN before the procedure",
-        "Ask the family to explain the procedure"
+        "Notify the RN after the procedure is done"
       ],
       "correct": [
         2
       ],
-      "explanation": "A signed form is not valid consent if the client does not understand the procedure, so the PN tells the RN, who contacts the provider to explain it again. Explaining risks and benefits is the provider's responsibility, not the nurse's or the family's."
+      "explanation": "A signed form is not valid consent if the client does not understand the procedure, so the PN tells the RN, who contacts the provider to explain it again. Explaining risks and benefits is the provider's responsibility, not the nurse's, and telling the RN after the procedure is too late."
     },
     {
       "id": "NCLEXPN-T1-060",
@@ -2469,7 +2469,7 @@
       "options": [
         "Tell the daughter the living will cannot be changed",
         "Ask the daughter to sign a new consent form",
-        "Notify the RN of the daughter's request",
+        "Bring the daughter's request to the RN",
         "Remove the living will from the chart"
       ],
       "correct": [
@@ -3038,14 +3038,14 @@
       "stem": "A resident with dementia who is usually calm suddenly becomes confused, picks at the sheets and does not recognize the AP. What should the PN do?",
       "options": [
         "Report the sudden change to the RN",
-        "Reorient the resident and recheck in 2 hours",
+        "Report the change to the RN at shift handover",
         "Document the behavior as sundowning",
         "Ask the family to visit more often"
       ],
       "correct": [
         0
       ],
-      "explanation": "A sudden change in mental status in a resident with dementia is usually delirium from an infection, a medication or pain, which needs the RN's assessment and the provider's evaluation. Labeling it sundowning or waiting 2 hours can delay treatment of a serious cause."
+      "explanation": "A sudden change in mental status in a resident with dementia is usually delirium from an infection, a medication or pain, which needs the RN's assessment and the provider's evaluation. Labeling it sundowning or waiting until handover can delay treatment of a serious cause."
     },
     {
       "id": "NCLEXPN-T2-050",
@@ -3392,12 +3392,12 @@
         "Reassure the client that the ringing will pass on its own",
         "Give the next dose with food to lessen the side effect",
         "Report the finding to the RN before the next dose",
-        "Document the complaint and recheck it tomorrow morning"
+        "Report the finding to the RN after giving the next dose"
       ],
       "correct": [
         2
       ],
-      "explanation": "Tinnitus is an early sign of ototoxicity from a loop diuretic, and hearing loss can become permanent, so the finding is reported before another dose is given. Food does not prevent ototoxicity, and waiting a day risks more damage."
+      "explanation": "Tinnitus is an early sign of ototoxicity from a loop diuretic, and hearing loss can become permanent, so the finding is reported before another dose is given. Food does not prevent ototoxicity, and giving another dose before reporting risks more damage."
     },
     {
       "id": "NCLEXPN-T2-064",
@@ -3843,12 +3843,12 @@
         "Encourage a glass of orange juice",
         "Report the result to the RN immediately",
         "Give the scheduled potassium chloride tablet",
-        "Document the value and recheck tomorrow"
+        "Report the result to the RN at the end of the shift"
       ],
       "correct": [
         1
       ],
-      "explanation": "A potassium of 6.1 mEq/L can cause fatal dysrhythmias, so the RN is told at once so the provider can order treatment and cardiac monitoring. Orange juice and the potassium tablet would raise it further."
+      "explanation": "A potassium of 6.1 mEq/L can cause fatal dysrhythmias, so the RN is told at once so the provider can order treatment and cardiac monitoring. Orange juice and the potassium tablet would raise it further, and waiting until the end of the shift wastes time the client may not have."
     },
     {
       "id": "NCLEXPN-T2-083",

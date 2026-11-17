@@ -31,7 +31,7 @@
       "stem": "The passage is best described as the story of",
       "options": [
         "a grandfather who teaches his grandson a series of chess strategies in order to make him a strong player",
-        "a boy who begins to understand that his grandfather's weekly losses at chess are a deliberate way of keeping company",
+        "a boy who begins to understand that his grandfather's weekly losses at chess are deliberate, a means of keeping company",
         "a boy who resents being left in a park every Sunday and finally persuades his mother to end the arrangement",
         "a group of regular players who compete for the right to challenge an undefeated old man"
       ],
@@ -98,7 +98,7 @@
       "format": "single",
       "stem": "It can reasonably be inferred from the first paragraph that Theo believes the Sunday visits were arranged mainly to",
       "options": [
-        "give his mother time alone rather than to keep his grandfather company",
+        "give his mother time alone, not to keep his grandfather company",
         "help him make friends with the other players at the stone tables",
         "teach him chess so that he could join a club at his new school",
         "keep him away from the apartment while his mother unpacked from the move"
@@ -395,7 +395,7 @@
       "options": [
         "quoting an economist who has studied plant closures in Europe",
         "citing the exact percentage of towns that recovered in a single large study",
-        "contrasting two hypothetical towns of the same size that respond differently to the same layoffs",
+        "contrasting how two hypothetical towns of the same size respond to the same layoffs",
         "tracing the history of one real town over the ten years after its plant closed"
       ],
       "correct": [
@@ -508,7 +508,7 @@
       "options": [
         "printed in black and white",
         "impossible to read without special equipment",
-        "distinctive enough to be matched between different pieces of wood",
+        "distinctive enough to be matched from one piece of wood to another",
         "the same in every region of the world"
       ],
       "correct": [
@@ -551,7 +551,7 @@
       "stem": "The author supports the claim that a frost ring can be traced to a global cause rather than a local one by pointing to",
       "options": [
         "the fact that sulfur haze reflects sunlight",
-        "the appearance of frost damage in the same year in trees on different continents",
+        "the appearance of frost damage in the same year in trees on several continents",
         "the narrow rings that Southwestern trees form in years of drought",
         "written records of eruptions kept by observers near the volcanoes"
       ],

@@ -173,7 +173,7 @@ ITEMS = [
       "The amendment barred racial discrimination in voting, but it left room for poll taxes and literacy tests, which southern states later used to disenfranchise Black voters. Women's suffrage came in 1920."),
     Q(0, 2, CO,
       "Radical Republicans in Congress differed from President Andrew Johnson mainly over",
-      ["how far to protect freedpeople's rights", "whether to keep a protective tariff", "whether to buy Alaska from Russia", "whether to keep fighting the war in 1865 until the South surrendered unconditionally"],
+      ["how far to protect the freedpeople", "whether to keep a protective tariff", "whether to buy Alaska from Russia", "whether to keep fighting the war in 1865 until the South surrendered unconditionally"],
       "Johnson pardoned many Confederates and accepted the Black Codes; Radicals wanted civil and political rights for freedpeople and federal power to protect them."),
     Q(0, 2, CA,
       "California's request to enter the Union as a free state in 1849 and 1850 caused a crisis because it",

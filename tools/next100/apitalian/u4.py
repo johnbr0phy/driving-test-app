@@ -194,7 +194,7 @@ ITEMS = [
       "The flyer quotes a common doubt and answers it at once: the course was designed for exactly those girls and starts from zero.",
       "APITAL-D-U4D"),
     Q(0, 3, CONC, "Vuoi scrivere alla segreteria per avere altre informazioni. Quale domanda è più utile?",
-      ["Si riceve un attestato alla fine del corso?", "Il corso costa qualcosa alle famiglie delle ragazze?", "Serve esperienza di programmazione?", "Entro quando ci si deve iscrivere?"],
+      ["Si riceve un attestato finale?", "Il corso costa qualcosa alle famiglie delle ragazze?", "Serve esperienza di programmazione?", "Entro quando ci si deve iscrivere?"],
       "Only the certificate is not covered in the flyer. It already says the course is free, that no experience is needed and that the deadline is 20 January.",
       "APITAL-D-U4D"),
 

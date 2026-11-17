@@ -38,7 +38,7 @@ ITEMS = [
      "Right 10 gives consumers the right to complain in any form appropriate to them, and Code of Conduct 3.6 asks nurses to respect that right and help with it."),
     ("S", 1, 3, "Confidentiality",
      "A caller says she is a patient's sister and asks about his test results. What should the enrolled nurse do?",
-     ["Check consent before giving details", "Give the results as she is close family", "Give only the good news over the phone", "Ask her two questions to prove who she is"],
+     ["Check consent before giving details", "Give the results as she is close family", "Check her name and date of birth, then share", "Ask her two questions to prove who she is"],
      "Code of Conduct principle 5 asks nurses to treat information as confidential and get consent before sharing it. The nurse should check what the patient has agreed to share and with whom."),
     ("S", 1, 2, "Continuing competence",
      "What does descriptor 5.5 ask an enrolled nurse to do?",

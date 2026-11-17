@@ -13,7 +13,7 @@ ITEMS = [
      ["Situation, background, assessment, recommendation", "Signs, background, action, response", "Situation, baseline, alert, review", "Summary, background, analysis, response, result"],
      "SBAR structures urgent communication, for example when escalating a deteriorating patient by phone, so the key information and the request are clear."),
     ("S", 1, 2, "Staffing", "A nurse believes staffing on her ward tonight is unsafe for the number and needs of the patients. What should she do?",
-     ["Raise it with the nurse in charge and record it under local policy", "Say nothing, as staffing is decided by managers", "Leave the ward to show that it is unsafe", "Post her concerns on social media to get the attention of senior managers"],
+     ["Raise it with the nurse in charge and record it under local policy", "Finish the shift, then raise it next week under local policy", "Leave the ward to show that it is unsafe", "Post her concerns on social media to get the attention of senior managers"],
      "The Code requires nurses to raise concerns about anything that puts patient safety at risk, including staffing, through the right channels, and to keep a record."),
     ("S", 1, 3, "Supporting students", "Under the NMC Standards for student supervision and assessment, who can act as a practice supervisor for a student nurse?",
      ["Any registered health or social care professional", "Only a registered nurse with a mentorship qualification", "Only the ward manager who is responsible for the area", "Only an academic member of staff from the university"],

@@ -50,7 +50,7 @@ ITEMS = [
      "Descriptor 4.4 asks nurses to support individuals and whānau to use technology to manage health. Her consent is needed before whānau see her information."),
     ("S", 2, 2, "Health promotion",
      "Which advice best helps prevent pressure injuries at home?",
-     ["Move often and check the skin", "Stay in the same position to rest", "Rub red areas firmly to help them", "Use talcum powder on the skin each day"],
+     ["Move often and look over the skin", "Stay in the same position to rest", "Rub red areas firmly to help them", "Use talcum powder on the skin each day"],
      "Regular position changes and skin checks prevent pressure injuries. Massaging red areas can damage the tissue further."),
     # ---- Drill only ----
     ("S", 0, 2, "Sharps",

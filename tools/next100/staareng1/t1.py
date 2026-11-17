@@ -326,7 +326,7 @@ ITEMS = [
       "STAARE1-T1-R3"),
     Q(1, 2, CMP, SYNTH,
       "How are the brother in \"Learning the River\" and the father in \"The Dock\" alike?",
-      ["Both stay in the water close to the learner", "Both shout instructions from the shore",
+      ["Both stay in the water close to the learner", "Both shout instructions from out of the water",
        "Both admit that they cannot swim very well", "Both give up when the child is afraid"],
       "The brother stands in the river with his hands out, and the father wades out and stays close enough to touch. The father says he does not believe in shouting from the shore.",
       "STAARE1-T1-R3"),

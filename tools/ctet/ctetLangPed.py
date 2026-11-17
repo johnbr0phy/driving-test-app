@@ -4,7 +4,7 @@ ITEMS = [
     # ---------- Practice Test 1 ----------
     S(1, 2, "Learning and acquisition", "Language acquisition differs from language learning because acquisition",
       ["happens naturally through meaningful use, without formal teaching",
-       "depends on memorising the rules of grammar before a child starts to speak",
+       "comes through memorising the rules of grammar before a child starts to speak",
        "can only take place inside a classroom with a textbook",
        "is complete before a child is one year old"],
       "Acquisition, as Krashen describes it, is subconscious and comes from exposure to meaningful language, as with a first language. Learning is the conscious study of rules.",

@@ -174,7 +174,7 @@ ITEMS = [
       "Paul's National Woman's Party picketed the White House, and many were jailed; their pressure and women's war work helped win the Nineteenth Amendment in 1920. Sit-ins and bus boycotts belong to the civil rights movement."),
     Q(0, 2, DP,
       "Secretary of State John Hay's Open Door notes of 1899 and 1900 sought",
-      ["equal trading rights in China", "the annexation of Chinese ports by the United States navy", "an end to immigration from China", "Japan's opening to Western trade"],
+      ["equal access to trade in China", "the annexation of Chinese ports by the United States navy", "an end to immigration from China", "Japan's opening to Western trade"],
       "Hay asked the powers with spheres of influence in China to keep trade open to all and to respect China's territorial integrity. Japan had been opened to trade in the 1850s."),
     Q(0, 2, CA,
       "The Immigration Act of 1924",

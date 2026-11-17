@@ -263,8 +263,8 @@
     "stem": "Which of these is an example of unstructured data?",
     "options": [
       "Product prices in a relational table",
-      "Bank balances stored in a SQL database",
-      "Recorded customer service calls",
+      "Bank balances held in a managed SQL database service",
+      "Recorded customer phone calls",
       "A table of orders with fixed columns"
     ],
     "correct": [
@@ -643,7 +643,7 @@
       "Train a custom model from scratch on TPUs",
       "Hire a research team to design a brand new model",
       "Build a rule-based system for every image",
-      "Use a pre-trained API such as the Vision API"
+      "Use a pre-trained API like the Vision API"
     ],
     "correct": [
       3
@@ -768,8 +768,8 @@
     "options": [
       "A spreadsheet add-on that only formats charts and has no access to AI models",
       "A Google Cloud storage class for keeping old machine learning data at low cost",
-      "A hardware appliance that customers install to run email and file shares",
-      "Google Cloud's unified platform for building, deploying and managing AI models and agents"
+      "An on-premises hardware platform that customers install to run email and file shares",
+      "Google Cloud's unified environment for building, deploying and managing AI models and agents"
     ],
     "correct": [
       3
@@ -913,7 +913,7 @@
     "skill": "APIs",
     "stem": "What is an application programming interface (API)?",
     "options": [
-      "A defined way for one piece of software to request data or services from another",
+      "A defined way for one piece of software to request data or actions from another",
       "A dashboard that shows business users the sales results for each region",
       "A type of virtual machine that runs only on Google's own custom hardware",
       "A storage class for files kept for legal reasons for ten years"
@@ -1264,7 +1264,7 @@
     "options": [
       "Once a user signs in, all systems trust them for the year",
       "A strong perimeter firewall removes the need for any sign-in",
-      "Users on the office network are trusted automatically",
+      "Users in trusted places, such as the office network, are allowed in automatically",
       "Access depends on identity and context such as device health",
       "Every access request is verified, even from inside the network"
     ],
@@ -1285,7 +1285,7 @@
     "skill": "Cloud definition",
     "stem": "Which is the best definition of cloud computing?",
     "options": [
-      "On-demand access to computing resources over a network, paid for as they are used",
+      "On-demand access to computing power and storage over a network, paid for as used",
       "A single large computer that every customer shares at the same time on one OS",
       "A company's own servers in a locked closet that only its staff can reach",
       "Software that is installed from a disc and runs only on the user's own laptop"
@@ -1393,7 +1393,7 @@
       "It ignores hardware costs, since servers last forever once they are bought",
       "It only counts the monthly bill from the cloud provider and nothing else",
       "It is a security score that measures how well a company handles risk",
-      "It includes hidden costs such as power, cooling, space and staff time"
+      "It includes hidden costs: power, cooling, space and staff time"
     ],
     "correct": [
       3
@@ -1412,7 +1412,7 @@
     "stem": "Which of these most often motivates an organization to pursue digital transformation?",
     "options": [
       "A wish to keep the same processes for the next decade",
-      "Customers expecting faster, more personal digital service",
+      "Customers expecting faster, more personal digital experiences",
       "A rule that every company must move to the cloud by law soon",
       "A need to buy more on-premises hardware every year"
     ],
@@ -1642,7 +1642,7 @@
     "skill": "Differentiators",
     "stem": "Which is one of Google Cloud's stated top differentiators?",
     "options": [
-      "Data centers located only in one country for simplicity",
+      "A platform with data centers in only one country for simplicity",
       "A promise never to support any open source software",
       "A rule that customers use only one programming language",
       "An AI-ready data platform with AI built into its products"
@@ -1937,7 +1937,7 @@
     "stem": "An auditor asks who changed a firewall rule last Tuesday. Which security function answers this?",
     "options": [
       "Encryption of the firewall rule at rest",
-      "Auditing through logs such as Cloud Audit Logs",
+      "Auditing through Cloud Audit Logs",
       "Authentication with a password and a code on a phone",
       "Authorization through an IAM role binding"
     ],
@@ -1979,7 +1979,7 @@
     "stem": "How can an organization stop a test project from creating more than 50 virtual CPUs in a region?",
     "options": [
       "Set a resource quota for that project",
-      "Move the project into a new folder",
+      "Move the project's resources into a new folder",
       "Create a monthly budget alert",
       "Turn on Cloud Trace for the project"
     ],
@@ -2148,7 +2148,7 @@
     "options": [
       "It offers flexible consumption models, such as committed, on-demand and Spot capacity",
       "It makes every AI workload free once a company signs any kind of Google Cloud contract",
-      "It removes the need to choose hardware, since all AI runs on standard CPUs",
+      "It removes hardware choices, such as GPUs or TPUs, since all AI runs on standard CPUs",
       "It limits each customer to one small model so that bills never grow at all"
     ],
     "correct": [
@@ -2272,9 +2272,9 @@
     "skill": "Google Cloud AI benefits",
     "stem": "Which is a key benefit of Google Cloud's AI offerings according to Google?",
     "options": [
-      "A single fixed model that cannot be tuned or grounded on company data",
+      "A platform with a single fixed model that cannot be tuned or grounded on company data",
       "A rule that models train only on data stored outside Google Cloud",
-      "An all-in-one AI developer platform with access to first-party and other models",
+      "An all-in-one environment for AI developers with access to first-party and other models",
       "A guarantee that AI projects need no data preparation or governance work"
     ],
     "correct": [
@@ -2442,7 +2442,7 @@
     "stem": "How can exposing public-facing APIs create new business opportunities? (Choose two.)",
     "options": [
       "APIs mean the company's own apps no longer need to be maintained",
-      "Partners can build new products on the company's data and services",
+      "Partners can build new products on the company's data and capabilities",
       "APIs stop competitors from ever building similar products of their own",
       "APIs remove any need to secure the data that they expose to others",
       "The company can charge for access, creating a new revenue stream"
@@ -2560,7 +2560,7 @@
     "skill": "Infrastructure",
     "stem": "In cloud terms, what does infrastructure refer to?",
     "options": [
-      "The finished software that customers buy and then use through a web browser each day",
+      "Finished software, such as email or office apps, that customers use through a web browser",
       "The staff handbook that lists each employee's role, manager and allowed working hours",
       "The physical and virtual resources, such as servers, storage and networks, that run applications",
       "The business plan that describes how a company will earn revenue next year"
@@ -2584,7 +2584,7 @@
       "Recording day-to-day transactions, such as orders and payments, as they happen",
       "Holding raw files of every format before anyone has decided how to use them",
       "Displaying dashboards and charts to managers who make business decisions",
-      "Storing years of history for complex analytical queries across the whole business"
+      "Storing years of history for analytical queries, such as trends across the whole business"
     ],
     "correct": [
       0
@@ -2604,7 +2604,7 @@
     "options": [
       "A database that stores AI models and never runs them on any request from users",
       "AI that only sorts existing records into folders by date and cannot create anything",
-      "AI that creates new content, such as text, images or code, from what it has learned",
+      "AI that creates new text, images or code from what it has learned",
       "A security product that blocks attacks on websites at the edge of the network"
     ],
     "correct": [
@@ -2791,7 +2791,7 @@
     "skill": "Billing reports and labels",
     "stem": "A finance team wants to see cloud costs broken down by department and application. What helps most?",
     "options": [
-      "Creating one project for the whole company with no labels",
+      "Putting every resource in one project for the whole company with no labels",
       "Labeling resources and using Cloud Billing reports to group costs by label",
       "Asking each team to estimate its spending from memory every month",
       "Turning off billing exports so the console shows only a single total"
@@ -3234,7 +3234,7 @@
     "options": [
       "The IT team must manage every layer, including the physical hardware",
       "The service runs only on premises and never in a Google Cloud region",
-      "The provider handles operations such as patching, backups and scaling",
+      "The provider handles patching, backups and scaling",
       "The service is run by a third party outside Google Cloud"
     ],
     "correct": [
@@ -3274,7 +3274,7 @@
     "skill": "Projects",
     "stem": "In Google Cloud, what is a project?",
     "options": [
-      "A single virtual machine with a fixed name that cannot be changed",
+      "A single virtual machine resource with a fixed name that cannot be changed",
       "A container for resources, with its own settings, permissions and billing link",
       "A folder of employees and job titles in the company's HR system",
       "A storage class for objects that are read about once a quarter"
@@ -3358,7 +3358,7 @@
     "skill": "Containers vs VMs",
     "stem": "Why might a company choose containers over virtual machines for a new app?",
     "options": [
-      "Containers start faster, use fewer resources and move easily between environments",
+      "Containers start faster, use less memory and CPU, and move easily between environments",
       "Containers can only run on premises, which avoids any cloud costs at all",
       "Containers do not need any code, so developers no longer need to write any",
       "Containers include their own full operating system, so they are always more secure"
@@ -3379,9 +3379,9 @@
     "skill": "IAM",
     "stem": "What does Identity and Access Management (IAM) control in Google Cloud?",
     "options": [
-      "Which region stores the cheapest data backups",
+      "Which region stores each resource's cheapest backups",
       "Who can take which actions on which resources",
-      "Which language a chatbot replies to users in",
+      "Which language a chatbot service replies to users in",
       "How fast traffic moves between two zones"
     ],
     "correct": [
@@ -3484,10 +3484,10 @@
     "skill": "Firewalls",
     "stem": "What does a VPC firewall rule do?",
     "options": [
-      "Translates text into many languages before it reaches the app",
+      "Translates text into many languages before it reaches a service",
       "Encrypts data while it is processed in a VM's memory",
       "Sends a budget alert when spending passes a set threshold",
-      "Allows or denies network traffic to and from resources based on set conditions"
+      "Allows or denies network traffic to and from VM instances based on set conditions"
     ],
     "correct": [
       3
@@ -3550,7 +3550,7 @@
       "Retaining the database on premises and making no change to it at all",
       "Modernizing to a different engine, such as moving to PostgreSQL on AlloyDB or Cloud SQL",
       "Retiring the database and deleting all of its data without moving any of it",
-      "Lifting and shifting the same licensed database onto a Compute Engine VM with no changes"
+      "Lifting and shifting the same licensed database onto a host such as a Compute Engine VM"
     ],
     "correct": [
       1
@@ -3737,7 +3737,7 @@
     "stem": "Which layers does Google Cloud describe securing in the AI stack?",
     "options": [
       "Only the user's laptop and the office network",
-      "Only the billing account and the payment card",
+      "Only the billing platform and the payment card",
       "Infrastructure, data, models, platform and agents",
       "Only the physical buildings and their power supply"
     ],
@@ -3863,7 +3863,7 @@
     "stem": "Among the golden signals, what does saturation measure?",
     "options": [
       "How long each request takes from start to finish for the end user",
-      "How full a resource is, such as memory or CPU nearing its limit",
+      "How close a system is to full, for example memory or CPU nearing its limit",
       "How many users visit the site in a given minute of the day",
       "How many requests fail with an error out of all the requests"
     ],
@@ -4011,7 +4011,7 @@
     "stem": "Why might an organization choose a multicloud strategy? (Choose two.)",
     "options": [
       "To guarantee that every provider charges exactly the same price",
-      "To use the best service for each job from different providers",
+      "To use the best product for each job from different providers",
       "To avoid having to manage identity or access for any users",
       "To make sure that no data is ever stored in any public cloud",
       "To meet rules or resilience goals that call for more than one provider"
@@ -4083,7 +4083,7 @@
     "stem": "Which two pairings of migration approach and description are correct? (Choose two.)",
     "options": [
       "Retain: rebuild the solution around a new business process",
-      "Replatform: make a few changes, such as a managed database",
+      "Replatform: make a few changes, like moving to a managed database",
       "Rehost: move as is, with no code changes",
       "Retire: rewrite the application into microservices",
       "Refactor: switch the application off for good"
@@ -4134,7 +4134,7 @@
       "SRE requires that systems never have any downtime at all",
       "SLAs are internal goals that customers never get to see",
       "SRE applies software engineering to operations problems",
-      "Both aim to release changes quickly while keeping services reliable"
+      "Both aim to release changes quickly while keeping systems reliable"
     ],
     "correct": [
       3,

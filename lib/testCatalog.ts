@@ -619,9 +619,7 @@ const GROUPS: { title: string; ids: string[] }[] = [
   { title: "Business and project management", ids: ["pmp", "capm", "prince2", "cssgb", "psm", "itil"] },
   { title: "Human resources exams", ids: ["phr"] },
   { title: "Emergency services", ids: ["emt", "paramedic", "cpr", "ffi", "police"] },
-  { title: "Healthcare certification exams", ids: ["nclex", "nclexpn", "ccrn", "cna", "cpcta", "mace", "ccma", "cma", "rma", "cmaa", "cehrs", "ncma", "cen", "cpc", "cca", "ccs", "rbt", "qabaabat", "arrt", "nptepta", "rdexam", "naplex", "ptcb", "phleb", "cet", "danb", "nbdhe", "htl", "cst", "crcst", "cbspd", "vtne", "bcba", "bcaba", "hspacer", "hspachl", "rpt", "ascppbt", "ascpmlt", "hspacis", "pance"] },
-  { title: "Healthcare certification exams", ids: ["nclex", "nclexpn", "ccrn", "cna", "cpcta", "mace", "ccma", "cma", "rma", "cmaa", "cehrs", "ncma", "cen", "cpc", "cca", "ccs", "rbt", "arrt", "nptepta", "rdexam", "naplex", "ptcb", "phleb", "cet", "danb", "nbdhe", "htl", "cst", "crcst", "cbspd", "vtne", "bcba", "bcaba", "hspacer", "hspachl", "rpt", "ascppbt", "ncpt", "ascpmlt", "hspacis", "pance"] },
-  { title: "Healthcare certification exams", ids: ["nclex", "nclexpn", "ccrn", "cna", "cpcta", "mace", "ccma", "cma", "rma", "cmaa", "cehrs", "ncma", "cen", "cpc", "cca", "ccs", "rbt", "arrt", "nptepta", "rdexam", "naplex", "ptcb", "phleb", "cet", "danb", "nbdhe", "inbde", "htl", "cst", "crcst", "cbspd", "vtne", "bcba", "bcaba", "hspacer", "hspachl", "rpt", "ascppbt", "ascpmlt", "hspacis", "pance"] },
+  { title: "Healthcare certification exams", ids: ["nclex", "nclexpn", "ccrn", "cna", "cpcta", "mace", "ccma", "cma", "rma", "cmaa", "cehrs", "ncma", "cen", "cpc", "cca", "ccs", "rbt", "qabaabat", "arrt", "nptepta", "rdexam", "naplex", "ptcb", "phleb", "cet", "danb", "nbdhe", "inbde", "htl", "cst", "crcst", "cbspd", "vtne", "bcba", "bcaba", "hspacer", "hspachl", "rpt", "ascppbt", "ncpt", "ascpmlt", "hspacis", "pance"] },
   { title: "Social work and counseling exams", ids: ["aswb", "aswbclin", "nce", "cadc"] },
   { title: "International nurse licensing exams", ids: ["uknmc", "gulfrn", "hknurse"] },
 ];

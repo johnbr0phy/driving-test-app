@@ -7,17 +7,28 @@
 // an opaque card, or in from the bottom or a side of the screen, and only
 // where nothing (text, buttons, other cards) sits in front of the visible
 // part. Scrolling startles a card tiger back down, since the card moves.
+// Each peek is a random tiger from every set on the site (the site mascot and
+// every exam's own art), only ever a happy face; the crowned face appears
+// only for Premium accounts.
 
 import { useEffect, useRef } from "react";
-import { getSiteTigerAsset, type TigerExpression } from "@/lib/tigerAssets";
+import { getSiteTigerAsset, TIGER_EXAM_IDS, type TigerExpression } from "@/lib/tigerAssets";
+import { useIsPremium } from "@/hooks/useIsPremium";
 
 const SIZE = 76; // px, the head's width
 const SHOW = 0.6; // share of the head that rises above the edge
 const DURATION = 3600;
 const MAX_AT_ONCE = 2;
-const PEEK_FACES: TigerExpression[] = [3, 4, 5, 3, 4];
+// Happy faces only: 2 laughing, 3 smiling, 4 grinning. 1 is the same joy
+// wearing a crown, so it is for Premium accounts only.
+const HAPPY_FACES: TigerExpression[] = [2, 3, 4];
+const CROWN: TigerExpression = 1;
 const GRIN: TigerExpression = 2;
-const SCARED: TigerExpression = 8;
+const SETS: (string | null)[] = [null, ...TIGER_EXAM_IDS]; // null: the site mascot
+
+function tigerSrc(set: string | null, face: TigerExpression): string {
+  return set ? `/tigers/${set}/tiger_face_${String(face).padStart(2, "0")}.png` : getSiteTigerAsset(face);
+}
 
 type Peek = { x: number; y: number; angle: number; card: boolean };
 
@@ -118,13 +129,14 @@ function findEdgePeek(): Peek | null {
 
 export function SuperAmazingTigers() {
   const layer = useRef<HTMLDivElement>(null);
+  const { isPremium } = useIsPremium();
+  const premium = useRef(isPremium);
+  premium.current = isPremium;
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const root = layer.current;
     if (!root) return;
-
-    [...PEEK_FACES, GRIN, SCARED].forEach((f) => { new Image().src = getSiteTigerAsset(f); });
 
     let timer: ReturnType<typeof setTimeout>;
     let stopped = false;
@@ -141,7 +153,10 @@ export function SuperAmazingTigers() {
       const wrap = document.createElement("div");
       wrap.style.cssText = `position:absolute;left:${p.x - SIZE / 2}px;top:${p.y - SIZE}px;width:${SIZE}px;height:${SIZE}px;transform-origin:50% 100%;transform:rotate(${p.angle}deg)`;
       const img = document.createElement("img");
-      img.src = getSiteTigerAsset(PEEK_FACES[Math.floor(Math.random() * PEEK_FACES.length)]);
+      const set = SETS[Math.floor(Math.random() * SETS.length)];
+      const faces = premium.current ? [...HAPPY_FACES, CROWN] : HAPPY_FACES;
+      const face = faces[Math.floor(Math.random() * faces.length)];
+      img.src = tigerSrc(set, face);
       img.alt = "";
       img.draggable = false;
       img.style.cssText = `display:block;width:100%;height:auto;transform-origin:50% 85%;transform:${hidden};filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))`;
@@ -164,7 +179,7 @@ export function SuperAmazingTigers() {
         ],
         { duration: DURATION, easing: "ease-in-out", fill: "forwards" },
       );
-      const grin = Math.random() < 0.35 ? setTimeout(() => { img.src = getSiteTigerAsset(GRIN); }, DURATION * 0.4) : undefined;
+      const grin = face !== GRIN && face !== CROWN && Math.random() < 0.35 ? setTimeout(() => { img.src = tigerSrc(set, GRIN); }, DURATION * 0.4) : undefined;
 
       const done = () => { clearTimeout(grin); live.delete(duck); wrap.remove(); };
       // A card tiger is placed in screen coordinates, so it ducks when the page scrolls.
@@ -173,7 +188,6 @@ export function SuperAmazingTigers() {
         clearTimeout(grin);
         const from = getComputedStyle(img).transform;
         anim.cancel();
-        img.src = getSiteTigerAsset(SCARED);
         img.animate([{ transform: from }, { transform: hidden }], { duration: 180, easing: "ease-in", fill: "forwards" })
           .onfinish = done;
       };

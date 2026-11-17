@@ -2862,6 +2862,15 @@ export const zh: TranslationKeys = {
     bcgConduct: "Code of Conduct & Privacy",
     bcgReports: "Notes, Reports & Evidence",
     bcgSafety: "Personal Safety & Emergencies",
+    // caabguard
+    abgIndustry: "Security Industry, Licensing & Conduct",
+    abgLaw: "The Charter, Arrest, Search & Trespass",
+    abgForce: "Use of Force",
+    abgPatrol: "Observation, Patrol & Access Control",
+    abgComm: "Communication & Interviews",
+    abgNotes: "Notebooks, Reports & Evidence",
+    abgEmergency: "Alarms, Fire & Bomb Threats",
+    abgSafety: "Health & Safety on the Job",
     // aerera
     aereraLand: "Land Registration & the Land Department",
     aereraRegister: "The Broker Register & Registration",

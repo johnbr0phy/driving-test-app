@@ -5829,6 +5829,18 @@
     --brand-border: 239 12% 76%;
     --brand-border-light: 239 12% 88%;
     --brand-gradient-to: 241 20% 95%;
+  /* Alberta ABST security worker exam theme: very dark muted red-brown */
+  [data-theme="caabguard"] {
+    --brand: 6 15% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 6 30% 96%;
+    --brand-hover: 6 15% 14%;
+    --brand-dark: 6 15% 12%;
+    --brand-darker: 6 15% 8%;
+    --brand-muted: 6 12% 62%;
+    --brand-border: 6 15% 78%;
+    --brand-border-light: 6 20% 88%;
+    --brand-gradient-to: 6 30% 93%;
   }
   /* HCAP (Ireland deer hunter competence) theme: emerald green */
   [data-theme="iehcap"] {
@@ -10909,6 +10921,16 @@
     --brand-muted: 239 10% 45%;
     --brand-dark: 239 15% 65%;
     --brand-darker: 239 15% 78%;
+  .dark [data-theme="caabguard"] {
+    --brand: 6 15% 48.6%;
+    --brand-hover: 6 15% 40.6%;
+    --brand-light: 6 30% 13%;
+    --brand-gradient-to: 6 30% 11%;
+    --brand-border-light: 6 20% 24%;
+    --brand-border: 6 15% 34%;
+    --brand-muted: 6 12% 45%;
+    --brand-dark: 6 15% 65%;
+    --brand-darker: 6 15% 78%;
   }
   .dark [data-theme="iehcap"] {
     --brand-light: 148 45% 13%;

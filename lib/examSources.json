@@ -280,6 +280,12 @@
   "https://open.alberta.ca/dataset/387f4e8a-6c0a-456a-ab31-995aadaf1f2b/resource/5babee5c-040d-4e41-981a-04f22e839aac/download/tec-drivers-guide-2026.pdf",
   "https://www.alberta.ca/drivers-knowledge-test"
  ],
+ "caabguard": [
+  "https://www.alberta.ca/security-service-worker-licence",
+  "https://open.alberta.ca/dataset/698c1720-9dbf-44b2-9978-492b2a0f08cc/resource/6604778b-2c73-44bb-9487-3624d7131bd1/download/sched-a-examination-process-handout-january-2015-1.pdf",
+  "https://open.alberta.ca/publications/alberta-basic-security-training-participant-manual-third-edition",
+  "https://kings-printer.alberta.ca/documents/Regs/2010_055.pdf"
+ ],
  "caauto": [
   "https://red-seal.ca/eng/trades/autoservtech/exam-information.shtml",
   "https://red-seal.ca/eng/trades/autoservtech/exam-weightings.shtml",

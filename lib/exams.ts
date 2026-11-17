@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard";
+export type ExamId = "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -22136,6 +22136,71 @@ const iehcap: ExamConfig = {
   },
 };
 
+const caabguard: ExamConfig = {
+  id: "caabguard",
+  stateCode: "CAABGUARD",
+  idBase: 33200,
+  slug: "/alberta-security-guard",
+  landingPath: "/alberta-basic-security-training-practice-test",
+  name: "Alberta Security Guard (ABST) Practice Test",
+  shortName: "Alberta ABST",
+  examLabel: "ABST provincial exam",
+  fullName: "Alberta Basic Security Training provincial exam (security worker licence)",
+  questionIdPrefix: "CAABG-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Alberta: the provincial final exam after the Alberta Basic Security Training course, needed for a
+  // security services worker licence under the Security Services and Investigators Act. alberta.ca and
+  // the Ministry's exam process (Schedule A, 2015) set the pass at 80%; no question count, time or
+  // topic weights are published. Tigertest's blueprint follows the seven modules of the ABST
+  // Participant Manual (3rd ed., 2014), with the law taken from current consolidations: industry and
+  // licensing 9, Charter, arrest, search and trespass 8, use of force 5, patrol 8, communication 6,
+  // notes and evidence 6, alarms and emergencies 5, health and safety 3.
+  blueprint: {
+    abgIndustry: 9,
+    abgLaw: 8,
+    abgForce: 5,
+    abgPatrol: 8,
+    abgComm: 6,
+    abgNotes: 6,
+    abgEmergency: 5,
+    abgSafety: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 33201, name: "Security Industry & Licensing", categories: ["abgIndustry"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 33202, name: "The Law & Use of Force", categories: ["abgLaw", "abgForce"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 33203, name: "Patrol & Communication", categories: ["abgPatrol", "abgComm"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 33204, name: "Notes, Emergencies & Safety", categories: ["abgNotes", "abgEmergency", "abgSafety"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    abgIndustry: "Security Industry, Licensing & Conduct",
+    abgLaw: "The Charter, Arrest, Search & Trespass",
+    abgForce: "Use of Force",
+    abgPatrol: "Observation, Patrol & Access Control",
+    abgComm: "Communication & Interviews",
+    abgNotes: "Notebooks, Reports & Evidence",
+    abgEmergency: "Alarms, Fire & Bomb Threats",
+    abgSafety: "Health & Safety on the Job",
+  },
+  copy: {
+    guestPrompt: "to save your Alberta security exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets over the seven ABST modules: the security industry and licensing, the law and use of force, patrol and communication, and notes, emergencies and safety. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every module, 40 to pass",
+    heroSubs: [
+      "Four topic sets, four mock tests. Start with Security Industry & Licensing.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Ready for the provincial ABST exam.",
+    ],
+    sourceLine: "Based on the Alberta Basic Security Training Participant Manual, the Security Services and Investigators Act and its regulations, the Trespass to Premises Act, the Petty Trespass Act and the Criminal Code. Original questions; the real exam needs 80%. Not affiliated with the Government of Alberta.",
+    analyticsKey: "caabguard",
+  },
+};
+
 
 const nzrealestate: ExamConfig = {
   id: "nzrealestate",
@@ -22550,7 +22615,7 @@ const smartserve: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

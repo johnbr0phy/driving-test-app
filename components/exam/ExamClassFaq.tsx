@@ -276,6 +276,7 @@ export const TEACHES: Record<string, string> = {
   caweld: "a welding program",
   cawhmis: "WHMIS training for new hires or a co-op class",
   caguard: "an Ontario security guard course",
+  caabguard: "an Alberta Basic Security Training course",
   auwhite: "White Card courses",
   aursa: "an RSA course",
   aurcg: "an RCG or RSG course",

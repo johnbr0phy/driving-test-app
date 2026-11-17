@@ -263,3 +263,12 @@ The bank was first built as option "families" (four questions sharing one option
 
 ## Second review, 2026-11-17
 200 questions answered blind from stem and options; 200 of 200 agreed with the key. Load-chart arithmetic (net payload, 75% sums, parts of line, radius, area) recomputed: all correct. Rules checked against OSHA 1926.1411 (Table T, spotter), 1413 (rope categories and counts, power-line contact), 1415 (horn, pedal lock, holding valve), 1416 (Category I 7 days, II 30 days, temporary alternatives), 1417 (b)(2)/(b)(3) qualified person vs RPE, (j), (m), (o)(3), (s) first-lift brake test, (u) tire pressure), 1412 (idle 3 months, 3 and 12 month records), 1432 (qualified person plans, lift director reviews). No fixes needed; no changes made.
+
+## Third review (blind, Opus), 2026-11-17
+200 of 200 blind answers agreed with the key. Six questions were listed for lower confidence or wording notes; rules re-read on osha.gov (29 CFR 1926.1417(o)(3) and 1926.1413(a)(4)(iii); eCFR blocked automated reads).
+- NCCCO-OPS-021: key right, stem muddled. 1417(o)(3)(ii): when the weighing device, LMI, RCI or RCL shows over 75% at the longest radius, the operator must not proceed until the weight is verified under (o)(3)(i). Stem now names (o)(3)(ii) and the LMI reading; key reworded ("Confirm it by source or calculation"), the indicator distractor made explicit, explanation cites both paragraphs.
+- NCCCO-TECH-029: key right. 1413(a)(4)(iii)(B) allows severing only for deficiencies other than power line contact, so replacement is required. Key reworded to "Replace it; no severing or repair"; explanation now states the severing exclusion.
+- NCCCO-CHART-004: no fact problem; stem reworded so "line capacity" no longer hints at the parts-of-line table.
+- NCCCO-CHART-013: too easy (stem gave the conversion). Now 1.5 short tons, no conversion given; distractors 1.5 tonnes (3,307 lb), 1.5 long tons (3,360 lb), 1,500 lb.
+- NCCCO-CHART-028: key said "reach" for a hook-height shortfall; now "The hook height falls 6 ft short", explanation shows 76 - 70.
+- NCCCO-CHART-036: stem now states the 7 ft move is straight outward along the radius line.

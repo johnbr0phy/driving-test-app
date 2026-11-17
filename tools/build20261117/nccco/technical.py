@@ -85,8 +85,8 @@ Q('For ordinary running rope, how many randomly distributed broken wires within 
  'Six broken wires','Three broken wires','Four broken wires','Twelve broken wires',
  'Six randomly distributed breaks in one rope lay meet that criterion; the separate single-strand criterion is three.')
 Q('A wire rope has contacted an energized power line. What disposition addresses this Category III condition?',
- 'Replace it; repair is not allowed','Inspect it monthly from now on','Cut out the contacted length and splice','Halve its rated load',
- 'Repair of rope that contacted an energized power line is prohibited; it must be replaced before operations involving that rope resume.')
+ 'Replace it; no severing or repair','Inspect it monthly from now on','Cut out the contacted length and splice','Halve its rated load',
+ 'Under 1926.1413(a)(4)(iii) the rope must be replaced before operations with it resume. Severing out a localized deficiency is allowed only for deficiencies other than power line contact, splicing is prohibited, and repair of rope that contacted an energized power line is prohibited.')
 Q('At an annual inspection, the qualified person finds a condition that is not yet a safety hazard but explicitly requires monitoring. What must the employer arrange?',
  'Checks at each monthly inspection','A recheck at the next annual inspection','Immediate removal from service','A written note only',
  'The condition must be checked in the monthly inspections under 1926.1412(f)(6); waiting a year is too long.')

@@ -9,7 +9,7 @@ Q('Which diagram primarily relates boom geometry to achievable hook height and h
 Q('Which diagram shows the sectors in which a crane may lift under a particular rating?',
  'The work-area diagram','The working-range diagram','The rated-capacity chart','The load-moment curve',
  'The work-area diagram identifies sectors such as over-side or over-rear; ratings must match the actual sector.')
-Q('Which information determines the required reeving arrangement and available line capacity for the intended load?',
+Q('Which information tells the crew how the hoist must be reeved, and what each reeving allows, for the intended load?',
  'The parts-of-line table','The work-area diagram','The working-range diagram','The rated-capacity chart alone',
  'Parts-of-line information specifies reeving and line limitations, which must be satisfied alongside chart capacity.')
 Q('Two chart pages differ only between full and intermediate support-beam deployment. What setup feature selects the page?',
@@ -36,9 +36,9 @@ Q('The chart note says to subtract all suspended handling equipment from gross c
 Q('A proposed geometry lies below the manufacturer\'s stated angle boundary even though a weight calculation appears acceptable. Which limit is violated?',
  'The minimum boom angle','The maximum boom angle','The line-pull limit','The tail-swing limit',
  'Minimum boom-angle limits are independent constraints; a capacity calculation does not override them. Below the boundary means the minimum, not the maximum.')
-Q('A shipment record gives an object\'s mass as 1 US short ton. Using 2,000 lb per short ton, what weight enters this illustrative load calculation?',
- '2,000 pounds','2,205 pounds','2,240 pounds','1,000 pounds',
- 'One US short ton equals 2,000 lb; 2,205 lb is a metric tonne and 2,240 lb a long ton.')
+Q('A shipment record gives an object\'s weight as 1.5 US short tons. What weight in pounds enters this illustrative load calculation?',
+ '3,000 pounds','3,307 pounds','3,360 pounds','1,500 pounds',
+ 'One US short ton is 2,000 lb, so 1.5 x 2,000 = 3,000 lb; 3,307 lb would be 1.5 metric tonnes and 3,360 lb 1.5 long tons.')
 Q('An original training chart lists a gross capacity of 4 US short tons. The problem specifies 4,000 lb of deductions. What net payload remains?',
  '4,000 pounds','8,000 pounds','6,000 pounds','12,000 pounds',
  '4 x 2,000 = 8,000 lb gross; 8,000 - 4,000 = 4,000 lb net.')
@@ -82,8 +82,8 @@ Q('A training plan has 20,000 lb chart capacity, 18,000 lb reeving capacity and 
  'The 10,000 lb rigging limit','The 20,000 lb chart limit','The 18,000 lb reeving limit','The 48,000 lb combined total',
  'The 10,000 lb rigging limit is the weakest stated part of the load path.')
 Q('An illustrative load is within every weight limit, but the range diagram allows 70 ft hook height where the placement needs 76 ft. What prevents this plan?',
- 'The reach falls 6 ft short','The rigging rating is too low','The gross load is over the chart','Nothing, as every weight limit is met',
- 'The geometry fails the reach requirement; sufficient weight capacity cannot create additional hook height.')
+ 'The hook height falls 6 ft short','The rigging rating is too low','The gross load is over the chart','Nothing, as every weight limit is met',
+ '76 - 70 = 6 ft: the geometry fails the hook-height requirement, and spare weight capacity cannot create additional hook height.')
 Q('An illustrative net payload allowance is 7,500 lb and the proposed object weighs 7,000 lb. How much payload allowance remains?',
  '500 pounds','1,000 pounds','14,500 pounds','7,000 pounds',
  '7,500 - 7,000 = 500 lb; this arithmetic margin does not waive any other limit.')
@@ -105,7 +105,7 @@ Q('A schematic places the rotation axis, front-edge reference and load on one ho
 Q('An illustrative range diagram states that a selected boom/angle combination places the hook 30 ft horizontally from the rotation axis and 50 ft above ground. What radius is used?',
  '30 feet','50 feet','58 feet','40 feet',
  'Use the horizontal 30 ft radius, not the 50 ft hook height or the straight-line distance to the hook.')
-Q('An original planning sketch gives a 28 ft radius before a 7 ft outward relocation of the load. What is the new horizontal radius?',
+Q('An original planning sketch gives a 28 ft radius before the load is relocated 7 ft straight outward along the radius line, directly away from the crane\'s centre of rotation. What is the new horizontal radius?',
  '35 feet','28 feet','21 feet','42 feet',
  '28 + 7 = 35 ft; moving outward adds to the radius, and the new radius must be checked against the correct chart.')
 Q('The selected chart distinguishes side and rear sectors. A lift remains wholly in a sector labelled over-side. Which sector rating applies?',

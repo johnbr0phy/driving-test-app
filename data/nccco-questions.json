@@ -900,14 +900,14 @@
     "state": "ALL",
     "questionId": "NCCCO-OPS-021",
     "category": "ncccoOperations",
-    "question": "A load-indicating method shows that a load exceeds 75% of maximum rated capacity at the longest planned radius. What must happen before proceeding under OSHA 1926.1417(o)(3)?",
-    "optionA": "Confirm the weight by a reliable means",
-    "optionB": "Proceed, since the device shows it",
+    "question": "Under OSHA 1926.1417(o)(3)(ii), an operator begins hoisting and the load moment indicator shows the load exceeds 75% of maximum rated capacity at the longest radius to be used. What must happen next?",
+    "optionA": "Confirm it by source or calculation",
+    "optionB": "Proceed, since the indicator has weighed it",
     "optionC": "Reduce speed and proceed",
     "optionD": "Add counterweight and proceed",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Above that threshold the weight must be verified by an industry-recognised source, calculation or equally reliable means before proceeding. Extra counterweight beyond the specification is never allowed."
+    "explanation": "Under 1926.1417(o)(3)(ii) the operator must not proceed until the weight is verified under (o)(3)(i): an industry-recognised source, a recognised calculation method or other equally reliable means. The indicator reading alone does not clear the lift, and extra counterweight beyond the specification is never allowed."
   },
   {
     "type": "NCCCO",
@@ -1797,13 +1797,13 @@
     "questionId": "NCCCO-TECH-029",
     "category": "ncccoTechnical",
     "question": "A wire rope has contacted an energized power line. What disposition addresses this Category III condition?",
-    "optionA": "Replace it; repair is not allowed",
+    "optionA": "Replace it; no severing or repair",
     "optionB": "Inspect it monthly from now on",
     "optionC": "Cut out the contacted length and splice",
     "optionD": "Halve its rated load",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Repair of rope that contacted an energized power line is prohibited; it must be replaced before operations involving that rope resume."
+    "explanation": "Under 1926.1413(a)(4)(iii) the rope must be replaced before operations with it resume. Severing out a localized deficiency is allowed only for deficiencies other than power line contact, splicing is prohibited, and repair of rope that contacted an energized power line is prohibited."
   },
   {
     "type": "NCCCO",
@@ -2118,7 +2118,7 @@
     "state": "ALL",
     "questionId": "NCCCO-CHART-004",
     "category": "ncccoCharts",
-    "question": "Which information determines the required reeving arrangement and available line capacity for the intended load?",
+    "question": "Which information tells the crew how the hoist must be reeved, and what each reeving allows, for the intended load?",
     "optionA": "The work-area diagram",
     "optionB": "The working-range diagram",
     "optionC": "The rated-capacity chart alone",
@@ -2244,14 +2244,14 @@
     "state": "ALL",
     "questionId": "NCCCO-CHART-013",
     "category": "ncccoCharts",
-    "question": "A shipment record gives an object's mass as 1 US short ton. Using 2,000 lb per short ton, what weight enters this illustrative load calculation?",
-    "optionA": "2,000 pounds",
-    "optionB": "2,205 pounds",
-    "optionC": "2,240 pounds",
-    "optionD": "1,000 pounds",
+    "question": "A shipment record gives an object's weight as 1.5 US short tons. What weight in pounds enters this illustrative load calculation?",
+    "optionA": "3,000 pounds",
+    "optionB": "3,307 pounds",
+    "optionC": "3,360 pounds",
+    "optionD": "1,500 pounds",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "One US short ton equals 2,000 lb; 2,205 lb is a metric tonne and 2,240 lb a long ton."
+    "explanation": "One US short ton is 2,000 lb, so 1.5 x 2,000 = 3,000 lb; 3,307 lb would be 1.5 metric tonnes and 3,360 lb 1.5 long tons."
   },
   {
     "type": "NCCCO",
@@ -2458,10 +2458,10 @@
     "optionA": "The rigging rating is too low",
     "optionB": "The gross load is over the chart",
     "optionC": "Nothing, as every weight limit is met",
-    "optionD": "The reach falls 6 ft short",
+    "optionD": "The hook height falls 6 ft short",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The geometry fails the reach requirement; sufficient weight capacity cannot create additional hook height."
+    "explanation": "76 - 70 = 6 ft: the geometry fails the hook-height requirement, and spare weight capacity cannot create additional hook height."
   },
   {
     "type": "NCCCO",
@@ -2566,7 +2566,7 @@
     "state": "ALL",
     "questionId": "NCCCO-CHART-036",
     "category": "ncccoCharts",
-    "question": "An original planning sketch gives a 28 ft radius before a 7 ft outward relocation of the load. What is the new horizontal radius?",
+    "question": "An original planning sketch gives a 28 ft radius before the load is relocated 7 ft straight outward along the radius line, directly away from the crane's centre of rotation. What is the new horizontal radius?",
     "optionA": "28 feet",
     "optionB": "21 feet",
     "optionC": "42 feet",

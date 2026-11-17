@@ -60,9 +60,9 @@ Q('For a power-line plan using Table A, who provides the requested line-voltage 
 Q('A worker other than the designated signal person sees someone enter immediate danger. Who may give the emergency-stop signal?',
  'Anyone who sees the danger','Only the designated signal person','Only the lift director','Only the A/D director',
  'Anyone aware of a safety problem may give the stop or emergency-stop signal, and the operator must obey it.')
-Q('A load-indicating method shows that a load exceeds 75% of maximum rated capacity at the longest planned radius. What must happen before proceeding under OSHA 1926.1417(o)(3)?',
- 'Confirm the weight by a reliable means','Proceed, since the device shows it','Reduce speed and proceed','Add counterweight and proceed',
- 'Above that threshold the weight must be verified by an industry-recognised source, calculation or equally reliable means before proceeding. Extra counterweight beyond the specification is never allowed.')
+Q('Under OSHA 1926.1417(o)(3)(ii), an operator begins hoisting and the load moment indicator shows the load exceeds 75% of maximum rated capacity at the longest radius to be used. What must happen next?',
+ 'Confirm it by source or calculation','Proceed, since the indicator has weighed it','Reduce speed and proceed','Add counterweight and proceed',
+ 'Under 1926.1417(o)(3)(ii) the operator must not proceed until the weight is verified under (o)(3)(i): an industry-recognised source, a recognised calculation method or other equally reliable means. The indicator reading alone does not clear the lift, and extra counterweight beyond the specification is never allowed.')
 Q('A competent person identifies slack rope that requires re-spooling. What must be verified as slack is removed before lifting?',
  'Correct seating on drum and sheaves','The rope is fully unwound','The hook is resting on the ground mat','The boom is at minimum angle',
  'Under 1926.1417(m) the rope must be properly seated on the drum and in the sheaves as slack is removed.')

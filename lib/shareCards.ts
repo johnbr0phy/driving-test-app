@@ -1189,6 +1189,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(170, 20%, 38%)",
     "tint": "hsl(170, 30%, 95%)"
   },
+  "caairbrake": {
+    "color": "hsl(48, 15%, 38%)",
+    "tint": "hsl(48, 15%, 95%)"
+  },
   "iehcap": {
     "color": "hsl(148, 90%, 32%)",
     "tint": "hsl(148, 70%, 96%)"

@@ -5789,6 +5789,19 @@
     --brand-border-light: 148 25% 88%;
     --brand-gradient-to: 150 70% 95%;
   }
+  /* Ontario air brake (Z) theme: muted brass (48 at 15% so it sits clear of the golds) */
+  [data-theme="caairbrake"] {
+    --brand: 48 15% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 48 15% 95%;
+    --brand-hover: 48 15% 34%;
+    --brand-dark: 48 15% 31%;
+    --brand-darker: 48 15% 25%;
+    --brand-muted: 48 15% 70%;
+    --brand-border: 48 15% 76%;
+    --brand-border-light: 48 15% 88%;
+    --brand-gradient-to: 60 15% 95%;
+  }
   /* Dubai RERA real estate broker exam theme: deep leaf green (the only free hue under the clash rule) */
   [data-theme="aerera"] {
     --brand: 94 60% 26%;
@@ -10766,6 +10779,17 @@
     --brand-muted: 148 25% 45%;
     --brand-dark: 148 90% 65%;
     --brand-darker: 148 85% 78%;
+  }
+  .dark [data-theme="caairbrake"] {
+    --brand: 48 15% 42.2%;
+    --brand-hover: 48 15% 34.2%;
+    --brand-light: 48 15% 13%;
+    --brand-gradient-to: 60 15% 11%;
+    --brand-border-light: 48 15% 24%;
+    --brand-border: 48 15% 34%;
+    --brand-muted: 48 15% 45%;
+    --brand-dark: 48 15% 65%;
+    --brand-darker: 48 15% 78%;
   }
   .dark [data-theme="aerera"] {
     --brand: 94 60% 32%;

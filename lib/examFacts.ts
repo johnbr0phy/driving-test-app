@@ -6368,6 +6368,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
     source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
   },
+  caairbrake: {
+    answer:
+      "In Ontario you need an air brake (Z) endorsement on your driver's licence to drive a vehicle with an air brake or air-over-hydraulic brake system. The Ministry of Transportation (MTO) offers two routes: an air brake endorsement course from a vehicle fleet owner, community college or safety organization, or tests at a DriveTest centre, an air brake knowledge test followed by a practical test. MTO says its Official Air Brake Handbook contains what you need for the knowledge test. MTO does not publish the number of questions or the pass mark; guides say it is multiple choice with a pass mark of about 80%. Since September 1, 2023, renewals use an online air brake learning module instead of the knowledge test.",
+    rows: [
+      { label: "Run by", value: "Ontario Ministry of Transportation, at DriveTest centres" },
+      { label: "Needed for", value: "Vehicles with air brakes or air-over-hydraulic brakes" },
+      { label: "Tests", value: "Knowledge test, then a practical test (or an approved course)" },
+      { label: "Study guide", value: "The Official Air Brake Handbook (MTO)" },
+      { label: "Pass mark", value: "Not published by MTO; guides say about 80%" },
+      { label: "Renewal", value: "Online learning module; from age 80, module and practical test each year" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 80% target" },
+    ],
+    basedOn: "MTO's Official Air Brake Handbook and its Get a truck driver's licence page, checked November 2026",
+    source: { name: "Ontario: The Official Air Brake Handbook", url: "https://www.ontario.ca/document/official-air-brake-handbook" },
+  },
   iehcap: {
     answer:
       "HCAP, the Hunter Competence Assessment Programme, is Ireland's deer hunter certification run by the Deer Alliance HCAP Assessment Committee. NPWS lists it as one of three approved courses for first-time Deer Hunting Licence applicants, and the Deer Alliance says Coillte requires HCAP or an equivalent for hunting deer on its forests. The first stage is a written multiple-choice test of 50 questions, and you need 40 correct (80%). Candidates who pass go on to a Range Test at 100 metres and then an oral safety examination. The Stalker Training Manual is the core text, and the written test covers deer biology and species, management, rifles and firearms safety, the law and carcase handling.",

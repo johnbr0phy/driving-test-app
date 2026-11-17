@@ -436,6 +436,14 @@
       "what": "NZQA qualification 3111 (NZ Certificate in Real Estate (Salesperson) (Level 4)) version 2 has a last date of assessment of 31 May 2027, and version 3 follows the May 2025 review, which widened the graduate profile to business broking, rural, and commercial and industrial real estate.",
       "action": "Read the version 3 qualification record and REA's qualification page; add any new topics and update the examFacts and landing.",
       "source": "https://www.nzqa.govt.nz/nqfdocs/summaries/2025/may25/revsummay25-12.html"
+    },
+    {
+      "exam": "caabguard",
+      "date": "2028-03-31",
+      "kind": "law",
+      "what": "The Security Services and Investigators Regulation (AR 52/2010) and Ministerial Regulation (AR 55/2010) expire on March 31, 2028 unless repassed, possibly amended.",
+      "action": "Read the new or repassed regulations and update the licensing, uniform, baton and reporting items.",
+      "source": "https://kings-printer.alberta.ca/documents/Regs/2010_055.pdf"
     }
   ]
 }

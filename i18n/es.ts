@@ -2796,6 +2796,15 @@ export const es: TranslationKeys = {
     hcapLaw: "Deer Hunting & the Law",
     hcapCarcase: "Carcase Handling & Food Safety",
     hcapHabitat: "Forestry, Habitats & Conservation",
+    // caabguard
+    abgIndustry: "Security Industry, Licensing & Conduct",
+    abgLaw: "The Charter, Arrest, Search & Trespass",
+    abgForce: "Use of Force",
+    abgPatrol: "Observation, Patrol & Access Control",
+    abgComm: "Communication & Interviews",
+    abgNotes: "Notebooks, Reports & Evidence",
+    abgEmergency: "Alarms, Fire & Bomb Threats",
+    abgSafety: "Health & Safety on the Job",
     // aerera
     aereraLand: "Land Registration & the Land Department",
     aereraRegister: "The Broker Register & Registration",

@@ -288,6 +288,10 @@ const CASES = [
   ["deer stalking certificate", "UK", "ukdsc1"],
   ["dsc level 1", "UK", "ukdsc1"],
   ["bc core", "CA", "cacore"],
+  ["abst exam", "CA", "caabguard"],
+  ["alberta security guard test", "CA", "caabguard"],
+  ["alberta security licence", "CA", "caabguard"],
+  ["alberta basic security training", "CA", "caabguard"],
   ["core exam", "CA", "cacore"],
   ["bc hunting test", "CA", "cacore"],
 ];

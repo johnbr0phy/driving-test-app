@@ -1606,6 +1606,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Health Canada's amended Hazardous Products Regulations page and CCOHS WHMIS fact sheets, checked October 2026",
     source: { name: "Health Canada: Amended Hazardous Products Regulations", url: "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system/amendments-hazardous-products-regulations.html" },
   },
+  caabguard: {
+    answer:
+      "To be licensed as a security worker in Alberta (security guard, loss prevention worker, patrol dog handler, alarm responder or executive security), you complete an approved course, the Alberta Basic Security Training course or an accredited equivalent, with an approved training provider, then pass the provincial final exam with a score of 80% or higher. The exam is overseen by the Government of Alberta and marked by a Ministry or certified proctor. Applicants must be over 18, eligible to work in Canada, at Canadian Language Benchmark 5 in English, and have no criminal record, outstanding charges or ongoing criminal investigation. The licence is issued under the Security Services and Investigators Act and runs for 2 years. Alberta does not publish the number of questions or a time limit.",
+    rows: [
+      { label: "Pass mark", value: "80% on the provincial final exam" },
+      { label: "Training first", value: "Alberta Basic Security Training or an accredited course" },
+      { label: "Rewrites", value: "Allowed for up to 2 years from the start of the course" },
+      { label: "Minimum age", value: "Over 18" },
+      { label: "English", value: "Canadian Language Benchmark 5" },
+      { label: "Licence term", value: "2 years, portable between employers" },
+      { label: "Law", value: "Security Services and Investigators Act (Alberta)" },
+      { label: "Run by", value: "Government of Alberta, Security Programs" },
+    ],
+    basedOn: "alberta.ca's security service worker licence page, the Ministry's SSIA provincial examination process and the ABST Participant Manual, checked November 2026",
+    source: { name: "Alberta.ca: Security service worker licence", url: "https://www.alberta.ca/security-service-worker-licence" },
+  },
   caguard: {
     answer:
       "The Ontario security guard test is the ministry's basic test you must pass before applying for a security guard licence. It has 60 multiple-choice questions in 75 minutes on the topics of the mandatory 40-hour basic training course, and the cut score is 62%. You book it with the training completion number from your course and take it online or at select DriveTest centres; you must be 18, entitled to work in Canada and have a clean criminal record to be licensed.",

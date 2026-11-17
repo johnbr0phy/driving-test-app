@@ -1,0 +1,5042 @@
+[
+  {
+    "id": "SECURITYX-GRC-001",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A merger leaves two control catalogs covering the same contractual requirements. Auditors cannot tell which evidence satisfies which requirement. Which governance action directly resolves this traceability gap?",
+    "options": [
+      "Map obligations to controls",
+      "Assign decision ownership",
+      "Reconcile the asset inventory",
+      "Approve an exception expiry"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mapping each obligation to controls and evidence resolves traceability. Assigning ownership helps execution but does not establish coverage."
+  },
+  {
+    "id": "SECURITYX-GRC-002",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two executives each assume the other can accept a critical residual risk. The mitigation work is already funded and tracked. Which governance action addresses the unresolved authority?",
+    "options": [
+      "Approve an exception expiry",
+      "Assign decision ownership",
+      "Map obligations to controls",
+      "Reconcile the asset inventory"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Explicit decision ownership identifies who may accept the risk. An inventory or control mapping does not confer that authority."
+  },
+  {
+    "id": "SECURITYX-GRC-003",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Cloud billing lists twelve production subscriptions, while the configuration database lists nine. The security team cannot establish the population for its control review. What should it do first?",
+    "options": [
+      "Assign decision ownership",
+      "Approve an exception expiry",
+      "Reconcile the asset inventory",
+      "Map obligations to controls"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reconcile discovery and billing with the inventory before assessing coverage. Otherwise three subscriptions may remain outside the review."
+  },
+  {
+    "id": "SECURITYX-GRC-004",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A legacy service cannot meet a required configuration until a signed replacement contract completes. The risk owner permits temporary compensating controls, but the exception has no review boundary. What should be added?",
+    "options": [
+      "Map obligations to controls",
+      "Assign decision ownership",
+      "Reconcile the asset inventory",
+      "Approve an exception expiry"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An approved expiry or review date prevents an exception from silently becoming permanent. The temporary acceptance still requires documented controls and ownership."
+  },
+  {
+    "id": "SECURITYX-GRC-005",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company begins a CSF profile exercise. It has a list of desired capabilities but no reliable evidence of which outcomes it achieves today. Which activity supplies the missing baseline?",
+    "options": [
+      "Measure the current outcomes",
+      "Define the desired outcomes",
+      "Prioritize the identified gaps",
+      "Verify the completed changes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Current Profile records achieved outcomes and supporting status. A Target Profile alone cannot establish the starting point."
+  },
+  {
+    "id": "SECURITYX-GRC-006",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hospital has assessed its present security posture and now plans a remote-care service with new dependencies. What profile activity should capture the security outcomes needed for that future service?",
+    "options": [
+      "Verify the completed changes",
+      "Define the desired outcomes",
+      "Measure the current outcomes",
+      "Prioritize the identified gaps"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Target Profile expresses desired outcomes, including anticipated changes. Current-state measurement documents what exists now."
+  },
+  {
+    "id": "SECURITYX-GRC-007",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retailer has agreed Current and Target Profiles. It has enough budget for only three of twelve differences this quarter. What is the next planning activity?",
+    "options": [
+      "Define the desired outcomes",
+      "Verify the completed changes",
+      "Prioritize the identified gaps",
+      "Measure the current outcomes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Risk-informed gap prioritization turns the comparison into an actionable plan. Repeating the baseline does not allocate the scarce budget."
+  },
+  {
+    "id": "SECURITYX-GRC-008",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business reports that every action in its CSF improvement plan is closed. Before updating the Current Profile to show the target achieved, what should the assessor do?",
+    "options": [
+      "Measure the current outcomes",
+      "Define the desired outcomes",
+      "Prioritize the identified gaps",
+      "Verify the completed changes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Verify that the changes actually produce the intended outcomes. Completed tickets are not, by themselves, evidence of effectiveness."
+  },
+  {
+    "id": "SECURITYX-GRC-009",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Procurement is about to invite bids for a hosted payroll platform. No vendor has been selected, and bidders need comparable minimum security expectations. Which action belongs at this point?",
+    "options": [
+      "Establish a supplier baseline",
+      "Assess a new subprocessor",
+      "Exercise joint incident duties",
+      "Revoke access at termination"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Define baseline supplier requirements before selection so proposals can be evaluated consistently. A later joint exercise cannot replace procurement criteria."
+  },
+  {
+    "id": "SECURITYX-GRC-010",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An approved cloud vendor announces that a new company will process customer records in another jurisdiction. Existing service features remain unchanged. Which action targets the new risk?",
+    "options": [
+      "Revoke access at termination",
+      "Assess a new subprocessor",
+      "Establish a supplier baseline",
+      "Exercise joint incident duties"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A changed subprocessor creates new access and jurisdiction dependencies that require assessment. The original vendor approval does not automatically cover that change."
+  },
+  {
+    "id": "SECURITYX-GRC-011",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A critical outsourcing contract names internal and vendor incident contacts, but neither team has tested escalation or evidence handoff. Which activity most directly checks whether those arrangements work?",
+    "options": [
+      "Assess a new subprocessor",
+      "Revoke access at termination",
+      "Exercise joint incident duties",
+      "Establish a supplier baseline"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A joint exercise tests cross-organizational incident responsibilities. Contract wording or a baseline alone does not demonstrate execution."
+  },
+  {
+    "id": "SECURITYX-GRC-012",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A support agreement has ended and all required records have been returned. The supplier still has a federated support account. Which lifecycle action closes this remaining exposure?",
+    "options": [
+      "Establish a supplier baseline",
+      "Assess a new subprocessor",
+      "Exercise joint incident duties",
+      "Revoke access at termination"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Termination should remove obsolete supplier access. An assessment of a future supplier would not remove the existing credential path."
+  },
+  {
+    "id": "SECURITYX-GRC-013",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk owner reviews a low-impact exposure already within approved tolerance. Further controls would cost more than the expected benefit, and no binding requirement is unmet. Which response fits this decision?",
+    "options": [
+      "Accept the documented exposure",
+      "Reduce the event likelihood",
+      "Transfer the financial impact",
+      "Discontinue the risky service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Documented acceptance is appropriate when authorized and within tolerance. Acceptance is a deliberate risk decision, not an undocumented omission."
+  },
+  {
+    "id": "SECURITYX-GRC-014",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business keeps a needed remote service but deploys phishing-resistant authentication to make account takeover less likely. Which risk response describes this change?",
+    "options": [
+      "Discontinue the risky service",
+      "Reduce the event likelihood",
+      "Accept the documented exposure",
+      "Transfer the financial impact"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The control mitigates risk by reducing event likelihood. It does not shift financial loss to another party."
+  },
+  {
+    "id": "SECURITYX-GRC-015",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company retains its service and existing controls but purchases coverage for specified incident-related losses. Which response describes the insurance arrangement?",
+    "options": [
+      "Reduce the event likelihood",
+      "Discontinue the risky service",
+      "Transfer the financial impact",
+      "Accept the documented exposure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Insurance transfers specified financial consequences under its terms. It does not remove the threat or transfer all accountability."
+  },
+  {
+    "id": "SECURITYX-GRC-016",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization decides that a proposed biometric feature creates unacceptable residual privacy risk and removes the feature from its product plan. Which response is this?",
+    "options": [
+      "Accept the documented exposure",
+      "Reduce the event likelihood",
+      "Transfer the financial impact",
+      "Discontinue the risky service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eliminating the activity avoids its associated risk. Mitigation would retain the activity with controls."
+  },
+  {
+    "id": "SECURITYX-GRC-017",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A board asks which of two investments yields the greater expected annual reduction in monetary loss. Reliable frequency and cost estimates are available. Which analysis best answers its question?",
+    "options": [
+      "Compare quantified loss estimates",
+      "Rank defined impact bands",
+      "Test the recovery capability",
+      "Validate the control evidence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quantitative comparison estimates losses and investment effects in monetary terms. Qualitative bands do not provide the requested monetary comparison."
+  },
+  {
+    "id": "SECURITYX-GRC-018",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An emerging threat has too little reliable frequency data for defensible monetary estimates. Stakeholders can consistently distinguish limited, serious and catastrophic mission effects. Which assessment approach fits?",
+    "options": [
+      "Validate the control evidence",
+      "Rank defined impact bands",
+      "Compare quantified loss estimates",
+      "Test the recovery capability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Defined qualitative bands support ranking without invented numerical precision. Recovery testing addresses a narrower operational question."
+  },
+  {
+    "id": "SECURITYX-GRC-019",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk register assumes the billing service can be restored inside its agreed outage limit. Backup jobs complete, but nobody has restored the service. Which action tests the assumption?",
+    "options": [
+      "Rank defined impact bands",
+      "Validate the control evidence",
+      "Test the recovery capability",
+      "Compare quantified loss estimates"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A recovery exercise measures restoration capability. Successful backup creation alone does not establish recoverability."
+  },
+  {
+    "id": "SECURITYX-GRC-020",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A mitigation owner marks an access-review finding resolved. The assessor needs assurance that excess privileges were actually removed. Which action provides the relevant evidence?",
+    "options": [
+      "Compare quantified loss estimates",
+      "Rank defined impact bands",
+      "Test the recovery capability",
+      "Validate the control evidence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Validation checks the resulting access state against the requirement. Recalculating loss estimates does not prove the control was implemented."
+  },
+  {
+    "id": "SECURITYX-GRC-021",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Counsel issues a valid legal hold covering specified investigation records. The normal deletion job will reach those records tonight. Which action should the information owner arrange?",
+    "options": [
+      "Preserve the held records",
+      "Apply the retention schedule",
+      "Restrict the processing purpose",
+      "Review cross-border obligations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Preserve the records subject to the hold while coordinating with counsel. Routine retention deletion must not destroy material covered by the hold."
+  },
+  {
+    "id": "SECURITYX-GRC-022",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dataset reaches its approved retention limit. Counsel confirms there is no hold or other retention duty, and the business has no remaining authorized purpose. Which action follows lifecycle governance?",
+    "options": [
+      "Review cross-border obligations",
+      "Apply the retention schedule",
+      "Preserve the held records",
+      "Restrict the processing purpose"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Apply the approved disposal schedule after checking overriding obligations. Indefinite retention adds exposure without a justified purpose."
+  },
+  {
+    "id": "SECURITYX-GRC-023",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team proposes using identifiable support records for unrelated model training. The records remain within the same country, but the new purpose has not been assessed or authorized. What should governance address first?",
+    "options": [
+      "Apply the retention schedule",
+      "Review cross-border obligations",
+      "Restrict the processing purpose",
+      "Preserve the held records"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The proposed new processing purpose needs review and restriction until authorized. Keeping data in one country does not resolve purpose and privacy concerns."
+  },
+  {
+    "id": "SECURITYX-GRC-024",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A regional service will move personal records to a foreign processor. The same processing purpose continues. Which issue needs specific review before the move?",
+    "options": [
+      "Preserve the held records",
+      "Apply the retention schedule",
+      "Restrict the processing purpose",
+      "Review cross-border obligations"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cross-border obligations depend on the applicable jurisdictions and transfer arrangements. An unchanged purpose does not eliminate those requirements."
+  },
+  {
+    "id": "SECURITYX-GRC-025",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Design reviewers cannot explain where an external analytics provider receives customer records or which identity crosses into its service. Which threat-modeling activity is missing?",
+    "options": [
+      "Trace the data and trust boundaries",
+      "Enumerate the relevant threat paths",
+      "Select risk-reducing safeguards",
+      "Retest the revised design"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Modeling flows and trust boundaries establishes what is being protected and where trust changes. Threat selection needs that context."
+  },
+  {
+    "id": "SECURITYX-GRC-026",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team has a complete architecture model and now asks how an adversary could reach the protected transaction service through its dependencies. Which activity answers that question?",
+    "options": [
+      "Retest the revised design",
+      "Enumerate the relevant threat paths",
+      "Trace the data and trust boundaries",
+      "Select risk-reducing safeguards"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Threat-path enumeration explores ways the modeled system could be abused. Merely documenting existing controls would skip threat identification."
+  },
+  {
+    "id": "SECURITYX-GRC-027",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Reviewers have identified a credible attack path through a partner integration and agreed its risk is unacceptable. What threat-modeling activity should follow?",
+    "options": [
+      "Enumerate the relevant threat paths",
+      "Retest the revised design",
+      "Select risk-reducing safeguards",
+      "Trace the data and trust boundaries"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Select and design mitigations for the identified risk, then validate them. Repeating discovery alone does not address the agreed exposure."
+  },
+  {
+    "id": "SECURITYX-GRC-028",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new isolation boundary has been added to close a documented threat path. Which activity determines whether the threat model can treat that path as mitigated?",
+    "options": [
+      "Trace the data and trust boundaries",
+      "Enumerate the relevant threat paths",
+      "Select risk-reducing safeguards",
+      "Retest the revised design"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Validation tests the changed design against the threat. A planned safeguard is not evidence that the attack path is closed."
+  },
+  {
+    "id": "SECURITYX-GRC-029",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A purchasing assistant can both recommend vendors and execute unrestricted purchases. The immediate concern is excessive agency even when its recommendations are accurate. Which safeguard most directly reduces this exposure?",
+    "options": [
+      "Limit the assistant permissions",
+      "Validate downstream model output",
+      "Control training-data provenance",
+      "Require human decision review"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Constrain tool permissions and allowed actions to the assistant's legitimate role. Reviewing output format alone does not restrict execution authority."
+  },
+  {
+    "id": "SECURITYX-GRC-030",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A model returns structured content that another service treats as trusted instructions. Tool permissions are already narrow, but malformed output can alter that service's behavior. Which boundary needs a control?",
+    "options": [
+      "Require human decision review",
+      "Validate downstream model output",
+      "Limit the assistant permissions",
+      "Control training-data provenance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Treat model output as untrusted and validate it before downstream use. Narrow permissions do not make every permitted input safe."
+  },
+  {
+    "id": "SECURITYX-GRC-031",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A model's behavior changes after unverified third-party records are added to its training corpus. Which process most directly addresses the suspected supply of poisoned material?",
+    "options": [
+      "Validate downstream model output",
+      "Require human decision review",
+      "Control training-data provenance",
+      "Limit the assistant permissions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Training-data provenance and review target the source of poisoning. Human review of isolated final decisions does not repair the data pipeline."
+  },
+  {
+    "id": "SECURITYX-GRC-032",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A benefits system gives a model's recommendation final authority over consequential eligibility decisions. The policy requires an accountable reviewer to assess evidence and exceptions. Which safeguard satisfies that requirement?",
+    "options": [
+      "Limit the assistant permissions",
+      "Validate downstream model output",
+      "Control training-data provenance",
+      "Require human decision review"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Meaningful human decision review addresses overreliance in a consequential workflow. Output-schema validation only checks structure."
+  },
+  {
+    "id": "SECURITYX-GRC-033",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An enterprise assistant retrieves a supplier page containing instructions that conflict with its assigned task. It follows those page instructions. Which AI threat category best describes the entry path?",
+    "options": [
+      "An indirect prompt injection",
+      "An unauthorized model disclosure",
+      "An availability resource attack",
+      "A training-data integrity attack"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The instructions arrived through external retrieved content, making this indirect prompt injection. The scenario does not describe a changed training corpus."
+  },
+  {
+    "id": "SECURITYX-GRC-034",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A protected model artifact is copied by a contractor without authorization. There is no evidence of altered training or service interruption. Which category best describes the observed loss?",
+    "options": [
+      "A training-data integrity attack",
+      "An unauthorized model disclosure",
+      "An indirect prompt injection",
+      "An availability resource attack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Unauthorized copying of the model is a confidentiality loss affecting the model itself. Data poisoning would change the training input."
+  },
+  {
+    "id": "SECURITYX-GRC-035",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Monitoring shows deliberately expensive model requests saturating inference capacity and preventing ordinary users from receiving responses. Which category best describes the effect?",
+    "options": [
+      "An unauthorized model disclosure",
+      "A training-data integrity attack",
+      "An availability resource attack",
+      "An indirect prompt injection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The requests exhaust service resources, causing an availability attack. Incorrect training labels are a different integrity issue."
+  },
+  {
+    "id": "SECURITYX-GRC-036",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before a model is trained, an attacker systematically changes labels in a trusted training dataset. Which category best describes the compromise?",
+    "options": [
+      "An indirect prompt injection",
+      "An unauthorized model disclosure",
+      "An availability resource attack",
+      "A training-data integrity attack"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Changing training labels compromises training-data integrity. Prompt injection instead uses instructions presented during model interaction."
+  },
+  {
+    "id": "SECURITYX-GRC-037",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A completed control materially reduces the probability of a recorded threat, but the register still shows the pre-control exposure. Which update is needed before the next acceptance decision?",
+    "options": [
+      "Reassess the residual risk",
+      "Escalate beyond delegated authority",
+      "Implement the approved treatment",
+      "Retire a superseded risk entry"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reassess residual risk using the new control state. Treatment completion does not automatically mean the remaining risk is acceptable."
+  },
+  {
+    "id": "SECURITYX-GRC-038",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A project manager may accept exposures up to the company's moderate band. The assessed residual risk is high, and the service is still required. Which governance step is needed?",
+    "options": [
+      "Retire a superseded risk entry",
+      "Escalate beyond delegated authority",
+      "Reassess the residual risk",
+      "Implement the approved treatment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Escalation to an authorized risk owner respects the defined authority boundary. The project manager cannot accept a higher band merely because delivery is urgent."
+  },
+  {
+    "id": "SECURITYX-GRC-039",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An authorized risk owner has approved a funded mitigation plan with named owners and dates. The team has not yet applied the control. What is the immediate next step?",
+    "options": [
+      "Escalate beyond delegated authority",
+      "Retire a superseded risk entry",
+      "Implement the approved treatment",
+      "Reassess the residual risk"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Execute the approved treatment, then validate its effect. Repeatedly requesting the same decision does not reduce the exposure."
+  },
+  {
+    "id": "SECURITYX-GRC-040",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system has been decommissioned and its records disposed of lawfully. Review confirms that a threat entry relates only to that system, with no remaining dependencies. What should the register owner do?",
+    "options": [
+      "Reassess the residual risk",
+      "Escalate beyond delegated authority",
+      "Implement the approved treatment",
+      "Retire a superseded risk entry"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Close or retire the obsolete entry with evidence and history preserved. Keeping it active distorts the current risk picture."
+  },
+  {
+    "id": "SECURITYX-GRC-041",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Leadership states that sensitive customer information must be protected throughout its lifecycle and assigns organizational accountability. Which documentation layer expresses this broad direction?",
+    "options": [
+      "A policy-level requirement",
+      "A mandatory technical standard",
+      "An operational procedure",
+      "A nonbinding implementation guide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A policy establishes management direction and obligations. Technical settings belong in supporting standards."
+  },
+  {
+    "id": "SECURITYX-GRC-042",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization specifies an approved minimum configuration that every managed server must meet unless an exception is granted. Which documentation type fits this mandatory baseline?",
+    "options": [
+      "A nonbinding implementation guide",
+      "A mandatory technical standard",
+      "A policy-level requirement",
+      "An operational procedure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A standard makes the technical baseline mandatory. A guideline is advisory rather than an enforceable minimum."
+  },
+  {
+    "id": "SECURITYX-GRC-043",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An on-call runbook identifies the ordered steps, approval checks and rollback actions for rotating a service credential. Which documentation type is this?",
+    "options": [
+      "A mandatory technical standard",
+      "A nonbinding implementation guide",
+      "An operational procedure",
+      "A policy-level requirement"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A procedure explains how to execute a defined task. A policy states intent without the same operational sequence."
+  },
+  {
+    "id": "SECURITYX-GRC-044",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security team publishes optional examples of useful dashboard layouts. Teams may choose alternatives without requesting an exception. Which documentation type fits?",
+    "options": [
+      "A policy-level requirement",
+      "A mandatory technical standard",
+      "An operational procedure",
+      "A nonbinding implementation guide"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nonbinding guidance provides recommendations and examples. A mandatory standard would require compliance or an approved exception."
+  },
+  {
+    "id": "SECURITYX-GRC-045",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A crisis exercise reveals that staff receive conflicting public statements because several departments brief the media independently. Which plan element needs focused testing?",
+    "options": [
+      "Test the communications plan",
+      "Check the evidence preservation plan",
+      "Review the business recovery order",
+      "Confirm the decision delegation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A coordinated communications plan defines audiences, channels and authorized messages. Recovery order does not resolve inconsistent statements."
+  },
+  {
+    "id": "SECURITYX-GRC-046",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a breach exercise, responders overwrite relevant records while rebuilding systems. Which plan element needs correction to support later investigation?",
+    "options": [
+      "Confirm the decision delegation",
+      "Check the evidence preservation plan",
+      "Test the communications plan",
+      "Review the business recovery order"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Evidence preservation must be integrated with response and recovery. Communications coordination alone does not protect artifacts."
+  },
+  {
+    "id": "SECURITYX-GRC-047",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A recovery drill restores a reporting service before the identity service it requires, delaying all usable access. Which planning element should be revised?",
+    "options": [
+      "Check the evidence preservation plan",
+      "Confirm the decision delegation",
+      "Review the business recovery order",
+      "Test the communications plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Recovery sequencing must reflect business criticality and technical dependencies. A nominal restoration that cannot function does not meet the business objective."
+  },
+  {
+    "id": "SECURITYX-GRC-048",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxGrc",
+    "skill": "grc",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A simulated incident occurs while the primary executive is unavailable. No participant knows who can authorize an emergency service shutdown. What governance element is missing?",
+    "options": [
+      "Test the communications plan",
+      "Check the evidence preservation plan",
+      "Review the business recovery order",
+      "Confirm the decision delegation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Delegated authority and alternates let necessary decisions be made during absences. Contact lists alone do not grant decision rights."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-001",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Network segmentation already isolates the workload zones, but a gateway authorizes entry without checking access to each sensitive application inside a zone. The requirement is an explicit authorization check for each requested application. Which change directly supplies that missing check?",
+    "options": [
+      "Place enforcement by the resource",
+      "Refresh the device posture signal",
+      "Separate workload trust zones",
+      "Reevaluate active access decisions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Move enforcement toward individual resources so authorization is not inherited across the segment. Additional posture data alone does not create resource-level boundaries."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-002",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Access rules already evaluate each requested resource, but they rely on a device compliance result collected months earlier. Which change fixes the stale input to those decisions?",
+    "options": [
+      "Reevaluate active access decisions",
+      "Refresh the device posture signal",
+      "Place enforcement by the resource",
+      "Separate workload trust zones"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fresh device posture is needed for a meaningful dynamic decision. Adding more enforcement points would still consume stale evidence."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-003",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two service tiers have correct user authentication but unrestricted east-west communication. A compromised reporting workload can reach a payment database it never needs. Which change directly limits this path?",
+    "options": [
+      "Refresh the device posture signal",
+      "Reevaluate active access decisions",
+      "Separate workload trust zones",
+      "Place enforcement by the resource"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Separate workload trust zones and permit only required flows. User authentication does not itself restrict service-to-service movement."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-004",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A session remains authorized after the identity risk score rises sharply. New sessions are correctly blocked under the same policy. What capability is missing for existing access?",
+    "options": [
+      "Place enforcement by the resource",
+      "Refresh the device posture signal",
+      "Separate workload trust zones",
+      "Reevaluate active access decisions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ongoing reevaluation can revoke or constrain access when context changes. A check only at session creation leaves the existing session trusted."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-005",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a zero-trust design, a component combines identity, device condition and resource rules to decide whether a request should be allowed. Which architectural role does it perform?",
+    "options": [
+      "A policy decision component",
+      "A policy enforcement component",
+      "An identity evidence provider",
+      "An asset posture information feed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The decision component evaluates policy inputs. Enforcement acts on the resulting decision rather than independently supplying all of those inputs."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-006",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A gateway opens or closes a connection according to an authorization decision supplied by another component. Which role is the gateway performing?",
+    "options": [
+      "An asset posture information feed",
+      "A policy enforcement component",
+      "A policy decision component",
+      "An identity evidence provider"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The enforcement point controls the actual access path. The decision role determines whether the policy permits access."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-007",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service supplies a signed assertion about the authenticated user to an authorization system. It does not determine whether that user may read the requested file. Which role best fits?",
+    "options": [
+      "A policy enforcement component",
+      "An asset posture information feed",
+      "An identity evidence provider",
+      "A policy decision component"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The identity provider supplies authentication evidence. Resource authorization still requires the relevant policy decision."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-008",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An endpoint service reports patch state and integrity measurements to an access engine. It neither authenticates the human user nor opens the connection. Which role is this?",
+    "options": [
+      "A policy decision component",
+      "A policy enforcement component",
+      "An identity evidence provider",
+      "An asset posture information feed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The posture feed provides asset-condition evidence. The policy engine consumes that evidence when making access decisions."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-009",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A research platform must combine project membership, record sensitivity, device compliance and current location for each access decision. Which authorization model most directly expresses these independent conditions?",
+    "options": [
+      "Attribute-based authorization",
+      "Role-based authorization",
+      "Owner-controlled authorization",
+      "Label-enforced authorization"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ABAC combines subject, resource and environmental attributes. A job role alone does not express the changing context described."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-010",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A warehouse application gives each employee one of a small set of stable job functions, with permissions managed for those functions. Which model most directly matches this design?",
+    "options": [
+      "Label-enforced authorization",
+      "Role-based authorization",
+      "Attribute-based authorization",
+      "Owner-controlled authorization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RBAC associates permissions with organizational roles. Additional context-dependent conditions would require more than this simple model."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-011",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A collaboration system allows each document owner to grant or remove other users' access at the owner's discretion. Which model describes that authority?",
+    "options": [
+      "Role-based authorization",
+      "Label-enforced authorization",
+      "Owner-controlled authorization",
+      "Attribute-based authorization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Discretionary access control allows the owner to determine access. Mandatory labels instead constrain access through centrally enforced policy."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-012",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system uses centrally assigned sensitivity labels and user clearances. File owners cannot override the resulting restrictions. Which model fits?",
+    "options": [
+      "Attribute-based authorization",
+      "Role-based authorization",
+      "Owner-controlled authorization",
+      "Label-enforced authorization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Mandatory access control enforces label-based policy independently of an owner's discretion. Ownership does not authorize an exception."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-013",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants a pre-build check for unsafe code paths in its own source, before a runnable service exists. Which assurance approach fits this stage?",
+    "options": [
+      "Review source without execution",
+      "Exercise a running application",
+      "Inspect third-party components",
+      "Observe instrumented execution"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Static analysis reviews source or representations without executing the application. Dynamic testing requires a running target."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-014",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester has an authorized staging URL but no source or instrumentation. The goal is to assess externally observable application behavior. Which approach fits?",
+    "options": [
+      "Observe instrumented execution",
+      "Exercise a running application",
+      "Review source without execution",
+      "Inspect third-party components"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dynamic testing exercises the running application from its interfaces. It does not require source access or internal instrumentation."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-015",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A release contains several open-source libraries. The immediate question is whether the selected dependency versions have known vulnerabilities. Which approach targets that question?",
+    "options": [
+      "Exercise a running application",
+      "Observe instrumented execution",
+      "Inspect third-party components",
+      "Review source without execution"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Software composition analysis examines third-party components and versions. Reviewing only first-party source does not establish dependency vulnerability status."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-016",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test environment can collect application internals while realistic requests execute. The team wants to link observed requests to the code paths handling them. Which approach fits?",
+    "options": [
+      "Review source without execution",
+      "Exercise a running application",
+      "Inspect third-party components",
+      "Observe instrumented execution"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Interactive analysis uses instrumentation during execution. Pure external dynamic testing lacks that same internal visibility."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-017",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An unauthorized direct push bypassed required review on a release branch. Which CI/CD control directly addresses the bypass?",
+    "options": [
+      "Gate changes through peer review",
+      "Stage a limited canary rollout",
+      "Run regression checks",
+      "Verify release provenance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Protected change gates enforce review before integration. Runtime canaries detect deployment effects rather than authorize source changes."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-018",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reviewed update may interact unexpectedly with real traffic. The team wants to expose only a small controlled population before wider release. Which technique fits?",
+    "options": [
+      "Verify release provenance",
+      "Stage a limited canary rollout",
+      "Gate changes through peer review",
+      "Run regression checks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A canary deployment limits initial exposure and supports observation before expansion. Regression checks alone do not reproduce all production behavior."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-019",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fix changes a shared authorization module. The team must confirm that previously working permission scenarios still behave correctly. Which check answers this?",
+    "options": [
+      "Stage a limited canary rollout",
+      "Verify release provenance",
+      "Run regression checks",
+      "Gate changes through peer review"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Regression tests look for unintended changes to established behavior. Release provenance identifies origin rather than functional correctness."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-020",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A repository contains an approved source revision, but the deployment team must establish that the received package was produced by the authorized build process. Which check is most relevant?",
+    "options": [
+      "Gate changes through peer review",
+      "Stage a limited canary rollout",
+      "Run regression checks",
+      "Verify release provenance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Provenance connects the artifact to its source and build process. A source review alone does not prove the deployed artifact came from that process."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-021",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An acquirer needs a structured list of the libraries included in a delivered application so it can identify affected products after a dependency advisory. Which artifact supports this?",
+    "options": [
+      "A component inventory artifact",
+      "A security requirement baseline",
+      "A release integrity signature",
+      "A vulnerability disclosure process"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A software bill of materials identifies components and relationships. An integrity signature does not list the contents."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-022",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before accepting bids, a buyer needs all software suppliers to understand the required authentication, logging and support capabilities. Which item establishes comparable expectations?",
+    "options": [
+      "A vulnerability disclosure process",
+      "A security requirement baseline",
+      "A component inventory artifact",
+      "A release integrity signature"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A security requirements baseline communicates the acceptance expectations. A component inventory records what was delivered rather than what was required."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-023",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A distributor needs recipients to verify that a downloaded release was signed by its authorized publisher and has not changed. Which mechanism provides that evidence?",
+    "options": [
+      "A security requirement baseline",
+      "A vulnerability disclosure process",
+      "A release integrity signature",
+      "A component inventory artifact"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A digital signature provides origin and integrity evidence when the verification key is trusted. It does not prove absence of vulnerabilities."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-024",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Researchers need an established channel and handling process for reporting flaws in a deployed product. Which supplier capability meets this need?",
+    "options": [
+      "A component inventory artifact",
+      "A security requirement baseline",
+      "A release integrity signature",
+      "A vulnerability disclosure process"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A vulnerability disclosure process enables reports to be received and addressed. A signed release alone does not provide a reporting workflow."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-025",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server exposes two unused management services. The approved workload needs neither, and the team wants to remove unnecessary entry points. Which design action addresses the stated goal?",
+    "options": [
+      "Reduce exposed service functions",
+      "Add independent security layers",
+      "Centralize useful audit records",
+      "Measure the control outcome"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Remove unnecessary functions to reduce attack surface. More monitoring can detect misuse but leaves the entry points available."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-026",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sensitive application depends entirely on one gateway control. Designers want a compromise of that gateway not to remove every protection for the data. Which principle should guide the change?",
+    "options": [
+      "Measure the control outcome",
+      "Add independent security layers",
+      "Reduce exposed service functions",
+      "Centralize useful audit records"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Independent layers provide defense in depth. Repeating the same dependency in several places may still leave a single failure mode."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-027",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An investigation requires correlating identity, gateway and application events, but records exist only on separate local hosts. Which architecture change most directly supports correlation?",
+    "options": [
+      "Add independent security layers",
+      "Measure the control outcome",
+      "Centralize useful audit records",
+      "Reduce exposed service functions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Central collection of relevant audit records enables correlation across components. It must preserve useful context and access controls."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-028",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new exfiltration control is deployed. Managers need evidence that it catches the intended transfers while preserving authorized work. Which activity evaluates effectiveness?",
+    "options": [
+      "Reduce exposed service functions",
+      "Add independent security layers",
+      "Centralize useful audit records",
+      "Measure the control outcome"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Measure detection and permitted-work outcomes against the goal. Installation completion alone is not proof of effectiveness."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-029",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scheduled reporting job must read one storage location without using an employee's password. Which identity design best fits its ongoing nonhuman role?",
+    "options": [
+      "A resource-specific service identity",
+      "A time-limited privileged role",
+      "A federated workforce identity",
+      "A separate emergency account"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A narrowly scoped service identity separates workload access from a human account. An emergency account is not intended for routine automation."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-030",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An engineer needs elevated rights for a short approved maintenance window, then should return to ordinary permissions automatically. Which design fits?",
+    "options": [
+      "A separate emergency account",
+      "A time-limited privileged role",
+      "A resource-specific service identity",
+      "A federated workforce identity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A time-limited privileged role supports just-in-time elevation. A permanent broad service identity would not match the temporary human task."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-031",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Employees already authenticate through an enterprise identity provider. A new SaaS application should accept that managed identity lifecycle instead of separate local passwords. Which design fits?",
+    "options": [
+      "A time-limited privileged role",
+      "A separate emergency account",
+      "A federated workforce identity",
+      "A resource-specific service identity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Federation lets the SaaS rely on the enterprise identity provider. The service still needs authorization appropriate to the application."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-032",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The primary identity provider may be unavailable during recovery. A tightly controlled, audited access path must work independently for essential administrators. Which design addresses this dependency?",
+    "options": [
+      "A resource-specific service identity",
+      "A time-limited privileged role",
+      "A federated workforce identity",
+      "A separate emergency account"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A separate emergency account can provide controlled break-glass access. It should be protected, tested and monitored rather than used routinely."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-033",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A registration workflow receives a certificate request for a newly acquired company. Before issuance, the operator must establish that the requester is entitled to the claimed identity. Which activity is needed?",
+    "options": [
+      "Identity proofing before issuance",
+      "Certificate signing by the CA",
+      "Revocation-status validation",
+      "Hostname identity validation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Registration identity proofing validates the claim before a CA issues the certificate. Checking an existing certificate's revocation status answers a different question."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-034",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A certificate request has passed identity validation. Which PKI operation creates the issuer's verifiable binding between the subject and its public key?",
+    "options": [
+      "Hostname identity validation",
+      "Certificate signing by the CA",
+      "Identity proofing before issuance",
+      "Revocation-status validation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The CA signs the certificate binding. Identity proofing supports issuance but does not itself create the signed certificate."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-035",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A certificate chains to a trusted issuer and is within its dates, but the holder's private key was reported compromised. Which additional validation addresses this issue?",
+    "options": [
+      "Certificate signing by the CA",
+      "Hostname identity validation",
+      "Revocation-status validation",
+      "Identity proofing before issuance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Revocation status can indicate that an otherwise time-valid certificate should no longer be trusted. Matching the hostname is not enough."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-036",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A browser receives a valid certificate for an unrelated service from a trusted issuer. Which check should reject its use for the requested website?",
+    "options": [
+      "Identity proofing before issuance",
+      "Certificate signing by the CA",
+      "Revocation-status validation",
+      "Hostname identity validation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The requested hostname must match the certificate's authenticated identity. A trusted issuer does not make a certificate valid for every hostname."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-037",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cloud security requirement calls for blocking prohibited uploads before they reach a SaaS service. The approved architecture routes those uploads through an inspection point. Which control placement fits?",
+    "options": [
+      "An inline traffic control",
+      "An API-based content review",
+      "A cloud configuration assessment",
+      "A workload runtime sensor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inline inspection can enforce a decision before forwarding the upload. A later API content review is normally retrospective."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-038",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The security team must inspect existing files already stored in an approved SaaS tenant, including uploads made before the control was installed. Which approach can reach that stored content?",
+    "options": [
+      "A workload runtime sensor",
+      "An API-based content review",
+      "An inline traffic control",
+      "A cloud configuration assessment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An API integration can inspect existing tenant content through supported service APIs. An inline path only sees traffic that passes through it."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-039",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization wants to find storage resources whose public-access settings diverge from policy across its cloud accounts. Which assessment targets this condition?",
+    "options": [
+      "An API-based content review",
+      "A workload runtime sensor",
+      "A cloud configuration assessment",
+      "An inline traffic control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud posture assessment evaluates resource configurations. Runtime process monitoring does not by itself establish storage policy compliance."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-040",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A container service needs evidence of unexpected process execution inside running workloads. Which sensor provides the most direct observation?",
+    "options": [
+      "An inline traffic control",
+      "An API-based content review",
+      "A cloud configuration assessment",
+      "A workload runtime sensor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A runtime workload sensor observes process behavior. A configuration snapshot cannot show every action during execution."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-041",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage service is correctly encrypted, but its tenant policy permits public reads of confidential objects. Which change directly removes the identified exposure?",
+    "options": [
+      "Constrain the tenant access policy",
+      "Limit the application permission",
+      "Protect the application data key",
+      "Record the administrative changes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Correct the access policy. Encryption at rest does not prevent a service from returning plaintext to a publicly authorized request."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-042",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A serverless function needs to read one queue but has broad management permissions over the account. Which change targets the excess authority?",
+    "options": [
+      "Record the administrative changes",
+      "Limit the application permission",
+      "Constrain the tenant access policy",
+      "Protect the application data key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Limit the function's permissions to its required operations and resources. A stronger data key does not reduce its management privileges."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-043",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A threat model assumes storage administrators can obtain encrypted backups. The application's separate data key must remain unavailable to those administrators. Which control boundary is central?",
+    "options": [
+      "Limit the application permission",
+      "Record the administrative changes",
+      "Protect the application data key",
+      "Constrain the tenant access policy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Protect the data-encryption key separately from the storage administrators. Storage access restrictions alone do not address the assumed backup access."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-044",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization needs to investigate who altered a cloud resource's policy. Preventive permissions are already in place. Which capability supplies the missing historical evidence?",
+    "options": [
+      "Constrain the tenant access policy",
+      "Limit the application permission",
+      "Protect the application data key",
+      "Record the administrative changes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Administrative audit records show policy-change events and actors. Current policy settings alone do not reconstruct who changed them."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-045",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two service replicas run in the same facility and depend on the same power distribution. The requirement is to survive loss of that facility. Which design change addresses the shared failure?",
+    "options": [
+      "Isolate independent failure zones",
+      "Distribute stateless request load",
+      "Preserve session state externally",
+      "Test restoration from backup"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Separate failure zones reduce dependence on one facility. More replicas within the same failure domain do not meet the stated requirement."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-046",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A stateless API tier reaches its per-instance processing limit. Additional independent instances can serve any request. Which design meets the increased demand?",
+    "options": [
+      "Test restoration from backup",
+      "Distribute stateless request load",
+      "Isolate independent failure zones",
+      "Preserve session state externally"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Horizontal distribution across instances spreads the request load. Backup restoration does not add live request capacity."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-047",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shopping application keeps its only cart state inside one web process. A process replacement loses active carts. Which change best supports replaceable front-end instances?",
+    "options": [
+      "Distribute stateless request load",
+      "Test restoration from backup",
+      "Preserve session state externally",
+      "Isolate independent failure zones"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Move necessary state to an appropriately resilient external store. Adding stateless replicas cannot recover state held only in a failed process."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-048",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team has redundant live databases, but an accidental authorized deletion replicated to every copy. Which existing capability must be tested to recover earlier valid data?",
+    "options": [
+      "Isolate independent failure zones",
+      "Distribute stateless request load",
+      "Preserve session state externally",
+      "Test restoration from backup"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A tested historical backup can recover a prior valid state. Live replication also propagates logical mistakes and is not a complete backup substitute."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-049",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application collects a sensitive field that no approved feature or retention obligation requires. Which design change removes this unnecessary exposure at its source?",
+    "options": [
+      "Minimize retained sensitive fields",
+      "Label the data by sensitivity",
+      "Restrict copies in test systems",
+      "Track the final disposal evidence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data minimization avoids retaining data with no justified purpose. Labeling still leaves the unnecessary sensitive value stored."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-050",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Automated transfer rules cannot distinguish public reports from confidential ones because records have no reliable sensitivity metadata. Which change enables classification-aware enforcement?",
+    "options": [
+      "Track the final disposal evidence",
+      "Label the data by sensitivity",
+      "Minimize retained sensitive fields",
+      "Restrict copies in test systems"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sensitivity labels provide the metadata needed by handling controls. Disposal records do not classify active information."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-051",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers troubleshoot with full production datasets copied to broadly accessible test environments. The same diagnostics can use masked or synthetic data. Which design boundary should change?",
+    "options": [
+      "Label the data by sensitivity",
+      "Track the final disposal evidence",
+      "Restrict copies in test systems",
+      "Minimize retained sensitive fields"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Restrict sensitive copies and use suitable minimized test data. Production access controls do not automatically follow an exported copy."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-052",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A decommissioning plan requires proof that retained media was sanitized under the approved method. Which lifecycle record supports closure?",
+    "options": [
+      "Minimize retained sensitive fields",
+      "Label the data by sensitivity",
+      "Restrict copies in test systems",
+      "Track the final disposal evidence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Disposal evidence documents execution of the approved sanitization requirement. Removing inventory entries alone does not establish sanitization."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-053",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One developer can change a critical release, approve it and deploy it without another authorized reviewer. Which pipeline change directly introduces independent authorization?",
+    "options": [
+      "Separate approval from deployment",
+      "Limit the build-runner identity",
+      "Validate third-party build inputs",
+      "Isolate untrusted test execution"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Separate approval from change and deployment responsibilities. A restricted runner helps containment but does not provide independent review."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-054",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A build job needs access to one artifact repository but inherits administrative permissions across production. Which change reduces the potential impact of a compromised job?",
+    "options": [
+      "Isolate untrusted test execution",
+      "Limit the build-runner identity",
+      "Separate approval from deployment",
+      "Validate third-party build inputs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scope the runner identity to required resources and actions. Independent review does not justify unnecessary runtime privileges."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-055",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pipeline downloads a dependency using a mutable reference. The approved review must bind to the actual component version and origin used for the build. Which control targets this gap?",
+    "options": [
+      "Limit the build-runner identity",
+      "Isolate untrusted test execution",
+      "Validate third-party build inputs",
+      "Separate approval from deployment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Validate and pin inputs with trustworthy provenance and integrity evidence. Runner isolation alone does not establish what dependency was selected."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-056",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A CI service executes proposed changes from untrusted contributors. Those jobs must not reach production secrets or privileged release workers. Which boundary is essential?",
+    "options": [
+      "Separate approval from deployment",
+      "Limit the build-runner identity",
+      "Validate third-party build inputs",
+      "Isolate untrusted test execution"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Isolate untrusted execution from secrets and privileged workers. Valid source syntax does not make submitted code trustworthy."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-057",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A valid employee session requests a substantially more sensitive function from an unfamiliar device. Policy requires renewed assurance for this context change. Which access action fits?",
+    "options": [
+      "Require context-aware reauthentication",
+      "Scope the partner resource grant",
+      "Revoke the former worker session",
+      "Audit the privileged transaction"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Context-aware reauthentication obtains the required assurance before the sensitive action. Merely logging the request does not meet the policy."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-058",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A partner needs one reporting API but should not inherit access to all internal applications after authentication. Which authorization choice addresses the boundary?",
+    "options": [
+      "Audit the privileged transaction",
+      "Scope the partner resource grant",
+      "Require context-aware reauthentication",
+      "Revoke the former worker session"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Grant access specifically to the needed resource and operations. Authentication proves identity but does not justify blanket authorization."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-059",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A worker's employment has ended. New logins are blocked, but an existing long-lived session still reaches confidential services. Which action closes the remaining access?",
+    "options": [
+      "Scope the partner resource grant",
+      "Audit the privileged transaction",
+      "Revoke the former worker session",
+      "Require context-aware reauthentication"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Invalidate the active session or its authorization so deprovisioning covers existing access. Blocking only new logins leaves the old session usable."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-060",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A privileged operation is validly authorized and completed. The organization must later establish the actor, target, time and outcome. Which capability addresses that requirement?",
+    "options": [
+      "Require context-aware reauthentication",
+      "Scope the partner resource grant",
+      "Revoke the former worker session",
+      "Audit the privileged transaction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A protected audit trail records the transaction context. Reauthentication alone does not create a complete operation history."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-061",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business specifies that a service should be restored within four hours after disruption. Which metric expresses the planned restoration target?",
+    "options": [
+      "A four-hour recovery objective",
+      "A fifteen-minute data-loss objective",
+      "A six-hour maximum outage limit",
+      "A two-hour measured restoration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The recovery time objective is the target restoration duration. It differs from the maximum tolerable outage and actual measured recovery."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-062",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A database recovery plan permits losing no more than fifteen minutes of committed updates. Which stated metric describes the acceptable recovery point?",
+    "options": [
+      "A two-hour measured restoration",
+      "A fifteen-minute data-loss objective",
+      "A four-hour recovery objective",
+      "A six-hour maximum outage limit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The recovery point objective limits the age of recoverable data. It does not describe how long restoration may take."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-063",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Business impact analysis concludes that an outage beyond six hours would cause unacceptable mission harm, even though the restoration target is shorter. Which metric captures this outer boundary?",
+    "options": [
+      "A fifteen-minute data-loss objective",
+      "A two-hour measured restoration",
+      "A six-hour maximum outage limit",
+      "A four-hour recovery objective"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Maximum tolerable outage describes the business limit. The recovery objective should support recovery within that boundary."
+  },
+  {
+    "id": "SECURITYX-ARCHITECTURE-064",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxArchitecture",
+    "skill": "architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During an exercise, service was actually restored two hours after the disruption began. Which value records the observed performance rather than a planned limit?",
+    "options": [
+      "A four-hour recovery objective",
+      "A fifteen-minute data-loss objective",
+      "A six-hour maximum outage limit",
+      "A two-hour measured restoration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Measured restoration time is an observed exercise result. It should be compared with the planned recovery objective, not substituted for the objective itself."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-001",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An API rejects a signed, unexpired token with aud=inventory. The requested API expects aud=payroll, and the issuer and signature are trusted. Which correction addresses the rejection?",
+    "options": [
+      "Correct the token audience",
+      "Refresh the signing-key cache",
+      "Correct the verifier clock",
+      "Restore the required permission"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The audience must identify the intended recipient. A valid signature does not authorize replay to a different API."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-002",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After an identity provider rotates its signing key, one service reports an unknown key identifier. Other services validate the same issuer's new tokens successfully. Its issuer configuration is unchanged. What should be checked first?",
+    "options": [
+      "Restore the required permission",
+      "Refresh the signing-key cache",
+      "Correct the token audience",
+      "Correct the verifier clock"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The verifier may have stale signing-key metadata. Changing the token audience would not resolve an unknown signing key."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-003",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A token is valid from 12:00 to 12:10 UTC. The identity provider and other systems show 12:04, but one verifier shows 12:24 and rejects it as expired. Which correction targets the evidence?",
+    "options": [
+      "Refresh the signing-key cache",
+      "Restore the required permission",
+      "Correct the verifier clock",
+      "Correct the token audience"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Correct the verifier's time synchronization. Extending token validity would mask the clock problem and increase exposure."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-004",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service successfully validates identity, signature, audience and expiry, then logs an authorization failure for a newly required operation. Its role lacks that operation. Which change fits?",
+    "options": [
+      "Correct the token audience",
+      "Refresh the signing-key cache",
+      "Correct the verifier clock",
+      "Restore the required permission"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Grant only the required operation through the approved permission model. Authentication checks have already passed and do not supply missing authorization."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-005",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A partner's assertions are rejected after its approved issuer identifier changed. User accounts and entitlements are unchanged, and validation fails before permission evaluation. Which configuration needs review?",
+    "options": [
+      "Repair the federation trust",
+      "Remove an obsolete role grant",
+      "Renew the device attestation",
+      "Revoke the compromised credential"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Federation trust must recognize the authorized issuer and associated validation metadata. Adding roles cannot fix a failed issuer trust check."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-006",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee moved from finance to logistics but still has finance approval authority alongside the new role. Which lifecycle action addresses this accumulated privilege?",
+    "options": [
+      "Revoke the compromised credential",
+      "Remove an obsolete role grant",
+      "Repair the federation trust",
+      "Renew the device attestation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Remove the obsolete grant after verifying current duties. A new identity proofing step does not remove old permissions."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-007",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Conditional access denies a managed laptop because its integrity evidence is older than the policy permits. The user has passed authentication and has the correct role. What should be refreshed?",
+    "options": [
+      "Remove an obsolete role grant",
+      "Revoke the compromised credential",
+      "Renew the device attestation",
+      "Repair the federation trust"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Renew the device posture or attestation evidence through the managed process. Additional user privileges do not satisfy a device-condition requirement."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-008",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service key is confirmed exposed. A replacement has been securely deployed and verified, but the old key still authenticates. What lifecycle action remains necessary?",
+    "options": [
+      "Repair the federation trust",
+      "Remove an obsolete role grant",
+      "Renew the device attestation",
+      "Revoke the compromised credential"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Revoke the exposed credential after the replacement is working. Merely creating a new key does not invalidate the old one."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-009",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A maintenance role is active for only fifteen minutes and requires approval, but it can modify every tenant instead of the one authorized for the ticket. Which control dimension needs correction?",
+    "options": [
+      "Constrain the resource scope",
+      "Shorten the privilege duration",
+      "Require a second approval",
+      "Record the privileged session"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reduce resource scope to the authorized tenant. A short lifetime still permits excessive actions during that interval."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-010",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A role reaches only the approved server, but elevation remains active for weeks after a ten-minute maintenance task. Which dimension should be reduced?",
+    "options": [
+      "Record the privileged session",
+      "Shorten the privilege duration",
+      "Constrain the resource scope",
+      "Require a second approval"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Limit elevation duration and expire it when no longer needed. Resource scoping does not address unnecessary time at privilege."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-011",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A high-impact change already has narrow scope and automatic expiry. Policy requires independent authorization, but the operator can self-approve it. Which control is missing?",
+    "options": [
+      "Shorten the privilege duration",
+      "Record the privileged session",
+      "Require a second approval",
+      "Constrain the resource scope"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An independent second approval enforces the stated separation of duties. Session recording documents actions but does not authorize them."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-012",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A privileged action is properly scoped, time-limited and approved. Investigators still cannot reconstruct what the operator did. Which added capability answers that need?",
+    "options": [
+      "Constrain the resource scope",
+      "Shorten the privilege duration",
+      "Require a second approval",
+      "Record the privileged session"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An appropriate protected session record supports investigation. Narrow permissions alone do not preserve a history of actions."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-013",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A help desk assumes that a successful login means a user may approve payments. The application has not evaluated payment authority. Which design distinction resolves this mistake?",
+    "options": [
+      "Separate authentication from access",
+      "Bind the assertion to its recipient",
+      "Validate current account status",
+      "Use an independent recovery path"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Authentication establishes identity; authorization determines permitted actions. A valid identity does not confer every business permission."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-014",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A signed federated assertion intended for one service is accepted by another. The issuer is trusted by both. Which validation requirement closes this substitution gap?",
+    "options": [
+      "Use an independent recovery path",
+      "Bind the assertion to its recipient",
+      "Separate authentication from access",
+      "Validate current account status"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Validate recipient or audience restrictions as well as signature and issuer. Shared trust in an issuer does not make assertions interchangeable."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-015",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A local application keeps authorizing a user after the organization disables the user's account upstream. Which integration property should be corrected?",
+    "options": [
+      "Bind the assertion to its recipient",
+      "Use an independent recovery path",
+      "Validate current account status",
+      "Separate authentication from access"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Current account and session status must propagate into access decisions. An earlier valid login cannot justify indefinite access after deactivation."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-016",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Administrators cannot recover a failed identity service because their only administrative login depends on that same service. Which design change breaks the circular dependency?",
+    "options": [
+      "Separate authentication from access",
+      "Bind the assertion to its recipient",
+      "Validate current account status",
+      "Use an independent recovery path"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A controlled independent emergency path supports recovery when the primary identity dependency fails. It needs strong protection and auditing."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-017",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A kiosk must execute only a small approved set of signed applications. The immediate requirement is to prevent other executables from starting. Which endpoint capability fits?",
+    "options": [
+      "Application execution control",
+      "Endpoint behavioral detection",
+      "Host network filtering",
+      "Browser execution isolation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Application control enforces permitted execution. Behavioral detection may identify malicious activity after execution begins."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-018",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A workstation runs an approved interpreter that begins unusual child-process and credential-access behavior. The team needs to detect and investigate that behavior. Which capability is most direct?",
+    "options": [
+      "Browser execution isolation",
+      "Endpoint behavioral detection",
+      "Application execution control",
+      "Host network filtering"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Endpoint behavioral detection observes process activity, including abuse of approved tools. An allowlist alone may permit the interpreter."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-019",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server must accept management connections only from a dedicated administration subnet, including when upstream routing changes. Which host control enforces this local network boundary?",
+    "options": [
+      "Endpoint behavioral detection",
+      "Browser execution isolation",
+      "Host network filtering",
+      "Application execution control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A host firewall can restrict allowed source networks and services at the server. Browser isolation does not enforce server management ingress."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-020",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff must view untrusted external websites while keeping website execution separated from their ordinary workstation environment. Which capability addresses that requirement?",
+    "options": [
+      "Application execution control",
+      "Endpoint behavioral detection",
+      "Host network filtering",
+      "Browser execution isolation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Browser isolation separates execution of untrusted web content. A host network rule alone does not provide that execution boundary."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-021",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A container runs as a non-root user but retains kernel capabilities its application never uses. Which hardening change removes this unnecessary privilege?",
+    "options": [
+      "Drop unnecessary capabilities",
+      "Remove the daemon socket mount",
+      "Make application files read-only",
+      "Set a bounded resource quota"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Drop capabilities that the workload does not require. Non-root execution alone does not establish that every assigned capability is necessary."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-022",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A monitoring container can reach the host's container-management socket even though it needs only exported metrics. Which change removes the high-impact management path?",
+    "options": [
+      "Set a bounded resource quota",
+      "Remove the daemon socket mount",
+      "Drop unnecessary capabilities",
+      "Make application files read-only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Remove the unnecessary socket exposure. A read-only filesystem mount does not make the management API itself read-only."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-023",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application needs to read packaged code but write only to one temporary directory. Which filesystem change limits unexpected alteration of its code?",
+    "options": [
+      "Remove the daemon socket mount",
+      "Set a bounded resource quota",
+      "Make application files read-only",
+      "Drop unnecessary capabilities"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Make application files read-only and provide only the necessary writable location. Resource quotas address consumption rather than file modification."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-024",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A defective container consumes nearly all host memory, starving unrelated services. Which container setting most directly limits this failure's resource impact?",
+    "options": [
+      "Drop unnecessary capabilities",
+      "Remove the daemon socket mount",
+      "Make application files read-only",
+      "Set a bounded resource quota"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A suitable memory quota bounds consumption. Read-only files do not limit how much memory the process allocates."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-025",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client requests api.example.invalid but receives a currently valid certificate naming files.example.invalid. Trust-chain validation succeeds. What needs correction?",
+    "options": [
+      "Correct the certificate name",
+      "Install the required chain",
+      "Align supported TLS parameters",
+      "Renew the expired certificate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The certificate identity must match the requested service. Trust in the issuer does not cure a hostname mismatch."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-026",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newly deployed server presents its leaf certificate without the required intermediate. Clients trust the root but cannot build a path to it. What should the server administrator supply?",
+    "options": [
+      "Renew the expired certificate",
+      "Install the required chain",
+      "Correct the certificate name",
+      "Align supported TLS parameters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Supply the appropriate intermediate chain so clients can build the trust path. A new hostname does not resolve a missing issuer link."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-027",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A TLS handshake fails before certificate verification. Logs show the client and server have no mutually supported protocol parameters. What should be aligned within the approved security baseline?",
+    "options": [
+      "Install the required chain",
+      "Renew the expired certificate",
+      "Align supported TLS parameters",
+      "Correct the certificate name"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A compatible approved TLS configuration is required for negotiation. Certificate renewal cannot create a shared protocol or cipher configuration."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-028",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A certificate's validity ended yesterday. The service name and issuer chain are correct and clients have accurate clocks. Which action addresses the specific failure?",
+    "options": [
+      "Correct the certificate name",
+      "Install the required chain",
+      "Align supported TLS parameters",
+      "Renew the expired certificate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Renew and deploy a valid certificate through the authorized process. Changing the trust store is not a proper cure for expiry."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-029",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A receiver needs to know whether an SMTP sender is authorized to use the envelope MAIL FROM domain. Which mechanism's evidence should it inspect?",
+    "options": [
+      "Check the authorized sending hosts",
+      "Verify the message-domain signature",
+      "Inspect the signed DNS response",
+      "Validate the TLS peer identity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SPF checks the sending host against the domain's published authorization. It does not sign the message content."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-030",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A mail gateway needs to verify a domain's cryptographic responsibility for selected headers and the covered message body. Which evidence addresses that question?",
+    "options": [
+      "Validate the TLS peer identity",
+      "Verify the message-domain signature",
+      "Check the authorized sending hosts",
+      "Inspect the signed DNS response"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DKIM verifies a signature associated with a signing domain. A successful signature does not by itself establish that the visible author is trustworthy."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-031",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A resolver needs to validate the origin and integrity of DNS data using the DNSSEC trust chain. Which evidence is relevant?",
+    "options": [
+      "Verify the message-domain signature",
+      "Validate the TLS peer identity",
+      "Inspect the signed DNS response",
+      "Check the authorized sending hosts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DNSSEC validation checks signed DNS data and its trust chain. It does not provide confidentiality for ordinary DNS queries."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-032",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application connects to a remote HTTPS endpoint and must establish that the encrypted channel terminates at the intended service. Which validation is needed?",
+    "options": [
+      "Check the authorized sending hosts",
+      "Verify the message-domain signature",
+      "Inspect the signed DNS response",
+      "Validate the TLS peer identity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "TLS peer identity validation uses the appropriate certificate identity and trust checks. Email-domain authorization is unrelated to this channel."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-033",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall uses first-match processing. An early broad deny covers the approved management subnet, so a later narrow allow never matches. Which correction addresses the observed block?",
+    "options": [
+      "Correct the ordered filter rule",
+      "Restore the missing return route",
+      "Move the observation point",
+      "Tune the validated detection rule"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Correct rule ordering or scope so the approved flow reaches its intended decision. A detection-rule change does not alter the access filter."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-034",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A request reaches a service through a tunnel, but packet captures show replies leaving through an unrelated default path. The filter permits both directions. What should be corrected?",
+    "options": [
+      "Tune the validated detection rule",
+      "Restore the missing return route",
+      "Correct the ordered filter rule",
+      "Move the observation point"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Restore the proper return route so replies use the intended path. Changing an already permissive filter does not fix asymmetric routing."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-035",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sensor sees only internet-bound traffic, but the required detection concerns communication between two internal workload segments. Which change directly gives it the missing visibility?",
+    "options": [
+      "Restore the missing return route",
+      "Tune the validated detection rule",
+      "Move the observation point",
+      "Correct the ordered filter rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Place observation where the relevant east-west traffic can be seen. A more sensitive rule cannot detect packets the sensor never receives."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-036",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sensor captures the relevant traffic correctly, but a rule consistently flags an approved application behavior as malicious. Analysts have verified the behavior and its scope. Which action addresses the false positives?",
+    "options": [
+      "Correct the ordered filter rule",
+      "Restore the missing return route",
+      "Move the observation point",
+      "Tune the validated detection rule"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tune the validated rule or scoped exception while preserving relevant coverage. Moving the sensor does not correct faulty classification of traffic it already sees."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-037",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A device accepts firmware only after verifying that an update is authorized and intact. Which platform-resilience function is implemented?",
+    "options": [
+      "Authenticate firmware updates",
+      "Detect unauthorized firmware change",
+      "Recover a trusted firmware image",
+      "Protect the recovery trust anchor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Authenticated update protects firmware integrity before installation. Recovery restores a trusted state after a failure or corruption."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-038",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A platform compares critical firmware against trusted integrity expectations and reports unauthorized change. Which resilience function is this?",
+    "options": [
+      "Protect the recovery trust anchor",
+      "Detect unauthorized firmware change",
+      "Authenticate firmware updates",
+      "Recover a trusted firmware image"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Detection identifies a departure from the authorized state. Reporting corruption alone does not restore the firmware."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-039",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After confirmed firmware corruption, a platform uses an authorized recovery mechanism to restore valid critical code. Which resilience function is being exercised?",
+    "options": [
+      "Detect unauthorized firmware change",
+      "Protect the recovery trust anchor",
+      "Recover a trusted firmware image",
+      "Authenticate firmware updates"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Recovery returns critical firmware to a state of integrity. Preventive verification alone cannot repair existing corruption."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-040",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A recovery design stores its trusted verification basis where ordinary compromised software can overwrite it. Which design element most needs protection?",
+    "options": [
+      "Authenticate firmware updates",
+      "Detect unauthorized firmware change",
+      "Recover a trusted firmware image",
+      "Protect the recovery trust anchor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The recovery trust anchor must resist the compromise it is meant to recover from. A backup image is insufficient if its trust basis can also be replaced."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-041",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A signing service must perform private-key operations while keeping the signing key inside a dedicated protected cryptographic boundary. Which technology role best fits?",
+    "options": [
+      "A protected signing-key service",
+      "A hardware-rooted device measurement",
+      "An isolated execution environment",
+      "An encrypted storage device"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A protected signing-key service backed by an appropriate HSM keeps key operations inside that boundary. Disk encryption alone does not provide that operational isolation."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-042",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A remote verifier needs trustworthy evidence about a device's boot measurements, rooted in protected hardware state. Which capability is most relevant?",
+    "options": [
+      "An encrypted storage device",
+      "A hardware-rooted device measurement",
+      "A protected signing-key service",
+      "An isolated execution environment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hardware-rooted measurement and attestation support verification of device state. Encryption of stored files does not attest boot integrity."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-043",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A workload must process sensitive data inside a hardware-supported protected execution boundary. The concern is exposure during processing, not only on disk. Which capability fits?",
+    "options": [
+      "A hardware-rooted device measurement",
+      "An encrypted storage device",
+      "An isolated execution environment",
+      "A protected signing-key service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An isolated execution environment can protect selected data and code in use within its threat model. Storage encryption protects a different state."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-044",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The primary threat is physical theft of a powered-off drive. Which capability directly protects the stored contents when its keys remain protected?",
+    "options": [
+      "A protected signing-key service",
+      "A hardware-rooted device measurement",
+      "An isolated execution environment",
+      "An encrypted storage device"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Storage encryption addresses confidentiality of data on the stolen drive. It does not automatically protect plaintext on a running compromised host."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-045",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fragile industrial controller has not been assessed for active scan safety. The immediate need is to learn its normal communications without probing it. Which method fits?",
+    "options": [
+      "Use passive network observation",
+      "Test changes with control engineers",
+      "Restrict the permitted OT flows",
+      "Plan supported component replacement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Passive observation collects existing traffic without sending active probes. Even passive deployment should respect operational and safety constraints."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-046",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor provides a patch for a safety-relevant controller. Its effect on timing and process behavior has not been validated in the site configuration. Which step should precede production rollout?",
+    "options": [
+      "Plan supported component replacement",
+      "Test changes with control engineers",
+      "Use passive network observation",
+      "Restrict the permitted OT flows"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Test the change with operational experts in an appropriate environment. Ordinary IT patch success does not prove process safety or timing compatibility."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-047",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An unsupported controller must remain in service during an approved replacement interval. It needs communication with only two known systems. Which compensating boundary reduces unnecessary reachability?",
+    "options": [
+      "Test changes with control engineers",
+      "Plan supported component replacement",
+      "Restrict the permitted OT flows",
+      "Use passive network observation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Restrict flows to the documented operational requirements. Monitoring alone would not prevent unrelated systems from reaching it."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-048",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A legacy component has no supported update path and its residual risk cannot remain acceptable indefinitely. A temporary segmentation plan is already approved. Which lifecycle action addresses the enduring problem?",
+    "options": [
+      "Use passive network observation",
+      "Test changes with control engineers",
+      "Restrict the permitted OT flows",
+      "Plan supported component replacement"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Plan replacement with a supported component. Compensating controls can reduce exposure temporarily but do not restore vendor support."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-049",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security change would block the operator's required emergency interaction with a physical process. The safety analysis requires that interaction to remain available. Which constraint governs the design?",
+    "options": [
+      "Preserve the validated safety response",
+      "Schedule a controlled maintenance window",
+      "Verify the redundant control path",
+      "Document the constrained-device exception"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The validated safety response must remain available while security controls are redesigned around it. A generic access restriction cannot override the process safety requirement."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-050",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A required OT update involves a reboot that would interrupt an active process. Testing is complete and the process can safely stop during a planned outage. What should be arranged?",
+    "options": [
+      "Document the constrained-device exception",
+      "Schedule a controlled maintenance window",
+      "Preserve the validated safety response",
+      "Verify the redundant control path"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use a controlled maintenance window coordinated with operations. A technically correct update can still be unsafe at the wrong operational time."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-051",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A controller is to be taken offline under an approved procedure that depends on a standby path. Before the planned switchover, what should be confirmed?",
+    "options": [
+      "Schedule a controlled maintenance window",
+      "Document the constrained-device exception",
+      "Verify the redundant control path",
+      "Preserve the validated safety response"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Verify that the redundant path can safely assume its required function. The existence of a standby label is not evidence of readiness."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-052",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An embedded sensor cannot support the standard endpoint agent. A risk owner approves specific network protections and a review date while replacement is planned. What governance record is needed?",
+    "options": [
+      "Preserve the validated safety response",
+      "Schedule a controlled maintenance window",
+      "Verify the redundant control path",
+      "Document the constrained-device exception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Document the exception, constraints, controls and review boundary. Treating the device as fully compliant would hide the known limitation."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-053",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A remediation webhook is delivered twice. The second execution duplicates an irreversible business-side action. Which workflow property is needed to handle retries safely?",
+    "options": [
+      "Add an idempotency check",
+      "Require approval for high impact",
+      "Validate the event authenticity",
+      "Constrain the automation identity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Idempotency or deduplication ensures repeated delivery does not repeat the same action. Authenticity validation does not itself prevent duplicate valid events."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-054",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An automated playbook can isolate a hospital's shared identity service based on a low-confidence signal. Policy requires an authorized human decision for that business impact. Which gate is missing?",
+    "options": [
+      "Constrain the automation identity",
+      "Require approval for high impact",
+      "Add an idempotency check",
+      "Validate the event authenticity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A human approval gate should precede that high-impact action under the stated policy. Faster execution does not compensate for insufficient authorization."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-055",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A remediation endpoint accepts externally supplied events without checking their authenticated source. Which validation should occur before trusting an event to trigger action?",
+    "options": [
+      "Require approval for high impact",
+      "Constrain the automation identity",
+      "Validate the event authenticity",
+      "Add an idempotency check"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Authenticate and validate the event source and integrity. A least-privilege executor can still perform harmful permitted actions on forged input."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-056",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A playbook needs to quarantine one endpoint but executes with unrestricted tenant administration rights. Which change reduces the authority available if the workflow is abused?",
+    "options": [
+      "Add an idempotency check",
+      "Require approval for high impact",
+      "Validate the event authenticity",
+      "Constrain the automation identity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Use a narrowly scoped automation identity. Input validation is useful but does not justify unnecessary permissions."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-057",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An infrastructure change is under review and has not been deployed. The team wants to identify prohibited settings before they reach production. Which automation stage fits?",
+    "options": [
+      "Evaluate the proposed configuration",
+      "Detect divergence from the baseline",
+      "Apply the approved correction",
+      "Verify the resulting service state"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Evaluate the proposed configuration before deployment. Runtime drift detection applies after actual state exists."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-058",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A production resource differs from its approved infrastructure definition after a manual console change. Which capability first identifies this discrepancy?",
+    "options": [
+      "Verify the resulting service state",
+      "Detect divergence from the baseline",
+      "Evaluate the proposed configuration",
+      "Apply the approved correction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Drift detection compares actual state with the approved baseline. A successful original deployment does not guarantee continuing consistency."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-059",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A detected configuration deviation has an approved, tested remediation and a permitted change window. Which workflow step restores the intended setting?",
+    "options": [
+      "Detect divergence from the baseline",
+      "Verify the resulting service state",
+      "Apply the approved correction",
+      "Evaluate the proposed configuration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Apply the authorized correction. Detection alone reports the deviation without changing it."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-060",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Automation reports that a correction command returned success. The team must confirm both compliance and continued application operation. Which step completes the control loop?",
+    "options": [
+      "Evaluate the proposed configuration",
+      "Detect divergence from the baseline",
+      "Apply the approved correction",
+      "Verify the resulting service state"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Verify resulting configuration and service health. Command success does not prove the intended outcome or absence of unintended effects."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-061",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A message payload must remain secret and detect unauthorized alteration under an established symmetric key. Which mechanism best addresses both needs?",
+    "options": [
+      "Authenticated payload encryption",
+      "A publisher digital signature",
+      "A protected password hash",
+      "A tokenized business identifier"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Authenticated encryption provides confidentiality and integrity under the key. A signature alone leaves the message readable."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-062",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A distributor publishes a readable software package and needs customers to verify its origin and integrity using a trusted public key. Which mechanism fits?",
+    "options": [
+      "A tokenized business identifier",
+      "A publisher digital signature",
+      "Authenticated payload encryption",
+      "A protected password hash"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A publisher signature provides origin and integrity evidence without requiring the package to be secret. A shared password hash is unrelated."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-063",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A login service needs to verify passwords without retaining a reversibly encrypted copy. Which storage mechanism is appropriate?",
+    "options": [
+      "A publisher digital signature",
+      "A tokenized business identifier",
+      "A protected password hash",
+      "Authenticated payload encryption"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Use a suitable salted, deliberately expensive password-hashing scheme. Reversible encryption creates a recovery path the verifier does not need."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-064",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business wants routine systems to use a substitute identifier while a tightly controlled service maintains the association with the original sensitive value. Which mechanism fits?",
+    "options": [
+      "Authenticated payload encryption",
+      "A publisher digital signature",
+      "A protected password hash",
+      "A tokenized business identifier"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tokenization substitutes a reference value and restricts access to the mapping. It is not the same as making the original value publicly verifiable."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-065",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An envelope-encryption system rotates its key-encryption key. Existing data keys are still approved and uncompromised. Which operation can update their wrapping without rewriting every data object?",
+    "options": [
+      "Rewrap the data-encryption keys",
+      "Reencrypt the affected payloads",
+      "Generate a fresh data key",
+      "Retain required historical keys"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rewrap the data-encryption keys with the new key-encryption key. The payload can remain unchanged when its data key remains suitable."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-066",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data-encryption key is confirmed compromised. The organization must protect retained plaintext under a new uncompromised key. Which operation addresses the affected ciphertext going forward?",
+    "options": [
+      "Retain required historical keys",
+      "Reencrypt the affected payloads",
+      "Rewrap the data-encryption keys",
+      "Generate a fresh data key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Reencrypt affected data under a new key and manage old exposure appropriately. Merely wrapping the compromised key differently does not change what it can decrypt."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-067",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new dataset must have an encryption boundary independent of existing datasets. Which action creates independent key material for that boundary?",
+    "options": [
+      "Reencrypt the affected payloads",
+      "Retain required historical keys",
+      "Generate a fresh data key",
+      "Rewrap the data-encryption keys"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Generate a fresh data key with an approved cryptographic random process. Rewrapping an existing shared key does not make the datasets cryptographically independent."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-068",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A key rotation completes, but lawful retained archives still depend on old decryption keys. Those keys are not compromised. Which lifecycle requirement prevents accidental loss of access?",
+    "options": [
+      "Rewrap the data-encryption keys",
+      "Reencrypt the affected payloads",
+      "Generate a fresh data key",
+      "Retain required historical keys"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Retain needed historical keys under suitable protection until dependent data can be migrated or disposed of. Rotation is not automatic permission to destroy all earlier keys."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-069",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system must prevent later theft of its long-term authentication key from revealing earlier captured session contents, assuming ephemeral secrets were properly erased. Which cryptographic property is sought?",
+    "options": [
+      "Protect past session secrecy",
+      "Plan quantum-resistant key exchange",
+      "Increase password-guessing cost",
+      "Split control of key recovery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Forward secrecy protects prior sessions against later long-term key compromise under its assumptions. It is not automatically resistance to a quantum attacker."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-070",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An archive must remain confidential for decades, and an adversary may store encrypted traffic now for future quantum analysis. Which migration concern is most relevant?",
+    "options": [
+      "Split control of key recovery",
+      "Plan quantum-resistant key exchange",
+      "Protect past session secrecy",
+      "Increase password-guessing cost"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Assess and plan quantum-resistant key establishment for the long confidentiality lifetime. Classical forward secrecy alone does not address a future quantum break of recorded key exchange."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-071",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers have obtained password-verifier records. The system wants each offline guess to require substantial computation and memory while keeping legitimate verification practical. Which technique addresses this?",
+    "options": [
+      "Plan quantum-resistant key exchange",
+      "Split control of key recovery",
+      "Increase password-guessing cost",
+      "Protect past session secrecy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A deliberately expensive password derivation scheme raises guessing cost. Splitting recovery authority does not strengthen each password guess operation."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-072",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Policy requires that no single custodian can reconstruct a recovery key alone. Which cryptographic governance arrangement fits?",
+    "options": [
+      "Protect past session secrecy",
+      "Plan quantum-resistant key exchange",
+      "Increase password-guessing cost",
+      "Split control of key recovery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Threshold splitting can require multiple independent shares for reconstruction. Ordinary key rotation does not impose multiple-custodian control."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-073",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A selected cryptographic scheme permits a service to evaluate a supported function on encrypted inputs without decrypting them. Which capability is being used?",
+    "options": [
+      "Compute over protected ciphertext",
+      "Authenticate visible associated data",
+      "Establish both peers' identities",
+      "Erase the protected decryption key"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Homomorphic encryption supports specified computation over ciphertext. It has practical limits and is not the same as ordinary transport encryption."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-074",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A message's routing metadata must remain readable but be bound to its encrypted payload so alteration is detected. Which AEAD feature fits?",
+    "options": [
+      "Erase the protected decryption key",
+      "Authenticate visible associated data",
+      "Compute over protected ciphertext",
+      "Establish both peers' identities"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Associated data is authenticated while remaining unencrypted. Including it only outside the authentication boundary would not bind it to the payload."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-075",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two services require each endpoint to authenticate the other during channel establishment. Which authentication property is required?",
+    "options": [
+      "Authenticate visible associated data",
+      "Erase the protected decryption key",
+      "Establish both peers' identities",
+      "Compute over protected ciphertext"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mutual authentication establishes both peer identities. Server-only authentication does not authenticate the client endpoint."
+  },
+  {
+    "id": "SECURITYX-ENGINEERING-076",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxEngineering",
+    "skill": "engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage system meets the prerequisites for approved cryptographic sanitization, including exclusive effective encryption and protected key management. Which action makes the encrypted data inaccessible by that method?",
+    "options": [
+      "Compute over protected ciphertext",
+      "Authenticate visible associated data",
+      "Establish both peers' identities",
+      "Erase the protected decryption key"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cryptographic erase destroys the necessary key material under the approved process. It is effective only when all relevant keys and copies are handled and the method's prerequisites hold."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-001",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A SIEM receives every raw authentication event, but the normalized user field is empty after a vendor changes its log format. Which pipeline correction addresses the lost context?",
+    "options": [
+      "Repair the field extraction",
+      "Remove duplicate event ingestion",
+      "Restore the missing log source",
+      "Correct the timestamp interpretation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Repair parsing and field extraction for the new format. Restoring transport is unnecessary when raw events are already arriving."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-002",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dashboard counts every transaction twice. Both copies share the same source event identifier but arrive through separate collectors. Which change targets the inflation?",
+    "options": [
+      "Correct the timestamp interpretation",
+      "Remove duplicate event ingestion",
+      "Repair the field extraction",
+      "Restore the missing log source"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Deduplicate or correct the redundant ingestion path. Changing detection thresholds would hide rather than fix duplicate data."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-003",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One application has produced no central events since its forwarding agent stopped. Other sources and parsing remain healthy. What should be restored first?",
+    "options": [
+      "Remove duplicate event ingestion",
+      "Correct the timestamp interpretation",
+      "Restore the missing log source",
+      "Repair the field extraction"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Restore that source's collection path. Parser changes cannot recover events that never reach the central system."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-004",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Events from two systems are consistently eight hours apart even though raw timestamps describe the same activity. One parser treats local time as UTC. Which correction is needed?",
+    "options": [
+      "Repair the field extraction",
+      "Remove duplicate event ingestion",
+      "Restore the missing log source",
+      "Correct the timestamp interpretation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Apply the correct time-zone interpretation before correlation. Duplicate filtering does not repair a consistent time conversion error."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-005",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two equally credible compromise alerts affect otherwise similar hosts. One supports emergency clinical care and the other a disposable training environment. Which factor should most directly distinguish response priority?",
+    "options": [
+      "Use the asset's business impact",
+      "Check the signal's evidence quality",
+      "Compare with the relevant baseline",
+      "Correlate independent observations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Business impact and asset criticality distinguish the consequences. Similar technical alerts need not imply equal mission risk."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-006",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A feed labels an indicator severe but provides no provenance, context or corroboration. Before treating that label as reliable, which characteristic should an analyst assess?",
+    "options": [
+      "Correlate independent observations",
+      "Check the signal's evidence quality",
+      "Use the asset's business impact",
+      "Compare with the relevant baseline"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Evaluate evidence quality and source reliability. A severity label alone does not establish that the indicator applies or is accurate."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-007",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A backup server transfers large volumes nightly as expected. A rule flags its ordinary schedule as an anomaly. What context should be used to evaluate the alert?",
+    "options": [
+      "Check the signal's evidence quality",
+      "Correlate independent observations",
+      "Compare with the relevant baseline",
+      "Use the asset's business impact"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Compare behavior with the appropriate role and time baseline. A universal threshold can misclassify legitimate high-volume workloads."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-008",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A single login anomaly is inconclusive. The analyst can obtain endpoint and application events for the same account and interval. Which method improves confidence in the incident hypothesis?",
+    "options": [
+      "Use the asset's business impact",
+      "Check the signal's evidence quality",
+      "Compare with the relevant baseline",
+      "Correlate independent observations"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Correlating independent observations can strengthen or weaken the hypothesis. Repeating the same alert does not provide independent evidence."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-009",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report service constructs SQL by combining fixed query structure with untrusted filter values. Which change directly prevents those values from becoming query syntax?",
+    "options": [
+      "Bind database query parameters",
+      "Encode for the output context",
+      "Restrict server fetch destinations",
+      "Check authorization on the object"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bind data values through parameterized queries. Authorization remains necessary but does not itself separate data from SQL syntax."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-010",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dashboard inserts an untrusted description into an HTML text context. The description must appear as text, not executable markup. Which defense addresses this output boundary?",
+    "options": [
+      "Check authorization on the object",
+      "Encode for the output context",
+      "Bind database query parameters",
+      "Restrict server fetch destinations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use a safe text sink or the correct context-specific encoding. SQL parameter binding does not protect browser interpretation."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-011",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server-side preview feature only needs to fetch from two approved content services, but currently accepts arbitrary destinations. Which restriction targets the unnecessary network reach?",
+    "options": [
+      "Encode for the output context",
+      "Check authorization on the object",
+      "Restrict server fetch destinations",
+      "Bind database query parameters"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Allow only the required destinations with robust validation and network boundaries. Output encoding does not constrain where the server connects."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-012",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An API authenticates callers and safely parses record identifiers, but returns any customer's record when its identifier is supplied. Which missing check addresses this access flaw?",
+    "options": [
+      "Bind database query parameters",
+      "Encode for the output context",
+      "Restrict server fetch destinations",
+      "Check authorization on the object"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Check the caller's authorization for the requested object. Valid syntax and authentication do not establish permission to that specific record."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-013",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two concurrent redemption requests each read a voucher as unused before either marks it used, so both succeed. Which fix addresses the race at its source?",
+    "options": [
+      "Make the state transition atomic",
+      "Remove the unnecessary function",
+      "Replace the unsupported dependency",
+      "Rotate the exposed application secret"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An atomic conditional state transition prevents both requests from consuming the same unused state. Input validation alone does not serialize the operation."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-014",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A production service includes an unused diagnostic endpoint with privileged capabilities. No business flow requires it. Which remediation most directly eliminates that attack surface?",
+    "options": [
+      "Rotate the exposed application secret",
+      "Remove the unnecessary function",
+      "Make the state transition atomic",
+      "Replace the unsupported dependency"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Remove or disable the unnecessary function. Monitoring the endpoint would leave its capability exposed."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-015",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vulnerable library has reached end of support and has no patched release. The application still needs its function, and a maintained alternative has been validated. Which durable remediation fits?",
+    "options": [
+      "Remove the unnecessary function",
+      "Rotate the exposed application secret",
+      "Replace the unsupported dependency",
+      "Make the state transition atomic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Replace the unsupported dependency with a suitable maintained option. A temporary filter does not create ongoing security support."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-016",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A live application credential was committed to a public repository. The current file has been cleaned, but the credential remains valid. Which action addresses continued use of the leaked value?",
+    "options": [
+      "Make the state transition atomic",
+      "Remove the unnecessary function",
+      "Replace the unsupported dependency",
+      "Rotate the exposed application secret"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rotate or revoke the exposed secret and update authorized consumers. Removing the visible file does not invalidate copies already obtained."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-017",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An investigator receives original media needed for a formal inquiry. Before ordinary analysis modifies files, which evidence-handling priority applies?",
+    "options": [
+      "Preserve the original evidence",
+      "Analyze a verified working copy",
+      "Record each custody transfer",
+      "Normalize times with provenance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Preserve the original and follow the authorized acquisition process. Working directly on the original can alter relevant evidence."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-018",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A forensic image has been acquired and its integrity verified. The analyst needs to perform repeated searches without altering the preserved master. Which artifact should be used?",
+    "options": [
+      "Normalize times with provenance",
+      "Analyze a verified working copy",
+      "Preserve the original evidence",
+      "Record each custody transfer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Analyze an appropriate working copy while preserving the verified master. This separates analysis changes from the original evidence."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-019",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An evidence package moves from an incident responder to an external examiner. Which record supports accountability for that handoff?",
+    "options": [
+      "Analyze a verified working copy",
+      "Normalize times with provenance",
+      "Record each custody transfer",
+      "Preserve the original evidence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Record custody transfer details, including who handled it and when. A hash alone does not record the people and circumstances of transfer."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-020",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An investigation combines UTC server logs, local endpoint times and a device with a known clock offset. Which timeline practice preserves interpretability?",
+    "options": [
+      "Preserve the original evidence",
+      "Analyze a verified working copy",
+      "Record each custody transfer",
+      "Normalize times with provenance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Normalize the times while retaining originals and documenting conversions or uncertainty. Silently replacing timestamps loses important provenance."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-021",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The incident lead needs evidence of a suspicious process's current in-memory state before an approved shutdown. Which acquisition target is most time-sensitive?",
+    "options": [
+      "Capture authorized volatile state",
+      "Acquire the persistent disk evidence",
+      "Collect the cloud audit history",
+      "Preserve the network observation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Volatile memory state may disappear at shutdown. Acquisition should follow the authorized plan and account for its impact."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-022",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Investigators need deleted-file remnants and filesystem metadata from a powered-off workstation. Which evidence source most directly addresses that question?",
+    "options": [
+      "Preserve the network observation",
+      "Acquire the persistent disk evidence",
+      "Capture authorized volatile state",
+      "Collect the cloud audit history"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Persistent storage evidence can contain filesystem artifacts and remnants. There is no live memory to acquire from a powered-off system."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-023",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage policy was changed through a provider's management API. Investigators need the actor and request history for that control-plane action. Which source is most relevant?",
+    "options": [
+      "Acquire the persistent disk evidence",
+      "Preserve the network observation",
+      "Collect the cloud audit history",
+      "Capture authorized volatile state"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud audit history records management operations. A disk image of an unrelated application host may not contain those provider-side events."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-024",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The team needs to determine which observed internal host contacted a destination during a specific interval. Packet or flow telemetry was collected at the relevant boundary. Which source should be preserved?",
+    "options": [
+      "Capture authorized volatile state",
+      "Acquire the persistent disk evidence",
+      "Collect the cloud audit history",
+      "Preserve the network observation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The relevant network observation directly records the communication. Current application settings alone cannot reconstruct the earlier flow."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-025",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hunt begins with a broad concern about misuse of administrative tools but no defined behavior or scope to investigate. What should the team establish first?",
+    "options": [
+      "Form a testable hunting hypothesis",
+      "Select the required telemetry",
+      "Evaluate the collected evidence",
+      "Refine the detection coverage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A testable hypothesis gives the hunt a focused question and scope. Collecting everything without a question can waste effort and obscure findings."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-026",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hunt hypothesis concerns unusual parent-child process relationships, but only firewall events are available. What must the team identify next?",
+    "options": [
+      "Refine the detection coverage",
+      "Select the required telemetry",
+      "Form a testable hunting hypothesis",
+      "Evaluate the collected evidence"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Select telemetry capable of observing process relationships. Network records alone generally cannot establish that host execution relationship."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-027",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The team has gathered the necessary records for a defined hypothesis. Some observations support it and others contradict it. What analytical step should follow?",
+    "options": [
+      "Select the required telemetry",
+      "Refine the detection coverage",
+      "Evaluate the collected evidence",
+      "Form a testable hunting hypothesis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Evaluate all relevant evidence against the hypothesis, including contradictory observations. A hunt should not assume its starting suspicion is true."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-028",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A completed hunt identifies a meaningful behavior that existing alerts miss. After validating its relevance, what operational improvement should follow?",
+    "options": [
+      "Form a testable hunting hypothesis",
+      "Select the required telemetry",
+      "Evaluate the collected evidence",
+      "Refine the detection coverage"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Refine detection coverage and test it against representative data. A one-time hunt finding should inform continuing monitoring where appropriate."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-029",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst wants a reusable rule describing characteristic byte or text patterns in suspicious files. Which artifact type most directly serves that purpose?",
+    "options": [
+      "A file-content matching rule",
+      "A normalized event detection rule",
+      "A structured intelligence object",
+      "An intelligence transport service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A file-content matching rule, such as a YARA rule, targets content patterns. A transport service moves intelligence rather than defining the file match."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-030",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to express a detection over normalized log events in a portable rule format before translating it to its SIEM. Which artifact type fits?",
+    "options": [
+      "An intelligence transport service",
+      "A normalized event detection rule",
+      "A file-content matching rule",
+      "A structured intelligence object"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An event detection rule, such as Sigma, expresses logic over log sources and fields. File-content matching serves a different input type."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-031",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several organizations need a machine-readable representation of an indicator and its relationships to observed activity. Which artifact category fits?",
+    "options": [
+      "A normalized event detection rule",
+      "An intelligence transport service",
+      "A structured intelligence object",
+      "A file-content matching rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A structured intelligence object, such as STIX, represents threat information and relationships. Transport is a separate concern."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-032",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Partners already agree on the structured threat data format and now need an API mechanism to exchange collections. Which capability addresses delivery?",
+    "options": [
+      "A file-content matching rule",
+      "A normalized event detection rule",
+      "A structured intelligence object",
+      "An intelligence transport service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An intelligence transport service, such as TAXII, supports exchange. The data object format alone does not provide the transport API."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-033",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An incident is actively spreading between approved workload zones. The response lead authorizes a narrow temporary boundary that stops propagation while preserving essential operations. Which response purpose does it serve?",
+    "options": [
+      "Contain the active exposure",
+      "Remove the persistence mechanism",
+      "Restore the validated service",
+      "Investigate the underlying cause"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Containment limits ongoing impact. It does not by itself remove the cause or restore a trustworthy service."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-034",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The affected host is isolated, and analysts have identified an unauthorized startup component that would survive ordinary process termination. Which response objective targets that component?",
+    "options": [
+      "Investigate the underlying cause",
+      "Remove the persistence mechanism",
+      "Contain the active exposure",
+      "Restore the validated service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Eradication removes the identified persistence mechanism as part of the authorized remediation. Isolation alone leaves it on the host."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-035",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The cause has been addressed and the approved recovery copy has been checked. The team now returns the service to controlled operation and monitors it. Which phase objective is being carried out?",
+    "options": [
+      "Remove the persistence mechanism",
+      "Investigate the underlying cause",
+      "Restore the validated service",
+      "Contain the active exposure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Recovery restores validated operation with appropriate checks. It should not assume that restoring a backup alone proves the cause was removed."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-036",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The immediate incident is resolved, but the team needs to understand how an unauthorized trust change passed the change process. Which activity supports prevention of recurrence?",
+    "options": [
+      "Contain the active exposure",
+      "Remove the persistence mechanism",
+      "Restore the validated service",
+      "Investigate the underlying cause"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Root-cause analysis examines the underlying technical and process contributors. Closing the incident ticket does not explain those contributors."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-037",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An approved investigation requires records from the affected period, and the ordinary lifecycle job would delete them tomorrow. Counsel and the incident lead have authorized preservation. What should the log owner do?",
+    "options": [
+      "Preserve necessary investigation logs",
+      "Minimize sensitive log content",
+      "Protect the log integrity boundary",
+      "Test access to archived records"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Preserve the required records under the authorized exception. Ordinary deletion should not defeat a valid investigation preservation requirement."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-038",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Application logs record full authentication secrets even though troubleshooting only requires a request identifier and outcome. Which logging change reduces unnecessary exposure?",
+    "options": [
+      "Test access to archived records",
+      "Minimize sensitive log content",
+      "Preserve necessary investigation logs",
+      "Protect the log integrity boundary"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Remove or mask unnecessary sensitive fields while retaining useful context. Longer retention would increase exposure of the secrets."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-039",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A compromised application account can modify both its live data and every copy of its audit trail. Which logging architecture weakness should be addressed?",
+    "options": [
+      "Minimize sensitive log content",
+      "Test access to archived records",
+      "Protect the log integrity boundary",
+      "Preserve necessary investigation logs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Separate and protect the audit integrity boundary so the same compromise cannot freely rewrite all evidence. Extra fields do not prevent alteration."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-040",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Policy requires older records to remain retrievable, but the team has never attempted a restore from the archive tier. Which check demonstrates usable retention?",
+    "options": [
+      "Preserve necessary investigation logs",
+      "Minimize sensitive log content",
+      "Protect the log integrity boundary",
+      "Test access to archived records"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Test retrieval and readability of archived records. Merely paying for archive storage does not prove that usable evidence can be recovered."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-041",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A detection validation set contains 200 known malicious events. The rule misses 50 of them. Using false negatives divided by all actual malicious events, what is the false-negative rate?",
+    "options": [
+      "25 percent",
+      "40 percent",
+      "60 percent",
+      "75 percent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "50 divided by 200 is 0.25, or 25%. The denominator is all actual malicious events, not only alerts."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-042",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Analysts review 150 alerts and confirm 60 are genuine incidents. Using true positives divided by all positive alerts, what is the alert precision?",
+    "options": [
+      "75 percent",
+      "40 percent",
+      "25 percent",
+      "60 percent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "60 divided by 150 is 0.40, or 40%. Precision measures how many raised alerts were correct, not how many incidents were detected."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-043",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test includes 80 malicious events. A detector correctly alerts on 48. Using detected malicious events divided by all malicious events, what is its recall?",
+    "options": [
+      "40 percent",
+      "75 percent",
+      "60 percent",
+      "25 percent"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "48 divided by 80 is 0.60, or 60%. The remaining 32 are missed malicious events."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-044",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A control assessment finds 90 of 120 required high-priority sources sending usable events. What percentage of those required sources has verified coverage?",
+    "options": [
+      "25 percent",
+      "40 percent",
+      "60 percent",
+      "75 percent"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "90 divided by 120 is 0.75, or 75%. Counting configured but non-reporting sources would overstate usable coverage."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-045",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four confirmed incidents took 6,10,14 and 18 minutes from first observed activity to detection. What is the arithmetic mean detection delay?",
+    "options": [
+      "12 minutes",
+      "18 minutes",
+      "24 minutes",
+      "30 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The delays sum to 48 minutes;48 divided by 4 is 12 minutes. The latest incident's delay alone is not the mean."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-046",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A response team detects an incident at 09:07 and completes authorized containment at 09:25. What is the detection-to-containment interval?",
+    "options": [
+      "30 minutes",
+      "18 minutes",
+      "12 minutes",
+      "24 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "From 09:07 to 09:25 is 18 minutes. Earlier unobserved activity is outside the interval requested."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-047",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A collector receives logs at 600 records per minute. A recoverable backlog contains 14,400 records, and the recovery stream processes that backlog at a net 600 records per minute after new traffic. How long will clearing it take?",
+    "options": [
+      "18 minutes",
+      "30 minutes",
+      "24 minutes",
+      "12 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14,400 divided by the stated net 600 is 24 minutes. The net rate already accounts for new traffic, so it should not be subtracted again."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-048",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A timeline source is known to run 20 minutes ahead of UTC. It records an event at 14:50 local-device time, and a trusted UTC alert is at 15:00. After correction, how long before the alert did the event occur?",
+    "options": [
+      "12 minutes",
+      "18 minutes",
+      "24 minutes",
+      "30 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Corrected event time is 14:30 UTC. The interval to 15:00 is 30 minutes; using the uncorrected timestamp would give 10 minutes."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-049",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two incidents use similar code, and a report claims they must have the same operator. Which analytical response is most appropriate before accepting that conclusion?",
+    "options": [
+      "Corroborate the claimed attribution",
+      "Separate coincidence from causation",
+      "Reproduce the authorized observation",
+      "Document the remaining uncertainty"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Seek independent corroboration because code can be shared, copied or reused. Similarity alone does not uniquely identify an actor."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-050",
+    "section": "securityx",
+    "test": 0,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service failed shortly after a security alert, but the team has no evidence connecting the two events. Which reasoning safeguard is needed?",
+    "options": [
+      "Document the remaining uncertainty",
+      "Separate coincidence from causation",
+      "Corroborate the claimed attribution",
+      "Reproduce the authorized observation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Distinguish temporal coincidence from a supported causal link. Sequence alone does not demonstrate that the alert's activity caused the failure."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-051",
+    "section": "securityx",
+    "test": 1,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst proposes a new detection based on one unusual sample. A controlled authorized test environment is available. Which step helps assess whether the observed behavior is reproducible?",
+    "options": [
+      "Separate coincidence from causation",
+      "Document the remaining uncertainty",
+      "Reproduce the authorized observation",
+      "Corroborate the claimed attribution"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reproduce the observation safely under controlled conditions before generalizing. One sample may reflect environment-specific behavior."
+  },
+  {
+    "id": "SECURITYX-OPERATIONS-052",
+    "section": "securityx",
+    "test": 2,
+    "module": 1,
+    "domain": "securityxOperations",
+    "skill": "operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evidence gaps prevent the team from establishing the exact first compromise time. The available records support only a bounded interval. How should the report represent the finding?",
+    "options": [
+      "Corroborate the claimed attribution",
+      "Separate coincidence from causation",
+      "Reproduce the authorized observation",
+      "Document the remaining uncertainty"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "State the supported interval and uncertainty rather than inventing precision. The absence of earlier logs is not proof that no earlier activity occurred."
+  }
+]

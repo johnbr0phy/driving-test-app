@@ -90,6 +90,11 @@
   "https://apcentral.collegeboard.org/media/pdf/ap-english-language-and-composition-course-and-exam-description.pdf",
   "https://apstudents.collegeboard.org/faqs/will-i-lose-points-if-i-answer-multiple-choice-question-incorrectly"
  ],
+ "appraiser": [
+  "https://appraisalfoundation.org/pages/national-uniform-licensing-and-certification-examination",
+  "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/229905.pdf",
+  "https://appraisalfoundation.org/pages/uspap"
+ ],
  "appsych": [
   "https://apcentral.collegeboard.org/courses/ap-psychology/exam",
   "https://apcentral.collegeboard.org/media/pdf/ap-psychology-course-overview.pdf",
@@ -1535,6 +1540,11 @@
   "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
   "https://learn.microsoft.com/en-us/credentials/support/credential-retirement"
  ],
+ "securityx": [
+  "https://lecbyo.files.cmp.optimizely.com/download/35cf5f02b73211efa0ca8e42e80f1a8f",
+  "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-securityx-cas-005-exam-objectives-%283-0%291d9e61d00bce410d87e3bca2ce40fa8a.pdf",
+  "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf"
+ ],
  "sehp": [
   "https://www.studera.nu/hogskoleprov/om/intro/",
   "https://www.studera.nu/hogskoleprov/resultat/resultat/rakna/",
@@ -1569,6 +1579,11 @@
  ],
  "series7": [
   "https://www.finra.org/registration-exams-ce/qualification-exams/series7"
+ ],
+ "servicenowcsa": [
+  "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+  "https://www.servicenow.com/docs/r/platform-user-interface/using-the-next-experience-global-header.html",
+  "https://www.servicenow.com/docs/r/platform-user-interface/view-management-overview.html"
  ],
  "setrafik": [
   "https://www.trafikverket.se/korkort/korkortsprov/personbil-och-latt-lastbil/kunskapsprov-b/",
@@ -1654,6 +1669,11 @@
   "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf",
   "https://store.pw.live/blogs/ssc-exams/ssc-mts-syllabus-2025-and-exam-pattern",
   "https://www.oliveboard.in/blog/ssc-mts-selection-process"
+ ],
+ "sscp": [
+  "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+  "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+  "https://www.isc2.org/certifications/computerized-adaptive-testing"
  ],
  "staaralg1": [
   "https://tea.texas.gov/data-reports/staar/2022-staar-algebra-i-blueprint-0.pdf",
@@ -1840,6 +1860,11 @@
   "https://wonderlic.com/science/cognitive-ability/",
   "https://wonderlic.com/select-hiring-assessment/cognitive/",
   "https://wonderlic.com/wp-content/uploads/2017/06/WPT-R_Description_MSP.pdf"
+ ],
+ "zafirearm": [
+  "https://allqs.saqa.org.za/showUnitStandard.php?id=117705",
+  "https://pftc.co.za/quality-assurance/",
+  "https://www.gov.za/documents/firearms-control-act"
  ],
  "zak53": [
   "https://www.gov.za/services/driving-licence/apply-learners-licence",

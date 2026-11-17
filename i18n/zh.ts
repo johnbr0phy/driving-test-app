@@ -2826,6 +2826,21 @@ export const zh: TranslationKeys = {
     caqcSharing: "Sharing the Road",
     caqcRisk: "Alcohol, Drugs, Fatigue & Distraction",
     caqcDriving: "Driving Techniques & Conditions",
+    // Licensed Residential Appraiser
+    appraiserMarket: "Real Estate Market",
+    appraiserProperty: "Property Description",
+    appraiserSite: "Land and Site Valuation",
+    appraiserSales: "Sales Comparison",
+    appraiserCost: "Cost Approach",
+    appraiserIncome: "Income Approach",
+    appraiserReconciliation: "Reconciliation",
+    appraiserUspap: "USPAP",
+    appraiserStatistics: "Statistics",
+    // South Africa firearm legal knowledge
+    zafirearmLegal: "Legal Foundations",
+    zafirearmLicensing: "Licensing",
+    zafirearmCustody: "Safe Custody",
+    zafirearmDuties: "Duties and Accountability",
     // NCCCO Mobile Crane Core
     ncccoSite: "Site",
     ncccoOperations: "Operations",

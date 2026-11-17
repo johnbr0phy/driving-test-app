@@ -1,0 +1,55 @@
+"""Original risk identification, monitoring and analysis practice."""
+ITEMS=[]
+def group(o,rows):
+ for k,(s,e) in enumerate(rows):ITEMS.append((s,[o[k]]+[v for j,v in enumerate(o) if j!=k],e))
+group(['A threat source','A vulnerability','A business impact','An implemented safeguard'],[
+('An assessment identifies an organized group with the intent and capability to disrupt the organization. What does the group represent?', 'The actor is a threat source. A weakness it might exploit would be a vulnerability.'),
+('An assessment finds that a public application runs an unsupported component with a known exploitable flaw. What does that weakness represent?', 'The exploitable weakness is a vulnerability, distinct from an actor or resulting loss.'),
+('A service interruption would prevent payroll processing and create contractual penalties. What do those consequences represent?', 'The consequences to organizational objectives are business impacts.'),
+('An organization has deployed an access gateway that enforces approved connection policy. What does this deployed measure represent?', 'An implemented safeguard modifies risk by enforcing a protective measure.')])
+group(['Avoid the risky activity','Mitigate the identified risk','Transfer specified financial exposure','Accept the residual risk'],[
+('A business decides not to launch a proposed service because its exposure exceeds the approved tolerance and no suitable controls are available. Which treatment is selected?', 'Avoidance removes the activity creating the exposure rather than operating it with controls.'),
+('A team deploys tested restrictions to reduce the likelihood of unauthorized access while continuing the service. Which treatment is selected?', 'Mitigation reduces likelihood or impact through controls while the activity continues.'),
+('An organization purchases an insurance policy covering defined incident costs while retaining responsibility for operating its systems securely. Which treatment applies to the covered costs?', 'Insurance can transfer specified financial exposure, without transferring all responsibility or eliminating the risk.'),
+('After reviewing a small remaining exposure within tolerance, the authorized owner documents a decision to operate without additional controls. Which treatment is selected?', 'Authorized acceptance explicitly retains the assessed residual risk.')])
+group(['Define the assessment scope','Identify the affected assets','Estimate likelihood and impact','Assign the risk response owner'],[
+('A requested review has no agreement on which subsidiaries, networks or time period it covers. Which assessment task should resolve this boundary?', 'Scope establishes what is and is not included in the review.'),
+('An assessor needs to determine which data stores and business services depend on an aging platform. Which task establishes what is exposed?', 'Identify the assets and dependencies before interpreting their exposure.'),
+('A weakness and its affected services are known. Management needs a reasoned view of how probable exploitation is and how serious its consequences would be. Which task provides this?', 'Risk estimation considers likelihood and impact in context, rather than treating the weakness alone as the complete risk.'),
+('A risk register entry has an agreed response but no person accountable for completing it. Which governance task is missing?', 'Assigning a response owner makes follow-through accountable and trackable.')])
+group(['Technical severity','Asset criticality','Observed exploitation','Control effectiveness'],[
+('A vulnerability score summarizes the flaw’s technical characteristics before considering this organization’s business use. What does that score primarily express?', 'A technical severity score is useful input but does not alone establish organizational priority.'),
+('Two similarly exposed systems have the same flaw, but one supports an essential clinical service. Which factor explains prioritizing that system?', 'Asset criticality reflects the importance and potential business impact of the affected service.'),
+('Threat intelligence shows that attackers are actively using a weakness against comparable organizations. Which factor has changed?', 'Observed exploitation changes the evidence about threat activity and likelihood.'),
+('A proposed mitigation is deployed, but testing shows requests still bypass it. Which factor must be reassessed?', 'The control’s effectiveness is poor even though its installation was completed.')])
+group(['Validate the finding','Prioritize the remediation','Implement the approved correction','Verify the remediation outcome'],[
+('A scanner reports a vulnerable version, but the product may contain a vendor backport. Which next step establishes whether the reported weakness actually applies?', 'Validate evidence and vendor applicability before treating the scanner result as confirmed.'),
+('Several confirmed weaknesses compete for limited maintenance time. Which task uses exposure and business impact to decide their order?', 'Prioritization ranks confirmed remediation work using context, not merely discovery order.'),
+('A tested patch has received change approval for tonight’s window. Which task now changes the vulnerable system?', 'Implement the authorized correction according to the change plan.'),
+('A patch job reports success, but the risk team needs proof that the vulnerability is no longer present. Which task provides that assurance?', 'Verification checks the resulting condition; a successful deployment log alone is insufficient.')])
+group(['A false positive','A false negative','A true positive','A true negative'],[
+('An alert claims a malicious login, but investigation confirms the login was legitimate and no malicious event occurred. How is the alert classified?', 'A false positive flags an event as malicious when the relevant malicious condition is absent.'),
+('A confirmed malicious transfer occurred, but the detection rule did not alert. How is the detection result classified?', 'A false negative misses the malicious condition that was present.'),
+('A detection rule alerts on a malicious file transfer, and investigation confirms that the transfer was malicious. How is this result classified?', 'A true positive correctly detects the malicious condition.'),
+('A benign health-check transaction occurs and the detection system correctly produces no malicious-activity alert. How is this result classified?', 'A true negative correctly leaves the absent malicious condition unflagged.')])
+group(['Establish a normal baseline','Correlate related events','Normalize event timestamps','Protect retained log evidence'],[
+('A monitoring team cannot distinguish unusual outbound volume from ordinary nightly processing because it has not characterized normal operation. Which task closes that gap?', 'A representative baseline establishes expected behavior and variation.'),
+('A single failed login is inconclusive, but combining repeated failures with later privilege changes may reveal a pattern. Which analysis activity is needed?', 'Correlation links relevant events across sources and time to support interpretation.'),
+('Two systems describe the same incident using different time zones and an unexplained clock offset. Which step is needed before ordering their events?', 'Normalize time information while retaining original evidence and recording the offset assumptions.'),
+('An investigation depends on logs that ordinary application administrators can silently alter. Which monitoring control addresses this evidentiary weakness?', 'Restrict and protect retained logs against unauthorized modification, with appropriate integrity and access controls.')])
+group(['Credentialed configuration assessment','External exposure assessment','Authorized penetration testing','Compliance evidence review'],[
+('Assessors need to inspect installed packages and local settings using an approved read account on each host. Which assessment approach fits?', 'Credentialed assessment can inspect internal configuration that an unauthenticated scan may not reveal.'),
+('A team needs to understand which services are reachable from the public internet without using internal credentials. Which approach fits?', 'External exposure assessment examines the organization from the relevant outside vantage point.'),
+('Under signed rules of engagement, testers will validate whether selected weaknesses can be combined to achieve an agreed objective. Which approach fits?', 'Authorized penetration testing validates exploitation paths within explicit scope and constraints.'),
+('An auditor evaluates retained approvals and access-review records against a specified organizational requirement. Which approach fits?', 'Compliance evidence review assesses conformity to stated requirements, rather than actively exploiting systems.')])
+group(['Data retention requirements','Data-location requirements','Permitted processing purposes','Breach notification obligations'],[
+('A team must decide when old customer records may be deleted while preserving records subject to a legal hold. Which obligation category must be checked?', 'Retention requirements and holds govern how long records must remain available and when disposal is permitted.'),
+('A proposed service would move regulated records to another jurisdiction. Which obligation category directly governs whether that placement is permitted?', 'Data-location and cross-border requirements must be assessed for the specific context.'),
+('An analyst wants to reuse personal records for an activity unrelated to the reason they were collected. Which privacy issue must be reviewed?', 'The permitted purpose and applicable authority for processing determine whether the new use is allowed.'),
+('A confirmed disclosure may trigger a duty to inform a regulator or affected people within an applicable period. Which obligation category is involved?', 'Notification duties depend on the applicable law and facts; no single deadline applies universally.')])
+group(['A rate of 5%','A rate of 20%','A rate of 80%','A rate of 95%'],[
+('A review samples 200 required access approvals. Ten are missing. What proportion of the sampled approvals is missing?', '10 divided by 200 equals 0.05, or 5%. The sample does not by itself establish the whole-population rate.'),
+('Of 150 confirmed vulnerabilities due for correction this month, 30 remain open at the deadline. What percentage of that due group remains open?', '30 divided by 150 equals 0.20, or 20%.'),
+('A detection exercise includes 50 malicious test events. The rule detects 40. What percentage of those malicious test events was detected?', '40 divided by 50 equals 0.80, or 80%. This measures detection within the defined test set, not all possible attacks.'),
+('A restore verification program tests 60 backups and successfully restores 57. What is the observed success percentage?', '57 divided by 60 equals 0.95, or 95%. The result is an observed test outcome, not a guarantee for future recovery.')])
+assert len(ITEMS)==40

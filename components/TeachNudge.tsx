@@ -17,6 +17,8 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 
 // Families by id; state versions count as their family (variantOf).
 const TEACHER_LED = new Set([
+  "zafirearm",
+  "appraiser",
   "nccco",
   "hknurse",
   "cacore",
@@ -85,7 +87,7 @@ const TEACHER_LED = new Set([
   "aufirstaid",
   "gulfrn",
   // High school, military and college classes
-  "ged", "hiset", "tabe", "cbest", "sat", "act", "asvab", "afoqt", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
+  "ged", "hiset", "tabe", "cbest", "sat", "act", "asvab", "afoqt", "secplus", "securityx", "servicenowcsa", "sscp", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
   "gcsehigher", "gcsescience", "gcsecs", "fsmaths",
   "eqao9", "staareng1",
   "naplan7", "vicsel", "hscmaths",

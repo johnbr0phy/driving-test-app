@@ -138,4 +138,7 @@ export const BANK_SIZES: Record<string, number> = {
   apcsp: 200,
   vidyagyan: 160,
   osssc: 200,
+  securityx: 240,
+  sscp: 260,
+  servicenowcsa: 200,
 };

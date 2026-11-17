@@ -1,0 +1,9 @@
+ITEMS=[]
+def family(options,rows):
+ for i,(q,e) in enumerate(rows):ITEMS.append((q,[options[i]]+options[:i]+options[i+1:],e))
+family(['Emphasize the sales comparison indication','Emphasize the cost indication','Emphasize the income indication','Revisit the inconsistent input data'],[
+('An owner-occupied subdivision has several recent, verified, highly similar sales. Its rental evidence is weak, and estimating depreciation on older homes is difficult. Which reconciliation choice is best supported?','The sales comparison indication has the strongest direct market evidence in this assignment; weighting should follow evidence quality.'),
+('A newly completed specialized residence has reliable land sales and detailed current construction costs with negligible depreciation. Available improved sales are dissimilar and rental data are sparse. Which indication deserves greatest initial weight on these facts?','Reliable land and current cost evidence with little depreciation can make the cost indication most persuasive in this stated setting.'),
+('Buyers of a small rental property consistently price comparable properties from verified net income and supported capitalization rates. Construction costs are dated and comparable sale details are incomplete. Which indication has the strongest stated support?','The income indication best reflects the identified purchasers and the strongest available evidence.'),
+('Two otherwise well-supported approaches differ sharply. Inspection of the worksheets shows one uses 1,800 square feet and the other uses 2,400 square feet for the same building. What should the appraiser do before assigning weights?','A factual inconsistency must be investigated and corrected before reconciliation; weighting cannot repair incompatible input data.')])
+assert len(ITEMS)==4

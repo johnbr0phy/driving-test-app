@@ -119,6 +119,8 @@ export function regionInfo(r: Region) {
 export type TestRegion = Region | "GLOBAL";
 
 const TEST_REGIONS: Record<string, TestRegion> = {
+  zafirearm: "ZA",
+  appraiser: "US",
   nccco: "US",
   bcrealestate: "CA",
   aufirearmswa: "AU",
@@ -158,12 +160,17 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   upscse: "IN", nda: "IN", agniveer: "IN", agniveervayu: "IN", rrbalp: "IN", rpfconst: "IN", ssccpo: "IN",
   neet: "IN", jeemain: "IN", cuet: "IN", mhtcet: "IN", ugcnet: "IN", reet: "IN", uptet: "IN", aissee: "IN", iimcat: "IN",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", sc900: "GLOBAL", sc200: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL",
-  netplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL",
+  netplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", securityx: "GLOBAL", servicenowcsa: "GLOBAL", sscp: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL",
   ccaf: "GLOBAL", sfadmin: "GLOBAL", cfal1: "GLOBAL", accafa: "GLOBAL", cisa: "GLOBAL", fortigate: "GLOBAL", cssgb: "GLOBAL",
 };
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "servicenowcsa",
+  "sscp",
+  "securityx",
+  "zafirearm",
+  "appraiser",
   "nccco",
   "pentestplus",
   "ceh",
@@ -320,8 +327,8 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
   },
   ZA: {
     title: "Free K53, RE5, SAPS & PSIRA Practice Tests: South Africa | Tigertest",
-    description: "Free practice for South Africa: the K53 learner's licence (Code 1 motorcycles, Code 2 cars, Code 3 trucks), the RE5 regulatory exam for FAIS representatives, the SAPS police trainee assessment and PSIRA security officer grades E to C. Original questions, every answer explained. No account needed.",
-    lead: "Practice for the K53 learner's licence test, Code 1 for motorcycles, Code 2 for cars or Code 3 for trucks, the RE5 regulatory exam for financial services representatives, the written part of the SAPS police trainee assessment and the PSIRA security officer grades. Original questions, every answer explained. No signup.",
+    description: "Free practice for South Africa: the K53 learner's licence (Code 1 motorcycles, Code 2 cars, Code 3 trucks), the RE5 regulatory exam for FAIS representatives, the SAPS police trainee assessment, PSIRA security officer grades E to C and Firearms Control Act legal knowledge. Original questions, every answer explained. No account needed.",
+    lead: "Practice for the K53 learner's licence test, Code 1 for motorcycles, Code 2 for cars or Code 3 for trucks, the RE5 regulatory exam for financial services representatives, the written part of the SAPS police trainee assessment, the PSIRA security officer grades and firearm competency legal knowledge. Original questions, every answer explained. No signup.",
     cta: { label: "K53 learner's test", href: "/k53-learners-test" },
     testsTitle: "K53 learner's licence tests",
     testsSub: "Code 1 for motorcycles, Code 2 for cars and Code 3 for trucks (C1 and C): 200 questions each on South African road rules, in km/h for left-hand traffic. Four full 50-question tests each.",

@@ -1200,6 +1200,7 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "nzsecurity": {
     "color": "hsl(250, 65%, 16%)",
     "tint": "hsl(250, 80%, 96%)"
+  },
   "caairbrake": {
     "color": "hsl(48, 15%, 38%)",
     "tint": "hsl(48, 15%, 95%)"

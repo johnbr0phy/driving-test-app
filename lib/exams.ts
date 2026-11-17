@@ -22198,6 +22198,9 @@ const caabguard: ExamConfig = {
     ],
     sourceLine: "Based on the Alberta Basic Security Training Participant Manual, the Security Services and Investigators Act and its regulations, the Trespass to Premises Act, the Petty Trespass Act and the Criminal Code. Original questions; the real exam needs 80%. Not affiliated with the Government of Alberta.",
     analyticsKey: "caabguard",
+  },
+};
+
 const caairbrake: ExamConfig = {
   id: "caairbrake",
   stateCode: "CAAIRBRAKE",

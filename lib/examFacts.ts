@@ -6489,6 +6489,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "JIBC's Basic Security Training program and assessment pages and the BC Security Programs Division's licensing pages, checked November 2026",
     source: { name: "JIBC: Basic Security Training", url: "https://www.jibc.ca/program/basic-security-training" },
+  },
   caairbrake: {
     answer:
       "In Ontario you need an air brake (Z) endorsement on your driver's licence to drive a vehicle with an air brake or air-over-hydraulic brake system. The Ministry of Transportation (MTO) offers two routes: an air brake endorsement course from a vehicle fleet owner, community college or safety organization, or tests at a DriveTest centre, an air brake knowledge test followed by a practical test. MTO says its Official Air Brake Handbook contains what you need for the knowledge test. MTO does not publish the number of questions or the pass mark; guides say it is multiple choice with a pass mark of about 80%. Since September 1, 2023, renewals use an online air brake learning module instead of the knowledge test.",

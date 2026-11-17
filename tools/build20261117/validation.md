@@ -23,4 +23,4 @@ The landing-date generator also wanted to change hundreds of unrelated existing 
 
 ## Preview gate
 
-Remote production preview, landing/dashboard/OG/directory smoke checks and20light/dark desktop/mobile screenshots remain pending. Do not represent these as completed. No merge authorized.
+Remote production preview READY; all 16 landing/dashboard/OG/directory HTTP checks PASS and all 20 light/dark desktop/mobile screenshots captured and visually inspected. See preview-validation.md, including the single non-reproducing hydration warning and pending asset deployment. No merge authorized.

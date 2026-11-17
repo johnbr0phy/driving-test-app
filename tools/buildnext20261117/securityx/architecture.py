@@ -121,7 +121,7 @@ ITEMS=[
  ['A runtime agent such as eBPF on each node','A CSPM scan of the container cluster settings','An image scan in the container registry','An API-mode CASB on the SaaS tenant'],
  'A runtime sensor watches processes as they execute inside workloads. Registry scans and CSPM check images and settings before or apart from execution.'),
 ('A storage service is correctly encrypted, but its tenant policy permits public reads of confidential objects. Which change directly removes the identified exposure?',
- ['Make the confidential objects private in the bucket ACL','Rotate the storage encryption key to a new version','Enable object versioning on the storage account','Turn on access logging for the storage account'],
+ ['Revoke the anonymous read permission in that policy','Rotate the storage encryption key to a new version','Enable object versioning on the storage account','Turn on access logging for the storage account'],
  'The exposure is the public read permission, so the policy must change. Encryption at rest decrypts for any authorized request, and versioning or logging leave reads open.'),
 ('A serverless function needs to read one queue but has broad management permissions over the account. Which change targets the excess authority?',
  ['Cut its role to read access on that queue','Move the function into a private subnet','Encrypt the queue with a customer-managed key','Enable detailed tracing on the function'],

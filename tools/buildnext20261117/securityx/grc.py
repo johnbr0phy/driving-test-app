@@ -1,7 +1,7 @@
 """Original governance scenarios; all requirements and figures are hypothetical."""
 ITEMS=[
 ('A merger leaves two control catalogs covering the same contractual requirements. Auditors cannot tell which evidence satisfies which requirement. Which governance action directly resolves this traceability gap?',
- ['A crosswalk from each obligation to controls and artifacts','Name one executive owner for each merged control catalog','Retire the smaller catalog and keep the larger one','Commission an external SOC 2 Type II report covering both merged catalogs'],
+ ['Map each obligation to the controls and artifacts proving it','Name one executive owner for each merged control catalog','Retire the smaller catalog and keep the larger one','Commission an external SOC 2 Type II report covering both merged catalogs'],
  'A crosswalk from each obligation to the controls and evidence that satisfy it is what auditors need for traceability. Naming owners or keeping one catalog does not show which evidence covers which requirement, and an external report attests to controls without mapping these contracts.'),
 ('Two executives each assume the other can accept a critical residual risk. The mitigation work is already funded and tracked. Which governance action addresses the unresolved authority?',
  ['Record in the register who may sign off on it','Raise the critical risk to the board audit committee each month','Add a compensating control until the executives agree','Recalculate the residual score with updated likelihood data'],

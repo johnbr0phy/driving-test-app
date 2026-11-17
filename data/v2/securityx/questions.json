@@ -13,7 +13,7 @@
       "Name one executive owner for each merged control catalog",
       "Retire the smaller catalog and keep the larger one",
       "Commission an external SOC 2 Type II report covering both merged catalogs",
-      "A crosswalk from each obligation to controls and artifacts"
+      "Map each obligation to the controls and artifacts proving it"
     ],
     "correct": [
       3
@@ -1859,7 +1859,7 @@
     "stem": "A storage service is correctly encrypted, but its tenant policy permits public reads of confidential objects. Which change directly removes the identified exposure?",
     "options": [
       "Turn on access logging for the storage account",
-      "Make the confidential objects private in the bucket ACL",
+      "Revoke the anonymous read permission in that policy",
       "Rotate the storage encryption key to a new version",
       "Enable object versioning on the storage account"
     ],
@@ -2491,7 +2491,7 @@
       "The user group memberships in the directory",
       "The user MFA registration and factors",
       "The TLS certificate on the access gateway",
-      "Fresh device health attestation"
+      "The device health attestation from the laptop"
     ],
     "correct": [
       3
@@ -2549,7 +2549,7 @@
     "skill": "engineering",
     "difficulty": 2,
     "format": "single",
-    "stem": "A role reaches only the approved server, but elevation remains active for weeks after a ten-minute maintenance task. Which dimension should be reduced?",
+    "stem": "A role reaches only the approved server, but elevation remains active for weeks after a ten-minute maintenance task. Which change corrects the excess access?",
     "options": [
       "Send the server logs to the SIEM",
       "Make the elevation expire after the task",
@@ -3158,7 +3158,7 @@
     "skill": "engineering",
     "difficulty": 2,
     "format": "single",
-    "stem": "After confirmed firmware corruption, a platform uses an authorized recovery mechanism to restore valid critical code. Which resilience function is being exercised?",
+    "stem": "After confirmed firmware corruption, a platform uses an authorized mechanism to replace the damaged image with a verified copy. Which resilience function is being exercised?",
     "options": [
       "Detection of the original corruption",
       "Measured boot of the operating system",
@@ -3168,7 +3168,7 @@
     "correct": [
       2
     ],
-    "explanation": "Restoring valid firmware after corruption is recovery. Protection and detection come before restoration."
+    "explanation": "Replacing corrupted firmware with a verified image is recovery. Protection and detection come before restoration."
   },
   {
     "id": "SECURITYX-ENGINEERING-040",
@@ -3370,7 +3370,7 @@
     "format": "single",
     "stem": "A security change would block the operator's required emergency interaction with a physical process. The safety analysis requires that interaction to remain available. Which constraint governs the design?",
     "options": [
-      "The safety function takes priority over any control",
+      "The control must not impair the validated safety function",
       "Least privilege applies to every operator account",
       "Multifactor login is required for every action",
       "All changes must pass the IT change board"
@@ -3378,7 +3378,7 @@
     "correct": [
       0
     ],
-    "explanation": "In OT, the validated safety function takes priority, so controls must be designed around it. Least privilege and MFA must not block an emergency action the safety case requires."
+    "explanation": "In OT, a security control must not impair the validated safety function, so controls are designed around it. Least privilege and MFA must not block an emergency action the safety case requires."
   },
   {
     "id": "SECURITYX-ENGINEERING-050",
@@ -4633,7 +4633,7 @@
       "Eradication of the attacker foothold",
       "Recovery of the affected services",
       "Lessons learned after closure",
-      "Containment to limit further harm"
+      "Containment of the attacker"
     ],
     "correct": [
       3
@@ -4670,17 +4670,17 @@
     "skill": "operations",
     "difficulty": 2,
     "format": "single",
-    "stem": "The cause has been addressed and the approved recovery copy has been checked. The team now returns the service to controlled operation and monitors it. Which phase objective is being carried out?",
+    "stem": "The cause has been addressed and the approved backup copy has been checked. The team now returns the service to controlled operation and monitors it. Which phase objective is being carried out?",
     "options": [
       "Containment of the original threat",
       "Eradication of remaining artifacts",
       "Preparation for the next incident",
-      "Restoring operations under watch"
+      "Recovery after eradication"
     ],
     "correct": [
       3
     ],
-    "explanation": "Returning a validated service to operation under watch is recovery. Containment and eradication are already complete."
+    "explanation": "Returning a validated service to controlled operation and monitoring it is recovery. Containment and eradication are already complete."
   },
   {
     "id": "SECURITYX-OPERATIONS-036",
@@ -4738,7 +4738,7 @@
       "Encrypt the log files at rest",
       "Extend log retention to support audits",
       "Restrict the logs to the SIEM team",
-      "Redact them at the source"
+      "Redact the secrets before they are written"
     ],
     "correct": [
       3

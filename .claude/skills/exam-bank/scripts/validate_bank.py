@@ -366,6 +366,16 @@ def main() -> int:
         errs.append(f'answer pattern: the key "{rep["key"]}" is used {len(rep["ids"])} times in {rep["category"]} ({", ".join(rep["ids"])})')
     for run in pat["runs"]:
         errs.append(f'answer pattern: {len(run["ids"])} keys in a row share "{run["term"]}" ({", ".join(run["ids"])}); training shows them in this order')
+    # Option families and stem echo (tools/check_option_reuse.py): four questions
+    # sharing one option set, or a key that alone repeats the stem's words.
+    import check_option_reuse as cor
+    reuse = cor.analyse(cap.load_items(args.bank))
+    if reuse["shared_pct"] >= cor.FAMILY_LIMIT:
+        errs.append(f'{reuse["shared"]} questions share an exact option set with another question ({reuse["shared_pct"]:.0%}); '
+                    f'write each question its own wrong options (e.g. {", ".join(next(iter(reuse["families"].values())))})')
+    if reuse["echo_gain"] >= cor.ECHO_LIMIT:
+        errs.append(f'stem echo: picking the option that alone repeats the stem\'s words is right {reuse["echo_hit"]} of {reuse["echo_fire"]} times, '
+                    f'{reuse["echo_gain"]:.1f} marks per 50 over guessing (limit {cor.ECHO_LIMIT}); e.g. {", ".join(reuse["echoed"][:6])}')
     for t in pat["antiTells"][:5]:
         warns.append(f'"{t["term"]}" is almost never the key ({t["key"]} of {t["n"]}, chance {t["chance"]}): make it right sometimes')
 

@@ -12,5 +12,6 @@ python3 -I tools/build_state_exam_facts.py --check
 python3 -I scripts/review-question-banks.py
 python3 -I tools/check_banks.py
 python3 -I tools/check_answer_patterns.py --all --baseline tools/answer_patterns_baseline.json
+python3 -I tools/check_option_reuse.py --all --baseline tools/option_reuse_baseline.json
 python3 -I tools/check_freshness.py
 python3 -I tools/build_exam_sources.py --check

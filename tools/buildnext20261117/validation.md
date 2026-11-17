@@ -41,4 +41,4 @@ Existing suitable mascots are reused. Dark surface/border tokens are explicit; v
 
 ## Preview gate
 
-Pending parent commit/push and remote Vercel READY. Next: 20 light/dark desktop/mobile screenshots, landing/dashboard/OG/directory HTTP checks and visual review. No commit, push, merge or deployment was performed by this integration subtask.
+Remote deployment of commit `9cee1a68` reached READY. All 16 HTTP checks and 20 light/dark desktop/mobile captures passed; all captures visually inspected. See preview-validation.md for routes, dimensions and the two transient Appraiser hydration warnings that did not recur across 12 fresh-context navigation checks. Parent still needs to commit screenshot assets and validate their delivery on the final preview. No merge authorized.

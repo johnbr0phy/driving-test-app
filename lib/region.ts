@@ -135,7 +135,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   rexpn: "CA", eqao9: "CA", capsw: "CA", casfa: "CA", cawhmis: "CA", caguard: "CA", caauto: "CA", caplumb: "CA", cacarp: "CA", caweld: "CA", cacit: "CA", llqp: "CA",
   cask: "CA", cans: "CA", pcoc: "CA", cacore: "CA", smartserve: "CA", cahunteron: "CA",
   rexpn: "CA", eqao9: "CA", capsw: "CA", casfa: "CA", cawhmis: "CA", caguard: "CA", caabguard: "CA", caauto: "CA", caplumb: "CA", cacarp: "CA", caweld: "CA", cacit: "CA", llqp: "CA",
-  cask: "CA", cans: "CA", pcoc: "CA", cacore: "CA",
+  cask: "CA", cans: "CA", pcoc: "CA", cacore: "CA", caairbrake: "CA",
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ", nzfirearms: "NZ", nzboat: "NZ", nzlcq: "NZ", nzmoto: "NZ", nzheavy: "NZ", nzsfe: "NZ", nzensf: "NZ",nziqn: "NZ",

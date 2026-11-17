@@ -432,6 +432,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ngcustoms: { title: "Nigeria Customs Recruitment Practice Test", description: "Practise English, maths, reasoning, customs, trade and world geography in 50-question mock CBTs." },
   trcnpqe: { title: "TRCN PQE Practice Test", description: "Practise pedagogy, literacy, numeracy, ICT and safeguarding in full 60-question PQE mock exams." },
   nzsecurity: { title: "NZ Security Guard Practice Test", description: "Practise PSPLA licensing, lawful force and arrest, trespass and searching, health and safety, incidents and conflict management in 50-question mock tests." },
+  caairbrake: { title: "Ontario Air Brake Practice Test", description: "Practise Ontario's Z endorsement knowledge test: air supply, spring and trailer brakes, the daily air brake tests and pushrod adjustment limits, in 50-question mock tests." },
   iehcap: { title: "HCAP Practice Test", description: "Practise Irish deer species, deer management, rifle and firearms safety, the Wildlife Acts and carcase handling in 50-question mock tests." },
   smartserve: { title: "Smart Serve Practice Test", description: "Practise Ontario's liquor rules: legal age and ID, standard drinks, signs of intoxication, refusing service and service hours, in 33-question mock tests." },
   cahunteron: { title: "Ontario Hunter Education Practice Test", description: "200 original questions on Ontario's hunting law, tags, hunter orange, firearm and bow rules, wildlife and field care. Start for free." },

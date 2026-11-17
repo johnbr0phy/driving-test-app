@@ -4537,7 +4537,7 @@ const cabcguard: ExamConfig = {
   // British Columbia: the Basic Security Training final exam (BST Assessment) that the Justice
   // Institute of BC runs and invigilates for the Registrar of Security Services; the training standard
   // for a security guard worker licence under the Security Services Act. JIBC (read Nov 2026): 75
-  // questions in 90 minutes, 70% to pass. JIBC publishes no topic weights; Tigertest's blueprint
+  // questions in 90 minutes (the assessment course page says two hours), 70% to pass. JIBC publishes no topic weights; Tigertest's blueprint
   // weights legal authority most, as the assessment page says: legal system 6, licensing 8, arrest 6,
   // force 6, trespass and offences 6, conduct and privacy 8, reports 5, personal safety 5.
   blueprint: {

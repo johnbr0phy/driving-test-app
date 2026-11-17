@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How many questions are on the BST exam and what is the pass mark?",
-    a: "JIBC lists the exam as 75 questions in 90 minutes, with 70% needed to pass. It is written in person at JIBC in New Westminster on your own laptop, or by online proctoring for some students outside the Lower Mainland, within six months of finishing the theory course. You have two attempts before you must retake the theory course. Check JIBC for current dates and details before you book.",
+    a: "JIBC's program page lists the exam as 75 questions in 90 minutes, with 70% needed to pass; its assessment course page gives a two-hour time limit and books sessions in two-hour blocks, so confirm the time with JIBC. It is written in person at JIBC in New Westminster on your own laptop, or by online proctoring for some students outside the Lower Mainland, within six months of finishing the theory course. You have two attempts before you must retake the theory course. Check JIBC for current dates and details before you book.",
   },
   {
     q: "What do I need for a BC security guard licence?",

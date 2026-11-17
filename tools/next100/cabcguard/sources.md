@@ -104,13 +104,19 @@ the long gov.bc.ca and bclaws pages, read as text).
 - JIBC publishes no topic weights. The blueprint (legal system 6, licensing 8, arrest 6, force 6,
   trespass and offences 6, conduct and privacy 8, reports 5, safety 5 per 50) is Tigertest's, built
   around the four topics JIBC names with legal authority weighted most, as the assessment page says.
-- The BST curriculum itself (the JIBC course content) is not public. Report writing and personal
-  safety items keep to general documentation and safety practice that follows from the rules above
-  (Code of Conduct false statements, use-of-force records, PIPA accuracy, records retention,
-  WorkSafeBC working alone and violence rules) and to JIBC's stated principle that public and
+- The BST curriculum itself (the JIBC course content) is not public. Second review (2026-11-17):
+  report-writing and safety items that rested on general practice alone were rewritten to rules read
+  in the sources above (REP-001, 003, 004, 005, 006, 013, 014, 015, 016, 019 and SAF-016 now cite
+  PIPA ss. 18(1)(j), (k), (l), 24(3), 27, Regulation s. 7(1)(a) and (g), registrar policy 3.7.2.1 and
+  WorkSafeBC OHS 4.21(2), 4.21(3), 4.30(3)(d)). The few practice items left (exact times, witness
+  details, observed facts over labels, evidence left for police, the writer writes the report) follow
+  from the Code of Conduct's bar on false statements and from JIBC's stated principle that public and
   personal safety come first. No figure in those items comes from anywhere else.
-- The exam time differs between JIBC pages (90 minutes on the program page, a two-hour time limit on
-  the assessment course page); the landing gives 75 questions and 90 minutes from the program page.
+- The exam time differs between JIBC pages, re-read 2026-11-17: the program page says "a 90-minute,
+  75-question exam"; the assessment course page says "There is a two (2) hour timeline to complete the
+  assessment" and lists sessions in two-hour blocks. The landing FAQ, exam facts and config comment
+  give 75 questions and 70% (stated only on the program page), name both times and tell students to
+  confirm with JIBC.
 
 ## Deliberately left out
 

@@ -81,7 +81,7 @@
   "options": [
    "Hold the warfarin and notify the prescriber",
    "Give the warfarin with a glass of milk",
-   "Give the dose and recheck the INR next week",
+   "Hold the warfarin and recheck the INR next week",
    "Double the next day's dose"
   ],
   "correct": [
@@ -97,7 +97,7 @@
   "stem": "Before giving digoxin 0.125 mg, the nurse counts an apical pulse of 52/min. The client's usual rate is 72/min. What should the nurse do?",
   "options": [
    "Hold the dose and report the heart rate",
-   "Give the dose and recheck the pulse in 1 hour",
+   "Give the dose and report the heart rate later",
    "Give half the dose",
    "Give the dose with food"
   ],
@@ -220,7 +220,7 @@
   "options": [
    "Report it before either nurse leaves the unit",
    "Correct the count sheet to match",
-   "Recount tomorrow when it is less busy",
+   "Report it tomorrow when it is less busy",
    "Let the oncoming nurse sort it out"
   ],
   "correct": [
@@ -314,7 +314,7 @@
    "Hold the dose and report possible toxicity",
    "Give the dose with extra salt",
    "Tell the client to drink less water",
-   "Give the dose and an antiemetic"
+   "Give the dose and report the vomiting"
   ],
   "correct": [
    0

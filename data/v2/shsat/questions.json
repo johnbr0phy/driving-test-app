@@ -219,7 +219,7 @@
       "format": "single",
       "stem": "Which sentence should be added before sentence 4 to introduce the ideas in the second paragraph?",
       "options": [
-        "Green roofs help keep both buildings and streets cooler and drier.",
+        "Green roofs keep both buildings and streets cooler and drier.",
         "Many green roofs also include benches and paths for the residents.",
         "Tar roofs cost less to install than almost any other kind of roof.",
         "Some cities ask new buildings to add solar panels to their roofs."
@@ -645,7 +645,7 @@
       "options": [
         "too young to do serious work on the reefs",
         "the main reason that the harbor water became cleaner",
-        "an example of how people can help a place recover",
+        "an example of how people can restore a damaged place",
         "visitors who see the harbor only from a ferry"
       ],
       "correct": [
@@ -1086,7 +1086,7 @@
         "It is something only wealthy families can afford.",
         "It is a lesson that teachers should add to school.",
         "It is a problem that most people never really solve.",
-        "It is a skill that helps a person throughout life."
+        "It is a skill that serves a person throughout life."
       ],
       "correct": [
         3
@@ -2970,7 +2970,7 @@
       "options": [
         "Tardigrades are the smallest of all the animals that live in moss and mud.",
         "Tardigrades can live only in places that always stay wet.",
-        "Tardigrades survive harsh conditions in ways that may help science.",
+        "Tardigrades survive harsh conditions in ways that may benefit science.",
         "Tardigrades were first found by scientists in outer space."
       ],
       "correct": [
@@ -3056,7 +3056,7 @@
       "format": "single",
       "stem": "Why does the author compare the proteins to \"packing material around a fragile package\" in paragraph 5?",
       "options": [
-        "to help readers picture how the proteins protect cells",
+        "to let readers picture how the proteins protect cells",
         "to show that tardigrades are easy to send by mail",
         "to suggest that the proteins are a kind of paper",
         "to argue that cells are too fragile to be studied"

@@ -63,7 +63,7 @@ ITEMS = [
      "A temperature of 38 °C or more is a fever. 36.8 °C and 37.2 °C are within the usual range, and 35.9 °C is slightly low."),
     ("S", 2, 3, "Deterioration",
      "A patient has had shallow breathing at 28 a minute for two hours and is now sleepy and hard to wake. What should the enrolled nurse do?",
-     ["Escalate urgently and stay with him", "Let him sleep and check again later", "Sit him up and offer a drink", "Record it at the next routine round"],
+     ["Escalate urgently and stay with him", "Let him sleep and check again later", "Sit him up and offer a drink", "Escalate it at the next routine round"],
      "Rising drowsiness with fast shallow breathing can mean rising carbon dioxide or worsening illness. It needs urgent escalation (descriptor 4.3)."),
     ("S", 2, 2, "Nursing assessment",
      "What is the first step of the nursing process?",

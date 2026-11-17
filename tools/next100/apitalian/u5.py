@@ -131,7 +131,7 @@ ITEMS = [
       "Paolo Bertini calls it an advantage, because without phones his guests start talking to each other again.",
       "APITAL-D-U5A"),
     Q(0, 3, CONC, "Vuoi scrivere al podere prima di prenotare. Quale domanda è più utile?",
-      ["C'è un parcheggio vicino alla casa?", "Posso portare con me il mio cane?", "La colazione è compresa nel prezzo?", "I bambini di tre anni pagano?"],
+      ["C'è un parcheggio vicino all'alloggio?", "Posso portare con me il mio cane?", "La colazione è compresa nel prezzo?", "I bambini di tre anni pagano?"],
       "Parking is the only thing the ad does not mention. Dogs, breakfast and free stays for young children are all covered already.",
       "APITAL-D-U5A"),
 

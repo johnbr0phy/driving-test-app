@@ -80,7 +80,7 @@ ITEMS = [
       stim="APUSH-T2-S05"),
     Q(2, 2, SS,
       "The Cherokee leaders' strategy in the petition emphasized",
-      ["treaty rights and new institutions", "armed resistance in alliance with Britain", "a voluntary move to Indian Territory", "a request to become citizens of Georgia under its state laws"],
+      ["treaty guarantees and new institutions", "armed resistance in alliance with Britain", "a voluntary move to Indian Territory", "a request to become citizens of Georgia under its state laws"],
       "The petition points to a written constitution, schools and a newspaper and to treaties with the United States: it argues through law and through institutions white Americans would recognize.",
       stim="APUSH-T2-S05"),
     Q(2, 2, DP,
@@ -174,6 +174,6 @@ ITEMS = [
       "The canal joined Lake Erie to the Hudson River, so western farm goods could reach New York City cheaply, and the city became the nation's leading port."),
     Q(0, 1, DP,
       "The Seneca Falls Convention of 1848 is best known for",
-      ["a declaration of women's rights", "founding the American Anti-Slavery Society in Boston", "launching the national temperance movement", "creating the first national labor union"],
+      ["a declaration demanding equality for women", "founding the American Anti-Slavery Society in Boston", "launching the national temperance movement", "creating the first national labor union"],
       "Elizabeth Cady Stanton, Lucretia Mott and others issued a Declaration of Sentiments modeled on the Declaration of Independence that called for women's rights, including suffrage."),
 ]

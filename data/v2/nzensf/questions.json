@@ -251,7 +251,7 @@
     "skill": "Medication safety",
     "stem": "Before giving any medicine, how should the enrolled nurse confirm the patient's identity?",
     "options": [
-      "Check two identifiers against the chart",
+      "Match two identifiers against the chart",
       "Ask the patient's visitor who they are",
       "Ask the patient if they are the one in bed 3",
       "Look at the name above the bed"
@@ -692,7 +692,7 @@
     "skill": "Escalation",
     "stem": "An enrolled nurse finds a post-operative patient newly confused, with a pulse that has risen from 84 to 118. What should she do first?",
     "options": [
-      "Write it up at the end of the shift",
+      "Escalate it at the end of the shift",
       "Give paracetamol and observe",
       "Recheck the observations in an hour",
       "Escalate to the RN in charge now"
@@ -842,7 +842,7 @@
       "Finish the unit, then report it",
       "Slow the rate and give paracetamol",
       "Recheck the temperature in an hour",
-      "Stop the transfusion and get help"
+      "Stop the transfusion and get the RN now"
     ],
     "correct": [
       3
@@ -1008,7 +1008,7 @@
     "stem": "A patient has a new plaster cast on his forearm and says his fingers are numb and cold. What should the enrolled nurse do?",
     "options": [
       "Raise the arm and check tomorrow",
-      "Escalate it at once",
+      "Report it to the RN at once",
       "Tell him it is normal at first",
       "Give pain relief and observe"
     ],
@@ -1430,13 +1430,13 @@
     "options": [
       "Wait to see if any symptoms develop",
       "Check the patient and tell the RN now",
-      "Give the patient's own tablets as well",
+      "Check the chart, then give his own tablets",
       "Fill in the form before telling anyone"
     ],
     "correct": [
       1
     ],
-    "explanation": "The patient's safety comes first: assess them and escalate at once so the prescriber can decide on treatment. The incident is reported afterwards."
+    "explanation": "The patient's safety comes first: assess them and escalate at once so the prescriber can decide on treatment. Giving more tablets before anyone has assessed him adds to the risk. The incident is reported afterwards."
   },
   {
     "id": "NZENSF-T1-070",
@@ -1618,7 +1618,7 @@
     "stem": "A caller says she is a patient's sister and asks about his test results. What should the enrolled nurse do?",
     "options": [
       "Ask her two questions to prove who she is",
-      "Give only the good news over the phone",
+      "Check her name and date of birth, then share",
       "Give the results as she is close family",
       "Check consent before giving details"
     ],
@@ -2341,7 +2341,7 @@
       "Soak the feet in hot water every night",
       "Cut the toenails as short as possible",
       "Walk barefoot to toughen the skin",
-      "Check the feet daily for cuts"
+      "Look at the feet daily for cuts"
     ],
     "correct": [
       3
@@ -2380,7 +2380,7 @@
     "skill": "Escalation",
     "stem": "An enrolled nurse escalates a patient's low blood pressure to the RN, who says to keep watching. An hour later it is lower still. What should the enrolled nurse do?",
     "options": [
-      "Ask a healthcare assistant for advice",
+      "Escalate it at tomorrow's handover",
       "Escalate again, and go higher if needed",
       "Keep watching, as the RN has decided",
       "Wait until the doctor's next ward round"
@@ -2465,7 +2465,7 @@
     "skill": "Digital records",
     "stem": "An electronic medicine chart says a dose was given, but the blister pack shows it is still there. What should the enrolled nurse do?",
     "options": [
-      "Give the dose as the pack is full",
+      "Check the chart again, then give the dose",
       "Give half the dose to be safe",
       "Check with the team before giving it",
       "Leave it, as the chart says it is done"
@@ -2529,7 +2529,7 @@
     "stem": "A febrile child is very drowsy and has a rash that does not fade when a glass is pressed on it. What should the enrolled nurse do?",
     "options": [
       "Give paracetamol and wait",
-      "Seek emergency help at once",
+      "Seek emergency care at once",
       "Book a doctor for tomorrow",
       "Cool the child with a cold bath"
     ],
@@ -2614,7 +2614,7 @@
     "options": [
       "Escalate urgently and stay with him",
       "Sit him up and offer a drink",
-      "Record it at the next routine round",
+      "Escalate it at the next routine round",
       "Let him sleep and check again later"
     ],
     "correct": [
@@ -3096,7 +3096,7 @@
     "stem": "During an IV infusion, an older patient becomes breathless with crackles in the lungs and raised blood pressure. What should the enrolled nurse do first?",
     "options": [
       "Lie him flat, give him water and recheck in an hour",
-      "Stop or slow the infusion per policy, sit him up, escalate",
+      "Stop or slow the infusion per policy, sit him up, call the RN",
       "Speed up the infusion to flush the line and keep it running",
       "Stop his oxygen and keep observing him closely at the bedside"
     ],
@@ -3305,7 +3305,7 @@
     "skill": "Anaphylaxis",
     "stem": "Minutes after an IV antibiotic starts, a patient has a swollen tongue and wheeze. What should the enrolled nurse do first?",
     "options": [
-      "Stop the infusion and call for help",
+      "Stop the infusion and raise the alarm",
       "Give him a drink of cold water",
       "Sit him up and recheck in 15 minutes",
       "Slow the infusion and observe"
@@ -3476,7 +3476,7 @@
       "Keep him nil by mouth and escalate",
       "Give a large meal to get things moving",
       "Give a laxative and check tomorrow",
-      "Encourage him to walk it off"
+      "Let him eat, then escalate if he vomits"
     ],
     "correct": [
       0
@@ -3602,7 +3602,7 @@
       "Rub red areas firmly to help them",
       "Stay in the same position to rest",
       "Use talcum powder on the skin each day",
-      "Move often and check the skin"
+      "Move often and look over the skin"
     ],
     "correct": [
       3
@@ -4119,7 +4119,7 @@
     "options": [
       "To explore how a person feels",
       "To start a counselling session",
-      "To check a specific fact quickly",
+      "To confirm a specific fact quickly",
       "To build trust at a first meeting"
     ],
     "correct": [
@@ -4288,7 +4288,7 @@
       "Check again at the next round",
       "Reassure her that this is normal",
       "Escalate urgently to the midwife",
-      "Ask her to lie flat and rest"
+      "Escalate if it is the same at the next round"
     ],
     "correct": [
       2
@@ -4329,7 +4329,7 @@
     "options": [
       "Ask the resident to rest and drink water",
       "Record it and recheck at the next round",
-      "Wait for the RN to return from lunch",
+      "Escalate to the RN when she is back from lunch",
       "Use the escalation pathway now"
     ],
     "correct": [

@@ -76,7 +76,7 @@
       "Because the plan can never be changed once the project charter has been signed",
       "Because the customer is not allowed to see the product until the very last phase",
       "Because a detailed plan removes all of the risks from the project before work begins",
-      "Because changes cost more the later they are made, so defining the scope early saves money"
+      "Because changes cost more the later they are made, so settling what will be delivered early saves money"
     ],
     "correct": [
       3
@@ -200,7 +200,7 @@
     "stem": "What is a work breakdown structure (WBS)?",
     "options": [
       "A chart showing which person reports to which manager in the company",
-      "A hierarchical breakdown of the total scope of work the team must do",
+      "A hierarchical breakdown of all the work the project requires",
       "A list of activities in date order with their start and finish dates",
       "A diagram that shows the dependencies between scheduled activities"
     ],
@@ -328,7 +328,7 @@
       "A record of every change request that the change control board has approved",
       "A bank account set up by the sponsor to hold the money reserved for the project",
       "The lowest level of the WBS, where the work is estimated and assigned to a single owner",
-      "A management point where scope, budget and actual cost are compared to measure performance"
+      "A management point where planned work, budget and actual cost are compared to measure performance"
     ],
     "correct": [
       3
@@ -1695,7 +1695,7 @@
     "skill": "When to use a predictive approach",
     "stem": "A company is building a bridge under strict safety regulations, with a fixed-price contract and a design that has already been approved. Which approach fits best?",
     "options": [
-      "Predictive, because the scope is defined and late changes are expensive",
+      "Predictive, because the design is settled and late changes are expensive",
       "Adaptive, because the team should discover the design as the work goes on",
       "Adaptive, because regulators prefer frequent releases to the public",
       "Predictive, because adaptive methods can only be used for software"
@@ -1824,7 +1824,7 @@
       "Every work package must be at least 100 hours long so it can be managed",
       "Each level of the WBS must contain exactly the same number of elements",
       "The WBS must be fully approved by all stakeholders before it can be used",
-      "The WBS includes all of the project's work and nothing outside its scope"
+      "The WBS includes all of the project's work and no work beyond it"
     ],
     "correct": [
       3

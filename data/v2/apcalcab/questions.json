@@ -3446,18 +3446,18 @@
     "skill": "Solving optimization problems",
     "difficulty": 2,
     "format": "single",
-    "stem": "Positive numbers $x$ and $y$ satisfy $xy = 64$. What is the smallest possible value of $x + 4y$?",
+    "stem": "Positive numbers $x$ and $y$ satisfy $xy = 36$. What is the smallest possible value of $x + 4y$?",
     "options": [
-      "$16$",
-      "$20$",
-      "$24$",
-      "$32$"
+      "$12$",
+      "$15$",
+      "$18$",
+      "$24$"
     ],
     "correct": [
       3
     ],
     "lockedOrder": true,
-    "explanation": "$x + 4y = \\frac{64}{y} + 4y$. The derivative $-\\frac{64}{y^2} + 4$ is 0 at $y = 4$, so $x = 16$ and the sum is $16 + 16 = 32$."
+    "explanation": "$x + 4y = \\frac{36}{y} + 4y$. The derivative $-\\frac{36}{y^2} + 4$ is 0 at $y = 3$, so $x = 12$ and the sum is $12 + 12 = 24$. The value 15 is $x + y$, not $x + 4y$."
   },
   {
     "id": "APCALCAB-D-077",

@@ -291,7 +291,7 @@
     "skill": "Scrum Team",
     "stem": "A Scrum Team has grown to 15 people, and coordination is slowing it down. What does the Scrum Guide suggest?",
     "options": [
-      "Keep one team but add a second Product Owner so that each one manages half of the Product Backlog",
+      "Keep one team and one Product Goal, but add a second Product Owner for half of the Product Backlog",
       "Reorganize into several cohesive Scrum Teams that share one Product Goal, Product Backlog and Product Owner",
       "Split into a design sub-team and a build sub-team that both report to one lead Developer for all the hand-offs",
       "Keep one team and lengthen the Sprint to six weeks so that there is more time for all the coordination"
@@ -532,7 +532,7 @@
     "skill": "The Sprint",
     "stem": "Midway through the Sprint, the Developers see they cannot finish every selected item, but the Sprint Goal is still achievable. What should they do?",
     "options": [
-      "Extend the Sprint by a few more days so that every selected item can be finished",
+      "Extend the Sprint by a few days so that the Sprint Goal and every selected item are finished",
       "Cancel the Sprint and plan a new one with a smaller selection of the items",
       "Relax the Definition of Done for the remaining items to save some time",
       "Work with the Product Owner to renegotiate scope while keeping the Sprint Goal"
@@ -599,7 +599,7 @@
       "Ordering the Product Backlog to maximize value",
       "Adding every request to the current Sprint",
       "Asking the Scrum Master to choose among requests",
-      "Splitting the team so each stakeholder gets some"
+      "Splitting the team so each stakeholder gets some value"
     ],
     "correct": [
       0
@@ -721,7 +721,7 @@
     "stem": "When might a Sprint be cancelled?",
     "options": [
       "When a stakeholder wants an early demo",
-      "When the team falls behind its forecast",
+      "When the team falls behind on its Sprint Goal",
       "When one of the Developers falls ill",
       "When the Sprint Goal becomes obsolete"
     ],
@@ -784,7 +784,7 @@
     "stem": "A functional manager wants to attend Sprint Retrospectives to monitor the team, and the Developers feel uneasy. What should the Scrum Master do?",
     "options": [
       "Hold two Retrospectives each Sprint: one with the manager present and a private one without them",
-      "Explain that the Retrospective is for the Scrum Team, and help the manager see progress at the Sprint Review",
+      "Explain that the Retrospective is for the Scrum Team, and invite the manager to the Sprint Review",
       "Let the manager attend, since managers have the right to see how their staff are doing every Sprint",
       "Send the manager a summary of what each Developer said so the manager can follow the team's issues"
     ],
@@ -823,9 +823,9 @@
     "skill": "Sprint Backlog",
     "stem": "What does the Sprint Backlog consist of?",
     "options": [
-      "Every task for the release, assigned to named Developers by the Scrum Master at the start",
+      "Every task for the next Increment, assigned to named Developers by the Scrum Master",
       "The Sprint Goal, the selected Product Backlog items and a plan for delivering the Increment",
-      "A frozen copy of the top of the Product Backlog, agreed with the stakeholders at the start",
+      "The Product Goal and a frozen copy of the top Product Backlog items, agreed with stakeholders",
       "The Product Owner's ordered list of all the features planned for the whole product"
     ],
     "correct": [
@@ -993,7 +993,7 @@
     "stem": "What is the purpose of the Sprint Review?",
     "options": [
       "To plan all the tasks for the next Sprint in full, final detail",
-      "To review each Developer's individual performance in the Sprint",
+      "To inspect each Developer's individual performance in the Sprint",
       "To inspect the outcome of the Sprint and decide future adaptations",
       "To approve the Increment formally so that it can be released to production"
     ],
@@ -1119,9 +1119,9 @@
     "stem": "The Product Backlog has 600 items, many of them years old, and nobody knows which still matter. What should the Product Owner do?",
     "options": [
       "Ask the Developers to estimate all 600 items in detail before the next Sprint",
-      "Freeze it and only work on brand-new items from now on to avoid any more confusion",
+      "Freeze it and only add brand-new items tied to the Product Goal from now on",
       "Hand it to the Scrum Master to clean up and order while the team keeps working",
-      "Refine and reorder it, removing items that no longer help reach the Product Goal"
+      "Refine and reorder it, removing items that no longer support the Product Goal"
     ],
     "correct": [
       3
@@ -1140,7 +1140,7 @@
     "stem": "What does it mean for a Scrum Team to be cross-functional?",
     "options": [
       "Its members rotate between teams to spread their skills around",
-      "Specialists from other teams join it whenever their skill is needed",
+      "Specialists from other teams join it whenever their skill adds value",
       "Its members have all the skills needed to create value each Sprint",
       "Each member can do every type of work on the product equally well"
     ],
@@ -1221,7 +1221,7 @@
     "skill": "Serving the organization",
     "stem": "Management wants each Scrum Team to send a weekly status report on top of the Sprint Review. What should the Scrum Master do?",
     "options": [
-      "Help management see how the Increment and artifacts already show progress, and find out what they really need",
+      "Show management how Done work and the artifacts reveal progress, and find out what they need",
       "Refuse the request outright, because the Scrum Guide does not list status reports as an artifact",
       "Write the weekly reports personally so that the Developers are not distracted by the extra paperwork",
       "Ask the Developers to spend part of each Daily Scrum preparing the weekly report for management"
@@ -1490,7 +1490,7 @@
       "Ask the Product Owner to make attendance compulsory and record who misses each one",
       "Agree to drop them, since the team is self-managing and can choose which events it holds",
       "Help them run Retrospectives that lead to a few concrete improvements, and follow up on them",
-      "Run them alone and then send the team a list of the improvements it is expected to make"
+      "Help by running them alone and then sending the team a list of the improvements it must make"
     ],
     "correct": [
       2
@@ -1554,7 +1554,7 @@
     "skill": "Daily Scrum",
     "stem": "The Daily Scrum takes 30 minutes because each Developer gives a detailed status report to the Scrum Master. What should the Scrum Master do?",
     "options": [
-      "Ask the Product Owner to run the Daily Scrum from now on so that it stays on track and on time",
+      "Ask the Product Owner to run the Daily Scrum so that it stays focused on the Sprint Goal",
       "Collect each Developer's status report by email every morning and cancel the Daily Scrum altogether",
       "Allow the full 30 minutes, since the detailed reports help the Scrum Master keep track of every task",
       "Coach the Developers that it is their 15-minute event for inspecting progress toward the Sprint Goal"
@@ -1577,7 +1577,7 @@
     "options": [
       "It cannot; the Sprint Backlog is frozen until the next Sprint Planning",
       "They can agree to bring it in if it does not endanger the Sprint Goal",
-      "The Scrum Master decides whether the item may enter the current Sprint",
+      "The Scrum Master decides whether the item fits the current Sprint Goal",
       "The Developers add it and quietly drop other items without telling anyone"
     ],
     "correct": [
@@ -1644,7 +1644,7 @@
     "skill": "Product Owner",
     "stem": "What is the Product Owner accountable for?",
     "options": [
-      "Maximizing the productivity of each Developer during the Sprint",
+      "Maximizing the value of each Developer's output during the Sprint",
       "Maximizing the value of the product resulting from the team's work",
       "Making sure the product ships on the exact date fixed at the very start",
       "Making sure that the Scrum Team follows the framework correctly"
@@ -1710,7 +1710,7 @@
     "skill": "Daily Scrum",
     "stem": "Why do the Developers hold a Daily Scrum?",
     "options": [
-      "To let the Product Owner check that each Developer is busy with priority work",
+      "To let the Product Owner check each Developer's own work toward the Sprint Goal",
       "To inspect progress toward the Sprint Goal and adapt the Sprint Backlog as needed",
       "To report status to the Scrum Master so the burn-down can be updated for managers",
       "To solve every technical problem in detail before the day's work can begin"
@@ -1817,7 +1817,7 @@
     "options": [
       "Find ways to involve the stakeholder in inspecting the Increment and giving feedback",
       "Send the stakeholder a weekly written status report instead of showing the Increment",
-      "Freeze the Product Backlog until the stakeholder is able to attend a Sprint Review",
+      "Freeze the Product Backlog until the stakeholder can inspect it at a Sprint Review",
       "Ask the Scrum Master to approve the product direction on the stakeholder's behalf"
     ],
     "correct": [
@@ -1881,7 +1881,7 @@
       "All the work done in a Sprint, whether or not that work meets the Definition of Done",
       "A usable stepping stone toward the Product Goal, additive to all prior Increments",
       "The set of tasks that the Developers plan to finish during the current Sprint",
-      "A release package that has to be approved at the Sprint Review before shipping"
+      "A release package toward the Product Goal that the Sprint Review must approve before shipping"
     ],
     "correct": [
       1
@@ -1921,7 +1921,7 @@
     "stem": "The Developers keep running out of time because of unplanned support requests from another team. What is the Scrum Master's best first action?",
     "options": [
       "Shorten the Sprint to one week so that there are fewer interruptions in each Sprint",
-      "Make the problem transparent and help the team and Product Owner decide how to handle it",
+      "Make the problem transparent so the team and Product Owner can decide how to handle it",
       "Refuse every support request on the team's behalf from now on, whatever its business impact",
       "Ask the Developers to work extra hours each week to absorb the support requests"
     ],
@@ -1984,14 +1984,14 @@
     "stem": "Which is part of the Product Owner's Product Backlog management?",
     "options": [
       "Developing and explicitly communicating the Product Goal",
-      "Estimating the effort of each item for the Developers",
+      "Setting the Sprint Goal alone before Sprint Planning",
       "Running the Daily Scrum whenever the Scrum Master is away",
       "Deciding how the Developers will build each item"
     ],
     "correct": [
       0
     ],
-    "explanation": "Product Backlog management includes developing and explicitly communicating the Product Goal, creating and clearly communicating Product Backlog items, ordering them, and making sure the backlog is transparent, visible and understood. Sizing and the how belong to the Developers."
+    "explanation": "Product Backlog management includes developing and explicitly communicating the Product Goal, creating and clearly communicating Product Backlog items, ordering them, and making sure the backlog is transparent, visible and understood. The whole Scrum Team crafts the Sprint Goal at Sprint Planning, the Daily Scrum belongs to the Developers, and so does deciding how to build each item."
   },
   {
     "id": "PSM-T2-015",
@@ -2109,7 +2109,7 @@
     "stem": "Why are Sprints limited to one month or less?",
     "options": [
       "Longer Sprints are not allowed to contain a Sprint Review event at the end",
-      "Developers cannot size any work that is more than one month in the future",
+      "A Sprint Goal cannot be written for any work that is more than a month away",
       "Stakeholders cannot attend Sprint Reviews held more than a month apart",
       "Longer horizons let the Sprint Goal go stale and raise complexity and risk"
     ],
@@ -2188,7 +2188,7 @@
     "skill": "Coaching the team",
     "stem": "At Sprint Planning, the Developers are about to take on far more work than they have ever finished in a Sprint. What should the Scrum Master do?",
     "options": [
-      "Ask questions that help them weigh their past performance and capacity in the forecast",
+      "Ask questions so they weigh their past performance and capacity in the forecast",
       "Accept it and add overtime to the plan so that every selected item gets finished",
       "Remove items until the forecast exactly matches what the team finished last Sprint",
       "Ask the Product Owner to set the forecast for the Developers this time around instead"
@@ -2275,7 +2275,7 @@
     "options": [
       "It is Done, and the Product Owner sees value in getting it to users sooner",
       "It meets most of the Definition of Done and the rest can follow next Sprint",
-      "Stakeholders asked for it urgently, even though it does not yet meet Done",
+      "Stakeholders see urgent value in it, even though it does not yet meet Done",
       "The Sprint Review has been cancelled, so this is the only chance to show it"
     ],
     "correct": [
@@ -2464,7 +2464,7 @@
     "stem": "A Developer complains to the Scrum Master that another Developer never shares information. What should the Scrum Master do first?",
     "options": [
       "Move the other Developer to a different Scrum Team as soon as possible",
-      "Encourage them to talk it through, and help the team resolve it itself",
+      "Encourage them to talk it through so the team resolves it itself",
       "Ask the Product Owner to give the two of them completely separate work",
       "Report the other Developer to their line manager for a formal warning"
     ],
@@ -2637,7 +2637,7 @@
       "Make the gap transparent and coach the team that only Done work is part of the Increment",
       "Accept it just this once, since the stakeholders want to see as much progress as possible",
       "Report the Developers to management for presenting unfinished work as finished",
-      "Quietly fix the Definition of Done so that it matches what the team is delivering"
+      "Quietly loosen the Definition of Done so that more items count toward the Increment"
     ],
     "correct": [
       0
@@ -2698,7 +2698,7 @@
     "stem": "The Product Owner is often away, and the Developers wait days for answers about Product Backlog items. What should the Scrum Master do?",
     "options": [
       "Let the Developers set the priorities themselves until the Product Owner returns",
-      "Make all the Product Backlog decisions personally while the Product Owner is away",
+      "Help out by making the Product Backlog decisions personally while the Product Owner is away",
       "Ask management to appoint a deputy Product Owner who can overrule the absent one",
       "Help the Product Owner see the impact and find ways to be more available to the team"
     ],
@@ -2806,7 +2806,7 @@
       "Put both at the top and ask the Developers to build them both in parallel",
       "Ask the Scrum Master to choose, since the Scrum Master is the neutral party here",
       "Weigh both against the Product Goal, decide the order and explain the reasons",
-      "Let the departments vote and order the Product Backlog by the voting result"
+      "Let the departments vote on which request best fits the Product Goal and order by that"
     ],
     "correct": [
       2
@@ -2908,7 +2908,7 @@
     "stem": "A change board takes two weeks to approve every release, so Done Increments sit waiting. What should the Scrum Master do?",
     "options": [
       "Make the Sprints two weeks longer so that the board's approval step fits inside each one",
-      "Tell the Developers to release without the board's approval to save the two weeks",
+      "Tell the Developers to release each Increment without the board's approval",
       "Work with the organization to remove the barrier so Done Increments reach users sooner",
       "Accept the delay, because release approval is outside the Scrum Team's concern"
     ],
@@ -3098,7 +3098,7 @@
     "skill": "Definition of Done",
     "stem": "What does the Definition of Done give everyone?",
     "options": [
-      "A checklist the Product Owner uses to accept or reject each Developer's tasks",
+      "A checklist the Product Owner uses to accept or reject each Increment",
       "A contract the stakeholders use to hold the Developers to their deadlines",
       "A shared understanding of what work was completed as part of the Increment",
       "A list of tasks the Scrum Master uses to track each Developer's daily work"
@@ -3160,7 +3160,7 @@
       "The Scrum Master must report it to management",
       "The next event's timebox doubles to cover both",
       "An opportunity to inspect and adapt is lost",
-      "The Sprint must be cancelled and replanned"
+      "The Scrum Master must hold the inspection alone"
     ],
     "correct": [
       2
@@ -3313,7 +3313,7 @@
       "Side with the Developers, since the Sprint Backlog belongs only to the Developers",
       "Facilitate the discussion so they reach a decision that protects the Sprint Goal",
       "Side with the Product Owner, since the Product Owner owns the Product Backlog",
-      "Decide the scope personally so that the Sprint can continue without further delay"
+      "Decide the scope personally so that the Sprint Goal is not put at further risk"
     ],
     "correct": [
       1
@@ -3351,7 +3351,7 @@
     "stem": "Which part of the Sprint Backlog stays fixed during the Sprint?",
     "options": [
       "The list of selected items",
-      "The plan for each item",
+      "The plan for reaching the goal",
       "The Sprint Goal",
       "The task estimates"
     ],
@@ -3374,7 +3374,7 @@
       "Cancel it and send the stakeholders a daily written status report on the team's work instead",
       "Let the stakeholders lead it so that they can ask every single Developer for an update on their own tasks",
       "Move it to a weekly slot so that the stakeholders can attend more easily and give feedback",
-      "Explain that it is the Developers' event and that stakeholders inspect results at the Sprint Review"
+      "Explain that it is the Developers' event and that stakeholders see results at the Sprint Review"
     ],
     "correct": [
       3
@@ -3654,7 +3654,7 @@
     "stem": "What happens in Sprint Planning's 'how' topic?",
     "options": [
       "The Scrum Master assigns the selected items to the Developers with the most suitable skills",
-      "The stakeholders approve the technical design before the Developers start any of the work",
+      "The stakeholders approve the design of the Increment before the Developers start any work",
       "The Product Owner writes the detailed tasks so that the Developers know exactly what to do",
       "The Developers plan the work needed to create an Increment that meets the Definition of Done"
     ],
@@ -3676,7 +3676,7 @@
     "options": [
       "It is in the Product Backlog, and the rest of it emerges to define what will fulfill the goal",
       "It sits outside the Product Backlog in a separate charter that only the sponsor may change",
-      "It is the top item of the Product Backlog and is completed in the very next Sprint",
+      "It is the top item of the Product Backlog, and the goal is met in the very next Sprint",
       "It replaces the Product Backlog once the Scrum Team has been working for a few Sprints"
     ],
     "correct": [
@@ -3780,7 +3780,7 @@
     "stem": "The Sprint Retrospective keeps running well over its timebox. What should the Scrum Master do?",
     "options": [
       "Let it run as long as it needs, since improvement matters more than any timebox in Scrum",
-      "Replace it with a survey that the Developers fill in on their own after each Sprint",
+      "Help by replacing it with a survey that the Developers fill in on their own after each Sprint",
       "Hold it only every other Sprint so that the team has more time for each one of them",
       "Help the team keep within the timebox, for example by focusing on the most helpful changes"
     ],
@@ -3848,7 +3848,7 @@
       "Short cycles let the team avoid planning and simply work on whatever arrives first",
       "Short cycles make the full scope and date fixed and certain from day one",
       "Each cycle is a phase gate where managers approve or stop the next one",
-      "Each cycle produces something to inspect, so the team learns and adapts early"
+      "Each cycle produces a usable result, so the team learns and adapts early"
     ],
     "correct": [
       3
@@ -3961,7 +3961,7 @@
     "stem": "A stakeholder asks the Product Owner for a fixed, detailed plan for the next 12 months. What is the best response?",
     "options": [
       "Decline to plan past the current Sprint, since Scrum does not allow longer-term planning",
-      "Produce a detailed task plan for all 12 months and hold the whole team to it without any changes",
+      "Turn the Product Goal into a fixed 12-month task plan and hold the whole team to it without changes",
       "Share the Product Goal and a forecast, and explain that the plan will adapt as the team learns",
       "Ask the Scrum Master to write the 12-month plan, since planning is part of their role"
     ],
@@ -4094,7 +4094,7 @@
     "options": [
       "Usable Increments that meet the Definition of Done",
       "Detailed documents that are reviewed at phase gates",
-      "Status reports that are sent to stakeholders weekly",
+      "Status reports on each Increment, sent to stakeholders weekly",
       "Tasks that each Developer completes on their own"
     ],
     "correct": [
@@ -4156,7 +4156,7 @@
     "stem": "Which statement about Developers is correct?",
     "options": [
       "They must each specialize in a single layer of the product and stay in that layer",
-      "They report to the Scrum Master, who decides which of the tasks each of them works on",
+      "They report to the Scrum Master, who decides which Increment tasks each of them works on",
       "They are only the programmers; testers and designers sit outside the Scrum Team",
       "They are the people committed to creating any aspect of a usable Increment each Sprint"
     ],

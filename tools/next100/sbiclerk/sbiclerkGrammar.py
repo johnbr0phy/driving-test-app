@@ -41,9 +41,9 @@ ITEMS = [
       ["QPSR", "PQSR", "QRSP", "SRQP", "QRPS"], 0,
       "The new branch manager (Q) has opened two more counters (P) to reduce the waiting time (S) for senior citizens (R) who come in the morning."),
     L(1, 3, "Phrase rearrangement",
-      RA + "\n\nAlthough the monsoon arrived late this year,\n\nP. that supply drinking water\nQ. most of the reservoirs\nR. were full by September\nS. to the city",
-      ["QRPS", "PSQR", "QPSR", "QSPR", "SQPR"], 2,
-      "Although the monsoon arrived late this year, (Q) most of the reservoirs (P) that supply drinking water (S) to the city (R) were full by September. The relative clause 'that supply drinking water to the city' must follow 'reservoirs' directly."),
+      RA + "\n\nAlthough the monsoon arrived late this year,\n\nP. were full by September\nQ. most of the reservoirs\nR. that supply drinking water\nS. to the city",
+      ["QRPS", "PSQR", "QRSP", "QSPR", "SQRP"], 2,
+      "Although the monsoon arrived late this year, (Q) most of the reservoirs (R) that supply drinking water (S) to the city (P) were full by September. The relative clause 'that supply drinking water to the city' must follow 'reservoirs' directly."),
 
     # ---------- Mock Test 2 ----------
     L(2, 1, "Error spotting",

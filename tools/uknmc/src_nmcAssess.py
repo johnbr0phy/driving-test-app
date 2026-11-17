@@ -16,7 +16,7 @@ ITEMS = [
      ["An urgent ward-based response, as a single parameter scores 3", "Routine observations, as the total score is below 5", "No change, as a slow respiratory rate is a normal finding at rest", "Recheck the respiratory rate tomorrow morning"],
      "A score of 3 in any single parameter (red score) triggers an urgent ward-based response, with review by a clinician who decides on the next steps and how often to observe, at least hourly."),
     ("S", 1, 3, "NEWS2", "When should SpO2 Scale 2 of NEWS2 be used?",
-     ["For a patient with hypercapnic respiratory failure and a prescribed target of 88 to 92%", "For every patient who has a diagnosis of COPD, whatever their target range", "For any patient who is receiving supplemental oxygen through nasal cannulae or a mask", "For a patient whose SpO2 is below 92% when first measured on admission"],
+     ["For a patient with hypercapnic respiratory failure and a prescribed target of 88 to 92%", "For every patient with COPD, whatever target range is prescribed", "For any patient who is receiving supplemental oxygen through nasal cannulae or a mask", "For a patient whose SpO2 is below 92% when first measured on admission"],
      "Scale 2 is only for patients with confirmed hypercapnic respiratory failure who have a target of 88 to 92% set by a clinician and documented. Using it for all COPD patients would hide deterioration."),
     ("S", 1, 1, "NEWS2", "Under NEWS2, how many points does new confusion score for consciousness?",
      ["3", "0", "1", "2"],

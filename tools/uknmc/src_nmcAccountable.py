@@ -98,7 +98,7 @@ ITEMS = [
      ["Any material risk that a reasonable person in the patient's position would want to know", "Only the risks that a responsible body of doctors in that specialty would normally mention", "Only the risks with a chance of happening greater than 1 in 100", "Only the risks the patient asks about directly during the discussion"],
      "Montgomery replaced the doctor-centred test for information with a patient-centred one: material risks, and reasonable alternatives, must be disclosed."),
     ("S", 2, 3, "Mental Capacity Act", "In England, a hospital applies for a standard authorisation under the Deprivation of Liberty Safeguards (DoLS) for a patient who lacks capacity. Which body grants it?",
-     ["The local authority, as the supervisory body", "The hospital's own managers, as the managing authority", "The Care Quality Commission", "The patient's next of kin"],
+     ["The local authority, as the supervisory body", "The hospital's own managers, as the managing authority", "The Care Quality Commission", "The local integrated care board"],
      "Under DoLS in the Mental Capacity Act 2005 (still in force; the Liberty Protection Safeguards have not been brought in), the hospital or care home is the managing authority that applies, and the local authority is the supervisory body that assesses and grants a standard authorisation. The managing authority can grant itself an urgent authorisation for up to 7 days while it waits. Next of kin cannot authorise it."),
     ("S", 2, 2, "Raising concerns", "Which law protects workers who raise concerns in the public interest from being treated unfairly?",
      ["Public Interest Disclosure Act 1998", "Data Protection Act 2018", "Health and Social Care Act 2012 (Part 1)", "Human Rights Act 1998"],

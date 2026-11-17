@@ -22,7 +22,7 @@ ITEMS = [
       "The first paragraph says 'a power-loom sari that looks similar at a glance can be sold at a fraction of the price'.",
       stim=T1),
     S(1, 1, "Detail", "What does the local trader do, according to the passage?",
-      ["Supplies yarn, buys the cloth and sets the price",
+      ["Supplies yarn, buys the woven saris and sets the price",
        "Teaches young weavers the family patterns",
        "Sells the weavers' saris on a website",
        "Lends weavers money to buy power looms",

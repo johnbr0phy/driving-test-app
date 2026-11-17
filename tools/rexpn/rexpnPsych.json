@@ -179,7 +179,7 @@
   "format": "single",
   "stem": "Since her husband died 6 months ago, an 80-year-old has lost weight, stopped going to church and says she is \"just tired.\" What should the nurse do?",
   "options": [
-   "Report possible depression for assessment",
+   "Ask for an assessment for possible depression",
    "Tell the family this is normal aging",
    "Suggest she move to a care home",
    "Encourage her to take a daily nap"
@@ -199,7 +199,7 @@
    "Discuss the concern and report it to the prescriber",
    "Tell the client weight gain is a small price to pay",
    "Advise the client to take half the dose",
-   "Accept the decision and close the file"
+   "Accept the decision and report it at discharge"
   ],
   "correct": [
    0

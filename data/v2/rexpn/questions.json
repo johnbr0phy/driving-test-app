@@ -243,7 +243,7 @@
     "stem": "A client signed a consent form for a bronchoscopy yesterday. In the procedure area the client says, \"I'm not sure I want this done anymore.\" What should the nurse do?",
     "options": [
       "Ask the client's spouse to confirm the consent",
-      "Hold the procedure and tell the health care provider",
+      "Delay the procedure and tell the health care provider",
       "Give the ordered sedation to ease the client's anxiety",
       "Remind the client that the form is already signed"
     ],
@@ -533,7 +533,7 @@
       "Apply soft wrist restraints to both arms",
       "Remove the IV and give fluids by mouth",
       "Ask the provider to order a sedative now",
-      "Hide the site and offer something to hold"
+      "Hide the site and offer a soft object for the hands"
     ],
     "correct": [
       3
@@ -635,7 +635,7 @@
     "skill": "Unsafe practice",
     "stem": "At the start of a night shift, the nurse notices that a colleague smells strongly of alcohol and is slurring words. What should the nurse do first?",
     "options": [
-      "Wait until morning and tell the day manager",
+      "Wait until morning and report it to the day manager",
       "Ask the colleague to give only oral medications",
       "Offer the colleague coffee and keep an eye on them",
       "Report it to the charge nurse or manager now"
@@ -699,7 +699,7 @@
     "stem": "A client taking warfarin has an INR of 4.6 and bleeding gums. What should the nurse do?",
     "options": [
       "Give the warfarin with a glass of milk",
-      "Give the dose and recheck the INR next week",
+      "Hold the warfarin and recheck the INR next week",
       "Hold the warfarin and notify the prescriber",
       "Double the next day's dose"
     ],
@@ -766,7 +766,7 @@
     "skill": "Cardiac medications",
     "stem": "Before giving digoxin 0.125 mg, the nurse counts an apical pulse of 52/min. The client's usual rate is 72/min. What should the nurse do?",
     "options": [
-      "Give the dose and recheck the pulse in 1 hour",
+      "Give the dose and report the heart rate later",
       "Hold the dose and report the heart rate",
       "Give half the dose",
       "Give the dose with food"
@@ -1661,7 +1661,7 @@
     "skill": "Orthostatic vital signs",
     "stem": "A client's BP is 128/76 mm Hg lying down and 102/64 mm Hg after 1 minute standing, and the client feels dizzy. What should the nurse do?",
     "options": [
-      "Retake the BP lying down in 4 hours",
+      "Report the readings at the end of the shift",
       "Document the readings as normal",
       "Have the client sit and report the drop",
       "Encourage the client to walk the hallway"
@@ -1727,7 +1727,7 @@
       "Let the oncoming nurse sort it out",
       "Report it before either nurse leaves the unit",
       "Correct the count sheet to match",
-      "Recount tomorrow when it is less busy"
+      "Report it tomorrow when it is less busy"
     ],
     "correct": [
       1
@@ -1874,7 +1874,7 @@
       "Give half the dose as a test",
       "Ask the pharmacy for a liquid form",
       "Give the dose and watch for a rash",
-      "Hold the dose and contact the prescriber"
+      "Do not give it and contact the prescriber"
     ],
     "correct": [
       3
@@ -2000,7 +2000,7 @@
     "options": [
       "Tell the family this is normal aging",
       "Encourage her to take a daily nap",
-      "Report possible depression for assessment",
+      "Ask for an assessment for possible depression",
       "Suggest she move to a care home"
     ],
     "correct": [
@@ -2188,7 +2188,7 @@
     "skill": "Antipsychotic adherence",
     "stem": "A client with schizophrenia stopped taking olanzapine because \"I'm putting on weight.\" What is the nurse's best action?",
     "options": [
-      "Accept the decision and close the file",
+      "Accept the decision and report it at discharge",
       "Discuss the concern and report it to the prescriber",
       "Advise the client to take half the dose",
       "Tell the client weight gain is a small price to pay"
@@ -2417,7 +2417,7 @@
     "skill": "Kidney function",
     "stem": "A client's creatinine rose from 80 to 210 µmol/L over 2 days while receiving gentamicin. What should the nurse do?",
     "options": [
-      "Recheck the creatinine in a week",
+      "Give the next dose and report the rise afterward",
       "Encourage the client to limit fluids",
       "Report the rise before the next dose",
       "Give the next dose early"
@@ -2482,7 +2482,7 @@
     "options": [
       "Hold the dose and report possible toxicity",
       "Give the dose with extra salt",
-      "Give the dose and an antiemetic",
+      "Give the dose and report the vomiting",
       "Tell the client to drink less water"
     ],
     "correct": [
@@ -2782,7 +2782,7 @@
       "Give all 0900 medications to every client",
       "Begin morning care with the client in the first room",
       "Complete charting from the previous shift",
-      "Review report and rank client needs by priority"
+      "Review the handover and rank client needs by priority"
     ],
     "correct": [
       3
@@ -3191,7 +3191,7 @@
     "skill": "Transfers",
     "stem": "A client is being transferred from the medical unit to a rehabilitation unit in the same hospital. What should the nurse provide to the receiving nurse?",
     "options": [
-      "A verbal report and the client's current care plan",
+      "A verbal handover and the client's current care plan",
       "Nothing, since the chart is electronic",
       "A summary of the client's family history",
       "Only the medication administration record"
@@ -3299,7 +3299,7 @@
       "Tell the client the pharmacy made an error",
       "Return the tablet without comment",
       "Report the near miss as the agency requires",
-      "Do nothing, since the client was not harmed"
+      "Report it only if the client was harmed"
     ],
     "correct": [
       2
@@ -3319,7 +3319,7 @@
     "options": [
       "Ask the staff member to explain what happened",
       "Ensure the resident's safety and report it as required",
-      "Wait to see if the resident repeats the story",
+      "Report it only if the resident repeats the story",
       "Tell the resident's family and let them decide"
     ],
     "correct": [
@@ -3686,7 +3686,7 @@
     "options": [
       "Assume the client has dementia",
       "Write all questions in very small print",
-      "Report a possible hearing loss for screening",
+      "Arrange a hearing screening for the client",
       "Speak louder and higher pitched"
     ],
     "correct": [
@@ -4188,7 +4188,7 @@
     "stem": "Partway through a shift, the nurse feels too ill to continue. What must the nurse do before leaving?",
     "options": [
       "Finish documenting and leave quietly",
-      "Give report to the charge nurse",
+      "Hand over the clients to the charge nurse",
       "Text a coworker to cover the clients",
       "Leave a note at the nursing station"
     ],

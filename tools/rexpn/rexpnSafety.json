@@ -57,7 +57,7 @@
   "format": "single",
   "stem": "A confused client keeps trying to pull at an IV line. What should the nurse try first?",
   "options": [
-   "Hide the site and offer something to hold",
+   "Hide the site and offer a soft object for the hands",
    "Apply soft wrist restraints to both arms",
    "Ask the provider to order a sedative now",
    "Remove the IV and give fluids by mouth"
@@ -202,7 +202,7 @@
   "format": "single",
   "stem": "A client's chart lists a penicillin allergy. A new order is written for amoxicillin. What should the nurse do?",
   "options": [
-   "Hold the dose and contact the prescriber",
+   "Do not give it and contact the prescriber",
    "Give the dose and watch for a rash",
    "Give half the dose as a test",
    "Ask the pharmacy for a liquid form"
@@ -360,7 +360,7 @@
   "stem": "The nurse catches that the pharmacy sent the wrong strength of a tablet before giving it. What should the nurse do after getting the correct medication?",
   "options": [
    "Report the near miss as the agency requires",
-   "Do nothing, since the client was not harmed",
+   "Report it only if the client was harmed",
    "Tell the client the pharmacy made an error",
    "Return the tablet without comment"
   ],

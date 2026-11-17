@@ -531,7 +531,7 @@
       "skill": "Learning and acquisition",
       "stem": "Language acquisition differs from language learning because acquisition",
       "options": [
-        "depends on memorising the rules of grammar before a child starts to speak",
+        "comes through memorising the rules of grammar before a child starts to speak",
         "happens naturally through meaningful use, without formal teaching",
         "can only take place inside a classroom with a textbook",
         "is complete before a child is one year old"
@@ -1246,7 +1246,7 @@
         "tell them their home ideas have no value",
         "correct them immediately by telling the right answer from the book",
         "ignore their ideas and start from the textbook",
-        "find out their ideas and build on them through activity"
+        "find out their ideas and build on them with activities"
       ],
       "correct": [
         3
@@ -2241,7 +2241,7 @@
         "practise addition of large numbers",
         "memorise the spelling of a new and difficult word",
         "finish the chapter on measurement quickly",
-        "build meaning for the term through experience"
+        "build meaning for the term from experience"
       ],
       "correct": [
         3
@@ -2702,7 +2702,7 @@
       "options": [
         "learn best when they are shown the final answer first",
         "repeat the teacher's statements until they are memorised",
-        "find out principles for themselves through guided exploration",
+        "find out principles for themselves by guided exploration",
         "learn only from rewards and punishments that follow behaviour"
       ],
       "correct": [
@@ -2763,7 +2763,7 @@
       "skill": "Assessment",
       "stem": "Continuous and comprehensive evaluation looks at",
       "options": [
-        "scholastic and co-scholastic areas throughout the year",
+        "scholastic and co-scholastic areas across the whole year",
         "only how quickly children finish their tests",
         "only children's handwriting and their neatness",
         "only the marks a child gets in the final written examination"

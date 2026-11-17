@@ -32,7 +32,7 @@ STIMULI = [
         "turning. (4) Many people who would like to ride to work still do not feel safe doing so.\n\n"
         "(5) The city should replace the painted lanes with protected ones. (6) A protected lane is separated from traffic by a curb, "
         "a row of posts, or a line of parked cars. (7) Cities that have built connected networks of protected lanes have seen more "
-        "people riding and fewer riders hurt. (8) Protected lanes also help drivers, who no longer have to guess where a cyclist "
+        "people riding and fewer riders hurt. (8) Protected lanes also help drivers; who no longer have to guess where a cyclist "
         "will be.\n\n"
         "(9) Some drivers worry that giving street space to bikes will slow car traffic. (10) Studies of streets that added "
         "protected lanes have found that car travel times changed little, partly because drivers no longer had to slow down behind "
@@ -52,7 +52,7 @@ STIMULI = [
         "decades. (15) It would be a shame to lose them in a single season.")},
     {"id": "APLANG-D-W5", "title": "A student's draft: learning music as an adult (practice text)", "text": (
         "(1) At forty-three, my mother decided to learn the cello. (2) She had never read a note of music. (3) Her first months "
-        "were painful to hear, and she nearly quit twice. (4) Three years later she plays in a community orchestra.\n\n"
+        "were a source of severe distress, and she nearly quit twice. (4) Three years later she plays in a community orchestra.\n\n"
         "(5) Many adults believe it is too late to learn an instrument. (6) They assume that children learn music easily and adults "
         "cannot. (7) Children do have some advantages, such as more free time and teachers who make them practice. (8) But adults "
         "have advantages of their own. (9) They can choose music they love, practice with a clear goal, and they understand why a "
@@ -69,7 +69,7 @@ STIMULI = [
         "established. (7) They also feed local insects, which in turn feed birds. (8) Many caterpillars can eat only a few kinds "
         "of native plants, and most songbirds raise their young on caterpillars.\n\n"
         "(9) Some neighbors may find a native garden messy. (10) A neat border, a path, or a small sign can show that the garden is "
-        "planned. (11) Starting small also helps; a single bed by the front walk is enough to begin.\n\n"
+        "planned. (11) Starting small also helps, a single bed by the front walk is enough to begin.\n\n"
         "(12) A yard can be more than a carpet of grass. (13) It can be a place where things live.")},
     {"id": "APLANG-D-W7", "title": "A student's draft: the winter bird count (practice text)", "text": (
         "(1) Every winter for more than a century, volunteers across North America have spent a day counting birds. (2) The count "
@@ -100,7 +100,7 @@ ITEMS = [
     # ---------- CPR draft ----------
     Q(0, 1, RSW, PURPOSE,
       "Sentences 1 through 4 serve mainly to",
-      ["open with a real case that shows why the skill matters", "explain how a defibrillator restarts a stopped heart", "praise the parent who happened to be at the game", "describe the school's baseball season last spring"],
+      ["open with an actual case that shows why the skill matters", "explain how a defibrillator restarts a stopped heart", "praise the parent who happened to be at the game", "describe the school's baseball season last spring"],
       "The collapse, the rescue and the bystanders who \"would not have known what to do\" set up the proposal in sentence 5. The draft is not about baseball or the nurse herself.",
       "APLANG-D-W1"),
     Q(0, 2, CEW, CLAIM,
@@ -203,9 +203,9 @@ ITEMS = [
       "Sentence 6 names posts and curbs as ways to separate a lane, so a comparison of the two belongs right after it.",
       "APLANG-D-W3"),
     Q(0, 2, STW, PUNCT,
-      "In sentence 8 (reproduced below), which version of the underlined text is most clear?\n\nProtected lanes also help __drivers, who__ no longer have to guess where a cyclist will be.",
-      ["(as it is now)", "drivers who", "drivers; who", "drivers. Who"],
-      "The comma makes \"who no longer have to guess\" describe all drivers. Without it, the clause would limit the help to some drivers; the semicolon and period leave a fragment.",
+      "In sentence 8 (reproduced below), which version of the underlined text is most clear?\n\nProtected lanes also help __drivers; who__ no longer have to guess where a cyclist will be.",
+      ["drivers, who", "drivers who", "(as it is now)", "drivers. Who"],
+      "A comma makes \"who no longer have to guess\" describe all drivers. Without it, the clause would limit the help to some drivers; the semicolon and the period both leave a fragment.",
       "APLANG-D-W3"),
     Q(0, 2, CEW, QUAL,
       "The writer is considering deleting sentence 10. Should the writer keep or delete this sentence?",
@@ -268,7 +268,7 @@ ITEMS = [
     # ---------- Adult music draft ----------
     Q(0, 1, RSW, PURPOSE,
       "The story in sentences 1 through 4 mainly serves to",
-      ["give a real case that challenges a common belief", "show that the cello is easier than other instruments", "explain why the writer's mother nearly quit twice", "describe how community orchestras choose players"],
+      ["give a concrete case that challenges a common belief", "show that the cello is easier than other instruments", "explain why the writer's mother nearly quit twice", "describe how community orchestras choose players"],
       "A woman who started at forty-three and now plays in an orchestra contradicts the belief, stated in sentence 5, that adults are too old to learn.",
       "APLANG-D-W5"),
     Q(0, 3, ROW, STRUCT,
@@ -297,9 +297,9 @@ ITEMS = [
       "The paragraph says being a beginner is rare in adult life; \"a patience that adults rarely practice\" names the specific benefit. \"Humbling and good\" is vague.",
       "APLANG-D-W5"),
     Q(0, 2, STW, TONE,
-      "In sentence 3 (reproduced below), the writer wants to describe the first months honestly while keeping an affectionate tone.\n\nHer first months were __painful to hear__, and she nearly quit twice.\n\nWhich version of the underlined text best accomplishes this goal?",
-      ["(as it is now)", "a source of severe distress", "objectively terrible music", "unbearable for the neighbors"],
-      "\"Painful to hear\" is honest but light, fitting a daughter's fond story. The other versions are harsh or clinical and work against the draft's warmth.",
+      "In sentence 3 (reproduced below), the writer wants to describe the first months honestly while keeping an affectionate tone.\n\nHer first months were __a source of severe distress__, and she nearly quit twice.\n\nWhich version of the underlined text best accomplishes this goal?",
+      ["painful to hear", "(as it is now)", "objectively terrible music", "unbearable for the neighbors"],
+      "\"Painful to hear\" is honest but light, fitting a daughter's fond story. The current wording and the other versions are harsh or clinical and work against the draft's warmth.",
       "APLANG-D-W5"),
     Q(0, 3, RSW, AUDIENCE,
       "The writer wants to replace sentence 14 with an ending that encourages hesitant readers. Which choice best accomplishes this goal?",
@@ -334,9 +334,9 @@ ITEMS = [
       "Sentence 9 states a worry and sentence 10 answers it, so the relationship is a contrast. A neat border is not an example of a messy garden.",
       "APLANG-D-W6"),
     Q(0, 2, STW, PUNCT,
-      "In sentence 11 (reproduced below), which version of the underlined text is most clear?\n\nStarting small also __helps; a__ single bed by the front walk is enough to begin.",
-      ["(as it is now)", "helps, a", "helps a", "helps; and a"],
-      "A semicolon correctly joins two closely related independent clauses. A comma alone makes a comma splice, no punctuation makes a run-on, and \"; and\" doubles the connector.",
+      "In sentence 11 (reproduced below), which version of the underlined text is most clear?\n\nStarting small also __helps, a__ single bed by the front walk is enough to begin.",
+      ["helps; a", "(as it is now)", "helps a", "helps; and a"],
+      "A semicolon correctly joins two closely related independent clauses. A comma alone, as now, makes a comma splice, no punctuation makes a run-on, and \"; and\" doubles the connector.",
       "APLANG-D-W6"),
     Q(0, 3, RSW, AUDIENCE,
       "The writer wants to add a sentence after sentence 11 that speaks to readers who have little time for gardening. Which choice best accomplishes this goal?",
@@ -394,13 +394,13 @@ ITEMS = [
     # ---------- Fare-free bus draft ----------
     Q(0, 1, RSW, PURPOSE,
       "Sentence 1 mainly serves to",
-      ["introduce a real case that the proposal builds on", "criticize another city's bus system", "explain why the writer rides the bus to school each day", "describe how bus fares are collected"],
+      ["introduce an actual example that the proposal builds on", "criticize another city's bus system", "explain why the writer rides the bus to school each day", "describe how bus fares are collected"],
       "The other city's experiment supplies the evidence in sentences 2 to 4 and the model for \"the same experiment\" in sentence 5. The writer praises it rather than criticizing it.",
       "APLANG-D-W8"),
     Q(0, 3, ROW, STRUCT,
-      "The writer wants to add the following sentence to the draft.\n\nEvery stop where a rider fumbles for change adds seconds to the trip.\n\nWhere would the sentence best be placed?",
-      ["After sentence 3", "After sentence 6", "After sentence 10", "After sentence 13"],
-      "Sentence 3 says buses ran faster because riders no longer paid at the front; the new sentence explains why. Elsewhere it would interrupt a different point.",
+      "The writer wants to add the following sentence to the draft.\n\nEach of those fare boxes must also be bought, repaired and emptied.\n\nWhere would the sentence best be placed?",
+      ["After sentence 7", "After sentence 3", "After sentence 10", "After sentence 13"],
+      "Sentence 7 lists the costs of collecting fares, starting with fare boxes; the new sentence adds detail about those boxes. Elsewhere it would interrupt a different point.",
       "APLANG-D-W8"),
     Q(0, 2, CEW, EVID,
       "The writer wants to support the claim in sentence 6. Which evidence would best accomplish this goal?",

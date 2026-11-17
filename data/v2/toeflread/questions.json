@@ -123,7 +123,7 @@
     {
       "id": "TOEFLR-D-CW3",
       "title": "Suspension Bridges",
-      "text": "Fill in the missing letters in the paragraph.\n\nA suspension bridge hangs its road from long steel cables. The ma_ _ **(1)** cables pa_ _ **(2)** over ta_ _ **(3)** towers a_ _ **(4)** are fi_ _ _ **(5)** firmly in_ _ **(6)** the gro_ _ _ **(7)** at bo_ _ **(8)** ends o_ **(9)** the bri_ _ _ **(10)**. Thinner vertical cables connect the main cables to the deck, so the weight of traffic is carried up to the towers and down into the earth. This design allows engineers to cross very wide rivers and bays, because the long central span needs no supports standing in the water below."
+      "text": "Fill in the missing letters in the paragraph.\n\nA suspension bridge hangs its road from long steel cables. The ma_ _ **(1)** cables pa_ _ **(2)** over ta_ _ **(3)** towers a_ _ **(4)** are fi_ _ _ **(5)** firmly i_ **(6)** the gro_ _ _ **(7)** at bo_ _ **(8)** ends o_ **(9)** the bri_ _ _ **(10)**. Thinner vertical cables connect the main cables to the deck, so the weight of traffic is carried up to the towers and down into the earth. This design allows engineers to cross very wide rivers and bays, because the long central span needs no supports standing in the water below."
     },
     {
       "id": "TOEFLR-D-DL1",
@@ -3657,17 +3657,17 @@
       "difficulty": 1,
       "stimulusId": "TOEFLR-D-CW3",
       "format": "single",
-      "stem": "Which word completes gap (6), **in_ _**?",
+      "stem": "Which word completes gap (6), **i_**?",
       "options": [
-        "inky",
-        "inns",
-        "inch",
-        "into"
+        "is",
+        "if",
+        "it",
+        "in"
       ],
       "correct": [
         3
       ],
-      "explanation": "\"into\" fits. \"Fixed into the ground\" needs a preposition."
+      "explanation": "\"in\" fits. \"Fixed firmly in the ground\" needs a preposition before the noun phrase."
     },
     {
       "id": "TOEFLR-D-027",

@@ -327,7 +327,7 @@
       "skill": "Data retention",
       "stem": "Regulators require trade records in a bucket to be kept unchanged for seven years, and even administrators must not be able to delete them early. What should the architect configure?",
       "options": [
-        "An IAM role that only lets admins delete objects",
+        "An IAM policy that only lets admins delete objects",
         "A bucket retention policy locked with Bucket Lock",
         "A lifecycle rule moving objects to Archive storage",
         "Object Versioning with no lifecycle rules"
@@ -444,7 +444,7 @@
       "options": [
         "Store the data in a multi-region US bucket with customer-managed keys",
         "A resource locations organization policy set to the EU",
-        "An eu label on each resource",
+        "A labeling policy that tags each resource eu",
         "Ask each developer to choose an EU region whenever they create resources"
       ],
       "correct": [
@@ -720,7 +720,7 @@
       "stem": "The security team wants to stop anyone in the organization creating service account keys, now and in future projects. What should it do?",
       "options": [
         "Remove the IAM service from the list of enabled APIs everywhere",
-        "An email asking developers not to",
+        "A written policy emailed to developers asking them not to",
         "An organization policy that disables key creation",
         "Delete any keys it finds in a weekly manual review of projects"
       ],
@@ -3290,7 +3290,7 @@
         "A quota or spike arrest policy",
         "A VPC Service Controls perimeter",
         "A committed use discount",
-        "A lifecycle management rule"
+        "An object lifecycle management policy"
       ],
       "correct": [
         0
@@ -3750,7 +3750,7 @@
       "stem": "An organization wants to prevent any VM in its production folder from being created with an external IP address. What should it apply?",
       "options": [
         "A VPC firewall rule that blocks egress to the internet for every VM",
-        "An IAM role that lets only admins see VM network settings",
+        "An IAM policy that lets only admins see VM network settings",
         "An organization policy on VM external IPs for that folder",
         "A label on the folder that says external IPs are not allowed"
       ],

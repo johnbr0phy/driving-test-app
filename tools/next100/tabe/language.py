@@ -36,9 +36,9 @@ STIMULI = [
         "(1) The Westside Health Clinic is open from 8 a.m. to 4 p.m. on weekdays. (2) For people who work "
         "those same hours, getting a checkup means losing a day's pay. (3) The clinic should stay open until "
         "7 p.m. two nights a week. (4) A survey of clinic patients found that more than half work daytime "
-        "shifts. (5) Many of them said they skip checkups because they cannot leave work. (6) The clinic's "
-        "waiting room was painted last year. (7) Evening hours would help patients get care before small "
-        "problems become serious.")},
+        "shifts. (5) Many of them said they skip checkups because they cannot leave work. (6) Evening hours "
+        "would help patients get care before small problems become serious. (7) The clinic's waiting room "
+        "was painted last year.")},
     {"id": "TABE-D-L2", "title": "Draft: How to plant a tree", "text": (
         "(1) Planting a tree correctly helps it live for decades. (2) Dig a hole two to three times as wide as "
         "the root ball but no deeper than it. (3) Remove the container and gently loosen any roots that circle "
@@ -239,7 +239,7 @@ ITEMS = [
       "Sentence 3 says what should happen: open until 7 p.m. two nights a week. Sentence 1 states the current hours as background.",
       stim="TABE-D-L1"),
     Q(0, TEXT, 2, "Irrelevant sentence", "Which sentence should be removed from the draft?",
-      ["Sentence 6", "Sentence 2", "Sentence 5", "Sentence 4"],
+      ["Sentence 7", "Sentence 2", "Sentence 5", "Sentence 6"],
       "The waiting room's paint has nothing to do with opening hours. Sentence 5 explains why patients skip checkups, which supports the claim.",
       stim="TABE-D-L1"),
     Q(0, TEXT, 3, "Linking reasons", "Which word or phrase would best begin sentence 5?",
@@ -271,7 +271,7 @@ ITEMS = [
       "After its opening, the draft gives the planting steps in the order they happen, from digging to watering.",
       stim="TABE-D-L2"),
     Q(0, TEXT, 2, "Topic sentence", "Which sentence would best introduce the report if it were added before sentence 1?",
-      ["A bee colony splits its work three ways.", "I like to put honey on my toast every day.",
+      ["A bee colony splits its tasks three ways.", "I like to put honey on my toast every day.",
        "Bees can sting when they are scared.", "Some of the flowers in my yard are purple."],
       "The report describes the queen, the workers and the drones, so an opening that names that division introduces the whole topic.",
       stim="TABE-D-L3"),
@@ -287,7 +287,7 @@ ITEMS = [
       "Sentence 5 explains that drones are male bees with one job. The other terms are used without a definition.",
       stim="TABE-D-L3"),
     Q(0, TEXT, 3, "Concluding sentence", "Which sentence would best conclude the report?",
-      ["Shared work keeps the colony alive.", "Wasps are also yellow and black.",
+      ["Shared labor keeps the colony alive.", "Wasps are also yellow and black.",
        "Honey is sold in many grocery stores.", "I hope to keep bees someday."],
       "A conclusion should sum up the main idea, the division of work in the colony. The other sentences drift to new topics or to the writer.",
       stim="TABE-D-L3"),

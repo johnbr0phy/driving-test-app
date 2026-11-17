@@ -44,12 +44,12 @@
       "Document the intake and send the client to surgery",
       "Notify the RN right away",
       "Give an antacid and continue the preoperative checklist",
-      "Reschedule the surgery for the afternoon"
+      "Notify the RN after the client leaves for surgery"
     ],
     "correct": [
       1
     ],
-    "explanation": "Food within the fasting window raises the risk of aspiration during anesthesia, so the RN and surgical team must know before the client leaves the unit; they decide whether to delay. The PN reports the data and does not reschedule surgery or cover the problem with an antacid."
+    "explanation": "Food within the fasting window raises the risk of aspiration during anesthesia, so the RN and surgical team must know before the client leaves the unit; they decide whether to delay. The PN reports the data and does not cover the problem with an antacid, and telling the RN after the client has left is too late."
   },
   {
     "domain": "pnRisk",
@@ -363,12 +363,12 @@
       "Encourage a glass of orange juice",
       "Report the result to the RN immediately",
       "Give the scheduled potassium chloride tablet",
-      "Document the value and recheck tomorrow"
+      "Report the result to the RN at the end of the shift"
     ],
     "correct": [
       1
     ],
-    "explanation": "A potassium of 6.1 mEq/L can cause fatal dysrhythmias, so the RN is told at once so the provider can order treatment and cardiac monitoring. Orange juice and the potassium tablet would raise it further."
+    "explanation": "A potassium of 6.1 mEq/L can cause fatal dysrhythmias, so the RN is told at once so the provider can order treatment and cardiac monitoring. Orange juice and the potassium tablet would raise it further, and waiting until the end of the shift wastes time the client may not have."
   },
   {
     "domain": "pnRisk",

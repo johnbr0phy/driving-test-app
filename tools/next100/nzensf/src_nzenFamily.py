@@ -13,7 +13,7 @@ ITEMS = [
     # ---- Test 2 ----
     ("S", 2, 2, "Child fever",
      "A febrile child is very drowsy and has a rash that does not fade when a glass is pressed on it. What should the enrolled nurse do?",
-     ["Seek emergency help at once", "Give paracetamol and wait", "Cool the child with a cold bath", "Book a doctor for tomorrow"],
+     ["Seek emergency care at once", "Give paracetamol and wait", "Cool the child with a cold bath", "Book a doctor for tomorrow"],
      "A non-blanching rash with fever and drowsiness may be meningococcal disease, which can kill within hours. It is an emergency."),
     ("S", 2, 2, "Breastfeeding",
      "Which sign shows a baby is attached well at the breast?",
@@ -26,6 +26,6 @@ ITEMS = [
      "Most babies sit without support between about 6 and 8 months. A baby who is not sitting by about 9 months should be checked."),
     ("S", 0, 2, "Postnatal care",
      "A woman two days after birth is soaking a pad every 30 minutes with bright red blood. What should the enrolled nurse do?",
-     ["Escalate urgently to the midwife", "Reassure her that this is normal", "Ask her to lie flat and rest", "Check again at the next round"],
+     ["Escalate urgently to the midwife", "Reassure her that this is normal", "Escalate if it is the same at the next round", "Check again at the next round"],
      "Soaking a pad in 30 minutes is heavy bleeding and may be a postpartum haemorrhage. A midwife or doctor must review her urgently."),
 ]

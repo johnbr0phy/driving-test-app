@@ -55,7 +55,7 @@
     "format": "single",
     "stem": "A competent adult client refuses the scheduled morning dose of warfarin. What should the PN do?",
     "options": [
-      "Ask the family to persuade the client",
+      "Notify the family and ask them to persuade the client",
       "Mix the crushed tablet into applesauce",
       "Hold the dose and chart it as given",
       "Document the refusal and notify the RN"
@@ -137,7 +137,7 @@
     "options": [
       "Report the observation to the supervisor",
       "Confront the coworker privately first",
-      "Wait to see whether it happens again",
+      "Report it only if it happens again",
       "Ask the client whether the dose was given"
     ],
     "correct": [0],
@@ -170,10 +170,10 @@
       "Explain the risks of the procedure to the client",
       "Reassure the client that the form is signed",
       "Notify the RN before the procedure",
-      "Ask the family to explain the procedure"
+      "Notify the RN after the procedure is done"
     ],
     "correct": [2],
-    "explanation": "A signed form is not valid consent if the client does not understand the procedure, so the PN tells the RN, who contacts the provider to explain it again. Explaining risks and benefits is the provider's responsibility, not the nurse's or the family's."
+    "explanation": "A signed form is not valid consent if the client does not understand the procedure, so the PN tells the RN, who contacts the provider to explain it again. Explaining risks and benefits is the provider's responsibility, not the nurse's, and telling the RN after the procedure is too late."
   },
   {
     "domain": "pnCare",
@@ -393,7 +393,7 @@
     "options": [
       "Tell the daughter the living will cannot be changed",
       "Ask the daughter to sign a new consent form",
-      "Notify the RN of the daughter's request",
+      "Bring the daughter's request to the RN",
       "Remove the living will from the chart"
     ],
     "correct": [2],

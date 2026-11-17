@@ -117,7 +117,7 @@
     "options": [
       "A list of known vulnerabilities from the last scan",
       "Approval by email from each administrator of the systems that will be tested in scope",
-      "Written authorization from senior management defining scope and rules of engagement",
+      "Written authorization from senior leadership defining scope and rules of engagement",
       "Exploit code for the systems in scope"
     ],
     "correct": [
@@ -353,7 +353,7 @@
     "skill": "Governance",
     "stem": "A newly hired CISO finds that security projects are approved by the IT operations manager, who also owns the budget for uptime. What should the CISO do FIRST?",
     "options": [
-      "Propose a governance structure in which senior management sets security priorities",
+      "Propose a governance structure in which senior leadership sets security priorities",
       "Move the security budget into the CISO's own cost center without discussing it with anyone",
       "Ask internal audit to test every control the IT operations manager approved",
       "Halt all security projects until the IT operations manager is replaced"
@@ -1025,7 +1025,7 @@
     "skill": "Symmetric cryptography",
     "stem": "A company must encrypt terabytes of backup data quickly. Which choice is MOST appropriate?",
     "options": [
-      "RSA with a 4096-bit key applied to each file",
+      "RSA with a 4096-bit key from the key management server, applied to each file",
       "Elliptic curve Diffie-Hellman applied separately to each file in the backup set",
       "AES with a key protected by the backup system's key management",
       "SHA-256 applied to each backup file"
@@ -1278,7 +1278,7 @@
     "stem": "Senior management asks a security manager to begin a business continuity program. What should the manager do FIRST?",
     "options": [
       "Run a tabletop exercise with the department heads",
-      "Obtain a management-approved scope and charter for the plan",
+      "Obtain an executive-approved scope and charter for the plan",
       "Write detailed recovery procedures for each of the critical servers and applications",
       "Sign a contract for a hot site with a vendor"
     ],
@@ -1551,7 +1551,7 @@
     "stem": "Administrators currently have permanent domain admin rights. Which change reduces risk the MOST?",
     "options": [
       "Disabling logging of administrator actions to save space",
-      "Requiring administrators to change their admin passwords every 30 days and log each change",
+      "Rotating the admin passwords every 30 days through a password management tool",
       "Just-in-time elevation through a privileged access management system",
       "Giving each administrator two permanent admin accounts"
     ],
@@ -2263,7 +2263,7 @@
       "A yearly review of every security policy by the legal and compliance teams",
       "A single annual penetration test",
       "An annual employee attestation form",
-      "Continuous monitoring with key metrics reported to management"
+      "Continuous monitoring with key metrics reported to leadership"
     ],
     "correct": [
       3
@@ -2302,7 +2302,7 @@
     "skill": "Change control in development",
     "stem": "A developer pushes a change directly to production without peer review, claiming it is minor. Which control was skipped?",
     "options": [
-      "Load testing of the production environment",
+      "Load testing under the capacity management plan",
       "Multifactor authentication for the developer's account in the code repository",
       "Encryption of the source code repository",
       "Change management with separation between development and production"
@@ -4474,7 +4474,7 @@
     "options": [
       "Senior management and the board",
       "Each system owner for their own systems",
-      "The chief information security officer",
+      "The risk management team within IT security",
       "The internal audit department"
     ],
     "correct": [

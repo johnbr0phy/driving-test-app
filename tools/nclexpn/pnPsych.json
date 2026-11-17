@@ -323,14 +323,14 @@
     "stem": "A resident with dementia who is usually calm suddenly becomes confused, picks at the sheets and does not recognize the AP. What should the PN do?",
     "options": [
       "Report the sudden change to the RN",
-      "Reorient the resident and recheck in 2 hours",
+      "Report the change to the RN at shift handover",
       "Document the behavior as sundowning",
       "Ask the family to visit more often"
     ],
     "correct": [
       0
     ],
-    "explanation": "A sudden change in mental status in a resident with dementia is usually delirium from an infection, a medication or pain, which needs the RN's assessment and the provider's evaluation. Labeling it sundowning or waiting 2 hours can delay treatment of a serious cause."
+    "explanation": "A sudden change in mental status in a resident with dementia is usually delirium from an infection, a medication or pain, which needs the RN's assessment and the provider's evaluation. Labeling it sundowning or waiting until handover can delay treatment of a serious cause."
   },
   {
     "domain": "pnPsych",

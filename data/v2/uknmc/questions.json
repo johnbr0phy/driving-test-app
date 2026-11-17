@@ -645,7 +645,7 @@
     "options": [
       "She should ask the GP to admit her husband to hospital",
       "Only her husband's needs can be assessed, not her own",
-      "She has a right to a carer's assessment from the local authority",
+      "She has a right to a carer's assessment from the council",
       "She must arrange private care, as the council cannot help carers"
     ],
     "correct": [
@@ -813,7 +813,7 @@
     "options": [
       "For any patient who is receiving supplemental oxygen through nasal cannulae or a mask",
       "For a patient with hypercapnic respiratory failure and a prescribed target of 88 to 92%",
-      "For every patient who has a diagnosis of COPD, whatever their target range",
+      "For every patient with COPD, whatever target range is prescribed",
       "For a patient whose SpO2 is below 92% when first measured on admission"
     ],
     "correct": [
@@ -1003,7 +1003,7 @@
       "Post her concerns on social media to get the attention of senior managers",
       "Leave the ward to show that it is unsafe",
       "Raise it with the nurse in charge and record it under local policy",
-      "Say nothing, as staffing is decided by managers"
+      "Finish the shift, then raise it next week under local policy"
     ],
     "correct": [
       2
@@ -1527,7 +1527,7 @@
     "options": [
       "Adding a sleeping tablet to help him rest",
       "Stopping all fluids to reduce nausea",
-      "Prescribing a regular laxative alongside it",
+      "Adding a regular laxative alongside it",
       "Giving the morphine only when pain is severe"
     ],
     "correct": [
@@ -1714,7 +1714,7 @@
     "skill": "Integrated care",
     "stem": "What is an integrated care system (ICS) in England?",
     "options": [
-      "A partnership of NHS bodies, local authorities and others that plans care for an area",
+      "A partnership of NHS bodies, councils and others that plans care for an area",
       "A team of nurses who visit patients at home after discharge",
       "A private company that runs GP practices in one region",
       "A single computer system that every hospital and GP practice in England must now use"
@@ -3273,7 +3273,7 @@
     "options": [
       "The Care Quality Commission",
       "The local authority",
-      "The NHS trust's ward manager",
+      "The local NHS trust's discharge team",
       "The patient's GP"
     ],
     "correct": [
@@ -3503,7 +3503,7 @@
     "stem": "A patient with diabetes is unconscious with a blood glucose of 2.4 mmol/L. What should the nurse do?",
     "options": [
       "Call for help and give IM glucagon or IV glucose as prescribed",
-      "Give his usual insulin dose and recheck the glucose again in an hour",
+      "Give his prescribed insulin dose and recheck the glucose in an hour",
       "Give 200 mL of orange juice to drink immediately",
       "Give a glucose gel into the mouth and leave him to sleep"
     ],
@@ -3670,7 +3670,7 @@
     "skill": "Medicines reconciliation",
     "stem": "What is medicines reconciliation on admission?",
     "options": [
-      "Comparing the medicines the patient was taking before admission with those now prescribed",
+      "Comparing the medicines taken before admission with those now on the drug chart",
       "Ordering a fresh supply of every medicine the patient was taking at home",
       "Checking the ward stock of each medicine against the order book",
       "Stopping all regular medicines until the consultant has reviewed them"
@@ -4029,7 +4029,7 @@
     "options": [
       "Speed, so that the bed can be ready for the next patient as quickly as possible",
       "The nurse's own beliefs about the right way to do it",
-      "A fixed routine that is the same for everyone",
+      "A fixed local routine that is the same for everyone",
       "The person's and family's cultural and religious wishes, and local policy"
     ],
     "correct": [
@@ -4281,7 +4281,7 @@
     "options": [
       "Cover it with a sheet until the domestic staff arrive",
       "Mop it with hot water and general-purpose detergent only, then leave it to dry",
-      "Wear PPE and use a chlorine-releasing agent at the strength in local policy",
+      "Wear PPE and use a chlorine-releasing agent at the strength the trust sets",
       "Wipe it up with paper towels and leave the floor to dry"
     ],
     "correct": [
@@ -4301,7 +4301,7 @@
     "stem": "Under the Care Act 2014, which body leads adult safeguarding enquiries?",
     "options": [
       "The Care Quality Commission",
-      "The NMC",
+      "The local NHS trust",
       "The local authority",
       "The police"
     ],
@@ -4427,7 +4427,7 @@
     "stem": "Before the evening drug round, a patient's INR comes back at 6.2. His target range is 2 to 3 and he has no signs of bleeding. What should the nurse do about tonight's warfarin?",
     "options": [
       "Withhold the warfarin and inform the prescriber promptly",
-      "Give half the usual dose and recheck the INR tomorrow",
+      "Give half the dose and tell the prescriber in the morning",
       "Give vitamin K from ward stock before the dose",
       "Give the usual dose, as he has no signs of bleeding"
     ],
@@ -4534,7 +4534,7 @@
       "The local authority, as the supervisory body",
       "The hospital's own managers, as the managing authority",
       "The Care Quality Commission",
-      "The patient's next of kin"
+      "The local integrated care board"
     ],
     "correct": [
       0
@@ -4763,7 +4763,7 @@
     "stem": "A patient was given oral paracetamol for pain 1 hour ago. When the nurse reassesses, his pain score is unchanged. What should she do next?",
     "options": [
       "Tell him to wait, as oral paracetamol can take up to 6 hours to start working",
-      "Give a second dose of paracetamol straight away",
+      "Give a second dose now and tell the prescriber afterwards",
       "Document the score and discuss further pain relief with the prescriber",
       "Record nothing until the next drug round"
     ],

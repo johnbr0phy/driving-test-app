@@ -83,7 +83,7 @@
     {
       "id": "APLANG-D-W3",
       "title": "A student's draft: protected bike lanes (practice text)",
-      "text": "(1) Last year, our city painted bike lanes on six downtown streets. (2) The lanes are marked by a white stripe and a small bicycle symbol, and that is all. (3) Cars park in them, delivery trucks idle in them, and drivers drift into them while turning. (4) Many people who would like to ride to work still do not feel safe doing so.\n\n(5) The city should replace the painted lanes with protected ones. (6) A protected lane is separated from traffic by a curb, a row of posts, or a line of parked cars. (7) Cities that have built connected networks of protected lanes have seen more people riding and fewer riders hurt. (8) Protected lanes also help drivers, who no longer have to guess where a cyclist will be.\n\n(9) Some drivers worry that giving street space to bikes will slow car traffic. (10) Studies of streets that added protected lanes have found that car travel times changed little, partly because drivers no longer had to slow down behind cyclists. (11) A protected lane can keep traffic moving rather than clog it.\n\n(12) Painting a stripe was a start. (13) Maybe the city could think about doing more someday."
+      "text": "(1) Last year, our city painted bike lanes on six downtown streets. (2) The lanes are marked by a white stripe and a small bicycle symbol, and that is all. (3) Cars park in them, delivery trucks idle in them, and drivers drift into them while turning. (4) Many people who would like to ride to work still do not feel safe doing so.\n\n(5) The city should replace the painted lanes with protected ones. (6) A protected lane is separated from traffic by a curb, a row of posts, or a line of parked cars. (7) Cities that have built connected networks of protected lanes have seen more people riding and fewer riders hurt. (8) Protected lanes also help drivers; who no longer have to guess where a cyclist will be.\n\n(9) Some drivers worry that giving street space to bikes will slow car traffic. (10) Studies of streets that added protected lanes have found that car travel times changed little, partly because drivers no longer had to slow down behind cyclists. (11) A protected lane can keep traffic moving rather than clog it.\n\n(12) Painting a stripe was a start. (13) Maybe the city could think about doing more someday."
     },
     {
       "id": "APLANG-D-W4",
@@ -93,12 +93,12 @@
     {
       "id": "APLANG-D-W5",
       "title": "A student's draft: learning music as an adult (practice text)",
-      "text": "(1) At forty-three, my mother decided to learn the cello. (2) She had never read a note of music. (3) Her first months were painful to hear, and she nearly quit twice. (4) Three years later she plays in a community orchestra.\n\n(5) Many adults believe it is too late to learn an instrument. (6) They assume that children learn music easily and adults cannot. (7) Children do have some advantages, such as more free time and teachers who make them practice. (8) But adults have advantages of their own. (9) They can choose music they love, practice with a clear goal, and they understand why a teacher asks them to repeat a passage.\n\n(10) Learning an instrument also gives adults something that is rare in grown-up life: the experience of being a beginner. (11) Most of us spend our days doing what we already know how to do. (12) Being bad at something, and slowly getting better, is humbling and good.\n\n(13) Adults who have always wanted to play should rent an instrument and find a teacher. (14) The first months will be hard."
+      "text": "(1) At forty-three, my mother decided to learn the cello. (2) She had never read a note of music. (3) Her first months were a source of severe distress, and she nearly quit twice. (4) Three years later she plays in a community orchestra.\n\n(5) Many adults believe it is too late to learn an instrument. (6) They assume that children learn music easily and adults cannot. (7) Children do have some advantages, such as more free time and teachers who make them practice. (8) But adults have advantages of their own. (9) They can choose music they love, practice with a clear goal, and they understand why a teacher asks them to repeat a passage.\n\n(10) Learning an instrument also gives adults something that is rare in grown-up life: the experience of being a beginner. (11) Most of us spend our days doing what we already know how to do. (12) Being bad at something, and slowly getting better, is humbling and good.\n\n(13) Adults who have always wanted to play should rent an instrument and find a teacher. (14) The first months will be hard."
     },
     {
       "id": "APLANG-D-W6",
       "title": "A student's draft: native plants (practice text)",
-      "text": "(1) The American lawn covers more ground than any irrigated crop in the country. (2) It needs mowing every week, watering in dry spells, and often fertilizer and weed killer. (3) For all that work, a lawn offers very little to wildlife.\n\n(4) Homeowners should replace part of their lawns with native plants. (5) Native plants are the ones that grew in a region before European settlement. (6) Because they are adapted to local rain and soil, most need little watering once they are established. (7) They also feed local insects, which in turn feed birds. (8) Many caterpillars can eat only a few kinds of native plants, and most songbirds raise their young on caterpillars.\n\n(9) Some neighbors may find a native garden messy. (10) A neat border, a path, or a small sign can show that the garden is planned. (11) Starting small also helps; a single bed by the front walk is enough to begin.\n\n(12) A yard can be more than a carpet of grass. (13) It can be a place where things live."
+      "text": "(1) The American lawn covers more ground than any irrigated crop in the country. (2) It needs mowing every week, watering in dry spells, and often fertilizer and weed killer. (3) For all that work, a lawn offers very little to wildlife.\n\n(4) Homeowners should replace part of their lawns with native plants. (5) Native plants are the ones that grew in a region before European settlement. (6) Because they are adapted to local rain and soil, most need little watering once they are established. (7) They also feed local insects, which in turn feed birds. (8) Many caterpillars can eat only a few kinds of native plants, and most songbirds raise their young on caterpillars.\n\n(9) Some neighbors may find a native garden messy. (10) A neat border, a path, or a small sign can show that the garden is planned. (11) Starting small also helps, a single bed by the front walk is enough to begin.\n\n(12) A yard can be more than a carpet of grass. (13) It can be a place where things live."
     },
     {
       "id": "APLANG-D-W7",
@@ -967,13 +967,13 @@
       "stimulusId": "APLANG-T1-W4",
       "stem": "The writer wants to revise sentence 13 so that the essay ends with an image that recalls sentence 3. Which choice best accomplishes this goal?",
       "options": [
-        "The other half is sharing, and the internet makes it easy.",
         "The other half is sharing, and a basement shares nothing.",
+        "The other half is sharing, and the internet makes it easy.",
         "The other half is sharing, and museums should share more.",
         "The other half is sharing, which matters a great deal."
       ],
       "correct": [
-        1
+        0
       ],
       "explanation": "Returning to the basement of sentence 3 frames the essay and makes the point vivid. The other endings restate the idea in general terms without the echo."
     },
@@ -1189,13 +1189,13 @@
       "stimulusId": "APLANG-T2-R1",
       "stem": "The story in the second paragraph serves mainly as evidence that",
       "options": [
-        "village schools teach practical knowledge",
         "certainty can blind an expert to the facts",
+        "village schools teach practical knowledge",
         "fevers are often caused by bad water",
         "medical books of the time were unreliable"
       ],
       "correct": [
-        1
+        0
       ],
       "explanation": "The speaker was sure of his diagnosis and missed what was in front of him, which the third paragraph names directly: \"The great danger is certainty.\" The well is a detail of the story, not its point."
     },
@@ -1432,12 +1432,12 @@
       "stem": "The writer most likely mentions the colleagues' view in the first paragraph in order to",
       "options": [
         "show that the writer once shared that view",
-        "explain why the column was rarely read",
         "set up the view the essay argues against",
+        "explain why the column was rarely read",
         "suggest that the column should be shortened"
       ],
       "correct": [
-        2
+        1
       ],
       "explanation": "The colleagues thought the column made the paper look careless; the next sentence and the rest of the essay argue the opposite. The writer never shared their view."
     },
@@ -1587,7 +1587,7 @@
       "options": [
         "the gap between print and online news",
         "the writer's regret over past mistakes",
-        "the two real options the writer sees",
+        "the only two choices the writer sees",
         "how hard it is to find every error"
       ],
       "correct": [
@@ -1923,7 +1923,7 @@
       "options": [
         "In conclusion,",
         "However,",
-        "For example,",
+        "For instance,",
         "Instead,"
       ],
       "correct": [
@@ -2409,12 +2409,12 @@
       "stem": "The phrase \"a tempting of Providence\" reflects",
       "options": [
         "the writer's own fear of divine punishment",
-        "the legal charge later brought against the writer",
         "the religious terms of the critics' objection",
+        "the legal charge later brought against the writer",
         "the jokes told about the new practice"
       ],
       "correct": [
-        2
+        1
       ],
       "explanation": "The critics frame inoculation as a sin against God's will, and the writer answers in the same terms in the third paragraph. He never says he fears punishment."
     },
@@ -3179,7 +3179,7 @@
       "stem": "Sentences 1 through 4 serve mainly to",
       "options": [
         "describe the school's baseball season last spring",
-        "open with a real case that shows why the skill matters",
+        "open with an actual case that shows why the skill matters",
         "praise the parent who happened to be at the game",
         "explain how a defibrillator restarts a stopped heart"
       ],
@@ -3623,18 +3623,18 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "APLANG-D-W3",
-      "stem": "In sentence 8 (reproduced below), which version of the underlined text is most clear?\n\nProtected lanes also help __drivers, who__ no longer have to guess where a cyclist will be.",
+      "stem": "In sentence 8 (reproduced below), which version of the underlined text is most clear?\n\nProtected lanes also help __drivers; who__ no longer have to guess where a cyclist will be.",
       "options": [
         "(as it is now)",
-        "drivers; who",
-        "drivers. Who",
-        "drivers who"
+        "drivers who",
+        "drivers, who",
+        "drivers. Who"
       ],
       "correct": [
-        0
+        2
       ],
       "lockedOrder": true,
-      "explanation": "The comma makes \"who no longer have to guess\" describe all drivers. Without it, the clause would limit the help to some drivers; the semicolon and period leave a fragment."
+      "explanation": "A comma makes \"who no longer have to guess\" describe all drivers. Without it, the clause would limit the help to some drivers; the semicolon and the period both leave a fragment."
     },
     {
       "id": "APLANG-D-070",
@@ -3894,7 +3894,7 @@
       "stimulusId": "APLANG-D-W5",
       "stem": "The story in sentences 1 through 4 mainly serves to",
       "options": [
-        "give a real case that challenges a common belief",
+        "give a concrete case that challenges a common belief",
         "describe how community orchestras choose players",
         "explain why the writer's mother nearly quit twice",
         "show that the cello is easier than other instruments"
@@ -3939,13 +3939,13 @@
       "stimulusId": "APLANG-D-W5",
       "stem": "The writer wants to add a word or phrase at the beginning of sentence 7, adjusting the capitalization as needed. Which choice best connects it to sentences 6 and 8?",
       "options": [
-        "In addition,",
         "Admittedly,",
+        "In addition,",
         "Therefore,",
         "For example,"
       ],
       "correct": [
-        1
+        0
       ],
       "explanation": "Sentence 7 grants a point to the other side before sentence 8 answers it with \"But.\" \"Admittedly\" signals that concession; \"Therefore\" would make it a conclusion."
     },
@@ -4028,18 +4028,18 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "APLANG-D-W5",
-      "stem": "In sentence 3 (reproduced below), the writer wants to describe the first months honestly while keeping an affectionate tone.\n\nHer first months were __painful to hear__, and she nearly quit twice.\n\nWhich version of the underlined text best accomplishes this goal?",
+      "stem": "In sentence 3 (reproduced below), the writer wants to describe the first months honestly while keeping an affectionate tone.\n\nHer first months were __a source of severe distress__, and she nearly quit twice.\n\nWhich version of the underlined text best accomplishes this goal?",
       "options": [
         "(as it is now)",
-        "a source of severe distress",
         "objectively terrible music",
-        "unbearable for the neighbors"
+        "unbearable for the neighbors",
+        "painful to hear"
       ],
       "correct": [
-        0
+        3
       ],
       "lockedOrder": true,
-      "explanation": "\"Painful to hear\" is honest but light, fitting a daughter's fond story. The other versions are harsh or clinical and work against the draft's warmth."
+      "explanation": "\"Painful to hear\" is honest but light, fitting a daughter's fond story. The current wording and the other versions are harsh or clinical and work against the draft's warmth."
     },
     {
       "id": "APLANG-D-088",
@@ -4186,18 +4186,18 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "APLANG-D-W6",
-      "stem": "In sentence 11 (reproduced below), which version of the underlined text is most clear?\n\nStarting small also __helps; a__ single bed by the front walk is enough to begin.",
+      "stem": "In sentence 11 (reproduced below), which version of the underlined text is most clear?\n\nStarting small also __helps, a__ single bed by the front walk is enough to begin.",
       "options": [
         "(as it is now)",
-        "helps; and a",
-        "helps, a",
-        "helps a"
+        "helps; a",
+        "helps a",
+        "helps; and a"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
-      "explanation": "A semicolon correctly joins two closely related independent clauses. A comma alone makes a comma splice, no punctuation makes a run-on, and \"; and\" doubles the connector."
+      "explanation": "A semicolon correctly joins two closely related independent clauses. A comma alone, as now, makes a comma splice, no punctuation makes a run-on, and \"; and\" doubles the connector."
     },
     {
       "id": "APLANG-D-095",
@@ -4213,11 +4213,11 @@
       "options": [
         "Garden centers sell many kinds of grass seed for different yards.",
         "Native plants come in a wide range of colors, shapes and heights for any yard.",
-        "Some native plants do not bloom until the very end of summer.",
-        "Once planted, a native bed needs less care than the grass it replaces."
+        "Once planted, a native bed needs less care than the grass it replaces.",
+        "Some native plants do not bloom until the very end of summer."
       ],
       "correct": [
-        3
+        2
       ],
       "explanation": "Busy readers want to know the work involved, and a native bed needing less care than grass answers that. The others give no reason to try."
     },
@@ -4255,13 +4255,13 @@
       "stimulusId": "APLANG-D-W7",
       "stem": "Sentence 2 mainly serves to",
       "options": [
-        "show that fewer people join the count today",
         "explain how the count began as a break from hunting",
+        "show that fewer people join the count today",
         "describe the methods that volunteers use to count birds",
         "argue that hunting birds should now be banned"
       ],
       "correct": [
-        1
+        0
       ],
       "explanation": "The sentence tells how the count began, as a replacement for a tradition of shooting as many birds as possible. Sentence 3 says participation has grown, not shrunk."
     },
@@ -4435,7 +4435,7 @@
       "stimulusId": "APLANG-D-W8",
       "stem": "Sentence 1 mainly serves to",
       "options": [
-        "introduce a real case that the proposal builds on",
+        "introduce an actual example that the proposal builds on",
         "describe how bus fares are collected",
         "explain why the writer rides the bus to school each day",
         "criticize another city's bus system"
@@ -4455,18 +4455,18 @@
       "difficulty": 3,
       "format": "single",
       "stimulusId": "APLANG-D-W8",
-      "stem": "The writer wants to add the following sentence to the draft.\n\nEvery stop where a rider fumbles for change adds seconds to the trip.\n\nWhere would the sentence best be placed?",
+      "stem": "The writer wants to add the following sentence to the draft.\n\nEach of those fare boxes must also be bought, repaired and emptied.\n\nWhere would the sentence best be placed?",
       "options": [
         "After sentence 3",
-        "After sentence 6",
+        "After sentence 7",
         "After sentence 10",
         "After sentence 13"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
-      "explanation": "Sentence 3 says buses ran faster because riders no longer paid at the front; the new sentence explains why. Elsewhere it would interrupt a different point."
+      "explanation": "Sentence 7 lists the costs of collecting fares, starting with fare boxes; the new sentence adds detail about those boxes. Elsewhere it would interrupt a different point."
     },
     {
       "id": "APLANG-D-107",

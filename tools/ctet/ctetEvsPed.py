@@ -31,7 +31,7 @@ ITEMS = [
       "EVS values diversity. Discussing different food habits with respect helps children understand and accept differences.",
     ),
     S(1, 2, "Learning principles", "Children come to EVS class with their own ideas about the world, some of them mistaken. The teacher should",
-      ["find out their ideas and build on them through activity",
+      ["find out their ideas and build on them with activities",
        "ignore their ideas and start from the textbook",
        "correct them immediately by telling the right answer from the book",
        "tell them their home ideas have no value"],

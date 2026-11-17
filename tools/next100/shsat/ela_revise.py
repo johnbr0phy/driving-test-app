@@ -128,7 +128,7 @@ ITEMS = [
     # ---- Practice Test 1: RA2 ----
     dict(test=1, stim="RA2", skill="Introducing a paragraph", diff=2,
          stem="Which sentence should be added before sentence 4 to introduce the ideas in the second paragraph?",
-         key="Green roofs help keep both buildings and streets cooler and drier.",
+         key="Green roofs keep both buildings and streets cooler and drier.",
          wrong=["Many green roofs also include benches and paths for the residents.", "Tar roofs cost less to install than almost any other kind of roof.", "Some cities ask new buildings to add solar panels to their roofs."],
          expl="The second paragraph explains two benefits: the plants cool the roof, and the soil holds back rainwater. The added sentence names both. The others bring up benches, cost or solar panels, which the paragraph never discusses."),
     dict(test=1, stim="RA2", skill="Combining sentences", diff=3,

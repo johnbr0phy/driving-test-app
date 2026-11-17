@@ -5085,6 +5085,7 @@
     --brand-border: 137 30% 80%;
     --brand-border-light: 137 25% 89%;
     --brand-gradient-to: 160 40% 95%;
+  }
   /* ISC2 Certified in Cybersecurity (CC) theme: deep navy blue (v2 exam; matches lib/v2/exams/isc2cc.ts theme) */
   [data-theme="isc2cc"] {
     --brand: 203 85% 16%;
@@ -5855,6 +5856,7 @@
     --brand-border: 239 12% 76%;
     --brand-border-light: 239 12% 88%;
     --brand-gradient-to: 241 20% 95%;
+  }
   /* Alberta ABST security worker exam theme: very dark muted red-brown */
   [data-theme="caabguard"] {
     --brand: 6 15% 18%;
@@ -5893,6 +5895,7 @@
     --brand-border: 21 30% 78%;
     --brand-border-light: 21 25% 88%;
     --brand-gradient-to: 30 40% 95%;
+  }
   /* Ontario air brake (Z) theme: muted brass (48 at 15% so it sits clear of the golds) */
   [data-theme="caairbrake"] {
     --brand: 48 15% 38%;
@@ -10313,6 +10316,7 @@
     --brand-muted: 137 30% 45%;
     --brand-dark: 137 85% 65%;
     --brand-darker: 137 80% 78%;
+}
   .dark [data-theme="isc2cc"] {
     --brand: 203 85% 40%;
     --brand-hover: 203 85% 32%;
@@ -10981,6 +10985,7 @@
     --brand-muted: 239 10% 45%;
     --brand-dark: 239 15% 65%;
     --brand-darker: 239 15% 78%;
+}
   .dark [data-theme="caabguard"] {
     --brand: 6 15% 48.6%;
     --brand-hover: 6 15% 40.6%;
@@ -11011,6 +11016,7 @@
     --brand-muted: 21 25% 45%;
     --brand-dark: 21 85% 65%;
     --brand-darker: 21 75% 78%;
+}
   .dark [data-theme="caairbrake"] {
     --brand: 48 15% 42.2%;
     --brand-hover: 48 15% 34.2%;

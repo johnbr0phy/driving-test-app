@@ -600,6 +600,7 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "prince2": {
     "color": "hsl(262, 35%, 20%)",
     "tint": "hsl(262, 35%, 96%)"
+  },
   "isc2cc": {
     "color": "hsl(203, 85%, 16%)",
     "tint": "hsl(203, 85%, 96%)"

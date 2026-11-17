@@ -26,7 +26,8 @@ review never sees.
    stem, so it cannot see this.
 
    Reported: marks per 50-question test that the echo rule gains over
-   guessing.
+   guessing, and the reverse (a writer who overcorrects so the echoing option
+   is never the key makes "rule it out" a cue too).
 
 Limits (a bank fails at or above either; older banks over a limit are listed
 in tools/option_reuse_baseline.json and may only get better):
@@ -130,6 +131,9 @@ def analyse(items, stim=None):
     chance = 1 / 4
     # score of "echo where it fires, guess elsewhere" minus pure guessing, per 50
     gain = ((hit + chance * (n - fire)) / n - chance) * 50 if n else 0.0
+    # The reverse cue, from overcorrecting: the echoing option is never the key,
+    # so ruling it out and guessing among the other three beats guessing.
+    anti = (((fire - hit) / 3 - fire * chance) / n) * 50 if n else 0.0
     return {
         "n": n,
         "shared": n_shared,
@@ -138,6 +142,7 @@ def analyse(items, stim=None):
         "echo_fire": fire,
         "echo_hit": hit,
         "echo_gain": gain,
+        "anti_echo_gain": anti,
         "echoed": echoed,
     }
 
@@ -151,7 +156,7 @@ def exam_groups(paths):
 
 
 def over(res):
-    return res["shared_pct"] >= FAMILY_LIMIT or res["echo_gain"] >= ECHO_LIMIT
+    return res["shared_pct"] >= FAMILY_LIMIT or max(res["echo_gain"], res["anti_echo_gain"]) >= ECHO_LIMIT
 
 
 def main(argv):
@@ -187,7 +192,7 @@ def main(argv):
             failed.append(key)
         if worse or lst or (not base_path and not write_path):
             print(f"{key}: {res['n']} items, shared option sets {res['shared']} ({res['shared_pct']:.0%}, limit {FAMILY_LIMIT:.0%}), "
-                  f"echo rule right {res['echo_hit']}/{res['echo_fire']}, gain {res['echo_gain']:.1f} marks per 50 (limit {ECHO_LIMIT})"
+                  f"echo rule right {res['echo_hit']}/{res['echo_fire']}, gain {res['echo_gain']:.1f} marks per 50, ruling the echo out gains {res['anti_echo_gain']:.1f} (limit {ECHO_LIMIT})"
                   + ("  FAIL" if worse else ""))
             if lst:
                 for fam, ids in list(res["families"].items())[:15]:

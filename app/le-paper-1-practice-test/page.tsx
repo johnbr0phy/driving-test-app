@@ -186,7 +186,7 @@ export default function LePaper1LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hklesfi1", 1)}
+                src={getTigerAsset("hklesfi1", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

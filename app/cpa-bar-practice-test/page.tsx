@@ -182,7 +182,7 @@ export default function CpaBarLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cpabar", 1)}
+                src={getTigerAsset("cpabar", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

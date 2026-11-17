@@ -248,7 +248,7 @@ export default function CDLLandingPageEs() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("cdl", 1)} alt="Mascota de Tigertest" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("cdl", 3)} alt="Mascota de Tigertest" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>

@@ -189,7 +189,7 @@ export default function PhnatLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phnat", 1)}
+                src={getTigerAsset("phnat", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

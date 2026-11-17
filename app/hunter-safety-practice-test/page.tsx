@@ -201,7 +201,7 @@ export default function HunterLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hunter", 1)}
+                src={getTigerAsset("hunter", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

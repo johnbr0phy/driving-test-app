@@ -192,7 +192,7 @@ export default function CcrnLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ccrn", 1)}
+                src={getTigerAsset("ccrn", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

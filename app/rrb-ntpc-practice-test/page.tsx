@@ -187,7 +187,7 @@ export default function RrbNtpcLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("rrbntpc", 1)}
+                src={getTigerAsset("rrbntpc", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

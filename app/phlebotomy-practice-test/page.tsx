@@ -197,7 +197,7 @@ export default function PhlebotomyLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phleb", 1)}
+                src={getTigerAsset("phleb", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

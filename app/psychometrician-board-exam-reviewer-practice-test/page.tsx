@@ -190,7 +190,7 @@ export default function PsychometricianReviewerLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phpsychom", 1)}
+                src={getTigerAsset("phpsychom", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

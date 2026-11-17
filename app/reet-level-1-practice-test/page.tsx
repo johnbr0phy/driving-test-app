@@ -189,7 +189,7 @@ export default function ReetLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("reet", 1)}
+                src={getTigerAsset("reet", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -187,7 +187,7 @@ export default function GmatLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("gmat", 1)}
+                src={getTigerAsset("gmat", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

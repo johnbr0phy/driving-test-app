@@ -190,7 +190,7 @@ export default function SpsvEntryTestLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("iespsv", 1)}
+                src={getTigerAsset("iespsv", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -200,7 +200,7 @@ export default function LgvTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("uklgv", 1)}
+                src={getTigerAsset("uklgv", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

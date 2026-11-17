@@ -205,7 +205,7 @@ export default function FirstAidAtWorkLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukfaw", 1)}
+                src={getTigerAsset("ukfaw", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

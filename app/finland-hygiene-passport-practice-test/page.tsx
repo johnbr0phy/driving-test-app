@@ -191,7 +191,7 @@ export default function FinlandHygienePassportLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("fihygiene", 1)}
+                src={getTigerAsset("fihygiene", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

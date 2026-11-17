@@ -193,7 +193,7 @@ export default function Isc2CcLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("isc2cc", 1)}
+                src={getTigerAsset("isc2cc", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -200,7 +200,7 @@ export default function NzClass2LicenceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nzheavy", 1)}
+                src={getTigerAsset("nzheavy", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -204,7 +204,7 @@ export default function CcaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cca", 1)}
+                src={getTigerAsset("cca", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -199,7 +199,7 @@ export default function NasmCptLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nasm", 1)}
+                src={getTigerAsset("nasm", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

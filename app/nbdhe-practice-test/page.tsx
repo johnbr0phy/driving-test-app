@@ -190,7 +190,7 @@ export default function NbdheLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nbdhe", 1)}
+                src={getTigerAsset("nbdhe", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

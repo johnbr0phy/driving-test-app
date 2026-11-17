@@ -188,7 +188,7 @@ export default function HTLLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("htl", 1)}
+                src={getTigerAsset("htl", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

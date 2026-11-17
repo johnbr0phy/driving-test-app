@@ -193,7 +193,7 @@ export default function PraxisCoreLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("praxis", 1)}
+                src={getTigerAsset("praxis", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

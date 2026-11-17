@@ -198,7 +198,7 @@ export default function BarberLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("barber", 1)}
+                src={getTigerAsset("barber", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

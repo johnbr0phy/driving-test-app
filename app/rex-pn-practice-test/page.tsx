@@ -198,7 +198,7 @@ export default function RexPnLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("rexpn", 1)}
+                src={getTigerAsset("rexpn", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

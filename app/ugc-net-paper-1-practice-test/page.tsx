@@ -194,7 +194,7 @@ export default function UgcNetLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ugcnet", 1)}
+                src={getTigerAsset("ugcnet", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

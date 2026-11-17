@@ -205,7 +205,7 @@ export default function Level2FoodHygieneLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukfood", 1)}
+                src={getTigerAsset("ukfood", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

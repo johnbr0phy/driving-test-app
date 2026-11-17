@@ -192,7 +192,7 @@ export default function ApBiologyLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("apbio", 1)}
+                src={getTigerAsset("apbio", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -205,7 +205,7 @@ export default function HesiLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hesi", 1)}
+                src={getTigerAsset("hesi", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

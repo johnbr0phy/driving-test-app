@@ -191,7 +191,7 @@ export default function ToeflReadingLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("toeflread", 1)}
+                src={getTigerAsset("toeflread", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

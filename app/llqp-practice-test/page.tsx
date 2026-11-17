@@ -183,7 +183,7 @@ export default function LlqpLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("llqp", 1)}
+                src={getTigerAsset("llqp", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

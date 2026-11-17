@@ -203,7 +203,7 @@ export default function RedSealElectricianLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("caelec", 1)}
+                src={getTigerAsset("caelec", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

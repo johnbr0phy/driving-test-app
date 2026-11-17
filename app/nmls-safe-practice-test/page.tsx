@@ -184,7 +184,7 @@ export default function NmlsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nmls", 1)}
+                src={getTigerAsset("nmls", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -192,7 +192,7 @@ export default function NcptLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ncpt", 1)}
+                src={getTigerAsset("ncpt", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -200,7 +200,7 @@ export default function LifeguardLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("lifeguard", 1)}
+                src={getTigerAsset("lifeguard", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

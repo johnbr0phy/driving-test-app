@@ -187,7 +187,7 @@ export default function NigerianArmyRecruitmentLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ngarmy", 1)}
+                src={getTigerAsset("ngarmy", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

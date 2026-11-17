@@ -187,7 +187,7 @@ export default function Series63LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("series63", 1)}
+                src={getTigerAsset("series63", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

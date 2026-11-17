@@ -192,7 +192,7 @@ export default function JambMathematicsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("jambmath", 1)}
+                src={getTigerAsset("jambmath", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

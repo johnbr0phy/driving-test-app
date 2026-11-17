@@ -191,7 +191,7 @@ export default function NptePtaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nptepta", 1)}
+                src={getTigerAsset("nptepta", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

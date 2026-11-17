@@ -191,7 +191,7 @@ export default function AseLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ase", 1)}
+                src={getTigerAsset("ase", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

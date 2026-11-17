@@ -190,7 +190,7 @@ export default function GcppcaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("gcppca", 1)}
+                src={getTigerAsset("gcppca", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

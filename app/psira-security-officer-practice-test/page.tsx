@@ -187,7 +187,7 @@ export default function PsiraSecurityLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("zapsira", 1)}
+                src={getTigerAsset("zapsira", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

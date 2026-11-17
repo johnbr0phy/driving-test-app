@@ -208,7 +208,7 @@ export default function CanadianCitizenshipLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cacit", 1)}
+                src={getTigerAsset("cacit", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

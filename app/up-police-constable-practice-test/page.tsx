@@ -188,7 +188,7 @@ export default function UpPoliceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("uppolice", 1)}
+                src={getTigerAsset("uppolice", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

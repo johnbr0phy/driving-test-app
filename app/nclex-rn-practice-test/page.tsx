@@ -194,7 +194,7 @@ export default function NclexLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nclex", 1)}
+                src={getTigerAsset("nclex", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -193,7 +193,7 @@ export default function CmaaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cmaa", 1)}
+                src={getTigerAsset("cmaa", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

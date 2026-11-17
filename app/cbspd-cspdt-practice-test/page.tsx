@@ -194,7 +194,7 @@ export default function CbspdCspdtLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cbspd", 1)}
+                src={getTigerAsset("cbspd", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

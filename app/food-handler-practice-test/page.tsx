@@ -199,7 +199,7 @@ export default function FoodhandlerLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("foodhandler", 1)}
+                src={getTigerAsset("foodhandler", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

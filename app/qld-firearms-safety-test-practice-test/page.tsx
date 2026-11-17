@@ -187,7 +187,7 @@ export default function QldFirearmsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aufirearmsqld", 1)}
+                src={getTigerAsset("aufirearmsqld", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

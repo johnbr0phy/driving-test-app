@@ -187,7 +187,7 @@ export default function CdcfibLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cdcfib", 1)}
+                src={getTigerAsset("cdcfib", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -201,7 +201,7 @@ export default function WaLearnersLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("auwa", 1)}
+                src={getTigerAsset("auwa", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

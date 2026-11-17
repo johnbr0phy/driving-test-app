@@ -191,7 +191,7 @@ export default function CcsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ccs", 1)}
+                src={getTigerAsset("ccs", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

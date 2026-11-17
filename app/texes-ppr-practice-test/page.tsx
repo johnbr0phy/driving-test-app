@@ -197,7 +197,7 @@ export default function TexesPprLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("texesppr", 1)}
+                src={getTigerAsset("texesppr", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

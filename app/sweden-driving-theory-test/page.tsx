@@ -189,7 +189,7 @@ export default function SwedenDrivingTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("setrafik", 1)}
+                src={getTigerAsset("setrafik", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

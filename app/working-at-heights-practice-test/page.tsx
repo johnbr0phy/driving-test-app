@@ -194,7 +194,7 @@ export default function WorkingAtHeightsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("auwah", 1)}
+                src={getTigerAsset("auwah", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

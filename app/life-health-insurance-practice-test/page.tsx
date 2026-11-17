@@ -300,7 +300,7 @@ export default function InsuranceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("insurance", 1)}
+                src={getTigerAsset("insurance", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

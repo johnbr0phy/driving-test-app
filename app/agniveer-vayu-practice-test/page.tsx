@@ -187,7 +187,7 @@ export default function AgniveerVayuLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("agniveervayu", 1)}
+                src={getTigerAsset("agniveervayu", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -202,7 +202,7 @@ export default function AuForkliftLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("auforklift", 1)}
+                src={getTigerAsset("auforklift", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

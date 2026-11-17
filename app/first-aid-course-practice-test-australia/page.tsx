@@ -206,7 +206,7 @@ export default function AuFirstAidLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aufirstaid", 1)}
+                src={getTigerAsset("aufirstaid", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

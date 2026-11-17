@@ -185,7 +185,7 @@ export default function CmfasM5LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("sgm5", 1)}
+                src={getTigerAsset("sgm5", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

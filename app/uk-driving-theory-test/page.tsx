@@ -201,7 +201,7 @@ export default function UkDrivingTheoryTestLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukcar", 1)}
+                src={getTigerAsset("ukcar", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

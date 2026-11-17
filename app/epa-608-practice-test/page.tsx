@@ -191,7 +191,7 @@ export default function Epa608LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("epa608", 1)}
+                src={getTigerAsset("epa608", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -192,7 +192,7 @@ export default function PrivatePilotLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("faapvt", 1)}
+                src={getTigerAsset("faapvt", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

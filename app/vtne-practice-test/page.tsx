@@ -208,7 +208,7 @@ export default function VtneLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("vtne", 1)}
+                src={getTigerAsset("vtne", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

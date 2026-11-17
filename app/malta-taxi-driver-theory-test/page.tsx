@@ -191,7 +191,7 @@ export default function MaltaTaxiDriverLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("mttaxi", 1)}
+                src={getTigerAsset("mttaxi", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

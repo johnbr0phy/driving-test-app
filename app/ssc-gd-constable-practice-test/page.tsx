@@ -188,7 +188,7 @@ export default function SscGdLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("sscgd", 1)}
+                src={getTigerAsset("sscgd", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -201,7 +201,7 @@ export default function SecurityGuardLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("security", 1)}
+                src={getTigerAsset("security", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

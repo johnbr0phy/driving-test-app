@@ -203,7 +203,7 @@ export default function RcgPracticeTestLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aurcg", 1)}
+                src={getTigerAsset("aurcg", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

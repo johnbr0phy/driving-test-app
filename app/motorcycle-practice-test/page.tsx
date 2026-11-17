@@ -191,7 +191,7 @@ export default function MotorcycleLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("moto", 1)}
+                src={getTigerAsset("moto", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

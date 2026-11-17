@@ -183,7 +183,7 @@ export default function Dsc1LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukdsc1", 1)}
+                src={getTigerAsset("ukdsc1", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -193,7 +193,7 @@ export default function ApWorldHistoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("apworld", 1)}
+                src={getTigerAsset("apworld", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -186,7 +186,7 @@ export default function FlAdjusterLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("fladjuster", 1)}
+                src={getTigerAsset("fladjuster", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

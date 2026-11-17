@@ -188,7 +188,7 @@ export default function Prince2LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("prince2", 1)}
+                src={getTigerAsset("prince2", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

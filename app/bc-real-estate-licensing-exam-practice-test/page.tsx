@@ -188,7 +188,7 @@ export default function BcRealEstateLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("bcrealestate", 1)}
+                src={getTigerAsset("bcrealestate", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

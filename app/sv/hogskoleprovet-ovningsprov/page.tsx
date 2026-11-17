@@ -166,7 +166,7 @@ export default function HogskoleprovetLandingPage() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("sehp", 1)} alt="" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("sehp", 3)} alt="" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>

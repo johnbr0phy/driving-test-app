@@ -190,7 +190,7 @@ export default function PhrLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phr", 1)}
+                src={getTigerAsset("phr", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -190,7 +190,7 @@ export default function IeltsReadingLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ieltsread", 1)}
+                src={getTigerAsset("ieltsread", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -194,7 +194,7 @@ export default function IseeLandingPage() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("isee", 1)} alt="Tigertest mascot" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("isee", 3)} alt="Tigertest mascot" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>

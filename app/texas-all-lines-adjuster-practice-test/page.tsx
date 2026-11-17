@@ -182,7 +182,7 @@ export default function TxAdjusterLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("txadjuster", 1)}
+                src={getTigerAsset("txadjuster", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

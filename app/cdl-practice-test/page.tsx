@@ -227,7 +227,7 @@ export default function CDLLandingPage() {
           </div>
           <div className="flex-shrink-0">
             <Image
-              src={getTigerAsset("cdl", 1)}
+              src={getTigerAsset("cdl", 3)}
               alt="Tigertest mascot"
               width={180}
               height={180}

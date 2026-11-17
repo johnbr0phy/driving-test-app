@@ -203,7 +203,7 @@ export default function ParamedicLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("paramedic", 1)}
+                src={getTigerAsset("paramedic", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

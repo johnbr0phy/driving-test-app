@@ -185,7 +185,7 @@ export default function EnrolledAgentPart1LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ea1", 1)}
+                src={getTigerAsset("ea1", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

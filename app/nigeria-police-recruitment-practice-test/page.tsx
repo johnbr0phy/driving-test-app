@@ -191,7 +191,7 @@ export default function NigeriaPoliceRecruitmentLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ngpolice", 1)}
+                src={getTigerAsset("ngpolice", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

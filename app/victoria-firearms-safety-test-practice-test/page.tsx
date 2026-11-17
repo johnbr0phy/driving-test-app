@@ -183,7 +183,7 @@ export default function VicFirearmsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aufirearmsvic", 1)}
+                src={getTigerAsset("aufirearmsvic", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

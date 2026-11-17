@@ -189,7 +189,7 @@ export default function BcCoreLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cacore", 1)}
+                src={getTigerAsset("cacore", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

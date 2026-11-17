@@ -203,7 +203,7 @@ export default function TeasLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("teas", 1)}
+                src={getTigerAsset("teas", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

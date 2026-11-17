@@ -188,7 +188,7 @@ export default function GreeceMotorcycleTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("grmoto", 1)}
+                src={getTigerAsset("grmoto", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

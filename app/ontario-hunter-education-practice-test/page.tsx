@@ -193,7 +193,7 @@ export default function OntarioHunterLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cahunteron", 1)}
+                src={getTigerAsset("cahunteron", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

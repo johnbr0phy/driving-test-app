@@ -191,7 +191,7 @@ export default function LsatLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("lsat", 1)}
+                src={getTigerAsset("lsat", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

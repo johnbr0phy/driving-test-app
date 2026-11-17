@@ -202,7 +202,7 @@ export default function NovaScotiaLearnersLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cans", 1)}
+                src={getTigerAsset("cans", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

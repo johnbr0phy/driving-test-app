@@ -188,7 +188,7 @@ export default function AwsSaaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("awssaa", 1)}
+                src={getTigerAsset("awssaa", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

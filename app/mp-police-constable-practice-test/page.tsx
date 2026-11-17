@@ -187,7 +187,7 @@ export default function MpPoliceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("mppolice", 1)}
+                src={getTigerAsset("mppolice", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

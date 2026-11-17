@@ -186,7 +186,7 @@ export default function PafAirmanTestLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("pkpaf", 1)}
+                src={getTigerAsset("pkpaf", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

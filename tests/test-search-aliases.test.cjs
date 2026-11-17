@@ -184,6 +184,8 @@ const CASES = [
   ["certified ethical hacker", "IN", "ceh"],
   ["ec-council 312-50", "US", "ceh"],
   ["ceh v13", "US", "ceh"],
+  ["isc2 cc", "US", "isc2cc"],
+  ["certified in cybersecurity", "US", "isc2cc"],
   ["sc-200", "US", "sc200"],
   ["security operations analyst", "US", "sc200"],
   ["sc-900", "US", "sc900"],

@@ -70,6 +70,7 @@ import { PENTESTPLUS } from "./exams/pentestplus";
 import { CEH } from "./exams/ceh";
 import { SC200 } from "./exams/sc200";
 import { SC900 } from "./exams/sc900";
+import { ISC2CC } from "./exams/isc2cc";
 import { CISSP } from "./exams/cissp";
 import { ITIL } from "./exams/itil";
 import { PRINCE2 } from "./exams/prince2";
@@ -132,7 +133,7 @@ import { APHUG } from "./exams/aphug";
 import { WONDERLIC } from "./exams/wonderlic";
 import { lockedStepCount } from "../examLocks";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, HISET, TABE, PRAXIS, CBEST, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, SHSAT, HSPT, COGAT, SSAT, ISEE, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, LSAT, MCAT, DAT, IELTSREAD, TOEFLREAD, WONDERLIC, SEHP, TEAS, HESI, ASVAB, AFOQT, ACCUPLACER, NCLEX, NCLEXPN, REXPN, NAPLEX, UKNMC, NZENSF, NZIQN, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, PENTESTPLUS, FORTINSE, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, SC900, SC200, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, PRINCE2, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, IIMCAT, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA, CEH];
+export const EXAMS_V2: ExamV2Config[] = [GED, HISET, TABE, PRAXIS, CBEST, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, SHSAT, HSPT, COGAT, SSAT, ISEE, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, LSAT, MCAT, DAT, IELTSREAD, TOEFLREAD, WONDERLIC, SEHP, TEAS, HESI, ASVAB, AFOQT, ACCUPLACER, NCLEX, NCLEXPN, REXPN, NAPLEX, UKNMC, NZENSF, NZIQN, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, PENTESTPLUS, FORTINSE, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, SC900, SC200, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, PRINCE2, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, IIMCAT, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA, CEH, ISC2CC];
 
 /**
  * The light Premium tier on v2 exams (Nov 2026), the v1 rule carried over:
@@ -148,6 +149,7 @@ export const PREMIUM_V2_IDS: string[] = [
   "secplus", "cysa", "pentestplus", "fortinse", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "sc900", "sc200", "gcdl", "gcppca", "ccna",
   "pmp", "capm", "psm", "itil", "prince2", "wonderlic",
   "secplus", "cysa", "pentestplus", "ceh", "fortinse", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "sc900", "sc200", "gcdl", "gcppca", "ccna",
+  "secplus", "cysa", "pentestplus", "fortinse", "isc2cc", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "sc900", "sc200", "gcdl", "gcppca", "ccna",
   "pmp", "capm", "psm", "itil", "wonderlic",
   "upscse", "ssccgl", "sscchsl", "ssccpo", "sscgd", "sscmts", "rrbntpc", "rrbgroupd", "rrbalp", "rpfconst",
   "uppolice", "delhipolice", "biharpolice", "rajpolice", "mppolice", "jkssbja", "tgsi", "iimcat",

@@ -77,6 +77,7 @@ import '@/lib/v2/banks/fortinse';
 import '@/lib/v2/banks/pentestplus';
 import '@/lib/v2/banks/ceh';
 import '@/lib/v2/banks/sc200';
+import '@/lib/v2/banks/isc2cc';
 import '@/lib/v2/banks/sc900';
 import '@/lib/v2/banks/cissp';
 import '@/lib/v2/banks/itil';

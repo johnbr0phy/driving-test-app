@@ -37,7 +37,9 @@ Checked 2026-11-05.
     management 8 and research 2. (A to E = 65 items, F to I = 35.)
 - PRC, Program of the Medical Technologists Licensure Examination on August 15 and 16, 2026
   (approved June 11, 2026), read directly (PDF):
-  https://www.prc.gov.ph/sites/default/files/RA2026/RA-111621_MEDICAL%20TECHNOLOGIST_Rosales,%20Pangasinan_8-2026.pdf
+  https://www.prc.gov.ph/sites/default/files/RA2026/RA-111621_MEDICAL%20TECHNOLOGIST_Rosales%2C%20Pangasinan_8-2026.pdf
+  (comma written as %2C on 2026-11-17: the source watcher cut the link at the comma and reported it broken; the full
+  PDF loads and still gives the schedule and weights below.)
   Saturday: Clinical Chemistry 8:00 to 10:00 a.m. (20%), Microbiology and Parasitology 11:00 a.m.
   to 1:00 p.m. (20%), Clinical Microscopy 2:00 to 4:00 p.m. (10%). Sunday: Hematology 8:00 to
   10:00 a.m. (20%), Blood Banking and Serology 11:00 a.m. to 1:00 p.m. (20%), Histopathologic

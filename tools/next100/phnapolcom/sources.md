@@ -32,12 +32,14 @@ news reports.
     graph interpretation / analysis). IV. Logical Reasoning (Verbal; Non-verbal).
   - p.10: calculators, phones and review materials are prohibited in the exam room.
   - The announcement gives no number of items, no subject weights and no passing rate.
+- NAPOLCOM Region 2, Examination page (read 2026-11-05, again 2026-11-17, unchanged for us): PNP
+  Entrance, Promotional and PESE-WE examinations on April 19, 2026; previous on October 19, 2025.
+  https://r2.napolcom.gov.ph/examination.php
 - PTV News (state broadcaster), 26 April 2019, "48.6K to take PNP entrance, promotion exams
   Sunday": "The PNP entrance examination consists of questions on general information, verbal
   reasoning, quantitative reasoning, and logical reasoning." https://ptvnews.ph/?p=116326
-- NAPOLCOM Region 2, Examination page (read 2026-11-05): PNP Entrance, Promotional and PESE-WE
-  examinations on April 19, 2026; previous on October 19, 2025.
-  https://r2.napolcom.gov.ph/examination.php
+  (re-read 2026-11-17: same text; a news page, so it now sits below the official pages; the four
+  areas are in NAPOLCOM's own announcement, p.8, above.)
 - Daily Tribune, 19 April 2026, "NAPOLCOM holds nationwide PNP exams": held Sunday 19 April 2026,
   8 a.m. to 11 a.m., results expected within 45 days.
   https://tribune.net.ph/2026/04/19/napolcom-holds-nationwide-pnp-exams

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "23b1ebd44d43c2063d7d08f50a628c9bbda8d360",
+    "url": "https://www.sreedharscce.com/blogs/ibps-rrb-xv-office-assistant-notification/",
+    "verdict": "replaced",
+    "reason": "A coaching blog; replaced at the top of sources.md by the revised official IBPS CRP RRBs-XV notification read on ibps.in, which keeps the same Prelims structure but moves the Main exam to December 2026 or January 2027, so the landing FAQ now says so."
+  },
+  {
+    "id": "2803481c8bab4ddd0af5a0e480e696b54f1dd777",
+    "url": "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal",
+    "verdict": "noise",
+    "reason": "The page still links the Basic, Final and Riding theory handbooks and the free practice tests and states no format, count or pass mark we rely on."
+  },
+  {
+    "id": "42ac94ebd69b7f8bfe404628f7b22888f93b06cc",
+    "url": "https://aiiasia.org/programmes/pre-contract-examination-for-insurance-agents-pceia/",
+    "verdict": "noise",
+    "reason": "Routes AC and AB of 100 questions in 2 hours, CO and BO of 50 in 1.5 hours, 50% pass, virtual computer-based in English, Malay or Mandarin, all as our facts say."
+  },
+  {
+    "id": "43e74eb4fc6971d00faf960b5a17d2ab70d493c7",
+    "url": "https://www.cea.gov.sg/real-estate-professionals/for-aspiring-real-estate-salespersons/real-estate-salesperson-examination/prepare-for-the-real-estate-salesperson-examination/",
+    "verdict": "noise",
+    "reason": "Still two papers of 60 MCQs plus 20 case-study MCQs, 100 marks, 2.5 hours, 60 to pass, with the 2027 syllabus applying from 1 January 2027."
+  },
+  {
+    "id": "4e9830194a339b37b9041ded0dbc8be4f39d0d01",
+    "url": "https://news.careers360.com/up-tet-special-2026-dates-out-otr-starts-today-exam-dates-apply-upessc-gov-in-grievance-facility-5-days-supreme-court-order",
+    "verdict": "needs_person",
+    "reason": "A news page about the special TET for serving teachers that changes nothing we state, but the official upessc.up.gov.in refused connections, so no official page could be put in its place."
+  },
+  {
+    "id": "790fcb3eacd80c2b55cbf6c6705382fb87ef9b6b",
+    "url": "https://www.edupedu.ro/ultima-ora-concursul-de-rezidentiat-2026-are-loc-pe-15-noiembrie-pentru-medicina-medicina-dentara-si-farmacie-inscrierile-se-fac-in-perioada-7-20-octombrie/",
+    "verdict": "needs_person",
+    "reason": "A news page that still agrees with us (15 November 2026, 200 questions, 4 hours, six centres), but the official rezidentiat.ms.ro timed out, so it could not be replaced."
+  },
+  {
+    "id": "841b89a36e3a8bf459d8b421951d3e466cff5f2e",
+    "url": "https://ptvnews.ph/?p=116326",
+    "verdict": "replaced",
+    "reason": "A 2019 news article with the same text; moved below NAPOLCOM's Region 2 examination page in sources.md, since the four exam areas are in NAPOLCOM's own announcement."
+  },
+  {
+    "id": "9b6701f76d0c6cac0d538ce31210f3744ffbb7c6",
+    "url": "https://cetcell.mahacet.org/",
+    "verdict": "noise",
+    "reason": "The CET Cell home page added notices (a 16 November 2026 press release on 2027 commencement dates, a call for paper setters), and we state no 2027 dates or changed pattern."
+  },
+  {
+    "id": "bd793b2de0d6eccc34be48f5f4d57d58e1d24f99",
+    "url": "https://cognito.org/blog/gl-assessment-11-plus-guide",
+    "verdict": "replaced",
+    "reason": "A commercial blog that still gives the same typical paper lengths; moved below the official rows so Redbridge Council's GL Assessment 11+ page is watched in its place."
+  },
+  {
+    "id": "cfa86435e369518d15dd5829a3e8f73954b4497f",
+    "url": "https://tribune.net.ph/2025/10/27/csc-releases-2026-civil-service-exam-schedule-and-application-timelines",
+    "verdict": "updated",
+    "reason": "A news page whose 2026 dates still hold; the CSC home page, now readable, announces the next CSE-PPT on 14 March 2027, which was added to the facts table and put first in sources.md."
+  },
+  {
+    "id": "f5806cfcf6bd476588b81b0d2f49689152d28d52",
+    "url": "https://www.nasm.org/docs/pdf/cpt7-nasm-exam-blueprint.pdf",
+    "verdict": "needs_person",
+    "reason": "The blueprint PDF now redirects to the NASM home page and no other NASM page found gives the domain weights, so the bank's weights have no readable official source."
+  },
+  {
+    "id": "f72b2cc02e033d5b6179c7fd1023775da1d1df1a",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+    "verdict": "noise",
+    "reason": "Still last updated 20 July 2026 with 45 minutes, proctoring, a first retake after 24 hours and price by country, as our facts say."
+  },
+  {
+    "id": "35b670780f1b99b532f5ef8cb590eff9189c24c2",
+    "url": "https://truejobs.co.in/blog/ibps-rrb-2026-exam-date-office-assistant-and-officer-scale-exam-calendar-released",
+    "verdict": "replaced",
+    "reason": "A job blog now gone (HTTP 410); its link was dropped from sources.md and the official IBPS notification and CRP RRBs-XV page are watched instead."
+  },
+  {
+    "id": "59c0553de5a3bd34c449b605db0e798f5758e136",
+    "url": "https://www.serviceiq.org.nz/licence-controller-qualification",
+    "verdict": "replaced",
+    "reason": "ServiceIQ blocks automated reads; Tauranga City Council's manager's certificate page, read today, confirms the LCQ is the prescribed qualification for a manager's certificate and is watched instead."
+  },
+  {
+    "id": "5c3dc64bad2201d2fe7e8f1aa7ad2fc480822907",
+    "url": "https://www.rrbcdg.gov.in/uploads/2026/01-ALP/012026ALP-CEN.pdf",
+    "verdict": "needs_person",
+    "reason": "The RRB Chandigarh and Ajmer hosts both time out from here, so the official CEN 01/2026 could not be read or replaced."
+  },
+  {
+    "id": "719f1e877c26f70239a4913049c21176aeafa037",
+    "url": "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test",
+    "verdict": "noise",
+    "reason": "Loads with a browser user agent and still says 20 multiple-choice questions, all 5 values questions right, at least 15 of 20 (75%) and 45 minutes."
+  },
+  {
+    "id": "79ccb54180793962f5d672bc9ed0815ad8a54e69",
+    "url": "https://joinpaf.gov.pk",
+    "verdict": "needs_person",
+    "reason": "joinpaf.gov.pk and paf.gov.pk are unreachable from here and no other official PAF page was found."
+  },
+  {
+    "id": "9d0404e6e397ffcbf28fd3bf7f9b46e2d5f1b994",
+    "url": "https://lovguiden.dk/det-offentlige/styrelsen-for-international-rekruttering-og-integration/2026-06-01-indfoedsretsproeven-2026-6535-tilmeldt-til-statsborgerskabstest",
+    "verdict": "needs_person",
+    "reason": "Lovguiden rate-limits us (HTTP 429) and no SIRI page on the test format could be found to put in its place."
+  },
+  {
+    "id": "cf3fafe0df7e42fe432efe456023f9e52c867599",
+    "url": "https://www.prc.gov.ph/sites/default/files/RA2026/RA-111621_MEDICAL%20TECHNOLOGIST_Rosales",
+    "verdict": "replaced",
+    "reason": "The watcher cut the official PRC program link at a comma; the comma is now written as %2C, and the full PDF loads with the same August 2026 schedule and weights."
+  },
+  {
+    "id": "efec209c2bb6369339f0e8b8d64c3b843cc870cd",
+    "url": "https://www.interior.gob.es/opencms/pdf/servicios-al-ciudadano/participacion-ciudadana/Participacion-publica-en-proyectos-normativos/Audiencia-e-informacion-publica/15_2026_Proyecto_Modificacion_Reglamento_Armas.pdf",
+    "verdict": "replaced",
+    "reason": "The draft PDF now returns 403; the freshness event and sources.md now watch the BOE consolidated text of RD 137/1993, whose last modification is 26 March 2025, so the draft is still not in force."
+  },
+  {
+    "id": "f7a267991b6ce6574ccf63ae07f9676bf1de5d0a",
+    "url": "https://www.youthcentral.vic.gov.au/driving-and-public-transport/getting-your-ls",
+    "verdict": "needs_person",
+    "reason": "Youth Central times out and the VicRoads pages that give the 32 questions and 78% return 403, so no official page could be read in its place."
+  }
+]

@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "When is the IBPS RRB Office Assistant Prelims in 2026?",
-    a: "The CRP RRBs-XV notification schedules the Preliminary Examination for November or December 2026 and the Main Examination for December 2026 to February 2027, all tentative. Guides report the Office Assistant Prelims on 6, 12 and 13 December 2026. Check your call letter and the IBPS website for your own date and shift.",
+    a: "The CRP RRBs-XV notification schedules the Preliminary Examination for November or December 2026 and the Main Examination for December 2026 or January 2027, all tentative. Guides report the Office Assistant Prelims on 6, 12 and 13 December 2026. Check your call letter and the IBPS website for your own date and shift.",
   },
   {
     q: "What score do I need to clear IBPS RRB Clerk Prelims?",

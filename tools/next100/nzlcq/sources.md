@@ -25,8 +25,14 @@
   the Health and Safety at Work Act 2015, Fire and Emergency New Zealand Act 2017, Trespass Act 1980
   and Building Act 2004. Standard texts: Health New Zealand's On-licensed premises toolkit and the
   HPA Host Responsibility Guide (resources.alcohol.org.nz).
-- ServiceIQ LCQ pages (https://www.serviceiq.org.nz/licence-controller-qualification,
-  https://www.serviceiq.org.nz/lcq/get-your-lcq-online): returned 403 to the fetcher; search
+- Tauranga City Council, "Manager's certificate" (a District Licensing Committee's own page, read
+  2026-11-17): https://www.tauranga.govt.nz/Permits-and-licences/Alcohol/Alcohol-licences/Managers-certificate
+  The LCQ is the "prescribed qualification"; the council will not issue a manager's certificate
+  without a copy of the LCQ, and renewals need the LCQ plus an LCQ bridging test certificate;
+  applicants must be over the age of 20; LCQ queries go to ServiceIQ. Put here because ServiceIQ's
+  pages block every automated read (403 again on 2026-11-17).
+- ServiceIQ LCQ pages (serviceiq.org.nz/licence-controller-qualification and
+  serviceiq.org.nz/lcq/get-your-lcq-online): returned 403 to the fetcher; search
   snippets (checked 2026-11-05) say the LCQ is the two unit standards 4646 and 16705, must be held
   to apply for or renew a Manager's Certificate, and can be done online through ServiceIQ (online
   profile and ID upload). Course providers (polytechnics, hospitality associations) also run it.

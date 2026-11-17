@@ -5,6 +5,18 @@ Assistants (Multipurpose), the "IBPS RRB Clerk" exam, Preliminary Examination. C
 Institute of Banking Personnel Selection (ibps.in) for the Regional Rural Banks.
 All sources below checked on 1 November 2026.
 
+## Official pages (checked 17 November 2026)
+- IBPS, revised CRP RRBs-XV notification (dated 01.09.2026, read from ibps.in on 17 November 2026):
+  https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification_Revised.pdf
+  Same Office Assistant Prelims structure as below (Reasoning 40 / 40 marks / 25 minutes, Numerical
+  Ability 40 / 40 / 20 minutes, 80 in 45 minutes, a cut-off in both tests), the same 0.25 penalty
+  and equi-percentile normalisation. Its revised tentative schedule moves the Main / Single online
+  examination to "December, 2026/ January, 2027" (it was December 2026/February 2027); the landing
+  now says so. Provisional allotment February/March 2027.
+- IBPS CRP RRBs-XV page (notification, corrigenda, call letters):
+  https://www.ibps.in/index.php/rural-bank-xv/
+- The coaching-site pages further down are kept only for the guide-reported Prelims days.
+
 ## Official notification (confirmed 1 November 2026)
 - IBPS, "CRP RRBs XV: Common Recruitment Process for Recruitment of Officers (Scale-I, II & III) and
   Office Assistants (Multipurpose) in Regional Rural Banks (RRBs)", dated 01.09.2026, 76 pages
@@ -80,9 +92,9 @@ another bank (reverse alphabet, GARDEN, MARKET, BANK/LOAN, the 360 m train, 2 : 
 ## Review pass (1 November 2026)
 - ibps.in still unreachable from here (TLS reset). A web search on 1 November 2026 found the same
   tentative Office Assistant Prelims dates (6, 12 and 13 December 2026) and Mains (30 January 2027)
-  on aggregator pages (e.g. https://truejobs.co.in/blog/ibps-rrb-2026-exam-date-office-assistant-and-officer-scale-exam-calendar-released,
-  https://competition.careers360.com/articles/ibps-rrb-exam-date), with no admit card yet. Still
-  labelled "guides report".
+  on aggregator pages (e.g. https://competition.careers360.com/articles/ibps-rrb-exam-date; a
+  truejobs.co.in page that said the same was gone by 17 November 2026, HTTP 410), with no admit
+  card yet. Still labelled "guides report".
 - Items rewritten for near-duplicates with other India banks: T1-036 (direction turns, same start and
   answer as rajpolice), T1-041 (35% of 840, also in sbiclerk), T1-051 (√624 approximation, sbiclerk),
   T1-072 (12 and 18 days, ssccgl and ibpspo), T2-041 (45% of 620, sbiclerk), T2-077 (240 m train at

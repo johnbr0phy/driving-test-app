@@ -86,7 +86,10 @@ whole test and nothing more.
   653/2023); the Ministry of the Interior opened consultation on a further modification in 2026
   (project 15/2026), not approved when checked. Items keep to the guía de pertenencia and the
   Guardia Civil's control role, which no draft changes.
-  https://www.interior.gob.es/opencms/pdf/servicios-al-ciudadano/participacion-ciudadana/Participacion-publica-en-proyectos-normativos/Audiencia-e-informacion-publica/15_2026_Proyecto_Modificacion_Reglamento_Armas.pdf
+  Draft (Interior PDF, now 403 to automated reads): interior.gob.es/opencms/pdf/servicios-al-ciudadano/participacion-ciudadana/Participacion-publica-en-proyectos-normativos/Audiencia-e-informacion-publica/15_2026_Proyecto_Modificacion_Reglamento_Armas.pdf
+  Watched instead (2026-11-17): the BOE consolidated text of RD 137/1993,
+  https://www.boe.es/buscar/act.php?id=BOE-A-1993-6202 , last modification listed 26/03/2025, no
+  2026 provision, so the draft is still not in force.
 - The other items rest on the settled wording of the Constitution (arts. 1, 8, 9.3, 10.2, 12, 20.5,
   21, 25.3, 28.1, 29.2, 55.2, 56, 68, 69, 104, 116, 126, 149.1.29.ª, 162), the Código Penal
   (arts. 2, 10, 16, 20, 22, 23, 27, 31 bis, 33, 35, 36, 116, 130, 131, 139, 147, 174, 177 bis,

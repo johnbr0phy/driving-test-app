@@ -4,6 +4,16 @@ All checked 2026-11-01. The Civil Service Commission's own site (csc.gov.ph) ans
 request from this session, including the examination announcement pages and PDFs, so the CSC figures below come
 from CSC-quoting news and review sites. Each is marked with where it came from.
 
+## Official page (checked 2026-11-17)
+- Civil Service Commission home page, https://csc.gov.ph/ (loaded on 2026-11-17; its inner pages still answer 403).
+  News item "Mark your calendars: Civil service exams online application starts 2 November", published 29 October
+  2026: "A total of 352,391 examination slots across 98 testing centers nationwide will be available for the Career
+  Service Examination-Pen and Paper Test (CSE-PPT), Professional and Subprofessional levels scheduled on 14 March
+  2027. The online registration opens on 2 November". Added to the facts table as the next exam. The page also lists
+  Examination Advisory No. 19, s. 2026, for a 22 November 2026 reset CSE-PPT in NCR and select centres in Region IV
+  and CAR (not stated on the landing). Item counts and times for 2027 are not given there, so the 2026 figures stay.
+- The Daily Tribune article below (re-read 2026-11-17, unchanged for us) is a news page and now sits below the CSC.
+
 ## Pattern followed
 
 **Civil Service Commission, Career Service Examination, Pen and Paper Test (CSE-PPT), Professional and

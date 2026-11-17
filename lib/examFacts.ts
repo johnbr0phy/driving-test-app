@@ -4672,9 +4672,10 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Level-specific", value: "Analytical (Professional), clerical (Subprofessional)" },
       { label: "Passing", value: "General rating of 80.00" },
       { label: "2026 dates", value: "8 March and 9 August 2026" },
+      { label: "Next exam", value: "14 March 2027 (online application from 2 November 2026)" },
       { label: "Run by", value: "Civil Service Commission (CSC)" },
     ],
-    basedOn: "the CSC examination announcements for the March and August 2026 CSE-PPT (No. 08, s. 2025 and No. 03, s. 2026) as reported, checked November 2026",
+    basedOn: "the CSC examination announcements for the March and August 2026 CSE-PPT (No. 08, s. 2025 and No. 03, s. 2026) as reported, and the CSC's notice of 29 October 2026 on the 14 March 2027 CSE-PPT, checked November 2026",
     source: { name: "Civil Service Commission", url: "https://csc.gov.ph" },
   },
   upscse: {

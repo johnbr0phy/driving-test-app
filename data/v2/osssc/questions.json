@@ -407,7 +407,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is the smallest number that leaves a remainder of 4 when divided by 6, by 9 and by 15?",
+    "stem": "What is the smallest two-digit number that leaves a remainder of 4 when divided by 6, by 9 and by 15?",
     "options": [
       "90",
       "86",
@@ -417,7 +417,7 @@
     "correct": [
       3
     ],
-    "explanation": "The LCM of 6, 9 and 15 is 90, so the number is 90 + 4 = 94. 184 uses 180, a common multiple that is not the least."
+    "explanation": "The LCM of 6, 9 and 15 is 90, so the smallest such number above 4 is 90 + 4 = 94 (4 itself is not two-digit). 184 uses 180, a common multiple that is not the least."
   },
   {
     "id": "OSSSC-MATHS-021",
@@ -1142,17 +1142,17 @@
     "skill": "general",
     "difficulty": 2,
     "format": "single",
-    "stem": "Who organised nationwide celebrations on 26 January 1930 as Independence Day, following the demand for complete independence?",
+    "stem": "In 1930, after the demand for complete independence, which day was observed across India as Independence Day?",
     "options": [
-      "Bal Gangadhar Tilak",
-      "Gopal Krishna Gokhale",
-      "Subhas Chandra Bose",
-      "Mahatma Gandhi"
+      "15 August",
+      "26 November",
+      "2 October",
+      "26 January"
     ],
     "correct": [
       3
     ],
-    "explanation": "The President's Secretariat historical account names Mahatma Gandhi as organising these celebrations. Tilak and Gokhale had died before 1930."
+    "explanation": "The President's Secretariat historical account records 26 January 1930 as the Independence Day observance that followed the demand for complete independence. 15 August is the date of independence in 1947, 26 November the date the Constitution was adopted in 1949, and 2 October is Gandhi's birthday."
   },
   {
     "id": "OSSSC-GENERAL-009",
@@ -2024,7 +2024,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Fill the gap: By this time tomorrow, Tara ___ the register.",
+    "stem": "Fill the gap: By this time tomorrow, Tara ___ the whole register, so it will be ready to submit.",
     "options": [
       "will be completing",
       "has completed",
@@ -2034,7 +2034,7 @@
     "correct": [
       2
     ],
-    "explanation": "The future perfect will have completed shows completion before a point in the future. Will be completing means the work would still be in progress then."
+    "explanation": "The future perfect will have completed shows completion before a point in the future. Will be completing means the work would still be in progress then, so the register would not yet be ready."
   },
   {
     "id": "OSSSC-ENGLISH-004",

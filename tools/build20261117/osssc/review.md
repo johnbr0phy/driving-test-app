@@ -15,3 +15,11 @@ The bank was first built as option "families" (four questions sharing one option
 ## Second review, 2026-11-17
 
 Blind second reviewer re-solved all 200 questions from stem and options only (maths, reasoning, grammar, spreadsheet references and Odisha/India history recomputed or rechecked against sources.md). 200/200 agreed with the key. No fixes were needed; bank and sources unchanged. Judgement calls left alone: REASONING-006 (B relies on pencils existing, the usual convention), ENGLISH-019 ("was" over "were" after "Neither of the two keys", stem says formal English), GENERAL-008 (Gandhi as the organiser of the 26 January 1930 observance; the other options are clearly wrong).
+
+## Third review (blind, Opus), 2026-11-17
+
+Blind agreement: 200/200. Three questions were listed for adjudication:
+- MATHS-020: stem ambiguous (4 itself leaves remainder 4). Changed "smallest number" to "smallest two-digit number"; key 94 unchanged, explanation notes why 4 is excluded.
+- GENERAL-008: flagged twice; "who organised" the 26 January 1930 observance has more than one defensible answer (Congress, Nehru, Gandhi). Rewritten to ask which day was observed as Independence Day in 1930 after the demand for complete independence: 26 January, with 15 August, 26 November and 2 October as distractors. Fact supported by the President's Secretariat account already in sources.md.
+- ENGLISH-003: "will be completing" was arguably grammatical. Stem now says "the whole register, so it will be ready to submit", which requires completion; key "will have completed" unchanged.
+Checks after rebuild: check_option_reuse OK, check_answer_patterns --strict no patterns, check_banks PASS, validate_v2_bank 0 problems.

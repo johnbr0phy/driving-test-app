@@ -16,3 +16,7 @@ A fresh independent reviewer then read only the newly randomized options file an
 All categories passed the specified 40% cue threshold. This does not prove the absence of every possible cue or establish AP score prediction. The reviewer noted that repeated answer-label families offer contrast practice but can feel repetitive; future expansion can add richer scenarios. No required correction remains in this reviewed snapshot.
 
 The complete second-round ledger and calculations are retained in `review-v2-audit.md`. Application validation and scope limitations are recorded in `validation.md` and `sources.md`.
+
+## Rewrite, 2026-11-17
+
+The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.

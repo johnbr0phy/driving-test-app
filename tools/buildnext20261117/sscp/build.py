@@ -16,7 +16,7 @@ for domain,size,per_test in SPECS:
         order=list(range(4));shift=i%4
         if shift:order=order[-shift:]+order[:-shift]
         # Fix prose spacing around numeric examples without changing token fields.
-        def tidy(s):return re.sub(r'(?<=[A-Za-z])(?=\d)|(?<=\d)(?=[A-Za-z])',' ',s).replace(chr(8217), chr(39))
+        def tidy(s):return s.replace(chr(8217), chr(39))
         bank.append(dict(id=f'SSCP-{domain.upper()}-{i+1:03}',section='sscp',test=test,module=1,domain='sscp'+domain.title(),skill=domain,difficulty=2,format='single',stem=tidy(stem),options=[tidy(options[j]) for j in order],correct=[order.index(0)],explanation=tidy(why)))
 assert len(bank)==260
 assert len({q['stem'] for q in bank})==260

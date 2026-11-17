@@ -10,3 +10,7 @@ Reviewed 2026-11-17. Full independent item ledger and primary-source checks are 
 These results are not psychometric validation. There are 65 four-item answer families, creating correlated outcomes and concept overlap between the separately worded tests. The options-only check tests a length cue, not every possible strategy. Questions provide selected conceptual foundation practice, with limited multi-constraint troubleshooting or hands-on interpretation. Product copy explicitly avoids exhaustive coverage, calibrated difficulty, CAT equivalence and readiness claims.
 
 No unresolved material content findings. Remote preview and batch-level integration remain separate gates.
+
+## Rewrite, 2026-11-17
+
+The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.

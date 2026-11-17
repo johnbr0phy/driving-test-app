@@ -256,3 +256,7 @@ Table T cross-check explicitly distinguishes unloaded travel from lifting cleara
 
 ## Post-review copy corrections
 CHART-034 now explicitly states collinearity; OPS-031 asks about manufacturer prohibition; US short ton and November date spacing corrected. Keys and option sets unchanged.
+
+## Rewrite, 2026-11-17
+
+The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.

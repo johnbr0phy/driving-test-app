@@ -1,0 +1,12 @@
+# SSCP independent review summary
+
+Reviewed 2026-11-17. Full independent item ledger and primary-source checks are preserved in `review-audit.md`.
+
+- All 260 stems independently answered before answer-key comparison: 260/260 agreement. All eight numerical items recomputed correctly.
+- Options-only longest-choice strategy: 69/260 correct (26.54%). Domain rates: Concepts 25%, Access 27.5%, Risk 27.5%, Incident 30.56%, Crypto 29.17%, Network 22.5%, Systems 25%. Every domain is below the 40% gate.
+- One wording finding fixed: NETWORK037 and its option family now explicitly require authenticated, encrypted administrative access. Authentication alone was insufficient wording for protecting the exchange. Keys and intended meaning preserved; rebuilt bank passes the v2 validator with zero problems.
+- Current ISC2 format, seven weights, no-backtracking CAT distinction, published 700/1000 standard and absence of raw-percentage conversion independently verified. No format correction needed.
+
+These results are not psychometric validation. There are 65 four-item answer families, creating correlated outcomes and concept overlap between the separately worded tests. The options-only check tests a length cue, not every possible strategy. Questions provide selected conceptual foundation practice, with limited multi-constraint troubleshooting or hands-on interpretation. Product copy explicitly avoids exhaustive coverage, calibrated difficulty, CAT equivalence and readiness claims.
+
+No unresolved material content findings. Remote preview and batch-level integration remain separate gates.

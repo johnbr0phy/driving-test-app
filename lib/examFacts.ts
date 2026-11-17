@@ -44,6 +44,74 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  zafirearm: {
+  "answer": "South African firearm competency involves prescribed legal knowledge and practical training through an accredited provider, followed by the SAPS competency process and the appropriate firearm licence. This independent practice focuses on Firearms Control Act knowledge associated with SAQA Unit Standard 117705. It does not award credits, practical proficiency, a competency certificate or a firearm licence.",
+  "rows": [
+    {
+      "label": "Knowledge scope",
+      "value": "Unit Standard 117705: Firearms Control Act and relevant regulations"
+    },
+    {
+      "label": "This practice",
+      "value": "200 original questions; four 50-question tests"
+    },
+    {
+      "label": "Question weights",
+      "value": "Editorial topic balance, not an official blueprint"
+    },
+    {
+      "label": "Study target",
+      "value": "70%; not a provider pass requirement"
+    },
+    {
+      "label": "Separate requirements",
+      "value": "Accredited training, practical assessment, SAPS competency and licensing"
+    },
+    {
+      "label": "Language",
+      "value": "English legal knowledge practice"
+    }
+  ],
+  "basedOn": "SAQA 117705 and current PFTC quality-assurance listing; Firearms Control Act with enacted amendments and Firearms Control Regulations, checked November 17, 2026",
+  "source": {
+    "name": "SAQA Unit Standard 117705",
+    "url": "https://allqs.saqa.org.za/showUnitStandard.php?id=117705"
+  }
+},
+  appraiser: {
+  "answer": "The national AQB Licensed Residential Real Property Appraiser examination has 125 questions: 110 scored and 15 unscored, with four hours allowed. The April 2026 outline covers market analysis, property description, land valuation, sales comparison, cost, income, reconciliation, USPAP and statistics. These 200 original questions provide four shorter practice tests. They do not cover Certified Residential, Certified General or state licensing requirements.",
+  "rows": [
+    {
+      "label": "Official questions",
+      "value": "125: 110 scored and 15 unscored"
+    },
+    {
+      "label": "Official time",
+      "value": "4 hours"
+    },
+    {
+      "label": "Official passing score",
+      "value": "75 scaled; not 75% correct"
+    },
+    {
+      "label": "This practice",
+      "value": "Four 50-question tests; 70% study target only"
+    },
+    {
+      "label": "Standards",
+      "value": "USPAP 2024, current edition"
+    },
+    {
+      "label": "Scope",
+      "value": "National Licensed Residential; state rules and full guidance manual excluded"
+    }
+  ],
+  "basedOn": "AQB Licensed Residential outline effective April 1, 2026; current USPAP 2024; national scoring information in the PSI Colorado bulletin, checked November 17, 2026",
+  "source": {
+    "name": "The Appraisal Foundation national examination overview",
+    "url": "https://appraisalfoundation.org/pages/national-uniform-licensing-and-certification-examination"
+  }
+},
   bcrealestate: {
       answer:
         "The British Columbia real estate trading services exam is the final exam of the UBC Sauder Real Estate Trading Services Licensing Course, the course BCFSA requires before a representative licence to provide trading services (selling, leasing and advising on real estate) under the Real Estate Services Act. UBC's Real Estate Division gives it as 100 multiple-choice questions, one mark each, in three hours, with a passing grade of 70%. After passing, candidates complete the Residential or Commercial Trading Services Applied Practice Course run by BCFSA before applying for a licence. The exam is not offered outside Canada.",
@@ -215,6 +283,51 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "EC-Council's CEH Exam Blueprint v5.0, the CEH certification page and the CEH Candidate Handbook, checked November 2026",
     source: { name: "EC-Council: Certified Ethical Hacker", url: "https://cert.eccouncil.org/certified-ethical-hacker.html" },
+  },
+  sscp: {
+    answer: "ISC2 SSCP assesses operational security across seven domains. The current exam uses computerized adaptive testing: 100-125 items in two hours, including multiple-choice and advanced item types. Tigertest provides 260 original MCQs, seven drills and two fixed 100-question tests. CAT, unscored items and advanced interactive formats are not simulated.",
+    rows: [
+      { label: "Current outline", value: "Effective 1 October 2025; seven domains" },
+      { label: "Official format", value: "CAT; 100-125 items, including 25 unscored items" },
+      { label: "Official time", value: "2 hours" },
+      { label: "Official passing standard", value: "700/1000; not a 70% raw-score cutoff" },
+      { label: "Practice coverage", value: "260 original MCQs; seven drills and two fixed 100-question tests" },
+      { label: "Not simulated", value: "CAT, no-backtracking rule, unscored items and advanced formats" },
+      { label: "Practice scoring", value: "Percentage correct; 80% editorial study goal" },
+      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+    ],
+    basedOn: "ISC2 SSCP outline effective October 2025 and current CAT FAQ, checked 17 November 2026. Each practice test follows domain weights of 16/15/15/14/9/16/15% exactly. Selected concepts, not exhaustive outline coverage",
+    source: { name: "ISC2 SSCP exam outline", url: "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline" },
+  },
+  servicenowcsa: {
+    answer: "ServiceNow CSA assesses platform administration across six domains. The January 2026 blueprint specifies 60 questions in 90 minutes, including single-answer and multiple-select items. Tigertest provides 200 original questions, six drills and two 60-question practice tests. This is selected conceptual and applied practice, not a hands-on platform assessment.",
+    rows: [
+      { label: "Current blueprint", value: "Updated January 2026; six domains" },
+      { label: "Official format", value: "60 single-answer and multiple-select questions" },
+      { label: "Official time", value: "90 minutes" },
+      { label: "Official cut score", value: "Not published; no fixed raw-percentage claim" },
+      { label: "Practice coverage", value: "200 original questions; six drills and two 60-question tests" },
+      { label: "Multiple-select scoring", value: "All correct choices required; no partial credit" },
+      { label: "Practice goal", value: "80% editorial study target, not a passing-score prediction" },
+      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+    ],
+    basedOn: "ServiceNow CSA blueprint updated January 2026, checked 17 November 2026. Domain weights 7/10/20/20/30/13% become 4/6/12/12/18/8 questions per test after rounding. Selected coverage; no official exam-release codename claimed",
+    source: { name: "ServiceNow CSA exam blueprint", url: "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554" },
+  },
+  securityx: {
+    answer: "CompTIA SecurityX (CAS-005, formerly CASP+) assesses advanced enterprise security across governance, architecture, engineering and operations. The exam has a maximum of 90 multiple-choice and performance-based questions in 165 minutes. Tigertest provides 240 original conceptual MCQs, four drills and two 90-question tests. Interactive performance tasks are not included.",
+    rows: [
+      { label: "Current outline", value: "CAS-005 V5; objectives document version 7.0" },
+      { label: "Official format", value: "Maximum 90 questions; multiple-choice and performance-based" },
+      { label: "Official time", value: "165 minutes" },
+      { label: "Official result", value: "Pass/fail only; no scaled score" },
+      { label: "Practice coverage", value: "240 original MCQs; four drills and two 90-question tests" },
+      { label: "Not included", value: "Interactive performance tasks and exhaustive technology coverage" },
+      { label: "Practice scoring", value: "Percentage correct; 80% study goal is not an official threshold" },
+      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+    ],
+    basedOn: "CompTIA CAS-005 V5 objectives document version 7.0, checked 17 November 2026. Official domain weights 20/27/31/22% are rounded to 18/24/28/20 questions per practice test",
+    source: { name: "CompTIA SecurityX CAS-005 objectives", url: "https://lecbyo.files.cmp.optimizely.com/download/35cf5f02b73211efa0ca8e42e80f1a8f" },
   },
   pentestplus: {
     answer:

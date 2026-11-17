@@ -35,6 +35,8 @@ import "./ptcb";
 import "./realEstateStates";
 import "./realestate";
 import "./security";
+import "./appraiser";
+import "./zafirearm";
 import "./vtne";
 import "./caqc";
 import "./uklgv";

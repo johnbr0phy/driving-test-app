@@ -253,6 +253,19 @@
   }
 
   /* Real estate theme: slate blue */
+  [data-theme="appraiser"] {
+    --brand: 194 30% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 194 30% 96%;
+    --brand-hover: 194 30% 37%;
+    --brand-dark: 194 30% 33%;
+    --brand-darker: 194 30% 25%;
+    --brand-muted: 194 30% 72%;
+    --brand-border: 194 30% 80%;
+    --brand-border-light: 194 30% 89%;
+    --brand-gradient-to: 194 30% 95%;
+  }
+
   [data-theme="realestate"] {
     --brand: 200 45% 36%;
     --brand-foreground: 0 0% 100%;
@@ -365,6 +378,19 @@
   }
 
   /* Hunter safety theme: olive */
+  [data-theme="zafirearm"] {
+    --brand: 62 15% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 62 15% 96%;
+    --brand-hover: 62 15% 21%;
+    --brand-dark: 62 15% 17%;
+    --brand-darker: 62 15% 12%;
+    --brand-muted: 62 15% 72%;
+    --brand-border: 62 15% 80%;
+    --brand-border-light: 62 15% 89%;
+    --brand-gradient-to: 62 15% 95%;
+  }
+
   [data-theme="hunter"] {
     --brand: 70 45% 32.9%;
     --brand-foreground: 0 0% 100%;
@@ -2379,6 +2405,32 @@
   }
 
   /* CISSP theme (v2 exam; matches lib/v2/exams/cissp.ts theme) */
+  [data-theme="sscp"] {
+    --brand: 214 15% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 214 15% 96%;
+    --brand-hover: 214 15% 29%;
+    --brand-dark: 214 15% 25%;
+    --brand-darker: 214 15% 17%;
+    --brand-muted: 214 15% 72%;
+    --brand-border: 214 15% 80%;
+    --brand-border-light: 214 15% 89%;
+    --brand-gradient-to: 214 15% 95%;
+  }
+
+  [data-theme="servicenowcsa"] {
+    --brand: 152 15% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 152 15% 96%;
+    --brand-hover: 152 15% 33%;
+    --brand-dark: 152 15% 29%;
+    --brand-darker: 152 15% 21%;
+    --brand-muted: 152 15% 72%;
+    --brand-border: 152 15% 80%;
+    --brand-border-light: 152 15% 89%;
+    --brand-gradient-to: 152 15% 95%;
+  }
+
   [data-theme="cissp"] {
     --brand: 220 40% 43%;
     --brand-foreground: 0 0% 100%;
@@ -5046,6 +5098,19 @@
   }
 
   /* CompTIA PenTest+ PT0-003 theme: deep muted red (v2 exam; matches lib/v2/exams/pentestplus.ts theme) */
+  [data-theme="securityx"] {
+    --brand: 8 15% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 8 15% 96%;
+    --brand-hover: 8 15% 33%;
+    --brand-dark: 8 15% 29%;
+    --brand-darker: 8 15% 21%;
+    --brand-muted: 8 15% 72%;
+    --brand-border: 8 15% 80%;
+    --brand-border-light: 8 15% 89%;
+    --brand-gradient-to: 8 15% 95%;
+  }
+
   [data-theme="pentestplus"] {
     --brand: 5 15% 26%;
     --brand-foreground: 0 0% 100%;
@@ -6211,6 +6276,18 @@
     --brand-darker: 42 80% 78%;
   }
 
+  .dark [data-theme="appraiser"] {
+    --brand: 194 30% 42%;
+    --brand-hover: 194 30% 37%;
+    --brand-light: 194 30% 16%;
+    --brand-gradient-to: 194 30% 12%;
+    --brand-border-light: 194 30% 24%;
+    --brand-border: 194 30% 34%;
+    --brand-muted: 194 30% 54%;
+    --brand-dark: 194 30% 78%;
+    --brand-darker: 194 30% 88%;
+  }
+
   .dark [data-theme="realestate"] {
     --brand: 200 45% 42.3%;
     --brand-hover: 200 45% 34.3%;
@@ -6305,6 +6382,18 @@
     --brand-muted: 215 45% 45%;
     --brand-dark: 215 65% 65%;
     --brand-darker: 215 55% 78%;
+  }
+
+  .dark [data-theme="zafirearm"] {
+    --brand: 62 15% 26%;
+    --brand-hover: 62 15% 21%;
+    --brand-light: 62 15% 16%;
+    --brand-gradient-to: 62 15% 12%;
+    --brand-border-light: 62 15% 24%;
+    --brand-border: 62 15% 34%;
+    --brand-muted: 62 15% 54%;
+    --brand-dark: 62 15% 78%;
+    --brand-darker: 62 15% 88%;
   }
 
   .dark [data-theme="hunter"] {
@@ -8016,6 +8105,30 @@
     --brand-muted: 298 40% 45%;
     --brand-dark: 298 90% 65%;
     --brand-darker: 298 70% 78%;
+  }
+
+  .dark [data-theme="sscp"] {
+    --brand: 214 15% 34%;
+    --brand-hover: 214 15% 29%;
+    --brand-light: 214 15% 16%;
+    --brand-gradient-to: 214 15% 12%;
+    --brand-border-light: 214 15% 24%;
+    --brand-border: 214 15% 34%;
+    --brand-muted: 214 15% 54%;
+    --brand-dark: 214 15% 78%;
+    --brand-darker: 214 15% 88%;
+  }
+
+  .dark [data-theme="servicenowcsa"] {
+    --brand: 152 15% 38%;
+    --brand-hover: 152 15% 33%;
+    --brand-light: 152 15% 16%;
+    --brand-gradient-to: 152 15% 12%;
+    --brand-border-light: 152 15% 24%;
+    --brand-border: 152 15% 34%;
+    --brand-muted: 152 15% 54%;
+    --brand-dark: 152 15% 78%;
+    --brand-darker: 152 15% 88%;
   }
 
   .dark [data-theme="cissp"] {
@@ -10280,6 +10393,18 @@
     --brand-muted: 355 18% 45%;
     --brand-dark: 355 35% 65%;
     --brand-darker: 355 32% 78%;
+  }
+
+  .dark [data-theme="securityx"] {
+    --brand: 8 15% 38%;
+    --brand-hover: 8 15% 33%;
+    --brand-light: 8 15% 16%;
+    --brand-gradient-to: 8 15% 12%;
+    --brand-border-light: 8 15% 24%;
+    --brand-border: 8 15% 34%;
+    --brand-muted: 8 15% 54%;
+    --brand-dark: 8 15% 78%;
+    --brand-darker: 8 15% 88%;
   }
 
   .dark [data-theme="pentestplus"] {

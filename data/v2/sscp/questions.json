@@ -1,0 +1,5462 @@
+[
+  {
+    "id": "SSCP-CONCEPTS-001",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A support contractor can read salary records despite having no payroll duties. The records remain accurate and the system stays online. Which security property is directly breached?",
+    "options": [
+      "Confidentiality of the records",
+      "Integrity of the transaction",
+      "Availability of the service",
+      "Accountability for the action"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The issue is unauthorized disclosure. Integrity and availability may remain intact while confidentiality fails."
+  },
+  {
+    "id": "SSCP-CONCEPTS-002",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A transfer instruction arrives with its destination account altered, even though it was never disclosed to an unauthorized reader. Which property has failed?",
+    "options": [
+      "Accountability for the action",
+      "Integrity of the transaction",
+      "Confidentiality of the records",
+      "Availability of the service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Unauthorized modification compromises integrity. Secrecy alone does not ensure that a transaction remains correct."
+  },
+  {
+    "id": "SSCP-CONCEPTS-003",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A booking platform retains accurate, protected records but cannot serve customers during a prolonged outage. Which property is primarily affected?",
+    "options": [
+      "Integrity of the transaction",
+      "Accountability for the action",
+      "Availability of the service",
+      "Confidentiality of the records"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Availability concerns timely usable access. Correct and confidential records do not help users if the service is inaccessible."
+  },
+  {
+    "id": "SSCP-CONCEPTS-004",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "All technicians share one administrative account. Changes are authorized, but investigators cannot establish which individual performed a disputed action. Which property is weakest?",
+    "options": [
+      "Confidentiality of the records",
+      "Integrity of the transaction",
+      "Availability of the service",
+      "Accountability for the action"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Individual accountability requires attributable actions. A shared identity obscures the actor even when the action is otherwise permitted."
+  },
+  {
+    "id": "SSCP-CONCEPTS-005",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An assessor is evaluating bids and privately owns a financial stake in one bidder. The assessment is otherwise within the assessor's expertise. Which professional action addresses this ethical concern?",
+    "options": [
+      "Disclose the conflict of interest",
+      "Report the findings accurately",
+      "Seek qualified technical support",
+      "Protect entrusted information"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disclosing the conflict allows appropriate management of impartiality. Technical competence alone does not remove a financial conflict."
+  },
+  {
+    "id": "SSCP-CONCEPTS-006",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A project sponsor asks a tester to remove a confirmed material weakness from the final report to avoid delaying launch. Which duty governs the tester's response?",
+    "options": [
+      "Protect entrusted information",
+      "Report the findings accurately",
+      "Disclose the conflict of interest",
+      "Seek qualified technical support"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Honest reporting must preserve supported material findings. A business deadline is not a reason to misrepresent the assessment."
+  },
+  {
+    "id": "SSCP-CONCEPTS-007",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator receives a specialized forensic assignment beyond their current competence. The evidence is important and the organization permits bringing in an expert. What should the administrator do?",
+    "options": [
+      "Report the findings accurately",
+      "Protect entrusted information",
+      "Seek qualified technical support",
+      "Disclose the conflict of interest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Obtain qualified support rather than claim expertise they lack. Diligent service includes recognizing professional limits."
+  },
+  {
+    "id": "SSCP-CONCEPTS-008",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A practitioner changes employers while retaining confidential design documents entrusted by the former employer. No authority permits reuse at the new company. Which duty applies to those documents?",
+    "options": [
+      "Disclose the conflict of interest",
+      "Report the findings accurately",
+      "Seek qualified technical support",
+      "Protect entrusted information"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Protect the entrusted information and follow authorized return or disposal requirements. Changing jobs does not grant permission to disclose it."
+  },
+  {
+    "id": "SSCP-CONCEPTS-009",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician is asked to assess a supplier system that is not listed in the signed assessment authorization. The requester cannot show supplier consent. What must be resolved before assessment activity?",
+    "options": [
+      "Confirm the authorized scope",
+      "Use the approved escalation channel",
+      "Carry out the assigned procedure",
+      "Request an authorized exception"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Confirm authority and scope for the supplier system. A request from an internal colleague does not establish authorization over another party's assets."
+  },
+  {
+    "id": "SSCP-CONCEPTS-010",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An operator observes a suspected policy breach involving a colleague. The organization has a confidential reporting process, and no immediate safety action is required. Which route is appropriate?",
+    "options": [
+      "Request an authorized exception",
+      "Use the approved escalation channel",
+      "Confirm the authorized scope",
+      "Carry out the assigned procedure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use the designated escalation channel with factual observations. Public accusations or private investigation beyond authority are not implied by the role."
+  },
+  {
+    "id": "SSCP-CONCEPTS-011",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A routine backup verification task is documented, assigned to the administrator and within approved access. No exception or unexpected risk is present. What is the appropriate next action?",
+    "options": [
+      "Use the approved escalation channel",
+      "Request an authorized exception",
+      "Carry out the assigned procedure",
+      "Confirm the authorized scope"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Perform the authorized procedure. Escalating every ordinary assigned task would not improve accountability or execution."
+  },
+  {
+    "id": "SSCP-CONCEPTS-012",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team has a legitimate need that the current access policy does not permit. The policy provides a risk-owner exception process. How should the team proceed?",
+    "options": [
+      "Confirm the authorized scope",
+      "Use the approved escalation channel",
+      "Carry out the assigned procedure",
+      "Request an authorized exception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Request a documented authorized exception instead of silently bypassing policy. A business need does not itself grant exception authority."
+  },
+  {
+    "id": "SSCP-CONCEPTS-013",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service rejects connections that do not satisfy a machine-enforced network rule. Which control category best describes this mechanism?",
+    "options": [
+      "A technical enforcement control",
+      "A physical access control",
+      "An administrative policy control",
+      "A personnel competence control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Automated rule enforcement is technical. The policy authorizing the rule is administrative, but the question asks about its implementation."
+  },
+  {
+    "id": "SSCP-CONCEPTS-014",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A secured doorway restricts entry to a room containing confidential paper records. Which control category describes the doorway mechanism?",
+    "options": [
+      "A personnel competence control",
+      "A physical access control",
+      "A technical enforcement control",
+      "An administrative policy control"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The mechanism controls physical entry. A written visitor rule is a separate administrative control."
+  },
+  {
+    "id": "SSCP-CONCEPTS-015",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Management issues a binding rule defining who may approve access exceptions. Which category describes the rule itself?",
+    "options": [
+      "A physical access control",
+      "A personnel competence control",
+      "An administrative policy control",
+      "A technical enforcement control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The policy defines organizational authority and is administrative. It does not directly act as a physical barrier or machine enforcement point."
+  },
+  {
+    "id": "SSCP-CONCEPTS-016",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization gives operators role-specific practice and evaluates whether they can perform secure recovery tasks. Which control focus does this address?",
+    "options": [
+      "A technical enforcement control",
+      "A physical access control",
+      "An administrative policy control",
+      "A personnel competence control"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Training and demonstrated competence prepare personnel to carry out their duties. A firewall rule cannot establish operator competence."
+  },
+  {
+    "id": "SSCP-CONCEPTS-017",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A transaction service rejects a submission unless its required authorization is present. Which functional purpose does this control serve?",
+    "options": [
+      "Prevent the prohibited activity",
+      "Detect a completed violation",
+      "Correct the damaged condition",
+      "Compensate for a control constraint"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The control prevents the unauthorized submission from completing. A later audit would serve a detective purpose."
+  },
+  {
+    "id": "SSCP-CONCEPTS-018",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An automated review finds that a privileged account was used outside its approved window yesterday. Which functional purpose does that review primarily serve?",
+    "options": [
+      "Compensate for a control constraint",
+      "Detect a completed violation",
+      "Prevent the prohibited activity",
+      "Correct the damaged condition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The review detects a past violation. It did not stop the original activity from occurring."
+  },
+  {
+    "id": "SSCP-CONCEPTS-019",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A managed process restores an accidentally altered security configuration to its approved value. Which functional purpose is being performed?",
+    "options": [
+      "Detect a completed violation",
+      "Compensate for a control constraint",
+      "Correct the damaged condition",
+      "Prevent the prohibited activity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Restoring the approved state is corrective. Merely generating an alert would leave the altered state in place."
+  },
+  {
+    "id": "SSCP-CONCEPTS-020",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A legacy appliance cannot support the required endpoint agent. An approved restricted gateway provides an alternative safeguard addressing the same exposure while replacement is planned. What role does that safeguard serve?",
+    "options": [
+      "Prevent the prohibited activity",
+      "Detect a completed violation",
+      "Correct the damaged condition",
+      "Compensate for a control constraint"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "It compensates for a documented implementation constraint. This requires approval and evaluation rather than an assumption of automatic equivalence."
+  },
+  {
+    "id": "SSCP-CONCEPTS-021",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newly discovered virtual machine processes production data, but no team accepts responsibility for it. Which lifecycle record is needed to bring it under management?",
+    "options": [
+      "Record the asset and its owner",
+      "Verify the acquisition requirements",
+      "Maintain the supported configuration",
+      "Authorize the final disposition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An accurate inventory with ownership enables accountability and subsequent control actions. Patching alone does not establish who is responsible."
+  },
+  {
+    "id": "SSCP-CONCEPTS-022",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A department is considering a product whose support and audit capabilities may not meet policy. Which lifecycle activity belongs before purchase approval?",
+    "options": [
+      "Authorize the final disposition",
+      "Verify the acquisition requirements",
+      "Record the asset and its owner",
+      "Maintain the supported configuration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Evaluate acquisition requirements before committing to the product. A later inventory entry does not resolve unsuitable capabilities."
+  },
+  {
+    "id": "SSCP-CONCEPTS-023",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An established application has an approved baseline and a supported patch release ready for its maintenance window. Which lifecycle activity keeps the deployed asset secure?",
+    "options": [
+      "Verify the acquisition requirements",
+      "Authorize the final disposition",
+      "Maintain the supported configuration",
+      "Record the asset and its owner"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Maintain the supported configuration through the approved change process. Initial acceptance is not the end of security management."
+  },
+  {
+    "id": "SSCP-CONCEPTS-024",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A leased device is due for return and contains organizational data. Retention requirements have been checked. Which lifecycle decision must govern its handling before release?",
+    "options": [
+      "Record the asset and its owner",
+      "Verify the acquisition requirements",
+      "Maintain the supported configuration",
+      "Authorize the final disposition"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Authorized disposition specifies sanitization and release requirements. Removing the asset from the inventory alone does not protect its stored information."
+  },
+  {
+    "id": "SSCP-CONCEPTS-025",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A proposed network change would alter access paths to a regulated service. It has not yet been approved. Which analysis should inform the approval decision?",
+    "options": [
+      "Assess the security impact",
+      "Authorize the planned change",
+      "Execute the rollback plan",
+      "Verify the post-change outcome"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Assess security impact and dependencies before authorization. A technically feasible change may still create unacceptable exposure."
+  },
+  {
+    "id": "SSCP-CONCEPTS-026",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tested modification has a documented impact assessment and rollback plan, but the required change owner has not agreed to production execution. Which step remains?",
+    "options": [
+      "Verify the post-change outcome",
+      "Authorize the planned change",
+      "Assess the security impact",
+      "Execute the rollback plan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Obtain the required authorization before implementation. Successful testing does not replace the organization's approval boundary."
+  },
+  {
+    "id": "SSCP-CONCEPTS-027",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A deployed update violates a pre-agreed stop condition during its change window. The approved recovery procedure specifies restoring the prior version. Which action follows that plan?",
+    "options": [
+      "Authorize the planned change",
+      "Verify the post-change outcome",
+      "Execute the rollback plan",
+      "Assess the security impact"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Execute the approved rollback when its trigger is met. Continuing a failed rollout despite the stop condition ignores the authorized plan."
+  },
+  {
+    "id": "SSCP-CONCEPTS-028",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A change script completes without error. The service still needs confirmation that intended permissions work and unrelated functions remain available. Which step completes the change?",
+    "options": [
+      "Assess the security impact",
+      "Authorize the planned change",
+      "Execute the rollback plan",
+      "Verify the post-change outcome"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Verify actual outcomes against acceptance criteria. Process completion alone does not establish correct behavior."
+  },
+  {
+    "id": "SSCP-CONCEPTS-029",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Employees receive unfamiliar urgent-payment requests and do not know which features indicate possible impersonation. Which awareness activity targets the initial gap?",
+    "options": [
+      "Teach recognition of warning signs",
+      "Rehearse the assigned response roles",
+      "Measure behavior after training",
+      "Update the material after change"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Teach recognition of relevant warning signs and the approved verification process. Measuring behavior before explaining the expectation does not close the knowledge gap."
+  },
+  {
+    "id": "SSCP-CONCEPTS-030",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An incident plan names contacts, but an exercise reveals they do not know their handoff responsibilities. Which training activity is needed?",
+    "options": [
+      "Update the material after change",
+      "Rehearse the assigned response roles",
+      "Teach recognition of warning signs",
+      "Measure behavior after training"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Role rehearsal helps participants practice coordination and handoffs. General phishing awareness does not teach their incident-specific duties."
+  },
+  {
+    "id": "SSCP-CONCEPTS-031",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A campaign has been delivered to all staff. Management wants evidence of improved handling rather than attendance alone. What should be evaluated?",
+    "options": [
+      "Rehearse the assigned response roles",
+      "Update the material after change",
+      "Measure behavior after training",
+      "Teach recognition of warning signs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Measure appropriate behavior and outcomes using a fair, approved method. Completion counts establish exposure to training, not effectiveness."
+  },
+  {
+    "id": "SSCP-CONCEPTS-032",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new reporting channel replaces the one shown in every awareness poster. What maintenance action is required?",
+    "options": [
+      "Teach recognition of warning signs",
+      "Rehearse the assigned response roles",
+      "Measure behavior after training",
+      "Update the material after change"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Update the material so employees can follow the current process. Repeating outdated instructions can undermine otherwise effective awareness."
+  },
+  {
+    "id": "SSCP-CONCEPTS-033",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor arrives at a secure site without appearing on the expected visitor list. The visitor presents a convincing business card. Which step should occur before granting entry?",
+    "options": [
+      "Verify the visitor's authorization",
+      "Escort within the approved area",
+      "Recover the temporary credential",
+      "Review the physical access record"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Verify authorization through the site process. A claimed affiliation is not itself permission to enter."
+  },
+  {
+    "id": "SSCP-CONCEPTS-034",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A visitor has been approved to inspect one equipment room under supervision. What control keeps the visit within that authorized scope?",
+    "options": [
+      "Review the physical access record",
+      "Escort within the approved area",
+      "Verify the visitor's authorization",
+      "Recover the temporary credential"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Provide the required escort and restrict movement to approved areas. Initial registration does not authorize unrestricted access."
+  },
+  {
+    "id": "SSCP-CONCEPTS-035",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A contractor finishes an approved visit and is leaving with a temporary badge that remains active. Which action closes the temporary access lifecycle?",
+    "options": [
+      "Escort within the approved area",
+      "Review the physical access record",
+      "Recover the temporary credential",
+      "Verify the visitor's authorization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Recover or deactivate the temporary credential according to procedure. A completed visitor log alone may leave the badge usable."
+  },
+  {
+    "id": "SSCP-CONCEPTS-036",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Investigators need to establish whether an authorized technician entered a restricted room during a disputed interval. Which existing evidence is directly relevant?",
+    "options": [
+      "Verify the visitor's authorization",
+      "Escort within the approved area",
+      "Recover the temporary credential",
+      "Review the physical access record"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Physical access records can support the timeline, subject to their reliability and limitations. A current badge entitlement does not prove a past entry."
+  },
+  {
+    "id": "SSCP-CONCEPTS-037",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An AI-enabled security filter is updated and begins rejecting known legitimate transactions in staging. Which change-control activity should resolve this before promotion?",
+    "options": [
+      "Validate the model update",
+      "Assign an accountable service owner",
+      "Limit the retained training data",
+      "Document the automated decision"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Validate the update against representative acceptance criteria. A model update needs outcome testing just as other security-control changes do."
+  },
+  {
+    "id": "SSCP-CONCEPTS-038",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An automated classification service affects sensitive-data handling, but no team owns its errors, changes or review process. Which governance gap should be closed?",
+    "options": [
+      "Document the automated decision",
+      "Assign an accountable service owner",
+      "Validate the model update",
+      "Limit the retained training data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Assign accountable ownership for operation and review. A technically accurate model still needs organizational responsibility."
+  },
+  {
+    "id": "SSCP-CONCEPTS-039",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A training pipeline retains personal records that do not contribute to its approved purpose. Which lifecycle change reduces unnecessary privacy exposure?",
+    "options": [
+      "Assign an accountable service owner",
+      "Document the automated decision",
+      "Limit the retained training data",
+      "Validate the model update"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Minimize retained data to the justified purpose and obligations. Better prediction accuracy does not authorize unrelated personal-data retention."
+  },
+  {
+    "id": "SSCP-CONCEPTS-040",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpConcepts",
+    "skill": "concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An automated access recommendation influenced a material business decision. Policy requires later explanation of the inputs, version and approving person. Which record is needed?",
+    "options": [
+      "Validate the model update",
+      "Assign an accountable service owner",
+      "Limit the retained training data",
+      "Document the automated decision"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Document the relevant decision provenance and human authorization. A final outcome alone cannot explain how the recommendation was used."
+  },
+  {
+    "id": "SSCP-ACCESS-001",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A verifier checks a memorized passphrase. Which category describes this evidence?",
+    "options": [
+      "Something the user knows",
+      "Something the user possesses",
+      "Something inherent to the user",
+      "A contextual risk signal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A memorized secret is a knowledge factor."
+  },
+  {
+    "id": "SSCP-ACCESS-002",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user proves control of a registered hardware authenticator by completing its challenge. Which category describes control of that device?",
+    "options": [
+      "A contextual risk signal",
+      "Something the user possesses",
+      "Something the user knows",
+      "Something inherent to the user"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Control of the authenticator is a possession factor; the device being known does not make it a knowledge factor."
+  },
+  {
+    "id": "SSCP-ACCESS-003",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An authenticator compares a fingerprint with its enrolled template. Which category describes the biometric characteristic?",
+    "options": [
+      "Something the user possesses",
+      "A contextual risk signal",
+      "Something inherent to the user",
+      "Something the user knows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A biometric characteristic is an inherence factor. Its use within an authenticator does not turn it into a memorized secret."
+  },
+  {
+    "id": "SSCP-ACCESS-004",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An access service considers an unusual login location in addition to authentication. What is the location observation?",
+    "options": [
+      "Something the user knows",
+      "Something the user possesses",
+      "Something inherent to the user",
+      "A contextual risk signal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Location can influence risk assessment, but is not by itself proof of knowledge, possession or a biometric characteristic."
+  },
+  {
+    "id": "SSCP-ACCESS-005",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before issuing a new account, an organization validates evidence linking an applicant to a claimed real-world identity. Which process is this?",
+    "options": [
+      "Identity proofing",
+      "Authentication",
+      "Authorization",
+      "Access accounting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Identity proofing establishes confidence in the claimed identity before enrollment."
+  },
+  {
+    "id": "SSCP-ACCESS-006",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An enrolled employee uses a registered credential to establish control of an existing account. Which process is being performed?",
+    "options": [
+      "Access accounting",
+      "Authentication",
+      "Identity proofing",
+      "Authorization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Authentication verifies the claimant using an authenticator associated with the account."
+  },
+  {
+    "id": "SSCP-ACCESS-007",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A signed-in analyst requests a confidential report. The application evaluates whether the analyst may read that specific report. Which process is this?",
+    "options": [
+      "Authentication",
+      "Access accounting",
+      "Authorization",
+      "Identity proofing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Authorization decides whether the authenticated principal may perform the requested action."
+  },
+  {
+    "id": "SSCP-ACCESS-008",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service records which account exported a file, when it happened and the result. Which access-management function does the record support?",
+    "options": [
+      "Identity proofing",
+      "Authentication",
+      "Authorization",
+      "Access accounting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Accounting records activity for attribution and review. It does not itself grant permission."
+  },
+  {
+    "id": "SSCP-ACCESS-009",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new hire has completed identity checks and the manager has approved a defined job role. Which lifecycle action implements that approval?",
+    "options": [
+      "Provision the approved entitlement",
+      "Adjust access after a role change",
+      "Disable access at separation",
+      "Recertify existing access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Provision the approved role and only its required entitlements."
+  },
+  {
+    "id": "SSCP-ACCESS-010",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee moves from purchasing to support. The old purchasing permissions are no longer required. Which lifecycle action addresses the change?",
+    "options": [
+      "Recertify existing access",
+      "Adjust access after a role change",
+      "Provision the approved entitlement",
+      "Disable access at separation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Review and adjust access for the new role, removing obsolete rights rather than accumulating them."
+  },
+  {
+    "id": "SSCP-ACCESS-011",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee leaves the organization at an agreed time. Which identity lifecycle action must be coordinated with that event?",
+    "options": [
+      "Adjust access after a role change",
+      "Recertify existing access",
+      "Disable access at separation",
+      "Provision the approved entitlement"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Disable access and associated sessions or credentials under the separation procedure."
+  },
+  {
+    "id": "SSCP-ACCESS-012",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A quarterly review asks owners to confirm whether currently assigned permissions remain justified. Which lifecycle activity is this?",
+    "options": [
+      "Provision the approved entitlement",
+      "Adjust access after a role change",
+      "Disable access at separation",
+      "Recertify existing access"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Recertification evaluates continued need; it is distinct from initial provisioning."
+  },
+  {
+    "id": "SSCP-ACCESS-013",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Within policy, a file owner decides which colleagues receive permission to the file. Which access model is illustrated?",
+    "options": [
+      "Discretionary access control",
+      "Mandatory access control",
+      "Role-based access control",
+      "Attribute-based access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Discretionary control lets an authorized owner determine access to the object."
+  },
+  {
+    "id": "SSCP-ACCESS-014",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system enforces centrally assigned classification labels and clearances that individual file owners cannot override. Which model is illustrated?",
+    "options": [
+      "Attribute-based access control",
+      "Mandatory access control",
+      "Discretionary access control",
+      "Role-based access control"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mandatory control enforces centrally governed label rules rather than owner discretion."
+  },
+  {
+    "id": "SSCP-ACCESS-015",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Permissions are assigned to the payroll-clerk job function, and users receive them through membership in that function. Which model is illustrated?",
+    "options": [
+      "Mandatory access control",
+      "Attribute-based access control",
+      "Role-based access control",
+      "Discretionary access control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Role-based control assigns permissions through defined roles."
+  },
+  {
+    "id": "SSCP-ACCESS-016",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An authorization rule evaluates user department, resource sensitivity and current device compliance together. Which model is illustrated?",
+    "options": [
+      "Discretionary access control",
+      "Mandatory access control",
+      "Role-based access control",
+      "Attribute-based access control"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Attribute-based control evaluates attributes of the subject, object and environment."
+  },
+  {
+    "id": "SSCP-ACCESS-017",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An enterprise identity provider sends an XML-based assertion to a partner service for federated sign-in. Which mechanism fits this exchange?",
+    "options": [
+      "SAML federation",
+      "OAuth delegated authorization",
+      "OpenID Connect authentication",
+      "Directory group membership"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAML uses assertions for federation. XML assertions distinguish this case from OpenID Connect."
+  },
+  {
+    "id": "SSCP-ACCESS-018",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user lets a scheduling service access a limited portion of another service through scoped access tokens, without giving it the account password. Which mechanism fits?",
+    "options": [
+      "Directory group membership",
+      "OAuth delegated authorization",
+      "SAML federation",
+      "OpenID Connect authentication"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "OAuth supports delegated authorization using scoped access tokens; it does not alone define user authentication."
+  },
+  {
+    "id": "SSCP-ACCESS-019",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client needs a standardized identity layer over OAuth, including an ID token describing the authenticated user. Which mechanism fits?",
+    "options": [
+      "OAuth delegated authorization",
+      "Directory group membership",
+      "OpenID Connect authentication",
+      "SAML federation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "OpenID Connect adds an authentication and identity layer, including ID tokens, to OAuth."
+  },
+  {
+    "id": "SSCP-ACCESS-020",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An internal file server grants access because an account belongs to an approved group in the organization's directory. Which mechanism directly provides this entitlement?",
+    "options": [
+      "SAML federation",
+      "OAuth delegated authorization",
+      "OpenID Connect authentication",
+      "Directory group membership"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Directory group membership maps the account to a local entitlement without implying any federation-token exchange."
+  },
+  {
+    "id": "SSCP-ACCESS-021",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A validly signed token was created for a different application. Which check should prevent this service from accepting it for itself?",
+    "options": [
+      "Validate the token audience",
+      "Enforce the token expiry",
+      "Verify the trusted issuer",
+      "Check the requested permission"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Audience validation ensures that a token is intended for the receiving service."
+  },
+  {
+    "id": "SSCP-ACCESS-022",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A previously valid token is presented after its permitted lifetime. Which check rejects this use?",
+    "options": [
+      "Check the requested permission",
+      "Enforce the token expiry",
+      "Validate the token audience",
+      "Verify the trusted issuer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Expiry enforcement limits acceptance beyond the token's validity window."
+  },
+  {
+    "id": "SSCP-ACCESS-023",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A token names an identity provider that this service has never agreed to trust. Which trust check is missing if it is accepted?",
+    "options": [
+      "Enforce the token expiry",
+      "Check the requested permission",
+      "Verify the trusted issuer",
+      "Validate the token audience"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The service must trust and validate the issuer, not merely accept a structurally valid token."
+  },
+  {
+    "id": "SSCP-ACCESS-024",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A legitimate, unexpired token for this service permits reading records but the caller requests deletion. Which check should deny the action?",
+    "options": [
+      "Validate the token audience",
+      "Enforce the token expiry",
+      "Verify the trusted issuer",
+      "Check the requested permission"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Authorization must compare the requested operation with the granted permissions; token validity alone is insufficient."
+  },
+  {
+    "id": "SSCP-ACCESS-025",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Administrators need elevated rights only during approved maintenance windows, but currently retain them all month. Which improvement directly addresses the excess duration?",
+    "options": [
+      "Reduce standing privilege",
+      "Require separate approvals",
+      "Constrain the service identity",
+      "Review inherited permissions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Time-bound elevation reduces standing privilege while supporting authorized work."
+  },
+  {
+    "id": "SSCP-ACCESS-026",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One employee can both request and authorize a sensitive payment. Which improvement addresses the conflict between those duties?",
+    "options": [
+      "Review inherited permissions",
+      "Require separate approvals",
+      "Reduce standing privilege",
+      "Constrain the service identity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Separate approval duties reduce the ability of one person to complete conflicting steps unchecked."
+  },
+  {
+    "id": "SSCP-ACCESS-027",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A batch job needs to read one queue, yet its machine account can administer the entire platform. Which improvement directly addresses the excessive scope?",
+    "options": [
+      "Require separate approvals",
+      "Review inherited permissions",
+      "Constrain the service identity",
+      "Reduce standing privilege"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Limit the service identity to the operations and resources the job actually needs."
+  },
+  {
+    "id": "SSCP-ACCESS-028",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user has no direct permission to a restricted folder but can reach it through nested groups. Which investigation best explains the effective access?",
+    "options": [
+      "Reduce standing privilege",
+      "Require separate approvals",
+      "Constrain the service identity",
+      "Review inherited permissions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Inherited and nested group grants can create effective access beyond direct assignments."
+  },
+  {
+    "id": "SSCP-ACCESS-029",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service wants cryptographic authentication bound to the legitimate verifier so a lookalike website cannot simply relay a user-entered secret. Which property is required?",
+    "options": [
+      "Phishing-resistant authentication",
+      "Replay-resistant authentication",
+      "Password blocklist screening",
+      "Account recovery verification"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Verifier-bound cryptographic authentication can resist phishing. A typed one-time code alone is not phishing-resistant."
+  },
+  {
+    "id": "SSCP-ACCESS-030",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A captured authentication response must not work again in a later login transaction. Which property addresses this requirement?",
+    "options": [
+      "Account recovery verification",
+      "Replay-resistant authentication",
+      "Phishing-resistant authentication",
+      "Password blocklist screening"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Replay resistance prevents reuse of a previously accepted response, such as through fresh challenges."
+  },
+  {
+    "id": "SSCP-ACCESS-031",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At password enrollment, the system rejects commonly used and known compromised choices. Which safeguard is being applied?",
+    "options": [
+      "Replay-resistant authentication",
+      "Account recovery verification",
+      "Password blocklist screening",
+      "Phishing-resistant authentication"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Blocklist screening rejects unsuitable password choices at establishment or change."
+  },
+  {
+    "id": "SSCP-ACCESS-032",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A caller who lost all authenticators requests a replacement credential. Which process must establish that the caller may regain the account?",
+    "options": [
+      "Phishing-resistant authentication",
+      "Replay-resistant authentication",
+      "Password blocklist screening",
+      "Account recovery verification"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Recovery verification protects the account when normal authenticators are unavailable; convenience must not bypass identity assurance."
+  },
+  {
+    "id": "SSCP-ACCESS-033",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An account has been disabled, but an existing session remains usable because the application has not invalidated it. Which action addresses the remaining access path?",
+    "options": [
+      "Terminate the active sessions",
+      "Revoke the delegated grant",
+      "Remove the obsolete group grant",
+      "Rotate the exposed service secret"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Invalidate active sessions as supported by the application; account disabling may not automatically terminate every existing session."
+  },
+  {
+    "id": "SSCP-ACCESS-034",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user no longer wants a third-party application to access their stored documents through an approved delegation. Which permission should be withdrawn?",
+    "options": [
+      "Rotate the exposed service secret",
+      "Revoke the delegated grant",
+      "Terminate the active sessions",
+      "Remove the obsolete group grant"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Revoke the delegated authorization grant and associated token access according to the service mechanism."
+  },
+  {
+    "id": "SSCP-ACCESS-035",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A transferred employee retains access solely through an old departmental group. Which change removes the identified source of access?",
+    "options": [
+      "Revoke the delegated grant",
+      "Rotate the exposed service secret",
+      "Remove the obsolete group grant",
+      "Terminate the active sessions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Remove the obsolete group grant while preserving justified permissions for the new role."
+  },
+  {
+    "id": "SSCP-ACCESS-036",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application credential was accidentally disclosed in a support attachment. Which credential lifecycle action addresses its continued validity?",
+    "options": [
+      "Terminate the active sessions",
+      "Revoke the delegated grant",
+      "Remove the obsolete group grant",
+      "Rotate the exposed service secret"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Replace and revoke the exposed secret through a coordinated rotation process; deleting the attachment alone does not invalidate it."
+  },
+  {
+    "id": "SSCP-ACCESS-037",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Domain A accepts identities from domain B, while domain B does not accept identities from A. Which trust description fits?",
+    "options": [
+      "A one-way trust relationship",
+      "A bidirectional trust relationship",
+      "A transitive trust relationship",
+      "Per-request resource authorization"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One-way trust permits recognition in one direction only; it does not imply reciprocal trust."
+  },
+  {
+    "id": "SSCP-ACCESS-038",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two domains explicitly accept each other's identities under the configured agreement. Which trust description fits?",
+    "options": [
+      "Per-request resource authorization",
+      "A bidirectional trust relationship",
+      "A one-way trust relationship",
+      "A transitive trust relationship"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A bidirectional relationship permits identity recognition in both directions, subject to separate authorization rules."
+  },
+  {
+    "id": "SSCP-ACCESS-039",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A configured trust permits recognition through an intermediate trusted domain rather than requiring a direct agreement between every pair. Which description fits?",
+    "options": [
+      "A bidirectional trust relationship",
+      "Per-request resource authorization",
+      "A transitive trust relationship",
+      "A one-way trust relationship"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Transitivity allows trust to extend through defined relationships. It must not be assumed for every trust arrangement."
+  },
+  {
+    "id": "SSCP-ACCESS-040",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpAccess",
+    "skill": "access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system recognizes a partner identity but still evaluates each requested application operation using current policy. Which decision remains separate from identity trust?",
+    "options": [
+      "A one-way trust relationship",
+      "A bidirectional trust relationship",
+      "A transitive trust relationship",
+      "Per-request resource authorization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Recognition of an identity does not automatically authorize every resource operation. Resource authorization remains necessary."
+  },
+  {
+    "id": "SSCP-RISK-001",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An assessment identifies an organized group with the intent and capability to disrupt the organization. What does the group represent?",
+    "options": [
+      "A threat source",
+      "A vulnerability",
+      "A business impact",
+      "An implemented safeguard"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The actor is a threat source. A weakness it might exploit would be a vulnerability."
+  },
+  {
+    "id": "SSCP-RISK-002",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An assessment finds that a public application runs an unsupported component with a known exploitable flaw. What does that weakness represent?",
+    "options": [
+      "An implemented safeguard",
+      "A vulnerability",
+      "A threat source",
+      "A business impact"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The exploitable weakness is a vulnerability, distinct from an actor or resulting loss."
+  },
+  {
+    "id": "SSCP-RISK-003",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service interruption would prevent payroll processing and create contractual penalties. What do those consequences represent?",
+    "options": [
+      "A vulnerability",
+      "An implemented safeguard",
+      "A business impact",
+      "A threat source"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The consequences to organizational objectives are business impacts."
+  },
+  {
+    "id": "SSCP-RISK-004",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization has deployed an access gateway that enforces approved connection policy. What does this deployed measure represent?",
+    "options": [
+      "A threat source",
+      "A vulnerability",
+      "A business impact",
+      "An implemented safeguard"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An implemented safeguard modifies risk by enforcing a protective measure."
+  },
+  {
+    "id": "SSCP-RISK-005",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business decides not to launch a proposed service because its exposure exceeds the approved tolerance and no suitable controls are available. Which treatment is selected?",
+    "options": [
+      "Avoid the risky activity",
+      "Mitigate the identified risk",
+      "Transfer specified financial exposure",
+      "Accept the residual risk"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Avoidance removes the activity creating the exposure rather than operating it with controls."
+  },
+  {
+    "id": "SSCP-RISK-006",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team deploys tested restrictions to reduce the likelihood of unauthorized access while continuing the service. Which treatment is selected?",
+    "options": [
+      "Accept the residual risk",
+      "Mitigate the identified risk",
+      "Avoid the risky activity",
+      "Transfer specified financial exposure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mitigation reduces likelihood or impact through controls while the activity continues."
+  },
+  {
+    "id": "SSCP-RISK-007",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization purchases an insurance policy covering defined incident costs while retaining responsibility for operating its systems securely. Which treatment applies to the covered costs?",
+    "options": [
+      "Mitigate the identified risk",
+      "Accept the residual risk",
+      "Transfer specified financial exposure",
+      "Avoid the risky activity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Insurance can transfer specified financial exposure, without transferring all responsibility or eliminating the risk."
+  },
+  {
+    "id": "SSCP-RISK-008",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After reviewing a small remaining exposure within tolerance, the authorized owner documents a decision to operate without additional controls. Which treatment is selected?",
+    "options": [
+      "Avoid the risky activity",
+      "Mitigate the identified risk",
+      "Transfer specified financial exposure",
+      "Accept the residual risk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Authorized acceptance explicitly retains the assessed residual risk."
+  },
+  {
+    "id": "SSCP-RISK-009",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A requested review has no agreement on which subsidiaries, networks or time period it covers. Which assessment task should resolve this boundary?",
+    "options": [
+      "Define the assessment scope",
+      "Identify the affected assets",
+      "Estimate likelihood and impact",
+      "Assign the risk response owner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scope establishes what is and is not included in the review."
+  },
+  {
+    "id": "SSCP-RISK-010",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An assessor needs to determine which data stores and business services depend on an aging platform. Which task establishes what is exposed?",
+    "options": [
+      "Assign the risk response owner",
+      "Identify the affected assets",
+      "Define the assessment scope",
+      "Estimate likelihood and impact"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Identify the assets and dependencies before interpreting their exposure."
+  },
+  {
+    "id": "SSCP-RISK-011",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A weakness and its affected services are known. Management needs a reasoned view of how probable exploitation is and how serious its consequences would be. Which task provides this?",
+    "options": [
+      "Identify the affected assets",
+      "Assign the risk response owner",
+      "Estimate likelihood and impact",
+      "Define the assessment scope"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Risk estimation considers likelihood and impact in context, rather than treating the weakness alone as the complete risk."
+  },
+  {
+    "id": "SSCP-RISK-012",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk register entry has an agreed response but no person accountable for completing it. Which governance task is missing?",
+    "options": [
+      "Define the assessment scope",
+      "Identify the affected assets",
+      "Estimate likelihood and impact",
+      "Assign the risk response owner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Assigning a response owner makes follow-through accountable and trackable."
+  },
+  {
+    "id": "SSCP-RISK-013",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vulnerability score summarizes the flaw's technical characteristics before considering this organization's business use. What does that score primarily express?",
+    "options": [
+      "Technical severity",
+      "Asset criticality",
+      "Observed exploitation",
+      "Control effectiveness"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A technical severity score is useful input but does not alone establish organizational priority."
+  },
+  {
+    "id": "SSCP-RISK-014",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two similarly exposed systems have the same flaw, but one supports an essential clinical service. Which factor explains prioritizing that system?",
+    "options": [
+      "Control effectiveness",
+      "Asset criticality",
+      "Technical severity",
+      "Observed exploitation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Asset criticality reflects the importance and potential business impact of the affected service."
+  },
+  {
+    "id": "SSCP-RISK-015",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Threat intelligence shows that attackers are actively using a weakness against comparable organizations. Which factor has changed?",
+    "options": [
+      "Asset criticality",
+      "Control effectiveness",
+      "Observed exploitation",
+      "Technical severity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Observed exploitation changes the evidence about threat activity and likelihood."
+  },
+  {
+    "id": "SSCP-RISK-016",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A proposed mitigation is deployed, but testing shows requests still bypass it. Which factor must be reassessed?",
+    "options": [
+      "Technical severity",
+      "Asset criticality",
+      "Observed exploitation",
+      "Control effectiveness"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The control's effectiveness is poor even though its installation was completed."
+  },
+  {
+    "id": "SSCP-RISK-017",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scanner reports a vulnerable version, but the product may contain a vendor backport. Which next step establishes whether the reported weakness actually applies?",
+    "options": [
+      "Validate the finding",
+      "Prioritize the remediation",
+      "Implement the approved correction",
+      "Verify the remediation outcome"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Validate evidence and vendor applicability before treating the scanner result as confirmed."
+  },
+  {
+    "id": "SSCP-RISK-018",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several confirmed weaknesses compete for limited maintenance time. Which task uses exposure and business impact to decide their order?",
+    "options": [
+      "Verify the remediation outcome",
+      "Prioritize the remediation",
+      "Validate the finding",
+      "Implement the approved correction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Prioritization ranks confirmed remediation work using context, not merely discovery order."
+  },
+  {
+    "id": "SSCP-RISK-019",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tested patch has received change approval for tonight's window. Which task now changes the vulnerable system?",
+    "options": [
+      "Prioritize the remediation",
+      "Verify the remediation outcome",
+      "Implement the approved correction",
+      "Validate the finding"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Implement the authorized correction according to the change plan."
+  },
+  {
+    "id": "SSCP-RISK-020",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A patch job reports success, but the risk team needs proof that the vulnerability is no longer present. Which task provides that assurance?",
+    "options": [
+      "Validate the finding",
+      "Prioritize the remediation",
+      "Implement the approved correction",
+      "Verify the remediation outcome"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Verification checks the resulting condition; a successful deployment log alone is insufficient."
+  },
+  {
+    "id": "SSCP-RISK-021",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An alert claims a malicious login, but investigation confirms the login was legitimate and no malicious event occurred. How is the alert classified?",
+    "options": [
+      "A false positive",
+      "A false negative",
+      "A true positive",
+      "A true negative"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A false positive flags an event as malicious when the relevant malicious condition is absent."
+  },
+  {
+    "id": "SSCP-RISK-022",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A confirmed malicious transfer occurred, but the detection rule did not alert. How is the detection result classified?",
+    "options": [
+      "A true negative",
+      "A false negative",
+      "A false positive",
+      "A true positive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A false negative misses the malicious condition that was present."
+  },
+  {
+    "id": "SSCP-RISK-023",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A detection rule alerts on a malicious file transfer, and investigation confirms that the transfer was malicious. How is this result classified?",
+    "options": [
+      "A false negative",
+      "A true negative",
+      "A true positive",
+      "A false positive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A true positive correctly detects the malicious condition."
+  },
+  {
+    "id": "SSCP-RISK-024",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A benign health-check transaction occurs and the detection system correctly produces no malicious-activity alert. How is this result classified?",
+    "options": [
+      "A false positive",
+      "A false negative",
+      "A true positive",
+      "A true negative"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A true negative correctly leaves the absent malicious condition unflagged."
+  },
+  {
+    "id": "SSCP-RISK-025",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A monitoring team cannot distinguish unusual outbound volume from ordinary nightly processing because it has not characterized normal operation. Which task closes that gap?",
+    "options": [
+      "Establish a normal baseline",
+      "Correlate related events",
+      "Normalize event timestamps",
+      "Protect retained log evidence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A representative baseline establishes expected behavior and variation."
+  },
+  {
+    "id": "SSCP-RISK-026",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A single failed login is inconclusive, but combining repeated failures with later privilege changes may reveal a pattern. Which analysis activity is needed?",
+    "options": [
+      "Protect retained log evidence",
+      "Correlate related events",
+      "Establish a normal baseline",
+      "Normalize event timestamps"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Correlation links relevant events across sources and time to support interpretation."
+  },
+  {
+    "id": "SSCP-RISK-027",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two systems describe the same incident using different time zones and an unexplained clock offset. Which step is needed before ordering their events?",
+    "options": [
+      "Correlate related events",
+      "Protect retained log evidence",
+      "Normalize event timestamps",
+      "Establish a normal baseline"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Normalize time information while retaining original evidence and recording the offset assumptions."
+  },
+  {
+    "id": "SSCP-RISK-028",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An investigation depends on logs that ordinary application administrators can silently alter. Which monitoring control addresses this evidentiary weakness?",
+    "options": [
+      "Establish a normal baseline",
+      "Correlate related events",
+      "Normalize event timestamps",
+      "Protect retained log evidence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Restrict and protect retained logs against unauthorized modification, with appropriate integrity and access controls."
+  },
+  {
+    "id": "SSCP-RISK-029",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Assessors need to inspect installed packages and local settings using an approved read account on each host. Which assessment approach fits?",
+    "options": [
+      "Credentialed configuration assessment",
+      "External exposure assessment",
+      "Authorized penetration testing",
+      "Compliance evidence review"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Credentialed assessment can inspect internal configuration that an unauthenticated scan may not reveal."
+  },
+  {
+    "id": "SSCP-RISK-030",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team needs to understand which services are reachable from the public internet without using internal credentials. Which approach fits?",
+    "options": [
+      "Compliance evidence review",
+      "External exposure assessment",
+      "Credentialed configuration assessment",
+      "Authorized penetration testing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "External exposure assessment examines the organization from the relevant outside vantage point."
+  },
+  {
+    "id": "SSCP-RISK-031",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under signed rules of engagement, testers will validate whether selected weaknesses can be combined to achieve an agreed objective. Which approach fits?",
+    "options": [
+      "External exposure assessment",
+      "Compliance evidence review",
+      "Authorized penetration testing",
+      "Credentialed configuration assessment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Authorized penetration testing validates exploitation paths within explicit scope and constraints."
+  },
+  {
+    "id": "SSCP-RISK-032",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An auditor evaluates retained approvals and access-review records against a specified organizational requirement. Which approach fits?",
+    "options": [
+      "Credentialed configuration assessment",
+      "External exposure assessment",
+      "Authorized penetration testing",
+      "Compliance evidence review"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Compliance evidence review assesses conformity to stated requirements, rather than actively exploiting systems."
+  },
+  {
+    "id": "SSCP-RISK-033",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team must decide when old customer records may be deleted while preserving records subject to a legal hold. Which obligation category must be checked?",
+    "options": [
+      "Data retention requirements",
+      "Data-location requirements",
+      "Permitted processing purposes",
+      "Breach notification obligations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Retention requirements and holds govern how long records must remain available and when disposal is permitted."
+  },
+  {
+    "id": "SSCP-RISK-034",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A proposed service would move regulated records to another jurisdiction. Which obligation category directly governs whether that placement is permitted?",
+    "options": [
+      "Breach notification obligations",
+      "Data-location requirements",
+      "Data retention requirements",
+      "Permitted processing purposes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Data-location and cross-border requirements must be assessed for the specific context."
+  },
+  {
+    "id": "SSCP-RISK-035",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst wants to reuse personal records for an activity unrelated to the reason they were collected. Which privacy issue must be reviewed?",
+    "options": [
+      "Data-location requirements",
+      "Breach notification obligations",
+      "Permitted processing purposes",
+      "Data retention requirements"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The permitted purpose and applicable authority for processing determine whether the new use is allowed."
+  },
+  {
+    "id": "SSCP-RISK-036",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A confirmed disclosure may trigger a duty to inform a regulator or affected people within an applicable period. Which obligation category is involved?",
+    "options": [
+      "Data retention requirements",
+      "Data-location requirements",
+      "Permitted processing purposes",
+      "Breach notification obligations"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Notification duties depend on the applicable law and facts; no single deadline applies universally."
+  },
+  {
+    "id": "SSCP-RISK-037",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A review samples 200 required access approvals. Ten are missing. What proportion of the sampled approvals is missing?",
+    "options": [
+      "A rate of 5%",
+      "A rate of 20%",
+      "A rate of 80%",
+      "A rate of 95%"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "10 divided by 200 equals 0.05, or 5%. The sample does not by itself establish the whole-population rate."
+  },
+  {
+    "id": "SSCP-RISK-038",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Of 150 confirmed vulnerabilities due for correction this month, 30 remain open at the deadline. What percentage of that due group remains open?",
+    "options": [
+      "A rate of 95%",
+      "A rate of 20%",
+      "A rate of 5%",
+      "A rate of 80%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "30 divided by 150 equals 0.20, or 20%."
+  },
+  {
+    "id": "SSCP-RISK-039",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A detection exercise includes 50 malicious test events. The rule detects 40. What percentage of those malicious test events was detected?",
+    "options": [
+      "A rate of 20%",
+      "A rate of 95%",
+      "A rate of 80%",
+      "A rate of 5%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "40 divided by 50 equals 0.80, or 80%. This measures detection within the defined test set, not all possible attacks."
+  },
+  {
+    "id": "SSCP-RISK-040",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpRisk",
+    "skill": "risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A restore verification program tests 60 backups and successfully restores 57. What is the observed success percentage?",
+    "options": [
+      "A rate of 5%",
+      "A rate of 20%",
+      "A rate of 80%",
+      "A rate of 95%"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "57 divided by 60 equals 0.95, or 95%. The result is an observed test outcome, not a guarantee for future recovery."
+  },
+  {
+    "id": "SSCP-INCIDENT-001",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before an incident, a team verifies contact lists, responsibilities, tools and escalation paths. Which response activity is being performed?",
+    "options": [
+      "Prepare response capabilities",
+      "Analyze the reported event",
+      "Contain the confirmed incident",
+      "Improve after the incident"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Preparation establishes the capabilities needed to respond effectively."
+  },
+  {
+    "id": "SSCP-INCIDENT-002",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An unusual account alert arrives. Responders examine available evidence to determine what happened and whether an incident exists. Which activity is this?",
+    "options": [
+      "Improve after the incident",
+      "Analyze the reported event",
+      "Prepare response capabilities",
+      "Contain the confirmed incident"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Analysis interprets the event and establishes its nature and scope."
+  },
+  {
+    "id": "SSCP-INCIDENT-003",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A confirmed compromised workstation is restricted from communicating with other production systems under the approved response plan. Which activity is this?",
+    "options": [
+      "Analyze the reported event",
+      "Improve after the incident",
+      "Contain the confirmed incident",
+      "Prepare response capabilities"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Containment limits ongoing damage and spread while supporting further response."
+  },
+  {
+    "id": "SSCP-INCIDENT-004",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After recovery, a team documents why escalation failed and changes the procedure to prevent recurrence. Which activity is this?",
+    "options": [
+      "Prepare response capabilities",
+      "Analyze the reported event",
+      "Contain the confirmed incident",
+      "Improve after the incident"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Post-incident improvement uses lessons to strengthen future prevention and response."
+  },
+  {
+    "id": "SSCP-INCIDENT-005",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Responders have contained an intrusion and identified the persistence mechanism. Which activity eliminates that mechanism before return to service?",
+    "options": [
+      "Remove the established cause",
+      "Restore the trusted service",
+      "Monitor the recovered environment",
+      "Communicate the incident status"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Eradication removes the established malicious cause and persistence, rather than merely reconnecting the service."
+  },
+  {
+    "id": "SSCP-INCIDENT-006",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cleaned system and verified backup are ready, and the recovery owner authorizes re-establishing the business function. Which activity follows?",
+    "options": [
+      "Communicate the incident status",
+      "Restore the trusted service",
+      "Remove the established cause",
+      "Monitor the recovered environment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Restoration returns a trusted service to operation under the recovery plan."
+  },
+  {
+    "id": "SSCP-INCIDENT-007",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A recovered service is operating again. Responders now look for recurrence or unexpected residual behavior. Which activity is being performed?",
+    "options": [
+      "Restore the trusted service",
+      "Communicate the incident status",
+      "Monitor the recovered environment",
+      "Remove the established cause"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Post-restoration monitoring helps identify incomplete recovery or renewed compromise."
+  },
+  {
+    "id": "SSCP-INCIDENT-008",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The approved response lead must give affected business teams a factual update on scope, service impact and next steps. Which activity is this?",
+    "options": [
+      "Remove the established cause",
+      "Restore the trusted service",
+      "Monitor the recovered environment",
+      "Communicate the incident status"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Status communication coordinates stakeholders using verified information and the agreed channel."
+  },
+  {
+    "id": "SSCP-INCIDENT-009",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst is about to work on the only copy of a potentially relevant storage image. What evidentiary safeguard is needed before analysis changes it?",
+    "options": [
+      "Preserve the original evidence",
+      "Record the custody transfer",
+      "Obtain the required authority",
+      "Document the analytical method"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Preserve the original and work on controlled copies as appropriate so the source evidence remains available."
+  },
+  {
+    "id": "SSCP-INCIDENT-010",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An evidence drive passes from the collecting technician to the forensic examiner. Which record preserves traceability of that handoff?",
+    "options": [
+      "Document the analytical method",
+      "Record the custody transfer",
+      "Preserve the original evidence",
+      "Obtain the required authority"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Record who transferred and received the evidence, when, and under what handling conditions."
+  },
+  {
+    "id": "SSCP-INCIDENT-011",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A proposed examination includes privately owned devices beyond the current authorization. Which issue must be resolved before expanding the examination?",
+    "options": [
+      "Record the custody transfer",
+      "Document the analytical method",
+      "Obtain the required authority",
+      "Preserve the original evidence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Confirm legal and organizational authority for the additional scope rather than assuming access permission."
+  },
+  {
+    "id": "SSCP-INCIDENT-012",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An examiner reaches a conclusion from several tools and transformations. What record allows another qualified examiner to assess how the conclusion was reached?",
+    "options": [
+      "Preserve the original evidence",
+      "Record the custody transfer",
+      "Obtain the required authority",
+      "Document the analytical method"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Document methods, tool details, assumptions and relevant results so the analysis can be evaluated."
+  },
+  {
+    "id": "SSCP-INCIDENT-013",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An authorized examiner needs the current running-process and memory state that will disappear when the host powers off. Which evidence activity addresses that need?",
+    "options": [
+      "Capture volatile evidence",
+      "Acquire persistent evidence",
+      "Verify an evidence copy",
+      "Build the incident timeline"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Capture relevant volatile evidence using an approved method before it disappears, while recording any changes caused by collection."
+  },
+  {
+    "id": "SSCP-INCIDENT-014",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A case requires a controlled copy of stored files and file-system metadata for later examination. Which evidence activity is appropriate?",
+    "options": [
+      "Build the incident timeline",
+      "Acquire persistent evidence",
+      "Capture volatile evidence",
+      "Verify an evidence copy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Acquire persistent storage evidence using approved procedures that preserve relevant information."
+  },
+  {
+    "id": "SSCP-INCIDENT-015",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A collected image is transferred to another analysis system. The examiner compares a suitable cryptographic digest with the recorded acquisition digest. What is the purpose?",
+    "options": [
+      "Acquire persistent evidence",
+      "Build the incident timeline",
+      "Verify an evidence copy",
+      "Capture volatile evidence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The comparison checks that the copied evidence matches the recorded image; it does not prove every fact about its original source."
+  },
+  {
+    "id": "SSCP-INCIDENT-016",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Responders need to order the validated login, process and transfer events to understand the sequence of compromise. Which analysis product serves this need?",
+    "options": [
+      "Capture volatile evidence",
+      "Acquire persistent evidence",
+      "Verify an evidence copy",
+      "Build the incident timeline"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An incident timeline combines supported events and time assumptions into an ordered account."
+  },
+  {
+    "id": "SSCP-INCIDENT-017",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service plan sets a target of restoring a business function within four hours after disruption. Which measure is this?",
+    "options": [
+      "Recovery time objective",
+      "Recovery point objective",
+      "Maximum tolerable downtime",
+      "Backup retention period"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The recovery time objective is the targeted restoration interval."
+  },
+  {
+    "id": "SSCP-INCIDENT-018",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business can tolerate losing no more than the last 15 minutes of committed records following recovery. Which measure expresses that tolerance?",
+    "options": [
+      "Backup retention period",
+      "Recovery point objective",
+      "Recovery time objective",
+      "Maximum tolerable downtime"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The recovery point objective expresses the tolerated data-loss interval measured back from the disruption."
+  },
+  {
+    "id": "SSCP-INCIDENT-019",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business impact analysis identifies the longest interruption the organization can tolerate before consequences become unacceptable. Which measure is this?",
+    "options": [
+      "Recovery point objective",
+      "Backup retention period",
+      "Maximum tolerable downtime",
+      "Recovery time objective"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Maximum tolerable downtime describes the outer business tolerance, which should inform shorter recovery targets."
+  },
+  {
+    "id": "SSCP-INCIDENT-020",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A policy requires weekly backup copies to remain available for six months before approved expiration. Which measure is being specified?",
+    "options": [
+      "Recovery time objective",
+      "Recovery point objective",
+      "Maximum tolerable downtime",
+      "Backup retention period"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Retention specifies how long backup copies are kept, not how quickly service must be restored."
+  },
+  {
+    "id": "SSCP-INCIDENT-021",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A backup captures all data within the selected scope regardless of previous backup changes. Which approach is this?",
+    "options": [
+      "A full backup",
+      "An incremental backup",
+      "A differential backup",
+      "A tested restoration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A full backup copies the whole selected scope."
+  },
+  {
+    "id": "SSCP-INCIDENT-022",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A backup captures changes since the most recent backup in the sequence, whether that previous backup was full or incremental. Which approach is this?",
+    "options": [
+      "A tested restoration",
+      "An incremental backup",
+      "A full backup",
+      "A differential backup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Incremental backup captures changes since the preceding backup; restoration may require the complete relevant chain."
+  },
+  {
+    "id": "SSCP-INCIDENT-023",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A backup captures all changes since the last full backup, even if some were captured yesterday. Which approach is this?",
+    "options": [
+      "An incremental backup",
+      "A tested restoration",
+      "A differential backup",
+      "A full backup"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Differential backup accumulates changes since the full baseline."
+  },
+  {
+    "id": "SSCP-INCIDENT-024",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Operators use a retained copy to rebuild an isolated service and verify its required data and functionality. What has been performed?",
+    "options": [
+      "A full backup",
+      "An incremental backup",
+      "A differential backup",
+      "A tested restoration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A restoration test checks recoverability and function; merely completing a backup job does not do this."
+  },
+  {
+    "id": "SSCP-INCIDENT-025",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A ransomware incident could reach both production and continuously writable backup storage through the same credentials. Which recovery design feature addresses that shared compromise path?",
+    "options": [
+      "An isolated recovery copy",
+      "Geographic recovery separation",
+      "Redundant live capacity",
+      "A documented failback procedure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An appropriately isolated copy reduces the chance that the same compromised access can alter all recovery data."
+  },
+  {
+    "id": "SSCP-INCIDENT-026",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Primary and recovery facilities sit in the same flood zone. Which design feature addresses that correlated physical hazard?",
+    "options": [
+      "A documented failback procedure",
+      "Geographic recovery separation",
+      "An isolated recovery copy",
+      "Redundant live capacity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Geographic separation should account for shared hazards and dependencies, not just a different street address."
+  },
+  {
+    "id": "SSCP-INCIDENT-027",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service must continue operating when a single server fails, without waiting for a full rebuild. Which feature addresses immediate capacity continuity?",
+    "options": [
+      "Geographic recovery separation",
+      "A documented failback procedure",
+      "Redundant live capacity",
+      "An isolated recovery copy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Redundant live capacity supports continuity after a component failure, subject to correct failover design."
+  },
+  {
+    "id": "SSCP-INCIDENT-028",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service operates at an alternate site after recovery. Staff need an approved way to return to the normal site without losing new records. Which procedure is required?",
+    "options": [
+      "An isolated recovery copy",
+      "Geographic recovery separation",
+      "Redundant live capacity",
+      "A documented failback procedure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Failback planning coordinates return, synchronization and validation after alternate operation."
+  },
+  {
+    "id": "SSCP-INCIDENT-029",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Participants read a recovery plan together to confirm contact details and responsibilities without introducing an incident scenario. Which activity is this?",
+    "options": [
+      "A plan walkthrough",
+      "A tabletop exercise",
+      "A technical restoration exercise",
+      "A controlled failover exercise"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A walkthrough checks the documented plan and roles through structured review."
+  },
+  {
+    "id": "SSCP-INCIDENT-030",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Participants discuss decisions and escalation during a simulated outage, without moving live workloads. Which exercise is this?",
+    "options": [
+      "A controlled failover exercise",
+      "A tabletop exercise",
+      "A plan walkthrough",
+      "A technical restoration exercise"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A tabletop uses a scenario to practice coordination and decision-making without executing a live recovery."
+  },
+  {
+    "id": "SSCP-INCIDENT-031",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Technicians rebuild an isolated application from retained backup data and test its functions. Which exercise is this?",
+    "options": [
+      "A tabletop exercise",
+      "A controlled failover exercise",
+      "A technical restoration exercise",
+      "A plan walkthrough"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A technical restoration exercise verifies the ability to reconstruct and use the service from recovery material."
+  },
+  {
+    "id": "SSCP-INCIDENT-032",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under an approved test plan, a service transfers actual processing to its alternate environment and validates continuity. Which exercise is this?",
+    "options": [
+      "A plan walkthrough",
+      "A tabletop exercise",
+      "A technical restoration exercise",
+      "A controlled failover exercise"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Controlled failover tests the operational transition to alternate capacity, with appropriate risk controls."
+  },
+  {
+    "id": "SSCP-INCIDENT-033",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service has a four-hour RTO and a 30-minute RPO. It is restored in three hours with 20 minutes of lost records. Which assessment is correct?",
+    "options": [
+      "The RTO is met; the RPO is met",
+      "The RTO is met; the RPO is missed",
+      "The RTO is missed; the RPO is met",
+      "The RTO is missed; the RPO is missed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Three hours is within four, and 20 minutes is within 30, so both targets are met."
+  },
+  {
+    "id": "SSCP-INCIDENT-034",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A billing service has a two-hour RTO and a ten-minute RPO. Recovery takes 90 minutes, but 25 minutes of transactions are lost. Which assessment is correct?",
+    "options": [
+      "The RTO is missed; the RPO is missed",
+      "The RTO is met; the RPO is missed",
+      "The RTO is met; the RPO is met",
+      "The RTO is missed; the RPO is met"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Restoration is within two hours, but data loss exceeds ten minutes."
+  },
+  {
+    "id": "SSCP-INCIDENT-035",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A warehouse system has a one-hour RTO and a 15-minute RPO. Recovery takes 80 minutes and loses five minutes of updates. Which assessment is correct?",
+    "options": [
+      "The RTO is met; the RPO is missed",
+      "The RTO is missed; the RPO is missed",
+      "The RTO is missed; the RPO is met",
+      "The RTO is met; the RPO is met"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 80-minute restoration exceeds the one-hour RTO, while five minutes of loss is within the RPO."
+  },
+  {
+    "id": "SSCP-INCIDENT-036",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpIncident",
+    "skill": "incident",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A booking service has a three-hour RTO and a five-minute RPO. Recovery takes four hours and loses 12 minutes of bookings. Which assessment is correct?",
+    "options": [
+      "The RTO is met; the RPO is met",
+      "The RTO is met; the RPO is missed",
+      "The RTO is missed; the RPO is met",
+      "The RTO is missed; the RPO is missed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Both the restoration interval and the data-loss interval exceed their respective targets."
+  },
+  {
+    "id": "SSCP-CRYPTO-001",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A protected data store uses the same secret key to encrypt and decrypt its records. Which mechanism is described?",
+    "options": [
+      "Symmetric encryption",
+      "Public-key encryption",
+      "A cryptographic hash",
+      "A digital signature"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Symmetric encryption uses a shared secret key for encryption and decryption."
+  },
+  {
+    "id": "SSCP-CRYPTO-002",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sender encrypts a small secret using the intended recipient's public key, so the corresponding private key is needed to recover it. Which mechanism is described?",
+    "options": [
+      "A digital signature",
+      "Public-key encryption",
+      "Symmetric encryption",
+      "A cryptographic hash"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Public-key encryption uses a key pair, with the private key retained by the recipient."
+  },
+  {
+    "id": "SSCP-CRYPTO-003",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A distribution service publishes a fixed-length digest of a file through a separately authenticated channel so recipients can compare downloaded contents. Which mechanism produces that digest?",
+    "options": [
+      "Public-key encryption",
+      "A digital signature",
+      "A cryptographic hash",
+      "Symmetric encryption"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A cryptographic hash maps the file to a digest. The trusted delivery of the reference digest matters because a bare hash does not authenticate its publisher."
+  },
+  {
+    "id": "SSCP-CRYPTO-004",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A publisher uses a private signing key so recipients can verify the integrity and claimed origin of a software release with the associated public key. Which mechanism is described?",
+    "options": [
+      "Symmetric encryption",
+      "Public-key encryption",
+      "A cryptographic hash",
+      "A digital signature"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A digital signature supports integrity and origin authentication when the verifying key is trusted. It does not by itself hide the software contents."
+  },
+  {
+    "id": "SSCP-CRYPTO-005",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage design requires both secrecy and detection of unauthorized ciphertext modification using an appropriate symmetric construction. Which mechanism fits?",
+    "options": [
+      "Authenticated encryption",
+      "A keyed message authentication code",
+      "Password hashing with a unique salt",
+      "A cryptographically secure random generator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Authenticated encryption combines confidentiality with integrity protection when used correctly."
+  },
+  {
+    "id": "SSCP-CRYPTO-006",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two services share a secret and need to verify message authenticity without hiding the message. They do not need public verification. Which mechanism fits?",
+    "options": [
+      "A cryptographically secure random generator",
+      "A keyed message authentication code",
+      "Authenticated encryption",
+      "Password hashing with a unique salt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A keyed MAC, such as HMAC, supports shared-key message authentication without providing encryption or public nonrepudiation."
+  },
+  {
+    "id": "SSCP-CRYPTO-007",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A password database must avoid storing recoverable passwords and make identical choices produce distinct stored verifiers. Which mechanism fits?",
+    "options": [
+      "A keyed message authentication code",
+      "A cryptographically secure random generator",
+      "Password hashing with a unique salt",
+      "Authenticated encryption"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A suitable password hashing scheme with unique salts protects stored verifiers and prevents identical passwords from simply sharing the same stored result."
+  },
+  {
+    "id": "SSCP-CRYPTO-008",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system needs unpredictable secret key material rather than values derived from a timestamp. Which mechanism should supply it?",
+    "options": [
+      "Authenticated encryption",
+      "A keyed message authentication code",
+      "Password hashing with a unique salt",
+      "A cryptographically secure random generator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A cryptographically secure random generator supplies suitable unpredictability when correctly seeded and used."
+  },
+  {
+    "id": "SSCP-CRYPTO-009",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization wants to prevent unauthorized parties from producing signatures under its software-publisher identity. Which key-management safeguard directly addresses that risk?",
+    "options": [
+      "Protect the private signing key",
+      "Validate the certificate chain",
+      "Check the certificate identity",
+      "Check certificate revocation status"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Protect the private signing key and control its use; public verification keys need not be secret."
+  },
+  {
+    "id": "SSCP-CRYPTO-010",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client receives a server certificate and must establish a path to an accepted trust anchor. Which validation step is required?",
+    "options": [
+      "Check certificate revocation status",
+      "Validate the certificate chain",
+      "Protect the private signing key",
+      "Check the certificate identity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chain validation establishes the certificate's relationship to an accepted trust anchor, subject to the relevant checks."
+  },
+  {
+    "id": "SSCP-CRYPTO-011",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A certificate is otherwise valid, but it was issued for a different server name than the one requested. Which validation step should catch the mismatch?",
+    "options": [
+      "Validate the certificate chain",
+      "Check certificate revocation status",
+      "Check the certificate identity",
+      "Protect the private signing key"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Identity matching checks that the certificate applies to the intended peer, not merely that a trusted issuer signed it."
+  },
+  {
+    "id": "SSCP-CRYPTO-012",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A certificate has not expired, but its key was compromised and the issuer has withdrawn trust before the end of its lifetime. Which check addresses that change?",
+    "options": [
+      "Protect the private signing key",
+      "Validate the certificate chain",
+      "Check the certificate identity",
+      "Check certificate revocation status"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Revocation-status checking can identify a certificate withdrawn before normal expiration, according to the validation policy."
+  },
+  {
+    "id": "SSCP-CRYPTO-013",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new encrypted service has no key yet. Its approved design calls for a securely generated key delivered only to the permitted service. Which lifecycle activity is needed?",
+    "options": [
+      "Generate and provision the key",
+      "Rotate the active key",
+      "Recover an authorized archived key",
+      "Destroy retired key material"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Secure generation and provisioning establish appropriate initial key material and access."
+  },
+  {
+    "id": "SSCP-CRYPTO-014",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A key has reached its approved usage limit. The service must begin protecting new data under a replacement while maintaining authorized access to older data. Which activity is needed?",
+    "options": [
+      "Destroy retired key material",
+      "Rotate the active key",
+      "Generate and provision the key",
+      "Recover an authorized archived key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rotation introduces a replacement and manages the transition; old decryption needs must be handled deliberately."
+  },
+  {
+    "id": "SSCP-CRYPTO-015",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A legally retained archive must be read, and the relevant historical decryption key is held in an approved recovery system. Which lifecycle activity serves the request?",
+    "options": [
+      "Rotate the active key",
+      "Destroy retired key material",
+      "Recover an authorized archived key",
+      "Generate and provision the key"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Authorized key recovery supports legitimate access to protected historical material under the established controls."
+  },
+  {
+    "id": "SSCP-CRYPTO-016",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retired key has no remaining permitted use or retention requirement. The approved lifecycle calls for making it unavailable for future use. Which activity applies?",
+    "options": [
+      "Generate and provision the key",
+      "Rotate the active key",
+      "Recover an authorized archived key",
+      "Destroy retired key material"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Destroy retired key material according to the applicable procedure once required dependencies and retention are resolved."
+  },
+  {
+    "id": "SSCP-CRYPTO-017",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web application needs protection for client-to-server communications using HTTPS. Which mechanism directly provides the secure channel?",
+    "options": [
+      "TLS for an application connection",
+      "IPsec for network-layer traffic",
+      "SSH for remote administration",
+      "Encryption for stored volumes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "HTTPS uses TLS to protect the application connection when peer validation and configuration are correct."
+  },
+  {
+    "id": "SSCP-CRYPTO-018",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two gateways must protect selected IP traffic between networks without changing each application. Which mechanism operates at the relevant network layer?",
+    "options": [
+      "Encryption for stored volumes",
+      "IPsec for network-layer traffic",
+      "TLS for an application connection",
+      "SSH for remote administration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "IPsec protects IP traffic according to configured policies and can support gateway tunnels."
+  },
+  {
+    "id": "SSCP-CRYPTO-019",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator needs an encrypted interactive command session to a remote server using a protocol designed for that purpose. Which mechanism fits?",
+    "options": [
+      "IPsec for network-layer traffic",
+      "Encryption for stored volumes",
+      "SSH for remote administration",
+      "TLS for an application connection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SSH supports secure remote administration with appropriate host and user authentication."
+  },
+  {
+    "id": "SSCP-CRYPTO-020",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An archive stores removable backup volumes in an off-site warehouse. The requirement is to protect the stored contents if a volume is taken without its separately protected key. Which mechanism addresses this scenario?",
+    "options": [
+      "TLS for an application connection",
+      "IPsec for network-layer traffic",
+      "SSH for remote administration",
+      "Encryption for stored volumes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stored-volume encryption protects data at rest under the stated key condition. Network channel encryption alone does not protect the local disk."
+  },
+  {
+    "id": "SSCP-CRYPTO-021",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application stores readable decryption keys in the same broadly accessible location as the encrypted records. Which design change directly addresses this access failure?",
+    "options": [
+      "Separate encryption keys from ciphertext",
+      "Use a unique nonce as required",
+      "Plan cryptographic agility",
+      "Preserve signature verification evidence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Separate key access from ciphertext access with appropriate controls. Encryption offers little protection when the same unauthorized party can readily obtain the key."
+  },
+  {
+    "id": "SSCP-CRYPTO-022",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A selected authenticated-encryption mode requires that a value never repeat under the same key. Which implementation obligation must be enforced?",
+    "options": [
+      "Preserve signature verification evidence",
+      "Use a unique nonce as required",
+      "Separate encryption keys from ciphertext",
+      "Plan cryptographic agility"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Follow the construction's nonce requirements. Reuse under modes that require uniqueness can undermine security."
+  },
+  {
+    "id": "SSCP-CRYPTO-023",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization inventories algorithms and dependencies so it can replace vulnerable cryptographic mechanisms without redesigning every application. Which capability is being developed?",
+    "options": [
+      "Use a unique nonce as required",
+      "Preserve signature verification evidence",
+      "Plan cryptographic agility",
+      "Separate encryption keys from ciphertext"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cryptographic agility supports controlled algorithm and key transitions as requirements and threats change."
+  },
+  {
+    "id": "SSCP-CRYPTO-024",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpCrypto",
+    "skill": "crypto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A signed record must remain assessable years later, after the signer's certificate expires. Which archival concern should be planned?",
+    "options": [
+      "Separate encryption keys from ciphertext",
+      "Use a unique nonce as required",
+      "Plan cryptographic agility",
+      "Preserve signature verification evidence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Retain the evidence needed by the applicable long-term validation approach, such as trusted timing and relevant certificate status. A present-day signature check alone does not plan future validation."
+  },
+  {
+    "id": "SSCP-NETWORK-001",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A device chooses the next hop toward a destination IP subnet. Which type of decision is being made?",
+    "options": [
+      "A network-layer routing decision",
+      "A transport-layer port check",
+      "An application-layer request check",
+      "A link-layer forwarding decision"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Routing toward an IP destination is a network-layer function."
+  },
+  {
+    "id": "SSCP-NETWORK-002",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rule permits TCP destination port 443 while denying TCP destination port 23. Which type of check is this?",
+    "options": [
+      "A link-layer forwarding decision",
+      "A transport-layer port check",
+      "A network-layer routing decision",
+      "An application-layer request check"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "TCP ports are transport-layer identifiers. A port number alone does not prove the application content is safe."
+  },
+  {
+    "id": "SSCP-NETWORK-003",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A gateway examines the structure of an HTTP request before deciding whether to allow it. Which type of check is this?",
+    "options": [
+      "A transport-layer port check",
+      "A link-layer forwarding decision",
+      "An application-layer request check",
+      "A network-layer routing decision"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "HTTP request semantics are application-layer information rather than merely a port or IP route."
+  },
+  {
+    "id": "SSCP-NETWORK-004",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Within an Ethernet segment, a switch uses a destination MAC address to select a forwarding interface. Which type of decision is this?",
+    "options": [
+      "A network-layer routing decision",
+      "A transport-layer port check",
+      "An application-layer request check",
+      "A link-layer forwarding decision"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MAC-based Ethernet forwarding is a link-layer function."
+  },
+  {
+    "id": "SSCP-NETWORK-005",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A perimeter device tracks established connection state and uses it when evaluating return traffic. Which control is described?",
+    "options": [
+      "A stateful firewall",
+      "A web application firewall",
+      "A network intrusion detector",
+      "A network access control service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A stateful firewall evaluates traffic in the context of tracked connections."
+  },
+  {
+    "id": "SSCP-NETWORK-006",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team needs a control focused on suspicious HTTP request patterns directed at a public web application. Which control is designed for that role?",
+    "options": [
+      "A network access control service",
+      "A web application firewall",
+      "A stateful firewall",
+      "A network intrusion detector"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A web application firewall focuses on web application traffic. It supplements rather than replaces secure application code."
+  },
+  {
+    "id": "SSCP-NETWORK-007",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sensor receives mirrored traffic and generates alerts, but is not in the forwarding path and cannot directly drop those packets. Which control is described?",
+    "options": [
+      "A web application firewall",
+      "A network access control service",
+      "A network intrusion detector",
+      "A stateful firewall"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A passive network intrusion detector observes and alerts without acting as an inline packet-blocking control."
+  },
+  {
+    "id": "SSCP-NETWORK-008",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A joining endpoint is evaluated against device and identity policy before receiving the appropriate network access. Which control is described?",
+    "options": [
+      "A stateful firewall",
+      "A web application firewall",
+      "A network intrusion detector",
+      "A network access control service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Network access control evaluates admission or placement according to the organization's access policy."
+  },
+  {
+    "id": "SSCP-NETWORK-009",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Visitor laptops currently share the same unrestricted network as internal workstations. Which design change first establishes distinct access zones for those populations?",
+    "options": [
+      "Separate the guest network",
+      "Restrict inter-segment traffic",
+      "Protect the management interface",
+      "Place the sensor on the required path"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Separate the guest network into an appropriately controlled zone rather than treating visitors as internal peers."
+  },
+  {
+    "id": "SSCP-NETWORK-010",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two VLANs exist, but the router permits all traffic between them. Which change makes their security boundary enforce the intended permitted flows?",
+    "options": [
+      "Place the sensor on the required path",
+      "Restrict inter-segment traffic",
+      "Separate the guest network",
+      "Protect the management interface"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Enforce inter-segment policy at the routing or filtering boundary. VLAN separation alone does not guarantee traffic restrictions."
+  },
+  {
+    "id": "SSCP-NETWORK-011",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A network appliance exposes its administrative service to all user subnets. Which change reduces the unnecessary administrative exposure?",
+    "options": [
+      "Restrict inter-segment traffic",
+      "Place the sensor on the required path",
+      "Protect the management interface",
+      "Separate the guest network"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Restrict and protect management access using approved administrative paths and authentication."
+  },
+  {
+    "id": "SSCP-NETWORK-012",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A detection sensor monitors internet ingress, but the suspicious traffic moves only between internal server segments. Which placement change improves visibility for this case?",
+    "options": [
+      "Separate the guest network",
+      "Restrict inter-segment traffic",
+      "Protect the management interface",
+      "Place the sensor on the required path"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Observe the path carrying the relevant internal traffic; a sensor cannot inspect traffic that never reaches it."
+  },
+  {
+    "id": "SSCP-NETWORK-013",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two office gateways maintain a protected tunnel carrying traffic between their private networks. Which access pattern is this?",
+    "options": [
+      "A site-to-site VPN",
+      "A remote-access VPN",
+      "A virtual desktop service",
+      "An application reverse proxy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A site-to-site VPN connects networks through their gateways."
+  },
+  {
+    "id": "SSCP-NETWORK-014",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee's managed laptop establishes an authenticated tunnel into the organization while away from the office. Which access pattern is this?",
+    "options": [
+      "An application reverse proxy",
+      "A remote-access VPN",
+      "A site-to-site VPN",
+      "A virtual desktop service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A remote-access VPN connects an individual remote endpoint to permitted organizational resources."
+  },
+  {
+    "id": "SSCP-NETWORK-015",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user interacts with a centrally hosted desktop session while applications and working data remain in that hosted environment. Which access pattern is this?",
+    "options": [
+      "A remote-access VPN",
+      "An application reverse proxy",
+      "A virtual desktop service",
+      "A site-to-site VPN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Virtual desktop access presents a remote desktop session; controls are still needed for permitted data transfers."
+  },
+  {
+    "id": "SSCP-NETWORK-016",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "External users reach one published web application through a gateway that forwards requests to its backend, without joining the internal network. Which access pattern is this?",
+    "options": [
+      "A site-to-site VPN",
+      "A remote-access VPN",
+      "A virtual desktop service",
+      "An application reverse proxy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A reverse proxy fronts the published application rather than granting general network membership."
+  },
+  {
+    "id": "SSCP-NETWORK-017",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A managed Wi-Fi client must avoid accepting an impersonated enterprise authentication server during its configured EAP method. Which check addresses this risk?",
+    "options": [
+      "Verify the wireless authentication server",
+      "Use individual enterprise credentials",
+      "Isolate untrusted wireless clients",
+      "Retire unsupported wireless equipment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Correct server-certificate validation helps prevent trusting an impersonated authentication service."
+  },
+  {
+    "id": "SSCP-NETWORK-018",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization needs to revoke one employee's Wi-Fi access without changing a shared secret for everyone. Which identity design supports that need?",
+    "options": [
+      "Retire unsupported wireless equipment",
+      "Use individual enterprise credentials",
+      "Verify the wireless authentication server",
+      "Isolate untrusted wireless clients"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Individual enterprise credentials allow per-user lifecycle and revocation rather than reliance on one shared passphrase."
+  },
+  {
+    "id": "SSCP-NETWORK-019",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A public Wi-Fi service should prevent visitors from directly reaching other guests' devices. Which network behavior should be configured?",
+    "options": [
+      "Use individual enterprise credentials",
+      "Retire unsupported wireless equipment",
+      "Isolate untrusted wireless clients",
+      "Verify the wireless authentication server"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Client isolation limits direct guest-to-guest reachability where supported and correctly configured."
+  },
+  {
+    "id": "SSCP-NETWORK-020",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An access point cannot receive security fixes and cannot meet the organization's required wireless protection. Which lifecycle response addresses the persistent limitation?",
+    "options": [
+      "Verify the wireless authentication server",
+      "Use individual enterprise credentials",
+      "Isolate untrusted wireless clients",
+      "Retire unsupported wireless equipment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Replace or retire unsupported equipment under the approved plan rather than assume configuration can add unavailable capabilities."
+  },
+  {
+    "id": "SSCP-NETWORK-021",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Many distributed sources overwhelm a public service so legitimate clients cannot obtain responses. Which threat pattern is described?",
+    "options": [
+      "Distributed denial of service",
+      "On-path interception",
+      "DNS cache poisoning",
+      "Unauthorized network attachment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Distributed denial of service targets availability through traffic or resource exhaustion from multiple sources."
+  },
+  {
+    "id": "SSCP-NETWORK-022",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An adversary is positioned between communicating endpoints and attempts to observe or alter their exchanges. Which threat pattern is described?",
+    "options": [
+      "Unauthorized network attachment",
+      "On-path interception",
+      "Distributed denial of service",
+      "DNS cache poisoning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An on-path adversary can intercept traffic; authenticated protected channels help address this threat."
+  },
+  {
+    "id": "SSCP-NETWORK-023",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A resolver stores a forged name-to-address result and subsequently directs users to the wrong destination. Which threat pattern is described?",
+    "options": [
+      "On-path interception",
+      "Unauthorized network attachment",
+      "DNS cache poisoning",
+      "Distributed denial of service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DNS cache poisoning introduces false resolution data into a cache."
+  },
+  {
+    "id": "SSCP-NETWORK-024",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An unapproved device connects to an office network port and obtains access intended only for managed endpoints. Which threat pattern is described?",
+    "options": [
+      "Distributed denial of service",
+      "On-path interception",
+      "DNS cache poisoning",
+      "Unauthorized network attachment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The issue is unauthorized network attachment, which admission and port controls can help address."
+  },
+  {
+    "id": "SSCP-NETWORK-025",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A volumetric attack saturates the organization's internet circuit before local equipment can process traffic. Which measure addresses the bottleneck at a useful location?",
+    "options": [
+      "Upstream traffic filtering",
+      "Authenticated channel protection",
+      "DNSSEC validation",
+      "Network admission enforcement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Upstream filtering or scrubbing can reduce attack traffic before it consumes the constrained link."
+  },
+  {
+    "id": "SSCP-NETWORK-026",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client communicates across an untrusted network and must detect peer impersonation and message modification. Which control directly protects the exchange?",
+    "options": [
+      "Network admission enforcement",
+      "Authenticated channel protection",
+      "Upstream traffic filtering",
+      "DNSSEC validation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An authenticated protected channel provides peer validation and integrity when configured correctly."
+  },
+  {
+    "id": "SSCP-NETWORK-027",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A validating resolver must detect forged signed DNS data using a configured chain of trust. Which mechanism supplies this validation?",
+    "options": [
+      "Authenticated channel protection",
+      "Network admission enforcement",
+      "DNSSEC validation",
+      "Upstream traffic filtering"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DNSSEC validates signed DNS data using trust relationships; it does not encrypt ordinary DNS queries."
+  },
+  {
+    "id": "SSCP-NETWORK-028",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Only approved devices should obtain normal access through enterprise network ports. Which mechanism enforces that joining condition?",
+    "options": [
+      "Upstream traffic filtering",
+      "Authenticated channel protection",
+      "DNSSEC validation",
+      "Network admission enforcement"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Network admission enforcement can evaluate identity and device policy before granting the permitted access."
+  },
+  {
+    "id": "SSCP-NETWORK-029",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A building sensor needs to report only to one management service but can currently contact every internal subnet. Which change reduces unnecessary reachability?",
+    "options": [
+      "Limit the IoT device's network paths",
+      "Validate the firmware update source",
+      "Replace default device credentials",
+      "Plan for the device's end of support"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Restrict its network paths to the required communications and manage exceptions explicitly."
+  },
+  {
+    "id": "SSCP-NETWORK-030",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A device administrator receives a firmware image through an unverified message. What must be established before installing it?",
+    "options": [
+      "Plan for the device's end of support",
+      "Validate the firmware update source",
+      "Limit the IoT device's network paths",
+      "Replace default device credentials"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Verify the authorized source and integrity through the vendor's supported validation process."
+  },
+  {
+    "id": "SSCP-NETWORK-031",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newly installed device still uses the manufacturer's widely known initial login. Which provisioning action addresses this immediate credential weakness?",
+    "options": [
+      "Validate the firmware update source",
+      "Plan for the device's end of support",
+      "Replace default device credentials",
+      "Limit the IoT device's network paths"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Replace default credentials and establish the approved identity configuration before normal operation."
+  },
+  {
+    "id": "SSCP-NETWORK-032",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor announces that security maintenance for a deployed sensor will end next year. Which lifecycle activity should begin?",
+    "options": [
+      "Limit the IoT device's network paths",
+      "Validate the firmware update source",
+      "Replace default device credentials",
+      "Plan for the device's end of support"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Plan a supported replacement or approved retirement and manage exposure during the transition."
+  },
+  {
+    "id": "SSCP-NETWORK-033",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall exception remains active, but no team can explain its purpose or accept responsibility for it. Which governance information is missing?",
+    "options": [
+      "Review the rule's business owner",
+      "Check the rule order",
+      "Test the intended traffic flow",
+      "Remove the expired exception"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An accountable owner and justified purpose are needed to review whether the exception remains appropriate."
+  },
+  {
+    "id": "SSCP-NETWORK-034",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A specific deny rule never takes effect because an earlier broad allow rule matches first in a first-match policy. What must be examined?",
+    "options": [
+      "Remove the expired exception",
+      "Check the rule order",
+      "Review the rule's business owner",
+      "Test the intended traffic flow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rule order determines which matching action is applied in a first-match policy."
+  },
+  {
+    "id": "SSCP-NETWORK-035",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A proposed firewall change has been approved, but the team needs evidence that the required application still works and prohibited paths remain blocked. Which activity supplies that evidence?",
+    "options": [
+      "Check the rule order",
+      "Remove the expired exception",
+      "Test the intended traffic flow",
+      "Review the rule's business owner"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Test representative permitted and denied flows rather than relying only on a syntactically valid configuration."
+  },
+  {
+    "id": "SSCP-NETWORK-036",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A temporary partner connection was authorized only until a project ended yesterday, and no extension is approved. Which lifecycle action follows?",
+    "options": [
+      "Review the rule's business owner",
+      "Check the rule order",
+      "Test the intended traffic flow",
+      "Remove the expired exception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Remove or disable the expired exception through the authorized process so temporary access does not become permanent."
+  },
+  {
+    "id": "SSCP-NETWORK-037",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router's administration currently uses an unprotected remote session. Which management-plane improvement protects the administrator's exchange?",
+    "options": [
+      "Use authenticated, encrypted administrative access",
+      "Synchronize the device clock",
+      "Centralize device event collection",
+      "Back up the approved configuration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Use approved authenticated encrypted administration, such as properly configured SSH, and restrict its reachability."
+  },
+  {
+    "id": "SSCP-NETWORK-038",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Network device events cannot be accurately correlated because their timestamps differ substantially. Which operational control addresses this?",
+    "options": [
+      "Back up the approved configuration",
+      "Synchronize the device clock",
+      "Use authenticated, encrypted administrative access",
+      "Centralize device event collection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Maintain appropriate time synchronization and record time-zone information for useful correlation."
+  },
+  {
+    "id": "SSCP-NETWORK-039",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A failed appliance may take its locally stored event history with it. Which logging design reduces dependence on that single local store?",
+    "options": [
+      "Synchronize the device clock",
+      "Back up the approved configuration",
+      "Centralize device event collection",
+      "Use authenticated, encrypted administrative access"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Forward relevant events to a protected central collection service while managing delivery and retention."
+  },
+  {
+    "id": "SSCP-NETWORK-040",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpNetwork",
+    "skill": "network",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A replacement appliance must be rebuilt after hardware failure. Which maintained artifact helps restore the intended policy?",
+    "options": [
+      "Use authenticated, encrypted administrative access",
+      "Synchronize the device clock",
+      "Centralize device event collection",
+      "Back up the approved configuration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A protected backup of the approved configuration supports controlled reconstruction and validation."
+  },
+  {
+    "id": "SSCP-SYSTEMS-001",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A workstation should execute only software permitted by an established application policy. Which endpoint control most directly enforces that execution boundary?",
+    "options": [
+      "Application allowlisting",
+      "Endpoint behavior monitoring",
+      "Full-disk encryption",
+      "Host firewall enforcement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Application allowlisting restricts execution to the permitted policy set."
+  },
+  {
+    "id": "SSCP-SYSTEMS-002",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team needs visibility into suspicious process chains and associated endpoint activity to investigate possible compromise. Which capability directly supplies that telemetry?",
+    "options": [
+      "Host firewall enforcement",
+      "Endpoint behavior monitoring",
+      "Application allowlisting",
+      "Full-disk encryption"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Endpoint behavior monitoring provides activity evidence for detection and investigation."
+  },
+  {
+    "id": "SSCP-SYSTEMS-003",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization wants to reduce disclosure from a stolen, powered-off laptop whose decryption key is unavailable to the thief. Which endpoint safeguard directly addresses this?",
+    "options": [
+      "Endpoint behavior monitoring",
+      "Host firewall enforcement",
+      "Full-disk encryption",
+      "Application allowlisting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Full-disk encryption protects stored data under the stated key and device condition."
+  },
+  {
+    "id": "SSCP-SYSTEMS-004",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop must reject unsolicited inbound connections even when it is used outside the corporate perimeter. Which local control enforces that network rule?",
+    "options": [
+      "Application allowlisting",
+      "Endpoint behavior monitoring",
+      "Full-disk encryption",
+      "Host firewall enforcement"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A host firewall applies network policy at the endpoint, including away from the enterprise perimeter."
+  },
+  {
+    "id": "SSCP-SYSTEMS-005",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee installs an apparent document utility that secretly performs unauthorized actions. Which malware behavior is illustrated?",
+    "options": [
+      "Malicious software disguised as a useful tool",
+      "Self-propagating malicious software",
+      "Malicious software that encrypts for extortion",
+      "Software that covertly collects user information"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Trojan disguises malicious behavior within an apparently useful or legitimate program."
+  },
+  {
+    "id": "SSCP-SYSTEMS-006",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A malicious program automatically spreads between vulnerable systems without needing a user to attach it to a separate host file. Which behavior is illustrated?",
+    "options": [
+      "Software that covertly collects user information",
+      "Self-propagating malicious software",
+      "Malicious software disguised as a useful tool",
+      "Malicious software that encrypts for extortion"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Worm-like behavior involves self-propagation between systems."
+  },
+  {
+    "id": "SSCP-SYSTEMS-007",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A malicious program makes business files inaccessible and demands payment for recovery. Which behavior is illustrated?",
+    "options": [
+      "Self-propagating malicious software",
+      "Software that covertly collects user information",
+      "Malicious software that encrypts for extortion",
+      "Malicious software disguised as a useful tool"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ransomware commonly uses encryption or other denial of access for extortion; payment does not guarantee recovery."
+  },
+  {
+    "id": "SSCP-SYSTEMS-008",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An unauthorized program silently records browsing and user activity for an outside party. Which behavior is illustrated?",
+    "options": [
+      "Malicious software disguised as a useful tool",
+      "Self-propagating malicious software",
+      "Malicious software that encrypts for extortion",
+      "Software that covertly collects user information"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Spyware covertly collects information about users or their activity."
+  },
+  {
+    "id": "SSCP-SYSTEMS-009",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A convincing email requests an urgent change to a supplier's payment account. Before authorizing any change, what action directly validates the request?",
+    "options": [
+      "Verify through a known independent channel",
+      "Report the suspicious message",
+      "Revoke the exposed credential",
+      "Preserve the relevant message evidence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Use a previously established independent contact method rather than contact details supplied in the unverified request."
+  },
+  {
+    "id": "SSCP-SYSTEMS-010",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee receives a suspected phishing message, has not interacted with it and is instructed to use the organization's reporting mechanism. What should the employee do?",
+    "options": [
+      "Preserve the relevant message evidence",
+      "Report the suspicious message",
+      "Verify through a known independent channel",
+      "Revoke the exposed credential"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Report through the designated channel so the security team can assess and respond."
+  },
+  {
+    "id": "SSCP-SYSTEMS-011",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user entered an account password into a confirmed fraudulent page. The account owner is coordinating with responders. Which credential action addresses continued misuse?",
+    "options": [
+      "Report the suspicious message",
+      "Preserve the relevant message evidence",
+      "Revoke the exposed credential",
+      "Verify through a known independent channel"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Revoke or replace the exposed credential and address active sessions through the response process."
+  },
+  {
+    "id": "SSCP-SYSTEMS-012",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Responders are investigating a targeted impersonation attempt and need its original headers and content. Which handling action supports their analysis?",
+    "options": [
+      "Verify through a known independent channel",
+      "Report the suspicious message",
+      "Revoke the exposed credential",
+      "Preserve the relevant message evidence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Preserve relevant message evidence using the approved process rather than altering or discarding the original."
+  },
+  {
+    "id": "SSCP-SYSTEMS-013",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization needs to enforce managed phone configuration, inventory and compliance requirements across enrolled devices. Which capability fits?",
+    "options": [
+      "Mobile device management",
+      "Mobile application management",
+      "Separation of work and personal data",
+      "An approved remote wipe process"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mobile device management governs device-level configuration and compliance."
+  },
+  {
+    "id": "SSCP-SYSTEMS-014",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company needs controls focused on its business applications and their data on permitted mobile devices. Which capability fits?",
+    "options": [
+      "An approved remote wipe process",
+      "Mobile application management",
+      "Mobile device management",
+      "Separation of work and personal data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mobile application management applies policy at the application and business-data level."
+  },
+  {
+    "id": "SSCP-SYSTEMS-015",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bring-your-own-device program must keep organizational documents distinct from the owner's personal photos and messages. Which design principle addresses this boundary?",
+    "options": [
+      "Mobile application management",
+      "An approved remote wipe process",
+      "Separation of work and personal data",
+      "Mobile device management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Separate work and personal data through an appropriate managed boundary and clear policy."
+  },
+  {
+    "id": "SSCP-SYSTEMS-016",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A managed phone containing sensitive work data is lost. Policy and authorization specify removing protected data remotely when the device reconnects. Which response capability is needed?",
+    "options": [
+      "Mobile device management",
+      "Mobile application management",
+      "Separation of work and personal data",
+      "An approved remote wipe process"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An authorized remote wipe process can remove the designated data when technically reachable; it is not a guarantee that an offline device was wiped."
+  },
+  {
+    "id": "SSCP-SYSTEMS-017",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider supplies virtual machines and storage while the customer manages the guest operating system and applications. Which service model is this?",
+    "options": [
+      "Infrastructure as a Service",
+      "Platform as a Service",
+      "Software as a Service",
+      "Customer-managed on-premises hosting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IaaS supplies infrastructure while leaving guest operating systems and applications under customer management."
+  },
+  {
+    "id": "SSCP-SYSTEMS-018",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider manages the operating system and runtime, while the customer deploys its own application into that supported environment. Which service model is this?",
+    "options": [
+      "Customer-managed on-premises hosting",
+      "Platform as a Service",
+      "Infrastructure as a Service",
+      "Software as a Service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PaaS provides a managed application platform while the customer controls its deployed application."
+  },
+  {
+    "id": "SSCP-SYSTEMS-019",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Employees use a provider-operated business application through a browser and configure permitted user settings. Which service model is this?",
+    "options": [
+      "Platform as a Service",
+      "Customer-managed on-premises hosting",
+      "Software as a Service",
+      "Infrastructure as a Service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SaaS provides the application itself, with limited customer configuration rather than management of the underlying stack."
+  },
+  {
+    "id": "SSCP-SYSTEMS-020",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization owns and operates the physical servers, operating systems and application in its own facility. No external cloud service is involved. Which hosting arrangement is described?",
+    "options": [
+      "Infrastructure as a Service",
+      "Platform as a Service",
+      "Software as a Service",
+      "Customer-managed on-premises hosting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "This is customer-managed on-premises hosting, with the stated stack operated by the organization."
+  },
+  {
+    "id": "SSCP-SYSTEMS-021",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cloud environment is provisioned for the exclusive use of one organization with multiple business units. Which deployment model fits?",
+    "options": [
+      "A private cloud deployment",
+      "A public cloud deployment",
+      "A community cloud deployment",
+      "A hybrid cloud deployment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A private cloud is for exclusive organizational use and can be operated on or off premises."
+  },
+  {
+    "id": "SSCP-SYSTEMS-022",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider offers cloud services for open use by the general public. Which deployment model fits?",
+    "options": [
+      "A hybrid cloud deployment",
+      "A public cloud deployment",
+      "A private cloud deployment",
+      "A community cloud deployment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A public cloud is provisioned for open use by the general public, subject to service agreements."
+  },
+  {
+    "id": "SSCP-SYSTEMS-023",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several organizations with shared compliance concerns use a cloud provisioned exclusively for that defined community. Which deployment model fits?",
+    "options": [
+      "A public cloud deployment",
+      "A hybrid cloud deployment",
+      "A community cloud deployment",
+      "A private cloud deployment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A community cloud serves a defined group with shared concerns."
+  },
+  {
+    "id": "SSCP-SYSTEMS-024",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Distinct private and public cloud environments remain separate but are connected by technology enabling data and application portability. Which deployment model fits?",
+    "options": [
+      "A private cloud deployment",
+      "A public cloud deployment",
+      "A community cloud deployment",
+      "A hybrid cloud deployment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A hybrid cloud combines distinct cloud infrastructures with the stated binding capability."
+  },
+  {
+    "id": "SSCP-SYSTEMS-025",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IaaS contract assigns guest operating-system maintenance to the customer. A guest security update is due. Which responsibility must the customer perform?",
+    "options": [
+      "Patch the guest operating system",
+      "Review tenant access permissions",
+      "Assess the provider's assurance evidence",
+      "Define service exit requirements"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The customer must patch the guest under the stated responsibility model; provider infrastructure maintenance does not replace this duty."
+  },
+  {
+    "id": "SSCP-SYSTEMS-026",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A SaaS provider protects its infrastructure, but the customer has made a confidential workspace accessible to every employee. Which customer action addresses the identified issue?",
+    "options": [
+      "Define service exit requirements",
+      "Review tenant access permissions",
+      "Patch the guest operating system",
+      "Assess the provider's assurance evidence"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Review and correct tenant permissions. Provider infrastructure protection does not determine the customer's appropriate sharing policy."
+  },
+  {
+    "id": "SSCP-SYSTEMS-027",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before approving a cloud supplier, an organization needs evidence about the supplier's relevant controls and the scope of independent assessments. Which activity fits?",
+    "options": [
+      "Review tenant access permissions",
+      "Define service exit requirements",
+      "Assess the provider's assurance evidence",
+      "Patch the guest operating system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Assess applicable assurance evidence and its scope rather than infer control effectiveness from a marketing claim."
+  },
+  {
+    "id": "SSCP-SYSTEMS-028",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business may leave its current cloud service next year and must preserve access to its records in a usable form. Which contractual planning task addresses this?",
+    "options": [
+      "Patch the guest operating system",
+      "Review tenant access permissions",
+      "Assess the provider's assurance evidence",
+      "Define service exit requirements"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Define exit, data export, retention and disposal requirements before dependence makes migration difficult."
+  },
+  {
+    "id": "SSCP-SYSTEMS-029",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Virtual machines run under a hypervisor installed directly on the hardware without a general-purpose host operating system beneath it. Which architecture is this?",
+    "options": [
+      "A type 1 hypervisor",
+      "A type 2 hypervisor",
+      "Operating-system-level containers",
+      "A virtual machine snapshot"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A type 1 hypervisor runs directly on the hardware."
+  },
+  {
+    "id": "SSCP-SYSTEMS-030",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A desktop virtualization application runs on top of an existing general-purpose host operating system. Which architecture is this?",
+    "options": [
+      "A virtual machine snapshot",
+      "A type 2 hypervisor",
+      "A type 1 hypervisor",
+      "Operating-system-level containers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A type 2 hypervisor is hosted by an operating system."
+  },
+  {
+    "id": "SSCP-SYSTEMS-031",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several isolated application environments share the host kernel rather than each running a separate guest kernel. Which architecture is this?",
+    "options": [
+      "A type 2 hypervisor",
+      "A virtual machine snapshot",
+      "Operating-system-level containers",
+      "A type 1 hypervisor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Operating-system-level containers share the host kernel, making host isolation and hardening important."
+  },
+  {
+    "id": "SSCP-SYSTEMS-032",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator records a virtual machine's state at a particular point for a controlled short-term rollback. Which artifact is created?",
+    "options": [
+      "A type 1 hypervisor",
+      "A type 2 hypervisor",
+      "Operating-system-level containers",
+      "A virtual machine snapshot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A snapshot records a point-in-time state. It should not automatically be treated as an independent protected backup."
+  },
+  {
+    "id": "SSCP-SYSTEMS-033",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One administrative console can change every virtual machine in a cluster. Which security focus addresses the concentrated privilege of that console?",
+    "options": [
+      "Harden the virtualization management plane",
+      "Limit unnecessary host integration",
+      "Control image provenance",
+      "Remove abandoned virtual machines"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Protect the management plane with restricted access, strong authentication, monitoring and approved changes."
+  },
+  {
+    "id": "SSCP-SYSTEMS-034",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sensitive guest has unneeded shared folders and device passthrough links to its host. Which hardening change reduces those extra interaction paths?",
+    "options": [
+      "Remove abandoned virtual machines",
+      "Limit unnecessary host integration",
+      "Harden the virtualization management plane",
+      "Control image provenance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Remove unnecessary host integration to reduce exposure while preserving required functionality."
+  },
+  {
+    "id": "SSCP-SYSTEMS-035",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to deploy a virtual appliance downloaded from an unverified mirror. Which supply-chain check is needed before trusting it?",
+    "options": [
+      "Limit unnecessary host integration",
+      "Remove abandoned virtual machines",
+      "Control image provenance",
+      "Harden the virtualization management plane"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Validate provenance and integrity through the authorized source and approval process."
+  },
+  {
+    "id": "SSCP-SYSTEMS-036",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cluster contains unused test guests with old credentials and no owner. Which lifecycle action reduces this unmanaged exposure?",
+    "options": [
+      "Harden the virtualization management plane",
+      "Limit unnecessary host integration",
+      "Control image provenance",
+      "Remove abandoned virtual machines"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Identify ownership and retire abandoned guests through the approved process, including retained data handling."
+  },
+  {
+    "id": "SSCP-SYSTEMS-037",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application builds database commands by mixing user-supplied values into executable query text. Which development change separates values from query structure?",
+    "options": [
+      "Parameterize database values",
+      "Encode output for its context",
+      "Authorize each object request",
+      "Validate software dependencies"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Parameterized queries keep supplied values distinct from the command structure when used correctly."
+  },
+  {
+    "id": "SSCP-SYSTEMS-038",
+    "section": "sscp",
+    "test": 0,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web page displays untrusted text within HTML. Which protection ensures the text is treated as data in that output context?",
+    "options": [
+      "Validate software dependencies",
+      "Encode output for its context",
+      "Parameterize database values",
+      "Authorize each object request"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use appropriate contextual output encoding or safe text rendering so untrusted content is not interpreted as executable markup."
+  },
+  {
+    "id": "SSCP-SYSTEMS-039",
+    "section": "sscp",
+    "test": 1,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A signed-in user changes a record identifier and receives another customer's private record. Which server-side check is missing?",
+    "options": [
+      "Encode output for its context",
+      "Validate software dependencies",
+      "Authorize each object request",
+      "Parameterize database values"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The service must authorize access to the requested object for the current user, not merely verify that someone is signed in."
+  },
+  {
+    "id": "SSCP-SYSTEMS-040",
+    "section": "sscp",
+    "test": 2,
+    "module": 1,
+    "domain": "sscpSystems",
+    "skill": "systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application imports an outdated library with a known security flaw. Which lifecycle activity directly addresses this component exposure?",
+    "options": [
+      "Parameterize database values",
+      "Encode output for its context",
+      "Authorize each object request",
+      "Validate software dependencies"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Track and evaluate dependencies, then update or otherwise mitigate the affected component under a controlled process."
+  }
+]

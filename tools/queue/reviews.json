@@ -80,6 +80,11 @@
     "cadc": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 5 }],
     "nzdrone": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }],
     "nzham": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 1 }],
-    "aufirearmsnsw": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }]
+    "aufirearmsnsw": [{ "date": "2026-11-15", "kind": "blind review at build", "pr": 821, "findings": 4 }],
+    "appraiser": [{ "date": "2026-11-17", "kind": "blind review at build", "pr": null, "findings": 2, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/appraiser/review.md" }],
+    "zafirearm": [{ "date": "2026-11-17", "kind": "blind review at build", "pr": null, "findings": 1, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/zafirearm/review.md" }],
+    "securityx": [{ "date": "2026-11-17", "kind": "blind review at build", "pr": null, "findings": 1, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/securityx/review.md" }],
+    "sscp": [{ "date": "2026-11-17", "kind": "blind review at build", "pr": null, "findings": 1, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/sscp/review.md" }],
+    "servicenowcsa": [{ "date": "2026-11-17", "kind": "blind review at build", "pr": null, "findings": 0, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/servicenowcsa/review.md" }]
   }
 }

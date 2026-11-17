@@ -1,0 +1,4234 @@
+[
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-001",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst deliberately saved several frequently used pages and now wants that curated set, rather than every recently visited page. Which navigation choice fits?",
+    "options": [
+      "Open Favorites",
+      "Open History",
+      "Open Workspaces",
+      "Use the navigation filter"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Favorites contains items the user has marked for convenient return. History reflects activity rather than an intentionally curated set."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-002",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user opened a record earlier today but did not bookmark it and cannot remember its number. Which navigation area is intended to help retrace that activity?",
+    "options": [
+      "Use the navigation filter",
+      "Open History",
+      "Open Favorites",
+      "Open Workspaces"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "History records activity across the instance and can help return to recently used pages."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-003",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An agent has access to a dedicated operational workspace and wants to enter that experience from the unified header. Which menu serves that purpose?",
+    "options": [
+      "Open History",
+      "Use the navigation filter",
+      "Open Workspaces",
+      "Open Favorites"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Workspaces menu lists available workspaces, subject to access and instance configuration."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-004",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator knows part of a module name and wants to locate its navigation entry quickly. Which control should narrow the available menu entries?",
+    "options": [
+      "Open Favorites",
+      "Open History",
+      "Open Workspaces",
+      "Use the navigation filter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The navigation filter locates modules and menu entries; it is distinct from searching record contents across the instance."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-005",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A coordinator needs to compare the numbers, priorities and assignment groups of many incidents in rows before opening any one incident. Which interaction fits?",
+    "options": [
+      "Inspect a list of records",
+      "Open one record's form",
+      "Search across the instance",
+      "Review personal preferences"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A list presents multiple records and selected columns for comparison and filtering."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-006",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician needs to inspect and edit the fields of one selected incident, including information not shown in the list columns. Which interaction fits?",
+    "options": [
+      "Review personal preferences",
+      "Open one record's form",
+      "Inspect a list of records",
+      "Search across the instance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A form presents an individual record for detailed viewing and editing, subject to permissions."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-007",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user has a distinctive phrase but does not know which available application contains the relevant record. Which interaction is designed for a broader search?",
+    "options": [
+      "Open one record's form",
+      "Review personal preferences",
+      "Search across the instance",
+      "Inspect a list of records"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Global search searches across the instance according to supported sources and access. A module filter searches navigation entries instead."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-008",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user wants to change their own display and accessibility settings without configuring everyone's experience. Which area fits?",
+    "options": [
+      "Inspect a list of records",
+      "Open one record's form",
+      "Search across the instance",
+      "Review personal preferences"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Personal preferences govern the user's own supported settings, rather than a shared instance configuration."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-009",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester cannot find a newly created test record and notices that the browser address points to production rather than the test environment. Which context explains the discrepancy?",
+    "options": [
+      "Check the current instance",
+      "Check the current application scope",
+      "Check the effective user identity",
+      "Check the selected view"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The instance identifies the environment being used. Records in a test environment are not automatically the same as production records."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-010",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer is about to add an application resource but the selected context belongs to a different application. Which context should be corrected before creating it?",
+    "options": [
+      "Check the selected view",
+      "Check the current application scope",
+      "Check the current instance",
+      "Check the effective user identity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The current application scope determines the application context for the work. Navigation to a page alone does not establish the intended scope."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-011",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator is reproducing a user issue and finds that the session still represents a previously impersonated colleague. Which context must be corrected?",
+    "options": [
+      "Check the current application scope",
+      "Check the selected view",
+      "Check the effective user identity",
+      "Check the current instance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The effective user identity determines whose experience and access are being exercised during impersonation."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-012",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two authorized users open the same record but see different arrangements of fields. Permissions are already confirmed equivalent. Which presentation context should be compared?",
+    "options": [
+      "Check the current instance",
+      "Check the current application scope",
+      "Check the effective user identity",
+      "Check the selected view"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Different views can present different subsets or arrangements of fields on the same underlying record."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-013",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user can open an authorized page by its approved direct link but cannot find the corresponding menu entry. What should the administrator investigate first?",
+    "options": [
+      "A navigation-access issue",
+      "A record-access issue",
+      "A saved-filter issue",
+      "A personalization issue"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Investigate the navigation entry and its access/configuration. Successful direct access means the missing menu alone does not establish a record ACL denial."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-014",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A menu entry is visible, but opening a particular protected record is denied. What kind of issue should be investigated rather than merely adding another menu link?",
+    "options": [
+      "A personalization issue",
+      "A record-access issue",
+      "A navigation-access issue",
+      "A saved-filter issue"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Record authorization is separate from navigation visibility. A visible link does not grant access to the protected data."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-015",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A list contains fewer records than expected, and its active conditions exclude the missing records. The user has confirmed read permission. What explains the immediate result?",
+    "options": [
+      "A record-access issue",
+      "A personalization issue",
+      "A saved-filter issue",
+      "A navigation-access issue"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The active filter narrows the displayed records. Permission to read a record does not force it to match the list conditions."
+  },
+  {
+    "id": "SERVICENOWCSA-NAVIGATION-016",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaNavigation",
+    "skill": "navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Only one user sees an unusual column arrangement, and resetting that user's list preferences restores the shared arrangement. What kind of issue was demonstrated?",
+    "options": [
+      "A navigation-access issue",
+      "A record-access issue",
+      "A saved-filter issue",
+      "A personalization issue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The observed change follows the user's personalization rather than a shared table or access-rule change."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-001",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team requests a feature plugin, but another administrator may already have enabled it. What should be checked before planning another activation?",
+    "options": [
+      "Check the existing activation status",
+      "Review the required dependencies",
+      "Request provider activation",
+      "Validate in a non-production instance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Confirm the current activation status first. A missing menu or an unfamiliar feature does not prove the plugin is inactive."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-002",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application's installation information lists prerequisite components. What should be evaluated before the installation is approved?",
+    "options": [
+      "Validate in a non-production instance",
+      "Review the required dependencies",
+      "Check the existing activation status",
+      "Request provider activation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Review prerequisites and dependencies so the intended installation has the required supporting components."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-003",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A required plugin is not available for self-activation in Application Manager. The documented route requires ServiceNow personnel. Which action fits?",
+    "options": [
+      "Review the required dependencies",
+      "Validate in a non-production instance",
+      "Request provider activation",
+      "Check the existing activation status"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Use the supported provider activation request. Creating an unrelated application does not activate the unavailable plugin."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-004",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An approved feature changes an existing business process. The team has a suitable test instance and needs evidence of its effect before production adoption. Which activity fits?",
+    "options": [
+      "Check the existing activation status",
+      "Review the required dependencies",
+      "Request provider activation",
+      "Validate in a non-production instance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Validate the feature and relevant workflows in non-production before the authorized production rollout."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-005",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One user wants a different supported display preference for their own sessions, without changing colleagues' screens. Which configuration scope fits?",
+    "options": [
+      "A personal display preference",
+      "A shared instance branding change",
+      "A shared form-view configuration",
+      "A conditional form behavior rule"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A personal preference changes the individual experience, rather than shared instance branding or form layout."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-006",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The organization wants its approved logo to appear in the unified navigation for users of the instance. Which type of configuration is needed?",
+    "options": [
+      "A conditional form behavior rule",
+      "A shared instance branding change",
+      "A personal display preference",
+      "A shared form-view configuration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Instance branding changes the shared identity of the experience rather than an individual record's field behavior."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-007",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A support team needs an approved form arrangement that shows a defined set of fields in a named view. Which type of configuration fits?",
+    "options": [
+      "A shared instance branding change",
+      "A conditional form behavior rule",
+      "A shared form-view configuration",
+      "A personal display preference"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A shared form-view configuration establishes the presentation for that view; it does not itself enforce data access."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-008",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A form should make a justification field mandatory only when the user selects a specific request type. Which type of configuration fits this presentation requirement?",
+    "options": [
+      "A personal display preference",
+      "A shared instance branding change",
+      "A shared form-view configuration",
+      "A conditional form behavior rule"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A conditional form behavior rule, such as a suitable UI policy, changes field behavior when its condition is met."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-009",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An authorized administrator needs to reproduce a reported interface problem under a particular user's effective experience. Which supported diagnostic action fits?",
+    "options": [
+      "Impersonate the affected user",
+      "Elevate an assigned privileged role",
+      "End the impersonation session",
+      "Review the user's granted access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Authorized impersonation helps reproduce the user experience. It is a testing tool, not a reason to assume the administrator's normal permissions apply."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-010",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator is assigned an elevated privilege role but has not yet activated it for the current work. Which action acknowledges and enables that privilege for the session?",
+    "options": [
+      "Review the user's granted access",
+      "Elevate an assigned privileged role",
+      "Impersonate the affected user",
+      "End the impersonation session"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Elevation activates the assigned elevated privilege rather than impersonating another user."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-011",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A diagnostic session under another user is complete, and the administrator must resume work under their own identity. Which action should occur?",
+    "options": [
+      "Elevate an assigned privileged role",
+      "Review the user's granted access",
+      "End the impersonation session",
+      "Impersonate the affected user"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "End impersonation before continuing unrelated administration so actions use the intended identity."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-012",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user consistently lacks a capability that colleagues in the same job need. The administrator must determine whether approved roles or group grants are missing. Which review addresses this?",
+    "options": [
+      "Impersonate the affected user",
+      "Elevate an assigned privileged role",
+      "End the impersonation session",
+      "Review the user's granted access"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Review granted access and its approved basis. Impersonation can reproduce symptoms but does not itself correct an entitlement."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-013",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new application resource must belong to the finance application rather than the global context. Which setting should be confirmed before creating it?",
+    "options": [
+      "Confirm the intended application scope",
+      "Select the intended current update set",
+      "Confirm the target environment",
+      "Check the installed application version"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Confirm the application scope so the resource is created in the intended application context."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-014",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator has several local change packages and wants new tracked configuration changes captured in a particular one. Which context should be selected?",
+    "options": [
+      "Check the installed application version",
+      "Select the intended current update set",
+      "Confirm the intended application scope",
+      "Confirm the target environment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The current update set determines the package that captures eligible configuration changes."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-015",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An approved change is authorized for the test instance only. Before applying it, which context prevents accidentally acting on production?",
+    "options": [
+      "Select the intended current update set",
+      "Check the installed application version",
+      "Confirm the target environment",
+      "Confirm the intended application scope"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Confirm the target environment and instance address before making the authorized change."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-016",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A feature documented for a newer application build is absent from an otherwise correctly configured installation. Which installed-state detail should be compared with the documentation?",
+    "options": [
+      "Confirm the intended application scope",
+      "Select the intended current update set",
+      "Confirm the target environment",
+      "Check the installed application version"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Check the installed application version and supported feature availability before treating the absence as a navigation failure."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-017",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A layout change appears for its author but not for colleagues using the same view and equivalent permissions. Which distinction should be investigated?",
+    "options": [
+      "Compare personal and shared settings",
+      "Test with the intended user context",
+      "Check activation and prerequisites",
+      "Confirm the documented UI context"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Determine whether the author changed personal settings or shared configuration. A personal change need not affect colleagues."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-018",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A configuration passes testing while signed in as admin, but ordinary agents still cannot complete the workflow. Which validation gap should be closed?",
+    "options": [
+      "Confirm the documented UI context",
+      "Test with the intended user context",
+      "Compare personal and shared settings",
+      "Check activation and prerequisites"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Test under the intended user context and approved access rather than assuming admin success represents every user."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-019",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newly installed application has a missing feature that the vendor lists as dependent on another component. Which installation detail needs investigation?",
+    "options": [
+      "Test with the intended user context",
+      "Confirm the documented UI context",
+      "Check activation and prerequisites",
+      "Compare personal and shared settings"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Check prerequisite activation and supported dependencies before attempting unrelated form changes."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-020",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An instruction describes a classic form control, but the user is working in a workspace with a different supported interface. Which distinction should be checked?",
+    "options": [
+      "Compare personal and shared settings",
+      "Test with the intended user context",
+      "Check activation and prerequisites",
+      "Confirm the documented UI context"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Confirm the UI context and its supported controls. Classic and workspace experiences need not expose identical controls in identical locations."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-021",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A request says only \"make the instance easier to use,\" with no agreed users, screens or expected outcome. Which configuration task should come first?",
+    "options": [
+      "Document the intended behavior",
+      "Apply the approved configuration",
+      "Test the acceptance criteria",
+      "Record the resulting configuration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Clarify and document the intended behavior so the change can be designed and evaluated against a concrete requirement."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-022",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scoped change is designed, tested in development and approved for the designated configuration environment. Which task now implements the agreed settings?",
+    "options": [
+      "Record the resulting configuration",
+      "Apply the approved configuration",
+      "Document the intended behavior",
+      "Test the acceptance criteria"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Apply the approved configuration within its authorized scope and process."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-023",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The administrator has saved the change, but has not checked that the required user interaction actually works. Which task establishes whether the change achieved its purpose?",
+    "options": [
+      "Apply the approved configuration",
+      "Record the resulting configuration",
+      "Test the acceptance criteria",
+      "Document the intended behavior"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Test the agreed acceptance criteria. A saved configuration record is not proof of correct user behavior."
+  },
+  {
+    "id": "SERVICENOWCSA-CONFIGURATION-024",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaConfiguration",
+    "skill": "configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A configuration has passed its acceptance checks. The support team needs an accurate reference for future maintenance and troubleshooting. Which closeout task provides it?",
+    "options": [
+      "Document the intended behavior",
+      "Apply the approved configuration",
+      "Test the acceptance criteria",
+      "Record the resulting configuration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Record the implemented configuration and relevant decisions so later administrators can understand the resulting state."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-001",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Agents want to see the assignment group beside the number in a multi-record list without opening each record. Which presentation change fits?",
+    "options": [
+      "Change the list columns",
+      "Configure the form view",
+      "Apply a form template",
+      "Add the related list"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Add the relevant list column. This changes the overview, not the detailed form or stored values."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-002",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An approved shared form arrangement needs a new section grouping several existing fields. Which configuration task fits?",
+    "options": [
+      "Add the related list",
+      "Configure the form view",
+      "Change the list columns",
+      "Apply a form template"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Configure the form view to arrange its fields and sections. A list column change does not arrange the individual-record form."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-003",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician repeatedly creates a supported type of record with the same approved starting values and wants to populate those values consistently. Which feature fits?",
+    "options": [
+      "Configure the form view",
+      "Add the related list",
+      "Apply a form template",
+      "Change the list columns"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A form template populates configured values; it is not a mechanism for moving configuration between instances."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-004",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A record form should show a collection of associated child records beneath its main fields. Which presentation element fits?",
+    "options": [
+      "Change the list columns",
+      "Configure the form view",
+      "Apply a form template",
+      "Add the related list"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A related list exposes the associated records rather than representing them as ordinary fields on the parent."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-005",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A list must show only records that are both active and assigned to the Network group. Which condition design implements both requirements?",
+    "options": [
+      "Join the conditions with AND",
+      "Join the alternatives with OR",
+      "Use an is-empty condition",
+      "Follow the reference with dot-walking"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AND requires both conditions to hold. OR would also admit records satisfying only one."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-006",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A review should include records assigned to either the Database group or the Network group. Which condition design expresses those alternatives?",
+    "options": [
+      "Follow the reference with dot-walking",
+      "Join the alternatives with OR",
+      "Join the conditions with AND",
+      "Use an is-empty condition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "OR accepts either alternative. Requiring one single-valued group field to equal both groups would not express the request."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-007",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A coordinator needs records with no assigned individual, regardless of which group owns them. Which condition targets the missing value?",
+    "options": [
+      "Join the alternatives with OR",
+      "Follow the reference with dot-walking",
+      "Use an is-empty condition",
+      "Join the conditions with AND"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An is-empty condition tests the unpopulated Assigned to field directly."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-008",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An incident filter must use the department of its referenced caller rather than a department field stored directly on the incident. Which field-selection technique fits?",
+    "options": [
+      "Join the conditions with AND",
+      "Join the alternatives with OR",
+      "Use an is-empty condition",
+      "Follow the reference with dot-walking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dot-walking follows a reference to a field on the related record, such as the caller's department."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-009",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A list contains six records. Three are active; of those three, two belong to Support. The remaining three are inactive. How many match Active is true AND Group is Support?",
+    "options": [
+      "2 records",
+      "3 records",
+      "4 records",
+      "5 records"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Only the two active Support records satisfy both conditions."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-010",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A five-record review shows these pairs of values for Priority and Assigned to: (High, Lee), (Low, empty), (High, empty), (Low, Kim), (Low, Pat). How many match Priority is High OR Assigned to is empty?",
+    "options": [
+      "5 records",
+      "3 records",
+      "2 records",
+      "4 records"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The first, second and third records match. The third satisfies both alternatives but is counted only once."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-011",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Seven records are in a list: three Closed, two Open and two Pending. A filter excludes Closed records and has no other condition. How many records remain?",
+    "options": [
+      "3 records",
+      "5 records",
+      "4 records",
+      "2 records"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The two Open and two Pending records remain, totaling four."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-012",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Eight requests reference callers. Five callers belong to the Sales department and three to Finance. All requests are readable, and each request references one caller. How many match Caller.Department is Sales?",
+    "options": [
+      "2 records",
+      "3 records",
+      "4 records",
+      "5 records"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dot-walking evaluates the department on each referenced caller. Five requests match Sales."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-013",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants a board mixing personal tasks and different kinds of task records, with manually managed lanes. Which experience fits?",
+    "options": [
+      "Use a freeform task board",
+      "Use a guided task board",
+      "Use a flexible task board",
+      "Use a dashboard"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A freeform board supports personal tasks and varied task cards with user-managed lanes."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-014",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manager wants a board whose lanes correspond to values of a field on the underlying tasks, such as their state. Which board type fits?",
+    "options": [
+      "Use a dashboard",
+      "Use a guided task board",
+      "Use a freeform task board",
+      "Use a flexible task board"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Guided board lanes correspond to field values rather than freely named arbitrary lanes."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-015",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants cards drawn from one table filter but wants custom lanes that do not correspond to field values. Which board type fits?",
+    "options": [
+      "Use a guided task board",
+      "Use a dashboard",
+      "Use a flexible task board",
+      "Use a freeform task board"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A flexible board combines a table-based filter with custom lanes."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-016",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service owner wants several visualizations of workload and performance together, rather than a card-moving task board. Which experience fits?",
+    "options": [
+      "Use a freeform task board",
+      "Use a guided task board",
+      "Use a flexible task board",
+      "Use a dashboard"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A dashboard brings visualizations together for monitoring and analysis rather than managing individual cards as lanes."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-017",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An email notification is generated on every update, but the requirement is to send only when the relevant condition is met. Which configuration area should be reviewed?",
+    "options": [
+      "Review When to send",
+      "Review Who will receive",
+      "Review What it will contain",
+      "Preview the notification"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When to send defines the trigger and conditions. Changing the subject or recipient list does not correct an overly broad trigger."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-018",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A notification fires at the right time and has the right text, but its recipient list points to the wrong record field. Which configuration area needs correction?",
+    "options": [
+      "Preview the notification",
+      "Review Who will receive",
+      "Review When to send",
+      "Review What it will contain"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Who will receive determines the recipients, including users or groups referenced by record fields."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-019",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A notification reaches the correct people at the correct time, but its message omits required context. Which configuration area should be edited?",
+    "options": [
+      "Review Who will receive",
+      "Preview the notification",
+      "Review What it will contain",
+      "Review When to send"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "What it will contain defines the message contents, distinct from trigger and recipient selection."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-020",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before enabling outbound delivery, an administrator wants to inspect the rendered message and see which users would receive it. Which supported validation action fits?",
+    "options": [
+      "Review When to send",
+      "Review Who will receive",
+      "Review What it will contain",
+      "Preview the notification"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Preview Notification lets the administrator examine content and recipient outcomes without relying on a live send."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-021",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manager needs to compare current ticket counts across several assignment groups, with a separate labeled value for each group. Which visualization is well suited?",
+    "options": [
+      "A bar visualization",
+      "A time-series visualization",
+      "A pie or donut visualization",
+      "A pivot table visualization"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bars compare values across categories such as assignment groups."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-022",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service owner needs to see how the backlog changes from week to week over several months. Which visualization is designed for that temporal pattern?",
+    "options": [
+      "A pivot table visualization",
+      "A time-series visualization",
+      "A bar visualization",
+      "A pie or donut visualization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A time-series visualization presents change over time rather than just a current category breakdown."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-023",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A small set of non-overlapping request categories accounts for the whole workload, and the goal is to show each category's share of that total. Which visualization fits the part-to-whole goal?",
+    "options": [
+      "A time-series visualization",
+      "A pivot table visualization",
+      "A pie or donut visualization",
+      "A bar visualization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pie or donut segments represent parts of a whole when categories and presentation remain suitable."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-024",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst wants counts at each combination of assignment group and priority, with row and column totals. Which visualization fits?",
+    "options": [
+      "A bar visualization",
+      "A time-series visualization",
+      "A pie or donut visualization",
+      "A pivot table visualization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A pivot table summarizes combinations of dimensions and can display subtotals."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-025",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When a form meets a specified condition, a justification must be entered before the intended UI submission can proceed. Which form action addresses this?",
+    "options": [
+      "Make the field mandatory",
+      "Make the field read-only",
+      "Hide the field in that UI",
+      "Filter the reference choices"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Making the field mandatory expresses the input requirement in that UI. Separate server-side enforcement may be needed for other write paths."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-026",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users should see a calculated field on the form but should not edit it through that form. Which presentation action fits?",
+    "options": [
+      "Filter the reference choices",
+      "Make the field read-only",
+      "Make the field mandatory",
+      "Hide the field in that UI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Read-only preserves visibility while preventing editing through the affected UI. It is not by itself a complete data authorization control."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-027",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A field is irrelevant to one form condition and should not be displayed in that condition. No access restriction is being implemented by this change. Which action fits?",
+    "options": [
+      "Make the field read-only",
+      "Filter the reference choices",
+      "Hide the field in that UI",
+      "Make the field mandatory"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Conditional visibility hides the field in the UI. Data security must be implemented separately if access must be denied."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-028",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reference picker should offer only active departments, while preserving the field and allowing a selection. Which configuration fits?",
+    "options": [
+      "Make the field mandatory",
+      "Make the field read-only",
+      "Hide the field in that UI",
+      "Filter the reference choices"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A reference qualifier narrows the choices offered by the reference field; it does not itself replace access control."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-029",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A chart excludes resolved records even though its audience expected all records. Its query contains an Active-only condition. Which configuration explains the mismatch?",
+    "options": [
+      "Check the visualization's filter",
+      "Check the aggregation method",
+      "Check the grouping field",
+      "Check the underlying data access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The filter determines which records enter the visualization before aggregation."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-030",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manager expects the number of requests, but the chart adds their monetary values. Which setting should be corrected?",
+    "options": [
+      "Check the underlying data access",
+      "Check the aggregation method",
+      "Check the visualization's filter",
+      "Check the grouping field"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The aggregation method determines whether the chart counts records or summarizes a numeric field."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-031",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A chart has correct totals but splits them by location instead of assignment group. Which setting explains the wrong breakdown?",
+    "options": [
+      "Check the aggregation method",
+      "Check the underlying data access",
+      "Check the grouping field",
+      "Check the visualization's filter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The grouping field defines the categories used to break down the data."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-032",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator sees a complete chart while an ordinary viewer lacks permission to read some underlying records. Which issue must be evaluated before assuming the chart is broken?",
+    "options": [
+      "Check the visualization's filter",
+      "Check the aggregation method",
+      "Check the grouping field",
+      "Check the underlying data access"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Evaluate the viewer's applicable data access. Presentation sharing does not automatically grant all underlying record permissions."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-033",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A numeric list column contains approved costs of 20, 30 and 40. The manager needs the combined cost, 90. Which list calculation fits?",
+    "options": [
+      "Total value",
+      "Minimum value",
+      "Maximum value",
+      "Average value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Total adds the values: 20 + 30 + 40 = 90."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-034",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A response-time column contains 4, 7 and 9 minutes. An analyst wants the fastest observed response, 4. Which calculation fits?",
+    "options": [
+      "Average value",
+      "Minimum value",
+      "Total value",
+      "Maximum value"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Minimum selects the smallest observed value."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-035",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A duration column contains 12, 18 and 15 minutes. An analyst wants the longest observed duration, 18. Which calculation fits?",
+    "options": [
+      "Minimum value",
+      "Average value",
+      "Maximum value",
+      "Total value"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Maximum selects the largest observed value."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-036",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A numeric effort column contains 2, 4 and 9 hours. The analyst wants the arithmetic mean, 5 hours. Which calculation fits?",
+    "options": [
+      "Total value",
+      "Minimum value",
+      "Maximum value",
+      "Average value"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Average divides the sum, 15, by the three records, yielding 5."
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-037",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An analyst needs only active requests, displayed from newest to oldest. No category breakdown or numeric summary is requested. Choose two list operations that directly satisfy these requirements.",
+    "options": [
+      "Filter the record population",
+      "Sort the displayed records",
+      "Group by a categorical field",
+      "Calculate a numeric aggregate"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Filter to active requests and sort by the relevant creation date. Grouping or aggregation is not needed for the stated result.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-038",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A coordinator needs every record organized into assignment-group sections, with each section ordered by its due date. Choose two list operations.",
+    "options": [
+      "Calculate a numeric aggregate",
+      "Filter the record population",
+      "Sort the displayed records",
+      "Group by a categorical field"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Grouping creates the assignment-group sections, and sorting orders the records. No filter or numeric calculation is required.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-039",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A finance review needs all records split by cost center and a sum of numeric cost within each group. Choose two list operations.",
+    "options": [
+      "Group by a categorical field",
+      "Calculate a numeric aggregate",
+      "Filter the record population",
+      "Sort the displayed records"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Group by cost center and calculate the numeric total. Sorting does not calculate a total.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-COLLABORATION-040",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaCollaboration",
+    "skill": "collaboration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A reviewer needs the total numeric effort for only the records matching an approved date range, with no grouped sections. Choose two list operations.",
+    "options": [
+      "Sort the displayed records",
+      "Group by a categorical field",
+      "Calculate a numeric aggregate",
+      "Filter the record population"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Filter to the required date range and calculate the numeric total over that population.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-001",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An approved audience needs to read a knowledge base but does not need to author or retire its articles. Which access configuration directly addresses that requirement?",
+    "options": [
+      "Review knowledge read criteria",
+      "Review knowledge contribute criteria",
+      "Inspect article publication state",
+      "Run user-criteria diagnostics"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Read criteria determine the permitted readership; contribution is a separate, broader capability."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-002",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A designated editorial team needs to create and maintain articles in a knowledge base. Which access configuration should be evaluated?",
+    "options": [
+      "Run user-criteria diagnostics",
+      "Review knowledge contribute criteria",
+      "Review knowledge read criteria",
+      "Inspect article publication state"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Contribute criteria govern the relevant authoring and maintenance access, subject to additional article and ownership controls."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-003",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An intended reader meets the knowledge access criteria, but the new article is still being authored and has not been released. Which lifecycle detail should be checked?",
+    "options": [
+      "Review knowledge contribute criteria",
+      "Run user-criteria diagnostics",
+      "Inspect article publication state",
+      "Review knowledge read criteria"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Publication state matters independently of audience access. A draft is not made published merely by granting read criteria."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-004",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator needs evidence of which criteria match a particular user and explain that user's knowledge access. Which diagnostic capability fits?",
+    "options": [
+      "Review knowledge read criteria",
+      "Review knowledge contribute criteria",
+      "Inspect article publication state",
+      "Run user-criteria diagnostics"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "User-criteria diagnostics evaluates the selected user's criteria-based access rather than guessing from the user's job title."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-005",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An author is creating a new version of a knowledge article and has not submitted it for approval. Which state fits this work?",
+    "options": [
+      "Draft",
+      "Review",
+      "Published",
+      "Pending retirement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Draft represents the version being created or revised before review."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-006",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A draft knowledge version has been sent to designated reviewers to approve or reject. Which state describes that stage?",
+    "options": [
+      "Pending retirement",
+      "Review",
+      "Draft",
+      "Published"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Review indicates that the draft version is awaiting the review decision."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-007",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A knowledge article has completed its required approval and has been released for its permitted audience. Which state describes that version?",
+    "options": [
+      "Review",
+      "Pending retirement",
+      "Published",
+      "Draft"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Published indicates the approved, published version; audience access still applies."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-008",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An existing published article has been selected for withdrawal, but the required retirement approval has not yet completed. Which state fits?",
+    "options": [
+      "Draft",
+      "Review",
+      "Published",
+      "Pending retirement"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pending retirement distinguishes the approval stage from completed retirement."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-009",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Employees need to request a particular accessory through the normal requested-item fulfillment process. Which catalog building block fits?",
+    "options": [
+      "A standard catalog item",
+      "A record producer",
+      "An order guide",
+      "A reusable variable set"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A standard catalog item supports the normal item request and fulfillment process."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-010",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants a simplified self-service intake that creates a task-based record directly, rather than a requested item. Which catalog building block fits?",
+    "options": [
+      "A reusable variable set",
+      "A record producer",
+      "A standard catalog item",
+      "An order guide"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A record producer creates the task-based record through catalog-style intake; it should not be used to bypass normal requested-item creation."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-011",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new employee request should guide the requester through several related catalog items in one coordinated experience. Which building block fits?",
+    "options": [
+      "A record producer",
+      "A reusable variable set",
+      "An order guide",
+      "A standard catalog item"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An order guide brings related items together for a defined purpose."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-012",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several catalog items ask the same maintained set of location and contact questions. The team wants to reuse that question group. Which building block fits?",
+    "options": [
+      "A standard catalog item",
+      "A record producer",
+      "An order guide",
+      "A reusable variable set"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A variable set packages related variables for reuse across catalog items or order guides."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-013",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A category is restricted, but an item also appears through another permitted catalog path. The item itself must be restricted to the intended audience. Which configuration should be added?",
+    "options": [
+      "Apply criteria to the individual item",
+      "Inspect Not Available For matches",
+      "Use a second category association",
+      "Review access outside the catalog"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Category restrictions do not automatically become restrictions on each item. Apply the appropriate criteria to the item itself."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-014",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user matches an item's Available For criteria but still cannot access it. The same user also matches an exclusion criterion. Which setting explains the denial?",
+    "options": [
+      "Review access outside the catalog",
+      "Inspect Not Available For matches",
+      "Apply criteria to the individual item",
+      "Use a second category association"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Not Available For overrides Available For for the item; the exclusion must be evaluated."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-015",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service should be discoverable under both Facilities and Workplace without maintaining two independent copies of the item. Which catalog organization change fits?",
+    "options": [
+      "Inspect Not Available For matches",
+      "Review access outside the catalog",
+      "Use a second category association",
+      "Apply criteria to the individual item"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An item can belong to multiple categories, supporting multiple discovery paths without duplicating its definition."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-016",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An item is hidden by catalog user criteria, but an authorized user can still access its table record outside Service Catalog. Which distinction should the administrator evaluate?",
+    "options": [
+      "Apply criteria to the individual item",
+      "Inspect Not Available For matches",
+      "Use a second category association",
+      "Review access outside the catalog"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Catalog criteria apply within the catalog context. Separate table access controls govern access outside that context."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-017",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow should start when a new qualifying record is inserted into a supported custom non-system table. Which trigger category fits?",
+    "options": [
+      "A record-created trigger",
+      "A record-updated trigger",
+      "A scheduled trigger",
+      "A Service Catalog trigger"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A record-created trigger starts from creation of a record on the selected supported table."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-018",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow should respond when an existing qualifying record on a supported table changes, with the run condition explicitly configured. Which trigger category fits?",
+    "options": [
+      "A Service Catalog trigger",
+      "A record-updated trigger",
+      "A record-created trigger",
+      "A scheduled trigger"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A record-updated trigger addresses changes to existing records and needs the appropriate run conditions."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-019",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A maintenance flow should begin on a defined weekly schedule rather than depend on a particular record being changed. Which trigger category fits?",
+    "options": [
+      "A record-updated trigger",
+      "A Service Catalog trigger",
+      "A scheduled trigger",
+      "A record-created trigger"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A scheduled trigger starts based on time rather than a record operation."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-020",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow is intended to fulfill a requested catalog item using the dedicated request mechanism. Which trigger category fits?",
+    "options": [
+      "A record-created trigger",
+      "A record-updated trigger",
+      "A scheduled trigger",
+      "A Service Catalog trigger"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Service Catalog trigger starts the associated fulfillment flow from a catalog item request."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-021",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several flows repeat the same sequence of business operations. The administrator wants one maintained sequence callable by all of them. Which change fits?",
+    "options": [
+      "Extract a reusable subflow",
+      "Supply the subflow inputs",
+      "Use the returned subflow outputs",
+      "Test the subflow in isolation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A subflow provides reusable operations that multiple flows can call."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-022",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reusable subflow needs a particular record and a requested date for each invocation. Which caller responsibility supplies those changing values?",
+    "options": [
+      "Test the subflow in isolation",
+      "Supply the subflow inputs",
+      "Extract a reusable subflow",
+      "Use the returned subflow outputs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The caller maps the required inputs for that invocation; a subflow does not obtain them from its own record trigger."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-023",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A subflow returns an approved routing result that a later caller step needs. Which part of the interface should the caller consume?",
+    "options": [
+      "Supply the subflow inputs",
+      "Test the subflow in isolation",
+      "Use the returned subflow outputs",
+      "Extract a reusable subflow"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Defined outputs communicate results back to the caller for subsequent steps."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-024",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reusable subflow behaves unexpectedly and the designer wants to exercise it with controlled example inputs on a test instance. Which validation action fits?",
+    "options": [
+      "Extract a reusable subflow",
+      "Supply the subflow inputs",
+      "Use the returned subflow outputs",
+      "Test the subflow in isolation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Test the subflow independently with defined inputs. Testing can change records, so use suitable non-production data."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-025",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A routing decision needs to consider country and request category, but those values are not yet represented in its interface. Which design step is missing?",
+    "options": [
+      "Define the decision inputs",
+      "Add the decision rows",
+      "Inspect the result columns",
+      "Test representative input combinations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Decision inputs provide the values used to evaluate the decision logic."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-026",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The decision table has its inputs and result structure, but no entries connecting condition values to outcomes. Which content must be added?",
+    "options": [
+      "Test representative input combinations",
+      "Add the decision rows",
+      "Define the decision inputs",
+      "Inspect the result columns"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Decision rows express the configured combinations and their results."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-027",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A decision correctly matches the intended row but returns the wrong routing field. Which part of the decision structure should be reviewed?",
+    "options": [
+      "Add the decision rows",
+      "Test representative input combinations",
+      "Inspect the result columns",
+      "Define the decision inputs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Result columns describe the values returned for the matched decision outcome."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-028",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A decision table has been saved and the owner wants to confirm its outcomes for normal, boundary and exceptional cases. Which action fits?",
+    "options": [
+      "Define the decision inputs",
+      "Add the decision rows",
+      "Inspect the result columns",
+      "Test representative input combinations"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Test representative input combinations against expected outcomes before relying on the decision in a process."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-029",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Virtual Agent topic is complete but remains inactive and has not been deployed to clients. Which lifecycle action makes the finished topic active?",
+    "options": [
+      "Publish the completed topic",
+      "Reuse a topic block",
+      "Review the topic's application scope",
+      "Test the conversation path"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Publishing changes the completed topic from inactive to active and deploys it to clients under the supported process."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-030",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several Virtual Agent conversations need the same common sequence of conversational tasks. Which design change reduces duplicated maintenance?",
+    "options": [
+      "Test the conversation path",
+      "Reuse a topic block",
+      "Publish the completed topic",
+      "Review the topic's application scope"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A reusable topic block supplies common conversational functionality to calling topics."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-031",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A designer is about to create a topic intended for a particular application but the current application context is different. Which check should occur first?",
+    "options": [
+      "Reuse a topic block",
+      "Test the conversation path",
+      "Review the topic's application scope",
+      "Publish the completed topic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Confirm the appropriate application scope before creating or changing the topic."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-032",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A topic has a branch that has never been exercised with realistic user answers. Which activity checks whether that branch reaches its intended outcome?",
+    "options": [
+      "Publish the completed topic",
+      "Reuse a topic block",
+      "Review the topic's application scope",
+      "Test the conversation path"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Test the conversation path using representative responses rather than treating publication alone as validation."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-033",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new qualifying record never starts the expected flow, and the configured trigger excludes its category. Which area explains the missing execution?",
+    "options": [
+      "Inspect the trigger conditions",
+      "Inspect the runtime input values",
+      "Inspect the failing action details",
+      "Inspect the reporting configuration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The trigger conditions determine whether an execution starts. Downstream action changes cannot correct an excluded trigger population."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-034",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tested flow runs, but the recipient passed to an action differs from the requester on the record. Which evidence directly helps trace the mapping?",
+    "options": [
+      "Inspect the reporting configuration",
+      "Inspect the runtime input values",
+      "Inspect the trigger conditions",
+      "Inspect the failing action details"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Runtime input values show what the action actually received, helping distinguish a mapping error from its intended design."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-035",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test execution stops at one action while earlier steps complete. Which evidence should be examined to understand the local failure?",
+    "options": [
+      "Inspect the runtime input values",
+      "Inspect the reporting configuration",
+      "Inspect the failing action details",
+      "Inspect the trigger conditions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The failing action's execution details provide relevant state, inputs and error context when generated and accessible."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-036",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A historical production run has no detailed action values because detailed reporting was off at the time. Which configuration explains the missing detail?",
+    "options": [
+      "Inspect the trigger conditions",
+      "Inspect the runtime input values",
+      "Inspect the failing action details",
+      "Inspect the reporting configuration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Execution detail generation depends on the reporting configuration. Enabling it later cannot recreate values that were never recorded."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-037",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A catalog implementation creates an incident when the requirement calls for a requested item with standard fulfillment. Which design mismatch should be corrected?",
+    "options": [
+      "Validate the requested-item path",
+      "Check the knowledge audience",
+      "Check the reusable component contract",
+      "Check the automation's actual result"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Validate the standard requested-item path and appropriate catalog item mechanism rather than using direct task production for a different purpose."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-038",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A help article is correctly published but contains guidance intended only for a restricted internal team. Which release check is still necessary?",
+    "options": [
+      "Check the automation's actual result",
+      "Check the knowledge audience",
+      "Validate the requested-item path",
+      "Check the reusable component contract"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Verify the permitted knowledge audience; publication state and audience authorization solve different problems."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-039",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shared subflow changes the name and meaning of an output consumed by several callers. Which compatibility review is needed?",
+    "options": [
+      "Check the knowledge audience",
+      "Check the automation's actual result",
+      "Check the reusable component contract",
+      "Validate the requested-item path"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Review the component interface and affected callers so the changed output does not break their assumptions."
+  },
+  {
+    "id": "SERVICENOWCSA-AUTOMATION-040",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaAutomation",
+    "skill": "automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An automation execution reports completion, but its business owner has not checked the created records or assignments. Which final validation is needed?",
+    "options": [
+      "Validate the requested-item path",
+      "Check the knowledge audience",
+      "Check the reusable component contract",
+      "Check the automation's actual result"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Confirm the actual business result against the requirement. Technical completion alone does not prove that the configured process produced the correct outcome."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-001",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new application needs a distinct collection of equipment-inspection records with its own defined fields. Which schema action provides the collection?",
+    "options": [
+      "Create a separate table",
+      "Add a field to the table",
+      "Create a new record",
+      "Use a reference to another table"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A table defines the collection and its fields. An individual record is one entry within it."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-002",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every inspection record needs a new numeric measurement in addition to its existing attributes. Which schema change adds that attribute?",
+    "options": [
+      "Use a reference to another table",
+      "Add a field to the table",
+      "Create a separate table",
+      "Create a new record"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Add a suitable field to the existing table rather than create an unrelated record to represent the column."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-003",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The inspection schema is already correct. A technician now needs to enter the results of one additional inspection. Which data action fits?",
+    "options": [
+      "Add a field to the table",
+      "Use a reference to another table",
+      "Create a new record",
+      "Create a separate table"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Create a new record using the existing schema; no new table or field is required for each inspection."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-004",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An inspection should identify an existing technician from the user table while maintaining a relationship to that user record. Which field design fits?",
+    "options": [
+      "Create a separate table",
+      "Add a field to the table",
+      "Create a new record",
+      "Use a reference to another table"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A reference relates the inspection to the existing user record rather than duplicating all user attributes as independent text."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-005",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A custom record needs to store the whole-number count of inspected devices, with numeric comparison and calculation. Which field type fits?",
+    "options": [
+      "An integer field",
+      "A date/time field",
+      "A reference field",
+      "A true/false field"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An integer represents whole-number quantities rather than a text description or record reference."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-006",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A record must capture the scheduled moment of a maintenance visit, including both calendar date and time. Which field type fits?",
+    "options": [
+      "A true/false field",
+      "A date/time field",
+      "An integer field",
+      "A reference field"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A date/time field represents the required temporal value."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-007",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A request must point to one existing department record and allow use of that record's other attributes. Which field type fits?",
+    "options": [
+      "A date/time field",
+      "A true/false field",
+      "A reference field",
+      "An integer field"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A reference field links to the department record and supports related-field access."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-008",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A record needs a binary indicator of whether a checklist is complete. Which field type fits?",
+    "options": [
+      "An integer field",
+      "A date/time field",
+      "A reference field",
+      "A true/false field"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A true/false field represents the two-state value directly."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-009",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A field has the wrong underlying data type across the relevant table. Which metadata should be examined rather than only rearranging the form?",
+    "options": [
+      "Inspect the dictionary definition",
+      "Inspect the dictionary override",
+      "Inspect the schema relationship",
+      "Inspect the stored record value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The dictionary describes the field's underlying definition. Form layout does not change its data type."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-010",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An inherited field behaves differently on one child table because a child-specific definition has been configured. Which metadata should be examined?",
+    "options": [
+      "Inspect the stored record value",
+      "Inspect the dictionary override",
+      "Inspect the dictionary definition",
+      "Inspect the schema relationship"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A dictionary override can define supported field behavior differently on an extended table."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-011",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator needs to determine which table extends which other table before changing a shared field. Which structural information is relevant?",
+    "options": [
+      "Inspect the dictionary override",
+      "Inspect the stored record value",
+      "Inspect the schema relationship",
+      "Inspect the dictionary definition"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Inspect the table hierarchy or schema relationship to understand inheritance and affected classes."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-012",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Only one record contains an incorrect department reference, while the field definition and other records are correct. Which object needs investigation?",
+    "options": [
+      "Inspect the dictionary definition",
+      "Inspect the dictionary override",
+      "Inspect the schema relationship",
+      "Inspect the stored record value"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Inspect the record's stored value rather than changing the schema for every record."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-013",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two user records have the same displayed name. An administrator needs to distinguish which actual record a reference points to. Which value is decisive?",
+    "options": [
+      "The reference's stored sys_id",
+      "The referenced record's display value",
+      "The reference qualifier",
+      "A dot-walked related field"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The stored sys_id identifies the referenced record even when display names are identical."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-014",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reference appears as a readable person name on a form instead of a long identifier. Which value is being presented?",
+    "options": [
+      "A dot-walked related field",
+      "The referenced record's display value",
+      "The reference's stored sys_id",
+      "The reference qualifier"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The UI presents the referenced record's display value while the reference stores its identifier."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-015",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reference picker offers inactive departments that should not be selectable in this UI. Which field configuration should narrow the offered choices?",
+    "options": [
+      "The referenced record's display value",
+      "A dot-walked related field",
+      "The reference qualifier",
+      "The reference's stored sys_id"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A reference qualifier filters the candidates offered by the picker; access controls remain separate."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-016",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report needs the city on the location record referenced by a task. Which field access supplies that related attribute?",
+    "options": [
+      "The reference's stored sys_id",
+      "The referenced record's display value",
+      "The reference qualifier",
+      "A dot-walked related field"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dot-walking follows the reference to the related location's city rather than requiring a copied field on every task."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-017",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every member of an established support group needs the same approved platform capability. Which administration action avoids assigning the role separately to each person?",
+    "options": [
+      "Assign the approved role to a group",
+      "Add the user to the approved group",
+      "Remove the obsolete group membership",
+      "Review all effective role sources"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Assign the approved role to the group so members inherit it."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-018",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new employee needs the access already granted through the authorized team group. The group's roles are correct. Which lifecycle action fits?",
+    "options": [
+      "Review all effective role sources",
+      "Add the user to the approved group",
+      "Assign the approved role to a group",
+      "Remove the obsolete group membership"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Add the employee to the approved group rather than redefining its existing roles."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-019",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee leaves a team and should no longer inherit that team's permissions. No continuing need is approved. Which source of access should be removed?",
+    "options": [
+      "Add the user to the approved group",
+      "Review all effective role sources",
+      "Remove the obsolete group membership",
+      "Assign the approved role to a group"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Remove the obsolete group membership and verify remaining access according to the lifecycle process."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-020",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Removing one group membership does not remove a user's capability. The same role may come from another group or a direct grant. What should be examined?",
+    "options": [
+      "Assign the approved role to a group",
+      "Add the user to the approved group",
+      "Remove the obsolete group membership",
+      "Review all effective role sources"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Review every effective source of the role before assuming the membership change failed."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-021",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security requirement concerns whether a user may view an existing confidential record. Which ACL operation is directly relevant?",
+    "options": [
+      "The read operation",
+      "The write operation",
+      "The create operation",
+      "The delete operation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Read governs viewing the protected object; other operations address different actions."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-022",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user may see a record but must not modify its existing values. Which ACL operation governs the attempted modification?",
+    "options": [
+      "The delete operation",
+      "The write operation",
+      "The read operation",
+      "The create operation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Write governs modification. Read permission does not itself imply write permission."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-023",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A policy concerns whether a user may add a new record to a protected table. Which ACL operation is directly relevant?",
+    "options": [
+      "The write operation",
+      "The delete operation",
+      "The create operation",
+      "The read operation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Create governs adding a record, distinct from modifying an existing one."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-024",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user may maintain a record but must not remove it from the table. Which ACL operation governs removal?",
+    "options": [
+      "The read operation",
+      "The write operation",
+      "The create operation",
+      "The delete operation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Delete governs removing the protected record."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-025",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A non-admin user satisfies one of two roles listed in an ACL's Requires role list. A reviewer incorrectly assumes both listed roles are necessary. Which part of the rule should be re-examined?",
+    "options": [
+      "Review the required role alternatives",
+      "Review the data condition",
+      "Review the permission script result",
+      "Review the ACL decision type"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The listed roles are alternatives for that role check. Other applicable conditions still need evaluation."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-026",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user passes an ACL's role requirement, but the rule requires a department value that the requested record does not have. Which part explains the failed check?",
+    "options": [
+      "Review the ACL decision type",
+      "Review the data condition",
+      "Review the required role alternatives",
+      "Review the permission script result"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The data condition is separate from the role requirement and must satisfy the configured policy."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-027",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An applicable ACL has satisfied role and data conditions, but its custom permission code evaluates to false. Which part explains that rule's failure?",
+    "options": [
+      "Review the data condition",
+      "Review the ACL decision type",
+      "Review the permission script result",
+      "Review the required role alternatives"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The permission script must evaluate successfully as required by the ACL; passing the other checks does not override a false script result."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-028",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator is reviewing a current ACL configured as Deny Unless and must distinguish it from an Allow If rule. Which property determines that behavior?",
+    "options": [
+      "Review the required role alternatives",
+      "Review the data condition",
+      "Review the permission script result",
+      "Review the ACL decision type"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Decision Type distinguishes the current supported ACL decision behavior. A blanket assumption that every ACL is an Allow If rule is incorrect."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-029",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An import loaded a spreadsheet, but some source dates are already malformed before any target records are changed. Where should the administrator first inspect the imported values?",
+    "options": [
+      "Inspect the staged source rows",
+      "Correct the field mapping",
+      "Configure the coalesce key",
+      "Review the transformation result"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inspect the staged source rows to distinguish source/load problems from later mapping or target behavior."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-030",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test import places a source phone number into the target city field. Which transformation configuration directly needs correction?",
+    "options": [
+      "Review the transformation result",
+      "Correct the field mapping",
+      "Inspect the staged source rows",
+      "Configure the coalesce key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Correct the source-to-target field mapping. A coalesce key selects a matching record but does not fix mapping to the wrong field."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-031",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A recurring import should update the existing equipment record identified by a stable external identifier instead of adding another copy. Which matching configuration is needed?",
+    "options": [
+      "Correct the field mapping",
+      "Review the transformation result",
+      "Configure the coalesce key",
+      "Inspect the staged source rows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Coalesce on a suitable stable identifier to match the intended existing target record, subject to verified uniqueness and import requirements."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-032",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A transformation has finished, but the administrator needs evidence of inserted, updated and failed rows before accepting the load. Which review is required?",
+    "options": [
+      "Inspect the staged source rows",
+      "Correct the field mapping",
+      "Configure the coalesce key",
+      "Review the transformation result"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Review the transformation outcome and affected target data rather than treating completion alone as proof of correct results."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-033",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A target table has unique external keys A and B. A two-row import contains keys A and C and coalesces only on that key. No rows are rejected and normal unmatched-row insertion is enabled. What is the result?",
+    "options": [
+      "One update and one insert",
+      "Two updates and no inserts",
+      "No updates and two inserts",
+      "One update and no inserts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A matches an existing record and is updated; C does not match and is inserted."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-034",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A target table has unique asset keys D and E. An import contains one changed row for D and one for E, with valid values and matching coalesce configuration. What is the result?",
+    "options": [
+      "One update and no inserts",
+      "Two updates and no inserts",
+      "One update and one insert",
+      "No updates and two inserts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Both source rows match existing records, so both are updates and neither is an insert."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-035",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two valid rows are transformed into a table with no coalesce fields configured. No custom script changes normal behavior. What is the result?",
+    "options": [
+      "Two updates and no inserts",
+      "One update and no inserts",
+      "No updates and two inserts",
+      "One update and one insert"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Without coalesce, the two imported rows are treated as new records rather than matching existing records for updates."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-036",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A valid single source row uses external key F, and exactly one target record has F. Coalesce is configured on that key. What is the result?",
+    "options": [
+      "One update and one insert",
+      "Two updates and no inserts",
+      "No updates and two inserts",
+      "One update and no inserts"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The one matching target record is updated; there is no unmatched row to insert."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-037",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The CMDB has the right server record, but its operating-system attribute is inaccurate. Which data-maintenance action directly addresses this?",
+    "options": [
+      "Maintain the configuration item record",
+      "Maintain the CI relationship",
+      "Follow the CSDM placement guidance",
+      "Correct the incoming data mapping"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Correct the relevant CI record attribute using the appropriate authoritative process."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-038",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The CMDB contains both an application and its supporting database, but the dependency between them is missing. Which modeling element needs attention?",
+    "options": [
+      "Correct the incoming data mapping",
+      "Maintain the CI relationship",
+      "Maintain the configuration item record",
+      "Follow the CSDM placement guidance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Maintain the relationship between the CIs so dependency and impact analysis can use it."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-039",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Teams place equivalent service information into inconsistent tables and use conflicting terminology. Which shared modeling guidance should guide reconciliation?",
+    "options": [
+      "Maintain the CI relationship",
+      "Correct the incoming data mapping",
+      "Follow the CSDM placement guidance",
+      "Maintain the configuration item record"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CSDM provides common terminology and guidance for placing service-related information in the appropriate CMDB structures."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-040",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A third-party feed sends valid source data, but the integration places it into the wrong CMDB fields. Which integration detail needs correction?",
+    "options": [
+      "Maintain the configuration item record",
+      "Maintain the CI relationship",
+      "Follow the CSDM placement guidance",
+      "Correct the incoming data mapping"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Correct the data mapping and validate the transformed output; creating more relationships does not repair a field-mapping error."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-041",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An organization has granted an overly broad role within its ServiceNow instance. Which customer-controlled security area must be corrected?",
+    "options": [
+      "Review the instance's security settings",
+      "Review customer data-retention decisions",
+      "Review platform infrastructure protection",
+      "Review the custom application's security"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The customer controls its instance authorization and secure configuration; provider infrastructure controls do not choose appropriate business access."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-042",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business has never decided how long its customer records should remain in the instance. Which responsibility needs an explicit policy decision?",
+    "options": [
+      "Review the custom application's security",
+      "Review customer data-retention decisions",
+      "Review the instance's security settings",
+      "Review platform infrastructure protection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The customer defines appropriate data use and retention obligations rather than assuming a provider default satisfies every requirement."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-043",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An assurance review asks how the hosted platform's underlying infrastructure is secured by ServiceNow. Which responsibility area should be examined?",
+    "options": [
+      "Review customer data-retention decisions",
+      "Review the custom application's security",
+      "Review platform infrastructure protection",
+      "Review the instance's security settings"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ServiceNow protects the platform infrastructure as part of its provider responsibilities, distinct from customer entitlement decisions."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-044",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer-developed application has an authorization flaw in its own logic. Which security responsibility must the customer exercise?",
+    "options": [
+      "Review the instance's security settings",
+      "Review customer data-retention decisions",
+      "Review platform infrastructure protection",
+      "Review the custom application's security"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The customer is responsible for the security of its custom code and its appropriate development and validation process."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-045",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security administrator wants to see how many recommended instance practices have been applied and how that count changed over time. Which Security Center view focus fits?",
+    "options": [
+      "Review best-practice adoption",
+      "Review privileged-account posture",
+      "Review unused-account posture",
+      "Review assigned security tasks"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The best-practice area tracks adoption and progress, distinct from individual account or task lists."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-046",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A review focuses on active accounts with elevated permissions in the instance. Which posture information is directly relevant?",
+    "options": [
+      "Review assigned security tasks",
+      "Review privileged-account posture",
+      "Review best-practice adoption",
+      "Review unused-account posture"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Privileged-account posture helps identify the population with elevated access for review."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-047",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants to investigate enabled users that have never signed in. Which posture information supports that review?",
+    "options": [
+      "Review privileged-account posture",
+      "Review assigned security tasks",
+      "Review unused-account posture",
+      "Review best-practice adoption"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unused-account posture identifies the relevant never-logged-in population; it does not itself determine whether every such account should be removed."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-048",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security operator needs the urgent remediation work allocated to them. Which Security Center area directly supports that work list?",
+    "options": [
+      "Review best-practice adoption",
+      "Review privileged-account posture",
+      "Review unused-account posture",
+      "Review assigned security tasks"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Assigned security tasks identify the operator's work, rather than only showing summary posture counts."
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-049",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A reviewer must inspect existing records and correct approved values, but must neither add nor remove records. Choose the two operations the requirement allows.",
+    "options": [
+      "Read existing records",
+      "Modify existing records",
+      "Create new records",
+      "Delete existing records"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "The requirement permits read and write, while explicitly excluding create and delete.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-050",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A service identity may create new records and modify existing records. Viewing records is handled separately and deletion is forbidden. Choose the two operations explicitly authorized here.",
+    "options": [
+      "Delete existing records",
+      "Read existing records",
+      "Modify existing records",
+      "Create new records"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Create and write are the two stated authorizations. Do not infer other permissions from them.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-051",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A controlled cleanup process is explicitly authorized to add replacement records and remove obsolete records. Modification and reading are outside this question's authorization. Choose the two stated operations.",
+    "options": [
+      "Create new records",
+      "Delete existing records",
+      "Read existing records",
+      "Modify existing records"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Create and delete are explicitly authorized; the question does not grant additional operations.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-052",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An archive reviewer may inspect existing records and remove records approved for disposal, but may not create or edit records. Choose the two allowed operations.",
+    "options": [
+      "Modify existing records",
+      "Create new records",
+      "Delete existing records",
+      "Read existing records"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Read and delete match the stated policy; write and create are excluded.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-053",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Before an import, the team must prove that the chosen external identifier uniquely selects the intended records and that each source column reaches the correct target field. Choose the two checks addressing those stated gaps.",
+    "options": [
+      "Validate the matching key",
+      "Test the field mappings",
+      "Restrict staging-data access",
+      "Verify the target results"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Validate the matching key and test mappings. The other checks remain useful controls but do not establish these two specific properties.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-054",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An import trial sends values into the wrong target fields, and sensitive staged rows are readable by an unintended group. Choose the two checks that address these observed problems.",
+    "options": [
+      "Verify the target results",
+      "Validate the matching key",
+      "Test the field mappings",
+      "Restrict staging-data access"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Test and correct mappings, and restrict staging access. Key validation alone does not fix either observed issue.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-055",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A completed import has not been checked against expected target records, and the staging table contains personal data with unreviewed access. Choose the two checks needed for these stated gaps.",
+    "options": [
+      "Restrict staging-data access",
+      "Verify the target results",
+      "Validate the matching key",
+      "Test the field mappings"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Review staging access and verify the target outcome. Neither step is replaced by a successful load status.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-DATABASE-056",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaDatabase",
+    "skill": "database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A recurring import created duplicate target records and the final target population has not been reconciled. Source-to-field mappings and staging access are already verified. Choose the two remaining checks.",
+    "options": [
+      "Test the field mappings",
+      "Restrict staging-data access",
+      "Verify the target results",
+      "Validate the matching key"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Validate the matching key and reconcile target results. The stated evidence rules out the other two checks as the remaining gaps.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-001",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A form must make a justification field mandatory when a checkbox is selected. The requirement is conditional field behavior that can be configured without code. Which mechanism fits?",
+    "options": [
+      "UI policy",
+      "Client script",
+      "Business rule",
+      "Update set"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A UI policy can conditionally set mandatory, visible and read-only behavior without custom code."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-002",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator needs custom browser-side logic to recalculate a displayed field immediately after another field changes. Which mechanism fits the specified execution location?",
+    "options": [
+      "Update set",
+      "Client script",
+      "UI policy",
+      "Business rule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A client script runs in the browser and can respond to field changes. This is not a substitute for server-side authorization."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-003",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A custom calculation must execute on the server before a record is saved, regardless of the form presentation. Which mechanism fits?",
+    "options": [
+      "Client script",
+      "Update set",
+      "Business rule",
+      "UI policy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A before business rule can run server-side logic before a database operation."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-004",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A completed collection of captured configuration changes must move from a development instance to a test instance. Which mechanism packages those changes?",
+    "options": [
+      "UI policy",
+      "Client script",
+      "Business rule",
+      "Update set"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An update set groups captured configuration changes for transfer between instances."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-005",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server-side rule must normalize a value on the current record before its pending database update is written. Which timing fits?",
+    "options": [
+      "Before business rule",
+      "After business rule",
+      "Async business rule",
+      "Display business rule"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Before rules execute before the database operation and can adjust the current record for that operation."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-006",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A related-record action must run synchronously after the current database update has completed. Which business-rule timing matches both requirements?",
+    "options": [
+      "Display business rule",
+      "After business rule",
+      "Before business rule",
+      "Async business rule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After rules run after the database operation. Async rules do not satisfy the stated synchronous requirement."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-007",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A non-urgent server task should be queued for background processing after an update rather than make the user wait for its completion. Which timing fits?",
+    "options": [
+      "After business rule",
+      "Display business rule",
+      "Async business rule",
+      "Before business rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Async rules run through background processing. Their execution order should not be assumed when several updates occur."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-008",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server rule must prepare information as a record is retrieved for display on a form. Which timing fits?",
+    "options": [
+      "Before business rule",
+      "After business rule",
+      "Async business rule",
+      "Display business rule"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Display business rules run when a record is loaded for display, allowing server-side preparation for the form."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-009",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two developers propose transferring the same customization to production separately from different source instances. Which planning issue should be addressed first?",
+    "options": [
+      "Review the migration path",
+      "Compare instance versions",
+      "Split an oversized change package",
+      "Apply a clear naming convention"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A consistent development-to-test-to-production path avoids moving the same update set from multiple sources."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-010",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customization depends on platform behavior that may differ between the source and target releases. Which preparation step most directly addresses that concern?",
+    "options": [
+      "Apply a clear naming convention",
+      "Compare instance versions",
+      "Review the migration path",
+      "Split an oversized change package"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Checking source and target versions identifies compatibility risks; moving changes between different versions can introduce problems."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-011",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One proposed update set combines unrelated schema work and several major workflow revisions, making review difficult. Which planning change best targets this problem?",
+    "options": [
+      "Compare instance versions",
+      "Apply a clear naming convention",
+      "Split an oversized change package",
+      "Review the migration path"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Smaller focused update sets are easier to review and process than large unrelated packages."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-012",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Support staff cannot tell which of several similarly titled update sets is the follow-up fix for a particular incident. Which process change addresses this identification problem?",
+    "options": [
+      "Review the migration path",
+      "Compare instance versions",
+      "Split an oversized change package",
+      "Apply a clear naming convention"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Clear names and sequence identifiers help reviewers associate update sets with their purpose and intended order."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-013",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A browser-side form script must initialize a message when the form is first rendered, before the user enters data. Which client-script type matches that event?",
+    "options": [
+      "onLoad",
+      "onChange",
+      "onSubmit",
+      "onCellEdit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "onLoad runs when the form is initially rendered."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-014",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A form must recalculate a displayed estimate when the user changes its quantity field. Which client-script event matches that interaction?",
+    "options": [
+      "onCellEdit",
+      "onChange",
+      "onLoad",
+      "onSubmit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "onChange responds to a specified field changing on the form."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-015",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A browser-side check should run when the user attempts to submit a form and may cancel that form submission. Which client-script type matches?",
+    "options": [
+      "onChange",
+      "onCellEdit",
+      "onSubmit",
+      "onLoad"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "onSubmit runs for form submission and can return false to cancel it. Server-side enforcement remains a separate concern."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-016",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A supported list editor needs client-side validation when a user edits a cell directly, rather than opening the form. Which client-script type matches?",
+    "options": [
+      "onLoad",
+      "onChange",
+      "onSubmit",
+      "onCellEdit"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "onCellEdit is the client-script type associated with changes made in the list editor."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-017",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An update-set preview reports that the target already contains a competing change to the same configuration record. What is the most relevant next investigation?",
+    "options": [
+      "Inspect preview conflicts",
+      "Check missing dependencies",
+      "Inspect the commit log",
+      "Test the migrated behavior"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Preview conflicts must be reviewed and resolved before committing the retrieved update set."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-018",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customization references an application component that is absent from the target instance. What should be investigated before treating the package as ready to apply?",
+    "options": [
+      "Test the migrated behavior",
+      "Check missing dependencies",
+      "Inspect preview conflicts",
+      "Inspect the commit log"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Required components must be present; a successful transfer alone does not supply every dependency."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-019",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An update-set commit has finished with errors. The administrator needs the recorded details of what failed during that operation. Where should the investigation focus?",
+    "options": [
+      "Check missing dependencies",
+      "Test the migrated behavior",
+      "Inspect the commit log",
+      "Inspect preview conflicts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The commit log records information and errors associated with applying the update set."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-020",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A configuration package committed without errors, but acceptance criteria require the target form to behave correctly for a normal user. What check is still required?",
+    "options": [
+      "Inspect preview conflicts",
+      "Check missing dependencies",
+      "Inspect the commit log",
+      "Test the migrated behavior"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A clean commit does not establish functional correctness. Test the intended behavior in the target environment."
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-021",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A change needs immediate feedback while a user edits a form and a separate validation rule before a record is stored. Which two concerns must be addressed? Choose two.",
+    "options": [
+      "Browser-side form feedback",
+      "Server-side record validation",
+      "Captured configuration transfer",
+      "Imported business-data mapping"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Form feedback belongs to the browser experience; server validation protects the record operation independently of that experience.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-022",
+    "section": "servicenowcsa",
+    "test": 1,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A release includes a server-side validation rule and the transfer of its captured configuration to a test instance. It does not load external records or alter form feedback. Which two concerns apply? Choose two.",
+    "options": [
+      "Imported business-data mapping",
+      "Browser-side form feedback",
+      "Server-side record validation",
+      "Captured configuration transfer"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "The requirements cover server validation and configuration transfer, not client feedback or an external data import.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-023",
+    "section": "servicenowcsa",
+    "test": 2,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A rollout moves captured form configuration to another instance and separately maps a supplier file into business records. Which two concerns apply? Choose two.",
+    "options": [
+      "Captured configuration transfer",
+      "Imported business-data mapping",
+      "Browser-side form feedback",
+      "Server-side record validation"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Configuration migration and business-data mapping are distinct tasks; a configuration package is not a substitute for the data import.",
+    "select": 2
+  },
+  {
+    "id": "SERVICENOWCSA-MIGRATION-024",
+    "section": "servicenowcsa",
+    "test": 0,
+    "module": 1,
+    "domain": "servicenowcsaMigration",
+    "skill": "migration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An administrator improves messages shown while users edit a form and maps an incoming asset file into target records. No configuration transfer or new server validation rule is requested. Which two concerns apply? Choose two.",
+    "options": [
+      "Server-side record validation",
+      "Captured configuration transfer",
+      "Imported business-data mapping",
+      "Browser-side form feedback"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "The stated work is browser-side feedback and imported-data mapping.",
+    "select": 2
+  }
+]

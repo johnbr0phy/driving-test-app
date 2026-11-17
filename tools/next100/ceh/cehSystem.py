@@ -11,7 +11,7 @@ ITEMS = [
            ["A credentialed scan", "An external scan", "A passive scan", "A discovery scan"],
            "A credentialed (authenticated) scan logs in and reads the host's real configuration, giving fewer false positives than probing from outside. A passive scan only watches traffic."),
     single(1, "Vulnerability classification", 2,
-           "A new server still has the vendor's sample scripts, test pages and a default admin account enabled. Which class of vulnerability is this?",
+           "A new server still has the vendor's sample scripts, test pages and a factory admin account enabled. Which class of vulnerability is this?",
            ["Default installation", "Buffer overflow", "Race condition", "Zero-day flaw"],
            "Software left as installed often ships with samples, open services and default accounts that attackers know. Hardening to a baseline after installation removes them."),
     single(1, "Vulnerability management lifecycle", 2,

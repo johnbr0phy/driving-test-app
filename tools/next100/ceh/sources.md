@@ -69,7 +69,7 @@ questions, practice tests or prep-book items were read or reworded.
   Lockheed Martin Cyber Kill Chain phases (lockheedmartin.com returned 403 to
   automated reads; the seven phases are the published model's), and the
   Diamond Model of intrusion analysis (Caltagirone, Pendergast and Betz, 2013).
-- Wi-Fi Alliance WPA3 specification (SAE), the KRACK disclosure
+- Wi-Fi Alliance WPA3 specification (SAE) and Wi-Fi Enhanced Open (OWE, RFC 8110), the KRACK disclosure
   (https://www.krackattacks.com/), and IEEE 802.11 for wireless items.
 - NIST FIPS 197 (AES), FIPS 46-3 (DES, withdrawn), RFC 6960 (OCSP) and RFC 6066
   (TLS certificate status request, the basis of OCSP stapling) for

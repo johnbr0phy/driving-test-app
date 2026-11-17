@@ -59,7 +59,7 @@ ITEMS = [
            ["An exposed UART or JTAG port", "A strong TLS configuration", "Signed firmware updates", "A disabled Telnet service"],
            "Debug interfaces like UART and JTAG left open on the board give hardware-level access to firmware and secrets. Turning them off or locking them in production devices closes this path."),
     single(2, "IoT countermeasures", 2,
-           "Which practice best protects a fleet of smart cameras from takeover through malicious firmware?",
+           "Which practice best stops an attacker from pushing a tampered update to a fleet of smart cameras?",
            ["Accept only signed firmware", "Allow updates from any server", "Keep the factory Telnet login", "Turn off automatic updates"],
            "Requiring updates signed by the vendor means the device rejects tampered firmware. Unsigned update paths let an attacker push their own code to every device."),
     single(2, "OT attacks", 2,

@@ -176,16 +176,16 @@
     "skill": "Vulnerability classification",
     "difficulty": 2,
     "format": "single",
-    "stem": "A new server still has the vendor's sample scripts, test pages and a default admin account enabled. Which class of vulnerability is this?",
+    "stem": "A new server still has the vendor's sample scripts, test pages and a factory admin account enabled. Which class of vulnerability is this?",
     "explanation": "Software left as installed often ships with samples, open services and default accounts that attackers know. Hardening to a baseline after installation removes them.",
     "options": [
-      "Race condition",
       "Default installation",
       "Zero-day flaw",
-      "Buffer overflow"
+      "Buffer overflow",
+      "Race condition"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -617,16 +617,16 @@
     "skill": "Wireless encryption",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which handshake does WPA3-Personal use to resist offline dictionary attacks on a captured exchange?",
-    "explanation": "SAE (the Dragonfly handshake) makes each guess need a live exchange with the access point, so capturing one handshake no longer allows offline cracking. It also gives forward secrecy.",
+    "stem": "A cafe wants guests to join its Wi-Fi with no password, yet still have each guest's traffic encrypted against nearby sniffers. Which Wi-Fi Alliance feature provides this?",
+    "explanation": "Enhanced Open uses Opportunistic Wireless Encryption: each client and the access point agree a unique key with no password, so passive sniffing of an open network no longer shows traffic in clear. It does not authenticate the access point, so an evil twin is still possible.",
     "options": [
-      "Open System authentication with WEP",
-      "Lightweight EAP with MS-CHAPv2",
-      "The WPA2 four-way PSK handshake",
-      "Simultaneous Authentication of Equals"
+      "Wi-Fi Enhanced Open (OWE)",
+      "MAC address filtering",
+      "WPS push-button setup",
+      "Hidden SSID broadcasting"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -1499,16 +1499,16 @@
     "skill": "Cryptanalysis",
     "difficulty": 2,
     "format": "single",
-    "stem": "An attacker has several messages in both plaintext and ciphertext form and uses the pairs to work out the key. What kind of attack is this?",
-    "explanation": "In a known-plaintext attack the analyst holds matching plaintext and ciphertext pairs. A ciphertext-only attack has nothing but the encrypted text.",
+    "stem": "An attacker can feed any text they pick into an encryption service and read back what it produces, then studies the results to recover the key. What kind of attack is this?",
+    "explanation": "In a chosen-plaintext attack the analyst decides which plaintexts get encrypted, which is stronger than only holding pairs someone else produced (known plaintext). A ciphertext-only attack has nothing but the encrypted text.",
     "options": [
       "Birthday attack",
-      "Known-plaintext attack",
       "Rubber hose attack",
+      "Chosen-plaintext attack",
       "Ciphertext-only attack"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -1667,16 +1667,16 @@
     "skill": "Firewall types",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which firewall type tracks each connection's state, so it can allow return traffic only for sessions started from inside?",
-    "explanation": "A stateful firewall keeps a table of active connections and matches returning packets to them. A static packet filter judges each packet alone and cannot tell a reply from an unsolicited packet.",
+    "stem": "Which firewall type works at the session layer, checking that a TCP handshake is legitimate before relaying the session, without looking at the data inside the packets?",
+    "explanation": "A circuit-level gateway (SOCKS is the classic example) validates the session setup and then relays traffic without inspecting its content. An application proxy reads the content, and a static packet filter judges each packet alone.",
     "options": [
-      "Stateful firewall",
+      "Application proxy firewall",
       "Router access list",
-      "Circuit-level proxy",
-      "Static packet filter"
+      "Static packet filter",
+      "Circuit-level gateway"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -2234,16 +2234,16 @@
     "skill": "Identity theft",
     "difficulty": 2,
     "format": "single",
-    "stem": "An attacker sets up a social media profile using a real executive's name and photo, then messages staff for internal documents. What is this?",
+    "stem": "An attacker sets up a LinkedIn profile using a real executive's name and photo, then messages staff for internal documents. What is this?",
     "explanation": "A fake profile of a real person borrows their trust to get information. Staff awareness and a way to confirm requests outside the platform reduce the risk.",
     "options": [
+      "Impersonation of a trusted person",
       "A watering hole attack",
       "Dumpster diving at the office",
-      "Session fixation",
-      "Impersonation on a social network"
+      "Session fixation"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -2261,7 +2261,7 @@
       "Which ports are open",
       "Which services are running",
       "The host's operating system version",
-      "Which ports a firewall filters"
+      "Which ports are filtered"
     ],
     "correct": [
       3
@@ -2843,16 +2843,16 @@
     "skill": "IoT countermeasures",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which practice best protects a fleet of smart cameras from takeover through malicious firmware?",
+    "stem": "Which practice best stops an attacker from pushing a tampered update to a fleet of smart cameras?",
     "explanation": "Requiring updates signed by the vendor means the device rejects tampered firmware. Unsigned update paths let an attacker push their own code to every device.",
     "options": [
-      "Keep the factory Telnet login",
-      "Turn off automatic updates",
+      "Accept only signed firmware",
       "Allow updates from any server",
-      "Accept only signed firmware"
+      "Keep the factory Telnet login",
+      "Turn off automatic updates"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -3011,16 +3011,16 @@
     "skill": "LDAP enumeration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which port does LDAP over TLS (LDAPS) use on an Active Directory domain controller?",
-    "explanation": "LDAPS uses TCP 636, plain LDAP uses 389, and the global catalog uses 3268 (3269 over TLS). Anonymous LDAP binds on 389 are a common enumeration target.",
+    "stem": "A tester wants to search the whole Active Directory forest, not just one domain, with LDAP queries. Which port does the global catalog listen on?",
+    "explanation": "The global catalog answers forest-wide LDAP queries on TCP 3268 (3269 over TLS). Plain LDAP for one domain uses 389 and LDAPS 636. Anonymous or low-privilege binds are a common enumeration target.",
     "options": [
-      "TCP 389",
       "UDP 161",
-      "TCP 636",
-      "TCP 3268"
+      "TCP 3268",
+      "TCP 389",
+      "TCP 636"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {

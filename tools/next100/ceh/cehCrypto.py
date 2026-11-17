@@ -18,9 +18,9 @@ ITEMS = [
            ["OCSP stapling", "Certificate pinning", "Key escrow", "A wildcard certificate"],
            "With OCSP stapling the server fetches and caches the signed OCSP answer and sends it with its certificate, so the client need not ask the CA itself. Pinning instead ties a client to a known certificate or key."),
     single(1, "Cryptanalysis", 2,
-           "An attacker has several messages in both plaintext and ciphertext form and uses the pairs to work out the key. What kind of attack is this?",
-           ["Known-plaintext attack", "Ciphertext-only attack", "Rubber hose attack", "Birthday attack"],
-           "In a known-plaintext attack the analyst holds matching plaintext and ciphertext pairs. A ciphertext-only attack has nothing but the encrypted text."),
+           "An attacker can feed any text they pick into an encryption service and read back what it produces, then studies the results to recover the key. What kind of attack is this?",
+           ["Chosen-plaintext attack", "Ciphertext-only attack", "Rubber hose attack", "Birthday attack"],
+           "In a chosen-plaintext attack the analyst decides which plaintexts get encrypted, which is stronger than only holding pairs someone else produced (known plaintext). A ciphertext-only attack has nothing but the encrypted text."),
     # ---------------- Test 2 ----------------
     single(2, "Encryption algorithms", 2,
            "What is the key length of the original DES cipher, which made it easy to brute force?",

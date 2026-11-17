@@ -5046,6 +5046,20 @@
     --brand-gradient-to: 210 40% 95%;
   }
 
+  /* ISC2 Certified in Cybersecurity (CC) theme: deep navy blue (v2 exam; matches lib/v2/exams/isc2cc.ts theme) */
+  [data-theme="isc2cc"] {
+    --brand: 203 85% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 203 85% 96%;
+    --brand-hover: 203 85% 13%;
+    --brand-dark: 203 85% 11%;
+    --brand-darker: 203 82% 7%;
+    --brand-muted: 203 30% 70%;
+    --brand-border: 203 30% 80%;
+    --brand-border-light: 203 25% 89%;
+    --brand-gradient-to: 210 40% 95%;
+  }
+
   /* Microsoft SC-900 theme: deep slate indigo (v2 exam; matches lib/v2/exams/sc900.ts theme) */
   [data-theme="sc900"] {
     --brand: 241 15% 26%;
@@ -10122,6 +10136,18 @@
     --brand-muted: 249 22% 45%;
     --brand-dark: 249 45% 65%;
     --brand-darker: 249 42% 78%;
+  }
+
+  .dark [data-theme="isc2cc"] {
+    --brand: 203 85% 40%;
+    --brand-hover: 203 85% 32%;
+    --brand-light: 203 45% 13%;
+    --brand-gradient-to: 210 40% 11%;
+    --brand-border-light: 203 25% 24%;
+    --brand-border: 203 30% 34%;
+    --brand-muted: 203 30% 45%;
+    --brand-dark: 203 85% 65%;
+    --brand-darker: 203 82% 78%;
   }
 
   .dark [data-theme="sc900"] {

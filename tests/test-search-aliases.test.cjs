@@ -169,6 +169,8 @@ const CASES = [
   ["nz boating rules test", "NZ", "nzboat"],
   ["pentest+", "US", "pentestplus"],
   ["pt0-003", "US", "pentestplus"],
+  ["isc2 cc", "US", "isc2cc"],
+  ["certified in cybersecurity", "US", "isc2cc"],
   ["sc-200", "US", "sc200"],
   ["security operations analyst", "US", "sc200"],
   ["sc-900", "US", "sc900"],

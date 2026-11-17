@@ -3055,6 +3055,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the CompTIA CySA+ CS0-004 exam objectives",
     source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/" },
   },
+  isc2cc: {
+    answer:
+      "The ISC2 Certified in Cybersecurity (CC) exam is computerized adaptive: 100 to 125 items in 2 hours, multiple choice plus advanced item types, answered in order. It is scored on a 0 to 1000 scale and 700 passes. The outline effective September 1, 2026 weights five domains: Security Principles 24%, Security Governance 17.3%, Identity and Access Management (IAM) Concepts 20%, Networking and Cloud Security Concepts 21.3%, and Security Operations and Incident Response 17.3%. No work experience is required.",
+    rows: [
+      { label: "Questions", value: "100 to 125 (adaptive)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "700 on a 0 to 1000 scale" },
+      { label: "Domains", value: "5, weighted 17.3% to 24%" },
+      { label: "Experience", value: "None required" },
+      { label: "Languages", value: "English, Chinese, Japanese, German, Spanish" },
+      { label: "Given by", value: "ISC2, at Pearson VUE test centers" },
+    ],
+    basedOn: "the ISC2 CC exam outline effective September 1, 2026",
+    source: { name: "ISC2", url: "https://www.isc2.org/certifications/cc/cc-certification-exam-outline" },
+  },
   cissp: {
     answer:
       "The CISSP exam is computerized adaptive in every language: 100 to 150 questions in 3 hours, answered in order with no going back. It is scored on a 0 to 1000 scale and 700 passes. The April 15, 2024 outline weights eight domains: Security and Risk Management 16%, Asset Security 10%, Security Architecture and Engineering 13%, Communication and Network Security 13%, Identity and Access Management 13%, Security Assessment and Testing 12%, Security Operations 13% and Software Development Security 10%. Certification also needs five years of paid work in two or more domains.",

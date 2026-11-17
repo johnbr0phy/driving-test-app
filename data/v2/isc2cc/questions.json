@@ -1,0 +1,4758 @@
+[
+  {
+    "id": "ISC2CC-T1-001",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Identification",
+    "stem": "A user types her username at a sign-in screen. Which step is she performing?",
+    "options": [
+      "Accounting",
+      "Authentication",
+      "Authorization",
+      "Identification"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Claiming an identity, such as entering a username, is identification. Proving it with a password or token is authentication."
+  },
+  {
+    "id": "ISC2CC-T1-002",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "GRC",
+    "stem": "What does the C in GRC stand for?",
+    "options": [
+      "Compliance",
+      "Confidentiality",
+      "Control",
+      "Continuity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "GRC is governance, risk and compliance: setting direction, managing risk, and meeting laws, regulations and internal policies."
+  },
+  {
+    "id": "ISC2CC-T1-003",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Confidentiality",
+    "stem": "A clinic encrypts patient files so that only staff with the key can read them. Which security goal does this mainly serve?",
+    "options": [
+      "Integrity",
+      "Confidentiality",
+      "Non-repudiation",
+      "Availability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Keeping information readable only by authorized people is confidentiality. Encryption can also support integrity checks, but hiding the content is its main job here."
+  },
+  {
+    "id": "ISC2CC-T1-004",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Risk terms",
+    "stem": "A web server runs software with a known unpatched flaw. In risk terms, what is the unpatched flaw?",
+    "options": [
+      "An impact",
+      "A threat",
+      "A vulnerability",
+      "A compensating control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A vulnerability is a weakness that could be exploited. The attacker who might exploit it is the threat, and the damage that would follow is the impact."
+  },
+  {
+    "id": "ISC2CC-T1-005",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "OSI model",
+    "stem": "Put these OSI layers in order from the bottom (layer 1) to the top.",
+    "options": [
+      "Transport",
+      "Network",
+      "Data link",
+      "Physical",
+      "Application"
+    ],
+    "correct": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ],
+    "explanation": "The OSI model runs Physical (1), Data link (2), Network (3), Transport (4), Session (5), Presentation (6) and Application (7)."
+  },
+  {
+    "id": "ISC2CC-T1-006",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Segmentation",
+    "stem": "A company puts its payment systems on their own network segment with a firewall between them and staff PCs. What is the main benefit?",
+    "options": [
+      "The payment servers no longer need logs",
+      "Payment traffic is encrypted automatically",
+      "Staff PCs can no longer be phished",
+      "A hacked PC cannot reach them directly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Segmentation limits how far an attacker can move from a compromised device. The payment systems still need patching; segmentation is one layer among several."
+  },
+  {
+    "id": "ISC2CC-T1-007",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logging and monitoring",
+    "stem": "Why do security teams send logs from many systems to one central platform?",
+    "options": [
+      "To shrink total log storage",
+      "To replace endpoint protection",
+      "To link events across systems",
+      "To stop hosts writing local logs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Central collection, as in a SIEM, lets analysts link related events from different systems, such as a VPN sign-in and a file download, and keeps logs safe if a host is compromised."
+  },
+  {
+    "id": "ISC2CC-T1-008",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Why do organizations classify their data?",
+    "options": [
+      "To match protection to sensitivity",
+      "To decide which files to back up first",
+      "To encrypt every file the same way",
+      "To let IT pick who owns each file"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Classification sorts data by sensitivity and value, so each level gets the right handling, storage and access controls."
+  },
+  {
+    "id": "ISC2CC-T1-009",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Identity lifecycle",
+    "stem": "Put these identity lifecycle stages in order for a new hire who later leaves.",
+    "options": [
+      "Deprovision the account",
+      "Define the role's access",
+      "Provision the account",
+      "Review access periodically"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Access is defined for the role, provisioned when the person joins, reviewed while they work there, and removed promptly when they leave."
+  },
+  {
+    "id": "ISC2CC-T1-010",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "GRC",
+    "stem": "What is the main benefit of running governance, risk and compliance as one program?",
+    "options": [
+      "Each team can set its own risk rules",
+      "Decisions use one shared view of risk",
+      "Audits only need to happen once",
+      "Compliance replaces risk management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An integrated GRC program gives leaders one consistent picture of risks, controls and obligations, so decisions are coordinated. It does not remove risk or the need for audits."
+  },
+  {
+    "id": "ISC2CC-T1-011",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Integrity",
+    "stem": "A payroll clerk changes an employee's salary figure without approval. Which part of the CIA triad has been harmed?",
+    "options": [
+      "Integrity",
+      "Confidentiality",
+      "Authentication",
+      "Availability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Integrity means data is accurate and changed only in authorized ways. An unapproved edit breaks integrity even if no outsider ever read the figure."
+  },
+  {
+    "id": "ISC2CC-T1-012",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk terms",
+    "stem": "Which pair of factors is combined to judge the level of a risk?",
+    "options": [
+      "Cost and schedule",
+      "Likelihood and impact",
+      "Asset value and asset owner",
+      "Threat and control"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk is judged by how likely an event is and how much harm it would cause. A rare event with huge impact and a frequent minor one can both rate high."
+  },
+  {
+    "id": "ISC2CC-T1-013",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Provisioning",
+    "stem": "Which practice best supports secure provisioning of a new hire's account?",
+    "options": [
+      "Give full access, then trim it later",
+      "Copy the access of the last person hired",
+      "Grant the approved role's access",
+      "Let the new hire request any system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Provisioning from an approved role gives the right access from day one. Copying another user often passes on extra rights they collected over time."
+  },
+  {
+    "id": "ISC2CC-T1-014",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OSI model",
+    "stem": "At which OSI layer do routers forward packets using IP addresses?",
+    "options": [
+      "Layer 2, Data link",
+      "Layer 7, Application",
+      "Layer 4, Transport",
+      "Layer 3, Network"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Routers work at the network layer, choosing paths by IP address. Switches mostly work at layer 2 with MAC addresses."
+  },
+  {
+    "id": "ISC2CC-T1-015",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance",
+    "stem": "An auditor checks whether a company's controls meet a regulation's requirements. Which part of GRC is this?",
+    "options": [
+      "Compliance",
+      "Risk transfer",
+      "Governance",
+      "Continuity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Compliance is showing that the organization meets external rules and its own policies. Audits are a common way to test it."
+  },
+  {
+    "id": "ISC2CC-T1-016",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DMZ",
+    "stem": "Where should a public-facing web server usually sit?",
+    "options": [
+      "On the internal user network",
+      "On the database server's subnet",
+      "Directly on the admin VLAN",
+      "In a screened subnet (DMZ)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A DMZ (screened subnet) holds servers the internet must reach, separated by firewalls from the internal network, so a breach of the web server does not land inside."
+  },
+  {
+    "id": "ISC2CC-T1-017",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Triage",
+    "stem": "Two alerts arrive at once: a failed sign-in on a spare laptop and ransomware behavior on a file server. How should they be triaged?",
+    "options": [
+      "Handle them in arrival order",
+      "File server alert first",
+      "Close the laptop alert unread",
+      "Wait for a third alert to decide"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Triage ranks events by impact and urgency. Active ransomware on a shared server threatens many users; one failed sign-in is low risk, though it still gets reviewed."
+  },
+  {
+    "id": "ISC2CC-T1-018",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deprovisioning",
+    "stem": "An employee is fired at 3 p.m. When should her accounts be disabled?",
+    "options": [
+      "After the next quarterly review",
+      "Once her manager files a help desk ticket",
+      "At or before the time she is told",
+      "At the end of her final week"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Access should be removed at the moment of termination, ideally as she is told, so she cannot act on a grievance. Waiting for a review or ticket leaves a window open."
+  },
+  {
+    "id": "ISC2CC-T1-019",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Business continuity",
+    "stem": "What is the main goal of a business continuity plan?",
+    "options": [
+      "Restore IT systems after an outage",
+      "Protect data from unauthorized change",
+      "Stop incidents from happening",
+      "Keep critical work going in a disruption"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Business continuity keeps essential business functions going during and after a disruption. Disaster recovery is the narrower job of restoring IT systems."
+  },
+  {
+    "id": "ISC2CC-T1-020",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Availability",
+    "stem": "Ransomware locks a clinic's booking system, so staff cannot schedule patients for a day. Which security goal failed?",
+    "options": [
+      "Accountability",
+      "Confidentiality",
+      "Availability",
+      "Integrity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Availability means authorized users can reach systems and data when they need them. Locking data so it cannot be used is an attack on availability, even when nothing is read or changed."
+  },
+  {
+    "id": "ISC2CC-T1-021",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk treatment",
+    "stem": "A company buys cyber insurance to cover losses from a data breach. Which risk treatment is this?",
+    "options": [
+      "Risk transfer",
+      "Risk avoidance",
+      "Risk acceptance",
+      "Risk mitigation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Transference shifts some of the financial impact to another party, such as an insurer. The company still owns the risk of harm to its customers and reputation."
+  },
+  {
+    "id": "ISC2CC-T1-022",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TCP/IP model",
+    "stem": "Which TCP/IP model layer is where TCP and UDP operate?",
+    "options": [
+      "Internet",
+      "Transport",
+      "Network access",
+      "Application"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "TCP and UDP are transport layer protocols in both the TCP/IP and OSI models. IP itself sits in the internet layer."
+  },
+  {
+    "id": "ISC2CC-T1-023",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Labeling",
+    "stem": "A report is stamped 'Confidential' in its header and footer. What is the purpose of this marking?",
+    "options": [
+      "Stop anyone else opening it",
+      "Tell readers how to handle it",
+      "Encrypt the report automatically",
+      "Prove who wrote the report"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Labels make a document's classification visible so people and tools handle it correctly. Labeling does not itself encrypt anything."
+  },
+  {
+    "id": "ISC2CC-T1-024",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privilege creep",
+    "stem": "A staff member who moved through three departments still has access from all of them. What is this problem called?",
+    "options": [
+      "Privilege creep",
+      "Least privilege",
+      "Role mining",
+      "Federation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Privilege creep is the build-up of rights as people change roles without old access being removed. Regular access reviews and mover processes catch it."
+  },
+  {
+    "id": "ISC2CC-T1-025",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VLANs",
+    "stem": "What does a VLAN do?",
+    "options": [
+      "Assigns public IP addresses to hosts",
+      "Encrypts all traffic between two offices",
+      "Splits a switch into logical networks",
+      "Blocks malware in email attachments"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A VLAN groups ports into separate broadcast domains on the same physical switch. Traffic between VLANs must pass through a router or firewall, where it can be filtered."
+  },
+  {
+    "id": "ISC2CC-T1-026",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threat actors",
+    "stem": "Which threat actor is most often motivated by money?",
+    "options": [
+      "Hacktivists",
+      "Nation-state units",
+      "Curious insiders",
+      "Organized crime"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Criminal groups mostly seek profit through ransomware, fraud and data theft. Hacktivists act for causes, and nation-states mostly for espionage or disruption."
+  },
+  {
+    "id": "ISC2CC-T1-027",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Disaster recovery",
+    "stem": "How does disaster recovery relate to business continuity?",
+    "options": [
+      "DR restores IT that continuity relies on",
+      "DR is the wider plan; continuity is part of it",
+      "DR replaces the need for a continuity plan",
+      "DR is written after an outage ends"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disaster recovery focuses on getting technology and data back after a disaster, which supports the wider business continuity plan."
+  },
+  {
+    "id": "ISC2CC-T1-028",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Access review",
+    "stem": "What is the main purpose of a periodic user access review?",
+    "options": [
+      "Test the backup restore process",
+      "Count how many accounts exist",
+      "Reset every user's password",
+      "Confirm access is still needed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Access reviews (recertification) have managers or owners confirm that each person's rights still fit their job, and remove the rest."
+  },
+  {
+    "id": "ISC2CC-T1-029",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication",
+    "stem": "A user types a username, then enters a code from an app on her phone. What process is the system carrying out?",
+    "options": [
+      "Provisioning",
+      "Authentication",
+      "Authorization",
+      "Accounting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Authentication proves a claimed identity, here with something she knows and something she has. Authorization comes after, when the system decides what she may do."
+  },
+  {
+    "id": "ISC2CC-T1-030",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risk treatment",
+    "stem": "A firm drops a planned feature that would store card numbers because it cannot secure them in time. Which risk treatment is this?",
+    "options": [
+      "Risk transference",
+      "Risk acceptance",
+      "Risk avoidance",
+      "Risk mitigation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Avoidance removes the risk by not doing the risky activity at all. Mitigation would have kept the feature and added controls to lower the risk."
+  },
+  {
+    "id": "ISC2CC-T1-031",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TCP and UDP",
+    "stem": "Which statement about TCP is true?",
+    "options": [
+      "It sends data with no delivery checks at all",
+      "It works only on wireless networks",
+      "It assigns IP addresses to hosts",
+      "It sets up a connection with a handshake"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "TCP opens a connection with a three-way handshake (SYN, SYN-ACK, ACK) and confirms delivery. UDP is connectionless and does not confirm delivery."
+  },
+  {
+    "id": "ISC2CC-T1-032",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business impact analysis",
+    "stem": "Which activity identifies the most critical business processes and how long each can be down?",
+    "options": [
+      "A business continuity test",
+      "A tabletop exercise",
+      "A business impact analysis",
+      "A vulnerability scan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A business impact analysis (BIA) ranks processes by criticality and sets recovery targets. It is the starting point for continuity and recovery planning."
+  },
+  {
+    "id": "ISC2CC-T1-033",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Least privilege",
+    "stem": "A help desk agent needs to reset passwords only. Under least privilege, what access should she get?",
+    "options": [
+      "Full domain administrator rights",
+      "Only the right to reset passwords",
+      "Rights matching her manager's account",
+      "Read access to every system"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Least privilege gives users only the access their job needs. A full admin account would let one mistake or one stolen password do far more damage."
+  },
+  {
+    "id": "ISC2CC-T1-034",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Micro-segmentation",
+    "stem": "Micro-segmentation differs from traditional segmentation because it:",
+    "options": [
+      "Controls traffic per workload",
+      "Uses VLANs only at the physical switch",
+      "Splits the network into a few big zones",
+      "Filters traffic only at the internet edge"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Micro-segmentation applies fine-grained policy around individual workloads or applications, often in software, so even servers on the same subnet cannot talk freely."
+  },
+  {
+    "id": "ISC2CC-T1-035",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threat intelligence",
+    "stem": "What makes cyber threat intelligence useful to a security team?",
+    "options": [
+      "It blocks every attack automatically",
+      "It replaces internal monitoring",
+      "It guides defense priorities",
+      "It proves who attacked the company"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Threat intelligence is evidence about adversaries, their methods and indicators, used to prioritize defenses and spot attacks early."
+  },
+  {
+    "id": "ISC2CC-T1-036",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Masking",
+    "stem": "A clerk can confirm a caller by the last four digits of an ID number, while the rest shows only as symbols. Which technique is this?",
+    "options": [
+      "Data masking",
+      "Hashing",
+      "Data labeling",
+      "Tokenization of the network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Masking hides part of the data so staff can confirm a record without seeing the full value."
+  },
+  {
+    "id": "ISC2CC-T1-037",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accounting",
+    "stem": "An investigator needs to know which account changed a firewall rule last Tuesday. Which part of AAA provides this?",
+    "options": [
+      "Identification",
+      "Authorization",
+      "Authentication",
+      "Accounting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Accounting (also called auditing) keeps a record of user actions so they can be traced later. Authentication proves who someone is; authorization sets what they may do."
+  },
+  {
+    "id": "ISC2CC-T1-038",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk terms",
+    "stem": "A team patches a server and tightens its firewall, yet a small chance of attack is left. What is that leftover risk called?",
+    "options": [
+      "Inherent risk",
+      "Residual risk",
+      "Total exposure",
+      "Risk appetite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Residual risk is what is left after controls. Inherent risk is the level before any controls; management decides whether the residual level is acceptable."
+  },
+  {
+    "id": "ISC2CC-T1-039",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Separation of duties",
+    "stem": "In a hospital pharmacy, the person who orders controlled drugs may not also check in and count the delivery. Which principle is this?",
+    "options": [
+      "Principle of least privilege",
+      "Separation of duties",
+      "Need to know",
+      "Defense in depth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Separation of duties splits a sensitive task so no single person can complete theft or fraud alone. Ordering and receiving are kept with different people."
+  },
+  {
+    "id": "ISC2CC-T1-040",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IPv4",
+    "stem": "How long is an IPv4 address?",
+    "options": [
+      "32 bits",
+      "48 bits",
+      "64 bits",
+      "128 bits"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IPv4 addresses are 32 bits, written as four decimal numbers such as 192.168.1.10. IPv6 addresses are 128 bits, and MAC addresses are 48 bits.",
+    "lockedOrder": true
+  },
+  {
+    "id": "ISC2CC-T1-041",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "RTO and RPO",
+    "stem": "A payroll system's recovery point objective is 4 hours. What does that mean?",
+    "options": [
+      "No more than 4 hours of data may be lost",
+      "Backups must be kept for 4 hours",
+      "Staff get 4 hours to declare a disaster",
+      "The system must be back up within 4 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The recovery point objective is the maximum acceptable data loss measured in time, which drives how often backups run. The recovery time objective is how fast the system must be back."
+  },
+  {
+    "id": "ISC2CC-T1-042",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Two-person rule",
+    "stem": "Opening a vault of master keys requires two officers to be present at once. Which control is this?",
+    "options": [
+      "Job rotation",
+      "Mandatory vacation policy",
+      "Two-person integrity",
+      "Single sign-on"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Two-person integrity (dual control) requires two people together for a critical action. Separation of duties splits steps between people over time; dual control needs them at the same moment."
+  },
+  {
+    "id": "ISC2CC-T1-043",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Recovery sites",
+    "stem": "Which recovery site has power and network in place but needs equipment shipped in and set up before use?",
+    "options": [
+      "A hot site",
+      "A warm site",
+      "A mirrored site",
+      "A cold site"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A cold site is a basic facility with power and connectivity but little or no equipment, so it takes longest to bring up. A hot site is ready to run almost at once."
+  },
+  {
+    "id": "ISC2CC-T1-044",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defense in depth",
+    "stem": "A data center has a perimeter fence, a guarded lobby, badge-controlled doors and locked cages around each rack. Which principle does this show?",
+    "options": [
+      "Single point of trust",
+      "Separation of duties",
+      "Defense in depth",
+      "Least privilege"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Defense in depth layers controls so that if one fails, the next still protects the asset. Here the layers are physical, from the fence in to the rack."
+  },
+  {
+    "id": "ISC2CC-T1-045",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Threat frameworks",
+    "stem": "A team maps attacker tactics and techniques seen in an incident to a public knowledge base of adversary behavior. Which framework are they most likely using?",
+    "options": [
+      "NIST SP 800-88",
+      "ISO 9001",
+      "The OSI model",
+      "MITRE ATT&CK"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MITRE ATT&CK catalogs real-world adversary tactics and techniques. SP 800-88 covers media sanitization, and ISO 9001 covers quality management."
+  },
+  {
+    "id": "ISC2CC-T1-046",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Non-repudiation",
+    "stem": "A buyer later claims she never approved a large order. Which property, provided by her digital signature on the order, makes that claim hard to sustain?",
+    "options": [
+      "Non-repudiation",
+      "Confidentiality",
+      "Availability",
+      "Least privilege"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Non-repudiation means a person cannot credibly deny an action they took. A digital signature made with a private key only she holds ties the approval to her."
+  },
+  {
+    "id": "ISC2CC-T1-047",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Risk appetite",
+    "stem": "A board states it will accept moderate risk to launch products quickly but no risk to patient safety. What is the board describing?",
+    "options": [
+      "Its risk register",
+      "Its risk appetite",
+      "Its residual risk",
+      "Its threat model"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk appetite is the amount and type of risk an organization is willing to take to meet its goals. It guides which risks get treated and which are accepted."
+  },
+  {
+    "id": "ISC2CC-T1-048",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IPv4 private addresses",
+    "stem": "Which address is in a private IPv4 range that is not routed on the public internet?",
+    "options": [
+      "8.8.4.4",
+      "172.32.0.5",
+      "203.0.113.9",
+      "10.20.30.40"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16 are private ranges. 172.32.0.5 is just outside the 172.16 to 172.31 block."
+  },
+  {
+    "id": "ISC2CC-T1-049",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discretionary access control",
+    "stem": "In which access control model can the owner of a file decide who else may read it?",
+    "options": [
+      "Discretionary access control",
+      "Mandatory access control",
+      "Rule-based access control",
+      "Attribute-based access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In DAC, the owner sets permissions on objects they own, as in most desktop file systems. MAC uses labels set by the system, which owners cannot override."
+  },
+  {
+    "id": "ISC2CC-T1-050",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Backups",
+    "stem": "A team runs a full backup on Sunday and a differential backup on each other day. To restore on Thursday, which backups are needed?",
+    "options": [
+      "Every backup from Sunday to Thursday",
+      "Sunday's full and Thursday's differential",
+      "Only Thursday's differential",
+      "Sunday's full and Wednesday's differential"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A differential backup holds all changes since the last full backup, so only the full and the latest differential are needed. Incremental backups would need every one since the full."
+  },
+  {
+    "id": "ISC2CC-T1-051",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sanitization",
+    "stem": "Old drives that held secret data are shredded into small pieces before disposal. Which NIST sanitization category is this?",
+    "options": [
+      "Purge",
+      "Clear",
+      "Destroy",
+      "Archive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "NIST SP 800-88 defines clear, purge and destroy. Destroy makes the media physically unusable, such as by shredding, melting or incinerating."
+  },
+  {
+    "id": "ISC2CC-T1-052",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mandatory access control",
+    "stem": "A military system compares each user's clearance with each file's classification label, and users cannot change the labels. Which model is this?",
+    "options": [
+      "Discretionary access control",
+      "Rule-based access control",
+      "Role-based access control",
+      "Mandatory access control"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MAC enforces access using labels and clearances set by the system or administrators. It is common where classified data is handled."
+  },
+  {
+    "id": "ISC2CC-T1-053",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "How does privacy differ from confidentiality?",
+    "options": [
+      "Privacy covers any secret business data",
+      "Privacy is about a person's own data",
+      "Privacy only applies once data is stolen",
+      "Privacy is just another word for secrecy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Privacy is about an individual's right to control how information about them is collected and used. Confidentiality is the broader duty to keep any sensitive information from unauthorized eyes."
+  },
+  {
+    "id": "ISC2CC-T1-054",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Qualitative risk",
+    "stem": "A heat map places each risk on a 1 to 5 scale for likelihood and for impact, with no money figures. What kind of analysis is this?",
+    "options": [
+      "Qualitative",
+      "Statistical",
+      "Financial",
+      "Quantitative"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Qualitative analysis uses ratings and categories rather than dollar figures. Quantitative analysis assigns numbers, such as expected annual loss in money."
+  },
+  {
+    "id": "ISC2CC-T1-055",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ports",
+    "stem": "Which port does HTTPS use by default?",
+    "options": [
+      "22",
+      "80",
+      "443",
+      "3389"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "HTTPS uses TCP 443. Port 80 is plain HTTP, 22 is SSH and 3389 is Remote Desktop.",
+    "lockedOrder": true
+  },
+  {
+    "id": "ISC2CC-T1-056",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Zero Trust",
+    "stem": "What is the core idea of Zero Trust?",
+    "options": [
+      "Check identity only once per working day",
+      "Trust any device inside the office network",
+      "Trust no request based on location alone",
+      "Trust devices once they join the VPN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Zero Trust treats every request as untrusted until it is authenticated and authorized, based on identity, device and context, wherever it comes from (NIST SP 800-207)."
+  },
+  {
+    "id": "ISC2CC-T1-057",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Incident response",
+    "stem": "A malware infection is confirmed on several PCs. Put these response steps in order.",
+    "options": [
+      "Remove the malware",
+      "Restore and watch the systems",
+      "Isolate the infected PCs",
+      "Hold a lessons-learned review"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "explanation": "Containment comes first to stop spread, then eradication removes the cause, then recovery returns systems to service under watch, and a review afterward improves the plan."
+  },
+  {
+    "id": "ISC2CC-T1-058",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Phishing",
+    "stem": "An email that looks like it is from a bank asks the reader to confirm account details on a linked site. What kind of attack is this?",
+    "options": [
+      "Tailgating",
+      "Dumpster diving",
+      "Shoulder surfing",
+      "Phishing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Phishing uses fake messages to trick people into giving up information or clicking malicious links. The others are physical or in-person techniques."
+  },
+  {
+    "id": "ISC2CC-T1-059",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Role-based access control",
+    "stem": "When a sales rep is promoted, an admin moves her account from the Sales Rep group to the Sales Manager group and her permissions change with it. Which model is this?",
+    "options": [
+      "Role-based access control",
+      "Discretionary access control",
+      "Mandatory access control",
+      "Identity-based access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "RBAC assigns permissions to roles and people to roles. Changing someone's job then only means changing their role."
+  },
+  {
+    "id": "ISC2CC-T1-060",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Social engineering",
+    "stem": "A caller claims to be from IT support and asks an employee for her password to fix an account problem. What technique is the caller using?",
+    "options": [
+      "Baiting with USB media",
+      "Pretexting by phone",
+      "Watering hole",
+      "Smishing by text"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The caller invents a believable story (a pretext) over the phone, a form of vishing. Smishing uses text messages, and baiting leaves infected media for someone to find."
+  },
+  {
+    "id": "ISC2CC-T1-061",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Control types",
+    "stem": "A company installs badge readers on every door to its server room. What type of control is this?",
+    "options": [
+      "Corrective",
+      "Technical",
+      "Physical",
+      "Administrative"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Badge readers, locks, fences and guards are physical controls. Technical controls run in hardware or software on systems, such as firewalls; administrative controls are policies and procedures."
+  },
+  {
+    "id": "ISC2CC-T1-062",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Risk management lifecycle",
+    "stem": "Put these risk management steps in a sensible order.",
+    "options": [
+      "Identify the risks",
+      "Monitor and review",
+      "Assess likelihood and impact",
+      "Choose a treatment"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "explanation": "Risks are identified, then assessed, then treated (avoid, mitigate, transfer or accept), and monitored over time because threats and assets change. The cycle then repeats."
+  },
+  {
+    "id": "ISC2CC-T1-063",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Attribute-based access control",
+    "stem": "A policy allows access to payroll data only for finance staff, on a company laptop, during business hours. Which model fits best?",
+    "options": [
+      "Attribute-based access control",
+      "Mandatory access control",
+      "Discretionary access control",
+      "Role-based access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ABAC decides access from several attributes of the user, device, resource and context, such as department, device type and time. RBAC looks at the role alone."
+  },
+  {
+    "id": "ISC2CC-T1-064",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Firewalls",
+    "stem": "A stateful firewall differs from a simple packet filter because it:",
+    "options": [
+      "Inspects only the MAC addresses in frames",
+      "Tracks the state of each connection",
+      "Encrypts all traffic it passes",
+      "Blocks every inbound packet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A stateful firewall remembers connections it has seen, so it can allow return traffic for sessions started inside. A basic packet filter judges each packet on its own."
+  },
+  {
+    "id": "ISC2CC-T1-065",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Symmetric encryption",
+    "stem": "A file is locked with a secret key, and the person receiving it needs that same key to open it. What kind of cryptography is this?",
+    "options": [
+      "Hashing",
+      "Asymmetric encryption",
+      "Digital signing",
+      "Symmetric encryption"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Symmetric ciphers such as AES use one shared secret key. They are fast, but the key must be shared securely."
+  },
+  {
+    "id": "ISC2CC-T1-066",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cloud service models",
+    "stem": "A company rents virtual machines and installs and patches its own operating systems on them. Which cloud service model is this?",
+    "options": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "FaaS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In IaaS the provider supplies compute, storage and networking, and the customer manages the operating system and everything above it."
+  },
+  {
+    "id": "ISC2CC-T1-067",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Incident response plan",
+    "stem": "During an incident, a handler copies a suspicious file for analysis. What should the incident response plan's data handling policy ensure?",
+    "options": [
+      "The file is opened on the handler's own PC",
+      "The original is deleted once copied",
+      "Evidence is kept intact",
+      "Anyone on the IT team may view it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IR plans set how incident data is collected, stored, accessed and shared so evidence stays intact and sensitive data is protected. Chain of custody records who handled it."
+  },
+  {
+    "id": "ISC2CC-T1-068",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Single sign-on",
+    "stem": "What does single sign-on (SSO) give users?",
+    "options": [
+      "One sign-in for many applications",
+      "Automatic admin rights everywhere",
+      "Access without any authentication",
+      "A different password for each app"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SSO lets one authentication grant access to many connected applications. It reduces password fatigue, but the single account then needs strong protection such as MFA."
+  },
+  {
+    "id": "ISC2CC-T1-069",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spear phishing",
+    "stem": "An email sent only to staff in one research lab names their current project and team lead, and asks them to sign in to a fake file share. How is this best described?",
+    "options": [
+      "Mass phishing",
+      "Spear phishing",
+      "Whaling",
+      "Clone phishing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spear phishing targets a specific person or small group with tailored details. Whaling is spear phishing aimed at senior executives, which lab staff are not."
+  },
+  {
+    "id": "ISC2CC-T1-070",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Control types",
+    "stem": "Which of these is an administrative control?",
+    "options": [
+      "A locked cage around network gear",
+      "A host-based firewall on all laptops",
+      "Encryption of backup tapes",
+      "A required annual security training"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Administrative (managerial) controls are policies, procedures and training that guide people. A firewall and encryption are technical controls, and a cage is physical."
+  },
+  {
+    "id": "ISC2CC-T1-071",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Policies and procedures",
+    "stem": "Which document gives step-by-step instructions for resetting a user's password at the help desk?",
+    "options": [
+      "A guideline",
+      "A policy",
+      "A regulation",
+      "A procedure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Procedures are the detailed steps for doing a task. A policy states what must be achieved and why; a guideline is advice that is not mandatory."
+  },
+  {
+    "id": "ISC2CC-T1-072",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Application firewalls",
+    "stem": "Which firewall can block a specific web request carrying a SQL injection attempt even though it arrives on an allowed port?",
+    "options": [
+      "A web application firewall",
+      "A stateful port filter",
+      "A basic packet filter",
+      "A network address translator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A web application firewall inspects HTTP content at the application layer. Port-based filters allow anything on port 443 if the port is open."
+  },
+  {
+    "id": "ISC2CC-T1-073",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Federation",
+    "stem": "Employees of a partner company sign in to a supplier's portal using their own company accounts. What makes this possible?",
+    "options": [
+      "Mandatory access control",
+      "Separation of duties",
+      "Federated identity",
+      "Network address translation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Federation is a trust between organizations so one accepts identities verified by the other. The partner's own system authenticates its users."
+  },
+  {
+    "id": "ISC2CC-T1-074",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security awareness",
+    "stem": "What is the strongest sign of a healthy security culture?",
+    "options": [
+      "No incidents are ever reported",
+      "Staff report suspicious emails",
+      "Only IT staff take training",
+      "Users never ask security questions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When people report suspicious messages without fear of blame, threats are caught early. A report count of zero usually means problems are going unnoticed."
+  },
+  {
+    "id": "ISC2CC-T1-075",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud characteristics",
+    "stem": "Users can add storage themselves through a web portal at any hour without calling the provider. Which NIST cloud characteristic is this?",
+    "options": [
+      "Measured service",
+      "Resource pooling",
+      "On-demand self-service",
+      "Broad network access"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On-demand self-service means customers can provision resources themselves without human interaction with the provider (NIST SP 800-145)."
+  },
+  {
+    "id": "ISC2CC-T1-076",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Asset lifecycle",
+    "stem": "A company still runs an operating system that its vendor stopped supporting last year. What is the main security risk?",
+    "options": [
+      "New flaws will never be patched",
+      "Its license becomes illegal to use",
+      "It will stop working at once",
+      "Its data becomes unencrypted"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "End-of-life software no longer gets security updates, so every newly found flaw stays open. It should be upgraded, replaced or isolated."
+  },
+  {
+    "id": "ISC2CC-T1-077",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privileged accounts",
+    "stem": "Why should administrators use a separate account for admin tasks instead of their everyday account?",
+    "options": [
+      "To keep admin actions out of the logs",
+      "So they need fewer passwords overall",
+      "So the admin account can be shared by the team",
+      "To limit damage if the daily account is compromised"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If the everyday account used for email and browsing is phished, the attacker does not gain admin rights. The admin account is used only when needed."
+  },
+  {
+    "id": "ISC2CC-T1-078",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Asymmetric encryption",
+    "stem": "Alice wants to send Bob a message only Bob can read. Which key should she encrypt it with?",
+    "options": [
+      "Alice's public key",
+      "Bob's public key",
+      "Bob's private key",
+      "Alice's private key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Anything encrypted with Bob's public key can be decrypted only with Bob's private key, which only he holds."
+  },
+  {
+    "id": "ISC2CC-T1-079",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Control types",
+    "select": 2,
+    "stem": "Which TWO are technical controls? (Choose two.)",
+    "options": [
+      "Security cameras covering the lobby doors",
+      "An acceptable use policy",
+      "A visitor sign-in book",
+      "Multifactor authentication on email",
+      "An intrusion detection system"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "Technical (logical) controls are enforced by hardware or software, such as MFA and an IDS. A sign-in book and cameras are physical controls, and a policy is administrative."
+  },
+  {
+    "id": "ISC2CC-T1-080",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Standards and guidelines",
+    "stem": "Which document type is recommended but not mandatory?",
+    "options": [
+      "A policy",
+      "A standard",
+      "A regulation",
+      "A guideline"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Guidelines offer advice and good practice that staff may adapt. Policies, standards and laws are mandatory."
+  },
+  {
+    "id": "ISC2CC-T1-081",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VPN",
+    "stem": "What does a VPN mainly provide for a remote worker on public Wi-Fi?",
+    "options": [
+      "An encrypted tunnel to the company network",
+      "A permanent public IP address",
+      "A faster connection to the internet",
+      "Protection against malware already on her laptop"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A VPN encrypts traffic between the device and the VPN gateway so others on the Wi-Fi cannot read it. It does not stop malware already on the laptop."
+  },
+  {
+    "id": "ISC2CC-T1-082",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Password protection",
+    "stem": "Which habit best protects staff passwords?",
+    "options": [
+      "Changing one password by a digit each month",
+      "Using a password manager with unique passwords",
+      "Reusing one strong password on every site",
+      "Writing passwords on a note under the keyboard"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A password manager makes long, unique passwords practical, so a breach on one site does not unlock others. Reusing even a strong password spreads the damage."
+  },
+  {
+    "id": "ISC2CC-T1-083",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Service accounts",
+    "stem": "Which practice is best for a service account that an application uses to reach a database?",
+    "options": [
+      "Let staff sign in with it for app testing",
+      "Use the same password as other apps",
+      "Give it only the database rights it needs",
+      "Make it a member of the admin group"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Service accounts should follow least privilege like people, and should not be used for interactive sign-ins. Shared passwords and admin rights widen any breach."
+  },
+  {
+    "id": "ISC2CC-T1-084",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud deployment models",
+    "stem": "A cloud is built and shared only by a group of credit unions that face the same regulators. Which deployment model is this?",
+    "options": [
+      "Hybrid cloud",
+      "Private cloud",
+      "Community cloud",
+      "Public cloud"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A community cloud serves a group of organizations with shared concerns, such as regulation. A public cloud is open to anyone."
+  },
+  {
+    "id": "ISC2CC-T1-085",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change management",
+    "stem": "What is the main purpose of a change management process?",
+    "options": [
+      "Track hardware assets by tag",
+      "Speed up every change to production",
+      "Replace testing before a release",
+      "Vet changes before they are made"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Change management makes sure changes are requested, assessed for risk, approved, tested, documented and can be rolled back, which avoids unplanned outages and security gaps."
+  },
+  {
+    "id": "ISC2CC-T1-086",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key risk indicators",
+    "stem": "How does a key risk indicator (KRI) differ from a key performance indicator (KPI)?",
+    "options": [
+      "A KRI shows how well a team met its goals",
+      "A KRI warns that risk is rising",
+      "A KRI counts incidents already closed",
+      "A KRI replaces the risk register"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "KRIs are early warning signals that exposure is growing, such as a rising count of unpatched servers. KPIs measure how well a process is performing against its goals."
+  },
+  {
+    "id": "ISC2CC-T1-087",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Control functions",
+    "stem": "Security cameras record a break-in at night, and the footage is reviewed the next morning. What is the cameras' main function in this case?",
+    "options": [
+      "Detective",
+      "Corrective",
+      "Preventive",
+      "Compensating"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A control that identifies or records an event after it starts is detective. Visible cameras can also deter, but recording the break-in for later review is detection."
+  },
+  {
+    "id": "ISC2CC-T1-088",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Due care",
+    "stem": "A manager makes sure that patches are actually applied each month as policy requires. Which concept does this show?",
+    "options": [
+      "Separation of duties",
+      "Due diligence",
+      "Risk appetite",
+      "Due care"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Due care is doing what a reasonable person would do to protect assets, such as carrying out the patching. Due diligence is the research and checking that tells you what care is needed."
+  },
+  {
+    "id": "ISC2CC-T1-089",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Just-in-time access",
+    "stem": "An engineer gets admin rights on a server for two hours after approval, and the rights then expire. What is this approach?",
+    "options": [
+      "Standing privileged access",
+      "Discretionary privileged access",
+      "Just-in-time privileged access",
+      "Shared privileged access"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Just-in-time access grants elevated rights only when needed and only for a set time, so there is no standing admin access to steal."
+  },
+  {
+    "id": "ISC2CC-T1-090",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wireless",
+    "stem": "A new office router offers several wireless security modes. Which should the office pick?",
+    "options": [
+      "WPA3",
+      "WPA with TKIP",
+      "An open network",
+      "WEP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "WPA3 is the current Wi-Fi security standard. WEP and TKIP are broken, and an open network sends traffic in the clear."
+  },
+  {
+    "id": "ISC2CC-T1-091",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dashboards",
+    "stem": "Who is a high-level security dashboard showing a few trend lines and red, amber and green ratings mainly for?",
+    "options": [
+      "Network engineers",
+      "Senior leaders",
+      "Malware analysts",
+      "Help desk agents"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Executive dashboards summarize risk posture at a glance so leaders can decide and fund. Technical teams need the detailed data underneath."
+  },
+  {
+    "id": "ISC2CC-T1-092",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Access control models",
+    "select": 2,
+    "stem": "Which TWO statements about role-based access control are true? (Choose two.)",
+    "options": [
+      "Users get access by being given a role",
+      "Permissions are attached to roles",
+      "Access depends only on the time of day",
+      "Every object carries a classification label",
+      "Owners set permissions on their own files"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "In RBAC, permissions belong to roles and users inherit them by role membership. Owner-set permissions describe DAC, and classification labels describe MAC."
+  },
+  {
+    "id": "ISC2CC-T1-093",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hashing",
+    "stem": "Which statement about a hash function is true?",
+    "options": [
+      "It needs a key to produce its output",
+      "Its output length grows with the input",
+      "It is the same as symmetric encryption",
+      "It cannot be reversed to get the input"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A cryptographic hash is a one-way, fixed-length digest. A tiny change to the input gives a very different hash, which is why hashes verify integrity."
+  },
+  {
+    "id": "ISC2CC-T1-094",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 3,
+    "format": "matrix",
+    "skill": "Shared responsibility",
+    "stem": "In a Software as a Service app, who is mainly responsible for each item?",
+    "rows": [
+      "Which users get access to the app",
+      "Patching the app's servers",
+      "The data users put into the app",
+      "Physical security of the data center"
+    ],
+    "columns": [
+      "Customer",
+      "Provider"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "In SaaS the provider runs everything up to the application, while the customer always owns its data and decides who gets access."
+  },
+  {
+    "id": "ISC2CC-T1-095",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security testing",
+    "stem": "Which team simulates real attackers to test an organization's defenses?",
+    "options": [
+      "The change board",
+      "The purple team",
+      "The red team",
+      "The blue team"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The red team plays the attacker. The blue team defends, and a purple team exercise has both working together to improve detection."
+  },
+  {
+    "id": "ISC2CC-T1-096",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrity",
+    "stem": "Which technique lets a user check that a downloaded file was not altered on the way?",
+    "options": [
+      "Matching its published hash",
+      "Downloading the file a second time",
+      "Opening the file in read-only mode",
+      "Checking the file's creation date"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the hash of the downloaded file matches the hash the publisher posted, the file is unchanged, which confirms integrity. Downloading twice proves nothing if the source was tampered with."
+  },
+  {
+    "id": "ISC2CC-T1-097",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "ISC2 Code of Ethics",
+    "stem": "Which canon comes first in the ISC2 Code of Ethics?",
+    "options": [
+      "Advance and protect the profession",
+      "Protect society and the infrastructure",
+      "Act honorably, honestly, justly and legally",
+      "Serve principals diligently"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The canons run in order: protect society, the common good and the infrastructure; act honorably, honestly, justly, responsibly and legally; serve principals diligently and competently; advance and protect the profession."
+  },
+  {
+    "id": "ISC2CC-T1-098",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Industrial control systems",
+    "stem": "Why are industrial control systems often hard to patch quickly?",
+    "options": [
+      "They use only new operating systems",
+      "Their vendors forbid any security changes",
+      "They never connect to any network",
+      "Downtime can halt physical processes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ICS run physical processes such as power and water, so taking them down to patch can be costly or unsafe. They are often protected with segmentation and monitoring instead."
+  },
+  {
+    "id": "ISC2CC-T1-099",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Metrics",
+    "stem": "Which is the most useful metric of whether phishing training is working?",
+    "options": [
+      "The length of the training video",
+      "The total emails sent each day",
+      "Share of staff reporting test phishes",
+      "The number of slides in the training deck"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Behavior change shows training works: more people reporting simulated phishing, and fewer clicking. Slide counts and video length measure effort, not results."
+  },
+  {
+    "id": "ISC2CC-T1-100",
+    "section": "cc",
+    "test": 1,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Need to know",
+    "stem": "A manager has top secret clearance but is denied a top secret file outside her project. Which principle applies?",
+    "options": [
+      "Need to know",
+      "Due diligence",
+      "Job rotation",
+      "Separation of duties"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Clearance alone is not enough: access also requires a need to know the specific information for one's duties."
+  },
+  {
+    "id": "ISC2CC-T2-001",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Authentication",
+    "stem": "Which step proves that a user is who she claims to be?",
+    "options": [
+      "Authorization",
+      "Authentication",
+      "Identification",
+      "Provisioning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Authentication checks a claimed identity using a factor such as a password, token or fingerprint."
+  },
+  {
+    "id": "ISC2CC-T2-002",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Governance",
+    "stem": "Which part of GRC sets direction, assigns responsibility and holds people accountable for security?",
+    "options": [
+      "Compliance",
+      "Monitoring",
+      "Governance",
+      "Recovery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Governance is how leadership directs and oversees security through strategy, policy and roles. Compliance checks that rules are being met."
+  },
+  {
+    "id": "ISC2CC-T2-003",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Confidentiality",
+    "stem": "An employee reads a colleague's salary in a shared spreadsheet she was never meant to see. Which security goal was broken?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Non-repudiation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disclosure to someone without authorization is a loss of confidentiality. Nothing was changed or made unavailable."
+  },
+  {
+    "id": "ISC2CC-T2-004",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Risk terms",
+    "stem": "A disgruntled former employee who still knows a shared password is best described as what?",
+    "options": [
+      "A safeguard",
+      "A vulnerability",
+      "An asset",
+      "A threat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A threat is anyone or anything that could cause harm. The shared password that was never changed is the vulnerability the threat could exploit."
+  },
+  {
+    "id": "ISC2CC-T2-005",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OSI model",
+    "stem": "Switches forward frames using MAC addresses. At which OSI layer does this happen?",
+    "options": [
+      "Network",
+      "Data link",
+      "Physical",
+      "Presentation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "MAC addresses and frames belong to the data link layer (layer 2). The network layer (layer 3) uses IP addresses."
+  },
+  {
+    "id": "ISC2CC-T2-006",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Firewall zones",
+    "stem": "Which arrangement best protects an internal database from the internet?",
+    "options": [
+      "One flat network with no internal firewall",
+      "Database directly on the internet edge",
+      "Internet, DMZ web tier, then an internal zone",
+      "Database sitting in the same zone as the web tier"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Layered zones let each tier accept traffic only from the tier in front of it. The database then accepts connections only from the application, never from the internet."
+  },
+  {
+    "id": "ISC2CC-T2-007",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logging and monitoring",
+    "stem": "Why should log servers keep accurate, synchronized time?",
+    "options": [
+      "So events line up correctly",
+      "So logs cannot be altered",
+      "So log storage is cheaper",
+      "So each log is encrypted"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Without synchronized clocks, events from different systems cannot be put in a reliable order, which ruins correlation and weakens evidence."
+  },
+  {
+    "id": "ISC2CC-T2-008",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "A sales director decides that next year's forecast must be marked Confidential. Which data role is she acting in?",
+    "options": [
+      "Data subject",
+      "Data processor",
+      "Data custodian",
+      "Data owner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The data owner is accountable for the data and decides its classification. Custodians such as IT apply and run the controls the owner requires."
+  },
+  {
+    "id": "ISC2CC-T2-009",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Role definition",
+    "stem": "Before a company can automate account provisioning by job, what must it do first?",
+    "options": [
+      "Run an access review for every user",
+      "Define the access each role needs",
+      "Buy an identity governance tool",
+      "Give every user the same base access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Role definition lists the access each job needs. Automated provisioning then assigns that set when someone is placed in the role."
+  },
+  {
+    "id": "ISC2CC-T2-010",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "GRC tools",
+    "stem": "A company keeps its risks, controls, policies and audit findings in one system with workflows and reports. What is this kind of system?",
+    "options": [
+      "A load balancer",
+      "A hypervisor",
+      "A GRC platform",
+      "A SIEM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "GRC platforms track risks, controls, policies and audits in one place. A SIEM collects and correlates security logs instead."
+  },
+  {
+    "id": "ISC2CC-T2-011",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Availability",
+    "stem": "Which measure most directly supports availability?",
+    "options": [
+      "Redundant power supplies on servers",
+      "Encrypting the whole customer database",
+      "Strong password rules",
+      "Digital signatures on contracts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Redundancy keeps systems running when one part fails, which is availability. Signatures support non-repudiation, and encryption and passwords mostly support confidentiality."
+  },
+  {
+    "id": "ISC2CC-T2-012",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk treatment",
+    "stem": "Managers review a low-impact risk and decide the cost of fixing it outweighs the harm. They sign off and take no action. What did they do?",
+    "options": [
+      "Transferred the risk",
+      "Avoided the risk",
+      "Mitigated the risk",
+      "Accepted the risk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Acceptance is a conscious, documented decision to live with a risk. Ignoring a risk nobody looked at is not acceptance."
+  },
+  {
+    "id": "ISC2CC-T2-013",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Movers",
+    "stem": "An accountant moves to the marketing team. What should happen to her finance system access?",
+    "options": [
+      "Leave it until her next review",
+      "Remove it as she moves",
+      "Keep it in case she returns",
+      "Convert it to read-only for a year"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When people change roles, old access should be removed as new access is granted. Keeping it 'just in case' is how privilege creep starts."
+  },
+  {
+    "id": "ISC2CC-T2-014",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OSI model",
+    "stem": "At which OSI layer do HTTP, DNS and SMTP operate?",
+    "options": [
+      "Transport",
+      "Data link",
+      "Presentation",
+      "Application"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "These are application layer protocols (layer 7). They ride on transport protocols such as TCP and UDP."
+  },
+  {
+    "id": "ISC2CC-T2-015",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RTO and RPO",
+    "stem": "Which value states how quickly a system must be back in service after an outage?",
+    "options": [
+      "Recovery time objective",
+      "Mean time between failures",
+      "Recovery point objective",
+      "Annual loss expectancy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The recovery time objective (RTO) is the target time to restore a system. The recovery point objective (RPO) is how much data, measured in time, may be lost."
+  },
+  {
+    "id": "ISC2CC-T2-016",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defense in depth",
+    "stem": "An attacker gets past the email filter, but endpoint protection stops the malware. Which principle worked?",
+    "options": [
+      "Least privilege",
+      "Need to know",
+      "Defense in depth",
+      "Security through obscurity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With layered defenses, a failure in one control (the email filter) is caught by another (endpoint protection)."
+  },
+  {
+    "id": "ISC2CC-T2-017",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Triage",
+    "stem": "A SIEM flags one user signing in from two countries within ten minutes. What kind of rule produced this alert?",
+    "options": [
+      "A backup schedule",
+      "A correlation use case",
+      "A firewall NAT rule",
+      "A data retention policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use cases define patterns worth alerting on; this one correlates sign-ins by place and time to spot 'impossible travel', a sign of stolen credentials."
+  },
+  {
+    "id": "ISC2CC-T2-018",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deprovisioning",
+    "stem": "Six months after a contractor left, his VPN account still works. Which identity lifecycle step failed?",
+    "options": [
+      "Identification",
+      "Deprovisioning",
+      "Provisioning",
+      "Role definition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Deprovisioning removes or disables access when someone leaves. Orphaned accounts like this are a common way into networks."
+  },
+  {
+    "id": "ISC2CC-T2-019",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Recovery sites",
+    "stem": "Which recovery site is fully equipped with current data and can take over almost at once?",
+    "options": [
+      "A colocation cage",
+      "A cold site",
+      "A warm site",
+      "A hot site"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A hot site mirrors the primary with ready equipment and near-current data, so switchover is fast. It is also the most expensive option."
+  },
+  {
+    "id": "ISC2CC-T2-020",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrity",
+    "stem": "A bank wants to make sure no one can quietly edit transaction records once they are written. Which goal is it protecting?",
+    "options": [
+      "Privacy",
+      "Confidentiality",
+      "Integrity",
+      "Availability"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Protecting data from unauthorized or undetected change is integrity. Who can read the records is a confidentiality question."
+  },
+  {
+    "id": "ISC2CC-T2-021",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk treatment",
+    "stem": "Adding a web application firewall in front of a vulnerable site is an example of which treatment?",
+    "options": [
+      "Mitigation",
+      "Avoidance",
+      "Transference",
+      "Acceptance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mitigation lowers the likelihood or impact of a risk with controls. The site still runs, so the risk was not avoided."
+  },
+  {
+    "id": "ISC2CC-T2-022",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "TCP/IP model",
+    "stem": "Which OSI layers does the TCP/IP model's application layer cover?",
+    "options": [
+      "Layers 1 to 3",
+      "Layers 3 to 5",
+      "Layers 5 to 7",
+      "Layers 2 to 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The TCP/IP model folds OSI layers 5, 6 and 7 into its single application layer. Its network access layer covers OSI layers 1 and 2."
+  },
+  {
+    "id": "ISC2CC-T2-023",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sanitization",
+    "stem": "A company plans to reuse self-encrypting drives inside its own data center. Which sanitization approach destroys the stored data quickly while keeping the drives usable?",
+    "options": [
+      "Deleting the files",
+      "Shredding the drives",
+      "Formatting once",
+      "Cryptographic erase"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cryptographic erase destroys the key that encrypted the data, leaving only unreadable ciphertext, and NIST SP 800-88 counts it as purge. Deleting or a quick format leaves data recoverable."
+  },
+  {
+    "id": "ISC2CC-T2-024",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Access review",
+    "stem": "Who is usually best placed to confirm, in an access review, that a user still needs access to a business application?",
+    "options": [
+      "The user's manager or the data owner",
+      "Any member of the help desk",
+      "The user herself, by self-approval",
+      "The vendor that sold the application software"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Managers and data owners know what the job and the data require. Self-approval defeats the purpose, and the help desk lacks the business context."
+  },
+  {
+    "id": "ISC2CC-T2-025",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Zero Trust",
+    "stem": "In a Zero Trust design, a laptop on the office network asks for an internal app. What should happen?",
+    "options": [
+      "Allow it if the request uses port 443",
+      "Check user and device before granting access",
+      "Block it because all internal access is banned",
+      "Allow it because it is on the office network"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Zero Trust gives no implicit trust for being on the internal network. Each request is checked against identity, device health and policy."
+  },
+  {
+    "id": "ISC2CC-T2-026",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threat actors",
+    "stem": "A group leaks a mining firm's internal emails to shame it over a pollution scandal. What type of threat actor is this?",
+    "options": [
+      "Hacktivists",
+      "Organized criminals",
+      "Script kiddies",
+      "Nation-state actors"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hacktivists attack to promote a political or social cause, often by defacement, leaks or denial of service."
+  },
+  {
+    "id": "ISC2CC-T2-027",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Recovery sites",
+    "stem": "A firm's RTO is three days and its budget is tight. Which recovery site is most likely the right fit?",
+    "options": [
+      "No alternate site",
+      "A warm site",
+      "A hot site",
+      "A mobile cold site"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A warm site has equipment ready but needs data loaded and some setup, so it can usually meet a recovery time of a few days at lower cost than a hot site. A cold site can take weeks to equip."
+  },
+  {
+    "id": "ISC2CC-T2-028",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identity tools",
+    "stem": "What does an identity governance tool mainly add to a directory of user accounts?",
+    "options": [
+      "Faster lookups of user accounts",
+      "A place to store user passwords",
+      "Request, review and removal workflows",
+      "Single sign-on to cloud apps"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Identity governance tools automate access requests and approvals, periodic reviews and deprovisioning across systems. The directory just stores the accounts."
+  },
+  {
+    "id": "ISC2CC-T2-029",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Authorization",
+    "stem": "After signing in, a nurse can open patient charts but cannot change the drug list. Which AAA function sets that limit?",
+    "options": [
+      "Identification",
+      "Authentication",
+      "Accounting",
+      "Authorization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Authorization decides what an authenticated user is allowed to do. The nurse is already authenticated; the limit on her actions is authorization."
+  },
+  {
+    "id": "ISC2CC-T2-030",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Inherent risk",
+    "stem": "What is inherent risk?",
+    "options": [
+      "Risk a board is willing to take",
+      "Risk before any controls are applied",
+      "Risk passed on to an insurer",
+      "Risk left after all controls are in place"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Inherent risk is the raw level of risk with no controls. Residual risk is what remains after controls; risk appetite is what the board will tolerate."
+  },
+  {
+    "id": "ISC2CC-T2-031",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TCP and UDP",
+    "stem": "Which kind of traffic usually uses UDP?",
+    "options": [
+      "Email delivery",
+      "File transfers by SFTP",
+      "Web page logins",
+      "Live voice calls"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Voice and video calls favor UDP because a late packet is useless and resending would add delay. Logins, email and file transfer need TCP's reliable delivery."
+  },
+  {
+    "id": "ISC2CC-T2-032",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Backups",
+    "stem": "Which backup type copies only the files changed since the last backup of any kind?",
+    "options": [
+      "Incremental",
+      "Full",
+      "Differential",
+      "Mirror"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An incremental backup copies changes since the most recent backup, full or incremental, so each run is small. A restore then needs the full plus every incremental since."
+  },
+  {
+    "id": "ISC2CC-T2-033",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Least privilege",
+    "stem": "Which choice best follows the principle of least privilege for a user who only needs to view reports?",
+    "options": [
+      "Edit access to the report files",
+      "Admin access to the report server",
+      "Read-only access to the reports",
+      "Full access to the report database"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Least privilege means the minimum rights needed to do the job. Viewing reports needs read access and nothing more."
+  },
+  {
+    "id": "ISC2CC-T2-034",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Zero Trust",
+    "stem": "Which assumption is part of a Zero Trust mindset?",
+    "options": [
+      "The perimeter firewall stops all attacks",
+      "An attacker may already be inside",
+      "Encryption is only needed on the internet",
+      "Internal users are always trustworthy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Zero Trust assumes breach, so it limits and checks every access and encrypts traffic even inside the network."
+  },
+  {
+    "id": "ISC2CC-T2-035",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Threat actors",
+    "stem": "Which threat actor type is most associated with long, well-funded, stealthy campaigns to steal secrets?",
+    "options": [
+      "Nation-state actors",
+      "Careless insiders",
+      "Unskilled attackers",
+      "Hacktivists"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nation-state actors have resources for advanced persistent threats: long, patient intrusions aimed at espionage or disruption."
+  },
+  {
+    "id": "ISC2CC-T2-036",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Masking",
+    "stem": "Developers need realistic customer data for testing but should not see real personal details. Which technique fits?",
+    "options": [
+      "Archiving the test data",
+      "Compressing the test data",
+      "Masking the test data",
+      "Labeling the test data"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Masking replaces or hides sensitive values while keeping data realistic in form. Labeling only marks data; it does not hide it."
+  },
+  {
+    "id": "ISC2CC-T2-037",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication factors",
+    "stem": "A system asks for a password and then a PIN. How many authentication factor types does it use?",
+    "options": [
+      "Two",
+      "Four",
+      "Three",
+      "One"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A password and a PIN are both something you know, so this is one factor type used twice. Multifactor authentication needs factors from different types, such as know, have and are."
+  },
+  {
+    "id": "ISC2CC-T2-038",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quantitative risk",
+    "stem": "A single laptop theft costs about 2,000 dollars, and the company expects 5 such thefts a year. What is the expected annual loss?",
+    "options": [
+      "400 dollars",
+      "2,500 dollars",
+      "7,000 dollars",
+      "10,000 dollars"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Expected annual loss is the cost of one event times how often it happens in a year: 2,000 times 5 is 10,000 dollars. Quantitative analysis puts risk in money terms like this.",
+    "lockedOrder": true
+  },
+  {
+    "id": "ISC2CC-T2-039",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Separation of duties",
+    "stem": "In a small team, one developer writes code and also pushes it to production with no one else involved. Which principle is missing?",
+    "options": [
+      "Non-repudiation",
+      "Principle of least functionality",
+      "Need to know",
+      "Segregation of duties"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Segregation (separation) of duties is missing. Separating development from release to production means one person cannot slip in an unreviewed change. Code review or a separate approver restores the split."
+  },
+  {
+    "id": "ISC2CC-T2-040",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IPv6",
+    "stem": "How long is an IPv6 address?",
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "256 bits"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IPv6 addresses are 128 bits, written as eight groups of four hexadecimal digits. The larger space removes the need for NAT to stretch addresses.",
+    "lockedOrder": true
+  },
+  {
+    "id": "ISC2CC-T2-041",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Continuity testing",
+    "stem": "A continuity team wants to test its plan without disturbing live operations or moving any staff. Which test fits best?",
+    "options": [
+      "A tabletop walkthrough",
+      "A parallel processing test",
+      "A live failover drill",
+      "A full interruption test"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a tabletop walkthrough, the team talks through a scenario step by step with no impact on production. A full interruption test shuts down the primary site."
+  },
+  {
+    "id": "ISC2CC-T2-042",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Separation of duties",
+    "stem": "Why do separation of duties controls lower the risk of fraud?",
+    "options": [
+      "Each user can approve their own work",
+      "Each user would see more of the data",
+      "Fraud then needs two people to collude",
+      "Every user would need a longer password"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When no one person controls a whole sensitive process, fraud requires collusion, which is harder and more likely to be caught."
+  },
+  {
+    "id": "ISC2CC-T2-043",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Social engineering",
+    "stem": "Someone follows an employee through a secure door without badging in. What is this called?",
+    "options": [
+      "Shoulder surfing",
+      "Tailgating",
+      "Vishing",
+      "Phishing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tailgating (piggybacking) is entering a secure area by following an authorized person. Mantraps and staff willing to challenge strangers help prevent it."
+  },
+  {
+    "id": "ISC2CC-T2-044",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cloud service models",
+    "stem": "A team signs up for an online accounting app. It never sees a server and only adds its users and data. Which service model is this?",
+    "options": [
+      "Software as a Service",
+      "Platform as a Service",
+      "Desktop as a Service",
+      "Infrastructure as a Service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With SaaS the provider delivers a complete application. The customer configures it and manages its users and data."
+  },
+  {
+    "id": "ISC2CC-T2-045",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Threat intelligence",
+    "stem": "A threat feed lists IP addresses and file hashes linked to a malware campaign. How can the team best use them?",
+    "options": [
+      "Share them only after a breach",
+      "Block only the newest indicator",
+      "Hunt for and block those indicators",
+      "Add them to the asset inventory"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Indicators of compromise can be fed into detection tools and blocklists and used to hunt for past activity in logs."
+  },
+  {
+    "id": "ISC2CC-T2-046",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Authentication factors",
+    "select": 2,
+    "stem": "Which TWO are examples of 'something you have'? (Choose two.)",
+    "options": [
+      "A hardware security key",
+      "A fingerprint scan",
+      "A voice print",
+      "A smart card",
+      "A long memorized passphrase"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Possession factors are physical or digital items the user holds, such as a security key or smart card. Fingerprints and voice prints are something you are; a passphrase is something you know."
+  },
+  {
+    "id": "ISC2CC-T2-047",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk register",
+    "stem": "Where does an organization usually record each identified risk with its owner, rating and treatment?",
+    "options": [
+      "An asset tag",
+      "A risk register",
+      "A firewall policy",
+      "A change log"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A risk register lists risks, who owns them, their ratings and the agreed treatments so they can be tracked and reviewed."
+  },
+  {
+    "id": "ISC2CC-T2-048",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IPv6",
+    "stem": "Which statement about IPv6 security is true?",
+    "options": [
+      "IPv6 traffic cannot be filtered",
+      "IPv6 works only on wired networks",
+      "IPv6 always hides each host's real address",
+      "IPsec support is part of the IPv6 design"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "IPv6 was designed with IPsec support, though using it is still optional in practice. Firewalls must filter IPv6 as well as IPv4, or it can become a blind spot."
+  },
+  {
+    "id": "ISC2CC-T2-049",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Job rotation",
+    "stem": "Moving staff through different duties on a schedule helps security mainly because:",
+    "options": [
+      "A successor may spot hidden misconduct",
+      "Training costs go down each year",
+      "Fewer accounts need to be created",
+      "Each person keeps fewer access rights"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When a new person takes over a role, irregularities left by the last one tend to surface. Rotation also builds backup skills, but detection is its main security value."
+  },
+  {
+    "id": "ISC2CC-T2-050",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Whaling",
+    "stem": "A fake email aimed at the CEO asks her to approve an urgent wire transfer. What type of attack is this?",
+    "options": [
+      "Smishing",
+      "Vishing",
+      "Baiting",
+      "Whaling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Whaling is a phishing attack aimed at senior executives, who can approve large payments. Smishing uses texts and vishing uses voice calls."
+  },
+  {
+    "id": "ISC2CC-T2-051",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symmetric and asymmetric",
+    "stem": "Why do secure web sessions use asymmetric encryption at the start and symmetric encryption for the rest?",
+    "options": [
+      "Symmetric keys never need to be shared",
+      "Asymmetric shares a key; symmetric is faster",
+      "Asymmetric is faster at encrypting bulk data",
+      "Symmetric is safer; asymmetric is newer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Asymmetric cryptography safely sets up a shared session key, then fast symmetric encryption protects the bulk data."
+  },
+  {
+    "id": "ISC2CC-T2-052",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mandatory access control",
+    "stem": "Which feature is typical of mandatory access control?",
+    "options": [
+      "File owners grant rights to anyone",
+      "Rights follow the user's job title",
+      "Users cannot change the security labels",
+      "Access is set by each application's developer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In MAC, the system enforces labels and clearances and users cannot alter them. Owner-granted rights are DAC; job-based rights are RBAC."
+  },
+  {
+    "id": "ISC2CC-T2-053",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Non-repudiation",
+    "stem": "Two employees share one admin account. After a bad change, neither can be shown to have made it. Which property is lost?",
+    "options": [
+      "Data integrity",
+      "Non-repudiation",
+      "Confidentiality",
+      "Availability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With a shared account, actions cannot be tied to one person, so either can deny them. Unique accounts plus logging give non-repudiation and accountability."
+  },
+  {
+    "id": "ISC2CC-T2-054",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Laws and regulations",
+    "stem": "How do regulations differ from an organization's own policies?",
+    "options": [
+      "They are written by the IT team",
+      "They apply only to one department",
+      "An outside body imposes them",
+      "They are always optional advice"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Laws and regulations come from governments or regulators and carry legal penalties. Policies are set by the organization itself, often to meet those laws."
+  },
+  {
+    "id": "ISC2CC-T2-055",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ports",
+    "stem": "An admin opens a firewall for encrypted remote command-line sessions using SSH. Which TCP port is that by default?",
+    "options": [
+      "22",
+      "23",
+      "25",
+      "53"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SSH uses TCP 22. Port 23 is Telnet, 25 is SMTP and 53 is DNS.",
+    "lockedOrder": true
+  },
+  {
+    "id": "ISC2CC-T2-056",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud service models",
+    "stem": "A startup pushes its own app code to a managed platform; the provider keeps the operating system and language runtime patched. Which model is this?",
+    "options": [
+      "Private cloud",
+      "Infrastructure as a Service",
+      "Software as a Service",
+      "Platform as a Service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "PaaS provides a managed platform for running the customer's own applications. The customer is still responsible for the code and its data."
+  },
+  {
+    "id": "ISC2CC-T2-057",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Incident response exercises",
+    "stem": "What is the main value of running incident response exercises before a real incident?",
+    "options": [
+      "Gaps in the plan surface early",
+      "Incidents become less likely",
+      "Logs no longer need review",
+      "The plan no longer needs updates"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Exercises, from tabletop discussions to full tests, show unclear roles, missing contacts and weak steps while there is time to fix them. They do not prevent incidents."
+  },
+  {
+    "id": "ISC2CC-T2-058",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Smishing",
+    "stem": "A text claims the reader's bank account is frozen and gives a link to 'verify' her identity. What is this?",
+    "options": [
+      "Vishing",
+      "Whaling",
+      "Smishing",
+      "Tailgating"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Smishing is phishing by SMS text message. The link leads to a fake bank page that captures her credentials."
+  },
+  {
+    "id": "ISC2CC-T2-059",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discretionary access control",
+    "stem": "A user shares a document from her personal work folder with two colleagues of her choice. Which access control model does this show?",
+    "options": [
+      "Lattice-based",
+      "Role-based",
+      "Mandatory",
+      "Discretionary"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DAC lets the owner of a resource decide who may access it. It is flexible but relies on owners to make good choices."
+  },
+  {
+    "id": "ISC2CC-T2-060",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Baiting",
+    "stem": "A free 'game cheat' file shared in a staff chat group installs malware when someone runs it. What social engineering technique is this?",
+    "options": [
+      "Shoulder surfing",
+      "Baiting",
+      "Spear phishing",
+      "Pretexting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Baiting dangles something tempting, such as free software or a found USB drive, so the victim runs the malware herself. Pretexting relies on a made-up story instead."
+  },
+  {
+    "id": "ISC2CC-T2-061",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Control types",
+    "stem": "The staff handbook says visitors must be escorted at all times. What type of control is this rule?",
+    "options": [
+      "Administrative",
+      "Detective",
+      "Technical",
+      "Physical"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A written rule is an administrative control. The locked doors and the receptionist who carry it out are physical controls."
+  },
+  {
+    "id": "ISC2CC-T2-062",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Frameworks",
+    "stem": "Which NIST CSF 2.0 Function covers setting the organization's cybersecurity risk strategy, roles and policy?",
+    "options": [
+      "Protect",
+      "Identify",
+      "Govern",
+      "Respond"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CSF 2.0 added Govern, which covers risk strategy, expectations, policy, roles and oversight. Identify is about understanding the current risks to assets."
+  },
+  {
+    "id": "ISC2CC-T2-063",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rule-based access control",
+    "stem": "A system blocks every user from signing in to the payroll app between midnight and 5 a.m. Which access control model is this?",
+    "options": [
+      "Identity-based access control",
+      "Rule-based access control",
+      "Discretionary access control",
+      "Role-based access control"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rule-based access control applies the same set of rules to all subjects, such as firewall rules or time-of-day limits. It does not depend on who the user is."
+  },
+  {
+    "id": "ISC2CC-T2-064",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secure protocols",
+    "stem": "An administrator still manages switches over Telnet. Which change best protects those sessions?",
+    "options": [
+      "Replace Telnet with SSH",
+      "Move Telnet to a higher port",
+      "Use a longer Telnet password",
+      "Allow Telnet only at night"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Telnet sends everything, including passwords, in clear text. SSH encrypts the session; a new port or a longer password does not."
+  },
+  {
+    "id": "ISC2CC-T2-065",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Digital signatures",
+    "stem": "When Bob signs a document digitally, which key does he use to create the signature?",
+    "options": [
+      "A shared session key",
+      "His public key",
+      "The reader's public key",
+      "His private key"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A signature made with Bob's private key can be checked by anyone with his public key, which proves the signer and that the document was not changed."
+  },
+  {
+    "id": "ISC2CC-T2-066",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud characteristics",
+    "stem": "A streaming service adds servers automatically when a big match starts and releases them when it ends. Which characteristic is this?",
+    "options": [
+      "Resource pooling",
+      "Rapid elasticity",
+      "On-demand self-service",
+      "Measured service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rapid elasticity is the ability to scale resources out and in quickly, often automatically, to match demand."
+  },
+  {
+    "id": "ISC2CC-T2-067",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Incident response",
+    "stem": "An analyst confirms an attacker is still active on a server. What should usually come before wiping and rebuilding it?",
+    "options": [
+      "Containing it and preserving evidence",
+      "Restoring it straight from the last backup",
+      "Posting about it on social media",
+      "Deleting its logs to save space"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Containment stops further damage, and preserving evidence lets the team learn how the attacker got in. Rebuilding first can destroy that evidence and leave the entry point open."
+  },
+  {
+    "id": "ISC2CC-T2-068",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Access control models",
+    "stem": "Match each example to the access control model it shows.",
+    "rows": [
+      "A file owner shares a folder with a friend",
+      "Access compares clearance with a classification label",
+      "All payroll clerks get the same permissions",
+      "A user grants a colleague edit rights on her document"
+    ],
+    "columns": [
+      "DAC",
+      "MAC",
+      "RBAC"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Owner-chosen sharing is DAC, label and clearance checks are MAC, and permissions by job role are RBAC."
+  },
+  {
+    "id": "ISC2CC-T2-069",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security awareness",
+    "stem": "Why should senior leaders take part visibly in the security awareness program?",
+    "options": [
+      "It removes the need for staff training",
+      "They are the only staff that attackers phish",
+      "It lets them skip policy rules",
+      "Their example shows staff security matters"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Security leadership sets the tone: when executives follow the rules and talk about security, staff take it seriously. Leaders are targets too, but that is not the main reason."
+  },
+  {
+    "id": "ISC2CC-T2-070",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Control types",
+    "stem": "Which of these is a technical control?",
+    "options": [
+      "Background checks for new staff",
+      "A clean desk policy",
+      "Full-disk encryption on laptops",
+      "Fencing around the parking lot"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Encryption is enforced by software, so it is a technical control. A policy and background checks are administrative; a fence is physical."
+  },
+  {
+    "id": "ISC2CC-T2-071",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Due diligence",
+    "stem": "Before signing with a cloud provider, a company reviews the provider's audit reports and security practices. Which concept is this?",
+    "options": [
+      "Non-repudiation",
+      "Risk transference",
+      "Due diligence",
+      "Due care"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Due diligence is investigating and verifying before acting, such as checking a vendor. Due care is then carrying out the protections that the checking showed were needed."
+  },
+  {
+    "id": "ISC2CC-T2-072",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Firewalls",
+    "stem": "A firewall rule set should end with which default rule?",
+    "options": [
+      "Allow anything not explicitly denied",
+      "Deny anything not explicitly allowed",
+      "Allow traffic from any internal host",
+      "Log traffic but allow it all"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Default deny (implicit deny) means only traffic a rule allows gets through. Default allow lets in anything the rule writer forgot."
+  },
+  {
+    "id": "ISC2CC-T2-073",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Multifactor authentication",
+    "stem": "Which sign-in uses two different factor types?",
+    "options": [
+      "A password and a fingerprint",
+      "A PIN and a passphrase",
+      "A password and a security question",
+      "A smart card and an ID badge"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A password is something you know and a fingerprint is something you are. The other pairs use two of the same type."
+  },
+  {
+    "id": "ISC2CC-T2-074",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Password protection",
+    "stem": "An employee is asked to choose a new password. Which choice is strongest?",
+    "options": [
+      "A short word with letters as numbers",
+      "Password1 with a symbol added",
+      "Her dog's name plus the year",
+      "A long passphrase of random words"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Length matters most, and a passphrase of unrelated words is long and easy to remember. Names, dates and simple substitutions are in every cracking word list."
+  },
+  {
+    "id": "ISC2CC-T2-075",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloud characteristics",
+    "stem": "Which NIST cloud characteristic explains why a provider can bill a customer only for the storage it actually used?",
+    "options": [
+      "Resource pooling",
+      "Measured service",
+      "Rapid elasticity",
+      "Broad network access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Measured service means usage is metered and reported, which supports pay-per-use billing and lets both sides see consumption."
+  },
+  {
+    "id": "ISC2CC-T2-076",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration management",
+    "stem": "A team keeps an approved, documented standard setup for every new server. What is this called?",
+    "options": [
+      "A risk register",
+      "A change rollback plan",
+      "A security baseline",
+      "A threat feed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A baseline is the approved secure configuration. Configuration management checks systems against it and flags drift."
+  },
+  {
+    "id": "ISC2CC-T2-077",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Single sign-on",
+    "stem": "What is the main security risk that comes with single sign-on?",
+    "options": [
+      "It blocks multifactor authentication",
+      "Apps can no longer log activity",
+      "Users must remember many more passwords",
+      "One stolen sign-in opens many systems"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With SSO, a compromised credential unlocks every connected app, so it should be paired with MFA and monitoring. It reduces the number of passwords, not increases it."
+  },
+  {
+    "id": "ISC2CC-T2-078",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Quantum-resistant cryptography",
+    "stem": "Why is there a push to adopt quantum-resistant (post-quantum) cryptography?",
+    "options": [
+      "They could break today's public-key algorithms",
+      "Today's symmetric ciphers are already broken",
+      "Public keys are now too long to store",
+      "Quantum computers make hashing reversible"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Large quantum computers could break widely used public-key algorithms such as RSA. NIST published its first post-quantum standards, such as FIPS 203 (ML-KEM), in 2024 so organizations can migrate."
+  },
+  {
+    "id": "ISC2CC-T2-079",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Control functions",
+    "stem": "After ransomware hits, a team restores the files from last night's backup. What function does the backup serve here?",
+    "options": [
+      "Corrective",
+      "Preventive",
+      "Detective",
+      "Deterrent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Corrective controls restore systems after an incident. The backup did not stop the attack or detect it; it repaired the damage."
+  },
+  {
+    "id": "ISC2CC-T2-080",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "ISC2 Code of Ethics",
+    "stem": "A certified member learns another member lied on an exam application. Under the ISC2 Code of Ethics, which canon is most directly served by reporting it?",
+    "options": [
+      "Keep employer information private",
+      "Provide diligent service to principals",
+      "Advance and protect the profession",
+      "Protect the common infrastructure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Upholding the integrity of the certification protects the profession, which is the fourth canon. The duty to principals concerns employers and clients."
+  },
+  {
+    "id": "ISC2CC-T2-081",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wireless",
+    "stem": "Which is the main risk of leaving Bluetooth discoverable on a work phone in public?",
+    "options": [
+      "Its mobile data will stop working",
+      "Its stored encryption keys will be erased",
+      "Its battery will drain within minutes",
+      "Strangers nearby can try to pair with it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A discoverable device advertises itself to anyone in range, inviting unwanted pairing and attacks on Bluetooth flaws. Turning discoverability off when not pairing cuts that exposure."
+  },
+  {
+    "id": "ISC2CC-T2-082",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scorecards",
+    "stem": "A security scorecard compares each business unit's patching rate and training completion against targets. What is it mainly used for?",
+    "options": [
+      "Encrypting data in transit",
+      "Tracking performance against goals",
+      "Blocking malicious traffic",
+      "Assigning user permissions in each app"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scorecards measure results against set targets so leaders can see which units are on track. They report on controls rather than being controls."
+  },
+  {
+    "id": "ISC2CC-T2-083",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privileged access management",
+    "stem": "A company stores admin passwords in a vault that checks them out on request, records the session and rotates the password after use. What is this?",
+    "options": [
+      "Privileged access management",
+      "Identity governance and administration",
+      "Data loss prevention",
+      "Network access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Privileged access management (PAM) controls, monitors and rotates high-risk admin credentials so they are never left lying around or shared."
+  },
+  {
+    "id": "ISC2CC-T2-084",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud deployment models",
+    "stem": "A university links its own on-premises cloud with a public cloud so research jobs can move between them. Which deployment model is this?",
+    "options": [
+      "Private cloud",
+      "Public cloud",
+      "Community cloud",
+      "Hybrid cloud"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A hybrid cloud combines two or more distinct cloud infrastructures, such as private and public, linked so data or apps can move between them."
+  },
+  {
+    "id": "ISC2CC-T2-085",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Application testing",
+    "stem": "Which technique examines an application's source code for flaws without running it?",
+    "options": [
+      "Load testing",
+      "Static analysis",
+      "Fuzzing the live app",
+      "Dynamic analysis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Static application security testing (SAST) reviews code at rest. Dynamic analysis (DAST) tests the running application from the outside."
+  },
+  {
+    "id": "ISC2CC-T2-086",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Key risk indicators",
+    "stem": "Which would be the best key risk indicator for ransomware exposure?",
+    "options": [
+      "Hours of overtime in the IT team",
+      "Total storage bought this year",
+      "Servers missing critical patches",
+      "Number of new hires this quarter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unpatched critical flaws are a common way in for ransomware, so a rising share signals rising risk. The others do not track that exposure directly."
+  },
+  {
+    "id": "ISC2CC-T2-087",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "Which practice best supports the privacy of customers' personal data?",
+    "options": [
+      "Keeping all data in case it proves useful",
+      "Sharing data freely with partners",
+      "Storing data with no retention limit",
+      "Collecting only the data a service needs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data minimization, collecting only what is needed for a stated purpose, is a core privacy principle. Keeping everything indefinitely increases the harm if it leaks."
+  },
+  {
+    "id": "ISC2CC-T2-088",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk tolerance",
+    "stem": "A board accepts losing up to two hours of online sales a quarter, but no more. What does this limit describe?",
+    "options": [
+      "Risk tolerance",
+      "Threat level",
+      "Risk transfer",
+      "Inherent risk"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Risk tolerance is the acceptable variation around a specific objective, a measurable limit. Risk appetite is the broader statement of how much risk the organization is willing to take."
+  },
+  {
+    "id": "ISC2CC-T2-089",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared accounts",
+    "stem": "Why are shared accounts discouraged?",
+    "options": [
+      "They need longer passwords",
+      "Actions cannot be traced to one person",
+      "They are slower to sign in to",
+      "They cannot be given any permissions at all"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Shared accounts break accountability because logs show only the account, not the person. Individual accounts are needed for audit trails."
+  },
+  {
+    "id": "ISC2CC-T2-090",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IoT",
+    "stem": "Which step most improves the security of smart cameras added to an office network?",
+    "options": [
+      "Give them fixed internal IP addresses",
+      "Give each camera a public IP address",
+      "Change default passwords and isolate them",
+      "Connect them to the finance team's subnet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Default credentials are the most common way IoT devices are taken over. Changing them and placing devices on their own network segment limits what a compromised device can reach."
+  },
+  {
+    "id": "ISC2CC-T2-091",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Disaster recovery",
+    "stem": "Which practice gives the most confidence that backups can actually be used in a disaster?",
+    "options": [
+      "Buying more backup storage each year",
+      "Checking that backup jobs report success",
+      "Restoring from them on a regular schedule",
+      "Keeping every backup on the same server"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Only a test restore proves the data can be recovered. A job that reports success can still produce copies that are corrupt or incomplete."
+  },
+  {
+    "id": "ISC2CC-T2-092",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biometrics",
+    "stem": "Which authentication factor type is a palm vein scan?",
+    "options": [
+      "Something you have",
+      "Somewhere you are",
+      "Something you know",
+      "Something you are"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Biometrics such as fingerprints, faces and palm veins are inherence factors, something you are."
+  },
+  {
+    "id": "ISC2CC-T2-093",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hashing",
+    "stem": "How should a system store user passwords?",
+    "options": [
+      "As salted hashes",
+      "As plain text",
+      "As masked text",
+      "As encrypted text"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Storing a salted hash means even the system cannot read the passwords, and the salt defeats precomputed lookup tables. Encrypted passwords can be decrypted if the key is stolen."
+  },
+  {
+    "id": "ISC2CC-T2-094",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "In every cloud service model, which responsibility always stays with the customer?",
+    "options": [
+      "Patching the hypervisor and host firmware",
+      "Its data and who can access it",
+      "Cooling the data center",
+      "Replacing failed disks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "However much the provider manages, the customer is always accountable for its own data and for granting access to it. The provider handles the physical and virtualization layers."
+  },
+  {
+    "id": "ISC2CC-T2-095",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Physical penetration testing",
+    "stem": "An authorized tester poses as a delivery driver to get into a restricted area. What kind of test is this?",
+    "options": [
+      "A physical penetration test",
+      "A credentialed vulnerability scan",
+      "A static code review",
+      "A tabletop exercise"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Physical penetration tests check people and physical controls using tactics such as impersonation and tailgating, always under written authorization."
+  },
+  {
+    "id": "ISC2CC-T2-096",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrity",
+    "stem": "Which control best detects unauthorized changes to critical system files?",
+    "options": [
+      "Data masking",
+      "File integrity monitoring",
+      "Full disk encryption",
+      "Load balancing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "File integrity monitoring compares files against known-good hashes and alerts on changes. Encryption protects confidentiality and load balancing supports availability."
+  },
+  {
+    "id": "ISC2CC-T2-097",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Policies",
+    "stem": "Which document states management's high-level intent, such as 'all customer data must be protected', without naming specific tools?",
+    "options": [
+      "A standard",
+      "A configuration file",
+      "A security policy",
+      "A procedure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A policy sets direction and intent and is approved by management. Standards then name the required tools or settings, and procedures give the steps."
+  },
+  {
+    "id": "ISC2CC-T2-098",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wireless",
+    "stem": "Why should the guest Wi-Fi network in an office be kept separate from the staff network?",
+    "options": [
+      "Guests can reach staff printers safely",
+      "Guest traffic can then skip encryption",
+      "Staff devices get faster speeds",
+      "Guest devices stay off internal systems"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Guest devices are unmanaged, so putting them on their own network stops them reaching internal servers. Both networks should still use strong Wi-Fi encryption."
+  },
+  {
+    "id": "ISC2CC-T2-099",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Backups",
+    "stem": "Why should at least one backup copy be kept offline or off site?",
+    "options": [
+      "It lets backups skip encryption",
+      "It removes the need to test restores",
+      "It keeps the newest data quick to restore",
+      "Ransomware or a fire cannot reach it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An isolated copy survives an attack or disaster that destroys the live systems and online backups. It still needs to be tested."
+  },
+  {
+    "id": "ISC2CC-T2-100",
+    "section": "cc",
+    "test": 2,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Identity lifecycle",
+    "stem": "Which source should trigger account changes when people join, move or leave?",
+    "options": [
+      "The firewall change log",
+      "The backup schedule",
+      "The HR system of record",
+      "The user's own email requests"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Linking provisioning to HR events makes account creation, changes and removal timely and complete. Relying on ad hoc requests leads to missed leavers."
+  },
+  {
+    "id": "ISC2CC-D-001",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Accounting",
+    "stem": "Which item supports accountability by showing which user deleted a folder and when?",
+    "options": [
+      "An audit log",
+      "A backup copy",
+      "A password policy",
+      "A firewall rule"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Audit logs record who did what and when, which is the accounting part of AAA and the basis of accountability."
+  },
+  {
+    "id": "ISC2CC-D-002",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Standards",
+    "stem": "A company requires every laptop to use a specific approved encryption tool at a set strength. What kind of document sets this?",
+    "options": [
+      "A procedure",
+      "A standard",
+      "A guideline",
+      "A baseline report"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Standards make policy specific with mandatory technologies or settings. The procedure would then describe the steps to install and enable the tool."
+  },
+  {
+    "id": "ISC2CC-D-003",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business continuity",
+    "stem": "During a regional power cut, staff move to a second office and keep taking customer orders. Which plan made this possible?",
+    "options": [
+      "The change control plan",
+      "The vulnerability management plan",
+      "The business continuity plan",
+      "The data retention plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Keeping critical business processes going during a disruption is the purpose of business continuity planning."
+  },
+  {
+    "id": "ISC2CC-D-004",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Least privilege",
+    "stem": "A new intern asks for admin rights 'to install tools faster'. Under least privilege, what is the best response?",
+    "options": [
+      "Grant only the rights her tasks need",
+      "Grant admin rights if she signs a form",
+      "Share another admin's account",
+      "Grant admin rights for the full term"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Least privilege limits rights to what the job needs. If a tool is needed, it can be installed for her or a narrow right can be granted."
+  },
+  {
+    "id": "ISC2CC-D-005",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ports",
+    "stem": "Which port does Remote Desktop Protocol use by default?",
+    "options": [
+      "443",
+      "445",
+      "3389",
+      "8080"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "RDP listens on TCP 3389. Exposing it straight to the internet is a common way attackers get in, so it is usually reached through a VPN or gateway.",
+    "lockedOrder": true
+  },
+  {
+    "id": "ISC2CC-D-006",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloud characteristics",
+    "stem": "Many customers' workloads run on the same physical hardware, with the provider assigning capacity as needed. Which characteristic is this?",
+    "options": [
+      "Rapid elasticity",
+      "Resource pooling",
+      "On-demand self-service",
+      "Measured service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Resource pooling means the provider serves many customers from shared physical resources assigned dynamically, a multi-tenant model."
+  },
+  {
+    "id": "ISC2CC-D-007",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sanitization",
+    "stem": "Overwriting a drive's user-addressable storage with new data so it cannot be read back by normal tools is which NIST category?",
+    "options": [
+      "Retain",
+      "Destroy",
+      "Purge",
+      "Clear"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Clear uses standard read and write commands to overwrite data, protecting against simple recovery. Purge protects against even laboratory techniques."
+  },
+  {
+    "id": "ISC2CC-D-008",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security testing",
+    "stem": "In a purple team exercise, what happens?",
+    "options": [
+      "Attackers and defenders work together",
+      "Auditors review policies alone",
+      "Outside users test the public website",
+      "Only defenders run the drills"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Purple teaming joins red and blue so attack techniques are shared openly and detections are tuned on the spot."
+  },
+  {
+    "id": "ISC2CC-D-009",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Control types",
+    "stem": "A company hires a guard to check badges at the main entrance. What type of control is the guard?",
+    "options": [
+      "Administrative",
+      "Physical",
+      "Technical",
+      "Logical"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Guards, locks and fences protect the physical site, so they are physical controls, even though a person carries out the check."
+  },
+  {
+    "id": "ISC2CC-D-010",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk treatment",
+    "stem": "A small shop moves its card payments to a payment processor so card numbers never touch its own systems. Which treatment is this mainly?",
+    "options": [
+      "Acceptance",
+      "Detection",
+      "Transfer",
+      "Deterrence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Handing the card handling to a processor shifts much of that risk to a party equipped to carry it. The shop still has duties, but the main exposure moves."
+  },
+  {
+    "id": "ISC2CC-D-011",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vishing",
+    "stem": "An automated voice call says the listener has a tax refund waiting and asks her to key in her bank details. What attack is this?",
+    "options": [
+      "Tailgating",
+      "Whaling",
+      "Smishing",
+      "Vishing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vishing is voice phishing, by live or recorded phone calls. It often impersonates banks, tax offices or IT support."
+  },
+  {
+    "id": "ISC2CC-D-012",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Attribute-based access control",
+    "stem": "Which access control model can take the user's location and device health into account on each request?",
+    "options": [
+      "Attribute-based",
+      "Discretionary",
+      "Role-based",
+      "Mandatory"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ABAC evaluates attributes of the user, resource, action and environment, such as location and device state. That flexibility suits Zero Trust designs."
+  },
+  {
+    "id": "ISC2CC-D-013",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OSI model",
+    "stem": "At which OSI layer does encryption of data for transmission, such as converting formats, traditionally sit?",
+    "options": [
+      "Transport",
+      "Session",
+      "Presentation",
+      "Physical"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The presentation layer (layer 6) handles data formats, encoding and encryption. The session layer manages dialogs between hosts."
+  },
+  {
+    "id": "ISC2CC-D-014",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shared responsibility",
+    "stem": "Under IaaS, who is responsible for patching the guest operating system on a virtual machine?",
+    "options": [
+      "The cloud provider",
+      "The customer",
+      "The hardware maker",
+      "The internet provider"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In IaaS the provider secures the physical hosts and hypervisor, and the customer secures the guest operating system, applications and data."
+  },
+  {
+    "id": "ISC2CC-D-015",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Labeling",
+    "stem": "A data loss tool blocks an email because the attached file carries a 'Restricted' tag. What made this possible?",
+    "options": [
+      "Data clearing",
+      "Data masking",
+      "Hashing",
+      "Data labeling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Machine-readable labels let tools apply handling rules automatically, such as blocking restricted files from leaving."
+  },
+  {
+    "id": "ISC2CC-D-016",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vulnerability scanning",
+    "stem": "What does a vulnerability scan do?",
+    "options": [
+      "Trains staff to spot phishing",
+      "Exploits flaws to gain admin access",
+      "Encrypts files on each host",
+      "Checks systems for known weaknesses"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A vulnerability scan looks for known flaws and missing patches and reports them. Exploiting them is what a penetration test does."
+  },
+  {
+    "id": "ISC2CC-D-017",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccConcepts",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Control types",
+    "stem": "Match each control to its type.",
+    "rows": [
+      "Role-based permissions in an app",
+      "A data handling procedure",
+      "A locked server room door",
+      "Account lockout after failed sign-ins"
+    ],
+    "columns": [
+      "Technical",
+      "Administrative",
+      "Physical"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Permissions and lockout are enforced by software, so they are technical. A procedure is administrative, and a locked door is physical."
+  },
+  {
+    "id": "ISC2CC-D-018",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccRisk",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Frameworks",
+    "stem": "In NIST CSF 2.0, which Function covers finding and analyzing possible attacks and compromises?",
+    "options": [
+      "Respond",
+      "Detect",
+      "Recover",
+      "Identify"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Detect is about finding and analyzing possible attacks and compromises. Respond covers the actions taken once an incident is detected."
+  },
+  {
+    "id": "ISC2CC-D-019",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Reports",
+    "stem": "A monthly security report for the board should mainly do what?",
+    "options": [
+      "List every firewall rule change",
+      "Show raw log counts by server",
+      "Tie risks to business impact",
+      "Explain encryption algorithms"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Boards need to understand risk in business terms to make decisions and fund priorities. Raw technical detail belongs in operational reports."
+  },
+  {
+    "id": "ISC2CC-D-020",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccIam",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deprovisioning",
+    "stem": "Which risk does prompt deprovisioning of leavers reduce most?",
+    "options": [
+      "Former staff misusing old access",
+      "Phishing emails reaching staff",
+      "Users forgetting their passwords",
+      "Backups failing to finish overnight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disabling accounts when people leave stops former staff, or anyone who steals their credentials, from using the old access."
+  },
+  {
+    "id": "ISC2CC-D-021",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccNetwork",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Embedded systems",
+    "stem": "What makes many embedded and IoT devices risky on a network?",
+    "options": [
+      "Very large memory and storage",
+      "Built-in full disk encryption by default",
+      "Weak defaults and rare security updates",
+      "Strict user access reviews"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Many embedded devices ship with default credentials and get few or no patches over their life, so they are easy to take over and stay vulnerable."
+  },
+  {
+    "id": "ISC2CC-D-022",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccArchCloud",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Segmentation",
+    "stem": "Which design most limits a ransomware outbreak from spreading across a large office network?",
+    "options": [
+      "Shared admin accounts on all servers",
+      "Internal segments with filtering",
+      "A single firewall at the internet edge",
+      "One flat network for every device"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Internal segmentation with filtering stops malware from moving freely between groups of systems. An edge firewall alone does nothing once the threat is inside."
+  },
+  {
+    "id": "ISC2CC-D-023",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Asymmetric encryption",
+    "stem": "In asymmetric encryption, which key may be shared openly?",
+    "options": [
+      "The public key",
+      "Neither key",
+      "Both keys",
+      "The private key"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The public key is meant to be shared; the private key must stay secret with its owner."
+  },
+  {
+    "id": "ISC2CC-D-024",
+    "section": "cc",
+    "test": 0,
+    "module": 1,
+    "domain": "ccOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Threat modeling",
+    "stem": "When is threat modeling most useful in building an application?",
+    "options": [
+      "After the app is retired",
+      "At the yearly audit",
+      "After a breach is found",
+      "Early in design"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Threat modeling identifies how a design could be attacked so controls can be built in early, when changes are cheapest."
+  }
+]

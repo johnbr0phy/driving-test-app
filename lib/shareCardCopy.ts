@@ -294,6 +294,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   netplus: { title: "CompTIA Network+ N10-009", description: "Practise networking concepts, implementation, operations, security and troubleshooting." },
   fortinse: { title: "Fortinet NSE 1 (FCF)", description: "Practice all ten modules of NSE 1 Cybersecurity and Cloud Fundamentals, the course that replaced FCF." },
   pentestplus: { title: "CompTIA PenTest+ PT0-003", description: "Practise scoping, reconnaissance, vulnerability analysis, exploitation and post-exploitation, all explained." },
+  isc2cc: { title: "ISC2 CC", description: "Practise ISC2 Certified in Cybersecurity questions on security principles, governance, IAM, networks, cloud and incident response." },
   sc200: { title: "Microsoft SC-200", description: "Practise Defender XDR, Microsoft Sentinel, detections, incident response and KQL threat hunting." },
   sc900: { title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900", description: "Review Zero Trust and identity concepts, Microsoft Entra, Defender, Sentinel and Purview." },
   cysa: { title: "CompTIA CySA+ CS0-004", description: "Practise security operations, vulnerability management, incident response and reporting." },

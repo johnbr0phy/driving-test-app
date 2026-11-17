@@ -22,6 +22,8 @@ const TEACHER_LED = new Set([
   "nzboat",
   // Microsoft security operations courses and SOC bootcamps (SC-200)
   "sc200",
+  // Entry-level cybersecurity courses and bootcamps (ISC2 CC)
+  "isc2cc",
   "cehrs",
   "cpcta",
   "pance",

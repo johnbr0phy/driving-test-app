@@ -12,6 +12,7 @@ export const TEACHES: Record<string, string> = {
   hknurse: "a nursing licensing exam preparation class",
   cacore: "a CORE hunter education course",
   cahunteron: "an Ontario hunter education course",
+  cabcguard: "a Basic Security Training (BST) course",
   nzboat: "a Day Skipper or boating safety course",
   cehrs: "an electronic health records specialist program",
   cpcta: "a patient care technician program",

@@ -20,6 +20,7 @@ const TEACHER_LED = new Set([
   "hknurse",
   "cacore",
   "cahunteron",
+  "cabcguard",
   "nzboat",
   // Microsoft security operations courses and SOC bootcamps (SC-200)
   "sc200",

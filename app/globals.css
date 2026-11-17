@@ -5817,6 +5817,19 @@
     --brand-gradient-to: 345 60% 96%;
   }
 
+  /* BC Basic Security Training (security guard) theme: deep slate navy */
+  [data-theme="cabcguard"] {
+    --brand: 239 15% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 239 20% 95%;
+    --brand-hover: 239 15% 14%;
+    --brand-dark: 239 15% 12%;
+    --brand-darker: 239 15% 7%;
+    --brand-muted: 239 10% 62%;
+    --brand-border: 239 12% 76%;
+    --brand-border-light: 239 12% 88%;
+    --brand-gradient-to: 241 20% 95%;
+  }
   /* HCAP (Ireland deer hunter competence) theme: emerald green */
   [data-theme="iehcap"] {
     --brand: 148 90% 32%;
@@ -10886,6 +10899,17 @@
     --brand-darker: 136 50% 78%;
   }
 
+  .dark [data-theme="cabcguard"] {
+    --brand: 239 15% 50%;
+    --brand-hover: 239 15% 42%;
+    --brand-light: 239 20% 13%;
+    --brand-gradient-to: 241 20% 11%;
+    --brand-border-light: 239 12% 24%;
+    --brand-border: 239 12% 34%;
+    --brand-muted: 239 10% 45%;
+    --brand-dark: 239 15% 65%;
+    --brand-darker: 239 15% 78%;
+  }
   .dark [data-theme="iehcap"] {
     --brand-light: 148 45% 13%;
     --brand-gradient-to: 150 40% 11%;

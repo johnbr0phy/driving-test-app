@@ -1216,5 +1216,8 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "smartserve": {
     "color": "hsl(340, 55%, 16%)",
     "tint": "hsl(340, 40%, 95%)"
+  "cabcguard": {
+    "color": "hsl(239, 15%, 18%)",
+    "tint": "hsl(239, 20%, 96%)"
   }
 };

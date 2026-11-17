@@ -192,7 +192,7 @@ export default function CisspLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cissp", 1)}
+                src={getTigerAsset("cissp", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

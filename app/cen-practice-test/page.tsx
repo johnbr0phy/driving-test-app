@@ -197,7 +197,7 @@ export default function CenLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cen", 1)}
+                src={getTigerAsset("cen", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

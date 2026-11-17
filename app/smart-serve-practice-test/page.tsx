@@ -186,7 +186,7 @@ export default function SmartServeLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("smartserve", 1)}
+                src={getTigerAsset("smartserve", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

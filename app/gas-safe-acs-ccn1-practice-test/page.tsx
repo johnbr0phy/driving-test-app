@@ -186,7 +186,7 @@ export default function UkgasLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukgas", 1)}
+                src={getTigerAsset("ukgas", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

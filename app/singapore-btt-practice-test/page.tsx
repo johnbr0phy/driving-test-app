@@ -186,7 +186,7 @@ export default function SingaporeBttLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("sgbtt", 1)}
+                src={getTigerAsset("sgbtt", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

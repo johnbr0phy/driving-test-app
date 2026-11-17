@@ -204,7 +204,7 @@ export default function CapswLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("capsw", 1)}
+                src={getTigerAsset("capsw", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

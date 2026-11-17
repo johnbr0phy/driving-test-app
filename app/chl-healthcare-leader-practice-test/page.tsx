@@ -190,7 +190,7 @@ export default function HspaChlLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hspachl", 1)}
+                src={getTigerAsset("hspachl", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

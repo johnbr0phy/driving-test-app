@@ -194,7 +194,7 @@ export default function CareCertificateLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukcare", 1)}
+                src={getTigerAsset("ukcare", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -202,7 +202,7 @@ export default function OshaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("osha", 1)}
+                src={getTigerAsset("osha", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

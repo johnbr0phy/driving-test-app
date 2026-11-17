@@ -190,7 +190,7 @@ export default function MblexLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("mblex", 1)}
+                src={getTigerAsset("mblex", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

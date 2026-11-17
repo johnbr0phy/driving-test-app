@@ -183,7 +183,7 @@ export default function SieLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("sie", 1)}
+                src={getTigerAsset("sie", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -188,7 +188,7 @@ export default function DelhiPoliceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("delhipolice", 1)}
+                src={getTigerAsset("delhipolice", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

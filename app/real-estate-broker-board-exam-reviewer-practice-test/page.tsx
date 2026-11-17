@@ -187,7 +187,7 @@ export default function PhrebrokerLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phrebroker", 1)}
+                src={getTigerAsset("phrebroker", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

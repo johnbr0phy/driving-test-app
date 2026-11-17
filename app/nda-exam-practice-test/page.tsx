@@ -187,7 +187,7 @@ export default function NdaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nda", 1)}
+                src={getTigerAsset("nda", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

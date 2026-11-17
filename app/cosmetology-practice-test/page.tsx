@@ -217,7 +217,7 @@ export default function CosmetologyLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cosmetology", 1)}
+                src={getTigerAsset("cosmetology", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

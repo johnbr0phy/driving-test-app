@@ -198,7 +198,7 @@ export default function CcmaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ccma", 1)}
+                src={getTigerAsset("ccma", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

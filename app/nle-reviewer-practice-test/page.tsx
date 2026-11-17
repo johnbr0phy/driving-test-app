@@ -191,7 +191,7 @@ export default function NleReviewerLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phnle", 1)}
+                src={getTigerAsset("phnle", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

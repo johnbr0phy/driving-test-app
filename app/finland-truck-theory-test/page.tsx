@@ -188,7 +188,7 @@ export default function FinlandTruckTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("fitruck", 1)}
+                src={getTigerAsset("fitruck", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

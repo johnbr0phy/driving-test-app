@@ -187,7 +187,7 @@ export default function SgVocationalLicenceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("sgvl", 1)}
+                src={getTigerAsset("sgvl", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

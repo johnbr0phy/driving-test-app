@@ -189,7 +189,7 @@ export default function FortinetNse1LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("fortinse", 1)}
+                src={getTigerAsset("fortinse", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

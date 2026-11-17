@@ -198,7 +198,7 @@ export default function AlcoholServerLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("alcohol", 1)}
+                src={getTigerAsset("alcohol", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

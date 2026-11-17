@@ -200,7 +200,7 @@ export default function AwsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aws", 1)}
+                src={getTigerAsset("aws", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

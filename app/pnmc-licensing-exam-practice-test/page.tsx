@@ -212,7 +212,7 @@ export default function PkpnmcLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("pkpnmc", 1)}
+                src={getTigerAsset("pkpnmc", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

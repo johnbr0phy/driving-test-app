@@ -188,7 +188,7 @@ export default function FinlandMotorcycleTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("fimoto", 1)}
+                src={getTigerAsset("fimoto", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

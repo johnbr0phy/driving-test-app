@@ -187,7 +187,7 @@ export default function CatLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("iimcat", 1)}
+                src={getTigerAsset("iimcat", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

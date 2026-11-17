@@ -190,7 +190,7 @@ export default function AdcLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cadc", 1)}
+                src={getTigerAsset("cadc", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

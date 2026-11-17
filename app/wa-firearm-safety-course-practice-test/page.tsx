@@ -184,7 +184,7 @@ export default function WaFirearmsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aufirearmswa", 1)}
+                src={getTigerAsset("aufirearmswa", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

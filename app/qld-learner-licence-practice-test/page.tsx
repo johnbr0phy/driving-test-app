@@ -198,7 +198,7 @@ export default function QldLearnerLicenceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("auqld", 1)}
+                src={getTigerAsset("auqld", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -192,7 +192,7 @@ export default function ApEnglishLanguageLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aplang", 1)}
+                src={getTigerAsset("aplang", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

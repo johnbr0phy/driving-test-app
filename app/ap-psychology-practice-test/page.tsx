@@ -189,7 +189,7 @@ export default function ApPsychologyLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("appsych", 1)}
+                src={getTigerAsset("appsych", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

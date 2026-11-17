@@ -190,7 +190,7 @@ export default function JambUseOfEnglishLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("jambeng", 1)}
+                src={getTigerAsset("jambeng", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

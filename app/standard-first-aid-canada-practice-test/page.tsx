@@ -193,7 +193,7 @@ export default function StandardFirstAidLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("casfa", 1)}
+                src={getTigerAsset("casfa", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

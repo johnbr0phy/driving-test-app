@@ -200,7 +200,7 @@ export default function SaskatchewanLearnersLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cask", 1)}
+                src={getTigerAsset("cask", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

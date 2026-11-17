@@ -189,7 +189,7 @@ export default function SeruLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukseru", 1)}
+                src={getTigerAsset("ukseru", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

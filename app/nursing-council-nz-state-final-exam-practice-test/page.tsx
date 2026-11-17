@@ -237,7 +237,7 @@ export default function NzsfeLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nzsfe", 1)}
+                src={getTigerAsset("nzsfe", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

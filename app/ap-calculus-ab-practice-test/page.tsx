@@ -191,7 +191,7 @@ export default function ApCalculusAbLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("apcalcab", 1)}
+                src={getTigerAsset("apcalcab", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

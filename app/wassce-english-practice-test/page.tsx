@@ -193,7 +193,7 @@ export default function WassceEnglishLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("wassceeng", 1)}
+                src={getTigerAsset("wassceeng", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

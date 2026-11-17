@@ -190,7 +190,7 @@ export default function HkNursingLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hknurse", 1)}
+                src={getTigerAsset("hknurse", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

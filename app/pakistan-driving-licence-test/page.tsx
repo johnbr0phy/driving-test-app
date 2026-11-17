@@ -188,7 +188,7 @@ export default function PakistanDrivingLicenceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("pkdrive", 1)}
+                src={getTigerAsset("pkdrive", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

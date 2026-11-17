@@ -190,7 +190,7 @@ export default function ArrtLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("arrt", 1)}
+                src={getTigerAsset("arrt", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

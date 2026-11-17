@@ -193,7 +193,7 @@ export default function NaplexLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("naplex", 1)}
+                src={getTigerAsset("naplex", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

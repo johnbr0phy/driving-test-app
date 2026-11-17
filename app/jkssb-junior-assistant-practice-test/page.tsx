@@ -188,7 +188,7 @@ export default function JkssbJuniorAssistantLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("jkssbja", 1)}
+                src={getTigerAsset("jkssbja", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

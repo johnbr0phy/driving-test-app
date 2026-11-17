@@ -191,7 +191,7 @@ export default function CpctaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cpcta", 1)}
+                src={getTigerAsset("cpcta", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

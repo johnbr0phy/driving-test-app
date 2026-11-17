@@ -201,7 +201,7 @@ export default function AdiPart1LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukadi", 1)}
+                src={getTigerAsset("ukadi", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -198,7 +198,7 @@ export default function NotaryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("notary", 1)}
+                src={getTigerAsset("notary", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

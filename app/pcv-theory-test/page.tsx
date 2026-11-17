@@ -200,7 +200,7 @@ export default function PcvTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ukpcv", 1)}
+                src={getTigerAsset("ukpcv", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

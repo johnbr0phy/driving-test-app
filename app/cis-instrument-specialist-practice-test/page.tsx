@@ -192,7 +192,7 @@ export default function HspaCisLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hspacis", 1)}
+                src={getTigerAsset("hspacis", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

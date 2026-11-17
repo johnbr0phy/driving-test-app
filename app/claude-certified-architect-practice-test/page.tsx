@@ -184,7 +184,7 @@ export default function ClaudeArchitectLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ccaf", 1)}
+                src={getTigerAsset("ccaf", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

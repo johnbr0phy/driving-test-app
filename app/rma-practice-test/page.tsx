@@ -189,7 +189,7 @@ export default function RmaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("rma", 1)}
+                src={getTigerAsset("rma", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

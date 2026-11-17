@@ -199,7 +199,7 @@ export default function QabaAbatLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("qabaabat", 1)}
+                src={getTigerAsset("qabaabat", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

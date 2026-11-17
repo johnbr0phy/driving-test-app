@@ -205,7 +205,7 @@ export default function RedSealCarpenterLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cacarp", 1)}
+                src={getTigerAsset("cacarp", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -187,7 +187,7 @@ export default function MtGuardLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("mtguard", 1)}
+                src={getTigerAsset("mtguard", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

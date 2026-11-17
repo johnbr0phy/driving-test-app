@@ -202,7 +202,7 @@ export default function IrelandTruckBusTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("iedttcv", 1)}
+                src={getTigerAsset("iedttcv", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

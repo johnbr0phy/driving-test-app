@@ -186,7 +186,7 @@ export default function IbpsRrbLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ibpsrrb", 1)}
+                src={getTigerAsset("ibpsrrb", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -196,7 +196,7 @@ export default function NzEnStateFinalLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nzensf", 1)}
+                src={getTigerAsset("nzensf", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

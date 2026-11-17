@@ -205,7 +205,7 @@ export default function AplusLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aplus", 1)}
+                src={getTigerAsset("aplus", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

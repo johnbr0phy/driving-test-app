@@ -190,7 +190,7 @@ export default function TgsiLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("tgsi", 1)}
+                src={getTigerAsset("tgsi", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

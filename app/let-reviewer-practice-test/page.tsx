@@ -206,7 +206,7 @@ export default function LetReviewerLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phlet", 1)}
+                src={getTigerAsset("phlet", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

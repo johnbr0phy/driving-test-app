@@ -189,7 +189,7 @@ export default function HungaryKreszLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hukresz", 1)}
+                src={getTigerAsset("hukresz", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

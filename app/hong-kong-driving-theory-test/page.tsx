@@ -187,7 +187,7 @@ export default function HongKongDrivingTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hkdrive", 1)}
+                src={getTigerAsset("hkdrive", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

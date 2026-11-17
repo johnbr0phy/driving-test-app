@@ -201,7 +201,7 @@ export default function ForkliftLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("forklift", 1)}
+                src={getTigerAsset("forklift", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

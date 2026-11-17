@@ -241,7 +241,7 @@ export default function GulfNursingLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("gulfrn", 1)}
+                src={getTigerAsset("gulfrn", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

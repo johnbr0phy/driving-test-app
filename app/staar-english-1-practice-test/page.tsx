@@ -193,7 +193,7 @@ export default function StaarEnglish1LandingPage() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <Image src={getTigerAsset("staareng1", 1)} alt="Tigertest mascot" width={180} height={180} className="w-32 md:w-44" />
+              <Image src={getTigerAsset("staareng1", 3)} alt="Tigertest mascot" width={180} height={180} className="w-32 md:w-44" />
             </div>
           </div>
         </div>

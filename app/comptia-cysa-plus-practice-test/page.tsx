@@ -192,7 +192,7 @@ export default function CysaPlusLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cysa", 1)}
+                src={getTigerAsset("cysa", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

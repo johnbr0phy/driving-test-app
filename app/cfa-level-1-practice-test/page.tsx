@@ -189,7 +189,7 @@ export default function CfaLevel1LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cfal1", 1)}
+                src={getTigerAsset("cfal1", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

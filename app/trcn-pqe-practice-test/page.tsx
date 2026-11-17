@@ -203,7 +203,7 @@ export default function TrcnPqeLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("trcnpqe", 1)}
+                src={getTigerAsset("trcnpqe", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

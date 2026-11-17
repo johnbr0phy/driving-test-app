@@ -193,7 +193,7 @@ export default function ApUsHistoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("apush", 1)}
+                src={getTigerAsset("apush", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

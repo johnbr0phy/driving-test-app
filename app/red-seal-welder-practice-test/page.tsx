@@ -206,7 +206,7 @@ export default function RedSealWelderLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("caweld", 1)}
+                src={getTigerAsset("caweld", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

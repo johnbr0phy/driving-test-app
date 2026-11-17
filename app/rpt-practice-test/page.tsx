@@ -194,7 +194,7 @@ export default function RptLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("rpt", 1)}
+                src={getTigerAsset("rpt", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

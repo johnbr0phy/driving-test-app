@@ -188,7 +188,7 @@ export default function CrfscLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("crfsc", 1)}
+                src={getTigerAsset("crfsc", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

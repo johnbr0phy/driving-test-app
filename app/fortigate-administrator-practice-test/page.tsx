@@ -184,7 +184,7 @@ export default function FortigateLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("fortigate", 1)}
+                src={getTigerAsset("fortigate", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

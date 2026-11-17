@@ -187,7 +187,7 @@ export default function Zare5LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("zare5", 1)}
+                src={getTigerAsset("zare5", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

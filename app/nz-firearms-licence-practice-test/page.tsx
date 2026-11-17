@@ -187,7 +187,7 @@ export default function NzFirearmsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nzfirearms", 1)}
+                src={getTigerAsset("nzfirearms", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

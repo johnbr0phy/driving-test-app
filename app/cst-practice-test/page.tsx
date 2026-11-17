@@ -191,7 +191,7 @@ export default function CSTLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cst", 1)}
+                src={getTigerAsset("cst", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

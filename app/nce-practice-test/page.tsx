@@ -207,7 +207,7 @@ export default function NceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("nce", 1)}
+                src={getTigerAsset("nce", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

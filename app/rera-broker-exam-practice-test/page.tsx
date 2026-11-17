@@ -188,7 +188,7 @@ export default function ReraBrokerLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aerera", 1)}
+                src={getTigerAsset("aerera", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

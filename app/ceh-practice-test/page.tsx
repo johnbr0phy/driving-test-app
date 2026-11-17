@@ -197,7 +197,7 @@ export default function CehLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("ceh", 1)}
+                src={getTigerAsset("ceh", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

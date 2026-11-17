@@ -204,7 +204,7 @@ export default function EighteenthEditionLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("uk18ed", 1)}
+                src={getTigerAsset("uk18ed", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

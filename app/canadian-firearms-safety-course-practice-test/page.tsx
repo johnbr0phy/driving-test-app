@@ -206,7 +206,7 @@ export default function CanadianFirearmsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("capal", 1)}
+                src={getTigerAsset("capal", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

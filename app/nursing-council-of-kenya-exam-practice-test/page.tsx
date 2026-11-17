@@ -235,7 +235,7 @@ export default function KenckLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("kenck", 1)}
+                src={getTigerAsset("kenck", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -187,7 +187,7 @@ export default function MhtCetLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("mhtcet", 1)}
+                src={getTigerAsset("mhtcet", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

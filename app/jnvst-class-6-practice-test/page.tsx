@@ -188,7 +188,7 @@ export default function JnvstLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("jnvst", 1)}
+                src={getTigerAsset("jnvst", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

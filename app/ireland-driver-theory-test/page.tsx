@@ -201,7 +201,7 @@ export default function IrelandDriverTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("iedtt", 1)}
+                src={getTigerAsset("iedtt", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -195,7 +195,7 @@ export default function BcabaLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("bcaba", 1)}
+                src={getTigerAsset("bcaba", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

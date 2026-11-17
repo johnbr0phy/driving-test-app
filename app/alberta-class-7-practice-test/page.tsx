@@ -201,7 +201,7 @@ export default function AlbertaClass7LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("caab", 1)}
+                src={getTigerAsset("caab", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

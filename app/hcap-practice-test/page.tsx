@@ -191,7 +191,7 @@ export default function HcapLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("iehcap", 1)}
+                src={getTigerAsset("iehcap", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

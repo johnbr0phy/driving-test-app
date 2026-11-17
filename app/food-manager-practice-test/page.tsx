@@ -202,7 +202,7 @@ export default function FoodmgrLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("foodmgr", 1)}
+                src={getTigerAsset("foodmgr", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

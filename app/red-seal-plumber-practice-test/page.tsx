@@ -194,7 +194,7 @@ export default function RedSealPlumberLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("caplumb", 1)}
+                src={getTigerAsset("caplumb", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

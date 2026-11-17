@@ -190,7 +190,7 @@ export default function RdExamLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("rdexam", 1)}
+                src={getTigerAsset("rdexam", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

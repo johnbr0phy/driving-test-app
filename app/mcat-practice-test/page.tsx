@@ -192,7 +192,7 @@ export default function McatLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("mcat", 1)}
+                src={getTigerAsset("mcat", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

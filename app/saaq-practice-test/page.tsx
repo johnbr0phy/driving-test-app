@@ -201,7 +201,7 @@ export default function SaaqLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("caqc", 1)}
+                src={getTigerAsset("caqc", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

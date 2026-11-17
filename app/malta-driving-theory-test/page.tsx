@@ -188,7 +188,7 @@ export default function MaltaDrivingTheoryLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("mttheory", 1)}
+                src={getTigerAsset("mttheory", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

@@ -188,7 +188,7 @@ export default function CivilServiceExamLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phcse", 1)}
+                src={getTigerAsset("phcse", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

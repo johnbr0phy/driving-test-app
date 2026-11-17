@@ -200,7 +200,7 @@ export default function OntarioG1LandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("caon", 1)}
+                src={getTigerAsset("caon", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

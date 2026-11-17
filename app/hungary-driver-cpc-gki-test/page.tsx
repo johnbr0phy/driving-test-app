@@ -189,7 +189,7 @@ export default function HungaryGkiLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("hugki", 1)}
+                src={getTigerAsset("hugki", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

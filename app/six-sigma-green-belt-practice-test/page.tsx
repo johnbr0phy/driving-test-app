@@ -185,7 +185,7 @@ export default function SixSigmaGreenBeltLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("cssgb", 1)}
+                src={getTigerAsset("cssgb", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

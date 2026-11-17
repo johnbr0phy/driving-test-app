@@ -205,7 +205,7 @@ export default function FoodSafetySupervisorLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("aufss", 1)}
+                src={getTigerAsset("aufss", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

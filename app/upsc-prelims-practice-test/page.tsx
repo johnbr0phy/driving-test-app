@@ -192,7 +192,7 @@ export default function UpscPrelimsLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("upscse", 1)}
+                src={getTigerAsset("upscse", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

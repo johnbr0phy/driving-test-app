@@ -201,7 +201,7 @@ export default function PanceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("pance", 1)}
+                src={getTigerAsset("pance", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

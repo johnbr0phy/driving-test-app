@@ -182,7 +182,7 @@ export default function MypceLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("mypce", 1)}
+                src={getTigerAsset("mypce", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

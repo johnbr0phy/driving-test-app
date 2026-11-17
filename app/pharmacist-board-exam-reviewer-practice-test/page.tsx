@@ -205,7 +205,7 @@ export default function PharmacistBoardExamLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("phpharm", 1)}
+                src={getTigerAsset("phpharm", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

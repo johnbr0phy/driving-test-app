@@ -188,7 +188,7 @@ export default function CapmLandingPage() {
             </div>
             <div className="flex-shrink-0">
               <Image
-                src={getTigerAsset("capm", 1)}
+                src={getTigerAsset("capm", 3)}
                 alt="Tigertest mascot"
                 width={180}
                 height={180}

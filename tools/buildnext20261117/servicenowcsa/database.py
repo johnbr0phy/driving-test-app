@@ -148,7 +148,7 @@ ITEMS=[
  ['Her assigned security tasks','The best practice score','The privileged account count','The scan results chart'],
  'Assigned security tasks list her work items, while the posture views show summary counts.'),
 ('A reviewer must view existing records and correct approved values, but must neither add nor remove records. Choose the two ACL operations the requirement allows.',
- ['read','write','delete','list_edit'],
+ ['read','write','delete','create'],
  'Viewing needs read and correcting values needs write. Adding and removing records are excluded.', [0,1]),
 ('A service account may insert new records and update existing ones. Viewing is handled separately and deletion is forbidden. Choose the two ACL operations this grants.',
  ['create','write','delete','report_on'],

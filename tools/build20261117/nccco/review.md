@@ -260,3 +260,6 @@ CHART-034 now explicitly states collinearity; OPS-031 asks about manufacturer pr
 ## Rewrite, 2026-11-17
 
 The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.
+
+## Second review, 2026-11-17
+200 questions answered blind from stem and options; 200 of 200 agreed with the key. Load-chart arithmetic (net payload, 75% sums, parts of line, radius, area) recomputed: all correct. Rules checked against OSHA 1926.1411 (Table T, spotter), 1413 (rope categories and counts, power-line contact), 1415 (horn, pedal lock, holding valve), 1416 (Category I 7 days, II 30 days, temporary alternatives), 1417 (b)(2)/(b)(3) qualified person vs RPE, (j), (m), (o)(3), (s) first-lift brake test, (u) tire pressure), 1412 (idle 3 months, 3 and 12 month records), 1432 (qualified person plans, lift director reviews). No fixes needed; no changes made.

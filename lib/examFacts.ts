@@ -6458,6 +6458,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Smart Serve's Full Course page and the AGCO's training, hours and ID guidance, checked November 2026",
     source: { name: "Smart Serve: the Full Course", url: "https://smartserve.ca/full-course" },
+  },
   cabcguard: {
     answer:
       "Basic Security Training (BST) is the training standard the BC Registrar of Security Services accepts for a security guard worker licence under the Security Services Act. It is a 40-hour theory course followed by the BST Assessment, a final exam that the Justice Institute of British Columbia (JIBC) runs and invigilates on the registrar's behalf. JIBC's program page lists the exam as 75 questions in 90 minutes with a 70% pass mark (its assessment course page gives a two-hour time limit instead), written at JIBC in New Westminster or by online proctoring for some students outside the Lower Mainland, within six months of the course, with two attempts before the course must be retaken. It tests a guard's legal authority to act and the rule that public and personal safety come first. To be licensed you must be at least 19 and ordinarily resident in Canada, and you apply to the Security Programs Division.",

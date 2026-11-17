@@ -4,8 +4,7 @@ import { getCatalogEntry, TestCatalogEntry } from "@/lib/testCatalog";
 import { sharedRead } from "@/lib/server/sharedRead";
 
 // The homepage's "Popular this week": catalog tests ranked by questions
-// answered over the last 7 UTC days, today included so a busy test shows
-// within the hour, from analytics/questions.byExam
+// answered over the last 168 hours, from analytics/questions.byExam
 // (internal accounts never send to it). Falls back to a fixed list when
 // Firestore is unreachable, e.g. a local build without credentials.
 
@@ -17,8 +16,20 @@ export interface PopularTest {
 
 const FALLBACK_IDS = ["dmv", "sat", "act", "teas", "cna", "cdl"];
 
-function lastSevenDays(now = new Date()): string[] {
-  return Array.from({ length: 7 }, (_, i) => new Date(now.getTime() - i * 86_400_000).toISOString().slice(0, 10));
+/**
+ * Answers are stored per UTC day, so a rolling 7-day window is estimated:
+ * today and the 6 days before it count in full, and the day before those
+ * counts for the part of it still inside the last 168 hours. Summing 7
+ * calendar days instead made the homepage count drop by a whole day's
+ * answers at every UTC midnight and climb back through the day.
+ */
+export function rollingWeekWeights(now = new Date()): Array<[string, number]> {
+  const dayMs = 86_400_000;
+  const elapsed = (now.getTime() % dayMs) / dayMs;
+  return Array.from({ length: 8 }, (_, i) => [
+    new Date(now.getTime() - i * dayMs).toISOString().slice(0, 10),
+    i < 7 ? 1 : 1 - elapsed,
+  ]);
 }
 
 export async function getPopularTests(limit = 6): Promise<{ tests: PopularTest[]; totalAnswered: number | null }> {
@@ -29,11 +40,11 @@ export async function getPopularTests(limit = 6): Promise<{ tests: PopularTest[]
       const snap = await getAdminDb().collection("analytics").where(FieldPath.documentId(), "==", "questions").select("byExam").get();
       return (snap.docs[0]?.get("byExam") ?? {}) as Record<string, { daily?: Record<string, number> }>;
     });
-    const days = lastSevenDays();
+    const days = rollingWeekWeights();
     let totalAnswered = 0;
     const ranked = Object.entries(byExam)
       .map(([id, v]) => {
-        const answered = days.reduce((sum, d) => sum + (v.daily?.[d] ?? 0), 0);
+        const answered = Math.round(days.reduce((sum, [d, w]) => sum + w * (v.daily?.[d] ?? 0), 0));
         totalAnswered += answered;
         return { test: getCatalogEntry(id), answered };
       })

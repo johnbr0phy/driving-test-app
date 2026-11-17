@@ -7,6 +7,11 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["syo-701", "US", "secplus"],
+  ["nha cpt", "US", "phleb"],
+  ["2026 ohio permit", "US", "dmv"],
+  ["texas health and life insruance", "US", "insurance"],
+  ["tigertest salesforce platform administrator", "US", "sfadmin"],
   ["inbde", "US", "inbde"],
   ["integrated national board dental", "US", "inbde"],
   ["dentist board exam", "US", "inbde"],

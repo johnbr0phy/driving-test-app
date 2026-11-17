@@ -54,7 +54,7 @@ function editDistance(a: string, b: string, max: number): number {
 
 // Words nearly every test has in its name or blurb. Dropped from a query when
 // it has other words, so "sat practice test" searches for "sat".
-const GENERIC = new Set(["practice", "test", "tests", "exam", "exams", "mock", "free", "quiz", "questions", "question", "prep", "online", "sample", "paper", "papers", "2026", "2027"]);
+const GENERIC = new Set(["practice", "test", "tests", "exam", "exams", "mock", "free", "quiz", "questions", "question", "prep", "online", "sample", "paper", "papers", "2026", "2027", "tigertest"]);
 
 // Spellings and plurals of one word, so "maths" (UK) finds the SAT's "math",
 // "licence" finds "license" and the reverse. Applied to every query term.
@@ -199,7 +199,7 @@ function stateHits(rawTerms: string[]): StateHit[] {
     if (!run && !byCode) continue;
     // Only a driving search: "texas real estate" or "ny real estate" is not the permit test.
     const rest = terms.filter((t, i) => !(run && i >= run[0] && i < run[0] + run[1]) && t !== code);
-    if (rest.every((t) => DRIVING.test(t))) {
+    if (rest.every((t) => DRIVING.test(t) || GENERIC.has(t))) {
       hits.push({
         hit: {
           key: `dmv:${s.code}`,
@@ -303,7 +303,7 @@ function familySearch(q: string, families: TestCatalogEntry[]): SearchResult | n
  */
 export function searchAllTests(query: string, region: Region, popularity: Record<string, number> = {}): SearchResult {
   // "realestate" is how people type it; every test writes "real estate".
-  const q = normalizeQuery(query).replace(/\brealestate\b/g, "real estate");
+  const q = normalizeQuery(query).replace(/\brealestate\b/g, "real estate").replace(/\b(insruance|insurence|insurace)\b/g, "insurance");
   const allTerms = words(q.replace(/'s\b/g, "")).map((t) => SYNONYMS[t] ?? t);
   if (allTerms.length === 0) return { hits: [], fuzzy: false };
   const specific = allTerms.filter((t) => !GENERIC.has(t));

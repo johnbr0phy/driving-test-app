@@ -2202,7 +2202,7 @@
     "state": "ALL",
     "questionId": "APPRAISER-USPAP-006",
     "category": "appraiserUspap",
-    "question": "For a permitted analytical purpose, an appraisal values a proposed house as already complete, although the appraiser knows construction has not begun at the effective date. Which concept applies?",
+    "question": "For a permitted analytical purpose, an appraisal with a current effective date values a proposed house as already complete, although the appraiser knows construction has not begun as of that date. Which concept applies?",
     "optionA": "Extraordinary assumption",
     "optionB": "Hypothetical condition",
     "optionC": "Prospective value opinion",

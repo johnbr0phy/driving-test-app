@@ -207,3 +207,19 @@ The bank was first built as option "families" (four questions sharing one option
 ## Second review, 2026-11-17
 
 160 questions answered blind from stem and options only, with every number and sequence recomputed (ages, fractions, decimals, units, perimeter and area, place value, time spans, day sequences, directions, letter and number patterns). 160/160 agreed with the key. No fixes needed and none made; no source or bank changes. Observed, left alone: keys fall A, B, C, D in strict rotation by id; the answer-pattern and option-reuse checks pass, but options could be shuffled later if wanted.
+
+## Third review (blind, Opus), 2026-11-17
+
+Blind agreement: 160/160. Seven questions were listed for wording; no key changed.
+
+| Question | Verdict | Change |
+|---|---|---|
+| VIDYAGYAN-ENGLISH-038 | Wording | The notice now says "the bridge to the village" instead of "the usual crossing", so the answer is stated, not guessed; explanation rewritten. |
+| VIDYAGYAN-REASONING-006 | Ambiguous | Stem now names all four children (Asha, Bina, Chirag and Deep), so "Cannot be told" is clearly wrong. |
+| VIDYAGYAN-REASONING-024 | Giveaway | "web-building spider" and "nest-building bird" cut to "a spider" and "a bird". |
+| VIDYAGYAN-REASONING-026 | Ambiguous | "every third day" (read by some children as every other day) replaced by "Each lesson comes three days after the one before it". |
+| VIDYAGYAN-REASONING-029 | Giveaway | Stem no longer says the bead meets the conditions; now asks which of the two conditions it meets. |
+| VIDYAGYAN-REASONING-035 | Missing fact | Stem now lists the four bags (yellow, red, blue, green) before they are taken out. |
+| VIDYAGYAN-REASONING-038 | Ambiguous | Red-herring "fourth from the front" sentence and "including that child" removed; asks how many stand behind the child third from the front. |
+
+Checks after rebuild: option reuse and stem echo OK (gain -1.2), answer patterns none, check_banks PASS, validate_v2_bank 0 problems.

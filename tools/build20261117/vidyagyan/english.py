@@ -135,11 +135,11 @@ ITEMS = [('In "The basket is beside the door", what kind of word is "basket"?',
   ['The basket', 'The cloth bag', 'The library door', 'The bridge'],
   'She carried the vegetables in her basket, and its broken handle is why she moved them into the cloth bag; the door '
   'and the bridge were not things she carried.'),
- ('A notice at the river said that the usual crossing was closed for repair. Arun could still buy bread at the bakery '
+ ('A notice at the river said that the bridge to the village was closed for repair. Arun could still buy bread at the bakery '
   'and return books at the library, but he needed a different route to the village on the opposite bank. He put his '
   'lunch basket down while studying the map. What was closed for repair?',
   ['The bridge', 'The bakery', 'The library', 'The village market'],
-  'The river crossing is the bridge; the passage says the other services remain available.'),
+  'The notice says the bridge was closed; the bakery and library were still open, and the market is not mentioned as closed.'),
  ('Farah borrowed a storybook at the library, crossed the bridge and followed the smell of fresh bread. She entered a '
   'shop where trays of rolls were cooling. After buying two rolls, she placed them in her basket and continued home. '
   'Which place did she enter after following the smell?',

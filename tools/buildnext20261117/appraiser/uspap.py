@@ -14,7 +14,7 @@ ITEMS=[
 ("The condition of concealed structural members is uncertain as of the valuation date. With a reasonable basis and a credible result, an appraiser assumes they are sound; a contrary finding could change value. Which concept applies?",
  ["Extraordinary assumption","Hypothetical condition","Limiting condition","Jurisdictional exception"],
  "An extraordinary assumption concerns uncertain information that, if found false, could alter the conclusions. A hypothetical condition is contrary to what is known to exist."),
-("For a permitted analytical purpose, an appraisal values a proposed house as already complete, although the appraiser knows construction has not begun at the effective date. Which concept applies?",
+("For a permitted analytical purpose, an appraisal with a current effective date values a proposed house as already complete, although the appraiser knows construction has not begun as of that date. Which concept applies?",
  ["Hypothetical condition","Extraordinary assumption","Prospective value opinion","Jurisdictional exception"],
  "A hypothetical condition is contrary to known facts as of the effective date; its use must satisfy USPAP requirements and be disclosed. A prospective opinion would use a future effective date."),
 ("A binding law prevents compliance with one particular USPAP requirement. The appraiser identifies and discloses the law and the affected requirement. Which rule addresses that conflict?",

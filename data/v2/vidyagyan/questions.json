@@ -785,7 +785,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "A notice at the river said that the usual crossing was closed for repair. Arun could still buy bread at the bakery and return books at the library, but he needed a different route to the village on the opposite bank. He put his lunch basket down while studying the map. What was closed for repair?",
+    "stem": "A notice at the river said that the bridge to the village was closed for repair. Arun could still buy bread at the bakery and return books at the library, but he needed a different route to the village on the opposite bank. He put his lunch basket down while studying the map. What was closed for repair?",
     "options": [
       "The bakery",
       "The bridge",
@@ -795,7 +795,7 @@
     "correct": [
       1
     ],
-    "explanation": "The river crossing is the bridge; the passage says the other services remain available."
+    "explanation": "The notice says the bridge was closed; the bakery and library were still open, and the market is not mentioned as closed."
   },
   {
     "id": "VIDYAGYAN-ENGLISH-039",
@@ -2633,7 +2633,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Four children finish a race without ties. Deep finishes first, Chirag third and Asha fourth. Who finishes second?",
+    "stem": "Asha, Bina, Chirag and Deep finish a race without ties. Deep finishes first, Chirag third and Asha fourth. Who finishes second?",
     "options": [
       "Chirag",
       "Bina",
@@ -3011,7 +3011,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which structure is to a web-building spider as a nest is to a nest-building bird?",
+    "stem": "Which structure is to a spider as a nest is to a bird?",
     "options": [
       "Hive",
       "Shell",
@@ -3053,7 +3053,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A lesson is every third day. One lesson is on Saturday. On which day is the next?",
+    "stem": "Each lesson comes three days after the one before it. One lesson is on Saturday. On which day is the next lesson?",
     "options": [
       "Monday",
       "Tuesday",
@@ -3116,7 +3116,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A box is for objects that are red and round. How does a red round bead meet these two conditions?",
+    "stem": "A box is only for objects that are red and also round. Which of these two conditions does a red round bead meet?",
     "options": [
       "Both conditions are met",
       "Only the colour condition is met",
@@ -3242,7 +3242,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "One bag is left after removing the yellow bag, then the red bag, then the blue bag. Which bag remains?",
+    "stem": "A box holds four bags: a yellow, a red, a blue and a green bag. The yellow bag is taken out, then the red bag, then the blue bag. Which bag is still in the box?",
     "options": [
       "The red bag",
       "The blue bag",
@@ -3252,7 +3252,7 @@
     "correct": [
       2
     ],
-    "explanation": "Green is the only named bag not removed."
+    "explanation": "Of the four bags, only the green bag was not taken out."
   },
   {
     "id": "VIDYAGYAN-REASONING-036",
@@ -3305,7 +3305,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A queue has six children. One child is fourth from the front. How many children, including that child, are behind the third child?",
+    "stem": "Six children stand in a queue, one behind another. How many children stand behind the child who is third from the front?",
     "options": [
       "4",
       "3",
@@ -3315,7 +3315,7 @@
     "correct": [
       1
     ],
-    "explanation": "The fourth, fifth and sixth children are three in total."
+    "explanation": "The fourth, fifth and sixth children stand behind the third child, which makes three."
   },
   {
     "id": "VIDYAGYAN-REASONING-039",

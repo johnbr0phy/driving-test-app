@@ -19,7 +19,7 @@ Q('A business decides not to launch a proposed service because its exposure exce
  'Risk avoidance',['Risk mitigation','Risk transfer','Risk deferral'],
  'Avoidance removes the activity creating the exposure rather than operating it with controls.')
 Q('A team deploys tested restrictions to reduce the likelihood of unauthorized access while continuing the service. Which treatment is selected?',
- 'Risk mitigation',['Risk avoidance','Risk transference','Risk deterrence'],
+ 'Risk mitigation',['Risk avoidance','Risk transference','Risk escalation'],
  'Mitigation reduces likelihood or impact through controls while the activity continues.')
 Q('An organization purchases an insurance policy covering defined incident costs while retaining responsibility for operating its systems securely. Which treatment applies to the covered costs?',
  'Risk transference',['Risk acceptance','Risk avoidance','Risk mitigation'],
@@ -57,9 +57,9 @@ Q('A scanner reports a vulnerable version, but the product may contain a vendor 
 Q('Several confirmed weaknesses compete for limited maintenance time. Which task decides which ones are corrected first?',
  'Risk-based prioritization',['Fixing them in order of discovery','Fixing the easiest ones first','Fixing them by base score alone'],
  'Prioritization ranks confirmed remediation work using exposure and business impact, not merely discovery order, effort or a raw score.')
-Q('A tested patch has received change approval for tonight\'s window. Which task now changes the vulnerable system?',
- 'Deploy it during tonight\'s window',['Retest the patch in production first','Wait for the next quarterly window','Seek change approval a second time'],
- 'Implement the authorized correction according to the change plan.')
+Q('A tested patch has received change approval for tonight\'s window. What is the next step in the remediation process?',
+ 'Install the patch as scheduled',['Rescan the system to confirm the fix','Close the change record as completed','Update the configuration baseline to the patched state'],
+ 'Implement the authorized correction according to the change plan. Rescanning, closing the record and updating the baseline all follow a successful deployment.')
 Q('A patch job reports success, but the risk team needs proof that the vulnerability is no longer present. Which task provides that assurance?',
  'Rescan or retest the system',['Rely on the deployment log','Close the ticket on the vendor notice','Ask the owner to confirm by email'],
  'Verification checks the resulting condition; a successful deployment log or an owner\'s statement alone is insufficient.')

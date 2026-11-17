@@ -18,3 +18,19 @@ The bank was first built as option "families" (four questions sharing one option
 ## Second review, 2026-11-17
 
 All 260 questions answered blind from stem and options (picks written to the scratchpad), numbers recomputed (RISK-037 to 040 percentages, INCIDENT-033 to 036 RTO/RPO). Agreement 260/260. No confirmed problems, so no fixes and no rebuild. Single-key echo only on NETWORK-024 (key echoing the stem, a rogue endpoint on a wired port); left because it is the only natural answer. Checks: option reuse OK (0% shared sets, echo gain -2.7), check_banks PASS, v2 validator run.
+
+## Third review (blind, Opus), 2026-11-17
+
+Blind agreement 260/260. Nine questions were listed (medium confidence, alternatives or notes) and adjudicated:
+
+- CONCEPTS-009: wording. The key now reads "Written sign-off from the third-party owner to test it", so it says the authorization comes from the supplier (the old "scope document" did not, and echoed nothing the stem required).
+- CONCEPTS-030: no problem. A quiz checks knowledge of the handoff section; only rehearsal builds the practiced handoff the exercise found missing.
+- ACCESS-004: no problem. Location is offered only as a risk signal against the three factor types; no "somewhere you are" option competes.
+- RISK-006: weak distractor. "Risk deterrence" (not a treatment) replaced by "Risk escalation", a real treatment option that does not fit the stem.
+- RISK-019: giveaway. Stem now asks for the next remediation step; distractors are steps that come after deployment (rescan, close the change record, update the baseline). Key "Install the patch as scheduled".
+- INCIDENT-029: key arguable. ISC2 usage often equates a structured walkthrough with a scenario-driven tabletop, so the key is now "A read-through review" (checklist review) and the explanation says a walkthrough or tabletop adds a scenario. Stem no longer says "read".
+- INCIDENT-031: invented term. Key "A system recovery drill" renamed "A backup restoration test"; stem says "retained copies of its data".
+- NETWORK-022: giveaway. Stem now a hotel Wi-Fi scenario instead of paraphrasing the definition.
+- NETWORK-024: echo. Stem now describes a laptop plugged into a meeting room wall jack, no "port".
+
+Rebuilt with build.py. Checks: option reuse OK (0 shared sets, echo 0/60, gain -2.9), answer patterns strict OK, check_banks PASS, v2 validator 260 questions 0 problems.

@@ -87,14 +87,14 @@ Q('A service must continue operating when a single server fails, without waiting
 Q('A service operates at an alternate site after recovery. Staff need an approved way to return to the normal site without losing new records. Which plan is required?',
  'A documented failback procedure',['A failover runbook','A tabletop exercise','A backup rotation schedule'],
  'Failback planning coordinates return, synchronization and validation after alternate operation. A failover runbook covers moving away, not back.')
-Q('Participants read a recovery plan together to confirm contact details and responsibilities without introducing an incident scenario. Which activity is this?',
- 'A structured walkthrough',['A tabletop exercise','A parallel test','A full interruption test'],
- 'A walkthrough checks the documented plan and roles through structured review. A tabletop adds a scenario to discuss.')
+Q('Participants check a recovery plan line by line to confirm contact details and responsibilities without introducing an incident scenario. Which activity is this?',
+ 'A read-through review',['A tabletop exercise','A parallel test','A full interruption test'],
+ 'A read-through (checklist) review checks the documented plan, contacts and roles. A tabletop or structured walkthrough adds a scenario to discuss.')
 Q('Participants discuss decisions and escalation during a simulated outage, without moving live workloads. Which exercise is this?',
  'A tabletop exercise',['A checklist review','A live failover simulation','A full interruption test'],
  'A tabletop uses a scenario to practice coordination and decision-making without executing a live recovery.')
-Q('Technicians rebuild an isolated application from retained backup data and test its functions. Which exercise is this?',
- 'A system recovery drill',['A tabletop exercise','A checklist review','A full interruption test'],
+Q('Technicians rebuild an isolated application from retained copies of its data and test its functions. Which exercise is this?',
+ 'A backup restoration test',['A tabletop exercise','A checklist review','A full interruption test'],
  'A technical restoration exercise verifies the ability to reconstruct and use the service from recovery material without disrupting production.')
 Q('Under an approved test plan, a service transfers actual processing to its alternate environment and validates continuity. Which exercise is this?',
  'A live failover test',['A parallel test with no switchover','A tabletop exercise','A structured walkthrough'],

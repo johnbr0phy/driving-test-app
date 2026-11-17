@@ -66,13 +66,13 @@ Q('An access point cannot receive security fixes and cannot meet the organizatio
 Q('Thousands of hosts flood a public website so legitimate clients cannot obtain responses. Which threat pattern is described?',
  'Distributed denial of service',['DNS cache poisoning','On-path interception of traffic','ARP spoofing'],
  'Distributed denial of service targets availability through traffic or resource exhaustion from multiple sources.')
-Q('An adversary is positioned between communicating endpoints and attempts to observe or alter their exchanges. Which threat pattern is described?',
+Q('On shared hotel Wi-Fi, an attacker relays a guest\'s traffic through their own laptop and changes data in transit. Which threat pattern is described?',
  'An on-path (man-in-the-middle) attack',['A distributed denial of service','A replay of captured traffic','Port scanning'],
  'An on-path adversary can intercept traffic; authenticated protected channels help address this threat.')
 Q('A resolver stores a forged name-to-address result and subsequently directs users to the wrong destination. Which threat pattern is described?',
  'DNS cache poisoning',['ARP spoofing','Domain typosquatting','DNS amplification'],
  'DNS cache poisoning introduces false resolution data into a resolver\'s cache. Typosquatting relies on users mistyping a name instead.')
-Q('An unapproved device connects to an office network port and obtains access intended only for managed endpoints. Which threat pattern is described?',
+Q('A visitor plugs a personal laptop into a meeting room wall jack and receives an address on the internal network meant only for managed devices. Which threat pattern is described?',
  'A rogue endpoint on a wired port',['An evil twin access point','VLAN hopping through a trunk port','MAC flooding of the switch'],
  'The issue is unauthorized network attachment, which admission and port controls can help address.')
 Q('A volumetric attack saturates the organization\'s internet circuit before local equipment can process traffic. Which measure addresses the bottleneck at a useful location?',

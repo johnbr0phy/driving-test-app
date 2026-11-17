@@ -178,7 +178,7 @@
     "format": "single",
     "stem": "A technician is asked to assess a supplier system that is not listed in the signed assessment authorization. The requester cannot show supplier consent. What must be resolved before assessment activity?",
     "options": [
-      "A scope document covering that third party's equipment",
+      "Written sign-off from the third-party owner to test it",
       "A verbal go-ahead from the internal colleague who asked",
       "A scan schedule agreed with the internal help desk",
       "A non-disclosure agreement signed by the tester"
@@ -1795,7 +1795,7 @@
     "format": "single",
     "stem": "A team deploys tested restrictions to reduce the likelihood of unauthorized access while continuing the service. Which treatment is selected?",
     "options": [
-      "Risk deterrence",
+      "Risk escalation",
       "Risk mitigation",
       "Risk avoidance",
       "Risk transference"
@@ -2066,17 +2066,17 @@
     "skill": "risk",
     "difficulty": 2,
     "format": "single",
-    "stem": "A tested patch has received change approval for tonight's window. Which task now changes the vulnerable system?",
+    "stem": "A tested patch has received change approval for tonight's window. What is the next step in the remediation process?",
     "options": [
-      "Wait for the next quarterly window",
-      "Seek change approval a second time",
-      "Deploy it during tonight's window",
-      "Retest the patch in production first"
+      "Close the change record as completed",
+      "Update the configuration baseline to the patched state",
+      "Install the patch as scheduled",
+      "Rescan the system to confirm the fix"
     ],
     "correct": [
       2
     ],
-    "explanation": "Implement the authorized correction according to the change plan."
+    "explanation": "Implement the authorized correction according to the change plan. Rescanning, closing the record and updating the baseline all follow a successful deployment."
   },
   {
     "id": "SSCP-RISK-020",
@@ -3116,9 +3116,9 @@
     "skill": "incident",
     "difficulty": 2,
     "format": "single",
-    "stem": "Participants read a recovery plan together to confirm contact details and responsibilities without introducing an incident scenario. Which activity is this?",
+    "stem": "Participants check a recovery plan line by line to confirm contact details and responsibilities without introducing an incident scenario. Which activity is this?",
     "options": [
-      "A structured walkthrough",
+      "A read-through review",
       "A tabletop exercise",
       "A parallel test",
       "A full interruption test"
@@ -3126,7 +3126,7 @@
     "correct": [
       0
     ],
-    "explanation": "A walkthrough checks the documented plan and roles through structured review. A tabletop adds a scenario to discuss."
+    "explanation": "A read-through (checklist) review checks the documented plan, contacts and roles. A tabletop or structured walkthrough adds a scenario to discuss."
   },
   {
     "id": "SSCP-INCIDENT-030",
@@ -3158,11 +3158,11 @@
     "skill": "incident",
     "difficulty": 2,
     "format": "single",
-    "stem": "Technicians rebuild an isolated application from retained backup data and test its functions. Which exercise is this?",
+    "stem": "Technicians rebuild an isolated application from retained copies of its data and test its functions. Which exercise is this?",
     "options": [
       "A checklist review",
       "A full interruption test",
-      "A system recovery drill",
+      "A backup restoration test",
       "A tabletop exercise"
     ],
     "correct": [
@@ -4229,7 +4229,7 @@
     "skill": "network",
     "difficulty": 2,
     "format": "single",
-    "stem": "An adversary is positioned between communicating endpoints and attempts to observe or alter their exchanges. Which threat pattern is described?",
+    "stem": "On shared hotel Wi-Fi, an attacker relays a guest's traffic through their own laptop and changes data in transit. Which threat pattern is described?",
     "options": [
       "Port scanning",
       "An on-path (man-in-the-middle) attack",
@@ -4271,7 +4271,7 @@
     "skill": "network",
     "difficulty": 2,
     "format": "single",
-    "stem": "An unapproved device connects to an office network port and obtains access intended only for managed endpoints. Which threat pattern is described?",
+    "stem": "A visitor plugs a personal laptop into a meeting room wall jack and receives an address on the internal network meant only for managed devices. Which threat pattern is described?",
     "options": [
       "An evil twin access point",
       "VLAN hopping through a trunk port",

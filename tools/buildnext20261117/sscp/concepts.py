@@ -39,7 +39,7 @@ Q('A practitioner changes employers while retaining confidential design document
  'Protect the entrusted information and follow authorized return or disposal requirements. Changing jobs does not grant permission to keep or disclose it.')
 # Authority and process
 Q('A technician is asked to assess a supplier system that is not listed in the signed assessment authorization. The requester cannot show supplier consent. What must be resolved before assessment activity?',
- 'A scope document covering that third party\'s equipment',
+ 'Written sign-off from the third-party owner to test it',
  ['A verbal go-ahead from the internal colleague who asked','A scan schedule agreed with the internal help desk','A non-disclosure agreement signed by the tester'],
  'Confirm authority and scope for the supplier system. A request from an internal colleague does not establish authorization over another party\'s assets.')
 Q('An operator observes a suspected policy breach involving a colleague. The organization has a confidential reporting process, and no immediate safety action is required. Which route is appropriate?',

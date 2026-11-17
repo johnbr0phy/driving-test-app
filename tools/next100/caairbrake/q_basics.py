@@ -8,7 +8,7 @@ Q = [
  "The Official Air Brake Handbook warns that a single malfunctioning brake increases the work of all the others, so they overheat quickly and may fail too."),
 ("Before you take brake measurements after a long run, the brake assembly should be:",
  "Cool to the touch", ["Still slightly warm", "Wet with clean water", "Freshly greased"],
- "The handbook notes that brake assemblies should be cool to the touch before you attempt any brake measurements. Hot parts burn and also read differently."),
+ "The handbook notes that brake assemblies should be cool to the touch before you attempt any brake measurements. Drums also expand as they heat up."),
 ("Why are air brakes used on large commercial vehicles?",
  "They carry high force a long way", ["They never need any inspection", "They work with no delay at all", "They cost less to repair"],
  "Air brakes can develop and transmit high mechanical forces over great distances with simple parts and connections. They do have a split-second delay and must be inspected."),

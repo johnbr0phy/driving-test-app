@@ -39,7 +39,7 @@
     "optionD": "Freshly greased",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The handbook notes that brake assemblies should be cool to the touch before you attempt any brake measurements. Hot parts burn and also read differently."
+    "explanation": "The handbook notes that brake assemblies should be cool to the touch before you attempt any brake measurements. Drums also expand as they heat up."
   },
   {
     "type": "CAAIRBRAKE",
@@ -1951,10 +1951,10 @@
     "questionId": "CAAIR-INS-008",
     "category": "caairInspect",
     "question": "A brake lining has grease on it from a leaking wheel seal. The lining is:",
-    "optionA": "Fine once wiped",
-    "optionB": "Fine if thick enough",
-    "optionC": "A concern in rain only",
-    "optionD": "Defective",
+    "optionA": "Fine once it is wiped clean",
+    "optionB": "Defective only if also worn thin",
+    "optionC": "A concern only in wet weather",
+    "optionD": "Defective until it is repaired",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Grease or oil on the lining causes abnormal brake behaviour. The handbook says lining contaminated with grease or oil is defective."
@@ -2049,10 +2049,10 @@
     "questionId": "CAAIR-INS-015",
     "category": "caairInspect",
     "question": "A hose's outer cover is worn through to the reinforcing fabric, but no leak can be heard yet. The hose is:",
-    "optionA": "Fine until it leaks",
-    "optionB": "Fine if it is taped",
+    "optionA": "Defective only once it leaks",
+    "optionB": "Fine if it is wrapped in tape",
     "optionC": "Defective now",
-    "optionD": "Fine on a trailer",
+    "optionD": "A concern only on a trailer",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "When damage extends into the reinforcing or inner layer, the air line is defective. Damaged or worn lines are a concern even before a leak appears."
@@ -2063,10 +2063,10 @@
     "questionId": "CAAIR-INS-016",
     "category": "caairInspect",
     "question": "An air line was repaired with an ordinary hardware fitting not made for air brakes. This is:",
-    "optionA": "Fine if it does not leak",
-    "optionB": "Fine for one trip",
-    "optionC": "Fine on low-pressure lines",
-    "optionD": "Prohibited",
+    "optionA": "Allowed if it does not leak",
+    "optionB": "Prohibited only on the service line",
+    "optionC": "Allowed for one trip to a shop",
+    "optionD": "Prohibited on any air line",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Air brake systems need fittings specifically designed and approved for that use. Improper fittings or improper repairs are prohibited."

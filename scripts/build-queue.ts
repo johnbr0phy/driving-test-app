@@ -5,7 +5,10 @@
  *   npx tsx scripts/build-queue.ts --mark <id> --status pr|failed|skipped [--note "..."] [--id-base 28100]
  *
  * Every live test gets a score from the last 14 days of practice (answers),
- * paywall views and the last 60 days of purchases. A candidate in
+ * paywall views and purchases since PURCHASES_SINCE (Nov 10 2026, when Premium
+ * went on sale beyond the DMV; at most 60 days back), each purchase weighted by
+ * what it brought in dollars (a US $9.99 sale = 1.0, a $5 sale about 0.5; see
+ * lib/buildQueueScore.ts). A candidate in
  * tools/queue/backlog.json inherits the average score of the live tests it
  * names as `siblings` (same buyer, same exam body or the same kind of licence
  * in another country), scaled by `sells`, plus a boost when people searched the
@@ -32,6 +35,7 @@ import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
 import { regionOfTest } from "@/lib/region";
 import { isInternalEmail } from "@/lib/internal";
 import { buildSearchGroups } from "@/lib/server/searchGroups";
+import { WEIGHTS, liveScore, purchaseWeight, purchaseWindowStart } from "@/lib/buildQueueScore";
 
 interface Candidate {
   id: string;
@@ -67,7 +71,6 @@ const sumSince = (daily: Record<string, number> | undefined, from: string) =>
   Object.entries(daily ?? {}).reduce((s, [d, n]) => (d >= from && typeof n === "number" ? s + n : s), 0);
 
 const BACKLOG = "tools/queue/backlog.json";
-const WEIGHTS = { per100Answers: 1, perPaywallView: 1, perPurchase: 40, perSearch: 15 };
 
 async function mark(id: string) {
   const status = arg("status") as QueueState["status"];
@@ -99,12 +102,12 @@ async function main() {
   const only = (arg("only") ?? "").split(",").map((s) => s.trim()).filter(Boolean);
   const db = getAdminDb();
   const d14 = daysAgo(14);
-  const d60 = daysAgo(60);
+  const purchasesFrom = purchaseWindowStart();
 
   const [questions, paywalls, payments, stateSnap, search] = await Promise.all([
     db.doc("analytics/questions").get(),
     db.doc("analytics/paywalls").get(),
-    db.collection("payments").where("createdAt", ">=", d60).get(),
+    db.collection("payments").where("createdAt", ">=", purchasesFrom).get(),
     db.collection("buildQueue").get(),
     buildSearchGroups().catch(() => ({ groups: [] as Awaited<ReturnType<typeof buildSearchGroups>>["groups"] })),
   ]);
@@ -125,14 +128,12 @@ async function main() {
   }
   payments.forEach((doc) => {
     const p = doc.data();
-    if (p.status !== "succeeded" || isInternalEmail(p.email)) return;
+    if (isInternalEmail(p.email)) return;
     const row = live.get(p.exam || "dmv");
-    if (row) row.purchases++;
+    if (row) row.purchases += purchaseWeight(p, purchasesFrom);
   });
   for (const r of live.values()) {
-    r.score = Math.round(
-      (r.answers / 100) * WEIGHTS.per100Answers + r.views * WEIGHTS.perPaywallView + r.purchases * WEIGHTS.perPurchase,
-    );
+    r.score = liveScore(r);
   }
 
   // Families: the catalog's hub groups, for the report and for writing new candidates.
@@ -144,7 +145,7 @@ async function main() {
       tests: rows.length,
       answers: rows.reduce((s, r) => s + r.answers, 0),
       views: rows.reduce((s, r) => s + r.views, 0),
-      purchases: rows.reduce((s, r) => s + r.purchases, 0),
+      purchases: Math.round(rows.reduce((s, r) => s + r.purchases, 0) * 10) / 10,
       scorePerTest: rows.length ? Math.round(total / rows.length) : 0,
     };
   }).sort((a, b) => b.scorePerTest - a.scorePerTest);
@@ -216,7 +217,7 @@ async function main() {
     "",
     "## Families, best first (score per live test, last 14 days)",
     "",
-    "| Family | Tests | Answers | Paywall views | Purchases (60 days) | Score per test |",
+    "| Family | Tests | Answers | Paywall views | Purchases (price-weighted, since Nov 10 2026) | Score per test |",
     "| --- | --- | --- | --- | --- | --- |",
     ...families.slice(0, 25).map((f) => `| ${f.family} | ${f.tests} | ${f.answers} | ${f.views} | ${f.purchases} | ${f.scorePerTest} |`),
     "",

@@ -11203,6 +11203,11 @@ html.sam-on main > :is(.flex-1.bg-gray-50, .flex-1.bg-white, .v2-shell),
 html.sam-on main > * > :is(.flex-1.bg-gray-50, .flex-1.bg-white, .v2-shell) {
   background-color: transparent !important;
 }
+/* The search homepage paints its search section white; let the show through
+   and match the layer to that white so the page looks the same. */
+html.sam-on [data-search-home] { background-color: transparent !important; }
+html.sam-on:has([data-search-home]) .sam-bg { background-color: #fff; }
+html.dark.sam-on:has([data-search-home]) .sam-bg { background-color: #030712; }
 html.sam-on main { position: relative; z-index: 2; }
 html.sam-on header:not(main header):not(.sticky),
 html.sam-on footer:not(main footer) { position: relative; z-index: 1; }

@@ -5,10 +5,13 @@ import { Variations, VariationFrame } from "@/components/admin/Variations";
 import { twoProportionP } from "@/lib/guestPromptTest";
 import {
   LANDING_TRY_ENGAGED,
+  LANDING_TRY_MILESTONES,
   LANDING_TRY_MIN_LIFT,
   LANDING_TRY_TARGET_PER_ARM,
   LANDING_TRY_TEST_ID,
+  landingTryMeans,
   landingTryResult,
+  type LandingTryAnswerCounts,
   type LandingTryArm,
   type LandingTryCounts,
 } from "@/lib/landingTryTest";
@@ -22,6 +25,8 @@ type Payload = {
   since: string | null;
   arms: Partial<Record<LandingTryArm, LandingTryCounts>>;
   byExam: Record<string, Partial<Record<LandingTryArm, LandingTryCounts>>>;
+  answers?: Partial<Record<LandingTryArm, LandingTryAnswerCounts>>;
+  answersSince?: string | null;
 };
 
 const H2 = "text-base font-semibold text-gray-900 dark:text-gray-50";
@@ -59,6 +64,11 @@ export function LandingTryTestCard() {
     .filter((e) => e.n1 + e.n2 >= 40)
     .sort((a, b) => b.n1 + b.n2 - (a.n1 + a.n2))
     .slice(0, 10);
+  const ansCard = live ? data.answers?.card ?? {} : {};
+  const ansControl = live ? data.answers?.control ?? {} : {};
+  const hasAnswers = (ansCard.enrolled ?? 0) + (ansControl.enrolled ?? 0) > 0;
+  const m = landingTryMeans(ansCard, ansControl);
+  const fmt = (x: number) => x.toFixed(1);
 
   return (
     <div className={`${CARD} mb-3 sm:mb-4`}>
@@ -113,6 +123,66 @@ export function LandingTryTestCard() {
           </tbody>
         </table>
       </TableScroll>
+      {hasAnswers && (
+        <div className="mt-4">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-50">How many questions they answered</h3>
+          <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+            New visitors since {data.answersSince?.slice(0, 10) ?? "answer counting began"} only ({ansCard.enrolled ?? 0} with the question,{" "}
+            {ansControl.enrolled ?? 0} without), each counted up to 7 days after landing. The last few answers of a visit can arrive late, when the
+            page is hidden.
+          </p>
+          <TableScroll className="mt-2">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-xs text-gray-500 dark:text-gray-400">
+                  <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Answers within 7 days</th>
+                  <th className={TH}>With question</th>
+                  <th className={TH}>Without</th>
+                  <th className={TH}>Difference</th>
+                  <th className={TH}>Chance</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                <tr className={`${ROW} text-gray-900 dark:text-gray-50`}>
+                  <td className={`py-2 pr-2 ${STICKY_COL}`}>Average per new visitor</td>
+                  <td className={TD}>{fmt(m.card)}</td>
+                  <td className={TD}>{fmt(m.control)}</td>
+                  <td className={`${TD} font-semibold`}>
+                    {m.card >= m.control ? "+" : ""}
+                    {fmt(m.card - m.control)}
+                  </td>
+                  <td className={TD}>{ansCard.enrolled && ansControl.enrolled ? pFmt(m.p) : ""}</td>
+                </tr>
+                <tr className={`${ROW} text-gray-900 dark:text-gray-50`}>
+                  <td className={`py-2 pr-2 ${STICKY_COL}`}>
+                    Average per visitor who answered
+                    <span className="ml-1 text-xs text-gray-500 dark:text-gray-400">(any)</span>
+                  </td>
+                  <td className={TD}>{fmt(m.cardPerAnswerer)}</td>
+                  <td className={TD}>{fmt(m.controlPerAnswerer)}</td>
+                  <td className={TD} />
+                  <td className={TD} />
+                </tr>
+                {LANDING_TRY_MILESTONES.map((k) => (
+                  <tr key={k} className={`${ROW} text-gray-900 dark:text-gray-50`}>
+                    <td className={`py-2 pr-2 ${STICKY_COL}`}>Answered {k}+</td>
+                    <td className={TD}>
+                      {ansCard.reached?.[k] ?? 0}{" "}
+                      <span className="text-gray-500 dark:text-gray-400">({pct(ansCard.reached?.[k], ansCard.enrolled)})</span>
+                    </td>
+                    <td className={TD}>
+                      {ansControl.reached?.[k] ?? 0}{" "}
+                      <span className="text-gray-500 dark:text-gray-400">({pct(ansControl.reached?.[k], ansControl.enrolled)})</span>
+                    </td>
+                    <td className={TD} />
+                    <td className={TD} />
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </TableScroll>
+        </div>
+      )}
       {exams.length > 0 && (
         <details className="mt-3">
           <summary className="cursor-pointer text-sm font-semibold text-gray-900 dark:text-gray-50">First answers by exam (40+ new visitors)</summary>

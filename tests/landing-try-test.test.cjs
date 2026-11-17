@@ -56,3 +56,17 @@ test("init script uses the same storage key and test id as the module", () => {
   assert.ok(LANDING_TRY_INIT_SCRIPT.includes(`k=${JSON.stringify(LANDING_TRY_STORAGE_KEY)}`));
   assert.ok(LANDING_TRY_INIT_SCRIPT.includes(`t=${JSON.stringify(LANDING_TRY_TEST_ID)}`));
 });
+
+test("answers per visitor: means and a Welch test from totals and squares", () => {
+  const { landingTryMeans } = require("../lib/landingTryTest.ts");
+  // Card: four browsers with 0, 1, 5, 10 answers. Control: 0, 0, 2, 2.
+  const card = { enrolled: 4, total: 16, sq: 0 + 1 + 25 + 100, reached: { 1: 3, 3: 2, 5: 2, 10: 1 } };
+  const control = { enrolled: 4, total: 4, sq: 8, reached: { 1: 2 } };
+  const m = landingTryMeans(card, control);
+  assert.strictEqual(m.card, 4);
+  assert.strictEqual(m.control, 1);
+  assert.ok(Math.abs(m.cardPerAnswerer - 16 / 3) < 1e-9);
+  assert.strictEqual(m.controlPerAnswerer, 2);
+  assert.ok(m.p > 0 && m.p < 1);
+  assert.strictEqual(landingTryMeans({}, {}).p, 1);
+});

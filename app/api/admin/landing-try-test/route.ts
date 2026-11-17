@@ -16,7 +16,14 @@ export async function GET(request: NextRequest) {
       refresh: wantsRefresh(request),
       build: async () => {
         const d = (await getAdminDb().doc('analytics/landingTryTest').get()).data() ?? {};
-        return { test: d.test ?? null, since: d.since ?? null, arms: d.arms ?? {}, byExam: d.byExam ?? {} };
+        return {
+          test: d.test ?? null,
+          since: d.since ?? null,
+          arms: d.arms ?? {},
+          byExam: d.byExam ?? {},
+          answers: d.answers ?? {},
+          answersSince: d.answersSince ?? null,
+        };
       },
     });
     return cachedJson(payload, cache, at);

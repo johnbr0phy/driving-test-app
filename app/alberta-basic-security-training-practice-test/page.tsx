@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "What score do I need to pass?",
-    a: "You need 80% or higher. Alberta does not publish the number of questions or the time limit, so ask your training provider. Under the Ministry's exam process, a candidate who fails may rewrite the exam as many times as needed for up to two years from the start of their training course, arranged through their training provider. Each mock test here has 50 questions with 40 to pass.",
+    a: "You need 80% or higher. Alberta does not publish the number of questions or the time limit, so ask your training provider. Under the Ministry's exam process, a candidate who fails may rewrite the exam as many times as needed for up to two years from the start of their training course; alberta.ca says to contact Security Programs about rewrites. Each mock test here has 50 questions with 40 to pass.",
   },
   {
     q: "Who needs an Alberta security licence?",

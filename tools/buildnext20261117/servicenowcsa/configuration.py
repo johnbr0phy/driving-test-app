@@ -1,35 +1,79 @@
-"""Original instance-configuration decisions."""
-ITEMS=[]
-def group(o,rows):
- for k,(s,e) in enumerate(rows):ITEMS.append((s,[o[k]]+[v for j,v in enumerate(o) if j!=k],e))
-group(['Check the existing activation status','Review the required dependencies','Request provider activation','Validate in a non-production instance'],[
-('A team requests a feature plugin, but another administrator may already have enabled it. What should be checked before planning another activation?', 'Confirm the current activation status first. A missing menu or an unfamiliar feature does not prove the plugin is inactive.'),
-('An application’s installation information lists prerequisite components. What should be evaluated before the installation is approved?', 'Review prerequisites and dependencies so the intended installation has the required supporting components.'),
-('A required plugin is not available for self-activation in Application Manager. The documented route requires ServiceNow personnel. Which action fits?', 'Use the supported provider activation request. Creating an unrelated application does not activate the unavailable plugin.'),
-('An approved feature changes an existing business process. The team has a suitable test instance and needs evidence of its effect before production adoption. Which activity fits?', 'Validate the feature and relevant workflows in non-production before the authorized production rollout.')])
-group(['A personal display preference','A shared instance branding change','A shared form-view configuration','A conditional form behavior rule'],[
-('One user wants a different supported display preference for their own sessions, without changing colleagues’ screens. Which configuration scope fits?', 'A personal preference changes the individual experience, rather than shared instance branding or form layout.'),
-('The organization wants its approved logo to appear in the unified navigation for users of the instance. Which type of configuration is needed?', 'Instance branding changes the shared identity of the experience rather than an individual record’s field behavior.'),
-('A support team needs an approved form arrangement that shows a defined set of fields in a named view. Which type of configuration fits?', 'A shared form-view configuration establishes the presentation for that view; it does not itself enforce data access.'),
-('A form should make a justification field mandatory only when the user selects a specific request type. Which type of configuration fits this presentation requirement?', 'A conditional form behavior rule, such as a suitable UI policy, changes field behavior when its condition is met.')])
-group(['Impersonate the affected user','Elevate an assigned privileged role','End the impersonation session','Review the user’s granted access'],[
-('An authorized administrator needs to reproduce a reported interface problem under a particular user’s effective experience. Which supported diagnostic action fits?', 'Authorized impersonation helps reproduce the user experience. It is a testing tool, not a reason to assume the administrator’s normal permissions apply.'),
-('An administrator is assigned an elevated privilege role but has not yet activated it for the current work. Which action acknowledges and enables that privilege for the session?', 'Elevation activates the assigned elevated privilege rather than impersonating another user.'),
-('A diagnostic session under another user is complete, and the administrator must resume work under their own identity. Which action should occur?', 'End impersonation before continuing unrelated administration so actions use the intended identity.'),
-('A user consistently lacks a capability that colleagues in the same job need. The administrator must determine whether approved roles or group grants are missing. Which review addresses this?', 'Review granted access and its approved basis. Impersonation can reproduce symptoms but does not itself correct an entitlement.')])
-group(['Confirm the intended application scope','Select the intended current update set','Confirm the target environment','Check the installed application version'],[
-('A new application resource must belong to the finance application rather than the global context. Which setting should be confirmed before creating it?', 'Confirm the application scope so the resource is created in the intended application context.'),
-('An administrator has several local change packages and wants new tracked configuration changes captured in a particular one. Which context should be selected?', 'The current update set determines the package that captures eligible configuration changes.'),
-('An approved change is authorized for the test instance only. Before applying it, which context prevents accidentally acting on production?', 'Confirm the target environment and instance address before making the authorized change.'),
-('A feature documented for a newer application build is absent from an otherwise correctly configured installation. Which installed-state detail should be compared with the documentation?', 'Check the installed application version and supported feature availability before treating the absence as a navigation failure.')])
-group(['Compare personal and shared settings','Test with the intended user context','Check activation and prerequisites','Confirm the documented UI context'],[
-('A layout change appears for its author but not for colleagues using the same view and equivalent permissions. Which distinction should be investigated?', 'Determine whether the author changed personal settings or shared configuration. A personal change need not affect colleagues.'),
-('A configuration passes testing while signed in as admin, but ordinary agents still cannot complete the workflow. Which validation gap should be closed?', 'Test under the intended user context and approved access rather than assuming admin success represents every user.'),
-('A newly installed application has a missing feature that the vendor lists as dependent on another component. Which installation detail needs investigation?', 'Check prerequisite activation and supported dependencies before attempting unrelated form changes.'),
-('An instruction describes a classic form control, but the user is working in a workspace with a different supported interface. Which distinction should be checked?', 'Confirm the UI context and its supported controls. Classic and workspace experiences need not expose identical controls in identical locations.')])
-group(['Document the intended behavior','Apply the approved configuration','Test the acceptance criteria','Record the resulting configuration'],[
-('A request says only “make the instance easier to use,” with no agreed users, screens or expected outcome. Which configuration task should come first?', 'Clarify and document the intended behavior so the change can be designed and evaluated against a concrete requirement.'),
-('A scoped change is designed, tested in development and approved for the designated configuration environment. Which task now implements the agreed settings?', 'Apply the approved configuration within its authorized scope and process.'),
-('The administrator has saved the change, but has not checked that the required user interaction actually works. Which task establishes whether the change achieved its purpose?', 'Test the agreed acceptance criteria. A saved configuration record is not proof of correct user behavior.'),
-('A configuration has passed its acceptance checks. The support team needs an accurate reference for future maintenance and troubleshooting. Which closeout task provides it?', 'Record the implemented configuration and relevant decisions so later administrators can understand the resulting state.')])
+"""Original instance-configuration decisions.
+
+Each item: (stem, [key, wrong, wrong, wrong], explanation). Key first; build.py rotates.
+"""
+ITEMS=[
+('A team asks for a plugin to be turned on, but another administrator may already have done it. What should be done before planning another activation?',
+ ['Check whether it is already active','Submit an activation request to ServiceNow','Retrieve an update set with the plugin','Create a scoped app with the same name'],
+ 'Confirm the current activation status first: a missing menu entry does not prove the plugin is inactive. A request to ServiceNow is only needed when it is not active and cannot be self-activated.'),
+('The details page for an application lists other plugins it needs. What should be reviewed before installing it?',
+ ['Its required dependencies','The ACLs on its tables','The form views it adds','Its default update set'],
+ 'Prerequisites and dependencies must be present for the application to install and work as documented. Its ACLs and views come with it and are reviewed after installation.'),
+('A plugin cannot be activated from the instance by the administrator, and the documentation says ServiceNow must turn it on. What should the administrator do?',
+ ['Request the plugin through ServiceNow support','Activate it from System Definition > Plugins','Import it through an import set','Copy it from another instance in an update set'],
+ 'Plugins that are not available for self-activation are requested from ServiceNow. Import sets load data and update sets move configuration, neither installs a plugin.'),
+('An approved plugin changes an existing business process. A sub-production instance is available. What should happen before it is activated in production?',
+ ['Validate its effect on a non-production instance','Activate it in production during a quiet hour','Clone production over the sub-production instance','Ask users to report any problems after go-live'],
+ 'Validating on a non-production instance shows how the plugin affects existing processes before production users meet it.'),
+('One agent wants the list text to appear more compact in her own sessions without changing the layout for anyone else. What should she change?',
+ ['A setting in her own preferences','A system property for list density','The list layout for the incident table','The form view for her group'],
+ 'A personal preference changes only that user\'s experience. System properties and shared list layouts change it for everyone.'),
+('Marketing wants the company logo in the header of every user\'s screen. What kind of change is this?',
+ ['An instance branding change','A personal user preference','A form layout change','A UI policy on the user table'],
+ 'The logo is part of the instance\'s shared branding, which every user sees. A personal preference affects only one user, and form layouts and UI policies control fields.'),
+('A support team needs a named arrangement of incident fields, called Triage, that shows only the fields they use. What should be configured?',
+ ['A form view called Triage','A UI policy called Triage','A personal list layout','A new incident table'],
+ 'A form view defines a named arrangement of fields and sections. Views control presentation, not access, so they do not hide data from other channels.'),
+('A justification field must become mandatory only when the request type is Hardware, and this should be done without code. Which tool fits?',
+ ['A UI policy with a condition','An onLoad client script','A before business rule','A dictionary override on the field'],
+ 'A UI policy can set a field mandatory, read-only or hidden when its condition is true, without scripting. A client script would need code, and a business rule runs on the server after the user submits.'),
+('An authorized administrator needs to see exactly what one agent sees in order to reproduce a reported problem. Which feature fits?',
+ ['Impersonate User from the user menu','Elevate Role from the user menu','Add the agent\'s roles to the admin','Open the agent\'s user record'],
+ 'Impersonation lets an authorized administrator use the instance as another user to reproduce their experience. Elevating a role adds privilege to the administrator\'s own session instead.'),
+('An administrator has the security_admin role assigned but must activate it before editing an ACL. Which action does that?',
+ ['Elevate Role in the user menu','Impersonate a user with that role','Switch the application scope','Log out and log back in'],
+ 'security_admin is an elevated privilege role that must be activated for the session with Elevate Role. Impersonating another user does not activate the administrator\'s own assigned role.'),
+('After testing a problem as another user, an administrator needs to continue work under her own identity. What should she do?',
+ ['End impersonation','Elevate her own role','Change the current update set','Clear the list filter'],
+ 'Ending impersonation returns the session to the administrator\'s own identity so later actions are made as her.'),
+('A user cannot perform a task that colleagues in the same job can. Impersonation reproduced the problem. What should the administrator review next?',
+ ['The user\'s roles and group memberships','The user\'s Favorites and History','The form view the user has selected','The current application scope of the user'],
+ 'Impersonation reproduces symptoms but does not fix them. Comparing the user\'s roles and groups with colleagues\' shows whether an approved grant is missing.'),
+('A new table must belong to the Finance application, not to Global. What should be confirmed before creating it?',
+ ['The current application scope is Finance','The current update set is named Finance','The table label starts with Finance','The admin is in the Finance group'],
+ 'The current application scope decides which application a new application file belongs to. An update set name or a label does not change the owning application.'),
+('An administrator has several in-progress update sets and wants the next configuration changes captured in one of them. What must be set?',
+ ['The current update set','The current application scope','The update set\'s Complete state','The import set row filter'],
+ 'Configuration changes are recorded in the update set that is currently selected for the session.'),
+('A change is approved for the test instance only. What should the administrator check before applying it to avoid touching production?',
+ ['The URL in the browser address bar','The form view that is selected','The time zone in her preferences','The name of the current update set'],
+ 'The instance address shows which environment is open. An update set name does not stop a change being made on production.'),
+('A feature described in the documentation for a newer version is missing on an instance where everything else is configured. What should be compared with the documentation?',
+ ['The installed application or family version','The administrator\'s personal preferences','The column layout of the incident list','The version of the user\'s web browser'],
+ 'Features can depend on the installed version. Comparing it with the documentation shows whether the feature should be there at all.'),
+('A list layout change shows for the administrator who made it, but colleagues with the same roles still see the old columns. What is the likely cause?',
+ ['She personalized her own list, not the shared layout','A read ACL on each column hides them from others','The colleagues are logged in to another instance','A business rule reverted the change for others'],
+ 'Personalizing a list affects only that user, while configuring the list layout changes it for everyone. The symptom fits a personal change.'),
+('A catalog change works when tested as an admin, but agents without admin cannot complete it. What testing gap should be closed?',
+ ['Test while impersonating a typical agent','Test again as admin with a new update set','Test in a different browser as admin','Test with the security_admin role elevated'],
+ 'An admin passes many access checks a normal agent does not. Testing as the intended user shows the real experience.'),
+('A newly installed application is missing a feature, and its documentation says that feature needs another plugin. What should be checked?',
+ ['Whether that plugin is active','The form view of the application','Its business rules\' order values','The admin\'s list personalization'],
+ 'A feature that depends on another plugin will not appear until that plugin is active. Form views and list layouts do not supply missing components.'),
+('Instructions describe a control on the classic incident form, but the agent works in Service Operations Workspace and cannot find it. What should be checked?',
+ ['Which interface the instructions were written for','Whether the agent has a read ACL on incident','Whether the incident list has a filter applied','Whether the related update set was committed'],
+ 'Classic forms and workspaces do not show the same controls in the same places. Confirm that the instructions match the interface the agent is using.'),
+('A request says only "make the instance easier to use" with no users, screens or outcome named. What should come first?',
+ ['Agree and write down the specific requirement','Create a UI policy for the incident form','Change the list layout for every user','Activate a new user interface plugin'],
+ 'Without a concrete requirement there is nothing to design or test against. Building a UI policy or activating a plugin first would be guesswork.'),
+('A form change was designed, tested in development and approved. What is the next step?',
+ ['Promote it along the agreed instance path','Rewrite it as a client script first','Ask users to try it in production first','Remove it from its update set to save it'],
+ 'Approved changes are promoted through the agreed instance path, usually in an update set, so the same tested change reaches each instance.'),
+('An administrator saved a new UI policy but has not opened the form to see whether the field really becomes mandatory. What is still needed?',
+ ['Check it against the acceptance criteria','Add a client script to back it up','Move it straight to production','Mark the update set as Complete'],
+ 'Saving a configuration record does not prove the form behaves as required. Testing the agreed behavior does.'),
+('A configuration passed acceptance testing. Support staff will need to understand it when they troubleshoot later. What closes the work?',
+ ['Document the decisions and final setup','Delete the update set that was used','Clear the UI policy description field','Reset the administrator\'s preferences'],
+ 'Documenting the configuration and decisions lets later administrators understand the result. Deleting records or descriptions removes that history.'),
+]
 assert len(ITEMS)==24

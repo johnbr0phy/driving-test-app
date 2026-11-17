@@ -1,25 +1,55 @@
-"""Original platform-navigation situations, not copied UI trivia."""
-ITEMS=[]
-def group(o,rows):
- for k,(s,e) in enumerate(rows):ITEMS.append((s,[o[k]]+[v for j,v in enumerate(o) if j!=k],e))
-group(['Open Favorites','Open History','Open Workspaces','Use the navigation filter'],[
-('An analyst deliberately saved several frequently used pages and now wants that curated set, rather than every recently visited page. Which navigation choice fits?', 'Favorites contains items the user has marked for convenient return. History reflects activity rather than an intentionally curated set.'),
-('A user opened a record earlier today but did not bookmark it and cannot remember its number. Which navigation area is intended to help retrace that activity?', 'History records activity across the instance and can help return to recently used pages.'),
-('An agent has access to a dedicated operational workspace and wants to enter that experience from the unified header. Which menu serves that purpose?', 'The Workspaces menu lists available workspaces, subject to access and instance configuration.'),
-('An administrator knows part of a module name and wants to locate its navigation entry quickly. Which control should narrow the available menu entries?', 'The navigation filter locates modules and menu entries; it is distinct from searching record contents across the instance.')])
-group(['Inspect a list of records','Open one record’s form','Search across the instance','Review personal preferences'],[
-('A coordinator needs to compare the numbers, priorities and assignment groups of many incidents in rows before opening any one incident. Which interaction fits?', 'A list presents multiple records and selected columns for comparison and filtering.'),
-('A technician needs to inspect and edit the fields of one selected incident, including information not shown in the list columns. Which interaction fits?', 'A form presents an individual record for detailed viewing and editing, subject to permissions.'),
-('A user has a distinctive phrase but does not know which available application contains the relevant record. Which interaction is designed for a broader search?', 'Global search searches across the instance according to supported sources and access. A module filter searches navigation entries instead.'),
-('A user wants to change their own display and accessibility settings without configuring everyone’s experience. Which area fits?', 'Personal preferences govern the user’s own supported settings, rather than a shared instance configuration.')])
-group(['Check the current instance','Check the current application scope','Check the effective user identity','Check the selected view'],[
-('A tester cannot find a newly created test record and notices that the browser address points to production rather than the test environment. Which context explains the discrepancy?', 'The instance identifies the environment being used. Records in a test environment are not automatically the same as production records.'),
-('A developer is about to add an application resource but the selected context belongs to a different application. Which context should be corrected before creating it?', 'The current application scope determines the application context for the work. Navigation to a page alone does not establish the intended scope.'),
-('An administrator is reproducing a user issue and finds that the session still represents a previously impersonated colleague. Which context must be corrected?', 'The effective user identity determines whose experience and access are being exercised during impersonation.'),
-('Two authorized users open the same record but see different arrangements of fields. Permissions are already confirmed equivalent. Which presentation context should be compared?', 'Different views can present different subsets or arrangements of fields on the same underlying record.')])
-group(['A navigation-access issue','A record-access issue','A saved-filter issue','A personalization issue'],[
-('A user can open an authorized page by its approved direct link but cannot find the corresponding menu entry. What should the administrator investigate first?', 'Investigate the navigation entry and its access/configuration. Successful direct access means the missing menu alone does not establish a record ACL denial.'),
-('A menu entry is visible, but opening a particular protected record is denied. What kind of issue should be investigated rather than merely adding another menu link?', 'Record authorization is separate from navigation visibility. A visible link does not grant access to the protected data.'),
-('A list contains fewer records than expected, and its active conditions exclude the missing records. The user has confirmed read permission. What explains the immediate result?', 'The active filter narrows the displayed records. Permission to read a record does not force it to match the list conditions.'),
-('Only one user sees an unusual column arrangement, and resetting that user’s list preferences restores the shared arrangement. What kind of issue was demonstrated?', 'The observed change follows the user’s personalization rather than a shared table or access-rule change.')])
+"""Original platform-navigation situations, not copied UI trivia.
+
+Each item: (stem, [key, wrong, wrong, wrong], explanation). Key first; build.py rotates.
+"""
+ITEMS=[
+('An analyst bookmarked a handful of pages she opens every morning and wants only that hand-picked set, not every page she has opened. Where in the Next Experience header should she look?',
+ ['The Favorites menu','The History menu','The All menu','The Workspaces menu'],
+ 'Favorites holds the items a user has deliberately starred for quick return. History lists recent activity whether or not the user chose to keep it, and the All menu lists every module the user can reach.'),
+('A user opened an incident an hour ago, did not star it and cannot remember its number. Which header menu is designed to retrace pages and records visited recently?',
+ ['History','Favorites','Admin','Global search'],
+ 'History records recently visited pages and records so a user can go back to them. Favorites only contains items the user starred, and global search needs words to look for.'),
+('An agent who has the right roles wants to open the dedicated agent experience for service operations from the unified navigation header. Which menu lists the experiences of that kind open to him?',
+ ['Workspaces','All','Favorites','Help'],
+ 'The Workspaces menu lists the workspaces a user can open, subject to access. The All menu lists application modules rather than the workspace experiences.'),
+('An administrator remembers that a module is called something like "Dictionary" and wants to jump to it from the application list. What is the quickest way to narrow the entries in the All menu?',
+ ['Type into the All menu filter','Run a global search for the word','Open the History menu','Star the System Definition application'],
+ 'Typing into the All menu filter narrows the menu to matching applications and modules. Global search looks inside records, not menu entries.'),
+('A coordinator needs to compare number, priority and assignment group across many incidents at once before opening any of them. Which interface shows them side by side?',
+ ['The incident list','The incident form','A related list on one incident','The activity stream'],
+ 'A list shows many records in rows with selected columns for comparison and filtering. A form shows one record, and a related list shows only records tied to that one record.'),
+('A technician must review and edit every field of one incident, including fields that are not columns in the list. Which interface fits?',
+ ['The incident form','The incident list','A list report on Incident','The list editor in a cell'],
+ 'The form presents a single record for detailed viewing and editing, subject to permissions. The list editor changes one cell at a time and shows only the list columns.'),
+('A user remembers a distinctive phrase from a record but not which application or table holds it. Which feature looks for that phrase in records from every application?',
+ ['Global search in the header','The filter at the top of the All menu','A list filter on the incident table','A search of the Favorites menu'],
+ 'Global search looks across the instance for matching records according to its configured sources and the user\'s access. The All menu filter only narrows module names, and a list filter searches one table.'),
+('A user wants larger text and a different theme for their own sessions without changing what colleagues see. Where should they make the change?',
+ ['Their user preferences in the user menu','The System Properties module','The form layout of the user table','The instance theme in Theme Builder'],
+ 'User preferences change that one user\'s supported settings. System properties and instance themes are shared configuration that affects other users.'),
+('A tester cannot find a record he just created, then notices the browser address is the production URL rather than the test URL. What explains the missing record?',
+ ['He is working on a different instance','He is in the wrong application scope','He is impersonating another user','He has the wrong form view selected'],
+ 'Each instance is a separate environment with its own records. A record created on the test instance does not appear on production, whatever the scope, user or view.'),
+('A developer is about to create a table for the Facilities app, but the scope picker in the header still shows Global. What must be changed first?',
+ ['The current application scope','The current update set only','The form view of the table','The impersonated user'],
+ 'The current application scope decides which application a new table or other application file belongs to. An update set captures changes but does not change the application they belong to.'),
+('While reproducing a ticket, an administrator notices that the header still shows a colleague\'s name from an earlier test. What must be ended before continuing other work?',
+ ['The impersonation session','The elevated security_admin role','The current update set','The selected application scope'],
+ 'Impersonation makes the session act as the impersonated user. Ending impersonation returns the session to the administrator\'s own identity before unrelated work.'),
+('Two agents with the same roles open the same incident, but each sees a different arrangement of fields. Which setting should be compared first?',
+ ['The form view each one has selected','The ACLs on the incident table','The application scope of each session','The instance each one is logged in to'],
+ 'Views present different arrangements of fields on the same record. Since the roles match, access rules are less likely to explain the difference, and views are not a security control.'),
+('A user can open an approved page from a direct link but cannot find its entry anywhere in the All menu. What should the administrator check first?',
+ ['The application menu or module settings','The read ACL on the target table','The user\'s saved list filter','The user\'s personalized list columns'],
+ 'Since the page opens from the link, record access is working. A missing menu entry points to the module or application menu configuration, such as its roles or active setting.'),
+('A module is visible in the All menu, but opening one confidential record gives a security message. What should the administrator investigate?',
+ ['The ACLs that control access to that record','The module\'s roles in the application menu','The order of entries in the user\'s Favorites','The column layout of the incident list'],
+ 'Seeing a module does not grant access to the records behind it. Record access is controlled by access control rules, which are checked separately.'),
+('A user reports that the incident list is missing records. The breadcrumb shows Active = true and the missing records are closed. The user has read access. What explains the result?',
+ ['The list filter conditions','A read ACL on closed incidents','A personalized column layout','A different form view'],
+ 'The list filter, shown in the breadcrumb, limits which records appear. Read access only means a record may be shown if it matches the filter.'),
+('Only Maria sees an unusual set of columns on the incident list, and Reset to column defaults restores the usual columns for her. What caused the difference?',
+ ['Her own personalization of the list','A change to the shared list layout','A list control setting for the table','An ACL hiding the other columns'],
+ 'Resetting to column defaults clears the user\'s own list personalization. A change to the shared list layout or an ACL would affect other users too.'),
+]
 assert len(ITEMS)==16

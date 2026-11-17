@@ -1,41 +1,79 @@
-ITEMS=[]
-def group(o,rows):
- for k,(s,e) in enumerate(rows): ITEMS.append((s,[o[k]]+[v for j,v in enumerate(o) if j!=k],e))
-group(['UI policy','Client script','Business rule','Update set'],[
- ('A form must make a justification field mandatory when a checkbox is selected. The requirement is conditional field behavior that can be configured without code. Which mechanism fits?', 'A UI policy can conditionally set mandatory, visible and read-only behavior without custom code.'),
- ('An administrator needs custom browser-side logic to recalculate a displayed field immediately after another field changes. Which mechanism fits the specified execution location?', 'A client script runs in the browser and can respond to field changes. This is not a substitute for server-side authorization.'),
- ('A custom calculation must execute on the server before a record is saved, regardless of the form presentation. Which mechanism fits?', 'A before business rule can run server-side logic before a database operation.'),
- ('A completed collection of captured configuration changes must move from a development instance to a test instance. Which mechanism packages those changes?', 'An update set groups captured configuration changes for transfer between instances.'),
-])
-group(['Before business rule','After business rule','Async business rule','Display business rule'],[
- ('A server-side rule must normalize a value on the current record before its pending database update is written. Which timing fits?', 'Before rules execute before the database operation and can adjust the current record for that operation.'),
- ('A related-record action must run synchronously after the current database update has completed. Which business-rule timing matches both requirements?', 'After rules run after the database operation. Async rules do not satisfy the stated synchronous requirement.'),
- ('A non-urgent server task should be queued for background processing after an update rather than make the user wait for its completion. Which timing fits?', 'Async rules run through background processing. Their execution order should not be assumed when several updates occur.'),
- ('A server rule must prepare information as a record is retrieved for display on a form. Which timing fits?', 'Display business rules run when a record is loaded for display, allowing server-side preparation for the form.'),
-])
-group(['Review the migration path','Compare instance versions','Split an oversized change package','Apply a clear naming convention'],[
- ('Two developers propose transferring the same customization to production separately from different source instances. Which planning issue should be addressed first?', 'A consistent development-to-test-to-production path avoids moving the same update set from multiple sources.'),
- ('A customization depends on platform behavior that may differ between the source and target releases. Which preparation step most directly addresses that concern?', 'Checking source and target versions identifies compatibility risks; moving changes between different versions can introduce problems.'),
- ('One proposed update set combines unrelated schema work and several major workflow revisions, making review difficult. Which planning change best targets this problem?', 'Smaller focused update sets are easier to review and process than large unrelated packages.'),
- ('Support staff cannot tell which of several similarly titled update sets is the follow-up fix for a particular incident. Which process change addresses this identification problem?', 'Clear names and sequence identifiers help reviewers associate update sets with their purpose and intended order.'),
-])
-group(['onLoad','onChange','onSubmit','onCellEdit'],[
- ('A browser-side form script must initialize a message when the form is first rendered, before the user enters data. Which client-script type matches that event?', 'onLoad runs when the form is initially rendered.'),
- ('A form must recalculate a displayed estimate when the user changes its quantity field. Which client-script event matches that interaction?', 'onChange responds to a specified field changing on the form.'),
- ('A browser-side check should run when the user attempts to submit a form and may cancel that form submission. Which client-script type matches?', 'onSubmit runs for form submission and can return false to cancel it. Server-side enforcement remains a separate concern.'),
- ('A supported list editor needs client-side validation when a user edits a cell directly, rather than opening the form. Which client-script type matches?', 'onCellEdit is the client-script type associated with changes made in the list editor.'),
-])
-group(['Inspect preview conflicts','Check missing dependencies','Inspect the commit log','Test the migrated behavior'],[
- ('An update-set preview reports that the target already contains a competing change to the same configuration record. What is the most relevant next investigation?', 'Preview conflicts must be reviewed and resolved before committing the retrieved update set.'),
- ('A customization references an application component that is absent from the target instance. What should be investigated before treating the package as ready to apply?', 'Required components must be present; a successful transfer alone does not supply every dependency.'),
- ('An update-set commit has finished with errors. The administrator needs the recorded details of what failed during that operation. Where should the investigation focus?', 'The commit log records information and errors associated with applying the update set.'),
- ('A configuration package committed without errors, but acceptance criteria require the target form to behave correctly for a normal user. What check is still required?', 'A clean commit does not establish functional correctness. Test the intended behavior in the target environment.'),
-])
-o=['Browser-side form feedback','Server-side record validation','Captured configuration transfer','Imported business-data mapping']
-for s,k,e in [
- ('A change needs immediate feedback while a user edits a form and a separate validation rule before a record is stored. Which two concerns must be addressed? Choose two.',[0,1], 'Form feedback belongs to the browser experience; server validation protects the record operation independently of that experience.'),
- ('A release includes a server-side validation rule and the transfer of its captured configuration to a test instance. It does not load external records or alter form feedback. Which two concerns apply? Choose two.',[1,2], 'The requirements cover server validation and configuration transfer, not client feedback or an external data import.'),
- ('A rollout moves captured form configuration to another instance and separately maps a supplier file into business records. Which two concerns apply? Choose two.',[2,3], 'Configuration migration and business-data mapping are distinct tasks; a configuration package is not a substitute for the data import.'),
- ('An administrator improves messages shown while users edit a form and maps an incoming asset file into target records. No configuration transfer or new server validation rule is requested. Which two concerns apply? Choose two.',[3,0], 'The stated work is browser-side feedback and imported-data mapping.'),
-]: ITEMS.append((s,o,e,k))
+"""Original migration and scripting-location cases.
+
+Single items: (stem, [key, wrong, wrong, wrong], explanation). Multi items add a list of key indices.
+"""
+ITEMS=[
+ ('A justification field must become mandatory when a checkbox is ticked on the form, and the team wants to do it without writing code. Which tool fits?',
+  ['A UI policy','A client script','A business rule','An ACL'],
+  'A UI policy can set a field mandatory, visible or read-only when a condition is true, without custom code. A client script needs JavaScript, and an ACL controls access rather than form behavior.'),
+ ('An administrator needs browser code that recalculates a displayed field as soon as another field changes. Which tool runs where this requirement says?',
+  ['A client script','A business rule','A data policy','A scheduled job'],
+  'Client scripts run in the browser and can react to a field change. They are not a substitute for server-side checks.'),
+ ('A calculation must run on the server before a record is saved, however the record is submitted. Which tool fits?',
+  ['A before business rule','An onSubmit client script','A UI policy','A UI action'],
+  'A before business rule runs on the server before the database operation. Client-side scripts and UI policies only run in a form.'),
+ ('A finished set of configuration changes must move from the development instance to the test instance. What carries them?',
+  ['An update set','An import set','A transform map','A form template'],
+  'An update set groups configuration changes for transfer between instances. Import sets and transform maps load business data.'),
+ ('A server-side rule must clean up a value on the current record just before the update is written to the database. When should it run?',
+  ['A before business rule','An after business rule','An onSubmit client script','A scheduled job'],
+  'A before business rule runs before the database operation and can change the current record without a second update.'),
+ ('A related record must be updated in the same transaction, right after the current record is saved. When should the business rule run?',
+  ['An after business rule','An async business rule','A display business rule','An onChange client script'],
+  'An after rule runs right after the database operation, before the user gets control back. An async rule would run later in the background, which the requirement rules out.'),
+ ('A slow server task should be queued in the background after an update so the user does not wait for it. When should the business rule run?',
+  ['An async business rule','An after business rule','A before business rule','An onSubmit client script'],
+  'Async business rules run as background jobs after the operation, so the user is not kept waiting.'),
+ ('A server rule must prepare extra information as a record is fetched from the database to be shown on a form. When should it run?',
+  ['A display business rule','A before business rule','An onLoad client script','A scheduled job'],
+  'Display business rules run when a record is fetched for a form, before it is shown. An onLoad client script runs in the browser, so it cannot do the server-side work.'),
+ ('Two developers plan to move the same customization to production separately from two different source instances. What should be settled first?',
+  ['A single development, test and production path','A shared naming convention for both sets','A list of the form views each will copy','A schedule for nightly data imports'],
+  'Moving changes along one consistent path avoids the same customization reaching production twice from different sources.'),
+ ('A customization relies on behavior that may differ between the source and target releases. Which step addresses that risk?',
+  ['Compare the versions of the two instances','Rename the update set before moving it','Split the update set into two parts','Commit it during a quiet hour'],
+  'Moving update sets between instances on different versions can cause problems, so the versions should be compared first.'),
+ ('One update set mixes unrelated table changes with several large workflow changes, and reviewers cannot follow it. What helps most?',
+  ['Break the work into smaller, focused update sets','Merge it with another open update set','Rename it with today\'s date and time','Commit it without previewing it first'],
+  'Smaller update sets with one purpose are easier to review, preview and commit than one large mixed set.'),
+ ('Support staff cannot tell which of several similar update sets is the follow-up fix for a given problem. What helps them identify it?',
+  ['Names with the problem number and a sequence','One larger update set holding every fix','Committing them in whatever order is easiest','Marking every one of them as Complete'],
+  'Names that include the problem ticket and a sequence number show what each set is for and the order to apply them.'),
+ ('A client script must show a message as soon as the form opens, before the user enters anything. Which type fits?',
+  ['An onLoad client script','An onChange client script','A display business rule','A UI policy'],
+  'onLoad scripts run when the form first loads.'),
+ ('A form must update an estimate when the user changes the quantity field. Which client script type fits?',
+  ['An onChange client script','An onCellEdit client script','An onLoad client script','A before business rule'],
+  'onChange scripts run when a specified field on the form changes. onCellEdit is for edits in a list.'),
+ ('A browser check must run when the user saves the form and be able to stop the save. Which client script type fits?',
+  ['An onSubmit client script','An onChange client script','A before business rule','A UI action'],
+  'onSubmit scripts run when the form is submitted and can cancel it by returning false. Server-side checks are still needed for other routes.'),
+ ('Validation must run in the browser when a user edits a value directly in a list cell, without opening the form. Which client script type fits?',
+  ['An onCellEdit client script','An onChange client script','An onSubmit client script','A data policy on the field'],
+  'onCellEdit scripts run when a cell is edited in the list editor. onChange only fires on the form.'),
+ ('Previewing a retrieved update set reports that the target has a newer change to the same record. What is the right next step?',
+  ['Resolve the preview problem before committing','Commit it now and fix the record afterwards','Back out the target\'s newer change first','Delete the retrieved update set entirely'],
+  'Problems found in the preview must be reviewed and resolved, by accepting or skipping the remote change, before the update set can be committed.'),
+ ('A customization refers to a table from a plugin that is not active on the target instance. What should happen before committing?',
+  ['Make the missing component available on the target','Rename the update set to show the dependency','Commit and let the plugin install itself','Remove the table from the target dictionary'],
+  'Required components must exist on the target. An update set does not install the plugin it depends on.'),
+ ('An update set commit finished with errors, and the administrator needs the details of what failed. Where should she look?',
+  ['The update set\'s commit log','The source instance\'s system log','The preview problems list only','The user\'s History menu'],
+  'The commit log records what was applied and any errors during the commit.'),
+ ('An update set committed without errors, but the target form must still work correctly for an ordinary user. What remains?',
+  ['Check the behavior on the target instance','Commit the same update set a second time','Mark the update set Ignore on the target','Preview it once more on the target'],
+  'A clean commit does not prove the change works. Testing on the target confirms the behavior.'),
+ ('A change must give users instant warnings while they fill in a form and also stop bad data being saved from any source. Choose the two tools.',
+  ['A client script or UI policy','A data policy or business rule','An update set','A transform map'],
+  'Instant warnings happen in the browser, and protection against every source needs a server-side check. Update sets and transform maps move configuration and data.', [0,1]),
+ ('A release adds a server-side validation and must carry that configuration to the test instance. No data is loaded and no form messages change. Choose the two items involved.',
+  ['A before business rule','An update set','An onChange client script','An import set'],
+  'The business rule provides the server validation and the update set carries it to the test instance. Neither a client script nor an import is requested.', [0,1]),
+ ('A rollout moves form configuration to another instance and, separately, loads a supplier\'s spreadsheet into asset records. Choose the two items involved.',
+  ['An update set','An import set with a transform map','A display business rule','A form template'],
+  'The update set carries the configuration and the import set with its transform map loads the spreadsheet data.', [0,1]),
+ ('An administrator improves messages shown while users edit a form and loads an incoming asset file into target records. No configuration transfer or server validation is asked for. Choose the two items involved.',
+  ['A client script','An import set with a transform map','An update set','An after business rule'],
+  'Form messages come from a client script and the file is loaded through an import set and transform map.', [0,1]),
+]
 assert len(ITEMS)==24

@@ -20,3 +20,7 @@ The complete second-round ledger and calculations are retained in `review-v2-aud
 ## Rewrite, 2026-11-17
 
 The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.
+
+## Second review, 2026-11-17
+
+All 200 questions answered blind from stem and options (including hand-traced code, binary, storage, MOD and loop items). 200/200 matched the key, including all 16 choose-two items. No fixes needed; no bank changes. Checks: option reuse OK (0% shared sets, echo gain -3.0), answer patterns none, check_banks PASS, validate_v2_bank 1/2 tests x 70 mcq.

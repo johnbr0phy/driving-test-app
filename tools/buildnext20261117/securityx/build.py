@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Deterministic original SecurityX bank; no generation API calls."""
-import json,runpy,re
+import json,runpy,re,random
 from pathlib import Path
 from collections import Counter
 HERE=Path(__file__).resolve().parent
@@ -11,9 +11,13 @@ for domain,size,per_test in SPECS:
     items=runpy.run_path(str(HERE/f'{domain}.py'))['ITEMS']
     assert len(items)==size
     capacity={1:per_test,2:per_test,0:size-2*per_test};used=Counter()
+    rng=random.Random('securityx-'+domain)
+    while True:
+        slots=[k%4 for k in range(size)];rng.shuffle(slots)
+        if not any(slots[k]==slots[k+1]==slots[k+2] for k in range(size-2)) and not any(slots[k:k+4]==[0,1,2,3] or slots[k:k+4]==[1,2,3,0] for k in range(size-3)):break
     for i,(stem,options,why) in enumerate(items):
         test=min((t for t in [1,2,0] if used[t]<capacity[t]),key=lambda t:used[t]/capacity[t]);used[test]+=1
-        order=list(range(4));shift=i%4
+        order=list(range(4));shift=slots[i]
         if shift:order=order[-shift:]+order[:-shift]
         # Fix prose spacing around numeric examples without changing token fields.
         def tidy(s):return re.sub(r'(?<=[A-Za-z])(?=\d)|(?<=\d)(?=[A-Za-z])',' ',s).replace(chr(8217), chr(39))

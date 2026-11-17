@@ -203,3 +203,7 @@ SCIENCE-016's post-office distractor was replaced with a fire station because po
 ## Rewrite, 2026-11-17
 
 The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.
+
+## Second review, 2026-11-17
+
+160 questions answered blind from stem and options only, with every number and sequence recomputed (ages, fractions, decimals, units, perimeter and area, place value, time spans, day sequences, directions, letter and number patterns). 160/160 agreed with the key. No fixes needed and none made; no source or bank changes. Observed, left alone: keys fall A, B, C, D in strict rotation by id; the answer-pattern and option-reuse checks pass, but options could be shuffled later if wanted.

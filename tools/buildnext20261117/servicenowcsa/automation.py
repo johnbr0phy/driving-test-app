@@ -90,7 +90,7 @@ ITEMS=[
 ('A Virtual Agent topic is finished but still inactive, so users cannot reach it. Which action makes it available?',
  ['Publish the topic','Save it as a draft','Add it to a topic block','Duplicate the topic'],
  'Publishing activates the finished topic and makes it available to users.'),
-('Several Virtual Agent topics need the same series of steps to look up a user\'s open incidents. What reduces duplicated maintenance?',
+('Several Virtual Agent topics need the same series of conversation steps that ask for and show a user\'s open incidents. What reduces duplicated maintenance?',
  ['A topic block','A subflow','An order guide','A copy in each topic'],
  'A topic block packages reusable conversation steps that topics can call. A subflow is the reusable unit for flows, not conversations.'),
 ('A designer is about to build a topic for the HR application, but the header shows another application scope. What should she do first?',

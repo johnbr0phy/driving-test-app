@@ -70,7 +70,7 @@ ITEMS=[
  ['Promote it along the agreed instance path','Rewrite it as a client script first','Ask users to try it in production first','Remove it from its update set to save it'],
  'Approved changes are promoted through the agreed instance path, usually in an update set, so the same tested change reaches each instance.'),
 ('An administrator saved a new UI policy but has not opened the form to see whether the field really becomes mandatory. What is still needed?',
- ['Check it against the acceptance criteria','Add a client script to back it up','Move it straight to production','Mark the update set as Complete'],
+ ['Test it against the acceptance criteria','Add a client script to back it up','Move it straight to production','Mark the update set as Complete'],
  'Saving a configuration record does not prove the form behaves as required. Testing the agreed behavior does.'),
 ('A configuration passed acceptance testing. Support staff will need to understand it when they troubleshoot later. What closes the work?',
  ['Document the decisions and final setup','Delete the update set that was used','Clear the UI policy description field','Reset the administrator\'s preferences'],

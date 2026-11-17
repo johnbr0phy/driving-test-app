@@ -810,7 +810,7 @@
     "options": [
       "Move it straight to production",
       "Mark the update set as Complete",
-      "Check it against the acceptance criteria",
+      "Test it against the acceptance criteria",
       "Add a client script to back it up"
     ],
     "correct": [
@@ -1415,17 +1415,17 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A Department reference field should only offer active departments in its lookup. What should be configured on the field?",
+    "stem": "Every new hardware request should open with Priority already set to 3, though the requester may still change it. What should be configured on the field?",
     "options": [
-      "A UI policy",
-      "A read ACL on department",
-      "A default value",
-      "A reference qualifier"
+      "A read-only UI policy",
+      "A data policy",
+      "A reference qualifier",
+      "A default value"
     ],
     "correct": [
       3
     ],
-    "explanation": "A reference qualifier filters the records offered by a reference field. A read ACL would block access to the department records everywhere."
+    "explanation": "A default value fills the field when a new record opens and leaves it editable. A read-only policy would stop the change, and a data policy enforces states rather than filling values."
   },
   {
     "id": "SERVICENOWCSA-COLLABORATION-029",
@@ -2305,7 +2305,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "Several Virtual Agent topics need the same series of steps to look up a user's open incidents. What reduces duplicated maintenance?",
+    "stem": "Several Virtual Agent topics need the same series of conversation steps that ask for and show a user's open incidents. What reduces duplicated maintenance?",
     "options": [
       "A copy in each topic",
       "A topic block",
@@ -3108,12 +3108,12 @@
       "Operation",
       "Type",
       "Requires role",
-      "Decision type"
+      "Decision Type"
     ],
     "correct": [
       3
     ],
-    "explanation": "Decision type sets whether the ACL is Allow If or Deny Unless. Operation is the action, such as read or write."
+    "explanation": "Decision Type sets whether the ACL is Allow If or Deny Unless. Operation is the action, such as read or write."
   },
   {
     "id": "SERVICENOWCSA-DATABASE-029",
@@ -3460,17 +3460,17 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A security admin wants to see how many recommended hardening practices are applied on the instance and how that changed over time. Which Security Center area fits?",
+    "stem": "A security admin wants to see how many recommended hardening practices are applied on the instance and how that changed over time. Which section of the Security Center posture console fits?",
     "options": [
-      "Best practice adoption",
-      "Privileged accounts",
-      "Unused accounts",
-      "Security tasks"
+      "Best Practices",
+      "Active privileged accounts",
+      "Never logged-in users",
+      "My Security Tasks"
     ],
     "correct": [
       0
     ],
-    "explanation": "The best-practice area tracks adoption of recommended settings over time. The account areas focus on user populations."
+    "explanation": "The Best Practices section counts the recommended practices applied to the instance and charts completed practices over time. The account cards focus on user populations."
   },
   {
     "id": "SERVICENOWCSA-DATABASE-046",
@@ -3481,17 +3481,17 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A review focuses on active accounts that hold high privileges. Which Security Center posture information applies?",
+    "stem": "A review covers users who still sign in and hold elevated roles such as admin. Which Security Center posture dashboard card applies?",
     "options": [
-      "Scan results",
-      "Privileged accounts",
-      "Unused accounts",
-      "Security tasks"
+      "Active integration accounts",
+      "Active privileged accounts",
+      "Never logged-in users",
+      "My Security Tasks"
     ],
     "correct": [
       1
     ],
-    "explanation": "Privileged account posture identifies accounts with elevated access for review."
+    "explanation": "The Active privileged accounts card shows active accounts with elevated access for review. Integration accounts are used by connected systems, not by privilege level."
   },
   {
     "id": "SERVICENOWCSA-DATABASE-047",
@@ -3502,17 +3502,17 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator wants to look at enabled accounts that have never signed in. Which Security Center posture information supports that?",
+    "stem": "An administrator wants to look at enabled accounts that have never signed in. Which Security Center posture dashboard card supports that?",
     "options": [
-      "Best practice adoption",
-      "Scan results",
-      "Unused accounts",
-      "Privileged accounts"
+      "Best Practices",
+      "Active integration accounts",
+      "Never logged-in users",
+      "Active privileged accounts"
     ],
     "correct": [
       2
     ],
-    "explanation": "Unused account posture lists accounts that have never logged in. Whether to disable each one is still a separate decision."
+    "explanation": "The Never logged-in users card lists accounts that have never signed in. Whether to disable each one is still a separate decision."
   },
   {
     "id": "SERVICENOWCSA-DATABASE-048",
@@ -3523,17 +3523,17 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A security operator needs the remediation work that has been assigned to her. Which Security Center area gives her that list?",
+    "stem": "An operator needs the list of remediation items her manager gave her to work on. Which posture console section shows it?",
     "options": [
-      "The best practice score",
-      "The privileged account count",
-      "The scan results chart",
-      "Her assigned security tasks"
+      "Active integration accounts",
+      "Active privileged accounts",
+      "Best Practices",
+      "My Security Tasks"
     ],
     "correct": [
       3
     ],
-    "explanation": "Assigned security tasks list her work items, while the posture views show summary counts."
+    "explanation": "My Security Tasks lists the most urgent security tasks assigned to her, while the other sections show summary counts."
   },
   {
     "id": "SERVICENOWCSA-DATABASE-049",
@@ -3835,7 +3835,7 @@
     "format": "single",
     "stem": "A related record must be updated in the same transaction, right after the current record is saved. When should the business rule run?",
     "options": [
-      "An onChange client script",
+      "A before business rule",
       "An after business rule",
       "An async business rule",
       "A display business rule"
@@ -3843,7 +3843,7 @@
     "correct": [
       1
     ],
-    "explanation": "An after rule runs right after the database operation, before the user gets control back. An async rule would run later in the background, which the requirement rules out."
+    "explanation": "An after rule runs right after the database operation, before the user gets control back. An async rule would run later in the background, which the requirement rules out. A before rule runs before the current record is saved."
   },
   {
     "id": "SERVICENOWCSA-MIGRATION-007",

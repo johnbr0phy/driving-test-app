@@ -29,3 +29,12 @@ The bank was first built as option "families" (four questions sharing one option
 ## Second review, 2026-11-17
 
 120 questions, all answered blind from stem and options only; 120/120 agreed with the key. No wrong facts, ambiguity or typos found. One change: keys sat in a fixed A, B, C, D cycle within each category (key = index mod 4), so build.py now places keys by a seeded balanced shuffle per category (same options, same meaning, only letter positions move). Rebuilt; option-reuse (0% shared sets, echo gain -0.7), answer-pattern, check_banks and validate_v2_bank all pass.
+
+## Third review (blind, Opus), 2026-11-17
+
+Blind agreement 120/120. Two questions were listed for adjudication (agreed, medium confidence):
+
+- PROSE-006 (autobiography): reviewer saw memoir as a possible alternative. Verdict: tighten wording. Stem now says "a complete, chronological account of her whole life ... rather than a few chosen episodes", and the explanation says a memoir would focus on selected episodes or one period. Key unchanged.
+- POETRY-008 (final consonance, "blank, think, trunk"): verdict no problem. The vowels differ, so it is not full rhyme or assonance, and the shared final nk consonants are the pattern named; no change.
+
+Rebuilt; option reuse (0% shared, echo gain -0.7), answer patterns (strict), check_banks and validate_v2_bank all pass.

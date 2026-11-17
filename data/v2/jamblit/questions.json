@@ -743,7 +743,7 @@
     "difficulty": 2,
     "format": "single",
     "skill": "prose",
-    "stem": "A retired teacher writes a chronological account of her own life, from childhood through old age. Which form best describes the book?",
+    "stem": "A retired teacher writes a complete, chronological account of her whole life, from childhood through old age, rather than a few chosen episodes. Which form best describes the book?",
     "options": [
       "Memoir",
       "Autobiography",
@@ -753,7 +753,7 @@
     "correct": [
       1
     ],
-    "explanation": "A person's chronological account of their own life is an autobiography."
+    "explanation": "A person's complete, chronological account of their own whole life is an autobiography. A memoir would focus on selected episodes or one period instead."
   },
   {
     "id": "JAMBLIT-PROSE-007",

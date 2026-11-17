@@ -202,6 +202,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Microsoft Learn's SC-200 study guide (skills measured as of October 21, 2026), the Security Operations Analyst Associate certification page and Microsoft's exam duration page, checked November 2026",
     source: { name: "Microsoft Learn: SC-200 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200" },
   },
+  ceh: {
+    answer:
+      "The EC-Council Certified Ethical Hacker exam (CEH v13, exam 312-50) has 125 multiple-choice questions in 4 hours and is not open book. EC-Council sets a cut score for each exam form between 60% and 85%, depending on how hard that form's questions are. The CEH Exam Blueprint v5.0 weights nine domains: Information Security and Ethical Hacking Overview 6%, Reconnaissance Techniques 17%, System Hacking Phases and Attack Techniques 15%, Network and Perimeter Hacking 24%, Web Application Hacking 14%, Wireless Network Hacking 5%, Mobile Platform, IoT and OT Hacking 10%, Cloud Computing 5% and Cryptography 5%. The credential is valid for three years and is renewed with 120 continuing education credits.",
+    rows: [
+      { label: "Questions", value: "125 multiple choice" },
+      { label: "Time", value: "4 hours" },
+      { label: "Passing score", value: "60% to 85%, set for each exam form" },
+      { label: "Exam code", value: "312-50 (CEH v13)" },
+      { label: "Valid for", value: "3 years, renewed with 120 credits" },
+      { label: "Given by", value: "EC-Council, at ECC Exam Centres, Pearson VUE or remote proctoring" },
+    ],
+    basedOn: "EC-Council's CEH Exam Blueprint v5.0, the CEH certification page and the CEH Candidate Handbook, checked November 2026",
+    source: { name: "EC-Council: Certified Ethical Hacker", url: "https://cert.eccouncil.org/certified-ethical-hacker.html" },
+  },
   pentestplus: {
     answer:
       "The CompTIA PenTest+ exam (PT0-003) has a maximum of 90 questions in 165 minutes, multiple choice and performance-based, and you need 750 on a 100 to 900 scale to pass. It covers Engagement Management 13%, Reconnaissance and Enumeration 21%, Vulnerability Discovery and Analysis 17%, Attacks and Exploits 35% and Post-exploitation and Lateral Movement 14%. PT0-003 launched on December 17, 2024 and replaced PT0-002, which retired on June 17, 2025.",

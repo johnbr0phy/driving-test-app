@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "CEH-T1-001",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "MAC attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker floods a switch with frames from thousands of fake source MAC addresses. What is the attacker hoping the switch will do?",
+    "explanation": "When the CAM table fills, many switches fall back to flooding frames like a hub, so the attacker can sniff traffic meant for others. Port security that limits MAC addresses per port stops it.",
+    "options": [
+      "Flood frames out of every port",
+      "Assign the attacker a new VLAN",
+      "Hand out new IP leases",
+      "Shut down the attacker's port"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-002",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Search engine footprinting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester wants a search engine to return only PDF files from the client's domain. Which pair of advanced operators does this?",
+    "explanation": "The site operator limits results to one domain and filetype limits them to one file extension, such as pdf. intitle only matches words in the page title.",
+    "options": [
+      "$\\texttt{inurl:}$ and $\\texttt{link:}$",
+      "$\\texttt{intitle:}$ and $\\texttt{cache:}$",
+      "$\\texttt{related:}$ and $\\texttt{info:}$",
+      "$\\texttt{site:}$ and $\\texttt{filetype:}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-003",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Vulnerability assessment types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scanner logs in to each host with an account the client supplied, so it can read installed patch levels and local settings. What kind of scan is this?",
+    "explanation": "A credentialed (authenticated) scan logs in and reads the host's real configuration, giving fewer false positives than probing from outside. A passive scan only watches traffic.",
+    "options": [
+      "A credentialed scan",
+      "An external scan",
+      "A passive scan",
+      "A discovery scan"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-004",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web server attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web server blocks any request containing the text ../ yet still returns a system file when a tester sends the same path written as %2e%2e%2f. Why did the filter miss it?",
+    "explanation": "%2e is a dot and %2f is a slash, so the server decodes the path into ../ only after the filter has checked it. Filters must decode and canonicalise paths before checking them.",
+    "options": [
+      "The file was cached by the browser",
+      "The server was running as a guest user",
+      "The dots and slash were URL-encoded",
+      "The request used HTTPS, not HTTP"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-005",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "iOS hacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A jailbroken iPhone keeps its jailbreak after a restart without being connected to a computer. What type of jailbreak is this?",
+    "explanation": "An untethered jailbreak survives reboots on its own. A tethered one needs a computer at every boot, and semi-tethered or semi-untethered ones boot normally but need a tool or app to re-apply the jailbreak.",
+    "options": [
+      "Semi-untethered",
+      "Untethered",
+      "Semi-tethered",
+      "Tethered"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-006",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DHCP attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sends a burst of DHCP requests with spoofed MAC addresses until the server's address pool is empty. What is this attack called?",
+    "explanation": "DHCP starvation drains the lease pool so real clients get no address, often before a rogue DHCP server is set up. DHCP snooping and per-port rate limits counter it.",
+    "options": [
+      "MAC spoofing for access",
+      "DNS cache poisoning",
+      "VLAN hopping by tagging",
+      "DHCP starvation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-007",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Information security elements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two banks exchange payment files with a keyed message authentication code, so each bank can confirm a file really came from the other. Which element of information security does this mainly give?",
+    "explanation": "Authenticity confirms the claimed sender is genuine. A shared-key MAC proves origin between the two banks but not to a third party, which is why it does not give full non-repudiation.",
+    "options": [
+      "Authenticity",
+      "Availability",
+      "Confidentiality",
+      "Anonymity"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-008",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "DNS footprinting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester queries the client's domain and gets a record listing the primary name server, the admin contact and the zone serial number. Which record type is it?",
+    "explanation": "The start of authority (SOA) record holds the primary name server, the responsible contact, the serial number and the zone timers. A PTR record maps an address back to a name.",
+    "options": [
+      "SOA",
+      "SRV",
+      "PTR",
+      "AAAA"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-009",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Vulnerability classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new server still has the vendor's sample scripts, test pages and a factory admin account enabled. Which class of vulnerability is this?",
+    "explanation": "Software left as installed often ships with samples, open services and default accounts that attackers know. Hardening to a baseline after installation removes them.",
+    "options": [
+      "Default installation",
+      "Zero-day flaw",
+      "Buffer overflow",
+      "Race condition"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-010",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why was WEP broken so badly that it must never be used?",
+    "explanation": "WEP pairs RC4 with a 24-bit initialisation vector that repeats on a busy network, so captured traffic lets an attacker recover the key in minutes. WPA2 and WPA3 replaced it.",
+    "options": [
+      "Its 24-bit IVs repeat quickly",
+      "It needs a 256-bit key",
+      "It only works on 5 GHz",
+      "It uses AES in GCM mode by default"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-011",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Cloud concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company uses a software-as-a-service CRM. Under the shared responsibility model, who patches the CRM application itself?",
+    "explanation": "In SaaS the provider runs and patches the application and everything under it. The customer still owns its data, its user accounts and who has access.",
+    "options": [
+      "The customer's ISP",
+      "The browser maker",
+      "The customer",
+      "The cloud provider"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-012",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Encryption algorithms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which algorithm's security rests on how hard it is to factor the product of two large prime numbers?",
+    "explanation": "RSA keys are built from two large primes, and breaking them means factoring their product. Diffie-Hellman rests on the discrete logarithm problem instead.",
+    "options": [
+      "RSA",
+      "AES",
+      "Diffie-Hellman",
+      "SHA-256"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-013",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Sniffing countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which switch feature checks ARP packets against the DHCP snooping binding table and drops replies whose IP and MAC do not match?",
+    "explanation": "Dynamic ARP inspection validates ARP replies on untrusted ports against known IP-to-MAC bindings, blocking ARP poisoning. Port mirroring copies traffic for monitoring and protects nothing.",
+    "options": [
+      "Spanning Tree Protocol",
+      "802.1Q trunking",
+      "Dynamic ARP inspection",
+      "Port mirroring"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-014",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web server attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker gets a shared cache to store a harmful response under a normal page's key, so later visitors receive the attacker's version. What is this attack?",
+    "explanation": "Web cache poisoning abuses inputs the cache ignores when building its key, so one poisoned response is served to many users. Keying caches on every input that changes the response prevents it.",
+    "options": [
+      "DNS amplification",
+      "Directory listing",
+      "Web cache poisoning",
+      "Session fixation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-015",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Sniffing detection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To capture traffic not addressed to it, a sniffing host's network card must run in which mode?",
+    "explanation": "In promiscuous mode a NIC passes every frame it sees to the OS, not just frames for its own MAC. Defenders look for hosts in this mode, for example with crafted ARP or ping probes.",
+    "options": [
+      "Half-duplex mode",
+      "Trunk mode",
+      "Promiscuous mode",
+      "Power-saving mode"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-016",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "Android hacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user installs an Android app from a website instead of an official app store. What is this called?",
+    "explanation": "Sideloading installs an APK from outside the official store, skipping the store's checks. Rooting gives the user superuser rights, a separate change.",
+    "options": [
+      "Tethering",
+      "Jailbreaking",
+      "Sideloading",
+      "Rooting"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-017",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Network footprinting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does traceroute learn the address of each router on the path to a host?",
+    "explanation": "Traceroute sends probes with TTL 1, 2, 3 and so on; each router that drops a probe at TTL zero returns an ICMP time exceeded message, revealing its address. It does not need SNMP or ARP.",
+    "options": [
+      "It reads the routers' ARP caches",
+      "It queries each router's SNMP agent",
+      "It asks DNS for each router's name",
+      "It raises the TTL one hop at a time"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-018",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Vulnerability management lifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After the client fixes the flaws in a vulnerability report, what is the next step in the vulnerability management lifecycle?",
+    "explanation": "Verification confirms the fix worked, usually by rescanning, before monitoring goes on. Closing the report without checking can leave a flaw open that the client thinks is gone.",
+    "options": [
+      "Verify the fixes with a rescan",
+      "Start a new scope review",
+      "Delete the earlier scan results",
+      "Close the report straight away"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-019",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Patch management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a hotfix?",
+    "explanation": "A hotfix addresses one specific problem quickly, often a security flaw, outside the normal release cycle. Many hotfixes are later bundled into a service pack or cumulative update.",
+    "options": [
+      "A rollback to an older version",
+      "A small urgent fix for one problem",
+      "A firewall rule that blocks a port",
+      "A yearly major software release"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-020",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Social engineering techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker phones the help desk, claims to be a traveling sales manager locked out before a big meeting, and asks for a password reset. What technique is this?",
+    "explanation": "Pretexting invents a believable story and role to get information or action. Baiting leaves a lure, such as an infected USB drive, for a victim to pick up.",
+    "options": [
+      "Baiting",
+      "Tailgating",
+      "Dumpster diving",
+      "Pretexting"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-021",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Email footprinting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When tracing where a phishing email really came from, which part of the message should the tester read?",
+    "explanation": "Each mail server that handles a message adds a Received line, so reading them from the bottom up traces the true path. The visible From name is easy to forge.",
+    "options": [
+      "The Received header lines",
+      "The visible From name",
+      "The subject line",
+      "The message body signature"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-022",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Social engineering techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fake court summons, addressed by name to a company's chief executive, asks her to open an attached file. What is this attack called?",
+    "explanation": "Whaling is spear phishing aimed at a senior executive. Smishing uses text messages, vishing uses voice calls, and pharming redirects users to a fake site through DNS.",
+    "options": [
+      "Vishing",
+      "Whaling",
+      "Pharming",
+      "Smishing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-023",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Password attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does adding a unique random salt to each stored password hash defeat rainbow table attacks?",
+    "explanation": "A rainbow table is built in advance for unsalted hashes. A random salt per password changes every hash, so the attacker would need a separate table for each salt, which is not practical.",
+    "options": [
+      "Salts make hashing reversible",
+      "Salts encrypt the hash with AES",
+      "Precomputed tables no longer match",
+      "Salts lock the account after failures"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-024",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Threat intelligence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A threat report describes how a group operates: the goals it pursues, the methods it uses and the exact steps it repeats. Which term covers all three?",
+    "explanation": "TTPs describe an adversary's behaviour, from high-level goals (tactics) to methods (techniques) to specific steps (procedures). Indicators of compromise are artifacts such as hashes and domains.",
+    "options": [
+      "Indicators of compromise",
+      "Tactics, techniques and procedures",
+      "Rules of engagement",
+      "Common Vulnerabilities and Exposures"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-025",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "Mobile device management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company phone is lost on a train. Which MDM feature protects the company's data on it?",
+    "explanation": "MDM can lock or wipe a lost device remotely so its data cannot be read. Developer mode and USB debugging weaken a device's security.",
+    "options": [
+      "App sideloading",
+      "USB debugging",
+      "Developer mode",
+      "Remote wipe"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-026",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "OWASP Top 10",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which risk is ranked first in the OWASP Top 10 for 2021?",
+    "explanation": "OWASP's 2021 list moved broken access control to first place, with cryptographic failures second and injection third. The list ranks web risks from real-world data.",
+    "options": [
+      "Cryptographic failures",
+      "Broken access control",
+      "Security misconfiguration",
+      "Injection"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-027",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Physical social engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker carrying two coffee cups waits by a badge-controlled door and walks in when an employee holds it open for them. What is this called?",
+    "explanation": "Here the employee knowingly lets the attacker in, which is piggybacking. Tailgating is slipping in behind someone without their knowledge. Turnstiles and mantraps stop both.",
+    "options": [
+      "Reverse social engineering",
+      "Shoulder surfing",
+      "Eavesdropping",
+      "Piggybacking"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-028",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "TCP scan types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester runs $\\texttt{nmap -sS}$ against a host. What does the scan send when a port answers with SYN/ACK?",
+    "explanation": "The SYN (half-open) scan answers a SYN/ACK with RST, so the three-way handshake never completes and many services never log a connection. The connect scan (-sT) is the one that completes the handshake.",
+    "options": [
+      "A FIN to close the session at once",
+      "Nothing; it waits for a timeout",
+      "An ACK, so the handshake completes",
+      "A RST, so the handshake never finishes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-029",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Windows password storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a Windows host that is not a domain controller, where are local account password hashes stored?",
+    "explanation": "Local account hashes live in the Security Account Manager (SAM) database. NTDS.dit holds the hashes for domain accounts on a domain controller, and /etc/shadow is the Linux equivalent.",
+    "options": [
+      "The NTDS.dit file",
+      "The SAM database",
+      "The boot.ini file",
+      "The /etc/shadow file"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-030",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cafe wants guests to join its Wi-Fi with no password, yet still have each guest's traffic encrypted against nearby sniffers. Which Wi-Fi Alliance feature provides this?",
+    "explanation": "Enhanced Open uses Opportunistic Wireless Encryption: each client and the access point agree a unique key with no password, so passive sniffing of an open network no longer shows traffic in clear. It does not authenticate the access point, so an evil twin is still possible.",
+    "options": [
+      "Wi-Fi Enhanced Open (OWE)",
+      "MAC address filtering",
+      "WPS push-button setup",
+      "Hidden SSID broadcasting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-031",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Container technology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Kubernetes, what is a pod?",
+    "explanation": "A pod holds one or more containers that share network and storage and are scheduled together. Nodes are the machines that run pods.",
+    "options": [
+      "A physical server that joins the cluster",
+      "A firewall between namespaces",
+      "A container image registry",
+      "The smallest unit Kubernetes deploys"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-032",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Hash functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Changing a single letter of a document produces a completely different SHA-256 hash. What is this property called?",
+    "explanation": "In a good hash function a tiny change in the input flips about half the output bits, so similar inputs give unrelated hashes. Salting adds random data before hashing to defeat precomputed tables.",
+    "options": [
+      "Salting",
+      "The avalanche effect",
+      "Key stretching",
+      "The birthday paradox"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-033",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Insider threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which control most directly limits the damage a disgruntled employee can do with their own account?",
+    "explanation": "Least privilege gives each person only the access their job needs, so an insider has less to misuse. A perimeter firewall does little against someone already inside.",
+    "options": [
+      "A stronger perimeter firewall",
+      "Least privilege",
+      "Full disk encryption",
+      "An external web filter"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-034",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "CSRF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which defence stops a malicious site from making a logged-in user's browser submit a funds transfer to a bank?",
+    "explanation": "A per-request secret token that the attacker's page cannot read means a forged request fails the server's check. SameSite cookies add a second layer by not sending cookies on most cross-site requests.",
+    "options": [
+      "A unique anti-CSRF token per form",
+      "Blocking the user's own IP address",
+      "A longer session timeout",
+      "Storing the password in a cookie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-035",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "TCP scan types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester sends an Xmas scan to a port on a Unix host and gets no reply at all. How is the port read under RFC 793 behaviour?",
+    "explanation": "An Xmas scan sets FIN, PSH and URG. A closed port answers with RST, while an open port silently drops the packet, so silence means open or filtered. Windows stacks answer RST either way, so the scan does not work on them.",
+    "options": [
+      "Unfiltered",
+      "Open or filtered",
+      "Open and vulnerable",
+      "Closed"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-036",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "Mobile security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is a rooted Android phone a greater security risk than a standard one?",
+    "explanation": "Root access lets apps, including malicious ones, act outside the normal app sandbox and change system files. Many MDM tools block rooted devices from company data for this reason.",
+    "options": [
+      "It can no longer use Wi-Fi",
+      "It cannot install updates at all",
+      "Apps can escape the OS sandbox",
+      "It encrypts storage twice"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-037",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DoS attack techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sends ICMP echo requests to a network's broadcast address with the victim's address as the spoofed source. What is this attack?",
+    "explanation": "In a smurf attack every host on the broadcast network replies to the victim at once, amplifying the flood. Turning off directed broadcasts on routers stops it.",
+    "options": [
+      "Teardrop attack",
+      "SYN flood",
+      "Smurf attack",
+      "Ping of death"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-038",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "LM hashes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why are legacy LM password hashes so easy to crack?",
+    "explanation": "LM converts the password to uppercase and splits it into two 7-character halves hashed separately, with no salt, so each half falls quickly. Modern Windows disables LM storage by default.",
+    "options": [
+      "They uppercase and split the password",
+      "They require smart card logon",
+      "They add a 256-bit random salt per user",
+      "They are stored only in memory"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-039",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Hacker classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A person breaks into a company's website without permission, then emails the company to say how they did it and asks for nothing. How is this person usually classed?",
+    "explanation": "A gray hat acts without authorisation but without clear malicious intent, often disclosing what they found. A white hat works only with written permission, which this person did not have.",
+    "options": [
+      "White hat",
+      "Script kiddie",
+      "Black hat",
+      "Gray hat"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-040",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Idle scan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In an idle (zombie) scan, what does the tester watch on the zombie host to learn whether the target's port is open?",
+    "explanation": "The tester spoofs SYNs from the zombie and then checks how far the zombie's IP ID value has risen. A jump of two means the target sent the zombie a SYN/ACK, so the port is open; the target never sees the tester's own address.",
+    "options": [
+      "Its DNS cache entries",
+      "Its TCP window size",
+      "Changes in its IP ID counter",
+      "Its MAC address table"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-041",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DoS attack techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker opens many connections to a web server and keeps each one alive by sending partial HTTP headers very slowly. What is this attack?",
+    "explanation": "Slowloris holds connections open with incomplete requests until the server runs out of connection slots, using very little bandwidth. Timeouts on slow requests and connection limits defend against it.",
+    "options": [
+      "Smurf",
+      "Slowloris",
+      "Fraggle",
+      "Land attack"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-042",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Clickjacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A site is loaded inside an invisible frame on an attacker's page so that users click its buttons without knowing. Which response header defends against this?",
+    "explanation": "X-Frame-Options (or the CSP frame-ancestors directive) tells browsers whether the page may be framed by other sites. Strict-Transport-Security forces HTTPS and does nothing about framing.",
+    "options": [
+      "X-Frame-Options",
+      "Content-Length",
+      "Strict-Transport-Security",
+      "Access-Control-Max-Age"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-043",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Kerberos attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In an authorised Active Directory test, a tester requests service tickets for accounts with SPNs and cracks them offline to recover the service account passwords. What is this attack called?",
+    "explanation": "Kerberoasting asks for service tickets that are encrypted with the service account's password-derived key, then cracks them offline. Long random service account passwords and managed service accounts defend against it.",
+    "options": [
+      "Kerberoasting",
+      "A golden ticket attack",
+      "Pass-the-hash",
+      "DLL hijacking"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-044",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DoS countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which technique lets a server survive a SYN flood by not keeping state until the client completes the handshake?",
+    "explanation": "With SYN cookies the server encodes connection details in its SYN/ACK sequence number and only allocates memory when a valid ACK returns, so half-open connections cannot fill its backlog.",
+    "options": [
+      "Port knocking",
+      "Larger MTU size",
+      "SYN cookies",
+      "Static ARP entries"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-045",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "IoT attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Mirai botnet took over hundreds of thousands of cameras and routers. How did it mainly get in?",
+    "explanation": "Mirai scanned for Telnet and logged in with a short list of factory default credentials, then used the devices for huge DDoS attacks. Changing defaults and closing Telnet would have stopped it.",
+    "options": [
+      "Factory default passwords",
+      "Malicious email attachments",
+      "A zero-day in TLS",
+      "Stolen code-signing keys"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-046",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Host discovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On the tester's own local subnet, which host discovery method is the hardest for hosts to ignore?",
+    "explanation": "A host must answer ARP to use the local network at all, so an ARP ping finds hosts even when ICMP is blocked by a host firewall. ARP does not cross routers, so it only works on the local segment.",
+    "options": [
+      "TCP ACK ping",
+      "ICMP echo sweep",
+      "UDP ping to port 53",
+      "ARP ping scan"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-047",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "File inclusion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PHP page builds an include path from a URL parameter, and a tester makes it display a configuration file stored elsewhere on the same server. What is this flaw?",
+    "explanation": "Local file inclusion pulls in files already on the server; remote file inclusion would load a file from an outside URL. Allowlisting the files a page may include fixes both.",
+    "options": [
+      "Remote file inclusion",
+      "Open redirect",
+      "Local file inclusion",
+      "Server-side template injection"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-048",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Botnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a botnet, what is the job of the command and control server?",
+    "explanation": "Infected hosts (bots or zombies) check in with the command and control server for orders, such as which target to flood. Taking down or sinkholing that server can cut off the whole botnet.",
+    "options": [
+      "Patching the infected hosts for free",
+      "Filtering spam for the owner",
+      "Sending orders to infected hosts",
+      "Hosting the victim's website"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-049",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Hiding files",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker hides a tool inside an NTFS alternate data stream attached to a normal text file. Why does this work?",
+    "explanation": "Alternate data streams attach extra content to a file without changing its listed size, so a plain dir listing misses them. dir /r and most antivirus products can still find and scan them.",
+    "options": [
+      "NTFS encrypts every stream with EFS",
+      "The stream is stored in RAM only",
+      "Alternate streams cannot be scanned",
+      "A plain dir listing does not show it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-050",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee plugs a personal wireless access point into an office network jack without approval. What is this device called?",
+    "explanation": "A rogue access point is an unauthorised AP connected to the real network, opening a back door past the perimeter. Wireless intrusion detection and switch port controls help find and block it.",
+    "options": [
+      "A wireless bridge for guests",
+      "A RADIUS server",
+      "A honeypot",
+      "A rogue access point"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-051",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Cloud threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker breaks into a company's cloud account and runs hidden virtual machines that mine cryptocurrency on the company's bill. What is this called?",
+    "explanation": "Cryptojacking uses a victim's computing power to mine coins. In the cloud it shows up as unexpected instances and a spike in costs, so billing alerts help catch it.",
+    "options": [
+      "Cryptojacking",
+      "Typosquatting",
+      "Ransomware",
+      "Cloud hopping"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-052",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "PKI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To save clients a separate lookup, a web server attaches a recent, CA-signed revocation status for its own certificate to the TLS handshake. What is this called?",
+    "explanation": "With OCSP stapling the server fetches and caches the signed OCSP answer and sends it with its certificate, so the client need not ask the CA itself. Pinning instead ties a client to a known certificate or key.",
+    "options": [
+      "Certificate pinning",
+      "A wildcard certificate",
+      "OCSP stapling",
+      "Key escrow"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-053",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "OS discovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Packets captured from a host on the same subnet show a TTL of 128. Which operating system family does this most suggest?",
+    "explanation": "Windows stacks usually start packets at TTL 128, while Linux and most Unix systems start at 64 and many network devices at 255. Passive fingerprinting combines the starting TTL with other values, such as the TCP window size, to guess the OS.",
+    "options": [
+      "Solaris",
+      "Cisco IOS",
+      "Windows",
+      "Linux"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-054",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Session hijacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sets a known session ID in a victim's browser before the victim logs in, then uses that same ID after login. What is this attack?",
+    "explanation": "In session fixation the attacker chooses the ID in advance. Issuing a new session ID at login defeats it, because the ID the attacker planted becomes worthless.",
+    "options": [
+      "Clickjacking",
+      "Cross-site scripting",
+      "Session fixation",
+      "Session replay of tokens"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-055",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web server attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester requests a folder that has no index page and the server returns a clickable list of every file in it. What misconfiguration is this?",
+    "explanation": "With directory listing on, anyone can browse and download files that were never linked, such as backups and configs. Turning listing off and adding index pages closes it.",
+    "options": [
+      "Caching headers are missing",
+      "TLS is not enforced",
+      "Directory listing is enabled",
+      "Logging is turned off"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-056",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "IoT protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Many IoT devices publish sensor readings to a broker using a lightweight publish and subscribe protocol on TCP 1883. Which protocol is it?",
+    "explanation": "MQTT uses TCP 1883, or 8883 over TLS. A broker left open without authentication lets anyone read or send device messages.",
+    "options": [
+      "MQTT",
+      "LDAP",
+      "SNMP",
+      "SMB"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-057",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Security controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company installs a CCTV camera and an alarm on its server room door to spot intruders. What type of control is this?",
+    "explanation": "Cameras and alarms are physical controls that detect an event; they do not stop it. A lock on the door would be a physical preventive control.",
+    "options": [
+      "Technical preventive control",
+      "Physical corrective control",
+      "Physical detective control",
+      "Administrative corrective control"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-058",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Clearing logs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On an authorised test, the rules of engagement forbid erasing evidence. Which command would breach that rule on a Windows host?",
+    "explanation": "wevtutil cl clears an event log, which destroys the audit trail the client needs and is usually banned on a test. The other commands only read information.",
+    "options": [
+      "$\\texttt{net user}$",
+      "$\\texttt{wevtutil cl Security}$",
+      "$\\texttt{whoami /priv}$",
+      "$\\texttt{ipconfig /all}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-059",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Session hijacking countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which cookie attribute stops client-side scripts from reading a session cookie?",
+    "explanation": "HttpOnly hides the cookie from JavaScript, so an XSS flaw cannot simply read and steal it. Secure only stops the cookie being sent over plain HTTP.",
+    "options": [
+      "Secure",
+      "HttpOnly",
+      "Path",
+      "Max-Age"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-060",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "NetBIOS enumeration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester runs $\\texttt{nbtstat -A}$ against a Windows host and sees the suffix <20> on a name. What does that entry show?",
+    "explanation": "In the NetBIOS name table, <20> marks the Server (file sharing) service. A domain's domain controllers register the <1C> group name.",
+    "options": [
+      "The host is the master browser",
+      "A user is logged on",
+      "The file server service is running",
+      "The host is a domain controller"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-061",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Network-level hijacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To take over an existing TCP session without being on the path, what must an attacker correctly guess?",
+    "explanation": "A blind TCP hijack injects packets that the receiver only accepts if their sequence number fits the window. Random initial sequence numbers make this guess very hard today.",
+    "options": [
+      "The server's MAC address",
+      "The next sequence number",
+      "The DNS server's address",
+      "The user's password hash"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-062",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "SQL injection types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester learns a query's result one bit at a time by watching whether the page looks normal or slightly different, with no data or errors shown. What type of SQL injection is this?",
+    "explanation": "Boolean-based blind injection asks true or false questions and reads the page's behaviour. Union-based injection returns data directly in the page, and error-based injection reads it from database error messages.",
+    "options": [
+      "Out-of-band",
+      "Error-based",
+      "Boolean-based blind",
+      "Union-based"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-063",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Malware components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A small program's only job is to install a second, hidden malware payload that it carries inside itself. What is this program called?",
+    "explanation": "A dropper carries and installs the real payload, often unpacking it so antivirus does not see it at first. A downloader does the same job but fetches the payload from the internet.",
+    "options": [
+      "Keylogger",
+      "Dropper",
+      "Adware",
+      "Logic bomb"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-064",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "SNMP enumeration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which port and protocol does an SNMP agent listen on for queries?",
+    "explanation": "SNMP agents take requests on UDP 161, and traps are sent to the manager on UDP 162. TCP 389 is LDAP.",
+    "options": [
+      "TCP 389",
+      "TCP 161",
+      "UDP 162",
+      "UDP 161"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-065",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "OT concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In an industrial control system, which device runs the logic that directly controls pumps, valves and motors?",
+    "explanation": "A PLC reads sensors and drives actuators in real time. The HMI is the operator's screen, and the historian stores process data for later review.",
+    "options": [
+      "Human-machine interface",
+      "Data historian",
+      "Programmable logic controller",
+      "Engineering workstation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-066",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "IDS types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IDS raises an alert when traffic differs sharply from a learned baseline of normal behaviour, even with no known signature. What type of IDS is it?",
+    "explanation": "Anomaly-based detection compares traffic with a baseline, so it can catch new attacks but tends to raise more false positives. Signature-based detection only finds known patterns.",
+    "options": [
+      "Signature-based",
+      "Stateless",
+      "Host-based only",
+      "Anomaly-based"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-067",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "SQL injection types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester confirms an injection by making the database pause for ten seconds when a condition is true. What type of SQL injection is this?",
+    "explanation": "Time-based blind injection reads the answer from response delays when the page itself never changes. It is slow but works even when nothing is shown to the user.",
+    "options": [
+      "In-band error-based",
+      "Boolean-based blind",
+      "Time-based blind",
+      "Union-based"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-068",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Honeypots",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of honeypot runs a full real operating system and services, so it captures the most detail about an attacker but carries the most risk?",
+    "explanation": "A high-interaction honeypot gives attackers real systems to use, recording rich detail, but if compromised it can be used to attack others. Low-interaction honeypots only emulate a few services.",
+    "options": [
+      "Spam honeypot",
+      "High-interaction honeypot",
+      "Database honeypot",
+      "A low-interaction honeypot"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-069",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Fileless malware",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What sets fileless malware apart from traditional malware?",
+    "explanation": "Fileless malware avoids writing an executable to disk, running in memory through tools such as PowerShell or WMI, which makes signature-based scanning less effective.",
+    "options": [
+      "It only infects the boot sector",
+      "It needs a USB drive to spread",
+      "It runs in memory via built-in tools",
+      "It always encrypts the user's files"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-070",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Bluetooth hacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker uses a Bluetooth flaw to copy contacts and messages from a phone without the owner's knowledge. What is this attack called?",
+    "explanation": "Bluesnarfing steals data over Bluetooth. Bluejacking only sends unsolicited messages, bluesmacking is a denial of service, and blueprinting fingerprints a device.",
+    "options": [
+      "Bluesnarfing",
+      "Bluejacking",
+      "Bluesmacking",
+      "Blueprinting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-071",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Cloud security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of tool sits between users and cloud services to show which cloud apps staff use and to apply security policy to them?",
+    "explanation": "A CASB gives visibility into cloud app use, including shadow IT, and enforces policies such as data loss prevention. An HSM stores cryptographic keys.",
+    "options": [
+      "Hardware security module",
+      "Layer 2 switch",
+      "Cloud access security broker",
+      "Network-attached storage"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-072",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Cryptanalysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker can feed any text they pick into an encryption service and read back what it produces, then studies the results to recover the key. What kind of attack is this?",
+    "explanation": "In a chosen-plaintext attack the analyst decides which plaintexts get encrypted, which is stronger than only holding pairs someone else produced (known plaintext). A ciphertext-only attack has nothing but the encrypted text.",
+    "options": [
+      "Birthday attack",
+      "Rubber hose attack",
+      "Chosen-plaintext attack",
+      "Ciphertext-only attack"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-073",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "SMTP enumeration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester connects to a mail server and uses an SMTP command to ask whether a given mailbox exists. Which command checks a single user?",
+    "explanation": "VRFY asks the server to confirm one user, and EXPN expands a mailing list into its members. HELO only greets the server, and DATA starts the message body.",
+    "options": [
+      "$\\texttt{VRFY}$",
+      "$\\texttt{QUIT}$",
+      "$\\texttt{HELO}$",
+      "$\\texttt{DATA}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-074",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Laws and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which U.S. law requires public companies to keep reliable financial records and internal controls over them, which reach the IT systems that hold those records?",
+    "explanation": "SOX was passed after major accounting scandals and makes executives answer for financial reporting controls. HIPAA covers health information, and the DMCA covers copyright.",
+    "options": [
+      "HIPAA",
+      "FISMA",
+      "Digital Millennium Copyright Act",
+      "Sarbanes-Oxley Act"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-075",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Evading firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker hides command traffic inside DNS queries and answers to slip past a firewall that allows outbound DNS. What is this technique called?",
+    "explanation": "DNS tunneling encodes data in DNS names and records, using a protocol firewalls rarely block. Watching for long, odd or high-volume queries to one domain helps detect it.",
+    "options": [
+      "DNS round robin",
+      "DNS zone transfer",
+      "DNS amplification",
+      "DNS tunneling"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-076",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "OT concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the Purdue model for industrial networks, where do the physical sensors and actuators sit?",
+    "explanation": "Level 0 is the physical process with its sensors and actuators, level 1 holds controllers such as PLCs, and levels 4 and 5 are the business and enterprise networks.",
+    "options": [
+      "Level 4",
+      "Level 2",
+      "Level 5",
+      "Level 0"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T1-077",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "SQL injection countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Besides fixing the code, which setting limits the damage of a SQL injection in a web application?",
+    "explanation": "If the app's database account can only read the tables it needs, an injection cannot drop tables or reach other databases. Verbose errors help attackers, not defenders.",
+    "options": [
+      "A shared admin login for all apps",
+      "A least-privilege database account",
+      "Turning off query logging",
+      "Verbose database error pages for users"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T1-078",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Malware analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst studies a suspicious file by reading its strings, headers and imported functions without running it. What kind of analysis is this?",
+    "explanation": "Static analysis examines the code and file structure without executing it. Dynamic analysis runs the sample, usually in an isolated sandbox, and watches what it does.",
+    "options": [
+      "Behavioural sandboxing",
+      "Memory forensics",
+      "Static analysis",
+      "Dynamic analysis"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T1-079",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "NFS enumeration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester wants to list the directories an NFS server exports to the network. Which command does that?",
+    "explanation": "showmount -e asks an NFS server for its export list, often showing shares open to every host. nbtstat queries NetBIOS names, and snmpwalk walks an SNMP agent's MIB.",
+    "options": [
+      "$\\texttt{showmount -e}$",
+      "$\\texttt{ntpdc -c monlist}$",
+      "$\\texttt{nbtstat -c}$",
+      "$\\texttt{snmpwalk -v1}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T1-080",
+    "section": "ceh",
+    "test": 1,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Firewall types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which firewall type works at the session layer, checking that a TCP handshake is legitimate before relaying the session, without looking at the data inside the packets?",
+    "explanation": "A circuit-level gateway (SOCKS is the classic example) validates the session setup and then relays traffic without inspecting its content. An application proxy reads the content, and a static packet filter judges each packet alone.",
+    "options": [
+      "Application proxy firewall",
+      "Router access list",
+      "Static packet filter",
+      "Circuit-level gateway"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-001",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Sniffing countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which switch feature limits a port to a set number of MAC addresses and can shut the port when that limit is broken?",
+    "explanation": "Port security caps the MAC addresses learned on a port and can block or shut it when more appear, stopping MAC flooding. PortFast only speeds up a port coming online.",
+    "options": [
+      "Port security",
+      "Spanning Tree PortFast",
+      "DHCP relay",
+      "Link aggregation"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-002",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Search engine footprinting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester searches with $\\texttt{intitle:\"index of\"}$ plus the client's domain. What is the tester most likely hunting for?",
+    "explanation": "Web servers with directory listing turned on title the page \"Index of\", so the query finds folders whose files can be browsed directly. Collections of such search queries are kept in the Google Hacking Database.",
+    "options": [
+      "Open SNMP agents",
+      "Expired TLS certificates",
+      "Leaked password hashes in DNS",
+      "Open directory listings"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-003",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Vulnerability assessment types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An assessment probes the client's systems from the internet, as an outside attacker would see them. What type is it?",
+    "explanation": "An external assessment tests what is exposed to the internet, such as the perimeter and public servers. An internal assessment runs from inside the network.",
+    "options": [
+      "Host-based assessment",
+      "Internal assessment",
+      "Wireless assessment",
+      "External assessment"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-004",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web server footprinting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A response header reads Server: Apache/2.4.29 (Ubuntu). Why is leaving this header in place a risk?",
+    "explanation": "Exact product and version details let an attacker look up known flaws for that release. Hiding or trimming version banners is a simple hardening step, though it is no substitute for patching.",
+    "options": [
+      "It disables TLS on the site",
+      "It tells attackers which flaws to try",
+      "It slows every page load",
+      "It exposes every user's session cookie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-005",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "Mobile attack vectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which risk tops the OWASP Mobile Top 10 for 2024?",
+    "explanation": "The 2024 list ranks improper credential usage first, such as hardcoded keys and passwords in the app. Insecure data storage moved down the list.",
+    "options": [
+      "Inadequate privacy controls",
+      "Insufficient cryptography",
+      "Improper credential usage",
+      "Insecure data storage"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-006",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DHCP attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sets up a DHCP server that hands clients the attacker's address as their default gateway. What can the attacker now do?",
+    "explanation": "A rogue DHCP server that names itself the gateway puts the attacker on the path of the victims' traffic. DHCP snooping, which trusts only known server ports, blocks rogue servers.",
+    "options": [
+      "Read the clients' traffic in transit",
+      "Crack the clients' Wi-Fi keys",
+      "Read the switch's config file",
+      "Change the clients' MAC addresses for good"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-007",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Hacking phases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the classic five phases of hacking, which phase comes after gaining access?",
+    "explanation": "The phases are reconnaissance, scanning, gaining access, maintaining access, then clearing tracks. Clearing tracks is the last phase, after access is kept.",
+    "options": [
+      "Reconnaissance",
+      "Scanning",
+      "Clearing tracks",
+      "Maintaining access"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-008",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "DNS footprinting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A misconfigured name server lets anyone copy its whole zone. Which query type pulls the full zone?",
+    "explanation": "AXFR is the full zone transfer query, which runs over TCP 53 and should be limited to secondary name servers. An ANY query only asks for the records of one name.",
+    "options": [
+      "MX",
+      "ANY",
+      "AXFR",
+      "PTR"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-009",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Vulnerability scanning tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester wants an open-source scanner, built from the old open Nessus code, that checks network hosts against a large feed of tests. Which tool fits?",
+    "explanation": "OpenVAS (now Greenbone) grew out of the last open-source Nessus release and runs network vulnerability tests. Nikto only checks web servers.",
+    "options": [
+      "OpenVAS",
+      "Wireshark",
+      "Netcat",
+      "Nikto"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-010",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker captures a WPA2-Personal four-way handshake. What can the attacker do with it?",
+    "explanation": "The handshake lets an attacker test passphrase guesses offline without touching the network again, so a long, random passphrase is the defence. WPA2-Enterprise with 802.1X avoids a shared passphrase.",
+    "options": [
+      "Get the RADIUS server's shared secret",
+      "Decrypt WPA3 traffic directly",
+      "Read the AP's admin password",
+      "Test passphrase guesses offline"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-011",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Serverless computing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer uploads a function that runs only when an event arrives, with no server for the developer to manage. What model is this?",
+    "explanation": "Function as a service, or serverless computing, runs code on demand while the provider manages the servers. The developer still owns the function's code and permissions.",
+    "options": [
+      "Infrastructure as a service",
+      "Bare metal hosting",
+      "Desktop as a service",
+      "Function as a service"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-012",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Encryption algorithms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the key length of the original DES cipher, which made it easy to brute force?",
+    "explanation": "DES uses a 56-bit key, which dedicated hardware broke by brute force in the late 1990s. Triple DES with three keys gives 168 bits of key material, and AES uses 128, 192 or 256.",
+    "options": [
+      "56 bits",
+      "128 bits",
+      "168 bits",
+      "256 bits"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-013",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DNS poisoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker injects a forged answer into a resolver's cache so that a bank's name points to the attacker's server for every user of that resolver. What is this?",
+    "explanation": "Cache poisoning plants a false record in a resolver, affecting every client that asks it. DNSSEC signs records so a resolver can reject forged answers.",
+    "options": [
+      "Domain shadowing",
+      "DNS cache poisoning",
+      "Typosquatting",
+      "DNS zone transfer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-014",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web server attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Unvalidated input lets an attacker insert carriage return and line feed characters into a response header, adding new headers or a second response. What attack is this?",
+    "explanation": "HTTP response splitting injects CR and LF characters so the attacker controls part of the headers. Stripping or encoding those characters in any value placed in a header prevents it.",
+    "options": [
+      "XML external entity injection",
+      "HTTP response splitting",
+      "Server-side request forgery",
+      "Directory traversal"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-015",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Sniffing tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A network team wants to copy all traffic from several switch ports to one port where an IDS sensor listens. Which feature does this?",
+    "explanation": "A SPAN or mirror port copies traffic from chosen ports or VLANs to a monitoring port. Port security and DHCP snooping are protective features, not monitoring ones.",
+    "options": [
+      "Port security",
+      "SPAN (port mirroring)",
+      "BPDU guard",
+      "DHCP snooping"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-016",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "Android hacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When an Android app update is installed, what proves to the device that the update came from the same developer?",
+    "explanation": "Android only installs an update signed with the same key as the installed app, so a forged update is rejected. Keeping the signing key safe is therefore vital.",
+    "options": [
+      "The app's file size",
+      "The device's MAC address",
+      "The app's signing certificate",
+      "The app's icon and name"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-017",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Website footprinting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester copies a client's public website to a local folder to study its structure, scripts and comments offline. What is this technique called?",
+    "explanation": "Mirroring tools such as HTTrack download a site's pages, images and scripts so it can be read offline without more requests to the server. Banner grabbing only reads a service's identifying text.",
+    "options": [
+      "DNS cache snooping",
+      "Session fixation",
+      "Banner grabbing",
+      "Website mirroring"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-018",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Password attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attack tries words from a wordlist and also adds numbers and symbols to each word, such as summer2026!. What kind of attack is this?",
+    "explanation": "A hybrid attack mutates dictionary words with digits and symbols. A pure brute-force attack tries every possible combination and uses no wordlist.",
+    "options": [
+      "Hybrid attack",
+      "Shoulder surfing",
+      "Pure brute-force attack",
+      "Rainbow table attack"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-019",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web server hardening",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which step best hardens a new production web server?",
+    "explanation": "Removing sample apps, default pages and unused modules shrinks the attack surface. Running as root or keeping default passwords turns any flaw into a full compromise.",
+    "options": [
+      "Turn on directory listing everywhere",
+      "Run the web service as the root user",
+      "Keep the default admin password",
+      "Remove sample files and unused modules"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-020",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Social engineering techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff get text messages that look like they come from the company's bank, warning of a locked account and giving a link to unlock it. What is this attack called?",
+    "explanation": "Phishing by SMS text is smishing. Vishing uses voice calls, and whaling targets senior executives.",
+    "options": [
+      "Spimming",
+      "Whaling",
+      "Vishing",
+      "Smishing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-021",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Footprinting countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which step best reduces what an attacker can learn about a company from its domain registration records?",
+    "explanation": "A registration privacy service hides personal names, emails and phone numbers in the public record. DNSSEC protects DNS answers from tampering but does not hide registration details.",
+    "options": [
+      "Block ICMP at the firewall",
+      "Turn on DNSSEC signing",
+      "Use WHOIS privacy protection",
+      "Disable SMBv1 on servers"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-022",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Social engineering techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A website offers free downloads of a new film, but the file installs malware on anyone who runs it. Which social engineering technique is this?",
+    "explanation": "Baiting uses a lure that plays on curiosity or greed, online or as a physical item. Quid pro quo offers a service, such as fake IT support, in return for information or access.",
+    "options": [
+      "Pretexting",
+      "Baiting",
+      "Elicitation",
+      "Quid pro quo"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-023",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Linux password storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a Linux /etc/shadow entry, the password field begins with $\\texttt{\\$6\\$}$. What does this prefix show?",
+    "explanation": "The prefix names the hashing scheme: $\\texttt{\\$1\\$}$ is MD5 crypt, $\\texttt{\\$5\\$}$ SHA-256 crypt and $\\texttt{\\$6\\$}$ SHA-512 crypt. A locked account shows ! or * at the start of the field instead.",
+    "options": [
+      "The password never expires",
+      "The account is locked",
+      "The hash uses SHA-512 crypt",
+      "The hash uses MD5 crypt"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-024",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Diamond Model",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which four core features describe an intrusion event in the Diamond Model of intrusion analysis?",
+    "explanation": "The Diamond Model links adversary, capability, infrastructure and victim for every event. Threat, asset, impact and likelihood are terms from risk assessment, not the Diamond Model.",
+    "options": [
+      "Tactic, technique, tool, target",
+      "People, process, technology, data",
+      "Adversary, capability, infrastructure, victim",
+      "Threat, asset, vulnerability, impact, likelihood"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-025",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "Mobile device management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under a BYOD policy, which MDM approach keeps company apps and data separate from the user's personal apps on the same phone?",
+    "explanation": "Containerization puts work apps and data in a managed space that can be wiped alone, leaving personal data untouched. Wiping the whole device is a blunter tool.",
+    "options": [
+      "Remote wipe of the whole device",
+      "Jailbreaking",
+      "Containerization",
+      "Turning off the lock screen"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-026",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Patch management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before a new security patch is rolled out to every production web server, what should the team do first?",
+    "explanation": "Testing on a system that mirrors production shows whether the patch breaks anything before it reaches users. Patch management then deploys, verifies and records the change.",
+    "options": [
+      "Turn off the server logs",
+      "Uninstall the antivirus agent",
+      "Skip testing to save time",
+      "Test it on a staging server"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-027",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Identity theft",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sets up a LinkedIn profile using a real executive's name and photo, then messages staff for internal documents. What is this?",
+    "explanation": "A fake profile of a real person borrows their trust to get information. Staff awareness and a way to confirm requests outside the platform reduce the risk.",
+    "options": [
+      "Impersonation of a trusted person",
+      "A watering hole attack",
+      "Dumpster diving at the office",
+      "Session fixation"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-028",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "TCP scan types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester sends ACK packets to a host behind a firewall. Some ports return RST and some return nothing. What does this scan mainly show?",
+    "explanation": "An ACK scan cannot tell open from closed, since both answer RST. It maps the firewall: a RST means the probe got through (unfiltered), and no reply means it was filtered.",
+    "options": [
+      "Which ports are open",
+      "Which services are running",
+      "The host's operating system version",
+      "Which ports are filtered"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-029",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Kerberos attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker who has stolen the krbtgt account's hash forges ticket-granting tickets for any user. What is this called?",
+    "explanation": "The krbtgt key signs every TGT in the domain, so stealing it lets an attacker forge TGTs: a golden ticket. A silver ticket forges a service ticket using one service account's key.",
+    "options": [
+      "A golden ticket attack",
+      "A silver ticket attack",
+      "AS-REP roasting",
+      "Kerberoasting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-030",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The KRACK research showed a flaw in WPA2. What did it abuse?",
+    "explanation": "KRACK made a client reinstall a key already in use, resetting nonces so encrypted traffic could be decrypted or replayed. Vendors patched clients and access points to fix it.",
+    "options": [
+      "A weak RC4 key schedule in TKIP",
+      "WPS PIN brute forcing",
+      "Forcing a key to be reinstalled",
+      "Hidden SSID broadcasts"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-031",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Container technology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice best keeps known flaws out of containers before they reach production?",
+    "explanation": "Scanning images for known vulnerabilities in the build pipeline catches flawed packages early. Running as root and pulling unvetted images raise the risk.",
+    "options": [
+      "Run every container as root",
+      "Turn off image signing",
+      "Pull images from any public source",
+      "Scan images in the build pipeline"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-032",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Encryption algorithms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do mobile and IoT devices often prefer elliptic curve cryptography to RSA?",
+    "explanation": "ECC reaches the same security as RSA with much shorter keys, saving processing power and battery. It is asymmetric and supports signatures and key exchange.",
+    "options": [
+      "Shorter keys, same strength",
+      "It cannot be used for signatures",
+      "It is a symmetric cipher",
+      "It needs no private key"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-033",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Social engineering countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which measure does the most to reduce phishing success across a whole company?",
+    "explanation": "Phishing targets people, so training staff to spot and report it is the core defence, backed by email filtering and multifactor authentication.",
+    "options": [
+      "Longer password expiry periods for staff",
+      "Open Wi-Fi for guests",
+      "Security awareness training",
+      "Turning off the spam filter"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-034",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "XXE",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An XML parser processes a document type definition that makes it read a local file and place it in the response. What vulnerability is this?",
+    "explanation": "XXE abuses external entities declared in a DTD to read files or reach internal URLs. Turning off DTD and external entity processing in the parser stops it.",
+    "options": [
+      "Command injection",
+      "Insecure deserialization",
+      "LDAP injection in the login form",
+      "XML external entity injection"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-035",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "TCP scan types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A NULL scan sends a TCP packet with which flags set?",
+    "explanation": "A NULL scan sets no TCP flags at all, while an Xmas scan sets FIN, PSH and URG and a FIN scan sets only FIN. All three rely on closed ports answering RST.",
+    "options": [
+      "No flags",
+      "FIN, PSH and URG",
+      "SYN only",
+      "FIN only"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-036",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "Mobile attack vectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A free flashlight app asks for access to the user's contacts, SMS and microphone. What should this suggest?",
+    "explanation": "A permission set far beyond what an app does is a common sign of spyware or adware. Users should deny unneeded permissions and prefer trusted developers.",
+    "options": [
+      "The app may be harvesting data",
+      "The app store is offline",
+      "The phone has been rooted",
+      "The app needs them for brightness"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-037",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DoS attack techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sends small spoofed requests to open DNS resolvers, which send much larger replies to the victim. What is this attack type?",
+    "explanation": "Amplification attacks bounce traffic off third-party servers whose replies are far larger than the requests, and the spoofed source sends them all to the victim. Closing open resolvers removes the reflectors.",
+    "options": [
+      "SYN flooding",
+      "Reflection and amplification",
+      "Session hijacking",
+      "Teardrop fragmentation attack"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-038",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Privilege escalation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application loads a library by name, and a writable folder searched early in the load order lets an attacker place a malicious library there. What is this weakness?",
+    "explanation": "DLL hijacking (search order hijacking) plants a malicious DLL where Windows looks first. Calling libraries by full path and locking folder permissions prevents it.",
+    "options": [
+      "ARP poisoning",
+      "Session fixation",
+      "SQL injection",
+      "DLL hijacking"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-039",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "MITRE ATT&CK",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the MITRE ATT&CK framework, what does a tactic represent?",
+    "explanation": "A tactic is the why: the adversary's goal, such as credential access or persistence. Techniques are the how, the ways that goal is reached.",
+    "options": [
+      "A single malware sample",
+      "The adversary's goal",
+      "A specific vendor's tool",
+      "One CVE entry"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-040",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "UDP scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a UDP scan, a probe to port 69 brings back ICMP type 3 code 3 (port unreachable). How is the port read?",
+    "explanation": "ICMP port unreachable means the host got the probe and nothing listens there, so the port is closed. Other ICMP unreachable codes point to filtering, and no reply at all is read as open or filtered.",
+    "options": [
+      "Closed",
+      "Open or filtered",
+      "Filtered by a firewall",
+      "Open"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-041",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DoS attack techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attack sends IP fragments whose offsets overlap, crashing older systems when they try to reassemble the packet. What is it called?",
+    "explanation": "The teardrop attack relies on reassembly bugs triggered by overlapping fragment offsets. A smurf attack floods ICMP replies through a broadcast address.",
+    "options": [
+      "Teardrop attack",
+      "Fraggle attack",
+      "Smurf attack",
+      "Slowloris"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-042",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Command injection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A form that pings a host passes the user's input straight to the server's shell, so a tester can append another OS command. What flaw is this?",
+    "explanation": "When input reaches a system shell unfiltered, extra commands run with the web app's rights. Using safe library calls instead of the shell, and strict allowlists, prevents it.",
+    "options": [
+      "Cross-site scripting",
+      "OS command injection",
+      "SQL injection",
+      "Session fixation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-043",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Buffer overflow defences",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which defence makes buffer overflow exploits harder by placing memory regions at random addresses each time a program runs?",
+    "explanation": "Address space layout randomisation moves the stack, heap and libraries around, so an attacker cannot rely on fixed addresses. DEP stops code from running in data pages, a different defence.",
+    "options": [
+      "Stack canaries",
+      "DEP",
+      "Code signing",
+      "ASLR"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-044",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DoS countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice stops packets with spoofed source addresses from leaving an organization's network?",
+    "explanation": "Egress filtering at the border drops outbound packets whose source address does not belong to the organization, so its hosts cannot take part in spoofed floods. BCP 38 describes the same anti-spoofing filtering, applied where traffic enters a provider's network.",
+    "options": [
+      "Disabling IPv6",
+      "Egress filtering",
+      "Port mirroring",
+      "Load balancing only"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-045",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "IoT attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which weakness lets an attacker with the device in hand connect to an IoT board's debug port and read its firmware?",
+    "explanation": "Debug interfaces like UART and JTAG left open on the board give hardware-level access to firmware and secrets. Turning them off or locking them in production devices closes this path.",
+    "options": [
+      "A strong TLS configuration",
+      "A disabled Telnet service",
+      "An exposed UART or JTAG port",
+      "Signed firmware updates"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-046",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "IDS evasion in scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester adds $\\texttt{-D}$ with a list of spoofed addresses to an nmap scan. What does this do?",
+    "explanation": "The decoy option makes the scan seem to come from several addresses at once, so a defender cannot easily tell which one is real. Fragmentation is -f, and a fixed source port is set with --source-port.",
+    "options": [
+      "Changes every probe's source port to 53",
+      "Slows the scan to avoid alerts",
+      "Splits probes into tiny fragments",
+      "Hides the real source among decoys"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-047",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "File upload",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which control best stops an attacker from uploading a script disguised as a profile picture and then running it?",
+    "explanation": "Validating the real file content, renaming it and keeping uploads where the server will not execute them stops script uploads. Extensions and the browser's declared type are easy to fake.",
+    "options": [
+      "Check content, store outside web root",
+      "Allow any file type under 5 MB in size",
+      "Trust the file's extension",
+      "Check only the browser's MIME type"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-048",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DoS concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What makes a distributed denial-of-service attack different from a plain DoS attack?",
+    "explanation": "A DDoS uses many sources, usually a botnet, so blocking one address does not stop it. A plain DoS comes from one source.",
+    "options": [
+      "It only targets DNS servers",
+      "It needs physical access",
+      "Traffic comes from many hosts",
+      "It always uses one large packet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-049",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Keyloggers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A small device is found plugged in between a desk keyboard and the PC's USB port, recording every key typed. What is it?",
+    "explanation": "A hardware keylogger sits inline on the keyboard cable and stores keystrokes, so no software scan on the PC will find it. Physical checks of desks and ports are the defence.",
+    "options": [
+      "A Bluetooth sniffer",
+      "A rootkit loader",
+      "A network tap",
+      "A hardware keylogger"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-050",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is hiding a network's SSID weak protection on its own?",
+    "explanation": "A hidden SSID still shows up in probe requests and association frames, so any sniffer learns it quickly. Strong encryption and authentication protect the network; hiding the name does not.",
+    "options": [
+      "It lets anyone join without a key",
+      "Clients reveal it in probe requests",
+      "It blocks 802.1X logins",
+      "It turns off WPA2 encryption for all"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-051",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Cloud threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers break into a managed service provider and use its access to reach many of that provider's customers. What is this called?",
+    "explanation": "Cloud hopping goes through a trusted service provider to reach its clients. Limiting the provider's access and watching its activity reduce the risk.",
+    "options": [
+      "Wardialing",
+      "Cryptojacking",
+      "Cloud hopping",
+      "Session fixation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-052",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Email encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which email security standard relies on a web of trust where users sign each other's keys, rather than a central certificate authority?",
+    "explanation": "PGP lets users vouch for each other's keys in a web of trust. S/MIME uses X.509 certificates issued by certificate authorities.",
+    "options": [
+      "IPsec",
+      "S/MIME",
+      "PGP",
+      "TLS"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-053",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Scanning tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester wants to craft custom TCP, UDP and ICMP packets from the command line, set any flag and test firewall rules. Which tool is built for this?",
+    "explanation": "hping3 builds custom packets with chosen flags, sizes and ports, which makes it useful for firewall testing and idle scans. Nikto is a web server scanner.",
+    "options": [
+      "Nikto",
+      "hping3",
+      "nbtstat",
+      "John the Ripper"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-054",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Application-level hijacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Malware in a victim's browser silently changes the payee on online banking transfers while showing the user the original details. What is this attack?",
+    "explanation": "A man-in-the-browser attack runs inside the browser, so it can change transactions after encryption is removed and before the user sees them. Out-of-band confirmation of transfers helps defend against it.",
+    "options": [
+      "Man-in-the-browser",
+      "ARP poisoning",
+      "Session fixation",
+      "DNS spoofing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-055",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web app threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shop stores the item price in a hidden form field, and a tester changes it to 1 before submitting the order, which the server accepts. What is this attack?",
+    "explanation": "Hidden fields and other client-side values are fully under the user's control. The server must look up prices itself and never trust values sent back by the browser.",
+    "options": [
+      "Parameter tampering",
+      "Clickjacking",
+      "Session fixation",
+      "Cross-site scripting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-056",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "IoT countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice best stops an attacker from pushing a tampered update to a fleet of smart cameras?",
+    "explanation": "Requiring updates signed by the vendor means the device rejects tampered firmware. Unsigned update paths let an attacker push their own code to every device.",
+    "options": [
+      "Accept only signed firmware",
+      "Allow updates from any server",
+      "Keep the factory Telnet login",
+      "Turn off automatic updates"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-057",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Ethical hacking scope",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before an ethical hacker scans a client's network, what must be in place?",
+    "explanation": "Ethical hacking needs written permission from someone with authority over the systems, with scope and limits agreed. A verbal OK from a random employee gives no legal cover.",
+    "options": [
+      "Approval from the client's ISP only",
+      "A completed final report",
+      "Written permission from the owner",
+      "A verbal OK from any employee"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-058",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Rootkits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of rootkit is the hardest to detect from within the running operating system?",
+    "explanation": "A kernel-level rootkit changes the OS core, so tools running on that same OS may be fed false answers. Offline scanning from trusted media is often needed to find one.",
+    "options": [
+      "Browser extension",
+      "Kernel-level rootkit",
+      "Application-level rootkit",
+      "Library-level rootkit"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-059",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Session hijacking countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice best protects session tokens from being sniffed on the network?",
+    "explanation": "Encrypting every request with TLS keeps tokens off the wire in clear text, and the Secure cookie flag stops them being sent over HTTP. Tokens in URLs leak through logs and referrers.",
+    "options": [
+      "Put the token in the URL query string",
+      "Use short numeric session IDs",
+      "Turn off session timeouts",
+      "Use HTTPS for the whole session"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-060",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "SNMP enumeration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An SNMP device still uses the factory community strings. Which pair is the usual read-only and read-write default?",
+    "explanation": "Many devices ship with public for read-only and private for read-write access. A read-write default lets an attacker change device settings, so both should be replaced, ideally with SNMPv3.",
+    "options": [
+      "admin and password",
+      "read and write",
+      "guest and root",
+      "public and private"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-061",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Session hijacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker on a public Wi-Fi network captures a user's session cookie and replays it to act as that user without a password. What is this called?",
+    "explanation": "Sidejacking steals a session cookie from network traffic and replays it, skipping the login altogether. Site-wide HTTPS stops the cookie being sniffed.",
+    "options": [
+      "Sidejacking",
+      "Password spraying",
+      "Credential stuffing",
+      "Brute forcing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-062",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application sends an HTTP POST to a URL the customer registered whenever an order ships, so the customer's system can react. What is this mechanism called?",
+    "explanation": "A webhook pushes event data to a subscriber's URL as it happens. Webhooks should be signed so the receiver can check the sender, and their target URLs validated.",
+    "options": [
+      "A web shell",
+      "A webhook",
+      "A cookie",
+      "A web beacon"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-063",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Virus types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of virus rewrites its own code completely each time it infects a new file, not just its encryption?",
+    "explanation": "A metamorphic virus rebuilds its whole body on each infection. A polymorphic virus keeps the same body but changes its encryption and decryptor to dodge signatures.",
+    "options": [
+      "Boot sector virus",
+      "Polymorphic virus",
+      "Macro virus",
+      "Metamorphic virus"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-064",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "LDAP enumeration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester wants to search the whole Active Directory forest, not just one domain, with LDAP queries. Which port does the global catalog listen on?",
+    "explanation": "The global catalog answers forest-wide LDAP queries on TCP 3268 (3269 over TLS). Plain LDAP for one domain uses 389 and LDAPS 636. Anonymous or low-privilege binds are a common enumeration target.",
+    "options": [
+      "UDP 161",
+      "TCP 3268",
+      "TCP 389",
+      "TCP 636"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-065",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "OT attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Stuxnet is a well-known example of malware aimed at which kind of target?",
+    "explanation": "Stuxnet changed the code on Siemens PLCs that ran centrifuges while showing operators normal readings. It showed that malware can cause physical damage in OT.",
+    "options": [
+      "Cloud storage buckets",
+      "Industrial PLCs in a plant",
+      "Online banking customers",
+      "Mobile phone users"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-066",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "IDS evasion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sends packets with a low TTL that reach the IDS but expire before they reach the target, so the IDS and the host see different streams. What is this called?",
+    "explanation": "In an insertion attack the IDS accepts packets the target never gets, so its view of the stream no longer matches what the target rebuilds. Normalising traffic before inspection reduces this gap.",
+    "options": [
+      "A false positive flood",
+      "A honeypot evasion",
+      "DNS tunneling",
+      "An insertion attack"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-067",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "SQL injection types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester adds a second query to an injectable parameter so that its rows are joined to the page's normal results. What type of SQL injection is this?",
+    "explanation": "Union-based injection uses the UNION operator to append the attacker's query results to the original ones. It only works when the column count and types match.",
+    "options": [
+      "Union-based",
+      "Out-of-band",
+      "Time-based blind",
+      "Boolean-based blind"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-068",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Honeypots",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why would a security team deploy a honeypot on its network?",
+    "explanation": "A honeypot has no real users, so any activity on it is suspicious, giving early warning and insight into attacker tools. It adds to the defences; it does not replace a firewall.",
+    "options": [
+      "To replace the main firewall",
+      "To store backup copies of data",
+      "To lure and study attackers",
+      "To speed up legitimate traffic"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-069",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Trojans",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A free game a user downloaded also opens a hidden channel that lets an attacker control the PC remotely. What is this malware?",
+    "explanation": "A remote access trojan hides inside a program the user wants and gives the attacker remote control. A logic bomb waits for a trigger condition and does not grant remote access by itself.",
+    "options": [
+      "Time-triggered logic bomb",
+      "Boot sector virus",
+      "Remote access trojan",
+      "Adware"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-070",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Bluetooth hacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sends oversized Bluetooth L2CAP echo packets to a phone until its Bluetooth stack crashes. What is this attack called?",
+    "explanation": "Bluesmacking is a Bluetooth denial of service, much like a ping of death. Bluesnarfing steals data, and bluebugging takes control of the phone.",
+    "options": [
+      "Bluebugging",
+      "Bluesmacking",
+      "Blueprinting",
+      "Bluesnarfing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-071",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Container technology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where are container images stored and pulled from when they are deployed?",
+    "explanation": "A registry holds versioned images that hosts pull at deploy time. Using a private registry with signed, scanned images keeps untrusted images out.",
+    "options": [
+      "A load balancer",
+      "A Kubernetes pod",
+      "A hypervisor",
+      "A container registry"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-T2-072",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Cryptanalysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Double DES gives little more security than single DES because of which attack?",
+    "explanation": "Meet-in-the-middle encrypts from one end and decrypts from the other and matches the results in the middle, so two keys take only about twice the work of one. That is why Triple DES, not double, was adopted.",
+    "options": [
+      "Meet-in-the-middle",
+      "Birthday attack",
+      "Padding oracle",
+      "Side-channel timing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-073",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "NTP enumeration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which port does the Network Time Protocol use?",
+    "explanation": "NTP runs on UDP 123. Querying an NTP server can reveal its peers and clients, and the old monlist feature was abused for amplification attacks. UDP 69 is TFTP, and TCP 179 is BGP.",
+    "options": [
+      "UDP 69",
+      "UDP 123",
+      "UDP 137",
+      "TCP 179"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-074",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Laws and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which international standard specifies the requirements for an information security management system (ISMS)?",
+    "explanation": "ISO/IEC 27001 sets the requirements for an ISMS and is the standard organisations certify against. ISO 9001 is for quality management, and NIST SP 800-115 is a guide to security testing.",
+    "options": [
+      "PCI DSS",
+      "ISO 9001",
+      "ISO/IEC 27001",
+      "NIST SP 800-115"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-T2-075",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Evading NAC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker clones the MAC address of an approved printer to get a port admitted by MAC-based network access control. What weakness does this expose?",
+    "explanation": "MAC authentication bypass trusts a value any device can fake. 802.1X with certificates and profiling of device behaviour make NAC harder to fool.",
+    "options": [
+      "MAC addresses are easy to spoof",
+      "Printers cannot use VLANs",
+      "802.1X always fails open on printers",
+      "DHCP snooping blocks printers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-076",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "OT protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which TCP port does Modbus TCP use by default?",
+    "explanation": "Modbus TCP listens on port 502 and has no built-in authentication. Port 102 is used by Siemens S7, 20000 by DNP3, and 44818 by EtherNet/IP.",
+    "options": [
+      "44818",
+      "502",
+      "102",
+      "20000"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-077",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "SQL injection evasion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why might a tester encode SQL keywords in hexadecimal or add inline comments inside them during an authorised test?",
+    "explanation": "Encoding and inline comments change how the input looks without changing what the database runs, so simple signature filters miss it. Fixing the query code, not just the WAF, is the real cure.",
+    "options": [
+      "To slip past a signature WAF",
+      "To encrypt the database",
+      "To reset the database password",
+      "To make the query run faster"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-078",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "APT",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which feature best describes an advanced persistent threat?",
+    "explanation": "An APT is a skilled, well-funded actor that keeps quiet access to a target for a long time, often to steal data. Noisy, short attacks do not fit the persistent and stealthy part.",
+    "options": [
+      "A one-time defacement for fame",
+      "Long, stealthy access by skilled actors",
+      "Random scans by automated bots",
+      "A single loud denial-of-service attack"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-T2-079",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Enumeration ports",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester sees UDP 500 open on a border device. Which service does this usually point to?",
+    "explanation": "IKE, which sets up IPsec VPN tunnels, listens on UDP 500 (4500 for NAT traversal). SIP uses 5060, BGP uses TCP 179, and TFTP uses UDP 69.",
+    "options": [
+      "IPsec IKE for VPNs",
+      "SIP for VoIP calls",
+      "TFTP file transfer",
+      "BGP routing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-T2-080",
+    "section": "ceh",
+    "test": 2,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Firewall types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which firewall inspects traffic up to the application layer, for example blocking an HTTP request based on its content?",
+    "explanation": "An application proxy (or next-generation firewall) understands the protocol and can filter on content. A circuit-level gateway only checks that the session handshake is valid.",
+    "options": [
+      "Circuit-level gateway",
+      "Application proxy firewall",
+      "Static packet filter",
+      "Stateless router filter"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-D-001",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Information security elements",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An attacker quietly changes the amounts in a company's payment records without reading anything else. Which element of the CIA triad is under attack?",
+    "explanation": "Unauthorised changes to data attack integrity. Hashes, digital signatures and change logs help detect them.",
+    "options": [
+      "Availability",
+      "Authenticity",
+      "Confidentiality",
+      "Integrity"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-002",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "TCP flags",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which TCP flag tells the other side to abort a connection at once, and is what a closed port sends back to a SYN?",
+    "explanation": "RST resets the connection immediately and is the answer a closed port gives to a SYN. FIN closes a connection gracefully.",
+    "options": [
+      "FIN",
+      "RST",
+      "PSH",
+      "URG"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-D-003",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Password attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which attack tries every possible combination of characters until the password is found?",
+    "explanation": "A brute-force attack tests every combination, so it always works in the end but can take a very long time for long passwords. A dictionary attack only tries words from a list.",
+    "options": [
+      "Brute-force attack",
+      "Password spraying",
+      "Dictionary attack",
+      "Rainbow table attack"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-004",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "ARP poisoning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker sends unsolicited ARP replies telling hosts that the gateway's IP address belongs to the attacker's MAC address. What is this attack?",
+    "explanation": "ARP poisoning (spoofing) fills victims' ARP caches with a false mapping so their traffic goes to the attacker. Static ARP entries for key hosts and dynamic ARP inspection prevent it.",
+    "options": [
+      "DHCP starvation",
+      "MAC flooding",
+      "Port stealing via STP",
+      "ARP poisoning"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-005",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "SQL injection types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Injected input is stored safely at first, then later used unsafely in a different query, where it runs. What type of SQL injection is this?",
+    "explanation": "Second-order injection is triggered when stored data is reused in a later query. Every query must bind parameters, including those using data the app saved itself.",
+    "options": [
+      "Tautology-based",
+      "Union-based",
+      "Second-order",
+      "Error-based"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-006",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless concepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which IEEE standard family defines Wi-Fi wireless local area networks?",
+    "explanation": "802.11 covers wireless LANs. 802.3 is wired Ethernet, 802.15.4 is the low-rate radio under Zigbee, and 802.1Q is VLAN tagging.",
+    "options": [
+      "IEEE 802.11",
+      "IEEE 802.3",
+      "IEEE 802.1Q",
+      "IEEE 802.15.4"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-007",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "iOS hacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A jailbroken iPhone boots normally, but the jailbreak only comes back after the user runs an app on the phone. What type is it?",
+    "explanation": "A semi-untethered jailbreak needs an app on the device after each reboot, with no computer. A semi-tethered one needs a computer to re-apply it.",
+    "options": [
+      "Untethered",
+      "Fully signed",
+      "Semi-untethered",
+      "Tethered"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-008",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Container technology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Kubernetes component stores the whole cluster's state, including secrets, and so must be locked down and encrypted at rest?",
+    "explanation": "etcd is the key-value store behind the API server, holding every object and secret in the cluster. Anyone who can read etcd directly can read all the cluster's secrets.",
+    "options": [
+      "etcd",
+      "kube-proxy",
+      "kubelet",
+      "CoreDNS"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-009",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Cryptography concepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which type of encryption uses the same key to encrypt and decrypt?",
+    "explanation": "Symmetric ciphers such as AES use one shared key, which makes them fast but leaves the problem of sharing that key safely. Asymmetric systems use a public and private key pair.",
+    "options": [
+      "Hashing",
+      "Symmetric",
+      "Asymmetric",
+      "Steganographic"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-D-010",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Threat terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker uses a flaw that the software vendor does not yet know about and for which no patch exists. What is this called?",
+    "explanation": "A zero-day is exploited before the vendor has a fix, so the defender has had zero days to patch. A known vulnerability already has an advisory and often a patch.",
+    "options": [
+      "A known vulnerability",
+      "A misconfiguration",
+      "A zero-day exploit",
+      "A false positive"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-011",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Hacker classes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A well-funded team working for a government agency spies on a foreign defense contractor for years. What kind of attacker is this?",
+    "explanation": "State-sponsored hackers work for a government and have the resources for long, targeted campaigns. A hacktivist attacks to push a cause, often publicly.",
+    "options": [
+      "Hacktivist group member",
+      "Gray hat",
+      "State-sponsored hacker",
+      "Script kiddie"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-012",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "IDS evasion in scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester splits scan probes into very small IP fragments with $\\texttt{-f}$. Why?",
+    "explanation": "Tiny fragments split the TCP header across packets, so a filter or IDS that does not reassemble fragments may miss the probe. Modern firewalls usually reassemble, so this often fails today.",
+    "options": [
+      "It reveals the OS version",
+      "It makes the scan faster",
+      "It forces a full TCP connection each time",
+      "Some filters cannot reassemble them"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-013",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Steganography",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which steganography technique replaces the lowest bit of each pixel's colour values with bits of the hidden message?",
+    "explanation": "Changing only the lowest bit alters each colour so slightly that the image looks the same. Statistical steganalysis can still spot the changed bit patterns.",
+    "options": [
+      "Cipher block chaining mode",
+      "Block cipher padding",
+      "Run-length encoding",
+      "Least significant bit insertion"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-014",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "DoS attack techniques",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An attacker sends many TCP SYN packets from spoofed addresses and never completes the handshake. What attack is this?",
+    "explanation": "A SYN flood fills the server's queue of half-open connections so it cannot accept new ones. SYN cookies and rate limits are the usual defences.",
+    "options": [
+      "Smurf attack",
+      "Teardrop",
+      "Ping of death",
+      "SYN flood"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-015",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Web server attacks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker breaks into a company's web server and replaces its home page with a political message. What is this called?",
+    "explanation": "Defacement changes a site's visible content, usually to embarrass the owner or push a message. File integrity monitoring can alert on unexpected page changes.",
+    "options": [
+      "Pharming",
+      "Clickjacking",
+      "Web cache deception",
+      "Website defacement"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-016",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is MAC address filtering alone a weak way to control which devices join a Wi-Fi network?",
+    "explanation": "MAC addresses are sent in clear text, so an attacker can watch for an allowed one and copy it. Encryption with strong authentication is the real control.",
+    "options": [
+      "It hides the network name",
+      "It encrypts traffic with WEP",
+      "Allowed MACs are easy to copy",
+      "It only works on 2.4 GHz"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-017",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "OT concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In an industrial plant, which system lets operators watch and adjust the process on a screen?",
+    "explanation": "The HMI shows process values and accepts operator commands. A safety instrumented system acts on its own to bring the process to a safe state when limits are exceeded.",
+    "options": [
+      "Human-machine interface",
+      "Remote terminal unit",
+      "Programmable logic controller",
+      "Safety instrumented system"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-018",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Container technology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main security difference between a container and a virtual machine?",
+    "explanation": "Containers share the host kernel, so a kernel flaw can break isolation between them. A virtual machine runs its own kernel on a hypervisor.",
+    "options": [
+      "Containers need no images",
+      "Containers share the host kernel",
+      "Containers run their own kernel",
+      "VMs cannot be isolated from each other"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-D-019",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Disk encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop is stolen, but its data cannot be read because the whole drive was encrypted. Which tool built into Windows does this?",
+    "explanation": "BitLocker encrypts whole volumes, protecting data at rest if the device is lost. EFS encrypts individual files and folders, not the whole drive.",
+    "options": [
+      "EFS for single files",
+      "BitLocker",
+      "Windows Hello",
+      "Kerberos"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-D-020",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Zero trust",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company stops trusting devices just because they are on the office network and checks every access request on identity and device health. What is this model called?",
+    "explanation": "Zero trust assumes no request is safe because of where it comes from, so each one is authenticated and authorised. Separation of duties splits critical tasks between people.",
+    "options": [
+      "Security through obscurity",
+      "Zero trust",
+      "Separation of duties",
+      "Least functionality"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-D-021",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Indicators of compromise",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst finds a file hash and a command and control domain that match a known malware family on a workstation. What are these artifacts called?",
+    "explanation": "Indicators of compromise are artifacts such as hashes, domains and IP addresses that show a system was likely breached. Rules of engagement set the limits of a test.",
+    "options": [
+      "Security configuration baselines",
+      "Risk registers",
+      "Rules of engagement",
+      "Indicators of compromise"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-022",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "NetBIOS enumeration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which port does the NetBIOS name service use?",
+    "explanation": "The NetBIOS name service uses UDP 137, the datagram service UDP 138 and the session service TCP 139. TCP 445 is SMB directly over TCP.",
+    "options": [
+      "UDP 137",
+      "TCP 139",
+      "TCP 445",
+      "UDP 138"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-023",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Persistence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker adds a value under a Windows Run registry key. What is the most likely goal?",
+    "explanation": "Programs listed under the Run keys launch whenever a user logs on, a common persistence method. Reviewing autorun locations helps defenders find it.",
+    "options": [
+      "Clear the event logs",
+      "Crack local hashes",
+      "Disable the host firewall one time",
+      "Start malware at each logon"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-024",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "Social engineering techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker poses as IT support on the phone and offers to fix a slow computer in exchange for the user's login details. What technique is this?",
+    "explanation": "Quid pro quo trades a favour or service for information. Baiting leaves a lure, such as a USB drive, for the victim to find.",
+    "options": [
+      "Shoulder surfing",
+      "Baiting",
+      "Quid pro quo",
+      "Tailgating"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-025",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "Session management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a shared library PC, a user closes the browser without logging out and the next user is still signed in to their account. Which weakness does this show?",
+    "explanation": "Sessions should expire after inactivity and end on logout, so a session left open cannot be reused. TLS settings protect data in transit, not abandoned sessions.",
+    "options": [
+      "Directory listing turned on",
+      "A weak TLS cipher suite",
+      "An open redirect",
+      "No session expiry or timeout"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-026",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Wireless threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker floods a Wi-Fi channel with radio noise so that no client can connect. What is this attack?",
+    "explanation": "Jamming is a physical-layer denial of service that drowns out legitimate signals. It cannot be fixed by encryption; locating and removing the source is needed.",
+    "options": [
+      "Jamming",
+      "Bluesnarfing",
+      "Key reinstallation",
+      "Rogue DHCP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-027",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "OT countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which step best separates a plant's control network from the corporate IT network?",
+    "explanation": "An industrial DMZ with firewalls on both sides keeps corporate traffic from reaching controllers directly. A flat network lets an IT infection spread straight into OT.",
+    "options": [
+      "A DMZ between IT and OT",
+      "Shared admin accounts",
+      "One flat shared network",
+      "Direct internet access for PLCs"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-028",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Cloud threats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a shared cloud host, an attacker's VM measures cache timing to learn secrets from another tenant's VM. What kind of attack is this?",
+    "explanation": "A side-channel attack infers secrets from physical effects such as timing or cache use rather than from a software bug. Dedicated hosts remove the shared hardware.",
+    "options": [
+      "Cross-site request forgery",
+      "Phishing",
+      "Side-channel attack",
+      "DNS tunneling"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-029",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Key exchange",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which property means that past TLS sessions stay secret even if the server's long-term private key is stolen later?",
+    "explanation": "With forward secrecy each session uses a fresh ephemeral key exchange, such as ECDHE, so old traffic cannot be decrypted with the long-term key. Key escrow keeps a copy of keys with a third party.",
+    "options": [
+      "Key stretching",
+      "Certificate pinning",
+      "Key escrow with a third party",
+      "Perfect forward secrecy"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CEH-D-030",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Laws and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A U.S. hospital wants to know which law sets privacy and security rules for its patients' health records. Which law is it?",
+    "explanation": "HIPAA and its Security and Privacy Rules govern protected health information in the United States. GDPR is the European Union's data protection regulation.",
+    "options": [
+      "HIPAA",
+      "DMCA",
+      "PCI DSS",
+      "GDPR"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-031",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement best describes risk in information security?",
+    "explanation": "Risk combines how likely a threat is to exploit a vulnerability with the harm that would follow. A software bug on its own is a vulnerability, not a risk.",
+    "options": [
+      "A full list of all company assets and owners",
+      "Chance a threat exploits a weakness",
+      "Any software bug found in testing",
+      "The cost of a security product"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-D-032",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehRecon",
+    "skill": "Enumeration countermeasures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change best stops attackers from enumerating SNMP device details?",
+    "explanation": "SNMPv3 adds user authentication and encryption, so a guessed community string no longer reveals the MIB. SNMPv1 and v2c send the community string in clear text, however long it is.",
+    "options": [
+      "Move to SNMPv3 with authentication",
+      "Rename the device's host name",
+      "Keep SNMPv1 with a very long string",
+      "Open UDP 162 to the internet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-033",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehSystem",
+    "skill": "Malware components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Malware authors use a tool to compress or encrypt their program so that antivirus signatures no longer match. What is this tool called?",
+    "explanation": "A crypter or packer encrypts or compresses the payload and unpacks it at run time, hiding it from signature scans. A dropper installs other malware, and a wrapper binds malware to a legitimate program.",
+    "options": [
+      "Wrapper",
+      "Crypter or packer",
+      "Dropper",
+      "Keystroke logger"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CEH-D-034",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehNetwork",
+    "skill": "IDS types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IDS misses a real attack because its traffic matches no known rule. What is this result called?",
+    "explanation": "A false negative lets a real attack pass without an alert, which is the most dangerous outcome. A false positive raises an alert on harmless traffic.",
+    "options": [
+      "True negative",
+      "True positive",
+      "False negative",
+      "False positive"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-035",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehWeb",
+    "skill": "SQL injection types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A database's verbose error message reveals table names and data when a tester submits malformed input. What type of SQL injection uses this?",
+    "explanation": "Error-based injection reads information out of database error messages. Showing generic error pages to users takes this channel away.",
+    "options": [
+      "Time-based blind",
+      "Second-order",
+      "Error-based",
+      "Boolean-based blind"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-036",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehWireless",
+    "skill": "Bluetooth hacking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker uses a Bluetooth flaw to take control of a phone, placing calls and reading messages. What is this called?",
+    "explanation": "Bluebugging gives the attacker command of the device. Keeping Bluetooth off or non-discoverable when not needed and patching phones reduce the risk.",
+    "options": [
+      "Blueprinting",
+      "Bluejacking",
+      "Bluebugging",
+      "Bluesmacking"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CEH-D-037",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehMobile",
+    "skill": "IoT concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which short-range, low-power mesh protocol is common in smart home sensors and lights?",
+    "explanation": "Zigbee runs on IEEE 802.15.4 radios and forms low-power mesh networks of small devices. LTE is a cellular standard.",
+    "options": [
+      "Zigbee",
+      "LTE",
+      "BGP",
+      "Ethernet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-038",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehCloud",
+    "skill": "Cloud security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which control best limits the damage if one cloud user's access keys are stolen?",
+    "explanation": "If each identity has only the permissions it needs, stolen keys can do little. A shared root account gives the thief everything.",
+    "options": [
+      "Least-privilege IAM policies",
+      "Public read on all storage",
+      "One shared root account for all staff",
+      "Keys with no expiry"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-039",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehCrypto",
+    "skill": "Hash functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is MD5 no longer trusted for digital signatures or certificates?",
+    "explanation": "Researchers can now build two different inputs with the same MD5 hash, so a signature over one could be moved to the other. SHA-256 or stronger is used instead.",
+    "options": [
+      "Collisions can be made on purpose",
+      "Its output is too long",
+      "It needs a 2048-bit secret key",
+      "It can only hash text"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CEH-D-040",
+    "section": "ceh",
+    "test": 0,
+    "module": 1,
+    "domain": "cehIntro",
+    "skill": "Security controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a ransomware attack, a company restores its files from offline backups. What type of control are the backups acting as?",
+    "explanation": "Restoring data puts the system back after an incident, which is a corrective control. A preventive control would have stopped the ransomware from running in the first place.",
+    "options": [
+      "Deterrent control",
+      "Corrective control",
+      "Preventive control",
+      "Detective control"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]

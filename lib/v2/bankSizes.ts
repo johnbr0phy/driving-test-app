@@ -132,4 +132,5 @@ export const BANK_SIZES: Record<string, number> = {
   nziqn: 200,
   nzensf: 212,
   prince2: 200,
+  ceh: 200,
 };

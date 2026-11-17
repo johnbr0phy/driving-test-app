@@ -300,6 +300,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   pentestplus: { title: "CompTIA PenTest+ PT0-003", description: "Practise scoping, reconnaissance, vulnerability analysis, exploitation and post-exploitation, all explained." },
   sc200: { title: "Microsoft SC-200", description: "Practise Defender XDR, Microsoft Sentinel, detections, incident response and KQL threat hunting." },
   sc900: { title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900", description: "Review Zero Trust and identity concepts, Microsoft Entra, Defender, Sentinel and Purview." },
+  ceh: { title: "EC-Council CEH v13", description: "Practise footprinting, scanning, system, network, web, wireless, mobile, cloud and crypto attacks, all explained." },
   cysa: { title: "CompTIA CySA+ CS0-004", description: "Practise security operations, vulnerability management, incident response and reporting." },
   gcppca: { title: "Google Cloud Professional Cloud Architect", description: "Practise architecture scenarios, case studies, security, AI and operations on Google Cloud." },
   gcdl: { title: "Google Cloud Digital Leader", description: "Study cloud transformation, data, AI, modernization, security and cloud operations." },

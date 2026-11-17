@@ -5073,6 +5073,20 @@
     --brand-gradient-to: 210 40% 95%;
   }
 
+  /* EC-Council CEH v13 theme: deep hacker green (v2 exam; matches lib/v2/exams/ceh.ts theme) */
+  [data-theme="ceh"] {
+    --brand: 137 85% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 137 45% 96%;
+    --brand-hover: 137 85% 15%;
+    --brand-dark: 137 85% 13%;
+    --brand-darker: 137 80% 9%;
+    --brand-muted: 137 30% 70%;
+    --brand-border: 137 30% 80%;
+    --brand-border-light: 137 25% 89%;
+    --brand-gradient-to: 160 40% 95%;
+  }
+
   /* Microsoft SC-900 theme: deep slate indigo (v2 exam; matches lib/v2/exams/sc900.ts theme) */
   [data-theme="sc900"] {
     --brand: 241 15% 26%;
@@ -10275,6 +10289,18 @@
     --brand-muted: 249 22% 45%;
     --brand-dark: 249 45% 65%;
     --brand-darker: 249 42% 78%;
+  }
+
+  .dark [data-theme="ceh"] {
+    --brand: 137 85% 28.7%;
+    --brand-hover: 137 85% 20.7%;
+    --brand-light: 137 45% 13%;
+    --brand-gradient-to: 160 40% 11%;
+    --brand-border-light: 137 25% 24%;
+    --brand-border: 137 30% 34%;
+    --brand-muted: 137 30% 45%;
+    --brand-dark: 137 85% 65%;
+    --brand-darker: 137 80% 78%;
   }
 
   .dark [data-theme="sc900"] {

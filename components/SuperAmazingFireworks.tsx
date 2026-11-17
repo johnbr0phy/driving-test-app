@@ -1,8 +1,8 @@
 "use client";
 
 // PROTO: Super Amazing Mode — when the localStorage flag is on, run
-// continuous fireworks behind the UI on every page except the marketing
-// homepage. Toggled from the dashboard card, which dispatches
+// continuous fireworks behind the UI on every page, the homepage included.
+// Toggled from the dashboard card, which dispatches
 // "super-amazing-mode" so this reacts in the same tab.
 //
 // Layering: the fireworks layer paints the page background colour itself and
@@ -13,7 +13,6 @@
 // hide their bodies and only their heads poke out.
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import { Fireworks } from "@/components/Fireworks";
 import { SuperAmazingTigers } from "@/components/SuperAmazingTigers";
 
@@ -21,7 +20,6 @@ export const SUPER_AMAZING_KEY = "superAmazingMode";
 export const SUPER_AMAZING_EVENT = "super-amazing-mode";
 
 export function SuperAmazingFireworks() {
-  const pathname = usePathname();
   const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
@@ -35,8 +33,7 @@ export function SuperAmazingFireworks() {
     };
   }, []);
 
-  const isMarketingHome = pathname === "/" || pathname === "/dmv-practice-test" || pathname === "/es";
-  const on = enabled && !isMarketingHome;
+  const on = enabled;
 
   useEffect(() => {
     document.documentElement.classList.toggle("sam-on", on);

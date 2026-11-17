@@ -289,11 +289,11 @@
     "difficulty": 2,
     "format": "single",
     "skill": "OSI model",
-    "stem": "At which OSI layer do routers forward packets using IP addresses?",
+    "stem": "A device reads each packet's destination IP address to pick the next hop toward another network. Which OSI layer is it working at?",
     "options": [
+      "Layer 4, Transport",
       "Layer 2, Data link",
       "Layer 7, Application",
-      "Layer 4, Transport",
       "Layer 3, Network"
     ],
     "correct": [
@@ -436,17 +436,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Risk treatment",
-    "stem": "A company buys cyber insurance to cover losses from a data breach. Which risk treatment is this?",
+    "stem": "A hospital's contract makes its outsourced billing firm pay the costs of any breach the firm causes. Which risk treatment is this?",
     "options": [
       "Risk transfer",
       "Risk avoidance",
-      "Risk acceptance",
-      "Risk mitigation"
+      "Risk mitigation",
+      "Risk acceptance"
     ],
     "correct": [
       0
     ],
-    "explanation": "Transference shifts some of the financial impact to another party, such as an insurer. The company still owns the risk of harm to its customers and reputation."
+    "explanation": "Transference shifts some of the financial impact to another party by contract or insurance. The hospital still owns the risk of harm to its patients and reputation."
   },
   {
     "id": "ISC2CC-T1-022",
@@ -1347,15 +1347,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Firewalls",
-    "stem": "A stateful firewall differs from a simple packet filter because it:",
+    "stem": "A firewall lets an inbound packet through only because it belongs to a session an inside host started. What kind of firewall is this?",
     "options": [
-      "Inspects only the MAC addresses in frames",
-      "Tracks the state of each connection",
-      "Encrypts all traffic it passes",
-      "Blocks every inbound packet"
+      "A network switch",
+      "A stateless packet filter",
+      "A load balancer",
+      "A stateful firewall"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "A stateful firewall remembers connections it has seen, so it can allow return traffic for sessions started inside. A basic packet filter judges each packet on its own."
   },
@@ -1371,12 +1371,12 @@
     "stem": "A file is locked with a secret key, and the person receiving it needs that same key to open it. What kind of cryptography is this?",
     "options": [
       "Hashing",
+      "Symmetric encryption",
       "Asymmetric encryption",
-      "Digital signing",
-      "Symmetric encryption"
+      "Digital signing"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Symmetric ciphers such as AES use one shared secret key. They are fast, but the key must be shared securely."
   },
@@ -1389,12 +1389,12 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Cloud service models",
-    "stem": "A company rents virtual machines and installs and patches its own operating systems on them. Which cloud service model is this?",
+    "stem": "A team must pick the operating system and load its own drivers on its cloud servers. Which cloud service model gives it that control?",
     "options": [
-      "SaaS",
       "PaaS",
+      "FaaS",
       "IaaS",
-      "FaaS"
+      "SaaS"
     ],
     "correct": [
       2
@@ -1431,15 +1431,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Single sign-on",
-    "stem": "What does single sign-on (SSO) give users?",
+    "stem": "A nurse signs in once each morning, then opens the charting, lab and pharmacy apps without signing in again. What is this?",
     "options": [
-      "One sign-in for many applications",
-      "Automatic admin rights everywhere",
-      "Access without any authentication",
-      "A different password for each app"
+      "Separation of duties",
+      "Password rotation",
+      "Just-in-time access",
+      "Single sign-on"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "SSO lets one authentication grant access to many connected applications. It reduces password fatigue, but the single account then needs strong protection such as MFA."
   },
@@ -1475,13 +1475,13 @@
     "skill": "Control types",
     "stem": "Which of these is an administrative control?",
     "options": [
+      "A required annual security training",
       "A locked cage around network gear",
       "A host-based firewall on all laptops",
-      "Encryption of backup tapes",
-      "A required annual security training"
+      "Encryption of backup tapes"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Administrative (managerial) controls are policies, procedures and training that guide people. A firewall and encryption are technical controls, and a cage is physical."
   },
@@ -1620,17 +1620,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Privileged accounts",
-    "stem": "Why should administrators use a separate account for admin tasks instead of their everyday account?",
+    "stem": "An administrator reads email and browses the web while signed in with domain admin rights. What is the main risk?",
     "options": [
-      "To keep admin actions out of the logs",
-      "So they need fewer passwords overall",
-      "So the admin account can be shared by the team",
-      "To limit damage if the daily account is compromised"
+      "Her mailbox will fill up faster",
+      "A bad link could run with admin rights",
+      "Her email will be stored unencrypted",
+      "The browser will skip its updates"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "If the everyday account used for email and browsing is phished, the attacker does not gain admin rights. The admin account is used only when needed."
+    "explanation": "Email and web links are where phishing and malware land. Done as admin, a bad click runs with admin rights, so admins use an everyday account for email and browsing and the admin account only when needed."
   },
   {
     "id": "ISC2CC-T1-078",
@@ -1641,17 +1641,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Asymmetric encryption",
-    "stem": "Alice wants to send Bob a message only Bob can read. Which key should she encrypt it with?",
+    "stem": "A company posts a key on its website so customers can send it files that only the company can open. Which key does it post?",
     "options": [
-      "Alice's public key",
-      "Bob's public key",
-      "Bob's private key",
-      "Alice's private key"
+      "A customer's private key",
+      "A shared symmetric key",
+      "Its private key",
+      "Its public key"
     ],
     "correct": [
-      1
+      3
     ],
-    "explanation": "Anything encrypted with Bob's public key can be decrypted only with Bob's private key, which only he holds."
+    "explanation": "Anything encrypted with the company's public key can be decrypted only with its private key, which it keeps secret. The private key is never posted."
   },
   {
     "id": "ISC2CC-T1-079",
@@ -1854,15 +1854,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Due care",
-    "stem": "A manager makes sure that patches are actually applied each month as policy requires. Which concept does this show?",
+    "stem": "Following the patch policy, a manager has her team install each month's security patches on every server. Which concept does this show?",
     "options": [
-      "Separation of duties",
       "Due diligence",
+      "Due care",
       "Risk appetite",
-      "Due care"
+      "Separation of duties"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Due care is doing what a reasonable person would do to protect assets, such as carrying out the patching. Due diligence is the research and checking that tells you what care is needed."
   },
@@ -1920,12 +1920,12 @@
     "stem": "Who is a high-level security dashboard showing a few trend lines and red, amber and green ratings mainly for?",
     "options": [
       "Network engineers",
-      "Senior leaders",
       "Malware analysts",
-      "Help desk agents"
+      "Help desk agents",
+      "Senior leaders"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Executive dashboards summarize risk posture at a glance so leaders can decide and fund. Technical teams need the detailed data underneath."
   },
@@ -2620,12 +2620,12 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Access review",
-    "stem": "Who is usually best placed to confirm, in an access review, that a user still needs access to a business application?",
+    "stem": "An access review lists everyone who can use the claims system. Whose sign-off best shows each person still needs that access?",
     "options": [
       "The user's manager or the data owner",
       "Any member of the help desk",
-      "The user herself, by self-approval",
-      "The vendor that sold the application software"
+      "The vendor that sold the application software",
+      "The user herself, by self-approval"
     ],
     "correct": [
       0
@@ -3298,17 +3298,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Cloud service models",
-    "stem": "A startup pushes its own app code to a managed platform; the provider keeps the operating system and language runtime patched. Which model is this?",
+    "stem": "A startup runs its app on a Platform as a Service offering. Which task stays with the startup?",
     "options": [
-      "Private cloud",
-      "Infrastructure as a Service",
-      "Software as a Service",
-      "Platform as a Service"
+      "Updating the language runtime",
+      "Replacing failed server disks",
+      "Patching the operating system",
+      "Securing its own app code"
     ],
     "correct": [
       3
     ],
-    "explanation": "PaaS provides a managed platform for running the customer's own applications. The customer is still responsible for the code and its data."
+    "explanation": "In PaaS the provider runs and patches the operating system, runtime and hardware. The customer is still responsible for its own code, its data and who can use them."
   },
   {
     "id": "ISC2CC-T2-057",
@@ -3487,17 +3487,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Digital signatures",
-    "stem": "When Bob signs a document digitally, which key does he use to create the signature?",
+    "stem": "A reader wants to check the digital signature Bob put on a contract. Which key does she use to verify it?",
     "options": [
+      "Her own private key",
+      "Bob's private key",
       "A shared session key",
-      "His public key",
-      "The reader's public key",
-      "His private key"
+      "Bob's public key"
     ],
     "correct": [
       3
     ],
-    "explanation": "A signature made with Bob's private key can be checked by anyone with his public key, which proves the signer and that the document was not changed."
+    "explanation": "Bob signs with his private key, and anyone can verify the signature with his public key. A valid check shows Bob signed and the contract was not changed."
   },
   {
     "id": "ISC2CC-T2-066",
@@ -3770,7 +3770,7 @@
     "skill": "Quantum-resistant cryptography",
     "stem": "Why is there a push to adopt quantum-resistant (post-quantum) cryptography?",
     "options": [
-      "They could break today's public-key algorithms",
+      "Quantum computers could break today's public keys",
       "Today's symmetric ciphers are already broken",
       "Public keys are now too long to store",
       "Quantum computers make hashing reversible"
@@ -3915,12 +3915,12 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Application testing",
-    "stem": "Which technique examines an application's source code for flaws without running it?",
+    "stem": "On every commit, a tool reads the code in the repository and flags an unsafe string copy before the program is ever built. What kind of testing is this?",
     "options": [
-      "Load testing",
+      "Dynamic analysis",
       "Static analysis",
-      "Fuzzing the live app",
-      "Dynamic analysis"
+      "Load testing",
+      "Fuzzing the live app"
     ],
     "correct": [
       1
@@ -4504,10 +4504,10 @@
     "difficulty": 2,
     "format": "single",
     "skill": "OSI model",
-    "stem": "At which OSI layer does encryption of data for transmission, such as converting formats, traditionally sit?",
+    "stem": "In the classic OSI model, which layer encrypts and decrypts data for the application layer above it?",
     "options": [
-      "Transport",
       "Session",
+      "Transport",
       "Presentation",
       "Physical"
     ],

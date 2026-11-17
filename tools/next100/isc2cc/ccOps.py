@@ -114,7 +114,7 @@ ITEMS = [
       ["A risk register", "A threat feed", "A change rollback plan"],
       "A baseline is the approved secure configuration. Configuration management checks systems against it and flags drift."),
     S(2, 2, "Application testing",
-      "Which technique examines an application's source code for flaws without running it?",
+      "On every commit, a tool reads the code in the repository and flags an unsafe string copy before the program is ever built. What kind of testing is this?",
       "Static analysis",
       ["Dynamic analysis", "Fuzzing the live app", "Load testing"],
       "Static application security testing (SAST) reviews code at rest. Dynamic analysis (DAST) tests the running application from the outside."),

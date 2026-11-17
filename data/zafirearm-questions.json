@@ -515,7 +515,7 @@
     "optionD": "It stays valid for 90 more days only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A renewal application lodged within the required period keeps the licence valid until the application is decided."
+    "explanation": "Section 24(4) provides that if a renewal application is lodged within the period in section 24(1), at least 90 days before expiry, the licence remains valid until the application is decided."
   },
   {
     "type": "ZAFIREARM",
@@ -942,14 +942,14 @@
     "state": "ALL",
     "questionId": "ZAFIREARM-LICENSING-028",
     "category": "zafirearmLicensing",
-    "question": "A written temporary-storage permission specifies a particular street address. Which part of the arrangement does that address define?",
-    "optionA": "Where the holder lives",
-    "optionB": "Where the firearm may be used",
-    "optionC": "Where the DFO is based",
-    "optionD": "The place where the safe must be",
+    "question": "A licence holder stores a friend's firearm under a written storage authorisation endorsed by a DFO. Under regulation 86(4)(a)(ii), where must that firearm be kept?",
+    "optionA": "In any locked cupboard at the storer's own home",
+    "optionB": "In a safe at the friend's own home address",
+    "optionC": "At the police station of the endorsing DFO",
+    "optionD": "In a prescribed safe at the place named in the authorisation",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The firearm must be kept in the prescribed safe at the place named in the storage authorisation."
+    "explanation": "Regulation 86(4)(a)(ii) requires the firearm to be stored in a prescribed safe at the place mentioned in the written authorisation."
   },
   {
     "type": "ZAFIREARM",
@@ -998,14 +998,14 @@
     "state": "ALL",
     "questionId": "ZAFIREARM-LICENSING-032",
     "category": "zafirearmLicensing",
-    "question": "What sets the duration of a section 21 temporary possession authorisation, rather than an ordinary licence term?",
-    "optionA": "Two years from the date of issue",
-    "optionB": "One year from the date of issue",
-    "optionC": "Five years from the date of issue",
-    "optionD": "The period the Registrar determines",
+    "question": "A visitor who is not a South African citizen asks whether the Registrar may issue them a section 21 temporary authorisation to possess a firearm. What does section 21(1) say about who may receive one?",
+    "optionA": "Only South African citizens",
+    "optionB": "Only citizens and permanent residents",
+    "optionC": "Only people who already hold a firearm licence",
+    "optionD": "Any person, including a non-citizen",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The Registrar determines the period of a temporary authorisation. No ordinary licence term applies to it."
+    "explanation": "Section 21(1) allows the Registrar to issue a temporary authorisation to possess a firearm to any person, including a non-citizen, for a period and on conditions the Registrar sets."
   },
   {
     "type": "ZAFIREARM",
@@ -1138,14 +1138,14 @@
     "state": "ALL",
     "questionId": "ZAFIREARM-LICENSING-042",
     "category": "zafirearmLicensing",
-    "question": "Before cancelling a licence under section 28(2), how much written notice must the Registrar give for the holder to submit representations?",
+    "question": "Before the Registrar may issue a section 28(2) cancellation notice, how much written notice to submit representations does section 28(3)(a) require?",
     "optionA": "Seven days",
     "optionB": "Thirty days",
     "optionC": "Fourteen days",
     "optionD": "Sixty days",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Section 28(3) provides thirty days' written notice for representations before cancellation."
+    "explanation": "Section 28(3)(a) requires the Registrar to give the holder 30 days' notice in writing to submit written representations before a cancellation notice under section 28(2) may be issued."
   },
   {
     "type": "ZAFIREARM",
@@ -1321,10 +1321,10 @@
     "questionId": "ZAFIREARM-LICENSING-055",
     "category": "zafirearmLicensing",
     "question": "A trust deed allows the trust to hold firearms for a stated purpose but places no limit at all on how long it may hold them. Which required element is missing?",
-    "optionA": "A fixed ten-year end date",
-    "optionB": "A rule that the firearms be insured",
-    "optionC": "A limit tying it to how long it is needed",
-    "optionD": "A rule that trustees be dedicated hunters",
+    "optionA": "A clause fixing a ten-year end date for possession",
+    "optionB": "A clause requiring the firearms to be insured",
+    "optionC": "A clause ending possession once the purpose no longer requires it",
+    "optionD": "A clause requiring every trustee to be a dedicated hunter",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Section 7 requires that possession last only while it is necessary to achieve the stated intended purpose."
@@ -1656,14 +1656,14 @@
     "state": "ALL",
     "questionId": "ZAFIREARM-CUSTODY-019",
     "category": "zafirearmCustody",
-    "question": "At premises with a lawful firearm-control arrangement, the alternative locker opens only when two specific people act together. Which option is described?",
-    "optionA": "A strongroom built to the SABS standard",
-    "optionB": "A temporary storage authorisation",
-    "optionC": "A regulation 86(5) lock-away safe",
-    "optionD": "A dealer's secured storeroom",
+    "question": "At premises where the occupier exercises firearm control, a visitor hands a firearm to the occupier's designated person. Apart from an SABS 953 safe or strongroom, which storage may regulation 86(5) allow?",
+    "optionA": "An installed lock-away safe that the designated person alone opens with a key",
+    "optionB": "A locked steel cabinet that the visiting holder alone can open",
+    "optionC": "An installed lock-away safe that the designated person and the holder can open only jointly",
+    "optionD": "A locked drawer at reception that any staff member on duty can open",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Regulation 86(5) allows a prescribed installed lock-away safe needing joint opening, alongside the compliant safe or strongroom option."
+    "explanation": "Regulation 86(5)(c), as amended in 2012, allows a prescribed lock-away safe installed on the premises that can only be opened jointly by the designated person and the holder."
   },
   {
     "type": "ZAFIREARM",
@@ -2160,14 +2160,14 @@
     "state": "ALL",
     "questionId": "ZAFIREARM-DUTIES-007",
     "category": "zafirearmDuties",
-    "question": "A licence holder's physical address changes. What period applies to the written notification under section 25?",
-    "optionA": "Within 7 days",
-    "optionB": "Within 90 days",
-    "optionC": "Within 30 days",
-    "optionD": "At the next renewal",
+    "question": "The Registrar receives a holder's written notice of a changed physical address under section 25. What does section 25(2) require of the Registrar?",
+    "optionA": "Issue a new licence card within 30 days",
+    "optionB": "Inspect the new address within 60 days",
+    "optionC": "Acknowledge receipt in writing within 30 days",
+    "optionD": "Ask the local DFO to confirm it within 7 days",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Written notification must be given within 30 days of the change. It is not left until renewal."
+    "explanation": "Section 25(2) requires the Registrar to acknowledge receipt of the notice in writing within 30 days after receiving it. The Act does not require a new card or an inspection for an address change."
   },
   {
     "type": "ZAFIREARM",
@@ -2384,14 +2384,14 @@
     "state": "ALL",
     "questionId": "ZAFIREARM-DUTIES-023",
     "category": "zafirearmDuties",
-    "question": "A person declared unfit has filed an appeal and asks whether filing restores the right to possess firearms. What is the rule?",
-    "optionA": "Filing restores the right to possess",
-    "optionB": "Possession resumes after 30 days",
-    "optionC": "Unfitness stays until the appeal ends",
-    "optionD": "One firearm may be kept in the meantime",
+    "question": "A primary licence holder is declared unfit and no appeal is lodged. Under section 104(4), within what period after the time for an appeal elapses must a section 12 additional licence holder apply for a licence in their own name?",
+    "optionA": "Within 7 days",
+    "optionB": "Within 60 days",
+    "optionC": "Within 30 days",
+    "optionD": "Within 90 days",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Unfitness remains in effect pending finalisation of the appeal under section 104(1)(b)."
+    "explanation": "Section 104(4) lets the additional licence holder apply for a new licence in their own name. If no application is made within 30 days of the time for an appeal elapsing, or of an appeal that leaves the unfitness in place being finalised, the additional licence lapses."
   },
   {
     "type": "ZAFIREARM",

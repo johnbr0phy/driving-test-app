@@ -54,9 +54,9 @@ Q("For ordinary home storage when a licensed firearm is not under personal contr
 Q("An owner relies on an existing safe approved under the previous law. What formal recognition is required for the deemed-compliance provision, rather than assuming its age is enough?",
  "A DFO certificate for that safe","Proof the safe is over ten years old","A dealer's receipt for the safe","Nothing, as old safes are exempt",
  "Under regulation 86(8), as amended, the DFO must issue the relevant certificate for a qualifying existing safe.")
-Q("At premises with a lawful firearm-control arrangement, the alternative locker opens only when two specific people act together. Which option is described?",
- "A regulation 86(5) lock-away safe","A strongroom built to the SABS standard","A temporary storage authorisation","A dealer's secured storeroom",
- "Regulation 86(5) allows a prescribed installed lock-away safe needing joint opening, alongside the compliant safe or strongroom option.")
+Q("At premises where the occupier exercises firearm control, a visitor hands a firearm to the occupier's designated person. Apart from an SABS 953 safe or strongroom, which storage may regulation 86(5) allow?",
+ "An installed lock-away safe that the designated person and the holder can open only jointly","An installed lock-away safe that the designated person alone opens with a key","A locked steel cabinet that the visiting holder alone can open","A locked drawer at reception that any staff member on duty can open",
+ "Regulation 86(5)(c), as amended in 2012, allows a prescribed lock-away safe installed on the premises that can only be opened jointly by the designated person and the holder.")
 Q("An owner says the storage rule has not been triggered because the firearm is on their hip at all times. Which factual question decides that claim?",
  "Whether it is under their direct control","Whether it is in the same house as them","Whether the outside doors are locked","Whether it is unloaded in the holster",
  "The regulation contrasts prescribed storage with direct personal and physical control. Being somewhere in the house is not the same thing.")

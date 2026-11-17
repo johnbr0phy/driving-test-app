@@ -110,7 +110,7 @@ Q("After the section 102 procedure, the Registrar finds that a person may not po
  "A declaration of unfitness affects all competency certificates, licences, permits and authorisations under section 104, not just one licence.")
 Q("An owner lodges a complete licence-renewal application within the statutory period, but the Registrar has not decided it by the original expiry date. What does section 24 provide?",
  "It stays valid until the Registrar decides","It expires on its original expiry date","It stays valid for 30 more days only","It stays valid for 90 more days only",
- "A renewal application lodged within the required period keeps the licence valid until the application is decided.")
+ "Section 24(4) provides that if a renewal application is lodged within the period in section 24(1), at least 90 days before expiry, the licence remains valid until the application is decided.")
 Q("A person holds a section 12 additional licence because they live on the primary licence holder's premises, then moves elsewhere. What is the statutory consequence?",
  "The additional licence lapses and must be returned","The additional licence moves with the holder","The additional licence stays valid until renewal","The additional licence becomes a primary licence",
  "The additional licence lapses when its holder moves from the premises and must be returned forthwith.")

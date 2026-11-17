@@ -81,9 +81,9 @@ Q("A DFO compares the person at the counter with the ID book and the name on the
 Q("A buyer presents a shop receipt but is asked for the licence, permit or authorisation covering the firearm. What legal matter is the official checking?",
  "That the buyer may legally hold it","That the price was paid in full","That the buyer now owns it outright","That the buyer's tax affairs are in order",
  "A receipt shows a transaction or ownership. Lawful possession requires the authority the Act provides, such as a licence.")
-Q("A written temporary-storage permission specifies a particular street address. Which part of the arrangement does that address define?",
- "The place where the safe must be","Where the holder lives","Where the firearm may be used","Where the DFO is based",
- "The firearm must be kept in the prescribed safe at the place named in the storage authorisation.")
+Q("A licence holder stores a friend's firearm under a written storage authorisation endorsed by a DFO. Under regulation 86(4)(a)(ii), where must that firearm be kept?",
+ "In a prescribed safe at the place named in the authorisation","In any locked cupboard at the storer's own home","In a safe at the friend's own home address","At the police station of the endorsing DFO",
+ "Regulation 86(4)(a)(ii) requires the firearm to be stored in a prescribed safe at the place mentioned in the written authorisation.")
 Q("Under section 27, what is the ordinary validity period of a section 14 restricted-firearm self-defence licence?",
  "Two years","One year","Five years","Ten years",
  "The statutory table gives a section 14 licence a two-year period, subject to termination and renewal provisions.")
@@ -93,9 +93,9 @@ Q("Under section 27, what is the ordinary validity period of a section 13 self-d
 Q("Under section 27, what is the ordinary validity period of a section 15 occasional hunting or sport-shooting licence?",
  "Ten years","Five years","Seven years","Fifteen years",
  "The statutory period for a section 15 licence is ten years, subject to the Act's termination and renewal rules.")
-Q("What sets the duration of a section 21 temporary possession authorisation, rather than an ordinary licence term?",
- "The period the Registrar determines","Two years from the date of issue","One year from the date of issue","Five years from the date of issue",
- "The Registrar determines the period of a temporary authorisation. No ordinary licence term applies to it.")
+Q("A visitor who is not a South African citizen asks whether the Registrar may issue them a section 21 temporary authorisation to possess a firearm. What does section 21(1) say about who may receive one?",
+ "Any person, including a non-citizen","Only South African citizens","Only citizens and permanent residents","Only people who already hold a firearm licence",
+ "Section 21(1) allows the Registrar to issue a temporary authorisation to possess a firearm to any person, including a non-citizen, for a period and on conditions the Registrar sets.")
 Q("An applicant for dedicated hunter status needs the statutory declaration supporting their registered membership. Who supplies it, through its chairperson or written delegate?",
  "Their accredited hunting association","Any registered hunting club nearby","A professional hunting outfitter","The provincial nature conservation office",
  "Section 16 requires the declaration from the relevant accredited hunting association, not from any club or outfitter.")
@@ -123,9 +123,9 @@ Q("A section 12 holder has moved away from the primary licence holder's premises
 Q("A company nominates a new competent responsible person under section 7. Within what period from nomination must it notify the Registrar?",
  "Within seven days","Within 24 hours","Within 30 days","Within 90 days",
  "Section 7(4) requires written notification within seven days of the nomination.")
-Q("Before cancelling a licence under section 28(2), how much written notice must the Registrar give for the holder to submit representations?",
+Q("Before the Registrar may issue a section 28(2) cancellation notice, how much written notice to submit representations does section 28(3)(a) require?",
  "Thirty days","Seven days","Fourteen days","Sixty days",
- "Section 28(3) provides thirty days' written notice for representations before cancellation.")
+ "Section 28(3)(a) requires the Registrar to give the holder 30 days' notice in writing to submit written representations before a cancellation notice under section 28(2) may be issued.")
 Q("After receiving a section 28 cancellation notice, what is the ordinary period for disposing of the firearm through a dealer or as the Registrar determines, absent an extension?",
  "Sixty days","Thirty days","Ninety days","Six months",
  "Section 28(4) provides sixty days after receipt of the notice, with a possible extension on good cause.")
@@ -163,7 +163,7 @@ Q("A trust deed allows the trust to hold firearms but does not say why the trust
  "Why the trust will hold them","A list of the trust's beneficiaries","The date the trust was registered","The trust's bank details",
  "The deed must clearly state the intended purpose of possession.")
 Q("A trust deed allows the trust to hold firearms for a stated purpose but places no limit at all on how long it may hold them. Which required element is missing?",
- "A limit tying it to how long it is needed","A fixed ten-year end date","A rule that the firearms be insured","A rule that trustees be dedicated hunters",
+ "A clause ending possession once the purpose no longer requires it","A clause fixing a ten-year end date for possession","A clause requiring the firearms to be insured","A clause requiring every trustee to be a dedicated hunter",
  "Section 7 requires that possession last only while it is necessary to achieve the stated intended purpose.")
 Q("A company has completed its internal approval but has not identified anyone to make its firearm application on its behalf. What appointment is still required?",
  "A natural person to act for it","A juristic person as guarantor","An accredited association as sponsor","An auditor to sign the application",

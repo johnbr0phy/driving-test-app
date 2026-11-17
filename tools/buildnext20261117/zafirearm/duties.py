@@ -18,9 +18,9 @@ Q("A person who controlled a firearm learns that it was destroyed. Under section
 Q("An owner is not carrying a firearm when an identified authorised official makes a general section 106 request to produce it for inspection. What period does that section allow?",
  "Within seven days","Immediately","Within 24 hours","Within 30 days",
  "Subject to section 107, section 106 requires production within seven days. The rule for a firearm being carried is different.")
-Q("A licence holder's physical address changes. What period applies to the written notification under section 25?",
- "Within 30 days","Within 7 days","Within 90 days","At the next renewal",
- "Written notification must be given within 30 days of the change. It is not left until renewal.")
+Q("The Registrar receives a holder's written notice of a changed physical address under section 25. What does section 25(2) require of the Registrar?",
+ "Acknowledge receipt in writing within 30 days","Issue a new licence card within 30 days","Inspect the new address within 60 days","Ask the local DFO to confirm it within 7 days",
+ "Section 25(2) requires the Registrar to acknowledge receipt of the notice in writing within 30 days after receiving it. The Act does not require a new card or an inspection for an address change.")
 Q("A person knows where a firearm is that is not in anyone's lawful possession. How quickly does section 120(2) require them to tell police?",
  "Without delay","Within 24 hours","Within 7 days","Within 48 hours",
  "The statutory wording is without delay. The 24 hour rule is a separate duty for loss or theft of a firearm the person controlled.")
@@ -66,9 +66,9 @@ Q("A final section 102 declaration of unfitness is made. What happens from that 
 Q("A person has just become unfit under the Act and still holds the documents, firearms and ammunition covered by section 104. What immediate deadline applies?",
  "Hand them in to police within 24 hours","Hand them in within 7 days","Dispose of them within 60 days","Hand them in only after any appeal",
  "Section 104(2) requires surrender to the nearest police station within 24 hours.")
-Q("A person declared unfit has filed an appeal and asks whether filing restores the right to possess firearms. What is the rule?",
- "Unfitness stays until the appeal ends","Filing restores the right to possess","Possession resumes after 30 days","One firearm may be kept in the meantime",
- "Unfitness remains in effect pending finalisation of the appeal under section 104(1)(b).")
+Q("A primary licence holder is declared unfit and no appeal is lodged. Under section 104(4), within what period after the time for an appeal elapses must a section 12 additional licence holder apply for a licence in their own name?",
+ "Within 30 days","Within 7 days","Within 60 days","Within 90 days",
+ "Section 104(4) lets the additional licence holder apply for a new licence in their own name. If no application is made within 30 days of the time for an appeal elapsing, or of an appeal that leaves the unfitness in place being finalised, the additional licence lapses.")
 Q("After handing in firearms following unfitness, the former owner wants to sell them. What restriction governs the next step?",
  "Through a dealer or as the Registrar says","A private sale to any licensed buyer","Giving them to a licensed family member","Leaving them with police indefinitely",
  "Section 104 requires disposal through a dealer or as the Registrar determines, within the applicable period. Surrender does not allow a private handover.")

@@ -281,11 +281,27 @@ do the read yourself in a separate step after a break from writing, recomputing 
 asking of each item "could a well-prepared candidate defend a different option?". Apply the fixes
 and validate again.
 
-Ask the reviewer for an **options-only pass** too: for one category at a time it reads only the four
-options of each item, never the stem, and picks the one a test-wise guesser would pick. If it beats
-40% in a category, the options carry a cue (a word, a tone, the "safe" choice, the most complete
-answer); it names the cue and the items, and those get rewritten. This catches what the word
-counter cannot, such as "the most cautious option is always right".
+Ask the reviewer for an **options-only pass** too, with `tools/options_only.py`: `make` writes a
+blind file (stems, keys and categories removed, items and options shuffled with a fresh seed,
+anonymous ids) and a private key the reviewer never reads. The reviewer picks the option a
+test-wise candidate would pick and tags each pick K (recognises the true fact), S (a surface
+cue: length, tone, the odd one out, the most complete or the safest option, repeated wording)
+or G (guess). `score` then judges the bank:
+- **A surface cue that finds the key is a writing fault.** Every S hit is listed and rewritten
+  (parallel wrong options in the same form, not a puzzle). The bank fails while S hits exceed
+  3% of items or, from 10 S picks up, 40% of them.
+- **Knowledge is not a fault.** A reviewer who knows the subject picks "20 seconds" for
+  handwashing without the stem, and so would a real exam's options. Live banks scored 64% (real
+  estate) and 82% (food manager) on Nov 18 2026, almost all from knowledge, so there is no flat
+  40% ceiling: a bank fails only above 82%, a sign its wrong options are false on their face.
+  Never rewrite a sound factual item to push this number down, and never force random guesses.
+- **Every item must need exam knowledge.** An item a reader with no subject knowledge answers
+  from the stem's own logic (an action log reading "Pilot complete; revision assigned; approval
+  pending", a seasoning test spoiled by "Serving temperature") is a fault however it scores.
+  Codex's Nov 2026 CDM, VTC and broker drafts were pushed into these by the old 40% rule.
+The flat 40% ceiling this replaces failed every factual bank on the site and rewarded those
+puzzles. The pass catches what the word counter cannot, such as "the most cautious option is
+always right". Run it after the blind key review, and again on any item rewritten for an S hit.
 
 ## 4. Wire it in
 

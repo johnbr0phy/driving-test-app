@@ -1,0 +1,1002 @@
+{
+"X001": {
+"key": "A",
+"questionId": "FRVTC-ANG-010",
+"category": "frvtcAnglais"
+},
+"X002": {
+"key": "A",
+"questionId": "FRVTC-GES-019",
+"category": "frvtcGestion"
+},
+"X003": {
+"key": "B",
+"questionId": "FRVTC-SEC-018",
+"category": "frvtcSecurite"
+},
+"X004": {
+"key": "D",
+"questionId": "FRVTC-T3P-016",
+"category": "frvtcT3p"
+},
+"X005": {
+"key": "A",
+"questionId": "FRVTC-T3P-026",
+"category": "frvtcT3p"
+},
+"X006": {
+"key": "D",
+"questionId": "FRVTC-T3P-017",
+"category": "frvtcT3p"
+},
+"X007": {
+"key": "D",
+"questionId": "FRVTC-REG-001",
+"category": "frvtcReglementation"
+},
+"X008": {
+"key": "B",
+"questionId": "FRVTC-COM-011",
+"category": "frvtcCommercial"
+},
+"X009": {
+"key": "B",
+"questionId": "FRVTC-T3P-022",
+"category": "frvtcT3p"
+},
+"X010": {
+"key": "B",
+"questionId": "FRVTC-FRA-023",
+"category": "frvtcFrancais"
+},
+"X011": {
+"key": "B",
+"questionId": "FRVTC-REG-006",
+"category": "frvtcReglementation"
+},
+"X012": {
+"key": "A",
+"questionId": "FRVTC-REG-021",
+"category": "frvtcReglementation"
+},
+"X013": {
+"key": "A",
+"questionId": "FRVTC-GES-015",
+"category": "frvtcGestion"
+},
+"X014": {
+"key": "C",
+"questionId": "FRVTC-SEC-029",
+"category": "frvtcSecurite"
+},
+"X015": {
+"key": "C",
+"questionId": "FRVTC-REG-016",
+"category": "frvtcReglementation"
+},
+"X016": {
+"key": "B",
+"questionId": "FRVTC-GES-013",
+"category": "frvtcGestion"
+},
+"X017": {
+"key": "A",
+"questionId": "FRVTC-SEC-015",
+"category": "frvtcSecurite"
+},
+"X018": {
+"key": "C",
+"questionId": "FRVTC-COM-021",
+"category": "frvtcCommercial"
+},
+"X019": {
+"key": "B",
+"questionId": "FRVTC-FRA-002",
+"category": "frvtcFrancais"
+},
+"X020": {
+"key": "C",
+"questionId": "FRVTC-GES-002",
+"category": "frvtcGestion"
+},
+"X021": {
+"key": "C",
+"questionId": "FRVTC-FRA-016",
+"category": "frvtcFrancais"
+},
+"X022": {
+"key": "A",
+"questionId": "FRVTC-REG-019",
+"category": "frvtcReglementation"
+},
+"X023": {
+"key": "D",
+"questionId": "FRVTC-FRA-022",
+"category": "frvtcFrancais"
+},
+"X024": {
+"key": "C",
+"questionId": "FRVTC-T3P-023",
+"category": "frvtcT3p"
+},
+"X025": {
+"key": "B",
+"questionId": "FRVTC-SEC-006",
+"category": "frvtcSecurite"
+},
+"X026": {
+"key": "C",
+"questionId": "FRVTC-GES-008",
+"category": "frvtcGestion"
+},
+"X027": {
+"key": "C",
+"questionId": "FRVTC-FRA-001",
+"category": "frvtcFrancais"
+},
+"X028": {
+"key": "B",
+"questionId": "FRVTC-SEC-023",
+"category": "frvtcSecurite"
+},
+"X029": {
+"key": "C",
+"questionId": "FRVTC-ANG-009",
+"category": "frvtcAnglais"
+},
+"X030": {
+"key": "B",
+"questionId": "FRVTC-SEC-019",
+"category": "frvtcSecurite"
+},
+"X031": {
+"key": "B",
+"questionId": "FRVTC-T3P-015",
+"category": "frvtcT3p"
+},
+"X032": {
+"key": "A",
+"questionId": "FRVTC-COM-018",
+"category": "frvtcCommercial"
+},
+"X033": {
+"key": "A",
+"questionId": "FRVTC-SEC-016",
+"category": "frvtcSecurite"
+},
+"X034": {
+"key": "A",
+"questionId": "FRVTC-REG-013",
+"category": "frvtcReglementation"
+},
+"X035": {
+"key": "C",
+"questionId": "FRVTC-GES-009",
+"category": "frvtcGestion"
+},
+"X036": {
+"key": "C",
+"questionId": "FRVTC-ANG-005",
+"category": "frvtcAnglais"
+},
+"X037": {
+"key": "B",
+"questionId": "FRVTC-COM-005",
+"category": "frvtcCommercial"
+},
+"X038": {
+"key": "B",
+"questionId": "FRVTC-FRA-014",
+"category": "frvtcFrancais"
+},
+"X039": {
+"key": "D",
+"questionId": "FRVTC-COM-025",
+"category": "frvtcCommercial"
+},
+"X040": {
+"key": "B",
+"questionId": "FRVTC-COM-026",
+"category": "frvtcCommercial"
+},
+"X041": {
+"key": "A",
+"questionId": "FRVTC-T3P-003",
+"category": "frvtcT3p"
+},
+"X042": {
+"key": "A",
+"questionId": "FRVTC-T3P-028",
+"category": "frvtcT3p"
+},
+"X043": {
+"key": "A",
+"questionId": "FRVTC-GES-014",
+"category": "frvtcGestion"
+},
+"X044": {
+"key": "B",
+"questionId": "FRVTC-SEC-014",
+"category": "frvtcSecurite"
+},
+"X045": {
+"key": "C",
+"questionId": "FRVTC-COM-014",
+"category": "frvtcCommercial"
+},
+"X046": {
+"key": "D",
+"questionId": "FRVTC-REG-031",
+"category": "frvtcReglementation"
+},
+"X047": {
+"key": "B",
+"questionId": "FRVTC-T3P-014",
+"category": "frvtcT3p"
+},
+"X048": {
+"key": "A",
+"questionId": "FRVTC-SEC-024",
+"category": "frvtcSecurite"
+},
+"X049": {
+"key": "C",
+"questionId": "FRVTC-SEC-001",
+"category": "frvtcSecurite"
+},
+"X050": {
+"key": "D",
+"questionId": "FRVTC-GES-004",
+"category": "frvtcGestion"
+},
+"X051": {
+"key": "B",
+"questionId": "FRVTC-SEC-035",
+"category": "frvtcSecurite"
+},
+"X052": {
+"key": "A",
+"questionId": "FRVTC-T3P-005",
+"category": "frvtcT3p"
+},
+"X053": {
+"key": "C",
+"questionId": "FRVTC-REG-004",
+"category": "frvtcReglementation"
+},
+"X054": {
+"key": "C",
+"questionId": "FRVTC-T3P-021",
+"category": "frvtcT3p"
+},
+"X055": {
+"key": "D",
+"questionId": "FRVTC-SEC-007",
+"category": "frvtcSecurite"
+},
+"X056": {
+"key": "D",
+"questionId": "FRVTC-T3P-034",
+"category": "frvtcT3p"
+},
+"X057": {
+"key": "B",
+"questionId": "FRVTC-T3P-001",
+"category": "frvtcT3p"
+},
+"X058": {
+"key": "B",
+"questionId": "FRVTC-T3P-036",
+"category": "frvtcT3p"
+},
+"X059": {
+"key": "B",
+"questionId": "FRVTC-REG-011",
+"category": "frvtcReglementation"
+},
+"X060": {
+"key": "B",
+"questionId": "FRVTC-COM-030",
+"category": "frvtcCommercial"
+},
+"X061": {
+"key": "B",
+"questionId": "FRVTC-T3P-020",
+"category": "frvtcT3p"
+},
+"X062": {
+"key": "A",
+"questionId": "FRVTC-COM-031",
+"category": "frvtcCommercial"
+},
+"X063": {
+"key": "B",
+"questionId": "FRVTC-ANG-012",
+"category": "frvtcAnglais"
+},
+"X064": {
+"key": "A",
+"questionId": "FRVTC-REG-002",
+"category": "frvtcReglementation"
+},
+"X065": {
+"key": "B",
+"questionId": "FRVTC-COM-032",
+"category": "frvtcCommercial"
+},
+"X066": {
+"key": "B",
+"questionId": "FRVTC-FRA-017",
+"category": "frvtcFrancais"
+},
+"X067": {
+"key": "D",
+"questionId": "FRVTC-GES-022",
+"category": "frvtcGestion"
+},
+"X068": {
+"key": "B",
+"questionId": "FRVTC-SEC-012",
+"category": "frvtcSecurite"
+},
+"X069": {
+"key": "A",
+"questionId": "FRVTC-COM-002",
+"category": "frvtcCommercial"
+},
+"X070": {
+"key": "D",
+"questionId": "FRVTC-SEC-032",
+"category": "frvtcSecurite"
+},
+"X071": {
+"key": "C",
+"questionId": "FRVTC-GES-010",
+"category": "frvtcGestion"
+},
+"X072": {
+"key": "A",
+"questionId": "FRVTC-FRA-005",
+"category": "frvtcFrancais"
+},
+"X073": {
+"key": "C",
+"questionId": "FRVTC-T3P-018",
+"category": "frvtcT3p"
+},
+"X074": {
+"key": "D",
+"questionId": "FRVTC-COM-035",
+"category": "frvtcCommercial"
+},
+"X075": {
+"key": "A",
+"questionId": "FRVTC-COM-008",
+"category": "frvtcCommercial"
+},
+"X076": {
+"key": "D",
+"questionId": "FRVTC-REG-014",
+"category": "frvtcReglementation"
+},
+"X077": {
+"key": "B",
+"questionId": "FRVTC-T3P-030",
+"category": "frvtcT3p"
+},
+"X078": {
+"key": "C",
+"questionId": "FRVTC-GES-007",
+"category": "frvtcGestion"
+},
+"X079": {
+"key": "C",
+"questionId": "FRVTC-T3P-011",
+"category": "frvtcT3p"
+},
+"X080": {
+"key": "C",
+"questionId": "FRVTC-FRA-020",
+"category": "frvtcFrancais"
+},
+"X081": {
+"key": "B",
+"questionId": "FRVTC-COM-020",
+"category": "frvtcCommercial"
+},
+"X082": {
+"key": "A",
+"questionId": "FRVTC-GES-001",
+"category": "frvtcGestion"
+},
+"X083": {
+"key": "D",
+"questionId": "FRVTC-T3P-012",
+"category": "frvtcT3p"
+},
+"X084": {
+"key": "C",
+"questionId": "FRVTC-SEC-028",
+"category": "frvtcSecurite"
+},
+"X085": {
+"key": "B",
+"questionId": "FRVTC-GES-018",
+"category": "frvtcGestion"
+},
+"X086": {
+"key": "B",
+"questionId": "FRVTC-GES-021",
+"category": "frvtcGestion"
+},
+"X087": {
+"key": "C",
+"questionId": "FRVTC-REG-009",
+"category": "frvtcReglementation"
+},
+"X088": {
+"key": "B",
+"questionId": "FRVTC-SEC-004",
+"category": "frvtcSecurite"
+},
+"X089": {
+"key": "A",
+"questionId": "FRVTC-T3P-033",
+"category": "frvtcT3p"
+},
+"X090": {
+"key": "C",
+"questionId": "FRVTC-T3P-032",
+"category": "frvtcT3p"
+},
+"X091": {
+"key": "C",
+"questionId": "FRVTC-SEC-010",
+"category": "frvtcSecurite"
+},
+"X092": {
+"key": "C",
+"questionId": "FRVTC-SEC-017",
+"category": "frvtcSecurite"
+},
+"X093": {
+"key": "D",
+"questionId": "FRVTC-SEC-011",
+"category": "frvtcSecurite"
+},
+"X094": {
+"key": "A",
+"questionId": "FRVTC-SEC-013",
+"category": "frvtcSecurite"
+},
+"X095": {
+"key": "A",
+"questionId": "FRVTC-T3P-031",
+"category": "frvtcT3p"
+},
+"X096": {
+"key": "A",
+"questionId": "FRVTC-COM-033",
+"category": "frvtcCommercial"
+},
+"X097": {
+"key": "A",
+"questionId": "FRVTC-T3P-027",
+"category": "frvtcT3p"
+},
+"X098": {
+"key": "C",
+"questionId": "FRVTC-ANG-011",
+"category": "frvtcAnglais"
+},
+"X099": {
+"key": "B",
+"questionId": "FRVTC-COM-017",
+"category": "frvtcCommercial"
+},
+"X100": {
+"key": "A",
+"questionId": "FRVTC-REG-023",
+"category": "frvtcReglementation"
+},
+"X101": {
+"key": "C",
+"questionId": "FRVTC-REG-007",
+"category": "frvtcReglementation"
+},
+"X102": {
+"key": "B",
+"questionId": "FRVTC-T3P-007",
+"category": "frvtcT3p"
+},
+"X103": {
+"key": "B",
+"questionId": "FRVTC-SEC-002",
+"category": "frvtcSecurite"
+},
+"X104": {
+"key": "A",
+"questionId": "FRVTC-FRA-015",
+"category": "frvtcFrancais"
+},
+"X105": {
+"key": "C",
+"questionId": "FRVTC-COM-012",
+"category": "frvtcCommercial"
+},
+"X106": {
+"key": "B",
+"questionId": "FRVTC-GES-011",
+"category": "frvtcGestion"
+},
+"X107": {
+"key": "B",
+"questionId": "FRVTC-SEC-009",
+"category": "frvtcSecurite"
+},
+"X108": {
+"key": "B",
+"questionId": "FRVTC-REG-008",
+"category": "frvtcReglementation"
+},
+"X109": {
+"key": "B",
+"questionId": "FRVTC-REG-012",
+"category": "frvtcReglementation"
+},
+"X110": {
+"key": "C",
+"questionId": "FRVTC-REG-010",
+"category": "frvtcReglementation"
+},
+"X111": {
+"key": "B",
+"questionId": "FRVTC-COM-009",
+"category": "frvtcCommercial"
+},
+"X112": {
+"key": "A",
+"questionId": "FRVTC-COM-016",
+"category": "frvtcCommercial"
+},
+"X113": {
+"key": "C",
+"questionId": "FRVTC-SEC-008",
+"category": "frvtcSecurite"
+},
+"X114": {
+"key": "D",
+"questionId": "FRVTC-COM-007",
+"category": "frvtcCommercial"
+},
+"X115": {
+"key": "C",
+"questionId": "FRVTC-T3P-025",
+"category": "frvtcT3p"
+},
+"X116": {
+"key": "B",
+"questionId": "FRVTC-SEC-031",
+"category": "frvtcSecurite"
+},
+"X117": {
+"key": "B",
+"questionId": "FRVTC-SEC-033",
+"category": "frvtcSecurite"
+},
+"X118": {
+"key": "A",
+"questionId": "FRVTC-SEC-022",
+"category": "frvtcSecurite"
+},
+"X119": {
+"key": "D",
+"questionId": "FRVTC-ANG-001",
+"category": "frvtcAnglais"
+},
+"X120": {
+"key": "B",
+"questionId": "FRVTC-COM-034",
+"category": "frvtcCommercial"
+},
+"X121": {
+"key": "C",
+"questionId": "FRVTC-COM-010",
+"category": "frvtcCommercial"
+},
+"X122": {
+"key": "C",
+"questionId": "FRVTC-FRA-013",
+"category": "frvtcFrancais"
+},
+"X123": {
+"key": "A",
+"questionId": "FRVTC-FRA-006",
+"category": "frvtcFrancais"
+},
+"X124": {
+"key": "C",
+"questionId": "FRVTC-REG-025",
+"category": "frvtcReglementation"
+},
+"X125": {
+"key": "A",
+"questionId": "FRVTC-COM-022",
+"category": "frvtcCommercial"
+},
+"X126": {
+"key": "B",
+"questionId": "FRVTC-GES-024",
+"category": "frvtcGestion"
+},
+"X127": {
+"key": "C",
+"questionId": "FRVTC-T3P-013",
+"category": "frvtcT3p"
+},
+"X128": {
+"key": "C",
+"questionId": "FRVTC-REG-005",
+"category": "frvtcReglementation"
+},
+"X129": {
+"key": "C",
+"questionId": "FRVTC-REG-017",
+"category": "frvtcReglementation"
+},
+"X130": {
+"key": "B",
+"questionId": "FRVTC-GES-003",
+"category": "frvtcGestion"
+},
+"X131": {
+"key": "B",
+"questionId": "FRVTC-SEC-026",
+"category": "frvtcSecurite"
+},
+"X132": {
+"key": "B",
+"questionId": "FRVTC-SEC-021",
+"category": "frvtcSecurite"
+},
+"X133": {
+"key": "C",
+"questionId": "FRVTC-SEC-025",
+"category": "frvtcSecurite"
+},
+"X134": {
+"key": "C",
+"questionId": "FRVTC-T3P-009",
+"category": "frvtcT3p"
+},
+"X135": {
+"key": "B",
+"questionId": "FRVTC-REG-015",
+"category": "frvtcReglementation"
+},
+"X136": {
+"key": "A",
+"questionId": "FRVTC-T3P-035",
+"category": "frvtcT3p"
+},
+"X137": {
+"key": "A",
+"questionId": "FRVTC-REG-029",
+"category": "frvtcReglementation"
+},
+"X138": {
+"key": "B",
+"questionId": "FRVTC-SEC-005",
+"category": "frvtcSecurite"
+},
+"X139": {
+"key": "B",
+"questionId": "FRVTC-COM-003",
+"category": "frvtcCommercial"
+},
+"X140": {
+"key": "C",
+"questionId": "FRVTC-REG-030",
+"category": "frvtcReglementation"
+},
+"X141": {
+"key": "B",
+"questionId": "FRVTC-ANG-007",
+"category": "frvtcAnglais"
+},
+"X142": {
+"key": "A",
+"questionId": "FRVTC-T3P-004",
+"category": "frvtcT3p"
+},
+"X143": {
+"key": "C",
+"questionId": "FRVTC-GES-012",
+"category": "frvtcGestion"
+},
+"X144": {
+"key": "A",
+"questionId": "FRVTC-COM-013",
+"category": "frvtcCommercial"
+},
+"X145": {
+"key": "C",
+"questionId": "FRVTC-FRA-003",
+"category": "frvtcFrancais"
+},
+"X146": {
+"key": "D",
+"questionId": "FRVTC-REG-003",
+"category": "frvtcReglementation"
+},
+"X147": {
+"key": "D",
+"questionId": "FRVTC-ANG-006",
+"category": "frvtcAnglais"
+},
+"X148": {
+"key": "B",
+"questionId": "FRVTC-COM-027",
+"category": "frvtcCommercial"
+},
+"X149": {
+"key": "D",
+"questionId": "FRVTC-SEC-027",
+"category": "frvtcSecurite"
+},
+"X150": {
+"key": "C",
+"questionId": "FRVTC-REG-032",
+"category": "frvtcReglementation"
+},
+"X151": {
+"key": "B",
+"questionId": "FRVTC-FRA-008",
+"category": "frvtcFrancais"
+},
+"X152": {
+"key": "A",
+"questionId": "FRVTC-FRA-007",
+"category": "frvtcFrancais"
+},
+"X153": {
+"key": "C",
+"questionId": "FRVTC-T3P-024",
+"category": "frvtcT3p"
+},
+"X154": {
+"key": "D",
+"questionId": "FRVTC-ANG-003",
+"category": "frvtcAnglais"
+},
+"X155": {
+"key": "C",
+"questionId": "FRVTC-REG-020",
+"category": "frvtcReglementation"
+},
+"X156": {
+"key": "A",
+"questionId": "FRVTC-REG-022",
+"category": "frvtcReglementation"
+},
+"X157": {
+"key": "C",
+"questionId": "FRVTC-ANG-004",
+"category": "frvtcAnglais"
+},
+"X158": {
+"key": "C",
+"questionId": "FRVTC-COM-019",
+"category": "frvtcCommercial"
+},
+"X159": {
+"key": "D",
+"questionId": "FRVTC-T3P-029",
+"category": "frvtcT3p"
+},
+"X160": {
+"key": "A",
+"questionId": "FRVTC-COM-028",
+"category": "frvtcCommercial"
+},
+"X161": {
+"key": "B",
+"questionId": "FRVTC-GES-005",
+"category": "frvtcGestion"
+},
+"X162": {
+"key": "B",
+"questionId": "FRVTC-FRA-021",
+"category": "frvtcFrancais"
+},
+"X163": {
+"key": "D",
+"questionId": "FRVTC-COM-036",
+"category": "frvtcCommercial"
+},
+"X164": {
+"key": "D",
+"questionId": "FRVTC-REG-027",
+"category": "frvtcReglementation"
+},
+"X165": {
+"key": "A",
+"questionId": "FRVTC-COM-006",
+"category": "frvtcCommercial"
+},
+"X166": {
+"key": "B",
+"questionId": "FRVTC-GES-006",
+"category": "frvtcGestion"
+},
+"X167": {
+"key": "A",
+"questionId": "FRVTC-GES-017",
+"category": "frvtcGestion"
+},
+"X168": {
+"key": "B",
+"questionId": "FRVTC-REG-026",
+"category": "frvtcReglementation"
+},
+"X169": {
+"key": "D",
+"questionId": "FRVTC-COM-023",
+"category": "frvtcCommercial"
+},
+"X170": {
+"key": "A",
+"questionId": "FRVTC-COM-015",
+"category": "frvtcCommercial"
+},
+"X171": {
+"key": "A",
+"questionId": "FRVTC-COM-001",
+"category": "frvtcCommercial"
+},
+"X172": {
+"key": "C",
+"questionId": "FRVTC-ANG-008",
+"category": "frvtcAnglais"
+},
+"X173": {
+"key": "D",
+"questionId": "FRVTC-T3P-010",
+"category": "frvtcT3p"
+},
+"X174": {
+"key": "D",
+"questionId": "FRVTC-FRA-011",
+"category": "frvtcFrancais"
+},
+"X175": {
+"key": "C",
+"questionId": "FRVTC-REG-018",
+"category": "frvtcReglementation"
+},
+"X176": {
+"key": "A",
+"questionId": "FRVTC-T3P-008",
+"category": "frvtcT3p"
+},
+"X177": {
+"key": "C",
+"questionId": "FRVTC-COM-029",
+"category": "frvtcCommercial"
+},
+"X178": {
+"key": "D",
+"questionId": "FRVTC-COM-024",
+"category": "frvtcCommercial"
+},
+"X179": {
+"key": "D",
+"questionId": "FRVTC-FRA-018",
+"category": "frvtcFrancais"
+},
+"X180": {
+"key": "C",
+"questionId": "FRVTC-FRA-009",
+"category": "frvtcFrancais"
+},
+"X181": {
+"key": "A",
+"questionId": "FRVTC-GES-020",
+"category": "frvtcGestion"
+},
+"X182": {
+"key": "C",
+"questionId": "FRVTC-SEC-036",
+"category": "frvtcSecurite"
+},
+"X183": {
+"key": "B",
+"questionId": "FRVTC-T3P-006",
+"category": "frvtcT3p"
+},
+"X184": {
+"key": "C",
+"questionId": "FRVTC-ANG-002",
+"category": "frvtcAnglais"
+},
+"X185": {
+"key": "C",
+"questionId": "FRVTC-GES-023",
+"category": "frvtcGestion"
+},
+"X186": {
+"key": "A",
+"questionId": "FRVTC-T3P-019",
+"category": "frvtcT3p"
+},
+"X187": {
+"key": "B",
+"questionId": "FRVTC-FRA-019",
+"category": "frvtcFrancais"
+},
+"X188": {
+"key": "C",
+"questionId": "FRVTC-FRA-024",
+"category": "frvtcFrancais"
+},
+"X189": {
+"key": "C",
+"questionId": "FRVTC-COM-004",
+"category": "frvtcCommercial"
+},
+"X190": {
+"key": "D",
+"questionId": "FRVTC-T3P-002",
+"category": "frvtcT3p"
+},
+"X191": {
+"key": "D",
+"questionId": "FRVTC-SEC-030",
+"category": "frvtcSecurite"
+},
+"X192": {
+"key": "C",
+"questionId": "FRVTC-SEC-003",
+"category": "frvtcSecurite"
+},
+"X193": {
+"key": "C",
+"questionId": "FRVTC-REG-024",
+"category": "frvtcReglementation"
+},
+"X194": {
+"key": "A",
+"questionId": "FRVTC-FRA-012",
+"category": "frvtcFrancais"
+},
+"X195": {
+"key": "C",
+"questionId": "FRVTC-FRA-004",
+"category": "frvtcFrancais"
+},
+"X196": {
+"key": "A",
+"questionId": "FRVTC-SEC-020",
+"category": "frvtcSecurite"
+},
+"X197": {
+"key": "D",
+"questionId": "FRVTC-SEC-034",
+"category": "frvtcSecurite"
+},
+"X198": {
+"key": "A",
+"questionId": "FRVTC-FRA-010",
+"category": "frvtcFrancais"
+},
+"X199": {
+"key": "D",
+"questionId": "FRVTC-GES-016",
+"category": "frvtcGestion"
+},
+"X200": {
+"key": "A",
+"questionId": "FRVTC-REG-028",
+"category": "frvtcReglementation"
+}
+}

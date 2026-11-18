@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "epa609" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake";
+export type ExamId = "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -8843,6 +8843,205 @@ const epa609: ExamConfig = {
     ],
     sourceLine: "Based on EPA Section 609 requirements and the MACS January 2025 training manual. Original practice with editorial weights; not an approved certification course or official exam.",
     analyticsKey: "epa609",
+  },
+};
+
+const realestatebroker: ExamConfig = {
+  id: "realestatebroker",
+  stateCode: "REBROKER",
+  idBase: 34200,
+  slug: "/real-estate-broker",
+  landingPath: "/real-estate-broker-practice-test",
+  name: "Real Estate Broker Practice Test",
+  shortName: "Real Estate Broker",
+  examLabel: "national broker exam",
+  fullName: "US real estate broker national portion (Pearson VUE outline)",
+  questionIdPrefix: "REBR-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Pearson VUE National/General Broker outline, effective March 1, 2025,
+  // document 094401, edition 01/2026: 80 scored plus 5 pretest items.
+  // Topic counts 10/8/10/15/12/9/8/8 rounded editorially to 50 items.
+  // National portion only; 70% is a study target, not a universal cut score.
+  blueprint: { rebProperty: 6, rebTitle: 5, rebValue: 6, rebAgency: 9, rebPractice: 8, rebEnvironment: 6, rebFinance: 5, rebMath: 5 },
+  trainingSets: [
+    { setNumber: 1, id: 34201, name: "Property & Title", categories: ["rebProperty", "rebTitle"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 34202, name: "Valuation & Agency", categories: ["rebValue", "rebAgency"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 34203, name: "Brokerage & Disclosures", categories: ["rebPractice", "rebEnvironment"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 34204, name: "Financing & Calculations", categories: ["rebFinance", "rebMath"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {"rebProperty": "Real Property Characteristics", "rebTitle": "Ownership, Title & Conveyance", "rebValue": "Valuation & Appraisal", "rebAgency": "Contracts & Agency", "rebPractice": "Real Estate Practice", "rebEnvironment": "Disclosures & Environmental Issues", "rebFinance": "Financing & Settlement", "rebMath": "Real Estate Calculations"},
+  copy: {
+    guestPrompt: "to save your national broker exam progress and review missed questions",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets cover property and title, valuation and agency, brokerage and disclosures, then financing and calculations. Missed questions return until you master them.",
+    testsHeading: "National broker practice · 50 questions",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Property & Title.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Check your licensing board's national and state exam requirements.",
+    ],
+    sourceLine: "Pearson VUE national broker outline, effective March 2025, checked November 2026. State law is separate. The 70% practice target is not a universal passing score.",
+    analyticsKey: "realestatebroker",
+  },
+};
+
+// VTC: arrêté du 6 avril 2017, consolidated 2026-11-17, including the 2024 syllabus addition.
+// Editorial 9/6/9/6/3/9/8 split across the seven official subjects. Official theory:
+// 91 QCM + 16 QRC, 230 minutes; weighted mean >=10/20 with section minima 6/20
+// (English 4/20). This single-answer practice omits QRC production, section scoring
+// and the separate practical assessment. 70% is a study target, not a mark conversion.
+const frvtc: ExamConfig = {
+  id: "frvtc",
+  stateCode: "FRVTC",
+  idBase: 34100,
+  slug: "/vtc",
+  landingPath: "/fr/examen-vtc",
+  name: "Examen VTC",
+  shortName: "VTC",
+  examLabel: "Examen théorique VTC",
+  fullName: "Examen d'accès à la profession de conducteur de voiture de transport avec chauffeur",
+  questionIdPrefix: "FRVTC-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  language: "fr",
+  locale: "fr-FR",
+  english: {
+    name: "French VTC Chauffeur Theory Exam",
+    shortName: "French VTC exam",
+    fullName: "French chauffeur (VTC) theory exam: common and VTC-specific subjects, in French"
+  },
+  review: {
+    fr: "model"
+  },
+  blueprint: {
+    frvtcT3p: 9,
+    frvtcGestion: 6,
+    frvtcSecurite: 9,
+    frvtcFrancais: 6,
+    frvtcAnglais: 3,
+    frvtcCommercial: 9,
+    frvtcReglementation: 8
+  },
+  trainingSets: [
+    {
+      setNumber: 1,
+      id: 34101,
+      name: "Réglementation T3P et gestion",
+      categories: [
+        "frvtcT3p",
+        "frvtcGestion"
+      ],
+      size: 60,
+      weightLabel: "15 questions sur 50 par test"
+    },
+    {
+      setNumber: 2,
+      id: 34102,
+      name: "Sécurité routière",
+      categories: [
+        "frvtcSecurite"
+      ],
+      size: 36,
+      weightLabel: "9 questions sur 50 par test"
+    },
+    {
+      setNumber: 3,
+      id: 34103,
+      name: "Français et anglais",
+      categories: [
+        "frvtcFrancais",
+        "frvtcAnglais"
+      ],
+      size: 36,
+      weightLabel: "9 questions sur 50 par test"
+    },
+    {
+      setNumber: 4,
+      id: 34104,
+      name: "Développement commercial",
+      categories: [
+        "frvtcCommercial"
+      ],
+      size: 36,
+      weightLabel: "9 questions sur 50 par test"
+    },
+    {
+      setNumber: 5,
+      id: 34105,
+      name: "Réglementation VTC",
+      categories: [
+        "frvtcReglementation"
+      ],
+      size: 32,
+      weightLabel: "8 questions sur 50 par test"
+    }
+  ],
+  categoryLabels: {
+    frvtcT3p: "Réglementation du T3P",
+    frvtcGestion: "Gestion",
+    frvtcSecurite: "Sécurité routière",
+    frvtcFrancais: "Compréhension du français",
+    frvtcAnglais: "Anglais",
+    frvtcCommercial: "Développement commercial",
+    frvtcReglementation: "Réglementation VTC"
+  },
+  copy: {
+    guestPrompt: "pour enregistrer tes progrès et retrouver les points à revoir",
+    trainingHeading: "Séries d'entraînement",
+    trainingSub: "Travaille les thèmes à ton rythme. Chaque réponse est expliquée et les questions ratées reviennent pour consolider tes acquis.",
+    testsHeading: "Tests d'entraînement · 50 questions, objectif de travail : 35 bonnes réponses",
+    heroSubs: [
+      "Cinq séries d'entraînement, quatre tests. Commence par Réglementation T3P et gestion.",
+      "Termine les séries, puis fais un test pour repérer les points à revoir.",
+      "Continue avec les thèmes restants, puis vérifie tes acquis dans un test.",
+      "Reprends tes erreurs et compare tes résultats d'un test à l'autre.",
+      "Les étapes sont terminées. Complète ta préparation par les réponses rédigées et la conduite."
+    ],
+    sourceLine: "Questions originales fondées sur le programme VTC et les textes consultés le 17 novembre 2026. Une seule bonne réponse par question. L'objectif de 70 % est un repère de travail, sans équivalence avec les notes officielles.",
+    analyticsKey: "frvtc"
+  }
+};
+
+const cdm: ExamConfig = {
+  id: "cdm", stateCode: "CDM", idBase: 34000,
+  slug: "/cdm", landingPath: "/cdm-practice-test",
+  name: "CDM Practice Test", shortName: "CDM", examLabel: "CDM, CFPP",
+  fullName: "Certified Dietary Manager, Certified Food Protection Professional (CDM, CFPP)",
+  questionIdPrefix: "CDM-", icon: "utensils",
+  testCount: 4, questionsPerTest: 50, passPct: 70,
+  // CBDM content outline effective March 1, 2025: 20/22/20/24/14%.
+  // CBDM sets the cut score by modified Angoff; historically about 70%.
+  // This 70% threshold is a practice target, not a fixed official passing score.
+  blueprint: { cdmNutrition: 10, cdmFoodservice: 11, cdmPersonnel: 10, cdmSafety: 12, cdmBusiness: 7 },
+  trainingSets: [
+    { setNumber: 1, id: 34001, name: "Nutrition", categories: ["cdmNutrition"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 34002, name: "Foodservice", categories: ["cdmFoodservice"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 34003, name: "Personnel & Communications", categories: ["cdmPersonnel"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 34004, name: "Sanitation & Safety", categories: ["cdmSafety"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 34005, name: "Business Operations", categories: ["cdmBusiness"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {"cdmNutrition": "Nutrition", "cdmFoodservice": "Foodservice", "cdmPersonnel": "Personnel & Communications", "cdmSafety": "Sanitation & Safety", "cdmBusiness": "Business Operations"},
+  copy: {
+    guestPrompt: "to save your CDM progress and revisit missed questions",
+    trainingHeading: "Train by domain",
+    trainingSub: "Five sets cover nutrition, foodservice, personnel and communications, sanitation and safety, and business operations. Missed questions return for practice.",
+    testsHeading: "Practice tests · 50 questions · 70% study target",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Nutrition.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All steps complete. Review the official CBDM materials before your exam.",
+    ],
+    sourceLine: "CBDM outline effective March 1, 2025. Focused study across five domains; 70% here is a practice target, not a fixed official cut score.",
+    analyticsKey: "cdm",
   },
 };
 
@@ -23004,7 +23203,7 @@ const smartserve: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [epa609, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake];
+export const EXAMS: ExamConfig[] = [epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

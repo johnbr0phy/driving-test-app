@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  carscook: {
+    answer:
+      "The Red Seal Cook exam is the interprovincial certificate of qualification exam for cooks in Canada (trade code 415A in Ontario). It has 150 multiple-choice questions with four options each, a pass mark of 70%, and up to four hours to write it. The questions follow the Red Seal Occupational Standard for Cook across 13 Major Work Activities, led by meats, game, poultry and variety meats (16 questions) and fish and seafood (15).",
+    rows: [
+      { label: "Questions", value: "150 multiple choice, 4 options each" },
+      { label: "Time", value: "Up to 4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Meats and poultry 16, fish and seafood 15, hygiene and safety 13, sauces 13" },
+      { label: "Other areas", value: "Produce 12, stocks and soups 12, kitchen skills 11, grains and nuts 11, dairy and eggs 10, pasta 10, baking 10, salads 9, specialty 8" },
+      { label: "Standard", value: "Red Seal Occupational Standard for Cook" },
+      { label: "Booked through", value: "Your provincial or territorial apprenticeship authority" },
+    ],
+    basedOn: "the Red Seal Cook exam breakdown and the Red Seal Exam Preparation Guide, checked November 2026",
+    source: { name: "Red Seal: Cook exam information", url: "https://red-seal.ca/eng/trades/cooks/exam-information.shtml" },
+  },
   cadronebasic: {
     answer:
       "In Canada, anyone flying a drone that weighs 250 g to 25 kg needs a pilot certificate from Transport Canada, unless directly supervised by a certified pilot, and the drone must be registered and marked. The Pilot Certificate - Basic Operations comes from passing the Small Basic Exam online in Transport Canada's Drone Management Portal: 35 multiple-choice questions in 90 minutes, with 65% or higher to pass, open to people 14 and older. Questions are based on Transport Canada's knowledge requirements document TP 15263. A basic certificate covers flights in uncontrolled airspace, at least 30 m horizontally from people not involved, below 122 m (400 ft) above ground and outside 3 nautical miles of an airport and 1 nautical mile of a heliport. Flying in controlled airspace or near people needs the advanced certificate. The certificate does not expire, but pilots must show recent activity within 24 months.",

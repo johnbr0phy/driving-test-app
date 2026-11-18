@@ -310,3 +310,4 @@ import "./ea2";
 import "./ea3";
 import "./cahambasic";
 import "./cadronebasic";
+import "./carscook";

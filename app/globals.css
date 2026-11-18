@@ -1353,6 +1353,19 @@
     --brand-border-light: 16 35% 88%;
     --brand-gradient-to: 32 70% 95%;
   }
+  /* Red Seal Cook theme (Canada) */
+  [data-theme="carscook"] {
+    --brand: 350 100% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 350 80% 96%;
+    --brand-hover: 350 100% 27%;
+    --brand-dark: 350 100% 24%;
+    --brand-darker: 350 90% 16%;
+    --brand-muted: 350 45% 72%;
+    --brand-border: 350 45% 78%;
+    --brand-border-light: 350 40% 89%;
+    --brand-gradient-to: 10 80% 96%;
+  }
 
   /* NAPLAN Year 9 theme: green (v2 exam; matches lib/v2/exams/naplan.ts theme) */
   [data-theme="naplan"] {
@@ -7499,6 +7512,18 @@
     --brand-muted: 16 40% 45%;
     --brand-dark: 16 85% 65%;
     --brand-darker: 16 75% 78%;
+  }
+
+  .dark [data-theme="carscook"] {
+    --brand: 350 100% 46%;
+    --brand-hover: 350 100% 38%;
+    --brand-light: 350 45% 13%;
+    --brand-gradient-to: 10 40% 11%;
+    --brand-border-light: 350 35% 24%;
+    --brand-border: 350 40% 34%;
+    --brand-muted: 350 45% 45%;
+    --brand-dark: 350 100% 65%;
+    --brand-darker: 350 90% 78%;
   }
 
   .dark [data-theme="naplan7"] {

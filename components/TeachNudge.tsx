@@ -101,7 +101,7 @@ const TEACHER_LED = new Set([
   "realestate", "insurance", "pnc", "ham", "civics",
   "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "ukdsc1", "capal", "caelec", "auwhite",
   "cscs", "ukfood", "ukaplh",
-  "caauto", "caplumb", "cacarp", "caweld", "cawhmis", "caguard", "caabguard",
+  "caauto", "caplumb", "cacarp", "caweld", "carscook", "cawhmis", "caguard", "caabguard",
   "aursa", "aurcg", "aufss", "auforklift", "auwah",
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)

@@ -1,0 +1,42 @@
+{
+  "id": "carscook",
+  "blind_agreement": "200/200",
+  "options_only": {
+    "score": "150/200 (75%, ceiling 82%); K 115/125, S 0/0, G 35/75",
+    "s_hits": [],
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "questionId": "CACOOK-SAF-010",
+      "severity": "low",
+      "issue": "Key (74°C) is right per Health Canada, but the explanation calls 60°C 'the hot-holding line'. Hot-holding minimums are set by provincial food premises regulations, which sources.md says are deliberately not asked.",
+      "source": "https://www.canada.ca/en/health-canada/services/general-food-safety-tips/food-safety-tips-leftovers.html",
+      "fix": "Say '60°C is the top of the danger zone' instead of 'the hot-holding line'."
+    },
+    {
+      "questionId": "(bank-wide)",
+      "severity": "info",
+      "issue": "In the options-only pass, guesses were right 47% of the time against 25% by chance. No surface cues were flagged, so this is not a fail, but some wrong options read as weak (e.g. SAU-005 'Instant mashed potato', SAF-004 'Block it with your foot', STK-009 'Ginger and scallions').",
+      "source": "",
+      "fix": "Optional: when the bank is next edited, make the weakest distractors more plausible."
+    }
+  ],
+  "landing_findings": [
+    {
+      "location": "app/red-seal-cook-practice-test/page.tsx FAQ 'Is 415A the same as the Red Seal Cook exam?' (JSON-LD and visible)",
+      "severity": "low",
+      "issue": "'Cook - Level 2 in Quebec' is not in sources.md and could not be confirmed on red-seal.ca. 'Professional Cook 3 in British Columbia' is also not cited, though it matches standard BC usage.",
+      "fix": "Drop the Quebec name, or confirm it against the Ellis Chart and cite it in sources.md."
+    }
+  ],
+  "verified": [
+    "Exam information: 150 questions, MWA breakdown A13 B11 C12 D12 E13 F10 G10 H11 I16 J15 K9 L8 M10, four options with one correct answer, AP/EP/PPE acronyms provided (red-seal.ca exam-information, fetched 2026-11-18)",
+    "Exam prep guide: 70% pass mark, four hours to write",
+    "Trade page: new exams based on the new standard are being implemented; check with your jurisdiction",
+    "Health Canada chart: ground meat 71; steaks medium-rare 63, medium 71, well done 77; mechanically tenderized 63, turned at least twice; poultry pieces 74, whole birds 82; egg dishes 74; fish 70; shellfish 74; leftovers 74",
+    "Health Canada leftovers and storage pages: danger zone 4 to 60°C; discard after more than two hours at room temperature; bring soups to a rolling boil; fridge 4°C, freezer -18°C; raw meat on the bottom shelf",
+    "Recomputed: OCC-003 3.60/0.30 = 12.00; OCC-004 100/40 = 2.5; OCC-005 6/0.75 = 8 kg; PRO-002 15/3 = 5 mL",
+    "Landing: 'proteins about a fifth' = 31/150 = 20.7%; hero ends 'Free to start, no account needed.'; examFacts block matches the official pages"
+  ]
+}

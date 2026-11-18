@@ -29,7 +29,7 @@ Q = [
  "An infrared (laser) thermometer reads the surface it is pointed at. Internal temperatures need a probe thermometer pushed into the thickest part."),
 ("Leftover soup is reheated for service. What internal temperature must it reach?",
  "74°C", ["60°C", "63°C", "71°C"],
- "Leftovers are reheated to 74°C, and soups, sauces and gravies brought to a full boil. 60°C is only the hot-holding line and 71°C is the ground-meat target."),
+ "Leftovers are reheated to 74°C, and soups, sauces and gravies brought to a full boil. 60°C is only the top of the danger zone and 71°C is the ground-meat target."),
 ("Cooked rice sat on the counter for three hours. What should be done with it?",
  "Discard it", ["Reheat it to 74°C", "Chill it in a blast chiller", "Serve it within the hour"],
  "Health Canada advises throwing out cooked food left at room temperature for more than two hours. Reheating does not destroy toxins some bacteria leave behind."),

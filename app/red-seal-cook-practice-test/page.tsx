@@ -90,7 +90,7 @@ const jsonLd = {
           name: "Is 415A the same as the Red Seal Cook exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "415A is the Ontario trade code for Cook. Ontario apprentices write the same interprovincial Red Seal exam as everyone else. The trade is called Professional Cook 3 in British Columbia and Cook - Level 2 in Quebec, and the written exam content is the same across Canada.",
+            text: "415A is the Ontario trade code for Cook. Ontario apprentices write the same interprovincial Red Seal exam as everyone else. The written exam content is the same across Canada.",
           },
         },
         {
@@ -297,7 +297,7 @@ export default function RedSealCookLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is 415A the same as the Red Seal Cook exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              415A is the Ontario trade code for Cook. Ontario apprentices write the same interprovincial Red Seal exam as everyone else. The trade is called Professional Cook 3 in British Columbia and Cook - Level 2 in Quebec, and the written exam content is the same across Canada.
+              415A is the Ontario trade code for Cook. Ontario apprentices write the same interprovincial Red Seal exam as everyone else. The written exam content is the same across Canada.
             </p>
           </div>
           <div>

@@ -55,7 +55,7 @@ ROWS = [
  N_PAR, "fc_systeme"),
 # Bloc 2 (A2)
 ("Vous avez un titre de séjour et vous changez de logement. Qui devez-vous informer de votre nouvelle adresse ?",
- ["La préfecture", "Le consulat de votre pays", "La mairie de votre ancienne commune", "L'ambassade de France"],
+ ["La préfecture", "Le consulat de votre pays", "La mairie de votre nouvelle commune", "Le commissariat de votre quartier"],
  0, "Une personne étrangère doit informer la préfecture de tout changement d'adresse ou de domiciliation. Le consulat de son pays n'est pas l'administration qui gère son séjour en France.",
  N_INST, "fc_sejour"),
 ("Pendant une consultation, que fait le médecin avec votre carte Vitale ?",

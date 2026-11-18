@@ -88,9 +88,9 @@ _ITEMS = [
      P, "fc_normandie"),
 
     # Bloc 2 (A2)
-    ("Quel empereur promulgue le Code civil en 1804 ?",
-     "Napoléon Ier", ["Napoléon III", "Charlemagne", "Louis-Philippe"], 0,
-     "Napoléon Ier promulgue le Code civil, qui garantit encore l'égalité devant la loi. Napoléon III, son neveu, règne plus tard, sous le Second Empire.",
+    ("Sous quel dirigeant le Code civil est-il promulgué en 1804 ?",
+     "Napoléon Bonaparte", ["Napoléon III", "Louis XVI", "Louis-Philippe"], 0,
+     "Le Code civil de 1804 est l'œuvre de Napoléon Bonaparte, qui devient la même année l'empereur Napoléon Ier ; il garantit encore l'égalité devant la loi. Napoléon III, son neveu, règne plus tard, sous le Second Empire.",
      H, "fc_1empire"),
     ("En quelle année les femmes obtiennent-elles le droit de vote en France ?",
      "1944", ["1848", "1958", "1974"], None,

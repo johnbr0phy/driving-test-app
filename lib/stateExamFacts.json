@@ -172,6 +172,44 @@
    }
   ]
  },
+ "realestate-ma": {
+  "accessed": "2026-11-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Massachusetts Board of Registration of Real Estate Brokers and Salespersons (Division of Occupational Licensure)"
+   },
+   {
+    "label": "Vendor and handbook",
+    "value": "PSI, \"Examination Candidate Information Bulletin (CIB)\", updated 06/12/2025 (no form number printed)",
+    "url": "https://www.mass.gov/doc/psi-candidate-information-bulletin/download"
+   },
+   {
+    "label": "Outline",
+    "value": "\"Examination Content Outlines for Salesperson and Broker\" in the same bulletin (pp. 15-18): PSI general portion by percent, state portion with item counts; no separate effective date printed"
+   },
+   {
+    "label": "Format",
+    "value": "Salesperson: general 80 scored items, 150 minutes; state 40 scored items, 90 minutes; both 120 items, 240 minutes"
+   },
+   {
+    "label": "Pretest",
+    "value": "5 to 10 unscored experimental questions that count against exam time"
+   },
+   {
+    "label": "Pass",
+    "value": "Minimum 70% to pass; general and state portions are passed separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Retake only the failed portion; it must be passed within 2 years of the education certificate date, or both portions are retaken"
+   },
+   {
+    "label": "Education",
+    "value": "40 classroom hours of approved courses before the exam; certificate valid 24 months"
+   }
+  ]
+ },
  "realestate-mi": {
   "accessed": "2026-10-18",
   "rows": [

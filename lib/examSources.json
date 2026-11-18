@@ -1641,10 +1641,16 @@
   "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
   "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US"
  ],
+ "sfappbuilder": [
+  "https://help.salesforce.com/s/articleView?id=005298964&type=1&language=en_US",
+  "https://trailhead.salesforce.com/help?article=Salesforce-Certified-Platform-App-Builder-Exam-Guide",
+  "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification"
+ ],
  "sfpd1": [
   "https://trailhead.salesforce.com/credentials/platformdeveloperi",
   "https://trailheadacademy.salesforce.com/certificate/exam-platform-dev1---Plat-Dev-201",
-  "https://trailhead.salesforce.com/content/learn/modules/platform-developer-i-certification-prep-fundamentals-and-database-modeling/pd1-1-get-started"
+  "https://trailhead.salesforce.com/content/learn/modules/platform-developer-i-certification-prep-fundamentals-and-database-modeling/pd1-1-get-started",
+  "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf"
  ],
  "sgbtt": [
   "https://www.police.gov.sg/-/media/SPF/Knowledge-Hub/Traffic/BT-ENG-24126.pdf",
@@ -1670,11 +1676,6 @@
   "https://www.police.gov.sg/-/media/SPF/Advisories/TP/RT-ENG-2126.pdf",
   "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal",
   "https://www.police.gov.sg/E-Services/Practise-Driving-and-Riding-Theory-Test"
- ],
- "sgsecurity": [
-  "https://www.police.gov.sg/E-Services/Apply-for-Security-Officer-Licence/Security-Progressive-Wage-Model-Requirements",
-  "https://www.police.gov.sg/-/media/SPF/Files/E-services/SO/FAQs-on-Enhanced-Training-Requirements-for-Security-Officers-Updated.pdf",
-  "https://www.police.gov.sg/-/media/SPF/Files/E-services/SO/Refresher-Quiz-Training-Package.pdf"
  ],
  "sgsnb": [
   "https://file.go.gov.sg/snb-rn-le-test-plan-and-sample-qns.pdf",

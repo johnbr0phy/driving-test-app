@@ -583,6 +583,20 @@
     ],
     "openQuestions": [
       "#886 and #888 are already in main via #892; John to close them unmerged."
-    ]
+    ],
+    "realEstateStates": {
+      "reservedIds": "40000-41750 (50 per state)",
+      "sharedShortStems": "national stems shortened per state via question overrides",
+      "prs": {
+        "MO": "https://github.com/johnbr0phy/driving-test-app/pull/895",
+        "MA": "https://github.com/johnbr0phy/driving-test-app/pull/897",
+        "MD": "https://github.com/johnbr0phy/driving-test-app/pull/898",
+        "CO": "https://github.com/johnbr0phy/driving-test-app/pull/899"
+      },
+      "onHold": {
+        "IN": "official Indiana Code unreadable (iga.in.gov is a JS app); ~25 items rest on FindLaw copies; reviewer disagreed on 2 statute items. Branch codex/re-state-in, not pushed."
+      },
+      "note": "State PRs touch the same lines (EXAM_VARIANTS, ExamId, banks file); after each merge the others need a conflict resolve."
+    }
   }
 }

@@ -2,10 +2,10 @@ CAT = "ea3Filing"; SEG = "FIL"
 # Filing process: accuracy, records, data security and IRS e-file (Pubs. 1345, 3112, 4557).
 Q = [
 ("Tax software computes a much larger credit than the client's facts suggest. Before filing, the preparer should:",
- "Check the entries behind it", ["File it as the software computed", "Note the doubt in the file only", "Ask the vendor after filing"],
+ "Check the entries behind it", ["Have the client sign off on it", "File it with Form 8275 attached", "File it and flag it in the file"],
  "Section 10.22 requires due diligence in preparing returns, and relying on software does not replace reviewing its results. An unexpected result calls for checking the inputs first."),
 ("Comparing a client's current return with last year's is most useful for catching:",
- "Missing or doubled items", ["A wrong filing deadline", "An expired preparer PTIN", "A revoked firm EFIN"],
+ "Missing or doubled items", ["Arithmetic errors this year", "Wrong current-year tax rates", "Credits newly enacted this year"],
  "A side-by-side review flags income or deductions that dropped off or were entered twice, such as a brokerage form imported and also keyed by hand."),
 ("A client imports a brokerage statement and also types in the same Form 1099-B. The likely result is:",
  "Gains reported twice", ["An e-file rejection", "No change in the tax", "A carryover of basis"],

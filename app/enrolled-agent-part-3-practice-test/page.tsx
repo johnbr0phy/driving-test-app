@@ -15,7 +15,7 @@ const siteUrl = SITE_URL;
 
 const title = "Free Enrolled Agent Exam Part 3 Practice Test 2026 - SEE Representation";
 const metaDescription =
-  "Free Enrolled Agent (SEE) Part 3 practice: 200 original questions on Circular 230, powers of attorney, collections, audits, appeals, penalties and e-file, four 50-question mock tests, every answer explained.";
+  "Enrolled Agent (SEE) Part 3 practice, free to start: 200 original questions on Circular 230, powers of attorney, collections, audits, appeals, penalties and e-file, four 50-question mock tests, every answer explained.";
 const description =
   "Free practice for Part 3 (Representation, Practices and Procedures) of the IRS Special Enrollment Examination for enrolled agents: 200 original multiple-choice questions written from the IRS content outline in PSI's Candidate Information Bulletin, Treasury Department Circular 230, the Internal Revenue Code and IRS publications on representation, collection, examinations, appeals and e-file. Four 50-question mock tests weighted like the real part's four domains, and four training sets.";
 
@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "How many questions are on Part 3 and what score do I need?",
-    a: "Each part has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours. Results are scaled from 200 to 800 and the IRS passing score is 500, which is not a fixed percentage. The mock tests here are 50 questions at the same pace, with a 70 percent target as a readiness line.",
+    a: "Each part has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours. Results are scaled from 200 to 800 and the IRS passing score is 500, which is not a fixed percentage. The mock tests here are 50 questions, with a 70 percent target as a readiness line.",
   },
   {
     q: "Which rules does Part 3 follow?",
@@ -154,7 +154,7 @@ export default function EnrolledAgentPart3LandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Weighted Mock Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four mock tests of 50 multiple-choice questions in the IRS outline&apos;s proportions, at the real exam&apos;s pace, with a 70% target. No question appears in more than one test, and every explanation names the rule, form or publication behind the answer.
+                Four mock tests of 50 multiple-choice questions in the IRS outline&apos;s proportions, with a 70% target. No question appears in more than one test, and every explanation names the rule, form or publication behind the answer.
               </p>
             </div>
           </div>

@@ -593,8 +593,9 @@ export function reportReplyEmail(v: EmailVoice, c: ReportReplyContent): string {
 export const MILLIONTH_SUBJECT = "You answered our 1,000,000th question 🎉";
 
 export function millionthEmail(v: EmailVoice, c: { firstName: string | null; alreadyPremium: boolean }): string {
+  // No exam branding: the site's own crowned tiger and "TIGERTEST" at the top.
+  // The button still goes to the dashboard of the test they last studied.
   return emailShell({
-    voice: v,
     expression: 1,
     eyebrow: "1,000,000 QUESTIONS",
     title: MILLIONTH_SUBJECT,
@@ -610,7 +611,7 @@ export function millionthEmail(v: EmailVoice, c: { firstName: string | null; alr
           ? "You already have Premium, so instead of a prize we owe you a very big thank you. Reply and tell me what test you are studying for."
           : `To say thank you, <strong style="font-weight: 700;">Premium is now on your account, free, for good.</strong> Every locked set, test and stat on Tigertest is open to you.`
       ),
-      cta(DASH(v, "millionth"), v.id === "unknown" ? "Keep Practicing" : `Keep Practicing ${v.shortName}`),
+      cta(DASH(v, "millionth"), "Keep Practicing"),
       p("Good luck on the real thing. Just hit reply if you ever want to tell me how it went."),
       signoff("Cheers,"),
     ].join("\n"),

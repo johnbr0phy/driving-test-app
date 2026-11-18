@@ -79,13 +79,28 @@ def score(out):
         print(f"  {w}: {h}/{t} right" + (f" ({h / t:.0%})" if t else ""))
     for c, (h, t) in sorted(cat.items()):
         print(f"  {c}: {h}/{t}")
-    print(f"surface-cue hits ({len(s_hits)}), rewrite each:", ", ".join(s_hits) or "none")
+    print(f"surface-cue hits ({len(s_hits)}):", ", ".join(s_hits) or "none")
+    # Second read (Nov 18 2026): S tags vary a lot between reviewers, so a hit counts only when
+    # a second reviewer, reading the whole question, confirms the options give the key away.
+    # confirm.json: {"<questionId>": {"cue": true|false, "why": "..."}} for every listed hit.
+    try:
+        confirm = json.load(open(f"{out}/confirm.json"))
+    except FileNotFoundError:
+        confirm = None
+    if confirm is not None:
+        missing = [q for q in s_hits if q not in confirm]
+        if missing:
+            sys.exit(f"confirm.json has no verdict for {missing}")
+        s_hits = [q for q in s_hits if confirm[q].get("cue")]
+        print(f"confirmed by the second read ({len(s_hits)}), rewrite each:", ", ".join(s_hits) or "none")
+    else:
+        print("no confirm.json: counting every tagged hit; ask a second reviewer to confirm each one")
     fails = []
     if overall > OVERALL_CEILING:
         fails.append("overall above the live-bank ceiling: wrong options are false on their face")
     if len(s_hits) > S_HIT_SHARE * n:
         fails.append(f"surface-cue hits {len(s_hits)} > {S_HIT_SHARE:.0%} of items")
-    if s_picks >= 10 and len(s_hits) / s_picks > S_HIT_RATE:
+    if confirm is None and s_picks >= 10 and len(s_hits) / s_picks > S_HIT_RATE:
         fails.append(f"surface-cue picks hit {len(s_hits)}/{s_picks}, above {S_HIT_RATE:.0%}")
     print("FAIL: " + "; ".join(fails) if fails else "PASS")
     return 1 if fails else 0

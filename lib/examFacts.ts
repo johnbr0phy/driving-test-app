@@ -44,6 +44,23 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  ea3: {
+    answer:
+      "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",
+    rows: [
+      { label: "Questions", value: "100 (85 scored, 15 unscored)" },
+      { label: "Time", value: "3.5 hours" },
+      { label: "Passing score", value: "500 on a 200 to 800 scale" },
+      { label: "Rules tested", value: "Law as of December 31, 2025, for July 1, 2026 to February 28, 2027" },
+      { label: "Largest domains", value: "Practices and procedures 26, representation 25" },
+      { label: "Where", value: "PSI test center or remote proctoring, both in the U.S.; international testing delayed" },
+      { label: "Attempts", value: "Up to four per part each testing window" },
+      { label: "Passed parts", value: "Carry over for three years" },
+      { label: "Given by", value: "PSI for the IRS" },
+    ],
+    basedOn: "the PSI Candidate Information Bulletin for the IRS SEE (revised October 9, 2026) and the IRS enrolled agent FAQs, checked November 2026",
+    source: { name: "IRS: Enrolled agents frequently asked questions", url: "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions" },
+  },
   ea2: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 2 covers businesses. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 2's three domains are business entities and considerations (30 scored questions), business tax preparation (37) and specialized returns and taxpayers (18). For exams from July 1, 2026 to February 28, 2027, questions follow tax law as amended through December 31, 2025 and relate to calendar year 2025.",

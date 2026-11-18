@@ -5387,6 +5387,19 @@
     --brand-border-light: 49 30% 88%;
     --brand-gradient-to: 64 50% 95%;
   }
+  /* IRS SEE Part 3 theme: dark olive */
+  [data-theme="ea3"] {
+    --brand: 82 25% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 82 50% 95%;
+    --brand-hover: 82 25% 17%;
+    --brand-dark: 82 25% 15%;
+    --brand-darker: 82 20% 10%;
+    --brand-muted: 82 25% 70%;
+    --brand-border: 82 30% 78%;
+    --brand-border-light: 82 30% 88%;
+    --brand-gradient-to: 97 50% 95%;
+  }
 
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
@@ -10758,6 +10771,18 @@
     --brand-muted: 49 20% 45%;
     --brand-dark: 49 20% 65%;
     --brand-darker: 49 15% 78%;
+  }
+
+  .dark [data-theme="ea3"] {
+    --brand: 82 25% 38.7%;
+    --brand-hover: 82 25% 30.7%;
+    --brand-light: 82 45% 13%;
+    --brand-gradient-to: 97 40% 11%;
+    --brand-border-light: 82 30% 24%;
+    --brand-border: 82 30% 34%;
+    --brand-muted: 82 25% 45%;
+    --brand-dark: 82 25% 65%;
+    --brand-darker: 82 20% 78%;
   }
 
   .dark [data-theme="hspachl"] {

@@ -2941,6 +2941,13 @@ export const vi: TranslationKeys = {
     ea2Records: "Records, Methods & Advising",
     ea2Trusts: "Trusts, Estates & Exempt Orgs",
     ea2Retirement: "Retirement, Farmers & Rentals",
+    ea3Practice: "Practice Before the IRS",
+    ea3Sanctions: "Sanctions & Penalties",
+    ea3Poa: "Power of Attorney & Disclosure",
+    ea3Case: "Building the Taxpayer's Case",
+    ea3Collection: "Collection & Abatement",
+    ea3Exam: "Examinations & Appeals",
+    ea3Filing: "Filing Process & E-file",
   } as Record<string, string>,
 
   // Training set names

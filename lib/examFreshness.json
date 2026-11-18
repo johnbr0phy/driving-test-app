@@ -510,6 +510,14 @@
       "what": "The July 1, 2026 to February 28, 2027 SEE window ends; the next window (after the March to April update) is expected to test calendar year 2026 law.",
       "action": "Read the new PSI bulletin; move 2025-dated items (bonus 40%/100% split, $600 Form 1099-NEC, 10% corporate charitable limit without the 1% floor) to the tax year it names, and update the landing and examFacts dates.",
       "source": "https://test-takers.psigov.us/api/content/bulletin/12238"
+    },
+    {
+      "exam": "ea3",
+      "date": "2027-05-01",
+      "kind": "outline",
+      "what": "SEE testing pauses in March and April 2027 while the exam is updated; the next window will test law as amended through December 31, 2026 under a new Candidate Information Bulletin.",
+      "action": "Read the new bulletin's Part 3 outline and weights; update any item a 2026 law change or revised IRS publication touches (Circular 230, Pubs. 1345 and 3112, Form 2848 instructions, the First Time Abate move to Automatic Exemption from Penalty).",
+      "source": "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions"
     }
   ]
 }

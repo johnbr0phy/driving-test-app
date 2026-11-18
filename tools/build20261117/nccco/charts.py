@@ -1,40 +1,40 @@
 ITEMS=[]
 def Q(stem,key,d1,d2,d3,why):ITEMS.append((stem,[key,d1,d2,d3],why))
 Q('Which document gives permitted lifted weights for specified crane configurations and radii?',
- 'The rated-capacity chart','The working-range diagram','The operator\'s manual index','The inspection log',
+ 'Rated-capacity chart','Working-range diagram','Operator\'s manual index','Inspection log',
  'The rated-capacity chart provides capacities; its notes and the matching configuration must also be checked. A range diagram shows reach, not weight.')
 Q('Which diagram primarily relates boom geometry to achievable hook height and horizontal reach?',
- 'The working-range diagram','The rated-capacity chart','The work-area diagram','The parts-of-line table',
+ 'Working-range diagram','Rated-capacity chart','Work-area diagram','Parts-of-line table',
  'A working-range diagram addresses geometry; reach alone does not prove lifting capacity.')
 Q('Which diagram shows the sectors in which a crane may lift under a particular rating?',
- 'The work-area diagram','The working-range diagram','The rated-capacity chart','The load-moment curve',
+ 'Work-area diagram','Working-range diagram','Rated-capacity chart','Load-moment curve',
  'The work-area diagram identifies sectors such as over-side or over-rear; ratings must match the actual sector.')
 Q('Which information shows the required reeving and what each reeving allows?',
- 'The parts-of-line table','The work-area diagram','The working-range diagram','The rated-capacity chart alone',
+ 'Parts-of-line table','Work-area diagram','Working-range diagram','Rated-capacity chart alone',
  'Parts-of-line information specifies reeving and line limitations, which must be satisfied alongside chart capacity.')
 Q('Two chart pages differ only in full or intermediate beam deployment. What selects the page?',
- 'The outrigger extension in use','The type of mat used','The boom angle at the pick','The counterweight fitted',
+ 'Outrigger extension in use','Type of mat used','Boom angle at the pick','Counterweight fitted',
  'The actual outrigger extension must match a manufacturer-permitted configuration and its chart. Mats affect ground pressure, not which page applies.')
 Q('Two ratings differ only in ballast package. Which installed feature selects the rating?',
- 'The counterweight actually fitted','The heavier package listed','The boom length','The outrigger extension',
+ 'Counterweight actually fitted','Heavier package listed','Boom length','Outrigger extension',
  'The installed counterweight must match the chart; using a heavier-package chart would overstate capacity.')
 Q('A load will swing from over the side to over the rear. Which chart rating applies?',
- 'The lowest rating of any sector it passes','The higher of the two ratings','The carrier\'s direction of travel','The load\'s height above ground',
+ 'Lowest rating of any sector it passes','Higher of the two ratings','Carrier\'s direction of travel','Load\'s height above ground',
  'The rating for every sector the load passes through must hold throughout the lift, so the lowest of them governs; using the higher rating everywhere is the common mistake.')
 Q('A chart family separates main-boom lifts from offset-jib lifts. What must match the chosen page?',
- 'The actual boom and jib setup','The main boom angle only','The jib offset you prefer','The block on the main line',
+ 'Actual boom and jib setup','Main boom angle only','Jib offset you prefer','Block on the main line',
  'The actual boom and jib arrangement must match the selected chart and its notes.')
 Q('The boom deflects under load, moving the hook away from the rotation axis. Which chart input reflects this?',
- 'The loaded radius','The unloaded radius','The hook height','The boom length',
+ 'Loaded radius','Unloaded radius','Hook height','Boom length',
  'Use the actual loaded operating radius rather than the shorter unloaded radius.')
 Q('A telescopic boom extends while a new angle keeps the same radius. Which chart input may have changed?',
- 'The boom length','The work sector','The counterweight','The boom\'s rated angle',
+ 'Boom length','Work sector','Counterweight','Boom\'s rated angle',
  'Boom length has changed and may select a different rating even at the same radius.')
 Q('A chart note says to subtract suspended handling equipment. What is needed beyond the object\'s weight?',
- 'The block, slings and other gear','The crane\'s own weight','The outrigger reactions','The counterweight\'s weight',
+ 'Block, slings and other gear','Crane\'s own weight','Outrigger reactions','Counterweight\'s weight',
  'The block, slings and other suspended lifting gear consume the stated gross capacity.')
 Q('A geometry is below the manufacturer\'s angle boundary though the weight seems fine. Which limit is violated?',
- 'The minimum boom angle','The maximum boom angle','The line-pull limit','The tail-swing limit',
+ 'Minimum boom angle','Maximum boom angle','Line-pull limit','Tail-swing limit',
  'Minimum boom-angle limits are independent constraints; a capacity calculation does not override them. Below the boundary means the minimum, not the maximum.')
 Q('An object weighs 1.5 US short tons. What is its weight in pounds?',
  '3,000 pounds','3,307 pounds','3,360 pounds','1,500 pounds',
@@ -61,7 +61,7 @@ Q('A 12,000 lb gross load must be at most 75% of capacity. What minimum capacity
  '16,000 pounds','9,000 pounds','15,000 pounds','20,000 pounds',
  '12,000 / 0.75 = 16,000 lb. Multiplying by 0.75 (9,000) or by 1.25 (15,000) is the common slip. The 75% condition belongs to this exercise, not to every crane rating.')
 Q('A chart lists 30 ft and 35 ft radii and says to use the next longer radius. Which row applies at 32 ft?',
- 'The 35-foot row','The 30-foot row','An average of both rows','Whichever row has more capacity',
+ '35-foot row','30-foot row','Average of both rows','Whichever row has more capacity',
  'The supplied note selects the next longer radius, 35 ft; do not interpolate or pick the shorter, higher row contrary to the note.')
 Q('Between boom lengths a chart says to use the lower capacity. The entries are 9,000 lb and 8,000 lb. Which applies?',
  '8,000 pounds','9,000 pounds','8,500 pounds','17,000 pounds',
@@ -73,16 +73,16 @@ Q('An outrigger position has no permitted chart or procedure. What capacity appl
  'None; get an approved setup first','Use the next wider position\'s rating','Interpolate between two positions','Use the rating at a shorter radius',
  'Do not invent a rating for an unsupported configuration; obtain a manufacturer-permitted configuration or procedure before lifting.')
 Q('A setup allows 8,000 lb by chart, 10,000 lb by reeving and 12,000 lb by rigging. Which limit governs?',
- 'The 8,000 lb chart limit','The 10,000 lb reeving limit','The 12,000 lb rigging limit','An average of the three limits',
+ '8,000 lb chart limit','10,000 lb reeving limit','12,000 lb rigging limit','Average of the three limits',
  'The 8,000 lb gross chart limit is the smallest stated capacity, so it governs.')
 Q('Chart capacity is 18,000 lb, reeving 12,000 lb and rigging 16,000 lb. Which limit governs?',
- 'The 12,000 lb reeving limit','The 18,000 lb chart limit','The 16,000 lb rigging limit','The 30,000 lb chart and reeving sum',
+ '12,000 lb reeving limit','18,000 lb chart limit','16,000 lb rigging limit','30,000 lb chart and reeving sum',
  'The 12,000 lb reeving limit governs even though the chart permits more.')
 Q('Chart capacity is 20,000 lb, reeving 18,000 lb and rigging 10,000 lb. Which constraint is lowest?',
- 'The 10,000 lb rigging limit','The 20,000 lb chart limit','The 18,000 lb reeving limit','The 48,000 lb combined total',
+ '10,000 lb rigging limit','20,000 lb chart limit','18,000 lb reeving limit','48,000 lb combined total',
  'The 10,000 lb rigging limit is the weakest stated part of the load path.')
 Q('A load meets every weight limit, but the hook reaches 70 ft where 76 ft is needed. What prevents the plan?',
- 'The hook height falls 6 ft short','The rigging rating is too low','The gross load is over the chart','Nothing, as every weight limit is met',
+ 'Hook height falls 6 ft short','The rigging rating is too low','The gross load is over the chart','Nothing, as every weight limit is met',
  '76 - 70 = 6 ft: the geometry fails the hook-height requirement, and spare weight capacity cannot create additional hook height.')
 Q('A net payload allowance is 7,500 lb and the object weighs 7,000 lb. How much allowance remains?',
  '500 pounds','1,000 pounds','14,500 pounds','7,000 pounds',
@@ -109,28 +109,28 @@ Q('A load at 28 ft radius moves 7 ft straight outward along the radius line. Wha
  '35 feet','28 feet','21 feet','42 feet',
  '28 + 7 = 35 ft; moving outward adds to the radius, and the new radius must be checked against the correct chart.')
 Q('A chart has side and rear sectors, and a lift stays wholly over the side. Which rating applies?',
- 'The over-side rating','The over-rear rating','The 360-degree rating','The over-front rating',
+ 'Over-side rating','Over-rear rating','360-degree rating','Over-front rating',
  'Use the over-side rating and its applicable configuration notes.')
 Q('A load path lies wholly behind the carrier, in the chart\'s sector for that area. Which rating applies?',
- 'The over-rear rating','The over-side rating','The 360-degree rating','The on-tires rating',
+ 'Over-rear rating','Over-side rating','360-degree rating','On-tires rating',
  'Use the matching over-rear rating rather than assuming another sector\'s capacity.')
 Q('The manufacturer\'s chart permits the same rating through full rotation. Which rating covers the full swing?',
- 'The 360-degree rating','The over-rear rating','The over-side rating only','The over-front rating',
+ '360-degree rating','Over-rear rating','Over-side rating only','Over-front rating',
  'The 360-degree rating applies only because the stated configuration and chart expressly allow it.')
 Q('A manufacturer permits lifting on rubber in a specified setup. Which chart governs?',
- 'The on-tires chart','The fully extended outrigger chart','The mid-extension outrigger chart','The crawler chart',
+ 'On-tires chart','Fully extended outrigger chart','Mid-extension outrigger chart','Crawler chart',
  'Use the on-tires chart and its restrictions, not an outrigger-supported capacity.')
 Q('Which deducted item is the hook-and-sheave assembly hanging below the boom tip?',
- 'The main load block','The boom-tip sheave head','The jib stowed on the boom','The hoist drum',
+ 'Main load block','Boom-tip sheave head','Jib stowed on the boom','Hoist drum',
  'The main load block is suspended handling equipment and must be accounted for under the stated note. The sheave head is part of the boom itself.')
 Q('A calculation includes the block and slings but omits a 1,000 lb beam between hook and object. What must be added?',
  'Its full 1,000 lb','Half its weight, shared with the hook','Nothing, as it counts as rigging','Only its lifting lugs',
  'The suspended spreader beam contributes its full weight to the gross lifted load.')
 Q('A chart requires a deduction for a jib carried on the boom but not lifting. Which allowance applies?',
- 'The stowed-jib deduction','The erected-jib deduction','No deduction, as it is not lifting','The block deduction only',
+ 'Stowed-jib deduction','Erected-jib deduction','No deduction, as it is not lifting','Block deduction only',
  'Apply the specified stowed-jib deduction; a stowed attachment can affect ratings without being suspended.')
 Q('A tank\'s empty weight is used, but liquid remains inside during the lift. What is missing from the weight?',
- 'The retained contents','The tank\'s empty weight','The tank\'s lifting lugs','The rigging below the hook',
+ 'Retained contents','Tank\'s empty weight','Tank\'s lifting lugs','Rigging below the hook',
  'Retained contents form part of the object\'s actual lifted weight; the empty weight is already counted.')
 Q('At 3,000 lb per supporting part, ignoring efficiency, how many parts does a 12,000 lb load need?',
  '4 parts of line','3 parts of line','5 parts of line','6 parts of line',

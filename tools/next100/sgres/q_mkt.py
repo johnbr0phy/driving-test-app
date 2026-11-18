@@ -13,7 +13,7 @@ Q = [
  "Public tender", ["Balloting", "Private treaty", "Fixed-price allocation"],
  "Sites released under the Government Land Sales (GLS) Programme are generally sold by public tender, with the State awarding the site to a tenderer. Balloting is how HDB allocates new flats, not land."),
 ("HDB acquires state land for building public housing at:",
- "Fair market value", ["A nominal sum", "Reclamation cost only", "Half of market value"],
+ "Fair market value", ["Nominal sum", "Reclamation cost only", "Half of market value"],
  "HDB pays the State fair market value for land used for public housing, assessed by the Chief Valuer. The housing subsidy is given to flat buyers through the flat price, not through cheap land."),
 ("Which agency sets the rules banks follow on housing loans, such as loan-to-value limits?",
  "MAS", ["URA", "IRAS", "SLA"],

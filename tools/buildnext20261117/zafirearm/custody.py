@@ -7,31 +7,31 @@ Q("A holstered handgun is partly visible in public. Which section 84 requirement
  "It must be completely covered","It must be unloaded","It must be held in the hand","It must have a trigger lock",
  "Section 84 requires the firearm to be completely covered as well as carried in an appropriate holder under effective control.")
 Q("An owner leaves a bag holding a covered handgun on a cafe table. Which carrying requirement fails?",
- "Effective control over the firearm","A locking holster","A copy of the licence in the bag","A completely covered holder",
+ "Effective control over the firearm","Locking holster","Copy of the licence in the bag","Completely covered holder",
  "Covering and a suitable holder do not replace the separate duty to keep the firearm under effective control.")
 Q("A safe's key is left where visitors could take it. Which obligation is neglected?",
  "Keeping the keys secure","Changing the safe's lock every year","Registering the key with the DFO","Keeping a spare key in the car",
  "Section 120(8) deals with keeping the safe keys in safe custody, as well as locking the firearm away.")
 Q("A regulation 86(4) storage authorisation omits from when and how long. What is missing?",
- "The period of the storage","The serial number of the safe","The storage fee agreed","The firearm's date of purchase",
+ "Period of the storage","Serial number of the safe","Storage fee agreed","Firearm's date of purchase",
  "The written authorisation must specify the period for which storage is allowed.")
 Q("A regulation 86(4) storage authorisation gives the period and firearm details only. Which required item is missing?",
- "The reason for the storage","The storage provider's employer","The firearm's insured value","The date the safe was installed",
+ "Reason for the storage","Storage provider's employer","Firearm's insured value","The date the safe was installed",
  "Regulation 86(4)(c) requires the reason for storage as well as its period and the identifying details.")
 Q("A storage document omits the storage provider's personal particulars. What is incomplete?",
  "Their name, ID number and address","Their bank details and tax number","Their medical history and doctor","Their employer's name and contact",
  "The authorisation must identify both people concerned by name, identity number and physical address.")
 Q("A storage document does not identify the firearm. What particulars are missing?",
- "Details of the firearm and its licence","The firearm's current market value","The brand of ammunition it uses","The year and country it was made",
+ "Details of the firearm and its licence","Firearm's current market value","The brand of ammunition it uses","The year and country it was made",
  "The document must sufficiently identify the firearm and the licence, permit or authorisation concerned.")
 Q("A regulation 86(4) document was drawn up by a neighbour without the holder's say-so. What is missing?",
- "Written authorisation from the lawful holder","Written consent from the neighbour's spouse","A written valuation of the firearm","A written statement from a dealer",
+ "Written authorisation from the lawful holder","Written consent from the neighbour's spouse","Written valuation of the firearm","Written statement from a dealer",
  "The written authorisation must come from the person legally entitled to possess the firearm.")
 Q("A signed regulation 86(4) storage arrangement has no police sign-off. What approval is needed?",
- "The DFO's endorsement","A commissioner of oaths' stamp","A dealer's countersignature","A neighbour's signature as witness",
+ "DFO's endorsement","Commissioner of oaths' stamp","Dealer's countersignature","Neighbour's signature as witness",
  "The holder's written authorisation must be endorsed by the relevant Designated Firearms Officer.")
 Q("A provider keeps the stored firearm at an address not named in the authorisation. What is breached?",
- "A prescribed safe at the named address","Storage at any address the provider owns","Storage at the holder's own address only","Notice of the new address within 30 days",
+ "Prescribed safe at the named address","Storage at any address the provider owns","Storage at the holder's own address only","Notice of the new address within 30 days",
  "The firearm must be in a prescribed safe at the place specified in the authorisation.")
 Q("Under regulation 86(4)(a), who may store another holder's firearm?",
  "Someone with a licence or muzzle-loading competency certificate","Any adult who owns a prescribed safe","Any relative of the owner, wherever they live","Only a licensed dealer or gunsmith",
@@ -49,22 +49,22 @@ Q("What power does regulation 86(4)(d) give a DFO who finds good cause to end te
  "Cancel the permission at any time","Only suspend it for 30 days","Refer it to the Appeal Board first","Cancel it only when its period ends",
  "The relevant DFO may cancel the storage permission at any time on good cause.")
 Q("Under regulation 86(1), what storage is required when a firearm is not under personal control?",
- "A SABS-standard safe or strongroom","A locked steel cupboard of any make","A locked vehicle boot at home","A lockable gun case under a bed",
+ "SABS-standard safe or strongroom","Locked steel cupboard of any make","Locked vehicle boot at home","Lockable gun case under a bed",
  "The default is a safe or strongroom that conforms to the referenced SABS standards, subject to specific regulatory provisions.")
 Q("Under regulation 86(8), what makes a safe that met the previous Act's rules count as compliant?",
- "A DFO certificate for that safe","Proof the safe is over ten years old","A dealer's receipt for the safe","Nothing, it complies automatically",
+ "DFO certificate for that safe","Proof the safe is over ten years old","Dealer's receipt for the safe","Nothing, it complies automatically",
  "Under regulation 86(8), as amended in 2012, an existing safe that met the previous Act's regulations is deemed to meet SABS 953 only if the DFO issues a certificate to that effect.")
 Q("Under regulation 86(5), apart from an SABS 953 safe, which storage may hold a visitor's firearm?",
- "An installed lock-away safe that the designated person and the holder can open only jointly","An installed lock-away safe that the designated person alone opens with a key","A locked steel cabinet that the visiting holder alone can open","A locked drawer at reception that any staff member on duty can open",
+ "An installed lock-away safe that the designated person and the holder can open only jointly","Installed lock-away safe that the designated person alone opens with a key","A locked steel cabinet that the visiting holder alone can open","A locked drawer at reception that any staff member on duty can open",
  "Regulation 86(5)(c), as amended in 2012, allows a prescribed lock-away safe installed on the premises that can only be opened jointly by the designated person and the holder.")
 Q("An owner says a firearm on their hip needs no safe. Which question decides that?",
  "Whether it is under their direct control","Whether it is in the same house as them","Whether the outside doors are locked","Whether it is unloaded in the holster",
  "The regulation contrasts prescribed storage with direct personal and physical control. Being somewhere in the house is not the same thing.")
 Q("Ammunition is in the safe but the firearm is in an ordinary drawer. What still needs prescribed custody?",
- "The firearm","The licence card","The holster","Nothing else, since the ammunition is locked",
+ "Firearm","Licence card","Holster","Nothing else, since the ammunition is locked",
  "Securing the ammunition alone does not satisfy the storage duty for the unattended firearm.")
 Q("A firearm is locked away but cartridges sit on a shelf. What is improperly stored?",
- "The ammunition","The cleaning kit","The licence card","Nothing further",
+ "Ammunition","Cleaning kit","Licence card","Nothing further",
  "Regulation 86(1) applies to the firearm and its ammunition.")
 Q("An owner lets the licence card become unreadable. Which duty is unmet?",
  "Keeping the licence legible","Carrying the licence at all times","Keeping a photocopy of the licence","Laminating the licence card",
@@ -73,10 +73,10 @@ Q("A holder leaves the safe's key where an unlicensed relative can take it. Whic
  "Exclusive access to the safe","Bolting the safe to a wall or floor","Storing the firearm unloaded","Telling the DFO about temporary storage",
  "Regulation 86(11)(b) requires the holder to have exclusive access to the safe, or for their presence and co-operation to be needed for access. A compliant safe is not enough if others can reach the key.")
 Q("Which carrying requirement concerns the holster or similar carrier used for a handgun?",
- "A suitable holder for a handgun","Carrying the handgun unloaded","Carrying it in plain view at all times","Fitting a trigger lock to it",
+ "Suitable holder for a handgun","Carrying the handgun unloaded","Carrying it in plain view at all times","Fitting a trigger lock to it",
  "Section 84(1)(a) sets the permitted type of handgun holder, including an appropriate holster attached to the body or a rucksack or similar holder.")
 Q("Which carrier does section 84(1)(b) require for a firearm other than a handgun?",
- "A holder made or adapted for it","Any bag large enough to hold it","A handgun-style holster on the belt","No holder at all if it is unloaded",
+ "Holder made or adapted for it","Any bag large enough to hold it","Handgun-style holster on the belt","No holder at all if it is unloaded",
  "It must be in a holder designed, manufactured or adapted for carrying that firearm, as well as covered and controlled.")
 Q("Which section 84 requirement deals with a carried firearm's visibility?",
  "Complete covering of the firearm","Unloading the firearm","Using a locking holster","Nothing further, as the holster is enough",
@@ -100,13 +100,13 @@ Q("Under section 90(a), how must ammunition relate to the owner's licensed firea
  "The licensed firearm must be able to fire it","Any calibre works under any firearm licence","It must come from the dealer who sold the firearm","It must be fewer than 200 rounds",
  "The licensed firearm must be capable of discharging that ammunition. A licence for an unrelated firearm is not enough under that paragraph.")
 Q("A person relies on a document covering cartridges, not a firearm. Which section 90 basis is this?",
- "A separate ammunition permit","A firearm licence for that calibre","A competency certificate","A shop receipt for the cartridges",
+ "Separate ammunition permit","Firearm licence for that calibre","Competency certificate","Shop receipt for the cartridges",
  "Section 90(b) recognises a permit to possess ammunition as a distinct lawful basis.")
 Q("Which section 90 basis lets a dealer hold ammunition for its business?",
- "Its dealer's licence","A personal firearm licence","An ammunition permit held by its owner","Its business registration certificate",
+ "Its dealer's licence","Personal firearm licence","Ammunition permit held by its owner","Its business registration certificate",
  "Section 90(c) includes dealers and other listed trade or transport authorities.")
 Q("A person holds some other valid authority under the Act for ammunition. Which section 90 basis applies?",
- "Being otherwise lawfully authorised","A personal belief that it is lawful","A shop receipt for the ammunition","A licence for an unrelated firearm",
+ "Being otherwise lawfully authorised","A personal belief that it is lawful","Shop receipt for the ammunition","Licence for an unrelated firearm",
  "Section 90(d) recognises a person who is otherwise lawfully authorised. A belief or a receipt is not such authority.")
 Q("An ordinary owner has no exemption or authorisation. What is the cartridge limit per licensed firearm?",
  "200 cartridges","100 cartridges","500 cartridges","No set limit",
@@ -142,6 +142,6 @@ Q("An owner carrying a firearm takes no sensible steps against losing it. Which 
  "Taking reasonable precautions","Locking it away while carrying it","Reporting it within seven days","Keeping it unloaded while carried",
  "Reasonable precautions against loss or theft apply while the firearm is carried or under direct control, not only while it is stored.")
 Q("A provider moves a stored firearm to a different safe without authority. What is breached?",
- "The named place of storage","The period of the storage","The reason for the storage","The DFO's endorsement",
+ "Named place of storage","Period of the storage","Reason for the storage","DFO's endorsement",
  "The permission is tied to the named place. Another safe elsewhere does not satisfy the location condition.")
 assert len(ITEMS)==48

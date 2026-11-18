@@ -27,6 +27,7 @@ repository. They are the same rules Claude Code follows.
 - **Every fact comes from the exam owner's official documents**, recorded in the bank's
   `sources.md`. Never from prep sites, sample questions or memory.
 - **Short stems**: say the fact or situation and the ask, nothing more (median 12 to 18 words; `tools/check_stem_length.py`).
+- **Lean answers**: options are bare noun phrases, "Appeal Board" not "The Appeal Board"; CI fails a bank where over 25% of options start with The/A/An.
 - **Landing pages** are copies of the template; **a v2 exam with two tests** holds out only Test 2.
 - **An options-only review and perfectly even answer letters do not prove a bank is good.** Review
   stem and options together, as a test-wise candidate would.

@@ -21,8 +21,8 @@ ITEMS = [
        "Lift-and-shift and anything that needs control of the operating system call for IaaS. Deploying your own code onto a managed platform is PaaS. Using a finished application that someone else runs, such as email and calendar, is SaaS."),
     S(1, 2, "PaaS responsibilities",
       "In PaaS, which of these does the customer manage?",
-      "The applications and data they deploy",
-      ["The operating system and its patches", "The physical servers, storage and network", "The middleware and runtime updates"],
+      "Applications and data they deploy",
+      ["Operating system and its patches", "Physical servers, storage and network", "Middleware and runtime updates"],
       "With PaaS the provider manages the physical infrastructure, operating system, middleware and runtime. The customer manages the applications it builds and deploys and the data they use, along with its accounts and identities."),
     M(1, 2, "IaaS characteristics",
       "Which two statements describe infrastructure as a service (IaaS)? (Choose two.)",
@@ -54,7 +54,7 @@ ITEMS = [
       "Azure Virtual Machines gives you a server whose operating system you manage, which is IaaS. App Service and Functions are platforms for your code (PaaS and serverless), and Microsoft 365 is SaaS."),
     S(2, 1, "Least management",
       "Which cloud service type requires the least management effort from the customer?",
-      SAAS, [PAAS, IAAS, "A private cloud"],
+      SAAS, [PAAS, IAAS, "Private cloud"],
       "With SaaS the provider runs the whole application stack, so the customer only configures and uses it. PaaS still leaves the application code to the customer, and IaaS leaves the operating system and everything above it."),
 
     # ---- Drill only ----

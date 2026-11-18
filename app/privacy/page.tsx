@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 14, 2026";
+const UPDATED = "November 18, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";
@@ -70,7 +70,8 @@ export default function PrivacyPage() {
                 <strong>Device and visit:</strong> your approximate country from your IP address (used to show your
                 country&apos;s tests and prices and to decide which privacy rules apply; we do not store your IP address
                 with your account), the page that sent you here, a random browser ID kept in your browser, and whether
-                you came from a school learning system.
+                you came from a school learning system. When we pass 1,000,000 questions answered we note the first
+                signed-in account to answer after it, to give them a prize.
               </li>
               <li>
                 <strong>Payments:</strong> if you buy Premium, Stripe handles the card or other payment method. We receive

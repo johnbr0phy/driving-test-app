@@ -11,9 +11,9 @@
     "stem": "A network printer gets its address from DHCP, but users keep losing it when its address changes. The team wants it to keep the same address while still using DHCP. What should they configure?",
     "explanation": "A reservation always hands the same address to one MAC address, so the printer keeps its address and stays centrally managed. An exclusion only stops the server from handing out an address.",
     "options": [
-      "A shorter lease time on the whole DHCP scope",
+      "Shorter lease time on the whole DHCP scope",
       "An exclusion range on the scope that covers the printer's current address",
-      "A DHCP reservation tied to the printer's MAC address",
+      "DHCP reservation tied to the printer's MAC address",
       "A second DHCP server for the printer's subnet"
     ],
     "correct": [
@@ -74,7 +74,7 @@
     "stem": "A company gets internet service from two different ISPs and wants to exchange routes with both providers using its own autonomous system number. Which routing protocol is used between them?",
     "explanation": "BGP is the path vector protocol that exchanges routes between autonomous systems, including between customers and ISPs. OSPF and EIGRP are interior protocols used inside one organization.",
     "options": [
-      "A static default route",
+      "Static default route",
       "BGP",
       "OSPF",
       "EIGRP"
@@ -179,10 +179,10 @@
     "stem": "A new VLAN's hosts get no addresses. The only DHCP server is on another subnet, and its scope for the new VLAN is correct. What is missing?",
     "explanation": "DHCP Discover messages are broadcasts, which routers do not forward. A relay agent on the VLAN's gateway turns them into unicasts to the server, and the server picks the scope from the relay address.",
     "options": [
-      "A larger subnet mask on the DHCP server's own network interface card",
-      "A DNS A record for the DHCP server's hostname",
-      "A static route on each host to the DHCP server",
-      "A DHCP relay (IP helper) on the new VLAN's router interface"
+      "Larger subnet mask on the DHCP server's own network interface card",
+      "DNS A record for the DHCP server's hostname",
+      "Static route on each host to the DHCP server",
+      "DHCP relay (IP helper) on the new VLAN's router interface"
     ],
     "correct": [
       3
@@ -326,10 +326,10 @@
     "stem": "An installer is seating the individual wires of new horizontal runs into the IDC slots on the back of a patch panel. Which tool does this?",
     "explanation": "A punchdown tool pushes each wire into an insulation displacement connector and trims the excess. A crimper attaches modular plugs such as RJ45 to the end of a cable.",
     "options": [
-      "A cable stripper only",
-      "A cable crimper",
-      "A visual fault locator",
-      "A punchdown tool"
+      "Cable stripper only",
+      "Cable crimper",
+      "Visual fault locator",
+      "Punchdown tool"
     ],
     "correct": [
       3
@@ -432,7 +432,7 @@
     "explanation": "When two sources offer the same prefix, the router trusts the one with the lower administrative distance. A static route has a distance of 1 by default, lower than OSPF's 110, so it wins.",
     "options": [
       "The OSPF route, because its metric is based on link bandwidth and is more accurate",
-      "The OSPF route, because dynamic routes always take priority",
+      "OSPF route, because dynamic routes always take priority",
       "The static route, because its administrative distance is lower",
       "Neither, because two sources for one prefix cause a conflict"
     ],
@@ -452,10 +452,10 @@
     "stem": "A user can reach file servers on the same subnet but nothing on other subnets or the internet. Other users on the subnet are fine. What should be checked first?",
     "explanation": "Reaching local hosts but nothing remote, on one machine only, points to that machine's default gateway (or mask). A circuit or core problem would affect everyone.",
     "options": [
-      "The user's default gateway setting",
-      "The building's internet circuit",
-      "The DNS server's root hints",
-      "The core switch's spanning tree priority"
+      "User's default gateway setting",
+      "Building's internet circuit",
+      "DNS server's root hints",
+      "Core switch's spanning tree priority"
     ],
     "correct": [
       0
@@ -473,7 +473,7 @@
     "stem": "A retailer wants its stores to use broadband, LTE and an existing MPLS circuit together, with a central controller steering voice traffic over whichever link has the lowest latency. Which technology fits?",
     "explanation": "SD-WAN is transport-agnostic and application-aware: it treats every link as a pool and uses central policy to pick the best path for each application. VXLAN extends Layer 2 networks, and a single circuit cannot steer traffic between links.",
     "options": [
-      "A Layer 2 point-to-point circuit",
+      "Layer 2 point-to-point circuit",
       "VXLAN",
       "Spanning tree",
       "SD-WAN"
@@ -576,7 +576,7 @@
     "stem": "Two switches are joined by an 802.1Q trunk. A frame crosses the trunk with no VLAN tag. Which VLAN does the receiving switch place it in?",
     "explanation": "On an 802.1Q trunk, frames in the native VLAN are sent untagged, and untagged frames that arrive are put in the native VLAN. Both ends must agree on the native VLAN or traffic leaks between VLANs.",
     "options": [
-      "The native VLAN configured on the trunk",
+      "Native VLAN configured on the trunk",
       "No VLAN, because untagged frames are dropped",
       "Every VLAN, so it is flooded to all ports",
       "VLAN 4095, which is reserved for errors"
@@ -681,10 +681,10 @@
     "stem": "A switch port's CRC error counter climbs steadily, and the user on that port reports slow, unreliable access. What is the most likely cause?",
     "explanation": "CRC errors mean frames arrived corrupted, which points to physical problems such as bad cables, poor terminations, interference or a duplex mismatch. Address and filtering problems do not corrupt frames.",
     "options": [
-      "A wrong DNS server in the user's settings",
+      "Wrong DNS server in the user's settings",
       "A DHCP pool that has run out of addresses",
-      "A damaged cable or a poorly made termination",
-      "An access list on the router blocking some of the user's traffic"
+      "Damaged cable or a poorly made termination",
+      "Access list on the router blocking some of the user's traffic"
     ],
     "correct": [
       2
@@ -705,7 +705,7 @@
       "Omnidirectional antennas on each roof",
       "Directional antennas aimed at each other",
       "Dipole antennas laid flat on a desk",
-      "The internal antennas of indoor access points"
+      "Internal antennas of indoor access points"
     ],
     "correct": [
       1
@@ -768,9 +768,9 @@
     "stem": "Each desk has one switch port. An IP phone plugs into the port and a PC plugs into the phone. The network team wants voice and data on separate VLANs. Which switch feature does this?",
     "explanation": "A voice VLAN lets one access port carry tagged voice traffic from the phone and untagged data from the PC behind it, so voice can be kept apart and prioritized.",
     "options": [
-      "A voice VLAN on the access port",
+      "Voice VLAN on the access port",
       "Link aggregation on the access port",
-      "A separate trunk to every desk",
+      "Separate trunk to every desk",
       "Port mirroring to the phone system"
     ],
     "correct": [
@@ -832,7 +832,7 @@
     "explanation": "Flow data summarizes each conversation (addresses, ports, protocol, bytes, time), so it shows who talked to whom and how much at a small storage cost. Interface counters show total volume but not who sent it.",
     "options": [
       "SNMP interface counters only",
-      "The DHCP lease table",
+      "DHCP lease table",
       "Full packet captures on the WAN link, kept for a week",
       "Flow records such as NetFlow or IPFIX"
     ],
@@ -961,7 +961,7 @@
     "explanation": "Port mirroring (SPAN) copies the frames on one or more ports or VLANs to a monitor port. A network TAP does the same job in hardware.",
     "options": [
       "Port mirroring to the analyzer's port",
-      "A voice VLAN on the firewall's port",
+      "Voice VLAN on the firewall's port",
       "Port security limiting the analyzer's port to one MAC",
       "Link aggregation with the firewall"
     ],
@@ -1071,10 +1071,10 @@
     "stem": "A new engineer needs a diagram that shows subnets, VLANs, routing and how traffic flows between sites, not where cables physically run. Which diagram is needed?",
     "explanation": "Logical diagrams show Layer 3 and Layer 2 design: subnets, VLANs, routing and security zones. Physical diagrams and rack diagrams show devices, ports and cable paths.",
     "options": [
-      "A floor plan with cable drops",
-      "A physical network diagram",
-      "A logical network diagram",
-      "A rack elevation diagram"
+      "Floor plan with cable drops",
+      "Physical network diagram",
+      "Logical network diagram",
+      "Rack elevation diagram"
     ],
     "correct": [
       2
@@ -1354,7 +1354,7 @@
     "stem": "A remote site uses a geostationary satellite link with plenty of bandwidth, but interactive applications feel sluggish. Which factor causes this?",
     "explanation": "Geostationary satellites are about 36,000 km up, so every round trip takes around 600 ms. Bandwidth can be high while latency still makes interactive traffic slow.",
     "options": [
-      "A duplicate IP address at the site",
+      "Duplicate IP address at the site",
       "High latency from the long signal path",
       "Too little bandwidth on the link",
       "Crosstalk between twisted pairs"
@@ -1396,7 +1396,7 @@
     "stem": "When a WAN failure takes down the production network, engineers still need to reach the core routers' consoles from home. Which design gives them that access?",
     "explanation": "Out-of-band management uses a separate path, such as a console server with a cellular or separate broadband link, so devices stay reachable when the production network is down.",
     "options": [
-      "A web interface on each router's LAN address",
+      "Web interface on each router's LAN address",
       "In-band SSH to the routers' production interfaces",
       "A site-to-site VPN that runs over the failed WAN",
       "Out-of-band management through a console server with its own link"
@@ -1484,7 +1484,7 @@
     "explanation": "First hop redundancy protocols give a group of routers a shared virtual IP and virtual MAC address. Hosts keep one gateway setting, and a standby router takes over the virtual address if the active one fails.",
     "options": [
       "Link aggregation between the two routers",
-      "A DHCP reservation for the gateway address",
+      "DHCP reservation for the gateway address",
       "Two default gateways typed on every host by hand, used in turn",
       "A first hop redundancy protocol such as VRRP or HSRP"
     ],
@@ -1505,7 +1505,7 @@
     "explanation": "Roaming needs overlapping coverage and matching SSID and security settings so clients can move between access points without starting over. Lease times, DNS location and uplink MTU do not cause drops while walking.",
     "options": [
       "The switch uplinks use jumbo frames",
-      "A coverage gap between the two wings' access points",
+      "Coverage gap between the two wings' access points",
       "The DHCP lease time is set to eight hours",
       "The DNS server is in a different building",
       "The wings' access points use different SSIDs or security settings"
@@ -1639,10 +1639,10 @@
     "stem": "Administrators may manage network devices only after first connecting to one hardened, closely monitored server in the management network. What is that server called?",
     "explanation": "A jump box (bastion host) is the single controlled entry point to a management network, so access can be logged and restricted. A honeypot is a decoy meant to attract attackers.",
     "options": [
-      "A honeypot",
-      "A proxy server",
-      "A domain controller",
-      "A jump box"
+      "Honeypot",
+      "Proxy server",
+      "Domain controller",
+      "Jump box"
     ],
     "correct": [
       3
@@ -1923,10 +1923,10 @@
     "stem": "Staff often hold the server room door for anyone walking behind them. Which control best stops this tailgating?",
     "explanation": "An access control vestibule (once called a mantrap) has two doors that do not open together, so only one authenticated person passes at a time. Cameras record the event but do not stop it.",
     "options": [
-      "A camera that records the corridor for later review",
-      "A longer password policy for the door's badge system and the staff accounts",
-      "A sign on the door asking people not to share entry",
-      "An access control vestibule that admits one person at a time"
+      "Camera that records the corridor for later review",
+      "Longer password policy for the door's badge system and the staff accounts",
+      "Sign on the door asking people not to share entry",
+      "Access control vestibule that admits one person at a time"
     ],
     "correct": [
       3
@@ -2200,10 +2200,10 @@
     "stem": "Which statement describes OSPF?",
     "explanation": "OSPF is a link-state interior gateway protocol: routers share the topology, each builds a map and runs a shortest path calculation, and cost is derived from interface bandwidth.",
     "options": [
-      "A gateway redundancy protocol that shares one virtual address",
+      "Gateway redundancy protocol that shares one virtual address",
       "A distance vector protocol that counts hops and allows at most fifteen",
-      "A path vector protocol used to exchange routes between internet providers and large networks",
-      "A link-state interior protocol that picks paths by a cost based on bandwidth"
+      "Path vector protocol used to exchange routes between internet providers and large networks",
+      "Link-state interior protocol that picks paths by a cost based on bandwidth"
     ],
     "correct": [
       3
@@ -2305,10 +2305,10 @@
     "stem": "A company's website goes down under traffic from tens of thousands of infected devices around the world. What is the attack, and what helps most?",
     "explanation": "A distributed denial of service attack uses a botnet to overwhelm a target. On-site equipment can be swamped, so ISPs or cloud mitigation services filter the traffic before it reaches the site.",
     "options": [
-      "A VLAN hopping attack, helped most by changing the native VLAN",
-      "An evil twin attack, helped most by WPA3 on the guest network",
-      "A MAC flooding attack, helped most by port security on the switch port of the web server",
-      "A DDoS attack, helped most by upstream scrubbing or a mitigation service"
+      "VLAN hopping attack, helped most by changing the native VLAN",
+      "Evil twin attack, helped most by WPA3 on the guest network",
+      "MAC flooding attack, helped most by port security on the switch port of the web server",
+      "DDoS attack, helped most by upstream scrubbing or a mitigation service"
     ],
     "correct": [
       3
@@ -2347,10 +2347,10 @@
     "stem": "A hotel's guest Wi-Fi shows a web page where guests must accept the terms of use before they can browse. What is that page called?",
     "explanation": "A captive portal intercepts a new client's web traffic and shows a sign-in or terms page before granting access. It is common on guest networks, which should also be isolated from internal networks.",
     "options": [
-      "A site survey",
-      "A RADIUS server",
-      "A preshared key",
-      "A captive portal"
+      "Site survey",
+      "RADIUS server",
+      "Preshared key",
+      "Captive portal"
     ],
     "correct": [
       3
@@ -2650,10 +2650,10 @@
     "stem": "A contractor must prove that newly installed Cat 6a runs meet the category's performance standards for the building owner. Which tool is used?",
     "explanation": "A certifier measures performance such as attenuation, crosstalk and return loss against category standards and produces a report. A continuity tester shows only wiring and opens.",
     "options": [
-      "A toner probe",
-      "A punchdown tool",
-      "A basic continuity tester",
-      "A cable certifier"
+      "Toner probe",
+      "Punchdown tool",
+      "Basic continuity tester",
+      "Cable certifier"
     ],
     "correct": [
       3
@@ -2734,10 +2734,10 @@
     "stem": "A branch has one router with a single link to headquarters, and all traffic for other networks goes there. Which simple route covers every destination the branch does not know?",
     "explanation": "A default route, 0.0.0.0/0, matches any destination without a more specific route, so it is the gateway of last resort for a stub branch with one exit.",
     "options": [
-      "A host route to 255.255.255.255/32",
-      "A default route to 0.0.0.0/0",
-      "A route to 127.0.0.0/8",
-      "A route to 169.254.0.0/16"
+      "Host route to 255.255.255.255/32",
+      "Default route to 0.0.0.0/0",
+      "Route to 127.0.0.0/8",
+      "Route to 169.254.0.0/16"
     ],
     "correct": [
       1
@@ -2758,7 +2758,7 @@
       "DHCP scope exhaustion at lunchtime",
       "Expired certificates on the access points that renew at midday",
       "Interference from microwave ovens in the break room",
-      "A routing loop that appears at noon"
+      "Routing loop that appears at noon"
     ],
     "correct": [
       2
@@ -2862,7 +2862,7 @@
     "options": [
       "Sequence numbers and acknowledgments so lost data is resent",
       "A handshake that sets up the connection before data is sent",
-      "A smaller header that adds less overhead to each message",
+      "Smaller header that adds less overhead to each message",
       "Port numbers that identify the sending and receiving application",
       "Delivery of one datagram to every host on the local subnet"
     ],
@@ -2905,7 +2905,7 @@
     "stem": "A company has 60 access points and wants to push settings, firmware and channel plans to all of them from one place. Which design fits?",
     "explanation": "Lightweight (controller-based) access points take their configuration from a wireless LAN controller, on site or in the cloud, which manages the whole fleet. Autonomous access points each hold their own settings.",
     "options": [
-      "An ad hoc network between the users' laptops",
+      "Ad hoc network between the users' laptops",
       "Wireless repeaters placed between every pair of access points in the building",
       "Lightweight access points managed by a wireless LAN controller",
       "Autonomous access points each configured on its own"
@@ -2947,10 +2947,10 @@
     "stem": "Which login is an example of multifactor authentication?",
     "explanation": "Multifactor means factors of different types, such as something you know and something you have. A password and a security question are both things you know.",
     "options": [
-      "A password plus a security question answer",
-      "A username plus a long passphrase",
+      "Password plus a security question answer",
+      "Username plus a long passphrase",
       "Two different passwords typed one after another",
-      "A password plus a code from a hardware token"
+      "Password plus a code from a hardware token"
     ],
     "correct": [
       3
@@ -2990,7 +2990,7 @@
     "explanation": "NAT64 translates between IPv6 clients and IPv4 servers, and DNS64 makes up IPv6 addresses for IPv4-only names so the phones send traffic to the translator. Dual stack would need IPv4 addresses on the phones, which this network avoids.",
     "options": [
       "NAT64 with DNS64",
-      "A 6to4 tunnel between the sites",
+      "6to4 tunnel between the sites",
       "Dual stack on every phone",
       "Link-local addressing"
     ],
@@ -3010,10 +3010,10 @@
     "stem": "A copper Ethernet run from an IDF to a far office is 120 meters, and the link drops in and out. What is the most likely cause?",
     "explanation": "Twisted pair Ethernet is rated for 100 meters. Beyond that the signal weakens too much, causing errors and drops. Add a switch closer to the office or use fiber.",
     "options": [
-      "A duplicate IP address on the office PC and its printer",
+      "Duplicate IP address on the office PC and its printer",
       "Attenuation, because the run is longer than 100 meters",
       "A DHCP lease time that is too long",
-      "A missing DNS record for the office PC"
+      "Missing DNS record for the office PC"
     ],
     "correct": [
       1
@@ -3053,7 +3053,7 @@
     "explanation": "URL and content filtering on a firewall, proxy or cloud service blocks sites by category or address. The other options work at Layer 2 and do not see web addresses.",
     "options": [
       "DHCP snooping on the access layer",
-      "An 802.1Q trunk to the firewall",
+      "802.1Q trunk to the firewall",
       "URL and content filtering",
       "Port security on the switches"
     ],
@@ -3137,9 +3137,9 @@
     "explanation": "IPAM software tracks subnets, assignments, DHCP scopes and DNS records in one place, preventing duplicate assignments. It often pulls data straight from DHCP and DNS servers.",
     "options": [
       "IP address management (IPAM)",
-      "A cable certifier",
-      "A wireless survey tool",
-      "A protocol analyzer"
+      "Cable certifier",
+      "Wireless survey tool",
+      "Protocol analyzer"
     ],
     "correct": [
       0
@@ -3241,10 +3241,10 @@
     "stem": "Before installing access points in a new office, an engineer walks the floor measuring signal strength and produces a color map of coverage. What is this?",
     "explanation": "A site survey measures RF signal and interference, and the heat map shows strong and weak coverage so access points can be placed well. Surveys are repeated after installation to confirm coverage.",
     "options": [
-      "A rack diagram of the IDF",
-      "A logical diagram of the WLAN",
-      "An asset inventory of radios",
-      "A wireless site survey with a heat map"
+      "Rack diagram of the IDF",
+      "Logical diagram of the WLAN",
+      "Asset inventory of radios",
+      "Wireless site survey with a heat map"
     ],
     "correct": [
       3
@@ -3352,10 +3352,10 @@
     "stem": "A team keeps an approved standard configuration for each switch model and checks running configurations against it to spot unauthorized changes. What is the standard configuration called?",
     "explanation": "A baseline or golden configuration is the approved template. Comparing devices against it detects configuration drift, while backups record what the device had, approved or not.",
     "options": [
-      "A default factory configuration",
-      "A baseline (golden) configuration",
-      "A backup of yesterday's configuration",
-      "A startup configuration on flash"
+      "Default factory configuration",
+      "Baseline (golden) configuration",
+      "Backup of yesterday's configuration",
+      "Startup configuration on flash"
     ],
     "correct": [
       1
@@ -3397,7 +3397,7 @@
       "The server sends jumbo frames but the switch port MTU is 1500",
       "The switch port is in the wrong VLAN for the storage network",
       "The cable is longer than 100 meters",
-      "The server's DHCP lease expired"
+      "Server's DHCP lease expired"
     ],
     "correct": [
       0
@@ -3482,10 +3482,10 @@
     "stem": "A site has a diesel generator that takes about 30 seconds to start after a power cut. What keeps the network running during those seconds?",
     "explanation": "A UPS supplies battery power instantly until the generator comes up. A PDU only distributes power to equipment in the rack, and a surge protector does nothing when power is lost.",
     "options": [
-      "An uninterruptible power supply",
-      "A power distribution unit",
+      "Uninterruptible power supply",
+      "Power distribution unit",
       "A second circuit on the same panel",
-      "A surge protector"
+      "Surge protector"
     ],
     "correct": [
       0
@@ -3525,9 +3525,9 @@
     "explanation": "TLS encrypts data as it crosses the network. Disk, database and backup encryption protect stored data, which is data at rest.",
     "options": [
       "TLS on a web application's connections",
-      "An encrypted database file on a server",
+      "Encrypted database file on a server",
       "Full disk encryption on a laptop",
-      "An encrypted backup tape in storage"
+      "Encrypted backup tape in storage"
     ],
     "correct": [
       0
@@ -3566,10 +3566,10 @@
     "stem": "Users in one corner of an office have poor Wi-Fi, and the engineer suspects neighboring businesses' access points. Which tool shows the nearby networks, their channels and signal strengths?",
     "explanation": "A Wi-Fi analyzer lists SSIDs, channels, signal strength and noise, showing channel overlap and interference. A spectrum analyzer goes further, showing non-Wi-Fi interference too.",
     "options": [
-      "A loopback adapter",
-      "A cable certifier",
-      "A toner probe",
-      "A Wi-Fi analyzer"
+      "Loopback adapter",
+      "Cable certifier",
+      "Toner probe",
+      "Wi-Fi analyzer"
     ],
     "correct": [
       3
@@ -3638,10 +3638,10 @@
     "stem": "A Layer 3 switch must route between VLAN 10 and VLAN 20 for hosts connected to it. What should be configured on the switch as each VLAN's gateway?",
     "explanation": "A switched virtual interface (SVI) is a logical Layer 3 interface for a VLAN. Give it an IP address and enable routing, and it becomes the gateway for hosts in that VLAN.",
     "options": [
-      "A trunk port to each host",
-      "A switched virtual interface for each VLAN",
-      "A physical routed port for every host",
-      "A loopback interface in each VLAN"
+      "Trunk port to each host",
+      "Switched virtual interface for each VLAN",
+      "Physical routed port for every host",
+      "Loopback interface in each VLAN"
     ],
     "correct": [
       1
@@ -3660,9 +3660,9 @@
     "explanation": "Wi-Fi is shared airtime, so hundreds of clients on two radios leave little for each one. Plan for density with more access points, smaller cells and 5 or 6 GHz.",
     "options": [
       "Too many clients sharing too few access points",
-      "A broken fiber link to the IDF",
+      "Broken fiber link to the IDF",
       "Interference from fluorescent lights in the hall",
-      "A DNS server outage during the meeting"
+      "DNS server outage during the meeting"
     ],
     "correct": [
       0
@@ -3725,9 +3725,9 @@
     "stem": "A data center wants fire suppression that will not damage running servers with water. Which type is usually chosen?",
     "explanation": "Clean agent systems put out fires with gas and leave no residue, so electronics survive. Wet pipe sprinklers hold water in the pipes and would soak the equipment.",
     "options": [
-      "A clean agent gas system",
-      "A wet pipe sprinkler system",
-      "A foam deluge system",
+      "Clean agent gas system",
+      "Wet pipe sprinkler system",
+      "Foam deluge system",
       "Portable water extinguishers"
     ],
     "correct": [
@@ -3749,8 +3749,8 @@
       "Port mirroring from each switch to a central analyzer",
       "Spanning tree with a lower root bridge priority",
       "Infrastructure as code templates kept in version control",
-      "A software-defined networking controller with an API",
-      "A console server cabled to every device"
+      "Software-defined networking controller with an API",
+      "Console server cabled to every device"
     ],
     "correct": [
       2,
@@ -3983,10 +3983,10 @@
     "stem": "A team gathers in a meeting room and talks through what each person would do if the main data center flooded, without touching any systems. What kind of exercise is this?",
     "explanation": "A tabletop exercise walks through a scenario in discussion to check plans and roles. Validation tests actually fail over systems to prove the plan works.",
     "options": [
-      "A penetration test",
-      "A full failover test",
-      "A validation test",
-      "A tabletop exercise"
+      "Penetration test",
+      "Full failover test",
+      "Validation test",
+      "Tabletop exercise"
     ],
     "correct": [
       3
@@ -4004,10 +4004,10 @@
     "stem": "A web server runs software with a known flaw, and attack code that uses the flaw is public. In security terms, what is the attack code?",
     "explanation": "The flaw is the vulnerability, the code that takes advantage of it is the exploit, and risk is the chance and impact of it being used. A threat actor is the person or group behind an attack.",
     "options": [
-      "A vulnerability",
-      "A risk register",
-      "A threat actor",
-      "An exploit"
+      "Vulnerability",
+      "Risk register",
+      "Threat actor",
+      "Exploit"
     ],
     "correct": [
       3
@@ -4046,10 +4046,10 @@
     "stem": "A router can reach its directly connected networks but no remote network that it has no specific route for. Which entry is most likely missing from its table?",
     "explanation": "Without a default route (gateway of last resort), a router drops packets for any destination not in its table. Check it with a command such as show ip route or route print.",
     "options": [
-      "The default route",
-      "The ARP entry for itself",
-      "The native VLAN entry",
-      "The loopback route"
+      "Default route",
+      "ARP entry for itself",
+      "Native VLAN entry",
+      "Loopback route"
     ],
     "correct": [
       0
@@ -4319,10 +4319,10 @@
     "stem": "A contract says the provider must keep the WAN service available 99.9 percent of the month and pay credits if it does not. What is this document?",
     "explanation": "An SLA sets measurable service levels, such as uptime and response times, and the remedies when they are missed. An MOU states intent and is usually less binding.",
     "options": [
-      "A service-level agreement",
-      "A memorandum of understanding",
-      "A nondisclosure agreement",
-      "An acceptable use policy"
+      "Service-level agreement",
+      "Memorandum of understanding",
+      "Nondisclosure agreement",
+      "Acceptable use policy"
     ],
     "correct": [
       0

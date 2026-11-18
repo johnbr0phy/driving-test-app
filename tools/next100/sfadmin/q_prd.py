@@ -1,7 +1,7 @@
 CAT = "sfadminProductivity"; SEG = "PRD"
 Q = [
 ("Users should see a post in the record feed whenever an opportunity's stage changes. What should the admin turn on?",
- 'Chatter feed tracking', ['Field history tracking', 'Setup Audit Trail', 'A validation rule'],
+ 'Chatter feed tracking', ['Field history tracking', 'Setup Audit Trail', 'Validation rule'],
  "Feed tracking posts changes to chosen fields in the record's Chatter feed, so followers see them."),
 ("A project team's discussions should be visible only to invited members. Which Chatter group type fits?",
  'Private', ['Public', 'Broadcast only', 'Open'],
@@ -13,7 +13,7 @@ Q = [
  'Shared Activities', ['Activity history', 'Case teams for contacts', 'Chatter groups'],
  'With Shared Activities on, an activity can be related to multiple contacts while still linking to one other record.'),
 ('Reps want emails and meetings from Gmail or Outlook added to Salesforce records automatically. Which feature fits?',
- 'Einstein Activity Capture', ['The Data Import Wizard', 'Web-to-Lead forms', 'Mass email to contacts'],
+ 'Einstein Activity Capture', ['Data Import Wizard', 'Web-to-Lead forms', 'Mass email to contacts'],
  "Einstein Activity Capture syncs email and events from Microsoft or Google accounts and shows them on related records' activity timelines."),
 ('Field reps want a Log Visit action on the account action bar in the mobile app. What should the admin do?',
  'Add a quick action to the page', ['Add a field to the page layout', 'Create a record type for visits', 'Share a visits list view'],
@@ -52,12 +52,12 @@ Q = [
  'In-App Guidance', ['Setup Audit Trail', 'Health Check', 'Schema Builder'],
  'In-App Guidance lets admins add prompts and walkthroughs to Lightning pages to point users to features or steps.'),
 ("Sales reps work mostly in Gmail and want to see related Salesforce records and log emails without leaving the inbox. What should be set up?",
- 'The Gmail integration', ['Web-to-Lead forms', 'A Chatter group for email', 'A macro in the console'],
+ 'Gmail integration', ['Web-to-Lead forms', 'Chatter group for email', 'Macro in the console'],
  'The Gmail and Outlook integrations let reps work with Salesforce records from their inbox and log emails to records.'),
 ('Files uploaded by marketing should be organised and shared with the whole company in one place. What should they use?',
- 'A Salesforce Files library', ['A Chatter feed post', 'An email template folder', 'A shared report folder'],
+ 'Salesforce Files library', ['Chatter feed post', 'Email template folder', 'Shared report folder'],
  'Libraries in Salesforce Files hold shared files with member permissions, such as viewer or author.'),
 ('A user wants to keep a few records he uses every day one click away. What can he use?',
- 'Favorites', ['Delegated administration', 'A muting permission set', 'Manual sharing'],
+ 'Favorites', ['Delegated administration', 'Muting permission set', 'Manual sharing'],
  'Favorites in the Lightning header give users quick access to records, list views and other pages they use often.'),
 ]

@@ -164,7 +164,8 @@ async function buildMetrics() {
   usersSnap.docs.forEach((doc) => {
     const data = doc.data() as Record<string, unknown>;
     const sub = (data.subscription || {}) as Record<string, unknown>;
-    const isPremium = sub.isPremium === true;
+    // A prize (the millionth question, lib/server/millionth) is not a sale.
+    const isPremium = sub.isPremium === true && sub.grantedBy !== 'millionth';
     const createdAt = data.createdAt as string | undefined;
     const activeDates = ((data.activeDates as string[]) || []).filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d));
     const lastUpdated = data.lastUpdated as string | undefined;

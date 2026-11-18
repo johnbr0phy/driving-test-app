@@ -1,40 +1,40 @@
 ITEMS=[]
 def Q(stem,key,d1,d2,d3,why):ITEMS.append((stem,[key,d1,d2,d3],why))
 Q('Which crane has its rotating upperworks on a base that travels on endless tracks?',
- 'A crawler crane','A locomotive crane','A rough-terrain crane','A truck crane',
+ 'Crawler crane','Locomotive crane','Rough-terrain crane','Truck crane',
  'OSHA 1910.180 defines a crawler crane by its crawler-tread travel base.')
 Q('Which crane has its rotating upperworks on a base that travels on railway track?',
- 'A locomotive crane','A crawler crane','A gantry crane','A truck crane',
+ 'Locomotive crane','Crawler crane','Gantry crane','Truck crane',
  'A locomotive crane has a rail-travel base under OSHA 1910.180.')
 Q('Which crane has its upperworks on an automotive chassis equipped with its own travel powerplant?',
- 'A truck crane','A rough-terrain crane','A crawler crane','A carry-deck crane',
+ 'Truck crane','Rough-terrain crane','Crawler crane','Carry-deck crane',
  'A truck crane is mounted on an automotive truck with a powerplant for travel.')
 Q('A telescopic crane\'s operating station does not turn with the upperworks. Which type is this?',
- 'A fixed-cab telescopic crane','A swing-cab telescopic crane','A lattice-boom crawler','A tower crane',
+ 'Fixed-cab telescopic crane','Swing-cab telescopic crane','Lattice-boom crawler','Tower crane',
  'The current CCO handbook defines fixed-cab telescopic cranes by the non-rotating operator station; a swing-cab crane\'s cab turns with the upperworks.')
 Q('Which mechanism uses a drum and reeving system to raise or lower the boom?',
- 'The boom hoist','The load hoist','The boom telescope cylinder','The swing drive',
+ 'Boom hoist','Load hoist','Boom telescope cylinder','Swing drive',
  'OSHA 1910.180 defines the boom hoist as the drum-and-reeving system for changing boom elevation. The load hoist raises the load, not the boom.')
 Q('Which cylindrical component winds rope when raising or lowering a load or boom?',
- 'The drum','The sheave','The equalizer','The swivel',
+ 'Drum','Sheave','Equalizer','Swivel',
  'The drum is the cylindrical member around which the rope winds. A sheave guides rope but does not store it.')
 Q('Which assembly supplements machine weight to provide stability for lifting working loads?',
- 'The counterweight','The outrigger beams','The carrier frame','The jib',
+ 'Counterweight','Outrigger beams','Carrier frame','Jib',
  'Counterweight supplements the crane\'s own weight for lifting stability; its amount remains manufacturer-limited.')
 Q('Which device engages or disengages transmission of power rather than principally retarding motion?',
- 'A clutch','A brake','A pawl','A governor',
+ 'Clutch','Brake','Pawl','Governor',
  'A clutch engages or disengages power; a brake retards or stops motion.')
 Q('Which inspection does a competent person begin before each work period?',
- 'The shift inspection','The monthly inspection','The annual inspection','The post-assembly inspection',
+ 'Shift inspection','Monthly inspection','Annual inspection','Post-assembly inspection',
  'The each-shift visual inspection begins before the shift under 1926.1412(d).')
 Q('Which inspection repeats shift items on a longer cycle, with records kept three months?',
- 'The monthly inspection','The shift inspection','The annual inspection','The idle-equipment inspection',
+ 'Monthly inspection','Shift inspection','Annual inspection','Idle-equipment inspection',
  'The monthly inspection and its documentation are required by 1926.1412(e).')
 Q('Which inspection does a qualified person perform at least every 12 months, with functional testing?',
- 'The annual inspection','The monthly inspection','The shift inspection','The periodic load test',
+ 'Annual inspection','Monthly inspection','Shift inspection','Periodic load test',
  'The annual/comprehensive inspection has this expanded scope under 1926.1412(f).')
 Q('After erection on site, which inspection must a qualified person complete before use?',
- 'The post-assembly inspection','The pre-assembly review','The monthly inspection','The annual inspection',
+ 'Post-assembly inspection','Pre-assembly review','Monthly inspection','Annual inspection',
  'The post-assembly inspection by a qualified person verifies configuration under 1926.1412(c).')
 Q('How long must the employer retain monthly crane inspection documentation under OSHA 1926.1412(e)?',
  'Three months','One month','Twelve months','Six months',
@@ -55,13 +55,13 @@ Q('A flexible pressure line shows blistering near a fitting. Which inspection ar
  'Hydraulic hose condition','Wire rope condition','Electrical wiring condition','Tire condition',
  'Hydraulic and pressurised hoses must be checked for leakage, deformation and signs of impending failure.')
 Q('The load attachment has a cracked throat and damaged latch. Which inspection area is implicated?',
- 'The hook and its latch','Shackle pins and their latches','Sheaves and drums','Wire rope end fittings',
+ 'Hook and its latch','Shackle pins and their latches','Sheaves and drums','Wire rope end fittings',
  'Hooks and latches must be inspected for cracks, deformation, wear and other damage; the throat is part of the hook.')
 Q('A windshield crack blocks the operator\'s view. Which inspection area is implicated?',
  'Cab window condition','Mirror alignment','Boom-angle indicator display','Operator seat adjustment',
  'Cab windows must be checked for defects that hamper the operator\'s view.')
 Q('A loop pulled tight left a sharp permanent bend in a wire rope. Which deficiency is this?',
- 'A kink','Birdcaging','Core protrusion','Abrasion',
+ 'Kink','Birdcaging','Core protrusion','Abrasion',
  'A kink is structural distortion from a loop pulled tight and is a Category I apparent deficiency requiring competent-person assessment. Birdcaging is strands opening up, not a bend.')
 Q('Inspection finds heavy rusting and material deterioration on rope strands. Which apparent deficiency is indicated?',
  'Significant corrosion','Heat damage','Crushing','Kinking',
@@ -70,7 +70,7 @@ Q('A rope shows thermal deterioration from a hot process, with no power-line con
  'Heat damage, Category I','Heat damage, Category III','Electric arc, Category II','Power-line contact, Category III',
  'Heat damage is a Category I apparent deficiency under 1926.1413; prior contact with an energized power line is the separate Category III condition.')
 Q('A rope looks sound, but its socket is cracked. Which item needs assessment?',
- 'A damaged end connection','Nothing, as the rope is sound','A core protrusion','Corroded strands',
+ 'Damaged end connection','Nothing, as the rope is sound','Core protrusion','Corroded strands',
  'Cracked or otherwise damaged end connections are listed apparent deficiencies; sound rope does not make a damaged termination acceptable.')
 Q('Under OSHA, how many random broken wires in six diameters make rotation-resistant rope Category II?',
  'Two broken wires','Three broken wires','Four broken wires','One broken wire',
@@ -88,37 +88,37 @@ Q('A wire rope has contacted an energized power line. What disposition addresses
  'Replace it; no severing or repair','Inspect it monthly from now on','Cut out the contacted length and splice','Halve its rated load',
  'Under 1926.1413(a)(4)(iii) the rope must be replaced before operations with it resume. Severing out a localized deficiency is allowed only for deficiencies other than power line contact, splicing is prohibited, and repair of rope that contacted an energized power line is prohibited.')
 Q('An annual inspection finds a condition not yet a hazard but needing monitoring. What must the employer arrange?',
- 'Checks at each monthly inspection','A recheck at the next annual inspection','Immediate removal from service','A written note only',
+ 'Checks at each monthly inspection','Recheck at the next annual inspection','Immediate removal from service','Written note only',
  'The condition must be checked in the monthly inspections under 1926.1412(f)(6); waiting a year is too long.')
 Q('A manufacturer requires a safety-related inspection more often than OSHA\'s minimum interval. Which schedule controls?',
- 'The more frequent manufacturer schedule','OSHA\'s minimum schedule','The manufacturer\'s annual schedule only','The owner\'s insurance schedule',
+ 'More frequent manufacturer schedule','OSHA\'s minimum schedule','Manufacturer\'s annual schedule only','Owner\'s insurance schedule',
  'The more frequent manufacturer inspection procedure must be followed under 1926.1412(j).')
 Q('A crane has remained idle for four months. What must occur before initial reuse?',
- 'A qualified person\'s monthly-scope check','An ordinary shift inspection only','An annual inspection by the operator alone','No inspection if stored indoors',
+ 'Qualified person\'s monthly-scope check','Ordinary shift inspection only','Annual inspection by the operator alone','No inspection if stored indoors',
  'Equipment idle 3 months or more must be inspected by a qualified person to the monthly-inspection scope before initial use under 1926.1412(g).')
 Q('A synthetic web sling has cut fibres and broken stitching. What is the required disposition?',
  'Remove it from service','Derate it by one quarter','Turn it so the damage faces out','Tape the cut and continue',
  'Damaged or defective slings must be removed from service; cuts and broken stitching are listed removal conditions for web slings.')
 Q('Where is a shackle\'s manufacturer working-load limit found?',
- 'Its permanent rated-load marking','The shackle\'s pin diameter alone','The crane\'s load chart','The sling\'s identification tag',
+ 'Its permanent rated-load marking','Shackle\'s pin diameter alone','Crane\'s load chart','Sling\'s identification tag',
  'The permanently affixed, legible marking states the rated capacity, which must not be exceeded. Pin size alone does not establish it.')
 Q('A sling will bear on an abrasive load edge. What protects it at that contact point?',
- 'Padding or softeners at the corner','A longer sling at the same angle','A tighter choke on the load','A visual check after the lift',
+ 'Padding or softeners at the corner','Longer sling at the same angle','Tighter choke on the load','Visual check after the lift',
  'Protect the sling from sharp or abrasive contact with suitable padding and the manufacturer\'s instructions; a check afterward finds damage too late.')
 Q('An unneeded sling lies across the crew\'s path. What action addresses the hazard?',
  'Remove it from the work area','Coil it beside the path','Leave it for the next lift','Cover it with a tarp',
  'Unused rigging must be removed from the immediate work area so it does not create a hazard under 1926.251(a)(3).')
 Q('Without manufacturer capacity procedures, who must develop and sign replacements under OSHA 1926.1417(b)?',
- 'A registered engineer (RPE)','A qualified person','A competent person','The crane\'s operator',
+ 'Registered engineer (RPE)','Qualified person','Competent person','Crane\'s operator',
  'A registered professional engineer familiar with the equipment must develop and sign capacity-related procedures.')
 Q('Without manufacturer procedures for operating the controls, who must develop them?',
- 'A qualified person','A registered engineer (RPE)','A competent person','The equipment dealer',
+ 'Qualified person','Registered engineer (RPE)','Competent person','Equipment dealer',
  'A qualified person develops operational-control procedures; capacity procedures carry the separate registered engineer requirement.')
 Q('Who must begin the ordinary each-shift visual crane inspection under OSHA 1926.1412(d)?',
- 'A competent person','A qualified person','A registered engineer','Any crew member',
+ 'Competent person','Qualified person','Registered engineer','Any crew member',
  'A competent person begins and completes the shift inspection within the required timing.')
 Q('Which authority establishes the safe working load shown on the identification for a commercially supplied sling?',
- 'The sling manufacturer','The sling user\'s employer','The crane manufacturer','The site safety officer',
+ 'Sling manufacturer','Sling user\'s employer','Crane manufacturer','Site safety officer',
  'The sling manufacturer\'s prescribed rated capacity governs the identification and must not be exceeded.')
 Q('An originally supplied cab handhold is loose and unsafe. Which obligation directly addresses it?',
  'Keep original access aids repaired','Remove it to avoid misuse','Add a warning sticker beside it','Report it at the next annual inspection',
@@ -127,21 +127,21 @@ Q('On equipment made after November 8, 2011, what must walking surfaces other th
  'Slip-resistant features','Yellow paint markings','Rubber matting only','Fold-down guardrails',
  'Those surfaces must have slip-resistant features or properties under 1926.1423(c)(3).')
 Q('A new inspector needs deficiencies found earlier in the retention period. What must be made available?',
- 'Prior inspection records','The inspector\'s certification card','The original sales invoice','The site\'s weather log',
+ 'Prior inspection records','Inspector\'s certification card','Original sales invoice','Site\'s weather log',
  'Inspection documents must remain available to persons conducting inspections during the retention period.')
 Q('A rope must be removed, but the crane has another unaffected hoist. What prevents use of the defective-rope function?',
- 'A tag-out on the affected hoist','A tag on the unaffected hoist','Spoken notice to the crew','A note in the monthly log',
+ 'Tag-out on the affected hoist','Tag on the unaffected hoist','Spoken notice to the crew','Note in the monthly log',
  'Either the whole equipment or the affected hoist must be tagged out until the rope is repaired or replaced as permitted.')
 Q('Which definition explains why the load block and shackles count with the lifted object?',
  'Working load includes attaching gear','Rated load excludes the block','Net load equals the object weight','Gross capacity ignores rigging',
  'OSHA 1910.180 defines working load to include load-attaching equipment such as blocks, shackles and slings.')
 Q('Which definition identifies the rope length used when counting breaks over one lay?',
- 'One strand\'s full turn around it','Six times the rope diameter','The distance between two sheaves','The length of one drum wrap',
+ 'One strand\'s full turn around it','Six times the rope diameter','Distance between two sheaves','Length of one drum wrap',
  'One rope lay is the length over which one strand makes a complete revolution around the rope.')
 Q('Which definition correctly establishes the reference for the boom\'s inclination?',
  'Angle above horizontal','Angle from vertical','Angle to the jib','Angle to the carrier deck',
  'Boom angle is between the boom\'s longitudinal centreline and the horizontal.')
 Q('Which definition identifies the vertical reference about which the crane\'s rotating structure turns?',
- 'The axis of rotation','The rotating bed\'s front edge','The boom foot pin','The load\'s center of gravity',
+ 'Axis of rotation','Rotating bed\'s front edge','Boom foot pin','Load\'s center of gravity',
  'The axis of rotation is the vertical axis around which the superstructure rotates.')
 assert len(ITEMS)==48

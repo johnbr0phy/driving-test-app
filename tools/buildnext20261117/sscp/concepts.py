@@ -40,7 +40,7 @@ Q('A practitioner changing jobs still holds a former employer\'s confidential de
 # Authority and process
 Q('A technician is asked to assess a supplier system outside the signed authorization, without supplier consent. What is needed first?',
  'Written sign-off from the third-party owner to test it',
- ['A verbal go-ahead from the internal colleague who asked','A scan schedule agreed with the internal help desk','A non-disclosure agreement signed by the tester'],
+ ['Verbal go-ahead from the internal colleague who asked','Scan schedule agreed with the internal help desk','Non-disclosure agreement signed by the tester'],
  'Confirm authority and scope for the supplier system. A request from an internal colleague does not establish authorization over another party\'s assets.')
 Q('An operator suspects a colleague of a policy breach, and a confidential reporting process exists. Which route is appropriate?',
  'Give factual observations through the designated channel',
@@ -56,20 +56,20 @@ Q('A team has a legitimate need the access policy forbids, and the policy has a 
  'Request a documented authorized exception instead of silently bypassing policy. A business need does not itself grant exception authority.')
 # Control categories
 Q('A service rejects connections that fail a machine-enforced network rule. Which control category is this?',
- 'A logical (technical) control',
- ['An administrative control','A physical control','An operational control'],
+ 'Logical (technical) control',
+ ['Administrative control','Physical control','Operational control'],
  'Automated rule enforcement is technical. The policy authorizing the rule is administrative, but the question asks about its implementation.')
 Q('A secured doorway restricts entry to a room of confidential paper records. Which control category is the doorway?',
- 'A physical control',
- ['A technical control','An administrative control','A compensating control'],
+ 'Physical control',
+ ['Technical control','Administrative control','Compensating control'],
  'The mechanism controls physical entry. A written visitor rule is a separate administrative control.')
 Q('Management issues a binding rule on who may approve access exceptions. Which category is the rule?',
- 'An administrative control',
- ['A technical control','A physical control','A corrective control'],
+ 'Administrative control',
+ ['Technical control','Physical control','Corrective control'],
  'The policy defines organizational authority and is administrative. It does not directly act as a physical barrier or machine enforcement point.')
 Q('Operators get role-specific practice and are assessed on secure recovery tasks. Which kind of control is this?',
- 'A personnel training control',
- ['A technical recovery control','A physical security control','A detective monitoring control'],
+ 'Personnel training control',
+ ['Technical recovery control','Physical security control','Detective monitoring control'],
  'Training and demonstrated competence are administrative personnel controls that prepare people for their duties. A system mechanism cannot establish operator competence.')
 # Control functions
 Q('A transaction service rejects submissions lacking required authorization. Which functional purpose does this serve?',
@@ -90,8 +90,8 @@ Q('A legacy appliance cannot run the required agent, so a restricted gateway cov
  'It substitutes for a required control that cannot be implemented. This requires approval and evaluation rather than an assumption of automatic equivalence.')
 # Asset lifecycle
 Q('A virtual machine processes production data, but no team owns it. Which record brings it under management?',
- 'An inventory entry naming an accountable owner',
- ['A vulnerability scan report for the machine','A patch schedule for its guest operating system','A classification label for the data it holds'],
+ 'Inventory entry naming an accountable owner',
+ ['Vulnerability scan report for the machine','Patch schedule for its guest operating system','A classification label for the data it holds'],
  'An accurate inventory with ownership enables accountability and later control actions. Scanning or patching alone does not establish who is responsible.')
 Q('A product\'s vendor support period and logging may not meet policy. Which activity belongs before purchase approval?',
  'Evaluating it against security requirements',
@@ -107,8 +107,8 @@ Q('A leased device holding organizational data is due for return, and retention 
  'Authorized disposition specifies sanitization and release requirements. Deleting folders, an unverified reset or an inventory update alone does not protect stored information.')
 # Change management
 Q('An unapproved network change would alter access paths to a regulated service. Which assessment should inform approval?',
- 'A security impact analysis',
- ['A post-implementation review','A rollback rehearsal','A capacity forecast'],
+ 'Security impact analysis',
+ ['Post-implementation review','Rollback rehearsal','Capacity forecast'],
  'Assess security impact and dependencies before authorization. A technically feasible change may still create unacceptable exposure.')
 Q('A tested change has an impact assessment and rollback plan, but its change owner has not agreed. Which step remains?',
  'Obtain sign-off from the designated change owner',
@@ -129,11 +129,11 @@ Q('Staff cannot recognize signs of impersonation in urgent payment requests. Whi
  'Teach recognition of relevant warning signs and the approved verification process. Testing behavior before explaining the expectation does not close the knowledge gap.')
 Q('An exercise shows named incident contacts do not know their handoff duties. Which training is needed?',
  'Role rehearsal for the named responders',
- ['A general phishing awareness module','A quiz on the plan\'s handoff section','Emailing the updated contact list'],
+ ['General phishing awareness module','Quiz on the plan\'s handoff section','Emailing the updated contact list'],
  'Role rehearsal lets participants practice coordination and handoffs. A quiz or general awareness does not build the practical skill.')
 Q('Management wants evidence that an awareness campaign improved handling, not just attendance. What should be evaluated?',
  'Changes in how staff report and handle threats',
- ['The percentage of staff who completed the course','The number of posters displayed in offices','Staff satisfaction scores for the campaign'],
+ ['Percentage of staff who completed the course','Number of posters displayed in offices','Staff satisfaction scores for the campaign'],
  'Measure appropriate behavior and outcomes using a fair, approved method. Completion counts establish exposure to training, not effectiveness.')
 Q('A new reporting channel replaces the one shown in every awareness poster. What maintenance action is required?',
  'Revise the materials to show the new route',
@@ -145,8 +145,8 @@ Q('A vendor not on the visitor list arrives at a secure site with a convincing b
  ['Admit the vendor because the business card looks genuine','Issue a badge now and check with the host afterward','Have the vendor sign the log and proceed unescorted'],
  'Verify authorization through the site process. A claimed affiliation is not itself permission to enter.')
 Q('A visitor is approved to inspect one equipment room under supervision. Which control keeps the visit in scope?',
- 'A staff escort for the whole visit',
- ['A visitor badge valid throughout the building','A signed confidentiality agreement','A camera covering the building entrance'],
+ 'Staff escort for the whole visit',
+ ['Visitor badge valid throughout the building','Signed confidentiality agreement','Camera covering the building entrance'],
  'Provide the required escort and restrict movement to approved areas. Registration, a badge or an agreement does not limit where the visitor goes.')
 Q('A contractor is leaving after a visit with a temporary badge still active. Which action closes that access?',
  'Collect and deactivate the credential before departure',
@@ -154,7 +154,7 @@ Q('A contractor is leaving after a visit with a temporary badge still active. Wh
  'Recover or deactivate the temporary credential according to procedure. A completed visitor log alone may leave the badge usable.')
 Q('Investigators must establish whether a technician entered a restricted room at a disputed time. Which evidence is relevant?',
  'Door access logs for that room and period',
- ['The technician\'s current badge entitlements','The reception visitor sign-in sheet','The room\'s planned maintenance schedule'],
+ ['Technician\'s current badge entitlements','Reception visitor sign-in sheet','Room\'s planned maintenance schedule'],
  'Physical access records can support the timeline, subject to their reliability. A current entitlement does not prove a past entry, and staff do not sign the visitor sheet.')
 # Automated decisions
 Q('An updated AI security filter rejects known legitimate transactions in staging. What should happen before promotion?',
@@ -163,14 +163,14 @@ Q('An updated AI security filter rejects known legitimate transactions in stagin
  'Validate the update against acceptance criteria before promotion. A model update needs outcome testing just as other security-control changes do.')
 Q('An automated classification service affects sensitive data, but no team answers for its errors or changes. Which gap should be closed?',
  'Named accountability for running and reviewing it',
- ['A higher accuracy threshold for the model','Publication of the model\'s training data sources','Routing error reports to the vendor help desk'],
+ ['Higher accuracy threshold for the model','Publication of the model\'s training data sources','Routing error reports to the vendor help desk'],
  'Assign accountable ownership for operation and review. A technically accurate model still needs organizational responsibility.')
 Q('A training pipeline retains personal records that add nothing to its approved goal. Which change reduces privacy exposure?',
  'Stop keeping data the stated purpose does not need',
  ['Encrypt the extra records and keep all of them','Keep them in case a future purpose arises','Move the extra records to cheaper archive storage'],
  'Minimize retained data to the justified purpose and obligations. Encryption or cheaper storage still keeps the unnecessary data, and accuracy does not authorize unrelated retention.')
 Q('Policy requires explaining later how an automated access recommendation was produced and who approved it. What should be kept?',
- 'The inputs, model version and who signed off',
- ['The final business outcome stored in the case file','The model\'s overall accuracy statistics','The vendor\'s product documentation for the model'],
+ 'Inputs, model version and who signed off',
+ ['Final business outcome stored in the case file','Model\'s overall accuracy statistics','Vendor\'s product documentation for the model'],
  'Document the decision provenance and human authorization. An outcome, overall accuracy or vendor documentation cannot explain how this recommendation was used.')
 assert len(ITEMS)==40

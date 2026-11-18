@@ -165,6 +165,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   "realestate-wa": { title: "Washington Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Washington real estate rules." },
   "realestate-az": { title: "Arizona Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Arizona real estate rules." },
   "realestate-la": { title: "Louisiana Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Louisiana real estate rules." },
+  "realestate-ma": { title: "Massachusetts Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Massachusetts real estate rules." },
   "realestate-tn": { title: "Tennessee Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Tennessee real estate rules." },
   "insurance-ny": { title: "New York Life & Health Insurance", description: "Review life and health policies, annuities, insurance principles and New York rules." },
   "insurance-pa": { title: "Pennsylvania Life & Health Insurance", description: "Review life and health policies, annuities, insurance principles and Pennsylvania rules." },

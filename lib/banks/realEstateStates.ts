@@ -15,6 +15,7 @@ import realestateWaQuestions from "@/data/real-estate-wa-questions.json";
 import realestateAzQuestions from "@/data/real-estate-az-questions.json";
 import realestateTnQuestions from "@/data/real-estate-tn-questions.json";
 import realestateLaQuestions from "@/data/real-estate-la-questions.json";
+import realestateMaQuestions from "@/data/real-estate-ma-questions.json";
 import { registerExamBanks } from "@/lib/examData";
 
 // State variant banks for the realestate family. Imported for its side effect by the
@@ -36,4 +37,5 @@ registerExamBanks({
   "realestate-az": realestateAzQuestions as Question[],
   "realestate-tn": realestateTnQuestions as Question[],
   "realestate-la": realestateLaQuestions as Question[],
+  "realestate-ma": realestateMaQuestions as Question[],
 });

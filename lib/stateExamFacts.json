@@ -172,6 +172,54 @@
    }
   ]
  },
+ "realestate-md": {
+  "accessed": "2026-11-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Maryland Real Estate Commission (MREC), Maryland Department of Labor",
+    "url": "https://labor.maryland.gov/license/mrec/mrecexam.shtml"
+   },
+   {
+    "label": "Vendor and bulletin",
+    "value": "PSI Services LLC, \"State of Maryland Real Estate Commission Candidate Information Bulletin\", (c) 2024, updated 8/15/2024 (no form number printed)",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/528"
+   },
+   {
+    "label": "Outline",
+    "value": "National portion: PSI salesperson outline by percent; Maryland state portion with item counts; both approved by MREC. No separate outline date printed"
+   },
+   {
+    "label": "Format (salesperson)",
+    "value": "National 80 items, 90 minutes; State 30 items, 30 minutes; both 110 items, 120 minutes"
+   },
+   {
+    "label": "Experimental items",
+    "value": "1 to 10 unscored items, about 10% of the form, counted against exam time"
+   },
+   {
+    "label": "Pass",
+    "value": "56 of 80 national and 21 of 30 state (70% on each portion); parts scored separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Retake only the failed portion; no limit on retakes; both portions within 1 year of course completion or retake the course"
+   },
+   {
+    "label": "After passing",
+    "value": "Apply for the license within 1 year of passing or the score expires"
+   },
+   {
+    "label": "Education",
+    "value": "60 clock-hour prelicensing course including a 3 clock-hour ethics course; 15 CE hours each 2-year term"
+   },
+   {
+    "label": "Exam fee",
+    "value": "Not tested. MREC page says $44 paid to PSI",
+    "url": "https://labor.maryland.gov/license/mrec/mrecexam.shtml"
+   }
+  ]
+ },
  "realestate-ma": {
   "accessed": "2026-11-18",
   "rows": [
